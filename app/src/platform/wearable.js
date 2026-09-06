@@ -89,12 +89,41 @@ export function parseHeartRate(dataView) {
 export async function connectHeartRate(onReading, onDisconnect) {
   const availability = wearableAvailability();
   if (!availability.ok) throw new Error(availability.reason);
-  const device = await navigator.bluetooth.requestDevice({
-    filters: [{ services: [HEART_RATE_SERVICE] }],
-    optionalServices: [BATTERY_SERVICE],
-  });
+  // Deux stratégies d'appairage :
+  // 1. Filtre sur le service cardio : la liste ne montre que les
+  //    capteurs réellement compatibles (ceintures, la plupart des
+  //    montres de sport).
+  // 2. Repli « tous les appareils » : certaines montres, dont les
+  //    Galaxy Watch relayées par une application tierce, n'annoncent
+  //    pas 0x180D dans leur trame de publicité alors qu'elles
+  //    l'exposent une fois connectées.
+  let device;
+  try {
+    device = await navigator.bluetooth.requestDevice({
+      filters: [{ services: [HEART_RATE_SERVICE] }],
+      optionalServices: [BATTERY_SERVICE],
+    });
+  } catch (e) {
+    if (e?.name !== "NotFoundError") throw e;
+    device = await navigator.bluetooth.requestDevice({
+      acceptAllDevices: true,
+      optionalServices: [HEART_RATE_SERVICE, BATTERY_SERVICE],
+    });
+  }
   const server = await device.gatt.connect();
-  const service = await server.getPrimaryService(HEART_RATE_SERVICE);
+  let service;
+  try {
+    service = await server.getPrimaryService(HEART_RATE_SERVICE);
+  } catch (e) {
+    try {
+      device.gatt.disconnect();
+    } catch (_) {}
+    throw new Error(
+      `${device.name || "Cet appareil"} ne diffuse pas le service cardio Bluetooth standard. ` +
+        "Les Galaxy Watch ne le font pas nativement : installez sur la montre une application de diffusion " +
+        "(par exemple « Heart for Bluetooth »), lancez-la, puis relancez l’appairage.",
+    );
+  }
   const characteristic = await service.getCharacteristic(
     HEART_RATE_MEASUREMENT,
   );

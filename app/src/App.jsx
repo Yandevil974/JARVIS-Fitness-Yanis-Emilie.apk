@@ -110,7 +110,8 @@ export default function App() {
   useEffect(() => {
     if (!p?.id) return;
     document.documentElement.dataset.profile = p.id;
-    const color = p.id === "emilie" ? "#1a1026" : "#161b26";
+    // Barre système assortie au fond clair de chaque profil.
+    const color = p.id === "emilie" ? "#fdf4f9" : "#fdf9f4";
     document
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute("content", color);

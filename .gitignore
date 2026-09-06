@@ -4,6 +4,9 @@ app/node_modules/
 app/dist/
 app/android/app/build/
 app/.vite/
-app/release/
 app/test-results/
 app/playwright-report/
+# Sortie de compilation : régénérée par `npm run build`.
+app/release/
+# Dossier décompressé du paquet : seul le .zip est versionné.
+JARVIS-Fitness/

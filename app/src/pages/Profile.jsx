@@ -372,11 +372,36 @@ function Wearable() {
       ) : !device ? (
         <>
           <p className="wearable-intro">
-            JARVIS lit le service Bluetooth standard de fréquence cardiaque.
-            Sont compatibles les ceintures Polar, Garmin, Wahoo, Decathlon, et
-            les montres qui diffusent leur cardio en direct. Activez la
-            diffusion sur l’appareil avant d’appairer.
+            JARVIS lit le service Bluetooth standard de fréquence cardiaque
+            (0x180D). Sont compatibles directement les ceintures Polar, Garmin,
+            Wahoo, Decathlon, et les montres de sport qui diffusent leur cardio
+            en direct.
           </p>
+          <details className="wearable-samsung">
+            <summary>
+              <Icon name="Watch" size={14} /> Vous avez une montre Samsung
+              Galaxy Watch ?
+            </summary>
+            <p>
+              Les Galaxy Watch <strong>ne diffusent pas</strong> leur fréquence
+              cardiaque en Bluetooth standard : Samsung garde le capteur pour
+              Samsung Health. Aucune application ne peut contourner cela
+              directement, et je préfère vous le dire plutôt que de vous laisser
+              chercher.
+            </p>
+            <p>
+              La solution qui fonctionne : installer sur la montre une
+              application relais qui rediffuse le cardio comme une ceinture
+              classique. « Heart for Bluetooth » (Play Store, sur la montre) est
+              la plus utilisée et gratuite. Lancez-la sur la montre, laissez-la
+              ouverte, puis appairez ici.
+            </p>
+            <p>
+              Pensez à autoriser l’activité en arrière-plan pour la montre
+              (Galaxy Wearable → Paramètres de la montre → Applications), sans
+              quoi la diffusion se coupe au bout d’une minute.
+            </p>
+          </details>
           <Button icon="Watch" onClick={connect} disabled={busy}>
             {busy ? "Recherche…" : "Connecter un capteur"}
           </Button>
