@@ -6,9 +6,14 @@ Application de coaching pour deux profils, entièrement hors-ligne.
 
 ## ➜ CE QU'IL FAUT TÉLÉCHARGER
 
-### **`JARVIS-Fitness.apk`** (22 Mo)
+### **`JARVIS-Fitness.apk`** (21 Mo)
 
-L'application Android, signée et installable.
+L'application Android, signée et installable. Elle se télécharge
+directement depuis ce dépôt : ouvrez le fichier `JARVIS-Fitness.apk`
+ci-dessus, puis le bouton de téléchargement.
+
+Cet APK ne contient aucune donnée personnelle : il est partageable tel
+quel, Émilie peut installer exactement le même.
 
 1. **Désinstallez l'ancienne application** — la clé de signature est
    nouvelle, Android refuse la mise à jour par-dessus l'ancienne
