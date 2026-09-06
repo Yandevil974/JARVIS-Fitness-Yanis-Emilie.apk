@@ -50,6 +50,14 @@ const PAGE = {
   nutrition: Nutrition,
   team: Team,
 };
+/* Rotation des trois apparences. Chaque entrée décrit ce que fera le
+   bouton, pas l'état courant : l'icône annonce la destination. */
+const THEME_NEXT = {
+  light: { id: "contrast", icon: "PanelLeft", label: "Colonne sombre" },
+  contrast: { id: "dark", icon: "Moon", label: "Passer en sombre" },
+  dark: { id: "light", icon: "Sun", label: "Passer en clair" },
+};
+
 export default function App() {
   const {
     state,
@@ -107,11 +115,17 @@ export default function App() {
         img.classList.toggle("paused", !!p?.preferences.reducedMotion),
       );
   }, [p?.preferences.reducedMotion, page]);
-  // Mode clair ou sombre, au choix, indépendant du profil.
+  // Trois apparences, indépendantes du profil :
+  //   "light"     tout clair
+  //   "contrast"  contenu clair, colonne de navigation sombre
+  //   "dark"      tout sombre
   useEffect(() => {
-    const dark = p?.preferences?.theme === "dark";
-    if (dark) document.documentElement.dataset.theme = "dark";
-    else delete document.documentElement.dataset.theme;
+    const t = p?.preferences?.theme || "light";
+    const root = document.documentElement;
+    if (t === "dark") root.dataset.theme = "dark";
+    else delete root.dataset.theme;
+    if (t === "contrast") root.dataset.rail = "dark";
+    else delete root.dataset.rail;
   }, [p?.preferences?.theme]);
   // Thème par profil : Émilie reçoit la palette rose/violet de son fichier
   // source, Yanis la palette ambre/cuivre du sien. Voir styles.css.
@@ -215,6 +229,28 @@ export default function App() {
                   : "Non sauvegardé"}
             </span>
             <span className="topbar-divider" />
+            {/* Bascule d'apparence, accessible en un geste depuis
+                n'importe quelle page : c'est un réglage qu'on change
+                selon la lumière ambiante, pas une fois pour toutes. */}
+            <button
+              className="theme-toggle icon-button"
+              aria-label={
+                THEME_NEXT[p.preferences?.theme || "light"].label
+              }
+              title={THEME_NEXT[p.preferences?.theme || "light"].label}
+              onClick={() => {
+                const suivant =
+                  THEME_NEXT[p.preferences?.theme || "light"].id;
+                updateProfile((q) => {
+                  q.preferences.theme = suivant;
+                });
+              }}
+            >
+              <Icon
+                name={THEME_NEXT[p.preferences?.theme || "light"].icon}
+                size={18}
+              />
+            </button>
             <button
               className="notification-button icon-button"
               aria-label="Ouvrir les notifications"

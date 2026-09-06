@@ -59,6 +59,20 @@ for (const m of CSS.matchAll(/\[data-theme="dark"\]\[data-profile="emilie"\]\s*\
 PROFILS["yanis sombre"] = { ...COMMUN, ...SOMBRE };
 PROFILS["emilie sombre"] = { ...PROFILS.emilie, ...SOMBRE, ...SOMBRE_EMILIE };
 
+/* Barre latérale sombre sur contenu clair : ses couleurs viennent de
+   variables locales (--rail-*), à auditer séparément puisqu'elles ne
+   dérivent pas de --text. */
+const RAIL = {};
+for (const m of CSS.matchAll(/\[data-rail="dark"\] \.sidebar\s*\{([^}]*)\}/gms))
+  for (const v of m[1].matchAll(/(--[\w-]+)\s*:\s*([^;]+);/g))
+    RAIL[v[1]] = v[2].trim();
+for (const base of ["yanis", "emilie"]) {
+  const vars = { ...PROFILS[base], ...RAIL };
+  // Dans la barre, le fond de référence est --rail-bg, pas --panel.
+  vars["--panel"] = RAIL["--rail-bg"];
+  PROFILS[base + " colonne sombre"] = vars;
+}
+
 /* --- Résolution d'une couleur en RGB --------------------------------- */
 function resolve(val, vars, prof = 0) {
   if (!val || prof > 8) return null;

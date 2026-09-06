@@ -385,6 +385,30 @@ export function searchExercises(query = "", group = "all", equipment = "all") {
         )),
   ).sort((a, b) => Number(b.level !== "Avancé") - Number(a.level !== "Avancé"));
 }
+/* Planches d'étirement. Le fichier source n'en fournissait aucune :
+   la page Récupération affichait une icône générique pour les
+   vingt-neuf mouvements. Ces illustrations ont été dessinées dans le
+   style des planches de musculation d'origine (fond blanc, muscle
+   étiré en rouge) et vérifiées une à une.
+
+   Clé = intitulé exact de l'étirement dans le fichier source. Les
+   intitulés absents de cette table n'ont pas encore de planche : la
+   page retombe alors sur l'icône générique, sans rien inventer. */
+const STRETCH_IMAGES = {
+  "Étirement dans l'encadrement de porte": "/media/stretch-pec-porte.jpg",
+  "Bras tendu contre le mur": "/media/stretch-pec-mur.jpg",
+  "Position de l'enfant (Balasana)": "/media/stretch-dos-enfant.jpg",
+  "Position de l'enfant": "/media/stretch-dos-enfant.jpg",
+  "Suspension à la barre": "/media/stretch-dos-suspension.jpg",
+  "Torsion allongée": "/media/stretch-torsion-allongee.jpg",
+  "Torsion allongée genoux": "/media/stretch-torsion-allongee.jpg",
+  "Mains croisées derrière le dos": "/media/stretch-ep-arriere.jpg",
+  "Bras tendu contre la poitrine": "/media/stretch-ep-lateral.jpg",
+  "Bras tendu devant, main tirée": "/media/stretch-ep-posterieur.jpg",
+  "Bras tendu derrière": "/media/stretch-biceps.jpg",
+  "Coude au-dessus de la tête": "/media/stretch-triceps-coude.jpg",
+};
+
 export const RECOVERY_EXERCISES = Object.entries({
   ...legacy.elite.ETIREMENTS_PAR_MUSCLE,
   ...legacy.emilie.ETIREMENTS_PAR_MUSCLE,
@@ -403,6 +427,7 @@ export const RECOVERY_EXERCISES = Object.entries({
     instruction: e[3],
     duration: e[2],
     level: "Tous niveaux",
+    img: STRETCH_IMAGES[e[1]] || null,
   })),
 );
 export const POOL_PROTOCOLS = legacy.emilie.POOL_PROTOS.map((p) => ({

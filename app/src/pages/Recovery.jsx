@@ -15,6 +15,7 @@ import {
 import Movement from "../components/Movement.jsx";
 import { recoveryScore } from "../engine/fitness.js";
 import { RECOVERY_EXERCISES, MUSCLES } from "../data/library.js";
+import { assetSrc } from "../engine/utils.js";
 import { today, dateLabel, addDays } from "../engine/utils.js";
 export default function Recovery() {
   const { p, tab, setTab, setModal, setTimer } = useApp();
@@ -282,8 +283,15 @@ function RecoveryLibrary() {
       <div className="stretch-grid">
         {exercises.map((ex) => (
           <Panel key={ex.id}>
-            <div className="stretch-icon">
-              <Icon name="PersonStanding" size={28} />
+            {/* Planche d'étirement quand elle existe, icône générique
+                sinon : mieux vaut un pictogramme franc qu'une image
+                approximative présentée comme la posture à tenir. */}
+            <div className={ex.img ? "stretch-visual" : "stretch-icon"}>
+              {ex.img ? (
+                <img loading="lazy" src={assetSrc(ex.img)} alt={ex.name} />
+              ) : (
+                <Icon name="PersonStanding" size={28} />
+              )}
               <Badge>{ex.duration}</Badge>
             </div>
             <small>{MUSCLES[ex.muscle]}</small>

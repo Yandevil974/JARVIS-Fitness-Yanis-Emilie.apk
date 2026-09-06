@@ -14549,6 +14549,77 @@ button.primary {
 }
 
 /* ============================================================
+   BARRE LATÉRALE SOMBRE (thème clair "contrasté")
+   ------------------------------------------------------------
+   Troisième combinaison, celle de la maquette de référence : le
+   contenu reste clair, seule la colonne de navigation passe en
+   anthracite. Elle sert de repère visuel et fait ressortir les
+   cartes pastel du tableau de bord.
+
+   Les couleurs de la barre ne peuvent pas dériver de --text, calibré
+   pour un fond clair : elles sont redéfinies sur des variables
+   locales, ce qui laisse le reste de la feuille inchangé.
+   ============================================================ */
+[data-rail="dark"] .sidebar {
+  --rail-bg: hsl(var(--h-surface) 12% 12%);
+  --rail-text: hsl(var(--h-surface) 14% 96%);
+  --rail-muted: hsl(var(--h-surface) 8% 70%);
+  --rail-line: hsl(var(--h-surface) 10% 23%);
+  background: var(--rail-bg);
+  border-right-color: var(--rail-line);
+  color: var(--rail-text);
+}
+[data-rail="dark"] .sidebar .brand strong,
+[data-rail="dark"] .sidebar .main-nav > button,
+[data-rail="dark"] .sidebar .data-nav > button,
+[data-rail="dark"] .sidebar .profile-switcher > button strong {
+  color: var(--rail-text);
+}
+[data-rail="dark"] .sidebar .brand small,
+[data-rail="dark"] .sidebar .nav-section-label,
+[data-rail="dark"] .sidebar .system-status,
+[data-rail="dark"] .sidebar .profile-switcher > button small,
+[data-rail="dark"] .sidebar .sidebar-coach {
+  color: var(--rail-muted);
+}
+[data-rail="dark"] .sidebar .main-nav > button svg,
+[data-rail="dark"] .sidebar .data-nav > button svg,
+[data-rail="dark"] .sidebar .profile-switcher > button > svg {
+  color: var(--rail-muted);
+}
+/* Élément actif : aplat clair discret plutôt qu'un aplat d'accent,
+   qui saturerait toute la colonne. */
+[data-rail="dark"] .sidebar .main-nav > button.active,
+[data-rail="dark"] .sidebar .data-nav > button.active {
+  background: hsl(var(--h-surface) 12% 21%);
+  color: #fff;
+}
+/* L'accent du mode clair est foncé (il doit tenir sur du blanc) :
+   sur la colonne sombre il tombe à 3,5:1. Version éclaircie, réservée
+   à la barre. */
+[data-rail="dark"] .sidebar {
+  --rail-accent: hsl(var(--h-accent) 88% 62%);
+}
+[data-rail="dark"] .sidebar .main-nav > button.active svg,
+[data-rail="dark"] .sidebar .data-nav > button.active svg {
+  color: var(--rail-accent);
+}
+[data-rail="dark"] .sidebar .main-nav > button:hover,
+[data-rail="dark"] .sidebar .data-nav > button:hover {
+  background: hsl(var(--h-surface) 12% 18%);
+  color: #fff;
+}
+[data-rail="dark"] .sidebar .sidebar-bottom,
+[data-rail="dark"] .sidebar .profile-switcher,
+[data-rail="dark"] .sidebar .system-status {
+  border-color: var(--rail-line);
+}
+[data-rail="dark"] .sidebar .workspace-label,
+[data-rail="dark"] .sidebar .workspace-icon {
+  color: var(--rail-text);
+}
+
+/* ============================================================
    SURCHARGES DU THÈME SOMBRE
    Placées en fin de feuille : à spécificité égale, c'est la dernière
    règle qui gagne. Déclarées près du bloc de variables, elles étaient
@@ -14597,4 +14668,40 @@ button.primary {
 [data-theme="dark"] .calendar-combo-tags > b {
   background: hsl(34 40% 22%);
   color: hsl(34 84% 74%);
+}
+
+/* Bascule d'apparence, dans la barre du haut. */
+.theme-toggle {
+  color: var(--muted);
+}
+.theme-toggle:hover {
+  color: var(--accent);
+}
+.field-help {
+  margin: 8px 0 4px;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* Vignette d'étirement : l'image occupe la largeur de la carte, la
+   durée reste posée par-dessus comme sur la version à icône. */
+.stretch-visual {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--panel-3);
+}
+.stretch-visual > img {
+  display: block;
+  width: 100%;
+  height: 132px;
+  object-fit: contain;
+}
+.stretch-visual > .badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 7px;
 }

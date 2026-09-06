@@ -671,17 +671,34 @@ function Equipment() {
               </p>
             </div>
           )}
-          <Switch
-            checked={p.preferences.theme === "dark"}
-            label="Thème sombre"
-            description="Fond sombre et textes clairs, en gardant la couleur de votre profil. Utile le soir ou en salle peu éclairée."
-            onChange={(v) => {
-              updateProfile((q) => {
-                q.preferences.theme = v ? "dark" : "light";
-              });
-              notify(v ? "Thème sombre activé." : "Thème clair rétabli.");
-            }}
-          />
+          <Field label="Apparence">
+            <Select
+              value={p.preferences.theme || "light"}
+              onChange={(e) => {
+                const v = e.target.value;
+                updateProfile((q) => {
+                  q.preferences.theme = v;
+                });
+                notify(
+                  v === "dark"
+                    ? "Thème sombre activé."
+                    : v === "contrast"
+                      ? "Colonne de navigation sombre."
+                      : "Thème entièrement clair.",
+                );
+              }}
+            >
+              <option value="light">Clair</option>
+              <option value="contrast">
+                Clair, colonne de navigation sombre
+              </option>
+              <option value="dark">Sombre</option>
+            </Select>
+          </Field>
+          <p className="field-help">
+            Se change aussi d’un geste depuis l’icône de la barre du haut.
+            Chaque profil garde sa couleur : seuls les plans de fond varient.
+          </p>
           <Switch
             checked={p.preferences.reducedMotion}
             label="Animations réduites"
