@@ -424,10 +424,13 @@ const STRETCH_IMAGES = {
   "Étirement du fléchisseur de hanche (chevalier)":
     "/media/stretch-flechisseur-hanche.jpg",
   "Respiration diaphragmatique allongée": "/media/stretch-respiration.jpg",
-  // « Mollet en escalier » reste sans planche : les tentatives de
-  // dessin plaçaient un haltère dans les mains et le talon au-dessus
-  // de la marche, soit l'inverse du geste. Mieux vaut l'icône
-  // générique qu'une posture fausse donnée pour exacte.
+  // « Mollet en escalier » : quatre tentatives de dessin sur une
+  // marche ont échoué (haltère surgi dans les mains, talon posé plus
+  // haut que la marche, pied déformé). La planche montre donc la
+  // variante au mur, même muscle et même mise en tension, plutôt
+  // qu'une posture fausse donnée pour exacte. La consigne du fichier
+  // source, elle, reste affichée telle quelle sous l'image.
+  "Mollet en escalier": "/media/stretch-mollet-marche.jpg",
 };
 
 export const RECOVERY_EXERCISES = Object.entries({

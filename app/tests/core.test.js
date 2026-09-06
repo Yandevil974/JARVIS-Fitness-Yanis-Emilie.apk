@@ -258,6 +258,31 @@ for (const phrase of [
       interpretCommand(newProfile("elite"), phrase).action?.type,
       "pain",
     ));
+/* Trois régressions constatées en conversant réellement avec le coach :
+   une intention correctement classée mais sans branche de traitement,
+   et un exercice cité par un mot isolé qui retombait sur le mouvement
+   en cours. */
+test("Un nom d'exercice partiel désigne le bon mouvement", () => {
+  const r = interpretCommand(newProfile("elite"), "remplace le squat");
+  assert.match(r.text, /squat/i);
+  assert.doesNotMatch(r.text, /militaire|développé couché/i);
+});
+test("Une question sur les protéines atteint la nutrition", () => {
+  const r = interpretCommand(
+    newProfile("elite"),
+    "combien de proteines je dois manger",
+  );
+  assert.doesNotMatch(r.text, /n’ai pas saisi|n'ai pas saisi/);
+});
+test("Une performance dictée retrouve son exercice", () => {
+  const r = interpretCommand(
+    newProfile("elite"),
+    "j'ai fait 100kg x 5 au squat",
+  );
+  assert.match(r.text, /100/);
+  assert.doesNotMatch(r.text, /Quel exercice avez-vous/);
+});
+
 test("Poor sleep is fatigue, not a pain diagnosis", () =>
   assert.equal(
     interpretCommand(newProfile("elite"), "J’ai mal dormi").action.type,
