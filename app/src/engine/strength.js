@@ -428,11 +428,28 @@ export function declaredBase(p, baseKey) {
     .filter((t) => t.baseKey === baseKey && num(t.estimate) > 0)
     .sort((a, b) => String(a.date).localeCompare(String(b.date)));
   if (declared.length) return declared.at(-1);
-  // Compatibilité : anciennes références enregistrées par exerciseId.
-  const target = EXERCISES.find((e) => e.name === movement.exerciseName);
-  if (!target) return null;
+
+  // Compatibilité ascendante. Les bilans importés depuis les anciens
+  // fichiers HTML ne portent pas de `baseKey` : ils identifient
+  // l'exercice par `exerciseId`, voire par un libellé brut préfixé
+  // « source: » lorsque l'exercice n'existait pas dans la
+  // bibliothèque. On les rattache ici au mouvement de base, sans quoi
+  // des 1RM pourtant déclarés resteraient ignorés et les charges
+  // seraient calculées comme si l'utilisateur n'avait jamais testé.
   const legacy = (p.forceTests || [])
-    .filter((t) => t.exerciseId === target.id && num(t.estimate) > 0)
+    .filter((t) => {
+      if (t.baseKey || !(num(t.estimate) > 0)) return false;
+      const raw = String(t.exerciseId || "");
+      // Libellé conservé tel quel par l'import (« source:… ») ou
+      // étiquette d'origine : on se rabat sur le texte.
+      const label = raw.startsWith("source:")
+        ? raw.slice(7)
+        : t.originalLabel || "";
+      if (label) return matchBase(label, null)?.base === baseKey;
+      const target = EXERCISES.find((e) => e.id === raw);
+      if (!target) return false;
+      return matchBase(target.name, target.muscle)?.base === baseKey;
+    })
     .sort((a, b) => String(a.date).localeCompare(String(b.date)));
   return legacy.length ? legacy.at(-1) : null;
 }
@@ -445,13 +462,40 @@ export function effective1RM(p, exercise, unit) {
   const perHand = !!m?.perHand;
   const fromExercise = journal1RM(p, exercise.id, unit);
   const declaredTest = base ? declaredBase(p, base) : null;
-  const declared = declaredTest ? num(declaredTest.estimate) * ratio : null;
+  // Un 1RM déclaré peut l'avoir été sur le mouvement de base
+  // (« Soulevé de terre roumain ») ou directement sur l'exercice
+  // consulté (« Soulevé de terre »). Dans le second cas la valeur est
+  // déjà celle de cet exercice : lui appliquer le ratio de conversion
+  // la fausserait — un soulevé de terre à 90 kg deviendrait 81, puis
+  // une charge de travail absurdement basse.
+  const declaredOnThisExercise =
+    declaredTest &&
+    (declaredTest.exerciseId === exercise.id ||
+      norm(declaredTest.originalLabel || "") === norm(exercise.name) ||
+      norm(String(declaredTest.exerciseId || "").replace(/^source:/, "")) ===
+        norm(exercise.name));
+  const declared = declaredTest
+    ? num(declaredTest.estimate) * (declaredOnThisExercise ? 1 : ratio)
+    : null;
   const fromBase = base ? base1RMFromJournal(p, base, unit) : null;
   const baseDerived = fromBase != null ? fromBase * ratio : null;
   let journal = null;
   for (const v of [fromExercise, baseDerived])
     if (v != null && (journal == null || v > journal)) journal = v;
-  const value = journal != null ? journal : declared;
+
+  // Arbitrage entre le journal et le bilan déclaré.
+  // Une estimation tirée des séries prime lorsqu'elle porte sur
+  // l'exercice lui-même : c'est une mesure directe et récente.
+  // En revanche, une valeur reconstruite depuis un mouvement voisin
+  // (`baseDerived`) ne doit pas faire baisser un maximum réellement
+  // testé : travailler ses ischios en accessoire léger ne signifie pas
+  // que le soulevé de terre a régressé. Dans ce cas on garde la plus
+  // élevée des deux.
+  let value;
+  if (fromExercise != null) value = fromExercise;
+  else if (declared != null && baseDerived != null)
+    value = Math.max(declared, baseDerived);
+  else value = baseDerived != null ? baseDerived : declared;
   return {
     value: value != null ? round(value, 1) : null,
     base,
@@ -462,7 +506,7 @@ export function effective1RM(p, exercise, unit) {
     fromBase: baseDerived != null ? round(baseDerived, 1) : null,
     declared: declared != null ? round(declared, 1) : null,
     declaredDate: declaredTest?.date || null,
-    usedJournal: journal != null,
+    usedJournal: value != null && value === journal,
   };
 }
 

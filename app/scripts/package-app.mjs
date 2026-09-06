@@ -60,6 +60,20 @@ avec chacun son programme, son historique et ses couleurs.
 Le changement de profil se fait en haut de l'écran.
 
 
+VOS DONNÉES EXISTANTES (Yanis)
+------------------------------
+Votre historique récupéré depuis l'ancienne application (1RM, séances,
+pesées, photos) est fourni séparément, dans le fichier
+« MES-DONNEES-Yanis.json ».
+
+Il n'est volontairement pas inclus ici : ce paquet peut être partagé,
+vos données personnelles non.
+
+Importez-le au premier lancement :
+Profil -> onglet Sauvegarde -> Importer une sauvegarde.
+Sans cet import, l'application démarre vide.
+
+
 LE BILAN 1RM
 ------------
 C'est le point de départ : il calibre automatiquement les charges

@@ -19,11 +19,33 @@ Un mode d'emploi (`LISEZ-MOI.txt`) est inclus dans l'archive.
 
 ---
 
+---
+
+## ➜ ET VOS DONNÉES
+
+### **`MES-DONNEES-Yanis.json`** (1,7 Mo)
+
+Votre historique, récupéré depuis l'ancien APK :
+**10 valeurs de 1RM, 12 séances, 387 séries, 15 questionnaires de forme,
+9 pesées, 4 photos.**
+
+Téléchargez-le également, puis dans l'application :
+**Profil → onglet Sauvegarde → Importer une sauvegarde.**
+
+À faire une fois, sur chaque appareil. Sans cet import, l'application
+démarre vide et les charges ne sont pas calculées.
+
+Ce fichier est **volontairement séparé du `.zip`** et **exclu de GitHub** :
+il contient vos mensurations et vos photos.
+
+---
+
 ## Le reste du dossier
 
 | Élément | À quoi ça sert |
 |---|---|
-| `JARVIS-Fitness.zip` | **L'application à télécharger.** C'est tout ce dont vous avez besoin. |
+| `JARVIS-Fitness.zip` | **L'application à télécharger.** Ne contient aucune donnée personnelle. |
+| `MES-DONNEES-Yanis.json` | **Votre historique à réimporter.** Reste dans l'espace de travail, jamais sur GitHub. |
 | `app/` | Le code source. Utile seulement pour modifier l'application. |
 | `ANCIENNE-VERSION-obsolete.apk` | L'ancien APK, **périmé** : il ne contient aucune des évolutions récentes. Conservé par précaution, à supprimer quand vous voudrez. |
 

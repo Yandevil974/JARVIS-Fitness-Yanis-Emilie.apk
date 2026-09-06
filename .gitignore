@@ -10,3 +10,8 @@ app/playwright-report/
 app/release/
 # Dossier décompressé du paquet : seul le .zip est versionné.
 JARVIS-Fitness/
+# Données personnelles : historique, mensurations, photos.
+# Ne doivent jamais partir sur GitHub.
+app/.private/
+# Sauvegarde personnelle à télécharger : reste dans l'espace de travail.
+MES-DONNEES-Yanis.json
