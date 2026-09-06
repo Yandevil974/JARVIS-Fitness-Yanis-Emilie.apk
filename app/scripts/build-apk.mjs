@@ -69,8 +69,11 @@ stored = {n for n in zin.namelist() if zin.getinfo(n).compress_type == 0}
 zout = zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED)
 for item in zin.infolist():
     n = item.filename
-    # L'ancienne application web et l'ancienne signature sont écartées.
-    if n.startswith("assets/public/") or n.startswith("META-INF/"):
+    # Sont écartées : l'ancienne application web, l'ancienne signature,
+    # et les données personnelles que l'enveloppe d'origine contenait.
+    # Ces données restent disponibles à part, en fichier de sauvegarde
+    # à importer : l'APK est ainsi partageable tel quel.
+    if n.startswith("assets/public/") or n.startswith("META-INF/") or n.startswith("assets/restoration/"):
         continue
     zout.writestr(item, zin.read(n), compress_type=item.compress_type)
 KEEP = ("webp","jpg","jpeg","png","gif","mp4","woff2")
