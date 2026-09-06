@@ -245,10 +245,13 @@ export function ProtocolModal({ protocolId, level = 0 }) {
                 </label>
                 <span>{durationLabel(sec)}</span>
                 {guide && (
-                  <details>
+                  <details open={!!guide.img}>
                     <summary>
                       Technique <Icon name="ChevronDown" size={12} />
                     </summary>
+                    {/* L'illustration était repliée avec les consignes :
+                        on ne voyait que du texte. Quand une planche
+                        existe, le bloc s'ouvre par défaut. */}
                     <div className="pool-guide-content">
                       {guide.img && (
                         <img

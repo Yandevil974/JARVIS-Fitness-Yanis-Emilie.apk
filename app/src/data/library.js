@@ -411,8 +411,29 @@ export const POOL_PROTOCOLS = legacy.emilie.POOL_PROTOS.map((p) => ({
     .replace(/zéro risque articulaire/gi, "faible impact articulaire")
     .replace(/zéro impact/gi, "faible impact"),
 }));
+/* Dix guides piscine du fichier source n'avaient aucune illustration :
+   les nages et les phases de récupération, justement les plus
+   fréquentes dans les séances (les fractionnés à eux seuls comptent
+   pour des dizaines d'étapes). Ces planches ont été dessinées dans le
+   style des illustrations d'origine — vue de profil, ligne d'eau
+   bleue, muscles sollicités en rouge.
+
+   Clé = intitulé exact du guide dans le fichier source. */
+const POOL_IMAGES = {
+  "Étirements au bord": "/media/pool-etirements-bord.jpg",
+  "Nage statique (à l'élastique)": "/media/pool-nage-statique.jpg",
+  "Nage douce": "/media/pool-nage-douce.jpg",
+  "Marche aquatique": "/media/pool-marche-aquatique.jpg",
+  "Fractionné — nager": "/media/pool-fractionne.jpg",
+  "Sprint — nager à fond": "/media/pool-sprint.jpg",
+  "Récup complète — souffler": "/media/pool-recup-complete.jpg",
+  "Récup entre tabatas": "/media/pool-recup-tabata.jpg",
+  "Retour au calme": "/media/pool-retour-calme.jpg",
+  "Déplacements latéraux (4 m)": "/media/pool-deplacements-lateraux.jpg",
+};
 export const POOL_GUIDES = legacy.emilie.POOL_GUIDES.map((g) => ({
   ...g,
+  img: g.img || POOL_IMAGES[g.t] || null,
   h: g.h.map(textOnly),
 }));
 export const FOOD = legacy.elite.ALIMENTS;
