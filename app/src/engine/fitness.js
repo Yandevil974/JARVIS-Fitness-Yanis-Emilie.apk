@@ -408,6 +408,16 @@ export function recommendLoad(p, target, date = today()) {
       "Consolidez la qualité et les répétitions avant la prochaine augmentation.",
   };
 }
+/* Planches d'échauffement. Le fichier source décrivait ces étapes en
+   texte seul : la modale n'affichait aucune illustration. Une image
+   par famille d'étape — mise en route, mobilité, séries d'approche —
+   plutôt qu'une par variante, le geste étant le même. */
+const WARMUP_IMAGES = {
+  route: "/media/warmup-cardio.jpg",
+  mobilite: "/media/warmup-mobilite.jpg",
+  approche: "/media/warmup-series-approche.jpg",
+};
+
 export function warmup(p, session) {
   const first = session?.exercises?.[0];
   const ex = first ? exerciseById(first.exerciseId) : null;
@@ -419,6 +429,7 @@ export function warmup(p, session) {
       name: "Mise en route",
       seconds: 180,
       pattern: "walk",
+      img: WARMUP_IMAGES.route,
       instruction:
         "Marche ou vélo très facile. Vous devez pouvoir parler confortablement.",
     },
@@ -426,6 +437,7 @@ export function warmup(p, session) {
       name: lower ? "Mobilité hanches & chevilles" : "Mobilité des épaules",
       seconds: 60,
       pattern: lower ? "lunge" : "lat",
+      img: WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Mobilisez doucement les chevilles et les hanches, sans forcer."
         : "Cercles d’épaules lents, puis mouvements scapulaires contrôlés.",
@@ -434,6 +446,7 @@ export function warmup(p, session) {
       name: lower ? "Activation fessiers" : "Activation scapulaire",
       seconds: 60,
       pattern: lower ? "bridge" : "row",
+      img: WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Ponts fessiers au sol, 10 répétitions contrôlées."
         : "Rétractions des omoplates et rotations externes sans fatigue.",
@@ -442,6 +455,7 @@ export function warmup(p, session) {
       name: `Approche ${i + 1}${w > 0 ? " · " + roundLoad(w * pct, p.user.increment || 2.5, "down") + " kg" : " · charge légère à choisir"}`,
       seconds: 60,
       pattern: ex?.pattern || "squat",
+      img: WARMUP_IMAGES.approche,
       instruction: `${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
     })),
   ];

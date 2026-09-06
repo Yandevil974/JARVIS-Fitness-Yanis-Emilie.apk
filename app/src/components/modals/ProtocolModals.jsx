@@ -312,6 +312,16 @@ export function WarmupModal({ session }) {
         {steps.map((st, i) => (
           <div key={i}>
             <span className="warmup-step-number">0{i + 1}</span>
+            {/* Illustration de l'étape : les consignes seules
+                laissaient deviner le geste. */}
+            {st.img && (
+              <img
+                className="warmup-step-img"
+                loading="lazy"
+                src={assetSrc(st.img)}
+                alt={st.name}
+              />
+            )}
             <div>
               <h3>{st.name}</h3>
               <p>{st.instruction}</p>

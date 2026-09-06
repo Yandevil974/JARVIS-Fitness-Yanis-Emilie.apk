@@ -418,6 +418,16 @@ const STRETCH_IMAGES = {
   "Allongé sur le côté": "/media/stretch-quad-cote.jpg",
   "Flexion avant jambes tendues": "/media/stretch-isc-flexion.jpg",
   "Une jambe tendue, une pliée": "/media/stretch-isc-une-jambe.jpg",
+  "Grenouille (plantes jointes)": "/media/stretch-grenouille.jpg",
+  "Étirement contre le mur": "/media/stretch-mollet-mur.jpg",
+  "Adduction de la hanche debout": "/media/stretch-adduction-debout.jpg",
+  "Étirement du fléchisseur de hanche (chevalier)":
+    "/media/stretch-flechisseur-hanche.jpg",
+  "Respiration diaphragmatique allongée": "/media/stretch-respiration.jpg",
+  // « Mollet en escalier » reste sans planche : les tentatives de
+  // dessin plaçaient un haltère dans les mains et le talon au-dessus
+  // de la marche, soit l'inverse du geste. Mieux vaut l'icône
+  // générique qu'une posture fausse donnée pour exacte.
 };
 
 export const RECOVERY_EXERCISES = Object.entries({

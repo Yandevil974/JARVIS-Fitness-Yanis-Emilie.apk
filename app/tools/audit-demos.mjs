@@ -74,15 +74,29 @@ for (const [nom, re] of Object.entries(MOTS)) {
 /* Piège à éviter : RECOVERY_EXERCISES ne fait PAS partie d'EXERCISES.
    Un audit qui ne regarde que ce dernier annonce 100 % de couverture
    tout en ignorant les 29 étirements. */
-const avecDemo = RECOVERY_EXERCISES.filter((e) => demonstrationFor(e));
+/* Les étirements ne passent pas par demonstrationFor (réservé au
+   catalogue de musculation) : leur planche est portée par `img`.
+   Tester la mauvaise source ferait dire à l'audit que rien n'est
+   couvert alors que tout l'est. */
+const avecDemo = RECOVERY_EXERCISES.filter(
+  (e) => e.img || demonstrationFor(e),
+);
 console.log("\n=== ÉTIREMENTS (catalogue de récupération, séparé) ===");
 console.log(`  étirements : ${RECOVERY_EXERCISES.length}`);
-console.log(`  avec démonstration humaine : ${avecDemo.length}`);
-if (!avecDemo.length)
-  console.log(
-    "  Aucun : la page Récupération montre une icône générique et le\n" +
-      "  texte de consigne, pas une représentation du mouvement.",
-  );
+console.log(`  avec planche : ${avecDemo.length}`);
+for (const e of RECOVERY_EXERCISES.filter((x) => !x.img && !demonstrationFor(x)))
+  console.log(`      SANS : ${e.name}`);
+
+/* --- Échauffement ---------------------------------------------------- */
+const { warmup } = await import("../src/engine/fitness.js");
+const { initialState } = await import("../src/store/model.js");
+const st = typeof initialState === "function" ? initialState() : initialState;
+const etapes = warmup(st.profiles.elite, null);
+console.log("\n=== ÉCHAUFFEMENT ===");
+console.log(
+  `  étapes : ${etapes.length} | avec planche : ${etapes.filter((e) => e.img).length}`,
+);
+for (const e of etapes.filter((x) => !x.img)) console.log(`      SANS : ${e.name}`);
 
 /* --- Où viennent les démonstrations non exactes ? -------------------- */
 const approx = EXERCISES.map((e) => [e, demonstrationFor(e)])

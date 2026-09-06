@@ -14705,3 +14705,19 @@ button.primary {
   right: 8px;
   font-size: 7px;
 }
+
+/* Vignette d'étape d'échauffement, entre le numéro et la consigne. */
+.warmup-step-img {
+  width: 104px;
+  height: 62px;
+  object-fit: contain;
+  border-radius: 7px;
+  background: var(--panel);
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .warmup-step-img {
+    width: 78px;
+    height: 50px;
+  }
+}
