@@ -15,3 +15,5 @@ JARVIS-Fitness/
 app/.private/
 # Sauvegarde personnelle à télécharger : reste dans l'espace de travail.
 MES-DONNEES-Yanis.json
+# APK signé : régénéré par `node scripts/build-apk.mjs`.
+JARVIS-Fitness.apk

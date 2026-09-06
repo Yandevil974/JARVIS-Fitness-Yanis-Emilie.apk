@@ -6,18 +6,19 @@ Application de coaching pour deux profils, entièrement hors-ligne.
 
 ## ➜ CE QU'IL FAUT TÉLÉCHARGER
 
-### **`JARVIS-Fitness.zip`** (17,5 Mo)
+### **`JARVIS-Fitness.apk`** (22 Mo)
 
-C'est l'application, prête à l'emploi.
+L'application Android, signée et installable.
 
-1. Téléchargez le fichier
-2. Décompressez-le
-3. Ouvrez **`index.html`** par un double-clic
+1. **Désinstallez l'ancienne application** — la clé de signature est
+   nouvelle, Android refuse la mise à jour par-dessus l'ancienne
+2. Ouvrez l'APK, autorisez l'installation depuis cette source
+3. Importez vos données (voir ci-dessous)
 
-Rien à installer. Fonctionne sans connexion internet.
-Un mode d'emploi (`LISEZ-MOI.txt`) est inclus dans l'archive.
-
----
+> Sans installation : **`JARVIS-Fitness.zip`** contient la même
+> application à ouvrir dans un navigateur (double-clic sur
+> `index.html`). Seule la montre connectée y est indisponible,
+> car elle exige HTTPS.
 
 ---
 
@@ -44,35 +45,40 @@ il contient vos mensurations et vos photos.
 
 | Élément | À quoi ça sert |
 |---|---|
-| `JARVIS-Fitness.zip` | **L'application à télécharger.** Ne contient aucune donnée personnelle. |
+| `JARVIS-Fitness.apk` | **L'application Android à installer.** Signature vérifiée. |
+| `JARVIS-Fitness.zip` | La même application, version navigateur, sans installation. |
 | `MES-DONNEES-Yanis.json` | **Votre historique à réimporter.** Reste dans l'espace de travail, jamais sur GitHub. |
 | `app/` | Le code source. Utile seulement pour modifier l'application. |
 | `ANCIENNE-VERSION-obsolete.apk` | L'ancien APK, **périmé** : il ne contient aucune des évolutions récentes. Conservé par précaution, à supprimer quand vous voudrez. |
 
 ---
 
-## À propos de l'APK Android
+## À propos de l'APK
 
-L'APK présent dans ce dossier est **l'ancienne version**. Il ne contient
-ni le thème clair, ni le bilan 1RM, ni le guidage vocal, ni la montre
-connectée.
-
-Un nouvel APK n'a pas pu être compilé ici : cela demande un JDK et le SDK
-Android, absents de cet environnement et non installables (pas d'accès
-réseau aux dépôts). Le projet reste prêt pour cette compilation — la
-configuration Capacitor est en place, et sur une machine équipée il suffit
-de lancer :
+L'APK est reconstruit en réinjectant l'application web compilée dans
+l'enveloppe Android existante, puis en le resignant — la compilation
+Gradle demanderait un JDK et le SDK Android, absents de cet
+environnement. L'enveloppe (code Capacitor, permissions, icônes) étant
+inchangée, le résultat est équivalent.
 
 ```bash
 cd app
 npm install
-npm run android:build     # produit android/app/build/outputs/apk/debug/
+npm run build                    # compile l'application web
+node scripts/build-apk.mjs       # réinjecte et signe
 ```
 
-En attendant, `JARVIS-Fitness.zip` donne exactement la même application,
-ouverte dans le navigateur du téléphone plutôt qu'installée.
+La signature est validée par un vérificateur indépendant
+(`apksigtool` : `v2 verified`).
 
----
+**La clé de signature** est dans `app/.private/jarvis-signing-key.pem`,
+exclue de Git. Conservez-la : elle seule permettra d'installer les
+futures mises à jour **par-dessus** celle-ci, sans désinstaller ni
+perdre les données. Si vous la perdez, il faudra à nouveau désinstaller
+avant de réinstaller.
+
+`ANCIENNE-VERSION-obsolete.apk` sert d'enveloppe de base : ne le
+supprimez pas tant que vous voudrez refabriquer l'APK.
 
 ## Développement
 

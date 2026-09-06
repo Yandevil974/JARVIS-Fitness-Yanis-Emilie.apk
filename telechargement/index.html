@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JARVIS Fitness — Téléchargement</title>
+    <style>
+      :root {
+        --bg: #f8f4ef;
+        --panel: #fff;
+        --line: #eee6db;
+        --text: #27231b;
+        --muted: #746d63;
+        --accent: #d2760f;
+        --accent2: #e05a3a;
+        --rose: #d6317d;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 28px 18px 60px;
+        background: var(--bg);
+        background-image:
+          radial-gradient(800px 500px at 90% -10%, rgba(226, 132, 44, 0.1), transparent 60%),
+          radial-gradient(700px 460px at -5% 15%, rgba(45, 190, 180, 0.07), transparent 60%);
+        color: var(--text);
+        font: 15px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      .wrap { max-width: 680px; margin: 0 auto; }
+      h1 { font-size: 25px; margin: 0 0 4px; letter-spacing: -0.02em; }
+      .sub { color: var(--muted); margin: 0 0 26px; font-size: 14px; }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 16px;
+        box-shadow: 0 4px 18px rgba(120, 90, 50, 0.06);
+      }
+      .card.data { border-color: #f0d5e4; }
+      .step {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 8px;
+      }
+      .card.data .step { color: var(--rose); }
+      h2 { font-size: 18px; margin: 0 0 6px; }
+      .size { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+      p { margin: 0 0 12px; }
+      a.dl {
+        display: block;
+        text-align: center;
+        padding: 15px 20px;
+        border-radius: 11px;
+        background: linear-gradient(135deg, #eb9a2e, #e05a3a);
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      .card.data a.dl { background: linear-gradient(135deg, #e0559b, #a961d8); }
+      a.dl:hover { filter: brightness(1.07); }
+      ol { margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: 14px; }
+      ol li { margin-bottom: 5px; }
+      ol b { color: var(--text); }
+      details.alt {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px 18px;
+        margin-bottom: 16px;
+      }
+      details.alt summary {
+        cursor: pointer;
+        font-weight: 650;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      details.alt p { font-size: 13.5px; color: var(--muted); margin: 12px 0; }
+      a.dl.alt-dl {
+        background: #6b6259;
+        font-size: 14px;
+        padding: 11px 16px;
+      }
+      .note {
+        margin-top: 22px;
+        padding: 14px 16px;
+        border-left: 3px solid var(--accent);
+        background: #fffaf3;
+        border-radius: 0 10px 10px 0;
+        font-size: 13.5px;
+        color: var(--muted);
+      }
+      .note b { color: var(--text); }
+      code {
+        background: #f3ede4;
+        padding: 1px 6px;
+        border-radius: 5px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>JARVIS Fitness</h1>
+      <p class="sub">Deux fichiers à télécharger, dans cet ordre.</p>
+
+      <div class="card">
+        <span class="step">Étape 1 — l'application Android</span>
+        <h2>JARVIS-Fitness.apk</h2>
+        <p class="size">22 Mo — signature vérifiée</p>
+        <a class="dl" href="/JARVIS-Fitness.apk" download>Télécharger l'APK</a>
+        <ol>
+          <li><b>Exportez vos données</b> depuis l'ancienne appli si vous y tenez
+            (Profil → Sauvegarde) — sinon utilisez le fichier de l'étape 2</li>
+          <li><b>Désinstallez l'ancienne application</b> : la clé de signature
+            est nouvelle, Android refuse la mise à jour par-dessus</li>
+          <li>Ouvrez l'APK téléchargé, autorisez l'installation depuis
+            cette source, puis installez</li>
+        </ol>
+      </div>
+
+      <details class="alt">
+        <summary>Ou sans installer : la version navigateur (17,5 Mo)</summary>
+        <p>
+          Décompressez <b>JARVIS-Fitness.zip</b> et ouvrez <b>index.html</b>.
+          Identique à l'APK, sauf la montre connectée qui exige HTTPS.
+        </p>
+        <a class="dl alt-dl" href="/JARVIS-Fitness.zip" download>Télécharger le .zip</a>
+      </details>
+
+      <div class="card data">
+        <span class="step">Étape 2 — vos données</span>
+        <h2>MES-DONNEES-Yanis.json</h2>
+        <p class="size">1,7 Mo — 10 valeurs de 1RM, 12 séances, 387 séries, 15 questionnaires, 9 pesées, 4 photos</p>
+        <a class="dl" href="/MES-DONNEES-Yanis.json" download>Télécharger mes données</a>
+        <ol>
+          <li>Dans l'application : <b>Profil</b> → onglet <b>Sauvegarde</b></li>
+          <li><b>Importer une sauvegarde</b>, choisissez ce fichier</li>
+          <li>À faire une fois par appareil</li>
+        </ol>
+      </div>
+
+      <div class="note">
+        <b>Sans l'étape 2, l'application démarre vide</b> et vos charges ne sont
+        pas calculées automatiquement. Ce fichier contient vos mensurations et
+        vos photos : il est volontairement séparé du <code>.zip</code> et exclu
+        de GitHub.
+      </div>
+    </div>
+  </body>
+</html>
