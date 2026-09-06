@@ -87,10 +87,19 @@ print("  %d fichiers web injectés" % len(repl))
 const tmp = path.join(ROOT, ".apk-unsigned.tmp");
 execFileSync(PY, ["-c", script, SHELL, WEB, tmp], { stdio: "inherit" });
 
+// --- Alignement ------------------------------------------------------
+// Indispensable : Android projette resources.arsc en mémoire depuis
+// l'APK et refuse l'installation s'il n'est pas aligné. À faire avant
+// la signature, qui fige le contenu.
+console.log("Alignement…");
+const aligned = tmp + ".aligned";
+execFileSync(PY, ["tools/zipalign.py", tmp, aligned], { stdio: "inherit" });
+
 // --- Signature -------------------------------------------------------
 console.log("Signature…");
-execFileSync(PY, ["tools/apksign.py", tmp, OUT, KEY], { stdio: "inherit" });
+execFileSync(PY, ["tools/apksign.py", aligned, OUT, KEY], { stdio: "inherit" });
 fs.rmSync(tmp, { force: true });
+fs.rmSync(aligned, { force: true });
 
 const mb = (fs.statSync(OUT).size / 1024 / 1024).toFixed(1);
 console.log(`\nAPK prêt : ${OUT}  (${mb} Mo)`);
