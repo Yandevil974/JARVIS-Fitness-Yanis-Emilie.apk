@@ -179,6 +179,20 @@ const extra = [
 ];
 for (const row of extra) rows.set(slug(row[0]), { row, sources: ["jarvis"] });
 const guides = { ...legacy.elite.MUSCU_GUIDES, ...legacy.emilie.MUSCU_GUIDES };
+/* Corrections d'illustrations du fichier source.
+   Clé = guide source, valeur = média de remplacement.
+
+   ea226c444f72de0f : le personnage allongé au banc a le visage dessiné
+   à l'envers (menton vers le haut, chevelure vers le bas). Le défaut
+   est dans l'image d'origine, pas dans son rattachement. Il servait à
+   cinq exercices de triceps ; on lui substitue l'extension à la poulie
+   haute, geste identique (coudes fixes, extension des avant-bras) et
+   correctement dessinée. */
+const GUIDE_FIXES = {
+  "french press barre ez": "/media/4c2b19fa924f90a8.gif",
+};
+for (const [key, img] of Object.entries(GUIDE_FIXES))
+  if (guides[key]) guides[key] = { ...guides[key], img };
 export const PATTERN_INFO = {
   ...legacy.elite.PATTERN_INFO,
   hinge: {

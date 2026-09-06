@@ -13,7 +13,13 @@
    ============================================================ */
 import fs from "node:fs";
 
-const CSS = fs.readFileSync(new URL("../src/styles.css", import.meta.url), "utf8");
+/* Les commentaires sont retirés avant toute analyse : leur texte
+   contient des virgules et des accolades (« 2,1:1 », « {…} ») qui
+   faisaient éclater les sélecteurs et rendaient des règles
+   invisibles à l'audit. */
+const CSS = fs
+  .readFileSync(new URL("../src/styles.css", import.meta.url), "utf8")
+  .replace(/\/\*[\s\S]*?\*\//g, "");
 const SEUIL = 3.0;
 
 /* --- Valeurs des variables, par profil ------------------------------ */
@@ -38,6 +44,20 @@ const PROFILS = {
 for (const m of CSS.matchAll(/\[data-profile="emilie"\]\s*\{([^}]*)\}/gms))
   for (const v of m[1].matchAll(/(--[\w-]+)\s*:\s*([^;]+);/g))
     PROFILS.emilie[v[1]] = v[2].trim();
+
+/* Thème sombre : mêmes profils, variables de surface remplacées.
+   Il doit être audité comme le clair — c'est précisément en basculant
+   un thème qu'on laisse derrière soi des textes de l'autre. */
+const SOMBRE = {};
+for (const m of CSS.matchAll(/\[data-theme="dark"\](?!\[)\s*\{([^}]*)\}/gms))
+  for (const v of m[1].matchAll(/(--[\w-]+)\s*:\s*([^;]+);/g))
+    SOMBRE[v[1]] = v[2].trim();
+const SOMBRE_EMILIE = {};
+for (const m of CSS.matchAll(/\[data-theme="dark"\]\[data-profile="emilie"\]\s*\{([^}]*)\}/gms))
+  for (const v of m[1].matchAll(/(--[\w-]+)\s*:\s*([^;]+);/g))
+    SOMBRE_EMILIE[v[1]] = v[2].trim();
+PROFILS["yanis sombre"] = { ...COMMUN, ...SOMBRE };
+PROFILS["emilie sombre"] = { ...PROFILS.emilie, ...SOMBRE, ...SOMBRE_EMILIE };
 
 /* --- Résolution d'une couleur en RGB --------------------------------- */
 function resolve(val, vars, prof = 0) {
@@ -126,18 +146,48 @@ const ratio = (a, b) => {
 };
 
 /* --- Parcours des règles --------------------------------------------- */
+/* Surcharges du thème sombre : `[data-theme="dark"] .x { color: … }`
+   remplace la couleur de `.x`. Sans en tenir compte, l'audit signale
+   des défauts déjà corrigés. On indexe donc ces surcharges par
+   sélecteur de base avant de juger. */
+const SURCHARGES = { fond: new Map(), texte: new Map() };
+for (const m of CSS.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
+  const bruts = m[1].trim().split(",");
+  const corps = m[2];
+  const bg = corps.match(/(?:^|[\s;])background(?:-color)?\s*:\s*([^;]+)/);
+  const fg = corps.match(/(?:^|[\s;])color\s*:\s*([^;]+)/);
+  for (const brut of bruts) {
+    const t = brut.trim();
+    if (!t.startsWith('[data-theme="dark"]')) continue;
+    const base = t.replace(/^\[data-theme="dark"\]\s*/, "").trim();
+    if (!base) continue;
+    if (bg) SURCHARGES.fond.set(base, bg[1]);
+    if (fg) SURCHARGES.texte.set(base, fg[1]);
+  }
+}
+
 let echecs = 0;
 for (const [nom, vars] of Object.entries(PROFILS)) {
+  const sombre = nom.includes("sombre");
   const mauvais = [];
   for (const m of CSS.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
     const sel = m[1].trim().split("\n").pop().trim();
     const corps = m[2];
     if (sel.startsWith("@") || sel.startsWith(":root") || !corps.includes("color")) continue;
+    // Une règle propre au thème sombre ne concerne pas le mode clair.
+    if (!sombre && sel.includes('[data-theme="dark"]')) continue;
     const bg = corps.match(/(?:^|[\s;])background(?:-color)?\s*:\s*([^;]+)/);
     const fg = corps.match(/(?:^|[\s;])color\s*:\s*([^;]+)/);
-    if (!bg || !fg) continue;
-    let B = resolve(bg[1], vars);
-    const F = resolve(fg[1], vars);
+    const cle = sel.replace(/^\[data-theme="dark"\]\s*/, "").trim();
+    // En sombre, fond et texte peuvent provenir de deux règles
+    // distinctes : la règle de base pour l'un, la surcharge pour
+    // l'autre. Les chercher séparément, sinon on juge une paire qui
+    // n'existe pas réellement à l'écran.
+    const bgTxt = sombre && SURCHARGES.fond.has(cle) ? SURCHARGES.fond.get(cle) : bg?.[1];
+    const fgTxt = sombre && SURCHARGES.texte.has(cle) ? SURCHARGES.texte.get(cle) : fg?.[1];
+    if (!bgTxt || !fgTxt) continue;
+    let B = resolve(bgTxt, vars);
+    const F = resolve(fgTxt, vars);
     if (!B || !F) continue;
     // Un fond translucide laisse voir le panneau : composer pour juger
     // la couleur réellement perçue, sinon on signale de faux problèmes.
@@ -146,7 +196,8 @@ for (const [nom, vars] of Object.entries(PROFILS)) {
       B = B.map((c, i) => Math.round(c * B.alpha + sous[i] * (1 - B.alpha)));
     }
     const r = ratio(B, F);
-    if (r < SEUIL) mauvais.push({ sel, r: r.toFixed(2), bg: bg[1].trim().slice(0, 44), fg: fg[1].trim().slice(0, 24) });
+    if (r < SEUIL)
+      mauvais.push({ sel, r: r.toFixed(2), bg: bgTxt.trim().slice(0, 44), fg: fgTxt.trim().slice(0, 24) });
   }
   console.log(`\n=== ${nom} : ${mauvais.length} couple(s) fond/texte sous ${SEUIL}:1 ===`);
   for (const x of mauvais)

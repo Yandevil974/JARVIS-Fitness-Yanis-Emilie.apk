@@ -580,6 +580,10 @@ function Workout() {
                       <span>{ex.timed ? "sec" : "reps"}</span>
                     </div>
                   </Field>
+                  {/* RPE et RIR sur la même ligne que les répétitions :
+                      ce sont les deux mesures d'effort saisies à chaque
+                      série. Le RIR était auparavant replié dans un
+                      dépliant, donc invisible en pratique. */}
                   <Field label="RPE · effort /10">
                     <Select
                       aria-label="RPE de la série"
@@ -592,23 +596,26 @@ function Workout() {
                       ))}
                     </Select>
                   </Field>
+                  <Field label="RIR · reps en réserve">
+                    <Select
+                      aria-label="RIR de la série"
+                      value={rir}
+                      onChange={(e) => setRir(e.target.value)}
+                    >
+                      <option value="">À renseigner</option>
+                      {[0, 1, 2, 3, 4, 5].map((v) => (
+                        <option key={v} value={v}>
+                          {v === 0 ? "0 · échec" : v}
+                        </option>
+                      ))}
+                    </Select>
+                  </Field>
                 </div>
                 <details className="set-details">
                   <summary>
-                    RIR et note de série <Icon name="ChevronDown" size={13} />
+                    Note de série <Icon name="ChevronDown" size={13} />
                   </summary>
                   <div className="form-grid">
-                    <Field label="Répétitions en réserve">
-                      <Input
-                        type="number"
-                        min="0"
-                        max="10"
-                        step="1"
-                        placeholder="Optionnel"
-                        value={rir}
-                        onChange={(e) => setRir(e.target.value)}
-                      />
-                    </Field>
                     <Field label="Note">
                       <Input
                         value={note}

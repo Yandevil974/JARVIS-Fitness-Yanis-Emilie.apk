@@ -87,6 +87,64 @@
   --font: Manrope, Arial, sans-serif;
   --sidebar-width: 220px;
 }
+
+/* ============================================================
+   THÈME SOMBRE (optionnel)
+   ------------------------------------------------------------
+   Activé par data-theme="dark" sur <html>. Tout le reste de la
+   feuille dérivant ses couleurs des variables ci-dessus, il suffit
+   de redéfinir ce même jeu : aucune règle n'a besoin d'être
+   dupliquée.
+
+   Deux précautions, apprises du mode clair :
+   - les textes descendent d'un cran en clarté, pas en saturation,
+     pour rester lisibles sans virer au gris sale ;
+   - le dégradé d'accent, qui porte du texte blanc, est ÉCLAIRCI ici
+     alors qu'il était assombri en clair : sur fond sombre c'est le
+     blanc qui doit ressortir du bouton, pas l'inverse.
+   ============================================================ */
+[data-theme="dark"] {
+  --bg: hsl(var(--h-surface) calc(var(--s-surface) * 0.20) 8.5%);
+  --sidebar: hsl(var(--h-surface) calc(var(--s-surface) * 0.22) 10.5%);
+  --panel: hsl(var(--h-surface) calc(var(--s-surface) * 0.18) 13%);
+  --panel-2: hsl(var(--h-surface) calc(var(--s-surface) * 0.20) 16%);
+  --panel-3: hsl(var(--h-surface) calc(var(--s-surface) * 0.22) 19%);
+  --line: hsl(var(--h-surface) calc(var(--s-surface) * 0.20) 24%);
+  --line-strong: hsl(var(--h-surface) calc(var(--s-surface) * 0.24) 34%);
+  --text: hsl(var(--h-surface) 16% 95%);
+  --muted: hsl(var(--h-surface) 10% 72%);
+  --dim: hsl(var(--h-surface) 8% 60%);
+  /* Couleurs sémantiques remontées en clarté : les versions du mode
+     clair (34-48 %) sont trop foncées sur un fond à 8 %. */
+  --mint: hsl(166 52% 62%);
+  --mint-strong: hsl(166 58% 72%);
+  --mint-dark: hsl(166 30% 20%);
+  --blue: hsl(200 62% 66%);
+  --pink: hsl(334 64% 70%);
+  --amber: hsl(38 76% 62%);
+  --red: hsl(2 70% 66%);
+  --accent-soft: hsl(var(--h-accent) 40% 22%);
+}
+/* Accents : éclaircis pour porter du texte blanc sur fond sombre. */
+[data-theme="dark"] {
+  --accent: hsl(34 88% 62%);
+  --accent-2: hsl(10 82% 66%);
+  --accent-grad: linear-gradient(135deg, hsl(36 90% 54%) 0%, hsl(12 82% 58%) 100%);
+  --tri-1: hsl(34 88% 62%);
+  --tri-2: hsl(8 80% 66%);
+  --tri-3: hsl(176 56% 54%);
+  --theme-tint-1: hsl(34 90% 60% / 10%);
+  --theme-tint-2: hsl(176 62% 56% / 8%);
+  --theme-tint-3: hsl(10 84% 62% / 6%);
+}
+[data-theme="dark"][data-profile="emilie"] {
+  --accent: hsl(334 78% 68%);
+  --accent-2: hsl(272 70% 72%);
+  --accent-grad: linear-gradient(135deg, hsl(334 80% 58%) 0%, hsl(272 72% 62%) 100%);
+  --tri-1: hsl(334 80% 68%);
+  --tri-2: hsl(272 70% 72%);
+  --tri-3: hsl(300 50% 74%);
+}
 * {
   box-sizing: border-box;
 }
@@ -98,6 +156,11 @@ html {
      fonds clairs, illisible. */
   color-scheme: light;
   scroll-behavior: smooth;
+}
+html[data-theme="dark"] {
+  /* Le pendant sombre : les champs et listes dessinés par le
+     navigateur doivent suivre le thème, sinon ils restent blancs. */
+  color-scheme: dark;
 }
 body {
   margin: 0;
@@ -3224,10 +3287,19 @@ textarea.input {
 .set-entry .section-heading {
   margin-bottom: 19px;
 }
+/* Quatre saisies par série : charge, répétitions, RPE, RIR.
+   Sur téléphone, charge et reps gardent toute la largeur — ce sont les
+   deux champs qu'on remplit systématiquement — et les deux mesures
+   d'effort se partagent la ligne suivante. */
 .set-inputs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 13px;
+}
+@media (max-width: 900px) {
+  .set-inputs {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .set-inputs .field > span {
   font-size: 8px;
@@ -14446,4 +14518,76 @@ button.primary {
 }
 .wearable-samsung p:last-child {
   padding-bottom: 11px;
+}
+
+/* ---------- Sélecteur de profil de la barre du haut ---------- */
+.top-profile {
+  position: relative;
+  display: flex;
+}
+.top-profile-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  border: 0;
+  background: transparent;
+  cursor: default;
+}
+.top-profile-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 41;
+  min-width: 232px;
+}
+
+/* ============================================================
+   SURCHARGES DU THÈME SOMBRE
+   Placées en fin de feuille : à spécificité égale, c'est la dernière
+   règle qui gagne. Déclarées près du bloc de variables, elles étaient
+   écrasées par les règles de base situées plus bas.
+   ============================================================ */
+/* Les aplats d'accent sont clairs en mode sombre : le texte blanc y
+   tombe à 2,1:1. On le passe en sombre, ce qui rétablit un fort
+   contraste tout en gardant l'aplat coloré. */
+[data-theme="dark"] .brand-mark,
+[data-theme="dark"] .top-avatar,
+[data-theme="dark"] .user-avatar,
+[data-theme="dark"] .btn.primary,
+[data-theme="dark"] button.primary,
+[data-theme="dark"] .send-button,
+[data-theme="dark"] .validate-set:hover {
+  color: hsl(var(--h-surface) 30% 10%) !important;
+}
+/* Pastilles translucides : leur teinte de fond était calculée pour un
+   panneau blanc. Sur panneau sombre il faut un voile clair, sinon la
+   pastille disparaît et son texte avec. */
+[data-theme="dark"] .badge.orange,
+[data-theme="dark"] .badge.red,
+[data-theme="dark"] .badge.pink,
+[data-theme="dark"] .badge.mint,
+[data-theme="dark"] .badge.blue {
+  background: hsl(var(--h-surface) 12% 26%);
+}
+[data-theme="dark"] .coach-card-head strong > span {
+  background: hsl(var(--h-surface) 12% 26%);
+}
+
+/* Les cinq aplats qui portent du texte blanc en clair : sur fond
+   sombre le dégradé est plus clair, le blanc reste donc le bon choix
+   et rien n'est à changer. En revanche les surfaces que le mode clair
+   avait forcées en blanc pur doivent suivre le panneau. */
+[data-theme="dark"] .full-week-strip .week-day > strong,
+[data-theme="dark"] .day-discipline,
+[data-theme="dark"] .restoration-banner,
+[data-theme="dark"] .team-advisor strong,
+[data-theme="dark"] .team-voice h3 {
+  color: var(--text);
+}
+[data-theme="dark"] .restoration-banner {
+  background: linear-gradient(110deg, hsl(272 30% 22%), hsl(var(--h-surface) 20% 18%));
+}
+[data-theme="dark"] .calendar-combo-tags > b {
+  background: hsl(34 40% 22%);
+  color: hsl(34 84% 74%);
 }

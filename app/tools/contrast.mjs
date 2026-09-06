@@ -76,6 +76,12 @@ for (const [name, t] of Object.entries(THEMES)) {
   let m;
   while ((m = re.exec(css))) {
     if (m[2] !== "color") continue;
+    // Les règles du thème sombre s'appliquent sur des fonds sombres :
+    // les juger contre les fonds clairs produirait de faux défauts.
+    // Elles sont couvertes par tools/contrast-pairs.mjs, qui connaît
+    // les deux thèmes.
+    const debut = css.lastIndexOf("}", m.index) + 1;
+    if (css.slice(debut, m.index).includes('[data-theme="dark"]')) continue;
     const rgb = resolve(m[3], t);
     if (!rgb) continue;
     const worst = Math.min(...Object.values(bgs).map((b) => ratio(rgb, b)));

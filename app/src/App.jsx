@@ -67,8 +67,10 @@ export default function App() {
     bundledBackup,
     restoreDismissed,
     setRestoreDismissed,
+    switchProfile,
   } = useApp();
   const [menu, setMenu] = useState(false),
+    [topProfiles, setTopProfiles] = useState(false),
     [search, setSearch] = useState("");
   const searchRef = useRef();
   useEffect(() => {
@@ -105,17 +107,30 @@ export default function App() {
         img.classList.toggle("paused", !!p?.preferences.reducedMotion),
       );
   }, [p?.preferences.reducedMotion, page]);
+  // Mode clair ou sombre, au choix, indépendant du profil.
+  useEffect(() => {
+    const dark = p?.preferences?.theme === "dark";
+    if (dark) document.documentElement.dataset.theme = "dark";
+    else delete document.documentElement.dataset.theme;
+  }, [p?.preferences?.theme]);
   // Thème par profil : Émilie reçoit la palette rose/violet de son fichier
   // source, Yanis la palette ambre/cuivre du sien. Voir styles.css.
   useEffect(() => {
     if (!p?.id) return;
     document.documentElement.dataset.profile = p.id;
-    // Barre système assortie au fond clair de chaque profil.
-    const color = p.id === "emilie" ? "#fdf4f9" : "#fdf9f4";
+    // Barre système assortie au fond du profil ET du thème.
+    const dark = p.preferences?.theme === "dark";
+    const color = dark
+      ? p.id === "emilie"
+        ? "#161013"
+        : "#161310"
+      : p.id === "emilie"
+        ? "#fdf4f9"
+        : "#fdf9f4";
     document
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute("content", color);
-  }, [p?.id]);
+  }, [p?.id, p?.preferences?.theme]);
   if (!ready)
     return (
       <div className="app-loading">
@@ -208,13 +223,59 @@ export default function App() {
               <Icon name="Bell" size={19} />
               {p.notifications.some((n) => !n.read) && <i />}
             </button>
-            <button
-              className="top-avatar"
-              aria-label="Ouvrir mon profil"
-              onClick={() => navigate("profile")}
-            >
-              {(p.user.name || "É").slice(0, 1).toUpperCase()}
-            </button>
+            {/* L'avatar de la barre du haut est le point où l'on cherche
+                naturellement à changer de profil. Il n'ouvrait que la
+                page Profil, si bien qu'Émilie semblait absente : son
+                sélecteur n'existait qu'en bas de la barre latérale,
+                masquée sur téléphone. */}
+            <div className="top-profile">
+              <button
+                className="top-avatar"
+                aria-label="Changer de profil ou ouvrir mon profil"
+                aria-expanded={topProfiles}
+                onClick={() => setTopProfiles((v) => !v)}
+              >
+                {(p.user.name || "É").slice(0, 1).toUpperCase()}
+              </button>
+              {topProfiles && (
+                <>
+                  <button
+                    className="top-profile-veil"
+                    aria-label="Fermer"
+                    onClick={() => setTopProfiles(false)}
+                  />
+                  <div className="profile-options top-profile-menu">
+                    {["elite", "emilie"].map((id) => (
+                      <button
+                        key={id}
+                        className={p.id === id ? "active" : ""}
+                        onClick={() => {
+                          switchProfile(id);
+                          setTopProfiles(false);
+                        }}
+                      >
+                        <Icon name="UserRound" size={16} />
+                        <span>
+                          {state.profiles[id].user.name ||
+                            (id === "emilie" ? "Émilie" : "Yanis")}
+                        </span>
+                        {p.id === id && <Icon name="Check" size={14} />}
+                      </button>
+                    ))}
+                    <button
+                      onClick={() => {
+                        navigate("profile");
+                        setTopProfiles(false);
+                      }}
+                    >
+                      <Icon name="Settings" size={16} />
+                      <span>Ouvrir mon profil</span>
+                    </button>
+                    <small>Historiques totalement séparés</small>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </header>
         {(!saving.ok || storageWarning) && (
@@ -335,10 +396,30 @@ function Sidebar({ menu, setMenu }) {
         aria-label="JARVIS, accueil"
       >
         <span className="brand-mark">
-          <svg viewBox="0 0 40 40">
+          {/* Marque volontairement sobre : un anneau ouvert (la
+              progression, jamais tout à fait bouclée) et un J franc.
+              L'ancien blason anguleux évoquait trop directement le
+              réacteur d'un personnage de fiction. */}
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <circle
+              cx="20"
+              cy="20"
+              r="14"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.4"
+              strokeLinecap="round"
+              strokeDasharray="66 22"
+              transform="rotate(-58 20 20)"
+              opacity="0.85"
+            />
             <path
-              d="M9 8H31V25L20 33 9 25V16H17V23L20 25 23 23V15H9Z"
-              fill="currentColor"
+              d="M23.4 11.6V22.6C23.4 25.9 21.3 27.9 18.2 27.9C16.2 27.9 14.6 27.1 13.6 25.7"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </span>

@@ -672,6 +672,17 @@ function Equipment() {
             </div>
           )}
           <Switch
+            checked={p.preferences.theme === "dark"}
+            label="Thème sombre"
+            description="Fond sombre et textes clairs, en gardant la couleur de votre profil. Utile le soir ou en salle peu éclairée."
+            onChange={(v) => {
+              updateProfile((q) => {
+                q.preferences.theme = v ? "dark" : "light";
+              });
+              notify(v ? "Thème sombre activé." : "Thème clair rétabli.");
+            }}
+          />
+          <Switch
             checked={p.preferences.reducedMotion}
             label="Animations réduites"
             description="Coupe les animations décoratives, met les démonstrations en pause sur leur première image et supprime les défilements animés. Utile en cas de sensibilité au mouvement ou pour économiser la batterie."

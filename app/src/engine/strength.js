@@ -588,15 +588,26 @@ export function loadReason(s) {
 
 /* ---------- Bilan et réévaluation ---------- */
 
+/** Un bilan compte-t-il comme réalisé ?
+ *
+ *  Ne pas exiger `baseKey` : les bilans importés depuis les anciens
+ *  fichiers HTML identifient l'exercice par `exerciseId` ou par un
+ *  libellé, et n'ont jamais cette clé. L'exiger revenait à ignorer un
+ *  bilan pourtant complet et à en redemander un nouveau — exactement
+ *  ce que `declaredBase` sait déjà rattraper plus bas. */
+function usableTest(t) {
+  return !!(t.baseKey || t.exerciseId || t.originalLabel) && num(t.estimate) > 0;
+}
+
 /** Le bilan 1RM a-t-il été réalisé ? */
 export function forceTestDone(p) {
-  return (p.forceTests || []).some((t) => t.baseKey && num(t.estimate) > 0);
+  return (p.forceTests || []).some(usableTest);
 }
 
 /** Date du bilan le plus récent. */
 export function lastForceTestDate(p) {
   const dates = (p.forceTests || [])
-    .filter((t) => t.baseKey && validDate(t.date))
+    .filter((t) => usableTest(t) && validDate(t.date))
     .map((t) => t.date)
     .sort();
   return dates.length ? dates.at(-1) : null;
