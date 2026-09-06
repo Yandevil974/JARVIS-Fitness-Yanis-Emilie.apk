@@ -28,7 +28,10 @@
   --accent: hsl(30 88% 44%);
   --accent-2: hsl(12 82% 52%);
   --accent-soft: hsl(34 90% 92%);
-  --accent-grad: linear-gradient(135deg, hsl(36 92% 52%) 0%, hsl(10 84% 56%) 100%);
+  /* Assombri : ce dégradé porte du texte blanc (boutons pleins, avatar,
+     logo). Aux clartés d'origine (52/56 %) le blanc tombait à 2,2:1,
+     illisible. À 38/42 % il dépasse 4,5:1 en gardant la teinte. */
+  --accent-grad: linear-gradient(135deg, hsl(36 92% 38%) 0%, hsl(10 84% 42%) 100%);
   --accent-glow: 226 132 44;
   /* Trio ambre / corail / turquoise : le turquoise donne la respiration
      froide qui remplace l'ancien bleu, sans le ramener. */
@@ -50,7 +53,8 @@
   --accent: hsl(334 74% 50%);
   --accent-2: hsl(272 66% 58%);
   --accent-soft: hsl(330 90% 95%);
-  --accent-grad: linear-gradient(135deg, hsl(334 84% 62%) 0%, hsl(272 76% 66%) 100%);
+  /* Même contrainte que pour Yanis : texte blanc par-dessus. */
+  --accent-grad: linear-gradient(135deg, hsl(334 84% 44%) 0%, hsl(272 76% 50%) 100%);
   --accent-glow: 226 84 148;
   --tri-1: hsl(334 80% 58%);
   --tri-2: hsl(272 70% 62%);
@@ -87,7 +91,12 @@
   box-sizing: border-box;
 }
 html {
-  color-scheme: dark;
+  /* Les deux thèmes sont clairs : l'annoncer au navigateur pour qu'il
+     rende en clair les éléments qu'il dessine lui-même — champs de
+     saisie, listes déroulantes, barres de défilement, sélecteurs de
+     date. Laissé sur « dark », il y peignait du texte clair sur nos
+     fonds clairs, illisible. */
+  color-scheme: light;
   scroll-behavior: smooth;
 }
 body {
@@ -532,8 +541,10 @@ pre {
 }
 .user-avatar,
 .top-avatar {
-  background: linear-gradient(145deg, hsl(46.9 25% 26%), hsl(220 2.2% 69.5%));
-  color: var(--text);
+  /* Dégradé sombre hérité du thème nuit : remplacé par l'accent du
+     profil, qui porte déjà du texte blanc lisible. */
+  background: var(--accent-grad);
+  color: #fff;
   font-weight: 750;
   display: grid;
   place-items: center;
@@ -12603,7 +12614,8 @@ body {
 }
 .full-week-strip .week-day > strong {
   font-size: 23px;
-  color: white;
+  /* Fond pâle : le blanc d'origine (thème sombre) était illisible. */
+  color: var(--text);
 }
 .full-week-strip .week-day > span {
   color: hsl(calc(var(--h-accent) - 0.8deg), calc(var(--s-accent) * 1.2), 28.3%);
@@ -12639,7 +12651,9 @@ body {
   justify-content: center;
   gap: 3px;
   line-height: 1.4;
-  color: white !important;
+  /* La pastille porte la couleur de sa discipline en teinte pâle :
+     le texte doit être sombre, non blanc. */
+  color: var(--text) !important;
   white-space: nowrap;
   padding: 4px 3px;
   border-radius: 5px;
@@ -12730,8 +12744,10 @@ body {
   margin: 5px 0;
 }
 .calendar-combo-tags > b {
-  background: hsl(32.8 85% 28.1%);
-  color: hsl(34.6 60% 38.5%);
+  /* Reste du thème sombre : fond ambre foncé sous un texte ambre.
+     Repassé en pastille claire à texte foncé. */
+  background: hsl(34 80% 92%);
+  color: hsl(30 88% 30%);
   padding: 2px 5px;
   border-radius: 4px;
   font-size: 8px;
@@ -12817,7 +12833,8 @@ body {
   border: 1px solid hsl(277.7 85% 26%);
   border-radius: 13px;
   background: linear-gradient(110deg, hsl(266.6 30.7% 86%), hsl(calc(var(--h-surface) + 2.7deg), calc(var(--s-surface) * 0.3), 87.5%));
-  color: white;
+  /* Dégradé pâle : texte sombre. */
+  color: var(--text);
 }
 .restoration-banner > div {
   flex: 1;
@@ -13193,7 +13210,7 @@ body {
   display: block;
   font-size: 12px;
   line-height: 1.5;
-  color: white;
+  color: var(--text);
 }
 .team-advisor small {
   display: block;
@@ -13263,7 +13280,7 @@ body {
 }
 .team-voice h3 {
   font-size: 15px;
-  color: white;
+  color: var(--text);
 }
 .team-voice > div > span {
   flex: 1;
@@ -13847,7 +13864,7 @@ body {
   --recovery: hsl(272 62% 60%);
   --team: hsl(318 60% 54%);
   --nutrition: hsl(120 38% 40%);
-  --amber: hsl(38 78% 46%);
+  --amber: hsl(36 82% 36%);
   --pink: hsl(334 74% 52%);
   --blue: hsl(272 62% 58%);
 }

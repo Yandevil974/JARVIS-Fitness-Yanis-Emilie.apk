@@ -365,18 +365,15 @@ function Wearable() {
         subtitle="Connexion directe en Bluetooth, sans compte ni serveur."
       />
       {!availability.ok ? (
-        <div className="info-line">
-          <Icon name="Info" size={16} />
-          <p>{availability.reason}</p>
-        </div>
-      ) : !device ? (
         <>
-          <p className="wearable-intro">
-            JARVIS lit le service Bluetooth standard de fréquence cardiaque
-            (0x180D). Sont compatibles directement les ceintures Polar, Garmin,
-            Wahoo, Decathlon, et les montres de sport qui diffusent leur cardio
-            en direct.
-          </p>
+          <div className="info-line">
+            <Icon name="Info" size={16} />
+            <p>{availability.reason}</p>
+          </div>
+          {/* L'appairage direct est impossible ici, mais l'explication
+              Samsung reste utile : c'est justement dans ce cas qu'on la
+              cherche. Elle était auparavant cachée dans la branche
+              « compatible », donc invisible dans l'application installée. */}
           <details className="wearable-samsung">
             <summary>
               <Icon name="Watch" size={14} /> Vous avez une montre Samsung
@@ -402,6 +399,20 @@ function Wearable() {
               quoi la diffusion se coupe au bout d’une minute.
             </p>
           </details>
+          <p className="wearable-intro">
+            Pour appairer malgré tout : ouvrez cette même application dans
+            Chrome sur le téléphone. Le Bluetooth y est disponible, alors que
+            la version installée ne l’expose pas.
+          </p>
+        </>
+      ) : !device ? (
+        <>
+          <p className="wearable-intro">
+            JARVIS lit le service Bluetooth standard de fréquence cardiaque
+            (0x180D). Sont compatibles directement les ceintures Polar, Garmin,
+            Wahoo, Decathlon, et les montres de sport qui diffusent leur cardio
+            en direct.
+          </p>
           <Button icon="Watch" onClick={connect} disabled={busy}>
             {busy ? "Recherche…" : "Connecter un capteur"}
           </Button>
