@@ -407,6 +407,17 @@ const STRETCH_IMAGES = {
   "Bras tendu devant, main tirée": "/media/stretch-ep-posterieur.jpg",
   "Bras tendu derrière": "/media/stretch-biceps.jpg",
   "Coude au-dessus de la tête": "/media/stretch-triceps-coude.jpg",
+  "Main dans le dos": "/media/stretch-triceps-dos.jpg",
+  "Étirement des fléchisseurs": "/media/stretch-avb-flechisseurs.jpg",
+  "Étirement des extenseurs": "/media/stretch-avb-extenseurs.jpg",
+  "Étirement du cobra": "/media/stretch-cobra.jpg",
+  "Cobra doux": "/media/stretch-cobra.jpg",
+  "Pigeon assis": "/media/stretch-pigeon.jpg",
+  "Étirement du piriforme assis": "/media/stretch-piriforme.jpg",
+  "Talon vers la fesse (debout)": "/media/stretch-quad-debout.jpg",
+  "Allongé sur le côté": "/media/stretch-quad-cote.jpg",
+  "Flexion avant jambes tendues": "/media/stretch-isc-flexion.jpg",
+  "Une jambe tendue, une pliée": "/media/stretch-isc-une-jambe.jpg",
 };
 
 export const RECOVERY_EXERCISES = Object.entries({
