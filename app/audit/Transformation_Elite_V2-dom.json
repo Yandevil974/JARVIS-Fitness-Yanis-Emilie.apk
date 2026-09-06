@@ -1,0 +1,457 @@
+{
+  "screens": [
+    {
+      "id": "v-dashboard",
+      "text": "Tableau de bord Programme du jour Recommandations de l'équipe Score de transformation Phase en cours Badges Voir tout Objectif annuel"
+    },
+    {
+      "id": "v-profil",
+      "text": "👤 Profil & bilan de départ Renseignez votre bilan « Jour 0 ». Tous les calculs du programme (nutrition, objectifs, progression) se basent sur ces données. Données générales Nom / Prénom Date du bilan "
+    },
+    {
+      "id": "v-force",
+      "text": "🔢 Bilan de force maximale (1RM) À réaliser avant votre bilan de départ : ce test personnalise automatiquement les charges suggérées de chaque exercice du programme. Le coach programme la réévaluation "
+    },
+    {
+      "id": "v-mensurations",
+      "text": "📏 Mensurations & poids Suivi hebdomadaire du poids, mensuel des mensurations. Vos données sont comparées au Jour 0. ⚖️ Poids actuel 📉 Masse grasse 📐 Mensurations suivies Poids — suivi hebdomadaire Pes"
+    },
+    {
+      "id": "v-entrainement",
+      "text": "🏋️ Entraînement Programme GB Performance amélioré — périodisation ondulatoire sur 52 semaines, adapté à vos séances disponibles. Cette semaine 📚 Mes semaines & charges enregistrées revenez sur vos sem"
+    },
+    {
+      "id": "v-nutrition",
+      "text": "🍽️ Nutrition Vos besoins calculés à partir du profil, ajustés selon votre stratégie et l'évolution du poids. Stratégie nutritionnelle Ajustement automatique suggéré selon votre tendance de poids : Act"
+    },
+    {
+      "id": "v-repas",
+      "text": "🥗 Repas jour par jour Le nutritionniste vous propose un menu différent chaque jour (3 rotations par repas), calibré sur vos besoins du mois. Consultez la journée, naviguez dans la semaine, et notez vo"
+    },
+    {
+      "id": "v-recuperation",
+      "text": "😴 Récupération & sommeil La récupération est le moteur de la croissance musculaire. Répondez chaque jour au check-in : le programme adapte automatiquement ses recommandations. Score de récupération au"
+    },
+    {
+      "id": "v-progression",
+      "text": "📊 Progression & performances Analyse de vos données : charges, records personnels, volume d'entraînement et évolution. Records personnels (1RM estimé) 🏋️ Développé couché 🏋️ Squat 🏋️ Soulevé de terre "
+    },
+    {
+      "id": "v-photos",
+      "text": "📸 Galerie de transformation Cinq bilans photo : Jour 0, Mois 3, Mois 6, Mois 9, Mois 12 — face, profil et dos. Comparez l'évolution. Comparateur visuel → Face Profil Dos Comparer Astuce : utilisez le "
+    },
+    {
+      "id": "v-calendrier",
+      "text": "📅 Calendrier 365 jours Chaque jour : la séance planifiée, la nutrition, la récupération. Cochez vos séances et suivez votre régularité. ◀ ▶ Aujourd'hui Auto-cocher à partir du journal Séance terminée "
+    },
+    {
+      "id": "v-objectifs",
+      "text": "🏆 Objectifs Définissez votre objectif principal et vos cibles chiffrées. Le programme suit votre progression vers chacune d'elles. Objectif principal Score de discipline & régularité Objectifs seconda"
+    },
+    {
+      "id": "v-equipe",
+      "text": "🧠 L'équipe de spécialistes Une équipe virtuelle vous accompagne 12 mois. Chaque expert analyse vos données et vous donne ses conseils. Conseils personnalisés en direct ⚠️ L'ensemble des conseils fourn"
+    },
+    {
+      "id": "v-piscine",
+      "text": "🏊 Piscine 8,5 × 4 m — Pool Lab Protocoles 100 % base temps adaptés à un bassin de 8,5 m : nage statique à l'élastique, aqua-jogging, HIIT aquatique, récupération. Savoir nager requis. Ne nagez jamais "
+    },
+    {
+      "id": "v-cardio",
+      "text": "⚡ Cardio & Tabata Endurance, intervalles, HIIT et Tabata avec minuteur guidé + voix. Votre METCON du mois est repris en preset exécutable. Tabata System — 20/10 × 8 20 s effort · 10 s repos Cardio gui"
+    },
+    {
+      "id": "v-bilan",
+      "text": ""
+    }
+  ],
+  "inputs": [
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "p-nom",
+      "placeholder": "Ex. Jean Dupont"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "date",
+      "id": "p-date"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "p-age",
+      "min": "18",
+      "max": "80",
+      "placeholder": "28"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "p-taille",
+      "min": "140",
+      "max": "220",
+      "placeholder": "178"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "p-poids",
+      "min": "40",
+      "max": "220",
+      "step": "0.1",
+      "placeholder": "80"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "p-objectif-poids",
+      "min": "40",
+      "max": "220",
+      "step": "0.1",
+      "placeholder": "88"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "p-niveau"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "p-annees",
+      "min": "0",
+      "max": "40",
+      "step": "0.5",
+      "placeholder": "2"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "p-seances"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "p-mg",
+      "min": "4",
+      "max": "60",
+      "step": "0.1",
+      "placeholder": "18"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "p-mm",
+      "min": "20",
+      "max": "120",
+      "step": "0.1",
+      "placeholder": "35"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "p-imc",
+      "disabled": "",
+      "placeholder": "—"
+    },
+    {
+      "class": [
+        "inp",
+        "inp-date"
+      ],
+      "type": "date",
+      "id": "w-date",
+      "style": "width:165px"
+    },
+    {
+      "class": [
+        "inp",
+        "inp-num",
+        "inp-val"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "autocomplete": "off",
+      "id": "w-val",
+      "placeholder": "kg"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "m-mois-select",
+      "style": "width:170px"
+    },
+    {
+      "class": [
+        "inp",
+        "inp-date"
+      ],
+      "type": "date",
+      "id": "mg-date",
+      "style": "width:165px"
+    },
+    {
+      "class": [
+        "inp",
+        "inp-num",
+        "inp-val"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "autocomplete": "off",
+      "id": "mg-val",
+      "placeholder": "%"
+    },
+    {
+      "type": "checkbox",
+      "id": "nut-auto",
+      "checked": "",
+      "onchange": "saveNutri()"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "tel",
+      "inputmode": "decimal",
+      "id": "r-h",
+      "min": "0",
+      "max": "16",
+      "step": "0.5",
+      "placeholder": "7.5"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "range",
+      "id": "r-qual",
+      "min": "1",
+      "max": "5",
+      "value": "3"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "range",
+      "id": "r-fa",
+      "min": "1",
+      "max": "5",
+      "value": "3"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "range",
+      "id": "r-str",
+      "min": "1",
+      "max": "5",
+      "value": "2"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "range",
+      "id": "r-cour",
+      "min": "1",
+      "max": "5",
+      "value": "2"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "range",
+      "id": "r-mot",
+      "min": "1",
+      "max": "5",
+      "value": "4"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "type": "range",
+      "id": "r-en",
+      "min": "1",
+      "max": "5",
+      "value": "3"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "cmp-a",
+      "style": "width:150px"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "cmp-b",
+      "style": "width:150px"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "cmp-view",
+      "style": "width:120px"
+    },
+    {
+      "class": [
+        "inp"
+      ],
+      "id": "as-text",
+      "placeholder": "Écrivez votre question…",
+      "autocomplete": "off",
+      "onkeydown": "if(event.key==='Enter')asEnvoyerTexte()"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "⚙️",
+      "onclick": "openSettings()"
+    },
+    {
+      "text": "🖨️",
+      "onclick": "printReport()"
+    },
+    {
+      "text": "✕",
+      "onclick": "hideStorageBanner()"
+    },
+    {
+      "text": "Voir tout",
+      "onclick": "go('v-objectifs')"
+    },
+    {
+      "text": "💾 Valider & démarrer",
+      "onclick": "saveProfil()"
+    },
+    {
+      "text": "−",
+      "onclick": null
+    },
+    {
+      "text": "+",
+      "onclick": null
+    },
+    {
+      "text": "+ Ajouter",
+      "onclick": "addWeight()"
+    },
+    {
+      "text": "✏️ Saisir le relevé",
+      "onclick": "openMensModal()"
+    },
+    {
+      "text": "−",
+      "onclick": null
+    },
+    {
+      "text": "+",
+      "onclick": null
+    },
+    {
+      "text": "+ Ajouter",
+      "onclick": "addMG()"
+    },
+    {
+      "text": "➕ Ajouter un aliment",
+      "onclick": "openFoodModal()"
+    },
+    {
+      "text": "💾 Enregistrer le check-in",
+      "onclick": "saveRecup()"
+    },
+    {
+      "text": "Comparer",
+      "onclick": "loadComparison()"
+    },
+    {
+      "text": "◀",
+      "onclick": "calNav(-1)"
+    },
+    {
+      "text": "▶",
+      "onclick": "calNav(1)"
+    },
+    {
+      "text": "Aujourd'hui",
+      "onclick": "calNav(0)"
+    },
+    {
+      "text": "Auto-cocher à partir du journal",
+      "onclick": "autoFillCalendar()"
+    },
+    {
+      "text": "🔊",
+      "onclick": "asToggleMute()"
+    },
+    {
+      "text": "✕",
+      "onclick": "toggleAssistant()"
+    },
+    {
+      "text": "🎤",
+      "onclick": "asToggleListen()"
+    },
+    {
+      "text": "➤",
+      "onclick": "asEnvoyerTexte()"
+    },
+    {
+      "text": "🎙️",
+      "onclick": "toggleAssistant()"
+    }
+  ],
+  "styles": [
+    {
+      "characters": 48484,
+      "media_rules": 14
+    }
+  ],
+  "scripts": [
+    {
+      "characters": 9563645,
+      "src": null
+    },
+    {
+      "characters": 921,
+      "src": null
+    }
+  ]
+}

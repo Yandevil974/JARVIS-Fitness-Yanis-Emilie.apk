@@ -1,0 +1,9 @@
+
+Running 4 tests using 1 worker
+
+  ✓  1 tests/devices.spec.js:9:3 › Galaxy S24: responsive layout and all main modules (11.6s)
+  ✓  2 tests/devices.spec.js:9:3 › Galaxy Z Fold5 fermé: responsive layout and all main modules (8.4s)
+  ✓  3 tests/devices.spec.js:9:3 › Galaxy Z Fold5 déplié: responsive layout and all main modules (6.1s)
+  ✓  4 tests/devices.spec.js:68:1 › Fold5: folding and unfolding retain the actual current workout (2.0s)
+
+  4 passed (29.0s)

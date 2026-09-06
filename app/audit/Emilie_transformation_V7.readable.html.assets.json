@@ -1,0 +1,400 @@
+{
+  "source_sha256": "64a966725951e3ac18987b4ff8767eb92634ca98a71441109947a7c965313828",
+  "assets": [
+    {
+      "mime": "image/gif",
+      "characters": 223452,
+      "sha256_prefix": "a1b63bbf4c58"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 479068,
+      "sha256_prefix": "8b0fc43a61ef"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 479068,
+      "sha256_prefix": "8b0fc43a61ef"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 479068,
+      "sha256_prefix": "8b0fc43a61ef"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 230324,
+      "sha256_prefix": "7303eed1147f"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 308868,
+      "sha256_prefix": "223e285b7ab7"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 230324,
+      "sha256_prefix": "7303eed1147f"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 230324,
+      "sha256_prefix": "7303eed1147f"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 314544,
+      "sha256_prefix": "eb463aa9a210"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 220880,
+      "sha256_prefix": "7f65876ee7ad"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 299088,
+      "sha256_prefix": "b12ec551bdae"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 299088,
+      "sha256_prefix": "b12ec551bdae"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 326840,
+      "sha256_prefix": "59aac870c903"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 258160,
+      "sha256_prefix": "1083d84f8c07"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 220880,
+      "sha256_prefix": "7f65876ee7ad"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 130760,
+      "sha256_prefix": "881aff1a404b"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 219100,
+      "sha256_prefix": "36675fe1d5dd"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 231156,
+      "sha256_prefix": "400ee43914f2"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 231156,
+      "sha256_prefix": "400ee43914f2"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 357428,
+      "sha256_prefix": "f1e6556bb7a1"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 237012,
+      "sha256_prefix": "8c5444d4fd98"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 272840,
+      "sha256_prefix": "5ff4a08fa663"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 272840,
+      "sha256_prefix": "5ff4a08fa663"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 252520,
+      "sha256_prefix": "b88e64c926b7"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 267240,
+      "sha256_prefix": "162225983931"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 267240,
+      "sha256_prefix": "162225983931"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 357356,
+      "sha256_prefix": "2d50e0678d59"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 320028,
+      "sha256_prefix": "4c39f3cb0a16"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 299088,
+      "sha256_prefix": "b12ec551bdae"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 261080,
+      "sha256_prefix": "e42aaeaaabc3"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 226388,
+      "sha256_prefix": "8003e6670228"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 226388,
+      "sha256_prefix": "8003e6670228"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 258160,
+      "sha256_prefix": "1083d84f8c07"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 606780,
+      "sha256_prefix": "a1f8ca5081f8"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 255320,
+      "sha256_prefix": "44654f5c368e"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 250400,
+      "sha256_prefix": "c4d191dfc243"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 314176,
+      "sha256_prefix": "c4d795d1724a"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 314176,
+      "sha256_prefix": "c4d795d1724a"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 299088,
+      "sha256_prefix": "b12ec551bdae"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 299088,
+      "sha256_prefix": "b12ec551bdae"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 314176,
+      "sha256_prefix": "c4d795d1724a"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 287984,
+      "sha256_prefix": "d1240e29e543"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 282600,
+      "sha256_prefix": "e9ca672b1e34"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 282600,
+      "sha256_prefix": "e9ca672b1e34"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 348412,
+      "sha256_prefix": "351a4c36c6dc"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 348412,
+      "sha256_prefix": "351a4c36c6dc"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 163312,
+      "sha256_prefix": "2fbc534522fc"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 275488,
+      "sha256_prefix": "7286d1c9e74f"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 499104,
+      "sha256_prefix": "a0d5c7696514"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 191924,
+      "sha256_prefix": "b834ca203841"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 191924,
+      "sha256_prefix": "b834ca203841"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 341544,
+      "sha256_prefix": "e8f3bc95a374"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 239568,
+      "sha256_prefix": "7a3fae3c34ad"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 718888,
+      "sha256_prefix": "ce6d28ba0bd2"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 259568,
+      "sha256_prefix": "e2d95d0934f7"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 259568,
+      "sha256_prefix": "e2d95d0934f7"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 240704,
+      "sha256_prefix": "7ecad23df8ca"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 351764,
+      "sha256_prefix": "f30918d14a82"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 351764,
+      "sha256_prefix": "f30918d14a82"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 153384,
+      "sha256_prefix": "22b7b3f8a6d2"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 143008,
+      "sha256_prefix": "23dc351049d5"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 129356,
+      "sha256_prefix": "7e261f1226cb"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 307784,
+      "sha256_prefix": "ac69d8a2a4f8"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 244208,
+      "sha256_prefix": "001f5670ebf9"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 180248,
+      "sha256_prefix": "a2257a828458"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 384104,
+      "sha256_prefix": "24a62e0496d5"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 289508,
+      "sha256_prefix": "239f3a0368de"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 289508,
+      "sha256_prefix": "239f3a0368de"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 251368,
+      "sha256_prefix": "8184491d5f3f"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 251368,
+      "sha256_prefix": "8184491d5f3f"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 144784,
+      "sha256_prefix": "4ca1a1caeb35"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 285208,
+      "sha256_prefix": "a1bdfb473212"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 237584,
+      "sha256_prefix": "1a35f3c420a0"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 187840,
+      "sha256_prefix": "3dad5d73757d"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 120456,
+      "sha256_prefix": "548ff912ba40"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 94204,
+      "sha256_prefix": "8514ad6535fe"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 150948,
+      "sha256_prefix": "2b5cc1d86d7a"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 231748,
+      "sha256_prefix": "04205c05cd27"
+    },
+    {
+      "mime": "image/gif",
+      "characters": 212608,
+      "sha256_prefix": "6c6c085d1a21"
+    }
+  ]
+}

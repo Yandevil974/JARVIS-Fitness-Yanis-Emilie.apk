@@ -1,0 +1,18 @@
+{
+  "appId": "app.jarvis.fitness",
+  "appName": "JARVIS Fitness",
+  "webDir": "release",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#173452",
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": false
+    }
+  }
+}

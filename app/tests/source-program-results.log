@@ -1,0 +1,8 @@
+
+Running 3 tests using 1 worker
+
+  ✓  1 tests/source-program.spec.js:4:36 › Original elite programme is the main view, and its exact exercises can be launched (3.6s)
+  ✓  2 tests/source-program.spec.js:4:36 › Original emilie programme is the main view, and its exact exercises can be launched (2.7s)
+  ✓  3 tests/source-program.spec.js:17:1 › Recording a poor check-in does not alter the programme without the explicit checkbox (4.4s)
+
+  3 passed (11.9s)

@@ -1,0 +1,439 @@
+
+> jarvis-fitness-ai@1.0.4 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: Yanis and Émilie have isolated empty histories and their own annual source programme
+ok 1 - Yanis and Émilie have isolated empty histories and their own annual source programme
+  ---
+  duration_ms: 428.010789
+  ...
+# Subtest: All 13 elite source phases keep their exercise tuples
+ok 2 - All 13 elite source phases keep their exercise tuples
+  ---
+  duration_ms: 309.274328
+  ...
+# Subtest: All 13 emilie source phases keep their exercise tuples
+ok 3 - All 13 emilie source phases keep their exercise tuples
+  ---
+  duration_ms: 196.906404
+  ...
+# Subtest: Planning 1 sessions/week is complete and non-empty
+ok 4 - Planning 1 sessions/week is complete and non-empty
+  ---
+  duration_ms: 291.454485
+  ...
+# Subtest: Planning 2 sessions/week is complete and non-empty
+ok 5 - Planning 2 sessions/week is complete and non-empty
+  ---
+  duration_ms: 276.930799
+  ...
+# Subtest: Planning 3 sessions/week is complete and non-empty
+ok 6 - Planning 3 sessions/week is complete and non-empty
+  ---
+  duration_ms: 433.985254
+  ...
+# Subtest: Planning 4 sessions/week is complete and non-empty
+ok 7 - Planning 4 sessions/week is complete and non-empty
+  ---
+  duration_ms: 426.270665
+  ...
+# Subtest: Planning 5 sessions/week is complete and non-empty
+ok 8 - Planning 5 sessions/week is complete and non-empty
+  ---
+  duration_ms: 431.108159
+  ...
+# Subtest: Planning 6 sessions/week is complete and non-empty
+ok 9 - Planning 6 sessions/week is complete and non-empty
+  ---
+  duration_ms: 357.877873
+  ...
+# Subtest: Invalid dates and duplicate training days rejected
+ok 10 - Invalid dates and duplicate training days rejected
+  ---
+  duration_ms: 520.720849
+  ...
+# Subtest: Epley 80 × 10
+ok 11 - Epley 80 × 10
+  ---
+  duration_ms: 0.287742
+  ...
+# Subtest: Epley 80 × 1
+ok 12 - Epley 80 × 1
+  ---
+  duration_ms: 2.652741
+  ...
+# Subtest: Epley 0 × 10
+ok 13 - Epley 0 × 10
+  ---
+  duration_ms: 0.186743
+  ...
+# Subtest: Epley -5 × 10
+ok 14 - Epley -5 × 10
+  ---
+  duration_ms: 0.142958
+  ...
+# Subtest: Epley 80 × 31
+ok 15 - Epley 80 × 31
+  ---
+  duration_ms: 0.782894
+  ...
+# Subtest: Epley 80 × 2.5
+ok 16 - Epley 80 × 2.5
+  ---
+  duration_ms: 0.199954
+  ...
+# Subtest: Epley  × 10
+ok 17 - Epley  × 10
+  ---
+  duration_ms: 0.083159
+  ...
+# Subtest: Epley 20,5 × 10
+ok 18 - Epley 20,5 × 10
+  ---
+  duration_ms: 0.164507
+  ...
+# Subtest: No load or force estimate invented on empty histories
+ok 19 - No load or force estimate invented on empty histories
+  ---
+  duration_ms: 395.726339
+  ...
+# Subtest: Complete controlled sets permit a modest progression
+ok 20 - Complete controlled sets permit a modest progression
+  ---
+  duration_ms: 344.925615
+  ...
+# Subtest: An isolated free set cannot trigger progression
+ok 21 - An isolated free set cannot trigger progression
+  ---
+  duration_ms: 379.561993
+  ...
+# Subtest: Incomplete intended sets do not trigger progression
+ok 22 - Incomplete intended sets do not trigger progression
+  ---
+  duration_ms: 282.297584
+  ...
+# Subtest: Missing RPE in one of the sets prevents automatic increase
+ok 23 - Missing RPE in one of the sets prevents automatic increase
+  ---
+  duration_ms: 309.355782
+  ...
+# Subtest: Exact units are required: kg per hand never transfer to total kg
+ok 24 - Exact units are required: kg per hand never transfer to total kg
+  ---
+  duration_ms: 243.947157
+  ...
+# Subtest: High declared RPE reduces load, without diagnosing technique
+ok 25 - High declared RPE reduces load, without diagnosing technique
+  ---
+  duration_ms: 272.931207
+  ...
+# Subtest: Deload is not rounded away
+ok 26 - Deload is not rounded away
+  ---
+  duration_ms: 231.29845
+  ...
+# Subtest: Actual set counts, reps, tonnage and partial durations are included
+ok 27 - Actual set counts, reps, tonnage and partial durations are included
+  ---
+  duration_ms: 287.462672
+  ...
+# Subtest: Archived schedules have no hidden four-cycle eviction
+ok 28 - Archived schedules have no hidden four-cycle eviction
+  ---
+  duration_ms: 359.641561
+  ...
+# Subtest: Shortening preserves actual sets and at least one essential movement
+ok 29 - Shortening preserves actual sets and at least one essential movement
+  ---
+  duration_ms: 225.875817
+  ...
+# Subtest: Fatigue adaptation is idempotent within the same day
+ok 30 - Fatigue adaptation is idempotent within the same day
+  ---
+  duration_ms: 251.225907
+  ...
+# Subtest: Negation: Pas de douleur
+ok 31 - Negation: Pas de douleur
+  ---
+  duration_ms: 232.635383
+  ...
+# Subtest: Negation: Sans douleur au genou
+ok 32 - Negation: Sans douleur au genou
+  ---
+  duration_ms: 247.364782
+  ...
+# Subtest: Negation: Aucune douleur
+ok 33 - Negation: Aucune douleur
+  ---
+  duration_ms: 268.33207
+  ...
+# Subtest: Negation: Je ne suis pas fatigué
+ok 34 - Negation: Je ne suis pas fatigué
+  ---
+  duration_ms: 241.157208
+  ...
+# Subtest: Poor sleep is fatigue, not a pain diagnosis
+ok 35 - Poor sleep is fatigue, not a pain diagnosis
+  ---
+  duration_ms: 279.168112
+  ...
+# Subtest: Significant pain suspends the workout and preserves sets
+ok 36 - Significant pain suspends the workout and preserves sets
+  ---
+  duration_ms: 240.538409
+  ...
+# Subtest: Natural language recognises the requested frequency and cycle
+ok 37 - Natural language recognises the requested frequency and cycle
+  ---
+  duration_ms: 409.773205
+  ...
+# Subtest: Timer catches up after backgrounding without inventing elapsed time
+ok 38 - Timer catches up after backgrounding without inventing elapsed time
+  ---
+  duration_ms: 0.217
+  ...
+# Subtest: Paused time is excluded; skipped steps are not counted as effort
+ok 39 - Paused time is excluded; skipped steps are not counted as effort
+  ---
+  duration_ms: 0.15453
+  ...
+# Subtest: Rest extension adjusts planned and remaining time
+ok 40 - Rest extension adjusts planned and remaining time
+  ---
+  duration_ms: 0.161538
+  ...
+# Subtest: Interval generator validates durations and rounds
+ok 41 - Interval generator validates durations and rounds
+  ---
+  duration_ms: 2.798968
+  ...
+# Subtest: Input boundaries enforced outside HTML forms
+ok 42 - Input boundaries enforced outside HTML forms
+  ---
+  duration_ms: 0.388707
+  ...
+# Subtest: Nested invalid backups are rejected without modifying current data
+ok 43 - Nested invalid backups are rejected without modifying current data
+  ---
+  duration_ms: 723.201992
+  ...
+# Subtest: Both source schemas migrate actual food and force histories
+ok 44 - Both source schemas migrate actual food and force histories
+  ---
+  duration_ms: 1801.626297
+  ...
+# Subtest: Imported scripts are never evaluated; JSON braces in strings work
+ok 45 - Imported scripts are never evaluated; JSON braces in strings work
+  ---
+  duration_ms: 0.800603
+  ...
+# Subtest: Whole-state JSON round trip preserves both profiles
+ok 46 - Whole-state JSON round trip preserves both profiles
+  ---
+  duration_ms: 538.115879
+  ...
+# Subtest: Report periods use their own calendar range
+ok 47 - Report periods use their own calendar range
+  ---
+  duration_ms: 302.506972
+  ...
+# Subtest: Zero-rest source blocks behave as trisets, then retain their prescribed group rest
+ok 48 - Zero-rest source blocks behave as trisets, then retain their prescribed group rest
+  ---
+  duration_ms: 345.588163
+  ...
+# Subtest: Short source blocks retain the rest of their final movement after pruning
+ok 49 - Short source blocks retain the rest of their final movement after pruning
+  ---
+  duration_ms: 282.257151
+  ...
+# Subtest: Source prescriptions survive poor recovery and missing equipment without automatic replacements
+ok 50 - Source prescriptions survive poor recovery and missing equipment without automatic replacements
+  ---
+  duration_ms: 686.728316
+  ...
+# Subtest: Scheduled source deload follows the HTML while base rows stay intact
+ok 51 - Scheduled source deload follows the HTML while base rows stay intact
+  ---
+  duration_ms: 497.8894
+  ...
+# Subtest: Zero-second source rests are not replaced by invented 90-second rests in duration estimates
+ok 52 - Zero-second source rests are not replaced by invented 90-second rests in duration estimates
+  ---
+  duration_ms: 0.364831
+  ...
+# Subtest: Moving a source strength session moves its pool block and preserves prescriptions
+ok 53 - Moving a source strength session moves its pool block and preserves prescriptions
+  ---
+  duration_ms: 327.849609
+  ...
+# Subtest: Moving by the child selects the linked planned family, not an orphan block
+ok 54 - Moving by the child selects the linked planned family, not an orphan block
+  ---
+  duration_ms: 159.343552
+  ...
+# Subtest: Changing the root time preserves the relative offset of the pool session
+ok 55 - Changing the root time preserves the relative offset of the pool session
+  ---
+  duration_ms: 149.684498
+  ...
+# Subtest: A midnight shift keeps the block linked on the next actual calendar date
+ok 56 - A midnight shift keeps the block linked on the next actual calendar date
+  ---
+  duration_ms: 177.052476
+  ...
+# Subtest: Conflicts reject the whole linked movement without partial modification
+ok 57 - Conflicts reject the whole linked movement without partial modification
+  ---
+  duration_ms: 243.387717
+  ...
+# Subtest: Active or historical linked blocks cannot be moved as planned data
+ok 58 - Active or historical linked blocks cannot be moved as planned data
+  ---
+  duration_ms: 156.10249
+  ...
+# Subtest: A missed linked family is retained, while new related IDs form the rescheduled copy
+ok 59 - A missed linked family is retained, while new related IDs form the rescheduled copy
+  ---
+  duration_ms: 244.214426
+  ...
+# Subtest: Deleting a planned linked family leaves actual history untouched
+ok 60 - Deleting a planned linked family leaves actual history untouched
+  ---
+  duration_ms: 322.767407
+  ...
+# Subtest: Source simulation cannot be relabelled as a real result
+ok 61 - Source simulation cannot be relabelled as a real result
+  ---
+  duration_ms: 0.342769
+  ...
+# Subtest: Photo dates remain optional, valid and non-future
+ok 62 - Photo dates remain optional, valid and non-future
+  ---
+  duration_ms: 0.423141
+  ...
+# Subtest: A backdated team review belongs to its own source week
+ok 63 - A backdated team review belongs to its own source week
+  ---
+  duration_ms: 317.846518
+  ...
+# Subtest: Editing a team review preserves the original version and is idempotent without changes
+ok 64 - Editing a team review preserves the original version and is idempotent without changes
+  ---
+  duration_ms: 443.716511
+  ...
+# Subtest: Imported team advice is not overwritten by a new local review
+ok 65 - Imported team advice is not overwritten by a new local review
+  ---
+  duration_ms: 337.903157
+  ...
+# Subtest: Team reviews outside the programme period are rejected
+ok 66 - Team reviews outside the programme period are rejected
+  ---
+  duration_ms: 466.645205
+  ...
+# Subtest: Unknown repetitions and aggregated sets cannot generate a fake zero or single-set volume record
+ok 67 - Unknown repetitions and aggregated sets cannot generate a fake zero or single-set volume record
+  ---
+  duration_ms: 485.066467
+  ...
+# Subtest: An invalid new state cannot overwrite the previous valid save, including on page hide
+ok 68 - An invalid new state cannot overwrite the previous valid save, including on page hide
+  ---
+  duration_ms: 873.986866
+  ...
+# Subtest: External corruption during a session is quarantined rather than erased on the next save
+ok 69 - External corruption during a session is quarantined rather than erased on the next save
+  ---
+  duration_ms: 666.035883
+  ...
+# Subtest: Removing only a planned post-cardio block does not remove the strength session
+ok 70 - Removing only a planned post-cardio block does not remove the strength session
+  ---
+  duration_ms: 207.522679
+  ...
+# Subtest: All 364 days match original HTML scheduling: elite, 3 available days
+ok 71 - All 364 days match original HTML scheduling: elite, 3 available days
+  ---
+  duration_ms: 330.941656
+  ...
+# Subtest: All 364 days match original HTML scheduling: elite, 4 available days
+ok 72 - All 364 days match original HTML scheduling: elite, 4 available days
+  ---
+  duration_ms: 326.269048
+  ...
+# Subtest: All 364 days match original HTML scheduling: elite, 5 available days
+ok 73 - All 364 days match original HTML scheduling: elite, 5 available days
+  ---
+  duration_ms: 302.36519
+  ...
+# Subtest: All 364 days match original HTML scheduling: emilie, 3 available days
+ok 74 - All 364 days match original HTML scheduling: emilie, 3 available days
+  ---
+  duration_ms: 241.442652
+  ...
+# Subtest: All 364 days match original HTML scheduling: emilie, 4 available days
+ok 75 - All 364 days match original HTML scheduling: emilie, 4 available days
+  ---
+  duration_ms: 169.58037
+  ...
+# Subtest: All 364 days match original HTML scheduling: emilie, 5 available days
+ok 76 - All 364 days match original HTML scheduling: emilie, 5 available days
+  ---
+  duration_ms: 162.568522
+  ...
+# Subtest: Source week 1 has three strength days and two complete METCON/pool combinations
+ok 77 - Source week 1 has three strength days and two complete METCON/pool combinations
+  ---
+  duration_ms: 315.084208
+  ...
+# Subtest: Combined timer keeps actual time per block, excluding a skipped remainder
+ok 78 - Combined timer keeps actual time per block, excluding a skipped remainder
+  ---
+  duration_ms: 0.492929
+  ...
+# Subtest: Reference recovery formula matches known complete fields and never invents missing ones
+ok 79 - Reference recovery formula matches known complete fields and never invents missing ones
+  ---
+  duration_ms: 0.221516
+  ...
+# Subtest: Actual attached backup is retained exactly, with honest status and missing-value handling
+ok 80 - Actual attached backup is retained exactly, with honest status and missing-value handling
+  ---
+  duration_ms: 1897.700482
+  ...
+# Subtest: Restoration is profile-only, idempotent and keeps a more recent manual session
+ok 81 - Restoration is profile-only, idempotent and keeps a more recent manual session
+  ---
+  duration_ms: 2008.854728
+  ...
+# Subtest: Stored state reloads with the two source identities intact
+ok 82 - Stored state reloads with the two source identities intact
+  ---
+  duration_ms: 1004.419334
+  ...
+# Subtest: Bad JSON stays untouched while saving is protected
+ok 83 - Bad JSON stays untouched while saving is protected
+  ---
+  duration_ms: 821.589357
+  ...
+# Subtest: Incompatible nested data cannot be overwritten by fresh defaults
+ok 84 - Incompatible nested data cannot be overwritten by fresh defaults
+  ---
+  duration_ms: 1973.457096
+  ...
+# Subtest: A newer unrelated writer is detected instead of silently overwritten
+ok 85 - A newer unrelated writer is detected instead of silently overwritten
+  ---
+  duration_ms: 1161.618234
+  ...
+1..85
+# tests 85
+# suites 0
+# pass 85
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 31619.034355

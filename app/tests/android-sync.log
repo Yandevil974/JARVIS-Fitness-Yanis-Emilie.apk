@@ -1,0 +1,39 @@
+
+> jarvis-fitness-ai@1.0.4 android:sync
+> npm run build:portable && npm run build && npx cap sync android && node scripts/prepare-personal-backup.mjs
+
+
+> jarvis-fitness-ai@1.0.4 build:portable
+> node scripts/build-portable.mjs
+
+Portable export runtime ready; 222 local media assets.
+
+> jarvis-fitness-ai@1.0.4 build
+> vite build
+
+vite v6.4.3 building for production...
+transforming...
+✓ 1648 modules transformed.
+rendering chunks...
+computing gzip size...
+release/index.html                     0.66 kB │ gzip:   0.44 kB
+release/assets/index-B-G6uO3Z.css    192.18 kB │ gzip:  39.31 kB
+release/assets/web-CjkQqtW2.js         0.36 kB │ gzip:   0.25 kB
+release/assets/web-CYAD7Pg7.js         0.67 kB │ gzip:   0.33 kB
+release/assets/web-B3FJXh6c.js         0.94 kB │ gzip:   0.47 kB
+release/assets/web-Di4X2YQF.js         8.62 kB │ gzip:   2.94 kB
+release/assets/index-DgXtZ3ss.js   1,259.73 kB │ gzip: 253.26 kB
+✓ built in 4.34s
+✔ Copying web assets from release to android/app/src/main/assets/public in 120.53ms
+✔ Creating capacitor.config.json in android/app/src/main/assets in 3.14ms
+✔ copy android in 134.60ms
+✔ Updating Android plugins in 7.06ms
+[info] Found 5 Capacitor plugins for android:
+       @capacitor/app@6.0.3
+       @capacitor/filesystem@6.0.4
+       @capacitor/haptics@6.0.3
+       @capacitor/preferences@6.0.4
+       @capacitor/share@6.0.4
+✔ update android in 84.78ms
+[info] Sync finished in 0.245s
+APK personnel : sauvegarde Yanis ajoutée dans les assets natifs privés, pas dans le site public.

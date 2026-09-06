@@ -1,0 +1,9 @@
+
+Running 4 tests using 1 worker
+
+  ✓  1 tests/maintenance.spec.js:51:1 › A moved METCON keeps both blocks even when placed on a source rest day (6.0s)
+  ✓  2 tests/maintenance.spec.js:97:1 › Moving Emilie’s pool block moves its parent and maintains the time offset (3.3s)
+  ✓  3 tests/maintenance.spec.js:168:1 › Imported photo metadata can be corrected without altering the image or simulation status (3.9s)
+  ✓  4 tests/maintenance.spec.js:221:1 › A backdated team review is assigned to its true week and corrections preserve prior versions (4.6s)
+
+  4 passed (22.5s)

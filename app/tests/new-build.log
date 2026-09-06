@@ -1,0 +1,17 @@
+
+> jarvis-fitness-ai@1.0.2 build
+> vite build
+
+vite v6.4.3 building for production...
+transforming...
+✓ 1643 modules transformed.
+rendering chunks...
+computing gzip size...
+release/index.html                     0.66 kB │ gzip:   0.43 kB
+release/assets/index-B32PelKm.css    188.67 kB │ gzip:  38.60 kB
+release/assets/web-CVI-ahu-.js         0.36 kB │ gzip:   0.25 kB
+release/assets/web-C8GT4ZSw.js         0.67 kB │ gzip:   0.33 kB
+release/assets/web-FzInpGkt.js         0.94 kB │ gzip:   0.47 kB
+release/assets/web-CtkWbNnf.js         8.62 kB │ gzip:   2.94 kB
+release/assets/index-DoxLKhKn.js   1,244.12 kB │ gzip: 248.62 kB
+✓ built in 3.27s

@@ -1,0 +1,759 @@
+{
+  "exercises": [
+    {
+      "id": "hip-thrust-barre",
+      "name": "Hip thrust barre",
+      "pattern": "bridge",
+      "gif": "/media/1519aacc58d53c5c.gif"
+    },
+    {
+      "id": "souleve-de-terre-roumain-halteres",
+      "name": "Soulevé de terre roumain haltères",
+      "pattern": "hinge",
+      "gif": "/media/055d358895efaa10.gif"
+    },
+    {
+      "id": "bulgarian-split-squat",
+      "name": "Bulgarian split squat",
+      "pattern": "lunge",
+      "gif": "/media/cf312b839f6da027.gif"
+    },
+    {
+      "id": "abduction-hanche-debout-a-la-poulie",
+      "name": "Abduction hanche debout à la poulie",
+      "pattern": "abduction",
+      "gif": "/media/03098b19c4672ce5.gif"
+    },
+    {
+      "id": "kickback-a-la-poulie",
+      "name": "Kickback à la poulie",
+      "pattern": "static",
+      "gif": "/media/489169360e044c48.gif"
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead bug",
+      "pattern": "static",
+      "gif": "/media/b2236e6b7a81a1b5.gif"
+    },
+    {
+      "id": "gainage-planche",
+      "name": "Gainage planche",
+      "pattern": "static",
+      "gif": "/media/1317e405efd6ef2b.gif"
+    },
+    {
+      "id": "tirage-vertical-prise-neutre",
+      "name": "Tirage vertical prise neutre",
+      "pattern": "pull",
+      "gif": "/media/4af33157ce25267c.gif"
+    },
+    {
+      "id": "rowing-haltere-un-bras",
+      "name": "Rowing haltère un bras",
+      "pattern": "row",
+      "gif": "/media/4dfda05b1db24000.gif"
+    },
+    {
+      "id": "developpe-militaire-halteres-assis",
+      "name": "Développé militaire haltères assis",
+      "pattern": "raise",
+      "gif": "/media/d9c88be0658a81af.gif"
+    },
+    {
+      "id": "elevations-laterales-halteres",
+      "name": "Élévations latérales haltères",
+      "pattern": "lat",
+      "gif": "/media/cd0cc940608ac100.gif"
+    },
+    {
+      "id": "pompes-inclinees-mains-surelevees",
+      "name": "Pompes inclinées (mains surélevées)",
+      "pattern": "press",
+      "gif": "/media/43bad87368c12614.gif"
+    },
+    {
+      "id": "curl-halteres",
+      "name": "Curl haltères",
+      "pattern": "curl",
+      "gif": "/media/36c6cb37445d3880.gif"
+    },
+    {
+      "id": "extension-triceps-a-la-poulie",
+      "name": "Extension triceps à la poulie",
+      "pattern": "triceps",
+      "gif": "/media/497ab2e22c01080c.gif"
+    },
+    {
+      "id": "bird-dog",
+      "name": "Bird dog",
+      "pattern": "static",
+      "gif": "/media/aab0de0aad0c275a.gif"
+    },
+    {
+      "id": "crunch-a-la-poulie-ou-au-sol",
+      "name": "Crunch à la poulie (ou au sol)",
+      "pattern": "crunch",
+      "gif": "/media/a5c1c2427ee83c93.gif"
+    },
+    {
+      "id": "goblet-squat",
+      "name": "Goblet squat",
+      "pattern": "squat",
+      "gif": "/media/78f9aee57a4101b1.gif"
+    },
+    {
+      "id": "hip-thrust-unilateral-1-jambe",
+      "name": "Hip thrust unilatéral (1 jambe)",
+      "pattern": "bridge",
+      "gif": "/media/cf312b839f6da027.gif"
+    },
+    {
+      "id": "souleve-de-terre-roumain-unilateral-haltere",
+      "name": "Soulevé de terre roumain unilatéral haltère",
+      "pattern": "hinge",
+      "gif": "/media/1c63a36d168d8b74.gif"
+    },
+    {
+      "id": "fentes-arriere-alternees",
+      "name": "Fentes arrière alternées",
+      "pattern": "lunge",
+      "gif": "/media/bc4d9bed4bbb590a.gif"
+    },
+    {
+      "id": "abduction-assise-machine-ou-elastique",
+      "name": "Abduction assise (machine ou élastique)",
+      "pattern": "abduction",
+      "gif": "/media/f73444e9dc2fee89.gif"
+    },
+    {
+      "id": "mollets-debout-unilateraux",
+      "name": "Mollets debout unilatéraux",
+      "pattern": "calf",
+      "gif": "/media/3e2ed581e11781d5.gif"
+    },
+    {
+      "id": "reverse-crunch",
+      "name": "Reverse crunch",
+      "pattern": "crunch",
+      "gif": "/media/66849c3144d589f2.gif"
+    },
+    {
+      "id": "gainage-lateral",
+      "name": "Gainage latéral",
+      "pattern": "static",
+      "gif": "/media/e56d7d8feec13a3a.gif"
+    },
+    {
+      "id": "developpe-couche-halteres",
+      "name": "Développé couché haltères",
+      "pattern": "press",
+      "gif": "/media/a4c1fb89be18062f.gif"
+    },
+    {
+      "id": "tirage-horizontal-a-la-poulie",
+      "name": "Tirage horizontal à la poulie",
+      "pattern": "row",
+      "gif": "/media/0860394a5a99f74b.gif"
+    },
+    {
+      "id": "releves-de-jambes-allongee",
+      "name": "Relevés de jambes allongée",
+      "pattern": "crunch",
+      "gif": "/media/afe2f533cbbef546.gif"
+    },
+    {
+      "id": "mountain-climbers",
+      "name": "Mountain climbers",
+      "pattern": "crunch",
+      "gif": "/media/c07b14f1bcc8e8ca.gif"
+    },
+    {
+      "id": "glute-bridge-pieds-sur-banc",
+      "name": "Glute bridge pieds sur banc",
+      "pattern": "bridge",
+      "gif": "/media/0766d3a06bf79dc8.gif"
+    },
+    {
+      "id": "souleve-de-terre-roumain-barre",
+      "name": "Soulevé de terre roumain barre",
+      "pattern": "hinge",
+      "gif": "/media/9f22747c305f521b.gif"
+    },
+    {
+      "id": "leg-curl-machine",
+      "name": "Leg curl machine",
+      "pattern": "legcurl",
+      "gif": "/media/7c0c6d264e85d66a.gif"
+    },
+    {
+      "id": "abduction-hanche-a-la-poulie",
+      "name": "Abduction hanche à la poulie",
+      "pattern": "abduction",
+      "gif": "/media/03098b19c4672ce5.gif"
+    },
+    {
+      "id": "dead-bug-avec-rotation",
+      "name": "Dead bug avec rotation",
+      "pattern": "static",
+      "gif": "/media/b2236e6b7a81a1b5.gif"
+    },
+    {
+      "id": "pallof-press-a-la-poulie",
+      "name": "Pallof press à la poulie",
+      "pattern": "static",
+      "gif": "/media/3bcaad5ec7cdf892.gif"
+    },
+    {
+      "id": "tirage-vertical-prise-large",
+      "name": "Tirage vertical prise large",
+      "pattern": "pull",
+      "gif": "/media/4af33157ce25267c.gif"
+    },
+    {
+      "id": "rowing-barre-buste-penche",
+      "name": "Rowing barre buste penché",
+      "pattern": "row",
+      "gif": "/media/93ab17b0de26fbc8.gif"
+    },
+    {
+      "id": "face-pull-a-la-poulie",
+      "name": "Face pull à la poulie",
+      "pattern": "row",
+      "gif": "/media/ca785b4cf81c98fa.gif"
+    },
+    {
+      "id": "developpe-incline-halteres",
+      "name": "Développé incliné haltères",
+      "pattern": "press",
+      "gif": "/media/22ce97e4b3cb18cf.gif"
+    },
+    {
+      "id": "back-squat-charge-moderee",
+      "name": "Back squat (charge modérée)",
+      "pattern": "squat",
+      "gif": "/media/2c51d8ca1b6fb79a.gif"
+    },
+    {
+      "id": "hip-thrust-unilateral",
+      "name": "Hip thrust unilatéral",
+      "pattern": "bridge",
+      "gif": "/media/cf312b839f6da027.gif"
+    },
+    {
+      "id": "souleve-de-terre-roumain-unilateral",
+      "name": "Soulevé de terre roumain unilatéral",
+      "pattern": "hinge",
+      "gif": "/media/6223da1b562d9339.gif"
+    },
+    {
+      "id": "fentes-avant-alternees",
+      "name": "Fentes avant alternées",
+      "pattern": "lunge",
+      "gif": "/media/995e1f9a9cedc5ec.gif"
+    },
+    {
+      "id": "presse-a-cuisses-pieds-hauts",
+      "name": "Presse à cuisses pieds hauts",
+      "pattern": "squat",
+      "gif": "/media/1f27c3cbcf803765.gif"
+    },
+    {
+      "id": "abduction-assise-machine",
+      "name": "Abduction assise machine",
+      "pattern": "abduction",
+      "gif": "/media/f73444e9dc2fee89.gif"
+    },
+    {
+      "id": "mollets-assis",
+      "name": "Mollets assis",
+      "pattern": "calf",
+      "gif": "/media/d13d9f751f4731ab.gif"
+    },
+    {
+      "id": "releves-de-jambes",
+      "name": "Relevés de jambes",
+      "pattern": "crunch",
+      "gif": "/media/afe2f533cbbef546.gif"
+    },
+    {
+      "id": "circuit-gainage-planche-lateral-bird-dog",
+      "name": "Circuit gainage (planche + latéral + bird dog)",
+      "pattern": "static",
+      "gif": "/media/1317e405efd6ef2b.gif"
+    },
+    {
+      "id": "bulgarian-split-squat-halteres",
+      "name": "Bulgarian split squat haltères",
+      "pattern": "lunge",
+      "gif": "/media/cf312b839f6da027.gif"
+    },
+    {
+      "id": "glute-bridge-en-1-5-reps",
+      "name": "Glute bridge en 1,5 reps",
+      "pattern": "bridge",
+      "gif": "/media/e5f17140d8d97591.gif"
+    },
+    {
+      "id": "crunch-a-la-poulie",
+      "name": "Crunch à la poulie",
+      "pattern": "crunch",
+      "gif": "/media/a5c1c2427ee83c93.gif"
+    },
+    {
+      "id": "back-squat",
+      "name": "Back squat",
+      "pattern": "squat",
+      "gif": "/media/530326beb7c7a652.gif"
+    },
+    {
+      "id": "hip-thrust-unilateral-leste",
+      "name": "Hip thrust unilatéral lesté",
+      "pattern": "bridge",
+      "gif": "/media/1519aacc58d53c5c.gif"
+    },
+    {
+      "id": "fentes-bulgares-pied-arriere-sureleve",
+      "name": "Fentes bulgares (pied arrière surélevé)",
+      "pattern": "lunge",
+      "gif": "/media/cf312b839f6da027.gif"
+    },
+    {
+      "id": "abduction-assise-en-1-5-reps",
+      "name": "Abduction assise en 1,5 reps",
+      "pattern": "abduction",
+      "gif": "/media/f73444e9dc2fee89.gif"
+    },
+    {
+      "id": "gainage-lateral-dynamique",
+      "name": "Gainage latéral dynamique",
+      "pattern": "static",
+      "gif": "/media/e56d7d8feec13a3a.gif"
+    },
+    {
+      "id": "circuit-abdominaux-crunch-releves-gainage",
+      "name": "Circuit abdominaux (crunch + relevés + gainage)",
+      "pattern": "static",
+      "gif": "/media/c1065beff4823907.gif"
+    },
+    {
+      "id": "triceps-dips",
+      "name": "Triceps dips",
+      "pattern": "triceps",
+      "gif": "/media/c3a2b9892161522e.gif"
+    },
+    {
+      "id": "french-press-poulie-basse",
+      "name": "French press poulie basse",
+      "pattern": "triceps",
+      "gif": "/media/4c2b19fa924f90a8.gif"
+    },
+    {
+      "id": "curl-marteau-assis",
+      "name": "Curl marteau assis",
+      "pattern": "curl",
+      "gif": "/media/8fe5818f3a4ebebe.gif"
+    },
+    {
+      "id": "curl-halteres-incline",
+      "name": "Curl haltères incliné",
+      "pattern": "curl",
+      "gif": "/media/b54f07a7b66c1aed.gif"
+    },
+    {
+      "id": "elevations-laterales-assises-variante",
+      "name": "Élévations latérales assises (variante)",
+      "pattern": "lat",
+      "gif": "/media/9e7f92622aca6913.gif"
+    },
+    {
+      "id": "leg-press",
+      "name": "Leg press",
+      "pattern": "squat",
+      "gif": "/media/9f8ae03b97d31344.gif"
+    },
+    {
+      "id": "leg-curl-allonge",
+      "name": "Leg curl allongé",
+      "pattern": "legcurl",
+      "gif": "/media/4eff701bcdf9a359.gif"
+    },
+    {
+      "id": "back-extension-horizontal",
+      "name": "Back extension horizontal",
+      "pattern": "hinge",
+      "gif": "/media/f64281e2dbd7986f.gif"
+    },
+    {
+      "id": "mollets-debout",
+      "name": "Mollets debout",
+      "pattern": "calf",
+      "gif": "/media/f529e06a69b973f4.gif"
+    },
+    {
+      "id": "developpe-incline-barre",
+      "name": "Développé incliné barre",
+      "pattern": "press",
+      "gif": "/media/ba6ba483a1372c9e.gif"
+    },
+    {
+      "id": "developpe-halteres-plat-prise-neutre",
+      "name": "Développé haltères plat, prise neutre",
+      "pattern": "press",
+      "gif": "/media/ff100d7322ba1193.gif"
+    },
+    {
+      "id": "ecartes-halteres-decline",
+      "name": "Écartés haltères décliné",
+      "pattern": "lat",
+      "gif": "/media/805f8592e2bccb1a.gif"
+    },
+    {
+      "id": "rowing-barre-buste-penche-pronation",
+      "name": "Rowing barre buste penché, pronation",
+      "pattern": "row",
+      "gif": "/media/9dfc7f7acb3e74e5.gif"
+    },
+    {
+      "id": "rowing-assis-prise-neutre",
+      "name": "Rowing assis, prise neutre",
+      "pattern": "row",
+      "gif": "/media/0a5625b92247ed69.gif"
+    },
+    {
+      "id": "tirage-vertical-prise-pronation",
+      "name": "Tirage vertical prise pronation",
+      "pattern": "pull",
+      "gif": "/media/dc0cabae23adbfd5.gif"
+    },
+    {
+      "id": "developpe-militaire-debout",
+      "name": "Développé militaire debout",
+      "pattern": "raise",
+      "gif": "/media/22146cff6a787e8a.gif"
+    },
+    {
+      "id": "developpe-halteres-incline-30",
+      "name": "Développé haltères incliné 30°",
+      "pattern": "press",
+      "gif": "/media/45a34272da9569a6.gif"
+    },
+    {
+      "id": "french-press-barre-ez",
+      "name": "French press barre EZ",
+      "pattern": "triceps",
+      "gif": "/media/ea226c444f72de0f.gif"
+    },
+    {
+      "id": "front-squat",
+      "name": "Front squat",
+      "pattern": "squat",
+      "gif": "/media/1c28908ab83cde2e.gif"
+    },
+    {
+      "id": "leg-curl-debout",
+      "name": "Leg curl debout",
+      "pattern": "legcurl",
+      "gif": "/media/fabb86971a81ea03.gif"
+    },
+    {
+      "id": "mollets-unilateraux",
+      "name": "Mollets unilatéraux",
+      "pattern": "calf",
+      "gif": "/media/10ab787fbf26b1f4.gif"
+    },
+    {
+      "id": "developpe-halteres-decline-prise-neutre",
+      "name": "Développé haltères décliné, prise neutre",
+      "pattern": "press",
+      "gif": "/media/63e925f417c73b92.gif"
+    },
+    {
+      "id": "rowing-haltere-un-bras-coude-ouvert",
+      "name": "Rowing haltère un bras, coude ouvert",
+      "pattern": "row",
+      "gif": "/media/44fc577dce29aff5.gif"
+    },
+    {
+      "id": "extensions-triceps-barre-ez",
+      "name": "Extensions triceps barre EZ",
+      "pattern": "triceps",
+      "gif": "/media/5d6a89132df205f8.gif"
+    },
+    {
+      "id": "souleve-de-terre",
+      "name": "Soulevé de terre",
+      "pattern": "hinge",
+      "gif": "/media/a8b1d1173ade4e8f.gif"
+    },
+    {
+      "id": "back-squat-barre-haute",
+      "name": "Back squat barre haute",
+      "pattern": "squat",
+      "gif": "/media/530326beb7c7a652.gif"
+    },
+    {
+      "id": "hack-squat",
+      "name": "Hack squat",
+      "pattern": "squat",
+      "gif": "/media/5dd80c9e1b36df25.gif"
+    },
+    {
+      "id": "jackknife-sur-swiss-ball",
+      "name": "Jackknife sur swiss ball",
+      "pattern": "crunch",
+      "gif": "/media/789c6d90f30eb33e.gif"
+    },
+    {
+      "id": "developpe-halteres-plat",
+      "name": "Développé haltères plat",
+      "pattern": "press",
+      "gif": "/media/6fcfe5741629ca2a.gif"
+    },
+    {
+      "id": "rowing-barre-ez-supination-buste-penche",
+      "name": "Rowing barre EZ supination, buste penché",
+      "pattern": "row",
+      "gif": "/media/c4d2de309fa47b4c.gif"
+    },
+    {
+      "id": "cables-croises",
+      "name": "Câbles croisés",
+      "pattern": "press",
+      "gif": "/media/b395c84efcad344b.gif"
+    },
+    {
+      "id": "curl-barre-debout",
+      "name": "Curl barre debout",
+      "pattern": "curl",
+      "gif": "/media/882c9c361686a9c9.gif"
+    },
+    {
+      "id": "developpe-couche-barre-plat",
+      "name": "Développé couché barre plat",
+      "pattern": "press",
+      "gif": "/media/30adf4e98e55b6cd.gif"
+    },
+    {
+      "id": "developpe-halteres-assis",
+      "name": "Développé haltères assis",
+      "pattern": "raise",
+      "gif": "/media/3438ce158299c474.jpg"
+    },
+    {
+      "id": "releves-de-jambes-suspendu",
+      "name": "Relevés de jambes suspendu",
+      "pattern": "crunch",
+      "gif": "/media/16f6ff0f7ceba611.gif"
+    },
+    {
+      "id": "elevations-laterales",
+      "name": "Élévations latérales",
+      "pattern": "lat",
+      "gif": "/media/9e7f92622aca6913.gif"
+    },
+    {
+      "id": "dips",
+      "name": "Dips",
+      "pattern": "press",
+      "gif": "/media/c3a2b9892161522e.gif"
+    },
+    {
+      "id": "leg-curl-allonge-1-1-4-en-haut",
+      "name": "Leg curl allongé, 1 1/4 en haut",
+      "pattern": "legcurl",
+      "gif": "/media/4eff701bcdf9a359.gif"
+    },
+    {
+      "id": "developpe-halteres-incline",
+      "name": "Développé haltères incliné",
+      "pattern": "press",
+      "gif": "/media/b4522eb6968d20d0.gif"
+    }
+  ],
+  "pool": [
+    {
+      "name": "Pompes au bord",
+      "img": "/media/2e234599c9335530.gif"
+    },
+    {
+      "name": "Gainage au bord (vertical)",
+      "img": "/media/f1dde35bd517f24b.gif"
+    },
+    {
+      "name": "Mobilité épaules aquatique",
+      "img": "/media/b2b32833d73d3ca4.gif"
+    },
+    {
+      "name": "Mobilité hanches / chevilles",
+      "img": "/media/faa82528766b9402.gif"
+    },
+    {
+      "name": "Battements au bord",
+      "img": "/media/fd7c5fb1226873f6.gif"
+    },
+    {
+      "name": "Aqua-jogging sur place",
+      "img": "/media/e035a3d8e8c21744.gif"
+    },
+    {
+      "name": "Montées de genoux",
+      "img": "/media/fe34482aa6faf932.gif"
+    },
+    {
+      "name": "Ciseaux au bord",
+      "img": "/media/48fe4a8cbb0d125c.gif"
+    },
+    {
+      "name": "Talons-fesses",
+      "img": "/media/7517a916496ec766.gif"
+    }
+  ],
+  "recovery": [
+    {
+      "name": "Étirement dans l'encadrement de porte",
+      "pattern": "stretch",
+      "muscle": "pec"
+    },
+    {
+      "name": "Bras tendu contre le mur",
+      "pattern": "stretch",
+      "muscle": "pec"
+    },
+    {
+      "name": "Position de l'enfant (Balasana)",
+      "pattern": "stretch",
+      "muscle": "dos"
+    },
+    {
+      "name": "Suspension à la barre",
+      "pattern": "stretch",
+      "muscle": "dos"
+    },
+    {
+      "name": "Torsion allongée",
+      "pattern": "stretch",
+      "muscle": "dos"
+    },
+    {
+      "name": "Mains croisées derrière le dos",
+      "pattern": "stretch",
+      "muscle": "epA"
+    },
+    {
+      "name": "Bras tendu contre la poitrine",
+      "pattern": "stretch",
+      "muscle": "epL"
+    },
+    {
+      "name": "Bras tendu devant, main tirée",
+      "pattern": "stretch",
+      "muscle": "epP"
+    },
+    {
+      "name": "Bras tendu derrière",
+      "pattern": "stretch",
+      "muscle": "bic"
+    },
+    {
+      "name": "Coude au-dessus de la tête",
+      "pattern": "stretch",
+      "muscle": "tri"
+    },
+    {
+      "name": "Main dans le dos",
+      "pattern": "stretch",
+      "muscle": "tri"
+    },
+    {
+      "name": "Étirement des fléchisseurs",
+      "pattern": "stretch",
+      "muscle": "avb"
+    },
+    {
+      "name": "Étirement des extenseurs",
+      "pattern": "stretch",
+      "muscle": "avb"
+    },
+    {
+      "name": "Étirement du cobra",
+      "pattern": "stretch",
+      "muscle": "abs"
+    },
+    {
+      "name": "Position de l'enfant",
+      "pattern": "stretch",
+      "muscle": "lom"
+    },
+    {
+      "name": "Torsion allongée genoux",
+      "pattern": "stretch",
+      "muscle": "lom"
+    },
+    {
+      "name": "Pigeon assis",
+      "pattern": "stretch",
+      "muscle": "fes"
+    },
+    {
+      "name": "Étirement du piriforme assis",
+      "pattern": "stretch",
+      "muscle": "fes"
+    },
+    {
+      "name": "Talon vers la fesse (debout)",
+      "pattern": "stretch",
+      "muscle": "qua"
+    },
+    {
+      "name": "Allongé sur le côté",
+      "pattern": "stretch",
+      "muscle": "qua"
+    },
+    {
+      "name": "Flexion avant jambes tendues",
+      "pattern": "stretch",
+      "muscle": "isc"
+    },
+    {
+      "name": "Une jambe tendue, une pliée",
+      "pattern": "stretch",
+      "muscle": "isc"
+    },
+    {
+      "name": "Grenouille (plantes jointes)",
+      "pattern": "stretch",
+      "muscle": "add"
+    },
+    {
+      "name": "Étirement contre le mur",
+      "pattern": "stretch",
+      "muscle": "mol"
+    },
+    {
+      "name": "Mollet en escalier",
+      "pattern": "stretch",
+      "muscle": "mol"
+    },
+    {
+      "name": "Adduction de la hanche debout",
+      "pattern": "stretch",
+      "muscle": "moy"
+    },
+    {
+      "name": "Étirement du fléchisseur de hanche (chevalier)",
+      "pattern": "stretch",
+      "muscle": "moy"
+    },
+    {
+      "name": "Cobra doux",
+      "pattern": "stretch",
+      "muscle": "tra"
+    },
+    {
+      "name": "Respiration diaphragmatique allongée",
+      "pattern": "stretch",
+      "muscle": "tra"
+    }
+  ]
+}

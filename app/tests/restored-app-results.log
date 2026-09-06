@@ -1,0 +1,47 @@
+
+Running 8 tests using 1 worker
+
+  ✘  1 tests/restored-app.spec.js:48:1 › Attached backup auto-restores only an empty Yanis profile and exposes all saved records (12.1s)
+  ✓  2 tests/restored-app.spec.js:72:1 › Existing user data is not silently overwritten; a restoration preview is offered (4.6s)
+  ✓  3 tests/restored-app.spec.js:106:3 › METCON plus pool, all eight advisors and original feedback at 344px (4.7s)
+  ✓  4 tests/restored-app.spec.js:106:3 › METCON plus pool, all eight advisors and original feedback at 690px (3.2s)
+  ✓  5 tests/restored-app.spec.js:106:3 › METCON plus pool, all eight advisors and original feedback at 1440px (3.0s)
+  ✓  6 tests/restored-app.spec.js:147:1 › Original JSON imports through the normal file picker without altering Emilie (3.7s)
+  ✓  7 tests/restored-app.spec.js:170:1 › Combined timer does not auto-record results, and stopping can preserve only the actual first block (6.1s)
+  ✓  8 tests/restored-app.spec.js:213:1 › Imported incomplete sets remain editable without inventing repetitions (4.3s)
+
+
+  1) tests/restored-app.spec.js:48:1 › Attached backup auto-restores only an empty Yanis profile and exposes all saved records 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.metrics-grid')
+    Expected substring: "91,3"
+    Received string:    "Dernière pesée91.3kg4 sept. · poids réellement saisiDernier bilan récupération74/1005 sept. · calcul du fichier sourceSéances validées1112 journaux de musculation conservésObjectifRecomp.Votre cap, votre progression"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toContainText" locator('.metrics-grid') with timeout 10000ms
+      - waiting for locator('.metrics-grid')
+        23 × locator resolved to <div class="metrics-grid">…</div>
+           - unexpected value "Dernière pesée91.3kg4 sept. · poids réellement saisiDernier bilan récupération74/1005 sept. · calcul du fichier sourceSéances validées1112 journaux de musculation conservésObjectifRecomp.Votre cap, votre progression"
+
+
+      57 |     page.getByRole("heading", { name: "Bonjour, Yanis." }),
+      58 |   ).toBeVisible();
+    > 59 |   await expect(page.locator(".metrics-grid")).toContainText("91,3");
+         |                                               ^
+      60 |   const s = await saved(page);
+      61 |   expect(s.profiles.elite.sessions).toHaveLength(12);
+      62 |   expect(s.profiles.elite.dayReports).toHaveLength(4);
+        at /home/user/jarvis-fitness/tests/restored-app.spec.js:59:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .cache/playwright-results/restored-app-Attached-back-419f1-d-exposes-all-saved-records/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .cache/playwright-results/restored-app-Attached-back-419f1-d-exposes-all-saved-records/error-context.md
+
+  1 failed
+    tests/restored-app.spec.js:48:1 › Attached backup auto-restores only an empty Yanis profile and exposes all saved records 
+  7 passed (47.7s)
