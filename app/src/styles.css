@@ -15044,3 +15044,23 @@ button.primary {
     height: 38px;
   }
 }
+
+/* Sortie de l'écran d'accueil : le logo s'effaçait d'un coup, ce qui
+   accentuait l'impression de clignotement. Fondu court, et on laisse
+   passer les clics dès que le contenu est prêt. */
+.app-loading.leaving {
+  animation: intro-leave 0.42s ease forwards;
+  pointer-events: none;
+}
+@keyframes intro-leave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* Mouvement réduit : pas de fondu, l'écran disparaît simplement. */
+.reduce-motion .app-loading.leaving {
+  animation: none;
+}

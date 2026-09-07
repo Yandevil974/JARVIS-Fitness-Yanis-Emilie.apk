@@ -52,6 +52,12 @@ const PAGE = {
 };
 /* Rotation des trois apparences. Chaque entrée décrit ce que fera le
    bouton, pas l'état courant : l'icône annonce la destination. */
+/* Durée minimale de l'écran d'accueil, en millisecondes. Assez pour voir
+   le logo, assez court pour ne pas faire attendre : le chargement se
+   poursuit derrière, cette attente ne s'ajoute pas à lui. */
+const INTRO_MS = 1100;
+/* Durée du fondu de sortie, à garder synchrone avec styles.css. */
+const INTRO_FADE_MS = 420;
 const THEME_NEXT = {
   light: { id: "contrast", icon: "PanelLeft", label: "Colonne sombre" },
   contrast: { id: "dark", icon: "Moon", label: "Passer en sombre" },
@@ -145,9 +151,27 @@ export default function App() {
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute("content", color);
   }, [p?.id, p?.preferences?.theme]);
-  if (!ready)
+  // L'écran d'accueil disparaissait dès que les données étaient prêtes,
+  // c'est-à-dire presque aussitôt : le logo n'était qu'un clignotement.
+  // On lui garantit une durée minimale, puis on l'efface en fondu.
+  //
+  // Deux temps distincts, et non un seul : le fondu ne doit pas démarrer
+  // à l'instant où les données arrivent, sans quoi l'écran resterait
+  // vide le reste du délai. Il commence à la fin de la durée choisie.
+  // Le chargement se poursuit pendant ce temps : cette attente ne
+  // s'ajoute pas à lui, elle se superpose.
+  const [intro, setIntro] = useState("visible");
+  useEffect(() => {
+    const a = setTimeout(() => setIntro("leaving"), INTRO_MS);
+    const b = setTimeout(() => setIntro("gone"), INTRO_MS + INTRO_FADE_MS);
+    return () => {
+      clearTimeout(a);
+      clearTimeout(b);
+    };
+  }, []);
+  if (!ready || intro !== "gone")
     return (
-      <div className="app-loading">
+      <div className={`app-loading ${intro === "leaving" ? "leaving" : ""}`}>
         <Orb />
         <strong>
           JARVIS<span>FITNESS INTELLIGENCE</span>
