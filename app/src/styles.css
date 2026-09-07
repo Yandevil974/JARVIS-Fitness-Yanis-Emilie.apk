@@ -14868,3 +14868,96 @@ button.primary {
 [data-theme="dark"] .metric.mint .metric-icon {
   color: var(--mint);
 }
+
+/* ==========================================================================
+   JOURS DE LA SEMAINE, TEINTÉS PAR DISCIPLINE
+   (référence : capture « clair-ensemble »)
+   Musculation ambre, METCON corail, piscine menthe, repos lavande. Comme
+   pour les cartes de synthèse, ces teintes sont fixes : elles servent à
+   reconnaître la discipline d'un coup d'œil, pas à suivre le profil.
+   ========================================================================== */
+.week-day.discipline-strength {
+  background: #fff0ce;
+  border-color: hsl(43 78% 82%);
+}
+.week-day.discipline-metcon {
+  background: #fce2d4;
+  border-color: hsl(21 72% 85%);
+}
+.week-day.discipline-swim {
+  background: #dff2ec;
+  border-color: hsl(165 42% 82%);
+}
+.week-day.discipline-rest {
+  background: #ece5f6;
+  border-color: hsl(266 44% 86%);
+}
+.week-day.discipline-strength,
+.week-day.discipline-metcon,
+.week-day.discipline-swim,
+.week-day.discipline-rest {
+  color: hsl(28 12% 34%);
+}
+.week-day.discipline-strength > strong,
+.week-day.discipline-metcon > strong,
+.week-day.discipline-swim > strong,
+.week-day.discipline-rest > strong {
+  color: hsl(28 22% 16%);
+}
+/* Le jour courant reste identifiable malgré la teinte de discipline :
+   contour marqué plutôt que changement de fond. */
+.week-day.today,
+.week-day.selected {
+  border-color: hsl(28 30% 38%);
+  box-shadow: 0 0 0 1px hsl(28 30% 38% / 45%);
+}
+[data-theme="dark"] .week-day.discipline-strength,
+[data-theme="dark"] .week-day.discipline-metcon,
+[data-theme="dark"] .week-day.discipline-swim,
+[data-theme="dark"] .week-day.discipline-rest {
+  background: var(--panel-2);
+  border-color: var(--line);
+  color: var(--muted);
+}
+[data-theme="dark"] .week-day.discipline-strength > strong,
+[data-theme="dark"] .week-day.discipline-metcon > strong,
+[data-theme="dark"] .week-day.discipline-swim > strong,
+[data-theme="dark"] .week-day.discipline-rest > strong {
+  color: var(--text);
+}
+[data-theme="dark"] .week-day.today,
+[data-theme="dark"] .week-day.selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+}
+
+/* ==========================================================================
+   COLONNE DE DROITE : ÉTAT DU JOUR ET CARTE JARVIS
+   (référence : capture « clair-ensemble »)
+   La capture donne un vert d'eau très pâle au bilan de forme et un
+   lavande à la carte du coach. Teintes fixes, comme les autres repères.
+   ========================================================================== */
+.readiness-panel {
+  background: #edf6f1;
+  border-color: hsl(158 32% 86%);
+}
+.coach-card {
+  background: #ece5f6;
+  border-color: hsl(266 44% 86%);
+}
+.coach-card > p,
+.readiness-panel {
+  color: hsl(28 12% 30%);
+}
+[data-theme="dark"] .readiness-panel {
+  background: var(--panel);
+  border-color: var(--line);
+  color: var(--muted);
+}
+[data-theme="dark"] .coach-card {
+  background: var(--panel);
+  border-color: var(--line);
+}
+[data-theme="dark"] .coach-card > p {
+  color: var(--muted);
+}
