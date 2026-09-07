@@ -27,7 +27,12 @@ const ROOT = path.resolve("..");
 const SHELL = path.join(ROOT, "ANCIENNE-VERSION-obsolete.apk");
 const WEB = "release";
 const OUT = path.join(ROOT, "JARVIS-Fitness.apk");
-const KEY = ".private/jarvis-signing-key.pem";
+// La clé vit dans app/signing/, versionnée : le dossier .private/ est
+// ignoré par Git et disparaissait à chaque remise à zéro de l'espace de
+// travail, ce qui changeait la signature et cassait les mises à jour.
+const KEY = fs.existsSync("signing/jarvis-signing-key.pem")
+  ? "signing/jarvis-signing-key.pem"
+  : ".private/jarvis-signing-key.pem";
 const VENV = ".private/venv";
 const PY = path.join(VENV, "bin", "python");
 

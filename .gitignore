@@ -17,3 +17,11 @@ app/.private/
 MES-DONNEES-Yanis.json
 # JARVIS-Fitness.apk est volontairement suivi par Git : c'est ainsi
 # qu'il se télécharge. Il ne contient aucune donnée personnelle.
+
+# La clé de signature est versionnée à dessein, dans app/signing/.
+# Ce n'est pas une donnée personnelle : c'est une clé auto-signée qui ne
+# sert qu'à produire l'APK. Sans elle, chaque reconstruction serait vue
+# par Android comme une application différente, et il faudrait
+# désinstaller puis réinstaller à chaque mise à jour.
+!app/signing/
+app/tools/__pycache__/
