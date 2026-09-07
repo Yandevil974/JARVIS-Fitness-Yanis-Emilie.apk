@@ -58,9 +58,11 @@ const PAGE = {
 const INTRO_MS = 1100;
 /* Durée du fondu de sortie, à garder synchrone avec styles.css. */
 const INTRO_FADE_MS = 420;
+/* Deux apparences seulement. L'ancien mode intermédiaire (« contrast »)
+   a été retiré : la colonne de navigation est désormais toujours sombre
+   en mode clair, ce qui était le réglage retenu. */
 const THEME_NEXT = {
-  light: { id: "contrast", icon: "PanelLeft", label: "Colonne sombre" },
-  contrast: { id: "dark", icon: "Moon", label: "Passer en sombre" },
+  light: { id: "dark", icon: "Moon", label: "Passer en sombre" },
   dark: { id: "light", icon: "Sun", label: "Passer en clair" },
 };
 
@@ -121,17 +123,23 @@ export default function App() {
         img.classList.toggle("paused", !!p?.preferences.reducedMotion),
       );
   }, [p?.preferences.reducedMotion, page]);
-  // Trois apparences, indépendantes du profil :
-  //   "light"     tout clair
-  //   "contrast"  contenu clair, colonne de navigation sombre
-  //   "dark"      tout sombre
+  // Deux apparences, indépendantes du profil :
+  //   "light"  page claire, colonne de navigation sombre
+  //   "dark"   tout sombre
+  // Les profils enregistrés avec l'ancienne valeur "contrast" retombent
+  // sur "light", qui produit désormais le même rendu.
   useEffect(() => {
-    const t = p?.preferences?.theme || "light";
+    const t = p?.preferences?.theme === "dark" ? "dark" : "light";
     const root = document.documentElement;
-    if (t === "dark") root.dataset.theme = "dark";
-    else delete root.dataset.theme;
-    if (t === "contrast") root.dataset.rail = "dark";
-    else delete root.dataset.rail;
+    if (t === "dark") {
+      root.dataset.theme = "dark";
+      delete root.dataset.rail;
+    } else {
+      delete root.dataset.theme;
+      // La colonne sombre fait partie du mode clair, elle n'est plus
+      // une option distincte.
+      root.dataset.rail = "dark";
+    }
   }, [p?.preferences?.theme]);
   // Thème par profil : Émilie reçoit la palette rose/violet de son fichier
   // source, Yanis la palette ambre/cuivre du sien. Voir styles.css.

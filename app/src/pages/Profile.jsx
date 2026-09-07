@@ -673,25 +673,18 @@ function Equipment() {
           )}
           <Field label="Apparence">
             <Select
-              value={p.preferences.theme || "light"}
+              value={p.preferences.theme === "dark" ? "dark" : "light"}
               onChange={(e) => {
                 const v = e.target.value;
                 updateProfile((q) => {
                   q.preferences.theme = v;
                 });
                 notify(
-                  v === "dark"
-                    ? "Thème sombre activé."
-                    : v === "contrast"
-                      ? "Colonne de navigation sombre."
-                      : "Thème entièrement clair.",
+                  v === "dark" ? "Thème sombre activé." : "Thème clair activé.",
                 );
               }}
             >
               <option value="light">Clair</option>
-              <option value="contrast">
-                Clair, colonne de navigation sombre
-              </option>
               <option value="dark">Sombre</option>
             </Select>
           </Field>

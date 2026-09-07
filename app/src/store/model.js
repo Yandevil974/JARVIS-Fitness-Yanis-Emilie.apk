@@ -76,10 +76,10 @@ export function newProfile(id) {
       sessionVoice: true,
       notifications: false,
       reducedMotion: false,
-      // "light", "contrast" (colonne de navigation sombre) ou "dark".
+      // "light" (page claire, colonne de navigation sombre) ou "dark".
       // Indépendant du profil : chacun garde sa palette, seuls les
       // plans de fond changent.
-      theme: "contrast",
+      theme: "light",
       // Réévaluation 1RM programmée par le coach, en semaines.
       forceRevalWeeks: 8,
       wearable: null,
