@@ -109,18 +109,20 @@
      perle : le bleu ne vit plus que la nuit. Les surfaces gardent la
      même échelle de clarté qu'avant, seule la teinte change ; les
      accents ambre ou rose de chaque profil ne bougent pas. */
-  --h-night: 211;
-  --s-night: 56%;
-  --bg: hsl(var(--h-night) var(--s-night) 20%);
-  --sidebar: hsl(var(--h-night) var(--s-night) 17%);
-  --panel: hsl(var(--h-night) calc(var(--s-night) * 0.92) 24%);
-  --panel-2: hsl(var(--h-night) calc(var(--s-night) * 0.90) 28%);
-  --panel-3: hsl(var(--h-night) calc(var(--s-night) * 0.88) 32%);
-  --line: hsl(var(--h-night) calc(var(--s-night) * 0.80) 38%);
-  --line-strong: hsl(var(--h-night) calc(var(--s-night) * 0.74) 48%);
-  --text: hsl(var(--h-night) 22% 96%);
-  --muted: hsl(var(--h-night) 16% 78%);
-  --dim: hsl(var(--h-night) 14% 66%);
+  /* Fond noir, comme la version d'origine. Une pointe de bleu (teinte
+     220 à 6 % de saturation) évite le gris mort sans virer au marine. */
+  --h-night: 220;
+  --s-night: 6%;
+  --bg: hsl(var(--h-night) var(--s-night) 7%);
+  --sidebar: hsl(var(--h-night) var(--s-night) 5%);
+  --panel: hsl(var(--h-night) var(--s-night) 12%);
+  --panel-2: hsl(var(--h-night) var(--s-night) 16%);
+  --panel-3: hsl(var(--h-night) var(--s-night) 20%);
+  --line: hsl(var(--h-night) var(--s-night) 26%);
+  --line-strong: hsl(var(--h-night) var(--s-night) 36%);
+  --text: hsl(var(--h-night) 12% 97%);
+  --muted: hsl(var(--h-night) 9% 76%);
+  --dim: hsl(var(--h-night) 8% 62%);
   /* Couleurs sémantiques remontées en clarté : les versions du mode
      clair (34-48 %) sont trop foncées sur un fond à 8 %. */
   --mint: hsl(166 52% 62%);
@@ -15288,4 +15290,221 @@ html:not([data-theme="dark"]) .metric p {
 .planned-protocol > button > svg:first-child {
   color: var(--accent);
   flex-shrink: 0;
+}
+
+/* ==========================================================================
+   COLONNE DE NAVIGATION — SOMBRE EN MODE CLAIR, SANS CONDITION
+   La règle précédente dépendait de l'attribut data-rail posé par le
+   JavaScript. Si cet attribut manque — profil ancien, rendu avant le
+   premier effet React — la colonne repassait en clair. On ne dépend plus
+   de lui : hors mode sombre, la colonne est foncée, point.
+   ========================================================================== */
+html:not([data-theme="dark"]) .sidebar,
+html:not([data-theme="dark"]) aside.sidebar {
+  --rail-bg: hsl(var(--h-surface) 14% 18%);
+  --rail-text: hsl(var(--h-surface) 14% 96%);
+  --rail-muted: hsl(var(--h-surface) 10% 74%);
+  --rail-line: hsl(var(--h-surface) 12% 28%);
+  --rail-accent: hsl(var(--h-accent) 88% 62%);
+  background: var(--rail-bg) !important;
+  border-right-color: var(--rail-line) !important;
+  color: var(--rail-text) !important;
+}
+html:not([data-theme="dark"]) .sidebar .brand strong,
+html:not([data-theme="dark"]) .sidebar .main-nav > button,
+html:not([data-theme="dark"]) .sidebar .data-nav > button,
+html:not([data-theme="dark"]) .sidebar .profile-switcher > button strong {
+  color: var(--rail-text) !important;
+}
+html:not([data-theme="dark"]) .sidebar .brand small,
+html:not([data-theme="dark"]) .sidebar .nav-section-label,
+html:not([data-theme="dark"]) .sidebar .workspace-label,
+html:not([data-theme="dark"]) .sidebar .system-status,
+html:not([data-theme="dark"]) .sidebar .profile-switcher > button small {
+  color: var(--rail-muted) !important;
+}
+html:not([data-theme="dark"]) .sidebar .main-nav > button svg,
+html:not([data-theme="dark"]) .sidebar .data-nav > button svg,
+html:not([data-theme="dark"]) .sidebar .profile-switcher > button > svg {
+  color: var(--rail-muted) !important;
+}
+html:not([data-theme="dark"]) .sidebar .main-nav > button.active,
+html:not([data-theme="dark"]) .sidebar .data-nav > button.active {
+  background: hsl(var(--h-surface) 14% 28%) !important;
+  color: #fff !important;
+}
+html:not([data-theme="dark"]) .sidebar .main-nav > button.active svg,
+html:not([data-theme="dark"]) .sidebar .data-nav > button.active svg {
+  color: var(--rail-accent) !important;
+}
+html:not([data-theme="dark"]) .sidebar .main-nav > button:hover,
+html:not([data-theme="dark"]) .sidebar .data-nav > button:hover {
+  background: hsl(var(--h-surface) 14% 24%) !important;
+}
+html:not([data-theme="dark"]) .sidebar .sidebar-coach {
+  background: hsl(var(--h-surface) 14% 24%) !important;
+  border-color: var(--rail-line) !important;
+  color: var(--rail-muted) !important;
+}
+html:not([data-theme="dark"]) .sidebar .sidebar-orbit {
+  background: hsl(var(--h-surface) 14% 28%) !important;
+  border-color: var(--rail-line) !important;
+}
+
+/* ==========================================================================
+   CASES COLORÉES — MODE CLAIR
+   Les cases d'exercice, d'échauffement, de protocole et de records
+   étaient toutes blanches : rien ne les distinguait au premier coup
+   d'œil. Elles reçoivent les quatre pastels de repérage, en rotation,
+   pour que deux cases voisines ne soient jamais identiques.
+
+   Teintes fixes, comme les cartes du tableau de bord : elles servent à
+   se repérer, pas à suivre la couleur du profil. Le mode sombre garde
+   ses surfaces neutres (bloc suivant).
+   ========================================================================== */
+html:not([data-theme="dark"]) .sequence-item:nth-child(4n + 1),
+html:not([data-theme="dark"]) .exercise-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .day-event-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .quick-actions > button:nth-child(4n + 1) {
+  background: #fff0ce;
+  border-color: hsl(43 78% 82%);
+}
+html:not([data-theme="dark"]) .sequence-item:nth-child(4n + 2),
+html:not([data-theme="dark"]) .exercise-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .day-event-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .quick-actions > button:nth-child(4n + 2) {
+  background: #ece5f6;
+  border-color: hsl(266 44% 86%);
+}
+html:not([data-theme="dark"]) .sequence-item:nth-child(4n + 3),
+html:not([data-theme="dark"]) .exercise-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .day-event-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .quick-actions > button:nth-child(4n + 3) {
+  background: #fce2d4;
+  border-color: hsl(21 72% 85%);
+}
+html:not([data-theme="dark"]) .sequence-item:nth-child(4n + 4),
+html:not([data-theme="dark"]) .exercise-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .day-event-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .quick-actions > button:nth-child(4n + 4) {
+  background: #dff2ec;
+  border-color: hsl(165 42% 82%);
+}
+/* Échauffement et retour au calme : repères propres, hors rotation. */
+html:not([data-theme="dark"]) .sequence-warmup,
+html:not([data-theme="dark"]) .planned-protocol > button {
+  background: #ffe8d6;
+  border-color: hsl(26 76% 82%);
+}
+html:not([data-theme="dark"]) .sequence-warmup:last-child,
+html:not([data-theme="dark"]) .planned-protocol:last-of-type > button {
+  background: #e6f0fb;
+  border-color: hsl(210 62% 86%);
+}
+/* Sur ces pastels, le texte reste franchement lisible. */
+html:not([data-theme="dark"]) .sequence-item,
+html:not([data-theme="dark"]) .sequence-warmup,
+html:not([data-theme="dark"]) .exercise-card,
+html:not([data-theme="dark"]) .protocol-card,
+html:not([data-theme="dark"]) .record-card,
+html:not([data-theme="dark"]) .day-event-card,
+html:not([data-theme="dark"]) .planned-protocol > button {
+  color: hsl(28 22% 14%);
+}
+html:not([data-theme="dark"]) .sequence-item small,
+html:not([data-theme="dark"]) .sequence-warmup small,
+html:not([data-theme="dark"]) .exercise-card small,
+html:not([data-theme="dark"]) .protocol-card small,
+html:not([data-theme="dark"]) .day-event-card small,
+html:not([data-theme="dark"]) .planned-protocol > button small {
+  color: hsl(28 12% 32%);
+}
+/* La case en cours reste identifiable : contour marqué, pas un fond
+   différent, sinon la couleur de repérage disparaîtrait. */
+html:not([data-theme="dark"]) .sequence-item.active {
+  border-color: hsl(28 60% 34%);
+  box-shadow: 0 0 0 2px hsl(28 60% 34% / 40%);
+}
+/* Mode sombre : surfaces neutres, la couleur ne sert plus à rien sur
+   fond noir et nuirait à la lisibilité. */
+[data-theme="dark"] .sequence-item,
+[data-theme="dark"] .sequence-warmup,
+[data-theme="dark"] .exercise-card,
+[data-theme="dark"] .protocol-card,
+[data-theme="dark"] .record-card,
+[data-theme="dark"] .day-event-card,
+[data-theme="dark"] .quick-actions > button,
+[data-theme="dark"] .planned-protocol > button {
+  background: var(--panel-2) !important;
+  border-color: var(--line) !important;
+  color: var(--text) !important;
+}
+[data-theme="dark"] .sequence-item small,
+[data-theme="dark"] .sequence-warmup small,
+[data-theme="dark"] .exercise-card small,
+[data-theme="dark"] .protocol-card small,
+[data-theme="dark"] .day-event-card small,
+[data-theme="dark"] .planned-protocol > button small {
+  color: var(--muted) !important;
+}
+
+/* Rappel des étirements, sous le parcours. Sur écran étroit la bande du
+   parcours défile horizontalement et sa dernière case sort du champ :
+   ce rappel reste visible sans défiler. Masqué sur grand écran, où la
+   colonne verticale montre déjà tout. */
+.cooldown-reminder {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 10px;
+  border-radius: 11px;
+  border: 1px solid hsl(210 62% 86%);
+  background: #e6f0fb;
+  color: hsl(28 22% 14%);
+  text-align: left;
+  cursor: pointer;
+}
+.cooldown-reminder > span {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 13px;
+}
+.cooldown-reminder small {
+  font-weight: 500;
+  font-size: 11px;
+  color: hsl(28 12% 32%);
+}
+.cooldown-reminder > svg:first-child {
+  color: hsl(205 68% 38%);
+  flex-shrink: 0;
+}
+@media (max-width: 1050px) {
+  .cooldown-reminder {
+    display: flex;
+    grid-column: 1 / -1;
+  }
+}
+[data-theme="dark"] .cooldown-reminder {
+  background: var(--panel-2);
+  border-color: var(--line);
+  color: var(--text);
+}
+[data-theme="dark"] .cooldown-reminder small {
+  color: var(--muted);
+}
+[data-theme="dark"] .cooldown-reminder > svg:first-child {
+  color: var(--accent);
 }

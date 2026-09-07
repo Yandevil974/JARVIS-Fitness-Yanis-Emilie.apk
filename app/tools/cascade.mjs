@@ -4,8 +4,16 @@
 import fs from "node:fs";
 import path from "node:path";
 const dir = "release/assets";
-const file = fs.readdirSync(dir).filter((f) => f.endsWith(".css")).sort().pop();
+// Le vrai bundle est le plus gros fichier, pas le dernier par ordre
+// alphabétique : les petits chunks « web-*.js » faussaient la lecture.
+const file = fs
+  .readdirSync(dir)
+  .filter((f) => f.endsWith(".css"))
+  .map((f) => [f, fs.statSync(path.join(dir, f)).size])
+  .sort((a, b) => b[1] - a[1])[0][0];
 const css = fs.readFileSync(path.join(dir, file), "utf8");
+// Largeur simulée : la capture fournie correspond à une tablette.
+const VIEWPORT = Number(process.env.VW || 1000);
 
 function specificity(sel) {
   let a = 0, b = 0, c = 0;
@@ -59,8 +67,14 @@ export function resolve(prop, ctx) {
   let am;
   while ((am = atRe.exec(css))) {
     const cond = am[1];
-    // On ne garde que les media qui valent pour un écran large.
-    const ok = !/print|max-width:\s*(\d+)px/.test(cond);
+    // Évaluer la requête pour la largeur simulée (VIEWPORT).
+    let ok = !/print/.test(cond);
+    if (ok) {
+      for (const c of cond.matchAll(/max-width:\s*(\d+)px/g))
+        if (VIEWPORT > Number(c[1])) ok = false;
+      for (const c of cond.matchAll(/min-width:\s*(\d+)px/g))
+        if (VIEWPORT < Number(c[1])) ok = false;
+    }
     if (ok) continue;
     // Trouver la fin du bloc @media par comptage d'accolades.
     let d = 1, i = atRe.lastIndex;
@@ -90,6 +104,11 @@ export function resolve(prop, ctx) {
 }
 const CTX = (theme, classes, tag = "div") => ({ html: { theme, rail: theme === "dark" ? undefined : "dark" }, classes, tag });
 const cases = [
+  ["CLAIR  case exo 1", "background", CTX(null, ["sequence-item"], "button")],
+  ["CLAIR  echauffement", "background", CTX(null, ["sequence-warmup"], "button")],
+  ["SOMBRE case exo", "background", CTX("dark", ["sequence-item"], "button")],
+  ["SOMBRE body bg", "background", CTX("dark", [], "body")],
+  ["CLAIR  rappel etir.", "display", CTX(null, ["cooldown-reminder"], "button")],
   ["SOMBRE .input bg", "background", CTX("dark", ["input"], "input")],
   ["SOMBRE .input color", "color", CTX("dark", ["input"], "input")],
   ["SOMBRE .toast", "background", CTX("dark", ["toast"])],

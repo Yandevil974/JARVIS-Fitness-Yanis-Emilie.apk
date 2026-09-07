@@ -453,18 +453,32 @@ function Workout() {
             );
           })}
           {/* Ouvre les étirements ciblés sur les muscles travaillés, comme
-              l'échauffement ouvre ses étapes. Renvoyait auparavant vers la
-              bibliothèque, où il fallait les chercher soi-même. */}
+              l'échauffement ouvre ses étapes. */}
           <button
-            className="sequence-warmup"
+            className="sequence-warmup sequence-cooldown"
             onClick={() => setModal({ type: "cooldown", session: w })}
           >
             <Icon name="Wind" size={18} />
             <span>
-              Retour au calme<small>Étirements ciblés</small>
+              Étirements<small>Retour au calme</small>
             </span>
           </button>
         </aside>
+        {/* Sur écran étroit, le parcours devient une bande qui défile
+            horizontalement : les étirements, placés en dernier, sortaient
+            de l'écran et restaient introuvables. Ce rappel les redonne
+            sous la bande, toujours visible sans défilement. */}
+        <button
+          className="cooldown-reminder"
+          onClick={() => setModal({ type: "cooldown", session: w })}
+        >
+          <Icon name="Wind" size={17} />
+          <span>
+            Étirements de fin de séance
+            <small>Ciblés sur les muscles travaillés aujourd’hui</small>
+          </span>
+          <Icon name="ChevronRight" size={15} />
+        </button>
         <div className="workout-stage">
           <Panel className="exercise-stage">
             <div className="exercise-stage-head">
