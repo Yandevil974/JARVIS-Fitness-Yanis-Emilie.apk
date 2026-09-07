@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useApp, speak } from "../store/AppContext.jsx";
 import {
   advanceTimer,
@@ -7,6 +7,7 @@ import {
   extendTimer,
 } from "../engine/timer.js";
 import { durationLabel } from "../engine/utils.js";
+import { nextAnnouncement, initialMemo } from "../platform/voice-coach.js";
 import { Ring, Icon, Button } from "./ui.jsx";
 export function useNow(interval = 250) {
   const [now, setNow] = useState(Date.now());
@@ -19,10 +20,25 @@ export function useNow(interval = 250) {
 export function TimerObserver() {
   const { p, updateProfile, notify } = useApp();
   const t = p?.timer;
+  // Souvenir des annonces déjà prononcées, pour ne jamais les répéter.
+  // Un ref plutôt qu'un state : le faire vivre dans le rendu relancerait
+  // l'effet à chaque seconde annoncée.
+  const memo = useRef(initialMemo());
+  useEffect(() => {
+    if (!t) memo.current = initialMemo();
+  }, [t?.id]);
   useEffect(() => {
     if (!t || t.done || t.paused) return;
     const tick = () => {
       const next = advanceTimer(t);
+      // Coaching vocal : décompte de fin d'étape et changements, pour
+      // suivre la séance sans regarder l'écran. Réglage « voix pendant la
+      // séance », distinct de la voix du coach dans le dialogue.
+      if (p.preferences.voice && p.preferences.sessionVoice !== false) {
+        const said = nextAnnouncement(next, memo.current);
+        memo.current = said.memo;
+        if (said.text) speak(said.text, true);
+      }
       if (next.done || next.index !== t.index) {
         updateProfile((q) => {
           if (q.timer?.id === t.id) q.timer = next;
@@ -46,7 +62,7 @@ export function TimerObserver() {
       clearInterval(i);
       document.removeEventListener("visibilitychange", visible);
     };
-  }, [t, p?.preferences.voice]);
+  }, [t, p?.preferences.voice, p?.preferences.sessionVoice]);
   return null;
 }
 export default function RestTimer() {

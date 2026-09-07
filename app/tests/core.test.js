@@ -28,6 +28,11 @@ import {
 import { archivePlan, plannedSessions } from "../src/engine/plan-memory.js";
 import { interpretCommand, applyCoachAction } from "../src/engine/coach.js";
 import {
+  nextAnnouncement,
+  initialMemo,
+  tempoAnnouncement,
+} from "../src/platform/voice-coach.js";
+import {
   createTimer,
   advanceTimer,
   pauseTimer,
@@ -515,4 +520,44 @@ test("Zero-second source rests are not replaced by invented 90-second rests in d
     }),
     11,
   );
+});
+
+/* Coaching vocal pendant la séance : le module décide quoi annoncer, sans
+   parler lui-même, ce qui le rend vérifiable sans synthèse vocale. */
+test("Le décompte de fin d'étape n'est jamais répété", () => {
+  let memo = initialMemo();
+  const timer = { index: 0, remaining: 5, steps: [{ name: "Effort" }], meta: {} };
+  let r = nextAnnouncement(timer, memo);
+  memo = r.memo; // première observation : pas d'annonce d'étape
+  r = nextAnnouncement({ ...timer, remaining: 5 }, memo);
+  assert.equal(r.text, "5");
+  memo = r.memo;
+  r = nextAnnouncement({ ...timer, remaining: 5 }, memo);
+  assert.equal(r.text, null, "le 5 ne doit pas être redit");
+  r = nextAnnouncement({ ...timer, remaining: 3 }, memo);
+  assert.equal(r.text, "3");
+});
+test("La fin d'une récupération est annoncée une seule fois", () => {
+  const timer = { done: true, meta: { type: "rest" }, steps: [], index: 0 };
+  const first = nextAnnouncement(timer, initialMemo());
+  assert.match(first.text, /Récupération terminée/);
+  assert.equal(nextAnnouncement(timer, first.memo).text, null);
+});
+test("Un changement d'étape nomme le mouvement suivant", () => {
+  const steps = [{ name: "Squat" }, { name: "Développé couché" }];
+  let r = nextAnnouncement({ index: 0, remaining: 40, steps, meta: {} }, initialMemo());
+  r = nextAnnouncement({ index: 1, remaining: 40, steps, meta: {} }, r.memo);
+  assert.match(r.text, /Développé couché/);
+});
+test("Le minuteur en pause reste silencieux", () => {
+  const r = nextAnnouncement(
+    { index: 0, remaining: 3, paused: true, steps: [{ name: "Effort" }], meta: {} },
+    initialMemo(),
+  );
+  assert.equal(r.text, null);
+});
+test("Un tempo absent n'invente aucune annonce", () => {
+  assert.equal(tempoAnnouncement({}), null);
+  assert.equal(tempoAnnouncement({ tempo: "n'importe quoi" }), null);
+  assert.match(tempoAnnouncement({ tempo: "3-1-1" }), /3 secondes en descente/);
 });
