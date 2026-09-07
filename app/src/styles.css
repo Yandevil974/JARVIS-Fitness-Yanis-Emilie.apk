@@ -104,16 +104,23 @@
      blanc qui doit ressortir du bouton, pas l'inverse.
    ============================================================ */
 [data-theme="dark"] {
-  --bg: hsl(var(--h-surface) calc(var(--s-surface) * 0.20) 8.5%);
-  --sidebar: hsl(var(--h-surface) calc(var(--s-surface) * 0.22) 10.5%);
-  --panel: hsl(var(--h-surface) calc(var(--s-surface) * 0.18) 13%);
-  --panel-2: hsl(var(--h-surface) calc(var(--s-surface) * 0.20) 16%);
-  --panel-3: hsl(var(--h-surface) calc(var(--s-surface) * 0.22) 19%);
-  --line: hsl(var(--h-surface) calc(var(--s-surface) * 0.20) 24%);
-  --line-strong: hsl(var(--h-surface) calc(var(--s-surface) * 0.24) 34%);
-  --text: hsl(var(--h-surface) 16% 95%);
-  --muted: hsl(var(--h-surface) 10% 72%);
-  --dim: hsl(var(--h-surface) 8% 60%);
+  /* Fond bleu nuit, repris de la version précédente (relevé #173452,
+     soit H 211 / S 56 % / L 21 %). Le mode clair reste au blanc cassé
+     perle : le bleu ne vit plus que la nuit. Les surfaces gardent la
+     même échelle de clarté qu'avant, seule la teinte change ; les
+     accents ambre ou rose de chaque profil ne bougent pas. */
+  --h-night: 211;
+  --s-night: 56%;
+  --bg: hsl(var(--h-night) var(--s-night) 20%);
+  --sidebar: hsl(var(--h-night) var(--s-night) 17%);
+  --panel: hsl(var(--h-night) calc(var(--s-night) * 0.92) 24%);
+  --panel-2: hsl(var(--h-night) calc(var(--s-night) * 0.90) 28%);
+  --panel-3: hsl(var(--h-night) calc(var(--s-night) * 0.88) 32%);
+  --line: hsl(var(--h-night) calc(var(--s-night) * 0.80) 38%);
+  --line-strong: hsl(var(--h-night) calc(var(--s-night) * 0.74) 48%);
+  --text: hsl(var(--h-night) 22% 96%);
+  --muted: hsl(var(--h-night) 16% 78%);
+  --dim: hsl(var(--h-night) 14% 66%);
   /* Couleurs sémantiques remontées en clarté : les versions du mode
      clair (34-48 %) sont trop foncées sur un fond à 8 %. */
   --mint: hsl(166 52% 62%);
@@ -123,7 +130,7 @@
   --pink: hsl(334 64% 70%);
   --amber: hsl(38 76% 62%);
   --red: hsl(2 70% 66%);
-  --accent-soft: hsl(var(--h-accent) 40% 22%);
+  --accent-soft: hsl(var(--h-accent) 40% 24%);
 }
 /* Accents : éclaircis pour porter du texte blanc sur fond sombre. */
 [data-theme="dark"] {
@@ -14702,7 +14709,7 @@ button.primary {
 [data-theme="dark"] button.primary,
 [data-theme="dark"] .send-button,
 [data-theme="dark"] .validate-set:hover {
-  color: hsl(var(--h-surface) 30% 10%) !important;
+  color: hsl(var(--h-night) 34% 11%) !important;
 }
 /* Pastilles translucides : leur teinte de fond était calculée pour un
    panneau blanc. Sur panneau sombre il faut un voile clair, sinon la
@@ -14712,10 +14719,10 @@ button.primary {
 [data-theme="dark"] .badge.pink,
 [data-theme="dark"] .badge.mint,
 [data-theme="dark"] .badge.blue {
-  background: hsl(var(--h-surface) 12% 26%);
+  background: hsl(var(--h-night) 22% 30%);
 }
 [data-theme="dark"] .coach-card-head strong > span {
-  background: hsl(var(--h-surface) 12% 26%);
+  background: hsl(var(--h-night) 22% 30%);
 }
 
 /* Les cinq aplats qui portent du texte blanc en clair : sur fond
@@ -14730,7 +14737,7 @@ button.primary {
   color: var(--text);
 }
 [data-theme="dark"] .restoration-banner {
-  background: linear-gradient(110deg, hsl(272 30% 22%), hsl(var(--h-surface) 20% 18%));
+  background: linear-gradient(110deg, hsl(272 30% 22%), hsl(var(--h-night) 28% 22%));
 }
 [data-theme="dark"] .calendar-combo-tags > b {
   background: hsl(34 40% 22%);
