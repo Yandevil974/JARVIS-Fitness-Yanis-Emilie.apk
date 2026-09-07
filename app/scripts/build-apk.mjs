@@ -87,6 +87,41 @@ print("  %d fichiers web injectés" % len(repl))
 const tmp = path.join(ROOT, ".apk-unsigned.tmp");
 execFileSync(PY, ["-c", script, SHELL, WEB, tmp], { stdio: "inherit" });
 
+// --- Couleur de fond de l'enveloppe Android --------------------------
+// L'enveloppe d'origine peint son fond en bleu nuit (#173452) à deux
+// endroits que le CSS ne peut pas atteindre : la configuration Capacitor,
+// et resources.arsc pour la barre d'état et l'écran de démarrage. Tant
+// qu'ils restent bleus, la page web s'affiche par-dessus un fond bleu
+// quel que soit le thème choisi.
+// Les valeurs de couleur d'un resources.arsc font quatre octets de large
+// et sont typées : on peut donc les remplacer sur place, sans décaler
+// quoi que ce soit ni recompiler les ressources.
+console.log("Fond de l'enveloppe Android…");
+const patchShell = `
+import zipfile, shutil, sys, json
+apk = sys.argv[1]
+ancien = bytes.fromhex("523417ff")   # #173452, ARGB little-endian
+nouveau = bytes.fromhex("f2f7faff")  # #faf7f2, blanc cassé chaud
+tmp = apk + ".bg"
+zin = zipfile.ZipFile(apk)
+zout = zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED)
+n_arsc = 0
+for item in zin.infolist():
+    data = zin.read(item.filename)
+    if item.filename == "resources.arsc":
+        n_arsc = data.count(ancien)
+        data = data.replace(ancien, nouveau)
+    elif item.filename == "assets/capacitor.config.json":
+        cfg = json.loads(data.decode("utf8"))
+        cfg.setdefault("android", {})["backgroundColor"] = "#faf7f2"
+        data = json.dumps(cfg, indent=2).encode("utf8")
+    zout.writestr(item, data, compress_type=item.compress_type)
+zout.close()
+shutil.move(tmp, apk)
+print("  %d couleur(s) de fond corrigée(s) dans resources.arsc" % n_arsc)
+`;
+execFileSync(PY, ["-c", patchShell, tmp], { stdio: "inherit" });
+
 // --- Alignement ------------------------------------------------------
 // Indispensable : Android projette resources.arsc en mémoire depuis
 // l'APK et refuse l'installation s'il n'est pas aligné. À faire avant

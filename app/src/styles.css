@@ -14634,11 +14634,16 @@ button.primary {
    pour un fond clair : elles sont redéfinies sur des variables
    locales, ce qui laisse le reste de la feuille inchangé.
    ============================================================ */
+/* Colonne foncée sur page claire. La teinte suit celle des surfaces du
+   profil — brun taupe chez Yanis, prune chez Émilie — pour rester en
+   accord avec le blanc cassé de la page plutôt que de trancher au gris.
+   Clarté 18 % : le texte y ressort à 12:1, la colonne se détache de la
+   page à 12,5:1. */
 [data-rail="dark"] .sidebar {
-  --rail-bg: hsl(var(--h-surface) 12% 12%);
+  --rail-bg: hsl(var(--h-surface) 14% 18%);
   --rail-text: hsl(var(--h-surface) 14% 96%);
-  --rail-muted: hsl(var(--h-surface) 8% 70%);
-  --rail-line: hsl(var(--h-surface) 10% 23%);
+  --rail-muted: hsl(var(--h-surface) 10% 74%);
+  --rail-line: hsl(var(--h-surface) 12% 28%);
   background: var(--rail-bg);
   border-right-color: var(--rail-line);
   color: var(--rail-text);
@@ -14665,7 +14670,7 @@ button.primary {
    qui saturerait toute la colonne. */
 [data-rail="dark"] .sidebar .main-nav > button.active,
 [data-rail="dark"] .sidebar .data-nav > button.active {
-  background: hsl(var(--h-surface) 12% 21%);
+  background: hsl(var(--h-surface) 14% 28%);
   color: #fff;
 }
 /* L'accent du mode clair est foncé (il doit tenir sur du blanc) :
@@ -14678,9 +14683,11 @@ button.primary {
 [data-rail="dark"] .sidebar .data-nav > button.active svg {
   color: var(--rail-accent);
 }
+/* La colonne est passée à 18 % : l'ancien survol, à la même clarté,
+   devenait invisible. */
 [data-rail="dark"] .sidebar .main-nav > button:hover,
 [data-rail="dark"] .sidebar .data-nav > button:hover {
-  background: hsl(var(--h-surface) 12% 18%);
+  background: hsl(var(--h-surface) 14% 24%);
   color: #fff;
 }
 [data-rail="dark"] .sidebar .sidebar-bottom,
