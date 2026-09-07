@@ -33,6 +33,7 @@ import {
   tempoAnnouncement,
 } from "../src/platform/voice-coach.js";
 import { reviewProfile } from "../src/engine/watch.js";
+import { RECOVERY_EXERCISES, exerciseById } from "../src/data/library.js";
 import {
   createTimer,
   advanceTimer,
@@ -624,4 +625,31 @@ test("Le réajustement du programme réduit la fréquence sans perdre l'historiq
   assert.equal(profile.user.frequency, 3);
   assert.equal(profile.sessions.length, avant, "l'historique est conservé");
   assert.match(detail, /3 séances/);
+});
+
+/* Retour au calme : les étirements doivent cibler les muscles réellement
+   travaillés, et jamais laisser l'écran vide. */
+test("Le retour au calme cible les muscles de la séance", () => {
+  const p = newProfile("elite");
+  const s = p.plan.sessions[0];
+  const muscles = new Set();
+  for (const t of s.exercises) {
+    const ex = exerciseById(t.exerciseId);
+    if (!ex) continue;
+    muscles.add(ex.muscle);
+    for (const m of ex.secondary || []) muscles.add(m);
+  }
+  const tous = RECOVERY_EXERCISES.filter((e) => e.pattern === "stretch");
+  const cibles = tous.filter((e) => muscles.has(e.muscle));
+  assert.ok(cibles.length > 0, "des étirements doivent correspondre");
+  assert.ok(
+    cibles.every((e) => muscles.has(e.muscle)),
+    "aucun étirement hors des muscles travaillés",
+  );
+});
+test("Tous les étirements portent une illustration", () => {
+  const sans = RECOVERY_EXERCISES.filter(
+    (e) => e.pattern === "stretch" && !e.img,
+  );
+  assert.deepEqual(sans.map((e) => e.name), []);
 });

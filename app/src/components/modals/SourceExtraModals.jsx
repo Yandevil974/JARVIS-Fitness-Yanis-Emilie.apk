@@ -9,7 +9,15 @@ import {
   Input,
   SectionHeading,
 } from "../ui.jsx";
-import { today, dateLabel, uid, num } from "../../engine/utils.js";
+import {
+  today,
+  dateLabel,
+  uid,
+  num,
+  norm,
+  assetSrc,
+} from "../../engine/utils.js";
+import { POOL_GUIDES } from "../../data/library.js";
 import {
   sourceDay,
   sourceExtra,
@@ -232,12 +240,28 @@ export function SourceExtraModal({ event }) {
                   .filter(
                     (s) => s.segment === (c.key === "post" ? "post" : c.key),
                   )
-                  .map((s, j) => (
-                    <li key={j}>
-                      <strong>{s.name}</strong>
-                      <span>{s.seconds} s</span>
-                    </li>
-                  ))}
+                  .map((s, j) => {
+                    // Les étapes de piscine décrivaient le geste sans le
+                    // montrer, alors que les exercices de musculation ont
+                    // leur animation. Le guide correspondant en porte une.
+                    const guide = POOL_GUIDES.find((g) =>
+                      g.k.some((k) => norm(s.name).includes(norm(k))),
+                    );
+                    return (
+                      <li key={j}>
+                        {guide?.img && (
+                          <img
+                            className="pool-step-img"
+                            loading="lazy"
+                            src={assetSrc(guide.img)}
+                            alt={guide.t}
+                          />
+                        )}
+                        <strong>{s.name}</strong>
+                        <span>{s.seconds} s</span>
+                      </li>
+                    );
+                  })}
               </ol>
             </details>
           </section>

@@ -452,13 +452,16 @@ function Workout() {
               </button>
             );
           })}
+          {/* Ouvre les étirements ciblés sur les muscles travaillés, comme
+              l'échauffement ouvre ses étapes. Renvoyait auparavant vers la
+              bibliothèque, où il fallait les chercher soi-même. */}
           <button
             className="sequence-warmup"
-            onClick={() => navigate("recovery", "library")}
+            onClick={() => setModal({ type: "cooldown", session: w })}
           >
             <Icon name="Wind" size={18} />
             <span>
-              Retour au calme<small>Relâcher & récupérer</small>
+              Retour au calme<small>Étirements ciblés</small>
             </span>
           </button>
         </aside>

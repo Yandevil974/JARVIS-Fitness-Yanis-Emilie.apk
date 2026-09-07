@@ -10,7 +10,12 @@ import {
   ProgressBar,
 } from "../ui.jsx";
 import Movement from "../Movement.jsx";
-import { POOL_PROTOCOLS, POOL_GUIDES } from "../../data/library.js";
+import {
+  POOL_PROTOCOLS,
+  POOL_GUIDES,
+  RECOVERY_EXERCISES,
+  exerciseById,
+} from "../../data/library.js";
 import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
@@ -419,6 +424,76 @@ export function StretchModal({ exercise }) {
           }
         >
           Lancer 30 secondes
+        </Button>
+      </div>
+    </Modal>
+  );
+}
+
+/* ==========================================================================
+   RETOUR AU CALME
+   Le parcours de séance affichait l'échauffement et les exercices, mais
+   le retour au calme se contentait de renvoyer vers la bibliothèque : les
+   étirements n'étaient jamais proposés à la fin d'une séance.
+
+   On sélectionne ici les étirements qui correspondent aux muscles
+   réellement travaillés, plutôt que d'afficher les vingt-neuf.
+   ========================================================================== */
+export function CooldownModal({ session }) {
+  const { p, closeModal, setModal } = useApp();
+  const s = session || p.workout;
+  // Muscles sollicités par la séance, principaux et secondaires.
+  const muscles = new Set();
+  for (const t of s?.exercises || []) {
+    const ex = exerciseById(t.exerciseId);
+    if (!ex) continue;
+    muscles.add(ex.muscle);
+    for (const m of ex.secondary || []) muscles.add(m);
+  }
+  const tous = RECOVERY_EXERCISES.filter((e) => e.pattern === "stretch");
+  const cibles = tous.filter((e) => muscles.has(e.muscle));
+  // Une séance sans correspondance ne doit pas donner un écran vide.
+  const liste = (cibles.length ? cibles : tous).slice(0, 8);
+  const total = liste.reduce((n, e) => n + (e.seconds || 30), 0);
+  return (
+    <Modal
+      title="Terminer en douceur."
+      subtitle={`Retour au calme · ${liste.length} étirements ciblés sur les muscles travaillés, environ ${Math.round(total / 60)} minutes.`}
+      onClose={closeModal}
+      wide
+    >
+      <div className="warmup-detail">
+        {liste.map((e, i) => (
+          <div key={e.id}>
+            <span className="warmup-step-number">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            {e.img && (
+              <img
+                className="warmup-step-img"
+                loading="lazy"
+                src={assetSrc(e.img)}
+                alt={e.name}
+              />
+            )}
+            <div>
+              <h3>{e.name}</h3>
+              <p>{e.instruction}</p>
+            </div>
+            <Badge>{durationLabel(e.seconds || 30)}</Badge>
+          </div>
+        ))}
+      </div>
+      <div className="modal-actions">
+        <Button
+          variant="secondary"
+          icon="BookOpen"
+          onClick={() => setModal({ type: "stretch", exercise: liste[0] })}
+        >
+          Voir en détail
+        </Button>
+        <Button icon="Check" onClick={closeModal}>
+          Terminé
         </Button>
       </div>
     </Modal>
