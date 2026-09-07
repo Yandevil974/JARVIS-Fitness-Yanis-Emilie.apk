@@ -14721,3 +14721,83 @@ button.primary {
     height: 50px;
   }
 }
+
+/* ==========================================================================
+   CARTES DE SYNTHÈSE PASTEL (référence : capture « clair-ensemble »)
+   Chaque indicateur du tableau de bord porte un fond pastel qui lui est
+   propre — ambre, lavande, corail, menthe. Les teintes sont posées en dur :
+   ce sont des couleurs de repérage, elles ne suivent pas la couleur du
+   profil, sinon les quatre cartes redeviendraient identiques.
+   Le mode sombre garde ses surfaces neutres (voir surcharges plus bas).
+   ========================================================================== */
+.metric.amber {
+  background: #fff0ce;
+  border-color: hsl(43 78% 82%);
+}
+.metric.violet {
+  background: #ece5f6;
+  border-color: hsl(266 44% 86%);
+}
+.metric.coral {
+  background: #fce2d4;
+  border-color: hsl(21 72% 85%);
+}
+.metric.mint {
+  background: #dff2ec;
+  border-color: hsl(165 42% 82%);
+}
+.metric.amber .metric-icon {
+  color: hsl(32 84% 34%);
+}
+.metric.violet .metric-icon {
+  color: hsl(266 46% 46%);
+}
+.metric.coral .metric-icon {
+  color: hsl(14 72% 44%);
+}
+.metric.mint .metric-icon {
+  color: hsl(168 62% 28%);
+}
+/* Sur fond pastel, le texte secondaire doit rester lisible. */
+.metric.amber .metric-top,
+.metric.violet .metric-top,
+.metric.coral .metric-top,
+.metric.mint .metric-top,
+.metric.amber p,
+.metric.violet p,
+.metric.coral p,
+.metric.mint p {
+  color: hsl(28 12% 32%);
+}
+.metric.amber .metric-value,
+.metric.violet .metric-value,
+.metric.coral .metric-value,
+.metric.mint .metric-value {
+  color: hsl(28 22% 16%);
+}
+[data-theme="dark"] .metric.amber,
+[data-theme="dark"] .metric.violet,
+[data-theme="dark"] .metric.coral,
+[data-theme="dark"] .metric.mint {
+  background: var(--surface-2);
+  border-color: var(--line);
+}
+[data-theme="dark"] .metric .metric-top,
+[data-theme="dark"] .metric p {
+  color: var(--muted);
+}
+[data-theme="dark"] .metric .metric-value {
+  color: var(--text);
+}
+[data-theme="dark"] .metric.amber .metric-icon {
+  color: var(--amber);
+}
+[data-theme="dark"] .metric.violet .metric-icon {
+  color: var(--pink);
+}
+[data-theme="dark"] .metric.coral .metric-icon {
+  color: var(--amber);
+}
+[data-theme="dark"] .metric.mint .metric-icon {
+  color: var(--mint);
+}

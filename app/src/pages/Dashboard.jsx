@@ -90,7 +90,7 @@ export default function Dashboard() {
                   ? `${dateLabel(lastWeight.date)} · poids réellement saisi`
                   : "Aucune pesée enregistrée"
               }
-              color="blue"
+              color="amber"
             />
             <Metric
               icon="HeartPulse"
@@ -106,14 +106,14 @@ export default function Dashboard() {
                   ? `${dateLabel(lastCheckDate)} · calcul du fichier source`
                   : "Votre bilan du jour vous attend"
               }
-              color="pink"
+              color="violet"
             />
             <Metric
               icon="Dumbbell"
               label="Séances validées"
               value={totalCompleted}
               detail={`${p.sessions.length} journaux de musculation conservés`}
-              color="amber"
+              color="coral"
             />
             <Metric
               icon="Crosshair"
@@ -129,7 +129,7 @@ export default function Dashboard() {
                 }[p.user.goal]
               }
               detail="Votre cap, votre progression"
-              color="blue"
+              color="mint"
             />
           </div>
           <section
