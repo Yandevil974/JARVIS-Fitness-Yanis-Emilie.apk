@@ -504,7 +504,7 @@ pre {
   border-radius: 3px;
   padding: 0 4px;
   line-height: 16px;
-  color: hsl(calc(var(--h-accent) + 1.1), calc(var(--s-accent) * 0.2), 38.2%);
+  color: var(--muted);
   margin-left: auto;
 }
 .essentials-label {
@@ -970,7 +970,7 @@ pre {
 .btn.primary {
   background: var(--mint);
   color: var(--text);
-  border-color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.6), 34.8%);
+  border-color: var(--muted);
   box-shadow: 0 3px 11px hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.5), 38.2% / 3.1%);
 }
 .btn.primary:hover:not(:disabled) {
@@ -1020,7 +1020,7 @@ pre {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 42.8%);
+  color: var(--muted);
   font-size: 10px;
   font-weight: 600;
   padding: 0;
@@ -1249,7 +1249,7 @@ textarea.input {
   display: grid;
   place-items: center;
   background: radial-gradient(circle, hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.5), 38.2% / 8.6%), transparent);
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 42.3%);
+  color: var(--muted);
   border: 1px solid hsl(calc(var(--h-surface) - 3.1), calc(var(--s-surface) * 0.2), 90.5%);
   border-radius: 17px;
 }
@@ -1292,7 +1292,7 @@ textarea.input {
 }
 .info-line > svg {
   margin-top: 2px;
-  color: hsl(calc(var(--h-accent) + 3.3), calc(var(--s-accent) * 0.2), 43.1%);
+  color: var(--muted);
 }
 .warning-box {
   border: 1px solid hsl(37.2 24.4% 86%);
@@ -1545,7 +1545,7 @@ textarea.input {
 .hero-topline > span:last-child {
   font-size: 6px;
   letter-spacing: 1.5px;
-  color: hsl(calc(var(--h-accent) + 3.2), calc(var(--s-accent) * 0.2), 42.2%);
+  color: var(--muted);
   display: flex;
   align-items: center;
   gap: 7px;
@@ -1707,10 +1707,10 @@ textarea.input {
   border-color: hsl(calc(var(--h-surface) - 3.3), calc(var(--s-surface) * 0.2), 91.5%);
 }
 .week-day.planned > svg {
-  color: hsl(calc(var(--h-accent) + 3.4), calc(var(--s-accent) * 0.2), 45.5%);
+  color: var(--muted);
 }
 .week-day.planned > strong {
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.2), 35.7%);
+  color: var(--muted);
 }
 .week-day.selected {
   background: hsl(calc(var(--h-surface) - 3.4), calc(var(--s-surface) * 0.2), 93.2%);
@@ -2457,7 +2457,7 @@ textarea.input {
   animation: breathe 10s ease-in-out infinite;
 }
 .breathing-motion > span {
-  color: hsl(calc(var(--h-accent) + 2.7), calc(var(--s-accent) * 0.2), 42.6%);
+  color: var(--muted);
   font-size: 9px;
   letter-spacing: 0.4px;
   position: relative;
@@ -2600,7 +2600,7 @@ textarea.input {
   min-width: 0;
 }
 .message-label {
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 38.2%);
+  color: var(--muted);
   font-size: 9px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -2629,7 +2629,7 @@ textarea.input {
 }
 .message.user p {
   font-size: 12px;
-  color: hsl(calc(var(--h-accent) + 2.6), calc(var(--s-accent) * 0.2), 32.8%);
+  color: var(--muted);
 }
 .message-content > .btn {
   margin-top: 15px;
@@ -2653,7 +2653,7 @@ textarea.input {
   padding: 10px;
   font-size: 10px;
   text-align: left;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 37.2%);
+  color: var(--muted);
 }
 .message-exercises button > svg:last-child,
 .message-exercises button > span:last-child {
@@ -3034,7 +3034,7 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 42.2%);
+  color: var(--muted);
   background: radial-gradient(circle, hsl(calc(var(--h-surface) - 3.1), calc(var(--s-surface) * 0.2), 90.5% / 20%), transparent 65%);
 }
 .play-circle {
@@ -3075,7 +3075,7 @@ textarea.input {
   border: 1px solid hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 46.3% / 22%);
   border-radius: 7px;
   background: hsl(calc(var(--h-surface) - 3.7), calc(var(--s-surface) * 0.2), 95.9% / 85.1%);
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 38.8%);
+  color: var(--muted);
   display: grid;
   place-items: center;
 }
@@ -3194,7 +3194,7 @@ textarea.input {
 }
 .history-exercises > div > .text-link {
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.2), 36.4%);
+  color: var(--muted);
 }
 .session-topbar {
   display: flex;
@@ -3274,13 +3274,13 @@ textarea.input {
 .sequence-item.active {
   background: hsl(calc(var(--h-surface) - 3.4), calc(var(--s-surface) * 0.2), 92.9%);
   border-color: hsl(217.5 5.7% 69.3%);
-  color: hsl(calc(var(--h-accent) + 2.4), calc(var(--s-accent) * 0.4), 33.5%);
+  color: var(--muted);
 }
 .sequence-item.active > span {
   color: var(--mint);
 }
 .sequence-item.active small {
-  color: hsl(calc(var(--h-accent) + 2), calc(var(--s-accent) * 0.2), 40%);
+  color: var(--muted);
 }
 .sequence-item.done > span {
   color: var(--mint);
@@ -3344,7 +3344,7 @@ textarea.input {
   align-items: flex-start;
   gap: 10px;
   padding-top: 13px;
-  color: hsl(calc(var(--h-accent) + 3.2), calc(var(--s-accent) * 0.2), 45.4%);
+  color: var(--muted);
 }
 .technique-strip > svg {
   margin-top: 5px;
@@ -3394,7 +3394,7 @@ textarea.input {
   min-width: 0;
   border: 0;
   background: none;
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.5), 30.6%);
+  color: var(--text);
   box-shadow: none !important;
   font-size: 26px;
   font-weight: 650;
@@ -3483,7 +3483,7 @@ textarea.input {
   display: flex;
   gap: 7px;
   align-items: center;
-  color: hsl(calc(var(--h-accent) + 2.3), calc(var(--s-accent) * 0.2), 45.9%);
+  color: var(--muted);
 }
 .logged-sets strong {
   font-size: 10px;
@@ -3549,7 +3549,7 @@ textarea.input {
   min-height: 31px;
   border: 1px solid hsl(calc(var(--h-surface) - 3.1), calc(var(--s-surface) * 0.2), 90.5%);
   border-radius: 6px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 41.6%);
+  color: var(--muted);
   font-size: 9px;
   padding: 4px 8px;
   background: hsl(calc(var(--h-surface) - 3.3), calc(var(--s-surface) * 0.2), 95.4%);
@@ -3564,7 +3564,7 @@ textarea.input {
 .session-recommendation > p {
   font-size: 10px;
   line-height: 1.95;
-  color: hsl(calc(var(--h-accent) + 1.9), calc(var(--s-accent) * 0.2), 43.6%);
+  color: var(--muted);
   margin-top: 13px;
 }
 .session-recommendation > small {
@@ -3756,7 +3756,7 @@ textarea.input {
   border-radius: 4px;
   background: hsl(calc(var(--h-surface) - 3), calc(var(--s-surface) * 0.2), 92.7% / 43.9%);
   width: 100%;
-  color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.2), 36.3%);
+  color: var(--muted);
   min-width: 0;
 }
 .calendar-event > span {
@@ -3780,9 +3780,9 @@ textarea.input {
 .calendar-event.swim,
 .calendar-event.aqua {
   border-color: hsl(calc(var(--h-surface) - 15.7), calc(var(--s-surface) * 0.2), 87.8% / 22%);
-  border-left-color: hsl(calc(var(--h-accent) - 15.3), calc(var(--s-accent) * 0.6), 44.3%);
+  border-left-color: var(--muted);
   background: hsl(calc(var(--h-surface) - 3.2), calc(var(--s-surface) * 0.2), 91.9% / 37.6%);
-  color: hsl(calc(var(--h-accent) - 19.8), calc(var(--s-accent) * 0.6), 36.3%);
+  color: var(--muted);
 }
 .calendar-event.cardio {
   border-left-color: hsl(345.8 37.6% 26%);
@@ -3932,7 +3932,7 @@ textarea.input {
 }
 .calendar-advice .small-subtitle {
   font-size: 9px;
-  color: hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.2), 41.1%);
+  color: var(--muted);
 }
 .calendar-list {
   padding: 0 18px 15px;
@@ -4222,7 +4222,7 @@ textarea.input {
   font-size: 35px;
   font-weight: 600;
   letter-spacing: -1.5px;
-  color: hsl(calc(var(--h-accent) + 1.9), calc(var(--s-accent) * 0.3), 32.7%);
+  color: var(--muted);
   margin: 17px 0 13px;
 }
 .big-inline-metric > span {
@@ -4309,7 +4309,7 @@ textarea.input {
   font-size: 31px;
   letter-spacing: -1px;
   font-weight: 600;
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.3), 35.1%);
+  color: var(--muted);
   margin: 19px 0;
 }
 .record-value > small {
@@ -4335,7 +4335,7 @@ textarea.input {
   gap: 10px;
 }
 .record-meta b {
-  color: hsl(calc(var(--h-accent) + 1.5), calc(var(--s-accent) * 0.2), 40.2%);
+  color: var(--muted);
   font-weight: 500;
 }
 .level-card {
@@ -4396,7 +4396,7 @@ textarea.input {
   border-radius: 50%;
 }
 .level-steps > span.active {
-  color: hsl(calc(var(--h-accent) + 2.4), calc(var(--s-accent) * 0.3), 37.2%);
+  color: var(--muted);
 }
 .level-steps > span.active i {
   background: var(--mint);
@@ -4477,7 +4477,7 @@ textarea.input {
 }
 .balance-bars > div > button > strong {
   font-size: 10px;
-  color: hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.2), 39.9%);
+  color: var(--muted);
 }
 .balance-bars small {
   font-size: 7px;
@@ -4530,7 +4530,7 @@ textarea.input {
 }
 .insight-banner p {
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 43.3%);
+  color: var(--muted);
   line-height: 1.9;
   margin: 8px 0;
 }
@@ -4724,7 +4724,7 @@ textarea.input {
 }
 .source-photo-grid figcaption {
   font-size: 8px;
-  color: hsl(calc(var(--h-accent) + 2.4), calc(var(--s-accent) * 0.2), 40%);
+  color: var(--muted);
   line-height: 1.7;
   margin-top: 8px;
 }
@@ -4783,7 +4783,7 @@ textarea.input {
   display: block;
   font-size: 33px;
   letter-spacing: -1px;
-  color: hsl(calc(var(--h-accent) + 3.2), calc(var(--s-accent) * 0.4), 34.6%);
+  color: var(--muted);
   margin-top: 13px;
   font-weight: 600;
 }
@@ -4811,7 +4811,7 @@ textarea.input {
   gap: 9px;
   align-items: center;
   font-size: 13px;
-  color: hsl(calc(var(--h-accent) + 3.1), calc(var(--s-accent) * 0.2), 38.9%);
+  color: var(--muted);
 }
 .report-columns h3 > svg {
    color: hsl(218.8 10.3% 48%);
@@ -4852,7 +4852,7 @@ textarea.input {
   color: hsl(217.5 9.3% 47.7%);
 }
 .report-recommendations p {
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 44.1%);
+  color: var(--muted);
   font-size: 11px;
   line-height: 1.8;
 }
@@ -4877,7 +4877,7 @@ textarea.input {
   display: flex;
   gap: 13px;
   align-items: center;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 42.9%);
+  color: var(--muted);
   font-size: 11px;
 }
 .archived-reports summary > span {
@@ -4912,7 +4912,7 @@ textarea.input {
   font-size: 23px;
   font-weight: 600;
   letter-spacing: -0.5px;
-  color: hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.3), 34.2%);
+  color: var(--muted);
 }
 .cardio-summary small {
   font-size: 10px;
@@ -5154,7 +5154,7 @@ textarea.input {
 .swim-feature p {
   font-size: 11px;
   line-height: 1.9;
-  color: hsl(calc(var(--h-accent) - 19.3), calc(var(--s-accent) * 0.3), 40%);
+  color: var(--muted);
   margin-top: 15px;
 }
 .swim-tags {
@@ -5163,7 +5163,7 @@ textarea.input {
   gap: 12px;
   font-size: 7px;
   letter-spacing: 1.4px;
-  color: hsl(calc(var(--h-accent) - 19), calc(var(--s-accent) * 0.5), 40%);
+  color: var(--muted);
   margin-top: 26px;
 }
 .swim-tags i {
@@ -5217,7 +5217,7 @@ textarea.input {
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
-  color: hsl(calc(var(--h-accent) - 18.3), calc(var(--s-accent) * 0.7), 37.2%);
+  color: var(--muted);
 }
 .planned-distance small {
   font-size: 11px;
@@ -5226,7 +5226,7 @@ textarea.input {
 }
 .planned-distance > span {
   font-size: 8px;
-  color: hsl(calc(var(--h-accent) - 21.9), calc(var(--s-accent) * 0.3), 40%);
+  color: var(--muted);
 }
 .pool-preferences .day-picker {
   margin: 25px 0 20px;
@@ -5284,7 +5284,7 @@ textarea.input {
   border: 1px solid hsl(calc(var(--h-surface) - 17.8), calc(var(--s-surface) * 0.2), 88.1% / 40%);
   background: hsl(calc(var(--h-surface) - 3), calc(var(--s-surface) * 0.2), 92.7%);
   border-radius: 10px;
-  color: hsl(calc(var(--h-accent) - 17.9), calc(var(--s-accent) * 0.6), 39.1%);
+  color: var(--muted);
   display: grid;
   place-items: center;
 }
@@ -5394,8 +5394,8 @@ textarea.input {
 }
 .interval-formats > button.active {
   background: hsl(calc(var(--h-surface) - 3.1), calc(var(--s-surface) * 0.2), 90.5%);
-  border-color: hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.2), 45.6%);
-  color: hsl(calc(var(--h-accent) + 2.6), calc(var(--s-accent) * 0.4), 34.6%);
+  border-color: var(--muted);
+  color: var(--muted);
 }
 .interval-formats > button.active small {
   color: hsl(220 6.3% 37.5%);
@@ -5437,7 +5437,7 @@ textarea.input {
   font-size: 50px;
   font-weight: 600;
   letter-spacing: -2px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.4), 35%);
+  color: var(--muted);
 }
 .interval-ring strong > span {
   font-size: 25px;
@@ -5465,7 +5465,7 @@ textarea.input {
 }
 .interval-summary strong {
   font-size: 22px;
-  color: hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.2), 36.9%);
+  color: var(--muted);
   letter-spacing: -1px;
   font-weight: 600;
 }
@@ -5475,7 +5475,7 @@ textarea.input {
   border-color: hsl(222 4.7% 76.7% / 33.3%);
 }
 .hiit-advice > svg {
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.3), 43.6%);
+  color: var(--muted);
   margin-bottom: 16px;
 }
 .hiit-advice h3 {
@@ -5641,7 +5641,7 @@ textarea.input {
   place-items: center;
   margin: -5px -5px 16px;
   overflow: hidden;
-  color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.3), 41%);
+  color: var(--muted);
 }
 .routine-symbol > i {
   position: absolute;
@@ -5686,7 +5686,7 @@ textarea.input {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.3), 41.1%);
+  color: var(--muted);
 }
 .stretch-icon > .badge {
   font-size: 7px;
@@ -5718,7 +5718,7 @@ textarea.input {
   font-size: 13px;
   line-height: 1.95;
   margin: 23px 0;
-  color: hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.2), 38.7%);
+  color: var(--muted);
 }
 /* Nutrition */
 .nutrition-day {
@@ -5758,7 +5758,7 @@ textarea.input {
   margin-bottom: 14px;
 }
 .nutrition-macros > .panel > div:first-child > svg {
-  color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.3), 44.9%);
+  color: var(--muted);
   width: 17px;
 }
 .nutrition-macros strong {
@@ -5831,7 +5831,7 @@ textarea.input {
 .meal-foods strong {
   font-size: 10px;
   font-weight: 550;
-  color: hsl(calc(var(--h-accent) + 1.9), calc(var(--s-accent) * 0.2), 35.9%);
+  color: var(--muted);
   white-space: nowrap;
 }
 .meal-footer {
@@ -5871,7 +5871,7 @@ textarea.input {
 .nutrition-calculations strong {
   font-size: 10px;
   font-weight: 550;
-  color: hsl(calc(var(--h-accent) + 1.1), calc(var(--s-accent) * 0.2), 39.6%);
+  color: var(--muted);
 }
 .nutrition-tip {
   margin-top: 21px;
@@ -5879,7 +5879,7 @@ textarea.input {
   background: radial-gradient(ellipse at top left, hsl(calc(var(--h-surface) - 3.1), calc(var(--s-surface) * 0.2), 90.7% / 25.1%), var(--panel));
 }
 .nutrition-tip > svg {
-  color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.3), 42.7%);
+  color: var(--muted);
   margin-bottom: 17px;
 }
 .nutrition-tip h3 {
@@ -5919,7 +5919,7 @@ textarea.input {
 }
 .food-logs strong {
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 41.7%);
+  color: var(--muted);
 }
 .food-logs > div > svg {
    color: hsl(218.6 8.6% 47.7%);
@@ -5962,7 +5962,7 @@ textarea.input {
   background: linear-gradient(135deg, hsl(calc(var(--h-accent) + 2), calc(var(--s-accent) * 0.2), 47.9% / 60%), hsl(220 6.9% 76% / 53.3%));
   border-radius: 50%;
   font-size: 39px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.4), 32.3%);
+  color: var(--muted);
   font-weight: 600;
   display: grid;
   place-items: center;
@@ -5996,7 +5996,7 @@ textarea.input {
 }
 .identity-stats strong {
   font-size: 22px;
-  color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.2), 36.3%);
+  color: var(--muted);
   font-weight: 550;
 }
 .identity-card > .small-subtitle {
@@ -6076,7 +6076,7 @@ textarea.input {
   margin-bottom: 24px;
 }
 .goal-banner > svg {
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.3), 43.3%);
+  color: var(--muted);
 }
 .goal-banner > div {
   flex: 1;
@@ -6094,7 +6094,7 @@ textarea.input {
   font-size: 37px;
   font-weight: 600;
   letter-spacing: -1px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.3), 35.2%);
+  color: var(--muted);
   text-align: right;
 }
 .goal-banner > strong > span {
@@ -6256,7 +6256,7 @@ textarea.input {
   gap: 10px;
   padding: 11px 0;
   border-top: 1px solid var(--line);
-  color: hsl(calc(var(--h-accent) + 2.6), calc(var(--s-accent) * 0.2), 40%);
+  color: var(--muted);
   font-size: 10px;
 }
 .diagnostic-results > div > span {
@@ -6380,7 +6380,7 @@ textarea.input {
 }
 .calculation-preview strong {
   font-size: 18px;
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.4), 33.6%);
+  color: var(--muted);
   font-weight: 550;
   line-height: 1.5;
 }
@@ -6464,7 +6464,7 @@ textarea.input {
 .exercise-phases p {
   font-size: 11px;
   line-height: 1.9;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 45.1%);
+  color: var(--muted);
   margin-top: 6px;
 }
 .detail-info-grid {
@@ -6547,7 +6547,7 @@ textarea.input {
 }
 .muscle-detail-groups p {
   font-size: 10px;
-  color: hsl(calc(var(--h-accent) + 2.7), calc(var(--s-accent) * 0.2), 40%);
+  color: var(--muted);
   line-height: 1.8;
 }
 .exercise-detail-layout > aside .section-heading h2 {
@@ -6612,7 +6612,7 @@ textarea.input {
   text-align: left;
   font-size: 11px;
   line-height: 1.8;
-  color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.3), 35.6%);
+  color: var(--muted);
 }
 .planned-exercises label {
   display: flex;
@@ -6627,7 +6627,7 @@ textarea.input {
   border: 1px solid hsl(222 4.7% 76.7%);
   border-radius: 5px;
   background: hsl(calc(var(--h-surface) - 3.3), calc(var(--s-surface) * 0.2), 95.4%);
-  color: hsl(calc(var(--h-accent) + 3.1), calc(var(--s-accent) * 0.2), 38.7%);
+  color: var(--muted);
   padding: 3px 5px;
   font-size: 10px;
 }
@@ -6763,7 +6763,7 @@ textarea.input {
 }
 .pool-guide-content li {
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 45.8%);
+  color: var(--muted);
   line-height: 2;
 }
 .timer-modal {
@@ -6789,7 +6789,7 @@ textarea.input {
   letter-spacing: -4px;
   font-variant-numeric: tabular-nums;
   line-height: 1.2;
-  color: hsl(calc(var(--h-accent) + 2.4), calc(var(--s-accent) * 0.5), 31.8%);
+  color: var(--text);
   text-shadow: 0 0 27px hsl(calc(var(--h-accent) + 2.8), calc(var(--s-accent) * 0.5), 38.2% / 8.6%);
 }
 .timer-stage.work .timer-display {
@@ -6890,7 +6890,7 @@ textarea.input {
 .notification-list p {
   font-size: 12px;
   line-height: 1.9;
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.2), 41.1%);
+  color: var(--muted);
 }
 .notification-list small {
   font-size: 9px;
@@ -6958,7 +6958,7 @@ textarea.input {
   backdrop-filter: blur(12px);
   border-radius: 12px;
   box-shadow: 0 15px 45px hsl(220 25% 45% / 22%);
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.4), 34.1%);
+  color: var(--muted);
   animation: toast-enter 0.25s ease;
   font-size: 11px;
   line-height: 1.8;
@@ -6990,7 +6990,7 @@ textarea.input {
   background:
     radial-gradient(ellipse at left, hsl(43.9 24.4% 86% / 50.2%), transparent), hsl(calc(var(--h-surface) - 3.6), calc(var(--s-surface) * 0.2), 94.1% / 96.1%);
   border-color: hsl(55.2 32% 34.6%);
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 0.4), 33.5%);
+  color: var(--muted);
   box-shadow:
     0 0 50px hsl(calc(var(--h-accent) + 3.4), calc(var(--s-accent) * 0.2), 48.8% / 12.5%),
     0 15px 50px hsl(220 25% 45% / 22%);
@@ -8290,7 +8290,7 @@ textarea.input {
     margin-left: 0;
     width: 100%;
   }
-  .sidebar {
+.sidebar {
     width: 244px;
     padding: 25px 19px 0;
     transform: translateX(-105%);
@@ -8391,7 +8391,7 @@ textarea.input {
   .topbar .menu-trigger {
     display: flex;
     width: 26px;
-    color: hsl(calc(var(--h-accent) + 3), calc(var(--s-accent) * 0.2), 39.2%);
+    color: var(--muted);
   }
   .topbar-title {
     gap: 12px;
@@ -11586,7 +11586,7 @@ textarea.input {
   html {
     color-scheme: light;
   }
-  body {
+body {
     background: white;
     color: var(--text);
     font-size: 12px;
@@ -11613,7 +11613,7 @@ textarea.input {
     padding: 0;
     max-width: none;
   }
-  .panel {
+.panel {
     background: white !important;
     border: 1px solid hsl(0 0% 26.7%);
     box-shadow: none !important;
@@ -11843,7 +11843,7 @@ textarea.input {
 }
 .week-day.active {
   background: hsl(calc(var(--h-surface) - 2.8), calc(var(--s-surface) * 0.2), 92.1%);
-  border-color: hsl(calc(var(--h-accent) + 1.1), calc(var(--s-accent) * 0.3), 53.5%);
+  border-color: var(--dim);
 }
 .cardio-feature,
 .workout-preview-head,
@@ -11859,7 +11859,7 @@ textarea.input {
 .modality-grid > button.active,
 .equipment-grid > button.active {
   background: hsl(calc(var(--h-surface) - 2.5), calc(var(--s-surface) * 0.2), 91.5%);
-  border-color: hsl(calc(var(--h-accent) + 0.9), calc(var(--s-accent) * 0.7), 41.5%);
+  border-color: var(--muted);
 }
 .readiness-panel {
   background: hsl(calc(var(--h-surface) - 3.1), calc(var(--s-surface) * 0.2), 96%);
@@ -11868,7 +11868,7 @@ textarea.input {
   border-color: hsl(calc(var(--h-surface) + 0.8), calc(var(--s-surface) * 0.1), 90.6%);
 }
 .hero-copy h2 span {
-  color: hsl(calc(var(--h-accent) + 4), calc(var(--s-accent) * 1.2), 29.9%);
+  color: var(--text);
 }
 .app-main {
   padding-top: env(safe-area-inset-top);
@@ -11976,7 +11976,7 @@ textarea.input {
 .breath-cadence > p {
   font-size: 9px !important;
   margin: 7px 0 0 !important;
-  color: hsl(calc(var(--h-accent) + 2.2), calc(var(--s-accent) * 0.7), 29.5%);
+  color: var(--text);
 }
 .breath-cadence.paused > span {
   animation-play-state: paused;
@@ -12016,7 +12016,7 @@ textarea.input {
   border: 1px solid hsl(calc(var(--h-accent) + 3.2), calc(var(--s-accent) * 0.5), 46.8% / 26.7%);
   border-radius: 10px;
   background: hsl(calc(var(--h-surface) - 3.1), calc(var(--s-surface) * 0.2), 94.3%);
-  color: hsl(calc(var(--h-accent) + 1.7), calc(var(--s-accent) * 0.4), 35.9%);
+  color: var(--muted);
   font-size: 11px;
 }
 .equipment-adjustments summary {
@@ -12185,15 +12185,15 @@ textarea.input {
   --amber: hsl(39 77.1% 26%);
   --red: hsl(3.1 85% 26%);
 }
-body {
+html:not([data-theme="dark"]) body {
   background: var(--bg);
 }
-.sidebar {
+html:not([data-theme="dark"]) .sidebar {
   background: linear-gradient(180deg, hsl(calc(var(--h-surface) - 4.6), calc(var(--s-surface) * 0.3), 92.9%), hsl(calc(var(--h-surface) - 4.3), calc(var(--s-surface) * 0.3), 95.1%));
 }
-.topbar {
+html:not([data-theme="dark"]) .topbar {
   background: hsl(calc(var(--h-surface) - 4.3), calc(var(--s-surface) * 0.3), 95%);
-  border-color: hsl(calc(var(--h-accent) - 7.2), calc(var(--s-accent) * 0.5), 57.7%);
+  border-color: var(--dim);
 }
 .panel,
 .metric {
@@ -12203,7 +12203,7 @@ body {
 .main-nav > button.active {
   background: hsl(calc(var(--h-accent) - 9.1), calc(var(--s-accent) * 1.2), 41.5% / 14.5%);
   border-color: hsl(calc(var(--h-accent) - 12.5), calc(var(--s-accent) * 1.2), 38.9% / 40%);
-  color: hsl(calc(var(--h-accent) - 12.4), calc(var(--s-accent) * 1.2), 28.2%);
+  color: var(--text);
 }
 .main-nav > button.active:before {
   background: hsl(calc(var(--h-accent) - 12.5), calc(var(--s-accent) * 1.2), 38.3%);
@@ -12212,7 +12212,7 @@ body {
 .send-button {
   background: hsl(calc(var(--h-accent) - 12.5), calc(var(--s-accent) * 1.2), 39.5%);
   color: var(--text);
-  border-color: hsl(calc(var(--h-accent) - 14.2), calc(var(--s-accent) * 1.2), 34.2%);
+  border-color: var(--muted);
 }
 .btn.primary:hover:not(:disabled) {
   background: hsl(calc(var(--h-accent) - 13), calc(var(--s-accent) * 1.2), 33.7%);
@@ -12220,69 +12220,69 @@ body {
 }
 .btn.secondary {
   background: hsl(calc(var(--h-surface) - 8), calc(var(--s-surface) * 0.2), 88.8%);
-  border-color: hsl(calc(var(--h-accent) - 10.1), calc(var(--s-accent) * 0.5), 47.9%);
-  color: hsl(calc(var(--h-accent) - 8.7), calc(var(--s-accent) * 1.2), 26.1%);
+  border-color: var(--dim);
+  color: var(--text);
 }
 .input,
 .big-input,
 .static-value {
   background: hsl(calc(var(--h-surface) - 5.6), calc(var(--s-surface) * 0.3), 94.7%);
-  border-color: hsl(calc(var(--h-accent) - 9.7), calc(var(--s-accent) * 0.5), 51.2%);
-  color: hsl(calc(var(--h-accent) - 9.3), calc(var(--s-accent) * 1.2), 26%);
+  border-color: var(--dim);
+  color: var(--text);
 }
 .input:focus,
 .big-input:focus-within {
-  border-color: hsl(calc(var(--h-accent) - 14.8), calc(var(--s-accent) * 1.2), 35.2%);
+  border-color: var(--muted);
   box-shadow: 0 0 0 3px hsl(calc(var(--h-accent) - 8), calc(var(--s-accent) * 1.2), 41.6% / 18.8%);
 }
 .mobile-nav {
   background: hsl(calc(var(--h-surface) - 5.3), calc(var(--s-surface) * 0.3), 93.4%);
-  border-top-color: hsl(calc(var(--h-accent) - 9.9), calc(var(--s-accent) * 0.5), 52.5%);
+  border-top-color: var(--dim);
 }
 .mobile-nav > button.active {
-  color: hsl(calc(var(--h-accent) - 16.3), calc(var(--s-accent) * 1.2), 33%);
+  color: var(--muted);
 }
 .global-search {
   background: hsl(calc(var(--h-surface) - 6.7), calc(var(--s-surface) * 0.3), 92.4%);
-  border-color: hsl(calc(var(--h-accent) - 10.3), calc(var(--s-accent) * 0.4), 51.3%);
+  border-color: var(--dim);
 }
 .modal {
   background: hsl(calc(var(--h-surface) - 6.4), calc(var(--s-surface) * 0.3), 92.7%);
-  border-color: hsl(calc(var(--h-accent) - 11.1), calc(var(--s-accent) * 0.4), 50.8%);
+  border-color: var(--dim);
 }
 .modal-header {
-  border-bottom-color: hsl(calc(var(--h-accent) - 10), calc(var(--s-accent) * 0.4), 53.2%);
+  border-bottom-color: var(--dim);
 }
 .tabs {
-  border-bottom-color: hsl(calc(var(--h-accent) - 9.6), calc(var(--s-accent) * 0.4), 53.7%);
+  border-bottom-color: var(--dim);
 }
 .tabs > button {
-  color: hsl(calc(var(--h-accent) - 8.5), calc(var(--s-accent) * 0.8), 33.3%);
+  color: var(--muted);
 }
 .tabs > button.active {
-  color: hsl(calc(var(--h-accent) - 17), calc(var(--s-accent) * 1.2), 29.8%);
-  border-bottom-color: hsl(calc(var(--h-accent) - 14.6), calc(var(--s-accent) * 1.2), 38.5%);
+  color: var(--text);
+  border-bottom-color: var(--muted);
 }
 .readiness-panel,
 .coach-card,
 .sidebar-coach {
   background: linear-gradient(140deg, hsl(calc(var(--h-surface) - 6.6), calc(var(--s-surface) * 0.3), 90.3%), hsl(calc(var(--h-surface) - 5.2), calc(var(--s-surface) * 0.3), 93.4%));
-  border-color: hsl(calc(var(--h-accent) - 9.2), calc(var(--s-accent) * 0.5), 49.8%);
+  border-color: var(--dim);
 }
 .week-day,
 .week-day.planned {
   background: hsl(calc(var(--h-surface) - 6.4), calc(var(--s-surface) * 0.3), 92.5%);
-  border-color: hsl(calc(var(--h-accent) - 8.8), calc(var(--s-accent) * 0.4), 53.5%);
+  border-color: var(--dim);
 }
 .week-day.selected {
   background: hsl(calc(var(--h-surface) - 8.9), calc(var(--s-surface) * 0.3), 86.6%);
-  border-color: hsl(calc(var(--h-accent) - 12.5), calc(var(--s-accent) * 1.2), 34.5%);
+  border-color: var(--muted);
 }
 .source-phase-toggle:hover {
   background: hsl(calc(var(--h-accent) - 7.3), calc(var(--s-accent) * 0.6), 52.9% / 13.3%);
 }
 .source-phase-toggle > span:first-child {
-  color: hsl(calc(var(--h-accent) - 13.4), calc(var(--s-accent) * 1.2), 36.2%);
+  color: var(--muted);
 }
 .source-phase-content {
   border-top: 1px solid hsl(calc(var(--h-accent) - 10), calc(var(--s-accent) * 0.4), 53.2%);
@@ -12299,25 +12299,25 @@ body {
 }
 .original-program-banner p {
   font-size: 12px;
-  color: hsl(calc(var(--h-accent) - 9.3), calc(var(--s-accent) * 0.9), 29.1%);
+  color: var(--text);
   line-height: 1.8;
 }
 .original-program-banner small {
   display: block;
   margin-top: 10px;
-  color: hsl(calc(var(--h-accent) - 10.1), calc(var(--s-accent) * 0.7), 35.8%);
+  color: var(--muted);
   font-size: 10px;
   overflow-wrap: anywhere;
 }
 .original-program-banner > svg {
-  color: hsl(calc(var(--h-accent) - 15.5), calc(var(--s-accent) * 1.2), 33.7%);
+  color: var(--muted);
 }
 .program-howto {
   display: flex;
   gap: 16px;
   margin: 20px 0;
   flex-wrap: wrap;
-  color: hsl(calc(var(--h-accent) - 10.7), calc(var(--s-accent) * 0.9), 30.9%);
+  color: var(--text);
   font-size: 12px;
 }
 .program-howto > span {
@@ -12334,7 +12334,7 @@ body {
   background: hsl(calc(var(--h-accent) - 9.6), calc(var(--s-accent) * 0.6), 52.8%);
   border: 1px solid hsl(calc(var(--h-accent) - 12.9), calc(var(--s-accent) * 0.9), 40.7%);
   border-radius: 50%;
-  color: hsl(calc(var(--h-accent) - 12), calc(var(--s-accent) * 1.2), 26%);
+  color: var(--text);
 }
 .program-picker {
   display: grid;
@@ -12348,7 +12348,7 @@ body {
 .program-picker > label > span {
   display: block;
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) - 8.4), calc(var(--s-accent) * 0.9), 30.3%);
+  color: var(--text);
   margin-bottom: 7px;
 }
 .program-picker .input {
@@ -12368,7 +12368,7 @@ body {
   font-size: 17px;
 }
 .source-session .section-heading p {
-  color: hsl(calc(var(--h-accent) - 10.7), calc(var(--s-accent) * 0.7), 33.7%);
+  color: var(--muted);
 }
 .source-exercises > div {
   grid-template-columns: minmax(0, 1fr) 145px 130px;
@@ -12380,7 +12380,7 @@ body {
   gap: 10px;
   align-items: flex-start;
   line-height: 1.65;
-  color: hsl(calc(var(--h-accent) - 12.7), calc(var(--s-accent) * 1.2), 26.9%);
+  color: var(--text);
   min-width: 0;
   font-size: 12px;
   text-align: left;
@@ -12388,7 +12388,7 @@ body {
 .source-exercise-name > i {
   font-size: 10px;
   font-style: normal;
-  color: hsl(calc(var(--h-accent) - 9.7), calc(var(--s-accent) * 1), 35.6%);
+  color: var(--muted);
   flex-shrink: 0;
   margin-top: 3px;
 }
@@ -12399,24 +12399,24 @@ body {
 .source-exercise-name > svg {
   flex-shrink: 0;
   margin-top: 3px;
-  color: hsl(calc(var(--h-accent) - 12.2), calc(var(--s-accent) * 1.2), 36.5%);
+  color: var(--muted);
 }
 .source-exercises span b {
   display: block;
   font-size: 12px;
-  color: hsl(calc(var(--h-accent) - 14.4), calc(var(--s-accent) * 1.2), 32.3%);
+  color: var(--muted);
   font-weight: 700;
 }
 .source-exercises span small {
   display: block;
   font-size: 9px;
-  color: hsl(calc(var(--h-accent) - 10.5), calc(var(--s-accent) * 0.6), 35.9%);
+  color: var(--muted);
   margin-top: 5px;
 }
 .source-exercises .source-exercise-note {
   font-size: 11px;
   line-height: 1.85;
-  color: hsl(calc(var(--h-accent) - 8.6), calc(var(--s-accent) * 0.7), 32%);
+  color: var(--muted);
   padding-left: 25px;
 }
 .source-deload-note {
@@ -12436,7 +12436,7 @@ body {
 }
 .source-year-overview {
   margin-top: 25px;
-  color: hsl(calc(var(--h-accent) - 12), calc(var(--s-accent) * 1), 31.3%);
+  color: var(--text);
 }
 .source-year-overview > summary {
   font-size: 12px;
@@ -12444,31 +12444,31 @@ body {
   padding: 16px 0;
 }
 .source-safety-note {
-  color: hsl(calc(var(--h-accent) - 10.5), calc(var(--s-accent) * 0.6), 35.5%);
+  color: var(--muted);
   font-size: 11px;
   line-height: 1.9;
   margin-top: 24px;
 }
 .equipment-adjustments {
   background: hsl(calc(var(--h-surface) - 8.2), calc(var(--s-surface) * 0.2), 90.3%);
-  border-color: hsl(calc(var(--h-accent) - 9.8), calc(var(--s-accent) * 0.5), 45.5%);
-  color: hsl(calc(var(--h-accent) - 7.2), calc(var(--s-accent) * 1.1), 28.1%);
+  border-color: var(--muted);
+  color: var(--text);
 }
 .equipment-adjustments p {
-  color: hsl(calc(var(--h-accent) - 9.3), calc(var(--s-accent) * 0.7), 31.6%);
+  color: var(--text);
 }
 .message.assistant .message-content {
   background: hsl(calc(var(--h-surface) - 6.4), calc(var(--s-surface) * 0.2), 91.5%);
-  border-color: hsl(calc(var(--h-accent) - 8.8), calc(var(--s-accent) * 0.5), 52.9%);
+  border-color: var(--dim);
 }
 .message.user .message-content {
   background: hsl(calc(var(--h-surface) - 8.4), calc(var(--s-surface) * 0.3), 88.6%);
-  border-color: hsl(calc(var(--h-accent) - 10.3), calc(var(--s-accent) * 0.8), 42.9%);
+  border-color: var(--muted);
 }
 .chat-panel,
 .exercise-stage,
 .set-entry {
-  border-color: hsl(calc(var(--h-accent) - 9.7), calc(var(--s-accent) * 0.4), 53.2%);
+  border-color: var(--dim);
 }
 .readiness-ring .ring > svg > circle:first-child,
 .rest-widget .ring > svg > circle:first-child {
@@ -12516,7 +12516,7 @@ body {
   }
 }
 @media (max-width: 599px) {
-  .sidebar {
+html:not([data-theme="dark"]) .sidebar {
     background: linear-gradient(hsl(calc(var(--h-surface) - 6.7), calc(var(--s-surface) * 0.3), 92.3%), hsl(calc(var(--h-surface) - 5.2), calc(var(--s-surface) * 0.3), 94.3%));
   }
   .program-picker {
@@ -12580,7 +12580,7 @@ body {
   background: hsl(calc(var(--h-surface) - 9.4), calc(var(--s-surface) * 0.2), 88.5% / 23.1%);
   border: 1px solid hsl(calc(var(--h-accent) - 11.2), calc(var(--s-accent) * 0.6), 47.6%);
   border-radius: 9px;
-  color: hsl(calc(var(--h-accent) - 14.2), calc(var(--s-accent) * 1.2), 30.1%);
+  color: var(--text);
   font-size: 11px;
   line-height: 1.7;
 }
@@ -12611,14 +12611,14 @@ body {
 }
 .checkin-adaptation-option input {
   margin-top: 4px;
-  accent-color: hsl(calc(var(--h-accent) - 14.2), calc(var(--s-accent) * 1.2), 38.7%);
+  accent-color: var(--muted);
   flex-shrink: 0;
   width: 18px;
   height: 18px;
 }
 .checkin-adaptation-option small {
   display: block;
-  color: hsl(calc(var(--h-accent) - 9.8), calc(var(--s-accent) * 0.6), 34.5%);
+  color: var(--muted);
   font-size: 11px;
   margin-top: 5px;
 }
@@ -12631,7 +12631,7 @@ body {
 .input::placeholder,
 input::placeholder,
 textarea::placeholder {
-  color: hsl(calc(var(--h-accent) - 10.7), calc(var(--s-accent) * 0.6), 38.7%);
+  color: var(--muted);
   opacity: 1;
 }
 .metric p,
@@ -12658,14 +12658,14 @@ textarea::placeholder {
   --pink: hsl(326.3 85% 26%);
   --blue: hsl(calc(var(--h-accent) - 6.6), calc(var(--s-accent) * 1.2), 42.1%);
 }
-body {
+html:not([data-theme="dark"]) body {
   background:
     radial-gradient(ellipse at 12% 0%, hsl(calc(var(--h-surface) - 1.3), calc(var(--s-surface) * 0.3), 91.7%), transparent 65%), hsl(calc(var(--h-surface) + 2), calc(var(--s-surface) * 0.3), 96.2%);
 }
-.sidebar {
+html:not([data-theme="dark"]) .sidebar {
   background: linear-gradient(165deg, hsl(calc(var(--h-surface) - 3.3), calc(var(--s-surface) * 0.3), 90.6%), hsl(calc(var(--h-surface) + 10.2), calc(var(--s-surface) * 0.2), 93.5%) 58%, hsl(calc(var(--h-surface) + 21.6), calc(var(--s-surface) * 0.2), 93.2%));
 }
-.brand-mark {
+html:not([data-theme="dark"]) .brand-mark {
   filter: drop-shadow(0 0 12px hsl(calc(var(--h-accent) - 5.7), calc(var(--s-accent) * 1.2), 46.9% / 20.8%));
 }
 .main-nav > button.active {
@@ -12684,7 +12684,7 @@ body {
 }
 .metric:nth-child(1) {
   background: linear-gradient(125deg, hsl(calc(var(--h-surface) + 1.9), calc(var(--s-surface) * 0.3), 87%), hsl(calc(var(--h-surface) + 5.1), calc(var(--s-surface) * 0.2), 88.8%));
-  border-color: hsl(calc(var(--h-accent) + 3.7), calc(var(--s-accent) * 1.2), 41.5%);
+  border-color: var(--muted);
 }
 .metric:nth-child(2) {
   background: linear-gradient(125deg, hsl(276.2 25.8% 86%), hsl(calc(var(--h-surface) + 26), calc(var(--s-surface) * 0.1), 88.4%));
@@ -12696,15 +12696,15 @@ body {
 }
 .metric:nth-child(4) {
   background: linear-gradient(125deg, hsl(calc(var(--h-surface) - 21.5), calc(var(--s-surface) * 0.3), 91.7%), hsl(calc(var(--h-surface) - 3.7), calc(var(--s-surface) * 0.3), 90.4%));
-  border-color: hsl(calc(var(--h-accent) - 27.6), calc(var(--s-accent) * 0.8), 46.6%);
+  border-color: var(--dim);
 }
 .metric-top,
 .metric p {
-  color: hsl(calc(var(--h-accent) - 6), calc(var(--s-accent) * 1.2), 28.2%);
+  color: var(--text);
 }
 .metric .metric-icon {
   background: hsl(0 0% 8% / 7.8%);
-  color: hsl(calc(var(--h-accent) - 8.5), calc(var(--s-accent) * 1.2), 27.7%);
+  color: var(--text);
 }
 .btn.primary {
   background: linear-gradient(105deg, hsl(calc(var(--h-accent) - 19.4), calc(var(--s-accent) * 1.2), 43.4%), hsl(calc(var(--h-accent) + 7.4), calc(var(--s-accent) * 1.2), 39%));
@@ -12721,13 +12721,13 @@ body {
 .coach-card,
 .sidebar-coach {
   background: linear-gradient(140deg, hsl(calc(var(--h-surface) + 5.7), calc(var(--s-surface) * 0.3), 87.8%), hsl(257.4 25.2% 86%));
-  border-color: hsl(calc(var(--h-accent) + 19.7), calc(var(--s-accent) * 0.6), 42.8%);
+  border-color: var(--muted);
 }
 .hero-copy h2 em {
-  color: hsl(calc(var(--h-accent) + 29.9), calc(var(--s-accent) * 1.2), 24%);
+  color: var(--text);
 }
 .hero-copy h2 {
-  color: hsl(calc(var(--h-accent) - 6), calc(var(--s-accent) * 1.2), 26%);
+  color: var(--text);
 }
 .week-navigation {
   display: flex;
@@ -12764,11 +12764,11 @@ body {
   color: var(--text);
 }
 .full-week-strip .week-day > span {
-  color: hsl(calc(var(--h-accent) - 0.8), calc(var(--s-accent) * 1.2), 28.3%);
+  color: var(--text);
 }
 .full-week-strip .discipline-strength {
   background: linear-gradient(150deg, hsl(calc(var(--h-accent) + 1.8), calc(var(--s-accent) * 0.6), 57.6%), hsl(calc(var(--h-surface) + 3.6), calc(var(--s-surface) * 0.2), 88.4%));
-  border-color: hsl(calc(var(--h-accent) - 0.1), calc(var(--s-accent) * 1.2), 39.7%);
+  border-color: var(--muted);
 }
 .full-week-strip .discipline-metcon {
   background: linear-gradient(150deg, hsl(18.2 39.6% 86%), hsl(6.9 27.1% 86%));
@@ -12776,7 +12776,7 @@ body {
 }
 .full-week-strip .discipline-swim {
   background: linear-gradient(150deg, hsl(calc(var(--h-surface) - 25.1), calc(var(--s-surface) * 0.3), 90.3%), hsl(calc(var(--h-surface) - 9.5), calc(var(--s-surface) * 0.3), 90.9%));
-  border-color: hsl(calc(var(--h-accent) - 30.9), calc(var(--s-accent) * 1), 47.1%);
+  border-color: var(--dim);
 }
 .full-week-strip .discipline-rest,
 .full-week-strip .discipline-recovery {
@@ -12842,7 +12842,7 @@ body {
   gap: 15px;
   flex-wrap: wrap;
   font-size: 9px;
-  color: hsl(calc(var(--h-accent) - 5.3), calc(var(--s-accent) * 1), 30.8%);
+  color: var(--text);
   margin-top: 16px;
 }
 .week-key > span {
@@ -12876,7 +12876,7 @@ body {
 .activity-square.swim {
   background: hsl(calc(var(--h-surface) - 21.5), calc(var(--s-surface) * 0.3), 91.5%);
   color: hsl(184 85% 26%);
-  border-color: hsl(calc(var(--h-accent) - 30.3), calc(var(--s-accent) * 0.9), 51%);
+  border-color: var(--dim);
 }
 .calendar-event.recovery {
   background: hsl(268.1 22.6% 86%);
@@ -12962,12 +12962,12 @@ body {
 .source-metcon-panel p {
   font-size: 12px;
   line-height: 1.9;
-  color: hsl(calc(var(--h-accent) + 5.5), calc(var(--s-accent) * 1.2), 26.3%);
+  color: var(--text);
 }
 .source-metcon-panel small {
   display: block;
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) - 8.1), calc(var(--s-accent) * 0.9), 31.8%);
+  color: var(--text);
   line-height: 1.8;
 }
 .restoration-banner {
@@ -12990,7 +12990,7 @@ body {
 }
 .restoration-banner p {
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) + 7.4), calc(var(--s-accent) * 1.2), 28.3%);
+  color: var(--text);
   margin: 5px 0;
 }
 .restore-identity {
@@ -13023,18 +13023,18 @@ body {
 }
 .restore-counts b {
   font-size: 25px;
-  color: hsl(calc(var(--h-accent) + 0.4), calc(var(--s-accent) * 1.2), 28.8%);
+  color: var(--text);
   display: block;
 }
 .restore-counts span {
   display: block;
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) + 1.7), calc(var(--s-accent) * 1.2), 29.1%);
+  color: var(--text);
   margin-top: 5px;
 }
 .restore-notes {
   font-size: 12px;
-  color: hsl(calc(var(--h-accent) - 4), calc(var(--s-accent) * 0.9), 29.6%);
+  color: var(--text);
   line-height: 1.9;
   margin: 20px 0;
 }
@@ -13050,7 +13050,7 @@ body {
 }
 .bundled-backup-card p {
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) - 6.7), calc(var(--s-accent) * 1), 30.8%);
+  color: var(--text);
   line-height: 1.7;
 }
 .day-event-list {
@@ -13080,7 +13080,7 @@ body {
 .day-event-card > small {
   grid-column: 1;
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) - 2.5), calc(var(--s-accent) * 0.9), 30.1%);
+  color: var(--text);
 }
 .day-event-card > svg {
   grid-column: 2;
@@ -13092,12 +13092,12 @@ body {
 }
 .day-event-card.discipline-swim {
   background: hsl(calc(var(--h-surface) - 19.6), calc(var(--s-surface) * 0.3), 91.2%);
-  border-color: hsl(calc(var(--h-accent) - 30.6), calc(var(--s-accent) * 0.9), 47.4%);
+  border-color: var(--dim);
 }
 .rest-day-detail {
   text-align: center;
   padding: 20px 0;
-  color: hsl(calc(var(--h-accent) + 10.3), calc(var(--s-accent) * 1.2), 29.1%);
+  color: var(--text);
 }
 .rest-day-detail > svg {
   color: hsl(263.4 85% 26%);
@@ -13125,7 +13125,7 @@ body {
 .source-extra-reason {
   font-size: 12px;
   line-height: 1.9;
-  color: hsl(calc(var(--h-accent) - 5.3), calc(var(--s-accent) * 1), 31%);
+  color: var(--text);
   margin: 17px 0;
 }
 .source-combo-blocks {
@@ -13162,13 +13162,13 @@ body {
 .source-combo-block > small {
   display: block;
   margin: 12px 0;
-  color: hsl(calc(var(--h-accent) - 24), calc(var(--s-accent) * 1.2), 34%);
+  color: var(--muted);
   font-size: 10px;
 }
 .source-combo-block p {
   font-size: 12px;
   line-height: 1.8;
-  color: hsl(calc(var(--h-accent) - 19.3), calc(var(--s-accent) * 1.2), 29.2%);
+  color: var(--text);
 }
 .combo-number {
   display: grid;
@@ -13212,7 +13212,7 @@ body {
   display: flex;
   gap: 10px;
   padding: 16px;
-  color: hsl(calc(var(--h-accent) + 2), calc(var(--s-accent) * 0.7), 30.9%);
+  color: var(--text);
   font-size: 12px;
 }
 .source-extra-total {
@@ -13220,7 +13220,7 @@ body {
   flex-direction: column;
   gap: 6px;
   padding: 15px 0;
-  color: hsl(calc(var(--h-accent) - 2.4), calc(var(--s-accent) * 1.2), 27.8%);
+  color: var(--text);
 }
 .source-extra-total > b {
   font-size: 16px;
@@ -13239,7 +13239,7 @@ body {
 }
 .source-result-block.pool {
   background: hsl(calc(var(--h-surface) - 19.7), calc(var(--s-surface) * 0.3), 90.1% / 26.7%);
-  border-color: hsl(calc(var(--h-accent) - 29.3), calc(var(--s-accent) * 0.8), 44.4%);
+  border-color: var(--muted);
 }
 .source-result-block h3 {
   font-size: 17px;
@@ -13276,7 +13276,7 @@ body {
 }
 .source-journal-rows > div > strong {
   font-size: 14px;
-  color: hsl(calc(var(--h-accent) - 3.3), calc(var(--s-accent) * 1.2), 26.1%);
+  color: var(--text);
 }
 .source-journal-rows > div > div {
   display: grid;
@@ -13291,7 +13291,7 @@ body {
 }
 .source-journal-rows small {
   font-size: 9px;
-  color: hsl(calc(var(--h-accent) - 5.4), calc(var(--s-accent) * 0.6), 35.5%);
+  color: var(--muted);
 }
 .source-journal-rows b {
   font-size: 12px;
@@ -13361,7 +13361,7 @@ body {
 .team-advisor small {
   display: block;
   font-size: 9px;
-  color: hsl(calc(var(--h-accent) - 6.8), calc(var(--s-accent) * 0.9), 30.8%);
+  color: var(--text);
   margin-top: 6px;
   line-height: 1.7;
 }
@@ -13438,7 +13438,7 @@ body {
 .team-voice > p {
   font-size: 12px;
   line-height: 1.95;
-  color: hsl(calc(var(--h-accent) - 7), calc(var(--s-accent) * 0.8), 29.8%);
+  color: var(--text);
   margin: 19px 0;
 }
 .team-voice .badge {
@@ -13452,7 +13452,7 @@ body {
 .team-voice details p {
   font-size: 11px;
   line-height: 1.7;
-  color: hsl(calc(var(--h-accent) - 6.7), calc(var(--s-accent) * 0.7), 33.7%);
+  color: var(--muted);
 }
 .team-review-form {
   max-width: 960px;
@@ -13470,7 +13470,7 @@ body {
   background: hsl(261.8 22.1% 86% / 23.9%);
   font-size: 10px;
   line-height: 1.8;
-  color: hsl(calc(var(--h-accent) - 4.3), calc(var(--s-accent) * 0.9), 30.6%);
+  color: var(--text);
 }
 .team-week-facts b {
   display: block;
@@ -13504,18 +13504,18 @@ body {
 }
 .review-feelings small {
   font-size: 10px;
-  color: hsl(calc(var(--h-accent) + 0), calc(var(--s-accent) * 0.8), 35.6%);
+  color: var(--muted);
 }
 .review-feelings p {
   margin: 5px 0 0;
   font-size: 13px;
-  color: hsl(calc(var(--h-accent) + 2.6), calc(var(--s-accent) * 1.2), 26.4%);
+  color: var(--text);
   line-height: 1.8;
   white-space: pre-wrap;
 }
 .review-scores {
   font-size: 10px;
-  color: hsl(calc(var(--h-accent) - 1.7), calc(var(--s-accent) * 0.9), 30.3%);
+  color: var(--text);
   padding: 12px;
   background: hsl(calc(var(--h-surface) + 7.6), calc(var(--s-surface) * 0.2), 87.6%);
   border-radius: 8px;
@@ -13535,13 +13535,13 @@ body {
 .saved-advices p {
   font-size: 12px;
   line-height: 1.9;
-  color: hsl(calc(var(--h-accent) - 8.3), calc(var(--s-accent) * 0.9), 28.9%);
+  color: var(--text);
   margin-top: 10px;
 }
 .historical-advice-note {
   font-size: 10px;
   line-height: 1.8;
-  color: hsl(calc(var(--h-accent) - 3.8), calc(var(--s-accent) * 0.5), 35.7%);
+  color: var(--muted);
   margin: 20px 0 0;
 }
 .dashboard-team-link {
@@ -13562,7 +13562,7 @@ body {
   color: hsl(300 85% 26%);
 }
 .dashboard-team-link p {
-  color: hsl(calc(var(--h-accent) + 30.2), calc(var(--s-accent) * 0.9), 29.5%);
+  color: var(--text);
   font-size: 11px;
   margin: 7px 0 0;
   line-height: 1.8;
@@ -13806,7 +13806,7 @@ body {
 .source-load-hint p {
   font-size: 10px;
   line-height: 1.8;
-  color: hsl(calc(var(--h-accent) - 4), calc(var(--s-accent) * 0.8), 29.9%);
+  color: var(--text);
   margin: 7px 0 12px;
 }
 .source-load-hint .btn {
@@ -13839,7 +13839,7 @@ body {
 .imported-badges small {
   font-size: 10px;
   line-height: 1.7;
-  color: hsl(calc(var(--h-accent) - 5.1), calc(var(--s-accent) * 0.8), 30.5%);
+  color: var(--text);
 }
 .source-profile-metrics {
   margin: 18px 0;
@@ -13851,12 +13851,12 @@ body {
 }
 .source-profile-metrics span {
   font-size: 11px;
-  color: hsl(calc(var(--h-accent) - 2.7), calc(var(--s-accent) * 0.7), 31.9%);
+  color: var(--text);
 }
 .source-profile-metrics b {
   display: block;
   font-size: 21px;
-  color: hsl(calc(var(--h-accent) - 8), calc(var(--s-accent) * 1.2), 30.3%);
+  color: var(--text);
   margin-top: 6px;
 }
 .source-formula-note {
@@ -13883,7 +13883,7 @@ body {
 }
 .source-phase-prescriptions p {
   width: 100%;
-  color: hsl(calc(var(--h-accent) - 4.3), calc(var(--s-accent) * 1), 29.6%);
+  color: var(--text);
   font-size: 12px;
   line-height: 1.8;
 }
@@ -13895,7 +13895,7 @@ body {
   background: hsl(calc(var(--h-surface) - 27.7), calc(var(--s-surface) * 0.3), 89.1% / 25.5%);
   border: 1px solid hsl(183.9 66.2% 27.9% / 60%);
   border-radius: 10px;
-  color: hsl(calc(var(--h-accent) - 29.8), calc(var(--s-accent) * 1.2), 29.5%);
+  color: var(--text);
 }
 .source-after-cardio > svg {
   flex-shrink: 0;
@@ -13907,10 +13907,10 @@ body {
   font-size: 11px;
   line-height: 1.9;
   margin: 6px 0;
-  color: hsl(calc(var(--h-accent) - 17.8), calc(var(--s-accent) * 0.9), 30%);
+  color: var(--text);
 }
 .source-after-cardio small {
-  color: hsl(calc(var(--h-accent) - 7.8), calc(var(--s-accent) * 0.6), 35.9%);
+  color: var(--muted);
   font-size: 10px;
 }
 @media (max-width: 599px) {
@@ -13928,7 +13928,7 @@ body {
   margin-top: 18px;
   border-top: 1px solid hsl(calc(var(--h-accent) + 3.6), calc(var(--s-accent) * 0.4), 42.3% / 29%);
   padding-top: 14px;
-  color: hsl(calc(var(--h-accent) - 3.1), calc(var(--s-accent) * 0.9), 29.8%);
+  color: var(--text);
 }
 .review-version-history summary {
   font-size: 12px;
@@ -13974,7 +13974,7 @@ body {
 }
 .move-family-summary small {
   display: block;
-  color: hsl(calc(var(--h-accent) - 4.1), calc(var(--s-accent) * 0.7), 35%);
+  color: var(--muted);
   font-size: 11px;
   margin-top: 5px;
 }
@@ -15063,4 +15063,39 @@ button.primary {
 /* Mouvement réduit : pas de fondu, l'écran disparaît simplement. */
 .reduce-motion .app-loading.leaving {
   animation: none;
+}
+
+/* ==========================================================================
+   MODE SOMBRE : REPEINDRE LES SURFACES
+   Le bloc [data-theme="dark"] ne redéfinit que des variables. Or plusieurs
+   règles héritées d'anciennes directions visuelles peignent body, la
+   colonne et les panneaux avec des dégradés bâtis en dur sur la teinte
+   claire. Résultat : le thème sombre ne changeait presque rien.
+
+   Ces surcharges sont placées en toute fin de feuille — à spécificité
+   égale, c'est la dernière règle qui gagne — et ramènent chaque surface
+   sur les variables du thème.
+   ========================================================================== */
+[data-theme="dark"] body {
+  background: var(--bg) !important;
+  color: var(--text);
+}
+[data-theme="dark"] .sidebar {
+  background: var(--sidebar) !important;
+  border-right-color: var(--line);
+}
+[data-theme="dark"] .topbar {
+  background: var(--sidebar) !important;
+  border-color: var(--line);
+}
+[data-theme="dark"] .panel {
+  background: var(--panel) !important;
+  border-color: var(--line);
+}
+/* Les cartes pastel du tableau de bord gardent leur rôle de repère mais
+   doivent s'assombrir, sinon elles éclatent sur le fond de nuit. */
+[data-theme="dark"] .readiness-panel,
+[data-theme="dark"] .coach-card {
+  background: var(--panel-2) !important;
+  border-color: var(--line);
 }
