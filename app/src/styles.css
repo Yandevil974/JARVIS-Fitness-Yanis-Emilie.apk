@@ -16118,3 +16118,120 @@ html:not([data-theme="dark"]) .sequence-item.active {
   fill: hsl(352 70% 62%);
   color: hsl(352 70% 62%);
 }
+
+
+/* ==========================================================================
+   MODE SOMBRE — DERNIER PASSAGE, TOUTES PAGES
+   92 zones restaient claires : badges, champs, pastilles, vignettes
+   d'exercice, bandeaux de programme, boutons de durée, cartes de cardio
+   et de piscine. Elles touchent Programme, Entraînement, Nutrition,
+   Progression, Cardio et Profil — d'où des coquilles sur chaque onglet.
+
+   Mon audit ne les voyait pas pour deux raisons, corrigées dans
+   tools/audit-sombre.mjs : il ne savait pas lire une couleur écrite
+   « hsl(calc(var(--x) - 2.7), calc(...), 95.5%) », dont les parenthèses
+   s'imbriquent sur trois niveaux, et il comptait les règles de @media
+   print, qui repeignent en sombre pour le papier et faisaient passer
+   pour corrigé ce qui restait blanc à l'écran.
+   ========================================================================== */
+[data-theme="dark"] .alternative-item,
+[data-theme="dark"] .app-loading,
+[data-theme="dark"] .badge,
+[data-theme="dark"] .balance-bars label input,
+[data-theme="dark"] .breath-cadence,
+[data-theme="dark"] .btn.secondary:hover:not(:disabled),
+[data-theme="dark"] .calendar-day.outside,
+[data-theme="dark"] .calendar-day.today,
+[data-theme="dark"] .calendar-event.aqua,
+[data-theme="dark"] .calendar-event.cardio,
+[data-theme="dark"] .calendar-event.rest,
+[data-theme="dark"] .cardio-feature,
+[data-theme="dark"] .chart-grid-lines,
+[data-theme="dark"] .chat-rail .panel,
+[data-theme="dark"] .checkin-adaptation-option,
+[data-theme="dark"] .comparison-label,
+[data-theme="dark"] .cycle-weeks>div,
+[data-theme="dark"] .cycle-weeks>div.deload,
+[data-theme="dark"] .data-danger,
+[data-theme="dark"] .day-picker>button,
+[data-theme="dark"] .day-picker>button.active,
+[data-theme="dark"] .detail-anatomy,
+[data-theme="dark"] .detail-info-grid>div,
+[data-theme="dark"] .duration-presets>button,
+[data-theme="dark"] .duration-presets>button.active,
+[data-theme="dark"] .environment-toggle>button,
+[data-theme="dark"] .environment-toggle>button.active,
+[data-theme="dark"] .equipment-grid>button,
+[data-theme="dark"] .equipment-grid>button.active,
+[data-theme="dark"] .exercise-card-visual,
+[data-theme="dark"] .exercise-card-visual:has(.library-anatomy-preview),
+[data-theme="dark"] .exercise-pattern,
+[data-theme="dark"] .favorite-button,
+[data-theme="dark"] .filter-chips>button,
+[data-theme="dark"] .filter-chips>button.active,
+[data-theme="dark"] .floating-timer,
+[data-theme="dark"] .force-result,
+[data-theme="dark"] .goal-banner,
+[data-theme="dark"] .hero-foot,
+[data-theme="dark"] .hero-topline>.badge,
+[data-theme="dark"] .hiit-advice,
+[data-theme="dark"] .human-movement:not(.has-media) .movement-visual,
+[data-theme="dark"] .icon-button:hover:not(:disabled),
+[data-theme="dark"] .import-preview,
+[data-theme="dark"] .input:disabled,
+[data-theme="dark"] .insight-banner,
+[data-theme="dark"] .interval-formats>button,
+[data-theme="dark"] .interval-formats>button.active,
+[data-theme="dark"] .jarvis-insight,
+[data-theme="dark"] .level-steps i,
+[data-theme="dark"] .main-timer-actions>.icon-button,
+[data-theme="dark"] .message-exercises>button,
+[data-theme="dark"] .message.assistant .message-content,
+[data-theme="dark"] .message.user .message-content,
+[data-theme="dark"] .modal-content .input,
+[data-theme="dark"] .modality-grid>button,
+[data-theme="dark"] .modality-grid>button.active,
+[data-theme="dark"] .movement-controls,
+[data-theme="dark"] .movement-visual,
+[data-theme="dark"] .muscle-tooltip,
+[data-theme="dark"] .original-program-banner,
+[data-theme="dark"] .original-program-phases>[data-method=accumulation],
+[data-theme="dark"] .original-session-label,
+[data-theme="dark"] .page-recovery .panel,
+[data-theme="dark"] .plan-overview,
+[data-theme="dark"] .planned-exercises input,
+[data-theme="dark"] .play-circle,
+[data-theme="dark"] .profile-options button.active,
+[data-theme="dark"] .range-filter>button.active,
+[data-theme="dark"] .readiness-panel>.btn,
+[data-theme="dark"] .report-recommendations>div,
+[data-theme="dark"] .restore-counts>div,
+[data-theme="dark"] .saved-advices>div,
+[data-theme="dark"] .segmented>button.active,
+[data-theme="dark"] .source-after-cardio,
+[data-theme="dark"] .source-banner,
+[data-theme="dark"] .source-combo-block.pool,
+[data-theme="dark"] .source-result-block.pool,
+[data-theme="dark"] .source-technique,
+[data-theme="dark"] .storage-banner-card,
+[data-theme="dark"] .suggestion-grid>button,
+[data-theme="dark"] .swim-feature,
+[data-theme="dark"] .swim-tags i,
+[data-theme="dark"] .tabs>button>span,
+[data-theme="dark"] .team-advisor,
+[data-theme="dark"] .team-voice.panel,
+[data-theme="dark"] .timer-actions>button,
+[data-theme="dark"] .visual-label,
+[data-theme="dark"] .warmup-detail>div,
+[data-theme="dark"] .week-navigation .icon-button,
+[data-theme="dark"] .workout-preview-head,
+[data-theme="dark"] .workspace-label .badge {
+  background: var(--panel-2) !important;
+  border-color: var(--line);
+}
+
+/* Voile des fenêtres : blanc à 79 % d'opacité, il blanchissait tout
+   l'écran derrière les boîtes de dialogue en mode sombre. */
+[data-theme="dark"] .modal-backdrop {
+  background: hsl(var(--h-night) 10% 4% / 72%);
+}

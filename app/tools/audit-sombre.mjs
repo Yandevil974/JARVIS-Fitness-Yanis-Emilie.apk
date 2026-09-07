@@ -20,6 +20,23 @@ const file = fs
   .sort((a, b) => b[1] - a[1])[0][0];
 const css = fs.readFileSync(path.join(dir, file), "utf8");
 
+/* Les règles d'impression ne s'appliquent pas à l'écran. Les compter
+   faussait tout : @media print repeint .badge en sombre, ce qui faisait
+   passer pour corrigé un badge resté blanc à l'écran. */
+const zonesPrint = [];
+for (const am of css.matchAll(/@media([^{]*)\{/g)) {
+  if (!/print/.test(am[1])) continue;
+  let d = 1,
+    i = am.index + am[0].length;
+  while (i < css.length && d > 0) {
+    if (css[i] === "{") d++;
+    else if (css[i] === "}") d--;
+    i++;
+  }
+  zonesPrint.push([am.index, i]);
+}
+const impression = (pos) => zonesPrint.some(([a, b]) => pos >= a && pos < b);
+
 const lin = (c) => {
   c /= 255;
   return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
@@ -27,10 +44,33 @@ const lin = (c) => {
 const lum = ([r, g, b]) => 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
 
 /** Clarté moyenne d'une valeur de fond, unie ou dégradée, en pourcent. */
+/** Découpe une valeur en fonctions hsl(), en suivant les parenthèses.
+    Une expression régulière ne suffit pas : « hsl(calc(var(--x) - 2),…) »
+    imbrique les parenthèses sur trois niveaux, et toute lecture naïve
+    renvoyait null — le fond passait alors pour sombre. C'est ce qui a
+    masqué les badges blancs pendant plusieurs corrections. */
+function fonctionsHsl(v) {
+  const out = [];
+  let i = 0;
+  while ((i = v.toLowerCase().indexOf("hsl(", i)) !== -1) {
+    let d = 0,
+      j = i + 3;
+    for (; j < v.length; j++) {
+      if (v[j] === "(") d++;
+      else if (v[j] === ")") {
+        d--;
+        if (d === 0) break;
+      }
+    }
+    out.push(v.slice(i, j + 1));
+    i = j + 1;
+  }
+  return out;
+}
 function clarte(v) {
   const vals = [];
-  for (const m of v.matchAll(/hsl\([^()]*(?:\([^()]*\)[^()]*)*\)/gi)) {
-    const p = /,\s*([\d.]+)%\s*(?:\/[^)]*)?\)?\s*$/.exec(m[0]);
+  for (const f of fonctionsHsl(v)) {
+    const p = /,\s*([\d.]+)%\s*(?:\/[^)]*)?\)\s*$/.exec(f);
     if (p) vals.push(+p[1]);
   }
   for (const m of v.matchAll(/#([0-9a-f]{6})\b/gi))
@@ -43,8 +83,14 @@ function clarte(v) {
 const cibles = new Set();
 for (const m of css.matchAll(/([^{}]+)\{/g))
   for (const sel of m[1].split(",")) {
-    const t = sel.trim().split(/\s+/).pop();
-    if (t && t.startsWith(".")) cibles.add(t.replace(/:[^.]*$/, ""));
+    let t = sel.trim();
+    if (!t || /^(html|body|@|\*|::)/.test(t)) continue;
+    t = t
+      .replace(/^\[data-theme=dark\]\s*/, "")
+      .replace(/^html:not\(\[data-theme=dark\]\)\s*/, "");
+    cibles.add(t);
+    const last = t.split(/\s+/).pop().replace(/:[^.]*$/, "");
+    if (last.startsWith(".")) cibles.add(last);
   }
 
 const fautifs = [];
@@ -53,15 +99,27 @@ for (const cible of cibles) {
   let m,
     gagnant = null;
   while ((m = re.exec(css))) {
+    if (impression(m.index)) continue;
     const sels = m[1].split(",").map((x) => x.trim());
     if (sels.every((s) => /:not\(\[data-theme=dark\]\)/.test(s))) continue;
-    if (!sels.some((s) => s === cible || s.endsWith(" " + cible))) continue;
+    if (
+      !sels.some(
+        (s) =>
+          s === cible ||
+          s === `[data-theme=dark] ${cible}` ||
+          s.endsWith(" " + cible),
+      )
+    )
+      continue;
     const bm = /(?:^|;)\s*background(?:-color|-image)?\s*:\s*([^;]+)/.exec(m[2]);
     if (bm) gagnant = bm[1];
   }
   if (!gagnant) continue;
   if (/var\(--(panel|bg|sidebar|rail-bg|accent|surface)/.test(gagnant)) continue;
   if (/^\s*(none|transparent|inherit)/.test(gagnant)) continue;
+  // « img » ne porte pas de fond propre : la valeur vient d'une règle
+  // groupée et ne s'applique pas à l'image elle-même.
+  if (cible === "img" || /\bimg$/.test(cible)) continue;
   const l = clarte(gagnant);
   if (l == null || l < 55) continue;
   fautifs.push({ cible, l: l.toFixed(0), bg: gagnant.trim().slice(0, 38) });
@@ -91,6 +149,7 @@ let icones = 0;
   const re2 = /([^{}]+)\{([^{}]*)\}/g;
   let m;
   while ((m = re2.exec(css))) {
+    if (impression(m.index)) continue;
     const sels = m[1].split(",").map((x) => x.trim());
     if (sels.some((s) => /\[data-theme=dark\]/.test(s))) continue;
     if (sels.every((s) => /:not\(\[data-theme=dark\]\)/.test(s))) continue;
