@@ -16,8 +16,17 @@ function hsl2rgb(h, s, l) {
   const f = (n) => l - a * Math.max(-1, Math.min(k(n) - 3, Math.min(9 - k(n), 1)));
   return [f(0), f(8), f(4)].map((v) => Math.round(v * 255));
 }
+// Les fonds sont souvent écrits hsl(calc(var(--h-surface) - 2.7), calc(...),
+// 95.5%) : seule la clarté finale décide s'ils sont clairs ou sombres.
+// Ne pas savoir les lire laissait passer boutons, champs et pastilles.
+function clarteCalc(v) {
+  const m = /^hsl\(\s*calc\([^)]*\)\s*,\s*calc\([^)]*\)\s*,\s*([\d.]+)%/i.exec(v.trim());
+  return m ? Number(m[1]) : null;
+}
 function parse(v) {
   v = v.trim();
+  const l = clarteCalc(v);
+  if (l != null) return hsl2rgb(0, 0, l);
   let m = /^#([0-9a-f]{3,8})$/i.exec(v);
   if (m) { let h = m[1]; if (h.length === 3) h = [...h].map((c) => c + c).join(""); return [0,2,4].map((i)=>parseInt(h.slice(i,i+2),16)); }
   m = /^hsl\(\s*([\d.]+)\s*[, ]\s*([\d.]+)%\s*[, ]\s*([\d.]+)%/i.exec(v);
@@ -29,17 +38,21 @@ function parse(v) {
 const lin = (c) => { c /= 255; return c <= 0.04045 ? c/12.92 : ((c+0.055)/1.055)**2.4; };
 const lum = ([r,g,b]) => 0.2126*lin(r)+0.7152*lin(g)+0.0722*lin(b);
 
-// Sélecteurs déjà repeints en sombre.
-const couverts = new Set();
-{
-  const r = /([^{}]+)\{([^{}]*)\}/g; let m;
+// Pour chaque élément simple, on retient le DERNIER fond qui s'applique
+// en mode sombre : c'est lui qui gagne la cascade. Comparer des listes de
+// sélecteurs ne suffisait pas — une règle sombre sur .x ne protège pas
+// « .y .x », et une seule règle sombre suffisait à masquer toutes les
+// autres.
+function dernierFondSombre(cible) {
+  const r = /([^{}]+)\{([^{}]*)\}/g; let m, gagnant = null;
   while ((m = r.exec(css))) {
-    if (!/background[^;]*:\s*var\(--(panel|bg|sidebar|panel-2|panel-3)/.test(m[2])) continue;
-    for (const s of m[1].split(",")) {
-      const t = s.trim();
-      if (t.startsWith("[data-theme=dark]")) couverts.add(t.replace("[data-theme=dark]","").trim());
-    }
+    const sels = m[1].split(",").map((x) => x.trim());
+    if (!sels.some((s) => s === cible || s.endsWith(" " + cible))) continue;
+    if (sels.some((s) => /:not\(\[data-theme=dark\]\)/.test(s))) continue;
+    const bm = /(?:^|;)\s*background(?:-color)?\s*:\s*([^;]+)/.exec(m[2]);
+    if (bm) gagnant = bm[1];
   }
+  return gagnant;
 }
 const fautifs = [];
 const re = /([^{}]+)\{([^{}]*)\}/g; let m;
@@ -48,12 +61,17 @@ while ((m = re.exec(css))) {
   if (sels.some((s) => /\[data-theme=dark\]/.test(s))) continue;
   const bm = /(?:^|;)\s*background(?:-color)?\s*:\s*([^;!]+)/.exec(m[2]);
   if (!bm) continue;
-  const first = /#[0-9a-f]{3,8}|hsl\([^)]*\)|rgba?\([^)]*\)/i.exec(bm[1]);
+  const first = /hsl\(\s*calc\([^)]*\)\s*,\s*calc\([^)]*\)\s*,\s*[\d.]+%\s*\)|#[0-9a-f]{3,8}|hsl\([^)]*\)|rgba?\([^)]*\)/i.exec(bm[1]);
   if (!first) continue;
   const rgb = parse(first[0]);
   if (!rgb) continue;
   if (lum(rgb) < 0.5) continue;                    // déjà sombre
-  if (sels.every((s) => couverts.has(s.replace(/^html:not\(\[data-theme=dark\]\)\s*/,"")))) continue;
+  // Le fond qui gagne réellement en sombre est-il déjà une surface du
+  // thème ? Si oui, rien à signaler.
+  const base = sels[0].replace(/^html:not\(\[data-theme=dark\]\)\s*/, "").trim();
+  const simple = base.split(/\s+/).pop();
+  const gagnant = dernierFondSombre(simple);
+  if (gagnant && /var\(--(panel|bg|sidebar|panel-2|panel-3|rail-bg)/.test(gagnant)) continue;
   if (sels.every((s) => /:not\(\[data-theme=dark\]\)/.test(s))) continue;
   fautifs.push({ sel: sels[0], val: first[0], l: (lum(rgb)*100).toFixed(0) });
 }

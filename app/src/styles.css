@@ -16043,3 +16043,71 @@ html:not([data-theme="dark"]) .sequence-item.active {
   background: var(--panel-2) !important;
   border-color: var(--line);
 }
+
+
+/* ==========================================================================
+   MODE SOMBRE — FONDS CLAIRS RESTANTS (2)
+   Ces 49 sélecteurs gardaient un fond clair sur le thème sombre :
+   pastille de date, champ de recherche, boutons secondaires, pastilles
+   de discipline, curseurs, aplats de jours. Le texte, forcé en blanc par
+   la correction des textes, y devenait invisible — la pastille de date
+   tombait à 1,01:1.
+
+   Mon audit ne les voyait pas : il lisait « hsl(calc(...), calc(...), 88%) »
+   avec une virgule suivie d'espace, alors que le CSS minifié n'en met
+   pas. La valeur n'était pas reconnue, le fond passait pour sombre.
+   Corrigé dans tools/audit-sombre.mjs, qui juge maintenant sur le fond
+   qui gagne réellement la cascade.
+   ========================================================================== */
+[data-theme="dark"] .achievement,
+[data-theme="dark"] .achievement.unlocked,
+[data-theme="dark"] .activity-square,
+[data-theme="dark"] .activity-square.aqua,
+[data-theme="dark"] .activity-square.cardio,
+[data-theme="dark"] .activity-square.hiit,
+[data-theme="dark"] .activity-square.recovery,
+[data-theme="dark"] .activity-square.swim,
+[data-theme="dark"] .ai-tag,
+[data-theme="dark"] .bar-track,
+[data-theme="dark"] .big-input,
+[data-theme="dark"] .btn.secondary,
+[data-theme="dark"] .calculation-preview,
+[data-theme="dark"] .calendar-event.swim,
+[data-theme="dark"] .calendar-weekdays,
+[data-theme="dark"] .chat-composer,
+[data-theme="dark"] .comparison-stage,
+[data-theme="dark"] .consistency-icon,
+[data-theme="dark"] .data-icon,
+[data-theme="dark"] .date-pill,
+[data-theme="dark"] .day-event-card.discipline-swim,
+[data-theme="dark"] .equipment-adjustments,
+[data-theme="dark"] .global-search,
+[data-theme="dark"] .icon-button,
+[data-theme="dark"] .icon-button.selected,
+[data-theme="dark"] .message-avatar,
+[data-theme="dark"] .message-content,
+[data-theme="dark"] .mobile-nav,
+[data-theme="dark"] .profile-options,
+[data-theme="dark"] .progress-bar,
+[data-theme="dark"] .protocol-icon,
+[data-theme="dark"] .protocol-icon.pool-3,
+[data-theme="dark"] .protocol-icon.pool-4,
+[data-theme="dark"] .protocol-icon.pool-5,
+[data-theme="dark"] .range-filter,
+[data-theme="dark"] .record-icon,
+[data-theme="dark"] .review-scores,
+[data-theme="dark"] .search-input,
+[data-theme="dark"] .segmented,
+[data-theme="dark"] .sequence-item.active,
+[data-theme="dark"] .sidebar-orbit,
+[data-theme="dark"] .source-photo-archive,
+[data-theme="dark"] .static-value,
+[data-theme="dark"] .switch-track,
+[data-theme="dark"] .upcoming-date,
+[data-theme="dark"] .week-day.active,
+[data-theme="dark"] .week-day.planned,
+[data-theme="dark"] .week-day.selected,
+[data-theme="dark"] .week-day.training {
+  background: var(--panel-2) !important;
+  border-color: var(--line);
+}
