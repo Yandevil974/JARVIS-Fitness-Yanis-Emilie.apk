@@ -14968,3 +14968,53 @@ button.primary {
 [data-theme="dark"] .coach-card > p {
   color: var(--muted);
 }
+
+/* ==========================================================================
+   VEILLE DU COACH
+   Carte qui signale un problème détecté seul : douleur, récupération
+   basse, séances non réalisées. Le liseré gauche porte la gravité.
+   ========================================================================== */
+.coach-review {
+  border-left: 3px solid var(--amber);
+}
+.coach-review.severity-high {
+  border-left-color: var(--red);
+}
+.coach-review.severity-low {
+  border-left-color: var(--line-strong);
+}
+.coach-review-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.coach-review-head > svg {
+  color: var(--amber);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.coach-review.severity-high .coach-review-head > svg {
+  color: var(--red);
+}
+.coach-review-head strong {
+  display: block;
+  font-size: 14px;
+}
+.coach-review-head small {
+  display: block;
+  color: var(--dim);
+  font-size: 11px;
+  margin-top: 2px;
+}
+.coach-review > p {
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.65;
+  margin: 10px 0 14px;
+}
+.coach-review-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}

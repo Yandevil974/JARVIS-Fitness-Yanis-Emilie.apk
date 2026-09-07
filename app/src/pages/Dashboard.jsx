@@ -35,6 +35,8 @@ import {
 } from "../engine/utils.js";
 import { GOALS, MUSCLES } from "../data/library.js";
 import { reevaluationStatus } from "../engine/strength.js";
+import { reviewProfile } from "../engine/watch.js";
+import { applyCoachAction } from "../engine/coach.js";
 export default function Dashboard() {
   const { p, navigate, startWorkout, setModal, sendCoach } = useApp();
   const next =
@@ -340,6 +342,7 @@ export default function Dashboard() {
               <Icon name="ArrowRight" size={15} />
             </Button>
           </Panel>
+          <CoachReview />
           <ForceReminder />
           <Panel className="coach-card">
             <div className="coach-card-head">
@@ -414,6 +417,72 @@ export default function Dashboard() {
         <span>JARVIS / 01</span>
       </div>
     </>
+  );
+}
+
+/* ------------------------------------------------------------------
+   VEILLE DU COACH
+   Le coach ne se remettait en question que si on lui parlait. Il
+   surveille désormais le journal et signale ce qui cloche : douleur
+   récente, récupération basse plusieurs jours de suite, séances non
+   réalisées, longue coupure.
+
+   Rien n'est modifié sans accord : chaque constat propose une action,
+   que l'on accepte ou que l'on écarte. Écarter est mémorisé pour ne pas
+   reposer la même question chaque jour.
+   ------------------------------------------------------------------ */
+function CoachReview() {
+  const { p, updateProfile, notify, navigate } = useApp();
+  const findings = reviewProfile(p).filter(
+    (f) => !(p.dismissedFindings || []).includes(f.key),
+  );
+  if (!findings.length) return null;
+  const f = findings[0];
+  const ecarter = () =>
+    updateProfile((q) => {
+      q.dismissedFindings = [...(q.dismissedFindings || []), f.key].slice(-40);
+    });
+  const appliquer = () => {
+    if (f.action?.type === "navigate") {
+      navigate(f.action.page);
+      return;
+    }
+    try {
+      const { profile, detail } = applyCoachAction(p, f.action);
+      profile.dismissedFindings = [
+        ...(profile.dismissedFindings || []),
+        f.key,
+      ].slice(-40);
+      updateProfile(() => profile);
+      notify(detail);
+    } catch (e) {
+      notify(e.message, "error");
+    }
+  };
+  return (
+    <Panel className={`coach-review severity-${f.severity}`}>
+      <div className="coach-review-head">
+        <Icon
+          name={f.severity === "high" ? "TriangleAlert" : "Info"}
+          size={20}
+        />
+        <div>
+          <strong>{f.title}</strong>
+          {findings.length > 1 && (
+            <small>{findings.length - 1} autre(s) point(s) à revoir</small>
+          )}
+        </div>
+      </div>
+      <p>{f.detail}</p>
+      <div className="coach-review-actions">
+        <Button icon="Check" onClick={appliquer}>
+          {f.action?.type === "navigate" ? "Y aller" : "Adapter"}
+        </Button>
+        <button className="text-link" onClick={ecarter}>
+          Pas maintenant
+        </button>
+      </div>
+    </Panel>
   );
 }
 

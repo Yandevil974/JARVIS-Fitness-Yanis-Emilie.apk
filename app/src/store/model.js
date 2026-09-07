@@ -104,6 +104,9 @@ export function newProfile(id) {
     goals: [],
     messages: [],
     adaptations: [],
+    // Constats de veille écartés par l'utilisateur : on ne repose pas la
+    // même question chaque jour. Borné à 40 entrées côté écriture.
+    dismissedFindings: [],
     reports: [],
     notifications: [],
     legacyArchive: null,

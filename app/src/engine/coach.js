@@ -436,6 +436,26 @@ export function applyCoachAction(p, action, extra = {}) {
       q.user.frequency = action.frequency;
       detail = `Programme créé : ${action.frequency} séances × ${action.weeks} semaines.`;
       break;
+    // Remise à plat du programme quand il n'est plus suivi. On ne
+    // rattrape pas les séances perdues : on réduit la fréquence d'un cran
+    // pour retomber sur un rythme réellement tenu.
+    case "replan": {
+      const actuelle = q.user.frequency || 4;
+      const cible = Math.max(2, actuelle - 1);
+      archivePlan(q);
+      q.plan = generatePlan(q, {
+        frequency: cible,
+        weeks: q.plan?.weeks || 12,
+        startDate: today(),
+        source: q.plan?.source || "legacy",
+      });
+      q.user.frequency = cible;
+      detail =
+        cible === actuelle
+          ? `Programme régénéré à partir d'aujourd'hui, ${cible} séances par semaine.`
+          : `Programme réajusté : ${cible} séances par semaine au lieu de ${actuelle}. Les séances passées restent dans votre historique.`;
+      break;
+    }
     case "shorten": {
       const s =
         q.workout?.id === action.sessionId

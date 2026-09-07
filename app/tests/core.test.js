@@ -32,6 +32,7 @@ import {
   initialMemo,
   tempoAnnouncement,
 } from "../src/platform/voice-coach.js";
+import { reviewProfile } from "../src/engine/watch.js";
 import {
   createTimer,
   advanceTimer,
@@ -560,4 +561,67 @@ test("Un tempo absent n'invente aucune annonce", () => {
   assert.equal(tempoAnnouncement({}), null);
   assert.equal(tempoAnnouncement({ tempo: "n'importe quoi" }), null);
   assert.match(tempoAnnouncement({ tempo: "3-1-1" }), /3 secondes en descente/);
+});
+
+/* Veille du coach : il doit repérer un problème sans qu'on le lui dise,
+   et surtout se taire quand tout va bien. */
+test("Un profil sain ne déclenche aucun signalement de veille", () => {
+  const p = newProfile("elite");
+  p.forceTests = [{ date: today(), entries: [] }];
+  const findings = reviewProfile(p);
+  assert.deepEqual(
+    findings.filter((f) => f.severity === "high"),
+    [],
+    "aucun constat grave attendu sur un profil neuf",
+  );
+});
+test("Une douleur récente est repérée seule", () => {
+  const p = newProfile("elite");
+  p.checkIns[today()] = { painReported: true, sleep: 7 };
+  const f = reviewProfile(p).find((x) => x.key.startsWith("watch-pain"));
+  assert.ok(f, "la douleur doit être signalée");
+  assert.equal(f.severity, "high");
+  assert.equal(f.action.type, "fatigue");
+});
+test("Une récupération basse trois jours de suite déclenche un allègement", () => {
+  const p = newProfile("elite");
+  const bas = {
+    sleep: 4,
+    quality: 1,
+    energy: 1,
+    fatigue: 5,
+    stress: 5,
+    soreness: 5,
+    motivation: 1,
+  };
+  for (let i = 0; i < 3; i++) p.checkIns[addDays(today(), -i)] = { ...bas };
+  const f = reviewProfile(p).find((x) => x.key.startsWith("watch-recovery"));
+  assert.ok(f, "trois jours bas doivent être repérés");
+  assert.equal(f.action.type, "fatigue");
+});
+test("Un seul mauvais jour ne déclenche pas d'allègement", () => {
+  const p = newProfile("elite");
+  p.checkIns[today()] = {
+    sleep: 4,
+    quality: 1,
+    energy: 1,
+    fatigue: 5,
+    stress: 5,
+    soreness: 5,
+    motivation: 1,
+  };
+  assert.equal(
+    reviewProfile(p).find((x) => x.key.startsWith("watch-recovery")),
+    undefined,
+    "un mauvais jour isolé n'est pas une tendance",
+  );
+});
+test("Le réajustement du programme réduit la fréquence sans perdre l'historique", () => {
+  const p = newProfile("elite");
+  p.user.frequency = 4;
+  const avant = p.sessions.length;
+  const { profile, detail } = applyCoachAction(p, { type: "replan" });
+  assert.equal(profile.user.frequency, 3);
+  assert.equal(profile.sessions.length, avant, "l'historique est conservé");
+  assert.match(detail, /3 séances/);
 });
