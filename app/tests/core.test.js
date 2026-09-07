@@ -33,6 +33,7 @@ import {
   tempoAnnouncement,
 } from "../src/platform/voice-coach.js";
 import { reviewProfile } from "../src/engine/watch.js";
+import { namedExercise, prepare } from "../src/engine/conversation.js";
 import { RECOVERY_EXERCISES, exerciseById } from "../src/data/library.js";
 import {
   createTimer,
@@ -652,4 +653,45 @@ test("Tous les étirements portent une illustration", () => {
     (e) => e.pattern === "stretch" && !e.img,
   );
   assert.deepEqual(sans.map((e) => e.name), []);
+});
+
+/* Résolution d'un exercice par un nom partiel. Le piège : « développé
+   couché » contient « développé », qui à lui seul ramène le développé
+   militaire. Le candidat doit couvrir le plus de mots possible. */
+test("Un nom partiel désigne le bon exercice", () => {
+  const cas = [
+    ["quelle charge au développé couché ?", "Développé couché barre plat"],
+    ["je mets combien au squat", "Back squat"],
+    ["combien au soulevé de terre", "Soulevé de terre roumain barre"],
+  ];
+  for (const [phrase, attendu] of cas) {
+    const ex = namedExercise(prepare(phrase));
+    assert.ok(ex, `aucun exercice trouvé pour « ${phrase} »`);
+    assert.equal(ex.name, attendu, `« ${phrase} »`);
+  }
+});
+test("Une question de charge donne l'exercice, pas tout le tableau", () => {
+  const p = newProfile("elite");
+  p.forceTests = [
+    { date: today(), entries: [{ movement: "bench", weight: 80, reps: 1 }] },
+  ];
+  const r = interpretCommand(p, "quelle charge au développé couché ?");
+  assert.ok(
+    !/référentiel de force actuel/.test(r.text),
+    "la question ciblée ne doit pas déverser le référentiel entier",
+  );
+});
+test("Les formulations orales de charge sont comprises", () => {
+  const p = newProfile("elite");
+  for (const phrase of [
+    "je mets combien au squat",
+    "je charge combien au squat",
+    "combien de kilos au squat",
+  ]) {
+    const r = interpretCommand(p, phrase);
+    assert.ok(
+      !/pas saisi votre demande/.test(r.text),
+      `« ${phrase} » ne doit pas tomber dans le repli`,
+    );
+  }
 });

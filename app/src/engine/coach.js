@@ -38,6 +38,7 @@ import { archivePlan } from "./plan-memory.js";
 import { validDate } from "./validation.js";
 import { pauseTimer, advanceTimer } from "./timer.js";
 import {
+  namedExercise,
   prepare,
   entities,
   rank,
@@ -47,46 +48,13 @@ import {
   dialogueContext,
   agreement,
 } from "./conversation.js";
-import { reevaluationStatus, BASE_MOVEMENTS } from "./strength.js";
+import { reevaluationStatus } from "./strength.js";
 const withoutNegatedSymptoms = (q) =>
   q.replace(
     /(?:pas (?:de |du tout de |vraiment de |des )?|aucune? |sans |plus de )(?:douleurs?|mal(?:aise)?|vertiges?|blessure|fatiguee?|fatigue)(?:\s+(?:au|aux|a la|dans le)\s+[a-z]+)?/g,
     " ",
   );
 
-/* Retrouve l'exercice évoqué par un nom partiel (« squat », « couché »).
-   Les mots trop courts ou trop communs sont écartés : ils
-   ramèneraient n'importe quoi. */
-const MOTS_VIDES = new Set([
-  "le", "la", "les", "un", "une", "des", "du", "de", "mon", "ma", "mes",
-  "ce", "cet", "cette", "au", "aux", "par", "pour", "avec", "sans",
-  "exercice", "mouvement", "seance", "series", "serie", "reps",
-]);
-function namedExercise(q) {
-  const mots = q
-    .split(/[^a-z0-9]+/)
-    .filter((m) => m.length >= 4 && !MOTS_VIDES.has(m));
-  for (const mot of mots.sort((a, b) => b.length - a.length)) {
-    const trouves = searchExercises(mot);
-    if (!trouves.length) continue;
-    // « squat » doit donner le squat, pas le « Bulgarian split squat » :
-    // à défaut de départage, searchExercises rend l'ordre alphabétique.
-    // On préfère le nom le plus court, donc le mouvement le plus
-    // générique, et à égalité celui qui commence par le mot cherché.
-    // Un mouvement du bilan 1RM l'emporte : « squat » désigne le back
-    // squat de son référentiel, pas le « Squat cycliste ».
-    const bases = new Set(
-      BASE_MOVEMENTS.map((b) => norm(b.exerciseName || b.name)),
-    );
-    return trouves.sort((a, b) => {
-      const na = norm(a.name), nb = norm(b.name);
-      const ba = bases.has(na) ? 0 : 1, bb = bases.has(nb) ? 0 : 1;
-      const da = na.startsWith(mot) ? 0 : 1, db = nb.startsWith(mot) ? 0 : 1;
-      return ba - bb || da - db || na.length - nb.length;
-    })[0];
-  }
-  return null;
-}
 
 export function interpretCommand(p, text) {
   // Normalisation tolérante : langage parlé, abréviations, fautes de frappe.

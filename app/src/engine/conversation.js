@@ -27,11 +27,17 @@
    externe. Le raisonnement reste local et explicable.
    ============================================================ */
 import { norm, num, today, addDays, numberLabel } from "./utils.js";
-import { MUSCLES, EXERCISES, exerciseById } from "../data/library.js";
+import {
+  MUSCLES,
+  EXERCISES,
+  exerciseById,
+  searchExercises,
+} from "../data/library.js";
 import { recoveryScore, weeklyReport, personalRecords } from "./fitness.js";
 import { nutritionTargets } from "./nutrition.js";
 import { nextSession, estimateMinutes } from "./planner.js";
 import {
+  BASE_MOVEMENTS,
   reevaluationStatus,
   forceOverview,
   suggestedLoad,
@@ -123,6 +129,51 @@ const WEEKDAYS = [
 ];
 
 /** Extrait les valeurs chiffrées et repères présents dans la phrase. */
+/* Retrouve l'exercice évoqué par un nom partiel (« squat », « couché »).
+   Les mots trop courts ou trop communs sont écartés : ils
+   ramèneraient n'importe quoi. */
+const MOTS_VIDES = new Set([
+  "le", "la", "les", "un", "une", "des", "du", "de", "mon", "ma", "mes",
+  "ce", "cet", "cette", "au", "aux", "par", "pour", "avec", "sans",
+  "exercice", "mouvement", "seance", "series", "serie", "reps",
+]);
+export function namedExercise(q) {
+  const mots = q
+    .split(/[^a-z0-9]+/)
+    .filter((m) => m.length >= 4 && !MOTS_VIDES.has(m));
+  if (!mots.length) return null;
+  const bases = new Set(
+    BASE_MOVEMENTS.map((b) => norm(b.exerciseName || b.name)),
+  );
+  // On ne s'arrête pas au premier mot trouvé : « développé couché »
+  // contient « developpe », qui à lui seul ramènerait le développé
+  // militaire. Chaque candidat est noté sur le nombre de mots de la
+  // question qu'il couvre réellement, ce qui fait gagner le plus précis.
+  const scores = new Map();
+  for (const mot of mots) {
+    for (const ex of searchExercises(mot)) {
+      const cle = ex.id;
+      const s = scores.get(cle) || { ex, mots: 0 };
+      s.mots += 1;
+      scores.set(cle, s);
+    }
+  }
+  if (!scores.size) return null;
+  return [...scores.values()].sort((a, b) => {
+    // 1. couvrir le plus de mots de la question ;
+    if (b.mots !== a.mots) return b.mots - a.mots;
+    const na = norm(a.ex.name),
+      nb = norm(b.ex.name);
+    // 2. un mouvement du bilan 1RM l'emporte : « squat » désigne le back
+    //    squat du référentiel, pas le « Squat cycliste » ;
+    const ba = bases.has(na) ? 0 : 1,
+      bb = bases.has(nb) ? 0 : 1;
+    if (ba !== bb) return ba - bb;
+    // 3. à égalité, le nom le plus court, donc le plus générique.
+    return na.length - nb.length;
+  })[0].ex;
+}
+
 export function entities(q, original = "") {
   const found = {};
   const minutes = q.match(/(\d+)\s*(?:minutes|min\b|h\b|heures?)/);
@@ -167,9 +218,13 @@ export function entities(q, original = "") {
     }
   }
   // Exercice mentionné : la correspondance la plus longue gagne.
-  const exercise = EXERCISES.filter((e) => q.includes(norm(e.name))).sort(
-    (a, b) => b.name.length - a.name.length,
-  )[0];
+  // Nom complet d'abord (la correspondance la plus longue gagne), puis
+  // nom partiel : « développé couché » doit désigner le développé couché
+  // barre plat, sans qu'il faille citer son intitulé exact.
+  const exercise =
+    EXERCISES.filter((e) => q.includes(norm(e.name))).sort(
+      (a, b) => b.name.length - a.name.length,
+    )[0] || namedExercise(q);
   if (exercise) found.exercise = exercise;
   // Groupe musculaire mentionné.
   for (const [word, key] of [
@@ -334,6 +389,15 @@ const INTENTS = [
       ["mes charges", 6],
       ["charge maximale", 5],
       ["combien je dois mettre", 6],
+      // Formulations courantes à l'oral : « je mets combien », « je
+      // charge combien », « combien au squat ». Sans elles, la question
+      // la plus fréquente en salle tombait dans le repli.
+      ["je mets combien", 6],
+      ["mets combien", 5],
+      ["je charge combien", 6],
+      ["combien de kilos", 5],
+      ["combien au", 4],
+      ["combien sur", 4],
       ["quelle charge", 6],
       ["quel poids", 5],
       ["quelle barre", 3],
