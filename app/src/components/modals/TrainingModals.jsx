@@ -962,6 +962,24 @@ export function PlannedModal({ sessionId }) {
           <p className="small-subtitle">
             {s.phase || "Programme adaptatif · charges calculées au lancement"}
           </p>
+          {/* Le parcours complet, dans l'ordre réel de la séance :
+              échauffement, exercices, étirements. Cette fenêtre ne
+              montrait que les exercices, si bien que le retour au calme
+              restait invisible depuis l'accueil. */}
+          {s.type === "strength" && (
+            <div className="planned-protocol">
+              <button
+                type="button"
+                onClick={() => setModal({ type: "warmup", session: s })}
+              >
+                <Icon name="Flame" size={16} />
+                <span>
+                  Échauffement<small>Avant de commencer</small>
+                </span>
+                <Icon name="ChevronRight" size={14} />
+              </button>
+            </div>
+          )}
           {s.type === "strength" && (
             <div className="planned-exercises">
               {s.exercises.map((e, i) => (
@@ -1003,6 +1021,20 @@ export function PlannedModal({ sessionId }) {
                   <span>{e.rest}s repos</span>
                 </div>
               ))}
+            </div>
+          )}
+          {s.type === "strength" && (
+            <div className="planned-protocol">
+              <button
+                type="button"
+                onClick={() => setModal({ type: "cooldown", session: s })}
+              >
+                <Icon name="Wind" size={16} />
+                <span>
+                  Étirements<small>Retour au calme, muscles travaillés</small>
+                </span>
+                <Icon name="ChevronRight" size={14} />
+              </button>
             </div>
           )}
           {s.status === "planned" && !archived && (

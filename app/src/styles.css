@@ -15099,3 +15099,193 @@ button.primary {
   background: var(--panel-2) !important;
   border-color: var(--line);
 }
+
+/* ==========================================================================
+   BLOC FINAL — L'APPARENCE FAIT AUTORITÉ ICI
+   --------------------------------------------------------------------------
+   La feuille a accumulé plusieurs directions visuelles successives, dont
+   les règles se contredisent. Plutôt que de les réécrire une à une, ce
+   bloc final tranche : il est le dernier lu, et sa spécificité est
+   calculée pour l'emporter sur les précédents.
+
+   Quatre points corrigés, dans cet ordre :
+     1. la colonne de navigation est sombre en mode clair ;
+     2. en mode sombre, aucun texte foncé ni surface claire ne subsiste ;
+     3. en mode clair, les cartes retrouvent leurs teintes pastel ;
+     4. voir CooldownModal côté JavaScript.
+   ========================================================================== */
+
+/* --- 1. Colonne de navigation toujours sombre en mode clair -----------
+   La règle héritée « html:not([data-theme]) .sidebar » pèse (0,2,1) et
+   battait le rail (0,2,0). On monte la spécificité à (0,3,0). */
+html:not([data-theme="dark"]) [data-rail="dark"] .sidebar,
+html [data-rail="dark"] .sidebar {
+  background: var(--rail-bg) !important;
+  border-right-color: var(--rail-line);
+  color: var(--rail-text);
+}
+
+/* --- 2. Mode sombre : plus aucun îlot clair -------------------------- */
+[data-theme="dark"] .panel,
+[data-theme="dark"] .modal,
+[data-theme="dark"] .modal-header,
+[data-theme="dark"] .warning-box,
+[data-theme="dark"] .persistent-warning,
+[data-theme="dark"] .source-deload-note,
+[data-theme="dark"] .original-session-advice,
+[data-theme="dark"] .week-deload-note,
+[data-theme="dark"] .sidebar-coach,
+[data-theme="dark"] .breathing-motion > div,
+[data-theme="dark"] .coach-card-head strong > span,
+[data-theme="dark"] .toast,
+[data-theme="dark"] .toast.record,
+[data-theme="dark"] .calendar-event,
+[data-theme="dark"] .calendar-event.hiit,
+[data-theme="dark"] .calendar-event.recovery,
+[data-theme="dark"] .metric,
+[data-theme="dark"] .metric:nth-child(1),
+[data-theme="dark"] .metric:nth-child(2),
+[data-theme="dark"] .metric:nth-child(3),
+[data-theme="dark"] .metric:nth-child(4),
+[data-theme="dark"] .full-week-strip .week-day,
+[data-theme="dark"] .full-week-strip .discipline-strength,
+[data-theme="dark"] .full-week-strip .discipline-metcon,
+[data-theme="dark"] .full-week-strip .discipline-swim,
+[data-theme="dark"] .full-week-strip .discipline-recovery {
+  background: var(--panel) !important;
+  border-color: var(--line);
+}
+/* Le texte suit systématiquement le thème : les couleurs foncées écrites
+   en dur devenaient illisibles sur le fond de nuit. */
+[data-theme="dark"] .panel,
+[data-theme="dark"] .panel p,
+[data-theme="dark"] .panel span,
+[data-theme="dark"] .panel small,
+[data-theme="dark"] .panel li,
+[data-theme="dark"] .panel td,
+[data-theme="dark"] .modal p,
+[data-theme="dark"] .modal span,
+[data-theme="dark"] .modal small,
+[data-theme="dark"] .modal li,
+[data-theme="dark"] .eyebrow,
+[data-theme="dark"] .field-help,
+[data-theme="dark"] .info-line p,
+[data-theme="dark"] .metric p,
+[data-theme="dark"] .metric-top {
+  color: var(--muted) !important;
+}
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] strong,
+[data-theme="dark"] b,
+[data-theme="dark"] .panel strong,
+[data-theme="dark"] .modal strong,
+[data-theme="dark"] .metric-value,
+[data-theme="dark"] .week-day > strong {
+  color: var(--text) !important;
+}
+/* Les champs de saisie restaient blancs à texte noir. */
+[data-theme="dark"] .input,
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: var(--panel-2) !important;
+  color: var(--text) !important;
+  border-color: var(--line);
+}
+
+/* --- 3. Mode clair : rendre leurs couleurs aux cartes -----------------
+   Les pastels étaient écrasés par des règles postérieures qui remettaient
+   tout en blanc. On les repose ici, en dernier. */
+html:not([data-theme="dark"]) .metric.amber {
+  background: #fff0ce !important;
+  border-color: hsl(43 78% 82%);
+}
+html:not([data-theme="dark"]) .metric.violet {
+  background: #ece5f6 !important;
+  border-color: hsl(266 44% 86%);
+}
+html:not([data-theme="dark"]) .metric.coral {
+  background: #fce2d4 !important;
+  border-color: hsl(21 72% 85%);
+}
+html:not([data-theme="dark"]) .metric.mint {
+  background: #dff2ec !important;
+  border-color: hsl(165 42% 82%);
+}
+html:not([data-theme="dark"]) .full-week-strip .discipline-strength {
+  background: #fff0ce !important;
+  border-color: hsl(43 78% 82%);
+}
+html:not([data-theme="dark"]) .full-week-strip .discipline-metcon {
+  background: #fce2d4 !important;
+  border-color: hsl(21 72% 85%);
+}
+html:not([data-theme="dark"]) .full-week-strip .discipline-swim {
+  background: #dff2ec !important;
+  border-color: hsl(165 42% 82%);
+}
+html:not([data-theme="dark"]) .full-week-strip .discipline-rest,
+html:not([data-theme="dark"]) .full-week-strip .discipline-recovery {
+  background: #ece5f6 !important;
+  border-color: hsl(266 44% 86%);
+}
+html:not([data-theme="dark"]) .readiness-panel {
+  background: #edf6f1 !important;
+  border-color: hsl(158 32% 86%);
+}
+html:not([data-theme="dark"]) .coach-card,
+html:not([data-theme="dark"]) .sidebar-coach {
+  background: #ece5f6 !important;
+  border-color: hsl(266 44% 86%);
+}
+/* Sur ces pastels, le texte reste noir. */
+html:not([data-theme="dark"]) .metric .metric-value,
+html:not([data-theme="dark"]) .week-day > strong {
+  color: hsl(28 22% 12%);
+}
+html:not([data-theme="dark"]) .metric .metric-top,
+html:not([data-theme="dark"]) .metric p {
+  color: hsl(28 12% 30%);
+}
+
+/* Échauffement et étirements dans la fiche de séance : mêmes repères
+   visuels que dans le parcours de la séance en cours. */
+.planned-protocol {
+  margin: 10px 0;
+}
+.planned-protocol > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panel-2);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+.planned-protocol > button:hover {
+  border-color: var(--accent);
+}
+.planned-protocol > button > span {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 13px;
+  flex: 1;
+  min-width: 0;
+}
+.planned-protocol > button small {
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--muted);
+}
+.planned-protocol > button > svg:first-child {
+  color: var(--accent);
+  flex-shrink: 0;
+}
