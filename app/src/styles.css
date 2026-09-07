@@ -15971,3 +15971,75 @@ html:not([data-theme="dark"]) .sequence-item.active {
   font-size: 11px;
   color: var(--muted);
 }
+
+
+/* ==========================================================================
+   MODE SOMBRE — FONDS CLAIRS RESTANTS
+   Défaut introduit par la correction précédente : elle avait forcé les
+   textes en clair sans neutraliser les fonds correspondants. Une case
+   restée pâle recevait donc un texte blanc — la pastille de date tombait
+   à 1,01:1, « Votre équipe et ses retours » à 1,37:1. Invisible.
+
+   Ces 56 sélecteurs posent un fond clair en dur sans équivalent sombre.
+   Liste produite par tools/audit-fonds.mjs, qui mesure la luminosité de
+   chaque fond déclaré. Tous reprennent une surface du thème.
+   ========================================================================== */
+[data-theme="dark"] .activity-square.metcon,
+[data-theme="dark"] .anatomy-legend>span:nth-child(2) i,
+[data-theme="dark"] .btn.danger,
+[data-theme="dark"] .bundled-backup-card,
+[data-theme="dark"] .calendar-combo-tags>b,
+[data-theme="dark"] .calendar-event.hiit,
+[data-theme="dark"] .calendar-event.metcon,
+[data-theme="dark"] .calendar-event.missed,
+[data-theme="dark"] .calendar-event.recovery,
+[data-theme="dark"] .coach-card,
+[data-theme="dark"] .coach-card-head strong>span,
+[data-theme="dark"] .cooldown-reminder,
+[data-theme="dark"] .cycle-weeks i,
+[data-theme="dark"] .dashboard-team-link,
+[data-theme="dark"] .day-event-card.discipline-metcon,
+[data-theme="dark"] .full-week-strip .discipline-metcon,
+[data-theme="dark"] .full-week-strip .discipline-recovery,
+[data-theme="dark"] .full-week-strip .discipline-rest,
+[data-theme="dark"] .imported-badges>div:last-child>span,
+[data-theme="dark"] .level-card,
+[data-theme="dark"] .level-seal,
+[data-theme="dark"] .metric.amber,
+[data-theme="dark"] .metric.coral,
+[data-theme="dark"] .metric.mint,
+[data-theme="dark"] .metric.violet,
+[data-theme="dark"] .metric:nth-child(2),
+[data-theme="dark"] .metric:nth-child(3),
+[data-theme="dark"] .original-program-phases>[data-method=intensification],
+[data-theme="dark"] .original-session-advice,
+[data-theme="dark"] .page-nutrition .nutrition-target-card,
+[data-theme="dark"] .page-nutrition .nutrition-tip,
+[data-theme="dark"] .panel,
+[data-theme="dark"] .persistent-warning,
+[data-theme="dark"] .readiness-panel,
+[data-theme="dark"] .restoration-banner,
+[data-theme="dark"] .review-version-history>div,
+[data-theme="dark"] .source-combo-block,
+[data-theme="dark"] .source-completion-note,
+[data-theme="dark"] .source-deload-note,
+[data-theme="dark"] .source-formula-note,
+[data-theme="dark"] .source-load-hint,
+[data-theme="dark"] .source-metcon-panel,
+[data-theme="dark"] .source-prescription,
+[data-theme="dark"] .source-result-block,
+[data-theme="dark"] .team-transparency,
+[data-theme="dark"] .team-week-facts>span,
+[data-theme="dark"] .toast.error,
+[data-theme="dark"] .toast.record,
+[data-theme="dark"] .warning-box,
+[data-theme="dark"] .warning-box.danger,
+[data-theme="dark"] .week-day.discipline-metcon,
+[data-theme="dark"] .week-day.discipline-rest,
+[data-theme="dark"] .week-day.discipline-strength,
+[data-theme="dark"] .week-day.discipline-swim,
+[data-theme="dark"] .week-day>i,
+[data-theme="dark"] .week-deload-note {
+  background: var(--panel-2) !important;
+  border-color: var(--line);
+}
