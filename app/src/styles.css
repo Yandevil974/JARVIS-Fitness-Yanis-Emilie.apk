@@ -11800,7 +11800,7 @@ textarea.input {
   }
 }
 /* Direction validée : graphite / titane, accent bleu limité aux interactions. */
-:root {
+:root:not([data-theme="dark"]) {
   --bg: hsl(calc(var(--h-surface) - 2.3deg), calc(var(--s-surface) * 0.2), 97.7%);
   --sidebar: hsl(calc(var(--h-surface) - 2.7deg), calc(var(--s-surface) * 0.2), 97%);
   --panel: hsl(calc(var(--h-surface) - 2.4deg), calc(var(--s-surface) * 0.2), 96.1%);
@@ -12166,7 +12166,7 @@ textarea.input {
   }
 }
 /* Sapphire 1.0.2: brighter blue surfaces, the same phone/Fold layout. */
-:root {
+:root:not([data-theme="dark"]) {
   --bg: hsl(calc(var(--h-surface) - 5.5deg), calc(var(--s-surface) * 0.3), 96.3%);
   --sidebar: hsl(calc(var(--h-surface) - 4.8deg), calc(var(--s-surface) * 0.3), 94.9%);
   --panel: hsl(calc(var(--h-surface) - 6deg), calc(var(--s-surface) * 0.3), 92.9%);
@@ -12639,7 +12639,7 @@ textarea::placeholder {
   color: var(--muted);
 }
 /* 1.0.3 • A vivid, readable identity per discipline — not a monochrome dashboard. */
-:root {
+:root:not([data-theme="dark"]) {
   --strength: hsl(calc(var(--h-accent) + 3.9deg), calc(var(--s-accent) * 1.2), 42.3%);
   --metcon: hsl(25.3 85% 29.3%);
   --pool: hsl(calc(var(--h-accent) - 30deg), calc(var(--s-accent) * 1), 51.2%);
