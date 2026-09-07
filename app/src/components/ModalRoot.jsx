@@ -37,6 +37,7 @@ import {
   ProtocolModal,
   WarmupModal,
   CooldownModal,
+  ImageModal,
   StretchModal,
 } from "./modals/ProtocolModals.jsx";
 import { newProfile } from "../store/model.js";
@@ -97,6 +98,7 @@ export default function ModalRoot() {
     protocol: <ProtocolModal protocolId={m.protocolId} level={m.level} />,
     warmup: <WarmupModal session={m.session} />,
     cooldown: <CooldownModal session={m.session} />,
+    image: <ImageModal src={m.src} title={m.title} />,
     stretch: <StretchModal exercise={m.exercise} />,
   };
   if (map[m.type]) return map[m.type];

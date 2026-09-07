@@ -250,12 +250,26 @@ export function SourceExtraModal({ event }) {
                     return (
                       <li key={j}>
                         {guide?.img && (
-                          <img
-                            className="pool-step-img"
-                            loading="lazy"
-                            src={assetSrc(guide.img)}
-                            alt={guide.t}
-                          />
+                          <button
+                            type="button"
+                            className="pool-step-thumb"
+                            title="Agrandir"
+                            onClick={() =>
+                              setModal({
+                                type: "image",
+                                src: guide.img,
+                                title: guide.t,
+                              })
+                            }
+                          >
+                            <img
+                              className="pool-step-img"
+                              loading="lazy"
+                              src={assetSrc(guide.img)}
+                              alt={guide.t}
+                            />
+                            <Icon name="Maximize2" size={13} />
+                          </button>
                         )}
                         <strong>{s.name}</strong>
                         <span>{s.seconds} s</span>

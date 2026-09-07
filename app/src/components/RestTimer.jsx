@@ -6,7 +6,9 @@ import {
   skipTimer,
   extendTimer,
 } from "../engine/timer.js";
-import { durationLabel } from "../engine/utils.js";
+import { durationLabel, assetSrc } from "../engine/utils.js";
+import { exerciseById } from "../data/library.js";
+import { demonstrationFor } from "../data/demonstrations.js";
 import { nextAnnouncement, initialMemo } from "../platform/voice-coach.js";
 import { Ring, Icon, Button } from "./ui.jsx";
 export function useNow(interval = 250) {
@@ -66,11 +68,37 @@ export function TimerObserver() {
   return null;
 }
 export default function RestTimer() {
-  const { p, updateProfile } = useApp();
+  const { p, updateProfile, setModal } = useApp();
   const now = useNow();
   const base = p.timer;
   const t = base && base.meta.type === "rest" ? advanceTimer(base, now) : null;
   const remaining = t?.remaining || 0;
+  // Ce qui vient après ce repos. Le chrono n'annonçait que le décompte :
+  // il fallait quitter l'écran pour savoir quel mouvement suivait, et
+  // avec quelle charge.
+  const w = p.workout;
+  const suite = (() => {
+    if (!w) return null;
+    const i = w.exercises.findIndex(
+      (e) => e.sets.filter((s) => s.completed).length < e.targetSets,
+    );
+    if (i < 0) return null;
+    const cible = w.exercises[i];
+    const ex = exerciseById(cible.exerciseId);
+    if (!ex) return null;
+    const faites = cible.sets.filter((s) => s.completed).length;
+    return {
+      nom: cible.sourceName || ex.name,
+      serie: faites + 1,
+      total: cible.targetSets,
+      charge: cible.targetLoad,
+      unite: cible.unit,
+      reps: cible.repScheme || `${cible.repsLow}–${cible.repsHigh}`,
+      // demonstrationFor renvoie « path », non « img » : la mauvaise clé
+      // privait quatre exercices sur neuf de leur illustration.
+      img: ex.gif || demonstrationFor(ex)?.path || ex.img || null,
+    };
+  })();
   return (
     <div className="rest-widget">
       <div className="eyebrow">
@@ -134,6 +162,35 @@ export default function RestTimer() {
             ? "Série suivante prête. À votre rythme."
             : "Le timer se lance après une série validée."}
         </p>
+      )}
+      {/* Ce qui suit, visible pendant la récupération : le mouvement, la
+          série, la charge et l'image du geste. */}
+      {suite && (
+        <div className="rest-next">
+          <span className="eyebrow">ENSUITE</span>
+          <div className="rest-next-body">
+            {suite.img && (
+              <button
+                type="button"
+                className="rest-next-thumb"
+                title="Agrandir"
+                onClick={() =>
+                  setModal({ type: "image", src: suite.img, title: suite.nom })
+                }
+              >
+                <img loading="lazy" src={assetSrc(suite.img)} alt={suite.nom} />
+                <Icon name="Maximize2" size={12} />
+              </button>
+            )}
+            <div>
+              <strong>{suite.nom}</strong>
+              <small>
+                Série {suite.serie} / {suite.total} · {suite.reps}{" "}
+                {suite.charge != null ? `· ${suite.charge} ${suite.unite}` : ""}
+              </small>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

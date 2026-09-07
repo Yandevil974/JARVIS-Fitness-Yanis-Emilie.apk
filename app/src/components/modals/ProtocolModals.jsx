@@ -303,7 +303,7 @@ export function ProtocolModal({ protocolId, level = 0 }) {
   );
 }
 export function WarmupModal({ session }) {
-  const { p, setTimer, updateProfile, notify, closeModal } = useApp();
+  const { p, setTimer, updateProfile, notify, closeModal, setModal } = useApp();
   const s = session || p.workout;
   const steps = warmup(p, s);
   return (
@@ -320,12 +320,22 @@ export function WarmupModal({ session }) {
             {/* Illustration de l'étape : les consignes seules
                 laissaient deviner le geste. */}
             {st.img && (
-              <img
-                className="warmup-step-img"
-                loading="lazy"
-                src={assetSrc(st.img)}
-                alt={st.name}
-              />
+              <button
+                type="button"
+                className="warmup-step-thumb"
+                title="Agrandir"
+                onClick={() =>
+                  setModal({ type: "image", src: st.img, title: st.name })
+                }
+              >
+                <img
+                  className="warmup-step-img"
+                  loading="lazy"
+                  src={assetSrc(st.img)}
+                  alt={st.name}
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
             )}
             <div>
               <h3>{st.name}</h3>
@@ -469,12 +479,22 @@ export function CooldownModal({ session }) {
               {String(i + 1).padStart(2, "0")}
             </span>
             {e.img && (
-              <img
-                className="warmup-step-img"
-                loading="lazy"
-                src={assetSrc(e.img)}
-                alt={e.name}
-              />
+              <button
+                type="button"
+                className="warmup-step-thumb"
+                title="Agrandir"
+                onClick={() =>
+                  setModal({ type: "image", src: e.img, title: e.name })
+                }
+              >
+                <img
+                  className="warmup-step-img"
+                  loading="lazy"
+                  src={assetSrc(e.img)}
+                  alt={e.name}
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
             )}
             <div>
               <h3>{e.name}</h3>
@@ -494,6 +514,28 @@ export function CooldownModal({ session }) {
         </Button>
         <Button icon="Check" onClick={closeModal}>
           Terminé
+        </Button>
+      </div>
+    </Modal>
+  );
+}
+
+/* ==========================================================================
+   VISIONNEUSE D'IMAGE
+   Les vignettes de mouvement — piscine, échauffement, étirements — sont
+   trop petites pour juger d'un geste. Un appui les ouvre en grand.
+   ========================================================================== */
+export function ImageModal({ src, title }) {
+  const { closeModal } = useApp();
+  if (!src) return null;
+  return (
+    <Modal title={title || "Mouvement"} onClose={closeModal} wide>
+      <div className="image-viewer">
+        <img src={assetSrc(src)} alt={title || "Mouvement"} />
+      </div>
+      <div className="modal-actions">
+        <Button icon="X" onClick={closeModal}>
+          Fermer
         </Button>
       </div>
     </Modal>

@@ -15508,3 +15508,466 @@ html:not([data-theme="dark"]) .sequence-item.active {
 [data-theme="dark"] .cooldown-reminder > svg:first-child {
   color: var(--accent);
 }
+
+
+/* ==========================================================================
+   MODE SOMBRE — TEXTES ÉCRITS EN DUR
+   La feuille contient 342 sélecteurs dont la couleur de texte est fixée
+   à une valeur foncée, héritée des versions claires successives. Sur le
+   fond noir, leur contraste tombe entre 1,05:1 et 4,5:1 : illisibles.
+
+   Liste produite par tools/audit-dark.mjs, qui mesure chaque couleur sur
+   le panneau sombre réel. Toutes reprennent la couleur de texte du
+   thème ; les nuances de hiérarchie restent portées par les règles qui
+   utilisent déjà --muted ou --dim.
+   ========================================================================== */
+[data-theme="dark"] .achievement,
+[data-theme="dark"] .achievement p,
+[data-theme="dark"] .achievement.unlocked p,
+[data-theme="dark"] .activity-data>strong>small,
+[data-theme="dark"] .activity-history small,
+[data-theme="dark"] .activity-square.metcon,
+[data-theme="dark"] .activity-square.recovery,
+[data-theme="dark"] .activity-square.swim,
+[data-theme="dark"] .alternative-item small,
+[data-theme="dark"] .anatomy-figures>div>span,
+[data-theme="dark"] .anatomy-legend>span,
+[data-theme="dark"] .archived-reports summary>span,
+[data-theme="dark"] .badge,
+[data-theme="dark"] .balance-bars b,
+[data-theme="dark"] .balance-bars label,
+[data-theme="dark"] .balance-bars label input,
+[data-theme="dark"] .balance-bars small,
+[data-theme="dark"] .big-input>span,
+[data-theme="dark"] .block-number,
+[data-theme="dark"] .bpm-unit,
+[data-theme="dark"] .bpm-value,
+[data-theme="dark"] .brand small,
+[data-theme="dark"] .brand-mark,
+[data-theme="dark"] .btn.danger,
+[data-theme="dark"] .btn.primary,
+[data-theme="dark"] .btn.secondary,
+[data-theme="dark"] .calculation-preview>small,
+[data-theme="dark"] .calculation-preview>span,
+[data-theme="dark"] .calendar-advice p,
+[data-theme="dark"] .calendar-combo-tags>b,
+[data-theme="dark"] .calendar-day.outside .day-number,
+[data-theme="dark"] .calendar-event small,
+[data-theme="dark"] .calendar-event.cardio,
+[data-theme="dark"] .calendar-event.hiit,
+[data-theme="dark"] .calendar-event.metcon,
+[data-theme="dark"] .calendar-event.missed,
+[data-theme="dark"] .calendar-event.recovery,
+[data-theme="dark"] .calendar-event.rest,
+[data-theme="dark"] .calendar-event.swim,
+[data-theme="dark"] .calendar-event>span,
+[data-theme="dark"] .calendar-legend,
+[data-theme="dark"] .calendar-weekdays,
+[data-theme="dark"] .cardio-feature p,
+[data-theme="dark"] .cardio-summary small,
+[data-theme="dark"] .cardio-summary>span,
+[data-theme="dark"] .chart-empty-inner,
+[data-theme="dark"] .chart-empty-inner strong,
+[data-theme="dark"] .chart-empty-inner>span,
+[data-theme="dark"] .chat-chips button,
+[data-theme="dark"] .chat-disclaimer,
+[data-theme="dark"] .chat-rail .eyebrow,
+[data-theme="dark"] .coach-card-head small,
+[data-theme="dark"] .coach-card>p,
+[data-theme="dark"] .consistency-panel .eyebrow,
+[data-theme="dark"] .consistency-panel h3 span,
+[data-theme="dark"] .consistency-panel>p,
+[data-theme="dark"] .cooldown-reminder,
+[data-theme="dark"] .cooldown-reminder small,
+[data-theme="dark"] .cooldown-reminder>svg:first-child,
+[data-theme="dark"] .cycle-weeks>.deload strong,
+[data-theme="dark"] .dashboard-footer,
+[data-theme="dark"] .dashboard-team-link h3,
+[data-theme="dark"] .data-danger h3,
+[data-theme="dark"] .data-danger p,
+[data-theme="dark"] .data-grid p,
+[data-theme="dark"] .data-grid>.panel>small,
+[data-theme="dark"] .data-nav,
+[data-theme="dark"] .date-pill,
+[data-theme="dark"] .date-pill svg,
+[data-theme="dark"] .day-discipline.metcon,
+[data-theme="dark"] .day-discipline.swim,
+[data-theme="dark"] .day-number,
+[data-theme="dark"] .day-number svg,
+[data-theme="dark"] .day-picker>button,
+[data-theme="dark"] .detail-info-grid li,
+[data-theme="dark"] .detail-info-grid p,
+[data-theme="dark"] .detail-info-grid>div>svg,
+[data-theme="dark"] .duration-presets>button,
+[data-theme="dark"] .environment-toggle>button,
+[data-theme="dark"] .equipment-grid>button,
+[data-theme="dark"] .exercise-card-content small,
+[data-theme="dark"] .exercise-card-content>span,
+[data-theme="dark"] .exercise-number,
+[data-theme="dark"] .exercise-phases>div>span,
+[data-theme="dark"] .exercise-row-title>span,
+[data-theme="dark"] .exercise-stage-head .eyebrow,
+[data-theme="dark"] .favorite-button.active>svg,
+[data-theme="dark"] .field,
+[data-theme="dark"] .filter-chips>button,
+[data-theme="dark"] .floating-timer span,
+[data-theme="dark"] .floating-timer>svg:last-child,
+[data-theme="dark"] .food-logs>div>svg,
+[data-theme="dark"] .force-reminder p,
+[data-theme="dark"] .force-reminder-head small,
+[data-theme="dark"] .force-reminder-head svg,
+[data-theme="dark"] .force-result p,
+[data-theme="dark"] .force-result small,
+[data-theme="dark"] .force-result>span,
+[data-theme="dark"] .force-up,
+[data-theme="dark"] .force-values>div>span,
+[data-theme="dark"] .future-connections>div:not(.section-heading),
+[data-theme="dark"] .future-connections>p,
+[data-theme="dark"] .goal-banner p,
+[data-theme="dark"] .goal-banner>strong>small,
+[data-theme="dark"] .goal-banner>strong>span,
+[data-theme="dark"] .goals-list small,
+[data-theme="dark"] .goals-list>.done strong,
+[data-theme="dark"] .heart-max small,
+[data-theme="dark"] .heart-max>span,
+[data-theme="dark"] .heart-zones>div>span,
+[data-theme="dark"] .hero-code,
+[data-theme="dark"] .hero-copy>p,
+[data-theme="dark"] .hero-detail,
+[data-theme="dark"] .hero-facts small,
+[data-theme="dark"] .hero-facts>span,
+[data-theme="dark"] .hero-foot>span:first-child,
+[data-theme="dark"] .hiit-advice p,
+[data-theme="dark"] .history-exercises>div>span,
+[data-theme="dark"] .history-list summary,
+[data-theme="dark"] .icon-button,
+[data-theme="dark"] .identity-card>.small-subtitle,
+[data-theme="dark"] .identity-card>p,
+[data-theme="dark"] .identity-stats>span,
+[data-theme="dark"] .imported-badges b,
+[data-theme="dark"] .info-line,
+[data-theme="dark"] .info-line p,
+[data-theme="dark"] .info-line svg,
+[data-theme="dark"] .insight-banner small,
+[data-theme="dark"] .interval-formats>button,
+[data-theme="dark"] .interval-formats>button small,
+[data-theme="dark"] .interval-formats>button.active small,
+[data-theme="dark"] .interval-ring small,
+[data-theme="dark"] .interval-ring strong>span,
+[data-theme="dark"] .interval-summary>span,
+[data-theme="dark"] .level-card .eyebrow,
+[data-theme="dark"] .level-card p,
+[data-theme="dark"] .level-seal,
+[data-theme="dark"] .level-steps>span,
+[data-theme="dark"] .level-strip>span:last-child,
+[data-theme="dark"] .load-suggestion p,
+[data-theme="dark"] .load-suggestion small,
+[data-theme="dark"] .load-suggestion-value span,
+[data-theme="dark"] .load-suggestion-value strong,
+[data-theme="dark"] .local-model-label,
+[data-theme="dark"] .logged-sets>.table-head,
+[data-theme="dark"] .main-nav>button,
+[data-theme="dark"] .main-nav>button.active,
+[data-theme="dark"] .meal-foods>div,
+[data-theme="dark"] .meal-footer>span,
+[data-theme="dark"] .meal-number,
+[data-theme="dark"] .message-content>p,
+[data-theme="dark"] .message-label>span,
+[data-theme="dark"] .metric p,
+[data-theme="dark"] .metric-top,
+[data-theme="dark"] .metric-top>svg:last-child,
+[data-theme="dark"] .metric.amber .metric-icon,
+[data-theme="dark"] .metric.amber .metric-top,
+[data-theme="dark"] .metric.amber .metric-value,
+[data-theme="dark"] .metric.amber p,
+[data-theme="dark"] .metric.coral .metric-icon,
+[data-theme="dark"] .metric.coral .metric-top,
+[data-theme="dark"] .metric.coral .metric-value,
+[data-theme="dark"] .metric.coral p,
+[data-theme="dark"] .metric.mint .metric-icon,
+[data-theme="dark"] .metric.mint .metric-top,
+[data-theme="dark"] .metric.mint .metric-value,
+[data-theme="dark"] .metric.mint p,
+[data-theme="dark"] .metric.violet .metric-icon,
+[data-theme="dark"] .metric.violet .metric-top,
+[data-theme="dark"] .metric.violet .metric-value,
+[data-theme="dark"] .metric.violet p,
+[data-theme="dark"] .mic-button,
+[data-theme="dark"] .mini-stat>span,
+[data-theme="dark"] .mobile-nav>button,
+[data-theme="dark"] .modal-header p,
+[data-theme="dark"] .modality-grid>button,
+[data-theme="dark"] .module-error,
+[data-theme="dark"] .module-error details,
+[data-theme="dark"] .movement-controls>span,
+[data-theme="dark"] .muscle-detail-groups>div>span,
+[data-theme="dark"] .notification-list small,
+[data-theme="dark"] .nutrition-calculations>p,
+[data-theme="dark"] .nutrition-macros p,
+[data-theme="dark"] .nutrition-macros strong small,
+[data-theme="dark"] .nutrition-macros>.panel>div:first-child,
+[data-theme="dark"] .nutrition-tip p,
+[data-theme="dark"] .nutrition-tip small,
+[data-theme="dark"] .original-session-advice,
+[data-theme="dark"] .page-heading .eyebrow,
+[data-theme="dark"] .page-heading h1,
+[data-theme="dark"] .page-heading p,
+[data-theme="dark"] .page-nutrition .page-heading h1,
+[data-theme="dark"] .page-recovery .page-heading h1,
+[data-theme="dark"] .page-team .page-heading h1,
+[data-theme="dark"] .panel-kicker,
+[data-theme="dark"] .panel-kicker>svg,
+[data-theme="dark"] .persistent-warning,
+[data-theme="dark"] .plan-overview>div:first-child>span:last-child,
+[data-theme="dark"] .plan-overview>div:not(:first-child)>span,
+[data-theme="dark"] .plan-overview>svg,
+[data-theme="dark"] .planned-exercises label,
+[data-theme="dark"] .planned-exercises>div>span,
+[data-theme="dark"] .pool-preferences>p,
+[data-theme="dark"] .progress-total>span,
+[data-theme="dark"] .protocol-card>.small-subtitle,
+[data-theme="dark"] .protocol-card>p,
+[data-theme="dark"] .protocol-step-index,
+[data-theme="dark"] .protocol-steps details,
+[data-theme="dark"] .protocol-steps>div>span,
+[data-theme="dark"] .quick-actions button>span,
+[data-theme="dark"] .quick-actions button>svg:last-child,
+[data-theme="dark"] .quick-actions>button,
+[data-theme="dark"] .range-filter>button,
+[data-theme="dark"] .readiness-panel,
+[data-theme="dark"] .readiness-panel>p,
+[data-theme="dark"] .record-icon,
+[data-theme="dark"] .record-meta>span,
+[data-theme="dark"] .record-value>small,
+[data-theme="dark"] .recovery-input-summary p>span,
+[data-theme="dark"] .recovery-input-summary p>svg,
+[data-theme="dark"] .recovery-input-summary small,
+[data-theme="dark"] .reduce-motion .movement-frame:after,
+[data-theme="dark"] .report-card h2,
+[data-theme="dark"] .report-card h3,
+[data-theme="dark"] .report-card p,
+[data-theme="dark"] .report-card small,
+[data-theme="dark"] .report-card span,
+[data-theme="dark"] .report-card strong,
+[data-theme="dark"] .report-columns h3>svg,
+[data-theme="dark"] .report-columns svg,
+[data-theme="dark"] .report-head svg,
+[data-theme="dark"] .report-metrics small,
+[data-theme="dark"] .report-metrics>div>span,
+[data-theme="dark"] .report-note,
+[data-theme="dark"] .report-recommendations svg,
+[data-theme="dark"] .report-recommendations>div>span,
+[data-theme="dark"] .rest-day,
+[data-theme="dark"] .rest-day-detail>svg,
+[data-theme="dark"] .rest-widget>.eyebrow,
+[data-theme="dark"] .rest-widget>p,
+[data-theme="dark"] .review-version-history summary,
+[data-theme="dark"] .safety-note svg,
+[data-theme="dark"] .save-status,
+[data-theme="dark"] .saved-review-head>div>span,
+[data-theme="dark"] .search-input,
+[data-theme="dark"] .segmented>button,
+[data-theme="dark"] .send-button:hover,
+[data-theme="dark"] .sequence-item,
+[data-theme="dark"] .sequence-item small,
+[data-theme="dark"] .sequence-item>span,
+[data-theme="dark"] .sequence-warmup,
+[data-theme="dark"] .sequence-warmup small,
+[data-theme="dark"] .session-recommendation>small,
+[data-theme="dark"] .set-details summary,
+[data-theme="dark"] .sidebar-coach p,
+[data-theme="dark"] .source-combo-block h3,
+[data-theme="dark"] .source-combo-block li span,
+[data-theme="dark"] .source-combo-block summary,
+[data-theme="dark"] .source-completion-note,
+[data-theme="dark"] .source-deload-note,
+[data-theme="dark"] .source-exercises small,
+[data-theme="dark"] .source-formula-note,
+[data-theme="dark"] .source-load-hint strong,
+[data-theme="dark"] .source-macros .panel>span,
+[data-theme="dark"] .source-metcon-panel h3,
+[data-theme="dark"] .source-metcon-panel>svg,
+[data-theme="dark"] .source-phase-content>p,
+[data-theme="dark"] .source-phase-toggle>span:first-child,
+[data-theme="dark"] .source-phase-toggle>svg,
+[data-theme="dark"] .source-photo-archive>p,
+[data-theme="dark"] .source-photo-archive>summary,
+[data-theme="dark"] .source-prescription p,
+[data-theme="dark"] .source-technique,
+[data-theme="dark"] .storage-banner-card p,
+[data-theme="dark"] .storage-banner-card>svg,
+[data-theme="dark"] .stretch-grid>.panel>small,
+[data-theme="dark"] .subtle-note,
+[data-theme="dark"] .suggestion-grid>button,
+[data-theme="dark"] .suggestion-grid>button>svg:first-child,
+[data-theme="dark"] .suggestion-grid>button>svg:last-child,
+[data-theme="dark"] .system-status,
+[data-theme="dark"] .system-status>span,
+[data-theme="dark"] .tabs>button>span,
+[data-theme="dark"] .team-transparency,
+[data-theme="dark"] .team-transparency svg,
+[data-theme="dark"] .team-week-facts b,
+[data-theme="dark"] .timer-guide,
+[data-theme="dark"] .timer-progress-meta,
+[data-theme="dark"] .timer-stage.work .timer-display,
+[data-theme="dark"] .timer-stage>.text-link,
+[data-theme="dark"] .timer-stage>p,
+[data-theme="dark"] .toast strong,
+[data-theme="dark"] .toast.error,
+[data-theme="dark"] .toast.record .toast-icon,
+[data-theme="dark"] .top-avatar,
+[data-theme="dark"] .topbar-system,
+[data-theme="dark"] .upcoming-date>small,
+[data-theme="dark"] .upcoming-list>button>div:nth-child(2)>small,
+[data-theme="dark"] .upcoming-list>button>svg,
+[data-theme="dark"] .user-avatar,
+[data-theme="dark"] .validate-set:hover,
+[data-theme="dark"] .validate-set>span,
+[data-theme="dark"] .variant-link,
+[data-theme="dark"] .visual-label,
+[data-theme="dark"] .voice-coach-actions button,
+[data-theme="dark"] .voice-coach-actions button:hover,
+[data-theme="dark"] .voice-coach-tempo,
+[data-theme="dark"] .voice-coach-tempo svg,
+[data-theme="dark"] .voice-coach-toggle small,
+[data-theme="dark"] .voice-coach-toggle svg,
+[data-theme="dark"] .voice-coach.on .voice-coach-toggle svg,
+[data-theme="dark"] .warmup-detail p,
+[data-theme="dark"] .warmup-step-number,
+[data-theme="dark"] .warmup-visual p,
+[data-theme="dark"] .warning-box,
+[data-theme="dark"] .warning-box.danger,
+[data-theme="dark"] .wearable-head small,
+[data-theme="dark"] .wearable-intro,
+[data-theme="dark"] .wearable-note,
+[data-theme="dark"] .wearable-rr,
+[data-theme="dark"] .wearable-zones li,
+[data-theme="dark"] .wearable-zones li.active,
+[data-theme="dark"] .week-day,
+[data-theme="dark"] .week-day.discipline-metcon,
+[data-theme="dark"] .week-day.discipline-metcon>strong,
+[data-theme="dark"] .week-day.discipline-rest,
+[data-theme="dark"] .week-day.discipline-rest>strong,
+[data-theme="dark"] .week-day.discipline-strength,
+[data-theme="dark"] .week-day.discipline-strength>strong,
+[data-theme="dark"] .week-day.discipline-swim,
+[data-theme="dark"] .week-day.discipline-swim>strong,
+[data-theme="dark"] .week-day>strong,
+[data-theme="dark"] .week-day>svg,
+[data-theme="dark"] .week-deload-note,
+[data-theme="dark"] .workout-sequence>.eyebrow,
+[data-theme="dark"] .workspace-label,
+[data-theme="dark"] [data-rail=dark] .sidebar .data-nav>button.active,
+[data-theme="dark"] [data-rail=dark] .sidebar .data-nav>button:hover,
+[data-theme="dark"] [data-rail=dark] .sidebar .main-nav>button.active,
+[data-theme="dark"] [data-rail=dark] .sidebar .main-nav>button:hover,
+[data-theme="dark"] button.primary {
+  color: var(--text) !important;
+}
+
+/* ==========================================================================
+   VIGNETTES AGRANDISSABLES ET VISIONNEUSE
+   Les images de mouvement sont trop petites pour juger d'un geste : un
+   appui les ouvre en grand. La pastille d'agrandissement signale que la
+   vignette est cliquable.
+   ========================================================================== */
+.pool-step-thumb,
+.warmup-step-thumb {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  flex-shrink: 0;
+  line-height: 0;
+  border-radius: 8px;
+}
+.pool-step-thumb > svg,
+.warmup-step-thumb > svg {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  padding: 2px;
+  border-radius: 5px;
+  background: hsl(28 22% 12% / 68%);
+  color: #fff;
+}
+.pool-step-thumb:hover,
+.warmup-step-thumb:hover {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.image-viewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: var(--panel-2);
+  border-radius: 12px;
+}
+.image-viewer > img {
+  max-width: 100%;
+  max-height: 68dvh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Ce qui suit la récupération : mouvement, série et charge, avec le
+   geste en image. Le chrono n'affichait qu'un décompte, il fallait
+   quitter l'écran pour savoir quoi faire ensuite. */
+.rest-next {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.rest-next > .eyebrow {
+  font-size: 8px;
+  color: var(--dim);
+  letter-spacing: 1px;
+}
+.rest-next-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  text-align: left;
+}
+.rest-next-thumb {
+  position: relative;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: none;
+  cursor: zoom-in;
+  flex-shrink: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.rest-next-thumb > img {
+  width: 62px;
+  height: 46px;
+  object-fit: cover;
+}
+.rest-next-thumb > svg {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  padding: 1px;
+  border-radius: 4px;
+  background: hsl(28 22% 12% / 68%);
+  color: #fff;
+}
+.rest-next-body > div {
+  min-width: 0;
+}
+.rest-next-body strong {
+  display: block;
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+.rest-next-body small {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  color: var(--muted);
+}
