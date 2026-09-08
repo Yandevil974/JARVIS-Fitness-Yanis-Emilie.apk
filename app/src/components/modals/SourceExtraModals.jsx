@@ -273,6 +273,16 @@ export function SourceExtraModal({ event }) {
                         )}
                         <strong>{s.name}</strong>
                         <span>{s.seconds} s</span>
+                        {/* Consignes du geste. Le guide les portait déjà,
+                            mais l'étape n'affichait que son nom : il
+                            fallait deviner le mouvement. */}
+                        {guide?.h?.length > 0 && (
+                          <ul className="pool-step-tips">
+                            {guide.h.map((h, k) => (
+                              <li key={k}>{h}</li>
+                            ))}
+                          </ul>
+                        )}
                       </li>
                     );
                   })}

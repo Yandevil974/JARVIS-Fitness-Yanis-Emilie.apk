@@ -36,7 +36,11 @@ import { reviewProfile, echeanceSuivi } from "../src/engine/watch.js";
 import { photoComparison } from "../src/engine/team.js";
 import { warmup } from "../src/engine/fitness.js";
 import { namedExercise, prepare } from "../src/engine/conversation.js";
-import { RECOVERY_EXERCISES, exerciseById } from "../src/data/library.js";
+import {
+  RECOVERY_EXERCISES,
+  exerciseById,
+  POOL_GUIDES,
+} from "../src/data/library.js";
 import {
   createTimer,
   advanceTimer,
@@ -51,7 +55,7 @@ import {
   actualMeasurement,
   validDate,
 } from "../src/engine/validation.js";
-import { today, addDays, uid, safeJSON } from "../src/engine/utils.js";
+import { today, addDays, uid, safeJSON, norm } from "../src/engine/utils.js";
 const bench = findExercise("Développé couché barre");
 function performance({
   count = 3,
@@ -852,4 +856,36 @@ test("Émilie reçoit les mêmes fonctions que Yanis", () => {
     // La veille du coach s'exécute sans erreur.
     assert.ok(Array.isArray(reviewProfile(p)), `${id} : veille en échec`);
   }
+});
+
+/* Détail d'une journée METCON ou piscine : chaque étape doit pouvoir
+   afficher son geste et ses consignes. Le guide portait déjà les deux,
+   mais rien ne les reliait à l'étape. */
+test("Les étapes de piscine trouvent leur guide, son image et ses consignes", () => {
+  let avecGuide = 0,
+    avecImage = 0,
+    avecConsignes = 0,
+    total = 0;
+  for (const g of POOL_GUIDES) {
+    total++;
+    if (g.img) avecImage++;
+    if (g.h?.length) avecConsignes++;
+  }
+  assert.ok(total >= 15, "le catalogue de guides doit être fourni");
+  assert.equal(avecImage, total, "chaque guide doit porter une image");
+  assert.equal(avecConsignes, total, "chaque guide doit porter des consignes");
+
+  // La correspondance par mot-clé doit fonctionner sur des noms réels.
+  for (const nom of [
+    "Échauffement — marche aquatique",
+    "Aqua-jogging sur place",
+    "Retour au calme",
+  ]) {
+    const g = POOL_GUIDES.find((x) =>
+      x.k.some((k) => norm(nom).includes(norm(k))),
+    );
+    assert.ok(g, `aucun guide pour « ${nom} »`);
+    avecGuide++;
+  }
+  assert.equal(avecGuide, 3);
 });

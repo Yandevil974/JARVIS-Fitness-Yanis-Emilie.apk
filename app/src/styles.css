@@ -16654,3 +16654,72 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
   background: hsl(168 26% 18%) !important;
   border-color: hsl(168 26% 29%);
 }
+
+/* ==========================================================================
+   ÉTAPES DE CARDIO ET DE PISCINE : VIGNETTE + DESCRIPTIF
+   La vignette était enveloppée dans un bouton d'agrandissement auquel
+   aucune règle de disposition ne s'appliquait : sans largeur propre, le
+   bouton s'effondrait et l'image disparaissait. La ligne devient une
+   rangée souple, où l'image et le texte tiennent côte à côte.
+   ========================================================================== */
+.source-combo-block ol li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.source-combo-block ol li > strong {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+.source-combo-block ol li > span {
+  color: var(--muted);
+  white-space: nowrap;
+}
+.pool-step-thumb {
+  display: block;
+  width: 74px;
+  height: 48px;
+}
+.pool-step-thumb > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+/* Le fond blanc sert les planches détourées ; atténué la nuit. */
+[data-theme="dark"] .pool-step-thumb > img {
+  background: hsl(var(--h-night) 8% 88%);
+}
+@media (max-width: 700px) {
+  .pool-step-thumb {
+    width: 58px;
+    height: 40px;
+  }
+}
+
+/* Consignes d'une étape de piscine ou de cardio. Elles passent sous la
+   ligne, en pleine largeur, pour rester lisibles à côté de la vignette. */
+.pool-step-tips {
+  flex-basis: 100%;
+  margin: 4px 0 2px;
+  padding-left: 16px;
+  list-style: disc;
+}
+.pool-step-tips > li {
+  display: list-item;
+  border: 0;
+  padding: 2px 0;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+@media (max-width: 700px) {
+  .pool-step-tips {
+    font-size: 11px;
+  }
+}
