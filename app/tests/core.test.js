@@ -32,7 +32,8 @@ import {
   initialMemo,
   tempoAnnouncement,
 } from "../src/platform/voice-coach.js";
-import { reviewProfile } from "../src/engine/watch.js";
+import { reviewProfile, echeanceSuivi } from "../src/engine/watch.js";
+import { photoComparison } from "../src/engine/team.js";
 import { warmup } from "../src/engine/fitness.js";
 import { namedExercise, prepare } from "../src/engine/conversation.js";
 import { RECOVERY_EXERCISES, exerciseById } from "../src/data/library.js";
@@ -724,4 +725,54 @@ test("Chaque étape d'échauffement porte une illustration", () => {
     [],
     "toutes les étapes doivent avoir une image",
   );
+});
+
+/* Rappels de suivi : le coach prévient une semaine avant, et l'échéance
+   est calée sur la première date enregistrée pour ne pas dériver. */
+test("L'échéance de suivi part de la première date, pas de la dernière", () => {
+  // Origine au 1er janvier, dernier relevé en retard : l'échéance reste
+  // alignée sur le rythme de quatre semaines depuis l'origine.
+  const e = echeanceSuivi(["2026-01-01", "2026-02-05"], 4, "2026-02-10");
+  assert.equal(e.origine, "2026-01-01");
+  assert.equal(e.prochaine, "2026-02-26", "28 jours × 2 après l'origine");
+});
+test("Un rappel de suivi apparaît une semaine avant l'échéance", () => {
+  const e = echeanceSuivi(["2026-01-01"], 4, "2026-01-25");
+  assert.equal(e.jours, 4);
+  assert.equal(e.bientot, true, "à J-4 le préavis doit être actif");
+  const loin = echeanceSuivi(["2026-01-01"], 4, "2026-01-10");
+  assert.equal(loin.bientot, false, "à J-19 il est trop tôt");
+});
+test("Le coach annonce la réévaluation 1RM avant l'échéance", () => {
+  const p = newProfile("elite");
+  // Forme réelle d'un bilan : un exercice et une estimation, pas des
+  // « entries ». Un test mal formé n'est pas compté comme réalisé.
+  p.forceTests = [
+    {
+      id: "t1",
+      date: addDays(today(), -(8 * 7 - 5)),
+      needsDate: false,
+      exerciseId: "developpe-couche-barre",
+      estimate: 80,
+      declared: true,
+    },
+  ];
+  const f = reviewProfile(p).find((x) => x.key.startsWith("watch-force-avant"));
+  assert.ok(f, "un préavis doit être émis à J-5");
+  assert.match(f.title, /5 jours/);
+});
+test("La lecture des photos ne prétend jamais voir les images", () => {
+  const p = newProfile("elite");
+  assert.equal(photoComparison(p).possible, false);
+  p.photos = [
+    { date: "2026-01-01", view: "face" },
+    { date: "2026-02-01", view: "face" },
+  ];
+  p.measurements = [
+    { date: "2026-01-01", weight: 90 },
+    { date: "2026-02-01", weight: 88 },
+  ];
+  const r = photoComparison(p);
+  assert.equal(r.possible, true);
+  assert.match(r.text, /-2 kg/);
 });

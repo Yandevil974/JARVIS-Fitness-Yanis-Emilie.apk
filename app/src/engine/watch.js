@@ -25,6 +25,41 @@ export const MISSED_STREAK = 3;
 export const LOW_RECOVERY = 55;
 /** Nombre de jours de récupération basse à observer. */
 export const LOW_RECOVERY_DAYS = 3;
+/** Le coach prévient une semaine avant chaque échéance de suivi. */
+export const PREAVIS_JOURS = 7;
+/** Cadence des points photo et mensurations, en semaines. */
+export const SUIVI_SEMAINES = 4;
+
+/**
+ * Échéance d'un suivi périodique, calée sur la PREMIÈRE date enregistrée.
+ * Ancrer sur la dernière ferait dériver le calendrier à chaque retard :
+ * une pesée faite avec trois jours de retard décalerait toutes les
+ * suivantes. En repartant de l'origine, les points restent alignés.
+ *
+ * @returns {{origine, derniere, prochaine, jours, due, bientot}|null}
+ */
+export function echeanceSuivi(dates, semaines = SUIVI_SEMAINES, date = today()) {
+  const propres = (dates || []).filter(Boolean).sort();
+  if (!propres.length) return null;
+  const origine = propres[0];
+  const derniere = propres[propres.length - 1];
+  const pas = semaines * 7;
+  // Première échéance strictement postérieure à aujourd'hui, en partant
+  // de l'origine et en avançant d'un pas constant.
+  let prochaine = origine;
+  let garde = 0;
+  while (daysBetween(prochaine, date) >= 0 && garde++ < 500)
+    prochaine = addDays(prochaine, pas);
+  const jours = daysBetween(date, prochaine);
+  return {
+    origine,
+    derniere,
+    prochaine,
+    jours,
+    due: daysBetween(derniere, prochaine) <= 0 || jours <= 0,
+    bientot: jours > 0 && jours <= PREAVIS_JOURS,
+  };
+}
 
 function daysBetween(a, b) {
   return Math.round((Date.parse(b) - Date.parse(a)) / 86400000);
@@ -123,8 +158,73 @@ export function reviewProfile(p, date = today()) {
     }
   }
 
-  // --- Référentiel de force périmé -------------------------------------
+  // --- Bilan 1RM : prévenir une semaine avant --------------------------
+  // Le rappel n'arrivait qu'une fois l'échéance passée. Prévenu en
+  // avance, on peut caler le test sur une séance légère plutôt que de
+  // l'improviser.
   const force = reevaluationStatus(p);
+  if (!force.due && force.done && force.days != null && force.days <= PREAVIS_JOURS) {
+    out.push({
+      key: `watch-force-avant-${force.next}`,
+      severity: "low",
+      title: `Réévaluation 1RM dans ${force.days} jour${force.days > 1 ? "s" : ""}`,
+      detail: `Votre bilan du ${force.last} arrive à échéance le ${force.next}. Prévoyez le test sur une séance où vous êtes frais : vos charges en dépendent.`,
+      action: { type: "navigate", page: "force" },
+    });
+  }
+
+  // --- Photos de suivi -------------------------------------------------
+  const photos = echeanceSuivi(
+    (p.photos || []).map((x) => x.date),
+    SUIVI_SEMAINES,
+    date,
+  );
+  if (photos && (photos.due || photos.bientot)) {
+    out.push({
+      key: `watch-photos-${photos.prochaine}`,
+      severity: "low",
+      title: photos.due
+        ? "Photos de suivi à refaire"
+        : `Photos de suivi dans ${photos.jours} jour${photos.jours > 1 ? "s" : ""}`,
+      detail: photos.due
+        ? `Vos dernières photos datent du ${photos.derniere}. Reprenez-les dans les mêmes conditions — même lumière, même pose, même moment de la journée — pour que la comparaison ait un sens. L'équipe les analysera.`
+        : `Prochain point photo le ${photos.prochaine}. Pensez aux mêmes conditions que la dernière fois : même lumière, même pose.`,
+      action: { type: "navigate", page: "progress" },
+    });
+  }
+  // Aucune photo datée : le suivi ne peut pas démarrer.
+  if (!photos && (p.photos || []).length) {
+    out.push({
+      key: "watch-photos-sans-date",
+      severity: "low",
+      title: "Vos photos n’ont pas de date",
+      detail:
+        "Elles ont été reprises de votre fichier d’origine sans date. Renseignez-la pour que le coach puisse programmer les points de comparaison.",
+      action: { type: "navigate", page: "progress" },
+    });
+  }
+
+  // --- Mensurations ----------------------------------------------------
+  const mesures = echeanceSuivi(
+    (p.measurements || []).map((x) => x.date),
+    SUIVI_SEMAINES,
+    date,
+  );
+  if (mesures && (mesures.due || mesures.bientot)) {
+    out.push({
+      key: `watch-mesures-${mesures.prochaine}`,
+      severity: "low",
+      title: mesures.due
+        ? "Mensurations à reprendre"
+        : `Mensurations dans ${mesures.jours} jour${mesures.jours > 1 ? "s" : ""}`,
+      detail: mesures.due
+        ? `Vos dernières mensurations datent du ${mesures.derniere}. À jeun et au réveil, comme les précédentes : c'est la régularité des conditions qui rend la mesure exploitable.`
+        : `Prochain relevé le ${mesures.prochaine}. À jeun et au réveil, dans les mêmes conditions que la dernière fois.`,
+      action: { type: "navigate", page: "progress" },
+    });
+  }
+
+  // --- Référentiel de force périmé -------------------------------------
   if (force.due) {
     out.push({
       key: `watch-force-${force.next || "initial"}`,

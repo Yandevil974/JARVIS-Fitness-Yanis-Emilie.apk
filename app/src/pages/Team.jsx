@@ -14,7 +14,12 @@ import {
   Tabs,
   Empty,
 } from "../components/ui.jsx";
-import { teamInsights, teamWeek, teamAdvice } from "../engine/team.js";
+import {
+  teamInsights,
+  teamWeek,
+  teamAdvice,
+  photoComparison,
+} from "../engine/team.js";
 import { sourcePosition } from "../engine/source-schedule.js";
 import { today, dateLabel, assetSrc, uid, num } from "../engine/utils.js";
 import { actualDate, numeric } from "../engine/validation.js";
@@ -61,6 +66,18 @@ export default function Team() {
       />
       {value === "advisors" ? (
         <>
+          {/* Lecture du point photo : l'équipe ne voit pas les images,
+              elle met en regard ce qui est mesurable entre les deux
+              dates. Dire qu'elle « analyse » les photos serait faux. */}
+          <Panel className="team-photo-read">
+            <div>
+              <Icon name="Images" size={20} />
+              <div>
+                <strong>Lecture de vos photos</strong>
+                <p>{photoComparison(p).text}</p>
+              </div>
+            </div>
+          </Panel>
           <div className="team-grid">
             {advisors.map((a, i) => (
               <button

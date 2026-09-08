@@ -16311,3 +16311,25 @@ html:not([data-theme="dark"]) .sequence-item.active {
 [data-theme="dark"] .timer-step-visual > img {
   background: hsl(var(--h-night) 8% 88%);
 }
+
+/* Lecture du point photo, en tête de la page Équipe. */
+.team-photo-read > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.team-photo-read svg {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.team-photo-read strong {
+  display: block;
+  font-size: 13.5px;
+  margin-bottom: 5px;
+}
+.team-photo-read p {
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.65;
+}

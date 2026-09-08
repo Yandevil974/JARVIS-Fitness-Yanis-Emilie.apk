@@ -167,3 +167,54 @@ export function teamInsights(p, date = today()) {
     return { ...r, text };
   });
 }
+
+/* ==========================================================================
+   ANALYSE DU POINT PHOTO
+   L'équipe ne peut pas « voir » les images : elle compare ce qui est
+   mesurable entre les deux dates, poids et mensurations, et le met en
+   regard des photos. Annoncer une lecture visuelle serait mentir.
+   ========================================================================== */
+export function photoComparison(p, date = today()) {
+  const photos = (p.photos || []).filter((x) => x.date).sort((a, b) => a.date.localeCompare(b.date));
+  if (photos.length < 2)
+    return {
+      possible: false,
+      text:
+        photos.length === 1
+          ? "Une seule série de photos est datée : le prochain point permettra la première comparaison."
+          : "Aucune photo datée. Le suivi visuel démarrera dès la première série enregistrée.",
+    };
+  const debut = photos[0].date;
+  const fin = photos[photos.length - 1].date;
+  const mesure = (d) =>
+    [...(p.measurements || [])]
+      .filter((m) => m.date && m.date <= d)
+      .sort((a, b) => b.date.localeCompare(a.date))[0] || null;
+  const a = mesure(debut),
+    b = mesure(fin);
+  const bits = [];
+  if (a?.weight != null && b?.weight != null) {
+    const d = +(b.weight - a.weight).toFixed(1);
+    bits.push(
+      d === 0
+        ? "poids stable"
+        : `${d > 0 ? "+" : ""}${d} kg (${a.weight} → ${b.weight})`,
+    );
+  }
+  if (a?.bodyFat != null && b?.bodyFat != null) {
+    const d = +(b.bodyFat - a.bodyFat).toFixed(1);
+    bits.push(
+      d === 0
+        ? "masse grasse stable"
+        : `masse grasse ${d > 0 ? "+" : ""}${d} point${Math.abs(d) > 1 ? "s" : ""}`,
+    );
+  }
+  return {
+    possible: true,
+    debut,
+    fin,
+    text: bits.length
+      ? `Entre le ${debut} et le ${fin} : ${bits.join(", ")}. Comparez vos photos côte à côte dans Progression : à poids voisin, un changement visible signale une recomposition, ce que la balance seule ne montre pas.`
+      : `Photos du ${debut} et du ${fin} disponibles. Aucune mensuration commune aux deux dates : renseignez poids et tour de taille pour que la comparaison soit chiffrée.`,
+  };
+}
