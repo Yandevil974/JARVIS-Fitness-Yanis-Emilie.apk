@@ -16333,3 +16333,178 @@ html:not([data-theme="dark"]) .sequence-item.active {
   font-size: 12.5px;
   line-height: 1.65;
 }
+
+/* ==========================================================================
+   IDENTITÉ COLORÉE PAR PAGE — MODE CLAIR
+   --------------------------------------------------------------------------
+   Le tableau de bord tirait sa lisibilité de deux principes : chaque
+   carte porte une teinte propre, et deux cartes voisines ne sont jamais
+   identiques. Les autres pages restaient en gris.
+
+   On étend ces principes en donnant à chaque page une couleur de
+   signature, choisie d'après sa discipline plutôt qu'au hasard :
+
+     JARVIS       lavande    la couleur de l'assistant sur l'accueil
+     Bilan 1RM    ambre      la force, comme la carte « dernière pesée »
+     Entraînement pêche      l'effort, chaud
+     Programme    bleu pâle  le calendrier, froid et posé
+     Progression  menthe     la mesure, la courbe qui monte
+     Cardio       turquoise  l'eau
+     Récupération vert d'eau le repos
+     Nutrition    citron     l'aliment
+     Mon équipe   rose       l'humain
+
+   La teinte colore l'en-tête et les repères de la page ; les cartes
+   internes gardent la rotation des quatre pastels, pour que deux blocs
+   voisins restent distincts. Contrastes vérifiés : titres au-dessus de
+   13:1, textes courants au-dessus de 6,3:1.
+   ========================================================================== */
+html:not([data-theme="dark"]) .page-jarvis {
+  --page-teinte: #ece5f6;
+  --page-bord: hsl(266 44% 86%);
+  --page-accent: hsl(266 46% 46%);
+}
+html:not([data-theme="dark"]) .page-force {
+  --page-teinte: #fff0ce;
+  --page-bord: hsl(43 78% 82%);
+  --page-accent: hsl(32 84% 34%);
+}
+html:not([data-theme="dark"]) .page-training {
+  --page-teinte: #ffe8d6;
+  --page-bord: hsl(26 76% 82%);
+  --page-accent: hsl(20 74% 40%);
+}
+html:not([data-theme="dark"]) .page-program {
+  --page-teinte: #e6f0fb;
+  --page-bord: hsl(210 62% 86%);
+  --page-accent: hsl(205 68% 38%);
+}
+html:not([data-theme="dark"]) .page-progress {
+  --page-teinte: #dff2ec;
+  --page-bord: hsl(165 42% 82%);
+  --page-accent: hsl(168 62% 28%);
+}
+html:not([data-theme="dark"]) .page-cardio {
+  --page-teinte: #d9f0f4;
+  --page-bord: hsl(189 52% 80%);
+  --page-accent: hsl(192 70% 30%);
+}
+html:not([data-theme="dark"]) .page-recovery {
+  --page-teinte: #edf6f1;
+  --page-bord: hsl(158 32% 86%);
+  --page-accent: hsl(158 48% 30%);
+}
+html:not([data-theme="dark"]) .page-nutrition {
+  --page-teinte: #f7f3d4;
+  --page-bord: hsl(52 58% 80%);
+  --page-accent: hsl(48 72% 28%);
+}
+html:not([data-theme="dark"]) .page-team {
+  --page-teinte: #fce4ee;
+  --page-bord: hsl(334 62% 88%);
+  --page-accent: hsl(334 60% 40%);
+}
+
+/* --- En-tête de page : bandeau à la couleur de la page -------------- */
+html:not([data-theme="dark"]) .page[class*="page-"] .page-heading {
+  background: var(--page-teinte, transparent);
+  border: 1px solid var(--page-bord, transparent);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+html:not([data-theme="dark"]) .page[class*="page-"] .page-heading .eyebrow {
+  color: var(--page-accent, var(--muted));
+}
+/* Les onglets d'une page prennent son accent, pas l'ambre par défaut. */
+html:not([data-theme="dark"]) .page[class*="page-"] .tabs > button.active {
+  color: var(--page-accent, var(--accent));
+  border-bottom-color: var(--page-accent, var(--accent));
+}
+html:not([data-theme="dark"]) .page[class*="page-"] .section-heading > svg,
+html:not([data-theme="dark"]) .page[class*="page-"] .panel-kicker > svg {
+  color: var(--page-accent, var(--accent));
+}
+
+/* --- Cartes internes : rotation des quatre pastels -------------------
+   Même principe que le tableau de bord : deux blocs voisins ne portent
+   jamais la même couleur, ce qui les sépare sans ajouter de bordure.
+   La rotation s'applique aux familles de cartes répétées de chaque
+   page — protocoles, records, repas, séances, étirements, conseillers. */
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .meal-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .routine-card:nth-child(4n + 1),
+html:not([data-theme="dark"]) .team-advisor:nth-child(4n + 1),
+html:not([data-theme="dark"]) .upcoming-list > button:nth-child(4n + 1),
+html:not([data-theme="dark"]) .stretch-grid > .panel:nth-child(4n + 1),
+html:not([data-theme="dark"]) .force-values > div:nth-child(4n + 1),
+html:not([data-theme="dark"]) .suggestion-grid > button:nth-child(4n + 1) {
+  background: #fff0ce;
+  border-color: hsl(43 78% 82%);
+}
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .meal-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .routine-card:nth-child(4n + 2),
+html:not([data-theme="dark"]) .team-advisor:nth-child(4n + 2),
+html:not([data-theme="dark"]) .upcoming-list > button:nth-child(4n + 2),
+html:not([data-theme="dark"]) .stretch-grid > .panel:nth-child(4n + 2),
+html:not([data-theme="dark"]) .force-values > div:nth-child(4n + 2),
+html:not([data-theme="dark"]) .suggestion-grid > button:nth-child(4n + 2) {
+  background: #ece5f6;
+  border-color: hsl(266 44% 86%);
+}
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .meal-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .routine-card:nth-child(4n + 3),
+html:not([data-theme="dark"]) .team-advisor:nth-child(4n + 3),
+html:not([data-theme="dark"]) .upcoming-list > button:nth-child(4n + 3),
+html:not([data-theme="dark"]) .stretch-grid > .panel:nth-child(4n + 3),
+html:not([data-theme="dark"]) .force-values > div:nth-child(4n + 3),
+html:not([data-theme="dark"]) .suggestion-grid > button:nth-child(4n + 3) {
+  background: #fce2d4;
+  border-color: hsl(21 72% 85%);
+}
+html:not([data-theme="dark"]) .protocol-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .record-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .meal-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .routine-card:nth-child(4n + 4),
+html:not([data-theme="dark"]) .team-advisor:nth-child(4n + 4),
+html:not([data-theme="dark"]) .upcoming-list > button:nth-child(4n + 4),
+html:not([data-theme="dark"]) .stretch-grid > .panel:nth-child(4n + 4),
+html:not([data-theme="dark"]) .force-values > div:nth-child(4n + 4),
+html:not([data-theme="dark"]) .suggestion-grid > button:nth-child(4n + 4) {
+  background: #dff2ec;
+  border-color: hsl(165 42% 82%);
+}
+/* Sur ces fonds, le texte reste franc : titres presque noirs, textes
+   courants assez foncés pour dépasser 6:1. */
+html:not([data-theme="dark"]) .protocol-card,
+html:not([data-theme="dark"]) .record-card,
+html:not([data-theme="dark"]) .meal-card,
+html:not([data-theme="dark"]) .routine-card,
+html:not([data-theme="dark"]) .team-advisor,
+html:not([data-theme="dark"]) .upcoming-list > button,
+html:not([data-theme="dark"]) .stretch-grid > .panel,
+html:not([data-theme="dark"]) .suggestion-grid > button {
+  color: hsl(28 12% 30%);
+}
+html:not([data-theme="dark"]) .protocol-card h3,
+html:not([data-theme="dark"]) .record-card strong,
+html:not([data-theme="dark"]) .meal-card h3,
+html:not([data-theme="dark"]) .routine-card h3,
+html:not([data-theme="dark"]) .team-advisor strong,
+html:not([data-theme="dark"]) .stretch-grid > .panel h3 {
+  color: hsl(28 22% 12%);
+}
+
+/* --- Encarts d'information, à la couleur de leur page --------------- */
+html:not([data-theme="dark"]) .page[class*="page-"] .info-line,
+html:not([data-theme="dark"]) .page[class*="page-"] .safety-note,
+html:not([data-theme="dark"]) .page[class*="page-"] .nutrition-tip,
+html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
+  background: var(--page-teinte, var(--panel-2));
+  border-color: var(--page-bord, var(--line));
+}
