@@ -17,7 +17,7 @@ import {
   norm,
   assetSrc,
 } from "../../engine/utils.js";
-import { POOL_GUIDES } from "../../data/library.js";
+import { stepGuide } from "../../data/library.js";
 import {
   sourceDay,
   sourceExtra,
@@ -241,12 +241,11 @@ export function SourceExtraModal({ event }) {
                     (s) => s.segment === (c.key === "post" ? "post" : c.key),
                   )
                   .map((s, j) => {
-                    // Les étapes de piscine décrivaient le geste sans le
-                    // montrer, alors que les exercices de musculation ont
-                    // leur animation. Le guide correspondant en porte une.
-                    const guide = POOL_GUIDES.find((g) =>
-                      g.k.some((k) => norm(s.name).includes(norm(k))),
-                    );
+                    // Geste de l'étape : bassin ou machine. Le segment
+                    // départage, sinon « Fractionné soutenu » remontait
+                    // le guide de nage homonyme et montrait un nageur
+                    // pour une étape d'elliptique.
+                    const guide = stepGuide(s.name, s.segment);
                     return (
                       <li key={j}>
                         {guide?.img && (

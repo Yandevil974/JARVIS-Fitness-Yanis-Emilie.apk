@@ -40,6 +40,7 @@ import {
   RECOVERY_EXERCISES,
   exerciseById,
   POOL_GUIDES,
+  stepGuide,
 } from "../src/data/library.js";
 import {
   createTimer,
@@ -888,4 +889,36 @@ test("Les étapes de piscine trouvent leur guide, son image et ses consignes", (
     avecGuide++;
   }
   assert.equal(avecGuide, 3);
+});
+
+/* Gestes de cardio sur machine. Le piège : « Fractionné soutenu » existe
+   dans les deux univers, à la nage et à l'elliptique. Sans distinction de
+   segment, une étape d'elliptique affichait un nageur. */
+test("Une étape d'elliptique ne montre jamais un geste de nage", () => {
+  const cas = [
+    "Échauffement elliptique",
+    "Fractionné soutenu 3",
+    "Récupération active",
+    "Retour au calme elliptique",
+  ];
+  for (const nom of cas) {
+    const g = stepGuide(nom, "cardio");
+    assert.ok(g, `aucun guide pour « ${nom} »`);
+    assert.ok(g.img, `« ${nom} » sans illustration`);
+    assert.ok(
+      !/nager|aquatique|bassin|piscine/i.test(g.t),
+      `« ${nom} » renvoie un geste de nage : ${g.t}`,
+    );
+  }
+});
+test("Le guide le plus précis l'emporte sur le plus général", () => {
+  // « elliptique » seul ne doit pas capturer l'étape de retour au calme.
+  assert.match(stepGuide("Retour au calme elliptique", "cardio").t, /retour au calme/i);
+  assert.match(stepGuide("Échauffement elliptique", "cardio").t, /mise en route/i);
+});
+test("Les étapes de bassin gardent leurs gestes aquatiques", () => {
+  for (const nom of ["Aqua-jogging sur place", "Échauffement — marche aquatique"]) {
+    const g = stepGuide(nom, "pool");
+    assert.ok(g?.img, `« ${nom} » sans illustration`);
+  }
 });

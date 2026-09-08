@@ -485,6 +485,102 @@ export const POOL_GUIDES = legacy.emilie.POOL_GUIDES.map((g) => ({
   img: g.img || POOL_IMAGES[g.t] || null,
   h: g.h.map(textOnly),
 }));
+
+/* ==========================================================================
+   GESTES DE CARDIO SUR MACHINE
+   Les guides ci-dessus décrivent la piscine. Les étapes d'elliptique
+   n'avaient donc aucune illustration — pire, « Fractionné soutenu »
+   tombait sur le guide de nage du même nom et affichait un nageur.
+
+   Ces guides-ci sont consultés en premier pour toute étape hors bassin,
+   ce qui écarte la confusion à la racine.
+   ========================================================================== */
+export const CARDIO_GUIDES = [
+  {
+    k: ["echauffement elliptique", "elliptique"],
+    t: "Elliptique — mise en route",
+    img: "/media/cardio-elliptique.jpg",
+    h: [
+      "Buste droit, épaules basses, regard devant.",
+      "Pieds à plat sur les pédales, appui réparti sur tout le pied.",
+      "Poussez et tirez les bras : le haut du corps travaille aussi.",
+      "Allure facile : vous devez pouvoir tenir une conversation.",
+    ],
+  },
+  {
+    k: ["fractionne soutenu", "fractionne"],
+    t: "Elliptique — fractionné",
+    img: "/media/cardio-elliptique.jpg",
+    h: [
+      "Augmentez la cadence sans casser la posture.",
+      "Poussez fort sur les jambes, tirez franchement sur les bras.",
+      "Respiration ample : inspirez par le nez, soufflez par la bouche.",
+      "L'effort doit être difficile mais maîtrisé jusqu'à la fin.",
+    ],
+  },
+  {
+    k: ["recuperation active", "recup active"],
+    t: "Elliptique — récupération active",
+    img: "/media/cardio-recup-active.jpg",
+    h: [
+      "Ralentissez franchement, laissez le rythme cardiaque redescendre.",
+      "Relâchez les épaules et les bras, restez en mouvement.",
+      "Ne vous arrêtez pas net : la reprise en serait plus dure.",
+      "Profitez-en pour boire une gorgée.",
+    ],
+  },
+  {
+    k: ["retour au calme elliptique"],
+    t: "Elliptique — retour au calme",
+    img: "/media/cardio-recup-active.jpg",
+    h: [
+      "Allure très facile, mouvement fluide.",
+      "Diminuez progressivement jusqu'à l'arrêt.",
+      "Respirez profondément, relâchez tout le haut du corps.",
+      "Hydratez-vous : la récupération commence maintenant.",
+    ],
+  },
+  {
+    k: ["transition"],
+    t: "Transition",
+    img: "/media/cardio-transition.jpg",
+    h: [
+      "Buvez quelques gorgées, sans excès.",
+      "Séchez-vous et rejoignez le bassin sans traîner.",
+      "Gardez les muscles chauds : ne restez pas immobile trop longtemps.",
+    ],
+  },
+];
+
+/**
+ * Guide d'une étape de protocole. Les étapes hors bassin sont cherchées
+ * d'abord parmi les gestes de machine : sans cela « Fractionné soutenu »
+ * remontait le guide de nage homonyme.
+ *
+ * @param name    intitulé de l'étape
+ * @param segment "pool" pour le bassin, autre chose sinon
+ */
+export function stepGuide(name, segment) {
+  const cle = norm(name || "");
+  // On retient la correspondance la plus longue : « elliptique » seul
+  // capturait « retour au calme elliptique » avant l'entrée dédiée.
+  const cherche = (liste) => {
+    let trouve = null,
+      score = 0;
+    for (const g of liste)
+      for (const k of g.k) {
+        const n = norm(k);
+        if (cle.includes(n) && n.length > score) {
+          trouve = g;
+          score = n.length;
+        }
+      }
+    return trouve;
+  };
+  if (segment && segment !== "pool")
+    return cherche(CARDIO_GUIDES) || cherche(POOL_GUIDES);
+  return cherche(POOL_GUIDES) || cherche(CARDIO_GUIDES);
+}
 export const FOOD = legacy.elite.ALIMENTS;
 export const MEASURES = [
   ...new Map(
