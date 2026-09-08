@@ -16235,3 +16235,40 @@ html:not([data-theme="dark"]) .sequence-item.active {
 [data-theme="dark"] .modal-backdrop {
   background: hsl(var(--h-night) 10% 4% / 72%);
 }
+
+/* ==========================================================================
+   MENU DE PROFIL DE LA BARRE DU HAUT
+   Il partage la classe .profile-options avec le sélecteur de la barre
+   latérale, qui s'ouvre vers le HAUT (bottom: 73px). Déclarée plus loin
+   dans la feuille, cette règle l'emportait et tirait le menu au-dessus
+   de la barre, hors de l'écran : il fallait faire défiler pour le voir.
+
+   On rétablit ici un ancrage sous l'avatar, et on borne sa hauteur pour
+   qu'il reste dans la fenêtre même sur un écran court.
+   ========================================================================== */
+.top-profile-menu.profile-options {
+  position: absolute;
+  top: calc(100% + 10px);
+  bottom: auto;
+  left: auto;
+  right: 0;
+  width: max-content;
+  min-width: 232px;
+  /* Jamais plus haut que l'espace restant sous la barre. */
+  max-height: calc(100dvh - 88px);
+  overflow-y: auto;
+  z-index: 41;
+}
+/* Écran étroit : le menu se cale sur le bord droit de la fenêtre plutôt
+   que sur l'avatar, sinon il déborde à droite. */
+@media (max-width: 599px) {
+  .top-profile-menu.profile-options {
+    position: fixed;
+    top: 62px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    min-width: 0;
+    max-height: calc(100dvh - 76px);
+  }
+}
