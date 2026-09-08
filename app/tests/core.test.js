@@ -810,3 +810,46 @@ test("Les propositions en attente sont dénombrées avant effacement", () => {
   const enAttente = messages.filter((x) => x.action && !x.applied).length;
   assert.equal(enAttente, 1, "seule la proposition non appliquée compte");
 });
+
+/* Parité entre les deux profils. Tout a été mis au point sur les données
+   de Yanis : ce test garantit qu'Émilie reçoit les mêmes fonctions, et
+   qu'aucune évolution future ne la laisse de côté. */
+test("Émilie reçoit les mêmes fonctions que Yanis", () => {
+  for (const id of ["elite", "emilie"]) {
+    const p = newProfile(id);
+    const s = (p.plan?.sessions || []).find((x) => x.type === "strength");
+    assert.ok(s, `${id} : aucune séance de musculation au programme`);
+
+    // Échauffement guidé : des étapes, toutes illustrées.
+    const etapes = warmup(p, s);
+    assert.ok(etapes.length >= 4, `${id} : échauffement trop court`);
+    assert.deepEqual(
+      etapes.filter((e) => !e.img).map((e) => e.name),
+      [],
+      `${id} : étape d'échauffement sans image`,
+    );
+
+    // Étirements ciblés sur les muscles réellement travaillés.
+    const muscles = new Set();
+    for (const t of s.exercises) {
+      const ex = exerciseById(t.exerciseId);
+      if (!ex) continue;
+      muscles.add(ex.muscle);
+      for (const m of ex.secondary || []) muscles.add(m);
+    }
+    const cibles = RECOVERY_EXERCISES.filter(
+      (e) => e.pattern === "stretch" && muscles.has(e.muscle),
+    );
+    assert.ok(cibles.length > 0, `${id} : aucun étirement ciblé`);
+
+    // JARVIS comprend une question de charge.
+    const r = interpretCommand(p, "je mets combien au squat");
+    assert.ok(
+      !/pas saisi votre demande/.test(r.text),
+      `${id} : JARVIS ne comprend pas la question de charge`,
+    );
+
+    // La veille du coach s'exécute sans erreur.
+    assert.ok(Array.isArray(reviewProfile(p)), `${id} : veille en échec`);
+  }
+});
