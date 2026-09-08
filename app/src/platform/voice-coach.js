@@ -49,11 +49,19 @@ export function nextAnnouncement(timer, memo = initialMemo()) {
     if (next.done) return { text: null, memo: next };
     next.done = true;
     const type = timer.meta?.type;
+    // L'annonce finale doit correspondre au protocole : dire « séance
+    // terminée » à la fin d'un échauffement laissait croire que tout
+    // était fini.
+    const nom = timer.meta?.name || "";
     return {
       text:
         type === "rest"
           ? "Récupération terminée. On reprend."
-          : "Séance terminée. Bravo.",
+          : /tirements/i.test(nom)
+            ? "Étirements terminés. Bonne récupération."
+            : type === "warmup"
+              ? "Échauffement terminé. Vous pouvez commencer."
+              : "Séance terminée. Bravo.",
       memo: next,
     };
   }

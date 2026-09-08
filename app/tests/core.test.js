@@ -33,6 +33,7 @@ import {
   tempoAnnouncement,
 } from "../src/platform/voice-coach.js";
 import { reviewProfile } from "../src/engine/watch.js";
+import { warmup } from "../src/engine/fitness.js";
 import { namedExercise, prepare } from "../src/engine/conversation.js";
 import { RECOVERY_EXERCISES, exerciseById } from "../src/data/library.js";
 import {
@@ -694,4 +695,33 @@ test("Les formulations orales de charge sont comprises", () => {
       `« ${phrase} » ne doit pas tomber dans le repli`,
     );
   }
+});
+
+/* Échauffement et étirements guidés : le minuteur les enchaîne et le
+   coach vocal annonce chaque changement. L'annonce finale doit nommer le
+   bon protocole. */
+test("L'annonce finale distingue échauffement, étirements et séance", () => {
+  const cas = [
+    [{ type: "warmup", name: "Échauffement guidé" }, /Échauffement terminé/],
+    [{ type: "warmup", name: "Étirements guidés" }, /Étirements terminés/],
+    [{ type: "rest" }, /Récupération terminée/],
+  ];
+  for (const [meta, attendu] of cas) {
+    const r = nextAnnouncement(
+      { done: true, meta, steps: [], index: 0 },
+      initialMemo(),
+    );
+    assert.match(r.text, attendu, JSON.stringify(meta));
+  }
+});
+test("Chaque étape d'échauffement porte une illustration", () => {
+  const p = newProfile("elite");
+  const s = p.plan.sessions.find((x) => x.type === "strength");
+  const etapes = warmup(p, s);
+  assert.ok(etapes.length >= 4, "l'échauffement doit avoir des étapes");
+  assert.deepEqual(
+    etapes.filter((e) => !e.img).map((e) => e.name),
+    [],
+    "toutes les étapes doivent avoir une image",
+  );
 });

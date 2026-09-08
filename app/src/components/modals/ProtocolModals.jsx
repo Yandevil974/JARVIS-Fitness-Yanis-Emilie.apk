@@ -46,11 +46,19 @@ export function TimerModal() {
       return;
     }
     if (t.meta.type === "warmup") {
+      // Les étirements empruntent le même minuteur : ils ne valident pas
+      // l'échauffement de la séance et méritent leur propre message.
+      const etirements = /tirements/i.test(t.meta.name || "");
       updateProfile((q) => {
-        if (q.workout?.id === t.meta.workoutId) q.workout.warmupDone = true;
+        if (!etirements && q.workout?.id === t.meta.workoutId)
+          q.workout.warmupDone = true;
         q.timer = null;
       });
-      notify("Échauffement validé. Commencez avec une charge maîtrisée.");
+      notify(
+        etirements
+          ? "Étirements terminés. Bonne récupération."
+          : "Échauffement validé. Commencez avec une charge maîtrisée.",
+      );
       closeModal();
       return;
     }
@@ -87,14 +95,31 @@ export function TimerModal() {
         <div className="timer-display">
           {durationLabel(t.done ? 0 : t.remaining)}
         </div>
-        {!t.done && (
-          <Movement
-            movementName={step.name}
-            pattern={step.pattern || "breathe"}
-            small
-            controls={false}
-          />
-        )}
+        {/* Image du geste en cours, en grand. Elle change à chaque étape
+            du minuteur : on voit ce qu'il faut faire sans quitter le
+            chrono des yeux. À défaut d'image propre à l'étape, on
+            retombe sur l'animation de schéma. */}
+        {!t.done &&
+          (step.img ? (
+            <button
+              type="button"
+              className="timer-step-visual"
+              title="Agrandir"
+              onClick={() =>
+                setModal({ type: "image", src: step.img, title: step.name })
+              }
+            >
+              <img src={assetSrc(step.img)} alt={step.name} />
+              <Icon name="Maximize2" size={15} />
+            </button>
+          ) : (
+            <Movement
+              movementName={step.name}
+              pattern={step.pattern || "breathe"}
+              small
+              controls={false}
+            />
+          ))}
         <p>
           {step.instruction ||
             (t.done
@@ -361,6 +386,30 @@ export function WarmupModal({ session }) {
         </div>
       </div>
       <div className="modal-actions">
+        {/* Échauffement guidé : le minuteur enchaîne les étapes et le
+            coach vocal les annonce, comme pendant la séance. Sans ce
+            bouton, la liste restait purement descriptive. */}
+        <Button
+          icon="Play"
+          onClick={() => {
+            setTimer(
+              steps.map((st) => ({
+                name: st.name,
+                seconds: st.seconds,
+                instruction: st.instruction,
+                img: st.img,
+                pattern: st.pattern,
+              })),
+              {
+                type: "warmup",
+                name: "Échauffement guidé",
+                workoutId: p.workout?.id,
+              },
+            );
+          }}
+        >
+          Lancer l’échauffement guidé
+        </Button>
         <Button
           variant="secondary"
           icon="Check"
@@ -450,7 +499,7 @@ export function StretchModal({ exercise }) {
    réellement travaillés, plutôt que d'afficher les vingt-neuf.
    ========================================================================== */
 export function CooldownModal({ session }) {
-  const { p, closeModal, setModal } = useApp();
+  const { p, closeModal, setModal, setTimer } = useApp();
   const s = session || p.workout;
   // Muscles sollicités par la séance, principaux et secondaires.
   const muscles = new Set();
@@ -505,6 +554,26 @@ export function CooldownModal({ session }) {
         ))}
       </div>
       <div className="modal-actions">
+        {/* Étirements guidés : même minuteur et mêmes annonces vocales
+            que l'échauffement. Chaque étirement dure le temps prévu par
+            sa fiche, et l'image change au passage au suivant. */}
+        <Button
+          icon="Play"
+          onClick={() => {
+            setTimer(
+              liste.map((e) => ({
+                name: e.name,
+                seconds: e.seconds || 30,
+                instruction: e.instruction,
+                img: e.img,
+                pattern: "stretch",
+              })),
+              { type: "warmup", name: "Étirements guidés" },
+            );
+          }}
+        >
+          Lancer les étirements guidés
+        </Button>
         <Button
           variant="secondary"
           icon="BookOpen"

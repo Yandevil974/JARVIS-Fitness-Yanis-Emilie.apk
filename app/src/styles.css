@@ -16272,3 +16272,42 @@ html:not([data-theme="dark"]) .sequence-item.active {
     max-height: calc(100dvh - 76px);
   }
 }
+
+/* ==========================================================================
+   IMAGE DE L'ÉTAPE EN COURS, DANS LE MINUTEUR
+   Grande, pour être lue de loin pendant l'effort, et remplacée à chaque
+   changement d'étape. Un appui l'ouvre en pleine page.
+   ========================================================================== */
+.timer-step-visual {
+  position: relative;
+  display: block;
+  width: min(100%, 420px);
+  margin: 4px auto 2px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel-2);
+  cursor: zoom-in;
+  overflow: hidden;
+  line-height: 0;
+}
+.timer-step-visual > img {
+  width: 100%;
+  height: clamp(170px, 30dvh, 260px);
+  object-fit: contain;
+  background: #fff;
+}
+.timer-step-visual > svg {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 3px;
+  border-radius: 6px;
+  background: hsl(28 22% 12% / 68%);
+  color: #fff;
+}
+/* Le fond blanc sert les planches anatomiques, détourées sur blanc.
+   En mode sombre on l'atténue pour ne pas éblouir. */
+[data-theme="dark"] .timer-step-visual > img {
+  background: hsl(var(--h-night) 8% 88%);
+}
