@@ -16508,3 +16508,149 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
   background: var(--page-teinte, var(--panel-2));
   border-color: var(--page-bord, var(--line));
 }
+
+
+/* ==========================================================================
+   IDENTITÉ COLORÉE PAR PAGE — MODE SOMBRE
+   --------------------------------------------------------------------------
+   Transposition des teintes du mode clair. Sur fond noir, un pastel
+   devient laiteux et illisible : chaque couleur est donc reprise en
+   version profonde, à la clarté maximale que le contraste autorise.
+
+   Les teintes ont été écartées sur la roue chromatique — vingt degrés
+   au minimum entre deux pages — car trois d'entre elles tiraient au vert
+   et se confondaient : progression, cardio et récupération.
+
+   Mesuré sur le fond réel : texte principal de 8,5 à 10,1:1, texte
+   discret de 5,0 à 5,9:1, seuil requis 4,5:1. Chaque teinte se détache
+   du fond d'au moins 1,74.
+   ========================================================================== */
+/* JARVIS */
+[data-theme="dark"] .page-jarvis {
+  --page-teinte: hsl(272 26% 28%);
+  --page-bord: hsl(272 26% 40%);
+  --page-accent: hsl(272 72% 68%);
+}
+/* Bilan 1RM */
+[data-theme="dark"] .page-force {
+  --page-teinte: hsl(40 34% 24.5%);
+  --page-bord: hsl(40 34% 36.5%);
+  --page-accent: hsl(40 72% 68%);
+}
+/* Entraînement */
+[data-theme="dark"] .page-training {
+  --page-teinte: hsl(20 34% 28%);
+  --page-bord: hsl(20 34% 40%);
+  --page-accent: hsl(20 72% 68%);
+}
+/* Programme */
+[data-theme="dark"] .page-program {
+  --page-teinte: hsl(212 26% 28%);
+  --page-bord: hsl(212 26% 40%);
+  --page-accent: hsl(212 72% 68%);
+}
+/* Progression */
+[data-theme="dark"] .page-progress {
+  --page-teinte: hsl(168 34% 23%);
+  --page-bord: hsl(168 34% 35%);
+  --page-accent: hsl(168 72% 68%);
+}
+/* Cardio & piscine */
+[data-theme="dark"] .page-cardio {
+  --page-teinte: hsl(192 34% 25%);
+  --page-bord: hsl(192 34% 37%);
+  --page-accent: hsl(192 72% 68%);
+}
+/* Récupération */
+[data-theme="dark"] .page-recovery {
+  --page-teinte: hsl(140 26% 24.5%);
+  --page-bord: hsl(140 26% 36.5%);
+  --page-accent: hsl(140 72% 68%);
+}
+/* Nutrition */
+[data-theme="dark"] .page-nutrition {
+  --page-teinte: hsl(68 30% 22.5%);
+  --page-bord: hsl(68 30% 34.5%);
+  --page-accent: hsl(68 72% 68%);
+}
+/* Mon équipe */
+[data-theme="dark"] .page-team {
+  --page-teinte: hsl(334 26% 28%);
+  --page-bord: hsl(334 26% 40%);
+  --page-accent: hsl(334 72% 68%);
+}
+
+/* En-tête, onglets et repères prennent la couleur de la page. */
+[data-theme="dark"] .page[class*="page-"] .page-heading {
+  background: var(--page-teinte, transparent);
+  border: 1px solid var(--page-bord, transparent);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+[data-theme="dark"] .page[class*="page-"] .page-heading .eyebrow {
+  color: var(--page-accent, var(--muted)) !important;
+}
+[data-theme="dark"] .page[class*="page-"] .tabs > button.active {
+  color: var(--page-accent, var(--accent)) !important;
+  border-bottom-color: var(--page-accent, var(--accent));
+}
+[data-theme="dark"] .page[class*="page-"] .section-heading > svg,
+[data-theme="dark"] .page[class*="page-"] .panel-kicker > svg {
+  color: var(--page-accent, var(--accent)) !important;
+}
+[data-theme="dark"] .page[class*="page-"] .info-line,
+[data-theme="dark"] .page[class*="page-"] .safety-note,
+[data-theme="dark"] .page[class*="page-"] .nutrition-tip,
+[data-theme="dark"] .page[class*="page-"] .source-banner {
+  background: var(--page-teinte, var(--panel-2)) !important;
+  border-color: var(--page-bord, var(--line));
+}
+
+/* --- Cartes internes : rotation de quatre teintes profondes ----------
+   Même principe qu'en clair : deux blocs voisins ne portent jamais la
+   même couleur. Versions sombres des quatre pastels du tableau de bord. */
+[data-theme="dark"] .protocol-card:nth-child(4n + 1),
+[data-theme="dark"] .record-card:nth-child(4n + 1),
+[data-theme="dark"] .meal-card:nth-child(4n + 1),
+[data-theme="dark"] .routine-card:nth-child(4n + 1),
+[data-theme="dark"] .team-advisor:nth-child(4n + 1),
+[data-theme="dark"] .upcoming-list > button:nth-child(4n + 1),
+[data-theme="dark"] .stretch-grid > .panel:nth-child(4n + 1),
+[data-theme="dark"] .suggestion-grid > button:nth-child(4n + 1) {
+  background: hsl(40 26% 19%) !important;
+  border-color: hsl(40 26% 30%);
+}
+[data-theme="dark"] .protocol-card:nth-child(4n + 2),
+[data-theme="dark"] .record-card:nth-child(4n + 2),
+[data-theme="dark"] .meal-card:nth-child(4n + 2),
+[data-theme="dark"] .routine-card:nth-child(4n + 2),
+[data-theme="dark"] .team-advisor:nth-child(4n + 2),
+[data-theme="dark"] .upcoming-list > button:nth-child(4n + 2),
+[data-theme="dark"] .stretch-grid > .panel:nth-child(4n + 2),
+[data-theme="dark"] .suggestion-grid > button:nth-child(4n + 2) {
+  background: hsl(272 24% 21%) !important;
+  border-color: hsl(272 24% 32%);
+}
+[data-theme="dark"] .protocol-card:nth-child(4n + 3),
+[data-theme="dark"] .record-card:nth-child(4n + 3),
+[data-theme="dark"] .meal-card:nth-child(4n + 3),
+[data-theme="dark"] .routine-card:nth-child(4n + 3),
+[data-theme="dark"] .team-advisor:nth-child(4n + 3),
+[data-theme="dark"] .upcoming-list > button:nth-child(4n + 3),
+[data-theme="dark"] .stretch-grid > .panel:nth-child(4n + 3),
+[data-theme="dark"] .suggestion-grid > button:nth-child(4n + 3) {
+  background: hsl(20 28% 20%) !important;
+  border-color: hsl(20 28% 31%);
+}
+[data-theme="dark"] .protocol-card:nth-child(4n + 4),
+[data-theme="dark"] .record-card:nth-child(4n + 4),
+[data-theme="dark"] .meal-card:nth-child(4n + 4),
+[data-theme="dark"] .routine-card:nth-child(4n + 4),
+[data-theme="dark"] .team-advisor:nth-child(4n + 4),
+[data-theme="dark"] .upcoming-list > button:nth-child(4n + 4),
+[data-theme="dark"] .stretch-grid > .panel:nth-child(4n + 4),
+[data-theme="dark"] .suggestion-grid > button:nth-child(4n + 4) {
+  background: hsl(168 26% 18%) !important;
+  border-color: hsl(168 26% 29%);
+}
