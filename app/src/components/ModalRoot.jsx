@@ -149,6 +149,33 @@ export default function ModalRoot() {
         )}
       </Modal>
     );
+  if (m.type === "clear-chat") {
+    /* Une proposition non appliquée vit dans la conversation : l'effacer
+       l'annule. On le dit avant, plutôt que de le découvrir après. */
+    const enAttente = (p.messages || []).filter(
+      (x) => x.action && !x.applied,
+    ).length;
+    return (
+      <Confirm
+        title="Effacer la conversation ?"
+        description={
+          (enAttente
+            ? `${enAttente} proposition${enAttente > 1 ? "s" : ""} du coach ${enAttente > 1 ? "sont" : "est"} en attente : l'effacement ${enAttente > 1 ? "les" : "l'"}annule. `
+            : "") +
+          "Vos séances, mesures et réglages ne sont pas touchés : seuls les messages échangés disparaissent."
+        }
+        label="Effacer"
+        onClose={closeModal}
+        onConfirm={() => {
+          updateProfile((q) => {
+            q.messages = [];
+          });
+          closeModal();
+          notify("Conversation effacée.");
+        }}
+      />
+    );
+  }
   if (m.type === "unlock-storage")
     return (
       <Confirm

@@ -21,6 +21,7 @@ export default function Jarvis() {
     openExercise,
     updateProfile,
     notify,
+    setModal,
   } = useApp();
   const [input, setInput] = useState(""),
     [listening, setListening] = useState(false);
@@ -141,6 +142,19 @@ export default function Jarvis() {
             >
               <Icon name={p.preferences.voice ? "Volume2" : "VolumeX"} />
             </button>
+            {/* Effacer la conversation. Les propositions du coach vivent
+                dans cette liste : en effacer une non appliquée l'annule.
+                On prévient plutôt que de le faire en silence. */}
+            {p.messages.length > 0 && (
+              <button
+                className="icon-button"
+                aria-label="Effacer la conversation"
+                title="Effacer la conversation"
+                onClick={() => setModal({ type: "clear-chat" })}
+              >
+                <Icon name="Trash2" />
+              </button>
+            )}
           </div>
           <div className="chat-messages">
             {!p.messages.length && (

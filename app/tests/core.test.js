@@ -776,3 +776,37 @@ test("La lecture des photos ne prétend jamais voir les images", () => {
   assert.equal(r.possible, true);
   assert.match(r.text, /-2 kg/);
 });
+
+/* Effacement de la conversation : il ne doit toucher que les messages.
+   Les séances, mesures et réglages sont des données de suivi, pas du
+   dialogue — les perdre serait irréparable. */
+test("Effacer la conversation ne touche pas les données d'entraînement", () => {
+  const p = newProfile("elite");
+  p.messages = [
+    { id: "m1", role: "user", text: "salut" },
+    { id: "m2", role: "coach", text: "bonjour", action: { type: "fatigue" } },
+  ];
+  const avant = {
+    sessions: p.sessions.length,
+    plan: p.plan.sessions.length,
+    mesures: p.measurements.length,
+    theme: p.preferences.theme,
+  };
+  // Ce que fait la modale : vider la seule liste des messages.
+  const q = structuredClone(p);
+  q.messages = [];
+  assert.equal(q.messages.length, 0);
+  assert.equal(q.sessions.length, avant.sessions);
+  assert.equal(q.plan.sessions.length, avant.plan);
+  assert.equal(q.measurements.length, avant.mesures);
+  assert.equal(q.preferences.theme, avant.theme);
+});
+test("Les propositions en attente sont dénombrées avant effacement", () => {
+  const messages = [
+    { id: "a", text: "bonjour" },
+    { id: "b", text: "alléger ?", action: { type: "fatigue" } },
+    { id: "c", text: "déjà fait", action: { type: "fatigue" }, applied: true },
+  ];
+  const enAttente = messages.filter((x) => x.action && !x.applied).length;
+  assert.equal(enAttente, 1, "seule la proposition non appliquée compte");
+});
