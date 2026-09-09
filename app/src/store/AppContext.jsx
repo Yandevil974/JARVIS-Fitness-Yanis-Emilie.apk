@@ -427,6 +427,16 @@ export function AppProvider({ children }) {
       if (!discard) {
         w.status = full ? "completed" : "partial";
         w.finishedAt = Date.now();
+        /* La séance était datée de son lancement. Commencée un soir et
+           validée après minuit, elle se rangeait la veille : le jour
+           réel passait pour du repos et deux séances s'empilaient sur
+           le précédent. On retient le jour où elle est terminée, qui
+           est celui que l'on croit enregistrer. */
+        const jourFin = today();
+        if (w.date !== jourFin) {
+          w.startedDate = w.date;
+          w.date = jourFin;
+        }
         w.durationSec = Math.max(
           1,
           Math.round((Date.now() - w.startedAt) / 1000),

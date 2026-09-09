@@ -36,7 +36,12 @@ test("Bad JSON stays untouched while saving is protected", async () => {
 });
 test("Incompatible nested data cannot be overwritten by fresh defaults", async () => {
   const bad = initialState();
-  bad.profiles.elite.plan.sessions[0].exercises[0].targetSets = -5;
+  // Viser une séance qui porte des exercices : la première du plan peut
+  // être un METCON, vide selon le jour de la semaine.
+  const i = bad.profiles.elite.plan.sessions.findIndex(
+    (x) => x.exercises?.length,
+  );
+  bad.profiles.elite.plan.sessions[i].exercises[0].targetSets = -5;
   const original = JSON.stringify(bad);
   const { store, map } = await setup(original);
   const result = await store.loadState();

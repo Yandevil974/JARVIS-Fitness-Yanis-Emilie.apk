@@ -25,7 +25,12 @@ import {
   moveSession,
   rescheduleMissed,
 } from "../src/engine/planner.js";
-import { archivePlan, plannedSessions } from "../src/engine/plan-memory.js";
+import {
+  archivePlan,
+  plannedSessions,
+  completePlanned,
+} from "../src/engine/plan-memory.js";
+import { eventsForDay } from "../src/engine/schedule-events.js";
 import { interpretCommand, applyCoachAction } from "../src/engine/coach.js";
 import {
   nextAnnouncement,
@@ -100,6 +105,14 @@ function performance({
   ];
   return { p, target };
 }
+
+/* Première séance de musculation du plan. Les tests prenaient
+   sessions[0], en supposant qu'elle contienne des exercices : selon le
+   jour réel de la semaine, cette première séance peut être un METCON
+   sans exercice, et le test échouait sans rapport avec ce qu'il vérifie. */
+const premiereMuscu = (p) =>
+  p.plan.sessions.find((s) => s.type === "strength" && s.exercises?.length) ||
+  p.plan.sessions[0];
 test("Yanis and Émilie have isolated empty histories and their own annual source programme", () => {
   const s = initialState();
   assert.equal(s.profiles.elite.user.name, "Yanis");
@@ -235,7 +248,7 @@ test("Archived schedules have no hidden four-cycle eviction", () => {
 });
 test("Shortening preserves actual sets and at least one essential movement", () => {
   const { p } = performance();
-  const w = prepareWorkout(p, p.plan.sessions[0]);
+  const w = prepareWorkout(p, premiereMuscu(p));
   w.exercises[0].sets = [
     {
       id: uid(),
@@ -305,7 +318,7 @@ test("Poor sleep is fatigue, not a pain diagnosis", () =>
   ));
 test("Significant pain suspends the workout and preserves sets", () => {
   const { p } = performance();
-  p.workout = prepareWorkout(p, p.plan.sessions[0]);
+  p.workout = prepareWorkout(p, premiereMuscu(p));
   p.timer = createTimer([{ name: "Effort", seconds: 30 }], { type: "cardio" });
   const q = applyCoachAction(p, { type: "pain" }).profile;
   assert.equal(q.workout.safetyStop, true);
@@ -380,9 +393,14 @@ test("Input boundaries enforced outside HTML forms", () => {
 test("Nested invalid backups are rejected without modifying current data", () => {
   const s = initialState(),
     copy = structuredClone(s);
-  copy.profiles.elite.plan.sessions[0].exercises[0].targetSets = -1;
+  // Viser une séance qui porte réellement des exercices : la première du
+  // plan peut être un METCON, vide selon le jour de la semaine.
+  const i = copy.profiles.elite.plan.sessions.findIndex(
+    (x) => x.exercises?.length,
+  );
+  copy.profiles.elite.plan.sessions[i].exercises[0].targetSets = -1;
   assert.throws(() => validateState(copy));
-  assert.ok(s.profiles.elite.plan.sessions[0].exercises[0].targetSets > 0);
+  assert.ok(s.profiles.elite.plan.sessions[i].exercises[0].targetSets > 0);
 });
 test("Both source schemas migrate actual food and force histories", () => {
   for (const id of ["elite", "emilie"]) {
@@ -436,7 +454,7 @@ test("Report periods use their own calendar range", () => {
 test("Zero-rest source blocks behave as trisets, then retain their prescribed group rest", async () => {
   const { nextWorkoutStep } = await import("../src/engine/workout-flow.js");
   const p = newProfile("elite"),
-    w = prepareWorkout(p, p.plan.sessions[0]);
+    w = prepareWorkout(p, premiereMuscu(p));
   w.exercises[0].sets.push({ completed: true });
   assert.deepEqual(nextWorkoutStep(w, 0), { index: 1, rest: 0 });
   w.exercises[1].sets.push({ completed: true });
@@ -447,7 +465,7 @@ test("Zero-rest source blocks behave as trisets, then retain their prescribed gr
 test("Short source blocks retain the rest of their final movement after pruning", () => {
   const p = newProfile("elite");
   const short = shortenSession(
-    prepareWorkout(p, p.plan.sessions[0]),
+    prepareWorkout(p, premiereMuscu(p)),
     15,
   ).session;
   for (const block of new Set(short.exercises.map((e) => e.blockIndex))) {
@@ -639,7 +657,7 @@ test("Le réajustement du programme réduit la fréquence sans perdre l'historiq
    travaillés, et jamais laisser l'écran vide. */
 test("Le retour au calme cible les muscles de la séance", () => {
   const p = newProfile("elite");
-  const s = p.plan.sessions[0];
+  const s = premiereMuscu(p);
   const muscles = new Set();
   for (const t of s.exercises) {
     const ex = exerciseById(t.exerciseId);
@@ -921,4 +939,30 @@ test("Les étapes de bassin gardent leurs gestes aquatiques", () => {
     const g = stepGuide(nom, "pool");
     assert.ok(g?.img, `« ${nom} » sans illustration`);
   }
+});
+
+/* Une séance commencée le soir et validée après minuit doit compter pour
+   le jour de sa validation, pas pour la veille. */
+test("Une séance validée après minuit compte pour le bon jour", () => {
+  const p = newProfile("elite");
+  const planned = p.plan.sessions.find((s) => s.type === "strength");
+  const w = prepareWorkout(p, planned);
+  const hier = addDays(today(), -1);
+  w.date = hier;
+  w.status = "completed";
+
+  // Ce que fait finishWorkout : retenir le jour de validation.
+  const jourFin = today();
+  if (w.date !== jourFin) {
+    w.startedDate = w.date;
+    w.date = jourFin;
+  }
+  p.sessions.push(w);
+  completePlanned(p, w.planId, w.status, w.date);
+
+  const faites = (d) =>
+    eventsForDay(p, d).filter((e) => e.status === "completed").length;
+  assert.equal(faites(hier), 0, "la veille ne doit plus porter la séance");
+  assert.equal(faites(today()), 1, "le jour de validation la porte");
+  assert.equal(w.startedDate, hier, "le jour de lancement reste tracé");
 });
