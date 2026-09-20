@@ -29,3 +29,7 @@ JARVIS-Fitness-Source/tests/screenshots/
 **/JARVIS-signature-CONFIDENTIEL.zip
 **/*.pfx
 **/*.bks
+
+# New parallel identity: plaintext backup/recovery files are always private.
+**/Yanis-Fitness-Evolution-SAUVEGARDE-PRIVEE.zip
+**/recovery-key.txt
