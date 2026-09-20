@@ -64,10 +64,15 @@ class ReleaseTests(unittest.TestCase):
             folder=pathlib.Path(temp); dex=folder/'classes9.dex';dex.write_bytes(self.apk.read('classes9.dex'))
             bridge('disassemble',dex,folder/'smali')
             actual=smali_tree(folder/'smali')
-            self.assertEqual(actual,smali_tree(ROOT/'.cache/android-release/merged-smali'))
+            # Do not compare a historical release against the cache of a newer build.
+            original=folder/'original.dex';original.write_bytes(self.base.read('classes9.dex'))
+            bridge('disassemble',original,folder/'original-smali')
+            rebuilt=folder/'rebuilt.dex';bridge('assemble',folder/'smali',rebuilt)
+            bridge('disassemble',rebuilt,folder/'roundtrip')
+            self.assertEqual(actual,smali_tree(folder/'roundtrip'))
             for name in ['MainActivity','JarvisBackupPlugin']:
                 path='app/jarvis/fitness/'+name+'.smali'
-                self.assertEqual(actual[path],(ROOT/'.cache/android-release/old-smali'/path).read_bytes())
+                self.assertEqual(actual[path],(folder/'original-smali'/path).read_bytes())
             speech=actual['app/jarvis/fitness/JarvisSpeechPlugin.smali']
             for name in ['diagnostics','listen','cancelListen','speak','stopSpeech','microphoneResult','voiceOptionsVersion']:
                 self.assertIn(name.encode(),speech)
@@ -100,6 +105,9 @@ class ReleaseTests(unittest.TestCase):
             self.assertEqual(old.read('classes9.dex'),self.apk.read('classes9.dex'))
         self.assertEqual(IDENTITY['appName'],'Yanis Fitness Evolution')
         self.assertGreater(IDENTITY['versionCode'],8)
+    @unittest.skipUnless((ROOT.parent/'.jarvis-fitness-signing/JARVIS-signature-CONFIDENTIEL.zip').exists(),
+        'Historical private 1.1/1.2 archive is unavailable; do not substitute the new identity')
+    def test_historical_private_archive_identity_when_available(self):
         with zipfile.ZipFile(ROOT.parent/'.jarvis-fitness-signing/JARVIS-signature-CONFIDENTIEL.zip') as backup:
             self.assertEqual(json.loads(backup.read('identity.json')),CREATION)
 if __name__=='__main__':unittest.main()

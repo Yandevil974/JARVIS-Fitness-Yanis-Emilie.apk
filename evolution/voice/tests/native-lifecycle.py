@@ -110,5 +110,5 @@ classes.mkdir()
 host_classes = os.environ.get('NATIVE_HOST_CLASSES', REPORT['output'])
 assert pathlib.Path(host_classes).exists(), 'Missing host classes'
 cp = os.pathsep.join([host_classes, str(TOOLS / 'android.jar'), str(TOOLS / 'reference-classes.jar')])
-subprocess.run([JAVA, '-cp', str(TOOLS / 'ecj.jar'), 'org.eclipse.jdt.internal.compiler.batch.Main', '-source', '1.8', '-target', '1.8', '-proc:none', '-classpath', cp, '-d', str(classes), *[str(p) for p in (OUT / 'src').rglob('*.java')]], check=True)
+subprocess.run([JAVA, '-cp', str(TOOLS / 'ecj.jar'), 'org.eclipse.jdt.internal.compiler.batch.Main', '-encoding', 'UTF-8', '-source', '1.8', '-target', '1.8', '-proc:none', '-classpath', cp, '-d', str(classes), *[str(p) for p in (OUT / 'src').rglob('*.java')]], check=True)
 subprocess.run([JAVA, '-cp', os.pathsep.join([str(classes), cp]), 'app.jarvis.fitness.LifecycleTest'], check=True)

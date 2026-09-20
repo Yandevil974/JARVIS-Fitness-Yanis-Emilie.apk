@@ -1,5 +1,7 @@
 # État de livraison vérifié — 20 septembre 2026
 
+> **Évolution de la décision :** après cet état de blocage, l’utilisateur a explicitement autorisé une nouvelle application séparée. Une identité `app.yanis.fitness.evolution` et une sauvegarde chiffrée ont été créées ; l’étape 7 est reconstruite et un APK 1.3.0 signé est en validation, pas encore publié. [Reconstruction et contrôles](../notifications/README.md) · [Sauvegarde de la nouvelle identité](../signing/NEXT-IDENTITY.md). Le constat ci-dessous reste l’historique de la perte précédente.
+
 L’utilisateur demande désormais un APK à tester **avant l’IA conversationnelle**, contrairement au report initial de toute installation à la fin.
 
 ## Disponibilité constatée dans l’environnement actuel

@@ -16,7 +16,7 @@ verify(compiler, '7c71886a76964a825eb734d22dedbd3a1efa2c19bec3af26d07b7bbe8167d9
 const source = 'JARVIS-Fitness-Source/android/app/src/main/java/app/jarvis/fitness/JarvisSpeechPlugin.java';
 const capacitor = 'JARVIS-Fitness-Source/node_modules/@capacitor/android/capacitor/src/main/java/com/getcapacitor/';
 const output = fs.mkdtempSync(path.join(tools, 'compiled-'));
-execFileSync(java, ['-cp', compiler, 'org.eclipse.jdt.internal.compiler.batch.Main', '-source', '1.8', '-target', '1.8', '-proc:none',
+execFileSync(java, ['-cp', compiler, 'org.eclipse.jdt.internal.compiler.batch.Main', '-encoding', 'UTF-8', '-source', '1.8', '-target', '1.8', '-proc:none',
   '-classpath', [android, reference].join(path.delimiter), '-d', output, source,
   ...['PluginMethod.java', 'annotation/CapacitorPlugin.java', 'annotation/Permission.java', 'annotation/PermissionCallback.java'].map(f => capacitor + f)], { stdio: 'inherit' });
 const mainClass = path.join(output, 'app/jarvis/fitness/JarvisSpeechPlugin.class');
