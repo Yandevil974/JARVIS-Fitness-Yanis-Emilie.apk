@@ -177,7 +177,7 @@ def main():
     report = dict(identity=identity, baseApkSha256=sha(BASE.read_bytes()), apkSha256=sha(candidate.read_bytes()),
         webBundleSha256=sha(bundle), validatedWebSha256=WEB_SHA, webStage=RELEASE['webStage'], changedEntries=changed, webFiles=272, unchangedWebFiles=271,
         nativeDexFiles=9, byteIdenticalDexFiles=8, originalClasses=original_count, resultingClasses=len(all_classes),
-        removedSpeechClasses=sorted(removed), newSpeechClasses=sorted(plugin), unchangedClassesInRebuiltDex=sorted(n for n in retained if retained[n] == original_retained[n]),
+        removedSpeechClasses=sorted(removed), newSpeechClasses=sorted(n for n in plugin if speech_class(n)), newNotificationClasses=sorted(n for n in plugin if not speech_class(n)), unchangedClassesInRebuiltDex=sorted(n for n in retained if retained[n] == original_retained[n]),
         nativeSourceSha256=native_report['sourceSha256'], nativeDexSha256=sha(native_dex.read_bytes()),
         nativeRoundTripExact=True, signedFromRestoredPrivateBackup=True, signatureVerified=['v2', 'v3'], alignmentVerified=True,
         deviceTested=False, stagesIncluded=RELEASE['stagesIncluded'], stagesNotYetImplemented=['general conversational AI'] if args.new_parallel else [5, 6, 7, 'general conversational AI'], notificationSources=reminders_report['sources'] if reminders_report else [])

@@ -4,7 +4,7 @@
   "versionCode": 10,
   "webStage": "notifications",
   "webSha256": "b206d7467f947bfcd184f6b57f123fda898c8c83e480c6b0191b97a805e42921",
-  "output": ".cache/next-delivery/Yanis-Fitness-Evolution-1.3.0.apk",
+  "output": "downloads/Yanis-Fitness-Evolution-1.3.0.apk",
   "stagesIncluded": [
     1,
     2,

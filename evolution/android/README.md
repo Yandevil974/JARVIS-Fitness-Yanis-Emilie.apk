@@ -1,3 +1,19 @@
+# Livraison actuelle : Yanis Fitness Evolution 1.3.0 — étapes 1 à 7
+
+[**Télécharger le nouvel APK**](../../downloads/Yanis-Fitness-Evolution-1.3.0.apk?raw=true) · [Installation et tests téléphone](../../downloads/INSTALLATION-1.3.0.md) · [Reconstruction et contrôles de l’étape 7](../notifications/README.md)
+
+Nouvelle application parallèle explicitement autorisée, package `app.yanis.fitness.evolution`, version/code 1.3.0/10, certificat SHA-256 `4d4fbd84463300631bb19e0186f4efc51c589a2e27da1ab56dc1f1ad5479e7dc`. Ne jamais remplacer cette clé ou demander de désinstaller les anciennes applications. Export/import JSON à vérifier dans les deux profils.
+
+Configuration actuelle : `identity-next.json` (immuable) et `release-next.json`. Construction : `python3 evolution/android/build.py --new-parallel`, avec la signature existante restaurée. Les fichiers `identity.json` et `release.json` restent réservés à la livraison historique 1.2.0. Le mode par défaut ne doit pas être détourné pour contourner la perte de son ancienne clé.
+
+La signature est maintenant dans `.private/yanis-fitness-evolution/`, hors Git/serveur/caches ; une copie AES-256-GCM est versionnée sans son secret de récupération. [Conservation et restauration](../signing/NEXT-IDENTITY.md). La copie externe de l’archive privée remise à l’utilisateur reste à confirmer.
+
+APK SHA-256 : `4c2efeaea0d1d59e9bc329f4b3651e2a860a1416bad900c23a15e0249622a323`. Trois constructions successives identiques, signature v2/v3 et alignement vérifiés ; aucune validation réelle sur téléphone ou émulateur.
+
+---
+
+## Documentation historique de la 1.2.0 (pas les instructions de la nouvelle identité)
+
 # APK complet 1.2.0 — Yanis Fitness Evolution, étapes 1 à 4 intégrées
 
 **APK construit et signé ; validation sur téléphone encore nécessaire.** Il ne s’agit plus d’un simple aperçu web ni d’une compilation Java sans DEX. L’utilisateur a autorisé une installation parallèle avec une nouvelle signature après [la recherche infructueuse de l’ancienne clé](../signing/RECOVERY.md).

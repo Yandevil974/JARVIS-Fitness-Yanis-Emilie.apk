@@ -4,7 +4,7 @@
 
 Les travaux non publiés de la précédente session n’ont pas été retrouvés. Cette implémentation est une **nouvelle reconstruction**, ajoutée cumulativement aux sources conservées des étapes 1–6, sans reconstruire l’interface historique incomplète. L’utilisateur a autorisé une nouvelle application parallèle le 20 septembre 2026.
 
-Un APK 1.3.0 de validation est construit et signé avec `app.yanis.fitness.evolution`, nom **Yanis Fitness Evolution**. Sa publication attend la fin des contrôles navigateur. Les anciennes applications, leurs APK et leurs identités restent inchangés. L’IA conversationnelle n’est pas ajoutée.
+L’APK 1.3.0 complet est construit, signé et livré dans `downloads/Yanis-Fitness-Evolution-1.3.0.apk`, avec `app.yanis.fitness.evolution`, nom **Yanis Fitness Evolution**. Les contrôles décrits ci-dessous sont terminés. Les anciennes applications, leurs APK et leurs identités restent inchangés. L’IA conversationnelle n’est pas ajoutée.
 
 ## Fonctionnement
 
@@ -32,7 +32,8 @@ Les trois classes sont ajoutées au DEX contenant déjà le plugin vocal ; `Main
 - 176 tests Node cumulatifs réussis.
 - 25 scénarios natifs de notifications et 20 de voix réussis avec services Android **simulés**, sur les classes API-compilées et le DEX final reconverti vers la JVM.
 - 8 contrôles du nouvel APK signé ; 9 contrôles publics des APK historiques ; 13 contrôles de sauvegarde/signature ; 5 contrôles de ressources réussis. Un contrôle distinct de l’ancienne archive privée est explicitement ignoré car celle-ci demeure absente — la nouvelle signature ne la remplace pas dans ce test.
-- Vérifications navigateur cumulatives en cours sur le web extrait de l’APK signé.
+- **86 parcours navigateur validés sur le web extrait d’un même APK signé** : 78 réussites lors du passage complet, puis les 8 autres réussis après correction de deux problèmes dans les tests (module Capacitor App absent du double Android ; sélecteur de légende devenu non unique). Aucun changement du code de l’application entre ces passages ; les assertions d’absence d’erreur ont été conservées. Comparaison des 11 rubriques/onglets dans les deux profils à 390 et 1440 px réussie.
+- Trois constructions signées identiques : SHA-256 `4c2efeaea0d1d59e9bc329f4b3651e2a860a1416bad900c23a15e0249622a323`, 24 901 083 octets. Hash web avant étiquette de version : `b206d7467f947bfcd184f6b57f123fda898c8c83e480c6b0191b97a805e42921` ; dans l’APK : `4226c44884a620e06b4308d4374fc9089b02a56e259045888237e3384de5b991`.
 
 **Aucun téléphone ni émulateur utilisé.** Les permissions réelles, la réception écran verrouillé, Doze/économie d’énergie/OEM, le redémarrage et le son/micro doivent être essayés sur l’appareil. Après « Forcer l’arrêt », l’utilisateur doit rouvrir l’application ; Android peut retarder les alertes. Aucun fonctionnement à heure exacte garanti.
 
@@ -54,4 +55,4 @@ Les simulations du scheduler utilisent les sources JSON-java au commit `f9b5587c
 
 Pour le navigateur : extraire seulement `assets/public/` du candidat signé vers `.cache/notifications-web`, servir ce dossier sur 5180 et `.cache/decisions-web` sur 5179. Ne jamais servir la racine du dépôt ni `.private`. `playwright.config.mjs` compare les 11 rubriques et leurs onglets aux étapes 1–6, dans les deux profils et deux largeurs ; seuls le nouveau panneau et les changements explicites de texte/version sont normalisés.
 
-**Prochaine étape : terminer les contrôles, publier le véritable APK complet et laisser l’utilisateur le tester avant l’IA.**
+**Étape 7 reconstruite et livrée. Prochaine étape : essai de l’APK complet par l’utilisateur, correction des éventuels problèmes, puis IA conversationnelle en dernier.**

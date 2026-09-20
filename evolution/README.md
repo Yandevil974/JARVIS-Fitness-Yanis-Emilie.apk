@@ -1,36 +1,34 @@
 # Évolution de JARVIS — ordre validé
 
-L’application complète fournie par l’utilisateur est la référence. Le dossier historique `JARVIS-Fitness-Source` sert à certains outils/tests et à la lecture du code, **pas à reconstruire seul l’application complète**.
+L’application complète fournie par l’utilisateur est la référence. Les anciennes sources `JARVIS-Fitness-Source` servent aux outils/tests et à la lecture du code, **pas à reconstruire seules l’application complète**.
 
-## État au 20 septembre 2026
+## État au 20 septembre 2026 — version 1.3.0 complète à tester
 
-**Livraison intermédiaire 1.2.0 Yanis Fitness Evolution :** les étapes 1 à 4 sont embarquées dans un APK signé. Le nom demandé est appliqué sans changer le package ni la signature de la 1.1.0 ; cette version est une mise à jour de celle-ci et reste parallèle à la 1.0.6. [Livraison et contrôles](android/README.md). **Essais réels sur téléphone toujours à confirmer, indépendamment de la poursuite autorisée du développement.**
+[**Télécharger Yanis Fitness Evolution 1.3.0**](../downloads/Yanis-Fitness-Evolution-1.3.0.apk?raw=true) · [Installation sans suppression de l’ancienne application](../downloads/INSTALLATION-1.3.0.md)
 
-1. **Rappels et échéances : implémentés, testés et embarqués.** Voir [le détail](reminders/README.md).
-2. **Voix et microphone : nouveau module natif intégré aux DEX de l’APK complet.** Diagnostics, dictée modifiable avant envoi, annulation et priorité des chronos. Compilation API et simulations réussies, dont un passage après aller-retour du DEX final. **Validation acoustique et permissions réelles encore à faire.** [Détail](voice/README.md).
-3. **JARVIS porte-parole : implémenté, testé et embarqué.** Accueil facultatif désactivé par défaut, priorités expliquées et attribuées, choix de voix/débit/silence, Pourquoi/Répéter/Plus tard. Aucun micro automatique. 75 tests JS et 49 tests navigateur cumulatifs réussis ; ceux du navigateur ont été relancés sur le web extrait du nouvel APK. [Détail](spokesperson/README.md).
-4. **Rendez-vous interactifs : implémentés, testés et embarqués en 1.2.0.** Avant/après séance, bilan hebdomadaire, mensurations et photos facultatives. Brouillons par profil, relecture puis confirmation, historiques existants conservés. 94 tests JS et 60 navigateur cumulatifs réussis sur le web de l’APK signé. [Détail](appointments/README.md).
-5. **Propositions d’adaptation : implémentées et testées dans le web cumulatif, pas encore dans un nouvel APK.** Comparaison prudente de deux réalisations, hausse/maintien/allègement expliqués ou données insuffisantes, prise en compte des ressentis, aucune mutation. Réévaluation sans test maximal. 125 tests JS et 68 navigateur cumulatifs. [Détail et limites](adaptation/README.md).
-6. **Décisions et suivi : implémentés et testés dans le web cumulatif, pas encore dans un nouvel APK.** Accepter/refuser/reporter, relecture puis confirmation, cible compatible unique, historique par profil et suivi des vraies séries après clôture. Refus respecté par le calcul historique de charge ; report sans application automatique. 154 tests JS et 77 navigateur cumulatifs. [Détail et limites](decisions/README.md).
-7. **Prochaine étape — notifications Android application fermée :** autorisations, programmation, annulation après saisie, dédoublonnage, discrétion sur écran verrouillé.
-8. **IA conversationnelle générale en dernier**, conformément à la décision de l’utilisateur. Aucun fournisseur, budget ou transfert cloud n’a été choisi ou implémenté.
+L’utilisateur demande maintenant à tester **toutes les étapes 1 à 7 avant l’IA**, et a explicitement autorisé une nouvelle application séparée après la perte de fichiers privés et du travail non publié de la session précédente. Le nouveau package est `app.yanis.fitness.evolution`, avec le nom exact **Yanis Fitness Evolution**. Les sources des étapes 1–6 ont été conservées ; l’étape 7 a été reconstruite et intégrée aux DEX de l’APK complet.
 
-Annoncer l’étape suivante à chaque étape terminée. Ne pas présenter une inspection statique de la voix comme un test réussi sur téléphone.
+1. **Rappels et échéances : embarqués.** Suivi par profil, actions, reports et annulations. Les mensurations réelles ne sont pas remplacées par le poids ; lire ne marque pas comme réalisé. [Détail](reminders/README.md).
+2. **Voix et microphone : embarqués.** Plugin natif de diagnostics, dictée modifiable avant envoi, annulation, protection contre les callbacks tardifs et priorité des chronos. [Détail](voice/README.md).
+3. **JARVIS porte-parole facultatif : embarqué.** Point court fondé sur des données réelles, priorités expliquées, lecture/répétition/report et réglages vocaux séparés. Aucun micro automatique. [Détail](spokesperson/README.md).
+4. **Rendez-vous interactifs : embarqués.** Avant/après une séance réelle, bilan hebdomadaire, mensurations avec photos facultatives ; brouillons par profil, relecture et confirmation. [Détail](appointments/README.md).
+5. **Adaptations expliquées : embarquées.** Comparaisons prudentes de réalisations comparables ; hausse/maintien/allègement ou données insuffisantes ; ressentis et prudence, aucune mutation à la consultation. [Détail](adaptation/README.md).
+6. **Décisions et suivi : embarqués.** Accepter/refuser/reporter avec confirmation explicite, une cible compatible choisie, historique par profil et suivi des vraies séries. Refus respecté, pas d’application automatique des reports. [Détail](decisions/README.md).
+7. **Notifications application fermée : reconstruites, embarquées.** Autorisation Android distincte du consentement par profil, programmation privée, annulation, dédoublonnage, reprise après redémarrage/heure/fuseau et contenu discret. [Détail et limites](notifications/README.md).
+8. **IA conversationnelle générale : pas commencée.** Aucun fournisseur, budget ou transfert cloud choisi. Elle vient après le test demandé et les corrections éventuelles.
 
-## Nouvelle demande : tester avant l’IA
+## Vérifications et limites
 
-L’utilisateur demande maintenant le lien d’un APK avant de poursuivre l’IA. Le candidat d’étape 7 et la signature privée doivent être restaurés ; seule la 1.2.0 publique (étapes 1–4) est actuellement vérifiée et disponible. [État de livraison constaté](android/DELIVERY-STATUS.md). La consigne historique ci-dessous est donc remplacée par cette demande de test intermédiaire.
+176 tests JavaScript ; 86 parcours navigateur validés sur le web du même APK signé ; 25 scénarios de notifications et 20 de voix avec services Android simulés, également vérifiés depuis le DEX final. Conservation des 11 rubriques et de leurs onglets, des données à l’import/export dans les deux profils, des ressources et de l’essentiel des DEX. Trois constructions signées identiques, alignement/signature v2/v3 vérifiés. [Résultats et détail des passages](notifications/README.md#contrôles).
 
-## Historique — installation initialement reportée à la fin
+**Aucun téléphone ni émulateur utilisé.** Installation/import réels, son/micro, réception des notifications, écran verrouillé, redémarrage et économie d’énergie restent à vérifier sur l’appareil. Les notifications sont inexactes et Android peut les retarder ; après un arrêt forcé, rouvrir l’application. Les services vocaux peuvent dépendre du réseau et des langues installées.
 
-L’utilisateur a précisé : « Je vais installer quand t’auras terminé. On poursuit ». Le développement continue dans l’ordre validé **sans exiger d’installation intermédiaire**. Pas de nouvel APK pour les étapes 5–6 : la 1.2.0 reste une livraison historique des étapes 1–4. L’emballage final devra intégrer les étapes suivantes, garder le nom **Yanis Fitness Evolution**, le package et la signature permanents, puis subir à nouveau les tests sur le contenu réellement empaqueté.
+## Données et signature
 
-L’installation, l’import, les permissions et les essais acoustiques restent **non vérifiés sur appareil**, volontairement reportés ; cette autorisation de poursuivre ne vaut pas validation Android. La conservation externe de l’archive de signature reste également à confirmer, sans bloquer le développement.
+Garder les anciennes applications intactes, exporter le JSON depuis celle réellement utilisée, installer la nouvelle 1.3.0 à côté, importer puis vérifier Yanis et Émilie. Les APK 1.0.6, 1.1.0 et 1.2.0 restent inchangés ; la nouvelle clé **ne permet pas** de les mettre à jour en place.
 
-## Nouvelle identité Android autorisée
+La nouvelle identité est conservée séparément dans `android/identity-next.json` ; la configuration de livraison est `android/release-next.json`. [Sauvegarde chiffrée et récupération](signing/NEXT-IDENTITY.md). L’archive privée de signature a été affichée séparément à l’utilisateur, mais sa conservation externe reste **à confirmer**. Ne jamais publier l’archive en clair, la clé ou le secret de récupération. Ne pas générer encore une identité pour résoudre une absence de clé.
 
-La clé de la 1.0.6 n’a pas été retrouvée dans l’espace accessible. Après explication des conséquences, l’utilisateur a autorisé une nouvelle application installée à côté, avec export/import et sans suppression de l’ancienne.
+Les constats précédents de fichiers absents restent documentés dans [l’historique de livraison](android/DELIVERY-STATUS.md). Ne pas confondre cette reconstruction disponible avec le candidat d’étape 7 anciennement annoncé et non retrouvé.
 
-La **1.1.0 Évolution**, puis la **1.2.0 Yanis Fitness Evolution**, package `app.jarvis.fitness.evolution`, sont construites et signées avec la même clé. La nouvelle clé n’est ni dans Git ni dans les caches ; une archive privée a été restaurée et utilisée pour signer l’APK. Elle est fournie séparément à l’utilisateur, qui doit la télécharger et la sauvegarder hors de cet environnement. La copie externe reste à confirmer.
-
-La 1.2.0 remplace la 1.1.0, mais ce n’est pas une mise à jour installable par-dessus la 1.0.6. **Ne pas désinstaller ni effacer l’ancienne application.** La validation sur téléphone reste ouverte ; ne pas présenter cette version comme « tout testé et opérationnel sur Android ». Voir [l’installation](../downloads/INSTALLATION-1.2.0.md).
+**Prochaine étape : le test de l’utilisateur, avant toute IA conversationnelle.** Annoncer l’étape suivante après chaque étape terminée et ne jamais présenter les simulations comme une validation sur téléphone.

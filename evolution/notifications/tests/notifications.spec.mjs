@@ -30,6 +30,15 @@ async function open(page, android = true, voice = false) {
       window.Capacitor = {
         PluginHeaders: [
           {
+            name: "App",
+            methods: [
+              "addListener",
+              "removeListener",
+              "getState",
+              "getInfo",
+            ].map((name) => ({ name, rtype: "promise" })),
+          },
+          {
             name: "JarvisReminders",
             methods: [
               "begin",
@@ -44,6 +53,8 @@ async function open(page, android = true, voice = false) {
         ],
         nativePromise: async (plugin, method, args) => {
           window.__calls.push({ plugin, method, args });
+          if (plugin === "App")
+            return method === "addListener" ? "test-app-listener" : {};
           const n = window.__native;
           if (method === "begin") return { protocol: 1, token: "test-token" };
           if (method === "replace") {

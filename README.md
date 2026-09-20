@@ -1,14 +1,24 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
-> **Demande de test avant l’IA :** la dernière version actuellement téléchargeable est la **1.2.0 (étapes 1–4)**. Le candidat des étapes 1–7 annoncé dans la conversation n’est pas disponible dans l’environnement retrouvé. [État vérifié et restauration nécessaire](evolution/android/DELIVERY-STATUS.md).
+## Version complète à tester avant l’IA — 1.3.0
 
-## Développement en cours — étape 6
+### [📥 Télécharger Yanis Fitness Evolution 1.3.0](downloads/Yanis-Fitness-Evolution-1.3.0.apk?raw=true)
 
-**Les décisions et leur suivi sont implémentés et testés dans le web cumulatif.** Accepter, refuser ou reporter une adaptation, relire puis confirmer ; une acceptation chiffrée ne modifie qu’une séance compatible explicitement choisie. Historique par profil conservé à l’export/import, reports à réexaminer sans application automatique et suivi fondé sur les vraies séries enregistrées, y compris les séances partielles. Le refus n’est pas contourné par l’ancien calcul de charge sur les mêmes données. [Fonctionnement et limites](evolution/decisions/README.md).
+**Les étapes 1 à 7 sont maintenant réunies dans ce nouvel APK signé.** Les fonctions de l’application complète sont conservées : rappels/report, voix et dictée explicites, porte-parole facultatif, rendez-vous guidés, adaptations expliquées, décisions avec historique et suivi réel, puis notifications Android application fermée. **L’IA conversationnelle générale n’est pas ajoutée.**
 
-**154 tests JS et 77 tests navigateur cumulatifs réussis.** L’utilisateur installera à la fin : pas de nouvel APK à cette étape, pas de test téléphone revendiqué. La 1.2.0 ci-dessous reste inchangée et **ne contient pas les étapes 5–6**. Prochaine étape : **7 — notifications Android application fermée**. L’IA conversationnelle générale reste en dernier.
+**Nouvelle application séparée, expressément autorisée après la perte de la signature précédente.** Package `app.yanis.fitness.evolution` ; nom exact **Yanis Fitness Evolution**. Elle s’installe à côté des anciennes, sans les désinstaller. Exporter le JSON à jour depuis l’application utilisée, importer dans la nouvelle **V 1.3.0**, vérifier Yanis et Émilie puis fermer/rouvrir. Les APK historiques ci-dessous restent inchangés.
 
-## Dernier APK intermédiaire 1.2.0 — rendez-vous interactifs
+[Installation et parcours de test](downloads/INSTALLATION-1.3.0.md) · [Notifications et vérifications](evolution/notifications/README.md) · [Rapport de fidélité](downloads/Yanis-Fitness-Evolution-1.3.0.fidelity.json) · [Empreinte SHA-256](downloads/Yanis-Fitness-Evolution-1.3.0.apk.sha256)
+
+**Vérifications :** 176 tests JavaScript ; 86 parcours navigateur validés sur le web du même APK signé ; 25 scénarios natifs de notifications et 20 de voix avec services Android simulés, vérifiés aussi après conversion du DEX final ; 8 contrôles du nouvel APK ; signature v2/v3 et constructions répétées identiques. 272 fichiers web conservés, dont 271 inchangés ; huit DEX sur neuf inchangés ; 4 971 classes uniques. [Détail des passages de test](evolution/notifications/README.md#contrôles).
+
+**Aucun téléphone ni émulateur utilisé ici.** Installation/import sur appareil, micro/son, notifications réelles, écran verrouillé, redémarrage et économie de batterie restent à tester. Les alarmes Android sont inexactes et un arrêt forcé impose de rouvrir l’application.
+
+La nouvelle signature a une sauvegarde chiffrée dans le dépôt et une archive **privée** remise séparément dans la conversation. Cette dernière contient les secrets et ne doit jamais être publiée. Sa conservation externe par l’utilisateur reste à confirmer. [Procédure de récupération](evolution/signing/NEXT-IDENTITY.md).
+
+**Prochaine étape : test de l’utilisateur et corrections éventuelles, puis l’IA conversationnelle en dernier.**
+
+## Historique — APK 1.2.0, étapes 1 à 4
 
 ### [Télécharger Yanis Fitness Evolution 1.2.0](downloads/Yanis-Fitness-Evolution-1.2.0.apk?raw=true)
 

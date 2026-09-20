@@ -104,7 +104,7 @@ test('cadence, optional photos and postponed dates stay isolated between profile
   const before = await stored(page);
   await page.getByRole('button', { name: 'Changer de profil ou ouvrir mon profil', exact: true }).click();
   await page.getByRole('button', { name: /Émilie/ }).click();
-  await expect(page.locator('.jf-eyebrow')).toContainText('Émilie');
+  await expect(page.locator('.jf-reminders .jf-eyebrow')).toContainText('Émilie');
   await expect(page.locator('.jf-reminder')).toHaveCount(3);
   await expect(card(page, 'measurements')).not.toHaveAttribute('data-status', 'postponed');
   const after = await stored(page);
