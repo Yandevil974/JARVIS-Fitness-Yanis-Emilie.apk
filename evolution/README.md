@@ -5,8 +5,8 @@ L’application complète fournie par l’utilisateur est la référence. Le dos
 ## État au 20 septembre 2026
 
 1. **Rappels et échéances : implémentation web intégrée et testée.** Voir [le détail et les commandes](reminders/README.md). Aperçu utilisable ; **pas encore livré dans un nouvel APK**.
-2. **Prochaine étape : voix et microphone Android.** Diagnostics, permissions, écoute/traitement/réponse, reconnaissance modifiable, arrêt/annulation, erreurs explicites ; éviter toute concurrence entre écoute, réponse et annonces du chrono. Validation réelle sur téléphone nécessaire.
-3. JARVIS porte-parole de l’équipe : accueil court facultatif, priorités attribuées aux coaches, voix/débit/silence, Pourquoi/Répète/Plus tard. Écoute sur bouton d’abord.
+2. **Voix et microphone Android : en cours de validation.** Interface intégrée à l’aperçu ; module natif réécrit et compilé contre les API réelles. 21 tests JS, 39 tests navigateur et 14 scénarios natifs simulés réussis. Diagnostics, permissions, écoute/transcription/lecture, brouillon modifiable, annulation, erreurs et priorité des chronos. **Restent l’intégration DEX dans l’APK complet, la signature et les essais réels sur téléphone.** [Détail et reproduction](voice/README.md).
+3. **Étape suivante après validation : JARVIS porte-parole de l’équipe** : accueil court facultatif, priorités attribuées aux coaches, voix/débit/silence, Pourquoi/Répète/Plus tard. Écoute sur bouton d’abord.
 4. Rendez-vous interactifs : avant/après séance, bilan hebdomadaire, mensurations mensuelles et photos facultatives.
 5. Adaptations fondées sur les données : comparaisons pertinentes, propositions expliquées, pas de conclusions inventées ; bilan distinct d’un test maximal.
 6. Mémoire des décisions : accepté/refusé/reporté, suivi, historique. **Confirmation obligatoire avant modification du programme.**

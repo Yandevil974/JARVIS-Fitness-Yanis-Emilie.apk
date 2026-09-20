@@ -1,12 +1,14 @@
 # JARVIS Fitness — Yanis & Émilie
 
-## Évolution en cours — rappels et échéances
+## Évolution en cours — rappels, voix et microphone
 
 L’étape 1 est **implémentée et testée dans l’aperçu web de l’application complète** : mensurations distinctes du poids, retards persistants, reports datés, suivis simultanés et profils indépendants. **58 tests réussis** (27 moteur/intégration, 31 navigateur).
 
-**Cette évolution n’est pas encore dans l’APK ci-dessous.** La clé privée ayant signé la 1.0.6 n’est plus disponible dans l’environnement restauré ; la continuité de signature doit être résolue avant une nouvelle livraison Android. Aucun nouveau certificat/package n’a été créé pour la contourner. Ne pas désinstaller l’application qui contient vos données.
+L’étape 2 ajoute les **diagnostics vocaux, la dictée modifiable avant envoi, l’annulation et la priorité des annonces de chrono**. Interface intégrée, module Android réécrit et compilé contre les API réelles : **21 tests JS, 39 tests navigateur et 14 scénarios natifs simulés réussis**. L’intégration native dans les DEX de l’APK complet et la validation sur téléphone restent à faire. [Documentation voix / microphone](evolution/voice/README.md).
 
-[Étape 1 : code, tests et reproduction](evolution/reminders/README.md) · [Plan validé — prochaine étape : voix et microphone Android](evolution/README.md). L’IA conversationnelle générale reste pour la fin.
+**Ces évolutions ne sont pas encore dans l’APK ci-dessous.** La clé privée ayant signé la 1.0.6 n’est plus disponible dans l’environnement restauré ; la continuité de signature doit être résolue avant une nouvelle livraison Android. Aucun nouveau certificat/package n’a été créé pour la contourner. Ne pas désinstaller l’application qui contient vos données.
+
+[Étape 1 : code, tests et reproduction](evolution/reminders/README.md) · [Plan validé — après validation de la voix : JARVIS porte-parole](evolution/README.md). L’IA conversationnelle générale reste pour la fin.
 
 ## Dernier APK livré : **1.0.6 complète**, basé sur l’APK ajouté le 20 septembre
 
