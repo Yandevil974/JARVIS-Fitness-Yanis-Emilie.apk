@@ -1,6 +1,12 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
-## Nouvel APK 1.2.0 — rendez-vous interactifs
+## Développement en cours — étape 5
+
+**Les propositions d’adaptation sont implémentées et testées dans le web cumulatif.** Elles comparent les deux dernières réalisations d’un exercice, montrent les données utilisées et distinguent hausse, maintien, allègement ou données insuffisantes. Aucune modification automatique ; réévaluation sans test maximal. [Règles et limites](evolution/adaptation/README.md).
+
+**125 tests JS et 68 tests navigateur cumulatifs réussis.** L’utilisateur installera à la fin : pas de nouvel APK à cette étape, pas de test téléphone revendiqué. La 1.2.0 ci-dessous reste inchangée et **ne contient pas l’étape 5**. Prochaine étape : **6 — décisions accepté/refusé/reporté et suivi**, puis notifications application fermée et IA générale en dernier.
+
+## Dernier APK intermédiaire 1.2.0 — rendez-vous interactifs
 
 ### [Télécharger Yanis Fitness Evolution 1.2.0](downloads/Yanis-Fitness-Evolution-1.2.0.apk?raw=true)
 
@@ -15,7 +21,7 @@
 
 La sauvegarde confidentielle de la signature est remise séparément dans la conversation, jamais dans ce dépôt public. La conserver en stockage privé, distinct des sauvegardes sportives ; sa copie externe n’est pas encore confirmée.
 
-**Prochaine étape : 5 — propositions d’adaptation expliquées à partir de séances comparables.** Puis mémoire des décisions, notifications application fermée, IA conversationnelle générale en dernier. [Plan validé](evolution/README.md).
+**Cette livraison 1.2.0 s’arrête à l’étape 4.** La suite du développement est décrite ci-dessus et dans le [plan validé](evolution/README.md).
 
 ## Historique — 1.1.0 Évolution, étapes 1 à 3
 
