@@ -17,3 +17,6 @@ JARVIS-Fitness-Source/tests/browser-initial.json
 JARVIS-Fitness-Source/tests/apk-manifest.txt
 JARVIS-Fitness-Source/public/runtime.js
 JARVIS-Fitness-Source/public/runtime.css
+
+# Browser screenshots are test output, not application sources.
+JARVIS-Fitness-Source/tests/screenshots/
