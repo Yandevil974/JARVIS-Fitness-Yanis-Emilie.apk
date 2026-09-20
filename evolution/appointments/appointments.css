@@ -1,0 +1,248 @@
+.ja-board {
+  margin: 0 0 22px;
+  padding: 22px;
+  border: 1px solid var(--line, #d9dfdf);
+  border-radius: 20px;
+  background: var(--panel, #fff);
+  color: var(--text, #182d31);
+}
+.ja-kicker {
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  font-weight: 700;
+  color: var(--muted, #58716a);
+}
+.ja-board h2 {
+  font-size: 23px;
+  margin: 8px 0;
+}
+.ja-board p,
+.ja-form p {
+  line-height: 1.55;
+}
+.ja-board header p {
+  color: var(--muted, #667573);
+  font-size: 13px;
+  margin: 6px 0 18px;
+}
+.ja-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.ja-grid article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  border-radius: 13px;
+  background: var(--panel-2, #f3f6f4);
+  border: 1px solid var(--line, #e1e7e3);
+  min-width: 0;
+}
+.ja-grid h3 {
+  margin: 0;
+  font-size: 15px;
+}
+.ja-grid p {
+  font-size: 12px;
+  margin: 0;
+  flex: 1;
+}
+.ja-board small {
+  display: block;
+  margin-top: 15px;
+  color: var(--muted, #61736f);
+  font-size: 11px;
+}
+.ja-board button,
+.ja-form button {
+  border: 1px solid #244f44;
+  border-radius: 9px;
+  padding: 11px 14px;
+  background: #244f44;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  min-height: 42px;
+}
+.ja-board button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.ja-board label,
+.ja-form label {
+  display: grid;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 0;
+}
+.ja-board select,
+.ja-form select,
+.ja-form input:not([type="checkbox"]),
+.ja-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid var(--line-strong, #c4d1cb);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--panel, #fff);
+  color: var(--text, #20332b);
+  font: inherit;
+  font-weight: 400;
+  min-height: 42px;
+}
+.ja-form {
+  display: grid;
+  gap: 15px;
+}
+.ja-form textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+.ja-form .ja-progress {
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--panel-2, #edf3ef);
+  font-size: 12px;
+}
+.ja-warning {
+  background: #fff4e4;
+  border: 1px solid #d3aa6e;
+  padding: 13px;
+  border-radius: 9px;
+  font-size: 13px;
+  color: #64451b;
+  line-height: 1.5;
+}
+.ja-confirm {
+  background: var(--panel-2, #f3f6f4);
+  border: 1px solid var(--line, #d3dfd5);
+  padding: 18px;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.ja-confirm h3 {
+  margin-top: 0;
+}
+.ja-confirm p {
+  margin: 8px 0;
+  font-size: 13px;
+}
+.ja-confirm strong {
+  font-size: 13px;
+}
+.ja-measures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.ja-form .ja-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ja-check input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.ja-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ja-form .ja-delete {
+  justify-self: start;
+  color: var(--muted, #675347);
+  background: transparent;
+  border-color: transparent;
+  font-size: 11px;
+}
+.ja-history {
+  margin-top: 16px;
+  font-size: 12px;
+}
+.ja-history summary {
+  cursor: pointer;
+  padding: 8px 0;
+}
+.ja-history p {
+  margin: 8px 0;
+}
+.ja-compact .ja-kicker,
+.ja-compact small,
+.ja-compact header p,
+.ja-compact article p {
+  display: none;
+}
+.ja-compact {
+  padding: 16px;
+}
+.ja-compact h2 {
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+.ja-compact h3 {
+  font-size: 12px;
+}
+@media (max-width: 1000px) {
+  .ja-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .ja-board {
+    padding: 16px;
+  }
+  .ja-grid {
+    grid-template-columns: 1fr;
+  }
+  .ja-compact .ja-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ja-compact article {
+    padding: 10px;
+  }
+  .ja-compact button {
+    font-size: 11px;
+    padding: 8px;
+  }
+  .ja-measures {
+    gap: 10px;
+  }
+  .ja-form button {
+    flex-grow: 1;
+  }
+  .ja-board h2 {
+    font-size: 20px;
+  }
+}
+
+.ja-form .ja-progress,
+.ja-form .ja-confirm {
+  color: var(--text, #182d31);
+}
+.ja-form .ja-confirm p {
+  color: var(--muted, #54635d);
+}
+.ja-form .ja-confirm h3,
+.ja-form .ja-confirm strong {
+  color: var(--text, #182d31);
+}
+.ja-board button:hover:not(:disabled),
+.ja-form .ja-actions button:hover:not(:disabled) {
+  color: #fff;
+  background: #326858;
+}
+.ja-form .ja-delete:hover:not(:disabled) {
+  color: var(--text, #182d31);
+  background: var(--panel-2, #f3f6f4);
+}
+.ja-form .ja-warning {
+  color: #64451b;
+}

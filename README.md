@@ -1,24 +1,27 @@
-# JARVIS Fitness — Yanis & Émilie
+# Yanis Fitness Evolution — Yanis & Émilie
 
-## Nouvel APK : JARVIS Fitness Évolution 1.1.0
+## Nouvel APK 1.2.0 — rendez-vous interactifs
 
-### [Télécharger l’APK 1.1.0 Évolution](downloads/JARVIS-Fitness-1.1.0-evolution.apk?raw=true)
+### [Télécharger Yanis Fitness Evolution 1.2.0](downloads/Yanis-Fitness-Evolution-1.2.0.apk?raw=true)
 
-**Version de validation Android : APK complet construit et signé, essais sur téléphone encore nécessaires.** Il contient les correctifs du chrono et les étapes 1 à 3 : rappels, nouveau module natif de dictée/lecture et point d’équipe avec réglages vocaux. Ce n’est pas encore la fin du plan d’évolution.
+**Nom demandé appliqué ; APK complet signé avec la même identité que la 1.1.0.** Les étapes 1 à 4 sont intégrées : rappels, dictée/lecture, porte-parole et rendez-vous guidés avant/après séance, hebdomadaires et de mensurations. Le programme ne change jamais sur simple ouverture ou saisie d’un rendez-vous. Photos facultatives ; poids seul insuffisant pour les mensurations.
 
-**Installation à côté de l’ancienne application, autorisée par l’utilisateur.** La clé de la 1.0.6 n’a pas été retrouvée. Cette version a une nouvelle identité, `app.jarvis.fitness.evolution`, et une nouvelle signature sauvegardée en privé. Elle ne remplace pas automatiquement la 1.0.6 et ne récupère pas seule ses données.
+- **Déjà sur la 1.1.0 Évolution ?** Exporter une sauvegarde par précaution, puis installer cet APK comme mise à jour, **sans désinstaller**. Même identifiant Android et même signature : pas de troisième application.
+- **Encore sur la 1.0.6 ou une ancienne application ?** Exporter le JSON à jour, installer la 1.2.0 à côté, importer et vérifier les deux profils. Ne pas supprimer l’ancienne application.
 
-1. Exporter le JSON **à jour** depuis l’ancienne application.
-2. Installer **JARVIS Fitness Évolution**, puis importer ce JSON dans **Mon profil → Données & sauvegardes**.
-3. Vérifier Yanis et Émilie, fermer/rouvrir, puis tester voix, micro et chrono. **Ne désinstaller aucune ancienne application.**
+[Guide de mise à jour et essais téléphone](downloads/INSTALLATION-1.2.0.md) · [Étape 4](evolution/appointments/README.md) · [Construction/signature](evolution/android/README.md) · [Rapport de conservation](downloads/Yanis-Fitness-Evolution-1.2.0.fidelity.json)
 
-[Guide d’installation et essais](downloads/INSTALLATION-1.1.0.md) · [Construction/signature et contrôles](evolution/android/README.md) · [Rapport de conservation](downloads/JARVIS-Fitness-1.1.0-evolution.fidelity.json)
+**Contrôles réussis :** 94 tests JS, 60 tests navigateur sur le web extrait de l’APK signé, 9 tests APK et 5 tests de ressources Android. Même certificat que la 1.1.0, signature v2/v3, build répété identique. Les 20 scénarios vocaux simulés passent après conversion du DEX embarqué vers la JVM. **Installation, conservation des données et son/micro sur téléphone restent à confirmer.** Aucun téléphone ni émulateur utilisé ici.
 
-**Contrôles réussis :** 75 tests JS, 49 tests navigateur sur le web extrait de l’APK, 8 tests de livraison et 5 tests de ressources Android. Les 20 scénarios vocaux simulés passent aussi après conversion du DEX embarqué vers la JVM. Signature v2/v3 et alignement vérifiés. **Aucun de ces tests ne remplace un essai sur téléphone.**
+La sauvegarde confidentielle de la signature est remise séparément dans la conversation, jamais dans ce dépôt public. La conserver en stockage privé, distinct des sauvegardes sportives ; sa copie externe n’est pas encore confirmée.
 
-La sauvegarde confidentielle de la signature est remise séparément dans la conversation, jamais dans ce dépôt public. La télécharger et la conserver en lieu privé ; elle est distincte des sauvegardes sportives.
+**Prochaine étape : 5 — propositions d’adaptation expliquées à partir de séances comparables.** Puis mémoire des décisions, notifications application fermée, IA conversationnelle générale en dernier. [Plan validé](evolution/README.md).
 
-**Prochaine priorité : validation sur le téléphone. Ensuite : étape 4, rendez-vous interactifs.** L’IA conversationnelle générale reste pour la fin. [Plan validé](evolution/README.md).
+## Historique — 1.1.0 Évolution, étapes 1 à 3
+
+[APK 1.1.0 inchangé](downloads/JARVIS-Fitness-1.1.0-evolution.apk?raw=true) · [Guide historique](downloads/INSTALLATION-1.1.0.md)
+
+Cette version a établi l’identité permanente `app.jarvis.fitness.evolution`, après autorisation d’une nouvelle application parallèle à la 1.0.6 dont la clé n’a pas été retrouvée. **La 1.2.0 réutilise cette identité et sa clé ; seul son nom/version évolue.**
 
 ## Historique — APK 1.0.6 complète, conservé sans modification
 

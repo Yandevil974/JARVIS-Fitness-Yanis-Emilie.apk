@@ -1,12 +1,13 @@
 import hashlib, importlib.util, json, pathlib, struct, subprocess, sys, tempfile, unittest, zipfile
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / 'evolution/android'))
-from build import dex_classes, sha, JAVA, TOOLS, CONFIG, WEB_SHA, bridge, smali_tree
+from build import dex_classes, sha, JAVA, TOOLS, CONFIG, WEB_SHA, RELEASE, bridge, smali_tree
 sys.path.insert(0, str(ROOT / 'complete-hotfix/tests'))
 from test_apk_binary import attrs
 from apk_binary import chunks, pool_strings, u16
-APK = ROOT / 'downloads/JARVIS-Fitness-1.1.0-evolution.apk'
-IDENTITY = json.loads((ROOT / 'evolution/android/identity.json').read_text())
+APK = ROOT / RELEASE['output']
+CREATION = json.loads((ROOT / 'evolution/android/identity.json').read_text())
+IDENTITY = {**CREATION, **{k: RELEASE[k] for k in ['appName','version','versionCode']}}
 class ReleaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -44,10 +45,10 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(sorted(self.base.namelist()),sorted(self.apk.namelist()))
         changed=sorted(n for n in self.base.namelist() if self.base.read(n)!=self.apk.read(n))
         self.assertEqual(changed,sorted(['AndroidManifest.xml','resources.arsc','assets/capacitor.config.json',CONFIG['bundle']['path'],'classes9.dex']))
-    def test_packaged_web_is_exact_stage3_except_visible_version(self):
+    def test_packaged_web_is_exact_stage4_except_visible_version(self):
         path=CONFIG['bundle']['path']; bundle=self.apk.read(path)
-        validated=bundle.replace(b'V 1.1.0',b'V 1.0.6')
-        self.assertEqual(bundle.count(b'V 1.1.0'),1); self.assertEqual(sha(validated),WEB_SHA)
+        label=('V '+RELEASE['version']).encode(); validated=bundle.replace(label,b'V 1.0.6')
+        self.assertEqual(bundle.count(label),1); self.assertEqual(sha(validated),WEB_SHA)
         self.assertEqual(sha(bundle),self.report['webBundleSha256'])
         self.assertEqual(len([n for n in self.apk.namelist() if n.startswith('assets/public/') and not n.endswith('/')]),272)
     def test_dex_classes_are_unique_and_only_speech_family_changes(self):
@@ -87,4 +88,18 @@ class ReleaseTests(unittest.TestCase):
         tracked=subprocess.check_output(['git','ls-files'],cwd=ROOT,text=True).splitlines()
         self.assertFalse(any('JARVIS-signature-CONFIDENTIEL' in n or '.jarvis-fitness-signing' in n for n in tracked))
         self.assertEqual(sha((ROOT/'downloads/JARVIS-Fitness-1.0.6-complet.apk').read_bytes()),'7df80180e56c64f6293b2d0c7e40286f57e94e0a812f061344e08c34b2438b82')
+    def test_update_continuity_with_110_without_rebranding_the_signing_archive(self):
+        previous=ROOT/'downloads/JARVIS-Fitness-1.1.0-evolution.apk'
+        self.assertEqual(sha(previous.read_bytes()),'8ccf8cd0d8029a468882d078fa873c166716b142f9fd63fa3d38c41091517040')
+        result=subprocess.check_output([JAVA,'-jar',str(TOOLS/'apksigner.jar'),'verify','--print-certs',str(previous)],text=True)
+        self.assertIn(IDENTITY['certificateSha256'],result)
+        with zipfile.ZipFile(previous) as old:
+            manifest=attrs(old.read('AndroidManifest.xml'))
+            self.assertIn(('manifest','package',3,IDENTITY['appId']),manifest)
+            self.assertIn(('manifest','versionCode',16,8),manifest)
+            self.assertEqual(old.read('classes9.dex'),self.apk.read('classes9.dex'))
+        self.assertEqual(IDENTITY['appName'],'Yanis Fitness Evolution')
+        self.assertGreater(IDENTITY['versionCode'],8)
+        with zipfile.ZipFile(ROOT.parent/'.jarvis-fitness-signing/JARVIS-signature-CONFIDENTIEL.zip') as backup:
+            self.assertEqual(json.loads(backup.read('identity.json')),CREATION)
 if __name__=='__main__':unittest.main()

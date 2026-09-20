@@ -13,7 +13,8 @@ JAVA = os.environ.get('JAVA_BIN', str(ROOT / '.cache/java-tools/jdk4py/java-runt
 BASE = ROOT / '.cache/reference/base.apk'
 PRIVATE = ROOT.parent / '.jarvis-fitness-signing'
 CONFIG = json.loads((ROOT / 'complete-hotfix/manifest.json').read_text())
-WEB_SHA = 'd581bf4058ef0079d727cef521066f3c06227e1b11d4d467d3ed3a69655000e6'
+RELEASE = json.loads((ROOT / 'evolution/android/release.json').read_text())
+WEB_SHA = RELEASE['webSha256']
 APKSIGNER_SHA = 'e709f014757e9bdf2997452bcfe6d49861df5d530e86bbb6b2fa04baf94f7c03'
 def sha(data): return hashlib.sha256(data).hexdigest()
 def run(*args): subprocess.run([str(a) for a in args], cwd=ROOT, check=True)
@@ -38,9 +39,13 @@ def dex_classes(data):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=pathlib.Path, default=ROOT / 'downloads/JARVIS-Fitness-1.1.0-evolution.apk')
+    parser.add_argument('--output', type=pathlib.Path, default=ROOT / RELEASE['output'])
     args = parser.parse_args()
-    identity = json.loads((ROOT / 'evolution/android/identity.json').read_text())
+    creation = json.loads((ROOT / 'evolution/android/identity.json').read_text())
+    # Immutable signing identity is separate from mutable release branding/version.
+    identity = {**creation, **{k: RELEASE[k] for k in ['appName', 'version', 'versionCode']}}
+    identity['installation'] = 'in-place update of 1.1.0; remains parallel to 1.0.6'
+    assert identity['versionCode'] > creation['versionCode']
     assert identity['userAuthorizedNewIdentity'] is True
     assert identity['appId'] not in ['app.jarvis.fitness', 'app.jarvis.fitness.fixed', 'app.jarvis.fitness.complete']
     assert sha(BASE.read_bytes()) == CONFIG['base']['sha256']
@@ -51,9 +56,9 @@ def main():
     assert sha((ROOT / native_report['source']).read_bytes()) == native_report['sourceSha256'], 'Recompile native source'
     classes = pathlib.Path(native_report['output'])
     assert sha((classes / 'app/jarvis/fitness/JarvisSpeechPlugin.class').read_bytes()) == native_report['classSha256']
-    run('node', ROOT / 'evolution/spokesperson/build.mjs')
+    run('node', ROOT / ('evolution/' + RELEASE['webStage'] + '/build.mjs'))
     web_path = CONFIG['bundle']['path'].removeprefix('assets/public/')
-    bundle = (ROOT / '.cache/spokesperson-web' / web_path).read_bytes()
+    bundle = (ROOT / ('.cache/' + RELEASE['webStage'] + '-web') / web_path).read_bytes()
     assert sha(bundle) == WEB_SHA, 'New web revision needs renewed validation and release pin'
     assert bundle.count(b'V 1.0.6') == 1
     bundle = bundle.replace(b'V 1.0.6', ('V ' + identity['version']).encode())
@@ -114,7 +119,7 @@ def main():
         with zipfile.ZipFile(PRIVATE / 'JARVIS-signature-CONFIDENTIEL.zip') as z:
             assert set(z.namelist()) == {'jarvis-evolution.p12', 'password.txt', 'identity.json', 'A-LIRE.txt'}
             z.extractall(secret)
-        assert json.loads((secret / 'identity.json').read_text()) == identity
+        assert json.loads((secret / 'identity.json').read_text()) == creation
         for file in secret.iterdir(): file.chmod(0o600)
         run(JAVA, '-jar', TOOLS / 'apksigner.jar', 'sign', '--ks', secret / 'jarvis-evolution.p12', '--ks-pass', 'file:' + str(secret / 'password.txt'),
             '--ks-key-alias', 'jarvis-evolution', '--v1-signing-enabled', 'false', '--v2-signing-enabled', 'true', '--v3-signing-enabled', 'true',
@@ -138,12 +143,12 @@ def main():
         web = [n for n in dst.namelist() if n.startswith('assets/public/') and not n.endswith('/')]
         assert len(web) == 272
     report = dict(identity=identity, baseApkSha256=sha(BASE.read_bytes()), apkSha256=sha(candidate.read_bytes()),
-        webBundleSha256=sha(bundle), validatedStage3WebSha256=WEB_SHA, changedEntries=changed, webFiles=272, unchangedWebFiles=271,
+        webBundleSha256=sha(bundle), validatedStage4WebSha256=WEB_SHA, changedEntries=changed, webFiles=272, unchangedWebFiles=271,
         nativeDexFiles=9, byteIdenticalDexFiles=8, originalClasses=original_count, resultingClasses=len(all_classes),
         removedSpeechClasses=sorted(removed), newSpeechClasses=sorted(plugin), unchangedClassesInRebuiltDex=sorted(retained),
         nativeSourceSha256=native_report['sourceSha256'], nativeDexSha256=sha(native_dex.read_bytes()),
         nativeRoundTripExact=True, signedFromRestoredPrivateBackup=True, signatureVerified=['v2', 'v3'], alignmentVerified=True,
-        deviceTested=False, stagesIncluded=[1, 2, 3], stagesNotYetImplemented=[4, 5, 6, 7, 'general conversational AI'])
+        deviceTested=False, stagesIncluded=RELEASE['stagesIncluded'], stagesNotYetImplemented=[5, 6, 7, 'general conversational AI'])
     # Expose the deliverable only after every integrity/signature check succeeds.
     temporary_output = args.output.with_suffix('.apk.tmp')
     shutil.copyfile(candidate, temporary_output)
