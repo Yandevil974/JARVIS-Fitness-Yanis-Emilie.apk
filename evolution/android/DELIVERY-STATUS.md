@@ -1,0 +1,20 @@
+# État de livraison vérifié — 20 septembre 2026
+
+L’utilisateur demande désormais un APK à tester **avant l’IA conversationnelle**, contrairement au report initial de toute installation à la fin.
+
+## Disponibilité constatée dans l’environnement actuel
+
+- La connexion GitHub fonctionne à nouveau. La branche de session a été récupérée et avancée sans modification destructive jusqu’au commit distant `23fcb8a3852fbf9575e993e8cd77c4360badf2be` : sources des étapes 1–6 présentes.
+- Le commit local d’étape 7 annoncé dans la conversation, `4acc669d86d6d715d14f68b392709a7adcbfb93d`, est absent des objets locaux et non disponible via l’API GitHub. Son envoi avait échoué pour défaut d’authentification.
+- Les sources `evolution/notifications/`, le candidat signé `.cache/notifications-native/candidate.apk` et le répertoire privé de signature antérieur ne sont pas présents dans l’environnement retrouvé. Ne pas prétendre pouvoir livrer ce candidat ni réexécuter ses anciens tests sans restauration.
+- La dernière livraison publique vérifiée est **Yanis Fitness Evolution 1.2.0, étapes 1–4 seulement**, inchangée : 24 872 409 octets, SHA-256 `3a92b5fda83f68ad205599fb4349aaae776b651c67b414e9b8021b99bdedcc26`.
+
+[Téléchargement direct de la 1.2.0](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/1283a534015e4cbbc57fdc5aa8d0c62c839ee5db/downloads/Yanis-Fitness-Evolution-1.2.0.apk)
+
+Ce lien ne remplace pas la demande d’une version contenant les étapes 1–7. Il permet seulement un test partiel de la version publiée.
+
+## Conditions pour une nouvelle livraison
+
+Restaurer les travaux non publiés de l’étape 7 et la signature permanente depuis leurs sauvegardes, puis reconstruire et vérifier le véritable APK destiné au téléchargement. Ne pas générer une nouvelle clé ou une troisième identité, ne pas renommer l’ancien APK pour le présenter comme une nouvelle version, ne pas publier d’archive de signature. La sauvegarde confidentielle antérieure porte le nom `JARVIS-signature-CONFIDENTIEL.zip` ; sa conservation externe n’a pas été confirmée.
+
+L’IA reste en attente. Les tests et empreintes du candidat cités dans la conversation sont des résultats antérieurs, pas une preuve de disponibilité actuelle du fichier.

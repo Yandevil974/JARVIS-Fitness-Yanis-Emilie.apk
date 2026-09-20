@@ -1,5 +1,7 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
+> **Demande de test avant l’IA :** la dernière version actuellement téléchargeable est la **1.2.0 (étapes 1–4)**. Le candidat des étapes 1–7 annoncé dans la conversation n’est pas disponible dans l’environnement retrouvé. [État vérifié et restauration nécessaire](evolution/android/DELIVERY-STATUS.md).
+
 ## Développement en cours — étape 6
 
 **Les décisions et leur suivi sont implémentés et testés dans le web cumulatif.** Accepter, refuser ou reporter une adaptation, relire puis confirmer ; une acceptation chiffrée ne modifie qu’une séance compatible explicitement choisie. Historique par profil conservé à l’export/import, reports à réexaminer sans application automatique et suivi fondé sur les vraies séries enregistrées, y compris les séances partielles. Le refus n’est pas contourné par l’ancien calcul de charge sur les mêmes données. [Fonctionnement et limites](evolution/decisions/README.md).

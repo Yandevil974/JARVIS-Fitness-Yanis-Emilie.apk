@@ -17,7 +17,11 @@ L’application complète fournie par l’utilisateur est la référence. Le dos
 
 Annoncer l’étape suivante à chaque étape terminée. Ne pas présenter une inspection statique de la voix comme un test réussi sur téléphone.
 
-## Installation reportée à la fin à la demande de l’utilisateur
+## Nouvelle demande : tester avant l’IA
+
+L’utilisateur demande maintenant le lien d’un APK avant de poursuivre l’IA. Le candidat d’étape 7 et la signature privée doivent être restaurés ; seule la 1.2.0 publique (étapes 1–4) est actuellement vérifiée et disponible. [État de livraison constaté](android/DELIVERY-STATUS.md). La consigne historique ci-dessous est donc remplacée par cette demande de test intermédiaire.
+
+## Historique — installation initialement reportée à la fin
 
 L’utilisateur a précisé : « Je vais installer quand t’auras terminé. On poursuit ». Le développement continue dans l’ordre validé **sans exiger d’installation intermédiaire**. Pas de nouvel APK pour les étapes 5–6 : la 1.2.0 reste une livraison historique des étapes 1–4. L’emballage final devra intégrer les étapes suivantes, garder le nom **Yanis Fitness Evolution**, le package et la signature permanents, puis subir à nouveau les tests sur le contenu réellement empaqueté.
 
