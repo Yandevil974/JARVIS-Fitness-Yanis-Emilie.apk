@@ -1,3 +1,5 @@
+> **Distribution actuelle : 1.0.6 complète.** Ce dossier correspond aux sources plus anciennes de l’archive (complétées par le correctif 1.0.5). Il ne contient pas toutes les fonctions de `JARVIS-Fitness.apk` ajouté ensuite. **Ne pas utiliser son build React pour remplacer les assets de la version complète.** La procédure actuelle, qui conserve toutes les fonctions du nouvel APK, est dans [`../complete-hotfix/`](../complete-hotfix/).
+
 # Mise à jour 1.0.4
 
 Fiabilisation des déplacements liés, correction des informations de photos, bilans d’équipe datés et versionnés, validation avant sauvegarde et protection de l’aperçu web. **Les programmes et la sauvegarde de Yanis sont conservés.**

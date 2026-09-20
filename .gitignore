@@ -20,3 +20,6 @@ JARVIS-Fitness-Source/public/runtime.css
 
 # Browser screenshots are test output, not application sources.
 JARVIS-Fitness-Source/tests/screenshots/
+
+**/__pycache__/
+**/*.pyc
