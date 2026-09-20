@@ -1,6 +1,14 @@
 # JARVIS Fitness — Yanis & Émilie
 
-## Version actuelle : **1.0.6 complète**, basée sur l’APK ajouté le 20 septembre
+## Évolution en cours — rappels et échéances
+
+L’étape 1 est **implémentée et testée dans l’aperçu web de l’application complète** : mensurations distinctes du poids, retards persistants, reports datés, suivis simultanés et profils indépendants. **58 tests réussis** (27 moteur/intégration, 31 navigateur).
+
+**Cette évolution n’est pas encore dans l’APK ci-dessous.** La clé privée ayant signé la 1.0.6 n’est plus disponible dans l’environnement restauré ; la continuité de signature doit être résolue avant une nouvelle livraison Android. Aucun nouveau certificat/package n’a été créé pour la contourner. Ne pas désinstaller l’application qui contient vos données.
+
+[Étape 1 : code, tests et reproduction](evolution/reminders/README.md) · [Plan validé — prochaine étape : voix et microphone Android](evolution/README.md). L’IA conversationnelle générale reste pour la fin.
+
+## Dernier APK livré : **1.0.6 complète**, basé sur l’APK ajouté le 20 septembre
 
 ### [Télécharger JARVIS Fitness Complet (APK)](downloads/JARVIS-Fitness-1.0.6-complet.apk?raw=true)
 
@@ -17,7 +25,7 @@ Le premier correctif 1.0.5 utilisait l’archive de sources, plus ancienne que c
 - Comparaison des **11 rubriques** et de leurs **28 onglets Yanis / 27 onglets Émilie**, en affichage téléphone et grand écran.
 - **21 tests navigateur réussis**, dont import de la sauvegarde fournie, 1RM / charges calculées, guidage vocal, illustrations, pause/reprise et validation du chrono. **10 tests de conservation du code et des ressources** réussis.
 
-Les fonctions de l’APK fourni sont conservées, notamment : bilan 1RM, charges personnalisées, guidage vocal de séance, RIR, coach conversationnel, thèmes clair/sombre, illustrations, échauffements et étirements guidés, paramètres et panneau montre/ceinture. Les limites Android existantes pour les capteurs et les notifications ne sont pas modifiées.
+Les fonctions de l’APK fourni sont conservées, notamment : bilan 1RM, charges personnalisées, guidage vocal de séance, RIR, coach local à règles, thèmes clair/sombre, illustrations, échauffements et étirements guidés, paramètres et panneau montre/ceinture. Les limites Android existantes pour les capteurs et les notifications ne sont pas modifiées.
 
 ### Installation sans perdre de données
 
