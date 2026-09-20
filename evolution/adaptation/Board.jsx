@@ -7,7 +7,13 @@ import {
 import { context } from "../appointments/engine.mjs";
 import { today } from "../reminders/engine.mjs";
 import css from "./adaptation.css";
-export function createAdaptation({ React, useApp, getExercise, voice }) {
+export function createAdaptation({
+  React,
+  useApp,
+  getExercise,
+  voice,
+  DecisionControls = null,
+}) {
   const { useState, useEffect } = React;
   function Board() {
     const { p } = useApp();
@@ -47,7 +53,11 @@ export function createAdaptation({ React, useApp, getExercise, voice }) {
         <header>
           <span className="je-kicker">DONNÉES RÉELLES · RÈGLES LOCALES</span>
           <h2>Faire évoluer mon entraînement</h2>
-          <p>Comparer avant de proposer. Le programme reste inchangé.</p>
+          <p>
+            {DecisionControls
+              ? "Comparer avant de décider. Toute modification exige votre confirmation."
+              : "Comparer avant de proposer. Le programme reste inchangé."}
+          </p>
         </header>
         <p className="je-note">
           Réévaluation ≠ test maximal : utilise tes séances habituelles. Ni
@@ -200,11 +210,14 @@ export function createAdaptation({ React, useApp, getExercise, voice }) {
             </article>
           </>
         )}
-        <small>
-          Lecture seule à cette étape : aucune charge, série, séance ou décision
-          enregistrée par cette analyse. Les choix accepté/refusé/reporté seront
-          ajoutés à l’étape suivante.
-        </small>
+        {DecisionControls && <DecisionControls analysis={analysis} />}
+        {!DecisionControls && (
+          <small>
+            Lecture seule à cette étape : aucune charge, série, séance ou
+            décision enregistrée par cette analyse. Les choix
+            accepté/refusé/reporté seront ajoutés à l’étape suivante.
+          </small>
+        )}
       </section>
     );
   }

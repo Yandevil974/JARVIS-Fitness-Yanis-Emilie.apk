@@ -11,15 +11,15 @@ L’application complète fournie par l’utilisateur est la référence. Le dos
 3. **JARVIS porte-parole : implémenté, testé et embarqué.** Accueil facultatif désactivé par défaut, priorités expliquées et attribuées, choix de voix/débit/silence, Pourquoi/Répéter/Plus tard. Aucun micro automatique. 75 tests JS et 49 tests navigateur cumulatifs réussis ; ceux du navigateur ont été relancés sur le web extrait du nouvel APK. [Détail](spokesperson/README.md).
 4. **Rendez-vous interactifs : implémentés, testés et embarqués en 1.2.0.** Avant/après séance, bilan hebdomadaire, mensurations et photos facultatives. Brouillons par profil, relecture puis confirmation, historiques existants conservés. 94 tests JS et 60 navigateur cumulatifs réussis sur le web de l’APK signé. [Détail](appointments/README.md).
 5. **Propositions d’adaptation : implémentées et testées dans le web cumulatif, pas encore dans un nouvel APK.** Comparaison prudente de deux réalisations, hausse/maintien/allègement expliqués ou données insuffisantes, prise en compte des ressentis, aucune mutation. Réévaluation sans test maximal. 125 tests JS et 68 navigateur cumulatifs. [Détail et limites](adaptation/README.md).
-6. **Prochaine étape — mémoire des décisions :** accepté/refusé/reporté, suivi, historique. **Confirmation obligatoire avant modification du programme.**
-7. Notifications Android application fermée : autorisations, programmation, annulation après saisie, dédoublonnage, discrétion sur écran verrouillé.
+6. **Décisions et suivi : implémentés et testés dans le web cumulatif, pas encore dans un nouvel APK.** Accepter/refuser/reporter, relecture puis confirmation, cible compatible unique, historique par profil et suivi des vraies séries après clôture. Refus respecté par le calcul historique de charge ; report sans application automatique. 154 tests JS et 77 navigateur cumulatifs. [Détail et limites](decisions/README.md).
+7. **Prochaine étape — notifications Android application fermée :** autorisations, programmation, annulation après saisie, dédoublonnage, discrétion sur écran verrouillé.
 8. **IA conversationnelle générale en dernier**, conformément à la décision de l’utilisateur. Aucun fournisseur, budget ou transfert cloud n’a été choisi ou implémenté.
 
 Annoncer l’étape suivante à chaque étape terminée. Ne pas présenter une inspection statique de la voix comme un test réussi sur téléphone.
 
 ## Installation reportée à la fin à la demande de l’utilisateur
 
-L’utilisateur a précisé : « Je vais installer quand t’auras terminé. On poursuit ». Le développement continue dans l’ordre validé **sans exiger d’installation intermédiaire**. Pas de nouvel APK pour l’étape 5 : la 1.2.0 reste une livraison historique des étapes 1–4. L’emballage final devra intégrer les étapes suivantes, garder le nom **Yanis Fitness Evolution**, le package et la signature permanents, puis subir à nouveau les tests sur le contenu réellement empaqueté.
+L’utilisateur a précisé : « Je vais installer quand t’auras terminé. On poursuit ». Le développement continue dans l’ordre validé **sans exiger d’installation intermédiaire**. Pas de nouvel APK pour les étapes 5–6 : la 1.2.0 reste une livraison historique des étapes 1–4. L’emballage final devra intégrer les étapes suivantes, garder le nom **Yanis Fitness Evolution**, le package et la signature permanents, puis subir à nouveau les tests sur le contenu réellement empaqueté.
 
 L’installation, l’import, les permissions et les essais acoustiques restent **non vérifiés sur appareil**, volontairement reportés ; cette autorisation de poursuivre ne vaut pas validation Android. La conservation externe de l’archive de signature reste également à confirmer, sans bloquer le développement.
 

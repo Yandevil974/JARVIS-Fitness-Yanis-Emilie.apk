@@ -107,7 +107,7 @@ function simpleScheme(e) {
   return !sets || (/^\d+$/.test(sets) && Number(sets) === Number(e.targetSets));
 }
 // Prescription and exercise order, not session name or invented semantic matches.
-function prescription(s) {
+export function prescription(s) {
   const ex = rows(s.exercises);
   if (!ex.length || new Set(ex.map((e) => e.exerciseId)).size !== ex.length)
     return null;
@@ -149,7 +149,7 @@ function prescription(s) {
     fields,
   ]);
 }
-function sample(s, exerciseId) {
+export function sample(s, exerciseId) {
   if (s.status !== "completed")
     return {
       error:

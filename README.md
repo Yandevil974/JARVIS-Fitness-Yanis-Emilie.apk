@@ -1,10 +1,10 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
-## Développement en cours — étape 5
+## Développement en cours — étape 6
 
-**Les propositions d’adaptation sont implémentées et testées dans le web cumulatif.** Elles comparent les deux dernières réalisations d’un exercice, montrent les données utilisées et distinguent hausse, maintien, allègement ou données insuffisantes. Aucune modification automatique ; réévaluation sans test maximal. [Règles et limites](evolution/adaptation/README.md).
+**Les décisions et leur suivi sont implémentés et testés dans le web cumulatif.** Accepter, refuser ou reporter une adaptation, relire puis confirmer ; une acceptation chiffrée ne modifie qu’une séance compatible explicitement choisie. Historique par profil conservé à l’export/import, reports à réexaminer sans application automatique et suivi fondé sur les vraies séries enregistrées, y compris les séances partielles. Le refus n’est pas contourné par l’ancien calcul de charge sur les mêmes données. [Fonctionnement et limites](evolution/decisions/README.md).
 
-**125 tests JS et 68 tests navigateur cumulatifs réussis.** L’utilisateur installera à la fin : pas de nouvel APK à cette étape, pas de test téléphone revendiqué. La 1.2.0 ci-dessous reste inchangée et **ne contient pas l’étape 5**. Prochaine étape : **6 — décisions accepté/refusé/reporté et suivi**, puis notifications application fermée et IA générale en dernier.
+**154 tests JS et 77 tests navigateur cumulatifs réussis.** L’utilisateur installera à la fin : pas de nouvel APK à cette étape, pas de test téléphone revendiqué. La 1.2.0 ci-dessous reste inchangée et **ne contient pas les étapes 5–6**. Prochaine étape : **7 — notifications Android application fermée**. L’IA conversationnelle générale reste en dernier.
 
 ## Dernier APK intermédiaire 1.2.0 — rendez-vous interactifs
 
