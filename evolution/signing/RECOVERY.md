@@ -1,5 +1,8 @@
 # Recherche de la clé de signature — 20 septembre 2026
 
+> **Suite de cet audit :** l’utilisateur a autorisé une nouvelle identité pour installation parallèle. [L’APK 1.1.0 Évolution](../android/README.md) utilise une nouvelle clé, avec sauvegarde privée restaurée et testée. L’ancienne clé n’a pas été retrouvée. Le constat ci-dessous est celui d’avant cette décision.
+
+
 L’utilisateur a demandé de suspendre l’étape 4 pour traiter la livraison Android, en commençant par la récupération de la clé. **Aucune nouvelle clé n’a été générée, aucun APK n’a été resigné, aucun changement d’identifiant n’a été fait.**
 
 ## Identité à conserver

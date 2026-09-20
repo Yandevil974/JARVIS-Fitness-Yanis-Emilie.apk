@@ -1,0 +1,10 @@
+{
+  "appId": "app.jarvis.fitness.evolution",
+  "appName": "JARVIS Fitness Évolution",
+  "version": "1.1.0",
+  "versionCode": 8,
+  "certificateSha256": "0849b90901a80eecbd587bd41d5acfbfb120096889bb979dfa37564a8de23225",
+  "previousCertificateSha256": "5c6af2226164d32ab145c3bedd789e1ed4d30170858122cfaa76bb01c9bd62e7",
+  "installation": "parallel, not an in-place update of 1.0.6",
+  "userAuthorizedNewIdentity": true
+}

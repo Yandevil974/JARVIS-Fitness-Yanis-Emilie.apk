@@ -23,3 +23,9 @@ JARVIS-Fitness-Source/tests/screenshots/
 
 **/__pycache__/
 **/*.pyc
+
+# Private signing backups must never be published.
+**/.jarvis-fitness-signing/
+**/JARVIS-signature-CONFIDENTIEL.zip
+**/*.pfx
+**/*.bks

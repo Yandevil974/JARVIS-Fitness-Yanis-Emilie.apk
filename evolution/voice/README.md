@@ -1,5 +1,8 @@
 # Étape 2 — voix et microphone
 
+> **Mise à jour livraison :** les étapes 1 à 3 sont désormais intégrées dans [l’APK signé 1.1.0 Évolution](../android/README.md), sous une nouvelle identité autorisée pour installation parallèle. Les anciens constats « pas d’APK / intégration DEX à faire » ci-dessous décrivent le checkpoint de cette étape, avant livraison. **Les essais Android réels restent à faire.**
+
+
 > Le compte rendu chiffré et le hash ci-dessous correspondent au checkpoint étape 2 (`e8c32f5`). Le contrôleur partagé et le plugin ont depuis été enrichis pour [l’étape 3 — porte-parole](../spokesperson/README.md), avec choix de voix, débit et silence. Les commandes reconstruisent désormais ces sources communes actualisées ; le harnais natif comporte 20 scénarios. Voir l’étape 3 pour les résultats cumulatifs et le hash du nouvel aperçu complet.
 
 **État : interface intégrée et testée sur le web ; module Android réécrit, compilé contre les API réelles et testé avec services simulés. Pas encore intégré aux DEX d’un nouvel APK complet, signé ou essayé sur téléphone. L’étape n’est donc pas déclarée validée sur Android.**

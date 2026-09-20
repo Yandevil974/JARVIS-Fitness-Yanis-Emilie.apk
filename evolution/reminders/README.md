@@ -1,5 +1,8 @@
 # Étape 1 — rappels et échéances fiables
 
+> **Mise à jour livraison :** les étapes 1 à 3 sont désormais intégrées dans [l’APK signé 1.1.0 Évolution](../android/README.md), sous une nouvelle identité autorisée pour installation parallèle. Les anciens constats « pas d’APK / intégration DEX à faire » ci-dessous décrivent le checkpoint de cette étape, avant livraison. **Les essais Android réels restent à faire.**
+
+
 **Statut : code web intégré, aperçu fonctionnel, tests réussis. Livraison APK bloquée par la continuité de signature ; aucun changement à l’application déjà installée.**
 
 ## Fonctionnement

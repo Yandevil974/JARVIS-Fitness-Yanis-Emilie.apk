@@ -1,5 +1,8 @@
 # Étape 3 — JARVIS porte-parole de l’équipe
 
+> **Mise à jour livraison :** les étapes 1 à 3 sont désormais intégrées dans [l’APK signé 1.1.0 Évolution](../android/README.md), sous une nouvelle identité autorisée pour installation parallèle. Les anciens constats « pas d’APK / intégration DEX à faire » ci-dessous décrivent le checkpoint de cette étape, avant livraison. **Les essais Android réels restent à faire.**
+
+
 **Implémentation intégrée et testée dans l’application web complète. Le module vocal Android a été enrichi, compilé contre les API réelles et testé avec des services simulés. Aucun nouvel APK signé, aucune intégration DEX et aucun essai acoustique sur téléphone à ce stade.**
 
 L’utilisateur a validé le passage à cette étape après le compte rendu de l’étape 2. L’étape suivante est **4 — rendez-vous interactifs**. L’IA conversationnelle générale reste réservée à la fin.

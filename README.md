@@ -1,20 +1,28 @@
 # JARVIS Fitness — Yanis & Émilie
 
-## Évolution en cours — rappels, voix et porte-parole de l’équipe
+## Nouvel APK : JARVIS Fitness Évolution 1.1.0
 
-L’étape 1 est **implémentée et testée dans l’aperçu web de l’application complète** : mensurations distinctes du poids, retards persistants, reports datés, suivis simultanés et profils indépendants. **58 tests réussis** (27 moteur/intégration, 31 navigateur).
+### [Télécharger l’APK 1.1.0 Évolution](downloads/JARVIS-Fitness-1.1.0-evolution.apk?raw=true)
 
-L’étape 2 ajoute les **diagnostics vocaux, la dictée modifiable avant envoi, l’annulation et la priorité des annonces de chrono**. Interface intégrée, module Android réécrit et compilé contre les API réelles : **21 tests JS, 39 tests navigateur et 14 scénarios natifs simulés réussis**. L’intégration native dans les DEX de l’APK complet et la validation sur téléphone restent à faire. [Documentation voix / microphone](evolution/voice/README.md).
+**Version de validation Android : APK complet construit et signé, essais sur téléphone encore nécessaires.** Il contient les correctifs du chrono et les étapes 1 à 3 : rappels, nouveau module natif de dictée/lecture et point d’équipe avec réglages vocaux. Ce n’est pas encore la fin du plan d’évolution.
 
-L’étape 3 ajoute **le point d’équipe expliqué, l’accueil vocal facultatif, les réglages de voix/débit/silence et les commandes Pourquoi / Répéter / Plus tard**. Elle conserve les rubriques complètes et les rappels. Validation cumulative : **75 tests JS, 49 tests navigateur et 20 scénarios natifs simulés réussis** ; compilation Android API 34 réussie. [Documentation du porte-parole](evolution/spokesperson/README.md). **Prochaine étape : les rendez-vous interactifs avant/après séance et les bilans.**
+**Installation à côté de l’ancienne application, autorisée par l’utilisateur.** La clé de la 1.0.6 n’a pas été retrouvée. Cette version a une nouvelle identité, `app.jarvis.fitness.evolution`, et une nouvelle signature sauvegardée en privé. Elle ne remplace pas automatiquement la 1.0.6 et ne récupère pas seule ses données.
 
-**Ces évolutions ne sont pas encore dans l’APK ci-dessous.** La clé privée ayant signé la 1.0.6 n’est plus disponible dans l’environnement restauré ; la continuité de signature doit être résolue avant une nouvelle livraison Android. Aucun nouveau certificat/package n’a été créé pour la contourner. Ne pas désinstaller l’application qui contient vos données.
+1. Exporter le JSON **à jour** depuis l’ancienne application.
+2. Installer **JARVIS Fitness Évolution**, puis importer ce JSON dans **Mon profil → Données & sauvegardes**.
+3. Vérifier Yanis et Émilie, fermer/rouvrir, puis tester voix, micro et chrono. **Ne désinstaller aucune ancienne application.**
 
-[Étape 1 : code, tests et reproduction](evolution/reminders/README.md) · [Plan validé — prochaine étape : rendez-vous interactifs](evolution/README.md). L’IA conversationnelle générale reste pour la fin.
+[Guide d’installation et essais](downloads/INSTALLATION-1.1.0.md) · [Construction/signature et contrôles](evolution/android/README.md) · [Rapport de conservation](downloads/JARVIS-Fitness-1.1.0-evolution.fidelity.json)
 
-## Dernier APK livré : **1.0.6 complète**, basé sur l’APK ajouté le 20 septembre
+**Contrôles réussis :** 75 tests JS, 49 tests navigateur sur le web extrait de l’APK, 8 tests de livraison et 5 tests de ressources Android. Les 20 scénarios vocaux simulés passent aussi après conversion du DEX embarqué vers la JVM. Signature v2/v3 et alignement vérifiés. **Aucun de ces tests ne remplace un essai sur téléphone.**
 
-### [Télécharger JARVIS Fitness Complet (APK)](downloads/JARVIS-Fitness-1.0.6-complet.apk?raw=true)
+La sauvegarde confidentielle de la signature est remise séparément dans la conversation, jamais dans ce dépôt public. La télécharger et la conserver en lieu privé ; elle est distincte des sauvegardes sportives.
+
+**Prochaine priorité : validation sur le téléphone. Ensuite : étape 4, rendez-vous interactifs.** L’IA conversationnelle générale reste pour la fin. [Plan validé](evolution/README.md).
+
+## Historique — APK 1.0.6 complète, conservé sans modification
+
+[Télécharger l’ancienne 1.0.6](downloads/JARVIS-Fitness-1.0.6-complet.apk?raw=true)
 
 Cette version reprend **l’intégralité de `JARVIS-Fitness.apk`** ajouté au dépôt, et conserve le correctif du chronomètre / de la page blanche.
 

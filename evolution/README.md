@@ -4,9 +4,11 @@ L’application complète fournie par l’utilisateur est la référence. Le dos
 
 ## État au 20 septembre 2026
 
-1. **Rappels et échéances : implémentation web intégrée et testée.** Voir [le détail et les commandes](reminders/README.md). Aperçu utilisable ; **pas encore livré dans un nouvel APK**.
-2. **Voix et microphone : interface implémentée et testée ; validation Android réelle en attente.** Module natif réécrit et compilé contre les API réelles. Les tests de cette étape sont repris dans la validation cumulative de l’étape 3. Diagnostics, permissions, écoute/transcription/lecture, brouillon modifiable, annulation, erreurs et priorité des chronos. **Restent l’intégration DEX dans l’APK complet, la signature et les essais réels sur téléphone.** [Détail et reproduction](voice/README.md).
-3. **JARVIS porte-parole de l’équipe : implémentation web intégrée et testée**, autorisée après validation de l’étape 2. Accueil facultatif désactivé par défaut, priorités attribuées aux coaches et expliquées, choix de voix/débit/silence, Pourquoi/Répéter/Plus tard. Aucun micro automatique. Validation cumulative : **75 tests JS, 49 tests navigateur et 20 scénarios natifs simulés réussis** ; module Android enrichi et compilé contre les API réelles. **Pas de nouvel APK ni d’essai sur téléphone.** [Détail et reproduction](spokesperson/README.md).
+**Livraison intermédiaire 1.1.0 Évolution :** les étapes 1 à 3 sont maintenant embarquées dans un APK signé, installé en parallèle sous une nouvelle identité autorisée. [Livraison et contrôles](android/README.md). **Priorité immédiate : import des données et essais réels sur téléphone.**
+
+1. **Rappels et échéances : implémentés, testés et embarqués.** Voir [le détail](reminders/README.md).
+2. **Voix et microphone : nouveau module natif intégré aux DEX de l’APK complet.** Diagnostics, dictée modifiable avant envoi, annulation et priorité des chronos. Compilation API et simulations réussies, dont un passage après aller-retour du DEX final. **Validation acoustique et permissions réelles encore à faire.** [Détail](voice/README.md).
+3. **JARVIS porte-parole : implémenté, testé et embarqué.** Accueil facultatif désactivé par défaut, priorités expliquées et attribuées, choix de voix/débit/silence, Pourquoi/Répéter/Plus tard. Aucun micro automatique. 75 tests JS et 49 tests navigateur cumulatifs réussis ; ceux du navigateur ont été relancés sur le web extrait du nouvel APK. [Détail](spokesperson/README.md).
 4. **Prochaine étape — rendez-vous interactifs** : avant/après séance, bilan hebdomadaire, mensurations mensuelles et photos facultatives.
 5. Adaptations fondées sur les données : comparaisons pertinentes, propositions expliquées, pas de conclusions inventées ; bilan distinct d’un test maximal.
 6. Mémoire des décisions : accepté/refusé/reporté, suivi, historique. **Confirmation obligatoire avant modification du programme.**
@@ -15,8 +17,10 @@ L’application complète fournie par l’utilisateur est la référence. Le dos
 
 Annoncer l’étape suivante à chaque étape terminée. Ne pas présenter une inspection statique de la voix comme un test réussi sur téléphone.
 
-## Blocage de la livraison Android
+## Nouvelle identité Android autorisée
 
-L’APK signé 1.0.6 dans `downloads/` reste la dernière livraison. Il **ne contient pas** les étapes 1 à 3. La clé privée et son mot de passe utilisés pour signer ce binaire ne sont plus disponibles dans l’environnement restauré. La continuité de signature n’est donc pas assurée.
+La clé de la 1.0.6 n’a pas été retrouvée dans l’espace accessible. Après explication des conséquences, l’utilisateur a autorisé une nouvelle application installée à côté, avec export/import et sans suppression de l’ancienne.
 
-Aucun nouvel APK, package ou certificat n’a été créé pour contourner ce blocage. Ne pas promettre une mise à jour installable par-dessus la 1.0.6, ni demander de désinstaller l’application contenant les données. Résoudre la signature et organiser une conservation privée durable de la clé avant toute nouvelle diffusion Android ; ne jamais publier la clé ou son mot de passe dans Git.
+La **1.1.0 Évolution**, package `app.jarvis.fitness.evolution`, est construite et signée. La nouvelle clé n’est ni dans Git ni dans les caches ; une archive privée a été restaurée et utilisée pour signer l’APK. Elle est fournie séparément à l’utilisateur, qui doit la télécharger et la sauvegarder hors de cet environnement. La copie externe reste à confirmer.
+
+Ce n’est pas une mise à jour installable par-dessus la 1.0.6. **Ne pas désinstaller ni effacer l’ancienne application.** La validation sur téléphone reste ouverte ; ne pas présenter cette version comme « tout testé et opérationnel sur Android ». Voir [l’installation](../downloads/INSTALLATION-1.1.0.md).
