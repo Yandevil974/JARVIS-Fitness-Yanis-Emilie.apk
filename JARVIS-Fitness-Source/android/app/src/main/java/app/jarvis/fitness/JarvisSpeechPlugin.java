@@ -9,6 +9,9 @@ import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.Voice;
+import org.json.JSONArray;
+import java.util.Set;
 import android.speech.tts.UtteranceProgressListener;
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
@@ -76,8 +79,43 @@ public class JarvisSpeechPlugin extends Plugin {
             result.put("frenchAvailable", frenchAvailable && !destroyed);
             // EXTRA_PREFER_OFFLINE is a preference, not an offline guarantee.
             result.put("offlineGuaranteed", false);
+            result.put("voiceOptionsVersion", 1);
+            result.put("voices", voiceList());
             call.resolve(result);
         });
+    }
+    private JSONArray voiceList() {
+        JSONArray list = new JSONArray();
+        if (!initialized || engine == null || destroyed) return list;
+        try {
+            Set<Voice> voices = engine.getVoices();
+            if (voices != null) for (Voice voice : voices) {
+                if (!"fr".equals(voice.getLocale().getLanguage())) continue;
+                JSObject item = new JSObject();
+                item.put("id", voice.getName()); item.put("name", voice.getName());
+                item.put("lang", voice.getLocale().toLanguageTag());
+                item.put("networkRequired", voice.isNetworkConnectionRequired());
+                list.put(item);
+            }
+        } catch (RuntimeException ignored) { /* Default French voice may still be usable. */ }
+        return list;
+    }
+    private String configureVoice(PluginCall call) {
+        Double rate = call.getDouble("rate", 0.98);
+        if (rate == null || rate.isNaN() || rate.isInfinite() || rate < 0.75 || rate > 1.25) return "INVALID_RATE";
+        String name = call.getString("voiceId", "");
+        if (name.isEmpty()) {
+            // Never inherit another profile's explicit voice.
+            if (engine.setLanguage(Locale.FRANCE) < TextToSpeech.LANG_AVAILABLE) return "LANGUAGE_UNAVAILABLE";
+        } else {
+            Voice selected = null;
+            Set<Voice> voices = engine.getVoices();
+            if (voices != null) for (Voice v : voices) {
+                if (name.equals(v.getName()) && "fr".equals(v.getLocale().getLanguage())) { selected = v; break; }
+            }
+            if (selected == null || engine.setVoice(selected) == TextToSpeech.ERROR) return "VOICE_UNAVAILABLE";
+        }
+        return engine.setSpeechRate(rate.floatValue()) == TextToSpeech.ERROR ? "TTS_ERROR" : null;
     }
     private boolean recognitionAvailable() {
         try { return SpeechRecognizer.isRecognitionAvailable(getContext()); }
@@ -188,6 +226,10 @@ public class JarvisSpeechPlugin extends Plugin {
             if (text.isEmpty()) { call.resolve(); return; }
             if (text.length() > TextToSpeech.getMaxSpeechInputLength()) { reject(call, "TEXT_TOO_LONG"); return; }
             stopSpeechInternal("CANCELLED");
+            try {
+                String configurationError = configureVoice(call);
+                if (configurationError != null) { reject(call, configurationError); return; }
+            } catch (RuntimeException error) { reject(call, "TTS_ERROR"); return; }
             speaking = call; utteranceId = "jarvis-" + (++sequence);
             final String id = utteranceId;
             speechDeadline = () -> {

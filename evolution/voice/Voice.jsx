@@ -3,7 +3,7 @@ import css from './voice.css';
 
 export function createVoice({ React, useApp, native, isAndroid, Icon }) {
   const controller = createVoiceController({ native, isAndroid, Icon });
-  const { useEffect, useState, useRef } = React;
+  const { useEffect, useLayoutEffect, useState, useRef } = React;
   function useVoice() {
     const [state, setState] = useState(controller.getSnapshot());
     useEffect(() => {
@@ -16,7 +16,7 @@ export function createVoice({ React, useApp, native, isAndroid, Icon }) {
   function Observer() {
     const { p } = useApp();
     const state = useVoice();
-    useEffect(() => {
+    useLayoutEffect(() => {
       controller.setContext({ profile: p?.id, enabled: !!p?.preferences.voice,
         timerActive: !!(p?.timer && !p.timer.done && !p.timer.paused) });
     }, [p?.id, p?.preferences.voice, p?.timer?.id, p?.timer?.done, p?.timer?.paused]);

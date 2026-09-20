@@ -1,3 +1,4 @@
+import { playbackSettings, browserVoices } from './playback.mjs';
 // One audio owner for dictation, replies and priority timer cues. No automatic send.
 export const MESSAGES = {
   PERMISSION_DENIED: 'Microphone refusé. Autorisez-le dans les paramètres Android ou du navigateur ; le clavier reste disponible.',
@@ -11,6 +12,9 @@ export const MESSAGES = {
   BACKGROUND: 'Voix arrêtée au passage en arrière-plan.',
   LANGUAGE_UNAVAILABLE: 'La voix française n’est pas installée ou prise en charge. Vérifiez les paramètres de synthèse vocale.',
   TTS_NOT_READY: 'La synthèse vocale n’est pas encore prête. Réessayez le diagnostic.',
+  INVALID_RATE: 'Le débit vocal demandé est invalide. Choisissez un débit proposé dans les réglages.',
+  SILENT: 'Le mode silencieux est activé. Désactivez-le dans les réglages vocaux pour entendre JARVIS.',
+  VOICE_UNAVAILABLE: 'La voix choisie n’est plus disponible. Actualisez les voix et choisissez-en une autre ou la voix par défaut.',
   TEXT_TOO_LONG: 'Ce texte est trop long pour une lecture unique. Il reste disponible à l’écran.',
   TTS_ERROR: 'La synthèse vocale a échoué. Le texte reste disponible.',
   TIMEOUT: 'Le service vocal ne répond pas. Réessayez ; le clavier reste disponible.',
@@ -34,6 +38,7 @@ export function createVoiceController({ native, isAndroid = () => false, env = g
   let state = { phase: 'idle', error: '', code: null, detail: '', diagnostics: null };
   let context = { profile: null, timerActive: false, enabled: true };
   let epoch = 0, active = null, disposed = false;
+  let playback = { ...playbackSettings(), profileId: null };
   const subscribers = new Set();
   const publish = patch => { if (disposed) return; state = { ...state, ...patch }; subscribers.forEach(f => f(state)); };
   const fail = code => publish({ phase: 'error', code, error: MESSAGES[code] || MESSAGES.SERVICE_UNAVAILABLE, detail: '' });
@@ -85,7 +90,7 @@ export function createVoiceController({ native, isAndroid = () => false, env = g
     return { protocolVersion: 2, platform: 'browser', recognitionAvailable: supported,
       microphone: 'à vérifier au lancement', ttsReady: !!env.speechSynthesis,
       frenchAvailable: voices.some(v => /^fr(?:-|$)/i.test(v.lang)),
-      languageStatus: voices.length ? 'known' : 'unknown', offlineGuaranteed: false };
+      languageStatus: voices.length ? 'known' : 'unknown', offlineGuaranteed: false, voiceOptionsVersion: 1, voices: browserVoices(env.speechSynthesis) };
   }
   async function diagnose() {
     if (active) return null;
@@ -146,9 +151,14 @@ export function createVoiceController({ native, isAndroid = () => false, env = g
     }
     return operation.promise;
   }
-  function speak(text, { enabled = true, priority = false, test = false } = {}) {
+  function speak(text, { enabled = true, priority = false, test = false, rate, voiceId, onlyIfIdle = false, owner = 'generic' } = {}) {
     if (disposed || !enabled || !String(text || '').trim()) return Promise.resolve(false);
     if (env.document?.hidden) return Promise.resolve(false);
+    if (playback.profileId !== null && playback.profileId !== context.profile) return Promise.resolve(false);
+    if (playback.silent) { if (test) fail('SILENT'); return Promise.resolve(false); }
+    if (onlyIfIdle && (active || state.phase === 'checking')) return Promise.resolve(false);
+    const spokenRate = priority ? 0.98 : playbackSettings({ rate: rate ?? playback.rate }).rate;
+    const chosenVoice = voiceId ?? playback.voiceIds[isAndroid() ? 'android' : 'browser'];
     if (!priority && (active?.kind === 'listen' || context.timerActive)) {
       if (test) fail(context.timerActive ? 'TIMER_ACTIVE' : 'BUSY');
       return Promise.resolve(false);
@@ -157,6 +167,7 @@ export function createVoiceController({ native, isAndroid = () => false, env = g
     if (!priority && active?.kind === 'cue') return Promise.resolve(false);
     cancel('CANCELLED', true);
     const operation = begin(priority ? 'cue' : 'speech', speakTimeout);
+    active.owner = owner;
     publish({ phase: 'speaking', error: '', code: null, detail: priority ? 'Annonce du chrono / de séance' : 'Lecture de JARVIS…' });
     (async () => {
       try {
@@ -166,16 +177,20 @@ export function createVoiceController({ native, isAndroid = () => false, env = g
           publish({ diagnostics: info });
           if (!info.ttsReady) throw { code: 'TTS_NOT_READY' };
           if (!info.frenchAvailable) throw { code: 'LANGUAGE_UNAVAILABLE' };
-          await native.speak({ text: String(text), requestId: String(operation.id) });
+          if ((chosenVoice || spokenRate !== 0.98) && info.voiceOptionsVersion !== 1) throw { code: 'UPDATE_REQUIRED' };
+          if (chosenVoice && !info.voices?.some(v => v.id === chosenVoice)) throw { code: 'VOICE_UNAVAILABLE' };
+          await native.speak({ text: String(text), requestId: String(operation.id), rate: spokenRate, voiceId: chosenVoice || '' });
           if (operation.current()) complete();
         } else {
           if (!env.speechSynthesis || !env.SpeechSynthesisUtterance) throw { code: 'TTS_ERROR' };
           const voices = env.speechSynthesis.getVoices?.() || [];
-          const french = voices.find(v => /^fr(?:-|$)/i.test(v.lang));
+          const available = voices.filter(v => /^fr(?:-|$)/i.test(v.lang));
+          const french = chosenVoice ? available.find(v => (v.voiceURI || v.name) === chosenVoice) : available[0];
+          if (chosenVoice && !french) throw { code: 'VOICE_UNAVAILABLE' };
           // Empty list can mean browser voices not yet loaded; never claim language verified.
           if (voices.length && !french) throw { code: 'LANGUAGE_UNAVAILABLE' };
           const utterance = new env.SpeechSynthesisUtterance(String(text));
-          utterance.lang = 'fr-FR'; utterance.rate = 0.98;
+          utterance.lang = 'fr-FR'; utterance.rate = spokenRate;
           if (french) utterance.voice = french;
           utterance.onend = () => operation.current() && complete();
           utterance.onerror = () => { if (operation.current()) { settle(false); fail('TTS_ERROR'); } };
@@ -193,6 +208,13 @@ export function createVoiceController({ native, isAndroid = () => false, env = g
     context = { ...context, ...next };
     if (profileChanged || (timerStarted && active?.kind !== 'cue') || (muted && active?.kind !== 'listen')) cancel('CANCELLED', true);
   }
+  function setPlaybackPreferences(values, profileId = null) {
+    const next = { ...playbackSettings(values), profileId };
+    const changed = JSON.stringify(next) !== JSON.stringify(playback);
+    playback = next;
+    if (changed && active && active.kind !== 'listen') cancel('CANCELLED', true);
+  }
+  function cancelOwner(owner) { if (active?.owner === owner) cancel('CANCELLED', true); }
   let nativeListener;
   const onVisibility = () => { if (env.document?.hidden) cancel('BACKGROUND'); };
   const onHide = () => cancel('BACKGROUND');
@@ -206,7 +228,7 @@ export function createVoiceController({ native, isAndroid = () => false, env = g
     })).then(handle => { if (disposed) handle?.remove(); else nativeListener = handle; }).catch(() => {});
   }
   return { getSnapshot: () => state, subscribe: fn => { subscribers.add(fn); return () => subscribers.delete(fn); },
-    diagnose, listen, cancel, speak, cue: (text, enabled = true) => speak(text, { enabled, priority: true }), setContext,
+    diagnose, listen, cancel, cancelOwner, setPlaybackPreferences, speak, cue: (text, enabled = true) => speak(text, { enabled, priority: true }), setContext,
     dispose() { cancel('CANCELLED', true); disposed = true; nativeListener?.remove(); subscribers.clear();
       env.document?.removeEventListener('visibilitychange', onVisibility); env.removeEventListener?.('pagehide', onHide); },
   };

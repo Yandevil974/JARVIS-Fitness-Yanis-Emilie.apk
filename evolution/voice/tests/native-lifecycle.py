@@ -30,21 +30,29 @@ SOURCES = {
 'android/speech/tts/UtteranceProgressListener.java': '''package android.speech.tts; public abstract class UtteranceProgressListener {
  public abstract void onStart(String id); public abstract void onDone(String id); public abstract void onError(String id);
  public void onError(String id,int code){onError(id);} public void onStop(String id,boolean interrupted){} }''',
+'org/json/JSONArray.java': '''package org.json; import java.util.*; public class JSONArray {
+ public List<Object> values=new ArrayList<>(); public JSONArray put(Object v){values.add(v);return this;} public int length(){return values.size();} }''',
+'android/speech/tts/Voice.java': '''package android.speech.tts; import java.util.*; public class Voice {
+ private String name; private Locale locale; private boolean network;
+ public Voice(String n,Locale l,boolean r){name=n;locale=l;network=r;} public String getName(){return name;}
+ public Locale getLocale(){return locale;} public boolean isNetworkConnectionRequired(){return network;} }''',
 'android/speech/tts/TextToSpeech.java': '''package android.speech.tts; import android.content.*; import android.os.*; import java.util.*; public class TextToSpeech {
  public interface OnInitListener { void onInit(int status); } public static int initStatus=0,language=0,result=0; public static TextToSpeech last;
- public UtteranceProgressListener listener; public String id; public boolean shutdown;
- public TextToSpeech(Context c,OnInitListener l){last=this;l.onInit(initStatus);} public int setLanguage(Locale l){return language;} public int setSpeechRate(float f){return 0;}
+ public UtteranceProgressListener listener; public String id; public boolean shutdown; public Voice chosen; public float rate; public int voiceResult=0,rateResult=0;
+ public TextToSpeech(Context c,OnInitListener l){last=this;l.onInit(initStatus);} public int setLanguage(Locale l){chosen=null;return language;} public int setSpeechRate(float f){rate=f;return rateResult;}
+ public Set<Voice> getVoices(){return new HashSet<>(Arrays.asList(new Voice("fr-local",Locale.FRANCE,false),new Voice("fr-network",Locale.CANADA_FRENCH,true),new Voice("en",Locale.US,false)));}
+ public int setVoice(Voice v){chosen=v;return voiceResult;}
  public int setOnUtteranceProgressListener(UtteranceProgressListener l){listener=l;return 0;} public static int getMaxSpeechInputLength(){return 4000;}
  public int speak(CharSequence text,int mode,Bundle params,String id){this.id=id;return result;}
  public int stop(){if(listener!=null&&id!=null)listener.onStop(id,true);return 0;} public void shutdown(){shutdown=true;} }''',
 'com/getcapacitor/JSObject.java': '''package com.getcapacitor; import java.util.*; public class JSObject {
- public Map<String,Object> values=new HashMap<>(); public JSObject put(String k,int v){values.put(k,v);return this;}
+ public Map<String,Object> values=new HashMap<>(); public JSObject put(String k,Object v){values.put(k,v);return this;} public JSObject put(String k,int v){values.put(k,v);return this;}
  public JSObject put(String k,boolean v){values.put(k,v);return this;} public JSObject put(String k,String v){values.put(k,v);return this;} }''',
 'com/getcapacitor/PermissionState.java': '''package com.getcapacitor; public enum PermissionState { GRANTED,DENIED,PROMPT; public String toString(){return name().toLowerCase();} }''',
 'com/getcapacitor/PluginCall.java': '''package com.getcapacitor; import java.util.*; public class PluginCall {
  public Map<String,String> input=new HashMap<>(); public int terminals; public String code; public JSObject output;
  public PluginCall(String id){input.put("requestId",id);} public String getString(String k,String fallback){return input.getOrDefault(k,fallback);}
- public void resolve(){resolve(null);} public void resolve(JSObject o){terminal();output=o;} public void reject(String message,String c){terminal();code=c;}
+ public Double getDouble(String k,Double fallback){return input.containsKey(k)?Double.valueOf(input.get(k)):fallback;} public void resolve(){resolve(null);} public void resolve(JSObject o){terminal();output=o;} public void reject(String message,String c){terminal();code=c;}
  private void terminal(){if(++terminals>1)throw new AssertionError("Call settled twice");} }''',
 'com/getcapacitor/Plugin.java': '''package com.getcapacitor; import android.content.Context; public class Plugin {
  public PermissionState permission=PermissionState.GRANTED; public int requests; public JSObject event;
@@ -78,6 +86,16 @@ public class LifecycleTest {
   {tests++;JarvisSpeechPlugin p=plugin();TextToSpeech.result=-1;PluginCall s=speech();p.speak(s);Handler.flush();ok(s.code.equals("TTS_ERROR"));close(p);}
   {tests++;JarvisSpeechPlugin p=plugin();SpeechRecognizer.available=false;PluginCall l=call("no-service");p.listen(l);Handler.flush();ok(l.code.equals("SERVICE_UNAVAILABLE"));close(p);}
   {tests++;int[] codes={9,6,7,2,1,3,8,10,12,13};String[] expected={"PERMISSION_DENIED","NO_SPEECH","NO_MATCH","NETWORK","NETWORK","AUDIO","BUSY","BUSY","LANGUAGE_UNAVAILABLE","LANGUAGE_UNAVAILABLE"};for(int i=0;i<codes.length;i++)ok(JarvisSpeechPlugin.recognitionError(codes[i]).equals(expected[i]));}
+  {tests++;JarvisSpeechPlugin p=plugin();PluginCall d=call("voices");p.diagnostics(d);Handler.flush();ok(d.output.values.get("voiceOptionsVersion").equals(1));
+   org.json.JSONArray voices=(org.json.JSONArray)d.output.values.get("voices");ok(voices.length()==2);boolean network=false;
+   for(Object row:voices.values){JSObject v=(JSObject)row;ok(((String)v.values.get("lang")).startsWith("fr-"));if(v.values.get("networkRequired").equals(true))network=true;}ok(network);close(p);}
+  {tests++;JarvisSpeechPlugin p=plugin();PluginCall s=speech();s.input.put("voiceId","fr-network");s.input.put("rate","1.2");p.speak(s);Handler.flush();TextToSpeech engine=TextToSpeech.last;
+   ok(engine.chosen.getName().equals("fr-network"));ok(Math.abs(engine.rate-1.2f)<0.001);engine.listener.onDone(engine.id);Handler.flush();ok(s.code==null&&s.terminals==1);
+   PluginCall defaults=speech();p.speak(defaults);Handler.flush();ok(engine.chosen==null);ok(Math.abs(engine.rate-0.98f)<0.001);close(p);}
+  {tests++;for(String name:new String[]{"deleted","en"}){JarvisSpeechPlugin p=plugin();PluginCall s=speech();s.input.put("voiceId",name);p.speak(s);Handler.flush();ok(s.code.equals("VOICE_UNAVAILABLE"));ok(TextToSpeech.last.id==null);close(p);}}
+  {tests++;for(String rate:new String[]{"NaN","Infinity","0.1","4"}){JarvisSpeechPlugin p=plugin();PluginCall s=speech();s.input.put("rate",rate);p.speak(s);Handler.flush();ok(s.code.equals("INVALID_RATE"));ok(TextToSpeech.last.id==null);close(p);}}
+  {tests++;JarvisSpeechPlugin p=plugin();TextToSpeech.last.voiceResult=-1;PluginCall s=speech();s.input.put("voiceId","fr-local");p.speak(s);Handler.flush();ok(s.code.equals("VOICE_UNAVAILABLE"));close(p);}
+  {tests++;JarvisSpeechPlugin p=plugin();TextToSpeech.last.rateResult=-1;PluginCall s=speech();p.speak(s);Handler.flush();ok(s.code.equals("TTS_ERROR"));close(p);}
   System.out.println(tests+" native lifecycle scenarios passed with simulated services (NOT a device test).");
  }
 }'''

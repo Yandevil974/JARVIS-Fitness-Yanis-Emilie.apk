@@ -1,5 +1,7 @@
 # Étape 2 — voix et microphone
 
+> Le compte rendu chiffré et le hash ci-dessous correspondent au checkpoint étape 2 (`e8c32f5`). Le contrôleur partagé et le plugin ont depuis été enrichis pour [l’étape 3 — porte-parole](../spokesperson/README.md), avec choix de voix, débit et silence. Les commandes reconstruisent désormais ces sources communes actualisées ; le harnais natif comporte 20 scénarios. Voir l’étape 3 pour les résultats cumulatifs et le hash du nouvel aperçu complet.
+
 **État : interface intégrée et testée sur le web ; module Android réécrit, compilé contre les API réelles et testé avec services simulés. Pas encore intégré aux DEX d’un nouvel APK complet, signé ou essayé sur téléphone. L’étape n’est donc pas déclarée validée sur Android.**
 
 Le dernier APK disponible reste la 1.0.6. La clé de signature est indisponible dans l’environnement restauré ; aucun nouveau certificat ou package n’a été créé. Voir [le plan et le blocage de livraison](../README.md).
