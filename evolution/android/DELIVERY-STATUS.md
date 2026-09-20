@@ -18,3 +18,11 @@ Ce lien ne remplace pas la demande d’une version contenant les étapes 1–7. 
 Restaurer les travaux non publiés de l’étape 7 et la signature permanente depuis leurs sauvegardes, puis reconstruire et vérifier le véritable APK destiné au téléchargement. Ne pas générer une nouvelle clé ou une troisième identité, ne pas renommer l’ancien APK pour le présenter comme une nouvelle version, ne pas publier d’archive de signature. La sauvegarde confidentielle antérieure porte le nom `JARVIS-signature-CONFIDENTIEL.zip` ; sa conservation externe n’a pas été confirmée.
 
 L’IA reste en attente. Les tests et empreintes du candidat cités dans la conversation sont des résultats antérieurs, pas une preuve de disponibilité actuelle du fichier.
+
+## Vérification après recherche de l’utilisateur
+
+L’utilisateur indique ne pas trouver l’archive confidentielle dans ses téléchargements. Cela ne prouve pas qu’aucune sauvegarde externe n’existe ; ne plus présenter sa possession comme acquise.
+
+Nouvelle recherche dans les fichiers accessibles sous `/home/user` (hors objets Git et certaines dépendances) : aucun fichier correspondant aux noms de signature, extensions `.jks`/`.keystore`/`.p12`, candidat APK ou étape 7. L’API Actions de ce dépôt retourne zéro artefact. La liste des secrets GitHub est inaccessible (HTTP 403 « Resource not accessible by integration »), ce qui n’équivaut pas à une liste vide. Aucun accès aux sauvegardes internes d’Arena n’est disponible parmi les outils de cette session.
+
+Prochaine piste de récupération : demander au support Arena si une restauration de la session antérieure est possible, notamment du commit non publié et du répertoire privé de signature. Ne pas garantir cette restauration. Ne pas transmettre de clé ou mot de passe dans un ticket public. Aucune nouvelle identité, migration ou désinstallation n’est autorisée par ce constat.
