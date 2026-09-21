@@ -1,0 +1,11 @@
+{
+  "version": "1.4.0",
+  "apk": "downloads/Yanis-Fitness-Evolution-1.4.0.apk",
+  "apkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "bundle": "assets/public/assets/index-CBCies4k.js",
+  "bundleSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
+  "originalCommit": "84e2986da2f004d4eae81e52a9a41e7b69e80f8d",
+  "originalPath": "JARVIS-Fitness.apk",
+  "originalApkSha256": "691488f08ada180de1022bf336b14024c71e52427cb2c43547ac3d53c8b8b5ab",
+  "status": "audit-in-progress-not-a-release"
+}

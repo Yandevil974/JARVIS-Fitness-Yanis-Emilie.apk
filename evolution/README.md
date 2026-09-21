@@ -8,7 +8,7 @@ L’application complète fournie par l’utilisateur est la référence. Les an
 
 Nouvelle installation séparée explicitement autorisée le 21 septembre (« Oui, on y va », puis « Poursuis »). Package `app.yanis.fitness.evolution.home`, nom inchangé **Yanis Fitness Evolution**. Les neuf DEX sont conservés, les sept étapes ci-dessous sont incluses et l’accueil approuvé est embarqué. 90 tests navigateur sur le web du nouvel APK, 150 tests de logique, 4 tests d’intégrité et 8 contrôles APK/récupération réussis. Pas de test physique/emulateur. [Signature actuelle à préserver](signing/HOME-IDENTITY.md).
 
-**Prochaine étape : installation/import/test sur téléphone, et confirmation de la conservation du ZIP privé. IA conversationnelle générale ensuite, toujours en pause.**
+**Priorité actuelle : [audit/correction des visuels d’exercice](media/README.md), après le signalement des dips et de mauvaises correspondances dans toutes les catégories. Audit documenté, pas encore de nouvel APK corrigé. Conserver la signature 1.4.0. IA conversationnelle toujours en pause.**
 
 ## Historique précédant l’autorisation de la nouvelle installation
 
