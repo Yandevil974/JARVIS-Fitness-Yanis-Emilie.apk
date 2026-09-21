@@ -1,5 +1,7 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
+> **Priorité avant l’IA — 21 septembre :** [trois propositions d’accueil plus JARVIS](design/accueil-jarvis/README.md), **à valider avant toute intégration**. L’APK reste inchangé. [🚩 Passation pour une nouvelle conversation](PASSATION.md).
+
 ## Version complète à tester avant l’IA — 1.3.0
 
 ### [📥 Télécharger Yanis Fitness Evolution 1.3.0](downloads/Yanis-Fitness-Evolution-1.3.0.apk?raw=true)
