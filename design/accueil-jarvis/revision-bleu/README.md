@@ -1,5 +1,7 @@
 # Révision 03 — orbe bleu animé, clair et sombre coloré
 
+> **Livraison 1.4.0 :** cet accueil est maintenant inclus dans [le nouvel APK signé](../../../downloads/INSTALLATION-1.4.0.md), après autorisation d’une installation séparée. Les études ci-dessous restent des références historiques.
+
 **21 septembre 2026 — maquettes validées par « Parfait je valide ».**
 
 L’intégration fonctionnelle est maintenant dans [`../../../evolution/home/`](../../../evolution/home/README.md), avec 4 tests Node et 90 tests navigateur réussis. Aucun nouvel APK : signature actuelle à récupérer. Les fichiers de ce dossier restent les références visuelles autonomes, avec données d’exemple et boutons inertes.

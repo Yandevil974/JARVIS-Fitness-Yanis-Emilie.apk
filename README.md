@@ -1,8 +1,15 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
-> **Accueil validé — 21 septembre :** [intégration au web complet, 4 tests d’intégrité et 90 tests navigateur réussis](evolution/home/README.md). **Pas encore de nouvel APK : signature à récupérer.** Le téléchargement 1.3.0 ci-dessous reste inchangé et ne contient pas cette refonte. [🚩 Passation](PASSATION.md).
+> **Nouvelle version complète — 1.4.0 :** [Télécharger l’APK avec l’accueil validé](downloads/Yanis-Fitness-Evolution-1.4.0.apk?raw=true) · [Installation et transfert des données](downloads/INSTALLATION-1.4.0.md) · [Contrôles de livraison](evolution/android/HOME-RELEASE.md) · [🚩 Passation](PASSATION.md). Installation séparée autorisée, anciennes applications préservées. IA générale non incluse ; test réel sur téléphone à effectuer.
 
-## Version complète à tester avant l’IA — 1.3.0
+## Livraison actuelle — 1.4.0
+
+Toutes les étapes 1–7 + orbe JARVIS bleu tournoyant, clair/sombre colorés et carte séance d’origine. Nom **Yanis Fitness Evolution**, package `app.yanis.fitness.evolution.home`. [Sauvegarde privée de signature : consignes et récupération](evolution/signing/HOME-IDENTITY.md). Ne pas désinstaller l’ancienne application ; export/import JSON des deux profils.
+
+**90 tests navigateur sur le contenu du nouvel APK signé, 150 tests de logique, 4 tests d’intégrité et 8 contrôles APK/récupération réussis.** Neuf DEX inchangés ; trois builds signés identiques ; aucun test physique/emulateur.
+
+
+## Livraison précédente conservée — 1.3.0
 
 ### [📥 Télécharger Yanis Fitness Evolution 1.3.0](downloads/Yanis-Fitness-Evolution-1.3.0.apk?raw=true)
 

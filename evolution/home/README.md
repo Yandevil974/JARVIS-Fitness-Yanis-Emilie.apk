@@ -1,4 +1,10 @@
-# Accueil JARVIS validé — intégration au web complet, APK non livré
+# Accueil JARVIS validé — intégré à la livraison complète 1.4.0
+
+## Mise à jour — livraison Android disponible
+
+Après autorisation explicite d’une nouvelle installation séparée (« Oui, on y va », puis « Poursuis »), **l’APK 1.4.0 est signé et vérifié**, avec cet accueil et les sept étapes. [Téléchargement/import](../../downloads/INSTALLATION-1.4.0.md) · [Recette et contrôles](../android/HOME-RELEASE.md). 90 tests navigateur ont été rejoués avec succès sur le web extrait du nouvel APK signé. La 1.3.0 reste inchangée ; aucun test physique n’est revendiqué. La nouvelle signature est documentée dans `evolution/signing/HOME-IDENTITY.md` et ne doit pas être régénérée.
+
+**Les sections ci-dessous décrivent l’intégration web initiale et le blocage historique, désormais levé par cette nouvelle autorisation — pas par récupération de l’ancienne clé.**
 
 ## Autorisation et état
 

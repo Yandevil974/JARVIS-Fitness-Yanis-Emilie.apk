@@ -2,25 +2,38 @@
 
 **Mise à jour : 21 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
-## État actuel — validation reçue et accueil intégré au candidat web
+## État actuel — APK 1.4.0 complet fabriqué, signé et vérifié
 
-**Dernière réponse de l’utilisateur : « Parfait je valide ».** Il valide la révision 03 (orbe bleu tournoyant, clair/sombre coloré, ancienne carte photo). L’intégration de l’accueil est désormais autorisée. Ne pas lui redemander de valider les mêmes maquettes. Cela n’autorise ni l’IA ni une nouvelle identité Android.
+**Dernière décision :** après explication de l’installation séparée et du transfert JSON, l’utilisateur a choisi **« Oui, on y va »**, puis écrit **« Poursuis »**. Cette nouvelle autorisation a été utilisée pour **une** nouvelle identité. Ne pas la régénérer lors d’une reprise. L’IA générale reste en pause.
 
-**Travail réalisé : `evolution/home/`.** Le web du véritable APK 1.3.0 est étendu, pas remplacé par les anciennes sources React. Orbe bleu avec pause/mouvements réduits, carte d’origine déplacée en premier avec ses callbacks inchangés, thèmes colorés et contrôles reliés aux vrais profils. Les sept étapes et toutes les sections restent disponibles ; les formulaires complets peuvent être plus longs que dans une capture de maquette.
+### Livrable actuel
 
-- `evolution/home/README.md` : périmètre, reproduction, limites, prochaine étape.
-- `evolution/home/baseline.json`, `build.mjs`, `Home.jsx`, `home.css` : entrée 1.3.0 épinglée et intégration.
-- `evolution/home/validation.json` : **4 tests Node + 90 tests navigateur réussis**, les 90 dans un passage complet, aucun échec/ignoré. Deux profils/deux thèmes, six largeurs ; conservation des 11 rubriques et onglets à 1440 px pour les deux profils ; parcours mobiles, chronos, voix, bilans, décisions et notifications simulées.
-- Bundle candidat SHA-256 : **`0586fc9c2402f6580eb20c6fd5ee49c735cd6cd257b08bf613bca1dda65ecb94`**.
-- Inventaire : 272 fichiers web, 271 inchangés ; seules `t2` (composition accueil) et `I3` (raccourcis mobiles de l’accueil) changent parmi les déclarations existantes. Moteurs et observateurs des sept étapes identiques.
-- Candidat temporaire `.cache/home-web/` servi sur **5183** ; reconstruire avec `node evolution/home/build.mjs` si le cache disparaît. La référence web pour tests est l’APK livré extrait sous `.cache/home-reference/` sur 5184. Ne jamais servir la racine ou des données privées.
-- **Aucun nouvel APK produit. L’APK 1.3.0 publié est inchangé et n’inclut PAS la refonte.** Aucun test physique, aucune nouvelle validation native. Le navigateur est une origine distincte du téléphone ; ne pas importer de sauvegarde sensible dans un aperçu partagé.
+- **`downloads/Yanis-Fitness-Evolution-1.4.0.apk`**, 24 905 185 octets : étapes 1–7 et accueil approuvé (orbe bleu tournoyant, clair/sombre colorés, carte photo d’origine).
+- SHA-256 **`30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7`**.
+- Notice : `downloads/INSTALLATION-1.4.0.md`. Rapports : `.fidelity.json`, `.apk.sha256`, `evolution/android/validation-home-release.json`, `evolution/android/HOME-RELEASE.md`.
+- Nom exact **Yanis Fitness Evolution**, version **1.4.0 / code 11**, nouveau package **`app.yanis.fitness.evolution.home`**. Installation à côté des anciennes, transfert explicite des données par JSON. Les APK 1.3.0 et antérieurs restent inchangés.
+- **90 tests navigateur réussis dans un passage complet sur le web extrait du nouvel APK signé**, 150 tests de logique, 4 tests d’intégrité, 8 tests APK/signature/récupération. Trois builds signés identiques. Signature v2/v3 et alignement vérifiés. Aucun test physique/emulateur, pas de promesse de son/micro/notifications OEM validés sur téléphone.
+- 272 fichiers web, 271 inchangés ; **les neuf DEX Android sont identiques octet pour octet à la 1.3.0**. Quatre entrées ZIP changent : manifeste, table de ressources (package), configuration Capacitor et bundle web. Toutes les étapes natives sont conservées.
+- Bundle web embarqué SHA **`f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26`** ; correspond au candidat d’accueil validé `0586fc9c2402f6580eb20c6fd5ee49c735cd6cd257b08bf613bca1dda65ecb94`, avec uniquement `V 1.3.0` remplacé par `V 1.4.0`.
 
-### Prochaine étape et blocage
+### Nouvelle signature — ne plus perdre la continuité
 
-La prochaine étape est la livraison Android, **bloquée par la signature actuelle absente**. Restaurer le matériel privé autorisé, vérifier le certificat, puis préparer une recette de mise à jour intégrant le candidat web validé avec un versionCode augmenté et les contrôles d’inventaire/signature. `evolution/android/build.py --new-parallel` / `release-next.json` restent les recettes de **l’ancienne livraison 1.3.0** ; ne pas les lancer en croyant qu’elles emballent déjà la refonte. Ne pas remplacer un téléchargement par un ancien APK renommé, ni recréer une identité sans accord. Ne pas redemander à l’utilisateur de fouiller une archive déjà déclarée introuvable. Pas de secret dans le chat.
+- Autorisation : `evolution/android/home-authorization.json`.
+- Identité immuable : `evolution/android/identity-home.json` ; recette mutable : `release-home.json`, `build-home.py`.
+- Certificat **`7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd`**.
+- Privé actuellement présent : `.private/yanis-fitness-evolution-home/` (hors Git, jamais servi par HTTP).
+- ZIP **`Yanis-Fitness-Evolution-1.4-SAUVEGARDE-PRIVEE.zip`** présenté via le visualiseur pendant la fabrication. Ce ZIP contient les secrets ; **conservation externe non confirmée**. Demander de le conserver en deux endroits privés, sans réclamer le contenu ou un secret dans le chat.
+- Copie chiffrée publique : `evolution/signing/evolution-home.encrypted.json`. Récupération documentée dans `evolution/signing/HOME-IDENTITY.md` via `signing-home.py`, **sans initialisation**. Un secret ou le ZIP privé reste indispensable.
+- Chaque build signe après une restauration réelle de la sauvegarde chiffrée et vérifie le certificat. La présence d’une copie chiffrée ne remplace pas la conservation du secret.
+- Ne pas lancer les anciennes recettes `signing-next.py` / `build.py --new-parallel` pour cette livraison : elles concernent la 1.3.0. Garder les anciennes identités et leurs APK intacts.
 
-**IA conversationnelle toujours en pause.** Annoncer clairement qu’il s’agit d’un candidat web vérifié, pas d’une mise à jour Android installable livrée.
+### Prochaine étape
+
+Donner le **lien direct de la 1.4.0**, puis installation/import/test sur téléphone pour Yanis et Émilie, sans désinstaller les anciennes applications. La nouvelle installation portera le même nom : appuyer sur Ouvrir après l’installation puis vérifier la version 1.4.0. Accorder à nouveau les permissions et activer explicitement les rappels par profil si souhaité. Éviter les rappels doublons provenant des anciennes installations. Confirmer la conservation de la sauvegarde privée.
+
+L’aperçu navigateur sur 5183 sert le contenu de **l’APK signé** depuis `.cache/home-signed-web/`. Ce n’est pas une installation Android. Les fichiers de cache et outils peuvent disparaître ; les sources, l’APK public, les rapports et la sauvegarde chiffrée sont dans Git. Ne jamais servir la racine du dépôt ni les fichiers privés. Les tests de référence utilisent la 1.3.0 extraite sur 5184.
+
+**IA conversationnelle toujours en pause, prévue seulement après le retour de test demandé.**
 
 ## 1. Historique des demandes visuelles — priorité avant toute IA
 
@@ -87,9 +100,9 @@ Révision 03 : contrôles réussis **clair/sombre × Yanis/Émilie × sept large
 
 ### Suite après validation
 
-La révision 03 a été approuvée par **« Parfait je valide »** et intégrée sous `evolution/home/`. Consulter l’état actuel en tête de document : tests web terminés, livraison Android bloquée par la signature. Ne plus attendre une validation graphique déjà reçue et ne pas commencer l’IA à la place.
+La révision 03 a été approuvée par **« Parfait je valide »** et intégrée sous `evolution/home/`. Consulter l’état actuel en tête de document : nouvelle installation séparée explicitement autorisée, APK 1.4.0 signé et contrôlé. Ne plus attendre une validation graphique déjà reçue et ne pas commencer l’IA à la place.
 
-## 3. Application existante livrée — à conserver
+## 3. Livraison précédente 1.3.0 — à conserver, remplacée comme téléchargement principal par la 1.4.0
 
 **Yanis Fitness Evolution 1.3.0**, versionCode 10, étapes 1 à 7 incluses, pas d’IA conversationnelle générale.
 
@@ -110,7 +123,7 @@ Cette application séparée a été autorisée expressément après la perte de 
 
 176 tests JS ; 86 parcours navigateur sur un même APK signé (78 lors du passage complet + 8 après correction des doubles/sélecteurs de test, sans changement de code applicatif) ; 25 scénarios natifs de notifications et 20 de voix avec services simulés, également après conversion du DEX final. Huit tests du nouvel APK, neuf contrôles publics historiques, treize tests de signature/récupération, cinq tests de ressources. L’ancienne archive privée absente a un test distinct explicitement ignoré. Trois builds signés identiques. Les détails sont dans `evolution/notifications/README.md`.
 
-## 4. Signature — point de vigilance pour un futur APK
+## 4. Historique de la signature 1.3.0 — nouvelle identité 1.4.0 décrite en tête
 
 **Constat du 21 septembre :** le workspace a été retrouvé au commit initial `98291d5`. Les sources ont été récupérées depuis la branche distante par fetch et avance rapide, sans changer de branche ni écraser de modifications. Le dossier privé de la nouvelle signature **n’est pas présent dans cet environnement retrouvé**. Cela n’efface pas l’APK déjà publié ni les sources de l’étape 7 reconstruites et poussées.
 
@@ -143,6 +156,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Reprends Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. J’ai validé par « Parfait je valide » l’organisation B, l’orbe bleu tournoyant, les modes clair/sombre colorés et l’ancienne carte séance avec l’homme sur la machine. L’intégration fonctionnelle est dans `evolution/home/` : 4 tests d’intégrité et 90 tests navigateur réussis, les sept étapes conservées. Aucun nouvel APK n’a été livré ; la 1.3.0 reste inchangée. Prochaine étape : récupération de la signature existante puis recette de mise à jour et validation de l’APK réel. Ne recrée pas de clé/application et ne me redemande pas de fouiller l’archive introuvable. L’IA reste en pause. Conserve les fonctions, les deux profils, les données et l’identité. Préviens-moi avec 🚩 lorsqu’une passation devient prudente, sans inventer une limite exacte du chat.
+> Reprends Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. J’ai validé l’accueil puis autorisé explicitement une nouvelle installation complète (« Oui, on y va », puis « Poursuis »). L’APK 1.4.0 inclut les étapes 1–7 et l’orbe bleu animé, les modes clair/sombre colorés et la carte avec l’homme sur la machine. Il est signé, sous `downloads/`, avec 90 tests navigateur sur le web du nouvel APK, 150 tests de logique et contrôles d’intégrité/signature réussis. Prochaine étape : mon installation/import/test sur téléphone et conservation du ZIP privé. Ne recrée pas de clé : l’identité est `identity-home.json`, package `app.yanis.fitness.evolution.home`, récupération dans `evolution/signing/HOME-IDENTITY.md`. Les anciennes applications restent intactes. L’IA reste en pause. Préviens-moi avec 🚩 lorsqu’une passation devient prudente, sans inventer une limite exacte du chat.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.

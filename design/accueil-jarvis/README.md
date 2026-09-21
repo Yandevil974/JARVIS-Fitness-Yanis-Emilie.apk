@@ -1,5 +1,7 @@
 # Accueil JARVIS — orbe bleu animé, clair et sombre coloré
 
+> **Livraison 1.4.0 :** cet accueil est maintenant inclus dans [le nouvel APK signé](../../downloads/INSTALLATION-1.4.0.md), après autorisation d’une installation séparée. Les études ci-dessous restent des références historiques.
+
 **Étude visuelle du 21 septembre 2026. Aucune intégration à l’application.** L’utilisateur demande à voir les idées avant de valider et place cette étape avant l’IA conversationnelle. Lire aussi [`../../PASSATION.md`](../../PASSATION.md).
 
 ## Validation reçue et intégration

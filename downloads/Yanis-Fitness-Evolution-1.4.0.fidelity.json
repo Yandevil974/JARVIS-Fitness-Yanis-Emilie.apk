@@ -1,0 +1,51 @@
+{
+  "identity": {
+    "appId": "app.yanis.fitness.evolution.home",
+    "appName": "Yanis Fitness Evolution",
+    "version": "1.4.0",
+    "versionCode": 11,
+    "certificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+    "previousCertificateSha256": "4d4fbd84463300631bb19e0186f4efc51c589a2e27da1ab56dc1f1ad5479e7dc",
+    "installation": "parallel to all previous applications; explicit JSON migration",
+    "userAuthorizedNewIdentity": true,
+    "authorizationDate": "2026-09-21"
+  },
+  "version": "1.4.0",
+  "versionCode": 11,
+  "apkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "baseApkSha256": "4c2efeaea0d1d59e9bc329f4b3651e2a860a1416bad900c23a15e0249622a323",
+  "apkBytes": 24905185,
+  "validatedHomeBundleSha256": "0586fc9c2402f6580eb20c6fd5ee49c735cd6cd257b08bf613bca1dda65ecb94",
+  "packagedWebSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
+  "packagedWebDifference": "V 1.3.0 -> V 1.4.0 only after approved home build",
+  "changedEntries": [
+    "AndroidManifest.xml",
+    "assets/capacitor.config.json",
+    "assets/public/assets/index-CBCies4k.js",
+    "resources.arsc"
+  ],
+  "webFiles": 272,
+  "unchangedWebFiles": 271,
+  "nativeDexFiles": 9,
+  "byteIdenticalDexFiles": 9,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "alignmentVerified": true,
+  "signedFromRestoredEncryptedBackup": true,
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "approvedHomeIncluded": true,
+  "generalConversationalAiIncluded": false,
+  "deviceTested": false,
+  "signerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
+  "externalPrivateBackupRetentionConfirmed": false
+}

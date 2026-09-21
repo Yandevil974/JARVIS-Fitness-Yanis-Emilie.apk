@@ -2,6 +2,16 @@
 
 L’application complète fournie par l’utilisateur est la référence. Les anciennes sources `JARVIS-Fitness-Source` servent aux outils/tests et à la lecture du code, **pas à reconstruire seules l’application complète**.
 
+## Livraison actuelle — 1.4.0, étapes 1–7 et accueil validé
+
+[**Télécharger l’APK complet 1.4.0**](../downloads/Yanis-Fitness-Evolution-1.4.0.apk?raw=true) · [Installation/import sans suppression](../downloads/INSTALLATION-1.4.0.md) · [Rapport de livraison](android/HOME-RELEASE.md).
+
+Nouvelle installation séparée explicitement autorisée le 21 septembre (« Oui, on y va », puis « Poursuis »). Package `app.yanis.fitness.evolution.home`, nom inchangé **Yanis Fitness Evolution**. Les neuf DEX sont conservés, les sept étapes ci-dessous sont incluses et l’accueil approuvé est embarqué. 90 tests navigateur sur le web du nouvel APK, 150 tests de logique, 4 tests d’intégrité et 8 contrôles APK/récupération réussis. Pas de test physique/emulateur. [Signature actuelle à préserver](signing/HOME-IDENTITY.md).
+
+**Prochaine étape : installation/import/test sur téléphone, et confirmation de la conservation du ZIP privé. IA conversationnelle générale ensuite, toujours en pause.**
+
+## Historique précédant l’autorisation de la nouvelle installation
+
 ## Accueil validé — 21 septembre 2026
 
 Après validation explicite « Parfait je valide », [la refonte est intégrée au candidat web complet](home/README.md) : orbe bleu animé, clair/sombre colorés, carte séance d’origine remontée. **4 tests Node et 90 tests navigateur réussis**. Les sept étapes restent inchangées. **Aucun nouvel APK produit** : récupération de la signature actuelle puis recette de mise à jour Android nécessaires. La 1.3.0 ci-dessous reste la livraison antérieure, sans cette refonte. IA toujours en pause.
