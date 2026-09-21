@@ -2,6 +2,26 @@
 
 **Mise à jour : 21 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
+## 🚩 Reprise après interruption — passation réactualisée
+
+**Dernière demande de l’utilisateur : « Et rajoute la reactualisation de la passation car ca commence a ralentir le chat ».** L’utilisateur a interrompu la réponse précédente : ne pas supposer qu’une explication, un comparatif ou une demande de validation lui a effectivement été montré. Une nouvelle conversation est conseillée maintenant pour poursuivre l’audit ; aucun compteur exact de limite de chat n’est disponible.
+
+### Ce qui est effectivement sauvegardé et revérifié
+
+- L’audit existe au commit **`58acfff2a69b84c98ebe66373d20a5155430ecb8`**, vérifié présent sur la branche distante. Pas besoin de recommencer son inventaire depuis zéro.
+- **Les 6 tests de caractérisation/provenance ont été relancés avec succès pendant cette réactualisation.** Ils vérifient le périmètre et les constats enregistrés ; ils ne certifient pas que tous les gestes sont corrects.
+- Le SHA-256 de l’APK 1.4.0 a été revérifié : **`30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7`**, inchangé. **Aucun correctif des médias n’est encore intégré ou livré.** Les 90 tests de livraison antérieurs ne prouvent pas la correspondance anatomique des démonstrations.
+- Les cinq fichiers privés attendus de la signature 1.4.0 (keystore, mot de passe, identité, secret de récupération, ZIP) sont présents dans cet environnement ; leur contenu n’a pas été affiché. **Cela ne garantit pas leur présence dans une autre session.** Vérifier à nouveau avant un futur build et restaurer cette même identité si nécessaire. La conservation externe reste non confirmée.
+
+### Ordre de reprise recommandé
+
+1. Lire `evolution/media/README.md`, puis `review/findings.json` et les inventaires. Le problème porte sur **toutes les catégories**, pas seulement le GIF des dips.
+2. Compléter l’inspection **image par image** des animations longues et vérifier les cadrages/orientations réellement affichés dans les fiches, agrandissements et chronos. Les planches première/médiane ne suffisent pas pour valider ces animations.
+3. Conserver les anciens visuels corrects ; corriger les associations par **exercice, matériel, position et contexte sol/piscine**, sans modifier les exercices pour les faire correspondre aux images. Priorités identifiées : dips/triceps, approches d’échauffement, collisions Tabata/piscine, étirements erronés.
+4. Le comparatif photographique des dips est une **proposition non approuvée**, pas un remplacement déjà accepté. Si un autre support est nécessaire, le montrer directement dans le chat et expliquer s’il s’agit d’animation ou de deux positions fixes. **Ne pas remplacer globalement les dessins par des photos** sous prétexte de cette demande.
+5. Garder un état de revue explicite pour chaque correspondance. Une image générique ou l’absence signalée de démonstration ne satisfait pas « tous ont leur image correspondante » ; ne pas annoncer l’audit terminé avec ces lacunes.
+6. Intégrer et tester les corrections sur toutes les surfaces, y compris les minuteurs déjà enregistrés, sans perdre les deux profils, les charges, les données, les sept étapes ou l’accueil validé. Ensuite seulement produire une mise à jour **avec le package et la signature 1.4.0 existants**, numéro de version augmenté, contrôles du nouvel APK et lien direct. **Aucune nouvelle identité autorisée ; IA en pause.**
+
 ## Priorité actuelle — audit/correction des visuels d’exercice (en cours)
 
 Après réception du lien 1.4.0, l’utilisateur signale que les images animées ne sont plus comme avant et demande **toutes les catégories** : musculation, échauffement, piscine, Tabata, étirements ; exemple dips/triceps avec tête incohérente. **IA toujours en pause.**
@@ -172,6 +192,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Reprends Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. J’ai validé l’accueil puis autorisé explicitement une nouvelle installation complète (« Oui, on y va », puis « Poursuis »). L’APK 1.4.0 inclut les étapes 1–7 et l’orbe bleu animé, les modes clair/sombre colorés et la carte avec l’homme sur la machine. Il est signé, sous `downloads/`, avec 90 tests navigateur sur le web du nouvel APK, 150 tests de logique et contrôles d’intégrité/signature réussis. Prochaine étape : mon installation/import/test sur téléphone et conservation du ZIP privé. Ne recrée pas de clé : l’identité est `identity-home.json`, package `app.yanis.fitness.evolution.home`, récupération dans `evolution/signing/HOME-IDENTITY.md`. Les anciennes applications restent intactes. L’IA reste en pause. Préviens-moi avec 🚩 lorsqu’une passation devient prudente, sans inventer une limite exacte du chat.
+> Reprends Yanis Fitness Evolution. Lis d’abord `PASSATION.md` et `evolution/media/README.md` dans le dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`, branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap`, en respectant la branche imposée à ta session. Ma priorité est maintenant de vérifier et corriger TOUS les visuels : musculation, échauffement, piscine, Tabata au sol/aqua, étirements et cardio. L’audit sauvegardé au commit `58acfff` relève 25 groupes d’anomalies, dont l’orientation incohérente du GIF dips/triceps et de mauvaises correspondances. Les animations longues ne sont pas encore toutes examinées image par image. Aucun correctif de médias ni nouvel APK corrigé n’est livré. Conserve les visuels d’origine corrects ; aucun remplacement global par des photos n’est validé. Montre les propositions directement dans le chat. Préserve les deux profils, les données, les sept étapes et l’accueil validé de la 1.4.0. Pour la prochaine mise à jour, garde le package `app.yanis.fitness.evolution.home` et sa clé (`identity-home.json`), sans créer une nouvelle installation. L’IA reste en pause. Continue depuis l’audit existant et actualise la passation avant de poursuivre trop loin.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.
