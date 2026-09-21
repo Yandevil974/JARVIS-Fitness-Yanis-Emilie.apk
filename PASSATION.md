@@ -15,19 +15,36 @@ L’utilisateur demande :
 > « l’organisation de B avec le style lumineux et l’orbe de A.,oui avec les couleurs quil y a sur mon appli en mode claire. Peux tu faire une nouvelle maquette en fonction de ca stp »
 
 - L’utilisateur se perd dans le workspace : **montrer les images directement dans le chat**, pas seulement des chemins ou du code.
+- **Dernière correction de l’utilisateur (révision 03) :** garder l’orbe **bleu et tournoyant**, montrer aussi un **sombre qui conserve des couleurs**, et retrouver l’ancienne présentation de « Prochaine séance » **avec l’homme sur la machine**. Ce sont encore des demandes de maquettes, pas une autorisation d’intégration.
+
+> « L'orbe de jarvis faudrait qu'il garde le bleu et tournoyant. En sombre faudrait quil garde aussi des couleurs. Peux tu me montrer en maquette. “Prochaine séance” je souhaite le format et la présentation d'avant avec le mec sur la machine. C'était top »
+
 - Prévenir avec **🚩 PASSATION — NOUVEAU CHAT** quand une nouvelle conversation est prudente. Ne pas inventer un pourcentage de contexte restant ou garantir une alerte avant une coupure : aucun compteur exact n’est disponible.
 
-## 2. Direction choisie — nouvelle maquette claire à valider
+## 2. Dernière révision — orbe bleu animé, clair et sombre coloré à valider
 
 Dossier isolé : **`design/accueil-jarvis/`**.
+
+**Version actuelle : `design/accueil-jarvis/revision-bleu/`.** Deux maquettes claire/sombre colorée, même orbe bleu quel que soit le profil, rotation CSS réelle avec pause et mouvements réduits. La carte séance reprend la photographie exacte et la hiérarchie d’origine, adaptée au format téléphone : homme sur la machine à droite, textes à gauche, bouton et lien programme. Image extraite de l’APK, identique au `training-hero.jpg` des sources, pas une nouvelle image générée. Les textes restent fictifs.
+
+Les accents orange de Yanis et rose/violet d’Émilie restent dans les cartes/actions ; **l’orbe ne devient plus orange ou rose**. Clair : lavande/menthe pastel. Sombre : violet/vert profond, ambre et cyan, pas noir/gris uniforme. Aucune intégration approuvée.
+
+Historique des références conservées :
 
 - **A — NEXUS / cockpit JARVIS** : bleu nuit/cyan, orbe technique, présence JARVIS marquée.
 - **B — VECTOR / futuriste utile** : graphite/menthe, séance remontée en premier, briefing et priorité lisibles.
 - **C — ORBIT / compagnon futuriste** : halo indigo, verre fumé, ambiance plus douce.
-- **Nouvelle étude réalisée : B × A en mode clair**, sous `design/accueil-jarvis/clair/`. Orbe compact en regard du bonjour, séance en première carte, point JARVIS lavande, priorité menthe, programme et navigation. Palette relevée dans le CSS embarqué dans l’APK livré : Yanis ivoire/orange/corail et pastels ; Émilie rose/violet. Cette direction est choisie, **la nouvelle maquette et son intégration ne sont pas encore approuvées**. Les trois premières pistes restent conservées comme références.
+- **Nouvelle étude réalisée : B × A en mode clair**, sous `design/accueil-jarvis/clair/`. Orbe compact en regard du bonjour, séance en première carte, point JARVIS lavande, priorité menthe, programme et navigation. Palette relevée dans le CSS embarqué dans l’APK livré : Yanis ivoire/orange/corail et pastels ; Émilie rose/violet. Cette version claire a depuis été corrigée par la révision 03 (orbe bleu animé, carte photo et thème sombre). **Aucune maquette finale ni intégration approuvée.** Les trois premières pistes restent conservées comme références.
 - Les noms des pistes ne remplacent PAS le nom de l’application : **Yanis Fitness Evolution** reste inchangé.
 
 À consulter en priorité :
+
+- `design/accueil-jarvis/revision-bleu/maquette-claire.png` et `maquette-sombre.png` — images individuelles à afficher dans le chat.
+- `design/accueil-jarvis/revision-bleu/comparatif.png` — les deux thèmes côte à côte.
+- `design/accueil-jarvis/revision-bleu/orbe-bleu-anime.gif` — aperçu du mouvement (8 secondes, 100 images).
+- `design/accueil-jarvis/revision-bleu/index.html` et `README.md` — prototype et documentation/provenance/tests. `serve.py` sert le design seul sur 5182, entrée par cette révision.
+
+Étude claire précédente :
 
 - `design/accueil-jarvis/clair/maquette-yanis.png` — nouvelle proposition principale claire.
 - `design/accueil-jarvis/clair/maquette-emilie.png` — même organisation, palette Émilie.
@@ -46,9 +63,11 @@ Vérifications réalisées sur les maquettes seulement : trois concepts, sept la
 
 Nouvelle étude claire : contrôles réussis pour **les deux profils × sept largeurs (320, 360, 390, 520, 768, 1024, 1440 px)**, palettes distinctes, aucune icône manquante, aucun texte tronqué ni recouvrement par la navigation ; actions inertes, stockages web vides, aucune requête externe ni erreur JavaScript. Deux PNG exportés et inspectés visuellement. Script : `design/accueil-jarvis/clair/render.mjs`.
 
+Révision 03 : contrôles réussis **clair/sombre × Yanis/Émilie × sept largeurs**, photo originale et icônes chargées, pas de texte tronqué ni recouvrement de navigation/pied de carte. Rotation réellement vérifiée, pause/reprise, mouvements réduits, bleu indépendant du profil. Profils isolés, actions inertes, stockages web vides, aucune requête externe ni erreur JavaScript. PNG et GIF exportés et inspectés. SHA de l’APK revérifié inchangé. Scripts dans `revision-bleu/` ; images intermédiaires hors Git sous `.cache/`.
+
 ### Prochaine action
 
-**Montrer directement la nouvelle image claire puis attendre sa validation ou ses corrections.** Ne plus redemander de choisir A/B/C : le mélange B + A en clair est déjà demandé. Ne pas traiter cette demande de maquette, son ouverture ou le clic sur un profil comme une autorisation d’intégration. Ajuster le visuel si demandé ; aucune nouvelle étape IA.
+**Montrer directement les deux nouvelles maquettes et le GIF de l’orbe, puis attendre validation ou corrections.** Ne plus redemander A/B/C ni proposer un orbe orange/rose : le bleu tournoyant et la carte photo d’origine sont demandés. L’organisation B est conservée. Ne pas traiter cette demande de maquette, son ouverture ou le clic sur un profil comme une autorisation d’intégration. Ajuster le visuel si demandé ; aucune nouvelle étape IA.
 
 Après validation seulement : intégrer au véritable accueil cumulatif, conserver toutes les fonctions et contrôles de sécurité, tester les deux profils et les 11 rubriques, puis produire une mise à jour avec **la même identité Android** si la signature est restaurée. Ne pas démarrer l’IA à la place de cette refonte.
 
@@ -106,6 +125,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Reprends le projet Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. L’APK 1.3.0 avec les étapes 1–7 est déjà publié. J’ai choisi l’organisation B avec le style lumineux et l’orbe A, dans les couleurs du mode clair de mon appli. La nouvelle maquette et ses deux profils sont dans `design/accueil-jarvis/clair/`. Montre les images directement dans le chat. La maquette finale et son intégration attendent encore mon accord. Ne modifie pas l’application et ne commence pas l’IA conversationnelle avant mon accord. Conserve les fonctions, les deux profils et l’identité Android existante ; lis le point de vigilance sur la signature. Préviens-moi avec 🚩 lorsqu’une nouvelle passation devient prudente, sans inventer une limite exacte du chat.
+> Reprends le projet Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. L’APK 1.3.0 avec les étapes 1–7 est déjà publié. J’ai choisi l’organisation B avec le style lumineux de A, mais je veux l’orbe BLEU et tournoyant, un thème clair et un sombre qui garde des couleurs, et l’ancienne carte Prochaine séance avec l’homme sur la machine. Les dernières maquettes et le GIF sont dans `design/accueil-jarvis/revision-bleu/`. Montre les images directement dans le chat. La maquette finale et son intégration attendent encore mon accord. Ne modifie pas l’application et ne commence pas l’IA conversationnelle avant mon accord. Conserve les fonctions, les deux profils et l’identité Android existante ; lis le point de vigilance sur la signature. Préviens-moi avec 🚩 lorsqu’une nouvelle passation devient prudente, sans inventer une limite exacte du chat.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.

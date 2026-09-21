@@ -1,6 +1,6 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
-> **Priorité avant l’IA — 21 septembre :** [nouvelle maquette JARVIS : organisation B + orbe A, mode clair](design/accueil-jarvis/README.md), **à valider avant toute intégration**. L’APK reste inchangé. [🚩 Passation pour une nouvelle conversation](PASSATION.md).
+> **Priorité avant l’IA — 21 septembre :** [maquettes JARVIS : orbe bleu animé, clair/sombre coloré et carte séance d’origine](design/accueil-jarvis/revision-bleu/README.md), **à valider avant toute intégration**. L’APK reste inchangé. [🚩 Passation pour une nouvelle conversation](PASSATION.md).
 
 ## Version complète à tester avant l’IA — 1.3.0
 

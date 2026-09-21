@@ -1,8 +1,21 @@
-# Accueil plus JARVIS — nouvelle maquette B × A en clair
+# Accueil JARVIS — orbe bleu animé, clair et sombre coloré
 
 **Étude visuelle du 21 septembre 2026. Aucune intégration à l’application.** L’utilisateur demande à voir les idées avant de valider et place cette étape avant l’IA conversationnelle. Lire aussi [`../../PASSATION.md`](../../PASSATION.md).
 
-## Nouvelle demande : B × A, couleurs de l’application en mode clair
+## Révision actuelle : orbe bleu tournoyant + ancienne carte séance
+
+L’utilisateur a corrigé la maquette claire : **garder le bleu de l’orbe et le faire tourner**, montrer un **mode sombre coloré**, et reprendre le format de **Prochaine séance avec l’homme sur la machine**.
+
+**[Voir la révision 03 et sa documentation](revision-bleu/README.md)** : [clair](revision-bleu/maquette-claire.png), [sombre coloré](revision-bleu/maquette-sombre.png), [comparatif](revision-bleu/comparatif.png), [orbe animé](revision-bleu/orbe-bleu-anime.gif), [prototype](revision-bleu/index.html).
+
+- Photographie exacte retrouvée dans l’APK et présentation d’origine adaptée au téléphone.
+- Orbe bleu identique pour les deux profils, anneaux réellement animés ; pause et préférence mouvements réduits dans le HTML.
+- Sombre avec cartes violet/vert profond et accents ambre/cyan, pas noir et gris uniforme.
+- Deux thèmes × deux profils testés sur sept largeurs ; aucune modification de production. **Validation encore attendue.**
+
+Montrer les images directement dans le chat, pas uniquement des liens vers le workspace.
+
+## Étude précédente : B × A, couleurs de l’application en mode clair
 
 **Direction choisie par l’utilisateur, pas autorisation d’intégration :**
 
@@ -77,7 +90,7 @@ Ce choix de direction n’est pas une validation de l’écran final ni une perm
 - Le choix Yanis/Émilie ne modifie que la maquette concernée. Les autres boutons expliquent qu’il ne s’agit pas encore de fonctions reliées.
 - Le cadre de téléphone, l’encoche et l’heure sont des éléments de présentation : ne pas les recopier comme fausse barre système dans l’application. Tous les exemples devront être remplacés par les états réels ou des états vides après validation.
 - Aucun accès aux sauvegardes, aucun appel d’IA, aucune activation du micro, aucun appel natif, aucune écriture localStorage/IndexedDB.
-- Aucune animation en boucle. Une animation discrète de l’orbe pourrait être proposée plus tard, avec respect d’Animations réduites.
+- Les premières études sont statiques. La révision 03 anime les anneaux bleus à la demande explicite de l’utilisateur, avec pause et respect d’Animations réduites dans le prototype HTML ; un GIF séparé illustre la rotation.
 - La police Manrope est copiée depuis les ressources existantes avec sa licence OFL. Aucun nouvel outil natif ni clé privée utilisé.
 
 ## Voir les propositions
