@@ -2,6 +2,10 @@
 
 **Étude visuelle du 21 septembre 2026. Aucune intégration à l’application.** L’utilisateur demande à voir les idées avant de valider et place cette étape avant l’IA conversationnelle. Lire aussi [`../../PASSATION.md`](../../PASSATION.md).
 
+## Validation reçue et intégration
+
+L’utilisateur a répondu **« Parfait je valide »** à la révision 03. [L’intégration au candidat web complet est réalisée et testée](../../evolution/home/README.md) (4 tests Node, 90 tests navigateur). Aucun nouvel APK produit : signature actuelle à récupérer avant livraison Android. Les sections ci-dessous conservent l’historique des études, pas un nouvel appel à validation.
+
 ## Révision actuelle : orbe bleu tournoyant + ancienne carte séance
 
 L’utilisateur a corrigé la maquette claire : **garder le bleu de l’orbe et le faire tourner**, montrer un **mode sombre coloré**, et reprendre le format de **Prochaine séance avec l’homme sur la machine**.
@@ -11,7 +15,7 @@ L’utilisateur a corrigé la maquette claire : **garder le bleu de l’orbe et 
 - Photographie exacte retrouvée dans l’APK et présentation d’origine adaptée au téléphone.
 - Orbe bleu identique pour les deux profils, anneaux réellement animés ; pause et préférence mouvements réduits dans le HTML.
 - Sombre avec cartes violet/vert profond et accents ambre/cyan, pas noir et gris uniforme.
-- Deux thèmes × deux profils testés sur sept largeurs ; aucune modification de production. **Validation encore attendue.**
+- Deux thèmes × deux profils testés sur sept largeurs ; aucune modification de production. **Validation depuis reçue ; voir l’intégration ci-dessus.**
 
 Montrer les images directement dans le chat, pas uniquement des liens vers le workspace.
 

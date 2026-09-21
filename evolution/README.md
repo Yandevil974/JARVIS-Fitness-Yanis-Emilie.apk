@@ -2,6 +2,10 @@
 
 L’application complète fournie par l’utilisateur est la référence. Les anciennes sources `JARVIS-Fitness-Source` servent aux outils/tests et à la lecture du code, **pas à reconstruire seules l’application complète**.
 
+## Accueil validé — 21 septembre 2026
+
+Après validation explicite « Parfait je valide », [la refonte est intégrée au candidat web complet](home/README.md) : orbe bleu animé, clair/sombre colorés, carte séance d’origine remontée. **4 tests Node et 90 tests navigateur réussis**. Les sept étapes restent inchangées. **Aucun nouvel APK produit** : récupération de la signature actuelle puis recette de mise à jour Android nécessaires. La 1.3.0 ci-dessous reste la livraison antérieure, sans cette refonte. IA toujours en pause.
+
 ## État au 20 septembre 2026 — version 1.3.0 complète à tester
 
 [**Télécharger Yanis Fitness Evolution 1.3.0**](../downloads/Yanis-Fitness-Evolution-1.3.0.apk?raw=true) · [Installation sans suppression de l’ancienne application](../downloads/INSTALLATION-1.3.0.md)

@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-21",
+  "approval": "Parfait je valide",
+  "baselineApkSha256": "4c2efeaea0d1d59e9bc329f4b3651e2a860a1416bad900c23a15e0249622a323",
+  "candidateBundleSha256": "0586fc9c2402f6580eb20c6fd5ee49c735cd6cd257b08bf613bca1dda65ecb94",
+  "nodeIntegrityTests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "browserTests": {
+    "passed": 90,
+    "failed": 0,
+    "skipped": 0,
+    "singleFullRun": true,
+    "homeTestsIncluded": 8,
+    "durationApproxMinutes": 9.3
+  },
+  "webFiles": 272,
+  "unchangedWebFiles": 271,
+  "changedExistingDeclarations": [
+    "t2",
+    "I3"
+  ],
+  "signedApkProduced": false,
+  "physicalDeviceTested": false,
+  "nativeServices": "simulated in browser, existing native implementation unchanged",
+  "nextStep": "Recover current signing material; prepare and validate an in-place Android update recipe for this candidate without overwriting 1.3.0 or regenerating identity."
+}

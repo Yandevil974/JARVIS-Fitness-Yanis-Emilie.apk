@@ -2,39 +2,59 @@
 
 **Mise à jour : 21 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
-## 1. Demande actuelle — priorité avant toute IA
+## État actuel — validation reçue et accueil intégré au candidat web
+
+**Dernière réponse de l’utilisateur : « Parfait je valide ».** Il valide la révision 03 (orbe bleu tournoyant, clair/sombre coloré, ancienne carte photo). L’intégration de l’accueil est désormais autorisée. Ne pas lui redemander de valider les mêmes maquettes. Cela n’autorise ni l’IA ni une nouvelle identité Android.
+
+**Travail réalisé : `evolution/home/`.** Le web du véritable APK 1.3.0 est étendu, pas remplacé par les anciennes sources React. Orbe bleu avec pause/mouvements réduits, carte d’origine déplacée en premier avec ses callbacks inchangés, thèmes colorés et contrôles reliés aux vrais profils. Les sept étapes et toutes les sections restent disponibles ; les formulaires complets peuvent être plus longs que dans une capture de maquette.
+
+- `evolution/home/README.md` : périmètre, reproduction, limites, prochaine étape.
+- `evolution/home/baseline.json`, `build.mjs`, `Home.jsx`, `home.css` : entrée 1.3.0 épinglée et intégration.
+- `evolution/home/validation.json` : **4 tests Node + 90 tests navigateur réussis**, les 90 dans un passage complet, aucun échec/ignoré. Deux profils/deux thèmes, six largeurs ; conservation des 11 rubriques et onglets à 1440 px pour les deux profils ; parcours mobiles, chronos, voix, bilans, décisions et notifications simulées.
+- Bundle candidat SHA-256 : **`0586fc9c2402f6580eb20c6fd5ee49c735cd6cd257b08bf613bca1dda65ecb94`**.
+- Inventaire : 272 fichiers web, 271 inchangés ; seules `t2` (composition accueil) et `I3` (raccourcis mobiles de l’accueil) changent parmi les déclarations existantes. Moteurs et observateurs des sept étapes identiques.
+- Candidat temporaire `.cache/home-web/` servi sur **5183** ; reconstruire avec `node evolution/home/build.mjs` si le cache disparaît. La référence web pour tests est l’APK livré extrait sous `.cache/home-reference/` sur 5184. Ne jamais servir la racine ou des données privées.
+- **Aucun nouvel APK produit. L’APK 1.3.0 publié est inchangé et n’inclut PAS la refonte.** Aucun test physique, aucune nouvelle validation native. Le navigateur est une origine distincte du téléphone ; ne pas importer de sauvegarde sensible dans un aperçu partagé.
+
+### Prochaine étape et blocage
+
+La prochaine étape est la livraison Android, **bloquée par la signature actuelle absente**. Restaurer le matériel privé autorisé, vérifier le certificat, puis préparer une recette de mise à jour intégrant le candidat web validé avec un versionCode augmenté et les contrôles d’inventaire/signature. `evolution/android/build.py --new-parallel` / `release-next.json` restent les recettes de **l’ancienne livraison 1.3.0** ; ne pas les lancer en croyant qu’elles emballent déjà la refonte. Ne pas remplacer un téléchargement par un ancien APK renommé, ni recréer une identité sans accord. Ne pas redemander à l’utilisateur de fouiller une archive déjà déclarée introuvable. Pas de secret dans le chat.
+
+**IA conversationnelle toujours en pause.** Annoncer clairement qu’il s’agit d’un candidat web vérifié, pas d’une mise à jour Android installable livrée.
+
+## 1. Historique des demandes visuelles — priorité avant toute IA
 
 L’utilisateur demande :
 
 > « Avant de poursuivre préviens moi avec un drapeau rouge la limite du chat et une passation pour un nouveau chat. Peux tu me proposer un accueil de l’appli plus jarvisien, futuriste, et faire remonter. Avant de faire IA conversationnelle, et montre moi tes idées avant que je valide. »
 
 - **IA conversationnelle en pause.** Aucun fournisseur, budget, hébergement ou accord de transfert de données choisi. Le questionnaire précédent a été ignoré ; ne pas déduire un accord cloud.
-- **Montrer les idées AVANT validation.** Aucun accueil de production, donnée, fonction ou APK ne doit être modifié à partir de ces maquettes sans l’accord de l’utilisateur.
+- **Montrer les idées AVANT validation.** Cet accord a depuis été reçu (« Parfait je valide ») pour la refonte de l’accueil, pas pour l’IA ou une autre identité.
 - **Dernier choix explicite : organisation B + style lumineux/orbe A, avec les couleurs de l’application en mode clair.** Une nouvelle maquette a été demandée, pas une intégration. La séance, le point JARVIS et les priorités suivent donc la structure B ; aucune autre remontée de rubrique n’a été précisée.
 
 > « l’organisation de B avec le style lumineux et l’orbe de A.,oui avec les couleurs quil y a sur mon appli en mode claire. Peux tu faire une nouvelle maquette en fonction de ca stp »
 
 - L’utilisateur se perd dans le workspace : **montrer les images directement dans le chat**, pas seulement des chemins ou du code.
-- **Dernière correction de l’utilisateur (révision 03) :** garder l’orbe **bleu et tournoyant**, montrer aussi un **sombre qui conserve des couleurs**, et retrouver l’ancienne présentation de « Prochaine séance » **avec l’homme sur la machine**. Ce sont encore des demandes de maquettes, pas une autorisation d’intégration.
+- **Dernière correction de l’utilisateur (révision 03) :** garder l’orbe **bleu et tournoyant**, montrer aussi un **sombre qui conserve des couleurs**, et retrouver l’ancienne présentation de « Prochaine séance » **avec l’homme sur la machine**. À ce moment, il s’agissait encore d’une demande de maquettes ; la validation explicite est venue ensuite (voir état actuel).
 
 > « L'orbe de jarvis faudrait qu'il garde le bleu et tournoyant. En sombre faudrait quil garde aussi des couleurs. Peux tu me montrer en maquette. “Prochaine séance” je souhaite le format et la présentation d'avant avec le mec sur la machine. C'était top »
 
 - Prévenir avec **🚩 PASSATION — NOUVEAU CHAT** quand une nouvelle conversation est prudente. Ne pas inventer un pourcentage de contexte restant ou garantir une alerte avant une coupure : aucun compteur exact n’est disponible.
 
-## 2. Dernière révision — orbe bleu animé, clair et sombre coloré à valider
+## 2. Références visuelles — révision 03 validée
 
 Dossier isolé : **`design/accueil-jarvis/`**.
 
 **Version actuelle : `design/accueil-jarvis/revision-bleu/`.** Deux maquettes claire/sombre colorée, même orbe bleu quel que soit le profil, rotation CSS réelle avec pause et mouvements réduits. La carte séance reprend la photographie exacte et la hiérarchie d’origine, adaptée au format téléphone : homme sur la machine à droite, textes à gauche, bouton et lien programme. Image extraite de l’APK, identique au `training-hero.jpg` des sources, pas une nouvelle image générée. Les textes restent fictifs.
 
-Les accents orange de Yanis et rose/violet d’Émilie restent dans les cartes/actions ; **l’orbe ne devient plus orange ou rose**. Clair : lavande/menthe pastel. Sombre : violet/vert profond, ambre et cyan, pas noir/gris uniforme. Aucune intégration approuvée.
+Les accents orange de Yanis et rose/violet d’Émilie restent dans les cartes/actions ; **l’orbe ne devient plus orange ou rose**. Clair : lavande/menthe pastel. Sombre : violet/vert profond, ambre et cyan, pas noir/gris uniforme. Révision 03 désormais validée et intégrée au candidat web décrit ci-dessus.
 
 Historique des références conservées :
 
 - **A — NEXUS / cockpit JARVIS** : bleu nuit/cyan, orbe technique, présence JARVIS marquée.
 - **B — VECTOR / futuriste utile** : graphite/menthe, séance remontée en premier, briefing et priorité lisibles.
 - **C — ORBIT / compagnon futuriste** : halo indigo, verre fumé, ambiance plus douce.
-- **Nouvelle étude réalisée : B × A en mode clair**, sous `design/accueil-jarvis/clair/`. Orbe compact en regard du bonjour, séance en première carte, point JARVIS lavande, priorité menthe, programme et navigation. Palette relevée dans le CSS embarqué dans l’APK livré : Yanis ivoire/orange/corail et pastels ; Émilie rose/violet. Cette version claire a depuis été corrigée par la révision 03 (orbe bleu animé, carte photo et thème sombre). **Aucune maquette finale ni intégration approuvée.** Les trois premières pistes restent conservées comme références.
+- **Nouvelle étude réalisée : B × A en mode clair**, sous `design/accueil-jarvis/clair/`. Orbe compact en regard du bonjour, séance en première carte, point JARVIS lavande, priorité menthe, programme et navigation. Palette relevée dans le CSS embarqué dans l’APK livré : Yanis ivoire/orange/corail et pastels ; Émilie rose/violet. Cette version claire a depuis été corrigée par la révision 03 (orbe bleu animé, carte photo et thème sombre). **Version historique remplacée par la révision 03 validée.** Les trois premières pistes restent conservées comme références.
 - Les noms des pistes ne remplacent PAS le nom de l’application : **Yanis Fitness Evolution** reste inchangé.
 
 À consulter en priorité :
@@ -65,11 +85,9 @@ Nouvelle étude claire : contrôles réussis pour **les deux profils × sept lar
 
 Révision 03 : contrôles réussis **clair/sombre × Yanis/Émilie × sept largeurs**, photo originale et icônes chargées, pas de texte tronqué ni recouvrement de navigation/pied de carte. Rotation réellement vérifiée, pause/reprise, mouvements réduits, bleu indépendant du profil. Profils isolés, actions inertes, stockages web vides, aucune requête externe ni erreur JavaScript. PNG et GIF exportés et inspectés. SHA de l’APK revérifié inchangé. Scripts dans `revision-bleu/` ; images intermédiaires hors Git sous `.cache/`.
 
-### Prochaine action
+### Suite après validation
 
-**Montrer directement les deux nouvelles maquettes et le GIF de l’orbe, puis attendre validation ou corrections.** Ne plus redemander A/B/C ni proposer un orbe orange/rose : le bleu tournoyant et la carte photo d’origine sont demandés. L’organisation B est conservée. Ne pas traiter cette demande de maquette, son ouverture ou le clic sur un profil comme une autorisation d’intégration. Ajuster le visuel si demandé ; aucune nouvelle étape IA.
-
-Après validation seulement : intégrer au véritable accueil cumulatif, conserver toutes les fonctions et contrôles de sécurité, tester les deux profils et les 11 rubriques, puis produire une mise à jour avec **la même identité Android** si la signature est restaurée. Ne pas démarrer l’IA à la place de cette refonte.
+La révision 03 a été approuvée par **« Parfait je valide »** et intégrée sous `evolution/home/`. Consulter l’état actuel en tête de document : tests web terminés, livraison Android bloquée par la signature. Ne plus attendre une validation graphique déjà reçue et ne pas commencer l’IA à la place.
 
 ## 3. Application existante livrée — à conserver
 
@@ -125,6 +143,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Reprends le projet Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. L’APK 1.3.0 avec les étapes 1–7 est déjà publié. J’ai choisi l’organisation B avec le style lumineux de A, mais je veux l’orbe BLEU et tournoyant, un thème clair et un sombre qui garde des couleurs, et l’ancienne carte Prochaine séance avec l’homme sur la machine. Les dernières maquettes et le GIF sont dans `design/accueil-jarvis/revision-bleu/`. Montre les images directement dans le chat. La maquette finale et son intégration attendent encore mon accord. Ne modifie pas l’application et ne commence pas l’IA conversationnelle avant mon accord. Conserve les fonctions, les deux profils et l’identité Android existante ; lis le point de vigilance sur la signature. Préviens-moi avec 🚩 lorsqu’une nouvelle passation devient prudente, sans inventer une limite exacte du chat.
+> Reprends Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. J’ai validé par « Parfait je valide » l’organisation B, l’orbe bleu tournoyant, les modes clair/sombre colorés et l’ancienne carte séance avec l’homme sur la machine. L’intégration fonctionnelle est dans `evolution/home/` : 4 tests d’intégrité et 90 tests navigateur réussis, les sept étapes conservées. Aucun nouvel APK n’a été livré ; la 1.3.0 reste inchangée. Prochaine étape : récupération de la signature existante puis recette de mise à jour et validation de l’APK réel. Ne recrée pas de clé/application et ne me redemande pas de fouiller l’archive introuvable. L’IA reste en pause. Conserve les fonctions, les deux profils, les données et l’identité. Préviens-moi avec 🚩 lorsqu’une passation devient prudente, sans inventer une limite exacte du chat.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.

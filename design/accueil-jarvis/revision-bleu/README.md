@@ -1,6 +1,8 @@
 # Révision 03 — orbe bleu animé, clair et sombre coloré
 
-**21 septembre 2026 — maquettes uniquement, intégration non autorisée.**
+**21 septembre 2026 — maquettes validées par « Parfait je valide ».**
+
+L’intégration fonctionnelle est maintenant dans [`../../../evolution/home/`](../../../evolution/home/README.md), avec 4 tests Node et 90 tests navigateur réussis. Aucun nouvel APK : signature actuelle à récupérer. Les fichiers de ce dossier restent les références visuelles autonomes, avec données d’exemple et boutons inertes.
 
 ## Demande exacte
 
@@ -10,7 +12,7 @@
 >
 > "Prochaine séance" je souhaite le format et la présentation d'avant avec le mec sur la machine. C'était top
 
-Cette demande corrige la précédente proposition B × A claire : **l’orbe ne prend plus la couleur du profil**. L’organisation B reste la base. Le choix de direction n’autorise toujours aucune modification de l’APK.
+Cette demande corrige la précédente proposition B × A claire : **l’orbe ne prend plus la couleur du profil**. L’organisation B reste la base. La validation explicite ultérieure autorise l’intégration de l’accueil, pas une nouvelle identité ni l’IA.
 
 ## À montrer directement dans le chat
 
@@ -78,4 +80,4 @@ PYTHONPATH=.cache/image-tools \
 
 `DESIGN_URL` peut remplacer l’origine locale utilisée par les tests. `CHROMIUM_EXECUTABLE_PATH` peut remplacer `/tmp/chromium`. Les captures intermédiaires restent dans `.cache/revision-design/orb-frames/`, hors Git. Ne jamais servir la racine du dépôt ou ses données privées.
 
-**Prochaine étape : demander si les deux maquettes, la carte retrouvée et le mouvement de l’orbe conviennent, puis ajuster si nécessaire. Aucune intégration autorisée ; IA conversationnelle toujours en pause.**
+**Validation reçue et intégration web testée. Prochaine étape : signature à récupérer, puis livraison Android contrôlée. IA conversationnelle toujours en pause.**

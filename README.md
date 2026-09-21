@@ -1,6 +1,6 @@
 # Yanis Fitness Evolution — Yanis & Émilie
 
-> **Priorité avant l’IA — 21 septembre :** [maquettes JARVIS : orbe bleu animé, clair/sombre coloré et carte séance d’origine](design/accueil-jarvis/revision-bleu/README.md), **à valider avant toute intégration**. L’APK reste inchangé. [🚩 Passation pour une nouvelle conversation](PASSATION.md).
+> **Accueil validé — 21 septembre :** [intégration au web complet, 4 tests d’intégrité et 90 tests navigateur réussis](evolution/home/README.md). **Pas encore de nouvel APK : signature à récupérer.** Le téléchargement 1.3.0 ci-dessous reste inchangé et ne contient pas cette refonte. [🚩 Passation](PASSATION.md).
 
 ## Version complète à tester avant l’IA — 1.3.0
 
