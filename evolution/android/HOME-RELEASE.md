@@ -41,3 +41,7 @@ PYTHONPATH=.cache/signing-tools python3 -m unittest discover \
 Pour les tests navigateur : extraire `assets/public/` du **nouvel APK signé** sous `.cache/home-signed-web`, servir uniquement ce dossier sur 5183, et la 1.3.0 sous `.cache/home-reference` sur 5184. Exécuter la configuration `evolution/home/playwright.config.mjs` avec Chromium et ses bibliothèques. Les sorties de test restent hors Git.
 
 **Prochaine étape : l’utilisateur installe la 1.4.0, importe sa sauvegarde JSON et vérifie Yanis/Émilie sans supprimer l’ancienne application. Confirmer aussi la sauvegarde privée de signature en deux endroits. L’IA vient ensuite.**
+
+## Publication vérifiée
+
+APK publié au commit `653b95bcef9636527a14bef7fbc2b25331284613`, téléchargé à nouveau via GitHub et comparé octet pour octet au candidat testé. [Lien direct](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/653b95bcef9636527a14bef7fbc2b25331284613/downloads/Yanis-Fitness-Evolution-1.4.0.apk). La [release de test](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.4.0-evolution) référence ce fichier Git ; elle n’a pas d’asset attaché après un échec réseau EOF de l’upload. Le téléchargement direct fonctionne indépendamment des assets de release.
