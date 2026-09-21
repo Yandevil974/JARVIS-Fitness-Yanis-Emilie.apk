@@ -1,8 +1,52 @@
-# Accueil plus JARVIS — trois idées avant validation
+# Accueil plus JARVIS — nouvelle maquette B × A en clair
 
 **Étude visuelle du 21 septembre 2026. Aucune intégration à l’application.** L’utilisateur demande à voir les idées avant de valider et place cette étape avant l’IA conversationnelle. Lire aussi [`../../PASSATION.md`](../../PASSATION.md).
 
-## Comparatif
+## Nouvelle demande : B × A, couleurs de l’application en mode clair
+
+**Direction choisie par l’utilisateur, pas autorisation d’intégration :**
+
+> « l’organisation de B avec le style lumineux et l’orbe de A.,oui avec les couleurs quil y a sur mon appli en mode claire. Peux tu faire une nouvelle maquette en fonction de ca stp »
+
+- **[Maquette Yanis](clair/maquette-yanis.png)** : ivoire, orange/corail, pêche, lavande et menthe.
+- **[Déclinaison Émilie](clair/maquette-emilie.png)** : même hiérarchie, accents rose/violet.
+- **[Prototype autonome](clair/index.html)** : changer le profil modifie seulement les exemples et leur palette. Le reste affiche un avertissement de maquette.
+- Source isolée dans `clair/` ; aucune ressource, donnée ou fonction de production touchée. Les anciennes propositions A/B/C restent intactes.
+
+![Nouvelle maquette claire Yanis — données d’exemple](clair/maquette-yanis.png)
+
+### Intention
+
+Garder la séance comme première carte de B, puis le briefing et la priorité. L’orbe lumineux inspiré de A reste **compact**, à droite du bonjour, pour ne pas repousser les actions. Traits techniques discrets et halos chauds plutôt qu’un fond sombre. Navigation visible et programme accessible ; le bouton Plus représente les autres rubriques conservées, pas leur suppression.
+
+### Palette vérifiée
+
+La référence est le **CSS réellement embarqué dans l’APK complet 1.3.0 livré**, pas l’ancien thème des sources React. Il ne s’agit pas d’une capture de l’APK : la composition est une nouvelle proposition.
+
+| Élément | Référence de l’application |
+|---|---|
+| Fond clair Yanis | `hsl(36 18.6% 96.2%)` |
+| Accent Yanis | `hsl(30 88% 44%)` ; secondaire `hsl(12 82% 52%)` |
+| Dégradé d’action Yanis | `hsl(36 92% 38%)` → `hsl(10 84% 42%)` |
+| Accents Émilie | `hsl(334 74% 50%)` / `hsl(272 66% 58%)` |
+| Dégradé d’action Émilie | `hsl(334 84% 44%)` → `hsl(272 76% 50%)` |
+| Cartes pastels | Ambre `#fff0ce`, lavande `#ece5f6`, pêche `#fce2d4`, menthe `#dff2ec` |
+| Titres | `#251e18` |
+
+Halos, reflets de l’orbe et mélanges de surfaces sont des interprétations de ces couleurs pour la nouvelle maquette. La date, la séance, sa durée, le briefing et la priorité sont **des exemples**, pas des informations sportives réelles.
+
+### Vérification et reproduction
+
+Avec le serveur ci-dessous, ouvrir `/clair/`. Le script dédié vérifie les **deux profils sur sept largeurs**, l’absence de débordement/texte tronqué/recouvrement par la navigation, les palettes et icônes, les actions inertes et l’absence de stockage web, de requête externe ou d’erreur JavaScript. Il exporte les deux PNG ; les images finales ont aussi été inspectées visuellement.
+
+```sh
+LD_LIBRARY_PATH=$PWD/.cache/browser-libs/lib \
+  node design/accueil-jarvis/clair/render.mjs
+```
+
+**Prochaine étape : avis de l’utilisateur sur cette nouvelle maquette, puis ajustements éventuels.** Aucune intégration et aucune IA conversationnelle avant accord. Montrer le PNG directement dans le chat : l’utilisateur a indiqué se perdre dans le workspace.
+
+## Comparatif initial conservé
 
 ![Trois propositions d’accueil — données d’exemple uniquement](propositions-accueil.png)
 
@@ -12,11 +56,11 @@
 | [B — VECTOR](proposition-b.png) | Séance tout en haut, puis point de l’équipe et priorité ; graphite/menthe. | Le plus lisible et efficace ; présence JARVIS moins spectaculaire. |
 | [C — ORBIT](proposition-c.png) | Halo indigo, verre fumé, orbe doux et accompagnement personnel. | Plus calme, mais le héros prend davantage de place avant la séance. |
 
-**Recommandation :** B comme structure, avec un orbe compact inspiré de A. Ce mélange n’est pas encore dessiné comme quatrième variante ; il reste à valider. Les noms NEXUS/VECTOR/ORBIT sont des noms de pistes, pas des changements du nom **Yanis Fitness Evolution**.
+**Recommandation initiale, depuis choisie comme direction :** B comme structure, avec un orbe compact inspiré de A. L’utilisateur a ajouté le mode clair avec les couleurs de son application ; la nouvelle maquette ci-dessus attend sa validation. Les noms NEXUS/VECTOR/ORBIT sont des noms de pistes, pas des changements du nom **Yanis Fitness Evolution**.
 
-## « Faire remonter » — interprétation à confirmer
+## Hiérarchie B retenue pour la nouvelle étude
 
-Proposition de hiérarchie, à adapter au choix de l’utilisateur :
+L’organisation B est choisie pour la maquette. Règles à conserver lors d’une éventuelle intégration autorisée :
 
 1. En cas de besoin : alerte de sécurité/stockage ou séance/chrono en cours, toujours avant le décor et jamais masquée.
 2. **Prochaine séance réelle** et bouton **Préparer ma séance**. Pas de séance inventée ni de lancement automatique ; s’il n’y a rien de prévu, proposer d’ouvrir le programme.
@@ -24,7 +68,7 @@ Proposition de hiérarchie, à adapter au choix de l’utilisateur :
 4. **Une à trois priorités** utiles : bilan, mensurations, décision à examiner. Lire ou ouvrir n’enregistre pas une réalisation.
 5. Le reste du suivi et des historiques plus bas. Les **11 rubriques** restent accessibles ; le bouton Plus du dessin représente l’accès à tous les modules, pas leur suppression.
 
-Ni cette hiérarchie ni un style n’ont encore été approuvés. Demander ce que l’utilisateur entendait précisément par « faire remonter » s’il ne le précise pas dans son choix.
+Ce choix de direction n’est pas une validation de l’écran final ni une permission de modifier l’APK. Aucune autre demande précise de rubrique à remonter n’a été formulée.
 
 ## Ce qui est réel dans cette étude
 

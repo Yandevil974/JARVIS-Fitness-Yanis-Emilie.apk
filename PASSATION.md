@@ -10,33 +10,45 @@ L’utilisateur demande :
 
 - **IA conversationnelle en pause.** Aucun fournisseur, budget, hébergement ou accord de transfert de données choisi. Le questionnaire précédent a été ignoré ; ne pas déduire un accord cloud.
 - **Montrer les idées AVANT validation.** Aucun accueil de production, donnée, fonction ou APK ne doit être modifié à partir de ces maquettes sans l’accord de l’utilisateur.
-- « Faire remonter » a été interprété provisoirement comme remonter la prochaine séance, le point JARVIS et les actions prioritaires. Ce sens reste à confirmer, pas une décision acquise.
+- **Dernier choix explicite : organisation B + style lumineux/orbe A, avec les couleurs de l’application en mode clair.** Une nouvelle maquette a été demandée, pas une intégration. La séance, le point JARVIS et les priorités suivent donc la structure B ; aucune autre remontée de rubrique n’a été précisée.
+
+> « l’organisation de B avec le style lumineux et l’orbe de A.,oui avec les couleurs quil y a sur mon appli en mode claire. Peux tu faire une nouvelle maquette en fonction de ca stp »
+
+- L’utilisateur se perd dans le workspace : **montrer les images directement dans le chat**, pas seulement des chemins ou du code.
 - Prévenir avec **🚩 PASSATION — NOUVEAU CHAT** quand une nouvelle conversation est prudente. Ne pas inventer un pourcentage de contexte restant ou garantir une alerte avant une coupure : aucun compteur exact n’est disponible.
 
-## 2. Ce qui est proposé, pas encore approuvé
+## 2. Direction choisie — nouvelle maquette claire à valider
 
 Dossier isolé : **`design/accueil-jarvis/`**.
 
 - **A — NEXUS / cockpit JARVIS** : bleu nuit/cyan, orbe technique, présence JARVIS marquée.
 - **B — VECTOR / futuriste utile** : graphite/menthe, séance remontée en premier, briefing et priorité lisibles.
 - **C — ORBIT / compagnon futuriste** : halo indigo, verre fumé, ambiance plus douce.
-- Recommandation de l’assistant : **structure B avec une touche/orbe de A**, en évitant qu’une grande animation repousse la séance sous le premier écran. Ce mélange n’est pas encore une quatrième maquette, ni un choix validé.
+- **Nouvelle étude réalisée : B × A en mode clair**, sous `design/accueil-jarvis/clair/`. Orbe compact en regard du bonjour, séance en première carte, point JARVIS lavande, priorité menthe, programme et navigation. Palette relevée dans le CSS embarqué dans l’APK livré : Yanis ivoire/orange/corail et pastels ; Émilie rose/violet. Cette direction est choisie, **la nouvelle maquette et son intégration ne sont pas encore approuvées**. Les trois premières pistes restent conservées comme références.
 - Les noms des pistes ne remplacent PAS le nom de l’application : **Yanis Fitness Evolution** reste inchangé.
 
-À consulter :
+À consulter en priorité :
+
+- `design/accueil-jarvis/clair/maquette-yanis.png` — nouvelle proposition principale claire.
+- `design/accueil-jarvis/clair/maquette-emilie.png` — même organisation, palette Émilie.
+- `design/accueil-jarvis/clair/index.html` — prototype autonome avec changement de profil ; les autres actions restent simulées.
+
+Références initiales :
 
 - `design/accueil-jarvis/propositions-accueil.png` — comparaison des trois propositions.
 - `design/accueil-jarvis/proposition-a.png`, `proposition-b.png`, `proposition-c.png` — vues séparées.
 - `design/accueil-jarvis/index.html` — étude visuelle consultable dans un navigateur.
 - `design/accueil-jarvis/README.md` — intention, règles de hiérarchie et périmètre.
 
-**Données fictives explicitement marquées.** Aucune sauvegarde sportive chargée. Les profils de démonstration changent seulement les textes de la maquette, indépendamment entre les trois propositions. Les autres boutons montrent un avertissement de maquette : pas de micro, réseau IA, envoi de message, sauvegarde ou lancement de séance.
+**Données fictives explicitement marquées.** Aucune sauvegarde sportive chargée. Les profils de démonstration changent seulement les textes (et les accents colorés dans la nouvelle étude claire), sans lire ni écrire les données personnelles. Dans le comparatif initial, les profils restent indépendants entre les trois propositions. Les autres boutons montrent un avertissement de maquette : pas de micro, réseau IA, envoi de message, sauvegarde ou lancement de séance.
 
 Vérifications réalisées sur les maquettes seulement : trois concepts, sept largeurs de 320 à 1440 px sans débordement ni contenu recouvert par la navigation, changement de profil isolé, absence d’écriture dans les stockages web, d’appel externe et d’erreur JavaScript. **Ce ne sont pas de nouveaux tests de l’APK.**
 
+Nouvelle étude claire : contrôles réussis pour **les deux profils × sept largeurs (320, 360, 390, 520, 768, 1024, 1440 px)**, palettes distinctes, aucune icône manquante, aucun texte tronqué ni recouvrement par la navigation ; actions inertes, stockages web vides, aucune requête externe ni erreur JavaScript. Deux PNG exportés et inspectés visuellement. Script : `design/accueil-jarvis/clair/render.mjs`.
+
 ### Prochaine action
 
-Attendre le choix explicite A, B, C, mélange ou corrections. Clarifier ce que l’utilisateur veut « faire remonter ». Montrer une variante affinée si nécessaire avant intégration. Ne pas traiter l’ouverture d’une maquette ou le clic sur un profil comme une validation.
+**Montrer directement la nouvelle image claire puis attendre sa validation ou ses corrections.** Ne plus redemander de choisir A/B/C : le mélange B + A en clair est déjà demandé. Ne pas traiter cette demande de maquette, son ouverture ou le clic sur un profil comme une autorisation d’intégration. Ajuster le visuel si demandé ; aucune nouvelle étape IA.
 
 Après validation seulement : intégrer au véritable accueil cumulatif, conserver toutes les fonctions et contrôles de sécurité, tester les deux profils et les 11 rubriques, puis produire une mise à jour avec **la même identité Android** si la signature est restaurée. Ne pas démarrer l’IA à la place de cette refonte.
 
@@ -94,6 +106,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Reprends le projet Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. L’APK 1.3.0 avec les étapes 1–7 est déjà publié. La priorité est maintenant de choisir un accueil plus JARVIS/futuriste : maquettes A/B/C dans `design/accueil-jarvis/`. Aucun style n’est encore validé. Ne modifie pas l’application et ne commence pas l’IA conversationnelle avant mon accord. Conserve les fonctions, les deux profils et l’identité Android existante ; lis le point de vigilance sur la signature. Préviens-moi avec 🚩 lorsqu’une nouvelle passation devient prudente, sans inventer une limite exacte du chat.
+> Reprends le projet Yanis Fitness Evolution dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Lis `PASSATION.md` sur la branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap` en respectant la branche imposée à ta session. L’APK 1.3.0 avec les étapes 1–7 est déjà publié. J’ai choisi l’organisation B avec le style lumineux et l’orbe A, dans les couleurs du mode clair de mon appli. La nouvelle maquette et ses deux profils sont dans `design/accueil-jarvis/clair/`. Montre les images directement dans le chat. La maquette finale et son intégration attendent encore mon accord. Ne modifie pas l’application et ne commence pas l’IA conversationnelle avant mon accord. Conserve les fonctions, les deux profils et l’identité Android existante ; lis le point de vigilance sur la signature. Préviens-moi avec 🚩 lorsqu’une nouvelle passation devient prudente, sans inventer une limite exacte du chat.
 
-Si un choix est donné après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.
+Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.
