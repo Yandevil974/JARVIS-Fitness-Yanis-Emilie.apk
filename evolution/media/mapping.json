@@ -1,0 +1,2002 @@
+{
+ "version": "1.5.0-media",
+ "baseBundleSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
+ "dips": {
+  "variant": "redraw",
+  "redraw": "/media/dips-triceps-corrige.gif",
+  "original": "/media/c3a2b9892161522e.gif"
+ },
+ "newAssets": [
+  "/media/dips-triceps-corrige.gif"
+ ],
+ "levels": {
+  "exact": "même mouvement, même matériel, même position",
+  "variante": "même mouvement, une différence nommée (matériel, prise, uni/bilatéral, angle, assis/debout)",
+  "none": "aucune démonstration honnête : carte « pas de démonstration » explicite",
+  "rest": "étape de récupération : visuel respiratoire"
+ },
+ "exercises": {
+  "pont-fessier-au-sol-activation": {
+   "level": "exact",
+   "media": "/media/8eecb0152081ff26.gif",
+   "note": null,
+   "name": "Pont fessier au sol — activation",
+   "legacy": "/media/8eecb0152081ff26.gif",
+   "previous": "/media/0766d3a06bf79dc8.gif"
+  },
+  "hip-thrust-barre": {
+   "level": "exact",
+   "media": "/media/1519aacc58d53c5c.gif",
+   "note": null,
+   "name": "Hip thrust barre",
+   "legacy": "/media/1519aacc58d53c5c.gif",
+   "previous": "/media/1519aacc58d53c5c.gif"
+  },
+  "souleve-de-terre-roumain-halteres": {
+   "level": "exact",
+   "media": "/media/055d358895efaa10.gif",
+   "note": null,
+   "name": "Soulevé de terre roumain haltères",
+   "legacy": "/media/055d358895efaa10.gif",
+   "previous": "/media/055d358895efaa10.gif"
+  },
+  "bulgarian-split-squat": {
+   "level": "exact",
+   "media": "/media/cf312b839f6da027.gif",
+   "note": null,
+   "name": "Bulgarian split squat",
+   "legacy": "/media/cf312b839f6da027.gif",
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "leg-curl-machine-ou-swiss-ball-leg-curl": {
+   "level": "exact",
+   "media": "/media/7c0c6d264e85d66a.gif",
+   "note": null,
+   "name": "Leg curl machine (ou swiss-ball leg curl)",
+   "legacy": "/media/7c0c6d264e85d66a.gif",
+   "previous": "/media/7c0c6d264e85d66a.gif"
+  },
+  "abduction-hanche-debout-a-la-poulie": {
+   "level": "exact",
+   "media": "/media/03098b19c4672ce5.gif",
+   "note": null,
+   "name": "Abduction hanche debout à la poulie",
+   "legacy": "/media/03098b19c4672ce5.gif",
+   "previous": "/media/03098b19c4672ce5.gif"
+  },
+  "kickback-a-la-poulie": {
+   "level": "exact",
+   "media": "/media/489169360e044c48.gif",
+   "note": null,
+   "name": "Kickback à la poulie",
+   "legacy": "/media/489169360e044c48.gif",
+   "previous": "/media/489169360e044c48.gif"
+  },
+  "dead-bug": {
+   "level": "exact",
+   "media": "/media/b2236e6b7a81a1b5.gif",
+   "note": null,
+   "name": "Dead bug",
+   "legacy": "/media/b2236e6b7a81a1b5.gif",
+   "previous": "/media/b2236e6b7a81a1b5.gif"
+  },
+  "gainage-planche": {
+   "level": "exact",
+   "media": "/media/1317e405efd6ef2b.gif",
+   "note": null,
+   "name": "Gainage planche",
+   "legacy": "/media/1317e405efd6ef2b.gif",
+   "previous": "/media/1317e405efd6ef2b.gif"
+  },
+  "pallof-press-a-l-elastique": {
+   "level": "exact",
+   "media": "/media/3bcaad5ec7cdf892.gif",
+   "note": null,
+   "name": "Pallof press à l'élastique",
+   "legacy": "/media/3bcaad5ec7cdf892.gif",
+   "previous": "/media/3bcaad5ec7cdf892.gif"
+  },
+  "tirage-vertical-prise-neutre": {
+   "level": "variante",
+   "media": "/media/4af33157ce25267c.gif",
+   "note": "Illustration : tirage vertical prise large en pronation. Ici : poignée neutre, coudes le long du corps.",
+   "name": "Tirage vertical prise neutre",
+   "legacy": "/media/4af33157ce25267c.gif",
+   "previous": "/media/4af33157ce25267c.gif"
+  },
+  "rowing-haltere-un-bras": {
+   "level": "exact",
+   "media": "/media/4dfda05b1db24000.gif",
+   "note": null,
+   "name": "Rowing haltère un bras",
+   "legacy": "/media/4dfda05b1db24000.gif",
+   "previous": "/media/4dfda05b1db24000.gif"
+  },
+  "developpe-militaire-halteres-assis": {
+   "level": "exact",
+   "media": "/media/d9c88be0658a81af.gif",
+   "note": null,
+   "name": "Développé militaire haltères assis",
+   "legacy": "/media/d9c88be0658a81af.gif",
+   "previous": "/media/d9c88be0658a81af.gif"
+  },
+  "elevations-laterales-halteres": {
+   "level": "exact",
+   "media": "/media/cd0cc940608ac100.gif",
+   "note": null,
+   "name": "Élévations latérales haltères",
+   "legacy": "/media/cd0cc940608ac100.gif",
+   "previous": "/media/cd0cc940608ac100.gif"
+  },
+  "face-pull-a-l-elastique": {
+   "level": "none",
+   "media": null,
+   "note": "Aucun face pull dans la bibliothèque (l'ancienne image était un tirage vertical derrière la nuque).",
+   "name": "Face pull à l'élastique",
+   "legacy": "/media/ca785b4cf81c98fa.gif",
+   "previous": "/media/ca785b4cf81c98fa.gif"
+  },
+  "pompes-inclinees-mains-surelevees": {
+   "level": "exact",
+   "media": "/media/43bad87368c12614.gif",
+   "note": null,
+   "name": "Pompes inclinées (mains surélevées)",
+   "legacy": "/media/43bad87368c12614.gif",
+   "previous": "/media/43bad87368c12614.gif"
+  },
+  "curl-halteres": {
+   "level": "exact",
+   "media": "/media/36c6cb37445d3880.gif",
+   "note": null,
+   "name": "Curl haltères",
+   "legacy": "/media/36c6cb37445d3880.gif",
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "extension-triceps-a-la-poulie": {
+   "level": "exact",
+   "media": "/media/497ab2e22c01080c.gif",
+   "note": null,
+   "name": "Extension triceps à la poulie",
+   "legacy": "/media/497ab2e22c01080c.gif",
+   "previous": "/media/497ab2e22c01080c.gif"
+  },
+  "bird-dog": {
+   "level": "exact",
+   "media": "/media/aab0de0aad0c275a.gif",
+   "note": null,
+   "name": "Bird dog",
+   "legacy": "/media/aab0de0aad0c275a.gif",
+   "previous": "/media/aab0de0aad0c275a.gif"
+  },
+  "crunch-a-la-poulie-ou-au-sol": {
+   "level": "exact",
+   "media": "/media/a5c1c2427ee83c93.gif",
+   "note": null,
+   "name": "Crunch à la poulie (ou au sol)",
+   "legacy": "/media/a5c1c2427ee83c93.gif",
+   "previous": "/media/a5c1c2427ee83c93.gif"
+  },
+  "goblet-squat": {
+   "level": "exact",
+   "media": "/media/78f9aee57a4101b1.gif",
+   "note": null,
+   "name": "Goblet squat",
+   "legacy": "/media/78f9aee57a4101b1.gif",
+   "previous": "/media/78f9aee57a4101b1.gif"
+  },
+  "hip-thrust-unilateral-1-jambe": {
+   "level": "variante",
+   "media": "/media/1519aacc58d53c5c.gif",
+   "note": "Illustration : hip thrust barre à deux jambes, dos sur le banc. Ici : une seule jambe au sol. L'ancienne image était un squat bulgare.",
+   "name": "Hip thrust unilatéral (1 jambe)",
+   "legacy": "/media/cf312b839f6da027.gif",
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "souleve-de-terre-roumain-unilateral-haltere": {
+   "level": "exact",
+   "media": "/media/1c63a36d168d8b74.gif",
+   "note": null,
+   "name": "Soulevé de terre roumain unilatéral haltère",
+   "legacy": "/media/1c63a36d168d8b74.gif",
+   "previous": "/media/1c63a36d168d8b74.gif"
+  },
+  "fentes-arriere-alternees": {
+   "level": "exact",
+   "media": "/media/bc4d9bed4bbb590a.gif",
+   "note": null,
+   "name": "Fentes arrière alternées",
+   "legacy": "/media/bc4d9bed4bbb590a.gif",
+   "previous": "/media/bc4d9bed4bbb590a.gif"
+  },
+  "step-up-sur-banc-hauteur-du-genou": {
+   "level": "exact",
+   "media": "/media/6809d9052927484a.gif",
+   "note": null,
+   "name": "Step-up sur banc (hauteur du genou)",
+   "legacy": "/media/6809d9052927484a.gif",
+   "previous": "/media/995e1f9a9cedc5ec.gif"
+  },
+  "abduction-assise-machine-ou-elastique": {
+   "level": "exact",
+   "media": "/media/f73444e9dc2fee89.gif",
+   "note": null,
+   "name": "Abduction assise (machine ou élastique)",
+   "legacy": "/media/f73444e9dc2fee89.gif",
+   "previous": "/media/f73444e9dc2fee89.gif"
+  },
+  "clamshell-a-l-elastique": {
+   "level": "none",
+   "media": null,
+   "note": "Aucun clamshell (couché sur le côté, genoux pliés) dans la bibliothèque ; l'ancienne image était un bird dog.",
+   "name": "Clamshell à l'élastique",
+   "legacy": "/media/aab0de0aad0c275a.gif",
+   "previous": "/media/f73444e9dc2fee89.gif"
+  },
+  "mollets-debout-unilateraux": {
+   "level": "exact",
+   "media": "/media/10ab787fbf26b1f4.gif",
+   "note": "Montée sur une jambe, avant-pied sur une marche (l'ancienne image montrait la version à deux jambes avec barre).",
+   "name": "Mollets debout unilatéraux",
+   "legacy": "/media/3e2ed581e11781d5.gif",
+   "previous": "/media/3e2ed581e11781d5.gif"
+  },
+  "reverse-crunch": {
+   "level": "exact",
+   "media": "/media/66849c3144d589f2.gif",
+   "note": null,
+   "name": "Reverse crunch",
+   "legacy": "/media/66849c3144d589f2.gif",
+   "previous": "/media/66849c3144d589f2.gif"
+  },
+  "gainage-lateral": {
+   "level": "exact",
+   "media": "/media/e56d7d8feec13a3a.gif",
+   "note": null,
+   "name": "Gainage latéral",
+   "legacy": "/media/e56d7d8feec13a3a.gif",
+   "previous": "/media/e56d7d8feec13a3a.gif"
+  },
+  "developpe-couche-halteres": {
+   "level": "exact",
+   "media": "/media/a4c1fb89be18062f.gif",
+   "note": null,
+   "name": "Développé couché haltères",
+   "legacy": "/media/a4c1fb89be18062f.gif",
+   "previous": "/media/a4c1fb89be18062f.gif"
+  },
+  "tirage-horizontal-a-la-poulie": {
+   "level": "exact",
+   "media": "/media/0860394a5a99f74b.gif",
+   "note": null,
+   "name": "Tirage horizontal à la poulie",
+   "legacy": "/media/0860394a5a99f74b.gif",
+   "previous": "/media/0860394a5a99f74b.gif"
+  },
+  "releves-de-jambes-allongee": {
+   "level": "exact",
+   "media": "/media/afe2f533cbbef546.gif",
+   "note": null,
+   "name": "Relevés de jambes allongée",
+   "legacy": "/media/afe2f533cbbef546.gif",
+   "previous": "/media/afe2f533cbbef546.gif"
+  },
+  "mountain-climbers": {
+   "level": "exact",
+   "media": "/media/c07b14f1bcc8e8ca.gif",
+   "note": null,
+   "name": "Mountain climbers",
+   "legacy": "/media/c07b14f1bcc8e8ca.gif",
+   "previous": "/media/c07b14f1bcc8e8ca.gif"
+  },
+  "glute-bridge-pieds-sur-banc": {
+   "level": "exact",
+   "media": "/media/0766d3a06bf79dc8.gif",
+   "note": null,
+   "name": "Glute bridge pieds sur banc",
+   "legacy": "/media/0766d3a06bf79dc8.gif",
+   "previous": "/media/0766d3a06bf79dc8.gif"
+  },
+  "abduction-hanche-a-l-elastique": {
+   "level": "exact",
+   "media": "/media/b49969e64dc275f5.gif",
+   "note": null,
+   "name": "Abduction hanche à l'élastique",
+   "legacy": "/media/b49969e64dc275f5.gif",
+   "previous": "/media/f73444e9dc2fee89.gif"
+  },
+  "kickback-a-l-elastique": {
+   "level": "variante",
+   "media": "/media/489169360e044c48.gif",
+   "note": "Illustration : kickback à la poulie. Ici : élastique à la cheville, même geste d'extension de hanche. L'ancienne image montrait un kickback triceps avec haltère.",
+   "name": "Kickback à l'élastique",
+   "legacy": "/media/04ab405e919744b5.gif",
+   "previous": "/media/489169360e044c48.gif"
+  },
+  "souleve-de-terre-roumain-barre": {
+   "level": "exact",
+   "media": "/media/9f22747c305f521b.gif",
+   "note": null,
+   "name": "Soulevé de terre roumain barre",
+   "legacy": "/media/9f22747c305f521b.gif",
+   "previous": "/media/9f22747c305f521b.gif"
+  },
+  "leg-curl-machine": {
+   "level": "exact",
+   "media": "/media/7c0c6d264e85d66a.gif",
+   "note": null,
+   "name": "Leg curl machine",
+   "legacy": "/media/7c0c6d264e85d66a.gif",
+   "previous": "/media/7c0c6d264e85d66a.gif"
+  },
+  "abduction-hanche-a-la-poulie": {
+   "level": "exact",
+   "media": "/media/03098b19c4672ce5.gif",
+   "note": null,
+   "name": "Abduction hanche à la poulie",
+   "legacy": "/media/03098b19c4672ce5.gif",
+   "previous": "/media/03098b19c4672ce5.gif"
+  },
+  "fire-hydrant-a-l-elastique": {
+   "level": "exact",
+   "media": "/media/d06257e45606b033.gif",
+   "note": null,
+   "name": "Fire hydrant à l'élastique",
+   "legacy": "/media/d06257e45606b033.gif",
+   "previous": "/media/03098b19c4672ce5.gif"
+  },
+  "dead-bug-avec-rotation": {
+   "level": "variante",
+   "media": "/media/b2236e6b7a81a1b5.gif",
+   "note": "Illustration : dead bug classique. Ici : ajoutez la rotation contrôlée du buste.",
+   "name": "Dead bug avec rotation",
+   "legacy": "/media/b2236e6b7a81a1b5.gif",
+   "previous": "/media/b2236e6b7a81a1b5.gif"
+  },
+  "pallof-press-a-la-poulie": {
+   "level": "exact",
+   "media": "/media/3bcaad5ec7cdf892.gif",
+   "note": null,
+   "name": "Pallof press à la poulie",
+   "legacy": "/media/3bcaad5ec7cdf892.gif",
+   "previous": "/media/3bcaad5ec7cdf892.gif"
+  },
+  "tirage-vertical-prise-large": {
+   "level": "exact",
+   "media": "/media/4af33157ce25267c.gif",
+   "note": null,
+   "name": "Tirage vertical prise large",
+   "legacy": "/media/4af33157ce25267c.gif",
+   "previous": "/media/4af33157ce25267c.gif"
+  },
+  "rowing-barre-buste-penche": {
+   "level": "exact",
+   "media": "/media/93ab17b0de26fbc8.gif",
+   "note": null,
+   "name": "Rowing barre buste penché",
+   "legacy": "/media/93ab17b0de26fbc8.gif",
+   "previous": "/media/93ab17b0de26fbc8.gif"
+  },
+  "face-pull-a-la-poulie": {
+   "level": "none",
+   "media": null,
+   "note": "Aucun face pull dans la bibliothèque (l'ancienne image était un tirage vertical derrière la nuque).",
+   "name": "Face pull à la poulie",
+   "legacy": "/media/ca785b4cf81c98fa.gif",
+   "previous": "/media/ca785b4cf81c98fa.gif"
+  },
+  "developpe-incline-halteres": {
+   "level": "exact",
+   "media": "/media/22ce97e4b3cb18cf.gif",
+   "note": null,
+   "name": "Développé incliné haltères",
+   "legacy": "/media/22ce97e4b3cb18cf.gif",
+   "previous": "/media/22ce97e4b3cb18cf.gif"
+  },
+  "back-squat-charge-moderee": {
+   "level": "exact",
+   "media": "/media/2c51d8ca1b6fb79a.gif",
+   "note": null,
+   "name": "Back squat (charge modérée)",
+   "legacy": "/media/2c51d8ca1b6fb79a.gif",
+   "previous": "/media/2c51d8ca1b6fb79a.gif"
+  },
+  "hip-thrust-unilateral": {
+   "level": "variante",
+   "media": "/media/1519aacc58d53c5c.gif",
+   "note": "Illustration : hip thrust barre à deux jambes, dos sur le banc. Ici : une seule jambe au sol, l'autre tendue. L'ancienne image était un squat bulgare.",
+   "name": "Hip thrust unilatéral",
+   "legacy": "/media/cf312b839f6da027.gif",
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "souleve-de-terre-roumain-unilateral": {
+   "level": "exact",
+   "media": "/media/6223da1b562d9339.gif",
+   "note": null,
+   "name": "Soulevé de terre roumain unilatéral",
+   "legacy": "/media/6223da1b562d9339.gif",
+   "previous": "/media/6223da1b562d9339.gif"
+  },
+  "fentes-avant-alternees": {
+   "level": "exact",
+   "media": "/media/995e1f9a9cedc5ec.gif",
+   "note": null,
+   "name": "Fentes avant alternées",
+   "legacy": "/media/995e1f9a9cedc5ec.gif",
+   "previous": "/media/995e1f9a9cedc5ec.gif"
+  },
+  "presse-a-cuisses-pieds-hauts": {
+   "level": "exact",
+   "media": "/media/1f27c3cbcf803765.gif",
+   "note": null,
+   "name": "Presse à cuisses pieds hauts",
+   "legacy": "/media/1f27c3cbcf803765.gif",
+   "previous": "/media/1f27c3cbcf803765.gif"
+  },
+  "abduction-assise-machine": {
+   "level": "exact",
+   "media": "/media/f73444e9dc2fee89.gif",
+   "note": null,
+   "name": "Abduction assise machine",
+   "legacy": "/media/f73444e9dc2fee89.gif",
+   "previous": "/media/f73444e9dc2fee89.gif"
+  },
+  "mollets-assis": {
+   "level": "exact",
+   "media": "/media/d13d9f751f4731ab.gif",
+   "note": null,
+   "name": "Mollets assis",
+   "legacy": "/media/d13d9f751f4731ab.gif",
+   "previous": "/media/d13d9f751f4731ab.gif"
+  },
+  "releves-de-jambes": {
+   "level": "exact",
+   "media": "/media/afe2f533cbbef546.gif",
+   "note": null,
+   "name": "Relevés de jambes",
+   "legacy": "/media/afe2f533cbbef546.gif",
+   "previous": "/media/afe2f533cbbef546.gif"
+  },
+  "circuit-gainage-planche-lateral-bird-dog": {
+   "level": "exact",
+   "media": "/media/1317e405efd6ef2b.gif",
+   "note": null,
+   "name": "Circuit gainage (planche + latéral + bird dog)",
+   "legacy": "/media/1317e405efd6ef2b.gif",
+   "previous": "/media/1317e405efd6ef2b.gif"
+  },
+  "bulgarian-split-squat-halteres": {
+   "level": "exact",
+   "media": "/media/cf312b839f6da027.gif",
+   "note": null,
+   "name": "Bulgarian split squat haltères",
+   "legacy": "/media/cf312b839f6da027.gif",
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "glute-bridge-en-1-5-reps": {
+   "level": "exact",
+   "media": "/media/e5f17140d8d97591.gif",
+   "note": null,
+   "name": "Glute bridge en 1,5 reps",
+   "legacy": "/media/e5f17140d8d97591.gif",
+   "previous": "/media/e5f17140d8d97591.gif"
+  },
+  "abduction-hanche-a-la-poulie-myo-reps": {
+   "level": "exact",
+   "media": "/media/03098b19c4672ce5.gif",
+   "note": null,
+   "name": "Abduction hanche à la poulie — myo-reps",
+   "legacy": "/media/03098b19c4672ce5.gif",
+   "previous": "/media/03098b19c4672ce5.gif"
+  },
+  "kickback-a-la-poulie-drop-set-final": {
+   "level": "exact",
+   "media": "/media/489169360e044c48.gif",
+   "note": null,
+   "name": "Kickback à la poulie — drop set final",
+   "legacy": "/media/489169360e044c48.gif",
+   "previous": "/media/489169360e044c48.gif"
+  },
+  "crunch-a-la-poulie": {
+   "level": "exact",
+   "media": "/media/a5c1c2427ee83c93.gif",
+   "note": null,
+   "name": "Crunch à la poulie",
+   "legacy": "/media/a5c1c2427ee83c93.gif",
+   "previous": "/media/a5c1c2427ee83c93.gif"
+  },
+  "elevations-laterales-halteres-myo-reps": {
+   "level": "exact",
+   "media": "/media/cd0cc940608ac100.gif",
+   "note": null,
+   "name": "Élévations latérales haltères — myo-reps",
+   "legacy": "/media/cd0cc940608ac100.gif",
+   "previous": "/media/cd0cc940608ac100.gif"
+  },
+  "back-squat": {
+   "level": "exact",
+   "media": "/media/530326beb7c7a652.gif",
+   "note": null,
+   "name": "Back squat",
+   "legacy": "/media/530326beb7c7a652.gif",
+   "previous": "/media/530326beb7c7a652.gif"
+  },
+  "hip-thrust-unilateral-leste": {
+   "level": "variante",
+   "media": "/media/1519aacc58d53c5c.gif",
+   "note": "Illustration : hip thrust barre à deux jambes. Ici : une jambe, lesté (haltère ou disque sur la hanche).",
+   "name": "Hip thrust unilatéral lesté",
+   "legacy": "/media/1519aacc58d53c5c.gif",
+   "previous": "/media/1519aacc58d53c5c.gif"
+  },
+  "fentes-bulgares-pied-arriere-sureleve": {
+   "level": "exact",
+   "media": "/media/cf312b839f6da027.gif",
+   "note": null,
+   "name": "Fentes bulgares (pied arrière surélevé)",
+   "legacy": "/media/cf312b839f6da027.gif",
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "abduction-assise-en-1-5-reps": {
+   "level": "exact",
+   "media": "/media/f73444e9dc2fee89.gif",
+   "note": null,
+   "name": "Abduction assise en 1,5 reps",
+   "legacy": "/media/f73444e9dc2fee89.gif",
+   "previous": "/media/f73444e9dc2fee89.gif"
+  },
+  "gainage-lateral-dynamique": {
+   "level": "variante",
+   "media": "/media/e56d7d8feec13a3a.gif",
+   "note": "Illustration : gainage latéral tenu, pieds sur banc. Ici : version dynamique (montée/descente du bassin).",
+   "name": "Gainage latéral dynamique",
+   "legacy": "/media/e56d7d8feec13a3a.gif",
+   "previous": "/media/e56d7d8feec13a3a.gif"
+  },
+  "circuit-abdominaux-crunch-releves-gainage": {
+   "level": "variante",
+   "media": "/media/c1065beff4823907.gif",
+   "note": "Illustration : crunch à la poulie assis (première partie du circuit). Enchaînez ensuite relevés de jambes et gainage.",
+   "name": "Circuit abdominaux (crunch + relevés + gainage)",
+   "legacy": "/media/c1065beff4823907.gif",
+   "previous": "/media/c1065beff4823907.gif"
+  },
+  "hip-thrust-barre-test-de-charge-max-3-5-reps": {
+   "level": "exact",
+   "media": "/media/1519aacc58d53c5c.gif",
+   "note": null,
+   "name": "Hip thrust barre — test de charge max (3-5 reps)",
+   "legacy": "/media/1519aacc58d53c5c.gif",
+   "previous": "/media/1519aacc58d53c5c.gif"
+  },
+  "souleve-de-terre-roumain-barre-test-3-5-reps": {
+   "level": "exact",
+   "media": "/media/9f22747c305f521b.gif",
+   "note": null,
+   "name": "Soulevé de terre roumain barre — test (3-5 reps)",
+   "legacy": "/media/9f22747c305f521b.gif",
+   "previous": "/media/9f22747c305f521b.gif"
+  },
+  "rowing-barre-buste-penche-test-3-5-reps": {
+   "level": "exact",
+   "media": "/media/93ab17b0de26fbc8.gif",
+   "note": null,
+   "name": "Rowing barre buste penché — test (3-5 reps)",
+   "legacy": "/media/93ab17b0de26fbc8.gif",
+   "previous": "/media/93ab17b0de26fbc8.gif"
+  },
+  "developpe-militaire-halteres-assis-test-3-5-reps": {
+   "level": "exact",
+   "media": "/media/d9c88be0658a81af.gif",
+   "note": null,
+   "name": "Développé militaire haltères assis — test (3-5 reps)",
+   "legacy": "/media/d9c88be0658a81af.gif",
+   "previous": "/media/d9c88be0658a81af.gif"
+  },
+  "triceps-dips": {
+   "level": "exact",
+   "media": "/media/dips-triceps-corrige.gif",
+   "note": "Image haute redessinée (même style) pour corriger l'orientation du buste ; image basse d'origine.",
+   "name": "Triceps dips",
+   "legacy": "/media/c3a2b9892161522e.gif",
+   "previous": "/media/c3a2b9892161522e.gif"
+  },
+  "triceps-extensions-halteres-banc-plat": {
+   "level": "variante",
+   "media": "/media/ea226c444f72de0f.gif",
+   "note": "Illustration : extension couchée à la barre EZ. Ici : un haltère dans chaque main, même trajectoire vers le front.",
+   "name": "Triceps extensions haltères, banc plat",
+   "legacy": null,
+   "previous": "/media/4c2b19fa924f90a8.gif"
+  },
+  "french-press-poulie-basse": {
+   "level": "exact",
+   "media": "/media/4c2b19fa924f90a8.gif",
+   "note": null,
+   "name": "French press poulie basse",
+   "legacy": "/media/4c2b19fa924f90a8.gif",
+   "previous": "/media/4c2b19fa924f90a8.gif"
+  },
+  "curl-scott-barre-ez-pronation": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl sur pupitre Scott dans la bibliothèque.",
+   "name": "Curl Scott barre EZ, pronation",
+   "legacy": null,
+   "previous": "/media/882c9c361686a9c9.gif"
+  },
+  "curl-marteau-assis": {
+   "level": "exact",
+   "media": "/media/8fe5818f3a4ebebe.gif",
+   "note": null,
+   "name": "Curl marteau assis",
+   "legacy": "/media/8fe5818f3a4ebebe.gif",
+   "previous": "/media/8fe5818f3a4ebebe.gif"
+  },
+  "curl-halteres-incline": {
+   "level": "exact",
+   "media": "/media/b54f07a7b66c1aed.gif",
+   "note": null,
+   "name": "Curl haltères incliné",
+   "legacy": "/media/b54f07a7b66c1aed.gif",
+   "previous": "/media/b54f07a7b66c1aed.gif"
+  },
+  "elevations-laterales-assises": {
+   "level": "variante",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": "Illustration : élévations latérales debout. Ici : assis sur un banc, même trajectoire.",
+   "name": "Élévations latérales assises",
+   "legacy": null,
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "elevations-laterales-assises-variante": {
+   "level": "exact",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": null,
+   "name": "Élévations latérales assises (variante)",
+   "legacy": "/media/9e7f92622aca6913.gif",
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "elevations-laterales-coude-a-90": {
+   "level": "variante",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": "Illustration : élévations latérales bras quasi tendus. Ici : coude plié à 90°, même élévation du bras.",
+   "name": "Élévations latérales coude à 90°",
+   "legacy": null,
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "squat-cycliste-squat-complet": {
+   "level": "variante",
+   "media": "/media/530326beb7c7a652.gif",
+   "note": "Illustration : back squat barre haute. Ici : talons surélevés, descente complète.",
+   "name": "Squat cycliste (squat complet)",
+   "legacy": null,
+   "previous": "/media/1c28908ab83cde2e.gif"
+  },
+  "leg-press": {
+   "level": "exact",
+   "media": "/media/9f8ae03b97d31344.gif",
+   "note": null,
+   "name": "Leg press",
+   "legacy": "/media/9f8ae03b97d31344.gif",
+   "previous": "/media/9f8ae03b97d31344.gif"
+  },
+  "leg-extension": {
+   "level": "none",
+   "media": null,
+   "note": "Pas d'extension de genoux à la machine dans la bibliothèque ; la presse à cuisses n'est pas le même mouvement.",
+   "name": "Leg extension",
+   "legacy": null,
+   "previous": "/media/9f8ae03b97d31344.gif"
+  },
+  "leg-curl-allonge": {
+   "level": "exact",
+   "media": "/media/4eff701bcdf9a359.gif",
+   "note": null,
+   "name": "Leg curl allongé",
+   "legacy": "/media/4eff701bcdf9a359.gif",
+   "previous": "/media/4eff701bcdf9a359.gif"
+  },
+  "back-extension-horizontal": {
+   "level": "exact",
+   "media": "/media/f64281e2dbd7986f.gif",
+   "note": null,
+   "name": "Back extension horizontal",
+   "legacy": "/media/f64281e2dbd7986f.gif",
+   "previous": "/media/f64281e2dbd7986f.gif"
+  },
+  "mollets-debout": {
+   "level": "exact",
+   "media": "/media/f529e06a69b973f4.gif",
+   "note": null,
+   "name": "Mollets debout",
+   "legacy": "/media/f529e06a69b973f4.gif",
+   "previous": "/media/f529e06a69b973f4.gif"
+  },
+  "developpe-incline-barre": {
+   "level": "exact",
+   "media": "/media/ba6ba483a1372c9e.gif",
+   "note": null,
+   "name": "Développé incliné barre",
+   "legacy": "/media/ba6ba483a1372c9e.gif",
+   "previous": "/media/ba6ba483a1372c9e.gif"
+  },
+  "developpe-halteres-plat-prise-neutre": {
+   "level": "exact",
+   "media": "/media/ff100d7322ba1193.gif",
+   "note": null,
+   "name": "Développé haltères plat, prise neutre",
+   "legacy": "/media/ff100d7322ba1193.gif",
+   "previous": "/media/ff100d7322ba1193.gif"
+  },
+  "ecartes-halteres-decline": {
+   "level": "exact",
+   "media": "/media/805f8592e2bccb1a.gif",
+   "note": null,
+   "name": "Écartés haltères décliné",
+   "legacy": "/media/805f8592e2bccb1a.gif",
+   "previous": "/media/805f8592e2bccb1a.gif"
+  },
+  "rowing-barre-buste-penche-pronation": {
+   "level": "exact",
+   "media": "/media/9dfc7f7acb3e74e5.gif",
+   "note": null,
+   "name": "Rowing barre buste penché, pronation",
+   "legacy": "/media/9dfc7f7acb3e74e5.gif",
+   "previous": "/media/9dfc7f7acb3e74e5.gif"
+  },
+  "rowing-assis-prise-neutre": {
+   "level": "exact",
+   "media": "/media/0a5625b92247ed69.gif",
+   "note": null,
+   "name": "Rowing assis, prise neutre",
+   "legacy": "/media/0a5625b92247ed69.gif",
+   "previous": "/media/0a5625b92247ed69.gif"
+  },
+  "tirage-vertical-prise-pronation": {
+   "level": "exact",
+   "media": "/media/dc0cabae23adbfd5.gif",
+   "note": null,
+   "name": "Tirage vertical prise pronation",
+   "legacy": "/media/dc0cabae23adbfd5.gif",
+   "previous": "/media/dc0cabae23adbfd5.gif"
+  },
+  "releves-de-jambes-allonge": {
+   "level": "exact",
+   "media": "/media/afe2f533cbbef546.gif",
+   "note": null,
+   "name": "Relevés de jambes allongé",
+   "legacy": null,
+   "previous": "/media/afe2f533cbbef546.gif"
+  },
+  "crunch-sur-swiss-ball": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de crunch sur swiss ball dans la bibliothèque ; le jackknife n'est pas le même mouvement.",
+   "name": "Crunch sur swiss ball",
+   "legacy": null,
+   "previous": "/media/789c6d90f30eb33e.gif"
+  },
+  "developpe-militaire-debout": {
+   "level": "exact",
+   "media": "/media/22146cff6a787e8a.gif",
+   "note": null,
+   "name": "Développé militaire debout",
+   "legacy": "/media/22146cff6a787e8a.gif",
+   "previous": "/media/22146cff6a787e8a.gif"
+  },
+  "tractions-pull-up": {
+   "level": "exact",
+   "media": "/media/a8fb4616e53e9cb9.gif",
+   "note": null,
+   "name": "Tractions (pull-up)",
+   "legacy": "/media/a8fb4616e53e9cb9.gif",
+   "previous": "/media/4af33157ce25267c.gif"
+  },
+  "developpe-halteres-incline-30": {
+   "level": "exact",
+   "media": "/media/45a34272da9569a6.gif",
+   "note": null,
+   "name": "Développé haltères incliné 30°",
+   "legacy": "/media/45a34272da9569a6.gif",
+   "previous": "/media/45a34272da9569a6.gif"
+  },
+  "french-press-barre-ez": {
+   "level": "exact",
+   "media": "/media/ea226c444f72de0f.gif",
+   "note": "Extension couchée à la barre EZ restaurée (la 1.4.0 affichait à tort l'extension debout à la poulie basse).",
+   "name": "French press barre EZ",
+   "legacy": "/media/ea226c444f72de0f.gif",
+   "previous": "/media/4c2b19fa924f90a8.gif"
+  },
+  "front-squat": {
+   "level": "exact",
+   "media": "/media/1c28908ab83cde2e.gif",
+   "note": null,
+   "name": "Front squat",
+   "legacy": "/media/1c28908ab83cde2e.gif",
+   "previous": "/media/1c28908ab83cde2e.gif"
+  },
+  "leg-curl-debout": {
+   "level": "exact",
+   "media": "/media/fabb86971a81ea03.gif",
+   "note": null,
+   "name": "Leg curl debout",
+   "legacy": "/media/fabb86971a81ea03.gif",
+   "previous": "/media/fabb86971a81ea03.gif"
+  },
+  "fentes-bulgares-halteres-pied-avant-sureleve": {
+   "level": "variante",
+   "media": "/media/cf312b839f6da027.gif",
+   "note": "Illustration : squat bulgare haltères, pied arrière surélevé. Ici : pied avant également surélevé.",
+   "name": "Fentes bulgares haltères (pied avant surélevé)",
+   "legacy": null,
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "releves-de-jambes-incline": {
+   "level": "variante",
+   "media": "/media/afe2f533cbbef546.gif",
+   "note": "Illustration : relevés de jambes au sol. Ici : sur banc incliné, mains derrière la tête.",
+   "name": "Relevés de jambes incliné",
+   "legacy": null,
+   "previous": "/media/16f6ff0f7ceba611.gif"
+  },
+  "mollets-unilateraux": {
+   "level": "exact",
+   "media": "/media/10ab787fbf26b1f4.gif",
+   "note": null,
+   "name": "Mollets unilatéraux",
+   "legacy": "/media/10ab787fbf26b1f4.gif",
+   "previous": "/media/10ab787fbf26b1f4.gif"
+  },
+  "tractions-prise-neutre-chin-up": {
+   "level": "exact",
+   "media": "/media/b0d0b89c32ca0aec.gif",
+   "note": null,
+   "name": "Tractions prise neutre (chin-up)",
+   "legacy": "/media/b0d0b89c32ca0aec.gif",
+   "previous": "/media/4af33157ce25267c.gif"
+  },
+  "developpe-halteres-decline-prise-neutre": {
+   "level": "exact",
+   "media": "/media/63e925f417c73b92.gif",
+   "note": null,
+   "name": "Développé haltères décliné, prise neutre",
+   "legacy": "/media/63e925f417c73b92.gif",
+   "previous": "/media/63e925f417c73b92.gif"
+  },
+  "rowing-haltere-un-bras-coude-ouvert": {
+   "level": "exact",
+   "media": "/media/44fc577dce29aff5.gif",
+   "note": null,
+   "name": "Rowing haltère un bras, coude ouvert",
+   "legacy": "/media/44fc577dce29aff5.gif",
+   "previous": "/media/44fc577dce29aff5.gif"
+  },
+  "extensions-triceps-barre-ez": {
+   "level": "exact",
+   "media": "/media/5d6a89132df205f8.gif",
+   "note": null,
+   "name": "Extensions triceps barre EZ",
+   "legacy": "/media/5d6a89132df205f8.gif",
+   "previous": "/media/5d6a89132df205f8.gif"
+  },
+  "curl-scott-barre-ez-supination": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl sur pupitre Scott dans la bibliothèque.",
+   "name": "Curl Scott barre EZ, supination",
+   "legacy": null,
+   "previous": "/media/882c9c361686a9c9.gif"
+  },
+  "souleve-de-terre": {
+   "level": "exact",
+   "media": "/media/a8b1d1173ade4e8f.gif",
+   "note": null,
+   "name": "Soulevé de terre",
+   "legacy": "/media/a8b1d1173ade4e8f.gif",
+   "previous": "/media/a8b1d1173ade4e8f.gif"
+  },
+  "step-up-haut": {
+   "level": "exact",
+   "media": "/media/37f614cd3432709b.gif",
+   "note": null,
+   "name": "Step-up haut",
+   "legacy": "/media/37f614cd3432709b.gif",
+   "previous": "/media/995e1f9a9cedc5ec.gif"
+  },
+  "curl-scott-haltere-prise-neutre": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl haltère sur pupitre Scott dans la bibliothèque.",
+   "name": "Curl Scott haltère, prise neutre",
+   "legacy": null,
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "barre-au-front-pushdown-triceps": {
+   "level": "exact",
+   "media": "/media/ea226c444f72de0f.gif",
+   "note": "Barre au front (extension couchée à la barre EZ).",
+   "name": "Barre au front (pushdown triceps)",
+   "legacy": null,
+   "previous": "/media/5d6a89132df205f8.gif"
+  },
+  "curl-poulie-basse-supination": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl à la poulie basse dans la bibliothèque.",
+   "name": "Curl poulie basse, supination",
+   "legacy": null,
+   "previous": "/media/882c9c361686a9c9.gif"
+  },
+  "developpe-halteres-assis-neutre-pronation": {
+   "level": "variante",
+   "media": "/media/d9c88be0658a81af.gif",
+   "note": "Illustration : développé haltères assis en pronation. Ici : départ prise neutre, rotation vers la pronation en montant.",
+   "name": "Développé haltères assis, neutre→pronation",
+   "legacy": null,
+   "previous": "/media/d9c88be0658a81af.gif"
+  },
+  "back-squat-barre-haute": {
+   "level": "exact",
+   "media": "/media/530326beb7c7a652.gif",
+   "note": null,
+   "name": "Back squat barre haute",
+   "legacy": "/media/530326beb7c7a652.gif",
+   "previous": "/media/530326beb7c7a652.gif"
+  },
+  "hack-squat": {
+   "level": "exact",
+   "media": "/media/5dd80c9e1b36df25.gif",
+   "note": null,
+   "name": "Hack squat",
+   "legacy": "/media/5dd80c9e1b36df25.gif",
+   "previous": "/media/5dd80c9e1b36df25.gif"
+  },
+  "back-extension-45-prise-snatch": {
+   "level": "variante",
+   "media": "/media/f64281e2dbd7986f.gif",
+   "note": "Illustration : extension du dos sur banc horizontal. Ici : banc à 45°, barre tenue en prise large.",
+   "name": "Back extension 45°, prise snatch",
+   "legacy": null,
+   "previous": "/media/f64281e2dbd7986f.gif"
+  },
+  "jackknife-sur-swiss-ball": {
+   "level": "exact",
+   "media": "/media/789c6d90f30eb33e.gif",
+   "note": null,
+   "name": "Jackknife sur swiss ball",
+   "legacy": "/media/789c6d90f30eb33e.gif",
+   "previous": "/media/789c6d90f30eb33e.gif"
+  },
+  "developpe-halteres-plat": {
+   "level": "exact",
+   "media": "/media/6fcfe5741629ca2a.gif",
+   "note": null,
+   "name": "Développé haltères plat",
+   "legacy": "/media/6fcfe5741629ca2a.gif",
+   "previous": "/media/6fcfe5741629ca2a.gif"
+  },
+  "rowing-barre-ez-supination-buste-penche": {
+   "level": "exact",
+   "media": "/media/c4d2de309fa47b4c.gif",
+   "note": null,
+   "name": "Rowing barre EZ supination, buste penché",
+   "legacy": "/media/c4d2de309fa47b4c.gif",
+   "previous": "/media/c4d2de309fa47b4c.gif"
+  },
+  "cables-croises": {
+   "level": "exact",
+   "media": "/media/b395c84efcad344b.gif",
+   "note": null,
+   "name": "Câbles croisés",
+   "legacy": "/media/b395c84efcad344b.gif",
+   "previous": "/media/b395c84efcad344b.gif"
+  },
+  "rowing-assis-etirement": {
+   "level": "variante",
+   "media": "/media/0a5625b92247ed69.gif",
+   "note": "Illustration : rowing assis prise neutre. Ici : laissez les épaules s'étirer vers l'avant entre les répétitions.",
+   "name": "Rowing assis + étirement",
+   "legacy": null,
+   "previous": "/media/0a5625b92247ed69.gif"
+  },
+  "elevations-laterales-incline-30-face-au-banc": {
+   "level": "variante",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": "Illustration : élévations latérales debout. Ici : buste posé face au banc incliné à 30°.",
+   "name": "Élévations latérales incliné 30° (face au banc)",
+   "legacy": null,
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "french-press-haltere-un-bras": {
+   "level": "variante",
+   "media": "/media/5d6a89132df205f8.gif",
+   "note": "Illustration : extension au-dessus de la tête à deux mains, barre EZ. Ici : un seul haltère, un bras à la fois.",
+   "name": "French press haltère un bras",
+   "legacy": null,
+   "previous": "/media/4c2b19fa924f90a8.gif"
+  },
+  "curl-barre-debout": {
+   "level": "exact",
+   "media": "/media/882c9c361686a9c9.gif",
+   "note": null,
+   "name": "Curl barre debout",
+   "legacy": "/media/882c9c361686a9c9.gif",
+   "previous": "/media/882c9c361686a9c9.gif"
+  },
+  "back-squat-inertie-pause-complete": {
+   "level": "variante",
+   "media": "/media/530326beb7c7a652.gif",
+   "note": "Illustration : back squat classique. Ici : pause complète en position basse avant de remonter.",
+   "name": "Back squat inertie (pause complète)",
+   "legacy": null,
+   "previous": "/media/530326beb7c7a652.gif"
+  },
+  "fentes-barre": {
+   "level": "variante",
+   "media": "/media/995e1f9a9cedc5ec.gif",
+   "note": "Illustration : fentes avant avec haltères. Ici : barre sur les trapèzes.",
+   "name": "Fentes barre",
+   "legacy": null,
+   "previous": "/media/995e1f9a9cedc5ec.gif"
+  },
+  "developpe-couche-barre-plat": {
+   "level": "exact",
+   "media": "/media/30adf4e98e55b6cd.gif",
+   "note": null,
+   "name": "Développé couché barre plat",
+   "legacy": "/media/30adf4e98e55b6cd.gif",
+   "previous": "/media/30adf4e98e55b6cd.gif"
+  },
+  "tractions-supination-chin-up": {
+   "level": "exact",
+   "media": "/media/ebc7379850a4ee2f.gif",
+   "note": null,
+   "name": "Tractions supination (chin-up)",
+   "legacy": "/media/ebc7379850a4ee2f.gif",
+   "previous": "/media/4af33157ce25267c.gif"
+  },
+  "developpe-halteres-assis": {
+   "level": "exact",
+   "media": "/media/3438ce158299c474.jpg",
+   "note": null,
+   "name": "Développé haltères assis",
+   "legacy": "/media/3438ce158299c474.jpg",
+   "previous": "/media/3438ce158299c474.jpg"
+  },
+  "extensions-triceps-pullover-barre-ez": {
+   "level": "variante",
+   "media": "/media/ea226c444f72de0f.gif",
+   "note": "Illustration : extension couchée à la barre EZ. Ici : enchaînez avec le pullover.",
+   "name": "Extensions triceps + pullover barre EZ",
+   "legacy": null,
+   "previous": "/media/5d6a89132df205f8.gif"
+  },
+  "curl-haltere-supination-banc-scott-90": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl haltère sur banc Scott 90° dans la bibliothèque.",
+   "name": "Curl haltère supination, banc Scott 90°",
+   "legacy": null,
+   "previous": "/media/b54f07a7b66c1aed.gif"
+  },
+  "releves-de-jambes-suspendu": {
+   "level": "exact",
+   "media": "/media/16f6ff0f7ceba611.gif",
+   "note": null,
+   "name": "Relevés de jambes suspendu",
+   "legacy": "/media/16f6ff0f7ceba611.gif",
+   "previous": "/media/16f6ff0f7ceba611.gif"
+  },
+  "developpe-couche-prise-serree": {
+   "level": "variante",
+   "media": "/media/30adf4e98e55b6cd.gif",
+   "note": "Illustration : développé couché prise moyenne. Ici : mains largeur d'épaules, coudes près du corps.",
+   "name": "Développé couché prise serrée",
+   "legacy": null,
+   "previous": "/media/30adf4e98e55b6cd.gif"
+  },
+  "extensions-triceps-halteres-incline": {
+   "level": "variante",
+   "media": "/media/ea226c444f72de0f.gif",
+   "note": "Illustration : extension couchée à la barre EZ sur banc plat. Ici : haltères, banc incliné.",
+   "name": "Extensions triceps haltères incliné",
+   "legacy": null,
+   "previous": "/media/4c2b19fa924f90a8.gif"
+  },
+  "pushdown-triceps-cable": {
+   "level": "exact",
+   "media": "/media/497ab2e22c01080c.gif",
+   "note": null,
+   "name": "Pushdown triceps câble",
+   "legacy": null,
+   "previous": "/media/497ab2e22c01080c.gif"
+  },
+  "curl-scott-haltere-neutre": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl haltère sur pupitre Scott dans la bibliothèque.",
+   "name": "Curl Scott haltère neutre",
+   "legacy": null,
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "curl-zottman-assis": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl Zottman assis dans la bibliothèque.",
+   "name": "Curl Zottman assis",
+   "legacy": null,
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "curl-poulie-basse": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl à la poulie basse dans la bibliothèque.",
+   "name": "Curl poulie basse",
+   "legacy": null,
+   "previous": "/media/882c9c361686a9c9.gif"
+  },
+  "elevations-laterales-incline-30": {
+   "level": "variante",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": "Illustration : élévations latérales debout. Ici : banc incliné à 30°.",
+   "name": "Élévations latérales incliné 30°",
+   "legacy": null,
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "elevations-laterales-incline-45": {
+   "level": "variante",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": "Illustration : élévations latérales debout. Ici : banc incliné à 45°.",
+   "name": "Élévations latérales incliné 45°",
+   "legacy": null,
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "elevations-laterales": {
+   "level": "exact",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": null,
+   "name": "Élévations latérales",
+   "legacy": "/media/9e7f92622aca6913.gif",
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "fentes-marchees": {
+   "level": "variante",
+   "media": "/media/995e1f9a9cedc5ec.gif",
+   "note": "Illustration : fentes avant alternées sur place. Ici : en avançant à chaque pas.",
+   "name": "Fentes marchées",
+   "legacy": null,
+   "previous": "/media/995e1f9a9cedc5ec.gif"
+  },
+  "leg-curl-allonge-pieds-pointes": {
+   "level": "variante",
+   "media": "/media/4eff701bcdf9a359.gif",
+   "note": "Illustration : leg curl allongé. Ici : pieds pointés (extension de cheville).",
+   "name": "Leg curl allongé, pieds pointés",
+   "legacy": null,
+   "previous": "/media/4eff701bcdf9a359.gif"
+  },
+  "leg-curl-allonge-pieds-flechis": {
+   "level": "variante",
+   "media": "/media/4eff701bcdf9a359.gif",
+   "note": "Illustration : leg curl allongé. Ici : pieds fléchis (orteils vers les tibias).",
+   "name": "Leg curl allongé, pieds fléchis",
+   "legacy": null,
+   "previous": "/media/4eff701bcdf9a359.gif"
+  },
+  "good-morning-debout": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de good morning (barre sur le dos) dans la bibliothèque ; le soulevé de terre roumain n'est pas le même placement.",
+   "name": "Good morning debout",
+   "legacy": null,
+   "previous": "/media/9f22747c305f521b.gif"
+  },
+  "developpe-halteres-incline-45-prise-neutre": {
+   "level": "variante",
+   "media": "/media/b4522eb6968d20d0.gif",
+   "note": "Illustration : développé incliné en pronation. Ici : paumes face à face.",
+   "name": "Développé haltères incliné 45°, prise neutre",
+   "legacy": null,
+   "previous": "/media/ff100d7322ba1193.gif"
+  },
+  "ecartes-halteres": {
+   "level": "variante",
+   "media": "/media/805f8592e2bccb1a.gif",
+   "note": "Illustration : écartés haltères sur banc décliné. Ici : banc plat, même arc de cercle.",
+   "name": "Écartés haltères",
+   "legacy": null,
+   "previous": "/media/805f8592e2bccb1a.gif"
+  },
+  "rowing-haltere-buste-penche": {
+   "level": "variante",
+   "media": "/media/4dfda05b1db24000.gif",
+   "note": "Illustration : rowing haltère un bras, appui sur le banc. Ici : buste penché sans appui.",
+   "name": "Rowing haltère buste penché",
+   "legacy": null,
+   "previous": "/media/4dfda05b1db24000.gif"
+  },
+  "curl-zottman-un-bras-banc-scott": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl Zottman sur banc Scott dans la bibliothèque.",
+   "name": "Curl Zottman un bras, banc Scott",
+   "legacy": null,
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "split-squat-poulie-basse": {
+   "level": "variante",
+   "media": "/media/cf312b839f6da027.gif",
+   "note": "Illustration : squat bulgare avec haltères. Ici : résistance d'une poulie basse tenue devant.",
+   "name": "Split squat poulie basse",
+   "legacy": null,
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "dips": {
+   "level": "exact",
+   "media": "/media/dips-triceps-corrige.gif",
+   "note": "Même démonstration que Triceps dips.",
+   "name": "Dips",
+   "legacy": "/media/c3a2b9892161522e.gif",
+   "previous": "/media/c3a2b9892161522e.gif"
+  },
+  "tractions-prise-large": {
+   "level": "variante",
+   "media": "/media/a8fb4616e53e9cb9.gif",
+   "note": "Illustration : tractions pronation largeur d'épaules. Ici : prise plus large que les épaules.",
+   "name": "Tractions prise large",
+   "legacy": null,
+   "previous": "/media/4af33157ce25267c.gif"
+  },
+  "developpe-halteres-incline-pronation": {
+   "level": "exact",
+   "media": "/media/b4522eb6968d20d0.gif",
+   "note": null,
+   "name": "Développé haltères incliné, pronation",
+   "legacy": null,
+   "previous": "/media/a4c1fb89be18062f.gif"
+  },
+  "souleve-de-terre-partiel-prise-snatch": {
+   "level": "variante",
+   "media": "/media/a8b1d1173ade4e8f.gif",
+   "note": "Illustration : soulevé de terre prise classique. Ici : amplitude partielle, prise très large.",
+   "name": "Soulevé de terre partiel, prise snatch",
+   "legacy": null,
+   "previous": "/media/a8b1d1173ade4e8f.gif"
+  },
+  "curl-halteres-incline-supination": {
+   "level": "exact",
+   "media": "/media/b54f07a7b66c1aed.gif",
+   "note": null,
+   "name": "Curl haltères incliné, supination",
+   "legacy": null,
+   "previous": "/media/b54f07a7b66c1aed.gif"
+  },
+  "developpe-derriere-la-nuque": {
+   "level": "variante",
+   "media": "/media/22146cff6a787e8a.gif",
+   "note": "Illustration : développé militaire barre devant. Ici : barre descendue derrière la nuque, amplitude prudente.",
+   "name": "Développé derrière la nuque",
+   "legacy": null,
+   "previous": "/media/22146cff6a787e8a.gif"
+  },
+  "leg-curl-allonge-1-1-4-en-haut": {
+   "level": "exact",
+   "media": "/media/4eff701bcdf9a359.gif",
+   "note": null,
+   "name": "Leg curl allongé, 1 1/4 en haut",
+   "legacy": "/media/4eff701bcdf9a359.gif",
+   "previous": "/media/4eff701bcdf9a359.gif"
+  },
+  "mollets-a-la-presse": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de montée de mollets à la presse dans la bibliothèque.",
+   "name": "Mollets à la presse",
+   "legacy": null,
+   "previous": "/media/f529e06a69b973f4.gif"
+  },
+  "ecartes-cables-incline": {
+   "level": "variante",
+   "media": "/media/b395c84efcad344b.gif",
+   "note": "Illustration : câbles croisés debout. Ici : allongé sur banc incliné entre les poulies basses.",
+   "name": "Écartés câbles incliné",
+   "legacy": null,
+   "previous": "/media/b395c84efcad344b.gif"
+  },
+  "rowing-assis-au-cou": {
+   "level": "variante",
+   "media": "/media/0a5625b92247ed69.gif",
+   "note": "Illustration : rowing assis vers l'abdomen. Ici : tirez vers le cou, coudes hauts.",
+   "name": "Rowing assis au cou",
+   "legacy": null,
+   "previous": "/media/0a5625b92247ed69.gif"
+  },
+  "drop-lunges-fentes-sautees-controlees": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de fentes sautées dans la bibliothèque ; l'illustration d'une fente statique ne montre pas l'impulsion.",
+   "name": "Drop lunges (fentes sautées contrôlées)",
+   "legacy": null,
+   "previous": "/media/bc4d9bed4bbb590a.gif"
+  },
+  "glute-ham-raise": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de glute ham raise dans la bibliothèque ; le leg curl allongé n'est pas le même mouvement.",
+   "name": "Glute ham raise",
+   "legacy": null,
+   "previous": "/media/4eff701bcdf9a359.gif"
+  },
+  "lean-away-pull-ups": {
+   "level": "variante",
+   "media": "/media/a8fb4616e53e9cb9.gif",
+   "note": "Illustration : tractions classiques. Ici : buste incliné vers l'arrière en tirant (lean away).",
+   "name": "Lean away pull-ups",
+   "legacy": null,
+   "previous": "/media/4af33157ce25267c.gif"
+  },
+  "developpe-halteres-incline-45": {
+   "level": "exact",
+   "media": "/media/b4522eb6968d20d0.gif",
+   "note": null,
+   "name": "Développé haltères incliné 45°",
+   "legacy": null,
+   "previous": "/media/b4522eb6968d20d0.gif"
+  },
+  "rowing-haltere-un-bras-prise-neutre": {
+   "level": "exact",
+   "media": "/media/4dfda05b1db24000.gif",
+   "note": null,
+   "name": "Rowing haltère un bras, prise neutre",
+   "legacy": null,
+   "previous": "/media/4dfda05b1db24000.gif"
+  },
+  "souleve-de-terre-partiel": {
+   "level": "variante",
+   "media": "/media/a8b1d1173ade4e8f.gif",
+   "note": "Illustration : soulevé de terre complet. Ici : départ ou arrêt à mi-tibia/genoux (amplitude partielle).",
+   "name": "Soulevé de terre partiel",
+   "legacy": null,
+   "previous": "/media/a8b1d1173ade4e8f.gif"
+  },
+  "ab-wheel-roulette": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de roulette abdominale dans la bibliothèque.",
+   "name": "Ab wheel (roulette)",
+   "legacy": null,
+   "previous": "/media/789c6d90f30eb33e.gif"
+  },
+  "curl-marteau": {
+   "level": "variante",
+   "media": "/media/8fe5818f3a4ebebe.gif",
+   "note": "Illustration : curl marteau assis. Ici : debout, même prise neutre.",
+   "name": "Curl marteau",
+   "legacy": null,
+   "previous": "/media/8fe5818f3a4ebebe.gif"
+  },
+  "curl-scott-90-haltere-supination": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl haltère sur pupitre Scott 90° dans la bibliothèque.",
+   "name": "Curl Scott 90° haltère supination",
+   "legacy": null,
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "california-press-barre-au-cou": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de California press (hybride extension/développé serré) dans la bibliothèque.",
+   "name": "California press (barre au cou)",
+   "legacy": null,
+   "previous": "/media/5d6a89132df205f8.gif"
+  },
+  "elevations-laterales-incline": {
+   "level": "variante",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": "Illustration : élévations latérales debout. Ici : allongé sur le côté sur banc incliné, un bras à la fois.",
+   "name": "Élévations latérales incliné",
+   "legacy": null,
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "safety-bar-squat-ou-barre-classique": {
+   "level": "variante",
+   "media": "/media/530326beb7c7a652.gif",
+   "note": "Illustration : barre classique. Ici : safety bar si disponible, même descente.",
+   "name": "Safety bar squat (ou barre classique)",
+   "legacy": null,
+   "previous": "/media/530326beb7c7a652.gif"
+  },
+  "developpe-halteres-incline": {
+   "level": "exact",
+   "media": "/media/b4522eb6968d20d0.gif",
+   "note": null,
+   "name": "Développé haltères incliné",
+   "legacy": "/media/b4522eb6968d20d0.gif",
+   "previous": "/media/b4522eb6968d20d0.gif"
+  },
+  "cables-croises-rotation-externe": {
+   "level": "variante",
+   "media": "/media/b395c84efcad344b.gif",
+   "note": "Illustration : câbles croisés. Ici : terminez chaque répétition par une rotation externe des épaules.",
+   "name": "Câbles croisés + rotation externe",
+   "legacy": null,
+   "previous": "/media/b395c84efcad344b.gif"
+  },
+  "pullover-cable-bras-tendus": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de pullover à la poulie bras tendus dans la bibliothèque.",
+   "name": "Pullover câble bras tendus",
+   "legacy": null,
+   "previous": "/media/dc0cabae23adbfd5.gif"
+  },
+  "rowing-assis-cable-unilateral": {
+   "level": "variante",
+   "media": "/media/0a5625b92247ed69.gif",
+   "note": "Illustration : rowing assis à deux mains. Ici : une poignée, un bras à la fois.",
+   "name": "Rowing assis câble unilatéral",
+   "legacy": null,
+   "previous": "/media/0a5625b92247ed69.gif"
+  },
+  "curl-zottman": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl Zottman (rotation du poignet) dans la bibliothèque.",
+   "name": "Curl Zottman",
+   "legacy": null,
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "squat-cycliste": {
+   "level": "variante",
+   "media": "/media/530326beb7c7a652.gif",
+   "note": "Illustration : back squat barre haute. Ici : talons surélevés, pieds rapprochés, genoux très en avant.",
+   "name": "Squat cycliste",
+   "legacy": null,
+   "previous": "/media/1c28908ab83cde2e.gif"
+  },
+  "leg-press-unilateral": {
+   "level": "variante",
+   "media": "/media/9f8ae03b97d31344.gif",
+   "note": "Illustration : presse à deux jambes. Ici : une seule jambe sur la plateforme.",
+   "name": "Leg press unilatéral",
+   "legacy": null,
+   "previous": "/media/9f8ae03b97d31344.gif"
+  },
+  "wood-chop-poulie-haute": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de wood chop (rotation diagonale) dans la bibliothèque ; le crunch à la poulie n'est pas le même mouvement.",
+   "name": "Wood chop poulie haute",
+   "legacy": null,
+   "previous": "/media/a5c1c2427ee83c93.gif"
+  },
+  "developpe-haltere-un-bras-debout": {
+   "level": "variante",
+   "media": "/media/d9c88be0658a81af.gif",
+   "note": "Illustration : développé haltères assis à deux bras. Ici : debout, un seul haltère.",
+   "name": "Développé haltère un bras debout",
+   "legacy": null,
+   "previous": "/media/d9c88be0658a81af.gif"
+  },
+  "extensions-triceps-barre-ez-pullover": {
+   "level": "variante",
+   "media": "/media/ea226c444f72de0f.gif",
+   "note": "Illustration : extension couchée à la barre EZ. Ici : enchaînez avec le pullover bras légèrement fléchis.",
+   "name": "Extensions triceps barre EZ + pullover",
+   "legacy": null,
+   "previous": "/media/5d6a89132df205f8.gif"
+  },
+  "curl-concentration": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de curl concentration (coude sur la cuisse) dans la bibliothèque.",
+   "name": "Curl concentration",
+   "legacy": null,
+   "previous": "/media/36c6cb37445d3880.gif"
+  },
+  "split-squat-barbell-pied-avant-sureleve": {
+   "level": "variante",
+   "media": "/media/cf312b839f6da027.gif",
+   "note": "Illustration : squat bulgare haltères. Ici : barre sur le dos, pied avant surélevé.",
+   "name": "Split squat barbell (pied avant surélevé)",
+   "legacy": null,
+   "previous": "/media/cf312b839f6da027.gif"
+  },
+  "developpe-couche-decline-prise-serree": {
+   "level": "variante",
+   "media": "/media/30adf4e98e55b6cd.gif",
+   "note": "Illustration : développé couché sur banc plat, prise moyenne. Ici : banc décliné et prise serrée.",
+   "name": "Développé couché décliné prise serrée",
+   "legacy": null,
+   "previous": "/media/30adf4e98e55b6cd.gif"
+  },
+  "extensions-triceps-halteres-plat": {
+   "level": "variante",
+   "media": "/media/ea226c444f72de0f.gif",
+   "note": "Illustration : extension couchée à la barre EZ. Ici : haltères, banc plat.",
+   "name": "Extensions triceps haltères plat",
+   "legacy": null,
+   "previous": "/media/4c2b19fa924f90a8.gif"
+  },
+  "curl-halteres-incline-prise-neutre": {
+   "level": "variante",
+   "media": "/media/b54f07a7b66c1aed.gif",
+   "note": "Illustration : curl incliné en supination. Ici : prise neutre (paumes face à face).",
+   "name": "Curl haltères incliné, prise neutre",
+   "legacy": null,
+   "previous": "/media/b54f07a7b66c1aed.gif"
+  },
+  "developpe-halteres-assis-prise-neutre": {
+   "level": "variante",
+   "media": "/media/d9c88be0658a81af.gif",
+   "note": "Illustration : développé haltères assis en pronation. Ici : paumes face à face.",
+   "name": "Développé haltères assis, prise neutre",
+   "legacy": null,
+   "previous": "/media/d9c88be0658a81af.gif"
+  },
+  "elevations-laterales-lean-away": {
+   "level": "variante",
+   "media": "/media/9e7f92622aca6913.gif",
+   "note": "Illustration : élévations latérales debout. Ici : une main sur un support, buste incliné à l'opposé.",
+   "name": "Élévations latérales lean away",
+   "legacy": null,
+   "previous": "/media/9e7f92622aca6913.gif"
+  },
+  "tirage-vertical-lean-away": {
+   "level": "variante",
+   "media": "/media/dc0cabae23adbfd5.gif",
+   "note": "Illustration : tirage vertical classique. Ici : buste incliné vers l'arrière, barre vers le haut de la poitrine.",
+   "name": "Tirage vertical lean away",
+   "legacy": null,
+   "previous": "/media/dc0cabae23adbfd5.gif"
+  },
+  "pullover-haltere-plat": {
+   "level": "none",
+   "media": null,
+   "note": "Pas de pullover haltère couché dans la bibliothèque.",
+   "name": "Pullover haltère plat",
+   "legacy": null,
+   "previous": "/media/dc0cabae23adbfd5.gif"
+  },
+  "developpe-couche-plat-inertie-depuis-les-pins": {
+   "level": "variante",
+   "media": "/media/30adf4e98e55b6cd.gif",
+   "note": "Illustration : développé couché classique. Ici : départ barre posée sur les pins.",
+   "name": "Développé couché plat, inertie depuis les pins",
+   "legacy": null,
+   "previous": "/media/30adf4e98e55b6cd.gif"
+  },
+  "developpe-militaire-inertie-depuis-les-pins": {
+   "level": "variante",
+   "media": "/media/22146cff6a787e8a.gif",
+   "note": "Illustration : développé militaire debout. Ici : départ barre posée sur les pins à hauteur de menton.",
+   "name": "Développé militaire, inertie depuis les pins",
+   "legacy": null,
+   "previous": "/media/22146cff6a787e8a.gif"
+  },
+  "drop-lunges-fentes-controlees": {
+   "level": "variante",
+   "media": "/media/bc4d9bed4bbb590a.gif",
+   "note": "Illustration : fentes arrière avec barre. Ici : pas croisé vers l'arrière, descente contrôlée, sans charge.",
+   "name": "Drop lunges (fentes contrôlées)",
+   "legacy": null,
+   "previous": "/media/bc4d9bed4bbb590a.gif"
+  },
+  "developpe-couche-barre": {
+   "level": "exact",
+   "media": "/media/30adf4e98e55b6cd.gif",
+   "note": null,
+   "name": "Développé couché barre",
+   "legacy": null,
+   "previous": "/media/30adf4e98e55b6cd.gif"
+  },
+  "extensions-triceps-poulie": {
+   "level": "exact",
+   "media": "/media/497ab2e22c01080c.gif",
+   "note": null,
+   "name": "Extensions triceps poulie",
+   "legacy": null,
+   "previous": "/media/497ab2e22c01080c.gif"
+  },
+  "curl-barre": {
+   "level": "exact",
+   "media": "/media/882c9c361686a9c9.gif",
+   "note": null,
+   "name": "Curl barre",
+   "legacy": null,
+   "previous": "/media/882c9c361686a9c9.gif"
+  },
+  "developpe-couche-test-1rm": {
+   "level": "exact",
+   "media": "/media/30adf4e98e55b6cd.gif",
+   "note": null,
+   "name": "Développé couché — test 1RM",
+   "legacy": null,
+   "previous": "/media/30adf4e98e55b6cd.gif"
+  },
+  "back-squat-test-1rm": {
+   "level": "exact",
+   "media": "/media/530326beb7c7a652.gif",
+   "note": null,
+   "name": "Back squat — test 1RM",
+   "legacy": null,
+   "previous": "/media/530326beb7c7a652.gif"
+  },
+  "souleve-de-terre-test-1rm": {
+   "level": "exact",
+   "media": "/media/a8b1d1173ade4e8f.gif",
+   "note": null,
+   "name": "Soulevé de terre — test 1RM",
+   "legacy": null,
+   "previous": "/media/a8b1d1173ade4e8f.gif"
+  },
+  "developpe-militaire-test-1rm": {
+   "level": "exact",
+   "media": "/media/22146cff6a787e8a.gif",
+   "note": null,
+   "name": "Développé militaire — test 1RM",
+   "legacy": null,
+   "previous": "/media/22146cff6a787e8a.gif"
+  },
+  "pompes": {
+   "level": "variante",
+   "media": "/media/43bad87368c12614.gif",
+   "note": "Illustration : pompes mains surélevées. Ici : mains au sol.",
+   "name": "Pompes",
+   "legacy": null,
+   "previous": "/media/43bad87368c12614.gif"
+  },
+  "squat-au-poids-du-corps": {
+   "level": "variante",
+   "media": "/media/78f9aee57a4101b1.gif",
+   "note": "Illustration : goblet squat avec haltère. Ici : sans charge, bras devant pour l'équilibre.",
+   "name": "Squat au poids du corps",
+   "legacy": null,
+   "previous": "/media/78f9aee57a4101b1.gif"
+  },
+  "rowing-a-l-elastique": {
+   "level": "variante",
+   "media": "/media/0860394a5a99f74b.gif",
+   "note": "Illustration : tirage horizontal à la poulie. Ici : élastique fixé devant vous.",
+   "name": "Rowing à l’élastique",
+   "legacy": null,
+   "previous": "/media/0860394a5a99f74b.gif"
+  },
+  "fentes-arriere-au-poids-du-corps": {
+   "level": "variante",
+   "media": "/media/bc4d9bed4bbb590a.gif",
+   "note": "Illustration : fentes arrière avec barre. Ici : sans charge.",
+   "name": "Fentes arrière au poids du corps",
+   "legacy": null,
+   "previous": "/media/bc4d9bed4bbb590a.gif"
+  },
+  "mobilite-des-epaules": {
+   "level": "exact",
+   "media": "/media/warmup-mobilite.jpg",
+   "note": "Cercles d'épaules (illustration fixe de l'échauffement).",
+   "name": "Mobilité des épaules",
+   "legacy": null,
+   "previous": "/media/aab0de0aad0c275a.gif"
+  },
+  "respiration-diaphragmatique": {
+   "level": "exact",
+   "media": "/media/stretch-respiration.jpg",
+   "note": "Respiration allongée, genoux pliés (illustration fixe).",
+   "name": "Respiration diaphragmatique",
+   "legacy": null,
+   "previous": "/media/b2236e6b7a81a1b5.gif"
+  }
+ },
+ "poolGuides": {
+  "Gainage au bord (vertical)": {
+   "level": "variante",
+   "media": "/media/3d29edbd3afb4da6.jpg",
+   "note": "Illustration : gainage au bord, corps à l'horizontale. Ici : corps vertical, mains au bord, ventre gainé."
+  },
+  "Mobilité épaules aquatique": {
+   "level": "exact",
+   "media": "/media/c9c8fd84181374ab.jpg",
+   "note": null
+  },
+  "Mobilité hanches / chevilles": {
+   "level": "exact",
+   "media": "/media/54e922d2264af08a.jpg",
+   "note": "Montée de genou et mobilisation de cheville dans l'eau."
+  },
+  "Ciseaux au bord": {
+   "level": "exact",
+   "media": "/media/64f9a3c89ee9369b.jpg",
+   "note": null
+  },
+  "Talons-fesses": {
+   "level": "exact",
+   "media": "/media/c99b47eef506fe79.jpg",
+   "note": null
+  },
+  "Étirements au bord": {
+   "level": "variante",
+   "media": "/media/pool-etirements-bord.jpg",
+   "note": "Illustration : étirement des ischio-jambiers, pied posé sur le bord. Enchaînez mollets, épaules/dos et quadriceps selon les consignes."
+  }
+ },
+ "movements": {
+  "land": {
+   "Jumping jacks": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de jumping jacks dans la bibliothèque."
+   },
+   "Squats": {
+    "level": "variante",
+    "media": "/media/78f9aee57a4101b1.gif",
+    "note": "Illustration : goblet squat avec haltère. Ici : au poids du corps."
+   },
+   "Squats doux": {
+    "level": "variante",
+    "media": "/media/78f9aee57a4101b1.gif",
+    "note": "Illustration : goblet squat avec haltère. Ici : au poids du corps, amplitude confortable."
+   },
+   "Pompes": {
+    "level": "variante",
+    "media": "/media/43bad87368c12614.gif",
+    "note": "Illustration : pompes mains surélevées. Ici : mains au sol (ou sur les genoux)."
+   },
+   "Pompes au mur": {
+    "level": "variante",
+    "media": "/media/43bad87368c12614.gif",
+    "note": "Illustration : pompes mains surélevées sur un step. Ici : mains à plat contre le mur."
+   },
+   "Pompes inclinées": {
+    "level": "exact",
+    "media": "/media/43bad87368c12614.gif",
+    "note": null
+   },
+   "Mountain climbers": {
+    "level": "exact",
+    "media": "/media/c07b14f1bcc8e8ca.gif",
+    "note": null
+   },
+   "Mountain climbers lents": {
+    "level": "variante",
+    "media": "/media/c07b14f1bcc8e8ca.gif",
+    "note": "Même mouvement, rythme lent et contrôlé."
+   },
+   "Fentes alternées": {
+    "level": "variante",
+    "media": "/media/995e1f9a9cedc5ec.gif",
+    "note": "Illustration : fentes avant avec haltères. Ici : sans charge."
+   },
+   "Fentes arrière": {
+    "level": "variante",
+    "media": "/media/bc4d9bed4bbb590a.gif",
+    "note": "Illustration : fentes arrière avec barre. Ici : sans charge."
+   },
+   "Gainage planche": {
+    "level": "exact",
+    "media": "/media/1317e405efd6ef2b.gif",
+    "note": "Planche sur les avant-bras (l'animation enchaîne sur une planche latérale)."
+   },
+   "Planche": {
+    "level": "exact",
+    "media": "/media/1317e405efd6ef2b.gif",
+    "note": "Planche sur les avant-bras (l'animation enchaîne sur une planche latérale)."
+   },
+   "Planche latérale G": {
+    "level": "variante",
+    "media": "/media/e56d7d8feec13a3a.gif",
+    "note": "Illustration : planche latérale pieds sur banc. Ici : au sol, côté gauche vers le bas."
+   },
+   "Planche latérale D": {
+    "level": "variante",
+    "media": "/media/e56d7d8feec13a3a.gif",
+    "note": "Illustration : planche latérale pieds sur banc. Ici : au sol, côté droit vers le bas."
+   },
+   "Burpees simplifiés": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de burpees dans la bibliothèque."
+   },
+   "Burpees": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de burpees dans la bibliothèque."
+   },
+   "Relevés de jambes": {
+    "level": "exact",
+    "media": "/media/afe2f533cbbef546.gif",
+    "note": null
+   },
+   "Dips au bord": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de dips mains sur un banc/bord dans la bibliothèque (les dips aux barres parallèles sont une autre position)."
+   },
+   "Superman": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de superman (extension dos allongé sur le ventre) dans la bibliothèque."
+   },
+   "Ponts fessiers": {
+    "level": "exact",
+    "media": "/media/8eecb0152081ff26.gif",
+    "note": null
+   },
+   "Squats sumo": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de squat sumo (pieds très écartés) dans la bibliothèque."
+   },
+   "Montées sur mollets": {
+    "level": "variante",
+    "media": "/media/f529e06a69b973f4.gif",
+    "note": "Illustration : montée sur mollets debout à la machine. Ici : au poids du corps, sur une marche ou au sol."
+   },
+   "Mollets": {
+    "level": "variante",
+    "media": "/media/f529e06a69b973f4.gif",
+    "note": "Illustration : montée sur mollets debout à la machine. Ici : au poids du corps, lentement."
+   },
+   "Chaise au mur": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de chaise au mur dans la bibliothèque."
+   },
+   "Chaise douce": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de chaise au mur dans la bibliothèque."
+   },
+   "Battements de jambes": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de battements de jambes au sol (allongé sur le dos) dans la bibliothèque ; l'ancienne image montrait les battements en piscine."
+   },
+   "Crunch": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de crunch au sol dans la bibliothèque."
+   },
+   "Russian twist": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de Russian twist dans la bibliothèque."
+   },
+   "Dead bug": {
+    "level": "exact",
+    "media": "/media/b2236e6b7a81a1b5.gif",
+    "note": null
+   },
+   "Montées de genoux": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de montées de genoux au sol dans la bibliothèque ; l'ancienne image montrait la version en piscine."
+   },
+   "High knees": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de montées de genoux rapides au sol dans la bibliothèque."
+   },
+   "Corde invisible": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de corde à sauter (simulée) dans la bibliothèque."
+   },
+   "Patineurs": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de patineurs (sauts latéraux) dans la bibliothèque."
+   },
+   "Squats sautés": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de squats sautés dans la bibliothèque."
+   },
+   "Repos actif": {
+    "level": "rest",
+    "media": null,
+    "note": "Récupération : visuel respiratoire."
+   },
+   "Marche sur place": {
+    "level": "none",
+    "media": null,
+    "note": "Pas de marche sur place au sol dans la bibliothèque ; l'ancienne image montrait la marche aquatique."
+   },
+   "Oiseau-chien": {
+    "level": "exact",
+    "media": "/media/aab0de0aad0c275a.gif",
+    "note": null
+   },
+   "Respiration profonde": {
+    "level": "rest",
+    "media": null,
+    "note": "Récupération : visuel respiratoire."
+   },
+   "Échauffement progressif": {
+    "level": "none",
+    "media": null,
+    "note": "Échauffement libre (marche, montées de genoux légères) : pas de démonstration."
+   },
+   "Récupération": {
+    "level": "rest",
+    "media": null,
+    "note": "Récupération : visuel respiratoire."
+   },
+   "Récupération entre cycles": {
+    "level": "rest",
+    "media": null,
+    "note": "Récupération : visuel respiratoire."
+   },
+   "Retour au calme": {
+    "level": "rest",
+    "media": null,
+    "note": "Récupération : visuel respiratoire."
+   }
+  }
+ },
+ "stretches": {
+  "stretch-fes-0": {
+   "level": "exact",
+   "media": "/media/stretch-piriforme.jpg",
+   "note": "« Pigeon assis » : assis, cheville sur le genou opposé, buste penché (l'ancienne image montrait le pigeon au sol)."
+  },
+  "stretch-moy-0": {
+   "level": "none",
+   "media": null,
+   "note": "Pas d'illustration du croisement de jambe debout avec inclinaison latérale (l'ancienne image montrait une fente latérale)."
+  },
+  "stretch-mol-1": {
+   "level": "none",
+   "media": null,
+   "note": "Pas d'illustration du talon qui descend sous une marche (l'ancienne image montrait l'étirement au mur)."
+  },
+  "stretch-isc-0": {
+   "level": "variante",
+   "media": "/media/stretch-isc-flexion.jpg",
+   "note": "Illustration : flexion avant debout. Ici : assis, jambes tendues, dos long."
+  },
+  "stretch-bic-0": {
+   "level": "variante",
+   "media": "/media/stretch-biceps.jpg",
+   "note": "Illustration : bras tendu derrière, paume contre le mur. Ici : main tirée doucement vers le bas par l'autre main."
+  },
+  "stretch-avb-0": {
+   "level": "variante",
+   "media": "/media/stretch-avb-flechisseurs.jpg",
+   "note": "Illustration : paumes au sol, doigts vers les genoux. Ici : bras tendu devant, doigts tirés vers le bas."
+  }
+ },
+ "warmup": {
+  "Mise en route": {
+   "level": "exact",
+   "media": "/media/warmup-cardio.jpg",
+   "note": "Marche ou vélo très facile."
+  },
+  "Mobilité des épaules": {
+   "level": "exact",
+   "media": "/media/warmup-mobilite.jpg",
+   "note": null
+  },
+  "Mobilité hanches & chevilles": {
+   "level": "none",
+   "media": null,
+   "note": "Pas d'illustration de mobilité hanches/chevilles au sol (l'ancienne image montrait des cercles de bras)."
+  },
+  "Activation fessiers": {
+   "level": "exact",
+   "media": "/media/8eecb0152081ff26.gif",
+   "note": "Ponts fessiers au sol."
+  },
+  "Activation scapulaire": {
+   "level": "none",
+   "media": null,
+   "note": "Pas d'illustration de rétractions d'omoplates/rotations externes (l'ancienne image montrait des cercles de bras)."
+  },
+  "Approche": {
+   "level": "exercise",
+   "media": null,
+   "note": "Visuel du premier exercice de la séance (sa démonstration validée) ; sinon absence explicite."
+  }
+ }
+}
