@@ -1,6 +1,6 @@
 {
   "appId": "app.jarvis.fitness",
-  "appName": "JARVIS Fitness",
+  "appName": "Yanis Fitness Evolution",
   "webDir": "release",
   "server": {
     "androidScheme": "https"
