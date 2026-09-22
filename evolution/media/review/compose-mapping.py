@@ -122,7 +122,7 @@ DECISIONS = {
     'developpe-couche-prise-serree': V('30adf4e9', "Illustration : développé couché prise moyenne. Ici : mains largeur d'épaules, coudes près du corps."),
     'developpe-couche-decline-prise-serree': V('30adf4e9', "Illustration : développé couché sur banc plat, prise moyenne. Ici : banc décliné et prise serrée."),
     'triceps-dips': E('/media/dips-triceps-corrige.gif', "Image haute redessinée (même style) pour corriger l'orientation du buste ; image basse d'origine."),
-    'dips': E('/media/dips-triceps-corrige.gif', "Même démonstration que Triceps dips."),
+    'dips': V('/media/dips-triceps-corrige.gif', "Illustration : dips aux barres parallèles, buste vertical (accent triceps). Ici, version pectoraux : buste légèrement penché vers l'avant, coudes un peu plus ouverts, descente jusqu'à l'étirement des pectoraux."),
 
     # --- épaules -------------------------------------------------------------
     'elevations-laterales-coude-a-90': V('9e7f9262', "Illustration : élévations latérales bras quasi tendus. Ici : coude plié à 90°, même élévation du bras."),
