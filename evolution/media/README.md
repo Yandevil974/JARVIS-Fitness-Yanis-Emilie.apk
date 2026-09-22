@@ -1,8 +1,21 @@
-# Audit des démonstrations — en cours, pas un nouvel APK
+# Audit des démonstrations — corrections en cours, pas un nouvel APK
 
-**21 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
+**22 septembre 2026 — première vague d'animations intégrées.** Demande de l'utilisateur : « Pour les visuels cela doit correspondre a un humain animé comme pour les autres ». Les nouveaux visuels sont donc des **humains animés** (GIF deux positions, même style que la bibliothèque), pas des images fixes.
 
-## Résultat à ce stade
+## Intégré ce 22 septembre (mapping 1.5.0-media, testé)
+
+- **Cinq animations empaquetées** : `dips-triceps-corrige.gif` (dips barres, déjà validé), **`triceps-extensions-halteres-banc.gif`** (extension triceps haltères couché sur banc — remplace l'association poulie debout), **`oiseau-chien.gif`** (quadrupédie bras/jambe opposés — remplace la planche latérale faussement « exacte »), **`warmup-mobilite-anim.gif`** (cercles d'épaules animés) et **`warmup-cardio-anim.gif`** (pédalage animé).
+- **Associations mises à jour** : `triceps-extensions-halteres-banc-plat` et `extensions-triceps-halteres-plat` = exact ; `extensions-triceps-halteres-incline` = variante annotée (banc plat) ; `bird-dog` = exact ; `mobilité des épaules` = cercles animés ; échauffement « Mise en route » et « Mobilité des épaules » animés.
+- **Constats fermés** (voir `review/findings.json`) : `dips-orientation`, `triceps-bench-to-cable`, `bird-dog-to-side-plank`, `warmup-shared-upper-body`. Les autres groupes restent **ouverts** jusqu'à la revue image par image.
+- Planches de contrôle : `review/rev-animations-integrees.jpg` (intégrées), `review/rev-dips-banc-a-revoir.jpg` (proposition refusée, voir plus bas).
+- **10 tests unitaires + 118 contrôles navigateur (happy-dom) passent** après intégration, y compris les nouveaux rapprochements.
+
+## En attente (quota d'images du tour atteint)
+
+- **Dips mains sur banc** (« Dips au bord » du Tabata sol) : position haute bonne, position basse générée montrait une **assise sur le banc** — refusée, à regénérer au prochain tour puis à associer.
+- Vagues suivantes, même style : crunch, russian twist, superman, jumping jacks, chaise au mur, burpees, montées de genoux, battements de jambes, squats sumo, patineurs, corde invisible… puis boucle de respiration animée pour les récupérations. **Priorité à confirmer par l'utilisateur.**
+
+## Résultat de l'audit initial (21 septembre)
 
 **Le signalement est fondé.** Il existe des erreurs de correspondance, des substitutions automatiques excessives, des conflits piscine/sol et des défauts à l’intérieur de certains fichiers. La 1.4.0 publiée n’a pas été corrigée par cet audit. Aucun nouvel APK ni changement de signature.
 

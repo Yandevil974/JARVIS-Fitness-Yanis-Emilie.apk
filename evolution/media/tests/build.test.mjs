@@ -43,7 +43,9 @@ test('mapping covers every packaged exercise with an explicit review state', () 
   assert.equal(m['good-morning-debout'].level, 'none');
   assert.equal(m['face-pull-a-la-poulie'].level, 'none');
   assert.equal(m['respiration-diaphragmatique'].media, '/media/stretch-respiration.jpg');
-  assert.equal(m['bird-dog'].media, '/media/aab0de0aad0c275a.gif');
+  assert.equal(m['bird-dog'].media, '/media/oiseau-chien.gif');
+  assert.equal(m['triceps-extensions-halteres-banc-plat'].media, '/media/triceps-extensions-halteres-banc.gif');
+  assert.equal(m['extensions-triceps-halteres-incline'].level, 'variante');
   assert.equal(m['pont-fessier-au-sol-activation'].media, '/media/8eecb0152081ff26.gif');
 });
 

@@ -251,7 +251,7 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
       ["Step-up haut", "/media/37f614cd3432709b.gif", "exact"],
       ["Leg extension", null, "none"],
       ["Face pull à la poulie", null, "none"],
-      ["Bird dog", "/media/aab0de0aad0c275a.gif", "exact"],
+      ["Bird dog", "/media/oiseau-chien.gif", "exact"],
     ];
     const search = [...doc.querySelectorAll("input")].find((i) => i.parentElement && i.parentElement.className === "search-input");
     check("library: search field found", search);
@@ -375,7 +375,7 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
     ["Kickback à l'élastique", "/media/489169360e044c48.gif", "variante"],
     ["Clamshell à l'élastique", null, "none"],
     ["Face pull à l'élastique", null, "none"],
-    ["Bird dog", "/media/aab0de0aad0c275a.gif", "exact"],
+    ["Bird dog", "/media/oiseau-chien.gif", "exact"],
     ["Pont fessier au sol — activation", "/media/8eecb0152081ff26.gif", "exact"],
     ["Kickback à la poulie", "/media/489169360e044c48.gif", "exact"],
   ]) {

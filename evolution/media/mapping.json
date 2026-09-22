@@ -7,7 +7,11 @@
   "original": "/media/c3a2b9892161522e.gif"
  },
  "newAssets": [
-  "/media/dips-triceps-corrige.gif"
+  "/media/dips-triceps-corrige.gif",
+  "/media/triceps-extensions-halteres-banc.gif",
+  "/media/oiseau-chien.gif",
+  "/media/warmup-mobilite-anim.gif",
+  "/media/warmup-cardio-anim.gif"
  ],
  "levels": {
   "exact": "même mouvement, même matériel, même position",
@@ -162,8 +166,8 @@
   },
   "bird-dog": {
    "level": "exact",
-   "media": "/media/aab0de0aad0c275a.gif",
-   "note": null,
+   "media": "/media/oiseau-chien.gif",
+   "note": "Nouvelle animation cohérente : quadrupédie, bras et jambe opposés tendus à l'horizontale (l'ancienne image montrait une planche latérale).",
    "name": "Bird dog",
    "legacy": "/media/aab0de0aad0c275a.gif",
    "previous": "/media/aab0de0aad0c275a.gif"
@@ -601,9 +605,9 @@
    "previous": "/media/c3a2b9892161522e.gif"
   },
   "triceps-extensions-halteres-banc-plat": {
-   "level": "variante",
-   "media": "/media/ea226c444f72de0f.gif",
-   "note": "Illustration : extension couchée à la barre EZ. Ici : un haltère dans chaque main, même trajectoire vers le front.",
+   "level": "exact",
+   "media": "/media/triceps-extensions-halteres-banc.gif",
+   "note": null,
    "name": "Triceps extensions haltères, banc plat",
    "legacy": null,
    "previous": "/media/4c2b19fa924f90a8.gif"
@@ -1098,8 +1102,8 @@
   },
   "extensions-triceps-halteres-incline": {
    "level": "variante",
-   "media": "/media/ea226c444f72de0f.gif",
-   "note": "Illustration : extension couchée à la barre EZ sur banc plat. Ici : haltères, banc incliné.",
+   "media": "/media/triceps-extensions-halteres-banc.gif",
+   "note": "Illustration : banc plat. Ici : banc incliné, même trajectoire des coudes.",
    "name": "Extensions triceps haltères incliné",
    "legacy": null,
    "previous": "/media/4c2b19fa924f90a8.gif"
@@ -1513,9 +1517,9 @@
    "previous": "/media/30adf4e98e55b6cd.gif"
   },
   "extensions-triceps-halteres-plat": {
-   "level": "variante",
-   "media": "/media/ea226c444f72de0f.gif",
-   "note": "Illustration : extension couchée à la barre EZ. Ici : haltères, banc plat.",
+   "level": "exact",
+   "media": "/media/triceps-extensions-halteres-banc.gif",
+   "note": null,
    "name": "Extensions triceps haltères plat",
    "legacy": null,
    "previous": "/media/4c2b19fa924f90a8.gif"
@@ -1674,8 +1678,8 @@
   },
   "mobilite-des-epaules": {
    "level": "exact",
-   "media": "/media/warmup-mobilite.jpg",
-   "note": "Cercles d'épaules (illustration fixe de l'échauffement).",
+   "media": "/media/warmup-mobilite-anim.gif",
+   "note": "Cercles d'épaules animés (remplace l'illustration fixe, elle-même anciennement une planche latérale).",
    "name": "Mobilité des épaules",
    "legacy": null,
    "previous": "/media/aab0de0aad0c275a.gif"
@@ -1970,12 +1974,12 @@
  "warmup": {
   "Mise en route": {
    "level": "exact",
-   "media": "/media/warmup-cardio.jpg",
-   "note": "Marche ou vélo très facile."
+   "media": "/media/warmup-cardio-anim.gif",
+   "note": null
   },
   "Mobilité des épaules": {
    "level": "exact",
-   "media": "/media/warmup-mobilite.jpg",
+   "media": "/media/warmup-mobilite-anim.gif",
    "note": null
   },
   "Mobilité hanches & chevilles": {

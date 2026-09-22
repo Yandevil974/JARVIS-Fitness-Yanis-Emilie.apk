@@ -1,8 +1,35 @@
 # 🚩 Passation — Yanis Fitness Evolution
 
-**Mise à jour : 21 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
+**Mise à jour : 22 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité.
 
-## 🚩 Reprise après interruption — passation réactualisée
+## État au 22 septembre — première vague d'animations « humain animé » intégrée
+
+**Demande de l'utilisateur : « Pour les visuels cela doit correspondre a un humain animé comme pour les autres poursuis ».** Les nouveaux visuels sont des humains animés (GIF deux positions, même style que la bibliothèque), pas des photos ni des images fixes.
+
+### Fait et testé (branche `arena/01a0c424` fusionnée dans la session, puis travail repris)
+
+- Le travail de la session précédente a été **récupéré par fusion** depuis la branche distante de cette session (commits `9526b3e…e9db73d`) : audit, mapping 1.5.0-media, patchs du bundle, tests, candidat non signé.
+- **Cinq animations empaquetées** : `dips-triceps-corrige.gif` (dips barres), `triceps-extensions-halteres-banc.gif` (nouveau), `oiseau-chien.gif` (nouveau), `warmup-mobilite-anim.gif` (nouveau), `warmup-cardio-anim.gif` (nouveau).
+- **Constats fermés** : `dips-orientation`, `triceps-bench-to-cable`, `bird-dog-to-side-plank`, `warmup-shared-upper-body` (voir `evolution/media/review/findings.json`, les 22 autres restent ouverts jusqu'à la revue image par image).
+- **10 tests unitaires + 118 contrôles happy-dom passent** après intégration. Le candidat corrigé est régénéré sous `.cache/media-web` (rapport `.cache/media-build-report.json`) ; **aucun APK n'est encore produit**.
+- Environnement retrouvé **sans `.private/` ni outils système** : Playwright/Chromium non téléchargeables (réseau restreint), tests relancés avec happy-dom comme la session précédente.
+
+### Reste à faire (ordre proposé)
+
+1. **Regénérer la frame basse des dips sur banc** (quota d'images du 22 atteint ; la frame générée montrait une assise sur le banc, refusée — voir `evolution/media/review/rev-dips-banc-a-revoir.jpg`), puis associer « Dips au bord » (Tabata sol) à cette animation.
+2. Produire les vagues suivantes dans le même style, **priorité à confirmer par l'utilisateur** : crunch, russian twist, superman, jumping jacks, chaise au mur, burpees, montées de genoux, battements de jambes, squats sumo, patineurs, corde invisible, pompes au mur (variante dédiée), fentes sans charge… puis boucle de respiration animée pour les récupérations (remplace la photo générique).
+3. Compléter la revue **image par image** des animations longues (12/24 images) de la bibliothèque d'origine ; fermer les 22 constats restants ou les corriger par de nouvelles animations.
+4. Relancer toute la suite de tests (unitaires + happy-dom), puis fabriquer l'APK de mise à jour : **package `app.yanis.fitness.evolution.home`, clé 1.4.0 existante (identity-home.json), version/code augmentés**. Vérifier `.private/yanis-fitness-evolution-home/` et restaurer l'identité au besoin via `evolution/signing/HOME-IDENTITY.md` ; **ne jamais régénérer de clé**. Aucune nouvelle application séparée. L'IA reste en pause.
+
+### Ne pas oublier
+
+- Conserver les visuels d'origine corrects ; corriger par **exercice + matériel + position + contexte sol/piscine** ; absence explicite plutôt que substitution trompeuse.
+- Les tests happy-dom ne valident pas le rendu graphique réel ; les GIFs sont vérifiés visuellement frame par frame avant intégration (planches dans `evolution/media/review/`).
+- ZIP privé `Yanis-Fitness-Evolution-1.4-SAUVEGARDE-PRIVEE.zip` : conservation externe toujours non confirmée — le redemander à l'utilisateur sans exiger de secrets dans le chat.
+
+## Historique — reprise après interruption (21 septembre)
+
+Un ancien message annonçant un fichier ne garantit pas sa présence actuelle ; les fichiers et commits restent la source de vérité.
 
 **Dernière demande de l’utilisateur : « Et rajoute la reactualisation de la passation car ca commence a ralentir le chat ».** L’utilisateur a interrompu la réponse précédente : ne pas supposer qu’une explication, un comparatif ou une demande de validation lui a effectivement été montré. Une nouvelle conversation est conseillée maintenant pour poursuivre l’audit ; aucun compteur exact de limite de chat n’est disponible.
 
