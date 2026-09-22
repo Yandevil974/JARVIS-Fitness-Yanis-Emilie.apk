@@ -1,4 +1,10 @@
 import { test, expect } from "@playwright/test";
+import { STORAGE_KEY } from "../src/app-identity.js";
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript((k) => {
+    window.__YFE_KEY__ = k;
+  }, STORAGE_KEY);
+});
 // Representative WebView widths; One UI zoom, navigation bars and font settings vary.
 const configurations = [
   { name: "Galaxy S24", width: 360, height: 780, rail: false },
@@ -78,12 +84,12 @@ test("Fold5: folding and unfolding retain the actual current workout", async ({
   await page.getByLabel("RPE de la série", { exact: true }).selectOption("8");
   await page.getByRole("button", { name: /Valider la série/ }).click();
   await page.waitForFunction(() => {
-    const s = JSON.parse(localStorage.getItem("jarvis_fitness_v3") || "null");
+    const s = JSON.parse(localStorage.getItem(window.__YFE_KEY__) || "null");
     return s?.profiles.elite.workout?.exercises[0].sets.length === 1;
   });
   const id = await page.evaluate(
     () =>
-      JSON.parse(localStorage.getItem("jarvis_fitness_v3")).profiles.elite
+      JSON.parse(localStorage.getItem(window.__YFE_KEY__)).profiles.elite
         .workout.id,
   );
   for (const size of [
@@ -92,13 +98,13 @@ test("Fold5: folding and unfolding retain the actual current workout", async ({
     { width: 344, height: 882 },
   ]) {
     await page.setViewportSize(size);
-    await expect(page.locator(".session-topbar")).toContainText("1/36");
+    await expect(page.locator(".session-topbar")).toContainText("1/37");
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth),
     ).toBeLessThanOrEqual(size.width);
     const w = await page.evaluate(
       () =>
-        JSON.parse(localStorage.getItem("jarvis_fitness_v3")).profiles.elite
+        JSON.parse(localStorage.getItem(window.__YFE_KEY__)).profiles.elite
           .workout,
     );
     expect(w.id).toBe(id);

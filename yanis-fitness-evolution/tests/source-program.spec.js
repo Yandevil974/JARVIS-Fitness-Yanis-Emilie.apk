@@ -1,15 +1,21 @@
 import { test, expect } from "@playwright/test";
+import { STORAGE_KEY } from "../src/app-identity.js";
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript((k) => {
+    window.__YFE_KEY__ = k;
+  }, STORAGE_KEY);
+});
 import { legacy } from "../src/data/library.js";
 async function synced(page) {
   await page.waitForFunction(() => {
     const current = Number(
       document.querySelector(".save-status")?.dataset.revision,
     );
-    const raw = localStorage.getItem("jarvis_fitness_v3");
+    const raw = localStorage.getItem(window.__YFE_KEY__);
     return raw && JSON.parse(raw).updatedAt === current;
   });
   return page.evaluate(() =>
-    JSON.parse(localStorage.getItem("jarvis_fitness_v3")),
+    JSON.parse(localStorage.getItem(window.__YFE_KEY__)),
   );
 }
 for (const id of ["elite", "emilie"])
