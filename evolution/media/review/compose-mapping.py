@@ -306,6 +306,14 @@ warmup = {
     'Approche': {'level': 'exercise', 'media': None, 'note': "Visuel du premier exercice de la séance (sa démonstration validée) ; sinon absence explicite."},
 }
 
+# Record what 1.4.0 actually displayed, so every override stays reviewable (before -> after).
+for title, entry in pool_guides.items():
+    entry['previous'] = next((g['img'] for g in INVENTORY['poolGuides'] if g['t'] == title), None)
+for sid, entry in stretches.items():
+    entry['previous'] = next((st['img'] for st in INVENTORY['stretches'] if st['id'] == sid), None)
+for name, entry in warmup.items():
+    entry['previous'] = INVENTORY.get('warmupImages', {}).get({'Mise en route': 'route', 'Mobilité des épaules': 'mobilite', 'Mobilité hanches & chevilles': 'mobilite', 'Activation fessiers': 'mobilite', 'Activation scapulaire': 'mobilite', 'Approche': 'approche'}[name])
+
 mapping = {
     'version': '1.5.0-media',
     'baseBundleSha256': INVENTORY['baseline']['bundleSha256'] if isinstance(INVENTORY.get('baseline'), dict) and 'bundleSha256' in INVENTORY['baseline'] else 'f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26',

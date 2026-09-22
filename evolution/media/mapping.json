@@ -1693,32 +1693,38 @@
   "Gainage au bord (vertical)": {
    "level": "variante",
    "media": "/media/3d29edbd3afb4da6.jpg",
-   "note": "Illustration : gainage au bord, corps à l'horizontale. Ici : corps vertical, mains au bord, ventre gainé."
+   "note": "Illustration : gainage au bord, corps à l'horizontale. Ici : corps vertical, mains au bord, ventre gainé.",
+   "previous": "/media/f1dde35bd517f24b.gif"
   },
   "Mobilité épaules aquatique": {
    "level": "exact",
    "media": "/media/c9c8fd84181374ab.jpg",
-   "note": null
+   "note": null,
+   "previous": "/media/b2b32833d73d3ca4.gif"
   },
   "Mobilité hanches / chevilles": {
    "level": "exact",
    "media": "/media/54e922d2264af08a.jpg",
-   "note": "Montée de genou et mobilisation de cheville dans l'eau."
+   "note": "Montée de genou et mobilisation de cheville dans l'eau.",
+   "previous": "/media/faa82528766b9402.gif"
   },
   "Ciseaux au bord": {
    "level": "exact",
    "media": "/media/64f9a3c89ee9369b.jpg",
-   "note": null
+   "note": null,
+   "previous": "/media/48fe4a8cbb0d125c.gif"
   },
   "Talons-fesses": {
    "level": "exact",
    "media": "/media/c99b47eef506fe79.jpg",
-   "note": null
+   "note": null,
+   "previous": "/media/7517a916496ec766.gif"
   },
   "Étirements au bord": {
    "level": "variante",
    "media": "/media/pool-etirements-bord.jpg",
-   "note": "Illustration : étirement des ischio-jambiers, pied posé sur le bord. Enchaînez mollets, épaules/dos et quadriceps selon les consignes."
+   "note": "Illustration : étirement des ischio-jambiers, pied posé sur le bord. Enchaînez mollets, épaules/dos et quadriceps selon les consignes.",
+   "previous": "/media/pool-etirements-bord.jpg"
   }
  },
  "movements": {
@@ -1939,64 +1945,76 @@
   "stretch-fes-0": {
    "level": "exact",
    "media": "/media/stretch-piriforme.jpg",
-   "note": "« Pigeon assis » : assis, cheville sur le genou opposé, buste penché (l'ancienne image montrait le pigeon au sol)."
+   "note": "« Pigeon assis » : assis, cheville sur le genou opposé, buste penché (l'ancienne image montrait le pigeon au sol).",
+   "previous": "/media/stretch-pigeon.jpg"
   },
   "stretch-moy-0": {
    "level": "none",
    "media": null,
-   "note": "Pas d'illustration du croisement de jambe debout avec inclinaison latérale (l'ancienne image montrait une fente latérale)."
+   "note": "Pas d'illustration du croisement de jambe debout avec inclinaison latérale (l'ancienne image montrait une fente latérale).",
+   "previous": "/media/stretch-adduction-debout.jpg"
   },
   "stretch-mol-1": {
    "level": "none",
    "media": null,
-   "note": "Pas d'illustration du talon qui descend sous une marche (l'ancienne image montrait l'étirement au mur)."
+   "note": "Pas d'illustration du talon qui descend sous une marche (l'ancienne image montrait l'étirement au mur).",
+   "previous": "/media/stretch-mollet-marche.jpg"
   },
   "stretch-isc-0": {
    "level": "variante",
    "media": "/media/stretch-isc-flexion.jpg",
-   "note": "Illustration : flexion avant debout. Ici : assis, jambes tendues, dos long."
+   "note": "Illustration : flexion avant debout. Ici : assis, jambes tendues, dos long.",
+   "previous": "/media/stretch-isc-flexion.jpg"
   },
   "stretch-bic-0": {
    "level": "variante",
    "media": "/media/stretch-biceps.jpg",
-   "note": "Illustration : bras tendu derrière, paume contre le mur. Ici : main tirée doucement vers le bas par l'autre main."
+   "note": "Illustration : bras tendu derrière, paume contre le mur. Ici : main tirée doucement vers le bas par l'autre main.",
+   "previous": "/media/stretch-biceps.jpg"
   },
   "stretch-avb-0": {
    "level": "variante",
    "media": "/media/stretch-avb-flechisseurs.jpg",
-   "note": "Illustration : paumes au sol, doigts vers les genoux. Ici : bras tendu devant, doigts tirés vers le bas."
+   "note": "Illustration : paumes au sol, doigts vers les genoux. Ici : bras tendu devant, doigts tirés vers le bas.",
+   "previous": "/media/stretch-avb-flechisseurs.jpg"
   }
  },
  "warmup": {
   "Mise en route": {
    "level": "exact",
    "media": "/media/warmup-cardio.jpg",
-   "note": "Marche ou vélo très facile."
+   "note": "Marche ou vélo très facile.",
+   "previous": "/media/warmup-cardio.jpg"
   },
   "Mobilité des épaules": {
    "level": "exact",
    "media": "/media/warmup-mobilite.jpg",
-   "note": null
+   "note": null,
+   "previous": "/media/warmup-mobilite.jpg"
   },
   "Mobilité hanches & chevilles": {
    "level": "none",
    "media": null,
-   "note": "Pas d'illustration de mobilité hanches/chevilles au sol (l'ancienne image montrait des cercles de bras)."
+   "note": "Pas d'illustration de mobilité hanches/chevilles au sol (l'ancienne image montrait des cercles de bras).",
+   "previous": "/media/warmup-mobilite.jpg"
   },
   "Activation fessiers": {
    "level": "exact",
    "media": "/media/8eecb0152081ff26.gif",
-   "note": "Ponts fessiers au sol."
+   "note": "Ponts fessiers au sol.",
+   "previous": "/media/warmup-mobilite.jpg"
   },
   "Activation scapulaire": {
    "level": "none",
    "media": null,
-   "note": "Pas d'illustration de rétractions d'omoplates/rotations externes (l'ancienne image montrait des cercles de bras)."
+   "note": "Pas d'illustration de rétractions d'omoplates/rotations externes (l'ancienne image montrait des cercles de bras).",
+   "previous": "/media/warmup-mobilite.jpg"
   },
   "Approche": {
    "level": "exercise",
    "media": null,
-   "note": "Visuel du premier exercice de la séance (sa démonstration validée) ; sinon absence explicite."
+   "note": "Visuel du premier exercice de la séance (sa démonstration validée) ; sinon absence explicite.",
+   "previous": "/media/warmup-series-approche.jpg"
   }
  }
 }
