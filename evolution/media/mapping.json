@@ -1977,6 +1977,18 @@
    "media": "/media/stretch-avb-flechisseurs.jpg",
    "note": "Illustration : paumes au sol, doigts vers les genoux. Ici : bras tendu devant, doigts tirés vers le bas.",
    "previous": "/media/stretch-avb-flechisseurs.jpg"
+  },
+  "stretch-tri-1": {
+   "level": "variante",
+   "media": "/media/stretch-triceps-coude.jpg",
+   "note": "Illustration : coude levé au-dessus de la tête, main glissée entre les omoplates. Ici : même position ; l'autre main pousse le coude vers le bas, sans cambrer.",
+   "previous": "/media/stretch-triceps-dos.jpg"
+  },
+  "stretch-epP-0": {
+   "level": "variante",
+   "media": "/media/stretch-ep-posterieur.jpg",
+   "note": "Illustration : bras tendu devant, l'autre main soutient sous l'avant-bras. Ici : paume vers le bas, tirez la main vers vous avec l'autre main.",
+   "previous": "/media/stretch-ep-posterieur.jpg"
   }
  },
  "warmup": {

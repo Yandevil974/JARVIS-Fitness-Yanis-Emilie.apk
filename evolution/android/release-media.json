@@ -8,7 +8,7 @@
   "baseApk": "downloads/Yanis-Fitness-Evolution-1.4.0.apk",
   "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
   "baseBundleSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
-  "validatedMediaBundleSha256": "b75cd8fa5e4343f1cc250f050d6d84118ce80d73520486fbde8748b4a13c7ecd",
+  "validatedMediaBundleSha256": "564c6245673c94928d768fdbf2d9a37e076a8977c3350d546900004587196780",
   "newWebEntries": {
     "assets/public/media/dips-triceps-corrige.gif": "6ec7c12e00fc0e2bd165e7a8d9e6639cebd3d2ed632415720040f7f357a196f8"
   },

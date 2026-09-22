@@ -292,6 +292,10 @@ stretches = {
     'stretch-isc-0': V('/media/stretch-isc-flexion.jpg', "Illustration : flexion avant debout. Ici : assis, jambes tendues, dos long."),
     'stretch-bic-0': V('/media/stretch-biceps.jpg', "Illustration : bras tendu derrière, paume contre le mur. Ici : main tirée doucement vers le bas par l'autre main."),
     'stretch-avb-0': V('/media/stretch-avb-flechisseurs.jpg', "Illustration : paumes au sol, doigts vers les genoux. Ici : bras tendu devant, doigts tirés vers le bas."),
+    # tri-1 « Main dans le dos » : l'ancienne image montrait la main remontant depuis le bas du dos (rotation interne d'épaule),
+    # pas le coude levé avec la main glissée entre les omoplates ; l'illustration de tri-0 montre la position décrite.
+    'stretch-tri-1': V('/media/stretch-triceps-coude.jpg', "Illustration : coude levé au-dessus de la tête, main glissée entre les omoplates. Ici : même position ; l'autre main pousse le coude vers le bas, sans cambrer."),
+    'stretch-epP-0': V('/media/stretch-ep-posterieur.jpg', "Illustration : bras tendu devant, l'autre main soutient sous l'avant-bras. Ici : paume vers le bas, tirez la main vers vous avec l'autre main."),
 }
 
 # ---------------------------------------------------------------------------
