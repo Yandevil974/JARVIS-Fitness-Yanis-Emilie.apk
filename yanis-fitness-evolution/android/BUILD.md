@@ -34,7 +34,7 @@ les changer :
 
 ## Vérifications locales possibles
 
-- `npm test` — 94 tests unitaires (moteur, stockage, import DOC réel, minuteur/voix).
+- `npm test` — 96 tests unitaires (94 verts) (moteur, stockage, import DOC réel, minuteur/voix).
 - `npx playwright test` — parcours complets une fois les navigateurs installés
   (`npx playwright install chromium`).
 

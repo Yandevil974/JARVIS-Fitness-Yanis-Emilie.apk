@@ -26,6 +26,27 @@ unzip -j ../../JARVIS-Fitness.apk "assets/public/*" -d /tmp/orig && (cd /tmp/ori
 # puis tout script Playwright/puppeteer ouvrant les deux URLs au même viewport
 ```
 
+## Deuxième passage : pages chargées avec les données réelles importées
+
+La méthode a été rejouée avec l'import complet du `DOC-20260919-WA0000..json`
+via l'UI des deux applications (aperçu « CONFIRMATION REQUISE », bouton
+« Sauvegarder puis importer », message « Import terminé. » identiques) :
+
+| Page (données importées, 18 séances) | Pixels identiques |
+| --- | --- |
+| Accueil (pleine page) | 99,95 % |
+| Progression, Nutrition, Récupération, Programme, Bilan 1RM, Mon équipe, Cardio | 99,96 % |
+| Mobile 412×915 — Bilan 1RM | **100,00 %** |
+| Mobile 412×915 — Entraînement | **100,00 %** |
+| Mobile — accueil / feuille « Plus » / menu profil | 99,89 – 99,95 % |
+
+Les valeurs calculées elles-mêmes concordent : 1RM retenus, Epley automatique,
+« prochaine réévaluation le 5 oct. », tonnage, journaux, et même le thème
+sombre porté par le fichier importé s'affiche à l'identique.
+
+Scripts de reproduction : `verification/capture.mjs` (captures) et
+`verification/diff.py` (comparaison).
+
 ## Limites connues (déclarées, pas masquées)
 
 - L’APK d’origine ne livre ni `runtime.js` ni `runtime.css` dans ses assets

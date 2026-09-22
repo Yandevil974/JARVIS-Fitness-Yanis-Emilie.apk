@@ -27,7 +27,12 @@ import {
   skipTimer,
 } from "../src/engine/timer.js";
 import { today, addDays } from "../src/engine/utils.js";
-const sourceFile = "/home/user/uploads/transformation_12_mois_sauvegarde.json";
+const candidates = [
+  process.env.JARVIS_TRANSFORMATION_FILE,
+  "/home/user/uploads/transformation_12_mois_sauvegarde.json",
+  new URL("../audit/transformation_12_mois_sauvegarde.json", import.meta.url).pathname,
+].filter(Boolean);
+const sourceFile = candidates.find((f) => fs.existsSync(f)) || candidates[0];
 function reference(id, frequency, start = "2026-08-10") {
   const data = legacy[id];
   const context = {
