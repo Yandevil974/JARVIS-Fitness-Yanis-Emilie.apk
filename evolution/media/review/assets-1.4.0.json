@@ -1,0 +1,1977 @@
+{
+  "baselineSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "comparisonOriginalSha256": "691488f08ada180de1022bf336b14024c71e52427cb2c43547ac3d53c8b8b5ab",
+  "packagedImageCount": 262,
+  "byteIdenticalToOriginal": 262,
+  "inspectedAssetCount": 137,
+  "decodedFrames": 727,
+  "frameCounts": {
+    "12": 43,
+    "2": 48,
+    "24": 3,
+    "1": 43
+  },
+  "visualReviewScope": "First and middle frames/contact sheets reviewed separately; decoding all frames does not certify their content.",
+  "assets": [
+    {
+      "path": "/media/03098b19c4672ce5.gif",
+      "sha256": "03098b19c4672ce5b4936a033af650a8e35c6f39376b700ea31b2ba7a5856fd0",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/04ab405e919744b5.gif",
+      "sha256": "04ab405e919744b52cf0eb144c8dff6be890d27d427326982cbc634d2597766d",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/055d358895efaa10.gif",
+      "sha256": "055d358895efaa10ac36f65d9fa19aecf15c5492042b09d2b30cf85cb49accbd",
+      "width": 246,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/0766d3a06bf79dc8.gif",
+      "sha256": "0766d3a06bf79dc81abcaa97581260ec7ef40bf850fc4094799ad97321a378e6",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/0860394a5a99f74b.gif",
+      "sha256": "0860394a5a99f74baa5e7d5e710a01d3ecfe36fa54227f79885cb4886040b5a0",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/0a5625b92247ed69.gif",
+      "sha256": "0a5625b92247ed69c379367e2dba0a39797eddb531fb285f4377e6fb862b9839",
+      "width": 246,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/10ab787fbf26b1f4.gif",
+      "sha256": "10ab787fbf26b1f4d54bdea8c6e46c5d379ebb72408006befecea1881b63feca",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/1317e405efd6ef2b.gif",
+      "sha256": "1317e405efd6ef2bb1231a29219b959feb72846e218ed452efa3db7fc7c79f80",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/1519aacc58d53c5c.gif",
+      "sha256": "1519aacc58d53c5c4eccd2c635d42279bde3ab9e4444be7533aedf3399ea77dc",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/16f6ff0f7ceba611.gif",
+      "sha256": "16f6ff0f7ceba611e05b81c1b5a34c661faf31ddeeae722729bcf8ce75013368",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/1c28908ab83cde2e.gif",
+      "sha256": "1c28908ab83cde2e7513028b0fce381cbddc46b1d82a0bc36ca1a92be4b7f4ca",
+      "width": 246,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/1c63a36d168d8b74.gif",
+      "sha256": "1c63a36d168d8b7411540b003ea7a5d6684e8a0246ee09e71eae5e671140b3a1",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/1f27c3cbcf803765.gif",
+      "sha256": "1f27c3cbcf80376551b84215ab931b514cf71701511a5b2b5249efdf63b75168",
+      "width": 300,
+      "height": 300,
+      "frames": 24,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        500,
+        100,
+        100,
+        100,
+        100,
+        100,
+        500,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/22146cff6a787e8a.gif",
+      "sha256": "22146cff6a787e8a5ecf68dce92d3381f242026101d8d1c64a68a98310d3fa65",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/22ce97e4b3cb18cf.gif",
+      "sha256": "22ce97e4b3cb18cfa81ecb4da116209f07944b56bcd44b5ab9ee7afaca0325b1",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/2c51d8ca1b6fb79a.gif",
+      "sha256": "2c51d8ca1b6fb79abe3f9beec8ee7f292f8c34ee7ef488a1b314eca04453ed57",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/2e234599c9335530.gif",
+      "sha256": "2e234599c933553069674ed226982c52a5a756503a20f3bdb2ae9c6480795c55",
+      "width": 480,
+      "height": 262,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/30adf4e98e55b6cd.gif",
+      "sha256": "30adf4e98e55b6cd39a21c87b8dfd9a1b21cf460a5e2a6de4bc405d4f6714074",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/3438ce158299c474.jpg",
+      "sha256": "3438ce158299c47471c749c40d0a261bb406971896e96f2929de85af325bab98",
+      "width": 440,
+      "height": 480,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/36c6cb37445d3880.gif",
+      "sha256": "36c6cb37445d3880f8f938950b710dba9989e8ab6f24f03b65f2ed1002f9c677",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/37f614cd3432709b.gif",
+      "sha256": "37f614cd3432709b8d2a251f2fcc3189a1cc630531203b13b60cfff626f6b503",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/3bcaad5ec7cdf892.gif",
+      "sha256": "3bcaad5ec7cdf8929d142088c88a36ae10eb76ec2d0983da78a3ebb26e49196e",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/3e2ed581e11781d5.gif",
+      "sha256": "3e2ed581e11781d5b801250601344d71d47296b3f192be85d79aeb3156a6ada5",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/43bad87368c12614.gif",
+      "sha256": "43bad87368c126147f4636853bdfe00d44ee896d5e336fb3906bd1aecde07e4d",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/44fc577dce29aff5.gif",
+      "sha256": "44fc577dce29aff520327bcef618b56eb4d227bd785ff475b03045215245deff",
+      "width": 246,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/45a34272da9569a6.gif",
+      "sha256": "45a34272da9569a6de390eb7ef7eb49edfe5cc37c13696e96bad33e6593a4506",
+      "width": 329,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/489169360e044c48.gif",
+      "sha256": "489169360e044c481886180dd37f731e947876d6f6f79c118e4c6dc2ad250d10",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/48fe4a8cbb0d125c.gif",
+      "sha256": "48fe4a8cbb0d125c606f37bab3cc78b716a0dbe8b58ae87c6846bc45968be0ff",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/497ab2e22c01080c.gif",
+      "sha256": "497ab2e22c01080c989241eb321ea89e7209601a80bd57132bc2ad79c2e52390",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/4af33157ce25267c.gif",
+      "sha256": "4af33157ce25267ca764453d99eb3780a1a961d2943d5142069e6ad9f372c5d7",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/4c2b19fa924f90a8.gif",
+      "sha256": "4c2b19fa924f90a8f97cb8467ba138a9e26f4fceaef49ebc80e687c2a350adee",
+      "width": 403,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/4dfda05b1db24000.gif",
+      "sha256": "4dfda05b1db24000b0d28ca4c7509769f7dcee856355ece6f5dce2ad745622e0",
+      "width": 246,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/4eff701bcdf9a359.gif",
+      "sha256": "4eff701bcdf9a35902cc79d94daeaf3934f5224ed34cc0b535762b1000388515",
+      "width": 480,
+      "height": 268,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/530326beb7c7a652.gif",
+      "sha256": "530326beb7c7a6525a6db69d7d3ca5c428632c21e3d4b21342a4f53bc83666b2",
+      "width": 268,
+      "height": 480,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/5d6a89132df205f8.gif",
+      "sha256": "5d6a89132df205f8c8b317a4b772fb16243420b1f04ca6c57d9428b7a13d512b",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/5dd80c9e1b36df25.gif",
+      "sha256": "5dd80c9e1b36df255264ea1416445fbd45f160e52215cbe7dc89255bf497d82a",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/6223da1b562d9339.gif",
+      "sha256": "6223da1b562d9339185be257ebded7651730b9c7bb0364997358013a0fd51753",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/63e925f417c73b92.gif",
+      "sha256": "63e925f417c73b929aeb4063c8e991b7cbeeebed42e82c00438ebd226b89f3fe",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/66849c3144d589f2.gif",
+      "sha256": "66849c3144d589f2d92695012ccc8fa8f4b679b9106f035a1dcc204c801c7eeb",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/6809d9052927484a.gif",
+      "sha256": "6809d9052927484a8e7906a825111325cd7237a420b343e83d4da93f2f7c06ec",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/6fcfe5741629ca2a.gif",
+      "sha256": "6fcfe5741629ca2a80dbcdce27704d88c80a5421b6947bcdef971878e704dbfd",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/7517a916496ec766.gif",
+      "sha256": "7517a916496ec76690a296f0a58884b42164aa323af94d118376c1870b6c551f",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/789c6d90f30eb33e.gif",
+      "sha256": "789c6d90f30eb33e14aafee398dfea6c1b1dcbbe1ba4fc0e1e7717ec7c0d2239",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/78f9aee57a4101b1.gif",
+      "sha256": "78f9aee57a4101b1fd04ddd6ef1228002d7cb0cabf235c089a2164adf4eecf43",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/7c0c6d264e85d66a.gif",
+      "sha256": "7c0c6d264e85d66a343c26079fb0c8a57d36c68e18d36fcace0d7e7f53485f50",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/805f8592e2bccb1a.gif",
+      "sha256": "805f8592e2bccb1aa6ad76526576907b57cc0535b1dd228970012882653bc599",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/882c9c361686a9c9.gif",
+      "sha256": "882c9c361686a9c97f704e9dbaa422e67f86b41e22a64c057a6a18e981d78352",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/8eecb0152081ff26.gif",
+      "sha256": "8eecb0152081ff26fc29f4ecccb779e99ac42f8aec7cfbed46fc6c0ccfb21a31",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/8fe5818f3a4ebebe.gif",
+      "sha256": "8fe5818f3a4ebebe3d5d4b90c57a1aa03674f202c18be350b6ed503271a12416",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/93ab17b0de26fbc8.gif",
+      "sha256": "93ab17b0de26fbc800fa70bf454f79459f55b6e2e45602699de2b659e37c9d07",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/995e1f9a9cedc5ec.gif",
+      "sha256": "995e1f9a9cedc5ecd79336c5561813f8bf49b145cedc8deaeee7d1cbdef446b2",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/9dfc7f7acb3e74e5.gif",
+      "sha256": "9dfc7f7acb3e74e5547d56b2cd8bea8549cd46a754038ab52b0bb1834149a73d",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/9e7f92622aca6913.gif",
+      "sha256": "9e7f92622aca69130d7c7f0627ff58e031bc5bf633a0ac98cee3edfdc795d73e",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/9f22747c305f521b.gif",
+      "sha256": "9f22747c305f521be1a66870222c4866a6cddc082c06543da6d37a4bb62c73eb",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/9f8ae03b97d31344.gif",
+      "sha256": "9f8ae03b97d31344f9b2cd28aad7623c6f7060223f060fd9d818c77e48a57ca8",
+      "width": 480,
+      "height": 262,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/a4c1fb89be18062f.gif",
+      "sha256": "a4c1fb89be18062fea1fe6fc9f3846bb74fe240f8d64e80ea5cf89d6578cd5f1",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/a5c1c2427ee83c93.gif",
+      "sha256": "a5c1c2427ee83c931e2d8dd1e82c26a45a3b00126406e87f82d8caa0a46b0708",
+      "width": 246,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/a8b1d1173ade4e8f.gif",
+      "sha256": "a8b1d1173ade4e8f688967121cd0d74df3eae48a0ce1448f79ecf0a20624e571",
+      "width": 403,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/a8fb4616e53e9cb9.gif",
+      "sha256": "a8fb4616e53e9cb9d485acc9691e7eb9ce98c6ea86ab35113d63f31a476db160",
+      "width": 480,
+      "height": 262,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/aab0de0aad0c275a.gif",
+      "sha256": "aab0de0aad0c275a57acb64ffac64dc49290e99ba8c12e1e92b99c0fd393f84a",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/afe2f533cbbef546.gif",
+      "sha256": "afe2f533cbbef54634fcb4b1e234d14f46178fcfb17a4fbe355b73479ec6b2af",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/b0d0b89c32ca0aec.gif",
+      "sha256": "b0d0b89c32ca0aecd6753e6d90e4c6f13636fa6191580b0a76e84fe558cdd7b2",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/b2236e6b7a81a1b5.gif",
+      "sha256": "b2236e6b7a81a1b5b63cd3a28bd16e504534a4f7d72a312505f464d65cb4dd3a",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/b2b32833d73d3ca4.gif",
+      "sha256": "b2b32833d73d3ca47f79fcf60bb42cab5ac85f4af5e85fbf65b31fa0468e107a",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/b395c84efcad344b.gif",
+      "sha256": "b395c84efcad344bcccf5d3babb12e7a358cb2370fadb1ee7002ab763bdcc78b",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/b4522eb6968d20d0.gif",
+      "sha256": "b4522eb6968d20d0559bce18552eca086eae217cf32b4a9443e5682f8158f959",
+      "width": 403,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/b49969e64dc275f5.gif",
+      "sha256": "b49969e64dc275f5e05ea2481130dec742662eecf113ce61f346c69757c30b84",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/b54f07a7b66c1aed.gif",
+      "sha256": "b54f07a7b66c1aed8ffedc004381f3f68325032417e854b6b2a1eb0f3fa2a269",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/ba6ba483a1372c9e.gif",
+      "sha256": "ba6ba483a1372c9e61d5b63fb00d44974b009319923258c5ec9405440c9b8197",
+      "width": 480,
+      "height": 262,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/bc4d9bed4bbb590a.gif",
+      "sha256": "bc4d9bed4bbb590aff307ca8ab71f6e1ad1953d1173002de5e008cf3dd5627df",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/c07b14f1bcc8e8ca.gif",
+      "sha256": "c07b14f1bcc8e8ca141bfd908f8b9721cb1e8a5e005e37693cf7738ab5218f90",
+      "width": 300,
+      "height": 300,
+      "frames": 24,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        500,
+        100,
+        100,
+        100,
+        100,
+        100,
+        500,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/c1065beff4823907.gif",
+      "sha256": "c1065beff48239072c3dbbb3287c1b2c25f81d1e9b40c4d871ed92f9f8ca0893",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/c3a2b9892161522e.gif",
+      "sha256": "c3a2b9892161522e3cae0b2b1468181f8ad0bc91d44aaf2cd4233a1846068d8f",
+      "width": 403,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/c4d2de309fa47b4c.gif",
+      "sha256": "c4d2de309fa47b4ce66603636791774145189a27d21aa3f2b4e5664023ec29ad",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/ca785b4cf81c98fa.gif",
+      "sha256": "ca785b4cf81c98fab635d982878ec672e3effe43efb2ffb6216fce7b64269521",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/cardio-elliptique.jpg",
+      "sha256": "60f71c854d7012bed604c12e3e32f2ffe5b6982e490344e360036af096837e12",
+      "width": 1408,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/cardio-recup-active.jpg",
+      "sha256": "ad7df7d6cf5b3bc2e22204b27f7e0ef7d04a252cbdbc6b286e4b8a143f054e4f",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/cardio-transition.jpg",
+      "sha256": "b41e99d7da920f7422fb2b5316da3dc0887e4b23aa3f7a09feb40107188f912c",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/cd0cc940608ac100.gif",
+      "sha256": "cd0cc940608ac100aac60a2f2f4d501d64cedb5de1402c84b5bc39b502d9f99a",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/cf312b839f6da027.gif",
+      "sha256": "cf312b839f6da0278116b3cdecaa76cc3d2483abfd5764041059289cfd4edd7b",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/d06257e45606b033.gif",
+      "sha256": "d06257e45606b033cb7d47be0e1c485ac608b622bd0891085f27fc28b7c2241c",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/d13d9f751f4731ab.gif",
+      "sha256": "d13d9f751f4731abdb4249c316f468cf34bc0d3d80128d5b539c24cc44c03bd0",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/d9c88be0658a81af.gif",
+      "sha256": "d9c88be0658a81af8a1674bcac3feee1f2d55984ee3e7fad7d18e12cc773d860",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/dc0cabae23adbfd5.gif",
+      "sha256": "dc0cabae23adbfd56ccfa06fdab5a54deb25aa0e1d6f0c0b1c4283848027e631",
+      "width": 246,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/e035a3d8e8c21744.gif",
+      "sha256": "e035a3d8e8c21744f7de801daed7f4708bac75fdcd337151b93e0f143368bd84",
+      "width": 480,
+      "height": 262,
+      "frames": 2,
+      "durationsMs": [
+        500,
+        500
+      ]
+    },
+    {
+      "path": "/media/e56d7d8feec13a3a.gif",
+      "sha256": "e56d7d8feec13a3a370ead3190fef2d36e5538500cf53ba51b31525166ebfe4f",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/e5f17140d8d97591.gif",
+      "sha256": "e5f17140d8d97591cd6bba644ca8e65a0dc384d29fa8a7224b444ca15fd095fa",
+      "width": 300,
+      "height": 300,
+      "frames": 24,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        500,
+        100,
+        100,
+        100,
+        100,
+        100,
+        500,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/ea226c444f72de0f.gif",
+      "sha256": "ea226c444f72de0fcc6dbd84cc42ea2abb43bfc269027c99bc7b78b8e12a8cbf",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/ebc7379850a4ee2f.gif",
+      "sha256": "ebc7379850a4ee2f98e033812ee8c636eaf7fa44d172682c49f40f78b79a5f22",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/f1dde35bd517f24b.gif",
+      "sha256": "f1dde35bd517f24b2fdba8f8f3823251f18f583236ea0f1229de5d3de748edf5",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/f529e06a69b973f4.gif",
+      "sha256": "f529e06a69b973f45725a5acaf26bc609386433ecc2ec405d3344312495c9f06",
+      "width": 403,
+      "height": 440,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/f64281e2dbd7986f.gif",
+      "sha256": "f64281e2dbd7986ffff47880df22a7e9d3269be4cf65c860e44b34562271b096",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/f73444e9dc2fee89.gif",
+      "sha256": "f73444e9dc2fee896e9b54d3370b5d181994f222c684edaf02b13bc626f51594",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/faa82528766b9402.gif",
+      "sha256": "faa82528766b9402291e4e1d1f67f8cd9d816769c0bf84b6f200def226d77c5b",
+      "width": 300,
+      "height": 300,
+      "frames": 12,
+      "durationsMs": [
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100,
+        1000,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "path": "/media/fabb86971a81ea03.gif",
+      "sha256": "fabb86971a81ea035ec62db1f4ca051ec6e0b79883ecc8cf8f3efcf9e8b583ea",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/fd7c5fb1226873f6.gif",
+      "sha256": "fd7c5fb1226873f67a1c3e483d4eaa7a21fa5638452296bcac3c864b6f4e158e",
+      "width": 480,
+      "height": 262,
+      "frames": 2,
+      "durationsMs": [
+        500,
+        500
+      ]
+    },
+    {
+      "path": "/media/fe34482aa6faf932.gif",
+      "sha256": "fe34482aa6faf932912d5ea52f3e61d3a66150905ecc63ecebd4c99793133c86",
+      "width": 480,
+      "height": 262,
+      "frames": 2,
+      "durationsMs": [
+        500,
+        500
+      ]
+    },
+    {
+      "path": "/media/ff100d7322ba1193.gif",
+      "sha256": "ff100d7322ba11931e490aec507c60e18341cdcfcb9b230fb9bd1848ac6f8fd6",
+      "width": 440,
+      "height": 240,
+      "frames": 2,
+      "durationsMs": [
+        650,
+        650
+      ]
+    },
+    {
+      "path": "/media/pool-deplacements-lateraux.jpg",
+      "sha256": "2f35da3d7d6168a975a13454fe33b4bff361e587f0fd148ef7e785c88af69351",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-etirements-bord.jpg",
+      "sha256": "1b886eb9f2e9b970508c8e70c7064cd5e223d592baf9a4c6957c813dedb45f41",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-fractionne.jpg",
+      "sha256": "bb38ae56a809e6be2a86b5820531562d9b504a94d26b7e50abb4b5675444c46e",
+      "width": 1408,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-marche-aquatique.jpg",
+      "sha256": "b23b3f1daa9f77ed5438f52efd9352e19f6d3385d26b9309ca3f4e298faee60e",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-nage-douce.jpg",
+      "sha256": "9a7c403ba5d0003df5ac57eb717c0c2959bac36711e2d36347bba2bce3143a30",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-nage-statique.jpg",
+      "sha256": "ca5d80abe87b188fac00f6409db5930ebd692269d2ca44c5592b26267a2c0ac1",
+      "width": 1408,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-recup-complete.jpg",
+      "sha256": "3769052c3ec049104865aff9b376d4886575a7020a71da978261c2d21ab08770",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-recup-tabata.jpg",
+      "sha256": "6e2246e46a666e08676cf3f3aa28a87f44c8618d68dd90928c190d7f60868338",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-retour-calme.jpg",
+      "sha256": "6469e8b5189a9d300137efc27efea9b1decd11939bb4d6dafc296dbcd8836928",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/pool-sprint.jpg",
+      "sha256": "0dac1209ca00c0a1b43593bec0f167c90c9ea070db4f1a982ec7a65a4f0d62b7",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-adduction-debout.jpg",
+      "sha256": "15afdd511898761c4d57242ed4b361dd57357b5f9693a862741d1477685ef507",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-avb-extenseurs.jpg",
+      "sha256": "4962e744cd07fffb852b5566c69dda3f4f884c6d2e28d383cdd2af56ad447712",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-avb-flechisseurs.jpg",
+      "sha256": "7c4cd8708684b09199bd572cb40888f11a0f0993e88bd15a37caf23e94ebd344",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-biceps.jpg",
+      "sha256": "0e74d3cfc9cc28c979c9cc28ea221963ef08b69c483fafdeb98ce8e84f1d7405",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-cobra.jpg",
+      "sha256": "d3a7f21fc65a7a92965db0256d9233b3840490f4cc4af76535f4176f1fc4a3ef",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-dos-enfant.jpg",
+      "sha256": "9b5dbab135d1f13a992f08f482113975f5b1b0f303497d7f54ff9c51c916ddfe",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-dos-suspension.jpg",
+      "sha256": "fc276435a75965cbfa94a1032fce34e05c25e6eb9bf9ac5b889613f26c8f7079",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-ep-arriere.jpg",
+      "sha256": "9b8e16ee0f02689259373133a2fa0bc1b90b9d8328bdb614c9d54156871df234",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-ep-lateral.jpg",
+      "sha256": "91007cb21c097857d55bfefabdb2b48caefa5e38ad06b2a0cb2e4adc806ec6d6",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-ep-posterieur.jpg",
+      "sha256": "f7fe78c1876391af408b6e444da6c49372b5e94484416594a5990a896fa97b23",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-flechisseur-hanche.jpg",
+      "sha256": "8982cf707fe1ae15a6d37bc2802230fd3e48d4272760d71ad4b25c5359962213",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-grenouille.jpg",
+      "sha256": "05fc8943044e87325f1b70fa9325f66d91c95e507af7501ea2c108e581cd63b3",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-isc-flexion.jpg",
+      "sha256": "c56705d5e95e6ac053abce343828a60283b0ba102c60d27123f69a70ed654b31",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-isc-une-jambe.jpg",
+      "sha256": "e6ec07ffcbcaacfc3ed7e98c3deee433da2c9dd9cc7bc7e7a692aa156a27b12c",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-mollet-marche.jpg",
+      "sha256": "e7283c74ef4db298a3d4be8135617039c931cc25f6be1c4b34837a9f34d8bf5a",
+      "width": 1408,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-mollet-mur.jpg",
+      "sha256": "2dcb3c97304f37ad01beb313a72192342e29a27a7787d665be408b6f708b792a",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-pec-mur.jpg",
+      "sha256": "8dfbd71124c67b2a75eec7fdedba32346f415b9ebd09acf29c8360534e92edf7",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-pec-porte.jpg",
+      "sha256": "3caeffe57fcd9e18c84eee3c4939e38d88c2c9e3283099e13b16a79565d9095e",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-pigeon.jpg",
+      "sha256": "685d37a8c043df48887ee83345d1e642db89ac10ea629337551674fb44fb9362",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-piriforme.jpg",
+      "sha256": "437c78f1d6dab7039a0b920f2797d834b19eb0c864667093692bc60630c86034",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-quad-cote.jpg",
+      "sha256": "9990423afbe7eb43e1f27973c6c80d7bec6797ae44758ee12d255016cb73f8d1",
+      "width": 1408,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-quad-debout.jpg",
+      "sha256": "38d48508bf75f82dd64eddcae3ebaea283bf5488bef6ee2b6f69acca500ea3bf",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-respiration.jpg",
+      "sha256": "3cad7f350c3e0bcfcd614e5e46b16e16d91b8eb7873cf1dda6b280a3643174be",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-torsion-allongee.jpg",
+      "sha256": "25a108e6d0b7e9a50315e7e7a549eb893852741d046927293e6c9118193a9f5a",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-triceps-coude.jpg",
+      "sha256": "7460811f40e52b890a88ced0850192799c8192c71acd1bf4ec4c3fd6b0d4beda",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/stretch-triceps-dos.jpg",
+      "sha256": "7aead3399f2381a43a65e80a0f98ac62ca836df5e2dfde7445f31d97a222a6b2",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/warmup-cardio.jpg",
+      "sha256": "22844daf4201eada32816856a9180d522313b75c78b4a65a782b46986b90472d",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/warmup-mobilite.jpg",
+      "sha256": "9b2f9adb0da621675cdbb809947e5985990a86818c90b68f0d8e67dfe57d1cd0",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    },
+    {
+      "path": "/media/warmup-series-approche.jpg",
+      "sha256": "84f8a9bfd08f8bd2e3bbc3287d7fb77b6b4b92073ad17367a8dbbe465b7050da",
+      "width": 1376,
+      "height": 768,
+      "frames": 1,
+      "durationsMs": [
+        0
+      ]
+    }
+  ]
+}

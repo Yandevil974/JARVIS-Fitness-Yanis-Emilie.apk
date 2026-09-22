@@ -1,0 +1,38 @@
+**/node_modules/
+**/.cache/
+**/.gradle/
+**/build/
+**/release/
+**/.private/
+**/local.properties
+**/*.keystore
+**/*.jks
+**/*.p12
+JARVIS-Fitness-Source/android/app/src/main/assets/public/
+JARVIS-Fitness-Source/android/app/src/main/assets/yanis-backup.json
+JARVIS-Fitness-Source/tests/*.log
+JARVIS-Fitness-Source/tests/*results.json
+JARVIS-Fitness-Source/tests/*inspection.json
+JARVIS-Fitness-Source/tests/browser-initial.json
+JARVIS-Fitness-Source/tests/apk-manifest.txt
+JARVIS-Fitness-Source/public/runtime.js
+JARVIS-Fitness-Source/public/runtime.css
+
+# Browser screenshots are test output, not application sources.
+JARVIS-Fitness-Source/tests/screenshots/
+
+**/__pycache__/
+**/*.pyc
+
+# Private signing backups must never be published.
+**/.jarvis-fitness-signing/
+**/JARVIS-signature-CONFIDENTIEL.zip
+**/*.pfx
+**/*.bks
+
+# New parallel identity: plaintext backup/recovery files are always private.
+**/Yanis-Fitness-Evolution-SAUVEGARDE-PRIVEE.zip
+**/recovery-key.txt
+
+# Any new plaintext signature backup remains private.
+**/Yanis-Fitness-Evolution-*-SAUVEGARDE-PRIVEE.zip

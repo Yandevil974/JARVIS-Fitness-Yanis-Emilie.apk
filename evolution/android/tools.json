@@ -1,0 +1,22 @@
+[
+  {
+    "file": "r8.jar",
+    "repo": "LineageOS/android_prebuilts_r8",
+    "path": "r8-master.jar",
+    "commit": "c6dea7fb206c2736e593c885bf48c67c814a912a",
+    "sha256": "d9e6acde0cb6f2453d6835b52c31d2066054394fb79e91115dd4978bde6afd16"
+  },
+  {
+    "file": "apktool.jar",
+    "repo": "nubosoftware/nubomanagement",
+    "path": "utils/apktool/apktool_2.3.4.jar",
+    "commit": "a7242ecc30a46125f8fe3382333d9a84643e7aa9",
+    "sha256": "758b1bd58f9c9dd5ca85258d31c75f32e5878a502e3d75c66f3bfacf74b9dc1d"
+  },
+  {
+    "file": "apksig-source.tar.gz",
+    "repo": "LineageOS/android_tools_apksig",
+    "commit": "6447768c0e8ab4385a47e7bb85e6bdba0085dced",
+    "sha256": "14a13d76bd2ddb96b1c3a4d1aaf7e383ff0d8fa73bb0aa52d65d1fb4993295ee"
+  }
+]

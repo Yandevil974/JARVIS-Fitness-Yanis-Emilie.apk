@@ -1,0 +1,134 @@
+{
+  "elite": [
+    {
+      "id": 0,
+      "avatar": "/team/advisor-0.webp",
+      "emoji": "🏋️",
+      "name": "Coach principal",
+      "role": "Programmation musculaire",
+      "description": "Responsable de la périodisation, des séances et de la progression des charges."
+    },
+    {
+      "id": 1,
+      "avatar": "/team/advisor-1.webp",
+      "emoji": "💪",
+      "name": "Expert hypertrophie",
+      "role": "Volume & progression musculaire",
+      "description": "Analyse le volume, la fréquence, les exercices et la croissance musculaire."
+    },
+    {
+      "id": 2,
+      "avatar": "/team/advisor-2.webp",
+      "emoji": "🥗",
+      "name": "Nutritionniste",
+      "role": "Calories & macronutriments",
+      "description": "Calcule vos besoins, ajuste les phases (surplus, maintien, déficit, recomposition)."
+    },
+    {
+      "id": 3,
+      "avatar": "/team/advisor-3.webp",
+      "emoji": "🧠",
+      "name": "Préparateur mental",
+      "role": "Motivation & discipline",
+      "description": "Habitudes, constance, gestion de la fatigue, sommeil, adhérence."
+    },
+    {
+      "id": 4,
+      "avatar": "/team/advisor-4.webp",
+      "emoji": "🩺",
+      "name": "Référent santé",
+      "role": "Prévention & prudence",
+      "description": "Recommandations générales de prudence — aucun diagnostic médical."
+    },
+    {
+      "id": 5,
+      "avatar": "/team/advisor-5.webp",
+      "emoji": "🧘",
+      "name": "Expert mobilité",
+      "role": "Mobilité, amplitude & prévention",
+      "description": "Échauffement, amplitude, retour au calme, prévention des blessures."
+    },
+    {
+      "id": 6,
+      "avatar": "/team/advisor-6.webp",
+      "emoji": "🫀",
+      "name": "Préparateur cardio",
+      "role": "Conditionnement métabolique",
+      "description": "Programme le cardio pour compléter la musculation sans nuire à la récupération."
+    },
+    {
+      "id": 7,
+      "avatar": "/team/advisor-7.webp",
+      "emoji": "📊",
+      "name": "Analyste de performance",
+      "role": "Données & recommandations",
+      "description": "Analyse vos données (poids, mensurations, charges, récupération) et génère des recommandations."
+    }
+  ],
+  "emilie": [
+    {
+      "id": 0,
+      "avatar": "/team/advisor-5.webp",
+      "emoji": "🌸",
+      "name": "Coach principale",
+      "role": "Programmation féminine & périodisation",
+      "description": "Responsable des 5 cycles, des 4 séances hebdomadaires et de la progression des charges."
+    },
+    {
+      "id": 1,
+      "avatar": "/team/advisor-1.webp",
+      "emoji": "🍑",
+      "name": "Spécialiste fessiers",
+      "role": "Volume, fréquence & galbe",
+      "description": "Priorité absolue du programme : analyse le volume fessier, la fréquence de stimulation et la qualité du recrutement."
+    },
+    {
+      "id": 2,
+      "avatar": "/team/advisor-2.webp",
+      "emoji": "🥗",
+      "name": "Nutritionniste",
+      "role": "Calories & macronutriments",
+      "description": "Calcule vos besoins, ajuste les phases (surplus, maintien, déficit, recomposition)."
+    },
+    {
+      "id": 3,
+      "avatar": "/team/advisor-3.webp",
+      "emoji": "🧠",
+      "name": "Préparateur mental",
+      "role": "Motivation & discipline",
+      "description": "Habitudes, constance, gestion de la fatigue, sommeil, adhérence."
+    },
+    {
+      "id": 4,
+      "avatar": "/team/advisor-4.webp",
+      "emoji": "🩺",
+      "name": "Référent santé",
+      "role": "Prévention & prudence",
+      "description": "Recommandations générales de prudence — aucun diagnostic médical."
+    },
+    {
+      "id": 5,
+      "avatar": "/team/advisor-0.webp",
+      "emoji": "🧘",
+      "name": "Expert mobilité",
+      "role": "Mobilité, amplitude & prévention",
+      "description": "Échauffement, amplitude, retour au calme, prévention des blessures."
+    },
+    {
+      "id": 6,
+      "avatar": "/team/advisor-7.webp",
+      "emoji": "🫀",
+      "name": "Préparatrice cardio",
+      "role": "Elliptique · piscine · repos actif",
+      "description": "Programme le cardio pour augmenter la dépense énergétique sans nuire à la récupération des fessiers."
+    },
+    {
+      "id": 7,
+      "avatar": "/team/advisor-6.webp",
+      "emoji": "📊",
+      "name": "Analyste de performance",
+      "role": "Données & recommandations",
+      "description": "Analyse vos données (poids, mensurations, charges, récupération) et génère des recommandations."
+    }
+  ]
+}

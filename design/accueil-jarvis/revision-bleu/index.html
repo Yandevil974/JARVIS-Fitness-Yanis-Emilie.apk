@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JARVIS bleu — maquettes claire et sombre colorée</title>
+    <link rel="stylesheet" href="../clair/clair.css" />
+    <link rel="stylesheet" href="revision.css" />
+  </head>
+  <body>
+    <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="arrow" viewBox="0 0 24 24">
+          <path d="M4 12h15m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="bell" viewBox="0 0 24 24">
+          <path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5Zm5 3h4" />
+        </symbol>
+        <symbol id="home" viewBox="0 0 24 24">
+          <path d="m3 10 9-7 9 7v10h-6v-7H9v7H3Z" />
+        </symbol>
+        <symbol id="barbell" viewBox="0 0 24 24">
+          <path d="M7 12h10M7 5v14M3 8v8M17 5v14M21 8v8M1 12h2m18 0h2" />
+        </symbol>
+        <symbol id="chart" viewBox="0 0 24 24">
+          <path d="M4 4v16h17M8 15l4-5 4 2 5-6" />
+        </symbol>
+        <symbol id="spark" viewBox="0 0 24 24">
+          <path d="m12 3 2.7 6.3L21 12l-6.3 2.7L12 21l-2.7-6.3L3 12l6.3-2.7Z" />
+        </symbol>
+        <symbol id="grid" viewBox="0 0 24 24">
+          <rect x="4" y="4" width="5" height="5" rx="1" />
+          <rect x="15" y="4" width="5" height="5" rx="1" />
+          <rect x="4" y="15" width="5" height="5" rx="1" />
+          <rect x="15" y="15" width="5" height="5" rx="1" />
+        </symbol>
+        <symbol id="ruler" viewBox="0 0 24 24">
+          <path d="m3 16 13-13 5 5L8 21Zm6-6 3 3m1-7 3 3M5 14l3 3" />
+        </symbol>
+        <symbol id="volume" viewBox="0 0 24 24">
+          <path
+            d="M4 9h4l5-4v14l-5-4H4Zm12-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"
+          />
+        </symbol>
+        <symbol id="clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 6v6l4 2" />
+        </symbol>
+        <symbol id="check" viewBox="0 0 24 24">
+          <path d="m5 12 5 5L20 7" />
+        </symbol>
+        <symbol id="calendar" viewBox="0 0 24 24">
+          <rect x="4" y="5" width="16" height="16" rx="3" />
+          <path d="M8 3v4m8-4v4M4 11h16m-11 5h6" />
+        </symbol>
+        <symbol id="chevron" viewBox="0 0 24 24">
+          <path d="m9 6 6 6-6 6" />
+        </symbol>
+      </defs>
+    </svg>
+    <main class="revision-study">
+      <header class="study-heading">
+        <div class="study-tag">YANIS FITNESS EVOLUTION · NOUVELLE MAQUETTE</div>
+        <h1>
+          JARVIS reste bleu.<br /><em>Ton accueil garde ses couleurs.</em>
+        </h1>
+        <p>
+          La carte séance d’origine retrouve sa place. Même orbe bleu, de jour
+          comme de nuit.
+        </p>
+        <span class="mock-label"
+          >VISUEL À VALIDER · AUCUNE MODIFICATION DE L’APK</span
+        >
+        <div class="motion-control">
+          <button id="motion-toggle" aria-pressed="false">
+            Mettre l’orbe en pause</button
+          ><span>Animation décorative · aucun micro actif</span>
+        </div>
+      </header>
+      <div class="concept-grid">
+        <section
+          class="concept light"
+          data-concept="light"
+          aria-label="Maquette Clair"
+        >
+          <header class="concept-title">
+            <div>
+              <span class="concept-kicker"
+                >YANIS FITNESS EVOLUTION · ÉTUDE 03</span
+              >
+              <h2>Clair</h2>
+              <p>Ivoire, pastels & orbe bleu</p>
+            </div>
+            <span class="theme-dot" aria-hidden="true"></span>
+          </header>
+          <article
+            class="phone"
+            aria-label="Proposition d’accueil avec la carte séance d’origine"
+          >
+            <div class="screen" data-profile="yanis" data-theme="light">
+              <div class="statusbar" aria-hidden="true">
+                <b>09:41</b><span class="camera"></span><span>▂▄▆ ▰</span>
+              </div>
+              <header class="app-header">
+                <div class="brand">
+                  <span class="monogram">Y<span>/</span>E</span>
+                  <div>YANIS FITNESS<small>EVOLUTION</small></div>
+                </div>
+                <button class="bell" aria-label="Notifications — maquette">
+                  <svg class="icon"><use href="#bell" /></svg><i></i>
+                </button>
+              </header>
+              <div class="profile-strip">
+                <div
+                  class="profile-switch"
+                  aria-label="Profil de démonstration"
+                >
+                  <button data-person="yanis" aria-pressed="true">Yanis</button
+                  ><button data-person="emilie" aria-pressed="false">
+                    Émilie
+                  </button>
+                </div>
+                <span class="local"><i></i>MODE LOCAL</span>
+              </div>
+              <div class="content">
+                <section class="welcome">
+                  <div class="greeting">
+                    <span class="eyebrow">TON COCKPIT PERSONNEL</span>
+                    <h2>
+                      Bonjour,<br /><span data-name>Yanis</span
+                      ><span class="dot">.</span>
+                    </h2>
+                    <p>Ton équipe. Ton prochain pas.</p>
+                  </div>
+                  <div class="jarvis-orb">
+                    <div class="orb" aria-hidden="true">
+                      <div class="orb-grid"></div>
+                      <div class="ring outer"></div>
+                      <div class="ring middle"></div>
+                      <div class="ring inner"></div>
+                      <div class="orb-core"></div>
+                      <span>J / E</span><i class="cross x"></i
+                      ><i class="cross y"></i>
+                    </div>
+                    <small>JARVIS · BLEU SIGNATURE</small>
+                  </div>
+                </section>
+                <div class="day-rail">
+                  <span><i></i>AUJOURD’HUI</span
+                  ><span>LUNDI 21 SEPTEMBRE · EXEMPLE</span>
+                </div>
+                <section
+                  class="session training-hero"
+                  aria-label="Prochaine séance — exemple"
+                >
+                  <img
+                    class="hero-photo"
+                    src="training-hero.jpg"
+                    alt="Visuel d’origine : un homme assis sur une machine de tirage en salle de sport"
+                  />
+                  <div class="hero-shade"></div>
+                  <div class="hero-topline">
+                    <span class="hero-badge">● PROCHAINE SÉANCE</span
+                    ><span class="hero-source">PROGRAMME SOURCE</span>
+                  </div>
+                  <div class="hero-copy">
+                    <p>Construisez votre prochaine version.</p>
+                    <h3 data-session>Haut du corps 1</h3>
+                    <div class="hero-facts">
+                      <span
+                        ><svg class="icon" aria-hidden="true">
+                          <use href="#clock" /></svg
+                        ><span data-duration>45</span> min estimées</span
+                      ><span
+                        ><svg class="icon" aria-hidden="true">
+                          <use href="#barbell" /></svg
+                        >6 exercices</span
+                      >
+                    </div>
+                    <div class="hero-cta">
+                      <button class="hero-start">
+                        <span aria-hidden="true">▶</span> Lancer la séance</button
+                      ><button class="hero-programme">
+                        Voir mon programme <span aria-hidden="true">↗</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="hero-bottom">
+                    <span>● Programme d’origine</span
+                    ><span>J / E · TRAINING SYSTEM</span>
+                  </div>
+                </section>
+                <section class="briefing">
+                  <div class="briefing-heading">
+                    <span class="spark"
+                      ><svg class="icon"><use href="#spark" /></svg
+                    ></span>
+                    <div>
+                      <h3>Le point JARVIS</h3>
+                      <span>TON ÉQUIPE · RÈGLES LOCALES</span>
+                    </div>
+                    <button
+                      class="listen"
+                      aria-label="Écouter le point JARVIS — maquette"
+                    >
+                      <svg class="icon"><use href="#volume" /></svg>
+                    </button>
+                  </div>
+                  <p>
+                    Ta séance et un point de suivi<br />t’attendent aujourd’hui.
+                  </p>
+                  <footer>
+                    <span>Voix à la demande</span
+                    ><button>
+                      Voir pourquoi<svg class="icon"><use href="#arrow" /></svg>
+                    </button>
+                  </footer>
+                </section>
+                <section class="priorities">
+                  <div class="section-heading">
+                    <h3>À ne pas oublier</h3>
+                    <span>01 ACTION</span>
+                  </div>
+                  <button class="task">
+                    <span class="task-symbol"
+                      ><svg class="icon"><use href="#ruler" /></svg></span
+                    ><span class="task-copy"
+                      ><b>Mes mensurations</b
+                      ><small>Un relevé à compléter</small></span
+                    ><span class="task-state">À faire</span
+                    ><svg class="icon"><use href="#chevron" /></svg>
+                  </button>
+                </section>
+                <button class="programme">
+                  <span
+                    ><svg class="icon"><use href="#calendar" /></svg>Mon
+                    programme</span
+                  ><span
+                    >La semaine<svg class="icon"><use href="#arrow" /></svg
+                  ></span>
+                </button>
+              </div>
+              <nav
+                class="bottom-nav"
+                aria-label="Navigation de démonstration"
+              ></nav>
+              <span class="gesture" aria-hidden="true"></span>
+            </div>
+          </article>
+          <footer class="concept-caption">
+            MAQUETTE · DONNÉES D’EXEMPLE · APPLICATION INCHANGÉE
+          </footer>
+        </section>
+        <section
+          class="concept dark"
+          data-concept="dark"
+          aria-label="Maquette Sombre coloré"
+        >
+          <header class="concept-title">
+            <div>
+              <span class="concept-kicker"
+                >YANIS FITNESS EVOLUTION · ÉTUDE 03</span
+              >
+              <h2>Sombre coloré</h2>
+              <p>Ambre, lavande, menthe & orbe bleu</p>
+            </div>
+            <span class="theme-dot" aria-hidden="true"></span>
+          </header>
+          <article
+            class="phone"
+            aria-label="Proposition d’accueil avec la carte séance d’origine"
+          >
+            <div class="screen" data-profile="yanis" data-theme="dark">
+              <div class="statusbar" aria-hidden="true">
+                <b>09:41</b><span class="camera"></span><span>▂▄▆ ▰</span>
+              </div>
+              <header class="app-header">
+                <div class="brand">
+                  <span class="monogram">Y<span>/</span>E</span>
+                  <div>YANIS FITNESS<small>EVOLUTION</small></div>
+                </div>
+                <button class="bell" aria-label="Notifications — maquette">
+                  <svg class="icon"><use href="#bell" /></svg><i></i>
+                </button>
+              </header>
+              <div class="profile-strip">
+                <div
+                  class="profile-switch"
+                  aria-label="Profil de démonstration"
+                >
+                  <button data-person="yanis" aria-pressed="true">Yanis</button
+                  ><button data-person="emilie" aria-pressed="false">
+                    Émilie
+                  </button>
+                </div>
+                <span class="local"><i></i>MODE LOCAL</span>
+              </div>
+              <div class="content">
+                <section class="welcome">
+                  <div class="greeting">
+                    <span class="eyebrow">TON COCKPIT PERSONNEL</span>
+                    <h2>
+                      Bonjour,<br /><span data-name>Yanis</span
+                      ><span class="dot">.</span>
+                    </h2>
+                    <p>Ton équipe. Ton prochain pas.</p>
+                  </div>
+                  <div class="jarvis-orb">
+                    <div class="orb" aria-hidden="true">
+                      <div class="orb-grid"></div>
+                      <div class="ring outer"></div>
+                      <div class="ring middle"></div>
+                      <div class="ring inner"></div>
+                      <div class="orb-core"></div>
+                      <span>J / E</span><i class="cross x"></i
+                      ><i class="cross y"></i>
+                    </div>
+                    <small>JARVIS · BLEU SIGNATURE</small>
+                  </div>
+                </section>
+                <div class="day-rail">
+                  <span><i></i>AUJOURD’HUI</span
+                  ><span>LUNDI 21 SEPTEMBRE · EXEMPLE</span>
+                </div>
+                <section
+                  class="session training-hero"
+                  aria-label="Prochaine séance — exemple"
+                >
+                  <img
+                    class="hero-photo"
+                    src="training-hero.jpg"
+                    alt="Visuel d’origine : un homme assis sur une machine de tirage en salle de sport"
+                  />
+                  <div class="hero-shade"></div>
+                  <div class="hero-topline">
+                    <span class="hero-badge">● PROCHAINE SÉANCE</span
+                    ><span class="hero-source">PROGRAMME SOURCE</span>
+                  </div>
+                  <div class="hero-copy">
+                    <p>Construisez votre prochaine version.</p>
+                    <h3 data-session>Haut du corps 1</h3>
+                    <div class="hero-facts">
+                      <span
+                        ><svg class="icon" aria-hidden="true">
+                          <use href="#clock" /></svg
+                        ><span data-duration>45</span> min estimées</span
+                      ><span
+                        ><svg class="icon" aria-hidden="true">
+                          <use href="#barbell" /></svg
+                        >6 exercices</span
+                      >
+                    </div>
+                    <div class="hero-cta">
+                      <button class="hero-start">
+                        <span aria-hidden="true">▶</span> Lancer la séance</button
+                      ><button class="hero-programme">
+                        Voir mon programme <span aria-hidden="true">↗</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="hero-bottom">
+                    <span>● Programme d’origine</span
+                    ><span>J / E · TRAINING SYSTEM</span>
+                  </div>
+                </section>
+                <section class="briefing">
+                  <div class="briefing-heading">
+                    <span class="spark"
+                      ><svg class="icon"><use href="#spark" /></svg
+                    ></span>
+                    <div>
+                      <h3>Le point JARVIS</h3>
+                      <span>TON ÉQUIPE · RÈGLES LOCALES</span>
+                    </div>
+                    <button
+                      class="listen"
+                      aria-label="Écouter le point JARVIS — maquette"
+                    >
+                      <svg class="icon"><use href="#volume" /></svg>
+                    </button>
+                  </div>
+                  <p>
+                    Ta séance et un point de suivi<br />t’attendent aujourd’hui.
+                  </p>
+                  <footer>
+                    <span>Voix à la demande</span
+                    ><button>
+                      Voir pourquoi<svg class="icon"><use href="#arrow" /></svg>
+                    </button>
+                  </footer>
+                </section>
+                <section class="priorities">
+                  <div class="section-heading">
+                    <h3>À ne pas oublier</h3>
+                    <span>01 ACTION</span>
+                  </div>
+                  <button class="task">
+                    <span class="task-symbol"
+                      ><svg class="icon"><use href="#ruler" /></svg></span
+                    ><span class="task-copy"
+                      ><b>Mes mensurations</b
+                      ><small>Un relevé à compléter</small></span
+                    ><span class="task-state">À faire</span
+                    ><svg class="icon"><use href="#chevron" /></svg>
+                  </button>
+                </section>
+                <button class="programme">
+                  <span
+                    ><svg class="icon"><use href="#calendar" /></svg>Mon
+                    programme</span
+                  ><span
+                    >La semaine<svg class="icon"><use href="#arrow" /></svg
+                  ></span>
+                </button>
+              </div>
+              <nav
+                class="bottom-nav"
+                aria-label="Navigation de démonstration"
+              ></nav>
+              <span class="gesture" aria-hidden="true"></span>
+            </div>
+          </article>
+          <footer class="concept-caption">
+            MAQUETTE · DONNÉES D’EXEMPLE · APPLICATION INCHANGÉE
+          </footer>
+        </section>
+      </div>
+      <section class="animation-panel" aria-labelledby="animation-title">
+        <h2 id="animation-title">L’orbe, en mouvement.</h2>
+        <p>
+          Des anneaux en rotation autour du noyau bleu. Les couleurs du profil
+          restent dans les cartes.
+        </p>
+        <div
+          id="orb-demo"
+          aria-label="Orbe bleu animé dans les deux thèmes"
+        ></div>
+        <p class="motion-note">
+          Pause disponible. L’animation est désactivée si tu préfères les
+          mouvements réduits.
+        </p>
+      </section>
+      <footer class="page-footer">
+        Étude visuelle uniquement. Séances et priorités fictives ; aucun
+        démarrage, micro ou accès aux données.<br />Prochaine étape : tes
+        ajustements ou ta validation, avant toute intégration.
+      </footer>
+    </main>
+    <div class="toast" role="status" hidden>
+      Maquette uniquement : aucune séance lancée, aucun micro activé, aucune
+      donnée modifiée.
+    </div>
+    <script src="revision.js"></script>
+  </body>
+</html>

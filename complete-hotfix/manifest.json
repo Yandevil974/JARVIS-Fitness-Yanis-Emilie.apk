@@ -1,0 +1,16 @@
+{
+  "version": "1.0.6",
+  "versionCode": 7,
+  "appId": "app.jarvis.fitness.complete",
+  "appName": "JARVIS Fitness Complet",
+  "base": {
+    "repository": "Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk",
+    "commit": "84e2986da2f004d4eae81e52a9a41e7b69e80f8d",
+    "path": "JARVIS-Fitness.apk",
+    "sha256": "691488f08ada180de1022bf336b14024c71e52427cb2c43547ac3d53c8b8b5ab"
+  },
+  "bundle": {
+    "path": "assets/public/assets/index-CBCies4k.js",
+    "sha256": "66eff18ac86a23a6af57b0cc22a710c6c1225df60df28ae7ad8e76c5e7939689"
+  }
+}

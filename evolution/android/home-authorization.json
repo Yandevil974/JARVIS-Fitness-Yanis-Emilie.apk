@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-21",
+  "scope": "One new parallel installation with a new signing key; retain all prior installations and deliver stages 1–7 plus the approved home",
+  "question": "On part sur une nouvelle installation complète, à côté de l’ancienne, avec les étapes 1 à 7 et le nouvel accueil validé ? Tes données seront transférées par sauvegarde JSON, sans désinstaller l’ancienne application. L’IA conversationnelle viendra ensuite.",
+  "selectedOption": "Oui, on y va",
+  "selectedDescription": "Nouvel APK Yanis Fitness Evolution, nouvelle signature et installation séparée. Vérifications avant livraison et sauvegarde privée de la signature.",
+  "subsequentUserMessage": "Poursuis",
+  "preserveName": "Yanis Fitness Evolution",
+  "preservePreviousApksAndData": true,
+  "generalConversationalAiAuthorized": false
+}
