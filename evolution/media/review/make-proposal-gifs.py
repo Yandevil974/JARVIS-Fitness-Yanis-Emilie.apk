@@ -8,7 +8,8 @@ root = pathlib.Path(__file__).resolve().parents[3]
 raw = root / '.cache/proposals/raw'
 out = root / 'evolution/media/assets/proposals'
 out.mkdir(parents=True, exist_ok=True)
-LOT = json.loads((root / 'evolution/media/review/proposals-lot1.json').read_text())
+LOT_FILE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'evolution/media/review/proposals-lot1.json'
+LOT = json.loads(LOT_FILE.read_text())
 
 def split_panels(im):
     g = im.convert('L'); w, h = g.size; px = g.load()
@@ -63,5 +64,5 @@ for i, (entry, frames) in enumerate(rows):
         t = f.copy(); t.thumbnail((cell, cell)); x = 20 + j * (cell + 30)
         sheet.paste(t, (x, y + 50)); d.rectangle((x, y + 50, x + t.width, y + 50 + t.height), outline=(180, 180, 180))
         d.text((x, y + 52 + t.height), 'position 1' if j == 0 else 'position 2', font=small, fill=(120, 120, 120))
-sheet.save(root / 'evolution/media/review/proposals-tabata-lot1.jpg', quality=85)
+sheet.save(root / 'evolution/media/review' / LOT['sheet'], quality=85)
 print('sheet', sheet.size)

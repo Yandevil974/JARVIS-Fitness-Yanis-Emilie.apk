@@ -1,0 +1,69 @@
+{
+  "title": "Propositions lot 2 — Tabata au sol (5) + échauffement (1) (NON intégrées)",
+  "subtitle": "Dessins générés dans le style de la bibliothèque (référence : GIF dips), 2 positions fixes par GIF (650 ms), pas une vidéo. À valider avant intégration.",
+  "sheet": "proposals-lot2.jpg",
+  "status": "proposed-not-integrated",
+  "support": "AI-generated anatomical drawings in the existing library style; two fixed positions; not photographs; no existing visual replaced",
+  "pending": [
+    "Activation scapulaire (position 2 à refaire : rotation externe coudes au corps)",
+    "Étirement « Mollet en escalier » (1re version montrait l'étirement au mur, refusée)",
+    "Étirement « Adduction de la hanche debout » (croisement des jambes pas assez visible, refusée)"
+  ],
+  "proposals": [
+    {
+      "name": "Dips au bord",
+      "file": "tabata-dips-au-bord.gif",
+      "source": "dips-au-bord.png",
+      "uses": [
+        "Dips au bord"
+      ],
+      "positions": "Mains au bord du banc derrière soi, bras tendus → coudes à 90°, hanches abaissées (vue de profil)."
+    },
+    {
+      "name": "Squats sumo",
+      "file": "tabata-squats-sumo.gif",
+      "source": "squats-sumo.png",
+      "uses": [
+        "Squats sumo"
+      ],
+      "positions": "Pieds très écartés, pointes ouvertes → descente cuisses parallèles, buste droit (vue de face)."
+    },
+    {
+      "name": "Battements de jambes",
+      "file": "tabata-battements-de-jambes.gif",
+      "source": "battements-de-jambes.png",
+      "uses": [
+        "Battements de jambes"
+      ],
+      "positions": "Allongé sur le dos, jambes tendues décollées → ciseaux inversés (vue de profil). Au sol uniquement ; en piscine le GIF aquatique reste."
+    },
+    {
+      "name": "Crunch",
+      "file": "tabata-crunch.gif",
+      "source": "crunch.png",
+      "uses": [
+        "Crunch"
+      ],
+      "positions": "Allongé genoux pliés, mains aux tempes → omoplates décollées, bas du dos au sol."
+    },
+    {
+      "name": "Corde invisible",
+      "file": "tabata-corde-invisible.gif",
+      "source": "corde-invisible-v2.png",
+      "uses": [
+        "Corde invisible"
+      ],
+      "positions": "Debout, coudes au corps, mains comme sur des poignées → petit saut pieds décollés (sans corde)."
+    },
+    {
+      "name": "Mobilité hanches & chevilles",
+      "file": "warmup-mobilite-hanches-chevilles.gif",
+      "source": "mobilite-hanches-chevilles.png",
+      "uses": [
+        "Mobilité hanches & chevilles"
+      ],
+      "positions": "Cercle de hanche genou levé ouvert → cercle de cheville pied décollé (échauffement bas du corps)."
+    }
+  ],
+  "integration": "Land names go through VALIDATED_PROPOSALS in compose-mapping.py; « Mobilité hanches & chevilles » must be routed to the warmup table and the Bg patch (build.mjs) must use the new GIF for lower-body sessions."
+}
