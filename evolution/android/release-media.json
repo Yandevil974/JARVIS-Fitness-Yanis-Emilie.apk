@@ -8,9 +8,17 @@
   "baseApk": "downloads/Yanis-Fitness-Evolution-1.4.0.apk",
   "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
   "baseBundleSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
-  "validatedMediaBundleSha256": "564c6245673c94928d768fdbf2d9a37e076a8977c3350d546900004587196780",
+  "validatedMediaBundleSha256": "0d04ad3e30b9097028f01db66730160582640e34dc870bdd1d91c79c938d9682",
   "newWebEntries": {
-    "assets/public/media/dips-triceps-corrige.gif": "6ec7c12e00fc0e2bd165e7a8d9e6639cebd3d2ed632415720040f7f357a196f8"
+    "assets/public/media/dips-triceps-corrige.gif": "6ec7c12e00fc0e2bd165e7a8d9e6639cebd3d2ed632415720040f7f357a196f8",
+    "assets/public/media/tabata-burpees.gif": "cbfd4a8da1929e56b828561d4cecfbc216e12b18ba1d9597e7e3438027addd4c",
+    "assets/public/media/tabata-chaise-au-mur.gif": "3b3ae1d2562142beb76c9de4de326d5b381958b73ae46e017a81a29a7a18018e",
+    "assets/public/media/tabata-jumping-jacks.gif": "d0d9175b7912453e3aadd6074a17b1b036ad52301d9b65478e9a62c24a031aed",
+    "assets/public/media/tabata-montees-de-genoux.gif": "ab366f7d03b844bb45379b958e7a0f9c731f486ffc5aa684a5fb7d4419266540",
+    "assets/public/media/tabata-patineurs.gif": "1a1f411eff8672915822da27db8cf9e82477e729bf8d2be7c8b97f4853a7276c",
+    "assets/public/media/tabata-russian-twist.gif": "8b34ee145e4a2d9a0d9df4371f9f2daa7ffe979cd77bf060da03eade1d93a35f",
+    "assets/public/media/tabata-squats-sautes.gif": "4bebeb4cea3c78c05aedb0744d5a7e5faa490b0ff8d8f0ffef915ccfa2f93090",
+    "assets/public/media/tabata-superman.gif": "d8ffefde6510877a10a0ab169cf0c55cd995b3ea81f79b6c4ddae4f1f9fed892"
   },
   "apksignerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
   "output": "downloads/Yanis-Fitness-Evolution-1.5.0.apk",

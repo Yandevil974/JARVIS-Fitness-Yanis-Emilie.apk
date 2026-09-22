@@ -117,15 +117,19 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
     { name: "Battements de jambes · round 3/8", seconds: 20, pattern: "walk", kind: "work" },
     { name: "Montées de genoux · round 4/8", seconds: 20, pattern: "walk", kind: "work" },
     { name: "Retour au calme", seconds: 120, pattern: "breathe" },
+    { name: "Dips au bord · round 5/8", seconds: 20, pattern: "walk", kind: "work" },
+    { name: "Chaise douce · round 6/8", seconds: 20, pattern: "static", kind: "work" },
   ];
   const meta = { type: "hiit", name: "Tabata 20/10", rounds: 8, cycles: 1, work: 20, rest: 10 };
   for (const [index, expect] of [
     [1, { img: "/media/1317e405efd6ef2b.gif" }],
     [2, { breathing: true }],
-    [3, { missing: true }],
+    [3, { img: "/media/tabata-jumping-jacks.gif" }],
     [4, { missing: true }],
-    [5, { missing: true }],
+    [5, { img: "/media/tabata-montees-de-genoux.gif" }],
     [6, { breathing: true }],
+    [7, { missing: true }],
+    [8, { img: "/media/tabata-chaise-au-mur.gif" }],
   ]) {
     const app = await boot((s) => {
       const t = createTimer(steps, meta);

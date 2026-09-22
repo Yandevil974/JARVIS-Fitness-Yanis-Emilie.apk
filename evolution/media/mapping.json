@@ -7,7 +7,15 @@
   "original": "/media/c3a2b9892161522e.gif"
  },
  "newAssets": [
-  "/media/dips-triceps-corrige.gif"
+  "/media/dips-triceps-corrige.gif",
+  "/media/tabata-burpees.gif",
+  "/media/tabata-chaise-au-mur.gif",
+  "/media/tabata-jumping-jacks.gif",
+  "/media/tabata-montees-de-genoux.gif",
+  "/media/tabata-patineurs.gif",
+  "/media/tabata-russian-twist.gif",
+  "/media/tabata-squats-sautes.gif",
+  "/media/tabata-superman.gif"
  ],
  "levels": {
   "exact": "même mouvement, même matériel, même position",
@@ -1730,9 +1738,9 @@
  "movements": {
   "land": {
    "Jumping jacks": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de jumping jacks dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-jumping-jacks.gif",
+    "note": null
    },
    "Squats": {
     "level": "variante",
@@ -1800,14 +1808,14 @@
     "note": "Illustration : planche latérale pieds sur banc. Ici : au sol, côté droit vers le bas."
    },
    "Burpees simplifiés": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de burpees dans la bibliothèque."
+    "level": "variante",
+    "media": "/media/tabata-burpees.gif",
+    "note": "Illustration : Burpees. Ici : sans saut ni pompe."
    },
    "Burpees": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de burpees dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-burpees.gif",
+    "note": null
    },
    "Relevés de jambes": {
     "level": "exact",
@@ -1820,9 +1828,9 @@
     "note": "Pas de dips mains sur un banc/bord dans la bibliothèque (les dips aux barres parallèles sont une autre position)."
    },
    "Superman": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de superman (extension dos allongé sur le ventre) dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-superman.gif",
+    "note": null
    },
    "Ponts fessiers": {
     "level": "exact",
@@ -1845,14 +1853,14 @@
     "note": "Illustration : montée sur mollets debout à la machine. Ici : au poids du corps, lentement."
    },
    "Chaise au mur": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de chaise au mur dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-chaise-au-mur.gif",
+    "note": null
    },
    "Chaise douce": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de chaise au mur dans la bibliothèque."
+    "level": "variante",
+    "media": "/media/tabata-chaise-au-mur.gif",
+    "note": "Illustration : Chaise au mur. Ici : angle plus ouvert, moins bas."
    },
    "Battements de jambes": {
     "level": "none",
@@ -1865,9 +1873,9 @@
     "note": "Pas de crunch au sol dans la bibliothèque."
    },
    "Russian twist": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de Russian twist dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-russian-twist.gif",
+    "note": null
    },
    "Dead bug": {
     "level": "exact",
@@ -1875,14 +1883,14 @@
     "note": null
    },
    "Montées de genoux": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de montées de genoux au sol dans la bibliothèque ; l'ancienne image montrait la version en piscine."
+    "level": "exact",
+    "media": "/media/tabata-montees-de-genoux.gif",
+    "note": null
    },
    "High knees": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de montées de genoux rapides au sol dans la bibliothèque."
+    "level": "variante",
+    "media": "/media/tabata-montees-de-genoux.gif",
+    "note": "Illustration : Montées de genoux. Ici : rythme rapide."
    },
    "Corde invisible": {
     "level": "none",
@@ -1890,14 +1898,14 @@
     "note": "Pas de corde à sauter (simulée) dans la bibliothèque."
    },
    "Patineurs": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de patineurs (sauts latéraux) dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-patineurs.gif",
+    "note": null
    },
    "Squats sautés": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de squats sautés dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-squats-sautes.gif",
+    "note": null
    },
    "Repos actif": {
     "level": "rest",
@@ -1905,9 +1913,9 @@
     "note": "Récupération : visuel respiratoire."
    },
    "Marche sur place": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de marche sur place au sol dans la bibliothèque ; l'ancienne image montrait la marche aquatique."
+    "level": "variante",
+    "media": "/media/tabata-montees-de-genoux.gif",
+    "note": "Illustration : Montées de genoux. Ici : genoux bas, sans impact."
    },
    "Oiseau-chien": {
     "level": "exact",

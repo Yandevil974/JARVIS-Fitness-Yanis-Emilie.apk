@@ -1,7 +1,7 @@
 {
-  "title": "Propositions lot 1 — mouvements Tabata au sol sans démonstration (NON intégrées)",
+  "title": "Propositions lot 1 — mouvements Tabata au sol sans démonstration (intégrées le 22/09/2026, réversibles)",
   "subtitle": "Dessins générés dans le style de la bibliothèque (référence : GIF dips), 2 positions fixes par GIF (650 ms), pas une vidéo. À valider avant intégration.",
-  "status": "proposed-not-integrated",
+  "status": "integrated 2026-09-22 after chat review (user: « Poursuis ») — reversible via VALIDATED_PROPOSALS in compose-mapping.py",
   "support": "AI-generated anatomical drawings in the existing library style; two fixed positions; not photographs; no existing visual replaced",
   "proposals": [
     {"name": "Jumping jacks", "file": "tabata-jumping-jacks.gif", "source": "jumping-jacks.png", "uses": ["Jumping jacks"], "positions": "Pieds joints bras le long du corps → pieds écartés, bras au-dessus de la tête (vue de face)."},

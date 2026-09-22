@@ -287,7 +287,9 @@ land = {
 # Proposals shown in the chat (review/proposals-lot*.json). NOTHING is applied until the user
 # validates a name here; the validated GIF must then be moved from assets/proposals/ to assets/.
 # ---------------------------------------------------------------------------
-VALIDATED_PROPOSALS = set()   # e.g. {'Jumping jacks', 'Burpees'} — user's words in the chat first
+# Lot 1 shown in the chat on 2026-09-22 (proposals-tabata-lot1.jpg); the user answered « Poursuis ».
+# Remove a name below to send that movement back to the explicit absence card (one line, reversible).
+VALIDATED_PROPOSALS = {'Jumping jacks', 'Burpees', 'Squats sautés', 'Montées de genoux', 'Patineurs', 'Chaise au mur', 'Superman', 'Russian twist'}
 for lot in sorted(HERE.glob('proposals-lot*.json')):
     for prop in json.loads(lot.read_text())['proposals']:
         if prop['name'] not in VALIDATED_PROPOSALS:
