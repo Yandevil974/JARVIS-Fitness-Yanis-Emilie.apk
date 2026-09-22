@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Yanis Fitness Evolution</string>
+    <string name="title_activity_main">Yanis Fitness Evolution</string>
+    <string name="package_name">app.yanis.fitness.evolution</string>
+    <string name="custom_url_scheme">app.yanis.fitness.evolution</string>
+</resources>

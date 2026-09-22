@@ -1,0 +1,18 @@
+{
+  "appId": "app.yanis.fitness.evolution",
+  "appName": "Yanis Fitness Evolution",
+  "webDir": "release",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#faf7f2",
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": false
+    }
+  }
+}
