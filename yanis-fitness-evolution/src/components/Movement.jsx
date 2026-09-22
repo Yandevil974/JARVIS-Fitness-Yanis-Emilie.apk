@@ -143,7 +143,15 @@ export default function Movement({
               compact
             />
           </div>
-        ) : null}
+        ) : (
+          <div className="human-recovery-visual">
+            <img
+              src={assetSrc("/recovery-human.jpg")}
+              alt="Sportive en posture de récupération et respiration calme"
+              loading="lazy"
+            />
+          </div>
+        )}
         {zoomable && (
           <button
             type="button"
