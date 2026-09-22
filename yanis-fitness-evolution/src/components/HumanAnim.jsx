@@ -247,7 +247,7 @@ function HumanAnim({ spec, paused = false, reduced = false, small = false, class
   return (
     <svg
       viewBox="0 0 420 300"
-      className={`human-anim ${small ? "small" : ""} ${className}`}
+      className={`human-anim movement-svg ${small ? "small" : ""} ${className}`}
       role="img"
       aria-label={spec.label || "Animation humaine du mouvement"}
     >

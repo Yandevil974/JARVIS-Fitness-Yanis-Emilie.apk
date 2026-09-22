@@ -27,6 +27,10 @@ import { weeklyReport } from "./engine/fitness.js";
 import { forceRevalState } from "./engine/force.js";
 import { sendSystemNotification } from "./engine/notifications.js";
 import { APP_VERSION } from "./app-identity.js";
+const THEME_TOGGLE = {
+  light: { id: "dark", icon: "Moon", label: "Passer en sombre" },
+  dark: { id: "light", icon: "Sun", label: "Passer en clair" },
+};
 const NAV = [
   ["dashboard", "LayoutDashboard", "Accueil"],
   ["jarvis", "Sparkles", "JARVIS"],
@@ -93,10 +97,45 @@ export default function App() {
       "reduce-motion",
       !!p?.preferences.reducedMotion,
     );
-    document.querySelectorAll(".movement-svg").forEach((s) => {
-      if (p?.preferences.reducedMotion) s.pauseAnimations?.();
+    document.querySelectorAll(".movement-svg").forEach((el) => {
+      if (p?.preferences.reducedMotion) {
+        el.pauseAnimations?.();
+        el.setCurrentTime?.(0);
+      } else el.unpauseAnimations?.();
     });
+    document
+      .querySelectorAll("img.movement-media")
+      .forEach((el) =>
+        el.classList.toggle("paused", !!p?.preferences.reducedMotion),
+      );
   }, [p?.preferences.reducedMotion, page]);
+  useEffect(() => {
+    const theme = p?.preferences.theme === "dark" ? "dark" : "light";
+    const el = document.documentElement;
+    if (theme === "dark") {
+      el.dataset.theme = "dark";
+      delete el.dataset.rail;
+    } else {
+      delete el.dataset.theme;
+      el.dataset.rail = "dark";
+    }
+  }, [p?.preferences.theme]);
+  useEffect(() => {
+    if (!p?.id) return;
+    const el = document.documentElement;
+    el.dataset.profile = p.id;
+    const dark = p.preferences.theme === "dark";
+    const color = dark
+      ? p.id === "emilie"
+        ? "#161013"
+        : "#161310"
+      : p.id === "emilie"
+        ? "#fdf4f9"
+        : "#fdf9f4";
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", color);
+  }, [p?.id, p?.preferences.theme]);
   if (!ready)
     return (
       <div className="app-loading">
@@ -181,6 +220,22 @@ export default function App() {
                   : "Non sauvegardé"}
             </span>
             <span className="topbar-divider" />
+            <button
+              className="theme-toggle icon-button"
+              aria-label={THEME_TOGGLE[p?.preferences.theme === "dark" ? "dark" : "light"].label}
+              title={THEME_TOGGLE[p?.preferences.theme === "dark" ? "dark" : "light"].label}
+              onClick={() =>
+                updateProfile((q) => {
+                  q.preferences.theme =
+                    THEME_TOGGLE[q.preferences.theme === "dark" ? "dark" : "light"].id;
+                })
+              }
+            >
+              <Icon
+                name={THEME_TOGGLE[p?.preferences.theme === "dark" ? "dark" : "light"].icon}
+                size={18}
+              />
+            </button>
             <button
               className="notification-button icon-button"
               aria-label="Ouvrir les notifications"

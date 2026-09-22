@@ -8,6 +8,8 @@ import WearablePanel from "../components/WearablePanel.jsx";
 import {
   requestSystemNotifications,
   sendTestNotification,
+  systemNotificationsSupported,
+  systemNotificationPermission,
 } from "../engine/notifications.js";
 import { userProfile } from "../engine/validation.js";
 import {
@@ -415,8 +417,8 @@ function Equipment() {
             label="Coach vocal"
             description={
               supportsVoice
-                ? "Annonces via la voix française de votre navigateur. Aucun micro nécessaire."
-                : "Synthèse vocale non disponible dans ce navigateur."
+                ? "Annonces parlées : décisions du coach, séries validées, fin de repos."
+                : "Synthèse vocale non disponible dans cet environnement."
             }
             onChange={(v) => {
               if (!supportsVoice) {
@@ -426,23 +428,95 @@ function Equipment() {
               updateProfile((q) => {
                 q.preferences.voice = v;
               });
+              notify(v ? "Coach vocal activé." : "Coach vocal désactivé.");
+            }}
+          />
+          <Switch
+            checked={p.preferences.voice && p.preferences.sessionVoice !== false}
+            label="Guidage vocal pendant la séance"
+            description="Annonce l’exercice, la série, la charge suggérée, le tempo, le décompte de récupération et les changements d’exercice. Conçu pour ne pas avoir à regarder l’écran."
+            onChange={(v) => {
+              if (!supportsVoice) {
+                notify("La voix n’est pas disponible ici.", "info");
+                return;
+              }
+              updateProfile((q) => {
+                q.preferences.sessionVoice = v;
+                if (v) q.preferences.voice = true;
+              });
+              notify(v ? "Guidage vocal de séance activé." : "Guidage vocal de séance coupé.");
             }}
           />
           <Switch
             checked={p.preferences.notifications}
             label="Notifications système"
-            description="Uniquement avec l’application ouverte et votre autorisation. Rappels non répétés."
+            description={
+              systemNotificationsSupported()
+                ? systemNotificationPermission() === "denied"
+                  ? "Refusées au niveau du système. Réautorisez-les dans les réglages, puis réactivez ici."
+                  : "Rappels de séance et de réévaluation, avec l’application ouverte. Un test est envoyé à l’activation."
+                : "Indisponible ici : ce système n’expose pas les notifications à l’application."
+            }
             onChange={notifications}
           />
+          {p.preferences.notifications && (
+            <div className="info-line">
+              <Icon name="Bell" size={16} />
+              <p>
+                Notifications autorisées.{" "}
+                <button
+                  className="text-link"
+                  onClick={() => {
+                    notify(
+                      sendTestNotification()
+                        ? "Notification de test envoyée."
+                        : "L’envoi a échoué : vérifiez l’autorisation système.",
+                      sendTestNotification() ? "success" : "error",
+                    );
+                  }}
+                >
+                  Envoyer un test
+                </button>
+                . Les rappels ne sont pas garantis lorsque l’application est
+                fermée : cette version n’utilise pas de service permanent en
+                arrière-plan.
+              </p>
+            </div>
+          )}
+          <Field label="Apparence">
+            <Select
+              value={p.preferences.theme === "dark" ? "dark" : "light"}
+              onChange={(e) => {
+                const v = e.target.value;
+                updateProfile((q) => {
+                  q.preferences.theme = v;
+                });
+                notify(v === "dark" ? "Thème sombre activé." : "Thème clair activé.");
+              }}
+            >
+              <option value="light">Clair</option>
+              <option value="dark">Sombre</option>
+            </Select>
+          </Field>
+          <p className="field-help">
+            Se change aussi d’un geste depuis l’icône de la barre du haut.
+            Chaque profil garde sa couleur : seuls les plans de fond varient.
+          </p>
           <Switch
             checked={p.preferences.reducedMotion}
             label="Animations réduites"
-            description="Réduit les animations décoratives et met les démonstrations en pause."
-            onChange={(v) =>
+            description="Coupe les animations décoratives, met les démonstrations en pause sur leur première image et supprime les défilements animés. Utile en cas de sensibilité au mouvement ou pour économiser la batterie."
+            onChange={(v) => {
               updateProfile((q) => {
                 q.preferences.reducedMotion = v;
-              })
-            }
+              });
+              document.documentElement.classList.toggle("reduce-motion", v);
+              document.querySelectorAll(".movement-svg").forEach((el) => {
+                if (v) el.pauseAnimations?.();
+                else el.unpauseAnimations?.();
+              });
+              notify(v ? "Animations réduites : démonstrations mises en pause." : "Animations rétablies.");
+            }}
           />
         </Panel>
         <WearablePanel />
