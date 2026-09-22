@@ -283,6 +283,124 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
   await app.close();
 }
 
+// 6. Pool protocols (Émilie): aquatic illustrations + reviewed notes, never a land GIF.
+{
+  const app = await boot((s) => { s.activeProfile = "emilie"; });
+  const doc = app.doc;
+  const nav = async (n) => { await click([...doc.querySelectorAll(".sidebar button")].find((b) => text(b) === n)); await sleep(400); };
+  const main = () => doc.querySelector("main") || doc.body;
+  await nav("Cardio & piscine");
+  await click([...main().querySelectorAll("button")].find((b) => text(b) === "Piscine"));
+  await sleep(400);
+  const protos = [...main().querySelectorAll("button")].filter((b) => text(b) === "Voir le protocole");
+  check("pool: protocol buttons found", protos.length >= 3, String(protos.length));
+  const seen = new Map();
+  const notes = new Set();
+  for (const b of protos) {
+    await click(b);
+    await sleep(400);
+    const modal = doc.querySelector(".modal");
+    if (!modal) continue;
+    for (const img of modal.querySelectorAll("img")) seen.set(img.getAttribute("alt"), img.getAttribute("src"));
+    for (const n of modal.querySelectorAll(".pool-guide-note")) notes.add(text(n));
+    const close = [...modal.querySelectorAll("button")].find((x) => text(x) === "Fermer" || x.getAttribute("aria-label") === "Fermer");
+    if (close) await click(close);
+    await sleep(200);
+  }
+  console.log("   pool guides shown:", [...seen].map(([a, s]) => `${a} -> ${s}`).join(" ; "));
+  const landGifs = ["/media/48fe4a8c", "/media/7517a916", "/media/f1dde35b", "/media/b2b32833", "/media/faa82528"];
+  check("pool: no land GIF left in the protocols", [...seen.values()].every((src) => !landGifs.some((l) => src.startsWith(l))), [...seen.values()].join(","));
+  for (const [alt, src] of [["Ciseaux au bord", "/media/64f9a3c89ee9369b.jpg"], ["Talons-fesses", "/media/c99b47eef506fe79.jpg"], ["Gainage au bord (vertical)", "/media/3d29edbd3afb4da6.jpg"]])
+    if (seen.has(alt)) check(`pool: ${alt} -> ${src}`, seen.get(alt) === src, seen.get(alt));
+  check("pool: reviewed note rendered under a variant guide", [...notes].some((n) => /Illustration :/.test(n)), [...notes].join(" | ").slice(0, 160));
+  for (const src of seen.values()) check(`pool: file exists ${src}`, exists(src));
+  check("pool: no runtime errors", app.errors.length === 0, app.errors.join(" | ").slice(0, 300));
+  await app.close();
+}
+
+// 7. Stretch fiches: images kept, two explicit absences, variants annotated.
+{
+  const app = await boot();
+  const doc = app.doc;
+  const nav = async (n) => { await click([...doc.querySelectorAll(".sidebar button")].find((b) => text(b) === n)); await sleep(400); };
+  const main = () => doc.querySelector("main") || doc.body;
+  await nav("Récupération");
+  await click([...main().querySelectorAll("button")].find((b) => text(b) === "Mobilité & stretching"));
+  await sleep(400);
+  const list = [...main().querySelectorAll("img.stretch-visual, .stretch-visual img, img")].filter((i) => (i.getAttribute("src") || "").includes("/media/stretch-"));
+  check("stretch list: 27 illustrated fiches (29 minus the two honest gaps)", list.length === 27, String(list.length));
+  check("stretch list: pigeon assis uses the seated piriformis illustration", list.some((i) => i.getAttribute("alt") === "Pigeon assis" && i.getAttribute("src") === "/media/stretch-piriforme.jpg"));
+  check("stretch list: no floor-pigeon image for the seated text", !list.some((i) => i.getAttribute("alt") === "Pigeon assis" && i.getAttribute("src") === "/media/stretch-pigeon.jpg"));
+  const cards = [...main().querySelectorAll("button")].filter((b) => text(b) === "Guide animé");
+  const openByTitle = async (title) => {
+    const card = cards.find((b) => text(b.closest("article, li, section, div") || b).includes(title)) || cards.find((b) => text(b.parentElement.parentElement).includes(title));
+    if (!card) return null;
+    await click(card);
+    await sleep(400);
+    return doc.querySelector(".modal");
+  };
+  for (const [title, expect] of [
+    ["Mollet en escalier", { missing: /talon qui descend sous une marche/ }],
+    ["Adduction de la hanche debout", { missing: /croisement de jambe debout/ }],
+    ["Flexion avant jambes tendues", { variant: "/media/stretch-isc-flexion.jpg" }],
+    ["Pigeon assis", { exact: "/media/stretch-piriforme.jpg" }],
+  ]) {
+    const modal = await openByTitle(title);
+    if (!modal) { check(`stretch [${title}]: fiche opened`, false); continue; }
+    const img = modal.querySelector(".movement-visual img");
+    const note = text(modal.querySelector(".movement-media-note"));
+    const status = text(modal.querySelector(".movement-controls span"));
+    if (expect.missing) check(`stretch [${title}]: no substitute image, reviewed reason shown`, !img && expect.missing.test(note) && !modal.querySelector(".human-recovery-visual"), `img=${img && img.getAttribute("src")} note=${note.slice(0, 120)} status=${status}`);
+    if (expect.variant) check(`stretch [${title}]: same image flagged as variant with note`, img && img.getAttribute("src") === expect.variant && /détail différent/.test(status) && /Ici :/.test(note), `img=${img && img.getAttribute("src")} status=${status} note=${note.slice(0, 100)}`);
+    if (expect.exact) check(`stretch [${title}]: exact image`, img && img.getAttribute("src") === expect.exact && status === "Illustration humaine · source", `img=${img && img.getAttribute("src")} status=${status}`);
+    const close = [...modal.querySelectorAll("button")].find((x) => text(x) === "Fermer" || x.getAttribute("aria-label") === "Fermer");
+    if (close) await click(close);
+    await sleep(200);
+  }
+  check("stretch: no runtime errors", app.errors.length === 0, app.errors.join(" | ").slice(0, 300));
+  await app.close();
+}
+
+// 8. Émilie's cards: corrected legacy mismatches.
+{
+  const app = await boot((s) => { s.activeProfile = "emilie"; });
+  const doc = app.doc;
+  await click([...doc.querySelectorAll(".sidebar button")].find((b) => text(b) === "Entraînement"));
+  await sleep(300);
+  await click([...doc.querySelectorAll("button")].find((b) => text(b).startsWith("Bibliothèque")));
+  await sleep(400);
+  const search = [...doc.querySelectorAll("input")].find((i) => i.parentElement && i.parentElement.className === "search-input");
+  const setter = Object.getOwnPropertyDescriptor(app.window.HTMLInputElement.prototype, "value").set;
+  for (const [name, img, level] of [
+    ["Kickback à l'élastique", "/media/489169360e044c48.gif", "variante"],
+    ["Clamshell à l'élastique", null, "none"],
+    ["Face pull à l'élastique", null, "none"],
+    ["Bird dog", "/media/aab0de0aad0c275a.gif", "exact"],
+    ["Pont fessier au sol — activation", "/media/8eecb0152081ff26.gif", "exact"],
+    ["Kickback à la poulie", "/media/489169360e044c48.gif", "exact"],
+  ]) {
+    setter.call(search, name);
+    search.dispatchEvent(new app.window.Event("input", { bubbles: true }));
+    await sleep(400);
+    const card = [...doc.querySelectorAll("button.exercise-card-content")].find((b) => text(b.querySelector("h3")) === name);
+    if (!card) { check(`émilie [${name}]: card found`, false, [...doc.querySelectorAll("button.exercise-card-content h3")].slice(0, 6).map(text).join(" | ")); continue; }
+    await click(card);
+    await sleep(400);
+    const modal = doc.querySelector(".modal");
+    const media = modal && modal.querySelector(".movement-visual img");
+    const note = text(modal && modal.querySelector(".movement-media-note"));
+    const shown = media ? media.getAttribute("src") : null;
+    if (level === "exact") check(`émilie [${name}]: shows ${img}`, shown === img, `shown=${shown}`);
+    if (level === "variante") check(`émilie [${name}]: variant ${img} annotated`, (img ? shown === img : !!shown) && /Illustration :/.test(note), `shown=${shown} note=${note.slice(0, 120)}`);
+    if (level === "none") check(`émilie [${name}]: explicit absence, no substitute`, !shown && /Pas de démonstration correspondante/.test(note), `shown=${shown} note=${note.slice(0, 120)}`);
+    const close = modal && [...modal.querySelectorAll("button")].find((b) => text(b) === "Fermer" || b.getAttribute("aria-label") === "Fermer");
+    if (close) await click(close);
+    await sleep(200);
+  }
+  check("émilie: no runtime errors", app.errors.length === 0, app.errors.join(" | ").slice(0, 300));
+  await app.close();
+}
+
 const failed = results.filter((r) => !r.ok);
 console.log(`\n${results.length - failed.length}/${results.length} checks passed`);
 fs.mkdirSync(path.join(root, ".cache"), { recursive: true });
