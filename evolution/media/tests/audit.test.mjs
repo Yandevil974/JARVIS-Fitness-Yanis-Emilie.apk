@@ -13,7 +13,7 @@ test('audit is pinned to the actually delivered APK, and is not a new release',(
  assert.equal(inventory.baseline.apkSha256,baseline.apkSha256);
  assert.equal(assets.baselineSha256,baseline.apkSha256);
  assert.equal(findings.releaseReady,false);
- assert.equal(findings.status,'open');
+ assert.equal(findings.status,'corrections-in-progress');
 });
 test('complete runtime catalog is captured without private profile state',()=>{
  assert.equal(inventory.exercises.length,209);
@@ -67,6 +67,6 @@ test('findings reference real catalog entries and cover every requested category
   for (const id of f.exercises||[])assert.ok(ids.has(id),`${f.id}: ${id}`);
   for (const name of f.guides||[])assert.ok(guides.has(name),`${f.id}: ${name}`);
   if(f.path) assert.ok(assetMap.has(f.path),f.id);
-  assert.equal(f.status,'open');
+  assert.ok(['open','corrigé'].includes(f.status),f.id);
  }
 });

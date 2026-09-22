@@ -122,7 +122,7 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
   for (const [index, expect] of [
     [1, { img: "/media/1317e405efd6ef2b.gif" }],
     [2, { breathing: true }],
-    [3, { missing: true }],
+    [3, { img: "/media/tabata-jumping-jacks.gif" }],
     [4, { missing: true }],
     [5, { missing: true }],
     [6, { breathing: true }],

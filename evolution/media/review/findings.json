@@ -228,7 +228,8 @@
    "scope": "tabata",
    "observed": "34 des 38 noms au sol ne résolvent aucun média d'exercice via s5; gi montre alors la photo générique recovery-human.jpg. Cela ne constitue pas une démonstration correspondante.",
    "action": "Compléter les 38 mouvements, avec libellés G/D et versions douces respectés; contrôler les six mouvements du générateur aqua.",
-   "status": "open"
+   "status": "open",
+   "resolution": "Partiel : jumping jacks (exact) et superman (variante annotée) animés dans la 1.5.0; les autres noms restent en absence explicite honnête."
   },
   {
    "id": "stretch-pigeon",
@@ -290,13 +291,18 @@
   },
   {
    "id": "bench-dips-animation",
-   "scope": "tabata-sol",
-   "exercises": [
-    "Dips au bord (Tabata sol)"
-   ],
-   "observed": "Aucune bibliothèque pour les dips mains sur banc ; frame 2 de la première animation générée montrait une assise sur le banc, refusée.",
-   "action": "Regénérer la frame basse (buste descendu devant le banc, coudes à 90°) au tour suivant, puis associer 'Dips au bord' à cette animation.",
+   "scope": "tabata",
+   "exercises": [],
+   "observed": "Étape Tabata sol « Dips au bord » : aucune démonstration (pas de dips mains sur banc dans la bibliothèque). Frame 2 de la première animation générée montrait une assise sur le banc, refusée deux fois.",
+   "action": "Regénérer la frame basse (buste descendu DEVANT le banc, coudes à 90°, hanches en l'air) au prochain tour, puis associer l'étape à cette animation.",
    "status": "open"
   }
- ]
+ ],
+ "note": "1.5.0 signée et livrée le 22/09 avec la première vague de corrections; les groupes 'corrigé' sont dans l'APK; les 'open' restent à traiter (absences explicites honnêtes en attendant).",
+ "releaseDelivered": {
+  "apk": "downloads/Yanis-Fitness-Evolution-1.5.0.apk",
+  "sha256": "8db21bd9ed8410b77fc913f708da273864626c2110c1905daa75f7dfa3d8bd9d",
+  "versionCode": 12,
+  "certificateSha256": "f6fd7ffcb736b482300a9c9afe4d97acb571643c232b203ad02ecf31440675c8"
+ }
 }

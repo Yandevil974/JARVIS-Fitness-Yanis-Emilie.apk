@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
 """Repack the complete signed 1.4.0 as 1.5.0 with the reviewed exercise visuals.
-Same package, same key (certificate 7d6f9c8f…21fd), versionCode 11 -> 12: an in-place update,
-never a new application. All nine DEX, resources.arsc and capacitor.config.json stay byte-identical.
-Only AndroidManifest.xml (version) and the web bundle change; one media file is added.
+Same package app.yanis.fitness.evolution.home, versionCode 11 -> 12. All nine DEX,
+resources.arsc and capacitor.config.json stay byte-identical. Only AndroidManifest.xml
+(version) and the web bundle change; seven media files are added.
 
-Without the private signing backup (.private/…) the script stops after alignment and writes an
-UNSIGNED candidate under .cache/ only (--unsigned-candidate). It never writes an unsigned APK to
-downloads/, never generates a key and never asks for a secret.
+SIGNING: the user lost the 1.4.0 private backup and explicitly authorized a REPLACEMENT
+key for the same package (evolution/android/replacement-authorization.json, 22/09/2026).
+The 1.5.0 is signed with that new identity (certificate f6fd7ffc…75c8, identity-replace.json);
+installing it therefore REQUIRES uninstalling the 1.4.0 first (data by JSON export/import).
+Signature = APK Signature Scheme v2+v3 via apk_sign_ts (npm), independently verified by
+evolution/android/verify-v2v3.py (self-tested against the official apksigner-signed 1.4.0).
+
+Without the private backup (.private/yanis-fitness-evolution-replace/) the script stops
+after alignment and writes an UNSIGNED candidate under .cache/ only (--unsigned-candidate).
+It never writes an unsigned APK to downloads/, never generates a key, never prints secrets.
 """
-import argparse, base64, hashlib, importlib.util, io, json, pathlib, shutil, subprocess, sys, tempfile, zipfile
+import argparse, base64, hashlib, importlib.util, io, json, os, pathlib, shutil, subprocess, sys, tempfile, zipfile
 ROOT=pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'complete-hotfix'))
 from apk_binary import patch_manifest, chunks, u16, pool_strings
@@ -18,9 +25,11 @@ def module(name, file):
 alignment=module('alignment_media',ROOT/'JARVIS-Fitness-Source/scripts/rebuild-apk.py')
 RELEASE_FILE=ROOT/'evolution/android/release-media.json'
 RELEASE=json.loads(RELEASE_FILE.read_text())
-IDENTITY_FILE=ROOT/'evolution/android/identity-home.json'
-JAVA=ROOT/'.cache/signing-tools/jdk4py/java-runtime/bin/java'
-SIGNER=ROOT/'.cache/home-tools/apksigner.jar'
+IDENTITY_FILE=ROOT/'evolution/android/identity-replace.json'
+PRIVATE=ROOT/'.private/yanis-fitness-evolution-replace'
+SIGN_LIB=ROOT/'.cache/sign-tools/pkg/package'
+SIGN_SCRIPT=ROOT/'.cache/sign-tools/sign-v2v3.mjs'
+VERIFIER=ROOT/'evolution/android/verify-v2v3.py'
 BUNDLE='assets/public/assets/index-CBCies4k.js'
 ALLOWED=['AndroidManifest.xml',BUNDLE]
 NEW_ENTRIES=RELEASE['newWebEntries']
@@ -28,12 +37,7 @@ def sha(data):return hashlib.sha256(data).hexdigest()
 def run(*args):subprocess.run(list(map(str,args)),cwd=ROOT,check=True)
 
 def signing_available():
- try:
-  signing=module('signing_media',ROOT/'evolution/android/signing-home.py')
- except Exception:
-  return None
- needed=[signing.PRIVATE/'recovery-key.txt',signing.PRIVATE/signing.ARCHIVE,signing.ENCRYPTED,JAVA,SIGNER]
- return signing if all(p.exists() for p in needed) else None
+ return module('signing_replace',ROOT/'evolution/android/signing-replace.py') if (PRIVATE/'jarvis-evolution.p12').exists() and (PRIVATE/'password.txt').exists() else None
 
 def build_web():
  """Compile the reviewed media correction on the exact 1.4.0 bundle and pin it."""
@@ -93,7 +97,8 @@ def main():
  base=ROOT/RELEASE['baseApk'];identity=json.loads(IDENTITY_FILE.read_text())
  assert sha(base.read_bytes())==RELEASE['baseApkSha256'],'Base is not the published 1.4.0'
  for name in ['appId','appName']:assert identity[name]==RELEASE[name]
- assert identity['version']==RELEASE['previousVersion'] and identity['versionCode']==RELEASE['previousVersionCode']
+ assert identity['version']==RELEASE['version'] and identity['versionCode']==RELEASE['versionCode']
+ assert identity['previousCertificateSha256']==RELEASE['previousCertificateSha256'],'identity must chain to the 1.4.0 certificate'
  assert RELEASE['versionCode']>RELEASE['previousVersionCode']
  with zipfile.ZipFile(base) as z:assert sha(z.read(BUNDLE))==RELEASE['baseBundleSha256']
  web=build_web()
@@ -113,24 +118,29 @@ def main():
   target.with_suffix('.fidelity.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
   print('UNSIGNED CANDIDATE:',target);print('SHA256:',report['apkSha256']);print(report['status'])
   return
- # Sign with the SAME key as 1.4.0, restored from the encrypted backup (never a new key).
- assert sha(SIGNER.read_bytes())==RELEASE['apksignerSha256']
- envelope=json.loads(signing.ENCRYPTED.read_text());assert envelope['identity']==identity
- key=base64.b64decode((signing.PRIVATE/'recovery-key.txt').read_bytes().strip(),validate=True)
- data=signing.unseal(envelope,key);assert data==(signing.PRIVATE/signing.ARCHIVE).read_bytes()
- with tempfile.TemporaryDirectory(prefix='restored-for-signing-',dir=signing.PRIVATE) as temp:
+ # Sign with the REPLACEMENT key (explicitly authorized), restored from the private
+ # directory; key/cert are extracted into a private temp dir and never printed or committed.
+ key,cert,_=__import__('cryptography.hazmat.primitives.serialization',fromlist=['pkcs12']).pkcs12.load_key_and_certificates((PRIVATE/'jarvis-evolution.p12').read_bytes(),(PRIVATE/'password.txt').read_bytes().strip())
+ from cryptography.hazmat.primitives.serialization import Encoding,PrivateFormat,NoEncryption
+ from cryptography.hazmat.primitives import hashes as _hashes
+ assert cert.fingerprint(_hashes.SHA256()).hex()==identity['certificateSha256'],'p12 certificate != identity'
+ with tempfile.TemporaryDirectory(prefix='signing-secret-',dir=PRIVATE) as temp:
   secret=pathlib.Path(temp)
-  with zipfile.ZipFile(io.BytesIO(data)) as backup:
-   for name in signing.NAMES:signing.private_write(secret/name,backup.read(name))
-  run(JAVA,'-jar',SIGNER,'sign','--ks',secret/'jarvis-evolution.p12','--ks-pass','file:'+str(secret/'password.txt'),'--ks-key-alias','jarvis-evolution',
-      '--v1-signing-enabled','false','--v2-signing-enabled','true','--v3-signing-enabled','true','--v4-signing-enabled','false','--out',candidate,aligned)
- verification=subprocess.check_output([str(JAVA),'-jar',str(SIGNER),'verify','--verbose','--print-certs',str(candidate)],text=True)
- for item in ['Signer #1 certificate SHA-256 digest: '+identity['certificateSha256'],'Number of signers: 1','Verified using v2 scheme (APK Signature Scheme v2): true','Verified using v3 scheme (APK Signature Scheme v3): true']:assert item in verification
+  (secret/'key.pem').write_bytes(key.private_bytes(Encoding.PEM,PrivateFormat.PKCS8,NoEncryption()))
+  (secret/'cert.pem').write_bytes(cert.public_bytes(Encoding.PEM))
+  env=dict(os.environ);env['NODE_PATH']=str(SIGN_LIB.parent.parent.parent/'node_modules')
+  verification=subprocess.check_output(['node',str(SIGN_SCRIPT),str(aligned),str(secret/'key.pem'),str(secret/'cert.pem'),str(candidate)],env=env,text=True)
+ subprocess.run([sys.executable,str(VERIFIER),str(candidate),'--expect-cert-sha256',identity['certificateSha256'],'--json',str(work/'signature-verify.json')],check=True)
+ vreport=json.loads((work/'signature-verify.json').read_text())
+ assert vreport['schemes']['2']=='verified' and vreport['schemes']['3']=='verified'
  alignment.verify_alignment(candidate);verify(base,candidate,web)
- report.update(signed=True,apkSha256=sha(candidate.read_bytes()),apkBytes=candidate.stat().st_size,signatureVerified=['v2','v3'],signedFromRestoredEncryptedBackup=True,
-  sameCertificateAs140=True,signerSha256=sha(SIGNER.read_bytes()))
+ report.update(signed=True,apkSha256=sha(candidate.read_bytes()),apkBytes=candidate.stat().st_size,signatureVerified=['v2','v3'],
+  certificateSha256=identity['certificateSha256'],previousCertificateSha256=identity['previousCertificateSha256'],
+  signedWithReplacementKey=True,requiresUninstallOfPrevious=True,
+  signerLib=RELEASE['signerNpm'],signerTarballSha256=RELEASE['signerTarballSha256'],
+  independentVerifier='evolution/android/verify-v2v3.py (self-tested against the official 1.4.0)')
  output.parent.mkdir(parents=True,exist_ok=True);temp=output.with_suffix('.apk.tmp');shutil.copyfile(candidate,temp);temp.replace(output)
  output.with_suffix('.fidelity.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  output.with_suffix('.apk.sha256').write_text(report['apkSha256']+'  '+output.name+'\n')
- print(verification);print('SIGNED APK:',output);print('SHA256:',report['apkSha256'])
+ print('SIGNED APK:',output);print('SHA256:',report['apkSha256']);print('Certificate:',identity['certificateSha256'])
 if __name__=='__main__':main()

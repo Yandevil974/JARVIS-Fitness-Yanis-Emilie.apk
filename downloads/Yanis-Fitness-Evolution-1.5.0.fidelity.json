@@ -1,0 +1,64 @@
+{
+  "identity": {
+    "appId": "app.yanis.fitness.evolution.home",
+    "appName": "Yanis Fitness Evolution",
+    "version": "1.5.0",
+    "versionCode": 12,
+    "certificateSha256": "f6fd7ffcb736b482300a9c9afe4d97acb571643c232b203ad02ecf31440675c8",
+    "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+    "installation": "same package as 1.4.0; new certificate — uninstall 1.4.0 first, then install; data by JSON export/import",
+    "userAuthorizedReplacementKey": true,
+    "authorizationDate": "2026-09-22"
+  },
+  "appId": "app.yanis.fitness.evolution.home",
+  "version": "1.5.0",
+  "versionCode": 12,
+  "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "packagedWebSha256": "3644514bf28f5a4db23104b17b97ec341dff7771e1bc20ffe22af97f82572920",
+  "packagedWebDifference": "reviewed media mapping + V 1.4.0 -> V 1.5.0",
+  "changedEntries": [
+    "AndroidManifest.xml",
+    "assets/public/assets/index-CBCies4k.js"
+  ],
+  "addedEntries": {
+    "assets/public/media/dips-triceps-corrige.gif": "6ec7c12e00fc0e2bd165e7a8d9e6639cebd3d2ed632415720040f7f357a196f8",
+    "assets/public/media/oiseau-chien.gif": "a3f7feecf72dcb4db33666a00467f1905bcf8f2bfe39448e7cbaf3e0d6f3c8d5",
+    "assets/public/media/superman.gif": "224b9a7097e5258576862805fda49fbe9840bd1855584b33be71536f91293de6",
+    "assets/public/media/tabata-jumping-jacks.gif": "cc12060959a142408306cf7070a3c362cc9aa19eb3fb6e70b06dbdf7e85a7de9",
+    "assets/public/media/triceps-extensions-halteres-banc.gif": "7aac59c0f44ad2c7289724e330ed1799ac275c8bc1c306a014c21f9e60a3fbda",
+    "assets/public/media/warmup-cardio-anim.gif": "59accadae370bd9f4094d4470e3da985a812826210afe8dc197d2b6e27e2ca62",
+    "assets/public/media/warmup-mobilite-anim.gif": "1438d5cd68c226146f769e0fddd4030adbb0b06157eca6899a7c53c2bd79fd05"
+  },
+  "webFiles": 279,
+  "unchangedWebFiles": 271,
+  "nativeDexFiles": 9,
+  "byteIdenticalDexFiles": 9,
+  "alignmentVerified": true,
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "approvedHomeIncluded": true,
+  "mediaCorrectionsIncluded": true,
+  "generalConversationalAiIncluded": false,
+  "deviceTested": false,
+  "signed": true,
+  "apkSha256": "8db21bd9ed8410b77fc913f708da273864626c2110c1905daa75f7dfa3d8bd9d",
+  "apkBytes": 26008963,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "certificateSha256": "f6fd7ffcb736b482300a9c9afe4d97acb571643c232b203ad02ecf31440675c8",
+  "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+  "signedWithReplacementKey": true,
+  "requiresUninstallOfPrevious": true,
+  "signerLib": "apk_sign_ts@1.0.1",
+  "signerTarballSha256": "714f582a5917850de1571ccf1b4ade53d4eaf7574a8968a7eb0654a23c984cad",
+  "independentVerifier": "evolution/android/verify-v2v3.py (self-tested against the official 1.4.0)"
+}

@@ -68,7 +68,9 @@ test('normalised guide keys restore the 20 lost legacy images', () => {
 test('runtime map: land Tabata names, aqua guides, stretches and warm-up are explicit', () => {
   const map = runtimeMap();
   for (const { name } of inventory.tabataLand) assert.ok(map.land[ge(name)], 'land: ' + name);
-  for (const key of ['jumping jacks', 'burpees', 'dips au bord']) assert.equal(map.land[key].media, null);
+  assert.equal(map.land['jumping jacks'].media, '/media/tabata-jumping-jacks.gif');
+  for (const key of ['burpees', 'dips au bord']) assert.equal(map.land[key].media, null);
+  assert.equal(map.land['superman'].media, '/media/superman.gif');
   assert.equal(map.land['gainage planche'].media, '/media/1317e405efd6ef2b.gif');
   assert.equal(map.land['battements de jambes'].media, null); // never the pool GIF on land
   assert.equal(map.land['montees de genoux'].media, null);

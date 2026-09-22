@@ -1,0 +1,11 @@
+{
+  "appId": "app.yanis.fitness.evolution.home",
+  "appName": "Yanis Fitness Evolution",
+  "version": "1.5.0",
+  "versionCode": 12,
+  "certificateSha256": "f6fd7ffcb736b482300a9c9afe4d97acb571643c232b203ad02ecf31440675c8",
+  "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+  "installation": "same package as 1.4.0; new certificate — uninstall 1.4.0 first, then install; data by JSON export/import",
+  "userAuthorizedReplacementKey": true,
+  "authorizationDate": "2026-09-22"
+}

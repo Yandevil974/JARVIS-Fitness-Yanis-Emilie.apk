@@ -8,11 +8,19 @@
   "baseApk": "downloads/Yanis-Fitness-Evolution-1.4.0.apk",
   "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
   "baseBundleSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
-  "validatedMediaBundleSha256": "b75cd8fa5e4343f1cc250f050d6d84118ce80d73520486fbde8748b4a13c7ecd",
+  "validatedMediaBundleSha256": "5d2f3f77fe89e4bdaec456fe93432be89dc29984a876f722fb958d5c3ea7d908",
   "newWebEntries": {
-    "assets/public/media/dips-triceps-corrige.gif": "6ec7c12e00fc0e2bd165e7a8d9e6639cebd3d2ed632415720040f7f357a196f8"
+    "assets/public/media/dips-triceps-corrige.gif": "6ec7c12e00fc0e2bd165e7a8d9e6639cebd3d2ed632415720040f7f357a196f8",
+    "assets/public/media/oiseau-chien.gif": "a3f7feecf72dcb4db33666a00467f1905bcf8f2bfe39448e7cbaf3e0d6f3c8d5",
+    "assets/public/media/superman.gif": "224b9a7097e5258576862805fda49fbe9840bd1855584b33be71536f91293de6",
+    "assets/public/media/tabata-jumping-jacks.gif": "cc12060959a142408306cf7070a3c362cc9aa19eb3fb6e70b06dbdf7e85a7de9",
+    "assets/public/media/triceps-extensions-halteres-banc.gif": "7aac59c0f44ad2c7289724e330ed1799ac275c8bc1c306a014c21f9e60a3fbda",
+    "assets/public/media/warmup-cardio-anim.gif": "59accadae370bd9f4094d4470e3da985a812826210afe8dc197d2b6e27e2ca62",
+    "assets/public/media/warmup-mobilite-anim.gif": "1438d5cd68c226146f769e0fddd4030adbb0b06157eca6899a7c53c2bd79fd05"
   },
-  "apksignerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
+  "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+  "signerNpm": "apk_sign_ts@1.0.1",
+  "signerTarballSha256": "714f582a5917850de1571ccf1b4ade53d4eaf7574a8968a7eb0654a23c984cad",
   "output": "downloads/Yanis-Fitness-Evolution-1.5.0.apk",
   "stagesIncluded": [
     1,
@@ -26,5 +34,5 @@
   "approvedHomeIncluded": true,
   "mediaCorrectionsIncluded": true,
   "generalConversationalAiIncluded": false,
-  "installation": "Update in place over 1.4.0: same package, same signing key (certificate 7d6f9c8f…21fd), data kept; no new identity"
+  "installation": "SAME package as 1.4.0 but NEW certificate (replacement key, user-authorized 2026-09-22): Android refuses an in-place update — uninstall 1.4.0 first, then install 1.5.0; transfer data by JSON export/import of both profiles."
 }

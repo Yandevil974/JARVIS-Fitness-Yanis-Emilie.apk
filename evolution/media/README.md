@@ -1,4 +1,4 @@
-# Audit des démonstrations — corrections en cours, pas un nouvel APK
+# Démonstrations — audit, corrections et 1.5.0 livrée
 
 **22 septembre 2026 — première vague d'animations intégrées.** Demande de l'utilisateur : « Pour les visuels cela doit correspondre a un humain animé comme pour les autres ». Les nouveaux visuels sont donc des **humains animés** (GIF deux positions, même style que la bibliothèque), pas des images fixes.
 
@@ -9,6 +9,14 @@
 - **Constats fermés** (voir `review/findings.json`) : `dips-orientation`, `triceps-bench-to-cable`, `bird-dog-to-side-plank`, `warmup-shared-upper-body`. Les autres groupes restent **ouverts** jusqu'à la revue image par image.
 - Planches de contrôle : `review/rev-animations-integrees.jpg` (intégrées), `review/rev-dips-banc-a-revoir.jpg` (proposition refusée, voir plus bas).
 - **10 tests unitaires + 118 contrôles navigateur (happy-dom) passent** après intégration, y compris les nouveaux rapprochements.
+
+## Livré : APK 1.5.0 signé (22 septembre 2026)
+
+- **`downloads/Yanis-Fitness-Evolution-1.5.0.apk`** (26 008 963 octets, SHA-256 `8db21bd9…d9d`) : même package, **nouvelle clé de remplacement** autorisée par l'utilisateur (ZIP 1.4 perdu), versionCode 12, **désinstallation de la 1.4.0 requise** (notice `downloads/INSTALLATION-1.5.0.md`).
+- Sept médias ajoutés ; seuls AndroidManifest.xml (version) et le bundle web changent ; **9 DEX identiques octet pour octet** ; alignement et signature v2+v3 vérifiés.
+- Signature : `apk_sign_ts@1.0.1` (npm, inspecté) — **vérifiée indépendamment** par `evolution/android/verify-v2v3.py`, implémentation propre de la spec, auto-testée sur la 1.4.0 et la 1.3.0 officielles (apksigner) avant usage.
+- **119/119 contrôles DOM** rejoués sur le web extrait de l'APK signé final ; 10 tests unitaires passent.
+- Dernière vague intégrée : jumping jacks (exact), superman (variante annotée). Refusées après revue visuelle : crunch (frames identiques), dips sur banc (corps derrière le banc, 2 fois) — absences explicites conservées.
 
 ## En attente (quota d'images du tour atteint)
 

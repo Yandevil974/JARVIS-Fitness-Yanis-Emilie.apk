@@ -41,6 +41,8 @@ const EXTRA_SHOWS = {
   "/media/dips-triceps-corrige.gif": "Triceps dips",
   "/media/triceps-extensions-halteres-banc.gif": "Extension triceps haltères sur banc",
   "/media/oiseau-chien.gif": "Oiseau-chien",
+  "/media/tabata-jumping-jacks.gif": "Jumping jacks",
+  "/media/superman.gif": "Superman",
   "/media/warmup-mobilite-anim.gif": "Cercles d'épaules",
   "/media/warmup-cardio-anim.gif": "Vélo / marche facile",
   "/media/warmup-mobilite.jpg": "Cercles d'épaules",

@@ -1,5 +1,25 @@
 # 🚩 Passation — Yanis Fitness Evolution
 
+**Mise à jour : 22 septembre 2026 (soir). 1.5.0 signée et livrée.**
+
+## État — APK 1.5.0 livré avec la première vague de corrections visuelles
+
+- **`downloads/Yanis-Fitness-Evolution-1.5.0.apk`** (26 008 963 octets) — SHA-256 **`8db21bd9ed8410b77fc913f708da273864626c2110c1905daa75f7dfa3d8bd9d`** — versionCode 12, package `app.yanis.fitness.evolution.home`. Notice : `downloads/INSTALLATION-1.5.0.md`.
+- **Nouvelle identité de remplacement, autorisée par l'utilisateur ce 22/09** (mots exacts dans `evolution/android/replacement-authorization.json` : « non je ne l'ai pas tu peux recréer une autre clé, signature… » + « poursuis ») : certificat **`f6fd7ffcb736b482300a9c9afe4d97acb571643c232b203ad02ecf31440675c8`**. Fichiers publics : `evolution/android/identity-replace.json`, `evolution/android/signing-replace.py`, sauvegarde **chiffrée** `evolution/signing/evolution-replace.encrypted.json`. Privé : `.private/yanis-fitness-evolution-replace/` (hors Git) ; ZIP privé `Yanis-Fitness-Evolution-1.5-SAUVEGARDE-PRIVEE.zip` remis au visualiseur — **conservation externe non confirmée, redemander**.
+- **Conséquence assumée** : certificat différent ⇒ la 1.5.0 ne s'installe PAS par-dessus la 1.4.0 ; **désinstaller la 1.4.0 puis installer la 1.5.0**, données par export/import JSON (notice fournie). Aucune application supplémentaire : même package.
+- **Contenu** : les sept étapes, l'accueil approuvé, l'IA en pause ; corrections visuels = GIF dips/triceps, extension triceps haltères/banc, oiseau-chien, cercles d'épaules animés, vélo animé, jumping jacks, superman (variante annotée) ; table tractions/step-up/hip thrust restaurée ; piscine/Tabata séparés par contexte ; absences explicites (crunch, burpees, dips sur banc… en attente d'animations validées).
+- **Chaîne de signature reconstruite** (l'ancien environnement était perdu) : Java non requis — `apk_sign_ts@1.0.1` (npm, code inspecté) signe v2+v3 ; **vérificateur indépendant** `evolution/android/verify-v2v3.py` écrit depuis la spec Android et **auto-testé sur les 1.4.0 et 1.3.0 officielles** avant usage. Builder : `evolution/android/build-media.py` ; rapport : `downloads/Yanis-Fitness-Evolution-1.5.0.fidelity.json` (9 DEX identiques, seuls manifeste+bundle changent, 279 fichiers web).
+- **Tests** : 10 unitaires + **119/119 contrôles DOM** sur le web extrait de l'APK signé final. Manifeste vérifié (1.5.0/12), intégrité ZIP OK.
+
+## Reste à faire
+
+1. Vagues d'animations suivantes (même style, priorité à confirmer) : **crunch** (frame 2 à refaire : épaules décollées), **dips sur banc** (frame 2 à refaire : buste DEVANT le banc — 2 refus), puis russian twist, chaise au mur, burpees, montées de genoux, battements de jambes, squats sumo, patineurs, corde invisible, pompes au mur, fentes sans charge… et boucle de respiration animée pour les récupérations.
+2. Finir la revue image par image des GIF 12/24 images restants ; fermer ou corriger les constats `open` de `evolution/media/review/findings.json`.
+3. **Redemander à l'utilisateur de conserver le ZIP privé 1.5 en deux exemplaires.**
+4. IA générale : toujours en pause, en dernier.
+5. Futures mises à jour : même package + clé `identity-replace.json` — **ne jamais régénérer la clé**.
+
+
 **Mise à jour : 22 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité.
 
 ## État au 22 septembre — première vague d'animations « humain animé » intégrée

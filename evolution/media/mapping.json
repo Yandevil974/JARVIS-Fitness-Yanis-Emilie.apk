@@ -11,7 +11,9 @@
   "/media/triceps-extensions-halteres-banc.gif",
   "/media/oiseau-chien.gif",
   "/media/warmup-mobilite-anim.gif",
-  "/media/warmup-cardio-anim.gif"
+  "/media/warmup-cardio-anim.gif",
+  "/media/tabata-jumping-jacks.gif",
+  "/media/superman.gif"
  ],
  "levels": {
   "exact": "même mouvement, même matériel, même position",
@@ -1728,9 +1730,9 @@
  "movements": {
   "land": {
    "Jumping jacks": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de jumping jacks dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-jumping-jacks.gif",
+    "note": null
    },
    "Squats": {
     "level": "variante",
@@ -1818,9 +1820,9 @@
     "note": "Pas de dips mains sur un banc/bord dans la bibliothèque (les dips aux barres parallèles sont une autre position)."
    },
    "Superman": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de superman (extension dos allongé sur le ventre) dans la bibliothèque."
+    "level": "variante",
+    "media": "/media/superman.gif",
+    "note": "Illustration : extension du buste et des bras au sol (variante douce). Ici : monter simultanément bras et jambes."
    },
    "Ponts fessiers": {
     "level": "exact",

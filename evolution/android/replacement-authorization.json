@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-22",
+  "context": "L'utilisateur a perdu le ZIP de sauvegarde privée (Yanis-Fitness-Evolution-1.4-SAUVEGARDE-PRIVEE.zip) et le dossier .private de l'ancien environnement. Sans lui, aucune mise à jour de app.yanis.fitness.evolution.home n'est possible avec le certificat d'origine (7d6f9c8f…21fd).",
+  "exactUserMessage": "non je ne l'ai pas tu peux recréer une autre clé, signature, ce que tu as fais corrige les défauts qu'il y avaient?",
+  "selectedOption": "Oui, nouvelle clé et nouvelle signature",
+  "subsequentUserMessage": "poursuis",
+  "scope": "UNE SEULE identité de remplacement pour le MÊME package app.yanis.fitness.evolution.home. Ne pas régénérer à chaque session. Conséquence expliquée : le certificat change, donc la 1.4.0 installée doit être DÉSINSTALLÉE puis la 1.5.0 installée, avec transfert des données par export/import JSON des deux profils.",
+  "oneTime": true
+}
