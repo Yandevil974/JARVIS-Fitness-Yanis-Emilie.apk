@@ -39,7 +39,7 @@ def media_paths():
 
 PACKAGED = media_paths()
 HERE = pathlib.Path(__file__).resolve().parent
-NEW_ASSETS = {'/media/dips-triceps-corrige.gif'}
+NEW_ASSETS = {'/media/' + f.name for f in (pathlib.Path(__file__).resolve().parent.parent / 'assets').iterdir() if f.suffix in ('.gif', '.jpg', '.png')}
 
 
 def M(prefix):
@@ -289,7 +289,8 @@ land = {
 # ---------------------------------------------------------------------------
 # Lot 1 shown in the chat on 2026-09-22 (proposals-tabata-lot1.jpg); the user answered « Poursuis ».
 # Remove a name below to send that movement back to the explicit absence card (one line, reversible).
-VALIDATED_PROPOSALS = {'Jumping jacks', 'Burpees', 'Squats sautés', 'Montées de genoux', 'Patineurs', 'Chaise au mur', 'Superman', 'Russian twist'}
+VALIDATED_PROPOSALS = {'Jumping jacks', 'Burpees', 'Squats sautés', 'Montées de genoux', 'Patineurs', 'Chaise au mur', 'Superman', 'Russian twist',  # lot 1
+                       'Dips au bord', 'Squats sumo', 'Battements de jambes', 'Crunch', 'Corde invisible', 'Activation scapulaire'}  # lot 2/3 (22/09, « Poursuis »)
 for lot in sorted(HERE.glob('proposals-lot*.json')):
     for prop in json.loads(lot.read_text())['proposals']:
         if prop['name'] not in VALIDATED_PROPOSALS:
@@ -298,6 +299,8 @@ for lot in sorted(HERE.glob('proposals-lot*.json')):
         if not (HERE.parent / 'assets' / prop['file']).exists():
             raise SystemExit(f"validated proposal {prop['name']}: move assets/proposals/{prop['file']} to assets/ first")
         NEW_ASSETS.add(media)
+        if prop.get('table', 'land') != 'land':
+            continue  # warm-up / stretch tables carry their own reviewed entries below
         for use in prop['uses']:
             m = re.match(r"^(.*?)\s*\(variante\s*:\s*(.*)\)$", use)
             if m:
@@ -310,8 +313,8 @@ for lot in sorted(HERE.glob('proposals-lot*.json')):
 # ---------------------------------------------------------------------------
 stretches = {
     'stretch-fes-0': E('/media/stretch-piriforme.jpg', "« Pigeon assis » : assis, cheville sur le genou opposé, buste penché (l'ancienne image montrait le pigeon au sol)."),
-    'stretch-moy-0': N("Pas d'illustration du croisement de jambe debout avec inclinaison latérale (l'ancienne image montrait une fente latérale)."),
-    'stretch-mol-1': N("Pas d'illustration du talon qui descend sous une marche (l'ancienne image montrait l'étirement au mur)."),
+    'stretch-moy-0': E('/media/stretch-adduction-croisee.jpg', "Jambe croisée derrière l'autre, buste incliné du côté opposé (dessin lot 3 ; l'ancienne image montrait une fente latérale)."),
+    'stretch-mol-1': E('/media/stretch-mollet-escalier.jpg', "Avant-pied sur le bord de la marche, talon dans le vide, laissez-le descendre (dessin lot 3 ; l'ancienne image montrait l'étirement au mur)."),
     'stretch-isc-0': V('/media/stretch-isc-flexion.jpg', "Illustration : flexion avant debout. Ici : assis, jambes tendues, dos long."),
     'stretch-bic-0': V('/media/stretch-biceps.jpg', "Illustration : bras tendu derrière, paume contre le mur. Ici : main tirée doucement vers le bas par l'autre main."),
     'stretch-avb-0': V('/media/stretch-avb-flechisseurs.jpg', "Illustration : paumes au sol, doigts vers les genoux. Ici : bras tendu devant, doigts tirés vers le bas."),
@@ -327,9 +330,9 @@ stretches = {
 warmup = {
     'Mise en route': E('/media/warmup-cardio.jpg', "Marche ou vélo très facile."),
     'Mobilité des épaules': E('/media/warmup-mobilite.jpg'),
-    'Mobilité hanches & chevilles': N("Pas d'illustration de mobilité hanches/chevilles au sol (l'ancienne image montrait des cercles de bras)."),
+    'Mobilité hanches & chevilles': E('/media/warmup-mobilite-hanches-chevilles.gif', "Cercles de hanche genou levé, puis cercles de cheville (dessin lot 2)."),
     'Activation fessiers': E('8eecb015', "Ponts fessiers au sol."),
-    'Activation scapulaire': N("Pas d'illustration de rétractions d'omoplates/rotations externes (l'ancienne image montrait des cercles de bras)."),
+    'Activation scapulaire': E('/media/warmup-activation-scapulaire.gif', "Omoplates serrées, puis rotation externe coudes au corps (dessin lot 3)."),
     'Approche': {'level': 'exercise', 'media': None, 'note': "Visuel du premier exercice de la séance (sa démonstration validée) ; sinon absence explicite."},
 }
 

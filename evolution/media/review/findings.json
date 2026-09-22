@@ -208,7 +208,7 @@
    "observed": "Bg emploie warmup-mobilite.jpg (cercles de bras) aussi pour mobilité hanches/chevilles et activation fessiers.",
    "action": "Associer les étapes bas du corps à leurs gestes propres; pas de repli sur un guide de piscine.",
    "status": "corrected",
-   "resolution": "Bas du corps : mobilité hanches/chevilles = absence explicite (pas de repli), activation fessiers = pont au sol 8eecb015 ; haut du corps : activation scapulaire = absence explicite, mobilité des épaules conserve les cercles d'épaules.",
+   "resolution": "Bas du corps : mobilité hanches/chevilles = dessin lot 2 (cercles de hanche puis de cheville), activation fessiers = pont au sol ; haut du corps : activation scapulaire = dessin lot 3 (omoplates serrées puis rotation externe), mobilité des épaules = cercles d'épaules.",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
@@ -262,8 +262,8 @@
    "scope": "tabata",
    "observed": "34 des 38 noms au sol ne résolvent aucun média d'exercice via s5; gi montre alors la photo générique recovery-human.jpg. Cela ne constitue pas une démonstration correspondante.",
    "action": "Compléter les 38 mouvements, avec libellés G/D et versions douces respectés; contrôler les six mouvements du générateur aqua.",
-   "status": "partial",
-   "resolution": "38 noms au sol tous décidés : 20 démonstrations (exact/variante annotée), 3 repos = visuel respiratoire, 15 = carte « Pas de démonstration » (plus de photo générique). Médias manquants à produire après proposition en chat : jumping jacks, burpees, dips au bord, superman, squats sumo, chaise, battements, crunch, russian twist, montées de genoux, high knees, corde invisible, patineurs, squats sautés, marche sur place.",
+   "status": "corrected",
+   "resolution": "38 noms au sol : 33 démonstrations (bibliothèque ou dessins lots 1–2 dans le style existant, 2 positions), 3 repos = visuel respiratoire, 1 absence assumée (« Échauffement progressif », échauffement libre) ; High knees, Marche sur place, Burpees simplifiés, Chaise douce = variante annotée du dessin voisin.",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
@@ -301,8 +301,8 @@
    "path": "/media/stretch-mollet-marche.jpg",
    "observed": "Étirement au mur au lieu du talon sous le niveau d'une marche.",
    "action": "Remplacer sans confondre avec l'autre étirement des mollets.",
-   "status": "explicit-absence",
-   "resolution": "stretch-mol-1 : absence explicite (pas de confusion avec l'étirement au mur).",
+   "status": "corrected",
+   "resolution": "stretch-mol-1 = dessin lot 3 (avant-pied sur le bord de la marche, talon dans le vide) ; l'étirement au mur reste sur sa propre fiche.",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
@@ -314,8 +314,8 @@
    "path": "/media/stretch-adduction-debout.jpg",
    "observed": "Fente latérale/adducteurs au lieu du croisement de jambes debout décrit pour le moyen fessier/TFL.",
    "action": "Respecter la posture et le groupe visé; ne pas valider sur le seul mot adduction.",
-   "status": "explicit-absence",
-   "resolution": "stretch-moy-0 : absence explicite.",
+   "status": "corrected",
+   "resolution": "stretch-moy-0 = dessin lot 3 (jambe croisée derrière, inclinaison latérale du côté opposé).",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
@@ -336,8 +336,8 @@
   }
  ],
  "statusCounts": {
-  "corrected": 13,
-  "explicit-absence": 9,
-  "partial": 3
+  "corrected": 16,
+  "explicit-absence": 7,
+  "partial": 2
  }
 }

@@ -66,9 +66,10 @@ test('normalised guide keys restore the 20 lost legacy images', () => {
 test('runtime map: land Tabata names, aqua guides, stretches and warm-up are explicit', () => {
   const map = runtimeMap();
   for (const { name } of inventory.tabataLand) assert.ok(map.land[ge(name)], 'land: ' + name);
-  for (const key of ['dips au bord', 'squats sumo', 'crunch', 'corde invisible']) assert.equal(map.land[key].media, null);
+  for (const [key, file] of [['dips au bord', 'tabata-dips-au-bord'], ['squats sumo', 'tabata-squats-sumo'], ['crunch', 'tabata-crunch'], ['corde invisible', 'tabata-corde-invisible']]) assert.equal(map.land[key].media, '/media/' + file + '.gif');
+  assert.equal(map.land['echauffement progressif'].media, null); // still an honest gap
   assert.equal(map.land['gainage planche'].media, '/media/1317e405efd6ef2b.gif');
-  assert.equal(map.land['battements de jambes'].media, null); // never the pool GIF on land
+  assert.equal(map.land['battements de jambes'].media, '/media/tabata-battements-de-jambes.gif'); // land drawing, never the pool GIF on land
   // lot 1 (reviewed drawings, 2 fixed positions): never a pool GIF, variants carry a note
   assert.equal(map.land['jumping jacks'].media, '/media/tabata-jumping-jacks.gif');
   assert.equal(map.land['montees de genoux'].media, '/media/tabata-montees-de-genoux.gif');
@@ -78,11 +79,12 @@ test('runtime map: land Tabata names, aqua guides, stretches and warm-up are exp
   assert.equal(map.land['repos actif'].level, 'rest');
   assert.equal(Object.keys(map.stretches).length, 29);
   assert.equal(map.stretches['pigeon assis'].media, '/media/stretch-piriforme.jpg');
-  assert.equal(map.stretches['mollet en escalier'].media, null);
-  assert.equal(map.stretches['adduction de la hanche debout'].media, null);
+  assert.equal(map.stretches['mollet en escalier'].media, '/media/stretch-mollet-escalier.jpg');
+  assert.equal(map.stretches['adduction de la hanche debout'].media, '/media/stretch-adduction-croisee.jpg');
   assert.equal(map.stretches['talon vers la fesse (debout)'].media, '/media/stretch-quad-debout.jpg');
   assert.equal(map.warmup['activation fessiers'].media, '/media/8eecb0152081ff26.gif');
-  assert.equal(map.warmup['mobilite hanches & chevilles'].media, null);
+  assert.equal(map.warmup['mobilite hanches & chevilles'].media, '/media/warmup-mobilite-hanches-chevilles.gif');
+  assert.equal(map.warmup['activation scapulaire'].media, '/media/warmup-activation-scapulaire.gif');
   assert.equal(map.poolGuides['Ciseaux au bord'].media, '/media/64f9a3c89ee9369b.jpg');
   assert.equal(map.poolGuides['Talons-fesses'].media, '/media/c99b47eef506fe79.jpg');
   for (const group of [map.exercises, map.land, map.stretches, map.warmup, map.poolGuides])
@@ -101,21 +103,22 @@ test('JarvisMedia resolves by context: same name, land vs water', () => {
   const J = context.JarvisMedia;
   assert.equal(J.movement('Gainage planche · round 1/8', 'hiit').path, '/media/1317e405efd6ef2b.gif');
   assert.equal(J.movement('Gainage vertical · round 1/8', 'aqua').path, '/media/3d29edbd3afb4da6.jpg');
-  assert.equal(J.movement('Battements de jambes · round 2/8', 'hiit').missing, true);
+  assert.equal(J.movement('Battements de jambes · round 2/8', 'hiit').path, '/media/tabata-battements-de-jambes.gif');
   assert.equal(J.movement('Battements de jambes · round 2/8', 'aqua').path, '/media/fd7c5fb1226873f6.gif');
   assert.equal(J.movement('Montées de genoux · round 3/8', 'hiit').path, '/media/tabata-montees-de-genoux.gif');
   assert.equal(J.movement('Montées de genoux — EFFORT', 'swim').path, '/media/fe34482aa6faf932.gif');
   assert.equal(J.movement('Marche sur place · round 1/8', 'hiit').path, '/media/tabata-montees-de-genoux.gif');
   assert.equal(J.movement('Marche sur place · round 1/8', 'hiit').exact, false);
   assert.equal(J.movement('Jumping jacks · round 1/8', 'hiit').exact, true);
-  assert.equal(J.movement('Dips au bord · round 2/8', 'hiit').missing, true);
+  assert.equal(J.movement('Dips au bord · round 2/8', 'hiit').path, '/media/tabata-dips-au-bord.gif');
+  assert.equal(J.movement('Échauffement progressif', 'hiit').missing, true);
   assert.equal(J.movement('Ciseaux au bord — EFFORT', 'aqua').path, '/media/64f9a3c89ee9369b.jpg');
   assert.equal(J.movement('Talons-fesses — EFFORT', 'aqua').path, '/media/c99b47eef506fe79.jpg');
   assert.equal(J.movement('Mobilité épaules aquatique', 'swim').path, '/media/c9c8fd84181374ab.jpg');
   assert.equal(J.movement('Récupération', 'hiit').rest, true);
   assert.equal(J.movement('Oiseau-chien · round 4/8', 'hiit').exact, true);
   assert.equal(J.movement('Pigeon assis', 'recovery').path, '/media/stretch-piriforme.jpg');
-  assert.equal(J.movement('Mollet en escalier', 'warmup').missing, true);
+  assert.equal(J.movement('Mollet en escalier', 'recovery').path, '/media/stretch-mollet-escalier.jpg');
   assert.equal(J.movement('Activation fessiers', 'warmup').path, '/media/8eecb0152081ff26.gif');
   assert.equal(J.movement('Nom inconnu', 'hiit'), null);
   assert.equal(J.movement('Nom inconnu — EFFORT', 'aqua').missing, true); // never a land GIF in the water
@@ -123,7 +126,7 @@ test('JarvisMedia resolves by context: same name, land vs water', () => {
   assert.equal(J.movement('Retour au calme', 'aqua').path, '/media/pool-retour-calme.jpg');
   assert.equal(J.movement('Marche aquatique douce', 'aqua').path, '/media/pool-marche-aquatique.jpg');
   assert.equal(J.stepImage({ name: 'Activation fessiers', img: '/media/warmup-mobilite.jpg' }, 'warmup'), '/media/8eecb0152081ff26.gif');
-  assert.equal(J.stepImage({ name: 'Mollet en escalier', img: '/media/stretch-mollet-marche.jpg' }, 'warmup'), null);
+  assert.equal(J.stepImage({ name: 'Mollet en escalier', img: '/media/stretch-mollet-marche.jpg' }, 'recovery'), '/media/stretch-mollet-escalier.jpg'); // persisted old image re-resolved
   assert.equal(J.stepImage({ name: 'Approche 1 · 40 kg', img: '/media/530326beb7c7a652.gif' }, 'warmup'), '/media/530326beb7c7a652.gif');
 });
 

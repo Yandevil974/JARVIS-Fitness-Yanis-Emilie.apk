@@ -132,12 +132,12 @@ export function integrate(source) {
   source = replaceOnce(
     source,
     'pattern:p?"lunge":"lat",img:Jn.mobilite,',
-    'pattern:p?"lunge":"lat",img:p?null:Jn.mobilite,',
+    'pattern:p?"lunge":"lat",img:p?"/media/warmup-mobilite-hanches-chevilles.gif":Jn.mobilite,',
   );
   source = replaceOnce(
     source,
     'pattern:p?"bridge":"row",img:Jn.mobilite,',
-    'pattern:p?"bridge":"row",img:p?"/media/8eecb0152081ff26.gif":null,',
+    'pattern:p?"bridge":"row",img:p?"/media/8eecb0152081ff26.gif":"/media/warmup-activation-scapulaire.gif",',
   );
   source = replaceOnce(
     source,

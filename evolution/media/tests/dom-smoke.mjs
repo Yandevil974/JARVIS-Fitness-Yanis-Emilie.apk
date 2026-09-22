@@ -125,11 +125,12 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
     [1, { img: "/media/1317e405efd6ef2b.gif" }],
     [2, { breathing: true }],
     [3, { img: "/media/tabata-jumping-jacks.gif" }],
-    [4, { missing: true }],
+    [4, { img: "/media/tabata-battements-de-jambes.gif" }], // land drawing, not the pool GIF
     [5, { img: "/media/tabata-montees-de-genoux.gif" }],
     [6, { breathing: true }],
-    [7, { missing: true }],
+    [7, { img: "/media/tabata-dips-au-bord.gif" }],
     [8, { img: "/media/tabata-chaise-au-mur.gif" }],
+    [0, { missing: true }], // « Échauffement progressif » stays an honest gap
   ]) {
     const app = await boot((s) => {
       const t = createTimer(steps, meta);
@@ -200,15 +201,15 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
 {
   const cases = [
     { meta: { type: "warmup", name: "Échauffement" }, steps: [
-      { name: "Mobilité hanches & chevilles", seconds: 60, pattern: "lunge", img: null, instruction: "x" },
+      { name: "Mobilité hanches & chevilles", seconds: 60, pattern: "lunge", img: null, instruction: "x" }, // old persisted step without image
       { name: "Activation fessiers", seconds: 60, pattern: "bridge", img: "/media/8eecb0152081ff26.gif", instruction: "x" },
       { name: "Approche 1 · 40 kg", seconds: 60, pattern: "squat", img: "/media/530326beb7c7a652.gif", instruction: "x" },
-    ], expect: [{ missing: true }, { img: "/media/8eecb0152081ff26.gif" }, { img: "/media/530326beb7c7a652.gif" }] },
+    ], expect: [{ img: "/media/warmup-mobilite-hanches-chevilles.gif" }, { img: "/media/8eecb0152081ff26.gif" }, { img: "/media/530326beb7c7a652.gif" }] },
     { meta: { type: "recovery", name: "Étirements" }, steps: [
       { name: "Pigeon assis", seconds: 40, pattern: "breathe" },
       { name: "Mollet en escalier", seconds: 40, pattern: "breathe" },
       { name: "Talon vers la fesse (debout)", seconds: 40, pattern: "breathe" },
-    ], expect: [{ img: "/media/stretch-piriforme.jpg" }, { missing: true }, { img: "/media/stretch-quad-debout.jpg" }] },
+    ], expect: [{ img: "/media/stretch-piriforme.jpg" }, { img: "/media/stretch-mollet-escalier.jpg" }, { img: "/media/stretch-quad-debout.jpg" }] },
   ];
   for (const c of cases)
     for (let index = 0; index < c.steps.length; index++) {
@@ -332,7 +333,7 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
   await click([...main().querySelectorAll("button")].find((b) => text(b) === "Mobilité & stretching"));
   await sleep(400);
   const list = [...main().querySelectorAll("img.stretch-visual, .stretch-visual img, img")].filter((i) => (i.getAttribute("src") || "").includes("/media/stretch-"));
-  check("stretch list: 27 illustrated fiches (29 minus the two honest gaps)", list.length === 27, String(list.length));
+  check("stretch list: all 29 fiches illustrated", list.length === 29, String(list.length));
   check("stretch list: pigeon assis uses the seated piriformis illustration", list.some((i) => i.getAttribute("alt") === "Pigeon assis" && i.getAttribute("src") === "/media/stretch-piriforme.jpg"));
   check("stretch list: no floor-pigeon image for the seated text", !list.some((i) => i.getAttribute("alt") === "Pigeon assis" && i.getAttribute("src") === "/media/stretch-pigeon.jpg"));
   const cards = [...main().querySelectorAll("button")].filter((b) => text(b) === "Guide animé");
@@ -344,8 +345,8 @@ const buttonIncluding = (doc, part, within = doc) => [...within.querySelectorAll
     return doc.querySelector(".modal");
   };
   for (const [title, expect] of [
-    ["Mollet en escalier", { missing: /talon qui descend sous une marche/ }],
-    ["Adduction de la hanche debout", { missing: /croisement de jambe debout/ }],
+    ["Mollet en escalier", { exact: "/media/stretch-mollet-escalier.jpg" }],
+    ["Adduction de la hanche debout", { exact: "/media/stretch-adduction-croisee.jpg" }],
     ["Flexion avant jambes tendues", { variant: "/media/stretch-isc-flexion.jpg" }],
     ["Pigeon assis", { exact: "/media/stretch-piriforme.jpg" }],
   ]) {

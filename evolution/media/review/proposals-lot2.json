@@ -1,13 +1,11 @@
 {
-  "title": "Propositions lot 2 — Tabata au sol (5) + échauffement (1) (NON intégrées)",
+  "title": "Propositions lot 2 — Tabata au sol (5) + échauffement (1) (intégrées le 22/09 après « Poursuis », réversibles)",
   "subtitle": "Dessins générés dans le style de la bibliothèque (référence : GIF dips), 2 positions fixes par GIF (650 ms), pas une vidéo. À valider avant intégration.",
   "sheet": "proposals-lot2.jpg",
-  "status": "proposed-not-integrated",
+  "status": "integrated-reversible",
   "support": "AI-generated anatomical drawings in the existing library style; two fixed positions; not photographs; no existing visual replaced",
   "pending": [
-    "Activation scapulaire (position 2 à refaire : rotation externe coudes au corps)",
-    "Étirement « Mollet en escalier » (1re version montrait l'étirement au mur, refusée)",
-    "Étirement « Adduction de la hanche debout » (croisement des jambes pas assez visible, refusée)"
+    "Tous intégrés via le lot 3 : activation scapulaire, mollet en escalier, adduction debout"
   ],
   "proposals": [
     {

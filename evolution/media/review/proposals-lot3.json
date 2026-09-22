@@ -1,0 +1,35 @@
+{
+  "title": "Lot 3 — échauffement (activation scapulaire) + 2 étirements (intégrés le 22/09 après « Poursuis »)",
+  "subtitle": "Dessins générés dans le style de la bibliothèque ; GIF 2 positions fixes (650 ms) pour l'échauffement, image fixe (style fiches d'étirement) pour les étirements.",
+  "status": "integrated-reversible",
+  "support": "AI-generated drawings in the existing library styles; not photographs; no existing visual replaced",
+  "proposals": [
+    {
+      "name": "Activation scapulaire",
+      "file": "warmup-activation-scapulaire.gif",
+      "source": "activation-scapulaire-v2.png",
+      "uses": [
+        "Activation scapulaire"
+      ],
+      "positions": "Vue de dos : omoplates serrées bras le long du corps → rotation externe, coudes au corps, avant-bras ouverts.",
+      "table": "warmup"
+    }
+  ],
+  "stills": [
+    {
+      "name": "Mollet en escalier",
+      "file": "stretch-mollet-escalier.jpg",
+      "source": "stretch-mollet-escalier-v3.png",
+      "id": "stretch-mol-1",
+      "positions": "Avant-pied sur le bord de la marche, talon dans le vide, main sur la rampe."
+    },
+    {
+      "name": "Adduction de la hanche debout",
+      "file": "stretch-adduction-croisee.jpg",
+      "source": "stretch-adduction-debout-v2.png",
+      "id": "stretch-moy-0",
+      "positions": "Jambe croisée derrière l'autre, buste incliné du côté opposé, bras au-dessus de la tête."
+    }
+  ],
+  "sheet": "proposals-lot3.jpg"
+}

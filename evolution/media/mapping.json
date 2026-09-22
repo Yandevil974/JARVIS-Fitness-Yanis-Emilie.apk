@@ -8,14 +8,23 @@
  },
  "newAssets": [
   "/media/dips-triceps-corrige.gif",
+  "/media/stretch-adduction-croisee.jpg",
+  "/media/stretch-mollet-escalier.jpg",
+  "/media/tabata-battements-de-jambes.gif",
   "/media/tabata-burpees.gif",
   "/media/tabata-chaise-au-mur.gif",
+  "/media/tabata-corde-invisible.gif",
+  "/media/tabata-crunch.gif",
+  "/media/tabata-dips-au-bord.gif",
   "/media/tabata-jumping-jacks.gif",
   "/media/tabata-montees-de-genoux.gif",
   "/media/tabata-patineurs.gif",
   "/media/tabata-russian-twist.gif",
   "/media/tabata-squats-sautes.gif",
-  "/media/tabata-superman.gif"
+  "/media/tabata-squats-sumo.gif",
+  "/media/tabata-superman.gif",
+  "/media/warmup-activation-scapulaire.gif",
+  "/media/warmup-mobilite-hanches-chevilles.gif"
  ],
  "levels": {
   "exact": "même mouvement, même matériel, même position",
@@ -1823,9 +1832,9 @@
     "note": null
    },
    "Dips au bord": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de dips mains sur un banc/bord dans la bibliothèque (les dips aux barres parallèles sont une autre position)."
+    "level": "exact",
+    "media": "/media/tabata-dips-au-bord.gif",
+    "note": null
    },
    "Superman": {
     "level": "exact",
@@ -1838,9 +1847,9 @@
     "note": null
    },
    "Squats sumo": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de squat sumo (pieds très écartés) dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-squats-sumo.gif",
+    "note": null
    },
    "Montées sur mollets": {
     "level": "variante",
@@ -1863,14 +1872,14 @@
     "note": "Illustration : Chaise au mur. Ici : angle plus ouvert, moins bas."
    },
    "Battements de jambes": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de battements de jambes au sol (allongé sur le dos) dans la bibliothèque ; l'ancienne image montrait les battements en piscine."
+    "level": "exact",
+    "media": "/media/tabata-battements-de-jambes.gif",
+    "note": null
    },
    "Crunch": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de crunch au sol dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-crunch.gif",
+    "note": null
    },
    "Russian twist": {
     "level": "exact",
@@ -1893,9 +1902,9 @@
     "note": "Illustration : Montées de genoux. Ici : rythme rapide."
    },
    "Corde invisible": {
-    "level": "none",
-    "media": null,
-    "note": "Pas de corde à sauter (simulée) dans la bibliothèque."
+    "level": "exact",
+    "media": "/media/tabata-corde-invisible.gif",
+    "note": null
    },
    "Patineurs": {
     "level": "exact",
@@ -1957,15 +1966,15 @@
    "previous": "/media/stretch-pigeon.jpg"
   },
   "stretch-moy-0": {
-   "level": "none",
-   "media": null,
-   "note": "Pas d'illustration du croisement de jambe debout avec inclinaison latérale (l'ancienne image montrait une fente latérale).",
+   "level": "exact",
+   "media": "/media/stretch-adduction-croisee.jpg",
+   "note": "Jambe croisée derrière l'autre, buste incliné du côté opposé (dessin lot 3 ; l'ancienne image montrait une fente latérale).",
    "previous": "/media/stretch-adduction-debout.jpg"
   },
   "stretch-mol-1": {
-   "level": "none",
-   "media": null,
-   "note": "Pas d'illustration du talon qui descend sous une marche (l'ancienne image montrait l'étirement au mur).",
+   "level": "exact",
+   "media": "/media/stretch-mollet-escalier.jpg",
+   "note": "Avant-pied sur le bord de la marche, talon dans le vide, laissez-le descendre (dessin lot 3 ; l'ancienne image montrait l'étirement au mur).",
    "previous": "/media/stretch-mollet-marche.jpg"
   },
   "stretch-isc-0": {
@@ -2013,9 +2022,9 @@
    "previous": "/media/warmup-mobilite.jpg"
   },
   "Mobilité hanches & chevilles": {
-   "level": "none",
-   "media": null,
-   "note": "Pas d'illustration de mobilité hanches/chevilles au sol (l'ancienne image montrait des cercles de bras).",
+   "level": "exact",
+   "media": "/media/warmup-mobilite-hanches-chevilles.gif",
+   "note": "Cercles de hanche genou levé, puis cercles de cheville (dessin lot 2).",
    "previous": "/media/warmup-mobilite.jpg"
   },
   "Activation fessiers": {
@@ -2025,9 +2034,9 @@
    "previous": "/media/warmup-mobilite.jpg"
   },
   "Activation scapulaire": {
-   "level": "none",
-   "media": null,
-   "note": "Pas d'illustration de rétractions d'omoplates/rotations externes (l'ancienne image montrait des cercles de bras).",
+   "level": "exact",
+   "media": "/media/warmup-activation-scapulaire.gif",
+   "note": "Omoplates serrées, puis rotation externe coudes au corps (dessin lot 3).",
    "previous": "/media/warmup-mobilite.jpg"
   },
   "Approche": {

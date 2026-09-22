@@ -6,13 +6,13 @@
 
 | Élément | Fichier | Contenu |
 |---|---|---|
-| Table de revue | [`mapping.json`](mapping.json) (générée par [`review/compose-mapping.py`](review/compose-mapping.py)) | 209 exercices : **119 exact · 64 variante · 26 none** (56 associations changent par rapport à la 1.4.0) ; 42 mouvements Tabata au sol (20 démonstrations, 3 repos, 15 absences) ; 19 guides piscine dont 6 réassociés ; 29 étirements dont 8 revus ; échauffement (5 étapes + approches). Chaque entrée garde `previous` (ce que la 1.4.0 affichait) et une `note` lisible dans l’application pour toute variante ou absence. |
+| Table de revue | [`mapping.json`](mapping.json) (générée par [`review/compose-mapping.py`](review/compose-mapping.py)) | 209 exercices : **119 exact · 64 variante · 26 none** (56 associations changent par rapport à la 1.4.0) ; 42 mouvements Tabata au sol (38 démonstrations dont 17 dessins ajoutés, 3 repos, 1 absence) ; 19 guides piscine dont 6 réassociés ; 29 étirements dont 8 revus (2 nouveaux dessins) ; échauffement (5 étapes + approches, 2 nouveaux dessins). Chaque entrée garde `previous` (ce que la 1.4.0 affichait) et une `note` lisible dans l’application pour toute variante ou absence. |
 | Correctif du bundle | [`build.mjs`](build.mjs) | Refuse tout autre bundle que le 1.4.0 (SHA `f80a7e82…`), applique 17 remplacements à ancre unique + le remplacement du bloc d’alias `Z4…eo`, puis vérifie que le résultat s’analyse (acorn). Sortie : `.cache/media-web/` (racine web complète) + `.cache/media-build-report.json`. |
 | Nouveau média | [`assets/dips-triceps-corrige.gif`](assets/dips-triceps-corrige.gif) | Dips aux barres parallèles : image basse d’origine, **image haute redessinée dans le même style** (2 positions fixes, 650 ms). L’original reste dans l’APK ; `mapping.dips.variant` permet d’y revenir. |
 | Aperçu avant/après | [`review/corrections-apercu.jpg`](review/corrections-apercu.jpg) | 16 corrections représentatives (musculation, piscine, étirement, échauffement). |
-| Constats | [`review/findings.json`](review/findings.json) | 25 groupes : **13 corrigés, 9 absences explicites, 3 partiels** (variante annotée), chacun avec sa `resolution`. |
-| Tests | [`tests/build.test.mjs`](tests/build.test.mjs), [`tests/dom-smoke.mjs`](tests/dom-smoke.mjs), [`tests/audit.test.mjs`](tests/audit.test.mjs) | 11 tests Node (mapping complet, fichiers présents, contexte sol/aqua, normalisation, invariants du bundle) + **118 contrôles de rendu réel du bundle patché** dans happy-dom (accueil, chrono Tabata sol/aqua/échauffement/étirements, 16 fiches, protocoles piscine, liste des étirements) + 6 tests de provenance de l’audit. |
-| Android | [`../android/build-media.py`](../android/build-media.py), [`../android/release-media.json`](../android/release-media.json), [`../android/tests/test_media_release.py`](../android/tests/test_media_release.py) | 1.4.0 signé → **1.5.0 / code 12**, package `app.yanis.fitness.evolution.home` inchangé, 9 DEX / `resources.arsc` / `capacitor.config.json` identiques, seuls `AndroidManifest.xml` (version) et le bundle changent, 1 média ajouté. Candidat **non signé** vérifié (`.cache/media-release/`). |
+| Constats | [`review/findings.json`](review/findings.json) | 25 groupes : **16 corrigés, 7 absences explicites, 2 partiels** (variante annotée), chacun avec sa `resolution`. |
+| Tests | [`tests/build.test.mjs`](tests/build.test.mjs), [`tests/dom-smoke.mjs`](tests/dom-smoke.mjs), [`tests/audit.test.mjs`](tests/audit.test.mjs) | 11 tests Node (mapping complet, fichiers présents, contexte sol/aqua, normalisation, invariants du bundle) + **132 contrôles de rendu réel du bundle patché** dans happy-dom (accueil, chrono Tabata sol/aqua/échauffement/étirements, 16 fiches, protocoles piscine, liste des étirements) + 6 tests de provenance de l’audit. |
+| Android | [`../android/build-media.py`](../android/build-media.py), [`../android/release-media.json`](../android/release-media.json), [`../android/tests/test_media_release.py`](../android/tests/test_media_release.py) | 1.4.0 signé → **1.5.0 / code 12**, package `app.yanis.fitness.evolution.home` inchangé, 9 DEX / `resources.arsc` / `capacitor.config.json` identiques, seuls `AndroidManifest.xml` (version) et le bundle changent, 18 médias ajoutés. Candidat **non signé** vérifié (`.cache/media-release/`). |
 
 ### Ce que l’application fait désormais
 
@@ -24,13 +24,19 @@
 - **Étirements** : pigeon assis → posture assise ; « Main dans le dos » → coude levé (variante) ; mollet en escalier et croisement debout → absence explicite ; 5 fiches gardent leur image en variante annotée.
 - **Minuteurs déjà enregistrés** : les images persistées dans les étapes sont réévaluées à l’affichage (`JarvisMedia.stepImage`), sans toucher aux durées, charges ou données.
 
+### Dessins ajoutés pour les lacunes (lots 1–3, 22 septembre, réversibles)
+
+17 dessins générés **dans les styles existants de la bibliothèque** (référence : GIF dips pour les GIF 2 positions à 650 ms ; fiches `stretch-*.jpg` pour les deux étirements), contrôlés un par un (orientation constante entre les deux positions, un seul personnage, position conforme à la consigne ; 5 premières versions rejetées et refaites). Aucun visuel existant n’est remplacé. Planches : `review/proposals-tabata-lot1.jpg`, `review/proposals-lot2.jpg`, `review/proposals-lot3.jpg` ; fiches `review/proposals-lot*.json` ; fichiers `assets/tabata-*.gif`, `assets/warmup-*.gif`, `assets/stretch-mollet-escalier.jpg`, `assets/stretch-adduction-croisee.jpg`.
+
+- **Tabata au sol** : jumping jacks, burpees (+ simplifiés en variante annotée), squats sautés, montées de genoux (+ high knees, marche sur place en variante annotée), patineurs, chaise au mur (+ chaise douce), superman, russian twist, dips au bord, squats sumo, battements de jambes (sol — en piscine le GIF aquatique reste), crunch, corde invisible. Seul « Échauffement progressif » (échauffement libre) garde la carte d’absence.
+- **Échauffement** : mobilité hanches & chevilles, activation scapulaire (`Bg` patché : chaque étape a son propre visuel).
+- **Étirements** : mollet en escalier, adduction de la hanche debout (jambe croisée).
+- **Retirer un dessin** : enlever son nom de `VALIDATED_PROPOSALS` (`review/compose-mapping.py`) ou remettre l’entrée `N(...)` correspondante, relancer la chaîne ; la carte « Pas de démonstration » revient.
+
 ### Lacunes restantes (assumées, visibles dans l’app)
 
-- **26 exercices sans démonstration** : face pull ×2, clamshell, 12 curls Scott/Zottman/concentration/poulie basse, California press, pullover ×2, good morning, leg extension, mollets presse, glute ham raise, drop lunges, crunch swiss ball, ab wheel, wood chop.
-- **15 mouvements Tabata au sol sans démonstration** : jumping jacks, burpees, dips au bord, superman, squats sumo, chaise, battements, crunch, russian twist, montées de genoux, high knees, corde invisible, patineurs, squats sautés, marche sur place.
-- **2 étirements** (mollet en escalier, adduction debout), **2 étapes d’échauffement** (mobilité hanches/chevilles, activation scapulaire), « Étirements au bord » partiel.
-
-Ces manques ne satisfont pas « tous ont leur image » ; ils sont signalés honnêtement plutôt que remplacés par un autre geste. Tout nouveau média (dessin dans le même style ou photographie vérifiée) doit d’abord être montré dans le chat.
+- **26 exercices de musculation sans démonstration** : face pull ×2, clamshell, 12 curls Scott/Zottman/concentration/poulie basse, California press, pullover ×2, good morning, leg extension, mollets presse, glute ham raise, drop lunges, crunch swiss ball, ab wheel, wood chop. Prochain lot de dessins (avec matériel), à montrer dans le chat.
+- « Échauffement progressif » (Tabata) et « Étirements au bord » (piscine, partiel).
 
 ## Livraison — ce qu’il reste pour l’APK
 
