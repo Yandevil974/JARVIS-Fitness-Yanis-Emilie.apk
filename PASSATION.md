@@ -19,6 +19,10 @@
 
 26 exercices, 15 mouvements Tabata au sol, 2 étirements, 2 étapes d’échauffement affichent « Pas de démonstration pour ce mouvement » avec la raison ; aucun autre geste n’est substitué. Liste exacte dans `evolution/media/README.md`. **Cela ne satisfait pas encore « tous ont leur image »** : tout nouveau média (dessin même style ou photo vérifiée) doit être montré dans le chat avant intégration. `review/findings.json` : 13 corrigés, 9 absences explicites, 3 partiels.
 
+### Propositions en attente de validation (lot 1, NON intégrées)
+
+`evolution/media/review/proposals-tabata-lot1.jpg` montre 8 dessins générés dans le style de la bibliothèque pour les mouvements Tabata au sol sans démonstration : jumping jacks, burpees (+ simplifiés en variante), squats sautés, montées de genoux (+ high knees et marche sur place en variante), patineurs, chaise au mur (+ chaise douce), superman, russian twist. GIF 2 positions fixes (650 ms) dans `evolution/media/assets/proposals/`, fiche `review/proposals-lot1.json`. **Rien n’est appliqué** : pour intégrer un mouvement validé par l’utilisateur, ajouter son nom exact à `VALIDATED_PROPOSALS` dans `review/compose-mapping.py`, déplacer le GIF de `assets/proposals/` vers `assets/`, relancer `compose-mapping.py` → `build.mjs` → tests + `dom-smoke.mjs`, ajouter l’entrée `assets/public/media/<fichier>` + SHA dans `release-media.json` (`newWebEntries`) et renouveler `validatedMediaBundleSha256`. Lots suivants à proposer de la même façon : dips au bord, squats sumo, battements de jambes, crunch, corde invisible ; échauffement (mobilité hanches/chevilles, activation scapulaire) ; étirements (mollet en escalier, adduction debout) ; puis les 26 exercices de musculation (matériel : face pull, Scott, pullover, leg extension, good morning, ab wheel, wood chop…).
+
 ### Ordre de reprise recommandé
 
 1. Lire `evolution/media/README.md` puis ce document ; relancer les tests ci-dessus (rebuild `node evolution/media/build.mjs` d’abord).

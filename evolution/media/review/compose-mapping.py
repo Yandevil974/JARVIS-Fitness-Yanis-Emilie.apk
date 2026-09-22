@@ -38,6 +38,7 @@ def media_paths():
 
 
 PACKAGED = media_paths()
+HERE = pathlib.Path(__file__).resolve().parent
 NEW_ASSETS = {'/media/dips-triceps-corrige.gif'}
 
 
@@ -281,6 +282,26 @@ land = {
     'Récupération entre cycles': REST,
     'Retour au calme': REST,
 }
+
+# ---------------------------------------------------------------------------
+# Proposals shown in the chat (review/proposals-lot*.json). NOTHING is applied until the user
+# validates a name here; the validated GIF must then be moved from assets/proposals/ to assets/.
+# ---------------------------------------------------------------------------
+VALIDATED_PROPOSALS = set()   # e.g. {'Jumping jacks', 'Burpees'} — user's words in the chat first
+for lot in sorted(HERE.glob('proposals-lot*.json')):
+    for prop in json.loads(lot.read_text())['proposals']:
+        if prop['name'] not in VALIDATED_PROPOSALS:
+            continue
+        media = '/media/' + prop['file']
+        if not (HERE.parent / 'assets' / prop['file']).exists():
+            raise SystemExit(f"validated proposal {prop['name']}: move assets/proposals/{prop['file']} to assets/ first")
+        NEW_ASSETS.add(media)
+        for use in prop['uses']:
+            m = re.match(r"^(.*?)\s*\(variante\s*:\s*(.*)\)$", use)
+            if m:
+                land[m.group(1)] = {'level': 'variante', 'media': media, 'note': f"Illustration : {prop['name']}. Ici : {m.group(2)}."}
+            else:
+                land[use] = {'level': 'exact', 'media': media, 'note': None}
 
 # ---------------------------------------------------------------------------
 # Stretches: image names are already right except the ones below.

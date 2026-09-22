@@ -1,0 +1,16 @@
+{
+  "title": "Propositions lot 1 — mouvements Tabata au sol sans démonstration (NON intégrées)",
+  "subtitle": "Dessins générés dans le style de la bibliothèque (référence : GIF dips), 2 positions fixes par GIF (650 ms), pas une vidéo. À valider avant intégration.",
+  "status": "proposed-not-integrated",
+  "support": "AI-generated anatomical drawings in the existing library style; two fixed positions; not photographs; no existing visual replaced",
+  "proposals": [
+    {"name": "Jumping jacks", "file": "tabata-jumping-jacks.gif", "source": "jumping-jacks.png", "uses": ["Jumping jacks"], "positions": "Pieds joints bras le long du corps → pieds écartés, bras au-dessus de la tête (vue de face)."},
+    {"name": "Burpees", "file": "tabata-burpees.gif", "source": "burpees.png", "uses": ["Burpees", "Burpees simplifiés (variante : sans saut ni pompe)"], "positions": "Accroupi mains au sol → planche bras tendus (vue de profil)."},
+    {"name": "Squats sautés", "file": "tabata-squats-sautes.gif", "source": "squats-sautes.png", "uses": ["Squats sautés"], "positions": "Squat profond → extension en l'air, pieds décollés."},
+    {"name": "Montées de genoux", "file": "tabata-montees-de-genoux.gif", "source": "montees-de-genoux-v2.png", "uses": ["Montées de genoux", "High knees (variante : rythme rapide)", "Marche sur place (variante : genoux bas, sans impact)"], "positions": "Debout bras de coureur → genou droit à hauteur de hanche (vue de profil)."},
+    {"name": "Patineurs", "file": "tabata-patineurs.gif", "source": "patineurs-v2.png", "uses": ["Patineurs"], "positions": "Réception sur le pied gauche, jambe droite croisée derrière → miroir sur le pied droit (vue de face)."},
+    {"name": "Chaise au mur", "file": "tabata-chaise-au-mur.gif", "source": "chaise-au-mur.png", "uses": ["Chaise au mur", "Chaise douce (variante : angle plus ouvert, moins bas)"], "positions": "Dos au mur debout → assis contre le mur, cuisses horizontales, genoux à 90° (vue de profil)."},
+    {"name": "Superman", "file": "tabata-superman.gif", "source": "superman.png", "uses": ["Superman"], "positions": "À plat ventre bras tendus → bras, poitrine et jambes décollés du tapis (vue de profil)."},
+    {"name": "Russian twist", "file": "tabata-russian-twist.gif", "source": "russian-twist.png", "uses": ["Russian twist"], "positions": "Assis buste incliné, mains jointes vers la hanche gauche → rotation vers la hanche droite."}
+  ]
+}
