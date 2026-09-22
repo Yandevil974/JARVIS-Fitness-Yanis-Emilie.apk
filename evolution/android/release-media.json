@@ -1,0 +1,30 @@
+{
+  "appName": "Yanis Fitness Evolution",
+  "appId": "app.yanis.fitness.evolution.home",
+  "version": "1.5.0",
+  "versionCode": 12,
+  "previousVersion": "1.4.0",
+  "previousVersionCode": 11,
+  "baseApk": "downloads/Yanis-Fitness-Evolution-1.4.0.apk",
+  "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "baseBundleSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
+  "validatedMediaBundleSha256": "b75cd8fa5e4343f1cc250f050d6d84118ce80d73520486fbde8748b4a13c7ecd",
+  "newWebEntries": {
+    "assets/public/media/dips-triceps-corrige.gif": "6ec7c12e00fc0e2bd165e7a8d9e6639cebd3d2ed632415720040f7f357a196f8"
+  },
+  "apksignerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
+  "output": "downloads/Yanis-Fitness-Evolution-1.5.0.apk",
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "approvedHomeIncluded": true,
+  "mediaCorrectionsIncluded": true,
+  "generalConversationalAiIncluded": false,
+  "installation": "Update in place over 1.4.0: same package, same signing key (certificate 7d6f9c8f…21fd), data kept; no new identity"
+}
