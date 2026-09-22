@@ -88,7 +88,7 @@ isAqua(c){return c==="aqua"||c==="swim"},
 exercise(i){return i&&i.id&&JarvisMediaMap.exercises[i.id]||null},
 fromEntry(m,n){if(!m)return null;if(m.level==="rest")return{rest:!0};if(!m.media)return{missing:!0,note:m.note||null,name:String(n||"")};return{path:m.media,name:m.shows||String(n||"").split(" · ")[0],exact:m.level==="exact",level:m.level,note:m.note||null}},
 pool(n){const k=Ge(n),g=bl.find(c=>c.img&&c.k.some(u=>k.includes(Ge(u))));return g?{path:g.img,name:g.t,exact:g.mediaLevel!=="variante",level:g.mediaLevel||"exact",note:g.mediaNote||null}:null},
-movement(n,c){if(!n)return null;if(JarvisMedia.isAqua(c))return JarvisMedia.pool(n);const k=JarvisMedia.key(n);return JarvisMedia.fromEntry(JarvisMediaMap.land[k]||JarvisMediaMap.stretches[k]||JarvisMediaMap.warmup[k]||null,n)},
+movement(n,c){if(!n)return null;const k=JarvisMedia.key(n),r=JarvisMediaMap.land[k];if(JarvisMedia.isAqua(c))return JarvisMedia.pool(n)||(r&&r.level==="rest"?{rest:!0}:{missing:!0,note:null,name:String(n)});return JarvisMedia.fromEntry(r||JarvisMediaMap.stretches[k]||JarvisMediaMap.warmup[k]||null,n)},
 stretch(id,fallback){const o=JarvisMediaMap.stretchOverrides[id];return o?o.media:fallback},
 stepImage(f,c){const r=JarvisMedia.movement(f.name,c);if(r&&r.path)return r.path;if(r&&(r.missing||r.rest))return null;return f.img||null}
 };
@@ -168,6 +168,12 @@ export function integrate(source) {
     source,
     "function gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0}){var E;const u=s5(i,n),",
     "function gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0,context:d}){var E;const r5=s5(i,n,d),u=r5&&r5.path?r5:null,miss=r5&&r5.missing?r5:null,",
+  );
+  // A movement explicitly reviewed as "no demonstration" must not fall back to the breathing guide.
+  source = replaceOnce(
+    source,
+    'j=["breathe","respiration"].includes(o||(i==null?void 0:i.pattern))',
+    'j=!miss&&["breathe","respiration"].includes(o||(i==null?void 0:i.pattern))',
   );
   source = replaceOnce(
     source,

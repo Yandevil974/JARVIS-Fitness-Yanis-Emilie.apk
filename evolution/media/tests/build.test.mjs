@@ -86,9 +86,10 @@ test('runtime map: land Tabata names, aqua guides, stretches and warm-up are exp
 });
 
 test('JarvisMedia resolves by context: same name, land vs water', () => {
+  const yg = { 'Étirements au bord': '/media/pool-etirements-bord.jpg', "Nage statique (à l'élastique)": '/media/pool-nage-statique.jpg', 'Nage douce': '/media/pool-nage-douce.jpg', 'Marche aquatique': '/media/pool-marche-aquatique.jpg', 'Fractionné — nager': '/media/pool-fractionne.jpg', 'Sprint — nager à fond': '/media/pool-sprint.jpg', 'Récup complète — souffler': '/media/pool-recup-complete.jpg', 'Récup entre tabatas': '/media/pool-recup-tabata.jpg', 'Retour au calme': '/media/pool-retour-calme.jpg', 'Déplacements latéraux (4 m)': '/media/pool-deplacements-lateraux.jpg' };
   const guides = legacy.emilie.POOL_GUIDES.map((g) => {
     const o = mapping.poolGuides[g.t];
-    return { ...g, img: o ? o.media : g.img || null, mediaLevel: o ? o.level : 'exact', mediaNote: o ? o.note : null };
+    return { ...g, img: o ? o.media : g.img || yg[g.t] || null, mediaLevel: o ? o.level : 'exact', mediaNote: o ? o.note : null };
   });
   const context = { Ge: ge, bl: guides, document: undefined };
   vm.createContext(context);
@@ -110,6 +111,10 @@ test('JarvisMedia resolves by context: same name, land vs water', () => {
   assert.equal(J.movement('Mollet en escalier', 'warmup').missing, true);
   assert.equal(J.movement('Activation fessiers', 'warmup').path, '/media/8eecb0152081ff26.gif');
   assert.equal(J.movement('Nom inconnu', 'hiit'), null);
+  assert.equal(J.movement('Nom inconnu — EFFORT', 'aqua').missing, true); // never a land GIF in the water
+  assert.equal(J.movement('Récupération', 'aqua').rest, true);
+  assert.equal(J.movement('Retour au calme', 'aqua').path, '/media/pool-retour-calme.jpg');
+  assert.equal(J.movement('Marche aquatique douce', 'aqua').path, '/media/pool-marche-aquatique.jpg');
   assert.equal(J.stepImage({ name: 'Activation fessiers', img: '/media/warmup-mobilite.jpg' }, 'warmup'), '/media/8eecb0152081ff26.gif');
   assert.equal(J.stepImage({ name: 'Mollet en escalier', img: '/media/stretch-mollet-marche.jpg' }, 'warmup'), null);
   assert.equal(J.stepImage({ name: 'Approche 1 · 40 kg', img: '/media/530326beb7c7a652.gif' }, 'warmup'), '/media/530326beb7c7a652.gif');
@@ -130,4 +135,5 @@ test('integration is pinned to the released 1.4.0 bundle and keeps every other f
   assert.ok(out.includes('className:"movement-missing"'));
   assert.ok(out.includes('context:p.meta.type'));
   assert.ok(out.includes('JarvisMedia.isAqua(p.meta.type)?bl.find'));
+  assert.ok(out.includes('j=!miss&&["breathe","respiration"]'));
 });
