@@ -1,4 +1,58 @@
-# Audit des démonstrations — en cours, pas un nouvel APK
+# Démonstrations d’exercice — correctifs 1.5.0 construits, APK signé en attente
+
+**22 septembre 2026.** L’audit du 21 septembre (25 groupes de constats) est maintenant **traité correspondance par correspondance** : table de revue explicite, bundle web 1.5.0 patché à partir de l’exact bundle 1.4.0, tests de logique + rendu DOM, script de réempaquetage Android (même package, même clé). **Le fichier APK signé n’existe pas encore** : la sauvegarde privée de la signature 1.4.0 n’est pas présente dans cet environnement (voir « Livraison »).
+
+## Ce qui est livré dans le dépôt
+
+| Élément | Fichier | Contenu |
+|---|---|---|
+| Table de revue | [`mapping.json`](mapping.json) (générée par [`review/compose-mapping.py`](review/compose-mapping.py)) | 209 exercices : **119 exact · 64 variante · 26 none** (56 associations changent par rapport à la 1.4.0) ; 42 mouvements Tabata au sol (20 démonstrations, 3 repos, 15 absences) ; 19 guides piscine dont 6 réassociés ; 29 étirements dont 8 revus ; échauffement (5 étapes + approches). Chaque entrée garde `previous` (ce que la 1.4.0 affichait) et une `note` lisible dans l’application pour toute variante ou absence. |
+| Correctif du bundle | [`build.mjs`](build.mjs) | Refuse tout autre bundle que le 1.4.0 (SHA `f80a7e82…`), applique 17 remplacements à ancre unique + le remplacement du bloc d’alias `Z4…eo`, puis vérifie que le résultat s’analyse (acorn). Sortie : `.cache/media-web/` (racine web complète) + `.cache/media-build-report.json`. |
+| Nouveau média | [`assets/dips-triceps-corrige.gif`](assets/dips-triceps-corrige.gif) | Dips aux barres parallèles : image basse d’origine, **image haute redessinée dans le même style** (2 positions fixes, 650 ms). L’original reste dans l’APK ; `mapping.dips.variant` permet d’y revenir. |
+| Aperçu avant/après | [`review/corrections-apercu.jpg`](review/corrections-apercu.jpg) | 16 corrections représentatives (musculation, piscine, étirement, échauffement). |
+| Constats | [`review/findings.json`](review/findings.json) | 25 groupes : **13 corrigés, 9 absences explicites, 3 partiels** (variante annotée), chacun avec sa `resolution`. |
+| Tests | [`tests/build.test.mjs`](tests/build.test.mjs), [`tests/dom-smoke.mjs`](tests/dom-smoke.mjs), [`tests/audit.test.mjs`](tests/audit.test.mjs) | 11 tests Node (mapping complet, fichiers présents, contexte sol/aqua, normalisation, invariants du bundle) + **118 contrôles de rendu réel du bundle patché** dans happy-dom (accueil, chrono Tabata sol/aqua/échauffement/étirements, 16 fiches, protocoles piscine, liste des étirements) + 6 tests de provenance de l’audit. |
+| Android | [`../android/build-media.py`](../android/build-media.py), [`../android/release-media.json`](../android/release-media.json), [`../android/tests/test_media_release.py`](../android/tests/test_media_release.py) | 1.4.0 signé → **1.5.0 / code 12**, package `app.yanis.fitness.evolution.home` inchangé, 9 DEX / `resources.arsc` / `capacitor.config.json` identiques, seuls `AndroidManifest.xml` (version) et le bundle changent, 1 média ajouté. Candidat **non signé** vérifié (`.cache/media-release/`). |
+
+### Ce que l’application fait désormais
+
+- **Racine du défaut corrigée** : la normalisation `Ge()` transformait les traits d’union/apostrophes des clés de guides, donc 20 exercices (tractions, step-up haut, kickback poulie drop set, Pallof press…) perdaient leur propre image et le tableau d’alias/score `Z4` en substituait une autre. Les clés sont normalisées à la source ; l’alias `gg` (French press → poulie) est supprimé ; **le score par famille n’existe plus** : chaque exercice a une décision de revue.
+- **Trois états visibles** : « Illustration humaine · source » (exact) ; « Même mouvement, détail différent · voir la note » (variante, avec la différence écrite : matériel, uni/bilatéral, angle, assis/debout) ; carte **« Pas de démonstration pour ce mouvement »** (aucun autre mouvement n’est affiché, la consigne écrite reste). Les étapes de repos gardent le guide respiratoire.
+- **Contexte sol / piscine** : `JarvisMedia.movement(nom, meta.type)` — « Gainage planche », « Battements de jambes », « Montées de genoux », « Marche sur place » ne prennent plus un guide piscine dans un Tabata au sol ; les consignes piscine n’apparaissent que dans les chronos aqua/nage ; un nom aqua inconnu n’affiche jamais un GIF terrestre.
+- **Piscine** : ciseaux, talons-fesses, gainage au bord, mobilité épaules et hanches/chevilles utilisent les illustrations aquatiques déjà présentes dans la source elite ; la note de variante s’affiche sous l’illustration dans le protocole et dans le chrono.
+- **Échauffement** : bas du corps → mobilité hanches/chevilles sans image (absence explicite au lieu de cercles de bras), activation fessiers → pont au sol ; haut du corps → activation scapulaire sans image ; **les séries d’approche montrent la démonstration validée du premier exercice de la séance** au lieu du développé couché.
+- **Étirements** : pigeon assis → posture assise ; « Main dans le dos » → coude levé (variante) ; mollet en escalier et croisement debout → absence explicite ; 5 fiches gardent leur image en variante annotée.
+- **Minuteurs déjà enregistrés** : les images persistées dans les étapes sont réévaluées à l’affichage (`JarvisMedia.stepImage`), sans toucher aux durées, charges ou données.
+
+### Lacunes restantes (assumées, visibles dans l’app)
+
+- **26 exercices sans démonstration** : face pull ×2, clamshell, 12 curls Scott/Zottman/concentration/poulie basse, California press, pullover ×2, good morning, leg extension, mollets presse, glute ham raise, drop lunges, crunch swiss ball, ab wheel, wood chop.
+- **15 mouvements Tabata au sol sans démonstration** : jumping jacks, burpees, dips au bord, superman, squats sumo, chaise, battements, crunch, russian twist, montées de genoux, high knees, corde invisible, patineurs, squats sautés, marche sur place.
+- **2 étirements** (mollet en escalier, adduction debout), **2 étapes d’échauffement** (mobilité hanches/chevilles, activation scapulaire), « Étirements au bord » partiel.
+
+Ces manques ne satisfont pas « tous ont leur image » ; ils sont signalés honnêtement plutôt que remplacés par un autre geste. Tout nouveau média (dessin dans le même style ou photographie vérifiée) doit d’abord être montré dans le chat.
+
+## Livraison — ce qu’il reste pour l’APK
+
+```bash
+node evolution/media/build.mjs                       # bundle 1.5.0 patché (.cache/media-web)
+node --test evolution/media/tests/*.test.mjs         # 11 tests
+python3 evolution/android/build-media.py --unsigned-candidate   # repack vérifié, NON signé
+python3 -m unittest evolution/android/tests/test_media_release.py
+# Sur la machine qui possède .private/yanis-fitness-evolution-home (sauvegarde 1.4.0 restaurée),
+# le JDK (.cache/signing-tools/jdk4py) et apksigner (.cache/home-tools, SHA ef49417931f9…) :
+python3 evolution/android/build-media.py             # signe avec LA MÊME clé 1.4.0 → downloads/Yanis-Fitness-Evolution-1.5.0.apk
+```
+
+Aucune clé n’est générée, aucun secret n’est demandé dans le chat. Le script refuse d’écrire un APK non signé dans `downloads/`.
+
+### Aperçu dans le navigateur
+
+`python3 -m http.server 8080 --bind 0.0.0.0` dans `.cache/media-web/` sert l’application 1.5.0 patchée (état local du navigateur, deux profils). Contrôle DOM complet : `node evolution/media/tests/dom-smoke.mjs` (nécessite `cd .cache/dom-tools && npm install happy-dom`).
+
+---
+
+# Audit du 21 septembre 2026 (conservé pour référence)
 
 **21 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
 
