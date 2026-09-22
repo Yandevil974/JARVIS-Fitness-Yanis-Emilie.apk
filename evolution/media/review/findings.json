@@ -104,7 +104,7 @@
    "observed": "Presse à cuisses au lieu d'extension de genoux à la machine.",
    "action": "Interdire cette substitution.",
    "status": "explicit-absence",
-   "resolution": "Substitution interdite : carte « Pas de démonstration ».",
+   "resolution": "leg-extension : carte « Pas de démonstration » ; la presse à cuisses n'est plus affichée.",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
@@ -144,7 +144,7 @@
    "observed": "Soulevé de terre roumain, barre dans les mains, au lieu du good morning avec barre sur le dos.",
    "action": "Interdire cette substitution de matériel et de placement.",
    "status": "explicit-absence",
-   "resolution": "Substitution interdite : carte « Pas de démonstration ».",
+   "resolution": "good-morning-debout : carte « Pas de démonstration » ; le soulevé de terre roumain n'est plus affiché.",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
@@ -171,7 +171,7 @@
    "observed": "Crunch à genoux à la poulie au lieu de rotation diagonale.",
    "action": "Interdire cette substitution.",
    "status": "explicit-absence",
-   "resolution": "Absence explicite.",
+   "resolution": "wood-chop-poulie-haute : carte « Pas de démonstration » ; le crunch à la poulie n'est plus affiché.",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
@@ -184,7 +184,7 @@
    "observed": "Rapprochement des genoux sur swiss-ball au lieu de roulette abdominale.",
    "action": "Ne pas remplacer un matériel par l'autre.",
    "status": "explicit-absence",
-   "resolution": "Absence explicite.",
+   "resolution": "ab-wheel-roulette : carte « Pas de démonstration » ; le swiss-ball n'est plus affiché.",
    "resolvedIn": "1.5.0 (evolution/media/mapping.json + build.mjs)"
   },
   {
