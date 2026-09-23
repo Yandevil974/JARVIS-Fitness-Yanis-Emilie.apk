@@ -3,7 +3,7 @@
   "status": "scoped-web-candidate-not-release",
   "releaseReady": false,
   "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "candidateBundleSha256": "52dfc705decbe96aeab078188240d910092cae0fa257e469e1b6f098fcf4f2c4",
+  "candidateBundleSha256": "22109c5be90be9545038cc55f86d7b14f52830b0b7b23b594b571087943c2cb4",
   "integrity": {
     "packagedWebFiles": 272,
     "unchangedWebFiles": 271,
@@ -37,10 +37,10 @@
     ]
   },
   "tests": {
-    "node": "40/40",
-    "browser": "28/28 (pool 23, warmup 3, Émilie 2) sur le bundle livré",
-    "completeLegacySuite": "90/90 (9,2 min) sur le bundle livré",
-    "nodeNote": "node --test evolution/media/tests/*.test.mjs après node evolution/media/coverage.mjs"
+    "node": "41/41",
+    "browserTargeted": "6/6 (modale combinée piscine 3, elliptique terrestre 1, Émilie 2) sur le bundle livré",
+    "browserFull": "28/28 sur le bundle 52dfc705 (1.4.3) ; la 1.4.4 n’ajoute qu’un affichage de durée, vérifié en ciblé",
+    "completeLegacySuite": "90/90 (9,2 min) sur le bundle 52dfc705"
   },
   "poolRecovery": {
     "reviewedTexts": 12,
@@ -203,16 +203,16 @@
   },
   "apkDeliveryRelease": {
     "mode": "release-signed-durable-media-identity",
-    "apk": "downloads/Yanis-Fitness-Evolution-1.4.3.apk",
-    "apkSha256": "31e950848b0379830c09e9a4061eab49c812869343050747a0e163944941141c",
-    "apkBytes": 24909288,
-    "versionName": "1.4.3",
-    "versionCode": 14,
-    "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.4.apk",
+    "apkSha256": "0d7123b45e5c5a6879f2a4962a47f6f00b039d908792da8d9b362013abf8daae",
+    "apkBytes": 24909293,
+    "versionName": "1.4.4",
+    "versionCode": 15,
     "changedEntries": [
       "AndroidManifest.xml",
       "assets/public/assets/index-CBCies4k.js"
     ],
+    "packagedWebSha256": "22109c5be90be9545038cc55f86d7b14f52830b0b7b23b594b571087943c2cb4",
     "webFiles": 272,
     "unchangedWebFiles": 271,
     "nativeDexFiles": 9,
@@ -224,9 +224,16 @@
     "alignmentVerified": true,
     "signers": 1,
     "certificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
-    "sameIdentityAs": "downloads/Yanis-Fitness-Evolution-1.4.2.apk",
-    "installsOver": "1.4.2 sans désinstallation",
-    "durableBackup": "evolution/signing/evolution-media-142.encrypted.json + recovery-key.txt (chez l’utilisateur)",
+    "sameIdentityAs": [
+      "downloads/Yanis-Fitness-Evolution-1.4.2.apk",
+      "downloads/Yanis-Fitness-Evolution-1.4.3.apk"
+    ],
+    "installsOver": "1.4.3 sans désinstallation",
+    "contains": [
+      "correction piscine",
+      "séance oubliée clôturée",
+      "durées lisibles dans la modale combinée"
+    ],
     "deviceTested": false
   },
   "forgottenWorkoutFix": {
@@ -245,5 +252,45 @@
       "review/emilie-fixed-w5-chrono.png"
     ],
     "remaining": "essai sur le téléphone de l’utilisateur"
+  },
+  "aliasOverlapReview": {
+    "reviewed": 79,
+    "groupsClosed": 0,
+    "visuallyValidated": 0,
+    "verdicts": {
+      "partial-mismatch": 27,
+      "instruction-identical-visual-not-differs": 45,
+      "consistent": 3,
+      "unresolved": 0,
+      "mismatch-kept-open": 1
+    },
+    "evidence": [
+      "review/alias-overlap-review.json",
+      "review/alias-overlap-targets.png",
+      "review/alias-overlap-equipment-19.png"
+    ],
+    "newGroups": [
+      "bodyweight-squat-drawn-with-dumbbell",
+      "curl-posture-and-grip-not-shown",
+      "equipment-shown-differs-from-prescription"
+    ],
+    "meaning": "Les 114 exercices sans dessin propre sont désormais tous revus (25 sans rapport + 79 noms proches + 10 identiques). Aucun groupe fermé, aucune validation visuelle."
+  },
+  "instructionPass": {
+    "date": "2026-09-23",
+    "groupsInstructed": 11,
+    "scope": [
+      "échauffement 2",
+      "piscine 3",
+      "tabata 2",
+      "étirements 4 (dont la relecture complète de 16 dessins)"
+    ],
+    "artifact": "review/stretch-assets-review.json + review/stretch-assets-16.png",
+    "decisionsAwaited": [
+      "règle de style avant toute création",
+      "échange d’image pour « main dans le dos » et « pigeon assis » (visuels déjà présents)",
+      "lacune explicite plutôt qu’un dessin terrestre dans la bibliothèque piscine",
+      "correction du contexte aquatique en tabata terre (ancrage identifié, non livrée)"
+    ]
   }
 }

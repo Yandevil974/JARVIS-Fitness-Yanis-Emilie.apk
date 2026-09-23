@@ -24,7 +24,7 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg','J5','Mx','JarvisStaleWorkout','JarvisStaleNotice','JarvisCloseStaleWorkout','JarvisCloseStaleWorkouts'].includes(n.id?.name)&&
+  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg','J5','Mx','G4','JarvisStepDuration','JarvisStaleWorkout','JarvisStaleNotice','JarvisCloseStaleWorkout','JarvisCloseStaleWorkouts'].includes(n.id?.name)&&
   !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
@@ -247,7 +247,7 @@ test('séance oubliée : la correction est prouvée, le groupe reste ouvert faut
  assert.match(group.observed,/40320:00/);
  assert.match(group.observed,/Clôturer votre séance/);
  assert.equal(group.fix.candidateBundleSha256,sha(candidate));
- assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.3.apk');
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.4.apk');
  assert.match(group.fix.remaining,/téléphone/);
  const spec=fs.readFileSync(new URL('./emilie-session-block.spec.mjs',import.meta.url),'utf8');
  // Le spec relève l'état réel : aucune attente du défaut n'y est écrite d'avance.
@@ -263,4 +263,19 @@ test('séance oubliée : la correction est prouvée, le groupe reste ouvert faut
  // Le mécanisme d'origine est hérité des bundles publiés : le candidat le corrige, il ne le contourne pas.
  const bundle=fs.readFileSync(new URL('../../../.cache/media-pool-syntax.mjs',import.meta.url),'utf8');
  assert.ok(bundle.includes('Votre séance en cours a été reprise.'));
+});
+
+test('durées de la modale combinée : lisibles, sans toucher aux prescriptions', () => {
+ assert.ok(candidate.includes('function JarvisStepDuration(sec)'));
+ assert.ok(candidate.includes('s.jsx("span",{children:JarvisStepDuration(k.seconds)})'));
+ assert.ok(!candidate.includes('children:[k.seconds," s"]}'));
+ // La même durée reste la même valeur : seule l'écriture change.
+ const fn=vm.runInNewContext(candidate.slice(candidate.indexOf('function JarvisStepDuration('),
+   candidate.indexOf('function G4('))+';JarvisStepDuration');
+ assert.equal(fn(45),'45 s');
+ assert.equal(fn(90),'1 min 30 s');
+ assert.equal(fn(1500),'25 min');
+ assert.equal(fn(3600),'60 min');
+ // Aucune autre écriture de durée n'est modifiée.
+ assert.ok(candidate.includes('Math.round(w.seconds/60)'));
 });

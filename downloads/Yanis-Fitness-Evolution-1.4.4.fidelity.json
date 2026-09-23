@@ -1,0 +1,76 @@
+{
+  "mode": "release-signed-new-durable-media-identity",
+  "identity": {
+    "appId": "app.yanis.fitness.evolution.home",
+    "appName": "Yanis Fitness Evolution",
+    "version": "1.4.2",
+    "versionCode": 13,
+    "certificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
+    "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+    "installation": "same package as 1.4.0, new signature: uninstall 1.4.0 then install this build, restore the JSON backup",
+    "userAuthorizedNewIdentity": true,
+    "authorizationDate": "2026-09-23",
+    "authorizationNote": "new key explicitly authorized by the user; the existing certificates are never regenerated"
+  },
+  "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "apkSha256": "0d7123b45e5c5a6879f2a4962a47f6f00b039d908792da8d9b362013abf8daae",
+  "apkBytes": 24909293,
+  "packagedWebSha256": "22109c5be90be9545038cc55f86d7b14f52830b0b7b23b594b571087943c2cb4",
+  "packagedWebDifference": "V 1.4.3 -> V 1.4.4: same corrections, plus the combined-session step durations are written in minutes and seconds instead of raw seconds",
+  "changedEntries": [
+    "AndroidManifest.xml",
+    "assets/public/assets/index-CBCies4k.js"
+  ],
+  "webFiles": 272,
+  "unchangedWebFiles": 271,
+  "nativeDexFiles": 9,
+  "byteIdenticalDexFiles": 9,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "alignmentVerified": true,
+  "version": "1.4.4",
+  "versionCode": 15,
+  "releaseCertificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
+  "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+  "signerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "approvedHomeIncluded": true,
+  "generalConversationalAiIncluded": false,
+  "deviceTested": false,
+  "externalPrivateBackupRetentionConfirmed": false,
+  "durableBackup": {
+    "committedCiphertext": "evolution/signing/evolution-media-142.encrypted.json",
+    "restoreCommand": "python3 evolution/android/signing-media.py restore --recovery-key-file <recovery-key.txt>",
+    "plaintextArchive": "downloads/Yanis-Fitness-Evolution-1.4.2-SAUVEGARDE-PRIVEE.zip (git-ignored)"
+  },
+  "forgottenWorkoutFix": {
+    "decision": "user, 23 September 2026: close the stale session automatically as partial",
+    "behaviour": "a strength session started on another day is closed as partial on load (or at the next start/timer click), keeps its own date and its completed sets, and no longer blocks the program or the guides",
+    "verifiedBy": [
+      "evolution/media/tests/emilie-session-block.spec.mjs",
+      "evolution/media/review/REVIEW-EMILIE-BLOCAGE.md"
+    ]
+  },
+  "supersedes": {
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.3.apk",
+    "reason": "same identity, aquatic correction and forgotten-workout fix; this build adds the combined-session duration display fix"
+  },
+  "displayFix": {
+    "finding": "combo-step-seconds-display",
+    "behaviour": "combined-session step rows show 25 min / 1 min 30 s / 45 s instead of 1500 s; the timed value itself is unchanged",
+    "verifiedBy": [
+      "evolution/media/tests/pool-candidate.test.mjs"
+    ]
+  },
+  "installNote": "same package AND same signature as 1.4.3/1.4.2: installs straight over 1.4.3 without uninstalling; coming from 1.4.0 or 1.4.1, uninstall first and restore the JSON backup"
+}

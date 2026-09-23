@@ -115,7 +115,9 @@
       "baselinePath": "/media/3bcaad5ec7cdf892.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 12,
-      "findingGroups": [],
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
       "candidatePath": "/media/3bcaad5ec7cdf892.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -173,7 +175,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 37,
       "findingGroups": [
-        "face-pull-to-pulldown"
+        "face-pull-to-pulldown",
+        "equipment-shown-differs-from-prescription"
       ],
       "candidatePath": "/media/ca785b4cf81c98fa.gif",
       "candidateStatus": "no-targeted-correction",
@@ -438,7 +441,8 @@
       "reviewClip": 15,
       "findingGroups": [
         "glute-kickback-to-triceps",
-        "shipped-maps-contradict-each-other"
+        "shipped-maps-contradict-each-other",
+        "equipment-shown-differs-from-prescription"
       ],
       "candidatePath": "/media/489169360e044c48.gif",
       "candidateStatus": "no-targeted-correction",
@@ -706,7 +710,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 15,
       "findingGroups": [
-        "glute-kickback-to-triceps"
+        "glute-kickback-to-triceps",
+        "equipment-shown-differs-from-prescription"
       ],
       "candidatePath": "/media/489169360e044c48.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1348,9 +1353,12 @@
       "id": "curl-poulie-basse-supination",
       "name": "Curl poulie basse, supination",
       "baselinePath": "/media/882c9c361686a9c9.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown",
+        "equipment-shown-differs-from-prescription"
+      ],
       "candidatePath": "/media/882c9c361686a9c9.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1637,7 +1645,9 @@
       "baselinePath": "/media/36c6cb37445d3880.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 11,
-      "findingGroups": [],
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown"
+      ],
       "candidatePath": "/media/36c6cb37445d3880.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1646,9 +1656,12 @@
       "id": "curl-poulie-basse",
       "name": "Curl poulie basse",
       "baselinePath": "/media/882c9c361686a9c9.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown",
+        "equipment-shown-differs-from-prescription"
+      ],
       "candidatePath": "/media/882c9c361686a9c9.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1779,7 +1792,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 11,
       "findingGroups": [
-        "standing-curl-for-scott-bench"
+        "standing-curl-for-scott-bench",
+        "curl-posture-and-grip-not-shown"
       ],
       "candidatePath": "/media/36c6cb37445d3880.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1791,7 +1805,9 @@
       "baselinePath": "/media/cf312b839f6da027.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 39,
-      "findingGroups": [],
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
       "candidatePath": "/media/cf312b839f6da027.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2104,9 +2120,11 @@
       "id": "rowing-assis-cable-unilateral",
       "name": "Rowing assis câble unilatéral",
       "baselinePath": "/media/0a5625b92247ed69.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
       "candidatePath": "/media/0a5625b92247ed69.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2117,7 +2135,9 @@
       "baselinePath": "/media/36c6cb37445d3880.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 11,
-      "findingGroups": [],
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown"
+      ],
       "candidatePath": "/media/36c6cb37445d3880.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2189,7 +2209,9 @@
       "baselinePath": "/media/36c6cb37445d3880.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 11,
-      "findingGroups": [],
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown"
+      ],
       "candidatePath": "/media/36c6cb37445d3880.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2419,7 +2441,9 @@
       "baselinePath": "/media/78f9aee57a4101b1.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 23,
-      "findingGroups": [],
+      "findingGroups": [
+        "bodyweight-squat-drawn-with-dumbbell"
+      ],
       "candidatePath": "/media/78f9aee57a4101b1.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2443,7 +2467,9 @@
       "baselinePath": "/media/bc4d9bed4bbb590a.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 34,
-      "findingGroups": [],
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
       "candidatePath": "/media/bc4d9bed4bbb590a.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false

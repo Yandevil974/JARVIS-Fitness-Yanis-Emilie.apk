@@ -123,6 +123,16 @@ function Bg(i,o){`);
     'pattern:p?"bridge":"row",img:p?JarvisReviewedMedia({id:"pont-fessier-au-sol-activation"}).path:Jn.mobilite');
   source = once(source,'img:Jn.approche,instruction:',
     'img:(JarvisReviewedMedia(l)||{}).path||Jn.approche,exerciseId:l?.id,mediaRole:"approach",instruction:');
+  // Affichage herite : dans la modale de seance combinee, chaque ligne d'etape
+  // affichait la duree brute en secondes (« 1500 s ») alors que le bloc annonce
+  // « 25 min » et que le chrono de la meme etape affiche 25:00. Correction
+  // d'affichage uniquement : aucune duree, aucun pas, aucune prescription changes.
+  const durationHelper = String.raw`
+function JarvisStepDuration(sec){const s=Math.max(0,Math.round(Number(sec)||0));if(s<60)return s+" s";const m=Math.floor(s/60),r=s%60;return r?m+" min "+r+" s":m+" min"}`;
+  source = once(source, 'function G4(', durationHelper + '\nfunction G4(');
+  source = once(source, 's.jsxs("span",{children:[k.seconds," s"]})',
+    's.jsx("span",{children:JarvisStepDuration(k.seconds)})');
+
   // Une seance de musculation commencee et jamais cloturee bloquait tout :
   // elle etait reprise d'office des semaines plus tard (series deja validees
   // affichees), et toute minuterie guidee etait refusee au profit de la modale
