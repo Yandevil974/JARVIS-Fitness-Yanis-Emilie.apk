@@ -14,6 +14,7 @@ import Recovery from "./pages/Recovery.jsx";
 import Profile from "./pages/Profile.jsx";
 import Force from "./pages/Force.jsx";
 import Nutrition from "./pages/Nutrition.jsx";
+import LegacyViews from "./pages/LegacyViews.jsx";
 import { advanceTimer } from "./engine/timer.js";
 import {
   today,
@@ -41,6 +42,12 @@ const NAV = [
   ["cardio", "Waves", "Cardio & piscine"],
   ["recovery", "Leaf", "Récupération"],
   ["team", "UsersRound", "Mon équipe"],
+  ["measurements", "Ruler", "Mensurations & poids"],
+  ["meals", "Utensils", "Repas jour par jour"],
+  ["gallery", "Images", "Galerie de transformation"],
+  ["calendar", "CalendarDays", "Calendrier 365 jours"],
+  ["goals", "Trophy", "Objectifs"],
+  ["assessment", "ClipboardCheck", "Bilan de départ"],
 ];
 const PAGE = {
   dashboard: Dashboard,
@@ -54,6 +61,12 @@ const PAGE = {
   profile: Profile,
   nutrition: Nutrition,
   team: Team,
+  measurements: LegacyViews,
+  meals: LegacyViews,
+  gallery: LegacyViews,
+  calendar: LegacyViews,
+  goals: LegacyViews,
+  assessment: LegacyViews,
 };
 export default function App() {
   const {
