@@ -2,7 +2,17 @@
 
 **Mis à jour le 23 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
 
-## Dernière avancée — revue longue tracée et premier GIF correctement réassocié
+## Dernière avancée — French press EZ, vignettes et aperçu de repos
+
+Relecture ciblée de **13 GIF courts / 26 images**, plus deux vignettes d’origine. [Compte rendu et comparatif](review/REVIEW-SHORT-FOCUS.md), registre SHA [short-focus.json](review/short-focus.json). Les 46 GIF longs déjà revus ne sont pas recomptés comme nouveaux.
+
+Le **French press barre EZ** reprend maintenant son dessin couché avec barre EZ, au lieu de la poulie. Le conseil original embarqué « barre vers le front » et les deux positions ont été vérifiés. Ce GIF existait déjà ; aucune création ni retouche. Le pont au sol corrigé précédemment est conservé. **Deux identifiants seulement changent ; les 207 autres résolutions restent identiques.**
+
+Pour ces deux identifiants, les bonnes vignettes sont maintenant dans la bibliothèque ; l’aperçu « Ensuite » pendant le repos et son zoom suivent le même visuel, sans modifier les données. Fiches animées/pause et séances sauvegardées/rechargées testées dans les deux profils. **Les échauffements/approches, les images directes des autres chronos et les consignes génériques du pont restent à traiter.** Les dips n’ont pas encore de remplacement satisfaisant intégré ; **36 groupes ouverts**, aucune couverture finale annoncée.
+
+**26 tests Node + 22 navigateur réussis** (14 ciblés et 8 accueil/11 rubriques). La comparaison accueil admet explicitement le seul libellé de carte du pont passé d’anatomie générique à guide humain, après vérification stricte de la bonne vignette. Détails et limites : [candidate/validation.json](candidate/validation.json). **271/272 fichiers web identiques, APK publié inchangé**, aucune signature créée, aucun test physique Android. Passation actualisée et présentée à chaque étape.
+
+## Étape précédente — revue longue et première réassociation (historique)
 
 **46 animations longues / 588 images internes examinées** sur planches complètes ordonnées, dont quatre animations revues en agrandissement. Ce n’est pas une validation clinique ni une lecture réelle de chaque animation dans toutes les vues. Registre avec hachages, indices et décisions : [review/long-animations.json](review/long-animations.json) ; compte rendu lisible : [review/REVIEW-ANIMATIONS.md](review/REVIEW-ANIMATIONS.md).
 

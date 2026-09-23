@@ -1,5 +1,7 @@
 # Revue des animations longues — 23 septembre 2026
 
+> Compte rendu du passage de revue longue. La suite cumulative (French press, vignettes et repos) est dans [REVIEW-SHORT-FOCUS.md](REVIEW-SHORT-FOCUS.md) ; les résultats courants sont dans [validation.json](../candidate/validation.json). Les limites de surfaces mentionnées ici décrivent le passage précédent.
+
 **46 GIF / 588 images internes examinés sur planches intégrales ordonnées.** 43 séquences de 12 images et 3 séquences de 24 images. Ce n’est ni la validation finale de tous les exercices, ni une certification anatomique, ni un test de chaque animation sur toutes les surfaces Android.
 
 Les dessins ont été lus sur 12 planches à vignettes de 150 px, puis quatre séquences (1, 12, 25, 35) agrandies à la résolution source. Les doubles contours visibles proviennent des fondus du fichier. Le passage dernière/première image a été comparé, sans prétendre avoir regardé tous les GIF en lecture réelle. Les variantes incertaines restent ouvertes.

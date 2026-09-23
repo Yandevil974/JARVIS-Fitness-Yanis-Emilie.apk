@@ -1,65 +1,73 @@
-# Candidat ciblé — piscine/cardio et pont au sol (non livré)
+# Candidat ciblé — piscine, pont au sol et French press EZ (non livré)
 
-23 septembre 2026. Continuité de la **1.4.0 complète**, sans reconstruction depuis l’ancienne interface React, sans nouvelle signature ni APK. La 1.4.0 publiée est conservée intacte.
+23 septembre 2026. Continuité de la **1.4.0 complète**, sans reconstruction depuis l’ancienne interface React, sans nouvelle signature ni APK. La version publiée est intacte.
 
-## Nouvelle réassociation contrôlée
+## Deux réassociations exactes, aucun remplacement par famille
 
-`association-overrides.json` cible uniquement **`pont-fessier-au-sol-activation`**. Après revue des 12 images et agrandissement du GIF existant `/media/8eecb0152081ff26.gif`, `Kh` le retourne pour le pont au sol. Le vrai exercice pieds sur banc conserve son ancien visuel. Aucune définition, charge, consigne, séance ou image binaire n’est modifiée. Le build vérifie identifiant, nom, ancienne association et SHA du média réutilisé. Les 208 autres résolutions d’exercices restent identiques.
+| Identifiant | Visuel corrigé, déjà dans l’APK | Justification |
+|---|---|---|
+| `pont-fessier-au-sol-activation` | `/media/8eecb0152081ff26.gif` | Pont bilatéral au sol sans charge ; 12 images et agrandissement revus. Le vrai pont pieds sur banc reste inchangé. |
+| `french-press-barre-ez` | `/media/ea226c444f72de0f.gif` | Extension triceps couché avec barre EZ, deux positions revues ; le guide original embarqué indique déjà ce GIF et « Coudes fixes, barre vers le front ». La résolution effective choisissait à tort la poulie. |
 
-**Portée limitée :** fiche et composants passant par `Kh/s5/gi`. La vignette de bibliothèque utilise encore `k.gif` et reste anatomique pour cet identifiant. Les consignes génériques bridge mentionnent encore banc/sol et charge ; les images directes ou chronos enregistrés sont à traiter séparément. Pas de promesse de correction sur toutes les surfaces.
+Provenance : `association-overrides.json`, `../review/long-animations.json`, `../review/short-focus.json`. Les **207 autres résolutions** restent identiques. Ni les haltères, ni la poulie, ni les variantes avec pullover/California press ne reçoivent cette barre EZ par déduction. Plusieurs restent incorrectes : ce n’est pas une validation de ces variantes.
 
-## Ce qui change, uniquement dans le candidat web
+**Pas de nouveaux médias, retouche, miroir, rotation ni photos ajoutées.** Les deux GIF et leurs vignettes WebP d’origine sont réutilisés octet pour octet. Identifiants, noms, anciennes associations et SHA sont contrôlés ; les fichiers effectivement extraits sont vérifiés avant écriture du bundle candidat. Aucun exercice, prescription, charge ou historique modifié.
 
-- `bg` : en contexte explicite `pool`, ne cherche plus dans les guides cardio en dernier recours. Hors piscine, son comportement antérieur est conservé.
-- `v5` : le visuel et le guide du chrono aquatique sont résolus à partir de l’étape actuelle et de son contexte, au lieu de faire confiance à une ancienne `step.img`. Le zoom utilise le même visuel. **Aucune réécriture du minuteur enregistré**, des consignes, des durées ou des données.
-- Dans une séance mixte, le segment de l’étape est prioritaire : une vraie étape cardio/post/transition n’est pas transformée en piscine. Un ancien minuteur mixte sans segment identifiable n’est pas deviné.
-- Une récupération explicite « marche aquatique » reprend l’image piscine existante. Les noms génériques non résolus (« Récupération active », « Repos »…) montrent dans le chrono un **message de lacune**, jamais un elliptique ou une photo générique présentée comme la démonstration. Cela ne satisfait PAS encore la couverture demandée par l’utilisateur.
+## Surfaces corrigées et limites
 
-**Pas de nouveaux médias, pas de rotation ou retouche d’image, aucun remplacement par les photos proposées.** Les images aquatiques existantes ne deviennent pas « validées » grâce à ce code : plusieurs sont déjà signalées erronées dans l’audit. Le statut du helper l’indique explicitement.
+- `Kh` consulte uniquement les deux identifiants revus. Les fiches et les démonstrations de séance qui l’utilisent reçoivent le visuel corrigé.
+- `Z5` applique une **copie de présentation**, sans muter le catalogue, pour que les deux cartes de bibliothèque utilisent les bonnes vignettes. Le pont passe du libellé « ANATOMIE RÉALISTE » à « GUIDE HUMAIN » parce qu’il affiche désormais le dessin de son mouvement.
+- `k5` donne priorité à la même association exacte dans l’aperçu **« ENSUITE » du repos** ; le zoom reprend cette image. Séance sauvegardée et minuteur de repos ne sont pas réécrits.
+- **Ce n’est pas une correction universelle des minuteurs guidés** : les images directes `step.img` non aquatiques, les échauffements/approches et les anciens chemins sans identifiant restent à traiter séparément.
+- Les consignes génériques du pont (`Yu.bridge`) mentionnent encore banc/sol et charge ; elles ne sont pas corrigées dans ce passage. Le groupe pont reste ouvert.
+- Le French press montre **deux positions clés**, pas une vidéo continue. La lecture/pause est testée, pas une certification clinique ni la fidélité de gel sur l’image exacte courante.
 
-## Protections de continuité
+## Protection piscine conservée
 
-- SHA de l’APK et du bundle 1.4.0 exigés ; refus d’un autre APK, d’un bundle modifié ou d’une double application du correctif.
-- **271/272 fichiers web strictement identiques**, seul `assets/public/assets/index-CBCies4k.js` change.
-- Comparaison AST : toutes les autres instructions de premier niveau sont identiques octet pour octet. Seuls `bg`, `v5`, `Kh` et le helper isolé diffèrent ; catalogue, accueil, moteur des chronos, fonctions des sept étapes inchangés.
-- Tests vérifiant les 420 étapes piscine sans sélection cardio. Cette propriété est une séparation de contextes, **pas une certification anatomique**.
-- APK livré inchangé ; aucun outil de signature n’est appelé. Le dossier privé 1.4.0 reste absent dans cette reprise ; aucune clé créée.
+- `bg` : en contexte explicite `pool`, ne cherche plus les guides cardio en dernier recours. Hors piscine, comportement antérieur conservé.
+- `v5` : image, guide et zoom du chrono aquatique sont résolus selon l’étape et son contexte au lieu de faire confiance à une ancienne `step.img`. **Aucune réécriture des données, consignes ou durées.**
+- Dans une séance mixte, le segment est prioritaire : une vraie étape cardio/post/transition n’est pas transformée en piscine. Un ancien chrono mixte sans segment identifiable n’est pas deviné.
+- « Marche aquatique » utilise l’image piscine existante. Une récupération générique non résolue montre un **message de lacune**, jamais un elliptique ou une autre démonstration trompeuse. Cela ne satisfait PAS la couverture finale demandée.
+- Les images aquatiques anciennes ne deviennent pas validées grâce à cette séparation de contextes : plusieurs sont signalées erronées.
 
-## Contrôles effectués
+## Intégrité et contrôles
 
-Voir [validation.json](validation.json).
+Rapport courant : [validation.json](validation.json). Bundle candidat SHA **`148cef273a0e3223cc0c3bdb9bdba320163cf1da7582194fcc746155c46b52e8`**.
 
-- **22 tests Node réussis** : 9 caractérisations/provenance de la version publiée + 9 tests du candidat + 4 tests de traçabilité de revue, dont intégrité et absence de mutation.
-- **8 tests navigateur ciblés réussis en un passage complet** : deux profils × deux thèmes, ancienne image elliptique dans le chrono piscine, image/consigne/zoom, rechargement, pause/reprise, passage à une vraie étape cardio, persistance et isolation des profils ; cas générique signalé comme incomplet. Deux scénarios supplémentaires ouvrent la fiche du pont au sol dans les deux profils, vérifient son mouvement par captures du rendu, sa pause/reprise, puis la conservation du pont pieds sur banc. Données de test fictives, pas de sauvegarde utilisateur.
-- **8 tests navigateur de l’accueil existants relancés avec succès sur ce candidat**, comparé à la 1.4.0 : orbe bleu, rotation, thèmes, priorités du chrono et parcours des 11 rubriques pour les deux profils.
-- Captures de chrono Yanis clair/Émilie sombre examinées : visuel aquatique visible, pas d’elliptique à cette étape. Cela ne remplace pas la revue sémantique de toutes les images.
-- Les premiers passages de la nouvelle suite ont échoué à cause des tests : bouton différent en pause (« Reprendre le chrono »), deux boutons « Fermer », vérification avant écriture différée, puis mensuration fictive incomplète (`values` absent). Sélecteurs, attente de persistance et fixture ont été corrigés ; validation du schéma de la fixture ajoutée. **Aucun changement de code applicatif pour rendre ces tests verts.**
-- Dans cette reprise, les nouveaux tests de fiche ont d’abord ciblé un bouton au lieu de l’onglet Bibliothèque, puis comparé des captures canvas ne reflétant pas la lecture du GIF. Le rôle accessible a été corrigé et la lecture est désormais vérifiée par captures du rendu réel. Les deux tests passent, puis le passage complet de 8 tests ciblés et les 8 tests accueil ont été relancés avec succès. Pas de modification applicative pour contourner ces échecs de tests.
-- Ce ne sont ni les 90 tests complets de livraison relancés, ni des tests Android/Doze/OEM. Aucun nouveau APK testé sur appareil.
+- APK et bundle 1.4.0 exigés par SHA ; refus d’un autre APK, d’un bundle modifié ou d’une double application.
+- **271/272 fichiers web identiques** ; seul `assets/public/assets/index-CBCies4k.js` change. Les fonctions `bg`, `v5`, `Kh`, `Z5`, `k5` et les helpers isolés constituent l’unique périmètre AST autorisé. Accueil, catalogue, moteurs de données/chronos et fonctions des sept étapes inchangés. Les deux changements de vues sont aussi comparés exactement à leurs expressions de départ.
+- **26 tests Node réussis** : 9 caractérisations/provenance, 11 candidat, 6 traçabilité. Les 209 résolutions, les copies de présentation immuables, les 420 étapes piscine et les deux vignettes sont contrôlées.
+- **14 tests navigateur ciblés réussis en un passage complet (2,1 min)** : 6 piscine, 4 bibliothèque/fiches/animation, 4 séances sauvegardées/aperçu de repos/zoom/rechargement, dans les deux profils. Thèmes clair/sombre couverts ; données fictives validées par le schéma.
+- **8 tests accueil/11 rubriques réussis (57,9 s)** sur ce même candidat, face au web intact de la 1.4.0. L’option `MEDIA_REVIEW_CANDIDATE=1` autorise uniquement le changement intentionnel du libellé de la carte du pont : les libellés et images précis des deux versions sont d’abord vérifiés, puis cette seule chaîne contextualisée est normalisée. Aucune suppression globale des libellés ; sans option, comparaison historique inchangée.
+- La capture Émilie sombre du French press a été affichée et examinée : dessin couché avec barre EZ, tête et appuis visibles. Comparatif des deux positions dans `../review/french-press-comparison.jpg`.
+- Les premiers tests de séance ont rejeté la fixture `kg` (convention invalide), puis une injection de fixture en cours de navigation a été écrasée par la sauvegarde au déchargement. Corrigé **dans les tests seulement** : conventions existantes et cas initiaux séparés par exercice/profil, avec vrai rechargement sans modification du stockage. La comparaison accueil a ensuite détecté le libellé du pont attendu ; l’exception précise ci-dessus a été ajoutée. Aucun contournement applicatif pour rendre les tests verts.
+- **Ni les 90 tests complets de livraison ni Android physique relancés.** Aucun nouvel APK construit ou signé. Dossier privé de signature toujours absent ; aucune clé créée.
 
 ## Reproduction
 
 ```bash
 npm ci --prefix JARVIS-Fitness-Source --ignore-scripts
 node evolution/media/candidate/build.mjs
+node evolution/media/coverage.mjs
 node --test evolution/media/tests/*.test.mjs
+PYTHONPATH=.cache/image-tools python3 evolution/media/review_frames.py --short-focus --tile 300
 ```
 
-La sortie web est exclusivement `.cache/media-pool-candidate/`. Servir **seulement ce dossier** pour les tests (jamais le dépôt ou `.private`). Exemple sur le port 5186 : `python3 -m http.server 5186 --bind 0.0.0.0 --directory .cache/media-pool-candidate`. Pour la comparaison de l’accueil, extraire le web de la 1.4.0 sans modification et le servir séparément sur 5187.
+Servir seulement `.cache/media-pool-candidate/` sur 5186 et le web intact extrait de la 1.4.0 sur 5187, **jamais le dépôt ou `.private`**. Par exemple : `python3 -m http.server 5186 --bind 0.0.0.0 --directory .cache/media-pool-candidate`.
 
 ```bash
-# Chromium de test disponible via CHROMIUM_EXECUTABLE_PATH.
-node JARVIS-Fitness-Source/node_modules/@playwright/test/cli.js test \
+LD_LIBRARY_PATH="$PWD/.cache/browser-libs/lib" \
+  node JARVIS-Fitness-Source/node_modules/@playwright/test/cli.js test \
   --config evolution/media/candidate/playwright.config.mjs
-COMPLETE_URL=http://127.0.0.1:5186 HOME_REFERENCE_URL=http://127.0.0.1:5187 \
+MEDIA_REVIEW_CANDIDATE=1 LD_LIBRARY_PATH="$PWD/.cache/browser-libs/lib" \
+  CHROMIUM_EXECUTABLE_PATH=/tmp/chromium \
+  COMPLETE_URL=http://127.0.0.1:5186 HOME_REFERENCE_URL=http://127.0.0.1:5187 \
   node JARVIS-Fitness-Source/node_modules/@playwright/test/cli.js test \
   --config evolution/home/playwright.config.mjs evolution/home/tests/home.spec.mjs
 ```
 
-Ici : Chromium 138.0.7204.0 fourni par `@sparticuz/chromium@138.0.2`, `/tmp/chromium` et `LD_LIBRARY_PATH=$PWD/.cache/browser-libs/lib` (bibliothèques al2023 de ce même paquet), `CHROMIUM_EXECUTABLE_PATH=/tmp/chromium` pour la suite accueil. Les dépendances/caches peuvent disparaître à la reprise.
+Chromium 138.0.7204.0 via `@sparticuz/chromium@138.0.2`, `/tmp/chromium`, bibliothèques al2023 du même paquet. Les caches peuvent disparaître.
 
-## Ce qui reste ouvert
+## Suite
 
-**Les 36 groupes restent ouverts.** Il faut encore compléter les médias manquants, supprimer les mauvaises associations pool/sol dans les autres rubriques, reproduire le parcours exact signalé par l’utilisateur et achever la validation par association et surface. La revue sur planches des 46 GIF longs/588 images est désormais tracée dans `../review/long-animations.json`, pas assimilée à une lecture réelle sur toutes les surfaces. Les minuteries mixtes anciennes sans segment réclament un traitement explicite, pas une déduction hasardeuse. Ne pas annoncer « tous les exercices corrigés » ni livrer ce seul candidat comme mise à jour finale.
-
-Prochaine étape : poursuivre les corrections exactes et la vérification des associations restantes, en conservant les visuels valables ; priorité dips/triceps et récupérations aquatiques. Mettre à jour et présenter la passation **à chaque étape**, en continuant dans ce chat tant qu’il reste utilisable.
+**36 groupes encore ouverts.** Poursuivre les variantes triceps/fessiers, les dessins des dips, les consignes du pont, puis les échauffements/approches et images directes des chronos. Préserver les visuels valables. Aucun remplacement photographique global autorisé. Les autres catégories et chaque surface restent à valider ; pas d’annonce « tous les exercices corrigés ». Actualiser et présenter `PASSATION.md` à chaque étape. L’IA conversationnelle vient en dernier.

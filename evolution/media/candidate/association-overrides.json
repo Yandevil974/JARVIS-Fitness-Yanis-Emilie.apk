@@ -9,7 +9,21 @@
       "assetSha256": "8eecb0152081ff26fc29f4ecccb779e99ac42f8aec7cfbed46fc6c0ccfb21a31",
       "level": "exact",
       "review": "review/long-animations.json, clip 25: all 12 frames, enlarged review; bilateral bodyweight floor bridge, no bench",
-      "preservation": "Existing packaged anatomical GIF unchanged; exercise definition/instructions unchanged; glute-bridge-pieds-sur-banc remains on its existing bench GIF"
+      "preservation": "Existing packaged anatomical GIF unchanged; exercise definition/instructions unchanged; glute-bridge-pieds-sur-banc remains on its existing bench GIF",
+      "thumbnailPath": "/thumbs/8eecb0152081ff26.webp",
+      "thumbnailSha256": "952415f8d26d4a608b8be5e3955a252b8ea6d5af44cdf4e993166ace303b87f0"
+    },
+    {
+      "id": "french-press-barre-ez",
+      "name": "French press barre EZ",
+      "baselinePath": "/media/4c2b19fa924f90a8.gif",
+      "path": "/media/ea226c444f72de0f.gif",
+      "assetSha256": "ea226c444f72de0fcc6dbd84cc42ea2abb43bfc269027c99bc7b78b8e12a8cbf",
+      "level": "exact",
+      "review": "review/short-focus.json, clip 10: both frames reviewed, coherent orientation/supports; exact existing bundled guide prescribes bar toward forehead. Two key poses, not continuous motion.",
+      "preservation": "Reuse unchanged packaged drawing only for this ID. Cable, dumbbell, pullover and California press variants remain unchanged; no program instructions/data altered.",
+      "thumbnailPath": "/thumbs/ea226c444f72de0f.webp",
+      "thumbnailSha256": "3c19534d8cc9de1a02d6c2a0899031eb7470a811da18608a219c8758941b7000"
     }
   ]
 }

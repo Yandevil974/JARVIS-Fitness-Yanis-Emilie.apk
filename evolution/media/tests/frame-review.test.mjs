@@ -35,13 +35,43 @@ test('209-entry coverage cannot drop unresolved exercises or mark a reviewed bas
  assert.equal(stored.count,209);assert.equal(new Set(stored.exercises.map(e=>e.id)).size,209);
  assert.deepEqual(stored.exercises.map(e=>e.id),i.exercises.map(e=>e.id));
  assert.ok(stored.exercises.every(e=>e.finalAccepted===false));
- assert.deepEqual(stored.exercises.filter(e=>e.candidateStatus!=='no-targeted-correction').map(e=>e.id),['pont-fessier-au-sol-activation']);
+ assert.deepEqual(stored.exercises.filter(e=>e.candidateStatus!=='no-targeted-correction').map(e=>e.id).sort(),['french-press-barre-ez','pont-fessier-au-sol-activation']);
 });
 test('reuse requires a fully reviewed matching source, not the superficially related step-up or band candidates',()=>{
- const overrides=read('candidate/association-overrides.json').overrides;assert.equal(overrides.length,1);
+ const overrides=read('candidate/association-overrides.json').overrides;assert.equal(overrides.length,2);
  const [correction]=overrides,c=r.clips.find(c=>c.path===correction.path);
  assert.equal(c.number,25);assert.equal(c.enlargedReview,true);assert.equal(c.assetSha256,correction.assetSha256);
  assert.equal(c.frames.length,12);assert.notEqual(c.path,correction.baselinePath);
  assert.ok(r.clips.find(c=>c.number===21).decisionNotes.includes('non intégrée'));
  assert.ok(r.clips.find(c=>c.number===33).decisionNotes.includes('Non intégrée'));
+});
+
+test('focused short review traces all 26 frames and does not call unassigned media unused',()=>{
+ const short=read('review/short-focus.json');assert.equal(short.releaseReady,false);
+ assert.equal(short.clipCount,13);assert.equal(short.reviewedFrameCount,26);
+ assert.equal(short.baselineApkSha256,a.baselineSha256);
+ assert.equal(new Set(short.clips.map(c=>c.path)).size,13);
+ for(const c of short.clips){
+  const asset=a.assets.find(e=>e.path===c.path);
+  assert.equal(c.assetSha256,asset.sha256);assert.equal(c.frameCount,2);
+  assert.deepEqual(c.reviewedFrameIndices,[0,1]);assert.deepEqual(c.frames.map(f=>f.index),[0,1]);
+  assert.deepEqual(c.frames.map(f=>f.durationMs),asset.durationsMs);
+  assert.ok(c.frames.every(f=>/^[a-f0-9]{64}$/.test(f.rgbaSha256)));
+  assert.deepEqual(c.baselineExerciseIds,i.exercises.filter(e=>e.resolved?.path===c.path).map(e=>e.id));
+  assert.deepEqual(c.baselinePoolGuides,i.poolGuides.filter(e=>e.img===c.path).map(e=>e.t));
+  assert.equal(c.finalAccepted,false);assert.ok(c.decisionNotes.length>30);
+ }
+});
+test('French press reuse is pinned to both reviewed poses, thumbnail and exact original prescription hint',async()=>{
+ const {readBaseline}=await import('../candidate/build.mjs');const short=read('review/short-focus.json');
+ assert.ok(readBaseline().includes(short.frenchPressEvidence.existingSourceHint));
+ const correction=read('candidate/association-overrides.json').overrides.find(e=>e.id==='french-press-barre-ez');
+ const clip=short.clips.find(e=>e.path===correction.path);
+ assert.equal(clip.number,10);assert.equal(clip.assetSha256,correction.assetSha256);
+ assert.equal(clip.frames.length,2);assert.notEqual(clip.path,correction.baselinePath);
+ for(const entry of read('candidate/association-overrides.json').overrides){
+  const thumb=short.reviewedThumbnails.find(t=>t.path===entry.thumbnailPath);
+  assert.equal(thumb.sha256,entry.thumbnailSha256);
+  assert.equal(entry.thumbnailPath,entry.path.replace('/media/','/thumbs/').replace('.gif','.webp'));
+ }
 });

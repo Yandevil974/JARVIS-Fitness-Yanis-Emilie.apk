@@ -23,7 +23,7 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','Kh','createPoolMedia'].includes(n.id?.name)&&
+  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia'].includes(n.id?.name)&&
   !n.declarations?.some(d=>d.id.name==='JarvisPoolMedia')).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
@@ -75,17 +75,17 @@ test('web candidate changes exactly one of 272 packaged files; delivered APK is 
  assert.equal(sha(fs.readFileSync(root+baseline.apk)),baseline.apkSha256);
 });
 
-test('only the explicitly reviewed floor-bridge ID changes across all 209 exercise resolutions',()=>{
+test('only the two explicitly reviewed IDs change across all 209 exercise resolutions',()=>{
  const eo=new Map(inventory.exercises.filter(e=>e.resolved).map(e=>[e.id,{path:e.resolved.path,name:e.resolved.name,level:e.resolved.level}]));
  const context=vm.createContext({eo});
- vm.runInContext(fn(original,tree,'Kh').replace('function Kh(','function oldKh(')+fn(candidate,patched,'Kh'),context);
+ vm.runInContext(fn(original,tree,'Kh').replace('function Kh(','function oldKh(')+fn(candidate,patched,'JarvisReviewedMedia')+fn(candidate,patched,'Kh'),context);
  const changed=[];
  for(const exercise of inventory.exercises){
   context.exercise=freeze(structuredClone(exercise));
   const result=vm.runInContext('[oldKh(exercise),Kh(exercise)]',context);
   if(JSON.stringify(result[0])!==JSON.stringify(result[1]))changed.push(exercise.id);
  }
- assert.deepEqual(changed,['pont-fessier-au-sol-activation']);
+ assert.deepEqual(changed.sort(),['french-press-barre-ez','pont-fessier-au-sol-activation']);
  context.exercise={id:'pont-fessier-au-sol-activation'};
  assert.equal(vm.runInContext('Kh(exercise).path',context),'/media/8eecb0152081ff26.gif');
  context.exercise={id:'glute-bridge-pieds-sur-banc'};
@@ -93,4 +93,29 @@ test('only the explicitly reviewed floor-bridge ID changes across all 209 exerci
  context.exercise={id:'unknown',name:'Pont fessier au sol — activation'};
  assert.equal(vm.runInContext('Kh(exercise)',context),null);
  assert.equal(vm.runInContext('Kh(null)',context),null);
+});
+
+
+test('library view copies change only reviewed GIF fields and never mutate frozen catalog entries',()=>{
+ const ctx=vm.createContext({});
+ vm.runInContext(fn(candidate,patched,'JarvisReviewedMedia')+fn(candidate,patched,'JarvisReviewedView'),ctx);
+ let changed=0;
+ for(const exercise of inventory.exercises){
+  ctx.exercise=freeze(structuredClone(exercise));const before=JSON.stringify(ctx.exercise);
+  const view=vm.runInContext('JarvisReviewedView(exercise)',ctx);
+  if(['french-press-barre-ez','pont-fessier-au-sol-activation'].includes(exercise.id)){
+   changed++;assert.notEqual(view,ctx.exercise);
+   assert.equal(view.gif,exercise.id==='french-press-barre-ez'?'/media/ea226c444f72de0f.gif':'/media/8eecb0152081ff26.gif');
+   const {gif,...rest}=view,{gif:old,...originalRest}=ctx.exercise;assert.deepEqual(rest,originalRest);
+  }else assert.equal(view,ctx.exercise);
+  assert.equal(JSON.stringify(ctx.exercise),before);
+ }
+ assert.equal(changed,2);
+ for(const input of [null,undefined,{id:'unknown',name:'French press barre EZ'}, {name:'Pont fessier au sol — activation'}]){
+  ctx.exercise=input;assert.equal(vm.runInContext('JarvisReviewedView(exercise)',ctx),input);
+ }
+});
+test('library and rest widget integrations are limited to reviewed display lookup, not data or controls',()=>{
+ assert.equal(fn(candidate,patched,'Z5').replace('b.slice(0,y).map(JarvisReviewedView).map(k=>','b.slice(0,y).map(k=>'),fn(original,tree,'Z5'));
+ assert.equal(fn(candidate,patched,'k5').replace('img:((b=JarvisReviewedMedia(y))==null?void 0:b.path)||y.gif||','img:y.gif||'),fn(original,tree,'k5'));
 });

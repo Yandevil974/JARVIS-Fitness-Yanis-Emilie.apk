@@ -3,7 +3,7 @@
   "status": "scoped-web-candidate-not-release",
   "releaseReady": false,
   "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "candidateBundleSha256": "b5ab9b5570c00b7842d202ae8fb03fd23ef2c9f80f6f5046393a74aa9663d47f",
+  "candidateBundleSha256": "148cef273a0e3223cc0c3bdb9bdba320163cf1da7582194fcc746155c46b52e8",
   "integrity": {
     "packagedWebFiles": 272,
     "unchangedWebFiles": 271,
@@ -11,33 +11,53 @@
       "assets/public/assets/index-CBCies4k.js"
     ],
     "unchangedDeliveredApk": true,
-    "unchangedOtherTopLevelStatements": true
+    "unchangedOtherTopLevelStatements": true,
+    "allowedChangedTopLevelFunctions": [
+      "bg",
+      "v5",
+      "Kh",
+      "Z5",
+      "k5"
+    ],
+    "addedHelpers": [
+      "createPoolMedia",
+      "JarvisPoolMedia",
+      "JarvisReviewedMedia",
+      "JarvisReviewedView"
+    ]
   },
   "tests": {
     "node": {
-      "passed": 22,
+      "passed": 26,
       "baselineCharacterization": 9,
-      "candidate": 9,
-      "reviewTraceability": 4
+      "candidate": 11,
+      "reviewTraceability": 6
     },
     "targetedBrowser": {
-      "passed": 8,
+      "passed": 14,
       "failedInFinalRun": 0,
       "wholeFinalRunSeconds": null,
       "test": "evolution/media/tests/pool-candidate.spec.mjs",
-      "reportedDuration": "1.0m",
-      "scope": "six pool-context scenarios plus two floor-bridge detail/animation/pause and bench-preservation scenarios"
+      "reportedDuration": "2.1m",
+      "scope": "six pool-context cases; four floor-bridge/French-press library/detail/animation cases; four persisted-workout/rest-next/zoom/reload cases across both profiles"
     },
     "existingHomeBrowser": {
       "passed": 8,
       "failed": 0,
-      "wholeRunSeconds": 58.6,
+      "wholeRunSeconds": 57.9,
       "test": "evolution/home/tests/home.spec.mjs",
-      "reference": "unchanged web extracted from signed 1.4.0"
+      "reference": "unchanged web extracted from signed 1.4.0",
+      "requiredEnvironment": "MEDIA_REVIEW_CANDIDATE=1",
+      "comparisonAllowance": "One exact floor-bridge card label changes from ANATOMIE RÉALISTE to GUIDE HUMAIN. Both expected label and image URLs are asserted on candidate/reference, then that exact contextual string alone is normalized for strict whole-main text comparison. Default tests without opt-in remain unchanged."
     },
     "browser": "Chromium 138.0.7204.0",
     "physicalAndroidTest": false,
-    "full90DeliverySuiteRerun": false
+    "full90DeliverySuiteRerun": false,
+    "harnessAdjustmentsThisStep": [
+      "Workout fixture unit kg rejected before app load: use existing kg total / kg ajouté conventions.",
+      "Do not overwrite localStorage of a running app then reload: unload persistence overwrites that artificial fixture edit. Replaced with isolated initial-state cases for each exercise/profile; actual unchanged-state reload now verified.",
+      "Initial home comparison correctly detected intentional bridge-card label change. Added explicit opt-in, tightly scoped assertion/normalization, not a general label mask and no app workaround."
+    ]
   },
   "openFindingGroups": 36,
   "limitations": [
@@ -47,8 +67,10 @@
     "Legacy aquatic images are not all semantically correct",
     "Old mixed timers without a segment are not guessed",
     "Exact user phone route not reproduced",
-    "Floor-bridge library card still uses anatomical fallback; not all surfaces corrected",
-    "Generic bridge instructions still mention bench/ground and load; precision per exercise pending"
+    "Generic bridge instructions still mention bench/ground and load; precision per exercise pending",
+    "French press remains a two-key-pose GIF, not continuous video or clinical validation",
+    "Warmup/approach images and non-pool step.img values in saved guided timers are not corrected by the library/rest-widget patch",
+    "Dips and other triceps/glute variants remain open; no external replacement approved/integrated"
   ],
   "privateSigningDirectoryAvailable": false,
   "previousPoolOnlyBundleSha256": "75f39ae838c5ae7fc96b624f4f21ed4b960820590226d814de03ca86ce4b0107",
@@ -62,6 +84,15 @@
     "basicMovementCorrespondsNotFinalApproval": 21
   },
   "candidateExerciseOverrides": [
-    "pont-fessier-au-sol-activation"
-  ]
+    "pont-fessier-au-sol-activation",
+    "french-press-barre-ez"
+  ],
+  "previousBridgeOnlyBundleSha256": "b5ab9b5570c00b7842d202ae8fb03fd23ef2c9f80f6f5046393a74aa9663d47f",
+  "reviewedShortFocus": {
+    "clips": 13,
+    "frames": 26,
+    "method": "both frames on five ordered 300px contact sheets, plus two original-size thumbnails",
+    "record": "review/short-focus.json",
+    "subsetOf48TwoFrameGifs": true
+  }
 }

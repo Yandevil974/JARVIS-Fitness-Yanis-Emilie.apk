@@ -55,7 +55,13 @@ export function integrate(source) {
     return `if(i&&i.id===${JSON.stringify(entry.id)})return ${JSON.stringify({path:entry.path,name:entry.name,level:entry.level})};`;
   }).join('');
   source = once(source,'function Kh(i){return i!=null&&i.id&&eo.get(i.id)||null}',
-    `function Kh(i){${cases}return i!=null&&i.id&&eo.get(i.id)||null}`);
+    `function JarvisReviewedMedia(i){${cases}return null}
+function JarvisReviewedView(i){const media=JarvisReviewedMedia(i);return media?{...i,gif:media.path}:i}
+function Kh(i){return JarvisReviewedMedia(i)||i!=null&&i.id&&eo.get(i.id)||null}`);
+  // View-only copies: keep all original catalog entries and saved workout data intact.
+  source = once(source,'b.slice(0,y).map(k=>', 'b.slice(0,y).map(JarvisReviewedView).map(k=>');
+  source = once(source,'img:y.gif||((b=Kh(y))==null?void 0:b.path)||y.img||null',
+    'img:((b=JarvisReviewedMedia(y))==null?void 0:b.path)||y.gif||((b=Kh(y))==null?void 0:b.path)||y.img||null');
   return source;
 }
 export function prepare() {
@@ -72,6 +78,13 @@ with zipfile.ZipFile(sys.argv[1]) as z:
   if not file.is_relative_to(root):raise ValueError('Unsafe ZIP entry')
   file.parent.mkdir(parents=True,exist_ok=True);file.write_bytes(z.read(name))
 `, path.join(root,baseline.apk),directory]);
+  const overrides = JSON.parse(fs.readFileSync(new URL('./association-overrides.json',import.meta.url))).overrides;
+  for (const entry of overrides) {
+    for (const [file,digest] of [[entry.path,entry.assetSha256],[entry.thumbnailPath,entry.thumbnailSha256]]) {
+      if (!/^\/(media|thumbs)\/[a-f0-9]+\.(gif|webp)$/.test(file) ||
+          sha(fs.readFileSync(path.join(directory,file))) !== digest) throw Error('Changed reviewed asset '+file);
+    }
+  }
   const bundlePath = baseline.bundle.replace('assets/public/', '');
   fs.writeFileSync(path.join(directory,bundlePath),candidate);
   const check = path.join(root,'.cache/media-pool-syntax.mjs');

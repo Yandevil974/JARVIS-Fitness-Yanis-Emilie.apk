@@ -201,7 +201,25 @@ for (const profile of ["elite", "emilie"])
         const tabs = await reference.getByRole("tab").allTextContents();
         expect(await page.getByRole("tab").allTextContents()).toEqual(tabs);
         if (name === "Accueil") continue;
-        const text = (p) => p.locator("main").innerText();
+        const text = async (p) => {
+          const content = await p.locator("main").innerText();
+          // Opt-in only for the cumulative media candidate. This one exact card
+          // now has its reviewed GIF thumbnail instead of a generic anatomy image.
+          // Assert the intended difference before normalizing that label for the
+          // otherwise strict comparison; no global text/label suppression.
+          if (process.env.MEDIA_REVIEW_CANDIDATE === "1" && p === page && name === "Entraînement") {
+            const card = p.getByRole("button", {name:"Démonstration Pont fessier au sol — activation", exact:true});
+            if (await card.count()) {
+              await expect(card.locator(".visual-label")).toHaveText("GUIDE HUMAIN");
+              await expect(card.locator("img")).toHaveAttribute("src", /thumbs\/8eecb0152081ff26.webp$/);
+              const oldCard = reference.getByRole("button", {name:"Démonstration Pont fessier au sol — activation", exact:true});
+              await expect(oldCard.locator(".visual-label")).toHaveText("ANATOMIE RÉALISTE");
+              await expect(oldCard.locator("img")).toHaveAttribute("src", /human\/back-card.webp$/);
+              return content.replace("GUIDE HUMAIN\nFESSIERS\nPont fessier au sol — activation", "ANATOMIE RÉALISTE\nFESSIERS\nPont fessier au sol — activation");
+            }
+          }
+          return content;
+        };
         await expect.poll(() => text(page)).toBe(await text(reference));
         for (let i = 0; i < tabs.length; i++) {
           await page.getByRole("tab").nth(i).click();
