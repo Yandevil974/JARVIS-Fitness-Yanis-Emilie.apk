@@ -583,6 +583,16 @@
       "observed": "Le dessin montre des élévations latérales debout, bras montant jusqu'à l'horizontale : conforme aux élévations latérales debout, mais aucune des variantes assises, coude à 90°, incliné 30/45 ni lean-away qui utilisent le même fichier n'est montrée.",
       "action": "Décider avec l'utilisateur lesquelles de ces variantes exigent un dessin propre (posture assise / banc incliné / appui lean-away). Verdict « partial-mismatch » dans review/never-reviewed.json, aucun groupe fermé.",
       "status": "open"
+    },
+    {
+      "id": "session-never-closed-blocks-program-and-timers",
+      "scope": "affichage",
+      "exercises": [
+        "goblet-squat"
+      ],
+      "observed": "Reproduit le 23 septembre 2026 pour Émilie : une séance commencée en semaine 1 et jamais clôturée (application quittée en cours de séance) reste dans l’état. Toute ouverture des semaines suivantes la reprend d’office : le bouton principal affiche « Reprendre ma séance » et non « Lancer la séance », l’écran rouvre la séance de la semaine 1 avec sa série déjà validée (1/29 séries, compteur de durée 40320:00), l’échauffement est toujours « Avant de commencer », et aucun mot-clé « validé » ou « terminée » n’apparaît dans la vue « Cette semaine ». Toute minuterie guidée est refusée : le bouton « Lancer 30 secondes » de Récupération ouvre la modale « Clôturer votre séance » au lieu de démarrer. Tant que cette séance n’est pas clôturée, ni le programme du jour ni le chronomètre ne peuvent démarrer.",
+      "action": "Proposé, non appliqué : clôturer automatiquement une séance d’entraînement au changement de jour (statut « partielle » le soir de son jour, comme le propose déjà la modale « Terminer »), ou au minimum demander à l’ouverture du jour suivant : continuer cette séance ancienne ou la clôturer. Aucun test sur téléphone ; à confirmer avec l’utilisateur avant de changer le comportement.",
+      "status": "open"
     }
   ]
 }

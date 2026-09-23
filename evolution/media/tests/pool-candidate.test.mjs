@@ -222,3 +222,24 @@ test('the 94 packaged drawings are all reviewed at least once, and reviewing is 
    assert.ok(clip.usedFor.some(id=>findings.some(f=>f.status==='open'&&(f.exercises||[]).includes(id))),clip.path);
  }
 });
+test('séance jamais clôturée : reproduction d’Émilie tracée, sans fermer le groupe', () => {
+ const findings=JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings;
+ const group=findings.find(f=>f.id==='session-never-closed-blocks-program-and-timers');
+ assert.ok(group&&group.status==='open');
+ assert.match(group.observed,/40320:00/);
+ assert.match(group.observed,/Clôturer votre séance/);
+ assert.match(group.action,/partielle/);
+ const spec=fs.readFileSync(new URL('./emilie-session-block.spec.mjs',import.meta.url),'utf8');
+ // Le spec ne contient aucun verdict écrit d'avance : il relève l'état réel de
+ // l'application livrée (bouton principal, écran de séance, modale, minuteur).
+ for(const needle of ['Reprendre ma séance','Lancer 30 secondes','minuteur créé','semaine 1'])
+  assert.ok(spec.includes(needle),needle);
+ assert.ok(!/toHaveText\(.*Reprendre/.test(spec),'aucune attente inventée sur le bouton principal');
+ const report=fs.readFileSync(new URL('../review/REVIEW-EMILIE-BLOCAGE.md',import.meta.url),'utf8');
+ assert.match(report,/hérité de la 1\.4\.0/);
+ assert.ok(report.split('\n').length>25);
+ // Le mécanisme est hérité : il est présent dans les bundles publiés 1.0.6, 1.3.0 et 1.4.0.
+ // Aucun contournement n'est appliqué dans le candidat.
+ const bundle=fs.readFileSync(new URL('../../../.cache/media-pool-syntax.mjs',import.meta.url),'utf8');
+ assert.ok(bundle.includes('Votre séance en cours a été reprise.'));
+});

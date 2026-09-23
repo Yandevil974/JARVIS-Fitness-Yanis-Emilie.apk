@@ -242,7 +242,9 @@
       "baselinePath": "/media/78f9aee57a4101b1.gif",
       "baselineReviewStatus": "basic-movement-corresponds",
       "reviewClip": 23,
-      "findingGroups": [],
+      "findingGroups": [
+        "session-never-closed-blocks-program-and-timers"
+      ],
       "candidatePath": "/media/78f9aee57a4101b1.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
