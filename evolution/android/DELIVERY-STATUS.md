@@ -64,3 +64,12 @@ Correctif décidé par l'utilisateur (« fais ce que tu recommande ») après re
 - Règle appliquée : une séance de musculation d'un autre jour est clôturée automatiquement en « partielle » (date et séries réelles conservées), au chargement, au clic « Lancer la séance » et au clic d'une minuterie guidée. Compteur de séance en heures au-delà d'une heure.
 - Preuves : `evolution/media/tests/emilie-session-block.spec.mjs` (2 tests), `review/REVIEW-EMILIE-BLOCAGE.md`, captures `review/emilie-fixed-*.png`. Suite Node 40/40, média 28/28, suite d'origine 90/90.
 - Détail utilisateur : [INSTALLATION-1.4.3.md](../../downloads/INSTALLATION-1.4.3.md). Aucun essai sur appareil réel.
+
+## 1.4.4 — 23 septembre 2026
+
+- `downloads/Yanis-Fitness-Evolution-1.4.4.apk` — 24 909 293 octets, SHA-256 `0d7123b45e5c5a6879f2a4962a47f6f00b039d908792da8d9b362013abf8daae`, versionName 1.4.4 / versionCode 15.
+- Identité durable `150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b` (identique 1.4.2 / 1.4.3) : installation directe par-dessus, sans désinstallation. Restaurée depuis `evolution/signing/evolution-media-142.encrypted.json` après le cinquième effacement d'espace de travail.
+- Web embarqué `22109c5be90be9545038cc55f86d7b14f52830b0b7b23b594b571087943c2cb4` : correction piscine + séance oubliée clôturée en « partielle » + durées lisibles (1500 s -> 25 min).
+- Seules entrées modifiées vs la 1.4.3 : `AndroidManifest.xml` et `assets/public/assets/index-CBCies4k.js`. 9/9 DEX identiques, 271/272 fichiers web identiques, v2 + v3, un signataire, alignement vérifié, retéléchargement GitHub conforme.
+- Tests : Node 41/41 ; navigateur ciblé 6/6 sur ce bundle ; suites complètes vertes sur la 1.4.3 (média 28/28, suite d'origine 90/90).
+- Release `v1.4.4-evolution` créée ; les pièces jointes binaires n'ont pas pu être téléversées (endpoint d'upload bloqué depuis l'atelier) — le lien brut épinglé fait foi.

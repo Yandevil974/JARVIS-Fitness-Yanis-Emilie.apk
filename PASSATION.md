@@ -2,7 +2,51 @@
 
 **Mise à jour : 23 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
-## Dernière avancée — 1.4.3 publiée : la séance oubliée ne bloque plus le programme ni les chronos (23 septembre 2026)
+## 🚩 Dernière avancée — 1.4.4 publiée : durées lisibles, 79 alias de noms proches revus, 11 groupes instruits (23 septembre 2026)
+
+[Télécharger la 1.4.4](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/Yanis-Fitness-Evolution-1.4.4.apk) · [consignes](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/INSTALLATION-1.4.4.md) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/Yanis-Fitness-Evolution-1.4.4.apk.sha256) · [fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/Yanis-Fitness-Evolution-1.4.4.fidelity.json) · [release](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.4.4-evolution)
+
+**🚩 Drapeau rouge — limite de contexte proche.** Cette passation est l'écrit demandé : le travail peut reprendre dans un nouveau chat à partir d'ici, sans rien reperdre. Tout ce qui suit est **déjà poussé et publié** ; rien n'est en attente d'un commit de ma part.
+
+### 1. Vous avez demandé trois chantiers (« Vas y ») — les trois sont faits
+
+1. **Verdicts individuels des 79 noms proches** (les exercices sans dessin propre dont le nom ressemble à un exercice dessiné) : **79 lignes revues une par une**, preuves en pleine image (`review/alias-overlap-targets.png`, 8 × 2 vignettes ; `review/alias-overlap-equipment-19.png`, 19 dessins), fiche complète `review/alias-overlap-review.json` (classe, verdict, ce qui est réellement vu, groupe de suivi). Résultat : **3 conformes** (squat barre de sécurité, abduction à l'élastique), **45 où la consigne est identique mais où le dessin ne permet pas de distinguer** la variante, **27 écarts mesurés**, **1 écart laissé ouvert** (squat au poids du corps dessiné avec haltère). **Aucun groupe fermé, aucune validation visuelle prononcée** — les échanges d'images sont proposés mais pas exécutés sans votre décision. 3 nouveaux groupes créés.
+2. **Instruction/documentation des 12 groupes non-musculation** : **11 groupes ont maintenant un bloc « instruction » daté** dans `review/findings.json` (échauffement 2, piscine 3, tabata 2, étirements 4) ; le 12ᵉ (`combo-step-seconds-display`) est **corrigé et livré**. Ajout décisif : la **relecture intégrale des 16 dessins d'étirement** en pleine image (`review/stretch-assets-review.json`, planche `review/stretch-assets-16.png`) → **10 conformes, 6 écarts**, dont **2 réparables avec des dessins déjà présents dans l'app** (« main dans le dos » → dessin coude au-dessus de la tête ; « pigeon assis » → dessin piriforme assis) : aucune consigne n'est réécrite, je n'attends que votre accord.
+3. **Correction d'affichage des durées + reconstruction** : dans la modale de séance combinée, « 1500 s » s'affiche désormais **« 25 min »**, « 90 s » → **« 1 min 30 s »**. Vérifié par test Node (45 / 90 / 1500 / 3600 s). **Aucune prescription, aucun chrono, aucune valeur enregistrée n'est touchée** — c'est le texte affiché qui devient lisible.
+
+### 2. Livrable — APK 1.4.4 signé, publié, retéléchargé
+
+| Élément | Valeur |
+|---|---|
+| Fichier | `downloads/Yanis-Fitness-Evolution-1.4.4.apk` (24 909 293 octets) |
+| SHA-256 | `0d7123b45e5c5a6879f2a4962a47f6f00b039d908792da8d9b362013abf8daae` |
+| Version | 1.4.4 / code 15 · web embarqué `22109c5b…` |
+| Identité | **`150e3846…`, la même que 1.4.2 et 1.4.3** ⇒ **installation par-dessus la 1.4.3, rien à désinstaller, données conservées** |
+| Contenu | correction piscine + séance oubliée clôturée en « partielle » + durées lisibles |
+| Contrôles | v2 + v3 vérifiées, 1 signataire, alignement OK, **9/9 DEX identiques** à la 1.4.3, 271/272 fichiers web identiques, **retéléchargé depuis GitHub et comparé octet pour octet** |
+
+- **Tests sur ce paquet** : Node **41/41** ; navigateur **6/6 en ciblé sur le bundle livré** (modale combinée : 1500 s → 25 min dans trois contextes piscine ; bloc elliptique terrestre préservé ; Émilie : séance oubliée clôturée + séance du jour jamais clôturée) ; suites complètes déjà vertes sur la 1.4.3 dont ce paquet ne change qu'un affichage (**média 28/28**, **suite d'origine 90/90**).
+- **Réserve honnête** : « 1.4.4 » est ma numérotation de livraison, l'application se nomme toujours **Yanis Fitness Evolution** — aucune interface, aucun thème, aucune donnée n'a changé de nom ni de place. **Aucun essai sur téléphone réel.**
+- **Réserve technique** : la release GitHub `v1.4.4-evolution` est créée, mais les **pièces jointes binaires refusent de se téléverser** (l'endpoint d'upload est bloqué depuis l'atelier, exactement comme `raw.githubusercontent`). Le **lien brut épinglé ci-dessus est le canal de téléchargement** : il a été retéléchargé et son empreinte correspond.
+- **Cinquième effacement d'espace de travail** : `.cache`, `.private`, `/tmp` (Chromium compris) ont encore disparu pendant ce chantier ; identité restaurée depuis le dépôt à nouveau, Chromium reprovisionné, **rien n'a été perdu** parce que tout était poussé.
+
+### 3. Ce qui reste — et ce qui dépend de vous
+
+Mesures faites, décisions à prendre **avant toute création visuelle** :
+- **Règle de style** (obligatoire avant tout nouveau dessin : cadrage, trait, couleurs, fond, orientation) ;
+- **Échange de deux images d'étirement** (pigeon assis, main dans le dos) avec des dessins déjà présents ;
+- **Piscine** : retirer les 5 visuels terrestres de la bibliothèque piscine (lacune explicite) plutôt qu'un dessin terrestre à la place d'un exercice aquatique ;
+- **Tabata** : 34 des 38 noms n'ont aucun dessin (la photo de récupération s'affiche) — création ou lacune explicite ; et un défaut de contexte a été **identifié** (4 noms au sol sélectionnent un guide aquatique) : ancrage repéré, **non livré** pour ne pas expédier une modification non testée ;
+- **Essai téléphone par vous/Émilie** de la 1.4.4 (la séance oubliée ne doit plus revenir ; les durées doivent s'écrire en minutes) ;
+- Les **5 verdicts de variantes proches** proposés sont documentés, aucune image remplacée sans votre accord.
+
+### 4. Prochaine étape précise (ordre recommandé)
+
+1. Installer la 1.4.4 par-dessus la 1.4.3 (ou 1.4.2), ouvrir une séance, vérifier les durées en minutes et l'absence de « Reprendre ma séance » fantôme — retour par message, même court.
+2. Me donner la **règle de style** ; en attendant, je poursuis uniquement sur : le défaut de contexte tabata (corriger + tester + mesurer), la traçabilité des corrections d'images pré-approuvées, et la relecture pleine image des dessins restants.
+3. **Audit : 51 groupes ouverts**, aucun fermé silencieusement, aucun validé définitivement. **IA conversationnelle toujours en dernier.**
+
+## Étape précédente — 1.4.3 publiée : la séance oubliée ne bloque plus le programme ni les chronos (23 septembre 2026)
 
 [Télécharger la 1.4.3](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/9856f57/downloads/Yanis-Fitness-Evolution-1.4.3.apk) · [consignes](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/9856f57/downloads/INSTALLATION-1.4.3.md) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/9856f57/downloads/Yanis-Fitness-Evolution-1.4.3.apk.sha256) · [fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/9856f57/downloads/Yanis-Fitness-Evolution-1.4.3.fidelity.json)
 
@@ -349,6 +393,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images des animations, sans tête inversée, mauvaise posture ou mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique : respecter la consigne aquatique, y compris dans les minuteurs enregistrés. Les **41 groupes d’anomalies** restent ouverts. La revue des 46 GIF longs/588 images est tracée dans `review/long-animations.json` ; continue sans recommencer cet inventaire. Reprends le candidat cumulatif `evolution/media/candidate/` (SHA `b74853bc…` : récupération piscine corrigée, deux réassociations, échauffement ciblé ; **37 tests Node et 26 parcours navigateur réussis**), sans le confondre avec un APK livré. Même identité 1.4.0, IA en dernier. Continue dans ce chat tant que possible ; actualise et présente la passation à chaque étape, puis précise la suivante.
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images, sans tête inversée, mauvaise posture ni mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique. **La 1.4.4 est publiée** (`00d7123b…` : piscine, séance oubliée clôturée en « partielle », durées lisibles — identité durable `150e3846…`, installation directe par-dessus la 1.4.3) ; c’est le seul APK à installer, la 1.4.1 est morte. Le candidat cumulatif est `evolution/media/candidate/` (**bundle `22109c5b…`**, Node **41/41**, navigateur ciblé 6/6 sur ce bundle, médias 28/28 et suite d’origine 90/90 sur `52dfc705…`). Les **79 noms proches** sont revus un par un (`review/alias-overlap-review.json`) et les **16 dessins d’étirement** relus (`review/stretch-assets-review.json`) : **51 groupes d’anomalies restent ouverts**, aucun n’est fermé sans confirmation. **Avant toute création visuelle, attends la règle de style et les décisions listées en tête de `PASSATION.md`.** Continue dans ce chat tant que possible ; actualise ET présente la passation à chaque étape, puis précise la suivante ; avertir avec 🚩 avant la limite de contexte.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.
