@@ -112,25 +112,26 @@ export const CARDIO_STEPS = [
 // accepté que si AUCUN guide du domaine ne correspond (jamais un vélo pendant
 // une nage, jamais une nage pendant un elliptique lorsque l'image existe).
 export function stepGuide(name, segment, poolGuides = []) {
-  const n = String(name ?? "")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[’']/g, " ")
-    .replace(/[-–—]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+  // Normalisation IDENTIQUE des deux côtés (nom d'étape ET clés des guides) :
+  // l'original 1.5.0 normalisait aussi les deux (Ge) — un tirait la clé
+  // « aqua-jogging » hors de « Aqua-jogging — EFFORT » en ne traitant les
+  // tirets que d'un seul côté.
+  const norm = (s) =>
+    String(s ?? "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[’']/g, " ")
+      .replace(/[-–—]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  const n = norm(name);
   const best = (list) => {
     let hit = null,
       len = 0;
     for (const g of list)
       for (const k of g.k) {
-        const key = String(k)
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .toLowerCase()
-          .replace(/\s+/g, " ")
-          .trim();
+        const key = norm(k);
         if (n.includes(key) && key.length > len) ((hit = g), (len = key.length));
       }
     return hit;

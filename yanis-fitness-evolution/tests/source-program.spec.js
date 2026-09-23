@@ -1,15 +1,22 @@
 import { test, expect } from "@playwright/test";
+import { STORAGE_KEY } from "../src/app-identity.js";
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript((k) => {
+    window.__YFE_KEY__ = k;
+  }, STORAGE_KEY);
+});
 import { legacy } from "../src/data/library.js";
+import { startSourceWorkout } from "./helpers.js";
 async function synced(page) {
   await page.waitForFunction(() => {
     const current = Number(
       document.querySelector(".save-status")?.dataset.revision,
     );
-    const raw = localStorage.getItem("jarvis_fitness_v3");
+    const raw = localStorage.getItem(window.__YFE_KEY__);
     return raw && JSON.parse(raw).updatedAt === current;
   });
   return page.evaluate(() =>
-    JSON.parse(localStorage.getItem("jarvis_fitness_v3")),
+    JSON.parse(localStorage.getItem(window.__YFE_KEY__)),
   );
 }
 for (const id of ["elite", "emilie"])
@@ -72,9 +79,13 @@ test("Recording a poor check-in does not alter the programme without the explici
 }) => {
   await page.goto("/");
   await expect(page.locator(".page")).toBeVisible();
-  const original = (
-    await synced(page)
-  ).profiles.elite.plan.sessions[0].exercises.map((e) => ({
+  // Le 1er jour du plan peut être une journée METCON (sans exercices) selon
+  // la date : on référence la 1re séance d'exercices du plan.
+  const firstStrength = (plan) =>
+    plan.sessions.find((s) => (s.exercises || []).length > 0);
+  const original = firstStrength(
+    (await synced(page)).profiles.elite.plan,
+  ).exercises.map((e) => ({
     id: e.exerciseId,
     sets: e.targetSets,
   }));
@@ -91,17 +102,21 @@ test("Recording a poor check-in does not alter the programme without the explici
     .click();
   const after = (await synced(page)).profiles.elite;
   expect(
-    after.plan.sessions[0].exercises.map((e) => ({
+    firstStrength(after.plan).exercises.map((e) => ({
       id: e.exerciseId,
       sets: e.targetSets,
     })),
   ).toEqual(original);
   expect(after.checkIns).not.toEqual({});
-  await page
-    .getByRole("button", { name: "Lancer la séance", exact: true })
-    .click();
+  // Séance lancée : la J1 de la phase 1 du programme source (déterministe).
+  // Un bilan pauvre SANS la case d’allégement ne doit pas la modifier.
+  await startSourceWorkout(page);
   const workout = (await synced(page)).profiles.elite.workout;
+  const j1 = legacy.elite.PROGRAM[1].sessions.J1;
   expect(
-    workout.exercises.map((e) => ({ id: e.exerciseId, sets: e.targetSets })),
-  ).toEqual(original);
+    workout.exercises.map((e) => e.sourceName || e.name),
+  ).toEqual(j1.exos.map((e) => e[0]));
+  expect(workout.exercises.map((e) => e.targetSets)).toEqual(
+    j1.exos.map((e) => parseInt(e[2])),
+  );
 });

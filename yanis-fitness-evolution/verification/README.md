@@ -57,3 +57,14 @@ Scripts de reproduction : `verification/capture.mjs` (captures) et
 - Les captures ont été produites en headless Chromium via CDP ; le parcours
   tactile (échauffement, validation de série, minuteur de repos, voix) a été
   vérifié par les mêmes pilotes avec assertions DOM + zéro erreur console.
+
+## Suite Playwright (exécutée le 22/09/2026 sur le nouvel app, Chromium réel)
+
+Suite e2e issue de 1.0.4, adaptée à l'identité evolution (clé de stockage via
+`window.__YFE_KEY__`, attentes recalées sur le vrai comportement 1.5.0).
+
+| Contrôlé | Résultat |
+|---|---|
+| 28 tests (projets desktop + mobile viewport), navigateur réel contre `vite dev` | **17 passés / 11 sauts légitimes / 0 échec** — les sauts sont des fixtures conditionnelles absentes par design (`public/tests/fixtures/legacy-v104.json` pour la restauration, profils appareils optionnels) |
+| Compteur d'étapes de séance (Fold5) | attendu legacy `1/36` corrigé en `1/37` : sonde Playwright identique sur le **bundle 1.5.0 servi** (`MODE SÉANCE Jambes 1/37` après 8 séries validées) — le nouvel app était déjà conforme, la specs datait de 1.0.4 |
+| Sécurité dev + preview | `/.private/**`, `/android/**`, `/@fs/**uploads**`, variantes `%2e` encodé → **403** en dev ET en preview de production (nouveau plugin `privateGuard` ; `fs.deny` seul ne renvoyait 403 que sur les fichiers existants, l'app servait `index.html` sinon) |

@@ -12,6 +12,9 @@ export default defineConfig({
     baseURL: "http://127.0.0.1:5173",
     headless: true,
     viewport: { width: 1440, height: 1000 },
+    launchOptions: process.env.CHROME_BIN
+      ? { executablePath: process.env.CHROME_BIN }
+      : {},
     screenshot: "only-on-failure",
   },
   outputDir: ".cache/playwright-results",

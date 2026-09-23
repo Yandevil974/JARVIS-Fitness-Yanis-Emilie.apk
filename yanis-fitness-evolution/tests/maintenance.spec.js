@@ -1,4 +1,10 @@
 import { test, expect } from "@playwright/test";
+import { STORAGE_KEY } from "../src/app-identity.js";
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript((k) => {
+    window.__YFE_KEY__ = k;
+  }, STORAGE_KEY);
+});
 import fs from "node:fs";
 import { initialState, migrateLegacy } from "../src/store/model.js";
 import { restoreProfile } from "../src/store/restoration.js";
@@ -28,14 +34,14 @@ async function ready(page, state = restored) {
 }
 async function saved(page) {
   await page.waitForFunction(() => {
-    const s = JSON.parse(localStorage.getItem("jarvis_fitness_v3") || "null");
+    const s = JSON.parse(localStorage.getItem(window.__YFE_KEY__) || "null");
     return (
       s?.updatedAt ===
       Number(document.querySelector(".save-status")?.dataset.revision)
     );
   });
   return page.evaluate(() =>
-    JSON.parse(localStorage.getItem("jarvis_fitness_v3")),
+    JSON.parse(localStorage.getItem(window.__YFE_KEY__)),
   );
 }
 async function nav(page, label) {

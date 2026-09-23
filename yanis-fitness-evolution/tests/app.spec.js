@@ -1,6 +1,13 @@
 import { test, expect } from "@playwright/test";
+import { STORAGE_KEY } from "../src/app-identity.js";
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript((k) => {
+    window.__YFE_KEY__ = k;
+  }, STORAGE_KEY);
+});
 import fs from "node:fs";
 import { initialState } from "../src/store/model.js";
+import { startSourceWorkout } from "./helpers.js";
 async function ready(page) {
   await page.goto("/");
   await expect(page.locator(".page")).toBeVisible();
@@ -21,12 +28,12 @@ async function state(page) {
     const current = Number(
       document.querySelector(".save-status")?.dataset.revision,
     );
-    const raw = localStorage.getItem("jarvis_fitness_v3");
+    const raw = localStorage.getItem(window.__YFE_KEY__);
     return raw && JSON.parse(raw).updatedAt === current;
   });
   await expect(page.locator(".save-status")).toContainText("Enregistré");
   return page.evaluate(() =>
-    JSON.parse(localStorage.getItem("jarvis_fitness_v3")),
+    JSON.parse(localStorage.getItem(window.__YFE_KEY__)),
   );
 }
 async function profile(page, name) {
@@ -87,9 +94,7 @@ test("A real set survives shortening, partial completion, reload and profile swi
   page,
 }) => {
   await ready(page);
-  await page
-    .getByRole("button", { name: "Lancer la séance", exact: true })
-    .click();
+  await startSourceWorkout(page);
   await page.getByLabel("Répétitions réalisées", { exact: true }).fill("8");
   await page.getByLabel("RPE de la série", { exact: true }).selectOption("8");
   await page.getByRole("button", { name: /Valider la série/ }).click();
@@ -247,7 +252,7 @@ test("A corrupted local save is quarantined, not overwritten by fresh defaults",
   await page.addInitScript(() => {
     if (!sessionStorage.getItem("corrupt-seeded")) {
       localStorage.setItem(
-        "jarvis_fitness_v3",
+        window.__YFE_KEY__,
         '{"schemaVersion":999,"data":"KEEP-ME"}',
       );
       sessionStorage.setItem("corrupt-seeded", "1");
@@ -257,6 +262,6 @@ test("A corrupted local save is quarantined, not overwritten by fresh defaults",
   await expect(page.locator(".persistent-warning")).toContainText("bloqué");
   await page.waitForTimeout(450);
   expect(
-    await page.evaluate(() => localStorage.getItem("jarvis_fitness_v3")),
+    await page.evaluate(() => localStorage.getItem(window.__YFE_KEY__)),
   ).toContain("KEEP-ME");
 });

@@ -49,10 +49,12 @@ export function TimerModal() {
       // Un retour au calme (« Étirements guidés ») ne valide pas l’échauffement.
       const cooldown = /tirements/i.test(t.meta.name || "");
       updateProfile((q) => {
-        if (
-          !cooldown &&
-          q.workout?.id === t.meta.workoutId
-        )
+        // Garde stricte : un minuteur d’échauffement sans séance liée
+        // (workoutId absent, séance terminée) ne doit pas écrire sur un
+        // workout null — l’original 1.5.0 crashait ici (« Cannot set
+        // properties of null (setting 'warmupDone') »), vérifié sur les deux
+        // applications avec la même sauvegarde.
+        if (!cooldown && q.workout && q.workout.id === t.meta.workoutId)
           q.workout.warmupDone = true;
         q.timer = null;
       });

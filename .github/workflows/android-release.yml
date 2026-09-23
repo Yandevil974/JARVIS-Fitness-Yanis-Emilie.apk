@@ -1,0 +1,88 @@
+name: Build Yanis Fitness Evolution APK (release)
+
+# Construit l'APK signé 1.5.1 (appId app.yanis.fitness.evolution, keystore du
+# dépôt) et l'attache au GitHub Release correspondant au tag poussé.
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag GitHub Release cible"
+        required: true
+        default: "v1.5.1-evolution"
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: yanis-fitness-evolution
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: yanis-fitness-evolution/package-lock.json
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Android SDK (preinstalle sur ubuntu-latest)
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"
+          ls "$ANDROID_HOME/platforms" "$ANDROID_HOME/build-tools"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build web (vite) + portable runtime + cap sync
+        run: |
+          npm run build
+          npm run build:portable
+          npx cap sync android
+
+      - name: Assemble signed release APK
+        working-directory: yanis-fitness-evolution/android
+        run: ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - name: Package APK with release name
+        working-directory: yanis-fitness-evolution/android
+        run: |
+          VERSION=$(node -p "require('../package.json').version || '1.5.1'" 2>/dev/null || echo 1.5.1)
+          cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
+          sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
+
+      - name: Publish GitHub Release with APK
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          body: |
+            ## Yanis Fitness Evolution 1.5.1 (versionCode 151)
+            APK signé avec la clé propre à l'application (`app.yanis.fitness.evolution`).
+
+            **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Vos deux jeux de données restent indépendants (clés de stockage distinctes ; l'ancienne clé n'est lue qu'une fois pour l'import, jamais modifiée).
+
+            ### Installer
+            1. Télécharger `yanis-fitness-evolution-1.5.1.apk` ci-dessous.
+            2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
+            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.5.1.apk.sha256`.
+
+            ### Importer vos données
+            Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.
+          generate_release_notes: true

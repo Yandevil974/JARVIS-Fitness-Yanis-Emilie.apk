@@ -9,7 +9,9 @@ import {
   Input,
   SectionHeading,
 } from "../ui.jsx";
-import { today, dateLabel, uid, num } from "../../engine/utils.js";
+import { today, dateLabel, uid, num, assetSrc } from "../../engine/utils.js";
+import { POOL_GUIDES } from "../../data/library.js";
+import { stepGuide } from "../../data/visuals.js";
 import {
   sourceDay,
   sourceExtra,
@@ -232,12 +234,46 @@ export function SourceExtraModal({ event }) {
                   .filter(
                     (s) => s.segment === (c.key === "post" ? "post" : c.key),
                   )
-                  .map((s, j) => (
-                    <li key={j}>
-                      <strong>{s.name}</strong>
-                      <span>{s.seconds} s</span>
-                    </li>
-                  ))}
+                  .map((s, j) => {
+                    // Visuel humain de SON domaine (guide piscine ou cardio
+                    // elliptique), identique à l'affichage 1.5.0.
+                    const guide = stepGuide(s.name, s.segment, POOL_GUIDES);
+                    return (
+                      <li key={j}>
+                        {guide?.img && (
+                          <button
+                            type="button"
+                            className="pool-step-thumb"
+                            title="Agrandir"
+                            onClick={() =>
+                              setModal({
+                                type: "image",
+                                src: guide.img,
+                                title: guide.t,
+                              })
+                            }
+                          >
+                            <img
+                              className="pool-step-img"
+                              loading="lazy"
+                              src={assetSrc(guide.img)}
+                              alt={guide.t}
+                            />
+                            <Icon name="Maximize2" size={13} />
+                          </button>
+                        )}
+                        <strong>{s.name}</strong>
+                        <span>{s.seconds} s</span>
+                        {guide?.h?.length > 0 && (
+                          <ul className="pool-step-tips">
+                            {guide.h.map((tip, k) => (
+                              <li key={k}>{tip}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    );
+                  })}
               </ol>
             </details>
           </section>
