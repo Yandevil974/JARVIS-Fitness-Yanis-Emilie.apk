@@ -196,5 +196,41 @@
     "approaches": "Two reviewed exercise IDs only; newly generated steps carry exerciseId/mediaRole through both launch buttons",
     "persistedDataMigration": false,
     "programDurationsRepsLoadsChanged": false
+  },
+  "apkDeliveryDryRun": {
+    "status": "dry-run-test-key-never-release",
+    "report": "review/REVIEW-APK-DRYRUN.md",
+    "script": "evolution/android/build-media-141.py --dry-run",
+    "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+    "dryRunApkSha256": "e83f4720aff2faa84c08037adc6bb95beca2ec0a0afce42fe6dbfa89de860a9a",
+    "apkBytes": 24909281,
+    "baselineBytes": 24905185,
+    "sizeDeltaBytes": 4096,
+    "changedEntries": [
+      "AndroidManifest.xml",
+      "assets/public/assets/index-CBCies4k.js"
+    ],
+    "version": "1.4.1",
+    "versionCode": 12,
+    "toolsReproduced": {
+      "jdk": "jdk4py==17.0.9.2",
+      "apksignerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
+      "matchesReleasePin": true
+    },
+    "verified": [
+      "v2",
+      "v3",
+      "alignment",
+      "9/9 dex byte-identical",
+      "272/272 web files kept",
+      "manifest versionName 1.4.1 / versionCode 12"
+    ],
+    "notVerified": [
+      "real device install",
+      "launch on phone",
+      "real signing identity"
+    ],
+    "testCertificateSha256": "6e3a679fe839a09bf01ca806eeeee52ed50cda01070b8bd387646df3a4890352",
+    "note": "The test certificate is a throwaway inside .cache and is never a release identity."
   }
 }
