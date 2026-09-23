@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-21",
+  "apk": "downloads/Yanis-Fitness-Evolution-1.4.0.apk",
+  "apkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "packagedWebSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
+  "browser": {
+    "passed": 90,
+    "failed": 0,
+    "skipped": 0,
+    "singleFullRun": true,
+    "testedWebExtractedFromSignedApk": true,
+    "approxMinutes": 8.5
+  },
+  "nodeEngines": {
+    "passed": 150,
+    "failed": 0
+  },
+  "nodeHomeIntegrity": {
+    "passed": 4,
+    "failed": 0
+  },
+  "pythonReleaseAndRecovery": {
+    "passed": 8,
+    "failed": 0
+  },
+  "identicalSignedBuilds": 3,
+  "deviceTested": false,
+  "privateBackupPresented": true,
+  "externalPrivateBackupRetentionConfirmed": false
+}

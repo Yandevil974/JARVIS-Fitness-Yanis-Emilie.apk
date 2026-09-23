@@ -1,0 +1,132 @@
+// CANDIDATE WEB ONLY. Extends the exact signed 1.4.0; never writes an APK.
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+export const root = fileURLToPath(new URL('../../../', import.meta.url));
+export const baseline = JSON.parse(fs.readFileSync(new URL('../baseline.json', import.meta.url)));
+export const sha = value => createHash('sha256').update(value).digest('hex');
+export function once(text, before, after) {
+  if (text.split(before).length !== 2) throw Error('Missing or ambiguous integration point: '+before.slice(0,90));
+  return text.replace(before, () => after);
+}
+export function readBaseline() {
+  const apk = path.join(root, baseline.apk);
+  if (sha(fs.readFileSync(apk)) !== baseline.apkSha256) throw Error('Wrong APK baseline');
+  const source = execFileSync('python3', ['-c',
+    'import sys,zipfile;sys.stdout.buffer.write(zipfile.ZipFile(sys.argv[1]).read(sys.argv[2]))',
+    apk, baseline.bundle], {maxBuffer: 10*1024*1024}).toString();
+  if (sha(source) !== baseline.bundleSha256) throw Error('Wrong bundle baseline');
+  return source;
+}
+export function integrate(source) {
+  if (sha(source) !== baseline.bundleSha256) throw Error('Requires unchanged 1.4.0; rejects unknown/already patched input');
+  const start = source.indexOf('function v5('), end = source.indexOf('function w5(', start);
+  if (start < 0 || end <= start) throw Error('Timer boundaries missing');
+  const oldTimer = source.slice(start, end);
+  let timer = once(oldTimer, 'f=p.steps[p.index],h=', 'f=p.steps[p.index],poolMedia=JarvisPoolMedia.resolve(f,p.meta),h=');
+  timer = once(timer, 'x=bl.find(', 'x=poolMedia?poolMedia.guide:bl.find(');
+  const first = '!p.done&&(f.img?', last = ')),s.jsx("p",{children:f.instruction';
+  const a = timer.indexOf(first), b = timer.indexOf(last, a);
+  if (a < 0 || b <= a) throw Error('Timer visual boundaries missing');
+  const visual = timer.slice(a+'!p.done&&('.length, b+1);
+  const imageEnd = visual.indexOf(':s.jsx(gi,');
+  if (imageEnd < 0) throw Error('Timer image branch missing');
+  const image = visual.slice('f.img?'.length, imageEnd).replaceAll('f.img', 'poolMedia.path');
+  const gap = 's.jsx("p",{className:"media-audit-gap",role:"status",children:"Visuel aquatique correspondant à vérifier. Aucun autre exercice affiché."})';
+  const replacement = `!p.done&&(poolMedia?(poolMedia.path?${image}:${gap}):(${visual}))`;
+  timer = timer.slice(0,a) + replacement + timer.slice(b+2);
+  source = source.slice(0,start) + timer + source.slice(end);
+  const helper = fs.readFileSync(new URL('./pool-context.mjs', import.meta.url),'utf8')
+    .replace('export function createPoolMedia', 'function createPoolMedia');
+  source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl});\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
+  // Explicit reviewed IDs only. Never infer a substitute by muscle or similar name.
+  const overrides = JSON.parse(fs.readFileSync(new URL('./association-overrides.json',import.meta.url))).overrides;
+  const inventory = JSON.parse(fs.readFileSync(new URL('../review/inventory-1.4.0.json',import.meta.url)));
+  const assets = JSON.parse(fs.readFileSync(new URL('../review/assets-1.4.0.json',import.meta.url)));
+  const ids = new Set();
+  const cases = overrides.map(entry => {
+    const exercise = inventory.exercises.find(e=>e.id===entry.id);
+    const asset = assets.assets.find(a=>a.path===entry.path);
+    if (ids.has(entry.id) || exercise?.name !== entry.name || exercise?.resolved?.path !== entry.baselinePath ||
+        asset?.sha256 !== entry.assetSha256 || entry.level !== 'exact') throw Error('Unverified media override '+entry.id);
+    ids.add(entry.id);
+    return `if(i&&i.id===${JSON.stringify(entry.id)})return ${JSON.stringify({path:entry.path,name:entry.name,level:entry.level})};`;
+  }).join('');
+  source = once(source,'function Kh(i){return i!=null&&i.id&&eo.get(i.id)||null}',
+    `function JarvisReviewedMedia(i){${cases}return null}
+function JarvisReviewedView(i){const media=JarvisReviewedMedia(i);return media?{...i,gif:media.path}:i}
+function Kh(i){return JarvisReviewedMedia(i)||i!=null&&i.id&&eo.get(i.id)||null}`);
+  // View-only copies: keep all original catalog entries and saved workout data intact.
+  source = once(source,'b.slice(0,y).map(k=>', 'b.slice(0,y).map(JarvisReviewedView).map(k=>');
+  source = once(source,'img:y.gif||((b=Kh(y))==null?void 0:b.path)||y.img||null',
+    'img:((b=JarvisReviewedMedia(y))==null?void 0:b.path)||y.gif||((b=Kh(y))==null?void 0:b.path)||y.img||null');
+  const technique = JSON.parse(fs.readFileSync(new URL('./technique-overrides.json',import.meta.url))).overrides;
+  const techniqueIds = new Set();
+  const techniqueCases = technique.map(entry => {
+    const exercise = inventory.exercises.find(e=>e.id===entry.id);
+    if (techniqueIds.has(entry.id) || exercise?.name !== entry.name || !source.includes(JSON.stringify(entry.sourceNote)) ||
+        entry.etapes?.length !== 3 || !entry.etapes.every(t=>typeof t==='string'&&t.length>20)) throw Error('Unverified technique '+entry.id);
+    techniqueIds.add(entry.id);
+    return `if(i&&i.id===${JSON.stringify(entry.id)})return {...base,etapes:${JSON.stringify(entry.etapes)}};`;
+  }).join('');
+  source = once(source,'function a5({id:i}){',
+    `function JarvisTechnique(i){const base=Yu[i?.pattern]||Yu.static;${techniqueCases}return base}
+function a5({id:i}){`);
+  source = once(source,'f=Yu[p.pattern]||Yu.static,h=ft.filter(', 'f=JarvisTechnique(p),h=ft.filter(');
+  source = once(source,'U=Yu[m.pattern]', 'U=JarvisTechnique(m)');
+  const warmupHelper = fs.readFileSync(new URL('./warmup-context.mjs',import.meta.url),'utf8')
+    .replace('export function createWarmupMedia','function createWarmupMedia');
+  source = once(source,'function Bg(i,o){',
+    `${warmupHelper}
+const JarvisWarmupMedia=createWarmupMedia({reviewedMedia:JarvisReviewedMedia});
+function Bg(i,o){`);
+  source = once(source,'pattern:p?"bridge":"row",img:Jn.mobilite',
+    'pattern:p?"bridge":"row",img:p?JarvisReviewedMedia({id:"pont-fessier-au-sol-activation"}).path:Jn.mobilite');
+  source = once(source,'img:Jn.approche,instruction:',
+    'img:(JarvisReviewedMedia(l)||{}).path||Jn.approche,exerciseId:l?.id,mediaRole:"approach",instruction:');
+  // Both start buttons must carry approach identity into newly created timers.
+  source = once(source,'instruction:x.instruction,img:x.img,pattern:x.pattern}',
+    'instruction:x.instruction,img:x.img,pattern:x.pattern,exerciseId:x.exerciseId,mediaRole:x.mediaRole}');
+  source = once(source,'f=p.steps[p.index],poolMedia=',
+    'f=JarvisWarmupMedia.view(p.steps[p.index],p.meta),poolMedia=');
+  return source;
+}
+export function prepare() {
+  const source = readBaseline(), candidate = integrate(source);
+  const directory = path.join(root, '.cache/media-pool-candidate');
+  fs.mkdirSync(directory, {recursive:true});
+  execFileSync('python3', ['-c', `
+import sys,zipfile,pathlib
+root=pathlib.Path(sys.argv[2]).resolve()
+with zipfile.ZipFile(sys.argv[1]) as z:
+ for name in z.namelist():
+  if not name.startswith('assets/public/') or name.endswith('/'):continue
+  file=(root/name[len('assets/public/'):]).resolve()
+  if not file.is_relative_to(root):raise ValueError('Unsafe ZIP entry')
+  file.parent.mkdir(parents=True,exist_ok=True);file.write_bytes(z.read(name))
+`, path.join(root,baseline.apk),directory]);
+  const overrides = JSON.parse(fs.readFileSync(new URL('./association-overrides.json',import.meta.url))).overrides;
+  for (const entry of overrides) {
+    for (const [file,digest] of [[entry.path,entry.assetSha256],[entry.thumbnailPath,entry.thumbnailSha256]]) {
+      if (!/^\/(media|thumbs)\/[a-f0-9]+\.(gif|webp)$/.test(file) ||
+          sha(fs.readFileSync(path.join(directory,file))) !== digest) throw Error('Changed reviewed asset '+file);
+    }
+  }
+  const bundlePath = baseline.bundle.replace('assets/public/', '');
+  fs.writeFileSync(path.join(directory,bundlePath),candidate);
+  const check = path.join(root,'.cache/media-pool-syntax.mjs');
+  fs.writeFileSync(check,candidate);
+  execFileSync(process.execPath,['--check',check]);
+  const report={status:'candidate-only-not-release',baselineApkSha256:baseline.apkSha256,
+    candidateBundleSha256:sha(candidate),allowedChangedEntries:[baseline.bundle],
+    openFindingGroups:JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings.filter(f=>f.status==='open').length,
+    limits:['Full media audit remains open','Legacy pool associations still require visual validation',
+      'Generic recovery without a precise aquatic guide remains an explicit gap',
+      'Build alone provides no browser/device acceptance; see candidate/validation.json for scoped tests']};
+  fs.writeFileSync(path.join(root,'.cache/media-pool-candidate.json'),JSON.stringify(report,null,2)+'\n');
+  console.log(JSON.stringify({directory,...report},null,2));
+  return {directory,report};
+}
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) prepare();

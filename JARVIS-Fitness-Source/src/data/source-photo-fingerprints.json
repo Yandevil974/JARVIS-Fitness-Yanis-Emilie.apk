@@ -1,0 +1,22 @@
+{
+  "74100-88d773b0-61a1c55c": {
+    "path": "/media/elite-m12-compl.jpg",
+    "simulated": true,
+    "slot": "m12"
+  },
+  "50440-b61fd583-9e42701d": {
+    "path": "/media/elite-m12-dos.jpg",
+    "simulated": true,
+    "slot": "m12"
+  },
+  "69788-2cbf282d-2e14ef79": {
+    "path": "/media/elite-m12-face.jpg",
+    "simulated": true,
+    "slot": "m12"
+  },
+  "77744-9ff81474-b481d7fa": {
+    "path": "/media/elite-m12-profil.jpg",
+    "simulated": true,
+    "slot": "m12"
+  }
+}

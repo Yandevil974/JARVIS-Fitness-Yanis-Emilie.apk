@@ -1,0 +1,14 @@
+{
+  "appName": "Yanis Fitness Evolution",
+  "version": "1.2.0",
+  "versionCode": 9,
+  "webStage": "appointments",
+  "webSha256": "fec423df8cb3cca93728619801016d688fb7028c7a0b4c91b24f6048e1b7e5d8",
+  "output": "downloads/Yanis-Fitness-Evolution-1.2.0.apk",
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4
+  ]
+}

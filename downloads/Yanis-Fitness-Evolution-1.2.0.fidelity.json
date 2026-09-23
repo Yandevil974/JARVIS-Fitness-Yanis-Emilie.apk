@@ -1,0 +1,82 @@
+{
+  "identity": {
+    "appId": "app.jarvis.fitness.evolution",
+    "appName": "Yanis Fitness Evolution",
+    "version": "1.2.0",
+    "versionCode": 9,
+    "certificateSha256": "0849b90901a80eecbd587bd41d5acfbfb120096889bb979dfa37564a8de23225",
+    "previousCertificateSha256": "5c6af2226164d32ab145c3bedd789e1ed4d30170858122cfaa76bb01c9bd62e7",
+    "installation": "in-place update of 1.1.0; remains parallel to 1.0.6",
+    "userAuthorizedNewIdentity": true
+  },
+  "baseApkSha256": "691488f08ada180de1022bf336b14024c71e52427cb2c43547ac3d53c8b8b5ab",
+  "apkSha256": "3a92b5fda83f68ad205599fb4349aaae776b651c67b414e9b8021b99bdedcc26",
+  "webBundleSha256": "99e50b4c0328296bab529b3fe2a11c18473c506496db3c40a2d406edb1c6e031",
+  "validatedStage4WebSha256": "fec423df8cb3cca93728619801016d688fb7028c7a0b4c91b24f6048e1b7e5d8",
+  "changedEntries": [
+    "AndroidManifest.xml",
+    "assets/capacitor.config.json",
+    "assets/public/assets/index-CBCies4k.js",
+    "classes9.dex",
+    "resources.arsc"
+  ],
+  "webFiles": 272,
+  "unchangedWebFiles": 271,
+  "nativeDexFiles": 9,
+  "byteIdenticalDexFiles": 8,
+  "originalClasses": 4953,
+  "resultingClasses": 4968,
+  "removedSpeechClasses": [
+    "app/jarvis/fitness/JarvisSpeechPlugin$$ExternalSyntheticLambda0.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$$ExternalSyntheticLambda1.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$$ExternalSyntheticLambda2.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin.smali"
+  ],
+  "newSpeechClasses": [
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$1$JbtLuQUqaiWt2YopAaGPnNu_UTE.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$1$JdyUUrLXw0Nd82EuRasvmg5rJ9A.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$1$rCTRurvL25aMZkDkUBH2cCxCWhU.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$2D39rsMVts6cucbzjJ_WBu5fmnY.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$8VDuUsZpS_8_3zI7SPqYnT89vMs.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$HEOEQtjB-oV9lhO39tTL1k4CTZk.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$HT-Hzc0QqnuGvzFiS3oh65Du440.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$Nvx2XqSFetjN1T2N0dHhwvgMa1A.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$S778GD9-kvtWf7rv7tU81ZBGtJw.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$_ZV5wOdqyXT7LCAXVAfkM6N80_8.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$essj91ZIIBkZrYuBhCmtz_SBEVM.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$j5xeCZImA52pgDyvxMrkQ-QA8Ko.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$kTbgc25ee-YlaO3dJ1wc5PyIN1A.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$kfYRiqgQSk0C4zI7jRIGqBo1cLA.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$rq3w62Kbz_NYjXOg1CYuk-H_SFA.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$zamElQZKiaeeVDzh3mgp1CDU7-Y.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$1.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$2.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin.smali"
+  ],
+  "unchangedClassesInRebuiltDex": [
+    "app/jarvis/fitness/JarvisBackupPlugin.smali",
+    "app/jarvis/fitness/MainActivity.smali"
+  ],
+  "nativeSourceSha256": "1b1fae3c7892e018ec0843ae0ac8b19151f6cc95e84ebd0371b60c89977b09e2",
+  "nativeDexSha256": "af3284382256a8b272af4ec9d6ca811704308f25e7b0b85f4a1141bd5e536a8c",
+  "nativeRoundTripExact": true,
+  "signedFromRestoredPrivateBackup": true,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "alignmentVerified": true,
+  "deviceTested": false,
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "stagesNotYetImplemented": [
+    5,
+    6,
+    7,
+    "general conversational AI"
+  ]
+}
