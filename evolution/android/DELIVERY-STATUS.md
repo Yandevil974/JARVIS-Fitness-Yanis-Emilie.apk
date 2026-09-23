@@ -54,3 +54,13 @@ Incident consigné : l’identité 1.4.1 (`d3ca5a27…`) avait été créée ave
 - Vérifications : signature v2 + v3, un signataire, alignement, inventaire ZIP inchangé, 9/9 DEX identiques octet pour octet, 271/272 fichiers web inchangés.
 - Sauvegarde privée en clair : `downloads/Yanis-Fitness-Evolution-1.4.2-SAUVEGARDE-PRIVEE.zip` (ignorée par Git) ; à télécharger et conserver hors téléphone.
 - Installation : même identifiant d’application, signature différente ⇒ désinstaller la 1.4.0, installer la 1.4.2, restaurer le JSON. Détail : [INSTALLATION-1.4.2.md](../../downloads/INSTALLATION-1.4.2.md).
+
+# Livraison 1.4.3 — 23 septembre 2026 (séance oubliée)
+
+Correctif décidé par l'utilisateur (« fais ce que tu recommande ») après reproduction du blocage d'Émilie. Même identité durable que la 1.4.2 (`150e3846…`) : **la 1.4.3 s'installe par-dessus la 1.4.2 sans désinstallation**.
+
+- `downloads/Yanis-Fitness-Evolution-1.4.3.apk`, 24 909 288 octets, SHA-256 `31e950848b0379830c09e9a4061eab49c812869343050747a0e163944941141c`, versionName 1.4.3 / versionCode 14.
+- Base 1.4.0 ; par rapport à la 1.4.2, seules deux entrées changent : `AndroidManifest.xml` (version) et le paquet web (`52dfc705…`). 9/9 DEX identiques, 271/272 fichiers web inchangés, inventaire ZIP inchangé, v2+v3 vérifiées.
+- Règle appliquée : une séance de musculation d'un autre jour est clôturée automatiquement en « partielle » (date et séries réelles conservées), au chargement, au clic « Lancer la séance » et au clic d'une minuterie guidée. Compteur de séance en heures au-delà d'une heure.
+- Preuves : `evolution/media/tests/emilie-session-block.spec.mjs` (2 tests), `review/REVIEW-EMILIE-BLOCAGE.md`, captures `review/emilie-fixed-*.png`. Suite Node 40/40, média 28/28, suite d'origine 90/90.
+- Détail utilisateur : [INSTALLATION-1.4.3.md](../../downloads/INSTALLATION-1.4.3.md). Aucun essai sur appareil réel.

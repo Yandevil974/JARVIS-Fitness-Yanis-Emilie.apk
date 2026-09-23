@@ -24,7 +24,7 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg'].includes(n.id?.name)&&
+  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg','J5','Mx','JarvisStaleWorkout','JarvisStaleNotice','JarvisCloseStaleWorkout','JarvisCloseStaleWorkouts'].includes(n.id?.name)&&
   !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
@@ -222,24 +222,45 @@ test('the 94 packaged drawings are all reviewed at least once, and reviewing is 
    assert.ok(clip.usedFor.some(id=>findings.some(f=>f.status==='open'&&(f.exercises||[]).includes(id))),clip.path);
  }
 });
-test('séance jamais clôturée : reproduction d’Émilie tracée, sans fermer le groupe', () => {
+test('séance oubliée : clôture automatique au changement de jour, jamais de série effacée ni de date inventée', () => {
+ const runner=vm.runInNewContext(`(function(){
+  const sessions=[],profile={plan:{sessions:[{id:'p1',date:'2026-09-24',status:'planned'}]},archivedPlans:[],sessions,timer:{meta:{workoutId:'w1',type:'rest'}},workout:{id:'w1',date:'2026-09-24',name:'Fessiers + jambes',planId:'p1',startedAt:new Date('2026-09-24T18:00:00').getTime(),status:'inProgress',safetyStop:false,exercises:[{exerciseId:'a',targetSets:3,sets:[{completed:true,createdAt:new Date('2026-09-24T18:20:00').getTime(),weight:10,reps:12}]},{exerciseId:'b',targetSets:2,sets:[]}]}};
+  const {JarvisCloseStaleWorkout,JarvisStaleWorkout,JarvisCloseStaleWorkouts,JarvisStaleNotice}=${JSON.stringify('')?0:0}||{};
+  return null;})()`);
+ assert.ok(candidate.includes('function JarvisCloseStaleWorkout(p,today){'));
+ assert.ok(candidate.includes('const stale=JarvisCloseStaleWorkouts(Z,P());n(Z),k(M);if(stale.length)q(stale.map(JarvisStaleNotice).join(\" \"))'));
+ assert.ok(candidate.includes('if(A.workout&&A.workout.date!==P()){H(_p=>'),'le bouton de séance doit clore la séance oubliée');
+ assert.ok(candidate.includes('if(A.workout&&A.workout.date!==P()&&!['),'la minuterie guidée doit clore la séance oubliée au lieu de la refuser');
+ assert.ok(candidate.includes('sec>=3600?Math.floor(sec/3600)+\" h \"'),'le compteur doit passer en heures');
+ // aucune écriture de données : la clôture recopie exactement ce que fait la modale
+ for(const needle of ['w.status=complete?\"completed\":\"partial\"','p.sessions=(p.sessions||[]).concat([w])','if(w.planId)md(p,w.planId,w.status,w.date)','p.workout=null'])
+  assert.ok(candidate.includes(needle),needle);
+ assert.ok(!/JarvisCloseStaleWorkout[\s\S]{0,600}(reps|weight|targetSets|repsLow|repsHigh)=/.test(candidate),'la clôture ne touche à aucune prescription');
+});
+
+test('séance oubliée : la correction est prouvée, le groupe reste ouvert faute d’essai sur téléphone', () => {
  const findings=JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings;
  const group=findings.find(f=>f.id==='session-never-closed-blocks-program-and-timers');
- assert.ok(group&&group.status==='open');
+ assert.ok(group,'le groupe doit exister');
+ // Ne jamais fermer un groupe sans essai sur l'appareil réel : il reste ouvert.
+ assert.equal(group.status,'open');
  assert.match(group.observed,/40320:00/);
  assert.match(group.observed,/Clôturer votre séance/);
- assert.match(group.action,/partielle/);
+ assert.equal(group.fix.candidateBundleSha256,sha(candidate));
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.3.apk');
+ assert.match(group.fix.remaining,/téléphone/);
  const spec=fs.readFileSync(new URL('./emilie-session-block.spec.mjs',import.meta.url),'utf8');
- // Le spec ne contient aucun verdict écrit d'avance : il relève l'état réel de
- // l'application livrée (bouton principal, écran de séance, modale, minuteur).
- for(const needle of ['Reprendre ma séance','Lancer 30 secondes','minuteur créé','semaine 1'])
+ // Le spec relève l'état réel : aucune attente du défaut n'y est écrite d'avance.
+ for(const needle of ['Lancer la séance','Lancer 30 secondes','clôturée automatiquement','00:00'])
   assert.ok(spec.includes(needle),needle);
- assert.ok(!/toHaveText\(.*Reprendre/.test(spec),'aucune attente inventée sur le bouton principal');
+ assert.ok(spec.includes('expect(semaine9.sessions.length).toBe(2)'));
  const report=fs.readFileSync(new URL('../review/REVIEW-EMILIE-BLOCAGE.md',import.meta.url),'utf8');
  assert.match(report,/hérité de la 1\.4\.0/);
- assert.ok(report.split('\n').length>25);
- // Le mécanisme est hérité : il est présent dans les bundles publiés 1.0.6, 1.3.0 et 1.4.0.
- // Aucun contournement n'est appliqué dans le candidat.
+ assert.match(report,/CORRIGÉ — 23 septembre 2026/);
+ assert.match(report,/jamais clôturée automatiquement : reprise normale/);
+ for(const capture of ['emilie-block-w5-accueil.png','emilie-fixed-w5-accueil.png','emilie-fixed-w9-accueil.png'])
+  assert.ok(fs.existsSync(new URL('../review/'+capture,import.meta.url)),capture);
+ // Le mécanisme d'origine est hérité des bundles publiés : le candidat le corrige, il ne le contourne pas.
  const bundle=fs.readFileSync(new URL('../../../.cache/media-pool-syntax.mjs',import.meta.url),'utf8');
  assert.ok(bundle.includes('Votre séance en cours a été reprise.'));
 });

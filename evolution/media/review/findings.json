@@ -591,8 +591,22 @@
         "goblet-squat"
       ],
       "observed": "Reproduit le 23 septembre 2026 pour Émilie : une séance commencée en semaine 1 et jamais clôturée (application quittée en cours de séance) reste dans l’état. Toute ouverture des semaines suivantes la reprend d’office : le bouton principal affiche « Reprendre ma séance » et non « Lancer la séance », l’écran rouvre la séance de la semaine 1 avec sa série déjà validée (1/29 séries, compteur de durée 40320:00), l’échauffement est toujours « Avant de commencer », et aucun mot-clé « validé » ou « terminée » n’apparaît dans la vue « Cette semaine ». Toute minuterie guidée est refusée : le bouton « Lancer 30 secondes » de Récupération ouvre la modale « Clôturer votre séance » au lieu de démarrer. Tant que cette séance n’est pas clôturée, ni le programme du jour ni le chronomètre ne peuvent démarrer.",
-      "action": "Proposé, non appliqué : clôturer automatiquement une séance d’entraînement au changement de jour (statut « partielle » le soir de son jour, comme le propose déjà la modale « Terminer »), ou au minimum demander à l’ouverture du jour suivant : continuer cette séance ancienne ou la clôturer. Aucun test sur téléphone ; à confirmer avec l’utilisateur avant de changer le comportement.",
-      "status": "open"
+      "action": "CORRIGÉ dans le candidat le 23 septembre 2026, sur décision de l'utilisateur : une séance de musculation d'un autre jour est clôturée automatiquement en « partielle » au chargement (et au prochain clic sur « Lancer la séance » ou sur une minuterie guidée), avec sa propre date, ses séries validées conservées et la séance planifiée du jour marquée « partielle » — exactement ce que fait la modale « Terminer ». Message explicite affiché. Le compteur de séance ne peut plus afficher des jours en minutes (heures au-delà d'une heure). Reproductible : evolution/media/tests/emilie-session-block.spec.mjs (2 tests). Groupe laissé OUVERT : il ne peut être fermé qu'après un essai sur le téléphone de l'utilisateur (aucun appareil réel ici).",
+      "status": "open",
+      "fix": {
+        "candidateBundleSha256": "52dfc705decbe96aeab078188240d910092cae0fa257e469e1b6f098fcf4f2c4",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.3.apk",
+        "implemented": "2026-09-23",
+        "decision": "utilisateur, 23 septembre 2026 : « fais ce que tu recommande »",
+        "verifiedInBrowser": "evolution/media/tests/emilie-session-block.spec.mjs (2 tests PASS sur le bundle livré)",
+        "evidence": [
+          "review/emilie-fixed-w5-accueil.png",
+          "review/emilie-fixed-w5-seance.png",
+          "review/emilie-fixed-w5-chrono.png",
+          "review/emilie-fixed-w9-accueil.png"
+        ],
+        "remaining": "essai sur le téléphone de l’utilisateur ; aucun appareil réel dans cet environnement"
+      }
     }
   ]
 }

@@ -1,17 +1,18 @@
-// Émilie — reproduction du blocage décrit le 23 septembre 2026 :
-// « les exercices terminés lors des premières semaines se mettent validés pour
-// aujourd'hui et les semaines suivantes, alors qu'elle n'a pas fait son
-// programme du jour ; du coup le chronomètre ni le programme ne démarre. »
+// Émilie — séance oubliée : le correctif décidé le 23 septembre 2026.
 //
-// Hypothèse mesurée, pas supposée : une séance commencée en semaine 1 et jamais
-// clôturée reste dans l'état (`workout`). Toute ouverture ultérieure la reprend
-// d'office (`startWorkout`) — ses séries déjà validées sont donc affichées — et
-// toute autre minuterie guidée est refusée (`setTimer`) au profit de la
-// modale « Clôturer la séance ». Ce spec le démontre sans changer l'état à la main.
+// Avant : une séance commencée et jamais clôturée était reprise d'office des
+// semaines plus tard (ses séries validées réapparaissaient) et toute minuterie
+// guidée était refusée. Reproduction historique : review/REVIEW-EMILIE-BLOCAGE.md
+// et les captures review/emilie-block-w5-*.png / w9-accueil.png.
+//
+// Maintenant : au chargement d'un nouveau jour, la séance oubliée est clôturée
+// en « partielle » avec sa date et ses séries réelles, l'utilisateur est prévenu,
+// la journée repart propre et le chronomètre démarre. Ce spec vérifie tout cela
+// sur le paquet web réellement livré, sans écrire le verdict à l'avance.
 import {test,expect} from '../../../JARVIS-Fitness-Source/node_modules/@playwright/test/index.mjs';
 import {initialState,validateState} from '../../../JARVIS-Fitness-Source/src/store/model.js';
 
-const T1=new Date('2026-09-24T10:00:00+04:00'); // semaine 1, jour de musculation : elle commence une séance
+const T1=new Date('2026-09-24T10:00:00+04:00'); // semaine 1, jour de musculation
 const T2=new Date('2026-10-22T10:00:00+04:00'); // 4 semaines plus tard
 const T3=new Date('2026-11-19T10:00:00+04:00'); // 8 semaines plus tard
 
@@ -22,11 +23,12 @@ function state(){
   return s;
 }
 const saved=page=>page.evaluate(()=>JSON.parse(localStorage.getItem('jarvis_fitness_v3')).profiles.emilie);
+const body=page=>page.locator('body').innerText();
 
 test.beforeEach(async({page})=>{page.errors=[];page.on('pageerror',e=>page.errors.push(e.message))});
 test.afterEach(async({page})=>expect(page.errors).toEqual([]));
 
-test('séance de la semaine 1 jamais clôturée : état repris d’office et minuteries refusées',async({page})=>{
+test('séance oubliée : clôturée en partielle au nouveau jour, journée propre et chronomètre qui démarre',async({page})=>{
   const s=state();
   validateState(structuredClone(s));
   await page.clock.setFixedTime(T1);
@@ -34,83 +36,133 @@ test('séance de la semaine 1 jamais clôturée : état repris d’office et min
   await page.goto('/');
   await expect(page.locator('.training-hero')).toBeVisible();
 
-  // Semaine 1 : elle lance la séance et valide deux séries, puis quitte l'app
-  // sans clôturer (écran éteint, application balayée...).
+  // Semaine 1 : elle lance sa séance, valide deux séries, puis quitte l'application
+  // sans clôturer (écran éteint, application balayée…).
   await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>/Lancer la séance/.test(x.textContent));b&&b.click()});
-  await page.waitForTimeout(1500);
-  if(!(await page.getByText('MODE SÉANCE').count())){
-    console.log('DEBUG après clic · url',page.url());
-    console.log('DEBUG après clic · texte:',JSON.stringify((await page.locator('body').innerText()).replace(/\n/g,' | ').slice(0,700)));
-    await page.screenshot({path:'.cache/emilie-block-debug.png',fullPage:true});
-  }
   await expect(page.getByText('MODE SÉANCE')).toBeVisible();
   const nom=await page.locator('.session-topbar h2').innerText();
   for(let i=0;i<2;i++){
-    await page.getByLabel('Charge réalisée').fill('10');
+    await page.getByLabel('Charge réalisée').fill(String(10+i));
     await page.getByLabel('Répétitions réalisées').fill('12');
     await page.locator('button.validate-set').click();
     await expect(page.locator('.logged-sets')).toBeVisible();
     if(i===0)await page.locator('.timer-actions').getByRole('button',{name:/Passer|Terminer|Arrêter/}).first().click().catch(()=>{});
   }
   const semaine1=await saved(page);
+  const seriesSemaine1=semaine1.workout.exercises.reduce((n,e)=>n+e.sets.filter(x=>x.completed).length,0);
   console.log('SEMAINE 1 · séance en cours :',semaine1.workout.name,'| date',semaine1.workout.date,
-    '| séries validées',semaine1.workout.exercises.reduce((n,e)=>n+e.sets.filter(x=>x.completed).length,0),
-    '| séances terminées',semaine1.sessions.length);
+    '| séries validées',seriesSemaine1,'| séances terminées',semaine1.sessions.length);
+  expect(semaine1.workout).toBeTruthy();
+  expect(semaine1.sessions.length).toBe(0);
 
-  // 4 semaines plus tard : elle n'a pas pu faire ses séances des semaines 2 à 5.
+  // 4 semaines plus tard, elle rouvre l'application sans avoir clôturé.
   await page.clock.setFixedTime(T2);
   await page.reload();
   await expect(page.locator('.training-hero')).toBeVisible();
-  const heroT2=await page.locator('.hero-cta button').first().innerText();
-  console.log('SEMAINE 5 · bouton principal :',JSON.stringify(heroT2));
-  await page.screenshot({path:'.cache/emilie-block-t2-accueil.png',fullPage:false});
+  const texteSemaine5=await body(page);
+  const heroSemaine5=await page.locator('.hero-cta button').first().innerText();
+  const semaine5=await saved(page);
+  console.log('SEMAINE 5 · bouton principal :',JSON.stringify(heroSemaine5));
+  console.log('SEMAINE 5 · avis :',JSON.stringify((texteSemaine5.match(/Séance du[^|]{0,160}/)||[''])[0].trim()));
+  console.log('SEMAINE 5 · séance en cours ?',semaine5.workout?'oui':'non',
+    '| séances dans l’historique',semaine5.sessions.length,
+    '| statut',semaine5.sessions[0]&&semaine5.sessions[0].status,
+    '| date',semaine5.sessions[0]&&semaine5.sessions[0].date,
+    '| séries conservées',semaine5.sessions[0]&&semaine5.sessions[0].exercises.reduce((n,e)=>n+e.sets.filter(x=>x.completed).length,0),
+    '| minuteur',semaine5.timer?'présent':'aucun');
+  await page.screenshot({path:'.cache/emilie-fixed-w5-accueil.png'});
 
-  // Ce qu'elle voit si elle appuie : l'ancienne séance, avec ses séries validées.
-  await page.getByRole('button',{name:/Reprendre ma séance|Lancer la séance/}).click();
-  await expect(page.getByText('MODE SÉANCE')).toBeVisible();
-  const reprise=await page.locator('.session-topbar').innerText();
-  const items=await page.locator('.workout-sequence .sequence-item').allInnerTexts();
-  const chaud=await page.locator('.sequence-warmup').first().innerText();
-  console.log('SEMAINE 5 · écran de séance :',JSON.stringify(reprise.replace(/\n/g,' | ')));
-  console.log('SEMAINE 5 · échauffement :',JSON.stringify(chaud.replace(/\n/g,' | ')));
-  console.log('SEMAINE 5 · exercices :',JSON.stringify(items));
-  await page.screenshot({path:'.cache/emilie-block-t2-seance.png',fullPage:true});
-  const bloque=await saved(page);
-  console.log('SEMAINE 5 · état conservé : séance datée',bloque.workout.date,'| séances terminées',bloque.sessions.length);
+  // Le correctif attendu, relevé sur l'application :
+  expect(semaine5.workout).toBeNull();
+  expect(semaine5.timer).toBeNull();
+  expect(heroSemaine5).toMatch(/Lancer la séance/);
+  expect(texteSemaine5).toMatch(/clôturée automatiquement/);
+  expect(semaine5.sessions.length).toBe(1);
+  expect(semaine5.sessions[0].date).toBe(semaine1.workout.date); // sa date réelle, pas aujourd'hui
+  expect(semaine5.sessions[0].status).toBe('partial');
+  expect(semaine5.sessions[0].finishedAt).toBeLessThan(new Date(T2).getTime());
+  expect(semaine5.sessions[0].exercises.reduce((n,e)=>n+e.sets.filter(x=>x.completed).length,0)).toBe(seriesSemaine1);
+  // La séance planifiée de ce jour-là porte le résultat, pas une autre.
+  const planifiee=semaine5.plan.sessions.find(x=>x.id===semaine5.sessions[0].planId);
+  expect(planifiee.date).toBe(semaine1.workout.date);
 
-  // Ce que le programme affiche ce jour-là, 4 semaines plus tard
-  await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent.trim()==='Programme');b&&b.click()});
-  await page.waitForTimeout(700);
-  await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>/Cette semaine/.test(x.textContent));b&&b.click()});
-  await page.waitForTimeout(700);
-  const prog=(await page.locator('main, body').first().innerText()).replace(/\n/g,' | ');
-  console.log('SEMAINE 5 · vue « Cette semaine » :',JSON.stringify(prog.slice(prog.indexOf('Cette semaine'),prog.indexOf('Cette semaine')+450)));
-  console.log('SEMAINE 5 · mots-clés validés/terminés :',JSON.stringify([...prog.matchAll(/(Validé[^|]{0,30}|Terminée[^|]{0,30}|déjà[^|]{0,40})/g)].map(m=>m[0]).slice(0,8)));
-  await page.screenshot({path:'.cache/emilie-block-t2-programme.png',fullPage:true});
-
-  // Le chronomètre guidé (récupération, type « recovery ») est refusé tant que
-  // cette musculation n'est pas clôturée : la modale de clôture s'ouvre à la place.
+  // Une minuterie guidée démarre maintenant normalement : elle était refusée
+  // tant que la séance oubliée bloquait l'application.
   await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent.trim()==='Récupération');b&&b.click()});
-  await page.waitForTimeout(900);
+  await page.waitForTimeout(700);
   await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>/Mobilité & stretching/.test(x.textContent));b&&b.click()});
-  await page.waitForTimeout(900);
-  await page.getByLabel('Lancer 30 secondes').first().click({timeout:8000});
-  await page.waitForTimeout(600);
-  const modale=await page.getByRole('dialog').innerText().catch(()=>'');
-  const avis=await page.locator('body').innerText();
-  console.log('SEMAINE 5 · modale après « Lancer 30 secondes » :',JSON.stringify(modale.replace(/\n/g,' | ').slice(0,180)));
-  console.log('SEMAINE 5 · minuteur créé ?',JSON.stringify(await page.evaluate(()=>{const t=JSON.parse(localStorage.getItem('jarvis_fitness_v3')).profiles.emilie.timer;return t?t.meta:'aucun'})));
-  await page.screenshot({path:'.cache/emilie-block-t2-chrono-refuse.png'});
+  await page.waitForTimeout(700);
+  await page.getByLabel('Lancer 30 secondes').first().click();
+  await page.waitForTimeout(700);
+  const minuteur=await saved(page);
+  const modale=(await page.getByRole('dialog').innerText().catch(()=>''));
+  console.log('SEMAINE 5 · minuteur après « Lancer 30 secondes » :',JSON.stringify(minuteur.timer&&minuteur.timer.meta));
+  console.log('SEMAINE 5 · modale :',JSON.stringify(modale.replace(/\n/g,' | ').slice(0,140)));
+  expect(minuteur.timer).toBeTruthy();
+  expect(minuteur.timer.meta.type).toBe('recovery');
+  expect(modale).not.toMatch(/Clôturer votre séance/);
+  await page.screenshot({path:'.cache/emilie-fixed-w5-chrono.png'});
+  // On arrête ce chrono pour rendre la journée à son état normal.
+  await page.getByLabel('Arrêter le protocole').click();
+  await page.getByRole('button',{name:/Arrêter sans enregistrer/}).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
 
-  // 8 semaines plus tard, sans rien changer : même situation.
+  // Puis elle revient à l'accueil et lance sa vraie séance du jour : le compteur part de zéro.
+  await page.waitForTimeout(400);
+  await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent.trim()==='Accueil');b&&b.click()});
+  await expect(page.locator('.hero-cta button').first()).toHaveText(/Lancer la séance/);
+  await page.evaluate(()=>{const b=document.querySelector('.hero-cta button');b&&b.click()});
+  await expect(page.getByText('MODE SÉANCE')).toBeVisible();
+  const compteur=await page.locator('.session-topbar').innerText();
+  console.log('SEMAINE 5 · compteur de la nouvelle séance :',JSON.stringify(compteur.replace(/\n/g,' | ')));
+  expect(compteur).not.toMatch(/\d{4,}:\d{2}/);
+  expect(compteur).toMatch(/0\/\d+ séries réalisées/);
+  await page.screenshot({path:'.cache/emilie-fixed-w5-seance.png'});
+  // Elle quitte sans terminer : cette séance-là est du jour, elle est conservée.
+  const finSemaine5=await saved(page);
+  expect(finSemaine5.workout).toBeTruthy();
+
+  // 8 semaines plus tard : plus rien à clôturer, aucune récidive.
   await page.clock.setFixedTime(T3);
   await page.reload();
   await expect(page.locator('.training-hero')).toBeVisible();
-  const heroT3=await page.locator('.hero-cta button').first().innerText();
-  const semaine8=await saved(page);
-  console.log('SEMAINE 9 · bouton principal :',JSON.stringify(heroT3),
-    '| séance en cours datée',semaine8.workout&&semaine8.workout.date,
-    '| séries déjà validées',semaine8.workout?semaine8.workout.exercises.reduce((n,e)=>n+e.sets.filter(x=>x.completed).length,0):null,
-    '| séances terminées',semaine8.sessions.length);
-  await page.screenshot({path:'.cache/emilie-block-t3-accueil.png'});
+  const semaine9=await saved(page);
+  const heroSemaine9=await page.locator('.hero-cta button').first().innerText();
+  console.log('SEMAINE 9 · séance en cours ?',semaine9.workout?'oui':'non',
+    '| séances dans l’historique',semaine9.sessions.length,'| minuteur',semaine9.timer?'présent':'aucun',
+    '| bouton',JSON.stringify(heroSemaine9));
+  // La séance du jour qu'elle avait laissée ouverte en semaine 5 est elle aussi
+  // clôturée proprement, sur sa propre date, sans rien inventer.
+  console.log('SEMAINE 9 · historique :',JSON.stringify(semaine9.sessions.map(s=>({date:s.date,status:s.status,series:s.exercises.reduce((n,e)=>n+e.sets.filter(x=>x.completed).length,0)}))));
+  expect(semaine9.sessions.length).toBe(2);
+  expect(semaine9.workout).toBeNull();
+  expect(semaine9.sessions.map(s=>s.status)).toEqual(['partial','partial']);
+  expect(new Set(semaine9.sessions.map(s=>s.date)).size).toBe(2);
+  await page.screenshot({path:'.cache/emilie-fixed-w9-accueil.png'});
+});
+
+test('une séance du jour même n’est jamais clôturée automatiquement',async({page})=>{
+  const s=state();
+  validateState(structuredClone(s));
+  await page.clock.setFixedTime(T1);
+  await page.addInitScript(s=>{if(!localStorage.getItem('jarvis_fitness_v3'))localStorage.setItem('jarvis_fitness_v3',JSON.stringify(s))},s);
+  await page.goto('/');
+  await expect(page.locator('.training-hero')).toBeVisible();
+  await page.evaluate(()=>{const b=[...document.querySelectorAll('button')].find(x=>/Lancer la séance/.test(x.textContent));b&&b.click()});
+  await expect(page.getByText('MODE SÉANCE')).toBeVisible();
+  await page.getByLabel('Charge réalisée').fill('12');
+  await page.getByLabel('Répétitions réalisées').fill('12');
+  await page.locator('button.validate-set').click();
+  await expect(page.locator('.logged-sets')).toBeVisible();
+
+  // Rechargement le même jour : la séance doit être reprise, pas clôturée.
+  await page.reload();
+  await expect(page.locator('.training-hero')).toBeVisible();
+  const memeJour=await saved(page);
+  const bouton=await page.locator('.hero-cta button').first().innerText();
+  console.log('MÊME JOUR · bouton',JSON.stringify(bouton),'| séance en cours',memeJour.workout?'conservée':'perdue',
+    '| historique',memeJour.sessions.length,'| séries',memeJour.workout.exercises.reduce((n,e)=>n+e.sets.filter(x=>x.completed).length,0));
+  expect(memeJour.workout).toBeTruthy();
+  expect(bouton).toMatch(/Reprendre ma séance/);
+  expect(memeJour.sessions.length).toBe(0);
 });

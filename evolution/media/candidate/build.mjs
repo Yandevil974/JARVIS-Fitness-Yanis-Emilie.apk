@@ -123,7 +123,52 @@ function Bg(i,o){`);
     'pattern:p?"bridge":"row",img:p?JarvisReviewedMedia({id:"pont-fessier-au-sol-activation"}).path:Jn.mobilite');
   source = once(source,'img:Jn.approche,instruction:',
     'img:(JarvisReviewedMedia(l)||{}).path||Jn.approche,exerciseId:l?.id,mediaRole:"approach",instruction:');
+  // Une seance de musculation commencee et jamais cloturee bloquait tout :
+  // elle etait reprise d'office des semaines plus tard (series deja validees
+  // affichees), et toute minuterie guidee etait refusee au profit de la modale
+  // « Cloturer votre seance ». Decision de l'utilisateur du 23 septembre 2026 :
+  // la cloturer automatiquement en « partielle » au changement de jour.
+  // Aucune serie, aucune charge, aucune prescription n'est modifiee : la seance
+  // part simplement dans l'historique avec sa date et son statut reels.
+  const staleHelpers = String.raw`
+function JarvisStaleWorkout(p,today){return !!(p&&p.workout&&p.workout.date&&p.workout.date!==today)}
+function JarvisStaleNotice(w){return "Séance du "+Re(w.date,{day:"numeric",month:"long"})+" ("+w.name+") clôturée automatiquement comme "+(w.status==="completed"?"terminée":"partielle")+". Vos séries validées restent dans l’historique."}
+function JarvisCloseStaleWorkout(p,today){
+ if(!JarvisStaleWorkout(p,today))return null;
+ const w=p.workout,
+  complete=!w.safetyStop&&(w.exercises||[]).every(e=>(e.sets||[]).filter(s=>s.completed).length>=e.targetSets),
+  stamps=(w.exercises||[]).flatMap(e=>e.sets||[]).filter(s=>s.completed).map(s=>Number(s.createdAt)||0),
+  started=Number(w.startedAt)||0,
+  dayEnd=new Date(w.date+"T23:59:59").getTime(),
+  last=stamps.length?Math.max(...stamps):0;
+ w.status=complete?"completed":"partial";
+ w.finishedAt=last||(started?Math.min(started+1e3,dayEnd):dayEnd);
+ w.durationSec=Math.max(1,Math.round((w.finishedAt-(started||w.finishedAt))/1e3));
+ p.sessions=(p.sessions||[]).concat([w]);
+ if(w.planId)md(p,w.planId,w.status,w.date);
+ if(p.timer&&p.timer.meta&&(p.timer.meta.workoutId===w.id||p.timer.meta.type==="rest"))p.timer=null;
+ p.workout=null;
+ return w
+}
+function JarvisCloseStaleWorkouts(s,today){const closed=[];for(const id of Object.keys(s.profiles||{})){const w=JarvisCloseStaleWorkout(s.profiles[id],today);w&&closed.push(w)}return closed}`;
+  source = once(source, 'function md(i,o,n,l){', staleHelpers + '\nfunction md(i,o,n,l){');
+  // Au chargement : l'application repart d'une journee propre, seance en cours
+  // incluse, et l'utilisateur est prevenu une fois.
+  source = once(source, 'n(Z),k(M)})},[])',
+    'const stale=JarvisCloseStaleWorkouts(Z,P());n(Z),k(M);if(stale.length)q(stale.map(JarvisStaleNotice).join(" "))})},[])');
+  // Au clic : le bouton ne propose plus une seance d'un autre jour.
+  source = once(source, 'if(A.workout){h(null),ae("training","session"),q("Votre séance en cours a été reprise.");return}',
+    'if(A.workout&&A.workout.date!==P()){H(_p=>{const w=JarvisCloseStaleWorkout(_p,P());w&&q(JarvisStaleNotice(w))})}else if(A.workout){h(null),ae("training","session"),q("Votre séance en cours a été reprise.");return}');
+  // Et une minuterie guidee n'est plus refusee a cause d'une seance oubliee.
+  source = once(source, 'if(A.workout&&!["rest","warmup"].includes(M==null?void 0:M.type)){q("Clôturez votre musculation avant de lancer un autre protocole. Les séries seront conservées.","info"),h({type:"finish-workout"});return}',
+    'if(A.workout&&A.workout.date!==P()&&!["rest","warmup"].includes(M==null?void 0:M.type)){H(_p=>{const w=JarvisCloseStaleWorkout(_p,P());w&&q(JarvisStaleNotice(w))})}else if(A.workout&&!["rest","warmup"].includes(M==null?void 0:M.type)){q("Clôturez votre musculation avant de lancer un autre protocole. Les séries seront conservées.","info"),h({type:"finish-workout"});return}');
+  // Le compteur de seance ne peut plus afficher « 40320:00 » (28 jours de minutes) :
+  // au-dela d'une heure il passe en heures et minutes.
+  source = once(source, 'function J5({start:i}){const o=El(1e3);return s.jsx(s.Fragment,{children:fi((o-i)/1e3)})}',
+    'function J5({start:i}){const o=El(1e3),sec=Math.max(0,(o-i)/1e3);return s.jsx(s.Fragment,{children:sec>=3600?Math.floor(sec/3600)+" h "+String(Math.floor(sec%3600/60)).padStart(2,"0"):fi(sec)})}');
+
   // Both start buttons must carry approach identity into newly created timers.
+
   source = once(source,'instruction:x.instruction,img:x.img,pattern:x.pattern}',
     'instruction:x.instruction,img:x.img,pattern:x.pattern,exerciseId:x.exerciseId,mediaRole:x.mediaRole}');
   source = once(source,'f=p.steps[p.index],poolMedia=',

@@ -44,3 +44,38 @@ Ce qui **n'est pas** la cause : les séances terminées des semaines précédent
 ## Consigné
 
 Groupe ouvert `session-never-closed-blocks-program-and-timers` (`review/findings.json`, 48 groupes ouverts). Aucun exercice promu ; aucun groupe fermé.
+
+---
+
+# CORRIGÉ — 23 septembre 2026 (décision de l'utilisateur : « fais ce que tu recommande »)
+
+**Le défaut décrit ci-dessus est corrigé dans le candidat `52dfc705…` et dans l'APK 1.4.3 signé.**
+
+Règle appliquée, exactement celle recommandée : **une séance de musculation d'un autre jour est clôturée automatiquement en « partielle »**, avec sa propre date, ses séries validées conservées, la séance planifiée de ce jour-là marquée du même statut, et le minuteur de repos éventuel retiré. C'est ce que fait déjà la modale « Terminer », sans réécrire une seule prescription : ni charge, ni répétition, ni consigne, ni image ne sont touchées.
+
+Trois points d'application, pour qu'aucun chemin ne reste bloqué :
+
+1. **au chargement** : l'application repart d'une journée propre, quel que soit l'onglet, et affiche une fois : « Séance du 24 septembre (🍑 Fessiers + jambes) clôturée automatiquement comme partielle. Vos séries validées restent dans l'historique. » ;
+2. **au clic sur « Lancer la séance »** : une séance d'un autre jour n'est plus « reprise » d'office, elle est clôturée puis la séance du jour se lance normalement ;
+3. **au clic sur une minuterie guidée** : elle n'est plus refusée à cause d'une séance oubliée ; elle démarre.
+
+Le compteur de séance ne peut plus afficher « 40320:00 » : au-delà d'une heure il s'affiche en heures et minutes.
+
+## Vérification, sur le paquet réellement livré
+
+`evolution/media/tests/emilie-session-block.spec.mjs`, 2 tests verts sur le bundle `52dfc705…` (celui embarqué dans l'APK 1.4.3) :
+
+| Mesure | Avant | Après |
+| --- | --- | --- |
+| Semaine 5, bouton principal | « Reprendre ma séance » | **« Lancer la séance »** |
+| Séance en cours à la semaine 5 | celle du 24/09, 1/29 séries | **aucune** |
+| Historique | 0 séance | **1 séance « partielle » datée du 24/09, 1 série conservée** |
+| Minuterie « Lancer 30 secondes » | refusée → modale « Clôturer votre séance » | **démarre** (`type: recovery`) |
+| Compteur de séance | 40320:00 | **00:00** sur la séance du jour |
+| Séance du jour même (2ᵉ test) | — | **jamais clôturée automatiquement : reprise normale** |
+
+Preuves : `review/emilie-fixed-w5-accueil.png`, `emilie-fixed-w5-seance.png`, `emilie-fixed-w5-chrono.png`, `emilie-fixed-w9-accueil.png`. Les captures `emilie-block-*` conservent la reproduction du défaut avant correction.
+
+## Ce qui reste ouvert
+
+Le groupe `session-never-closed-blocks-program-and-timers` **reste ouvert** : une correction vérifiée en navigateur n'est pas un essai sur le téléphone d'Émilie. À confirmer après installation : elle ne doit plus voir « Reprendre ma séance » pour une séance d'un autre jour, et son historique doit afficher cette séance en « Partielle » à sa date.

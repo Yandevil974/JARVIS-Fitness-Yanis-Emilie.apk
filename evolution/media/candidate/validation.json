@@ -3,7 +3,7 @@
   "status": "scoped-web-candidate-not-release",
   "releaseReady": false,
   "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "candidateBundleSha256": "b74853bca4761ccb0f36a4f4612ed4e69b82f42b392dbf1cb7dfd7f6d047e373",
+  "candidateBundleSha256": "52dfc705decbe96aeab078188240d910092cae0fa257e469e1b6f098fcf4f2c4",
   "integrity": {
     "packagedWebFiles": 272,
     "unchangedWebFiles": 271,
@@ -37,42 +37,10 @@
     ]
   },
   "tests": {
-    "node": "38/38",
-    "targetedBrowser": {
-      "passed": 26,
-      "failedInFinalRun": 0,
-      "reportedDuration": "3.5m",
-      "test": [
-        "evolution/media/tests/pool-candidate.spec.mjs",
-        "evolution/media/tests/warmup-candidate.spec.mjs"
-      ],
-      "scope": "20 cumulative cases (pool recovery, French press EZ, floor bridge, saved workouts, warmup) plus 3 pool-after-weights blocks (marche aquatique / nage douce / fractionné nager), 1 real land post-cardio block keeping its dry guide and 2 step-up gap cases",
-      "environment": "LD_LIBRARY_PATH + CHROMIUM_EXECUTABLE_PATH required for the provisioned Chromium 138"
-    },
-    "existingHomeBrowser": {
-      "passed": 8,
-      "failed": 0,
-      "wholeRunSeconds": 57.9,
-      "test": "evolution/home/tests/home.spec.mjs",
-      "reference": "unchanged web extracted from signed 1.4.0 (.cache/audit-reference-140)",
-      "requiredEnvironment": "MEDIA_REVIEW_CANDIDATE=1"
-    },
-    "publishedReferenceRepro": {
-      "build": "unchanged web extracted from signed 1.4.0 APK, served locally",
-      "cases": 4,
-      "failed": 3,
-      "passed": 1,
-      "result": "The dry-elliptical defect is reproduced on the published build: the pool block shows a cardio-* image for the 30 min and 25 min nage-douce prescriptions, and no step image at all for the sustained-pace prescription. The candidate passes the same 4 cases.",
-      "captures": [
-        "review/pool-defect-published-1.4.0-30min.png",
-        "review/pool-defect-published-1.4.0-25min.png"
-      ],
-      "script": "evolution/media/candidate/capture-pool-review.mjs"
-    },
-    "browser": "Chromium 138.0.7204.0",
-    "physicalAndroidTest": false,
-    "full90DeliverySuiteRerun": false,
-    "nodeNote": "node --test evolution/media/tests/*.test.mjs after node evolution/media/coverage.mjs"
+    "node": "40/40",
+    "browser": "28/28 (pool 23, warmup 3, Émilie 2) sur le bundle livré",
+    "completeLegacySuite": "90/90 (9,2 min) sur le bundle livré",
+    "nodeNote": "node --test evolution/media/tests/*.test.mjs après node evolution/media/coverage.mjs"
   },
   "poolRecovery": {
     "reviewedTexts": 12,
@@ -235,24 +203,20 @@
   },
   "apkDeliveryRelease": {
     "mode": "release-signed-durable-media-identity",
-    "authorizedNewKey": "2026-09-23 (user message)",
-    "apk": "downloads/Yanis-Fitness-Evolution-1.4.2.apk",
-    "apkSha256": "6e08516ec3a439bdfc7f68024fcb47feb26bae833fd443b3428251797734ceff",
-    "apkBytes": 24909281,
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.3.apk",
+    "apkSha256": "31e950848b0379830c09e9a4061eab49c812869343050747a0e163944941141c",
+    "apkBytes": 24909288,
+    "versionName": "1.4.3",
+    "versionCode": 14,
     "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-    "versionName": "1.4.2",
-    "versionCode": 13,
     "changedEntries": [
       "AndroidManifest.xml",
       "assets/public/assets/index-CBCies4k.js"
     ],
-    "contentIdenticalTo": "downloads/Yanis-Fitness-Evolution-1.4.1.apk apart from AndroidManifest.xml",
-    "nativeDexFiles": 9,
-    "byteIdenticalDexFiles": 9,
     "webFiles": 272,
     "unchangedWebFiles": 271,
-    "packagedWebSha256": "b74853bca4761ccb0f36a4f4612ed4e69b82f42b392dbf1cb7dfd7f6d047e373",
-    "webBundleValidatedInBrowser": "26/26 media + 8/8 home on this exact bundle sha",
+    "nativeDexFiles": 9,
+    "byteIdenticalDexFiles": 9,
     "signatureVerified": [
       "v2",
       "v3"
@@ -260,14 +224,26 @@
     "alignmentVerified": true,
     "signers": 1,
     "certificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
-    "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
-    "lostIdentity": "d3ca5a27cf9b97f15404b1d1dad5c35abf5ec39e4917d0d30e89078a71782a3d (1.4.1, key destroyed by a sandbox reset; its APK stays published but must not be installed)",
-    "committedCiphertext": "evolution/signing/evolution-media-142.encrypted.json",
-    "restoreCommand": "python3 evolution/android/signing-media.py restore --recovery-key-file <recovery-key.txt>",
-    "restoreTested": "yes: private material deleted, then rebuilt from the committed ciphertext alone",
-    "privateBackup": "downloads/Yanis-Fitness-Evolution-1.4.2-SAUVEGARDE-PRIVEE.zip (git-ignored, handed to the user)",
-    "publicIdentity": "evolution/android/identity-media-142.json",
-    "deviceTested": false,
-    "installNote": "same package, new signature: uninstall 1.4.0, install 1.4.2, restore the JSON backup"
+    "sameIdentityAs": "downloads/Yanis-Fitness-Evolution-1.4.2.apk",
+    "installsOver": "1.4.2 sans désinstallation",
+    "durableBackup": "evolution/signing/evolution-media-142.encrypted.json + recovery-key.txt (chez l’utilisateur)",
+    "deviceTested": false
+  },
+  "forgottenWorkoutFix": {
+    "decision": "utilisateur, 23 septembre 2026",
+    "rule": "séance de musculation d’un autre jour clôturée automatiquement en « partielle », date et séries conservées ; séance du jour jamais clôturée automatiquement",
+    "appliedAt": [
+      "chargement de l’application",
+      "clic sur « Lancer la séance »",
+      "clic sur une minuterie guidée"
+    ],
+    "counter": "plus de « 40320:00 » : heures et minutes au-delà d’une heure",
+    "evidence": [
+      "review/REVIEW-EMILIE-BLOCAGE.md",
+      "review/emilie-fixed-w5-accueil.png",
+      "review/emilie-fixed-w5-seance.png",
+      "review/emilie-fixed-w5-chrono.png"
+    ],
+    "remaining": "essai sur le téléphone de l’utilisateur"
   }
 }
