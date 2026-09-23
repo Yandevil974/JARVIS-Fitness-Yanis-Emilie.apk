@@ -38,8 +38,8 @@
   },
   "tests": {
     "node": "41/41",
-    "browserTargeted": "6/6 (modale combinée piscine 3, elliptique terrestre 1, Émilie 2) sur le bundle livré",
-    "browserFull": "28/28 sur le bundle 52dfc705 (1.4.3) ; la 1.4.4 n’ajoute qu’un affichage de durée, vérifié en ciblé",
+    "browserTargeted": "6/6 sur le bundle livré",
+    "browserFull": "28/28 (3,9 min) sur le bundle livré 22109c5b",
     "completeLegacySuite": "90/90 (9,2 min) sur le bundle 52dfc705"
   },
   "poolRecovery": {
