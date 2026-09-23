@@ -16,6 +16,8 @@ web sont inchangés.
 | `Yanis-Fitness-Evolution-1.4.1.fidelity.json` | inventaire de fidélité (ce qui a changé, ce qui n’a pas changé) |
 | `Yanis-Fitness-Evolution-1.4.1-SAUVEGARDE-PRIVEE.zip` | sauvegarde PRIVÉE de la nouvelle clé (à garder hors du téléphone, ne jamais publier) |
 
+[Télécharger l’APK 1.4.1](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/f69f469/downloads/Yanis-Fitness-Evolution-1.4.1.apk) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/f69f469/downloads/Yanis-Fitness-Evolution-1.4.1.apk.sha256) · [inventaire de fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/f69f469/downloads/Yanis-Fitness-Evolution-1.4.1.fidelity.json)
+
 Empreinte SHA-256 de l’APK :
 
 ```
