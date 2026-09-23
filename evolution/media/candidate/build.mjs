@@ -41,6 +41,21 @@ export function integrate(source) {
   const helper = fs.readFileSync(new URL('./pool-context.mjs', import.meta.url),'utf8')
     .replace('export function createPoolMedia', 'function createPoolMedia');
   source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl});\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
+  // Explicit reviewed IDs only. Never infer a substitute by muscle or similar name.
+  const overrides = JSON.parse(fs.readFileSync(new URL('./association-overrides.json',import.meta.url))).overrides;
+  const inventory = JSON.parse(fs.readFileSync(new URL('../review/inventory-1.4.0.json',import.meta.url)));
+  const assets = JSON.parse(fs.readFileSync(new URL('../review/assets-1.4.0.json',import.meta.url)));
+  const ids = new Set();
+  const cases = overrides.map(entry => {
+    const exercise = inventory.exercises.find(e=>e.id===entry.id);
+    const asset = assets.assets.find(a=>a.path===entry.path);
+    if (ids.has(entry.id) || exercise?.name !== entry.name || exercise?.resolved?.path !== entry.baselinePath ||
+        asset?.sha256 !== entry.assetSha256 || entry.level !== 'exact') throw Error('Unverified media override '+entry.id);
+    ids.add(entry.id);
+    return `if(i&&i.id===${JSON.stringify(entry.id)})return ${JSON.stringify({path:entry.path,name:entry.name,level:entry.level})};`;
+  }).join('');
+  source = once(source,'function Kh(i){return i!=null&&i.id&&eo.get(i.id)||null}',
+    `function Kh(i){${cases}return i!=null&&i.id&&eo.get(i.id)||null}`);
   return source;
 }
 export function prepare() {
@@ -64,7 +79,8 @@ with zipfile.ZipFile(sys.argv[1]) as z:
   execFileSync(process.execPath,['--check',check]);
   const report={status:'candidate-only-not-release',baselineApkSha256:baseline.apkSha256,
     candidateBundleSha256:sha(candidate),allowedChangedEntries:[baseline.bundle],
-    limits:['26 findings remain open','Legacy pool associations still require visual validation',
+    openFindingGroups:JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings.filter(f=>f.status==='open').length,
+    limits:['Full media audit remains open','Legacy pool associations still require visual validation',
       'Generic recovery without a precise aquatic guide remains an explicit gap',
       'Build alone provides no browser/device acceptance; see candidate/validation.json for scoped tests']};
   fs.writeFileSync(path.join(root,'.cache/media-pool-candidate.json'),JSON.stringify(report,null,2)+'\n');

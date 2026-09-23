@@ -23,7 +23,7 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','createPoolMedia'].includes(n.id?.name)&&
+  !['bg','v5','Kh','createPoolMedia'].includes(n.id?.name)&&
   !n.declarations?.some(d=>d.id.name==='JarvisPoolMedia')).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
@@ -73,4 +73,24 @@ test('web candidate changes exactly one of 272 packaged files; delivered APK is 
  const changed=Object.entries(entries).filter(([name,digest])=>sha(fs.readFileSync(directory+'/'+name.replace('assets/public/','')))!==digest).map(([name])=>name);
  assert.deepEqual(changed,[baseline.bundle]);
  assert.equal(sha(fs.readFileSync(root+baseline.apk)),baseline.apkSha256);
+});
+
+test('only the explicitly reviewed floor-bridge ID changes across all 209 exercise resolutions',()=>{
+ const eo=new Map(inventory.exercises.filter(e=>e.resolved).map(e=>[e.id,{path:e.resolved.path,name:e.resolved.name,level:e.resolved.level}]));
+ const context=vm.createContext({eo});
+ vm.runInContext(fn(original,tree,'Kh').replace('function Kh(','function oldKh(')+fn(candidate,patched,'Kh'),context);
+ const changed=[];
+ for(const exercise of inventory.exercises){
+  context.exercise=freeze(structuredClone(exercise));
+  const result=vm.runInContext('[oldKh(exercise),Kh(exercise)]',context);
+  if(JSON.stringify(result[0])!==JSON.stringify(result[1]))changed.push(exercise.id);
+ }
+ assert.deepEqual(changed,['pont-fessier-au-sol-activation']);
+ context.exercise={id:'pont-fessier-au-sol-activation'};
+ assert.equal(vm.runInContext('Kh(exercise).path',context),'/media/8eecb0152081ff26.gif');
+ context.exercise={id:'glute-bridge-pieds-sur-banc'};
+ assert.equal(vm.runInContext('Kh(exercise).path',context),'/media/0766d3a06bf79dc8.gif');
+ context.exercise={id:'unknown',name:'Pont fessier au sol — activation'};
+ assert.equal(vm.runInContext('Kh(exercise)',context),null);
+ assert.equal(vm.runInContext('Kh(null)',context),null);
 });

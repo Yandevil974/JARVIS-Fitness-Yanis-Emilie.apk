@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 import {test,expect} from '../../../JARVIS-Fitness-Source/node_modules/@playwright/test/index.mjs';
 import {initialState,validateState} from '../../../JARVIS-Fitness-Source/src/store/model.js';
 import {createTimer} from '../../../JARVIS-Fitness-Source/src/engine/timer.js';
@@ -72,4 +73,31 @@ test('profile switch retains the independent other profile and active timer',asy
  for(const field of ['activities','measurements','sessions','forceTests','workout','plan','nutrition','equipment','user'])expect(otherAfter[field]).toEqual(otherBefore[field]);
  await page.getByRole('radio',{name:'Yanis',exact:true}).check();await timer(page);
  await expect(page.locator('.timer-step-visual img')).toHaveAttribute('src',/pool-marche-aquatique.jpg$/);
+});
+for(const profile of ['elite','emilie'])test(`reviewed floor bridge animates in details, pauses, and does not replace the bench exercise: ${profile}`,async({page})=>{
+ const s=state(profile,'light');s.profiles[profile].timer=null;
+ for(const p of Object.values(s.profiles))p.preferences.reducedMotion=false;
+ await open(page,s);
+ await page.getByRole('button',{name:'Ouvrir la navigation',exact:true}).click();
+ await page.locator('.sidebar').getByRole('button',{name:'Entraînement',exact:true}).click();
+ await page.getByRole('tab',{name:/^Bibliothèque/}).click();
+ await page.getByRole('textbox',{name:'Rechercher un exercice'}).fill('Pont fessier au sol');
+ await page.getByRole('button',{name:'Démonstration Pont fessier au sol — activation',exact:true}).click();
+ const image=page.getByRole('dialog').locator('.movement-media');
+ await expect(image).toHaveAttribute('src',/8eecb0152081ff26.gif$/);
+ await image.scrollIntoViewIfNeeded();
+ await expect.poll(()=>image.evaluate(e=>e.complete&&e.naturalWidth===300)).toBe(true);
+ // Capture the rendered GIF: drawImage(animatedImage) can expose its default frame, not the displayed animation.
+ const frame=async()=>createHash('sha256').update(await image.screenshot({animations:'allow'})).digest('hex');
+ const first=await frame();await expect.poll(frame).not.toBe(first);
+ await page.getByRole('button',{name:'Mettre l’animation en pause',exact:true}).click();
+ await expect(image).toHaveAttribute('src',/^data:image\/png/);
+ await expect(image).toHaveClass(/paused/);
+ await page.screenshot({path:`.cache/media-floor-bridge-${profile}.png`});
+ await page.getByRole('button',{name:'Lire l’animation',exact:true}).click();
+ await expect(image).toHaveAttribute('src',/8eecb0152081ff26.gif$/);
+ await page.getByRole('dialog').locator('button[aria-label="Fermer"]').click();
+ await page.getByRole('textbox',{name:'Rechercher un exercice'}).fill('Glute bridge pieds sur banc');
+ await page.getByRole('button',{name:'Démonstration Glute bridge pieds sur banc',exact:true}).click();
+ await expect(page.getByRole('dialog').locator('.movement-media')).toHaveAttribute('src',/0766d3a06bf79dc8.gif$/);
 });

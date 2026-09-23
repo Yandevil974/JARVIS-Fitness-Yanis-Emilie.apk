@@ -1,0 +1,5020 @@
+{
+  "date": "2026-09-23",
+  "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "status": "contact-sheet-review-completed-not-release-acceptance",
+  "releaseReady": false,
+  "method": "All 588 coalesced frames viewed in order on 12 contact-sheet pages (150px cells), plus full-size-source reinspection of clips 1, 12, 25 and 35. Last and first frames compared. Source cross-fades produce double outlines; no claim of real-time playback or full-size anatomy review for every frame.",
+  "definitions": {
+    "basic-movement-corresponds": "The basic movement/equipment/posture is visibly consistent at this resolution; all-surface playback, exact instructions and variant acceptance still pending.",
+    "variant-review-required": "Specific equipment, grip, support, trajectory, partner or instructions must be verified; not silently accepted or replaced.",
+    "mismatch": "Visible movement, position, equipment or context contradicts the named association; notes identify the difference."
+  },
+  "clipCount": 46,
+  "reviewedFrameCount": 588,
+  "clips": [
+    {
+      "number": 1,
+      "path": "/media/03098b19c4672ce5.gif",
+      "assetSha256": "03098b19c4672ce5b4936a033af650a8e35c6f39376b700ea31b2ba7a5856fd0",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "e525a658307633bb21fb9e8e190acf896db884d56fd162578df0164e4debba55"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "f990e3c248a7c3cfeec258892d99da5fec77122cdfc453989209af8971ed738d"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "9c0261bab2c9137d6f87c2b373e9ccedb44fd20bac7fb98c110fa2f2547c20a7"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "e3cfe76d5303f6b2d70b2f1d0cbb6978f3e8d5c7896fd2c7e6f7ec9ea3fe23c4"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "47d0737bfd8dbdaa73c2eda7570b49b550ba1fae9dfa9b977773621acf533a9e"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "23b28103be637d252f32cf26b77c5052c94538954e7e02ee3ce823eb4f9cbef1"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "f35d700325074111d38f60ec62492de58faa97ca8b9bc18d8ebe3d842e425571"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "02d1f9d2a4c64f55c5c80a8d16a2933638f15a9ba2f8004f7c889eea15adcfc3"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "47d0737bfd8dbdaa73c2eda7570b49b550ba1fae9dfa9b977773621acf533a9e"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "28d03988c7cb84bcd3c92cea437c5088cf63622356cfefbb95b05749bb88e302"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "9c0261bab2c9137d6f87c2b373e9ccedb44fd20bac7fb98c110fa2f2547c20a7"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "f7d23615ed51051a8ac5cc6c360df3d8d930f14f762605d45e84c66e4a47fb22"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": true,
+      "observedMovement": "Adduction de hanche debout à la poulie : jambe tirée depuis le côté vers la ligne médiane, face interne de cuisse colorée.",
+      "decisionNotes": "Ne correspond pas à une abduction ; encore moins à un fire hydrant à quatre pattes. Agrandissement 310 px revu.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "abduction-hanche-debout-a-la-poulie",
+          "name": "Abduction hanche debout à la poulie",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "abduction-hanche-a-la-poulie",
+          "name": "Abduction hanche à la poulie",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "fire-hydrant-a-l-elastique",
+          "name": "Fire hydrant à l'élastique",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "abduction-hanche-a-la-poulie-myo-reps",
+          "name": "Abduction hanche à la poulie — myo-reps",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "path": "/media/04ab405e919744b5.gif",
+      "assetSha256": "04ab405e919744b52cf0eb144c8dff6be890d27d427326982cbc634d2597766d",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "8d598e5711792f09d413220df5cf3cf5da691418c94c68546e16047235cfc336"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "8182a070a00e960c25efd02855a29403169aac4a93771d71a90c10f78c3a05ee"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "2041142e766fdf560e87636f2bfc5458b10bb2c85dee586f5cd6d33df6bd9d78"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "6d73f093eb7bcbddf6bfc7059b9d31e69a4a77bdf727ce44a80edea843a7fd99"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "409688c77b721567b44d40fd5a9b4af740eddebeb6cf703070a237f0dd0e440d"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "bb648bfdbd811f61f85920e1f7086e7522cbad909b7988ca258fbd33c5ed4d46"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "a98f7c8ef2aa735c05f3f7d75eb42fc382ae70ce5c5722f7fbd70ac9047cf300"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "d5e896622a44e8b1a7fa1ebd5a973b358b5216a026cfc3121cad455893202d53"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "409688c77b721567b44d40fd5a9b4af740eddebeb6cf703070a237f0dd0e440d"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "922b453ef45ce203ccc9e0c689e3bd7a63b013f36b1573bb2ac3c4efc163e8f0"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "2041142e766fdf560e87636f2bfc5458b10bb2c85dee586f5cd6d33df6bd9d78"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "411b4769e8e1e387caaaa6a8b2e5748abd3811d51c2e2f14405199e87fbd1cd8"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Rowing un bras avec haltère, genou et main sur banc.",
+      "decisionNotes": "Source à conserver ; aucune association musculation dans cet inventaire, pas de réaffectation automatique.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": []
+    },
+    {
+      "number": 3,
+      "path": "/media/0766d3a06bf79dc8.gif",
+      "assetSha256": "0766d3a06bf79dc81abcaa97581260ec7ef40bf850fc4094799ad97321a378e6",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "a3c076b6642237f714106ea063f9dbcc3e7d0d2a7d9941b8865fa86e3de3e55b"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "9fb3291f34b027f34084b3f1652453d576dee1f7b79101c9cfc72ba3ab9aa114"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "107071872f10e1dace2113555b3c46fe291122fc62d510ed945ac3d03e8b66e1"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "72f35ee95ff264bb064e0b80eaeccad984f50864758fb6905e4774efb45cb0a2"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "32edf16d1218ca2a6ecddeba447b9b939cafc2ff7aa6cd9e51e64a8340185a38"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "9b882248c7633d06e131348821f0f3807464adfce94aaeae45f892be9eaebf4c"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "bf1334db5bead1aefdd2bb8c9c6cb89336f68f30bbdcb6f3466d36c556759098"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "e756f3e4e20af8ebea51238c175cf6c72bac7ce4305dd3621af098ab82cfa6bb"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "32edf16d1218ca2a6ecddeba447b9b939cafc2ff7aa6cd9e51e64a8340185a38"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "7b1c4082e8f93b05ac27610cb7bdb7cb8188a95c73ac265cda827a9c9457f6ff"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "107071872f10e1dace2113555b3c46fe291122fc62d510ed945ac3d03e8b66e1"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "a06f89115a9d6b3e34f0e4b13ec26bd7ea73cee6d9d03c8ad76fa834e66044cf"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Pont fessier bilatéral, pieds posés sur un banc.",
+      "decisionNotes": "Cohérent pour pieds sur banc, pas pour activation au sol sans banc.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "pont-fessier-au-sol-activation",
+          "name": "Pont fessier au sol — activation",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "glute-bridge-pieds-sur-banc",
+          "name": "Glute bridge pieds sur banc",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "path": "/media/0860394a5a99f74b.gif",
+      "assetSha256": "0860394a5a99f74baa5e7d5e710a01d3ecfe36fa54227f79885cb4886040b5a0",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "6375900b07246a406aaf0c4c2ba393b1f3211ba1f779f8f4f980e5d5591a561e"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "9cf58ff0163e4e28ef7c75cb3b9955df8fd682ac2dd145ebc7088f5e725e9ea0"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "2e24cd3fd7fbfaa6c19c1051be07a3528c9069da742cb70a988ed142191a96bb"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "2b50dc71331ed9b1b8c3309f84717d3a7082cb59cb0a55274853edb3ab68b420"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "3c8ea8963512a6389c3dcf467e663619abef3db08f2c70a1d16b1ffcbfea6c90"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "0a3e8f3dd115b8e3954e4d8cdf52cb9596b8826ee36b7804647aaee13eace6b5"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "2be7fc9e9c348811f8300e504c438a928a84d8eadceaf3e3f628bac385a8a823"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "64506506cb8cf40098071f1ad640f663657159dd3fc23f6da4fc7b3aae49a51a"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "3c8ea8963512a6389c3dcf467e663619abef3db08f2c70a1d16b1ffcbfea6c90"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "d3ffcf4782bb09cf79c4fcf7eaf712dca19e535174a6b9839f82aba6ad598921"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "2e24cd3fd7fbfaa6c19c1051be07a3528c9069da742cb70a988ed142191a96bb"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "2e2b26fd1dd85abf246694012bd51965fa9081c891b1e73d63672076be0e1e7b"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Tirage horizontal assis à la poulie, buste et coudes en mouvement.",
+      "decisionNotes": "Matériel poulie visible, pas un élastique.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "tirage-horizontal-a-la-poulie",
+          "name": "Tirage horizontal à la poulie",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "rowing-a-l-elastique",
+          "name": "Rowing à l’élastique",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "path": "/media/1317e405efd6ef2b.gif",
+      "assetSha256": "1317e405efd6ef2bb1231a29219b959feb72846e218ed452efa3db7fc7c79f80",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "0469d319d88aeed03725be38e7086f4ec0c4799104ab13e2aef00d0a03003ca0"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "15e663b3e9b533aa371428223aa4140c1a110672e05e75cbc715d1364329e22b"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "1da2181ed91a4d35401e4880834fbd20f7e5b3dbec1f03b56597ff92c67f248b"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "4f78b4e0d1949a429f0e35ad808d75bce5c3872b2c17dd369a35df98b25da360"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "48757d7c4ec05e50210470e6ac92b022cd96002099c568e96e7a4b4ffc384bc2"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "4a24d5d02cad7753f05d9fc3e5739e555599cb0f25165982c8f45ffc18baaa2a"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "82ecf663ac806030f66644a4c646b683e03a28f8901a237ddd3492e16af1f864"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "c8dd939bcf45ac7566bb414e534446433ab538a1a387b787f797a6edb98e082d"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "48757d7c4ec05e50210470e6ac92b022cd96002099c568e96e7a4b4ffc384bc2"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "ef481508a355a324d29c67789f1d82c8b7a846bddfeff094a9de49788bfb3da2"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "1da2181ed91a4d35401e4880834fbd20f7e5b3dbec1f03b56597ff92c67f248b"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "70117b69b9e0e6a7bb1ce1a30769e0599ba796dd1d443682ac723fa793868616"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Planche sur avant-bras qui pivote en planche latérale bras levé.",
+      "decisionNotes": "Pas un maintien de planche statique ; ne couvre pas le bird dog du circuit.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "gainage-planche",
+          "name": "Gainage planche",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "circuit-gainage-planche-lateral-bird-dog",
+          "name": "Circuit gainage (planche + latéral + bird dog)",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "path": "/media/1519aacc58d53c5c.gif",
+      "assetSha256": "1519aacc58d53c5c4eccd2c635d42279bde3ab9e4444be7533aedf3399ea77dc",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "1b0d07976f5a8e3fa55faaa171cf9e710d97178c015e0d165350a221a2f41707"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "26cc0a882f4bf5506e5e877b21b2969c55853568a0d8fff1de173580b1ea09fe"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "a1ca94dbeca8234d2eeae7072ffbe71a4252ef2f0982f2ad6602fe48a8931de6"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "70dfa99a9caa9f5bc1cdbcc90c495d679ee0a0d34957a5f45bf98295327dd9b4"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "6a83fc4bc72191cce721d3a098059b00b466a6c225f47cc35e56fae8f296058c"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "bc14b3503b84a35a52933249569c25aefaf5979c6484038a757c13b5dc564b86"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "ec8c583af8697fd106fc56b2c60ff2f6627eac737d7767109efaf87519246188"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "18d10c7446885ad205b6e330281fea6d1bb27aacb2d284d43dd295bc5e946c79"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "6a83fc4bc72191cce721d3a098059b00b466a6c225f47cc35e56fae8f296058c"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "f7ed861b93e3a7900dd8c97280a60c2a164f101517076c08cc504654cf5a8cda"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "a1ca94dbeca8234d2eeae7072ffbe71a4252ef2f0982f2ad6602fe48a8931de6"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "cf048f2e51826d6b222dd79d546eeb0f26cc0c3868891b5638be27c067fc9524"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Pont fessier bilatéral au sol avec barre sur le bassin, sans banc sous le dos.",
+      "decisionNotes": "Pas unilatéral. Distinction hip thrust sur banc / pont au sol à respecter.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "hip-thrust-barre",
+          "name": "Hip thrust barre",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "hip-thrust-unilateral-leste",
+          "name": "Hip thrust unilatéral lesté",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+          "name": "Hip thrust barre — test de charge max (3-5 reps)",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "path": "/media/1c63a36d168d8b74.gif",
+      "assetSha256": "1c63a36d168d8b7411540b003ea7a5d6684e8a0246ee09e71eae5e671140b3a1",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "b06213fb873f30e127e54b13f336ce29c67f27dbefede58c5eacacfdabf6147b"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "0d1bc1fa83eed63e49581fb0d6bcdb48f0dc0ca4412aee43809564a43388d31a"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "ac1bf13f765fec5bf495d196bf42a87e84068d1ec72f353608b3df1d3b3f454e"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "6ee33fc03bdcbe9a0c008f4df9e34406261f8da394260015afeec4c4f4878f2e"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "07d69770eb441122abcc3f5e164d5206e08a4230e746cc3cce7aa7c52020453b"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "a3fd52d0039380cc5b39142e77461b3e9e1f5abe05e1630619e6b344c2705198"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "0c25da45210bdeb67fc919226f6f1238f26211f47ac78d6038a98ab68242d262"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "07b121160f57b3e677f86b5bf58d0b0c5ac914020e38caf1fb05471f5b1f9ce2"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "07d69770eb441122abcc3f5e164d5206e08a4230e746cc3cce7aa7c52020453b"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "6f78f9d81f69a248d73e5a73a0ce14b9569eefab7ac9bfa2c801004c0b66e50d"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "ac1bf13f765fec5bf495d196bf42a87e84068d1ec72f353608b3df1d3b3f454e"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "bffc95e379865d4446876811808ffcd34113f35bf166c11e335b7d8eb7ee0c2c"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Charnière de hanche / soulevé de terre avec deux haltères, deux pieds au sol.",
+      "decisionNotes": "Pas un soulevé de terre sur une jambe.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "souleve-de-terre-roumain-unilateral-haltere",
+          "name": "Soulevé de terre roumain unilatéral haltère",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "path": "/media/1f27c3cbcf803765.gif",
+      "assetSha256": "1f27c3cbcf80376551b84215ab931b514cf71701511a5b2b5249efdf63b75168",
+      "frameCount": 24,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "4aff50b9bcf07481f9d53ec55d23e1a8110d0e119af8c0986aab1622bbe82c94"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "254d1505052fe7023f847197556a7216c22b4ca70ab15623dd782aa5581ab306"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "86cfaf9f84a4c3046ceb8860050565a0e0d6fefcb7c7facfc470e47890deda3b"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "af8e4d61c4afdde3e6a2c9ab9793e33ac67aa89d1c92b7592c1a93d8dd150458"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "9949d3870ac3732982a2f9e5b8a61a7f2fabd4656dde36d9ba4cf6c4a455621d"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "a402b2d5386129c64c9fdbf78afd85fdfe50589140c9c146de121d4dc0b1520b"
+        },
+        {
+          "index": 6,
+          "durationMs": 500,
+          "rgbaSha256": "f4689f8fecb8261c80e160e6a942f8e53c3157d4fd0320911d82837481d5edab"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "3923040db5feabd2ce72fb24c9beb29eaa29e3e4f3b7ba3e9c4f80f945c70a1d"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "854f5f4b599fc3759e9db463d206d1d27a5e2a9fe45b4be07b57ae9b2370b70b"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "4c0719143f006ed5cb23330c4428e2287b8e31e87627fd79a4a63a5e255c5802"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "270e2f68475b7a178343f63a06fd6251b052975065b3a5995ad942c16999e60f"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "f42c5b91cd38b0532171bb555386d36fb47e9bd848cc1484668ffd2324fa83cf"
+        },
+        {
+          "index": 12,
+          "durationMs": 500,
+          "rgbaSha256": "99c4fec7dbf6eca08c5e10d93eba5f3d37c1b32edb46730c5dabf31eda9fce33"
+        },
+        {
+          "index": 13,
+          "durationMs": 100,
+          "rgbaSha256": "207231d7d55ae9a6149f034cf44c220e439fe9feea6424987721949769ac60a5"
+        },
+        {
+          "index": 14,
+          "durationMs": 100,
+          "rgbaSha256": "d89fa0b0cd9439f0b3d9ddb10c16b11957e2d1c339053b9c92df684d8490e487"
+        },
+        {
+          "index": 15,
+          "durationMs": 100,
+          "rgbaSha256": "f63b48bee9aacc64e429ce0382d4f0ee05b6a2c8e9b8fe82b35ea304c6e40b12"
+        },
+        {
+          "index": 16,
+          "durationMs": 100,
+          "rgbaSha256": "b9202fe8c96f1fd8cd2021e9c407ad2a8d3d4a7c3a11c441e6138d1843aa54d0"
+        },
+        {
+          "index": 17,
+          "durationMs": 100,
+          "rgbaSha256": "71e8a36302c0107338de7390ad6a7cd697cd84ed5b085ac5b5844dfb871beb83"
+        },
+        {
+          "index": 18,
+          "durationMs": 1000,
+          "rgbaSha256": "6584a71332ecce2600f9784b2c4b6573e501f51556de77aebe7ec5cbf1248c8b"
+        },
+        {
+          "index": 19,
+          "durationMs": 100,
+          "rgbaSha256": "3d649355d9ffbd91fb1bd417b13ba41be2e3c42b30c79113f4b5f551fcaf97af"
+        },
+        {
+          "index": 20,
+          "durationMs": 100,
+          "rgbaSha256": "758c4aafc82dc77ade02f05173be8e93a888417a08be811cc24fc1476f32b7f5"
+        },
+        {
+          "index": 21,
+          "durationMs": 100,
+          "rgbaSha256": "b9efaa1f41835e26cc2b707de4585e519d7e90f5366be5235418b48d13303bc5"
+        },
+        {
+          "index": 22,
+          "durationMs": 100,
+          "rgbaSha256": "70e2edabbc58c648b9c2e3efd742703c32a1fe0aa91f4a0e6be09175704888e1"
+        },
+        {
+          "index": 23,
+          "durationMs": 100,
+          "rgbaSha256": "8b67fb02f362ca69692696d5512e77131ce3dd5336c61f41e3962862ca977fe5"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Presse à cuisses inclinée ; flexion puis extension des jambes sur la machine.",
+      "decisionNotes": "24 images vues. Placement précis pieds hauts à confirmer sur grand affichage ; ne pas certifier cette variante sur une miniature.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "presse-a-cuisses-pieds-hauts",
+          "name": "Presse à cuisses pieds hauts",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "path": "/media/22ce97e4b3cb18cf.gif",
+      "assetSha256": "22ce97e4b3cb18cfa81ecb4da116209f07944b56bcd44b5ab9ee7afaca0325b1",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "2aba255e61c64be2d12b6ee46d56d22eaf85d30a74c0af9048287b13ea4943d0"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "d74c0b1eaa141876c6be9e144513e8cce5dddb2432549897616c4b5801d2ba20"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "92a7f5613710db316f1e1e0bea70dafadf77d2b8f1c09b98f48b54d6429717fc"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "8f51770bde38582d47761ad3e2e758b440510c7e074e2253fa7c586cc5015220"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "fac5eb399760223f50563b021a3845052411c890c3e9de8040f1cf75894d8ef1"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "899059a693f1ca5a944f581486a2b23b5ce4ffdad4d2222d97db217f55729a66"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "1ec4b66178c1214c88a08592046819e05838a5c4552fece39b460ab0acc00503"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "08e5ce8af146c902335a71c26a25811a155bf247a576145da895f5bcb011c44d"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "fac5eb399760223f50563b021a3845052411c890c3e9de8040f1cf75894d8ef1"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "27ec8ae1c48cd5afcbb9d1c30ec716d4344f99a3ca4d8c8de90913b96b832dc9"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "92a7f5613710db316f1e1e0bea70dafadf77d2b8f1c09b98f48b54d6429717fc"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "3e42949f2fedd6cb487cdf969e0eba0f7e10c2e0d084b785e83af957c80b3216"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Développé avec deux haltères sur banc incliné.",
+      "decisionNotes": "Mouvement de base cohérent ; détails des prises et variantes à vérifier séparément.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "developpe-incline-halteres",
+          "name": "Développé incliné haltères",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "path": "/media/2c51d8ca1b6fb79a.gif",
+      "assetSha256": "2c51d8ca1b6fb79abe3f9beec8ee7f292f8c34ee7ef488a1b314eca04453ed57",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "25782d779c8a420bb1fc9ec1337d2ae51f27c1575ad157e3f2b28e664fc1968d"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "2cb60f0eadf8ca80ebdf234dae57843706642a5f73d6045b87c2fe6c93f7f69d"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "59145e4d244cc1221d907ee621c9b8e0c497a91b64551a1f5e031bed8cf5d171"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "18936cb2efcc29e9434c9dd993ec21bd73bd6682501bd5f23d168b5684a23393"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "9281ad444bc53ed621eeaffd2ff937ca92f8b8da1a309c63bb9a4d71b3585ea7"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "3d31ed9f21eabf4975002305b6c0308067d1efb6ade69b47da4fbb8f86e404f7"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "73ce00b69237e720811c29eecb4ecd3c29b05c2c0ab9c958ff80614bfe8ef94a"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "e750b8733a7b0d1b091607c357923a80e841207a1e4abea77ec46fcd376b0568"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "9281ad444bc53ed621eeaffd2ff937ca92f8b8da1a309c63bb9a4d71b3585ea7"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "10908fc6c7ab7a0f439b4ca272aefdb4ca193878be6f705f9a0d2f785f0f0a13"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "59145e4d244cc1221d907ee621c9b8e0c497a91b64551a1f5e031bed8cf5d171"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "675f084edc5f86554fab4113b2fad7b507521deffdadfa0e8bdfe36859203be9"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Squat debout avec barre sur le haut du dos.",
+      "decisionNotes": "Mouvement de base cohérent ; la charge et le tempo du programme ne se déduisent pas du GIF.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "back-squat-charge-moderee",
+          "name": "Back squat (charge modérée)",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "path": "/media/36c6cb37445d3880.gif",
+      "assetSha256": "36c6cb37445d3880f8f938950b710dba9989e8ab6f24f03b65f2ed1002f9c677",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "2265f10e4ed23636a46f16d023e0e2fe3176744bd050957c7c39c10034baab5c"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "1f7ea6c60835e96e39b586508536d198e87280a40212f97d51e07234890acabd"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "8a524631f9ba11e3da0ade1757c2f9d115da5c9910135402d1571215be570052"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "e12d62c8487b159141164847bdfec32cff23193bc7e055bb283263f0c28d7051"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "bb412c766013b3bc1aaff3a67561418a41e12a96690ff5494d981e2338390d2c"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "fdd6b3cbd3a5ae3460578789e6d994a74700cb99d007caedd770c6a5bebeac80"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "0e11220fe6470a66c73a00d1e216355b71fe4e7439c8fc29c045e0716d66d9ca"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "77920fc4ab5472c5c38e9c3a7c5a1d6280eb347f3eef711db5d438a98ae986e9"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "bb412c766013b3bc1aaff3a67561418a41e12a96690ff5494d981e2338390d2c"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "14cc3b464d2f461ed4f6a4b20a65a718c6862439a7edac9b053b10d477e81b70"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "8a524631f9ba11e3da0ade1757c2f9d115da5c9910135402d1571215be570052"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "56f16391f82256d575f6ade20016a4e45dd1beb50197bb51ac8989811eb82152"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Curl bilatéral debout avec haltères, sans pupitre ni appui de coude.",
+      "decisionNotes": "Ne couvre ni Scott, ni concentration, ni Zottman assis ; ne valide pas les prises particulières.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "curl-halteres",
+          "name": "Curl haltères",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "curl-scott-haltere-prise-neutre",
+          "name": "Curl Scott haltère, prise neutre",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "curl-scott-haltere-neutre",
+          "name": "Curl Scott haltère neutre",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "curl-zottman-assis",
+          "name": "Curl Zottman assis",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "curl-zottman-un-bras-banc-scott",
+          "name": "Curl Zottman un bras, banc Scott",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "curl-scott-90-haltere-supination",
+          "name": "Curl Scott 90° haltère supination",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "curl-zottman",
+          "name": "Curl Zottman",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "curl-concentration",
+          "name": "Curl concentration",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "path": "/media/3bcaad5ec7cdf892.gif",
+      "assetSha256": "3bcaad5ec7cdf8929d142088c88a36ae10eb76ec2d0983da78a3ebb26e49196e",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "99d9879cf695c78749d7d6ba1e5173acc32b1d178750ee48839548c774ed6304"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "bfc07ae9be80eeab7165b4e55e9f608161376e84aabf9a6e1ab9ab83b37b8c8e"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "a9d60692974131ba8e3cb974a191f6578e102f605c56d36b63b94bd22e4b8b3b"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "494319abdc2f92de5f36c301eccda97f61501e02028eb27f97929662c18ce2da"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "647814f4a259996b692c607461f5c6743ce540a07d2427f8f132e67538f37cf4"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "55f651ed540a9dc4e621718dfbcecb62dfc2b5ce015584ae878b87ef43c47c18"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "2d4acf3ef7c124d366aded637abea9eb61a20cd05fd8af9dafcf0b3ea27c2a03"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "41b48b9529c61851c86c72553c6cb3d6072b88e5be338f5e9f32041db9fa7aab"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "647814f4a259996b692c607461f5c6743ce540a07d2427f8f132e67538f37cf4"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "f1754ae7fe73c65a20d7dd3ebdf35cd46596b16fa6ed87e4e2a2d3bf8f109b00"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "a9d60692974131ba8e3cb974a191f6578e102f605c56d36b63b94bd22e4b8b3b"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "a37577dcae90c030e2347715d8d5ef3eb4b8e91d899c029ac2f5b46a88e83212"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": true,
+      "observedMovement": "Mains partent de la poitrine puis montent au-dessus de la tête contre un câble latéral.",
+      "decisionNotes": "Variante anti-rotation bras hauts, pas une extension horizontale classique. Consignes détaillées du Pallof à confronter avant validation ; poulie != élastique. Agrandissement revu.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "pallof-press-a-l-elastique",
+          "name": "Pallof press à l'élastique",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "pallof-press-a-la-poulie",
+          "name": "Pallof press à la poulie",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "path": "/media/3e2ed581e11781d5.gif",
+      "assetSha256": "3e2ed581e11781d5b801250601344d71d47296b3f192be85d79aeb3156a6ada5",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "48241c356b38a00dd50bef08425d8722bd53a80c5d0c18f797af9596023c1aa5"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "f6fb34e2e13b9c18a7861eda81a9d59c6ba81c94050ce97b97dae8f1c64e2f26"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "dc8c64c8584cf56766dcbae02fefc6469759bba531ec93c6a410fb943dee7bab"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "9861a709fd4b5990163b3cc3d0989bf655470ef686858bf24f81f00ada729c32"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "2210faccbb4d3af9714d809043644272dac35d9dee89631693d3f90962503918"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "e937226386d0e177c275a5e703fe09aac5f47b09fdb76a618d8ff556055b7036"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "377de404e783bdff17f998b8c1b107823cee97a70e31fda6b2e6f43ab9af968e"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "b26db4a9d5a398a2ce9b72a8e43b971a72474da399bf4ec3f1c9f570d3291618"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "2210faccbb4d3af9714d809043644272dac35d9dee89631693d3f90962503918"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "3719a93bb8eb8c29ab80bc15235444cacdabb547b41e4d064ff7be092733eb50"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "dc8c64c8584cf56766dcbae02fefc6469759bba531ec93c6a410fb943dee7bab"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "b82fef27b68ca047aa2caf4bb1d466290d56685218563234d1fac386881904db"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Élévations de mollets sur support avec barre sur le dos, deux jambes.",
+      "decisionNotes": "Pas une démonstration unilatérale au poids du corps.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "mollets-debout-unilateraux",
+          "name": "Mollets debout unilatéraux",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "path": "/media/43bad87368c12614.gif",
+      "assetSha256": "43bad87368c126147f4636853bdfe00d44ee896d5e336fb3906bd1aecde07e4d",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "3050b8ea9386ed5444365f726b5b1165f7db9bca2db993618be97745d5422187"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "9995c097eb6afa4d67e6668dc03ee21ae0a7e2e3f46f91b2a1b412d076f0dd33"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "d9f31a3b4fa2c348ce58ed9b093b78ca5deabdfe63f9fc7e1229dd342fd30e6c"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "afa3814bba7ff0b27f9c9d526387f05b76b9913e5b031bd0e588c602bbb74b0c"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "f6dbf52c02e814e20b13111ba154f9797b5e1f44cb6201276256007a0c932497"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "ca5fc6e27483b36e5e97f13adf11c66599da1807cc1db8002145fc19ca801896"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "64fa2d5b5e6cbd3d4ff3c5f44ad4b508e737c8b676aa5a414346726938dcb7dc"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "4cff80b08eefb0c347d064d861bb2e5adb960bbb8a9595e25ff0679ee408212c"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "f6dbf52c02e814e20b13111ba154f9797b5e1f44cb6201276256007a0c932497"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "fe39d864b7d2def146d018cfe7e051394ac0f8f186b26416a501611307820cdf"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "d9f31a3b4fa2c348ce58ed9b093b78ca5deabdfe63f9fc7e1229dd342fd30e6c"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "f0138450ce27b96d5e6f78cd54f7aeb45ab4b7f4fb4d819be527889acdd105e2"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Pompes avec mains sur supports surélevés.",
+      "decisionNotes": "Cohérent pour pompes inclinées ; ne certifie pas des pompes classiques mains au sol.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "pompes-inclinees-mains-surelevees",
+          "name": "Pompes inclinées (mains surélevées)",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "pompes",
+          "name": "Pompes",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "path": "/media/489169360e044c48.gif",
+      "assetSha256": "489169360e044c481886180dd37f731e947876d6f6f79c118e4c6dc2ad250d10",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "b0fc4ec300184c14e802b566b726e8129e852b4033399cdf5e39cc99b476cf96"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "85c14799079fdf22fa09cd76e3bdf49a1d0589a786f0098bd352d7ea1f318b8a"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "977d1df43a6c2a47f99acba1354937c5c0cf29b2f9a6777229e6dc64eff99fe7"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "06e05f730c201ab78fde62fca61f131eb2207039ea1279dfd0caaa84a9ecd44d"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "e2cb49c6180ada7ada4ff13afeff1862a56da4f38bd08811369390820980e808"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "ced705fdf815ccebf5dad01b5a98da4f2e2ff854c5e593b7acc227d2534faa5d"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "a3324b392bf7e2fb9b1b1598cbe5f816cfd25c6c5c192003ac5054b3b9986135"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "74229ae2e6a993906bfa96459de810c4c8debd1a76989b70a875100ab507e113"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "e2cb49c6180ada7ada4ff13afeff1862a56da4f38bd08811369390820980e808"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "33e4a6d7c4cf022c9c392788375d2d68165ef4e0c08a7cc56505221521d53a3c"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "977d1df43a6c2a47f99acba1354937c5c0cf29b2f9a6777229e6dc64eff99fe7"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "f4afa5f3338b8a814a77bf99c802753cc9dfb1e11b27acd920a8e147e1c4daf5"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Extension du coude vers l’arrière à la poulie, buste penché : kickback triceps.",
+      "decisionNotes": "Le catalogue vise le grand fessier et une extension de jambe, pas le coude.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "kickback-a-la-poulie",
+          "name": "Kickback à la poulie",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "kickback-a-l-elastique",
+          "name": "Kickback à l'élastique",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "kickback-a-la-poulie-drop-set-final",
+          "name": "Kickback à la poulie — drop set final",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "path": "/media/48fe4a8cbb0d125c.gif",
+      "assetSha256": "48fe4a8cbb0d125c606f37bab3cc78b716a0dbe8b58ae87c6846bc45968be0ff",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "b85a0c9718cef4564c2350e8e075ac5e6719d6747429b926a505db72df90e017"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "0ce0ab35416cefba0ebebb28660cd0a9bf955d1d00a5f7aee116bd1e0b066f3b"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "e9e7d9032ab1760051d5cc7f5d4e1dc8105294c0ed01653bb74d99fa743f7a57"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "97f6dc5194356d025aca782e7b2a1b3d8a05a556b99174090add977ccd074113"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "69c02a12a9ab3aef1a82480e9ddcd9c96800a216fba33922b6e5cf6567bfcdf8"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "1b18a37db34839872168aaeb2ed52e3b93ac494ac7ec5413266b8c21a89a2878"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "62aae15da2cad2a71dfc241e0bcacd1df3474cd26e10b895a4737332ee9a4f84"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "6685dbe4d9466a75d3ea8ea6813c2023e7feb384b5b20e575b73b8f80c2464a3"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "69c02a12a9ab3aef1a82480e9ddcd9c96800a216fba33922b6e5cf6567bfcdf8"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "e0edf5e924b4b420312d9959bf5131c6f6334d5b402162d7f487f31016262043"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "e9e7d9032ab1760051d5cc7f5d4e1dc8105294c0ed01653bb74d99fa743f7a57"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "bfd53ef42c9090874ff73a76f4cadb7834fcaf1fdb819ed21a0da509f047f989"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Relevés des deux jambes allongé sur un banc.",
+      "decisionNotes": "Pas des ciseaux au bord de la piscine.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "piscine",
+          "name": "Ciseaux au bord",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "path": "/media/497ab2e22c01080c.gif",
+      "assetSha256": "497ab2e22c01080c989241eb321ea89e7209601a80bd57132bc2ad79c2e52390",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "d0a19318f17a5a7b538176942ad81017fe88af83a2cf5e98af5ce858907cc8e1"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "0bf58496135efdc1d628e5b24f10912dded0b42f6376bfcfc69a6c0ae0ae258e"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "489297f0a9beb881198955c7a8b02ab3a5a6d454d4109bc1e0a2408d685b1908"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "68a15b29634ef90ae15b166f8fb535068377b7fdd833b3c3240565270a63f280"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "6fcd41de4d75e89595f2f69ed5cff3b60684018b196922ea8240fefa96d6d22f"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "4007024218c8795a3771ee05f08857633660a5da8a8c90f71d32f1cbf802b485"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "4d8bc0047b32ffd2204ee37df8bdcfc8dbbad79a7b64b71a956f11364da4c30a"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "0daa4d363f2c589fb9b9d1172f8e22bde2cbfedda8d7e19f80a63a58f6fe0137"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "6fcd41de4d75e89595f2f69ed5cff3b60684018b196922ea8240fefa96d6d22f"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "708bb78d9aca8c71d12da8bea5a18f9a01a9fc0953977418c995c03d8ef2b088"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "489297f0a9beb881198955c7a8b02ab3a5a6d454d4109bc1e0a2408d685b1908"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "65e449dde26601f4f30156cdd2ba800813961ee974dd7dbcaa9c190952b1e1c2"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Extension des triceps debout à la poulie haute, coudes près du corps.",
+      "decisionNotes": "Mouvement de base cohérent pour pushdown ; pas une validation de toutes les poignées/prises possibles.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "extension-triceps-a-la-poulie",
+          "name": "Extension triceps à la poulie",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "pushdown-triceps-cable",
+          "name": "Pushdown triceps câble",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "extensions-triceps-poulie",
+          "name": "Extensions triceps poulie",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "path": "/media/4af33157ce25267c.gif",
+      "assetSha256": "4af33157ce25267ca764453d99eb3780a1a961d2943d5142069e6ad9f372c5d7",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "f3d31de322959e4b661722ad752e28bb0ce67a35fb2700d31ff6b3990eef4b42"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "c2608a0623b8ae9134c45ef47b3e0d86db1572e4fe3960b4b82d89a04187fda2"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "5010a8dcd950c39f3e5926481d79ddaf86dfbf2e0d4f27ead9a27749faa1c2ab"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "8e03df80e696d1d35bf677356a4ea3049a62a4c9e2d530b861afb8fa1fa3de89"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "25fcee96eeb51978dda74f29c0f69a55478fb5cc7ab24804e4ad49bb9b5ab679"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "f75029acd389708fc5ab79be0d16ac4eb030e40db9876a23a5106d61e76dc35d"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "e48b9267e2cf33ba362dcb893ae9d2ff573dee4d99552d8f4fa54c585706dc00"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "6f3062fcbbdd5984576774c3cf8767d8fbac2d483cb62f3e5f0157b48688ca05"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "25fcee96eeb51978dda74f29c0f69a55478fb5cc7ab24804e4ad49bb9b5ab679"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "822b6cf751cdf7018139a97d7e2b1896b6bfe6e1ed4c08c073922e033dab5b77"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "5010a8dcd950c39f3e5926481d79ddaf86dfbf2e0d4f27ead9a27749faa1c2ab"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "f46d650089935b5d4d84074d474bd118ee51e78264318e38e48be14f8ab7a1d5"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Tirage vertical assis à la poulie avec barre large, vue de dos, arrivée près de la nuque.",
+      "decisionNotes": "Pas des tractions suspendues, ni une prise neutre ; trajet devant/derrière à confronter aux consignes.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "tirage-vertical-prise-neutre",
+          "name": "Tirage vertical prise neutre",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "tirage-vertical-prise-large",
+          "name": "Tirage vertical prise large",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "tractions-pull-up",
+          "name": "Tractions (pull-up)",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "tractions-prise-neutre-chin-up",
+          "name": "Tractions prise neutre (chin-up)",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "tractions-supination-chin-up",
+          "name": "Tractions supination (chin-up)",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "tractions-prise-large",
+          "name": "Tractions prise large",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "lean-away-pull-ups",
+          "name": "Lean away pull-ups",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "path": "/media/6223da1b562d9339.gif",
+      "assetSha256": "6223da1b562d9339185be257ebded7651730b9c7bb0364997358013a0fd51753",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "d92b0e355b382e7844cf8df1a6b30fdbf1b42cf12eb838bcd32edb6913ada11f"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "cbf959cff819d34a2a0cba7831dc7a89ccfaf0578d401e272e5a39bc05aad60b"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "5ea9fcf16741e371664ba937c08bb4c4a3dfeb01c91a9aa6b26f624e16eb3bd3"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "869020b3463cf11d9bed256b429df39eab9f34cdce355e1ddd2e5d8fc3c471f6"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "a9f901a0bd2bf7bc1b8eb438925c07ad713b02a1d17abfdda3487e5e30f5f876"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "5316fef5ca2216c8a88309559626f5ae5a0b28649f08f7a1d4996d7cb5abc0d9"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "17a5bef4a2738f72d4882d76071488e2c5bbf46ee43eb33c553ea33f716bf9c2"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "71f513e236039538fc56356329ee604b09891d4c7b996cf291b4cf16684cf3c2"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "a9f901a0bd2bf7bc1b8eb438925c07ad713b02a1d17abfdda3487e5e30f5f876"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "8f91d0f087ae999829d597f5554803b1ea6285442938ebf36e5eb0d48578d8e6"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "5ea9fcf16741e371664ba937c08bb4c4a3dfeb01c91a9aa6b26f624e16eb3bd3"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "9e26fc8f8f23e62e756cd7bf57f239b506f8ec32547128bb921d1ca685744a75"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Soulevé de terre sur une jambe avec barre tenue des deux mains.",
+      "decisionNotes": "Geste unilatéral visible. Matériel barre alors que le champ catalogue indique bodyweight : association précise à revoir, pas de modification arbitraire du programme.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "souleve-de-terre-roumain-unilateral",
+          "name": "Soulevé de terre roumain unilatéral",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "path": "/media/66849c3144d589f2.gif",
+      "assetSha256": "66849c3144d589f2d92695012ccc8fa8f4b679b9106f035a1dcc204c801c7eeb",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "62a3fa523dfd8c99bd5a3a7b674830e2e0e40298ef11654adf6b5807af66234d"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "64f3619b55092abc4fd6c9f3708ab06a52c458c3ad09d13e085e4ade4cae0b9a"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "a4fdac8bd483b98815a32301d4511c3dc0271f7354b96252c2a7e0d1324ec201"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "12ce3629de44649ba4ac3d5760c5c899563cee1fa28acd3d1abb1a5edffe7e08"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "8a63cc5a11b615ea0c8b42316230b175c4b099d5a8a9d2e466c29a0325b4f81d"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "afe4bc1876546b83153e31b196a8d7585dca49f2287dc8962f96d06216485165"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "becd9e3e26c2265f3e29ce5c1a2cac66bd2553b8266c84700ed4b0b3d1f8028c"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "bb92de7d4ef7f27424098c69e1b06e6767d5dee586c083beb0e6d23eae3be490"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "8a63cc5a11b615ea0c8b42316230b175c4b099d5a8a9d2e466c29a0325b4f81d"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "f8d6669784a65682fcde6b6e96bf4ba74140354fa3a0828a6da768184865a9f9"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "a4fdac8bd483b98815a32301d4511c3dc0271f7354b96252c2a7e0d1324ec201"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "3255ffd7c3aa74a5f14b03e48520a876f78954ca82abaf144094b4f0d8815c5b"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Enroulement du bassin allongé, résistance d’un câble attaché aux pieds.",
+      "decisionNotes": "Reverse crunch chargé à la poulie ; vérifier la variante sans matériel attendue.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "reverse-crunch",
+          "name": "Reverse crunch",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "path": "/media/6809d9052927484a.gif",
+      "assetSha256": "6809d9052927484a8e7906a825111325cd7237a420b343e83d4da93f2f7c06ec",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "9ca3af741cf0b6f890cbbc46e54d0f53e789410380854dc350a36310d4a589cb"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "f3aaf044daa3af45dd23c500cf2e578f173050a9ee202ba68e8bb7c411ae3df8"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "47608ea656fa6ea47b601d2ac889e1f19eb9d9195b5588ba691a22387d873d11"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "51ed5fb0199f4201366e396728792a2de54a8d1dae8ff58226afb7a02bac7d34"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "79f409f9456293c9522c9de55985d7cc105f57c307fa68e79645bbe576434c27"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "213e3a6ec7265d926f28e30aaaf2ccd90e8d1bf9d82cf7c44d1c8658d8373930"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "ccd9193bb804c3a8f4568dea62d57fc9f0ad9ac6335882130ad13ba68da27116"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "29f1ed8b8a94d67b83bedc3fd9eeca26b00025161ebf0ff199cbdee9cf5eed7e"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "79f409f9456293c9522c9de55985d7cc105f57c307fa68e79645bbe576434c27"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "bb50886efd66180001087542a856f213efe5e40b389393f6de26a67b61c2c32b"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "47608ea656fa6ea47b601d2ac889e1f19eb9d9195b5588ba691a22387d873d11"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "62940fcbf0f775569136e1847f0a6c9777082b0437c19fc344101167cd53228b"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Montée sur banc/step avec deux haltères tenus le long du corps.",
+      "decisionNotes": "Vrai step-up déjà embarqué, mais pas automatiquement équivalent aux deux exercices classés bodyweight. Reste une candidate, non intégrée.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": []
+    },
+    {
+      "number": 22,
+      "path": "/media/7517a916496ec766.gif",
+      "assetSha256": "7517a916496ec76690a296f0a58884b42164aa323af94d118376c1870b6c551f",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "2820c6a0aaf06e73887e2767cb8a9a31f7e68279c75ca8175a7c9f3b32092f55"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "115d0d0aaffbbd41651eb2d7c2ac0ea93af3434bf504441d7b568b92f5f3d7a4"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "a667eefc36669b09b8e2c9cb703ae4a22bb27ae795f8c6d540bf805f82db3b29"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "ab1d29891f82b57e8700fdc723c066439d5f34504af3d711564b40512f7a1daf"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "6263eb54fe04a520604075e1ce8ac74f05b8d5c80a53a903c5cd745ef8a8d6c5"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "d973dad66d7373e71533eda5bb0eccb0b12c90275f73546f3b78982e87cbab6f"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "7bc9c26765908642753c0c87e9d396654c68ccc67fdcadcbfb028d9fb5cac11f"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "dbb53938d7b35178ec24a18fc3b1ffb142fef088150c51ce520c8de3e7987444"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "6263eb54fe04a520604075e1ce8ac74f05b8d5c80a53a903c5cd745ef8a8d6c5"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "1045a01e9eab71efe269bb065994aa4d11837e7bb3757765ce39bd0c1f7a44f8"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "a667eefc36669b09b8e2c9cb703ae4a22bb27ae795f8c6d540bf805f82db3b29"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "80c722677ad8926b01f8fd8a1c15d3e8b0ce7596d97b97cc15fc80960dd9003e"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Montées alternées des genoux avec les mains en appui contre un mur à sec.",
+      "decisionNotes": "Ni talons ramenés aux fesses, ni démonstration aquatique.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "piscine",
+          "name": "Talons-fesses",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "path": "/media/78f9aee57a4101b1.gif",
+      "assetSha256": "78f9aee57a4101b1fd04ddd6ef1228002d7cb0cabf235c089a2164adf4eecf43",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "94eb3aedf27a62eb1acac09c21a60acdf8807424e2513daf6c505586fcefb0dd"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "49c2b03ab72b7c32adf65cf789f6526a33874c5dd5c1f93aa00aa10543a07852"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "a0c5e9e9b9caa9f33e2df2a17a5094c11c5c69311abd2cabd99d82939b1a0dcc"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "1cc15dbaa57e9d3a9d926134fd526db7717f19ea44bc2c36f8cfa6d3d9ecf244"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "11114e182c04cf68bb9c7f55659b642c5d3a13bcda2b8a61e3215a9a687de8d6"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "b1e06561679670b2573934d728a34c74d29c7ca15d5b08d8d07f8fee30fa33e2"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "c7cc3edd65a8f31c6dae9efe79f5fdee55e54e5bcd067c87f7eb02cb5b361ca0"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "e0bedda5ae0c7ec96700fdd76fe098795837769f7f60af1d1ca6afd842f49a98"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "11114e182c04cf68bb9c7f55659b642c5d3a13bcda2b8a61e3215a9a687de8d6"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "2030d25e4eb22f0244bbd65eaf008428f2c36889f233b0a43199acb631a38524"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "a0c5e9e9b9caa9f33e2df2a17a5094c11c5c69311abd2cabd99d82939b1a0dcc"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "38b31aaaff33fd7fdeb3e481ab44081a5c4774f75e3d914e0458bf515493258a"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Squat avec un haltère tenu devant la poitrine (goblet).",
+      "decisionNotes": "Cohérent pour goblet ; présence de charge à distinguer d’un squat au poids du corps.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "goblet-squat",
+          "name": "Goblet squat",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "squat-au-poids-du-corps",
+          "name": "Squat au poids du corps",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "path": "/media/7c0c6d264e85d66a.gif",
+      "assetSha256": "7c0c6d264e85d66a343c26079fb0c8a57d36c68e18d36fcace0d7e7f53485f50",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "9dea0b3d4b4d2237a4a1efe42bd4e7372d9fef51d9578554a4b7b867b2bced7c"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "de41527d71158fb04ed2830d3903a0dbc5a7e1e284634a4170c5786a0093bf63"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "b08fe76095e7dac1caed67af2a9f9689451a7a8198d958cddac4ede064633d75"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "d67ef77cfa5e83ba6507d23be19e735df38ea9c3de510dd525c059d2e544cf40"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "972ec42f6ea24ddec814e73aebcadc6d32dd6154e3acde035dc472b6b62755e8"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "772d0293028cab8e85013a062092d47458f96eddc104092b538b8ba008e073d9"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "eb17908e583e32ac391b9324b510b19d7dc612fba4fd325353c1d27528b9f2b1"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "345cdecb156aaf549636ed5e44550be8a282abfb6f40ce0b43dec55ddaf90582"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "972ec42f6ea24ddec814e73aebcadc6d32dd6154e3acde035dc472b6b62755e8"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "9627a38978298c11a731e2b327619a94d0cfde4a9b68b558289bf464fdef2bba"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "b08fe76095e7dac1caed67af2a9f9689451a7a8198d958cddac4ede064633d75"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "245f960ff3d483b2feaa1f8b3eb76e70e971016aa19f34a2a511cf0a6b9a8ebc"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Flexion des genoux couché sur le ventre à la machine, rouleau aux chevilles.",
+      "decisionNotes": "Leg curl allongé machine, pas swiss-ball ni variante assise.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "leg-curl-machine-ou-swiss-ball-leg-curl",
+          "name": "Leg curl machine (ou swiss-ball leg curl)",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "leg-curl-machine",
+          "name": "Leg curl machine",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "path": "/media/8eecb0152081ff26.gif",
+      "assetSha256": "8eecb0152081ff26fc29f4ecccb779e99ac42f8aec7cfbed46fc6c0ccfb21a31",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "94b4132e0ed945ebbe6731e35f0a0b70643979b5952f2636f59ec38149e277b2"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "b60c4942f31a7575156c10582c2ee2f1eec815ab05b988af1c63674dfd41b567"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "dd75dfe67b5cc7eee7304d8a00dfc8ed61884afe53e8e1790098f593c232d891"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "1f8f76ff1a8675f57f4bd4fa873646f9e4d4cc284c9cb42236e77c4f35ea6da6"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "765f3c97541397fddfa5a0603cb64a79704f0508769f2e1280fa6696f36eefc6"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "ecda813e05d9be9daef4e6524e82e77a6435fb03cdae97d767c52ca506121450"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "2a68e7855f186c3e884f414a7e3cc7c069ccf6ceab88d8b89ad597ceb2ec386e"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "1f28328773de1737a594faad72239c7e2763bae67447ca1b215c69057b2414ef"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "765f3c97541397fddfa5a0603cb64a79704f0508769f2e1280fa6696f36eefc6"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "91264446f1a259311bf32b8f1f6cfc3dd01c2bc0ee83cb385e2b25ed7c95b51c"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "dd75dfe67b5cc7eee7304d8a00dfc8ed61884afe53e8e1790098f593c232d891"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "70331dafe746b2becc7a71f5333856cf1c97941037b57177e2019ffaf2c16c16"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": true,
+      "observedMovement": "Pont fessier au sol sans charge, deux pieds au sol, bassin monte puis descend.",
+      "decisionNotes": "12 images et raccord dernière/première examinés, puis agrandissement 310 px. Candidate cohérente pour pont-fessier-au-sol-activation, sans banc ni changement de style.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": []
+    },
+    {
+      "number": 26,
+      "path": "/media/93ab17b0de26fbc8.gif",
+      "assetSha256": "93ab17b0de26fbc800fa70bf454f79459f55b6e2e45602699de2b659e37c9d07",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "3e3175f1d9885a1b88242ae8c83e6cd681f070e63b4dcf5ea75bde8dbe7578e1"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "1e386bcacc0a0b561632eb717b16ba173e9a809589c661b241ab684b3a24c0fe"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "e953aaf00a60aebdbdda37bad8c9204fe808066cbf4690bfec4a3899e47ad0c4"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "cbfb9d63ad109693c5f9e5b36cd47f20d9a0ccbe928501f05ab7d8cf5a84dbd0"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "c7f881782efaa75dc9c1ef73ee7f000f4410080270cd01b3871f7917a999e8b6"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "03ecba7c27f92085680bc6a4abb7e631892e8a51ea34cb3595f568e61591a673"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "3daf26117a550f97f5ecbfb215215b76b7a3dc1b410a91220e0f387793104cb9"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "6a23e1a590588183a5c5fd6ed827872a54714466610b000d59bb7a16dc38d890"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "c7f881782efaa75dc9c1ef73ee7f000f4410080270cd01b3871f7917a999e8b6"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "1278dcafd8e5af3328201392250f587436c71caeae933a24ad9c15f0ec9daeff"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "e953aaf00a60aebdbdda37bad8c9204fe808066cbf4690bfec4a3899e47ad0c4"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "3d2989e17228a3faf4d7a7bc74a2dd447271ee18540aaf489d661d9a8fc5779b"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Rowing buste penché avec barre, tirage vers l’abdomen.",
+      "decisionNotes": "Mouvement de base cohérent ; charge maximale et tempo ne sont pas vérifiables sur cette seule démonstration.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "rowing-barre-buste-penche",
+          "name": "Rowing barre buste penché",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "rowing-barre-buste-penche-test-3-5-reps",
+          "name": "Rowing barre buste penché — test (3-5 reps)",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "path": "/media/995e1f9a9cedc5ec.gif",
+      "assetSha256": "995e1f9a9cedc5ecd79336c5561813f8bf49b145cedc8deaeee7d1cbdef446b2",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "bfa8041603e2eb49b507c8493ee1d215e77d2c6044eb9bb7154ddee98a56c9e6"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "8cba285765d056da99c4bd9d6caa81422b41dd0e956b725957dd9fb97c658d1d"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "4f448f6284f3432b03a1337ef0a748e5f037a41ce72fdcf79c2a13e1305d2ff5"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "de42e93c07d9b4c1b63cf27cea27feac442156029e633266c048419d18840ca0"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "e60f56b7e68e6c770d1ac815e5595bb9368b2888db06899fda5285a8d026d67f"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "cdd0c8744a02e1ff001e6e5ff9b0fd8be44da37bc3f2b5a08f8660973968e6ea"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "cd0bc4524da933a710f7803507657317fe4502cec31d97d3bed0d44f0b4440bc"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "a1fffd962284f3329829a428c3208ace4959a3b10f7179536112ac0d8cd25b9d"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "e60f56b7e68e6c770d1ac815e5595bb9368b2888db06899fda5285a8d026d67f"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "e54ed2b6d375ee990773941f1acbabe9f019d55a9d4debf619176633c3927dcb"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "4f448f6284f3432b03a1337ef0a748e5f037a41ce72fdcf79c2a13e1305d2ff5"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "7984355d05b13196ae24e5707696ffe4e2fb348b38687e192d095ae19a369db1"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Fente avec deux haltères, retour debout, un côté montré par boucle.",
+      "decisionNotes": "Pas de montée sur banc, pas de barre ; ne montre pas une marche en fentes ni l’alternance complète.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "step-up-sur-banc-hauteur-du-genou",
+          "name": "Step-up sur banc (hauteur du genou)",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "fentes-avant-alternees",
+          "name": "Fentes avant alternées",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "step-up-haut",
+          "name": "Step-up haut",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "fentes-barre",
+          "name": "Fentes barre",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "fentes-marchees",
+          "name": "Fentes marchées",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "path": "/media/a4c1fb89be18062f.gif",
+      "assetSha256": "a4c1fb89be18062fea1fe6fc9f3846bb74fe240f8d64e80ea5cf89d6578cd5f1",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "f2c7b7fb58ad437aac05e92c5d8dcd4211865207157d995cce7e562299becfe5"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "f797505cb736c24ac5c2f0eb607ecc61e3d87e239c73e14b9c6030c3aa43bf10"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "c1d46331718df1dcb9c99c208036e7363680148a12b21eb82dba86b9ab978c30"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "c461861b0cbc03355677d92e89e291a850be9616cf18a0cd92c364245f790962"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "44460050bd0be81bbd6a65710034d8e54e7079e2113f1924e23c5e65786e5646"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "1f4015f222fb9e45292568faf390d30652fe2a9f873fb76e20518187fa94c1a6"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "461110e3a7cc0fb3c2d8de2dd97b3f10e600d8eb33f9c503171ed6b014484005"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "6e435dc24bf00b374f4dce7a18a4c5c6145d4fb861e8b44b8370c972c414ca4b"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "44460050bd0be81bbd6a65710034d8e54e7079e2113f1924e23c5e65786e5646"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "9387af5b809f28ba2f6c08522eb73a5f2b1f0e1f3d15cb01316783b7a032dd7b"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "c1d46331718df1dcb9c99c208036e7363680148a12b21eb82dba86b9ab978c30"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "b5202d6dcbf337e1b7c31e75acd01d8eb7e0400227d64eda8400ffba932f4c13"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Développé avec deux haltères sur banc plat.",
+      "decisionNotes": "Pas le banc incliné d’une des associations.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "developpe-couche-halteres",
+          "name": "Développé couché haltères",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "developpe-halteres-incline-pronation",
+          "name": "Développé haltères incliné, pronation",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "path": "/media/aab0de0aad0c275a.gif",
+      "assetSha256": "aab0de0aad0c275a57acb64ffac64dc49290e99ba8c12e1e92b99c0fd393f84a",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "e1afb6f5023e4a41a745682073c81e083aab00d70d1fb10fa819fcea4adec5d8"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "9024d4d93a2e957722ff5aba34aa44de374a86d03ae6ed07cd2481efcb79ac44"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "1b025b309e17f3e9d629dd17d3188b19740757c6638641fcfd0c94e130ae3690"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "ce0d14381dc56f553cc4396a4cb40242a2a23a24d0582048e2b37a17e0cc95ab"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "6602c4b5aa195c1e75fbe50a89986e3ed008e8185616fe6739a97810811d6d39"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "fca02db9f98ba74a2e81da53379f31f02d7919b402e79f9602c3c0b0726a6af1"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "090a58111a2aeccd048e38aa30a03a34feb2853e18eac1d50813e144ad326282"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "8918d407fe19be8588341a83e4f99da538373a6ca3ede47b9f07cbe5303dd4cf"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "6602c4b5aa195c1e75fbe50a89986e3ed008e8185616fe6739a97810811d6d39"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "19290056749dd80cc2e12f1ba155299fc87609f42a4192c1bf59bb9cd43259f7"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "1b025b309e17f3e9d629dd17d3188b19740757c6638641fcfd0c94e130ae3690"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "53c74f382c6db350797eba2aa92f65d76b40df4ca8b91906bf00db4c4830ca59"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Planche latérale avec élévation de la jambe supérieure.",
+      "decisionNotes": "Ni bird dog à quatre pattes, ni mobilité des épaules.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "bird-dog",
+          "name": "Bird dog",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "mobilite-des-epaules",
+          "name": "Mobilité des épaules",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "path": "/media/afe2f533cbbef546.gif",
+      "assetSha256": "afe2f533cbbef54634fcb4b1e234d14f46178fcfb17a4fbe355b73479ec6b2af",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "8352f0d7b23748743b5f27378339bdc2f266db645cb38b60093fdc662945f4a4"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "03058974f904eab772fc915e26be9bbd4b0de5462db06a717884e7fc5db91465"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "49475d859a86f44d84091bbf4cb90d4b96742d563ba85ee8c327f11dff302139"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "1fe3c76b44be6c6075f1c514cde0c5517f451f543afd60e8a2dc342fd3e36298"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "99a3c9a83fefa354cf3110e6c5ac0c8aa8f32e490234d533218e0ac1a022d031"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "aff64ae6fd81e960967d99dc869b57a1219d3adce0497724891d9428b99c4735"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "f1d8f9de46671fbfbfc0f63c2778972aa25bc22a013bdb86daaa347a05af1f9e"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "40d3a6766d8e121d9976c22432637dbe368a9c8abf6e4f5314c1683179f22611"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "99a3c9a83fefa354cf3110e6c5ac0c8aa8f32e490234d533218e0ac1a022d031"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "e3cd7328fdcccc1b17cbe8d52aeb072a9efe6cf1c8a36ab1aedaf3a12902ed89"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "49475d859a86f44d84091bbf4cb90d4b96742d563ba85ee8c327f11dff302139"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "1088087404a0e11825fd68e02f0f233766040e76ab17e9f30b133166bf33b86f"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Relevé des jambes allongé avec partenaire debout à la tête, mains sur ses chevilles et contact aux pieds.",
+      "decisionNotes": "Partenaire présent, contrairement à une démonstration autonome : variante à revoir sans effacer cet élément.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "releves-de-jambes-allongee",
+          "name": "Relevés de jambes allongée",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "releves-de-jambes",
+          "name": "Relevés de jambes",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "releves-de-jambes-allonge",
+          "name": "Relevés de jambes allongé",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "path": "/media/b2236e6b7a81a1b5.gif",
+      "assetSha256": "b2236e6b7a81a1b5b63cd3a28bd16e504534a4f7d72a312505f464d65cb4dd3a",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "5c1df278f969080e59dafc1ed7b82091e33d7cd1cfb2545794968b11a8a981b9"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "9531c8e566be0f36cafccda15dadd12bb19d9132d8bbadef666b9d64d7641f16"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "72cedcdbcea080e6903e8f61b6de800044a20e4d80312b4ce7eed5bc0935088b"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "fac0ba3c3ed3436cc8dd5d46e5d27b1fd92dc6a775824c2a2c3bad0982dad011"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "8fa61bdb0d34a29346ab0a90fc2192091a1275dd9b58da32535666a84d1f6628"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "68f1648282e59d68a7648b7800b4e64a19643cc2cf3a8dfbb0d0899446675dff"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "fefd1c0f7d083766f623e852a3fa43261aa5988d3e931089fff4a3bccc620adc"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "9cf68a7d6a6de57a9b25a27d89edf98912c88fe86c6622936b835305bc498108"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "8fa61bdb0d34a29346ab0a90fc2192091a1275dd9b58da32535666a84d1f6628"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "a835bb564848572a9c32ec2056cf89f106b564c99f5ca6938c36a23d5fd1cd63"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "72cedcdbcea080e6903e8f61b6de800044a20e4d80312b4ce7eed5bc0935088b"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "da1aa8574935a5c76054400dc9e39f1cc4be7013f6ce9bc97d0b04a2d18e14da"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Allongé sur le dos, bras levés, alternance d’extension des jambes.",
+      "decisionNotes": "Variante de dead bug surtout jambes ; pas de rotation du tronc visible et pas une simple respiration.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "dead-bug",
+          "name": "Dead bug",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "dead-bug-avec-rotation",
+          "name": "Dead bug avec rotation",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "respiration-diaphragmatique",
+          "name": "Respiration diaphragmatique",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "path": "/media/b2b32833d73d3ca4.gif",
+      "assetSha256": "b2b32833d73d3ca47f79fcf60bb42cab5ac85f4af5e85fbf65b31fa0468e107a",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "943406e06074d6cad2c1a9392095a7523194b3852a8fc6b4cc28fa3dfb0f70c0"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "ee04b2762e51fc1c203c142e806da76199858f5f73b1fdbeab880d1dda3bb8a9"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "2e52d43cd30b834e87990cd647b13d4a4a16909f152f1d2d55b7cf3b13fdaf4f"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "8fc95e0e47af663851aca2e55c2de902d19457d7725fa065c13ff537b0adadb1"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "9304828036b31905ac8b5133b1aa4babcfb4a5e1e0debf4c4c500bb8d617e519"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "e8cc41cce284ae9d1ca529f71c7756726e6240f940c5da0f4af31a9b7e732436"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "2498aabe647bedfc0b931deee7b46442b890b62194c4787b52cfea2e91e69e0c"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "e90d3ae80f8b0164dbc5d3babd9849e5eeb73f90934ff57545b73ef67faa7a3a"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "9304828036b31905ac8b5133b1aa4babcfb4a5e1e0debf4c4c500bb8d617e519"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "c056ddede26dcd4ce06d6e5f1f9646fb6ce91a5247e40fada9528d320c187d28"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "2e52d43cd30b834e87990cd647b13d4a4a16909f152f1d2d55b7cf3b13fdaf4f"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "8ec0a67012e11c5316bbeaa0d96eae2fe0dc6d840d39447a4fb76ddd8fe69f6c"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Mobilité des épaules debout avec une bande tenue des deux mains, passage au-dessus de la tête.",
+      "decisionNotes": "À sec avec bande, pas mobilité aquatique.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "piscine",
+          "name": "Mobilité épaules aquatique",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "path": "/media/b49969e64dc275f5.gif",
+      "assetSha256": "b49969e64dc275f5e05ea2481130dec742662eecf113ce61f346c69757c30b84",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "5dc2506b3e1a85c868bddf97df806fa0a9091f1a844d735da4abbef5ce16153d"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "2805b2fb1365ddfcdc065cb1dcdbb449f19aa2a518f228970e08c3c911e8af49"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "65887de97e60e862d970dcc5e96738f3b9c7c14dd74e58fba8e1130384ca0c81"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "0edcf6cfbf8bebc5d3988980f320f4e44080b543674557c5818d038734d868e3"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "acab1f9fda8506e0e640df99b808962e98d3541a3087fd4b1bb487e4891c37d4"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "acbb28d5c44eb307e24f5eee5d5d7a5c058f74a223b03fd7917807e951cc6c6b"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "200a7f8a6c1951c9afc823f3f657d37f3285a587d09b3a07bf01977b99399646"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "3dd6967ce2e82ea606a3f2ef3375e56806e1de1976838cdca703f696be311b00"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "acab1f9fda8506e0e640df99b808962e98d3541a3087fd4b1bb487e4891c37d4"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "aaeb4f878e341b6534218b6fefcafd6c56430df0061ecceec28f851e8f695fe8"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "65887de97e60e862d970dcc5e96738f3b9c7c14dd74e58fba8e1130384ca0c81"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "c2afc44fcebda8544471de7120a1cd4cff946266686095807b955e9f5f69dc55"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Abduction des genoux assis sur banc avec une bande autour des cuisses.",
+      "decisionNotes": "Source intéressante pour la variante assise avec bande ; pas clamshell couché sur le côté. Non intégrée.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": []
+    },
+    {
+      "number": 34,
+      "path": "/media/bc4d9bed4bbb590a.gif",
+      "assetSha256": "bc4d9bed4bbb590aff307ca8ab71f6e1ad1953d1173002de5e008cf3dd5627df",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "7f6b31b54179287b19ffb56af866b1dc5174d9b872f44f259ebb4f1adb8dccd5"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "89a037694427769a5b2f4083bad646a5bfdba9c3a85b44f7939805368a3f7d6d"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "28b57a88aa3aa972428799472d24a367923196c94cf5d208d3914bdefc4c851d"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "278fe92fe7fad9852b7809ef63b6d9bc298ac13df99d60a8fbfa15379248a7dc"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "d4cafbf0edf666d4b0bd0dee0850da2c433feac02fcc9b5601d94b7671a705ed"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "903419cdc3a9d3a06c9ce817e765b0011425c59b9b3cb5efaa35d3a778c82042"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "bbfef111e2c5353837351a9fcd68c4996e9d370a66087539d00114ea25a74d44"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "c4587f26ad46f03a8a437772e532c0ea0e65c6c1f0ce66a0d4ca1b04efc73c26"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "d4cafbf0edf666d4b0bd0dee0850da2c433feac02fcc9b5601d94b7671a705ed"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "316774fca11a27c7a7af955794ee91fc4f74a8cad03e49975be53bfc53364778"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "28b57a88aa3aa972428799472d24a367923196c94cf5d208d3914bdefc4c851d"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "5e8a1ee01719ed810569a1e3e0dcebaeb463ce6075ae5854502913b8a2a6cd13"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Fente arrière avec barre sur le dos, retour debout, un côté montré.",
+      "decisionNotes": "Pas de saut ; pas une variante explicitement au poids du corps. Autres libellés génériques à confronter à la prescription.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "fentes-arriere-alternees",
+          "name": "Fentes arrière alternées",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "drop-lunges-fentes-sautees-controlees",
+          "name": "Drop lunges (fentes sautées contrôlées)",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "drop-lunges-fentes-controlees",
+          "name": "Drop lunges (fentes contrôlées)",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "fentes-arriere-au-poids-du-corps",
+          "name": "Fentes arrière au poids du corps",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "path": "/media/c07b14f1bcc8e8ca.gif",
+      "assetSha256": "c07b14f1bcc8e8ca141bfd908f8b9721cb1e8a5e005e37693cf7738ab5218f90",
+      "frameCount": 24,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "91de58d75a4f3cabb8b396fe3f385f6612d956913cdbded65a9d3aa7a2ed6509"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "a77cbe578a16885b2402897f490d1a4ec16fc9b00bf1a6147e62db9c4fa52b44"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "a60e0789938f2a345465bef981676c333ab7d8665c0541ada02a19a910f18dc4"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "57e14929418615c3e7b6ea4e2f0304d5c744b388ebaf18b0631f6071b4f90c09"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "2800d9090297900f11b07b6fcecb5497c32e5f187a502191ccf88414182cae90"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "00a388dfb58cde0b60767a9d439b6bc066259227055ba2f56bf1699b1c4995ba"
+        },
+        {
+          "index": 6,
+          "durationMs": 500,
+          "rgbaSha256": "06fd82ba08230df87da2074fb27b992eaa5d76cc990fcced3f3b87f023f49777"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "9f16d6ec87de9deef51c33780df6fde429ba504c226cf229e44120a19fe11d75"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "7ab294ca491234c20104e428938be94aff5aab1839d4a30210f519222bda24b9"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "64a4a3424d60b7d429117e61ec1e6a0a32482e54d397a4f102ecbbc3b9776854"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "02bf87726e50a5280878adee5ccc82f42ece34d44bf56c4732c646e7cb3c4454"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "445bff217855e98a7cd694073c85390abb5ed761a09147a0332eb09447b3c3e4"
+        },
+        {
+          "index": 12,
+          "durationMs": 500,
+          "rgbaSha256": "b2486bb2e0c86222e2c07eea55bbba2a0ce70071330fae86e42f262731c810b2"
+        },
+        {
+          "index": 13,
+          "durationMs": 100,
+          "rgbaSha256": "b739f6afd8009da52f94df5bbb3277d35c2ecb1989adea860759d5d417cdb45a"
+        },
+        {
+          "index": 14,
+          "durationMs": 100,
+          "rgbaSha256": "2592efdbf5d6d01b3e8e761c54887243b2e7edf59b09b965e6b83189d2785e2f"
+        },
+        {
+          "index": 15,
+          "durationMs": 100,
+          "rgbaSha256": "04612fca2d31af97deb08da53e349c9caec2bc40d600fdcdf91391841f7205de"
+        },
+        {
+          "index": 16,
+          "durationMs": 100,
+          "rgbaSha256": "2f43bf35f43a216d9351f1dbec3cb525b5f1d7656bb6c0a873d0c16c57fa8fd8"
+        },
+        {
+          "index": 17,
+          "durationMs": 100,
+          "rgbaSha256": "c4866e42697fbbc48ad4cafc0ccc19242f35bddee075962fcf87b39f6416a536"
+        },
+        {
+          "index": 18,
+          "durationMs": 1000,
+          "rgbaSha256": "c2a1084af523e704939b26ff7f5aba74b3e0b80a3f2b1d758e65975a8d6a5bfe"
+        },
+        {
+          "index": 19,
+          "durationMs": 100,
+          "rgbaSha256": "20f3bdcd7a564458113b8f94661af7bd7e9034481ad2145c8bf0e5387d03a0a1"
+        },
+        {
+          "index": 20,
+          "durationMs": 100,
+          "rgbaSha256": "02749330eeeda3fc0234880c46cd3f683692f2bcfdfe8b545683a4dd337d8e55"
+        },
+        {
+          "index": 21,
+          "durationMs": 100,
+          "rgbaSha256": "2d95afb76c8400adcc3bcf21b3b334718dc0ce8c7924ad85e4cc3a5c6810c24c"
+        },
+        {
+          "index": 22,
+          "durationMs": 100,
+          "rgbaSha256": "2b30acb6914aff0ad73aa65b260dd72e22d5b4a0aba50fc13745b85ac84ce4ca"
+        },
+        {
+          "index": 23,
+          "durationMs": 100,
+          "rgbaSha256": "5f27e010837753feded87f5dd5aa66c95e3820a3657f000b942b719a052520f4"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "enlargedReview": true,
+      "observedMovement": "Planche mains au sol avec montées alternées des genoux, retour jambes allongées.",
+      "decisionNotes": "24 images et agrandissement revus. Mouvement de base compatible avec mountain climbers ; ne pas le remplacer sur une impression issue de petites vignettes.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "mountain-climbers",
+          "name": "Mountain climbers",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "path": "/media/c1065beff4823907.gif",
+      "assetSha256": "c1065beff48239072c3dbbb3287c1b2c25f81d1e9b40c4d871ed92f9f8ca0893",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "96ba83b9c81faa3dcd61af50386b95fa8de3450b206966cc5a26b6e5a5212a0b"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "3b5c73dbae16338edecb04a76ef0708d0668909825b748d223f8155440e81a5b"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "0f5dbf281820c7767f969f0530fde428aae45066c0f73fd9f069bfdd7730a311"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "caac387043385efaaa7b408be37faf2817aa52a22cb4e57a3dea25e1950c22b0"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "b6b6641fe84307156f3af805d63b9d78bf21bc85c477618d3ccd7359d46696ba"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "aab63b047479b62f67d200376f44b4bdeac59d8fe695a92d7825967974e9fd04"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "5c9cdd1c2315044e354b3c7b977f6d13c7dbc2a830a1d906d9e56bd4939c702f"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "793f943502b2bf6d3be4cc42e4b730057b9e38cf3fe0e87c44cbdcb916f58bf6"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "b6b6641fe84307156f3af805d63b9d78bf21bc85c477618d3ccd7359d46696ba"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "b169f7d2c24a781cea5f5a23bfbe30c87cde69e17abfaa2b21fcad77986d672b"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "0f5dbf281820c7767f969f0530fde428aae45066c0f73fd9f069bfdd7730a311"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "7bbc536248f1b9123f97755b52e0a4aebfe8de46009ca6b3a3a6626ff21176d2"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Crunch assis sur banc avec câble derrière la tête.",
+      "decisionNotes": "Ne représente pas le circuit crunch + relevés + gainage, ni son matériel bodyweight.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "circuit-abdominaux-crunch-releves-gainage",
+          "name": "Circuit abdominaux (crunch + relevés + gainage)",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "path": "/media/ca785b4cf81c98fa.gif",
+      "assetSha256": "ca785b4cf81c98fab635d982878ec672e3effe43efb2ffb6216fce7b64269521",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "ac49fa71e8bb85558ad6bcb36f9c2e5786845201b70f5d805967e0c742a81231"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "07a2a060fcc3e7e8f78fd5b16d16a9177e78df88b091fe17123e9286ae002d61"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "061348d50a72626c4e800f75252907173df15b66e5f1e313bea5d3ea1e648a9d"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "0a168a09b07afc0eeec4d15891f588e9d9c70d992c8495e65e7dc08ce187ccd6"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "dfb8b35b9021449e86c13fde75b202b3bbff034d622e75044d5682047f46246a"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "ef5a2068908184a652e949f949a4dfb2ca373d39e2fab3c23d470a0d9fb7be6f"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "4c4c80bad8964476f3068a279d0d8529286503f95ace39958a8bee1960d5670b"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "dec1722241233a39bcd3cc9a0709acbe46ce4a80e1959dbac8673f8086ae8d49"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "dfb8b35b9021449e86c13fde75b202b3bbff034d622e75044d5682047f46246a"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "981fbaf5548b12407285a3ac3e9ee85618ebb032b90c5fbc900569d3791940bf"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "061348d50a72626c4e800f75252907173df15b66e5f1e313bea5d3ea1e648a9d"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "d570a8c427ff19b489f2452b85f6b2cd6efe4ff46b2a17b4dd6c96fb6dcf0259"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Tirage vertical assis à la poulie, barre large vers la nuque.",
+      "decisionNotes": "Pas un face pull debout, ni un mouvement avec bande.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "face-pull-a-l-elastique",
+          "name": "Face pull à l'élastique",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "face-pull-a-la-poulie",
+          "name": "Face pull à la poulie",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "path": "/media/cd0cc940608ac100.gif",
+      "assetSha256": "cd0cc940608ac100aac60a2f2f4d501d64cedb5de1402c84b5bc39b502d9f99a",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "8ae5cb943535aa04dc50545b813b6905146403176f1112d02f07462409e175a0"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "5185f42e57e415f3e1453d58f515b405ab4c1919fbbc4ff8d9ee1f09ba112189"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "2056e32d2fd69a02054b1245e51a4f3764734fb8c62aac4129571dd88868c023"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "223012e0f12fb0703c57ce9fd73b165c7863efc1a1d674b71eb842f9e9cdc344"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "d82592f3854a4e509094801dba7398d57fc6e1a0b01946ea30536f44b3e59fa5"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "a02366a171fd5c7cbf1e2f094cc2cb63eb24657772bd2e8b0bd6704b28302b0d"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "cf7ae49a98784720b873b637943f98aa6bf4f8ac81f843fe646851aa43bdca4d"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "5683a65ddf94a805f1cad22520df543548a6d77bcb7263104e18320c5c32aca5"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "d82592f3854a4e509094801dba7398d57fc6e1a0b01946ea30536f44b3e59fa5"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "8b7b4c80f3f36ad124189402a15188d64e0b50dd77ba26e8eda5ff7a4bcef728"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "2056e32d2fd69a02054b1245e51a4f3764734fb8c62aac4129571dd88868c023"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "b0a01be2f7d525a4f2d2722047a88da3172c2a071a44b642c655878dbe00bcc4"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Élévations latérales debout avec deux haltères.",
+      "decisionNotes": "Mouvement de base cohérent. Les mini-séries myo-reps relèvent du programme, pas de l’identité du geste.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "elevations-laterales-halteres",
+          "name": "Élévations latérales haltères",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "elevations-laterales-halteres-myo-reps",
+          "name": "Élévations latérales haltères — myo-reps",
+          "status": "basic-movement-corresponds"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "path": "/media/cf312b839f6da027.gif",
+      "assetSha256": "cf312b839f6da0278116b3cdecaa76cc3d2483abfd5764041059289cfd4edd7b",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "0a424feb7bbb2f462c80850c30a1e84c9c5a29888f3793d690666dba385aaa27"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "ebc0bcfccb3cd50e882223c44f7625110cfe4dc28f12542355fb30e1b6256f1a"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "7eaca4e2de84e485fa5235c32453e81d754a0e96700626263ef4219a809804f4"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "6475a0bb4132d16af468e93e9b30b7afad66a01f27fe4082a89379cca4e3cf2f"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "e34558906ef198595eced6af3d20f02eb748ca60ec5bb344250f7696464026e4"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "78a42626240788872dc36cce6864216b6e940ab03b99d215138d483fc171bcaa"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "7e74e1b25572f8a9e9beee4ebbc2fd2a9d52c08058378c8127284aab44d3a8b5"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "1556e3db9cc399a2d60362ccb2007ad30545d0b4e01bc86f19ec156628f66360"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "e34558906ef198595eced6af3d20f02eb748ca60ec5bb344250f7696464026e4"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "10af3e9227b84a2bbaea8e1de9eeaeba2d40afcf6940e98aba1b33e6c8087b52"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "7eaca4e2de84e485fa5235c32453e81d754a0e96700626263ef4219a809804f4"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "9b4c651b406c4d3f3d1dba383d8a19b6de279099a796f3e49a7af0dd1d2684a0"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Fente bulgare avec deux haltères, pied arrière sur banc, pied avant au sol.",
+      "decisionNotes": "Pas hip thrust ; pas pied avant surélevé ; pas barre ni poulie. Garder la source pour les bonnes variantes.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "bulgarian-split-squat",
+          "name": "Bulgarian split squat",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "hip-thrust-unilateral-1-jambe",
+          "name": "Hip thrust unilatéral (1 jambe)",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "hip-thrust-unilateral",
+          "name": "Hip thrust unilatéral",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "bulgarian-split-squat-halteres",
+          "name": "Bulgarian split squat haltères",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "fentes-bulgares-pied-arriere-sureleve",
+          "name": "Fentes bulgares (pied arrière surélevé)",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "fentes-bulgares-halteres-pied-avant-sureleve",
+          "name": "Fentes bulgares haltères (pied avant surélevé)",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "split-squat-poulie-basse",
+          "name": "Split squat poulie basse",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "split-squat-barbell-pied-avant-sureleve",
+          "name": "Split squat barbell (pied avant surélevé)",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "path": "/media/d06257e45606b033.gif",
+      "assetSha256": "d06257e45606b033cb7d47be0e1c485ac608b622bd0891085f27fc28b7c2241c",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "7785add01343d3c22dcac163b5c614e0ef60c98a4e5f4704ad3a45e9ffb820c1"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "f8655c46f86ff5e42661cf3c02dbae12e33cd329ff643a344205aedbad46e792"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "1a9be8ee880ffabb7d4e85c427a0e90889f0012008f257de15d5611d618f2f3e"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "a5b450df697601241cac81d398ffc51abdf6278562b1439accb4413698606f0e"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "3f7e3c22c3c1397bc52bf25a01ccbb1ed62c5551ebd24a94b019322104e387b6"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "fcb778f144ccd0d61ff36fb916bc4f8d1c702a436423862220f0a7a08be7f481"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "c51717c783da9ecc3ea54285d620fdee2add7e4ef5f2a5b564a9a280958b094d"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "7bb672d75684abe00dc142be6d69ad11808202326a2936253e1fac71f14dbd5a"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "3f7e3c22c3c1397bc52bf25a01ccbb1ed62c5551ebd24a94b019322104e387b6"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "22a6ad4fd5ec8503262cf1b530f765bd85da1a46c031f3c2a34ae23434ca9d61"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "1a9be8ee880ffabb7d4e85c427a0e90889f0012008f257de15d5611d618f2f3e"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "73bdac5be817a06622b2e9f6f3b7e13406877f73dd6d42b21eedf88d5987eb1f"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Planche latérale avec élévation de jambe, autre vue.",
+      "decisionNotes": "Aucune association musculation dans cet inventaire ; pas de réaffectation automatique.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": []
+    },
+    {
+      "number": 41,
+      "path": "/media/d9c88be0658a81af.gif",
+      "assetSha256": "d9c88be0658a81af8a1674bcac3feee1f2d55984ee3e7fad7d18e12cc773d860",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "4bca2622570901c3d11f91aad11f5893d861f4b6b713f82249f7afabb53e2dd0"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "a67f2029421f69139c7e1f475770e402aab9de5e29d41861985cabb20b7991c9"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "b3650efedd2f19b8a57710223c1505f912f532345e5488e66809879ebc2f5310"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "4b6677d633b383f3363fd8ee9da93033fdb518e4d1a517c47dba3c9973e1d538"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "a537d981ec74906a2de23d2d4b3192c8654860493906b79cccd1d751e8da86aa"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "896624cb4f5ec918ad4c0ace57e0a84f5cbb34d4f19969012f220184797dea8c"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "6dbd4beeff4ed1e487f6a14f2dfcf3b7ddce8cb935d8b53cfad036c69005446d"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "1642408b4f5599dcb69145c1086ca6560f08e0e554058c9c72e7718624d28bef"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "a537d981ec74906a2de23d2d4b3192c8654860493906b79cccd1d751e8da86aa"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "f9ca4eaa31798053478eae229c36776a9461cce980a783be3a3b22ca60fd4f2e"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "b3650efedd2f19b8a57710223c1505f912f532345e5488e66809879ebc2f5310"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "7a917aed773c3f857c6f83c28cff67fb9f547a6ff10d88c874b0253eb2c0f499"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Développé épaules assis avec deux haltères.",
+      "decisionNotes": "Pas développé un bras debout. Prises neutre/pronation et rotation à revoir en détail.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "developpe-militaire-halteres-assis",
+          "name": "Développé militaire haltères assis",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "developpe-militaire-halteres-assis-test-3-5-reps",
+          "name": "Développé militaire haltères assis — test (3-5 reps)",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "developpe-halteres-assis-neutre-pronation",
+          "name": "Développé haltères assis, neutre→pronation",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "developpe-haltere-un-bras-debout",
+          "name": "Développé haltère un bras debout",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "developpe-halteres-assis-prise-neutre",
+          "name": "Développé haltères assis, prise neutre",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "path": "/media/e56d7d8feec13a3a.gif",
+      "assetSha256": "e56d7d8feec13a3a370ead3190fef2d36e5538500cf53ba51b31525166ebfe4f",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "0868ae72880e451e08bb6551bad13e2d8cde168a939c99264f0e8a092f90d363"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "9c8cf874cb989fa43bed1c8c0d2a051d1ee929f06ad558864540a5ed3fa61429"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "1258337dc62fae4e6c20fd216592fa3c19e1ec994b047f5cb81c9ae02aabdeb1"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "e05cd2466d20e1d15a89b451d24f51d91c3bafbea1107cc6f60a65043a3362f5"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "d43a69067eec49a64fc255362059bf085b7084cf98d0fe4a8bfba2e06ef298af"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "e0959c6abde0c8a5b4e7ae6318e3e8611e4bdc8e5667f2dba8b2b52dbb937744"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "bae1612c3a902f13d02141515d0ac132973d8970acfdf364e078e45d5b9d52e6"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "f5ae796d8fad9330d625d4e50d7092a05aad998f60849476459ab977ba1dcbd8"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "d43a69067eec49a64fc255362059bf085b7084cf98d0fe4a8bfba2e06ef298af"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "46f4aca64e1ceb0e01e44fe427c0900a3abf0e7c4b07d68a456de788caa6d221"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "1258337dc62fae4e6c20fd216592fa3c19e1ec994b047f5cb81c9ae02aabdeb1"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "fe93410689833c23bc1fcc2cfcaa7e5fdb2ccc12f0d3c8cdd9bef22fb17a4843"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Planche latérale dynamique avec pieds sur un banc, appui sur avant-bras au sol.",
+      "decisionNotes": "Variante pieds surélevés, pas nécessairement le gainage au sol demandé. Ne pas confondre avec vertical en piscine.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "gainage-lateral",
+          "name": "Gainage latéral",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "gainage-lateral-dynamique",
+          "name": "Gainage latéral dynamique",
+          "status": "variant-review-required"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "path": "/media/e5f17140d8d97591.gif",
+      "assetSha256": "e5f17140d8d97591cd6bba644ca8e65a0dc384d29fa8a7224b444ca15fd095fa",
+      "frameCount": 24,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "438f59b3945b30acce91108d890bfb1c91322dd0c1f3fa61494a726d6b633a2b"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "ceac19f345ab8f00914f1d3e14d7e184287bd758294b55bd2f914c05e1fffc10"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "d537d9f39f27225f98d580d13a3842edfe7d2840fdf51409d5eab9f1e6158d66"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "4faaddc8ce17150ed820c76be5c0605b9bdb5dcbdc0672c1b998153a988bd2d6"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "5d882500f2f83ac460f7e8093b83b54aef466cd36eeb28f1513eb04093df2e98"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "abd02bb7bd4da0532a28cdaefc7035cb07861955220cbecd22a168cac17a9b6e"
+        },
+        {
+          "index": 6,
+          "durationMs": 500,
+          "rgbaSha256": "d7c6eea9c160d67c645e6cc7a8849d71e889d153c6d44d858f1620ce1382b316"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "0cc6eff3f73f8765a08d2aeb6b0861826b1047ec72f7ecb0ecdbc092036f7c64"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "99acb239771188c8bf801b8e6d97956822703e433fbb9216d7c9095e1bcbf760"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "e19656e0a0ab10b989f90d67982cd916097782b0635f4debd2430d93f92b3e66"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "1ab6e85aee5b5739409c1732c7ead4df5c8f358336fdf090008b326f789b255f"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "23ed3e174e0a4b1e78f588059f9df76373a55d5b77c0aeb30a7d77a211e7b316"
+        },
+        {
+          "index": 12,
+          "durationMs": 500,
+          "rgbaSha256": "881a51122a5f91d64e1b668f4f882e5c4ebbefbe14c3fc63493e93ca29d1905e"
+        },
+        {
+          "index": 13,
+          "durationMs": 100,
+          "rgbaSha256": "ca6226f039247b567917de7e55117dbdce7aa6ba4979669272438cf876dea825"
+        },
+        {
+          "index": 14,
+          "durationMs": 100,
+          "rgbaSha256": "d2d92246fe8053a202a6314af596af2a773395dc78b8ce739c4ba0c5648c8243"
+        },
+        {
+          "index": 15,
+          "durationMs": 100,
+          "rgbaSha256": "dd02ad1fc0755286ebc0944cd485cb17d076a933eb5a39c765a4714740832749"
+        },
+        {
+          "index": 16,
+          "durationMs": 100,
+          "rgbaSha256": "d23f9344a21f2be9a75aef4fbb66f9dd2392529b064cfa89a20c94dd25e6fe5c"
+        },
+        {
+          "index": 17,
+          "durationMs": 100,
+          "rgbaSha256": "4722321ec1c45154abf200b945e3a75655decbf28d2232775d41f4974f424176"
+        },
+        {
+          "index": 18,
+          "durationMs": 1000,
+          "rgbaSha256": "46c90313c2368ed0fdbca082fb3a436728f6dff21e103915aa48dbd6ee24f9f1"
+        },
+        {
+          "index": 19,
+          "durationMs": 100,
+          "rgbaSha256": "4f7ed8a68194ec21693b83b69bee91b44a86741055e4c5414af9df61d71b305a"
+        },
+        {
+          "index": 20,
+          "durationMs": 100,
+          "rgbaSha256": "60393e139057a74214c58be93f32b57d6625adf7ae09772e81f748673911c5a3"
+        },
+        {
+          "index": 21,
+          "durationMs": 100,
+          "rgbaSha256": "1b4cc74c67bf262fabbda5845f56dbbd0078ce9d72865028200dbc3138a4da5b"
+        },
+        {
+          "index": 22,
+          "durationMs": 100,
+          "rgbaSha256": "446d827db1333fe5956f5fc89ba5ff9f0ed88a8b9e70cdc4e1ae7df59532bfe6"
+        },
+        {
+          "index": 23,
+          "durationMs": 100,
+          "rgbaSha256": "ddbffb62053d195b95325d2e61964d4650455cb176ad8aa8974680ec307e98f9"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Pont maintenu haut avec levées alternées des jambes (marche en pont).",
+      "decisionNotes": "24 images : pas de redescente bilatérale à mi-course puis remontée correspondant aux répétitions 1,5.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "glute-bridge-en-1-5-reps",
+          "name": "Glute bridge en 1,5 reps",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "path": "/media/f1dde35bd517f24b.gif",
+      "assetSha256": "f1dde35bd517f24b2fdba8f8f3823251f18f583236ea0f1229de5d3de748edf5",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100,
+          "rgbaSha256": "7723fe835ef89fba016a5a65979b774be771b9a9ae65e3393d1049ca281d6b31"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "48ebc9a0ea4afe399707dd73e7df51e3ea41affbd9e4c5f89db2529059a09ee2"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "d66427260b6b335a949dd11cb531db3013faebb7c7732562d578f5970718b4fe"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "d6c4b4686fa0c8fd686594679aac914d389e8e6269892c5e6f82470bd6b7c037"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "72d92e006f01b3c347243b10aab0d992aef2cdf1d0802a662c41a477b2854c8a"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "18624a47450926b992e26ba19540d538cae73b341439dd49d61909e8c22e4d0e"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "9f88d295f962a80f73864d8d75178ca08131b4174b6767837a99d70f63249e69"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "fc78bd61d53b22a456e97c1eaba6519424ffe9b6b560ea68603222eeacd7aed9"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "72d92e006f01b3c347243b10aab0d992aef2cdf1d0802a662c41a477b2854c8a"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "ea44c6ed996eb24c12f00d6904295d77cc1bbdd297bca35eb028373330cedf04"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "d66427260b6b335a949dd11cb531db3013faebb7c7732562d578f5970718b4fe"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "53e276e40d7b518a982cc93dfab726e0308f2635084b7aebae3cef710c6627cc"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Gainage latéral incliné en appui du bras sur un banc.",
+      "decisionNotes": "Pas le gainage vertical debout au bord du bassin.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "piscine",
+          "name": "Gainage au bord (vertical)",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "path": "/media/f73444e9dc2fee89.gif",
+      "assetSha256": "f73444e9dc2fee896e9b54d3370b5d181994f222c684edaf02b13bc626f51594",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "c123c195b7c771a280dc4a7dafd1f09500062657c8e63c6dbf616a78070bb875"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "c3339f065d7a0a7c4d3a229c365883a90f7c148c6c2ec4e0788d78d6edfb460c"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "6e04351d9aa676cfa07126cf3ccdb781c830c6ef286426a14ab31d8df5636f80"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "f33ae1dff3d2bb2425f3eac1a4058fd17335b52ae0f4a69f2842dd2c6412501a"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "b3f46a9ccc16c5a742a65dca6db0f3d2d251e17828858d0c83ef7defd267e6f5"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "1eae1c1f3e34395c26c8961c46253bfb748cb8720a1ab7a8a3d2f1976f434619"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "bb329b97f4ff5ac2c157a28b20bb3a614a74efb4b5efce4f66e2cc8d1735f696"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "98c027d20123c4c7b530ff9fe137afbf691857b580fa36ac73c0ba49cced8d2b"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "b3f46a9ccc16c5a742a65dca6db0f3d2d251e17828858d0c83ef7defd267e6f5"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "bae7de77f80be91f3030cdf498baac014328b2e3488ea081ab1d7b583ca61e1c"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "6e04351d9aa676cfa07126cf3ccdb781c830c6ef286426a14ab31d8df5636f80"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "c5de9fbaca365c383287c1cb6a467d5281af08dd36d36174125491602ccef540"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Ouverture/fermeture des cuisses assis sur machine d’abduction.",
+      "decisionNotes": "Pas élastique ni clamshell ; pas de répétition 1,5 visible. Conserver pour abduction assise machine.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "musculation",
+          "id": "abduction-assise-machine-ou-elastique",
+          "name": "Abduction assise (machine ou élastique)",
+          "status": "variant-review-required"
+        },
+        {
+          "scope": "musculation",
+          "id": "clamshell-a-l-elastique",
+          "name": "Clamshell à l'élastique",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "abduction-hanche-a-l-elastique",
+          "name": "Abduction hanche à l'élastique",
+          "status": "mismatch"
+        },
+        {
+          "scope": "musculation",
+          "id": "abduction-assise-machine",
+          "name": "Abduction assise machine",
+          "status": "basic-movement-corresponds"
+        },
+        {
+          "scope": "musculation",
+          "id": "abduction-assise-en-1-5-reps",
+          "name": "Abduction assise en 1,5 reps",
+          "status": "mismatch"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "path": "/media/faa82528766b9402.gif",
+      "assetSha256": "faa82528766b9402291e4e1d1f67f8cd9d816769c0bf84b6f200def226d77c5b",
+      "frameCount": 12,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 1000,
+          "rgbaSha256": "76ad7532088ab846e9637f2f364b1e64eeccc17d519c25f3df49d30b46f10971"
+        },
+        {
+          "index": 1,
+          "durationMs": 100,
+          "rgbaSha256": "111419d1aaa8473b5230dccd2d59dcd3d5e8a38ab1afae9c6ea8d911acb4534f"
+        },
+        {
+          "index": 2,
+          "durationMs": 100,
+          "rgbaSha256": "c3c157da67c48df25e5d8eb2e09a61d26e3920ac6257669b327057dfb3e4784c"
+        },
+        {
+          "index": 3,
+          "durationMs": 100,
+          "rgbaSha256": "c1007bf755c3c0667d7456a35d60a95452ebf9d610f7c0f461423805061ec2db"
+        },
+        {
+          "index": 4,
+          "durationMs": 100,
+          "rgbaSha256": "c44ca727f811a9edb2d3e376154046634a58ad09de1aa06b34cfa704f95c8b0b"
+        },
+        {
+          "index": 5,
+          "durationMs": 100,
+          "rgbaSha256": "a0a6634e759576fb730a0175d5f24d4408624f68ba55ae8490671540514ed125"
+        },
+        {
+          "index": 6,
+          "durationMs": 1000,
+          "rgbaSha256": "fafad6deb5e32e0c67b513e8fb8746d6d84e91bc22129b249080349c212ab3b2"
+        },
+        {
+          "index": 7,
+          "durationMs": 100,
+          "rgbaSha256": "43264f6f14b4ee5e70b5c02e207afbf2aa688447a7e69c17ecba1a8d6b3ab3fc"
+        },
+        {
+          "index": 8,
+          "durationMs": 100,
+          "rgbaSha256": "c44ca727f811a9edb2d3e376154046634a58ad09de1aa06b34cfa704f95c8b0b"
+        },
+        {
+          "index": 9,
+          "durationMs": 100,
+          "rgbaSha256": "2a14b5ce0f8ae0f0fa26b04b48b84d9737f3d161d305772d266726d437037b6c"
+        },
+        {
+          "index": 10,
+          "durationMs": 100,
+          "rgbaSha256": "c3c157da67c48df25e5d8eb2e09a61d26e3920ac6257669b327057dfb3e4784c"
+        },
+        {
+          "index": 11,
+          "durationMs": 100,
+          "rgbaSha256": "fcbef7f0afbffcee5f40cb27ddfa72273820927add9caa9956e8fdf24c73d062"
+        }
+      ],
+      "reviewMethod": "all-frames-contact-sheet-reviewed",
+      "reviewedFrameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "enlargedReview": false,
+      "observedMovement": "Flexion du genou allongé sur le ventre, câble attaché à une cheville.",
+      "decisionNotes": "Leg curl à la poulie au sol, pas mobilité hanches/chevilles aquatique.",
+      "playbackInAllAppSurfaces": "pending",
+      "clinicalTechniqueCertification": false,
+      "sourceDisposition": "retain-original-do-not-globally-replace",
+      "associations": [
+        {
+          "scope": "piscine",
+          "name": "Mobilité hanches / chevilles",
+          "status": "mismatch"
+        }
+      ]
+    }
+  ]
+}

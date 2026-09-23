@@ -1,0 +1,15 @@
+{
+  "status": "candidate-only-not-release",
+  "overrides": [
+    {
+      "id": "pont-fessier-au-sol-activation",
+      "name": "Pont fessier au sol — activation",
+      "baselinePath": "/media/0766d3a06bf79dc8.gif",
+      "path": "/media/8eecb0152081ff26.gif",
+      "assetSha256": "8eecb0152081ff26fc29f4ecccb779e99ac42f8aec7cfbed46fc6c0ccfb21a31",
+      "level": "exact",
+      "review": "review/long-animations.json, clip 25: all 12 frames, enlarged review; bilateral bodyweight floor bridge, no bench",
+      "preservation": "Existing packaged anatomical GIF unchanged; exercise definition/instructions unchanged; glute-bridge-pieds-sur-banc remains on its existing bench GIF"
+    }
+  ]
+}

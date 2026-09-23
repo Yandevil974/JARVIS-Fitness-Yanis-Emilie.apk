@@ -3,17 +3,65 @@
   "status": "scoped-web-candidate-not-release",
   "releaseReady": false,
   "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "candidateBundleSha256": "75f39ae838c5ae7fc96b624f4f21ed4b960820590226d814de03ca86ce4b0107",
-  "integrity": {"packagedWebFiles": 272, "unchangedWebFiles": 271, "changed": ["assets/public/assets/index-CBCies4k.js"], "unchangedDeliveredApk": true, "unchangedOtherTopLevelStatements": true},
+  "candidateBundleSha256": "b5ab9b5570c00b7842d202ae8fb03fd23ef2c9f80f6f5046393a74aa9663d47f",
+  "integrity": {
+    "packagedWebFiles": 272,
+    "unchangedWebFiles": 271,
+    "changed": [
+      "assets/public/assets/index-CBCies4k.js"
+    ],
+    "unchangedDeliveredApk": true,
+    "unchangedOtherTopLevelStatements": true
+  },
   "tests": {
-    "node": {"passed": 17, "baselineCharacterization": 9, "candidate": 8},
-    "targetedBrowser": {"passed": 6, "failedInFinalRun": 0, "wholeFinalRunSeconds": 51.6, "test": "evolution/media/tests/pool-candidate.spec.mjs"},
-    "existingHomeBrowser": {"passed": 8, "failed": 0, "wholeRunSeconds": 57.6, "test": "evolution/home/tests/home.spec.mjs", "reference": "unchanged web extracted from signed 1.4.0"},
+    "node": {
+      "passed": 22,
+      "baselineCharacterization": 9,
+      "candidate": 9,
+      "reviewTraceability": 4
+    },
+    "targetedBrowser": {
+      "passed": 8,
+      "failedInFinalRun": 0,
+      "wholeFinalRunSeconds": null,
+      "test": "evolution/media/tests/pool-candidate.spec.mjs",
+      "reportedDuration": "1.0m",
+      "scope": "six pool-context scenarios plus two floor-bridge detail/animation/pause and bench-preservation scenarios"
+    },
+    "existingHomeBrowser": {
+      "passed": 8,
+      "failed": 0,
+      "wholeRunSeconds": 58.6,
+      "test": "evolution/home/tests/home.spec.mjs",
+      "reference": "unchanged web extracted from signed 1.4.0"
+    },
     "browser": "Chromium 138.0.7204.0",
     "physicalAndroidTest": false,
     "full90DeliverySuiteRerun": false
   },
-  "openFindingGroups": 26,
-  "limitations": ["No APK built or signed", "No missing media supplied by this patch", "Generic aquatic recovery remains an explicit unresolved gap", "Legacy aquatic images are not all semantically correct", "Old mixed timers without a segment are not guessed", "Exact user phone route not reproduced"],
-  "privateSigningDirectoryAvailable": false
+  "openFindingGroups": 36,
+  "limitations": [
+    "No APK built or signed",
+    "No missing media supplied by this patch",
+    "Generic aquatic recovery remains an explicit unresolved gap",
+    "Legacy aquatic images are not all semantically correct",
+    "Old mixed timers without a segment are not guessed",
+    "Exact user phone route not reproduced",
+    "Floor-bridge library card still uses anatomical fallback; not all surfaces corrected",
+    "Generic bridge instructions still mention bench/ground and load; precision per exercise pending"
+  ],
+  "privateSigningDirectoryAvailable": false,
+  "previousPoolOnlyBundleSha256": "75f39ae838c5ae7fc96b624f4f21ed4b960820590226d814de03ca86ce4b0107",
+  "reviewedLongAnimations": {
+    "clips": 46,
+    "frames": 588,
+    "method": "ordered contact sheets, not full real-time playback",
+    "associations": 102,
+    "mismatch": 58,
+    "variantReviewRequired": 23,
+    "basicMovementCorrespondsNotFinalApproval": 21
+  },
+  "candidateExerciseOverrides": [
+    "pont-fessier-au-sol-activation"
+  ]
 }

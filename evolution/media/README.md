@@ -2,7 +2,19 @@
 
 **Mis à jour le 23 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
 
-## Avancée suivante — candidat ciblé et continuité vérifiée
+## Dernière avancée — revue longue tracée et premier GIF correctement réassocié
+
+**46 animations longues / 588 images internes examinées** sur planches complètes ordonnées, dont quatre animations revues en agrandissement. Ce n’est pas une validation clinique ni une lecture réelle de chaque animation dans toutes les vues. Registre avec hachages, indices et décisions : [review/long-animations.json](review/long-animations.json) ; compte rendu lisible : [review/REVIEW-ANIMATIONS.md](review/REVIEW-ANIMATIONS.md).
+
+**102 associations contrôlées dans ce lot** : 58 écarts, 23 variantes encore incertaines, 21 gestes de base cohérents (pas une acceptation finale). Dix nouveaux groupes précis : **36 groupes ouverts au total**. Exemples : kickback triceps à la place du fessier, adduction à la place de l’abduction, mouvement bilatéral pour unilatéral, marche en pont pour répétitions 1,5. Les cas ambigus restent distincts des erreurs certaines.
+
+Un [registre de couverture des 209 exercices](review/exercise-coverage.json) indique les revues, corrections et attentes, sans oublier les non-revus. Il ne prétend pas remplacer le contrôle des autres catégories inventoriées.
+
+**Candidat cumulatif :** la protection piscine reste intacte ; seul `pont-fessier-au-sol-activation` reçoit maintenant son GIF de pont au sol déjà présent dans l’APK. Le vrai pont pieds sur banc conserve son visuel. Aucun changement binaire de média, aucune réécriture des exercices. La carte bibliothèque anatomique et les consignes génériques de ce pont restent à préciser : le groupe n’est pas clos.
+
+**22 tests Node + 16 parcours navigateur réussis** sur le nouveau candidat (8 ciblés, dont 2 de lecture/pause du pont, et 8 accueil/11 rubriques). 271/272 fichiers web inchangés, APK publié intact. Rapport courant : `candidate/validation.json`. Pas de nouvel APK signé, pas de test physique Android. La passation est actualisée et présentée à chaque étape.
+
+## Étape précédente — candidat piscine seul (historique)
 
 L’utilisateur demande de **continuer dans ce chat** et de **lui remettre la passation à chaque étape**, sans « démonter » l’application. Premier correctif préparé à part : [candidate/README.md](candidate/README.md), rapport [candidate/validation.json](candidate/validation.json).
 
@@ -28,7 +40,7 @@ Signalement utilisateur enregistré dans `pool-recovery-to-cardio` : **26 groupe
 
 ### Point de reprise après interruption
 
-Les planches des 16 premières animations longues ont été affichées dans l’échange interrompu, mais aucun registre de validation complète n’a été conservé. Ne pas annoncer les 46 animations longues/588 images entièrement validées. Le script et les planches temporaires de cette tentative ne sont pas présents après la réinitialisation ; poursuivre à partir des inventaires persistés et consigner les décisions par média/association. **Aucun correctif de production ni nouvel APK à cette étape.**
+Historique : les 16 premières planches de la tentative interrompue n’avaient pas de registre sauvegardé. Ce point a été repris : le script `review_frames.py` est maintenant versionné et la revue des 46 animations est tracée dans `review/long-animations.json`. Ne pas confondre cette revue sur planches avec la validation finale des animations en situation. **Aucun correctif de production ni nouvel APK à cette étape.**
 
 ## Résultat à ce stade
 
@@ -54,7 +66,7 @@ Les planches des 16 premières animations longues ont été affichées dans l’
 - **Gainage vertical au bord**, mobilité aquatique, ciseaux et talons-fesses : plusieurs images montrent un autre geste à sec.
 - **Étirements** : marche/mollet illustré par un appui au mur ; triceps dans le dos illustré bras baissés ; flexion assise illustrée debout ; autres divergences recensées.
 
-Les **26 groupes de constats ouverts** sont documentés dans [review/findings.json](review/findings.json). Ils ne constituent pas une promesse qu’il n’existe aucune autre erreur.
+Les **36 groupes de constats ouverts** sont documentés dans [review/findings.json](review/findings.json). Ils ne constituent pas une promesse qu’il n’existe aucune autre erreur.
 
 ## Comparaison avec les versions fournies
 
@@ -70,7 +82,7 @@ Référence actuelle : APK signé 1.4.0, SHA `30b20ce10ddc9bfeadee3590816f1f3d03
 
 - Données extraites **en exécutant le bundle de l’APK signé**, pas depuis le composant React historique `src/components/Movement.jsx`.
 - 137 médias d’exercice inventoriés : **94 GIF animés et 43 images fixes**. Les 727 images internes ont été décodées sans erreur, avec tailles/durées/hachages enregistrés.
-- Planches visuelles des première et médiane images de ces 137 médias examinées. Pour les 48 GIF à deux images, cela couvre leurs deux images, notamment les dips. Les fichiers à 12/24 images demandent encore une inspection visuelle complète avant validation définitive.
+- Planches visuelles des première et médiane images de ces 137 médias examinées. Pour les 48 GIF à deux images, cela couvre leurs deux images, notamment les dips. Les 46 fichiers à 12/24 images ont depuis été examinés sur planches intégrales (registre dédié ci-dessus) ; leur validation complète par association et surface reste à faire.
 - Analyse des résolveurs, du générateur d’échauffement et du minuteur. La recherche par mot-clé sans contexte explique les conflits Tabata/piscine.
 - **9 tests de caractérisation/provenance de l’audit réussis au 23 septembre.** Ce ne sont pas des tests attestant une application corrigée, ni une validation clinique de technique sportive.
 

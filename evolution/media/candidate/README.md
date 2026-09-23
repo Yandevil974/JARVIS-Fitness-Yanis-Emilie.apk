@@ -1,6 +1,12 @@
-# Candidat ciblé — frontière piscine/cardio (non livré)
+# Candidat ciblé — piscine/cardio et pont au sol (non livré)
 
 23 septembre 2026. Continuité de la **1.4.0 complète**, sans reconstruction depuis l’ancienne interface React, sans nouvelle signature ni APK. La 1.4.0 publiée est conservée intacte.
+
+## Nouvelle réassociation contrôlée
+
+`association-overrides.json` cible uniquement **`pont-fessier-au-sol-activation`**. Après revue des 12 images et agrandissement du GIF existant `/media/8eecb0152081ff26.gif`, `Kh` le retourne pour le pont au sol. Le vrai exercice pieds sur banc conserve son ancien visuel. Aucune définition, charge, consigne, séance ou image binaire n’est modifiée. Le build vérifie identifiant, nom, ancienne association et SHA du média réutilisé. Les 208 autres résolutions d’exercices restent identiques.
+
+**Portée limitée :** fiche et composants passant par `Kh/s5/gi`. La vignette de bibliothèque utilise encore `k.gif` et reste anatomique pour cet identifiant. Les consignes génériques bridge mentionnent encore banc/sol et charge ; les images directes ou chronos enregistrés sont à traiter séparément. Pas de promesse de correction sur toutes les surfaces.
 
 ## Ce qui change, uniquement dans le candidat web
 
@@ -15,7 +21,7 @@
 
 - SHA de l’APK et du bundle 1.4.0 exigés ; refus d’un autre APK, d’un bundle modifié ou d’une double application du correctif.
 - **271/272 fichiers web strictement identiques**, seul `assets/public/assets/index-CBCies4k.js` change.
-- Comparaison AST : toutes les autres instructions de premier niveau sont identiques octet pour octet. Seuls `bg`, `v5` et le helper isolé diffèrent ; catalogue, accueil, moteur des chronos, fonctions des sept étapes inchangés.
+- Comparaison AST : toutes les autres instructions de premier niveau sont identiques octet pour octet. Seuls `bg`, `v5`, `Kh` et le helper isolé diffèrent ; catalogue, accueil, moteur des chronos, fonctions des sept étapes inchangés.
 - Tests vérifiant les 420 étapes piscine sans sélection cardio. Cette propriété est une séparation de contextes, **pas une certification anatomique**.
 - APK livré inchangé ; aucun outil de signature n’est appelé. Le dossier privé 1.4.0 reste absent dans cette reprise ; aucune clé créée.
 
@@ -23,11 +29,12 @@
 
 Voir [validation.json](validation.json).
 
-- **17 tests Node réussis** : 9 caractérisations/provenance de la version publiée + 8 tests du candidat, dont intégrité et absence de mutation.
-- **6 tests navigateur ciblés réussis en un passage complet** : deux profils × deux thèmes, ancienne image elliptique dans le chrono piscine, image/consigne/zoom, rechargement, pause/reprise, passage à une vraie étape cardio, persistance et isolation des profils ; cas générique signalé comme incomplet. Données de test fictives, pas de sauvegarde utilisateur.
+- **22 tests Node réussis** : 9 caractérisations/provenance de la version publiée + 9 tests du candidat + 4 tests de traçabilité de revue, dont intégrité et absence de mutation.
+- **8 tests navigateur ciblés réussis en un passage complet** : deux profils × deux thèmes, ancienne image elliptique dans le chrono piscine, image/consigne/zoom, rechargement, pause/reprise, passage à une vraie étape cardio, persistance et isolation des profils ; cas générique signalé comme incomplet. Deux scénarios supplémentaires ouvrent la fiche du pont au sol dans les deux profils, vérifient son mouvement par captures du rendu, sa pause/reprise, puis la conservation du pont pieds sur banc. Données de test fictives, pas de sauvegarde utilisateur.
 - **8 tests navigateur de l’accueil existants relancés avec succès sur ce candidat**, comparé à la 1.4.0 : orbe bleu, rotation, thèmes, priorités du chrono et parcours des 11 rubriques pour les deux profils.
 - Captures de chrono Yanis clair/Émilie sombre examinées : visuel aquatique visible, pas d’elliptique à cette étape. Cela ne remplace pas la revue sémantique de toutes les images.
 - Les premiers passages de la nouvelle suite ont échoué à cause des tests : bouton différent en pause (« Reprendre le chrono »), deux boutons « Fermer », vérification avant écriture différée, puis mensuration fictive incomplète (`values` absent). Sélecteurs, attente de persistance et fixture ont été corrigés ; validation du schéma de la fixture ajoutée. **Aucun changement de code applicatif pour rendre ces tests verts.**
+- Dans cette reprise, les nouveaux tests de fiche ont d’abord ciblé un bouton au lieu de l’onglet Bibliothèque, puis comparé des captures canvas ne reflétant pas la lecture du GIF. Le rôle accessible a été corrigé et la lecture est désormais vérifiée par captures du rendu réel. Les deux tests passent, puis le passage complet de 8 tests ciblés et les 8 tests accueil ont été relancés avec succès. Pas de modification applicative pour contourner ces échecs de tests.
 - Ce ne sont ni les 90 tests complets de livraison relancés, ni des tests Android/Doze/OEM. Aucun nouveau APK testé sur appareil.
 
 ## Reproduction
@@ -53,6 +60,6 @@ Ici : Chromium 138.0.7204.0 fourni par `@sparticuz/chromium@138.0.2`, `/tmp/chro
 
 ## Ce qui reste ouvert
 
-**Les 26 groupes restent ouverts.** Il faut encore compléter les médias manquants, supprimer les mauvaises associations pool/sol dans les autres rubriques, reproduire le parcours exact signalé par l’utilisateur et achever la revue de chaque séquence animée. Les minuteries mixtes anciennes sans segment réclament un traitement explicite, pas une déduction hasardeuse. Ne pas annoncer « tous les exercices corrigés » ni livrer ce seul candidat comme mise à jour finale.
+**Les 36 groupes restent ouverts.** Il faut encore compléter les médias manquants, supprimer les mauvaises associations pool/sol dans les autres rubriques, reproduire le parcours exact signalé par l’utilisateur et achever la validation par association et surface. La revue sur planches des 46 GIF longs/588 images est désormais tracée dans `../review/long-animations.json`, pas assimilée à une lecture réelle sur toutes les surfaces. Les minuteries mixtes anciennes sans segment réclament un traitement explicite, pas une déduction hasardeuse. Ne pas annoncer « tous les exercices corrigés » ni livrer ce seul candidat comme mise à jour finale.
 
-Prochaine étape : revue traçable image par image et table explicite des associations, en conservant les visuels valables ; priorité dips/triceps et récupérations aquatiques. Mettre à jour et présenter la passation **à chaque étape**, en continuant dans ce chat tant qu’il reste utilisable.
+Prochaine étape : poursuivre les corrections exactes et la vérification des associations restantes, en conservant les visuels valables ; priorité dips/triceps et récupérations aquatiques. Mettre à jour et présenter la passation **à chaque étape**, en continuant dans ce chat tant qu’il reste utilisable.
