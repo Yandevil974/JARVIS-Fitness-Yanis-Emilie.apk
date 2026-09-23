@@ -1,5 +1,7 @@
 # Revue ciblée — triceps, dessins courts et vignettes
 
+> Passage précédent. La suite consignes/échauffement et les résultats courants sont dans [REVIEW-WARMUP.md](REVIEW-WARMUP.md) et [validation.json](../candidate/validation.json).
+
 23 septembre 2026. **Candidat web seulement ; APK publié inchangé.**
 
 ## Travail réellement effectué

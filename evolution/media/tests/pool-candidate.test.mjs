@@ -23,8 +23,8 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia'].includes(n.id?.name)&&
-  !n.declarations?.some(d=>d.id.name==='JarvisPoolMedia')).map(n=>text.slice(n.start,n.end));}
+  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia'].includes(n.id?.name)&&
+  !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
 test('420 pool protocol steps cannot resolve to cardio and inputs never change',()=>{

@@ -1,4 +1,4 @@
-# Candidat ciblé — piscine, pont au sol et French press EZ (non livré)
+# Candidat ciblé — piscine, pont au sol, French press EZ et échauffement ciblé (non livré)
 
 23 septembre 2026. Continuité de la **1.4.0 complète**, sans reconstruction depuis l’ancienne interface React, sans nouvelle signature ni APK. La version publiée est intacte.
 
@@ -11,15 +11,17 @@
 
 Provenance : `association-overrides.json`, `../review/long-animations.json`, `../review/short-focus.json`. Les **207 autres résolutions** restent identiques. Ni les haltères, ni la poulie, ni les variantes avec pullover/California press ne reçoivent cette barre EZ par déduction. Plusieurs restent incorrectes : ce n’est pas une validation de ces variantes.
 
-**Pas de nouveaux médias, retouche, miroir, rotation ni photos ajoutées.** Les deux GIF et leurs vignettes WebP d’origine sont réutilisés octet pour octet. Identifiants, noms, anciennes associations et SHA sont contrôlés ; les fichiers effectivement extraits sont vérifiés avant écriture du bundle candidat. Aucun exercice, prescription, charge ou historique modifié.
+**Pas de nouveaux médias, retouche, miroir, rotation ni photos ajoutées.** Les deux GIF et leurs vignettes WebP d’origine sont réutilisés octet pour octet. Identifiants, noms, anciennes associations et SHA sont contrôlés ; les fichiers effectivement extraits sont vérifiés avant écriture du bundle candidat. Aucune définition du catalogue, prescription chiffrée, charge ou historique modifié. Les trois textes de technique du pont au sol sont maintenant précisés en affichage, conformément à sa note source.
 
 ## Surfaces corrigées et limites
 
 - `Kh` consulte uniquement les deux identifiants revus. Les fiches et les démonstrations de séance qui l’utilisent reçoivent le visuel corrigé.
 - `Z5` applique une **copie de présentation**, sans muter le catalogue, pour que les deux cartes de bibliothèque utilisent les bonnes vignettes. Le pont passe du libellé « ANATOMIE RÉALISTE » à « GUIDE HUMAIN » parce qu’il affiche désormais le dessin de son mouvement.
 - `k5` donne priorité à la même association exacte dans l’aperçu **« ENSUITE » du repos** ; le zoom reprend cette image. Séance sauvegardée et minuteur de repos ne sont pas réécrits.
-- **Ce n’est pas une correction universelle des minuteurs guidés** : les images directes `step.img` non aquatiques, les échauffements/approches et les anciens chemins sans identifiant restent à traiter séparément.
-- Les consignes génériques du pont (`Yu.bridge`) mentionnent encore banc/sol et charge ; elles ne sont pas corrigées dans ce passage. Le groupe pont reste ouvert.
+- `Bg` utilise le pont au sol revu pour la phase exacte « Activation fessiers » (10 répétitions / 60 s). Les approches des deux seuls IDs revus utilisent leur GIF ; les autres conservent leur visuel antérieur. Les nouvelles approches portent leur propre `exerciseId` / `mediaRole`, transmis par les deux boutons de lancement dans `j5`.
+- `v5` utilise une copie de présentation pour corriger aussi l’ancienne activation sauvegardée reconnue par **son contexte et sa prescription complète**, pas un simple mot-clé. Pour les approches, l’identité appartient à l’étape : jamais déduite de la séance actuelle, qui peut avoir changé. Aucune migration du stockage.
+- **Pas de correction universelle** : mobilité hanches/chevilles, activation scapulaire, panneau général d’échauffement, 207 autres approches et anciennes approches sans identité restent à traiter. Les libellés d’approche « charge légère à choisir » restent également présents pour le poids du corps : conservés, pas déclarés parfaits.
+- `JarvisTechnique` fournit uniquement au pont au sol ses trois textes précis (épaules au sol, pas de cambrure, 2 s de contraction). `a5` les affiche en fiche ; `$5` les emploie par défaut en séance, **après toute note/tip source explicite**. Le `Yu.bridge` générique et les 208 autres IDs restent identiques. Respiration, erreurs, tempo 2012, prescriptions et note d’origine conservés. Le groupe reste ouvert pour la validation finale, pas à cause de l’ancienne consigne générique désormais écartée de cette fiche.
 - Le French press montre **deux positions clés**, pas une vidéo continue. La lecture/pause est testée, pas une certification clinique ni la fidélité de gel sur l’image exacte courante.
 
 ## Protection piscine conservée
@@ -32,15 +34,16 @@ Provenance : `association-overrides.json`, `../review/long-animations.json`, `..
 
 ## Intégrité et contrôles
 
-Rapport courant : [validation.json](validation.json). Bundle candidat SHA **`148cef273a0e3223cc0c3bdb9bdba320163cf1da7582194fcc746155c46b52e8`**.
+Rapport courant : [validation.json](validation.json). Bundle candidat SHA **`5c041fb8d73a40bf0df0bbec64619ba5b54cc2682b85a0cb123ddcb43f8234c6`**.
 
 - APK et bundle 1.4.0 exigés par SHA ; refus d’un autre APK, d’un bundle modifié ou d’une double application.
-- **271/272 fichiers web identiques** ; seul `assets/public/assets/index-CBCies4k.js` change. Les fonctions `bg`, `v5`, `Kh`, `Z5`, `k5` et les helpers isolés constituent l’unique périmètre AST autorisé. Accueil, catalogue, moteurs de données/chronos et fonctions des sept étapes inchangés. Les deux changements de vues sont aussi comparés exactement à leurs expressions de départ.
-- **26 tests Node réussis** : 9 caractérisations/provenance, 11 candidat, 6 traçabilité. Les 209 résolutions, les copies de présentation immuables, les 420 étapes piscine et les deux vignettes sont contrôlées.
-- **14 tests navigateur ciblés réussis en un passage complet (2,1 min)** : 6 piscine, 4 bibliothèque/fiches/animation, 4 séances sauvegardées/aperçu de repos/zoom/rechargement, dans les deux profils. Thèmes clair/sombre couverts ; données fictives validées par le schéma.
-- **8 tests accueil/11 rubriques réussis (57,9 s)** sur ce même candidat, face au web intact de la 1.4.0. L’option `MEDIA_REVIEW_CANDIDATE=1` autorise uniquement le changement intentionnel du libellé de la carte du pont : les libellés et images précis des deux versions sont d’abord vérifiés, puis cette seule chaîne contextualisée est normalisée. Aucune suppression globale des libellés ; sans option, comparaison historique inchangée.
+- **271/272 fichiers web identiques** ; seul `assets/public/assets/index-CBCies4k.js` change. Les fonctions `bg`, `v5`, `Kh`, `Z5`, `k5`, `Bg`, `a5`, `$5`, `j5` et les helpers isolés constituent l’unique périmètre AST autorisé. Accueil, catalogue, moteurs de données/chronos et fonctions des sept étapes inchangés. Les deux changements de vues sont aussi comparés exactement à leurs expressions de départ.
+- **32 tests Node réussis** : 9 caractérisations/provenance, 17 candidat, 6 traçabilité. Les échauffements des 209 exercices sont comparés sur 1 254 combinaisons charge/incrément ; seuls les images ciblées et les nouveaux champs d’identité diffèrent. Les 209 résolutions, les copies de présentation immuables, les 420 étapes piscine et les deux vignettes sont contrôlées.
+- **20 tests navigateur ciblés réussis en un passage complet (3,2 min)** : les 14 cas piscine/bibliothèque/fiches/séances/repos précédents enrichis de contrôles de consignes, plus 4 parcours échauffement nouveau (deux boutons, fiche/zoom/chrono/rechargement/validation) et 2 activations anciennes sauvegardées, dans les deux profils. Thèmes clair/sombre couverts ; données fictives validées par le schéma.
+- **8 tests accueil/11 rubriques réussis (57,6 s)** sur ce même candidat, face au web intact de la 1.4.0. L’option `MEDIA_REVIEW_CANDIDATE=1` autorise uniquement le changement intentionnel du libellé de la carte du pont : les libellés et images précis des deux versions sont d’abord vérifiés, puis cette seule chaîne contextualisée est normalisée. Aucune suppression globale des libellés ; sans option, comparaison historique inchangée.
 - La capture Émilie sombre du French press a été affichée et examinée : dessin couché avec barre EZ, tête et appuis visibles. Comparatif des deux positions dans `../review/french-press-comparison.jpg`.
 - Les premiers tests de séance ont rejeté la fixture `kg` (convention invalide), puis une injection de fixture en cours de navigation a été écrasée par la sauvegarde au déchargement. Corrigé **dans les tests seulement** : conventions existantes et cas initiaux séparés par exercice/profil, avec vrai rechargement sans modification du stockage. La comparaison accueil a ensuite détecté le libellé du pont attendu ; l’exception précise ci-dessus a été ajoutée. Aucun contournement applicatif pour rendre les tests verts.
+- Dans ce passage : test VM complété avec le véritable PATTERN_INFO source ; sélecteur de vignette corrigé (nom accessible venant de l’image, pas du titre). La collecte simultanée accueil/médias a rencontré un ENOENT de dossier temporaire ; les suites finales passent séparément. **Les lancer séquentiellement.** Aucun changement applicatif pour contourner ces erreurs de harnais.
 - **Ni les 90 tests complets de livraison ni Android physique relancés.** Aucun nouvel APK construit ou signé. Dossier privé de signature toujours absent ; aucune clé créée.
 
 ## Reproduction
@@ -70,4 +73,4 @@ Chromium 138.0.7204.0 via `@sparticuz/chromium@138.0.2`, `/tmp/chromium`, biblio
 
 ## Suite
 
-**36 groupes encore ouverts.** Poursuivre les variantes triceps/fessiers, les dessins des dips, les consignes du pont, puis les échauffements/approches et images directes des chronos. Préserver les visuels valables. Aucun remplacement photographique global autorisé. Les autres catégories et chaque surface restent à valider ; pas d’annonce « tous les exercices corrigés ». Actualiser et présenter `PASSATION.md` à chaque étape. L’IA conversationnelle vient en dernier.
+**36 groupes encore ouverts.** Poursuivre les variantes triceps/fessiers, les dessins des dips et les étapes d’échauffement/approches encore non couvertes, notamment celles sans identité dans les anciens chronos. Préserver les visuels valables. Aucun remplacement photographique global autorisé. Les autres catégories et chaque surface restent à valider ; pas d’annonce « tous les exercices corrigés ». Actualiser et présenter `PASSATION.md` à chaque étape. L’IA conversationnelle vient en dernier.

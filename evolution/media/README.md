@@ -2,7 +2,15 @@
 
 **Mis à jour le 23 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
 
-## Dernière avancée — French press EZ, vignettes et aperçu de repos
+## Dernière avancée — consignes du pont et échauffement ciblé
+
+**Fiche du pont au sol précisée par identifiant**, sans changer la prescription : épaules au sol, bassin neutre et 2 s de contraction déjà prévues. Les variantes sur banc et les notes de programme restent intactes.
+
+**Activation fessiers d’échauffement** désormais associée au bon GIF, y compris dans une ancienne étape sauvegardée reconnue par sa consigne exacte (10 répétitions / 60 s), sans réécriture du stockage. Les approches des **deux seuls exercices déjà revus** suivent aussi le bon visuel ; leur identité est transmise par les deux boutons de lancement, pas déduite de la séance courante. Autres approches/mobilités et anciens chronos sans identité restent incomplets.
+
+**32 tests Node + 28 navigateur réussis** : 20 ciblés et 8 accueil/11 rubriques. Programmes, charges/durées et données conservés ; 1 254 combinaisons d’échauffement comparées. **36 groupes ouverts**, aucun nouvel APK ni test physique Android. [Compte rendu et captures](review/REVIEW-WARMUP.md), [rapport courant](candidate/validation.json). La passation est remise à chaque étape.
+
+## Étape précédente — French press EZ, vignettes et repos (historique)
 
 Relecture ciblée de **13 GIF courts / 26 images**, plus deux vignettes d’origine. [Compte rendu et comparatif](review/REVIEW-SHORT-FOCUS.md), registre SHA [short-focus.json](review/short-focus.json). Les 46 GIF longs déjà revus ne sont pas recomptés comme nouveaux.
 

@@ -88,6 +88,12 @@ for(const profile of ['elite','emilie'])test(`reviewed floor bridge animates in 
  await card.click();
  const image=page.getByRole('dialog').locator('.movement-media');
  await expect(image).toHaveAttribute('src',/8eecb0152081ff26.gif$/);
+ const phases=page.getByRole('dialog').locator('.exercise-phases');
+ await expect(phases).toContainText('épaules au sol');
+ await expect(phases).toContainText('Maintenez 2 secondes en haut');
+ await expect(phases).not.toContainText('sur le banc');
+ await expect(phases).not.toContainText('charge protégée');
+ await expect(page.getByRole('dialog').locator('.source-technique')).toContainText('Activation obligatoire : 2 s de contraction en haut');
  await image.scrollIntoViewIfNeeded();
  await expect.poll(()=>image.evaluate(e=>e.complete&&e.naturalWidth===300)).toBe(true);
  // Capture the rendered GIF: drawImage(animatedImage) can expose its default frame, not the displayed animation.
@@ -103,6 +109,7 @@ for(const profile of ['elite','emilie'])test(`reviewed floor bridge animates in 
  await page.getByRole('textbox',{name:'Rechercher un exercice'}).fill('Glute bridge pieds sur banc');
  await page.getByRole('button',{name:'Démonstration Glute bridge pieds sur banc',exact:true}).click();
  await expect(page.getByRole('dialog').locator('.movement-media')).toHaveAttribute('src',/0766d3a06bf79dc8.gif$/);
+ await expect(page.getByRole('dialog').locator('.exercise-phases')).toContainText('sur le banc');
 });
 
 async function training(page){
@@ -156,6 +163,7 @@ for(const profile of ['elite','emilie'])for(const [id,path,unit,load] of [
   await training(page);
   const re=new RegExp(path+'\\.gif$');
   await expect(page.locator('.exercise-stage .movement-media')).toHaveAttribute('src',re);
+  if(id==='pont-fessier-au-sol-activation')await expect(page.locator('.technique-strip')).toContainText('épaules au sol');
   const thumb=page.locator('.rest-next-thumb');await expect(thumb.locator('img')).toHaveAttribute('src',re);
   await thumb.click();await expect(page.locator('.image-viewer img')).toHaveAttribute('src',re);
   await expect.poll(()=>page.locator('.image-viewer img').evaluate(e=>e.complete&&e.naturalWidth>0)).toBe(true);

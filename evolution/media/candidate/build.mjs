@@ -62,6 +62,35 @@ function Kh(i){return JarvisReviewedMedia(i)||i!=null&&i.id&&eo.get(i.id)||null}
   source = once(source,'b.slice(0,y).map(k=>', 'b.slice(0,y).map(JarvisReviewedView).map(k=>');
   source = once(source,'img:y.gif||((b=Kh(y))==null?void 0:b.path)||y.img||null',
     'img:((b=JarvisReviewedMedia(y))==null?void 0:b.path)||y.gif||((b=Kh(y))==null?void 0:b.path)||y.img||null');
+  const technique = JSON.parse(fs.readFileSync(new URL('./technique-overrides.json',import.meta.url))).overrides;
+  const techniqueIds = new Set();
+  const techniqueCases = technique.map(entry => {
+    const exercise = inventory.exercises.find(e=>e.id===entry.id);
+    if (techniqueIds.has(entry.id) || exercise?.name !== entry.name || !source.includes(JSON.stringify(entry.sourceNote)) ||
+        entry.etapes?.length !== 3 || !entry.etapes.every(t=>typeof t==='string'&&t.length>20)) throw Error('Unverified technique '+entry.id);
+    techniqueIds.add(entry.id);
+    return `if(i&&i.id===${JSON.stringify(entry.id)})return {...base,etapes:${JSON.stringify(entry.etapes)}};`;
+  }).join('');
+  source = once(source,'function a5({id:i}){',
+    `function JarvisTechnique(i){const base=Yu[i?.pattern]||Yu.static;${techniqueCases}return base}
+function a5({id:i}){`);
+  source = once(source,'f=Yu[p.pattern]||Yu.static,h=ft.filter(', 'f=JarvisTechnique(p),h=ft.filter(');
+  source = once(source,'U=Yu[m.pattern]', 'U=JarvisTechnique(m)');
+  const warmupHelper = fs.readFileSync(new URL('./warmup-context.mjs',import.meta.url),'utf8')
+    .replace('export function createWarmupMedia','function createWarmupMedia');
+  source = once(source,'function Bg(i,o){',
+    `${warmupHelper}
+const JarvisWarmupMedia=createWarmupMedia({reviewedMedia:JarvisReviewedMedia});
+function Bg(i,o){`);
+  source = once(source,'pattern:p?"bridge":"row",img:Jn.mobilite',
+    'pattern:p?"bridge":"row",img:p?JarvisReviewedMedia({id:"pont-fessier-au-sol-activation"}).path:Jn.mobilite');
+  source = once(source,'img:Jn.approche,instruction:',
+    'img:(JarvisReviewedMedia(l)||{}).path||Jn.approche,exerciseId:l?.id,mediaRole:"approach",instruction:');
+  // Both start buttons must carry approach identity into newly created timers.
+  source = once(source,'instruction:x.instruction,img:x.img,pattern:x.pattern}',
+    'instruction:x.instruction,img:x.img,pattern:x.pattern,exerciseId:x.exerciseId,mediaRole:x.mediaRole}');
+  source = once(source,'f=p.steps[p.index],poolMedia=',
+    'f=JarvisWarmupMedia.view(p.steps[p.index],p.meta),poolMedia=');
   return source;
 }
 export function prepare() {

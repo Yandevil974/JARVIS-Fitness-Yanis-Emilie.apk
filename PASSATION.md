@@ -2,7 +2,24 @@
 
 **Mise à jour : 23 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
-## Dernière avancée — French press EZ, bibliothèque et repos cohérents
+## Dernière avancée — pont au sol précis et échauffement ciblé
+
+**23 septembre 2026 — toujours un candidat web, pas une nouvelle livraison APK.** Les deux réassociations précédentes et la protection piscine sont conservées. SHA courant : `5c041fb8d73a40bf0df0bbec64619ba5b54cc2682b85a0cb123ddcb43f8234c6`.
+
+- **Fiche du pont au sol** : les trois phases décrivent maintenant les épaules au sol, les pieds à plat, la montée sans cambrure et les **2 secondes de contraction déjà prescrites**. Même précision par défaut en séance. Les notes/tips explicites du programme restent prioritaires. Le catalogue (2 × 15, tempo 2012, repos 45 s), la note source, respiration/erreurs et toutes les autres variantes restent inchangés : pas de changement global de `Yu.bridge`.
+- **Activation fessiers d’échauffement** : bon GIF au sol en fiche et chrono. Les **10 répétitions / 60 s propres à cette phase** ne sont pas transformées en prescription de séance. Une ancienne étape sauvegardée est corrigée uniquement si contexte, nom, pattern, durée et consigne correspondent exactement ; l’ancienne image reste dans le stockage, aucune migration.
+- **Approches des deux IDs déjà revus** (pont au sol et French press EZ) : bon visuel en fiche, chrono et zoom. Les nouvelles étapes conservent leur `exerciseId` / `mediaRole` via **les deux boutons de lancement**. Aucun changement de charge, pourcentage, arrondi, répétition ou durée. La validation finale du chrono marque toujours l’échauffement effectué et retire le chrono comme auparavant.
+- **Limites** : mobilité hanches/chevilles, activation scapulaire et panneau général d’échauffement encore à traiter. Les **207 autres approches conservent leur visuel antérieur** ; les anciennes approches sans identité ne sont pas déduites de la séance actuelle. Le libellé générique « charge légère à choisir » existe encore pour le poids du corps. Ne pas annoncer tous les échauffements corrigés. **36 groupes toujours ouverts**, dips et autres variantes non résolus, aucun exercice accepté automatiquement comme définitivement validé.
+- **32 tests Node PASS**, dont comparaison des 209 générateurs d’échauffement sur **1 254 combinaisons** charge/incrément ; **20 parcours navigateur ciblés PASS (3,2 min)** et **8 accueil/11 rubriques PASS (57,6 s)**. Deux profils, nouveaux et anciens chronos, zoom/rechargement, achèvement et conservation des données. Ni les 90 tests complets ni Android physique relancés.
+- **271/272 fichiers web identiques** et APK livré intact ; aucune nouvelle image d’exercice, signature ou identité. Neuf fonctions ciblées autorisées par AST (`bg/v5/Kh/Z5/k5/Bg/a5/$5/j5`) et helpers ; tout le reste est identique. Seules les **deux réassociations** existantes et une **précision technique par ID** sont actives. Le dossier privé de signature reste absent : aucun nouvel APK possible dans cette étape sans restaurer l’identité existante.
+- Harnais de tests : dépendance VM `lt.elite.PATTERN_INFO` extraite du véritable bundle ; sélection de vignette par classe, son nom accessible étant l’alt de l’image et non « Agrandir ». Une collecte parallèle a rencontré un ENOENT de dossier temporaire : **lancer les suites média puis accueil séquentiellement**. Le passage final est entièrement vert ; pas de contournement applicatif. Conserver `MEDIA_REVIEW_CANDIDATE=1` pour l’unique différence autorisée de libellé bibliothèque du pont.
+- Captures réelles affichées/examinées et sauvegardées : `review/floor-bridge-technique-candidate.jpg`, `review/warmup-bridge-candidate.jpg`. Rapport : `review/REVIEW-WARMUP.md`. Métadonnées techniques : `candidate/technique-overrides.json`, helper `candidate/warmup-context.mjs`, tests `tests/warmup-candidate.*` et `candidate/validation.json`, sous `evolution/media/`.
+
+### Prochaine étape précise
+
+Continuer les dessins corrects pour dips/triceps/fessiers, puis couvrir les étapes d’échauffement et approches restantes. Pour les anciennes approches sans identité, prévoir un traitement explicite des lacunes : **pas de remplacement depuis une séance qui aurait changé**. Maintenir les bonnes animations, la récupération aquatique, les 209 exercices, les 11 rubriques, les deux profils, les étapes 1–7 et l’accueil validé. **IA en dernier ; actualiser ET présenter cette passation à chaque étape, ici dans le même chat.** Aucun changement de chat imposé ; avertir avec 🚩 avant la limite.
+
+## Étape précédente — French press, bibliothèque et repos (historique)
 
 **Continuer ici avec le même assistant ; actualiser ET présenter cette passation à chaque étape.** Préserver toute l’application validée, aucune refonte, aucune suppression de fonction, IA conversationnelle en dernier.
 
