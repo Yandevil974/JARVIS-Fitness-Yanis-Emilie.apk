@@ -137,6 +137,9 @@ export function stepGuide(name, segment, poolGuides = []) {
     return hit;
   };
   const poolFirst = !segment || segment === "pool";
-  const a = poolFirst ? [poolGuides, CARDIO_STEPS] : [CARDIO_STEPS, poolGuides];
-  return best(a[0]) || best(a[1]);
+  // Une étape piscine ne doit jamais retomber sur un visuel elliptique :
+  // l'absence d'une association est une anomalie visible à corriger, pas une
+  // raison de présenter un mouvement d'un autre domaine.
+  if (poolFirst) return best(poolGuides);
+  return best(CARDIO_STEPS) || best(poolGuides);
 }
