@@ -234,34 +234,40 @@
     "note": "The test certificate is a throwaway inside .cache and is never a release identity."
   },
   "apkDeliveryRelease": {
-    "mode": "release-signed-new-media-identity",
+    "mode": "release-signed-durable-media-identity",
     "authorizedNewKey": "2026-09-23 (user message)",
-    "apk": "downloads/Yanis-Fitness-Evolution-1.4.1.apk",
-    "apkSha256": "c8dff99767923e1a452acffd0484d3e19cc989bacad212ee3cbb47bef01a668d",
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.2.apk",
+    "apkSha256": "6e08516ec3a439bdfc7f68024fcb47feb26bae833fd443b3428251797734ceff",
     "apkBytes": 24909281,
     "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-    "versionName": "1.4.1",
-    "versionCode": 12,
+    "versionName": "1.4.2",
+    "versionCode": 13,
     "changedEntries": [
       "AndroidManifest.xml",
       "assets/public/assets/index-CBCies4k.js"
     ],
+    "contentIdenticalTo": "downloads/Yanis-Fitness-Evolution-1.4.1.apk apart from AndroidManifest.xml",
     "nativeDexFiles": 9,
     "byteIdenticalDexFiles": 9,
     "webFiles": 272,
     "unchangedWebFiles": 271,
     "packagedWebSha256": "b74853bca4761ccb0f36a4f4612ed4e69b82f42b392dbf1cb7dfd7f6d047e373",
+    "webBundleValidatedInBrowser": "26/26 media + 8/8 home on this exact bundle sha",
     "signatureVerified": [
       "v2",
       "v3"
     ],
     "alignmentVerified": true,
     "signers": 1,
-    "certificateSha256": "d3ca5a27cf9b97f15404b1d1dad5c35abf5ec39e4917d0d30e89078a71782a3d",
+    "certificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
     "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
-    "privateBackup": "downloads/Yanis-Fitness-Evolution-1.4.1-SAUVEGARDE-PRIVEE.zip (git-ignored, handed to the user)",
-    "publicIdentity": "evolution/android/identity-media-141.json",
+    "lostIdentity": "d3ca5a27cf9b97f15404b1d1dad5c35abf5ec39e4917d0d30e89078a71782a3d (1.4.1, key destroyed by a sandbox reset; its APK stays published but must not be installed)",
+    "committedCiphertext": "evolution/signing/evolution-media-142.encrypted.json",
+    "restoreCommand": "python3 evolution/android/signing-media.py restore --recovery-key-file <recovery-key.txt>",
+    "restoreTested": "yes: private material deleted, then rebuilt from the committed ciphertext alone",
+    "privateBackup": "downloads/Yanis-Fitness-Evolution-1.4.2-SAUVEGARDE-PRIVEE.zip (git-ignored, handed to the user)",
+    "publicIdentity": "evolution/android/identity-media-142.json",
     "deviceTested": false,
-    "installNote": "same package, new signature: uninstall 1.4.0, install 1.4.1, restore the JSON backup"
+    "installNote": "same package, new signature: uninstall 1.4.0, install 1.4.2, restore the JSON backup"
   }
 }

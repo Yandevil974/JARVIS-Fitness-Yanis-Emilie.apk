@@ -1,3 +1,5 @@
+> **Document historique — version remplacée.** La 1.4.1 n'a plus de clé de signature récupérable (perdue lors d'une réinitialisation de l'environnement). Utilisez la 1.4.2 : contenu identique, identité durable. Voir `INSTALLATION-1.4.2.md`.
+
 # Installation de Yanis Fitness Evolution 1.4.1 (23 septembre 2026)
 
 Cette version corrige la récupération en piscine : les étapes aquatiques (marche

@@ -43,3 +43,14 @@ Nouvelle clé **autorisée par l’utilisateur le 23 septembre 2026** (« si fau
 - Sauvegarde privée : `downloads/Yanis-Fitness-Evolution-1.4.1-SAUVEGARDE-PRIVEE.zip` (ignorée par Git, non publiée) et `.private/yanis-fitness-evolution-media/` (droits 700/600). Seule l’empreinte publique est commitée : `evolution/android/identity-media-141.json`.
 - Installation : même identifiant d’application, signature différente ⇒ désinstaller la 1.4.0, installer la 1.4.1, restaurer le JSON de sauvegarde. Détail : [INSTALLATION-1.4.1.md](../../downloads/INSTALLATION-1.4.1.md).
 - Aucun test sur téléphone réel dans cet environnement ; l’IA conversationnelle reste exclue.
+
+# Livraison 1.4.2 — 23 septembre 2026 (identité durable)
+
+Incident consigné : l’identité 1.4.1 (`d3ca5a27…`) avait été créée avec pour seule sauvegarde un ZIP en clair dans l’espace de travail ; **une réinitialisation de l’environnement l’a détruite** et aucune mise à jour de cette installation n’est possible. Son APK reste publié mais **il ne faut pas l’installer**. Correctif de méthode : l’identité de la lignée média est désormais sauvegardée **chiffrée (AES-256-GCM) dans le dépôt**, `evolution/signing/evolution-media-142.encrypted.json`, restaurable avec la clé de récupération remise à l’utilisateur ; la restauration a été **testée en supprimant réellement les fichiers privés**.
+
+- APK publié : `downloads/Yanis-Fitness-Evolution-1.4.2.apk`, 24 909 281 octets, SHA-256 `6e08516ec3a439bdfc7f68024fcb47feb26bae833fd443b3428251797734ceff`, versionName 1.4.2, versionCode 13.
+- Contenu **identique à la 1.4.1** : la seule entrée qui diffère entre les deux APK est `AndroidManifest.xml` (numéro de version). Le paquet web est le bundle revu `b74853bc…`, celui qui a passé 26/26 tests navigateur et 8/8 accueil.
+- Identité : `150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b` ; les certificats `7d6f9c8f…` (1.4.0) et `4d4fbd84…` (historique) restent intacts.
+- Vérifications : signature v2 + v3, un signataire, alignement, inventaire ZIP inchangé, 9/9 DEX identiques octet pour octet, 271/272 fichiers web inchangés.
+- Sauvegarde privée en clair : `downloads/Yanis-Fitness-Evolution-1.4.2-SAUVEGARDE-PRIVEE.zip` (ignorée par Git) ; à télécharger et conserver hors téléphone.
+- Installation : même identifiant d’application, signature différente ⇒ désinstaller la 1.4.0, installer la 1.4.2, restaurer le JSON. Détail : [INSTALLATION-1.4.2.md](../../downloads/INSTALLATION-1.4.2.md).
