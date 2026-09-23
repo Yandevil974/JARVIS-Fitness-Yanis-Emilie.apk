@@ -1,506 +1,588 @@
 {
- "date": "2026-09-23",
- "status": "open",
- "releaseReady": false,
- "meaning": "Observed defects, not an exhaustive list of all defects. No APK corrected or released by this audit.",
- "findings": [
-  {
-   "id": "dips-orientation",
-   "scope": "musculation",
-   "exercises": [
-    "triceps-dips",
-    "dips"
-   ],
-   "path": "/media/c3a2b9892161522e.gif",
-   "observed": "Deux images seulement. La tête regarde vers la droite puis vers la gauche, tandis que les appuis et le bas du corps ne présentent pas une transition cohérente. Ne pas corriger en retournant tout le GIF.",
-   "action": "Remplacer la démonstration, après validation du support visuel. Photos réelles de dips sur barres parallèles trouvées et examinées, non intégrées.",
-   "status": "open"
-  },
-  {
-   "id": "triceps-bench-to-cable",
-   "scope": "musculation",
-   "exercises": [
-    "triceps-extensions-halteres-banc-plat",
-    "extensions-triceps-halteres-plat",
-    "extensions-triceps-halteres-incline",
-    "french-press-haltere-un-bras",
-    "french-press-barre-ez"
-   ],
-   "path": "/media/4c2b19fa924f90a8.gif",
-   "observed": "Extension debout à la poulie au-dessus de la tête utilisée pour des haltères sur banc et pour une barre EZ.",
-   "action": "Associations explicites selon matériel et position, sans alias de famille.",
-   "status": "open",
-   "candidateProgress": "French press barre EZ seulement : réassociation vers le dessin couché barre EZ existant /media/ea226c444f72de0f.gif, deux positions et vignette revues, conseil original barre vers le front retrouvé. Bibliothèque, fiche animée/pause, séance sauvegardée, aperçu de repos/zoom/rechargement testés pour les deux profils. Haltères, incliné et unilatéral restent à corriger ; groupe ouvert, pas de nouvel APK."
-  },
-  {
-   "id": "hip-thrust-to-bulgarian",
-   "scope": "musculation",
-   "exercises": [
-    "hip-thrust-unilateral-1-jambe",
-    "hip-thrust-unilateral"
-   ],
-   "path": "/media/cf312b839f6da027.gif",
-   "observed": "Squat bulgare affiché comme hip thrust unilatéral, avec niveau interne exact.",
-   "action": "Remplacer par un hip thrust unilatéral réel; ne pas se fier au niveau exact existant.",
-   "status": "open"
-  },
-  {
-   "id": "step-up-to-lunge",
-   "scope": "musculation",
-   "exercises": [
-    "step-up-sur-banc-hauteur-du-genou",
-    "step-up-haut"
-   ],
-   "path": "/media/995e1f9a9cedc5ec.gif",
-   "observed": "Fentes avec haltères au lieu de montées sur banc.",
-   "action": "Choisir un vrai step-up et vérifier la séquence, pas seulement son nom de fichier.",
-   "status": "open"
-  },
-  {
-   "id": "pullup-to-pulldown",
-   "scope": "musculation",
-   "exercises": [
-    "tractions-pull-up",
-    "tractions-prise-neutre-chin-up",
-    "tractions-supination-chin-up",
-    "tractions-prise-large",
-    "lean-away-pull-ups"
-   ],
-   "path": "/media/4af33157ce25267c.gif",
-   "observed": "Tirage vertical assis à la poulie, parfois derrière la nuque, au lieu de tractions.",
-   "action": "Séparer traction, type de prise et tirage à la poulie.",
-   "status": "open"
-  },
-  {
-   "id": "face-pull-to-pulldown",
-   "scope": "musculation",
-   "exercises": [
-    "face-pull-a-la-poulie",
-    "face-pull-a-l-elastique"
-   ],
-   "path": "/media/ca785b4cf81c98fa.gif",
-   "observed": "Tirage vertical à la poulie au lieu d'un face pull.",
-   "action": "Remplacer par un face pull, avec le bon matériel.",
-   "status": "open"
-  },
-  {
-   "id": "leg-extension-to-press",
-   "scope": "musculation",
-   "exercises": [
-    "leg-extension"
-   ],
-   "path": "/media/9f8ae03b97d31344.gif",
-   "observed": "Presse à cuisses au lieu d'extension de genoux à la machine.",
-   "action": "Interdire cette substitution.",
-   "status": "open"
-  },
-  {
-   "id": "bird-dog-to-side-plank",
-   "scope": "musculation",
-   "exercises": [
-    "bird-dog",
-    "mobilite-des-epaules"
-   ],
-   "path": "/media/aab0de0aad0c275a.gif",
-   "observed": "Planche latérale avec élévation de jambe, ni bird dog à quatre pattes ni mobilité des épaules.",
-   "action": "Illustrations distinctes.",
-   "status": "open"
-  },
-  {
-   "id": "breathing-to-dead-bug",
-   "scope": "musculation",
-   "exercises": [
-    "respiration-diaphragmatique"
-   ],
-   "path": "/media/b2236e6b7a81a1b5.gif",
-   "observed": "Dead bug affiché pour une respiration diaphragmatique.",
-   "action": "Réutiliser la posture respiratoire allongée si elle correspond aux consignes, sans animation d'exercice abdominal.",
-   "status": "open"
-  },
-  {
-   "id": "good-morning-to-deadlift",
-   "scope": "musculation",
-   "exercises": [
-    "good-morning-debout"
-   ],
-   "path": "/media/9f22747c305f521b.gif",
-   "observed": "Soulevé de terre roumain, barre dans les mains, au lieu du good morning avec barre sur le dos.",
-   "action": "Interdire cette substitution de matériel et de placement.",
-   "status": "open"
-  },
-  {
-   "id": "pullover-to-pulldown",
-   "scope": "musculation",
-   "exercises": [
-    "pullover-cable-bras-tendus",
-    "pullover-haltere-plat"
-   ],
-   "path": "/media/dc0cabae23adbfd5.gif",
-   "observed": "Tirage vertical assis au lieu de pullover bras tendus ou couché avec haltère.",
-   "action": "Démonstrations distinctes pour les deux exercices.",
-   "status": "open"
-  },
-  {
-   "id": "woodchop-to-crunch",
-   "scope": "musculation",
-   "exercises": [
-    "wood-chop-poulie-haute"
-   ],
-   "path": "/media/a5c1c2427ee83c93.gif",
-   "observed": "Crunch à genoux à la poulie au lieu de rotation diagonale.",
-   "action": "Interdire cette substitution.",
-   "status": "open"
-  },
-  {
-   "id": "ab-wheel-to-swiss-ball",
-   "scope": "musculation",
-   "exercises": [
-    "ab-wheel-roulette"
-   ],
-   "path": "/media/789c6d90f30eb33e.gif",
-   "observed": "Rapprochement des genoux sur swiss-ball au lieu de roulette abdominale.",
-   "action": "Ne pas remplacer un matériel par l'autre.",
-   "status": "open"
-  },
-  {
-   "id": "scott-to-standing-curl",
-   "scope": "musculation",
-   "exercises": [
-    "curl-scott-barre-ez-pronation",
-    "curl-scott-barre-ez-supination",
-    "curl-scott-haltere-neutre",
-    "curl-scott-haltere-prise-neutre"
-   ],
-   "observed": "Curls debout ou sans pupitre pour des curls Scott; certaines prises sont aussi différentes.",
-   "action": "Vérifier pupitre, position du coude et prise pour chaque variante.",
-   "status": "open"
-  },
-  {
-   "id": "warmup-shared-upper-body",
-   "scope": "echauffement",
-   "observed": "Bg emploie warmup-mobilite.jpg (cercles de bras) aussi pour mobilité hanches/chevilles et activation fessiers.",
-   "action": "Associer les étapes bas du corps à leurs gestes propres; pas de repli sur un guide de piscine.",
-   "status": "open",
-   "candidateProgress": "Correction partielle : Activation fessiers / Ponts fessiers au sol, 10 répétitions contrôlées / 60 s reçoit le GIF au sol déjà revu, en fiche et chrono, y compris ancienne étape sauvegardée reconnue exactement, sans migration. Mobilité hanches/chevilles, activation scapulaire et illustration générale encore à traiter."
-  },
-  {
-   "id": "warmup-approach-always-bench",
-   "scope": "echauffement",
-   "observed": "Bg emploie warmup-series-approche.jpg (développé couché) pour toutes les approches, même avant un squat.",
-   "action": "Utiliser le premier exercice réel et son visuel validé, sans changer les charges ni la durée.",
-   "status": "open",
-   "candidateProgress": "Correction partielle : approches seulement des deux IDs revus (pont au sol et French press EZ), avec exerciseId/mediaRole conservés par les deux boutons de lancement. Les 207 autres IDs et anciennes approches sans identité gardent le chemin antérieur ; ne pas deviner depuis la séance actuelle. Consignes, durées, pourcentages et arrondis inchangés. Le libellé générique charge légère à choisir reste aussi présent pour le poids du corps : précision future nécessaire."
-  },
-  {
-   "id": "pool-land-guides",
-   "scope": "piscine",
-   "guides": [
-    "Gainage au bord (vertical)",
-    "Mobilité épaules aquatique",
-    "Mobilité hanches / chevilles",
-    "Ciseaux au bord",
-    "Talons-fesses"
-   ],
-   "observed": "Respectivement planche latérale sur banc, mouvement avec élastique à sec, flexion de genou couché à la poulie, relevés de jambes sur banc, et montée de genou contre un mur. Ne correspondent pas aux consignes aquatiques.",
-   "action": "Vrais guides aquatiques ou absence explicitement signalée, jamais une autre technique.",
-   "status": "open"
-  },
-  {
-   "id": "pool-stretch-compound",
-   "scope": "piscine",
-   "guides": [
-    "Étirements au bord"
-   ],
-   "observed": "Image d'ischio-jambier pied sur le bord, alors que le texte décrit mollets, épaules/dos et quadriceps.",
-   "action": "Représenter les gestes décrits séparément.",
-   "status": "open"
-  },
-  {
-   "id": "tabata-land-to-water",
-   "scope": "tabata",
-   "observed": "s5 et v5 cherchent dans POOL_GUIDES sans tenir compte de meta.type. Quatre des 38 noms au sol sélectionnent un guide aquatique: Gainage planche, Battements de jambes, Montées de genoux, Marche sur place.",
-   "action": "Résolution explicite par contexte au sol/aqua. Tester les mêmes noms dans les deux contextes.",
-   "status": "open"
-  },
-  {
-   "id": "tabata-missing-demonstrations",
-   "scope": "tabata",
-   "observed": "34 des 38 noms au sol ne résolvent aucun média d'exercice via s5; gi montre alors la photo générique recovery-human.jpg. Cela ne constitue pas une démonstration correspondante.",
-   "action": "Compléter les 38 mouvements, avec libellés G/D et versions douces respectés; contrôler les six mouvements du générateur aqua.",
-   "status": "open"
-  },
-  {
-   "id": "stretch-pigeon",
-   "scope": "etirements",
-   "exercises": [
-    "stretch-fes-0"
-   ],
-   "path": "/media/stretch-pigeon.jpg",
-   "observed": "Pigeon au sol avec tête coupée dans le fichier; les consignes demandent une cheville sur l'autre genou en position assise.",
-   "action": "L'image stretch-piriforme.jpg est une candidate déjà présente, à vérifier puis réassocier.",
-   "status": "open"
-  },
-  {
-   "id": "stretch-triceps-back",
-   "scope": "etirements",
-   "exercises": [
-    "stretch-tri-1"
-   ],
-   "path": "/media/stretch-triceps-dos.jpg",
-   "observed": "Personnages bras baissés au lieu d'une main entre les omoplates et du coude au-dessus de la tête.",
-   "action": "Remplacer par la posture réellement décrite.",
-   "status": "open"
-  },
-  {
-   "id": "stretch-calf-step",
-   "scope": "etirements",
-   "exercises": [
-    "stretch-mol-1"
-   ],
-   "path": "/media/stretch-mollet-marche.jpg",
-   "observed": "Étirement au mur au lieu du talon sous le niveau d'une marche.",
-   "action": "Remplacer sans confondre avec l'autre étirement des mollets.",
-   "status": "open"
-  },
-  {
-   "id": "stretch-hip-target",
-   "scope": "etirements",
-   "exercises": [
-    "stretch-moy-0"
-   ],
-   "path": "/media/stretch-adduction-debout.jpg",
-   "observed": "Fente latérale/adducteurs au lieu du croisement de jambes debout décrit pour le moyen fessier/TFL.",
-   "action": "Respecter la posture et le groupe visé; ne pas valider sur le seul mot adduction.",
-   "status": "open"
-  },
-  {
-   "id": "stretch-other-postures",
-   "scope": "etirements",
-   "exercises": [
-    "stretch-epA-0",
-    "stretch-epP-0",
-    "stretch-bic-0",
-    "stretch-avb-0",
-    "stretch-isc-0"
-   ],
-   "observed": "Désaccords entre texte et position visible: bras devant au lieu de mains derrière; bras contre poitrine au lieu de main tirée; appui au mur au lieu de main tirée dans le dos; appui à quatre pattes au lieu d'étirement manuel de l'avant-bras; flexion debout au lieu d'assis jambes tendues.",
-   "action": "Examiner/remplacer individuellement sans modifier les consignes d'entraînement pour justifier une image.",
-   "status": "open"
-  },
-  {
-   "id": "pool-recovery-to-cardio",
-   "scope": "piscine",
-   "path": "/media/cardio-recup-active.jpg",
-   "reportedByUser": "En récupération lors de la piscine en nage fractionnée, ne pas afficher un vélo.",
-   "observed": "Le résolveur bg extrait de la 1.4.0 renvoie Elliptique — récupération active pour Récupération active ou Récup active même avec segment=pool, par repli de bl vers If. Le fichier cardio-recup-active.jpg a été examiné : il montre un appareil elliptique à sec.",
-   "evidence": "tests/pool-recovery.test.mjs : exécution isolée des fonctions Ge/bg exactes du bundle signé, SHA APK/JS contrôlés. Les 24 récupérations explicitement nommées marche du Swim Interval standard résolvent au contraire vers pool-marche-aquatique.jpg dans bg.",
-   "limits": "Mécanisme de mauvais repli reproduit, mais le parcours exact du téléphone signalé par l’utilisateur n’est pas encore reproduit. Examiner les séances complémentaires, les libellés génériques et les anciens minuteurs avec step.img prioritaire dans v5.",
-   "action": "Interdire tout repli vers vélo/elliptique ou exercice à sec pour un segment piscine, y compris récupération. Associer le visuel à la consigne réelle : marche aquatique, nage douce ou récupération au bord selon le cas. Contrôler fiche, chrono, agrandissement et reprise de minuteur persisté, trois niveaux et deux profils. Conserver les vrais blocs elliptiques hors bassin et les durées ; ne pas changer le programme pour justifier une image.",
-   "status": "open",
-   "candidateProgress": "candidate/README.md : frontière pool/cardio et affichage des chronos persistés testés dans un candidat web. 17 tests Node et 14 parcours navigateur réussis. Les récupérations génériques restent sans démonstration validée ; parcours téléphone non reproduit ; statut toujours ouvert, aucun APK livré."
-  },
-  {
-   "id": "hip-adduction-not-abduction",
-   "scope": "musculation",
-   "exercises": [
-    "abduction-hanche-debout-a-la-poulie",
-    "abduction-hanche-a-la-poulie",
-    "abduction-hanche-a-la-poulie-myo-reps",
-    "fire-hydrant-a-l-elastique"
-   ],
-   "path": "/media/03098b19c4672ce5.gif",
-   "observed": "Adduction debout à la poulie affichée pour des abductions de hanche et un fire hydrant à quatre pattes.",
-   "action": "Conserver ce fichier pour une éventuelle vraie adduction ; rechercher les bons gestes sans modifier les exercices.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "floor-bridge-to-bench-feet",
-   "scope": "musculation",
-   "exercises": [
-    "pont-fessier-au-sol-activation"
-   ],
-   "path": "/media/0766d3a06bf79dc8.gif",
-   "observed": "Le pont fessier au sol montre les pieds sur un banc.",
-   "action": "La source /media/8eecb0152081ff26.gif montre un pont au sol sans charge ; revue complète et agrandie réalisée. Candidate à intégrer/tester par identifiant, sans modifier glute-bridge-pieds-sur-banc.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open",
-   "candidateProgress": "Candidat : GIF/vignette au sol conservés, fiche et texte technique par défaut maintenant propres à cet identifiant, conformément à la note source (2 s en haut). Générique bridge et vraie variante sur banc inchangés. Fiche, séance/repos, échauffement nouveau et activation ancienne sauvegardée testés pour les deux profils. Pas de validation Android/toutes surfaces ni nouvel APK : groupe toujours ouvert."
-  },
-  {
-   "id": "unilateral-rdl-to-bilateral",
-   "scope": "musculation",
-   "exercises": [
-    "souleve-de-terre-roumain-unilateral-haltere"
-   ],
-   "path": "/media/1c63a36d168d8b74.gif",
-   "observed": "Deux pieds au sol et deux haltères, pas le soulevé de terre unilatéral demandé.",
-   "action": "Démonstration unilatérale avec le matériel prescrit, pas une simple image du même muscle.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "unilateral-calf-to-bilateral-barbell",
-   "scope": "musculation",
-   "exercises": [
-    "mollets-debout-unilateraux"
-   ],
-   "path": "/media/3e2ed581e11781d5.gif",
-   "observed": "Deux jambes et barre sur le dos au lieu de mollets unilatéraux.",
-   "action": "Chercher le bon appui et la bonne variante ; ne pas ajouter une barre au programme.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "glute-kickback-to-triceps",
-   "scope": "musculation",
-   "exercises": [
-    "kickback-a-la-poulie",
-    "kickback-a-l-elastique",
-    "kickback-a-la-poulie-drop-set-final"
-   ],
-   "path": "/media/489169360e044c48.gif",
-   "observed": "Le mouvement visible est une extension du coude pour les triceps ; le catalogue et la consigne visent le grand fessier et la jambe.",
-   "action": "Séparer les deux homonymes kickback, puis séparer poulie et élastique.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "incline-dumbbell-to-flat",
-   "scope": "musculation",
-   "exercises": [
-    "developpe-halteres-incline-pronation"
-   ],
-   "path": "/media/a4c1fb89be18062f.gif",
-   "observed": "Banc plat affiché pour un développé incliné.",
-   "action": "Vérifier l’angle du banc et la prise avant réassociation, conserver le visuel pour le développé couché plat.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "compound-abs-to-seated-cable-crunch",
-   "scope": "musculation",
-   "exercises": [
-    "circuit-abdominaux-crunch-releves-gainage"
-   ],
-   "path": "/media/c1065beff4823907.gif",
-   "observed": "Un crunch assis à la poulie ne couvre pas crunch, relevés et gainage du circuit.",
-   "action": "Démonstrations distinctes des composantes, avec le bon matériel.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "standing-singlearm-to-seated-press",
-   "scope": "musculation",
-   "exercises": [
-    "developpe-haltere-un-bras-debout"
-   ],
-   "path": "/media/d9c88be0658a81af.gif",
-   "observed": "Développé assis à deux haltères au lieu d’un bras debout.",
-   "action": "Séparer posture et latéralité sans modifier la définition.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "bridge-one-and-half-to-march",
-   "scope": "musculation",
-   "exercises": [
-    "glute-bridge-en-1-5-reps"
-   ],
-   "path": "/media/e5f17140d8d97591.gif",
-   "observed": "Le GIF lève alternativement les jambes en pont ; il ne montre pas la montée complète, demi-descente et remontée décrites dans le programme.",
-   "action": "Démonstration de répétition 1,5 réelle ; ne pas changer le tempo ou le nom pour justifier cette marche en pont.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "band-clamshell-to-abduction-machine",
-   "scope": "musculation",
-   "exercises": [
-    "clamshell-a-l-elastique",
-    "abduction-hanche-a-l-elastique",
-    "abduction-assise-en-1-5-reps"
-   ],
-   "path": "/media/f73444e9dc2fee89.gif",
-   "observed": "Machine d’abduction assise utilisée pour clamshell/élastique et répétitions 1,5 non montrées.",
-   "action": "Préserver la machine pour son exercice ; fournir des gestes distincts pour les variantes. Le GIF de bande assise /media/b49969e64dc275f5.gif est une candidate pour la variante assise seulement, pas pour clamshell.",
-   "evidence": "review/long-animations.json; indexed complete contact sheets",
-   "status": "open"
-  },
-  {
-   "id": "combo-step-seconds-display",
-   "scope": "affichage",
-   "exercises": [],
-   "path": null,
-   "observed": "Dans la modale de séance combinée (G4), chaque ligne d'étape affiche la durée brute en secondes (« 1500 s ») au lieu de minutes lisibles, alors que le bloc au-dessus affiche « 25 min prévues » et que le chrono de la même étape affiche 25:00. Constaté à l'identique dans la 1.4.0 publiée et dans le candidat ; non introduit par la correction piscine.",
-   "action": "Afficher des minutes lisibles dans ces lignes d'étape (et seulement cela) après revue ; ne changer aucune durée, prescription ni donnée. Preuve : review/pool-defect-published-1.4.0-25min.png, review/pool-candidate-nage-douce.png.",
-   "status": "open"
-  },
-  {
-   "id": "systematic-alias-resolution",
-   "scope": "musculation",
-   "exercises": [],
-   "path": null,
-   "observed": "114 des 209 exercices n'ont aucun dessin propre. Le bundle 1.4.0 les résout par une carte d'alias livrée (identifiant -> nom d'un dessin existant, 104 entrées) puis, à défaut, par une recherche de similarité (mots du nom + matériel, seuil de score). Résultat livré : 95 dessins exacts, 104 « variante », 10 « famille ». 25 alias n'ont aucune relation de nom, ex. leg-extension -> « Leg press », wood-chop-poulie-haute -> « Crunch à la poulie », ab-wheel-roulette -> « Jackknife sur swiss ball », good-morning-debout -> « Soulevé de terre roumain », tractions-pull-up -> « Tirage vertical prise large », pullover-cable-bras-tendus -> « Tirage vertical prise pronation », mobilite-des-epaules -> « Bird dog », respiration-diaphragmatique -> « Dead bug », step-up -> « Fentes avant alternées ».",
-   "action": "Registre extrait et versionné : review/alias-substitutions.json (triage mot-à-mot, jamais une décision de revue). Aucun groupe ne peut être clos par un alias : chaque identifiant doit être revu individuellement (matériel, position, contexte). Le candidat ne modifie aucune de ces 104 entrées (test dédié).",
-   "status": "open"
-  },
-  {
-   "id": "shipped-maps-contradict-each-other",
-   "scope": "musculation",
-   "exercises": [
-    "step-up-sur-banc-hauteur-du-genou",
-    "step-up-haut",
-    "abduction-hanche-a-l-elastique",
-    "kickback-a-l-elastique"
-   ],
-   "path": "/media/6809d9052927484a.gif",
-   "observed": "Le bundle contient deux cartes qui se contredisent pour un même exercice. Carte par identifiant : « step-up sur banc (hauteur du genou) » -> « Fentes avant alternées » ; carte par nom : « step-up sur banc (hauteur du genou) » -> /media/6809d9052927484a.gif, un vrai step-up. De même « abduction hanche à l'élastique » : identifiant -> abduction assise machine (/media/f73444e9dc2fee89.gif), nom -> /media/b49969e64dc275f5.gif (abduction assise avec bande). « Kickback à l'élastique » : identifiant -> « Kickback à la poulie » (/media/489169360e044c48.gif, extension de coude vérifiée image par image) ; nom -> /media/04ab405e919744b5.gif.",
-   "action": "Documenter la contradiction par identifiant avant toute substitution. Le dessin de step-up disponible tient des haltères alors que les deux exercices sont déclarés bodyweight : il reste une candidate NON intégrée (déjà noté pour la planche longue clip 21) ; aucune prescription ne sera modifiée pour l'utiliser.",
-   "status": "open"
-  },
-  {
-   "id": "thirtyfive-drawings-never-reviewed",
-   "scope": "musculation",
-   "exercises": [],
-   "path": "/media/9f22747c305f521b.gif",
-   "observed": "Sur 94 GIF livrés : 13 relus au lot court et 46 au lot long, soit 59. 35 dessins n'ont jamais été relus (ex. 9f22747c good morning/soulevé de terre roumain, 4eff701b leg curl allongé, a5c1c242 crunch poulie, dc0cabae tirage vertical, 789c6d90 jackknife, 530326be, 5dd80c9e, 882c9c36, 9f8ae03b, a8b1d117, b395c84e, 44fc577d, 4dfda05b...). « Tous les exercices ont leur visuel » ne peut pas être affirmé avec ces 35 dessins non examinés.",
-   "action": "Poursuivre la revue image par image, dessin par dessin, en priorité ceux qui servent de cible d'alias. 5 ont été relus et tracés dans review/alias-target-frames.json ; aucun n'est déclaré validé pour autant.",
-   "status": "open"
-  },
-  {
-   "id": "resolution-by-another-exercise-drawing",
-   "scope": "musculation",
-   "exercises": [
-    "glute-ham-raise",
-    "wood-chop-poulie-haute",
-    "pullover-cable-bras-tendus",
-    "pullover-haltere-plat",
-    "ab-wheel-roulette",
-    "tractions-pull-up",
-    "tractions-supination-chin-up",
-    "lean-away-pull-ups",
-    "drop-lunges-fentes-controlees",
-    "drop-lunges-fentes-sautees-controlees",
-    "california-press-barre-au-cou",
-    "triceps-extensions-halteres-banc-plat",
-    "extensions-triceps-halteres-plat",
-    "extensions-triceps-halteres-incline",
-    "clamshell-a-l-elastique",
-    "fire-hydrant-a-l-elastique",
-    "rowing-a-l-elastique",
-    "mobilite-des-epaules",
-    "respiration-diaphragmatique",
-    "barre-au-front-pushdown-triceps",
-    "fentes-bulgares-halteres-pied-avant-sureleve",
-    "step-up-sur-banc-hauteur-du-genou",
-    "step-up-haut",
-    "good-morning-debout"
-   ],
-   "path": "/media/dc0cabae23adbfd5.gif",
-   "observed": "Parmi les 25 alias sans relation de nom, 16 dessins cibles sur 17 sont déjà le visuel propre d'un autre exercice du catalogue : l'application affiche donc, pour un exercice, le dessin d'un autre (ex. pullovers -> « Tirage vertical prise pronation », ab wheel -> « Jackknife sur swiss ball », wood chop -> « Crunch à la poulie », clamshell -> « Abduction assise machine », glute ham raise -> « Leg curl allongé », good morning -> « Soulevé de terre roumain barre »).",
-   "action": "Décision individuelle consignée pour chacun des 25 identifiants dans review/alias-review.json (motif, matériel, preuve) : 19 écarts, 1 variante inversée (fente bulgare pied avant/arrière), 1 ambiguïté de libellé (« barre au front (pushdown triceps) »), 1 cas « proche mais distinct » (good morning), 2 refus de remplacement sans réécriture de prescription (step-up), 1 corrigé par la réassociation revue. Aucun groupe fermé.",
-   "status": "open"
-  }
- ]
+  "date": "2026-09-23",
+  "status": "open",
+  "releaseReady": false,
+  "meaning": "Observed defects, not an exhaustive list of all defects. No APK corrected or released by this audit.",
+  "findings": [
+    {
+      "id": "dips-orientation",
+      "scope": "musculation",
+      "exercises": [
+        "triceps-dips",
+        "dips"
+      ],
+      "path": "/media/c3a2b9892161522e.gif",
+      "observed": "Deux images seulement. La tête regarde vers la droite puis vers la gauche, tandis que les appuis et le bas du corps ne présentent pas une transition cohérente. Ne pas corriger en retournant tout le GIF.",
+      "action": "Remplacer la démonstration, après validation du support visuel. Photos réelles de dips sur barres parallèles trouvées et examinées, non intégrées.",
+      "status": "open"
+    },
+    {
+      "id": "triceps-bench-to-cable",
+      "scope": "musculation",
+      "exercises": [
+        "triceps-extensions-halteres-banc-plat",
+        "extensions-triceps-halteres-plat",
+        "extensions-triceps-halteres-incline",
+        "french-press-haltere-un-bras",
+        "french-press-barre-ez"
+      ],
+      "path": "/media/4c2b19fa924f90a8.gif",
+      "observed": "Extension debout à la poulie au-dessus de la tête utilisée pour des haltères sur banc et pour une barre EZ.",
+      "action": "Associations explicites selon matériel et position, sans alias de famille.",
+      "status": "open",
+      "candidateProgress": "French press barre EZ seulement : réassociation vers le dessin couché barre EZ existant /media/ea226c444f72de0f.gif, deux positions et vignette revues, conseil original barre vers le front retrouvé. Bibliothèque, fiche animée/pause, séance sauvegardée, aperçu de repos/zoom/rechargement testés pour les deux profils. Haltères, incliné et unilatéral restent à corriger ; groupe ouvert, pas de nouvel APK."
+    },
+    {
+      "id": "hip-thrust-to-bulgarian",
+      "scope": "musculation",
+      "exercises": [
+        "hip-thrust-unilateral-1-jambe",
+        "hip-thrust-unilateral"
+      ],
+      "path": "/media/cf312b839f6da027.gif",
+      "observed": "Squat bulgare affiché comme hip thrust unilatéral, avec niveau interne exact.",
+      "action": "Remplacer par un hip thrust unilatéral réel; ne pas se fier au niveau exact existant.",
+      "status": "open"
+    },
+    {
+      "id": "step-up-to-lunge",
+      "scope": "musculation",
+      "exercises": [
+        "step-up-sur-banc-hauteur-du-genou",
+        "step-up-haut"
+      ],
+      "path": "/media/995e1f9a9cedc5ec.gif",
+      "observed": "Fentes avec haltères au lieu de montées sur banc.",
+      "action": "Choisir un vrai step-up et vérifier la séquence, pas seulement son nom de fichier.",
+      "status": "open"
+    },
+    {
+      "id": "pullup-to-pulldown",
+      "scope": "musculation",
+      "exercises": [
+        "tractions-pull-up",
+        "tractions-prise-neutre-chin-up",
+        "tractions-supination-chin-up",
+        "tractions-prise-large",
+        "lean-away-pull-ups"
+      ],
+      "path": "/media/4af33157ce25267c.gif",
+      "observed": "Tirage vertical assis à la poulie, parfois derrière la nuque, au lieu de tractions.",
+      "action": "Séparer traction, type de prise et tirage à la poulie.",
+      "status": "open"
+    },
+    {
+      "id": "face-pull-to-pulldown",
+      "scope": "musculation",
+      "exercises": [
+        "face-pull-a-la-poulie",
+        "face-pull-a-l-elastique"
+      ],
+      "path": "/media/ca785b4cf81c98fa.gif",
+      "observed": "Tirage vertical à la poulie au lieu d'un face pull.",
+      "action": "Remplacer par un face pull, avec le bon matériel.",
+      "status": "open"
+    },
+    {
+      "id": "leg-extension-to-press",
+      "scope": "musculation",
+      "exercises": [
+        "leg-extension"
+      ],
+      "path": "/media/9f8ae03b97d31344.gif",
+      "observed": "Presse à cuisses au lieu d'extension de genoux à la machine.",
+      "action": "Interdire cette substitution.",
+      "status": "open"
+    },
+    {
+      "id": "bird-dog-to-side-plank",
+      "scope": "musculation",
+      "exercises": [
+        "bird-dog",
+        "mobilite-des-epaules"
+      ],
+      "path": "/media/aab0de0aad0c275a.gif",
+      "observed": "Planche latérale avec élévation de jambe, ni bird dog à quatre pattes ni mobilité des épaules.",
+      "action": "Illustrations distinctes.",
+      "status": "open"
+    },
+    {
+      "id": "breathing-to-dead-bug",
+      "scope": "musculation",
+      "exercises": [
+        "respiration-diaphragmatique"
+      ],
+      "path": "/media/b2236e6b7a81a1b5.gif",
+      "observed": "Dead bug affiché pour une respiration diaphragmatique.",
+      "action": "Réutiliser la posture respiratoire allongée si elle correspond aux consignes, sans animation d'exercice abdominal.",
+      "status": "open"
+    },
+    {
+      "id": "good-morning-to-deadlift",
+      "scope": "musculation",
+      "exercises": [
+        "good-morning-debout"
+      ],
+      "path": "/media/9f22747c305f521b.gif",
+      "observed": "Soulevé de terre roumain, barre dans les mains, au lieu du good morning avec barre sur le dos.",
+      "action": "Interdire cette substitution de matériel et de placement.",
+      "status": "open"
+    },
+    {
+      "id": "pullover-to-pulldown",
+      "scope": "musculation",
+      "exercises": [
+        "pullover-cable-bras-tendus",
+        "pullover-haltere-plat"
+      ],
+      "path": "/media/dc0cabae23adbfd5.gif",
+      "observed": "Tirage vertical assis au lieu de pullover bras tendus ou couché avec haltère.",
+      "action": "Démonstrations distinctes pour les deux exercices.",
+      "status": "open"
+    },
+    {
+      "id": "woodchop-to-crunch",
+      "scope": "musculation",
+      "exercises": [
+        "wood-chop-poulie-haute"
+      ],
+      "path": "/media/a5c1c2427ee83c93.gif",
+      "observed": "Crunch à genoux à la poulie au lieu de rotation diagonale.",
+      "action": "Interdire cette substitution.",
+      "status": "open"
+    },
+    {
+      "id": "ab-wheel-to-swiss-ball",
+      "scope": "musculation",
+      "exercises": [
+        "ab-wheel-roulette"
+      ],
+      "path": "/media/789c6d90f30eb33e.gif",
+      "observed": "Rapprochement des genoux sur swiss-ball au lieu de roulette abdominale.",
+      "action": "Ne pas remplacer un matériel par l'autre.",
+      "status": "open"
+    },
+    {
+      "id": "scott-to-standing-curl",
+      "scope": "musculation",
+      "exercises": [
+        "curl-scott-barre-ez-pronation",
+        "curl-scott-barre-ez-supination",
+        "curl-scott-haltere-neutre",
+        "curl-scott-haltere-prise-neutre"
+      ],
+      "observed": "Curls debout ou sans pupitre pour des curls Scott; certaines prises sont aussi différentes.",
+      "action": "Vérifier pupitre, position du coude et prise pour chaque variante.",
+      "status": "open"
+    },
+    {
+      "id": "warmup-shared-upper-body",
+      "scope": "echauffement",
+      "observed": "Bg emploie warmup-mobilite.jpg (cercles de bras) aussi pour mobilité hanches/chevilles et activation fessiers.",
+      "action": "Associer les étapes bas du corps à leurs gestes propres; pas de repli sur un guide de piscine.",
+      "status": "open",
+      "candidateProgress": "Correction partielle : Activation fessiers / Ponts fessiers au sol, 10 répétitions contrôlées / 60 s reçoit le GIF au sol déjà revu, en fiche et chrono, y compris ancienne étape sauvegardée reconnue exactement, sans migration. Mobilité hanches/chevilles, activation scapulaire et illustration générale encore à traiter."
+    },
+    {
+      "id": "warmup-approach-always-bench",
+      "scope": "echauffement",
+      "observed": "Bg emploie warmup-series-approche.jpg (développé couché) pour toutes les approches, même avant un squat.",
+      "action": "Utiliser le premier exercice réel et son visuel validé, sans changer les charges ni la durée.",
+      "status": "open",
+      "candidateProgress": "Correction partielle : approches seulement des deux IDs revus (pont au sol et French press EZ), avec exerciseId/mediaRole conservés par les deux boutons de lancement. Les 207 autres IDs et anciennes approches sans identité gardent le chemin antérieur ; ne pas deviner depuis la séance actuelle. Consignes, durées, pourcentages et arrondis inchangés. Le libellé générique charge légère à choisir reste aussi présent pour le poids du corps : précision future nécessaire."
+    },
+    {
+      "id": "pool-land-guides",
+      "scope": "piscine",
+      "guides": [
+        "Gainage au bord (vertical)",
+        "Mobilité épaules aquatique",
+        "Mobilité hanches / chevilles",
+        "Ciseaux au bord",
+        "Talons-fesses"
+      ],
+      "observed": "Respectivement planche latérale sur banc, mouvement avec élastique à sec, flexion de genou couché à la poulie, relevés de jambes sur banc, et montée de genou contre un mur. Ne correspondent pas aux consignes aquatiques.",
+      "action": "Vrais guides aquatiques ou absence explicitement signalée, jamais une autre technique.",
+      "status": "open"
+    },
+    {
+      "id": "pool-stretch-compound",
+      "scope": "piscine",
+      "guides": [
+        "Étirements au bord"
+      ],
+      "observed": "Image d'ischio-jambier pied sur le bord, alors que le texte décrit mollets, épaules/dos et quadriceps.",
+      "action": "Représenter les gestes décrits séparément.",
+      "status": "open"
+    },
+    {
+      "id": "tabata-land-to-water",
+      "scope": "tabata",
+      "observed": "s5 et v5 cherchent dans POOL_GUIDES sans tenir compte de meta.type. Quatre des 38 noms au sol sélectionnent un guide aquatique: Gainage planche, Battements de jambes, Montées de genoux, Marche sur place.",
+      "action": "Résolution explicite par contexte au sol/aqua. Tester les mêmes noms dans les deux contextes.",
+      "status": "open"
+    },
+    {
+      "id": "tabata-missing-demonstrations",
+      "scope": "tabata",
+      "observed": "34 des 38 noms au sol ne résolvent aucun média d'exercice via s5; gi montre alors la photo générique recovery-human.jpg. Cela ne constitue pas une démonstration correspondante.",
+      "action": "Compléter les 38 mouvements, avec libellés G/D et versions douces respectés; contrôler les six mouvements du générateur aqua.",
+      "status": "open"
+    },
+    {
+      "id": "stretch-pigeon",
+      "scope": "etirements",
+      "exercises": [
+        "stretch-fes-0"
+      ],
+      "path": "/media/stretch-pigeon.jpg",
+      "observed": "Pigeon au sol avec tête coupée dans le fichier; les consignes demandent une cheville sur l'autre genou en position assise.",
+      "action": "L'image stretch-piriforme.jpg est une candidate déjà présente, à vérifier puis réassocier.",
+      "status": "open"
+    },
+    {
+      "id": "stretch-triceps-back",
+      "scope": "etirements",
+      "exercises": [
+        "stretch-tri-1"
+      ],
+      "path": "/media/stretch-triceps-dos.jpg",
+      "observed": "Personnages bras baissés au lieu d'une main entre les omoplates et du coude au-dessus de la tête.",
+      "action": "Remplacer par la posture réellement décrite.",
+      "status": "open"
+    },
+    {
+      "id": "stretch-calf-step",
+      "scope": "etirements",
+      "exercises": [
+        "stretch-mol-1"
+      ],
+      "path": "/media/stretch-mollet-marche.jpg",
+      "observed": "Étirement au mur au lieu du talon sous le niveau d'une marche.",
+      "action": "Remplacer sans confondre avec l'autre étirement des mollets.",
+      "status": "open"
+    },
+    {
+      "id": "stretch-hip-target",
+      "scope": "etirements",
+      "exercises": [
+        "stretch-moy-0"
+      ],
+      "path": "/media/stretch-adduction-debout.jpg",
+      "observed": "Fente latérale/adducteurs au lieu du croisement de jambes debout décrit pour le moyen fessier/TFL.",
+      "action": "Respecter la posture et le groupe visé; ne pas valider sur le seul mot adduction.",
+      "status": "open"
+    },
+    {
+      "id": "stretch-other-postures",
+      "scope": "etirements",
+      "exercises": [
+        "stretch-epA-0",
+        "stretch-epP-0",
+        "stretch-bic-0",
+        "stretch-avb-0",
+        "stretch-isc-0"
+      ],
+      "observed": "Désaccords entre texte et position visible: bras devant au lieu de mains derrière; bras contre poitrine au lieu de main tirée; appui au mur au lieu de main tirée dans le dos; appui à quatre pattes au lieu d'étirement manuel de l'avant-bras; flexion debout au lieu d'assis jambes tendues.",
+      "action": "Examiner/remplacer individuellement sans modifier les consignes d'entraînement pour justifier une image.",
+      "status": "open"
+    },
+    {
+      "id": "pool-recovery-to-cardio",
+      "scope": "piscine",
+      "path": "/media/cardio-recup-active.jpg",
+      "reportedByUser": "En récupération lors de la piscine en nage fractionnée, ne pas afficher un vélo.",
+      "observed": "Le résolveur bg extrait de la 1.4.0 renvoie Elliptique — récupération active pour Récupération active ou Récup active même avec segment=pool, par repli de bl vers If. Le fichier cardio-recup-active.jpg a été examiné : il montre un appareil elliptique à sec.",
+      "evidence": "tests/pool-recovery.test.mjs : exécution isolée des fonctions Ge/bg exactes du bundle signé, SHA APK/JS contrôlés. Les 24 récupérations explicitement nommées marche du Swim Interval standard résolvent au contraire vers pool-marche-aquatique.jpg dans bg.",
+      "limits": "Mécanisme de mauvais repli reproduit, mais le parcours exact du téléphone signalé par l’utilisateur n’est pas encore reproduit. Examiner les séances complémentaires, les libellés génériques et les anciens minuteurs avec step.img prioritaire dans v5.",
+      "action": "Interdire tout repli vers vélo/elliptique ou exercice à sec pour un segment piscine, y compris récupération. Associer le visuel à la consigne réelle : marche aquatique, nage douce ou récupération au bord selon le cas. Contrôler fiche, chrono, agrandissement et reprise de minuteur persisté, trois niveaux et deux profils. Conserver les vrais blocs elliptiques hors bassin et les durées ; ne pas changer le programme pour justifier une image.",
+      "status": "open",
+      "candidateProgress": "candidate/README.md : frontière pool/cardio et affichage des chronos persistés testés dans un candidat web. 17 tests Node et 14 parcours navigateur réussis. Les récupérations génériques restent sans démonstration validée ; parcours téléphone non reproduit ; statut toujours ouvert, aucun APK livré."
+    },
+    {
+      "id": "hip-adduction-not-abduction",
+      "scope": "musculation",
+      "exercises": [
+        "abduction-hanche-debout-a-la-poulie",
+        "abduction-hanche-a-la-poulie",
+        "abduction-hanche-a-la-poulie-myo-reps",
+        "fire-hydrant-a-l-elastique"
+      ],
+      "path": "/media/03098b19c4672ce5.gif",
+      "observed": "Adduction debout à la poulie affichée pour des abductions de hanche et un fire hydrant à quatre pattes.",
+      "action": "Conserver ce fichier pour une éventuelle vraie adduction ; rechercher les bons gestes sans modifier les exercices.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "floor-bridge-to-bench-feet",
+      "scope": "musculation",
+      "exercises": [
+        "pont-fessier-au-sol-activation"
+      ],
+      "path": "/media/0766d3a06bf79dc8.gif",
+      "observed": "Le pont fessier au sol montre les pieds sur un banc.",
+      "action": "La source /media/8eecb0152081ff26.gif montre un pont au sol sans charge ; revue complète et agrandie réalisée. Candidate à intégrer/tester par identifiant, sans modifier glute-bridge-pieds-sur-banc.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open",
+      "candidateProgress": "Candidat : GIF/vignette au sol conservés, fiche et texte technique par défaut maintenant propres à cet identifiant, conformément à la note source (2 s en haut). Générique bridge et vraie variante sur banc inchangés. Fiche, séance/repos, échauffement nouveau et activation ancienne sauvegardée testés pour les deux profils. Pas de validation Android/toutes surfaces ni nouvel APK : groupe toujours ouvert."
+    },
+    {
+      "id": "unilateral-rdl-to-bilateral",
+      "scope": "musculation",
+      "exercises": [
+        "souleve-de-terre-roumain-unilateral-haltere"
+      ],
+      "path": "/media/1c63a36d168d8b74.gif",
+      "observed": "Deux pieds au sol et deux haltères, pas le soulevé de terre unilatéral demandé.",
+      "action": "Démonstration unilatérale avec le matériel prescrit, pas une simple image du même muscle.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "unilateral-calf-to-bilateral-barbell",
+      "scope": "musculation",
+      "exercises": [
+        "mollets-debout-unilateraux"
+      ],
+      "path": "/media/3e2ed581e11781d5.gif",
+      "observed": "Deux jambes et barre sur le dos au lieu de mollets unilatéraux.",
+      "action": "Chercher le bon appui et la bonne variante ; ne pas ajouter une barre au programme.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "glute-kickback-to-triceps",
+      "scope": "musculation",
+      "exercises": [
+        "kickback-a-la-poulie",
+        "kickback-a-l-elastique",
+        "kickback-a-la-poulie-drop-set-final"
+      ],
+      "path": "/media/489169360e044c48.gif",
+      "observed": "Le mouvement visible est une extension du coude pour les triceps ; le catalogue et la consigne visent le grand fessier et la jambe.",
+      "action": "Séparer les deux homonymes kickback, puis séparer poulie et élastique.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "incline-dumbbell-to-flat",
+      "scope": "musculation",
+      "exercises": [
+        "developpe-halteres-incline-pronation"
+      ],
+      "path": "/media/a4c1fb89be18062f.gif",
+      "observed": "Banc plat affiché pour un développé incliné.",
+      "action": "Vérifier l’angle du banc et la prise avant réassociation, conserver le visuel pour le développé couché plat.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "compound-abs-to-seated-cable-crunch",
+      "scope": "musculation",
+      "exercises": [
+        "circuit-abdominaux-crunch-releves-gainage"
+      ],
+      "path": "/media/c1065beff4823907.gif",
+      "observed": "Un crunch assis à la poulie ne couvre pas crunch, relevés et gainage du circuit.",
+      "action": "Démonstrations distinctes des composantes, avec le bon matériel.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "standing-singlearm-to-seated-press",
+      "scope": "musculation",
+      "exercises": [
+        "developpe-haltere-un-bras-debout"
+      ],
+      "path": "/media/d9c88be0658a81af.gif",
+      "observed": "Développé assis à deux haltères au lieu d’un bras debout.",
+      "action": "Séparer posture et latéralité sans modifier la définition.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "bridge-one-and-half-to-march",
+      "scope": "musculation",
+      "exercises": [
+        "glute-bridge-en-1-5-reps"
+      ],
+      "path": "/media/e5f17140d8d97591.gif",
+      "observed": "Le GIF lève alternativement les jambes en pont ; il ne montre pas la montée complète, demi-descente et remontée décrites dans le programme.",
+      "action": "Démonstration de répétition 1,5 réelle ; ne pas changer le tempo ou le nom pour justifier cette marche en pont.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "band-clamshell-to-abduction-machine",
+      "scope": "musculation",
+      "exercises": [
+        "clamshell-a-l-elastique",
+        "abduction-hanche-a-l-elastique",
+        "abduction-assise-en-1-5-reps"
+      ],
+      "path": "/media/f73444e9dc2fee89.gif",
+      "observed": "Machine d’abduction assise utilisée pour clamshell/élastique et répétitions 1,5 non montrées.",
+      "action": "Préserver la machine pour son exercice ; fournir des gestes distincts pour les variantes. Le GIF de bande assise /media/b49969e64dc275f5.gif est une candidate pour la variante assise seulement, pas pour clamshell.",
+      "evidence": "review/long-animations.json; indexed complete contact sheets",
+      "status": "open"
+    },
+    {
+      "id": "combo-step-seconds-display",
+      "scope": "affichage",
+      "exercises": [],
+      "path": null,
+      "observed": "Dans la modale de séance combinée (G4), chaque ligne d'étape affiche la durée brute en secondes (« 1500 s ») au lieu de minutes lisibles, alors que le bloc au-dessus affiche « 25 min prévues » et que le chrono de la même étape affiche 25:00. Constaté à l'identique dans la 1.4.0 publiée et dans le candidat ; non introduit par la correction piscine.",
+      "action": "Afficher des minutes lisibles dans ces lignes d'étape (et seulement cela) après revue ; ne changer aucune durée, prescription ni donnée. Preuve : review/pool-defect-published-1.4.0-25min.png, review/pool-candidate-nage-douce.png.",
+      "status": "open"
+    },
+    {
+      "id": "systematic-alias-resolution",
+      "scope": "musculation",
+      "exercises": [],
+      "path": null,
+      "observed": "114 des 209 exercices n'ont aucun dessin propre. Le bundle 1.4.0 les résout par une carte d'alias livrée (identifiant -> nom d'un dessin existant, 104 entrées) puis, à défaut, par une recherche de similarité (mots du nom + matériel, seuil de score). Résultat livré : 95 dessins exacts, 104 « variante », 10 « famille ». 25 alias n'ont aucune relation de nom, ex. leg-extension -> « Leg press », wood-chop-poulie-haute -> « Crunch à la poulie », ab-wheel-roulette -> « Jackknife sur swiss ball », good-morning-debout -> « Soulevé de terre roumain », tractions-pull-up -> « Tirage vertical prise large », pullover-cable-bras-tendus -> « Tirage vertical prise pronation », mobilite-des-epaules -> « Bird dog », respiration-diaphragmatique -> « Dead bug », step-up -> « Fentes avant alternées ».",
+      "action": "Registre extrait et versionné : review/alias-substitutions.json (triage mot-à-mot, jamais une décision de revue). Aucun groupe ne peut être clos par un alias : chaque identifiant doit être revu individuellement (matériel, position, contexte). Le candidat ne modifie aucune de ces 104 entrées (test dédié).",
+      "status": "open"
+    },
+    {
+      "id": "shipped-maps-contradict-each-other",
+      "scope": "musculation",
+      "exercises": [
+        "step-up-sur-banc-hauteur-du-genou",
+        "step-up-haut",
+        "abduction-hanche-a-l-elastique",
+        "kickback-a-l-elastique"
+      ],
+      "path": "/media/6809d9052927484a.gif",
+      "observed": "Le bundle contient deux cartes qui se contredisent pour un même exercice. Carte par identifiant : « step-up sur banc (hauteur du genou) » -> « Fentes avant alternées » ; carte par nom : « step-up sur banc (hauteur du genou) » -> /media/6809d9052927484a.gif, un vrai step-up. De même « abduction hanche à l'élastique » : identifiant -> abduction assise machine (/media/f73444e9dc2fee89.gif), nom -> /media/b49969e64dc275f5.gif (abduction assise avec bande). « Kickback à l'élastique » : identifiant -> « Kickback à la poulie » (/media/489169360e044c48.gif, extension de coude vérifiée image par image) ; nom -> /media/04ab405e919744b5.gif.",
+      "action": "Documenter la contradiction par identifiant avant toute substitution. Le dessin de step-up disponible tient des haltères alors que les deux exercices sont déclarés bodyweight : il reste une candidate NON intégrée (déjà noté pour la planche longue clip 21) ; aucune prescription ne sera modifiée pour l'utiliser.",
+      "status": "open"
+    },
+    {
+      "id": "thirtyfive-drawings-never-reviewed",
+      "scope": "musculation",
+      "exercises": [],
+      "path": "/media/882c9c361686a9c9.gif",
+      "observed": "Sur 94 GIF livrés : 13 relus au lot court, 46 au lot long, 5 comme cibles d'alias. Ce passage a relu les 30 dessins restants sur trois planches ordonnées (2 images chacun, légendes d'exercices) — review/never-reviewed.json. Les 94 dessins sont donc désormais examinés au moins une fois.",
+      "action": "Ne pas transformer « examiné » en « validé » : 19 dessins sont cohérents, 5 montrent un autre exercice (relevés suspendus, militaire, leg press pour l'extension, mollets debout pour la presse, élévations debout pour les variantes assises), 5 restent des variantes à confirmer (décliné/écartés déclinés, coude ouvert, back extension horizontal) et 1 reste un écart certain (curl debout pour le banc Scott). « Tous les exercices ont leur visuel » ne peut toujours pas être affirmé.",
+      "status": "open"
+    },
+    {
+      "id": "resolution-by-another-exercise-drawing",
+      "scope": "musculation",
+      "exercises": [
+        "glute-ham-raise",
+        "wood-chop-poulie-haute",
+        "pullover-cable-bras-tendus",
+        "pullover-haltere-plat",
+        "ab-wheel-roulette",
+        "tractions-pull-up",
+        "tractions-supination-chin-up",
+        "lean-away-pull-ups",
+        "drop-lunges-fentes-controlees",
+        "drop-lunges-fentes-sautees-controlees",
+        "california-press-barre-au-cou",
+        "triceps-extensions-halteres-banc-plat",
+        "extensions-triceps-halteres-plat",
+        "extensions-triceps-halteres-incline",
+        "clamshell-a-l-elastique",
+        "fire-hydrant-a-l-elastique",
+        "rowing-a-l-elastique",
+        "mobilite-des-epaules",
+        "respiration-diaphragmatique",
+        "barre-au-front-pushdown-triceps",
+        "fentes-bulgares-halteres-pied-avant-sureleve",
+        "step-up-sur-banc-hauteur-du-genou",
+        "step-up-haut",
+        "good-morning-debout"
+      ],
+      "path": "/media/dc0cabae23adbfd5.gif",
+      "observed": "Parmi les 25 alias sans relation de nom, 16 dessins cibles sur 17 sont déjà le visuel propre d'un autre exercice du catalogue : l'application affiche donc, pour un exercice, le dessin d'un autre (ex. pullovers -> « Tirage vertical prise pronation », ab wheel -> « Jackknife sur swiss ball », wood chop -> « Crunch à la poulie », clamshell -> « Abduction assise machine », glute ham raise -> « Leg curl allongé », good morning -> « Soulevé de terre roumain barre »).",
+      "action": "Décision individuelle consignée pour chacun des 25 identifiants dans review/alias-review.json (motif, matériel, preuve) : 19 écarts, 1 variante inversée (fente bulgare pied avant/arrière), 1 ambiguïté de libellé (« barre au front (pushdown triceps) »), 1 cas « proche mais distinct » (good morning), 2 refus de remplacement sans réécriture de prescription (step-up), 1 corrigé par la réassociation revue. Aucun groupe fermé.",
+      "status": "open"
+    },
+    {
+      "id": "standing-curl-for-scott-bench",
+      "scope": "musculation",
+      "exercises": [
+        "curl-scott-barre-ez-pronation",
+        "curl-scott-barre-ez-supination",
+        "curl-scott-haltere-prise-neutre",
+        "curl-scott-90-haltere-supination",
+        "curl-zottman-un-bras-banc-scott"
+      ],
+      "path": "/media/882c9c361686a9c9.gif",
+      "observed": "Le dessin livré pour les variantes du banc Scott montre un curl à la barre en position debout (2 images relues). Ni banc incliné, ni bras posé, ni haltère selon la variante : matériel et position différents.",
+      "action": "Créer ou trouver un dessin de curl au banc Scott avant toute association. Relecture tracée dans review/never-reviewed.json ; aucune substitution par famille.",
+      "status": "open"
+    },
+    {
+      "id": "standing-calf-for-press-calf",
+      "scope": "musculation",
+      "exercises": [
+        "mollets-a-la-presse"
+      ],
+      "path": "/media/f529e06a69b973f4.gif",
+      "observed": "« Mollets à la presse » est résolu vers le dessin de mollets debout (talons qui montent, debout), pas vers une presse à cuisses. Le matériel annoncé et le matériel montré diffèrent.",
+      "action": "Dessin de presse à mollets à prévoir ; ne pas réaffecter le dessin debout. Relecture tracée dans review/never-reviewed.json.",
+      "status": "open"
+    },
+    {
+      "id": "standing-press-for-behind-neck-and-single-arm",
+      "scope": "musculation",
+      "exercises": [
+        "developpe-derriere-la-nuque",
+        "developpe-haltere-un-bras-debout"
+      ],
+      "path": "/media/22146cff6a787e8a.gif",
+      "observed": "Un seul dessin (développé militaire debout à la barre, 2 images) sert aussi au développé derrière la nuque et au développé un bras debout. Le trajet et le nombre de bras ne sont pas ceux prescrits.",
+      "action": "Deux variantes à illustrer séparément ou à déclarer explicitement en lacune. Relecture tracée dans review/never-reviewed.json.",
+      "status": "open"
+    },
+    {
+      "id": "hanging-raise-for-incline-raise",
+      "scope": "musculation",
+      "exercises": [
+        "releves-de-jambes-incline"
+      ],
+      "path": "/media/16f6ff0f7ceba611.gif",
+      "observed": "« Relevés de jambes incliné » est résolu vers le dessin suspendu à la barre (2 images relues) : appui suspendu au lieu d'un banc incliné.",
+      "action": "Dessin du relevé sur banc incliné à prévoir ; le dessin suspendu reste correct pour son vrai exercice.",
+      "status": "open"
+    },
+    {
+      "id": "remaining-drawings-variants-to-confirm",
+      "scope": "musculation",
+      "exercises": [
+        "developpe-halteres-decline-prise-neutre",
+        "ecartes-halteres",
+        "rowing-haltere-un-bras",
+        "rowing-haltere-un-bras-coude-ouvert",
+        "back-extension-horizontal"
+      ],
+      "path": "/media/805f8592e2bccb1a.gif",
+      "observed": "Cinq dessins relus ici montrent le bon geste mais pas la variante annoncée : le déclin n'est pas visible (développé décliné prise neutre, écartés déclinés), les deux rowings à un bras sont deux dessins quasi identiques (l'affectation « coude ouvert » reste indécidable), et le banc de back extension paraît incliné alors que l'exercice est dit horizontal.",
+      "action": "Confirmer avec l'utilisateur lesquelles de ces variantes exigent un dessin distinct. Verdicts « variant-to-confirm » dans review/never-reviewed.json, aucun groupe fermé.",
+      "status": "open"
+    },
+    {
+      "id": "standing-lateral-raise-for-seated-and-incline-variants",
+      "scope": "musculation",
+      "exercises": [
+        "elevations-laterales-assises",
+        "elevations-laterales-assises-variante",
+        "elevations-laterales-coude-a-90",
+        "elevations-laterales-incline-30-face-au-banc",
+        "elevations-laterales-incline-30",
+        "elevations-laterales-incline-45",
+        "elevations-laterales-incline",
+        "elevations-laterales-lean-away"
+      ],
+      "path": "/media/9e7f92622aca6913.gif",
+      "observed": "Le dessin montre des élévations latérales debout, bras montant jusqu'à l'horizontale : conforme aux élévations latérales debout, mais aucune des variantes assises, coude à 90°, incliné 30/45 ni lean-away qui utilisent le même fichier n'est montrée.",
+      "action": "Décider avec l'utilisateur lesquelles de ces variantes exigent un dessin propre (posture assise / banc incliné / appui lean-away). Verdict « partial-mismatch » dans review/never-reviewed.json, aucun groupe fermé.",
+      "status": "open"
+    }
+  ]
 }

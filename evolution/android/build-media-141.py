@@ -5,8 +5,10 @@ changes; the nine DEX stay byte-identical.
 
 Dry run (throwaway key inside .cache, output inside .cache, never a release):
     python3 evolution/android/build-media-141.py --dry-run
-Real build (requires the private key material, never committed):
-    python3 evolution/android/build-media-141.py --output /path/to/app.apk
+Real build (new identity authorized by the user on 23 Sep 2026; private material stays
+in .private/ and in the git-ignored private ZIP under downloads/, only the public
+identity fingerprint is committed):
+    python3 evolution/android/build-media-141.py --real
 
 A new key cannot update an installation signed with the old one: the corrected
 app keeps the same package name and is therefore installed after uninstalling
@@ -92,24 +94,65 @@ def material(dry_run):
             'La clé de livraison sera créée à l\'étape suivante et sa sauvegarde privée remise à l\'utilisateur.\n')
         print('DRY RUN identity certificate:', identity['certificateSha256'])
         return identity, DRY_PRIVATE, True
-    raise ValueError('Real build refused here: see the delivery step of PASSATION.md')
+    # Real path: the user explicitly authorized a new identity (23 Sep 2026).
+    # The existing certificates (7d6f9c8f... , 4d4fbd84...) are never touched,
+    # regenerated or replaced by this script: it only creates a NEW key pair.
+    if IDENTITY.exists():
+        raise ValueError('Refuse to overwrite the published identity file: ' + str(IDENTITY))
+    if PRIVATE.exists() and any(PRIVATE.iterdir()):
+        raise ValueError('Refuse to overwrite existing private material: ' + str(PRIVATE))
+    identity, files = make_identity()
+    PRIVATE.mkdir(parents=True, exist_ok=True)
+    os.chmod(PRIVATE, 0o700)
+    for name, data in files.items():
+        path = PRIVATE / name
+        path.write_bytes(data)
+        os.chmod(path, 0o600)
+    (PRIVATE / 'A-LIRE.txt').write_text(
+        'SAUVEGARDE PRIVEE — identite de signature de Yanis Fitness Evolution 1.4.1.\n\n'
+        'Contenu: jarvis-evolution-media.p12 (cle privee + certificat), password.txt (mot de passe),\n'
+        'identity.json (empreinte publique du certificat).\n\n'
+        'A CONSERVER HORS TELEPHONE ET HORS GITHUB: sans ce fichier, plus aucune mise a jour de\n'
+        'cette application ne sera possible. Ce ZIP n est pas chiffre: ne le partagez pas.\n'
+        'Empreinte SHA-256 du certificat: ' + identity['certificateSha256'] + '\n')
+    files['A-LIRE.txt'] = (PRIVATE / 'A-LIRE.txt').read_bytes()
+    stream = io.BytesIO()
+    with zipfile.ZipFile(stream, 'w', zipfile.ZIP_DEFLATED) as archive:
+        for name in NAMES:
+            archive.writestr(name, files[name])
+    archive_bytes = stream.getvalue()
+    archive_path = ROOT / 'downloads' / ARCHIVE
+    archive_path.parent.mkdir(parents=True, exist_ok=True)
+    archive_path.write_bytes(archive_bytes)
+    IDENTITY.write_text(json.dumps(identity, ensure_ascii=False, indent=2) + '\n')
+    print('RELEASE identity certificate:', identity['certificateSha256'])
+    print('private material:', PRIVATE)
+    print('private backup archive:', archive_path, len(archive_bytes), 'bytes')
+    return identity, PRIVATE, False
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--real', action='store_true',
+                        help='release build with the new identity authorized on 23 Sep 2026')
     parser.add_argument('--output', type=pathlib.Path)
     args = parser.parse_args()
-    if not args.dry_run:
-        parser.error('this build script only performs the dry run; the release path is documented in PASSATION.md')
-    output = (args.output or ROOT / '.cache/media-apk-dryrun/Yanis-Fitness-Evolution-1.4.1-dryrun.apk').resolve()
-    if not output.is_relative_to(ROOT / '.cache'):
-        raise ValueError('Dry-run output must stay inside .cache')
+    if args.dry_run == args.real:
+        parser.error('choose exactly one of --dry-run (throwaway key, .cache only) or --real (release)')
+    if args.dry_run:
+        output = (args.output or ROOT / '.cache/media-apk-dryrun/Yanis-Fitness-Evolution-1.4.1-dryrun.apk').resolve()
+        if not output.is_relative_to(ROOT / '.cache'):
+            raise ValueError('Dry-run output must stay inside .cache')
+    else:
+        output = (args.output or ROOT / 'downloads/Yanis-Fitness-Evolution-1.4.1.apk').resolve()
+        if not output.is_relative_to(ROOT / 'downloads'):
+            raise ValueError('Release output must stay inside downloads/')
     assert sha(BASE.read_bytes()) == BASE_SHA, 'Wrong 1.4.0 baseline'
     assert sha(SIGNER.read_bytes()) == SIGNER_SHA, 'Wrong signer build'
     web = (ROOT / '.cache/media-pool-candidate' / BUNDLE.replace('assets/public/', '')).read_bytes()
     assert sha(web) == BUNDLE_SHA, 'Candidate web bundle changed: rebuild and renew the pin'
-    identity, private, dry = material(True)
+    identity, private, dry = material(args.dry_run)
     work = ROOT / '.cache/media-release'
     work.mkdir(parents=True, exist_ok=True)
     unsigned, aligned, candidate = [work / n for n in ['unsigned.apk', 'aligned.apk', 'signed.apk']]
@@ -146,18 +189,31 @@ def main():
         assert len(webfiles) == 272 and dst.read(BUNDLE) == web
     output.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(candidate, output)
-    report = {'mode': 'dry-run-test-key-never-release', 'baseApkSha256': BASE_SHA, 'apkSha256': sha(output.read_bytes()),
-              'apkBytes': output.stat().st_size, 'packagedWebSha256': sha(web), 'changedEntries': changed,
-              'webFiles': 272, 'unchangedWebFiles': 271, 'nativeDexFiles': 9, 'byteIdenticalDexFiles': 9,
-              'signatureVerified': ['v2', 'v3'], 'alignmentVerified': True, 'version': VERSION, 'versionCode': VERSION_CODE,
-              'testCertificateSha256': identity['certificateSha256'], 'deviceTested': False,
+    report = {'mode': 'dry-run-test-key-never-release' if dry else 'release-signed-new-media-identity',
+              'identity': identity, 'baseApkSha256': BASE_SHA, 'apkSha256': sha(output.read_bytes()),
+              'apkBytes': output.stat().st_size, 'packagedWebSha256': sha(web),
+              'packagedWebDifference': 'V 1.4.0 -> V 1.4.1 only: two delivered-code rewrites (pool step guide)',
+              'changedEntries': changed, 'webFiles': 272, 'unchangedWebFiles': 271, 'nativeDexFiles': 9,
+              'byteIdenticalDexFiles': 9, 'signatureVerified': ['v2', 'v3'], 'alignmentVerified': True,
+              'version': VERSION, 'versionCode': VERSION_CODE,
+              'testCertificateSha256': identity['certificateSha256'] if dry else None,
+              'releaseCertificateSha256': None if dry else identity['certificateSha256'],
+              'signerSha256': SIGNER_SHA, 'stagesIncluded': [1, 2, 3, 4, 5, 6, 7], 'approvedHomeIncluded': True,
+              'generalConversationalAiIncluded': False, 'deviceTested': False,
+              'externalPrivateBackupRetentionConfirmed': False,
               'installNote': 'same package as 1.4.0 with a different signature: uninstall 1.4.0 first, then restore the JSON backup'}
-    (output.parent / 'fidelity.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    if not dry:
+        report['privateBackupArchive'] = ARCHIVE
+    (output.parent / (output.stem + '.fidelity.json' if not dry else 'fidelity.json')).write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    if not dry:
+        (output.parent / (output.name + '.sha256')).write_text(report['apkSha256'] + '  ' + output.name + '\n')
     print(verification.splitlines()[-1])
-    print('DRY-RUN APK:', output)
+    print(('RELEASE APK: ' if not dry else 'DRY-RUN APK: ') + str(output))
     print('SHA256:', report['apkSha256'], report['apkBytes'], 'bytes')
     print('changed entries:', changed)
-    print('dry run only: the test certificate is NOT a release identity')
+    print('dry run only: the test certificate is NOT a release identity' if dry else
+          'release build signed with the NEW authorized identity ' + identity['certificateSha256'])
 
 
 if __name__ == '__main__':

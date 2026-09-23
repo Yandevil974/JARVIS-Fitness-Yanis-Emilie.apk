@@ -135,9 +135,11 @@
       "id": "rowing-haltere-un-bras",
       "name": "Rowing haltère un bras",
       "baselinePath": "/media/4dfda05b1db24000.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
       "candidatePath": "/media/4dfda05b1db24000.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -889,7 +891,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "scott-to-standing-curl"
+        "scott-to-standing-curl",
+        "standing-curl-for-scott-bench"
       ],
       "candidatePath": "/media/882c9c361686a9c9.gif",
       "candidateStatus": "no-targeted-correction",
@@ -921,9 +924,11 @@
       "id": "elevations-laterales-assises",
       "name": "Élévations latérales assises",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -932,9 +937,11 @@
       "id": "elevations-laterales-assises-variante",
       "name": "Élévations latérales assises (variante)",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -943,9 +950,11 @@
       "id": "elevations-laterales-coude-a-90",
       "name": "Élévations latérales coude à 90°",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1000,9 +1009,11 @@
       "id": "back-extension-horizontal",
       "name": "Back extension horizontal",
       "baselinePath": "/media/f64281e2dbd7986f.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
       "candidatePath": "/media/f64281e2dbd7986f.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1194,9 +1205,11 @@
       "id": "releves-de-jambes-incline",
       "name": "Relevés de jambes incliné",
       "baselinePath": "/media/16f6ff0f7ceba611.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "hanging-raise-for-incline-raise"
+      ],
       "candidatePath": "/media/16f6ff0f7ceba611.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1229,9 +1242,11 @@
       "id": "developpe-halteres-decline-prise-neutre",
       "name": "Développé haltères décliné, prise neutre",
       "baselinePath": "/media/63e925f417c73b92.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
       "candidatePath": "/media/63e925f417c73b92.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1240,9 +1255,11 @@
       "id": "rowing-haltere-un-bras-coude-ouvert",
       "name": "Rowing haltère un bras, coude ouvert",
       "baselinePath": "/media/44fc577dce29aff5.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
       "candidatePath": "/media/44fc577dce29aff5.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1265,7 +1282,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "scott-to-standing-curl"
+        "scott-to-standing-curl",
+        "standing-curl-for-scott-bench"
       ],
       "candidatePath": "/media/882c9c361686a9c9.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1304,7 +1322,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 11,
       "findingGroups": [
-        "scott-to-standing-curl"
+        "scott-to-standing-curl",
+        "standing-curl-for-scott-bench"
       ],
       "candidatePath": "/media/36c6cb37445d3880.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1437,9 +1456,11 @@
       "id": "elevations-laterales-incline-30-face-au-banc",
       "name": "Élévations latérales incliné 30° (face au banc)",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1634,9 +1655,11 @@
       "id": "elevations-laterales-incline-30",
       "name": "Élévations latérales incliné 30°",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1645,9 +1668,11 @@
       "id": "elevations-laterales-incline-45",
       "name": "Élévations latérales incliné 45°",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1725,9 +1750,11 @@
       "id": "ecartes-halteres",
       "name": "Écartés haltères",
       "baselinePath": "/media/805f8592e2bccb1a.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
       "candidatePath": "/media/805f8592e2bccb1a.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1749,7 +1776,9 @@
       "baselinePath": "/media/36c6cb37445d3880.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 11,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-curl-for-scott-bench"
+      ],
       "candidatePath": "/media/36c6cb37445d3880.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1830,9 +1859,11 @@
       "id": "developpe-derriere-la-nuque",
       "name": "Développé derrière la nuque",
       "baselinePath": "/media/22146cff6a787e8a.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-press-for-behind-neck-and-single-arm"
+      ],
       "candidatePath": "/media/22146cff6a787e8a.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1852,9 +1883,11 @@
       "id": "mollets-a-la-presse",
       "name": "Mollets à la presse",
       "baselinePath": "/media/f529e06a69b973f4.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-calf-for-press-calf"
+      ],
       "candidatePath": "/media/f529e06a69b973f4.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1985,7 +2018,9 @@
       "baselinePath": "/media/36c6cb37445d3880.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 11,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-curl-for-scott-bench"
+      ],
       "candidatePath": "/media/36c6cb37445d3880.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2007,9 +2042,11 @@
       "id": "elevations-laterales-incline",
       "name": "Élévations latérales incliné",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2126,7 +2163,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 41,
       "findingGroups": [
-        "standing-singlearm-to-seated-press"
+        "standing-singlearm-to-seated-press",
+        "standing-press-for-behind-neck-and-single-arm"
       ],
       "candidatePath": "/media/d9c88be0658a81af.gif",
       "candidateStatus": "no-targeted-correction",
@@ -2216,9 +2254,11 @@
       "id": "elevations-laterales-lean-away",
       "name": "Élévations latérales lean away",
       "baselinePath": "/media/9e7f92622aca6913.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
       "candidatePath": "/media/9e7f92622aca6913.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false

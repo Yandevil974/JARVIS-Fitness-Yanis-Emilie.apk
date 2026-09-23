@@ -32,3 +32,14 @@ L’utilisateur indique ne pas trouver l’archive confidentielle dans ses tél�
 Nouvelle recherche dans les fichiers accessibles sous `/home/user` (hors objets Git et certaines dépendances) : aucun fichier correspondant aux noms de signature, extensions `.jks`/`.keystore`/`.p12`, candidat APK ou étape 7. L’API Actions de ce dépôt retourne zéro artefact. La liste des secrets GitHub est inaccessible (HTTP 403 « Resource not accessible by integration »), ce qui n’équivaut pas à une liste vide. Aucun accès aux sauvegardes internes d’Arena n’est disponible parmi les outils de cette session.
 
 Prochaine piste de récupération : demander au support Arena si une restauration de la session antérieure est possible, notamment du commit non publié et du répertoire privé de signature. Ne pas garantir cette restauration. Ne pas transmettre de clé ou mot de passe dans un ticket public. Aucune nouvelle identité, migration ou désinstallation n’est autorisée par ce constat.
+
+# Livraison 1.4.1 — 23 septembre 2026 (correction piscine)
+
+Nouvelle clé **autorisée par l’utilisateur le 23 septembre 2026** (« si faut en construire une autre avec une nouvelle clé tu as mon autorisation »). Les certificats existants ne sont ni régénérés ni remplacés : `7d6f9c8f…` (1.4.0) et `4d4fbd84…` (historique) restent intacts. La nouvelle identité porte l’empreinte `d3ca5a27cf9b97f15404b1d1dad5c35abf5ec39e4917d0d30e89078a71782a3d`.
+
+- APK publié : `downloads/Yanis-Fitness-Evolution-1.4.1.apk`, 24 909 281 octets, SHA-256 `c8dff99767923e1a452acffd0484d3e19cc989bacad212ee3cbb47bef01a668d`.
+- Base : 1.4.0 (`30b20ce1…`) ; seules entrées modifiées : `AndroidManifest.xml` (versionName 1.4.1, versionCode 12) et `assets/public/assets/index-CBCies4k.js` (paquet web `b74853bc…`, deux réécritures de code livré). 9/9 DEX identiques octet pour octet, 271/272 fichiers web inchangés.
+- Signature v2 + v3 vérifiée, alignement vérifié, un seul signataire.
+- Sauvegarde privée : `downloads/Yanis-Fitness-Evolution-1.4.1-SAUVEGARDE-PRIVEE.zip` (ignorée par Git, non publiée) et `.private/yanis-fitness-evolution-media/` (droits 700/600). Seule l’empreinte publique est commitée : `evolution/android/identity-media-141.json`.
+- Installation : même identifiant d’application, signature différente ⇒ désinstaller la 1.4.0, installer la 1.4.1, restaurer le JSON de sauvegarde. Détail : [INSTALLATION-1.4.1.md](../../downloads/INSTALLATION-1.4.1.md).
+- Aucun test sur téléphone réel dans cet environnement ; l’IA conversationnelle reste exclue.

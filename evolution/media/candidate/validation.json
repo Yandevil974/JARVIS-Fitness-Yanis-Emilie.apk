@@ -37,21 +37,7 @@
     ]
   },
   "tests": {
-    "node": {
-      "passed": 37,
-      "baselineCharacterization": 10,
-      "candidate": 21,
-      "reviewTraceability": 6,
-      "perFile": {
-        "tests/audit.test.mjs": 6,
-        "tests/frame-review.test.mjs": 6,
-        "tests/pool-candidate.test.mjs": 15,
-        "tests/pool-recovery.test.mjs": 4,
-        "tests/warmup-candidate.test.mjs": 6
-      },
-      "warmupCombinationsCompared": 1254,
-      "command": "node --test evolution/media/tests/*.test.mjs"
-    },
+    "node": "38/38",
     "targetedBrowser": {
       "passed": 26,
       "failedInFinalRun": 0,
@@ -85,7 +71,8 @@
     },
     "browser": "Chromium 138.0.7204.0",
     "physicalAndroidTest": false,
-    "full90DeliverySuiteRerun": false
+    "full90DeliverySuiteRerun": false,
+    "nodeNote": "node --test evolution/media/tests/*.test.mjs after node evolution/media/coverage.mjs"
   },
   "poolRecovery": {
     "reviewedTexts": 12,
@@ -159,11 +146,24 @@
   },
   "drawingReviewCoverage": {
     "packagedGifs": 94,
-    "reviewedLongGrid": 59,
-    "neverReviewed": 35,
-    "note": "35 drawings have never been examined. No completion claim for \"every exercise has its visual\"."
+    "gifsExaminedAtLeastOnce": 94,
+    "unreviewed": 0,
+    "records": {
+      "longAnimations": 46,
+      "shortFocus": 13,
+      "aliasTargets": 5,
+      "remainingDrawings": 30
+    },
+    "verdictsRemaining": {
+      "consistent": 19,
+      "variantToConfirm": 5,
+      "partialMismatch": 5,
+      "mismatchKeptOpen": 1
+    },
+    "finalAccepted": false,
+    "meaning": "examined is not validated; no drawing is finally accepted and no group is closed"
   },
-  "openFindingGroups": 41,
+  "openFindingGroups": 47,
   "limitations": [
     "No APK built or signed",
     "No missing media supplied by this patch",
@@ -232,5 +232,36 @@
     ],
     "testCertificateSha256": "6e3a679fe839a09bf01ca806eeeee52ed50cda01070b8bd387646df3a4890352",
     "note": "The test certificate is a throwaway inside .cache and is never a release identity."
+  },
+  "apkDeliveryRelease": {
+    "mode": "release-signed-new-media-identity",
+    "authorizedNewKey": "2026-09-23 (user message)",
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.1.apk",
+    "apkSha256": "c8dff99767923e1a452acffd0484d3e19cc989bacad212ee3cbb47bef01a668d",
+    "apkBytes": 24909281,
+    "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+    "versionName": "1.4.1",
+    "versionCode": 12,
+    "changedEntries": [
+      "AndroidManifest.xml",
+      "assets/public/assets/index-CBCies4k.js"
+    ],
+    "nativeDexFiles": 9,
+    "byteIdenticalDexFiles": 9,
+    "webFiles": 272,
+    "unchangedWebFiles": 271,
+    "packagedWebSha256": "b74853bca4761ccb0f36a4f4612ed4e69b82f42b392dbf1cb7dfd7f6d047e373",
+    "signatureVerified": [
+      "v2",
+      "v3"
+    ],
+    "alignmentVerified": true,
+    "signers": 1,
+    "certificateSha256": "d3ca5a27cf9b97f15404b1d1dad5c35abf5ec39e4917d0d30e89078a71782a3d",
+    "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+    "privateBackup": "downloads/Yanis-Fitness-Evolution-1.4.1-SAUVEGARDE-PRIVEE.zip (git-ignored, handed to the user)",
+    "publicIdentity": "evolution/android/identity-media-141.json",
+    "deviceTested": false,
+    "installNote": "same package, new signature: uninstall 1.4.0, install 1.4.1, restore the JSON backup"
   }
 }

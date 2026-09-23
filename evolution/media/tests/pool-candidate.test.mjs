@@ -154,9 +154,10 @@ test('integrated preview routes a pool-format block through the aquatic context 
  assert.match(fn(candidate,patched,'v5'),/JarvisPoolMedia\.resolve\(f,p\.meta\)/);
 });
 test('shipped alias map is recorded and never silently changed by the candidate', () => {
- const extract=file=>{const s=fs.readFileSync(file,'utf8');const i=s.indexOf('const Z4={');return new Function(s.slice(i,s.indexOf(',Y4=',i))+'\nreturn Z4;')();};
+ const extractText=text=>{const i=text.indexOf('const Z4={');return new Function(text.slice(i,text.indexOf(',Y4=',i))+'\nreturn Z4;')();};
+ const extract=file=>extractText(fs.readFileSync(file,'utf8'));
  const registry=JSON.parse(fs.readFileSync(new URL('../review/alias-substitutions.json',import.meta.url)));
- const published=extract(root+'/.cache/bundle/index-CBCies4k.js');
+ const published=extractText(original);
  assert.equal(Object.keys(published).length,registry.aliasEntryCount);
  assert.equal(registry.exerciseWithoutOwnDrawing,registry.rows.length);
  assert.equal(registry.rows.filter(r=>r.triage==='name-unrelated').length,25);
@@ -191,5 +192,33 @@ test('every name-unrelated alias carries an individual decision and closes no gr
   assert.ok(clip.frames.every(f=>/^[a-f0-9]{64}$/.test(f.rgbaSha256)));
   assert.equal(clip.assetSha256,JSON.parse(fs.readFileSync(new URL('../review/assets-1.4.0.json',import.meta.url))).assets.find(a=>a.path===clip.path).sha256);
   assert.equal(clip.finalAccepted,false);
+ }
+});
+test('the 94 packaged drawings are all reviewed at least once, and reviewing is not validating', () => {
+ const assets=JSON.parse(fs.readFileSync(new URL('../review/assets-1.4.0.json',import.meta.url))).assets;
+ const pass=JSON.parse(fs.readFileSync(new URL('../review/never-reviewed.json',import.meta.url)));
+ const short=JSON.parse(fs.readFileSync(new URL('../review/short-focus.json',import.meta.url)));
+ const long=JSON.parse(fs.readFileSync(new URL('../review/long-animations.json',import.meta.url)));
+ const alias=JSON.parse(fs.readFileSync(new URL('../review/alias-target-frames.json',import.meta.url)));
+ const findings=JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings;
+ const gifs=assets.filter(a=>a.path.endsWith('.gif')).map(a=>a.path);
+ const covered=new Set([...short.clips,...long.clips,...alias.clips,...pass.clips].map(c=>c.path));
+ assert.equal(gifs.length,94);
+ assert.deepEqual(gifs.filter(p=>!covered.has(p)),[]);
+ assert.equal(pass.clipCount,30);
+ assert.equal(pass.reviewedFrameCount,60);
+ assert.equal(pass.coverage.stillUnreviewed.length,0);
+ for(const clip of pass.clips){
+  assert.equal(clip.frameCount,2);
+  assert.deepEqual(clip.reviewedFrameIndices,[0,1]);
+  assert.ok(clip.frames.every(f=>/^[a-f0-9]{64}$/.test(f.rgbaSha256)));
+  assert.equal(clip.assetSha256,assets.find(a=>a.path===clip.path).sha256);
+  assert.ok(clip.observedMovement.length>40,clip.path);
+  assert.ok(['consistent','variant-to-confirm','partial-mismatch','mismatch-kept-open'].includes(clip.verdict),clip.path);
+  // Reviewed never means validated: nothing is finally accepted, and mismatches
+  // must stay tracked by an open finding instead of being closed.
+  assert.equal(clip.finalAccepted,false);
+  if(clip.verdict!=='consistent')
+   assert.ok(clip.usedFor.some(id=>findings.some(f=>f.status==='open'&&(f.exercises||[]).includes(id))),clip.path);
  }
 });
