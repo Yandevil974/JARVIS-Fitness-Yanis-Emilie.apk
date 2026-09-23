@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-23",
+  "status": "scoped-web-candidate-not-release",
+  "releaseReady": false,
+  "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "candidateBundleSha256": "5c041fb8d73a40bf0df0bbec64619ba5b54cc2682b85a0cb123ddcb43f8234c6",
+  "integrity": {
+    "packagedWebFiles": 272,
+    "unchangedWebFiles": 271,
+    "changed": [
+      "assets/public/assets/index-CBCies4k.js"
+    ],
+    "unchangedDeliveredApk": true,
+    "unchangedOtherTopLevelStatements": true,
+    "allowedChangedTopLevelFunctions": [
+      "bg",
+      "v5",
+      "Kh",
+      "Z5",
+      "k5",
+      "Bg",
+      "a5",
+      "$5",
+      "j5"
+    ],
+    "addedHelpers": [
+      "createPoolMedia",
+      "JarvisPoolMedia",
+      "JarvisReviewedMedia",
+      "JarvisReviewedView",
+      "JarvisTechnique",
+      "createWarmupMedia",
+      "JarvisWarmupMedia"
+    ]
+  },
+  "tests": {
+    "node": {
+      "passed": 32,
+      "baselineCharacterization": 9,
+      "candidate": 17,
+      "reviewTraceability": 6,
+      "warmupCombinationsCompared": 1254
+    },
+    "targetedBrowser": {
+      "passed": 20,
+      "failedInFinalRun": 0,
+      "wholeFinalRunSeconds": null,
+      "test": [
+        "evolution/media/tests/pool-candidate.spec.mjs",
+        "evolution/media/tests/warmup-candidate.spec.mjs"
+      ],
+      "reportedDuration": "3.2m",
+      "scope": "previous 14 cumulative cases, with floor-technique assertions, plus 4 new warmup start/approach/zoom/reload/completion cases and 2 saved legacy activation cases"
+    },
+    "existingHomeBrowser": {
+      "passed": 8,
+      "failed": 0,
+      "wholeRunSeconds": 57.6,
+      "test": "evolution/home/tests/home.spec.mjs",
+      "reference": "unchanged web extracted from signed 1.4.0",
+      "requiredEnvironment": "MEDIA_REVIEW_CANDIDATE=1",
+      "comparisonAllowance": "One exact floor-bridge card label changes from ANATOMIE RÉALISTE to GUIDE HUMAIN. Both expected label and image URLs are asserted on candidate/reference, then that exact contextual string alone is normalized for strict whole-main text comparison. Default tests without opt-in remain unchanged."
+    },
+    "browser": "Chromium 138.0.7204.0",
+    "physicalAndroidTest": false,
+    "full90DeliverySuiteRerun": false,
+    "harnessAdjustmentsThisStep": [
+      "VM technique test now includes PATTERN_INFO from original bundled elite JSON (lt dependency), not a fabricated baseline.",
+      "Warmup thumbnail accessible name comes from image alt, not title Agrandir: test uses scoped .warmup-step-thumb. Initial run timed out; no application workaround.",
+      "Parallel home/media test collection raced with deletion of media output directory (ENOENT). Final home suite run sequentially after complete 20-case media suite; both pass. Run these suites sequentially."
+    ]
+  },
+  "openFindingGroups": 36,
+  "limitations": [
+    "No APK built or signed",
+    "No missing media supplied by this patch",
+    "Generic aquatic recovery remains an explicit unresolved gap",
+    "Legacy aquatic images are not all semantically correct",
+    "Old mixed timers without a segment are not guessed",
+    "Exact user phone route not reproduced",
+    "French press remains a two-key-pose GIF, not continuous video or clinical validation",
+    "Dips and other triceps/glute variants remain open; no external replacement approved/integrated",
+    "Warmup mobility/scapular illustration and general warmup panel remain unreviewed/incorrect in known cases",
+    "Approaches of 207 other exercise IDs retain old generic bench visual; no coverage-completion claim",
+    "Old approaches without their own exercise ID/role are not inferred from current workout",
+    "Original bodyweight approach labels still mention choosing a light load; retained, not corrected in this visual scope",
+    "No per-ID override applied to user source notes: explicit workout notes/tips retain priority"
+  ],
+  "privateSigningDirectoryAvailable": false,
+  "previousPoolOnlyBundleSha256": "75f39ae838c5ae7fc96b624f4f21ed4b960820590226d814de03ca86ce4b0107",
+  "reviewedLongAnimations": {
+    "clips": 46,
+    "frames": 588,
+    "method": "ordered contact sheets, not full real-time playback",
+    "associations": 102,
+    "mismatch": 58,
+    "variantReviewRequired": 23,
+    "basicMovementCorrespondsNotFinalApproval": 21
+  },
+  "candidateExerciseOverrides": [
+    "pont-fessier-au-sol-activation",
+    "french-press-barre-ez"
+  ],
+  "previousBridgeOnlyBundleSha256": "b5ab9b5570c00b7842d202ae8fb03fd23ef2c9f80f6f5046393a74aa9663d47f",
+  "reviewedShortFocus": {
+    "clips": 13,
+    "frames": 26,
+    "method": "both frames on five ordered 300px contact sheets, plus two original-size thumbnails",
+    "record": "review/short-focus.json",
+    "subsetOf48TwoFrameGifs": true
+  },
+  "previousLibraryRestBundleSha256": "148cef273a0e3223cc0c3bdb9bdba320163cf1da7582194fcc746155c46b52e8",
+  "candidateTechniqueOverrides": [
+    "pont-fessier-au-sol-activation"
+  ],
+  "warmupCandidate": {
+    "activation": "Exact legacy 60-second floor-bridge / 10-rep instruction, new and saved warmups",
+    "approaches": "Two reviewed exercise IDs only; newly generated steps carry exerciseId/mediaRole through both launch buttons",
+    "persistedDataMigration": false,
+    "programDurationsRepsLoadsChanged": false
+  }
+}

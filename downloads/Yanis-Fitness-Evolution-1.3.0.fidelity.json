@@ -1,0 +1,102 @@
+{
+  "identity": {
+    "appId": "app.yanis.fitness.evolution",
+    "appName": "Yanis Fitness Evolution",
+    "version": "1.3.0",
+    "versionCode": 10,
+    "certificateSha256": "4d4fbd84463300631bb19e0186f4efc51c589a2e27da1ab56dc1f1ad5479e7dc",
+    "previousCertificateSha256": "0849b90901a80eecbd587bd41d5acfbfb120096889bb979dfa37564a8de23225",
+    "installation": "parallel to all previous applications; explicit JSON migration",
+    "userAuthorizedNewIdentity": true,
+    "authorizationDate": "2026-09-20"
+  },
+  "baseApkSha256": "691488f08ada180de1022bf336b14024c71e52427cb2c43547ac3d53c8b8b5ab",
+  "apkSha256": "4c2efeaea0d1d59e9bc329f4b3651e2a860a1416bad900c23a15e0249622a323",
+  "webBundleSha256": "4226c44884a620e06b4308d4374fc9089b02a56e259045888237e3384de5b991",
+  "validatedWebSha256": "b206d7467f947bfcd184f6b57f123fda898c8c83e480c6b0191b97a805e42921",
+  "webStage": "notifications",
+  "changedEntries": [
+    "AndroidManifest.xml",
+    "assets/capacitor.config.json",
+    "assets/public/assets/index-CBCies4k.js",
+    "classes9.dex",
+    "resources.arsc"
+  ],
+  "webFiles": 272,
+  "unchangedWebFiles": 271,
+  "nativeDexFiles": 9,
+  "byteIdenticalDexFiles": 8,
+  "originalClasses": 4953,
+  "resultingClasses": 4971,
+  "removedSpeechClasses": [
+    "app/jarvis/fitness/JarvisSpeechPlugin$$ExternalSyntheticLambda0.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$$ExternalSyntheticLambda1.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$$ExternalSyntheticLambda2.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin.smali"
+  ],
+  "newSpeechClasses": [
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$1$JbtLuQUqaiWt2YopAaGPnNu_UTE.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$1$JdyUUrLXw0Nd82EuRasvmg5rJ9A.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$1$rCTRurvL25aMZkDkUBH2cCxCWhU.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$2D39rsMVts6cucbzjJ_WBu5fmnY.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$8VDuUsZpS_8_3zI7SPqYnT89vMs.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$HEOEQtjB-oV9lhO39tTL1k4CTZk.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$HT-Hzc0QqnuGvzFiS3oh65Du440.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$Nvx2XqSFetjN1T2N0dHhwvgMa1A.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$S778GD9-kvtWf7rv7tU81ZBGtJw.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$_ZV5wOdqyXT7LCAXVAfkM6N80_8.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$essj91ZIIBkZrYuBhCmtz_SBEVM.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$j5xeCZImA52pgDyvxMrkQ-QA8Ko.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$kTbgc25ee-YlaO3dJ1wc5PyIN1A.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$kfYRiqgQSk0C4zI7jRIGqBo1cLA.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$rq3w62Kbz_NYjXOg1CYuk-H_SFA.smali",
+    "app/jarvis/fitness/-$$Lambda$JarvisSpeechPlugin$zamElQZKiaeeVDzh3mgp1CDU7-Y.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$1.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin$2.smali",
+    "app/jarvis/fitness/JarvisSpeechPlugin.smali"
+  ],
+  "newNotificationClasses": [
+    "app/jarvis/fitness/JarvisRemindersPlugin.smali",
+    "app/jarvis/fitness/ReminderReceiver.smali",
+    "app/jarvis/fitness/ReminderScheduler.smali"
+  ],
+  "unchangedClassesInRebuiltDex": [
+    "app/jarvis/fitness/JarvisBackupPlugin.smali"
+  ],
+  "nativeSourceSha256": "1b1fae3c7892e018ec0843ae0ac8b19151f6cc95e84ebd0371b60c89977b09e2",
+  "nativeDexSha256": "385c8acc75ddec405b4b1468135326a866ecea146230aaefb432ec8a69368f4d",
+  "nativeRoundTripExact": true,
+  "signedFromRestoredPrivateBackup": true,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "alignmentVerified": true,
+  "deviceTested": false,
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "stagesNotYetImplemented": [
+    "general conversational AI"
+  ],
+  "notificationSources": [
+    {
+      "path": "evolution/notifications/native/JarvisRemindersPlugin.java",
+      "sha256": "13190a9ce7ff15100588c407ea8c2532bef57ab11580c445ab44e60cbd03882f"
+    },
+    {
+      "path": "evolution/notifications/native/ReminderScheduler.java",
+      "sha256": "a827f9ca5d053b7b12caa9415d74781a5285d4fbd124bbadb66f0c107cf9e073"
+    },
+    {
+      "path": "evolution/notifications/native/ReminderReceiver.java",
+      "sha256": "9f2150ccd559da018cb697331d5f202a9dec5a478af63c6c7c849d959a75f009"
+    }
+  ]
+}

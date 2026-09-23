@@ -1,0 +1,16 @@
+{
+  "status": "candidate-only-not-release",
+  "overrides": [
+    {
+      "id": "pont-fessier-au-sol-activation",
+      "name": "Pont fessier au sol — activation",
+      "sourceNote": "Activation obligatoire : 2 s de contraction en haut, bassin neutre, ne cambrez pas les lombaires. Vous devez sentir le fessier, pas les ischios.",
+      "etapes": [
+        "Allongez-vous sur le dos, épaules au sol, genoux fléchis et pieds à plat, largeur de hanches.",
+        "Montez le bassin en contractant les fessiers, jusqu’à aligner épaules, bassin et genoux, sans cambrer les lombaires.",
+        "Maintenez 2 secondes en haut, puis redescendez lentement au sol en gardant le bassin neutre."
+      ],
+      "scope": "Detail technique and workout default technique only. Existing source notes/tips retain priority; respiration, errors, reps, sets, tempo, loads and warmup's separate 10-rep prescription remain unchanged. No global bridge-family edit."
+    }
+  ]
+}
