@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-23",
+  "status": "scoped-web-candidate-not-release",
+  "releaseReady": false,
+  "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "candidateBundleSha256": "75f39ae838c5ae7fc96b624f4f21ed4b960820590226d814de03ca86ce4b0107",
+  "integrity": {"packagedWebFiles": 272, "unchangedWebFiles": 271, "changed": ["assets/public/assets/index-CBCies4k.js"], "unchangedDeliveredApk": true, "unchangedOtherTopLevelStatements": true},
+  "tests": {
+    "node": {"passed": 17, "baselineCharacterization": 9, "candidate": 8},
+    "targetedBrowser": {"passed": 6, "failedInFinalRun": 0, "wholeFinalRunSeconds": 51.6, "test": "evolution/media/tests/pool-candidate.spec.mjs"},
+    "existingHomeBrowser": {"passed": 8, "failed": 0, "wholeRunSeconds": 57.6, "test": "evolution/home/tests/home.spec.mjs", "reference": "unchanged web extracted from signed 1.4.0"},
+    "browser": "Chromium 138.0.7204.0",
+    "physicalAndroidTest": false,
+    "full90DeliverySuiteRerun": false
+  },
+  "openFindingGroups": 26,
+  "limitations": ["No APK built or signed", "No missing media supplied by this patch", "Generic aquatic recovery remains an explicit unresolved gap", "Legacy aquatic images are not all semantically correct", "Old mixed timers without a segment are not guessed", "Exact user phone route not reproduced"],
+  "privateSigningDirectoryAvailable": false
+}

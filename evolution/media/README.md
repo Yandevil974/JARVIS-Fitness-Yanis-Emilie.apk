@@ -2,6 +2,12 @@
 
 **Mis à jour le 23 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
 
+## Avancée suivante — candidat ciblé et continuité vérifiée
+
+L’utilisateur demande de **continuer dans ce chat** et de **lui remettre la passation à chaque étape**, sans « démonter » l’application. Premier correctif préparé à part : [candidate/README.md](candidate/README.md), rapport [candidate/validation.json](candidate/validation.json).
+
+Le candidat isole les guides piscine du cardio et résout l’image/guide/zoom des chronos aquatiques sans réécrire les données enregistrées. Les vrais segments cardio sont préservés. **271/272 fichiers web inchangés**, 17 tests Node (9 audit + 8 candidat), 6 parcours navigateur ciblés et 8 tests accueil/non-régression réussis. L’APK publié est intact. Les récupérations génériques restent explicitement incomplètes ; aucun nouveau média n’est ajouté. **26 groupes toujours ouverts, aucune livraison corrigée.**
+
 ## Consignes de continuité — dernière demande utilisateur
 
 **Continuer à l’identique sur l’application complète et le style validé, sans repartir de zéro.** Cela signifie conserver ce qui fonctionne, pas conserver les visuels fautifs. Préserver les deux profils, les 209 exercices et toutes leurs variantes, les 11 rubriques, les charges/historiques/données, les chronos, les étapes 1–7 et l’accueil validé (orbe bleu tournoyant, thèmes colorés, carte « Prochaine séance » d’origine).
@@ -18,7 +24,7 @@ Signalement utilisateur enregistré dans `pool-recovery-to-cardio` : **26 groupe
 
 **Limite importante :** les 24 récupérations des trois niveaux du Swim Interval standard contiennent le mot « marche » et résolvent vers la marche aquatique dans ce résolveur. Le chemin exact de l’écran signalé sur le téléphone reste à reproduire. Vérifier les séances complémentaires, les noms génériques et les minuteurs enregistrés : `v5` affiche `step.img` en priorité. Un correctif du seul catalogue ne garantit donc pas la correction de toutes les surfaces.
 
-**9 tests de caractérisation/provenance passent au 23 septembre** : les 6 existants relancés et 3 nouveaux tests exécutant les fonctions `Ge/bg` extraites du bundle signé, après contrôle des SHA. Ils documentent le défaut actuel et la distinction piscine/cardio ; **ils ne valident pas une correction**, et aucun nouveau test navigateur/téléphone n’a été effectué ici.
+**9 tests de caractérisation/provenance passent au 23 septembre** : les 6 existants relancés et 3 nouveaux tests exécutant les fonctions `Ge/bg` extraites du bundle signé, après contrôle des SHA. Ils documentent le défaut actuel et la distinction piscine/cardio ; **ils ne valident pas une correction**, et n’incluent pas les essais navigateur du candidat décrits plus haut. Aucun test téléphone.
 
 ### Point de reprise après interruption
 

@@ -2,7 +2,26 @@
 
 **Mise à jour : 23 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
-## 🚩 Dernière demande — continuité à l’identique, audit et récupération piscine
+## Dernière avancée — candidat piscine protégé, poursuivre dans ce chat
+
+**Dernière consigne utilisateur :** « Pour l'instant tu fonctionne encore. On poursuit avec toi et a chaque fois met moi la passation stp. Sur les autres chat c'était l'enfer il m'ont démonté l'appli ». **Continuer ici tant que possible ; actualiser ET présenter la passation à chaque étape. Ne pas imposer un changement de chat ni une refonte.**
+
+### Travail effectivement effectué dans cette étape
+
+- Ajout d’un **candidat web isolé**, reproductible depuis la 1.4.0 signée exacte : `evolution/media/candidate/`. Aucun APK modifié ou signé ; aucune nouvelle identité.
+- Frontière piscine/cardio dans `bg` et affichage du chrono `v5` : une étape piscine connue réutilise son association aquatique, même si un vieux chrono contient une image elliptique. Visuel, guide et agrandissement utilisent la même association. Le segment de l’étape prime dans les séances mixtes ; les véritables blocs cardio restent inchangés.
+- Les noms génériques sans guide aquatique affichent un message de lacune dans le chrono plutôt qu’un vélo/elliptique ou une photo trompeuse. **Ce n’est pas une couverture complète** ; les 26 groupes restent ouverts. Aucun dessin/animation remplacé ou déclaré validé par ce correctif.
+- **271 des 272 fichiers web sont inchangés** ; seul le bundle ciblé diffère. Comparaison AST : toutes les autres instructions de premier niveau restent identiques, notamment catalogue, accueil, moteur des chronos et sept étapes. Aucun changement des consignes, durées, historiques ou sauvegardes.
+- **17 tests Node réussis** (9 caractérisations de la 1.4.0 + 8 tests du candidat), **6 nouveaux parcours navigateur réussis** (deux profils/deux thèmes, reprise, zoom, pause/reprise, étape cardio réelle, isolation) et **8 tests accueil existants réussis** sur le candidat comparé à la 1.4.0, dont les 11 rubriques. Ce n’est PAS la totalité des 90 tests de livraison relancée, ni un test Android physique.
+- Tests navigateur : premiers échecs dus aux sélecteurs, à l’écriture différée et à une fixture de mensuration incomplète ; tests corrigés, schéma de fixture désormais validé, passage complet final vert. Aucun changement applicatif supplémentaire pour contourner les échecs. Données exclusivement fictives.
+- Rapport précis : `evolution/media/candidate/validation.json`, recette/limites : `candidate/README.md`. Bundle candidat SHA **`75f39ae838c5ae7fc96b624f4f21ed4b960820590226d814de03ca86ce4b0107`**. Sortie reproductible `.cache/media-pool-candidate/`, non suivie par Git. Ne pas la présenter comme un APK livré.
+- **`.private/yanis-fitness-evolution-home/` toujours absent**, revérifié dans cette reprise. Pas de génération de clé. Le candidat ne nécessite pas de signature ; toute future livraison doit restaurer l’identité 1.4.0 existante.
+
+### Prochaine étape précise
+
+Compléter la revue traçable de toutes les images des animations et la table des associations exactes, priorités dips/triceps et récupération aquatique. Garder le candidat piscine comme base incrémentale, sans repartir de zéro. Les mauvais guides aquatiques anciens, les visuels manquants et les minuteries mixtes sans segment restent à résoudre. Le parcours exact de l’utilisateur n’a pas été reproduit sur téléphone. Préserver les médias valables et ne pas remplacer globalement par des photos.
+
+## 🚩 Exigences de continuité et récupération piscine
 
 L’utilisateur demande de remettre l’audit à jour **ici dans le chat** et de préciser pour la suite : **« faire une continuité à l’identique »**, **pas de coquilles dans les animations**, **tous les exercices pourvus**, et **pas de vélo lors de la récupération en nage fractionnée en piscine**. Il souhaite une passation avant que le chat ne ralentisse davantage. Ne pas supposer que les réponses interrompues ont été terminées.
 
@@ -14,7 +33,7 @@ L’utilisateur demande de remettre l’audit à jour **ici dans le chat** et de
 4. **Récupération en nage fractionnée : pas de vélo/elliptique à sec.** Montrer la récupération aquatique correspondant à la consigne (marche aquatique, nage douce ou bord selon l’étape), dans les fiches, chronos, agrandissements et minuteurs repris après fermeture. Ne pas supprimer les véritables blocs elliptiques des séances mixtes.
 5. Même package/certificat 1.4.0 pour la future mise à jour ; pas de nouvelle identité. IA générale toujours en dernier. Fournir un vrai lien direct seulement après construction et vérification du futur APK corrigé.
 
-### État vérifié dans cette reprise
+### État de l’audit avant le candidat ciblé — historique conservé
 
 - Branche de session récupérée par avance rapide depuis le dépôt distant jusqu’à `9526b3e` ; audit original au commit `58acfff`. Ne pas repartir de zéro.
 - **26 groupes ouverts**, dont le nouveau `pool-recovery-to-cardio`. Le repli de `bg("Récupération active", "pool")` vers l’image d’elliptique a été reproduit en exécutant la fonction exacte du bundle signé. Le fichier a été vu : appareil elliptique à sec. Les 24 récupérations standard libellées « marche » se résolvent correctement dans ce résolveur : **le parcours exact du téléphone reste à reproduire**, ne pas prétendre l’avoir testé. Examiner aussi les séances complémentaires et `step.img` prioritaire dans `v5`.
@@ -25,7 +44,7 @@ L’utilisateur demande de remettre l’audit à jour **ici dans le chat** et de
 
 ### Texte de reprise pour une nouvelle conversation
 
-> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images des animations, sans tête inversée, mauvaise posture ou mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique : respecter la consigne aquatique, y compris dans les minuteurs enregistrés. Les 26 groupes d’anomalies sont ouverts, aucun APK corrigé n’est livré. Même identité 1.4.0, IA en dernier. Actualise la passation au fil des progrès et précise la prochaine étape.
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images des animations, sans tête inversée, mauvaise posture ou mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique : respecter la consigne aquatique, y compris dans les minuteurs enregistrés. Les 26 groupes d’anomalies sont ouverts. Reprends aussi le candidat ciblé `evolution/media/candidate/` (17 tests Node et 14 parcours navigateur réussis), sans le confondre avec un APK livré. Même identité 1.4.0, IA en dernier. Continue dans ce chat tant que possible ; actualise et présente la passation à chaque étape, puis précise la suivante.
 
 ### Ordre de reprise recommandé
 
@@ -206,6 +225,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images des animations, sans tête inversée, mauvaise posture ou mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique : respecter la consigne aquatique, y compris dans les minuteurs enregistrés. Les 26 groupes d’anomalies sont ouverts, aucun APK corrigé n’est livré. Même identité 1.4.0, IA en dernier. Actualise la passation au fil des progrès et précise la prochaine étape.
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images des animations, sans tête inversée, mauvaise posture ou mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique : respecter la consigne aquatique, y compris dans les minuteurs enregistrés. Les 26 groupes d’anomalies sont ouverts. Reprends aussi le candidat ciblé `evolution/media/candidate/` (17 tests Node et 14 parcours navigateur réussis), sans le confondre avec un APK livré. Même identité 1.4.0, IA en dernier. Continue dans ce chat tant que possible ; actualise et présente la passation à chaque étape, puis précise la suivante.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.

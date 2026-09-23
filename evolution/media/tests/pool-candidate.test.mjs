@@ -1,0 +1,76 @@
+// Candidate tests, kept separate from characterization of the untouched APK.
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import vm from 'node:vm';
+import {parse} from '../../../JARVIS-Fitness-Source/node_modules/acorn/dist/acorn.mjs';
+import {createPoolMedia} from '../candidate/pool-context.mjs';
+import {readBaseline,integrate,prepare,root,baseline,sha} from '../candidate/build.mjs';
+const inventory=JSON.parse(fs.readFileSync(new URL('../review/inventory-1.4.0.json',import.meta.url)));
+const original=readBaseline(), candidate=integrate(original);
+const opts={ecmaVersion:'latest',sourceType:'module'};
+const tree=parse(original,opts), patched=parse(candidate,opts);
+const ge=original.slice(original.indexOf('const Ge='),original.indexOf(',uh=',original.indexOf('const Ge=')))+';';
+const normalize=vm.runInNewContext(ge+'Ge');
+const media=createPoolMedia({normalize,poolGuides:inventory.poolGuides});
+const fn=(text,ast,name)=>{const n=ast.body.find(n=>n.id?.name===name);assert.ok(n);return text.slice(n.start,n.end)};
+const freeze=o=>{Object.freeze(o);for(const v of Object.values(o))if(v&&typeof v==='object')freeze(v);return o};
+test('requires exact complete 1.4.0 and refuses accidental double patching',()=>{
+ assert.throws(()=>integrate(original+' '),/unchanged/);
+ assert.throws(()=>integrate(candidate),/unchanged/);
+ assert.equal(integrate(original),candidate);
+});
+test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
+ function unchanged(text,ast){return ast.body.filter(n=>
+  !['bg','v5','createPoolMedia'].includes(n.id?.name)&&
+  !n.declarations?.some(d=>d.id.name==='JarvisPoolMedia')).map(n=>text.slice(n.start,n.end));}
+ assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
+});
+test('420 pool protocol steps cannot resolve to cardio and inputs never change',()=>{
+ const input=freeze(structuredClone(inventory.poolProtocols));let count=0;
+ for(const protocol of input)for(const level of protocol.levels)for(const step of level.steps){
+  const result=media.resolve(step,{type:'swim'});assert.ok(result);
+  assert.ok(!result.path?.includes('/cardio-'),step.name);
+  if(result.path)assert.equal(result.status,'legacy-association-not-yet-validated');
+  count++;
+ }
+ assert.equal(count,420);assert.deepEqual(input,inventory.poolProtocols);
+});
+test('generic aquatic recovery is an explicit gap, not a fabricated posture or cardio fallback',()=>{
+ for(const name of ['Récupération active','Récup active','Récupération','Repos']){
+  const result=media.resolve({name,img:'/media/cardio-recup-active.jpg'},{type:'swim'});
+  assert.equal(result.path,null);assert.equal(result.status,'unresolved');
+ }
+});
+test('step segment wins over overall type; unknown mixed context is not guessed',()=>{
+ for(const segment of ['cardio','post','transition','unknown'])assert.equal(media.resolve({name:'Récup active',segment},{type:'swim'}),null);
+ for(const type of ['hiit','warmup','rest','recovery','source-combo'])assert.equal(media.resolve({name:'Récup active'},{type}),null);
+ assert.ok(media.resolve({name:'Récup active',segment:'pool'},{type:'source-combo'}));
+ assert.ok(media.resolve({name:'Récup active'},{type:'aqua'}));
+});
+test('persisted wrong images are replaced for explicit aquatic instructions without mutating timer data',()=>{
+ for(const profile of ['elite','emilie']){
+  const timer=freeze({profile,steps:[{name:'Récup active — marche aquatique',seconds:45,img:'/media/cardio-recup-active.jpg',segment:'pool'}],meta:{type:'source-combo'},index:0,remaining:22,paused:true});
+  const before=JSON.stringify(timer);const result=media.resolve(timer.steps[0],timer.meta);
+  assert.equal(result.path,'/media/pool-marche-aquatique.jpg');assert.equal(JSON.stringify(timer),before);
+ }
+});
+test('integrated bg removes pool→cardio fallthrough while preserving all non-pool legacy results',()=>{
+ const code=fs.readFileSync(new URL('../candidate/pool-context.mjs',import.meta.url),'utf8').replace('export function','function');
+ const ctx=vm.createContext({bl:inventory.poolGuides,If:inventory.cardioGuides});
+ vm.runInContext(ge+code+';const JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl});'+fn(original,tree,'bg').replace('function bg(','function oldBg(')+fn(candidate,patched,'bg'),ctx);
+ assert.equal(vm.runInContext('bg("Récup active","pool")',ctx),null);
+ for(const segment of ['cardio','post','transition',undefined])for(const name of ['Récupération active','Fractionné soutenu','Échauffement elliptique','Transition','Retour au calme elliptique']){
+  ctx.name=name;ctx.segment=segment;assert.equal(vm.runInContext('JSON.stringify(bg(name,segment))===JSON.stringify(oldBg(name,segment))',ctx),true);
+ }
+});
+test('web candidate changes exactly one of 272 packaged files; delivered APK is untouched',()=>{
+ const {directory}=prepare();
+ const entries=JSON.parse(execFileSync('python3',['-c',
+  'import sys,zipfile,json,hashlib;z=zipfile.ZipFile(sys.argv[1]);print(json.dumps({n:hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if n.startswith("assets/public/") and not n.endswith("/")}))',root+baseline.apk]).toString());
+ assert.equal(Object.keys(entries).length,272);
+ const changed=Object.entries(entries).filter(([name,digest])=>sha(fs.readFileSync(directory+'/'+name.replace('assets/public/','')))!==digest).map(([name])=>name);
+ assert.deepEqual(changed,[baseline.bundle]);
+ assert.equal(sha(fs.readFileSync(root+baseline.apk)),baseline.apkSha256);
+});
