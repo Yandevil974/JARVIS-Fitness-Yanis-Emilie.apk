@@ -40,7 +40,8 @@
     "node": "41/41",
     "browserTargeted": "6/6 sur le bundle livré",
     "browserFull": "28/28 (3,9 min) sur le bundle livré 22109c5b",
-    "completeLegacySuite": "90/90 (9,2 min) sur le bundle 52dfc705"
+    "completeLegacySuite": "même commande, même minute, même environnement : référence 1.4.0 intacte = 10 échecs / 11 ignorés / 18 réussis ; 1.4.4 livrée = 9 échecs / 11 ignorés / 19 réussis. Les échecs sont identiques en nature (profil neuf du jour : la séance complémentaire du HTML du 23 sept. demande une validation d’intensité avant de démarrer, comportement reproduit à l’identique sur la référence non modifiée ; et le contrôle de sécurité du web attend le serveur Vite du dépôt source, absent de l’atelier). Aucune perte de fonction : l’écart est en faveur du livrable.",
+    "suiteNote": "Le relevé de 90 réussis/9,2 min d’un tour précédent correspondait à une configuration dont les détails n’ont pas survécu aux effacements d’espace de travail ; seule la comparaison référence/livrable de ce tour est retenue comme preuve."
   },
   "poolRecovery": {
     "reviewedTexts": 12,
@@ -292,5 +293,10 @@
       "lacune explicite plutôt qu’un dessin terrestre dans la bibliothèque piscine",
       "correction du contexte aquatique en tabata terre (ancrage identifié, non livrée)"
     ]
+  },
+  "htmlComplementarySessionObservation": {
+    "date": "2026-09-23",
+    "fact": "Au 23 septembre, la prochaine séance est la « séance complémentaire du HTML » (METCON elliptique + piscine). Le bouton d’accueil « Lancer la séance » ouvre d’abord une modale de validation : « Récupération non renseignée : intensité à valider avant de commencer ». Comportement identique sur la référence 1.4.0 intacte et sur la 1.4.4 : ce n’est pas une régression, et rien n’a été modifié.",
+    "notAVisualFinding": true
   }
 }
