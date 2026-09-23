@@ -1,6 +1,28 @@
 # Audit des démonstrations — en cours, pas un nouvel APK
 
-**21 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
+**Mis à jour le 23 septembre 2026.** Demande : retrouver des visuels fidèles aux exercices, dans toutes les rubriques, sans incohérence anatomique/orientation, notamment sur les dips/triceps. L’IA conversationnelle reste en pause.
+
+## Consignes de continuité — dernière demande utilisateur
+
+**Continuer à l’identique sur l’application complète et le style validé, sans repartir de zéro.** Cela signifie conserver ce qui fonctionne, pas conserver les visuels fautifs. Préserver les deux profils, les 209 exercices et toutes leurs variantes, les 11 rubriques, les charges/historiques/données, les chronos, les étapes 1–7 et l’accueil validé (orbe bleu tournoyant, thèmes colorés, carte « Prochaine séance » d’origine).
+
+- **Tous les exercices doivent être pourvus du bon visuel**, dans musculation, échauffement/approches, piscine, Tabata sol/aqua et étirements. Inclure les phases de récupération et les différentes surfaces d’affichage. Pas de validation finale avec des images génériques, absentes, cassées ou d’un autre mouvement.
+- **Aucune coquille d’animation acceptée** : contrôler toutes les images de chaque séquence, la tête/le corps/les appuis, l’orientation, le bon matériel et la bonne posture, les transitions, la boucle et le cadrage réel. Un GIF décodable ou une première image correcte ne suffisent pas. Ne pas transformer un défaut en rotation/miroir global.
+- Garder les illustrations/animations d’origine lorsqu’elles sont correctes ; pas de remplacement global par des photos, pas de réécriture des consignes pour s’adapter à une mauvaise image. La proposition photographique dips reste non approuvée.
+- **Piscine, nage fractionnée, récupération : aucun vélo ni elliptique à sec.** Le visuel doit suivre la consigne aquatique de l’étape (marche dans l’eau, nage douce, récupération au bord selon le cas), sans modifier le programme. Les vrais blocs elliptiques des séances mixtes restent distincts et conservés.
+- Continuité technique : même package et même certificat 1.4.0 pour la future mise à jour, pas de nouvelle application parallèle. IA après le travail de l’application et les essais utilisateur.
+
+### Nouveau point d’audit : récupération piscine → elliptique
+
+Signalement utilisateur enregistré dans `pool-recovery-to-cardio` : **26 groupes ouverts** au total. Le mécanisme de repli est reproduit dans le code livré : `bg("Récupération active", "pool")` et `bg("Récup active", "pool")` sélectionnent `cardio-recup-active.jpg`, dont l’image montre un elliptique à sec. `bg` essaie les guides cardio après les guides piscine même en contexte piscine.
+
+**Limite importante :** les 24 récupérations des trois niveaux du Swim Interval standard contiennent le mot « marche » et résolvent vers la marche aquatique dans ce résolveur. Le chemin exact de l’écran signalé sur le téléphone reste à reproduire. Vérifier les séances complémentaires, les noms génériques et les minuteurs enregistrés : `v5` affiche `step.img` en priorité. Un correctif du seul catalogue ne garantit donc pas la correction de toutes les surfaces.
+
+**9 tests de caractérisation/provenance passent au 23 septembre** : les 6 existants relancés et 3 nouveaux tests exécutant les fonctions `Ge/bg` extraites du bundle signé, après contrôle des SHA. Ils documentent le défaut actuel et la distinction piscine/cardio ; **ils ne valident pas une correction**, et aucun nouveau test navigateur/téléphone n’a été effectué ici.
+
+### Point de reprise après interruption
+
+Les planches des 16 premières animations longues ont été affichées dans l’échange interrompu, mais aucun registre de validation complète n’a été conservé. Ne pas annoncer les 46 animations longues/588 images entièrement validées. Le script et les planches temporaires de cette tentative ne sont pas présents après la réinitialisation ; poursuivre à partir des inventaires persistés et consigner les décisions par média/association. **Aucun correctif de production ni nouvel APK à cette étape.**
 
 ## Résultat à ce stade
 
@@ -10,7 +32,7 @@
 |---|---|---|
 | Musculation, deux profils réunis | 209 exercices et leurs associations effectives | 95 indiqués « exact », 104 « variante », 10 « famille ». Ces étiquettes ne prouvent pas la justesse : même certaines associations « exact » sont fausses. |
 | Échauffement | Générateur `Bg`, ses trois images et ses étapes conditionnelles | Même image de bras pour hanches/chevilles et activation fessiers. Développé couché pour toutes les séries d’approche, même avant un squat. |
-| Piscine | 19 guides, 6 protocoles × 3 niveaux, **420 étapes** résolues | Plusieurs gestes terrestres sans rapport avec les consignes aquatiques. Les étapes « Repos »/« en place » sans démonstration ne sont pas des exercices manquants. |
+| Piscine | 19 guides, 6 protocoles × 3 niveaux, **420 étapes** résolues | Plusieurs gestes terrestres sans rapport avec les consignes aquatiques. Les récupérations doivent aussi rester cohérentes avec la consigne et le contexte aquatique ; aucun repli vers vélo/elliptique. |
 | Tabata/HIIT au sol | 6 modes, **38 noms distincts** | 4 sélectionnent des guides de piscine ; 34 ne trouvent aucune démonstration et le composant montre une photo générique de récupération. |
 | Tabata/HIIT aqua | Les 6 noms du générateur, distincts des 19 guides | À contrôler par contexte et par consigne, pas uniquement par mot-clé. |
 | Étirements | 29 fiches avec image et consigne | Plusieurs positions ne correspondent pas au texte ; exemple : pigeon au sol, tête coupée, pour une consigne de piriforme assis. |
@@ -26,7 +48,7 @@
 - **Gainage vertical au bord**, mobilité aquatique, ciseaux et talons-fesses : plusieurs images montrent un autre geste à sec.
 - **Étirements** : marche/mollet illustré par un appui au mur ; triceps dans le dos illustré bras baissés ; flexion assise illustrée debout ; autres divergences recensées.
 
-Les **25 groupes de constats ouverts** sont documentés dans [review/findings.json](review/findings.json). Ils ne constituent pas une promesse qu’il n’existe aucune autre erreur.
+Les **26 groupes de constats ouverts** sont documentés dans [review/findings.json](review/findings.json). Ils ne constituent pas une promesse qu’il n’existe aucune autre erreur.
 
 ## Comparaison avec les versions fournies
 
@@ -44,7 +66,7 @@ Référence actuelle : APK signé 1.4.0, SHA `30b20ce10ddc9bfeadee3590816f1f3d03
 - 137 médias d’exercice inventoriés : **94 GIF animés et 43 images fixes**. Les 727 images internes ont été décodées sans erreur, avec tailles/durées/hachages enregistrés.
 - Planches visuelles des première et médiane images de ces 137 médias examinées. Pour les 48 GIF à deux images, cela couvre leurs deux images, notamment les dips. Les fichiers à 12/24 images demandent encore une inspection visuelle complète avant validation définitive.
 - Analyse des résolveurs, du générateur d’échauffement et du minuteur. La recherche par mot-clé sans contexte explique les conflits Tabata/piscine.
-- **6 tests de caractérisation/provenance de l’audit réussis.** Ce ne sont pas des tests attestant une application corrigée, ni une validation clinique de technique sportive.
+- **9 tests de caractérisation/provenance de l’audit réussis au 23 septembre.** Ce ne sont pas des tests attestant une application corrigée, ni une validation clinique de technique sportive.
 
 ## Proposition illustrée, non intégrée
 
@@ -73,7 +95,7 @@ LD_LIBRARY_PATH="$PWD/.cache/browser-libs/lib" \
   node evolution/media/capture.mjs .cache/media-audit/inventory.json
 PYTHONPATH=.cache/image-tools \
   python3 evolution/media/inspect_assets.py
-node --test evolution/media/tests/audit.test.mjs
+node --test evolution/media/tests/*.test.mjs
 ```
 
 Le serveur d’inspection est temporaire, limité aux fichiers web extraits, fermé après la capture ; aucun fichier privé n’est servi. Son instrumentation n’est jamais écrite dans un APK. Les sorties régénérées doivent correspondre aux instantanés `review/`. Ne pas reconstruire l’application à partir des seules anciennes sources React.

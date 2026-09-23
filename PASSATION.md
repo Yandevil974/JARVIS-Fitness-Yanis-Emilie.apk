@@ -1,17 +1,31 @@
 # 🚩 Passation — Yanis Fitness Evolution
 
-**Mise à jour : 21 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
+**Mise à jour : 23 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
-## 🚩 Reprise après interruption — passation réactualisée
+## 🚩 Dernière demande — continuité à l’identique, audit et récupération piscine
 
-**Dernière demande de l’utilisateur : « Et rajoute la reactualisation de la passation car ca commence a ralentir le chat ».** L’utilisateur a interrompu la réponse précédente : ne pas supposer qu’une explication, un comparatif ou une demande de validation lui a effectivement été montré. Une nouvelle conversation est conseillée maintenant pour poursuivre l’audit ; aucun compteur exact de limite de chat n’est disponible.
+L’utilisateur demande de remettre l’audit à jour **ici dans le chat** et de préciser pour la suite : **« faire une continuité à l’identique »**, **pas de coquilles dans les animations**, **tous les exercices pourvus**, et **pas de vélo lors de la récupération en nage fractionnée en piscine**. Il souhaite une passation avant que le chat ne ralentisse davantage. Ne pas supposer que les réponses interrompues ont été terminées.
 
-### Ce qui est effectivement sauvegardé et revérifié
+### Consignes impératives pour la continuation
 
-- L’audit existe au commit **`58acfff2a69b84c98ebe66373d20a5155430ecb8`**, vérifié présent sur la branche distante. Pas besoin de recommencer son inventaire depuis zéro.
-- **Les 6 tests de caractérisation/provenance ont été relancés avec succès pendant cette réactualisation.** Ils vérifient le périmètre et les constats enregistrés ; ils ne certifient pas que tous les gestes sont corrects.
-- Le SHA-256 de l’APK 1.4.0 a été revérifié : **`30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7`**, inchangé. **Aucun correctif des médias n’est encore intégré ou livré.** Les 90 tests de livraison antérieurs ne prouvent pas la correspondance anatomique des démonstrations.
-- Les cinq fichiers privés attendus de la signature 1.4.0 (keystore, mot de passe, identité, secret de récupération, ZIP) sont présents dans cet environnement ; leur contenu n’a pas été affiché. **Cela ne garantit pas leur présence dans une autre session.** Vérifier à nouveau avant un futur build et restaurer cette même identité si nécessaire. La conservation externe reste non confirmée.
+1. **Continuer l’application complète existante, pas une refonte ni une version allégée.** Conserver les deux profils, les 209 exercices/variantes, les 11 rubriques, les charges/historiques/données, les chronos, les étapes 1–7 et l’accueil validé : orbe bleu tournoyant, clair/sombre colorés, carte « Prochaine séance » avec photo d’origine. Continuité à l’identique de ce qui est validé ; corriger les défauts, pas les reproduire.
+2. **Chaque exercice doit avoir son visuel correspondant**, dans musculation, échauffement/approches, piscine, Tabata sol/aqua et étirements. Aucun exercice oublié ; une image absente, générique ou d’un autre mouvement reste une lacune non résolue.
+3. **Animations sans coquilles :** examiner chaque image et la boucle, tête/corps/appuis, matériel, posture, direction et cadrage dans l’application. Préserver les anciens visuels corrects. Ne pas changer les consignes pour justifier une mauvaise image, ni remplacer globalement les dessins par des photos. Le comparatif photo dips n’est toujours pas approuvé.
+4. **Récupération en nage fractionnée : pas de vélo/elliptique à sec.** Montrer la récupération aquatique correspondant à la consigne (marche aquatique, nage douce ou bord selon l’étape), dans les fiches, chronos, agrandissements et minuteurs repris après fermeture. Ne pas supprimer les véritables blocs elliptiques des séances mixtes.
+5. Même package/certificat 1.4.0 pour la future mise à jour ; pas de nouvelle identité. IA générale toujours en dernier. Fournir un vrai lien direct seulement après construction et vérification du futur APK corrigé.
+
+### État vérifié dans cette reprise
+
+- Branche de session récupérée par avance rapide depuis le dépôt distant jusqu’à `9526b3e` ; audit original au commit `58acfff`. Ne pas repartir de zéro.
+- **26 groupes ouverts**, dont le nouveau `pool-recovery-to-cardio`. Le repli de `bg("Récupération active", "pool")` vers l’image d’elliptique a été reproduit en exécutant la fonction exacte du bundle signé. Le fichier a été vu : appareil elliptique à sec. Les 24 récupérations standard libellées « marche » se résolvent correctement dans ce résolveur : **le parcours exact du téléphone reste à reproduire**, ne pas prétendre l’avoir testé. Examiner aussi les séances complémentaires et `step.img` prioritaire dans `v5`.
+- **9 tests de caractérisation/provenance passent** (6 existants + 3 nouveaux), avec SHA APK et bundle contrôlés. Ce ne sont pas des tests d’une application corrigée. Aucun nouveau test navigateur ou appareil.
+- Les planches des 16 premières animations longues ont été affichées avant interruption ; aucun registre exhaustif de validation n’a été sauvegardé. Les planches/script temporaires n’ont pas survécu à cette nouvelle réinitialisation. Ne pas considérer les 46 animations longues/588 images comme intégralement validées ; compléter et tracer la revue.
+- **Aucun média corrigé en production, aucun nouvel APK livré.** La 1.4.0 publiée reste inchangée, SHA `30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7`.
+- **Signature : `.private/yanis-fitness-evolution-home/` est absent**, existence revérifiée le 23 septembre. Sa présence mentionnée lors de la livraison était historique. Conservation externe du ZIP privé non confirmée. Le fichier chiffré Git seul ne suffit pas. Ne pas régénérer de clé ; restaurer cette même identité avant un futur APK signé. L’audit peut continuer sans clé. Ne pas demander de secrets dans le chat ni demander répétitivement de rechercher d’anciennes archives introuvables.
+
+### Texte de reprise pour une nouvelle conversation
+
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images des animations, sans tête inversée, mauvaise posture ou mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique : respecter la consigne aquatique, y compris dans les minuteurs enregistrés. Les 26 groupes d’anomalies sont ouverts, aucun APK corrigé n’est livré. Même identité 1.4.0, IA en dernier. Actualise la passation au fil des progrès et précise la prochaine étape.
 
 ### Ordre de reprise recommandé
 
@@ -26,13 +40,13 @@
 
 Après réception du lien 1.4.0, l’utilisateur signale que les images animées ne sont plus comme avant et demande **toutes les catégories** : musculation, échauffement, piscine, Tabata, étirements ; exemple dips/triceps avec tête incohérente. **IA toujours en pause.**
 
-- Rapport et scripts : **`evolution/media/README.md`** ; catalogue runtime complet `review/inventory-1.4.0.json`, métadonnées 137 médias/727 images internes décodées, **25 groupes d’anomalies ouverts** dans `review/findings.json`.
+- Rapport et scripts : **`evolution/media/README.md`** ; catalogue runtime complet `review/inventory-1.4.0.json`, métadonnées 137 médias/727 images internes décodées, **26 groupes d’anomalies ouverts** dans `review/findings.json`.
 - **209 exercices, 29 étirements, 19 guides piscine, 420 étapes de 18 niveaux/6 protocoles, 38 noms Tabata au sol et 6 aqua**, 5 guides cardio inventoriés dans le vrai bundle signé. Les données ne viennent pas du vieux `Movement.jsx`.
 - **262/262 images identiques au complet original fourni**, pas seulement à 1.3.0 ; cela ne prouve PAS leur justesse. Les deux images du GIF dips changent l’orientation du regard/haut du corps de façon incohérente. Ne pas tenter un retournement global.
 - Correspondances fausses confirmées : hip thrust unilatéral/squat bulgare, step-up/fentes, tractions/tirage poulie, extensions triceps sur banc/poulie debout, etc. Échauffement : bras pour activation fessiers et développé couché pour toutes les approches. Étirements : plusieurs positions différentes du texte. Piscine : plusieurs gestes terrestres erronés.
 - **Tabata au sol : 4 noms renvoient à un guide piscine ; 34 autres ne résolvent aucune démonstration et affichent la photo générique de récupération.** Résoudre par contexte, pas par mots-clés.
 - Les planches première/médiane des 137 médias ont été vues ; cela couvre les deux images des 48 GIF à deux images. Les animations 12/24 images ne sont **pas encore toutes inspectées visuellement image par image**. Décodage réussi ≠ contenu correct.
-- **6 tests de caractérisation/provenance de l’audit réussis**, pas des tests d’une application corrigée. Aucun correctif de production, nouvel APK, remplacement de signature ou modification des séances à ce stade.
+- **9 tests de caractérisation/provenance de l’audit réussis au 23 septembre**, pas des tests d’une application corrigée. Aucun correctif de production, nouvel APK, remplacement de signature ou modification des séances à ce stade.
 - **Proposition dips en photographies réelles**, non intégrée : `evolution/media/review/dips-comparaison.jpg`, provenance/licence à côté. Deux positions, pas une vidéo continue. Source `yuhonas/free-exercise-db` au commit `a859101d633a01c4a1a920d6a8ce41dabba0705f`. Aucun changement esthétique global validé à ce stade. Montrer le comparatif directement et clarifier le support des remplacements (dessins anatomiques / photos réelles en complément), car l’utilisateur veut retrouver ses anciens visuels.
 - **Suite :** table explicite des gestes/matériels/positions/contextes, remplacements validés de chaque visuel fautif, suppression des replis trompeurs, tests de toutes les surfaces (y compris minuteurs persistés), puis mise à jour avec **la clé et le package 1.4.0 existants**, pas une nouvelle installation parallèle. Les sept étapes et l’accueil approuvé restent intacts.
 
@@ -57,7 +71,7 @@ Après réception du lien 1.4.0, l’utilisateur signale que les images animées
 - Autorisation : `evolution/android/home-authorization.json`.
 - Identité immuable : `evolution/android/identity-home.json` ; recette mutable : `release-home.json`, `build-home.py`.
 - Certificat **`7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd`**.
-- Privé actuellement présent : `.private/yanis-fitness-evolution-home/` (hors Git, jamais servi par HTTP).
+- Privé présent à la livraison mais **absent lors de la vérification du 23 septembre** : `.private/yanis-fitness-evolution-home/` (hors Git, jamais servi par HTTP).
 - ZIP **`Yanis-Fitness-Evolution-1.4-SAUVEGARDE-PRIVEE.zip`** présenté via le visualiseur pendant la fabrication. Ce ZIP contient les secrets ; **conservation externe non confirmée**. Demander de le conserver en deux endroits privés, sans réclamer le contenu ou un secret dans le chat.
 - Copie chiffrée publique : `evolution/signing/evolution-home.encrypted.json`. Récupération documentée dans `evolution/signing/HOME-IDENTITY.md` via `signing-home.py`, **sans initialisation**. Un secret ou le ZIP privé reste indispensable.
 - Chaque build signe après une restauration réelle de la sauvegarde chiffrée et vérifie le certificat. La présence d’une copie chiffrée ne remplace pas la conservation du secret.
@@ -192,6 +206,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Reprends Yanis Fitness Evolution. Lis d’abord `PASSATION.md` et `evolution/media/README.md` dans le dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`, branche de travaux `arena/01a0bd57-jarvis-fitness-yanis-emilie-ap`, en respectant la branche imposée à ta session. Ma priorité est maintenant de vérifier et corriger TOUS les visuels : musculation, échauffement, piscine, Tabata au sol/aqua, étirements et cardio. L’audit sauvegardé au commit `58acfff` relève 25 groupes d’anomalies, dont l’orientation incohérente du GIF dips/triceps et de mauvaises correspondances. Les animations longues ne sont pas encore toutes examinées image par image. Aucun correctif de médias ni nouvel APK corrigé n’est livré. Conserve les visuels d’origine corrects ; aucun remplacement global par des photos n’est validé. Montre les propositions directement dans le chat. Préserve les deux profils, les données, les sept étapes et l’accueil validé de la 1.4.0. Pour la prochaine mise à jour, garde le package `app.yanis.fitness.evolution.home` et sa clé (`identity-home.json`), sans créer une nouvelle installation. L’IA reste en pause. Continue depuis l’audit existant et actualise la passation avant de poursuivre trop loin.
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images des animations, sans tête inversée, mauvaise posture ou mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique : respecter la consigne aquatique, y compris dans les minuteurs enregistrés. Les 26 groupes d’anomalies sont ouverts, aucun APK corrigé n’est livré. Même identité 1.4.0, IA en dernier. Actualise la passation au fil des progrès et précise la prochaine étape.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.
