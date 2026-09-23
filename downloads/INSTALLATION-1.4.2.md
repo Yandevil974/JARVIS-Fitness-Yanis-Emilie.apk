@@ -20,6 +20,8 @@ web sont inchangés.
 
 [Télécharger l’APK 1.4.2](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/f69f469/downloads/Yanis-Fitness-Evolution-1.4.2.apk) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/f69f469/downloads/Yanis-Fitness-Evolution-1.4.2.apk.sha256) · [inventaire de fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/f69f469/downloads/Yanis-Fitness-Evolution-1.4.2.fidelity.json)
 
+[Télécharger l’APK 1.4.2](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/c17dccf/downloads/Yanis-Fitness-Evolution-1.4.2.apk) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/c17dccf/downloads/Yanis-Fitness-Evolution-1.4.2.apk.sha256) · [inventaire de fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/c17dccf/downloads/Yanis-Fitness-Evolution-1.4.2.fidelity.json)
+
 Empreinte SHA-256 de l’APK :
 
 ```
