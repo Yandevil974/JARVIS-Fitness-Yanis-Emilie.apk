@@ -7,6 +7,7 @@ test.beforeEach(async ({ page }) => {
 });
 import fs from "node:fs";
 import { initialState } from "../src/store/model.js";
+import { startSourceWorkout } from "./helpers.js";
 async function ready(page) {
   await page.goto("/");
   await expect(page.locator(".page")).toBeVisible();
@@ -93,9 +94,7 @@ test("A real set survives shortening, partial completion, reload and profile swi
   page,
 }) => {
   await ready(page);
-  await page
-    .getByRole("button", { name: "Lancer la séance", exact: true })
-    .click();
+  await startSourceWorkout(page);
   await page.getByLabel("Répétitions réalisées", { exact: true }).fill("8");
   await page.getByLabel("RPE de la série", { exact: true }).selectOption("8");
   await page.getByRole("button", { name: /Valider la série/ }).click();

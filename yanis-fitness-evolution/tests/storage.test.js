@@ -37,7 +37,12 @@ test("Bad JSON stays untouched while saving is protected", async () => {
 });
 test("Incompatible nested data cannot be overwritten by fresh defaults", async () => {
   const bad = initialState();
-  bad.profiles.elite.plan.sessions[0].exercises[0].targetSets = -5;
+  // Le 1er jour du plan peut être une séance combinée sans exercices
+  // (elliptique + piscine) selon la date : on invalide la 1re séance d'exercices.
+  const first = bad.profiles.elite.plan.sessions.find(
+    (s) => (s.exercises || []).length > 0,
+  );
+  first.exercises[0].targetSets = -5;
   const original = JSON.stringify(bad);
   const { store, map } = await setup(original);
   const result = await store.loadState();

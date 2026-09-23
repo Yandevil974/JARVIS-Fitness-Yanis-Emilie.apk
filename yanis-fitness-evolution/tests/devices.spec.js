@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { STORAGE_KEY } from "../src/app-identity.js";
+import { startSourceWorkout } from "./helpers.js";
 test.beforeEach(async ({ page }) => {
   await page.addInitScript((k) => {
     window.__YFE_KEY__ = k;
@@ -29,9 +30,7 @@ for (const cfg of configurations)
         (await page.locator(".sidebar").boundingBox()).x,
       ).toBeGreaterThanOrEqual(0);
     } else await expect(page.locator(".mobile-nav")).toBeVisible();
-    await page
-      .getByRole("button", { name: "Lancer la séance", exact: true })
-      .click();
+    await startSourceWorkout(page);
     await expect(page.locator(".immersive-layout")).toBeVisible();
     if (cfg.rail) {
       const center = await page.locator(".workout-stage").boundingBox(),
@@ -77,9 +76,7 @@ test("Fold5: folding and unfolding retain the actual current workout", async ({
   await page.setViewportSize({ width: 344, height: 882 });
   await page.goto("/");
   await expect(page.locator(".page")).toBeVisible();
-  await page
-    .getByRole("button", { name: "Lancer la séance", exact: true })
-    .click();
+  await startSourceWorkout(page);
   await page.getByLabel("Répétitions réalisées", { exact: true }).fill("8");
   await page.getByLabel("RPE de la série", { exact: true }).selectOption("8");
   await page.getByRole("button", { name: /Valider la série/ }).click();
@@ -87,18 +84,23 @@ test("Fold5: folding and unfolding retain the actual current workout", async ({
     const s = JSON.parse(localStorage.getItem(window.__YFE_KEY__) || "null");
     return s?.profiles.elite.workout?.exercises[0].sets.length === 1;
   });
-  const id = await page.evaluate(
-    () =>
-      JSON.parse(localStorage.getItem(window.__YFE_KEY__)).profiles.elite
-        .workout.id,
-  );
+  const { id, totalSets } = await page.evaluate(() => {
+    const w = JSON.parse(
+      localStorage.getItem(window.__YFE_KEY__),
+    ).profiles.elite.workout;
+    return {
+      id: w.id,
+      totalSets: w.exercises.reduce((n, e) => n + e.targetSets, 0),
+    };
+  });
   for (const size of [
     { width: 690, height: 829 },
     { width: 829, height: 690 },
     { width: 344, height: 882 },
   ]) {
     await page.setViewportSize(size);
-    await expect(page.locator(".session-topbar")).toContainText("1/37");
+    // Le compteur reflète la séance réellement lancée (J1 source : 36 séries).
+    await expect(page.locator(".session-topbar")).toContainText(`1/${totalSets}`);
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth),
     ).toBeLessThanOrEqual(size.width);

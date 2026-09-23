@@ -43,6 +43,11 @@ import {
 } from "../src/engine/validation.js";
 import { today, addDays, uid, safeJSON } from "../src/engine/utils.js";
 const bench = findExercise("Développé couché barre");
+// Le premier jour du plan peut être une séance combinée « METCON elliptique +
+// piscine » (protocole, sans exercices haltères) selon la date du jour : ces
+// helpers ciblent la première séance d'exercices pour rester déterministes.
+const firstExerciseSession = (p) =>
+  p.plan.sessions.find((s) => (s.exercises || []).length > 0);
 function performance({
   count = 3,
   rpe = 8,
@@ -220,7 +225,7 @@ test("Archived schedules have no hidden four-cycle eviction", () => {
 });
 test("Shortening preserves actual sets and at least one essential movement", () => {
   const { p } = performance();
-  const w = prepareWorkout(p, p.plan.sessions[0]);
+  const w = prepareWorkout(p, firstExerciseSession(p));
   w.exercises[0].sets = [
     {
       id: uid(),
@@ -340,9 +345,11 @@ test("Input boundaries enforced outside HTML forms", () => {
 test("Nested invalid backups are rejected without modifying current data", () => {
   const s = initialState(),
     copy = structuredClone(s);
-  copy.profiles.elite.plan.sessions[0].exercises[0].targetSets = -1;
+  const first = (plan) =>
+    plan.sessions.find((x) => (x.exercises || []).length > 0);
+  first(copy.profiles.elite.plan).exercises[0].targetSets = -1;
   assert.throws(() => validateState(copy));
-  assert.ok(s.profiles.elite.plan.sessions[0].exercises[0].targetSets > 0);
+  assert.ok(first(s.profiles.elite.plan).exercises[0].targetSets > 0);
 });
 test("Both source schemas migrate actual food and force histories", () => {
   for (const id of ["elite", "emilie"]) {
@@ -395,8 +402,15 @@ test("Report periods use their own calendar range", () => {
 
 test("Zero-rest source blocks behave as trisets, then retain their prescribed group rest", async () => {
   const { nextWorkoutStep } = await import("../src/engine/workout-flow.js");
-  const p = newProfile("elite"),
-    w = prepareWorkout(p, p.plan.sessions[0]);
+  const p = newProfile("elite");
+  // Première séance dont les 3 premiers mouvements forment un bloc sans repos
+  // (triset) — indépendant du jour de la semaine où démarre le plan.
+  const tri = p.plan.sessions.find((s) => {
+    const ex = prepareWorkout(p, s).exercises || [];
+    return ex.length >= 3 && ex[0].rest === 0 && ex[1].rest === 0 && ex[2].rest === 120;
+  });
+  assert.ok(tri, "le plan doit contenir un bloc sans repos");
+  const w = prepareWorkout(p, tri);
   w.exercises[0].sets.push({ completed: true });
   assert.deepEqual(nextWorkoutStep(w, 0), { index: 1, rest: 0 });
   w.exercises[1].sets.push({ completed: true });
@@ -407,7 +421,7 @@ test("Zero-rest source blocks behave as trisets, then retain their prescribed gr
 test("Short source blocks retain the rest of their final movement after pruning", () => {
   const p = newProfile("elite");
   const short = shortenSession(
-    prepareWorkout(p, p.plan.sessions[0]),
+    prepareWorkout(p, firstExerciseSession(p)),
     15,
   ).session;
   for (const block of new Set(short.exercises.map((e) => e.blockIndex))) {

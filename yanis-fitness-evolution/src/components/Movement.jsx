@@ -11,7 +11,11 @@ import HumanAnim from "./HumanAnim.jsx";
 // Ordre de résolution (aucun écran vide, aucun placeholder générique) :
 // 1. GIF source exact de l'exercice ; 2. association explicite / famille
 // (moteur demo-match) ; 3. visuel de guide piscine pour une étape nommée ;
-// 4. animation humaine créée (moteur human-motion, geste propre au pattern) ;
+// 4. animation humaine créée (moteur human-motion, geste propre au pattern)
+//    — cartes d'exercice uniquement : le VRAI comportement 1.5.0 ne montre
+//    JAMAIS de figure « créée » pour les étapes nommées (protocoles piscine,
+//    cardio elliptique, HIIT) ; elles reçoivent le visuel humain de
+//    récupération (ou la cadence respiratoire), comme dans l'original ;
 // 5. respiration guidée ; 6. vue anatomique (exercices non filmables).
 function poolGuideFor(name) {
   const n = norm(name);
@@ -20,18 +24,6 @@ function poolGuideFor(name) {
       (g) => g.img && g.k.some((k) => n.includes(norm(k))),
     ) || null
   );
-}
-// Étape de séance sans fiche exercice : le pattern est déduit du nom pour que
-// l'animation créée corresponde au domaine réel (nage ≠ elliptique ≠ repos).
-function stepPattern(name, fallback) {
-  const n = norm(name);
-  if (/nage|swim|aqua|bassin|piscine|ciseaux|battement|tabata/.test(n)) return "swim";
-  if (/etir|stretch/.test(n)) return "stretch";
-  if (/elliptique|marche|jogging|course|velo|velo d|.apparat|cardio/.test(n)) return "walk";
-  if (/repos|recup|souffler|calme|respir|detente/.test(n)) return "breathe";
-  if (/gainage|planche/.test(n)) return "static";
-  if (/sprint|fractionne|interval/.test(n)) return "swim";
-  return fallback || "mobility";
 }
 export function demonstration(exercise, movementName) {
   if (exercise) {
@@ -64,19 +56,11 @@ export default function Movement({
   const breathe = ["breathe", "respiration"].includes(
     pattern || exercise?.pattern,
   );
-  const virtualStep =
-    !exercise && movementName
-      ? {
-          id: "step:" + norm(movementName),
-          name: movementName,
-          pattern: stepPattern(movementName, pattern),
-          muscle: "abs",
-        }
-      : null;
-  const motion =
-    !media && (exercise || virtualStep) && !breathe
-      ? motionFor(exercise || virtualStep)
-      : null;
+  // Figure « créée » uniquement pour une carte d'exercice sans visuel humain :
+  // les étapes nommées d'un protocole (piscine, elliptique, HIIT) suivent le
+  // comportement 1.5.0 — visuel humain du guide ou de récupération, jamais de
+  // personnage bâton.
+  const motion = !media && exercise && !breathe ? motionFor(exercise) : null;
   const capture = useCallback(() => {
     if (!image.current?.naturalWidth) return;
     try {
