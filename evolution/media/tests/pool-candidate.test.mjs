@@ -13,7 +13,8 @@ const opts={ecmaVersion:'latest',sourceType:'module'};
 const tree=parse(original,opts), patched=parse(candidate,opts);
 const ge=original.slice(original.indexOf('const Ge='),original.indexOf(',uh=',original.indexOf('const Ge=')))+';';
 const normalize=vm.runInNewContext(ge+'Ge');
-const media=createPoolMedia({normalize,poolGuides:inventory.poolGuides});
+const reviewedTexts=JSON.parse(fs.readFileSync(new URL('../candidate/pool-texts.json',import.meta.url))).entries;
+const media=createPoolMedia({normalize,poolGuides:inventory.poolGuides,reviewedTexts});
 const fn=(text,ast,name)=>{const n=ast.body.find(n=>n.id?.name===name);assert.ok(n);return text.slice(n.start,n.end)};
 const freeze=o=>{Object.freeze(o);for(const v of Object.values(o))if(v&&typeof v==='object')freeze(v);return o};
 test('requires exact complete 1.4.0 and refuses accidental double patching',()=>{
@@ -23,7 +24,7 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia'].includes(n.id?.name)&&
+  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg'].includes(n.id?.name)&&
   !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
@@ -118,4 +119,77 @@ test('library view copies change only reviewed GIF fields and never mutate froze
 test('library and rest widget integrations are limited to reviewed display lookup, not data or controls',()=>{
  assert.equal(fn(candidate,patched,'Z5').replace('b.slice(0,y).map(JarvisReviewedView).map(k=>','b.slice(0,y).map(k=>'),fn(original,tree,'Z5'));
  assert.equal(fn(candidate,patched,'k5').replace('img:((b=JarvisReviewedMedia(y))==null?void 0:b.path)||y.gif||','img:y.gif||'),fn(original,tree,'k5'));
+});
+test('every reviewed pool prescription of the delivered program resolves aquatic, never dry', () => {
+ // The two defects reproduced after a real phone test: these texts landed on the
+ // dry elliptical because their block is declared pool but keeps segment 'post'.
+ assert.ok(reviewedTexts.length>=12);
+ for(const entry of reviewedTexts){
+  // 'pool' is what the corrected preview now passes for a pool-format block,
+  // including the after-weights block whose steps kept segment 'post'.
+  const step={name:entry.text,seconds:1200,kind:'work',pattern:'swim',segment:'pool'};
+  const meta={type:'source-combo',name:'Piscine après musculation',components:[{key:'post',format:'pool'}]};
+  const result=media.resolve(step,meta);
+  assert.ok(result,entry.text);
+  assert.ok(result.path?.startsWith('/media/pool-'),entry.text+' -> '+result.path);
+  assert.ok(!/cardio-(recup-active|elliptique|transition)/.test(result.path),entry.text);
+  assert.ok(!result.path.includes('recovery-human'),entry.text);
+  assert.equal(result.status,'reviewed-pool-prescription');
+  assert.equal(media.guide(entry.text).t,entry.guide);
+ }
+ // The same texts keep the delivered dry resolution inside a real land block.
+ for(const name of ['Récupération active','Fractionné soutenu','Retour au calme elliptique'])
+  assert.equal(media.resolve({name,segment:'post'},{type:'source-combo',components:[{key:'post',format:'elliptical'}]}),null);
+});
+test('integrated preview routes a pool-format block through the aquatic context only', () => {
+ const code=fs.readFileSync(new URL('../candidate/pool-context.mjs',import.meta.url),'utf8').replace('export function','function');
+ const ctx=vm.createContext({bl:inventory.poolGuides,If:inventory.cardioGuides});
+ vm.runInContext(ge+code+';const JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl,reviewedTexts:'+JSON.stringify(reviewedTexts)+'});'+
+  fn(candidate,patched,'bg')+fn(candidate,patched,'JarvisStepGuide'),ctx);
+ const detail="25 min de piscine : nage souple ou aquagym. Récupération active sans impact après une séance jambes chargée.";
+ ctx.detail=detail;
+ assert.equal(vm.runInContext('JarvisStepGuide(detail,"pool").img',ctx),'/media/pool-nage-douce.jpg');
+ assert.equal(vm.runInContext('JarvisStepGuide(detail,"post")',ctx).img,'/media/cardio-recup-active.jpg');
+ assert.match(fn(candidate,patched,'G4'),/JarvisStepGuide\(k\.name,w\.format==="pool"\?"pool":k\.segment\)/);
+ assert.match(fn(candidate,patched,'v5'),/JarvisPoolMedia\.resolve\(f,p\.meta\)/);
+});
+test('shipped alias map is recorded and never silently changed by the candidate', () => {
+ const extract=file=>{const s=fs.readFileSync(file,'utf8');const i=s.indexOf('const Z4={');return new Function(s.slice(i,s.indexOf(',Y4=',i))+'\nreturn Z4;')();};
+ const registry=JSON.parse(fs.readFileSync(new URL('../review/alias-substitutions.json',import.meta.url)));
+ const published=extract(root+'/.cache/bundle/index-CBCies4k.js');
+ assert.equal(Object.keys(published).length,registry.aliasEntryCount);
+ assert.equal(registry.exerciseWithoutOwnDrawing,registry.rows.length);
+ assert.equal(registry.rows.filter(r=>r.triage==='name-unrelated').length,25);
+ assert.deepEqual(extract(root+'/.cache/media-pool-candidate/assets/index-CBCies4k.js'),published);
+});
+test('every name-unrelated alias carries an individual decision and closes no group', () => {
+ const registry=JSON.parse(fs.readFileSync(new URL('../review/alias-substitutions.json',import.meta.url)));
+ const review=JSON.parse(fs.readFileSync(new URL('../review/alias-review.json',import.meta.url)));
+ const frames=JSON.parse(fs.readFileSync(new URL('../review/alias-target-frames.json',import.meta.url)));
+ const assets=new Set(JSON.parse(fs.readFileSync(new URL('../review/assets-1.4.0.json',import.meta.url))).assets.map(a=>a.path));
+ const findingsGroups=JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings.filter(f=>f.status==='open');
+ const unrelated=registry.rows.filter(r=>r.triage==='name-unrelated').map(r=>r.id).sort();
+ assert.deepEqual(Object.keys(review.decisions).sort(),unrelated);
+ assert.equal(review.reviewedCount,25);
+ assert.equal(review.groupsClosed,0);
+ assert.equal(review.summary.targetDrawingsSharedWithARealExercise,16);
+ for(const [id,decision] of Object.entries(review.decisions)){
+  const exercise=inventory.exercises.find(e=>e.id===id);
+  assert.equal(decision.name,exercise.name);
+  assert.ok(assets.has(decision.targetDrawing),id);
+  assert.ok(decision.reason.length>60,id);
+  assert.ok(decision.evidence.length>10,id);
+  assert.ok(decision.decision.endsWith('kept-open')||decision.decision==='resolved-by-reviewed-override',id);
+  assert.equal(decision.groupClosed,false);
+  assert.ok(new Set(findingsGroups.flatMap(f=>f.exercises||[])).has(id),'untracked after review: '+id);
+ }
+ assert.equal(frames.clipCount,5);
+ assert.equal(frames.reviewedFrameCount,10);
+ for(const clip of frames.clips){
+  assert.equal(clip.frameCount,2);
+  assert.deepEqual(clip.reviewedFrameIndices,[0,1]);
+  assert.ok(clip.frames.every(f=>/^[a-f0-9]{64}$/.test(f.rgbaSha256)));
+  assert.equal(clip.assetSha256,JSON.parse(fs.readFileSync(new URL('../review/assets-1.4.0.json',import.meta.url))).assets.find(a=>a.path===clip.path).sha256);
+  assert.equal(clip.finalAccepted,false);
+ }
 });

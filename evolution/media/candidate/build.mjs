@@ -20,6 +20,31 @@ export function readBaseline() {
   if (sha(source) !== baseline.bundleSha256) throw Error('Wrong bundle baseline');
   return source;
 }
+export function verifyPoolTexts(source) {
+  // Evaluate the delivered JSON literals exactly as the app does: they embed
+  // escaped SVG/CSS strings, so the raw template text is not plain JSON.
+  const payloads = [...source.matchAll(/=JSON\.parse\((`[^`]*`)\)/g)]
+    .map(match => new Function('return JSON.parse(' + match[1] + ')')());
+  const entries = JSON.parse(fs.readFileSync(new URL('./pool-texts.json', import.meta.url))).entries;
+  const deliveredGuides = payloads.flatMap(payload => payload.POOL_GUIDES || []);
+  const audited = JSON.parse(fs.readFileSync(new URL('../review/inventory-1.4.0.json', import.meta.url))).poolGuides;
+  const assets = JSON.parse(fs.readFileSync(new URL('../review/assets-1.4.0.json', import.meta.url))).assets;
+  for (const entry of entries) {
+    if (!/^(exact|representative)$/.test(entry.precision) || !entry.review) throw Error('Unreviewed pool text '+entry.text);
+    const delivered = payloads.some(payload => JSON.stringify(payload).includes(JSON.stringify(entry.text)));
+    if (!delivered) throw Error('Pool text absent from the delivered program: ' + entry.text);
+    const title = deliveredGuides.find(candidate => candidate.t === entry.guide);
+    if (!title) throw Error('Aquatic guide absent from the delivered payload: ' + entry.guide);
+    const resolved = audited.find(candidate => candidate.t === entry.guide);
+    if (!resolved?.img) throw Error('Unknown aquatic guide for reviewed pool text: ' + entry.guide);
+    if (title.img != null && title.img !== resolved.img) throw Error('Reviewed guide image disagrees with the payload: ' + entry.guide);
+    if (!assets.some(asset => asset.path === resolved.img)) throw Error('Reviewed pool guide has no decoded asset: ' + resolved.img);
+  }
+  const guides = new Set(entries.map(entry => entry.guide));
+  for (const required of ['Marche aquatique','Nage douce'])
+    if (!guides.has(required)) throw Error('Reviewed pool coverage missing: ' + required);
+  return entries;
+}
 export function integrate(source) {
   if (sha(source) !== baseline.bundleSha256) throw Error('Requires unchanged 1.4.0; rejects unknown/already patched input');
   const start = source.indexOf('function v5('), end = source.indexOf('function w5(', start);
@@ -40,7 +65,12 @@ export function integrate(source) {
   source = source.slice(0,start) + timer + source.slice(end);
   const helper = fs.readFileSync(new URL('./pool-context.mjs', import.meta.url),'utf8')
     .replace('export function createPoolMedia', 'function createPoolMedia');
-  source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl});\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
+  const reviewedTexts = verifyPoolTexts(source);
+  source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl,reviewedTexts:${JSON.stringify(reviewedTexts)}});\nfunction JarvisStepGuide(i,o){return o==="pool"?JarvisPoolMedia.guide(i):bg(i,o)}\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
+  // The pool block prescribed after the weights session is declared by its
+  // block format, not by the step segment it kept from the HTML import.
+  source = once(source, 'const E=bg(k.name,k.segment)',
+    'const E=JarvisStepGuide(k.name,w.format==="pool"?"pool":k.segment)');
   // Explicit reviewed IDs only. Never infer a substitute by muscle or similar name.
   const overrides = JSON.parse(fs.readFileSync(new URL('./association-overrides.json',import.meta.url))).overrides;
   const inventory = JSON.parse(fs.readFileSync(new URL('../review/inventory-1.4.0.json',import.meta.url)));
@@ -76,6 +106,13 @@ function Kh(i){return JarvisReviewedMedia(i)||i!=null&&i.id&&eo.get(i.id)||null}
 function a5({id:i}){`);
   source = once(source,'f=Yu[p.pattern]||Yu.static,h=ft.filter(', 'f=JarvisTechnique(p),h=ft.filter(');
   source = once(source,'U=Yu[m.pattern]', 'U=JarvisTechnique(m)');
+  // Same rule for the timer: a component declared as pool gives its steps the
+  // aquatic segment instead of the "post" they inherited from the HTML import.
+  source = once(source, 'l.push(...c.customSteps.map(u=>({...u,segment:c.key})))',
+    'l.push(...c.customSteps.map(u=>({...u,segment:c.format===\"pool\"?"pool":c.key})))');
+  // The preview list must select the same steps the builder just labelled.
+  source = once(source, 'p.filter(k=>k.segment===(w.key==="post"?"post":w.key))',
+    'p.filter(k=>k.segment===(w.format==="pool"?"pool":w.key==="post"?"post":w.key))');
   const warmupHelper = fs.readFileSync(new URL('./warmup-context.mjs',import.meta.url),'utf8')
     .replace('export function createWarmupMedia','function createWarmupMedia');
   source = once(source,'function Bg(i,o){',

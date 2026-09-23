@@ -3,7 +3,7 @@
   "status": "scoped-web-candidate-not-release",
   "releaseReady": false,
   "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "candidateBundleSha256": "5c041fb8d73a40bf0df0bbec64619ba5b54cc2682b85a0cb123ddcb43f8234c6",
+  "candidateBundleSha256": "b74853bca4761ccb0f36a4f4612ed4e69b82f42b392dbf1cb7dfd7f6d047e373",
   "integrity": {
     "packagedWebFiles": 272,
     "unchangedWebFiles": 271,
@@ -21,11 +21,14 @@
       "Bg",
       "a5",
       "$5",
-      "j5"
+      "j5",
+      "G4",
+      "Mg"
     ],
     "addedHelpers": [
       "createPoolMedia",
       "JarvisPoolMedia",
+      "JarvisStepGuide",
       "JarvisReviewedMedia",
       "JarvisReviewedView",
       "JarvisTechnique",
@@ -35,81 +38,156 @@
   },
   "tests": {
     "node": {
-      "passed": 32,
-      "baselineCharacterization": 9,
-      "candidate": 17,
+      "passed": 37,
+      "baselineCharacterization": 10,
+      "candidate": 21,
       "reviewTraceability": 6,
-      "warmupCombinationsCompared": 1254
+      "perFile": {
+        "tests/audit.test.mjs": 6,
+        "tests/frame-review.test.mjs": 6,
+        "tests/pool-candidate.test.mjs": 15,
+        "tests/pool-recovery.test.mjs": 4,
+        "tests/warmup-candidate.test.mjs": 6
+      },
+      "warmupCombinationsCompared": 1254,
+      "command": "node --test evolution/media/tests/*.test.mjs"
     },
     "targetedBrowser": {
-      "passed": 20,
+      "passed": 26,
       "failedInFinalRun": 0,
-      "wholeFinalRunSeconds": null,
+      "reportedDuration": "3.5m",
       "test": [
         "evolution/media/tests/pool-candidate.spec.mjs",
         "evolution/media/tests/warmup-candidate.spec.mjs"
       ],
-      "reportedDuration": "3.2m",
-      "scope": "previous 14 cumulative cases, with floor-technique assertions, plus 4 new warmup start/approach/zoom/reload/completion cases and 2 saved legacy activation cases"
+      "scope": "20 cumulative cases (pool recovery, French press EZ, floor bridge, saved workouts, warmup) plus 3 pool-after-weights blocks (marche aquatique / nage douce / fractionné nager), 1 real land post-cardio block keeping its dry guide and 2 step-up gap cases",
+      "environment": "LD_LIBRARY_PATH + CHROMIUM_EXECUTABLE_PATH required for the provisioned Chromium 138"
     },
     "existingHomeBrowser": {
       "passed": 8,
       "failed": 0,
-      "wholeRunSeconds": 57.6,
+      "wholeRunSeconds": 57.9,
       "test": "evolution/home/tests/home.spec.mjs",
-      "reference": "unchanged web extracted from signed 1.4.0",
-      "requiredEnvironment": "MEDIA_REVIEW_CANDIDATE=1",
-      "comparisonAllowance": "One exact floor-bridge card label changes from ANATOMIE RÉALISTE to GUIDE HUMAIN. Both expected label and image URLs are asserted on candidate/reference, then that exact contextual string alone is normalized for strict whole-main text comparison. Default tests without opt-in remain unchanged."
+      "reference": "unchanged web extracted from signed 1.4.0 (.cache/audit-reference-140)",
+      "requiredEnvironment": "MEDIA_REVIEW_CANDIDATE=1"
+    },
+    "publishedReferenceRepro": {
+      "build": "unchanged web extracted from signed 1.4.0 APK, served locally",
+      "cases": 4,
+      "failed": 3,
+      "passed": 1,
+      "result": "The dry-elliptical defect is reproduced on the published build: the pool block shows a cardio-* image for the 30 min and 25 min nage-douce prescriptions, and no step image at all for the sustained-pace prescription. The candidate passes the same 4 cases.",
+      "captures": [
+        "review/pool-defect-published-1.4.0-30min.png",
+        "review/pool-defect-published-1.4.0-25min.png"
+      ],
+      "script": "evolution/media/candidate/capture-pool-review.mjs"
     },
     "browser": "Chromium 138.0.7204.0",
     "physicalAndroidTest": false,
-    "full90DeliverySuiteRerun": false,
-    "harnessAdjustmentsThisStep": [
-      "VM technique test now includes PATTERN_INFO from original bundled elite JSON (lt dependency), not a fabricated baseline.",
-      "Warmup thumbnail accessible name comes from image alt, not title Agrandir: test uses scoped .warmup-step-thumb. Initial run timed out; no application workaround.",
-      "Parallel home/media test collection raced with deletion of media output directory (ENOENT). Final home suite run sequentially after complete 20-case media suite; both pass. Run these suites sequentially."
+    "full90DeliverySuiteRerun": false
+  },
+  "poolRecovery": {
+    "reviewedTexts": 12,
+    "record": "candidate/pool-texts.json",
+    "guides": {
+      "Marche aquatique": 4,
+      "Nage douce": {
+        "exact": 3,
+        "representative": 4
+      },
+      "Fractionné — nager": 1
+    },
+    "resolutionOrder": [
+      "reviewed-pool-prescription",
+      "legacy-association-not-yet-validated",
+      "unresolved"
+    ],
+    "blockFormatWinsOverInheritedSegment": true,
+    "landCardioUnchanged": true,
+    "persistedStepImageUsed": false,
+    "captures": [
+      "review/pool-candidate-marche-aquatique.png",
+      "review/pool-candidate-nage-douce.png",
+      "review/pool-candidate-fractionne-nager.png",
+      "review/pool-candidate-*-timer.png",
+      "review/pool-reference-1.4.0-*.png"
     ]
   },
-  "openFindingGroups": 36,
+  "aliasIndividualReview": {
+    "record": "review/alias-review.json",
+    "reviewedIdentifiers": 25,
+    "scope": "every alias with no name relation to the exercise it resolves to",
+    "kindCounts": {
+      "mismatch-kept-open": 19,
+      "naming-ambiguity-kept-open": 1,
+      "no-replacement-kept-open": 2,
+      "related-but-distinct-kept-open": 1,
+      "variant-mismatch-kept-open": 1,
+      "resolved-by-reviewed-override": 1
+    },
+    "targetDrawingsThatAreAnotherExerciseOwnDrawing": 16,
+    "groupsClosed": 0,
+    "framesReviewedThisPass": {
+      "clips": 5,
+      "frames": 10,
+      "record": "review/alias-target-frames.json"
+    },
+    "evidence": [
+      "review/alias-decisions-25-pass2.png",
+      "review/alias-zoom-shared-drawings.png",
+      "review/alias-stepup-candidate-12frames.png",
+      "review/alias-elastic-abduction-12frames.png",
+      "review/alias-elastic-kickback-12frames.png"
+    ],
+    "refusals": [
+      "The only real step-up drawing holds dumbbells while both step-up prescriptions are bodyweight: not substituted, no prescription rewritten.",
+      "No drawing is swapped for a family look-alike; missing visuals stay explicit gaps."
+    ]
+  },
+  "illustrationSurvey": {
+    "record": "review/illustration-survey.json",
+    "report": "review/REVIEW-ILLUSTRATIONS.md",
+    "styleFamilies": 5,
+    "measuredDrawingClasses": {
+      "anatomical-line": 71,
+      "realistic-illustration": 23,
+      "total": 94
+    },
+    "method": "part de pixels quasi neutres sur la première image (seuil 0,75) — mesure indicative, pas une validation",
+    "conclusion": "Deux familles de dessin coexistent déjà dans les médias livrés, plus trois familles de photographies. Ne pas ajouter d'illustration avant d'avoir relu les 35 dessins embarqués restants et publié la règle de style."
+  },
+  "drawingReviewCoverage": {
+    "packagedGifs": 94,
+    "reviewedLongGrid": 59,
+    "neverReviewed": 35,
+    "note": "35 drawings have never been examined. No completion claim for \"every exercise has its visual\"."
+  },
+  "openFindingGroups": 41,
   "limitations": [
     "No APK built or signed",
     "No missing media supplied by this patch",
-    "Generic aquatic recovery remains an explicit unresolved gap",
-    "Legacy aquatic images are not all semantically correct",
+    "Published 1.4.0 remains defective for the pool block after weights",
+    "Legacy aquatic keyword matches remain declared not validated",
+    "Pool prescriptions without a reviewed match remain an explicit gap",
     "Old mixed timers without a segment are not guessed",
-    "Exact user phone route not reproduced",
-    "French press remains a two-key-pose GIF, not continuous video or clinical validation",
+    "Combo-modal step rows still print raw seconds (pre-existing display, findings.json combo-step-seconds-display)",
+    "Exact user phone route not reproduced for the pool screens",
     "Dips and other triceps/glute variants remain open; no external replacement approved/integrated",
     "Warmup mobility/scapular illustration and general warmup panel remain unreviewed/incorrect in known cases",
     "Approaches of 207 other exercise IDs retain old generic bench visual; no coverage-completion claim",
     "Old approaches without their own exercise ID/role are not inferred from current workout",
-    "Original bodyweight approach labels still mention choosing a light load; retained, not corrected in this visual scope",
-    "No per-ID override applied to user source notes: explicit workout notes/tips retain priority"
+    "No per-ID override applied to user source notes: explicit workout notes/tips retain priority",
+    "The shipped alias map (104 entries, 25 with no name relation) is recorded and individually reviewed, but no alias is closed and no visual is created",
+    "Two shipped maps contradict each other for the same exercise name (id map vs name map); the contradiction is documented, not resolved by a substitution",
+    "35 of the 94 packaged drawings have never been reviewed; the candidate does not create or replace missing visuals",
+    "Three illustration styles already coexist in the shipped media; any new visual must be validated against the user's validated style before integration"
   ],
   "privateSigningDirectoryAvailable": false,
-  "previousPoolOnlyBundleSha256": "75f39ae838c5ae7fc96b624f4f21ed4b960820590226d814de03ca86ce4b0107",
-  "reviewedLongAnimations": {
-    "clips": 46,
-    "frames": 588,
-    "method": "ordered contact sheets, not full real-time playback",
-    "associations": 102,
-    "mismatch": 58,
-    "variantReviewRequired": 23,
-    "basicMovementCorrespondsNotFinalApproval": 21
-  },
   "candidateExerciseOverrides": [
     "pont-fessier-au-sol-activation",
     "french-press-barre-ez"
   ],
-  "previousBridgeOnlyBundleSha256": "b5ab9b5570c00b7842d202ae8fb03fd23ef2c9f80f6f5046393a74aa9663d47f",
-  "reviewedShortFocus": {
-    "clips": 13,
-    "frames": 26,
-    "method": "both frames on five ordered 300px contact sheets, plus two original-size thumbnails",
-    "record": "review/short-focus.json",
-    "subsetOf48TwoFrameGifs": true
-  },
-  "previousLibraryRestBundleSha256": "148cef273a0e3223cc0c3bdb9bdba320163cf1da7582194fcc746155c46b52e8",
   "candidateTechniqueOverrides": [
     "pont-fessier-au-sol-activation"
   ],

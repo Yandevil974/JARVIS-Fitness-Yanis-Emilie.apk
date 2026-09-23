@@ -1,0 +1,90 @@
+{
+ "date": "2026-09-23",
+ "status": "audit-only-no-release",
+ "meaning": "Relevé mesuré des familles de dessins déjà embarqués. Aucune illustration n'est proposée ni intégrée : la règle de style doit d'abord être validée.",
+ "measuredOn": "les 137 médias décodés du bundle 1.4.0 signé (94 GIF, 43 JPG), via review/assets-1.4.0.json",
+ "families": [
+  {
+   "id": "anatomical-line",
+   "what": "Silhouette humaine gris clair, ligne noire, muscle ciblé en rouge/orange. Fond blanc ou salle générique en aplat.",
+   "count": 71,
+   "examples": [
+    "/media/c3a2b9892161522e.gif (dips)",
+    "/media/8eecb0152081ff26.gif (pont au sol)",
+    "/media/f73444e9dc2fee89.gif (abduction assise)"
+   ],
+   "usedFor": "exercices de musculation sans dessin propre, y compris 16 alias revus ce passage"
+  },
+  {
+   "id": "realistic-illustration",
+   "what": "Illustration réaliste en couleurs : personnage, vêtements, matériel détaillé, décor de salle.",
+   "count": 23,
+   "examples": [
+    "/media/dc0cabae23adbfd5.gif (tirage vertical)",
+    "/media/867 (…)"
+   ],
+   "note": "Classement mesuré par la part de pixels neutres ; les deux familles de dessin coexistent déjà.",
+   "usedFor": "d'autres exercices du même catalogue"
+  },
+  {
+   "id": "photo-land",
+   "what": "Photographies réelles, format paysage 1376-1408 px.",
+   "count": 3,
+   "examples": [
+    "/media/cardio-elliptique.jpg",
+    "/media/cardio-recup-active.jpg",
+    "/media/cardio-transition.jpg"
+   ],
+   "usedFor": "blocs cardio terrestres"
+  },
+  {
+   "id": "photo-aqua",
+   "what": "Photographies réelles en milieu aquatique.",
+   "count": 10,
+   "examples": [
+    "/media/pool-nage-douce.jpg",
+    "/media/pool-marche-aquatique.jpg",
+    "/media/pool-fractionne.jpg"
+   ],
+   "usedFor": "guides piscine"
+  },
+  {
+   "id": "photo-stretch",
+   "what": "Photographies réelles de postures d'étirement et d'échauffement.",
+   "count": 30,
+   "examples": [
+    "/media/stretch-isc-une-jambe.jpg",
+    "/media/warmup-mobilite.jpg"
+   ],
+   "usedFor": "29 étirements, échauffement, panneaux généraux"
+  }
+ ],
+ "consequence": "Ajouter un nouveau dessin — même exact — mélangerait une sixième famille visuelle à ce que l'utilisateur a validé. Ce relevé ne tranche pas ; il documente.",
+ "styleFamilyCount": 5,
+ "totals": {
+  "gifs": 94,
+  "jpg": 43,
+  "packagedImages": 137
+ },
+ "drawingClasses": {
+  "method": "Part de pixels quasi neutres (écart max-min < 12) sur la première image redimensionnée en 64x64 ; seuil 0,75. Mesure indicative, pas une validation.",
+  "counts": {
+   "anatomical-line": 71,
+   "realistic-illustration": 23
+  },
+  "examples": {
+   "anatomical-line": [
+    "/media/03098b19c4672ce5.gif",
+    "/media/04ab405e919744b5.gif",
+    "/media/055d358895efaa10.gif",
+    "/media/0766d3a06bf79dc8.gif"
+   ],
+   "realistic-illustration": [
+    "/media/0a5625b92247ed69.gif",
+    "/media/10ab787fbf26b1f4.gif",
+    "/media/1c28908ab83cde2e.gif",
+    "/media/22146cff6a787e8a.gif"
+   ]
+  }
+ }
+}

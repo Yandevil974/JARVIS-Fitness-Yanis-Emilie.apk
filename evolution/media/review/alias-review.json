@@ -1,0 +1,534 @@
+{
+ "date": "2026-09-23",
+ "status": "review-only-no-release",
+ "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+ "meaning": "Revue individuelle des 25 alias sans relation de nom (matériel, position, contexte). Aucun groupe n'est clos par un alias ; aucun remplacement n'est intégré par ce fichier.",
+ "reviewedCount": 25,
+ "groupsClosed": 0,
+ "summary": {
+  "kindCounts": {
+   "mismatch-kept-open": 19,
+   "naming-ambiguity-kept-open": 1,
+   "no-replacement-kept-open": 2,
+   "related-but-distinct-kept-open": 1,
+   "resolved-by-reviewed-override": 1,
+   "variant-mismatch-kept-open": 1
+  },
+  "targetDrawingsSharedWithARealExercise": 16,
+  "targetDrawingsReviewedThisPass": 5,
+  "framesReviewedThisPass": 10,
+  "groupsClosed": 0
+ },
+ "provenance": {
+  "/media/4eff701bcdf9a359.gif": {
+   "ownDrawingOf": [
+    "leg-curl-allonge",
+    "leg-curl-allonge-1-1-4-en-haut"
+   ],
+   "alsoResolvedForInThisReview": [
+    "glute-ham-raise"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/aab0de0aad0c275a.gif": {
+   "ownDrawingOf": [
+    "bird-dog"
+   ],
+   "alsoResolvedForInThisReview": [
+    "mobilite-des-epaules"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/8eecb0152081ff26.gif": {
+   "ownDrawingOf": [],
+   "alsoResolvedForInThisReview": [
+    "pont-fessier-au-sol-activation"
+   ],
+   "sharedWithRealExercise": false
+  },
+  "/media/03098b19c4672ce5.gif": {
+   "ownDrawingOf": [
+    "abduction-hanche-debout-a-la-poulie",
+    "abduction-hanche-a-la-poulie"
+   ],
+   "alsoResolvedForInThisReview": [
+    "fire-hydrant-a-l-elastique"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/0860394a5a99f74b.gif": {
+   "ownDrawingOf": [
+    "tirage-horizontal-a-la-poulie"
+   ],
+   "alsoResolvedForInThisReview": [
+    "rowing-a-l-elastique"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/4af33157ce25267c.gif": {
+   "ownDrawingOf": [
+    "tirage-vertical-prise-neutre",
+    "tirage-vertical-prise-large"
+   ],
+   "alsoResolvedForInThisReview": [
+    "lean-away-pull-ups",
+    "tractions-pull-up",
+    "tractions-supination-chin-up"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/5d6a89132df205f8.gif": {
+   "ownDrawingOf": [
+    "extensions-triceps-barre-ez"
+   ],
+   "alsoResolvedForInThisReview": [
+    "barre-au-front-pushdown-triceps",
+    "california-press-barre-au-cou"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/b2236e6b7a81a1b5.gif": {
+   "ownDrawingOf": [
+    "dead-bug",
+    "dead-bug-avec-rotation"
+   ],
+   "alsoResolvedForInThisReview": [
+    "respiration-diaphragmatique"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/9f22747c305f521b.gif": {
+   "ownDrawingOf": [
+    "souleve-de-terre-roumain-barre"
+   ],
+   "alsoResolvedForInThisReview": [
+    "good-morning-debout"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/4c2b19fa924f90a8.gif": {
+   "ownDrawingOf": [
+    "french-press-poulie-basse",
+    "french-press-barre-ez"
+   ],
+   "alsoResolvedForInThisReview": [
+    "extensions-triceps-halteres-incline",
+    "extensions-triceps-halteres-plat",
+    "triceps-extensions-halteres-banc-plat"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/789c6d90f30eb33e.gif": {
+   "ownDrawingOf": [
+    "jackknife-sur-swiss-ball"
+   ],
+   "alsoResolvedForInThisReview": [
+    "ab-wheel-roulette"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/995e1f9a9cedc5ec.gif": {
+   "ownDrawingOf": [
+    "fentes-avant-alternees"
+   ],
+   "alsoResolvedForInThisReview": [
+    "step-up-haut",
+    "step-up-sur-banc-hauteur-du-genou"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/dc0cabae23adbfd5.gif": {
+   "ownDrawingOf": [
+    "tirage-vertical-prise-pronation"
+   ],
+   "alsoResolvedForInThisReview": [
+    "pullover-cable-bras-tendus",
+    "pullover-haltere-plat"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/cf312b839f6da027.gif": {
+   "ownDrawingOf": [
+    "bulgarian-split-squat",
+    "hip-thrust-unilateral-1-jambe",
+    "hip-thrust-unilateral",
+    "bulgarian-split-squat-halteres",
+    "fentes-bulgares-pied-arriere-sureleve"
+   ],
+   "alsoResolvedForInThisReview": [
+    "fentes-bulgares-halteres-pied-avant-sureleve"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/a5c1c2427ee83c93.gif": {
+   "ownDrawingOf": [
+    "crunch-a-la-poulie-ou-au-sol",
+    "crunch-a-la-poulie"
+   ],
+   "alsoResolvedForInThisReview": [
+    "wood-chop-poulie-haute"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/f73444e9dc2fee89.gif": {
+   "ownDrawingOf": [
+    "abduction-assise-machine-ou-elastique",
+    "abduction-assise-machine",
+    "abduction-assise-en-1-5-reps"
+   ],
+   "alsoResolvedForInThisReview": [
+    "clamshell-a-l-elastique"
+   ],
+   "sharedWithRealExercise": true
+  },
+  "/media/bc4d9bed4bbb590a.gif": {
+   "ownDrawingOf": [
+    "fentes-arriere-alternees"
+   ],
+   "alsoResolvedForInThisReview": [
+    "drop-lunges-fentes-controlees",
+    "drop-lunges-fentes-sautees-controlees"
+   ],
+   "sharedWithRealExercise": true
+  }
+ },
+ "decisions": {
+  "good-morning-debout": {
+   "name": "Good morning debout",
+   "equipment": [
+    "barbell"
+   ],
+   "pattern": "hinge",
+   "aliasTargetName": "Soulevé de terre roumain barre",
+   "targetDrawing": "/media/9f22747c305f521b.gif",
+   "decision": "related-but-distinct-kept-open",
+   "reason": "Charnière de hanches réelle, dos plat, mais la barre est tenue dans les mains alors qu'un good morning la porte sur les épaules/coudes ; le dessin est déjà celui de « Soulevé de terre roumain barre ».",
+   "evidence": "review/alias-target-frames.json (/media/9f22747c305f521b.gif, 2 images relues ici) + review/alias-decisions-25-pass2.png",
+   "groupClosed": false
+  },
+  "glute-ham-raise": {
+   "name": "Glute ham raise",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "aliasTargetName": "Leg curl allongé",
+   "targetDrawing": "/media/4eff701bcdf9a359.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Matériel différent (leg curl allongé) et aucun mouvement de glute-ham raise ; le dessin appartient à « Leg curl allongé ».",
+   "evidence": "review/alias-target-frames.json (/media/4eff701bcdf9a359.gif, 2 images relues ici) + review/alias-decisions-25-pass2.png",
+   "groupClosed": false
+  },
+  "wood-chop-poulie-haute": {
+   "name": "Wood chop poulie haute",
+   "equipment": [
+    "cable"
+   ],
+   "pattern": "crunch",
+   "aliasTargetName": "Crunch à la poulie",
+   "targetDrawing": "/media/a5c1c2427ee83c93.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Flexion de tronc à genoux (crunch à la poulie), pas de diagonale ni de rotation ; le dessin appartient à « Crunch à la poulie ».",
+   "evidence": "review/alias-target-frames.json (/media/a5c1c2427ee83c93.gif, 2 images relues ici) + review/alias-decisions-25-pass2.png",
+   "groupClosed": false
+  },
+  "pullover-cable-bras-tendus": {
+   "name": "Pullover câble bras tendus",
+   "equipment": [
+    "cable"
+   ],
+   "pattern": "pull",
+   "aliasTargetName": "Tirage vertical prise pronation",
+   "targetDrawing": "/media/dc0cabae23adbfd5.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Tirage vertical assis à la poulie : aucun pullover, et la variante haltère n'a ni haltère ni banc dans le dessin.",
+   "evidence": "review/alias-target-frames.json (/media/dc0cabae23adbfd5.gif, 2 images relues ici) + review/alias-decisions-25-pass2.png",
+   "groupClosed": false
+  },
+  "pullover-haltere-plat": {
+   "name": "Pullover haltère plat",
+   "equipment": [
+    "dumbbell"
+   ],
+   "pattern": "pull",
+   "aliasTargetName": "Tirage vertical prise pronation",
+   "targetDrawing": "/media/dc0cabae23adbfd5.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Tirage vertical assis à la poulie : aucun pullover, et la variante haltère n'a ni haltère ni banc dans le dessin.",
+   "evidence": "review/alias-target-frames.json (/media/dc0cabae23adbfd5.gif, 2 images relues ici) + review/alias-decisions-25-pass2.png",
+   "groupClosed": false
+  },
+  "ab-wheel-roulette": {
+   "name": "Ab wheel (roulette)",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "aliasTargetName": "Jackknife sur swiss ball",
+   "targetDrawing": "/media/789c6d90f30eb33e.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Swiss ball au lieu de la roulette : support et geste différents ; le dessin appartient à « Jackknife sur swiss ball ».",
+   "evidence": "review/alias-target-frames.json (/media/789c6d90f30eb33e.gif, 2 images relues ici) + review/alias-decisions-25-pass2.png",
+   "groupClosed": false
+  },
+  "tractions-pull-up": {
+   "name": "Tractions (pull-up)",
+   "equipment": [
+    "pullup"
+   ],
+   "pattern": "pull",
+   "aliasTargetName": "Tirage vertical prise large",
+   "targetDrawing": "/media/4af33157ce25267c.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Tirage vertical assis à la poulie (barre large, arrivée près de la nuque) alors que la prescription est une traction suspendue ; aucune suspension dans le dessin.",
+   "evidence": "review/long-animations.json clip 18 (images du lot long)",
+   "groupClosed": false
+  },
+  "tractions-supination-chin-up": {
+   "name": "Tractions supination (chin-up)",
+   "equipment": [
+    "pullup"
+   ],
+   "pattern": "pull",
+   "aliasTargetName": "Tirage vertical prise neutre",
+   "targetDrawing": "/media/4af33157ce25267c.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Tirage vertical assis à la poulie (barre large, arrivée près de la nuque) alors que la prescription est une traction suspendue ; aucune suspension dans le dessin.",
+   "evidence": "review/long-animations.json clip 18 (images du lot long)",
+   "groupClosed": false
+  },
+  "lean-away-pull-ups": {
+   "name": "Lean away pull-ups",
+   "equipment": [
+    "pullup"
+   ],
+   "pattern": "static",
+   "aliasTargetName": "Tirage vertical prise large",
+   "targetDrawing": "/media/4af33157ce25267c.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Tirage vertical assis à la poulie (barre large, arrivée près de la nuque) alors que la prescription est une traction suspendue ; aucune suspension dans le dessin.",
+   "evidence": "review/long-animations.json clip 18 (images du lot long)",
+   "groupClosed": false
+  },
+  "fentes-bulgares-halteres-pied-avant-sureleve": {
+   "name": "Fentes bulgares haltères (pied avant surélevé)",
+   "equipment": [
+    "dumbbell"
+   ],
+   "pattern": "lunge",
+   "aliasTargetName": "Bulgarian split squat",
+   "targetDrawing": "/media/cf312b839f6da027.gif",
+   "decision": "variant-mismatch-kept-open",
+   "reason": "Le dessin montre le pied ARRIÈRE surélevé (split squat bulgare) ; la prescription est pied AVANT surélevé. Source correcte pour les variantes bulgares voisines, pas pour celle-ci.",
+   "evidence": "review/long-animations.json clip 39 (images du lot long)",
+   "groupClosed": false
+  },
+  "drop-lunges-fentes-sautees-controlees": {
+   "name": "Drop lunges (fentes sautées contrôlées)",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "aliasTargetName": "Fentes arrière alternées",
+   "targetDrawing": "/media/bc4d9bed4bbb590a.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Fente arrière avec barre sur le dos alors que les deux prescriptions sont au poids du corps ; aucune fente sautée.",
+   "evidence": "review/long-animations.json clip 34 (images du lot long)",
+   "groupClosed": false
+  },
+  "drop-lunges-fentes-controlees": {
+   "name": "Drop lunges (fentes contrôlées)",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "aliasTargetName": "Fentes arrière alternées",
+   "targetDrawing": "/media/bc4d9bed4bbb590a.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Fente arrière avec barre sur le dos alors que les deux prescriptions sont au poids du corps ; aucune fente sautée.",
+   "evidence": "review/long-animations.json clip 34 (images du lot long)",
+   "groupClosed": false
+  },
+  "barre-au-front-pushdown-triceps": {
+   "name": "Barre au front (pushdown triceps)",
+   "equipment": [
+    "cable"
+   ],
+   "pattern": "triceps",
+   "aliasTargetName": "Extensions triceps barre EZ",
+   "targetDrawing": "/media/5d6a89132df205f8.gif",
+   "decision": "naming-ambiguity-kept-open",
+   "reason": "Le libellé mélange « barre au front » (allongé) et « pushdown » (poulie) ; le dessin est une extension triceps debout barre EZ au-dessus de la tête : ni l'un ni l'autre. À trancher avant toute association, sans réécrire la prescription.",
+   "evidence": "review/short-focus.json clip 5 (2 images relues au lot court)",
+   "groupClosed": false
+  },
+  "california-press-barre-au-cou": {
+   "name": "California press (barre au cou)",
+   "equipment": [
+    "barbell"
+   ],
+   "pattern": "triceps",
+   "aliasTargetName": "Extensions triceps barre EZ",
+   "targetDrawing": "/media/5d6a89132df205f8.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "California press = barre au cou, allongé ; le dessin est debout, barre au-dessus de la tête.",
+   "evidence": "review/short-focus.json clip 5 (2 images relues au lot court)",
+   "groupClosed": false
+  },
+  "triceps-extensions-halteres-banc-plat": {
+   "name": "Triceps extensions haltères, banc plat",
+   "equipment": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "triceps",
+   "aliasTargetName": "French press barre EZ",
+   "targetDrawing": "/media/4c2b19fa924f90a8.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Extensions debout à la poulie/corde au-dessus de la tête pour des haltères sur banc (plat et incliné) ; ni banc ni haltères dans le dessin.",
+   "evidence": "review/short-focus.json clip 4 (2 images relues au lot court)",
+   "groupClosed": false
+  },
+  "extensions-triceps-halteres-plat": {
+   "name": "Extensions triceps haltères plat",
+   "equipment": [
+    "dumbbell"
+   ],
+   "pattern": "triceps",
+   "aliasTargetName": "French press barre EZ",
+   "targetDrawing": "/media/4c2b19fa924f90a8.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Extensions debout à la poulie/corde au-dessus de la tête pour des haltères sur banc (plat et incliné) ; ni banc ni haltères dans le dessin.",
+   "evidence": "review/short-focus.json clip 4 (2 images relues au lot court)",
+   "groupClosed": false
+  },
+  "extensions-triceps-halteres-incline": {
+   "name": "Extensions triceps haltères incliné",
+   "equipment": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "triceps",
+   "aliasTargetName": "French press barre EZ",
+   "targetDrawing": "/media/4c2b19fa924f90a8.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Extensions debout à la poulie/corde au-dessus de la tête pour des haltères sur banc (plat et incliné) ; ni banc ni haltères dans le dessin.",
+   "evidence": "review/short-focus.json clip 4 (2 images relues au lot court)",
+   "groupClosed": false
+  },
+  "clamshell-a-l-elastique": {
+   "name": "Clamshell à l'élastique",
+   "equipment": [
+    "band"
+   ],
+   "pattern": "abduction",
+   "aliasTargetName": "Abduction assise (machine ou élastique)",
+   "targetDrawing": "/media/f73444e9dc2fee89.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Abduction assise sur machine, pas de clamshell couché sur le côté et pas d'élastique.",
+   "evidence": "review/long-animations.json clip 45 (images du lot long)",
+   "groupClosed": false
+  },
+  "fire-hydrant-a-l-elastique": {
+   "name": "Fire hydrant à l'élastique",
+   "equipment": [
+    "band"
+   ],
+   "pattern": "abduction",
+   "aliasTargetName": "Abduction hanche debout à la poulie",
+   "targetDrawing": "/media/03098b19c4672ce5.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Adduction de hanche debout à la poulie (sens inverse) au lieu d'un fire hydrant à quatre pattes avec élastique.",
+   "evidence": "review/long-animations.json clip 1 (images du lot long)",
+   "groupClosed": false
+  },
+  "step-up-sur-banc-hauteur-du-genou": {
+   "name": "Step-up sur banc (hauteur du genou)",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "aliasTargetName": "Fentes avant alternées",
+   "targetDrawing": "/media/995e1f9a9cedc5ec.gif",
+   "decision": "no-replacement-kept-open",
+   "reason": "Fente au lieu d'une montée sur banc. Le seul vrai dessin de step-up livré tient deux haltères alors que les deux prescriptions sont au poids du corps : refusé, aucune prescription réécrite.",
+   "evidence": "review/long-animations.json clip 27 (images du lot long)",
+   "groupClosed": false
+  },
+  "step-up-haut": {
+   "name": "Step-up haut",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "aliasTargetName": "Fentes avant alternées",
+   "targetDrawing": "/media/995e1f9a9cedc5ec.gif",
+   "decision": "no-replacement-kept-open",
+   "reason": "Fente au lieu d'une montée sur banc. Le seul vrai dessin de step-up livré tient deux haltères alors que les deux prescriptions sont au poids du corps : refusé, aucune prescription réécrite.",
+   "evidence": "review/long-animations.json clip 27 (images du lot long)",
+   "groupClosed": false
+  },
+  "rowing-a-l-elastique": {
+   "name": "Rowing à l’élastique",
+   "equipment": [
+    "band"
+   ],
+   "pattern": "row",
+   "aliasTargetName": "Tirage horizontal à la poulie",
+   "targetDrawing": "/media/0860394a5a99f74b.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Tirage horizontal assis à la poulie : poulie visible, aucun élastique.",
+   "evidence": "review/long-animations.json clip 4 (images du lot long)",
+   "groupClosed": false
+  },
+  "mobilite-des-epaules": {
+   "name": "Mobilité des épaules",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "aliasTargetName": "Bird dog",
+   "targetDrawing": "/media/aab0de0aad0c275a.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Planche latérale avec élévation de jambe ; aucun geste de mobilité des épaules.",
+   "evidence": "review/long-animations.json clip 29 (images du lot long)",
+   "groupClosed": false
+  },
+  "respiration-diaphragmatique": {
+   "name": "Respiration diaphragmatique",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "aliasTargetName": "Dead bug",
+   "targetDrawing": "/media/b2236e6b7a81a1b5.gif",
+   "decision": "mismatch-kept-open",
+   "reason": "Variante de dead bug (extension des jambes) ; aucune respiration diaphragmatique.",
+   "evidence": "review/long-animations.json clip 31 (images du lot long)",
+   "groupClosed": false
+  },
+  "pont-fessier-au-sol-activation": {
+   "name": "Pont fessier au sol — activation",
+   "equipment": [
+    "bodyweight"
+   ],
+   "pattern": "bridge",
+   "aliasTargetName": "Glute bridge pieds sur banc",
+   "targetDrawing": "/media/8eecb0152081ff26.gif",
+   "decision": "resolved-by-reviewed-override",
+   "reason": "Corrigé par la réassociation revue (candidat) : pont au sol bilatéral sans banc, 12 images relues.",
+   "evidence": "review/long-animations.json clip 25 (images du lot long)",
+   "groupClosed": false
+  }
+ },
+ "counters": {
+  "exercises": 209,
+  "withoutOwnDrawing": 114,
+  "aliasEntries": 104,
+  "shippedResolution": {
+   "exact": 95,
+   "variante": 104,
+   "famille": 10
+  }
+ }
+}

@@ -172,3 +172,100 @@ for(const profile of ['elite','emilie'])for(const [id,path,unit,load] of [
   for(const field of ['activities','measurements','sessions','forceTests','workout','plan','nutrition','equipment','user','timer'])expect(after[field]).toEqual(before[field]);
  }
 });
+// The reported phone case: the pool block prescribed AFTER the weights session
+// ("Piscine après musculation") must stay aquatic in the preview AND in the
+// timer, while a real land post-cardio block keeps its elliptical guide.
+const poolAfterWeights = [
+  {label: '30 min', minutes: 30, expected: /pool-marche-aquatique\.jpg$/,
+   detail: "30 min de piscine à allure libre : nage, aquagym ou marche dans l'eau. Récupération active idéale."},
+  {label: '25 min', minutes: 25, expected: /pool-nage-douce\.jpg$/,
+   detail: "25 min de piscine : nage souple ou aquagym. Récupération active sans impact après une séance jambes chargée."},
+  {label: '25 min soutenue', minutes: 25, expected: /pool-fractionne\.jpg$/,
+   detail: "25 min de piscine à allure soutenue : le cardio sans impact par excellence en phase de composition."}
+];
+function combo(label, minutes, detail, format) {
+  return {id:'audit-post-'+format+'-'+label.replace(/\W+/g,'-'), date:'2026-09-23', time:'19:15',
+    type:format==='pool'?'swim':'cardio', name:format==='pool'?'Piscine après musculation':'Elliptique après musculation',
+    status:'planned', source:'legacy', sourceKind:'post-cardio', exercises:[], focus:[], instructions:detail,
+    estimatedMinutes:minutes,
+    components:[{key:'post',type:format==='pool'?'swim':'cardio',format,name:format==='pool'?'piscine':'elliptique',
+      minutes,seconds:minutes*60,
+      customSteps:[{name:detail,seconds:minutes*60,kind:'work',pattern:format==='pool'?'swim':'walk'}]}]};
+}
+function plannedState(profile, theme, ...events) {
+  const s = initialState(); s.activeProfile = profile;
+  for (const p of Object.values(s.profiles)) { p.timer = null; p.preferences.theme = theme; p.preferences.voice = false; }
+  s.profiles[profile].plan = {id:'audit-plan-'+profile, source:'legacy', weeks:52, sessions:events};
+  return s;
+}
+for (const {label, minutes, expected, detail} of poolAfterWeights) {
+  test(`pool block after weights stays aquatic in preview and timer: ${label}`, async ({page}) => {
+    const s = plannedState('emilie', 'light', combo(label, minutes, detail, 'pool'));
+    validateState(structuredClone(s));
+    await page.clock.setFixedTime(date);
+    await page.addInitScript(s => { if (!localStorage.getItem('jarvis_fitness_v3')) localStorage.setItem('jarvis_fitness_v3', JSON.stringify(s)); }, s);
+    await page.goto('/');
+    const hero = page.locator('.training-hero');
+    await expect(hero).toBeVisible();
+    await expect(hero).toContainText('Piscine après musculation');
+    await hero.getByRole('button', {name:'Lancer la séance',exact:true}).click();
+    const modal = page.getByRole('dialog');
+    await expect(modal).toBeVisible();
+    await expect(modal.locator('.source-combo-block.pool')).toHaveCount(1);
+    await expect(modal.locator('img[src*="cardio-"]')).toHaveCount(0);      // jamais de vélo/elliptique
+    await expect(modal.locator('.pool-step-img')).toHaveAttribute('src', expected);
+    await expect(modal.locator('.pool-step-tips li').first()).toHaveText(/bassin|Nagez|Nagez à allure soutenue/);
+    const before = await saved(page, 'emilie');
+    await modal.getByRole('button', {name:'Lancer la séance combinée',exact:true}).click();
+    await expect(page.locator('.timer-stage')).toBeVisible();
+    const visual = page.locator('.timer-step-visual img');
+    await expect(visual).toHaveAttribute('src', expected);
+    await expect(page.locator('.timer-stage img[src*="cardio-"]')).toHaveCount(0);
+    await expect(page.locator('.timer-stage img[src*="recovery-human"]')).toHaveCount(0);
+    await page.getByRole('button', {name:'Réduire le minuteur, il reste actif'}).click();
+    const after = await saved(page, 'emilie');
+    for (const field of ['activities','measurements','sessions','forceTests','workout','plan','nutrition','equipment','user']) expect(after[field]).toEqual(before[field]);
+    expect(after.timer.steps.map(s => s.name)).toEqual([detail]);
+  });
+}
+test('a real land post-cardio block keeps its dry elliptical guide', async ({page}) => {
+  const detail = "Cardio modéré 60-68 % FCM : vous pouvez parler par phrases courtes. Brûle des graisses sans gêner les fessiers.";
+  const s = plannedState('emilie', 'dark', combo('18 min', 18, detail, 'elliptical'));
+  validateState(structuredClone(s));
+  await page.clock.setFixedTime(date);
+  await page.addInitScript(s => { if (!localStorage.getItem('jarvis_fitness_v3')) localStorage.setItem('jarvis_fitness_v3', JSON.stringify(s)); }, s);
+  await page.goto('/');
+  await page.locator('.training-hero').getByRole('button', {name:'Lancer la séance',exact:true}).click();
+  const modal = page.getByRole('dialog');
+  await expect(modal.locator('.source-combo-block.metcon')).toHaveCount(1);
+  await expect(modal.locator('.source-combo-block.pool')).toHaveCount(0);
+});
+// Reviewed this pass and deliberately NOT substituted: the only real step-up
+// drawing shipped in 1.4.0 holds dumbbells while both step-up exercises are
+// declared bodyweight. The lunge substitution therefore stays visible instead
+// of being replaced by a different mismatch; the finding keeps the evidence.
+for(const profile of ['elite','emilie'])test(`step-up gap stays visible and is not closed by the dumbbell drawing: ${profile}`,async({page})=>{
+ const s=state(profile,profile==='elite'?'dark':'light');s.profiles[profile].timer=null;
+ await open(page,s);const before=await saved(page,profile);await training(page);
+ await page.getByRole('tab',{name:/^Bibliothèque/}).click();
+ const search=page.getByRole('textbox',{name:'Rechercher un exercice'});
+ for(const name of ['Step-up sur banc (hauteur du genou)','Step-up haut']){
+  await search.fill(name);
+  const card=page.getByRole('button',{name:'Démonstration '+name,exact:true});
+  await expect(card.locator('img')).toHaveAttribute('src',/\/human\/front-card\.webp$/);
+  await expect(card.locator('.visual-label')).toHaveText('ANATOMIE RÉALISTE');
+  await card.click();
+  const image=page.getByRole('dialog').locator('.movement-media');
+  await expect(image).toHaveAttribute('src',/995e1f9a9cedc5ec.gif$/); // shipped lunge drawing, documented gap
+  await expect.poll(()=>image.evaluate(e=>e.complete&&e.naturalWidth===300)).toBe(true);
+  await page.getByRole('dialog').locator('button[aria-label="Fermer"]').click();
+ }
+ // The dumbbell step-up candidate must appear nowhere in the library.
+ await search.fill('Step-up');
+ await expect(page.locator('.exercise-library img[src*="6809d9052927484a"]')).toHaveCount(0);
+ // The lunge drawing keeps its real owner and its own card untouched.
+ await search.fill('Fentes avant alternées');
+ await expect(page.getByRole('button',{name:'Démonstration Fentes avant alternées',exact:true}).locator('img')).toHaveAttribute('src',/thumbs\/995e1f9a9cedc5ec.webp$/);
+ const after=await saved(page,profile);
+ for(const field of ['activities','measurements','sessions','forceTests','workout','plan','nutrition','equipment','user','timer'])expect(after[field]).toEqual(before[field]);
+});

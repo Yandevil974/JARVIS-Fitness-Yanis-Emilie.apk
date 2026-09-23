@@ -1,0 +1,96 @@
+{
+ "status": "candidate-only-not-release",
+ "meaning": "Les 12 prescriptions piscine réellement livrées par le programme 1.4.0, relues une par une. Chaque entrée dit quel guide aquatique lui correspond, avec quelle précision, et pourquoi. Aucune ne se résout vers un guide terrestre (vélo/elliptique) ni vers une photo générique.",
+ "scope": {
+  "measuredBy": "cardio.apres === \"piscine\" dans les deux charges utiles du bundle signé",
+  "occurrences": 26,
+  "uniqueTexts": 12,
+  "note": "Les 26 occurrences se répartissent sur les deux profils ; côté Émilie, ce sont ces 12 textes uniques."
+ },
+ "resolutionOrder": [
+  "reviewed-pool-prescription",
+  "legacy-association-not-yet-validated",
+  "unresolved"
+ ],
+ "entries": [
+  {
+   "text": "30 min de piscine libre ou de repos actif (marche 30-40 min).",
+   "guide": "Marche aquatique",
+   "precision": "exact",
+   "review": "Le texte nomme la marche en durée (30-40 min) : même geste que le guide Marche aquatique (déplacements dans le bassin, eau à la taille)."
+  },
+  {
+   "text": "30 min de piscine ou marche active 40 min. Optionnel si la fatigue est élevée.",
+   "guide": "Marche aquatique",
+   "precision": "exact",
+   "review": "Prescription de marche active explicite ; le caractère optionnel ne change pas le geste affiché."
+  },
+  {
+   "text": "30 min de piscine ou repos actif (marche 40 min).",
+   "guide": "Marche aquatique",
+   "precision": "exact",
+   "review": "Repos actif défini par le texte lui-même comme de la marche : même geste que le guide."
+  },
+  {
+   "text": "30 min de piscine à allure libre : nage, aquagym ou marche dans l'eau. Récupération active idéale.",
+   "guide": "Marche aquatique",
+   "precision": "exact",
+   "review": "Trois options de bassin proposées, aucune à sec : la marche dans l'eau est nommée et reste la plus prudente pour une récupération après séance jambes ; jamais de vélo/elliptique."
+  },
+  {
+   "text": "Option idéale : 20 min de nage souple ou d'aquagym. Zéro impact, drainage des jambes, récupération active.",
+   "guide": "Nage douce",
+   "precision": "exact",
+   "review": "« Nage souple » est le libellé même du guide Nage douce (nage lente, mouvements amples, respiration calme)."
+  },
+  {
+   "text": "25 min de nage ou d'aquagym : cardio sans impact, drainage et récupération des jambes.",
+   "guide": "Nage douce",
+   "precision": "exact",
+   "review": "Nage sans indication d'intensité, dans un contexte de drainage : allure douce, cohérente avec les consignes du guide."
+  },
+  {
+   "text": "25 min de piscine : nage souple ou aquagym. Récupération active sans impact après une séance jambes chargée.",
+   "guide": "Nage douce",
+   "precision": "exact",
+   "review": "Cas rapporté après le test réel sur téléphone : « nage souple » explicite et absence d'impact exigée par la consigne. Vérifié dans la fiche et dans le chrono."
+  },
+  {
+   "text": "25 min de piscine : récupération active avant le bilan final.",
+   "guide": "Nage douce",
+   "precision": "representative",
+   "review": "Le texte ne nomme pas le geste. Aucune intensité demandée avant un bilan : allure douce retenue comme plus prudente, sans créer de prescription."
+  },
+  {
+   "text": "25 min de piscine plaisir : l'habitude à conserver après le programme.",
+   "guide": "Nage douce",
+   "precision": "representative",
+   "review": "« Plaisir » n'est pas un geste mesurable : guide doux, seul retenu faute de mieux, et signalé comme représentatif plutôt qu'exact."
+  },
+  {
+   "text": "30 min de piscine plaisir. Prenez vos photos de bilan et vos mensurations avant la séance.",
+   "guide": "Nage douce",
+   "precision": "representative",
+   "review": "Journée de bilan, consigne tournée vers les photos : même choix prudent que ci-dessus, sans réécrire la prescription."
+  },
+  {
+   "text": "30 min de piscine libre.",
+   "guide": "Nage douce",
+   "precision": "representative",
+   "review": "Texte minimal. Nage douce parce qu'elle n'impose aucune intensité ; à confirmer avec l'utilisateur plutôt que présentée comme exacte."
+  },
+  {
+   "text": "25 min de piscine à allure soutenue : le cardio sans impact par excellence en phase de composition.",
+   "guide": "Fractionné — nager",
+   "precision": "exact",
+   "review": "« Allure soutenue » correspond à l'ouverture du guide Fractionné — nager. Cas le plus fautif de la 1.4.0 publiée : ce texte n'affichait aucune vignette."
+  }
+ ],
+ "refusedFallbacks": [
+  "/media/cardio-elliptique.jpg",
+  "/media/cardio-recup-active.jpg",
+  "/media/recovery-human.jpg",
+  "toute image persistée dans l'étape",
+  "tout rapprochement par mot-clé non revu (statut legacy-association-not-yet-validated conservé)"
+ ]
+}

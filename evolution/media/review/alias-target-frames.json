@@ -1,0 +1,145 @@
+{
+ "date": "2026-09-23",
+ "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+ "method": "Deux images de chaque dessin cible affichées en grand et examinées, dans l'ordre, avec la provenance du dessin.",
+ "clipCount": 5,
+ "reviewedFrameCount": 10,
+ "clips": [
+  {
+   "path": "/media/9f22747c305f521b.gif",
+   "assetSha256": "9f22747c305f521be1a66870222c4866a6cddc082c06543da6d37a4bb62c73eb",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "75fe05c18144b3a562d427d2a17a47360991c292e93191d010ec744bc684093c"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "615aa6ad3b7ee60748bdee6c7a52c0d961777ada5b587a6407b8fb6b37cfd509"
+    }
+   ],
+   "targetLabel": "good morning debout -> Soulevé de terre roumain barre",
+   "observedMovement": "Barre tenue dans les mains (pas sur les épaules), deux positions : debout puis charnière de hanches dos plat, barre aux tibias. Mouvement de charnière réel mais exercice distinct du good morning ; c'est déjà le dessin propre de « Soulevé de terre roumain barre ».",
+   "finalAccepted": false,
+   "decisionNotes": "Relecture de ce passage, 2/2 images et raccord de boucle ; aucun remplacement intégré, l'alias reste ouvert."
+  },
+  {
+   "path": "/media/4eff701bcdf9a359.gif",
+   "assetSha256": "4eff701bcdf9a35902cc79d94daeaf3934f5224ed34cc0b535762b1000388515",
+   "width": 480,
+   "height": 268,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "e938f5d2f4cb9d30d3435771a2b2ede87791a636069cd39c3725c7dff4acfebd"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "24ae23c0913f09a6b42baa4e4e4cf41caed073279cfb0745f4ce9295ad554bf1"
+    }
+   ],
+   "targetLabel": "glute ham raise -> Leg curl allongé",
+   "observedMovement": "Appareil de leg curl allongé : corps à plat, chevilles sous les coussins, jambes fléchies puis tendues, ischio-jambiers surlignés. Aucun support de glute-ham raise ni extension de hanche : matériel et mouvement différents. C'est le dessin propre de « Leg curl allongé ».",
+   "finalAccepted": false,
+   "decisionNotes": "Relecture de ce passage, 2/2 images et raccord de boucle ; aucun remplacement intégré, l'alias reste ouvert."
+  },
+  {
+   "path": "/media/a5c1c2427ee83c93.gif",
+   "assetSha256": "a5c1c2427ee83c931e2d8dd1e82c26a45a3b00126406e87f82d8caa0a46b0708",
+   "width": 246,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "3189c774ba9fe3672b788427c762a849cb4defcae11c3f0ace66ee261cf37b44"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "ce8f09e2680005aff3a42442522ef81473cfeaecfac866ca5ab655451d7f99d9"
+    }
+   ],
+   "targetLabel": "wood chop poulie haute -> Crunch à la poulie",
+   "observedMovement": "À genoux face à la poulie haute, poignée tenue derrière la tête, buste qui s'enroule vers le bas : flexion de tronc (crunch à la poulie). Pas de grand oblique en diagonale, pas de rotation. C'est le dessin propre de « Crunch à la poulie ».",
+   "finalAccepted": false,
+   "decisionNotes": "Relecture de ce passage, 2/2 images et raccord de boucle ; aucun remplacement intégré, l'alias reste ouvert."
+  },
+  {
+   "path": "/media/dc0cabae23adbfd5.gif",
+   "assetSha256": "dc0cabae23adbfd56ccfa06fdab5a54deb25aa0e1d6f0c0b1c4283848027e631",
+   "width": 246,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "22cd0e139d7df289005b91bef7410ea2b7e0b7eee7fb6e28484419253c5853c3"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "927d6788369cf5888fa7d503aa15fa313c03371db1ec8db2e710d6765d464520"
+    }
+   ],
+   "targetLabel": "pullover câble / haltère -> Tirage vertical prise pronation",
+   "observedMovement": "Tirage vertical assis, barre large, vue de face, barre descendue devant la poitrine. Ce n'est pas un pullover (bras tendus tirés vers les cuisses) et aucun haltère n'est présent.",
+   "finalAccepted": false,
+   "decisionNotes": "Relecture de ce passage, 2/2 images et raccord de boucle ; aucun remplacement intégré, l'alias reste ouvert."
+  },
+  {
+   "path": "/media/789c6d90f30eb33e.gif",
+   "assetSha256": "789c6d90f30eb33e14aafee398dfea6c1b1dcbbe1ba4fc0e1e7717ec7c0d2239",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "2123c113c1346667c032c31424cf16c97a09ae20f0a58314b1b417894f45d5ca"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "a293e897a19ad3f03914f8bccbbce2daec7658e2a0e599a176faaf81dd51686c"
+    }
+   ],
+   "targetLabel": "ab wheel -> Jackknife sur swiss ball",
+   "observedMovement": "Planche sur swiss ball avec jambes allongées, mains au sol, puis corps qui s'enroule : swiss ball, pas de roulette, pas de genoux au sol. C'est le dessin propre de « Jackknife sur swiss ball ».",
+   "finalAccepted": false,
+   "decisionNotes": "Relecture de ce passage, 2/2 images et raccord de boucle ; aucun remplacement intégré, l'alias reste ouvert."
+  }
+ ],
+ "matrix": "review/alias-review.json"
+}

@@ -50,3 +50,19 @@ test('land cardio recovery remains distinct from aquatic recovery', () => {
  assert.equal(resolve('Récupération active', 'cardio').img, '/media/cardio-recup-active.jpg');
  assert.equal(resolve('Récup complète — souffler au bord', 'pool').img, '/media/pool-recup-complete.jpg');
 });
+// Defect reported after the real phone test: the pool block prescribed AFTER
+// the weights session kept the step segment "post", so the delivered resolver
+// (bg) answered with the dry elliptical recovery. Reproduced here by evaluating
+// the exact shipped snippet, not a rewritten approximation.
+test('known defect: the pool block prescribed after the weights shows the dry elliptical', () => {
+ const detail = "25 min de piscine : nage souple ou aquagym. Récupération active sans impact après une séance jambes chargée.";
+ const dry = resolve(detail, 'post');
+ assert.equal(dry.img, '/media/cardio-recup-active.jpg');
+ assert.equal(dry.t, 'Elliptique — récupération active');
+ // Even when the caller states the block format, the shipped keyword map only
+ // knows "nage douce" and this delivered text says "nage souple": the dry
+ // elliptical still wins. Both failures are reproduced, not approximated.
+ assert.equal(resolve(detail, 'pool').img, '/media/cardio-recup-active.jpg');
+ // A text that does match an aquatic keyword resolves aquatically in the same snippet.
+ assert.equal(resolve("Nage douce sur 20 min, respiration calme.", 'pool').img, '/media/pool-nage-douce.jpg');
+});

@@ -289,7 +289,9 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 27,
       "findingGroups": [
-        "step-up-to-lunge"
+        "step-up-to-lunge",
+        "shipped-maps-contradict-each-other",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/995e1f9a9cedc5ec.gif",
       "candidateStatus": "no-targeted-correction",
@@ -313,7 +315,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 45,
       "findingGroups": [
-        "band-clamshell-to-abduction-machine"
+        "band-clamshell-to-abduction-machine",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/f73444e9dc2fee89.gif",
       "candidateStatus": "no-targeted-correction",
@@ -416,7 +419,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 45,
       "findingGroups": [
-        "band-clamshell-to-abduction-machine"
+        "band-clamshell-to-abduction-machine",
+        "shipped-maps-contradict-each-other"
       ],
       "candidatePath": "/media/f73444e9dc2fee89.gif",
       "candidateStatus": "no-targeted-correction",
@@ -429,7 +433,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 15,
       "findingGroups": [
-        "glute-kickback-to-triceps"
+        "glute-kickback-to-triceps",
+        "shipped-maps-contradict-each-other"
       ],
       "candidatePath": "/media/489169360e044c48.gif",
       "candidateStatus": "no-targeted-correction",
@@ -477,7 +482,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 1,
       "findingGroups": [
-        "hip-adduction-not-abduction"
+        "hip-adduction-not-abduction",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/03098b19c4672ce5.gif",
       "candidateStatus": "no-targeted-correction",
@@ -858,7 +864,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "triceps-bench-to-cable"
+        "triceps-bench-to-cable",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/4c2b19fa924f90a8.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1117,7 +1124,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 18,
       "findingGroups": [
-        "pullup-to-pulldown"
+        "pullup-to-pulldown",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/4af33157ce25267c.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1175,7 +1183,9 @@
       "baselinePath": "/media/cf312b839f6da027.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 39,
-      "findingGroups": [],
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
       "candidatePath": "/media/cf312b839f6da027.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1279,7 +1289,9 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 27,
       "findingGroups": [
-        "step-up-to-lunge"
+        "step-up-to-lunge",
+        "shipped-maps-contradict-each-other",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/995e1f9a9cedc5ec.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1302,9 +1314,11 @@
       "id": "barre-au-front-pushdown-triceps",
       "name": "Barre au front (pushdown triceps)",
       "baselinePath": "/media/5d6a89132df205f8.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
       "candidatePath": "/media/5d6a89132df205f8.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1494,7 +1508,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 18,
       "findingGroups": [
-        "pullup-to-pulldown"
+        "pullup-to-pulldown",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/4af33157ce25267c.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1562,7 +1577,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "triceps-bench-to-cable"
+        "triceps-bench-to-cable",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/4c2b19fa924f90a8.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1687,7 +1703,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "good-morning-to-deadlift"
+        "good-morning-to-deadlift",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/9f22747c305f521b.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1870,7 +1887,9 @@
       "baselinePath": "/media/bc4d9bed4bbb590a.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 34,
-      "findingGroups": [],
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
       "candidatePath": "/media/bc4d9bed4bbb590a.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1879,9 +1898,11 @@
       "id": "glute-ham-raise",
       "name": "Glute ham raise",
       "baselinePath": "/media/4eff701bcdf9a359.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
       "candidatePath": "/media/4eff701bcdf9a359.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -1893,7 +1914,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 18,
       "findingGroups": [
-        "pullup-to-pulldown"
+        "pullup-to-pulldown",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/4af33157ce25267c.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1939,7 +1961,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "ab-wheel-to-swiss-ball"
+        "ab-wheel-to-swiss-ball",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/789c6d90f30eb33e.gif",
       "candidateStatus": "no-targeted-correction",
@@ -1971,9 +1994,11 @@
       "id": "california-press-barre-au-cou",
       "name": "California press (barre au cou)",
       "baselinePath": "/media/5d6a89132df205f8.gif",
-      "baselineReviewStatus": "pending-association-review",
+      "baselineReviewStatus": "known-finding",
       "reviewClip": null,
-      "findingGroups": [],
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
       "candidatePath": "/media/5d6a89132df205f8.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2029,7 +2054,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "pullover-to-pulldown"
+        "pullover-to-pulldown",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/dc0cabae23adbfd5.gif",
       "candidateStatus": "no-targeted-correction",
@@ -2086,7 +2112,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "woodchop-to-crunch"
+        "woodchop-to-crunch",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/a5c1c2427ee83c93.gif",
       "candidateStatus": "no-targeted-correction",
@@ -2156,7 +2183,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "triceps-bench-to-cable"
+        "triceps-bench-to-cable",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/4c2b19fa924f90a8.gif",
       "candidateStatus": "no-targeted-correction",
@@ -2213,7 +2241,8 @@
       "baselineReviewStatus": "known-finding",
       "reviewClip": null,
       "findingGroups": [
-        "pullover-to-pulldown"
+        "pullover-to-pulldown",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/dc0cabae23adbfd5.gif",
       "candidateStatus": "no-targeted-correction",
@@ -2247,7 +2276,9 @@
       "baselinePath": "/media/bc4d9bed4bbb590a.gif",
       "baselineReviewStatus": "variant-review-required",
       "reviewClip": 34,
-      "findingGroups": [],
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
       "candidatePath": "/media/bc4d9bed4bbb590a.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2357,7 +2388,9 @@
       "baselinePath": "/media/0860394a5a99f74b.gif",
       "baselineReviewStatus": "mismatch",
       "reviewClip": 4,
-      "findingGroups": [],
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
       "candidatePath": "/media/0860394a5a99f74b.gif",
       "candidateStatus": "no-targeted-correction",
       "finalAccepted": false
@@ -2380,7 +2413,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 29,
       "findingGroups": [
-        "bird-dog-to-side-plank"
+        "bird-dog-to-side-plank",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/aab0de0aad0c275a.gif",
       "candidateStatus": "no-targeted-correction",
@@ -2393,7 +2427,8 @@
       "baselineReviewStatus": "mismatch",
       "reviewClip": 31,
       "findingGroups": [
-        "breathing-to-dead-bug"
+        "breathing-to-dead-bug",
+        "resolution-by-another-exercise-drawing"
       ],
       "candidatePath": "/media/b2236e6b7a81a1b5.gif",
       "candidateStatus": "no-targeted-correction",
