@@ -1,0 +1,338 @@
+{
+ "date": "2026-09-23",
+ "methode": "Un dessin est « fidèle » quand l'inventaire 1.4.0 le donne exact=true pour l'exercice (76 dessins fidèles pour 95 exercices). La variante prescrite de chaque écart est ensuite cherchée dans les NOMS de ces 76 dessins fidèles.",
+ "alias": {
+  "total": 27,
+  "sansDessinFideleDeLaVariante": 10,
+  "lignes": [
+   {
+    "id": "pallof-press-a-l-elastique",
+    "nom": "Pallof press à l'élastique",
+    "variantePrescrite": [
+     "élastique"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "élastique": 1
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire d’un Pallof press debout, outil non identifiable : ni poulie ni élastique ne sont montrés."
+   },
+   {
+    "id": "face-pull-a-l-elastique",
+    "nom": "Face pull à l'élastique",
+    "variantePrescrite": [
+     "élastique"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "élastique": 1
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire d’un face pull à la POULIE haute ; la prescription est à l’élastique : même mouvement, outil différent."
+   },
+   {
+    "id": "kickback-a-l-elastique",
+    "nom": "Kickback à l'élastique",
+    "variantePrescrite": [
+     "élastique"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "élastique": 1
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire d’un kickback à la POULIE ; prescription à l’élastique : outil différent."
+   },
+   {
+    "id": "kickback-a-la-poulie-drop-set-final",
+    "nom": "Kickback à la poulie — drop set final",
+    "variantePrescrite": [],
+    "dessinFideleDeCetteVarianteDansLePack": {},
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire d’un kickback à la POULIE ; prescription à l’élastique : outil différent."
+   },
+   {
+    "id": "leg-extension",
+    "nom": "Leg extension",
+    "variantePrescrite": [],
+    "dessinFideleDeCetteVarianteDansLePack": {},
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin de presse à cuisses (plateau, assis incliné) : ne montre pas l’extension de jambes (pas de rouleau sur les tibias)."
+   },
+   {
+    "id": "tractions-prise-neutre-chin-up",
+    "nom": "Tractions prise neutre (chin-up)",
+    "variantePrescrite": [
+     "chin-up"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "chin-up": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de tirage vertical (poulie haute) pour des tractions : matériel différent, déjà tracé."
+   },
+   {
+    "id": "curl-poulie-basse-supination",
+    "nom": "Curl poulie basse, supination",
+    "variantePrescrite": [
+     "poulie basse"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "poulie basse": 1
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire de curl à la BARRE debout alors que la prescription est à la poulie basse (et en supination pour l’autre entrée) : ni la poulie ni le b"
+   },
+   {
+    "id": "back-extension-45-prise-snatch",
+    "nom": "Back extension 45°, prise snatch",
+    "variantePrescrite": [
+     "45°"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "45°": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin réaliste de back extension sur banc incliné, exécution jambes tendues : correspond à l’autre entrée « Back extension horizontal », pas à la pri"
+   },
+   {
+    "id": "elevations-laterales-incline-30-face-au-banc",
+    "nom": "Élévations latérales incliné 30° (face au banc)",
+    "variantePrescrite": [
+     "incliné"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "incliné": 6
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible."
+   },
+   {
+    "id": "extensions-triceps-pullover-barre-ez",
+    "nom": "Extensions triceps + pullover barre EZ",
+    "variantePrescrite": [],
+    "dessinFideleDeCetteVarianteDansLePack": {},
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin réaliste allongé sur banc : le simultané avec le pullover n’est pas montré."
+   },
+   {
+    "id": "curl-haltere-supination-banc-scott-90",
+    "nom": "Curl haltère supination, banc Scott 90°",
+    "variantePrescrite": [
+     "banc scott"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "banc scott": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin réaliste d’un curl haltères sur banc INCLINÉ ; le banc Scott (coussin, bras vertical) n’est pas montré."
+   },
+   {
+    "id": "developpe-couche-prise-serree",
+    "nom": "Développé couché prise serrée",
+    "variantePrescrite": [
+     "prise serrée"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "prise serrée": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de développé couché prise normale : la prise serrée n’est pas distinguable."
+   },
+   {
+    "id": "curl-zottman-assis",
+    "nom": "Curl Zottman assis",
+    "variantePrescrite": [
+     "zottman"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "zottman": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de curl haltères classique : la rotation Zottman (supination puis pronation) n’est pas montrable en deux images figées."
+   },
+   {
+    "id": "curl-poulie-basse",
+    "nom": "Curl poulie basse",
+    "variantePrescrite": [
+     "poulie basse"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "poulie basse": 1
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire de curl à la BARRE debout alors que la prescription est à la poulie basse (et en supination pour l’autre entrée) : ni la poulie ni le b"
+   },
+   {
+    "id": "elevations-laterales-incline-30",
+    "nom": "Élévations latérales incliné 30°",
+    "variantePrescrite": [
+     "incliné"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "incliné": 6
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible."
+   },
+   {
+    "id": "elevations-laterales-incline-45",
+    "nom": "Élévations latérales incliné 45°",
+    "variantePrescrite": [
+     "incliné",
+     "45°"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "incliné": 6,
+     "45°": 0
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible."
+   },
+   {
+    "id": "fentes-marchees",
+    "nom": "Fentes marchées",
+    "variantePrescrite": [
+     "marchées"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "marchées": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de fentes AVEC haltères, buste penché (dessin de l’autre entrée « Fentes avant alternées ») : le déplacement marché n’est pas montrable"
+   },
+   {
+    "id": "curl-zottman-un-bras-banc-scott",
+    "nom": "Curl Zottman un bras, banc Scott",
+    "variantePrescrite": [
+     "zottman",
+     "banc scott"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "zottman": 0,
+     "banc scott": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de curl haltères classique : la rotation Zottman (supination puis pronation) n’est pas montrable en deux images figées."
+   },
+   {
+    "id": "split-squat-poulie-basse",
+    "nom": "Split squat poulie basse",
+    "variantePrescrite": [
+     "poulie basse"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "poulie basse": 1
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire d’un split squat avec haltères devant un banc, jambe arrière posée dessus : matériel différent de la poulie basse prescrite."
+   },
+   {
+    "id": "tractions-prise-large",
+    "nom": "Tractions prise large",
+    "variantePrescrite": [],
+    "dessinFideleDeCetteVarianteDansLePack": {},
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin filaire de tirage vertical (poulie haute) pour des tractions : matériel différent, déjà tracé."
+   },
+   {
+    "id": "ecartes-cables-incline",
+    "nom": "Écartés câbles incliné",
+    "variantePrescrite": [
+     "incliné"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "incliné": 6
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin réaliste de câbles croisés debout : l’inclinaison n’est pas montrée."
+   },
+   {
+    "id": "elevations-laterales-incline",
+    "nom": "Élévations latérales incliné",
+    "variantePrescrite": [
+     "incliné"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "incliné": 6
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible."
+   },
+   {
+    "id": "rowing-assis-cable-unilateral",
+    "nom": "Rowing assis câble unilatéral",
+    "variantePrescrite": [
+     "unilatéral",
+     "assis câble"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "unilatéral": 5,
+     "assis câble": 0
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Dessin réaliste de rowing assis à la poulie, deux mains sur une poignée : le caractère UNILATÉRAL (un bras) n’est pas montré."
+   },
+   {
+    "id": "curl-zottman",
+    "nom": "Curl Zottman",
+    "variantePrescrite": [
+     "zottman"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "zottman": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de curl haltères classique : la rotation Zottman (supination puis pronation) n’est pas montrable en deux images figées."
+   },
+   {
+    "id": "curl-concentration",
+    "nom": "Curl concentration",
+    "variantePrescrite": [
+     "concentration"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "concentration": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de curl haltères DEBOUT ; la concentration (assis, coude appuyé sur la cuisse) n’est pas montrée."
+   },
+   {
+    "id": "developpe-couche-decline-prise-serree",
+    "nom": "Développé couché décliné prise serrée",
+    "variantePrescrite": [
+     "décliné",
+     "prise serrée"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "décliné": 2,
+     "prise serrée": 0
+    },
+    "conclusion": "à vérifier image par image",
+    "observe": "Même dessin de développé couché plat : ni le déclin ni la prise serrée ne sont montrés."
+   },
+   {
+    "id": "fentes-arriere-au-poids-du-corps",
+    "nom": "Fentes arrière au poids du corps",
+    "variantePrescrite": [
+     "poids du corps"
+    ],
+    "dessinFideleDeCetteVarianteDansLePack": {
+     "poids du corps": 0
+    },
+    "conclusion": "aucun dessin fidèle de cette variante dans le pack",
+    "observe": "Dessin filaire de fentes arrière AVEC barre alors que la prescription est au poids du corps : matériel ajouté."
+   }
+  ]
+ },
+ "etirementsSansDessin": [
+  "Mollet en escalier (talon sous la marche)",
+  "Adduction de hanche debout (croisement de jambes)",
+  "Mains croisées derrière le dos",
+  "Étirement des fléchisseurs de l’avant-bras (poignet tiré)"
+ ],
+ "tabataAuSol": {
+  "total": 38,
+  "sansDemonstrationDediee": 34,
+  "note": "Seuls quatre noms trouvent un GIF du pack ; aucun n'a de démonstration dédiée. L'écran affiche la photo générique de récupération."
+ },
+ "conclusion": "Ces écarts ne peuvent PAS être corrigés avec les visuels existants : ils exigent une création. La règle de style (REGLE-STYLE-MESUREE.md) et votre validation sont le préalable."
+}

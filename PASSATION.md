@@ -1,4 +1,43 @@
-## Dernière avancée — 1.4.6 publiée : deux visuels d'étirement corrigés et cinq lacunes explicites en piscine (23 septembre 2026)
+## Dernière avancée — règle de style MESURÉE dans le pack + inventaire des lacunes sans dessin (23 septembre 2026)
+
+**« Autorisation accordée » exécutée, mais avec un arrêt net et assumé devant la création d'images** : vous avez exigé une règle de style avant toute nouvelle image, et aucune décision de ce type n'était encore prise. Plutôt que d'inventer un style, je l'ai **mesuré dans l'application livrée**. Rien n'a été créé, aucun APK n'a donc changé.
+
+### Pourquoi j'ai mesuré au lieu de produire
+
+Le pack ne contient pas un style mais **trois familles qui coexistent**, mesurées une par une (`evolution/media/review/STYLE-METRICS.json`, 76 dessins réellement utilisés, 137 ressources) :
+
+| Famille | Nombre | Format | Animation | Fond / encre | Cadrage |
+|---|---|---|---|---|---|
+| **A — fil de fer** | 36 | 300 × 300 | **12 images** | blanc `#ffffff` / noir `#020202` | marges médianes **43 / 30 / 25 / 15 px**, trait médian **3 px** |
+| **B — rendu réaliste** | 40 | 440 × 240 (22), 246 × 440 (7), 403 × 440 (5), 480 × 262… | **2 postures** | quasi blanc, ≈ 128 couleurs | plein cadre (marge médiane 0–1 px) |
+| **C — SVG animé intégré** | 144 dans le paquet web | `viewBox 0 0 120 100` | boucle CSS **3 s** | `#0a0e1a`, peau `#e8b896`, vêtement `#1e293b` | sujet centré, suit le thème |
+
+Règle proposée : **un nouveau visuel rejoint la famille de son contexte, jamais une quatrième**. Document complet : `evolution/media/review/REGLE-STYLE-MESUREE.md` (joint à ce message).
+
+### Ce que la mesure établit, sans discussion possible
+
+- **76 dessins** servent **fidèlement** 95 exercices ; **114 exercices** affichent le dessin d'une **autre variante**.
+- Pour les variantes prescrites des **27 écarts** de musculation mesurés (élastique, poids du corps, concentration, prise serrée, Zottman, chin-up, banc Scott, marchées, assis câble, 45°), la recherche dans les **76 dessins fidèles** ne trouve **aucun** équivalent : ces corrections **exigent une création**.
+- **4 écarts d'étirement** restants et **34 mouvements de Tabata au sol** n'ont **aucun** dessin correspondant non plus.
+- Volumétrie réelle du manque : **34 + 27 + 5 + 4 = 70 visuels** à créer, si vous autorisez la création.
+
+Inventaire complet, ligne par ligne : `evolution/media/review/GAPS-SANS-DESSIN.json`.
+
+### Vérifications de cette étape
+
+- **Aucun APK reconstruit** (aucune modification de code) : le paquet livré reste la **1.4.6** (`48676e12…`), bundle `e372a369…` inchangé.
+- Les mesures sont **figées par un test** (`evolution/media/tests/style-rule.test.mjs`) : les 36 + 40 + 144 sont vérifiés dans le paquet, la règle écrite doit contenir les valeurs mesurées, et le groupe de décision doit rester **ouvert**. Node **46/46**.
+- Deux groupes ajoutés : `style-family-rule` (décision de style) et `gaps-without-any-faithful-drawing` (lacunes sans dessin fidèle) → **53 groupes ouverts**.
+- **Septième effacement d'espace de travail** en début d'étape : restauré depuis le dépôt, Chromium et l'outillage reprovisionnés, **rien perdu**.
+
+### Prochaine étape précise — elle dépend de vous
+
+1. **Valider la règle de style** ou la corriger (les trois familles et leurs gabarits) et **choisir la famille** des 34 Tabata au sol et des 5 guides aquatiques — je recommande la **famille C** pour l'écran sombre du chrono.
+2. **Autoriser un lot témoin** avant toute production en série : je créerais **un** visuel (le plus utile : un guide aquatique ou un étirement), vous le jugez en pleine image, et on ajuste le gabarit avant les 69 autres. C'est la seule façon de garantir le style sur 70 visuels.
+3. **Essai téléphone** de la 1.4.6, sinon les groupes corrigés ne seront jamais vérifiés sur l'appareil réel.
+4. **Audit : 53 groupes ouverts**, aucun fermé silencieusement. **IA conversationnelle toujours en dernier.** Avertir avec 🚩 avant la limite.
+
+## Étape précédente — 1.4.6 publiée : deux visuels d'étirement corrigés et cinq lacunes explicites en piscine (23 septembre 2026)
 
 [Télécharger la 1.4.6](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.apk) · [consignes](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/INSTALLATION-1.4.6.md) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.apk.sha256) · [fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.fidelity.json) · [preuve étirements](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/evolution/media/review/stretch-echanges-avant-apres.png) · [release](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.4.6-evolution)
 

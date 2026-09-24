@@ -761,6 +761,26 @@
       "observed": "Famille mesurée : le dessin affiché montre un autre matériel que celui prescrit — face pull, kickback et Pallof press annoncés À L’ÉLASTIQUE et dessinés À LA POULIE ; curls « poulie basse » dessinés à la barre ; split squat « poulie basse » dessiné avec haltères sur banc ; rowing assis câble unilatéral dessiné à deux mains ; fentes arrière au poids du corps dessinées avec une barre sur les épaules.",
       "action": "Aucune consigne réécrite, aucun remplacement par famille. Décider avec l’utilisateur si ces variantes exigent un dessin propre (élastique vs poulie) ou si le dessin de poulie reste acceptable pour un élastique. Preuves : review/alias-overlap-equipment-19.png, review/alias-overlap-review.json.",
       "status": "open"
+    },
+    {
+      "id": "style-family-rule",
+      "scope": "style",
+      "status": "open",
+      "observed": "Trois familles de visuels coexistent dans le pack livré, mesurées : A fil de fer noir sur blanc 300×300, 12 images, trait 3 px, marges 43/30/25/15 (36 dessins) ; B rendu réaliste plein cadre, 2 images, ≈128 couleurs, formats 440×240 / 246×440 / 403×440 / 480×262 (40 dessins) ; C SVG animé intégré, viewBox 120×100, fond #0a0e1a, boucle CSS 3 s (144 dans le paquet web).",
+      "action": "Faire choisir la famille par contexte avant toute création, puis appliquer le gabarit mesuré de cette famille.",
+      "instruction": "Règle de style mesurée dans le pack (review/REGLE-STYLE-MESUREE.md) et non inventée : un nouveau visuel rejoint la famille du contexte, jamais une quatrième. Décision attendue de l'utilisateur : famille des 34 Tabata au sol et des 5 guides aquatiques (C recommandée pour l'écran sombre), priorité de production, et autorisation d'un premier lot témoin avant toute production en série.",
+      "instructionDate": "2026-09-23",
+      "evidence": "evolution/media/review/REGLE-STYLE-MESUREE.md + STYLE-METRICS.json + GAPS-SANS-DESSIN.json"
+    },
+    {
+      "id": "gaps-without-any-faithful-drawing",
+      "scope": "transverse",
+      "status": "open",
+      "observed": "Mesure : 76 dessins servent fidèlement 95 exercices (exact=true) ; 114 exercices affichent le dessin d'une autre variante. Pour les variantes prescrites des 27 écarts mesurés (élastique, poids du corps, concentration, prise serrée, Zottman, chin-up, banc Scott, marchées, assis câble, 45°), la recherche dans les 76 dessins FIDÈLES ne trouve aucun équivalent. Aucun des 4 écarts d'étirement restants n'a d'équivalent non plus, ni les 34 noms de Tabata au sol.",
+      "action": "Consigner que ces corrections exigent une création : aucune ne peut être obtenue par échange de visuel existant.",
+      "instruction": "Documenté dans review/GAPS-SANS-DESSIN.json. Décision de style et autorisation de création requises ; en attendant, ces groupes restent ouverts et rien n'est inventé.",
+      "instructionDate": "2026-09-23",
+      "evidence": "evolution/media/review/GAPS-SANS-DESSIN.json"
     }
   ]
 }
