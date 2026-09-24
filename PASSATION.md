@@ -1,8 +1,52 @@
+## Dernière avancée — 1.4.5 publiée : un Tabata au sol n'affiche plus de guide aquatique (23 septembre 2026)
+
+[Télécharger la 1.4.5](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/downloads/Yanis-Fitness-Evolution-1.4.5.apk) · [consignes](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/downloads/INSTALLATION-1.4.5.md) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/downloads/Yanis-Fitness-Evolution-1.4.5.apk.sha256) · [fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/downloads/Yanis-Fitness-Evolution-1.4.5.fidelity.json) · [fiche avant/après](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/evolution/media/review/REVIEW-TABATA-CONTEXTE.md)
+
+### Le défaut, mesuré, puis corrigé
+
+Le générateur du Tabata est le même au sol (`type:"hiit"`) et au bord du bassin (`type:"aqua"`), et plusieurs mouvements portent **le même nom** dans les deux contextes. Jusqu'à la 1.4.4 incluse, le chrono guidé cherchait les guides aquatiques **sans vérifier le contexte** : en plein Tabata **au sol**, l'étape « Gainage planche » affichait le GIF du guide aquatique *Gainage au bord (vertical)* — **comme visuel du mouvement et dans le bloc « Consignes du mouvement »**, consignes de bassin et margelle comprises. Quatre noms sont concernés : Gainage planche, Montées de genoux, Battements de jambes, Marche sur place.
+
+**Correction livrée** (règle : *en contexte terre, jamais de guide aquatique*, la même que pour la piscine) : le chrono ne résout un guide aquatique que si l'étape est réellement aquatique, avec le résolveur déjà validé pour la piscine. **Aucun nom, aucune durée, aucune consigne, aucune prescription n'est modifié**, et l'Aqua Tabata garde **exactement** ses guides validés.
+
+| Cas mesuré (390 × 900, profil Yanis, thème sombre, mêmes états) | 1.4.4 livrée | 1.4.5 |
+|---|---|---|
+| Tabata **au sol** « Gainage planche · round 1/8 » | GIF aquatique `f1dde35b…gif` en visuel **et** en consignes | aucune image ni consigne de bassin ; visuel honnête générique (groupe `tabata-missing-demonstrations` ouvert) |
+| Tabata **au sol** « Montées de genoux · round 2/8 » | GIF aquatique `fe34482a…gif` | idem : rien d'aquatique |
+| **Aqua Tabata** « Montées de genoux · round 1/8 » | GIF aquatique + consignes | **strictement identique** |
+
+Captures pleine image : `evolution/media/review/tabata-{land,aqua}-{avant-144,corrige-145}.png` · fiche complète : `evolution/media/review/REVIEW-TABATA-CONTEXTE.md`.
+
+### Vérifications de cette étape
+
+- **Preuve en double sens** : le parcours `evolution/media/tests/tabata-context.spec.mjs` (5 cas) réussit **5/5** sur le bundle corrigé et **échoue 4 fois sur 5 rejoué contre la 1.4.4 livrée** — les 4 échecs sont exactement les cas au sol, l'aqua reste vert. Même commande, mêmes états, seul le paquet servi change.
+- **Suites** : Node **42/42** ; suite média complète **33/33 (4,5 min)** sur ce bundle exact ; suite d'origine comparée à la même minute (référence 1.4.0 intacte vs livrable, mêmes causes, aucune perte).
+- **Gel des données** : dans chaque parcours, l'état enregistré (étapes du chrono, `meta`, séries, activités, mesures, séances, plan) est **identique avant/après** ; les mouvements et libellés `TABATA_MODES` sont comparés octet pour octet au paquet 1.4.0.
+
+### Livrable — APK 1.4.5 signé
+
+| Élément | Valeur |
+|---|---|
+| Fichier | `downloads/Yanis-Fitness-Evolution-1.4.5.apk` (24 909 288 octets) |
+| SHA-256 | `4c75fa67791202836a5a4a1ca210b8068958f9242cfc5a965af5674390f83601` |
+| Version | 1.4.5 / code 16 · web embarqué `6fbd242a…` |
+| Identité | **`150e3846…`**, la même que 1.4.2/1.4.3/1.4.4 ⇒ **installation par-dessus la 1.4.4, rien à désinstaller** |
+| Contrôles | v2 + v3, 1 signataire, **9/9 DEX identiques**, 271/272 fichiers web identiques, seules entrées changées = manifeste + paquet web |
+
+- **Défaut de lien réparé au passage** : la notice 1.4.4 pointait vers un commit de préparation **inexistant** (aperçu 404). Les liens des notices **1.4.4 et 1.4.5** sont repinnés vers un commit réel qui contient bien les fichiers. C'est aussi pourquoi les liens bruts de cette passation sont épinglés et revérifiés après publication.
+- **Sixième effacement d'espace de travail** pendant ce chantier : `.cache`, `.private`, `/tmp` (Chromium), `node_modules` et les serveurs ont disparu **une fois de plus** ; identité restaurée depuis le dépôt, outillage réinstallé, **rien n'a été perdu** grâce aux commits poussés.
+- **Réserve honnête** : aucun essai sur téléphone réel ; le groupe Tabata reste **ouvert** pour cette raison.
+
+### Prochaine étape précise
+
+1. **Essai téléphone** de la 1.4.5 (installation directe par-dessus la 1.4.4) : vérifier qu'un Tabata au sol n'affiche plus aucune image ni consigne de bassin, et que l'Aqua Tabata affiche toujours ses guides. Retour même court.
+2. **Décisions toujours attendues avant toute création d'image** : règle de style ; échange des deux étirements (pigeon assis, main dans le dos) avec des dessins déjà présents ; piscine (retirer les 5 visuels terrestres plutôt qu'un dessin terrestre) ; Tabata (34 des 38 noms au sol sans démonstration dédiée — création ou lacune explicite assumée).
+3. **Audit : 51 groupes ouverts**, aucun fermé silencieusement, aucun validé définitivement. **IA conversationnelle toujours en dernier.** Avertir avec 🚩 avant la limite de contexte.
+
 # 🚩 Passation — Yanis Fitness Evolution
 
 **Mise à jour : 23 septembre 2026.** Lire ce document avant de poursuivre dans une nouvelle conversation. Les fichiers et commits accessibles sont la source de vérité ; un ancien message annonçant un fichier ne garantit pas sa présence actuelle.
 
-## 🚩 Dernière avancée — 1.4.4 publiée : durées lisibles, 79 alias de noms proches revus, 11 groupes instruits (23 septembre 2026)
+## Étape précédente — 1.4.4 publiée : durées lisibles, 79 alias de noms proches revus, 11 groupes instruits (23 septembre 2026)
 
 [Télécharger la 1.4.4](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/Yanis-Fitness-Evolution-1.4.4.apk) · [consignes](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/INSTALLATION-1.4.4.md) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/Yanis-Fitness-Evolution-1.4.4.apk.sha256) · [fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d1a08f9/downloads/Yanis-Fitness-Evolution-1.4.4.fidelity.json) · [release](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.4.4-evolution)
 
@@ -393,6 +437,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images, sans tête inversée, mauvaise posture ni mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique. **La 1.4.4 est publiée** (`0d7123b4…` : piscine, séance oubliée clôturée en « partielle », durées lisibles — identité durable `150e3846…`, installation directe par-dessus la 1.4.3) ; c’est le seul APK à installer, la 1.4.1 est morte. Le candidat cumulatif est `evolution/media/candidate/` (**bundle `22109c5b…`**, Node **41/41**, navigateur ciblé 6/6 sur ce bundle, médias 28/28 et suite d’origine 90/90 sur `52dfc705…`). Les **79 noms proches** sont revus un par un (`review/alias-overlap-review.json`) et les **16 dessins d’étirement** relus (`review/stretch-assets-review.json`) : **51 groupes d’anomalies restent ouverts**, aucun n’est fermé sans confirmation. **Avant toute création visuelle, attends la règle de style et les décisions listées en tête de `PASSATION.md`.** Continue dans ce chat tant que possible ; actualise ET présente la passation à chaque étape, puis précise la suivante ; avertir avec 🚩 avant la limite de contexte.
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images, sans tête inversée, mauvaise posture ni mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique ; en contexte terre, jamais de guide aquatique. **La 1.4.5 est publiée** (`4c75fa67…` : piscine, séance oubliée clôturée en « partielle », durées lisibles, Tabata au sol sans guide aquatique — identité durable `150e3846…`, installation directe par-dessus la 1.4.4) ; c’est le seul APK à installer, la 1.4.1 est morte. Le candidat cumulatif est `evolution/media/candidate/` (**bundle `6fbd242a…`**, Node **42/42**, suite média **33/33**, parcours Tabata 5/5 et 4 échecs rejoués contre la 1.4.4). Les **79 noms proches** (`review/alias-overlap-review.json`) et les **16 dessins d’étirement** (`review/stretch-assets-review.json`) sont revus ; **51 groupes d’anomalies restent ouverts**, aucun n’est fermé sans confirmation. **Avant toute création visuelle, attends la règle de style et les décisions listées en tête de `PASSATION.md`.** Continue dans ce chat tant que possible ; actualise ET présente la passation à chaque étape, puis précise la suivante ; avertir avec 🚩 avant la limite de contexte.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.

@@ -73,3 +73,12 @@ Correctif décidé par l'utilisateur (« fais ce que tu recommande ») après re
 - Seules entrées modifiées vs la 1.4.3 : `AndroidManifest.xml` et `assets/public/assets/index-CBCies4k.js`. 9/9 DEX identiques, 271/272 fichiers web identiques, v2 + v3, un signataire, alignement vérifié, retéléchargement GitHub conforme.
 - Tests : Node 41/41 ; navigateur ciblé 6/6 sur ce bundle ; suites complètes vertes sur la 1.4.3 (média 28/28, suite d'origine 90/90).
 - Release `v1.4.4-evolution` créée ; les pièces jointes binaires n'ont pas pu être téléversées (endpoint d'upload bloqué depuis l'atelier) — le lien brut épinglé fait foi.
+
+## 1.4.5 — 23 septembre 2026
+
+- `downloads/Yanis-Fitness-Evolution-1.4.5.apk` — 24 909 288 octets, SHA-256 `4c75fa67791202836a5a4a1ca210b8068958f9242cfc5a965af5674390f83601`, versionName 1.4.5 / versionCode 16.
+- Identité durable `150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b` (identique 1.4.2 / 1.4.3 / 1.4.4) : installation directe par-dessus la 1.4.4. Restaurée depuis `evolution/signing/evolution-media-142.encrypted.json` après le sixième effacement d'espace de travail.
+- Web embarqué `6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e` : plus aucun guide aquatique (image ou consignes) dans un Tabata au sol ; Aqua Tabata inchangé.
+- Seules entrées modifiées vs la 1.4.4 : `AndroidManifest.xml` et `assets/public/assets/index-CBCies4k.js`. 9/9 DEX identiques, 271/272 fichiers web identiques, v2 + v3, un signataire.
+- Tests : Node 42/42 ; suite média 33/33 (4,5 min) sur ce bundle ; le même parcours Tabata rejoué contre la 1.4.4 livrée échoue sur les 4 cas au sol (preuve de l'écart).
+- Liens des notices 1.4.4 et 1.4.5 repinnés vers un commit réel (l'ancien pin 1.4.4 renvoyait un aperçu 404).

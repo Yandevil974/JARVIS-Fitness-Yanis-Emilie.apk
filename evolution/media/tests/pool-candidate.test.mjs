@@ -247,7 +247,7 @@ test('séance oubliée : la correction est prouvée, le groupe reste ouvert faut
  assert.match(group.observed,/40320:00/);
  assert.match(group.observed,/Clôturer votre séance/);
  assert.equal(group.fix.candidateBundleSha256,sha(candidate));
- assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.4.apk');
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.5.apk');
  assert.match(group.fix.remaining,/téléphone/);
  const spec=fs.readFileSync(new URL('./emilie-session-block.spec.mjs',import.meta.url),'utf8');
  // Le spec relève l'état réel : aucune attente du défaut n'y est écrite d'avance.
@@ -278,4 +278,35 @@ test('durées de la modale combinée : lisibles, sans toucher aux prescriptions'
  assert.equal(fn(3600),'60 min');
  // Aucune autre écriture de durée n'est modifiée.
  assert.ok(candidate.includes('Math.round(w.seconds/60)'));
+});
+
+test('Tabata au sol : aucun guide aquatique ne peut être résolu hors contexte aquatique', () => {
+ const findings=JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings;
+ const group=findings.find(f=>f.id==='tabata-land-to-water');
+ assert.ok(group,'le groupe doit exister');
+ assert.equal(group.status,'open');
+ assert.equal(group.fix.candidateBundleSha256,sha(candidate));
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.5.apk');
+ // 1. Le code livré ne garde plus le repli aquatique : les deux chemins mesurés
+ //    (visuel de l'étape et bloc « Consignes du mouvement ») sont conditionnés
+ //    au contexte aquatique déjà résolu pour la piscine.
+ assert.ok(candidate.includes('x=poolMedia?poolMedia.guide:null'),'consignes sans repli aquatique');
+ assert.ok(candidate.includes('movementName:poolMedia?f.name:void 0'),'visuel conditionné au contexte');
+ assert.ok(!candidate.includes('poolMedia?poolMedia.guide:bl.find('),'ancien repli aquatique encore présent');
+ // 2. Les 4 noms mesurés au sol ne doivent résoudre aucun guide aquatique en
+ //    contexte terre, et doivent garder exactement le même guide en aquatique.
+ const landNames=['Gainage planche','Battements de jambes','Montées de genoux','Marche sur place'];
+ const step=name=>({name,seconds:20,pattern:'work'});
+ for(const name of landNames){
+  const land=media.resolve(step(name),{type:'tabata',name:'Tabata Full Body'});
+  assert.equal(land,null,name+' ne doit rien résoudre au sol');
+  const water=media.resolve(step(name),{type:'aqua',name:'Aqua Tabata'});
+  assert.ok(water,name+' doit garder son guide aquatique');
+ }
+ // 3. Aucune valeur prescrite n'a bougé : les noms, durées et consignes du
+ //    générateur au sol sont ceux du paquet 1.4.0.
+ const modes=candidate.slice(candidate.indexOf('"TABATA_MODES"'),candidate.indexOf('"TABATA_MODES"')+1200);
+ const baselineModes=original.slice(original.indexOf('"TABATA_MODES"'),original.indexOf('"TABATA_MODES"')+1200);
+ assert.equal(modes,baselineModes,'les mouvements et libellés du Tabata sont inchangés');
+ assert.match(candidate,/s\.jsx\(gi,\{movementName:poolMedia\?f\.name:void 0,pattern:f\.pattern\|\|"breathe",small:!0,controls:!1\}\)/);
 });

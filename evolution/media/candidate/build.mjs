@@ -51,7 +51,19 @@ export function integrate(source) {
   if (start < 0 || end <= start) throw Error('Timer boundaries missing');
   const oldTimer = source.slice(start, end);
   let timer = once(oldTimer, 'f=p.steps[p.index],h=', 'f=p.steps[p.index],poolMedia=JarvisPoolMedia.resolve(f,p.meta),h=');
-  timer = once(timer, 'x=bl.find(', 'x=poolMedia?poolMedia.guide:bl.find(');
+  // Regle demandee : en contexte TERRE, jamais de guide aquatique. Le chrono
+  // guidé gardait un repli sur les guides aquatiques (consignes du mouvement)
+  // et transmettait le nom de l'etape au visuel sans verifier le contexte :
+  // 4 des 38 noms du Tabata au sol (gainage planche, battements de jambes,
+  // montees de genoux, marche sur place) affichaient alors un guide aquatique
+  // dans un enchainement au sol. Le contexte est celui deja resolu pour la
+  // piscine (JarvisPoolMedia) : true = aquatique, false = terre. Aucun nom,
+  // aucune duree, aucune consigne n'est modifie ; l'affichage aquatique reste
+  // identique dans un protocole aquatique.
+  timer = once(timer, 'x=bl.find(w=>w.k.some(b=>Ge(f.name).includes(Ge(b))))',
+    'x=poolMedia?poolMedia.guide:null');
+  timer = once(timer, 's.jsx(gi,{movementName:f.name,pattern:f.pattern||"breathe",small:!0,controls:!1})',
+    's.jsx(gi,{movementName:poolMedia?f.name:void 0,pattern:f.pattern||"breathe",small:!0,controls:!1})');
   const first = '!p.done&&(f.img?', last = ')),s.jsx("p",{children:f.instruction';
   const a = timer.indexOf(first), b = timer.indexOf(last, a);
   if (a < 0 || b <= a) throw Error('Timer visual boundaries missing');

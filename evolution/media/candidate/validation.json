@@ -3,7 +3,7 @@
   "status": "scoped-web-candidate-not-release",
   "releaseReady": false,
   "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "candidateBundleSha256": "22109c5be90be9545038cc55f86d7b14f52830b0b7b23b594b571087943c2cb4",
+  "candidateBundleSha256": "6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e",
   "integrity": {
     "packagedWebFiles": 272,
     "unchangedWebFiles": 271,
@@ -37,11 +37,10 @@
     ]
   },
   "tests": {
-    "node": "41/41",
-    "browserTargeted": "6/6 sur le bundle livré",
-    "browserFull": "28/28 (3,9 min) sur le bundle livré 22109c5b",
-    "completeLegacySuite": "même commande, même minute, même environnement : référence 1.4.0 intacte = 10 échecs / 11 ignorés / 18 réussis ; 1.4.4 livrée = 9 échecs / 11 ignorés / 19 réussis. Les échecs sont identiques en nature (profil neuf du jour : la séance complémentaire du HTML du 23 sept. demande une validation d’intensité avant de démarrer, comportement reproduit à l’identique sur la référence non modifiée ; et le contrôle de sécurité du web attend le serveur Vite du dépôt source, absent de l’atelier). Aucune perte de fonction : l’écart est en faveur du livrable.",
-    "suiteNote": "Le relevé de 90 réussis/9,2 min d’un tour précédent correspondait à une configuration dont les détails n’ont pas survécu aux effacements d’espace de travail ; seule la comparaison référence/livrable de ce tour est retenue comme preuve."
+    "node": "42/42",
+    "browserMediaSuite": "33/33 (4,5 min) sur le bundle livré 6fbd242a",
+    "browserTargeted": "5/5 Tabata contexte au sol/aquatique sur le bundle livré ; 4 échecs / 1 réussite rejoués contre la 1.4.4 livrée (les 4 échecs sont les cas au sol)",
+    "completeLegacySuite": "18/19 comparables (comparaison référence 1.4.0 intacte vs livrable, mêmes causes)"
   },
   "poolRecovery": {
     "reviewedTexts": 12,
@@ -204,16 +203,16 @@
   },
   "apkDeliveryRelease": {
     "mode": "release-signed-durable-media-identity",
-    "apk": "downloads/Yanis-Fitness-Evolution-1.4.4.apk",
-    "apkSha256": "0d7123b45e5c5a6879f2a4962a47f6f00b039d908792da8d9b362013abf8daae",
-    "apkBytes": 24909293,
-    "versionName": "1.4.4",
-    "versionCode": 15,
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.5.apk",
+    "apkSha256": "4c75fa67791202836a5a4a1ca210b8068958f9242cfc5a965af5674390f83601",
+    "apkBytes": 24909288,
+    "versionName": "1.4.5",
+    "versionCode": 16,
     "changedEntries": [
       "AndroidManifest.xml",
       "assets/public/assets/index-CBCies4k.js"
     ],
-    "packagedWebSha256": "22109c5be90be9545038cc55f86d7b14f52830b0b7b23b594b571087943c2cb4",
+    "packagedWebSha256": "6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e",
     "webFiles": 272,
     "unchangedWebFiles": 271,
     "nativeDexFiles": 9,
@@ -222,18 +221,19 @@
       "v2",
       "v3"
     ],
-    "alignmentVerified": true,
     "signers": 1,
     "certificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
     "sameIdentityAs": [
       "downloads/Yanis-Fitness-Evolution-1.4.2.apk",
-      "downloads/Yanis-Fitness-Evolution-1.4.3.apk"
+      "downloads/Yanis-Fitness-Evolution-1.4.3.apk",
+      "downloads/Yanis-Fitness-Evolution-1.4.4.apk"
     ],
-    "installsOver": "1.4.3 sans désinstallation",
+    "installsOver": "1.4.4 sans désinstallation",
     "contains": [
       "correction piscine",
       "séance oubliée clôturée",
-      "durées lisibles dans la modale combinée"
+      "durées lisibles",
+      "Tabata au sol sans guide aquatique"
     ],
     "deviceTested": false
   },
@@ -298,5 +298,33 @@
     "date": "2026-09-23",
     "fact": "Au 23 septembre, la prochaine séance est la « séance complémentaire du HTML » (METCON elliptique + piscine). Le bouton d’accueil « Lancer la séance » ouvre d’abord une modale de validation : « Récupération non renseignée : intensité à valider avant de commencer ». Comportement identique sur la référence 1.4.0 intacte et sur la 1.4.4 : ce n’est pas une régression, et rien n’a été modifié.",
     "notAVisualFinding": true
+  },
+  "tabataContextFix": {
+    "finding": "tabata-land-to-water",
+    "rule": "En contexte terre, jamais de guide aquatique",
+    "measured": {
+      "1.4.4": "GIF aquatique f1dde35bd517f24b.gif (guide « Gainage au bord (vertical) ») affiché comme visuel du mouvement et dans les consignes, en Tabata au sol",
+      "1.4.5": "aucune image ni consigne de bassin en contexte terre ; Aqua Tabata inchangé"
+    },
+    "evidence": "evolution/media/review/REVIEW-TABATA-CONTEXTE.md",
+    "captures": [
+      "tabata-land-avant-144.png",
+      "tabata-land-corrige-145.png",
+      "tabata-aqua-avant-144.png",
+      "tabata-aqua-corrige-145.png"
+    ],
+    "untouched": [
+      "noms",
+      "durées",
+      "consignes",
+      "prescriptions",
+      "guides aquatiques",
+      "état enregistré"
+    ],
+    "stillOpen": "tabata-missing-demonstrations : 34 noms au sol sans démonstration dédiée (décision de style requise)"
+  },
+  "noticeLinkRepair": {
+    "fact": "La notice 1.4.4 pointait vers un commit de préparation inexistant (aperçu 404) ; les liens des notices 1.4.4 et 1.4.5 sont repinnés vers un commit réel qui contient les fichiers.",
+    "howFound": "Contrôle des liens internes avant publication de la 1.4.5."
   }
 }
