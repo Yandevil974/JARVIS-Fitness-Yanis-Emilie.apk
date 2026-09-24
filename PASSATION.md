@@ -1,3 +1,33 @@
+## Dernière avancée — 1.4.7 publiée : cinq animations humaines aquatiques, dans le style de vos GIF existants (24 septembre 2026)
+
+> « il y a des images humaines animées manquantes. corrige cela stp en cohérence avec les autres gif stp »
+
+**Fait.** Vos GIF humains existants ont été mesurés un par un avant de dessiner quoi que ce soit (`480 × 262`, **2 images**, **500 ms**, fond blanc, bande d'eau bleue, humain réaliste coloré, **muscles surlignés en orange**, bassin au bon niveau). Les cinq guides aquatiques qui n'avaient **aucun** dessin valide ont maintenant leur animation, dans cette famille exacte :
+
+| Guide | Animation livrée |
+|---|---|
+| **Gainage au bord (vertical)** | `pool-animations/gainage-vertical.gif` — planche verticale, mains sur la margelle |
+| **Mobilité épaules aquatique** | `mobilite-epaules.gif` — bras tendus devant puis ouverts, immersion à la poitrine |
+| **Mobilité hanches / chevilles** | `mobilite-hanches-chevilles.gif` — genou monté puis ouvert, immersion à la taille |
+| **Ciseaux au bord** | `ciseaux-au-bord.gif` — jambes alternées derrière, mains sur la margelle |
+| **Talons-fesses** | `talons-fesses.gif` — talon vers la fesse en course dans l'eau |
+
+**Ce qui disparaît** : les cinq **dessins terrestres** (planche sur banc, élastique à sec, poulie, relevés de jambes, montée de genou au mur) **et** la mention de lacune introduite en 1.4.6. **Ce qui ne change pas** : les consignes, les noms, les durées, et l'état enregistré de vos profils.
+
+**Méthode, sans tricherie** : deux allers-retours complets avant livraison — un premier lot écarté parce que **l'eau était trop basse** (on aurait dit des exercices au sol devant un bassin) et un second corrigé avec l'immersion au niveau de la poitrine ou de la taille. Le cadrage est fait **en hauteur d'abord** (jamais de tête ni de pied coupé), puis rogné sur les côtés, avec une légère saturation en plus pour égaler vos GIF. Planche de contrôle dans l'application : `evolution/media/review/pool-animations-5-guides.png`.
+
+| Élément | Valeur |
+|---|---|
+| Fichier | `downloads/Yanis-Fitness-Evolution-1.4.7.apk` (24 909 288 octets) |
+| SHA-256 | `ad2913f9aff4817e1b32f638930ea478d63f89961cc0de7f69c48638d00baf06` |
+| Version | 1.4.7 / code 18 · web embarqué `cf99b6e4…` |
+| Identité | **`150e3846…`** (la même depuis la 1.4.2) ⇒ **installation par-dessus la 1.4.6, rien à désinstaller** |
+| Contrôles | v2 + v3, 1 signataire, **9/9 DEX identiques**, paquet web + manifeste + **5 médias ajoutés** |
+
+**Tests** : Node **46/46** ; le parcours navigateur `pool-land-guides.spec.mjs` exige désormais **l'animation fournie** (chargée, entière), **l'absence** de l'ancien dessin terrestre, **l'absence** de la mention de lacune, et contrôle pour chaque GIF la signature `GIF89a`, la taille **480 × 262** et son empreinte exacte.
+
+**Resté ouvert, volontairement** : les quatre écarts d'étirement gardent leurs visuels livrés (votre décision du 24 septembre), et **les 34 mouvements de Tabata au sol** restent sans démonstration — même méthode disponible que pour la piscine si vous le voulez.
+
 ## ⛔ Dernière avancée — décision utilisateur : famille C refusée, les visuels livrés sont conservés (24 septembre 2026)
 
 **Ce que vous avez dit, et ce qui a été appliqué immédiatement :**
