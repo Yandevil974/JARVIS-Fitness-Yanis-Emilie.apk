@@ -1,12 +1,14 @@
 # Téléchargements
 
-## Version actuelle de test : Yanis Fitness Evolution 1.3.0
+## Version actuelle : Yanis Fitness Evolution 1.4.8 (24 septembre 2026)
 
-[**Télécharger l’APK complet, étapes 1–7**](Yanis-Fitness-Evolution-1.3.0.apk?raw=true) · [Installation sans supprimer les anciennes applications](INSTALLATION-1.3.0.md)
+[**Télécharger l’APK complet, étapes 1–7**](Yanis-Fitness-Evolution-1.4.8.apk?raw=true) · [Installation par-dessus la 1.4.2 à la 1.4.7](INSTALLATION-1.4.8.md)
 
-Nouvelle identité autorisée : `app.yanis.fitness.evolution`. Import JSON explicite depuis l’application utilisée et vérification des deux profils. Pas d’IA conversationnelle générale. Aucun test sur téléphone revendiqué.
+Tous les visuels humains qui manquaient sont dans cet APK, et le défaut de la 1.4.7 (cinq animations référencées mais absentes) est corrigé. Même identité de signature que depuis la 1.4.2 : installation directe, sans désinstallation. Pas d’IA conversationnelle générale. Aucun test sur téléphone revendiqué.
 
-Taille : **24 901 083 octets**. SHA-256 : `4c2efeaea0d1d59e9bc329f4b3651e2a860a1416bad900c23a15e0249622a323`.
+Taille : **28 035 594 octets**. SHA-256 : `fee667192291dd8adc93593bb395b6193e82849e11a4d5db94bf9218c8b99e9f`.
+
+**Ne pas installer la 1.4.7** (images cassées) ni la 1.4.1 (clé de signature détruite).
 
 ## Notices historiques (anciennes versions inchangées)
 

@@ -179,6 +179,12 @@ def main():
             assert entry in present, 'Alias animation missing from the APK: ' + entry
             data = dst.read(entry)
             assert data[:6] in (b'GIF89a', b'GIF87a') and len(data) > 1000 and sha(data) == digest, 'Alias animation altered: ' + entry
+        recovery = json.loads((ROOT / 'evolution/media/candidate/pool-recovery-map.json').read_text(encoding='utf-8'))
+        for name, digest in recovery['files'].items():
+            entry = 'assets/public' + name
+            assert entry in present, 'Pool recovery animation missing from the APK: ' + entry
+            data = dst.read(entry)
+            assert data[:6] in (b'GIF89a', b'GIF87a') and len(data) > 1000 and sha(data) == digest, 'Pool recovery animation altered: ' + entry
         stretch = json.loads((ROOT / 'evolution/media/candidate/stretch-visuals-map.json').read_text(encoding='utf-8'))
         for name, digest in stretch['files'].items():
             entry = 'assets/public' + name
@@ -190,7 +196,7 @@ def main():
     report = {
         'mode': 'release-signed-new-durable-media-identity', 'identity': identity, 'baseApkSha256': BASE_SHA,
         'apkSha256': sha(output.read_bytes()), 'apkBytes': output.stat().st_size, 'packagedWebSha256': sha(web),
-        'packagedWebDifference': 'V 1.4.0 -> cette version: memes corrections, plus les visuels humains produits (cinq guides aquatiques, trente-trois mouvements de Tabata au sol, quatre etirements sans dessin fidele)',
+        'packagedWebDifference': 'V 1.4.0 -> cette version: memes corrections, plus tous les visuels humains produits (cinq guides aquatiques, trente-trois mouvements de Tabata au sol, quatre etirements sans dessin fidele, dix variantes d alias, deux animations de recuperation piscine)',
         'changedEntries': changed, 'webFiles': 272 + len(added), 'addedEntries': added, 'replacedMediaEntries': replaced_media, 'nativeDexFiles': 9,
         'byteIdenticalDexFiles': 9, 'signatureVerified': ['v2', 'v3'], 'alignmentVerified': True,
         'version': VERSION, 'versionCode': VERSION_CODE, 'releaseCertificateSha256': identity['certificateSha256'],
@@ -237,7 +243,7 @@ def main():
                        'gap': 'evolution/media/review/GAPS-SANS-DESSIN.json : dix exercices affichaient le dessin d une AUTRE variante',
                        'delivered': 'evolution/media/candidate/alias-visuals-map.json (variantes resolues par identifiant, niveau exact)',
                        'format': '480 x 262, 2 images, 500 ms, meme famille que les GIF livres',
-                       'remaining': 'evolution/media/candidate/alias-visuals-map.json -> reste (liste exacte, mesuree par le test)',
+                       'remaining': 'aucune variante du releve : le champ reste de la carte est vide ; il reste l essai sur le telephone',
                        'verifiedBy': ['evolution/media/tests/alias-visuals.test.mjs','evolution/media/tests/pool-candidate.test.mjs']},
         'tabataLandAnimations': {'request': 'user, 24 September 2026: oui complete tous les elements manquants',
                        'context': 'resolvees uniquement dans un Tabata AU SOL (jamais piscine, etirement, echauffement, repos)',
@@ -246,6 +252,13 @@ def main():
                        'format': '480 x 262, 2 images, 500 ms, meme famille que les GIF deja livres',
                        'remaining': 'aucun nom du generateur au sol ; il reste l essai sur le telephone',
                        'verifiedBy': ['evolution/media/tests/tabata-land-media.test.mjs','evolution/media/tests/media-inventory.test.mjs']},
+        'poolRecoveries': {'request': 'user, 24 September 2026: one single complete version, all missing media',
+                       'gap': 'mesure sur les 420 etapes des six protocoles piscine : 117 « Repos » et 18 « ... en place » ne resolvaient aucun media aquatique',
+                       'delivered': 'deux animations humaines produites : /media/pool-repos.gif (recuperation dans leau) et /media/pool-en-place.gif (mise en place avant l effort)',
+                       'map': 'evolution/media/candidate/pool-recovery-map.json',
+                       'context': 'servies uniquement quand un contexte piscine est deja etabli ; hors piscine, aucun nom ne change de visuel',
+                       'measured': 'zero etape sans visuel et zero media de terre sur les 420 etapes ; les recuperations nommees gardent leur image aquatique livree',
+                       'verifiedBy': ['evolution/media/tests/pool-candidate.test.mjs','evolution/media/tests/media-inventory.test.mjs']},
         'stretchVisuals': {'request': 'user, 24 September 2026: one single complete version, all missing media',
                        'gap': 'evolution/media/review/GAPS-SANS-DESSIN.json : quatre etirements sans dessin fidele (le dessin montre un AUTRE mouvement)',
                        'delivered': ['Mollet en escalier','Adduction de la hanche debout','Mains croisees derriere le dos','Etirement des flechisseurs'],

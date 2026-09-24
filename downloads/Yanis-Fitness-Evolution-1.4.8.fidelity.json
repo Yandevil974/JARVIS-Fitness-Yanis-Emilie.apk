@@ -13,17 +13,33 @@
     "authorizationNote": "new key explicitly authorized by the user; the existing certificates are never regenerated"
   },
   "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "apkSha256": "f39cc05abee8b770a1e07b49960c5babc9398e35c8225583680190cf7a8cc951",
-  "apkBytes": 27210438,
-  "packagedWebSha256": "aaf5f8ef2105c487473d243ada8e31fea591d63df58fcf0f4d67ec7c46eb153f",
-  "packagedWebDifference": "V 1.4.6 -> V 1.4.7: same corrections, plus five human animations are delivered for the aquatic guides that had no valid drawing; they replace the former land drawings and the former explicit gap",
+  "apkSha256": "fee667192291dd8adc93593bb395b6193e82849e11a4d5db94bf9218c8b99e9f",
+  "apkBytes": 28035594,
+  "packagedWebSha256": "ce7c4b897a1d2413c91ccb2073a318e91a7771c825f86c09abd8de7304bc4dc6",
+  "packagedWebDifference": "V 1.4.0 -> cette version: memes corrections, plus tous les visuels humains produits (cinq guides aquatiques, trente-trois mouvements de Tabata au sol, quatre etirements sans dessin fidele, dix variantes d alias, deux animations de recuperation piscine)",
   "changedEntries": [
     "AndroidManifest.xml",
     "assets/public/assets/index-CBCies4k.js",
+    "assets/public/media/alias-back-extension-45-snatch.gif",
+    "assets/public/media/alias-curl-concentration.gif",
+    "assets/public/media/alias-curl-haltere-supination-banc-scott-90.gif",
+    "assets/public/media/alias-curl-zottman-assis.gif",
+    "assets/public/media/alias-curl-zottman-un-bras-banc-scott.gif",
+    "assets/public/media/alias-curl-zottman.gif",
+    "assets/public/media/alias-developpe-couche-prise-serree.gif",
+    "assets/public/media/alias-fentes-arriere-au-poids-du-corps.gif",
+    "assets/public/media/alias-fentes-marchees.gif",
+    "assets/public/media/alias-tractions-prise-neutre.gif",
     "assets/public/media/ciseaux-au-bord.gif",
     "assets/public/media/gainage-vertical.gif",
     "assets/public/media/mobilite-epaules.gif",
     "assets/public/media/mobilite-hanches-chevilles.gif",
+    "assets/public/media/pool-en-place.gif",
+    "assets/public/media/pool-repos.gif",
+    "assets/public/media/stretch-nouveau-adduction-croisement.jpg",
+    "assets/public/media/stretch-nouveau-flechisseurs-poignet.jpg",
+    "assets/public/media/stretch-nouveau-mains-croisees-dos.jpg",
+    "assets/public/media/stretch-nouveau-mollet-escalier.jpg",
     "assets/public/media/tabata-land-battements-de-jambes.gif",
     "assets/public/media/tabata-land-burpees-simplifies.gif",
     "assets/public/media/tabata-land-burpees.gif",
@@ -35,6 +51,7 @@
     "assets/public/media/tabata-land-fentes-alternees.gif",
     "assets/public/media/tabata-land-fentes-arriere.gif",
     "assets/public/media/tabata-land-gainage-planche.gif",
+    "assets/public/media/tabata-land-high-knees.gif",
     "assets/public/media/tabata-land-jumping-jacks.gif",
     "assets/public/media/tabata-land-marche-sur-place.gif",
     "assets/public/media/tabata-land-montees-de-genoux.gif",
@@ -49,6 +66,8 @@
     "assets/public/media/tabata-land-pompes.gif",
     "assets/public/media/tabata-land-ponts-fessiers.gif",
     "assets/public/media/tabata-land-releves-de-jambes.gif",
+    "assets/public/media/tabata-land-repos-actif.gif",
+    "assets/public/media/tabata-land-respiration-profonde.gif",
     "assets/public/media/tabata-land-russian-twist.gif",
     "assets/public/media/tabata-land-squats-sautes.gif",
     "assets/public/media/tabata-land-squats-sumo.gif",
@@ -56,12 +75,28 @@
     "assets/public/media/tabata-land-superman.gif",
     "assets/public/media/talons-fesses.gif"
   ],
-  "webFiles": 307,
+  "webFiles": 326,
   "addedEntries": [
+    "assets/public/media/alias-back-extension-45-snatch.gif",
+    "assets/public/media/alias-curl-concentration.gif",
+    "assets/public/media/alias-curl-haltere-supination-banc-scott-90.gif",
+    "assets/public/media/alias-curl-zottman-assis.gif",
+    "assets/public/media/alias-curl-zottman-un-bras-banc-scott.gif",
+    "assets/public/media/alias-curl-zottman.gif",
+    "assets/public/media/alias-developpe-couche-prise-serree.gif",
+    "assets/public/media/alias-fentes-arriere-au-poids-du-corps.gif",
+    "assets/public/media/alias-fentes-marchees.gif",
+    "assets/public/media/alias-tractions-prise-neutre.gif",
     "assets/public/media/ciseaux-au-bord.gif",
     "assets/public/media/gainage-vertical.gif",
     "assets/public/media/mobilite-epaules.gif",
     "assets/public/media/mobilite-hanches-chevilles.gif",
+    "assets/public/media/pool-en-place.gif",
+    "assets/public/media/pool-repos.gif",
+    "assets/public/media/stretch-nouveau-adduction-croisement.jpg",
+    "assets/public/media/stretch-nouveau-flechisseurs-poignet.jpg",
+    "assets/public/media/stretch-nouveau-mains-croisees-dos.jpg",
+    "assets/public/media/stretch-nouveau-mollet-escalier.jpg",
     "assets/public/media/tabata-land-battements-de-jambes.gif",
     "assets/public/media/tabata-land-burpees-simplifies.gif",
     "assets/public/media/tabata-land-burpees.gif",
@@ -73,6 +108,7 @@
     "assets/public/media/tabata-land-fentes-alternees.gif",
     "assets/public/media/tabata-land-fentes-arriere.gif",
     "assets/public/media/tabata-land-gainage-planche.gif",
+    "assets/public/media/tabata-land-high-knees.gif",
     "assets/public/media/tabata-land-jumping-jacks.gif",
     "assets/public/media/tabata-land-marche-sur-place.gif",
     "assets/public/media/tabata-land-montees-de-genoux.gif",
@@ -87,6 +123,8 @@
     "assets/public/media/tabata-land-pompes.gif",
     "assets/public/media/tabata-land-ponts-fessiers.gif",
     "assets/public/media/tabata-land-releves-de-jambes.gif",
+    "assets/public/media/tabata-land-repos-actif.gif",
+    "assets/public/media/tabata-land-respiration-profonde.gif",
     "assets/public/media/tabata-land-russian-twist.gif",
     "assets/public/media/tabata-land-squats-sautes.gif",
     "assets/public/media/tabata-land-squats-sumo.gif",
@@ -163,7 +201,11 @@
   "approvedCorrections": {
     "stretchVisuals": [
       "Pigeon assis -> /media/stretch-piriforme.jpg",
-      "Main dans le dos -> /media/stretch-triceps-coude.jpg"
+      "Main dans le dos -> /media/stretch-triceps-coude.jpg",
+      "Mollet en escalier -> /media/stretch-nouveau-mollet-escalier.jpg",
+      "Adduction de la hanche debout -> /media/stretch-nouveau-adduction-croisement.jpg",
+      "Mains croisees derriere le dos -> /media/stretch-nouveau-mains-croisees-dos.jpg",
+      "Etirement des flechisseurs -> /media/stretch-nouveau-flechisseurs-poignet.jpg"
     ],
     "aquaticGaps": [
       "Gainage au bord (vertical)",
@@ -200,15 +242,55 @@
       "evolution/media/tests/pool-land-guides.spec.mjs"
     ]
   },
+  "aliasVariants": {
+    "request": "user, 24 September 2026: complete tous les elements manquants (variantes sans dessin fidele)",
+    "gap": "evolution/media/review/GAPS-SANS-DESSIN.json : dix exercices affichaient le dessin d une AUTRE variante",
+    "delivered": "evolution/media/candidate/alias-visuals-map.json (variantes resolues par identifiant, niveau exact)",
+    "format": "480 x 262, 2 images, 500 ms, meme famille que les GIF livres",
+    "remaining": "aucune variante du releve : le champ reste de la carte est vide ; il reste l essai sur le telephone",
+    "verifiedBy": [
+      "evolution/media/tests/alias-visuals.test.mjs",
+      "evolution/media/tests/pool-candidate.test.mjs"
+    ]
+  },
   "tabataLandAnimations": {
     "request": "user, 24 September 2026: oui complete tous les elements manquants",
     "context": "resolvees uniquement dans un Tabata AU SOL (jamais piscine, etirement, echauffement, repos)",
-    "delivered": "lots A + B + C : 30 mouvements dessines, 5 noms equivalents du meme mouvement, 35 noms sur 38",
+    "delivered": "lots A + B + C + D : 33 mouvements dessines, 5 noms equivalents du meme mouvement, les 38 noms du generateur au sol sont couverts",
     "map": "evolution/media/candidate/tabata-land-animations-map.json",
     "format": "480 x 262, 2 images, 500 ms, meme famille que les GIF deja livres",
-    "remaining": "3 noms du generateur au sol (High knees, Repos actif, Respiration profonde), listes dans la carte et mesures par le test",
+    "remaining": "aucun nom du generateur au sol ; il reste l essai sur le telephone",
     "verifiedBy": [
       "evolution/media/tests/tabata-land-media.test.mjs",
+      "evolution/media/tests/media-inventory.test.mjs"
+    ]
+  },
+  "poolRecoveries": {
+    "request": "user, 24 September 2026: one single complete version, all missing media",
+    "gap": "mesure sur les 420 etapes des six protocoles piscine : 117 « Repos » et 18 « ... en place » ne resolvaient aucun media aquatique",
+    "delivered": "deux animations humaines produites : /media/pool-repos.gif (recuperation dans leau) et /media/pool-en-place.gif (mise en place avant l effort)",
+    "map": "evolution/media/candidate/pool-recovery-map.json",
+    "context": "servies uniquement quand un contexte piscine est deja etabli ; hors piscine, aucun nom ne change de visuel",
+    "measured": "zero etape sans visuel et zero media de terre sur les 420 etapes ; les recuperations nommees gardent leur image aquatique livree",
+    "verifiedBy": [
+      "evolution/media/tests/pool-candidate.test.mjs",
+      "evolution/media/tests/media-inventory.test.mjs"
+    ]
+  },
+  "stretchVisuals": {
+    "request": "user, 24 September 2026: one single complete version, all missing media",
+    "gap": "evolution/media/review/GAPS-SANS-DESSIN.json : quatre etirements sans dessin fidele (le dessin montre un AUTRE mouvement)",
+    "delivered": [
+      "Mollet en escalier",
+      "Adduction de la hanche debout",
+      "Mains croisees derriere le dos",
+      "Etirement des flechisseurs"
+    ],
+    "format": "1376 x 768, image fixe, une seule posture, meme famille que les etirements deja livres",
+    "map": "evolution/media/candidate/stretch-visuals-map.json",
+    "unchanged": "noms, durees, consignes et donnees enregistrees ; les anciens dessins restent dans le paquet",
+    "verifiedBy": [
+      "evolution/media/tests/stretch-media.test.mjs",
       "evolution/media/tests/media-inventory.test.mjs"
     ]
   },
