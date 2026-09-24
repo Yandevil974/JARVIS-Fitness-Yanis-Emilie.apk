@@ -212,7 +212,7 @@
       "instructionDate": "2026-09-23",
       "fix": {
         "implemented": "2026-09-24",
-        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
         "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "providedAnimations": true,
         "rule": "Animation humaine produite dans la famille exacte des GIF aquatiques existants (480 x 262, 2 images, 500 ms) a la place du dessin terrestre et de la lacune explicite ; les consignes aquatiques restent celles du paquet : jamais reecrire la consigne pour justifier une image.",
@@ -253,7 +253,7 @@
       "instruction": "Instruction : la fonction d’affichage cherche dans les guides aquatiques sans vérifier le contexte. Mesuré : 4 des 38 noms au sol (gainage planche, battements de jambes, montées de genoux, marche sur place) sélectionnent un guide AQUATIQUE dans un enchaînement TERRE. CORRIGÉ dans la 1.4.5 : le chrono guidé ne résout plus de guide aquatique hors contexte aquatique (affichage du visuel et bloc « Consignes du mouvement »), les deux chemins mesurés. Les noms, durées et consignes sont inchangés ; le protocole aquatique garde ses guides validés. Vérifié par test Node et parcours navigateur.",
       "instructionDate": "2026-09-23",
       "fix": {
-        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
         "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "rule": "En contexte terre, jamais de guide aquatique : le chrono guidé ne résout un guide aquatique que si le contexte de l'étape est aquatique (même résolveur que la piscine).",
         "behaviour": "Les 4 noms mesurés (Gainage planche, Battements de jambes, Montées de genoux, Marche sur place) ne montrent plus de guide aquatique dans un enchaînement au sol ; dans un protocole aquatique, les mêmes noms gardent exactement le guide aquatique validé.",
@@ -296,7 +296,7 @@
       "id": "tabata-missing-demonstrations",
       "scope": "tabata",
       "observed": "34 des 38 noms au sol ne résolvent aucun média d'exercice via s5; gi montre alors la photo générique recovery-human.jpg. Cela ne constitue pas une démonstration correspondante.",
-      "action": "Compléter les 38 mouvements, avec libellés G/D et versions douces respectés; contrôler les six mouvements du générateur aqua.",
+      "action": "Correction en cours le 24 septembre 2026 : animations humaines produites dans la famille des GIF deja livres, resolues uniquement en contexte Tabata au sol (module tabata-land-context.mjs). Les 34 noms restent listes ; chacun est retire du constat quand son animation est livree.",
       "status": "open",
       "instruction": "Instruction : 34 des 38 noms au sol ne résolvent aucun média d’exercice ; l’écran montre alors la photo générique de récupération, ce qui n’est pas une démonstration correspondante. Aucun des 34 dessins n’existe dans le pack : correction impossible sans création (règle de style). La règle « jamais un visuel générique à la place d’un exercice » s’appliquerait alors comme pour la piscine (lacune explicite).",
       "instructionDate": "2026-09-23",
@@ -308,6 +308,17 @@
         "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
         "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
         "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
+      },
+      "fix": {
+        "implemented": "en cours, 24 septembre 2026",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
+        "apk": null,
+        "providedAnimations": true,
+        "rule": "Animation humaine dans la famille des GIF existants (480 x 262, 2 images, 500 ms), resolue uniquement dans un Tabata au sol ; aucun nom, aucune duree, aucune consigne modifiee.",
+        "verifiedBy": [
+          "evolution/media/tests/tabata-land-media.test.mjs"
+        ],
+        "remaining": "Les mouvements restants sont produits par lots ; le constat reste ouvert jusqu'a ce que les 34 noms soient couverts et que l'utilisateur ait essaye sur son telephone."
       }
     },
     {
@@ -323,7 +334,7 @@
       "instruction": "Instruction faite : le dessin montre un pigeon au sol, genou avant posé, buste droit ; la consigne décrit la position assise cheville croisée. Le dessin « piriforme assis » du même pack montre exactement cette position. Décision demandée (échange d’image, sans réécrire la consigne). CORRIGÉ dans la 1.4.6 : décision utilisateur du 23 septembre 2026 appliquée (échange d'image / lacune explicite), preuves dans le bloc de correction.",
       "instructionDate": "2026-09-23",
       "fix": {
-        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
         "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "rule": "Echanger l'image, jamais reecrire la consigne : le dessin doit montrer la posture decrite.",
         "behaviour": "« Pigeon assis » affiche desormais le dessin du piriforme assis (assis, cheville croisee sur le genou oppose) au lieu du pigeon au sol. Consigne inchangee.",
@@ -362,7 +373,7 @@
       "instruction": "Instruction faite : le fichier est un dos anatomique avec le muscle surligné, pas une posture. Le dessin « coude au-dessus de la tête » du même pack montre la main derrière la tête, coude tiré. Décision demandée (échange d’image, sans réécrire la consigne). CORRIGÉ dans la 1.4.6 : décision utilisateur du 23 septembre 2026 appliquée (échange d'image / lacune explicite), preuves dans le bloc de correction.",
       "instructionDate": "2026-09-23",
       "fix": {
-        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
         "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "rule": "Echanger l'image, jamais reecrire la consigne.",
         "behaviour": "« Main dans le dos » affiche desormais le dessin du coude au-dessus de la tete (main derriere la tete, coude tire) au lieu du dos anatomique. Consigne inchangee.",
@@ -607,7 +618,7 @@
       "status": "open",
       "fix": {
         "implemented": "2026-09-23",
-        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
         "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "verifiedBy": "evolution/media/tests/pool-candidate.test.mjs",
         "remaining": "essai sur le téléphone de l’utilisateur"
@@ -771,7 +782,7 @@
       "action": "CORRIGÉ dans le candidat le 23 septembre 2026, sur décision de l'utilisateur : une séance de musculation d'un autre jour est clôturée automatiquement en « partielle » au chargement (et au prochain clic sur « Lancer la séance » ou sur une minuterie guidée), avec sa propre date, ses séries validées conservées et la séance planifiée du jour marquée « partielle » — exactement ce que fait la modale « Terminer ». Message explicite affiché. Le compteur de séance ne peut plus afficher des jours en minutes (heures au-delà d'une heure). Reproductible : evolution/media/tests/emilie-session-block.spec.mjs (2 tests). Groupe laissé OUVERT : il ne peut être fermé qu'après un essai sur le téléphone de l'utilisateur (aucun appareil réel ici).",
       "status": "open",
       "fix": {
-        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
         "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "implemented": "2026-09-23",
         "decision": "utilisateur, 23 septembre 2026 : « fais ce que tu recommande »",
@@ -880,7 +891,7 @@
       "instructionDate": "2026-09-24",
       "fix": {
         "implemented": "2026-09-24",
-        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "candidateBundleSha256": "526f34c7adf07b0f11e3b537937bd1b4479fadc579d11719d751cf8349017c4a",
         "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "verifiedBy": "evolution/media/tests/media-inventory.test.mjs",
         "behaviour": "La 1.4.8 contient les cinq animations et tous les autres medias references. Les neuf DEX restent identiques octet pour octet a ceux de la 1.4.0 ; le script web est identique a celui de la 1.4.7.",

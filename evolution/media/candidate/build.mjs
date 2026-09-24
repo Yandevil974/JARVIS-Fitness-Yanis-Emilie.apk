@@ -15,6 +15,12 @@ export function once(text, before, after) {
 // une par une en pleine image avant livraison.
 export const providedAnimations = fs.existsSync(new URL('./pool-animations-map.json', import.meta.url))
   ? JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url))).map : {};
+// Animations humaines des mouvements du Tabata AU SOL : meme famille, contexte
+// terre uniquement (voir tabata-land-context.mjs). Meme regle que la piscine :
+// jamais un visuel generique a la place d'un mouvement, et jamais un guide d'un
+// autre contexte dans un enchainement au sol.
+export const providedLandAnimations = fs.existsSync(new URL('./tabata-land-animations-map.json', import.meta.url))
+  ? JSON.parse(fs.readFileSync(new URL('./tabata-land-animations-map.json', import.meta.url))).map : {};
 
 export function readBaseline() {
   const apk = path.join(root, baseline.apk);
@@ -55,7 +61,8 @@ export function integrate(source) {
   const start = source.indexOf('function v5('), end = source.indexOf('function w5(', start);
   if (start < 0 || end <= start) throw Error('Timer boundaries missing');
   const oldTimer = source.slice(start, end);
-  let timer = once(oldTimer, 'f=p.steps[p.index],h=', 'f=p.steps[p.index],poolMedia=JarvisPoolMedia.resolve(f,p.meta),h=');
+  let timer = once(oldTimer, 'f=p.steps[p.index],h=',
+    'f=p.steps[p.index],poolMedia=JarvisPoolMedia.resolve(f,p.meta),landMedia=poolMedia?null:JarvisTabataLandMedia.resolve(f,p.meta),h=');
   // Regle demandee : en contexte TERRE, jamais de guide aquatique. Le chrono
   // guidé gardait un repli sur les guides aquatiques (consignes du mouvement)
   // et transmettait le nom de l'etape au visuel sans verifier le contexte :
@@ -68,7 +75,7 @@ export function integrate(source) {
   timer = once(timer, 'x=bl.find(w=>w.k.some(b=>Ge(f.name).includes(Ge(b))))',
     'x=poolMedia?poolMedia.guide:null');
   timer = once(timer, 's.jsx(gi,{movementName:f.name,pattern:f.pattern||"breathe",small:!0,controls:!1})',
-    's.jsx(gi,{movementName:poolMedia?f.name:void 0,pattern:f.pattern||"breathe",small:!0,controls:!1})');
+    's.jsx(gi,{movementName:poolMedia?f.name:void 0,landPath:landMedia?landMedia.path:void 0,landName:landMedia?landMedia.name:void 0,pattern:f.pattern||"breathe",small:!0,controls:!1})');
   const first = '!p.done&&(f.img?', last = ')),s.jsx("p",{children:f.instruction';
   const a = timer.indexOf(first), b = timer.indexOf(last, a);
   if (a < 0 || b <= a) throw Error('Timer visual boundaries missing');
@@ -80,9 +87,19 @@ export function integrate(source) {
   const replacement = `!p.done&&(poolMedia?(poolMedia.path?${image}:${gap}):(${visual}))`;
   timer = timer.slice(0,a) + replacement + timer.slice(b+2);
   source = source.slice(0,start) + timer + source.slice(end);
+  // Le pas de Tabata au sol recoit son animation par ces deux proprietes ; gi
+  // les utilise en dernier recours, apres l'exercice et le guide aquatique.
+  source = once(source, 'function gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0})',
+    'function gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0,landPath:lp,landName:ln})');
+  source = once(source, 'const u=s5(i,n),p=',
+    'const u=s5(i,n)||(lp?{path:lp,name:ln||"",exact:!0,level:"exact"}:null),p=');
   const helper = fs.readFileSync(new URL('./pool-context.mjs', import.meta.url),'utf8')
     .replace('export function createPoolMedia', 'function createPoolMedia');
   const reviewedTexts = verifyPoolTexts(source);
+  const landHelper = fs.readFileSync(new URL('./tabata-land-context.mjs', import.meta.url),'utf8')
+    .replace('export function createTabataLandMedia', 'function createTabataLandMedia');
+  source = once(source, 'function gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0,landPath:lp,landName:ln})',
+    landHelper + '\nconst JarvisTabataLandMedia=createTabataLandMedia({normalize:Ge,providedAnimations:' + JSON.stringify(providedLandAnimations) + '});\nfunction gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0,landPath:lp,landName:ln})');
   source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl,reviewedTexts:${JSON.stringify(reviewedTexts)},providedAnimations:${JSON.stringify(providedAnimations)}});\nfunction JarvisStepGuide(i,o){return o==="pool"?JarvisPoolMedia.guide(i):bg(i,o)}\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
   // The pool block prescribed after the weights session is declared by its
   // block format, not by the step segment it kept from the HTML import.
@@ -243,14 +260,29 @@ with zipfile.ZipFile(sys.argv[1]) as z:
           sha(fs.readFileSync(path.join(directory,file))) !== digest) throw Error('Changed reviewed asset '+file);
     }
   }
-  for (const [file, digest] of Object.entries(JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url))).files)) {
+  const poolMap = JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url)));
+  for (const [file, digest] of Object.entries(poolMap.files)) {
     const source = path.join(root, 'evolution/media/candidate/pool-animations', path.basename(file));
     const target = path.join(directory, file.replace(/^\//, ''));
     fs.mkdirSync(path.dirname(target), {recursive:true});
     fs.copyFileSync(source, target);
     if (sha(fs.readFileSync(target)) !== digest) throw Error('Animation livree modifiee: ' + file);
-    const land = JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url))).replacedLandVisuals[file];
+    const land = poolMap.replacedLandVisuals[file];
     if (land) fs.rmSync(path.join(directory, land.replace(/^\//, '')), {force:true});
+  }
+  // Animations des mouvements du Tabata au sol : seulement AJOUTEES.
+  const landMap = JSON.parse(fs.readFileSync(new URL('./tabata-land-animations-map.json', import.meta.url)));
+  for (const [file, digest] of Object.entries(landMap.files)) {
+    const source = path.join(root, 'evolution/media/candidate/tabata-land-animations', path.basename(file).replace('tabata-land-',''));
+    if (!fs.existsSync(source)) throw Error('Animation de terre absente du depot: ' + source);
+    const target = path.join(directory, file.replace(/^\//, ''));
+    // Une animation ne doit JAMAIS remplacer un media livre par l'APK : elle
+    // peut seulement etre recopiee a l'identique (construction rejouee).
+    if (fs.existsSync(target) && sha(fs.readFileSync(target)) !== digest)
+      throw Error('Une animation de terre remplacerait un media livre: ' + file);
+    fs.mkdirSync(path.dirname(target), {recursive:true});
+    fs.copyFileSync(source, target);
+    if (sha(fs.readFileSync(target)) !== digest) throw Error('Animation de terre modifiee: ' + file);
   }
   const bundlePath = baseline.bundle.replace('assets/public/', '');
   fs.writeFileSync(path.join(directory,bundlePath),candidate);

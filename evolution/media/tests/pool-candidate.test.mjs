@@ -24,8 +24,8 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg','J5','Mx','G4','JarvisStepDuration','w5','xg','JarvisStaleWorkout','JarvisStaleNotice','JarvisCloseStaleWorkout','JarvisCloseStaleWorkouts'].includes(n.id?.name)&&
-  !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia','xg'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
+  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg','J5','Mx','G4','JarvisStepDuration','w5','xg','JarvisStaleWorkout','JarvisStaleNotice','JarvisCloseStaleWorkout','JarvisCloseStaleWorkouts','gi','s5','createTabataLandMedia'].includes(n.id?.name)&&
+  !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia','xg','JarvisTabataLandMedia'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
 test('420 pool protocol steps cannot resolve to cardio and inputs never change',()=>{
@@ -66,13 +66,23 @@ test('integrated bg removes pool→cardio fallthrough while preserving all non-p
   ctx.name=name;ctx.segment=segment;assert.equal(vm.runInContext('JSON.stringify(bg(name,segment))===JSON.stringify(oldBg(name,segment))',ctx),true);
  }
 });
-test('web candidate changes exactly one of 272 packaged files; delivered APK is untouched',()=>{
+test('web candidate changes only the script and the animations it adds; delivered APK is untouched',()=>{
  const {directory}=prepare();
  const entries=JSON.parse(execFileSync('python3',['-c',
   'import sys,zipfile,json,hashlib;z=zipfile.ZipFile(sys.argv[1]);print(json.dumps({n:hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if n.startswith("assets/public/") and not n.endswith("/")}))',root+baseline.apk]).toString());
  assert.equal(Object.keys(entries).length,272);
  const changed=Object.entries(entries).filter(([name,digest])=>sha(fs.readFileSync(directory+'/'+name.replace('assets/public/','')))!==digest).map(([name])=>name);
  assert.deepEqual(changed,[baseline.bundle]);
+ // Les animations du Tabata au sol sont AJOUTEES, jamais substituees : les 272
+ // fichiers livres par la 1.4.0 restent tous presents et inchanges, sauf le script.
+ const landMap=JSON.parse(fs.readFileSync(new URL('../candidate/tabata-land-animations-map.json',import.meta.url)));
+ const added=Object.keys(landMap.files).map(path=>path.replace('/media/','media/'));
+ for(const file of added){
+  const target=directory+'/'+file;
+  assert.ok(fs.existsSync(target),'animation absente du candidat : '+file);
+  assert.equal(sha(fs.readFileSync(target)),landMap.files['/media/'+file.replace('media/','')],'animation alteree : '+file);
+ }
+ assert.equal(added.length,Object.keys(landMap.files).length);
  assert.equal(sha(fs.readFileSync(root+baseline.apk)),baseline.apkSha256);
 });
 
@@ -308,5 +318,5 @@ test('Tabata au sol : aucun guide aquatique ne peut être résolu hors contexte 
  const modes=candidate.slice(candidate.indexOf('"TABATA_MODES"'),candidate.indexOf('"TABATA_MODES"')+1200);
  const baselineModes=original.slice(original.indexOf('"TABATA_MODES"'),original.indexOf('"TABATA_MODES"')+1200);
  assert.equal(modes,baselineModes,'les mouvements et libellés du Tabata sont inchangés');
- assert.match(candidate,/s\.jsx\(gi,\{movementName:poolMedia\?f\.name:void 0,pattern:f\.pattern\|\|"breathe",small:!0,controls:!1\}\)/);
+ assert.match(candidate,/s\.jsx\(gi,\{movementName:poolMedia\?f\.name:void 0,landPath:landMedia\?landMedia\.path:void 0,landName:landMedia\?landMedia\.name:void 0,pattern:f\.pattern\|\|"breathe",small:!0,controls:!1\}\)/);
 });

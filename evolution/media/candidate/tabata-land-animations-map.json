@@ -1,0 +1,37 @@
+{
+ "map": {
+  "Jumping jacks": "/media/tabata-land-jumping-jacks.gif",
+  "Squats": "/media/tabata-land-squats.gif",
+  "Pompes": "/media/tabata-land-pompes.gif",
+  "Mountain climbers": "/media/tabata-land-mountain-climbers.gif",
+  "Fentes alternées": "/media/tabata-land-fentes-alternees.gif",
+  "Gainage planche": "/media/tabata-land-gainage-planche.gif",
+  "Burpees simplifiés": "/media/tabata-land-burpees-simplifies.gif",
+  "Relevés de jambes": "/media/tabata-land-releves-de-jambes.gif",
+  "Crunch": "/media/tabata-land-crunch.gif",
+  "Russian twist": "/media/tabata-land-russian-twist.gif"
+ },
+ "files": {
+  "/media/tabata-land-jumping-jacks.gif": "0586539bf96cee260a5ab3fa53fe180a8b293a679180da9b265a87c0009f55f2",
+  "/media/tabata-land-squats.gif": "e673c655d15057c0cca148d43fcd54f438794a460ea63480f53f43c6439b20b3",
+  "/media/tabata-land-pompes.gif": "ee281d9bfdd957e78ad9623980270e927f1a1b4c6c214a0dc2f222f679f434f9",
+  "/media/tabata-land-mountain-climbers.gif": "7f0089fd6bc37b3ed9a08881e9d8a0161ef8a58925eeb92caa653741fe3aa7cc",
+  "/media/tabata-land-fentes-alternees.gif": "fd2994c5379edd2ac798cad9948a015c9e3dcc340a1fc78395e86829a32096a3",
+  "/media/tabata-land-gainage-planche.gif": "7fd8f6de2cecd33b34a8638d37a48b4ed145023639eb222cfeb9298714e64128",
+  "/media/tabata-land-burpees-simplifies.gif": "8d1847db753aa7a6688a09f9e688f8461071bf4698e1540b2e4d003eadb67904",
+  "/media/tabata-land-releves-de-jambes.gif": "1ed15eb2d74757a6e833f9c4d93c15d664433772577000068cf69faad3d5db19",
+  "/media/tabata-land-crunch.gif": "0770dab71ccac436a7a9b6c3b9dee18b518e53186ff9a228ca78202818871999",
+  "/media/tabata-land-russian-twist.gif": "7ad9697868d7443a25db4f48c193f1b0a254ff9a46c231adef1f62b33ae31374"
+ },
+ "context": "Tabata au sol uniquement ; jamais en piscine, ni en etirement, ni en echauffement, ni au repos",
+ "source": "planches de deux positions produites le 24 septembre 2026 (evolution/media/tools/panels-to-gif.py)",
+ "styleMesure": {
+  "famille": "copie exacte des GIF aquatiques existants",
+  "format": "480 x 262",
+  "images": 2,
+  "duree_ms": 500,
+  "fond": "blanc, sol gris clair",
+  "eau": "aucune",
+  "couleurs": "peau chaude, short bleu, muscles surlignes orange"
+ }
+}
