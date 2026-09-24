@@ -13,6 +13,8 @@ import pathlib
 import re
 import sys
 
+import collections
+
 from PIL import Image, ImageChops
 
 
@@ -41,8 +43,71 @@ def ink_box(image):
     return mask.point(lambda value: 255 if value > INK else 0).getbbox()
 
 
+def figure_box(image):
+    """Cadre de la FIGURE seulement.
+
+    Une decoupe de planche peut laisser un fragment du panneau voisin sur un
+    bord. On garde donc la colonne de dessin la plus fournie (les petits trous
+    d'un bras le long du corps sont tolerés) et on ignore les fragments isoles.
+    """
+    grey = image.convert('L')
+    mask = ImageChops.difference(grey, Image.new('L', grey.size, 255)).point(
+        lambda value: 255 if value > INK else 0)
+    width, height = mask.size
+    pixels = mask.load()
+    counts = [sum(1 for y in range(height) if pixels[x, y]) for x in range(width)]
+    runs, start, gap = [], None, 0
+    tolerance = max(4, width // 60)
+    for x, count in enumerate(counts + [0] * (tolerance + 1)):
+        if count:
+            start = x if start is None else start
+            gap = 0
+        elif start is not None:
+            gap += 1
+            if gap > tolerance:
+                runs.append((start, min(x - gap, width - 1)))
+                start, gap = None, 0
+    if not runs:
+        return None
+    best = max(runs, key=lambda run: sum(counts[run[0]:run[1] + 1]))
+    strip = mask.crop((best[0], 0, best[1] + 1, height)).getbbox()
+    if strip is None:
+        return None
+    return (best[0] + strip[0], strip[1], best[0] + strip[2], strip[3])
+
+
+def normalize_background(panel):
+    """Ramene un fond gris (ou creme) au blanc du reste de la famille.
+
+    Certaines planches sortent avec un rectangle de fond gris. On mesure la
+    couleur dominante du bord haut, et si elle n'est pas blanche on la remplace
+    par du blanc, puis on redessine le filet de sol clair au niveau des pieds.
+    Une planche deja blanche n'est pas touchee."""
+    image = panel.convert('RGB')
+    width, height = image.size
+    border = [image.getpixel((x, 2)) for x in range(0, width, 5)]
+    common = collections.Counter(border).most_common(1)[0][0]
+    if min(common) >= 250:
+        return image
+    if max(common) - min(common) > 18:
+        return image
+    pixels = image.load()
+    for y in range(height):
+        for x in range(width):
+            red, green, blue = pixels[x, y]
+            if abs(red - common[0]) <= 16 and abs(green - common[1]) <= 16 and abs(blue - common[2]) <= 16:
+                pixels[x, y] = (255, 255, 255)
+    box = ink_box(image)
+    if box:
+        floor = min(height - 2, box[3] + 3)
+        for x in range(int(width * 0.12), int(width * 0.88)):
+            for y in range(floor, min(height, floor + 2)):
+                pixels[x, y] = (205, 205, 205)
+    return image
+
+
 def build(panels):
-    boxes = [ink_box(panel) for panel in panels]
+    boxes = [figure_box(panel) for panel in panels]
     if any(box is None for box in boxes):
         raise SystemExit('aucune figure detectee sur la planche')
     scale = min(min(FILL / (box[3] - box[1]) for box in boxes),
@@ -78,7 +143,7 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     for source in sources:
         image = Image.open(source).convert('RGB')
-        panels = panel_split(image)
+        panels = [normalize_background(panel) for panel in panel_split(image)]
         frames = build(panels)
         name = source.stem.split('-', 1)[-1] if source.stem.startswith('tabata-') else source.stem
         target = args.out / (re.sub(r'^\d+[-_]', '', name) + '.gif')

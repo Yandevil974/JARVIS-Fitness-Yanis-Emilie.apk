@@ -9,7 +9,17 @@
   "Burpees simplifiés": "/media/tabata-land-burpees-simplifies.gif",
   "Relevés de jambes": "/media/tabata-land-releves-de-jambes.gif",
   "Crunch": "/media/tabata-land-crunch.gif",
-  "Russian twist": "/media/tabata-land-russian-twist.gif"
+  "Russian twist": "/media/tabata-land-russian-twist.gif",
+  "Dips au bord": "/media/tabata-land-dips-au-bord.gif",
+  "Pompes inclinées": "/media/tabata-land-pompes-inclinees.gif",
+  "Superman": "/media/tabata-land-superman.gif",
+  "Planche latérale G": "/media/tabata-land-planche-laterale-g.gif",
+  "Planche latérale D": "/media/tabata-land-planche-laterale-d.gif",
+  "Ponts fessiers": "/media/tabata-land-ponts-fessiers.gif",
+  "Squats sumo": "/media/tabata-land-squats-sumo.gif",
+  "Montées sur mollets": "/media/tabata-land-montees-sur-mollets.gif",
+  "Fentes arrière": "/media/tabata-land-fentes-arriere.gif",
+  "Chaise au mur": "/media/tabata-land-chaise-au-mur.gif"
  },
  "files": {
   "/media/tabata-land-jumping-jacks.gif": "0586539bf96cee260a5ab3fa53fe180a8b293a679180da9b265a87c0009f55f2",
@@ -21,7 +31,17 @@
   "/media/tabata-land-burpees-simplifies.gif": "8d1847db753aa7a6688a09f9e688f8461071bf4698e1540b2e4d003eadb67904",
   "/media/tabata-land-releves-de-jambes.gif": "1ed15eb2d74757a6e833f9c4d93c15d664433772577000068cf69faad3d5db19",
   "/media/tabata-land-crunch.gif": "0770dab71ccac436a7a9b6c3b9dee18b518e53186ff9a228ca78202818871999",
-  "/media/tabata-land-russian-twist.gif": "7ad9697868d7443a25db4f48c193f1b0a254ff9a46c231adef1f62b33ae31374"
+  "/media/tabata-land-russian-twist.gif": "7ad9697868d7443a25db4f48c193f1b0a254ff9a46c231adef1f62b33ae31374",
+  "/media/tabata-land-dips-au-bord.gif": "3f725c57362eae52270cf85dee3731806099bea0d6727ac857883e8af1d44616",
+  "/media/tabata-land-pompes-inclinees.gif": "58bacd5b7ff5095d84f254110535738c825bb9fd03609265b2824488ec6b4339",
+  "/media/tabata-land-superman.gif": "e088fdf66750d5ef43298aa49ada007a5937f6d412bbb81dd20b7d6e767fe0aa",
+  "/media/tabata-land-planche-laterale-g.gif": "af8cd24632e4478f51adff45a22f279e292455ef8b83df303e5abcdf8d142689",
+  "/media/tabata-land-planche-laterale-d.gif": "60adf560e901e6dbc7683404c4c897303389bb920ec4148ebad221a08eca561c",
+  "/media/tabata-land-ponts-fessiers.gif": "035858abee1c14fb42623dc811814de5bd8138f93a22be7e3ca638901c6b114e",
+  "/media/tabata-land-squats-sumo.gif": "3d87a536d09a9f749ce154dbb7e099b30b98048011986c6cb891f3e93f6c0fd2",
+  "/media/tabata-land-montees-sur-mollets.gif": "ad47deb39b7ceb8b4df96231e4419cb1cc218b1a6a2bb0ad00cd095b38444c85",
+  "/media/tabata-land-fentes-arriere.gif": "4e9fe12fdbb591aaff0259371bbd96f83f14d4b5be2c45db3a4f2adfeb7abf63",
+  "/media/tabata-land-chaise-au-mur.gif": "931a8fe62d95f9358926fcf151b9b65dabdbb351b225af749cc0e2a39c6e990a"
  },
  "context": "Tabata au sol uniquement ; jamais en piscine, ni en etirement, ni en echauffement, ni au repos",
  "source": "planches de deux positions produites le 24 septembre 2026 (evolution/media/tools/panels-to-gif.py)",
@@ -33,5 +53,40 @@
   "fond": "blanc, sol gris clair",
   "eau": "aucune",
   "couleurs": "peau chaude, short bleu, muscles surlignes orange"
+ },
+ "alias": {
+  "Planche": {
+   "path": "/media/tabata-land-gainage-planche.gif",
+   "memeMouvementQue": "Gainage planche",
+   "note": "meme mouvement sous un autre nom dans le generateur"
+  },
+  "Mountain climbers lents": {
+   "path": "/media/tabata-land-mountain-climbers.gif",
+   "memeMouvementQue": "Mountain climbers",
+   "note": "meme mouvement, rythme lent demande par la consigne"
+  },
+  "Squats doux": {
+   "path": "/media/tabata-land-squats.gif",
+   "memeMouvementQue": "Squats",
+   "note": "meme mouvement, variante douce du mode bas impact"
+  },
+  "Chaise douce": {
+   "path": "/media/tabata-land-chaise-au-mur.gif",
+   "memeMouvementQue": "Chaise au mur",
+   "note": "meme posture, variante douce du mode bas impact"
+  },
+  "Mollets": {
+   "path": "/media/tabata-land-montees-sur-mollets.gif",
+   "memeMouvementQue": "Montées sur mollets",
+   "note": "meme mouvement sous un nom court"
+  }
+ },
+ "couverture": {
+  "nomsDuGenerateurAuSol": 38,
+  "nomsCouverts": 25,
+  "dessins": 20,
+  "nomsEquivalents": 5,
+  "reste": 13,
+  "regle": "Un nom n'est couvert que par le dessin de son propre mouvement ; les noms equivalents pointent vers le dessin du meme mouvement, jamais vers un autre exercice."
  }
 }

@@ -13,6 +13,7 @@ import assert from 'node:assert/strict';
 const root = new URL('../../../', import.meta.url).pathname;
 const read = file => JSON.parse(fs.readFileSync(new URL(file, import.meta.url)));
 const map = read('../candidate/pool-animations-map.json');
+const landMap = read('../candidate/tabata-land-animations-map.json');
 
 // Inventaire lu dans l'APK : hachages des fichiers web et medias references.
 function inventory(apk) {
@@ -45,11 +46,13 @@ test('le defaut de la 1.4.7 est reproduit, puis corrige', () => {
   assert.deepEqual(manquants.slice().sort(), Object.keys(map.files).sort(),
     'la 1.4.7 devait referencer cinq animations sans les contenir');
   // Le correctif : chaque animation annoncee est presente, intacte et animee.
-  for (const [path, digest] of Object.entries(map.files)) {
+  // Les animations du Tabata au sol sont verifiees de la meme facon.
+  for (const [path, digest] of Object.entries({...map.files, ...landMap.files})) {
     const entry = 'assets/public' + path;
     assert.ok(released.media[entry], 'animation absente de l’APK livre : ' + entry);
     assert.equal(released.media[entry], digest, 'animation alteree : ' + path);
-    const bytes = fs.readFileSync(new URL('../candidate/pool-animations/' + path.split('/').pop(), import.meta.url));
+    const dossier = path.split('/').pop().startsWith('tabata-land-') ? 'tabata-land-animations/' : 'pool-animations/';
+    const bytes = fs.readFileSync(new URL('../candidate/' + dossier + path.split('/').pop().replace('tabata-land-', ''), import.meta.url));
     assert.ok(bytes.subarray(0, 6).toString('latin1').startsWith('GIF8'), 'ce n’est pas un GIF : ' + path);
   }
   // La correction ne touche que les medias ajoutes et le script : aucun DEX.

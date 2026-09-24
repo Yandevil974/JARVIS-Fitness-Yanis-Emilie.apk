@@ -20,7 +20,14 @@ const start = bundle.indexOf('function createTabataLandMedia(');
 const end = bundle.indexOf('const JarvisTabataLandMedia=', start);
 assert.ok(start > 0 && end > start, 'module de contexte terre absent du paquet livre');
 const factory = vm.runInNewContext(bundle.slice(start, end) + ';createTabataLandMedia', {});
-const media = factory({normalize: value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(), providedAnimations: map.map});
+// Les animations declarees SONT CELLES LIVREES : on les relit dans le paquet,
+// et non dans le dossier de travail, sinon le test peut passer a cote d'un
+// fichier absent de l'APK (defaut mesure sur la 1.4.7).
+const declaredAt = bundle.indexOf('providedAnimations:', bundle.indexOf('JarvisTabataLandMedia=')) + 'providedAnimations:'.length;
+const declaredEnd = bundle.indexOf('})', declaredAt);
+const declared = JSON.parse(bundle.slice(declaredAt, declaredEnd));
+assert.deepEqual(Object.keys(declared).sort(), [...Object.keys(map.map), ...Object.keys(map.alias || {})].sort(), 'animations declarees differentes du dossier');
+const media = factory({normalize: value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(), providedAnimations: declared});
 const resolverStart = bundle.indexOf('landMedia=poolMedia?null:JarvisTabataLandMedia.resolve(');
 const modes = bundle.slice(bundle.indexOf('"TABATA_MODES"'), bundle.indexOf('"TABATA_MODES"') + 1400);
 const names = [...new Set([...modes.matchAll(/exos":\[([^\]]+)\]/g)].flatMap(match => [...match[1].matchAll(/"([^"]+)"/g)].map(item => item[1])))];
@@ -52,13 +59,36 @@ test('aucun mouvement ne recoit un visuel generique par erreur, et rien n’est 
   // Les noms non produits ne resolvent rien : la photo generique reste le
   // comportement livre, groupe tabata-missing-demonstrations toujours ouvert.
   for (const name of names) {
-    if (map.map[name]) continue;
+    if (declared[name]) continue;
     const step = {name: name + ' · round 1/8', seconds: 20, pattern: 'work'};
     assert.equal(media.resolve(step, {type: 'hiit'}), null, 'visuel non prevu pour ' + name);
   }
   // Les quatre noms partages avec la piscine ne prennent jamais une animation
   // aquatique dans un enchainement au sol (correction de la 1.4.5 conservee).
   assert.ok(resolverStart > 0 && bundle.includes('poolMedia?f.name:void 0'), 'contexte aquatique conserve');
+  // Ce qui reste a produire est compte et nomme, jamais passe sous silence.
+  const restants = names.filter(name => !declared[name]);
+  assert.equal(restants.length, 38 - Object.keys(declared).length);
+  assert.equal(map.couverture.reste, restants.length, 'la couverture annoncee doit etre mesurable');
+  for (const name of ['Battements de jambes', 'Marche sur place', 'Burpees', 'Dead bug', 'Oiseau-chien'])
+    assert.ok(restants.includes(name), 'mouvement attendu dans le reste a produire : ' + name);
+});
+
+test('les noms equivalents pointent vers le dessin du meme mouvement', () => {
+  const equivalents = map.alias || {};
+  assert.ok(Object.keys(equivalents).length > 0, 'aucun nom equivalent declare');
+  for (const [name, entry] of Object.entries(equivalents)) {
+    assert.ok(names.includes(name), 'nom inconnu du generateur au sol : ' + name);
+    assert.ok(names.includes(entry.memeMouvementQue), 'mouvement source inconnu : ' + entry.memeMouvementQue);
+    assert.equal(map.map[entry.memeMouvementQue], entry.path, 'le nom equivalent ne pointe pas le dessin de son mouvement');
+    assert.ok(entry.note && entry.note.length > 20, 'justification manquante pour ' + name);
+    const land = media.resolve({name: name + ' · round 2/8', seconds: 20, pattern: 'work'}, {type: 'hiit'});
+    assert.ok(land && land.path === entry.path, 'nom equivalent non resolu au sol : ' + name);
+    assert.equal(media.resolve({name}, {type: 'aqua'}), null, 'nom equivalent resolu hors contexte : ' + name);
+  }
+  // La couverture annoncee doit correspondre au contenu reel.
+  assert.equal(map.couverture.nomsCouverts, Object.keys(map.map).length + Object.keys(equivalents).length);
+  assert.equal(map.couverture.reste, 38 - map.couverture.nomsCouverts);
 });
 
 test('les fichiers livres sont de vraies animations, au format de la famille', () => {

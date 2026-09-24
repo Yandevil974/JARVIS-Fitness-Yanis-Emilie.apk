@@ -20,7 +20,13 @@ export const providedAnimations = fs.existsSync(new URL('./pool-animations-map.j
 // jamais un visuel generique a la place d'un mouvement, et jamais un guide d'un
 // autre contexte dans un enchainement au sol.
 export const providedLandAnimations = fs.existsSync(new URL('./tabata-land-animations-map.json', import.meta.url))
-  ? JSON.parse(fs.readFileSync(new URL('./tabata-land-animations-map.json', import.meta.url))).map : {};
+  ? (() => {
+      const file = JSON.parse(fs.readFileSync(new URL('./tabata-land-animations-map.json', import.meta.url)));
+      // Les noms equivalents (meme mouvement, autre nom dans le generateur)
+      // pointent vers le dessin de CE mouvement, jamais vers un autre exercice.
+      const alias = Object.fromEntries(Object.entries(file.alias || {}).map(([name, entry]) => [name, entry.path]));
+      return {...file.map, ...alias};
+    })() : {};
 
 export function readBaseline() {
   const apk = path.join(root, baseline.apk);
