@@ -75,6 +75,10 @@ export function newProfile(id) {
       voice: false,
       notifications: false,
       reducedMotion: false,
+      // Direction artistique des démonstrations : rendu 3D aligné sur la
+      // nouvelle référence, avec visage créé et activation musculaire verte.
+      visualStyle: "photo-face-v1",
+      visualFormat: "gif",
     },
     plan: null,
     archivedPlans: [],

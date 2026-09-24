@@ -103,6 +103,7 @@ export default function Movement({
         ) : motion ? (
           <HumanAnim
             spec={motion}
+            gender={p?.id === "emilie" ? "female" : "male"}
             paused={paused}
             reduced={reduced}
             small={small}

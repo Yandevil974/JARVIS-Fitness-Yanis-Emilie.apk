@@ -1,4 +1,5 @@
 import Team from "./pages/Team.jsx";
+import Visuals from "./pages/Visuals.jsx";
 import React, { useState, useEffect, useRef } from "react";
 import { useApp } from "./store/AppContext.jsx";
 import { Icon, IconButton, Badge, Button, Orb } from "./components/ui.jsx";
@@ -36,6 +37,7 @@ const NAV = [
   ["jarvis", "Sparkles", "JARVIS"],
   ["force", "Gauge", "Bilan 1RM"],
   ["training", "Dumbbell", "Entraînement"],
+  ["visuals", "Images", "Visuels"],
   ["program", "CalendarDays", "Programme"],
   ["progress", "ChartNoAxesCombined", "Progression"],
   ["cardio", "Waves", "Cardio & piscine"],
@@ -47,6 +49,7 @@ const PAGE = {
   jarvis: Jarvis,
   force: Force,
   training: Training,
+  visuals: Visuals,
   program: Program,
   progress: Progress,
   cardio: Cardio,

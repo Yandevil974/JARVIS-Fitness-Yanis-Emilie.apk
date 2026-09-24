@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JARVIS · Aperçu visuel</title>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,sans-serif;background:#101419;color:#f3f6f5}*{box-sizing:border-box}body{max-width:1120px;margin:0 auto;padding:32px 20px 56px;background:radial-gradient(circle at 5% 0,#b9ff3918,transparent 35%),#101419}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:30px}h1{margin:8px 0;font-size:clamp(28px,5vw,52px);letter-spacing:-.04em}h2{font-size:18px;margin:0 0 14px}p{color:#aeb8b7;line-height:1.6}.eyebrow{color:#b9ff39;font-size:10px;letter-spacing:.14em;font-weight:700}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0 0 32px}.card{border:1px solid #344047;border-radius:18px;overflow:hidden;background:#171d22}.card img,.card video{display:block;width:100%;height:560px;object-fit:contain;background:#11161a}.card figcaption{padding:15px 17px 18px}.card strong{display:block;margin-bottom:4px}.card span{font-size:12px;color:#aeb8b7}.badge{display:inline-block;border:1px solid #b9ff3966;color:#b9ff39;border-radius:999px;padding:6px 9px;font-size:10px;letter-spacing:.12em}.media{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.media .card img,.media .card video{height:540px}.links{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 32px}.links a{color:#101419;background:#b9ff39;border-radius:10px;padding:11px 14px;text-decoration:none;font-size:12px;font-weight:700}.links a.secondary{color:#b9ff39;background:transparent;border:1px solid #b9ff3980}.note{border-left:3px solid #b9ff39;padding:1px 0 1px 14px;margin-top:10px}@media(max-width:700px){.grid,.media{grid-template-columns:1fr}.card img,.card video,.media .card img,.media .card video{height:100vw;max-height:560px}}
+  </style>
+</head>
+<body>
+  <header><div><div class="eyebrow">DIRECTION ARTISTIQUE · APERÇU V1</div><h1>Le même corps.<br>Un visage créé.</h1><p>Référence : rendu anatomique 3D monochrome, muscles actifs en vert et fond studio sombre. Comparez l'homme, la femme et un exercice avant la série complète.</p></div><span class="badge">PHOTO-FACE-V1</span></header>
+  <h2>Personnages</h2>
+  <div class="grid">
+    <figure class="card"><img src="/visuals/jarvis-man-avatar.png" alt="Homme créé dans le style de la référence"><figcaption><strong>Homme · visage créé</strong><span>Activation musculaire verte · même éclairage</span></figcaption></figure>
+    <figure class="card"><img src="/visuals/jarvis-woman-avatar.png" alt="Femme créée dans le style de la référence"><figcaption><strong>Femme · visage créé</strong><span>Mêmes proportions visuelles · même fond</span></figcaption></figure>
+  </div>
+  <h2>Exercice : curl haltères assis</h2>
+  <div class="media">
+    <figure class="card"><img src="/visuals/jarvis-curl-example.gif" alt="GIF animé du curl haltères assis"><figcaption><strong>GIF · lecture en boucle</strong><span>Format léger pour les cartes d'exercices</span></figcaption></figure>
+    <figure class="card"><video src="/visuals/jarvis-curl-example.mp4" controls loop muted playsinline preload="metadata"></video><figcaption><strong>Vidéo MP4 · contrôlable</strong><span>Format net pour la fiche détaillée</span></figcaption></figure>
+  </div>
+  <div class="links"><a href="/visuals/jarvis-curl-example.gif" download>Télécharger le GIF</a><a href="/visuals/jarvis-curl-example.mp4" download>Télécharger la vidéo</a></div>
+  <div class="note"><p>Les deux formats montrent le même mouvement et les mêmes muscles actifs. Le choix fait dans l'application sera utilisé comme préférence pour la prochaine génération de la bibliothèque : musculation, tabata, aqua tabata, piscine, metcon piscine, elliptique, échauffement et étirements.</p></div>
+</body>
+</html>

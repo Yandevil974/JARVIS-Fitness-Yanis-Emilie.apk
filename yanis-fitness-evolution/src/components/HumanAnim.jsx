@@ -33,12 +33,31 @@ function Poly({ pts, w, o = 1 }) {
     />
   );
 }
+// The source reference intentionally has no face. The app keeps that
+// anatomical language but adds a neutral, created face so the male and female
+// characters remain identifiable in every generated movement.
+function Face({ x, y, r = 10, gender = "male" }) {
+  const female = gender === "female";
+  return (
+    <g className="human-face" transform={`translate(${x} ${y})`}>
+      {female && <path d={`M ${-r * 1.1} ${r * 0.3} Q ${-r * 1.7} ${-r * 1.5} 0 ${-r * 1.45} Q ${r * 1.7} ${-r * 1.5} ${r * 1.1} ${r * 0.3}`} fill="#596368" opacity=".95" />}
+      <ellipse rx={r * 1.02} ry={r * 1.12} fill="#e7ebea" stroke="#536067" strokeWidth="1.4" />
+      {!female && <path d={`M ${-r * 1.02} ${-r * 0.35} Q 0 ${-r * 1.5} ${r * 1.04} ${-r * 0.38} L ${r * 0.85} ${-r * 0.75} Q 0 ${-r * 1.7} ${-r * 0.86} ${-r * 0.72} Z`} fill="#596368" />}
+      <circle cx={-r * 0.34} cy={-r * 0.08} r={Math.max(1.15, r * 0.1)} fill="#273239" />
+      <circle cx={r * 0.34} cy={-r * 0.08} r={Math.max(1.15, r * 0.1)} fill="#273239" />
+      <path d={`M ${-r * 0.27} ${r * 0.48} Q 0 ${r * 0.68} ${r * 0.27} ${r * 0.48}`} fill="none" stroke="#69757a" strokeWidth="1.2" strokeLinecap="round" />
+    </g>
+  );
+}
 function buildFigure(spec, t) {
   const p = interpolatePose(spec, t);
   const rig = spec.rig || "stand";
   const lying = rig === "floor-back" || rig === "bench" || rig === "figure4";
   const prone = rig === "prone-machine";
   const L = { torso: 60, neck: 15, upper: 28, fore: 26, thigh: 50, shin: 48, head: 10 };
+  const armActive = ["pec", "dos", "epA", "epL", "epP", "bic", "tri", "avb"].includes(p.active);
+  const legActive = ["fes", "moy", "qua", "isc", "add", "mol"].includes(p.active);
+  const coreActive = ["abs", "tra", "lom"].includes(p.active);
   let px = 210,
     py = 176 + (p.pelvisY || 0),
     floor = 286;
@@ -60,7 +79,7 @@ function buildFigure(spec, t) {
       <g color={ink} transform="translate(0 0)">
         <Poly pts={[body, [px + 18, py + 10], [px + 58, py + 14]]} w={13} o={0.55} />
         <Poly pts={[body, [px + 18, py + 10], [px + 58, py + 14]]} w={13} o={0.45} />
-        <circle cx={chestP[0] + 12} cy={chestP[1] - 8} r={L.head} fill={ink} />
+        <Face x={chestP[0] + 12} y={chestP[1] - 8} r={L.head} gender={spec.gender} />
         <Poly pts={[chestP, handA]} w={7} />
       </g>
     );
@@ -77,7 +96,7 @@ function buildFigure(spec, t) {
     figure = (
       <g color={ink}>
         <line x1={hip[0]} y1={hip[1]} x2={chestP[0]} y2={chestP[1]} stroke={ink} strokeWidth={15} strokeLinecap="round" />
-        <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
+        <Face x={head[0]} y={head[1]} r={L.head} gender={spec.gender} />
         <Poly pts={[hip, knee, ankle]} w={9} />
         {!prone && <Poly pts={[sh, elbow, hand]} w={7} />}
         {rig === "bench" && <Bar hand={hand} />}
@@ -94,7 +113,7 @@ function buildFigure(spec, t) {
         <line x1={elbow[0] - 12} y1={elbow[1]} x2={hip[0]} y2={hip[1]} stroke={ink} strokeWidth={14} strokeLinecap="round" />
         <Poly pts={[elbow, [elbow[0] - 14, elbow[1] - 24]]} w={7} />
         <Poly pts={[hip, feet]} w={9} />
-        <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
+        <Face x={head[0]} y={head[1]} r={L.head} gender={spec.gender} />
       </g>
     );
   } else if (rig === "kneel-rollout" || rig === "quadruped") {
@@ -106,7 +125,7 @@ function buildFigure(spec, t) {
     figure = (
       <g color={ink}>
         <line x1={chestP[0]} y1={chestP[1]} x2={hip[0]} y2={hip[1]} stroke={ink} strokeWidth={14} strokeLinecap="round" />
-        <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
+        <Face x={head[0]} y={head[1]} r={L.head} gender={spec.gender} />
         <Poly pts={[hip, knee, [px + 22, floor - 2]]} w={9} />
         <Poly pts={[chestP, hand]} w={7} />
         {rig === "kneel-rollout" && <circle cx={hand[0] - 6} cy={floor - 10} r="10" fill="none" stroke={ink} strokeWidth="5" />}
@@ -120,7 +139,7 @@ function buildFigure(spec, t) {
     figure = (
       <g color={ink}>
         <Poly pts={[chestP, hip, [hip[0] + 8, floor - 2]]} w={14} />
-        <circle cx={chestP[0] - 12} cy={chestP[1] - 6} r={L.head} fill={ink} />
+        <Face x={chestP[0] - 12} y={chestP[1] - 6} r={L.head} gender={spec.gender} />
         <Poly pts={[chestP, hand]} w={7} />
       </g>
     );
@@ -168,7 +187,10 @@ function buildFigure(spec, t) {
         <line x1={hip[0]} y1={hip[1]} x2={chestP[0]} y2={chestP[1]} stroke={ink} strokeWidth={14.5 * (p.chest || 1)} strokeLinecap="round" />
         <Poly pts={armBack} w={6} o={0.35} />
         <Poly pts={[sh, elbow, hand]} w={7} />
-        <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
+        {(armActive || coreActive) && <g color="#b7f339" opacity=".78"><Poly pts={[sh, elbow, hand]} w={11} o={armActive ? .3 : .12} /></g>}
+        {(legActive || coreActive) && <g color="#b7f339" opacity=".78"><Poly pts={[hip, knee, ankle]} w={13} o={legActive ? .27 : .1} /></g>}
+        {coreActive && <line x1={hip[0]} y1={hip[1] - 2} x2={chestP[0]} y2={chestP[1] + 6} stroke="#b7f339" strokeWidth="9" opacity=".2" strokeLinecap="round" />}
+        <Face x={head[0]} y={head[1]} r={L.head} gender={spec.gender} />
         {rig === "hang" && <line x1={hand[0] - 22} y1={60} x2={hand[0] + 34} y2="60" stroke={ink} strokeWidth="7" strokeLinecap="round" />}
         <Props p={p} sh={sh} elbow={elbow} hand={hand} chest={chestP} hip={hip} knee={knee} ankle={ankle} floor={floor} />
       </g>
@@ -221,8 +243,9 @@ function Props({ p, sh, elbow, hand, chest, hip, ankle, floor }) {
   if (p.grab) out.push(<line key="gr" x1={hand[0]} y1={hand[1]} x2={ankle[0]} y2={ankle[1] - 14} stroke="#46617f" strokeWidth="4" strokeLinecap="round" />);
   return out;
 }
-function HumanAnim({ spec, paused = false, reduced = false, small = false, className = "" }) {
+function HumanAnim({ spec, gender = "male", paused = false, reduced = false, small = false, className = "" }) {
   const startRef = useRef(0);
+  const renderSpec = useMemo(() => ({ ...spec, gender: spec.gender || gender }), [spec, gender]);
   const [t, setT] = useState(reduced || paused ? 0.6 : 0);
   useEffect(() => {
     if (paused || reduced || !spec) return;
@@ -242,7 +265,7 @@ function HumanAnim({ spec, paused = false, reduced = false, small = false, class
       cancelAnimationFrame(raf);
     };
   }, [paused, reduced, spec]);
-  const model = useMemo(() => (spec ? buildFigure(spec, t) : null), [spec, t]);
+  const model = useMemo(() => (renderSpec ? buildFigure(renderSpec, t) : null), [renderSpec, t]);
   if (!model) return null;
   return (
     <svg

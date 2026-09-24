@@ -28,6 +28,11 @@ modifiée, ni remplacée.
 - **Zoom images** : toutes les animations et photos ouvrent une visionneuse ;
   chaque animation reste explicitement associée à son exercice (aucune
   substitution inter-domaine, jamais).
+- **Direction visuelle V1** : page « Visuels » avec exemples homme/femme au
+  visage créé, comparaison GIF/MP4 pour un curl haltères, choix mémorisé dans
+  `preferences.visualStyle` / `preferences.visualFormat`, et export ZIP
+  téléchargeable (`public/visuals/jarvis-visual-preview.zip`). Les animations
+  humaines créées affichent désormais un visage cohérent avec le personnage.
 - **Entraînements, programme HTML conservé, Progression, Cardio & piscine,
   Récupération, Nutrition, Mon équipe** avec lecture chiffrée des photos de
   progression.

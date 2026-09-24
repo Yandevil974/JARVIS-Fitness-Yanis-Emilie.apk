@@ -169,16 +169,21 @@ const EXERCISE_MOTIONS = {
 };
 export function motionFor(exercise) {
   if (!exercise) return null;
+  const withTarget = (motion, source) => ({
+    ...motion,
+    active: exercise.muscle,
+    source,
+  });
   const id = exercise.id;
-  if (EXERCISE_MOTIONS[id]) return { ...EXERCISE_MOTIONS[id], source: "creée-exercice" };
+  if (EXERCISE_MOTIONS[id]) return withTarget(EXERCISE_MOTIONS[id], "creée-exercice");
   const pattern = exercise.pattern;
   if (pattern === "stretch") {
     const t = STRETCH_TARGETS[exercise.muscle] || POSES.stretch;
-    return { ...POSES.stretch, ...t, cycle: t.cycle || 6000, pulse: true, source: "creée-étirement" };
+    return withTarget({ ...POSES.stretch, ...t, cycle: t.cycle || 6000, pulse: true }, "creée-étirement");
   }
-  if (POSES[pattern]) return { ...POSES[pattern], source: "creée-pattern" };
-  if (["breathe", "respiration"].includes(pattern)) return { ...POSES.breathe, source: "creée-respiration" };
-  if (["swim", "walk"].includes(exercise.pattern)) return { ...POSES[exercise.pattern], source: "creée-pattern" };
-  return { ...POSES.mobility, source: "creée-pattern" };
+  if (POSES[pattern]) return withTarget(POSES[pattern], "creée-pattern");
+  if (["breathe", "respiration"].includes(pattern)) return withTarget(POSES.breathe, "creée-respiration");
+  if (["swim", "walk"].includes(exercise.pattern)) return withTarget(POSES[exercise.pattern], "creée-pattern");
+  return withTarget(POSES.mobility, "creée-pattern");
 }
 export const motionNames = Object.keys(POSES);
