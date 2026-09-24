@@ -1,0 +1,32 @@
+{
+ "map": {
+  "Gainage au bord (vertical)": "/media/gainage-vertical.gif",
+  "Mobilité épaules aquatique": "/media/mobilite-epaules.gif",
+  "Mobilité hanches / chevilles": "/media/mobilite-hanches-chevilles.gif",
+  "Ciseaux au bord": "/media/ciseaux-au-bord.gif",
+  "Talons-fesses": "/media/talons-fesses.gif"
+ },
+ "replacedLandVisuals": {
+  "/media/pool-gainage-vertical.gif": "/media/f1dde35bd517f24b.gif",
+  "/media/pool-mobilite-epaules.gif": "/media/b2b32833d73d3ca4.gif",
+  "/media/pool-mobilite-hanches-chevilles.gif": "/media/faa82528766b9402.gif",
+  "/media/pool-ciseaux-au-bord.gif": "/media/48fe4a8cbb0d125c.gif",
+  "/media/pool-talons-fesses.gif": "/media/7517a916496ec766.gif"
+ },
+ "files": {
+  "/media/ciseaux-au-bord.gif": "b61c99b6019229aa8d1216252b06d2d46cb72d89073464f3b27fb62aec4473e5",
+  "/media/gainage-vertical.gif": "c1ca2fa95d562f0244361e19cf4f6bbd5a95eddaf49262669feb80c786622b4f",
+  "/media/mobilite-epaules.gif": "b4e5111fe897d3eb126dc464e4d06fb9b03503203d2bd4cfb317eab4c3dc02af",
+  "/media/mobilite-hanches-chevilles.gif": "5cb95935f4387cd592d3dfdd5404b87a9f92d28f766de752ab3f3e275a0bb989",
+  "/media/talons-fesses.gif": "2f299cdf96963e0d9a5fd9ad59997a02b735ee1cdd47543c4c68efafc1edeadd"
+ },
+ "styleMesure": {
+  "famille": "copie exacte des GIF aquatiques existants",
+  "format": "480 x 262",
+  "images": 2,
+  "duree_ms": 500,
+  "fond": "blanc",
+  "eau": "bande bleue avec ondulations",
+  "couleurs": "peau chaude #f0c8a8, short bleu, muscles surlignés orange (comme l’existant)"
+ }
+}

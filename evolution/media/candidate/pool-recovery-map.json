@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-24",
+  "map": {
+    "Repos": "/media/pool-repos.gif",
+    "Récupération": "/media/pool-repos.gif",
+    "Récupération active": "/media/pool-repos.gif",
+    "Récup active": "/media/pool-repos.gif",
+    "Récup": "/media/pool-repos.gif"
+  },
+  "suffixes": {
+    "— en place": "/media/pool-en-place.gif"
+  },
+  "files": {
+    "/media/pool-repos.gif": "499b62c636234893be309432c6a7194dbf9014665eb1e87e876eac9c14d9344f",
+    "/media/pool-en-place.gif": "15fd699293a4c51a8b4383b976a33fbc65c99863c91a0334145321800b203013"
+  },
+  "pourquoi": "Mesure du 24 septembre 2026 sur les 420 etapes des six protocoles piscine : 117 etapes « Repos » et 18 etapes « … — en place » ne resolvaient AUCUN media aquatique. Hors contexte aquatique, une etape « Repos » ordinaire ne doit rien changer : la correspondance ne s'applique que lorsqu'un contexte piscine est deja etabli (segment pool ou seance aqua/swim).",
+  "famille": "480 x 262, 2 images, 500 ms, fond blanc, bande d'eau bleue, bassin au bon niveau, muscles surlignes orange : la famille des GIF aquatiques deja livres",
+  "regle": "Jamais de velo, d'elliptique ni de photo generique dans un contexte piscine. Les etapes qui decrivent un deplacement (« Recup — marche », « Recup courte — marche », « Recup active — marche aquatique ») gardent leur image livree de marche aquatique ; les autres recuperations nommees gardent leur image livree existante. Aucun nom, aucune duree, aucune consigne n'est modifie."
+}

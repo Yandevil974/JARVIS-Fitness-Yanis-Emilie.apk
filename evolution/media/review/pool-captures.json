@@ -1,0 +1,18 @@
+{
+ "candidate": "http://127.0.0.1:5186",
+ "reference": "http://127.0.0.1:5187",
+ "files": [
+  "evolution/media/review/pool-candidate-marche-aquatique.png",
+  "evolution/media/review/pool-candidate-marche-aquatique-timer.png",
+  "evolution/media/review/pool-candidate-nage-douce.png",
+  "evolution/media/review/pool-candidate-nage-douce-timer.png",
+  "evolution/media/review/pool-candidate-fractionne-nager.png",
+  "evolution/media/review/pool-candidate-fractionne-nager-timer.png",
+  "evolution/media/review/pool-reference-1.4.0-marche-aquatique.png",
+  "evolution/media/review/pool-reference-1.4.0-marche-aquatique-timer.png",
+  "evolution/media/review/pool-reference-1.4.0-nage-douce.png",
+  "evolution/media/review/pool-reference-1.4.0-nage-douce-timer.png",
+  "evolution/media/review/pool-reference-1.4.0-fractionne-nager.png",
+  "evolution/media/review/pool-reference-1.4.0-fractionne-nager-timer.png"
+ ]
+}

@@ -1,0 +1,1674 @@
+{
+ "/media/03098b19c4672ce5.gif": {
+  "owner": "Abduction hanche debout à la poulie",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 226,
+  "ink": [
+   64,
+   14,
+   226,
+   284
+  ],
+  "marges": [
+   64,
+   14,
+   73,
+   15
+  ]
+ },
+ "/media/055d358895efaa10.gif": {
+  "owner": "Soulevé de terre roumain haltères",
+  "size": [
+   246,
+   440
+  ],
+  "frames": 2,
+  "bg": "#f4f3ef",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   244,
+   438
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/0766d3a06bf79dc8.gif": {
+  "owner": "Pont fessier au sol — activation",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 233,
+  "ink": [
+   14,
+   78,
+   286,
+   236
+  ],
+  "marges": [
+   14,
+   78,
+   13,
+   63
+  ]
+ },
+ "/media/0860394a5a99f74b.gif": {
+  "owner": "Tirage horizontal à la poulie",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 253,
+  "ink": [
+   12,
+   6,
+   286,
+   292
+  ],
+  "marges": [
+   12,
+   6,
+   13,
+   7
+  ]
+ },
+ "/media/0a5625b92247ed69.gif": {
+  "owner": "Rowing assis, prise neutre",
+  "size": [
+   246,
+   440
+  ],
+  "frames": 2,
+  "bg": "#cbc3b6",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   244,
+   368
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   71
+  ]
+ },
+ "/media/10ab787fbf26b1f4.gif": {
+  "owner": "Mollets unilatéraux",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#dae5eb",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/1317e405efd6ef2b.gif": {
+  "owner": "Gainage planche",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 249,
+  "ink": [
+   8,
+   176,
+   286,
+   252
+  ],
+  "marges": [
+   8,
+   176,
+   13,
+   47
+  ]
+ },
+ "/media/1519aacc58d53c5c.gif": {
+  "owner": "Hip thrust barre",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 241,
+  "ink": [
+   18,
+   96,
+   286,
+   250
+  ],
+  "marges": [
+   18,
+   96,
+   13,
+   49
+  ]
+ },
+ "/media/16f6ff0f7ceba611.gif": {
+  "owner": "Relevés de jambes incliné",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#f1f1e7",
+  "colors": 128,
+  "ink": [
+   112,
+   4,
+   336,
+   236
+  ],
+  "marges": [
+   112,
+   4,
+   103,
+   3
+  ]
+ },
+ "/media/1c28908ab83cde2e.gif": {
+  "owner": "Squat cycliste (squat complet)",
+  "size": [
+   246,
+   440
+  ],
+  "frames": 2,
+  "bg": "#7f786e",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   244,
+   438
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/1c63a36d168d8b74.gif": {
+  "owner": "Soulevé de terre roumain unilatéral haltère",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 243,
+  "ink": [
+   84,
+   88,
+   216,
+   286
+  ],
+  "marges": [
+   84,
+   88,
+   83,
+   13
+  ]
+ },
+ "/media/1f27c3cbcf803765.gif": {
+  "owner": "Presse à cuisses pieds hauts",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 24,
+  "bg": "#ffffff",
+  "colors": 244,
+  "ink": [
+   44,
+   42,
+   288,
+   256
+  ],
+  "marges": [
+   44,
+   42,
+   11,
+   43
+  ]
+ },
+ "/media/22146cff6a787e8a.gif": {
+  "owner": "Développé militaire debout",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#f0f5f9",
+  "colors": 127,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/22ce97e4b3cb18cf.gif": {
+  "owner": "Développé incliné haltères",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 241,
+  "ink": [
+   64,
+   18,
+   210,
+   282
+  ],
+  "marges": [
+   64,
+   18,
+   89,
+   17
+  ]
+ },
+ "/media/2c51d8ca1b6fb79a.gif": {
+  "owner": "Back squat (charge modérée)",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 253,
+  "ink": [
+   34,
+   12,
+   254,
+   288
+  ],
+  "marges": [
+   34,
+   12,
+   45,
+   11
+  ]
+ },
+ "/media/30adf4e98e55b6cd.gif": {
+  "owner": "Développé couché barre plat",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#d8e1e8",
+  "colors": 128,
+  "ink": [
+   0,
+   12,
+   430,
+   226
+  ],
+  "marges": [
+   0,
+   12,
+   9,
+   13
+  ]
+ },
+ "/media/3438ce158299c474.jpg": {
+  "owner": "Développé haltères assis",
+  "size": [
+   440,
+   480
+  ],
+  "frames": 1,
+  "bg": "#e3dcd2",
+  "colors": 12890,
+  "ink": [
+   0,
+   0,
+   438,
+   462
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   17
+  ]
+ },
+ "/media/36c6cb37445d3880.gif": {
+  "owner": "Curl haltères",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 239,
+  "ink": [
+   106,
+   22,
+   212,
+   284
+  ],
+  "marges": [
+   106,
+   22,
+   87,
+   15
+  ]
+ },
+ "/media/3bcaad5ec7cdf892.gif": {
+  "owner": "Pallof press à l'élastique",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 245,
+  "ink": [
+   102,
+   56,
+   200,
+   290
+  ],
+  "marges": [
+   102,
+   56,
+   99,
+   9
+  ]
+ },
+ "/media/3e2ed581e11781d5.gif": {
+  "owner": "Mollets debout unilatéraux",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 221,
+  "ink": [
+   44,
+   34,
+   248,
+   292
+  ],
+  "marges": [
+   44,
+   34,
+   51,
+   7
+  ]
+ },
+ "/media/43bad87368c12614.gif": {
+  "owner": "Pompes inclinées (mains surélevées)",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 237,
+  "ink": [
+   18,
+   124,
+   278,
+   260
+  ],
+  "marges": [
+   18,
+   124,
+   21,
+   39
+  ]
+ },
+ "/media/44fc577dce29aff5.gif": {
+  "owner": "Rowing haltère un bras, coude ouvert",
+  "size": [
+   246,
+   440
+  ],
+  "frames": 2,
+  "bg": "#f3f3f3",
+  "colors": 128,
+  "ink": [
+   0,
+   22,
+   244,
+   438
+  ],
+  "marges": [
+   0,
+   22,
+   1,
+   1
+  ]
+ },
+ "/media/45a34272da9569a6.gif": {
+  "owner": "Développé haltères incliné 30°",
+  "size": [
+   329,
+   440
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 128,
+  "ink": [
+   6,
+   8,
+   322,
+   432
+  ],
+  "marges": [
+   6,
+   8,
+   6,
+   7
+  ]
+ },
+ "/media/489169360e044c48.gif": {
+  "owner": "Kickback à la poulie",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 246,
+  "ink": [
+   64,
+   14,
+   272,
+   290
+  ],
+  "marges": [
+   64,
+   14,
+   27,
+   9
+  ]
+ },
+ "/media/497ab2e22c01080c.gif": {
+  "owner": "Extension triceps à la poulie",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 183,
+  "ink": [
+   72,
+   8,
+   228,
+   292
+  ],
+  "marges": [
+   72,
+   8,
+   71,
+   7
+  ]
+ },
+ "/media/4af33157ce25267c.gif": {
+  "owner": "Tirage vertical prise neutre",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 248,
+  "ink": [
+   70,
+   10,
+   230,
+   292
+  ],
+  "marges": [
+   70,
+   10,
+   69,
+   7
+  ]
+ },
+ "/media/4c2b19fa924f90a8.gif": {
+  "owner": "Triceps extensions haltères, banc plat",
+  "size": [
+   403,
+   440
+  ],
+  "frames": 2,
+  "bg": "#fefefe",
+  "colors": 128,
+  "ink": [
+   0,
+   6,
+   402,
+   438
+  ],
+  "marges": [
+   0,
+   6,
+   0,
+   1
+  ]
+ },
+ "/media/4dfda05b1db24000.gif": {
+  "owner": "Rowing haltère un bras",
+  "size": [
+   246,
+   440
+  ],
+  "frames": 2,
+  "bg": "#f1f1f1",
+  "colors": 128,
+  "ink": [
+   0,
+   22,
+   244,
+   438
+  ],
+  "marges": [
+   0,
+   22,
+   1,
+   1
+  ]
+ },
+ "/media/4eff701bcdf9a359.gif": {
+  "owner": "Leg curl allongé",
+  "size": [
+   480,
+   268
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 256,
+  "ink": [
+   66,
+   16,
+   412,
+   254
+  ],
+  "marges": [
+   66,
+   16,
+   67,
+   13
+  ]
+ },
+ "/media/530326beb7c7a652.gif": {
+  "owner": "Back squat",
+  "size": [
+   268,
+   480
+  ],
+  "frames": 2,
+  "bg": "#edf5f7",
+  "colors": 256,
+  "ink": [
+   0,
+   0,
+   266,
+   478
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/5d6a89132df205f8.gif": {
+  "owner": "Extensions triceps barre EZ",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#dae7ef",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/5dd80c9e1b36df25.gif": {
+  "owner": "Hack squat",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#f1f5f8",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   228
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   11
+  ]
+ },
+ "/media/6223da1b562d9339.gif": {
+  "owner": "Soulevé de terre roumain unilatéral",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 241,
+  "ink": [
+   138,
+   14,
+   278,
+   286
+  ],
+  "marges": [
+   138,
+   14,
+   21,
+   13
+  ]
+ },
+ "/media/63e925f417c73b92.gif": {
+  "owner": "Développé haltères décliné, prise neutre",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 128,
+  "ink": [
+   98,
+   6,
+   346,
+   234
+  ],
+  "marges": [
+   98,
+   6,
+   93,
+   5
+  ]
+ },
+ "/media/66849c3144d589f2.gif": {
+  "owner": "Reverse crunch",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 247,
+  "ink": [
+   20,
+   100,
+   282,
+   246
+  ],
+  "marges": [
+   20,
+   100,
+   17,
+   53
+  ]
+ },
+ "/media/6fcfe5741629ca2a.gif": {
+  "owner": "Développé haltères plat",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#edece7",
+  "colors": 128,
+  "ink": [
+   96,
+   18,
+   334,
+   226
+  ],
+  "marges": [
+   96,
+   18,
+   105,
+   13
+  ]
+ },
+ "/media/789c6d90f30eb33e.gif": {
+  "owner": "Crunch sur swiss ball",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/78f9aee57a4101b1.gif": {
+  "owner": "Goblet squat",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 243,
+  "ink": [
+   102,
+   12,
+   196,
+   288
+  ],
+  "marges": [
+   102,
+   12,
+   103,
+   11
+  ]
+ },
+ "/media/7c0c6d264e85d66a.gif": {
+  "owner": "Leg curl machine (ou swiss-ball leg curl)",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 243,
+  "ink": [
+   14,
+   36,
+   288,
+   270
+  ],
+  "marges": [
+   14,
+   36,
+   11,
+   29
+  ]
+ },
+ "/media/805f8592e2bccb1a.gif": {
+  "owner": "Écartés haltères décliné",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/882c9c361686a9c9.gif": {
+  "owner": "Curl Scott barre EZ, pronation",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#f8f8f8",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/8fe5818f3a4ebebe.gif": {
+  "owner": "Curl marteau assis",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#f3f3f3",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/93ab17b0de26fbc8.gif": {
+  "owner": "Rowing barre buste penché",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 253,
+  "ink": [
+   26,
+   26,
+   286,
+   272
+  ],
+  "marges": [
+   26,
+   26,
+   13,
+   27
+  ]
+ },
+ "/media/995e1f9a9cedc5ec.gif": {
+  "owner": "Step-up sur banc (hauteur du genou)",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 242,
+  "ink": [
+   54,
+   14,
+   148,
+   268
+  ],
+  "marges": [
+   54,
+   14,
+   151,
+   31
+  ]
+ },
+ "/media/9dfc7f7acb3e74e5.gif": {
+  "owner": "Rowing barre buste penché, pronation",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#eef2f3",
+  "colors": 128,
+  "ink": [
+   0,
+   10,
+   434,
+   232
+  ],
+  "marges": [
+   0,
+   10,
+   5,
+   7
+  ]
+ },
+ "/media/9e7f92622aca6913.gif": {
+  "owner": "Élévations latérales assises",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#cdcdcd",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/9f22747c305f521b.gif": {
+  "owner": "Soulevé de terre roumain barre",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#e7ecf0",
+  "colors": 128,
+  "ink": [
+   0,
+   12,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   12,
+   1,
+   1
+  ]
+ },
+ "/media/9f8ae03b97d31344.gif": {
+  "owner": "Leg press",
+  "size": [
+   480,
+   262
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 256,
+  "ink": [
+   16,
+   16,
+   462,
+   246
+  ],
+  "marges": [
+   16,
+   16,
+   17,
+   15
+  ]
+ },
+ "/media/a4c1fb89be18062f.gif": {
+  "owner": "Développé couché haltères",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 238,
+  "ink": [
+   40,
+   60,
+   258,
+   278
+  ],
+  "marges": [
+   40,
+   60,
+   41,
+   21
+  ]
+ },
+ "/media/a5c1c2427ee83c93.gif": {
+  "owner": "Crunch à la poulie (ou au sol)",
+  "size": [
+   246,
+   440
+  ],
+  "frames": 2,
+  "bg": "#f5f5f5",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   244,
+   438
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/a8b1d1173ade4e8f.gif": {
+  "owner": "Soulevé de terre",
+  "size": [
+   403,
+   440
+  ],
+  "frames": 2,
+  "bg": "#ecebe7",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   402,
+   438
+  ],
+  "marges": [
+   0,
+   0,
+   0,
+   1
+  ]
+ },
+ "/media/aab0de0aad0c275a.gif": {
+  "owner": "Bird dog",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 193,
+  "ink": [
+   12,
+   118,
+   288,
+   248
+  ],
+  "marges": [
+   12,
+   118,
+   11,
+   51
+  ]
+ },
+ "/media/afe2f533cbbef546.gif": {
+  "owner": "Relevés de jambes allongée",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 245,
+  "ink": [
+   6,
+   40,
+   288,
+   262
+  ],
+  "marges": [
+   6,
+   40,
+   11,
+   37
+  ]
+ },
+ "/media/b2236e6b7a81a1b5.gif": {
+  "owner": "Dead bug",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 242,
+  "ink": [
+   90,
+   74,
+   294,
+   228
+  ],
+  "marges": [
+   90,
+   74,
+   5,
+   71
+  ]
+ },
+ "/media/b395c84efcad344b.gif": {
+  "owner": "Câbles croisés",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 128,
+  "ink": [
+   20,
+   8,
+   420,
+   232
+  ],
+  "marges": [
+   20,
+   8,
+   19,
+   7
+  ]
+ },
+ "/media/b4522eb6968d20d0.gif": {
+  "owner": "Développé haltères incliné 45°",
+  "size": [
+   403,
+   440
+  ],
+  "frames": 2,
+  "bg": "#e5eff1",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   402,
+   438
+  ],
+  "marges": [
+   0,
+   0,
+   0,
+   1
+  ]
+ },
+ "/media/b54f07a7b66c1aed.gif": {
+  "owner": "Curl haltères incliné",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#ebebeb",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/ba6ba483a1372c9e.gif": {
+  "owner": "Développé incliné barre",
+  "size": [
+   480,
+   262
+  ],
+  "frames": 2,
+  "bg": "#dce0e1",
+  "colors": 256,
+  "ink": [
+   0,
+   0,
+   478,
+   260
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/bc4d9bed4bbb590a.gif": {
+  "owner": "Fentes arrière alternées",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 246,
+  "ink": [
+   48,
+   10,
+   274,
+   288
+  ],
+  "marges": [
+   48,
+   10,
+   25,
+   11
+  ]
+ },
+ "/media/c07b14f1bcc8e8ca.gif": {
+  "owner": "Mountain climbers",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 24,
+  "bg": "#ffffff",
+  "colors": 255,
+  "ink": [
+   14,
+   88,
+   286,
+   212
+  ],
+  "marges": [
+   14,
+   88,
+   13,
+   87
+  ]
+ },
+ "/media/c1065beff4823907.gif": {
+  "owner": "Circuit abdominaux (crunch + relevés + gainage)",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 228,
+  "ink": [
+   40,
+   16,
+   274,
+   288
+  ],
+  "marges": [
+   40,
+   16,
+   25,
+   11
+  ]
+ },
+ "/media/c3a2b9892161522e.gif": {
+  "owner": "Triceps dips",
+  "size": [
+   403,
+   440
+  ],
+  "frames": 2,
+  "bg": "#f9f9f9",
+  "colors": 128,
+  "ink": [
+   0,
+   20,
+   390,
+   438
+  ],
+  "marges": [
+   0,
+   20,
+   12,
+   1
+  ]
+ },
+ "/media/c4d2de309fa47b4c.gif": {
+  "owner": "Rowing barre EZ supination, buste penché",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#edf1f2",
+  "colors": 128,
+  "ink": [
+   0,
+   10,
+   434,
+   232
+  ],
+  "marges": [
+   0,
+   10,
+   5,
+   7
+  ]
+ },
+ "/media/ca785b4cf81c98fa.gif": {
+  "owner": "Face pull à l'élastique",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 248,
+  "ink": [
+   70,
+   10,
+   228,
+   290
+  ],
+  "marges": [
+   70,
+   10,
+   71,
+   9
+  ]
+ },
+ "/media/cd0cc940608ac100.gif": {
+  "owner": "Élévations latérales haltères",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 242,
+  "ink": [
+   96,
+   12,
+   196,
+   286
+  ],
+  "marges": [
+   96,
+   12,
+   103,
+   13
+  ]
+ },
+ "/media/cf312b839f6da027.gif": {
+  "owner": "Bulgarian split squat",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 236,
+  "ink": [
+   42,
+   16,
+   254,
+   290
+  ],
+  "marges": [
+   42,
+   16,
+   45,
+   9
+  ]
+ },
+ "/media/d13d9f751f4731ab.gif": {
+  "owner": "Mollets assis",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#dde7e9",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   226
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   13
+  ]
+ },
+ "/media/d9c88be0658a81af.gif": {
+  "owner": "Développé militaire haltères assis",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 245,
+  "ink": [
+   74,
+   76,
+   228,
+   288
+  ],
+  "marges": [
+   74,
+   76,
+   71,
+   11
+  ]
+ },
+ "/media/dc0cabae23adbfd5.gif": {
+  "owner": "Tirage vertical prise pronation",
+  "size": [
+   246,
+   440
+  ],
+  "frames": 2,
+  "bg": "#e3eef0",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   244,
+   438
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/e56d7d8feec13a3a.gif": {
+  "owner": "Gainage latéral",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 232,
+  "ink": [
+   10,
+   100,
+   286,
+   212
+  ],
+  "marges": [
+   10,
+   100,
+   13,
+   87
+  ]
+ },
+ "/media/e5f17140d8d97591.gif": {
+  "owner": "Glute bridge en 1,5 reps",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 24,
+  "bg": "#ffffff",
+  "colors": 249,
+  "ink": [
+   16,
+   126,
+   284,
+   266
+  ],
+  "marges": [
+   16,
+   126,
+   15,
+   33
+  ]
+ },
+ "/media/f529e06a69b973f4.gif": {
+  "owner": "Mollets debout",
+  "size": [
+   403,
+   440
+  ],
+  "frames": 2,
+  "bg": "#e3e8eb",
+  "colors": 128,
+  "ink": [
+   140,
+   0,
+   402,
+   438
+  ],
+  "marges": [
+   140,
+   0,
+   0,
+   1
+  ]
+ },
+ "/media/f64281e2dbd7986f.gif": {
+  "owner": "Back extension horizontal",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#ededed",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   238
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   1
+  ]
+ },
+ "/media/f73444e9dc2fee89.gif": {
+  "owner": "Abduction assise (machine ou élastique)",
+  "size": [
+   300,
+   300
+  ],
+  "frames": 12,
+  "bg": "#ffffff",
+  "colors": 221,
+  "ink": [
+   16,
+   8,
+   284,
+   288
+  ],
+  "marges": [
+   16,
+   8,
+   15,
+   11
+  ]
+ },
+ "/media/fabb86971a81ea03.gif": {
+  "owner": "Leg curl debout",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#ffffff",
+  "colors": 128,
+  "ink": [
+   8,
+   8,
+   432,
+   232
+  ],
+  "marges": [
+   8,
+   8,
+   7,
+   7
+  ]
+ },
+ "/media/ff100d7322ba1193.gif": {
+  "owner": "Développé haltères plat, prise neutre",
+  "size": [
+   440,
+   240
+  ],
+  "frames": 2,
+  "bg": "#f1f5f8",
+  "colors": 128,
+  "ink": [
+   0,
+   0,
+   438,
+   230
+  ],
+  "marges": [
+   0,
+   0,
+   1,
+   9
+  ]
+ }
+}

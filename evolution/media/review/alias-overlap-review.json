@@ -1,0 +1,2708 @@
+{
+  "date": "2026-09-23",
+  "status": "open",
+  "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "meaning": "Décision individuelle pour les 79 alias de noms proches : le dessin affiché est celui d'un AUTRE exercice du catalogue (aucun exercice de ces 79 n'a de dessin propre). Les classes décrivent l'écart de matière visuelle, jamais une validation.",
+  "reviewedCount": 79,
+  "groupsClosed": 0,
+  "visuallyValidated": 0,
+  "classes": {
+    "same-movement-other-equipment": 19,
+    "same-movement-same-label": 40,
+    "same-movement-other-scheme": 8,
+    "same-muscle-other-pattern": 4,
+    "other-muscle-or-unknown": 8
+  },
+  "rows": [
+    {
+      "id": "pallof-press-a-l-elastique",
+      "name": "Pallof press à l'élastique",
+      "aliasTarget": "Pallof press à la poulie",
+      "level": "variante",
+      "exerciseMuscle": "tra",
+      "exercisePattern": "static",
+      "exerciseEquipment": [
+        "band"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "tra",
+      "targetPattern": "static",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "pallof",
+        "press"
+      ],
+      "equipmentMentioned": [
+        "band"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire d’un Pallof press debout, outil non identifiable : ni poulie ni élastique ne sont montrés.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "face-pull-a-l-elastique",
+      "name": "Face pull à l'élastique",
+      "aliasTarget": "Face pull à la poulie",
+      "level": "variante",
+      "exerciseMuscle": "epP",
+      "exercisePattern": "row",
+      "exerciseEquipment": [
+        "band"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epP",
+      "targetPattern": "row",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "face",
+        "pull"
+      ],
+      "equipmentMentioned": [
+        "band"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire d’un face pull à la POULIE haute ; la prescription est à l’élastique : même mouvement, outil différent.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "abduction-hanche-a-l-elastique",
+      "name": "Abduction hanche à l'élastique",
+      "aliasTarget": "Abduction assise (machine ou élastique)",
+      "level": "variante",
+      "exerciseMuscle": "moy",
+      "exercisePattern": "abduction",
+      "exerciseEquipment": [
+        "band"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "moy",
+      "targetPattern": "abduction",
+      "targetEquipment": [
+        "band"
+      ],
+      "sharedWords": [
+        "abduction"
+      ],
+      "equipmentMentioned": [
+        "band"
+      ],
+      "equipmentDrawn": [
+        "band",
+        "machine"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "consistent",
+      "observed": "Le libellé du dessin est « Abduction assise (machine ou élastique) » : le dessin de machine correspond à l’une des deux options annoncées par ce libellé même.",
+      "trackedBy": "",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "kickback-a-l-elastique",
+      "name": "Kickback à l'élastique",
+      "aliasTarget": "Kickback à la poulie",
+      "level": "variante",
+      "exerciseMuscle": "fes",
+      "exercisePattern": "static",
+      "exerciseEquipment": [
+        "band"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "fes",
+      "targetPattern": "static",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "kickback"
+      ],
+      "equipmentMentioned": [
+        "band"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire d’un kickback à la POULIE ; prescription à l’élastique : outil différent.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "abduction-hanche-a-la-poulie-myo-reps",
+      "name": "Abduction hanche à la poulie — myo-reps",
+      "aliasTarget": "Abduction hanche à la poulie",
+      "level": "variante",
+      "exerciseMuscle": "moy",
+      "exercisePattern": "abduction",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "moy",
+      "targetPattern": "abduction",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "abduction",
+        "hanche"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "consistent",
+      "observed": "Le libellé du dessin est « Abduction assise (machine ou élastique) » : le dessin de machine correspond à l’une des deux options annoncées par ce libellé même.",
+      "trackedBy": "",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "kickback-a-la-poulie-drop-set-final",
+      "name": "Kickback à la poulie — drop set final",
+      "aliasTarget": "Kickback à la poulie",
+      "level": "variante",
+      "exerciseMuscle": "fes",
+      "exercisePattern": "static",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "fes",
+      "targetPattern": "static",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "kickback"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [
+        "drop set"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire d’un kickback à la POULIE ; prescription à l’élastique : outil différent.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "elevations-laterales-halteres-myo-reps",
+      "name": "Élévations latérales haltères — myo-reps",
+      "aliasTarget": "Élévations latérales haltères",
+      "level": "variante",
+      "exerciseMuscle": "epL",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "dumbbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epL",
+      "targetPattern": "lat",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "elevations",
+        "laterales"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Élévations latérales haltères », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+      "name": "Hip thrust barre — test de charge max (3-5 reps)",
+      "aliasTarget": "Hip thrust barre",
+      "level": "variante",
+      "exerciseMuscle": "fes",
+      "exercisePattern": "bridge",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "fes",
+      "targetPattern": "bridge",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "hip",
+        "thrust"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Hip thrust barre », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "souleve-de-terre-roumain-barre-test-3-5-reps",
+      "name": "Soulevé de terre roumain barre — test (3-5 reps)",
+      "aliasTarget": "Soulevé de terre roumain barre",
+      "level": "variante",
+      "exerciseMuscle": "isc",
+      "exercisePattern": "hinge",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "isc",
+      "targetPattern": "hinge",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "roumain",
+        "souleve",
+        "terre"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Soulevé de terre roumain barre », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "rowing-barre-buste-penche-test-3-5-reps",
+      "name": "Rowing barre buste penché — test (3-5 reps)",
+      "aliasTarget": "Rowing barre buste penché",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "row",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "row",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "buste",
+        "penche",
+        "rowing"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Rowing barre buste penché », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-militaire-halteres-assis-test-3-5-reps",
+      "name": "Développé militaire haltères assis — test (3-5 reps)",
+      "aliasTarget": "Développé militaire haltères assis",
+      "level": "variante",
+      "exerciseMuscle": "epA",
+      "exercisePattern": "raise",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epA",
+      "targetPattern": "raise",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "developpe",
+        "militaire"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Développé militaire haltères assis », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "curl-scott-barre-ez-pronation",
+      "name": "Curl Scott barre EZ, pronation",
+      "aliasTarget": "Curl barre debout",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Curl barre debout », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "elevations-laterales-coude-a-90",
+      "name": "Élévations latérales coude à 90°",
+      "aliasTarget": "Élévations latérales",
+      "level": "variante",
+      "exerciseMuscle": "epL",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epL",
+      "targetPattern": "lat",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "elevations",
+        "laterales"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Élévations latérales », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "squat-cycliste-squat-complet",
+      "name": "Squat cycliste (squat complet)",
+      "aliasTarget": "Front squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "squat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "squat"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Front squat », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "leg-extension",
+      "name": "Leg extension",
+      "aliasTarget": "Leg press",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "legext",
+      "exerciseEquipment": [
+        "machine"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "machine"
+      ],
+      "sharedWords": [
+        "leg"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-muscle-other-pattern",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin de presse à cuisses (plateau, assis incliné) : ne montre pas l’extension de jambes (pas de rouleau sur les tibias).",
+      "trackedBy": "leg-extension-to-press",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "releves-de-jambes-allonge",
+      "name": "Relevés de jambes allongé",
+      "aliasTarget": "Relevés de jambes",
+      "level": "variante",
+      "exerciseMuscle": "abs",
+      "exercisePattern": "crunch",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "abs",
+      "targetPattern": "crunch",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "jambes",
+        "releves"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Relevés de jambes », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "crunch-sur-swiss-ball",
+      "name": "Crunch sur swiss ball",
+      "aliasTarget": "Jackknife sur swiss ball",
+      "level": "variante",
+      "exerciseMuscle": "abs",
+      "exercisePattern": "crunch",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "abs",
+      "targetPattern": "crunch",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "ball",
+        "swiss"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Jackknife sur swiss ball », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "releves-de-jambes-incline",
+      "name": "Relevés de jambes incliné",
+      "aliasTarget": "Relevés de jambes suspendu",
+      "level": "variante",
+      "exerciseMuscle": "abs",
+      "exercisePattern": "crunch",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "abs",
+      "targetPattern": "crunch",
+      "targetEquipment": [
+        "pullup"
+      ],
+      "sharedWords": [
+        "jambes",
+        "releves"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Relevés de jambes suspendu », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "tractions-prise-neutre-chin-up",
+      "name": "Tractions prise neutre (chin-up)",
+      "aliasTarget": "Tirage vertical prise neutre",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "pull",
+      "exerciseEquipment": [
+        "pullup"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "pull",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "neutre",
+        "prise"
+      ],
+      "equipmentMentioned": [
+        "pullup"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de tirage vertical (poulie haute) pour des tractions : matériel différent, déjà tracé.",
+      "trackedBy": "pullup-to-pulldown",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "curl-scott-barre-ez-supination",
+      "name": "Curl Scott barre EZ, supination",
+      "aliasTarget": "Curl barre debout",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Curl barre debout », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "curl-scott-haltere-prise-neutre",
+      "name": "Curl Scott haltère, prise neutre",
+      "aliasTarget": "Curl haltères",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "dumbbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Curl haltères », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "curl-poulie-basse-supination",
+      "name": "Curl poulie basse, supination",
+      "aliasTarget": "Curl barre debout",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de curl à la BARRE debout alors que la prescription est à la poulie basse (et en supination pour l’autre entrée) : ni la poulie ni le banc ne sont montrés.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "developpe-halteres-assis-neutre-pronation",
+      "name": "Développé haltères assis, neutre→pronation",
+      "aliasTarget": "Développé militaire haltères assis",
+      "level": "famille",
+      "exerciseMuscle": "epA",
+      "exercisePattern": "raise",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epA",
+      "targetPattern": "raise",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "developpe"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Développé militaire haltères assis », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "back-extension-45-prise-snatch",
+      "name": "Back extension 45°, prise snatch",
+      "aliasTarget": "Back extension horizontal",
+      "level": "variante",
+      "exerciseMuscle": "lom",
+      "exercisePattern": "hinge",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "isc",
+      "targetPattern": "hinge",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "back",
+        "extension"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste de back extension sur banc incliné, exécution jambes tendues : correspond à l’autre entrée « Back extension horizontal », pas à la prise snatch annoncée.",
+      "trackedBy": "remaining-drawings-variants-to-confirm",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rowing-assis-etirement",
+      "name": "Rowing assis + étirement",
+      "aliasTarget": "Rowing assis, prise neutre",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "row",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "row",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "rowing"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Rowing assis, prise neutre », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "elevations-laterales-incline-30-face-au-banc",
+      "name": "Élévations latérales incliné 30° (face au banc)",
+      "aliasTarget": "Élévations latérales",
+      "level": "variante",
+      "exerciseMuscle": "epP",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epL",
+      "targetPattern": "lat",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "elevations",
+        "laterales"
+      ],
+      "equipmentMentioned": [
+        "bench"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible.",
+      "trackedBy": "standing-lateral-raise-for-seated-and-incline-variants",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "back-squat-inertie-pause-complete",
+      "name": "Back squat inertie (pause complète)",
+      "aliasTarget": "Back squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "squat",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "back",
+        "squat"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [
+        "pause",
+        "inertie"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Même mouvement ; seule la méthode annoncée change (drop set, myo-reps, tempo) : différence de méthode, non montrable en deux images figées.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "extensions-triceps-pullover-barre-ez",
+      "name": "Extensions triceps + pullover barre EZ",
+      "aliasTarget": "Extensions triceps barre EZ",
+      "level": "variante",
+      "exerciseMuscle": "tri",
+      "exercisePattern": "pull",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "tri",
+      "targetPattern": "triceps",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "extensions",
+        "ez",
+        "triceps"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-muscle-other-pattern",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste allongé sur banc : le simultané avec le pullover n’est pas montré.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "curl-haltere-supination-banc-scott-90",
+      "name": "Curl haltère supination, banc Scott 90°",
+      "aliasTarget": "Curl haltères incliné",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "bench",
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste d’un curl haltères sur banc INCLINÉ ; le banc Scott (coussin, bras vertical) n’est pas montré.",
+      "trackedBy": "standing-curl-for-scott-bench",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "developpe-couche-prise-serree",
+      "name": "Développé couché prise serrée",
+      "aliasTarget": "Développé couché barre plat",
+      "level": "variante",
+      "exerciseMuscle": "tri",
+      "exercisePattern": "triceps",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "barbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "couche",
+        "developpe"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de développé couché prise normale : la prise serrée n’est pas distinguable.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "pushdown-triceps-cable",
+      "name": "Pushdown triceps câble",
+      "aliasTarget": "Extension triceps à la poulie",
+      "level": "variante",
+      "exerciseMuscle": "tri",
+      "exercisePattern": "triceps",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "tri",
+      "targetPattern": "triceps",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "triceps"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Extension triceps à la poulie », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "curl-scott-haltere-neutre",
+      "name": "Curl Scott haltère neutre",
+      "aliasTarget": "Curl haltères",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "dumbbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Curl haltères », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "curl-zottman-assis",
+      "name": "Curl Zottman assis",
+      "aliasTarget": "Curl haltères",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de curl haltères classique : la rotation Zottman (supination puis pronation) n’est pas montrable en deux images figées.",
+      "trackedBy": "curl-posture-and-grip-not-shown",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "curl-poulie-basse",
+      "name": "Curl poulie basse",
+      "aliasTarget": "Curl barre debout",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de curl à la BARRE debout alors que la prescription est à la poulie basse (et en supination pour l’autre entrée) : ni la poulie ni le banc ne sont montrés.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "elevations-laterales-incline-30",
+      "name": "Élévations latérales incliné 30°",
+      "aliasTarget": "Élévations latérales",
+      "level": "variante",
+      "exerciseMuscle": "epP",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epL",
+      "targetPattern": "lat",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "elevations",
+        "laterales"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible.",
+      "trackedBy": "standing-lateral-raise-for-seated-and-incline-variants",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "elevations-laterales-incline-45",
+      "name": "Élévations latérales incliné 45°",
+      "aliasTarget": "Élévations latérales",
+      "level": "variante",
+      "exerciseMuscle": "epP",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epL",
+      "targetPattern": "lat",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "elevations",
+        "laterales"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible.",
+      "trackedBy": "standing-lateral-raise-for-seated-and-incline-variants",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "fentes-marchees",
+      "name": "Fentes marchées",
+      "aliasTarget": "Fentes avant alternées",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "lunge",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "fes",
+      "targetPattern": "lunge",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "fentes"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de fentes AVEC haltères, buste penché (dessin de l’autre entrée « Fentes avant alternées ») : le déplacement marché n’est pas montrable en deux images, et les haltères ne sont pas dans la prescription au poids du corps.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "leg-curl-allonge-pieds-pointes",
+      "name": "Leg curl allongé, pieds pointés",
+      "aliasTarget": "Leg curl allongé",
+      "level": "famille",
+      "exerciseMuscle": "isc",
+      "exercisePattern": "legcurl",
+      "exerciseEquipment": [
+        "machine"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "isc",
+      "targetPattern": "legcurl",
+      "targetEquipment": [
+        "machine"
+      ],
+      "sharedWords": [
+        "allonge",
+        "curl",
+        "leg"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Leg curl allongé », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "leg-curl-allonge-pieds-flechis",
+      "name": "Leg curl allongé, pieds fléchis",
+      "aliasTarget": "Leg curl allongé",
+      "level": "famille",
+      "exerciseMuscle": "isc",
+      "exercisePattern": "legcurl",
+      "exerciseEquipment": [
+        "machine"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "isc",
+      "targetPattern": "legcurl",
+      "targetEquipment": [
+        "machine"
+      ],
+      "sharedWords": [
+        "allonge",
+        "curl",
+        "leg"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Leg curl allongé », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-halteres-incline-45-prise-neutre",
+      "name": "Développé haltères incliné 45°, prise neutre",
+      "aliasTarget": "Développé haltères plat, prise neutre",
+      "level": "variante",
+      "exerciseMuscle": "pec",
+      "exercisePattern": "press",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "developpe",
+        "neutre",
+        "prise"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Développé haltères plat, prise neutre », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "rowing-haltere-buste-penche",
+      "name": "Rowing haltère buste penché",
+      "aliasTarget": "Rowing haltère un bras",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "row",
+      "exerciseEquipment": [
+        "dumbbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "row",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "rowing"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Rowing haltère un bras », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "curl-zottman-un-bras-banc-scott",
+      "name": "Curl Zottman un bras, banc Scott",
+      "aliasTarget": "Curl haltères",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "bench"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de curl haltères classique : la rotation Zottman (supination puis pronation) n’est pas montrable en deux images figées.",
+      "trackedBy": "curl-posture-and-grip-not-shown",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "split-squat-poulie-basse",
+      "name": "Split squat poulie basse",
+      "aliasTarget": "Bulgarian split squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "lunge",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "lunge",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "split",
+        "squat"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire d’un split squat avec haltères devant un banc, jambe arrière posée dessus : matériel différent de la poulie basse prescrite.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "tractions-prise-large",
+      "name": "Tractions prise large",
+      "aliasTarget": "Tirage vertical prise large",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "pull",
+      "exerciseEquipment": [
+        "pullup"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "pull",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "large",
+        "prise"
+      ],
+      "equipmentMentioned": [
+        "pullup"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de tirage vertical (poulie haute) pour des tractions : matériel différent, déjà tracé.",
+      "trackedBy": "pullup-to-pulldown",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "developpe-halteres-incline-pronation",
+      "name": "Développé haltères incliné, pronation",
+      "aliasTarget": "Développé couché haltères",
+      "level": "famille",
+      "exerciseMuscle": "pec",
+      "exercisePattern": "press",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "developpe"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Développé couché haltères », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "souleve-de-terre-partiel-prise-snatch",
+      "name": "Soulevé de terre partiel, prise snatch",
+      "aliasTarget": "Soulevé de terre",
+      "level": "variante",
+      "exerciseMuscle": "isc",
+      "exercisePattern": "hinge",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "isc",
+      "targetPattern": "hinge",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "souleve",
+        "terre"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [
+        "partiel"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Même mouvement ; seule la méthode annoncée change (drop set, myo-reps, tempo) : différence de méthode, non montrable en deux images figées.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "curl-halteres-incline-supination",
+      "name": "Curl haltères incliné, supination",
+      "aliasTarget": "Curl haltères incliné",
+      "level": "famille",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "curl",
+        "incline"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Curl haltères incliné », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-derriere-la-nuque",
+      "name": "Développé derrière la nuque",
+      "aliasTarget": "Développé militaire debout",
+      "level": "variante",
+      "exerciseMuscle": "epA",
+      "exercisePattern": "raise",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epA",
+      "targetPattern": "raise",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "developpe"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Développé militaire debout », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "mollets-a-la-presse",
+      "name": "Mollets à la presse",
+      "aliasTarget": "Mollets debout",
+      "level": "variante",
+      "exerciseMuscle": "mol",
+      "exercisePattern": "calf",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "mol",
+      "targetPattern": "calf",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "mollets"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Mollets debout », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "ecartes-cables-incline",
+      "name": "Écartés câbles incliné",
+      "aliasTarget": "Câbles croisés",
+      "level": "variante",
+      "exerciseMuscle": "pec",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "cables"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-muscle-other-pattern",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste de câbles croisés debout : l’inclinaison n’est pas montrée.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rowing-assis-au-cou",
+      "name": "Rowing assis au cou",
+      "aliasTarget": "Rowing assis, prise neutre",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "row",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "row",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "rowing"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Rowing assis, prise neutre », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-halteres-incline-45",
+      "name": "Développé haltères incliné 45°",
+      "aliasTarget": "Développé haltères incliné",
+      "level": "variante",
+      "exerciseMuscle": "pec",
+      "exercisePattern": "press",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "developpe",
+        "incline"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Développé haltères incliné », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "rowing-haltere-un-bras-prise-neutre",
+      "name": "Rowing haltère un bras, prise neutre",
+      "aliasTarget": "Rowing haltère un bras",
+      "level": "famille",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "row",
+      "exerciseEquipment": [
+        "dumbbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "row",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "rowing"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Rowing haltère un bras », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "souleve-de-terre-partiel",
+      "name": "Soulevé de terre partiel",
+      "aliasTarget": "Soulevé de terre",
+      "level": "variante",
+      "exerciseMuscle": "isc",
+      "exercisePattern": "hinge",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "isc",
+      "targetPattern": "hinge",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "souleve",
+        "terre"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [
+        "partiel"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Même mouvement ; seule la méthode annoncée change (drop set, myo-reps, tempo) : différence de méthode, non montrable en deux images figées.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "curl-scott-90-haltere-supination",
+      "name": "Curl Scott 90° haltère supination",
+      "aliasTarget": "Curl haltères",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "dumbbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Curl haltères », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "elevations-laterales-incline",
+      "name": "Élévations latérales incliné",
+      "aliasTarget": "Élévations latérales",
+      "level": "variante",
+      "exerciseMuscle": "epL",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epL",
+      "targetPattern": "lat",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "elevations",
+        "laterales"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste d’élévations debout, haltères le long du corps : aucune inclinaison de banc n’est visible.",
+      "trackedBy": "standing-lateral-raise-for-seated-and-incline-variants",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "safety-bar-squat-ou-barre-classique",
+      "name": "Safety bar squat (ou barre classique)",
+      "aliasTarget": "Back squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "squat",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "squat"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "consistent",
+      "observed": "Dessin filaire d’un back squat à la barre ; le libellé annonce lui-même « ou barre classique » : le dessin correspond à l’alternative annoncée.",
+      "trackedBy": "",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "cables-croises-rotation-externe",
+      "name": "Câbles croisés + rotation externe",
+      "aliasTarget": "Câbles croisés",
+      "level": "variante",
+      "exerciseMuscle": "pec",
+      "exercisePattern": "press",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "cables",
+        "croises"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Câbles croisés », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "rowing-assis-cable-unilateral",
+      "name": "Rowing assis câble unilatéral",
+      "aliasTarget": "Rowing assis, prise neutre",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "row",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "row",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "rowing"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin réaliste de rowing assis à la poulie, deux mains sur une poignée : le caractère UNILATÉRAL (un bras) n’est pas montré.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "curl-zottman",
+      "name": "Curl Zottman",
+      "aliasTarget": "Curl haltères",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de curl haltères classique : la rotation Zottman (supination puis pronation) n’est pas montrable en deux images figées.",
+      "trackedBy": "curl-posture-and-grip-not-shown",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "squat-cycliste",
+      "name": "Squat cycliste",
+      "aliasTarget": "Front squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "squat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "squat"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Front squat », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "leg-press-unilateral",
+      "name": "Leg press unilatéral",
+      "aliasTarget": "Leg press",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "squat",
+      "exerciseEquipment": [
+        "machine"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "machine"
+      ],
+      "sharedWords": [
+        "leg",
+        "press"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Leg press », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "extensions-triceps-barre-ez-pullover",
+      "name": "Extensions triceps barre EZ + pullover",
+      "aliasTarget": "Extensions triceps barre EZ",
+      "level": "variante",
+      "exerciseMuscle": "tri",
+      "exercisePattern": "pull",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "tri",
+      "targetPattern": "triceps",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "extensions",
+        "ez",
+        "triceps"
+      ],
+      "equipmentMentioned": [
+        "barbell"
+      ],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-muscle-other-pattern",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "unresolved",
+      "observed": "Cas non conclu à la relecture : repris explicitement au prochain passage.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "curl-concentration",
+      "name": "Curl concentration",
+      "aliasTarget": "Curl haltères",
+      "level": "variante",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "curl"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de curl haltères DEBOUT ; la concentration (assis, coude appuyé sur la cuisse) n’est pas montrée.",
+      "trackedBy": "curl-posture-and-grip-not-shown",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "split-squat-barbell-pied-avant-sureleve",
+      "name": "Split squat barbell (pied avant surélevé)",
+      "aliasTarget": "Bulgarian split squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "lunge",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "lunge",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "split",
+        "squat"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Bulgarian split squat », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-couche-decline-prise-serree",
+      "name": "Développé couché décliné prise serrée",
+      "aliasTarget": "Développé couché barre plat",
+      "level": "variante",
+      "exerciseMuscle": "tri",
+      "exercisePattern": "triceps",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "barbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "couche",
+        "developpe"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Même dessin de développé couché plat : ni le déclin ni la prise serrée ne sont montrés.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "curl-halteres-incline-prise-neutre",
+      "name": "Curl haltères incliné, prise neutre",
+      "aliasTarget": "Curl haltères incliné",
+      "level": "famille",
+      "exerciseMuscle": "bic",
+      "exercisePattern": "curl",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "bic",
+      "targetPattern": "curl",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "curl",
+        "incline"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Curl haltères incliné », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-halteres-assis-prise-neutre",
+      "name": "Développé haltères assis, prise neutre",
+      "aliasTarget": "Développé militaire haltères assis",
+      "level": "famille",
+      "exerciseMuscle": "epA",
+      "exercisePattern": "raise",
+      "exerciseEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epA",
+      "targetPattern": "raise",
+      "targetEquipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "developpe"
+      ],
+      "equipmentMentioned": [
+        "dumbbell"
+      ],
+      "equipmentDrawn": [
+        "dumbbell"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Développé militaire haltères assis », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "elevations-laterales-lean-away",
+      "name": "Élévations latérales lean away",
+      "aliasTarget": "Élévations latérales",
+      "level": "variante",
+      "exerciseMuscle": "epL",
+      "exercisePattern": "lat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epL",
+      "targetPattern": "lat",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "elevations",
+        "laterales"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Élévations latérales », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "tirage-vertical-lean-away",
+      "name": "Tirage vertical lean away",
+      "aliasTarget": "Tirage vertical prise pronation",
+      "level": "variante",
+      "exerciseMuscle": "dos",
+      "exercisePattern": "pull",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "dos",
+      "targetPattern": "pull",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "tirage",
+        "vertical"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Tirage vertical prise pronation », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-couche-plat-inertie-depuis-les-pins",
+      "name": "Développé couché plat, inertie depuis les pins",
+      "aliasTarget": "Développé couché barre plat",
+      "level": "variante",
+      "exerciseMuscle": "pec",
+      "exercisePattern": "press",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "barbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "couche",
+        "developpe",
+        "plat"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [
+        "inertie"
+      ],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "unresolved",
+      "observed": "Cas non conclu à la relecture : repris explicitement au prochain passage.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "developpe-militaire-inertie-depuis-les-pins",
+      "name": "Développé militaire, inertie depuis les pins",
+      "aliasTarget": "Développé militaire debout",
+      "level": "variante",
+      "exerciseMuscle": "epA",
+      "exercisePattern": "raise",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epA",
+      "targetPattern": "raise",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "developpe",
+        "militaire"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [
+        "inertie"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Même mouvement ; seule la méthode annoncée change (drop set, myo-reps, tempo) : différence de méthode, non montrable en deux images figées.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "extensions-triceps-poulie",
+      "name": "Extensions triceps poulie",
+      "aliasTarget": "Extension triceps à la poulie",
+      "level": "variante",
+      "exerciseMuscle": "tri",
+      "exercisePattern": "triceps",
+      "exerciseEquipment": [
+        "cable"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "tri",
+      "targetPattern": "triceps",
+      "targetEquipment": [
+        "cable"
+      ],
+      "sharedWords": [
+        "triceps"
+      ],
+      "equipmentMentioned": [
+        "cable"
+      ],
+      "equipmentDrawn": [
+        "cable"
+      ],
+      "schemeQualifiers": [],
+      "class": "same-movement-same-label",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Aucun dessin propre : l’application affiche le dessin de « Extension triceps à la poulie », dont la définition est équivalente (même mouvement, même intitulé). Rien à corriger ici, mais ce n’est pas une validation visuelle.",
+      "trackedBy": "resolution-by-another-exercise-drawing"
+    },
+    {
+      "id": "developpe-couche-test-1rm",
+      "name": "Développé couché — test 1RM",
+      "aliasTarget": "Développé couché barre plat",
+      "level": "variante",
+      "exerciseMuscle": "pec",
+      "exercisePattern": "press",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "pec",
+      "targetPattern": "press",
+      "targetEquipment": [
+        "barbell",
+        "bench"
+      ],
+      "sharedWords": [
+        "couche",
+        "developpe"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [
+        "barbell"
+      ],
+      "schemeQualifiers": [
+        "1rm",
+        "test 1rm"
+      ],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "unresolved",
+      "observed": "Cas non conclu à la relecture : repris explicitement au prochain passage.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "back-squat-test-1rm",
+      "name": "Back squat — test 1RM",
+      "aliasTarget": "Back squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "squat",
+      "exerciseEquipment": [
+        "barbell"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "back",
+        "squat"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [
+        "1rm",
+        "test 1rm"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Même mouvement ; seule la méthode annoncée change (drop set, myo-reps, tempo) : différence de méthode, non montrable en deux images figées.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "souleve-de-terre-test-1rm",
+      "name": "Soulevé de terre — test 1RM",
+      "aliasTarget": "Soulevé de terre",
+      "level": "variante",
+      "exerciseMuscle": "isc",
+      "exercisePattern": "hinge",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "isc",
+      "targetPattern": "hinge",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "souleve",
+        "terre"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [
+        "1rm",
+        "test 1rm"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Même mouvement ; seule la méthode annoncée change (drop set, myo-reps, tempo) : différence de méthode, non montrable en deux images figées.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "developpe-militaire-test-1rm",
+      "name": "Développé militaire — test 1RM",
+      "aliasTarget": "Développé militaire debout",
+      "level": "variante",
+      "exerciseMuscle": "epA",
+      "exercisePattern": "raise",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "epA",
+      "targetPattern": "raise",
+      "targetEquipment": [
+        "barbell"
+      ],
+      "sharedWords": [
+        "developpe",
+        "militaire"
+      ],
+      "equipmentMentioned": [],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [
+        "1rm",
+        "test 1rm"
+      ],
+      "class": "same-movement-other-scheme",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "instruction-identical-visual-not-differs",
+      "observed": "Même mouvement ; seule la méthode annoncée change (drop set, myo-reps, tempo) : différence de méthode, non montrable en deux images figées.",
+      "trackedBy": "systematic-alias-resolution"
+    },
+    {
+      "id": "squat-au-poids-du-corps",
+      "name": "Squat au poids du corps",
+      "aliasTarget": "Goblet squat",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "squat",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "qua",
+      "targetPattern": "squat",
+      "targetEquipment": [
+        "dumbbell"
+      ],
+      "sharedWords": [
+        "squat"
+      ],
+      "equipmentMentioned": [
+        "bodyweight"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "same-movement-other-equipment",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "mismatch-kept-open",
+      "observed": "Dessin filaire d’un GOBLET squat avec haltère tenu devant la poitrine alors que la prescription est au POIDS DU CORPS : matériel ajouté par l’image. Même règle que le step-up : aucune substitution, aucune consigne réécrite, écart gardé ouvert.",
+      "trackedBy": "bodyweight-squat-drawn-with-dumbbell",
+      "framesRead": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "fentes-arriere-au-poids-du-corps",
+      "name": "Fentes arrière au poids du corps",
+      "aliasTarget": "Fentes arrière alternées",
+      "level": "variante",
+      "exerciseMuscle": "qua",
+      "exercisePattern": "lunge",
+      "exerciseEquipment": [
+        "bodyweight"
+      ],
+      "targetOwnDrawing": true,
+      "targetMuscle": "fes",
+      "targetPattern": "lunge",
+      "targetEquipment": [
+        "bodyweight"
+      ],
+      "sharedWords": [
+        "arriere",
+        "fentes"
+      ],
+      "equipmentMentioned": [
+        "bodyweight"
+      ],
+      "equipmentDrawn": [],
+      "schemeQualifiers": [],
+      "class": "other-muscle-or-unknown",
+      "groupClosed": false,
+      "visuallyValidated": false,
+      "verdict": "partial-mismatch",
+      "observed": "Dessin filaire de fentes arrière AVEC barre alors que la prescription est au poids du corps : matériel ajouté.",
+      "trackedBy": "systematic-alias-resolution",
+      "framesRead": [
+        0,
+        1
+      ]
+    }
+  ],
+  "evidence": [
+    "review/alias-overlap-targets.png (8 dessins × 2 images)",
+    "review/alias-overlap-equipment-19.png (19 dessins)"
+  ]
+}

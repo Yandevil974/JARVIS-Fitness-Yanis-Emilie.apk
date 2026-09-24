@@ -1,0 +1,18 @@
+{
+  "status": "proposal-not-integrated",
+  "repository": "https://github.com/yuhonas/free-exercise-db",
+  "commit": "a859101d633a01c4a1a920d6a8ce41dabba0705f",
+  "licenseDeclaredByRepository": "Unlicense",
+  "exerciseId": "Parallel_Bar_Dip",
+  "inspection": "Both photographs viewed. Same person and camera side, upper/lower parallel-bar dip positions. Not a clinical validation or continuous video. No AI image modification.",
+  "files": [
+    {
+      "sourcePath": "exercises/Parallel_Bar_Dip/0.jpg",
+      "sha256": "c8469b9ac5f0bb97e44d9559b36c45b11f23b806f05c259e70c007b206721028"
+    },
+    {
+      "sourcePath": "exercises/Parallel_Bar_Dip/1.jpg",
+      "sha256": "56ec007d71e605a9c47e01ff961f9a151db0c5727bc527ce88ccb3e0ad44a30e"
+    }
+  ]
+}

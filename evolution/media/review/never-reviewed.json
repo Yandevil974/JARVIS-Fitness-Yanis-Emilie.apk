@@ -1,0 +1,965 @@
+{
+ "date": "2026-09-23",
+ "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+ "method": "Les 30 dessins jamais relus ont été affichés sur trois planches ordonnées (2 images chacun, légendes d'exercices) puis relus image par image ; verdict par dessin, jamais par famille.",
+ "clipCount": 30,
+ "reviewedFrameCount": 60,
+ "clips": [
+  {
+   "path": "/media/055d358895efaa10.gif",
+   "assetSha256": "055d358895efaa10ac36f65d9fa19aecf15c5492042b09d2b30cf85cb49accbd",
+   "width": 246,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "272b5ebdfe449e22db69ad96703678ae9723c3c51bcfc02b4fd4e998d418af80"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "b69829bdaca83db41f8991a59d6e1a2773bccd65803bc7413f00945e49a416f0"
+    }
+   ],
+   "drawingLabel": "Soulevé de terre roumain haltères",
+   "observedMovement": "Debout haltères le long du corps, puis charnière de hanches dos plat, haltères qui descendent le long des tibias. Geste conforme ; même dessin que la variante barre.",
+   "verdict": "consistent",
+   "usedFor": [
+    "souleve-de-terre-roumain-halteres"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/0a5625b92247ed69.gif",
+   "assetSha256": "0a5625b92247ed69c379367e2dba0a39797eddb531fb285f4377e6fb862b9839",
+   "width": 246,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "6e872fa84dd02107d17bec4bc4a366685baa9ecd0a44b8f08841a2689d534031"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "061570c24e8b2809e4751a869478fbe46ac501f8be121fb81b9ce3c782b818c0"
+    }
+   ],
+   "drawingLabel": "Rowing assis prise neutre",
+   "observedMovement": "Assis au siège, poignée neutre tirée vers le ventre, buste stable, retour contrôlé. Conforme aux trois rowings assis qui l'utilisent.",
+   "verdict": "consistent",
+   "usedFor": [
+    "rowing-assis-prise-neutre",
+    "rowing-assis-etirement",
+    "rowing-assis-au-cou",
+    "rowing-assis-cable-unilateral"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/16f6ff0f7ceba611.gif",
+   "assetSha256": "16f6ff0f7ceba611e05b81c1b5a34c661faf31ddeeae722729bcf8ce75013368",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "d3ebf70b8fab9d44dc22fe4f252c1f680a000a95bd08f329de9cd48d0ad8d331"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "91cffdcfd260b856f8d5c04106918e3150bcadec277316ed4422bd735453ccf7"
+    }
+   ],
+   "drawingLabel": "Relevés de jambes suspendu",
+   "observedMovement": "Suspendu à la barre, jambes qui montent puis redescendent. Conforme au relevé suspendu ; ne correspond pas au relevé allongé incliné qui l'utilise aussi.",
+   "verdict": "partial-mismatch",
+   "usedFor": [
+    "releves-de-jambes-incline",
+    "releves-de-jambes-suspendu"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/1c28908ab83cde2e.gif",
+   "assetSha256": "1c28908ab83cde2e7513028b0fce381cbddc46b1d82a0bc36ca1a92be4b7f4ca",
+   "width": 246,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "9c5ad820edc713be209c55d65b41f135cdec1d3c47fe93bc93dbc44a16b73061"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "c6e0a37b8a26393ccb8847dff6810f77ec8416f9a8b6e0801b0ed70638744d74"
+    }
+   ],
+   "drawingLabel": "Front squat",
+   "observedMovement": "Barre en position avant, descente complète puis remontée, vu de côté. Conforme au front squat ; le « squat cycliste » garde une ambiguïté de libellé.",
+   "verdict": "consistent",
+   "usedFor": [
+    "squat-cycliste-squat-complet",
+    "front-squat",
+    "squat-cycliste"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/22146cff6a787e8a.gif",
+   "assetSha256": "22146cff6a787e8a5ecf68dce92d3381f242026101d8d1c64a68a98310d3fa65",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "473dcc3505d3888292b782b09650968162602f075b150f7d7fdffcb1fdf4bc03"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "51e4fb81eeebfa5b9cd38469ad4d07f40e7cc17c63fea1c51cd9a1468c89f4ca"
+    }
+   ],
+   "drawingLabel": "Développé militaire debout",
+   "observedMovement": "Barre poussée au-dessus de la tête, debout. Conforme au développé militaire debout ; ne montre ni la barre derrière la nuque ni la version un bras.",
+   "verdict": "partial-mismatch",
+   "usedFor": [
+    "developpe-militaire-debout",
+    "developpe-derriere-la-nuque",
+    "developpe-militaire-inertie-depuis-les-pins",
+    "developpe-militaire-test-1rm"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/30adf4e98e55b6cd.gif",
+   "assetSha256": "30adf4e98e55b6cd39a21c87b8dfd9a1b21cf460a5e2a6de4bc405d4f6714074",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "172fd2a0a6eb7076dd496af67a18c0cfd118d703c31f14aa29a415ce43736e26"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "7971ec759c83a450a411f69f101da50a363fc080493b1351e571d866ca8a59ce"
+    }
+   ],
+   "drawingLabel": "Développé couché barre",
+   "observedMovement": "Barre descendue sur la poitrine puis poussée, prise serrée visible. Conforme aux développés couché barre, y compris prise serrée.",
+   "verdict": "consistent",
+   "usedFor": [
+    "developpe-couche-barre-plat",
+    "developpe-couche-prise-serree",
+    "developpe-couche-decline-prise-serree",
+    "developpe-couche-plat-inertie-depuis-les-pins",
+    "developpe-couche-barre",
+    "developpe-couche-test-1rm"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/44fc577dce29aff5.gif",
+   "assetSha256": "44fc577dce29aff520327bcef618b56eb4d227bd785ff475b03045215245deff",
+   "width": 246,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "697dff944a0524cd4557ea92db7e84568b5bdd8631dc4fd949470c2adf66a1ae"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "e9970c47ec2317963d88f2dbcdfdc98aeab7167a0c5c898af4e64c7c0f8c7359"
+    }
+   ],
+   "drawingLabel": "Rowing haltère un bras, coude ouvert",
+   "observedMovement": "Un bras en appui sur le banc, haltère tiré vers la hanche, coude écarté. Dessin d'haltère, pas de câble ; la différence « coude ouvert » reste à confirmer avec l'utilisateur.",
+   "verdict": "variant-to-confirm",
+   "usedFor": [
+    "rowing-haltere-un-bras-coude-ouvert"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/45a34272da9569a6.gif",
+   "assetSha256": "45a34272da9569a6de390eb7ef7eb49edfe5cc37c13696e96bad33e6593a4506",
+   "width": 329,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "4e96cdec73523669a33677c87a65f9a839c5b5c27661b2e70d3fe91b0cc435c5"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "4383deda69efa68994cffa49c8168d2c9338f0d85d5546fb136a51d74d9f4772"
+    }
+   ],
+   "drawingLabel": "Développé haltères incliné",
+   "observedMovement": "Banc incliné, haltères poussés au-dessus de la poitrine. Conforme à l'incliné.",
+   "verdict": "consistent",
+   "usedFor": [
+    "developpe-halteres-incline-30"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/4dfda05b1db24000.gif",
+   "assetSha256": "4dfda05b1db24000b0d28ca4c7509769f7dcee856355ece6f5dce2ad745622e0",
+   "width": 246,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "43e2a99fc29ec9420a016970c365a1520a036a446bdfd033b5a833e24463fde6"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "77f1a2b3b5fe6463e283050030624e24441cd8004cb8acfd79aa870de6a51217"
+    }
+   ],
+   "drawingLabel": "Rowing haltère un bras",
+   "observedMovement": "Même famille visuelle que 44fc577d : appui sur banc, haltère tiré. Les deux dessins étant très proches, l'affectation « coude ouvert » / « standard » reste à confirmer.",
+   "verdict": "variant-to-confirm",
+   "usedFor": [
+    "rowing-haltere-un-bras",
+    "rowing-haltere-buste-penche",
+    "rowing-haltere-un-bras-prise-neutre"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/530326beb7c7a652.gif",
+   "assetSha256": "530326beb7c7a6525a6db69d7d3ca5c428632c21e3d4b21342a4f53bc83666b2",
+   "width": 268,
+   "height": 480,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "ea11534ee979981d4746e657ed20d2d8ddfc2dc37e2fe48a8df2133051b4aecf"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "25811b7207d0a95f563bcb1321c9f00107523020f368c74724da9401ad167fd5"
+    }
+   ],
+   "drawingLabel": "Back squat",
+   "observedMovement": "Barre sur le haut du dos, descente puis remontée, vu de côté. Conforme au back squat et à ses variantes de tempo.",
+   "verdict": "consistent",
+   "usedFor": [
+    "back-squat",
+    "back-squat-barre-haute",
+    "back-squat-inertie-pause-complete",
+    "safety-bar-squat-ou-barre-classique",
+    "back-squat-test-1rm"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/5dd80c9e1b36df25.gif",
+   "assetSha256": "5dd80c9e1b36df255264ea1416445fbd45f160e52215cbe7dc89255bf497d82a",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "507a515db88b31b47f9ed5fc6d4b01ef022c36eb8fd61da6dd354567e5add008"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "2e12511860e0993403917c259cd2d7131a3434826f29be6a13291e1489c240aa"
+    }
+   ],
+   "drawingLabel": "Hack squat",
+   "observedMovement": "Machine à hack squat, dos contre le dossier, descente guidée puis poussée. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "hack-squat"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/63e925f417c73b92.gif",
+   "assetSha256": "63e925f417c73b929aeb4063c8e991b7cbeeebed42e82c00438ebd226b89f3fe",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "ddd4a83e3ecd23dd5c1440df9f042a1416c48a2983068c3414d8b3d783731b2c"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "dcedcb67c2b809be2fc68475c6c7e80be445294ad52509128d158b5709589f9e"
+    }
+   ],
+   "drawingLabel": "Développé haltères décliné prise neutre",
+   "observedMovement": "Allongé, haltères en prise neutre poussés au-dessus de la poitrine. Le déclin n'est pas visible ; geste et prise correspondent.",
+   "verdict": "variant-to-confirm",
+   "usedFor": [
+    "developpe-halteres-decline-prise-neutre"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/6fcfe5741629ca2a.gif",
+   "assetSha256": "6fcfe5741629ca2a80dbcdce27704d88c80a5421b6947bcdef971878e704dbfd",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "028daebbb637222c54c3018db04106f5a4f32a61b2c5853151d3b1176d8bb9e9"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "c1f0f3cb16962033c165189443bcd15762b70df29a641d209b94ad766849a876"
+    }
+   ],
+   "drawingLabel": "Développé haltères plat",
+   "observedMovement": "Allongé, haltères poussés au-dessus de la poitrine, descente contrôlée. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "developpe-halteres-plat"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/805f8592e2bccb1a.gif",
+   "assetSha256": "805f8592e2bccb1aa6ad76526576907b57cc0535b1dd228970012882653bc599",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "f2cc0db25f1ea79e42f1f10efb11b8d48f346ecdb3a70bd3500b1cf1bb37233f"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "8840a0f149475a4e221e57cd5a0c36efc4d285d9b539e8eb912a7330bfcac46c"
+    }
+   ],
+   "drawingLabel": "Écartés haltères",
+   "observedMovement": "Allongé, bras légèrement fléchis qui s'ouvrent puis se referment. Conforme aux écartés ; le déclin n'est pas visible.",
+   "verdict": "variant-to-confirm",
+   "usedFor": [
+    "ecartes-halteres-decline",
+    "ecartes-halteres"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/882c9c361686a9c9.gif",
+   "assetSha256": "882c9c361686a9c97f704e9dbaa422e67f86b41e22a64c057a6a18e981d78352",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "7b2a1182590dfc1187bb81260813bc59953b431b427d95fdc4f665bd7f5aba23"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "66e73b692e0821fc82bb3b94579bee1232a5407b868052fd28e034dccc00dae8"
+    }
+   ],
+   "drawingLabel": "Curl barre debout",
+   "observedMovement": "Curl à la barre en position debout. Ne montre pas de banc Scott : les variantes Scott qui l'utilisent gardent un écart de matériel et de position.",
+   "verdict": "mismatch-kept-open",
+   "usedFor": [
+    "curl-scott-barre-ez-pronation",
+    "curl-scott-barre-ez-supination",
+    "curl-poulie-basse-supination",
+    "curl-barre-debout",
+    "curl-poulie-basse",
+    "curl-barre"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/8fe5818f3a4ebebe.gif",
+   "assetSha256": "8fe5818f3a4ebebe3d5d4b90c57a1aa03674f202c18be350b6ed503271a12416",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "0126a328dd2630a1bb980ae3eb4d80dc1574835b8fe648dedea73a9fd8903d23"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "9b0cbf88decfcc5a44765dbfe4a861a8ff6e1e7c2246f34ac8c85987f2e575de"
+    }
+   ],
+   "drawingLabel": "Curl marteau assis",
+   "observedMovement": "Assis, haltères en prise marteau, flexion des coudes. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "curl-marteau-assis",
+    "curl-marteau"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/9dfc7f7acb3e74e5.gif",
+   "assetSha256": "9dfc7f7acb3e74e5547d56b2cd8bea8549cd46a754038ab52b0bb1834149a73d",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "f601aea020317697dd864093f0abcbbba1b7f55645b68d7a5299363acd0d00f0"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "2941d71e2e9dd620b6d4166eabecc86db4c94366b192d483124b7218de9cb3f7"
+    }
+   ],
+   "drawingLabel": "Rowing barre buste penché",
+   "observedMovement": "Buste penché, barre tirée vers le nombril, dos plat. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "rowing-barre-buste-penche-pronation"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/9e7f92622aca6913.gif",
+   "assetSha256": "9e7f92622aca69130d7c7f0627ff58e031bc5bf633a0ac98cee3edfdc795d73e",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "32cf113792f495775329fb7ece7bb0022339bb1f76aa58f1d98e844d7988313c"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "4495bc3b0a3d2912939255f072c602ef52774f51b9bca8298b7c3017e6de3e10"
+    }
+   ],
+   "drawingLabel": "Élévations latérales",
+   "observedMovement": "Debout, bras qui montent latéralement jusqu'à l'horizontale. Conforme aux élévations latérales ; les variantes assises et inclinées ne sont pas montrées.",
+   "verdict": "partial-mismatch",
+   "usedFor": [
+    "elevations-laterales-assises",
+    "elevations-laterales-assises-variante",
+    "elevations-laterales-coude-a-90",
+    "elevations-laterales-incline-30-face-au-banc",
+    "elevations-laterales-incline-30",
+    "elevations-laterales-incline-45",
+    "elevations-laterales",
+    "elevations-laterales-incline",
+    "elevations-laterales-lean-away"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/9f8ae03b97d31344.gif",
+   "assetSha256": "9f8ae03b97d31344f9b2cd28aad7623c6f7060223f060fd9d818c77e48a57ca8",
+   "width": 480,
+   "height": 262,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "0aeff5ecc3b7d601fec1bc0bf9843939c485df29dd12fc910fa2d42c35be2695"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "3782a155d6048be9771c1e42264901cbbb744371ac2c236e2ab96f45c16aae17"
+    }
+   ],
+   "drawingLabel": "Leg press",
+   "observedMovement": "Presse à cuisses, pieds sur le plateau, poussée puis retour contrôlé. Conforme au leg press ; ne montre pas d'extension de jambes (leg extension qui l'utilise).",
+   "verdict": "partial-mismatch",
+   "usedFor": [
+    "leg-press",
+    "leg-extension",
+    "leg-press-unilateral"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/a8b1d1173ade4e8f.gif",
+   "assetSha256": "a8b1d1173ade4e8f688967121cd0d74df3eae48a0ce1448f79ecf0a20624e571",
+   "width": 403,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "be0812d4ab8ac44ef9abc4fdb7d2863731da83de17c26f2efcf3525cf08d9490"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "5be0164bc233da14a0dd945f023493b773b9b271af106df4c6c380ee25f549d6"
+    }
+   ],
+   "drawingLabel": "Soulevé de terre",
+   "observedMovement": "Barre au sol, montée dos plat, verrouillage debout. Conforme au soulevé de terre et à ses variantes.",
+   "verdict": "consistent",
+   "usedFor": [
+    "souleve-de-terre",
+    "souleve-de-terre-partiel-prise-snatch",
+    "souleve-de-terre-partiel",
+    "souleve-de-terre-test-1rm"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/b395c84efcad344b.gif",
+   "assetSha256": "b395c84efcad344bcccf5d3babb12e7a358cb2370fadb1ee7002ab763bdcc78b",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "33319a066117cc7e1086bccc2ace60ecd2636ead8af2276cd6aabda7440e25d3"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "a559c1256d147de77a8163b7e2b4e31e86f69eace244b9c4872de150f1e5ffdb"
+    }
+   ],
+   "drawingLabel": "Câbles croisés",
+   "observedMovement": "Debout entre deux poulies, bras qui se croisent devant la poitrine. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "cables-croises",
+    "ecartes-cables-incline",
+    "cables-croises-rotation-externe"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/b4522eb6968d20d0.gif",
+   "assetSha256": "b4522eb6968d20d0559bce18552eca086eae217cf32b4a9443e5682f8158f959",
+   "width": 403,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "7e8580501e68e0afdc388ea53ea9b40b979b80324a07951c5633a4ed6b5e5196"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "ff1306de3d10ea34c3bbd097ac5f1dd5cb30ef37e1b5cf7fa73b0a608ec05485"
+    }
+   ],
+   "drawingLabel": "Développé haltères incliné 45°",
+   "observedMovement": "Banc incliné, haltères poussés, descente contrôlée. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "developpe-halteres-incline-45",
+    "developpe-halteres-incline"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/b54f07a7b66c1aed.gif",
+   "assetSha256": "b54f07a7b66c1aed8ffedc004381f3f68325032417e854b6b2a1eb0f3fa2a269",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "92cf5aaa3e5e6e2bc3ba994340ce43216a3cf77d2594bdffe0c9d8534b875e02"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "3e835d25bde05d5dbd2a5c6fd153707a1d0455c076a3e6fafc841d6d86e4a86c"
+    }
+   ],
+   "drawingLabel": "Curl haltères incliné",
+   "observedMovement": "Assis sur banc incliné, haltères en supination, flexion des coudes. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "curl-halteres-incline",
+    "curl-haltere-supination-banc-scott-90",
+    "curl-halteres-incline-supination",
+    "curl-halteres-incline-prise-neutre"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/ba6ba483a1372c9e.gif",
+   "assetSha256": "ba6ba483a1372c9e61d5b63fb00d44974b009319923258c5ec9405440c9b8197",
+   "width": 480,
+   "height": 262,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "dad939ff66c2dbdf1b5f9cd57d82f81439af9b4b554c420a17ac49b837fca9e8"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "1ef7c27810520b00f856ee0e7015621a499b3ef4089b235cfce094058f183175"
+    }
+   ],
+   "drawingLabel": "Développé incliné barre",
+   "observedMovement": "Banc incliné, descente sur le haut des pectoraux puis poussée. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "developpe-incline-barre"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/c4d2de309fa47b4c.gif",
+   "assetSha256": "c4d2de309fa47b4ce66603636791774145189a27d21aa3f2b4e5664023ec29ad",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "92d5e78036fa4404ccefaff59f8c27aeeaf76361c43ce5ff139bd458c71b1b01"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "1b557698c81d7d39e44bc6c20eff4e1683a9628bb6d8f58b421b1775e4a6fdb7"
+    }
+   ],
+   "drawingLabel": "Rowing barre EZ supination",
+   "observedMovement": "Buste penché, barre EZ en supination tirée vers le ventre. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "rowing-barre-ez-supination-buste-penche"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/d13d9f751f4731ab.gif",
+   "assetSha256": "d13d9f751f4731abdb4249c316f468cf34bc0d3d80128d5b539c24cc44c03bd0",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "549fa2139ec3addd17da700c23d2b2b48b9ed021e760e3acbc265afa536b0d8b"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "6c6ecd6bd4101fecd060836bb57217a2ec32ea7293449c31ec49c26293c75881"
+    }
+   ],
+   "drawingLabel": "Mollets assis",
+   "observedMovement": "Assis à la machine, chevilles sous les coussins, montée puis descente des talons. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "mollets-assis"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/f529e06a69b973f4.gif",
+   "assetSha256": "f529e06a69b973f45725a5acaf26bc609386433ecc2ec405d3344312495c9f06",
+   "width": 403,
+   "height": 440,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "4749b0796f19c7141af0fa03f28540e5f29da60c49b9e8cb90c1f6bda01398b0"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "f83d1f85286c3e097cd6315fc00bc9b545a9622a1e0891942fa0453f59bd1025"
+    }
+   ],
+   "drawingLabel": "Mollets debout",
+   "observedMovement": "Debout, talons qui montent puis descendent. Conforme aux mollets debout ; ne montre pas la presse à mollets qui l'utilise aussi.",
+   "verdict": "partial-mismatch",
+   "usedFor": [
+    "mollets-debout",
+    "mollets-a-la-presse"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/f64281e2dbd7986f.gif",
+   "assetSha256": "f64281e2dbd7986ffff47880df22a7e9d3269be4cf65c860e44b34562271b096",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "8b4fdd9d102209b78eb631bdae1d0419790fd5502ac845be6313289df85592d5"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "4434010b1dba32c3179977be8109e86cff52192b12b5b169543a2851ed283b8c"
+    }
+   ],
+   "drawingLabel": "Back extension horizontal",
+   "observedMovement": "Banc à extension, buste qui descend puis remonte. Le banc paraît incliné ; l'horizontalité demandée n'est pas visible.",
+   "verdict": "variant-to-confirm",
+   "usedFor": [
+    "back-extension-horizontal",
+    "back-extension-45-prise-snatch"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/fabb86971a81ea03.gif",
+   "assetSha256": "fabb86971a81ea035ec62db1f4ca051ec6e0b79883ecc8cf8f3efcf9e8b583ea",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "b824d80cdb680fbfee515733632381c8b8e380a2f625bff3a6e2f0f3d493dea0"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "03d41f2f424f5dd51186f37152e4e2279a32776ab10275af43314bba033e942f"
+    }
+   ],
+   "drawingLabel": "Leg curl debout",
+   "observedMovement": "Machine de leg curl debout, jambe fléchie puis tendue, ischio-jambiers ciblés. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "leg-curl-debout"
+   ],
+   "finalAccepted": false
+  },
+  {
+   "path": "/media/ff100d7322ba1193.gif",
+   "assetSha256": "ff100d7322ba11931e490aec507c60e18341cdcfcb9b230fb9bd1848ac6f8fd6",
+   "width": 440,
+   "height": 240,
+   "frameCount": 2,
+   "reviewedFrameIndices": [
+    0,
+    1
+   ],
+   "frames": [
+    {
+     "index": 0,
+     "durationMs": 650,
+     "rgbaSha256": "592b85d9119177df68708937946461225c628a162f2f8f18cdf755fd27e457c8"
+    },
+    {
+     "index": 1,
+     "durationMs": 650,
+     "rgbaSha256": "025b1a436265c5eea886b1ec7d38cabf1592cdc7b7f590157c6677e977df9642"
+    }
+   ],
+   "drawingLabel": "Développé haltères plat, prise neutre",
+   "observedMovement": "Allongé, haltères en prise neutre, poussée puis descente. Conforme.",
+   "verdict": "consistent",
+   "usedFor": [
+    "developpe-halteres-plat-prise-neutre",
+    "developpe-halteres-incline-45-prise-neutre"
+   ],
+   "finalAccepted": false
+  }
+ ],
+ "coverage": {
+  "packagedGifs": 94,
+  "reviewedBefore": 59,
+  "reviewedHere": 30,
+  "stillUnreviewed": [],
+  "note": "Aucun dessin restant ne peut être déclaré validé par cette passe : verdicts « variant-to-confirm », « partial-mismatch » et « mismatch-kept-open » conservent les groupes ouverts."
+ }
+}

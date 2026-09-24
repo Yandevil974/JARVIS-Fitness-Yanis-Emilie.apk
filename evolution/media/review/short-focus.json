@@ -1,0 +1,418 @@
+{
+  "date": "2026-09-23",
+  "releaseReady": false,
+  "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "method": "Focused re-review of 13 two-frame GIFs at 300px per frame, all five ordered sheets read. This is a subset of the 48 short GIFs, not 13 new assets or a full timed all-surface acceptance. Unassigned means no resolved musculation exercise, not unused app-wide.",
+  "clipCount": 13,
+  "reviewedFrameCount": 26,
+  "clips": [
+    {
+      "number": 1,
+      "path": "/media/10ab787fbf26b1f4.gif",
+      "assetSha256": "10ab787fbf26b1f4d54bdea8c6e46c5d379ebb72408006befecea1881b63feca",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "7664f18d96e5f6d96e316cad5678768149990b0c08f949955d30402b46029f97"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "e5c4ac7cfc2e532aca6d7798bce92a6e48118fc561486c7cb0a6b949a235a223"
+        }
+      ],
+      "observedMovement": "Un pied sur marche, autre jambe vers le sol ; deux poses très proches, aucune élévation claire du talon de la jambe porteuse.",
+      "decisionNotes": "Ne démontre pas clairement les mollets unilatéraux prescrits ; pas de nouvelle association.",
+      "baselineExerciseIds": [
+        "mollets-unilateraux"
+      ],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 2,
+      "path": "/media/2e234599c9335530.gif",
+      "assetSha256": "2e234599c933553069674ed226982c52a5a756503a20f3bdb2ae9c6480795c55",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "b1632a908438bf034ba9629759c4a7ec43269b0e660321ddd994a8751cc2028b"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "afcbae1e014ddd2f2b07ac1086f8182e338ddb0841df5ee86a44d62a8fcf6162"
+        }
+      ],
+      "observedMovement": "Pompes inclinées, mains au bord, jambes immergées et corps aligné dans l’eau.",
+      "decisionNotes": "Geste de base compatible avec Pompes au bord ; technique, boucle et surfaces à confirmer. Pas un dip sur barres.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [
+        "Pompes au bord"
+      ],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 3,
+      "path": "/media/37f614cd3432709b.gif",
+      "assetSha256": "37f614cd3432709b8d2a251f2fcc3189a1cc630531203b13b60cfff626f6b503",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "6e77a63a9deba140239994acb43de65abbb2df4b528ddb411006c7f8b78221ff"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "94bf849d77a1748bc38b218f67f2b949b9f053cbc975c566ddc7e5b7591b51eb"
+        }
+      ],
+      "observedMovement": "Un pied sur une caisse et l’autre au sol ; poses très proches, pas de montée complète.",
+      "decisionNotes": "Ne pas substituer au step-up : amplitude complète non montrée.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 4,
+      "path": "/media/4c2b19fa924f90a8.gif",
+      "assetSha256": "4c2b19fa924f90a8f97cb8467ba138a9e26f4fceaef49ebc80e687c2a350adee",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "d6eccc46aa8240eca627651928cf48155614d2b10b8f3b81d9ab505806e2197f"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "34c97ab624ce786983d8438c81a96e807cebf713559a2d56dd67933f38b76d91"
+        }
+      ],
+      "observedMovement": "Extension du coude au-dessus de la tête, debout en fente, corde reliée à la poulie basse.",
+      "decisionNotes": "Compatible de base avec French press poulie basse, pas avec barre EZ ni haltères sur banc. Ne pas remplacer la variante poulie.",
+      "baselineExerciseIds": [
+        "triceps-extensions-halteres-banc-plat",
+        "french-press-poulie-basse",
+        "french-press-barre-ez",
+        "french-press-haltere-un-bras",
+        "extensions-triceps-halteres-incline",
+        "extensions-triceps-halteres-plat"
+      ],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 5,
+      "path": "/media/5d6a89132df205f8.gif",
+      "assetSha256": "5d6a89132df205f8c8b317a4b772fb16243420b1f04ca6c57d9428b7a13d512b",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "c51504da71ef62c56c81f071f40cac57403efa7a1d7c7c7428f1331a0d05dcdf"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "a6ab47459415f6509070313e683992651ce4a593b631c1613e627021c5372be0"
+        }
+      ],
+      "observedMovement": "Extension triceps debout avec barre coudée au-dessus de la tête, flexion derrière la tête.",
+      "decisionNotes": "Ne montre ni pullover combiné, ni barre au front couché, ni California press. Les noms génériques restent ambigus ; pas de remplacement de famille.",
+      "baselineExerciseIds": [
+        "extensions-triceps-barre-ez",
+        "barre-au-front-pushdown-triceps",
+        "extensions-triceps-pullover-barre-ez",
+        "california-press-barre-au-cou",
+        "extensions-triceps-barre-ez-pullover"
+      ],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 6,
+      "path": "/media/a8fb4616e53e9cb9.gif",
+      "assetSha256": "a8fb4616e53e9cb9d485acc9691e7eb9ce98c6ea86ab35113d63f31a476db160",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "19e2e7062687c3df1bd1663f084679184013665d5b6f6d1c73f867e9cbabb31f"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "79434e3d4c4d732dad6922f3b458fe8663c225090cb2cadb7a101bc4bbb768c6"
+        }
+      ],
+      "observedMovement": "Traction en position haute dans les deux poses, jambes croisées puis repliées.",
+      "decisionNotes": "Pas de phase basse bras tendus : pas un remplacement validé pour les tractions.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 7,
+      "path": "/media/b0d0b89c32ca0aec.gif",
+      "assetSha256": "b0d0b89c32ca0aecd6753e6d90e4c6f13636fa6191580b0a76e84fe558cdd7b2",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "59b274b5343a054a06e064b0585140c0631855cd0ecb0c19405ffe67023a49ce"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "95ccbaeacbbca0972194e320ee00b3dac260fdd53a683ff441d94bca73d4f7ac"
+        }
+      ],
+      "observedMovement": "Traction en position haute, pieds et coloration musculaire changent ; coudes restent fléchis.",
+      "decisionNotes": "Pas de cycle de traction complet : ne pas réutiliser sur un simple rapprochement du nom.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 8,
+      "path": "/media/c3a2b9892161522e.gif",
+      "assetSha256": "c3a2b9892161522e3cae0b2b1468181f8ad0bc91d44aaf2cd4233a1846068d8f",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "df7731fd07322fbbad26c5f6bb4fd4ea5b1ac38646a3f74b6ab5dbcc140ee026"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "68acd75f999eb2438ac5f718a5d774327ace7be481b11ce405fb956d71b6a02e"
+        }
+      ],
+      "observedMovement": "Dips sur barres, tête vers la droite puis la gauche sans changement cohérent des appuis et des jambes.",
+      "decisionNotes": "Défaut d’orientation confirmé dans les deux images et au retour de boucle ; aucune correction par miroir/rotation.",
+      "baselineExerciseIds": [
+        "triceps-dips",
+        "dips"
+      ],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 9,
+      "path": "/media/e035a3d8e8c21744.gif",
+      "assetSha256": "e035a3d8e8c21744f7de801daed7f4708bac75fdcd337151b93e0f143368bd84",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 500,
+          "rgbaSha256": "a635f0a968ef98819edf4f923ab47e3a84c77c03dc4e93e75182dbd6b0de6f51"
+        },
+        {
+          "index": 1,
+          "durationMs": 500,
+          "rgbaSha256": "88e611ad2b2e98bfda63f974677cc1eadc174d9b367d5070a99de274c6323bc7"
+        }
+      ],
+      "observedMovement": "Montées de genoux alternées, bras en opposition, buste vertical dans l’eau.",
+      "decisionNotes": "Geste aquatique de base identifiable ; ne pas réutiliser comme exercice terrestre. Pas d’acceptation de toutes ses associations.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [
+        "Aqua-jogging sur place"
+      ],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 10,
+      "path": "/media/ea226c444f72de0f.gif",
+      "assetSha256": "ea226c444f72de0fcc6dbd84cc42ea2abb43bfc269027c99bc7b78b8e12a8cbf",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "3210db6138c3a41b6b6138670d4d92b003875a61a4af5d8ce766b7afb607ff6b"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "d7fa6e6d2fe81a66ce1f305ac59eb7933f64dbea904a0e7e8e6753d784317860"
+        }
+      ],
+      "observedMovement": "Extension triceps couché sur banc plat avec barre EZ : bras élevés puis flexion du coude, barre vers le front.",
+      "decisionNotes": "Deux positions, orientation et appuis cohérents à l’examen des images et de leur succession cyclique ; pas une animation continue. Correspond au French press barre EZ et à son conseil embarqué « Coudes fixes, barre vers le front ». Réassociation de cet identifiant seulement ; autres variantes non déduites.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 11,
+      "path": "/media/ebc7379850a4ee2f.gif",
+      "assetSha256": "ebc7379850a4ee2f98e033812ee8c636eaf7fa44d172682c49f40f78b79a5f22",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 650,
+          "rgbaSha256": "ed452cdcc2ccdb0662ac2d0a8ba08079774959e16523f5e5ca5ca3675f2e39b2"
+        },
+        {
+          "index": 1,
+          "durationMs": 650,
+          "rgbaSha256": "5f8ef7787062983eb2129b2fab9d209a797db9b001857c1c5c64ab170af8fc5e"
+        }
+      ],
+      "observedMovement": "Traction en position haute dans les deux poses, changement minime des jambes.",
+      "decisionNotes": "Pas de départ bras tendus ni amplitude complète : pas de remplacement validé.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 12,
+      "path": "/media/fd7c5fb1226873f6.gif",
+      "assetSha256": "fd7c5fb1226873f67a1c3e483d4eaa7a21fa5638452296bcac3c864b6f4e158e",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 500,
+          "rgbaSha256": "c80ce3e0238d1d921e4d7f04686a94c18c7ff1b1b53ccc1e51fc5d901241d59a"
+        },
+        {
+          "index": 1,
+          "durationMs": 500,
+          "rgbaSha256": "d727d27a8dde2595e4c899f8f670d943cbc04841aec5519dba55800e7d8972b4"
+        }
+      ],
+      "observedMovement": "Appui des avant-bras sur le bord, buste oblique dans l’eau ; une jambe monte, l’autre reste basse.",
+      "decisionNotes": "Image aquatique, mais alternance complète des battements et consigne exacte à vérifier ; pas un kickback terrestre.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [
+        "Battements au bord"
+      ],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    },
+    {
+      "number": 13,
+      "path": "/media/fe34482aa6faf932.gif",
+      "assetSha256": "fe34482aa6faf932912d5ea52f3e61d3a66150905ecc63ecebd4c99793133c86",
+      "frameCount": 2,
+      "reviewedFrameIndices": [
+        0,
+        1
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 500,
+          "rgbaSha256": "5f72aa404c839c72b1cafa16bc726bf045a846b03ab50881829f8855047f2845"
+        },
+        {
+          "index": 1,
+          "durationMs": 500,
+          "rgbaSha256": "618e148e311ee26c86a5946c33cd490fd3a5485688a26757018facae7cca4fd9"
+        }
+      ],
+      "observedMovement": "Montées de genoux alternées dans l’eau, buste face caméra, mains près de la surface.",
+      "decisionNotes": "Pas de talon ramené vers la fesse ; ne convient pas à des talons-fesses aquatiques.",
+      "baselineExerciseIds": [],
+      "baselinePoolGuides": [
+        "Montées de genoux"
+      ],
+      "playbackInAllAppSurfaces": "pending",
+      "finalAccepted": false
+    }
+  ],
+  "frenchPressEvidence": {
+    "exerciseId": "french-press-barre-ez",
+    "baselineBundleSha256": "f80a7e82cbe8d45b7c959541ce384c54f3694582eef14515467dbfef204f9f26",
+    "existingSourceHint": "\"french press barre ez\":{\"img\":\"/media/ea226c444f72de0f.gif\",\"tip\":\"💡 Coudes fixes, barre vers le front.\"}",
+    "note": "The original bundle contains this precise guide but the effective exercise resolver selects a cable image. Reuse based on observed frames AND prescribed equipment/guide, not filename alone."
+  },
+  "reviewedThumbnails": [
+    {
+      "path": "/thumbs/ea226c444f72de0f.webp",
+      "sha256": "3c19534d8cc9de1a02d6c2a0899031eb7470a811da18608a219c8758941b7000",
+      "visualReview": "Displayed at original thumbnail size; matches the associated GIF movement, equipment and orientation. No new thumbnail generated."
+    },
+    {
+      "path": "/thumbs/8eecb0152081ff26.webp",
+      "sha256": "952415f8d26d4a608b8be5e3955a252b8ea6d5af44cdf4e993166ace303b87f0",
+      "visualReview": "Displayed at original thumbnail size; matches the associated GIF movement, equipment and orientation. No new thumbnail generated."
+    }
+  ]
+}

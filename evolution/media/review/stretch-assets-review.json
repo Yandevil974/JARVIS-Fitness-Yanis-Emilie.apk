@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-23",
+  "status": "open",
+  "releaseReady": false,
+  "groupsClosed": 0,
+  "visuallyValidated": 0,
+  "evidence": [
+    "review/stretch-assets-16.png (16 dessins d’étirement, pleine image)"
+  ],
+  "meaning": "Relire chaque dessin d’étirement contre sa consigne, sans réécrire aucune consigne. « Conforme » décrit l’accord image/consigne, ce n’est pas une validation finale.",
+  "readings": {
+    "stretch-fes-0": [
+      "partial-mismatch",
+      "Le dessin montre un pigeon AU SOL, genou avant posé sur le tapis, buste droit : la consigne annonce une position assise, cheville croisée sur l’autre genou. Posture différente. Le dessin « piriforme assis » (fes-1) montre, lui, exactement cette position assise cheville sur le genou."
+    ],
+    "stretch-piriforme": [
+      "consistent",
+      "Assis sur un banc, cheville croisée sur le genou opposé : correspond au piriforme assis annoncé."
+    ],
+    "stretch-triceps-coude": [
+      "consistent",
+      "Une main au-dessus de la tête, l’autre tirant le coude : correspond au coude au-dessus de la tête."
+    ],
+    "stretch-triceps-dos": [
+      "partial-mismatch",
+      "Le fichier montre un DOS avec le muscle surligné, pas une posture d’étirement : la main entre les omoplates n’est pas visible. La posture correcte existe déjà dans le pack (dessin « coude au-dessus de la tête »)."
+    ],
+    "stretch-mollet-mur": [
+      "consistent",
+      "Avant-bras au mur, jambe arrière tendue, talon au sol : correspond à l’étirement du mollet contre le mur."
+    ],
+    "stretch-mollet-marche": [
+      "partial-mismatch",
+      "Le dessin montre AUSSI un étirement au mur : le talon sous le niveau d’une marche n’est pas montré."
+    ],
+    "stretch-adduction-debout": [
+      "partial-mismatch",
+      "Fente latérale jambes écartées, adducteurs surlignés : le croisement de jambes debout décrit pour le moyen fessier/TFL n’est pas montré, et le muscle surligné est l’adducteur."
+    ],
+    "stretch-flechisseur-hanche": [
+      "consistent",
+      "Position du cavalier, genou au sol, bassin avancé : correspond au fléchisseur de hanche."
+    ],
+    "stretch-ep-arriere": [
+      "partial-mismatch",
+      "Le personnage est debout, bras le long du corps, épaules surlignées : les mains croisées derrière le dos ne sont pas montrées."
+    ],
+    "stretch-ep-posterieur": [
+      "consistent",
+      "Bras tendu devant la poitrine, tiré par l’autre main : correspond au bras tendu devant, main tirée."
+    ],
+    "stretch-ep-lateral": [
+      "consistent",
+      "Bras croisé devant la poitrine, main à plat sur l’épaule opposée : correspond au bras tendu contre la poitrine."
+    ],
+    "stretch-biceps": [
+      "consistent",
+      "Debout face au mur, main en appui derrière, bras tendu : correspond au bras tendu derrière."
+    ],
+    "stretch-avb-flechisseurs": [
+      "partial-mismatch",
+      "Appui au sol et jambe arrière fléchie : l’étirement manuel de l’avant-bras (poignet tiré) n’est pas montré."
+    ],
+    "stretch-avb-extenseurs": [
+      "consistent",
+      "Bras fléchi, paume tirée vers le bas par l’autre main : correspond à l’étirement des extenseurs de l’avant-bras."
+    ],
+    "stretch-isc-flexion": [
+      "consistent",
+      "Flexion avant debout, jambes tendues, mains vers les pieds : correspond à la flexion avant jambes tendues."
+    ],
+    "stretch-isc-une-jambe": [
+      "consistent",
+      "Assis, une jambe tendue, l’autre pliée, mains vers le pied : correspond à une jambe tendue et une pliée."
+    ]
+  }
+}

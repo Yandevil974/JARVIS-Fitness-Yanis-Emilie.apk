@@ -1,0 +1,1270 @@
+{
+ "note": "Machine extraction of the shipped alias map Z4 (exercise id -> drawing name) plus the shipped resolution for every exercise that has no drawing of its own. TRIAGE ONLY: shared words are not a review decision and this file closes no group.",
+ "aliasEntryCount": 104,
+ "exerciseWithoutOwnDrawing": 114,
+ "rows": [
+  {
+   "id": "pont-fessier-au-sol-activation",
+   "name": "Pont fessier au sol — activation",
+   "aliasTarget": "Glute bridge pieds sur banc",
+   "resolvedName": "Glute bridge pieds sur banc",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "leg-curl-machine-ou-swiss-ball-leg-curl",
+   "name": "Leg curl machine (ou swiss-ball leg curl)",
+   "aliasTarget": "Leg curl machine",
+   "resolvedName": "Leg curl machine",
+   "level": "variante",
+   "sharedWords": [
+    "curl",
+    "leg"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "pallof-press-a-l-elastique",
+   "name": "Pallof press à l'élastique",
+   "aliasTarget": "Pallof press à la poulie",
+   "resolvedName": "Pallof press à la poulie",
+   "level": "variante",
+   "sharedWords": [
+    "pallof",
+    "press"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "face-pull-a-l-elastique",
+   "name": "Face pull à l'élastique",
+   "aliasTarget": "Face pull à la poulie",
+   "resolvedName": "Face pull à la poulie",
+   "level": "variante",
+   "sharedWords": [
+    "face",
+    "pull"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "step-up-sur-banc-hauteur-du-genou",
+   "name": "Step-up sur banc (hauteur du genou)",
+   "aliasTarget": "Fentes avant alternées",
+   "resolvedName": "Fentes avant alternées",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "clamshell-a-l-elastique",
+   "name": "Clamshell à l'élastique",
+   "aliasTarget": "Abduction assise (machine ou élastique)",
+   "resolvedName": "Abduction assise (machine ou élastique)",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "abduction-hanche-a-l-elastique",
+   "name": "Abduction hanche à l'élastique",
+   "aliasTarget": "Abduction assise (machine ou élastique)",
+   "resolvedName": "Abduction assise (machine ou élastique)",
+   "level": "variante",
+   "sharedWords": [
+    "abduction"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "kickback-a-l-elastique",
+   "name": "Kickback à l'élastique",
+   "aliasTarget": "Kickback à la poulie",
+   "resolvedName": "Kickback à la poulie",
+   "level": "variante",
+   "sharedWords": [
+    "kickback"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "fire-hydrant-a-l-elastique",
+   "name": "Fire hydrant à l'élastique",
+   "aliasTarget": "Abduction hanche debout à la poulie",
+   "resolvedName": "Abduction hanche debout à la poulie",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "abduction-hanche-a-la-poulie-myo-reps",
+   "name": "Abduction hanche à la poulie — myo-reps",
+   "aliasTarget": "Abduction hanche à la poulie",
+   "resolvedName": "Abduction hanche à la poulie",
+   "level": "variante",
+   "sharedWords": [
+    "abduction",
+    "hanche"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "kickback-a-la-poulie-drop-set-final",
+   "name": "Kickback à la poulie — drop set final",
+   "aliasTarget": "Kickback à la poulie",
+   "resolvedName": "Kickback à la poulie",
+   "level": "variante",
+   "sharedWords": [
+    "kickback"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "elevations-laterales-halteres-myo-reps",
+   "name": "Élévations latérales haltères — myo-reps",
+   "aliasTarget": "Élévations latérales haltères",
+   "resolvedName": "Élévations latérales haltères",
+   "level": "variante",
+   "sharedWords": [
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+   "name": "Hip thrust barre — test de charge max (3-5 reps)",
+   "aliasTarget": "Hip thrust barre",
+   "resolvedName": "Hip thrust barre",
+   "level": "variante",
+   "sharedWords": [
+    "hip",
+    "thrust"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "souleve-de-terre-roumain-barre-test-3-5-reps",
+   "name": "Soulevé de terre roumain barre — test (3-5 reps)",
+   "aliasTarget": "Soulevé de terre roumain barre",
+   "resolvedName": "Soulevé de terre roumain barre",
+   "level": "variante",
+   "sharedWords": [
+    "roumain",
+    "souleve",
+    "terre"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "rowing-barre-buste-penche-test-3-5-reps",
+   "name": "Rowing barre buste penché — test (3-5 reps)",
+   "aliasTarget": "Rowing barre buste penché",
+   "resolvedName": "Rowing barre buste penché",
+   "level": "variante",
+   "sharedWords": [
+    "buste",
+    "penche",
+    "rowing"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-militaire-halteres-assis-test-3-5-reps",
+   "name": "Développé militaire haltères assis — test (3-5 reps)",
+   "aliasTarget": "Développé militaire haltères assis",
+   "resolvedName": "Développé militaire haltères assis",
+   "level": "variante",
+   "sharedWords": [
+    "developpe",
+    "militaire"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "triceps-extensions-halteres-banc-plat",
+   "name": "Triceps extensions haltères, banc plat",
+   "aliasTarget": "French press barre EZ",
+   "resolvedName": "French press barre EZ",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "curl-scott-barre-ez-pronation",
+   "name": "Curl Scott barre EZ, pronation",
+   "aliasTarget": "Curl barre debout",
+   "resolvedName": "Curl barre debout",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "elevations-laterales-assises",
+   "name": "Élévations latérales assises",
+   "aliasTarget": null,
+   "resolvedName": "Élévations latérales assises (variante)",
+   "level": "famille",
+   "sharedWords": [
+    "assises",
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "elevations-laterales-coude-a-90",
+   "name": "Élévations latérales coude à 90°",
+   "aliasTarget": "Élévations latérales",
+   "resolvedName": "Élévations latérales",
+   "level": "variante",
+   "sharedWords": [
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "squat-cycliste-squat-complet",
+   "name": "Squat cycliste (squat complet)",
+   "aliasTarget": "Front squat",
+   "resolvedName": "Front squat",
+   "level": "variante",
+   "sharedWords": [
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "leg-extension",
+   "name": "Leg extension",
+   "aliasTarget": "Leg press",
+   "resolvedName": "Leg press",
+   "level": "variante",
+   "sharedWords": [
+    "leg"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "releves-de-jambes-allonge",
+   "name": "Relevés de jambes allongé",
+   "aliasTarget": "Relevés de jambes",
+   "resolvedName": "Relevés de jambes",
+   "level": "variante",
+   "sharedWords": [
+    "jambes",
+    "releves"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "crunch-sur-swiss-ball",
+   "name": "Crunch sur swiss ball",
+   "aliasTarget": "Jackknife sur swiss ball",
+   "resolvedName": "Jackknife sur swiss ball",
+   "level": "variante",
+   "sharedWords": [
+    "ball",
+    "swiss"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "tractions-pull-up",
+   "name": "Tractions (pull-up)",
+   "aliasTarget": "Tirage vertical prise large",
+   "resolvedName": "Tirage vertical prise large",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "fentes-bulgares-halteres-pied-avant-sureleve",
+   "name": "Fentes bulgares haltères (pied avant surélevé)",
+   "aliasTarget": "Bulgarian split squat",
+   "resolvedName": "Bulgarian split squat",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "releves-de-jambes-incline",
+   "name": "Relevés de jambes incliné",
+   "aliasTarget": "Relevés de jambes suspendu",
+   "resolvedName": "Relevés de jambes suspendu",
+   "level": "variante",
+   "sharedWords": [
+    "jambes",
+    "releves"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "tractions-prise-neutre-chin-up",
+   "name": "Tractions prise neutre (chin-up)",
+   "aliasTarget": "Tirage vertical prise neutre",
+   "resolvedName": "Tirage vertical prise neutre",
+   "level": "variante",
+   "sharedWords": [
+    "neutre",
+    "prise"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-scott-barre-ez-supination",
+   "name": "Curl Scott barre EZ, supination",
+   "aliasTarget": "Curl barre debout",
+   "resolvedName": "Curl barre debout",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "step-up-haut",
+   "name": "Step-up haut",
+   "aliasTarget": "Fentes avant alternées",
+   "resolvedName": "Fentes avant alternées",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "curl-scott-haltere-prise-neutre",
+   "name": "Curl Scott haltère, prise neutre",
+   "aliasTarget": "Curl haltères",
+   "resolvedName": "Curl haltères",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "barre-au-front-pushdown-triceps",
+   "name": "Barre au front (pushdown triceps)",
+   "aliasTarget": "Extensions triceps barre EZ",
+   "resolvedName": "Extensions triceps barre EZ",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "curl-poulie-basse-supination",
+   "name": "Curl poulie basse, supination",
+   "aliasTarget": "Curl barre debout",
+   "resolvedName": "Curl barre debout",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-halteres-assis-neutre-pronation",
+   "name": "Développé haltères assis, neutre→pronation",
+   "aliasTarget": null,
+   "resolvedName": "Développé militaire haltères assis",
+   "level": "famille",
+   "sharedWords": [
+    "developpe"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "back-extension-45-prise-snatch",
+   "name": "Back extension 45°, prise snatch",
+   "aliasTarget": "Back extension horizontal",
+   "resolvedName": "Back extension horizontal",
+   "level": "variante",
+   "sharedWords": [
+    "back",
+    "extension"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "rowing-assis-etirement",
+   "name": "Rowing assis + étirement",
+   "aliasTarget": "Rowing assis, prise neutre",
+   "resolvedName": "Rowing assis, prise neutre",
+   "level": "variante",
+   "sharedWords": [
+    "rowing"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "elevations-laterales-incline-30-face-au-banc",
+   "name": "Élévations latérales incliné 30° (face au banc)",
+   "aliasTarget": "Élévations latérales",
+   "resolvedName": "Élévations latérales",
+   "level": "variante",
+   "sharedWords": [
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "french-press-haltere-un-bras",
+   "name": "French press haltère un bras",
+   "aliasTarget": "French press barre EZ",
+   "resolvedName": "French press barre EZ",
+   "level": "variante",
+   "sharedWords": [
+    "french",
+    "press"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "back-squat-inertie-pause-complete",
+   "name": "Back squat inertie (pause complète)",
+   "aliasTarget": "Back squat",
+   "resolvedName": "Back squat",
+   "level": "variante",
+   "sharedWords": [
+    "back",
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "fentes-barre",
+   "name": "Fentes barre",
+   "aliasTarget": "Fentes avant alternées",
+   "resolvedName": "Fentes avant alternées",
+   "level": "variante",
+   "sharedWords": [
+    "fentes"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "tractions-supination-chin-up",
+   "name": "Tractions supination (chin-up)",
+   "aliasTarget": "Tirage vertical prise neutre",
+   "resolvedName": "Tirage vertical prise neutre",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "extensions-triceps-pullover-barre-ez",
+   "name": "Extensions triceps + pullover barre EZ",
+   "aliasTarget": "Extensions triceps barre EZ",
+   "resolvedName": "Extensions triceps barre EZ",
+   "level": "variante",
+   "sharedWords": [
+    "extensions",
+    "ez",
+    "triceps"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-haltere-supination-banc-scott-90",
+   "name": "Curl haltère supination, banc Scott 90°",
+   "aliasTarget": "Curl haltères incliné",
+   "resolvedName": "Curl haltères incliné",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-couche-prise-serree",
+   "name": "Développé couché prise serrée",
+   "aliasTarget": "Développé couché barre plat",
+   "resolvedName": "Développé couché barre plat",
+   "level": "variante",
+   "sharedWords": [
+    "couche",
+    "developpe"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "extensions-triceps-halteres-incline",
+   "name": "Extensions triceps haltères incliné",
+   "aliasTarget": "French press barre EZ",
+   "resolvedName": "French press barre EZ",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "pushdown-triceps-cable",
+   "name": "Pushdown triceps câble",
+   "aliasTarget": "Extension triceps à la poulie",
+   "resolvedName": "Extension triceps à la poulie",
+   "level": "variante",
+   "sharedWords": [
+    "triceps"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-scott-haltere-neutre",
+   "name": "Curl Scott haltère neutre",
+   "aliasTarget": "Curl haltères",
+   "resolvedName": "Curl haltères",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-zottman-assis",
+   "name": "Curl Zottman assis",
+   "aliasTarget": "Curl haltères",
+   "resolvedName": "Curl haltères",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-poulie-basse",
+   "name": "Curl poulie basse",
+   "aliasTarget": "Curl barre debout",
+   "resolvedName": "Curl barre debout",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "elevations-laterales-incline-30",
+   "name": "Élévations latérales incliné 30°",
+   "aliasTarget": "Élévations latérales",
+   "resolvedName": "Élévations latérales",
+   "level": "variante",
+   "sharedWords": [
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "elevations-laterales-incline-45",
+   "name": "Élévations latérales incliné 45°",
+   "aliasTarget": "Élévations latérales",
+   "resolvedName": "Élévations latérales",
+   "level": "variante",
+   "sharedWords": [
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "fentes-marchees",
+   "name": "Fentes marchées",
+   "aliasTarget": "Fentes avant alternées",
+   "resolvedName": "Fentes avant alternées",
+   "level": "variante",
+   "sharedWords": [
+    "fentes"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "leg-curl-allonge-pieds-pointes",
+   "name": "Leg curl allongé, pieds pointés",
+   "aliasTarget": null,
+   "resolvedName": "Leg curl allongé",
+   "level": "famille",
+   "sharedWords": [
+    "allonge",
+    "curl",
+    "leg"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "leg-curl-allonge-pieds-flechis",
+   "name": "Leg curl allongé, pieds fléchis",
+   "aliasTarget": null,
+   "resolvedName": "Leg curl allongé",
+   "level": "famille",
+   "sharedWords": [
+    "allonge",
+    "curl",
+    "leg"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "good-morning-debout",
+   "name": "Good morning debout",
+   "aliasTarget": "Soulevé de terre roumain barre",
+   "resolvedName": "Soulevé de terre roumain barre",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "developpe-halteres-incline-45-prise-neutre",
+   "name": "Développé haltères incliné 45°, prise neutre",
+   "aliasTarget": "Développé haltères plat, prise neutre",
+   "resolvedName": "Développé haltères plat, prise neutre",
+   "level": "variante",
+   "sharedWords": [
+    "developpe",
+    "neutre",
+    "prise"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "ecartes-halteres",
+   "name": "Écartés haltères",
+   "aliasTarget": "Écartés haltères décliné",
+   "resolvedName": "Écartés haltères décliné",
+   "level": "variante",
+   "sharedWords": [
+    "ecartes"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "rowing-haltere-buste-penche",
+   "name": "Rowing haltère buste penché",
+   "aliasTarget": "Rowing haltère un bras",
+   "resolvedName": "Rowing haltère un bras",
+   "level": "variante",
+   "sharedWords": [
+    "rowing"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-zottman-un-bras-banc-scott",
+   "name": "Curl Zottman un bras, banc Scott",
+   "aliasTarget": "Curl haltères",
+   "resolvedName": "Curl haltères",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "split-squat-poulie-basse",
+   "name": "Split squat poulie basse",
+   "aliasTarget": "Bulgarian split squat",
+   "resolvedName": "Bulgarian split squat",
+   "level": "variante",
+   "sharedWords": [
+    "split",
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "tractions-prise-large",
+   "name": "Tractions prise large",
+   "aliasTarget": "Tirage vertical prise large",
+   "resolvedName": "Tirage vertical prise large",
+   "level": "variante",
+   "sharedWords": [
+    "large",
+    "prise"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-halteres-incline-pronation",
+   "name": "Développé haltères incliné, pronation",
+   "aliasTarget": null,
+   "resolvedName": "Développé couché haltères",
+   "level": "famille",
+   "sharedWords": [
+    "developpe"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "souleve-de-terre-partiel-prise-snatch",
+   "name": "Soulevé de terre partiel, prise snatch",
+   "aliasTarget": "Soulevé de terre",
+   "resolvedName": "Soulevé de terre",
+   "level": "variante",
+   "sharedWords": [
+    "souleve",
+    "terre"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-halteres-incline-supination",
+   "name": "Curl haltères incliné, supination",
+   "aliasTarget": null,
+   "resolvedName": "Curl haltères incliné",
+   "level": "famille",
+   "sharedWords": [
+    "curl",
+    "incline"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-derriere-la-nuque",
+   "name": "Développé derrière la nuque",
+   "aliasTarget": "Développé militaire debout",
+   "resolvedName": "Développé militaire debout",
+   "level": "variante",
+   "sharedWords": [
+    "developpe"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "mollets-a-la-presse",
+   "name": "Mollets à la presse",
+   "aliasTarget": "Mollets debout",
+   "resolvedName": "Mollets debout",
+   "level": "variante",
+   "sharedWords": [
+    "mollets"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "ecartes-cables-incline",
+   "name": "Écartés câbles incliné",
+   "aliasTarget": "Câbles croisés",
+   "resolvedName": "Câbles croisés",
+   "level": "variante",
+   "sharedWords": [
+    "cables"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "rowing-assis-au-cou",
+   "name": "Rowing assis au cou",
+   "aliasTarget": "Rowing assis, prise neutre",
+   "resolvedName": "Rowing assis, prise neutre",
+   "level": "variante",
+   "sharedWords": [
+    "rowing"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "drop-lunges-fentes-sautees-controlees",
+   "name": "Drop lunges (fentes sautées contrôlées)",
+   "aliasTarget": "Fentes arrière alternées",
+   "resolvedName": "Fentes arrière alternées",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "glute-ham-raise",
+   "name": "Glute ham raise",
+   "aliasTarget": "Leg curl allongé",
+   "resolvedName": "Leg curl allongé",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "lean-away-pull-ups",
+   "name": "Lean away pull-ups",
+   "aliasTarget": "Tirage vertical prise large",
+   "resolvedName": "Tirage vertical prise large",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "developpe-halteres-incline-45",
+   "name": "Développé haltères incliné 45°",
+   "aliasTarget": "Développé haltères incliné",
+   "resolvedName": "Développé haltères incliné",
+   "level": "variante",
+   "sharedWords": [
+    "developpe",
+    "incline"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "rowing-haltere-un-bras-prise-neutre",
+   "name": "Rowing haltère un bras, prise neutre",
+   "aliasTarget": null,
+   "resolvedName": "Rowing haltère un bras",
+   "level": "famille",
+   "sharedWords": [
+    "rowing"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "souleve-de-terre-partiel",
+   "name": "Soulevé de terre partiel",
+   "aliasTarget": "Soulevé de terre",
+   "resolvedName": "Soulevé de terre",
+   "level": "variante",
+   "sharedWords": [
+    "souleve",
+    "terre"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "ab-wheel-roulette",
+   "name": "Ab wheel (roulette)",
+   "aliasTarget": "Jackknife sur swiss ball",
+   "resolvedName": "Jackknife sur swiss ball",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "curl-marteau",
+   "name": "Curl marteau",
+   "aliasTarget": "Curl marteau assis",
+   "resolvedName": "Curl marteau assis",
+   "level": "variante",
+   "sharedWords": [
+    "curl",
+    "marteau"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "curl-scott-90-haltere-supination",
+   "name": "Curl Scott 90° haltère supination",
+   "aliasTarget": "Curl haltères",
+   "resolvedName": "Curl haltères",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "california-press-barre-au-cou",
+   "name": "California press (barre au cou)",
+   "aliasTarget": "Extensions triceps barre EZ",
+   "resolvedName": "Extensions triceps barre EZ",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "elevations-laterales-incline",
+   "name": "Élévations latérales incliné",
+   "aliasTarget": "Élévations latérales",
+   "resolvedName": "Élévations latérales",
+   "level": "variante",
+   "sharedWords": [
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "safety-bar-squat-ou-barre-classique",
+   "name": "Safety bar squat (ou barre classique)",
+   "aliasTarget": "Back squat",
+   "resolvedName": "Back squat",
+   "level": "variante",
+   "sharedWords": [
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "cables-croises-rotation-externe",
+   "name": "Câbles croisés + rotation externe",
+   "aliasTarget": "Câbles croisés",
+   "resolvedName": "Câbles croisés",
+   "level": "variante",
+   "sharedWords": [
+    "cables",
+    "croises"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "pullover-cable-bras-tendus",
+   "name": "Pullover câble bras tendus",
+   "aliasTarget": "Tirage vertical prise pronation",
+   "resolvedName": "Tirage vertical prise pronation",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "rowing-assis-cable-unilateral",
+   "name": "Rowing assis câble unilatéral",
+   "aliasTarget": "Rowing assis, prise neutre",
+   "resolvedName": "Rowing assis, prise neutre",
+   "level": "variante",
+   "sharedWords": [
+    "rowing"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-zottman",
+   "name": "Curl Zottman",
+   "aliasTarget": "Curl haltères",
+   "resolvedName": "Curl haltères",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "squat-cycliste",
+   "name": "Squat cycliste",
+   "aliasTarget": "Front squat",
+   "resolvedName": "Front squat",
+   "level": "variante",
+   "sharedWords": [
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "leg-press-unilateral",
+   "name": "Leg press unilatéral",
+   "aliasTarget": "Leg press",
+   "resolvedName": "Leg press",
+   "level": "variante",
+   "sharedWords": [
+    "leg",
+    "press"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "wood-chop-poulie-haute",
+   "name": "Wood chop poulie haute",
+   "aliasTarget": "Crunch à la poulie",
+   "resolvedName": "Crunch à la poulie",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "developpe-haltere-un-bras-debout",
+   "name": "Développé haltère un bras debout",
+   "aliasTarget": "Développé militaire haltères assis",
+   "resolvedName": "Développé militaire haltères assis",
+   "level": "variante",
+   "sharedWords": [
+    "developpe"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "extensions-triceps-barre-ez-pullover",
+   "name": "Extensions triceps barre EZ + pullover",
+   "aliasTarget": "Extensions triceps barre EZ",
+   "resolvedName": "Extensions triceps barre EZ",
+   "level": "variante",
+   "sharedWords": [
+    "extensions",
+    "ez",
+    "triceps"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-concentration",
+   "name": "Curl concentration",
+   "aliasTarget": "Curl haltères",
+   "resolvedName": "Curl haltères",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "split-squat-barbell-pied-avant-sureleve",
+   "name": "Split squat barbell (pied avant surélevé)",
+   "aliasTarget": "Bulgarian split squat",
+   "resolvedName": "Bulgarian split squat",
+   "level": "variante",
+   "sharedWords": [
+    "split",
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-couche-decline-prise-serree",
+   "name": "Développé couché décliné prise serrée",
+   "aliasTarget": "Développé couché barre plat",
+   "resolvedName": "Développé couché barre plat",
+   "level": "variante",
+   "sharedWords": [
+    "couche",
+    "developpe"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "extensions-triceps-halteres-plat",
+   "name": "Extensions triceps haltères plat",
+   "aliasTarget": "French press barre EZ",
+   "resolvedName": "French press barre EZ",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "curl-halteres-incline-prise-neutre",
+   "name": "Curl haltères incliné, prise neutre",
+   "aliasTarget": null,
+   "resolvedName": "Curl haltères incliné",
+   "level": "famille",
+   "sharedWords": [
+    "curl",
+    "incline"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-halteres-assis-prise-neutre",
+   "name": "Développé haltères assis, prise neutre",
+   "aliasTarget": null,
+   "resolvedName": "Développé militaire haltères assis",
+   "level": "famille",
+   "sharedWords": [
+    "developpe"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "elevations-laterales-lean-away",
+   "name": "Élévations latérales lean away",
+   "aliasTarget": "Élévations latérales",
+   "resolvedName": "Élévations latérales",
+   "level": "variante",
+   "sharedWords": [
+    "elevations",
+    "laterales"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "tirage-vertical-lean-away",
+   "name": "Tirage vertical lean away",
+   "aliasTarget": "Tirage vertical prise pronation",
+   "resolvedName": "Tirage vertical prise pronation",
+   "level": "variante",
+   "sharedWords": [
+    "tirage",
+    "vertical"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "pullover-haltere-plat",
+   "name": "Pullover haltère plat",
+   "aliasTarget": "Tirage vertical prise pronation",
+   "resolvedName": "Tirage vertical prise pronation",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "developpe-couche-plat-inertie-depuis-les-pins",
+   "name": "Développé couché plat, inertie depuis les pins",
+   "aliasTarget": "Développé couché barre plat",
+   "resolvedName": "Développé couché barre plat",
+   "level": "variante",
+   "sharedWords": [
+    "couche",
+    "developpe",
+    "plat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-militaire-inertie-depuis-les-pins",
+   "name": "Développé militaire, inertie depuis les pins",
+   "aliasTarget": "Développé militaire debout",
+   "resolvedName": "Développé militaire debout",
+   "level": "variante",
+   "sharedWords": [
+    "developpe",
+    "militaire"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "drop-lunges-fentes-controlees",
+   "name": "Drop lunges (fentes contrôlées)",
+   "aliasTarget": "Fentes arrière alternées",
+   "resolvedName": "Fentes arrière alternées",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "developpe-couche-barre",
+   "name": "Développé couché barre",
+   "aliasTarget": null,
+   "resolvedName": "Développé couché barre plat",
+   "level": "famille",
+   "sharedWords": [
+    "couche",
+    "developpe"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "extensions-triceps-poulie",
+   "name": "Extensions triceps poulie",
+   "aliasTarget": "Extension triceps à la poulie",
+   "resolvedName": "Extension triceps à la poulie",
+   "level": "variante",
+   "sharedWords": [
+    "triceps"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "curl-barre",
+   "name": "Curl barre",
+   "aliasTarget": "Curl barre debout",
+   "resolvedName": "Curl barre debout",
+   "level": "variante",
+   "sharedWords": [
+    "curl"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "developpe-couche-test-1rm",
+   "name": "Développé couché — test 1RM",
+   "aliasTarget": "Développé couché barre plat",
+   "resolvedName": "Développé couché barre plat",
+   "level": "variante",
+   "sharedWords": [
+    "couche",
+    "developpe"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "back-squat-test-1rm",
+   "name": "Back squat — test 1RM",
+   "aliasTarget": "Back squat",
+   "resolvedName": "Back squat",
+   "level": "variante",
+   "sharedWords": [
+    "back",
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "souleve-de-terre-test-1rm",
+   "name": "Soulevé de terre — test 1RM",
+   "aliasTarget": "Soulevé de terre",
+   "resolvedName": "Soulevé de terre",
+   "level": "variante",
+   "sharedWords": [
+    "souleve",
+    "terre"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "developpe-militaire-test-1rm",
+   "name": "Développé militaire — test 1RM",
+   "aliasTarget": "Développé militaire debout",
+   "resolvedName": "Développé militaire debout",
+   "level": "variante",
+   "sharedWords": [
+    "developpe",
+    "militaire"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "pompes",
+   "name": "Pompes",
+   "aliasTarget": "Pompes inclinées (mains surélevées)",
+   "resolvedName": "Pompes inclinées (mains surélevées)",
+   "level": "variante",
+   "sharedWords": [
+    "pompes"
+   ],
+   "triage": "name-equal"
+  },
+  {
+   "id": "squat-au-poids-du-corps",
+   "name": "Squat au poids du corps",
+   "aliasTarget": "Goblet squat",
+   "resolvedName": "Goblet squat",
+   "level": "variante",
+   "sharedWords": [
+    "squat"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "rowing-a-l-elastique",
+   "name": "Rowing à l’élastique",
+   "aliasTarget": "Tirage horizontal à la poulie",
+   "resolvedName": "Tirage horizontal à la poulie",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "fentes-arriere-au-poids-du-corps",
+   "name": "Fentes arrière au poids du corps",
+   "aliasTarget": "Fentes arrière alternées",
+   "resolvedName": "Fentes arrière alternées",
+   "level": "variante",
+   "sharedWords": [
+    "arriere",
+    "fentes"
+   ],
+   "triage": "name-overlap"
+  },
+  {
+   "id": "mobilite-des-epaules",
+   "name": "Mobilité des épaules",
+   "aliasTarget": "Bird dog",
+   "resolvedName": "Bird dog",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  },
+  {
+   "id": "respiration-diaphragmatique",
+   "name": "Respiration diaphragmatique",
+   "aliasTarget": "Dead bug",
+   "resolvedName": "Dead bug",
+   "level": "variante",
+   "sharedWords": [],
+   "triage": "name-unrelated"
+  }
+ ]
+}

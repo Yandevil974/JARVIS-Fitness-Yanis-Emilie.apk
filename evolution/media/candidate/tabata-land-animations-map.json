@@ -1,0 +1,119 @@
+{
+ "map": {
+  "Jumping jacks": "/media/tabata-land-jumping-jacks.gif",
+  "Squats": "/media/tabata-land-squats.gif",
+  "Pompes": "/media/tabata-land-pompes.gif",
+  "Mountain climbers": "/media/tabata-land-mountain-climbers.gif",
+  "Fentes alternées": "/media/tabata-land-fentes-alternees.gif",
+  "Gainage planche": "/media/tabata-land-gainage-planche.gif",
+  "Burpees simplifiés": "/media/tabata-land-burpees-simplifies.gif",
+  "Relevés de jambes": "/media/tabata-land-releves-de-jambes.gif",
+  "Crunch": "/media/tabata-land-crunch.gif",
+  "Russian twist": "/media/tabata-land-russian-twist.gif",
+  "Dips au bord": "/media/tabata-land-dips-au-bord.gif",
+  "Pompes inclinées": "/media/tabata-land-pompes-inclinees.gif",
+  "Superman": "/media/tabata-land-superman.gif",
+  "Planche latérale G": "/media/tabata-land-planche-laterale-g.gif",
+  "Planche latérale D": "/media/tabata-land-planche-laterale-d.gif",
+  "Ponts fessiers": "/media/tabata-land-ponts-fessiers.gif",
+  "Squats sumo": "/media/tabata-land-squats-sumo.gif",
+  "Montées sur mollets": "/media/tabata-land-montees-sur-mollets.gif",
+  "Fentes arrière": "/media/tabata-land-fentes-arriere.gif",
+  "Chaise au mur": "/media/tabata-land-chaise-au-mur.gif",
+  "Battements de jambes": "/media/tabata-land-battements-de-jambes.gif",
+  "Dead bug": "/media/tabata-land-dead-bug.gif",
+  "Montées de genoux": "/media/tabata-land-montees-de-genoux.gif",
+  "Burpees": "/media/tabata-land-burpees.gif",
+  "Corde invisible": "/media/tabata-land-corde-invisible.gif",
+  "Patineurs": "/media/tabata-land-patineurs.gif",
+  "Squats sautés": "/media/tabata-land-squats-sautes.gif",
+  "Marche sur place": "/media/tabata-land-marche-sur-place.gif",
+  "Pompes au mur": "/media/tabata-land-pompes-au-mur.gif",
+  "Oiseau-chien": "/media/tabata-land-oiseau-chien.gif",
+  "High knees": "/media/tabata-land-high-knees.gif",
+  "Repos actif": "/media/tabata-land-repos-actif.gif",
+  "Respiration profonde": "/media/tabata-land-respiration-profonde.gif"
+ },
+ "files": {
+  "/media/tabata-land-jumping-jacks.gif": "0586539bf96cee260a5ab3fa53fe180a8b293a679180da9b265a87c0009f55f2",
+  "/media/tabata-land-squats.gif": "e673c655d15057c0cca148d43fcd54f438794a460ea63480f53f43c6439b20b3",
+  "/media/tabata-land-pompes.gif": "ee281d9bfdd957e78ad9623980270e927f1a1b4c6c214a0dc2f222f679f434f9",
+  "/media/tabata-land-mountain-climbers.gif": "7f0089fd6bc37b3ed9a08881e9d8a0161ef8a58925eeb92caa653741fe3aa7cc",
+  "/media/tabata-land-fentes-alternees.gif": "fd2994c5379edd2ac798cad9948a015c9e3dcc340a1fc78395e86829a32096a3",
+  "/media/tabata-land-gainage-planche.gif": "7fd8f6de2cecd33b34a8638d37a48b4ed145023639eb222cfeb9298714e64128",
+  "/media/tabata-land-burpees-simplifies.gif": "8d1847db753aa7a6688a09f9e688f8461071bf4698e1540b2e4d003eadb67904",
+  "/media/tabata-land-releves-de-jambes.gif": "1ed15eb2d74757a6e833f9c4d93c15d664433772577000068cf69faad3d5db19",
+  "/media/tabata-land-crunch.gif": "0770dab71ccac436a7a9b6c3b9dee18b518e53186ff9a228ca78202818871999",
+  "/media/tabata-land-russian-twist.gif": "7ad9697868d7443a25db4f48c193f1b0a254ff9a46c231adef1f62b33ae31374",
+  "/media/tabata-land-dips-au-bord.gif": "3f725c57362eae52270cf85dee3731806099bea0d6727ac857883e8af1d44616",
+  "/media/tabata-land-pompes-inclinees.gif": "58bacd5b7ff5095d84f254110535738c825bb9fd03609265b2824488ec6b4339",
+  "/media/tabata-land-superman.gif": "e088fdf66750d5ef43298aa49ada007a5937f6d412bbb81dd20b7d6e767fe0aa",
+  "/media/tabata-land-planche-laterale-g.gif": "af8cd24632e4478f51adff45a22f279e292455ef8b83df303e5abcdf8d142689",
+  "/media/tabata-land-planche-laterale-d.gif": "60adf560e901e6dbc7683404c4c897303389bb920ec4148ebad221a08eca561c",
+  "/media/tabata-land-ponts-fessiers.gif": "035858abee1c14fb42623dc811814de5bd8138f93a22be7e3ca638901c6b114e",
+  "/media/tabata-land-squats-sumo.gif": "3d87a536d09a9f749ce154dbb7e099b30b98048011986c6cb891f3e93f6c0fd2",
+  "/media/tabata-land-montees-sur-mollets.gif": "ad47deb39b7ceb8b4df96231e4419cb1cc218b1a6a2bb0ad00cd095b38444c85",
+  "/media/tabata-land-fentes-arriere.gif": "4e9fe12fdbb591aaff0259371bbd96f83f14d4b5be2c45db3a4f2adfeb7abf63",
+  "/media/tabata-land-chaise-au-mur.gif": "931a8fe62d95f9358926fcf151b9b65dabdbb351b225af749cc0e2a39c6e990a",
+  "/media/tabata-land-battements-de-jambes.gif": "348f99f3b87821707d7178cfb1d0c6b23d110bef1bb68eadef555a7a4b9e7d85",
+  "/media/tabata-land-dead-bug.gif": "fd0fcafa3769df10dbb154a0c3310b8e534067062ee4d072ecefdd53fb937e0a",
+  "/media/tabata-land-montees-de-genoux.gif": "1a3de5badf9ff81ce2060b1234451934f5b85806476fa3972607621e9ca24614",
+  "/media/tabata-land-burpees.gif": "399a6bcd5fb94900904a320abc301c6447ad2ddb884e0f68f1c3c17b688bb43d",
+  "/media/tabata-land-corde-invisible.gif": "c316c8f64bae804adc05ce4152081d80fd338bf9308c25270f026495f22949c6",
+  "/media/tabata-land-patineurs.gif": "7ded0e40e189b6ae4470cdb2ce1e24ab77002fa3fdcca0e45f609f134ba7eb98",
+  "/media/tabata-land-squats-sautes.gif": "6fc767e91a17cc80c7b77db29638ff63f57d854d230f26836c3477690741a17b",
+  "/media/tabata-land-marche-sur-place.gif": "ea2cdf0faa777ae6813ed6a066cfc0a9f175e7f861a512ff5bd4e8feabed42b8",
+  "/media/tabata-land-pompes-au-mur.gif": "97503df5888d9479654e72cdacc8fd4cbde12e85e8e10788625819144e2b05b9",
+  "/media/tabata-land-oiseau-chien.gif": "f0b1e972b7fa1a628ca121647133cbbd159071415449d33add69c2a941cd4f65",
+  "/media/tabata-land-high-knees.gif": "e9ee5e6e909efcf990a66d80117f2afd8679c037db1080dbfc3773deaaa4fcbb",
+  "/media/tabata-land-repos-actif.gif": "28680f3fc551a48a7fc5c9479846b9eaabcee486a7391831513ae962770b107b",
+  "/media/tabata-land-respiration-profonde.gif": "a9b16942fee54a7f0da0d8c611fd98048b1dd3939b7a8c19b4e17420328df67c"
+ },
+ "context": "Tabata au sol uniquement ; jamais en piscine, ni en etirement, ni en echauffement, ni au repos",
+ "source": "planches de deux positions produites le 24 septembre 2026 (evolution/media/tools/panels-to-gif.py)",
+ "styleMesure": {
+  "famille": "copie exacte des GIF aquatiques existants",
+  "format": "480 x 262",
+  "images": 2,
+  "duree_ms": 500,
+  "fond": "blanc, sol gris clair",
+  "eau": "aucune",
+  "couleurs": "peau chaude, short bleu, muscles surlignes orange"
+ },
+ "alias": {
+  "Planche": {
+   "path": "/media/tabata-land-gainage-planche.gif",
+   "memeMouvementQue": "Gainage planche",
+   "note": "meme mouvement sous un autre nom dans le generateur"
+  },
+  "Mountain climbers lents": {
+   "path": "/media/tabata-land-mountain-climbers.gif",
+   "memeMouvementQue": "Mountain climbers",
+   "note": "meme mouvement, rythme lent demande par la consigne"
+  },
+  "Squats doux": {
+   "path": "/media/tabata-land-squats.gif",
+   "memeMouvementQue": "Squats",
+   "note": "meme mouvement, variante douce du mode bas impact"
+  },
+  "Chaise douce": {
+   "path": "/media/tabata-land-chaise-au-mur.gif",
+   "memeMouvementQue": "Chaise au mur",
+   "note": "meme posture, variante douce du mode bas impact"
+  },
+  "Mollets": {
+   "path": "/media/tabata-land-montees-sur-mollets.gif",
+   "memeMouvementQue": "Montées sur mollets",
+   "note": "meme mouvement sous un nom court"
+  }
+ },
+ "couverture": {
+  "nomsDuGenerateurAuSol": 38,
+  "nomsCouverts": 38,
+  "dessins": 33,
+  "nomsEquivalents": 5,
+  "reste": 0,
+  "regle": "Un nom n'est couvert que par le dessin de son propre mouvement ; les noms equivalents pointent vers le dessin du meme mouvement, jamais vers un autre exercice.",
+  "restants": []
+ }
+}

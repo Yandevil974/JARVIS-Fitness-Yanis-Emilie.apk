@@ -1,0 +1,388 @@
+{
+  "date": "2026-09-23",
+  "status": "scoped-web-candidate-not-release",
+  "releaseReady": false,
+  "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+  "integrity": {
+    "packagedWebFiles": 272,
+    "unchangedWebFiles": 271,
+    "changed": [
+      "assets/public/assets/index-CBCies4k.js"
+    ],
+    "unchangedDeliveredApk": true,
+    "unchangedOtherTopLevelStatements": true,
+    "allowedChangedTopLevelFunctions": [
+      "bg",
+      "v5",
+      "Kh",
+      "Z5",
+      "k5",
+      "Bg",
+      "a5",
+      "$5",
+      "j5",
+      "G4",
+      "Mg"
+    ],
+    "addedHelpers": [
+      "createPoolMedia",
+      "JarvisPoolMedia",
+      "JarvisStepGuide",
+      "JarvisReviewedMedia",
+      "JarvisReviewedView",
+      "JarvisTechnique",
+      "createWarmupMedia",
+      "JarvisWarmupMedia"
+    ]
+  },
+  "tests": {
+    "node": "44/44",
+    "browserMediaSuite": "37/37 (4,7 min) sur le bundle livré e372a369",
+    "browserTargeted": "4/4 nouveaux parcours (2 étirements, 2 piscine) + 5/5 Tabata rejoués",
+    "completeLegacySuite": "18/19 comparables (référence 1.4.0 intacte vs livrable, mêmes causes)"
+  },
+  "poolRecovery": {
+    "reviewedTexts": 12,
+    "record": "candidate/pool-texts.json",
+    "guides": {
+      "Marche aquatique": 4,
+      "Nage douce": {
+        "exact": 3,
+        "representative": 4
+      },
+      "Fractionné — nager": 1
+    },
+    "resolutionOrder": [
+      "reviewed-pool-prescription",
+      "legacy-association-not-yet-validated",
+      "unresolved"
+    ],
+    "blockFormatWinsOverInheritedSegment": true,
+    "landCardioUnchanged": true,
+    "persistedStepImageUsed": false,
+    "captures": [
+      "review/pool-candidate-marche-aquatique.png",
+      "review/pool-candidate-nage-douce.png",
+      "review/pool-candidate-fractionne-nager.png",
+      "review/pool-candidate-*-timer.png",
+      "review/pool-reference-1.4.0-*.png"
+    ]
+  },
+  "aliasIndividualReview": {
+    "record": "review/alias-review.json",
+    "reviewedIdentifiers": 25,
+    "scope": "every alias with no name relation to the exercise it resolves to",
+    "kindCounts": {
+      "mismatch-kept-open": 19,
+      "naming-ambiguity-kept-open": 1,
+      "no-replacement-kept-open": 2,
+      "related-but-distinct-kept-open": 1,
+      "variant-mismatch-kept-open": 1,
+      "resolved-by-reviewed-override": 1
+    },
+    "targetDrawingsThatAreAnotherExerciseOwnDrawing": 16,
+    "groupsClosed": 0,
+    "framesReviewedThisPass": {
+      "clips": 5,
+      "frames": 10,
+      "record": "review/alias-target-frames.json"
+    },
+    "evidence": [
+      "review/alias-decisions-25-pass2.png",
+      "review/alias-zoom-shared-drawings.png",
+      "review/alias-stepup-candidate-12frames.png",
+      "review/alias-elastic-abduction-12frames.png",
+      "review/alias-elastic-kickback-12frames.png"
+    ],
+    "refusals": [
+      "The only real step-up drawing holds dumbbells while both step-up prescriptions are bodyweight: not substituted, no prescription rewritten.",
+      "No drawing is swapped for a family look-alike; missing visuals stay explicit gaps."
+    ]
+  },
+  "illustrationSurvey": {
+    "record": "review/illustration-survey.json",
+    "report": "review/REVIEW-ILLUSTRATIONS.md",
+    "styleFamilies": 5,
+    "measuredDrawingClasses": {
+      "anatomical-line": 71,
+      "realistic-illustration": 23,
+      "total": 94
+    },
+    "method": "part de pixels quasi neutres sur la première image (seuil 0,75) — mesure indicative, pas une validation",
+    "conclusion": "Deux familles de dessin coexistent déjà dans les médias livrés, plus trois familles de photographies. Ne pas ajouter d'illustration avant d'avoir relu les 35 dessins embarqués restants et publié la règle de style."
+  },
+  "drawingReviewCoverage": {
+    "packagedGifs": 94,
+    "gifsExaminedAtLeastOnce": 94,
+    "unreviewed": 0,
+    "records": {
+      "longAnimations": 46,
+      "shortFocus": 13,
+      "aliasTargets": 5,
+      "remainingDrawings": 30
+    },
+    "verdictsRemaining": {
+      "consistent": 19,
+      "variantToConfirm": 5,
+      "partialMismatch": 5,
+      "mismatchKeptOpen": 1
+    },
+    "finalAccepted": false,
+    "meaning": "examined is not validated; no drawing is finally accepted and no group is closed"
+  },
+  "openFindingGroups": 47,
+  "limitations": [
+    "No APK built or signed",
+    "No missing media supplied by this patch",
+    "Published 1.4.0 remains defective for the pool block after weights",
+    "Legacy aquatic keyword matches remain declared not validated",
+    "Pool prescriptions without a reviewed match remain an explicit gap",
+    "Old mixed timers without a segment are not guessed",
+    "Combo-modal step rows still print raw seconds (pre-existing display, findings.json combo-step-seconds-display)",
+    "Exact user phone route not reproduced for the pool screens",
+    "Dips and other triceps/glute variants remain open; no external replacement approved/integrated",
+    "Warmup mobility/scapular illustration and general warmup panel remain unreviewed/incorrect in known cases",
+    "Approaches of 207 other exercise IDs retain old generic bench visual; no coverage-completion claim",
+    "Old approaches without their own exercise ID/role are not inferred from current workout",
+    "No per-ID override applied to user source notes: explicit workout notes/tips retain priority",
+    "The shipped alias map (104 entries, 25 with no name relation) is recorded and individually reviewed, but no alias is closed and no visual is created",
+    "Two shipped maps contradict each other for the same exercise name (id map vs name map); the contradiction is documented, not resolved by a substitution",
+    "35 of the 94 packaged drawings have never been reviewed; the candidate does not create or replace missing visuals",
+    "Three illustration styles already coexist in the shipped media; any new visual must be validated against the user's validated style before integration"
+  ],
+  "privateSigningDirectoryAvailable": false,
+  "candidateExerciseOverrides": [
+    "pont-fessier-au-sol-activation",
+    "french-press-barre-ez"
+  ],
+  "candidateTechniqueOverrides": [
+    "pont-fessier-au-sol-activation"
+  ],
+  "warmupCandidate": {
+    "activation": "Exact legacy 60-second floor-bridge / 10-rep instruction, new and saved warmups",
+    "approaches": "Two reviewed exercise IDs only; newly generated steps carry exerciseId/mediaRole through both launch buttons",
+    "persistedDataMigration": false,
+    "programDurationsRepsLoadsChanged": false
+  },
+  "apkDeliveryDryRun": {
+    "status": "dry-run-test-key-never-release",
+    "report": "review/REVIEW-APK-DRYRUN.md",
+    "script": "evolution/android/build-media-141.py --dry-run",
+    "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+    "dryRunApkSha256": "e83f4720aff2faa84c08037adc6bb95beca2ec0a0afce42fe6dbfa89de860a9a",
+    "apkBytes": 24909281,
+    "baselineBytes": 24905185,
+    "sizeDeltaBytes": 4096,
+    "changedEntries": [
+      "AndroidManifest.xml",
+      "assets/public/assets/index-CBCies4k.js"
+    ],
+    "version": "1.4.1",
+    "versionCode": 12,
+    "toolsReproduced": {
+      "jdk": "jdk4py==17.0.9.2",
+      "apksignerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
+      "matchesReleasePin": true
+    },
+    "verified": [
+      "v2",
+      "v3",
+      "alignment",
+      "9/9 dex byte-identical",
+      "272/272 web files kept",
+      "manifest versionName 1.4.1 / versionCode 12"
+    ],
+    "notVerified": [
+      "real device install",
+      "launch on phone",
+      "real signing identity"
+    ],
+    "testCertificateSha256": "6e3a679fe839a09bf01ca806eeeee52ed50cda01070b8bd387646df3a4890352",
+    "note": "The test certificate is a throwaway inside .cache and is never a release identity."
+  },
+  "apkDeliveryRelease": {
+    "mode": "release-signed-durable-media-identity",
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.5.apk",
+    "apkSha256": "4c75fa67791202836a5a4a1ca210b8068958f9242cfc5a965af5674390f83601",
+    "apkBytes": 24909288,
+    "versionName": "1.4.5",
+    "versionCode": 16,
+    "changedEntries": [
+      "AndroidManifest.xml",
+      "assets/public/assets/index-CBCies4k.js"
+    ],
+    "packagedWebSha256": "6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e",
+    "webFiles": 272,
+    "unchangedWebFiles": 271,
+    "nativeDexFiles": 9,
+    "byteIdenticalDexFiles": 9,
+    "signatureVerified": [
+      "v2",
+      "v3"
+    ],
+    "signers": 1,
+    "certificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
+    "sameIdentityAs": [
+      "downloads/Yanis-Fitness-Evolution-1.4.2.apk",
+      "downloads/Yanis-Fitness-Evolution-1.4.3.apk",
+      "downloads/Yanis-Fitness-Evolution-1.4.4.apk"
+    ],
+    "installsOver": "1.4.4 sans désinstallation",
+    "contains": [
+      "correction piscine",
+      "séance oubliée clôturée",
+      "durées lisibles",
+      "Tabata au sol sans guide aquatique"
+    ],
+    "deviceTested": false
+  },
+  "forgottenWorkoutFix": {
+    "decision": "utilisateur, 23 septembre 2026",
+    "rule": "séance de musculation d’un autre jour clôturée automatiquement en « partielle », date et séries conservées ; séance du jour jamais clôturée automatiquement",
+    "appliedAt": [
+      "chargement de l’application",
+      "clic sur « Lancer la séance »",
+      "clic sur une minuterie guidée"
+    ],
+    "counter": "plus de « 40320:00 » : heures et minutes au-delà d’une heure",
+    "evidence": [
+      "review/REVIEW-EMILIE-BLOCAGE.md",
+      "review/emilie-fixed-w5-accueil.png",
+      "review/emilie-fixed-w5-seance.png",
+      "review/emilie-fixed-w5-chrono.png"
+    ],
+    "remaining": "essai sur le téléphone de l’utilisateur"
+  },
+  "aliasOverlapReview": {
+    "reviewed": 79,
+    "groupsClosed": 0,
+    "visuallyValidated": 0,
+    "verdicts": {
+      "partial-mismatch": 27,
+      "instruction-identical-visual-not-differs": 45,
+      "consistent": 3,
+      "unresolved": 0,
+      "mismatch-kept-open": 1
+    },
+    "evidence": [
+      "review/alias-overlap-review.json",
+      "review/alias-overlap-targets.png",
+      "review/alias-overlap-equipment-19.png"
+    ],
+    "newGroups": [
+      "bodyweight-squat-drawn-with-dumbbell",
+      "curl-posture-and-grip-not-shown",
+      "equipment-shown-differs-from-prescription"
+    ],
+    "meaning": "Les 114 exercices sans dessin propre sont désormais tous revus (25 sans rapport + 79 noms proches + 10 identiques). Aucun groupe fermé, aucune validation visuelle."
+  },
+  "instructionPass": {
+    "date": "2026-09-23",
+    "groupsInstructed": 11,
+    "scope": [
+      "échauffement 2",
+      "piscine 3",
+      "tabata 2",
+      "étirements 4 (dont la relecture complète de 16 dessins)"
+    ],
+    "artifact": "review/stretch-assets-review.json + review/stretch-assets-16.png",
+    "decisionsAwaited": [
+      "règle de style avant toute création",
+      "échange d’image pour « main dans le dos » et « pigeon assis » (visuels déjà présents)",
+      "lacune explicite plutôt qu’un dessin terrestre dans la bibliothèque piscine",
+      "correction du contexte aquatique en tabata terre (ancrage identifié, non livrée)"
+    ]
+  },
+  "htmlComplementarySessionObservation": {
+    "date": "2026-09-23",
+    "fact": "Au 23 septembre, la prochaine séance est la « séance complémentaire du HTML » (METCON elliptique + piscine). Le bouton d’accueil « Lancer la séance » ouvre d’abord une modale de validation : « Récupération non renseignée : intensité à valider avant de commencer ». Comportement identique sur la référence 1.4.0 intacte et sur la 1.4.4 : ce n’est pas une régression, et rien n’a été modifié.",
+    "notAVisualFinding": true
+  },
+  "tabataContextFix": {
+    "finding": "tabata-land-to-water",
+    "rule": "En contexte terre, jamais de guide aquatique",
+    "measured": {
+      "1.4.4": "GIF aquatique f1dde35bd517f24b.gif (guide « Gainage au bord (vertical) ») affiché comme visuel du mouvement et dans les consignes, en Tabata au sol",
+      "1.4.5": "aucune image ni consigne de bassin en contexte terre ; Aqua Tabata inchangé"
+    },
+    "evidence": "evolution/media/review/REVIEW-TABATA-CONTEXTE.md",
+    "captures": [
+      "tabata-land-avant-144.png",
+      "tabata-land-corrige-145.png",
+      "tabata-aqua-avant-144.png",
+      "tabata-aqua-corrige-145.png"
+    ],
+    "untouched": [
+      "noms",
+      "durées",
+      "consignes",
+      "prescriptions",
+      "guides aquatiques",
+      "état enregistré"
+    ],
+    "stillOpen": "tabata-missing-demonstrations : 34 noms au sol sans démonstration dédiée (décision de style requise)"
+  },
+  "noticeLinkRepair": {
+    "fact": "La notice 1.4.4 pointait vers un commit de préparation inexistant (aperçu 404) ; les liens des notices 1.4.4 et 1.4.5 sont repinnés vers un commit réel qui contient les fichiers.",
+    "howFound": "Contrôle des liens internes avant publication de la 1.4.5."
+  },
+  "approvedCorrections23Sept": {
+    "authorisation": "« Autorisation accordée poursuis » — corrections mesurées sans aucune création d’image",
+    "stretchSwaps": {
+      "rule": "Échanger l’image, jamais réécrire la consigne",
+      "exchanges": {
+        "« Pigeon assis »": "/media/stretch-pigeon.jpg -> /media/stretch-piriforme.jpg",
+        "« Main dans le dos »": "/media/stretch-triceps-dos.jpg -> /media/stretch-triceps-coude.jpg"
+      },
+      "untouched": [
+        "consignes",
+        "durées",
+        "muscles",
+        "données enregistrées"
+      ],
+      "evidence": "evolution/media/review/stretch-echanges-avant-apres.png + captures stretch-mobilite-{avant,corrige}.png",
+      "verifiedBy": [
+        "evolution/media/tests/stretch-media.test.mjs",
+        "evolution/media/tests/stretch-media.spec.mjs"
+      ]
+    },
+    "poolLandVisuals": {
+      "rule": "Lacune explicite plutôt qu’un dessin terrestre à la place d’un exercice aquatique",
+      "guidesWithoutDrawing": [
+        "Gainage au bord (vertical)",
+        "Mobilité épaules aquatique",
+        "Mobilité hanches / chevilles",
+        "Ciseaux au bord",
+        "Talons-fesses"
+      ],
+      "behaviour": "Aucun visuel de mouvement, aucune image dans les consignes du chrono, aucune image dans la liste des étapes du protocole piscine ; les consignes aquatiques restent affichées.",
+      "verifiedBy": [
+        "evolution/media/tests/pool-land-guides.spec.mjs",
+        "evolution/media/tests/pool-candidate.test.mjs"
+      ],
+      "remaining": "Décision de style requise avant toute création de dessin."
+    }
+  },
+  "apkDelivery": {
+    "planned": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
+    "versionName": "1.4.6",
+    "versionCode": 17,
+    "packagedWebSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+    "installsOver": "1.4.5 sans désinstallation",
+    "deviceTested": false
+  },
+  "userDecision20260924": {
+    "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) ; on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+    "familyC": "refusée — aucune image de cette famille dans l'application",
+    "kept": "les quatre écarts d'étirement restants conservent le visuel livré ; les 34 mouvements de Tabata gardent le visuel livré ; les cinq guides aquatiques gardent la lacune explicite livrée en 1.4.6",
+    "creation": "aucune création d'image autorisée ; seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles sur décision explicite",
+    "withdrawn": [
+      "evolution/media/candidate/stretch-witness-mollet-escalier.svg",
+      "evolution/media/review/stretch-temoin-mollet-escalier.png"
+    ],
+    "delivered": "downloads/Yanis-Fitness-Evolution-1.4.6.apk — inchangé, seule version à installer",
+    "groupsClosed": 2,
+    "groupsStillOpen": 51
+  }
+}

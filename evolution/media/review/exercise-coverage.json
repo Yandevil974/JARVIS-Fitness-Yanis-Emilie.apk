@@ -1,0 +1,2506 @@
+{
+  "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "releaseReady": false,
+  "meaning": "All 209 exercise IDs tracked. This is not a coverage-completion claim; basic correspondence is not final acceptance. Other categories remain in their inventory/findings and need their own per-surface ledger.",
+  "count": 209,
+  "exercises": [
+    {
+      "id": "pont-fessier-au-sol-activation",
+      "name": "Pont fessier au sol — activation",
+      "baselinePath": "/media/0766d3a06bf79dc8.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 3,
+      "findingGroups": [
+        "floor-bridge-to-bench-feet"
+      ],
+      "candidatePath": "/media/8eecb0152081ff26.gif",
+      "candidateStatus": "explicit-reviewed-reassociation-all-surfaces-pending",
+      "finalAccepted": false
+    },
+    {
+      "id": "hip-thrust-barre",
+      "name": "Hip thrust barre",
+      "baselinePath": "/media/1519aacc58d53c5c.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 6,
+      "findingGroups": [],
+      "candidatePath": "/media/1519aacc58d53c5c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-roumain-halteres",
+      "name": "Soulevé de terre roumain haltères",
+      "baselinePath": "/media/055d358895efaa10.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/055d358895efaa10.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "bulgarian-split-squat",
+      "name": "Bulgarian split squat",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 39,
+      "findingGroups": [],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-curl-machine-ou-swiss-ball-leg-curl",
+      "name": "Leg curl machine (ou swiss-ball leg curl)",
+      "baselinePath": "/media/7c0c6d264e85d66a.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 24,
+      "findingGroups": [],
+      "candidatePath": "/media/7c0c6d264e85d66a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "abduction-hanche-debout-a-la-poulie",
+      "name": "Abduction hanche debout à la poulie",
+      "baselinePath": "/media/03098b19c4672ce5.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 1,
+      "findingGroups": [
+        "hip-adduction-not-abduction"
+      ],
+      "candidatePath": "/media/03098b19c4672ce5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "kickback-a-la-poulie",
+      "name": "Kickback à la poulie",
+      "baselinePath": "/media/489169360e044c48.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 15,
+      "findingGroups": [
+        "glute-kickback-to-triceps"
+      ],
+      "candidatePath": "/media/489169360e044c48.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead bug",
+      "baselinePath": "/media/b2236e6b7a81a1b5.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 31,
+      "findingGroups": [],
+      "candidatePath": "/media/b2236e6b7a81a1b5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "gainage-planche",
+      "name": "Gainage planche",
+      "baselinePath": "/media/1317e405efd6ef2b.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 5,
+      "findingGroups": [],
+      "candidatePath": "/media/1317e405efd6ef2b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "pallof-press-a-l-elastique",
+      "name": "Pallof press à l'élastique",
+      "baselinePath": "/media/3bcaad5ec7cdf892.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 12,
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/3bcaad5ec7cdf892.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tirage-vertical-prise-neutre",
+      "name": "Tirage vertical prise neutre",
+      "baselinePath": "/media/4af33157ce25267c.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 18,
+      "findingGroups": [],
+      "candidatePath": "/media/4af33157ce25267c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-haltere-un-bras",
+      "name": "Rowing haltère un bras",
+      "baselinePath": "/media/4dfda05b1db24000.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
+      "candidatePath": "/media/4dfda05b1db24000.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-militaire-halteres-assis",
+      "name": "Développé militaire haltères assis",
+      "baselinePath": "/media/d9c88be0658a81af.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 41,
+      "findingGroups": [],
+      "candidatePath": "/media/d9c88be0658a81af.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-halteres",
+      "name": "Élévations latérales haltères",
+      "baselinePath": "/media/cd0cc940608ac100.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 38,
+      "findingGroups": [],
+      "candidatePath": "/media/cd0cc940608ac100.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "face-pull-a-l-elastique",
+      "name": "Face pull à l'élastique",
+      "baselinePath": "/media/ca785b4cf81c98fa.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 37,
+      "findingGroups": [
+        "face-pull-to-pulldown",
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/ca785b4cf81c98fa.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "pompes-inclinees-mains-surelevees",
+      "name": "Pompes inclinées (mains surélevées)",
+      "baselinePath": "/media/43bad87368c12614.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 14,
+      "findingGroups": [],
+      "candidatePath": "/media/43bad87368c12614.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-halteres",
+      "name": "Curl haltères",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 11,
+      "findingGroups": [],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "extension-triceps-a-la-poulie",
+      "name": "Extension triceps à la poulie",
+      "baselinePath": "/media/497ab2e22c01080c.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 17,
+      "findingGroups": [],
+      "candidatePath": "/media/497ab2e22c01080c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "bird-dog",
+      "name": "Bird dog",
+      "baselinePath": "/media/aab0de0aad0c275a.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 29,
+      "findingGroups": [
+        "bird-dog-to-side-plank"
+      ],
+      "candidatePath": "/media/aab0de0aad0c275a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "crunch-a-la-poulie-ou-au-sol",
+      "name": "Crunch à la poulie (ou au sol)",
+      "baselinePath": "/media/a5c1c2427ee83c93.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/a5c1c2427ee83c93.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "goblet-squat",
+      "name": "Goblet squat",
+      "baselinePath": "/media/78f9aee57a4101b1.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 23,
+      "findingGroups": [
+        "session-never-closed-blocks-program-and-timers"
+      ],
+      "candidatePath": "/media/78f9aee57a4101b1.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "hip-thrust-unilateral-1-jambe",
+      "name": "Hip thrust unilatéral (1 jambe)",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 39,
+      "findingGroups": [
+        "hip-thrust-to-bulgarian"
+      ],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-roumain-unilateral-haltere",
+      "name": "Soulevé de terre roumain unilatéral haltère",
+      "baselinePath": "/media/1c63a36d168d8b74.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 7,
+      "findingGroups": [
+        "unilateral-rdl-to-bilateral"
+      ],
+      "candidatePath": "/media/1c63a36d168d8b74.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fentes-arriere-alternees",
+      "name": "Fentes arrière alternées",
+      "baselinePath": "/media/bc4d9bed4bbb590a.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 34,
+      "findingGroups": [],
+      "candidatePath": "/media/bc4d9bed4bbb590a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "step-up-sur-banc-hauteur-du-genou",
+      "name": "Step-up sur banc (hauteur du genou)",
+      "baselinePath": "/media/995e1f9a9cedc5ec.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 27,
+      "findingGroups": [
+        "step-up-to-lunge",
+        "shipped-maps-contradict-each-other",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/995e1f9a9cedc5ec.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "abduction-assise-machine-ou-elastique",
+      "name": "Abduction assise (machine ou élastique)",
+      "baselinePath": "/media/f73444e9dc2fee89.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 45,
+      "findingGroups": [],
+      "candidatePath": "/media/f73444e9dc2fee89.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "clamshell-a-l-elastique",
+      "name": "Clamshell à l'élastique",
+      "baselinePath": "/media/f73444e9dc2fee89.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 45,
+      "findingGroups": [
+        "band-clamshell-to-abduction-machine",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/f73444e9dc2fee89.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "mollets-debout-unilateraux",
+      "name": "Mollets debout unilatéraux",
+      "baselinePath": "/media/3e2ed581e11781d5.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 13,
+      "findingGroups": [
+        "unilateral-calf-to-bilateral-barbell"
+      ],
+      "candidatePath": "/media/3e2ed581e11781d5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "reverse-crunch",
+      "name": "Reverse crunch",
+      "baselinePath": "/media/66849c3144d589f2.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 20,
+      "findingGroups": [],
+      "candidatePath": "/media/66849c3144d589f2.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "gainage-lateral",
+      "name": "Gainage latéral",
+      "baselinePath": "/media/e56d7d8feec13a3a.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 42,
+      "findingGroups": [],
+      "candidatePath": "/media/e56d7d8feec13a3a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-couche-halteres",
+      "name": "Développé couché haltères",
+      "baselinePath": "/media/a4c1fb89be18062f.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 28,
+      "findingGroups": [],
+      "candidatePath": "/media/a4c1fb89be18062f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tirage-horizontal-a-la-poulie",
+      "name": "Tirage horizontal à la poulie",
+      "baselinePath": "/media/0860394a5a99f74b.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 4,
+      "findingGroups": [],
+      "candidatePath": "/media/0860394a5a99f74b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "releves-de-jambes-allongee",
+      "name": "Relevés de jambes allongée",
+      "baselinePath": "/media/afe2f533cbbef546.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 30,
+      "findingGroups": [],
+      "candidatePath": "/media/afe2f533cbbef546.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "mountain-climbers",
+      "name": "Mountain climbers",
+      "baselinePath": "/media/c07b14f1bcc8e8ca.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 35,
+      "findingGroups": [],
+      "candidatePath": "/media/c07b14f1bcc8e8ca.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "glute-bridge-pieds-sur-banc",
+      "name": "Glute bridge pieds sur banc",
+      "baselinePath": "/media/0766d3a06bf79dc8.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 3,
+      "findingGroups": [],
+      "candidatePath": "/media/0766d3a06bf79dc8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "abduction-hanche-a-l-elastique",
+      "name": "Abduction hanche à l'élastique",
+      "baselinePath": "/media/f73444e9dc2fee89.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 45,
+      "findingGroups": [
+        "band-clamshell-to-abduction-machine",
+        "shipped-maps-contradict-each-other"
+      ],
+      "candidatePath": "/media/f73444e9dc2fee89.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "kickback-a-l-elastique",
+      "name": "Kickback à l'élastique",
+      "baselinePath": "/media/489169360e044c48.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 15,
+      "findingGroups": [
+        "glute-kickback-to-triceps",
+        "shipped-maps-contradict-each-other",
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/489169360e044c48.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-roumain-barre",
+      "name": "Soulevé de terre roumain barre",
+      "baselinePath": "/media/9f22747c305f521b.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/9f22747c305f521b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-curl-machine",
+      "name": "Leg curl machine",
+      "baselinePath": "/media/7c0c6d264e85d66a.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 24,
+      "findingGroups": [],
+      "candidatePath": "/media/7c0c6d264e85d66a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "abduction-hanche-a-la-poulie",
+      "name": "Abduction hanche à la poulie",
+      "baselinePath": "/media/03098b19c4672ce5.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 1,
+      "findingGroups": [
+        "hip-adduction-not-abduction"
+      ],
+      "candidatePath": "/media/03098b19c4672ce5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fire-hydrant-a-l-elastique",
+      "name": "Fire hydrant à l'élastique",
+      "baselinePath": "/media/03098b19c4672ce5.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 1,
+      "findingGroups": [
+        "hip-adduction-not-abduction",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/03098b19c4672ce5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "dead-bug-avec-rotation",
+      "name": "Dead bug avec rotation",
+      "baselinePath": "/media/b2236e6b7a81a1b5.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 31,
+      "findingGroups": [],
+      "candidatePath": "/media/b2236e6b7a81a1b5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "pallof-press-a-la-poulie",
+      "name": "Pallof press à la poulie",
+      "baselinePath": "/media/3bcaad5ec7cdf892.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 12,
+      "findingGroups": [],
+      "candidatePath": "/media/3bcaad5ec7cdf892.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tirage-vertical-prise-large",
+      "name": "Tirage vertical prise large",
+      "baselinePath": "/media/4af33157ce25267c.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 18,
+      "findingGroups": [],
+      "candidatePath": "/media/4af33157ce25267c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-barre-buste-penche",
+      "name": "Rowing barre buste penché",
+      "baselinePath": "/media/93ab17b0de26fbc8.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 26,
+      "findingGroups": [],
+      "candidatePath": "/media/93ab17b0de26fbc8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "face-pull-a-la-poulie",
+      "name": "Face pull à la poulie",
+      "baselinePath": "/media/ca785b4cf81c98fa.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 37,
+      "findingGroups": [
+        "face-pull-to-pulldown"
+      ],
+      "candidatePath": "/media/ca785b4cf81c98fa.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-incline-halteres",
+      "name": "Développé incliné haltères",
+      "baselinePath": "/media/22ce97e4b3cb18cf.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 9,
+      "findingGroups": [],
+      "candidatePath": "/media/22ce97e4b3cb18cf.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "back-squat-charge-moderee",
+      "name": "Back squat (charge modérée)",
+      "baselinePath": "/media/2c51d8ca1b6fb79a.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 10,
+      "findingGroups": [],
+      "candidatePath": "/media/2c51d8ca1b6fb79a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "hip-thrust-unilateral",
+      "name": "Hip thrust unilatéral",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 39,
+      "findingGroups": [
+        "hip-thrust-to-bulgarian"
+      ],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-roumain-unilateral",
+      "name": "Soulevé de terre roumain unilatéral",
+      "baselinePath": "/media/6223da1b562d9339.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 19,
+      "findingGroups": [],
+      "candidatePath": "/media/6223da1b562d9339.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fentes-avant-alternees",
+      "name": "Fentes avant alternées",
+      "baselinePath": "/media/995e1f9a9cedc5ec.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 27,
+      "findingGroups": [],
+      "candidatePath": "/media/995e1f9a9cedc5ec.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "presse-a-cuisses-pieds-hauts",
+      "name": "Presse à cuisses pieds hauts",
+      "baselinePath": "/media/1f27c3cbcf803765.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 8,
+      "findingGroups": [],
+      "candidatePath": "/media/1f27c3cbcf803765.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "abduction-assise-machine",
+      "name": "Abduction assise machine",
+      "baselinePath": "/media/f73444e9dc2fee89.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 45,
+      "findingGroups": [],
+      "candidatePath": "/media/f73444e9dc2fee89.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "mollets-assis",
+      "name": "Mollets assis",
+      "baselinePath": "/media/d13d9f751f4731ab.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/d13d9f751f4731ab.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "releves-de-jambes",
+      "name": "Relevés de jambes",
+      "baselinePath": "/media/afe2f533cbbef546.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 30,
+      "findingGroups": [],
+      "candidatePath": "/media/afe2f533cbbef546.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "circuit-gainage-planche-lateral-bird-dog",
+      "name": "Circuit gainage (planche + latéral + bird dog)",
+      "baselinePath": "/media/1317e405efd6ef2b.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 5,
+      "findingGroups": [],
+      "candidatePath": "/media/1317e405efd6ef2b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "bulgarian-split-squat-halteres",
+      "name": "Bulgarian split squat haltères",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 39,
+      "findingGroups": [],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "glute-bridge-en-1-5-reps",
+      "name": "Glute bridge en 1,5 reps",
+      "baselinePath": "/media/e5f17140d8d97591.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 43,
+      "findingGroups": [
+        "bridge-one-and-half-to-march"
+      ],
+      "candidatePath": "/media/e5f17140d8d97591.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "abduction-hanche-a-la-poulie-myo-reps",
+      "name": "Abduction hanche à la poulie — myo-reps",
+      "baselinePath": "/media/03098b19c4672ce5.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 1,
+      "findingGroups": [
+        "hip-adduction-not-abduction"
+      ],
+      "candidatePath": "/media/03098b19c4672ce5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "kickback-a-la-poulie-drop-set-final",
+      "name": "Kickback à la poulie — drop set final",
+      "baselinePath": "/media/489169360e044c48.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 15,
+      "findingGroups": [
+        "glute-kickback-to-triceps",
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/489169360e044c48.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "crunch-a-la-poulie",
+      "name": "Crunch à la poulie",
+      "baselinePath": "/media/a5c1c2427ee83c93.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/a5c1c2427ee83c93.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-halteres-myo-reps",
+      "name": "Élévations latérales haltères — myo-reps",
+      "baselinePath": "/media/cd0cc940608ac100.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 38,
+      "findingGroups": [],
+      "candidatePath": "/media/cd0cc940608ac100.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "back-squat",
+      "name": "Back squat",
+      "baselinePath": "/media/530326beb7c7a652.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/530326beb7c7a652.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "hip-thrust-unilateral-leste",
+      "name": "Hip thrust unilatéral lesté",
+      "baselinePath": "/media/1519aacc58d53c5c.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 6,
+      "findingGroups": [],
+      "candidatePath": "/media/1519aacc58d53c5c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fentes-bulgares-pied-arriere-sureleve",
+      "name": "Fentes bulgares (pied arrière surélevé)",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 39,
+      "findingGroups": [],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "abduction-assise-en-1-5-reps",
+      "name": "Abduction assise en 1,5 reps",
+      "baselinePath": "/media/f73444e9dc2fee89.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 45,
+      "findingGroups": [
+        "band-clamshell-to-abduction-machine"
+      ],
+      "candidatePath": "/media/f73444e9dc2fee89.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "gainage-lateral-dynamique",
+      "name": "Gainage latéral dynamique",
+      "baselinePath": "/media/e56d7d8feec13a3a.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 42,
+      "findingGroups": [],
+      "candidatePath": "/media/e56d7d8feec13a3a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "circuit-abdominaux-crunch-releves-gainage",
+      "name": "Circuit abdominaux (crunch + relevés + gainage)",
+      "baselinePath": "/media/c1065beff4823907.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 36,
+      "findingGroups": [
+        "compound-abs-to-seated-cable-crunch"
+      ],
+      "candidatePath": "/media/c1065beff4823907.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+      "name": "Hip thrust barre — test de charge max (3-5 reps)",
+      "baselinePath": "/media/1519aacc58d53c5c.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 6,
+      "findingGroups": [],
+      "candidatePath": "/media/1519aacc58d53c5c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-roumain-barre-test-3-5-reps",
+      "name": "Soulevé de terre roumain barre — test (3-5 reps)",
+      "baselinePath": "/media/9f22747c305f521b.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/9f22747c305f521b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-barre-buste-penche-test-3-5-reps",
+      "name": "Rowing barre buste penché — test (3-5 reps)",
+      "baselinePath": "/media/93ab17b0de26fbc8.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 26,
+      "findingGroups": [],
+      "candidatePath": "/media/93ab17b0de26fbc8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-militaire-halteres-assis-test-3-5-reps",
+      "name": "Développé militaire haltères assis — test (3-5 reps)",
+      "baselinePath": "/media/d9c88be0658a81af.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 41,
+      "findingGroups": [],
+      "candidatePath": "/media/d9c88be0658a81af.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "triceps-dips",
+      "name": "Triceps dips",
+      "baselinePath": "/media/c3a2b9892161522e.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "dips-orientation"
+      ],
+      "candidatePath": "/media/c3a2b9892161522e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "triceps-extensions-halteres-banc-plat",
+      "name": "Triceps extensions haltères, banc plat",
+      "baselinePath": "/media/4c2b19fa924f90a8.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "triceps-bench-to-cable",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/4c2b19fa924f90a8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "french-press-poulie-basse",
+      "name": "French press poulie basse",
+      "baselinePath": "/media/4c2b19fa924f90a8.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/4c2b19fa924f90a8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-scott-barre-ez-pronation",
+      "name": "Curl Scott barre EZ, pronation",
+      "baselinePath": "/media/882c9c361686a9c9.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "scott-to-standing-curl",
+        "standing-curl-for-scott-bench"
+      ],
+      "candidatePath": "/media/882c9c361686a9c9.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-marteau-assis",
+      "name": "Curl marteau assis",
+      "baselinePath": "/media/8fe5818f3a4ebebe.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/8fe5818f3a4ebebe.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-halteres-incline",
+      "name": "Curl haltères incliné",
+      "baselinePath": "/media/b54f07a7b66c1aed.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b54f07a7b66c1aed.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-assises",
+      "name": "Élévations latérales assises",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-assises-variante",
+      "name": "Élévations latérales assises (variante)",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-coude-a-90",
+      "name": "Élévations latérales coude à 90°",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "squat-cycliste-squat-complet",
+      "name": "Squat cycliste (squat complet)",
+      "baselinePath": "/media/1c28908ab83cde2e.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/1c28908ab83cde2e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-press",
+      "name": "Leg press",
+      "baselinePath": "/media/9f8ae03b97d31344.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/9f8ae03b97d31344.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-extension",
+      "name": "Leg extension",
+      "baselinePath": "/media/9f8ae03b97d31344.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "leg-extension-to-press"
+      ],
+      "candidatePath": "/media/9f8ae03b97d31344.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-curl-allonge",
+      "name": "Leg curl allongé",
+      "baselinePath": "/media/4eff701bcdf9a359.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/4eff701bcdf9a359.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "back-extension-horizontal",
+      "name": "Back extension horizontal",
+      "baselinePath": "/media/f64281e2dbd7986f.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
+      "candidatePath": "/media/f64281e2dbd7986f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "mollets-debout",
+      "name": "Mollets debout",
+      "baselinePath": "/media/f529e06a69b973f4.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/f529e06a69b973f4.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-incline-barre",
+      "name": "Développé incliné barre",
+      "baselinePath": "/media/ba6ba483a1372c9e.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/ba6ba483a1372c9e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-plat-prise-neutre",
+      "name": "Développé haltères plat, prise neutre",
+      "baselinePath": "/media/ff100d7322ba1193.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/ff100d7322ba1193.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "ecartes-halteres-decline",
+      "name": "Écartés haltères décliné",
+      "baselinePath": "/media/805f8592e2bccb1a.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/805f8592e2bccb1a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-barre-buste-penche-pronation",
+      "name": "Rowing barre buste penché, pronation",
+      "baselinePath": "/media/9dfc7f7acb3e74e5.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/9dfc7f7acb3e74e5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-assis-prise-neutre",
+      "name": "Rowing assis, prise neutre",
+      "baselinePath": "/media/0a5625b92247ed69.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/0a5625b92247ed69.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tirage-vertical-prise-pronation",
+      "name": "Tirage vertical prise pronation",
+      "baselinePath": "/media/dc0cabae23adbfd5.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/dc0cabae23adbfd5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "releves-de-jambes-allonge",
+      "name": "Relevés de jambes allongé",
+      "baselinePath": "/media/afe2f533cbbef546.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 30,
+      "findingGroups": [],
+      "candidatePath": "/media/afe2f533cbbef546.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "crunch-sur-swiss-ball",
+      "name": "Crunch sur swiss ball",
+      "baselinePath": "/media/789c6d90f30eb33e.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/789c6d90f30eb33e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-militaire-debout",
+      "name": "Développé militaire debout",
+      "baselinePath": "/media/22146cff6a787e8a.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/22146cff6a787e8a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tractions-pull-up",
+      "name": "Tractions (pull-up)",
+      "baselinePath": "/media/4af33157ce25267c.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 18,
+      "findingGroups": [
+        "pullup-to-pulldown",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/4af33157ce25267c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-incline-30",
+      "name": "Développé haltères incliné 30°",
+      "baselinePath": "/media/45a34272da9569a6.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/45a34272da9569a6.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "french-press-barre-ez",
+      "name": "French press barre EZ",
+      "baselinePath": "/media/4c2b19fa924f90a8.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "triceps-bench-to-cable"
+      ],
+      "candidatePath": "/media/ea226c444f72de0f.gif",
+      "candidateStatus": "explicit-reviewed-reassociation-all-surfaces-pending",
+      "finalAccepted": false
+    },
+    {
+      "id": "front-squat",
+      "name": "Front squat",
+      "baselinePath": "/media/1c28908ab83cde2e.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/1c28908ab83cde2e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-curl-debout",
+      "name": "Leg curl debout",
+      "baselinePath": "/media/fabb86971a81ea03.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/fabb86971a81ea03.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fentes-bulgares-halteres-pied-avant-sureleve",
+      "name": "Fentes bulgares haltères (pied avant surélevé)",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 39,
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "releves-de-jambes-incline",
+      "name": "Relevés de jambes incliné",
+      "baselinePath": "/media/16f6ff0f7ceba611.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "hanging-raise-for-incline-raise"
+      ],
+      "candidatePath": "/media/16f6ff0f7ceba611.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "mollets-unilateraux",
+      "name": "Mollets unilatéraux",
+      "baselinePath": "/media/10ab787fbf26b1f4.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/10ab787fbf26b1f4.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tractions-prise-neutre-chin-up",
+      "name": "Tractions prise neutre (chin-up)",
+      "baselinePath": "/media/4af33157ce25267c.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 18,
+      "findingGroups": [
+        "pullup-to-pulldown"
+      ],
+      "candidatePath": "/media/4af33157ce25267c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-decline-prise-neutre",
+      "name": "Développé haltères décliné, prise neutre",
+      "baselinePath": "/media/63e925f417c73b92.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
+      "candidatePath": "/media/63e925f417c73b92.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-haltere-un-bras-coude-ouvert",
+      "name": "Rowing haltère un bras, coude ouvert",
+      "baselinePath": "/media/44fc577dce29aff5.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
+      "candidatePath": "/media/44fc577dce29aff5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "extensions-triceps-barre-ez",
+      "name": "Extensions triceps barre EZ",
+      "baselinePath": "/media/5d6a89132df205f8.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/5d6a89132df205f8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-scott-barre-ez-supination",
+      "name": "Curl Scott barre EZ, supination",
+      "baselinePath": "/media/882c9c361686a9c9.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "scott-to-standing-curl",
+        "standing-curl-for-scott-bench"
+      ],
+      "candidatePath": "/media/882c9c361686a9c9.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre",
+      "name": "Soulevé de terre",
+      "baselinePath": "/media/a8b1d1173ade4e8f.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/a8b1d1173ade4e8f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "step-up-haut",
+      "name": "Step-up haut",
+      "baselinePath": "/media/995e1f9a9cedc5ec.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 27,
+      "findingGroups": [
+        "step-up-to-lunge",
+        "shipped-maps-contradict-each-other",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/995e1f9a9cedc5ec.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-scott-haltere-prise-neutre",
+      "name": "Curl Scott haltère, prise neutre",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 11,
+      "findingGroups": [
+        "scott-to-standing-curl",
+        "standing-curl-for-scott-bench"
+      ],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "barre-au-front-pushdown-triceps",
+      "name": "Barre au front (pushdown triceps)",
+      "baselinePath": "/media/5d6a89132df205f8.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/5d6a89132df205f8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-poulie-basse-supination",
+      "name": "Curl poulie basse, supination",
+      "baselinePath": "/media/882c9c361686a9c9.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown",
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/882c9c361686a9c9.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-assis-neutre-pronation",
+      "name": "Développé haltères assis, neutre→pronation",
+      "baselinePath": "/media/d9c88be0658a81af.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 41,
+      "findingGroups": [],
+      "candidatePath": "/media/d9c88be0658a81af.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "back-squat-barre-haute",
+      "name": "Back squat barre haute",
+      "baselinePath": "/media/530326beb7c7a652.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/530326beb7c7a652.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "hack-squat",
+      "name": "Hack squat",
+      "baselinePath": "/media/5dd80c9e1b36df25.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/5dd80c9e1b36df25.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "back-extension-45-prise-snatch",
+      "name": "Back extension 45°, prise snatch",
+      "baselinePath": "/media/f64281e2dbd7986f.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/f64281e2dbd7986f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "jackknife-sur-swiss-ball",
+      "name": "Jackknife sur swiss ball",
+      "baselinePath": "/media/789c6d90f30eb33e.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/789c6d90f30eb33e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-plat",
+      "name": "Développé haltères plat",
+      "baselinePath": "/media/6fcfe5741629ca2a.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/6fcfe5741629ca2a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-barre-ez-supination-buste-penche",
+      "name": "Rowing barre EZ supination, buste penché",
+      "baselinePath": "/media/c4d2de309fa47b4c.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/c4d2de309fa47b4c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "cables-croises",
+      "name": "Câbles croisés",
+      "baselinePath": "/media/b395c84efcad344b.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b395c84efcad344b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-assis-etirement",
+      "name": "Rowing assis + étirement",
+      "baselinePath": "/media/0a5625b92247ed69.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/0a5625b92247ed69.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-incline-30-face-au-banc",
+      "name": "Élévations latérales incliné 30° (face au banc)",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "french-press-haltere-un-bras",
+      "name": "French press haltère un bras",
+      "baselinePath": "/media/4c2b19fa924f90a8.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "triceps-bench-to-cable"
+      ],
+      "candidatePath": "/media/4c2b19fa924f90a8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-barre-debout",
+      "name": "Curl barre debout",
+      "baselinePath": "/media/882c9c361686a9c9.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/882c9c361686a9c9.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "back-squat-inertie-pause-complete",
+      "name": "Back squat inertie (pause complète)",
+      "baselinePath": "/media/530326beb7c7a652.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/530326beb7c7a652.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fentes-barre",
+      "name": "Fentes barre",
+      "baselinePath": "/media/995e1f9a9cedc5ec.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 27,
+      "findingGroups": [],
+      "candidatePath": "/media/995e1f9a9cedc5ec.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-couche-barre-plat",
+      "name": "Développé couché barre plat",
+      "baselinePath": "/media/30adf4e98e55b6cd.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/30adf4e98e55b6cd.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tractions-supination-chin-up",
+      "name": "Tractions supination (chin-up)",
+      "baselinePath": "/media/4af33157ce25267c.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 18,
+      "findingGroups": [
+        "pullup-to-pulldown",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/4af33157ce25267c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-assis",
+      "name": "Développé haltères assis",
+      "baselinePath": "/media/3438ce158299c474.jpg",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/3438ce158299c474.jpg",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "extensions-triceps-pullover-barre-ez",
+      "name": "Extensions triceps + pullover barre EZ",
+      "baselinePath": "/media/5d6a89132df205f8.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/5d6a89132df205f8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-haltere-supination-banc-scott-90",
+      "name": "Curl haltère supination, banc Scott 90°",
+      "baselinePath": "/media/b54f07a7b66c1aed.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b54f07a7b66c1aed.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "releves-de-jambes-suspendu",
+      "name": "Relevés de jambes suspendu",
+      "baselinePath": "/media/16f6ff0f7ceba611.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/16f6ff0f7ceba611.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-couche-prise-serree",
+      "name": "Développé couché prise serrée",
+      "baselinePath": "/media/30adf4e98e55b6cd.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/30adf4e98e55b6cd.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "extensions-triceps-halteres-incline",
+      "name": "Extensions triceps haltères incliné",
+      "baselinePath": "/media/4c2b19fa924f90a8.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "triceps-bench-to-cable",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/4c2b19fa924f90a8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "pushdown-triceps-cable",
+      "name": "Pushdown triceps câble",
+      "baselinePath": "/media/497ab2e22c01080c.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 17,
+      "findingGroups": [],
+      "candidatePath": "/media/497ab2e22c01080c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-scott-haltere-neutre",
+      "name": "Curl Scott haltère neutre",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 11,
+      "findingGroups": [
+        "scott-to-standing-curl"
+      ],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-zottman-assis",
+      "name": "Curl Zottman assis",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 11,
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown"
+      ],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-poulie-basse",
+      "name": "Curl poulie basse",
+      "baselinePath": "/media/882c9c361686a9c9.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown",
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/882c9c361686a9c9.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-incline-30",
+      "name": "Élévations latérales incliné 30°",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-incline-45",
+      "name": "Élévations latérales incliné 45°",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales",
+      "name": "Élévations latérales",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fentes-marchees",
+      "name": "Fentes marchées",
+      "baselinePath": "/media/995e1f9a9cedc5ec.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 27,
+      "findingGroups": [],
+      "candidatePath": "/media/995e1f9a9cedc5ec.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-curl-allonge-pieds-pointes",
+      "name": "Leg curl allongé, pieds pointés",
+      "baselinePath": "/media/4eff701bcdf9a359.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/4eff701bcdf9a359.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-curl-allonge-pieds-flechis",
+      "name": "Leg curl allongé, pieds fléchis",
+      "baselinePath": "/media/4eff701bcdf9a359.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/4eff701bcdf9a359.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "good-morning-debout",
+      "name": "Good morning debout",
+      "baselinePath": "/media/9f22747c305f521b.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "good-morning-to-deadlift",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/9f22747c305f521b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-incline-45-prise-neutre",
+      "name": "Développé haltères incliné 45°, prise neutre",
+      "baselinePath": "/media/ff100d7322ba1193.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/ff100d7322ba1193.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "ecartes-halteres",
+      "name": "Écartés haltères",
+      "baselinePath": "/media/805f8592e2bccb1a.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "remaining-drawings-variants-to-confirm"
+      ],
+      "candidatePath": "/media/805f8592e2bccb1a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-haltere-buste-penche",
+      "name": "Rowing haltère buste penché",
+      "baselinePath": "/media/4dfda05b1db24000.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/4dfda05b1db24000.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-zottman-un-bras-banc-scott",
+      "name": "Curl Zottman un bras, banc Scott",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 11,
+      "findingGroups": [
+        "standing-curl-for-scott-bench",
+        "curl-posture-and-grip-not-shown"
+      ],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "split-squat-poulie-basse",
+      "name": "Split squat poulie basse",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 39,
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "dips",
+      "name": "Dips",
+      "baselinePath": "/media/c3a2b9892161522e.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "dips-orientation"
+      ],
+      "candidatePath": "/media/c3a2b9892161522e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tractions-prise-large",
+      "name": "Tractions prise large",
+      "baselinePath": "/media/4af33157ce25267c.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 18,
+      "findingGroups": [
+        "pullup-to-pulldown"
+      ],
+      "candidatePath": "/media/4af33157ce25267c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-incline-pronation",
+      "name": "Développé haltères incliné, pronation",
+      "baselinePath": "/media/a4c1fb89be18062f.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 28,
+      "findingGroups": [
+        "incline-dumbbell-to-flat"
+      ],
+      "candidatePath": "/media/a4c1fb89be18062f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-partiel-prise-snatch",
+      "name": "Soulevé de terre partiel, prise snatch",
+      "baselinePath": "/media/a8b1d1173ade4e8f.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/a8b1d1173ade4e8f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-halteres-incline-supination",
+      "name": "Curl haltères incliné, supination",
+      "baselinePath": "/media/b54f07a7b66c1aed.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b54f07a7b66c1aed.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-derriere-la-nuque",
+      "name": "Développé derrière la nuque",
+      "baselinePath": "/media/22146cff6a787e8a.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-press-for-behind-neck-and-single-arm"
+      ],
+      "candidatePath": "/media/22146cff6a787e8a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-curl-allonge-1-1-4-en-haut",
+      "name": "Leg curl allongé, 1 1/4 en haut",
+      "baselinePath": "/media/4eff701bcdf9a359.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/4eff701bcdf9a359.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "mollets-a-la-presse",
+      "name": "Mollets à la presse",
+      "baselinePath": "/media/f529e06a69b973f4.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-calf-for-press-calf"
+      ],
+      "candidatePath": "/media/f529e06a69b973f4.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "ecartes-cables-incline",
+      "name": "Écartés câbles incliné",
+      "baselinePath": "/media/b395c84efcad344b.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b395c84efcad344b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-assis-au-cou",
+      "name": "Rowing assis au cou",
+      "baselinePath": "/media/0a5625b92247ed69.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/0a5625b92247ed69.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "drop-lunges-fentes-sautees-controlees",
+      "name": "Drop lunges (fentes sautées contrôlées)",
+      "baselinePath": "/media/bc4d9bed4bbb590a.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 34,
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/bc4d9bed4bbb590a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "glute-ham-raise",
+      "name": "Glute ham raise",
+      "baselinePath": "/media/4eff701bcdf9a359.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/4eff701bcdf9a359.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "lean-away-pull-ups",
+      "name": "Lean away pull-ups",
+      "baselinePath": "/media/4af33157ce25267c.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 18,
+      "findingGroups": [
+        "pullup-to-pulldown",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/4af33157ce25267c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-incline-45",
+      "name": "Développé haltères incliné 45°",
+      "baselinePath": "/media/b4522eb6968d20d0.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b4522eb6968d20d0.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-haltere-un-bras-prise-neutre",
+      "name": "Rowing haltère un bras, prise neutre",
+      "baselinePath": "/media/4dfda05b1db24000.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/4dfda05b1db24000.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-partiel",
+      "name": "Soulevé de terre partiel",
+      "baselinePath": "/media/a8b1d1173ade4e8f.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/a8b1d1173ade4e8f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "ab-wheel-roulette",
+      "name": "Ab wheel (roulette)",
+      "baselinePath": "/media/789c6d90f30eb33e.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "ab-wheel-to-swiss-ball",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/789c6d90f30eb33e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-marteau",
+      "name": "Curl marteau",
+      "baselinePath": "/media/8fe5818f3a4ebebe.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/8fe5818f3a4ebebe.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-scott-90-haltere-supination",
+      "name": "Curl Scott 90° haltère supination",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 11,
+      "findingGroups": [
+        "standing-curl-for-scott-bench"
+      ],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "california-press-barre-au-cou",
+      "name": "California press (barre au cou)",
+      "baselinePath": "/media/5d6a89132df205f8.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/5d6a89132df205f8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-incline",
+      "name": "Élévations latérales incliné",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "safety-bar-squat-ou-barre-classique",
+      "name": "Safety bar squat (ou barre classique)",
+      "baselinePath": "/media/530326beb7c7a652.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/530326beb7c7a652.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-incline",
+      "name": "Développé haltères incliné",
+      "baselinePath": "/media/b4522eb6968d20d0.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b4522eb6968d20d0.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "cables-croises-rotation-externe",
+      "name": "Câbles croisés + rotation externe",
+      "baselinePath": "/media/b395c84efcad344b.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b395c84efcad344b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "pullover-cable-bras-tendus",
+      "name": "Pullover câble bras tendus",
+      "baselinePath": "/media/dc0cabae23adbfd5.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "pullover-to-pulldown",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/dc0cabae23adbfd5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-assis-cable-unilateral",
+      "name": "Rowing assis câble unilatéral",
+      "baselinePath": "/media/0a5625b92247ed69.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/0a5625b92247ed69.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-zottman",
+      "name": "Curl Zottman",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 11,
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown"
+      ],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "squat-cycliste",
+      "name": "Squat cycliste",
+      "baselinePath": "/media/1c28908ab83cde2e.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/1c28908ab83cde2e.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "leg-press-unilateral",
+      "name": "Leg press unilatéral",
+      "baselinePath": "/media/9f8ae03b97d31344.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/9f8ae03b97d31344.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "wood-chop-poulie-haute",
+      "name": "Wood chop poulie haute",
+      "baselinePath": "/media/a5c1c2427ee83c93.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "woodchop-to-crunch",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/a5c1c2427ee83c93.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-haltere-un-bras-debout",
+      "name": "Développé haltère un bras debout",
+      "baselinePath": "/media/d9c88be0658a81af.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 41,
+      "findingGroups": [
+        "standing-singlearm-to-seated-press",
+        "standing-press-for-behind-neck-and-single-arm"
+      ],
+      "candidatePath": "/media/d9c88be0658a81af.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "extensions-triceps-barre-ez-pullover",
+      "name": "Extensions triceps barre EZ + pullover",
+      "baselinePath": "/media/5d6a89132df205f8.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/5d6a89132df205f8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-concentration",
+      "name": "Curl concentration",
+      "baselinePath": "/media/36c6cb37445d3880.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 11,
+      "findingGroups": [
+        "curl-posture-and-grip-not-shown"
+      ],
+      "candidatePath": "/media/36c6cb37445d3880.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "split-squat-barbell-pied-avant-sureleve",
+      "name": "Split squat barbell (pied avant surélevé)",
+      "baselinePath": "/media/cf312b839f6da027.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 39,
+      "findingGroups": [],
+      "candidatePath": "/media/cf312b839f6da027.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-couche-decline-prise-serree",
+      "name": "Développé couché décliné prise serrée",
+      "baselinePath": "/media/30adf4e98e55b6cd.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/30adf4e98e55b6cd.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "extensions-triceps-halteres-plat",
+      "name": "Extensions triceps haltères plat",
+      "baselinePath": "/media/4c2b19fa924f90a8.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "triceps-bench-to-cable",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/4c2b19fa924f90a8.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-halteres-incline-prise-neutre",
+      "name": "Curl haltères incliné, prise neutre",
+      "baselinePath": "/media/b54f07a7b66c1aed.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/b54f07a7b66c1aed.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-halteres-assis-prise-neutre",
+      "name": "Développé haltères assis, prise neutre",
+      "baselinePath": "/media/d9c88be0658a81af.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 41,
+      "findingGroups": [],
+      "candidatePath": "/media/d9c88be0658a81af.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "elevations-laterales-lean-away",
+      "name": "Élévations latérales lean away",
+      "baselinePath": "/media/9e7f92622aca6913.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "standing-lateral-raise-for-seated-and-incline-variants"
+      ],
+      "candidatePath": "/media/9e7f92622aca6913.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "tirage-vertical-lean-away",
+      "name": "Tirage vertical lean away",
+      "baselinePath": "/media/dc0cabae23adbfd5.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/dc0cabae23adbfd5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "pullover-haltere-plat",
+      "name": "Pullover haltère plat",
+      "baselinePath": "/media/dc0cabae23adbfd5.gif",
+      "baselineReviewStatus": "known-finding",
+      "reviewClip": null,
+      "findingGroups": [
+        "pullover-to-pulldown",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/dc0cabae23adbfd5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-couche-plat-inertie-depuis-les-pins",
+      "name": "Développé couché plat, inertie depuis les pins",
+      "baselinePath": "/media/30adf4e98e55b6cd.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/30adf4e98e55b6cd.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-militaire-inertie-depuis-les-pins",
+      "name": "Développé militaire, inertie depuis les pins",
+      "baselinePath": "/media/22146cff6a787e8a.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/22146cff6a787e8a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "drop-lunges-fentes-controlees",
+      "name": "Drop lunges (fentes contrôlées)",
+      "baselinePath": "/media/bc4d9bed4bbb590a.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 34,
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/bc4d9bed4bbb590a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-couche-barre",
+      "name": "Développé couché barre",
+      "baselinePath": "/media/30adf4e98e55b6cd.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/30adf4e98e55b6cd.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "extensions-triceps-poulie",
+      "name": "Extensions triceps poulie",
+      "baselinePath": "/media/497ab2e22c01080c.gif",
+      "baselineReviewStatus": "basic-movement-corresponds",
+      "reviewClip": 17,
+      "findingGroups": [],
+      "candidatePath": "/media/497ab2e22c01080c.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "curl-barre",
+      "name": "Curl barre",
+      "baselinePath": "/media/882c9c361686a9c9.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/882c9c361686a9c9.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-couche-test-1rm",
+      "name": "Développé couché — test 1RM",
+      "baselinePath": "/media/30adf4e98e55b6cd.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/30adf4e98e55b6cd.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "back-squat-test-1rm",
+      "name": "Back squat — test 1RM",
+      "baselinePath": "/media/530326beb7c7a652.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/530326beb7c7a652.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "souleve-de-terre-test-1rm",
+      "name": "Soulevé de terre — test 1RM",
+      "baselinePath": "/media/a8b1d1173ade4e8f.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/a8b1d1173ade4e8f.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "developpe-militaire-test-1rm",
+      "name": "Développé militaire — test 1RM",
+      "baselinePath": "/media/22146cff6a787e8a.gif",
+      "baselineReviewStatus": "pending-association-review",
+      "reviewClip": null,
+      "findingGroups": [],
+      "candidatePath": "/media/22146cff6a787e8a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "pompes",
+      "name": "Pompes",
+      "baselinePath": "/media/43bad87368c12614.gif",
+      "baselineReviewStatus": "variant-review-required",
+      "reviewClip": 14,
+      "findingGroups": [],
+      "candidatePath": "/media/43bad87368c12614.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "squat-au-poids-du-corps",
+      "name": "Squat au poids du corps",
+      "baselinePath": "/media/78f9aee57a4101b1.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 23,
+      "findingGroups": [
+        "bodyweight-squat-drawn-with-dumbbell"
+      ],
+      "candidatePath": "/media/78f9aee57a4101b1.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "rowing-a-l-elastique",
+      "name": "Rowing à l’élastique",
+      "baselinePath": "/media/0860394a5a99f74b.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 4,
+      "findingGroups": [
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/0860394a5a99f74b.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "fentes-arriere-au-poids-du-corps",
+      "name": "Fentes arrière au poids du corps",
+      "baselinePath": "/media/bc4d9bed4bbb590a.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 34,
+      "findingGroups": [
+        "equipment-shown-differs-from-prescription"
+      ],
+      "candidatePath": "/media/bc4d9bed4bbb590a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "mobilite-des-epaules",
+      "name": "Mobilité des épaules",
+      "baselinePath": "/media/aab0de0aad0c275a.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 29,
+      "findingGroups": [
+        "bird-dog-to-side-plank",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/aab0de0aad0c275a.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    },
+    {
+      "id": "respiration-diaphragmatique",
+      "name": "Respiration diaphragmatique",
+      "baselinePath": "/media/b2236e6b7a81a1b5.gif",
+      "baselineReviewStatus": "mismatch",
+      "reviewClip": 31,
+      "findingGroups": [
+        "breathing-to-dead-bug",
+        "resolution-by-another-exercise-drawing"
+      ],
+      "candidatePath": "/media/b2236e6b7a81a1b5.gif",
+      "candidateStatus": "no-targeted-correction",
+      "finalAccepted": false
+    }
+  ]
+}
