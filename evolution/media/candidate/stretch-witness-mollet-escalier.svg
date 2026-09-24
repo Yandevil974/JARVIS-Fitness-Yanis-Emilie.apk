@@ -1,0 +1,40 @@
+<svg class="exo-gif" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+<style>
+.exo-gif{width:100%;height:auto;border-radius:8px;background:#0a0e1a}
+.cg-corps{animation:cgCorps 3s ease-in-out infinite}
+.cg-talon{animation:cgTalon 3s ease-in-out infinite;transform-origin:60px 70px}
+@keyframes cgCorps{0%,100%{transform:translateY(0)}50%{transform:translateY(1.2px)}}
+@keyframes cgTalon{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(3px) rotate(-6deg)}}
+</style>
+<rect width="120" height="100" rx="6" fill="#0a0e1a"/>
+<rect x="4" y="95" width="112" height="2" rx="1" fill="#0f172a"/>
+<rect x="62" y="70" width="50" height="25" rx="2" fill="#1e2b4a" stroke="#31456e" stroke-width="0.8"/>
+<rect x="62" y="70" width="50" height="2.4" fill="#31456e"/>
+<rect x="58" y="70" width="54" height="2" fill="#1e293b"/>
+<g class="cg-corps">
+ <ellipse cx="76" cy="26" rx="6.5" ry="7.5" fill="#e8b896" stroke="#c89070" stroke-width="0.5"/>
+ <ellipse cx="76" cy="27" rx="5.6" ry="6" fill="#f0c8a8"/>
+ <ellipse cx="76" cy="20.5" rx="7" ry="4.2" fill="#1a1a2e"/>
+ <ellipse cx="73.4" cy="26" rx="1.2" ry="1.6" fill="#2d1810"/>
+ <ellipse cx="78.6" cy="26" rx="1.2" ry="1.6" fill="#2d1810"/>
+ <ellipse cx="73.4" cy="25.6" rx="0.6" ry="0.8" fill="white"/>
+ <ellipse cx="78.6" cy="25.6" rx="0.6" ry="0.8" fill="white"/>
+ <path d="M73.5,30.4 Q76,32 78.5,30.4" fill="none" stroke="#c89070" stroke-width="0.6"/>
+ <path d="M76,33 L76,35.5" stroke="#e8b896" stroke-width="4" stroke-linecap="round"/>
+ <path d="M70,36 Q76,33.5 82,36 Q84.5,45 83.5,54 Q76,57 68.5,54 Q67.5,45 70,36Z" fill="#2563eb" stroke="#1d4ed8" stroke-width="1"/>
+ <path d="M72,38.5 Q70.5,46 71.5,52" fill="none" stroke="#1d4ed8" stroke-width="0.5" opacity="0.35"/>
+ <path d="M80,38.5 Q81.5,46 80.5,52" fill="none" stroke="#1d4ed8" stroke-width="0.5" opacity="0.35"/>
+ <path d="M70.5,37.5 Q66,43 66,49.5" fill="none" stroke="#e8b896" stroke-width="3" stroke-linecap="round"/>
+ <path d="M82,37 Q87,42 87,49" fill="none" stroke="#e8b896" stroke-width="3.2" stroke-linecap="round"/>
+ <path d="M80,54 Q83,62 85,68.5" fill="none" stroke="#e8b896" stroke-width="4.4" stroke-linecap="round"/>
+ <path d="M81,69.6 Q85,69 90,69.4" fill="none" stroke="#1a1a2e" stroke-width="2.6" stroke-linecap="round"/>
+</g>
+<g class="cg-talon">
+ <path d="M68,54 Q65,61 64,68" fill="none" stroke="#e8b896" stroke-width="4.4" stroke-linecap="round"/>
+ <path d="M64,68 Q60,72 56,79" fill="#1a1a2e" stroke="#0f172a" stroke-width="0.5"/>
+ <path d="M63,69 Q61,72 58,76" fill="none" stroke="#0f172a" stroke-width="0.35" opacity="0.45"/>
+ <path d="M64,68 Q66,68.4 68,69.2" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+<path d="M52,72 L52,82" stroke="#38bdf8" stroke-width="0.9" fill="none"/>
+<path d="M50,80 L52,82.6 L54,80" stroke="#38bdf8" stroke-width="0.9" fill="none"/>
+</svg>

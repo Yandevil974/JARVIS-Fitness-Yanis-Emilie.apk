@@ -30,6 +30,19 @@ Inventaire complet, ligne par ligne : `evolution/media/review/GAPS-SANS-DESSIN.j
 - Deux groupes ajoutés : `style-family-rule` (décision de style) et `gaps-without-any-faithful-drawing` (lacunes sans dessin fidèle) → **53 groupes ouverts**.
 - **Septième effacement d'espace de travail** en début d'étape : restauré depuis le dépôt, Chromium et l'outillage reprovisionnés, **rien perdu**.
 
+### Lot témoin n° 1 livré pour votre jugement (23 septembre 2026)
+
+Vos trois choix sont enregistrés : **famille C** (SVG animé intégré, fond sombre, boucle 3 s), **un lot témoin d'un seul visuel avant toute production**, **priorité aux quatre étirements**.
+
+Visuel témoin proposé — **« Mollet en escalier »**, le plus net des quatre écarts d'étirement : le dessin livré montre un étirement **au mur**, alors que la consigne demande **le talon sous le niveau d'une marche**.
+
+- **Rendu** : `evolution/media/review/stretch-temoin-mollet-escalier.png` (à gauche le dessin livré, à droite la proposition).
+- **Source** : `evolution/media/candidate/stretch-witness-mollet-escalier.svg` — SVG autonome, **même gabarit que les 144 animations déjà intégrées** (`viewBox 0 0 120 100`, fond `#0a0e1a`, peau `#e8b896` / `#f0c8a8`, vêtement `#2563eb`, cheveux `#1a1a2e`), animation **3 s en boucle** : le talon descend sous l'arête et remonte.
+- **Aucune consigne réécrite**, aucune installation, aucun APK : c'est une **proposition**, pas une livraison. Le bloc `fix` correspondant n'est créé qu'après votre verdict.
+- **Ce que je vérifierai avant les 69 autres** si vous validez : lisibilité à 300 px de large (taille réelle dans l'application), position du talon sous l'arête, absence de membre qui traverse le corps, animation fluide en boucle, planche avant/après, parcours de test qui échoue sur la version livrée.
+
+**Dites-moi seulement : à garder tel quel, à corriger (quoi), ou à abandonner.**
+
 ### Prochaine étape précise — elle dépend de vous
 
 1. **Valider la règle de style** ou la corriger (les trois familles et leurs gabarits) et **choisir la famille** des 34 Tabata au sol et des 5 guides aquatiques — je recommande la **famille C** pour l'écran sombre du chrono.
