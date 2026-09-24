@@ -25,7 +25,11 @@ INK = 150           # seuil : encre du dessin (trait noir, muscles surlignes)
 
 
 def panel_split(image):
-    """Coupe la planche en deux au filet vertical clair le plus proche du milieu."""
+    """Coupe la planche en deux, sans jamais entamer une figure.
+
+    Le filet de separation n'est pas toujours present, et un fond gris peut
+    produire un faux candidat. On essaie donc plusieurs colonnes et on garde la
+    premiere ou les DEUX figures tiennent entierement dans leur panneau."""
     grey = image.convert('L')
     width, height = grey.size
     pixels = grey.load()
@@ -34,7 +38,21 @@ def panel_split(image):
         count = sum(1 for y in range(0, height, 4) if 150 < pixels[x, y] < 245)
         if count > best:
             best, best_x = count, x
-    return image.crop((0, 0, best_x - 6, height)), image.crop((best_x + 6, 0, width, height))
+    candidates = []
+    for anchor in (best_x, width // 2):
+        for delta in range(0, 61, 3):
+            candidates.append(anchor - delta)
+            candidates.append(anchor + delta)
+    for column in candidates:
+        if not 200 < column < width - 200:
+            continue
+        left = image.crop((0, 0, column - 6, height))
+        right = image.crop((column + 6, 0, width, height))
+        boxes = [ink_box(left), ink_box(right)]
+        if all(box and box[0] > 0 and box[2] < panel.width - 1 for box, panel in zip(boxes, (left, right))):
+            return left, right
+    column = width // 2
+    return image.crop((0, 0, column - 6, height)), image.crop((column + 6, 0, width, height))
 
 
 def ink_box(image):

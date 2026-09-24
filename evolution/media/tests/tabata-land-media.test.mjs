@@ -70,8 +70,10 @@ test('aucun mouvement ne recoit un visuel generique par erreur, et rien n’est 
   const restants = names.filter(name => !declared[name]);
   assert.equal(restants.length, 38 - Object.keys(declared).length);
   assert.equal(map.couverture.reste, restants.length, 'la couverture annoncee doit etre mesurable');
-  for (const name of ['Battements de jambes', 'Marche sur place', 'Burpees', 'Dead bug', 'Oiseau-chien'])
-    assert.ok(restants.includes(name), 'mouvement attendu dans le reste a produire : ' + name);
+  // Les trois derniers noms attendus du generateur au sol : le reste doit
+  // correspondre exactement a ce qui est annonce, jamais moins.
+  assert.deepEqual(restants.sort(), [...(map.couverture.restants || [])].sort(),
+    'le reste a produire doit etre exactement celui annonce dans la carte');
 });
 
 test('les noms equivalents pointent vers le dessin du meme mouvement', () => {

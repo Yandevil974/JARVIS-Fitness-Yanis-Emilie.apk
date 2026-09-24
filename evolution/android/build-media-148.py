@@ -35,7 +35,7 @@ from apk_binary import chunks, patch_manifest, pool_strings, u16
 BASE = ROOT / 'downloads/Yanis-Fitness-Evolution-1.4.0.apk'
 BASE_SHA = '30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7'
 BUNDLE = 'assets/public/assets/index-CBCies4k.js'
-BUNDLE_SHA = '34cb2f29a7888ef0bd0cae4b7d998f86fb22f414516ff9f10666e416e5f260a6'
+BUNDLE_SHA = 'aaf5f8ef2105c487473d243ada8e31fea591d63df58fcf0f4d67ec7c46eb153f'
 APP_ID = 'app.yanis.fitness.evolution.home'
 VERSION = '1.4.8'
 VERSION_CODE = 19
@@ -213,10 +213,10 @@ def main():
                        'verifiedBy': ['evolution/media/tests/pool-land-guides.spec.mjs']},
         'tabataLandAnimations': {'request': 'user, 24 September 2026: oui complete tous les elements manquants',
                        'context': 'resolvees uniquement dans un Tabata AU SOL (jamais piscine, etirement, echauffement, repos)',
-                       'delivered': 'lot A + lot B : 20 mouvements dessines, 5 noms equivalents du meme mouvement, 25 noms sur 38',
+                       'delivered': 'lots A + B + C : 30 mouvements dessines, 5 noms equivalents du meme mouvement, 35 noms sur 38',
                        'map': 'evolution/media/candidate/tabata-land-animations-map.json',
                        'format': '480 x 262, 2 images, 500 ms, meme famille que les GIF deja livres',
-                       'remaining': '13 noms du generateur au sol, listes dans la carte et mesurees par le test',
+                       'remaining': '3 noms du generateur au sol (High knees, Repos actif, Respiration profonde), listes dans la carte et mesures par le test',
                        'verifiedBy': ['evolution/media/tests/tabata-land-media.test.mjs','evolution/media/tests/media-inventory.test.mjs']},
         'installNote': 'same package AND same signature as 1.4.6/1.4.5/1.4.4/1.4.3/1.4.2: installs straight over 1.4.6 without uninstalling; coming from 1.4.0 or 1.4.1, uninstall first and restore the JSON backup'}
     (output.parent / (output.name + '.sha256')).write_text(report['apkSha256'] + '  ' + output.name + '\n')
