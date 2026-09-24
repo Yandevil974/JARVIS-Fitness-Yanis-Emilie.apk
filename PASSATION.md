@@ -34,15 +34,24 @@ Je n'ai **pas de vision** sur les fichiers : je ne peux donc pas juger un rendu 
 
 Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement est beau ou parfaitement juste**. **La validation visuelle du lot témoin est donc la vôtre** : je vous montre les images en pleine taille avant toute série.
 
-### Lot témoin n° 2 — 3 mouvements, **poignet corrigé** (à valider)
+### ▶ Refonte v3 en cours — personnage très musclé + décor de salle (lot 1 : 10 mouvements)
 
-| | |
+Votre consigne, mot pour mot : « Ton personnage est de moins en moins musclé. Garde la même physionomie. Et rajoute un décor de salle. Recommence le tout. »
+
+Ce qui change, pour **tous** les mouvements (planches antérieures jetées et refaites) :
+
+| Règle | Comment elle est tenue |
 |---|---|
-| Mouvement | **curl marteau assis** (salle, haltères, banc plat) |
-| Planche | `evolution/media/refonte/planches/curl-marteau-assis.png` (1376 × 768) |
-| Rendu | `evolution/media/refonte/pilote-curl-marteau.png` — les 4 images, Yanis en haut, Émilie en bas |
-| GIF | `curl-marteau-assis-yanis.gif` (47 Ko) et `curl-marteau-assis-emilie.gif` (62 Ko), **246 × 440**, 2 images, 500 ms, boucle infinie |
-| Contrôles | 8 cases à **1 personnage**, marges hautes et basses ≈ 12 %, échelles identiques d'une position à l'autre (164 × 302 puis 161 × 302 pour Yanis), paires dupliquées reconnues |
+| Même physionomie que la photo, très musclée | Un bloc de texte identique, recopié mot pour mot dans chaque demande : poitrine épaisse, épaules larges, bras pleins, cuisses fortes, jamais un corps mince ou « légèrement tonique ». Voir `evolution/media/refonte/MODELE-PROMPTE.md`. |
+| Décor de salle | Vraie salle de musculation derrière chaque personnage (sol caoutchouc, racks d'haltères, disques, miroir, rack à squat flou). Piscine : bassin carrelé, ligne d'eau, eau à mi-poitrine. |
+| Cadre | Le décor fait partie de l'image : on garde **la case entière**, 393 × 440, sans rogner ni déformer (nouveau mode `--fenetre scene` de `planche-style.py`). |
+| Poids | ≈ 80 à 110 Ko par GIF (le décor pèse plus qu'un fond uni). |
+
+**Lot 1 — 10 mouvements, 20 GIF** (`evolution/media/refonte/gif/`, planche de contrôle `evolution/media/refonte/lot-1-10-mouvements.jpg`) : curl marteau assis (rotation du poignet), élévations latérales assises, bulgarian split squat, tirage vertical prise neutre, curl Scott barre EZ pronation, squats, aqua-jogging, back squat, développé couché barre plat, développé militaire haltères assis.
+
+Contrôles mesurés sur chaque planche : 8 cases, les deux positions nettement différentes (écart 14 à 57), les cases répétées identiques (écart 2 à 16). **Je n'ai pas de vision dans cette session** : la musculature, le décor et le geste sont à valider par vous.
+
+Reste : 142 mouvements animés, puis 29 étirements, 10 images piscine, 6 échauffement/cardio (images fixes). Photos de progression j0/m12 : jamais touchées. Cadence : 10 planches par tour.
 
 ### Décisions que vous avez prises (24 septembre 2026)
 
