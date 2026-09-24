@@ -239,7 +239,8 @@
     ],
     "evidence": "evolution/media/review/pool-animations-5-guides.png",
     "verifiedBy": [
-      "evolution/media/tests/pool-land-guides.spec.mjs"
+      "evolution/media/tests/pool-land-guides.spec.mjs",
+      "evolution/media/tests/delivered-bundle.test.mjs"
     ]
   },
   "aliasVariants": {
@@ -250,7 +251,8 @@
     "remaining": "aucune variante du releve : le champ reste de la carte est vide ; il reste l essai sur le telephone",
     "verifiedBy": [
       "evolution/media/tests/alias-visuals.test.mjs",
-      "evolution/media/tests/pool-candidate.test.mjs"
+      "evolution/media/tests/pool-candidate.test.mjs",
+      "evolution/media/tests/delivered-bundle.test.mjs"
     ]
   },
   "tabataLandAnimations": {
@@ -262,7 +264,8 @@
     "remaining": "aucun nom du generateur au sol ; il reste l essai sur le telephone",
     "verifiedBy": [
       "evolution/media/tests/tabata-land-media.test.mjs",
-      "evolution/media/tests/media-inventory.test.mjs"
+      "evolution/media/tests/media-inventory.test.mjs",
+      "evolution/media/tests/delivered-bundle.test.mjs"
     ]
   },
   "poolRecoveries": {
@@ -271,10 +274,12 @@
     "delivered": "deux animations humaines produites : /media/pool-repos.gif (recuperation dans leau) et /media/pool-en-place.gif (mise en place avant l effort)",
     "map": "evolution/media/candidate/pool-recovery-map.json",
     "context": "servies uniquement quand un contexte piscine est deja etabli ; hors piscine, aucun nom ne change de visuel",
+    "measuredOnDeliveredScript": "le script extrait de cet APK resout les 420 etapes : 117 pool-repos.gif, 18 pool-en-place.gif, zero chemin cardio/elliptique/photo",
     "measured": "zero etape sans visuel et zero media de terre sur les 420 etapes ; les recuperations nommees gardent leur image aquatique livree",
     "verifiedBy": [
       "evolution/media/tests/pool-candidate.test.mjs",
-      "evolution/media/tests/media-inventory.test.mjs"
+      "evolution/media/tests/media-inventory.test.mjs",
+      "evolution/media/tests/delivered-bundle.test.mjs"
     ]
   },
   "stretchVisuals": {
@@ -291,7 +296,8 @@
     "unchanged": "noms, durees, consignes et donnees enregistrees ; les anciens dessins restent dans le paquet",
     "verifiedBy": [
       "evolution/media/tests/stretch-media.test.mjs",
-      "evolution/media/tests/media-inventory.test.mjs"
+      "evolution/media/tests/media-inventory.test.mjs",
+      "evolution/media/tests/delivered-bundle.test.mjs"
     ]
   },
   "installNote": "same package AND same signature as 1.4.6/1.4.5/1.4.4/1.4.3/1.4.2: installs straight over 1.4.6 without uninstalling; coming from 1.4.0 or 1.4.1, uninstall first and restore the JSON backup"
