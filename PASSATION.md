@@ -1,3 +1,42 @@
+# Passation — JARVIS Fitness Evolution
+
+## Télécharger la version livrée (1.4.8 — 24 septembre 2026)
+
+[**Yanis-Fitness-Evolution-1.4.8.apk**](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/f48bf739a824661c774e524062aea1ca19958516/downloads/Yanis-Fitness-Evolution-1.4.8.apk)
+— 28 035 594 octets, SHA-256 `fee667192291dd8adc93593bb395b6193e82849e11a4d5db94bf9218c8b99e9f`, signature `150e3846…`
+(installation directe par-dessus la 1.4.2 à la 1.4.7, rien à désinstaller).
+
+Lien de branche si vous préférez :
+[`arena/01a0cd68-…/downloads/Yanis-Fitness-Evolution-1.4.8.apk`](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/arena/01a0cd68-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.4.8.apk)
+
+Cette version contient **tous les visuels manquants du premier lot** (Tabata au sol, 4 étirements, 10 variantes, récupérations piscine, correctif 1.4.7) et passe **64/64 tests**, dont la mesure du script réellement embarqué dans l'APK.
+
+## Ce qui reste à faire — état exact au 24 septembre 2026
+
+### 1. Variantes « alias » : 13 restent à traiter (sur 27 mesurées)
+
+Les dix premières étaient livrées ; les dix-sept autres ont été vérifiées **image par image** sur les dessins réellement servis (`evolution/media/review/alias-restants-dessins-livres.png`).
+
+- **8 animations produites et validées** (dans `evolution/media/candidate/alias-animations/`, planches dans `evolution/media/candidate/alias-planches/`) :
+  face pull à l'élastique · kickback à l'élastique · leg extension · curl poulie basse (sert aussi `curl-poulie-basse-supination`) ·
+  élévations latérales incliné 45° · tractions prise large · split squat poulie basse · extensions triceps + pullover barre EZ.
+- **2 animations produites mais à refaire** (la pose prescrite n'est pas encore convaincante) :
+  élévations latérales incliné 30° (l'inclinaison du banc doit être visible) · écartés câbles incliné (l'athlète doit être allongé sur le banc incliné).
+- **3 animations pas encore produites** : rowing assis câble unilatéral (un seul bras) · développé couché décliné prise serrée · Pallof press à l'élastique.
+- **Rien à produire** pour `kickback-a-la-poulie-drop-set-final` : le dessin livré est bien un kickback à la poulie.
+
+### 2. Câblage et version suivante
+
+- Étendre `evolution/media/candidate/alias-visuals-map.json` (variantes + `files` avec empreintes), copier les GIF dans `alias-animations/`, autoriser un même fichier pour deux identifiants (aujourd'hui la carte et le test exigent un fichier par entrée : à faire évoluer proprement).
+- Mettre à jour les tests qui comptent aujourd'hui **10 variantes** (`delivered-bundle.test.mjs`, `alias-visuals.test.mjs`, `media-inventory.test.mjs`).
+- Reconstruire le paquet web (`build.mjs`), renouveler le pin `BUNDLE_SHA` de `build-media-148.py`, reconstruire l'APK, refaire `.sha256` + `.fidelity.json`, relancer 64/64 tests, puis reprendre la présente passation.
+
+### 3. Ce qui dépend de vous
+
+- **Essai sur votre téléphone** : c'est la seule acceptation encore en attente. Les groupes de constats (Tabata au sol, étirements, variantes, récupérations piscine) restent **ouverts** jusqu'à votre retour ; aucun n'est fermé en silence.
+- **Associations historiques de récupération piscine** (« Récup — marche », « Récup complète — souffler au bord », « Récup entre tabatas », « Retour au calme ») : elles gardent leur image aquatique livrée, toujours marquées « non validées ».
+- **IA conversationnelle** : en pause, comme convenu.
+
 ## Version complète livrée — 1.4.8 (24 septembre 2026)
 
 > « oui complète tous les éléments manquants » puis « il y a des images humaines animées manquantes. corrige cela stp en cohérence avec les autres gif stp »
