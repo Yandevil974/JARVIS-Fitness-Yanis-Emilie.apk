@@ -1,6 +1,6 @@
 ## En cours — 24 septembre 2026 : « oui complète tous les éléments manquants »
 
-> « oui complète tous les éléments manquants »
+> « oui complète tous les éléments manquants » — puis : « il y a des images humaines animées manquantes. corrige cela stp en cohérence avec les autres gif stp »
 > Ordre de livraison choisi : **tout en une seule version**. Manques à traiter : **tous** (Tabata au sol, variantes d'alias sans dessin, étirements, récupérations).
 
 ### 1. Un défaut grave trouvé dans la 1.4.7 livrée — et corrigé
@@ -9,36 +9,48 @@ En vérifiant ce que l'application reçoit réellement : **la 1.4.7 publiée ne 
 
 **Conséquence immédiate : n'installez pas la 1.4.7.**
 
-Correctif en place : la construction embarque **toute** l'arborescence web (script **et** médias) et **refuse** désormais de produire un APK si un chemin `/media`, `/thumbs` ou `/team` référencé par le script livré est absent ; un test mesure **l'APK**, reproduit le défaut sur la 1.4.7 (les cinq mêmes fichiers) et exige la présence **et** l'empreinte de chaque animation livrée.
+Correctif en place : la construction embarque **toute** l'arborescence web (script **et** médias) et **refuse** de produire un APK si un chemin `/media`, `/thumbs` ou `/team` référencé par le script livré est absent ; un test mesure **l'APK** de bout en bout (Tabata au sol, piscine, étirements, variantes), reproduit le défaut sur la 1.4.7 (les cinq mêmes fichiers) et exige la présence **et** l'empreinte de chaque média produit.
 
-### 2. Tabata au sol : 35 des 38 mouvements déjà couverts
+### 2. Tabata au sol : les 38 mouvements sont couverts
 
 | Lot | Mouvements |
 |---|---|
 | **A** (10) | Jumping jacks · Squats · Pompes · Mountain climbers · Fentes alternées · Gainage planche · Burpees simplifiés · Relevés de jambes · Crunch · Russian twist |
 | **B** (10) | Dips au bord · Pompes inclinées · Superman · Planche latérale G · Planche latérale D · Ponts fessiers · Squats sumo · Montées sur mollets · Fentes arrière · Chaise au mur |
 | **C** (10) | Battements de jambes · Dead bug · Montées de genoux · Burpees · Corde invisible · Patineurs · Squats sautés · Marche sur place · Pompes au mur · Oiseau-chien |
+| **D** (3) | **High knees · Repos actif · Respiration profonde** — le générateur au sol n'a plus aucun nom sans démonstration |
 | **Noms équivalents** (5) | Planche · Mountain climbers lents · Squats doux · Chaise douce · Mollets — **le même mouvement sous un autre nom** dans le générateur, jamais un autre exercice ; la justification est écrite dans la carte |
 
-**Règle de contexte, jamais mélangée** : ces animations ne s'affichent que dans un **Tabata au sol**. En piscine, Aqua Tabata, étirement, échauffement ou repos, rien ne change. Aucun nom, aucune durée, aucune consigne, aucune donnée enregistrée n'est modifiée ; les mouvements non encore dessinés gardent l'affichage actuel — **aucun visuel générique inventé**.
+**Règle de contexte, jamais mélangée** : ces animations ne s'affichent que dans un **Tabata au sol**. En piscine, Aqua Tabata, étirement, échauffement ou repos, rien ne change. Aucun nom, aucune durée, aucune consigne, aucune donnée enregistrée n'est modifiée.
 
-**Contrôles** : Node **55/55**. Les animations déclarées sont relues **dans le paquet livré** (pas dans le dossier de travail), le reste à produire est comparé **exactement** à ce qui est annoncé dans la carte, et chaque GIF est vérifié (signature, 480 × 262, 2 images, 500 ms, empreinte). Une vérification automatique des 30 animations confirme qu'**aucune figure ne touche un bord** — jamais de tête ni de pied coupé.
+### 3. Étirements : les quatre visuels qui montraient un AUTRE mouvement
 
-### 3. Reste à produire (3 noms, puis les autres manques)
+Quatre consignes affichaient le dessin d'un autre mouvement : **« Mollet en escalier »** montrait l'appui au mur (déjà servi ailleurs), **« Adduction de la hanche debout »** une fente latérale, **« Mains croisées derrière le dos »** une posture bras bas, **« Étirement des fléchisseurs »** une position à quatre pattes.
 
-**High knees** · **Repos actif** · **Respiration profonde** — trois dessins, pas plus.
+Les quatre dessins ont été **produits dans la famille de vos étirements** (1376 × 768, une seule posture fixe, figure entière, pieds au sol, short marine, muscle surligné orange) et servis à la place des précédents. **Rien d'autre ne change** : ni les noms, ni les durées, ni les consignes, ni vos données ; les anciens dessins restent dans le paquet, ils servent à d'autres consignes.
 
-Ensuite, toujours dans la même version : les variantes d'alias sans dessin fidèle, les **quatre étirements** refusés en famille C — à refaire dans cette famille-ci — et les récupérations génériques.
+### 4. Variantes d'alias : 3 produites sur 10
+
+Dix exercices affichaient le dessin d'une **autre variante** (l'application l'annonçait elle-même : « Variante très proche »). Les trois premiers sont dessinés dans la famille des GIF livrés et **résolus exactement** pour leur exercice :
+
+| Exercice | Ce qui était montré | Animation produite |
+|---|---|---|
+| **Tractions prise neutre (chin-up)** | tirage vertical à la poulie haute | `alias-tractions-prise-neutre.gif` — suspension à la barre, prise neutre, menton au-dessus |
+| **Back extension 45°, prise snatch** | l'autre entrée (banc horizontal, jambes tendues) | `alias-back-extension-45-snatch.gif` — banc à 45°, prise large |
+| **Développé couché prise serrée** | développé couché prise normale | `alias-developpe-couche-prise-serree.gif` — mains serrées, coudes près du corps |
+
+**Reste à produire** : Curl haltère supination banc Scott 90° · Curl Zottman assis · Fentes marchées · Curl Zottman un bras banc Scott · Curl Zottman · Curl concentration · Fentes arrière au poids du corps. Aucune substitution par muscle n'est possible : chaque nom reçoit le dessin de **sa** variante.
+
+### 5. Où en est la livraison
 
 | Élément | Valeur |
 |---|---|
-| Version de travail | **1.4.8** (sera remplacée par la version complète) |
-| APK de contrôle | `downloads/Yanis-Fitness-Evolution-1.4.8.apk` — 27 210 438 octets, SHA-256 `f39cc05abee8b770a1e07b49960c5babc9398e35c8225583680190cf7a8cc951` |
+| Version de travail | **1.4.8** (sera remplacée par la version complète, tout en une fois) |
+| APK de contrôle disponible | `downloads/Yanis-Fitness-Evolution-1.4.8.apk` — 27 210 438 octets, SHA-256 `f39cc05abee8b770a1e07b49960c5babc9398e35c8225583680190cf7a8cc951` (lot C : 30 animations du Tabata au sol) |
 | Identité | **`150e3846…`** (la même depuis la 1.4.2) ⇒ installation par-dessus la 1.4.7 ou la 1.4.6, rien à désinstaller |
-| Contenu | 37 entrées média ajoutées, 9/9 DEX identiques, v2 + v3, un signataire |
+| Tests | **58 sur 59** : le seul test en échec est celui qui mesure **l'APK livré** ; il exige que l'APK contienne les nouveaux médias, donc il passera à la reconstruction |
 
-**Note technique** : l'espace de travail s'étant réinitialisé en cours de route, l'outillage se reconstruit maintenant en une commande versionnée : `bash evolution/media/setup-tools.sh`. L'identité de signature a été restaurée depuis la sauvegarde chiffrée **avant** toute construction ; aucun APK n'est produit sans elle. Les parcours navigateur sont momentanément indisponibles (téléchargement du navigateur de test bloqué par le réseau) : les contrôles sont faits par les 55 tests Node, dont ceux qui mesurent l'APK final.
-
+**Point d'attention, sans conséquence pour vous** : l'espace de travail s'est réinitialisé pendant ce lot et le fichier de clé de signature (celui que vous avez collé, plus la sauvegarde privée) a disparu avec lui. La reconstruction de l'APK de contrôle est donc en attente de la **clé de récupération** — recollée dans la conversation, elle permet de signer de nouveau avec **la même identité** (pas de désinstallation). Dès qu'elle est là, la version complète est construite, mesurée et livrée.
 
 ## Dernière avancée — 1.4.7 publiée : cinq animations humaines aquatiques, dans le style de vos GIF existants (24 septembre 2026)
 
