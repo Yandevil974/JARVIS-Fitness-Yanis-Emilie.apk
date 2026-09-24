@@ -11,30 +11,31 @@ En vérifiant ce que l'application reçoit réellement : **la 1.4.7 publiée ne 
 
 Correctif en place : la construction embarque **toute** l'arborescence web (script **et** médias) et **refuse** désormais de produire un APK si un chemin `/media`, `/thumbs` ou `/team` référencé par le script livré est absent ; un test mesure **l'APK**, reproduit le défaut sur la 1.4.7 (les cinq mêmes fichiers) et exige la présence **et** l'empreinte de chaque animation livrée.
 
-### 2. Tabata au sol : 25 des 38 mouvements déjà couverts
+### 2. Tabata au sol : 35 des 38 mouvements déjà couverts
 
 | Lot | Mouvements |
 |---|---|
 | **A** (10) | Jumping jacks · Squats · Pompes · Mountain climbers · Fentes alternées · Gainage planche · Burpees simplifiés · Relevés de jambes · Crunch · Russian twist |
 | **B** (10) | Dips au bord · Pompes inclinées · Superman · Planche latérale G · Planche latérale D · Ponts fessiers · Squats sumo · Montées sur mollets · Fentes arrière · Chaise au mur |
+| **C** (10) | Battements de jambes · Dead bug · Montées de genoux · Burpees · Corde invisible · Patineurs · Squats sautés · Marche sur place · Pompes au mur · Oiseau-chien |
 | **Noms équivalents** (5) | Planche · Mountain climbers lents · Squats doux · Chaise douce · Mollets — **le même mouvement sous un autre nom** dans le générateur, jamais un autre exercice ; la justification est écrite dans la carte |
 
 **Règle de contexte, jamais mélangée** : ces animations ne s'affichent que dans un **Tabata au sol**. En piscine, Aqua Tabata, étirement, échauffement ou repos, rien ne change. Aucun nom, aucune durée, aucune consigne, aucune donnée enregistrée n'est modifiée ; les mouvements non encore dessinés gardent l'affichage actuel — **aucun visuel générique inventé**.
 
-**Contrôles** : Node **55/55**. Les animations déclarées sont relues **dans le paquet livré** (pas dans le dossier de travail), les 13 noms restants sont comptés et nommés par le test, et chaque GIF est vérifié (signature, 480 × 262, 2 images, 500 ms, empreinte).
+**Contrôles** : Node **55/55**. Les animations déclarées sont relues **dans le paquet livré** (pas dans le dossier de travail), le reste à produire est comparé **exactement** à ce qui est annoncé dans la carte, et chaque GIF est vérifié (signature, 480 × 262, 2 images, 500 ms, empreinte). Une vérification automatique des 30 animations confirme qu'**aucune figure ne touche un bord** — jamais de tête ni de pied coupé.
 
-### 3. Reste à produire (13 noms, puis les autres manques)
+### 3. Reste à produire (3 noms, puis les autres manques)
 
-Battements de jambes · Dead bug · Montées de genoux · Burpees · Corde invisible · Patineurs · High knees · Squats sautés · Repos actif · Marche sur place · Pompes au mur · Oiseau-chien · Respiration profonde.
+**High knees** · **Repos actif** · **Respiration profonde** — trois dessins, pas plus.
 
 Ensuite, toujours dans la même version : les variantes d'alias sans dessin fidèle, les **quatre étirements** refusés en famille C — à refaire dans cette famille-ci — et les récupérations génériques.
 
 | Élément | Valeur |
 |---|---|
 | Version de travail | **1.4.8** (sera remplacée par la version complète) |
-| APK de contrôle | `downloads/Yanis-Fitness-Evolution-1.4.8.apk` — 26 607 371 octets, SHA-256 `0b5f2ee4d76322122a27c1b445bd61e89976c6695e7ab457d1fb16ff13e0f4ce` |
+| APK de contrôle | `downloads/Yanis-Fitness-Evolution-1.4.8.apk` — 27 210 438 octets, SHA-256 `f39cc05abee8b770a1e07b49960c5babc9398e35c8225583680190cf7a8cc951` |
 | Identité | **`150e3846…`** (la même depuis la 1.4.2) ⇒ installation par-dessus la 1.4.7 ou la 1.4.6, rien à désinstaller |
-| Contenu | 27 entrées média ajoutées, 9/9 DEX identiques, v2 + v3, un signataire |
+| Contenu | 37 entrées média ajoutées, 9/9 DEX identiques, v2 + v3, un signataire |
 
 **Note technique** : l'espace de travail s'étant réinitialisé en cours de route, l'outillage se reconstruit maintenant en une commande versionnée : `bash evolution/media/setup-tools.sh`. L'identité de signature a été restaurée depuis la sauvegarde chiffrée **avant** toute construction ; aucun APK n'est produit sans elle. Les parcours navigateur sont momentanément indisponibles (téléchargement du navigateur de test bloqué par le réseau) : les contrôles sont faits par les 55 tests Node, dont ceux qui mesurent l'APK final.
 
