@@ -35,7 +35,7 @@ from apk_binary import chunks, patch_manifest, pool_strings, u16
 BASE = ROOT / 'downloads/Yanis-Fitness-Evolution-1.4.0.apk'
 BASE_SHA = '30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7'
 BUNDLE = 'assets/public/assets/index-CBCies4k.js'
-BUNDLE_SHA = 'd03b3033b975e879d43a26504bba261fe801facbd1ff0d1a68764105cb8c79be'
+BUNDLE_SHA = '7f955f08539c3f8ad00af3f25d83df6fd6d37328d009ca425ae684bfa76b1a23'
 APP_ID = 'app.yanis.fitness.evolution.home'
 VERSION = '1.4.8'
 VERSION_CODE = 19

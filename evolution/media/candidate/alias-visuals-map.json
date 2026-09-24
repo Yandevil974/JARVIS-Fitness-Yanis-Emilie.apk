@@ -1,46 +1,101 @@
 {
- "date": "2026-09-24",
- "variantes": [
-  {
-   "id": "tractions-prise-neutre-chin-up",
-   "nom": "Tractions prise neutre (chin-up)",
-   "constat": "le paquet livrait un tirage vertical a la poulie haute pour des tractions : materiel different",
-   "consigne": "Pars bras tendus, menton au-dessus. Pause de 2 s en bas. Alternative : tirage vertical neutre.",
-   "planche": ".cache/media-gen/alias-tractions-prise-neutre.png",
-   "path": "/media/alias-tractions-prise-neutre.gif"
+  "date": "2026-09-24",
+  "variantes": [
+    {
+      "id": "tractions-prise-neutre-chin-up",
+      "nom": "Tractions prise neutre (chin-up)",
+      "constat": "le paquet livrait un tirage vertical a la poulie haute pour des tractions : materiel different",
+      "consigne": "Pars bras tendus, menton au-dessus. Pause de 2 s en bas. Alternative : tirage vertical neutre.",
+      "planche": ".cache/media-gen/alias-tractions-prise-neutre.png",
+      "path": "/media/alias-tractions-prise-neutre.gif"
+    },
+    {
+      "id": "back-extension-45-prise-snatch",
+      "nom": "Back extension 45°, prise snatch",
+      "constat": "le paquet livrait l'autre entree (back extension horizontal, jambes tendues), pas le banc a 45 degres",
+      "consigne": "Banc a 45 degres, prise snatch large, dos plat, monter sans a-coup.",
+      "planche": ".cache/media-gen/alias-back-extension-45-snatch.png",
+      "path": "/media/alias-back-extension-45-snatch.gif"
+    },
+    {
+      "id": "developpe-couche-prise-serree",
+      "nom": "Développé couché prise serrée",
+      "constat": "le paquet livrait un developpe couche prise normale : la prise serree n'etait pas distinguable",
+      "consigne": "Mains au milieu de la barre, coudes pres du corps, barre au bas de la poitrine.",
+      "planche": ".cache/media-gen/alias-developpe-couche-prise-serree.png",
+      "path": "/media/alias-developpe-couche-prise-serree.gif"
+    },
+    {
+      "id": "curl-haltere-supination-banc-scott-90",
+      "nom": "Curl haltère supination, banc Scott 90°",
+      "constat": "le paquet livrait un curl haltères sur banc INCLINÉ : le banc Scott (coussin, bras vertical) n'était pas montré",
+      "consigne": "Pose le bras sur le coussin du banc Scott, aisselle contre le haut, monte sans décoller le coude.",
+      "planche": ".cache/media-gen/alias-curl-haltere-supination-banc-scott-90.png",
+      "path": "/media/alias-curl-haltere-supination-banc-scott-90.gif"
+    },
+    {
+      "id": "curl-zottman-assis",
+      "nom": "Curl Zottman assis",
+      "constat": "le paquet livrait un curl haltères classique debout : la rotation Zottman assise n'était pas distinguable",
+      "consigne": "Assis dos droit, monte en supination, redescends en pronation sans balancer les épaules.",
+      "planche": ".cache/media-gen/alias-curl-zottman-assis.png",
+      "path": "/media/alias-curl-zottman-assis.gif"
+    },
+    {
+      "id": "fentes-marchees",
+      "nom": "Fentes marchées",
+      "constat": "le paquet livrait les fentes avant avec haltères, buste penché (dessin d'une autre entrée) : ni le poids du corps ni le déplacement n'étaient montrés",
+      "consigne": "Avance et fléchis jusqu'à 90°, pousse sur le talon avant, enchaîne en marchant, buste vertical.",
+      "planche": ".cache/media-gen/alias-fentes-marchees.png",
+      "path": "/media/alias-fentes-marchees.gif"
+    },
+    {
+      "id": "curl-zottman-un-bras-banc-scott",
+      "nom": "Curl Zottman un bras, banc Scott",
+      "constat": "le paquet livrait un curl haltères classique : ni le banc Scott ni le travail unilatéral n'étaient montrés",
+      "consigne": "Un bras à la fois sur le coussin, monte en supination, redescends en pronation, coude fixe.",
+      "planche": ".cache/media-gen/alias-curl-zottman-un-bras-banc-scott.png",
+      "path": "/media/alias-curl-zottman-un-bras-banc-scott.gif"
+    },
+    {
+      "id": "curl-zottman",
+      "nom": "Curl Zottman",
+      "constat": "le paquet livrait un curl haltères classique : la rotation Zottman (supination puis pronation) n'était pas montrée",
+      "consigne": "Monte en supination, tourne en haut, redescends en pronation, coudes fixes le long du corps.",
+      "planche": ".cache/media-gen/alias-curl-zottman.png",
+      "path": "/media/alias-curl-zottman.gif"
+    },
+    {
+      "id": "curl-concentration",
+      "nom": "Curl concentration",
+      "constat": "le paquet livrait un curl haltères DEBOUT : la concentration (assis, coude appuyé sur la cuisse) n'était pas montrée",
+      "consigne": "Assis, coude appuyé à l'intérieur de la cuisse, monte lentement sans décoller le bras, paume vers le haut.",
+      "planche": ".cache/media-gen/alias-curl-concentration.png",
+      "path": "/media/alias-curl-concentration.gif"
+    },
+    {
+      "id": "fentes-arriere-au-poids-du-corps",
+      "nom": "Fentes arrière au poids du corps",
+      "constat": "le paquet livrait des fentes arrière AVEC BARRE alors que la prescription est au poids du corps : matériel ajouté",
+      "consigne": "Recule la jambe, genou arrière près du sol, genou avant à 90°, buste vertical ; se tenir à un support si nécessaire.",
+      "planche": ".cache/media-gen/alias-fentes-arriere-au-poids-du-corps.png",
+      "path": "/media/alias-fentes-arriere-au-poids-du-corps.gif"
+    }
+  ],
+  "files": {
+    "/media/alias-tractions-prise-neutre.gif": "6a269ac9cc0151328f9913d7c27502d5aeedcd8efdff56c725b2494e40ae5a55",
+    "/media/alias-back-extension-45-snatch.gif": "730b7234c8274f84477113eb72d39a4c83fe28228f1b20ab06189016d6655783",
+    "/media/alias-developpe-couche-prise-serree.gif": "71a1bf236798788aabe673efc04e646615a8794fa7602262178da9df06648dda",
+    "/media/alias-curl-haltere-supination-banc-scott-90.gif": "c8179e8aa890fcb27227025bf25dee1a0cdaed798371b9528674a4d36d85bd24",
+    "/media/alias-curl-zottman-assis.gif": "2dfb0380ad2025fd24714172f976b7d05435517cdb442ccc3c29c8d1465a4a16",
+    "/media/alias-fentes-marchees.gif": "95022c2368ab3f9eea5d17eaf2763365d8d6703133391c9ef1eed2538113ae46",
+    "/media/alias-curl-zottman-un-bras-banc-scott.gif": "35b0db62a3216ef54850e2bfab0387e721477124b522d7ea5e78f1044dfbaae1",
+    "/media/alias-curl-zottman.gif": "a02eeed2abbc7d5682b0d8f9ab25885c696f94a56f469b88e3845e62b1918f76",
+    "/media/alias-curl-concentration.gif": "fb67e4bf474304791f04e1cf871629b580dabed5e146bb6864a3434affeff4b2",
+    "/media/alias-fentes-arriere-au-poids-du-corps.gif": "b99360b29506d6e420e9a5e3c5f81ed1e7aa0b4b489f663e683c5ad3d3dd4a58"
   },
-  {
-   "id": "back-extension-45-prise-snatch",
-   "nom": "Back extension 45°, prise snatch",
-   "constat": "le paquet livrait l'autre entree (back extension horizontal, jambes tendues), pas le banc a 45 degres",
-   "consigne": "Banc a 45 degres, prise snatch large, dos plat, monter sans a-coup.",
-   "planche": ".cache/media-gen/alias-back-extension-45-snatch.png",
-   "path": "/media/alias-back-extension-45-snatch.gif"
-  },
-  {
-   "id": "developpe-couche-prise-serree",
-   "nom": "Développé couché prise serrée",
-   "constat": "le paquet livrait un developpe couche prise normale : la prise serree n'etait pas distinguable",
-   "consigne": "Mains au milieu de la barre, coudes pres du corps, barre au bas de la poitrine.",
-   "planche": ".cache/media-gen/alias-developpe-couche-prise-serree.png",
-   "path": "/media/alias-developpe-couche-prise-serree.gif"
-  }
- ],
- "files": {
-  "/media/alias-tractions-prise-neutre.gif": "6a269ac9cc0151328f9913d7c27502d5aeedcd8efdff56c725b2494e40ae5a55",
-  "/media/alias-back-extension-45-snatch.gif": "730b7234c8274f84477113eb72d39a4c83fe28228f1b20ab06189016d6655783",
-  "/media/alias-developpe-couche-prise-serree.gif": "71a1bf236798788aabe673efc04e646615a8794fa7602262178da9df06648dda"
- },
- "reste": [
-  "curl-haltere-supination-banc-scott-90",
-  "curl-zottman-assis",
-  "fentes-marchees",
-  "curl-zottman-un-bras-banc-scott",
-  "curl-zottman",
-  "curl-concentration",
-  "fentes-arriere-au-poids-du-corps"
- ],
- "pourquoi": "Dix exercices du catalogue affichaient le dessin d'une AUTRE variante (outil ou position differents) ; l'application l'annoncait elle-meme « Variante tres proche ». Chaque variante recue une animation produite dans la famille des GIF livres, resolue EXACTEMENT pour son identifiant d'exercice.",
- "famille": "480 x 262, 2 images, 500 ms, fond blanc, figure entiere, meme palette que les GIF livres",
- "regle": "Un seul identifiant d'exercice par animation ; aucune consigne, aucun nom, aucune donnee modifiee ; le catalogue et le catalogue d'alias livres restent inchanges."
+  "reste": [],
+  "pourquoi": "Dix exercices du catalogue affichaient le dessin d'une AUTRE variante (outil ou position differents) ; l'application l'annoncait elle-meme « Variante tres proche ». Chaque variante recue une animation produite dans la famille des GIF livres, resolue EXACTEMENT pour son identifiant d'exercice.",
+  "famille": "480 x 262, 2 images, 500 ms, fond blanc, figure entiere, meme palette que les GIF livres",
+  "regle": "Un seul identifiant d'exercice par animation ; aucune consigne, aucun nom, aucune donnee modifiee ; le catalogue et le catalogue d'alias livres restent inchanges."
 }
