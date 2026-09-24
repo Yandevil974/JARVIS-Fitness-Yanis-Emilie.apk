@@ -34,27 +34,23 @@ Je n'ai **pas de vision** sur les fichiers : je ne peux donc pas juger un rendu 
 
 Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement est beau ou parfaitement juste**. **La validation visuelle du lot témoin est donc la vôtre** : je vous montre les images en pleine taille avant toute série.
 
-### ▶ Refonte v4 en cours — le personnage DE VOTRE PHOTO, grand, dans une salle sombre
+### ▶ Refonte v5 en cours — VOTRE photo elle-même, retouchée (corps inchangé)
 
-Votre consigne (répétée deux fois) : « Ton personnage est de moins en moins musclé. Garde la même physionomie. Et rajoute un décor de salle. Recommence le tout. »
+Votre consigne, répétée trois fois : « Ton personnage est de moins en moins musclé. Garde la même physionomie. Et rajoute un décor de salle. Recommence le tout. »
 
-**Pourquoi la v3 ratait** (je l'ai constaté en regardant les planches à côté de votre photo) : 8 petites cases par image → personnages minuscules, donc moins de masse et de détail ; et une salle claire, loin de l'ambiance sombre de la photo. Tout a été jeté.
+**Ce qui ne marchait pas** : en v3 et v4, je faisais *redessiner* un personnage « dans le style » de la photo. À chaque dessin, le générateur réinventait le corps, et il le faisait plus fin.
 
-**Nouvelle méthode, pour tous les mouvements :**
+**La méthode v5 — on ne redessine plus le corps, on retouche votre photo :**
 
-| Règle | Comment |
-|---|---|
-| Même physionomie | Votre photo est donnée à chaque fois comme **modèle exact du personnage** : épaules énormes, poitrine épaisse, bras pleins, abdos profonds, cuisses séparées — « ne pas l'amincir ». Émilie : la même matière et la même définition, en physique de compétitrice fitness. |
-| Grand format | **Une image par modèle et par mouvement, 2 cases seulement** (position 1 / position 2). Le personnage occupe ~80 % de la hauteur. |
-| Décor de salle | Salle **sombre** comme la photo : murs anthracite, sol caoutchouc, racks d'haltères et de disques, rack à squat flou, spots chauds. Le personnage reste l'élément le plus lumineux. |
-| GIF | Case entière gardée (rien de coupé), 393 × 440, 2 images, 500 ms, 256 couleurs (plus de bandes dans le fond), ≈ 97 Ko. |
-| Contrôle | Je regarde chaque planche avant de la garder ; celles qui ratent sont refaites. |
+1. **Modèle maître Yanis** (`evolution/media/refonte/modele/yanis-maitre.png`) = votre photo, où l'on n'a changé que le fond (salle sombre : racks d'haltères, disques, rack à squat, spots) et ajouté un visage. **Le corps est celui de la photo.**
+2. **Modèle maître Émilie** = retouche du maître Yanis : même salle, même banc, même cadrage, même matière, même niveau de définition musculaire, en femme.
+3. **Chaque position de chaque mouvement** = une retouche du maître où l'on ne change **que les bras / la pose / le muscle en vert**. Décor, cadrage et corps restent identiques d'une image à l'autre : le GIF ne « saute » pas.
+4. GIF : l'image entière, 295 × 440 (portrait, comme la photo), 2 images, 500 ms, 256 couleurs, ≈ 90 Ko. Outil : `evolution/media/tools/images-to-gif.py`.
+5. Chaque image est regardée avant d'être gardée. Refusées ce tour-ci : le curl marteau d'Émilie (haltères horizontaux au lieu de verticaux) et ses élévations (bras restés en bas) — refaites.
 
-**Lot v4 — 4 mouvements, 8 GIF** (`evolution/media/refonte/gif/`, planche de contrôle `evolution/media/refonte/lot-v4-4-mouvements.jpg`) : curl marteau assis, élévations latérales assises, bulgarian split squat, tirage vertical prise pronation.
+**Lot v5 — 2 mouvements, 4 GIF** (planche de contrôle à côté de votre photo : `evolution/media/refonte/lot-v5-photo-et-gif.jpg`) : curl marteau assis, élévations latérales assises. Les v3/v4 sont retirées.
 
-Refaits ou reclassés pendant le contrôle : bulgarian split squat de Yanis (1er essai : genou plié dans les deux cases, pas de mouvement) ; tirage vertical : le générateur a dessiné une barre large en pronation au lieu de la poignée neutre → classé en « tirage vertical prise pronation » (il existe dans l'appli), la prise neutre reste à faire.
-
-Cadence : 2 images par mouvement (Yanis + Émilie) → **5 mouvements par tour**. Reste 148 mouvements animés, puis 29 étirements, 10 images piscine, 6 échauffement/cardio. Photos de progression j0/m12 : jamais touchées.
+Cadence : 4 retouches par mouvement (2 par modèle), une partie des positions de départ se réutilisant ; ≈ 3 mouvements par tour. Reste 150 mouvements animés, puis 29 étirements, 10 images piscine, 6 échauffement/cardio. Photos de progression j0/m12 : jamais touchées. Pour les mouvements debout, allongés ou en piscine, il faudra d'abord un maître debout / allongé / dans l'eau, tiré du maître assis.
 
 ### Décisions que vous avez prises (24 septembre 2026)
 

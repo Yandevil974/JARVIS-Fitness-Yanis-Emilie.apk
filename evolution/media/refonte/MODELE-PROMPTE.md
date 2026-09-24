@@ -1,6 +1,14 @@
 # Modele de prompte — refonte complete des visuels
 
-> **v4 (en vigueur)** : UNE image par modele et par mouvement, 16:9, **2 cases** cote a cote
+> **v5 (en vigueur)** : on ne dessine plus le personnage, on RETOUCHE. Maitre Yanis =
+> votre photo avec fond de salle + visage (`modele/yanis-maitre.png`) ; maitre Emilie =
+> retouche du maitre Yanis ; chaque position = retouche du maitre, prompte « Edit this image.
+> Keep EVERYTHING identical ... Change ONLY the arms ». Ecrire le geste en termes tres
+> concrets (« RAISES BOTH ARMS ... HORIZONTAL ... T shape », « dumbbell held VERTICALLY ...
+> must NOT be horizontal ») sinon la retouche ne change que la couleur.
+> GIF : `tools/images-to-gif.py SORTIE.gif POS1.png POS2.png`.
+>
+> **v4 (abandonnee)** : UNE image par modele et par mouvement, 16:9, **2 cases** cote a cote
 > (position 1 / position 2), personnage a ~80 % de la hauteur, la photo de reference donnee
 > comme « exact character model » (« keep his body mass and proportions EXACTLY; do not make
 > him slimmer »), salle de sport **sombre** (murs anthracite, sol caoutchouc, racks, spots
