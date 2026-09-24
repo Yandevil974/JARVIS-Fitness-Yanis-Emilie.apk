@@ -3,7 +3,7 @@
   "status": "scoped-web-candidate-not-release",
   "releaseReady": false,
   "baselineApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
-  "candidateBundleSha256": "6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e",
+  "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
   "integrity": {
     "packagedWebFiles": 272,
     "unchangedWebFiles": 271,
@@ -37,10 +37,10 @@
     ]
   },
   "tests": {
-    "node": "42/42",
-    "browserMediaSuite": "33/33 (4,5 min) sur le bundle livré 6fbd242a",
-    "browserTargeted": "5/5 Tabata contexte au sol/aquatique sur le bundle livré ; 4 échecs / 1 réussite rejoués contre la 1.4.4 livrée (les 4 échecs sont les cas au sol)",
-    "completeLegacySuite": "18/19 comparables (comparaison référence 1.4.0 intacte vs livrable, mêmes causes)"
+    "node": "44/44",
+    "browserMediaSuite": "37/37 (4,7 min) sur le bundle livré e372a369",
+    "browserTargeted": "4/4 nouveaux parcours (2 étirements, 2 piscine) + 5/5 Tabata rejoués",
+    "completeLegacySuite": "18/19 comparables (référence 1.4.0 intacte vs livrable, mêmes causes)"
   },
   "poolRecovery": {
     "reviewedTexts": 12,
@@ -326,5 +326,50 @@
   "noticeLinkRepair": {
     "fact": "La notice 1.4.4 pointait vers un commit de préparation inexistant (aperçu 404) ; les liens des notices 1.4.4 et 1.4.5 sont repinnés vers un commit réel qui contient les fichiers.",
     "howFound": "Contrôle des liens internes avant publication de la 1.4.5."
+  },
+  "approvedCorrections23Sept": {
+    "authorisation": "« Autorisation accordée poursuis » — corrections mesurées sans aucune création d’image",
+    "stretchSwaps": {
+      "rule": "Échanger l’image, jamais réécrire la consigne",
+      "exchanges": {
+        "« Pigeon assis »": "/media/stretch-pigeon.jpg -> /media/stretch-piriforme.jpg",
+        "« Main dans le dos »": "/media/stretch-triceps-dos.jpg -> /media/stretch-triceps-coude.jpg"
+      },
+      "untouched": [
+        "consignes",
+        "durées",
+        "muscles",
+        "données enregistrées"
+      ],
+      "evidence": "evolution/media/review/stretch-echanges-avant-apres.png + captures stretch-mobilite-{avant,corrige}.png",
+      "verifiedBy": [
+        "evolution/media/tests/stretch-media.test.mjs",
+        "evolution/media/tests/stretch-media.spec.mjs"
+      ]
+    },
+    "poolLandVisuals": {
+      "rule": "Lacune explicite plutôt qu’un dessin terrestre à la place d’un exercice aquatique",
+      "guidesWithoutDrawing": [
+        "Gainage au bord (vertical)",
+        "Mobilité épaules aquatique",
+        "Mobilité hanches / chevilles",
+        "Ciseaux au bord",
+        "Talons-fesses"
+      ],
+      "behaviour": "Aucun visuel de mouvement, aucune image dans les consignes du chrono, aucune image dans la liste des étapes du protocole piscine ; les consignes aquatiques restent affichées.",
+      "verifiedBy": [
+        "evolution/media/tests/pool-land-guides.spec.mjs",
+        "evolution/media/tests/pool-candidate.test.mjs"
+      ],
+      "remaining": "Décision de style requise avant toute création de dessin."
+    }
+  },
+  "apkDelivery": {
+    "planned": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
+    "versionName": "1.4.6",
+    "versionCode": 17,
+    "packagedWebSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+    "installsOver": "1.4.5 sans désinstallation",
+    "deviceTested": false
   }
 }

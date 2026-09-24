@@ -3,9 +3,20 @@
 // honest gap. No profile, timer or guide is mutated.
 export function createPoolMedia({normalize, poolGuides, reviewedTexts = []}) {
   const reviewed = new Map(reviewedTexts.map(entry => [entry.text, entry]));
+  // Cinq guides portent un nom aquatique mais un dessin TERRESTRE (planche sur
+  // banc, elastique a sec, poulie, releves de jambes au banc, montee de genou au
+  // mur). Decision utilisateur du 23 septembre 2026 : lacune explicite plutot
+  // qu'un dessin terrestre a la place d'un exercice aquatique. Les consignes
+  // aquatiques du guide restent affichees, seul le dessin est retire.
+  const landVisualGuides = new Set(['Gainage au bord (vertical)','Mobilité épaules aquatique',
+    'Mobilité hanches / chevilles','Ciseaux au bord','Talons-fesses']);
+  function reviewedGuide(candidate) {
+    if (!candidate || !landVisualGuides.has(candidate.t)) return candidate;
+    return {...candidate, img: null, reviewedGap: 'land-visual-not-validated'};
+  }
   function guide(name) {
     const text = normalize(name || '');
-    if (reviewed.has(name)) return poolGuides.find(candidate => candidate.t === reviewed.get(name).guide) || null;
+    if (reviewed.has(name)) return reviewedGuide(poolGuides.find(candidate => candidate.t === reviewed.get(name).guide) || null);
     let found = null, length = 0;
     for (const candidate of poolGuides) for (const keyword of candidate.k) {
       const key = normalize(keyword);
@@ -14,7 +25,7 @@ export function createPoolMedia({normalize, poolGuides, reviewedTexts = []}) {
         length = key.length;
       }
     }
-    return found;
+    return reviewedGuide(found);
   }
   function isPool(step, meta) {
     // A mixed session's current segment overrides its overall activity type,
@@ -33,7 +44,8 @@ export function createPoolMedia({normalize, poolGuides, reviewedTexts = []}) {
     // Deliberately no fallback to cardio or the generic recovery photograph.
     return {guide: match, path: match?.img || null,
       status: entry ? 'reviewed-pool-prescription'
-        : match?.img ? 'legacy-association-not-yet-validated' : 'unresolved'};
+        : match?.img ? 'legacy-association-not-yet-validated'
+        : match ? 'reviewed-land-visual-gap' : 'unresolved'};
   }
   return {guide, isPool, resolve, reviewedTexts: reviewed};
 }

@@ -189,6 +189,26 @@ function JarvisCloseStaleWorkouts(s,today){const closed=[];for(const id of Objec
   source = once(source, 'function J5({start:i}){const o=El(1e3);return s.jsx(s.Fragment,{children:fi((o-i)/1e3)})}',
     'function J5({start:i}){const o=El(1e3),sec=Math.max(0,(o-i)/1e3);return s.jsx(s.Fragment,{children:sec>=3600?Math.floor(sec/3600)+" h "+String(Math.floor(sec%3600/60)).padStart(2,"0"):fi(sec)})}');
 
+  // Deux visuels d'etirement ne montraient pas la posture decrite. Decision
+  // utilisateur du 23 septembre 2026 : echanger l'image, jamais reecrire la
+  // consigne. Les deux dessins corrects existent deja dans l'application
+  // (verifies en pleine image : review/stretch-assets-review.json).
+  //  - « Pigeon assis » : le pigeon AU SOL ne montrait pas la position assise
+  //    cheville croisee ; le dessin « piriforme assis » montre exactement cette
+  //    position.
+  //  - « Main dans le dos » : le fichier etait un dos anatomique, pas une
+  //    posture ; le dessin « coude au-dessus de la tete » montre la main
+  //    derriere la tete, coude tire.
+  source = once(source, '"Pigeon assis":"/media/stretch-pigeon.jpg"', '"Pigeon assis":"/media/stretch-piriforme.jpg"');
+  source = once(source, '"Main dans le dos":"/media/stretch-triceps-dos.jpg"', '"Main dans le dos":"/media/stretch-triceps-coude.jpg"');
+
+  // La liste des etapes d'un protocole piscine cherchait son guide dans toute la
+  // bibliotheque : elle doit passer par le meme resolveur aquatique, sinon les
+  // visuels terrestres des cinq guides mesures reapparaissent dans la
+  // bibliotheque piscine. Les consignes aquatiques restent affichees.
+  source = once(source, 'const C=bl.find(Q=>Q.k.some(O=>Ge(j).includes(Ge(O))))',
+    'const C=JarvisPoolMedia.guide(j)');
+
   // Both start buttons must carry approach identity into newly created timers.
 
   source = once(source,'instruction:x.instruction,img:x.img,pattern:x.pattern}',

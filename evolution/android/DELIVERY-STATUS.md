@@ -82,3 +82,11 @@ Correctif décidé par l'utilisateur (« fais ce que tu recommande ») après re
 - Seules entrées modifiées vs la 1.4.4 : `AndroidManifest.xml` et `assets/public/assets/index-CBCies4k.js`. 9/9 DEX identiques, 271/272 fichiers web identiques, v2 + v3, un signataire.
 - Tests : Node 42/42 ; suite média 33/33 (4,5 min) sur ce bundle ; le même parcours Tabata rejoué contre la 1.4.4 livrée échoue sur les 4 cas au sol (preuve de l'écart).
 - Liens des notices 1.4.4 et 1.4.5 repinnés vers un commit réel (l'ancien pin 1.4.4 renvoyait un aperçu 404).
+
+## 1.4.6 — 23 septembre 2026
+
+- `downloads/Yanis-Fitness-Evolution-1.4.6.apk` — 24 909 281 octets, SHA-256 `48676e1273a4a3aea61d38d3dd08060ef753b6b8ac5be50ca919f33449556bfe`, versionName 1.4.6 / versionCode 17.
+- Identité durable `150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b` (identique 1.4.2 -> 1.4.5) : installation directe par-dessus la 1.4.5.
+- Web embarqué `e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292` : deux échanges de visuel d'étirement (image échangée, consigne intacte) et cinq lacunes explicites pour les guides aquatiques dont le dessin était terrestre.
+- Seules entrées modifiées vs la 1.4.5 : `AndroidManifest.xml` et `assets/public/assets/index-CBCies4k.js`. 9/9 DEX identiques, 271/272 fichiers web identiques, v2 + v3, un signataire.
+- Tests : Node 44/44 ; suite média 37/37 (4,7 min) sur ce bundle ; nouveaux parcours `stretch-media.spec.mjs` (2) et `pool-land-guides.spec.mjs` (2).

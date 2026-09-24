@@ -208,8 +208,26 @@
       "observed": "Respectivement planche latérale sur banc, mouvement avec élastique à sec, flexion de genou couché à la poulie, relevés de jambes sur banc, et montée de genou contre un mur. Ne correspondent pas aux consignes aquatiques.",
       "action": "Vrais guides aquatiques ou absence explicitement signalée, jamais une autre technique.",
       "status": "open",
-      "instruction": "Instruction : les cinq guides terrestres listés (gainage au bord, mobilité épaules aquatique, mobilité hanches/chevilles, ciseaux au bord, talons-fesses) montrent des exercices terrestres (banc, élastique à sec, poulie, montée de genou au mur) alors que les consignes sont aquatiques. Le résolveur piscine revu ne les utilise jamais pour une étape piscine ; ils restent visibles dans la bibliothèque piscine. Correction possible sans décision de style : retirer le visuel (lacune explicite) au lieu d’un dessin terrestre — à confirmer par l’utilisateur, car cela retire une image existante.",
-      "instructionDate": "2026-09-23"
+      "instruction": "Instruction : les cinq guides terrestres listés (gainage au bord, mobilité épaules aquatique, mobilité hanches/chevilles, ciseaux au bord, talons-fesses) montrent des exercices terrestres (banc, élastique à sec, poulie, montée de genou au mur) alors que les consignes sont aquatiques. Le résolveur piscine revu ne les utilise jamais pour une étape piscine ; ils restent visibles dans la bibliothèque piscine. Correction possible sans décision de style : retirer le visuel (lacune explicite) au lieu d’un dessin terrestre — à confirmer par l’utilisateur, car cela retire une image existante. CORRIGÉ dans la 1.4.6 : décision utilisateur du 23 septembre 2026 appliquée (échange d'image / lacune explicite), preuves dans le bloc de correction.",
+      "instructionDate": "2026-09-23",
+      "fix": {
+        "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
+        "rule": "Lacune explicite plutot qu'un dessin terrestre a la place d'un exercice aquatique.",
+        "behaviour": "Les cinq guides mesures (Gainage au bord (vertical), Mobilite epaules aquatique, Mobilite hanches / chevilles, Ciseaux au bord, Talons-fesses) n'affichent plus de dessin terrestre : ni comme visuel de mouvement, ni dans les consignes du chrono, ni dans la liste des etapes d'un protocole piscine. Leurs consignes aquatiques restent affichees en entier.",
+        "untouched": [
+          "consignes aquatiques",
+          "noms",
+          "durees",
+          "protocoles",
+          "donnees enregistrees"
+        ],
+        "verifiedBy": [
+          "evolution/media/tests/pool-candidate.test.mjs",
+          "evolution/media/tests/pool-land-guides.spec.mjs"
+        ],
+        "remaining": "Aucun dessin aquatique correspondant n'existe dans le pack : decision de style requise avant toute creation."
+      }
     },
     {
       "id": "pool-stretch-compound",
@@ -232,8 +250,8 @@
       "instruction": "Instruction : la fonction d’affichage cherche dans les guides aquatiques sans vérifier le contexte. Mesuré : 4 des 38 noms au sol (gainage planche, battements de jambes, montées de genoux, marche sur place) sélectionnent un guide AQUATIQUE dans un enchaînement TERRE. CORRIGÉ dans la 1.4.5 : le chrono guidé ne résout plus de guide aquatique hors contexte aquatique (affichage du visuel et bloc « Consignes du mouvement »), les deux chemins mesurés. Les noms, durées et consignes sont inchangés ; le protocole aquatique garde ses guides validés. Vérifié par test Node et parcours navigateur.",
       "instructionDate": "2026-09-23",
       "fix": {
-        "candidateBundleSha256": "6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.5.apk",
+        "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
         "rule": "En contexte terre, jamais de guide aquatique : le chrono guidé ne résout un guide aquatique que si le contexte de l'étape est aquatique (même résolveur que la piscine).",
         "behaviour": "Les 4 noms mesurés (Gainage planche, Battements de jambes, Montées de genoux, Marche sur place) ne montrent plus de guide aquatique dans un enchaînement au sol ; dans un protocole aquatique, les mêmes noms gardent exactement le guide aquatique validé.",
         "untouched": [
@@ -281,8 +299,25 @@
       "observed": "Pigeon au sol avec tête coupée dans le fichier; les consignes demandent une cheville sur l'autre genou en position assise.",
       "action": "L'image stretch-piriforme.jpg est une candidate déjà présente, à vérifier puis réassocier.",
       "status": "open",
-      "instruction": "Instruction faite : le dessin montre un pigeon au sol, genou avant posé, buste droit ; la consigne décrit la position assise cheville croisée. Le dessin « piriforme assis » du même pack montre exactement cette position. Décision demandée (échange d’image, sans réécrire la consigne).",
-      "instructionDate": "2026-09-23"
+      "instruction": "Instruction faite : le dessin montre un pigeon au sol, genou avant posé, buste droit ; la consigne décrit la position assise cheville croisée. Le dessin « piriforme assis » du même pack montre exactement cette position. Décision demandée (échange d’image, sans réécrire la consigne). CORRIGÉ dans la 1.4.6 : décision utilisateur du 23 septembre 2026 appliquée (échange d'image / lacune explicite), preuves dans le bloc de correction.",
+      "instructionDate": "2026-09-23",
+      "fix": {
+        "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
+        "rule": "Echanger l'image, jamais reecrire la consigne : le dessin doit montrer la posture decrite.",
+        "behaviour": "« Pigeon assis » affiche desormais le dessin du piriforme assis (assis, cheville croisee sur le genou oppose) au lieu du pigeon au sol. Consigne inchangee.",
+        "untouched": [
+          "consigne",
+          "duree",
+          "muscle",
+          "donnees enregistrees"
+        ],
+        "verifiedBy": [
+          "evolution/media/tests/stretch-media.test.mjs",
+          "evolution/media/tests/stretch-media.spec.mjs"
+        ],
+        "remaining": "Confirmation visuelle sur telephone."
+      }
     },
     {
       "id": "stretch-triceps-back",
@@ -294,8 +329,25 @@
       "observed": "Personnages bras baissés au lieu d'une main entre les omoplates et du coude au-dessus de la tête.",
       "action": "Remplacer par la posture réellement décrite.",
       "status": "open",
-      "instruction": "Instruction faite : le fichier est un dos anatomique avec le muscle surligné, pas une posture. Le dessin « coude au-dessus de la tête » du même pack montre la main derrière la tête, coude tiré. Décision demandée (échange d’image, sans réécrire la consigne).",
-      "instructionDate": "2026-09-23"
+      "instruction": "Instruction faite : le fichier est un dos anatomique avec le muscle surligné, pas une posture. Le dessin « coude au-dessus de la tête » du même pack montre la main derrière la tête, coude tiré. Décision demandée (échange d’image, sans réécrire la consigne). CORRIGÉ dans la 1.4.6 : décision utilisateur du 23 septembre 2026 appliquée (échange d'image / lacune explicite), preuves dans le bloc de correction.",
+      "instructionDate": "2026-09-23",
+      "fix": {
+        "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
+        "rule": "Echanger l'image, jamais reecrire la consigne.",
+        "behaviour": "« Main dans le dos » affiche desormais le dessin du coude au-dessus de la tete (main derriere la tete, coude tire) au lieu du dos anatomique. Consigne inchangee.",
+        "untouched": [
+          "consigne",
+          "duree",
+          "muscle",
+          "donnees enregistrees"
+        ],
+        "verifiedBy": [
+          "evolution/media/tests/stretch-media.test.mjs",
+          "evolution/media/tests/stretch-media.spec.mjs"
+        ],
+        "remaining": "Confirmation visuelle sur telephone."
+      }
     },
     {
       "id": "stretch-calf-step",
@@ -489,8 +541,8 @@
       "status": "open",
       "fix": {
         "implemented": "2026-09-23",
-        "candidateBundleSha256": "6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.5.apk",
+        "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
         "verifiedBy": "evolution/media/tests/pool-candidate.test.mjs",
         "remaining": "essai sur le téléphone de l’utilisateur"
       }
@@ -653,8 +705,8 @@
       "action": "CORRIGÉ dans le candidat le 23 septembre 2026, sur décision de l'utilisateur : une séance de musculation d'un autre jour est clôturée automatiquement en « partielle » au chargement (et au prochain clic sur « Lancer la séance » ou sur une minuterie guidée), avec sa propre date, ses séries validées conservées et la séance planifiée du jour marquée « partielle » — exactement ce que fait la modale « Terminer ». Message explicite affiché. Le compteur de séance ne peut plus afficher des jours en minutes (heures au-delà d'une heure). Reproductible : evolution/media/tests/emilie-session-block.spec.mjs (2 tests). Groupe laissé OUVERT : il ne peut être fermé qu'après un essai sur le téléphone de l'utilisateur (aucun appareil réel ici).",
       "status": "open",
       "fix": {
-        "candidateBundleSha256": "6fbd242ab9dbadf7f89543d54daf35949d542198f0b358196514f1b12e61062e",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.5.apk",
+        "candidateBundleSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
         "implemented": "2026-09-23",
         "decision": "utilisateur, 23 septembre 2026 : « fais ce que tu recommande »",
         "verifiedInBrowser": "evolution/media/tests/emilie-session-block.spec.mjs (2 tests PASS sur le bundle livré)",

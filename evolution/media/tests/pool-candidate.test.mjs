@@ -24,8 +24,8 @@ test('requires exact complete 1.4.0 and refuses accidental double patching',()=>
 });
 test('every other top-level source statement is byte-identical, including home/catalog/7 stages/timer engine',()=>{
  function unchanged(text,ast){return ast.body.filter(n=>
-  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg','J5','Mx','G4','JarvisStepDuration','JarvisStaleWorkout','JarvisStaleNotice','JarvisCloseStaleWorkout','JarvisCloseStaleWorkouts'].includes(n.id?.name)&&
-  !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
+  !['bg','v5','Kh','Z5','k5','JarvisReviewedMedia','JarvisReviewedView','createPoolMedia','Bg','a5','$5','j5','JarvisTechnique','createWarmupMedia','G4','JarvisStepGuide','Mg','J5','Mx','G4','JarvisStepDuration','w5','xg','JarvisStaleWorkout','JarvisStaleNotice','JarvisCloseStaleWorkout','JarvisCloseStaleWorkouts'].includes(n.id?.name)&&
+  !n.declarations?.some(d=>['JarvisPoolMedia','JarvisWarmupMedia','xg'].includes(d.id.name))).map(n=>text.slice(n.start,n.end));}
  assert.deepEqual(unchanged(candidate,patched),unchanged(original,tree));
 });
 test('420 pool protocol steps cannot resolve to cardio and inputs never change',()=>{
@@ -247,7 +247,7 @@ test('séance oubliée : la correction est prouvée, le groupe reste ouvert faut
  assert.match(group.observed,/40320:00/);
  assert.match(group.observed,/Clôturer votre séance/);
  assert.equal(group.fix.candidateBundleSha256,sha(candidate));
- assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.5.apk');
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.6.apk');
  assert.match(group.fix.remaining,/téléphone/);
  const spec=fs.readFileSync(new URL('./emilie-session-block.spec.mjs',import.meta.url),'utf8');
  // Le spec relève l'état réel : aucune attente du défaut n'y est écrite d'avance.
@@ -286,7 +286,7 @@ test('Tabata au sol : aucun guide aquatique ne peut être résolu hors contexte 
  assert.ok(group,'le groupe doit exister');
  assert.equal(group.status,'open');
  assert.equal(group.fix.candidateBundleSha256,sha(candidate));
- assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.5.apk');
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.6.apk');
  // 1. Le code livré ne garde plus le repli aquatique : les deux chemins mesurés
  //    (visuel de l'étape et bloc « Consignes du mouvement ») sont conditionnés
  //    au contexte aquatique déjà résolu pour la piscine.
