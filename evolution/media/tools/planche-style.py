@@ -53,8 +53,9 @@ DUREE = 500
 SEUIL = 120         # luminance d'un pixel de la figure (fond ~ 28, halo ~ 76)
 BRUIT = 0.005       # composant ignore, en fraction de la case
 ECART = 12          # colonnes vides separant deux personnages cote a cote
+MARGE = 6           # marge minimale autour du personnage, en pixels
 PROFILS = ('yanis', 'emilie')
-INSET = 2           # marge retiree a chaque case : supprime les filets clairs
+INSET = 6           # marge retiree a chaque case : supprime les filets clairs
 
 
 def nettoyer_filets(image, lignes, colonnes):
@@ -176,55 +177,59 @@ def personnages(cellule):
     return amas
 
 
-def fenetre(cellules, orientation):
+ASPECTS = {'portrait': ((246, 440), (308, 440), (374, 440)),
+           'paysage': ((440, 246), (440, 330), (440, 383))}
+
+
+def fenetre(cellules, orientation, mode='auto'):
     """Fenetre commune a toutes les images d'un meme GIF.
 
     Une fenetre unique garantit un cadrage et une echelle identiques d'une image
-    a l'autre : sans cela le GIF saute. Elle englobe les personnages de toutes
-    les cases, ce qui permet aussi de reperer une derive du modele. Le rapport
-    de la fenetre est toujours celui du cadre de sortie : aucune deformation.
+    a l'autre : sans cela le GIF saute. Le rapport de la fenetre est toujours
+    celui du cadre de sortie, donc aucune deformation. Si le personnage est
+    trop large pour le cadre portrait (squat bras tendus), on passe au cadre
+    plus large suivant, puis a defaut a la case entiere.
+
+    mode « auto » : la fenetre est centree sur le personnage detecte.
+    mode « case » : la fenetre est centree sur la case (piscine : la surface de
+    l'eau est de la meme luminosite que le corps, la detection est impossible).
     """
-    boites = [cadre_figure(cellule) for cellule in cellules]
-    if any(boite is None for boite in boites):
-        raise SystemExit('aucun personnage detecte dans une case')
-    x0 = min(boite[0] for boite in boites)
-    y0 = min(boite[1] for boite in boites)
-    x1 = max(boite[2] for boite in boites)
-    y1 = max(boite[3] for boite in boites)
+    case_l, case_h = cellules[0].size
+    boites = None if mode == 'case' else [cadre_figure(cellule) for cellule in cellules]
+    if boites and not any(boite is None for boite in boites):
+        x0 = min(boite[0] for boite in boites)
+        y0 = min(boite[1] for boite in boites)
+        x1 = max(boite[2] for boite in boites)
+        y1 = max(boite[3] for boite in boites)
+    else:
+        x0, y0, x1, y1 = 0, 0, case_l, case_h
+        boites = None
     largeur, hauteur = x1 - x0, y1 - y0
-    marge_x = max(20, 0.42 * largeur)
-    marge_y = max(16, 0.11 * hauteur)
-    x0 -= marge_x
-    x1 += marge_x
-    y0 -= marge_y
-    y1 += 1.25 * marge_y          # un peu plus bas : les chaussures sont sombres
     if orientation == 'auto':
         orientation = 'paysage' if largeur > 1.15 * hauteur else 'portrait'
-    cadre = PAYSAGE if orientation == 'paysage' else PORTRAIT
-    rapport = cadre[0] / cadre[1]
-    case_l, case_h = cellules[0].size
-    largeur, hauteur = min(x1 - x0, case_l), min(y1 - y0, case_h)
-    if largeur / hauteur > rapport:
-        hauteur = largeur / rapport
-    else:
-        largeur = hauteur * rapport
-    if hauteur > case_h:
-        hauteur = case_h
-        largeur = hauteur * rapport
-    if largeur > case_l:
-        largeur = case_l
-        hauteur = largeur / rapport
+    # Marge minimale : 6 pixels de chaque cote. Le cadre de reference (246 x 440,
+    # le rapport de la photo) est garde chaque fois que le personnage y tient ;
+    # sinon on passe au cadre plus large suivant.
+    besoin = (0, 0) if boites is None else (largeur + 2 * MARGE, hauteur + 2 * MARGE)
     centre = ((x0 + x1) / 2, (y0 + y1) / 2)
-    x0 = min(max(centre[0] - largeur / 2, 0), case_l - largeur)
-    y0 = min(max(centre[1] - hauteur / 2, 0), case_h - hauteur)
-    boite = (round(x0), round(y0), round(x0 + largeur), round(y0 + hauteur))
-    for rang, cellule in enumerate(cellules):
-        boite_figure = boites[rang]
-        if (boite_figure[0] < boite[0] or boite_figure[1] < boite[1]
-                or boite_figure[2] > boite[2] or boite_figure[3] > boite[3]):
-            print('     ATTENTION : le personnage de l image %d deborde de la fenetre %s'
-                  % (rang, boite), file=sys.stderr)
-    return boite, cadre, orientation
+    cadres = list(ASPECTS[orientation]) + [(case_l, case_h)]
+    for cadre in cadres:
+        rapport = cadre[0] / cadre[1]
+        hauteur_fenetre = min(case_h, case_l / rapport)
+        largeur_fenetre = hauteur_fenetre * rapport
+        if largeur_fenetre >= besoin[0] and hauteur_fenetre >= besoin[1]:
+            sx = min(max(centre[0] - largeur_fenetre / 2, 0), case_l - largeur_fenetre)
+            sy = min(max(centre[1] - hauteur_fenetre / 2, 0), case_h - hauteur_fenetre)
+            boite = (round(sx), round(sy), round(sx + largeur_fenetre),
+                     round(sy + hauteur_fenetre))
+            if boites is not None:
+                for rang, cellule_boite in enumerate(boites):
+                    if (cellule_boite[0] < boite[0] or cellule_boite[1] < boite[1]
+                            or cellule_boite[2] > boite[2] or cellule_boite[3] > boite[3]):
+                        print('     ATTENTION : le personnage de l image %d deborde de la '
+                              'fenetre %s' % (rang, boite), file=sys.stderr)
+            return boite, cadre, orientation
+    return (0, 0, case_l, case_h), (case_l, case_h), orientation
 
 
 def ajuster(cellule, boite, cadre):
@@ -302,6 +307,8 @@ def main():
     parser.add_argument('--grid', default='2x4', help='rangees x colonnes, ex. 2x4 ou 1x2')
     parser.add_argument('--prendre', default='0,1', help='colonnes gardees, defaut 0,1')
     parser.add_argument('--profil', help='genre d une planche 1x2 (yanis ou emilie)')
+    parser.add_argument('--fenetre', default='auto', choices=('auto', 'case'),
+                        help="auto : centree sur le personnage ; case : centree sur la case")
     parser.add_argument('--orientation', default='auto',
                         choices=('auto', 'portrait', 'paysage'))
     parser.add_argument('--seuil', type=int, help='luminance de la figure')
@@ -325,14 +332,14 @@ def main():
         if lignes == 2:
             for rang, profil in enumerate(PROFILS):
                 prises = [cellules[rang * colonnes + colonne] for colonne in pris]
-                boite, cadre, orientation = fenetre(prises, args.orientation)
+                boite, cadre, orientation = fenetre(prises, args.orientation, args.fenetre)
                 images = [ajuster(cellule, boite, cadre) for cellule in prises]
                 cible = args.out / ('%s-%s.gif' % (source.stem, profil))
                 enregistrer(cible, images)
                 print('%s  %s  %s  fenetre=%s' % (cible, cadre, orientation, boite))
         else:
             prises = [cellules[colonne] for colonne in pris]
-            boite, cadre, orientation = fenetre(prises, args.orientation)
+            boite, cadre, orientation = fenetre(prises, args.orientation, args.fenetre)
             images = [ajuster(cellule, boite, cadre) for cellule in prises]
             nom = source.stem if not args.profil else '%s-%s' % (source.stem, args.profil)
             cible = args.out / (nom + '.gif')

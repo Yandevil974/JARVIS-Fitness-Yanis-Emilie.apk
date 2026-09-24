@@ -34,7 +34,7 @@ Je n'ai **pas de vision** sur les fichiers : je ne peux donc pas juger un rendu 
 
 Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement est beau ou parfaitement juste**. **La validation visuelle du lot témoin est donc la vôtre** : je vous montre les images en pleine taille avant toute série.
 
-### Lot témoin produit (1 mouvement) — **refusé par vous, correction en cours**
+### Lot témoin n° 2 — 3 mouvements, **poignet corrigé** (à valider)
 
 | | |
 |---|---|
@@ -51,7 +51,7 @@ Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement es
 | Modèle féminin | **seulement les 95 mouvements vus par Émilie** (les 57 autres gardent le modèle masculin) |
 | Format des GIF | **portrait 246 × 440 conservé** (rapport de votre photo) |
 | Visage | **générique** réaliste sculpté dans le même matériau blanc — pas de ressemblance, donc pas de portrait à fournir |
-| Lot témoin | **à corriger** (vos indications à préciser) ⇒ la série ne démarre qu'après votre feu vert |
+| Lot témoin n° 1 | **refusé** : le poignet ne tournait pas ⇒ corrigé dans le lot n° 2 |
 | Dessins d'étirement (29) | question encore ouverte |
 
 ### ⚠ Incident d'espace de travail — 24 septembre 2026, rien perdu

@@ -58,6 +58,16 @@ rendered as a light blue translucent band with a light foam line, the submerged
 part of the body seen slightly through the water, a dark pool wall and a lane
 rope in the background, water droplets and a small splash in the air.`
 
+## Precision du mouvement : tout decompter
+
+L'utilisateur verifie les details articulaires : il a refuse le premier lot temoin
+parce que **le poignet ne tournait pas en haut du curl marteau**. Le prompte doit
+donc decrire, pour CHAQUE position : l'articulation, le sens, l'amplitude et
+l'orientation de l'objet tenu, en verifiant la coherence avec la variante
+(variante « supination » ≠ variante « marteau », « prise serrée » ≠ « prise
+large », etc.). Ecrire noir sur blanc « cette rotation doit etre evidente quand on
+compare les deux panneaux » aide le modele a la rendre visible.
+
 ## Ce que le modele fait, constate le 24 septembre 2026
 
 * Canvas : il sort du 1376 x 768 (paysage) quand le prompte dit « wide landscape
@@ -73,6 +83,22 @@ rope in the background, water droplets and a small splash in the air.`
 * Demander 12 % de marge au-dessus de la tete et sous les pieds : sans cette
   consigne, le personnage touche le bas de sa case (constate sur
   `test-a-curl-marteau`).
+
+## Piscine : deux differences
+
+* Le prompte decrit le bassin (eau a mi-poitrine, bande translucide, mur sombre,
+  ligne d'eau, gouttelettes).
+* A la production, ajouter `--fenetre case` : la surface de l'eau a la meme
+  luminosite que le corps, la detection du personnage est impossible, on prend
+  donc la fenetre centree sur la case.
+
+## Espace de travail : tout pousser tout de suite
+
+L'espace de travail est **reinitialise a chaque message** (tout ce qui n'est pas
+pousse sur GitHub disparait, `.cache` compris). Donc : generer les planches,
+**les commiter et les pousser immediatement**, puis produire les GIF. En cas de
+reinitialisation : `git fetch -q origin arena/01a0d3f4-jarvis-fitness-yanis-emilie-ap && git reset -q --hard FETCH_HEAD`
+puis `bash evolution/media/setup-tools.sh`.
 
 ## Controles avant de produire
 
