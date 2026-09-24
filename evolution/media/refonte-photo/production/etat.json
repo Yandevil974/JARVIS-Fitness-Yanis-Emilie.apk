@@ -1,0 +1,4237 @@
+{
+ "faits": [
+  "abduction-assise-machine",
+  "back-squat",
+  "developpe-couche-barre",
+  "developpe-militaire-debout",
+  "dips",
+  "hip-thrust-barre",
+  "leg-curl-allonge",
+  "rowing-barre-buste-penche-pronation",
+  "souleve-de-terre",
+  "tractions-pull-up"
+ ],
+ "restants": [
+  {
+   "identifiant": "elliptique-recuperation-active",
+   "surface": "cardio-elliptique",
+   "athlete": "femme",
+   "noms": [
+    "Elliptique — récupération active"
+   ],
+   "slugs": [
+    "elliptique-recuperation-active"
+   ]
+  },
+  {
+   "identifiant": "elliptique-retour-au-calme",
+   "surface": "cardio-elliptique",
+   "athlete": "femme",
+   "noms": [
+    "Elliptique — retour au calme"
+   ],
+   "slugs": [
+    "elliptique-retour-au-calme"
+   ]
+  },
+  {
+   "identifiant": "elliptique-fractionne",
+   "surface": "cardio-elliptique",
+   "athlete": "femme",
+   "noms": [
+    "Elliptique — fractionné"
+   ],
+   "slugs": [
+    "elliptique-fractionne"
+   ]
+  },
+  {
+   "identifiant": "elliptique-mise-en-route",
+   "surface": "cardio-elliptique",
+   "athlete": "femme",
+   "noms": [
+    "Elliptique — mise en route"
+   ],
+   "slugs": [
+    "elliptique-mise-en-route"
+   ]
+  },
+  {
+   "identifiant": "transition",
+   "surface": "cardio-elliptique",
+   "athlete": "femme",
+   "noms": [
+    "Transition"
+   ],
+   "slugs": [
+    "transition"
+   ]
+  },
+  {
+   "identifiant": "echauffement-series-d-approche",
+   "surface": "echauffement",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement — séries d’approche"
+   ],
+   "slugs": [
+    "echauffement-series-d-approche"
+   ]
+  },
+  {
+   "identifiant": "echauffement-mise-en-route",
+   "surface": "echauffement",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement — mise en route"
+   ],
+   "slugs": [
+    "echauffement-mise-en-route"
+   ]
+  },
+  {
+   "identifiant": "echauffement-mobilite",
+   "surface": "echauffement",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement — mobilité"
+   ],
+   "slugs": [
+    "echauffement-mobilite"
+   ]
+  },
+  {
+   "identifiant": "adduction-de-la-hanche-debout",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Adduction de la hanche debout"
+   ],
+   "slugs": [
+    "adduction-de-la-hanche-debout"
+   ]
+  },
+  {
+   "identifiant": "allonge-sur-le-cote",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Allongé sur le côté"
+   ],
+   "slugs": [
+    "allonge-sur-le-cote"
+   ]
+  },
+  {
+   "identifiant": "respiration-diaphragmatique-allongee",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Respiration diaphragmatique allongée"
+   ],
+   "slugs": [
+    "respiration-diaphragmatique-allongee"
+   ]
+  },
+  {
+   "identifiant": "torsion-allongee-genoux",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Torsion allongée genoux"
+   ],
+   "slugs": [
+    "torsion-allongee-genoux"
+   ]
+  },
+  {
+   "identifiant": "torsion-allongee",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Torsion allongée"
+   ],
+   "slugs": [
+    "torsion-allongee"
+   ]
+  },
+  {
+   "identifiant": "etirement-du-piriforme-assis",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Étirement du piriforme assis"
+   ],
+   "slugs": [
+    "etirement-du-piriforme-assis"
+   ]
+  },
+  {
+   "identifiant": "pigeon-assis",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Pigeon assis"
+   ],
+   "slugs": [
+    "pigeon-assis"
+   ]
+  },
+  {
+   "identifiant": "flexion-avant-jambes-tendues",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Flexion avant jambes tendues"
+   ],
+   "slugs": [
+    "flexion-avant-jambes-tendues"
+   ]
+  },
+  {
+   "identifiant": "position-de-l-enfant-balasana",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Position de l'enfant (Balasana)"
+   ],
+   "slugs": [
+    "position-de-l-enfant-balasana"
+   ]
+  },
+  {
+   "identifiant": "suspension-a-la-barre",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Suspension à la barre"
+   ],
+   "slugs": [
+    "suspension-a-la-barre"
+   ]
+  },
+  {
+   "identifiant": "bras-tendu-contre-le-mur",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Bras tendu contre le mur"
+   ],
+   "slugs": [
+    "bras-tendu-contre-le-mur"
+   ]
+  },
+  {
+   "identifiant": "bras-tendu-contre-la-poitrine",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Bras tendu contre la poitrine"
+   ],
+   "slugs": [
+    "bras-tendu-contre-la-poitrine"
+   ]
+  },
+  {
+   "identifiant": "bras-tendu-derriere",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Bras tendu derrière"
+   ],
+   "slugs": [
+    "bras-tendu-derriere"
+   ]
+  },
+  {
+   "identifiant": "bras-tendu-devant-main-tiree",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Bras tendu devant, main tirée"
+   ],
+   "slugs": [
+    "bras-tendu-devant-main-tiree"
+   ]
+  },
+  {
+   "identifiant": "etirement-du-flechisseur-de-hanche-chevalier",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Étirement du fléchisseur de hanche (chevalier)"
+   ],
+   "slugs": [
+    "etirement-du-flechisseur-de-hanche-chevalier"
+   ]
+  },
+  {
+   "identifiant": "cobra-doux",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Cobra doux"
+   ],
+   "slugs": [
+    "cobra-doux"
+   ]
+  },
+  {
+   "identifiant": "etirement-du-cobra",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Étirement du cobra"
+   ],
+   "slugs": [
+    "etirement-du-cobra"
+   ]
+  },
+  {
+   "identifiant": "etirement-contre-le-mur",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Étirement contre le mur"
+   ],
+   "slugs": [
+    "etirement-contre-le-mur"
+   ]
+  },
+  {
+   "identifiant": "coude-au-dessus-de-la-tete",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Coude au-dessus de la tête"
+   ],
+   "slugs": [
+    "coude-au-dessus-de-la-tete"
+   ]
+  },
+  {
+   "identifiant": "mains-croisees-derriere-le-dos",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Mains croisées derrière le dos"
+   ],
+   "slugs": [
+    "mains-croisees-derriere-le-dos"
+   ]
+  },
+  {
+   "identifiant": "main-dans-le-dos",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Main dans le dos"
+   ],
+   "slugs": [
+    "main-dans-le-dos"
+   ]
+  },
+  {
+   "identifiant": "etirement-dans-l-encadrement-de-porte",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Étirement dans l'encadrement de porte"
+   ],
+   "slugs": [
+    "etirement-dans-l-encadrement-de-porte"
+   ]
+  },
+  {
+   "identifiant": "talon-vers-la-fesse-debout",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Talon vers la fesse (debout)"
+   ],
+   "slugs": [
+    "talon-vers-la-fesse-debout"
+   ]
+  },
+  {
+   "identifiant": "etirement-des-extenseurs",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Étirement des extenseurs"
+   ],
+   "slugs": [
+    "etirement-des-extenseurs"
+   ]
+  },
+  {
+   "identifiant": "etirement-des-flechisseurs",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Étirement des fléchisseurs"
+   ],
+   "slugs": [
+    "etirement-des-flechisseurs"
+   ]
+  },
+  {
+   "identifiant": "position-de-l-enfant",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Position de l'enfant"
+   ],
+   "slugs": [
+    "position-de-l-enfant"
+   ]
+  },
+  {
+   "identifiant": "mollet-en-escalier",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Mollet en escalier"
+   ],
+   "slugs": [
+    "mollet-en-escalier"
+   ]
+  },
+  {
+   "identifiant": "grenouille-plantes-jointes",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Grenouille (plantes jointes)"
+   ],
+   "slugs": [
+    "grenouille-plantes-jointes"
+   ]
+  },
+  {
+   "identifiant": "une-jambe-tendue-une-pliee",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Une jambe tendue, une pliée"
+   ],
+   "slugs": [
+    "une-jambe-tendue-une-pliee"
+   ]
+  },
+  {
+   "identifiant": "back-squat-test-1rm",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Back squat — test 1RM"
+   ],
+   "slugs": [
+    "back-squat-test-1rm"
+   ]
+  },
+  {
+   "identifiant": "developpe-couche-test-1rm",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé couché — test 1RM"
+   ],
+   "slugs": [
+    "developpe-couche-test-1rm"
+   ]
+  },
+  {
+   "identifiant": "developpe-militaire-test-1rm",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé militaire — test 1RM"
+   ],
+   "slugs": [
+    "developpe-militaire-test-1rm"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-test-1rm",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Soulevé de terre — test 1RM"
+   ],
+   "slugs": [
+    "souleve-de-terre-test-1rm"
+   ]
+  },
+  {
+   "identifiant": "circuit-abdominaux-crunch-releves-gainage",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Circuit abdominaux (crunch + relevés + gainage)"
+   ],
+   "slugs": [
+    "circuit-abdominaux-crunch-releves-gainage"
+   ]
+  },
+  {
+   "identifiant": "abduction-assise-machine-ou-elastique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Abduction assise (machine ou élastique)"
+   ],
+   "slugs": [
+    "abduction-assise-machine-ou-elastique"
+   ]
+  },
+  {
+   "identifiant": "abduction-assise-en-1-5-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Abduction assise en 1,5 reps"
+   ],
+   "slugs": [
+    "abduction-assise-en-1-5-reps"
+   ]
+  },
+  {
+   "identifiant": "abduction-hanche-debout-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Abduction hanche debout à la poulie"
+   ],
+   "slugs": [
+    "abduction-hanche-debout-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "abduction-hanche-a-l-elastique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Abduction hanche à l'élastique"
+   ],
+   "slugs": [
+    "abduction-hanche-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "abduction-hanche-a-la-poulie-myo-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Abduction hanche à la poulie — myo-reps"
+   ],
+   "slugs": [
+    "abduction-hanche-a-la-poulie-myo-reps"
+   ]
+  },
+  {
+   "identifiant": "abduction-hanche-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Abduction hanche à la poulie"
+   ],
+   "slugs": [
+    "abduction-hanche-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "leg-curl-allonge-pieds-flechis",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Leg curl allongé, pieds fléchis"
+   ],
+   "slugs": [
+    "leg-curl-allonge-pieds-flechis"
+   ]
+  },
+  {
+   "identifiant": "leg-curl-allonge-1-1-4-en-haut",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Leg curl allongé, 1 1/4 en haut"
+   ],
+   "slugs": [
+    "leg-curl-allonge-1-1-4-en-haut"
+   ]
+  },
+  {
+   "identifiant": "leg-curl-allonge-pieds-pointes",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Leg curl allongé, pieds pointés"
+   ],
+   "slugs": [
+    "leg-curl-allonge-pieds-pointes"
+   ]
+  },
+  {
+   "identifiant": "releves-de-jambes-allonge",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Relevés de jambes allongé"
+   ],
+   "slugs": [
+    "releves-de-jambes-allonge"
+   ]
+  },
+  {
+   "identifiant": "releves-de-jambes-allongee",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Relevés de jambes allongée"
+   ],
+   "slugs": [
+    "releves-de-jambes-allongee"
+   ]
+  },
+  {
+   "identifiant": "fentes-arriere-alternees",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Fentes arrière alternées"
+   ],
+   "slugs": [
+    "fentes-arriere-alternees"
+   ]
+  },
+  {
+   "identifiant": "fentes-avant-alternees",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Fentes avant alternées"
+   ],
+   "slugs": [
+    "fentes-avant-alternees"
+   ]
+  },
+  {
+   "identifiant": "fentes-bulgares-pied-arriere-sureleve",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Fentes bulgares (pied arrière surélevé)"
+   ],
+   "slugs": [
+    "fentes-bulgares-pied-arriere-sureleve"
+   ]
+  },
+  {
+   "identifiant": "fentes-arriere-au-poids-du-corps",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Fentes arrière au poids du corps"
+   ],
+   "slugs": [
+    "fentes-arriere-au-poids-du-corps"
+   ]
+  },
+  {
+   "identifiant": "rowing-assis-cable-unilateral",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing assis câble unilatéral"
+   ],
+   "slugs": [
+    "rowing-assis-cable-unilateral"
+   ]
+  },
+  {
+   "identifiant": "rowing-assis-au-cou",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing assis au cou"
+   ],
+   "slugs": [
+    "rowing-assis-au-cou"
+   ]
+  },
+  {
+   "identifiant": "curl-marteau-assis",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl marteau assis"
+   ],
+   "slugs": [
+    "curl-marteau-assis"
+   ]
+  },
+  {
+   "identifiant": "curl-zottman-assis",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Zottman assis"
+   ],
+   "slugs": [
+    "curl-zottman-assis"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-assis",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères assis"
+   ],
+   "slugs": [
+    "developpe-halteres-assis"
+   ]
+  },
+  {
+   "identifiant": "developpe-militaire-halteres-assis",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Développé militaire haltères assis"
+   ],
+   "slugs": [
+    "developpe-militaire-halteres-assis"
+   ]
+  },
+  {
+   "identifiant": "developpe-militaire-halteres-assis-test-3-5-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Développé militaire haltères assis — test (3-5 reps)"
+   ],
+   "slugs": [
+    "developpe-militaire-halteres-assis-test-3-5-reps"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-assis-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères assis, prise neutre"
+   ],
+   "slugs": [
+    "developpe-halteres-assis-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-assis-neutre-pronation",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères assis, neutre→pronation"
+   ],
+   "slugs": [
+    "developpe-halteres-assis-neutre-pronation"
+   ]
+  },
+  {
+   "identifiant": "rowing-assis-etirement",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing assis + étirement"
+   ],
+   "slugs": [
+    "rowing-assis-etirement"
+   ]
+  },
+  {
+   "identifiant": "mollets-assis",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Mollets assis"
+   ],
+   "slugs": [
+    "mollets-assis"
+   ]
+  },
+  {
+   "identifiant": "rowing-assis-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing assis, prise neutre"
+   ],
+   "slugs": [
+    "rowing-assis-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-assises",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales assises"
+   ],
+   "slugs": [
+    "elevations-laterales-assises"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-assises-variante",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales assises (variante)"
+   ],
+   "slugs": [
+    "elevations-laterales-assises-variante"
+   ]
+  },
+  {
+   "identifiant": "split-squat-barbell-pied-avant-sureleve",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Split squat barbell (pied avant surélevé)"
+   ],
+   "slugs": [
+    "split-squat-barbell-pied-avant-sureleve"
+   ]
+  },
+  {
+   "identifiant": "fentes-bulgares-halteres-pied-avant-sureleve",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Fentes bulgares haltères (pied avant surélevé)"
+   ],
+   "slugs": [
+    "fentes-bulgares-halteres-pied-avant-sureleve"
+   ]
+  },
+  {
+   "identifiant": "dead-bug-avec-rotation",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Dead bug avec rotation"
+   ],
+   "slugs": [
+    "dead-bug-avec-rotation"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-lean-away",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales lean away"
+   ],
+   "slugs": [
+    "elevations-laterales-lean-away"
+   ]
+  },
+  {
+   "identifiant": "lean-away-pull-ups",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Lean away pull-ups"
+   ],
+   "slugs": [
+    "lean-away-pull-ups"
+   ]
+  },
+  {
+   "identifiant": "tirage-vertical-lean-away",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Tirage vertical lean away"
+   ],
+   "slugs": [
+    "tirage-vertical-lean-away"
+   ]
+  },
+  {
+   "identifiant": "back-squat-barre-haute",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Back squat barre haute"
+   ],
+   "slugs": [
+    "back-squat-barre-haute"
+   ]
+  },
+  {
+   "identifiant": "back-squat-charge-moderee",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Back squat (charge modérée)"
+   ],
+   "slugs": [
+    "back-squat-charge-moderee"
+   ]
+  },
+  {
+   "identifiant": "back-squat-inertie-pause-complete",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Back squat inertie (pause complète)"
+   ],
+   "slugs": [
+    "back-squat-inertie-pause-complete"
+   ]
+  },
+  {
+   "identifiant": "back-extension-horizontal",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Back extension horizontal"
+   ],
+   "slugs": [
+    "back-extension-horizontal"
+   ]
+  },
+  {
+   "identifiant": "back-extension-45-prise-snatch",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Back extension 45°, prise snatch"
+   ],
+   "slugs": [
+    "back-extension-45-prise-snatch"
+   ]
+  },
+  {
+   "identifiant": "crunch-sur-swiss-ball",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Crunch sur swiss ball"
+   ],
+   "slugs": [
+    "crunch-sur-swiss-ball"
+   ]
+  },
+  {
+   "identifiant": "leg-curl-machine-ou-swiss-ball-leg-curl",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Leg curl machine (ou swiss-ball leg curl)"
+   ],
+   "slugs": [
+    "leg-curl-machine-ou-swiss-ball-leg-curl"
+   ]
+  },
+  {
+   "identifiant": "jackknife-sur-swiss-ball",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Jackknife sur swiss ball"
+   ],
+   "slugs": [
+    "jackknife-sur-swiss-ball"
+   ]
+  },
+  {
+   "identifiant": "curl-zottman-un-bras-banc-scott",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Zottman un bras, banc Scott"
+   ],
+   "slugs": [
+    "curl-zottman-un-bras-banc-scott"
+   ]
+  },
+  {
+   "identifiant": "glute-bridge-pieds-sur-banc",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Glute bridge pieds sur banc"
+   ],
+   "slugs": [
+    "glute-bridge-pieds-sur-banc"
+   ]
+  },
+  {
+   "identifiant": "curl-haltere-supination-banc-scott-90",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl haltère supination, banc Scott 90°"
+   ],
+   "slugs": [
+    "curl-haltere-supination-banc-scott-90"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-incline-30-face-au-banc",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales incliné 30° (face au banc)"
+   ],
+   "slugs": [
+    "elevations-laterales-incline-30-face-au-banc"
+   ]
+  },
+  {
+   "identifiant": "triceps-extensions-halteres-banc-plat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Triceps extensions haltères, banc plat"
+   ],
+   "slugs": [
+    "triceps-extensions-halteres-banc-plat"
+   ]
+  },
+  {
+   "identifiant": "step-up-sur-banc-hauteur-du-genou",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Step-up sur banc (hauteur du genou)"
+   ],
+   "slugs": [
+    "step-up-sur-banc-hauteur-du-genou"
+   ]
+  },
+  {
+   "identifiant": "safety-bar-squat-ou-barre-classique",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Safety bar squat (ou barre classique)"
+   ],
+   "slugs": [
+    "safety-bar-squat-ou-barre-classique"
+   ]
+  },
+  {
+   "identifiant": "rowing-barre-buste-penche-test-3-5-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Rowing barre buste penché — test (3-5 reps)"
+   ],
+   "slugs": [
+    "rowing-barre-buste-penche-test-3-5-reps"
+   ]
+  },
+  {
+   "identifiant": "rowing-barre-buste-penche",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Rowing barre buste penché"
+   ],
+   "slugs": [
+    "rowing-barre-buste-penche"
+   ]
+  },
+  {
+   "identifiant": "rowing-barre-ez-supination-buste-penche",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing barre EZ supination, buste penché"
+   ],
+   "slugs": [
+    "rowing-barre-ez-supination-buste-penche"
+   ]
+  },
+  {
+   "identifiant": "california-press-barre-au-cou",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "California press (barre au cou)"
+   ],
+   "slugs": [
+    "california-press-barre-au-cou"
+   ]
+  },
+  {
+   "identifiant": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Hip thrust barre — test de charge max (3-5 reps)"
+   ],
+   "slugs": [
+    "hip-thrust-barre-test-de-charge-max-3-5-reps"
+   ]
+  },
+  {
+   "identifiant": "developpe-couche-barre-plat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé couché barre plat"
+   ],
+   "slugs": [
+    "developpe-couche-barre-plat"
+   ]
+  },
+  {
+   "identifiant": "curl-barre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl barre"
+   ],
+   "slugs": [
+    "curl-barre"
+   ]
+  },
+  {
+   "identifiant": "curl-barre-debout",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl barre debout"
+   ],
+   "slugs": [
+    "curl-barre-debout"
+   ]
+  },
+  {
+   "identifiant": "curl-scott-barre-ez-pronation",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Scott barre EZ, pronation"
+   ],
+   "slugs": [
+    "curl-scott-barre-ez-pronation"
+   ]
+  },
+  {
+   "identifiant": "curl-scott-barre-ez-supination",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Scott barre EZ, supination"
+   ],
+   "slugs": [
+    "curl-scott-barre-ez-supination"
+   ]
+  },
+  {
+   "identifiant": "developpe-incline-barre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé incliné barre"
+   ],
+   "slugs": [
+    "developpe-incline-barre"
+   ]
+  },
+  {
+   "identifiant": "extensions-triceps-pullover-barre-ez",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Extensions triceps + pullover barre EZ",
+    "Extensions triceps barre EZ + pullover"
+   ],
+   "slugs": [
+    "extensions-triceps-pullover-barre-ez",
+    "extensions-triceps-barre-ez-pullover"
+   ]
+  },
+  {
+   "identifiant": "extensions-triceps-barre-ez",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Extensions triceps barre EZ"
+   ],
+   "slugs": [
+    "extensions-triceps-barre-ez"
+   ]
+  },
+  {
+   "identifiant": "fentes-barre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Fentes barre"
+   ],
+   "slugs": [
+    "fentes-barre"
+   ]
+  },
+  {
+   "identifiant": "french-press-barre-ez",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "French press barre EZ"
+   ],
+   "slugs": [
+    "french-press-barre-ez"
+   ]
+  },
+  {
+   "identifiant": "barre-au-front-pushdown-triceps",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Barre au front (pushdown triceps)"
+   ],
+   "slugs": [
+    "barre-au-front-pushdown-triceps"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-roumain-barre-test-3-5-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Soulevé de terre roumain barre — test (3-5 reps)"
+   ],
+   "slugs": [
+    "souleve-de-terre-roumain-barre-test-3-5-reps"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-roumain-barre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Soulevé de terre roumain barre"
+   ],
+   "slugs": [
+    "souleve-de-terre-roumain-barre"
+   ]
+  },
+  {
+   "identifiant": "curl-poulie-basse",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl poulie basse"
+   ],
+   "slugs": [
+    "curl-poulie-basse"
+   ]
+  },
+  {
+   "identifiant": "curl-poulie-basse-supination",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl poulie basse, supination"
+   ],
+   "slugs": [
+    "curl-poulie-basse-supination"
+   ]
+  },
+  {
+   "identifiant": "french-press-poulie-basse",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "French press poulie basse"
+   ],
+   "slugs": [
+    "french-press-poulie-basse"
+   ]
+  },
+  {
+   "identifiant": "split-squat-poulie-basse",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Split squat poulie basse"
+   ],
+   "slugs": [
+    "split-squat-poulie-basse"
+   ]
+  },
+  {
+   "identifiant": "circuit-gainage-planche-lateral-bird-dog",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Circuit gainage (planche + latéral + bird dog)"
+   ],
+   "slugs": [
+    "circuit-gainage-planche-lateral-bird-dog"
+   ]
+  },
+  {
+   "identifiant": "bird-dog",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Bird dog"
+   ],
+   "slugs": [
+    "bird-dog"
+   ]
+  },
+  {
+   "identifiant": "pullover-cable-bras-tendus",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Pullover câble bras tendus"
+   ],
+   "slugs": [
+    "pullover-cable-bras-tendus"
+   ]
+  },
+  {
+   "identifiant": "rowing-haltere-un-bras-coude-ouvert",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing haltère un bras, coude ouvert"
+   ],
+   "slugs": [
+    "rowing-haltere-un-bras-coude-ouvert"
+   ]
+  },
+  {
+   "identifiant": "developpe-haltere-un-bras-debout",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltère un bras debout"
+   ],
+   "slugs": [
+    "developpe-haltere-un-bras-debout"
+   ]
+  },
+  {
+   "identifiant": "french-press-haltere-un-bras",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "French press haltère un bras"
+   ],
+   "slugs": [
+    "french-press-haltere-un-bras"
+   ]
+  },
+  {
+   "identifiant": "rowing-haltere-un-bras-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing haltère un bras, prise neutre"
+   ],
+   "slugs": [
+    "rowing-haltere-un-bras-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "rowing-haltere-un-bras",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing haltère un bras"
+   ],
+   "slugs": [
+    "rowing-haltere-un-bras"
+   ]
+  },
+  {
+   "identifiant": "glute-bridge-en-1-5-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Glute bridge en 1,5 reps"
+   ],
+   "slugs": [
+    "glute-bridge-en-1-5-reps"
+   ]
+  },
+  {
+   "identifiant": "dead-bug",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Dead bug"
+   ],
+   "slugs": [
+    "dead-bug"
+   ]
+  },
+  {
+   "identifiant": "bulgarian-split-squat-halteres",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Bulgarian split squat haltères"
+   ],
+   "slugs": [
+    "bulgarian-split-squat-halteres"
+   ]
+  },
+  {
+   "identifiant": "bulgarian-split-squat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Bulgarian split squat"
+   ],
+   "slugs": [
+    "bulgarian-split-squat"
+   ]
+  },
+  {
+   "identifiant": "rowing-haltere-buste-penche",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing haltère buste penché"
+   ],
+   "slugs": [
+    "rowing-haltere-buste-penche"
+   ]
+  },
+  {
+   "identifiant": "pushdown-triceps-cable",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Pushdown triceps câble"
+   ],
+   "slugs": [
+    "pushdown-triceps-cable"
+   ]
+  },
+  {
+   "identifiant": "cables-croises",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Câbles croisés"
+   ],
+   "slugs": [
+    "cables-croises"
+   ]
+  },
+  {
+   "identifiant": "cables-croises-rotation-externe",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Câbles croisés + rotation externe"
+   ],
+   "slugs": [
+    "cables-croises-rotation-externe"
+   ]
+  },
+  {
+   "identifiant": "ecartes-cables-incline",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Écartés câbles incliné"
+   ],
+   "slugs": [
+    "ecartes-cables-incline"
+   ]
+  },
+  {
+   "identifiant": "tractions-prise-neutre-chin-up",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Tractions prise neutre (chin-up)"
+   ],
+   "slugs": [
+    "tractions-prise-neutre-chin-up"
+   ]
+  },
+  {
+   "identifiant": "tractions-supination-chin-up",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Tractions supination (chin-up)"
+   ],
+   "slugs": [
+    "tractions-supination-chin-up"
+   ]
+  },
+  {
+   "identifiant": "wood-chop-poulie-haute",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Wood chop poulie haute"
+   ],
+   "slugs": [
+    "wood-chop-poulie-haute"
+   ]
+  },
+  {
+   "identifiant": "clamshell-a-l-elastique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Clamshell à l'élastique"
+   ],
+   "slugs": [
+    "clamshell-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "mountain-climbers",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Mountain climbers"
+   ],
+   "slugs": [
+    "mountain-climbers"
+   ]
+  },
+  {
+   "identifiant": "squat-cycliste-squat-complet",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Squat cycliste (squat complet)"
+   ],
+   "slugs": [
+    "squat-cycliste-squat-complet"
+   ]
+  },
+  {
+   "identifiant": "curl-concentration",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl concentration"
+   ],
+   "slugs": [
+    "curl-concentration"
+   ]
+  },
+  {
+   "identifiant": "drop-lunges-fentes-controlees",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Drop lunges (fentes contrôlées)"
+   ],
+   "slugs": [
+    "drop-lunges-fentes-controlees"
+   ]
+  },
+  {
+   "identifiant": "drop-lunges-fentes-sautees-controlees",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Drop lunges (fentes sautées contrôlées)"
+   ],
+   "slugs": [
+    "drop-lunges-fentes-sautees-controlees"
+   ]
+  },
+  {
+   "identifiant": "squat-au-poids-du-corps",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Squat au poids du corps"
+   ],
+   "slugs": [
+    "squat-au-poids-du-corps"
+   ]
+  },
+  {
+   "identifiant": "developpe-couche-decline-prise-serree",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé couché décliné prise serrée"
+   ],
+   "slugs": [
+    "developpe-couche-decline-prise-serree"
+   ]
+  },
+  {
+   "identifiant": "developpe-couche-plat-inertie-depuis-les-pins",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé couché plat, inertie depuis les pins"
+   ],
+   "slugs": [
+    "developpe-couche-plat-inertie-depuis-les-pins"
+   ]
+  },
+  {
+   "identifiant": "developpe-couche-halteres",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Développé couché haltères"
+   ],
+   "slugs": [
+    "developpe-couche-halteres"
+   ]
+  },
+  {
+   "identifiant": "developpe-couche-prise-serree",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé couché prise serrée"
+   ],
+   "slugs": [
+    "developpe-couche-prise-serree"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-coude-a-90",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales coude à 90°"
+   ],
+   "slugs": [
+    "elevations-laterales-coude-a-90"
+   ]
+  },
+  {
+   "identifiant": "crunch-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Crunch à la poulie"
+   ],
+   "slugs": [
+    "crunch-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "crunch-a-la-poulie-ou-au-sol",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Crunch à la poulie (ou au sol)"
+   ],
+   "slugs": [
+    "crunch-a-la-poulie-ou-au-sol"
+   ]
+  },
+  {
+   "identifiant": "reverse-crunch",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Reverse crunch"
+   ],
+   "slugs": [
+    "reverse-crunch"
+   ]
+  },
+  {
+   "identifiant": "presse-a-cuisses-pieds-hauts",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Presse à cuisses pieds hauts"
+   ],
+   "slugs": [
+    "presse-a-cuisses-pieds-hauts"
+   ]
+  },
+  {
+   "identifiant": "leg-curl-debout",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Leg curl debout"
+   ],
+   "slugs": [
+    "leg-curl-debout"
+   ]
+  },
+  {
+   "identifiant": "curl-scott-haltere-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Scott haltère, prise neutre"
+   ],
+   "slugs": [
+    "curl-scott-haltere-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "curl-scott-haltere-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Scott haltère neutre"
+   ],
+   "slugs": [
+    "curl-scott-haltere-neutre"
+   ]
+  },
+  {
+   "identifiant": "curl-scott-90-haltere-supination",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Scott 90° haltère supination"
+   ],
+   "slugs": [
+    "curl-scott-90-haltere-supination"
+   ]
+  },
+  {
+   "identifiant": "curl-halteres",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Curl haltères"
+   ],
+   "slugs": [
+    "curl-halteres"
+   ]
+  },
+  {
+   "identifiant": "curl-halteres-incline",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl haltères incliné"
+   ],
+   "slugs": [
+    "curl-halteres-incline"
+   ]
+  },
+  {
+   "identifiant": "curl-halteres-incline-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl haltères incliné, prise neutre"
+   ],
+   "slugs": [
+    "curl-halteres-incline-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "curl-halteres-incline-supination",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl haltères incliné, supination"
+   ],
+   "slugs": [
+    "curl-halteres-incline-supination"
+   ]
+  },
+  {
+   "identifiant": "leg-curl-machine",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Leg curl machine"
+   ],
+   "slugs": [
+    "leg-curl-machine"
+   ]
+  },
+  {
+   "identifiant": "curl-marteau",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl marteau"
+   ],
+   "slugs": [
+    "curl-marteau"
+   ]
+  },
+  {
+   "identifiant": "curl-zottman",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Curl Zottman"
+   ],
+   "slugs": [
+    "curl-zottman"
+   ]
+  },
+  {
+   "identifiant": "squat-cycliste",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Squat cycliste"
+   ],
+   "slugs": [
+    "squat-cycliste"
+   ]
+  },
+  {
+   "identifiant": "good-morning-debout",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Good morning debout"
+   ],
+   "slugs": [
+    "good-morning-debout"
+   ]
+  },
+  {
+   "identifiant": "mollets-debout",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Mollets debout"
+   ],
+   "slugs": [
+    "mollets-debout"
+   ]
+  },
+  {
+   "identifiant": "mollets-debout-unilateraux",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Mollets debout unilatéraux"
+   ],
+   "slugs": [
+    "mollets-debout-unilateraux"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-decline-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères décliné, prise neutre"
+   ],
+   "slugs": [
+    "developpe-halteres-decline-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "ecartes-halteres-decline",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Écartés haltères décliné"
+   ],
+   "slugs": [
+    "ecartes-halteres-decline"
+   ]
+  },
+  {
+   "identifiant": "developpe-militaire-inertie-depuis-les-pins",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé militaire, inertie depuis les pins"
+   ],
+   "slugs": [
+    "developpe-militaire-inertie-depuis-les-pins"
+   ]
+  },
+  {
+   "identifiant": "developpe-derriere-la-nuque",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé derrière la nuque"
+   ],
+   "slugs": [
+    "developpe-derriere-la-nuque"
+   ]
+  },
+  {
+   "identifiant": "mobilite-des-epaules",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Mobilité des épaules"
+   ],
+   "slugs": [
+    "mobilite-des-epaules"
+   ]
+  },
+  {
+   "identifiant": "developpe-incline-halteres",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Développé incliné haltères",
+    "Développé haltères incliné 30°",
+    "Développé haltères incliné 45°",
+    "Développé haltères incliné"
+   ],
+   "slugs": [
+    "developpe-incline-halteres",
+    "developpe-halteres-incline-30",
+    "developpe-halteres-incline-45",
+    "developpe-halteres-incline"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-incline-45-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères incliné 45°, prise neutre"
+   ],
+   "slugs": [
+    "developpe-halteres-incline-45-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-incline-pronation",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères incliné, pronation"
+   ],
+   "slugs": [
+    "developpe-halteres-incline-pronation"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-plat-prise-neutre",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères plat, prise neutre"
+   ],
+   "slugs": [
+    "developpe-halteres-plat-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "developpe-halteres-plat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Développé haltères plat"
+   ],
+   "slugs": [
+    "developpe-halteres-plat"
+   ]
+  },
+  {
+   "identifiant": "respiration-diaphragmatique",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Respiration diaphragmatique"
+   ],
+   "slugs": [
+    "respiration-diaphragmatique"
+   ]
+  },
+  {
+   "identifiant": "triceps-dips",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Triceps dips"
+   ],
+   "slugs": [
+    "triceps-dips"
+   ]
+  },
+  {
+   "identifiant": "kickback-a-la-poulie-drop-set-final",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Kickback à la poulie — drop set final"
+   ],
+   "slugs": [
+    "kickback-a-la-poulie-drop-set-final"
+   ]
+  },
+  {
+   "identifiant": "gainage-lateral-dynamique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Gainage latéral dynamique"
+   ],
+   "slugs": [
+    "gainage-lateral-dynamique"
+   ]
+  },
+  {
+   "identifiant": "ecartes-halteres",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Écartés haltères"
+   ],
+   "slugs": [
+    "ecartes-halteres"
+   ]
+  },
+  {
+   "identifiant": "face-pull-a-l-elastique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Face pull à l'élastique"
+   ],
+   "slugs": [
+    "face-pull-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "fire-hydrant-a-l-elastique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Fire hydrant à l'élastique"
+   ],
+   "slugs": [
+    "fire-hydrant-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "kickback-a-l-elastique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Kickback à l'élastique"
+   ],
+   "slugs": [
+    "kickback-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "pallof-press-a-l-elastique",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Pallof press à l'élastique"
+   ],
+   "slugs": [
+    "pallof-press-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "rowing-a-l-elastique",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Rowing à l’élastique"
+   ],
+   "slugs": [
+    "rowing-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-halteres",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales haltères"
+   ],
+   "slugs": [
+    "elevations-laterales-halteres"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-halteres-myo-reps",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Élévations latérales haltères — myo-reps"
+   ],
+   "slugs": [
+    "elevations-laterales-halteres-myo-reps"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales-incline-30",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales incliné 30°",
+    "Élévations latérales incliné 45°",
+    "Élévations latérales incliné"
+   ],
+   "slugs": [
+    "elevations-laterales-incline-30",
+    "elevations-laterales-incline-45",
+    "elevations-laterales-incline"
+   ]
+  },
+  {
+   "identifiant": "elevations-laterales",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Élévations latérales"
+   ],
+   "slugs": [
+    "elevations-laterales"
+   ]
+  },
+  {
+   "identifiant": "leg-extension",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Leg extension"
+   ],
+   "slugs": [
+    "leg-extension"
+   ]
+  },
+  {
+   "identifiant": "extension-triceps-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Extension triceps à la poulie"
+   ],
+   "slugs": [
+    "extension-triceps-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "extensions-triceps-halteres-incline",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Extensions triceps haltères incliné"
+   ],
+   "slugs": [
+    "extensions-triceps-halteres-incline"
+   ]
+  },
+  {
+   "identifiant": "extensions-triceps-halteres-plat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Extensions triceps haltères plat"
+   ],
+   "slugs": [
+    "extensions-triceps-halteres-plat"
+   ]
+  },
+  {
+   "identifiant": "extensions-triceps-poulie",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Extensions triceps poulie"
+   ],
+   "slugs": [
+    "extensions-triceps-poulie"
+   ]
+  },
+  {
+   "identifiant": "face-pull-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Face pull à la poulie"
+   ],
+   "slugs": [
+    "face-pull-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "fentes-marchees",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Fentes marchées"
+   ],
+   "slugs": [
+    "fentes-marchees"
+   ]
+  },
+  {
+   "identifiant": "pont-fessier-au-sol-activation",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Pont fessier au sol — activation"
+   ],
+   "slugs": [
+    "pont-fessier-au-sol-activation"
+   ]
+  },
+  {
+   "identifiant": "front-squat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Front squat"
+   ],
+   "slugs": [
+    "front-squat"
+   ]
+  },
+  {
+   "identifiant": "gainage-lateral",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Gainage latéral"
+   ],
+   "slugs": [
+    "gainage-lateral"
+   ]
+  },
+  {
+   "identifiant": "gainage-planche",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Gainage planche"
+   ],
+   "slugs": [
+    "gainage-planche"
+   ]
+  },
+  {
+   "identifiant": "glute-ham-raise",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Glute ham raise"
+   ],
+   "slugs": [
+    "glute-ham-raise"
+   ]
+  },
+  {
+   "identifiant": "goblet-squat",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Goblet squat"
+   ],
+   "slugs": [
+    "goblet-squat"
+   ]
+  },
+  {
+   "identifiant": "hack-squat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Hack squat"
+   ],
+   "slugs": [
+    "hack-squat"
+   ]
+  },
+  {
+   "identifiant": "pullover-haltere-plat",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Pullover haltère plat"
+   ],
+   "slugs": [
+    "pullover-haltere-plat"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-roumain-unilateral-haltere",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Soulevé de terre roumain unilatéral haltère"
+   ],
+   "slugs": [
+    "souleve-de-terre-roumain-unilateral-haltere"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-roumain-halteres",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Soulevé de terre roumain haltères"
+   ],
+   "slugs": [
+    "souleve-de-terre-roumain-halteres"
+   ]
+  },
+  {
+   "identifiant": "step-up-haut",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Step-up haut"
+   ],
+   "slugs": [
+    "step-up-haut"
+   ]
+  },
+  {
+   "identifiant": "hip-thrust-unilateral-1-jambe",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Hip thrust unilatéral (1 jambe)"
+   ],
+   "slugs": [
+    "hip-thrust-unilateral-1-jambe"
+   ]
+  },
+  {
+   "identifiant": "hip-thrust-unilateral-leste",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Hip thrust unilatéral lesté"
+   ],
+   "slugs": [
+    "hip-thrust-unilateral-leste"
+   ]
+  },
+  {
+   "identifiant": "hip-thrust-unilateral",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Hip thrust unilatéral"
+   ],
+   "slugs": [
+    "hip-thrust-unilateral"
+   ]
+  },
+  {
+   "identifiant": "tirage-horizontal-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Tirage horizontal à la poulie"
+   ],
+   "slugs": [
+    "tirage-horizontal-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "releves-de-jambes-incline",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Relevés de jambes incliné"
+   ],
+   "slugs": [
+    "releves-de-jambes-incline"
+   ]
+  },
+  {
+   "identifiant": "pompes-inclinees-mains-surelevees",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Pompes inclinées (mains surélevées)"
+   ],
+   "slugs": [
+    "pompes-inclinees-mains-surelevees"
+   ]
+  },
+  {
+   "identifiant": "releves-de-jambes",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Relevés de jambes"
+   ],
+   "slugs": [
+    "releves-de-jambes"
+   ]
+  },
+  {
+   "identifiant": "releves-de-jambes-suspendu",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Relevés de jambes suspendu"
+   ],
+   "slugs": [
+    "releves-de-jambes-suspendu"
+   ]
+  },
+  {
+   "identifiant": "kickback-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Kickback à la poulie"
+   ],
+   "slugs": [
+    "kickback-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "tirage-vertical-prise-large",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Tirage vertical prise large"
+   ],
+   "slugs": [
+    "tirage-vertical-prise-large"
+   ]
+  },
+  {
+   "identifiant": "tractions-prise-large",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Tractions prise large"
+   ],
+   "slugs": [
+    "tractions-prise-large"
+   ]
+  },
+  {
+   "identifiant": "leg-press",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Leg press"
+   ],
+   "slugs": [
+    "leg-press"
+   ]
+  },
+  {
+   "identifiant": "leg-press-unilateral",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Leg press unilatéral"
+   ],
+   "slugs": [
+    "leg-press-unilateral"
+   ]
+  },
+  {
+   "identifiant": "mollets-a-la-presse",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Mollets à la presse"
+   ],
+   "slugs": [
+    "mollets-a-la-presse"
+   ]
+  },
+  {
+   "identifiant": "mollets-unilateraux",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Mollets unilatéraux"
+   ],
+   "slugs": [
+    "mollets-unilateraux"
+   ]
+  },
+  {
+   "identifiant": "tirage-vertical-prise-neutre",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Tirage vertical prise neutre"
+   ],
+   "slugs": [
+    "tirage-vertical-prise-neutre"
+   ]
+  },
+  {
+   "identifiant": "pallof-press-a-la-poulie",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Pallof press à la poulie"
+   ],
+   "slugs": [
+    "pallof-press-a-la-poulie"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-partiel-prise-snatch",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Soulevé de terre partiel, prise snatch"
+   ],
+   "slugs": [
+    "souleve-de-terre-partiel-prise-snatch"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-partiel",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Soulevé de terre partiel"
+   ],
+   "slugs": [
+    "souleve-de-terre-partiel"
+   ]
+  },
+  {
+   "identifiant": "pompes",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Pompes"
+   ],
+   "slugs": [
+    "pompes"
+   ]
+  },
+  {
+   "identifiant": "tirage-vertical-prise-pronation",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Tirage vertical prise pronation"
+   ],
+   "slugs": [
+    "tirage-vertical-prise-pronation"
+   ]
+  },
+  {
+   "identifiant": "ab-wheel-roulette",
+   "surface": "musculation",
+   "athlete": "homme",
+   "noms": [
+    "Ab wheel (roulette)"
+   ],
+   "slugs": [
+    "ab-wheel-roulette"
+   ]
+  },
+  {
+   "identifiant": "souleve-de-terre-roumain-unilateral",
+   "surface": "musculation",
+   "athlete": "femme",
+   "noms": [
+    "Soulevé de terre roumain unilatéral"
+   ],
+   "slugs": [
+    "souleve-de-terre-roumain-unilateral"
+   ]
+  },
+  {
+   "identifiant": "aqua-jogging-sur-place",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place"
+   ],
+   "slugs": [
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place"
+   ]
+  },
+  {
+   "identifiant": "mobilite-epaules-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique"
+   ],
+   "slugs": [
+    "mobilite-epaules-aquatique",
+    "mobilite-epaules-aquatique",
+    "mobilite-epaules-aquatique"
+   ]
+  },
+  {
+   "identifiant": "marche-aquatique",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Marche aquatique"
+   ],
+   "slugs": [
+    "marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "battements-au-bord",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Battements au bord"
+   ],
+   "slugs": [
+    "battements-au-bord"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-au-bord",
+   "surface": "tabata-aqua",
+   "athlete": "femme",
+   "noms": [
+    "Ciseaux au bord"
+   ],
+   "slugs": [
+    "ciseaux-au-bord"
+   ]
+  },
+  {
+   "identifiant": "etirements-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Étirements au bord",
+    "Étirements au bord",
+    "Étirements au bord"
+   ],
+   "slugs": [
+    "etirements-au-bord",
+    "etirements-au-bord",
+    "etirements-au-bord"
+   ]
+  },
+  {
+   "identifiant": "gainage-au-bord-vertical",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Gainage au bord (vertical)"
+   ],
+   "slugs": [
+    "gainage-au-bord-vertical"
+   ]
+  },
+  {
+   "identifiant": "pompes-au-bord",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Pompes au bord"
+   ],
+   "slugs": [
+    "pompes-au-bord"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Retour au calme"
+   ],
+   "slugs": [
+    "retour-au-calme"
+   ]
+  },
+  {
+   "identifiant": "mobilite-hanches-chevilles",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles"
+   ],
+   "slugs": [
+    "mobilite-hanches-chevilles",
+    "mobilite-hanches-chevilles",
+    "mobilite-hanches-chevilles"
+   ]
+  },
+  {
+   "identifiant": "recup-complete-souffler",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Récup complète — souffler"
+   ],
+   "slugs": [
+    "recup-complete-souffler"
+   ]
+  },
+  {
+   "identifiant": "deplacements-lateraux-4-m",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)"
+   ],
+   "slugs": [
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m"
+   ]
+  },
+  {
+   "identifiant": "nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Nage douce",
+    "Nage douce sur place",
+    "Nage douce sur place",
+    "Nage douce sur place"
+   ],
+   "slugs": [
+    "nage-douce",
+    "nage-douce-sur-place",
+    "nage-douce-sur-place",
+    "nage-douce-sur-place"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-a-l-elastique",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Nage statique (à l'élastique)"
+   ],
+   "slugs": [
+    "nage-statique-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "recup-entre-tabatas",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas"
+   ],
+   "slugs": [
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas"
+   ]
+  },
+  {
+   "identifiant": "talons-fesses",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Talons-fesses"
+   ],
+   "slugs": [
+    "talons-fesses"
+   ]
+  },
+  {
+   "identifiant": "sprint-nager-a-fond",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Sprint — nager à fond"
+   ],
+   "slugs": [
+    "sprint-nager-a-fond"
+   ]
+  },
+  {
+   "identifiant": "fractionne-nager",
+   "surface": "piscine",
+   "athlete": "femme",
+   "noms": [
+    "Fractionné — nager"
+   ],
+   "slugs": [
+    "fractionne-nager"
+   ]
+  },
+  {
+   "identifiant": "montees-de-genoux",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Montées de genoux"
+   ],
+   "slugs": [
+    "montees-de-genoux"
+   ]
+  },
+  {
+   "identifiant": "recup-active-marche-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique"
+   ],
+   "slugs": [
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "aqua-jogging-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT"
+   ],
+   "slugs": [
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort"
+   ]
+  },
+  {
+   "identifiant": "echauffement-marche-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique"
+   ],
+   "slugs": [
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "recup-marche-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Récup — marche aquatique",
+    "Récup — marche aquatique"
+   ],
+   "slugs": [
+    "recup-marche-aquatique",
+    "recup-marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "echauffement-battements-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Échauffement — battements au bord"
+   ],
+   "slugs": [
+    "echauffement-battements-au-bord"
+   ]
+  },
+  {
+   "identifiant": "echauffement-battements-mobilite",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Échauffement — battements + mobilité"
+   ],
+   "slugs": [
+    "echauffement-battements-mobilite"
+   ]
+  },
+  {
+   "identifiant": "battements-de-jambes-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT"
+   ],
+   "slugs": [
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-au-bord-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT"
+   ],
+   "slugs": [
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-mains-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord"
+   ],
+   "slugs": [
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord"
+   ]
+  },
+  {
+   "identifiant": "recup-complete-souffler-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord"
+   ],
+   "slugs": [
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord"
+   ]
+  },
+  {
+   "identifiant": "pompes-au-bord-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT"
+   ],
+   "slugs": [
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort"
+   ]
+  },
+  {
+   "identifiant": "gainage-vertical-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord"
+   ],
+   "slugs": [
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce"
+   ],
+   "slugs": [
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-nage-tres-douce",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce"
+   ],
+   "slugs": [
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-mobilite",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Retour au calme + mobilité"
+   ],
+   "slugs": [
+    "retour-au-calme-mobilite"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-respiration",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Retour au calme + respiration"
+   ],
+   "slugs": [
+    "retour-au-calme-respiration"
+   ]
+  },
+  {
+   "identifiant": "recup-courte-marche",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche"
+   ],
+   "slugs": [
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche"
+   ]
+  },
+  {
+   "identifiant": "deplacements-lateraux-4-m-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT"
+   ],
+   "slugs": [
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort"
+   ]
+  },
+  {
+   "identifiant": "echauffement-nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce"
+   ],
+   "slugs": [
+    "echauffement-nage-douce",
+    "echauffement-nage-douce",
+    "echauffement-nage-douce",
+    "echauffement-nage-douce"
+   ]
+  },
+  {
+   "identifiant": "echauffement-soigneux-nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce"
+   ],
+   "slugs": [
+    "echauffement-soigneux-nage-douce",
+    "echauffement-soigneux-nage-douce",
+    "echauffement-soigneux-nage-douce"
+   ]
+  },
+  {
+   "identifiant": "nage-douce-respiration",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Nage douce + respiration",
+    "Nage douce + respiration"
+   ],
+   "slugs": [
+    "nage-douce-respiration",
+    "nage-douce-respiration"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-douce",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Nage statique douce",
+    "Nage statique douce"
+   ],
+   "slugs": [
+    "nage-statique-douce",
+    "nage-statique-douce"
+   ]
+  },
+  {
+   "identifiant": "talons-fesses-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT"
+   ],
+   "slugs": [
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort"
+   ]
+  },
+  {
+   "identifiant": "gainage-vertical-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT"
+   ],
+   "slugs": [
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort"
+   ]
+  },
+  {
+   "identifiant": "montees-de-genoux-effort",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT"
+   ],
+   "slugs": [
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort"
+   ]
+  },
+  {
+   "identifiant": "nager-fractionne-1-6",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Nager — fractionné 1/6",
+    "Nager — fractionné 2/6",
+    "Nager — fractionné 3/6",
+    "Nager — fractionné 4/6",
+    "Nager — fractionné 5/6",
+    "Nager — fractionné 6/6",
+    "Nager — fractionné 1/8",
+    "Nager — fractionné 2/8",
+    "Nager — fractionné 3/8",
+    "Nager — fractionné 4/8",
+    "Nager — fractionné 5/8",
+    "Nager — fractionné 6/8",
+    "Nager — fractionné 7/8",
+    "Nager — fractionné 8/8",
+    "Nager — fractionné 1/10",
+    "Nager — fractionné 2/10",
+    "Nager — fractionné 3/10",
+    "Nager — fractionné 4/10",
+    "Nager — fractionné 5/10",
+    "Nager — fractionné 6/10",
+    "Nager — fractionné 7/10",
+    "Nager — fractionné 8/10",
+    "Nager — fractionné 9/10",
+    "Nager — fractionné 10/10"
+   ],
+   "slugs": [
+    "nager-fractionne-1-6",
+    "nager-fractionne-2-6",
+    "nager-fractionne-3-6",
+    "nager-fractionne-4-6",
+    "nager-fractionne-5-6",
+    "nager-fractionne-6-6",
+    "nager-fractionne-1-8",
+    "nager-fractionne-2-8",
+    "nager-fractionne-3-8",
+    "nager-fractionne-4-8",
+    "nager-fractionne-5-8",
+    "nager-fractionne-6-8",
+    "nager-fractionne-7-8",
+    "nager-fractionne-8-8",
+    "nager-fractionne-1-10",
+    "nager-fractionne-2-10",
+    "nager-fractionne-3-10",
+    "nager-fractionne-4-10",
+    "nager-fractionne-5-10",
+    "nager-fractionne-6-10",
+    "nager-fractionne-7-10",
+    "nager-fractionne-8-10",
+    "nager-fractionne-9-10",
+    "nager-fractionne-10-10"
+   ]
+  },
+  {
+   "identifiant": "recup-marche",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche"
+   ],
+   "slugs": [
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-z2",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2/Z3"
+   ],
+   "slugs": [
+    "nage-statique-z2",
+    "nage-statique-z2",
+    "nage-statique-z2",
+    "nage-statique-z2-z3"
+   ]
+  },
+  {
+   "identifiant": "nager-sprint-1-8",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Nager sprint 1/8",
+    "Nager sprint 2/8",
+    "Nager sprint 3/8",
+    "Nager sprint 4/8",
+    "Nager sprint 5/8",
+    "Nager sprint 6/8",
+    "Nager sprint 7/8",
+    "Nager sprint 8/8",
+    "Nager sprint 1/10",
+    "Nager sprint 2/10",
+    "Nager sprint 3/10",
+    "Nager sprint 4/10",
+    "Nager sprint 5/10",
+    "Nager sprint 6/10",
+    "Nager sprint 7/10",
+    "Nager sprint 8/10",
+    "Nager sprint 9/10",
+    "Nager sprint 10/10",
+    "Nager sprint 1/12",
+    "Nager sprint 2/12",
+    "Nager sprint 3/12",
+    "Nager sprint 4/12",
+    "Nager sprint 5/12",
+    "Nager sprint 6/12",
+    "Nager sprint 7/12",
+    "Nager sprint 8/12",
+    "Nager sprint 9/12",
+    "Nager sprint 10/12",
+    "Nager sprint 11/12",
+    "Nager sprint 12/12"
+   ],
+   "slugs": [
+    "nager-sprint-1-8",
+    "nager-sprint-2-8",
+    "nager-sprint-3-8",
+    "nager-sprint-4-8",
+    "nager-sprint-5-8",
+    "nager-sprint-6-8",
+    "nager-sprint-7-8",
+    "nager-sprint-8-8",
+    "nager-sprint-1-10",
+    "nager-sprint-2-10",
+    "nager-sprint-3-10",
+    "nager-sprint-4-10",
+    "nager-sprint-5-10",
+    "nager-sprint-6-10",
+    "nager-sprint-7-10",
+    "nager-sprint-8-10",
+    "nager-sprint-9-10",
+    "nager-sprint-10-10",
+    "nager-sprint-1-12",
+    "nager-sprint-2-12",
+    "nager-sprint-3-12",
+    "nager-sprint-4-12",
+    "nager-sprint-5-12",
+    "nager-sprint-6-12",
+    "nager-sprint-7-12",
+    "nager-sprint-8-12",
+    "nager-sprint-9-12",
+    "nager-sprint-10-12",
+    "nager-sprint-11-12",
+    "nager-sprint-12-12"
+   ]
+  },
+  {
+   "identifiant": "repos",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos"
+   ],
+   "slugs": [
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos"
+   ]
+  },
+  {
+   "identifiant": "tabata-1-2-en-place",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Tabata 1/2 — en place",
+    "Tabata 2/2 — en place",
+    "Tabata 1/3 — en place",
+    "Tabata 2/3 — en place",
+    "Tabata 3/3 — en place",
+    "Tabata 1/4 — en place",
+    "Tabata 2/4 — en place",
+    "Tabata 3/4 — en place",
+    "Tabata 4/4 — en place"
+   ],
+   "slugs": [
+    "tabata-1-2-en-place",
+    "tabata-2-2-en-place",
+    "tabata-1-3-en-place",
+    "tabata-2-3-en-place",
+    "tabata-3-3-en-place",
+    "tabata-1-4-en-place",
+    "tabata-2-4-en-place",
+    "tabata-3-4-en-place",
+    "tabata-4-4-en-place"
+   ]
+  },
+  {
+   "identifiant": "tour-1-2-en-place",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Tour 1/2 — en place",
+    "Tour 2/2 — en place",
+    "Tour 1/3 — en place",
+    "Tour 2/3 — en place",
+    "Tour 3/3 — en place",
+    "Tour 1/4 — en place",
+    "Tour 2/4 — en place",
+    "Tour 3/4 — en place",
+    "Tour 4/4 — en place"
+   ],
+   "slugs": [
+    "tour-1-2-en-place",
+    "tour-2-2-en-place",
+    "tour-1-3-en-place",
+    "tour-2-3-en-place",
+    "tour-3-3-en-place",
+    "tour-1-4-en-place",
+    "tour-2-4-en-place",
+    "tour-3-4-en-place",
+    "tour-4-4-en-place"
+   ]
+  },
+  {
+   "identifiant": "aqua-jogging",
+   "surface": "tabata-aqua",
+   "athlete": "femme",
+   "noms": [
+    "Aqua-jogging"
+   ],
+   "slugs": [
+    "aqua-jogging"
+   ]
+  },
+  {
+   "identifiant": "battements-de-jambes",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Battements de jambes"
+   ],
+   "slugs": [
+    "battements-de-jambes"
+   ]
+  },
+  {
+   "identifiant": "deplacements-lateraux",
+   "surface": "tabata-aqua",
+   "athlete": "femme",
+   "noms": [
+    "Déplacements latéraux"
+   ],
+   "slugs": [
+    "deplacements-lateraux"
+   ]
+  },
+  {
+   "identifiant": "gainage-vertical",
+   "surface": "tabata-aqua",
+   "athlete": "femme",
+   "noms": [
+    "Gainage vertical"
+   ],
+   "slugs": [
+    "gainage-vertical"
+   ]
+  },
+  {
+   "identifiant": "repos-actif",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Repos actif"
+   ],
+   "slugs": [
+    "repos-actif"
+   ]
+  },
+  {
+   "identifiant": "fentes-alternees",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Fentes alternées"
+   ],
+   "slugs": [
+    "fentes-alternees"
+   ]
+  },
+  {
+   "identifiant": "fentes-arriere",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Fentes arrière"
+   ],
+   "slugs": [
+    "fentes-arriere"
+   ]
+  },
+  {
+   "identifiant": "dips-au-bord",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Dips au bord"
+   ],
+   "slugs": [
+    "dips-au-bord"
+   ]
+  },
+  {
+   "identifiant": "burpees",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Burpees"
+   ],
+   "slugs": [
+    "burpees"
+   ]
+  },
+  {
+   "identifiant": "burpees-simplifies",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Burpees simplifiés"
+   ],
+   "slugs": [
+    "burpees-simplifies"
+   ]
+  },
+  {
+   "identifiant": "chaise-douce",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Chaise douce"
+   ],
+   "slugs": [
+    "chaise-douce"
+   ]
+  },
+  {
+   "identifiant": "chaise-au-mur",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Chaise au mur"
+   ],
+   "slugs": [
+    "chaise-au-mur"
+   ]
+  },
+  {
+   "identifiant": "oiseau-chien",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Oiseau-chien"
+   ],
+   "slugs": [
+    "oiseau-chien"
+   ]
+  },
+  {
+   "identifiant": "mountain-climbers-lents",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Mountain climbers lents"
+   ],
+   "slugs": [
+    "mountain-climbers-lents"
+   ]
+  },
+  {
+   "identifiant": "corde-invisible",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Corde invisible"
+   ],
+   "slugs": [
+    "corde-invisible"
+   ]
+  },
+  {
+   "identifiant": "crunch",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Crunch"
+   ],
+   "slugs": [
+    "crunch"
+   ]
+  },
+  {
+   "identifiant": "squats-doux",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Squats doux"
+   ],
+   "slugs": [
+    "squats-doux"
+   ]
+  },
+  {
+   "identifiant": "ponts-fessiers",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Ponts fessiers"
+   ],
+   "slugs": [
+    "ponts-fessiers"
+   ]
+  },
+  {
+   "identifiant": "high-knees",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "High knees"
+   ],
+   "slugs": [
+    "high-knees"
+   ]
+  },
+  {
+   "identifiant": "pompes-inclinees",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Pompes inclinées"
+   ],
+   "slugs": [
+    "pompes-inclinees"
+   ]
+  },
+  {
+   "identifiant": "jumping-jacks",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Jumping jacks"
+   ],
+   "slugs": [
+    "jumping-jacks"
+   ]
+  },
+  {
+   "identifiant": "planche-laterale-g",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Planche latérale G",
+    "Planche latérale D"
+   ],
+   "slugs": [
+    "planche-laterale-g",
+    "planche-laterale-d"
+   ]
+  },
+  {
+   "identifiant": "marche-sur-place",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Marche sur place"
+   ],
+   "slugs": [
+    "marche-sur-place"
+   ]
+  },
+  {
+   "identifiant": "mollets",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Mollets"
+   ],
+   "slugs": [
+    "mollets"
+   ]
+  },
+  {
+   "identifiant": "montees-sur-mollets",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Montées sur mollets"
+   ],
+   "slugs": [
+    "montees-sur-mollets"
+   ]
+  },
+  {
+   "identifiant": "pompes-au-mur",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Pompes au mur"
+   ],
+   "slugs": [
+    "pompes-au-mur"
+   ]
+  },
+  {
+   "identifiant": "patineurs",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Patineurs"
+   ],
+   "slugs": [
+    "patineurs"
+   ]
+  },
+  {
+   "identifiant": "planche",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Planche"
+   ],
+   "slugs": [
+    "planche"
+   ]
+  },
+  {
+   "identifiant": "respiration-profonde",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Respiration profonde"
+   ],
+   "slugs": [
+    "respiration-profonde"
+   ]
+  },
+  {
+   "identifiant": "russian-twist",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Russian twist"
+   ],
+   "slugs": [
+    "russian-twist"
+   ]
+  },
+  {
+   "identifiant": "squats-sautes",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Squats sautés"
+   ],
+   "slugs": [
+    "squats-sautes"
+   ]
+  },
+  {
+   "identifiant": "squats",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Squats"
+   ],
+   "slugs": [
+    "squats"
+   ]
+  },
+  {
+   "identifiant": "squats-sumo",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Squats sumo"
+   ],
+   "slugs": [
+    "squats-sumo"
+   ]
+  },
+  {
+   "identifiant": "superman",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Superman"
+   ],
+   "slugs": [
+    "superman"
+   ]
+  }
+ ]
+}
