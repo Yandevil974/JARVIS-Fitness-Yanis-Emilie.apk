@@ -90,3 +90,12 @@ Correctif décidé par l'utilisateur (« fais ce que tu recommande ») après re
 - Web embarqué `e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292` : deux échanges de visuel d'étirement (image échangée, consigne intacte) et cinq lacunes explicites pour les guides aquatiques dont le dessin était terrestre.
 - Seules entrées modifiées vs la 1.4.5 : `AndroidManifest.xml` et `assets/public/assets/index-CBCies4k.js`. 9/9 DEX identiques, 271/272 fichiers web identiques, v2 + v3, un signataire.
 - Tests : Node 44/44 ; suite média 37/37 (4,7 min) sur ce bundle ; nouveaux parcours `stretch-media.spec.mjs` (2) et `pool-land-guides.spec.mjs` (2).
+
+## 1.4.7 — 24 septembre 2026
+
+- `downloads/Yanis-Fitness-Evolution-1.4.7.apk` — 24 909 288 octets, SHA-256 `ad2913f9aff4817e1b32f638930ea478d63f89961cc0de7f69c48638d00baf06`, versionName 1.4.7 / versionCode 18.
+- Identité durable `150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b` (identique 1.4.2 -> 1.4.6) : installation directe par-dessus la 1.4.6.
+- Web embarqué `cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a` : cinq animations humaines aquatiques fournies (gainage vertical, mobilité épaules, mobilité hanches/chevilles, ciseaux au bord, talons-fesses) + les corrections cumulées.
+- Demande utilisateur du 24 septembre 2026 : « il y a des images humaines animées manquantes. corrige cela stp en cohérence avec les autres gif stp » — famille C refusée la veille, style aligné sur les GIF humains existants.
+- Seules entrées modifiées vs la 1.4.6 : `AndroidManifest.xml`, le paquet web et 5 médias ajoutés. 9/9 DEX identiques, v2 + v3, un signataire.
+- Tests : Node 46/46 ; `pool-land-guides.spec.mjs` exige désormais l'animation fournie (elle vérifie aussi 480 px, 262 px et l'empreinte de chaque GIF).

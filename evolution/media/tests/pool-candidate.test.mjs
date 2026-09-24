@@ -247,7 +247,7 @@ test('séance oubliée : la correction est prouvée, le groupe reste ouvert faut
  assert.match(group.observed,/40320:00/);
  assert.match(group.observed,/Clôturer votre séance/);
  assert.equal(group.fix.candidateBundleSha256,sha(candidate));
- assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.6.apk');
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.7.apk');
  assert.match(group.fix.remaining,/téléphone/);
  const spec=fs.readFileSync(new URL('./emilie-session-block.spec.mjs',import.meta.url),'utf8');
  // Le spec relève l'état réel : aucune attente du défaut n'y est écrite d'avance.
@@ -286,7 +286,7 @@ test('Tabata au sol : aucun guide aquatique ne peut être résolu hors contexte 
  assert.ok(group,'le groupe doit exister');
  assert.equal(group.status,'open');
  assert.equal(group.fix.candidateBundleSha256,sha(candidate));
- assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.6.apk');
+ assert.equal(group.fix.apk,'downloads/Yanis-Fitness-Evolution-1.4.7.apk');
  // 1. Le code livré ne garde plus le repli aquatique : les deux chemins mesurés
  //    (visuel de l'étape et bloc « Consignes du mouvement ») sont conditionnés
  //    au contexte aquatique déjà résolu pour la piscine.

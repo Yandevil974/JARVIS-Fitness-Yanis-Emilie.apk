@@ -1,0 +1,132 @@
+{
+  "mode": "release-signed-new-durable-media-identity",
+  "identity": {
+    "appId": "app.yanis.fitness.evolution.home",
+    "appName": "Yanis Fitness Evolution",
+    "version": "1.4.2",
+    "versionCode": 13,
+    "certificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
+    "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+    "installation": "same package as 1.4.0, new signature: uninstall 1.4.0 then install this build, restore the JSON backup",
+    "userAuthorizedNewIdentity": true,
+    "authorizationDate": "2026-09-23",
+    "authorizationNote": "new key explicitly authorized by the user; the existing certificates are never regenerated"
+  },
+  "baseApkSha256": "30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7",
+  "apkSha256": "ad2913f9aff4817e1b32f638930ea478d63f89961cc0de7f69c48638d00baf06",
+  "apkBytes": 24909288,
+  "packagedWebSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+  "packagedWebDifference": "V 1.4.6 -> V 1.4.7: same corrections, plus five human animations are delivered for the aquatic guides that had no valid drawing; they replace the former land drawings and the former explicit gap",
+  "changedEntries": [
+    "AndroidManifest.xml",
+    "assets/public/assets/index-CBCies4k.js"
+  ],
+  "webFiles": 272,
+  "unchangedWebFiles": 271,
+  "nativeDexFiles": 9,
+  "byteIdenticalDexFiles": 9,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "alignmentVerified": true,
+  "version": "1.4.7",
+  "versionCode": 18,
+  "releaseCertificateSha256": "150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b",
+  "previousCertificateSha256": "7d6f9c8fd826b4bdcbee3e444263b2e357d60e1c3182173c6f3d03bcd37921fd",
+  "signerSha256": "ef49417931f9519fe8ccfbc3cc51caaaab0f3079a5772b7f1aa28ac0e4662cdc",
+  "stagesIncluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "approvedHomeIncluded": true,
+  "generalConversationalAiIncluded": false,
+  "deviceTested": false,
+  "externalPrivateBackupRetentionConfirmed": false,
+  "durableBackup": {
+    "committedCiphertext": "evolution/signing/evolution-media-142.encrypted.json",
+    "restoreCommand": "python3 evolution/android/signing-media.py restore --recovery-key-file <recovery-key.txt>",
+    "plaintextArchive": "downloads/Yanis-Fitness-Evolution-1.4.2-SAUVEGARDE-PRIVEE.zip (git-ignored)"
+  },
+  "forgottenWorkoutFix": {
+    "decision": "user, 23 September 2026: close the stale session automatically as partial",
+    "behaviour": "a strength session started on another day is closed as partial on load (or at the next start/timer click), keeps its own date and its completed sets, and no longer blocks the program or the guides",
+    "verifiedBy": [
+      "evolution/media/tests/emilie-session-block.spec.mjs",
+      "evolution/media/review/REVIEW-EMILIE-BLOCAGE.md"
+    ]
+  },
+  "supersedes": {
+    "apk": "downloads/Yanis-Fitness-Evolution-1.4.6.apk",
+    "reason": "same identity and corrections; this build adds the five aquatic guide animations"
+  },
+  "displayFix": {
+    "finding": "combo-step-seconds-display",
+    "behaviour": "combined-session step rows show 25 min / 1 min 30 s / 45 s instead of 1500 s; the timed value itself is unchanged",
+    "verifiedBy": [
+      "evolution/media/tests/pool-candidate.test.mjs"
+    ]
+  },
+  "tabataContextFix": {
+    "finding": "tabata-land-to-water",
+    "behaviour": "in a land Tabata, a step such as Gainage planche or Montees de genoux no longer resolves the aquatic guide (neither the step visual nor the movement advice); the same names keep their validated aquatic guide in Aqua Tabata",
+    "untouched": [
+      "names",
+      "durations",
+      "instructions",
+      "prescriptions",
+      "aquatic guides"
+    ],
+    "measured": "evolution/media/review/REVIEW-TABATA-CONTEXTE.md",
+    "verifiedBy": [
+      "evolution/media/tests/tabata-context.spec.mjs",
+      "evolution/media/tests/pool-candidate.test.mjs"
+    ]
+  },
+  "approvedCorrections": {
+    "stretchVisuals": [
+      "Pigeon assis -> /media/stretch-piriforme.jpg",
+      "Main dans le dos -> /media/stretch-triceps-coude.jpg"
+    ],
+    "aquaticGaps": [
+      "Gainage au bord (vertical)",
+      "Mobilité épaules aquatique",
+      "Mobilité hanches / chevelles",
+      "Ciseaux au bord",
+      "Talons-fesses"
+    ],
+    "rule": "image exchanged or explicit gap, never a rewritten instruction",
+    "evidence": "evolution/media/review/stretch-echanges-avant-apres.png",
+    "verifiedBy": [
+      "evolution/media/tests/stretch-media.spec.mjs",
+      "evolution/media/tests/pool-land-guides.spec.mjs"
+    ]
+  },
+  "providedAnimations": {
+    "guides": {
+      "Gainage au bord (vertical)": "/media/gainage-vertical.gif",
+      "Mobilité épaules aquatique": "/media/mobilite-epaules.gif",
+      "Mobilité hanches / chevelles": "/media/mobilite-hanches-chevelles.gif",
+      "Ciseaux au bord": "/media/ciseaux-au-bord.gif",
+      "Talons-fesses": "/media/talons-fesses.gif"
+    },
+    "format": "480 x 262, 2 images, 500 ms, même famille que les GIF aquatiques existants",
+    "replaced": "les dessins terrestres de ces cinq guides et la lacune explicite livrée en 1.4.6",
+    "untouched": [
+      "consignes",
+      "noms",
+      "durées",
+      "état enregistré"
+    ],
+    "evidence": "evolution/media/review/pool-animations-5-guides.png",
+    "verifiedBy": [
+      "evolution/media/tests/pool-land-guides.spec.mjs"
+    ]
+  },
+  "installNote": "same package AND same signature as 1.4.6/1.4.5/1.4.4/1.4.3/1.4.2: installs straight over 1.4.6 without uninstalling; coming from 1.4.0 or 1.4.1, uninstall first and restore the JSON backup"
+}

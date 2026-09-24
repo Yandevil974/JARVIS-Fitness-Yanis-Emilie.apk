@@ -11,6 +11,11 @@ export function once(text, before, after) {
   if (text.split(before).length !== 2) throw Error('Missing or ambiguous integration point: '+before.slice(0,90));
   return text.replace(before, () => after);
 }
+// Animations humaines aquatiques produites pour les guides mesures, verifiees
+// une par une en pleine image avant livraison.
+export const providedAnimations = fs.existsSync(new URL('./pool-animations-map.json', import.meta.url))
+  ? JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url))).map : {};
+
 export function readBaseline() {
   const apk = path.join(root, baseline.apk);
   if (sha(fs.readFileSync(apk)) !== baseline.apkSha256) throw Error('Wrong APK baseline');
@@ -78,7 +83,7 @@ export function integrate(source) {
   const helper = fs.readFileSync(new URL('./pool-context.mjs', import.meta.url),'utf8')
     .replace('export function createPoolMedia', 'function createPoolMedia');
   const reviewedTexts = verifyPoolTexts(source);
-  source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl,reviewedTexts:${JSON.stringify(reviewedTexts)}});\nfunction JarvisStepGuide(i,o){return o==="pool"?JarvisPoolMedia.guide(i):bg(i,o)}\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
+  source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl,reviewedTexts:${JSON.stringify(reviewedTexts)},providedAnimations:${JSON.stringify(providedAnimations)}});\nfunction JarvisStepGuide(i,o){return o==="pool"?JarvisPoolMedia.guide(i):bg(i,o)}\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
   // The pool block prescribed after the weights session is declared by its
   // block format, not by the step segment it kept from the HTML import.
   source = once(source, 'const E=bg(k.name,k.segment)',
@@ -237,6 +242,15 @@ with zipfile.ZipFile(sys.argv[1]) as z:
       if (!/^\/(media|thumbs)\/[a-f0-9]+\.(gif|webp)$/.test(file) ||
           sha(fs.readFileSync(path.join(directory,file))) !== digest) throw Error('Changed reviewed asset '+file);
     }
+  }
+  for (const [file, digest] of Object.entries(JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url))).files)) {
+    const source = path.join(root, 'evolution/media/candidate/pool-animations', path.basename(file));
+    const target = path.join(directory, file.replace(/^\//, ''));
+    fs.mkdirSync(path.dirname(target), {recursive:true});
+    fs.copyFileSync(source, target);
+    if (sha(fs.readFileSync(target)) !== digest) throw Error('Animation livree modifiee: ' + file);
+    const land = JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url))).replacedLandVisuals[file];
+    if (land) fs.rmSync(path.join(directory, land.replace(/^\//, '')), {force:true});
   }
   const bundlePath = baseline.bundle.replace('assets/public/', '');
   fs.writeFileSync(path.join(directory,bundlePath),candidate);

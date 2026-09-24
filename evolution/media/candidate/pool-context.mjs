@@ -1,7 +1,7 @@
 // Narrow aquatic context. Reviewed prescriptions come first; the legacy
 // keyword map is kept but stays explicitly unvalidated; everything else is an
 // honest gap. No profile, timer or guide is mutated.
-export function createPoolMedia({normalize, poolGuides, reviewedTexts = []}) {
+export function createPoolMedia({normalize, poolGuides, reviewedTexts = [], providedAnimations = {}}) {
   const reviewed = new Map(reviewedTexts.map(entry => [entry.text, entry]));
   // Cinq guides portent un nom aquatique mais un dessin TERRESTRE (planche sur
   // banc, elastique a sec, poulie, releves de jambes au banc, montee de genou au
@@ -10,8 +10,16 @@ export function createPoolMedia({normalize, poolGuides, reviewedTexts = []}) {
   // aquatiques du guide restent affichees, seul le dessin est retire.
   const landVisualGuides = new Set(['Gainage au bord (vertical)','Mobilité épaules aquatique',
     'Mobilité hanches / chevilles','Ciseaux au bord','Talons-fesses']);
+  // Animations humaines produites pour ces guides (meme famille que les GIF
+  // aquatiques existants : vectoriel net, humain realiste, muscles surlignes,
+  // bassin au bon niveau, 480 x 262, 2 images 500 ms). Elles sont livrees dans le
+  // paquet, donc la lacune explicite ne doit plus s'afficher pour elles.
+  const providedGuides = new Map(Object.entries(providedAnimations));
   function reviewedGuide(candidate) {
-    if (!candidate || !landVisualGuides.has(candidate.t)) return candidate;
+    if (!candidate) return candidate;
+    const provided = providedGuides.get(candidate.t);
+    if (provided) return {...candidate, img: provided, providedAnimation: true};
+    if (!landVisualGuides.has(candidate.t)) return candidate;
     return {...candidate, img: null, reviewedGap: 'land-visual-not-validated'};
   }
   function guide(name) {
