@@ -1,4 +1,45 @@
-## Dernière avancée — 1.4.5 publiée : un Tabata au sol n'affiche plus de guide aquatique (23 septembre 2026)
+## Dernière avancée — 1.4.6 publiée : deux visuels d'étirement corrigés et cinq lacunes explicites en piscine (23 septembre 2026)
+
+[Télécharger la 1.4.6](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.apk) · [consignes](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/INSTALLATION-1.4.6.md) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.apk.sha256) · [fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.fidelity.json) · [preuve étirements](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/evolution/media/review/stretch-echanges-avant-apres.png) · [release](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.4.6-evolution)
+
+**« Autorisation accordée poursuis » (23 septembre 2026)** a autorisé les corrections **déjà mesurées qui n'exigent aucune création d'image**. Deux chantiers livrés ici. La règle appliquée est celle que vous aviez fixée : **échanger l'image ou montrer une lacune explicite, jamais réécrire une consigne**.
+
+### 1. Deux visuels d'étirement qui ne montraient pas la posture décrite
+
+| Entrée | Avant | Après | Pourquoi |
+|---|---|---|---|
+| **Pigeon assis** | dessin du pigeon **au sol** | dessin **du piriforme assis** (assis, cheville croisée sur le genou opposé) | la consigne décrit la position assise ; ce dessin la montre |
+| **Main dans le dos** | **dos anatomique** (muscle surligné, pas une posture) | dessin **du coude au-dessus de la tête** (main derrière la tête, coude tiré) | le fichier ne montrait aucune posture d'étirement |
+
+Les **deux dessins utilisés existaient déjà** dans l'application : aucune création, aucune consigne, aucune durée, aucun muscle modifié. Preuve navigateur, même page, même profil : avant `[coude, dos, pigeon, piriforme]` → après `[coude, **coude**, **piriforme**, piriforme]` — le reste de la liste est **identique** (25 autres dessins inchangés). Bandeau : `evolution/media/review/stretch-echanges-avant-apres.png` ; captures pleine page : `stretch-mobilite-{avant,corrige}.png` ; test `evolution/media/tests/stretch-media.spec.mjs` (2 parcours).
+
+### 2. Cinq guides aquatiques qui affichaient un dessin terrestre
+
+`Gainage au bord (vertical)`, `Mobilité épaules aquatique`, `Mobilité hanches / chevilles`, `Ciseaux au bord`, `Talons-fesses` portaient un **dessin terrestre** (planche sur banc, élastique à sec, poulie, relevés de jambes au banc, montée de genou au mur). Ils n'affichent plus ce dessin **à aucun des trois endroits** : visuel du mouvement, bloc « Consignes du mouvement » du chrono, et **liste des étapes d'un protocole piscine** (celle-ci passait encore par la bibliothèque générale — corrigé). Une **lacune explicite** s'affiche à la place, et **toutes les consignes aquatiques restent affichées**. Rien n'est inventé, rien n'est réécrit. Test `evolution/media/tests/pool-land-guides.spec.mjs` (2 parcours : les quatre guides avec état persisté, plus le contrôle de la liste).
+
+### Vérifications
+
+- **Node 44/44** ; **suite média 37/37 (4,7 min)** sur ce bundle exact ; le test Node `stretch-media.test.mjs` compare la carte des visuels au paquet 1.4.0 et prouve qu'**aucun autre visuel n'a bougé et qu'aucun nom n'a été renommé**.
+- **État enregistré intact** : dans chaque parcours, les données du profil (étapes du chrono, séries, sessions, mesures) sont **identiques avant/après**.
+- **Groupe `tabata-land-to-water`** (1.4.5) reste vérifié : 5/5 sur le bundle, 4 échecs rejoués contre la 1.4.4 livrée.
+
+### Livrable — APK 1.4.6 signé
+
+| Élément | Valeur |
+|---|---|
+| Fichier | `downloads/Yanis-Fitness-Evolution-1.4.6.apk` (24 909 281 octets) |
+| SHA-256 | `48676e1273a4a3aea61d38d3dd08060ef753b6b8ac5be50ca919f33449556bfe` |
+| Version | 1.4.6 / code 17 · web embarqué `e372a369…` |
+| Identité | **`150e3846…`**, la même depuis la 1.4.2 ⇒ **installation par-dessus la 1.4.5, rien à désinstaller** |
+| Contrôles | v2 + v3, 1 signataire, **9/9 DEX identiques**, 271/272 fichiers web identiques, seules entrées changées = manifeste + paquet web, fichier retéléchargé comparé |
+
+### Prochaine étape précise
+
+1. **Essai téléphone** de la 1.4.6 (installation directe) : vérifier qu'un Tabata au sol n'affiche rien d'aquatique, que « Pigeon assis » et « Main dans le dos » montrent la bonne posture, et qu'une étape de piscine sans dessin correspondant affiche la lacune explicite **avec** ses consignes.
+2. **Décisions encore nécessaires avant toute création d'image** : règle de style (cadrage, trait, couleurs, fond) ; les **quatre écarts d'étirement restants** (mollet en escalier, adduction debout, mains croisées derrière le dos, fléchisseurs de l'avant-bras) qui n'ont **aucun** dessin correspondant dans le pack ; les **34 noms de Tabata au sol** sans démonstration.
+3. **Audit : 51 groupes ouverts**, aucun fermé silencieusement. **IA conversationnelle toujours en dernier.** Avertir avec 🚩 avant la limite de contexte.
+
+## Étape précédente — 1.4.5 publiée : un Tabata au sol n'affiche plus de guide aquatique (23 septembre 2026)
 
 [Télécharger la 1.4.5](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/1701943/downloads/Yanis-Fitness-Evolution-1.4.5.apk) · [consignes](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/1701943/downloads/INSTALLATION-1.4.5.md) · [empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/1701943/downloads/Yanis-Fitness-Evolution-1.4.5.apk.sha256) · [fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/1701943/downloads/Yanis-Fitness-Evolution-1.4.5.fidelity.json) · [fiche avant/après](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/1701943/evolution/media/review/REVIEW-TABATA-CONTEXTE.md)
 
@@ -437,6 +478,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 
 ## 6. Message court à coller dans un nouveau chat
 
-> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images, sans tête inversée, mauvaise posture ni mauvais matériel. Conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique ; en contexte terre, jamais de guide aquatique. **La 1.4.5 est publiée** (`4c75fa67…` : piscine, séance oubliée clôturée en « partielle », durées lisibles, Tabata au sol sans guide aquatique — identité durable `150e3846…`, installation directe par-dessus la 1.4.4) ; c’est le seul APK à installer, la 1.4.1 est morte. Le candidat cumulatif est `evolution/media/candidate/` (**bundle `6fbd242a…`**, Node **42/42**, suite média **33/33**, parcours Tabata 5/5 et 4 échecs rejoués contre la 1.4.4). Les **79 noms proches** (`review/alias-overlap-review.json`) et les **16 dessins d’étirement** (`review/stretch-assets-review.json`) sont revus ; **51 groupes d’anomalies restent ouverts**, aucun n’est fermé sans confirmation. **Avant toute création visuelle, attends la règle de style et les décisions listées en tête de `PASSATION.md`.** Continue dans ce chat tant que possible ; actualise ET présente la passation à chaque étape, puis précise la suivante ; avertir avec 🚩 avant la limite de contexte.
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images, sans tête inversée, mauvaise posture ni mauvais matériel. Conserver les visuels corrects. Règle constante : **échanger l’image ou montrer une lacune explicite, jamais réécrire une consigne** ; en récupération de nage fractionnée, aucun vélo/elliptique ; en contexte terre, jamais de guide aquatique. **La 1.4.6 est publiée** (`48676e12…` : piscine, séance oubliée clôturée, durées lisibles, Tabata au sol sans guide aquatique, deux visuels d’étirement corrigés, cinq lacunes explicites en piscine — identité durable `150e3846…`, installation directe par-dessus la 1.4.5). C’est le seul APK à installer. Le candidat cumulatif est `evolution/media/candidate/` (**bundle `e372a369…`**, Node **44/44**, suite média **37/37**). Les **79 noms proches** (`review/alias-overlap-review.json`) et les **16 dessins d’étirement** (`review/stretch-assets-review.json`) sont revus ; **51 groupes restent ouverts**, aucun n’est fermé sans confirmation. **Avant toute création visuelle, attends la règle de style et les décisions listées en tête de `PASSATION.md`** (il reste quatre écarts d’étirement sans dessin correspondant et 34 noms de Tabata au sol). Continue dans ce chat tant que possible ; actualise ET présente la passation à chaque étape ; avertir avec 🚩 avant la limite.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.
