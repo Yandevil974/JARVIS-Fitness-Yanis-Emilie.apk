@@ -1,3 +1,42 @@
+## En cours — 24 septembre 2026 : « oui complète tous les éléments manquants »
+
+> « oui complète tous les éléments manquants »
+> Ordre de livraison choisi : **tout en une seule version**. Manques à traiter : **tous** (Tabata au sol, variantes d'alias sans dessin, étirements, récupérations).
+
+### 1. Un défaut grave trouvé dans la 1.4.7 livrée — et corrigé
+
+En vérifiant ce que l'application reçoit réellement, la mesure est tombée : **la 1.4.7 publiée ne contient pas les cinq animations qu'elle affiche.** Le script de construction ne recopiait que le paquet web ; les fichiers `gainage-vertical.gif`, `mobilite-epaules.gif`, `mobilite-hanches-chevelles.gif`, `ciseaux-au-bord.gif` et `talons-fesses.gif` n'étaient **pas dans l'APK**. Sur votre téléphone, ces cinq guides montrent donc une **image cassée** — les tests de l'époque servaient le dossier de travail, où les fichiers existaient.
+
+**Conséquence immédiate : n'installez pas la 1.4.7.**
+
+Correctif (version de travail 1.4.8) :
+- la construction recopie **toute** l'arborescence web candidate, script **et** médias ;
+- elle **refuse** désormais de produire un APK si un chemin `/media`, `/thumbs` ou `/team` référencé par le script livré est absent de l'archive ;
+- un test dédié (`media-inventory.test.mjs`) mesure **l'APK**, reproduit le défaut sur la 1.4.7 (les cinq mêmes fichiers) et exige la présence **et** l'empreinte des cinq animations dans la 1.4.8 ;
+- APK de contrôle déjà construit : `downloads/Yanis-Fitness-Evolution-1.4.8.apk`, 25 270 165 octets, SHA-256 `4664a9010e451c56e1b9a7ddb95e4c33105ac76d0edfc2b3eb4220f7356fb` — il ne contient **que** ce correctif, il sera remplacé par la version complète.
+
+### 2. Tabata au sol : dix mouvements sur trente-quatre déjà animés
+
+Les **38 mouvements** du générateur au sol ont été listés depuis l'application, puis dessinés dans la **famille exacte** de vos GIF (mesurée image par image : `480 × 262`, **2 images**, **500 ms**, fond blanc et sol gris clair, humain réaliste, short bleu, **muscles surlignés orange**). Lot A livré :
+
+| Mouvement | Animation | Mouvement | Animation |
+|---|---|---|---|
+| Jumping jacks | `tabata-land-jumping-jacks.gif` | Burpees simplifiés | `tabata-land-burpees-simplifies.gif` |
+| Squats | `tabata-land-squats.gif` | Relevés de jambes | `tabata-land-releves-de-jambes.gif` |
+| Pompes | `tabata-land-pompes.gif` | Crunch | `tabata-land-crunch.gif` |
+| Mountain climbers | `tabata-land-mountain-climbers.gif` | Russian twist | `tabata-land-russian-twist.gif` |
+| Fentes alternées | `tabata-land-fentes-alternees.gif` | Gainage planche | `tabata-land-gainage-planche.gif` |
+
+**Règle de contexte, jamais mélangée** : ces animations ne s'affichent que dans un **Tabata au sol**. En piscine, en Aqua Tabata, en étirement, à l'échauffement ou au repos, rien ne change : les guides aquatiques gardent la main. Les mouvements non encore dessinés continuent d'afficher l'écran actuel — **aucun visuel générique inventé**, aucun nom, aucune durée, aucune consigne modifiée.
+
+**Outil** : `evolution/media/tools/panels-to-gif.py` fabrique l'animation depuis une planche de deux positions, refuse un cadrage qui touche un bord (tête ou pied coupé) et écrit exactement le format mesuré.
+
+**Contrôles** : Node **54/54**, dont 5 nouveaux tests qui évaluent le module livré : les 38 noms sont connus, chaque animation se résout **au sol et nulle part ailleurs**, aucun autre mouvement ne reçoit d'image, les GIF ont la bonne taille et la bonne empreinte, et le générateur d'origine est intact.
+
+**Reste à faire (même méthode, lots suivants)** : 24 mouvements (haut du corps, gainage, cardio, bas impact), puis les variantes d'alias sans dessin fidèle, les quatre étirements refusés en famille C — à refaire dans cette famille-ci — et les récupérations génériques. La version complète ne sera publiée qu'à la fin, comme vous l'avez demandé.
+
+**Note technique** : l'espace de travail a été réinitialisé en cours de route ; l'outillage (Pillow, java, apksigner, tests) se reconstruit maintenant en une commande versionnée : `bash evolution/media/setup-tools.sh`. L'identité de signature a été restaurée depuis la sauvegarde chiffrée **avant** toute construction ; aucun APK n'est produit sans elle.
+
 ## Dernière avancée — 1.4.7 publiée : cinq animations humaines aquatiques, dans le style de vos GIF existants (24 septembre 2026)
 
 > « il y a des images humaines animées manquantes. corrige cela stp en cohérence avec les autres gif stp »
