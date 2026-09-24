@@ -29,7 +29,7 @@ modifiée, ni remplacée.
   chaque animation reste explicitement associée à son exercice (aucune
   substitution inter-domaine, jamais).
 - **Direction visuelle V1** : page « Visuels » avec exemples homme/femme au
-  visage créé, comparaison GIF/MP4 pour un curl haltères, choix mémorisé dans
+  visage créé, comparaison GIF/MP4 pour des élévations latérales sur banc incliné, choix mémorisé dans
   `preferences.visualStyle` / `preferences.visualFormat`, et export ZIP
   téléchargeable (`public/visuals/jarvis-visual-preview.zip`). Les animations
   humaines créées affichent désormais un visage cohérent avec le personnage.
