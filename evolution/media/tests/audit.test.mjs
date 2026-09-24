@@ -71,6 +71,13 @@ test('findings reference real catalog entries and cover every requested category
   for (const id of f.exercises||[])assert.ok(ids.has(id),`${f.id}: ${id}`);
   for (const name of f.guides||[])assert.ok(guides.has(name),`${f.id}: ${name}`);
   if(f.path) assert.ok(assetMap.has(f.path),f.id);
-  assert.equal(f.status,'open');
+  // Un groupe reste ouvert par defaut. Il ne peut etre clos que par une decision
+  // explicite de l'utilisateur, citee mot pour mot, avec son motif ecrit.
+  assert.ok(['open','closed-by-user-decision'].includes(f.status),f.id);
+  if(f.status==='closed-by-user-decision'){
+   assert.equal(f.userDecision.authority,'utilisateur',f.id);
+   assert.ok((f.userDecision.verbatim||'').length>40,f.id);
+   assert.ok((f.closedReason||'').length>20,f.id);
+  }
  }
 });

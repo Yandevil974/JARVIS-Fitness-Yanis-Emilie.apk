@@ -227,6 +227,15 @@
           "evolution/media/tests/pool-land-guides.spec.mjs"
         ],
         "remaining": "Aucun dessin aquatique correspondant n'existe dans le pack : decision de style requise avant toute creation."
+      },
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
       }
     },
     {
@@ -278,6 +287,15 @@
           "1.4.5": "aucune image aquatique ni consigne de bassin en contexte terre ; guide aquatique conservé à l’identique en Aqua Tabata"
         },
         "specProof": "5 réussis sur le bundle corrigé ; 4 échecs / 1 réussite rejoués contre la 1.4.4 livrée (les 4 échecs sont les cas au sol)"
+      },
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
       }
     },
     {
@@ -287,7 +305,16 @@
       "action": "Compléter les 38 mouvements, avec libellés G/D et versions douces respectés; contrôler les six mouvements du générateur aqua.",
       "status": "open",
       "instruction": "Instruction : 34 des 38 noms au sol ne résolvent aucun média d’exercice ; l’écran montre alors la photo générique de récupération, ce qui n’est pas une démonstration correspondante. Aucun des 34 dessins n’existe dans le pack : correction impossible sans création (règle de style). La règle « jamais un visuel générique à la place d’un exercice » s’appliquerait alors comme pour la piscine (lacune explicite).",
-      "instructionDate": "2026-09-23"
+      "instructionDate": "2026-09-23",
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
+      }
     },
     {
       "id": "stretch-pigeon",
@@ -317,6 +344,15 @@
           "evolution/media/tests/stretch-media.spec.mjs"
         ],
         "remaining": "Confirmation visuelle sur telephone."
+      },
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
       }
     },
     {
@@ -347,6 +383,15 @@
           "evolution/media/tests/stretch-media.spec.mjs"
         ],
         "remaining": "Confirmation visuelle sur telephone."
+      },
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
       }
     },
     {
@@ -360,7 +405,16 @@
       "action": "Remplacer sans confondre avec l'autre étirement des mollets.",
       "status": "open",
       "instruction": "Instruction faite : le dessin montre un étirement au mur, pas le talon sous le niveau d’une marche. Aucun dessin correspondant dans le pack. Décision : lacune explicite ou création après règle de style.",
-      "instructionDate": "2026-09-23"
+      "instructionDate": "2026-09-23",
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
+      }
     },
     {
       "id": "stretch-hip-target",
@@ -373,7 +427,16 @@
       "action": "Respecter la posture et le groupe visé; ne pas valider sur le seul mot adduction.",
       "status": "open",
       "instruction": "Instruction faite : le dessin montre une fente latérale (adducteurs surlignés) au lieu du croisement de jambes debout décrit ; le muscle mis en avant n’est pas le moyen fessier/TFL annoncé. Le dessin « fléchisseur de hanche » du pack ne correspond pas non plus. Décision : lacune explicite ou création.",
-      "instructionDate": "2026-09-23"
+      "instructionDate": "2026-09-23",
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
+      }
     },
     {
       "id": "stretch-other-postures",
@@ -389,7 +452,16 @@
       "action": "Examiner/remplacer individuellement sans modifier les consignes d'entraînement pour justifier une image.",
       "status": "open",
       "instruction": "Instruction faite le 23 septembre 2026 : 16 dessins d’étirement relus en pleine image (review/stretch-assets-review.json, planche review/stretch-assets-16.png). 10 conformes, 6 écarts mesurés. Deux écarts sont corrigibles avec des visuels DÉJÀ présents dans le pack : « main dans le dos » est illustré par un simple dos anatomique alors que le dessin « coude au-dessus de la tête » montre la posture ; « pigeon assis » est illustré par un pigeon au sol alors que le dessin « piriforme assis » montre la position assise cheville sur le genou. Les quatre autres (mollet en escalier, adduction debout, mains croisées derrière le dos, fléchisseurs de l’avant-bras) n’ont aucun dessin correspondant dans le pack. Décision demandée : appliquer ces deux échanges d’images (aucune consigne réécrite) ou les laisser en écart.",
-      "instructionDate": "2026-09-23"
+      "instructionDate": "2026-09-23",
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
+      }
     },
     {
       "id": "pool-recovery-to-cardio",
@@ -765,22 +837,42 @@
     {
       "id": "style-family-rule",
       "scope": "style",
-      "status": "open",
+      "status": "closed-by-user-decision",
       "observed": "Trois familles de visuels coexistent dans le pack livré, mesurées : A fil de fer noir sur blanc 300×300, 12 images, trait 3 px, marges 43/30/25/15 (36 dessins) ; B rendu réaliste plein cadre, 2 images, ≈128 couleurs, formats 440×240 / 246×440 / 403×440 / 480×262 (40 dessins) ; C SVG animé intégré, viewBox 120×100, fond #0a0e1a, boucle CSS 3 s (144 dans le paquet web).",
       "action": "Faire choisir la famille par contexte avant toute création, puis appliquer le gabarit mesuré de cette famille.",
       "instruction": "Règle de style mesurée dans le pack (review/REGLE-STYLE-MESUREE.md) et non inventée : un nouveau visuel rejoint la famille du contexte, jamais une quatrième. Décision attendue de l'utilisateur : famille des 34 Tabata au sol et des 5 guides aquatiques (C recommandée pour l'écran sombre), priorité de production, et autorisation d'un premier lot témoin avant toute production en série.",
       "instructionDate": "2026-09-23",
-      "evidence": "evolution/media/review/REGLE-STYLE-MESUREE.md + STYLE-METRICS.json + GAPS-SANS-DESSIN.json"
+      "evidence": "evolution/media/review/REGLE-STYLE-MESUREE.md + STYLE-METRICS.json + GAPS-SANS-DESSIN.json",
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
+      },
+      "closedReason": "Décision de l'utilisateur du 24 septembre 2026 : famille C refusée, aucune création d'image. Le groupe n'attend plus de décision de style."
     },
     {
       "id": "gaps-without-any-faithful-drawing",
       "scope": "transverse",
-      "status": "open",
+      "status": "closed-by-user-decision",
       "observed": "Mesure : 76 dessins servent fidèlement 95 exercices (exact=true) ; 114 exercices affichent le dessin d'une autre variante. Pour les variantes prescrites des 27 écarts mesurés (élastique, poids du corps, concentration, prise serrée, Zottman, chin-up, banc Scott, marchées, assis câble, 45°), la recherche dans les 76 dessins FIDÈLES ne trouve aucun équivalent. Aucun des 4 écarts d'étirement restants n'a d'équivalent non plus, ni les 34 noms de Tabata au sol.",
       "action": "Consigner que ces corrections exigent une création : aucune ne peut être obtenue par échange de visuel existant.",
       "instruction": "Documenté dans review/GAPS-SANS-DESSIN.json. Décision de style et autorisation de création requises ; en attendant, ces groupes restent ouverts et rien n'est inventé.",
       "instructionDate": "2026-09-23",
-      "evidence": "evolution/media/review/GAPS-SANS-DESSIN.json"
+      "evidence": "evolution/media/review/GAPS-SANS-DESSIN.json",
+      "userDecision": {
+        "date": "2026-09-24",
+        "authority": "utilisateur",
+        "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+        "decision": "Famille C REFUSÉE. Aucune image de la famille C dans l'application. Les quatre écarts d'étirement restants CONSERVENT le visuel livré : aucune création.",
+        "consequence": "Plus aucune création d'image n'est autorisée. Seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles, et uniquement sur décision explicite.",
+        "withdrawn": "Proposition retirée du dépôt : evolution/media/candidate/stretch-witness-mollet-escalier.svg et le montage review/stretch-temoin-mollet-escalier.png.",
+        "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
+      },
+      "closedReason": "Décision de l'utilisateur du 24 septembre 2026 : les visuels livrés sont conservés, aucune création d'image n'est autorisée."
     }
   ]
 }

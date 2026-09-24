@@ -1,4 +1,27 @@
-## Dernière avancée — règle de style MESURÉE dans le pack + inventaire des lacunes sans dessin (23 septembre 2026)
+## ⛔ Dernière avancée — décision utilisateur : famille C refusée, les visuels livrés sont conservés (24 septembre 2026)
+
+**Ce que vous avez dit, et ce qui a été appliqué immédiatement :**
+
+> « la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c »
+
+1. **Famille C définitivement refusée** — aucune image de cette famille dans l'application, à aucun endroit.
+2. **La proposition de témoin est retirée du dépôt** (le SVG et son montage comparatif) : vous ne verrez plus cette image, ni dans le dépôt, ni dans l'app, ni dans l'aperçu (il est fermé).
+3. **Les quatre écarts d'étirement conservent le visuel livré** : mollet en escalier, adduction debout, mains croisées derrière le dos, fléchisseurs de l'avant-bras. **Aucune création.**
+4. **Aucune création d'image n'est autorisée**, ni pour le Tabata (34 mouvements), ni pour la piscine (5 guides), ni pour la musculation (27 variantes) : les visuels livrés restent tels quels.
+5. **Seuls des échanges entre dessins déjà livrés** (familles A et B) restent possibles, sur décision explicite — c'est le principe appliqué dans la 1.4.6 pour « Pigeon assis » et « Main dans le dos », qui ne sont pas concernés par ce refus.
+6. **L'APK livré ne change pas** : la **1.4.6** (`48676e12…`) reste la seule version à installer. Sa finesse visuelle est exactement celle que vous avez validée en la refusant : rien n'a été ajouté à l'application.
+
+**Traçabilité de la décision** : vos mots sont enregistrés tels quels dans `evolution/media/review/findings.json` (`userDecision`, 10 groupes concernés), dans `evolution/media/candidate/validation.json` et en tête de `evolution/media/review/REGLE-STYLE-MESUREE.md`. Deux groupes qui n'attendaient plus qu'une décision de style sont **clos par décision explicite** (jamais silencieusement) : `style-family-rule` et `gaps-without-any-faithful-drawing`. **51 groupes restent ouverts.**
+
+**Contrôles** : Node **46/46**, dont un test qui vérifie que les deux fichiers de la proposition **ne sont plus dans le dépôt**, que la décision est citée mot pour mot, et qu'aucun groupe ne peut être clos sans décision utilisateur nominative.
+
+### Prochaine étape précise
+
+1. **Essai téléphone de la 1.4.6** : c'est désormais le seul chantier en attente de vous — installer par-dessus la 1.4.5, vérifier qu'un Tabata au sol n'affiche rien d'aquatique, que « Pigeon assis » et « Main dans le dos » montrent la bonne posture, et qu'une étape de piscine sans dessin correspondant affiche la lacune explicite **avec** ses consignes.
+2. **Audit visuel** : je continue la relecture des 94 dessins livrés **sans rien créer**, pour vérifier ceux qui n'ont pas encore été relus en pleine image, et je documente chaque écart mesuré sans proposer de dessin.
+3. **IA conversationnelle toujours en dernier.** Avertir avec 🚩 avant la limite de contexte.
+
+## Étape précédente — règle de style mesurée dans le pack (23 septembre 2026)
 
 **« Autorisation accordée » exécutée, mais avec un arrêt net et assumé devant la création d'images** : vous avez exigé une règle de style avant toute nouvelle image, et aucune décision de ce type n'était encore prise. Plutôt que d'inventer un style, je l'ai **mesuré dans l'application livrée**. Rien n'a été créé, aucun APK n'a donc changé.
 
@@ -29,19 +52,6 @@ Inventaire complet, ligne par ligne : `evolution/media/review/GAPS-SANS-DESSIN.j
 - Les mesures sont **figées par un test** (`evolution/media/tests/style-rule.test.mjs`) : les 36 + 40 + 144 sont vérifiés dans le paquet, la règle écrite doit contenir les valeurs mesurées, et le groupe de décision doit rester **ouvert**. Node **46/46**.
 - Deux groupes ajoutés : `style-family-rule` (décision de style) et `gaps-without-any-faithful-drawing` (lacunes sans dessin fidèle) → **53 groupes ouverts**.
 - **Septième effacement d'espace de travail** en début d'étape : restauré depuis le dépôt, Chromium et l'outillage reprovisionnés, **rien perdu**.
-
-### Lot témoin n° 1 livré pour votre jugement (23 septembre 2026)
-
-Vos trois choix sont enregistrés : **famille C** (SVG animé intégré, fond sombre, boucle 3 s), **un lot témoin d'un seul visuel avant toute production**, **priorité aux quatre étirements**.
-
-Visuel témoin proposé — **« Mollet en escalier »**, le plus net des quatre écarts d'étirement : le dessin livré montre un étirement **au mur**, alors que la consigne demande **le talon sous le niveau d'une marche**.
-
-- **Rendu** : `evolution/media/review/stretch-temoin-mollet-escalier.png` (à gauche le dessin livré, à droite la proposition).
-- **Aperçu vivant, animé, à la taille réelle (300 px)** : page `Aperçu du lot témoin` (port 5190) — dessin livré à gauche, proposition animée à droite ; page locale : `.cache/witness-preview/index.html`.\n- **Source** : `evolution/media/candidate/stretch-witness-mollet-escalier.svg` — SVG autonome, **même gabarit que les 144 animations déjà intégrées** (`viewBox 0 0 120 100`, fond `#0a0e1a`, peau `#e8b896` / `#f0c8a8`, vêtement `#2563eb`, cheveux `#1a1a2e`), animation **3 s en boucle** : le talon descend sous l'arête et remonte.
-- **Aucune consigne réécrite**, aucune installation, aucun APK : c'est une **proposition**, pas une livraison. Le bloc `fix` correspondant n'est créé qu'après votre verdict.
-- **Ce que je vérifierai avant les 69 autres** si vous validez : lisibilité à 300 px de large (taille réelle dans l'application), position du talon sous l'arête, absence de membre qui traverse le corps, animation fluide en boucle, planche avant/après, parcours de test qui échoue sur la version livrée.
-
-**Dites-moi seulement : à garder tel quel, à corriger (quoi), ou à abandonner.**
 
 ### Prochaine étape précise — elle dépend de vous
 
@@ -528,8 +538,6 @@ Branche contenant les travaux : **`arena/01a0bd57-jarvis-fitness-yanis-emilie-ap
 - Garder les alertes de sécurité/stockage et les séances/chronos en cours prioritaires, même si un orbe est ajouté.
 - Annoncer la prochaine étape après chaque étape terminée. **IA générale en dernier**.
 
-## 6. Message court à coller dans un nouveau chat
-
-> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit et les corrections des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. Tous les exercices de musculation, échauffement, piscine, Tabata et étirements doivent avoir un visuel fidèle ; contrôler toutes les images, sans tête inversée, mauvaise posture ni mauvais matériel. Conserver les visuels corrects. Règle constante : **échanger l’image ou montrer une lacune explicite, jamais réécrire une consigne** ; en récupération de nage fractionnée, aucun vélo/elliptique ; en contexte terre, jamais de guide aquatique. **La 1.4.6 est publiée** (`48676e12…` : piscine, séance oubliée clôturée, durées lisibles, Tabata au sol sans guide aquatique, deux visuels d’étirement corrigés, cinq lacunes explicites en piscine — identité durable `150e3846…`, installation directe par-dessus la 1.4.5). C’est le seul APK à installer. Le candidat cumulatif est `evolution/media/candidate/` (**bundle `e372a369…`**, Node **44/44**, suite média **37/37**). Les **79 noms proches** (`review/alias-overlap-review.json`) et les **16 dessins d’étirement** (`review/stretch-assets-review.json`) sont revus ; **51 groupes restent ouverts**, aucun n’est fermé sans confirmation. **Avant toute création visuelle, attends la règle de style et les décisions listées en tête de `PASSATION.md`** (il reste quatre écarts d’étirement sans dessin correspondant et 34 noms de Tabata au sol). Continue dans ce chat tant que possible ; actualise ET présente la passation à chaque étape ; avertir avec 🚩 avant la limite.
+> Lis `PASSATION.md` et `evolution/media/README.md`, puis poursuis l’audit des visuels de Yanis Fitness Evolution en continuité à l’identique de l’application complète 1.4.0 et du style validé. Ne repars pas de zéro et ne perds aucune fonction ni donnée. **Décision ferme de l’utilisateur (24 septembre 2026) : AUCUNE création d’image, la famille C est refusée, les visuels livrés sont conservés** — l’audit doit donc se faire uniquement par relecture, mesure et échange de dessins déjà livrés si l’utilisateur le demande explicitement. Tous les exercices doivent avoir un visuel fidèle ; contrôler les images, sans tête inversée, mauvaise posture ni mauvais matériel ; conserver les visuels corrects. En récupération de nage fractionnée, aucun vélo/elliptique ; en contexte terre, jamais de guide aquatique ; jamais réécrire une consigne. **La 1.4.6 est publiée** (`48676e12…` : piscine, séance oubliée clôturée, durées lisibles, Tabata au sol sans guide aquatique, deux visuels d’étirement échangés, cinq lacunes explicites en piscine — identité durable `150e3846…`, installation directe par-dessus la 1.4.5). C’est le seul APK à installer. Le candidat cumulatif est `evolution/media/candidate/` (**bundle `e372a369…`**, Node **46/46**). **51 groupes ouverts**, deux clos par décision explicite citée mot pour mot. Continue dans ce chat tant que possible ; actualise ET présente la passation à chaque étape ; avertir avec 🚩 avant la limite.
 
 Si une validation ou des corrections sont données après cette passation, mettre à jour ce document avec les mots exacts de l’utilisateur et les éventuelles réserves avant de démarrer l’intégration.

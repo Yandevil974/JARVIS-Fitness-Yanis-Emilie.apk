@@ -31,10 +31,23 @@ test('la regle ecrite correspond aux mesures et reste a valider',()=>{
  const findings=read('findings.json').findings;
  const g=findings.find(f=>f.id==='style-family-rule');
  assert.ok(g,'le groupe de decision de style doit exister');
- assert.equal(g.status,'open'); // rien n'est cree sans cette validation
- const gaps=read('GAPS-SANS-DESSIN.json');
- assert.equal(gaps.alias.total,27);
- assert.ok(gaps.tabataAuSol.sansDemonstrationDediee>=34);
- assert.equal(gaps.alias.sansDessinFideleDeLaVariante>0,true);
- assert.match(gaps.conclusion,/exigent une création/);
+ // Decision utilisateur du 24 septembre 2026 : famille C refusee, aucune creation.
+ assert.equal(g.status,'closed-by-user-decision');
+ assert.match(g.userDecision.verbatim,/je ne veux pas d'image de la famille c/);
+ assert.match(g.closedReason,/famille C refusée/);
+ // Le document porte la decision en tete et ne recommande plus de creation.
+ assert.match(doc,/DÉCISION DE L'UTILISATEUR — 24 septembre 2026 : famille C REFUSÉE/);
+ assert.match(doc,/Aucune création d'image n'est autorisée/);
+ // La proposition retiree ne doit plus exister dans le depot, ni comme source,
+ // ni comme montage : l'utilisateur ne veut aucune image de la famille C.
+ for(const gone of ['stretch-witness-mollet-escalier.svg','stretch-temoin-mollet-escalier.png']){
+  assert.equal(fs.existsSync(new URL('../candidate/'+gone,import.meta.url)),false,'source encore presente : '+gone);
+  assert.equal(fs.existsSync(new URL('../review/'+gone,import.meta.url)),false,'montage encore present : '+gone);
+ }
+ // Toute cloture par decision cite la decision et refuse la famille C.
+ for(const g2 of findings.filter(f=>f.status==='closed-by-user-decision')){
+  assert.equal(g2.userDecision.authority,'utilisateur');
+  assert.match(g2.userDecision.decision,/Famille C REFUSÉE/);
+  assert.match(g2.closedReason,/famille C refusée|aucune création d'image/i);
+ }
 });

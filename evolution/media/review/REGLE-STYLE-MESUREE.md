@@ -1,5 +1,19 @@
 # Règle de style — mesurée dans le pack livré (23 septembre 2026)
 
+## ⛔ DÉCISION DE L'UTILISATEUR — 24 septembre 2026 : famille C REFUSÉE
+
+> « la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) … on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c »
+
+Conséquences, appliquées immédiatement :
+
+1. **Aucune image de la famille C** dans l'application, à aucun endroit.
+2. **Les quatre écarts d'étirement restants conservent le visuel livré** : mollet en escalier, adduction debout, mains croisées derrière le dos, fléchisseurs de l'avant-bras. Aucune création.
+3. **Aucune création d'image n'est autorisée** — ni Tabata, ni piscine, ni musculation. Les mouvements sans démonstration dédiée gardent le visuel livré.
+4. **Seuls des échanges entre dessins déjà livrés** (familles A et B) restent possibles, et uniquement sur décision explicite. C'est ce qui a été fait dans la 1.4.6 pour « Pigeon assis » et « Main dans le dos ».
+5. La proposition de témoin (SVG famille C pour « Mollet en escalier ») est **retirée du dépôt**.
+
+Le reste de ce document reste la **mesure** du pack existant ; il ne propose plus de création.
+
 Document de travail à valider. **Rien n'a été créé.** Toutes les valeurs ci-dessous
 sont **mesurées** sur le paquet 1.4.0 (137 ressources, 76 dessins utilisés par les
 209 exercices) et sur le paquet web livré. Mesures détaillées : `STYLE-METRICS.json`.
@@ -15,7 +29,7 @@ sont **mesurées** sur le paquet 1.4.0 (137 ressources, 76 dessins utilisés par
 Les trois familles **coexistent déjà** dans l'application : ce ne sont pas des
 propositions, ce sont les styles réellement livrés.
 
-## Règle proposée (à valider, corriger ou remplacer)
+## Règle mesurée (le choix de création est refusé : voir la décision en tête)
 
 1. **Un nouveau visuel rejoint la famille du contexte**, jamais une quatrième :
    - **Tabata** (écran de chrono sombre, 34 mouvements sans démonstration) → famille **C**, celle des animations déjà intégrées à l'interface ;
@@ -29,11 +43,11 @@ propositions, ce sont les styles réellement livrés.
 
 ## Ce que la règle ne décide pas (votre choix)
 
-- **Famille A ou C** pour les cinq guides aquatiques et les 34 mouvements de Tabata : C suit le thème sombre du chrono, A est le style « bibliothèque ». Je recommande **C** pour le Tabata (l'écran est sombre) et **C** aussi pour la piscine (cohérence avec les guides aquatiques existants, qui sont des GIF clairs sur fond sombre — à trancher).
+- **Famille A ou C** pour les cinq guides aquatiques et les 34 mouvements de Tabata : **tranché le 24 septembre 2026 — ni l'une ni l'autre, aucune création**.
 - **Priorité de production**, si création autorisée : (1) les 4 étirements, (2) les 5 guides piscine, (3) les 34 Tabata, (4) les 27 variantes de musculation.
 - **Programme de contrôle** : pour toute création, une **planche avant/après** en pleine image, un parcours de test qui échoue sur la version livrée et réussit sur la nouvelle, et la mention explicite « non validé sur téléphone » tant que l'essai réel n'a pas eu lieu.
 
-## Volumétrie honnête
+## Volumétrie, conservée pour mémoire (aucune production autorisée)
 
 | Manque | Nombre | Famille visée | Effort |
 |---|---|---|---|

@@ -371,5 +371,18 @@
     "packagedWebSha256": "e372a369688d924b242d9f269d2293f462b9a2e89fd1843da405fd1055d65292",
     "installsOver": "1.4.5 sans désinstallation",
     "deviceTested": false
+  },
+  "userDecision20260924": {
+    "verbatim": "la famille c est nulle en terme de rendu ne change rien, garde comme c'était AVANT — dessin livré (1.4.6) ; on est en train d'enlaidir l'application. je ne veux pas d'image de la famille c",
+    "familyC": "refusée — aucune image de cette famille dans l'application",
+    "kept": "les quatre écarts d'étirement restants conservent le visuel livré ; les 34 mouvements de Tabata gardent le visuel livré ; les cinq guides aquatiques gardent la lacune explicite livrée en 1.4.6",
+    "creation": "aucune création d'image autorisée ; seuls des échanges entre dessins déjà livrés (familles A et B) restent possibles sur décision explicite",
+    "withdrawn": [
+      "evolution/media/candidate/stretch-witness-mollet-escalier.svg",
+      "evolution/media/review/stretch-temoin-mollet-escalier.png"
+    ],
+    "delivered": "downloads/Yanis-Fitness-Evolution-1.4.6.apk — inchangé, seule version à installer",
+    "groupsClosed": 2,
+    "groupsStillOpen": 51
   }
 }
