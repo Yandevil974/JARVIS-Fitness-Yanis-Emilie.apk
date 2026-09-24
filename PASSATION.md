@@ -19,9 +19,45 @@ Cette version contient **tous les visuels manquants du premier lot** (Tabata au 
 
 La 1.4.8 est livrée et vérifiée (64/64 tests, signature `150e3846…`) ; il restait à refaire 2 animations de variantes, en produire 3, les câbler et reconstruire une version complète, votre essai sur téléphone étant la seule acceptation encore en attente.
 
-### ⛔ Bloquant : la photo n'est pas arrivée
+### ✅ La photo est arrivée — 24 septembre 2026, « Jai mis l'image dans github a l'instant »
 
-Le message ne contenait **aucune pièce jointe** (rien dans l'espace de travail non plus). **Aucune image n'a donc été générée** : produire des GIF dans un style deviné aurait gaspillé des images et risqué un rendu que vous n'avez pas choisi. **Renvoyez la photo** et la production démarre au tour suivant.
+`Screenshot_20260905_122043_Facebook(1).jpg` (1054 × 1885, à la racine du dépôt, votre commit `afbfc461`, rapatrié sur cette branche en `1b75393`).
+
+Style relevé sur la photo, et désormais la règle pour toutes les images : personnage musculaire en **matériau blanc brillant** (porcelaine/argile), **muscles très dessinés**, **fond de studio gris très sombre** avec éclairage doux par le haut, sol à peine plus foncé, ombre portée douce, short et baskets noirs, **muscles travaillés en vert citron**. Le cadre de la photo est **portrait** (rapport 0,559).
+
+### 🚩 À savoir : je ne vois pas les images dans cette session
+
+Je n'ai **pas de vision** sur les fichiers : je ne peux donc pas juger un rendu à l'œil. Je vérifie autrement, et je le dis plutôt que de prétendre :
+
+* **par la mesure** — `planche-style.py --check` compte les personnages de chaque case, mesure leur cadre, leurs marges, leur échelle, et compare les cases entre elles ;
+* **par un rendu en texte** (`evolution/media/refonte/ascii.py`) qui transforme une image en caractères : j'y lis la silhouette, la position des membres et le cadrage.
+
+Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement est beau ou parfaitement juste**. **La validation visuelle du lot témoin est donc la vôtre** : je vous montre les images en pleine taille avant toute série.
+
+### Lot témoin produit (1 mouvement, à valider)
+
+| | |
+|---|---|
+| Mouvement | **curl marteau assis** (salle, haltères, banc plat) |
+| Planche | `evolution/media/refonte/planches/curl-marteau-assis.png` (1376 × 768) |
+| Rendu | `evolution/media/refonte/pilote-curl-marteau.png` — les 4 images, Yanis en haut, Émilie en bas |
+| GIF | `curl-marteau-assis-yanis.gif` (47 Ko) et `curl-marteau-assis-emilie.gif` (62 Ko), **246 × 440**, 2 images, 500 ms, boucle infinie |
+| Contrôles | 8 cases à **1 personnage**, marges hautes et basses ≈ 12 %, échelles identiques d'une position à l'autre (164 × 302 puis 161 × 302 pour Yanis), paires dupliquées reconnues |
+
+### Ce que le modèle fait, constaté sur 8 planches
+
+1. **Il ne tient pas la grille 2 × 2** : il dessine **2 rangées × 4 colonnes**. Les colonnes 0 et 1 portent les deux positions ; les colonnes 2 et 3 les répètent. On garde 0 et 1 — la planche porte donc les deux modèles en une seule image.
+2. **Il faut écrire « wide landscape 16:9 »** dans le prompte. Sans ces mots, deux planches témoin (`pilote-montees-de-genoux`, `pilote-aqua-jogging`) sont sorties en **portrait** (768 × 1374) : cases trop étroites, personnage touchant les bords ⇒ **à refaire**.
+3. **Il dessine un filet clair** autour de chaque case et de l'image : l'outil l'efface avant de mesurer, sinon le filet est pris pour le personnage.
+4. **Il faut demander 12 % de marge** au-dessus de la tête et sous les pieds ; sans cette consigne le personnage touche le bas de sa case (`test-a-curl-marteau`).
+
+### Outillage
+
+* `evolution/media/tools/planche-style.py` — `--check` (contrôle) et `--out` (production) ; fenêtre de cadrage **commune aux deux images** d'un GIF (aucune saccade), **246 × 440** pour un mouvement debout ou assis, **440 × 246** pour un mouvement allongé, rapport toujours respecté (aucune déformation).
+* `evolution/media/refonte/MODELE-PROMPTE.md` — la trame de prompte, les blocs constants (style, homme, femme, piscine) et les pièges du modèle.
+* Poids : **≈ 50 Ko** par GIF (palette MAXCOVERAGE 128 couleurs + léger lissage : 110 Ko → 47 Ko sans toucher au visage). 250 fichiers ⇒ **≈ 12 Mo**, contre 19,6 Mo de GIF aujourd'hui.
+
+**Aucun média de l'application n'a été modifié à ce stade, et aucun APK n'a été reconstruit.**
 
 ### Ce qui a été fait sans la photo — aucun APK, aucun média modifié
 
@@ -43,19 +79,20 @@ Le message ne contenait **aucune pièce jointe** (rien dans l'espace de travail 
 5. **Modèle féminin pour Émilie — faisabilité vérifiée dans le script livré** : le profil actif est connu (`activeProfile` = `elite` pour Yanis, `emilie`), et les **20** images de l'application passent toutes par une seule fonction d'adresse (`bt`). Il suffira d'y brancher la table « version Yanis / version Émilie » : chaque profil voit son modèle partout (démonstration, chrono, bibliothèque, piscine, Tabata) **sans toucher** au programme, aux noms, aux consignes ni aux données enregistrées ; si une version manque, le visuel actuel reste affiché. Les médias livrés ne sont jamais écrasés : les nouveaux sont **ajoutés**.
 6. **Tests : 66/66** (64 + 2 nouveaux dans `evolution/media/tests/restyle-inventory.test.mjs` : inventaire à jour et défaut des vignettes reproduit).
 
-### Méthode prévue dès réception de la photo
+### Méthode
 
-1. **Lot témoin d'abord** : 3 mouvements (un en salle, un au sol, un en piscine), modèle Yanis **et** modèle Émilie, visage visible — vous jugez en pleine image avant toute série.
+1. **Lot témoin d'abord** : 3 mouvements (un en salle, un au sol, un en piscine), modèle Yanis **et** modèle Émilie, visage visible — vous jugez en pleine image avant toute série. Le premier est fait (curl marteau assis) ; les deux autres ont été ratés par le format portrait du modèle et sont **à refaire**.
 2. **Production par lots de 10 images au plus**, chaque GIF vérifié **image par image** : mouvement prescrit, bon outil, bon angle, bonne variante, visage présent ; piscine : bassin au bon niveau, jamais de vélo, d'elliptique ni de photo ; jamais de famille C ; aucune consigne réécrite, aucun miroir global.
 3. **Les 5 animations restantes du lot 2** (2 à refaire, 3 à produire) sont faites **directement dans le nouveau style**, sans double travail ; le câblage prévu (carte, un fichier pour deux identifiants, tests à 10 variantes) est repris dans le même mouvement.
 4. **Une seule version complète à la fin**, signée `150e3846…` : il faudra **recoller la clé de récupération** (le fichier `/tmp/rk.txt` a disparu avec l'effacement ; 6ᵉ caractère = lettre « l » minuscule).
 
 ### Questions ouvertes — à trancher avec l'envoi de la photo
 
-1. **La photo** (bloquant).
+1. ~~La photo~~ — **reçue**.
 2. **Émilie** : modèle féminin sur **toute la bibliothèque** (152) ou **seulement ce qu'elle voit** (95) ?
 3. **Dessins d'étirement** (29 dessins fixes, pas des GIF) : les passer aussi au nouveau style, ou les laisser tels quels ?
-4. **Visage** : visage réaliste générique dans le style de la photo, ou ressemblant à Yanis et à Émilie (il faudrait alors un portrait de chacun) ? À noter : dans le format actuel 480 × 262, un visage mesure environ 30 pixels de haut.
+4. **Visage** : visage réaliste générique dans le style de la photo (**déjà appliqué sur le lot témoin**, sculpté dans le même matériau blanc), ou ressemblant à Yanis et à Émilie (il faudrait alors **un portrait de chacun**, et la ressemblance restera approchante) ?
+5. **Format** : je suis passé de 480 × 262 (paysage) à **246 × 440** (portrait, le rapport de votre photo) pour que le personnage soit plus grand à l'écran. Cela change l'apparence des fiches : **je garde, ou je reviens au paysage ?**
 
 ### Ensuite
 
