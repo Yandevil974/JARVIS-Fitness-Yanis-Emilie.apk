@@ -195,6 +195,11 @@ def fenetre(cellules, orientation, mode='auto'):
     l'eau est de la meme luminosite que le corps, la detection est impossible).
     """
     case_l, case_h = cellules[0].size
+    if mode == 'scene':
+        # Decor de salle : le fond fait partie de l'image, la detection du
+        # personnage est impossible et un recadrage couperait bras ou banc.
+        # On garde la case entiere, hauteur 440, sans deformation.
+        return (0, 0, case_l, case_h), (round(440 * case_l / case_h), 440), 'scene'
     boites = None if mode == 'case' else [cadre_figure(cellule) for cellule in cellules]
     if boites and not any(boite is None for boite in boites):
         x0 = min(boite[0] for boite in boites)
@@ -307,7 +312,7 @@ def main():
     parser.add_argument('--grid', default='2x4', help='rangees x colonnes, ex. 2x4 ou 1x2')
     parser.add_argument('--prendre', default='0,1', help='colonnes gardees, defaut 0,1')
     parser.add_argument('--profil', help='genre d une planche 1x2 (yanis ou emilie)')
-    parser.add_argument('--fenetre', default='auto', choices=('auto', 'case'),
+    parser.add_argument('--fenetre', default='auto', choices=('auto', 'case', 'scene'),
                         help="auto : centree sur le personnage ; case : centree sur la case")
     parser.add_argument('--orientation', default='auto',
                         choices=('auto', 'portrait', 'paysage'))
