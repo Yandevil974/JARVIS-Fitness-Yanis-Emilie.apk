@@ -16,6 +16,7 @@ const map = read('../candidate/pool-animations-map.json');
 const landMap = read('../candidate/tabata-land-animations-map.json');
 const aliasMap = read('../candidate/alias-visuals-map.json');
 const stretchMap = read('../candidate/stretch-visuals-map.json');
+const recoveryMap = read('../candidate/pool-recovery-map.json');
 
 // Inventaire lu dans l'APK : hachages des fichiers web et medias references.
 function inventory(apk) {
@@ -49,7 +50,7 @@ test('le defaut de la 1.4.7 est reproduit, puis corrige', () => {
     'la 1.4.7 devait referencer cinq animations sans les contenir');
   // Le correctif : chaque animation annoncee est presente, intacte et animee.
   // Les animations du Tabata au sol sont verifiees de la meme facon.
-  for (const [path, digest] of Object.entries({...map.files, ...landMap.files, ...aliasMap.files})) {
+  for (const [path, digest] of Object.entries({...map.files, ...landMap.files, ...aliasMap.files, ...recoveryMap.files})) {
     const entry = 'assets/public' + path;
     assert.ok(released.media[entry], 'animation absente de l’APK livre : ' + entry);
     assert.equal(released.media[entry], digest, 'animation alteree : ' + path);

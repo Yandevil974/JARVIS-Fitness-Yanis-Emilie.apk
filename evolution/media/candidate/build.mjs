@@ -15,6 +15,12 @@ export function once(text, before, after) {
 // une par une en pleine image avant livraison.
 export const providedAnimations = fs.existsSync(new URL('./pool-animations-map.json', import.meta.url))
   ? JSON.parse(fs.readFileSync(new URL('./pool-animations-map.json', import.meta.url))).map : {};
+// Etapes de recuperation et de mise en place des protocoles piscine, mesurees
+// sans aucun media aquatique (117 « Repos » + 18 « … — en place »). Les
+// animations produites ne s'appliquent QUE dans un contexte piscine deja
+// etabli ; hors piscine, aucun nom ne change de visuel.
+export const providedRecoveries = fs.existsSync(new URL('./pool-recovery-map.json', import.meta.url))
+  ? JSON.parse(fs.readFileSync(new URL('./pool-recovery-map.json', import.meta.url))) : {map:{},suffixes:{}};
 // Animations humaines des mouvements du Tabata AU SOL : meme famille, contexte
 // terre uniquement (voir tabata-land-context.mjs). Meme regle que la piscine :
 // jamais un visuel generique a la place d'un mouvement, et jamais un guide d'un
@@ -116,7 +122,7 @@ export function integrate(source) {
     .replace('export function createTabataLandMedia', 'function createTabataLandMedia');
   source = once(source, 'function gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0,landPath:lp,landName:ln})',
     landHelper + '\nconst JarvisTabataLandMedia=createTabataLandMedia({normalize:Ge,providedAnimations:' + JSON.stringify(providedLandAnimations) + '});\nfunction gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0,landPath:lp,landName:ln})');
-  source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl,reviewedTexts:${JSON.stringify(reviewedTexts)},providedAnimations:${JSON.stringify(providedAnimations)}});\nfunction JarvisStepGuide(i,o){return o==="pool"?JarvisPoolMedia.guide(i):bg(i,o)}\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
+  source = once(source, 'function bg(i,o){', `${helper}\nconst JarvisPoolMedia=createPoolMedia({normalize:Ge,poolGuides:bl,reviewedTexts:${JSON.stringify(reviewedTexts)},providedAnimations:${JSON.stringify(providedAnimations)},providedRecoveries:${JSON.stringify({map:providedRecoveries.map,suffixes:providedRecoveries.suffixes})}});\nfunction JarvisStepGuide(i,o){return o==="pool"?JarvisPoolMedia.guide(i):bg(i,o)}\nfunction bg(i,o){if(o==="pool")return JarvisPoolMedia.guide(i);`);
   // The pool block prescribed after the weights session is declared by its
   // block format, not by the step segment it kept from the HTML import.
   source = once(source, 'const E=bg(k.name,k.segment)',
@@ -326,6 +332,20 @@ with zipfile.ZipFile(sys.argv[1]) as z:
     fs.copyFileSync(source, target);
     if (sha(fs.readFileSync(target)) !== digest) throw Error('Variante modifiee: ' + file);
   }
+  // Etapes de recuperation / mise en place piscine : AJOUTEES elles aussi.
+  if (fs.existsSync(new URL('./pool-recovery-map.json', import.meta.url))) {
+    const recoveryMap = JSON.parse(fs.readFileSync(new URL('./pool-recovery-map.json', import.meta.url)));
+    for (const [file, digest] of Object.entries(recoveryMap.files)) {
+      const source = path.join(root, 'evolution/media/candidate/pool-animations', path.basename(file));
+      if (!fs.existsSync(source)) throw Error('Animation de recuperation absente du depot: ' + source);
+      const target = path.join(directory, file.replace(/^\//, ''));
+      if (fs.existsSync(target) && sha(fs.readFileSync(target)) !== digest)
+        throw Error('Une animation de recuperation remplacerait un media livre: ' + file);
+      fs.mkdirSync(path.dirname(target), {recursive:true});
+      fs.copyFileSync(source, target);
+      if (sha(fs.readFileSync(target)) !== digest) throw Error('Animation de recuperation modifiee: ' + file);
+    }
+  }
   // Animations des mouvements du Tabata au sol : seulement AJOUTEES.
   const landMap = JSON.parse(fs.readFileSync(new URL('./tabata-land-animations-map.json', import.meta.url)));
   for (const [file, digest] of Object.entries(landMap.files)) {
@@ -349,7 +369,7 @@ with zipfile.ZipFile(sys.argv[1]) as z:
     candidateBundleSha256:sha(candidate),allowedChangedEntries:[baseline.bundle],
     openFindingGroups:JSON.parse(fs.readFileSync(new URL('../review/findings.json',import.meta.url))).findings.filter(f=>f.status==='open').length,
     limits:['Full media audit remains open','Legacy pool associations still require visual validation',
-      'Generic recovery without a precise aquatic guide remains an explicit gap',
+      'Pool recovery and get-ready steps now show produced aquatic animations; the legacy associations of the other recovery names still require visual validation',
       'Build alone provides no browser/device acceptance; see candidate/validation.json for scoped tests']};
   fs.writeFileSync(path.join(root,'.cache/media-pool-candidate.json'),JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify({directory,...report},null,2));

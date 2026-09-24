@@ -16,7 +16,8 @@ const normalize=vm.runInNewContext(ge+'Ge');
 const reviewedTexts=JSON.parse(fs.readFileSync(new URL('../candidate/pool-texts.json',import.meta.url))).entries;
 const aliasVisuals=JSON.parse(fs.readFileSync(new URL('../candidate/alias-visuals-map.json',import.meta.url)));
 const aliasIds=aliasVisuals.variantes.map(entry=>entry.id);
-const media=createPoolMedia({normalize,poolGuides:inventory.poolGuides,reviewedTexts});
+const recovery=JSON.parse(fs.readFileSync(new URL('../candidate/pool-recovery-map.json',import.meta.url)));
+const media=createPoolMedia({normalize,poolGuides:inventory.poolGuides,reviewedTexts,providedRecoveries:{map:recovery.map,suffixes:recovery.suffixes}});
 const fn=(text,ast,name)=>{const n=ast.body.find(n=>n.id?.name===name);assert.ok(n);return text.slice(n.start,n.end)};
 const freeze=o=>{Object.freeze(o);for(const v of Object.values(o))if(v&&typeof v==='object')freeze(v);return o};
 test('requires exact complete 1.4.0 and refuses accidental double patching',()=>{
@@ -35,15 +36,29 @@ test('420 pool protocol steps cannot resolve to cardio and inputs never change',
  for(const protocol of input)for(const level of protocol.levels)for(const step of level.steps){
   const result=media.resolve(step,{type:'swim'});assert.ok(result);
   assert.ok(!result.path?.includes('/cardio-'),step.name);
-  if(result.path)assert.equal(result.status,'legacy-association-not-yet-validated');
+  if(result.path)assert.ok(['legacy-association-not-yet-validated','provided-aquatic-recovery'].includes(result.status),step.name);
+  // Une animation produite ne sert QUE la recuperation et la mise en place mesurees.
+  if(result.status==='provided-aquatic-recovery')assert.ok(/^(Repos|Récupération|Récup active|Récup|.+ — en place)$/.test(step.name),step.name);
   count++;
  }
  assert.equal(count,420);assert.deepEqual(input,inventory.poolProtocols);
 });
-test('generic aquatic recovery is an explicit gap, not a fabricated posture or cardio fallback',()=>{
+test('la recuperation aquatique generique recoit son animation produite, jamais un velo ni la photo generique',()=>{
  for(const name of ['Récupération active','Récup active','Récupération','Repos']){
   const result=media.resolve({name,img:'/media/cardio-recup-active.jpg'},{type:'swim'});
-  assert.equal(result.path,null);assert.equal(result.status,'unresolved');
+  assert.equal(result.path,'/media/pool-repos.gif',name);
+  assert.equal(result.status,'provided-aquatic-recovery',name);
+  // L'image persistee de l'etape n'est jamais servie, et aucun media de terre non plus.
+  assert.ok(!/cardio-|recovery-human|elliptique/.test(result.path),name);
+ }
+ // La mise en place des tournées et des tabatas a la sienne, jamais celle d'un exercice.
+ for(const name of ['Tour 1/4 — en place','Tabata 2/3 — en place']){
+  const result=media.resolve({name},{type:'swim'});
+  assert.equal(result.path,'/media/pool-en-place.gif',name);
+ }
+ // Hors contexte piscine, rien ne change : le nom seul ne suffit jamais.
+ for(const meta of [{type:'hiit'},{type:'rest'},{type:'recovery'},{type:'warmup'},undefined]){
+  assert.equal(media.resolve({name:'Repos'},meta),null,'hors piscine');
  }
 });
 test('step segment wins over overall type; unknown mixed context is not guessed',()=>{
