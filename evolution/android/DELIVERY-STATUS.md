@@ -97,5 +97,15 @@ Correctif décidé par l'utilisateur (« fais ce que tu recommande ») après re
 - Identité durable `150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b` (identique 1.4.2 -> 1.4.6) : installation directe par-dessus la 1.4.6.
 - Web embarqué `cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a` : cinq animations humaines aquatiques fournies (gainage vertical, mobilité épaules, mobilité hanches/chevilles, ciseaux au bord, talons-fesses) + les corrections cumulées.
 - Demande utilisateur du 24 septembre 2026 : « il y a des images humaines animées manquantes. corrige cela stp en cohérence avec les autres gif stp » — famille C refusée la veille, style aligné sur les GIF humains existants.
-- Seules entrées modifiées vs la 1.4.6 : `AndroidManifest.xml`, le paquet web et 5 médias ajoutés. 9/9 DEX identiques, v2 + v3, un signataire.
-- Tests : Node 46/46 ; `pool-land-guides.spec.mjs` exige désormais l'animation fournie (elle vérifie aussi 480 px, 262 px et l'empreinte de chaque GIF).
+- Entrées modifiées vs la 1.4.0 servant de base : `AndroidManifest.xml` et le paquet web **seulement**. 9/9 DEX identiques, v2 + v3, un signataire.
+- Tests desurés à l'époque : Node 46/46 ; `pool-land-guides.spec.mjs` exigeait l'animation fournie (480 px, 262 px, empreinte de chaque GIF).
+- **DÉFAUT MESURÉ LE 24 SEPTEMBRE 2026 : LES CINQ GIF NE SONT PAS DANS L'APK.** Le script de construction ne recopiait que le paquet web ; le dossier de travail des tests, lui, les contenait. La 1.4.7 affiche donc cinq images cassées. **NE PAS INSTALLER LA 1.4.7.** Constat `apk-missing-referenced-media`, correction en 1.4.8.
+
+## 1.4.8 — 24 septembre 2026 (correctif de la 1.4.7 + médias embarqués)
+
+- `downloads/Yanis-Fitness-Evolution-1.4.8.apk` — 25 270 165 octets, SHA-256 `4664a9010e451c56e1b9a7ddb95e4c93433105ac76d0edfc2b3eb4220f7356fb`, versionName 1.4.8 / versionCode 19.
+- Identité durable `150e3846d867aae1d08694d0d5d2b53e404f77ca635edb88055618b6d769d37b` : installation directe par-dessus la 1.4.7 ou toute version 1.4.2 et suivante, sans désinstallation.
+- Web embarqué `cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a` : **identique** à la 1.4.7. Le correctif ne touche pas le script, il embarque les médias qu'il référence.
+- Médias ajoutés : `assets/public/media/gainage-vertical.gif`, `mobilite-epaules.gif`, `mobilite-hanches-chevelles.gif`, `ciseaux-au-bord.gif`, `talons-fesses.gif` (480 x 262, 2 images, 500 ms, empreintes dans `evolution/media/candidate/pool-animations-map.json`).
+- La construction refuse désormais de produire un APK si un chemin `/media`, `/thumbs` ou `/team` référencé par le script livré est absent de l'archive.
+- Tests : `evolution/media/tests/media-inventory.test.mjs` mesure **l'APK**, reproduit le défaut sur la 1.4.7 et exige la présence et l'empreinte des cinq animations dans la 1.4.8.

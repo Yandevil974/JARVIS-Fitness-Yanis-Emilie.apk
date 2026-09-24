@@ -65,7 +65,7 @@ test('findings reference real catalog entries and cover every requested category
  // (e.g. raw seconds printed in the combined-session step rows).
  // 'style' porte la decision de famille visuelle, 'transverse' les constats qui
  // couvrent plusieurs categories (mesure des lacunes sans dessin fidele).
- assert.deepEqual(new Set(findings.findings.map(f=>f.scope)),new Set(['musculation','echauffement','piscine','tabata','etirements','affichage','style','transverse']));
+ assert.deepEqual(new Set(findings.findings.map(f=>f.scope)),new Set(['musculation','echauffement','piscine','tabata','etirements','affichage','style','transverse','livraison']));
  assert.equal(new Set(findings.findings.map(f=>f.id)).size,findings.findings.length);
  for (const f of findings.findings) {
   for (const id of f.exercises||[])assert.ok(ids.has(id),`${f.id}: ${id}`);

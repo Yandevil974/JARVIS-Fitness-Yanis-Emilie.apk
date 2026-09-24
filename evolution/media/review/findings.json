@@ -211,22 +211,16 @@
       "instruction": "Instruction : les cinq guides terrestres listés (gainage au bord, mobilité épaules aquatique, mobilité hanches/chevilles, ciseaux au bord, talons-fesses) montrent des exercices terrestres (banc, élastique à sec, poulie, montée de genou au mur) alors que les consignes sont aquatiques. Le résolveur piscine revu ne les utilise jamais pour une étape piscine ; ils restent visibles dans la bibliothèque piscine. Correction possible sans décision de style : retirer le visuel (lacune explicite) au lieu d’un dessin terrestre — à confirmer par l’utilisateur, car cela retire une image existante. CORRIGÉ dans la 1.4.6 : décision utilisateur du 23 septembre 2026 appliquée (échange d'image / lacune explicite), preuves dans le bloc de correction.",
       "instructionDate": "2026-09-23",
       "fix": {
+        "implemented": "2026-09-24",
         "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.7.apk",
-        "rule": "Lacune explicite plutot qu'un dessin terrestre a la place d'un exercice aquatique.",
-        "behaviour": "Les cinq guides mesures (Gainage au bord (vertical), Mobilite epaules aquatique, Mobilite hanches / chevilles, Ciseaux au bord, Talons-fesses) n'affichent plus de dessin terrestre : ni comme visuel de mouvement, ni dans les consignes du chrono, ni dans la liste des etapes d'un protocole piscine. Leurs consignes aquatiques restent affichees en entier.",
-        "untouched": [
-          "consignes aquatiques",
-          "noms",
-          "durees",
-          "protocoles",
-          "donnees enregistrees"
-        ],
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
+        "providedAnimations": true,
+        "rule": "Animation humaine produite dans la famille exacte des GIF aquatiques existants (480 x 262, 2 images, 500 ms) a la place du dessin terrestre et de la lacune explicite ; les consignes aquatiques restent celles du paquet : jamais reecrire la consigne pour justifier une image.",
         "verifiedBy": [
-          "evolution/media/tests/pool-candidate.test.mjs",
-          "evolution/media/tests/pool-land-guides.spec.mjs"
+          "evolution/media/tests/pool-land-guides.spec.mjs",
+          "evolution/media/tests/media-inventory.test.mjs"
         ],
-        "remaining": "Aucun dessin aquatique correspondant n'existe dans le pack : decision de style requise avant toute creation."
+        "remaining": "Essai sur le telephone non fait : la correction est prouvee en navigateur et dans l'APK, pas encore sur l'appareil."
       },
       "userDecision": {
         "date": "2026-09-24",
@@ -260,7 +254,7 @@
       "instructionDate": "2026-09-23",
       "fix": {
         "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.7.apk",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "rule": "En contexte terre, jamais de guide aquatique : le chrono guidé ne résout un guide aquatique que si le contexte de l'étape est aquatique (même résolveur que la piscine).",
         "behaviour": "Les 4 noms mesurés (Gainage planche, Battements de jambes, Montées de genoux, Marche sur place) ne montrent plus de guide aquatique dans un enchaînement au sol ; dans un protocole aquatique, les mêmes noms gardent exactement le guide aquatique validé.",
         "untouched": [
@@ -330,7 +324,7 @@
       "instructionDate": "2026-09-23",
       "fix": {
         "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.7.apk",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "rule": "Echanger l'image, jamais reecrire la consigne : le dessin doit montrer la posture decrite.",
         "behaviour": "« Pigeon assis » affiche desormais le dessin du piriforme assis (assis, cheville croisee sur le genou oppose) au lieu du pigeon au sol. Consigne inchangee.",
         "untouched": [
@@ -369,7 +363,7 @@
       "instructionDate": "2026-09-23",
       "fix": {
         "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.7.apk",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "rule": "Echanger l'image, jamais reecrire la consigne.",
         "behaviour": "« Main dans le dos » affiche desormais le dessin du coude au-dessus de la tete (main derriere la tete, coude tire) au lieu du dos anatomique. Consigne inchangee.",
         "untouched": [
@@ -614,7 +608,7 @@
       "fix": {
         "implemented": "2026-09-23",
         "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.7.apk",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "verifiedBy": "evolution/media/tests/pool-candidate.test.mjs",
         "remaining": "essai sur le téléphone de l’utilisateur"
       }
@@ -778,7 +772,7 @@
       "status": "open",
       "fix": {
         "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
-        "apk": "downloads/Yanis-Fitness-Evolution-1.4.7.apk",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
         "implemented": "2026-09-23",
         "decision": "utilisateur, 23 septembre 2026 : « fais ce que tu recommande »",
         "verifiedInBrowser": "evolution/media/tests/emilie-session-block.spec.mjs (2 tests PASS sur le bundle livré)",
@@ -873,6 +867,25 @@
         "deliveredUntouched": "Yanis Fitness Evolution 1.4.6 — seule version à installer ; son contenu visuel est inchangé."
       },
       "closedReason": "Décision de l'utilisateur du 24 septembre 2026 : les visuels livrés sont conservés, aucune création d'image n'est autorisée."
+    },
+    {
+      "id": "apk-missing-referenced-media",
+      "scope": "livraison",
+      "exercises": [],
+      "path": null,
+      "observed": "Mesure du 24 septembre 2026 sur l'APK 1.4.7 publie : le script livre reference 161 chemins /media, /thumbs et /team ; cinq d'entre eux n'existent pas dans l'archive. Ce sont les cinq animations aquatiques produites le meme jour (gainage-vertical.gif, mobilite-epaules.gif, mobilite-hanches-chevelles.gif, ciseaux-au-bord.gif, talons-fesses.gif). Le script de construction ne recopiait que le fichier de script web : la 1.4.7 affiche donc cinq images cassees sur le telephone. Les tests de l'epoque servaient le dossier de travail, ou les fichiers existaient, et ne mesuraient pas l'APK.",
+      "action": "CORRIGE dans la 1.4.8 : la construction recopie toute l'arborescence web candidate (script et medias), ajoute les medias produits, et refuse de produire un APK si un chemin reference par le script livre est absent de l'archive. Test de non-regression dedie qui mesure l'APK, pas le dossier de travail.",
+      "status": "open",
+      "instruction": "Instruction utilisateur du 24 septembre 2026 : « oui complete tous les elements manquants ». Le defaut etait mesure mais non livre : aucun APK ne l'avait corrige. La 1.4.7 reste documentee comme defectueuse et ne doit pas etre installee.",
+      "instructionDate": "2026-09-24",
+      "fix": {
+        "implemented": "2026-09-24",
+        "candidateBundleSha256": "cf99b6e4e1327e33fe10e5193196850e94582db8491c95cae9500fa918b1165a",
+        "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
+        "verifiedBy": "evolution/media/tests/media-inventory.test.mjs",
+        "behaviour": "La 1.4.8 contient les cinq animations et tous les autres medias references. Les neuf DEX restent identiques octet pour octet a ceux de la 1.4.0 ; le script web est identique a celui de la 1.4.7.",
+        "remaining": "essai sur le telephone de l'utilisateur"
+      }
     }
   ]
 }
