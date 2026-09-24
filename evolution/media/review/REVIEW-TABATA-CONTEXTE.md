@@ -24,7 +24,8 @@ margelle comprise).
 | Tabata **au sol**, « Montées de genoux · round 2/8 » | GIF aquatique `fe34482aa6faf932.gif` | identique au cas précédent : rien d'aquatique |
 | **Aqua Tabata**, « Montées de genoux · round 1/8 » | GIF aquatique `fe34482aa6faf932.gif` + consignes | **strictement identique** (guide validé conservé) |
 
-Captures (pleine image, téléphone 390 × 900) :
+Bandeau comparatif : `tabata-avant-apres.png` (deux colonnes : 1.4.4 livrée / 1.4.5 corrigée).
+Captures individuelles (pleine image, téléphone 390 × 900) :
 `tabata-land-avant-144.png`, `tabata-land-corrige-145.png`,
 `tabata-aqua-avant-144.png`, `tabata-aqua-corrige-145.png`.
 
