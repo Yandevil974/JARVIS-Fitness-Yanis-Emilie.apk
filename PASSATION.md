@@ -34,24 +34,27 @@ Je n'ai **pas de vision** sur les fichiers : je ne peux donc pas juger un rendu 
 
 Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement est beau ou parfaitement juste**. **La validation visuelle du lot témoin est donc la vôtre** : je vous montre les images en pleine taille avant toute série.
 
-### ▶ Refonte v3 en cours — personnage très musclé + décor de salle (lot 1 : 10 mouvements)
+### ▶ Refonte v4 en cours — le personnage DE VOTRE PHOTO, grand, dans une salle sombre
 
-Votre consigne, mot pour mot : « Ton personnage est de moins en moins musclé. Garde la même physionomie. Et rajoute un décor de salle. Recommence le tout. »
+Votre consigne (répétée deux fois) : « Ton personnage est de moins en moins musclé. Garde la même physionomie. Et rajoute un décor de salle. Recommence le tout. »
 
-Ce qui change, pour **tous** les mouvements (planches antérieures jetées et refaites) :
+**Pourquoi la v3 ratait** (je l'ai constaté en regardant les planches à côté de votre photo) : 8 petites cases par image → personnages minuscules, donc moins de masse et de détail ; et une salle claire, loin de l'ambiance sombre de la photo. Tout a été jeté.
 
-| Règle | Comment elle est tenue |
+**Nouvelle méthode, pour tous les mouvements :**
+
+| Règle | Comment |
 |---|---|
-| Même physionomie que la photo, très musclée | Un bloc de texte identique, recopié mot pour mot dans chaque demande : poitrine épaisse, épaules larges, bras pleins, cuisses fortes, jamais un corps mince ou « légèrement tonique ». Voir `evolution/media/refonte/MODELE-PROMPTE.md`. |
-| Décor de salle | Vraie salle de musculation derrière chaque personnage (sol caoutchouc, racks d'haltères, disques, miroir, rack à squat flou). Piscine : bassin carrelé, ligne d'eau, eau à mi-poitrine. |
-| Cadre | Le décor fait partie de l'image : on garde **la case entière**, 393 × 440, sans rogner ni déformer (nouveau mode `--fenetre scene` de `planche-style.py`). |
-| Poids | ≈ 80 à 110 Ko par GIF (le décor pèse plus qu'un fond uni). |
+| Même physionomie | Votre photo est donnée à chaque fois comme **modèle exact du personnage** : épaules énormes, poitrine épaisse, bras pleins, abdos profonds, cuisses séparées — « ne pas l'amincir ». Émilie : la même matière et la même définition, en physique de compétitrice fitness. |
+| Grand format | **Une image par modèle et par mouvement, 2 cases seulement** (position 1 / position 2). Le personnage occupe ~80 % de la hauteur. |
+| Décor de salle | Salle **sombre** comme la photo : murs anthracite, sol caoutchouc, racks d'haltères et de disques, rack à squat flou, spots chauds. Le personnage reste l'élément le plus lumineux. |
+| GIF | Case entière gardée (rien de coupé), 393 × 440, 2 images, 500 ms, 256 couleurs (plus de bandes dans le fond), ≈ 97 Ko. |
+| Contrôle | Je regarde chaque planche avant de la garder ; celles qui ratent sont refaites. |
 
-**Lot 1 — 10 mouvements, 20 GIF** (`evolution/media/refonte/gif/`, planche de contrôle `evolution/media/refonte/lot-1-10-mouvements.jpg`) : curl marteau assis (rotation du poignet), élévations latérales assises, bulgarian split squat, tirage vertical prise neutre, curl Scott barre EZ pronation, squats, aqua-jogging, back squat, développé couché barre plat, développé militaire haltères assis.
+**Lot v4 — 4 mouvements, 8 GIF** (`evolution/media/refonte/gif/`, planche de contrôle `evolution/media/refonte/lot-v4-4-mouvements.jpg`) : curl marteau assis, élévations latérales assises, bulgarian split squat, tirage vertical prise pronation.
 
-Contrôles mesurés sur chaque planche : 8 cases, les deux positions nettement différentes (écart 14 à 57), les cases répétées identiques (écart 2 à 16). **Je n'ai pas de vision dans cette session** : la musculature, le décor et le geste sont à valider par vous.
+Refaits ou reclassés pendant le contrôle : bulgarian split squat de Yanis (1er essai : genou plié dans les deux cases, pas de mouvement) ; tirage vertical : le générateur a dessiné une barre large en pronation au lieu de la poignée neutre → classé en « tirage vertical prise pronation » (il existe dans l'appli), la prise neutre reste à faire.
 
-Reste : 142 mouvements animés, puis 29 étirements, 10 images piscine, 6 échauffement/cardio (images fixes). Photos de progression j0/m12 : jamais touchées. Cadence : 10 planches par tour.
+Cadence : 2 images par mouvement (Yanis + Émilie) → **5 mouvements par tour**. Reste 148 mouvements animés, puis 29 étirements, 10 images piscine, 6 échauffement/cardio. Photos de progression j0/m12 : jamais touchées.
 
 ### Décisions que vous avez prises (24 septembre 2026)
 

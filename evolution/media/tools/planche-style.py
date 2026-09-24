@@ -252,7 +252,7 @@ def enregistrer(cible, images):
     temoin = Image.new('RGB', (images[0].width, images[0].height * len(images)))
     for rang, image in enumerate(images):
         temoin.paste(image, (0, rang * image.height))
-    palette = temoin.quantize(colors=128, method=Image.MAXCOVERAGE)
+    palette = temoin.quantize(colors=256, method=Image.MAXCOVERAGE)
     images = [image.quantize(palette=palette, dither=Image.NONE) for image in images]
     images[0].save(cible, save_all=True, append_images=images[1:], duration=DUREE,
                    loop=0, optimize=True, disposal=2)

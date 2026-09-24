@@ -1,4 +1,14 @@
-# Modele de prompte — refonte complete des visuels (25 septembre 2026)
+# Modele de prompte — refonte complete des visuels
+
+> **v4 (en vigueur)** : UNE image par modele et par mouvement, 16:9, **2 cases** cote a cote
+> (position 1 / position 2), personnage a ~80 % de la hauteur, la photo de reference donnee
+> comme « exact character model » (« keep his body mass and proportions EXACTLY; do not make
+> him slimmer »), salle de sport **sombre** (murs anthracite, sol caoutchouc, racks, spots
+> chauds). Fichiers : `planches/v4/<mouvement>-yanis.png` et `-emilie.png`. Production :
+> `planche-style.py --grid 1x2 --fenetre scene --out evolution/media/refonte/gif planches/v4/*.png`.
+> La trame 2 x 4 ci-dessous (v3) est abandonnee : 8 petites cases = personnages trop petits,
+> donc de moins en moins muscles.
+
 
 ## Les deux images de reference
 
