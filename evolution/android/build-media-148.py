@@ -35,7 +35,7 @@ from apk_binary import chunks, patch_manifest, pool_strings, u16
 BASE = ROOT / 'downloads/Yanis-Fitness-Evolution-1.4.0.apk'
 BASE_SHA = '30b20ce10ddc9bfeadee3590816f1f3d03f54c6c7126261ed76824278b35a8b7'
 BUNDLE = 'assets/public/assets/index-CBCies4k.js'
-BUNDLE_SHA = 'aaf5f8ef2105c487473d243ada8e31fea591d63df58fcf0f4d67ec7c46eb153f'
+BUNDLE_SHA = 'd03b3033b975e879d43a26504bba261fe801facbd1ff0d1a68764105cb8c79be'
 APP_ID = 'app.yanis.fitness.evolution.home'
 VERSION = '1.4.8'
 VERSION_CODE = 19
@@ -167,12 +167,30 @@ def main():
             assert entry in present, 'Provided animation missing from the APK: ' + entry
             data = dst.read(entry)
             assert data[:6] in (b'GIF89a', b'GIF87a') and sha(data) == digest, 'Provided animation altered: ' + entry
+        land = json.loads((ROOT / 'evolution/media/candidate/tabata-land-animations-map.json').read_text(encoding='utf-8'))
+        for name, digest in land['files'].items():
+            entry = 'assets/public' + name
+            assert entry in present, 'Land animation missing from the APK: ' + entry
+            data = dst.read(entry)
+            assert data[:6] in (b'GIF89a', b'GIF87a') and len(data) > 1000 and sha(data) == digest, 'Land animation altered: ' + entry
+        alias = json.loads((ROOT / 'evolution/media/candidate/alias-visuals-map.json').read_text(encoding='utf-8'))
+        for name, digest in alias['files'].items():
+            entry = 'assets/public' + name
+            assert entry in present, 'Alias animation missing from the APK: ' + entry
+            data = dst.read(entry)
+            assert data[:6] in (b'GIF89a', b'GIF87a') and len(data) > 1000 and sha(data) == digest, 'Alias animation altered: ' + entry
+        stretch = json.loads((ROOT / 'evolution/media/candidate/stretch-visuals-map.json').read_text(encoding='utf-8'))
+        for name, digest in stretch['files'].items():
+            entry = 'assets/public' + name
+            assert entry in present, 'Stretch visual missing from the APK: ' + entry
+            data = dst.read(entry)
+            assert data[:2] == b'\xff\xd8' and sha(data) == digest, 'Stretch visual altered: ' + entry
     output.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(candidate, output)
     report = {
         'mode': 'release-signed-new-durable-media-identity', 'identity': identity, 'baseApkSha256': BASE_SHA,
         'apkSha256': sha(output.read_bytes()), 'apkBytes': output.stat().st_size, 'packagedWebSha256': sha(web),
-        'packagedWebDifference': 'V 1.4.6 -> V 1.4.7: same corrections, plus five human animations are delivered for the aquatic guides that had no valid drawing; they replace the former land drawings and the former explicit gap',
+        'packagedWebDifference': 'V 1.4.0 -> cette version: memes corrections, plus les visuels humains produits (cinq guides aquatiques, trente-trois mouvements de Tabata au sol, quatre etirements sans dessin fidele)',
         'changedEntries': changed, 'webFiles': 272 + len(added), 'addedEntries': added, 'replacedMediaEntries': replaced_media, 'nativeDexFiles': 9,
         'byteIdenticalDexFiles': 9, 'signatureVerified': ['v2', 'v3'], 'alignmentVerified': True,
         'version': VERSION, 'versionCode': VERSION_CODE, 'releaseCertificateSha256': identity['certificateSha256'],
@@ -196,7 +214,11 @@ def main():
                        'untouched': ['names','durations','instructions','prescriptions','aquatic guides'],
                        'measured': 'evolution/media/review/REVIEW-TABATA-CONTEXTE.md',
                        'verifiedBy': ['evolution/media/tests/tabata-context.spec.mjs','evolution/media/tests/pool-candidate.test.mjs']},
-        'approvedCorrections': {'stretchVisuals': ['Pigeon assis -> /media/stretch-piriforme.jpg','Main dans le dos -> /media/stretch-triceps-coude.jpg'],
+        'approvedCorrections': {'stretchVisuals': ['Pigeon assis -> /media/stretch-piriforme.jpg','Main dans le dos -> /media/stretch-triceps-coude.jpg',
+                        'Mollet en escalier -> /media/stretch-nouveau-mollet-escalier.jpg',
+                        'Adduction de la hanche debout -> /media/stretch-nouveau-adduction-croisement.jpg',
+                        'Mains croisees derriere le dos -> /media/stretch-nouveau-mains-croisees-dos.jpg',
+                        'Etirement des flechisseurs -> /media/stretch-nouveau-flechisseurs-poignet.jpg'],
                        'aquaticGaps': ['Gainage au bord (vertical)','Mobilité épaules aquatique','Mobilité hanches / chevelles','Ciseaux au bord','Talons-fesses'],
                        'rule': 'image exchanged or explicit gap, never a rewritten instruction',
                        'evidence': 'evolution/media/review/stretch-echanges-avant-apres.png',
@@ -211,13 +233,26 @@ def main():
                        'untouched': ['consignes','noms','durées','état enregistré'],
                        'evidence': 'evolution/media/review/pool-animations-5-guides.png',
                        'verifiedBy': ['evolution/media/tests/pool-land-guides.spec.mjs']},
+        'aliasVariants': {'request': 'user, 24 September 2026: complete tous les elements manquants (variantes sans dessin fidele)',
+                       'gap': 'evolution/media/review/GAPS-SANS-DESSIN.json : dix exercices affichaient le dessin d une AUTRE variante',
+                       'delivered': 'evolution/media/candidate/alias-visuals-map.json (variantes resolues par identifiant, niveau exact)',
+                       'format': '480 x 262, 2 images, 500 ms, meme famille que les GIF livres',
+                       'remaining': 'evolution/media/candidate/alias-visuals-map.json -> reste (liste exacte, mesuree par le test)',
+                       'verifiedBy': ['evolution/media/tests/alias-visuals.test.mjs','evolution/media/tests/pool-candidate.test.mjs']},
         'tabataLandAnimations': {'request': 'user, 24 September 2026: oui complete tous les elements manquants',
                        'context': 'resolvees uniquement dans un Tabata AU SOL (jamais piscine, etirement, echauffement, repos)',
-                       'delivered': 'lots A + B + C : 30 mouvements dessines, 5 noms equivalents du meme mouvement, 35 noms sur 38',
+                       'delivered': 'lots A + B + C + D : 33 mouvements dessines, 5 noms equivalents du meme mouvement, les 38 noms du generateur au sol sont couverts',
                        'map': 'evolution/media/candidate/tabata-land-animations-map.json',
                        'format': '480 x 262, 2 images, 500 ms, meme famille que les GIF deja livres',
-                       'remaining': '3 noms du generateur au sol (High knees, Repos actif, Respiration profonde), listes dans la carte et mesures par le test',
+                       'remaining': 'aucun nom du generateur au sol ; il reste l essai sur le telephone',
                        'verifiedBy': ['evolution/media/tests/tabata-land-media.test.mjs','evolution/media/tests/media-inventory.test.mjs']},
+        'stretchVisuals': {'request': 'user, 24 September 2026: one single complete version, all missing media',
+                       'gap': 'evolution/media/review/GAPS-SANS-DESSIN.json : quatre etirements sans dessin fidele (le dessin montre un AUTRE mouvement)',
+                       'delivered': ['Mollet en escalier','Adduction de la hanche debout','Mains croisees derriere le dos','Etirement des flechisseurs'],
+                       'format': '1376 x 768, image fixe, une seule posture, meme famille que les etirements deja livres',
+                       'map': 'evolution/media/candidate/stretch-visuals-map.json',
+                       'unchanged': 'noms, durees, consignes et donnees enregistrees ; les anciens dessins restent dans le paquet',
+                       'verifiedBy': ['evolution/media/tests/stretch-media.test.mjs','evolution/media/tests/media-inventory.test.mjs']},
         'installNote': 'same package AND same signature as 1.4.6/1.4.5/1.4.4/1.4.3/1.4.2: installs straight over 1.4.6 without uninstalling; coming from 1.4.0 or 1.4.1, uninstall first and restore the JSON backup'}
     (output.parent / (output.name + '.sha256')).write_text(report['apkSha256'] + '  ' + output.name + '\n')
     (output.parent / (output.stem + '.fidelity.json')).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')

@@ -29,7 +29,10 @@
   "Squats sautés": "/media/tabata-land-squats-sautes.gif",
   "Marche sur place": "/media/tabata-land-marche-sur-place.gif",
   "Pompes au mur": "/media/tabata-land-pompes-au-mur.gif",
-  "Oiseau-chien": "/media/tabata-land-oiseau-chien.gif"
+  "Oiseau-chien": "/media/tabata-land-oiseau-chien.gif",
+  "High knees": "/media/tabata-land-high-knees.gif",
+  "Repos actif": "/media/tabata-land-repos-actif.gif",
+  "Respiration profonde": "/media/tabata-land-respiration-profonde.gif"
  },
  "files": {
   "/media/tabata-land-jumping-jacks.gif": "0586539bf96cee260a5ab3fa53fe180a8b293a679180da9b265a87c0009f55f2",
@@ -61,7 +64,10 @@
   "/media/tabata-land-squats-sautes.gif": "6fc767e91a17cc80c7b77db29638ff63f57d854d230f26836c3477690741a17b",
   "/media/tabata-land-marche-sur-place.gif": "ea2cdf0faa777ae6813ed6a066cfc0a9f175e7f861a512ff5bd4e8feabed42b8",
   "/media/tabata-land-pompes-au-mur.gif": "97503df5888d9479654e72cdacc8fd4cbde12e85e8e10788625819144e2b05b9",
-  "/media/tabata-land-oiseau-chien.gif": "f0b1e972b7fa1a628ca121647133cbbd159071415449d33add69c2a941cd4f65"
+  "/media/tabata-land-oiseau-chien.gif": "f0b1e972b7fa1a628ca121647133cbbd159071415449d33add69c2a941cd4f65",
+  "/media/tabata-land-high-knees.gif": "e9ee5e6e909efcf990a66d80117f2afd8679c037db1080dbfc3773deaaa4fcbb",
+  "/media/tabata-land-repos-actif.gif": "28680f3fc551a48a7fc5c9479846b9eaabcee486a7391831513ae962770b107b",
+  "/media/tabata-land-respiration-profonde.gif": "a9b16942fee54a7f0da0d8c611fd98048b1dd3939b7a8c19b4e17420328df67c"
  },
  "context": "Tabata au sol uniquement ; jamais en piscine, ni en etirement, ni en echauffement, ni au repos",
  "source": "planches de deux positions produites le 24 septembre 2026 (evolution/media/tools/panels-to-gif.py)",
@@ -103,15 +109,11 @@
  },
  "couverture": {
   "nomsDuGenerateurAuSol": 38,
-  "nomsCouverts": 35,
-  "dessins": 30,
+  "nomsCouverts": 38,
+  "dessins": 33,
   "nomsEquivalents": 5,
-  "reste": 3,
+  "reste": 0,
   "regle": "Un nom n'est couvert que par le dessin de son propre mouvement ; les noms equivalents pointent vers le dessin du meme mouvement, jamais vers un autre exercice.",
-  "restants": [
-   "High knees",
-   "Repos actif",
-   "Respiration profonde"
-  ]
+  "restants": []
  }
 }

@@ -102,6 +102,16 @@ export function integrate(source) {
   const helper = fs.readFileSync(new URL('./pool-context.mjs', import.meta.url),'utf8')
     .replace('export function createPoolMedia', 'function createPoolMedia');
   const reviewedTexts = verifyPoolTexts(source);
+  // Quatre etirements affichaient un dessin d'un AUTRE mouvement (mesure du
+  // 24 septembre 2026, famille C refusee la veille : ces dessins sont produits
+  // dans la famille des visuels humains existants, avec le meme cadrage que les
+  // etirements deja livres : 1376 x 768, figure entiere, une seule posture).
+  // Seul le VISUEL change : les noms, durees et consignes restent ceux de 1.4.0.
+  const stretchSwaps = JSON.parse(fs.readFileSync(new URL('./stretch-visuals-map.json', import.meta.url)));
+  for (const swap of stretchSwaps.swaps) {
+    if (!source.includes(JSON.stringify(swap.name))) throw Error('Etirement absent du paquet: ' + swap.name);
+    source = once(source, `"${swap.name}":"${swap.before}"`, `"${swap.name}":"${swap.after}"`);
+  }
   const landHelper = fs.readFileSync(new URL('./tabata-land-context.mjs', import.meta.url),'utf8')
     .replace('export function createTabataLandMedia', 'function createTabataLandMedia');
   source = once(source, 'function gi({exercise:i,pattern:o,movementName:n,small:l=!1,controls:c=!0,landPath:lp,landName:ln})',
@@ -124,8 +134,22 @@ export function integrate(source) {
     ids.add(entry.id);
     return `if(i&&i.id===${JSON.stringify(entry.id)})return ${JSON.stringify({path:entry.path,name:entry.name,level:entry.level})};`;
   }).join('');
+  // Variantes fideles produites (24 septembre 2026) : dix exercices du catalogue
+  // affichaient le dessin d'une AUTRE variante, et l'application l'annoncait
+  // elle-meme « Variante tres proche ». Chaque identifiant recu une animation
+  // verifiee contre l'inventaire 1.4.0 ; jamais de substitution par muscle.
+  const aliasVisuals = JSON.parse(fs.readFileSync(new URL('./alias-visuals-map.json',import.meta.url)));
+  const aliasIds = new Set();
+  const aliasCases = aliasVisuals.variantes.map(entry => {
+    const exercise = inventory.exercises.find(e=>e.id===entry.id);
+    if (aliasIds.has(entry.id) || ids.has(entry.id) || !exercise || exercise.name !== entry.nom)
+      throw Error('Variante non verifiee ' + entry.id);
+    if (!aliasVisuals.files[entry.path]) throw Error('Animation de variante absente de la carte ' + entry.id);
+    aliasIds.add(entry.id);
+    return `if(i&&i.id===${JSON.stringify(entry.id)})return ${JSON.stringify({path:entry.path,name:entry.nom,level:'exact'})};`;
+  }).join('');
   source = once(source,'function Kh(i){return i!=null&&i.id&&eo.get(i.id)||null}',
-    `function JarvisReviewedMedia(i){${cases}return null}
+    `function JarvisReviewedMedia(i){${cases}${aliasCases}return null}
 function JarvisReviewedView(i){const media=JarvisReviewedMedia(i);return media?{...i,gif:media.path}:i}
 function Kh(i){return JarvisReviewedMedia(i)||i!=null&&i.id&&eo.get(i.id)||null}`);
   // View-only copies: keep all original catalog entries and saved workout data intact.
@@ -275,6 +299,32 @@ with zipfile.ZipFile(sys.argv[1]) as z:
     if (sha(fs.readFileSync(target)) !== digest) throw Error('Animation livree modifiee: ' + file);
     const land = poolMap.replacedLandVisuals[file];
     if (land) fs.rmSync(path.join(directory, land.replace(/^\//, '')), {force:true});
+  }
+  // Visuels d'etirement produits : AJOUTES (les anciens dessins restent dans
+  // le paquet, ils peuvent encore servir a d'autres consignes).
+  const stretchMap = JSON.parse(fs.readFileSync(new URL('./stretch-visuals-map.json', import.meta.url)));
+  for (const [file, digest] of Object.entries(stretchMap.files)) {
+    const source = path.join(root, 'evolution/media/candidate/stretch-visuals', path.basename(file).replace('stretch-nouveau-', 'stretch-'));
+    const target = path.join(directory, file.replace(/^\//, ''));
+    // Un visuel ne doit JAMAIS remplacer un media livre par l'APK de base : il
+    // peut seulement etre recopie a l'identique (construction rejouee).
+    if (fs.existsSync(target) && sha(fs.readFileSync(target)) !== digest)
+      throw Error('Un visuel d etirement remplacerait un media livre: ' + file);
+    fs.mkdirSync(path.dirname(target), {recursive:true});
+    fs.copyFileSync(source, target);
+    if (sha(fs.readFileSync(target)) !== digest) throw Error('Visuel d etirement modifie: ' + file);
+  }
+  // Variantes fideles produites : AJOUTEES (une seule animation par identifiant).
+  const aliasMap = JSON.parse(fs.readFileSync(new URL('./alias-visuals-map.json', import.meta.url)));
+  for (const [file, digest] of Object.entries(aliasMap.files)) {
+    const source = path.join(root, 'evolution/media/candidate/alias-animations', path.basename(file));
+    if (!fs.existsSync(source)) throw Error('Variante absente du depot: ' + source);
+    const target = path.join(directory, file.replace(/^\//, ''));
+    if (fs.existsSync(target) && sha(fs.readFileSync(target)) !== digest)
+      throw Error('Une variante remplacerait un media livre: ' + file);
+    fs.mkdirSync(path.dirname(target), {recursive:true});
+    fs.copyFileSync(source, target);
+    if (sha(fs.readFileSync(target)) !== digest) throw Error('Variante modifiee: ' + file);
   }
   // Animations des mouvements du Tabata au sol : seulement AJOUTEES.
   const landMap = JSON.parse(fs.readFileSync(new URL('./tabata-land-animations-map.json', import.meta.url)));

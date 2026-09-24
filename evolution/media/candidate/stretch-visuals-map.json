@@ -1,0 +1,45 @@
+{
+ "swaps": [
+  {
+   "name": "Mollet en escalier",
+   "before": "/media/stretch-mollet-marche.jpg",
+   "after": "/media/stretch-nouveau-mollet-escalier.jpg",
+   "fichier": "stretch-mollet-escalier.jpg",
+   "constat": "stretch-calf-step",
+   "consigne": "Avant-pied sur une marche, talon qui descend sous le niveau de la marche."
+  },
+  {
+   "name": "Adduction de la hanche debout",
+   "before": "/media/stretch-adduction-debout.jpg",
+   "after": "/media/stretch-nouveau-adduction-croisement.jpg",
+   "fichier": "stretch-adduction-croisement.jpg",
+   "constat": "stretch-hip-target",
+   "consigne": "Debout, croisez une jambe derriere l'autre et penchez le buste du cote de la jambe croisee."
+  },
+  {
+   "name": "Mains croisées derrière le dos",
+   "before": "/media/stretch-ep-arriere.jpg",
+   "after": "/media/stretch-nouveau-mains-croisees-dos.jpg",
+   "fichier": "stretch-mains-croisees-dos.jpg",
+   "constat": "stretch-other-postures",
+   "consigne": "Mains croisees dans le dos, bras tendus, montez doucement les mains en poussant la poitrine vers l'avant."
+  },
+  {
+   "name": "Étirement des fléchisseurs",
+   "before": "/media/stretch-avb-flechisseurs.jpg",
+   "after": "/media/stretch-nouveau-flechisseurs-poignet.jpg",
+   "fichier": "stretch-flechisseurs-poignet.jpg",
+   "constat": "stretch-other-postures",
+   "consigne": "Bras tendu, paume vers le haut, tirez les doigts vers le bas avec l'autre main."
+  }
+ ],
+ "files": {
+  "/media/stretch-nouveau-mollet-escalier.jpg": "7da883fcea17ad93cb9e1d49a3997381e5e1ebe8643a23eeaa63edaab95cc4fe",
+  "/media/stretch-nouveau-adduction-croisement.jpg": "e8a82ee43b7cc277683942c1fe511adfff8e448222908092499bebb885f41209",
+  "/media/stretch-nouveau-mains-croisees-dos.jpg": "3695049f20b79f9f46b9b998e5776e3c04aa816f44b7caa43cce9baeeb970230",
+  "/media/stretch-nouveau-flechisseurs-poignet.jpg": "dac48ad8a48bddd68e6d3e29bdd08aa945f9a4a094382e5a7c3ca5a98fabc246"
+ },
+ "pourquoi": "Chaque dessin precedent montrait un AUTRE mouvement : fente laterale au lieu du croisement de jambes, position a quatre pattes au lieu du poignet tire, mains basses au lieu des mains croisees montees, appui au mur (deja servi pour un autre etirement) au lieu du talon sous la marche.",
+ "famille": "visuels humains existants : 1376 x 768, une seule posture, figure entiere, pieds au sol, short marine, muscles surlignes orange",
+ "inchange": "noms, durees, consignes et donnees enregistrees"
+}

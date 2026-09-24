@@ -14,6 +14,8 @@ const tree=parse(original,opts), patched=parse(candidate,opts);
 const ge=original.slice(original.indexOf('const Ge='),original.indexOf(',uh=',original.indexOf('const Ge=')))+';';
 const normalize=vm.runInNewContext(ge+'Ge');
 const reviewedTexts=JSON.parse(fs.readFileSync(new URL('../candidate/pool-texts.json',import.meta.url))).entries;
+const aliasVisuals=JSON.parse(fs.readFileSync(new URL('../candidate/alias-visuals-map.json',import.meta.url)));
+const aliasIds=aliasVisuals.variantes.map(entry=>entry.id);
 const media=createPoolMedia({normalize,poolGuides:inventory.poolGuides,reviewedTexts});
 const fn=(text,ast,name)=>{const n=ast.body.find(n=>n.id?.name===name);assert.ok(n);return text.slice(n.start,n.end)};
 const freeze=o=>{Object.freeze(o);for(const v of Object.values(o))if(v&&typeof v==='object')freeze(v);return o};
@@ -76,17 +78,18 @@ test('web candidate changes only the script and the animations it adds; delivere
  // Les animations du Tabata au sol sont AJOUTEES, jamais substituees : les 272
  // fichiers livres par la 1.4.0 restent tous presents et inchanges, sauf le script.
  const landMap=JSON.parse(fs.readFileSync(new URL('../candidate/tabata-land-animations-map.json',import.meta.url)));
- const added=Object.keys(landMap.files).map(path=>path.replace('/media/','media/'));
+ const added=[...Object.keys(landMap.files),...Object.keys(aliasVisuals.files)].map(path=>path.replace('/media/','media/'));
  for(const file of added){
   const target=directory+'/'+file;
   assert.ok(fs.existsSync(target),'animation absente du candidat : '+file);
-  assert.equal(sha(fs.readFileSync(target)),landMap.files['/media/'+file.replace('media/','')],'animation alteree : '+file);
+  const attendu={...landMap.files,...aliasVisuals.files}['/media/'+file.replace('media/','')];
+  assert.equal(sha(fs.readFileSync(target)),attendu,'animation alteree : '+file);
  }
- assert.equal(added.length,Object.keys(landMap.files).length);
+ assert.equal(added.length,Object.keys(landMap.files).length+Object.keys(aliasVisuals.files).length);
  assert.equal(sha(fs.readFileSync(root+baseline.apk)),baseline.apkSha256);
 });
 
-test('only the two explicitly reviewed IDs change across all 209 exercise resolutions',()=>{
+test('only the explicitly reviewed IDs change across all 209 exercise resolutions',()=>{
  const eo=new Map(inventory.exercises.filter(e=>e.resolved).map(e=>[e.id,{path:e.resolved.path,name:e.resolved.name,level:e.resolved.level}]));
  const context=vm.createContext({eo});
  vm.runInContext(fn(original,tree,'Kh').replace('function Kh(','function oldKh(')+fn(candidate,patched,'JarvisReviewedMedia')+fn(candidate,patched,'Kh'),context);
@@ -96,7 +99,23 @@ test('only the two explicitly reviewed IDs change across all 209 exercise resolu
   const result=vm.runInContext('[oldKh(exercise),Kh(exercise)]',context);
   if(JSON.stringify(result[0])!==JSON.stringify(result[1]))changed.push(exercise.id);
  }
- assert.deepEqual(changed.sort(),['french-press-barre-ez','pont-fessier-au-sol-activation']);
+ // Les seuls identifiants revus : les deux du paquet plus les variantes
+ // produites, jamais devinees par muscle ni par nom approchant.
+ assert.deepEqual(changed.sort(),['french-press-barre-ez','pont-fessier-au-sol-activation',...aliasIds].sort());
+ for(const entry of aliasVisuals.variantes){
+  context.exercise={id:entry.id};
+  assert.equal(vm.runInContext('Kh(exercise).path',context),entry.path,'animation de variante : '+entry.id);
+  assert.equal(vm.runInContext('Kh(exercise).level',context),'exact','niveau de variante : '+entry.id);
+ }
+ // Un identifiant mesure mais PAS ENCORE produit garde exactement la
+ // resolution livree (la variante annoncee « Variante tres proche »), et ne
+ // prend jamais l'animation d'une autre variante.
+ for(const entry of aliasVisuals.reste){
+  context.exercise={id:entry};
+  const livre=inventory.exercises.find(e=>e.id===entry)?.resolved||null;
+  assert.deepEqual(vm.runInContext('Kh(exercise)',context),livre?{path:livre.path,name:livre.name,level:livre.level}:null,
+   'variante non produite alteree : '+entry);
+ }
  context.exercise={id:'pont-fessier-au-sol-activation'};
  assert.equal(vm.runInContext('Kh(exercise).path',context),'/media/8eecb0152081ff26.gif');
  context.exercise={id:'glute-bridge-pieds-sur-banc'};
@@ -114,14 +133,17 @@ test('library view copies change only reviewed GIF fields and never mutate froze
  for(const exercise of inventory.exercises){
   ctx.exercise=freeze(structuredClone(exercise));const before=JSON.stringify(ctx.exercise);
   const view=vm.runInContext('JarvisReviewedView(exercise)',ctx);
-  if(['french-press-barre-ez','pont-fessier-au-sol-activation'].includes(exercise.id)){
+  if(['french-press-barre-ez','pont-fessier-au-sol-activation',...aliasIds].includes(exercise.id)){
    changed++;assert.notEqual(view,ctx.exercise);
-   assert.equal(view.gif,exercise.id==='french-press-barre-ez'?'/media/ea226c444f72de0f.gif':'/media/8eecb0152081ff26.gif');
+   const attendu=exercise.id==='french-press-barre-ez'?'/media/ea226c444f72de0f.gif'
+    :exercise.id==='pont-fessier-au-sol-activation'?'/media/8eecb0152081ff26.gif'
+    :aliasVisuals.variantes.find(entry=>entry.id===exercise.id).path;
+   assert.equal(view.gif,attendu);
    const {gif,...rest}=view,{gif:old,...originalRest}=ctx.exercise;assert.deepEqual(rest,originalRest);
   }else assert.equal(view,ctx.exercise);
   assert.equal(JSON.stringify(ctx.exercise),before);
  }
- assert.equal(changed,2);
+ assert.equal(changed,2+aliasIds.length);
  for(const input of [null,undefined,{id:'unknown',name:'French press barre EZ'}, {name:'Pont fessier au sol — activation'}]){
   ctx.exercise=input;assert.equal(vm.runInContext('JarvisReviewedView(exercise)',ctx),input);
  }

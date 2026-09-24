@@ -18,12 +18,11 @@ print('java:', pathlib.Path(jdk4py.JAVA_HOME) / 'bin/java')
 EOF
 
 echo "== java attendu par les scripts de signature =="
-JAVA_SRC=$("$PY" -c "import jdk4py,pathlib;print(pathlib.Path(jdk4py.JAVA_HOME)/'bin'/'java')")
-mkdir -p .cache/signing-tools/jdk4py/java-runtime
-[ -e .cache/signing-tools/jdk4py/java-runtime/bin ] || ln -s "$(dirname "$(dirname "$JAVA_SRC")")" .cache/signing-tools/jdk4py/java-runtime/x 2>/dev/null
-rm -f .cache/signing-tools/jdk4py/java-runtime/x
-mkdir -p .cache/signing-tools/jdk4py/java-runtime
-ln -sfn "$(dirname "$(dirname "$JAVA_SRC")")" .cache/signing-tools/jdk4py/java-runtime
+JRT=$("$PY" -c "import jdk4py,pathlib;print(pathlib.Path(jdk4py.JAVA_HOME))")
+rm -rf .cache/signing-tools/jdk4py
+mkdir -p .cache/signing-tools/jdk4py
+# java-runtime doit pointer le dossier du JDK (celui qui contient bin/, lib/…)
+ln -sfn "$JRT" .cache/signing-tools/jdk4py/java-runtime
 ls -l .cache/signing-tools/jdk4py/java-runtime/bin/java
 
 echo "== apksigner =="

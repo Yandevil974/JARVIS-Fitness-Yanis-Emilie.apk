@@ -14,6 +14,8 @@ const root = new URL('../../../', import.meta.url).pathname;
 const read = file => JSON.parse(fs.readFileSync(new URL(file, import.meta.url)));
 const map = read('../candidate/pool-animations-map.json');
 const landMap = read('../candidate/tabata-land-animations-map.json');
+const aliasMap = read('../candidate/alias-visuals-map.json');
+const stretchMap = read('../candidate/stretch-visuals-map.json');
 
 // Inventaire lu dans l'APK : hachages des fichiers web et medias references.
 function inventory(apk) {
@@ -47,13 +49,27 @@ test('le defaut de la 1.4.7 est reproduit, puis corrige', () => {
     'la 1.4.7 devait referencer cinq animations sans les contenir');
   // Le correctif : chaque animation annoncee est presente, intacte et animee.
   // Les animations du Tabata au sol sont verifiees de la meme facon.
-  for (const [path, digest] of Object.entries({...map.files, ...landMap.files})) {
+  for (const [path, digest] of Object.entries({...map.files, ...landMap.files, ...aliasMap.files})) {
     const entry = 'assets/public' + path;
     assert.ok(released.media[entry], 'animation absente de l’APK livre : ' + entry);
     assert.equal(released.media[entry], digest, 'animation alteree : ' + path);
-    const dossier = path.split('/').pop().startsWith('tabata-land-') ? 'tabata-land-animations/' : 'pool-animations/';
-    const bytes = fs.readFileSync(new URL('../candidate/' + dossier + path.split('/').pop().replace('tabata-land-', ''), import.meta.url));
+    const nom = path.split('/').pop();
+    const dossier = nom.startsWith('tabata-land-') ? 'tabata-land-animations/'
+      : nom.startsWith('alias-') ? 'alias-animations/'
+      : nom.startsWith('stretch-nouveau-') ? 'stretch-visuals/' : 'pool-animations/';
+    const source = dossier === 'stretch-visuals/' ? nom.replace('stretch-nouveau-', 'stretch-')
+      : nom.replace('tabata-land-', '');
+    const bytes = fs.readFileSync(new URL('../candidate/' + dossier + source, import.meta.url));
     assert.ok(bytes.subarray(0, 6).toString('latin1').startsWith('GIF8'), 'ce n’est pas un GIF : ' + path);
+  }
+  // Les visuels d'etirement produits sont des images FIXES : presentes,
+  // intactes, au meme cadre que les etirements deja livres (1376 x 768).
+  for (const [path, digest] of Object.entries(stretchMap.files)) {
+    const entry = 'assets/public' + path;
+    assert.ok(released.media[entry], 'visuel d’etirement absent de l’APK livre : ' + entry);
+    assert.equal(released.media[entry], digest, 'visuel d’etirement altere : ' + path);
+    const bytes = fs.readFileSync(new URL('../candidate/stretch-visuals/' + path.split('/').pop().replace('stretch-nouveau-', 'stretch-'), import.meta.url));
+    assert.equal(bytes.subarray(0, 2).toString('latin1'), '\xff\xd8', 'ce n’est pas une image fixe : ' + path);
   }
   // La correction ne touche que les medias ajoutes et le script : aucun DEX.
   assert.deepEqual(Object.keys(released.dex).sort(), Object.keys(pristine.dex).sort());

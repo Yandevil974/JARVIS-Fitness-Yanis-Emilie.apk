@@ -1,0 +1,46 @@
+{
+ "date": "2026-09-24",
+ "variantes": [
+  {
+   "id": "tractions-prise-neutre-chin-up",
+   "nom": "Tractions prise neutre (chin-up)",
+   "constat": "le paquet livrait un tirage vertical a la poulie haute pour des tractions : materiel different",
+   "consigne": "Pars bras tendus, menton au-dessus. Pause de 2 s en bas. Alternative : tirage vertical neutre.",
+   "planche": ".cache/media-gen/alias-tractions-prise-neutre.png",
+   "path": "/media/alias-tractions-prise-neutre.gif"
+  },
+  {
+   "id": "back-extension-45-prise-snatch",
+   "nom": "Back extension 45°, prise snatch",
+   "constat": "le paquet livrait l'autre entree (back extension horizontal, jambes tendues), pas le banc a 45 degres",
+   "consigne": "Banc a 45 degres, prise snatch large, dos plat, monter sans a-coup.",
+   "planche": ".cache/media-gen/alias-back-extension-45-snatch.png",
+   "path": "/media/alias-back-extension-45-snatch.gif"
+  },
+  {
+   "id": "developpe-couche-prise-serree",
+   "nom": "Développé couché prise serrée",
+   "constat": "le paquet livrait un developpe couche prise normale : la prise serree n'etait pas distinguable",
+   "consigne": "Mains au milieu de la barre, coudes pres du corps, barre au bas de la poitrine.",
+   "planche": ".cache/media-gen/alias-developpe-couche-prise-serree.png",
+   "path": "/media/alias-developpe-couche-prise-serree.gif"
+  }
+ ],
+ "files": {
+  "/media/alias-tractions-prise-neutre.gif": "6a269ac9cc0151328f9913d7c27502d5aeedcd8efdff56c725b2494e40ae5a55",
+  "/media/alias-back-extension-45-snatch.gif": "730b7234c8274f84477113eb72d39a4c83fe28228f1b20ab06189016d6655783",
+  "/media/alias-developpe-couche-prise-serree.gif": "71a1bf236798788aabe673efc04e646615a8794fa7602262178da9df06648dda"
+ },
+ "reste": [
+  "curl-haltere-supination-banc-scott-90",
+  "curl-zottman-assis",
+  "fentes-marchees",
+  "curl-zottman-un-bras-banc-scott",
+  "curl-zottman",
+  "curl-concentration",
+  "fentes-arriere-au-poids-du-corps"
+ ],
+ "pourquoi": "Dix exercices du catalogue affichaient le dessin d'une AUTRE variante (outil ou position differents) ; l'application l'annoncait elle-meme « Variante tres proche ». Chaque variante recue une animation produite dans la famille des GIF livres, resolue EXACTEMENT pour son identifiant d'exercice.",
+ "famille": "480 x 262, 2 images, 500 ms, fond blanc, figure entiere, meme palette que les GIF livres",
+ "regle": "Un seul identifiant d'exercice par animation ; aucune consigne, aucun nom, aucune donnee modifiee ; le catalogue et le catalogue d'alias livres restent inchanges."
+}

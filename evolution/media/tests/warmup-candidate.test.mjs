@@ -15,7 +15,10 @@ const ast=tree(original),patched=tree(candidate);
 const fn=(s,a,name)=>{const n=a.body.find(n=>n.id?.name===name);assert.ok(n);return s.slice(n.start,n.end)};
 const json=o=>JSON.parse(JSON.stringify(o));
 const freeze=o=>{if(o&&typeof o==='object'){Object.freeze(o);for(const v of Object.values(o))freeze(v);}return o;};
-const reviewedMedia=e=>overrides.find(o=>o.id===e?.id)||null;
+// Les identifiants revus : les deux du paquet plus les variantes produites
+// (alias-visuals-map.json), relues telles qu'elles sont livrees.
+const variantes=read('candidate/alias-visuals-map.json').variantes;
+const reviewedMedia=e=>overrides.find(o=>o.id===e?.id)||variantes.find(v=>v.id===e?.id)||null;
 const media=createWarmupMedia({reviewedMedia});
 const activation=()=>({name:'Activation fessiers',seconds:60,pattern:'bridge',img:'/media/warmup-mobilite.jpg',instruction:'Ponts fessiers au sol, 10 répétitions contrôlées.'});
 const meta={type:'warmup',name:'Échauffement guidé'};
@@ -38,7 +41,7 @@ test('warmup repair rejects vague labels, different prescriptions, pool/Tabata/s
  assert.equal(media.view(null,meta),null);
 });
 test('approach resolution requires its own reviewed ID and role, never a current workout or generic image guess',()=>{
- for(const o of overrides){
+ for(const o of [...overrides,...variantes]){
   const step=freeze({name:'Approche 1 · 20 kg',seconds:60,instruction:'10 répétitions faciles à environ 50 % de la charge de travail connue. Repos selon le besoin.',exerciseId:o.id,mediaRole:'approach',img:'/media/warmup-series-approche.jpg'});
   assert.equal(media.view(step,meta).img,o.path);
   for(const change of [{exerciseId:'front-squat'},{exerciseId:undefined},{mediaRole:undefined},{name:'Repos'}]){
