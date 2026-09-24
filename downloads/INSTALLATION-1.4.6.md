@@ -32,9 +32,9 @@ Empreinte SHA-256 de l'APK :
 ```
 
 Téléchargements :
-[APK 1.4.6](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/downloads/Yanis-Fitness-Evolution-1.4.6.apk) ·
-[empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/downloads/Yanis-Fitness-Evolution-1.4.6.apk.sha256) ·
-[inventaire de fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/PLACEHOLDER/downloads/Yanis-Fitness-Evolution-1.4.6.fidelity.json)
+[APK 1.4.6](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.apk) ·
+[empreinte](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.apk.sha256) ·
+[inventaire de fidélité](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/4971809/downloads/Yanis-Fitness-Evolution-1.4.6.fidelity.json)
 
 ## Installation selon votre version actuelle
 
