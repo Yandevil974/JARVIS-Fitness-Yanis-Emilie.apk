@@ -1,12 +1,26 @@
-# Modele de prompte — refonte des GIF d'apres la photo de reference
+# Modele de prompte — refonte complete des visuels (25 septembre 2026)
 
-Photo de reference : `Screenshot_20260905_122043_Facebook(1).jpg`, a la racine du
-depot (deposee par l'utilisateur le 24 septembre 2026, commit `afbfc461`).
-C'est l'image de style : elle est TOUJOURS passee en entree du modele.
+## Les deux images de reference
+
+| Image | Role |
+|---|---|
+| `Screenshot_20260905_122043_Facebook(1).jpg` (racine du depot) | Le **style et la physionomie** : personnage en matiere blanche brillante, **tres fortement muscle**, fond de studio sombre. |
+| `evolution/media/refonte/reference/curl-marteau-reference.jpg` | Exemple de **dessin technique** : quand l'utilisateur en fournit un, il donne le mouvement, jamais le style. |
+
+## Ordre de l'utilisateur
+
+> « Ton personnage est de moins en moins muscle. Garde la meme physionomie. Et rajoute un decors de salle. Recommence le tout. »
+
+Trois regles, non negociables :
+
+1. **Meme physionomie partout** : celle de la photo, c'est-a-dire TRES muscle (pectoraux epais, larges epaules et dos, bras pleins, cuisses fortes, anatomie tres lisible). Le modele a tendance a degrader la masse d'un lot a l'autre : les memes mots sont donc recopiees a l'identique dans CHAQUE prompte.
+2. **Decor de salle** pour tout mouvement au sol ou en salle : veritable salle de musculation, pas un studio vide. Pour la piscine, le decor reste le bassin.
+3. **Tout recommence** : les planches produites avant cette consigne sont refaites.
 
 ## La trame
 
-Le texte entre `<` et `>` est remplace pour chaque mouvement.
+Le texte entre `<` et `>` est remplace pour chaque mouvement. Tout le reste est
+recopie **mot pour mot** d'un mouvement a l'autre.
 
     A WIDE LANDSCAPE demonstration sheet, 16:9, wider than tall: two horizontal
     bands of equal height, each band divided into four panels of equal width, so
@@ -20,100 +34,102 @@ Le texte entre `<` et `>` est remplace pour chaque mouvement.
     margin of at least 12 percent of the panel height above the head and below
     the feet, and empty space at the sides.
 
-    Style of the reference photo in all eight panels: <STYLE>.
+    <STYLE>.
+
+    <DECOR>.
+
     The man: <HOMME>. The woman: <FEMME>.
 
-    <EXERCICE>, <POSITION A>. <POSITION B>.
-    <CAMERA>, identical in all eight panels, same framing, same athlete scale,
-    same equipment.
+    <EXERCICE>, <POSITION A>. <POSITION B>. Seen from a three-quarter front view
+    with the SAME camera, the SAME framing, the SAME equipment and the SAME
+    athlete scale in all eight panels.
 
-    Lime green on <MUSCLES> only; everything else stays white.
-    No text, no labels, no numbers, no arrows, no logo, no watermark.
+    Lime green on <MUSCLES> only; everything else stays white. No text, no
+    labels, no numbers, no arrows, no logo, no watermark.
 
-## Blocs constants
+## Blocs constants (a recopier tels quels)
 
 `<STYLE>` — glossy white-grey 3D anatomical muscle figure, smooth porcelain/clay
-material, strongly defined muscles, dark charcoal studio background with soft top
-lighting, a subtle darker floor, soft contact shadow, muscles worked highlighted
-in bright lime green.
+material, strongly defined muscles, soft contact shadow, muscles worked
+highlighted in bright lime green. **Both athletes have the SAME very heavily
+muscled physique as the reference photo: a thick chest, broad shoulders and a
+wide back, full and rounded arms, thick legs, very low body fat, every muscle
+group clearly visible — never a slim, average or slightly toned body.**
 
-`<HOMME>` — shirtless, muscular, <TENUE HOMME>, short cropped hair, a sculpted
-realistic face with eyes, nose and lips in the same glossy white material.
+`<DECOR>` (salle / sol) — The background of every panel is a real GYM: a dark
+rubber floor, a wall of black weight plates and dumbbell racks behind, a power
+rack and a bench press station visible in soft focus further back, a mirrored
+wall, soft ceiling lighting, and a few blurred pieces of equipment. Never an
+empty studio, never a plain flat background, never a white background.
 
-`<FEMME>` — athletic toned feminine build, <TENUE FEMME>, hair in a high
-ponytail, a sculpted realistic face with eyes, nose and lips in the same glossy
-white material.
-
-`<CAMERA>` — seen from a three-quarter front view (camera about 25 degrees to the
-athlete's right).
-
-Variantes de tenue : salle → `black shorts, black sneakers` /
-`black sports bra, black fitted shorts, black sneakers` ; piscine →
-`black swim shorts` / `black one-piece sports swimsuit` ; sol → idem salle avec
-`on a thin dark exercise mat`.
-
-Piscine, remplacer le fond : `The scene is a SWIMMING POOL: the athlete stands in
+`<DECOR>` (piscine) — The scene is a SWIMMING POOL: the athlete stands in
 chest-deep water, the water surface cutting across the chest in every panel and
 rendered as a light blue translucent band with a light foam line, the submerged
 part of the body seen slightly through the water, a dark pool wall and a lane
-rope in the background, water droplets and a small splash in the air.`
+rope in the background, water droplets and a small splash in the air.
+
+`<HOMME>` — shirtless, very heavily muscled, black shorts, black sneakers, short
+cropped hair, a sculpted realistic face with eyes, nose and lips in the same
+glossy white material.
+
+`<FEMME>` — athletic, toned and clearly feminine build with the same strongly
+defined musculature, black sports bra, black fitted shorts, black sneakers, hair
+in a high ponytail, a sculpted realistic face with eyes, nose and lips in the
+same glossy white material.
 
 ## Precision du mouvement : tout decompter
 
-L'utilisateur verifie les details articulaires : il a refuse le premier lot temoin
-parce que **le poignet ne tournait pas en haut du curl marteau**. Le prompte doit
-donc decrire, pour CHAQUE position : l'articulation, le sens, l'amplitude et
-l'orientation de l'objet tenu, en verifiant la coherence avec la variante
-(variante « supination » ≠ variante « marteau », « prise serrée » ≠ « prise
-large », etc.). Ecrire noir sur blanc « cette rotation doit etre evidente quand on
-compare les deux panneaux » aide le modele a la rendre visible.
+L'utilisateur verifie les details articulaires : il a refuse le premier lot
+temoin parce que **le poignet ne tournait pas en haut du curl marteau**. Le
+prompte doit decrire, pour CHAQUE position : l'articulation, le sens,
+l'amplitude et l'orientation de l'objet tenu. Quand l'utilisateur fournit un
+dessin technique, on lui donne le mouvement et on ecrit :
 
-## Ce que le modele fait, constate le 24 septembre 2026
+    The exercise and its two positions are EXACTLY those of the second image:
+    same posture, same arm path, same grip, same wrist orientation at the bottom
+    and at the top. Reproduce them in the style of the first image, never in the
+    line-drawing style of the second.
 
-* Canvas : il sort du 1376 x 768 (paysage) quand le prompte dit « wide landscape
-  16:9 ». Sans ces mots, il est sorti en 768 x 1374 (portrait) pour les deux
-  planches `pilote-montees-de-genoux` et `pilote-aqua-jogging`, inutilisables
-  telles quelles (cases de 192 x 687, personnage touchant les bords).
-* Il ne tient JAMAIS la grille 2 x 2 demandee : il dessine 2 rangees x 4
-  colonnes. On en profite : les colonnes 0 et 1 portent les deux positions, les
-  colonnes 2 et 3 les repetent. On ne garde que 0 et 1.
-* Il dessine un filet clair autour de chaque case et tout autour de l'image.
-  `planche-style.py --check` les efface avant de mesurer, sinon le filet est pris
-  pour le personnage.
-* Demander 12 % de marge au-dessus de la tete et sous les pieds : sans cette
-  consigne, le personnage touche le bas de sa case (constate sur
-  `test-a-curl-marteau`).
+## Ce que le modele fait, constate
 
-## Piscine : deux differences
-
-* Le prompte decrit le bassin (eau a mi-poitrine, bande translucide, mur sombre,
-  ligne d'eau, gouttelettes).
-* A la production, ajouter `--fenetre case` : la surface de l'eau a la meme
-  luminosite que le corps, la detection du personnage est impossible, on prend
-  donc la fenetre centree sur la case.
+* Canvas : **il faut ecrire « WIDE LANDSCAPE 16:9 »**. Sans ces mots il sort du
+  768 x 1374 (portrait), inutilisable.
+* Il ne tient **jamais** la grille 2 x 2 : il dessine **2 rangees x 4 colonnes**.
+  On en profite : colonnes 0 et 1 = les deux positions, colonnes 2 et 3 les
+  repetent. On ne garde que 0 et 1.
+* Il dessine un **filet clair** autour de chaque case et de l'image :
+  `planche-style.py` l'efface avant de mesurer.
+* Il faut demander **12 % de marge** au-dessus de la tete et sous les pieds,
+  sinon le personnage touche le bas de sa case.
+* Sans rappel, la masse musculaire diminue d'un lot a l'autre : d'ou le bloc
+  `<STYLE>` recopie a l'identique.
 
 ## Espace de travail : tout pousser tout de suite
 
 L'espace de travail est **reinitialise a chaque message** (tout ce qui n'est pas
 pousse sur GitHub disparait, `.cache` compris). Donc : generer les planches,
 **les commiter et les pousser immediatement**, puis produire les GIF. En cas de
-reinitialisation : `git fetch -q origin arena/01a0d3f4-jarvis-fitness-yanis-emilie-ap && git reset -q --hard FETCH_HEAD`
-puis `bash evolution/media/setup-tools.sh`.
+reinitialisation :
 
-## Controles avant de produire
+    git fetch -q origin arena/01a0d3f4-jarvis-fitness-yanis-emilie-ap
+    git reset -q --hard FETCH_HEAD
+    bash evolution/media/setup-tools.sh        # en tache de fond
 
+## Controles et production
+
+    # controle : 1 personnage par case, marges, paires dupliquees
     .cache/pyvenv/bin/python evolution/media/tools/planche-style.py --check <planche.png>
 
-Attendu : `personnages=1` sur les huit cases, aucun `REFAIRE`, `paire dupliquee`
-pour les quatre comparaisons, et des tailles de position voisines d'une case a
-l'autre (une difference de plus de 20 % trahit un changement d'echelle du modele).
-
-## Production
-
+    # production : <nom>-yanis.gif et <nom>-emilie.gif
     .cache/pyvenv/bin/python evolution/media/tools/planche-style.py \
         --out evolution/media/refonte/gif <planche.png> ...
 
-Sorties : `<nom>-yanis.gif` et `<nom>-emilie.gif`, 246 x 440 (rapport de la photo
-de reference) ou 440 x 246 pour un mouvement allonge, 2 images, 500 ms, boucle
-infinie, environ 50 Ko. Les deux images d'un GIF partagent la meme fenetre de
-cadrage : aucune saccade.
+    # piscine : la surface de l'eau a la meme luminosite que le corps,
+    # la detection est impossible -> fenetre centree sur la case
+    .cache/pyvenv/bin/python evolution/media/tools/planche-style.py --fenetre case \
+        --out evolution/media/refonte/gif <planche-piscine.png>
+
+Sortie : 2 images, 500 ms, boucle infinie. Cadre **246 x 440** (rapport de la
+photo de reference), elargi automatiquement a 308 x 440 ou 374 x 440 quand le
+personnage ne tient pas, sans jamais le couper ni le deformer. Les deux modeles
+d'un meme mouvement partagent le meme cadre.
