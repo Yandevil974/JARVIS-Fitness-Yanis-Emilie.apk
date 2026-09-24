@@ -37,7 +37,7 @@ Vos trois choix sont enregistrés : **famille C** (SVG animé intégré, fond so
 Visuel témoin proposé — **« Mollet en escalier »**, le plus net des quatre écarts d'étirement : le dessin livré montre un étirement **au mur**, alors que la consigne demande **le talon sous le niveau d'une marche**.
 
 - **Rendu** : `evolution/media/review/stretch-temoin-mollet-escalier.png` (à gauche le dessin livré, à droite la proposition).
-- **Source** : `evolution/media/candidate/stretch-witness-mollet-escalier.svg` — SVG autonome, **même gabarit que les 144 animations déjà intégrées** (`viewBox 0 0 120 100`, fond `#0a0e1a`, peau `#e8b896` / `#f0c8a8`, vêtement `#2563eb`, cheveux `#1a1a2e`), animation **3 s en boucle** : le talon descend sous l'arête et remonte.
+- **Aperçu vivant, animé, à la taille réelle (300 px)** : page `Aperçu du lot témoin` (port 5190) — dessin livré à gauche, proposition animée à droite ; page locale : `.cache/witness-preview/index.html`.\n- **Source** : `evolution/media/candidate/stretch-witness-mollet-escalier.svg` — SVG autonome, **même gabarit que les 144 animations déjà intégrées** (`viewBox 0 0 120 100`, fond `#0a0e1a`, peau `#e8b896` / `#f0c8a8`, vêtement `#2563eb`, cheveux `#1a1a2e`), animation **3 s en boucle** : le talon descend sous l'arête et remonte.
 - **Aucune consigne réécrite**, aucune installation, aucun APK : c'est une **proposition**, pas une livraison. Le bloc `fix` correspondant n'est créé qu'après votre verdict.
 - **Ce que je vérifierai avant les 69 autres** si vous validez : lisibilité à 300 px de large (taille réelle dans l'application), position du talon sous l'arête, absence de membre qui traverse le corps, animation fluide en boucle, planche avant/après, parcours de test qui échoue sur la version livrée.
 
