@@ -34,7 +34,7 @@ Je n'ai **pas de vision** sur les fichiers : je ne peux donc pas juger un rendu 
 
 Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement est beau ou parfaitement juste**. **La validation visuelle du lot témoin est donc la vôtre** : je vous montre les images en pleine taille avant toute série.
 
-### Lot témoin produit (1 mouvement, à valider)
+### Lot témoin produit (1 mouvement) — **refusé par vous, correction en cours**
 
 | | |
 |---|---|
@@ -43,6 +43,20 @@ Cela suffit à écarter une planche ratée, **pas à garantir qu'un mouvement es
 | Rendu | `evolution/media/refonte/pilote-curl-marteau.png` — les 4 images, Yanis en haut, Émilie en bas |
 | GIF | `curl-marteau-assis-yanis.gif` (47 Ko) et `curl-marteau-assis-emilie.gif` (62 Ko), **246 × 440**, 2 images, 500 ms, boucle infinie |
 | Contrôles | 8 cases à **1 personnage**, marges hautes et basses ≈ 12 %, échelles identiques d'une position à l'autre (164 × 302 puis 161 × 302 pour Yanis), paires dupliquées reconnues |
+
+### Décisions que vous avez prises (24 septembre 2026)
+
+| Question | Réponse |
+|---|---|
+| Modèle féminin | **seulement les 95 mouvements vus par Émilie** (les 57 autres gardent le modèle masculin) |
+| Format des GIF | **portrait 246 × 440 conservé** (rapport de votre photo) |
+| Visage | **générique** réaliste sculpté dans le même matériau blanc — pas de ressemblance, donc pas de portrait à fournir |
+| Lot témoin | **à corriger** (vos indications à préciser) ⇒ la série ne démarre qu'après votre feu vert |
+| Dessins d'étirement (29) | question encore ouverte |
+
+### ⚠ Incident d'espace de travail — 24 septembre 2026, rien perdu
+
+En cours de séance, l'espace de travail a été **réinitialisé** sur un clone neuf de `main` : `PASSATION.md`, `evolution/`, `downloads/` et le dossier `.cache` (outils Python, Java, `node_modules`) avaient disparu de la machine. **Tout le travail était poussé sur GitHub** : la branche a été ramenée au commit `0b1cdbd` d'un simple `git reset --hard`, et `evolution/media/setup-tools.sh` a été relancé. Aucun média, aucun document, aucune signature perdue. Le lien de téléchargement de la 1.4.8 reste valable.
 
 ### Ce que le modèle fait, constaté sur 8 planches
 
