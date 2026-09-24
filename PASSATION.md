@@ -11,7 +11,59 @@ Lien de branche si vous préférez :
 
 Cette version contient **tous les visuels manquants du premier lot** (Tabata au sol, 4 étirements, 10 variantes, récupérations piscine, correctif 1.4.7) et passe **64/64 tests**, dont la mesure du script réellement embarqué dans l'APK.
 
+## ⏸ Chantier ouvert — refaire tous les GIF animés d'après votre photo (24 septembre 2026)
+
+> « Refaire tous les gif animés en fonction de l'image que je te joins en photo. ils doivent ressembler identiquement a la photo et doivent etre animé. Tiens en compte pour faire un modèle féminin pour Emilie. Faire un visage sur la photo » — puis « ensuite tu me rappelles pour l'IA conversationnelle ».
+
+### Où en était le projet (relu avant toute modification)
+
+La 1.4.8 est livrée et vérifiée (64/64 tests, signature `150e3846…`) ; il restait à refaire 2 animations de variantes, en produire 3, les câbler et reconstruire une version complète, votre essai sur téléphone étant la seule acceptation encore en attente.
+
+### ⛔ Bloquant : la photo n'est pas arrivée
+
+Le message ne contenait **aucune pièce jointe** (rien dans l'espace de travail non plus). **Aucune image n'a donc été générée** : produire des GIF dans un style deviné aurait gaspillé des images et risqué un rendu que vous n'avez pas choisi. **Renvoyez la photo** et la production démarre au tour suivant.
+
+### Ce qui a été fait sans la photo — aucun APK, aucun média modifié
+
+1. **Branche** : cette session est rattachée à `arena/01a0d3f4-jarvis-fitness-yanis-emilie-ap` (elle ne peut pas pousser sur `arena/01a0cd68-…`). Elle a été avancée **en avance rapide** sur `2c112b1` : tout le travail précédent y est, rien n'est perdu. Le lien de téléchargement épinglé de la 1.4.8 (en tête) reste valable.
+2. **Outillage restauré** après l'effacement de l'espace de travail (`evolution/media/setup-tools.sh`) ; la 1.4.8 est remesurée : taille et SHA-256 conformes, **64/64 tests** avant tout changement.
+3. **Périmètre mesuré** — `evolution/media/review/RESTYLE-INVENTAIRE.json`, régénérable par `node evolution/media/tools/restyle-inventory.mjs` (la liste part de l'APK livré ; les usages sont résolus avec les modules du script embarqué ; les profils viennent des sources de chaque exercice) :
+
+| | Nombre |
+|---|---|
+| GIF dans l'APK 1.4.8 | **144** — 46 filaires (1.4.0) · 48 illustrés (1.4.0) · 33 Tabata au sol · 10 variantes · 7 piscine |
+| dont **non affichés** | **5** — les anciens dessins terrestres des guides aquatiques, remplacés à l'affichage en 1.4.7 |
+| GIF **affichés** à refaire | **139** — 66 vus par les deux profils, 47 par Yanis seul, 26 par Émilie seule |
+| + variantes du lot 2 (non câblées) | **10** (dont les 2 à refaire) |
+| + variantes jamais produites | **3** (rowing unilatéral, développé décliné prise serrée, Pallof press élastique) |
+| **Mouvements à refaire** | **152** · dont **95** vus par Émilie dans son programme et les outils communs (piscine, Tabata) |
+| Tours nécessaires (10 images max par tour) | **31** si Yanis et Émilie ont chacun leur image pour les 152 · **25** si Émilie n'a que ses 95 · **≈ 16** si une seule image générée porte les deux modèles (planche 2 × 2, à valider sur le lot témoin) |
+
+4. **Défaut trouvé dans la 1.4.8** (nouveau constat ouvert `library-thumbnails-missing-for-produced-variants`) : dans la **bibliothèque d'exercices**, la vignette de chaque carte est calculée depuis le GIF servi (`/thumbs/<nom>.webp`). Les **10 variantes produites** n'ont **pas** de vignette dans l'APK ⇒ **10 cartes affichent une image cassée** (la démonstration et le chrono ne sont pas touchés). Le garde-fou de la 1.4.8 ne pouvait pas le voir : ces chemins ne sont écrits nulle part en toutes lettres. Correction prévue **dans la prochaine version complète** (pas de correctif séparé) : une vignette pour chaque GIF servi, et une construction qui refuse un APK s'il en manque une. Le défaut est **reproduit par un test** tant qu'il n'est pas corrigé.
+5. **Modèle féminin pour Émilie — faisabilité vérifiée dans le script livré** : le profil actif est connu (`activeProfile` = `elite` pour Yanis, `emilie`), et les **20** images de l'application passent toutes par une seule fonction d'adresse (`bt`). Il suffira d'y brancher la table « version Yanis / version Émilie » : chaque profil voit son modèle partout (démonstration, chrono, bibliothèque, piscine, Tabata) **sans toucher** au programme, aux noms, aux consignes ni aux données enregistrées ; si une version manque, le visuel actuel reste affiché. Les médias livrés ne sont jamais écrasés : les nouveaux sont **ajoutés**.
+6. **Tests : 66/66** (64 + 2 nouveaux dans `evolution/media/tests/restyle-inventory.test.mjs` : inventaire à jour et défaut des vignettes reproduit).
+
+### Méthode prévue dès réception de la photo
+
+1. **Lot témoin d'abord** : 3 mouvements (un en salle, un au sol, un en piscine), modèle Yanis **et** modèle Émilie, visage visible — vous jugez en pleine image avant toute série.
+2. **Production par lots de 10 images au plus**, chaque GIF vérifié **image par image** : mouvement prescrit, bon outil, bon angle, bonne variante, visage présent ; piscine : bassin au bon niveau, jamais de vélo, d'elliptique ni de photo ; jamais de famille C ; aucune consigne réécrite, aucun miroir global.
+3. **Les 5 animations restantes du lot 2** (2 à refaire, 3 à produire) sont faites **directement dans le nouveau style**, sans double travail ; le câblage prévu (carte, un fichier pour deux identifiants, tests à 10 variantes) est repris dans le même mouvement.
+4. **Une seule version complète à la fin**, signée `150e3846…` : il faudra **recoller la clé de récupération** (le fichier `/tmp/rk.txt` a disparu avec l'effacement ; 6ᵉ caractère = lettre « l » minuscule).
+
+### Questions ouvertes — à trancher avec l'envoi de la photo
+
+1. **La photo** (bloquant).
+2. **Émilie** : modèle féminin sur **toute la bibliothèque** (152) ou **seulement ce qu'elle voit** (95) ?
+3. **Dessins d'étirement** (29 dessins fixes, pas des GIF) : les passer aussi au nouveau style, ou les laisser tels quels ?
+4. **Visage** : visage réaliste générique dans le style de la photo, ou ressemblant à Yanis et à Émilie (il faudrait alors un portrait de chacun) ? À noter : dans le format actuel 480 × 262, un visage mesure environ 30 pixels de haut.
+
+### Ensuite
+
+- **IA conversationnelle** : toujours en pause ; **je vous la rappelle dès la fin de la refonte des GIF**, comme demandé.
+
 ## Ce qui reste à faire — état exact au 24 septembre 2026
+
+> **Mise à jour (refonte demandée)** : la refonte de tous les GIF passe **en premier** (section ci-dessus). Les points 1 et 2 ci-dessous restent valables mais seront exécutés **dans le nouveau style**, au sein de la refonte.
 
 ### 1. Variantes « alias » : 13 restent à traiter (sur 27 mesurées)
 

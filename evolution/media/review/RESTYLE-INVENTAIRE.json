@@ -1,0 +1,3881 @@
+{
+ "date": "2026-09-24",
+ "demande": "« Refaire tous les gif animés en fonction de l'image que je te joins en photo. ils doivent ressembler identiquement a la photo et doivent etre animé. Tiens en compte pour faire un modèle féminin pour Emilie. Faire un visage sur la photo »",
+ "statut": "inventaire-mesure — production en attente de la photo de reference (non recue dans le message)",
+ "mesureSur": {
+  "apk": "downloads/Yanis-Fitness-Evolution-1.4.8.apk",
+  "apkSha256": "fee667192291dd8adc93593bb395b6193e82849e11a4d5db94bf9218c8b99e9f",
+  "paquetWeb": "assets/public/assets/index-CBCies4k.js",
+  "etapesPiscine": 420
+ },
+ "resume": {
+  "gifLivres": 144,
+  "parLot": {
+   "1.4.0 / A-filaire-anatomique": 46,
+   "1.4.0 / B-rendu-illustre": 48,
+   "1.4.8-variante / B-rendu-illustre (produit 1.4.8)": 10,
+   "1.4.8-piscine / B-rendu-illustre (produit 1.4.8)": 7,
+   "1.4.8-tabata-sol / B-rendu-illustre (produit 1.4.8)": 33
+  },
+  "gifAffiches": 139,
+  "gifNonAffiches": 5,
+  "lot2NonCable": 10,
+  "aProduire": 3,
+  "mouvementsARefaire": 152,
+  "vusParYanis": 113,
+  "vusParEmilie": 92,
+  "mouvementsVusParEmilie": 95,
+  "animationsAProduire": {
+   "modeleMasculinYanis": 152,
+   "modeleFemininEmilie_bibliothequeComplete": 152,
+   "modeleFemininEmilie_seulementCeQuElleVoit": 95
+  },
+  "toursMinimum_10imagesParTour": {
+   "yanisEtEmilieBibliothequeComplete": 31,
+   "yanisEtEmilieSeulementCeQuElleVoit": 25
+  }
+ },
+ "regles": [
+  "Une image generee = une planche de deux postures = un GIF de 2 images (outil panels-to-gif.py).",
+  "Chaque GIF est verifie image par image : mouvement prescrit, bon outil, bon angle, bonne variante.",
+  "Jamais d’image de la famille C ; piscine : jamais de velo, d’elliptique ni de photo generique.",
+  "Aucune consigne n’est reecrite pour justifier une image ; pas de rotation ni de miroir global.",
+  "Livraison : une seule version complete a la fin (regle 7)."
+ ],
+ "orphelines": [
+  "/media/48fe4a8cbb0d125c.gif",
+  "/media/7517a916496ec766.gif",
+  "/media/b2b32833d73d3ca4.gif",
+  "/media/f1dde35bd517f24b.gif",
+  "/media/faa82528766b9402.gif"
+ ],
+ "animations": [
+  {
+   "fichier": "/media/03098b19c4672ce5.gif",
+   "sha256": "03098b19c4672ce5b4936a033af650a8e35c6f39376b700ea31b2ba7a5856fd0",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Abduction hanche debout à la poulie",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "abduction-hanche-debout-a-la-poulie [emilie]",
+     "abduction-hanche-a-la-poulie [emilie]",
+     "fire-hydrant-a-l-elastique [emilie]",
+     "abduction-hanche-a-la-poulie-myo-reps [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "abduction hanche debout a la poulie",
+     "abduction hanche a la poulie",
+     "abduction hanche a la poulie — myo-reps"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/04ab405e919744b5.gif",
+   "sha256": "04ab405e919744b52cf0eb144c8dff6be890d27d427326982cbc634d2597766d",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "kickback a l'elastique",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "kickback a l'elastique"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/055d358895efaa10.gif",
+   "sha256": "055d358895efaa10ac36f65d9fa19aecf15c5492042b09d2b30cf85cb49accbd",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "246x440, 2 images, 650 ms",
+   "sujet": "Soulevé de terre roumain haltères",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "souleve-de-terre-roumain-halteres [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "souleve de terre roumain halteres"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/0766d3a06bf79dc8.gif",
+   "sha256": "0766d3a06bf79dc81abcaa97581260ec7ef40bf850fc4094799ad97321a378e6",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Pont fessier au sol — activation",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "glute-bridge-pieds-sur-banc [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "glute bridge pieds sur banc"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/0860394a5a99f74b.gif",
+   "sha256": "0860394a5a99f74baa5e7d5e710a01d3ecfe36fa54227f79885cb4886040b5a0",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Tirage horizontal à la poulie",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "tirage-horizontal-a-la-poulie [emilie]",
+     "rowing-a-l-elastique [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "tirage horizontal a la poulie"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/0a5625b92247ed69.gif",
+   "sha256": "0a5625b92247ed69c379367e2dba0a39797eddb531fb285f4377e6fb862b9839",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "246x440, 2 images, 650 ms",
+   "sujet": "Rowing assis, prise neutre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "rowing-assis-prise-neutre [yanis]",
+     "rowing-assis-etirement [yanis]",
+     "rowing-assis-au-cou [yanis]",
+     "rowing-assis-cable-unilateral [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "rowing assis, prise neutre"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/10ab787fbf26b1f4.gif",
+   "sha256": "10ab787fbf26b1f4d54bdea8c6e46c5d379ebb72408006befecea1881b63feca",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Mollets unilatéraux",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "mollets-unilateraux [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "mollets unilateraux"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/1317e405efd6ef2b.gif",
+   "sha256": "1317e405efd6ef2bb1231a29219b959feb72846e218ed452efa3db7fc7c79f80",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Gainage planche",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "gainage-planche [emilie]",
+     "circuit-gainage-planche-lateral-bird-dog [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "circuit gainage (planche + lateral + bird dog)",
+     "gainage planche"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/1519aacc58d53c5c.gif",
+   "sha256": "1519aacc58d53c5c4eccd2c635d42279bde3ab9e4444be7533aedf3399ea77dc",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Hip thrust barre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "hip-thrust-barre [emilie]",
+     "hip-thrust-unilateral-leste [emilie]",
+     "hip-thrust-barre-test-de-charge-max-3-5-reps [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "hip thrust barre",
+     "hip thrust barre — test de charge max (3-5 reps)",
+     "hip thrust unilateral leste"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/16f6ff0f7ceba611.gif",
+   "sha256": "16f6ff0f7ceba611e05b81c1b5a34c661faf31ddeeae722729bcf8ce75013368",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Relevés de jambes incliné",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "releves-de-jambes-incline [yanis]",
+     "releves-de-jambes-suspendu [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "releves de jambes suspendu"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/1c28908ab83cde2e.gif",
+   "sha256": "1c28908ab83cde2e7513028b0fce381cbddc46b1d82a0bc36ca1a92be4b7f4ca",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "246x440, 2 images, 650 ms",
+   "sujet": "Squat cycliste (squat complet)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "squat-cycliste-squat-complet [yanis]",
+     "front-squat [yanis]",
+     "squat-cycliste [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "front squat"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/1c63a36d168d8b74.gif",
+   "sha256": "1c63a36d168d8b7411540b003ea7a5d6684e8a0246ee09e71eae5e671140b3a1",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Soulevé de terre roumain unilatéral haltère",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "souleve-de-terre-roumain-unilateral-haltere [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "souleve de terre roumain unilateral haltere"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/1f27c3cbcf803765.gif",
+   "sha256": "1f27c3cbcf80376551b84215ab931b514cf71701511a5b2b5249efdf63b75168",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 24 images, 1000/100/500 ms",
+   "sujet": "Presse à cuisses pieds hauts",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "presse-a-cuisses-pieds-hauts [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "presse a cuisses pieds hauts"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/22146cff6a787e8a.gif",
+   "sha256": "22146cff6a787e8a5ecf68dce92d3381f242026101d8d1c64a68a98310d3fa65",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Développé militaire debout",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-militaire-debout [yanis]",
+     "developpe-derriere-la-nuque [yanis]",
+     "developpe-militaire-inertie-depuis-les-pins [yanis]",
+     "developpe-militaire-test-1rm [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe militaire debout"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/22ce97e4b3cb18cf.gif",
+   "sha256": "22ce97e4b3cb18cfa81ecb4da116209f07944b56bcd44b5ab9ee7afaca0325b1",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Développé incliné haltères",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-incline-halteres [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe incline halteres"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/2c51d8ca1b6fb79a.gif",
+   "sha256": "2c51d8ca1b6fb79abe3f9beec8ee7f292f8c34ee7ef488a1b314eca04453ed57",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Back squat (charge modérée)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "back-squat-charge-moderee [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "back squat (charge moderee)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/2e234599c9335530.gif",
+   "sha256": "2e234599c933553069674ed226982c52a5a756503a20f3bdb2ae9c6480795c55",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x262, 2 images, 650 ms",
+   "sujet": "Pompes au bord",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Pompes au bord"
+    ],
+    "etapesPiscine": 9,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/30adf4e98e55b6cd.gif",
+   "sha256": "30adf4e98e55b6cd39a21c87b8dfd9a1b21cf460a5e2a6de4bc405d4f6714074",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Développé couché barre plat",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-couche-barre-plat [yanis]",
+     "developpe-couche-decline-prise-serree [yanis]",
+     "developpe-couche-plat-inertie-depuis-les-pins [yanis]",
+     "developpe-couche-barre [yanis]",
+     "developpe-couche-test-1rm [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe couche barre plat"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/36c6cb37445d3880.gif",
+   "sha256": "36c6cb37445d3880f8f938950b710dba9989e8ab6f24f03b65f2ed1002f9c677",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Curl haltères",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-halteres [emilie]",
+     "curl-scott-haltere-prise-neutre [yanis]",
+     "curl-scott-haltere-neutre [yanis]",
+     "curl-scott-90-haltere-supination [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "curl halteres"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/37f614cd3432709b.gif",
+   "sha256": "37f614cd3432709b8d2a251f2fcc3189a1cc630531203b13b60cfff626f6b503",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "step-up haut",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "step-up haut"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/3bcaad5ec7cdf892.gif",
+   "sha256": "3bcaad5ec7cdf8929d142088c88a36ae10eb76ec2d0983da78a3ebb26e49196e",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Pallof press à l'élastique",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "pallof-press-a-l-elastique [emilie]",
+     "pallof-press-a-la-poulie [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "pallof press a l'elastique",
+     "pallof press a la poulie"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/3e2ed581e11781d5.gif",
+   "sha256": "3e2ed581e11781d5b801250601344d71d47296b3f192be85d79aeb3156a6ada5",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Mollets debout unilatéraux",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "mollets-debout-unilateraux [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "mollets debout unilateraux"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/43bad87368c12614.gif",
+   "sha256": "43bad87368c126147f4636853bdfe00d44ee896d5e336fb3906bd1aecde07e4d",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Pompes inclinées (mains surélevées)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "pompes-inclinees-mains-surelevees [emilie]",
+     "pompes [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "pompes inclinees (mains surelevees)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/44fc577dce29aff5.gif",
+   "sha256": "44fc577dce29aff520327bcef618b56eb4d227bd785ff475b03045215245deff",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "246x440, 2 images, 650 ms",
+   "sujet": "Rowing haltère un bras, coude ouvert",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "rowing-haltere-un-bras-coude-ouvert [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "rowing haltere un bras, coude ouvert"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/45a34272da9569a6.gif",
+   "sha256": "45a34272da9569a6de390eb7ef7eb49edfe5cc37c13696e96bad33e6593a4506",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "329x440, 2 images, 650 ms",
+   "sujet": "Développé haltères incliné 30°",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-halteres-incline-30 [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe halteres incline 30°"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/489169360e044c48.gif",
+   "sha256": "489169360e044c481886180dd37f731e947876d6f6f79c118e4c6dc2ad250d10",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Kickback à la poulie",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "kickback-a-la-poulie [emilie]",
+     "kickback-a-l-elastique [emilie]",
+     "kickback-a-la-poulie-drop-set-final [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "kickback a la poulie",
+     "kickback a la poulie — drop set final"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/48fe4a8cbb0d125c.gif",
+   "sha256": "48fe4a8cbb0d125c606f37bab3cc78b716a0dbe8b58ae87c6846bc45968be0ff",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Ciseaux au bord (ancien dessin terrestre)",
+   "contexte": "salle-ou-sol",
+   "profils": [],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": false,
+   "nonAffichee": "remplacee a l'affichage par /media/ciseaux-au-bord.gif (guide aquatique produit en 1.4.7)"
+  },
+  {
+   "fichier": "/media/497ab2e22c01080c.gif",
+   "sha256": "497ab2e22c01080c989241eb321ea89e7209601a80bd57132bc2ad79c2e52390",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Extension triceps à la poulie",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "extension-triceps-a-la-poulie [emilie]",
+     "pushdown-triceps-cable [yanis]",
+     "extensions-triceps-poulie [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "extension triceps a la poulie"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/4af33157ce25267c.gif",
+   "sha256": "4af33157ce25267ca764453d99eb3780a1a961d2943d5142069e6ad9f372c5d7",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Tirage vertical prise neutre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "tirage-vertical-prise-neutre [emilie]",
+     "tirage-vertical-prise-large [emilie+yanis]",
+     "tractions-pull-up [yanis]",
+     "tractions-supination-chin-up [yanis]",
+     "tractions-prise-large [yanis]",
+     "lean-away-pull-ups [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "tirage vertical prise large",
+     "tirage vertical prise neutre"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/4c2b19fa924f90a8.gif",
+   "sha256": "4c2b19fa924f90a8f97cb8467ba138a9e26f4fceaef49ebc80e687c2a350adee",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "403x440, 2 images, 650 ms",
+   "sujet": "Triceps extensions haltères, banc plat",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "triceps-extensions-halteres-banc-plat [yanis]",
+     "french-press-poulie-basse [yanis]",
+     "french-press-haltere-un-bras [yanis]",
+     "extensions-triceps-halteres-incline [yanis]",
+     "extensions-triceps-halteres-plat [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "french press poulie basse"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/4dfda05b1db24000.gif",
+   "sha256": "4dfda05b1db24000b0d28ca4c7509769f7dcee856355ece6f5dce2ad745622e0",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "246x440, 2 images, 650 ms",
+   "sujet": "Rowing haltère un bras",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "rowing-haltere-un-bras [emilie+yanis]",
+     "rowing-haltere-buste-penche [yanis]",
+     "rowing-haltere-un-bras-prise-neutre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "rowing haltere un bras"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/4eff701bcdf9a359.gif",
+   "sha256": "4eff701bcdf9a35902cc79d94daeaf3934f5224ed34cc0b535762b1000388515",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x268, 2 images, 650 ms",
+   "sujet": "Leg curl allongé",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "leg-curl-allonge [yanis]",
+     "leg-curl-allonge-pieds-pointes [yanis]",
+     "leg-curl-allonge-pieds-flechis [yanis]",
+     "leg-curl-allonge-1-1-4-en-haut [yanis]",
+     "glute-ham-raise [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "leg curl allonge"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/530326beb7c7a652.gif",
+   "sha256": "530326beb7c7a6525a6db69d7d3ca5c428632c21e3d4b21342a4f53bc83666b2",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "268x480, 2 images, 650 ms",
+   "sujet": "Back squat",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "back-squat [emilie+yanis]",
+     "back-squat-barre-haute [yanis]",
+     "back-squat-inertie-pause-complete [yanis]",
+     "safety-bar-squat-ou-barre-classique [yanis]",
+     "back-squat-test-1rm [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "back squat barre haute"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/5d6a89132df205f8.gif",
+   "sha256": "5d6a89132df205f8c8b317a4b772fb16243420b1f04ca6c57d9428b7a13d512b",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Extensions triceps barre EZ",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "extensions-triceps-barre-ez [yanis]",
+     "barre-au-front-pushdown-triceps [yanis]",
+     "extensions-triceps-pullover-barre-ez [yanis]",
+     "california-press-barre-au-cou [yanis]",
+     "extensions-triceps-barre-ez-pullover [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "extensions triceps barre ez"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/5dd80c9e1b36df25.gif",
+   "sha256": "5dd80c9e1b36df255264ea1416445fbd45f160e52215cbe7dc89255bf497d82a",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Hack squat",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "hack-squat [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "hack squat"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/6223da1b562d9339.gif",
+   "sha256": "6223da1b562d9339185be257ebded7651730b9c7bb0364997358013a0fd51753",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Soulevé de terre roumain unilatéral",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "souleve-de-terre-roumain-unilateral [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "souleve de terre roumain unilateral"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/63e925f417c73b92.gif",
+   "sha256": "63e925f417c73b929aeb4063c8e991b7cbeeebed42e82c00438ebd226b89f3fe",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Développé haltères décliné, prise neutre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-halteres-decline-prise-neutre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe halteres decline, prise neutre"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/66849c3144d589f2.gif",
+   "sha256": "66849c3144d589f2d92695012ccc8fa8f4b679b9106f035a1dcc204c801c7eeb",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Reverse crunch",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "reverse-crunch [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "reverse crunch"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/6809d9052927484a.gif",
+   "sha256": "6809d9052927484a8e7906a825111325cd7237a420b343e83d4da93f2f7c06ec",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "step-up sur banc (hauteur du genou)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "step-up sur banc (hauteur du genou)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/6fcfe5741629ca2a.gif",
+   "sha256": "6fcfe5741629ca2a80dbcdce27704d88c80a5421b6947bcdef971878e704dbfd",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Développé haltères plat",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-halteres-plat [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe halteres plat"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/7517a916496ec766.gif",
+   "sha256": "7517a916496ec76690a296f0a58884b42164aa323af94d118376c1870b6c551f",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Talons-fesses (ancien dessin terrestre)",
+   "contexte": "salle-ou-sol",
+   "profils": [],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": false,
+   "nonAffichee": "remplacee a l'affichage par /media/talons-fesses.gif (guide aquatique produit en 1.4.7)"
+  },
+  {
+   "fichier": "/media/789c6d90f30eb33e.gif",
+   "sha256": "789c6d90f30eb33e14aafee398dfea6c1b1dcbbe1ba4fc0e1e7717ec7c0d2239",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Crunch sur swiss ball",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "crunch-sur-swiss-ball [yanis]",
+     "jackknife-sur-swiss-ball [yanis]",
+     "ab-wheel-roulette [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "jackknife sur swiss ball"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/78f9aee57a4101b1.gif",
+   "sha256": "78f9aee57a4101b1fd04ddd6ef1228002d7cb0cabf235c089a2164adf4eecf43",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Goblet squat",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "goblet-squat [emilie]",
+     "squat-au-poids-du-corps [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "goblet squat"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/7c0c6d264e85d66a.gif",
+   "sha256": "7c0c6d264e85d66a343c26079fb0c8a57d36c68e18d36fcace0d7e7f53485f50",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Leg curl machine (ou swiss-ball leg curl)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "leg-curl-machine-ou-swiss-ball-leg-curl [emilie]",
+     "leg-curl-machine [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "leg curl machine",
+     "leg curl machine (ou swiss-ball leg curl)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/805f8592e2bccb1a.gif",
+   "sha256": "805f8592e2bccb1aa6ad76526576907b57cc0535b1dd228970012882653bc599",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Écartés haltères décliné",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "ecartes-halteres-decline [yanis]",
+     "ecartes-halteres [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "ecartes halteres decline"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/882c9c361686a9c9.gif",
+   "sha256": "882c9c361686a9c97f704e9dbaa422e67f86b41e22a64c057a6a18e981d78352",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Curl Scott barre EZ, pronation",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-scott-barre-ez-pronation [yanis]",
+     "curl-scott-barre-ez-supination [yanis]",
+     "curl-poulie-basse-supination [yanis]",
+     "curl-barre-debout [yanis]",
+     "curl-poulie-basse [yanis]",
+     "curl-barre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "curl barre debout"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/8eecb0152081ff26.gif",
+   "sha256": "8eecb0152081ff26fc29f4ecccb779e99ac42f8aec7cfbed46fc6c0ccfb21a31",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Pont fessier au sol — activation",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "pont-fessier-au-sol-activation [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "pont fessier au sol — activation"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/8fe5818f3a4ebebe.gif",
+   "sha256": "8fe5818f3a4ebebe3d5d4b90c57a1aa03674f202c18be350b6ed503271a12416",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Curl marteau assis",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-marteau-assis [yanis]",
+     "curl-marteau [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "curl marteau assis"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/93ab17b0de26fbc8.gif",
+   "sha256": "93ab17b0de26fbc800fa70bf454f79459f55b6e2e45602699de2b659e37c9d07",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Rowing barre buste penché",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "rowing-barre-buste-penche [emilie]",
+     "rowing-barre-buste-penche-test-3-5-reps [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "rowing barre buste penche",
+     "rowing barre buste penche — test (3-5 reps)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/995e1f9a9cedc5ec.gif",
+   "sha256": "995e1f9a9cedc5ecd79336c5561813f8bf49b145cedc8deaeee7d1cbdef446b2",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Step-up sur banc (hauteur du genou)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "step-up-sur-banc-hauteur-du-genou [emilie]",
+     "fentes-avant-alternees [emilie]",
+     "step-up-haut [yanis]",
+     "fentes-barre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "fentes avant alternees"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/9dfc7f7acb3e74e5.gif",
+   "sha256": "9dfc7f7acb3e74e5547d56b2cd8bea8549cd46a754038ab52b0bb1834149a73d",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Rowing barre buste penché, pronation",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "rowing-barre-buste-penche-pronation [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "rowing barre buste penche, pronation"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/9e7f92622aca6913.gif",
+   "sha256": "9e7f92622aca69130d7c7f0627ff58e031bc5bf633a0ac98cee3edfdc795d73e",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Élévations latérales assises",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "elevations-laterales-assises [yanis]",
+     "elevations-laterales-assises-variante [yanis]",
+     "elevations-laterales-coude-a-90 [yanis]",
+     "elevations-laterales-incline-30-face-au-banc [yanis]",
+     "elevations-laterales-incline-30 [yanis]",
+     "elevations-laterales-incline-45 [yanis]",
+     "elevations-laterales [yanis]",
+     "elevations-laterales-incline [yanis]",
+     "elevations-laterales-lean-away [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "elevations laterales"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/9f22747c305f521b.gif",
+   "sha256": "9f22747c305f521be1a66870222c4866a6cddc082c06543da6d37a4bb62c73eb",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Soulevé de terre roumain barre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "souleve-de-terre-roumain-barre [emilie+yanis]",
+     "souleve-de-terre-roumain-barre-test-3-5-reps [emilie]",
+     "good-morning-debout [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "souleve de terre roumain barre"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/9f8ae03b97d31344.gif",
+   "sha256": "9f8ae03b97d31344f9b2cd28aad7623c6f7060223f060fd9d818c77e48a57ca8",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x262, 2 images, 650 ms",
+   "sujet": "Leg press",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "leg-press [yanis]",
+     "leg-extension [yanis]",
+     "leg-press-unilateral [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "leg press"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/a4c1fb89be18062f.gif",
+   "sha256": "a4c1fb89be18062fea1fe6fc9f3846bb74fe240f8d64e80ea5cf89d6578cd5f1",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Développé couché haltères",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-couche-halteres [emilie]",
+     "developpe-halteres-incline-pronation [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe couche halteres"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/a5c1c2427ee83c93.gif",
+   "sha256": "a5c1c2427ee83c931e2d8dd1e82c26a45a3b00126406e87f82d8caa0a46b0708",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "246x440, 2 images, 650 ms",
+   "sujet": "Crunch à la poulie (ou au sol)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "crunch-a-la-poulie-ou-au-sol [emilie]",
+     "crunch-a-la-poulie [emilie+yanis]",
+     "wood-chop-poulie-haute [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "crunch a la poulie"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/a8b1d1173ade4e8f.gif",
+   "sha256": "a8b1d1173ade4e8f688967121cd0d74df3eae48a0ce1448f79ecf0a20624e571",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "403x440, 2 images, 650 ms",
+   "sujet": "Soulevé de terre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "souleve-de-terre [yanis]",
+     "souleve-de-terre-partiel-prise-snatch [yanis]",
+     "souleve-de-terre-partiel [yanis]",
+     "souleve-de-terre-test-1rm [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "souleve de terre"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/a8fb4616e53e9cb9.gif",
+   "sha256": "a8fb4616e53e9cb9d485acc9691e7eb9ce98c6ea86ab35113d63f31a476db160",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x262, 2 images, 650 ms",
+   "sujet": "tractions (pull-up)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "tractions (pull-up)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/aab0de0aad0c275a.gif",
+   "sha256": "aab0de0aad0c275a57acb64ffac64dc49290e99ba8c12e1e92b99c0fd393f84a",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Bird dog",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "bird-dog [emilie]",
+     "mobilite-des-epaules [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "bird dog",
+     "clamshell a l'elastique"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/afe2f533cbbef546.gif",
+   "sha256": "afe2f533cbbef54634fcb4b1e234d14f46178fcfb17a4fbe355b73479ec6b2af",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Relevés de jambes allongée",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "releves-de-jambes-allongee [emilie]",
+     "releves-de-jambes [emilie]",
+     "releves-de-jambes-allonge [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "releves de jambes",
+     "releves de jambes allongee"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-back-extension-45-snatch.gif",
+   "sha256": "730b7234c8274f84477113eb72d39a4c83fe28228f1b20ab06189016d6655783",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Back extension 45°, prise snatch",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "back-extension-45-prise-snatch [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-curl-concentration.gif",
+   "sha256": "fb67e4bf474304791f04e1cf871629b580dabed5e146bb6864a3434affeff4b2",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Curl concentration",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-concentration [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-curl-haltere-supination-banc-scott-90.gif",
+   "sha256": "c8179e8aa890fcb27227025bf25dee1a0cdaed798371b9528674a4d36d85bd24",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Curl haltère supination, banc Scott 90°",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-haltere-supination-banc-scott-90 [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-curl-zottman-assis.gif",
+   "sha256": "2dfb0380ad2025fd24714172f976b7d05435517cdb442ccc3c29c8d1465a4a16",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Curl Zottman assis",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-zottman-assis [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-curl-zottman-un-bras-banc-scott.gif",
+   "sha256": "35b0db62a3216ef54850e2bfab0387e721477124b522d7ea5e78f1044dfbaae1",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Curl Zottman un bras, banc Scott",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-zottman-un-bras-banc-scott [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-curl-zottman.gif",
+   "sha256": "a02eeed2abbc7d5682b0d8f9ab25885c696f94a56f469b88e3845e62b1918f76",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Curl Zottman",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-zottman [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-developpe-couche-prise-serree.gif",
+   "sha256": "71a1bf236798788aabe673efc04e646615a8794fa7602262178da9df06648dda",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Développé couché prise serrée",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-couche-prise-serree [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-fentes-arriere-au-poids-du-corps.gif",
+   "sha256": "b99360b29506d6e420e9a5e3c5f81ed1e7aa0b4b489f663e683c5ad3d3dd4a58",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Fentes arrière au poids du corps",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "fentes-arriere-au-poids-du-corps [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-fentes-marchees.gif",
+   "sha256": "95022c2368ab3f9eea5d17eaf2763365d8d6703133391c9ef1eed2538113ae46",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Fentes marchées",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "fentes-marchees [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/alias-tractions-prise-neutre.gif",
+   "sha256": "6a269ac9cc0151328f9913d7c27502d5aeedcd8efdff56c725b2494e40ae5a55",
+   "lot": "1.4.8-variante",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Tractions prise neutre (chin-up)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "tractions-prise-neutre-chin-up [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/b0d0b89c32ca0aec.gif",
+   "sha256": "b0d0b89c32ca0aecd6753e6d90e4c6f13636fa6191580b0a76e84fe558cdd7b2",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "tractions prise neutre (chin-up)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "tractions prise neutre (chin-up)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/b2236e6b7a81a1b5.gif",
+   "sha256": "b2236e6b7a81a1b5b63cd3a28bd16e504534a4f7d72a312505f464d65cb4dd3a",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Dead bug",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "dead-bug [emilie]",
+     "dead-bug-avec-rotation [emilie]",
+     "respiration-diaphragmatique [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "dead bug",
+     "dead bug avec rotation"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/b2b32833d73d3ca4.gif",
+   "sha256": "b2b32833d73d3ca47f79fcf60bb42cab5ac85f4af5e85fbf65b31fa0468e107a",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Mobilité épaules aquatique (ancien dessin terrestre)",
+   "contexte": "salle-ou-sol",
+   "profils": [],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": false,
+   "nonAffichee": "remplacee a l'affichage par /media/mobilite-epaules.gif (guide aquatique produit en 1.4.7)"
+  },
+  {
+   "fichier": "/media/b395c84efcad344b.gif",
+   "sha256": "b395c84efcad344bcccf5d3babb12e7a358cb2370fadb1ee7002ab763bdcc78b",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Câbles croisés",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "cables-croises [yanis]",
+     "ecartes-cables-incline [yanis]",
+     "cables-croises-rotation-externe [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "cables croises"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/b4522eb6968d20d0.gif",
+   "sha256": "b4522eb6968d20d0559bce18552eca086eae217cf32b4a9443e5682f8158f959",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "403x440, 2 images, 650 ms",
+   "sujet": "Développé haltères incliné 45°",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-halteres-incline-45 [yanis]",
+     "developpe-halteres-incline [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe halteres incline"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/b49969e64dc275f5.gif",
+   "sha256": "b49969e64dc275f5e05ea2481130dec742662eecf113ce61f346c69757c30b84",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "abduction hanche a l'elastique",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "abduction hanche a l'elastique"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/b54f07a7b66c1aed.gif",
+   "sha256": "b54f07a7b66c1aed8ffedc004381f3f68325032417e854b6b2a1eb0f3fa2a269",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Curl haltères incliné",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "curl-halteres-incline [yanis]",
+     "curl-halteres-incline-supination [yanis]",
+     "curl-halteres-incline-prise-neutre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "curl halteres incline"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/ba6ba483a1372c9e.gif",
+   "sha256": "ba6ba483a1372c9e61d5b63fb00d44974b009319923258c5ec9405440c9b8197",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x262, 2 images, 650 ms",
+   "sujet": "Développé incliné barre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-incline-barre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe incline barre"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/bc4d9bed4bbb590a.gif",
+   "sha256": "bc4d9bed4bbb590aff307ca8ab71f6e1ad1953d1173002de5e008cf3dd5627df",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Fentes arrière alternées",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "fentes-arriere-alternees [emilie]",
+     "drop-lunges-fentes-sautees-controlees [yanis]",
+     "drop-lunges-fentes-controlees [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "fentes arriere alternees"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/c07b14f1bcc8e8ca.gif",
+   "sha256": "c07b14f1bcc8e8ca141bfd908f8b9721cb1e8a5e005e37693cf7738ab5218f90",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 24 images, 1000/100/500 ms",
+   "sujet": "Mountain climbers",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "mountain-climbers [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "mountain climbers"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/c1065beff4823907.gif",
+   "sha256": "c1065beff48239072c3dbbb3287c1b2c25f81d1e9b40c4d871ed92f9f8ca0893",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Circuit abdominaux (crunch + relevés + gainage)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "circuit-abdominaux-crunch-releves-gainage [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "circuit abdominaux (crunch + releves + gainage)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/c3a2b9892161522e.gif",
+   "sha256": "c3a2b9892161522e3cae0b2b1468181f8ad0bc91d44aaf2cd4233a1846068d8f",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "403x440, 2 images, 650 ms",
+   "sujet": "Triceps dips",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "triceps-dips [yanis]",
+     "dips [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "triceps dips"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/c4d2de309fa47b4c.gif",
+   "sha256": "c4d2de309fa47b4ce66603636791774145189a27d21aa3f2b4e5664023ec29ad",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Rowing barre EZ supination, buste penché",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "rowing-barre-ez-supination-buste-penche [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "rowing barre ez supination, buste penche"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/ca785b4cf81c98fa.gif",
+   "sha256": "ca785b4cf81c98fab635d982878ec672e3effe43efb2ffb6216fce7b64269521",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Face pull à l'élastique",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "face-pull-a-l-elastique [emilie]",
+     "face-pull-a-la-poulie [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "face pull a l'elastique",
+     "face pull a la poulie"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/cd0cc940608ac100.gif",
+   "sha256": "cd0cc940608ac100aac60a2f2f4d501d64cedb5de1402c84b5bc39b502d9f99a",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Élévations latérales haltères",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "elevations-laterales-halteres [emilie+yanis]",
+     "elevations-laterales-halteres-myo-reps [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "elevations laterales halteres",
+     "elevations laterales halteres — myo-reps"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/cf312b839f6da027.gif",
+   "sha256": "cf312b839f6da0278116b3cdecaa76cc3d2483abfd5764041059289cfd4edd7b",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Bulgarian split squat",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "bulgarian-split-squat [emilie+yanis]",
+     "hip-thrust-unilateral-1-jambe [emilie]",
+     "hip-thrust-unilateral [emilie]",
+     "bulgarian-split-squat-halteres [emilie]",
+     "fentes-bulgares-pied-arriere-sureleve [emilie]",
+     "fentes-bulgares-halteres-pied-avant-sureleve [yanis]",
+     "split-squat-poulie-basse [yanis]",
+     "split-squat-barbell-pied-avant-sureleve [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "bulgarian split squat",
+     "bulgarian split squat halteres",
+     "fentes bulgares (pied arriere sureleve)",
+     "hip thrust unilateral",
+     "hip thrust unilateral (1 jambe)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/ciseaux-au-bord.gif",
+   "sha256": "b61c99b6019229aa8d1216252b06d2d46cb72d89073464f3b27fb62aec4473e5",
+   "lot": "1.4.8-piscine",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Ciseaux au bord",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Ciseaux au bord"
+    ],
+    "etapesPiscine": 18,
+    "tabataSol": [],
+    "tabataEau": [
+     "Ciseaux au bord"
+    ],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/d06257e45606b033.gif",
+   "sha256": "d06257e45606b033cb7d47be0e1c485ac608b622bd0891085f27fc28b7c2241c",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "fire hydrant a l'elastique",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "fire hydrant a l'elastique"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/d13d9f751f4731ab.gif",
+   "sha256": "d13d9f751f4731abdb4249c316f468cf34bc0d3d80128d5b539c24cc44c03bd0",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Mollets assis",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "mollets-assis [emilie+yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "mollets assis"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/d9c88be0658a81af.gif",
+   "sha256": "d9c88be0658a81af8a1674bcac3feee1f2d55984ee3e7fad7d18e12cc773d860",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Développé militaire haltères assis",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-militaire-halteres-assis [emilie]",
+     "developpe-militaire-halteres-assis-test-3-5-reps [emilie]",
+     "developpe-halteres-assis-neutre-pronation [yanis]",
+     "developpe-haltere-un-bras-debout [yanis]",
+     "developpe-halteres-assis-prise-neutre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe militaire halteres assis",
+     "developpe militaire halteres assis — test (3-5 reps)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/dc0cabae23adbfd5.gif",
+   "sha256": "dc0cabae23adbfd56ccfa06fdab5a54deb25aa0e1d6f0c0b1c4283848027e631",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "246x440, 2 images, 650 ms",
+   "sujet": "Tirage vertical prise pronation",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "tirage-vertical-prise-pronation [yanis]",
+     "pullover-cable-bras-tendus [yanis]",
+     "tirage-vertical-lean-away [yanis]",
+     "pullover-haltere-plat [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "tirage vertical prise pronation"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/e035a3d8e8c21744.gif",
+   "sha256": "e035a3d8e8c21744f7de801daed7f4708bac75fdcd337151b93e0f143368bd84",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Aqua-jogging sur place",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Aqua-jogging sur place"
+    ],
+    "etapesPiscine": 18,
+    "tabataSol": [],
+    "tabataEau": [
+     "Aqua-jogging"
+    ],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/e56d7d8feec13a3a.gif",
+   "sha256": "e56d7d8feec13a3a370ead3190fef2d36e5538500cf53ba51b31525166ebfe4f",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Gainage latéral",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "gainage-lateral [emilie]",
+     "gainage-lateral-dynamique [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "gainage lateral",
+     "gainage lateral dynamique"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/e5f17140d8d97591.gif",
+   "sha256": "e5f17140d8d97591cd6bba644ca8e65a0dc384d29fa8a7224b444ca15fd095fa",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 24 images, 1000/100/500 ms",
+   "sujet": "Glute bridge en 1,5 reps",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "glute-bridge-en-1-5-reps [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "glute bridge en 1,5 reps"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/ea226c444f72de0f.gif",
+   "sha256": "ea226c444f72de0fcc6dbd84cc42ea2abb43bfc269027c99bc7b78b8e12a8cbf",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "French press barre EZ",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "french-press-barre-ez [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "french press barre ez"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/ebc7379850a4ee2f.gif",
+   "sha256": "ebc7379850a4ee2f98e033812ee8c636eaf7fa44d172682c49f40f78b79a5f22",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "tractions supination (chin-up)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "tractions supination (chin-up)"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/f1dde35bd517f24b.gif",
+   "sha256": "f1dde35bd517f24b2fdba8f8f3823251f18f583236ea0f1229de5d3de748edf5",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 100/1000 ms",
+   "sujet": "Gainage au bord (vertical) (ancien dessin terrestre)",
+   "contexte": "salle-ou-sol",
+   "profils": [],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": false,
+   "nonAffichee": "remplacee a l'affichage par /media/gainage-vertical.gif (guide aquatique produit en 1.4.7)"
+  },
+  {
+   "fichier": "/media/f529e06a69b973f4.gif",
+   "sha256": "f529e06a69b973f45725a5acaf26bc609386433ecc2ec405d3344312495c9f06",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "403x440, 2 images, 650 ms",
+   "sujet": "Mollets debout",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "mollets-debout [yanis]",
+     "mollets-a-la-presse [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "mollets debout"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/f64281e2dbd7986f.gif",
+   "sha256": "f64281e2dbd7986ffff47880df22a7e9d3269be4cf65c860e44b34562271b096",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Back extension horizontal",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "back-extension-horizontal [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "back extension horizontal"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/f73444e9dc2fee89.gif",
+   "sha256": "f73444e9dc2fee896e9b54d3370b5d181994f222c684edaf02b13bc626f51594",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Abduction assise (machine ou élastique)",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "emilie"
+   ],
+   "utilisations": {
+    "exercices": [
+     "abduction-assise-machine-ou-elastique [emilie]",
+     "clamshell-a-l-elastique [emilie]",
+     "abduction-hanche-a-l-elastique [emilie]",
+     "abduction-assise-machine [emilie]",
+     "abduction-assise-en-1-5-reps [emilie]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "abduction assise (machine ou elastique)",
+     "abduction assise en 1,5 reps",
+     "abduction assise machine"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/faa82528766b9402.gif",
+   "sha256": "faa82528766b9402291e4e1d1f67f8cd9d816769c0bf84b6f200def226d77c5b",
+   "lot": "1.4.0",
+   "famille": "A-filaire-anatomique",
+   "format": "300x300, 12 images, 1000/100 ms",
+   "sujet": "Mobilité hanches / chevilles (ancien dessin terrestre)",
+   "contexte": "salle-ou-sol",
+   "profils": [],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": false,
+   "nonAffichee": "remplacee a l'affichage par /media/mobilite-hanches-chevilles.gif (guide aquatique produit en 1.4.7)"
+  },
+  {
+   "fichier": "/media/fabb86971a81ea03.gif",
+   "sha256": "fabb86971a81ea035ec62db1f4ca051ec6e0b79883ecc8cf8f3efcf9e8b583ea",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Leg curl debout",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "leg-curl-debout [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "leg curl debout"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/fd7c5fb1226873f6.gif",
+   "sha256": "fd7c5fb1226873f67a1c3e483d4eaa7a21fa5638452296bcac3c864b6f4e158e",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Battements au bord",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Battements au bord"
+    ],
+    "etapesPiscine": 11,
+    "tabataSol": [],
+    "tabataEau": [
+     "Battements de jambes"
+    ],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/fe34482aa6faf932.gif",
+   "sha256": "fe34482aa6faf932912d5ea52f3e61d3a66150905ecc63ecebd4c99793133c86",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Montées de genoux",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Montées de genoux"
+    ],
+    "etapesPiscine": 18,
+    "tabataSol": [],
+    "tabataEau": [
+     "Montées de genoux"
+    ],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/ff100d7322ba1193.gif",
+   "sha256": "ff100d7322ba11931e490aec507c60e18341cdcfcb9b230fb9bd1848ac6f8fd6",
+   "lot": "1.4.0",
+   "famille": "B-rendu-illustre",
+   "format": "440x240, 2 images, 650 ms",
+   "sujet": "Développé haltères plat, prise neutre",
+   "contexte": "salle-ou-sol",
+   "profils": [
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [
+     "developpe-halteres-plat-prise-neutre [yanis]",
+     "developpe-halteres-incline-45-prise-neutre [yanis]"
+    ],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": [
+     "developpe halteres plat, prise neutre"
+    ]
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/gainage-vertical.gif",
+   "sha256": "c1ca2fa95d562f0244361e19cf4f6bbd5a95eddaf49262669feb80c786622b4f",
+   "lot": "1.4.8-piscine",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Gainage au bord (vertical)",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Gainage au bord (vertical)"
+    ],
+    "etapesPiscine": 18,
+    "tabataSol": [],
+    "tabataEau": [
+     "Gainage vertical"
+    ],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/mobilite-epaules.gif",
+   "sha256": "b4e5111fe897d3eb126dc464e4d06fb9b03503203d2bd4cfb317eab4c3dc02af",
+   "lot": "1.4.8-piscine",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Mobilité épaules aquatique",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Mobilité épaules aquatique"
+    ],
+    "etapesPiscine": 3,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/mobilite-hanches-chevilles.gif",
+   "sha256": "5cb95935f4387cd592d3dfdd5404b87a9f92d28f766de752ab3f3e275a0bb989",
+   "lot": "1.4.8-piscine",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Mobilité hanches / chevilles",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Mobilité hanches / chevilles"
+    ],
+    "etapesPiscine": 3,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/pool-en-place.gif",
+   "sha256": "15fd699293a4c51a8b4383b976a33fbc65c99863c91a0334145321800b203013",
+   "lot": "1.4.8-piscine",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Tour n/N — en place",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 18,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/pool-repos.gif",
+   "sha256": "499b62c636234893be309432c6a7194dbf9014665eb1e87e876eac9c14d9344f",
+   "lot": "1.4.8-piscine",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Repos",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 117,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-battements-de-jambes.gif",
+   "sha256": "348f99f3b87821707d7178cfb1d0c6b23d110bef1bb68eadef555a7a4b9e7d85",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Battements de jambes",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Battements de jambes"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-burpees-simplifies.gif",
+   "sha256": "8d1847db753aa7a6688a09f9e688f8461071bf4698e1540b2e4d003eadb67904",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Burpees simplifiés",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Burpees simplifiés"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-burpees.gif",
+   "sha256": "399a6bcd5fb94900904a320abc301c6447ad2ddb884e0f68f1c3c17b688bb43d",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Burpees",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Burpees"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-chaise-au-mur.gif",
+   "sha256": "931a8fe62d95f9358926fcf151b9b65dabdbb351b225af749cc0e2a39c6e990a",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Chaise au mur",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Chaise au mur",
+     "Chaise douce"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-corde-invisible.gif",
+   "sha256": "c316c8f64bae804adc05ce4152081d80fd338bf9308c25270f026495f22949c6",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Corde invisible",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Corde invisible"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-crunch.gif",
+   "sha256": "0770dab71ccac436a7a9b6c3b9dee18b518e53186ff9a228ca78202818871999",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Crunch",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Crunch"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-dead-bug.gif",
+   "sha256": "fd0fcafa3769df10dbb154a0c3310b8e534067062ee4d072ecefdd53fb937e0a",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Dead bug",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Dead bug"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-dips-au-bord.gif",
+   "sha256": "3f725c57362eae52270cf85dee3731806099bea0d6727ac857883e8af1d44616",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Dips au bord",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Dips au bord"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-fentes-alternees.gif",
+   "sha256": "fd2994c5379edd2ac798cad9948a015c9e3dcc340a1fc78395e86829a32096a3",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Fentes alternées",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Fentes alternées"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-fentes-arriere.gif",
+   "sha256": "4e9fe12fdbb591aaff0259371bbd96f83f14d4b5be2c45db3a4f2adfeb7abf63",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Fentes arrière",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Fentes arrière"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-gainage-planche.gif",
+   "sha256": "7fd8f6de2cecd33b34a8638d37a48b4ed145023639eb222cfeb9298714e64128",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Gainage planche",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Gainage planche",
+     "Planche"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-high-knees.gif",
+   "sha256": "e9ee5e6e909efcf990a66d80117f2afd8679c037db1080dbfc3773deaaa4fcbb",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "High knees",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "High knees"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-jumping-jacks.gif",
+   "sha256": "0586539bf96cee260a5ab3fa53fe180a8b293a679180da9b265a87c0009f55f2",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Jumping jacks",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Jumping jacks"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-marche-sur-place.gif",
+   "sha256": "ea2cdf0faa777ae6813ed6a066cfc0a9f175e7f861a512ff5bd4e8feabed42b8",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Marche sur place",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Marche sur place"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-montees-de-genoux.gif",
+   "sha256": "1a3de5badf9ff81ce2060b1234451934f5b85806476fa3972607621e9ca24614",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Montées de genoux",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Montées de genoux"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-montees-sur-mollets.gif",
+   "sha256": "ad47deb39b7ceb8b4df96231e4419cb1cc218b1a6a2bb0ad00cd095b38444c85",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Montées sur mollets",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Montées sur mollets",
+     "Mollets"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-mountain-climbers.gif",
+   "sha256": "7f0089fd6bc37b3ed9a08881e9d8a0161ef8a58925eeb92caa653741fe3aa7cc",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Mountain climbers",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Mountain climbers",
+     "Mountain climbers lents"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-oiseau-chien.gif",
+   "sha256": "f0b1e972b7fa1a628ca121647133cbbd159071415449d33add69c2a941cd4f65",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Oiseau-chien",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Oiseau-chien"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-patineurs.gif",
+   "sha256": "7ded0e40e189b6ae4470cdb2ce1e24ab77002fa3fdcca0e45f609f134ba7eb98",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Patineurs",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Patineurs"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-planche-laterale-d.gif",
+   "sha256": "60adf560e901e6dbc7683404c4c897303389bb920ec4148ebad221a08eca561c",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Planche latérale D",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Planche latérale D"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-planche-laterale-g.gif",
+   "sha256": "af8cd24632e4478f51adff45a22f279e292455ef8b83df303e5abcdf8d142689",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Planche latérale G",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Planche latérale G"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-pompes-au-mur.gif",
+   "sha256": "97503df5888d9479654e72cdacc8fd4cbde12e85e8e10788625819144e2b05b9",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Pompes au mur",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Pompes au mur"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-pompes-inclinees.gif",
+   "sha256": "58bacd5b7ff5095d84f254110535738c825bb9fd03609265b2824488ec6b4339",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Pompes inclinées",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Pompes inclinées"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-pompes.gif",
+   "sha256": "ee281d9bfdd957e78ad9623980270e927f1a1b4c6c214a0dc2f222f679f434f9",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Pompes",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Pompes"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-ponts-fessiers.gif",
+   "sha256": "035858abee1c14fb42623dc811814de5bd8138f93a22be7e3ca638901c6b114e",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Ponts fessiers",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Ponts fessiers"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-releves-de-jambes.gif",
+   "sha256": "1ed15eb2d74757a6e833f9c4d93c15d664433772577000068cf69faad3d5db19",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Relevés de jambes",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Relevés de jambes"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-repos-actif.gif",
+   "sha256": "28680f3fc551a48a7fc5c9479846b9eaabcee486a7391831513ae962770b107b",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Repos actif",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Repos actif"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-respiration-profonde.gif",
+   "sha256": "a9b16942fee54a7f0da0d8c611fd98048b1dd3939b7a8c19b4e17420328df67c",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Respiration profonde",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Respiration profonde"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-russian-twist.gif",
+   "sha256": "7ad9697868d7443a25db4f48c193f1b0a254ff9a46c231adef1f62b33ae31374",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Russian twist",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Russian twist"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-squats-sautes.gif",
+   "sha256": "6fc767e91a17cc80c7b77db29638ff63f57d854d230f26836c3477690741a17b",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Squats sautés",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Squats sautés"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-squats-sumo.gif",
+   "sha256": "3d87a536d09a9f749ce154dbb7e099b30b98048011986c6cb891f3e93f6c0fd2",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Squats sumo",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Squats sumo"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-squats.gif",
+   "sha256": "e673c655d15057c0cca148d43fcd54f438794a460ea63480f53f43c6439b20b3",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Squats",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Squats",
+     "Squats doux"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/tabata-land-superman.gif",
+   "sha256": "e088fdf66750d5ef43298aa49ada007a5937f6d412bbb81dd20b7d6e767fe0aa",
+   "lot": "1.4.8-tabata-sol",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Superman",
+   "contexte": "tabata-sol",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [],
+    "etapesPiscine": 0,
+    "tabataSol": [
+     "Superman"
+    ],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  },
+  {
+   "fichier": "/media/talons-fesses.gif",
+   "sha256": "2f299cdf96963e0d9a5fd9ad59997a02b735ee1cdd47543c4c68efafc1edeadd",
+   "lot": "1.4.8-piscine",
+   "famille": "B-rendu-illustre (produit 1.4.8)",
+   "format": "480x262, 2 images, 500 ms",
+   "sujet": "Talons-fesses",
+   "contexte": "piscine",
+   "profils": [
+    "emilie",
+    "yanis"
+   ],
+   "utilisations": {
+    "exercices": [],
+    "guidesPiscine": [
+     "Talons-fesses"
+    ],
+    "etapesPiscine": 9,
+    "tabataSol": [],
+    "tabataEau": [],
+    "nomsProgramme": []
+   },
+   "affichee": true
+  }
+ ],
+ "lot2": [
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-curl-poulie-basse.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "curl-poulie-basse",
+    "curl-poulie-basse-supination"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-ecartes-cables-incline.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "ecartes-cables-incline"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "a-refaire (pose non convaincante)"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-elevations-incline-30.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "elevations-laterales-incline-30-face-au-banc"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "a-refaire (pose non convaincante)"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-elevations-incline-45.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "elevations-laterales-incline-45"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-extensions-triceps-pullover.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "extensions-triceps-pullover-barre-ez"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-face-pull-elastique.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "face-pull-a-l-elastique"
+   ],
+   "profils": [
+    "emilie"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-kickback-elastique.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "kickback-a-l-elastique"
+   ],
+   "profils": [
+    "emilie"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-leg-extension.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "leg-extension"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-split-squat-poulie.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "split-squat-poulie-basse"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  },
+  {
+   "fichier": "evolution/media/candidate/alias-animations/alias-tractions-prise-large.gif",
+   "lot": "lot-2-variante-non-cablee",
+   "identifiants": [
+    "tractions-prise-large"
+   ],
+   "profils": [
+    "yanis"
+   ],
+   "format": "480x262, 2 images, 500 ms",
+   "statut": "produite, validee, non cablee"
+  }
+ ],
+ "aProduire": [
+  {
+   "sujet": "Rowing assis câble unilatéral (un seul bras)",
+   "identifiants": [
+    "rowing-assis-cable-unilateral"
+   ],
+   "lot": "a-produire",
+   "profils": [
+    "yanis"
+   ]
+  },
+  {
+   "sujet": "Développé couché décliné prise serrée",
+   "identifiants": [
+    "developpe-couche-decline-prise-serree"
+   ],
+   "lot": "a-produire",
+   "profils": [
+    "yanis"
+   ]
+  },
+  {
+   "sujet": "Pallof press à l'élastique",
+   "identifiants": [
+    "pallof-press-a-l-elastique"
+   ],
+   "lot": "a-produire",
+   "profils": [
+    "emilie"
+   ]
+  }
+ ]
+}

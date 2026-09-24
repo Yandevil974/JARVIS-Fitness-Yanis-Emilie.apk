@@ -992,6 +992,30 @@
         ],
         "remaining": "l'essai sur le telephone de l'utilisateur avant fermeture ; les associations historiques des autres noms de recuperation restent marquees non validees"
       }
+    },
+    {
+      "id": "library-thumbnails-missing-for-produced-variants",
+      "scope": "livraison",
+      "exercises": [],
+      "variantesConcernees": [
+        "tractions-prise-neutre-chin-up",
+        "back-extension-45-prise-snatch",
+        "developpe-couche-prise-serree",
+        "curl-haltere-supination-banc-scott-90",
+        "curl-zottman-assis",
+        "fentes-marchees",
+        "curl-zottman-un-bras-banc-scott",
+        "curl-zottman",
+        "curl-concentration",
+        "fentes-arriere-au-poids-du-corps"
+      ],
+      "path": null,
+      "observed": "Mesure du 24 septembre 2026 sur l'APK 1.4.8 livre : la bibliotheque d'exercices n'affiche pas le GIF mais une VIGNETTE dont le chemin est calcule a l'execution (k.gif.replace(\"/media/\",\"/thumbs/\") puis .gif -> .webp). Pour les dix variantes produites, JarvisReviewedView sert /media/alias-….gif ; la vignette attendue /thumbs/alias-….webp n'est PAS dans l'archive (94 vignettes, toutes celles de la 1.4.0). Dix cartes de la bibliotheque affichent donc une image cassee. Le garde-fou de la 1.4.8 (chemins references par le script) ne pouvait pas le voir : ces chemins ne sont ecrits nulle part en toutes lettres. La demonstration (GIF entier) et le chrono ne sont pas touches.",
+      "action": "A corriger dans la prochaine version complete, avec la refonte des GIF : une vignette (premiere image, 240 px de large, webp comme les vignettes livrees) produite pour CHAQUE GIF servi par la bibliotheque, et une construction qui refuse de produire un APK si une vignette derivee d'un GIF servi manque. Aucun correctif separe (regle : une seule version complete a la fin).",
+      "status": "open",
+      "instruction": "Instruction utilisateur : « Livraison : une seule version complète à la fin, jamais de correctif séparé » et « Reprendre les anomalies déjà documentées ; aucun groupe de constats ne se ferme en silence ».",
+      "instructionDate": "2026-09-24",
+      "reproducedBy": "evolution/media/tests/restyle-inventory.test.mjs"
     }
   ]
 }
