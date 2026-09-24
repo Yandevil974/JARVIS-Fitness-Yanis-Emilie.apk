@@ -88,6 +88,33 @@ Les aperçus produits dans la branche de démonstration servent uniquement à
 confirmer cette direction artistique ; ils ne remplacent pas la chaîne média
 1.4.8 et ne doivent pas être câblés automatiquement dans celle-ci.
 
+### Fichiers de référence exacts à conserver
+
+Pour obtenir exactement les mêmes personnages et le même décor, récupérer les
+fichiers binaires présents dans le commit `763f4d7` de la branche de session
+`arena/01a0d4ce-jarvis-fitness-yanis-emilie-ap`, puis les copier dans le
+checkout 1.4.8 sans les régénérer :
+
+```text
+yanis-fitness-evolution/public/visuals/jarvis-man-avatar.png
+yanis-fitness-evolution/public/visuals/jarvis-woman-avatar.png
+yanis-fitness-evolution/public/visuals/jarvis-incline-lateral-raise.gif
+yanis-fitness-evolution/public/visuals/jarvis-incline-lateral-raise.mp4
+```
+
+Empreintes SHA-256 de contrôle :
+
+```text
+8f97597123a88279e551e067db0569712159f159bc07e3780ce325e7381ac822  jarvis-man-avatar.png
+a930c4ca3d96d9328e18441b28b429b63f16a7cf1254dd1e97a3e971dd6026cd  jarvis-woman-avatar.png
+4d47496dbf258ffdd11595e4620707c9652f610599415d8b42b20230b5d475ea  jarvis-incline-lateral-raise.gif
+bc207bbf593715964fad10f83cc50d080ab384b2328c90979af23f944813290f  jarvis-incline-lateral-raise.mp4
+```
+
+Le pack d'aperçu `JARVIS-visual-preview.zip` contient ces deux personnages,
+le GIF et la vidéo. Une nouvelle session doit donc utiliser ces fichiers comme
+références fixes, et non recréer de nouveaux visages ou une nouvelle salle.
+
 ## 4. Exigences de fidélité
 
 Pour chaque exercice :
