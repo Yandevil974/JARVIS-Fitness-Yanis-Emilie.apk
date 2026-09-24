@@ -11,7 +11,7 @@
 | Taille | **28 035 594 octets** |
 | SHA-256 | `fee667192291dd8adc93593bb395b6193e82849e11a4d5db94bf9218c8b99e9f` |
 | Signature | **`150e3846…`** — la même depuis la 1.4.2 ⇒ **installation directe par-dessus la 1.4.6 ou la 1.4.7**, rien à désinstaller, profils et historique conservés |
-| Contrôles | 9/9 DEX identiques octet pour octet à la 1.4.0, signature v2 + v3, alignement vérifié, un seul signataire, **59/59 tests Node** |
+| Contrôles | 9/9 DEX identiques octet pour octet à la 1.4.0, signature v2 + v3, alignement vérifié, un seul signataire, **64/64 tests Node**, construction reproductible à l'octet |
 
 **Important** : le fichier `downloads/Yanis-Fitness-Evolution-1.4.8.apk` portait jusqu'ici un **APK de contrôle** (lot C, `f39cc05a…`). Il a été **remplacé par la version complète**. Si vous aviez téléchargé l'ancien, reprenez le fichier : la taille et l'empreinte ci-dessus le distinguent sans ambiguïté.
 
@@ -25,7 +25,7 @@
 | **4 étirements** dont le dessin montrait un AUTRE mouvement | **4 dessins produits** dans la famille de vos étirements (1376 × 768, posture unique, figure entière, pieds au sol) : mollet en escalier, adduction de la hanche debout, mains croisées derrière le dos, étirement des fléchisseurs. Les anciens dessins restent dans le paquet pour les autres consignes. |
 | **10 variantes de musculation** montrant le dessin d'une autre variante | **10 animations produites** dans la famille des GIF livrés, résolues **par identifiant exact** : tractions prise neutre, back extension 45° prise snatch, développé couché prise serrée, curl haltère supination banc Scott 90°, curl Zottman assis, fentes marchées, curl Zottman un bras banc Scott, curl Zottman, curl concentration, fentes arrière au poids du corps. Aucune substitution par muscle. |
 | **Récupérations piscine sans visuel** | Mesure sur les six protocoles (**420 étapes**) : **117 « Repos » + 18 mises en place** (Tour/Tabata n/N — en place) n'affichaient **aucun** média aquatique. **2 animations produites** (`pool-repos.gif`, `pool-en-place.gif`), servies **seulement** quand un contexte piscine est établi. **420/420 étapes résolvent un média aquatique : zéro vélo, zéro elliptique, zéro photo générique.** |
-| **Défaut de la 1.4.7** (5 animations référencées, absentes de l'APK) | Les 5 fichiers sont embarqués, et la construction **refuse** désormais de produire un APK si un média référencé manque. Un test mesure **l'APK livré**, pas le dossier de travail. |
+| **Défaut de la 1.4.7** (5 animations référencées, absentes de l'APK) | Les 5 fichiers sont embarqués, et la construction **refuse** désormais de produire un APK si un média référencé manque. Deux tests mesurent **l'APK livré** : l'inventaire des fichiers, et le script lui-même exécuté. |
 
 **Total : 54 fichiers média ajoutés** (33 Tabata au sol + 4 étirements + 10 variantes + 2 récupérations + 5 guides aquatiques de la 1.4.7), tous dans la famille visuelle déjà livrée (480 × 262, 2 images, 500 ms pour les GIF ; 1376 × 768 pour les dessins fixes), tous vérifiés **image par image** avant embarquement.
 
@@ -39,7 +39,20 @@ Aucun nom, aucune consigne, aucune durée, aucune prescription, aucun programme,
 - Les associations **historiques** des autres noms de récupération piscine (« Récup — marche », « Récup complète — souffler au bord », « Récup entre tabatas », « Retour au calme ») gardent leur image aquatique livrée, toujours marquée « non validée » : c'est la même honnêteté que la mesure exige.
 - Les autres écarts d'alias déjà tracés dans les constats (dips, élévations, mollets, développés…) restent ouverts : ils n'étaient pas dans le relevé des dix variantes de ce lot, aucune substitution n'a été inventée pour eux.
 
-### 5. Note technique, sans conséquence pour vous
+### 5. La version se vérifie elle-même
+
+Depuis ce lot, un test (`evolution/media/tests/delivered-bundle.test.mjs`) **extrait le JavaScript de l'APK livré** et l'exécute tel quel. Il mesure, sur le fichier que vous téléchargez et non sur la source qui l'a produit :
+
+- les **420 étapes des six protocoles piscine** : table exacte (117 `pool-repos.gif`, 18 `pool-en-place.gif`, 45 marche aquatique, 30 sprint, 24 fractionné, 18 récupération complète, 15 retour au calme, 13 nage douce, …), **aucun chemin `cardio-`, elliptique ou photo** ;
+- les **38 noms du Tabata au sol** : chacun reçoit l'animation de son propre mouvement, et **aucun** ne reçoit une animation de terre dans un pas aquatique ;
+- les **10 variantes** : chacune résolue au niveau `exact` sur sa propre animation ;
+- les **4 étirements** : les nouveaux dessins sont bien ceux servis, les anciens ne le sont plus.
+
+Il vérifie aussi que l'APK, son fichier `.sha256` et son rapport de construction **concordent** (une empreinte recopiée à la main ne suffit plus).
+
+**Construction reproductible** : relancer la construction sur les sources committées reproduit **exactement** le même SHA-256 (`fee66719…`, 28 035 594 octets). La version livrée n'est pas un objet unique non reproductible.
+
+### 6. Note technique, sans conséquence pour vous
 
 L'espace de travail s'est réinitialisé deux fois pendant ces lots ; le fichier de clé de signature avait disparu avec lui. La clé recollée comportait **un seul caractère erroné** : le certificat ne s'ouvrait pas. La correction exacte a été retrouvée par vérification cryptographique, l'identité **`150e3846…`** a été restaurée et l'APK ci-dessus est signé avec elle. La clé ne circule pas dans le dépôt : seuls le texte chiffré et l'empreinte publique y sont.
 

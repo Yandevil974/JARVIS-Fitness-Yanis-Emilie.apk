@@ -218,7 +218,8 @@
         "rule": "Animation humaine produite dans la famille exacte des GIF aquatiques existants (480 x 262, 2 images, 500 ms) a la place du dessin terrestre et de la lacune explicite ; les consignes aquatiques restent celles du paquet : jamais reecrire la consigne pour justifier une image.",
         "verifiedBy": [
           "evolution/media/tests/pool-land-guides.spec.mjs",
-          "evolution/media/tests/media-inventory.test.mjs"
+          "evolution/media/tests/media-inventory.test.mjs",
+          "evolution/media/tests/delivered-bundle.test.mjs"
         ],
         "remaining": "Essai sur le telephone non fait : la correction est prouvee en navigateur et dans l'APK, pas encore sur l'appareil."
       },
@@ -266,7 +267,8 @@
         ],
         "verifiedBy": [
           "evolution/media/tests/tabata-context.test.mjs",
-          "evolution/media/tests/tabata-context.spec.mjs"
+          "evolution/media/tests/tabata-context.spec.mjs",
+          "evolution/media/tests/delivered-bundle.test.mjs"
         ],
         "remaining": "Ouvrir sur téléphone : les 34 autres noms au sol restent sans démonstration dédiée (groupe tabata-missing-demonstrations, décision de style requise).",
         "evidence": "evolution/media/review/REVIEW-TABATA-CONTEXTE.md",
@@ -325,7 +327,8 @@
         "rule": "Animation humaine dans la famille des GIF existants (480 x 262, 2 images, 500 ms), resolue uniquement dans un Tabata au sol ; aucun nom, aucune duree, aucune consigne modifiee.",
         "verifiedBy": [
           "evolution/media/tests/tabata-land-media.test.mjs",
-          "evolution/media/tests/media-inventory.test.mjs"
+          "evolution/media/tests/media-inventory.test.mjs",
+          "evolution/media/tests/delivered-bundle.test.mjs"
         ],
         "remaining": "aucun nom du generateur au sol ; il reste l'essai sur le telephone de l'utilisateur avant fermeture du groupe",
         "covered": "38 noms sur 38 (33 dessins + 5 noms equivalents) ; reste a produire : aucun",
@@ -489,7 +492,13 @@
       "limits": "Mécanisme de mauvais repli reproduit, mais le parcours exact du téléphone signalé par l’utilisateur n’est pas encore reproduit. Examiner les séances complémentaires, les libellés génériques et les anciens minuteurs avec step.img prioritaire dans v5.",
       "action": "Correction du 24 septembre 2026 : plus aucun media de terre dans un contexte piscine. Mesure des six protocoles (420 etapes) : 117 « Repos » et 18 « … — en place » ne resolvaient AUCUN media aquatique ; deux animations humaines ont ete produites dans la famille des GIF aquatiques livres (480 x 262, 2 images, 500 ms) et servies uniquement dans un contexte piscine deja etabli. Les recuperations nommees gardent leur image aquatique livree (marche aquatique, souffler au bord, retour au calme, recup entre tabatas). Les 420 etapes resolvent desormais un media aquatique ou l'animation produite : zero velo, zero elliptique, zero photo generique. Aucun nom, aucune duree, aucune consigne, aucun programme modifie ; hors piscine, rien ne change.",
       "status": "open",
-      "candidateProgress": "Mesure reproductible `.cache/measure-recup.mjs` sur les 420 etapes : 0 sans visuel, 0 media de terre. Tests Node `pool-candidate.test.mjs` (420 etapes, recuperation generique, segment prioritaire) et `media-inventory.test.mjs` (les deux animations sont presentes dans l'APK livre). Parcours telephone non reproduit : le constat reste ouvert."
+      "candidateProgress": "Mesure reproductible `.cache/measure-recup.mjs` sur les 420 etapes : 0 sans visuel, 0 media de terre. Tests Node `pool-candidate.test.mjs` (420 etapes, recuperation generique, segment prioritaire) et `media-inventory.test.mjs` (les deux animations sont presentes dans l'APK livre). Parcours telephone non reproduit : le constat reste ouvert.",
+      "fix": {
+        "verifiedBy": [
+          "evolution/media/tests/delivered-bundle.test.mjs"
+        ],
+        "measuredOnDeliveredScript": "le script extrait de downloads/Yanis-Fitness-Evolution-1.4.8.apk resout les 420 etapes : 117 pool-repos.gif, 18 pool-en-place.gif, aucune image de terre ; la reconstruction reproduit le meme SHA-256"
+      }
     },
     {
       "id": "hip-adduction-not-abduction",
@@ -932,7 +941,8 @@
         "format": "1376 x 768, image fixe, une seule posture, meme famille que les etirements deja livres",
         "verifiedBy": [
           "evolution/media/tests/stretch-media.test.mjs",
-          "evolution/media/tests/media-inventory.test.mjs"
+          "evolution/media/tests/media-inventory.test.mjs",
+          "evolution/media/tests/delivered-bundle.test.mjs"
         ],
         "remaining": "essai sur le telephone de l'utilisateur avant fermeture du groupe"
       }
@@ -954,7 +964,8 @@
         "format": "480 x 262, 2 images, 500 ms, meme famille que les GIF livres",
         "verifiedBy": [
           "evolution/media/tests/alias-visuals.test.mjs",
-          "evolution/media/tests/pool-candidate.test.mjs"
+          "evolution/media/tests/pool-candidate.test.mjs",
+          "evolution/media/tests/delivered-bundle.test.mjs"
         ],
         "remaining": "l'essai sur le telephone de l'utilisateur avant fermeture ; aucune variante du releve n'est laissee de cote"
       }
@@ -976,7 +987,8 @@
         "format": "480 x 262, 2 images, 500 ms, bande d'eau bleue, bassin au bon niveau",
         "verifiedBy": [
           "evolution/media/tests/pool-candidate.test.mjs",
-          "evolution/media/tests/media-inventory.test.mjs"
+          "evolution/media/tests/media-inventory.test.mjs",
+          "evolution/media/tests/delivered-bundle.test.mjs"
         ],
         "remaining": "l'essai sur le telephone de l'utilisateur avant fermeture ; les associations historiques des autres noms de recuperation restent marquees non validees"
       }
