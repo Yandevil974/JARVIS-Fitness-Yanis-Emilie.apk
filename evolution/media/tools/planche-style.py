@@ -330,9 +330,13 @@ def main():
         image = nettoyer_filets(image, lignes, colonnes)
         cellules = [image.crop(boite) for boite in decouper(image, lignes, colonnes)]
         if lignes == 2:
+            # Une seule fenetre pour les deux modeles : le meme mouvement garde
+            # le meme cadre et la meme echelle chez Yanis et chez Emilie.
+            toutes = [cellules[rang * colonnes + colonne]
+                      for rang in range(lignes) for colonne in pris]
+            boite, cadre, orientation = fenetre(toutes, args.orientation, args.fenetre)
             for rang, profil in enumerate(PROFILS):
                 prises = [cellules[rang * colonnes + colonne] for colonne in pris]
-                boite, cadre, orientation = fenetre(prises, args.orientation, args.fenetre)
                 images = [ajuster(cellule, boite, cadre) for cellule in prises]
                 cible = args.out / ('%s-%s.gif' % (source.stem, profil))
                 enregistrer(cible, images)
