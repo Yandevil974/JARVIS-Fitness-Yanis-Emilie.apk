@@ -3,12 +3,6 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "rowing-barre-buste-penche-test-3-5-reps (femme)",
-   "planche": "lot21/rowing-barre-buste-penche-test-3-5-reps.png",
-   "motif": "4e refus : malgre « avant-bras verticaux, barre sous la poitrine », la barre s'arrete encore a la hanche en case de fin",
-   "prescription": "Rowing barre buste penché — test (3-5 reps)"
-  },
-  {
    "mouvement": "developpe-haltere-un-bras-debout (homme)",
    "planche": "lot21/developpe-haltere-un-bras-debout.png",
    "motif": "1er refus : le vert est pose sur l'EPAULE GAUCHE (bras libre) aux deux cases au lieu du deltoide DROIT qui travaille",

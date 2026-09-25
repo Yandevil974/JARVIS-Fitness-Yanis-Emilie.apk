@@ -130,10 +130,24 @@ Relecture batch 3 : 3/3 conformes (coude-au-dessus-de-la-tete, crunch-sur-swiss-
 curl-haltere-supination-banc-scott-90). Feuilles : `verification/lot21-01..04.jpg`,
 `verification/relecture-03.jpg`.
 
-## 12. Couverture et suite
+## 13. Lot 22 + relecture batch 4 (meme tour)
 
-Relus sur les cinq tours : **102 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **145 valides** actuels, **66 restent à relire** (feuilles de 3, mêmes outils).
+Lot 22 : les 2 refusees reprises par EDITION de la planche precedente + 8 neuves.
+Acceptees 9 : rowing-barre-buste-penche-test-3-5-reps (edition de la case fin : tirage
+complet coudes a 90 degres ; ecart residuel note : arrivee au ventre plutot qu'aux cotes
+basses, aucune consigne de l'app ne fixe la hauteur — question utilisateur toujours ouverte),
+rowing-haltere-buste-penche, french-press-poulie-basse, pushdown-triceps-cable,
+cables-croises, tractions-prise-neutre-chin-up, wood-chop-poulie-haute, curl-concentration,
+mollets-debout. Refusee 1 : developpe-haltere-un-bras-debout (l'edition n'a pas deplace le
+vert, toujours sur l'epaule du bras libre).
+Relecture batch 4 : 3/3 conformes (curl-marteau-assis, curl-zottman-assis,
+curl-zottman-un-bras-banc-scott). Feuilles : `verification/lot22-01..04.jpg`,
+`verification/relecture-04.jpg`.
+
+## 14. Couverture et suite
+
+Relus sur les six tours : **115 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **154 valides** actuels, **63 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

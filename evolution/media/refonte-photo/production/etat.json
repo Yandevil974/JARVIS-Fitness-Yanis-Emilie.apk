@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 145,
-  "restants": 186,
+  "valides": 154,
+  "restants": 177,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 98,
+   "musculation": 107,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 104,
+   "musculation": 95,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -45,6 +45,7 @@
   "bras-tendu-devant-main-tiree|homme",
   "bulgarian-split-squat|homme",
   "burpees|homme",
+  "cables-croises|homme",
   "california-press-barre-au-cou|homme",
   "circuit-abdominaux-crunch-releves-gainage|femme",
   "circuit-gainage-planche-lateral-bird-dog|femme",
@@ -54,6 +55,7 @@
   "crunch-sur-swiss-ball|homme",
   "crunch|homme",
   "curl-barre|homme",
+  "curl-concentration|homme",
   "curl-haltere-supination-banc-scott-90|homme",
   "curl-marteau-assis|homme",
   "curl-poulie-basse|homme",
@@ -104,6 +106,7 @@
   "flexion-avant-jambes-tendues|homme",
   "french-press-barre-ez|homme",
   "french-press-haltere-un-bras|homme",
+  "french-press-poulie-basse|homme",
   "front-squat|homme",
   "gainage-planche|homme",
   "glute-bridge-en-1-5-reps|femme",
@@ -127,6 +130,7 @@
   "mains-croisees-derriere-le-dos|homme",
   "mollet-en-escalier|homme",
   "mollets-assis|homme",
+  "mollets-debout|homme",
   "mountain-climbers|homme",
   "pigeon-assis|homme",
   "pompes|homme",
@@ -134,6 +138,7 @@
   "position-de-l-enfant|homme",
   "presse-a-cuisses-pieds-hauts|femme",
   "pullover-cable-bras-tendus|homme",
+  "pushdown-triceps-cable|homme",
   "releves-de-jambes-allongee|femme",
   "releves-de-jambes-allonge|homme",
   "releves-de-jambes|homme",
@@ -143,8 +148,10 @@
   "rowing-assis-etirement|homme",
   "rowing-assis-prise-neutre|homme",
   "rowing-barre-buste-penche-pronation|homme",
+  "rowing-barre-buste-penche-test-3-5-reps|femme",
   "rowing-barre-buste-penche|femme",
   "rowing-barre-ez-supination-buste-penche|homme",
+  "rowing-haltere-buste-penche|homme",
   "rowing-haltere-un-bras-coude-ouvert|homme",
   "rowing-haltere-un-bras|homme",
   "safety-bar-squat-ou-barre-classique|homme",
@@ -163,20 +170,14 @@
   "tirage-vertical-lean-away|homme",
   "torsion-allongee-genoux|homme",
   "torsion-allongee|homme",
+  "tractions-prise-neutre-chin-up|homme",
   "tractions-pull-up|homme",
   "transition|femme",
   "triceps-extensions-halteres-banc-plat|homme",
-  "une-jambe-tendue-une-pliee|homme"
+  "une-jambe-tendue-une-pliee|homme",
+  "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  {
-   "identifiant": "rowing-barre-buste-penche-test-3-5-reps",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing barre buste penché — test (3-5 reps)"
-   ]
-  },
   {
    "identifiant": "curl-barre-debout",
    "athlete": "homme",
@@ -219,14 +220,6 @@
    ]
   },
   {
-   "identifiant": "french-press-poulie-basse",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "French press poulie basse"
-   ]
-  },
-  {
    "identifiant": "developpe-haltere-un-bras-debout",
    "athlete": "homme",
    "surface": "musculation",
@@ -251,30 +244,6 @@
    ]
   },
   {
-   "identifiant": "rowing-haltere-buste-penche",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing haltère buste penché"
-   ]
-  },
-  {
-   "identifiant": "pushdown-triceps-cable",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Pushdown triceps câble"
-   ]
-  },
-  {
-   "identifiant": "cables-croises",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Câbles croisés"
-   ]
-  },
-  {
    "identifiant": "cables-croises-rotation-externe",
    "athlete": "homme",
    "surface": "musculation",
@@ -291,27 +260,11 @@
    ]
   },
   {
-   "identifiant": "tractions-prise-neutre-chin-up",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Tractions prise neutre (chin-up)"
-   ]
-  },
-  {
    "identifiant": "tractions-supination-chin-up",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
     "Tractions supination (chin-up)"
-   ]
-  },
-  {
-   "identifiant": "wood-chop-poulie-haute",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Wood chop poulie haute"
    ]
   },
   {
@@ -328,14 +281,6 @@
    "surface": "musculation",
    "noms": [
     "Squat cycliste (squat complet)"
-   ]
-  },
-  {
-   "identifiant": "curl-concentration",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl concentration"
    ]
   },
   {
@@ -520,14 +465,6 @@
    "surface": "musculation",
    "noms": [
     "Squat cycliste"
-   ]
-  },
-  {
-   "identifiant": "mollets-debout",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Mollets debout"
    ]
   },
   {

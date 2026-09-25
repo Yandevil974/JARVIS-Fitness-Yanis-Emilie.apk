@@ -4,15 +4,14 @@ Liste demandée pour revue de votre côté. Tout le reste du flux tourne normale
 (**137 / 331** visuels validés, 194 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
+## 1. La seule planche encore refusée (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Rowing barre buste penché — test 3-5 reps (femme)** — 4 refus | la case de fin s'arrête à la hanche, jamais aux côtes | consignes exagérées (barre TOUCHANT les côtes, avant-bras verticaux, coudes derrière le torse), vert imposé aux deux cases | générer la case FIN SEULE en édition de la case départ réussie (une seule chose change) ; sinon dernier recours : planche dessinée barre déjà aux côtes dans les deux cases (départ = barre aux côtes ? non) — voir option ci-contre | **option** : acceptez-vous une arrivée barre au haut de l'abdomen comme fin de tirage ? Sans réponse je reste aux côtes |
-| **Développé haltère un bras debout (homme)** — 1 refus | vert posé sur l'épaule du bras LIBRE (gauche) aux deux cases | consigne « highlight the RIGHT shoulder deltoid » | reformuler par la position dans l'image : « l'épaule du bras qui tient l'haltère, côté gauche de l'image » | aucune |
+| **Développé haltère un bras debout (homme)** — 2 refus | vert posé sur l'épaule du bras LIBRE aux deux cases ; l'édition ciblée de la planche lot 21 n'a rien déplacé | prompt « RIGHT shoulder deltoid », puis édition « déplacer le vert du côté de l'haltère » | régénération complète avec le vert décrit PAR LA POSITION DANS L'IMAGE : « lime green on the shoulder at the LEFT side of the image, the same side as the dumbbell, in both panels » | aucune |
 
-Clos depuis la dernière liste : good-morning-debout (vue de dos + buste horizontal = accepté
-lot 21), rowing-haltere-un-bras (orientation ancrée = accepté lot 21).
+Clos depuis la dernière liste : rowing-barre-buste-penche-test-3-5-reps (tirage complet obtenu
+par édition de la case fin ; écart résiduel « arrivée au ventre » soumis à votre option du §3).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
