@@ -4,21 +4,21 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 242,
-  "restants": 89,
+  "valides": 248,
+  "restants": 83,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 196,
-   "tabata-au-sol": 10
+   "musculation": 200,
+   "tabata-au-sol": 12
   },
   "restants_par_surface": {
-   "musculation": 7,
+   "musculation": 3,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
-   "tabata-au-sol": 27
+   "tabata-au-sol": 25
   }
  },
  "valides": [
@@ -96,6 +96,7 @@
   "developpe-halteres-assis|homme",
   "developpe-halteres-decline-prise-neutre|homme",
   "developpe-halteres-incline-45-prise-neutre|homme",
+  "developpe-halteres-incline-pronation|homme",
   "developpe-halteres-plat-prise-neutre|homme",
   "developpe-halteres-plat|homme",
   "developpe-incline-barre|homme",
@@ -107,6 +108,7 @@
   "developpe-militaire-test-1rm|homme",
   "dips|homme",
   "drop-lunges-fentes-controlees|homme",
+  "drop-lunges-fentes-sautees-controlees|homme",
   "ecartes-cables-incline|homme",
   "ecartes-halteres-decline|homme",
   "ecartes-halteres|homme",
@@ -119,6 +121,7 @@
   "elevations-laterales-halteres-myo-reps|femme",
   "elevations-laterales-halteres|homme",
   "elevations-laterales-incline-30-face-au-banc|homme",
+  "elevations-laterales-incline-30|homme",
   "elevations-laterales-lean-away|homme",
   "elevations-laterales|homme",
   "elliptique-fractionne|femme",
@@ -156,6 +159,7 @@
   "front-squat|homme",
   "gainage-lateral-dynamique|femme",
   "gainage-lateral|femme",
+  "gainage-planche|femme",
   "gainage-planche|homme",
   "glute-bridge-en-1-5-reps|femme",
   "glute-bridge-pieds-sur-banc|femme",
@@ -199,6 +203,7 @@
   "pallof-press-a-la-poulie|femme",
   "pigeon-assis|homme",
   "pompes-inclinees-mains-surelevees|femme",
+  "pompes-inclinees|homme",
   "pompes|homme",
   "pont-fessier-au-sol-activation|femme",
   "position-de-l-enfant-balasana|homme",
@@ -229,6 +234,7 @@
   "rowing-haltere-un-bras-coude-ouvert|homme",
   "rowing-haltere-un-bras-prise-neutre|homme",
   "rowing-haltere-un-bras|homme",
+  "russian-twist|homme",
   "safety-bar-squat-ou-barre-classique|homme",
   "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
   "souleve-de-terre-roumain-barre|homme",
@@ -266,40 +272,6 @@
   "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  {
-   "identifiant": "developpe-halteres-incline-pronation",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères incliné, pronation"
-   ]
-  },
-  {
-   "identifiant": "drop-lunges-fentes-sautees-controlees",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Drop lunges (fentes sautées contrôlées)"
-   ]
-  },
-  {
-   "identifiant": "elevations-laterales-incline-30",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales incliné 30°",
-    "Élévations latérales incliné 45°",
-    "Élévations latérales incliné"
-   ]
-  },
-  {
-   "identifiant": "gainage-planche",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Gainage planche"
-   ]
-  },
   {
    "identifiant": "mollets-a-la-presse",
    "athlete": "homme",
@@ -1289,14 +1261,6 @@
    ]
   },
   {
-   "identifiant": "pompes-inclinees",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Pompes inclinées"
-   ]
-  },
-  {
    "identifiant": "ponts-fessiers",
    "athlete": "homme",
    "surface": "tabata-au-sol",
@@ -1318,14 +1282,6 @@
    "surface": "tabata-au-sol",
    "noms": [
     "Respiration profonde"
-   ]
-  },
-  {
-   "identifiant": "russian-twist",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Russian twist"
    ]
   },
   {

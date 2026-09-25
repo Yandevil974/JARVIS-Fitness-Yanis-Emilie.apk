@@ -1,20 +1,21 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 37
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 38
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**242 / 331** visuels validés, 89 restants) ; ce fichier ne contient que les points
+(**248 / 331** visuels validés, 83 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 4 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Soulevé de terre partiel (homme)** — 6 refus | même par ÉDITION le départ barre sur pins buste 45° n'apparaît pas (l'edit a retourné la vue de dos) | prompts texte, cases séparées, « deadlift bottom », édition | **lot38 : BLOCK PULL sans pins** : barre posée sur deux blocs noirs sous les disques, barre à mi-tibia ; départ hanche basse / lockout | aucune |
-| **Mollets à la presse (homme)** — 4 refus | édition quasi identique à la case 1 : chevilles immobiles, vert sur tibias | presse 45°, genoux tendus, cases séparées, édition | **lot38 : talons DÉBORDANT de la plaque** : case 1 talons pendus dans le vide sous la plaque, case 2 talons montés au-dessus | aucune |
-| **Drop lunges fentes sautées contrôlées (homme)** — 1 refus | permutation de jambes correcte mais haltère orphelin en case 1, aucun en case 2 | haltères aux deux mains | **lot38 : poids du corps**, mains sur les hanches aux deux cases, AUCUN haltère | aucune |
+| **Soulevé de terre partiel (homme)** — 7 refus | lot38 : le GESTE block pull est enfin correct (départ sur blocs + lockout) mais de FACE le vert part sur quadriceps ; la chaîne postérieure n'est pas visible de face | pins, édition, blocs, « deadlift bottom » | **lot39 : VUE DE DOS** aux deux cases (block pull sur blocs noirs) | aucune |
+| **Soulevé de terre partiel prise snatch (homme)** — 1 refus | même problème : geste et prise snatch corrects, vert de face sur quadriceps/abdos | blocs noirs, prise large | **lot39 : VUE DE DOS** aux deux cases | aucune |
+| **Mollets à la presse (homme)** — 5 refus | genoux toujours fléchis, vert sur tibias, talons débordants jamais dessinés | presse 45°, genoux tendus, cases séparées, édition, talons débordants | lot39 : dernière tentative texte (genoux 180°, plante seule sur la plaque) ; **si échec : visuel simplifié soumis à votre décision** | oui si échec |
+| **Squats sautés (homme)** — 1 refus | bras tronqués en moignons aux deux cases (artefact membre manquant) | — | lot39 : « BOTH ARMS FULLY VISIBLE with complete forearms and hands » | aucune |
 
-Clos ce tour : développés haltères décliné et incliné 45° prise neutre (vue de FACE pied de
-banc), extensions triceps haltères incliné, tirage vertical prise pronation ; gainage
-planche régénéré et relu (remplace le GIF précédent, couple déjà valide).
+Clos ce tour : drop lunges fentes sautées (poids du corps, 1ᵉʳ refus effacé), développé
+haltères incliné pronation, élévations latérales incliné 30 (couché sur banc incliné),
+gainage planche femme, pompes inclinées, russian twist.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

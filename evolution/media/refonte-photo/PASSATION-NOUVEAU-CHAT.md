@@ -10,18 +10,18 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
 - Branche de travail **obligatoire** : `arena/01a0d6f5-jarvis-fitness-yanis-emilie-ap`
   (session Arena courante ; ne jamais pousser sur `main`, ne jamais créer d'autre branche).
-- Avancement : **242 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **89** : piscine (protocoles) 40, tabata au sol 27, piscine (guides) 9,
-  aqua tabata 6, musculation 7.
+- Avancement : **248 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
+  Restent **83** : piscine (protocoles) 40, tabata au sol 25, piscine (guides) 9,
+  aqua tabata 6, musculation 3.
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
 - **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
   (`verification/VERIFICATION-2026-09-25.md`) ; 7 gestes faux trouvés parmi les livrés
   (4 refaits et acceptés au lot 17 ; 3 retirés des valides ce tour : back-squat-barre-haute,
-  back-squat-inertie-pause-complete, burpees) ; **42 couples restent à relire** (feuilles de 3,
-  200 déjà relus).
+  back-squat-inertie-pause-complete, burpees) ; **39 couples restent à relire** (feuilles de 3,
+  209 déjà relus).
   Style : 21 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
   à reprendre dans un lot dédié sans toucher aux gestes.
-- Index visuel numéroté : `review/index-general.jpg` (242 vignettes, régénéré à chaque lot).
+- Index visuel numéroté : `review/index-general.jpg` (248 vignettes, régénéré à chaque lot).
 
 ## 2. Ce que l'utilisateur a demandé (et qui ne change pas)
 
@@ -117,11 +117,12 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-1. Reprendre les **3 planches en attente** (`production/a-refaire.json`) : souleve-de-terre-partiel
-   (6ᵉ refus → block pull sur blocs noirs, sans pins), mollets-a-la-presse (4ᵉ refus → talons
-   débordant de la plaque), drop-lunges-fentes-sautees-controlees (1ᵉʳ refus → poids du corps,
-   aucun haltère). L'édition d'image a été testée au lot 37 sur les deux premières : échec.
-   Clos au lot 36 : curl-halteres-incline-prise-neutre, releves-de-jambes-suspendu, hip-thrust-barre.
+1. Reprendre les **4 planches en attente** (`production/a-refaire.json`) : les deux soulevés de
+   terre partiels (geste block pull correct mais vert de face → **VUE DE DOS** au lot 39),
+   mollets-a-la-presse (5ᵉ refus → dernière tentative texte, sinon visuel simplifié soumis à
+   l'utilisateur), squats-sautes (bras tronqués → bras entiers visibles). Édition testée au
+   lot 37 : échec. Clos au lot 38 : drop-lunges. Clos au lot 36 : curl-incline-neutre,
+   releves-suspendu, hip-thrust-barre.
    Résolus au lot 35 : tirage-vertical-prise-neutre (poignées parallèles) et mollets-unilateraux
    (pied libre croisé en l'air). Résolus au lot 34 : ab-wheel et extensions-triceps-barre-ez.
    Résolus au lot 33 : developpe-incline-halteres et tirage-vertical-prise-large.

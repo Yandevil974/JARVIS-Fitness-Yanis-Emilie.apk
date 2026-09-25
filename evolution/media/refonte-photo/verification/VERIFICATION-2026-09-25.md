@@ -436,3 +436,28 @@ valides relus**, **42 restent a relire**. **3 planches en attente** dans
 `production/a-refaire.json` : souleve-de-terre-partiel (6e), mollets-a-la-presse (4e),
 drop-lunges-fentes-sautees-controlees (1er). Prochain lot 38 : ces 3 planches (block pull,
 talons debordants, poids du corps) + 7 planches (musculation 7 puis tabata au sol 27).
+
+## 47. Lot 38 : block pull enfin juste, mais de face le vert fuit (meme tour)
+
+Acceptees 6 : drop-lunges-fentes-sautees-controlees (RESOLU : poids du corps, permutation
+nette), developpe-halteres-incline-pronation (vue de FACE pied de banc), elevations-laterales-incline-30
+(couche sur le flanc, banc incline), gainage-planche femme, pompes-inclinees (mains sur
+banc), russian-twist (rotation alternee, pieds au sol).
+Refusees 4 : souleve-de-terre-partiel (7e : geste block pull ENFIN correct mais vue de FACE
+le vert part sur quadriceps — la chaine posterieure n'est pas visible de face), souleve-de-terre-partiel-prise-snatch
+(1er : meme cause), mollets-a-la-presse (5e : genoux flechis, vert tibias), squats-sautes
+(1er : bras tronques en moignons).
+Lecon : tout deadlift/rack pull se dessine desormais DE DOS pour que le vert posterior
+chain soit visible. Relecture batch 18 : 3/3 conformes (leg-curl-allonge-pieds-flechis,
+leg-curl-allonge, main-dans-le-dos). Feuilles : `verification/lot38b-01..04.jpg`,
+`verification/relecture-18.jpg`.
+
+## 48. Couverture et suite (etat lot 38)
+
+**248 / 331 couples valides**, 83 restants (protocoles piscine 40, tabata au sol 25,
+piscine guides 9, aqua tabata 6, musculation 3). Relecture cumulative : **209 couples
+valides relus**, **39 restent a relire**. **4 planches en attente** dans
+`production/a-refaire.json` : souleve-de-terre-partiel (7e), souleve-de-terre-partiel-prise-snatch
+(1er) — tous deux en VUE DE DOS au lot 39 —, mollets-a-la-presse (5e, derniere tentative
+texte sinon decision utilisateur), squats-sautes (1er, bras entiers). Prochain lot 39 :
+ces 4 planches + 6 planches de tabata au sol (25).
