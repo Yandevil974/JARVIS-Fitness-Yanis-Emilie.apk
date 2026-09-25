@@ -68,9 +68,35 @@ planches concernées), sans toucher aux gestes.
 Autre artefact noté : `mountain-climbers|homme` montre des bandes grises de recalage en haut
 des cases — à reprendre dans le même lot style.
 
-## 5. Couverture et suite
+## 5. Lot 18 (10 planches, même tour) et relecture — batch 2
 
-Relus ce tour : **48 couples** (38 livrés + 10 lot 17). Restent à relire : **75** des 123
-valides (feuilles de 3, mêmes outils, aucun raccourci). Production : **123 / 331**,
-restants 208 (musculation 126, protocoles piscine 40, tabata au sol 27, piscine guides 9,
-aqua tabata 6) ; 2 planches en attente de 3ᵉ essai (`production/a-refaire.json`).
+**Lot 18** : 3ᵉ essai des 2 planches en attente + 8 mouvements neufs. Acceptées 6 :
+triceps-extensions-halteres-banc-plat (enfin allongé à plat, coudes qui plient),
+california-press-barre-au-cou (prise serrée, barre au cou), curl-scott-barre-ez-pronation,
+curl-scott-barre-ez-supination (prises opposées, bras posés sur le pad),
+french-press-barre-ez, hip-thrust-barre-test-de-charge-max-3-5-reps (vue 3/4 avant,
+différente du hip thrust livré). Refusées 4 : back-extension-horizontal (3ᵉ refus : banc
+horizontal enfin juste mais bras pendant au départ au lieu de mains croisées),
+rowing-barre-ez-supination-buste-penche (un haltère dessiné au lieu de la barre EZ),
+curl-poulie-basse (cadrage différent entre les deux cases),
+rowing-barre-buste-penche-test-3-5-reps (aucun tirage en case de fin).
+Feuilles : `verification/lot18-01..04.jpg`.
+
+**Relecture batch 2** (12 couples valides, feuilles `verification/relecture-02-01..04.jpg`) :
+conformes 9 (adduction hanche debout, allongé sur le côté, bras tendu contre la poitrine /
+contre le mur / derrière / devant main tirée, back-squat, back-squat-test-1rm,
+circuit-abdominaux-crunch-releves-gainage) ; **refusés 3** : back-squat-barre-haute et
+back-squat-inertie-pause-complete (barre en rack AVANT à gauche puis SUR LE DOS à droite :
+la barre saute), burpees (cases inversées : saut à gauche, planche à droite).
+Ces 3 GIF sont retirés des valides et repassent en production.
+
+## 6. Couverture et suite
+
+Relus ce tour : **70 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **126 valides** actuels, **69 restent à relire** (feuilles de 3, mêmes outils).
+Production : **126 / 331** ; restants 205 (musculation 123, protocoles piscine 40,
+tabata au sol 27, piscine guides 9, aqua tabata 6). **7 planches en attente** dans
+`production/a-refaire.json` : back-extension-horizontal (3ᵉ refus),
+rowing-barre-ez-supination-buste-penche, curl-poulie-basse,
+rowing-barre-buste-penche-test-3-5-reps, back-squat-barre-haute,
+back-squat-inertie-pause-complete, burpees.

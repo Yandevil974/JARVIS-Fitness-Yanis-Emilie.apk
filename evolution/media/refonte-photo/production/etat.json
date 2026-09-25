@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 123,
-  "restants": 208,
+  "valides": 126,
+  "restants": 205,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 76,
-   "tabata-au-sol": 10
+   "musculation": 80,
+   "tabata-au-sol": 9
   },
   "restants_par_surface": {
-   "musculation": 126,
+   "musculation": 123,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -32,16 +32,14 @@
   "adduction-de-la-hanche-debout|homme",
   "allonge-sur-le-cote|homme",
   "back-extension-45-prise-snatch|homme",
-  "back-squat-barre-haute|homme",
   "back-squat-charge-moderee|femme",
-  "back-squat-inertie-pause-complete|homme",
   "back-squat-test-1rm|homme",
   "back-squat|homme",
   "bras-tendu-contre-la-poitrine|homme",
   "bras-tendu-contre-le-mur|homme",
   "bras-tendu-derriere|homme",
   "bras-tendu-devant-main-tiree|homme",
-  "burpees|homme",
+  "california-press-barre-au-cou|homme",
   "circuit-abdominaux-crunch-releves-gainage|femme",
   "clamshell-a-l-elastique|femme",
   "cobra-doux|homme",
@@ -51,6 +49,8 @@
   "curl-barre|homme",
   "curl-haltere-supination-banc-scott-90|homme",
   "curl-marteau-assis|homme",
+  "curl-scott-barre-ez-pronation|homme",
+  "curl-scott-barre-ez-supination|homme",
   "curl-zottman-assis|homme",
   "curl-zottman-un-bras-banc-scott|homme",
   "dead-bug-avec-rotation|femme",
@@ -93,11 +93,13 @@
   "fentes-bulgares-pied-arriere-sureleve|femme",
   "fentes-marchees|homme",
   "flexion-avant-jambes-tendues|homme",
+  "french-press-barre-ez|homme",
   "front-squat|homme",
   "gainage-planche|homme",
   "glute-bridge-pieds-sur-banc|femme",
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
+  "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
   "hip-thrust-barre|femme",
   "jackknife-sur-swiss-ball|homme",
   "jumping-jacks|homme",
@@ -144,6 +146,7 @@
   "torsion-allongee|homme",
   "tractions-pull-up|homme",
   "transition|femme",
+  "triceps-extensions-halteres-banc-plat|homme",
   "une-jambe-tendue-une-pliee|homme"
  ],
  "restants": [
@@ -153,14 +156,6 @@
    "surface": "musculation",
    "noms": [
     "Back extension horizontal"
-   ]
-  },
-  {
-   "identifiant": "triceps-extensions-halteres-banc-plat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Triceps extensions haltères, banc plat"
    ]
   },
   {
@@ -180,43 +175,11 @@
    ]
   },
   {
-   "identifiant": "california-press-barre-au-cou",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "California press (barre au cou)"
-   ]
-  },
-  {
-   "identifiant": "hip-thrust-barre-test-de-charge-max-3-5-reps",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Hip thrust barre — test de charge max (3-5 reps)"
-   ]
-  },
-  {
    "identifiant": "curl-barre-debout",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
     "Curl barre debout"
-   ]
-  },
-  {
-   "identifiant": "curl-scott-barre-ez-pronation",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Scott barre EZ, pronation"
-   ]
-  },
-  {
-   "identifiant": "curl-scott-barre-ez-supination",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Scott barre EZ, supination"
    ]
   },
   {
@@ -234,14 +197,6 @@
    "surface": "musculation",
    "noms": [
     "Extensions triceps barre EZ"
-   ]
-  },
-  {
-   "identifiant": "french-press-barre-ez",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "French press barre EZ"
    ]
   },
   {
@@ -2187,6 +2142,30 @@
    "surface": "tabata-au-sol",
    "noms": [
     "Squats sumo"
+   ]
+  },
+  {
+   "identifiant": "back-squat-barre-haute",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back squat barre haute"
+   ]
+  },
+  {
+   "identifiant": "back-squat-inertie-pause-complete",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back squat — inertie, pause complète"
+   ]
+  },
+  {
+   "identifiant": "burpees",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Burpees"
    ]
   }
  ]

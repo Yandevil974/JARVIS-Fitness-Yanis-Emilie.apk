@@ -10,13 +10,14 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
 - Branche de travail **obligatoire** : `arena/01a0d51c-jarvis-fitness-yanis-emilie-ap`
   (ne jamais pousser sur `main`, ne jamais créer d'autre branche).
-- Avancement : **123 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **208** : musculation 126, piscine (protocoles) 40, tabata au sol 27,
+- Avancement : **126 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
+  Restent **205** : musculation 123, piscine (protocoles) 40, tabata au sol 27,
   piscine (guides) 9, aqua tabata 6.
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
-- **Vérification des mouvements déjà créés (25/09)** : 48 couples relus case par case
-  (`verification/VERIFICATION-2026-09-25.md`) ; 4 gestes faux trouvés parmi les livrés,
-  refaits et acceptés au lot 17 ; **75 couples restent à relire** (feuilles de 3).
+- **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
+  (`verification/VERIFICATION-2026-09-25.md`) ; 7 gestes faux trouvés parmi les livrés
+  (4 refaits et acceptés au lot 17 ; 3 retirés des valides ce tour : back-squat-barre-haute,
+  back-squat-inertie-pause-complete, burpees) ; **69 couples restent à relire** (feuilles de 3).
   Style : 21 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
   à reprendre dans un lot dédié sans toucher aux gestes.
 - Index visuel numéroté : `review/index-general.jpg` (119 vignettes, régénéré à chaque lot).
@@ -115,16 +116,16 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-1. Reprendre les **2 planches en attente** listées dans `production/a-refaire.json`
-   (`aRefaire`), toutes deux déjà refusées DEUX fois : back-extension-horizontal
-   (banc **horizontal**, mains croisées sur la poitrine dès la case de départ) et
-   triceps-extensions-halteres-banc-plat (athlète **allongé à plat**, coudes qui plient).
-   `elevations-laterales-incline-30-face-au-banc` est acceptée depuis le lot 17
-   (vert sur les deltoïdes).
+1. Reprendre les **7 planches en attente** listées dans `production/a-refaire.json`
+   (`aRefaire`) : back-extension-horizontal (3ᵉ refus : mains croisées DÈS la case de
+   départ), rowing-barre-ez-supination-buste-penche (barre EZ, pas un haltère),
+   curl-poulie-basse (même cadrage aux deux cases), rowing-barre-buste-penche-test-3-5-reps
+   (tirage visible en case de fin), back-squat-barre-haute et back-squat-inertie-pause-complete
+   (barre SUR LE DOS dans les DEUX cases), burpees (planche à gauche, saut à droite).
 2. Continuer la relecture des **75 couples déjà valides non relus** (feuilles de 3,
    `feuilles-verif.py`), puis le lot « style » des 21 GIF sans vert sur une case
    (`production/style-a-reprendre.json`).
-3. Continuer la musculation (126 restants), puis
+3. Continuer la musculation (123 restants), puis
    **tabata au sol (27)**, **piscine guides (9)**, **piscine protocoles (40)**,
    **aqua tabata (6)** — par lots de ≤ 10.
 3. Après chaque lot : convertir, relire, mettre à jour `etat.json`, `a-refaire.json`,

@@ -4,15 +4,45 @@
  "aRefaire": [
   {
    "mouvement": "back-extension-horizontal (homme)",
-   "planche": "lot17/back-extension-horizontal.png",
-   "motif": "2e refus : le banc reste INCLINE (banc a lombaires 45 degres) au lieu d'un banc HORIZONTAL, et le bras pend vers le sol en case de depart au lieu des mains croisees sur la poitrine",
+   "planche": "lot18/back-extension-horizontal.png",
+   "motif": "3e refus : le banc horizontal (GHD) est enfin bon mais le bras PEND vers le sol en case de depart au lieu d'etre croise sur la poitrine comme en case de fin : saut de posture dans l'animation",
    "prescription": "Back extension horizontal — banc horizontal, buste qui descend vers le sol puis remonte aligne"
   },
   {
-   "mouvement": "triceps-extensions-halteres-banc-plat (homme)",
-   "planche": "lot17/triceps-extensions-halteres-banc-plat.png",
-   "motif": "2e refus : l'athlete est ASSIS, buste vertical puis adosse, au lieu d'etre ALLONGE A PLAT sur le banc ; les coudes plient mais le geste lit un developpe assis",
-   "prescription": "Triceps extensions halteres, banc plat — bras tendus au-dessus de la poitrine PUIS coudes plies, halteres descendus pres de la tete"
+   "mouvement": "rowing-barre-ez-supination-buste-penche (homme)",
+   "planche": "lot18/rowing-barre-ez-supination-buste-penche.png",
+   "motif": "1er refus : un HALTERE unique est dessine au lieu d'une BARRE EZ, et la prise supination ne se lit pas",
+   "prescription": "Rowing barre EZ supination, buste penché"
+  },
+  {
+   "mouvement": "curl-poulie-basse (homme)",
+   "planche": "lot18/curl-poulie-basse.png",
+   "motif": "1er refus : cadrage different entre les deux cases (athlete petit a gauche, grand a droite) : l'animation saute",
+   "prescription": "Curl poulie basse"
+  },
+  {
+   "mouvement": "rowing-barre-buste-penche-test-3-5-reps (femme)",
+   "planche": "lot18/rowing-barre-buste-penche-test-3-5-reps.png",
+   "motif": "1er refus : le tirage n'apparait pas, la barre reste basse en case de fin ; buste non parallele au sol",
+   "prescription": "Rowing barre buste penché — test (3-5 reps)"
+  },
+  {
+   "mouvement": "back-squat-barre-haute (homme)",
+   "planche": "GIF livre (lot precedent)",
+   "motif": "relecture 25/09 : barre en rack AVANT (coude haut, barre sur la poitrine) en case de depart puis barre sur le dos en case de fin : la barre saute d'avant en arriere",
+   "prescription": "Back squat barre haute"
+  },
+  {
+   "mouvement": "back-squat-inertie-pause-complete (homme)",
+   "planche": "GIF livre (lot precedent)",
+   "motif": "relecture 25/09 : meme defaut, barre en rack AVANT a gauche puis sur le dos a droite",
+   "prescription": "Back squat inertie (pause complète)"
+  },
+  {
+   "mouvement": "burpees (homme)",
+   "planche": "GIF livre (lot precedent)",
+   "motif": "relecture 25/09 : cases INVERSEES (gauche = saut bras leves = fin, droite = planche = debut)",
+   "prescription": "Burpees"
   }
  ],
  "verifieesEtAcceptees": [
