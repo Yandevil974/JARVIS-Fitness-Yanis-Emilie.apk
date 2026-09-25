@@ -1,0 +1,5981 @@
+{
+ "version": "1.4.9-refonte",
+ "total": 331,
+ "entrees": [
+  {
+   "cle": "ab-wheel-roulette|homme",
+   "identifiant": "ab-wheel-roulette",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Ab wheel (roulette)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ab-wheel-roulette-homme.gif",
+   "gif_sha256": "02f973187111ca81cc29401c16a7f49bd19fcf9d8f717ac81435c0db318ea913",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot34/ab-wheel-roulette.png"
+  },
+  {
+   "cle": "abduction-assise-en-1-5-reps|femme",
+   "identifiant": "abduction-assise-en-1-5-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Abduction assise en 1,5 reps"
+   ],
+   "gif": "media/refonte-photo/gif/femme/abduction-assise-en-1-5-reps-femme.gif",
+   "gif_sha256": "2044047872737c7ce4f144645c8edb141d344d16f95b63a0d5e712f729584189",
+   "gif_frames": 2,
+   "gif_size": [
+    365,
+    440
+   ],
+   "planche": "planches/lot09/abduction-assise-en-1-5-reps.png"
+  },
+  {
+   "cle": "abduction-assise-machine-ou-elastique|femme",
+   "identifiant": "abduction-assise-machine-ou-elastique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Abduction assise (machine ou élastique)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/abduction-assise-machine-ou-elastique-femme.gif",
+   "gif_sha256": "e9abbf1d4e5cec5d6d933d23af78556a459c4d091ec7cff41281b2b782c9853a",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot09/abduction-assise-machine-ou-elastique.png"
+  },
+  {
+   "cle": "abduction-assise-machine|femme",
+   "identifiant": "abduction-assise-machine",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Abduction assise machine"
+   ],
+   "gif": "media/refonte-photo/gif/femme/abduction-assise-machine-femme.gif",
+   "gif_sha256": "e930987721c896ca0dd29b6301562d5c3ebecb4dd21e1d0ae4169298de8f1a46",
+   "gif_frames": 2,
+   "gif_size": [
+    316,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "abduction-hanche-a-l-elastique|femme",
+   "identifiant": "abduction-hanche-a-l-elastique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Abduction hanche à l'élastique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/abduction-hanche-a-l-elastique-femme.gif",
+   "gif_sha256": "71105357b5f1b5a1187aef994bd7b6096241237d1d1641d6cd2cfde6afd51a86",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot09/abduction-hanche-a-l-elastique.png"
+  },
+  {
+   "cle": "abduction-hanche-a-la-poulie-myo-reps|femme",
+   "identifiant": "abduction-hanche-a-la-poulie-myo-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Abduction hanche à la poulie — myo-reps"
+   ],
+   "gif": "media/refonte-photo/gif/femme/abduction-hanche-a-la-poulie-myo-reps-femme.gif",
+   "gif_sha256": "4d80713eb3e1fc0b755ca9f42632195776c47165f80a0bf29048bb0328179f50",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot12/abduction-hanche-a-la-poulie-myo-reps.png"
+  },
+  {
+   "cle": "abduction-hanche-a-la-poulie|femme",
+   "identifiant": "abduction-hanche-a-la-poulie",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Abduction hanche à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/femme/abduction-hanche-a-la-poulie-femme.gif",
+   "gif_sha256": "4eb12d1198df8864130bb608889a1195fec8dea50458bc861c01b10084b73e35",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot12/abduction-hanche-a-la-poulie.png"
+  },
+  {
+   "cle": "abduction-hanche-debout-a-la-poulie|femme",
+   "identifiant": "abduction-hanche-debout-a-la-poulie",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Abduction hanche debout à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/femme/abduction-hanche-debout-a-la-poulie-femme.gif",
+   "gif_sha256": "84f5f11c5c65c581067f5d9544b5aa34f2e48c4c8b29603926faa7c54f6eee58",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot09/abduction-hanche-debout-a-la-poulie.png"
+  },
+  {
+   "cle": "adduction-de-la-hanche-debout|homme",
+   "identifiant": "adduction-de-la-hanche-debout",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Adduction de la hanche debout"
+   ],
+   "gif": "media/refonte-photo/gif/homme/adduction-de-la-hanche-debout-homme.gif",
+   "gif_sha256": "6ec4644eeb54b838f945f626c40d9f40a8c4212269409ea38770229d58697db5",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "allonge-sur-le-cote|homme",
+   "identifiant": "allonge-sur-le-cote",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Allongé sur le côté"
+   ],
+   "gif": "media/refonte-photo/gif/homme/allonge-sur-le-cote-homme.gif",
+   "gif_sha256": "69858722346f40bf8646dca07ab7e9a02100f822123acc8aba7eca22fba73a6a",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "aqua-jogging-effort|femme",
+   "identifiant": "aqua-jogging-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/aqua-jogging-effort-femme.gif",
+   "gif_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "gif_frames": 2,
+   "gif_size": [
+    423,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "aqua-jogging-sur-place|femme",
+   "identifiant": "aqua-jogging-sur-place",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Aqua-jogging sur place"
+   ],
+   "gif": "media/refonte-photo/gif/femme/aqua-jogging-sur-place-femme.gif",
+   "gif_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "gif_frames": 2,
+   "gif_size": [
+    423,
+    440
+   ],
+   "planche": "planches/lot44/aqua-jogging-sur-place.png"
+  },
+  {
+   "cle": "aqua-jogging|femme",
+   "identifiant": "aqua-jogging",
+   "athlete": "femme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Aqua-jogging"
+   ],
+   "gif": "media/refonte-photo/gif/femme/aqua-jogging-femme.gif",
+   "gif_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "gif_frames": 2,
+   "gif_size": [
+    423,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "back-extension-45-prise-snatch|homme",
+   "identifiant": "back-extension-45-prise-snatch",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back extension 45°, prise snatch"
+   ],
+   "gif": "media/refonte-photo/gif/homme/back-extension-45-prise-snatch-homme.gif",
+   "gif_sha256": "aed05e9f734fc1f7012cd3477f1f3de131c98b76ca0fd7f0c386979d67b474fc",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot15/back-extension-45-prise-snatch.png"
+  },
+  {
+   "cle": "back-extension-horizontal|homme",
+   "identifiant": "back-extension-horizontal",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back extension horizontal"
+   ],
+   "gif": "media/refonte-photo/gif/homme/back-extension-horizontal-homme.gif",
+   "gif_sha256": "774f37ddb80acf9cd86af850ae650f309e2cb71834d2b9e1dd687307106af3be",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot20/back-extension-horizontal.png"
+  },
+  {
+   "cle": "back-squat-barre-haute|homme",
+   "identifiant": "back-squat-barre-haute",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back squat barre haute"
+   ],
+   "gif": "media/refonte-photo/gif/homme/back-squat-barre-haute-homme.gif",
+   "gif_sha256": "dd73820dcde3f43542e310243f4e7d57aac898fbc869b9a4440e05560e1e5c83",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot20/back-squat-barre-haute.png"
+  },
+  {
+   "cle": "back-squat-charge-moderee|femme",
+   "identifiant": "back-squat-charge-moderee",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Back squat (charge modérée)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/back-squat-charge-moderee-femme.gif",
+   "gif_sha256": "80b5062c826ce614fd7e1d79591f1191fed4d1afc4c0bc9b8b83ab1d8100e3ca",
+   "gif_frames": 2,
+   "gif_size": [
+    363,
+    440
+   ],
+   "planche": "planches/lot15/back-squat-charge-moderee.png"
+  },
+  {
+   "cle": "back-squat-inertie-pause-complete|homme",
+   "identifiant": "back-squat-inertie-pause-complete",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back squat inertie (pause complète)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/back-squat-inertie-pause-complete-homme.gif",
+   "gif_sha256": "43f74ddd846f79bcd654c5d7f64357cc98483d2b5dcea6d051f3dcdfde2912ac",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot20/back-squat-inertie-pause-complete.png"
+  },
+  {
+   "cle": "back-squat-test-1rm|homme",
+   "identifiant": "back-squat-test-1rm",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back squat — test 1RM"
+   ],
+   "gif": "media/refonte-photo/gif/homme/back-squat-test-1rm-homme.gif",
+   "gif_sha256": "f2d8f3f06dc0b4392f5b520965eb3599aaf0a299bb0f74ef7438fca39c31fb14",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot09/back-squat-test-1rm.png"
+  },
+  {
+   "cle": "back-squat|homme",
+   "identifiant": "back-squat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Back squat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/back-squat-homme.gif",
+   "gif_sha256": "8403a244b533745c1d59f35b83650912ec975d30582a0cc3abd2852d4bfbbf71",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "barre-au-front-pushdown-triceps|homme",
+   "identifiant": "barre-au-front-pushdown-triceps",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Barre au front (pushdown triceps)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/barre-au-front-pushdown-triceps-homme.gif",
+   "gif_sha256": "4b9f932f0c18e7630b52d9f70be60977aa0da6b6769202ce9845921c0db1fa45",
+   "gif_frames": 2,
+   "gif_size": [
+    378,
+    440
+   ],
+   "planche": "planches/lot33/barre-au-front-pushdown-triceps.png"
+  },
+  {
+   "cle": "battements-au-bord|femme",
+   "identifiant": "battements-au-bord",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Battements au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/battements-au-bord-femme.gif",
+   "gif_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "gif_frames": 2,
+   "gif_size": [
+    438,
+    440
+   ],
+   "planche": "planches/lot43/battements-au-bord.png"
+  },
+  {
+   "cle": "battements-de-jambes-effort|femme",
+   "identifiant": "battements-de-jambes-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/battements-de-jambes-effort-femme.gif",
+   "gif_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "gif_frames": 2,
+   "gif_size": [
+    438,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "battements-de-jambes|femme",
+   "identifiant": "battements-de-jambes",
+   "athlete": "femme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Battements de jambes"
+   ],
+   "gif": "media/refonte-photo/gif/femme/battements-de-jambes-femme.gif",
+   "gif_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "gif_frames": 2,
+   "gif_size": [
+    438,
+    440
+   ],
+   "planche": "planches/lot40/battements-de-jambes.png"
+  },
+  {
+   "cle": "battements-de-jambes|homme",
+   "identifiant": "battements-de-jambes",
+   "athlete": "homme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Battements de jambes"
+   ],
+   "gif": "media/refonte-photo/gif/homme/battements-de-jambes-homme.gif",
+   "gif_sha256": "ecdcebbd1133325dc6adc352b644519a115ad5474fd62c67ea36b64485e91954",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot40/battements-de-jambes.png"
+  },
+  {
+   "cle": "bird-dog|femme",
+   "identifiant": "bird-dog",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Bird dog"
+   ],
+   "gif": "media/refonte-photo/gif/femme/bird-dog-femme.gif",
+   "gif_sha256": "1c6cf53a687ac740eba6ec0ea5136f8828e22a4419014adf2000c625693ad678",
+   "gif_frames": 2,
+   "gif_size": [
+    360,
+    440
+   ],
+   "planche": "planches/lot20/bird-dog.png"
+  },
+  {
+   "cle": "bras-tendu-contre-la-poitrine|homme",
+   "identifiant": "bras-tendu-contre-la-poitrine",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Bras tendu contre la poitrine"
+   ],
+   "gif": "media/refonte-photo/gif/homme/bras-tendu-contre-la-poitrine-homme.gif",
+   "gif_sha256": "64889e5c53a06784b5d3ecefa5e93c739cb86d3081ef0ad66b8a83e65364afe3",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot04/bras-tendu-contre-la-poitrine.png"
+  },
+  {
+   "cle": "bras-tendu-contre-le-mur|homme",
+   "identifiant": "bras-tendu-contre-le-mur",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Bras tendu contre le mur"
+   ],
+   "gif": "media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
+   "gif_sha256": "0cf727335e61934175f92724c743916e8ff13d8cdb5817c4ed352a36132d2fd2",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": "planches/lot04/bras-tendu-contre-le-mur.png"
+  },
+  {
+   "cle": "bras-tendu-derriere|homme",
+   "identifiant": "bras-tendu-derriere",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Bras tendu derrière"
+   ],
+   "gif": "media/refonte-photo/gif/homme/bras-tendu-derriere-homme.gif",
+   "gif_sha256": "fea2fafa28306ecce9b4935ee7613fbaeaacb0d4b206ba460e6cdece5cbd0bb3",
+   "gif_frames": 2,
+   "gif_size": [
+    372,
+    440
+   ],
+   "planche": "planches/lot05/bras-tendu-derriere.png"
+  },
+  {
+   "cle": "bras-tendu-devant-main-tiree|homme",
+   "identifiant": "bras-tendu-devant-main-tiree",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Bras tendu devant, main tirée"
+   ],
+   "gif": "media/refonte-photo/gif/homme/bras-tendu-devant-main-tiree-homme.gif",
+   "gif_sha256": "f704179757f839cd30e2cb2869853d4c1c8d42befee0c2e23645bcb73bc9d0c0",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot07/bras-tendu-devant-main-tiree.png"
+  },
+  {
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "identifiant": "bulgarian-split-squat-halteres",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Bulgarian split squat haltères"
+   ],
+   "gif": "media/refonte-photo/gif/femme/bulgarian-split-squat-halteres-femme.gif",
+   "gif_sha256": "76ec865a3eb818794c4dcb8d4f61a1c2f7c64f522e92ead8463f84c69fffd3c7",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot27/bulgarian-split-squat-halteres.png"
+  },
+  {
+   "cle": "bulgarian-split-squat|homme",
+   "identifiant": "bulgarian-split-squat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Bulgarian split squat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/bulgarian-split-squat-homme.gif",
+   "gif_sha256": "bf9d47332a696d321614af4b5164cfc4313210a09c20ad138264ab643d266175",
+   "gif_frames": 2,
+   "gif_size": [
+    376,
+    440
+   ],
+   "planche": "planches/lot20/bulgarian-split-squat.png"
+  },
+  {
+   "cle": "burpees-simplifies|homme",
+   "identifiant": "burpees-simplifies",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Burpees simplifiés"
+   ],
+   "gif": "media/refonte-photo/gif/homme/burpees-simplifies-homme.gif",
+   "gif_sha256": "0bce9dc43c3b25179177a5d7dc1a000f44c3396966eaeadc4160b3fc89731701",
+   "gif_frames": 2,
+   "gif_size": [
+    442,
+    440
+   ],
+   "planche": "planches/lot40/burpees-simplifies.png"
+  },
+  {
+   "cle": "burpees|homme",
+   "identifiant": "burpees",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Burpees"
+   ],
+   "gif": "media/refonte-photo/gif/homme/burpees-homme.gif",
+   "gif_sha256": "83a58904a8967e9a6729438b00488b3504f718074457eee9214d8b3b14e29f6b",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot19/burpees.png"
+  },
+  {
+   "cle": "cables-croises-rotation-externe|homme",
+   "identifiant": "cables-croises-rotation-externe",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Câbles croisés + rotation externe"
+   ],
+   "gif": "media/refonte-photo/gif/homme/cables-croises-rotation-externe-homme.gif",
+   "gif_sha256": "2c4a62fd4b68688455123a3fcc25b83c3514e2f4deb99f546ceee60ff451589e",
+   "gif_frames": 2,
+   "gif_size": [
+    363,
+    440
+   ],
+   "planche": "planches/lot24/cables-croises-rotation-externe.png"
+  },
+  {
+   "cle": "cables-croises|homme",
+   "identifiant": "cables-croises",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Câbles croisés"
+   ],
+   "gif": "media/refonte-photo/gif/homme/cables-croises-homme.gif",
+   "gif_sha256": "09395898bff010e6af2b9ba2c0085b44497e22ab5d2cc65cad3c3a76d8b012a1",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot22/cables-croises.png"
+  },
+  {
+   "cle": "california-press-barre-au-cou|homme",
+   "identifiant": "california-press-barre-au-cou",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "California press (barre au cou)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/california-press-barre-au-cou-homme.gif",
+   "gif_sha256": "da8f3794f05f5a6aa97cfd592fc801a3922922b05bbae198a3a21c31ad768a3d",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot18/california-press-barre-au-cou.png"
+  },
+  {
+   "cle": "chaise-au-mur|homme",
+   "identifiant": "chaise-au-mur",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Chaise au mur"
+   ],
+   "gif": "media/refonte-photo/gif/homme/chaise-au-mur-homme.gif",
+   "gif_sha256": "a292bf967a074d353ba331a153a4108ffa99f5048fa709585c73f101343ed443",
+   "gif_frames": 2,
+   "gif_size": [
+    365,
+    440
+   ],
+   "planche": "planches/lot40/chaise-au-mur.png"
+  },
+  {
+   "cle": "chaise-douce|homme",
+   "identifiant": "chaise-douce",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Chaise douce"
+   ],
+   "gif": "media/refonte-photo/gif/homme/chaise-douce-homme.gif",
+   "gif_sha256": "22de3f52c624be930dc0de6c8c8a618017234ece673b25de42a55adc757a43b5",
+   "gif_frames": 2,
+   "gif_size": [
+    396,
+    440
+   ],
+   "planche": "planches/lot40/chaise-douce.png"
+  },
+  {
+   "cle": "circuit-abdominaux-crunch-releves-gainage|femme",
+   "identifiant": "circuit-abdominaux-crunch-releves-gainage",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Circuit abdominaux (crunch + relevés + gainage)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/circuit-abdominaux-crunch-releves-gainage-femme.gif",
+   "gif_sha256": "0d86ebee7f5e461a6bfbc2a1033d486ed421adb252558cfc2306ed4251abfae3",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot09/circuit-abdominaux-crunch-releves-gainage.png"
+  },
+  {
+   "cle": "circuit-gainage-planche-lateral-bird-dog|femme",
+   "identifiant": "circuit-gainage-planche-lateral-bird-dog",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Circuit gainage (planche + latéral + bird dog)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/circuit-gainage-planche-lateral-bird-dog-femme.gif",
+   "gif_sha256": "81e2524bf1c171c94b0eb4b46aaeb39965707d59758beb144e0635603e0c037c",
+   "gif_frames": 2,
+   "gif_size": [
+    383,
+    440
+   ],
+   "planche": "planches/lot21/circuit-gainage-planche-lateral-bird-dog.png"
+  },
+  {
+   "cle": "ciseaux-au-bord-effort|femme",
+   "identifiant": "ciseaux-au-bord-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/ciseaux-au-bord-effort-femme.gif",
+   "gif_sha256": "f8fed44ca325852fc5d01ff033c4a587ebe1a49fa7e0c1411764c2b62b0b6097",
+   "gif_frames": 2,
+   "gif_size": [
+    442,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "ciseaux-au-bord|femme",
+   "identifiant": "ciseaux-au-bord",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Ciseaux au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/ciseaux-au-bord-femme.gif",
+   "gif_sha256": "f8fed44ca325852fc5d01ff033c4a587ebe1a49fa7e0c1411764c2b62b0b6097",
+   "gif_frames": 2,
+   "gif_size": [
+    442,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "ciseaux-mains-au-bord|femme",
+   "identifiant": "ciseaux-mains-au-bord",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/ciseaux-mains-au-bord-femme.gif",
+   "gif_sha256": "f8fed44ca325852fc5d01ff033c4a587ebe1a49fa7e0c1411764c2b62b0b6097",
+   "gif_frames": 2,
+   "gif_size": [
+    442,
+    440
+   ],
+   "planche": "planches/lot44/ciseaux-mains-au-bord.png"
+  },
+  {
+   "cle": "clamshell-a-l-elastique|femme",
+   "identifiant": "clamshell-a-l-elastique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Clamshell à l'élastique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/clamshell-a-l-elastique-femme.gif",
+   "gif_sha256": "491a14439fa13d26b965b567b59a60957028a83db18fc929786be89fb6b1d7d4",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot13/clamshell-a-l-elastique.png"
+  },
+  {
+   "cle": "cobra-doux|homme",
+   "identifiant": "cobra-doux",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Cobra doux"
+   ],
+   "gif": "media/refonte-photo/gif/homme/cobra-doux-homme.gif",
+   "gif_sha256": "75b18e2302c8c721a9e7514e09640aaa44fd2e7863b63a3ef9a7efb8fba96a20",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot05/cobra-doux.png"
+  },
+  {
+   "cle": "corde-invisible|homme",
+   "identifiant": "corde-invisible",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Corde invisible"
+   ],
+   "gif": "media/refonte-photo/gif/homme/corde-invisible-homme.gif",
+   "gif_sha256": "e5e523860faa9e7041adc2ee652d143bc5a99bb66ecf57e0df25658f8d165291",
+   "gif_frames": 2,
+   "gif_size": [
+    438,
+    440
+   ],
+   "planche": "planches/lot41/corde-invisible.png"
+  },
+  {
+   "cle": "coude-au-dessus-de-la-tete|homme",
+   "identifiant": "coude-au-dessus-de-la-tete",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Coude au-dessus de la tête"
+   ],
+   "gif": "media/refonte-photo/gif/homme/coude-au-dessus-de-la-tete-homme.gif",
+   "gif_sha256": "385ff605943ddd08dc1b8154b3b265c70d4814683d3d645710bf56b9026736c1",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot07/coude-au-dessus-de-la-tete.png"
+  },
+  {
+   "cle": "crunch-a-la-poulie-ou-au-sol|femme",
+   "identifiant": "crunch-a-la-poulie-ou-au-sol",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Crunch à la poulie (ou au sol)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/crunch-a-la-poulie-ou-au-sol-femme.gif",
+   "gif_sha256": "8df34d9f9d05539e0fa64e568e066b83331b4f1e49cbaf251cfb5258573467f7",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot26/crunch-a-la-poulie-ou-au-sol.png"
+  },
+  {
+   "cle": "crunch-a-la-poulie|homme",
+   "identifiant": "crunch-a-la-poulie",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Crunch à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
+   "gif_sha256": "2b5be5e924f07fbf554543b6023acd988a061a189054d1220493645d8163dd56",
+   "gif_frames": 2,
+   "gif_size": [
+    339,
+    440
+   ],
+   "planche": "planches/lot23/crunch-a-la-poulie.png"
+  },
+  {
+   "cle": "crunch-sur-swiss-ball|homme",
+   "identifiant": "crunch-sur-swiss-ball",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Crunch sur swiss ball"
+   ],
+   "gif": "media/refonte-photo/gif/homme/crunch-sur-swiss-ball-homme.gif",
+   "gif_sha256": "52092c8690fc5f6ed4c15f9ca116a39de721811dfc910ea6eeda6f6684507a52",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot15/crunch-sur-swiss-ball.png"
+  },
+  {
+   "cle": "crunch|homme",
+   "identifiant": "crunch",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Crunch"
+   ],
+   "gif": "media/refonte-photo/gif/homme/crunch-homme.gif",
+   "gif_sha256": "2a26b0bb509b81e0329ba8a17a16af6f0f8ccad037ccff1092d1780f400aadec",
+   "gif_frames": 2,
+   "gif_size": [
+    384,
+    440
+   ],
+   "planche": "planches/lot02/crunch.png"
+  },
+  {
+   "cle": "curl-barre-debout|homme",
+   "identifiant": "curl-barre-debout",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl barre debout"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-barre-debout-homme.gif",
+   "gif_sha256": "9e855268e1b51523acafc37bd58541bb417942dc64fe0deacbd7bea9c031b907",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": "planches/lot26/curl-barre-debout.png"
+  },
+  {
+   "cle": "curl-barre|homme",
+   "identifiant": "curl-barre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl barre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-barre-homme.gif",
+   "gif_sha256": "35a344aacf3dd581e09098c708e1d0d122dc0c82ab431539845bfb013233492f",
+   "gif_frames": 2,
+   "gif_size": [
+    380,
+    440
+   ],
+   "planche": "planches/lot15/curl-barre.png"
+  },
+  {
+   "cle": "curl-concentration|homme",
+   "identifiant": "curl-concentration",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl concentration"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-concentration-homme.gif",
+   "gif_sha256": "b18b490f9567c8dd6933f0385259d6db464d965cc5aa16534171781dbcd33da8",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot22/curl-concentration.png"
+  },
+  {
+   "cle": "curl-haltere-supination-banc-scott-90|homme",
+   "identifiant": "curl-haltere-supination-banc-scott-90",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl haltère supination, banc Scott 90°"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-haltere-supination-banc-scott-90-homme.gif",
+   "gif_sha256": "3387705757e6015dc31642edfeb5692d569a85ff29f3f21f01fe595c42972c49",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot16/curl-haltere-supination-banc-scott-90.png"
+  },
+  {
+   "cle": "curl-halteres-incline-prise-neutre|homme",
+   "identifiant": "curl-halteres-incline-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl haltères incliné, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-halteres-incline-prise-neutre-homme.gif",
+   "gif_sha256": "2642d39b0f67a2d87e1caeb49d560ca198977a03f55386973360b9e479cc38d2",
+   "gif_frames": 2,
+   "gif_size": [
+    443,
+    440
+   ],
+   "planche": "planches/lot36/curl-halteres-incline-prise-neutre.png"
+  },
+  {
+   "cle": "curl-halteres-incline-supination|homme",
+   "identifiant": "curl-halteres-incline-supination",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl haltères incliné, supination"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-halteres-incline-supination-homme.gif",
+   "gif_sha256": "477daf83c345fa33d5c29f628f6a2549f6ac9806787202c036ab39ac7320af48",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": "planches/lot30/curl-halteres-incline-supination.png"
+  },
+  {
+   "cle": "curl-halteres-incline|homme",
+   "identifiant": "curl-halteres-incline",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl haltères incliné"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-halteres-incline-homme.gif",
+   "gif_sha256": "f10b7a3c11ed8df2beb7dff74dc67847a05d5bb5fe51a3d246b468594838aaeb",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot25/curl-halteres-incline.png"
+  },
+  {
+   "cle": "curl-halteres|femme",
+   "identifiant": "curl-halteres",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Curl haltères"
+   ],
+   "gif": "media/refonte-photo/gif/femme/curl-halteres-femme.gif",
+   "gif_sha256": "87fa283fb39395935ee20c5870fae57d6ad48e4e2769e98d7c5aca0976fd20a7",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot27/curl-halteres.png"
+  },
+  {
+   "cle": "curl-marteau-assis|homme",
+   "identifiant": "curl-marteau-assis",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl marteau assis"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-marteau-assis-homme.gif",
+   "gif_sha256": "2b24a4da9f9d774eede7d4f4fa2cd09754d7e515a584622b3eb28439b70b6c9d",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot11/curl-marteau-assis.png"
+  },
+  {
+   "cle": "curl-marteau|homme",
+   "identifiant": "curl-marteau",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl marteau"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-marteau-homme.gif",
+   "gif_sha256": "b3e93e1e1a7f9eb9069971fe6bf9527663992e03d7a3b91eb8b9ef24d189d0fa",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot26/curl-marteau.png"
+  },
+  {
+   "cle": "curl-poulie-basse-supination|homme",
+   "identifiant": "curl-poulie-basse-supination",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl poulie basse, supination"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-poulie-basse-supination-homme.gif",
+   "gif_sha256": "2c413fc688059206e0a5f3886209b0b3935860964aa60b0b0a46c48480ea59db",
+   "gif_frames": 2,
+   "gif_size": [
+    378,
+    440
+   ],
+   "planche": "planches/lot23/curl-poulie-basse-supination.png"
+  },
+  {
+   "cle": "curl-poulie-basse|homme",
+   "identifiant": "curl-poulie-basse",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl poulie basse"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-poulie-basse-homme.gif",
+   "gif_sha256": "71bafc979c3027a8f11478330e99abc0fe75374b2bf70e0cf5d835c891be7a21",
+   "gif_frames": 2,
+   "gif_size": [
+    333,
+    440
+   ],
+   "planche": "planches/lot20/curl-poulie-basse.png"
+  },
+  {
+   "cle": "curl-scott-90-haltere-supination|homme",
+   "identifiant": "curl-scott-90-haltere-supination",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Scott 90° haltère supination"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-scott-90-haltere-supination-homme.gif",
+   "gif_sha256": "08fa83632f20a9b23e7ab174f868799622248fb6c5eced41557d35fd451630ab",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot35/curl-scott-90-haltere-supination.png"
+  },
+  {
+   "cle": "curl-scott-barre-ez-pronation|homme",
+   "identifiant": "curl-scott-barre-ez-pronation",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Scott barre EZ, pronation"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-scott-barre-ez-pronation-homme.gif",
+   "gif_sha256": "ce76a006bacfe668834a023ada15b6df556629bbeb08abeccba032dc68f24a51",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot18/curl-scott-barre-ez-pronation.png"
+  },
+  {
+   "cle": "curl-scott-barre-ez-supination|homme",
+   "identifiant": "curl-scott-barre-ez-supination",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Scott barre EZ, supination"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-scott-barre-ez-supination-homme.gif",
+   "gif_sha256": "581932dd20f0171fc316ae07eaf0adc27cb0ddb1f162519446dfffe1a2d97bdd",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot18/curl-scott-barre-ez-supination.png"
+  },
+  {
+   "cle": "curl-scott-haltere-neutre|homme",
+   "identifiant": "curl-scott-haltere-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Scott haltère neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
+   "gif_sha256": "197187199037767a6d42065141b53e3a51b6e2fa83f78585168bb08b5addebf8",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot33/curl-scott-haltere-neutre.png"
+  },
+  {
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "identifiant": "curl-scott-haltere-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Scott haltère, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+   "gif_sha256": "7cdb8ca673040b71d58e7cfd064761938c4671d5340147c85a110f443e5014f7",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot25/curl-scott-haltere-prise-neutre.png"
+  },
+  {
+   "cle": "curl-zottman-assis|homme",
+   "identifiant": "curl-zottman-assis",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Zottman assis"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-zottman-assis-homme.gif",
+   "gif_sha256": "088734f0b07937f1642c5f83896ee330d84fdf2f428dbcfe0037fc964b6f27aa",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot11/curl-zottman-assis.png"
+  },
+  {
+   "cle": "curl-zottman-un-bras-banc-scott|homme",
+   "identifiant": "curl-zottman-un-bras-banc-scott",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Zottman un bras, banc Scott"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
+   "gif_sha256": "fa3e504b6d0114181fdefc9fab0cb5189400f8b7b9a851187e0376c54ff868fa",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot16/curl-zottman-un-bras-banc-scott.png"
+  },
+  {
+   "cle": "curl-zottman|homme",
+   "identifiant": "curl-zottman",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Curl Zottman"
+   ],
+   "gif": "media/refonte-photo/gif/homme/curl-zottman-homme.gif",
+   "gif_sha256": "f7b27078da26260e96c56dacfa39a81f871a4a8bf0ce43750de31097e53f0a6e",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot26/curl-zottman.png"
+  },
+  {
+   "cle": "dead-bug-avec-rotation|femme",
+   "identifiant": "dead-bug-avec-rotation",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Dead bug avec rotation"
+   ],
+   "gif": "media/refonte-photo/gif/femme/dead-bug-avec-rotation-femme.gif",
+   "gif_sha256": "9a26df1efda1f762ef9ee1b75e154f6f65d32a083cba3dd9a98766315765113e",
+   "gif_frames": 2,
+   "gif_size": [
+    375,
+    440
+   ],
+   "planche": "planches/lot17/dead-bug-avec-rotation.png"
+  },
+  {
+   "cle": "dead-bug|femme",
+   "identifiant": "dead-bug",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Dead bug"
+   ],
+   "gif": "media/refonte-photo/gif/femme/dead-bug-femme.gif",
+   "gif_sha256": "d4ef23e9784bdc3756acfce90798715ba80160172a6008394a036a6f48706146",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot40/dead-bug.png"
+  },
+  {
+   "cle": "dead-bug|homme",
+   "identifiant": "dead-bug",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Dead bug"
+   ],
+   "gif": "media/refonte-photo/gif/homme/dead-bug-homme.gif",
+   "gif_sha256": "431dc132992811426f16dfafa31e6d549576ba44a4cb70165999499568e47378",
+   "gif_frames": 2,
+   "gif_size": [
+    378,
+    440
+   ],
+   "planche": "planches/lot40/dead-bug.png"
+  },
+  {
+   "cle": "deplacements-lateraux-4-m-effort|femme",
+   "identifiant": "deplacements-lateraux-4-m-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/deplacements-lateraux-4-m-effort-femme.gif",
+   "gif_sha256": "0bddac76645e3de91f72c8b6ca4888ab67abb7c5f3f986b7aeec0d565cd5e85f",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "deplacements-lateraux-4-m|femme",
+   "identifiant": "deplacements-lateraux-4-m",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Déplacements latéraux (4 m)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/deplacements-lateraux-4-m-femme.gif",
+   "gif_sha256": "0bddac76645e3de91f72c8b6ca4888ab67abb7c5f3f986b7aeec0d565cd5e85f",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": "planches/lot44/deplacements-lateraux-4-m.png"
+  },
+  {
+   "cle": "deplacements-lateraux|femme",
+   "identifiant": "deplacements-lateraux",
+   "athlete": "femme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Déplacements latéraux"
+   ],
+   "gif": "media/refonte-photo/gif/femme/deplacements-lateraux-femme.gif",
+   "gif_sha256": "0bddac76645e3de91f72c8b6ca4888ab67abb7c5f3f986b7aeec0d565cd5e85f",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "developpe-couche-barre-plat|homme",
+   "identifiant": "developpe-couche-barre-plat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé couché barre plat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-couche-barre-plat-homme.gif",
+   "gif_sha256": "3f5a1b6e9a0fc4f8316741bb95841531a7386076735dd4f7fb1d4112445c48af",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": "planches/lot15/developpe-couche-barre-plat.png"
+  },
+  {
+   "cle": "developpe-couche-barre|homme",
+   "identifiant": "developpe-couche-barre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé couché barre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-couche-barre-homme.gif",
+   "gif_sha256": "e4d9c22e0a05ea25ced9498f13d6322b2fa2a632014191973821fdc67133001e",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot24/developpe-couche-barre.png"
+  },
+  {
+   "cle": "developpe-couche-decline-prise-serree|homme",
+   "identifiant": "developpe-couche-decline-prise-serree",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé couché décliné prise serrée"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-couche-decline-prise-serree-homme.gif",
+   "gif_sha256": "0684d5408ba6e6d2b4a7afce78d9249de004cea26e5212498234381419a2d76d",
+   "gif_frames": 2,
+   "gif_size": [
+    373,
+    440
+   ],
+   "planche": "planches/lot28/developpe-couche-decline-prise-serree.png"
+  },
+  {
+   "cle": "developpe-couche-halteres|femme",
+   "identifiant": "developpe-couche-halteres",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Développé couché haltères"
+   ],
+   "gif": "media/refonte-photo/gif/femme/developpe-couche-halteres-femme.gif",
+   "gif_sha256": "6f21183bb94b2b485ae6798d60a6145042815661b65720c0bba78c46037c516c",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot24/developpe-couche-halteres.png"
+  },
+  {
+   "cle": "developpe-couche-plat-inertie-depuis-les-pins|homme",
+   "identifiant": "developpe-couche-plat-inertie-depuis-les-pins",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé couché plat, inertie depuis les pins"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-couche-plat-inertie-depuis-les-pins-homme.gif",
+   "gif_sha256": "a73949925ba1c2fd96375031d0630b2682f8a0476efa9b4a1a14bcd647663b7c",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot30/developpe-couche-plat-inertie-depuis-les-pins.png"
+  },
+  {
+   "cle": "developpe-couche-prise-serree|homme",
+   "identifiant": "developpe-couche-prise-serree",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé couché prise serrée"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-couche-prise-serree-homme.gif",
+   "gif_sha256": "5e38d08443e263199501110b6e8614fe92d185128188f4c0ae15822eebf9971a",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot27/developpe-couche-prise-serree.png"
+  },
+  {
+   "cle": "developpe-couche-test-1rm|homme",
+   "identifiant": "developpe-couche-test-1rm",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé couché — test 1RM"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-couche-test-1rm-homme.gif",
+   "gif_sha256": "bcaf491c4edff6deb41c5435b9a494ff8fca40f0f64ab255eed2e5d946548da3",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot24/developpe-couche-test-1rm.png"
+  },
+  {
+   "cle": "developpe-derriere-la-nuque|homme",
+   "identifiant": "developpe-derriere-la-nuque",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé derrière la nuque"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-derriere-la-nuque-homme.gif",
+   "gif_sha256": "110f2ff4726345037ed6328f4d3cf7650f004d39fb36b6fea0560e10d55918e8",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot31/developpe-derriere-la-nuque.png"
+  },
+  {
+   "cle": "developpe-haltere-un-bras-debout|homme",
+   "identifiant": "developpe-haltere-un-bras-debout",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltère un bras debout"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-haltere-un-bras-debout-homme.gif",
+   "gif_sha256": "75b355758a02d50d9235666c824f6751c11bfcb75088b252885f0a20d4c2bfc9",
+   "gif_frames": 2,
+   "gif_size": [
+    244,
+    440
+   ],
+   "planche": "planches/lot26/developpe-haltere-un-bras-debout.png"
+  },
+  {
+   "cle": "developpe-halteres-assis-neutre-pronation|homme",
+   "identifiant": "developpe-halteres-assis-neutre-pronation",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères assis, neutre→pronation"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-assis-neutre-pronation-homme.gif",
+   "gif_sha256": "884b8db46ca9a947056211129f2f828571f589088b7658ce789098999a1e1c9d",
+   "gif_frames": 2,
+   "gif_size": [
+    384,
+    440
+   ],
+   "planche": "planches/lot11/developpe-halteres-assis-neutre-pronation.png"
+  },
+  {
+   "cle": "developpe-halteres-assis-prise-neutre|homme",
+   "identifiant": "developpe-halteres-assis-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères assis, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-assis-prise-neutre-homme.gif",
+   "gif_sha256": "5d87213f7a64c97ed2895e478ceb22666e90f42eac43c40822864a91e2c06bdd",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot11/developpe-halteres-assis-prise-neutre.png"
+  },
+  {
+   "cle": "developpe-halteres-assis|homme",
+   "identifiant": "developpe-halteres-assis",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères assis"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-assis-homme.gif",
+   "gif_sha256": "f6db6170a201743abd2b2e2a5ebd8f6d60d2e923fa839bf419c975751eec5e3a",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot11/developpe-halteres-assis.png"
+  },
+  {
+   "cle": "developpe-halteres-decline-prise-neutre|homme",
+   "identifiant": "developpe-halteres-decline-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères décliné, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
+   "gif_sha256": "293ac99c80e4bcf55e6b96844f56d3904c0b841bcf9f9c7123b75316c3ee85a3",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot37/developpe-halteres-decline-prise-neutre.png"
+  },
+  {
+   "cle": "developpe-halteres-incline-45-prise-neutre|homme",
+   "identifiant": "developpe-halteres-incline-45-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères incliné 45°, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-incline-45-prise-neutre-homme.gif",
+   "gif_sha256": "ee6a1c6f5a9a02bd3f6091527bb279045538394757d0b4543ea35351fff54d68",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot37/developpe-halteres-incline-45-prise-neutre.png"
+  },
+  {
+   "cle": "developpe-halteres-incline-pronation|homme",
+   "identifiant": "developpe-halteres-incline-pronation",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères incliné, pronation"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-incline-pronation-homme.gif",
+   "gif_sha256": "7ae94caf326740dfb95ce54beca8724c128e35dfb70f6c5f09aa3e4f2e972cde",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot38/developpe-halteres-incline-pronation.png"
+  },
+  {
+   "cle": "developpe-halteres-plat-prise-neutre|homme",
+   "identifiant": "developpe-halteres-plat-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères plat, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-plat-prise-neutre-homme.gif",
+   "gif_sha256": "c226aa5bb418d5a893d09b8e6f86afc3cc1f62de6a29c4ece51891f848a3410c",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot35/developpe-halteres-plat-prise-neutre.png"
+  },
+  {
+   "cle": "developpe-halteres-plat|homme",
+   "identifiant": "developpe-halteres-plat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé haltères plat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-halteres-plat-homme.gif",
+   "gif_sha256": "9f40dc906598b4fadae013b36ed07a776dc453751afafbb2fd59e30b5d7c573e",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot28/developpe-halteres-plat.png"
+  },
+  {
+   "cle": "developpe-incline-barre|homme",
+   "identifiant": "developpe-incline-barre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé incliné barre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-incline-barre-homme.gif",
+   "gif_sha256": "11b92b52d38b23d1bf051eb2adb530b07d9a98ebf875f26b26e5549cb75e9e6e",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot15/developpe-incline-barre.png"
+  },
+  {
+   "cle": "developpe-incline-halteres|femme",
+   "identifiant": "developpe-incline-halteres",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Développé incliné haltères",
+    "Développé haltères incliné 30°",
+    "Développé haltères incliné 45°",
+    "Développé haltères incliné"
+   ],
+   "gif": "media/refonte-photo/gif/femme/developpe-incline-halteres-femme.gif",
+   "gif_sha256": "8de6e89e5395700cfa45a7f87840fc90bf9909f0cb9f1a967f8dd8635c13335b",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot33/developpe-incline-halteres.png"
+  },
+  {
+   "cle": "developpe-militaire-debout|homme",
+   "identifiant": "developpe-militaire-debout",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé militaire debout"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-militaire-debout-homme.gif",
+   "gif_sha256": "e2b66e36bb29654e73da80e2792bb085cd7cd992a8cb1d867d5afb774b3fd18c",
+   "gif_frames": 2,
+   "gif_size": [
+    375,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "developpe-militaire-halteres-assis-test-3-5-reps|femme",
+   "identifiant": "developpe-militaire-halteres-assis-test-3-5-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Développé militaire haltères assis — test (3-5 reps)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/developpe-militaire-halteres-assis-test-3-5-reps-femme.gif",
+   "gif_sha256": "8b50132bdd346e9016bf1cf407a02d8db03fcbd5960b19f7d49d9aa8aae5c2f6",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot16/developpe-militaire-halteres-assis-test-3-5-reps.png"
+  },
+  {
+   "cle": "developpe-militaire-halteres-assis|femme",
+   "identifiant": "developpe-militaire-halteres-assis",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Développé militaire haltères assis"
+   ],
+   "gif": "media/refonte-photo/gif/femme/developpe-militaire-halteres-assis-femme.gif",
+   "gif_sha256": "961917e9b811d034ee849b85ff32549fa4a85662faee346d9a4b8d9d88fb8aff",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot11/developpe-militaire-halteres-assis.png"
+  },
+  {
+   "cle": "developpe-militaire-inertie-depuis-les-pins|homme",
+   "identifiant": "developpe-militaire-inertie-depuis-les-pins",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé militaire, inertie depuis les pins"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-militaire-inertie-depuis-les-pins-homme.gif",
+   "gif_sha256": "2e64bf2629810e521e96059bcb2a4514e9f25a3e3b706f713972634c47ab06cb",
+   "gif_frames": 2,
+   "gif_size": [
+    442,
+    440
+   ],
+   "planche": "planches/lot32/developpe-militaire-inertie-depuis-les-pins.png"
+  },
+  {
+   "cle": "developpe-militaire-test-1rm|homme",
+   "identifiant": "developpe-militaire-test-1rm",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Développé militaire — test 1RM"
+   ],
+   "gif": "media/refonte-photo/gif/homme/developpe-militaire-test-1rm-homme.gif",
+   "gif_sha256": "e264f1d521391d3c396d7668df098b1012aaf5c4f65929fc56230deea4db5b01",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot09/developpe-militaire-test-1rm.png"
+  },
+  {
+   "cle": "dips-au-bord|homme",
+   "identifiant": "dips-au-bord",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Dips au bord"
+   ],
+   "gif": "media/refonte-photo/gif/homme/dips-au-bord-homme.gif",
+   "gif_sha256": "212f5c752f93e8c162be6cafd8f5a1d929541c3b7a0a37a26d9c2d59237019b0",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot40/dips-au-bord.png"
+  },
+  {
+   "cle": "dips|homme",
+   "identifiant": "dips",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Dips"
+   ],
+   "gif": "media/refonte-photo/gif/homme/dips-homme.gif",
+   "gif_sha256": "f24f53a9c7dbaf1bce05a485a63e3882364dec241ed94293358e2631d9ec554c",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "drop-lunges-fentes-controlees|homme",
+   "identifiant": "drop-lunges-fentes-controlees",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Drop lunges (fentes contrôlées)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/drop-lunges-fentes-controlees-homme.gif",
+   "gif_sha256": "cb0991bbf15915509ff1a2413fccd044844b6d4cd71015caf013e86643f89e8b",
+   "gif_frames": 2,
+   "gif_size": [
+    387,
+    440
+   ],
+   "planche": "planches/lot26/drop-lunges-fentes-controlees.png"
+  },
+  {
+   "cle": "drop-lunges-fentes-sautees-controlees|homme",
+   "identifiant": "drop-lunges-fentes-sautees-controlees",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Drop lunges (fentes sautées contrôlées)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/drop-lunges-fentes-sautees-controlees-homme.gif",
+   "gif_sha256": "11a4883b106e89b3c7b55cef169ddd875d68fff9ed3f2887b0bbdde9dc4d7141",
+   "gif_frames": 2,
+   "gif_size": [
+    443,
+    440
+   ],
+   "planche": "planches/lot38/drop-lunges-fentes-sautees-controlees.png"
+  },
+  {
+   "cle": "ecartes-cables-incline|homme",
+   "identifiant": "ecartes-cables-incline",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Écartés câbles incliné"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ecartes-cables-incline-homme.gif",
+   "gif_sha256": "12340891882ef2efc61d7cb20d0bf3e40cd3cd6c43db887a3a0380658d4b45fb",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot25/ecartes-cables-incline.png"
+  },
+  {
+   "cle": "ecartes-halteres-decline|homme",
+   "identifiant": "ecartes-halteres-decline",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Écartés haltères décliné"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ecartes-halteres-decline-homme.gif",
+   "gif_sha256": "3caa6c5e7a2bef7196c87df6e76da0d57bc0d30178aa7d816762eb35a37930cd",
+   "gif_frames": 2,
+   "gif_size": [
+    338,
+    440
+   ],
+   "planche": "planches/lot30/ecartes-halteres-decline.png"
+  },
+  {
+   "cle": "ecartes-halteres|homme",
+   "identifiant": "ecartes-halteres",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Écartés haltères"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ecartes-halteres-homme.gif",
+   "gif_sha256": "bb6790d94f7411fced0fa8e42edf4caadc68d384dc15b47ea09155f685184468",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot28/ecartes-halteres.png"
+  },
+  {
+   "cle": "echauffement-battements-au-bord|femme",
+   "identifiant": "echauffement-battements-au-bord",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — battements au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/echauffement-battements-au-bord-femme.gif",
+   "gif_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "gif_frames": 2,
+   "gif_size": [
+    438,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "echauffement-battements-mobilite|femme",
+   "identifiant": "echauffement-battements-mobilite",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — battements + mobilité"
+   ],
+   "gif": "media/refonte-photo/gif/femme/echauffement-battements-mobilite-femme.gif",
+   "gif_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "gif_frames": 2,
+   "gif_size": [
+    438,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "echauffement-marche-aquatique|femme",
+   "identifiant": "echauffement-marche-aquatique",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/echauffement-marche-aquatique-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "echauffement-mise-en-route|homme",
+   "identifiant": "echauffement-mise-en-route",
+   "athlete": "homme",
+   "surface": "echauffement",
+   "noms": [
+    "Échauffement — mise en route"
+   ],
+   "gif": "media/refonte-photo/gif/homme/echauffement-mise-en-route-homme.gif",
+   "gif_sha256": "7a19c37100cf148f2b8abc2f14c725fa541527450d37e420fe860b607aeb6fe2",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "echauffement-mobilite|homme",
+   "identifiant": "echauffement-mobilite",
+   "athlete": "homme",
+   "surface": "echauffement",
+   "noms": [
+    "Échauffement — mobilité"
+   ],
+   "gif": "media/refonte-photo/gif/homme/echauffement-mobilite-homme.gif",
+   "gif_sha256": "df8e7e9b65108876b0b9ba879eb8ef81ed0f2625469b594c1ce37b98f4d394a1",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "echauffement-nage-douce|femme",
+   "identifiant": "echauffement-nage-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/femme/echauffement-nage-douce-femme.gif",
+   "gif_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "echauffement-series-d-approche|homme",
+   "identifiant": "echauffement-series-d-approche",
+   "athlete": "homme",
+   "surface": "echauffement",
+   "noms": [
+    "Échauffement — séries d’approche"
+   ],
+   "gif": "media/refonte-photo/gif/homme/echauffement-series-d-approche-homme.gif",
+   "gif_sha256": "9fc2b3620357078798a9aaeab4ba6c0dfa9ec0c1c3c178949ff1a626190a8b14",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "echauffement-soigneux-nage-douce|femme",
+   "identifiant": "echauffement-soigneux-nage-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/femme/echauffement-soigneux-nage-douce-femme.gif",
+   "gif_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "elevations-laterales-assises-variante|homme",
+   "identifiant": "elevations-laterales-assises-variante",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales assises (variante)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-assises-variante-homme.gif",
+   "gif_sha256": "a876fde41269dbafb94c551a566a539bd90b946ed4a56dc30f137914266045c3",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot12/elevations-laterales-assises-variante.png"
+  },
+  {
+   "cle": "elevations-laterales-assises|homme",
+   "identifiant": "elevations-laterales-assises",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales assises"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-assises-homme.gif",
+   "gif_sha256": "fa7442793fd72d352d135955517e3e2b23f71d4ac51232d8aa12d7f3eccec400",
+   "gif_frames": 2,
+   "gif_size": [
+    376,
+    440
+   ],
+   "planche": "planches/lot12/elevations-laterales-assises.png"
+  },
+  {
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "identifiant": "elevations-laterales-coude-a-90",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales coude à 90°"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
+   "gif_sha256": "f32bca1d8f9c2eb217a062cc7e5d19be7d21427a4b084793c6c0e38f250ccdae",
+   "gif_frames": 2,
+   "gif_size": [
+    262,
+    440
+   ],
+   "planche": "planches/lot30/elevations-laterales-coude-a-90.png"
+  },
+  {
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "identifiant": "elevations-laterales-halteres-myo-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales haltères — myo-reps"
+   ],
+   "gif": "media/refonte-photo/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+   "gif_sha256": "89487b94baa87c1c8a29d28d87e10dffccf1b658b7d6dcad019a149a9e32940b",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot31/elevations-laterales-halteres-myo-reps.png"
+  },
+  {
+   "cle": "elevations-laterales-halteres|homme",
+   "identifiant": "elevations-laterales-halteres",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales haltères"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-halteres-homme.gif",
+   "gif_sha256": "ed9d170a7c28700132f9c67d69f1446825824fc419b245f2e542a3e40ad09496",
+   "gif_frames": 2,
+   "gif_size": [
+    368,
+    440
+   ],
+   "planche": "planches/lot27/elevations-laterales-halteres.png"
+  },
+  {
+   "cle": "elevations-laterales-incline-30-face-au-banc|homme",
+   "identifiant": "elevations-laterales-incline-30-face-au-banc",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales incliné 30° (face au banc)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-incline-30-face-au-banc-homme.gif",
+   "gif_sha256": "54bd272d94b4b7881355fce7105973f63fd4de06d200f6e961bb40f0cd28deeb",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot25/elevations-laterales-incline-30-face-au-banc.png"
+  },
+  {
+   "cle": "elevations-laterales-incline-30|homme",
+   "identifiant": "elevations-laterales-incline-30",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales incliné 30°",
+    "Élévations latérales incliné 45°",
+    "Élévations latérales incliné"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-incline-30-homme.gif",
+   "gif_sha256": "448285afa76d7757d899ea8ecdcb4284e88c616e6f519633a35f3e0e9d893d67",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot38/elevations-laterales-incline-30.png"
+  },
+  {
+   "cle": "elevations-laterales-lean-away|homme",
+   "identifiant": "elevations-laterales-lean-away",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales lean away"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-lean-away-homme.gif",
+   "gif_sha256": "c2c18f416e8d2e2bac6450b7779475d0774b1a8cf332a1e2ffe72bf652b75fa7",
+   "gif_frames": 2,
+   "gif_size": [
+    376,
+    440
+   ],
+   "planche": "planches/lot13/elevations-laterales-lean-away.png"
+  },
+  {
+   "cle": "elevations-laterales|homme",
+   "identifiant": "elevations-laterales",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Élévations latérales"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elevations-laterales-homme.gif",
+   "gif_sha256": "e169d622c8002b389ba1eb8a13ad4549749bd8750adac0e30e7ddc4968b908e7",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot34/elevations-laterales.png"
+  },
+  {
+   "cle": "elliptique-fractionne|femme",
+   "identifiant": "elliptique-fractionne",
+   "athlete": "femme",
+   "surface": "cardio-elliptique",
+   "noms": [
+    "Elliptique — fractionné"
+   ],
+   "gif": "media/refonte-photo/gif/femme/elliptique-fractionne-femme.gif",
+   "gif_sha256": "17b2e2fcfe181f96c0539c81772b08cedaaee76805470d972811fb42430cb170",
+   "gif_frames": 2,
+   "gif_size": [
+    373,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "elliptique-mise-en-route|femme",
+   "identifiant": "elliptique-mise-en-route",
+   "athlete": "femme",
+   "surface": "cardio-elliptique",
+   "noms": [
+    "Elliptique — mise en route"
+   ],
+   "gif": "media/refonte-photo/gif/femme/elliptique-mise-en-route-femme.gif",
+   "gif_sha256": "faf36719f9d19e7549fac38da7329028416653fe55003e0088a3b808895a9090",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "elliptique-recuperation-active|femme",
+   "identifiant": "elliptique-recuperation-active",
+   "athlete": "femme",
+   "surface": "cardio-elliptique",
+   "noms": [
+    "Elliptique — récupération active"
+   ],
+   "gif": "media/refonte-photo/gif/femme/elliptique-recuperation-active-femme.gif",
+   "gif_sha256": "29b722fb3b737b89e32538049d708049a076f3fc96c0f2a10f0d3a5cac350247",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "elliptique-retour-au-calme|femme",
+   "identifiant": "elliptique-retour-au-calme",
+   "athlete": "femme",
+   "surface": "cardio-elliptique",
+   "noms": [
+    "Elliptique — retour au calme"
+   ],
+   "gif": "media/refonte-photo/gif/femme/elliptique-retour-au-calme-femme.gif",
+   "gif_sha256": "4f2c80886ae7d3269da29a7922c8210bf4c630b865e90a65e904d15bae9bd9eb",
+   "gif_frames": 2,
+   "gif_size": [
+    374,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "etirement-contre-le-mur|homme",
+   "identifiant": "etirement-contre-le-mur",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Étirement contre le mur"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirement-contre-le-mur-homme.gif",
+   "gif_sha256": "1e6e0dd8a12b35d699a3131fcda26fbbeed3687dca1cbdf12650ff491b807747",
+   "gif_frames": 2,
+   "gif_size": [
+    125,
+    440
+   ],
+   "planche": "planches/lot05/etirement-contre-le-mur.png"
+  },
+  {
+   "cle": "etirement-dans-l-encadrement-de-porte|homme",
+   "identifiant": "etirement-dans-l-encadrement-de-porte",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Étirement dans l'encadrement de porte"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
+   "gif_sha256": "214150ca9201891bf0839d048b53ff580ee6cac3cb6cf3cd5cba0d53c4998a71",
+   "gif_frames": 2,
+   "gif_size": [
+    369,
+    440
+   ],
+   "planche": "planches/lot06/etirement-dans-l-encadrement-de-porte.png"
+  },
+  {
+   "cle": "etirement-des-extenseurs|homme",
+   "identifiant": "etirement-des-extenseurs",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Étirement des extenseurs"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirement-des-extenseurs-homme.gif",
+   "gif_sha256": "9010e2f9e3d1423353511c67208d9d67ec4e37f32763e45d3442e299f6d8ffb4",
+   "gif_frames": 2,
+   "gif_size": [
+    375,
+    440
+   ],
+   "planche": "planches/lot07/etirement-des-extenseurs.png"
+  },
+  {
+   "cle": "etirement-des-flechisseurs|homme",
+   "identifiant": "etirement-des-flechisseurs",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Étirement des fléchisseurs"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirement-des-flechisseurs-homme.gif",
+   "gif_sha256": "b2b87c3a254bd7fdf8123d7db5f35aaac47e04c691def631c543a4f6d9215cde",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot06/etirement-des-flechisseurs.png"
+  },
+  {
+   "cle": "etirement-du-cobra|homme",
+   "identifiant": "etirement-du-cobra",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Étirement du cobra"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirement-du-cobra-homme.gif",
+   "gif_sha256": "70f0e7b4bad530c72af375e3791c831bb28bb25b6353e19d200b18c6eaede7c9",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot05/etirement-du-cobra.png"
+  },
+  {
+   "cle": "etirement-du-flechisseur-de-hanche-chevalier|homme",
+   "identifiant": "etirement-du-flechisseur-de-hanche-chevalier",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Étirement du fléchisseur de hanche (chevalier)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirement-du-flechisseur-de-hanche-chevalier-homme.gif",
+   "gif_sha256": "8b2309caa8cad1cee77b65607f8b019354a257f4b0558d22c6ea7ab3f1cc2447",
+   "gif_frames": 2,
+   "gif_size": [
+    378,
+    440
+   ],
+   "planche": "planches/lot05/etirement-du-flechisseur-de-hanche-chevalier.png"
+  },
+  {
+   "cle": "etirement-du-piriforme-assis|homme",
+   "identifiant": "etirement-du-piriforme-assis",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Étirement du piriforme assis"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirement-du-piriforme-assis-homme.gif",
+   "gif_sha256": "1e8d5bfcc0bc9eadfc20a58a9f302fee8c533d890139536a4d977b99026c8791",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot04/etirement-du-piriforme-assis.png"
+  },
+  {
+   "cle": "etirements-au-bord|femme",
+   "identifiant": "etirements-au-bord",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Étirements au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/etirements-au-bord-femme.gif",
+   "gif_sha256": "8f862f2ae511a13e5f4a0c227af551fb256124eeb728fb477e3f71147666046a",
+   "gif_frames": 2,
+   "gif_size": [
+    430,
+    440
+   ],
+   "planche": "planches/lot44/etirements-au-bord.png"
+  },
+  {
+   "cle": "extension-triceps-a-la-poulie|femme",
+   "identifiant": "extension-triceps-a-la-poulie",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Extension triceps à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/femme/extension-triceps-a-la-poulie-femme.gif",
+   "gif_sha256": "8a1f0ac986d38db57dd06e1307bbbdc9228bf6fa8ed22b0ecb6a1ebce9a9a60e",
+   "gif_frames": 2,
+   "gif_size": [
+    340,
+    440
+   ],
+   "planche": "planches/lot29/extension-triceps-a-la-poulie.png"
+  },
+  {
+   "cle": "extensions-triceps-barre-ez|homme",
+   "identifiant": "extensions-triceps-barre-ez",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Extensions triceps barre EZ"
+   ],
+   "gif": "media/refonte-photo/gif/homme/extensions-triceps-barre-ez-homme.gif",
+   "gif_sha256": "e9aa82132494b30061f5750dfcb7015d8ad39f44b80a259d8ac319773cb53a85",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot34/extensions-triceps-barre-ez.png"
+  },
+  {
+   "cle": "extensions-triceps-halteres-incline|homme",
+   "identifiant": "extensions-triceps-halteres-incline",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Extensions triceps haltères incliné"
+   ],
+   "gif": "media/refonte-photo/gif/homme/extensions-triceps-halteres-incline-homme.gif",
+   "gif_sha256": "2ec2c2c1b7eb18a5e9245ca18419017a10d6511cb0b535206df4cf756ad9fbf2",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot37/extensions-triceps-halteres-incline.png"
+  },
+  {
+   "cle": "extensions-triceps-halteres-plat|homme",
+   "identifiant": "extensions-triceps-halteres-plat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Extensions triceps haltères plat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/extensions-triceps-halteres-plat-homme.gif",
+   "gif_sha256": "4245ee48dd3c17a579f1ddff41df621532b6778bea22c82bc6964d49b4e84612",
+   "gif_frames": 2,
+   "gif_size": [
+    340,
+    440
+   ],
+   "planche": "planches/lot35/extensions-triceps-halteres-plat.png"
+  },
+  {
+   "cle": "extensions-triceps-poulie|homme",
+   "identifiant": "extensions-triceps-poulie",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Extensions triceps poulie"
+   ],
+   "gif": "media/refonte-photo/gif/homme/extensions-triceps-poulie-homme.gif",
+   "gif_sha256": "6832f958bb4f710691a969396bf02b6dc17ff556fc65819e49f448e20a8e4b40",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot31/extensions-triceps-poulie.png"
+  },
+  {
+   "cle": "extensions-triceps-pullover-barre-ez|homme",
+   "identifiant": "extensions-triceps-pullover-barre-ez",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Extensions triceps + pullover barre EZ",
+    "Extensions triceps barre EZ + pullover"
+   ],
+   "gif": "media/refonte-photo/gif/homme/extensions-triceps-pullover-barre-ez-homme.gif",
+   "gif_sha256": "4c288342b75bde7d4c9e38b05b2d4cbb8eb1cbdf346a2fe9c64cb30c019f831b",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot25/extensions-triceps-pullover-barre-ez.png"
+  },
+  {
+   "cle": "face-pull-a-l-elastique|femme",
+   "identifiant": "face-pull-a-l-elastique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Face pull à l'élastique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/face-pull-a-l-elastique-femme.gif",
+   "gif_sha256": "da0df09961077306f776a8143aa82b2428042c45a84f78adb7b8fcb994fc3c35",
+   "gif_frames": 2,
+   "gif_size": [
+    355,
+    440
+   ],
+   "planche": "planches/lot32/face-pull-a-l-elastique.png"
+  },
+  {
+   "cle": "face-pull-a-la-poulie|femme",
+   "identifiant": "face-pull-a-la-poulie",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Face pull à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/femme/face-pull-a-la-poulie-femme.gif",
+   "gif_sha256": "1bf1710ddafea5d87474c91691fc923b919ba90f3934bb15a2fa938f9e866a1c",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot27/face-pull-a-la-poulie.png"
+  },
+  {
+   "cle": "fentes-alternees|homme",
+   "identifiant": "fentes-alternees",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Fentes alternées"
+   ],
+   "gif": "media/refonte-photo/gif/homme/fentes-alternees-homme.gif",
+   "gif_sha256": "524e72fe748d5732cca6d7fc2989bdc34724c45cdb89d539a8a6aabee9d9468b",
+   "gif_frames": 2,
+   "gif_size": [
+    369,
+    440
+   ],
+   "planche": "planches/lot02/fentes-alternees.png"
+  },
+  {
+   "cle": "fentes-arriere-alternees|femme",
+   "identifiant": "fentes-arriere-alternees",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Fentes arrière alternées"
+   ],
+   "gif": "media/refonte-photo/gif/femme/fentes-arriere-alternees-femme.gif",
+   "gif_sha256": "1e73894a11bbec9c94824642ef1faf146ba59c53b862850351fc6d5a992a79f5",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot10/fentes-arriere-alternees.png"
+  },
+  {
+   "cle": "fentes-arriere-au-poids-du-corps|homme",
+   "identifiant": "fentes-arriere-au-poids-du-corps",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Fentes arrière au poids du corps"
+   ],
+   "gif": "media/refonte-photo/gif/homme/fentes-arriere-au-poids-du-corps-homme.gif",
+   "gif_sha256": "5e4cdda12471b2b34d52510f8b45ab199c0d1ba0fb7a120cd0f047508248e7e8",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot11/fentes-arriere-au-poids-du-corps.png"
+  },
+  {
+   "cle": "fentes-arriere|homme",
+   "identifiant": "fentes-arriere",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Fentes arrière"
+   ],
+   "gif": "media/refonte-photo/gif/homme/fentes-arriere-homme.gif",
+   "gif_sha256": "4d8588d0fe781283371b878a756755f13130f3f2b5a2a302ada17e49c22f4f59",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot40/fentes-arriere.png"
+  },
+  {
+   "cle": "fentes-avant-alternees|femme",
+   "identifiant": "fentes-avant-alternees",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Fentes avant alternées"
+   ],
+   "gif": "media/refonte-photo/gif/femme/fentes-avant-alternees-femme.gif",
+   "gif_sha256": "5bc5625d9433ca6e937e405f385a1567c5a79c2adf6ab1ece469b8df252bfee3",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot10/fentes-avant-alternees.png"
+  },
+  {
+   "cle": "fentes-barre|homme",
+   "identifiant": "fentes-barre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Fentes barre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/fentes-barre-homme.gif",
+   "gif_sha256": "79aaec788db36846a9bf22b400bd4b3ecd8952ff1fec07444cc0bbaa0fd58517",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot14/fentes-barre.png"
+  },
+  {
+   "cle": "fentes-bulgares-halteres-pied-avant-sureleve|homme",
+   "identifiant": "fentes-bulgares-halteres-pied-avant-sureleve",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Fentes bulgares haltères (pied avant surélevé)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/fentes-bulgares-halteres-pied-avant-sureleve-homme.gif",
+   "gif_sha256": "a5f01971f29278bd8f1def456fc64b966a78c1119b5a4fee355a3ae5fcc50ba8",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": "planches/lot12/fentes-bulgares-halteres-pied-avant-sureleve.png"
+  },
+  {
+   "cle": "fentes-bulgares-pied-arriere-sureleve|femme",
+   "identifiant": "fentes-bulgares-pied-arriere-sureleve",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Fentes bulgares (pied arrière surélevé)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/fentes-bulgares-pied-arriere-sureleve-femme.gif",
+   "gif_sha256": "b8c441a8a10e163bd0ee816a24c0dd746d63dc80a851fa55dc837f4a8f24f990",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot10/fentes-bulgares-pied-arriere-sureleve.png"
+  },
+  {
+   "cle": "fentes-marchees|homme",
+   "identifiant": "fentes-marchees",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Fentes marchées"
+   ],
+   "gif": "media/refonte-photo/gif/homme/fentes-marchees-homme.gif",
+   "gif_sha256": "11221d745c89b52331d282844d4ac1705be39d9937f9695c0e0ca0ef859c2a9f",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot14/fentes-marchees.png"
+  },
+  {
+   "cle": "fire-hydrant-a-l-elastique|femme",
+   "identifiant": "fire-hydrant-a-l-elastique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Fire hydrant à l'élastique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/fire-hydrant-a-l-elastique-femme.gif",
+   "gif_sha256": "bad374a6afbb744ec428b0c3a74e36866bd33ad8174513fc9d4dd59e5374b309",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot29/fire-hydrant-a-l-elastique.png"
+  },
+  {
+   "cle": "flexion-avant-jambes-tendues|homme",
+   "identifiant": "flexion-avant-jambes-tendues",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Flexion avant jambes tendues"
+   ],
+   "gif": "media/refonte-photo/gif/homme/flexion-avant-jambes-tendues-homme.gif",
+   "gif_sha256": "b5c280103b62b9e65889b98b31835c5bdbd32744162f79b5fe6fc0a62ae95d48",
+   "gif_frames": 2,
+   "gif_size": [
+    387,
+    440
+   ],
+   "planche": "planches/lot04/flexion-avant-jambes-tendues.png"
+  },
+  {
+   "cle": "fractionne-nager|femme",
+   "identifiant": "fractionne-nager",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Fractionné — nager"
+   ],
+   "gif": "media/refonte-photo/gif/femme/fractionne-nager-femme.gif",
+   "gif_sha256": "19750699871755e538f1387193bd83666951215d924ac9fa551317f12dda3f04",
+   "gif_frames": 2,
+   "gif_size": [
+    415,
+    440
+   ],
+   "planche": "planches/lot43/fractionne-nager.png"
+  },
+  {
+   "cle": "french-press-barre-ez|homme",
+   "identifiant": "french-press-barre-ez",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "French press barre EZ"
+   ],
+   "gif": "media/refonte-photo/gif/homme/french-press-barre-ez-homme.gif",
+   "gif_sha256": "71936fa0ed7795dde9eb3a4fa406adc3bd0afbe4132e4b84c317aebb9fe904ef",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot18/french-press-barre-ez.png"
+  },
+  {
+   "cle": "french-press-haltere-un-bras|homme",
+   "identifiant": "french-press-haltere-un-bras",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "French press haltère un bras"
+   ],
+   "gif": "media/refonte-photo/gif/homme/french-press-haltere-un-bras-homme.gif",
+   "gif_sha256": "a40720f67740d2a0351cf1679d76cd0e27df800ac5a0cd1238aff4fd0be15b52",
+   "gif_frames": 2,
+   "gif_size": [
+    377,
+    440
+   ],
+   "planche": "planches/lot21/french-press-haltere-un-bras.png"
+  },
+  {
+   "cle": "french-press-poulie-basse|homme",
+   "identifiant": "french-press-poulie-basse",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "French press poulie basse"
+   ],
+   "gif": "media/refonte-photo/gif/homme/french-press-poulie-basse-homme.gif",
+   "gif_sha256": "fcb319ec021c6094ef4b241e157731f7da6803e8184804096fa89f162049db75",
+   "gif_frames": 2,
+   "gif_size": [
+    340,
+    440
+   ],
+   "planche": "planches/lot22/french-press-poulie-basse.png"
+  },
+  {
+   "cle": "front-squat|homme",
+   "identifiant": "front-squat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Front squat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/front-squat-homme.gif",
+   "gif_sha256": "24fdfdf2b1e5192480d1d3b396b36019d13562cada14ae293924388330fbd079",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot14/front-squat.png"
+  },
+  {
+   "cle": "gainage-au-bord-vertical|femme",
+   "identifiant": "gainage-au-bord-vertical",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Gainage au bord (vertical)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/gainage-au-bord-vertical-femme.gif",
+   "gif_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "gif_frames": 2,
+   "gif_size": [
+    416,
+    440
+   ],
+   "planche": "planches/lot42/gainage-au-bord-vertical.png"
+  },
+  {
+   "cle": "gainage-lateral-dynamique|femme",
+   "identifiant": "gainage-lateral-dynamique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Gainage latéral dynamique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/gainage-lateral-dynamique-femme.gif",
+   "gif_sha256": "c2ffd7729cfe07f776d5611b33f132517c7cb83055abc72be312fbfc193fc721",
+   "gif_frames": 2,
+   "gif_size": [
+    340,
+    440
+   ],
+   "planche": "planches/lot31/gainage-lateral-dynamique.png"
+  },
+  {
+   "cle": "gainage-lateral|femme",
+   "identifiant": "gainage-lateral",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Gainage latéral"
+   ],
+   "gif": "media/refonte-photo/gif/femme/gainage-lateral-femme.gif",
+   "gif_sha256": "d13c73eedc9ff79e65c02f90b6d6f5ef436134bc77173371e860711c39c15e3b",
+   "gif_frames": 2,
+   "gif_size": [
+    342,
+    440
+   ],
+   "planche": "planches/lot34/gainage-lateral.png"
+  },
+  {
+   "cle": "gainage-planche|femme",
+   "identifiant": "gainage-planche",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Gainage planche"
+   ],
+   "gif": "media/refonte-photo/gif/femme/gainage-planche-femme.gif",
+   "gif_sha256": "6536e369db2d9ed5252b4b7237bc173bd932d80d1996dea6ef7983fa4bfe0c2d",
+   "gif_frames": 2,
+   "gif_size": [
+    339,
+    440
+   ],
+   "planche": "planches/lot38/gainage-planche.png"
+  },
+  {
+   "cle": "gainage-planche|homme",
+   "identifiant": "gainage-planche",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Gainage planche"
+   ],
+   "gif": "media/refonte-photo/gif/homme/gainage-planche-homme.gif",
+   "gif_sha256": "ccac233a36da99dee7428def56834c57ce241dc86b55a515744b55f2f0c7d92f",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot38/gainage-planche.png"
+  },
+  {
+   "cle": "gainage-vertical-au-bord|femme",
+   "identifiant": "gainage-vertical-au-bord",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/gainage-vertical-au-bord-femme.gif",
+   "gif_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "gif_frames": 2,
+   "gif_size": [
+    416,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "gainage-vertical-effort|femme",
+   "identifiant": "gainage-vertical-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/gainage-vertical-effort-femme.gif",
+   "gif_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "gif_frames": 2,
+   "gif_size": [
+    416,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "gainage-vertical|femme",
+   "identifiant": "gainage-vertical",
+   "athlete": "femme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Gainage vertical"
+   ],
+   "gif": "media/refonte-photo/gif/femme/gainage-vertical-femme.gif",
+   "gif_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "gif_frames": 2,
+   "gif_size": [
+    416,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "glute-bridge-en-1-5-reps|femme",
+   "identifiant": "glute-bridge-en-1-5-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Glute bridge en 1,5 reps"
+   ],
+   "gif": "media/refonte-photo/gif/femme/glute-bridge-en-1-5-reps-femme.gif",
+   "gif_sha256": "fb4ef4eff0b4ba78bf70cd024f9987f164717b8d575a7516480ec8b4b2c56c25",
+   "gif_frames": 2,
+   "gif_size": [
+    369,
+    440
+   ],
+   "planche": "planches/lot21/glute-bridge-en-1-5-reps.png"
+  },
+  {
+   "cle": "glute-bridge-pieds-sur-banc|femme",
+   "identifiant": "glute-bridge-pieds-sur-banc",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Glute bridge pieds sur banc"
+   ],
+   "gif": "media/refonte-photo/gif/femme/glute-bridge-pieds-sur-banc-femme.gif",
+   "gif_sha256": "4b7cd87efd8cfe7ecfc1a19abb5d7cf8d825fa8f65e8a8100e06b7ec8ffc48ca",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot16/glute-bridge-pieds-sur-banc.png"
+  },
+  {
+   "cle": "glute-ham-raise|homme",
+   "identifiant": "glute-ham-raise",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Glute ham raise"
+   ],
+   "gif": "media/refonte-photo/gif/homme/glute-ham-raise-homme.gif",
+   "gif_sha256": "72ee533b1621d1e9e4c1ffe4ce84041a9c81e32ee8b9a5d91d6c2df76a228c13",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot31/glute-ham-raise.png"
+  },
+  {
+   "cle": "goblet-squat|femme",
+   "identifiant": "goblet-squat",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Goblet squat"
+   ],
+   "gif": "media/refonte-photo/gif/femme/goblet-squat-femme.gif",
+   "gif_sha256": "04f326d81f8d502846e1cf9fbf3ca54db109e7590e9f15cc64edafd2448bae1b",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot27/goblet-squat.png"
+  },
+  {
+   "cle": "good-morning-debout|homme",
+   "identifiant": "good-morning-debout",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Good morning debout"
+   ],
+   "gif": "media/refonte-photo/gif/homme/good-morning-debout-homme.gif",
+   "gif_sha256": "f0a30121a67e264568addf4409721e678c3c2e29794c7e0480f20c745458d25f",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot21/good-morning-debout.png"
+  },
+  {
+   "cle": "grenouille-plantes-jointes|homme",
+   "identifiant": "grenouille-plantes-jointes",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Grenouille (plantes jointes)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/grenouille-plantes-jointes-homme.gif",
+   "gif_sha256": "fc041ed2c5084f83425fbb69e52a86d6e8cd359bc1520dc82864e938eaeba97b",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot17/grenouille-plantes-jointes.png"
+  },
+  {
+   "cle": "hack-squat|homme",
+   "identifiant": "hack-squat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Hack squat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/hack-squat-homme.gif",
+   "gif_sha256": "6fd14eb1f53b128d2a53011ed9b4531a575c762e2fd63799b37470c9be0fb42f",
+   "gif_frames": 2,
+   "gif_size": [
+    363,
+    440
+   ],
+   "planche": "planches/lot14/hack-squat.png"
+  },
+  {
+   "cle": "high-knees|homme",
+   "identifiant": "high-knees",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "High knees"
+   ],
+   "gif": "media/refonte-photo/gif/homme/high-knees-homme.gif",
+   "gif_sha256": "d167ad11643a47cfbf15eb09d88ef9f187db6e08a5e756295d6051aa40a592bd",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot40/high-knees.png"
+  },
+  {
+   "cle": "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
+   "identifiant": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Hip thrust barre — test de charge max (3-5 reps)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/hip-thrust-barre-test-de-charge-max-3-5-reps-femme.gif",
+   "gif_sha256": "44f11dabe987bb77c34a1968f7fa4c0c4ae1a094b04ac083a75a892888cba504",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot18/hip-thrust-barre-test-de-charge-max-3-5-reps.png"
+  },
+  {
+   "cle": "hip-thrust-barre|femme",
+   "identifiant": "hip-thrust-barre",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Hip thrust barre"
+   ],
+   "gif": "media/refonte-photo/gif/femme/hip-thrust-barre-femme.gif",
+   "gif_sha256": "4e7b70938b8a2e57ec0bb05ec8d5285f3636a9d8842c8fb57e9c6eda803dee4b",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot36/hip-thrust-barre.png"
+  },
+  {
+   "cle": "hip-thrust-unilateral-1-jambe|femme",
+   "identifiant": "hip-thrust-unilateral-1-jambe",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Hip thrust unilatéral (1 jambe)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/hip-thrust-unilateral-1-jambe-femme.gif",
+   "gif_sha256": "119726d91194b9b6644154fab049caf8a6b173aa35fc404a93801b4adaf0cc5c",
+   "gif_frames": 2,
+   "gif_size": [
+    341,
+    440
+   ],
+   "planche": "planches/lot31/hip-thrust-unilateral-1-jambe.png"
+  },
+  {
+   "cle": "hip-thrust-unilateral-leste|femme",
+   "identifiant": "hip-thrust-unilateral-leste",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Hip thrust unilatéral lesté"
+   ],
+   "gif": "media/refonte-photo/gif/femme/hip-thrust-unilateral-leste-femme.gif",
+   "gif_sha256": "adb35d9546c880f2e573d1dc8084ffd701b04d9566c4287089a843806121e1ff",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot33/hip-thrust-unilateral-leste.png"
+  },
+  {
+   "cle": "hip-thrust-unilateral|femme",
+   "identifiant": "hip-thrust-unilateral",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Hip thrust unilatéral"
+   ],
+   "gif": "media/refonte-photo/gif/femme/hip-thrust-unilateral-femme.gif",
+   "gif_sha256": "3edfcfc8caee68172c03d006a9bb8b2245e301bf67b575558037412b064923e1",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot19/hip-thrust-unilateral.png"
+  },
+  {
+   "cle": "jackknife-sur-swiss-ball|homme",
+   "identifiant": "jackknife-sur-swiss-ball",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Jackknife sur swiss ball"
+   ],
+   "gif": "media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
+   "gif_sha256": "e066ca4c6da13a2b3afada04d4636f565484e62cc985042d1fae8acc49573e63",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot15/jackknife-sur-swiss-ball.png"
+  },
+  {
+   "cle": "jumping-jacks|homme",
+   "identifiant": "jumping-jacks",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Jumping jacks"
+   ],
+   "gif": "media/refonte-photo/gif/homme/jumping-jacks-homme.gif",
+   "gif_sha256": "c4d38fa88ecbf5370706f627cbfac00594e39d968ac9ad49bf5466a8432079f9",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot02/jumping-jacks.png"
+  },
+  {
+   "cle": "kickback-a-l-elastique|femme",
+   "identifiant": "kickback-a-l-elastique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Kickback à l'élastique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/kickback-a-l-elastique-femme.gif",
+   "gif_sha256": "9ea5b7136f88d7efd379400cf7130061bc0a705f50691ce8f61796468de7230d",
+   "gif_frames": 2,
+   "gif_size": [
+    339,
+    440
+   ],
+   "planche": "planches/lot29/kickback-a-l-elastique.png"
+  },
+  {
+   "cle": "kickback-a-la-poulie-drop-set-final|femme",
+   "identifiant": "kickback-a-la-poulie-drop-set-final",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Kickback à la poulie — drop set final"
+   ],
+   "gif": "media/refonte-photo/gif/femme/kickback-a-la-poulie-drop-set-final-femme.gif",
+   "gif_sha256": "32fa389d5f16c0d467e8731c56030685be0ec859b8e219bfa21640d5b7a7f20c",
+   "gif_frames": 2,
+   "gif_size": [
+    378,
+    440
+   ],
+   "planche": "planches/lot33/kickback-a-la-poulie-drop-set-final.png"
+  },
+  {
+   "cle": "kickback-a-la-poulie|femme",
+   "identifiant": "kickback-a-la-poulie",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Kickback à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/femme/kickback-a-la-poulie-femme.gif",
+   "gif_sha256": "2e92cd9229baf0a33ffac3dd361db946116e9e381ae6973af75d2ea25f41facf",
+   "gif_frames": 2,
+   "gif_size": [
+    375,
+    440
+   ],
+   "planche": "planches/lot24/kickback-a-la-poulie.png"
+  },
+  {
+   "cle": "lean-away-pull-ups|homme",
+   "identifiant": "lean-away-pull-ups",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Lean away pull-ups"
+   ],
+   "gif": "media/refonte-photo/gif/homme/lean-away-pull-ups-homme.gif",
+   "gif_sha256": "031caeb63a4f2c4ad37b3ad22e302e4f712ac2bbadef31737d4d463e33a77956",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot15/lean-away-pull-ups.png"
+  },
+  {
+   "cle": "leg-curl-allonge-1-1-4-en-haut|homme",
+   "identifiant": "leg-curl-allonge-1-1-4-en-haut",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg curl allongé, 1 1/4 en haut"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-curl-allonge-1-1-4-en-haut-homme.gif",
+   "gif_sha256": "7b4d83612d9838394885e3d4e1254c2f6f804f75cab3bf3785a4a8734ca1c1a9",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot17/leg-curl-allonge-1-1-4-en-haut.png"
+  },
+  {
+   "cle": "leg-curl-allonge-pieds-flechis|homme",
+   "identifiant": "leg-curl-allonge-pieds-flechis",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg curl allongé, pieds fléchis"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-curl-allonge-pieds-flechis-homme.gif",
+   "gif_sha256": "b954305f0f5568b272ee51f5e3a7ad8a54625a0d230d48a18756a755855881cd",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot10/leg-curl-allonge-pieds-flechis.png"
+  },
+  {
+   "cle": "leg-curl-allonge-pieds-pointes|homme",
+   "identifiant": "leg-curl-allonge-pieds-pointes",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg curl allongé, pieds pointés"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-curl-allonge-pieds-pointes-homme.gif",
+   "gif_sha256": "1bdd45afb59cc29890a22daae58942ec095e356d32b866bb8943b7fcb2955ed6",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot10/leg-curl-allonge-pieds-pointes.png"
+  },
+  {
+   "cle": "leg-curl-allonge|homme",
+   "identifiant": "leg-curl-allonge",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg curl allongé"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-curl-allonge-homme.gif",
+   "gif_sha256": "fe5ba5ac12982ae4fdccc88514202032f563eae0139783c2a000f755df43274a",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "leg-curl-debout|homme",
+   "identifiant": "leg-curl-debout",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg curl debout"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-curl-debout-homme.gif",
+   "gif_sha256": "e9e6a04fac667b2b55c667b060829f605f2b74eb6575ac7bd512e053726a07b8",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot25/leg-curl-debout.png"
+  },
+  {
+   "cle": "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
+   "identifiant": "leg-curl-machine-ou-swiss-ball-leg-curl",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Leg curl machine (ou swiss-ball leg curl)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/leg-curl-machine-ou-swiss-ball-leg-curl-femme.gif",
+   "gif_sha256": "688c3eaea53ad59b8b39168e1652d1e1445e6a46f39c3915c042f9d00a71865c",
+   "gif_frames": 2,
+   "gif_size": [
+    384,
+    440
+   ],
+   "planche": "planches/lot16/leg-curl-machine-ou-swiss-ball-leg-curl.png"
+  },
+  {
+   "cle": "leg-curl-machine|femme",
+   "identifiant": "leg-curl-machine",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Leg curl machine"
+   ],
+   "gif": "media/refonte-photo/gif/femme/leg-curl-machine-femme.gif",
+   "gif_sha256": "9bfb90294c482fc0d9a50e753445ee98c6d2e25a8fb5ec8af9da68f45223ab8f",
+   "gif_frames": 2,
+   "gif_size": [
+    351,
+    440
+   ],
+   "planche": "planches/lot32/leg-curl-machine.png"
+  },
+  {
+   "cle": "leg-extension|homme",
+   "identifiant": "leg-extension",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg extension"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-extension-homme.gif",
+   "gif_sha256": "26f2b337d32111ac06048313dbb7f770eea70e1af4197b51d6c8d0f7798093c2",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot28/leg-extension.png"
+  },
+  {
+   "cle": "leg-press-unilateral|homme",
+   "identifiant": "leg-press-unilateral",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg press unilatéral"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-press-unilateral-homme.gif",
+   "gif_sha256": "a4443a1008f6202bd1cccd5dde4c251b675fea1e0ac235bcc9348d1a51e5412b",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot35/leg-press-unilateral.png"
+  },
+  {
+   "cle": "leg-press|homme",
+   "identifiant": "leg-press",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Leg press"
+   ],
+   "gif": "media/refonte-photo/gif/homme/leg-press-homme.gif",
+   "gif_sha256": "0b424a5a07c9a2c770768a6f9042129d8d1dcde827798b34ebb76217aa36db06",
+   "gif_frames": 2,
+   "gif_size": [
+    340,
+    440
+   ],
+   "planche": "planches/lot33/leg-press.png"
+  },
+  {
+   "cle": "main-dans-le-dos|homme",
+   "identifiant": "main-dans-le-dos",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Main dans le dos"
+   ],
+   "gif": "media/refonte-photo/gif/homme/main-dans-le-dos-homme.gif",
+   "gif_sha256": "8f53c697bc6ba576d7e48d2839c621a4c2ba8616199e858efb9acb55d741e527",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot06/main-dans-le-dos.png"
+  },
+  {
+   "cle": "mains-croisees-derriere-le-dos|homme",
+   "identifiant": "mains-croisees-derriere-le-dos",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Mains croisées derrière le dos"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mains-croisees-derriere-le-dos-homme.gif",
+   "gif_sha256": "35a75b58860e85ec269dec7715271b0b2f613486e5d5c44546275c930f57871e",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot06/mains-croisees-derriere-le-dos.png"
+  },
+  {
+   "cle": "marche-aquatique|femme",
+   "identifiant": "marche-aquatique",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/marche-aquatique-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": "planches/lot43/marche-aquatique.png"
+  },
+  {
+   "cle": "marche-sur-place|homme",
+   "identifiant": "marche-sur-place",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Marche sur place"
+   ],
+   "gif": "media/refonte-photo/gif/homme/marche-sur-place-homme.gif",
+   "gif_sha256": "f4ec0f57cddfd7aba48b5a923ab5d85e68d910ff496a1eb4884ff8706ef0859b",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot40/marche-sur-place.png"
+  },
+  {
+   "cle": "mobilite-des-epaules|homme",
+   "identifiant": "mobilite-des-epaules",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Mobilité des épaules"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mobilite-des-epaules-homme.gif",
+   "gif_sha256": "6e8ef0c7fab7dba865aa7f69692e5820713f8119ae6b86136c6e1e950e48cc1e",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot31/mobilite-des-epaules.png"
+  },
+  {
+   "cle": "mobilite-epaules-aquatique|femme",
+   "identifiant": "mobilite-epaules-aquatique",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Mobilité épaules aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/mobilite-epaules-aquatique-femme.gif",
+   "gif_sha256": "7ff5fea738f927d8dd28a919e8af4fc4e2b680f3c4c1113dab19249f4c96e4f0",
+   "gif_frames": 2,
+   "gif_size": [
+    431,
+    440
+   ],
+   "planche": "planches/lot44/mobilite-epaules-aquatique.png"
+  },
+  {
+   "cle": "mobilite-hanches-chevilles|femme",
+   "identifiant": "mobilite-hanches-chevilles",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Mobilité hanches / chevilles"
+   ],
+   "gif": "media/refonte-photo/gif/femme/mobilite-hanches-chevilles-femme.gif",
+   "gif_sha256": "30261f92038b5ca32f4ee3eee7bc88b796e1623b627871676034618476eb307f",
+   "gif_frames": 2,
+   "gif_size": [
+    410,
+    440
+   ],
+   "planche": "planches/lot44/mobilite-hanches-chevilles.png"
+  },
+  {
+   "cle": "mollet-en-escalier|homme",
+   "identifiant": "mollet-en-escalier",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Mollet en escalier"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mollet-en-escalier-homme.gif",
+   "gif_sha256": "9151efe4c2262c968f90da3178af586e3a02c88254081973a0336698ad0bab41",
+   "gif_frames": 2,
+   "gif_size": [
+    374,
+    440
+   ],
+   "planche": "planches/lot07/mollet-en-escalier.png"
+  },
+  {
+   "cle": "mollets-a-la-presse|homme",
+   "identifiant": "mollets-a-la-presse",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Mollets à la presse"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mollets-a-la-presse-homme.gif",
+   "gif_sha256": "f1a40f2c8c8502db54e5742a434ef4837daed44dece1d663d8551f967af2982d",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot39/mollets-a-la-presse.png"
+  },
+  {
+   "cle": "mollets-assis|homme",
+   "identifiant": "mollets-assis",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Mollets assis"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mollets-assis-homme.gif",
+   "gif_sha256": "7bd2e942f541b18e66dd3203ab3412fcef3a3a5630eecfe29c9b3b11470d92fe",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot12/mollets-assis.png"
+  },
+  {
+   "cle": "mollets-debout-unilateraux|femme",
+   "identifiant": "mollets-debout-unilateraux",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Mollets debout unilatéraux"
+   ],
+   "gif": "media/refonte-photo/gif/femme/mollets-debout-unilateraux-femme.gif",
+   "gif_sha256": "8917d493ac1f32de2046483fc10b3ebad92cbfb555631d6909869b178944e538",
+   "gif_frames": 2,
+   "gif_size": [
+    348,
+    440
+   ],
+   "planche": "planches/lot29/mollets-debout-unilateraux.png"
+  },
+  {
+   "cle": "mollets-debout|homme",
+   "identifiant": "mollets-debout",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Mollets debout"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mollets-debout-homme.gif",
+   "gif_sha256": "01f869e102150bba63338dda0ebf8cd5b8ff0069eba6de57b1b122ae771dad2f",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot22/mollets-debout.png"
+  },
+  {
+   "cle": "mollets-unilateraux|homme",
+   "identifiant": "mollets-unilateraux",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Mollets unilatéraux"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mollets-unilateraux-homme.gif",
+   "gif_sha256": "9bb24b54ea4ead72c9fbf6b2091293eef60448b96797d03921b15622c8eac387",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot35/mollets-unilateraux.png"
+  },
+  {
+   "cle": "mollets|homme",
+   "identifiant": "mollets",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Mollets"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mollets-homme.gif",
+   "gif_sha256": "3612263405930874167d50e781515677ffdc2bf0d0d3fad87280dc5a223a65f4",
+   "gif_frames": 2,
+   "gif_size": [
+    421,
+    440
+   ],
+   "planche": "planches/lot41/mollets.png"
+  },
+  {
+   "cle": "montees-de-genoux-effort|femme",
+   "identifiant": "montees-de-genoux-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/montees-de-genoux-effort-femme.gif",
+   "gif_sha256": "07d64eaf46c2dc2fcf87e38dc2fe7bcd27037586273e3e5ec0b16bc987c68083",
+   "gif_frames": 2,
+   "gif_size": [
+    411,
+    440
+   ],
+   "planche": "planches/lot44/montees-de-genoux-effort.png"
+  },
+  {
+   "cle": "montees-de-genoux|femme",
+   "identifiant": "montees-de-genoux",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Montées de genoux"
+   ],
+   "gif": "media/refonte-photo/gif/femme/montees-de-genoux-femme.gif",
+   "gif_sha256": "07d64eaf46c2dc2fcf87e38dc2fe7bcd27037586273e3e5ec0b16bc987c68083",
+   "gif_frames": 2,
+   "gif_size": [
+    411,
+    440
+   ],
+   "planche": "planches/lot41/montees-de-genoux.png"
+  },
+  {
+   "cle": "montees-de-genoux|homme",
+   "identifiant": "montees-de-genoux",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Montées de genoux"
+   ],
+   "gif": "media/refonte-photo/gif/homme/montees-de-genoux-homme.gif",
+   "gif_sha256": "c44c661ce50cfb15c2cb1aa158de80d885e617289ec6f6dd5c72bcf2439b8fba",
+   "gif_frames": 2,
+   "gif_size": [
+    438,
+    440
+   ],
+   "planche": "planches/lot41/montees-de-genoux.png"
+  },
+  {
+   "cle": "montees-sur-mollets|homme",
+   "identifiant": "montees-sur-mollets",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Montées sur mollets"
+   ],
+   "gif": "media/refonte-photo/gif/homme/montees-sur-mollets-homme.gif",
+   "gif_sha256": "2f18d124f8a83d4ef46025fd39b6b6023a68c52531cdaee3a47a453f29daf4df",
+   "gif_frames": 2,
+   "gif_size": [
+    431,
+    440
+   ],
+   "planche": "planches/lot41/montees-sur-mollets.png"
+  },
+  {
+   "cle": "mountain-climbers-lents|homme",
+   "identifiant": "mountain-climbers-lents",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Mountain climbers lents"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mountain-climbers-lents-homme.gif",
+   "gif_sha256": "f45acf6d65339fce33c17c0f30264848c5908ae027abdceb3a109c7d332078f2",
+   "gif_frames": 2,
+   "gif_size": [
+    428,
+    440
+   ],
+   "planche": "planches/lot41/mountain-climbers-lents.png"
+  },
+  {
+   "cle": "mountain-climbers|femme",
+   "identifiant": "mountain-climbers",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Mountain climbers"
+   ],
+   "gif": "media/refonte-photo/gif/femme/mountain-climbers-femme.gif",
+   "gif_sha256": "0daad20322109b138631d1a320376df157220e160d11fd51b57712029e079ee2",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot31/mountain-climbers.png"
+  },
+  {
+   "cle": "mountain-climbers|homme",
+   "identifiant": "mountain-climbers",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Mountain climbers"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mountain-climbers-homme.gif",
+   "gif_sha256": "aa789a750ed2c2c5eb911776b44629b08b31a9a189c5a708704d8284a768340c",
+   "gif_frames": 2,
+   "gif_size": [
+    335,
+    440
+   ],
+   "planche": "planches/lot31/mountain-climbers.png"
+  },
+  {
+   "cle": "nage-douce-respiration|femme",
+   "identifiant": "nage-douce-respiration",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage douce + respiration",
+    "Nage douce + respiration"
+   ],
+   "gif": "media/refonte-photo/gif/femme/nage-douce-respiration-femme.gif",
+   "gif_sha256": "a9b2430d317e3bba88f16d2538c4724bb66ab07cac0e374b779dbef0b77bd335",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot45/nage-douce-respiration.png"
+  },
+  {
+   "cle": "nage-douce|femme",
+   "identifiant": "nage-douce",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/femme/nage-douce-femme.gif",
+   "gif_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": "planches/lot45/nage-douce.png"
+  },
+  {
+   "cle": "nage-statique-a-l-elastique|femme",
+   "identifiant": "nage-statique-a-l-elastique",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Nage statique (à l'élastique)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/nage-statique-a-l-elastique-femme.gif",
+   "gif_sha256": "236c40fd157f0f41ecd49a30c077294a5901f6cf134a25f09b59ec1ae1c3e072",
+   "gif_frames": 2,
+   "gif_size": [
+    412,
+    440
+   ],
+   "planche": "planches/lot43/nage-statique-a-l-elastique.png"
+  },
+  {
+   "cle": "nage-statique-douce|femme",
+   "identifiant": "nage-statique-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage statique douce",
+    "Nage statique douce"
+   ],
+   "gif": "media/refonte-photo/gif/femme/nage-statique-douce-femme.gif",
+   "gif_sha256": "236c40fd157f0f41ecd49a30c077294a5901f6cf134a25f09b59ec1ae1c3e072",
+   "gif_frames": 2,
+   "gif_size": [
+    412,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "nage-statique-z2|femme",
+   "identifiant": "nage-statique-z2",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2/Z3"
+   ],
+   "gif": "media/refonte-photo/gif/femme/nage-statique-z2-femme.gif",
+   "gif_sha256": "236c40fd157f0f41ecd49a30c077294a5901f6cf134a25f09b59ec1ae1c3e072",
+   "gif_frames": 2,
+   "gif_size": [
+    412,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "nager-fractionne-1-6|femme",
+   "identifiant": "nager-fractionne-1-6",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nager — fractionné 1/6",
+    "Nager — fractionné 2/6",
+    "Nager — fractionné 3/6",
+    "Nager — fractionné 4/6",
+    "Nager — fractionné 5/6",
+    "Nager — fractionné 6/6",
+    "Nager — fractionné 1/8",
+    "Nager — fractionné 2/8",
+    "Nager — fractionné 3/8",
+    "Nager — fractionné 4/8",
+    "Nager — fractionné 5/8",
+    "Nager — fractionné 6/8",
+    "Nager — fractionné 7/8",
+    "Nager — fractionné 8/8",
+    "Nager — fractionné 1/10",
+    "Nager — fractionné 2/10",
+    "Nager — fractionné 3/10",
+    "Nager — fractionné 4/10",
+    "Nager — fractionné 5/10",
+    "Nager — fractionné 6/10",
+    "Nager — fractionné 7/10",
+    "Nager — fractionné 8/10",
+    "Nager — fractionné 9/10",
+    "Nager — fractionné 10/10"
+   ],
+   "gif": "media/refonte-photo/gif/femme/nager-fractionne-1-6-femme.gif",
+   "gif_sha256": "19750699871755e538f1387193bd83666951215d924ac9fa551317f12dda3f04",
+   "gif_frames": 2,
+   "gif_size": [
+    415,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "nager-sprint-1-8|femme",
+   "identifiant": "nager-sprint-1-8",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nager sprint 1/8",
+    "Nager sprint 2/8",
+    "Nager sprint 3/8",
+    "Nager sprint 4/8",
+    "Nager sprint 5/8",
+    "Nager sprint 6/8",
+    "Nager sprint 7/8",
+    "Nager sprint 8/8",
+    "Nager sprint 1/10",
+    "Nager sprint 2/10",
+    "Nager sprint 3/10",
+    "Nager sprint 4/10",
+    "Nager sprint 5/10",
+    "Nager sprint 6/10",
+    "Nager sprint 7/10",
+    "Nager sprint 8/10",
+    "Nager sprint 9/10",
+    "Nager sprint 10/10",
+    "Nager sprint 1/12",
+    "Nager sprint 2/12",
+    "Nager sprint 3/12",
+    "Nager sprint 4/12",
+    "Nager sprint 5/12",
+    "Nager sprint 6/12",
+    "Nager sprint 7/12",
+    "Nager sprint 8/12",
+    "Nager sprint 9/12",
+    "Nager sprint 10/12",
+    "Nager sprint 11/12",
+    "Nager sprint 12/12"
+   ],
+   "gif": "media/refonte-photo/gif/femme/nager-sprint-1-8-femme.gif",
+   "gif_sha256": "47746e12d90c5e2ce45f1921b31ec9540f7c6e7a4f9cd3686b3da07387e196fd",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "oiseau-chien|homme",
+   "identifiant": "oiseau-chien",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Oiseau-chien"
+   ],
+   "gif": "media/refonte-photo/gif/homme/oiseau-chien-homme.gif",
+   "gif_sha256": "ff8da6669ded238d123eb473404b519fc2153368fc44154b557848015015b972",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot42/oiseau-chien.png"
+  },
+  {
+   "cle": "pallof-press-a-l-elastique|femme",
+   "identifiant": "pallof-press-a-l-elastique",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Pallof press à l'élastique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/pallof-press-a-l-elastique-femme.gif",
+   "gif_sha256": "7de6cc31c5c5301e2d03228ad9d552fafcdf65b0d5c7d5741b29c01e4938b0a9",
+   "gif_frames": 2,
+   "gif_size": [
+    344,
+    440
+   ],
+   "planche": "planches/lot29/pallof-press-a-l-elastique.png"
+  },
+  {
+   "cle": "pallof-press-a-la-poulie|femme",
+   "identifiant": "pallof-press-a-la-poulie",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Pallof press à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/femme/pallof-press-a-la-poulie-femme.gif",
+   "gif_sha256": "feabd4e608d48f3f7c3ac6fd3937b353e875329f53844a4e36fe8ca4bfea895c",
+   "gif_frames": 2,
+   "gif_size": [
+    363,
+    440
+   ],
+   "planche": "planches/lot33/pallof-press-a-la-poulie.png"
+  },
+  {
+   "cle": "patineurs|homme",
+   "identifiant": "patineurs",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Patineurs"
+   ],
+   "gif": "media/refonte-photo/gif/homme/patineurs-homme.gif",
+   "gif_sha256": "c937caee1e7ea8f7d49adac642c3a51413c998eb615e25cea863a2bc2186607f",
+   "gif_frames": 2,
+   "gif_size": [
+    440,
+    440
+   ],
+   "planche": "planches/lot41/patineurs.png"
+  },
+  {
+   "cle": "pigeon-assis|homme",
+   "identifiant": "pigeon-assis",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Pigeon assis"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pigeon-assis-homme.gif",
+   "gif_sha256": "2af48ab193eaafb4518cf14df271b4a48dfdc6700f76325808d800e61ed7acce",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot04/pigeon-assis.png"
+  },
+  {
+   "cle": "planche-laterale-g|homme",
+   "identifiant": "planche-laterale-g",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Planche latérale G",
+    "Planche latérale D"
+   ],
+   "gif": "media/refonte-photo/gif/homme/planche-laterale-g-homme.gif",
+   "gif_sha256": "2baeb1b19fde1b86f6782b4ec05af13b68e3690e8eaadca7e2244125c77feff6",
+   "gif_frames": 2,
+   "gif_size": [
+    429,
+    440
+   ],
+   "planche": "planches/lot41/planche-laterale-g.png"
+  },
+  {
+   "cle": "planche|homme",
+   "identifiant": "planche",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Planche"
+   ],
+   "gif": "media/refonte-photo/gif/homme/planche-homme.gif",
+   "gif_sha256": "f59b2eb7a8eda3a174c44bf13e2b5cfe07946e00f26d46612b1437ba2fe9e15e",
+   "gif_frames": 2,
+   "gif_size": [
+    437,
+    440
+   ],
+   "planche": "planches/lot41/planche.png"
+  },
+  {
+   "cle": "pompes-au-bord-effort|femme",
+   "identifiant": "pompes-au-bord-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/pompes-au-bord-effort-femme.gif",
+   "gif_sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+   "gif_frames": 2,
+   "gif_size": [
+    439,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "pompes-au-bord|femme",
+   "identifiant": "pompes-au-bord",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Pompes au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/pompes-au-bord-femme.gif",
+   "gif_sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+   "gif_frames": 2,
+   "gif_size": [
+    439,
+    440
+   ],
+   "planche": "planches/lot42/pompes-au-bord.png"
+  },
+  {
+   "cle": "pompes-au-mur|homme",
+   "identifiant": "pompes-au-mur",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Pompes au mur"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pompes-au-mur-homme.gif",
+   "gif_sha256": "966aae5ddbd59234313cd9bf40800aa26bec27f7c79638862091476c137bf98b",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot41/pompes-au-mur.png"
+  },
+  {
+   "cle": "pompes-inclinees-mains-surelevees|femme",
+   "identifiant": "pompes-inclinees-mains-surelevees",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Pompes inclinées (mains surélevées)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/pompes-inclinees-mains-surelevees-femme.gif",
+   "gif_sha256": "b196348d289870a430870559154c2b516e0824b412b86e1b667eac86b28f4235",
+   "gif_frames": 2,
+   "gif_size": [
+    358,
+    440
+   ],
+   "planche": "planches/lot28/pompes-inclinees-mains-surelevees.png"
+  },
+  {
+   "cle": "pompes-inclinees|homme",
+   "identifiant": "pompes-inclinees",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Pompes inclinées"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pompes-inclinees-homme.gif",
+   "gif_sha256": "33b7068aa34ff96812533736ad457cfd3c88bc8e438942900ea892cce6de3024",
+   "gif_frames": 2,
+   "gif_size": [
+    350,
+    440
+   ],
+   "planche": "planches/lot38/pompes-inclinees.png"
+  },
+  {
+   "cle": "pompes|homme",
+   "identifiant": "pompes",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Pompes"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pompes-homme.gif",
+   "gif_sha256": "7e96ab14f783b3385b8da6250a69aedd57a238bca20aa03bb1fa0bbf0c63f4db",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot02/pompes.png"
+  },
+  {
+   "cle": "pont-fessier-au-sol-activation|femme",
+   "identifiant": "pont-fessier-au-sol-activation",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Pont fessier au sol — activation"
+   ],
+   "gif": "media/refonte-photo/gif/femme/pont-fessier-au-sol-activation-femme.gif",
+   "gif_sha256": "666443484c7f0861d9cb0132d8819ff3ac6b8b5d53867fab0b01bab838415179",
+   "gif_frames": 2,
+   "gif_size": [
+    370,
+    440
+   ],
+   "planche": "planches/lot28/pont-fessier-au-sol-activation.png"
+  },
+  {
+   "cle": "ponts-fessiers|homme",
+   "identifiant": "ponts-fessiers",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Ponts fessiers"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ponts-fessiers-homme.gif",
+   "gif_sha256": "ebde577e05a55bed8bb02470baef383e14dc0f06fa98752ce2567a7f0c1625c8",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": "planches/lot42/ponts-fessiers.png"
+  },
+  {
+   "cle": "position-de-l-enfant-balasana|homme",
+   "identifiant": "position-de-l-enfant-balasana",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Position de l'enfant (Balasana)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/position-de-l-enfant-balasana-homme.gif",
+   "gif_sha256": "616fc69f3a7503bf22625ff3d5d10ab90587ecc45b00933d2605b45ced27184a",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot04/position-de-l-enfant-balasana.png"
+  },
+  {
+   "cle": "position-de-l-enfant|homme",
+   "identifiant": "position-de-l-enfant",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Position de l'enfant"
+   ],
+   "gif": "media/refonte-photo/gif/homme/position-de-l-enfant-homme.gif",
+   "gif_sha256": "02e02042c969f616473560f20b8473c2fbb761410c26944b3db9d9b5c26f928e",
+   "gif_frames": 2,
+   "gif_size": [
+    380,
+    440
+   ],
+   "planche": "planches/lot07/position-de-l-enfant.png"
+  },
+  {
+   "cle": "presse-a-cuisses-pieds-hauts|femme",
+   "identifiant": "presse-a-cuisses-pieds-hauts",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Presse à cuisses pieds hauts"
+   ],
+   "gif": "media/refonte-photo/gif/femme/presse-a-cuisses-pieds-hauts-femme.gif",
+   "gif_sha256": "f7355ac312d674a1538a506f76ae3cefddf643c3595054b9725e7f2cb02486df",
+   "gif_frames": 2,
+   "gif_size": [
+    340,
+    440
+   ],
+   "planche": "planches/lot08/presse-a-cuisses-pieds-hauts.png"
+  },
+  {
+   "cle": "pullover-cable-bras-tendus|homme",
+   "identifiant": "pullover-cable-bras-tendus",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Pullover câble bras tendus"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pullover-cable-bras-tendus-homme.gif",
+   "gif_sha256": "8c88fbe1e490944187ae12ddd4b386a089844c2c442dcd71a139f85e4d42bfcc",
+   "gif_frames": 2,
+   "gif_size": [
+    336,
+    440
+   ],
+   "planche": "planches/lot21/pullover-cable-bras-tendus.png"
+  },
+  {
+   "cle": "pullover-haltere-plat|homme",
+   "identifiant": "pullover-haltere-plat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Pullover haltère plat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pullover-haltere-plat-homme.gif",
+   "gif_sha256": "f56fbc2e2510c4b26f45d57a89fa805ae59817249d7c55eb583734ad39e71b81",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot29/pullover-haltere-plat.png"
+  },
+  {
+   "cle": "pushdown-triceps-cable|homme",
+   "identifiant": "pushdown-triceps-cable",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Pushdown triceps câble"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pushdown-triceps-cable-homme.gif",
+   "gif_sha256": "028724a3c679a470813ca50f2668a976dbd7bbaa9b9f83d749b718774b066fa1",
+   "gif_frames": 2,
+   "gif_size": [
+    335,
+    440
+   ],
+   "planche": "planches/lot22/pushdown-triceps-cable.png"
+  },
+  {
+   "cle": "recup-active-marche-aquatique|femme",
+   "identifiant": "recup-active-marche-aquatique",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/recup-active-marche-aquatique-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "recup-complete-souffler-au-bord|femme",
+   "identifiant": "recup-complete-souffler-au-bord",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord"
+   ],
+   "gif": "media/refonte-photo/gif/femme/recup-complete-souffler-au-bord-femme.gif",
+   "gif_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "gif_frames": 2,
+   "gif_size": [
+    428,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "recup-complete-souffler|femme",
+   "identifiant": "recup-complete-souffler",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Récup complète — souffler"
+   ],
+   "gif": "media/refonte-photo/gif/femme/recup-complete-souffler-femme.gif",
+   "gif_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "gif_frames": 2,
+   "gif_size": [
+    428,
+    440
+   ],
+   "planche": "planches/lot43/recup-complete-souffler.png"
+  },
+  {
+   "cle": "recup-courte-marche|femme",
+   "identifiant": "recup-courte-marche",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche"
+   ],
+   "gif": "media/refonte-photo/gif/femme/recup-courte-marche-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "recup-entre-tabatas|femme",
+   "identifiant": "recup-entre-tabatas",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Récup entre tabatas"
+   ],
+   "gif": "media/refonte-photo/gif/femme/recup-entre-tabatas-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "recup-marche-aquatique|femme",
+   "identifiant": "recup-marche-aquatique",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup — marche aquatique",
+    "Récup — marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/femme/recup-marche-aquatique-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "recup-marche|femme",
+   "identifiant": "recup-marche",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche"
+   ],
+   "gif": "media/refonte-photo/gif/femme/recup-marche-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "releves-de-jambes-allongee|femme",
+   "identifiant": "releves-de-jambes-allongee",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Relevés de jambes allongée"
+   ],
+   "gif": "media/refonte-photo/gif/femme/releves-de-jambes-allongee-femme.gif",
+   "gif_sha256": "d9158e999b36e85a2572a145831ef361f49fa9e4326fffb4b285d2c70ce78725",
+   "gif_frames": 2,
+   "gif_size": [
+    372,
+    440
+   ],
+   "planche": "planches/lot10/releves-de-jambes-allongee.png"
+  },
+  {
+   "cle": "releves-de-jambes-allonge|homme",
+   "identifiant": "releves-de-jambes-allonge",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Relevés de jambes allongé"
+   ],
+   "gif": "media/refonte-photo/gif/homme/releves-de-jambes-allonge-homme.gif",
+   "gif_sha256": "69ddf0f4ec9c937bbc982245ac6877efbc9908d5711c9b7d4404e282ced89a08",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot10/releves-de-jambes-allonge.png"
+  },
+  {
+   "cle": "releves-de-jambes-incline|homme",
+   "identifiant": "releves-de-jambes-incline",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Relevés de jambes incliné"
+   ],
+   "gif": "media/refonte-photo/gif/homme/releves-de-jambes-incline-homme.gif",
+   "gif_sha256": "04baa4392f5b1f22598ccbc054cc3530692986d8c135bcf68468822e90eb2e13",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot30/releves-de-jambes-incline.png"
+  },
+  {
+   "cle": "releves-de-jambes-suspendu|homme",
+   "identifiant": "releves-de-jambes-suspendu",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Relevés de jambes suspendu"
+   ],
+   "gif": "media/refonte-photo/gif/homme/releves-de-jambes-suspendu-homme.gif",
+   "gif_sha256": "6208e0a452a19b0882ab84939a0342726a26610adfd0b0cab30cc031c909eef7",
+   "gif_frames": 2,
+   "gif_size": [
+    383,
+    440
+   ],
+   "planche": "planches/lot36/releves-de-jambes-suspendu.png"
+  },
+  {
+   "cle": "releves-de-jambes|femme",
+   "identifiant": "releves-de-jambes",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Relevés de jambes"
+   ],
+   "gif": "media/refonte-photo/gif/femme/releves-de-jambes-femme.gif",
+   "gif_sha256": "5ba5f775e90ad37e6a4d35204d3975988a85d1d487247da81a5f7530de72ad82",
+   "gif_frames": 2,
+   "gif_size": [
+    396,
+    440
+   ],
+   "planche": "planches/lot32/releves-de-jambes.png"
+  },
+  {
+   "cle": "releves-de-jambes|homme",
+   "identifiant": "releves-de-jambes",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Relevés de jambes"
+   ],
+   "gif": "media/refonte-photo/gif/homme/releves-de-jambes-homme.gif",
+   "gif_sha256": "e3683062b2c86348938ae33acaf222b6d5509404fb790c65cd7155ffed5cc4a5",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot32/releves-de-jambes.png"
+  },
+  {
+   "cle": "repos-actif|homme",
+   "identifiant": "repos-actif",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Repos actif"
+   ],
+   "gif": "media/refonte-photo/gif/homme/repos-actif-homme.gif",
+   "gif_sha256": "6e77f29b4f7b4870ad78fb2b38ce7e0907ff6fc129d5bf4ba7bc53a7975feb5e",
+   "gif_frames": 2,
+   "gif_size": [
+    427,
+    440
+   ],
+   "planche": "planches/lot42/repos-actif.png"
+  },
+  {
+   "cle": "repos|femme",
+   "identifiant": "repos",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos"
+   ],
+   "gif": "media/refonte-photo/gif/femme/repos-femme.gif",
+   "gif_sha256": "cf45fce9dceafeb4862ef5a0462f90ad064e3968233bf21a5f6a25aa477c7cac",
+   "gif_frames": 2,
+   "gif_size": [
+    425,
+    440
+   ],
+   "planche": "planches/lot44/repos.png"
+  },
+  {
+   "cle": "respiration-diaphragmatique-allongee|homme",
+   "identifiant": "respiration-diaphragmatique-allongee",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Respiration diaphragmatique allongée"
+   ],
+   "gif": "media/refonte-photo/gif/homme/respiration-diaphragmatique-allongee-homme.gif",
+   "gif_sha256": "54a3ca1547a3a6132b545d9812f1393f7b7f907921ec61a3a7d58030b528c215",
+   "gif_frames": 2,
+   "gif_size": [
+    384,
+    440
+   ],
+   "planche": "planches/lot04/respiration-diaphragmatique-allongee.png"
+  },
+  {
+   "cle": "respiration-diaphragmatique|homme",
+   "identifiant": "respiration-diaphragmatique",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Respiration diaphragmatique"
+   ],
+   "gif": "media/refonte-photo/gif/homme/respiration-diaphragmatique-homme.gif",
+   "gif_sha256": "114a727b696375ef8407bd330e18a72f5fccd42eda659c977acd53fa4682097c",
+   "gif_frames": 2,
+   "gif_size": [
+    341,
+    440
+   ],
+   "planche": "planches/lot34/respiration-diaphragmatique.png"
+  },
+  {
+   "cle": "respiration-profonde|homme",
+   "identifiant": "respiration-profonde",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Respiration profonde"
+   ],
+   "gif": "media/refonte-photo/gif/homme/respiration-profonde-homme.gif",
+   "gif_sha256": "9b3cc7d681fe70481c3220a9102463d02f80b8de8e15217542ec9d0f66af4675",
+   "gif_frames": 2,
+   "gif_size": [
+    436,
+    440
+   ],
+   "planche": "planches/lot42/respiration-profonde.png"
+  },
+  {
+   "cle": "retour-au-calme-mobilite|femme",
+   "identifiant": "retour-au-calme-mobilite",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme + mobilité"
+   ],
+   "gif": "media/refonte-photo/gif/femme/retour-au-calme-mobilite-femme.gif",
+   "gif_sha256": "7ff5fea738f927d8dd28a919e8af4fc4e2b680f3c4c1113dab19249f4c96e4f0",
+   "gif_frames": 2,
+   "gif_size": [
+    431,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "retour-au-calme-nage-douce|femme",
+   "identifiant": "retour-au-calme-nage-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/femme/retour-au-calme-nage-douce-femme.gif",
+   "gif_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "retour-au-calme-nage-tres-douce|femme",
+   "identifiant": "retour-au-calme-nage-tres-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce"
+   ],
+   "gif": "media/refonte-photo/gif/femme/retour-au-calme-nage-tres-douce-femme.gif",
+   "gif_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "retour-au-calme-respiration|femme",
+   "identifiant": "retour-au-calme-respiration",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme + respiration"
+   ],
+   "gif": "media/refonte-photo/gif/femme/retour-au-calme-respiration-femme.gif",
+   "gif_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "gif_frames": 2,
+   "gif_size": [
+    428,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "retour-au-calme|femme",
+   "identifiant": "retour-au-calme",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Retour au calme"
+   ],
+   "gif": "media/refonte-photo/gif/femme/retour-au-calme-femme.gif",
+   "gif_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "gif_frames": 2,
+   "gif_size": [
+    404,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "reverse-crunch|femme",
+   "identifiant": "reverse-crunch",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Reverse crunch"
+   ],
+   "gif": "media/refonte-photo/gif/femme/reverse-crunch-femme.gif",
+   "gif_sha256": "fae84592e330ca0b4cc45819d1f0c406ca8526d54f252bee0ef8d6ad3bcbced7",
+   "gif_frames": 2,
+   "gif_size": [
+    377,
+    440
+   ],
+   "planche": "planches/lot26/reverse-crunch.png"
+  },
+  {
+   "cle": "rowing-a-l-elastique|homme",
+   "identifiant": "rowing-a-l-elastique",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing à l’élastique"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-a-l-elastique-homme.gif",
+   "gif_sha256": "e19753d0efd83b1028828e4364153cd63def0e2ceb806b024849e1022b247e62",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot29/rowing-a-l-elastique.png"
+  },
+  {
+   "cle": "rowing-assis-au-cou|homme",
+   "identifiant": "rowing-assis-au-cou",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing assis au cou"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-assis-au-cou-homme.gif",
+   "gif_sha256": "108ebf1d815f3a9052e5f15c195748c6bffe12e90d1ec05f52937e72b9faa9bf",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot11/rowing-assis-au-cou.png"
+  },
+  {
+   "cle": "rowing-assis-cable-unilateral|homme",
+   "identifiant": "rowing-assis-cable-unilateral",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing assis câble unilatéral"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-assis-cable-unilateral-homme.gif",
+   "gif_sha256": "cfa999e3a88716f6dc5948c73e17872cf10ccaa900c1fcd452b2adb82c845580",
+   "gif_frames": 2,
+   "gif_size": [
+    353,
+    440
+   ],
+   "planche": "planches/lot11/rowing-assis-cable-unilateral.png"
+  },
+  {
+   "cle": "rowing-assis-etirement|homme",
+   "identifiant": "rowing-assis-etirement",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing assis + étirement"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-assis-etirement-homme.gif",
+   "gif_sha256": "a71bee50bdd4f995e9895eac2b49f861106baa3d86eefd443c272e083200493d",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot12/rowing-assis-etirement.png"
+  },
+  {
+   "cle": "rowing-assis-prise-neutre|homme",
+   "identifiant": "rowing-assis-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing assis, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-assis-prise-neutre-homme.gif",
+   "gif_sha256": "7cf1a57fd7bacf7e34327b58bb2b9e3fd166484e403fb0cc01aca1094d4dd6ce",
+   "gif_frames": 2,
+   "gif_size": [
+    341,
+    440
+   ],
+   "planche": "planches/lot12/rowing-assis-prise-neutre.png"
+  },
+  {
+   "cle": "rowing-barre-buste-penche-pronation|homme",
+   "identifiant": "rowing-barre-buste-penche-pronation",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing barre buste penché, pronation"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-barre-buste-penche-pronation-homme.gif",
+   "gif_sha256": "fa328628709606a9b42416fbaa582341739124162c3679c1f078e3217b1e0c0b",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "rowing-barre-buste-penche-test-3-5-reps|femme",
+   "identifiant": "rowing-barre-buste-penche-test-3-5-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing barre buste penché — test (3-5 reps)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/rowing-barre-buste-penche-test-3-5-reps-femme.gif",
+   "gif_sha256": "4515b82f0ab37ca5c7eeed257542a4df7ad563a66638f87ecc3c76f2d8bd9a50",
+   "gif_frames": 2,
+   "gif_size": [
+    377,
+    440
+   ],
+   "planche": "planches/lot22/rowing-barre-buste-penche-test-3-5-reps.png"
+  },
+  {
+   "cle": "rowing-barre-buste-penche|femme",
+   "identifiant": "rowing-barre-buste-penche",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing barre buste penché"
+   ],
+   "gif": "media/refonte-photo/gif/femme/rowing-barre-buste-penche-femme.gif",
+   "gif_sha256": "b4659c4fcdf2fdcf40bf310f5e4cd9e6f813b52eeb82d7e03e06efa3c4f44a3d",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot17/rowing-barre-buste-penche.png"
+  },
+  {
+   "cle": "rowing-barre-ez-supination-buste-penche|homme",
+   "identifiant": "rowing-barre-ez-supination-buste-penche",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing barre EZ supination, buste penché"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-barre-ez-supination-buste-penche-homme.gif",
+   "gif_sha256": "79659c3ed2e8b5940f74b4f670983593fecd15696ee9496f7576fd78228a51fb",
+   "gif_frames": 2,
+   "gif_size": [
+    380,
+    440
+   ],
+   "planche": "planches/lot19/rowing-barre-ez-supination-buste-penche.png"
+  },
+  {
+   "cle": "rowing-haltere-buste-penche|homme",
+   "identifiant": "rowing-haltere-buste-penche",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing haltère buste penché"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-haltere-buste-penche-homme.gif",
+   "gif_sha256": "23beb23cf39592a5522ce0867db65b28fd7bc51c8b7e5333aa0aeb1fd7cb9f27",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot22/rowing-haltere-buste-penche.png"
+  },
+  {
+   "cle": "rowing-haltere-un-bras-coude-ouvert|homme",
+   "identifiant": "rowing-haltere-un-bras-coude-ouvert",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing haltère un bras, coude ouvert"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-haltere-un-bras-coude-ouvert-homme.gif",
+   "gif_sha256": "afcf1dd5d8ffa417b052c44a59de4ad7428e2affe85ebe67ab1043998991a04d",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot21/rowing-haltere-un-bras-coude-ouvert.png"
+  },
+  {
+   "cle": "rowing-haltere-un-bras-prise-neutre|homme",
+   "identifiant": "rowing-haltere-un-bras-prise-neutre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing haltère un bras, prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-haltere-un-bras-prise-neutre-homme.gif",
+   "gif_sha256": "2fbfc7c455ffaae108ef27a1fe7a6dd2cf18b422860e14c8693cc7e6dc641cc2",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot23/rowing-haltere-un-bras-prise-neutre.png"
+  },
+  {
+   "cle": "rowing-haltere-un-bras|homme",
+   "identifiant": "rowing-haltere-un-bras",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Rowing haltère un bras"
+   ],
+   "gif": "media/refonte-photo/gif/homme/rowing-haltere-un-bras-homme.gif",
+   "gif_sha256": "60245cfd4153bea3fe0799ea945e7569d3cc5e2317e0228593d9e85ce3de79fc",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot21/rowing-haltere-un-bras.png"
+  },
+  {
+   "cle": "russian-twist|homme",
+   "identifiant": "russian-twist",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Russian twist"
+   ],
+   "gif": "media/refonte-photo/gif/homme/russian-twist-homme.gif",
+   "gif_sha256": "2204cfebd9d348e89f4330649ba77d472fe9437925c294c50c4e36e228fe180e",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot38/russian-twist.png"
+  },
+  {
+   "cle": "safety-bar-squat-ou-barre-classique|homme",
+   "identifiant": "safety-bar-squat-ou-barre-classique",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Safety bar squat (ou barre classique)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/safety-bar-squat-ou-barre-classique-homme.gif",
+   "gif_sha256": "ac4b515aecf50e23a90d0b72d12128cec49687ed69684694da0c39d7e8d2e826",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot17/safety-bar-squat-ou-barre-classique.png"
+  },
+  {
+   "cle": "souleve-de-terre-partiel-prise-snatch|homme",
+   "identifiant": "souleve-de-terre-partiel-prise-snatch",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre partiel, prise snatch"
+   ],
+   "gif": "media/refonte-photo/gif/homme/souleve-de-terre-partiel-prise-snatch-homme.gif",
+   "gif_sha256": "f6878ab706b5c3cfe09c83eb81e2d3bda161f57e55f2ee102efa7506eb820dba",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot39/souleve-de-terre-partiel-prise-snatch.png"
+  },
+  {
+   "cle": "souleve-de-terre-partiel|homme",
+   "identifiant": "souleve-de-terre-partiel",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre partiel"
+   ],
+   "gif": "media/refonte-photo/gif/homme/souleve-de-terre-partiel-homme.gif",
+   "gif_sha256": "66e84e7479c88c0d64d4d547115e4f32ee13745bbe87b16dfe45ee56a17be5f1",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot39/souleve-de-terre-partiel.png"
+  },
+  {
+   "cle": "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
+   "identifiant": "souleve-de-terre-roumain-barre-test-3-5-reps",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre roumain barre — test (3-5 reps)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/souleve-de-terre-roumain-barre-test-3-5-reps-femme.gif",
+   "gif_sha256": "e5532fe8fa9b40e92619a2b0b600e0123e75a3b5e1024fb9dc5a0c1c629c89e9",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot19/souleve-de-terre-roumain-barre-test-3-5-reps.png"
+  },
+  {
+   "cle": "souleve-de-terre-roumain-barre|homme",
+   "identifiant": "souleve-de-terre-roumain-barre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre roumain barre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/souleve-de-terre-roumain-barre-homme.gif",
+   "gif_sha256": "4145262fe443b83ecb51189c4643e903b4a008a6f357f387e18242d8c6d35d50",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot13/souleve-de-terre-roumain-barre.png"
+  },
+  {
+   "cle": "souleve-de-terre-roumain-halteres|homme",
+   "identifiant": "souleve-de-terre-roumain-halteres",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre roumain haltères"
+   ],
+   "gif": "media/refonte-photo/gif/homme/souleve-de-terre-roumain-halteres-homme.gif",
+   "gif_sha256": "81925c640cf288a04d9717ad385a0f7fba474ca0e1659de667be22e4ed3785ae",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot28/souleve-de-terre-roumain-halteres.png"
+  },
+  {
+   "cle": "souleve-de-terre-roumain-unilateral-haltere|femme",
+   "identifiant": "souleve-de-terre-roumain-unilateral-haltere",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre roumain unilatéral haltère"
+   ],
+   "gif": "media/refonte-photo/gif/femme/souleve-de-terre-roumain-unilateral-haltere-femme.gif",
+   "gif_sha256": "b5e25770d7dd88c035c04d755779917dd285abf10040a925d3d69345bb7d3ded",
+   "gif_frames": 2,
+   "gif_size": [
+    363,
+    440
+   ],
+   "planche": "planches/lot30/souleve-de-terre-roumain-unilateral-haltere.png"
+  },
+  {
+   "cle": "souleve-de-terre-roumain-unilateral|femme",
+   "identifiant": "souleve-de-terre-roumain-unilateral",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre roumain unilatéral"
+   ],
+   "gif": "media/refonte-photo/gif/femme/souleve-de-terre-roumain-unilateral-femme.gif",
+   "gif_sha256": "bfb51255e2ec710111de9cd17653b0cc981f8c56e70d21259710499003cc038c",
+   "gif_frames": 2,
+   "gif_size": [
+    378,
+    440
+   ],
+   "planche": "planches/lot34/souleve-de-terre-roumain-unilateral.png"
+  },
+  {
+   "cle": "souleve-de-terre-test-1rm|homme",
+   "identifiant": "souleve-de-terre-test-1rm",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre — test 1RM"
+   ],
+   "gif": "media/refonte-photo/gif/homme/souleve-de-terre-test-1rm-homme.gif",
+   "gif_sha256": "ff7d82be3903075d935b13535057eccf0cebad9f241099c7b09462e917fedcb9",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot09/souleve-de-terre-test-1rm.png"
+  },
+  {
+   "cle": "souleve-de-terre|homme",
+   "identifiant": "souleve-de-terre",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Soulevé de terre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/souleve-de-terre-homme.gif",
+   "gif_sha256": "a86fc663836d7dc9e8feb95fa4ad6e3ddb27e2e1a2e46bd3399d6c852b1a19b0",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "split-squat-barbell-pied-avant-sureleve|homme",
+   "identifiant": "split-squat-barbell-pied-avant-sureleve",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Split squat barbell (pied avant surélevé)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/split-squat-barbell-pied-avant-sureleve-homme.gif",
+   "gif_sha256": "e2092a9d98b64a547010fdabd632e9c8e269e80e87f546e9f73b8f54cc92d823",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot12/split-squat-barbell-pied-avant-sureleve.png"
+  },
+  {
+   "cle": "split-squat-poulie-basse|homme",
+   "identifiant": "split-squat-poulie-basse",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Split squat poulie basse"
+   ],
+   "gif": "media/refonte-photo/gif/homme/split-squat-poulie-basse-homme.gif",
+   "gif_sha256": "624927304fb9efbd7dacae0f58c5ac5f66f072fa9a967af865418e8f2db38b47",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot21/split-squat-poulie-basse.png"
+  },
+  {
+   "cle": "sprint-nager-a-fond|femme",
+   "identifiant": "sprint-nager-a-fond",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Sprint — nager à fond"
+   ],
+   "gif": "media/refonte-photo/gif/femme/sprint-nager-a-fond-femme.gif",
+   "gif_sha256": "47746e12d90c5e2ce45f1921b31ec9540f7c6e7a4f9cd3686b3da07387e196fd",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": "planches/lot43/sprint-nager-a-fond.png"
+  },
+  {
+   "cle": "squat-au-poids-du-corps|homme",
+   "identifiant": "squat-au-poids-du-corps",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Squat au poids du corps"
+   ],
+   "gif": "media/refonte-photo/gif/homme/squat-au-poids-du-corps-homme.gif",
+   "gif_sha256": "3a18659a669ab642cd8d24686ab529acca1bc0f4c005a1c86af793e49d9b75c7",
+   "gif_frames": 2,
+   "gif_size": [
+    373,
+    440
+   ],
+   "planche": "planches/lot23/squat-au-poids-du-corps.png"
+  },
+  {
+   "cle": "squat-cycliste-squat-complet|homme",
+   "identifiant": "squat-cycliste-squat-complet",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Squat cycliste (squat complet)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/squat-cycliste-squat-complet-homme.gif",
+   "gif_sha256": "c8df3a9bc0eaaac8455fc0da929b04eae97c5a1ebb33e1d47d6114dbc4bee36b",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot26/squat-cycliste-squat-complet.png"
+  },
+  {
+   "cle": "squat-cycliste|homme",
+   "identifiant": "squat-cycliste",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Squat cycliste"
+   ],
+   "gif": "media/refonte-photo/gif/homme/squat-cycliste-homme.gif",
+   "gif_sha256": "fdcc2d01cb5a53d13ad2508c58438d9abb49e57f358b6995acbf45f455a0d0bc",
+   "gif_frames": 2,
+   "gif_size": [
+    387,
+    440
+   ],
+   "planche": "planches/lot34/squat-cycliste.png"
+  },
+  {
+   "cle": "squats-doux|homme",
+   "identifiant": "squats-doux",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Squats doux"
+   ],
+   "gif": "media/refonte-photo/gif/homme/squats-doux-homme.gif",
+   "gif_sha256": "90366242bb0e0b8b639901a234eb57a00444426dc5b2b0726ae59b9833be08ca",
+   "gif_frames": 2,
+   "gif_size": [
+    422,
+    440
+   ],
+   "planche": "planches/lot43/squats-doux.png"
+  },
+  {
+   "cle": "squats-sautes|homme",
+   "identifiant": "squats-sautes",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Squats sautés"
+   ],
+   "gif": "media/refonte-photo/gif/homme/squats-sautes-homme.gif",
+   "gif_sha256": "e739223b003d361156bad015acedde21197e03a4318815c1748c354a1a41f907",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot39/squats-sautes.png"
+  },
+  {
+   "cle": "squats-sumo|homme",
+   "identifiant": "squats-sumo",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Squats sumo"
+   ],
+   "gif": "media/refonte-photo/gif/homme/squats-sumo-homme.gif",
+   "gif_sha256": "e6c19b6540cdcf3048be64a2fefdd246d390869632b71c51a6cd34ab7d2eadcf",
+   "gif_frames": 2,
+   "gif_size": [
+    430,
+    440
+   ],
+   "planche": "planches/lot42/squats-sumo.png"
+  },
+  {
+   "cle": "squats|homme",
+   "identifiant": "squats",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Squats"
+   ],
+   "gif": "media/refonte-photo/gif/homme/squats-homme.gif",
+   "gif_sha256": "eb6b4ca3fa5a3f78537ba4a6844d047c6b4d3992b9619348191af56cb453dd90",
+   "gif_frames": 2,
+   "gif_size": [
+    380,
+    440
+   ],
+   "planche": "planches/lot02/squats.png"
+  },
+  {
+   "cle": "step-up-haut|homme",
+   "identifiant": "step-up-haut",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Step-up haut"
+   ],
+   "gif": "media/refonte-photo/gif/homme/step-up-haut-homme.gif",
+   "gif_sha256": "55312a3f227db7a47c7f4ee9b9d9e30bc6791f1fce82e30fb06a4c397dee66dc",
+   "gif_frames": 2,
+   "gif_size": [
+    381,
+    440
+   ],
+   "planche": "planches/lot14/step-up-haut.png"
+  },
+  {
+   "cle": "step-up-sur-banc-hauteur-du-genou|femme",
+   "identifiant": "step-up-sur-banc-hauteur-du-genou",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Step-up sur banc (hauteur du genou)"
+   ],
+   "gif": "media/refonte-photo/gif/femme/step-up-sur-banc-hauteur-du-genou-femme.gif",
+   "gif_sha256": "b74c8ef81f7c0bda4dc69abe532f70d81a4da8eb9e3edf81d922dc08479aa050",
+   "gif_frames": 2,
+   "gif_size": [
+    378,
+    440
+   ],
+   "planche": "planches/lot24/step-up-sur-banc-hauteur-du-genou.png"
+  },
+  {
+   "cle": "superman|homme",
+   "identifiant": "superman",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Superman"
+   ],
+   "gif": "media/refonte-photo/gif/homme/superman-homme.gif",
+   "gif_sha256": "8047d3ad4dc93bc77edda95a7b395606bc9fb53e4163df5781abddcccec6714d",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot02/superman.png"
+  },
+  {
+   "cle": "suspension-a-la-barre|homme",
+   "identifiant": "suspension-a-la-barre",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Suspension à la barre"
+   ],
+   "gif": "media/refonte-photo/gif/homme/suspension-a-la-barre-homme.gif",
+   "gif_sha256": "bcea47097d3f6f500e472a40cc165a3366d8ae3e429aa4dd01efacc44c90c933",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot04/suspension-a-la-barre.png"
+  },
+  {
+   "cle": "tabata-1-2-en-place|femme",
+   "identifiant": "tabata-1-2-en-place",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Tabata 1/2 — en place",
+    "Tabata 2/2 — en place",
+    "Tabata 1/3 — en place",
+    "Tabata 2/3 — en place",
+    "Tabata 3/3 — en place",
+    "Tabata 1/4 — en place",
+    "Tabata 2/4 — en place",
+    "Tabata 3/4 — en place",
+    "Tabata 4/4 — en place"
+   ],
+   "gif": "media/refonte-photo/gif/femme/tabata-1-2-en-place-femme.gif",
+   "gif_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "gif_frames": 2,
+   "gif_size": [
+    423,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "talon-vers-la-fesse-debout|homme",
+   "identifiant": "talon-vers-la-fesse-debout",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Talon vers la fesse (debout)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/talon-vers-la-fesse-debout-homme.gif",
+   "gif_sha256": "58caaf8e87d7a05009b2561337b9e859a6540017ded9e811caaa99c9ba6db00a",
+   "gif_frames": 2,
+   "gif_size": [
+    350,
+    440
+   ],
+   "planche": "planches/lot06/talon-vers-la-fesse-debout.png"
+  },
+  {
+   "cle": "talons-fesses-effort|femme",
+   "identifiant": "talons-fesses-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/femme/talons-fesses-effort-femme.gif",
+   "gif_sha256": "4ffe4ebe811fc2a8c22018c8f71950e7b18ef28aad31cb3a9a21ce21a0c40dc1",
+   "gif_frames": 2,
+   "gif_size": [
+    428,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "talons-fesses|femme",
+   "identifiant": "talons-fesses",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Talons-fesses"
+   ],
+   "gif": "media/refonte-photo/gif/femme/talons-fesses-femme.gif",
+   "gif_sha256": "4ffe4ebe811fc2a8c22018c8f71950e7b18ef28aad31cb3a9a21ce21a0c40dc1",
+   "gif_frames": 2,
+   "gif_size": [
+    428,
+    440
+   ],
+   "planche": "planches/lot43/talons-fesses.png"
+  },
+  {
+   "cle": "tirage-horizontal-a-la-poulie|femme",
+   "identifiant": "tirage-horizontal-a-la-poulie",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Tirage horizontal à la poulie"
+   ],
+   "gif": "media/refonte-photo/gif/femme/tirage-horizontal-a-la-poulie-femme.gif",
+   "gif_sha256": "9be67e5e4d0fbd50742d1c23970662317efd352f8b3b478ed56baf43715a1c46",
+   "gif_frames": 2,
+   "gif_size": [
+    341,
+    440
+   ],
+   "planche": "planches/lot27/tirage-horizontal-a-la-poulie.png"
+  },
+  {
+   "cle": "tirage-vertical-lean-away|homme",
+   "identifiant": "tirage-vertical-lean-away",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Tirage vertical lean away"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tirage-vertical-lean-away-homme.gif",
+   "gif_sha256": "f44fc658f6103c5b7c9d28481a207991d6ed66408280959c328e880f81f8673c",
+   "gif_frames": 2,
+   "gif_size": [
+    377,
+    440
+   ],
+   "planche": "planches/lot15/tirage-vertical-lean-away.png"
+  },
+  {
+   "cle": "tirage-vertical-prise-large|homme",
+   "identifiant": "tirage-vertical-prise-large",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Tirage vertical prise large"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tirage-vertical-prise-large-homme.gif",
+   "gif_sha256": "522a30c39bfb64ea7cfa5d6235d73dea1a32315a7187801acfb3d291fb591761",
+   "gif_frames": 2,
+   "gif_size": [
+    441,
+    440
+   ],
+   "planche": "planches/lot33/tirage-vertical-prise-large.png"
+  },
+  {
+   "cle": "tirage-vertical-prise-neutre|femme",
+   "identifiant": "tirage-vertical-prise-neutre",
+   "athlete": "femme",
+   "surface": "musculation",
+   "noms": [
+    "Tirage vertical prise neutre"
+   ],
+   "gif": "media/refonte-photo/gif/femme/tirage-vertical-prise-neutre-femme.gif",
+   "gif_sha256": "f6b1c2d0b5fae0cc763f807833a13d109a01c836da221ba86039818ce3dcd99d",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": "planches/lot35/tirage-vertical-prise-neutre.png"
+  },
+  {
+   "cle": "tirage-vertical-prise-pronation|homme",
+   "identifiant": "tirage-vertical-prise-pronation",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Tirage vertical prise pronation"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tirage-vertical-prise-pronation-homme.gif",
+   "gif_sha256": "c98efe7e8fd13a1e5eef3e95285affb99b8fdf7af7cee020f6987a2ed320e8c3",
+   "gif_frames": 2,
+   "gif_size": [
+    415,
+    440
+   ],
+   "planche": "planches/lot37/tirage-vertical-prise-pronation.png"
+  },
+  {
+   "cle": "torsion-allongee-genoux|homme",
+   "identifiant": "torsion-allongee-genoux",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Torsion allongée genoux"
+   ],
+   "gif": "media/refonte-photo/gif/homme/torsion-allongee-genoux-homme.gif",
+   "gif_sha256": "22ff5ac222d5ef2f8aafc1bee9b085d764ce559dc80dc155ec7e1921b3174f10",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot04/torsion-allongee-genoux.png"
+  },
+  {
+   "cle": "torsion-allongee|homme",
+   "identifiant": "torsion-allongee",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Torsion allongée"
+   ],
+   "gif": "media/refonte-photo/gif/homme/torsion-allongee-homme.gif",
+   "gif_sha256": "7cd3d22b5f38dabf55982212709b0e54f29016da14198c19f6d3171737e6ab2d",
+   "gif_frames": 2,
+   "gif_size": [
+    389,
+    440
+   ],
+   "planche": "planches/lot04/torsion-allongee.png"
+  },
+  {
+   "cle": "tour-1-2-en-place|femme",
+   "identifiant": "tour-1-2-en-place",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Tour 1/2 — en place",
+    "Tour 2/2 — en place",
+    "Tour 1/3 — en place",
+    "Tour 2/3 — en place",
+    "Tour 3/3 — en place",
+    "Tour 1/4 — en place",
+    "Tour 2/4 — en place",
+    "Tour 3/4 — en place",
+    "Tour 4/4 — en place"
+   ],
+   "gif": "media/refonte-photo/gif/femme/tour-1-2-en-place-femme.gif",
+   "gif_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "gif_frames": 2,
+   "gif_size": [
+    423,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "tractions-prise-large|homme",
+   "identifiant": "tractions-prise-large",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Tractions prise large"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tractions-prise-large-homme.gif",
+   "gif_sha256": "1e5e8f5780c28245e044952bde2529235f15861912b2c015aa517bf1f7c3c7f7",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot32/tractions-prise-large.png"
+  },
+  {
+   "cle": "tractions-prise-neutre-chin-up|homme",
+   "identifiant": "tractions-prise-neutre-chin-up",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Tractions prise neutre (chin-up)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tractions-prise-neutre-chin-up-homme.gif",
+   "gif_sha256": "561920fcf8afeb91466bf0ff13f90e662c96fbac156884698d850a3fc7d4f170",
+   "gif_frames": 2,
+   "gif_size": [
+    371,
+    440
+   ],
+   "planche": "planches/lot22/tractions-prise-neutre-chin-up.png"
+  },
+  {
+   "cle": "tractions-pull-up|homme",
+   "identifiant": "tractions-pull-up",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Tractions (pull-up)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tractions-pull-up-homme.gif",
+   "gif_sha256": "b07b1b4168e0a4dd67189bcad6b22c2a051aa5121f08b8684127c91d66f8ddef",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "tractions-supination-chin-up|homme",
+   "identifiant": "tractions-supination-chin-up",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Tractions supination (chin-up)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
+   "gif_sha256": "d9bfa9bd06ca082cf304ececf68bab8bd5b6b874d0385fb1385b6bf27d8f9736",
+   "gif_frames": 2,
+   "gif_size": [
+    390,
+    440
+   ],
+   "planche": "planches/lot23/tractions-supination-chin-up.png"
+  },
+  {
+   "cle": "transition|femme",
+   "identifiant": "transition",
+   "athlete": "femme",
+   "surface": "cardio-elliptique",
+   "noms": [
+    "Transition"
+   ],
+   "gif": "media/refonte-photo/gif/femme/transition-femme.gif",
+   "gif_sha256": "817fdeabd642696e324a0d23f08014b58d49dee0512a1be6dc41396fad5153aa",
+   "gif_frames": 2,
+   "gif_size": [
+    373,
+    440
+   ],
+   "planche": null
+  },
+  {
+   "cle": "triceps-dips|homme",
+   "identifiant": "triceps-dips",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Triceps dips"
+   ],
+   "gif": "media/refonte-photo/gif/homme/triceps-dips-homme.gif",
+   "gif_sha256": "0f0e7ca28ee7f5262ced24049966d5e82ece4d2c95b74cf2ece5ebf0c944011d",
+   "gif_frames": 2,
+   "gif_size": [
+    383,
+    440
+   ],
+   "planche": "planches/lot31/triceps-dips.png"
+  },
+  {
+   "cle": "triceps-extensions-halteres-banc-plat|homme",
+   "identifiant": "triceps-extensions-halteres-banc-plat",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Triceps extensions haltères, banc plat"
+   ],
+   "gif": "media/refonte-photo/gif/homme/triceps-extensions-halteres-banc-plat-homme.gif",
+   "gif_sha256": "3aea2b016706d5d4f53baf1a3495760c53d204ec4f6aed606d4c6e136193f736",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot18/triceps-extensions-halteres-banc-plat.png"
+  },
+  {
+   "cle": "une-jambe-tendue-une-pliee|homme",
+   "identifiant": "une-jambe-tendue-une-pliee",
+   "athlete": "homme",
+   "surface": "etirement",
+   "noms": [
+    "Une jambe tendue, une pliée"
+   ],
+   "gif": "media/refonte-photo/gif/homme/une-jambe-tendue-une-pliee-homme.gif",
+   "gif_sha256": "93fc13ba7cb57d7a490c7c99b702179ce08ad3f532af1bb3b4c2ee67117d48d7",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot08/une-jambe-tendue-une-pliee.png"
+  },
+  {
+   "cle": "wood-chop-poulie-haute|homme",
+   "identifiant": "wood-chop-poulie-haute",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Wood chop poulie haute"
+   ],
+   "gif": "media/refonte-photo/gif/homme/wood-chop-poulie-haute-homme.gif",
+   "gif_sha256": "9b353c570b841963b619888219a8cd0306d9ff0cce437d2ae85d7a9c3b9f89ad",
+   "gif_frames": 2,
+   "gif_size": [
+    365,
+    440
+   ],
+   "planche": "planches/lot22/wood-chop-poulie-haute.png"
+  }
+ ]
+}

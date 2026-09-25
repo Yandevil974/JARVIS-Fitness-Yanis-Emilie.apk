@@ -633,3 +633,22 @@ poursuivie par feuilles de 3 aux lots suivants, en parallele du lot « style » 
 sans vert sur une case et de la livraison finale signee).
 Prochain tour : livraison finale (APK signe par la cle de l'utilisateur, images pleine
 resolution, lien raw unique) + poursuite relecture/style.
+
+## 63. Lot 46 : paquet de livraison 331 pret, relecture-25 3/3 (meme tour)
+
+Relecture batch 25 : 3/3 conformes (respiration-diaphragmatique homme,
+respiration-diaphragmatique-allongee homme — le vert sur le ventre EST la bonne zone,
+l'heuristique « tra attendu en haut » de verif-gifs est fausse pour ces fiches —,
+reverse-crunch femme). Note style : allongee homme case 1 sans vert -> style (26).
+Paquet de livraison cree : `livraison/manifeste-331.json` (331 entrees : cle, surface,
+noms, chemin GIF, SHA-256, frames, taille, planche source pleine resolution) ;
+`livraison/LIVRAISON-README.md` (recette d'integration bundle candidat, signature
+utilisateur uniquement, depot 1.4.9 + lien raw unique) ; map d'integration
+`evolution/media/candidate/refonte-331-map.json` (331 cles -> GIF + SHA).
+Aucune generation ce tour (plafond intact). Prochain tour : build bundle candidat avec la
+map, controles, puis signature AVEC LA CLE UTILISATEUR et publication 1.4.9.
+
+## 64. Couverture et suite (etat lot 46)
+
+**331 / 331 couples valides, 0 restant.** Relecture cumulative : **310 relus**,
+**21 restent a relire**. Style : 26 GIF. Livraison : paquet pret, cle utilisateur attendue.

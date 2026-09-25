@@ -253,6 +253,16 @@
    "cases_sans_vert": [
     0
    ]
+  },
+  {
+   "cle": "respiration-diaphragmatique-allongee|homme",
+   "vert_px": [
+    473,
+    2460
+   ],
+   "cases_sans_vert": [
+    0
+   ]
   }
  ]
 }

@@ -18,9 +18,9 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
   (`verification/VERIFICATION-2026-09-25.md`) ; 7 gestes faux trouvés parmi les livrés
   (4 refaits et acceptés au lot 17 ; 3 retirés des valides ce tour : back-squat-barre-haute,
-  back-squat-inertie-pause-complete, burpees) ; **24 couples restent à relire** (feuilles de 3,
-  307 déjà relus).
-  Style : 25 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
+  back-squat-inertie-pause-complete, burpees) ; **21 couples restent à relire** (feuilles de 3,
+  310 déjà relus).
+  Style : 26 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
   à reprendre dans un lot dédié sans toucher aux gestes.
 - Index visuel numéroté : `review/index-general.jpg` (331 vignettes, régénéré à chaque lot).
 
