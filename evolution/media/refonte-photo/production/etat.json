@@ -23,7 +23,9 @@
   "elliptique-recuperation-active",
   "elliptique-retour-au-calme",
   "etirement-contre-le-mur",
+  "etirement-dans-l-encadrement-de-porte",
   "etirement-des-extenseurs",
+  "etirement-des-flechisseurs",
   "etirement-du-cobra",
   "etirement-du-flechisseur-de-hanche-chevalier",
   "etirement-du-piriforme-assis",
@@ -34,12 +36,15 @@
   "hip-thrust-barre",
   "jumping-jacks",
   "leg-curl-allonge",
+  "main-dans-le-dos",
+  "mains-croisees-derriere-le-dos",
   "mollet-en-escalier",
   "mountain-climbers",
   "pigeon-assis",
   "pompes",
   "position-de-l-enfant",
   "position-de-l-enfant-balasana",
+  "presse-a-cuisses-pieds-hauts",
   "releves-de-jambes",
   "respiration-diaphragmatique-allongee",
   "rowing-barre-buste-penche-pronation",
@@ -47,78 +52,14 @@
   "squats",
   "superman",
   "suspension-a-la-barre",
+  "talon-vers-la-fesse-debout",
   "torsion-allongee",
   "torsion-allongee-genoux",
   "tractions-pull-up",
-  "transition"
+  "transition",
+  "une-jambe-tendue-une-pliee"
  ],
  "restants": [
-  {
-   "identifiant": "mains-croisees-derriere-le-dos",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Mains croisées derrière le dos"
-   ],
-   "slugs": [
-    "mains-croisees-derriere-le-dos"
-   ]
-  },
-  {
-   "identifiant": "main-dans-le-dos",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Main dans le dos"
-   ],
-   "slugs": [
-    "main-dans-le-dos"
-   ]
-  },
-  {
-   "identifiant": "etirement-dans-l-encadrement-de-porte",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Étirement dans l'encadrement de porte"
-   ],
-   "slugs": [
-    "etirement-dans-l-encadrement-de-porte"
-   ]
-  },
-  {
-   "identifiant": "talon-vers-la-fesse-debout",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Talon vers la fesse (debout)"
-   ],
-   "slugs": [
-    "talon-vers-la-fesse-debout"
-   ]
-  },
-  {
-   "identifiant": "etirement-des-flechisseurs",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Étirement des fléchisseurs"
-   ],
-   "slugs": [
-    "etirement-des-flechisseurs"
-   ]
-  },
-  {
-   "identifiant": "une-jambe-tendue-une-pliee",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Une jambe tendue, une pliée"
-   ],
-   "slugs": [
-    "une-jambe-tendue-une-pliee"
-   ]
-  },
   {
    "identifiant": "back-squat-test-1rm",
    "surface": "musculation",
@@ -1340,17 +1281,6 @@
    ],
    "slugs": [
     "reverse-crunch"
-   ]
-  },
-  {
-   "identifiant": "presse-a-cuisses-pieds-hauts",
-   "surface": "musculation",
-   "athlete": "femme",
-   "noms": [
-    "Presse à cuisses pieds hauts"
-   ],
-   "slugs": [
-    "presse-a-cuisses-pieds-hauts"
    ]
   },
   {
@@ -3995,13 +3925,11 @@
   }
  ],
  "chiffres": {
-  "valides": 51,
+  "valides": 58,
   "total": 343,
-  "restants": 288,
-  "a_refaire": 0,
+  "restants": 281,
   "par_surface": {
-   "etirement": 6,
-   "musculation": 189,
+   "musculation": 188,
    "piscine": 19,
    "piscine-protocole": 41,
    "tabata-aqua": 6,
