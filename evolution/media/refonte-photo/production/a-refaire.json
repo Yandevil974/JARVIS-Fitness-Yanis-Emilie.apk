@@ -55,9 +55,29 @@
    "defaut": "rendu incorrect : la poulie était dessinée EN HAUT, le câble descendait du plafond — les deux rowings se lisaient comme des tirages verticaux",
    "correction": "poulie BASSE au niveau du sol, câble HORIZONTAL à hauteur de poitrine ; tirage vers les côtes (unilatéral) et vers la nuque coudes ouverts (au cou)",
    "etat": "les deux planches régénérées, relues et acceptées"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Rowing assis câble unilatéral (homme)",
+   "signale_par": "l'utilisateur",
+   "defaut": "le geste changeait entre les deux cases : une main au départ, DEUX mains à la fin",
+   "correction": "un SEUL bras travaille du début à la fin ; l'autre main reste posée sur la hanche/la cuisse et ne touche jamais la poignée",
+   "verification": "zoom de contrôle sur les deux cases après régénération",
+   "etat": "planche relue et acceptée"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Rowing assis au cou -> Tirage vertical, prise large (homme)",
+   "signale_par": "l'utilisateur",
+   "defaut": "mauvaise machine : banc de rowing avec un câble venant du haut ; le départ doit se faire bras tendus AU-DESSUS de la tête",
+   "correction": "machine à tirage vertical (poulie HAUTE au-dessus de la tête, câble vertical, barre large, cale-cuisses) ; départ bras tendus vers le plafond, arrivée barre derrière la nuque ; les deux cases recadrées sous le MÊME angle de dos",
+   "regle": "l'alias de l'app est « Rowing assis au cou » -> cible « Tirage vertical prise large ». C'est la CIBLE (le nom de l'app) qui décrit le geste et la machine, pas le nom d'origine.",
+   "etat": "planche régénérée, relue et acceptée"
   }
  ],
  "reglesPrompt": [
-  "POULIES : un rowing / tirage horizontal part d'une poulie BASSE, câble horizontal ; un tirage vertical part d'une poulie HAUTE, câble vertical. Écrire la position de la poulie en toutes lettres."
+  "POULIES : un rowing / tirage horizontal part d'une poulie BASSE, câble horizontal ; un tirage vertical part d'une poulie HAUTE, câble vertical. Écrire la position de la poulie en toutes lettres.",
+  "ALIAS : quand un nom d'origine est rataché à une cible différente dans l'app, c'est la CIBLE qui décrit la machine et le geste (ex. « rowing assis au cou » se dessine en TIRAGE VERTICAL prise large).",
+  "MOUVEMENT UNILATERAL : écrire explicitement que le second bras/membre reste immobile et ne touche jamais l'engin, du début à la fin."
  ]
 }
