@@ -1,23 +1,19 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 35
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 36
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**235 / 331** visuels validés, 96 restants) ; ce fichier ne contient que les points
+(**238 / 331** visuels validés, 93 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 5 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 2 planches qui résistent encore (stratégie édition au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Soulevé de terre partiel (homme)** — 2 refus | départ non posé sur les pins (barre à mi-cuisse, buste quasi droit) et vert sur quadriceps au lieu de chaîne postérieure | vue de face, pins, « cases différentes » | lot36 : LEFT barre **posée sur les pins** sous les genoux, buste 45° ; vert uniquement fessiers/ischios | aucune |
-| **Curl haltères incliné prise neutre (homme)** — 1 refus | génération en grille 2×2 (quatre quadrants) | bench incliné, ancre de tête | lot36 : « EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid » | aucune |
-| **Relevés de jambes suspendu (homme)** — 1 refus | génération en grille 2×2 (quatre quadrants) | barre de traction, vue de profil | lot36 : même consigne de format 2 panneaux | aucune |
-| **Mollets à la presse (homme)** — 1 refus | case 2 = genoux fléchis (leg press) au lieu de chevilles seules ; vert absent en case 2 | presse 45°, marges machine | lot36 : genoux tendus immobiles, mouvement de cheville seul, vert mollets aux deux cases | aucune |
-| **Hip thrust barre (femme)** — retirée à la relecture | haltères montrés au lieu de la **barre** (matériel faux, critère utilisateur) | lot précédent accepté à tort | lot36 : barre longue avec disques aux deux bouts posée sur le pli de hanche | aucune |
+| **Soulevé de terre partiel (homme)** — 5 refus | le générateur ne dessine JAMAIS le départ barre posée sur les pins buste 45° ; vert souvent posé sur quadriceps | 4 prompts texte, cases séparées, vocabulaire « deadlift bottom », consignes de vert | **lot37 : ÉDITION d'image** : partir de la case lockout propre et faire descendre barre sur pins + buste 45° par edit | aucune |
+| **Mollets à la presse (homme)** — 3 refus | genoux fléchis (donc leg press) et/ou vert sur tibias ; une case 2 générée en planche double | presse 45°, « genoux tendus identiques », cases séparées | **lot37 : 1 case générée puis ÉDITION** de la même image pour la case 2 (talon haut) : paire cohérente garantie | aucune |
 
-Clos ce tour : **tirage vertical prise neutre RÉSOLU** (poignées parallèles verticales) et
-**mollets unilatéraux RÉSOLUS** (pied libre croisé en l'air) ; + développé haltères plat
-prise neutre (vue de FACE pied de banc), extensions triceps haltères plat, curl Scott 90
-supination, leg press unilatéral.
+Clos ce tour (3 des 5 refus) : curl haltères incliné prise neutre (format 2 panneaux),
+relevés de jambes suspendu (format 2 panneaux), hip thrust barre (BARRE longue aux deux
+disques, plus d'haltères).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

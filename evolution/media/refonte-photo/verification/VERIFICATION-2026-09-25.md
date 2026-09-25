@@ -392,3 +392,25 @@ valides relus**, **43 restent a relire**. **5 planches en attente** dans
 `production/a-refaire.json` : souleve-de-terre-partiel (2e), curl-halteres-incline-prise-neutre,
 releves-de-jambes-suspendu, mollets-a-la-presse (1ers), hip-thrust-barre (relecture).
 Prochain lot 36 : ces 5 planches + 5 planches (musculation 14 puis tabata au sol 27).
+
+## 43. Lot 36 : « termine les refus » (meme tour)
+
+Objectif du tour : clos les 5 planches de a-refaire. Clos 3 : curl-halteres-incline-prise-neutre
+(format 2 panneaux impose), releves-de-jambes-suspendu (format 2 panneaux), hip-thrust-barre
+(BARRE longue avec disques aux deux bouts, critere materiel respecte).
+Restent 2 malgre 10/10 generations : souleve-de-terre-partiel (5e refus : aucun depart barre
+sur pins buste 45 deg, ni par prompt texte, ni par cases separees, ni par vocabulaire
+« deadlift bottom » ; vert souvent quadriceps) et mollets-a-la-presse (3e refus : genoux
+flechis = leg press, vert tibias, une case2 en planche double).
+Strategie lot 37 : EDITION d'image (case lockout propre editee en case depart ; case unique
+editee en paire) — methode deja prouvee au lot 26.
+Feuilles : `verification/lot36b-01..02.jpg`, `verification/lot36c.jpg`, `verification/lot36d.jpg`.
+
+## 44. Couverture et suite (etat lot 36)
+
+**238 / 331 couples valides**, 93 restants (protocoles piscine 40, tabata au sol 27,
+musculation 11, piscine guides 9, aqua tabata 6). Relecture cumulative : **192 couples
+valides relus**, **46 restent a relire**. **2 planches en attente** dans
+`production/a-refaire.json` : souleve-de-terre-partiel (5e refus) et mollets-a-la-presse
+(3e refus), toutes deux vers la strategie d'EDITION. Prochain lot 37 : ces 2 planches par
+edition + 8 planches (musculation 11 puis tabata au sol 27).
