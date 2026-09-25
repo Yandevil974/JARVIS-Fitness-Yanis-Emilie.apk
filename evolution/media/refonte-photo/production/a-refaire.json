@@ -47,6 +47,17 @@
    "defaut": "un pied rendu sans chaussure en case de fin",
    "correction": "chaussures noires sur les deux pieds, jambes collées",
    "etat": "planche régénérée, relue et acceptée"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Rowing assis câble unilatéral + Rowing assis au cou (homme)",
+   "signale_par": "l'utilisateur",
+   "defaut": "rendu incorrect : la poulie était dessinée EN HAUT, le câble descendait du plafond — les deux rowings se lisaient comme des tirages verticaux",
+   "correction": "poulie BASSE au niveau du sol, câble HORIZONTAL à hauteur de poitrine ; tirage vers les côtes (unilatéral) et vers la nuque coudes ouverts (au cou)",
+   "etat": "les deux planches régénérées, relues et acceptées"
   }
+ ],
+ "reglesPrompt": [
+  "POULIES : un rowing / tirage horizontal part d'une poulie BASSE, câble horizontal ; un tirage vertical part d'une poulie HAUTE, câble vertical. Écrire la position de la poulie en toutes lettres."
  ]
 }
