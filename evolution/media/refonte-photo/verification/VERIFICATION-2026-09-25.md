@@ -480,3 +480,19 @@ Feuilles : `verification/lot39b-01..02.jpg`.
 **252 / 331 couples valides**, 79 restants (protocoles piscine 40, tabata au sol 24,
 piscine guides 9, aqua tabata 6). Relecture cumulative : **213 couples valides relus**,
 **39 restent a relire**. Prochain lot 40 : tabata au sol (24 restants), puis piscine.
+
+## 51. Lot 40 : tabata au sol, 9/10 du premier coup (meme tour)
+
+Acceptees 9 : battements-de-jambes (ciseaux alternes), burpees-simplifies (debout -> planche),
+chaise-au-mur (cuisses paralleles), chaise-douce (assise partielle), dead-bug (bras/jambe
+opposes), dips-au-bord, fentes-arriere, high-knees (genoux alternes), marche-sur-place.
+Refusee 1 : corde-invisible (grille 2x2, corps entier absent des cases).
+Relecture batch 19 : 3/3 conformes (mains-croisees-derriere-le-dos, mollet-en-escalier,
+pigeon-assis). Feuilles : `verification/lot40b-01..04.jpg`, `verification/relecture-19.jpg`.
+
+## 52. Couverture et suite (etat lot 40)
+
+**261 / 331 couples valides**, 70 restants (protocoles piscine 40, tabata au sol 15,
+piscine guides 9, aqua tabata 6). Relecture cumulative : **225 couples valides relus**,
+**36 restent a relire**. **1 planche en attente** : corde-invisible (format 2 panneaux au
+lot 41). Prochain lot 41 : corde-invisible + 9 planches de tabata au sol (15).

@@ -1,7 +1,16 @@
 {
  "regle": "Une planche n'est acceptee qu'apres lecture de SES DEUX cases. Toute planche refusee est refaite avant d'etre livree : elle n'est jamais comptee comme faite.",
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
- "aRefaire": [],
+ "aRefaire": [
+  {
+   "mouvement": "corde-invisible (homme)",
+   "identifiant": "corde-invisible",
+   "athlete": "homme",
+   "motif": "1er refus (lot40) : generation en grille 2x2 (torses puis jambes separees), corps entier absent des cases",
+   "planche": "lot40/corde-invisible.png",
+   "strategieSuivante": "lot41 : consigne EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, FULL BODY visible in each panel, mains vides sans corde"
+  }
+ ],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",

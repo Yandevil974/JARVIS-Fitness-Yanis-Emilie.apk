@@ -1,22 +1,18 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 39
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 40
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**252 / 331** visuels validés, 79 restants) ; ce fichier ne contient que les points
+(**261 / 331** visuels validés, 70 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Plus aucune planche refusée 🎉 (état lot 39)
+## 1. La planche encore refusée (je continue dessus au prochain tour)
 
-`production/a-refaire.json` est **VIDE** : les 4 dernières refusées ont été résolues au
-lot 39 — les deux soulevés de terre partiels par la **VUE DE DOS** (block pull sur blocs
-noirs, vert chaîne postérieure enfin visible), mollets à la presse (genoux 180°, talons
-décollés de la plaque, 6 essai), squats sautés (bras entiers visibles).
-Leçons capitalisées (règles des futurs prompts) : deadlifts/rack pulls toujours DE DOS ;
-gestes unilatéraux ancre d'orientation ; haltères comptés explicitement ; format
-« EXACTLY TWO panels side by side landscape » ; vues de FACE pied de banc pour les
-développés haltères ; « EXACTLY ONE person per panel ».
+| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
+|---|---|---|---|---|
+| **Corde invisible (homme)** — 1 refus | génération en grille 2×2 (torses puis jambes séparés), corps entier absent des cases | prompt simple + réassemblage PIL | **lot41 : « EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, FULL BODY in each panel »**, mains vides sans corde | aucune |
 
-Prochain bloc : **tabata au sol (24)**, puis piscine (guides 9 + protocoles 40) et aqua
-tabata (6). Aucune décision en attente de votre côté hors liste §3 historique.
+Clos ce tour (lot 40, tabata au sol) : battements de jambes, burpees simplifiés, chaise au
+mur, chaise douce, dead bug, dips au bord, fentes arrière, high knees, marche sur place —
+9 planches acceptées du premier coup.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

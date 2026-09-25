@@ -4,20 +4,20 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 252,
-  "restants": 79,
+  "valides": 261,
+  "restants": 70,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
    "musculation": 203,
-   "tabata-au-sol": 13
+   "tabata-au-sol": 22
   },
   "restants_par_surface": {
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
-   "tabata-au-sol": 24
+   "tabata-au-sol": 15
   }
  },
  "valides": [
@@ -39,6 +39,7 @@
   "back-squat-test-1rm|homme",
   "back-squat|homme",
   "barre-au-front-pushdown-triceps|homme",
+  "battements-de-jambes|homme",
   "bird-dog|femme",
   "bras-tendu-contre-la-poitrine|homme",
   "bras-tendu-contre-le-mur|homme",
@@ -46,10 +47,13 @@
   "bras-tendu-devant-main-tiree|homme",
   "bulgarian-split-squat-halteres|femme",
   "bulgarian-split-squat|homme",
+  "burpees-simplifies|homme",
   "burpees|homme",
   "cables-croises-rotation-externe|homme",
   "cables-croises|homme",
   "california-press-barre-au-cou|homme",
+  "chaise-au-mur|homme",
+  "chaise-douce|homme",
   "circuit-abdominaux-crunch-releves-gainage|femme",
   "circuit-gainage-planche-lateral-bird-dog|femme",
   "clamshell-a-l-elastique|femme",
@@ -81,6 +85,7 @@
   "curl-zottman|homme",
   "dead-bug-avec-rotation|femme",
   "dead-bug|femme",
+  "dead-bug|homme",
   "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
   "developpe-couche-decline-prise-serree|homme",
@@ -105,6 +110,7 @@
   "developpe-militaire-halteres-assis|femme",
   "developpe-militaire-inertie-depuis-les-pins|homme",
   "developpe-militaire-test-1rm|homme",
+  "dips-au-bord|homme",
   "dips|homme",
   "drop-lunges-fentes-controlees|homme",
   "drop-lunges-fentes-sautees-controlees|homme",
@@ -145,6 +151,7 @@
   "fentes-alternees|homme",
   "fentes-arriere-alternees|femme",
   "fentes-arriere-au-poids-du-corps|homme",
+  "fentes-arriere|homme",
   "fentes-avant-alternees|femme",
   "fentes-barre|homme",
   "fentes-bulgares-halteres-pied-avant-sureleve|homme",
@@ -167,6 +174,7 @@
   "good-morning-debout|homme",
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
+  "high-knees|homme",
   "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
   "hip-thrust-barre|femme",
   "hip-thrust-unilateral-1-jambe|femme",
@@ -190,6 +198,7 @@
   "leg-press|homme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
+  "marche-sur-place|homme",
   "mobilite-des-epaules|homme",
   "mollet-en-escalier|homme",
   "mollets-a-la-presse|homme",
@@ -1087,83 +1096,11 @@
    ]
   },
   {
-   "identifiant": "battements-de-jambes",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Battements de jambes"
-   ]
-  },
-  {
-   "identifiant": "burpees-simplifies",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Burpees simplifiés"
-   ]
-  },
-  {
-   "identifiant": "chaise-au-mur",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Chaise au mur"
-   ]
-  },
-  {
-   "identifiant": "chaise-douce",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Chaise douce"
-   ]
-  },
-  {
    "identifiant": "corde-invisible",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
     "Corde invisible"
-   ]
-  },
-  {
-   "identifiant": "dead-bug",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Dead bug"
-   ]
-  },
-  {
-   "identifiant": "dips-au-bord",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Dips au bord"
-   ]
-  },
-  {
-   "identifiant": "fentes-arriere",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Fentes arrière"
-   ]
-  },
-  {
-   "identifiant": "high-knees",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "High knees"
-   ]
-  },
-  {
-   "identifiant": "marche-sur-place",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Marche sur place"
    ]
   },
   {
