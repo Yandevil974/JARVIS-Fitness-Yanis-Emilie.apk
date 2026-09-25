@@ -1,0 +1,46 @@
+{
+ "date": "2026-09-25",
+ "decision_utilisateur": "défaut retenu = machines/câbles invraisemblables ; périmètre = audit complet des 161 validées avant de produire",
+ "methode": "planches-contact verification/audit-machines-01..09 (54 planches avec câble/poulie/machine), audit-bancs-01..02 (8), audit-bancs-appui-01 (6 bancs d'appui sans le mot banc dans l'identifiant)",
+ "audites": 68,
+ "hors_perimetre": "93 validées restantes = haltères/barre/poids du corps/sol/étirements/piscine : aucun câble, poulie, machine ni banc, le défaut retenu y est structurellement absent",
+ "a_refaire_realisme": [
+  {
+   "identifiant": "cables-croises-rotation-externe",
+   "athlete": "homme",
+   "motif": "grée incohérente entre les cases : une poulie haute puis deux câbles croisés ; la rotation externe décrite est impossible avec cette grée"
+  },
+  {
+   "identifiant": "developpe-couche-barre",
+   "athlete": "homme",
+   "motif": "exécuté ASSIS au banc au lieu d'allongé : ce n'est pas un développé couché"
+  },
+  {
+   "identifiant": "developpe-couche-test-1rm",
+   "athlete": "homme",
+   "motif": "haltère puis barre penchée à un seul plateau : charge de 1RM invraisemblable"
+  },
+  {
+   "identifiant": "ecartes-cables-incline",
+   "athlete": "homme",
+   "motif": "les deux poignées partent d'UNE seule poulie basse devant le banc ; un écarté exige deux poulies, une de chaque côté"
+  },
+  {
+   "identifiant": "kickback-a-la-poulie",
+   "athlete": "femme",
+   "motif": "case 1 : câble posé au sol, non fixé à la cheville ; la pile serait détendue"
+  },
+  {
+   "identifiant": "step-up-sur-banc-hauteur-du-genou",
+   "athlete": "femme",
+   "motif": "case 2 : le pied d'appui ne touche pas le banc, genou levé dans le vide à côté du banc"
+  }
+ ],
+ "regles_futurs_prompts": [
+  "décrire la GRÉE complète une seule fois et l'ancrer : « la même machine, au même endroit, dans les deux cases »",
+  "imposer le trajet du câble : « le câble part en ligne droite de la poulie X jusqu'à la poignée/la sangle, tendu dans les deux cases »",
+  "interdire : câble posé au sol, poignée sans câble, deux câbles issus d'une seule poulie, poulie qui change de hauteur entre les cases",
+  "positions au banc : nommer l'appui exact (dos allongé, dos au banc incliné, main+genou sur le banc) et l'interdire de changer entre les cases",
+  "charges : « barre chargée des deux côtés, mêmes plateaux dans les deux cases »"
+ ]
+}

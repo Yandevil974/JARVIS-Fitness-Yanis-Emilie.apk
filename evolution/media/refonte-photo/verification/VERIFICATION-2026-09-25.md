@@ -159,7 +159,24 @@ developpe-halteres-assis-neutre-pronation) ; note mineure : sur 2 de ces 3 planc
 n'apparait que sur la case de travail, ecart cosmetique tolere.
 Feuilles : `verification/lot23-01..04.jpg`, `verification/relecture-05.jpg`.
 
-## 16. Couverture et suite
+## 17. Audit realisme machines/cables (decision utilisateur du tour)
+
+Defaut retenu par l'utilisateur : machines et câbles invraisemblables ; perimetre :
+audit complet des 161 validées AVANT de produire. 68 planches auditees sur planches-contact
+(`verification/audit-machines-01..09.jpg`, `audit-bancs-01..02.jpg`,
+`audit-bancs-appui-01.jpg`) : toutes celles comportant un câble, une poulie, une machine,
+un banc ou un banc d'appui. Les 93 restantes (haltères, barre, poids du corps, sol,
+étirements, piscine) n'ont aucun appareil : le défaut retenu y est structurellement absent.
+
+**6 planches validées à refaire** (listées dans `production/audit-realisme.json` et
+`production/a-refaire.json`) : cables-croises-rotation-externe (grée incohérente entre les
+cases), developpe-couche-barre (assis au lieu d'allongé), developpe-couche-test-1rm (charge
+invraisemblable), ecartes-cables-incline (deux poignées sur une seule poulie),
+kickback-a-la-poulie (câble au sol non fixé en case 1), step-up-sur-banc-hauteur-du-genou
+(pied d'appui hors banc en case 2). Règles de grée pour tous les prompts futurs dans
+`production/audit-realisme.json` (`regles_futurs_prompts`).
+
+## 18. Couverture et suite
 
 Relus sur les sept tours : **125 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
 Sur les **161 valides** actuels, **53 restent à relire** (feuilles de 3, mêmes outils).

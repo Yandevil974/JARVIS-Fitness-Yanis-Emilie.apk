@@ -116,10 +116,11 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-1. Reprendre les **3 planches en attente** (`production/a-refaire.json`) — stratégies
-   décrites dans `CE-QUI-COINCE.md` §1 : developpe-haltere-un-bras-debout (vert en manche
-   complète), mountain-climbers (édition échange de jambes), developpe-couche-halteres
-   (deux haltères, quatre disques).
+1. Reprendre les **9 planches en attente** (`production/a-refaire.json`) : 3 refus de
+   production (stratégies dans `CE-QUI-COINCE.md` §1) + 6 planches validées condamnées par
+   l'audit réalisme (`CE-QUI-COINCE.md` §1b, détails et règles de grée dans
+   `production/audit-realisme.json`). Lot 24 = ces 9 régénérations, chaque prompt câble/
+   machine conforme aux `regles_futurs_prompts`.
 2. Continuer la relecture des **75 couples déjà valides non relus** (feuilles de 3,
    `feuilles-verif.py`), puis le lot « style » des 21 GIF sans vert sur une case
    (`production/style-a-reprendre.json`).

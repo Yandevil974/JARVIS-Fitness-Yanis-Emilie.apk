@@ -15,6 +15,24 @@ bloquants ou qui demandent une décision.
 Clos depuis la dernière liste : rowing-barre-buste-penche-test-3-5-reps (tirage complet obtenu
 par édition ; écart résiduel « arrivée au ventre » soumis à votre option du §3).
 
+## 1b. Audit réalisme terminé : 6 planches validées à refaire (avant toute production)
+
+Audit complet demandé : 68 planches avec appareil relues sur planches-contact
+(`verification/audit-machines-01..09.jpg`, `audit-bancs-01..02.jpg`,
+`audit-bancs-appui-01.jpg`) ; 93 sans appareil (haltères, barre, sol, étirements, piscine)
+hors périmètre du défaut retenu. Verdict : **6 à refaire**, détails et règles de grée futures
+dans `production/audit-realisme.json` :
+
+1. cables-croises-rotation-externe (H) — grée incohérente entre les deux cases ;
+2. developpe-couche-barre (H) — assis au banc au lieu d'allongé ;
+3. developpe-couche-test-1rm (H) — haltère puis barre penchée à un seul plateau ;
+4. ecartes-cables-incline (H) — deux poignées sur une seule poulie basse ;
+5. kickback-a-la-poulie (F) — câble posé au sol, non fixé à la cheville, en case 1 ;
+6. step-up-sur-banc-hauteur-du-genou (F) — pied d'appui hors banc en case 2.
+
+Prochain tour : ces 6 + les 3 refus de production = 9 régénérations (lot 24), avec les
+règles de grée du fichier d'audit dans chaque prompt.
+
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
 1. **Barre sur le dos vs rack avant** : en vue de profil, une génération sur deux pose la
