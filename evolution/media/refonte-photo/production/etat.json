@@ -4,21 +4,20 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 248,
-  "restants": 83,
+  "valides": 252,
+  "restants": 79,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 200,
-   "tabata-au-sol": 12
+   "musculation": 203,
+   "tabata-au-sol": 13
   },
   "restants_par_surface": {
-   "musculation": 3,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
-   "tabata-au-sol": 25
+   "tabata-au-sol": 24
   }
  },
  "valides": [
@@ -193,6 +192,7 @@
   "mains-croisees-derriere-le-dos|homme",
   "mobilite-des-epaules|homme",
   "mollet-en-escalier|homme",
+  "mollets-a-la-presse|homme",
   "mollets-assis|homme",
   "mollets-debout-unilateraux|femme",
   "mollets-debout|homme",
@@ -236,6 +236,8 @@
   "rowing-haltere-un-bras|homme",
   "russian-twist|homme",
   "safety-bar-squat-ou-barre-classique|homme",
+  "souleve-de-terre-partiel-prise-snatch|homme",
+  "souleve-de-terre-partiel|homme",
   "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
   "souleve-de-terre-roumain-barre|homme",
   "souleve-de-terre-roumain-halteres|homme",
@@ -248,6 +250,7 @@
   "squat-au-poids-du-corps|homme",
   "squat-cycliste-squat-complet|homme",
   "squat-cycliste|homme",
+  "squats-sautes|homme",
   "squats|homme",
   "step-up-haut|homme",
   "step-up-sur-banc-hauteur-du-genou|femme",
@@ -272,30 +275,6 @@
   "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  {
-   "identifiant": "mollets-a-la-presse",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Mollets à la presse"
-   ]
-  },
-  {
-   "identifiant": "souleve-de-terre-partiel",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Soulevé de terre partiel"
-   ]
-  },
-  {
-   "identifiant": "souleve-de-terre-partiel-prise-snatch",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Soulevé de terre partiel, prise snatch"
-   ]
-  },
   {
    "identifiant": "battements-au-bord",
    "athlete": "femme",
@@ -1290,14 +1269,6 @@
    "surface": "tabata-au-sol",
    "noms": [
     "Squats doux"
-   ]
-  },
-  {
-   "identifiant": "squats-sautes",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Squats sautés"
    ]
   },
   {

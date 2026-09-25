@@ -1,40 +1,7 @@
 {
  "regle": "Une planche n'est acceptee qu'apres lecture de SES DEUX cases. Toute planche refusee est refaite avant d'etre livree : elle n'est jamais comptee comme faite.",
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
- "aRefaire": [
-  {
-   "mouvement": "souleve-de-terre-partiel (homme)",
-   "identifiant": "souleve-de-terre-partiel",
-   "athlete": "homme",
-   "motif": "7e refus (lot38) : le GESTE block pull est enfin correct (depart sur blocs + lockout) mais vue de FACE le vert part sur quadriceps ; la chaine posterieure n'est pas visible de face",
-   "planche": "lot38/souleve-de-terre-partiel.png",
-   "strategieSuivante": "lot39 : VUE DE DOS (camera derriere lui) aux deux cases : block pull sur blocs noirs, vert fessiers/ischios/lombaires visible"
-  },
-  {
-   "mouvement": "souleve-de-terre-partiel-prise-snatch (homme)",
-   "identifiant": "souleve-de-terre-partiel-prise-snatch",
-   "athlete": "homme",
-   "motif": "1er refus (lot38) : meme probleme : geste et prise snatch corrects mais vert de face sur quadriceps/abdos en case 2",
-   "planche": "lot38/souleve-de-terre-partiel-prise-snatch.png",
-   "strategieSuivante": "lot39 : VUE DE DOS aux deux cases, prise snatch large, blocs noirs"
-  },
-  {
-   "mouvement": "mollets-a-la-presse (homme)",
-   "identifiant": "mollets-a-la-presse",
-   "athlete": "homme",
-   "motif": "5e refus (lot38) : genoux toujours flechis et vert sur tibias ; talons debordants jamais dessines",
-   "planche": "lot38/mollets-a-la-presse.png",
-   "strategieSuivante": "lot39 : derniere tentative texte : genoux a 180 degres verrouilles, plante seule sur la plaque, talon PENDU DANS LE VIDE case1 / talon MONTÉ case2 ; si echec : visuel simplifie soumis a l'utilisateur (decision)"
-  },
-  {
-   "mouvement": "squats-sautes (homme)",
-   "identifiant": "squats-sautes",
-   "athlete": "homme",
-   "motif": "1er refus (lot38) : bras tronques en moignons aux deux cases (artefact membre manquant)",
-   "planche": "lot38/squats-sautes.png",
-   "strategieSuivante": "lot39 : consigne BOTH ARMS FULLY VISIBLE with complete forearms and hands in both panels (bras ballants arrière case1, au-dessus de la tête case2)"
-  }
- ],
+ "aRefaire": [],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",

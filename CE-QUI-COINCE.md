@@ -1,21 +1,22 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 38
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 39
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**248 / 331** visuels validés, 83 restants) ; ce fichier ne contient que les points
+(**252 / 331** visuels validés, 79 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 4 planches encore refusées (je continue dessus au prochain tour)
+## 1. Plus aucune planche refusée 🎉 (état lot 39)
 
-| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
-|---|---|---|---|---|
-| **Soulevé de terre partiel (homme)** — 7 refus | lot38 : le GESTE block pull est enfin correct (départ sur blocs + lockout) mais de FACE le vert part sur quadriceps ; la chaîne postérieure n'est pas visible de face | pins, édition, blocs, « deadlift bottom » | **lot39 : VUE DE DOS** aux deux cases (block pull sur blocs noirs) | aucune |
-| **Soulevé de terre partiel prise snatch (homme)** — 1 refus | même problème : geste et prise snatch corrects, vert de face sur quadriceps/abdos | blocs noirs, prise large | **lot39 : VUE DE DOS** aux deux cases | aucune |
-| **Mollets à la presse (homme)** — 5 refus | genoux toujours fléchis, vert sur tibias, talons débordants jamais dessinés | presse 45°, genoux tendus, cases séparées, édition, talons débordants | lot39 : dernière tentative texte (genoux 180°, plante seule sur la plaque) ; **si échec : visuel simplifié soumis à votre décision** | oui si échec |
-| **Squats sautés (homme)** — 1 refus | bras tronqués en moignons aux deux cases (artefact membre manquant) | — | lot39 : « BOTH ARMS FULLY VISIBLE with complete forearms and hands » | aucune |
+`production/a-refaire.json` est **VIDE** : les 4 dernières refusées ont été résolues au
+lot 39 — les deux soulevés de terre partiels par la **VUE DE DOS** (block pull sur blocs
+noirs, vert chaîne postérieure enfin visible), mollets à la presse (genoux 180°, talons
+décollés de la plaque, 6 essai), squats sautés (bras entiers visibles).
+Leçons capitalisées (règles des futurs prompts) : deadlifts/rack pulls toujours DE DOS ;
+gestes unilatéraux ancre d'orientation ; haltères comptés explicitement ; format
+« EXACTLY TWO panels side by side landscape » ; vues de FACE pied de banc pour les
+développés haltères ; « EXACTLY ONE person per panel ».
 
-Clos ce tour : drop lunges fentes sautées (poids du corps, 1ᵉʳ refus effacé), développé
-haltères incliné pronation, élévations latérales incliné 30 (couché sur banc incliné),
-gainage planche femme, pompes inclinées, russian twist.
+Prochain bloc : **tabata au sol (24)**, puis piscine (guides 9 + protocoles 40) et aqua
+tabata (6). Aucune décision en attente de votre côté hors liste §3 historique.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

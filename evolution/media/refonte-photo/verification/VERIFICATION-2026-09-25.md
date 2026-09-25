@@ -461,3 +461,22 @@ valides relus**, **39 restent a relire**. **4 planches en attente** dans
 (1er) — tous deux en VUE DE DOS au lot 39 —, mollets-a-la-presse (5e, derniere tentative
 texte sinon decision utilisateur), squats-sautes (1er, bras entiers). Prochain lot 39 :
 ces 4 planches + 6 planches de tabata au sol (25).
+
+## 49. Lot 39 : les 4 dernieres refusees RESOLUES, a-refaire VIDE (meme tour)
+
+souleve-de-terre-partiel (8e essai) et souleve-de-terre-partiel-prise-snatch (2e) : VUE DE
+DOS aux deux cases, block pull sur blocs noirs — depart hanche basse buste 45 deg barre sur
+blocs, lockout debout blocs vides, vert fessiers/ischios/lombaires/trapezes VISIBLE :
+acceptes. mollets-a-la-presse (6e) : genoux 180 deg, plante seule sur la plaque, talon pendu
+case1 / talon monte case2 : accepte. squats-sautes (2e) : bras entiers visibles (ballants
+arriere puis au-dessus de la tete), saut decolle : accepte.
+**a-refaire.json VIDE** — plus aucune planche refusee. **Surface musculation TERMINEE :
+203 couples valides, 0 restant.**
+2 echecs generateur comptes dans le lot (reset workspace en plein tour + MAX_TOKENS).
+Feuilles : `verification/lot39b-01..02.jpg`.
+
+## 50. Couverture et suite (etat lot 39)
+
+**252 / 331 couples valides**, 79 restants (protocoles piscine 40, tabata au sol 24,
+piscine guides 9, aqua tabata 6). Relecture cumulative : **213 couples valides relus**,
+**39 restent a relire**. Prochain lot 40 : tabata au sol (24 restants), puis piscine.
