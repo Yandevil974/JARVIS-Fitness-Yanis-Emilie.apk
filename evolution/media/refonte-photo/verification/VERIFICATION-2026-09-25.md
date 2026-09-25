@@ -551,3 +551,26 @@ aqua tabata 6, tabata au sol 1). Relecture cumulative : **247 couples valides re
 Prochain lot 43 : squats-doux + battements-au-bord + marche-aquatique (replay) + 6 planches
 piscine guides (fractionne-nager, nage-statique-a-l-elastique, recup-complete-souffler,
 sprint-nager-a-fond, talons-fesses, + 1 protocole piscine).
+
+## 57. Lot 43 : squats-doux RESOLU, 8/8 acceptes, piscine guides TERMINEE (meme tour)
+
+squats-doux (2e essai) : FACE camera ancree aux deux cases, amplitude 45 deg, bras tendus
+devant, vert face des cuisses : **ACCEPT** -> a-refaire VIDE.
+Replays OK des 2 echecs transitoires du lot 42 : battements-au-bord (battement alterne,
+splash) et marche-aquatique (2 phases de pas). Acceptees aussi 5 : fractionne-nager
+(pull face a l'eau -> recovery respire), nage-statique-a-l-elastique (elastique JAUNE UN
+seul tendu, meme ancre aux deux cases, streamline -> traction), recup-complete-souffler
+(mains au bord, inspire poitrine levee -> expire relache), sprint-nager-a-fond (bras
+alternes au-dessus de l'eau, gros splash), talons-fesses (talons alternes aux fesses,
+vert ischios a travers l'eau).
+**Surface tabata au sol TERMINEE : 37/37. Surface piscine guides TERMINEE : 9/9.**
+Relecture batch 22 : 3/3 conformes (pullover-cable-bras-tendus, pullover-haltere-plat,
+pushdown-triceps-cable). Feuilles : `verification/lot43b.jpg`, `verification/lot43f-01..03.jpg`,
+`verification/relecture-22.jpg`.
+
+## 58. Couverture et suite (etat lot 43)
+
+**285 / 331 couples valides**, 46 restants (protocoles piscine 40, aqua tabata 6).
+Relecture cumulative : **258 couples valides relus**, **27 restent a relire**.
+**Aucune planche en attente** (a-refaire VIDE). Prochain lot 44 : 10 planches de
+protocoles piscine (féminines), puis aqua tabata (6).

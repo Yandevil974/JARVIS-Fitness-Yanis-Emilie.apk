@@ -1,19 +1,19 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 42
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 43
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**277 / 331** visuels validés, 54 restants) ; ce fichier ne contient que les points
+(**285 / 331** visuels validés, 46 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
-| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
-|---|---|---|---|---|
-| **Squats doux (homme)** — 1 refus | case 1 vue de FACE, case 2 vue de DOS 3/4 : cadrage qui saute au GIF | prompt « frontal camera » simple | **lot43 : ancrer FACE caméra aux DEUX cases** (visage + poitrine visibles dans les deux cases), amplitude 45°, bras tendus devant | aucune |
+**Aucune planche refusée en attente** : `production/a-refaire.json` est VIDE après le lot 43
+(squats-doux résolu du 2ᵉ essai, face caméra ancrée aux deux cases).
 
-Clos ce tour (lot 42) : **oiseau-chien RÉSOLU** (membres opposés, côtés caméra imposés),
-ponts-fessiers, repos-actif, respiration-profonde, squats-sumo ; premiers guides piscine
-femme : gainage au bord vertical et pompes au bord. 2 échecs transitoires du générateur
-(lecture de `maitre-femme.png`) sur battements-au-bord et marche-aquatique : replay lot 43.
+Clos ce tour (lot 43) : squats-doux RÉSOLU ; replays OK des 2 échecs transitoires
+(battements-au-bord, marche-aquatique) ; fractionné-nager, nage statique à l'élastique
+(élastique UN tendu même ancre), récup-complete-souffler, sprint-nager-à-fond,
+talons-fesses — **tabata au sol TERMINÉE 37/37 et piscine guides TERMINÉE 9/9**.
+Reste : protocoles piscine 40 + aqua tabata 6.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

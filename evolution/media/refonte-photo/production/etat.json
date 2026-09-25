@@ -4,21 +4,21 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 277,
-  "restants": 54,
+  "valides": 285,
+  "restants": 46,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
    "musculation": 203,
-   "tabata-au-sol": 36,
-   "piscine": 2
+   "tabata-au-sol": 37,
+   "piscine": 9
   },
   "restants_par_surface": {
-   "piscine": 7,
+   "piscine": 0,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
-   "tabata-au-sol": 1
+   "tabata-au-sol": 0
   }
  },
  "valides": [
@@ -298,65 +298,17 @@
   "respiration-profonde|homme",
   "squats-sumo|homme",
   "gainage-au-bord-vertical|femme",
-  "pompes-au-bord|femme"
+  "pompes-au-bord|femme",
+  "squats-doux|homme",
+  "battements-au-bord|femme",
+  "marche-aquatique|femme",
+  "fractionne-nager|femme",
+  "nage-statique-a-l-elastique|femme",
+  "recup-complete-souffler|femme",
+  "sprint-nager-a-fond|femme",
+  "talons-fesses|femme"
  ],
  "restants": [
-  {
-   "identifiant": "battements-au-bord",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Battements au bord"
-   ]
-  },
-  {
-   "identifiant": "fractionne-nager",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Fractionné — nager"
-   ]
-  },
-  {
-   "identifiant": "marche-aquatique",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Marche aquatique"
-   ]
-  },
-  {
-   "identifiant": "nage-statique-a-l-elastique",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Nage statique (à l'élastique)"
-   ]
-  },
-  {
-   "identifiant": "recup-complete-souffler",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Récup complète — souffler"
-   ]
-  },
-  {
-   "identifiant": "sprint-nager-a-fond",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Sprint — nager à fond"
-   ]
-  },
-  {
-   "identifiant": "talons-fesses",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Talons-fesses"
-   ]
-  },
   {
    "identifiant": "aqua-jogging-effort",
    "athlete": "femme",
@@ -1094,14 +1046,6 @@
    "surface": "tabata-aqua",
    "noms": [
     "Montées de genoux"
-   ]
-  },
-  {
-   "identifiant": "squats-doux",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Squats doux"
    ]
   }
  ]

@@ -1,14 +1,5 @@
 {
- "aRefaire": [
-  {
-   "mouvement": "squats-doux (homme)",
-   "identifiant": "squats-doux",
-   "athlete": "homme",
-   "motif": "1er refus (lot42) : case 1 vue de FACE mais case 2 vue de DOS 3/4 -> cadrage qui saute au GIF",
-   "planche": "lot42/squats-doux.png",
-   "strategieSuivante": "lot43 : ancrer FACE camera aux DEUX cases (visage et poitrine visibles dans les deux cases), amplitude douce 45 deg, bras tendus devant"
-  }
- ],
+ "aRefaire": [],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",
@@ -37,6 +28,7 @@
   "suspension-a-la-barre",
   "talon-vers-la-fesse-debout",
   "torsion-allongee",
-  "torsion-allongee-genoux"
+  "torsion-allongee-genoux",
+  "squats-doux|homme"
  ]
 }
