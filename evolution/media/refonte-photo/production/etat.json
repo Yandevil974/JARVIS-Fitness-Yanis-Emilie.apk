@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 195,
-  "restants": 136,
+  "valides": 201,
+  "restants": 130,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 148,
+   "musculation": 154,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 54,
+   "musculation": 48,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -62,6 +62,7 @@
   "curl-barre|homme",
   "curl-concentration|homme",
   "curl-haltere-supination-banc-scott-90|homme",
+  "curl-halteres-incline-supination|homme",
   "curl-halteres-incline|homme",
   "curl-halteres|femme",
   "curl-marteau-assis|homme",
@@ -80,6 +81,7 @@
   "developpe-couche-barre|homme",
   "developpe-couche-decline-prise-serree|homme",
   "developpe-couche-halteres|femme",
+  "developpe-couche-plat-inertie-depuis-les-pins|homme",
   "developpe-couche-prise-serree|homme",
   "developpe-couche-test-1rm|homme",
   "developpe-haltere-un-bras-debout|homme",
@@ -95,12 +97,14 @@
   "dips|homme",
   "drop-lunges-fentes-controlees|homme",
   "ecartes-cables-incline|homme",
+  "ecartes-halteres-decline|homme",
   "ecartes-halteres|homme",
   "echauffement-mise-en-route|homme",
   "echauffement-mobilite|homme",
   "echauffement-series-d-approche|homme",
   "elevations-laterales-assises-variante|homme",
   "elevations-laterales-assises|homme",
+  "elevations-laterales-coude-a-90|homme",
   "elevations-laterales-halteres|homme",
   "elevations-laterales-incline-30-face-au-banc|homme",
   "elevations-laterales-lean-away|homme",
@@ -174,6 +178,7 @@
   "pushdown-triceps-cable|homme",
   "releves-de-jambes-allongee|femme",
   "releves-de-jambes-allonge|homme",
+  "releves-de-jambes-incline|homme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
   "reverse-crunch|femme",
@@ -194,6 +199,7 @@
   "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
   "souleve-de-terre-roumain-barre|homme",
   "souleve-de-terre-roumain-halteres|homme",
+  "souleve-de-terre-roumain-unilateral-haltere|femme",
   "souleve-de-terre-test-1rm|homme",
   "souleve-de-terre|homme",
   "split-squat-barbell-pied-avant-sureleve|homme",
@@ -252,22 +258,6 @@
    ]
   },
   {
-   "identifiant": "developpe-couche-plat-inertie-depuis-les-pins",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé couché plat, inertie depuis les pins"
-   ]
-  },
-  {
-   "identifiant": "elevations-laterales-coude-a-90",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales coude à 90°"
-   ]
-  },
-  {
    "identifiant": "curl-scott-haltere-neutre",
    "athlete": "homme",
    "surface": "musculation",
@@ -292,14 +282,6 @@
    ]
   },
   {
-   "identifiant": "curl-halteres-incline-supination",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl haltères incliné, supination"
-   ]
-  },
-  {
    "identifiant": "leg-curl-machine",
    "athlete": "femme",
    "surface": "musculation",
@@ -321,14 +303,6 @@
    "surface": "musculation",
    "noms": [
     "Développé haltères décliné, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "ecartes-halteres-decline",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Écartés haltères décliné"
    ]
   },
   {
@@ -505,14 +479,6 @@
    ]
   },
   {
-   "identifiant": "souleve-de-terre-roumain-unilateral-haltere",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Soulevé de terre roumain unilatéral haltère"
-   ]
-  },
-  {
    "identifiant": "hip-thrust-unilateral-1-jambe",
    "athlete": "femme",
    "surface": "musculation",
@@ -526,14 +492,6 @@
    "surface": "musculation",
    "noms": [
     "Hip thrust unilatéral lesté"
-   ]
-  },
-  {
-   "identifiant": "releves-de-jambes-incline",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Relevés de jambes incliné"
    ]
   },
   {

@@ -251,10 +251,23 @@ Relecture batch 10 : 3/3 conformes (elliptique-mise-en-route, elliptique-recuper
 elliptique-retour-au-calme). Feuilles : `verification/lot29-01..04.jpg`,
 `verification/relecture-10.jpg`.
 
-## 30. Couverture et suite
+## 31. Lot 30 : photo de reference utilisateur (meme tour)
 
-Relus sur les treize tours : **182 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **195 valides** actuels, **38 restent à relire** (feuilles de 3, mêmes outils).
+Photo de reference du mountain climbers fournie par l'utilisateur (pose : hanches plus hautes
+que les epaules, pied plie leve sole vers l'arriere) encodee dans les prompts des deux cases.
+Acceptees 6 : elevations-laterales-coude-a-90 (RESOLU par cases simples separees puis
+assemblage : depart avant-bras horizontaux, fin goalpost, vert deltoïdes seul),
+releves-de-jambes-incline (plus de chaussures en double), developpe-couche-plat-inertie-depuis-les-pins,
+curl-halteres-incline-supination, ecartes-halteres-decline, souleve-de-terre-roumain-unilateral-haltere.
+Refusees 2 : mountain-climbers (8e refus : la pose de la photo est bien la, mais les deux cases
+gardent la meme jambe avant), developpe-incline-halteres (1er : un seul haltere a deux mains).
+Relecture batch 11 : 3/3 conformes (etirement-dans-l-encadrement-de-porte, etirement-des-flechisseurs,
+etirement-du-cobra). Feuilles : `verification/lot30b-01..03.jpg`, `verification/relecture-11.jpg`.
+
+## 32. Couverture et suite
+
+Relus sur les quatorze tours : **191 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **201 valides** actuels, **36 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

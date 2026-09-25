@@ -4,15 +4,15 @@ Liste demandée pour revue de votre côté. Tout le reste du flux tourne normale
 (**137 / 331** visuels validés, 194 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 3 planches encore refusées
+## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
 
-| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue | Décision attendue de vous |
+| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Mountain climbers (femme)** — 7 refus | aucune permutation de jambes obtenue | prompts permutés, éditions de planche et de case, cases séparées, proche/lointaine, cadrage imposé, éditions ancrées chaussures | suspendu à votre choix (question posée ce tour) | **OUI : (a) ultime essai vue de FACE (genou avant côté gauche puis droit de l'image), (b) vous me donnez une photo de référence, (c) visuel simplifié genou haut/genou bas sans alternance** |
-| **Élévations latérales coude à 90 (homme)** — 4 refus | case départ toujours bras tendus le long du corps (le reste est bon) | départs variés, géométrie, vert exclusif, sans texte | deux cases SIMPLES générées séparément (départ avant-bras horizontaux ; fin goalpost) puis assemblage | aucune |
-| **Relevés de jambes incliné (homme)** — 1 refus | paire de chaussures en double posée sous le banc en case 2 | — | régénération avec « les deux chaussures restent à ses pieds dans les deux cases, rien au sol » | aucune |
+| **Mountain climbers (femme)** — 8 refus | la permutation de jambes n'apparaît jamais, même avec votre photo de référence comme pose | tout : prompts, éditions, cases séparées, proche/lointaine, cadrage, photo | **vue de FACE** : case 1 genou avant du côté GAUCHE de l'image, case 2 du côté DROIT (le générateur sait gérer gauche/droite) ; si échec : visuel simplifié genou haut/genou bas, validé par vous | seulement si la vue de face échoue |
+| **Développé incliné haltères (femme)** — 1 refus | un seul haltère tenu à deux mains aux deux cases | — | « DEUX haltères séparés, UN dans chaque main, QUATRE disques visibles, les mains ne se touchent jamais » | aucune |
 
-Clos ce tour : 7 neuves acceptées (élastiques et poulies conformes aux règles de grée).
+Clos ce tour : élévations latérales coude à 90 (résolues par cases simples assemblées) et
+relevés de jambes incliné (chaussures uniques).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

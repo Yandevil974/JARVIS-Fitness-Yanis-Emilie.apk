@@ -6,22 +6,15 @@
    "mouvement": "mountain-climbers (femme)",
    "identifiant": "mountain-climbers",
    "athlete": "femme",
-   "motif": "7e refus : l'edition chaussures n'a pas permute ; decision utilisateur demandee",
-   "planche": "lot29/mountain-climbers.png"
+   "motif": "8e refus : meme avec la pose de votre photo de reference, les deux cases gardent la meme jambe avant",
+   "planche": "lot30/mountain-climbers.png"
   },
   {
-   "mouvement": "elevations-laterales-coude-a-90 (homme)",
-   "identifiant": "elevations-laterales-coude-a-90",
-   "athlete": "homme",
-   "motif": "4e refus : texte et halteres OK mais case depart encore bras tendus le long du corps",
-   "planche": "lot29/elevations-laterales-coude-a-90.png"
-  },
-  {
-   "mouvement": "releves-de-jambes-incline (homme)",
-   "identifiant": "releves-de-jambes-incline",
-   "athlete": "homme",
-   "motif": "1er refus : une paire de chaussures en double posee sous le banc en case 2",
-   "planche": "lot29/releves-de-jambes-incline.png"
+   "mouvement": "developpe-incline-halteres (femme)",
+   "identifiant": "developpe-incline-halteres",
+   "athlete": "femme",
+   "motif": "1er refus : un seul haltere tenu a deux mains aux deux cases",
+   "planche": "lot30/developpe-incline-halteres.png"
   }
  ],
  "verifieesEtAcceptees": [
