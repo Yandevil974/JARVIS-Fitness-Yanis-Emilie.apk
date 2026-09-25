@@ -4,8 +4,8 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 319,
-  "restants": 12,
+  "valides": 331,
+  "restants": 0,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
@@ -13,12 +13,13 @@
    "musculation": 203,
    "tabata-au-sol": 37,
    "piscine": 9,
-   "piscine-protocole": 34
+   "piscine-protocole": 40,
+   "tabata-aqua": 6
   },
   "restants_par_surface": {
    "piscine": 0,
-   "piscine-protocole": 6,
-   "tabata-aqua": 6,
+   "piscine-protocole": 0,
+   "tabata-aqua": 0,
    "tabata-au-sol": 0
   }
  },
@@ -341,123 +342,19 @@
   "talons-fesses-effort|femme",
   "aqua-jogging-effort|femme",
   "tabata-1-2-en-place|femme",
-  "tour-1-2-en-place|femme"
+  "tour-1-2-en-place|femme",
+  "nage-douce|femme",
+  "nage-douce-respiration|femme",
+  "echauffement-nage-douce|femme",
+  "echauffement-soigneux-nage-douce|femme",
+  "retour-au-calme-nage-douce|femme",
+  "retour-au-calme-nage-tres-douce|femme",
+  "aqua-jogging|femme",
+  "battements-de-jambes|femme",
+  "ciseaux-au-bord|femme",
+  "deplacements-lateraux|femme",
+  "gainage-vertical|femme",
+  "montees-de-genoux|femme"
  ],
- "restants": [
-  {
-   "identifiant": "echauffement-nage-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Échauffement — nage douce",
-    "Échauffement — nage douce",
-    "Échauffement — nage douce",
-    "Échauffement — nage douce"
-   ]
-  },
-  {
-   "identifiant": "echauffement-soigneux-nage-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Échauffement soigneux — nage douce",
-    "Échauffement soigneux — nage douce",
-    "Échauffement soigneux — nage douce"
-   ]
-  },
-  {
-   "identifiant": "nage-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Nage douce",
-    "Nage douce sur place",
-    "Nage douce sur place",
-    "Nage douce sur place"
-   ]
-  },
-  {
-   "identifiant": "nage-douce-respiration",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Nage douce + respiration",
-    "Nage douce + respiration"
-   ]
-  },
-  {
-   "identifiant": "retour-au-calme-nage-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce"
-   ]
-  },
-  {
-   "identifiant": "retour-au-calme-nage-tres-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce"
-   ]
-  },
-  {
-   "identifiant": "aqua-jogging",
-   "athlete": "femme",
-   "surface": "tabata-aqua",
-   "noms": [
-    "Aqua-jogging"
-   ]
-  },
-  {
-   "identifiant": "battements-de-jambes",
-   "athlete": "femme",
-   "surface": "tabata-aqua",
-   "noms": [
-    "Battements de jambes"
-   ]
-  },
-  {
-   "identifiant": "ciseaux-au-bord",
-   "athlete": "femme",
-   "surface": "tabata-aqua",
-   "noms": [
-    "Ciseaux au bord"
-   ]
-  },
-  {
-   "identifiant": "deplacements-lateraux",
-   "athlete": "femme",
-   "surface": "tabata-aqua",
-   "noms": [
-    "Déplacements latéraux"
-   ]
-  },
-  {
-   "identifiant": "gainage-vertical",
-   "athlete": "femme",
-   "surface": "tabata-aqua",
-   "noms": [
-    "Gainage vertical"
-   ]
-  },
-  {
-   "identifiant": "montees-de-genoux",
-   "athlete": "femme",
-   "surface": "tabata-aqua",
-   "noms": [
-    "Montées de genoux"
-   ]
-  }
- ]
+ "restants": []
 }

@@ -1,14 +1,5 @@
 {
- "aRefaire": [
-  {
-   "mouvement": "nage-douce (femme)",
-   "identifiant": "nage-douce",
-   "athlete": "femme",
-   "motif": "1er refus (lot44) : case 2 contient DEUX femmes (corps duplique), regle EXACTLY ONE person violee",
-   "planche": "lot44/nage-douce.png",
-   "strategieSuivante": "lot45 : regenere brasse douce avec ancre EXACTLY ONE woman, ONE head, ONE body per panel ; nage-douce-respiration generee dans le meme lot"
-  }
- ],
+ "aRefaire": [],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",
@@ -38,6 +29,8 @@
   "talon-vers-la-fesse-debout",
   "torsion-allongee",
   "torsion-allongee-genoux",
-  "squats-doux|homme"
+  "squats-doux|homme",
+  "nage-douce|femme",
+  "nage-douce-respiration|femme"
  ]
 }

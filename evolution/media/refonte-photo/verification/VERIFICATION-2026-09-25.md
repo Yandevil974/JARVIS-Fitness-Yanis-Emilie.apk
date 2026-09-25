@@ -605,3 +605,31 @@ Feuilles : `verification/lot44f-01..03.jpg`, `verification/relecture-23.jpg`.
 **24 restent a relire**. **1 planche en attente** : nage-douce (+ nage-douce-respiration
 a generer). Prochain lot 45 : nage-douce (ancre une seule femme), nage-douce-respiration,
 4 copies conformes depuis nage-douce, puis les 6 aqua tabata (plafond 10 generations).
+
+## 61. Lot 45 : nage douce RESOLUE, 331/331 COUPLES VALIDES (meme tour)
+
+nage-douce (2e essai) : ancre « EXACTLY ONE woman, ONE head, ONE body per panel » :
+brasse douce glide -> pull respire, UNE seule femme par case : **ACCEPT**.
+nage-douce-respiration (generee ce tour apres l'echec MAX_TOKENS du lot 44) : crawl tres
+lent, expire face a l'eau -> inspire tete tournee, vert flancs : **ACCEPT** (decalage decor
+-92 compense au recadrage).
+10 copies conformes : 4 protocoles « nage douce » (echauffements x2, retours au calme x2)
+depuis nage-douce ; 6 aqua tabata depuis leurs guides au meme geste (aqua-jogging,
+battements de jambes, ciseaux au bord, deplacements lateraux, gainage vertical,
+montees de genoux EFFORT).
+**ETAT FINAL : 331 / 331 couples valides, 0 restant, toutes surfaces confondues**
+(musculation 203, tabata sol 37, piscine guides 9, protocoles piscine 40, aqua tabata 6,
+etirements 29, elliptique 5, echauffement 3). a-refaire VIDE. verif-gifs : 331 GIFs
+controles, aucun valide sans GIF ; 2 orphelins historiques hors dossier gif (racine).
+Relecture batch 24 : 3/3 conformes (releves-de-jambes-allongee femme, incline homme,
+suspendu homme) ; note style : allongee femme case 1 sans vert -> style-a-reprendre (25).
+Feuilles : `verification/lot45f.jpg`, `verification/relecture-24.jpg`.
+
+## 62. Couverture et suite (etat lot 45 — JALON)
+
+**331 / 331 couples valides, 0 restant.** Index general : 331 vignettes.
+Relecture cumulative : **307 couples valides relus**, **24 restent a relire** (campagne
+poursuivie par feuilles de 3 aux lots suivants, en parallele du lot « style » des 25 GIF
+sans vert sur une case et de la livraison finale signee).
+Prochain tour : livraison finale (APK signe par la cle de l'utilisateur, images pleine
+resolution, lien raw unique) + poursuite relecture/style.

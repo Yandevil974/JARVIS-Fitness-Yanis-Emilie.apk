@@ -1,23 +1,26 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 44
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 45 — JALON 331/331
 
-Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**319 / 331** visuels validés, 12 restants) ; ce fichier ne contient que les points
+Liste demandée pour revue de votre côté. **331 / 331 visuels validés, 0 restant** :
+plus aucun exercice de l'app sans animation. Ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
-| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
-|---|---|---|---|---|
-| **Nage douce (femme)** — 1 refus | case 2 : DEUX femmes dans la même case (corps dupliqué) | prompt brasse douce standard | **lot45 : ancre « EXACTLY ONE woman, ONE head, ONE body per panel »** + même lot pour nage-douce-respiration (échec transitoire MAX_TOKENS au lot 44) | aucune |
+**Aucune** : `production/a-refaire.json` est VIDE (nage-douce résolue au 2ᵉ essai avec
+l'ancre « une seule femme par case », nage-douce-respiration acceptée du 1ᵉʳ coup).
 
-Clos ce tour (lot 44, protocoles piscine) : 8 planches acceptées (aqua-jogging sur place,
-ciseaux mains au bord, déplacements latéraux 4 m, montées de genoux EFFORT, étirements au
-bord, mobilité épaules, mobilité hanches/chevilles, repos) + **26 copies conformes** de GIF
-déjà validés pour les étapes de protocole qui décrivent le MÊME geste que leur guide
-(comme le fait l'app d'origine avec ses médias) : récupérations marchées, variantes EFFORT,
-échauffements, tours/tabatas en place, nage statique Z2, fractionné/sprint 1-6/1-8…
-Notes style : étirements-au-bord et repos sans vert mesuré ([0,0]) → `style-a-reprendre.json`
-(25 entrées) ; relecture-23 : relevés de jambes allongé homme case 1 sans vert → idem.
+## 1b. Chantiers ouverts (pas bloquants, planifiés)
+
+1. **Lot « style » des 25 GIF** ayant une case sans vert lime (`production/style-a-reprendre.json`) :
+   reprise sans toucher aux gestes, selon votre décision §3.
+2. **Relecture cumulative** : 307 couples relus, **24 restent à relire** (feuilles de 3).
+3. **Livraison finale** : APK signé (votre cle, jamais publiée), images pleine résolution,
+   lien raw unique — prochain tour après votre « suite ».
+
+Clos ce tour (lot 45) : nage-douce RÉSOLUE, nage-douce-respiration acceptée, 10 copies
+conformes (4 protocoles nage douce + 6 aqua tabata depuis leurs guides) → **toutes les
+surfaces terminées** : musculation 203, tabata sol 37, piscine guides 9, protocoles 40,
+aqua tabata 6, étirements 29, elliptique 5, échauffement 3.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

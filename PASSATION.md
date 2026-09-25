@@ -17,11 +17,11 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 | Tabata au sol | 37 | 0 ✅ |
 | Étirements | 29 | 0 ✅ |
 | Piscine (guides) | 9 | 0 ✅ |
-| Piscine (protocoles) | 34 | 6 |
-| Aqua Tabata | 0 | 6 |
+| Piscine (protocoles) | 40 | 0 ✅ |
+| Aqua Tabata | 6 | 0 ✅ |
 | Elliptique | 5 | 0 ✅ |
 | Échauffement | 3 | 0 ✅ |
-| **Total** | **319** | **12** |
+| **Total** | **331** | **0** |
 
 **25 septembre 2026 — reprise dans un nouveau chat : les mouvements déjà créés ont été
 vérifiés avant de produire.** 119 GIF livrés mesurés (`evolution/media/tools/verif-gifs.py` :

@@ -10,18 +10,19 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
 - Branche de travail **obligatoire** : `arena/01a0d6f5-jarvis-fitness-yanis-emilie-ap`
   (session Arena courante ; ne jamais pousser sur `main`, ne jamais créer d'autre branche).
-- Avancement : **319 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **12** : piscine (protocoles) 6 (famille « nage douce ») et aqua tabata 6.
+- Avancement : **331 / 331 animations validées — JALON : plus aucun exercice sans visuel** (`production/etat.json`, clé `chiffres`).
+  Restent **0**. Toutes surfaces terminées (musculation 203, tabata sol 37,
+  piscine guides 9, protocoles 40, aqua tabata 6, étirements 29, elliptique 5, échauffement 3).
   **Tabata au sol TERMINÉE (37/37), piscine guides TERMINÉE (9/9).** **Musculation TERMINÉE (203/203).**
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
 - **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
   (`verification/VERIFICATION-2026-09-25.md`) ; 7 gestes faux trouvés parmi les livrés
   (4 refaits et acceptés au lot 17 ; 3 retirés des valides ce tour : back-squat-barre-haute,
   back-squat-inertie-pause-complete, burpees) ; **24 couples restent à relire** (feuilles de 3,
-  295 déjà relus).
+  307 déjà relus).
   Style : 25 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
   à reprendre dans un lot dédié sans toucher aux gestes.
-- Index visuel numéroté : `review/index-general.jpg` (319 vignettes, régénéré à chaque lot).
+- Index visuel numéroté : `review/index-general.jpg` (331 vignettes, régénéré à chaque lot).
 
 ## 2. Ce que l'utilisateur a demandé (et qui ne change pas)
 
@@ -117,16 +118,12 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-1. **1 planche en attente** (`production/a-refaire.json`) : nage-douce (case 2 deux femmes au
-   lot 44 → lot 45 ancre « EXACTLY ONE woman, ONE head, ONE body per panel »), avec
-   nage-douce-respiration (échec transitoire MAX_TOKENS lot 44). Les 4 autres protocoles
-   restants (échauffements/retour au calme nage douce) seront des copies conformes de
-   nage-douce une fois résolue.
-   Lot 44 : 8 planches protocoles acceptées + 26 copies conformes de guides déjà validés
-   pour les étapes au même geste (comme l'app d'origine partage ses médias).
-   Surfaces TERMINÉES : musculation 203, tabata sol 37, piscine guides 9, étirements,
-   elliptique, échauffement. Restent : protocoles 6 + aqua tabata 6.
-   Lot 45 : nage-douce + nage-douce-respiration + 4 copies + 6 aqua tabata (plafond 10).
+1. **Aucune planche en attente** : `production/a-refaire.json` VIDE. **331/331 couples
+   valides** après lot 45 (nage-douce résolue au 2ᵉ essai, nage-douce-respiration du 1ᵉʳ,
+   10 copies conformes : 4 protocoles nage douce + 6 aqua tabata).
+   Prochain tour = **livraison finale** : APK signé avec VOTRE cle (jamais publiée, à
+   re-coller ; /tmp/rk.txt mode 0600), images pleine résolution, lien raw unique dans le
+   chat ; en parallèle lot « style » (25 GIF) et relecture des 24 couples restants.
    Résolus au lot 35 : tirage-vertical-prise-neutre (poignées parallèles) et mollets-unilateraux
    (pied libre croisé en l'air). Résolus au lot 34 : ab-wheel et extensions-triceps-barre-ez.
    Résolus au lot 33 : developpe-incline-halteres et tirage-vertical-prise-large.
