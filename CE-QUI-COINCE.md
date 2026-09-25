@@ -1,20 +1,20 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 32
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 33
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**216 / 331** visuels validés, 115 restants) ; ce fichier ne contient que les points
+(**223 / 331** visuels validés, 108 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Développé incliné haltères (femme)** — 3 refus | lot32 en cases séparées : case 1 ambiguë, case 2 un seul haltère à deux mains | verrous texte, cases séparées + assemblage PIL | **vue de FACE pied de banc** (caméra dans l'axe des pieds) : les deux haltères séparés à gauche et à droite du buste ; sinon ÉDITION de la case 2 seule | aucune |
-| **Tirage vertical prise large (homme)** — 1 refus | génération en grille 2×2 : têtes coupées, barre absente en case 2 | — | consigne de format explicite : EXACTLY TWO panels side by side, paysage 2:1, têtes et barre entières aux deux cases, câble tendu poulie haute→barre | aucune |
-| **Ab wheel / roulette (homme)** — 1 refus | gestes corrects mais orientation inversée entre les cases (tête à gauche puis à droite) | — | ancre d'orientation « head faces LEFT in BOTH panels » | aucune |
+| **Ab wheel / roulette (homme)** — 2 refus | lot33 : case 1 = deux personnages (corps dupliqué), case 2 correcte | ancre d'orientation (lot32), planche paysage | **lot34 : « EXACTLY ONE person per panel »**, aucun second personnage, tête à gauche aux deux cases | aucune |
+| **Extensions triceps barre EZ (homme)** — retirée à la relecture | orientation de la tête inversée entre les deux cases (l'échange PIL du lot32 avait corrigé l'ordre des cases, pas l'orientation) | cases inversées puis échange PIL | **lot34 : régénération complète** avec ancre « head faces LEFT in BOTH panels », départ barre au front / fin bras tendus | aucune |
 
-Clos ce tour : extensions triceps barre EZ (cases générées inversées, échangées par PIL),
-leg curl machine, relevés de jambes, face pull élastique, tractions prise large,
-développé militaire depuis les pins. Mountain climbers restait clos au lot 31 (vue de FACE).
+Clos ce tour : **developpé incliné haltères RÉSOLU (4ᵉ refus) par la vue de FACE pied de
+banc** (deux haltères séparés de part et d'autre du buste) ; **tirage vertical prise large
+RÉSOLU** par la consigne de format 2 panneaux paysage ; kickback poulie, hip thrust
+unilatéral lesté, pallof press poulie, pushdown triceps, curl Scott neutre, leg press.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

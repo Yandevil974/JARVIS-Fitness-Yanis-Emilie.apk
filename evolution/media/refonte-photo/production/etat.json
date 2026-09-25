@@ -4,19 +4,19 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 216,
-  "restants": 115,
+  "valides": 223,
+  "restants": 108,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 169,
+   "musculation": 176,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 33,
-   "piscine-protocole": 40,
+   "musculation": 26,
    "piscine": 9,
+   "piscine-protocole": 40,
    "tabata-aqua": 6,
    "tabata-au-sol": 27
   }
@@ -38,6 +38,7 @@
   "back-squat-inertie-pause-complete|homme",
   "back-squat-test-1rm|homme",
   "back-squat|homme",
+  "barre-au-front-pushdown-triceps|homme",
   "bird-dog|femme",
   "bras-tendu-contre-la-poitrine|homme",
   "bras-tendu-contre-le-mur|homme",
@@ -71,6 +72,7 @@
   "curl-poulie-basse|homme",
   "curl-scott-barre-ez-pronation|homme",
   "curl-scott-barre-ez-supination|homme",
+  "curl-scott-haltere-neutre|homme",
   "curl-scott-haltere-prise-neutre|homme",
   "curl-zottman-assis|homme",
   "curl-zottman-un-bras-banc-scott|homme",
@@ -91,6 +93,7 @@
   "developpe-halteres-assis|homme",
   "developpe-halteres-plat|homme",
   "developpe-incline-barre|homme",
+  "developpe-incline-halteres|femme",
   "developpe-militaire-debout|homme",
   "developpe-militaire-halteres-assis-test-3-5-reps|femme",
   "developpe-militaire-halteres-assis|femme",
@@ -123,7 +126,6 @@
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
   "extension-triceps-a-la-poulie|femme",
-  "extensions-triceps-barre-ez|homme",
   "extensions-triceps-poulie|homme",
   "extensions-triceps-pullover-barre-ez|homme",
   "face-pull-a-l-elastique|femme",
@@ -154,10 +156,12 @@
   "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
   "hip-thrust-barre|femme",
   "hip-thrust-unilateral-1-jambe|femme",
+  "hip-thrust-unilateral-leste|femme",
   "hip-thrust-unilateral|femme",
   "jackknife-sur-swiss-ball|homme",
   "jumping-jacks|homme",
   "kickback-a-l-elastique|femme",
+  "kickback-a-la-poulie-drop-set-final|femme",
   "kickback-a-la-poulie|femme",
   "lean-away-pull-ups|homme",
   "leg-curl-allonge-1-1-4-en-haut|homme",
@@ -168,6 +172,7 @@
   "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
   "leg-curl-machine|femme",
   "leg-extension|homme",
+  "leg-press|homme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
   "mobilite-des-epaules|homme",
@@ -178,6 +183,7 @@
   "mountain-climbers|femme",
   "mountain-climbers|homme",
   "pallof-press-a-l-elastique|femme",
+  "pallof-press-a-la-poulie|femme",
   "pigeon-assis|homme",
   "pompes-inclinees-mains-surelevees|femme",
   "pompes|homme",
@@ -227,6 +233,7 @@
   "talon-vers-la-fesse-debout|homme",
   "tirage-horizontal-a-la-poulie|femme",
   "tirage-vertical-lean-away|homme",
+  "tirage-vertical-prise-large|homme",
   "torsion-allongee-genoux|homme",
   "torsion-allongee|homme",
   "tractions-prise-large|homme",
@@ -241,35 +248,11 @@
  ],
  "restants": [
   {
-   "identifiant": "barre-au-front-pushdown-triceps",
+   "identifiant": "ab-wheel-roulette",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
-    "Barre au front (pushdown triceps)"
-   ]
-  },
-  {
-   "identifiant": "drop-lunges-fentes-sautees-controlees",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Drop lunges (fentes sautées contrôlées)"
-   ]
-  },
-  {
-   "identifiant": "curl-scott-haltere-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Scott haltère neutre"
-   ]
-  },
-  {
-   "identifiant": "curl-scott-90-haltere-supination",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Scott 90° haltère supination"
+    "Ab wheel (roulette)"
    ]
   },
   {
@@ -281,11 +264,11 @@
    ]
   },
   {
-   "identifiant": "squat-cycliste",
+   "identifiant": "curl-scott-90-haltere-supination",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
-    "Squat cycliste"
+    "Curl Scott 90° haltère supination"
    ]
   },
   {
@@ -294,17 +277,6 @@
    "surface": "musculation",
    "noms": [
     "Développé haltères décliné, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "developpe-incline-halteres",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Développé incliné haltères",
-    "Développé haltères incliné 30°",
-    "Développé haltères incliné 45°",
-    "Développé haltères incliné"
    ]
   },
   {
@@ -332,19 +304,19 @@
    ]
   },
   {
-   "identifiant": "respiration-diaphragmatique",
+   "identifiant": "drop-lunges-fentes-sautees-controlees",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
-    "Respiration diaphragmatique"
+    "Drop lunges (fentes sautées contrôlées)"
    ]
   },
   {
-   "identifiant": "kickback-a-la-poulie-drop-set-final",
-   "athlete": "femme",
+   "identifiant": "elevations-laterales",
+   "athlete": "homme",
    "surface": "musculation",
    "noms": [
-    "Kickback à la poulie — drop set final"
+    "Élévations latérales"
    ]
   },
   {
@@ -358,11 +330,11 @@
    ]
   },
   {
-   "identifiant": "elevations-laterales",
+   "identifiant": "extensions-triceps-barre-ez",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
-    "Élévations latérales"
+    "Extensions triceps barre EZ"
    ]
   },
   {
@@ -398,38 +370,6 @@
    ]
   },
   {
-   "identifiant": "hip-thrust-unilateral-leste",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Hip thrust unilatéral lesté"
-   ]
-  },
-  {
-   "identifiant": "releves-de-jambes-suspendu",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Relevés de jambes suspendu"
-   ]
-  },
-  {
-   "identifiant": "tirage-vertical-prise-large",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Tirage vertical prise large"
-   ]
-  },
-  {
-   "identifiant": "leg-press",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Leg press"
-   ]
-  },
-  {
    "identifiant": "leg-press-unilateral",
    "athlete": "homme",
    "surface": "musculation",
@@ -454,27 +394,19 @@
    ]
   },
   {
-   "identifiant": "tirage-vertical-prise-neutre",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Tirage vertical prise neutre"
-   ]
-  },
-  {
-   "identifiant": "pallof-press-a-la-poulie",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Pallof press à la poulie"
-   ]
-  },
-  {
-   "identifiant": "souleve-de-terre-partiel-prise-snatch",
+   "identifiant": "releves-de-jambes-suspendu",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
-    "Soulevé de terre partiel, prise snatch"
+    "Relevés de jambes suspendu"
+   ]
+  },
+  {
+   "identifiant": "respiration-diaphragmatique",
+   "athlete": "homme",
+   "surface": "musculation",
+   "noms": [
+    "Respiration diaphragmatique"
    ]
   },
   {
@@ -486,19 +418,11 @@
    ]
   },
   {
-   "identifiant": "tirage-vertical-prise-pronation",
+   "identifiant": "souleve-de-terre-partiel-prise-snatch",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
-    "Tirage vertical prise pronation"
-   ]
-  },
-  {
-   "identifiant": "ab-wheel-roulette",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Ab wheel (roulette)"
+    "Soulevé de terre partiel, prise snatch"
    ]
   },
   {
@@ -510,37 +434,27 @@
    ]
   },
   {
-   "identifiant": "aqua-jogging-sur-place",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
+   "identifiant": "squat-cycliste",
+   "athlete": "homme",
+   "surface": "musculation",
    "noms": [
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place"
+    "Squat cycliste"
    ]
   },
   {
-   "identifiant": "mobilite-epaules-aquatique",
+   "identifiant": "tirage-vertical-prise-neutre",
    "athlete": "femme",
-   "surface": "piscine-protocole",
+   "surface": "musculation",
    "noms": [
-    "Mobilité épaules aquatique",
-    "Mobilité épaules aquatique",
-    "Mobilité épaules aquatique"
+    "Tirage vertical prise neutre"
    ]
   },
   {
-   "identifiant": "marche-aquatique",
-   "athlete": "femme",
-   "surface": "piscine",
+   "identifiant": "tirage-vertical-prise-pronation",
+   "athlete": "homme",
+   "surface": "musculation",
    "noms": [
-    "Marche aquatique"
+    "Tirage vertical prise pronation"
    ]
   },
   {
@@ -552,21 +466,11 @@
    ]
   },
   {
-   "identifiant": "ciseaux-au-bord",
+   "identifiant": "fractionne-nager",
    "athlete": "femme",
-   "surface": "tabata-aqua",
+   "surface": "piscine",
    "noms": [
-    "Ciseaux au bord"
-   ]
-  },
-  {
-   "identifiant": "etirements-au-bord",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Étirements au bord",
-    "Étirements au bord",
-    "Étirements au bord"
+    "Fractionné — nager"
    ]
   },
   {
@@ -578,64 +482,11 @@
    ]
   },
   {
-   "identifiant": "pompes-au-bord",
+   "identifiant": "marche-aquatique",
    "athlete": "femme",
    "surface": "piscine",
    "noms": [
-    "Pompes au bord"
-   ]
-  },
-  {
-   "identifiant": "retour-au-calme",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Retour au calme"
-   ]
-  },
-  {
-   "identifiant": "mobilite-hanches-chevilles",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Mobilité hanches / chevilles",
-    "Mobilité hanches / chevilles",
-    "Mobilité hanches / chevilles"
-   ]
-  },
-  {
-   "identifiant": "recup-complete-souffler",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Récup complète — souffler"
-   ]
-  },
-  {
-   "identifiant": "deplacements-lateraux-4-m",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)"
-   ]
-  },
-  {
-   "identifiant": "nage-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Nage douce",
-    "Nage douce sur place",
-    "Nage douce sur place",
-    "Nage douce sur place"
+    "Marche aquatique"
    ]
   },
   {
@@ -647,24 +498,19 @@
    ]
   },
   {
-   "identifiant": "recup-entre-tabatas",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Récup entre tabatas",
-    "Récup entre tabatas",
-    "Récup entre tabatas",
-    "Récup entre tabatas",
-    "Récup entre tabatas",
-    "Récup entre tabatas"
-   ]
-  },
-  {
-   "identifiant": "talons-fesses",
+   "identifiant": "pompes-au-bord",
    "athlete": "femme",
    "surface": "piscine",
    "noms": [
-    "Talons-fesses"
+    "Pompes au bord"
+   ]
+  },
+  {
+   "identifiant": "recup-complete-souffler",
+   "athlete": "femme",
+   "surface": "piscine",
+   "noms": [
+    "Récup complète — souffler"
    ]
   },
   {
@@ -676,35 +522,11 @@
    ]
   },
   {
-   "identifiant": "fractionne-nager",
+   "identifiant": "talons-fesses",
    "athlete": "femme",
    "surface": "piscine",
    "noms": [
-    "Fractionné — nager"
-   ]
-  },
-  {
-   "identifiant": "montees-de-genoux",
-   "athlete": "femme",
-   "surface": "tabata-aqua",
-   "noms": [
-    "Montées de genoux"
-   ]
-  },
-  {
-   "identifiant": "recup-active-marche-aquatique",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique",
-    "Récup active — marche aquatique"
+    "Talons-fesses"
    ]
   },
   {
@@ -724,41 +546,19 @@
    ]
   },
   {
-   "identifiant": "echauffement-marche-aquatique",
+   "identifiant": "aqua-jogging-sur-place",
    "athlete": "femme",
    "surface": "piscine-protocole",
    "noms": [
-    "Échauffement — marche aquatique",
-    "Échauffement — marche aquatique",
-    "Échauffement — marche aquatique",
-    "Échauffement — marche aquatique",
-    "Échauffement — marche aquatique",
-    "Échauffement — marche aquatique"
-   ]
-  },
-  {
-   "identifiant": "recup-marche-aquatique",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Récup — marche aquatique",
-    "Récup — marche aquatique"
-   ]
-  },
-  {
-   "identifiant": "echauffement-battements-au-bord",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Échauffement — battements au bord"
-   ]
-  },
-  {
-   "identifiant": "echauffement-battements-mobilite",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Échauffement — battements + mobilité"
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place"
    ]
   },
   {
@@ -810,119 +610,19 @@
    ]
   },
   {
-   "identifiant": "recup-complete-souffler-au-bord",
+   "identifiant": "deplacements-lateraux-4-m",
    "athlete": "femme",
    "surface": "piscine-protocole",
    "noms": [
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord",
-    "Récup complète — souffler au bord"
-   ]
-  },
-  {
-   "identifiant": "pompes-au-bord-effort",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT",
-    "Pompes au bord — EFFORT"
-   ]
-  },
-  {
-   "identifiant": "gainage-vertical-au-bord",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Gainage vertical au bord",
-    "Gainage vertical au bord",
-    "Gainage vertical au bord",
-    "Gainage vertical au bord",
-    "Gainage vertical au bord",
-    "Gainage vertical au bord",
-    "Gainage vertical au bord",
-    "Gainage vertical au bord",
-    "Gainage vertical au bord"
-   ]
-  },
-  {
-   "identifiant": "retour-au-calme-nage-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce",
-    "Retour au calme — nage douce"
-   ]
-  },
-  {
-   "identifiant": "retour-au-calme-nage-tres-douce",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce",
-    "Retour au calme — nage très douce"
-   ]
-  },
-  {
-   "identifiant": "retour-au-calme-mobilite",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Retour au calme + mobilité"
-   ]
-  },
-  {
-   "identifiant": "retour-au-calme-respiration",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Retour au calme + respiration"
-   ]
-  },
-  {
-   "identifiant": "recup-courte-marche",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche",
-    "Récup courte — marche"
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)"
    ]
   },
   {
@@ -939,6 +639,35 @@
     "Déplacements latéraux (4 m) — EFFORT",
     "Déplacements latéraux (4 m) — EFFORT",
     "Déplacements latéraux (4 m) — EFFORT"
+   ]
+  },
+  {
+   "identifiant": "echauffement-battements-au-bord",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — battements au bord"
+   ]
+  },
+  {
+   "identifiant": "echauffement-battements-mobilite",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — battements + mobilité"
+   ]
+  },
+  {
+   "identifiant": "echauffement-marche-aquatique",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique"
    ]
   },
   {
@@ -963,37 +692,29 @@
    ]
   },
   {
-   "identifiant": "nage-douce-respiration",
+   "identifiant": "etirements-au-bord",
    "athlete": "femme",
    "surface": "piscine-protocole",
    "noms": [
-    "Nage douce + respiration",
-    "Nage douce + respiration"
+    "Étirements au bord",
+    "Étirements au bord",
+    "Étirements au bord"
    ]
   },
   {
-   "identifiant": "nage-statique-douce",
+   "identifiant": "gainage-vertical-au-bord",
    "athlete": "femme",
    "surface": "piscine-protocole",
    "noms": [
-    "Nage statique douce",
-    "Nage statique douce"
-   ]
-  },
-  {
-   "identifiant": "talons-fesses-effort",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT",
-    "Talons-fesses — EFFORT"
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord"
    ]
   },
   {
@@ -1013,6 +734,26 @@
    ]
   },
   {
+   "identifiant": "mobilite-epaules-aquatique",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique"
+   ]
+  },
+  {
+   "identifiant": "mobilite-hanches-chevilles",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles"
+   ]
+  },
+  {
    "identifiant": "montees-de-genoux-effort",
    "athlete": "femme",
    "surface": "piscine-protocole",
@@ -1026,6 +767,46 @@
     "Montées de genoux — EFFORT",
     "Montées de genoux — EFFORT",
     "Montées de genoux — EFFORT"
+   ]
+  },
+  {
+   "identifiant": "nage-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage douce",
+    "Nage douce sur place",
+    "Nage douce sur place",
+    "Nage douce sur place"
+   ]
+  },
+  {
+   "identifiant": "nage-douce-respiration",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage douce + respiration",
+    "Nage douce + respiration"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage statique douce",
+    "Nage statique douce"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-z2",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2/Z3"
    ]
   },
   {
@@ -1057,42 +838,6 @@
     "Nager — fractionné 8/10",
     "Nager — fractionné 9/10",
     "Nager — fractionné 10/10"
-   ]
-  },
-  {
-   "identifiant": "recup-marche",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche",
-    "Récup — marche"
-   ]
-  },
-  {
-   "identifiant": "nage-statique-z2",
-   "athlete": "femme",
-   "surface": "piscine-protocole",
-   "noms": [
-    "Nage statique Z2",
-    "Nage statique Z2",
-    "Nage statique Z2",
-    "Nage statique Z2/Z3"
    ]
   },
   {
@@ -1130,6 +875,127 @@
     "Nager sprint 10/12",
     "Nager sprint 11/12",
     "Nager sprint 12/12"
+   ]
+  },
+  {
+   "identifiant": "pompes-au-bord-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT"
+   ]
+  },
+  {
+   "identifiant": "recup-active-marche-aquatique",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique"
+   ]
+  },
+  {
+   "identifiant": "recup-complete-souffler-au-bord",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord"
+   ]
+  },
+  {
+   "identifiant": "recup-courte-marche",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche"
+   ]
+  },
+  {
+   "identifiant": "recup-entre-tabatas",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas"
+   ]
+  },
+  {
+   "identifiant": "recup-marche",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche"
+   ]
+  },
+  {
+   "identifiant": "recup-marche-aquatique",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup — marche aquatique",
+    "Récup — marche aquatique"
    ]
   },
   {
@@ -1257,6 +1123,56 @@
    ]
   },
   {
+   "identifiant": "retour-au-calme",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-mobilite",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme + mobilité"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-nage-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-nage-tres-douce",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-respiration",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme + respiration"
+   ]
+  },
+  {
    "identifiant": "tabata-1-2-en-place",
    "athlete": "femme",
    "surface": "piscine-protocole",
@@ -1270,6 +1186,22 @@
     "Tabata 2/4 — en place",
     "Tabata 3/4 — en place",
     "Tabata 4/4 — en place"
+   ]
+  },
+  {
+   "identifiant": "talons-fesses-effort",
+   "athlete": "femme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT"
    ]
   },
   {
@@ -1305,6 +1237,14 @@
    ]
   },
   {
+   "identifiant": "ciseaux-au-bord",
+   "athlete": "femme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Ciseaux au bord"
+   ]
+  },
+  {
    "identifiant": "deplacements-lateraux",
    "athlete": "femme",
    "surface": "tabata-aqua",
@@ -1321,19 +1261,11 @@
    ]
   },
   {
-   "identifiant": "repos-actif",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
+   "identifiant": "montees-de-genoux",
+   "athlete": "femme",
+   "surface": "tabata-aqua",
    "noms": [
-    "Repos actif"
-   ]
-  },
-  {
-   "identifiant": "fentes-arriere",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Fentes arrière"
+    "Montées de genoux"
    ]
   },
   {
@@ -1345,35 +1277,11 @@
    ]
   },
   {
-   "identifiant": "dips-au-bord",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Dips au bord"
-   ]
-  },
-  {
-   "identifiant": "dead-bug",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Dead bug"
-   ]
-  },
-  {
    "identifiant": "burpees-simplifies",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
     "Burpees simplifiés"
-   ]
-  },
-  {
-   "identifiant": "chaise-douce",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Chaise douce"
    ]
   },
   {
@@ -1385,19 +1293,11 @@
    ]
   },
   {
-   "identifiant": "oiseau-chien",
+   "identifiant": "chaise-douce",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
-    "Oiseau-chien"
-   ]
-  },
-  {
-   "identifiant": "mountain-climbers-lents",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Mountain climbers lents"
+    "Chaise douce"
    ]
   },
   {
@@ -1409,27 +1309,27 @@
    ]
   },
   {
-   "identifiant": "squats-doux",
+   "identifiant": "dead-bug",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
-    "Squats doux"
+    "Dead bug"
    ]
   },
   {
-   "identifiant": "ponts-fessiers",
+   "identifiant": "dips-au-bord",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
-    "Ponts fessiers"
+    "Dips au bord"
    ]
   },
   {
-   "identifiant": "montees-de-genoux",
+   "identifiant": "fentes-arriere",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
-    "Montées de genoux"
+    "Fentes arrière"
    ]
   },
   {
@@ -1438,23 +1338,6 @@
    "surface": "tabata-au-sol",
    "noms": [
     "High knees"
-   ]
-  },
-  {
-   "identifiant": "pompes-inclinees",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Pompes inclinées"
-   ]
-  },
-  {
-   "identifiant": "planche-laterale-g",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Planche latérale G",
-    "Planche latérale D"
    ]
   },
   {
@@ -1474,6 +1357,14 @@
    ]
   },
   {
+   "identifiant": "montees-de-genoux",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Montées de genoux"
+   ]
+  },
+  {
    "identifiant": "montees-sur-mollets",
    "athlete": "homme",
    "surface": "tabata-au-sol",
@@ -1482,11 +1373,19 @@
    ]
   },
   {
-   "identifiant": "pompes-au-mur",
+   "identifiant": "mountain-climbers-lents",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
-    "Pompes au mur"
+    "Mountain climbers lents"
+   ]
+  },
+  {
+   "identifiant": "oiseau-chien",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Oiseau-chien"
    ]
   },
   {
@@ -1506,6 +1405,47 @@
    ]
   },
   {
+   "identifiant": "planche-laterale-g",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Planche latérale G",
+    "Planche latérale D"
+   ]
+  },
+  {
+   "identifiant": "pompes-au-mur",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Pompes au mur"
+   ]
+  },
+  {
+   "identifiant": "pompes-inclinees",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Pompes inclinées"
+   ]
+  },
+  {
+   "identifiant": "ponts-fessiers",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Ponts fessiers"
+   ]
+  },
+  {
+   "identifiant": "repos-actif",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Repos actif"
+   ]
+  },
+  {
    "identifiant": "respiration-profonde",
    "athlete": "homme",
    "surface": "tabata-au-sol",
@@ -1519,6 +1459,14 @@
    "surface": "tabata-au-sol",
    "noms": [
     "Russian twist"
+   ]
+  },
+  {
+   "identifiant": "squats-doux",
+   "athlete": "homme",
+   "surface": "tabata-au-sol",
+   "noms": [
+    "Squats doux"
    ]
   },
   {

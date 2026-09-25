@@ -3,28 +3,20 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "developpe-incline-halteres (femme)",
-   "identifiant": "developpe-incline-halteres",
-   "athlete": "femme",
-   "motif": "3e refus (lot32, cases separees) : case1 ambigue, case2 un seul haltere tenu a deux mains",
-   "planche": "lot32/developpe-incline-halteres.png",
-   "strategieSuivante": "lot33 : vue de FACE pied de banc (camera dans l axe des pieds), les deux halteres separes a gauche et a droite du buste, verrou de comptage ; sinon EDITION de la case 2 uniquement"
-  },
-  {
-   "mouvement": "tirage-vertical-prise-large (homme)",
-   "identifiant": "tirage-vertical-prise-large",
-   "athlete": "homme",
-   "motif": "1er refus (lot32) : generation en grille 2x2, tetes coupees, barre absente en case 2",
-   "planche": "lot32/tirage-vertical-prise-large.png",
-   "strategieSuivante": "lot33 : consigne de format explicite EXACTLY TWO panels side by side landscape 2:1, tetes et barre entieres dans les deux cases, cable tendu de la poulie haute a la barre"
-  },
-  {
    "mouvement": "ab-wheel-roulette (homme)",
    "identifiant": "ab-wheel-roulette",
    "athlete": "homme",
-   "motif": "1er refus (lot32) : gestes corrects mais orientation inversee entre les cases (tete a gauche puis a droite)",
-   "planche": "lot32/ab-wheel-roulette.png",
-   "strategieSuivante": "lot33 : ancre d orientation head faces LEFT in BOTH panels"
+   "motif": "2e refus (lot33) : case 1 = deux personnages (corps duplique), case 2 correcte",
+   "planche": "lot33/ab-wheel-roulette.png",
+   "strategieSuivante": "lot34 : consigne EXACTLY ONE person per panel, aucun second personnage ; ancre tete a gauche aux deux cases"
+  },
+  {
+   "mouvement": "extensions-triceps-barre-ez (homme)",
+   "identifiant": "extensions-triceps-barre-ez",
+   "athlete": "homme",
+   "motif": "retiree a la relecture-14 (acceptee lot32) : orientation de la tete inversee entre les deux cases (l'echange PIL avait corrige l'ordre, pas l'orientation)",
+   "planche": "lot32/extensions-triceps-barre-ez.png",
+   "strategieSuivante": "lot34 : regeneration complete avec ancre head faces LEFT in BOTH panels, depart barre au front / fin bras tendus"
   }
  ],
  "verifieesEtAcceptees": [

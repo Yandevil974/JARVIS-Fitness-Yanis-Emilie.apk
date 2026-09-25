@@ -321,3 +321,28 @@ valides relus**, **42 restent a relire**. **3 planches en attente** dans
 `production/a-refaire.json` : developpe-incline-halteres (3e refus), tirage-vertical-prise-large
 (1er), ab-wheel-roulette (1er). Prochain lot 33 : ces 3 planches (strategies ci-dessus)
 + 7 planches de musculation.
+
+## 37. Lot 33 : vue de FACE pied de banc et format 2 panneaux (meme tour)
+
+Developpe incline halteres : camera dans l'axe des pieds (vue de FACE du buste) ->
+les deux halteres restent separes a gauche et a droite du sternum aux deux cases :
+**4e refus efface, planche acceptee**. Tirage vertical prise large : consigne de format
+EXACTLY TWO panels paysage -> machine complete, tetes et barre entieres : **resolu**.
+Acceptees 8 : developpe-incline-halteres, tirage-vertical-prise-large,
+kickback-a-la-poulie-drop-set-final (poulie BASSE, sangle de cheville), hip-thrust-unilateral-leste,
+pallof-press-a-la-poulie (ancre poulie mi-hauteur, buste face camera), barre-au-front-pushdown-triceps,
+curl-scott-haltere-neutre, leg-press (presse 45 degres).
+Refusee 1 : ab-wheel-roulette (2e : case 1 = deux personnages, corps duplique).
+1 echec de generateur (0 image) compte dans le lot.
+Relecture batch 14 : 2/3 conformes ; **extensions-triceps-barre-ez RETIREE des valides**
+(orientation de tete inversee entre cases) -> a-refaire. Feuilles :
+`verification/lot33b-01..03.jpg`, `verification/relecture-14.jpg`.
+
+## 38. Couverture et suite (etat lot 33)
+
+**223 / 331 couples valides**, 108 restants (protocoles piscine 40, tabata au sol 27,
+piscine guides 9, aqua tabata 6, musculation 26). Relecture cumulative : **176 couples
+valides relus**, **47 restent a relire**. **2 planches en attente** dans
+`production/a-refaire.json` : ab-wheel-roulette (2e refus), extensions-triceps-barre-ez
+(retiree a la relecture). Prochain lot 34 : ces 2 planches + 8 planches (musculation 26
+puis tabata au sol 27).
