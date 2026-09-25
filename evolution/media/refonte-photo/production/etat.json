@@ -4,19 +4,19 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 119,
-  "restants": 212,
+  "valides": 123,
+  "restants": 208,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 72,
+   "musculation": 76,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 130,
-   "piscine-protocole": 40,
+   "musculation": 126,
    "piscine": 9,
+   "piscine-protocole": 40,
    "tabata-aqua": 6,
    "tabata-au-sol": 27
   }
@@ -71,6 +71,7 @@
   "echauffement-series-d-approche|homme",
   "elevations-laterales-assises-variante|homme",
   "elevations-laterales-assises|homme",
+  "elevations-laterales-incline-30-face-au-banc|homme",
   "elevations-laterales-lean-away|homme",
   "elliptique-fractionne|femme",
   "elliptique-mise-en-route|femme",
@@ -126,12 +127,15 @@
   "rowing-assis-etirement|homme",
   "rowing-assis-prise-neutre|homme",
   "rowing-barre-buste-penche-pronation|homme",
+  "rowing-barre-buste-penche|femme",
+  "safety-bar-squat-ou-barre-classique|homme",
   "souleve-de-terre-roumain-barre|homme",
   "souleve-de-terre-test-1rm|homme",
   "souleve-de-terre|homme",
   "split-squat-barbell-pied-avant-sureleve|homme",
   "squats|homme",
   "step-up-haut|homme",
+  "step-up-sur-banc-hauteur-du-genou|femme",
   "superman|homme",
   "suspension-a-la-barre|homme",
   "talon-vers-la-fesse-debout|homme",
@@ -152,14 +156,6 @@
    ]
   },
   {
-   "identifiant": "elevations-laterales-incline-30-face-au-banc",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales incliné 30° (face au banc)"
-   ]
-  },
-  {
    "identifiant": "triceps-extensions-halteres-banc-plat",
    "athlete": "homme",
    "surface": "musculation",
@@ -168,35 +164,11 @@
    ]
   },
   {
-   "identifiant": "step-up-sur-banc-hauteur-du-genou",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Step-up sur banc (hauteur du genou)"
-   ]
-  },
-  {
-   "identifiant": "safety-bar-squat-ou-barre-classique",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Safety bar squat (ou barre classique)"
-   ]
-  },
-  {
    "identifiant": "rowing-barre-buste-penche-test-3-5-reps",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Rowing barre buste penché — test (3-5 reps)"
-   ]
-  },
-  {
-   "identifiant": "rowing-barre-buste-penche",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing barre buste penché"
    ]
   },
   {

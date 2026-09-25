@@ -1,0 +1,27 @@
+== etirement-des-extenseurs|homme
+   noms: Étirement des extenseurs
+   prescription: s le bas avec l'autre main."],["🖐️","Étirement des extenseurs","20-30 s/côté","Bras tendu, paume vers le bas, tirez le dos de la main vers vous."]]},"abs":{"nom":"Abdominaux","exos":[["🐍","Étirement du cobra","20-30 s","Sur le ventre, poussez sur les mains pour cambrer légèrement le dos, regardez de
+== curl-barre|homme
+   noms: Curl barre
+   prescription: haltère un bras","tri",3,"8-10","3010",75,""],["Curl barre debout","bic",3,"8-10","3010",75,""]]},"J2":{"nom":"Bas du corps 1","muscles":["qua","isc","mol"],"exos":[["Front squat","qua",5,"6,6,6,8,8","4010",180,""],["Back squat inertie (pause complète)","qua",5,"6-8","3210",150,"Pause complète sur l
+== mountain-climbers|homme
+   noms: Mountain climbers
+   prescription: pliez davantage les genoux."],["Mountain climbers","tra",3,"30 s","—",45,"Gainage dynamique + dépense énergétique. Bassin bas, épaules au-dessus des poignets."]]},"J5":{"nom":"🍑 Rappel fessiers + abdominaux (séance légère)","muscles":["fes","moy","tra","abs"],"cardio":{"apres":"piscine","duree":30,"
+== crunch|homme
+   noms: Crunch
+   prescription: ile, bras et jambe alignés."],["Crunch à la poulie (ou au sol)","abs",3,"15","2011",45,"Enroulement de la colonne, pas de traction sur la nuque."]]},"J3":{"nom":"🍑 Fessiers + jambes","muscles":["fes","moy","qua","isc","mol","abs","tra"],"cardio":{"apres":"piscine","duree":20,"detail":"Option idéale 
+== grenouille-plantes-jointes|homme
+   noms: Grenouille (plantes jointes)
+   prescription: ,"add":{"nom":"Adducteurs","exos":[["🐸","Grenouille (plantes jointes)","30-45 s","Assis, plantes des pieds jointes, genoux écartés, poussez doucement les genoux vers le sol."]]},"mol":{"nom":"Mollets","exos":[["🧱","Étirement contre le mur","20-30 s/côté","En appui contre le mur, une jambe tendue der
+== releves-de-jambes-allonge|homme
+   noms: Relevés de jambes allongé
+   prescription: légère, technique parfaite."],["Relevés de jambes allongée","abs",3,"12","2011",45,"Lombaires plaquées : si le bas du dos décolle, pliez davantage les genoux."],["Mountain climbers","tra",3,"30 s","—",45,"Gainage dynamique + dépense énergétique. Bassin bas, épaules au-dessus des poignets."]]},"J5":{
+== step-up-haut|homme
+   noms: Step-up haut
+   prescription: sion horizontal","isc",4,"8-10","4010",90,""],["Step-up haut","qua",4,"8-10","4010",0,""],["Crunch à la poulie","abs",4,"12-15","3011",90,""],["Mollets assis","mol",4,"12-15","3020",75,""]]}}},"3":{"titre":"Accumulation 2 — Drop sets","type":"accumulation","macro":"A · Fondations","mois":"S. 9–12","
+== rowing-barre-buste-penche-pronation|homme
+   noms: Rowing barre buste penché, pronation
+   prescription: 3010",120,"Insister sur l'étirement en bas."],["Rowing barre buste penché, pronation","dos",5,"8-10","3010",0,""],["Rowing assis, prise neutre","dos",5,"10-12","3010",0,""],["Tirage vertical prise pronation","dos",5,"12-15","3010",120,""],["Relevés de jambes allongé","abs",4,"10-12","3010",60,""],["
+== echauffement-mise-en-route|homme
+   noms: Échauffement — mise en route
+   prescription: -8) + 90 s très facile. 5 min d'échauffement et 3 min de retour au calme."},"exos":[["Hip thrust barre","fes",3,"10-12","3112",90,"Rappel fessier : même technique que J1, charge confortable, focus sur la contraction."],["Soulevé de terre roumain haltères","isc",3,"10","3011",90,"Chaîne postérieure c

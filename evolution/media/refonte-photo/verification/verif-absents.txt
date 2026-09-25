@@ -1,0 +1,78 @@
+== abduction-assise-en-1-5-reps|femme
+   noms: Abduction assise en 1,5 reps
+   prescription: s","qua",3,"12","3011",75,""],["Abduction assise en 1,5 reps","moy",4,"15","2011",40,"1,5 reps : ouverture complète + demi-fermeture + réouverture. Volume ciblé moyen fessier."],["Clamshell à l'élastique","moy",3,"20/côté","2011",40,""],["Mollets debout unilatéraux","mol",4,"12-15","2112",45,"Mollet
+== abduction-assise-machine-ou-elastique|femme
+   noms: Abduction assise (machine ou élastique)
+   prescription: dez pas de la jambe au sol."],["Abduction assise (machine ou élastique)","moy",3,"20","2011",40,"Séries longues : le moyen fessier répond très bien aux reps élevées et à la brûlure."],["Clamshell à l'élastique","moy",3,"15/côté","2011",40,"Bassin stable, montée du genou seule. Activation pure du moy
+== abduction-assise-machine|femme
+   noms: Abduction assise machine
+   prescription: es fessiers et les ischios."],["Abduction assise machine","moy",4,"20","2011",40,""],["Clamshell à l'élastique","moy",3,"15/côté","2011",40,""],["Mollets assis","mol",3,"15-20","2112",45,"Soléaire : amplitude complète, 2 s en position étirée."],["Relevés de jambes","abs",3,"12","2011",45,""],["Gaina
+== abduction-hanche-a-l-elastique|femme
+   noms: Abduction hanche à l'élastique
+   prescription: ns hyperextension lombaire."],["Abduction hanche à l'élastique","moy",3,"20/côté","2011",45,"Séries longues, brûlure ciblée sur le moyen fessier."],["Kickback à l'élastique","fes",3,"15/côté","2011",45,"Volume fessier sans fatigue nerveuse."],["Dead bug","tra",3,"10/côté","3010",45,""],["Gainage pla
+== abduction-hanche-a-la-poulie-myo-reps|femme
+   noms: Abduction hanche à la poulie — myo-reps
+   prescription: "isc",4,"10-12","3011",60,""],["Abduction hanche à la poulie — myo-reps","moy",3,"12-15 + myo","2011",45,"Myo-reps : 1 série de 12-15 reps proche de l'échec, puis 4 mini-séries de 3-5 reps avec 15 s de repos. Moyen fessier = arrondi latéral."],["Kickback à la poulie — drop set final","fes",3,"12-15/
+== abduction-hanche-a-la-poulie|femme
+   noms: Abduction hanche à la poulie
+   prescription: "isc",3,"12-15","3011",60,""],["Abduction hanche à la poulie","moy",4,"15/côté","2011",45,"Moyen fessier : arrondi latéral et stabilité de hanche."],["Kickback à la poulie","fes",3,"15/côté","2011",45,""],["Fire hydrant à l'élastique","moy",3,"15/côté","2011",40,"Petit et moyen fessiers : galbe du h
+== abduction-hanche-debout-a-la-poulie|femme
+   noms: Abduction hanche debout à la poulie
+   prescription: s de décollage des hanches."],["Abduction hanche debout à la poulie","moy",3,"15/côté","2011",45,"Moyen fessier = arrondi latéral. Buste droit, aucune rotation du bassin, montée lente."],["Kickback à la poulie","fes",3,"15/côté","2011",45,"Grand fessier isolé : jambe légèrement fléchie, montée contr
+== back-extension-45-prise-snatch|homme
+   noms: Back extension 45°, prise snatch
+   prescription: quat","qua",4,"10/8/6","3010",90,"Drop set."],["Back extension 45°, prise snatch","lom",3,"10-12","3010",60,""],["Jackknife sur swiss ball","abs",3,"10-12","3010",60,""],["Mollets debout","mol",3,"10/8/6","3010",75,"Drop set."]]},"J3":{"nom":"Pectoraux & dos","muscles":["pec","dos","epP"],"exos":[["
+== back-squat-charge-moderee|femme
+   noms: Back squat (charge modérée)
+   prescription: ération des jambes."},"exos":[["Back squat (charge modérée)","qua",3,"10-12","3011",120,"Quadriceps contrôlés : ne cherchez pas la charge maximale, descendez sous la parallèle en gardant le buste droit."],["Hip thrust unilatéral","fes",3,"10/côté","2112",90,"Symétrie des fessiers : commencez par le 
+== clamshell-a-l-elastique|femme
+   noms: Clamshell à l'élastique
+   prescription: ps élevées et à la brûlure."],["Clamshell à l'élastique","moy",3,"15/côté","2011",40,"Bassin stable, montée du genou seule. Activation pure du moyen fessier."],["Mollets debout unilatéraux","mol",3,"15","2112",45,"Amplitude complète : talon qui descend bas, 1 s de contraction en haut."],["Reverse cr
+== dead-bug-avec-rotation|femme
+   noms: Dead bug avec rotation
+   prescription:  galbe du haut de la fesse."],["Dead bug avec rotation","tra",3,"12/côté","3010",45,"Transverse + obliques profonds : ventre plat et taille tenue."],["Gainage planche","abs",2,"45 s","—",45,""],["Pallof press à la poulie","tra",2,"12/côté","2010",45,""]]},"J2":{"nom":"💪 Haut du corps + ventre + card
+== developpe-couche-test-1rm|homme
+   noms: Développé couché — test 1RM
+   prescription: ","muscles":["pec","qua","isc","epA"],"exos":[["Développé couché — test 1RM","pec",5,"1-5","4010",180,"Testez votre record annuel en toute sécurité."],["Back squat — test 1RM","qua",5,"1-5","4010",180,""],["Soulevé de terre — test 1RM","isc",5,"1-5","4010",180,""],["Développé militaire — test 1RM","
+== developpe-militaire-halteres-assis-test-3-5-reps|femme
+   noms: Développé militaire haltères assis — test (3-5 reps)
+   prescription: ,"dos",5,"3-5","3011",180,""],["Développé militaire haltères assis — test (3-5 reps)","epA",4,"3-5","2011",150,""],["Tirage vertical prise large","dos",3,"10-12","2011",90,""],["Élévations latérales haltères","epL",3,"12-15","2011",45,""],["Curl haltères","bic",2,"12","2011",45,""],["Extension trice
+== developpe-militaire-halteres-assis|femme
+   noms: Développé militaire haltères assis
+   prescription: u bassin. Épaisseur du dos."],["Développé militaire haltères assis","epA",3,"10-12","2011",75,"Épaules dessinées : montez sans cambrer, abdominaux gainés."],["Élévations latérales haltères","epL",3,"15","2011",45,"Charge légère, montée jusqu'à l'horizontale, petit doigt légèrement plus haut. Épaule 
+== fentes-arriere-alternees|femme
+   noms: Fentes arrière alternées
+   prescription: d'appui légèrement fléchie."],["Fentes arrière alternées","fes",3,"10/jambe","3010",75,"Pas long et buste penché en avant = fessiers. Pas court et buste droit = quadriceps."],["Step-up sur banc (hauteur du genou)","qua",3,"10/jambe","2011",60,"Poussez avec le talon du pied sur le banc, ne vous aidez
+== fentes-avant-alternees|femme
+   noms: Fentes avant alternées
+   prescription: sc",3,"10/côté","3011",75,""],["Fentes avant alternées","fes",3,"10/jambe","3010",75,""],["Presse à cuisses pieds hauts","qua",3,"12","3011",75,"Pieds hauts et écartés sur le plateau : transfert du travail vers les fessiers et les ischios."],["Abduction assise machine","moy",4,"20","2011",40,""],["C
+== fentes-bulgares-pied-arriere-sureleve|femme
+   noms: Fentes bulgares (pied arrière surélevé)
+   prescription: sc",3,"10/côté","3011",75,""],["Fentes bulgares (pied arrière surélevé)","fes",4,"8-10/jambe","3010",90,"Buste penché en avant, grand pas : fessiers et ischios en priorité."],["Presse à cuisses pieds hauts","qua",3,"12","3011",75,""],["Abduction assise en 1,5 reps","moy",4,"15","2011",40,"1,5 reps :
+== glute-bridge-pieds-sur-banc|femme
+   noms: Glute bridge pieds sur banc
+   prescription: tion active idéale."},"exos":[["Glute bridge pieds sur banc","fes",3,"15","2012",60,"Contraction 2 s en haut, sans hyperextension lombaire."],["Abduction hanche à l'élastique","moy",3,"20/côté","2011",45,"Séries longues, brûlure ciblée sur le moyen fessier."],["Kickback à l'élastique","fes",3,"15/cô
+== hack-squat|homme
+   noms: Hack squat
+   prescription: ongé","isc",4,"10/8/6","3010",90,"Drop set."],["Hack squat","qua",4,"10/8/6","3010",90,"Drop set."],["Back extension 45°, prise snatch","lom",3,"10-12","3010",60,""],["Jackknife sur swiss ball","abs",3,"10-12","3010",60,""],["Mollets debout","mol",3,"10/8/6","3010",75,"Drop set."]]},"J3":{"nom":"Pec
+== kickback-a-la-poulie|femme
+   noms: Kickback à la poulie
+   prescription: on du bassin, montée lente."],["Kickback à la poulie","fes",3,"15/côté","2011",45,"Grand fessier isolé : jambe légèrement fléchie, montée contrôlée sans cambrer le bas du dos."],["Dead bug","tra",2,"10/côté","3010",45,"Transverse : lombaires plaquées au sol en permanence. Si le bas du dos décolle, r
+== leg-curl-allonge-1-1-4-en-haut|homme
+   noms: Leg curl allongé, 1 1/4 en haut
+   prescription: ],["Hack squat","qua",5,"8-10","3010",120,""],["Leg curl allongé, 1 1/4 en haut","isc",5,"4-6","3210",0,"Méthode 1 1/4 : demi-rep en plus en haut."],["Soulevé de terre roumain barre","isc",5,"8-10","3010",120,""],["Mollets debout","mol",5,"6-8","3011",0,""],["Mollets à la presse","mol",5,"8-10","301
+== leg-curl-allonge-pieds-pointes|homme
+   noms: Leg curl allongé, pieds pointés
+   prescription: "],["Leg press","qua",5,"8-10","3010",120,""],["Leg curl allongé, pieds pointés","isc",5,"6-8","4010",0,"Contracter les mollets."],["Leg curl allongé, pieds fléchis","isc",5,"6-8","4010",0,"Tirer les pieds (tibial antérieur)."],["Good morning debout","isc",5,"8-10","3010",0,"Léger si première fois."
+== leg-curl-machine-ou-swiss-ball-leg-curl|femme
+   noms: Leg curl machine (ou swiss-ball leg curl)
+   prescription: imal plutôt que quadriceps."],["Leg curl machine (ou swiss-ball leg curl)","isc",3,"12-15","3011",60,"Pointes de pieds vers vous, bassin plaqué, pas de décollage des hanches."],["Abduction hanche debout à la poulie","moy",3,"15/côté","2011",45,"Moyen fessier = arrondi latéral. Buste droit, aucune ro
+== mollets-assis|homme
+   noms: Mollets assis
+   prescription: oy",3,"15/côté","2011",40,""],["Mollets assis","mol",3,"15-20","2112",45,"Soléaire : amplitude complète, 2 s en position étirée."],["Relevés de jambes","abs",3,"12","2011",45,""],["Gainage latéral","tra",3,"30 s/côté","—",30,""]]},"J4":{"nom":"🔥 Full body + fessiers + cardio","muscles":["fes","isc",
+== rowing-assis-cable-unilateral|homme
+   noms: Rowing assis câble unilatéral
+   prescription: pé haltères plat","pec",4,"7-9","4010",90,""],["Rowing assis câble unilatéral","dos",4,"7-9","3011",90,""],["French press barre EZ","tri",3,"10-12","3010",75,""],["Curl Zottman","bic",3,"10-12","3010",75,""]]},"J2":{"nom":"Bas du corps 1","muscles":["qua","isc","abs"],"exos":[["Back squat barre haut
+== torsion-allongee-genoux|homme
+   noms: Torsion allongée genoux
+   prescription: , bras tendus, front au sol."],["🔄","Torsion allongée genoux","20-30 s/côté","Sur le dos, genoux pliés, basculez les jambes à gauche puis à droite."]]},"fes":{"nom":"Fessiers","exos":[["🕊️","Pigeon assis","30-45 s/côté","Assis, une cheville posée sur l'autre genou, penchez-vous doucement vers l'avan

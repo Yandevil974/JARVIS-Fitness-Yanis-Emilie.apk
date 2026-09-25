@@ -10,10 +10,15 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
 - Branche de travail **obligatoire** : `arena/01a0d51c-jarvis-fitness-yanis-emilie-ap`
   (ne jamais pousser sur `main`, ne jamais créer d'autre branche).
-- Avancement : **119 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **212** : musculation 130, piscine (protocoles) 40, tabata au sol 27,
+- Avancement : **123 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
+  Restent **208** : musculation 126, piscine (protocoles) 40, tabata au sol 27,
   piscine (guides) 9, aqua tabata 6.
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
+- **Vérification des mouvements déjà créés (25/09)** : 48 couples relus case par case
+  (`verification/VERIFICATION-2026-09-25.md`) ; 4 gestes faux trouvés parmi les livrés,
+  refaits et acceptés au lot 17 ; **75 couples restent à relire** (feuilles de 3).
+  Style : 21 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
+  à reprendre dans un lot dédié sans toucher aux gestes.
 - Index visuel numéroté : `review/index-general.jpg` (119 vignettes, régénéré à chaque lot).
 
 ## 2. Ce que l'utilisateur a demandé (et qui ne change pas)
@@ -55,6 +60,9 @@ Ne jamais supprimer ni renommer la racine du dépôt.
 |---|---|
 | `evolution/media/tools/refonte-sheet.py` | planche 2 cases → GIF animé (découpe au séparateur clair, recalage du décor, même fenêtre, hauteur 440, 500 ms). Options `--athlete homme\|femme --out <dossier gif> --sheet <jpg de contrôle>` |
 | `evolution/media/tools/verif-ids.py` | **garde-fou obligatoire** : refuse toute planche dont le nom n'est pas un identifiant réel de `production/plan.json`. À lancer **avant** la conversion |
+| `evolution/media/tools/verif-gifs.py` | mesure les GIF livrés (2 images, 500 ms, 440 px, identifiant du plan, vert des deux cases, quasi-doubles, zone du vert) : `verification/verif-gifs.json` |
+| `evolution/media/tools/feuilles-verif.py` | imprime les DEUX cases d'un GIF en pleine définition, 3 mouvements par feuille : l'outil de relecture humaine imposé |
+| `evolution/media/tools/index-general.py` | régénère `review/index-general.jpg` (vignettes numérotées de tous les valides) |
 | `production/plan.json` | 343 lignes = **331 couples (mouvement × athlète)** ; 17 gestes existent chez les deux athlètes et demandent deux GIF |
 | `production/prescriptions.json` | le geste exact lu dans l'APK livrée (source de tous les prompts) |
 | `production/etat.json` | valides / restants / chiffres par surface |
@@ -107,11 +115,16 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-1. Reprendre les **3 planches en attente** listées dans `production/a-refaire.json`
-   (`aRefaire`) : back-extension-horizontal (banc horizontal), triceps-extensions-halteres
-   -banc-plat (coude qui plie, sinon le geste n'apparaît pas), elevations-laterales-incline
-   -30-face-au-banc (vert sur les **épaules**, pas la nuque).
-2. Continuer la musculation (130 restants, 101 homme / 29 femme), puis
+1. Reprendre les **2 planches en attente** listées dans `production/a-refaire.json`
+   (`aRefaire`), toutes deux déjà refusées DEUX fois : back-extension-horizontal
+   (banc **horizontal**, mains croisées sur la poitrine dès la case de départ) et
+   triceps-extensions-halteres-banc-plat (athlète **allongé à plat**, coudes qui plient).
+   `elevations-laterales-incline-30-face-au-banc` est acceptée depuis le lot 17
+   (vert sur les deltoïdes).
+2. Continuer la relecture des **75 couples déjà valides non relus** (feuilles de 3,
+   `feuilles-verif.py`), puis le lot « style » des 21 GIF sans vert sur une case
+   (`production/style-a-reprendre.json`).
+3. Continuer la musculation (126 restants), puis
    **tabata au sol (27)**, **piscine guides (9)**, **piscine protocoles (40)**,
    **aqua tabata (6)** — par lots de ≤ 10.
 3. Après chaque lot : convertir, relire, mettre à jour `etat.json`, `a-refaire.json`,

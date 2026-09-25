@@ -13,7 +13,7 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 
 | Surface | Faits et vérifiés | Restants |
 |---|---|---|
-| Musculation | 72 | 130 |
+| Musculation | 76 | 126 |
 | Tabata au sol | 10 | 27 |
 | Étirements | 29 | 0 ✅ |
 | Piscine (guides) | 0 | 9 |
@@ -21,7 +21,19 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 | Aqua Tabata | 0 | 6 |
 | Elliptique | 5 | 0 ✅ |
 | Échauffement | 3 | 0 ✅ |
-| **Total** | **119** | **212** |
+| **Total** | **123** | **208** |
+
+**25 septembre 2026 — reprise dans un nouveau chat : les mouvements déjà créés ont été
+vérifiés avant de produire.** 119 GIF livrés mesurés (`evolution/media/tools/verif-gifs.py` :
+2 images, 500 ms, 440 px, boucle, identifiant et athlète du plan, vert des deux cases,
+quasi-doubles) puis **38 relus case par case** en pleine définition
+(`evolution/media/tools/feuilles-verif.py`) : **4 gestes faux trouvés parmi les livrés**
+(développé couché test 1RM montré assis, leg curl 1 1/4 cases inversées, dead bug rotation
+sans position dead bug, grenouille sans la posture prescrite) — refaits, relus et acceptés
+au **lot 17** avec 4 mouvements neufs (123 / 331). Deux planches restent en 3ᵉ essai
+(`production/a-refaire.json`), **75 couples valides restent à relire**, et 21 GIF ont une
+case sans vert lime (`production/style-a-reprendre.json`, lot style dédié à venir).
+Détail mesuré : `evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md`.
 
 **Deux outils ajoutés à cette étape, qui changent la méthode** :
 

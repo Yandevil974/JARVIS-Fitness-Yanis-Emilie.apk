@@ -1,0 +1,9 @@
+== cobra-doux|homme
+   noms: Cobra doux
+   prescription: se / sangle abdominale","exos":[["🐍","Cobra doux","20-30 s","Sur le ventre, poussez sur les mains pour décoller légèrement la poitrine, sans cambrer les lombaires. Relâche la sangle abdominale après le gainage."],["🌬️","Respiration diaphragmatique allongée","1 min","Allongée, genoux pliés, inspirez 
+== etirement-contre-le-mur|homme
+   noms: Étirement contre le mur
+   prescription: ]]},"mol":{"nom":"Mollets","exos":[["🧱","Étirement contre le mur","20-30 s/côté","En appui contre le mur, une jambe tendue derrière (talon au sol), l'autre pliée, poussez le talon au sol."],["🪜","Mollet en escalier","20-30 s/côté","Avant-pied sur une marche, talon qui descend sous le niveau de la ma
+== respiration-diaphragmatique-allongee|homme
+   noms: Respiration diaphragmatique allongée
+   prescription:  abdominale après le gainage."],["🌬️","Respiration diaphragmatique allongée","1 min","Allongée, genoux pliés, inspirez en gonflant le ventre, expirez longuement en rentrant le nombril vers la colonne. 6 à 8 respirations."]]},"qua":{"nom":"Quadriceps","exos":[["🦵","Talon vers la fesse (debout)","20-3

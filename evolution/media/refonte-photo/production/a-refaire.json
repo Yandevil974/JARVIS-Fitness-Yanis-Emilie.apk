@@ -4,21 +4,15 @@
  "aRefaire": [
   {
    "mouvement": "back-extension-horizontal (homme)",
-   "planche": "lot15/back-extension-horizontal.png",
-   "motif": "mauvaise machine : banc incline a 45 degres au lieu d'un banc HORIZONTAL",
+   "planche": "lot17/back-extension-horizontal.png",
+   "motif": "2e refus : le banc reste INCLINE (banc a lombaires 45 degres) au lieu d'un banc HORIZONTAL, et le bras pend vers le sol en case de depart au lieu des mains croisees sur la poitrine",
    "prescription": "Back extension horizontal — banc horizontal, buste qui descend vers le sol puis remonte aligne"
   },
   {
    "mouvement": "triceps-extensions-halteres-banc-plat (homme)",
-   "planche": "lot16/triceps-extensions-halteres-banc-plat.png",
-   "motif": "le mouvement n'est pas montre : les DEUX cases ont les bras tendus, aucun abaissement des halteres derriere la tete",
+   "planche": "lot17/triceps-extensions-halteres-banc-plat.png",
+   "motif": "2e refus : l'athlete est ASSIS, buste vertical puis adosse, au lieu d'etre ALLONGE A PLAT sur le banc ; les coudes plient mais le geste lit un developpe assis",
    "prescription": "Triceps extensions halteres, banc plat — bras tendus au-dessus de la poitrine PUIS coudes plies, halteres descendus pres de la tete"
-  },
-  {
-   "mouvement": "elevations-laterales-incline-30-face-au-banc (homme)",
-   "planche": "lot16/elevations-laterales-incline-30-face-au-banc.png",
-   "motif": "le vert est pose sur la nuque/trapezes au lieu des EPAULES laterales",
-   "prescription": "Elevations laterales incline 30 face au banc — vert sur les deltoides lateraux uniquement"
   }
  ],
  "verifieesEtAcceptees": [
@@ -92,6 +86,38 @@
    "correction": "machine à tirage vertical (poulie HAUTE au-dessus de la tête, câble vertical, barre large, cale-cuisses) ; départ bras tendus vers le plafond, arrivée barre derrière la nuque ; les deux cases recadrées sous le MÊME angle de dos",
    "regle": "l'alias de l'app est « Rowing assis au cou » -> cible « Tirage vertical prise large ». C'est la CIBLE (le nom de l'app) qui décrit le geste et la machine, pas le nom d'origine.",
    "etat": "planche régénérée, relue et acceptée"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Developpe couche - test 1RM (homme)",
+   "signale_par": "auto-controle (relecture des 119 GIF livres, feuille verif-absents-04)",
+   "defaut": "l'athlete etait ASSIS sur le banc et poussait au-dessus de la tete : un developpe militaire assis, pas un developpe couche",
+   "correction": "planche lot17 refaite : allonge a plat sur le banc, prise en pronation mains SUR la barre, barre poussée au-dessus de la poitrine",
+   "etat": "planche relue et acceptee (lot 17)"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Leg curl allonge, 1 1/4 en haut (homme)",
+   "signale_par": "auto-controle (feuille verif-absents-07)",
+   "defaut": "cases INVERSEES (gauche = jambes flechies = fin) et banc incline au lieu d'allonge",
+   "correction": "planche lot17 refaite : gauche = jambes tendues, droite = talons aux fesses, vert sur les ischios des deux cases",
+   "etat": "planche relue et acceptee (lot 17)"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Dead bug avec rotation (femme)",
+   "signale_par": "auto-controle (feuille verif-absents-04)",
+   "defaut": "case de depart pieds au sol (pas de position dead bug), rotation absente",
+   "correction": "planche lot17 refaite : jambe en table-top, extension opposee bras/jambe, vert sur la taille",
+   "etat": "planche relue et acceptee (lot 17), rotation encore discrete : notee, non bloquante"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Grenouille (plantes jointes) (homme)",
+   "signale_par": "auto-controle (feuille verif-absents... echantillon-02)",
+   "defaut": "ni case ne montrait l'etirement prescrit : flexion debout jambes ecartees puis grenouille sur les avant-bras",
+   "correction": "planche lot17 refaite selon la prescription exacte : ASSIS, plantes des pieds jointes, genoux ecartes, genoux pousses vers le sol",
+   "etat": "planche relue et acceptee (lot 17)"
   }
  ],
  "reglesPrompt": [
