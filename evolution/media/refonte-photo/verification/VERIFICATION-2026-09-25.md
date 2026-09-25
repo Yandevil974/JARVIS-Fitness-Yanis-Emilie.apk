@@ -204,10 +204,22 @@ Relecture batch 6 : 3/3 conformes (developpe-halteres-assis-prise-neutre, develo
 developpe-incline-barre ; note cosmetique vert case fin seule sur 2 d'entre elles).
 Feuilles : `verification/lot25-01..03.jpg`, `verification/relecture-06.jpg`.
 
-## 22. Couverture et suite
+## 23. Lot 26 : le developpe un bras RESOLU (meme tour)
 
-Relus sur les neuf tours : **141 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **166 valides** actuels, **53 restent à relire** (feuilles de 3, mêmes outils).
+Strategie gagnante : editer la case 2 reussie pour abaisser le bras a l'epaule → case 1
+garantie coherent (meme decor, meme cote, manche verte conservee) : developpe-haltere-un-bras-debout
+ACCEPTÉ apres 5 refus. Neuves acceptees 7 : curl-barre-debout, curl-marteau, curl-zottman,
+squat-cycliste-squat-complet, drop-lunges-fentes-controlees, reverse-crunch, crunch-a-la-poulie-ou-au-sol.
+Refusees 2 : elevations-laterales-coude-a-90 (case depart bras tendus au lieu de coudes 90
+avant-bras devant), mountain-climbers (4e refus : meme jambe avant aux deux cases malgre
+proche/lointaine). Relecture batch 7 : 3/3 conformes (developpe-militaire-debout,
+developpe-militaire-test-1rm, dips ; note vert case fin seule sur le test-1rm).
+Feuilles : `verification/lot26-01..04.jpg`, `verification/relecture-07.jpg`.
+
+## 24. Couverture et suite
+
+Relus sur les dix tours : **152 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **174 valides** actuels, **50 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

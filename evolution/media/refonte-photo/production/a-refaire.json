@@ -3,18 +3,18 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "developpe-haltere-un-bras-debout (homme)",
-   "identifiant": "developpe-haltere-un-bras-debout",
-   "athlete": "homme",
-   "motif": "5e refus : case 1 assemblee = haltere dans la mauvaise main (bras vert vide)",
-   "planche": "lot25/developpe-haltere-un-bras-debout.png"
-  },
-  {
    "mouvement": "mountain-climbers (femme)",
    "identifiant": "mountain-climbers",
    "athlete": "femme",
-   "motif": "3e refus : cases separees = saut d'angle et de decor, echange de jambes illisible",
-   "planche": "lot25/mountain-climbers.png"
+   "motif": "4e refus : planche unique, jambes proche/lointaine : encore la meme jambe avant aux deux cases",
+   "planche": "lot26/mountain-climbers.png"
+  },
+  {
+   "mouvement": "elevations-laterales-coude-a-90 (homme)",
+   "identifiant": "elevations-laterales-coude-a-90",
+   "athlete": "homme",
+   "motif": "1er refus : case depart bras tendus le long du corps au lieu de coudes a 90 degres avant-bras devant",
+   "planche": "lot26/elevations-laterales-coude-a-90.png"
   }
  ],
  "verifieesEtAcceptees": [

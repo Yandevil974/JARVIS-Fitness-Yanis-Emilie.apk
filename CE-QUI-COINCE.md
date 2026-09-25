@@ -8,11 +8,11 @@ bloquants ou qui demandent une décision.
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Développé haltère un bras debout (homme)** — 5 refus | cases séparées : la case 2 est bonne (manche verte, haltère en haut), la case 1 a mis l'haltère dans l'autre main | verts divers, édition, manche complète, cases séparées | **éditer la case 2 réussie** : « abaisse ce bras : coude plié, haltère posé sur l'épaule, garde la manche verte et tout le reste identique » → case 1 garantie cohérente | aucune |
-| **Mountain climbers (femme)** — 3 refus | cases séparées = saut d'angle/décor ; planche unique = jambes non échangées | prompt permuté, édition, cases séparées | planche UNIQUE avec jambes décrites par rapport à la caméra : case 1 « genou de la jambe PROCHE de la caméra », case 2 « genou de la jambe LOINTAINE, partiellement masqué par le torse » | aucune |
+| **Mountain climbers (femme)** — 4 refus | toujours la même jambe avant aux deux cases | prompt permuté, édition de planche, cases séparées, proche/lointaine en planche unique | deux cases SIMPLES générées séparément mais cadrage imposé identique (« vue de profil pure, tête au bord GAUCHE, pieds au bord DROIT ») puis assemblage ; si échec : dernier recours = planche où la case 2 est vue de l'AUTRE côté du corps | aucune |
+| **Élévations latérales coude à 90 (homme)** — 1 refus | case départ bras tendus le long du corps | prompt « coudes collés à 90° » | départ décrit géométriquement : « avant-bras HORIZONTAUX pointant vers l'avant, haltères devant le ventre, coudes au contact des flancs » | aucune |
 
-Clos ce tour : écartés câbles incliné et élévations latérales incliné 30° face au banc
-(refaits à votre demande, acceptés).
+Clos ce tour : développé haltère un bras debout — résolu après 5 refus par ÉDITION de la case 2
+réussie (méthode à réutiliser pour tout refus asymétrique).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

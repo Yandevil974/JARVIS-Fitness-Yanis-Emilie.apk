@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 166,
-  "restants": 165,
+  "valides": 174,
+  "restants": 157,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 119,
+   "musculation": 127,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 83,
+   "musculation": 75,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -53,14 +53,17 @@
   "clamshell-a-l-elastique|femme",
   "cobra-doux|homme",
   "coude-au-dessus-de-la-tete|homme",
+  "crunch-a-la-poulie-ou-au-sol|femme",
   "crunch-a-la-poulie|homme",
   "crunch-sur-swiss-ball|homme",
   "crunch|homme",
+  "curl-barre-debout|homme",
   "curl-barre|homme",
   "curl-concentration|homme",
   "curl-haltere-supination-banc-scott-90|homme",
   "curl-halteres-incline|homme",
   "curl-marteau-assis|homme",
+  "curl-marteau|homme",
   "curl-poulie-basse-supination|homme",
   "curl-poulie-basse|homme",
   "curl-scott-barre-ez-pronation|homme",
@@ -68,12 +71,14 @@
   "curl-scott-haltere-prise-neutre|homme",
   "curl-zottman-assis|homme",
   "curl-zottman-un-bras-banc-scott|homme",
+  "curl-zottman|homme",
   "dead-bug-avec-rotation|femme",
   "dead-bug|femme",
   "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
   "developpe-couche-halteres|femme",
   "developpe-couche-test-1rm|homme",
+  "developpe-haltere-un-bras-debout|homme",
   "developpe-halteres-assis-neutre-pronation|homme",
   "developpe-halteres-assis-prise-neutre|homme",
   "developpe-halteres-assis|homme",
@@ -83,6 +88,7 @@
   "developpe-militaire-halteres-assis|femme",
   "developpe-militaire-test-1rm|homme",
   "dips|homme",
+  "drop-lunges-fentes-controlees|homme",
   "ecartes-cables-incline|homme",
   "echauffement-mise-en-route|homme",
   "echauffement-mobilite|homme",
@@ -152,6 +158,7 @@
   "releves-de-jambes-allonge|homme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
+  "reverse-crunch|femme",
   "rowing-assis-au-cou|homme",
   "rowing-assis-cable-unilateral|homme",
   "rowing-assis-etirement|homme",
@@ -172,6 +179,7 @@
   "split-squat-barbell-pied-avant-sureleve|homme",
   "split-squat-poulie-basse|homme",
   "squat-au-poids-du-corps|homme",
+  "squat-cycliste-squat-complet|homme",
   "squats|homme",
   "step-up-haut|homme",
   "step-up-sur-banc-hauteur-du-genou|femme",
@@ -191,14 +199,6 @@
  ],
  "restants": [
   {
-   "identifiant": "curl-barre-debout",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl barre debout"
-   ]
-  },
-  {
    "identifiant": "extensions-triceps-barre-ez",
    "athlete": "homme",
    "surface": "musculation",
@@ -215,14 +215,6 @@
    ]
   },
   {
-   "identifiant": "developpe-haltere-un-bras-debout",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltère un bras debout"
-   ]
-  },
-  {
    "identifiant": "bulgarian-split-squat-halteres",
    "athlete": "femme",
    "surface": "musculation",
@@ -236,22 +228,6 @@
    "surface": "musculation",
    "noms": [
     "Mountain climbers"
-   ]
-  },
-  {
-   "identifiant": "squat-cycliste-squat-complet",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Squat cycliste (squat complet)"
-   ]
-  },
-  {
-   "identifiant": "drop-lunges-fentes-controlees",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Drop lunges (fentes contrôlées)"
    ]
   },
   {
@@ -292,22 +268,6 @@
    "surface": "musculation",
    "noms": [
     "Élévations latérales coude à 90°"
-   ]
-  },
-  {
-   "identifiant": "crunch-a-la-poulie-ou-au-sol",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Crunch à la poulie (ou au sol)"
-   ]
-  },
-  {
-   "identifiant": "reverse-crunch",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Reverse crunch"
    ]
   },
   {
@@ -356,22 +316,6 @@
    "surface": "musculation",
    "noms": [
     "Leg curl machine"
-   ]
-  },
-  {
-   "identifiant": "curl-marteau",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl marteau"
-   ]
-  },
-  {
-   "identifiant": "curl-zottman",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Zottman"
    ]
   },
   {
