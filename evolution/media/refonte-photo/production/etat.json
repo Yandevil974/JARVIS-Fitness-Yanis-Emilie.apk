@@ -4,19 +4,19 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 201,
-  "restants": 130,
+  "valides": 210,
+  "restants": 121,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 154,
+   "musculation": 163,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 48,
-   "piscine": 9,
+   "musculation": 39,
    "piscine-protocole": 40,
+   "piscine": 9,
    "tabata-aqua": 6,
    "tabata-au-sol": 27
   }
@@ -84,6 +84,7 @@
   "developpe-couche-plat-inertie-depuis-les-pins|homme",
   "developpe-couche-prise-serree|homme",
   "developpe-couche-test-1rm|homme",
+  "developpe-derriere-la-nuque|homme",
   "developpe-haltere-un-bras-debout|homme",
   "developpe-halteres-assis-neutre-pronation|homme",
   "developpe-halteres-assis-prise-neutre|homme",
@@ -105,6 +106,7 @@
   "elevations-laterales-assises-variante|homme",
   "elevations-laterales-assises|homme",
   "elevations-laterales-coude-a-90|homme",
+  "elevations-laterales-halteres-myo-reps|femme",
   "elevations-laterales-halteres|homme",
   "elevations-laterales-incline-30-face-au-banc|homme",
   "elevations-laterales-lean-away|homme",
@@ -120,6 +122,7 @@
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
   "extension-triceps-a-la-poulie|femme",
+  "extensions-triceps-poulie|homme",
   "extensions-triceps-pullover-barre-ez|homme",
   "face-pull-a-la-poulie|femme",
   "fentes-alternees|homme",
@@ -136,15 +139,18 @@
   "french-press-haltere-un-bras|homme",
   "french-press-poulie-basse|homme",
   "front-squat|homme",
+  "gainage-lateral-dynamique|femme",
   "gainage-planche|homme",
   "glute-bridge-en-1-5-reps|femme",
   "glute-bridge-pieds-sur-banc|femme",
+  "glute-ham-raise|homme",
   "goblet-squat|femme",
   "good-morning-debout|homme",
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
   "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
   "hip-thrust-barre|femme",
+  "hip-thrust-unilateral-1-jambe|femme",
   "hip-thrust-unilateral|femme",
   "jackknife-sur-swiss-ball|homme",
   "jumping-jacks|homme",
@@ -160,10 +166,12 @@
   "leg-extension|homme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
+  "mobilite-des-epaules|homme",
   "mollet-en-escalier|homme",
   "mollets-assis|homme",
   "mollets-debout-unilateraux|femme",
   "mollets-debout|homme",
+  "mountain-climbers|femme",
   "mountain-climbers|homme",
   "pallof-press-a-l-elastique|femme",
   "pigeon-assis|homme",
@@ -220,6 +228,7 @@
   "tractions-pull-up|homme",
   "tractions-supination-chin-up|homme",
   "transition|femme",
+  "triceps-dips|homme",
   "triceps-extensions-halteres-banc-plat|homme",
   "une-jambe-tendue-une-pliee|homme",
   "wood-chop-poulie-haute|homme"
@@ -239,14 +248,6 @@
    "surface": "musculation",
    "noms": [
     "Barre au front (pushdown triceps)"
-   ]
-  },
-  {
-   "identifiant": "mountain-climbers",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Mountain climbers"
    ]
   },
   {
@@ -314,22 +315,6 @@
    ]
   },
   {
-   "identifiant": "developpe-derriere-la-nuque",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé derrière la nuque"
-   ]
-  },
-  {
-   "identifiant": "mobilite-des-epaules",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Mobilité des épaules"
-   ]
-  },
-  {
    "identifiant": "developpe-incline-halteres",
    "athlete": "femme",
    "surface": "musculation",
@@ -373,14 +358,6 @@
    ]
   },
   {
-   "identifiant": "triceps-dips",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Triceps dips"
-   ]
-  },
-  {
    "identifiant": "kickback-a-la-poulie-drop-set-final",
    "athlete": "femme",
    "surface": "musculation",
@@ -389,27 +366,11 @@
    ]
   },
   {
-   "identifiant": "gainage-lateral-dynamique",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Gainage latéral dynamique"
-   ]
-  },
-  {
    "identifiant": "face-pull-a-l-elastique",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Face pull à l'élastique"
-   ]
-  },
-  {
-   "identifiant": "elevations-laterales-halteres-myo-reps",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales haltères — myo-reps"
    ]
   },
   {
@@ -447,14 +408,6 @@
    ]
   },
   {
-   "identifiant": "extensions-triceps-poulie",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Extensions triceps poulie"
-   ]
-  },
-  {
    "identifiant": "gainage-lateral",
    "athlete": "femme",
    "surface": "musculation",
@@ -468,22 +421,6 @@
    "surface": "musculation",
    "noms": [
     "Gainage planche"
-   ]
-  },
-  {
-   "identifiant": "glute-ham-raise",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Glute ham raise"
-   ]
-  },
-  {
-   "identifiant": "hip-thrust-unilateral-1-jambe",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Hip thrust unilatéral (1 jambe)"
    ]
   },
   {

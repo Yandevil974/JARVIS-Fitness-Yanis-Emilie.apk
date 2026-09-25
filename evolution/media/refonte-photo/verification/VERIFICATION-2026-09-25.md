@@ -264,11 +264,36 @@ gardent la meme jambe avant), developpe-incline-halteres (1er : un seul haltere 
 Relecture batch 11 : 3/3 conformes (etirement-dans-l-encadrement-de-porte, etirement-des-flechisseurs,
 etirement-du-cobra). Feuilles : `verification/lot30b-01..03.jpg`, `verification/relecture-11.jpg`.
 
-## 32. Couverture et suite
+## 32. Couverture et suite (état lot 30)
 
-Relus sur les quatorze tours : **191 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **201 valides** actuels, **36 restent à relire** (feuilles de 3, mêmes outils).
-Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
-tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
-`production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),
-good-morning-debout (2ᵉ refus), rowing-haltere-un-bras (1ᵉʳ refus).
+Relus sur les quinze tours : **194 couples** dont 171 parmi les valides actuels.
+Production lot 30 : **201 / 331** ; restants 130 (musculation 48, protocoles piscine 40,
+tabata au sol 27, piscine guides 9, aqua tabata 6). **2 planches en attente** dans
+`production/a-refaire.json` : mountain-climbers (8ᵉ refus) et developpe-incline-halteres
+(1ᵉ refus).
+
+## 33. Lot 31 : la vue de FACE résout mountain climbers (même tour)
+
+Stratégie convenue avec l'utilisateur appliquée : mountain climbers dessiné **de face**,
+caméra basse devant l'athlète — case 1 genou avant du côté GAUCHE de l'image, case 2 du
+côté DROIT : la permutation de jambes devient enfin lisible. **9ᵉ refus effacé, planche
+acceptée.**
+Acceptées 9 : mountain-climbers (RÉSOLU), triceps-dips, extensions-triceps-poulie,
+elevations-laterales-halteres-myo-reps (reps partielles mi-hauteur→épaules),
+gainage-lateral-dynamique (hanches basses→ligne droite), hip-thrust-unilateral-1-jambe,
+glute-ham-raise (machine GHR, torse horizontal→vertical), developpe-derriere-la-nuque,
+mobilite-des-epaules (bâton cuisses→derrière le dos).
+Refusée 1 : developpe-incline-halteres (2ᵉ refus : case 1 correcte deux haltères séparés,
+case 2 un seul haltère à deux mains) → lot 32 en cases simples séparées + assemblage PIL.
+Relecture batch 12 : 3/3 conformes (etirement-du-flechisseur-de-hanche-chevalier,
+etirement-du-piriforme-assis, fentes-alternees). Feuilles : `verification/lot31b-01..04.jpg`,
+`verification/relecture-12.jpg`.
+
+## 34. Couverture et suite (état lot 31)
+
+**210 / 331 couples valides**, 121 restants (musculation 39, protocoles piscine 40,
+tabata au sol 27, piscine guides 9, aqua tabata 6). Relecture cumulative : **171 couples
+valides relus**, **39 restent à relire** (feuilles de 3, mêmes outils, aucun raccourci
+vignette). **1 planche en attente** dans `production/a-refaire.json` :
+developpe-incline-halteres (2ᵉ refus). Prochain lot 32 : cette planche en cases simples
+séparées + assemblage PIL, puis poursuite musculation (39) selon le plan.

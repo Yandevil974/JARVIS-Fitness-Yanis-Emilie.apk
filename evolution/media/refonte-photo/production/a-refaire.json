@@ -3,18 +3,12 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "mountain-climbers (femme)",
-   "identifiant": "mountain-climbers",
-   "athlete": "femme",
-   "motif": "8e refus : meme avec la pose de votre photo de reference, les deux cases gardent la meme jambe avant",
-   "planche": "lot30/mountain-climbers.png"
-  },
-  {
    "mouvement": "developpe-incline-halteres (femme)",
    "identifiant": "developpe-incline-halteres",
    "athlete": "femme",
-   "motif": "1er refus : un seul haltere tenu a deux mains aux deux cases",
-   "planche": "lot30/developpe-incline-halteres.png"
+   "motif": "2e refus (lot31) : case1 correcte (deux halteres separes) mais case2 un seul haltere tenu a deux mains ; planche lot31 refusee",
+   "planche": "lot31/developpe-incline-halteres.png",
+   "strategieSuivante": "lot32 : deux cases SIMPLES generees separement (une par case, un haltere par main verrouille, quatre disques) puis assemblage PIL cote a cote (methode qui a resolu elevations-laterales-coude-a-90 au lot30)"
   }
  ],
  "verifieesEtAcceptees": [
@@ -37,6 +31,7 @@
   "grenouille-plantes-jointes",
   "mains-croisees-derriere-le-dos",
   "mollet-en-escalier",
+  "mountain-climbers",
   "pigeon-assis",
   "position-de-l-enfant",
   "position-de-l-enfant-balasana",

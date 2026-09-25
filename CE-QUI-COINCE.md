@@ -1,18 +1,19 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 20
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 31
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**137 / 331** visuels validés, 194 restants) ; ce fichier ne contient que les points
+(**210 / 331** visuels validés, 121 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
+## 1. La planche encore refusée (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Mountain climbers (femme)** — 8 refus | la permutation de jambes n'apparaît jamais, même avec votre photo de référence comme pose | tout : prompts, éditions, cases séparées, proche/lointaine, cadrage, photo | **vue de FACE** : case 1 genou avant du côté GAUCHE de l'image, case 2 du côté DROIT (le générateur sait gérer gauche/droite) ; si échec : visuel simplifié genou haut/genou bas, validé par vous | seulement si la vue de face échoue |
-| **Développé incliné haltères (femme)** — 1 refus | un seul haltère tenu à deux mains aux deux cases | — | « DEUX haltères séparés, UN dans chaque main, QUATRE disques visibles, les mains ne se touchent jamais » | aucune |
+| **Développé incliné haltères (femme)** — 2 refus | lot30 : un seul haltère à deux mains aux deux cases ; lot31 : case 1 correcte (deux haltères séparés) mais case 2 de nouveau un seul haltère à deux mains | verrou texte « deux haltères, quatre disques, mains jamais jointes » | **lot32 : deux cases SIMPLES générées séparément** (une génération par case, un haltère par main verrouillé) **puis assemblage PIL** côte à côte — la méthode qui a résolu élévations-coude-90 (lot30) | aucune |
 
-Clos ce tour : élévations latérales coude à 90 (résolues par cases simples assemblées) et
-relevés de jambes incliné (chaussures uniques).
+Clos ce tour : **mountain climbers (femme) RÉSOLUE après 9 refus** par la **vue de FACE**
+(caméra basse devant l'athlète, genou avant à gauche de l'image case 1, à droite case 2 —
+la permutation est enfin lisible) ; élévations latérales coude à 90 (cases simples
+assemblées, lot30) ; relevés de jambes incliné (chaussures uniques, lot30).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
