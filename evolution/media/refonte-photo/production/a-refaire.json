@@ -1,7 +1,13 @@
 {
  "regle": "Une planche n'est acceptee qu'apres lecture de SES DEUX cases. Toute planche refusee est refaite avant d'etre livree : elle n'est jamais comptee comme faite.",
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
- "aRefaire": [],
+ "aRefaire": [
+  {
+   "mouvement": "back-extension-horizontal (homme)",
+   "motif": "le banc dessine est incline a 45 degres ; cette cible demande un banc HORIZONTAL (bassin sur le bord du pad, bras croises sur la poitrine). L'image portant la barre a ete permutee vers la cible '45 degres, prise snatch' qui, elle, est correcte",
+   "prescription": "Back extension horizontal — banc horizontal, descente du buste vers le sol puis remontee alignee"
+  }
+ ],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",

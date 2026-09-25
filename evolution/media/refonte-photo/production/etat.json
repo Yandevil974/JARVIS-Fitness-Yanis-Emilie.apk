@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 102,
-  "restants": 229,
+  "valides": 111,
+  "restants": 220,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 55,
+   "musculation": 64,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 147,
+   "musculation": 138,
    "piscine-protocole": 40,
    "piscine": 9,
    "tabata-aqua": 6,
@@ -31,6 +31,8 @@
   "abduction-hanche-debout-a-la-poulie|femme",
   "adduction-de-la-hanche-debout|homme",
   "allonge-sur-le-cote|homme",
+  "back-extension-45-prise-snatch|homme",
+  "back-squat-charge-moderee|femme",
   "back-squat-test-1rm|homme",
   "back-squat|homme",
   "bras-tendu-contre-la-poitrine|homme",
@@ -42,14 +44,18 @@
   "clamshell-a-l-elastique|femme",
   "cobra-doux|homme",
   "coude-au-dessus-de-la-tete|homme",
+  "crunch-sur-swiss-ball|homme",
   "crunch|homme",
+  "curl-barre|homme",
   "curl-marteau-assis|homme",
   "curl-zottman-assis|homme",
+  "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
   "developpe-couche-test-1rm|homme",
   "developpe-halteres-assis-neutre-pronation|homme",
   "developpe-halteres-assis-prise-neutre|homme",
   "developpe-halteres-assis|homme",
+  "developpe-incline-barre|homme",
   "developpe-militaire-debout|homme",
   "developpe-militaire-halteres-assis|femme",
   "developpe-militaire-test-1rm|homme",
@@ -85,8 +91,10 @@
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
   "hip-thrust-barre|femme",
+  "jackknife-sur-swiss-ball|homme",
   "jumping-jacks|homme",
   "kickback-a-la-poulie|femme",
+  "lean-away-pull-ups|homme",
   "leg-curl-allonge-1-1-4-en-haut|homme",
   "leg-curl-allonge-pieds-flechis|homme",
   "leg-curl-allonge-pieds-pointes|homme",
@@ -119,6 +127,7 @@
   "superman|homme",
   "suspension-a-la-barre|homme",
   "talon-vers-la-fesse-debout|homme",
+  "tirage-vertical-lean-away|homme",
   "torsion-allongee-genoux|homme",
   "torsion-allongee|homme",
   "tractions-pull-up|homme",
@@ -143,35 +152,11 @@
    ]
   },
   {
-   "identifiant": "lean-away-pull-ups",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Lean away pull-ups"
-   ]
-  },
-  {
-   "identifiant": "tirage-vertical-lean-away",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Tirage vertical lean away"
-   ]
-  },
-  {
    "identifiant": "back-squat-barre-haute",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
     "Back squat barre haute"
-   ]
-  },
-  {
-   "identifiant": "back-squat-charge-moderee",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Back squat (charge modérée)"
    ]
   },
   {
@@ -191,35 +176,11 @@
    ]
   },
   {
-   "identifiant": "back-extension-45-prise-snatch",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Back extension 45°, prise snatch"
-   ]
-  },
-  {
-   "identifiant": "crunch-sur-swiss-ball",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Crunch sur swiss ball"
-   ]
-  },
-  {
    "identifiant": "leg-curl-machine-ou-swiss-ball-leg-curl",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Leg curl machine (ou swiss-ball leg curl)"
-   ]
-  },
-  {
-   "identifiant": "jackknife-sur-swiss-ball",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Jackknife sur swiss ball"
    ]
   },
   {
@@ -319,22 +280,6 @@
    ]
   },
   {
-   "identifiant": "developpe-couche-barre-plat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé couché barre plat"
-   ]
-  },
-  {
-   "identifiant": "curl-barre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl barre"
-   ]
-  },
-  {
    "identifiant": "curl-barre-debout",
    "athlete": "homme",
    "surface": "musculation",
@@ -356,14 +301,6 @@
    "surface": "musculation",
    "noms": [
     "Curl Scott barre EZ, supination"
-   ]
-  },
-  {
-   "identifiant": "developpe-incline-barre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé incliné barre"
    ]
   },
   {
