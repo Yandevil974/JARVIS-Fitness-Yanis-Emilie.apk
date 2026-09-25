@@ -4,19 +4,15 @@ Liste demandée pour revue de votre côté. Tout le reste du flux tourne normale
 (**137 / 331** visuels validés, 194 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Rowing barre buste penché — test 3-5 reps (femme)** — 3 refus | la case de fin s'arrête à mi-tirage : barre à la hanche, coudes à 45°, jamais aux côtes | consigne exagérée (« barre TOUCHANT les côtes, coudes derrière le torse »), vert imposé aux deux cases, buste parallèle au sol | décrire l'arrivée par les AVANT-BRAS VERTICAUX et la barre sous la poitrine ; sinon générer la case fin seule en référence d'edit | **option** : si le 4ᵉ essai échoue encore, dites-moi si vous acceptez une arrivée barre au haut de l'abdomen comme critère de fin de tirage, ou si je dois rester aux côtes coûte que coûte |
-| **Good morning debout (homme)** — 2 refus | de profil, la barre finit devant le cou ou DANS LES MAINS ; la vue de dos a réglé la case départ mais la case fin le montre debout barre aux mains | vue de profil, vue de dos, consigne « barre derrière le cou dans les deux cases » | vue de dos + consigne « la case de fin a le buste horizontal, les mains ne lâchent JAMAIS la barre posée sur le dos » | aucune |
-| **Rowing haltère un bras (homme)** — 1 refus | le profil se RETOURNE entre les deux cases (saut de 180° dans l'animation) | consigne unilatérale complète (main d'appui, haltère seul) | ajouter « la tête regarde le MÊME côté de l'image dans les deux cases, le banc du même côté » | aucune |
+| **Rowing barre buste penché — test 3-5 reps (femme)** — 4 refus | la case de fin s'arrête à la hanche, jamais aux côtes | consignes exagérées (barre TOUCHANT les côtes, avant-bras verticaux, coudes derrière le torse), vert imposé aux deux cases | générer la case FIN SEULE en édition de la case départ réussie (une seule chose change) ; sinon dernier recours : planche dessinée barre déjà aux côtes dans les deux cases (départ = barre aux côtes ? non) — voir option ci-contre | **option** : acceptez-vous une arrivée barre au haut de l'abdomen comme fin de tirage ? Sans réponse je reste aux côtes |
+| **Développé haltère un bras debout (homme)** — 1 refus | vert posé sur l'épaule du bras LIBRE (gauche) aux deux cases | consigne « highlight the RIGHT shoulder deltoid » | reformuler par la position dans l'image : « l'épaule du bras qui tient l'haltère, côté gauche de l'image » | aucune |
 
-Historique clos au lot 20 (solutions trouvées, ça ne coince plus) : back-extension-horizontal
-(5 refus → marges explicites + bras croisés = accepté), back-squat-barre-haute (vert adducteurs
-→ vert quadriceps imposé aux deux cases = accepté), back-squat-inertie-pause-complete et
-good-morning côté barre (rack avant → **vue de dos** = barre sur le dos garantie),
-curl-poulie-basse (cadrage → même échelle imposée = accepté), burpees (ordre des cases = accepté).
+Clos depuis la dernière liste : good-morning-debout (vue de dos + buste horizontal = accepté
+lot 21), rowing-haltere-un-bras (orientation ancrée = accepté lot 21).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

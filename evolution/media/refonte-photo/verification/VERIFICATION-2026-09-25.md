@@ -116,10 +116,24 @@ Refusees 3 : good-morning-debout (case fin debout barre dans les mains), rowing-
 tirage a la hanche). Feuilles : `verification/lot20-01..04.jpg`.
 Liste des blocs et decisions attendues : `CE-QUI-COINCE.md` a la racine du depot.
 
-## 10. Couverture et suite
+## 11. Lot 21 + relecture batch 3 (meme tour)
 
-Relus sur les trois tours : **89 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **137 valides** actuels, **69 restent à relire** (feuilles de 3, mêmes outils).
+Lot 21 : 3 refusees reprises + 7 neuves. Acceptees 8 : good-morning-debout (vue de dos,
+hinge complet barre sur le dos), rowing-haltere-un-bras (orientation ancree),
+pullover-cable-bras-tendus (bras tendus, barre des cuisses, note : la tour de poulie
+n'apparait qu'en case 2, ecart de decor mineur), rowing-haltere-un-bras-coude-ouvert,
+french-press-haltere-un-bras, glute-bridge-en-1-5-reps (hanches jamais reposees),
+split-squat-poulie-basse, circuit-gainage-planche-lateral-bird-dog (2 stations).
+Refusees 2 : rowing-barre-buste-penche-test-3-5-reps (4e refus, barre a la hanche),
+developpe-haltere-un-bras-debout (vert sur l'epaule du bras LIBRE).
+Relecture batch 3 : 3/3 conformes (coude-au-dessus-de-la-tete, crunch-sur-swiss-ball,
+curl-haltere-supination-banc-scott-90). Feuilles : `verification/lot21-01..04.jpg`,
+`verification/relecture-03.jpg`.
+
+## 12. Couverture et suite
+
+Relus sur les cinq tours : **102 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **145 valides** actuels, **66 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

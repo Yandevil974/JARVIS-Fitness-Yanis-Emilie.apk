@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 137,
-  "restants": 194,
+  "valides": 145,
+  "restants": 186,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 90,
+   "musculation": 98,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 112,
+   "musculation": 104,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -47,6 +47,7 @@
   "burpees|homme",
   "california-press-barre-au-cou|homme",
   "circuit-abdominaux-crunch-releves-gainage|femme",
+  "circuit-gainage-planche-lateral-bird-dog|femme",
   "clamshell-a-l-elastique|femme",
   "cobra-doux|homme",
   "coude-au-dessus-de-la-tete|homme",
@@ -102,9 +103,12 @@
   "fentes-marchees|homme",
   "flexion-avant-jambes-tendues|homme",
   "french-press-barre-ez|homme",
+  "french-press-haltere-un-bras|homme",
   "front-squat|homme",
   "gainage-planche|homme",
+  "glute-bridge-en-1-5-reps|femme",
   "glute-bridge-pieds-sur-banc|femme",
+  "good-morning-debout|homme",
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
   "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
@@ -129,6 +133,7 @@
   "position-de-l-enfant-balasana|homme",
   "position-de-l-enfant|homme",
   "presse-a-cuisses-pieds-hauts|femme",
+  "pullover-cable-bras-tendus|homme",
   "releves-de-jambes-allongee|femme",
   "releves-de-jambes-allonge|homme",
   "releves-de-jambes|homme",
@@ -140,12 +145,15 @@
   "rowing-barre-buste-penche-pronation|homme",
   "rowing-barre-buste-penche|femme",
   "rowing-barre-ez-supination-buste-penche|homme",
+  "rowing-haltere-un-bras-coude-ouvert|homme",
+  "rowing-haltere-un-bras|homme",
   "safety-bar-squat-ou-barre-classique|homme",
   "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
   "souleve-de-terre-roumain-barre|homme",
   "souleve-de-terre-test-1rm|homme",
   "souleve-de-terre|homme",
   "split-squat-barbell-pied-avant-sureleve|homme",
+  "split-squat-poulie-basse|homme",
   "squats|homme",
   "step-up-haut|homme",
   "step-up-sur-banc-hauteur-du-genou|femme",
@@ -219,38 +227,6 @@
    ]
   },
   {
-   "identifiant": "split-squat-poulie-basse",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Split squat poulie basse"
-   ]
-  },
-  {
-   "identifiant": "circuit-gainage-planche-lateral-bird-dog",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Circuit gainage (planche + latéral + bird dog)"
-   ]
-  },
-  {
-   "identifiant": "pullover-cable-bras-tendus",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Pullover câble bras tendus"
-   ]
-  },
-  {
-   "identifiant": "rowing-haltere-un-bras-coude-ouvert",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing haltère un bras, coude ouvert"
-   ]
-  },
-  {
    "identifiant": "developpe-haltere-un-bras-debout",
    "athlete": "homme",
    "surface": "musculation",
@@ -259,35 +235,11 @@
    ]
   },
   {
-   "identifiant": "french-press-haltere-un-bras",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "French press haltère un bras"
-   ]
-  },
-  {
    "identifiant": "rowing-haltere-un-bras-prise-neutre",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
     "Rowing haltère un bras, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "rowing-haltere-un-bras",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing haltère un bras"
-   ]
-  },
-  {
-   "identifiant": "glute-bridge-en-1-5-reps",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Glute bridge en 1,5 reps"
    ]
   },
   {
@@ -568,14 +520,6 @@
    "surface": "musculation",
    "noms": [
     "Squat cycliste"
-   ]
-  },
-  {
-   "identifiant": "good-morning-debout",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Good morning debout"
    ]
   },
   {

@@ -10,8 +10,8 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
 - Branche de travail **obligatoire** : `arena/01a0d51c-jarvis-fitness-yanis-emilie-ap`
   (ne jamais pousser sur `main`, ne jamais créer d'autre branche).
-- Avancement : **137 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **194** : musculation 112, piscine (protocoles) 40, tabata au sol 27,
+- Avancement : **145 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
+  Restent **186** : musculation 104, piscine (protocoles) 40, tabata au sol 27,
   piscine (guides) 9, aqua tabata 6.
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
 - **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
@@ -116,15 +116,14 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-1. Reprendre les **3 planches en attente** listées dans `production/a-refaire.json`
+1. Reprendre les **2 planches en attente** listées dans `production/a-refaire.json`
    (`aRefaire`) — solutions décrites dans `CE-QUI-COINCE.md` §1 :
-   rowing-barre-buste-penche-test-3-5-reps (avant-bras verticaux, barre sous la poitrine),
-   good-morning-debout (vue de dos, buste horizontal en case de fin, mains jamais la barre),
-   rowing-haltere-un-bras (tête et banc du MÊME côté de l'image aux deux cases).
+   rowing-barre-buste-penche-test-3-5-reps (case fin seule en édition de la case départ),
+   developpe-haltere-un-bras-debout (vert sur l'épaule du bras qui tient l'haltère).
 2. Continuer la relecture des **75 couples déjà valides non relus** (feuilles de 3,
    `feuilles-verif.py`), puis le lot « style » des 21 GIF sans vert sur une case
    (`production/style-a-reprendre.json`).
-3. Continuer la musculation (112 restants), puis
+3. Continuer la musculation (104 restants), puis
    **tabata au sol (27)**, **piscine guides (9)**, **piscine protocoles (40)**,
    **aqua tabata (6)** — par lots de ≤ 10.
 3. Après chaque lot : convertir, relire, mettre à jour `etat.json`, `a-refaire.json`,

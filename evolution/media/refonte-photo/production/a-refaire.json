@@ -4,21 +4,15 @@
  "aRefaire": [
   {
    "mouvement": "rowing-barre-buste-penche-test-3-5-reps (femme)",
-   "planche": "lot20/rowing-barre-buste-penche-test-3-5-reps.png",
-   "motif": "3e refus : tirage toujours incomplet (barre a la hanche, coudes a 45 degres, pas aux cotes)",
+   "planche": "lot21/rowing-barre-buste-penche-test-3-5-reps.png",
+   "motif": "4e refus : malgre « avant-bras verticaux, barre sous la poitrine », la barre s'arrete encore a la hanche en case de fin",
    "prescription": "Rowing barre buste penché — test (3-5 reps)"
   },
   {
-   "mouvement": "good-morning-debout (homme)",
-   "planche": "lot20/good-morning-debout.png",
-   "motif": "2e refus : vue de dos obtenue mais la case de fin le montre DEBOUT barre dans les mains au lieu du buste penche, barre sur le dos",
-   "prescription": "Good morning debout"
-  },
-  {
-   "mouvement": "rowing-haltere-un-bras (homme)",
-   "planche": "lot20/rowing-haltere-un-bras.png",
-   "motif": "1er refus : l'orientation du corps est INVERSEE entre les deux cases (profil droite puis profil gauche) : saut de 180 degres dans l'animation",
-   "prescription": "Rowing haltère un bras"
+   "mouvement": "developpe-haltere-un-bras-debout (homme)",
+   "planche": "lot21/developpe-haltere-un-bras-debout.png",
+   "motif": "1er refus : le vert est pose sur l'EPAULE GAUCHE (bras libre) aux deux cases au lieu du deltoide DROIT qui travaille",
+   "prescription": "Développé haltère un bras debout"
   }
  ],
  "verifieesEtAcceptees": [
