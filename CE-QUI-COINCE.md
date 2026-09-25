@@ -1,18 +1,19 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 40
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 41
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**261 / 331** visuels validés, 70 restants) ; ce fichier ne contient que les points
+(**270 / 331** visuels validés, 61 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Corde invisible (homme)** — 1 refus | génération en grille 2×2 (torses puis jambes séparés), corps entier absent des cases | prompt simple + réassemblage PIL | **lot41 : « EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, FULL BODY in each panel »**, mains vides sans corde | aucune |
+| **Oiseau-chien (homme)** — 1 refus | case 2 : extension du MÊME côté (bras loin + jambe loin tendus ensemble, appuis du même côté) au lieu de membres opposés | prompt quadrupède + « opposite arm and opposite leg » | **lot42 : côtés caméra imposés** — bras PROCHE caméra vertical au sol + jambe PROCHE caméra tendue en arrière, bras LOIN tendu vers l'avant, genou LOIN au sol | aucune |
 
-Clos ce tour (lot 40, tabata au sol) : battements de jambes, burpees simplifiés, chaise au
-mur, chaise douce, dead bug, dips au bord, fentes arrière, high knees, marche sur place —
-9 planches acceptées du premier coup.
+Clos ce tour (lot 41) : **corde invisible RÉSOLUE** (2 panneaux paysage corps entier, saut
+réel, mains vides), mollets, montées de genoux, montées sur mollets, mountain climbers lents
+(vue de FACE), patineurs, planche, planche latérale G, pompes au mur — 9 planches acceptées.
+Note style : case 1 de corde invisible sans vert lime → `style-a-reprendre.json` (22 entrées).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

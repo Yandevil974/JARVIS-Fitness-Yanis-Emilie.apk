@@ -211,6 +211,16 @@
    "cases_sans_vert": [
     0
    ]
+  },
+  {
+   "cle": "corde-invisible|homme",
+   "vert_px": [
+    256,
+    578
+   ],
+   "cases_sans_vert": [
+    0
+   ]
   }
  ]
 }

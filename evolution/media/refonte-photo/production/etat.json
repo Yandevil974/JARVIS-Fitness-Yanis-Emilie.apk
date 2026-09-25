@@ -4,20 +4,20 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 261,
-  "restants": 70,
+  "valides": 270,
+  "restants": 61,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
    "musculation": 203,
-   "tabata-au-sol": 22
+   "tabata-au-sol": 31
   },
   "restants_par_surface": {
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
-   "tabata-au-sol": 15
+   "tabata-au-sol": 6
   }
  },
  "valides": [
@@ -281,7 +281,16 @@
   "triceps-dips|homme",
   "triceps-extensions-halteres-banc-plat|homme",
   "une-jambe-tendue-une-pliee|homme",
-  "wood-chop-poulie-haute|homme"
+  "wood-chop-poulie-haute|homme",
+  "corde-invisible|homme",
+  "mollets|homme",
+  "montees-sur-mollets|homme",
+  "montees-de-genoux|homme",
+  "mountain-climbers-lents|homme",
+  "patineurs|homme",
+  "planche|homme",
+  "planche-laterale-g|homme",
+  "pompes-au-mur|homme"
  ],
  "restants": [
   {
@@ -1096,84 +1105,11 @@
    ]
   },
   {
-   "identifiant": "corde-invisible",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Corde invisible"
-   ]
-  },
-  {
-   "identifiant": "mollets",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Mollets"
-   ]
-  },
-  {
-   "identifiant": "montees-de-genoux",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Montées de genoux"
-   ]
-  },
-  {
-   "identifiant": "montees-sur-mollets",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Montées sur mollets"
-   ]
-  },
-  {
-   "identifiant": "mountain-climbers-lents",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Mountain climbers lents"
-   ]
-  },
-  {
    "identifiant": "oiseau-chien",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
     "Oiseau-chien"
-   ]
-  },
-  {
-   "identifiant": "patineurs",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Patineurs"
-   ]
-  },
-  {
-   "identifiant": "planche",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Planche"
-   ]
-  },
-  {
-   "identifiant": "planche-laterale-g",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Planche latérale G",
-    "Planche latérale D"
-   ]
-  },
-  {
-   "identifiant": "pompes-au-mur",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Pompes au mur"
    ]
   },
   {

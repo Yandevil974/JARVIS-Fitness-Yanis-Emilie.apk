@@ -1,14 +1,12 @@
 {
- "regle": "Une planche n'est acceptee qu'apres lecture de SES DEUX cases. Toute planche refusee est refaite avant d'etre livree : elle n'est jamais comptee comme faite.",
- "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "corde-invisible (homme)",
-   "identifiant": "corde-invisible",
+   "mouvement": "oiseau-chien (homme)",
+   "identifiant": "oiseau-chien",
    "athlete": "homme",
-   "motif": "1er refus (lot40) : generation en grille 2x2 (torses puis jambes separees), corps entier absent des cases",
-   "planche": "lot40/corde-invisible.png",
-   "strategieSuivante": "lot41 : consigne EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, FULL BODY visible in each panel, mains vides sans corde"
+   "motif": "1er refus (lot41) : case 2 extension du MEME cote (bras loin + jambe loin tendus ensemble, appuis meme cote) au lieu de membres opposes",
+   "planche": "lot41/oiseau-chien.png",
+   "strategieSuivante": "lot42 : imposer cote camera : bras PROCHE camera vertical au sol + jambe PROCHE camera tendue en arriere, bras LOIN tendu vers l'avant, genou LOIN au sol ; quadrupede case 1 identique"
   }
  ],
  "verifieesEtAcceptees": [
@@ -40,98 +38,5 @@
   "talon-vers-la-fesse-debout",
   "torsion-allongee",
   "torsion-allongee-genoux"
- ],
- "correctionsUtilisateur": [
-  {
-   "le": "25/09/2026",
-   "mouvement": "Développé militaire — test 1RM (homme)",
-   "signale_par": "l'utilisateur",
-   "defaut": "mains de départ en supination (paumes vers le haut, sous la barre)",
-   "correction": "prise en pronation : mains sur la barre, paumes vers avant, pouces enroulés, coudes sous la barre",
-   "etat": "planche régénérée, relue et acceptée"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Relevés de jambes allongé (homme)",
-   "signale_par": "auto-contrôle (lecture des deux cases)",
-   "defaut": "un pied rendu sans chaussure en case de fin",
-   "correction": "chaussures noires sur les deux pieds, jambes collées",
-   "etat": "planche régénérée, relue et acceptée"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Rowing assis câble unilatéral + Rowing assis au cou (homme)",
-   "signale_par": "l'utilisateur",
-   "defaut": "rendu incorrect : la poulie était dessinée EN HAUT, le câble descendait du plafond — les deux rowings se lisaient comme des tirages verticaux",
-   "correction": "poulie BASSE au niveau du sol, câble HORIZONTAL à hauteur de poitrine ; tirage vers les côtes (unilatéral) et vers la nuque coudes ouverts (au cou)",
-   "etat": "les deux planches régénérées, relues et acceptées"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Rowing assis câble unilatéral (homme)",
-   "signale_par": "l'utilisateur",
-   "defaut": "le geste changeait entre les deux cases : une main au départ, DEUX mains à la fin",
-   "correction": "un SEUL bras travaille du début à la fin ; l'autre main reste posée sur la hanche/la cuisse et ne touche jamais la poignée",
-   "verification": "zoom de contrôle sur les deux cases après régénération",
-   "etat": "planche relue et acceptée"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Rowing assis au cou -> Tirage vertical, prise large (homme)",
-   "signale_par": "l'utilisateur",
-   "defaut": "mauvaise machine : banc de rowing avec un câble venant du haut ; le départ doit se faire bras tendus AU-DESSUS de la tête",
-   "correction": "machine à tirage vertical (poulie HAUTE au-dessus de la tête, câble vertical, barre large, cale-cuisses) ; départ bras tendus vers le plafond, arrivée barre derrière la nuque ; les deux cases recadrées sous le MÊME angle de dos",
-   "regle": "l'alias de l'app est « Rowing assis au cou » -> cible « Tirage vertical prise large ». C'est la CIBLE (le nom de l'app) qui décrit le geste et la machine, pas le nom d'origine.",
-   "etat": "planche régénérée, relue et acceptée"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Developpe couche - test 1RM (homme)",
-   "signale_par": "auto-controle (relecture des 119 GIF livres, feuille verif-absents-04)",
-   "defaut": "l'athlete etait ASSIS sur le banc et poussait au-dessus de la tete : un developpe militaire assis, pas un developpe couche",
-   "correction": "planche lot17 refaite : allonge a plat sur le banc, prise en pronation mains SUR la barre, barre poussée au-dessus de la poitrine",
-   "etat": "planche relue et acceptee (lot 17)"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Leg curl allonge, 1 1/4 en haut (homme)",
-   "signale_par": "auto-controle (feuille verif-absents-07)",
-   "defaut": "cases INVERSEES (gauche = jambes flechies = fin) et banc incline au lieu d'allonge",
-   "correction": "planche lot17 refaite : gauche = jambes tendues, droite = talons aux fesses, vert sur les ischios des deux cases",
-   "etat": "planche relue et acceptee (lot 17)"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Dead bug avec rotation (femme)",
-   "signale_par": "auto-controle (feuille verif-absents-04)",
-   "defaut": "case de depart pieds au sol (pas de position dead bug), rotation absente",
-   "correction": "planche lot17 refaite : jambe en table-top, extension opposee bras/jambe, vert sur la taille",
-   "etat": "planche relue et acceptee (lot 17), rotation encore discrete : notee, non bloquante"
-  },
-  {
-   "le": "25/09/2026",
-   "mouvement": "Grenouille (plantes jointes) (homme)",
-   "signale_par": "auto-controle (feuille verif-absents... echantillon-02)",
-   "defaut": "ni case ne montrait l'etirement prescrit : flexion debout jambes ecartees puis grenouille sur les avant-bras",
-   "correction": "planche lot17 refaite selon la prescription exacte : ASSIS, plantes des pieds jointes, genoux ecartes, genoux pousses vers le sol",
-   "etat": "planche relue et acceptee (lot 17)"
-  }
- ],
- "reglesPrompt": [
-  "POULIES : un rowing / tirage horizontal part d'une poulie BASSE, câble horizontal ; un tirage vertical part d'une poulie HAUTE, câble vertical. Écrire la position de la poulie en toutes lettres.",
-  "ALIAS : quand un nom d'origine est rataché à une cible différente dans l'app, c'est la CIBLE qui décrit la machine et le geste (ex. « rowing assis au cou » se dessine en TIRAGE VERTICAL prise large).",
-  "MOUVEMENT UNILATERAL : écrire explicitement que le second bras/membre reste immobile et ne touche jamais l'engin, du début à la fin.",
-  "SENS DE LECTURE : une planche se lit de GAUCHE (début) à DROITE (fin) ; l'écrire explicitement dans le prompt et le vérifier à la lecture.",
-  "MYO-REPS / mini-séries : préciser que les deux cases sont presque identiques et que le membre NE revient PAS à la position de départ.",
-  "VERIFIER L'IDENTIFIANT : avant d'ecrire un prompt, confirmer que le fichier porte un identifiant present dans plan.json (verif-ids.py)."
- ],
- "erreursProduction": [
-  {
-   "le": "25/09/2026",
-   "type": "identifiant inventé",
-   "detail": "5 planches ont ete dessinees pour des identifiants qui n'existent PAS dans le plan (leg-press-pieds-hauts, fentes-marchees-barre, fentes-marchees-halteres, step-up-barre, step-up-halteres, souleve-de-terre-une-jambe). Les images etaient bonnes mais ne correspondaient a aucune cible : elles ne sont pas comptees.",
-   "correction": "outil ajoute : evolution/media/tools/verif-ids.py -> refuse toute planche dont le nom n'est pas un identifiant reel du plan ; a lancer AVANT la conversion",
-   "recollage": "les gestes correspondaient aux cibles reelles fentes-marchees (halteres), step-up-haut (barre) ; les 4 autres ont ete ecartees"
-  }
  ]
 }

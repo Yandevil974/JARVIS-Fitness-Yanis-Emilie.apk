@@ -496,3 +496,30 @@ pigeon-assis). Feuilles : `verification/lot40b-01..04.jpg`, `verification/relect
 piscine guides 9, aqua tabata 6). Relecture cumulative : **225 couples valides relus**,
 **36 restent a relire**. **1 planche en attente** : corde-invisible (format 2 panneaux au
 lot 41). Prochain lot 41 : corde-invisible + 9 planches de tabata au sol (15).
+
+## 53. Lot 41 : corde invisible RESOLUE, 9/10 acceptees (meme tour)
+
+Priorite au refus du lot 40 : corde-invisible regeneree en bandeau paysage 2 panneaux,
+corps entier dans chaque case, mains vides sans corde, saut reel case 2 : **ACCEPT**
+(note style : case 1 sans vert lime -> `production/style-a-reprendre.json`).
+Acceptees aussi 8 : mollets (profil, talons poses -> talons decolles, genoux 180 deg),
+montees-sur-mollets (vue DE DOS, talons hauts, vert mollets), montees-de-genoux (profil,
+genoux alternes a la hanche, bras opposes), mountain-climbers-lents (vue de FACE camera
+basse, genoux alternes sous la poitrine, vert abdos+epaules), patineurs (sauts lateraux
+alternes, jambe arriere decollee), planche (gainage avant-bras, 2 frames statiques),
+planche-laterale-g (planche cote gauche, hanche levee, bras du dessus hanche puis ciel),
+pompes-au-mur (meme mur, bras tendus -> coudes flechis poitrine au mur).
+Refusee 1 : oiseau-chien (case 2 extension du MEME cote : bras loin + jambe loin tendus
+ensemble, appuis du meme cote ; zoom `verification/zoom-oiseau-droite.jpg`) -> a-refaire,
+retry lot 42 avec cotes camera imposes. GIF oiseau-chien supprime.
+Relecture batch 20 : 3/3 conformes (pompes, pompes-inclinees-mains-surelevees,
+pont-fessier-au-sol-activation). Feuilles : `verification/lot41b-01..04.jpg`,
+`verification/relecture-20.jpg`.
+
+## 54. Couverture et suite (etat lot 41)
+
+**270 / 331 couples valides**, 61 restants (protocoles piscine 40, tabata au sol 6,
+piscine guides 9, aqua tabata 6). Relecture cumulative : **228 couples valides relus**,
+**33 restent a relire**. **1 planche en attente** : oiseau-chien (cotes camera au lot 42).
+Prochain lot 42 : oiseau-chien + 5 dernieres tabata au sol (ponts-fessiers, repos-actif,
+respiration-profonde, squats-doux, squats-sumo) + 4 planches piscine guides.
