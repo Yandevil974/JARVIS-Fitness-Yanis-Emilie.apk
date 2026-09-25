@@ -30,5 +30,23 @@
   "talon-vers-la-fesse-debout",
   "torsion-allongee",
   "torsion-allongee-genoux"
+ ],
+ "correctionsUtilisateur": [
+  {
+   "le": "25/09/2026",
+   "mouvement": "Développé militaire — test 1RM (homme)",
+   "signale_par": "l'utilisateur",
+   "defaut": "mains de départ en supination (paumes vers le haut, sous la barre)",
+   "correction": "prise en pronation : mains sur la barre, paumes vers avant, pouces enroulés, coudes sous la barre",
+   "etat": "planche régénérée, relue et acceptée"
+  },
+  {
+   "le": "25/09/2026",
+   "mouvement": "Relevés de jambes allongé (homme)",
+   "signale_par": "auto-contrôle (lecture des deux cases)",
+   "defaut": "un pied rendu sans chaussure en case de fin",
+   "correction": "chaussures noires sur les deux pieds, jambes collées",
+   "etat": "planche régénérée, relue et acceptée"
+  }
  ]
 }

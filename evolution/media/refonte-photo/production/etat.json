@@ -1,19 +1,19 @@
 {
  "regle": "une cible = un couple (identifiant, athlete) ; le GIF porte le suffixe -homme / -femme",
- "noteEcart": "les 343 lignes du plan ne contiennent que 325 identifiants distincts : 331 couples distincts (un meme geste compte deux fois quand il apparait chez les deux athletes). L'ecart de 4 qui trainait venait de la.",
+ "noteEcart": "343 lignes de plan = 325 identifiants distincts = 331 couples (un meme geste compte deux fois chez les deux athletes).",
  "chiffres": {
   "total": 331,
-  "valides": 67,
-  "restants": 264,
+  "valides": 75,
+  "restants": 256,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 20,
+   "musculation": 28,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 182,
+   "musculation": 174,
    "piscine-protocole": 40,
    "piscine": 9,
    "tabata-aqua": 6,
@@ -59,11 +59,17 @@
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
   "fentes-alternees|homme",
+  "fentes-arriere-alternees|femme",
+  "fentes-avant-alternees|femme",
+  "fentes-bulgares-pied-arriere-sureleve|femme",
   "flexion-avant-jambes-tendues|homme",
   "gainage-planche|homme",
   "grenouille-plantes-jointes|homme",
   "hip-thrust-barre|femme",
   "jumping-jacks|homme",
+  "leg-curl-allonge-1-1-4-en-haut|homme",
+  "leg-curl-allonge-pieds-flechis|homme",
+  "leg-curl-allonge-pieds-pointes|homme",
   "leg-curl-allonge|homme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
@@ -74,6 +80,8 @@
   "position-de-l-enfant-balasana|homme",
   "position-de-l-enfant|homme",
   "presse-a-cuisses-pieds-hauts|femme",
+  "releves-de-jambes-allongee|femme",
+  "releves-de-jambes-allonge|homme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
   "rowing-barre-buste-penche-pronation|homme",
@@ -104,70 +112,6 @@
    "surface": "musculation",
    "noms": [
     "Abduction hanche à la poulie"
-   ]
-  },
-  {
-   "identifiant": "leg-curl-allonge-pieds-flechis",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Leg curl allongé, pieds fléchis"
-   ]
-  },
-  {
-   "identifiant": "leg-curl-allonge-1-1-4-en-haut",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Leg curl allongé, 1 1/4 en haut"
-   ]
-  },
-  {
-   "identifiant": "leg-curl-allonge-pieds-pointes",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Leg curl allongé, pieds pointés"
-   ]
-  },
-  {
-   "identifiant": "releves-de-jambes-allonge",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Relevés de jambes allongé"
-   ]
-  },
-  {
-   "identifiant": "releves-de-jambes-allongee",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Relevés de jambes allongée"
-   ]
-  },
-  {
-   "identifiant": "fentes-arriere-alternees",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Fentes arrière alternées"
-   ]
-  },
-  {
-   "identifiant": "fentes-avant-alternees",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Fentes avant alternées"
-   ]
-  },
-  {
-   "identifiant": "fentes-bulgares-pied-arriere-sureleve",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Fentes bulgares (pied arrière surélevé)"
    ]
   },
   {
