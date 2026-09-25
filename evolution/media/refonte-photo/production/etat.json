@@ -14,11 +14,11 @@
    "tabata-au-sol": 9
   },
   "restants_par_surface": {
-   "musculation": 123,
+   "musculation": 122,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
-   "tabata-au-sol": 27
+   "tabata-au-sol": 28
   }
  },
  "valides": [
@@ -2163,7 +2163,7 @@
   {
    "identifiant": "burpees",
    "athlete": "homme",
-   "surface": "musculation",
+   "surface": "tabata-au-sol",
    "noms": [
     "Burpees"
    ]

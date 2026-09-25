@@ -11,7 +11,7 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Branche de travail **obligatoire** : `arena/01a0d51c-jarvis-fitness-yanis-emilie-ap`
   (ne jamais pousser sur `main`, ne jamais créer d'autre branche).
 - Avancement : **126 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **205** : musculation 123, piscine (protocoles) 40, tabata au sol 27,
+  Restent **205** : musculation 122, piscine (protocoles) 40, tabata au sol 28,
   piscine (guides) 9, aqua tabata 6.
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
 - **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
@@ -125,7 +125,7 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 2. Continuer la relecture des **75 couples déjà valides non relus** (feuilles de 3,
    `feuilles-verif.py`), puis le lot « style » des 21 GIF sans vert sur une case
    (`production/style-a-reprendre.json`).
-3. Continuer la musculation (123 restants), puis
+3. Continuer la musculation (122 restants), puis
    **tabata au sol (27)**, **piscine guides (9)**, **piscine protocoles (40)**,
    **aqua tabata (6)** — par lots de ≤ 10.
 3. Après chaque lot : convertir, relire, mettre à jour `etat.json`, `a-refaire.json`,

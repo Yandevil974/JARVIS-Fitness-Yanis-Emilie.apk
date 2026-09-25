@@ -13,8 +13,8 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 
 | Surface | Faits et vérifiés | Restants |
 |---|---|---|
-| Musculation | 80 | 123 |
-| Tabata au sol | 9 | 27 |
+| Musculation | 80 | 122 |
+| Tabata au sol | 9 | 28 |
 | Étirements | 29 | 0 ✅ |
 | Piscine (guides) | 0 | 9 |
 | Piscine (protocoles) | 0 | 40 |
