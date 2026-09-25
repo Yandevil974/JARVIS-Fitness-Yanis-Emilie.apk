@@ -523,3 +523,31 @@ piscine guides 9, aqua tabata 6). Relecture cumulative : **228 couples valides r
 **33 restent a relire**. **1 planche en attente** : oiseau-chien (cotes camera au lot 42).
 Prochain lot 42 : oiseau-chien + 5 dernieres tabata au sol (ponts-fessiers, repos-actif,
 respiration-profonde, squats-doux, squats-sumo) + 4 planches piscine guides.
+
+## 55. Lot 42 : oiseau-chien RESOLU, 7/8 acceptees, premiers guides piscine (meme tour)
+
+Priorite au refus lot 41 : oiseau-chien regenere avec cotes camera imposes (bras PROCHE
+vertical au sol + jambe PROCHE tendue en arriere, bras LOIN vers l'avant, genou LOIN au sol)
+= membres OPPOSES cette fois : **ACCEPT**.
+Acceptees aussi 6 : ponts-fessiers (hanches au sol -> pont ligne epaules-genoux),
+repos-actif (marche lente relachee, 2 phases), respiration-profonde (profil, main poitrine +
+main ventre, inspire ventre sorti -> expire ventre rentre), squats-sumo (stance large orteils
+45 deg -> squat profond genoux dans l'axe), gainage-au-bord-vertical FEMME (vertical mains au
+bord -> genoux poitrine, vert a travers l'eau), pompes-au-bord FEMME (bras tendus -> coudes
+flechis poitrine au bord, meme margelle).
+Refusee 1 : squats-doux (case 1 FACE, case 2 DOS 3/4 : cadrage qui saute) -> a-refaire,
+retry lot 43 face ancree aux deux cases. GIF squats-doux supprime.
+2 echecs transitoires generateur (lecture maitre-femme.png) sur battements-au-bord et
+marche-aquatique : a rejouer au lot 43, comptes dans le plafond du lot.
+Relecture batch 21 : 3/3 conformes (position-de-l-enfant, position-de-l-enfant-balasana,
+presse-a-cuisses-pieds-hauts). Feuilles : `verification/lot42b-01..02.jpg`,
+`verification/lot42f.jpg`, `verification/relecture-21.jpg`.
+
+## 56. Couverture et suite (etat lot 42)
+
+**277 / 331 couples valides**, 54 restants (protocoles piscine 40, piscine guides 7,
+aqua tabata 6, tabata au sol 1). Relecture cumulative : **247 couples valides relus**,
+**30 restent a relire**. **1 planche en attente** : squats-doux (face ancree au lot 43).
+Prochain lot 43 : squats-doux + battements-au-bord + marche-aquatique (replay) + 6 planches
+piscine guides (fractionne-nager, nage-statique-a-l-elastique, recup-complete-souffler,
+sprint-nager-a-fond, talons-fesses, + 1 protocole piscine).

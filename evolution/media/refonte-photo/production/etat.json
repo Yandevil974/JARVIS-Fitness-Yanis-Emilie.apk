@@ -4,20 +4,21 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 270,
-  "restants": 61,
+  "valides": 277,
+  "restants": 54,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
    "musculation": 203,
-   "tabata-au-sol": 31
+   "tabata-au-sol": 36,
+   "piscine": 2
   },
   "restants_par_surface": {
-   "piscine": 9,
+   "piscine": 7,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
-   "tabata-au-sol": 6
+   "tabata-au-sol": 1
   }
  },
  "valides": [
@@ -290,7 +291,14 @@
   "patineurs|homme",
   "planche|homme",
   "planche-laterale-g|homme",
-  "pompes-au-mur|homme"
+  "pompes-au-mur|homme",
+  "oiseau-chien|homme",
+  "ponts-fessiers|homme",
+  "repos-actif|homme",
+  "respiration-profonde|homme",
+  "squats-sumo|homme",
+  "gainage-au-bord-vertical|femme",
+  "pompes-au-bord|femme"
  ],
  "restants": [
   {
@@ -310,14 +318,6 @@
    ]
   },
   {
-   "identifiant": "gainage-au-bord-vertical",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Gainage au bord (vertical)"
-   ]
-  },
-  {
    "identifiant": "marche-aquatique",
    "athlete": "femme",
    "surface": "piscine",
@@ -331,14 +331,6 @@
    "surface": "piscine",
    "noms": [
     "Nage statique (à l'élastique)"
-   ]
-  },
-  {
-   "identifiant": "pompes-au-bord",
-   "athlete": "femme",
-   "surface": "piscine",
-   "noms": [
-    "Pompes au bord"
    ]
   },
   {
@@ -1105,51 +1097,11 @@
    ]
   },
   {
-   "identifiant": "oiseau-chien",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Oiseau-chien"
-   ]
-  },
-  {
-   "identifiant": "ponts-fessiers",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Ponts fessiers"
-   ]
-  },
-  {
-   "identifiant": "repos-actif",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Repos actif"
-   ]
-  },
-  {
-   "identifiant": "respiration-profonde",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Respiration profonde"
-   ]
-  },
-  {
    "identifiant": "squats-doux",
    "athlete": "homme",
    "surface": "tabata-au-sol",
    "noms": [
     "Squats doux"
-   ]
-  },
-  {
-   "identifiant": "squats-sumo",
-   "athlete": "homme",
-   "surface": "tabata-au-sol",
-   "noms": [
-    "Squats sumo"
    ]
   }
  ]

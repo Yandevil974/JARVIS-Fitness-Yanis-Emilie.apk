@@ -1,19 +1,19 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 41
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 42
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**270 / 331** visuels validés, 61 restants) ; ce fichier ne contient que les points
+(**277 / 331** visuels validés, 54 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Oiseau-chien (homme)** — 1 refus | case 2 : extension du MÊME côté (bras loin + jambe loin tendus ensemble, appuis du même côté) au lieu de membres opposés | prompt quadrupède + « opposite arm and opposite leg » | **lot42 : côtés caméra imposés** — bras PROCHE caméra vertical au sol + jambe PROCHE caméra tendue en arrière, bras LOIN tendu vers l'avant, genou LOIN au sol | aucune |
+| **Squats doux (homme)** — 1 refus | case 1 vue de FACE, case 2 vue de DOS 3/4 : cadrage qui saute au GIF | prompt « frontal camera » simple | **lot43 : ancrer FACE caméra aux DEUX cases** (visage + poitrine visibles dans les deux cases), amplitude 45°, bras tendus devant | aucune |
 
-Clos ce tour (lot 41) : **corde invisible RÉSOLUE** (2 panneaux paysage corps entier, saut
-réel, mains vides), mollets, montées de genoux, montées sur mollets, mountain climbers lents
-(vue de FACE), patineurs, planche, planche latérale G, pompes au mur — 9 planches acceptées.
-Note style : case 1 de corde invisible sans vert lime → `style-a-reprendre.json` (22 entrées).
+Clos ce tour (lot 42) : **oiseau-chien RÉSOLU** (membres opposés, côtés caméra imposés),
+ponts-fessiers, repos-actif, respiration-profonde, squats-sumo ; premiers guides piscine
+femme : gainage au bord vertical et pompes au bord. 2 échecs transitoires du générateur
+(lecture de `maitre-femme.png`) sur battements-au-bord et marche-aquatique : replay lot 43.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

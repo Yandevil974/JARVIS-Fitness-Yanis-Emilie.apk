@@ -1,12 +1,12 @@
 {
  "aRefaire": [
   {
-   "mouvement": "oiseau-chien (homme)",
-   "identifiant": "oiseau-chien",
+   "mouvement": "squats-doux (homme)",
+   "identifiant": "squats-doux",
    "athlete": "homme",
-   "motif": "1er refus (lot41) : case 2 extension du MEME cote (bras loin + jambe loin tendus ensemble, appuis meme cote) au lieu de membres opposes",
-   "planche": "lot41/oiseau-chien.png",
-   "strategieSuivante": "lot42 : imposer cote camera : bras PROCHE camera vertical au sol + jambe PROCHE camera tendue en arriere, bras LOIN tendu vers l'avant, genou LOIN au sol ; quadrupede case 1 identique"
+   "motif": "1er refus (lot42) : case 1 vue de FACE mais case 2 vue de DOS 3/4 -> cadrage qui saute au GIF",
+   "planche": "lot42/squats-doux.png",
+   "strategieSuivante": "lot43 : ancrer FACE camera aux DEUX cases (visage et poitrine visibles dans les deux cases), amplitude douce 45 deg, bras tendus devant"
   }
  ],
  "verifieesEtAcceptees": [
