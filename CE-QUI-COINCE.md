@@ -1,19 +1,20 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 36
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 37
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**238 / 331** visuels validés, 93 restants) ; ce fichier ne contient que les points
+(**242 / 331** visuels validés, 89 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 2 planches qui résistent encore (stratégie édition au prochain tour)
+## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Soulevé de terre partiel (homme)** — 5 refus | le générateur ne dessine JAMAIS le départ barre posée sur les pins buste 45° ; vert souvent posé sur quadriceps | 4 prompts texte, cases séparées, vocabulaire « deadlift bottom », consignes de vert | **lot37 : ÉDITION d'image** : partir de la case lockout propre et faire descendre barre sur pins + buste 45° par edit | aucune |
-| **Mollets à la presse (homme)** — 3 refus | genoux fléchis (donc leg press) et/ou vert sur tibias ; une case 2 générée en planche double | presse 45°, « genoux tendus identiques », cases séparées | **lot37 : 1 case générée puis ÉDITION** de la même image pour la case 2 (talon haut) : paire cohérente garantie | aucune |
+| **Soulevé de terre partiel (homme)** — 6 refus | même par ÉDITION le départ barre sur pins buste 45° n'apparaît pas (l'edit a retourné la vue de dos) | prompts texte, cases séparées, « deadlift bottom », édition | **lot38 : BLOCK PULL sans pins** : barre posée sur deux blocs noirs sous les disques, barre à mi-tibia ; départ hanche basse / lockout | aucune |
+| **Mollets à la presse (homme)** — 4 refus | édition quasi identique à la case 1 : chevilles immobiles, vert sur tibias | presse 45°, genoux tendus, cases séparées, édition | **lot38 : talons DÉBORDANT de la plaque** : case 1 talons pendus dans le vide sous la plaque, case 2 talons montés au-dessus | aucune |
+| **Drop lunges fentes sautées contrôlées (homme)** — 1 refus | permutation de jambes correcte mais haltère orphelin en case 1, aucun en case 2 | haltères aux deux mains | **lot38 : poids du corps**, mains sur les hanches aux deux cases, AUCUN haltère | aucune |
 
-Clos ce tour (3 des 5 refus) : curl haltères incliné prise neutre (format 2 panneaux),
-relevés de jambes suspendu (format 2 panneaux), hip thrust barre (BARRE longue aux deux
-disques, plus d'haltères).
+Clos ce tour : développés haltères décliné et incliné 45° prise neutre (vue de FACE pied de
+banc), extensions triceps haltères incliné, tirage vertical prise pronation ; gainage
+planche régénéré et relu (remplace le GIF précédent, couple déjà valide).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

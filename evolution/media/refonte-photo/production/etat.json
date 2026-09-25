@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 238,
-  "restants": 93,
+  "valides": 242,
+  "restants": 89,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 191,
+   "musculation": 196,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 11,
+   "musculation": 7,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -94,6 +94,8 @@
   "developpe-halteres-assis-neutre-pronation|homme",
   "developpe-halteres-assis-prise-neutre|homme",
   "developpe-halteres-assis|homme",
+  "developpe-halteres-decline-prise-neutre|homme",
+  "developpe-halteres-incline-45-prise-neutre|homme",
   "developpe-halteres-plat-prise-neutre|homme",
   "developpe-halteres-plat|homme",
   "developpe-incline-barre|homme",
@@ -132,6 +134,7 @@
   "etirement-du-piriforme-assis|homme",
   "extension-triceps-a-la-poulie|femme",
   "extensions-triceps-barre-ez|homme",
+  "extensions-triceps-halteres-incline|homme",
   "extensions-triceps-halteres-plat|homme",
   "extensions-triceps-poulie|homme",
   "extensions-triceps-pullover-barre-ez|homme",
@@ -249,6 +252,7 @@
   "tirage-vertical-lean-away|homme",
   "tirage-vertical-prise-large|homme",
   "tirage-vertical-prise-neutre|femme",
+  "tirage-vertical-prise-pronation|homme",
   "torsion-allongee-genoux|homme",
   "torsion-allongee|homme",
   "tractions-prise-large|homme",
@@ -262,22 +266,6 @@
   "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  {
-   "identifiant": "developpe-halteres-decline-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères décliné, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "developpe-halteres-incline-45-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères incliné 45°, prise neutre"
-   ]
-  },
   {
    "identifiant": "developpe-halteres-incline-pronation",
    "athlete": "homme",
@@ -302,14 +290,6 @@
     "Élévations latérales incliné 30°",
     "Élévations latérales incliné 45°",
     "Élévations latérales incliné"
-   ]
-  },
-  {
-   "identifiant": "extensions-triceps-halteres-incline",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Extensions triceps haltères incliné"
    ]
   },
   {
@@ -342,14 +322,6 @@
    "surface": "musculation",
    "noms": [
     "Soulevé de terre partiel, prise snatch"
-   ]
-  },
-  {
-   "identifiant": "tirage-vertical-prise-pronation",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Tirage vertical prise pronation"
    ]
   },
   {

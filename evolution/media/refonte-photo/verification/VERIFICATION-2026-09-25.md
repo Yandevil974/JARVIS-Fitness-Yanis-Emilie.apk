@@ -414,3 +414,25 @@ valides relus**, **46 restent a relire**. **2 planches en attente** dans
 `production/a-refaire.json` : souleve-de-terre-partiel (5e refus) et mollets-a-la-presse
 (3e refus), toutes deux vers la strategie d'EDITION. Prochain lot 37 : ces 2 planches par
 edition + 8 planches (musculation 11 puis tabata au sol 27).
+
+## 45. Lot 37 : edits et vues de FACE pied de banc (meme tour)
+
+Strategie edition testee sur les 2 resistantes : echec (sd-partiel : l'edit retourne la vue
+de dos sans hinge ; mollets-presse : edit quasi identique, chevilles immobilees).
+Acceptees 5 : developpe-halteres-decline-prise-neutre et developpe-halteres-incline-45-prise-neutre
+(vues de FACE pied de banc, deux halteres separes), extensions-triceps-halteres-incline,
+tirage-vertical-prise-pronation, gainage-planche (couple DEJA valide : nouvelle planche relue
+et conforme, remplace le GIF precedent).
+Refusees 3 : souleve-de-terre-partiel (6e), mollets-a-la-presse (4e), drop-lunges-fentes-sautees-controlees
+(1er : haltere orphelin case 1).
+Relecture batch 17 : 3/3 conformes (hip-thrust-barre confirmee avec BARRE, jumping-jacks,
+lean-away-pull-ups). Feuilles : `verification/lot37b-01..03.jpg`, `verification/relecture-17.jpg`.
+
+## 46. Couverture et suite (etat lot 37)
+
+**242 / 331 couples valides**, 89 restants (protocoles piscine 40, tabata au sol 27,
+piscine guides 9, aqua tabata 6, musculation 7). Relecture cumulative : **200 couples
+valides relus**, **42 restent a relire**. **3 planches en attente** dans
+`production/a-refaire.json` : souleve-de-terre-partiel (6e), mollets-a-la-presse (4e),
+drop-lunges-fentes-sautees-controlees (1er). Prochain lot 38 : ces 3 planches (block pull,
+talons debordants, poids du corps) + 7 planches (musculation 7 puis tabata au sol 27).

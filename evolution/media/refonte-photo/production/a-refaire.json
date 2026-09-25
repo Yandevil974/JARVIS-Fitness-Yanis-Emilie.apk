@@ -6,17 +6,25 @@
    "mouvement": "souleve-de-terre-partiel (homme)",
    "identifiant": "souleve-de-terre-partiel",
    "athlete": "homme",
-   "motif": "5e refus (lot36) : le generateur ne dessine jamais le depart barre sur pins buste 45 (4 prompts texte + 2 cases separees + vocabulaire deadlift bottom) ; vert souvent sur quadriceps",
-   "planche": "lot36/souleve-de-terre-partiel.png",
-   "strategieSuivante": "lot37 : EDITION d'image : prendre la case lockout propre (v5 droite) et demander via edit de descendre la barre SUR les pins sous les genoux et de pencher le buste a 45 deg bras tendus ; vert ajoute ensuite verifiable"
+   "motif": "6e refus (lot37) : meme par EDITION le depart barre sur pins buste 45 deg n'apparait pas (l'edit a retourne la vue en vue de dos)",
+   "planche": "lot37/souleve-de-terre-partiel.png",
+   "strategieSuivante": "lot38 : abandon des pins : BLOCK PULL = barre posee sur deux blocs noirs sous les disques, barre a mi-tibia ; case1 depart hanche basse dos plat, case2 lockout ; vert chaine posterieure"
   },
   {
    "mouvement": "mollets-a-la-presse (homme)",
    "identifiant": "mollets-a-la-presse",
    "athlete": "homme",
-   "motif": "3e refus (lot36) : genoux flechis (leg press) et/ou vert sur tibias ; case2 generee en planche double",
-   "planche": "lot36/mollets-a-la-presse.png",
-   "strategieSuivante": "lot37 : generer UNE seule case (jambes tendues comme des colonnes, talon bas sous la plaque) puis EDITION de cette meme image pour la case2 (talon haut, sled un peu plus haut) : paire garantie coherente"
+   "motif": "4e refus (lot37) : edition quasi identique a la case1, chevilles immobiles, vert sur tibias",
+   "planche": "lot37/mollets-a-la-presse.png",
+   "strategieSuivante": "lot38 : decrire les talons DEBORDANT de la plaque : case1 talons PENDUS DANS LE VIDE sous la surface de la plaque, case2 talons MONTES AU-DESSUS de la plaque ; sinon vue rapprochée jambes seules"
+  },
+  {
+   "mouvement": "drop-lunges-fentes-sautees-controlees (homme)",
+   "identifiant": "drop-lunges-fentes-sautees-controlees",
+   "athlete": "homme",
+   "motif": "1er refus (lot37) : permutation de jambes correcte mais un haltere orphelin en case 1, aucun en case 2",
+   "planche": "lot37/drop-lunges-fentes-sautees-controlees.png",
+   "strategieSuivante": "lot38 : poids du corps, mains sur les hanches aux DEUX cases, AUCUN haltere dans l'image"
   }
  ],
  "verifieesEtAcceptees": [
