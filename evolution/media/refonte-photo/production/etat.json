@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 174,
-  "restants": 157,
+  "valides": 181,
+  "restants": 150,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 127,
+   "musculation": 134,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 75,
+   "musculation": 68,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -43,6 +43,7 @@
   "bras-tendu-contre-le-mur|homme",
   "bras-tendu-derriere|homme",
   "bras-tendu-devant-main-tiree|homme",
+  "bulgarian-split-squat-halteres|femme",
   "bulgarian-split-squat|homme",
   "burpees|homme",
   "cables-croises-rotation-externe|homme",
@@ -62,6 +63,7 @@
   "curl-concentration|homme",
   "curl-haltere-supination-banc-scott-90|homme",
   "curl-halteres-incline|homme",
+  "curl-halteres|femme",
   "curl-marteau-assis|homme",
   "curl-marteau|homme",
   "curl-poulie-basse-supination|homme",
@@ -77,6 +79,7 @@
   "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
   "developpe-couche-halteres|femme",
+  "developpe-couche-prise-serree|homme",
   "developpe-couche-test-1rm|homme",
   "developpe-haltere-un-bras-debout|homme",
   "developpe-halteres-assis-neutre-pronation|homme",
@@ -95,6 +98,7 @@
   "echauffement-series-d-approche|homme",
   "elevations-laterales-assises-variante|homme",
   "elevations-laterales-assises|homme",
+  "elevations-laterales-halteres|homme",
   "elevations-laterales-incline-30-face-au-banc|homme",
   "elevations-laterales-lean-away|homme",
   "elliptique-fractionne|femme",
@@ -109,6 +113,7 @@
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
   "extensions-triceps-pullover-barre-ez|homme",
+  "face-pull-a-la-poulie|femme",
   "fentes-alternees|homme",
   "fentes-arriere-alternees|femme",
   "fentes-arriere-au-poids-du-corps|homme",
@@ -125,6 +130,7 @@
   "gainage-planche|homme",
   "glute-bridge-en-1-5-reps|femme",
   "glute-bridge-pieds-sur-banc|femme",
+  "goblet-squat|femme",
   "good-morning-debout|homme",
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
@@ -186,6 +192,7 @@
   "superman|homme",
   "suspension-a-la-barre|homme",
   "talon-vers-la-fesse-debout|homme",
+  "tirage-horizontal-a-la-poulie|femme",
   "tirage-vertical-lean-away|homme",
   "torsion-allongee-genoux|homme",
   "torsion-allongee|homme",
@@ -212,14 +219,6 @@
    "surface": "musculation",
    "noms": [
     "Barre au front (pushdown triceps)"
-   ]
-  },
-  {
-   "identifiant": "bulgarian-split-squat-halteres",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Bulgarian split squat haltères"
    ]
   },
   {
@@ -255,14 +254,6 @@
    ]
   },
   {
-   "identifiant": "developpe-couche-prise-serree",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé couché prise serrée"
-   ]
-  },
-  {
    "identifiant": "elevations-laterales-coude-a-90",
    "athlete": "homme",
    "surface": "musculation",
@@ -284,14 +275,6 @@
    "surface": "musculation",
    "noms": [
     "Curl Scott 90° haltère supination"
-   ]
-  },
-  {
-   "identifiant": "curl-halteres",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Curl haltères"
    ]
   },
   {
@@ -498,14 +481,6 @@
    ]
   },
   {
-   "identifiant": "elevations-laterales-halteres",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales haltères"
-   ]
-  },
-  {
    "identifiant": "elevations-laterales-halteres-myo-reps",
    "athlete": "femme",
    "surface": "musculation",
@@ -572,14 +547,6 @@
    ]
   },
   {
-   "identifiant": "face-pull-a-la-poulie",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Face pull à la poulie"
-   ]
-  },
-  {
    "identifiant": "pont-fessier-au-sol-activation",
    "athlete": "femme",
    "surface": "musculation",
@@ -609,14 +576,6 @@
    "surface": "musculation",
    "noms": [
     "Glute ham raise"
-   ]
-  },
-  {
-   "identifiant": "goblet-squat",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Goblet squat"
    ]
   },
   {
@@ -657,14 +616,6 @@
    "surface": "musculation",
    "noms": [
     "Hip thrust unilatéral lesté"
-   ]
-  },
-  {
-   "identifiant": "tirage-horizontal-a-la-poulie",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Tirage horizontal à la poulie"
    ]
   },
   {

@@ -216,10 +216,22 @@ proche/lointaine). Relecture batch 7 : 3/3 conformes (developpe-militaire-debout
 developpe-militaire-test-1rm, dips ; note vert case fin seule sur le test-1rm).
 Feuilles : `verification/lot26-01..04.jpg`, `verification/relecture-07.jpg`.
 
-## 24. Couverture et suite
+## 25. Lot 27 (meme tour)
 
-Relus sur les dix tours : **152 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **174 valides** actuels, **50 restent à relire** (feuilles de 3, mêmes outils).
+Plafond de 10 generations atteint : souleve-de-terre-roumain-halteres reporte au lot 28.
+Acceptees 7 : developpe-couche-prise-serree, elevations-laterales-halteres,
+bulgarian-split-squat-halteres, curl-halteres, goblet-squat, face-pull-a-la-poulie
+(poulie tete ancree, corde tendue), tirage-horizontal-a-la-poulie (poulie basse ancree).
+Refusees 2 : elevations-laterales-coude-a-90 (2e : geometrie bonne mais vert aussi sur les
+abdominaux), mountain-climbers (5e : cases assemblees pieds nus vs chaussures, meme jambe avant).
+Relecture batch 8 : 3/3 conformes (echauffement-mobilite, echauffement-series-d-approche,
+elevations-laterales-assises-variante). Feuilles : `verification/lot27-01..03.jpg`,
+`verification/relecture-08.jpg`.
+
+## 26. Couverture et suite
+
+Relus sur les onze tours : **162 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **181 valides** actuels, **44 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

@@ -8,11 +8,11 @@ bloquants ou qui demandent une décision.
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Mountain climbers (femme)** — 4 refus | toujours la même jambe avant aux deux cases | prompt permuté, édition de planche, cases séparées, proche/lointaine en planche unique | deux cases SIMPLES générées séparément mais cadrage imposé identique (« vue de profil pure, tête au bord GAUCHE, pieds au bord DROIT ») puis assemblage ; si échec : dernier recours = planche où la case 2 est vue de l'AUTRE côté du corps | aucune |
-| **Élévations latérales coude à 90 (homme)** — 1 refus | case départ bras tendus le long du corps | prompt « coudes collés à 90° » | départ décrit géométriquement : « avant-bras HORIZONTAUX pointant vers l'avant, haltères devant le ventre, coudes au contact des flancs » | aucune |
+| **Mountain climbers (femme)** — 5 refus | cases assemblées : pieds nus d'un côté, chaussures de l'autre, et même jambe avant | prompt permuté, édition de planche, cases séparées, proche/lointaine, cadrage imposé | **éditer UNE seule case** (lot27-case1, chaussures imposées) : « tends la jambe pliée vers l'arrière et amène le genou de l'autre jambe sous la poitrine » ; assembler ensuite case éditée + case d'origine inversée | aucune |
+| **Élévations latérales coude à 90 (homme)** — 2 refus | géométrie enfin bonne mais vert posé AUSSI sur les abdominaux aux deux cases | départs variés, géométrie avant-bras horizontaux | même prompt géométrique + règle de vert exclusive : « vert UNIQUEMENT sur les deux deltoïdes latéraux ; abdomen, poitrine et bras gardent leur couleur naturelle » | aucune |
 
-Clos ce tour : développé haltère un bras debout — résolu après 5 refus par ÉDITION de la case 2
-réussie (méthode à réutiliser pour tout refus asymétrique).
+Clos ce tour : 7 neuves acceptées ; souleve-de-terre-roumain-halteres reporté d'un tour
+(plafond de 10 générations atteint).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

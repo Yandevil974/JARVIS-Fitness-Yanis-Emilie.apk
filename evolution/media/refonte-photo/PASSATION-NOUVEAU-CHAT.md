@@ -10,8 +10,8 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
 - Branche de travail **obligatoire** : `arena/01a0d51c-jarvis-fitness-yanis-emilie-ap`
   (ne jamais pousser sur `main`, ne jamais créer d'autre branche).
-- Avancement : **174 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **157** : musculation 75, piscine (protocoles) 40, tabata au sol 27,
+- Avancement : **181 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
+  Restent **150** : musculation 68, piscine (protocoles) 40, tabata au sol 27,
   piscine (guides) 9, aqua tabata 6.
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
 - **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
@@ -117,15 +117,16 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 ## 7. À faire au démarrage du nouveau chat
 
 1. Reprendre les **2 planches en attente** (`production/a-refaire.json`) : mountain-climbers
-   (cases simples au cadrage imposé puis assemblage) et elevations-laterales-coude-a-90
-   (départ avant-bras horizontaux) — `CE-QUI-COINCE.md` §1. Méthode gagnante sur refus
+   (édition d'une seule case : permuter les jambes, chaussures imposées) et elevations-
+   laterales-coude-a-90 (vert exclusif deltoïdes) — `CE-QUI-COINCE.md` §1 ; plus le report
+   souleve-de-terre-roumain-halteres (plafond de générations du lot 27). Méthode gagnante sur refus
    asymétrique : éditer la case réussie pour fabriquer l'autre. L'audit réalisme est clos : ses 6 remplacements
    sont acceptés ; règles de grée obligatoires dans chaque prompt futur
    (`production/audit-realisme.json`).
 2. Continuer la relecture des **75 couples déjà valides non relus** (feuilles de 3,
    `feuilles-verif.py`), puis le lot « style » des 21 GIF sans vert sur une case
    (`production/style-a-reprendre.json`).
-3. Continuer la musculation (75 restants), puis
+3. Continuer la musculation (68 restants), puis
    **tabata au sol (27)**, **piscine guides (9)**, **piscine protocoles (40)**,
    **aqua tabata (6)** — par lots de ≤ 10.
 3. Après chaque lot : convertir, relire, mettre à jour `etat.json`, `a-refaire.json`,

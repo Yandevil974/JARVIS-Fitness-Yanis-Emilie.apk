@@ -6,15 +6,15 @@
    "mouvement": "mountain-climbers (femme)",
    "identifiant": "mountain-climbers",
    "athlete": "femme",
-   "motif": "4e refus : planche unique, jambes proche/lointaine : encore la meme jambe avant aux deux cases",
-   "planche": "lot26/mountain-climbers.png"
+   "motif": "5e refus : cases assemblees = pieds nus vs chaussures ET meme jambe avant",
+   "planche": "lot27/mountain-climbers.png"
   },
   {
    "mouvement": "elevations-laterales-coude-a-90 (homme)",
    "identifiant": "elevations-laterales-coude-a-90",
    "athlete": "homme",
-   "motif": "1er refus : case depart bras tendus le long du corps au lieu de coudes a 90 degres avant-bras devant",
-   "planche": "lot26/elevations-laterales-coude-a-90.png"
+   "motif": "2e refus : geometrie bonne mais vert aussi sur les abdominaux aux deux cases",
+   "planche": "lot27/elevations-laterales-coude-a-90.png"
   }
  ],
  "verifieesEtAcceptees": [
