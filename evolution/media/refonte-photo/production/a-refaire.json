@@ -4,8 +4,21 @@
  "aRefaire": [
   {
    "mouvement": "back-extension-horizontal (homme)",
-   "motif": "le banc dessine est incline a 45 degres ; cette cible demande un banc HORIZONTAL (bassin sur le bord du pad, bras croises sur la poitrine). L'image portant la barre a ete permutee vers la cible '45 degres, prise snatch' qui, elle, est correcte",
-   "prescription": "Back extension horizontal — banc horizontal, descente du buste vers le sol puis remontee alignee"
+   "planche": "lot15/back-extension-horizontal.png",
+   "motif": "mauvaise machine : banc incline a 45 degres au lieu d'un banc HORIZONTAL",
+   "prescription": "Back extension horizontal — banc horizontal, buste qui descend vers le sol puis remonte aligne"
+  },
+  {
+   "mouvement": "triceps-extensions-halteres-banc-plat (homme)",
+   "planche": "lot16/triceps-extensions-halteres-banc-plat.png",
+   "motif": "le mouvement n'est pas montre : les DEUX cases ont les bras tendus, aucun abaissement des halteres derriere la tete",
+   "prescription": "Triceps extensions halteres, banc plat — bras tendus au-dessus de la poitrine PUIS coudes plies, halteres descendus pres de la tete"
+  },
+  {
+   "mouvement": "elevations-laterales-incline-30-face-au-banc (homme)",
+   "planche": "lot16/elevations-laterales-incline-30-face-au-banc.png",
+   "motif": "le vert est pose sur la nuque/trapezes au lieu des EPAULES laterales",
+   "prescription": "Elevations laterales incline 30 face au banc — vert sur les deltoides lateraux uniquement"
   }
  ],
  "verifieesEtAcceptees": [

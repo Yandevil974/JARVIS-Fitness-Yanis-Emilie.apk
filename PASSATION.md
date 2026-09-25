@@ -1,5 +1,8 @@
 # Passation — JARVIS Fitness Evolution
 
+> 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
+> (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
+
 ## En cours — refonte de TOUS les visuels sur la nouvelle photo (25 septembre 2026)
 
 **Cible réelle : 331 GIF** = un couple (mouvement × athlète). Les 343 lignes du plan ne
@@ -10,7 +13,7 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 
 | Surface | Faits et vérifiés | Restants |
 |---|---|---|
-| Musculation | 64 | 138 |
+| Musculation | 72 | 130 |
 | Tabata au sol | 10 | 27 |
 | Étirements | 29 | 0 ✅ |
 | Piscine (guides) | 0 | 9 |
@@ -18,7 +21,7 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 | Aqua Tabata | 0 | 6 |
 | Elliptique | 5 | 0 ✅ |
 | Échauffement | 3 | 0 ✅ |
-| **Total** | **111** | **220** |
+| **Total** | **119** | **212** |
 
 **Deux outils ajoutés à cette étape, qui changent la méthode** :
 

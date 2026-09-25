@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 111,
-  "restants": 220,
+  "valides": 119,
+  "restants": 212,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 64,
+   "musculation": 72,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 138,
+   "musculation": 130,
    "piscine-protocole": 40,
    "piscine": 9,
    "tabata-aqua": 6,
@@ -32,7 +32,9 @@
   "adduction-de-la-hanche-debout|homme",
   "allonge-sur-le-cote|homme",
   "back-extension-45-prise-snatch|homme",
+  "back-squat-barre-haute|homme",
   "back-squat-charge-moderee|femme",
+  "back-squat-inertie-pause-complete|homme",
   "back-squat-test-1rm|homme",
   "back-squat|homme",
   "bras-tendu-contre-la-poitrine|homme",
@@ -47,8 +49,11 @@
   "crunch-sur-swiss-ball|homme",
   "crunch|homme",
   "curl-barre|homme",
+  "curl-haltere-supination-banc-scott-90|homme",
   "curl-marteau-assis|homme",
   "curl-zottman-assis|homme",
+  "curl-zottman-un-bras-banc-scott|homme",
+  "dead-bug-avec-rotation|femme",
   "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
   "developpe-couche-test-1rm|homme",
@@ -57,6 +62,7 @@
   "developpe-halteres-assis|homme",
   "developpe-incline-barre|homme",
   "developpe-militaire-debout|homme",
+  "developpe-militaire-halteres-assis-test-3-5-reps|femme",
   "developpe-militaire-halteres-assis|femme",
   "developpe-militaire-test-1rm|homme",
   "dips|homme",
@@ -88,6 +94,7 @@
   "flexion-avant-jambes-tendues|homme",
   "front-squat|homme",
   "gainage-planche|homme",
+  "glute-bridge-pieds-sur-banc|femme",
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
   "hip-thrust-barre|femme",
@@ -99,6 +106,7 @@
   "leg-curl-allonge-pieds-flechis|homme",
   "leg-curl-allonge-pieds-pointes|homme",
   "leg-curl-allonge|homme",
+  "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
   "mollet-en-escalier|homme",
@@ -136,75 +144,11 @@
  ],
  "restants": [
   {
-   "identifiant": "developpe-militaire-halteres-assis-test-3-5-reps",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Développé militaire haltères assis — test (3-5 reps)"
-   ]
-  },
-  {
-   "identifiant": "dead-bug-avec-rotation",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Dead bug avec rotation"
-   ]
-  },
-  {
-   "identifiant": "back-squat-barre-haute",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Back squat barre haute"
-   ]
-  },
-  {
-   "identifiant": "back-squat-inertie-pause-complete",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Back squat inertie (pause complète)"
-   ]
-  },
-  {
    "identifiant": "back-extension-horizontal",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
     "Back extension horizontal"
-   ]
-  },
-  {
-   "identifiant": "leg-curl-machine-ou-swiss-ball-leg-curl",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Leg curl machine (ou swiss-ball leg curl)"
-   ]
-  },
-  {
-   "identifiant": "curl-zottman-un-bras-banc-scott",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Zottman un bras, banc Scott"
-   ]
-  },
-  {
-   "identifiant": "glute-bridge-pieds-sur-banc",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Glute bridge pieds sur banc"
-   ]
-  },
-  {
-   "identifiant": "curl-haltere-supination-banc-scott-90",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl haltère supination, banc Scott 90°"
    ]
   },
   {
