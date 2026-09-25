@@ -4,6 +4,8 @@
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",
   "back-squat",
+  "bras-tendu-contre-la-poitrine",
+  "bras-tendu-contre-le-mur",
   "burpees",
   "crunch",
   "developpe-couche-barre",
@@ -16,132 +18,30 @@
   "elliptique-mise-en-route",
   "elliptique-recuperation-active",
   "elliptique-retour-au-calme",
+  "etirement-du-piriforme-assis",
   "fentes-alternees",
+  "flexion-avant-jambes-tendues",
   "gainage-planche",
   "hip-thrust-barre",
   "jumping-jacks",
   "leg-curl-allonge",
   "mountain-climbers",
+  "pigeon-assis",
   "pompes",
+  "position-de-l-enfant-balasana",
   "releves-de-jambes",
+  "respiration-diaphragmatique-allongee",
   "rowing-barre-buste-penche-pronation",
   "souleve-de-terre",
   "squats",
   "superman",
+  "suspension-a-la-barre",
+  "torsion-allongee",
+  "torsion-allongee-genoux",
   "tractions-pull-up",
   "transition"
  ],
  "restants": [
-  {
-   "identifiant": "respiration-diaphragmatique-allongee",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Respiration diaphragmatique allongée"
-   ],
-   "slugs": [
-    "respiration-diaphragmatique-allongee"
-   ]
-  },
-  {
-   "identifiant": "torsion-allongee-genoux",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Torsion allongée genoux"
-   ],
-   "slugs": [
-    "torsion-allongee-genoux"
-   ]
-  },
-  {
-   "identifiant": "torsion-allongee",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Torsion allongée"
-   ],
-   "slugs": [
-    "torsion-allongee"
-   ]
-  },
-  {
-   "identifiant": "etirement-du-piriforme-assis",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Étirement du piriforme assis"
-   ],
-   "slugs": [
-    "etirement-du-piriforme-assis"
-   ]
-  },
-  {
-   "identifiant": "pigeon-assis",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Pigeon assis"
-   ],
-   "slugs": [
-    "pigeon-assis"
-   ]
-  },
-  {
-   "identifiant": "flexion-avant-jambes-tendues",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Flexion avant jambes tendues"
-   ],
-   "slugs": [
-    "flexion-avant-jambes-tendues"
-   ]
-  },
-  {
-   "identifiant": "position-de-l-enfant-balasana",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Position de l'enfant (Balasana)"
-   ],
-   "slugs": [
-    "position-de-l-enfant-balasana"
-   ]
-  },
-  {
-   "identifiant": "suspension-a-la-barre",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Suspension à la barre"
-   ],
-   "slugs": [
-    "suspension-a-la-barre"
-   ]
-  },
-  {
-   "identifiant": "bras-tendu-contre-le-mur",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Bras tendu contre le mur"
-   ],
-   "slugs": [
-    "bras-tendu-contre-le-mur"
-   ]
-  },
-  {
-   "identifiant": "bras-tendu-contre-la-poitrine",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Bras tendu contre la poitrine"
-   ],
-   "slugs": [
-    "bras-tendu-contre-la-poitrine"
-   ]
-  },
   {
    "identifiant": "bras-tendu-derriere",
    "surface": "etirement",
@@ -4205,11 +4105,11 @@
   }
  ],
  "chiffres": {
-  "faits": 30,
-  "restants": 309,
+  "faits": 40,
+  "restants": 299,
   "total": 343,
   "par_surface": {
-   "etirement": 27,
+   "etirement": 17,
    "musculation": 189,
    "piscine": 19,
    "piscine-protocole": 41,
