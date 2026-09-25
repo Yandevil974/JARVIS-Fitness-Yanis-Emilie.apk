@@ -2,13 +2,23 @@
  "faits": [
   "abduction-assise-machine",
   "back-squat",
+  "burpees",
+  "crunch",
   "developpe-couche-barre",
   "developpe-militaire-debout",
   "dips",
+  "fentes-alternees",
+  "gainage-planche",
   "hip-thrust-barre",
+  "jumping-jacks",
   "leg-curl-allonge",
+  "mountain-climbers",
+  "pompes",
+  "releves-de-jambes",
   "rowing-barre-buste-penche-pronation",
   "souleve-de-terre",
+  "squats",
+  "superman",
   "tractions-pull-up"
  ],
  "restants": [
@@ -1369,8 +1379,8 @@
   },
   {
    "identifiant": "dead-bug",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
+   "surface": "musculation",
+   "athlete": "femme",
    "noms": [
     "Dead bug"
    ],
@@ -1497,17 +1507,6 @@
    ],
    "slugs": [
     "clamshell-a-l-elastique"
-   ]
-  },
-  {
-   "identifiant": "mountain-climbers",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Mountain climbers"
-   ],
-   "slugs": [
-    "mountain-climbers"
    ]
   },
   {
@@ -2214,17 +2213,6 @@
    ]
   },
   {
-   "identifiant": "gainage-planche",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Gainage planche"
-   ],
-   "slugs": [
-    "gainage-planche"
-   ]
-  },
-  {
    "identifiant": "glute-ham-raise",
    "surface": "musculation",
    "athlete": "homme",
@@ -2368,17 +2356,6 @@
    ]
   },
   {
-   "identifiant": "releves-de-jambes",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Relevés de jambes"
-   ],
-   "slugs": [
-    "releves-de-jambes"
-   ]
-  },
-  {
    "identifiant": "releves-de-jambes-suspendu",
    "surface": "musculation",
    "athlete": "homme",
@@ -2511,17 +2488,6 @@
    ]
   },
   {
-   "identifiant": "pompes",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Pompes"
-   ],
-   "slugs": [
-    "pompes"
-   ]
-  },
-  {
    "identifiant": "tirage-vertical-prise-pronation",
    "surface": "musculation",
    "athlete": "homme",
@@ -2556,43 +2522,23 @@
   },
   {
    "identifiant": "aqua-jogging-sur-place",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
-    "Aqua-jogging sur place",
     "Aqua-jogging sur place"
    ],
    "slugs": [
-    "aqua-jogging-sur-place",
-    "aqua-jogging-sur-place",
-    "aqua-jogging-sur-place",
-    "aqua-jogging-sur-place",
-    "aqua-jogging-sur-place",
-    "aqua-jogging-sur-place",
-    "aqua-jogging-sur-place",
-    "aqua-jogging-sur-place",
     "aqua-jogging-sur-place"
    ]
   },
   {
    "identifiant": "mobilite-epaules-aquatique",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
-    "Mobilité épaules aquatique",
-    "Mobilité épaules aquatique",
     "Mobilité épaules aquatique"
    ],
    "slugs": [
-    "mobilite-epaules-aquatique",
-    "mobilite-epaules-aquatique",
     "mobilite-epaules-aquatique"
    ]
   },
@@ -2620,7 +2566,7 @@
   },
   {
    "identifiant": "ciseaux-au-bord",
-   "surface": "tabata-aqua",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
     "Ciseaux au bord"
@@ -2631,16 +2577,12 @@
   },
   {
    "identifiant": "etirements-au-bord",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
-    "Étirements au bord",
-    "Étirements au bord",
     "Étirements au bord"
    ],
    "slugs": [
-    "etirements-au-bord",
-    "etirements-au-bord",
     "etirements-au-bord"
    ]
   },
@@ -2668,7 +2610,7 @@
   },
   {
    "identifiant": "retour-au-calme",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
     "Retour au calme"
@@ -2679,16 +2621,12 @@
   },
   {
    "identifiant": "mobilite-hanches-chevilles",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
-    "Mobilité hanches / chevilles",
-    "Mobilité hanches / chevilles",
     "Mobilité hanches / chevilles"
    ],
    "slugs": [
-    "mobilite-hanches-chevilles",
-    "mobilite-hanches-chevilles",
     "mobilite-hanches-chevilles"
    ]
   },
@@ -2705,46 +2643,24 @@
   },
   {
    "identifiant": "deplacements-lateraux-4-m",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
-    "Déplacements latéraux (4 m)",
     "Déplacements latéraux (4 m)"
    ],
    "slugs": [
-    "deplacements-lateraux-4-m",
-    "deplacements-lateraux-4-m",
-    "deplacements-lateraux-4-m",
-    "deplacements-lateraux-4-m",
-    "deplacements-lateraux-4-m",
-    "deplacements-lateraux-4-m",
-    "deplacements-lateraux-4-m",
-    "deplacements-lateraux-4-m",
     "deplacements-lateraux-4-m"
    ]
   },
   {
    "identifiant": "nage-douce",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
-    "Nage douce",
-    "Nage douce sur place",
-    "Nage douce sur place",
-    "Nage douce sur place"
+    "Nage douce"
    ],
    "slugs": [
-    "nage-douce",
-    "nage-douce-sur-place",
-    "nage-douce-sur-place",
-    "nage-douce-sur-place"
+    "nage-douce"
    ]
   },
   {
@@ -2760,22 +2676,12 @@
   },
   {
    "identifiant": "recup-entre-tabatas",
-   "surface": "piscine-protocole",
+   "surface": "piscine",
    "athlete": "femme",
    "noms": [
-    "Récup entre tabatas",
-    "Récup entre tabatas",
-    "Récup entre tabatas",
-    "Récup entre tabatas",
-    "Récup entre tabatas",
     "Récup entre tabatas"
    ],
    "slugs": [
-    "recup-entre-tabatas",
-    "recup-entre-tabatas",
-    "recup-entre-tabatas",
-    "recup-entre-tabatas",
-    "recup-entre-tabatas",
     "recup-entre-tabatas"
    ]
   },
@@ -2814,8 +2720,8 @@
   },
   {
    "identifiant": "montees-de-genoux",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
+   "surface": "piscine",
+   "athlete": "femme",
    "noms": [
     "Montées de genoux"
    ],
@@ -2878,6 +2784,33 @@
    ]
   },
   {
+   "identifiant": "aqua-jogging-sur-place",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place"
+   ],
+   "slugs": [
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place"
+   ]
+  },
+  {
    "identifiant": "echauffement-marche-aquatique",
    "surface": "piscine-protocole",
    "athlete": "femme",
@@ -2896,6 +2829,21 @@
     "echauffement-marche-aquatique",
     "echauffement-marche-aquatique",
     "echauffement-marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "mobilite-epaules-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique"
+   ],
+   "slugs": [
+    "mobilite-epaules-aquatique",
+    "mobilite-epaules-aquatique",
+    "mobilite-epaules-aquatique"
    ]
   },
   {
@@ -3087,6 +3035,21 @@
    ]
   },
   {
+   "identifiant": "etirements-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Étirements au bord",
+    "Étirements au bord",
+    "Étirements au bord"
+   ],
+   "slugs": [
+    "etirements-au-bord",
+    "etirements-au-bord",
+    "etirements-au-bord"
+   ]
+  },
+  {
    "identifiant": "gainage-vertical-au-bord",
    "surface": "piscine-protocole",
    "athlete": "femme",
@@ -3178,6 +3141,32 @@
    ]
   },
   {
+   "identifiant": "retour-au-calme",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Retour au calme"
+   ],
+   "slugs": [
+    "retour-au-calme"
+   ]
+  },
+  {
+   "identifiant": "mobilite-hanches-chevilles",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles"
+   ],
+   "slugs": [
+    "mobilite-hanches-chevilles",
+    "mobilite-hanches-chevilles",
+    "mobilite-hanches-chevilles"
+   ]
+  },
+  {
    "identifiant": "recup-courte-marche",
    "surface": "piscine-protocole",
    "athlete": "femme",
@@ -3234,6 +3223,33 @@
    ]
   },
   {
+   "identifiant": "deplacements-lateraux-4-m",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)"
+   ],
+   "slugs": [
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m"
+   ]
+  },
+  {
    "identifiant": "echauffement-nage-douce",
    "surface": "piscine-protocole",
    "athlete": "femme",
@@ -3263,6 +3279,23 @@
     "echauffement-soigneux-nage-douce",
     "echauffement-soigneux-nage-douce",
     "echauffement-soigneux-nage-douce"
+   ]
+  },
+  {
+   "identifiant": "nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Nage douce",
+    "Nage douce sur place",
+    "Nage douce sur place",
+    "Nage douce sur place"
+   ],
+   "slugs": [
+    "nage-douce",
+    "nage-douce-sur-place",
+    "nage-douce-sur-place",
+    "nage-douce-sur-place"
    ]
   },
   {
@@ -3373,6 +3406,27 @@
    ]
   },
   {
+   "identifiant": "recup-entre-tabatas",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas"
+   ],
+   "slugs": [
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas"
+   ]
+  },
+  {
    "identifiant": "nager-fractionne-1-6",
    "surface": "piscine-protocole",
    "athlete": "femme",
@@ -3427,6 +3481,33 @@
     "nager-fractionne-8-10",
     "nager-fractionne-9-10",
     "nager-fractionne-10-10"
+   ]
+  },
+  {
+   "identifiant": "montees-de-genoux",
+   "surface": "piscine-protocole",
+   "athlete": "femme",
+   "noms": [
+    "Montées de genoux",
+    "Montées de genoux",
+    "Montées de genoux",
+    "Montées de genoux",
+    "Montées de genoux",
+    "Montées de genoux",
+    "Montées de genoux",
+    "Montées de genoux",
+    "Montées de genoux"
+   ],
+   "slugs": [
+    "montees-de-genoux",
+    "montees-de-genoux",
+    "montees-de-genoux",
+    "montees-de-genoux",
+    "montees-de-genoux",
+    "montees-de-genoux",
+    "montees-de-genoux",
+    "montees-de-genoux",
+    "montees-de-genoux"
    ]
   },
   {
@@ -3870,13 +3951,24 @@
   },
   {
    "identifiant": "battements-de-jambes",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
+   "surface": "tabata-aqua",
+   "athlete": "femme",
    "noms": [
     "Battements de jambes"
    ],
    "slugs": [
     "battements-de-jambes"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-au-bord",
+   "surface": "tabata-aqua",
+   "athlete": "femme",
+   "noms": [
+    "Ciseaux au bord"
+   ],
+   "slugs": [
+    "ciseaux-au-bord"
    ]
   },
   {
@@ -3902,6 +3994,17 @@
    ]
   },
   {
+   "identifiant": "montees-de-genoux",
+   "surface": "tabata-aqua",
+   "athlete": "femme",
+   "noms": [
+    "Montées de genoux"
+   ],
+   "slugs": [
+    "montees-de-genoux"
+   ]
+  },
+  {
    "identifiant": "repos-actif",
    "surface": "tabata-au-sol",
    "athlete": "homme",
@@ -3910,17 +4013,6 @@
    ],
    "slugs": [
     "repos-actif"
-   ]
-  },
-  {
-   "identifiant": "fentes-alternees",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Fentes alternées"
-   ],
-   "slugs": [
-    "fentes-alternees"
    ]
   },
   {
@@ -3935,6 +4027,17 @@
    ]
   },
   {
+   "identifiant": "battements-de-jambes",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Battements de jambes"
+   ],
+   "slugs": [
+    "battements-de-jambes"
+   ]
+  },
+  {
    "identifiant": "dips-au-bord",
    "surface": "tabata-au-sol",
    "athlete": "homme",
@@ -3946,14 +4049,14 @@
    ]
   },
   {
-   "identifiant": "burpees",
+   "identifiant": "dead-bug",
    "surface": "tabata-au-sol",
    "athlete": "homme",
    "noms": [
-    "Burpees"
+    "Dead bug"
    ],
    "slugs": [
-    "burpees"
+    "dead-bug"
    ]
   },
   {
@@ -4023,17 +4126,6 @@
    ]
   },
   {
-   "identifiant": "crunch",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Crunch"
-   ],
-   "slugs": [
-    "crunch"
-   ]
-  },
-  {
    "identifiant": "squats-doux",
    "surface": "tabata-au-sol",
    "athlete": "homme",
@@ -4056,6 +4148,17 @@
    ]
   },
   {
+   "identifiant": "montees-de-genoux",
+   "surface": "tabata-au-sol",
+   "athlete": "homme",
+   "noms": [
+    "Montées de genoux"
+   ],
+   "slugs": [
+    "montees-de-genoux"
+   ]
+  },
+  {
    "identifiant": "high-knees",
    "surface": "tabata-au-sol",
    "athlete": "homme",
@@ -4075,17 +4178,6 @@
    ],
    "slugs": [
     "pompes-inclinees"
-   ]
-  },
-  {
-   "identifiant": "jumping-jacks",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Jumping jacks"
-   ],
-   "slugs": [
-    "jumping-jacks"
    ]
   },
   {
@@ -4201,17 +4293,6 @@
    ]
   },
   {
-   "identifiant": "squats",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Squats"
-   ],
-   "slugs": [
-    "squats"
-   ]
-  },
-  {
    "identifiant": "squats-sumo",
    "surface": "tabata-au-sol",
    "athlete": "homme",
@@ -4221,17 +4302,26 @@
    "slugs": [
     "squats-sumo"
    ]
-  },
-  {
-   "identifiant": "superman",
-   "surface": "tabata-au-sol",
-   "athlete": "homme",
-   "noms": [
-    "Superman"
-   ],
-   "slugs": [
-    "superman"
-   ]
   }
- ]
+ ],
+ "chiffres": {
+  "faits": 20,
+  "restants": 319,
+  "total": 343,
+  "images_restantes": 638,
+  "par_surface": {
+   "cardio-elliptique": 5,
+   "echauffement": 3,
+   "etirement": 29,
+   "musculation": 189,
+   "piscine": 19,
+   "piscine-protocole": 41,
+   "tabata-aqua": 6,
+   "tabata-au-sol": 27
+  },
+  "par_athlete": {
+   "femme": 129,
+   "homme": 190
+  }
+ }
 }
