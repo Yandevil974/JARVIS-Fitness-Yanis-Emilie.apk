@@ -41,3 +41,19 @@ visage A), lue case par case avant acceptation.
 - Lot « style » : 26 GIF ayant une case sans vert lime (`production/style-a-reprendre.json`),
   reprise sans toucher aux gestes, selon la décision utilisateur §3 de `CE-QUI-COINCE.md`.
 - Relecture cumulative : 310 couples relus, 21 restent à relire (feuilles de 3).
+
+
+---
+
+## État lot 47 (build exécuté)
+
+- `association-331.json` : table clef → chemins `/media` d'origine (193 clefs ; les 138
+  noms SVG sont couverts par le patch `EXO_GIFS` + le hook `REFONTE_MEDIA`).
+- `overlay-report.json` : rapport chiffré de l'overlay (copies, écrasements, patches).
+- APK **non signé** construit : `.cache/build/Yanis-Fitness-Evolution-1.4.9-non-signe.apk`
+  (103 440 048 o, 331 GIF intégrés, contrôles node OK). `.cache` n'est pas persistant :
+  régénérer via `tools/rebuild-assoc-331.py` + `tools/overlay-331.py` + repackage.
+- Athlète par profil : 6 identifiants partagés homme/femme résolus dynamiquement par
+  `activeProfile` (localStorage `jarvis_fitness_v3`) — Émilie voit la femme, Yanis l'homme.
+- **Manque uniquement : la clé de signature utilisateur** (jamais fabriquée ni publiée),
+  puis dépôt `downloads/…-1.4.9.apk` + `.sha256` + `.fidelity.json` + lien raw unique.

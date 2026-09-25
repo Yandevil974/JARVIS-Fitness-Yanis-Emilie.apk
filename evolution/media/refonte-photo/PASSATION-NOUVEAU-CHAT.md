@@ -145,6 +145,18 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
    et présenter la planche de contrôle dans le chat avec un tableau numéroté.
 4. Clé de signature : **ne jamais la fabriquer ni la publier**. L'utilisateur la fournira
    au moment de la construction de l'APK final.
+5. **Build 1.4.9 (lot 47) : APK NON SIGNÉ construit et contrôlé.** Chaîne rejouable après
+   reset : (a) extraire web 1.4.8 + payloads node (`new Function('return JSON.parse(`…`)')`
+   sur les 2 littéraux `=JSON.parse(`…`)` du bundle — le parse Python échoue sur `\escape`),
+   (b) `python3 evolution/media/tools/rebuild-assoc-331.py`,
+   (c) `python3 evolution/media/tools/overlay-331.py` (copie 331 GIF + écrase 146 anciens
+   chemins + patch payloads EXO_GIFS/imgs + hook `REFONTE_MEDIA` avec 6 ids duaux
+   homme/femme sélectionnés par `activeProfile` de `jarvis_fitness_v3`),
+   (d) repackage zip (remplacer `assets/public/**`, ajouter les 331 gifs, retirer les
+   signatures META-INF) → `.cache/build/Yanis-Fitness-Evolution-1.4.9-non-signe.apk`,
+   (e) contrôles node (syntaxe, payloads, 331 chemins GIF), (f) **signature avec la clé
+   utilisateur** → `downloads/Yanis-Fitness-Evolution-1.4.9.apk` + `.sha256` + `.fidelity.json`
+   + lien raw unique. Détail : `verification/VERIFICATION-2026-09-25.md` §65.
 
 ## 8. Livraison finale (rappel)
 

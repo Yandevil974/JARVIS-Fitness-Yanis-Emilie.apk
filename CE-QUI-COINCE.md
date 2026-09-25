@@ -51,6 +51,9 @@ aqua tabata 6, étirements 29, elliptique 5, échauffement 3.
    retour ; aucun n'est clos sans vous.
 6. **Clé de signature** : absente de cet espace de travail, je ne la fabrique ni ne la
    publie ; vous la recollerez au moment de la construction finale.
+   **État lot 47 : l'APK 1.4.9 NON SIGNÉ est construit et contrôlé** (331/331 GIF
+   intégrés, hook athlète-par-profil, `node --check` OK, aperçu live lancé). Il ne manque
+   QUE votre clé pour signer, déposer dans `downloads/` et donner le lien raw unique.
 
 ## 4. Contraintes d'environnement (sans impact sur le contenu)
 

@@ -1,0 +1,18 @@
+{
+ "copies": 331,
+ "overwrites": 146,
+ "ambigus": 30,
+ "payload_exo": 72,
+ "payload_img": 133,
+ "refonte_keys": 325,
+ "dual_ids": [
+  "battements-de-jambes",
+  "dead-bug",
+  "gainage-planche",
+  "montees-de-genoux",
+  "mountain-climbers",
+  "releves-de-jambes"
+ ],
+ "media_files": 535,
+ "bundle_size": 1171561
+}

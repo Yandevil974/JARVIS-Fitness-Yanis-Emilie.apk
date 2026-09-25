@@ -652,3 +652,32 @@ map, controles, puis signature AVEC LA CLE UTILISATEUR et publication 1.4.9.
 
 **331 / 331 couples valides, 0 restant.** Relecture cumulative : **310 relus**,
 **21 restent a relire**. Style : 26 GIF. Livraison : paquet pret, cle utilisateur attendue.
+
+## 65. Build 1.4.9 non signe : overlay refonte 331 sur le bundle 1.4.8 (lot 47)
+
+Pipeline outille et rejouable (reset #33 surmonte, tout reconstruit depuis `50de383`) :
+- `evolution/media/tools/rebuild-assoc-331.py` → `livraison/association-331.json`
+  (193/331 clefs appariees a leurs chemins `/media/…` d'origine ; les 138 restantes sont
+  les noms musculation dessines en SVG par `EXO_GIFS`, couverts par le hook).
+- `evolution/media/tools/overlay-331.py` (idempotent, repart du bundle ORIGINAL de
+  `downloads/Yanis-Fitness-Evolution-1.4.8.apk`) :
+  1. 331 GIF copies vers `media/refonte-<ident>-<athlete>.gif`, **331/331 SHA manifeste OK** ;
+  2. 146 anciens chemins `/media` ecrases (non ambigus), 30 ambigus laisses intacts
+     (couverts par redirection payload + hook) ;
+  3. payloads re-emis : **72/72 `EXO_GIFS`** svg → `<img class="exo-gif" src="/media/refonte-…">`,
+     **133 imgs** MUSCU_GUIDES/POOL_GUIDES/ECHAUFFEMENT redirigees ;
+  4. hook bundle : `const REFONTE_MEDIA` (325 ids, dont **6 duaux {homme,femme}** :
+     battements-de-jambes, dead-bug, gainage-planche, montees-de-genoux, mountain-climbers,
+     releves-de-jambes) + `__refontePick` (profil actif lu dans `localStorage
+     jarvis_fitness_v3`, cache 1,5 s → **athlete = proprietaire du profil**, exigence user)
+     + pre-hook `JarvisReviewedMedia` + surcharge de la map `eo` (utilisee par `Kh`).
+- Controles : `node --check` SYNTAX OK ; payloads reparsent (2/2) ; **331 chemins hook,
+  0 manquant, 0 non-GIF** ; media 535 fichiers (204 + 331).
+- APK non signe : `.cache/build/Yanis-Fitness-Evolution-1.4.9-non-signe.apk`
+  (103 440 048 octets ; 326 entrees remplacees, 331 ajoutees, signatures META-INF retirees,
+  testzip OK, hook + 331 gifs verifies DANS le zip). Non persiste (.cache) : le regenerer
+  avec overlay-331.py + repackage.
+- Apercu live : `python3 -m http.server 8080 --bind 0.0.0.0 --directory .cache/web-148`.
+- Restant : signature **avec la cle utilisateur uniquement** (jamais fabriquee/publiee),
+  depot `downloads/Yanis-Fitness-Evolution-1.4.9.apk` + `.sha256` + `.fidelity.json`,
+  lien raw unique.
