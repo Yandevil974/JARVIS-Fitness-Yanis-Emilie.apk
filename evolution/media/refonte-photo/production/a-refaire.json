@@ -1,13 +1,7 @@
 {
  "regle": "Une planche n'est acceptee qu'apres lecture de SES DEUX cases. Toute planche refusee est refaite avant d'etre livree : elle n'est jamais comptee comme faite.",
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
- "aRefaire": [
-  {
-   "mouvement": "elevations-laterales-lean-away (homme)",
-   "motif": "non produite : le générateur a refusé la 1re formulation (aucune image) puis le plafond de 10 générations du tour a été atteint",
-   "prescription": "Élévations latérales lean away — 3 x 12-15, appui sur un support, un bras travaille"
-  }
- ],
+ "aRefaire": [],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",
@@ -86,6 +80,16 @@
   "ALIAS : quand un nom d'origine est rataché à une cible différente dans l'app, c'est la CIBLE qui décrit la machine et le geste (ex. « rowing assis au cou » se dessine en TIRAGE VERTICAL prise large).",
   "MOUVEMENT UNILATERAL : écrire explicitement que le second bras/membre reste immobile et ne touche jamais l'engin, du début à la fin.",
   "SENS DE LECTURE : une planche se lit de GAUCHE (début) à DROITE (fin) ; l'écrire explicitement dans le prompt et le vérifier à la lecture.",
-  "MYO-REPS / mini-séries : préciser que les deux cases sont presque identiques et que le membre NE revient PAS à la position de départ."
+  "MYO-REPS / mini-séries : préciser que les deux cases sont presque identiques et que le membre NE revient PAS à la position de départ.",
+  "VERIFIER L'IDENTIFIANT : avant d'ecrire un prompt, confirmer que le fichier porte un identifiant present dans plan.json (verif-ids.py)."
+ ],
+ "erreursProduction": [
+  {
+   "le": "25/09/2026",
+   "type": "identifiant inventé",
+   "detail": "5 planches ont ete dessinees pour des identifiants qui n'existent PAS dans le plan (leg-press-pieds-hauts, fentes-marchees-barre, fentes-marchees-halteres, step-up-barre, step-up-halteres, souleve-de-terre-une-jambe). Les images etaient bonnes mais ne correspondaient a aucune cible : elles ne sont pas comptees.",
+   "correction": "outil ajoute : evolution/media/tools/verif-ids.py -> refuse toute planche dont le nom n'est pas un identifiant reel du plan ; a lancer AVANT la conversion",
+   "recollage": "les gestes correspondaient aux cibles reelles fentes-marchees (halteres), step-up-haut (barre) ; les 4 autres ont ete ecartees"
+  }
  ]
 }

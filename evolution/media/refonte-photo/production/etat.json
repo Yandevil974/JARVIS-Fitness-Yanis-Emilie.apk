@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 96,
-  "restants": 235,
+  "valides": 102,
+  "restants": 229,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 49,
+   "musculation": 55,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 153,
+   "musculation": 147,
    "piscine-protocole": 40,
    "piscine": 9,
    "tabata-aqua": 6,
@@ -59,6 +59,7 @@
   "echauffement-series-d-approche|homme",
   "elevations-laterales-assises-variante|homme",
   "elevations-laterales-assises|homme",
+  "elevations-laterales-lean-away|homme",
   "elliptique-fractionne|femme",
   "elliptique-mise-en-route|femme",
   "elliptique-recuperation-active|femme",
@@ -74,11 +75,15 @@
   "fentes-arriere-alternees|femme",
   "fentes-arriere-au-poids-du-corps|homme",
   "fentes-avant-alternees|femme",
+  "fentes-barre|homme",
   "fentes-bulgares-halteres-pied-avant-sureleve|homme",
   "fentes-bulgares-pied-arriere-sureleve|femme",
+  "fentes-marchees|homme",
   "flexion-avant-jambes-tendues|homme",
+  "front-squat|homme",
   "gainage-planche|homme",
   "grenouille-plantes-jointes|homme",
+  "hack-squat|homme",
   "hip-thrust-barre|femme",
   "jumping-jacks|homme",
   "kickback-a-la-poulie|femme",
@@ -110,6 +115,7 @@
   "souleve-de-terre|homme",
   "split-squat-barbell-pied-avant-sureleve|homme",
   "squats|homme",
+  "step-up-haut|homme",
   "superman|homme",
   "suspension-a-la-barre|homme",
   "talon-vers-la-fesse-debout|homme",
@@ -134,14 +140,6 @@
    "surface": "musculation",
    "noms": [
     "Dead bug avec rotation"
-   ]
-  },
-  {
-   "identifiant": "elevations-laterales-lean-away",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales lean away"
    ]
   },
   {
@@ -383,14 +381,6 @@
    "surface": "musculation",
    "noms": [
     "Extensions triceps barre EZ"
-   ]
-  },
-  {
-   "identifiant": "fentes-barre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Fentes barre"
    ]
   },
   {
@@ -1087,27 +1077,11 @@
    ]
   },
   {
-   "identifiant": "fentes-marchees",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Fentes marchées"
-   ]
-  },
-  {
    "identifiant": "pont-fessier-au-sol-activation",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Pont fessier au sol — activation"
-   ]
-  },
-  {
-   "identifiant": "front-squat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Front squat"
    ]
   },
   {
@@ -1143,14 +1117,6 @@
    ]
   },
   {
-   "identifiant": "hack-squat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Hack squat"
-   ]
-  },
-  {
    "identifiant": "pullover-haltere-plat",
    "athlete": "homme",
    "surface": "musculation",
@@ -1172,14 +1138,6 @@
    "surface": "musculation",
    "noms": [
     "Soulevé de terre roumain haltères"
-   ]
-  },
-  {
-   "identifiant": "step-up-haut",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Step-up haut"
    ]
   },
   {
