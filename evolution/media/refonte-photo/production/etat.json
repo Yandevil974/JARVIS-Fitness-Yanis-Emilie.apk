@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 154,
-  "restants": 177,
+  "valides": 161,
+  "restants": 170,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 107,
+   "musculation": 114,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 95,
+   "musculation": 88,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -45,6 +45,7 @@
   "bras-tendu-devant-main-tiree|homme",
   "bulgarian-split-squat|homme",
   "burpees|homme",
+  "cables-croises-rotation-externe|homme",
   "cables-croises|homme",
   "california-press-barre-au-cou|homme",
   "circuit-abdominaux-crunch-releves-gainage|femme",
@@ -52,12 +53,14 @@
   "clamshell-a-l-elastique|femme",
   "cobra-doux|homme",
   "coude-au-dessus-de-la-tete|homme",
+  "crunch-a-la-poulie|homme",
   "crunch-sur-swiss-ball|homme",
   "crunch|homme",
   "curl-barre|homme",
   "curl-concentration|homme",
   "curl-haltere-supination-banc-scott-90|homme",
   "curl-marteau-assis|homme",
+  "curl-poulie-basse-supination|homme",
   "curl-poulie-basse|homme",
   "curl-scott-barre-ez-pronation|homme",
   "curl-scott-barre-ez-supination|homme",
@@ -77,6 +80,7 @@
   "developpe-militaire-halteres-assis|femme",
   "developpe-militaire-test-1rm|homme",
   "dips|homme",
+  "ecartes-cables-incline|homme",
   "echauffement-mise-en-route|homme",
   "echauffement-mobilite|homme",
   "echauffement-series-d-approche|homme",
@@ -153,6 +157,7 @@
   "rowing-barre-ez-supination-buste-penche|homme",
   "rowing-haltere-buste-penche|homme",
   "rowing-haltere-un-bras-coude-ouvert|homme",
+  "rowing-haltere-un-bras-prise-neutre|homme",
   "rowing-haltere-un-bras|homme",
   "safety-bar-squat-ou-barre-classique|homme",
   "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
@@ -161,6 +166,7 @@
   "souleve-de-terre|homme",
   "split-squat-barbell-pied-avant-sureleve|homme",
   "split-squat-poulie-basse|homme",
+  "squat-au-poids-du-corps|homme",
   "squats|homme",
   "step-up-haut|homme",
   "step-up-sur-banc-hauteur-du-genou|femme",
@@ -172,6 +178,7 @@
   "torsion-allongee|homme",
   "tractions-prise-neutre-chin-up|homme",
   "tractions-pull-up|homme",
+  "tractions-supination-chin-up|homme",
   "transition|femme",
   "triceps-extensions-halteres-banc-plat|homme",
   "une-jambe-tendue-une-pliee|homme",
@@ -212,14 +219,6 @@
    ]
   },
   {
-   "identifiant": "curl-poulie-basse-supination",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl poulie basse, supination"
-   ]
-  },
-  {
    "identifiant": "developpe-haltere-un-bras-debout",
    "athlete": "homme",
    "surface": "musculation",
@@ -228,43 +227,11 @@
    ]
   },
   {
-   "identifiant": "rowing-haltere-un-bras-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing haltère un bras, prise neutre"
-   ]
-  },
-  {
    "identifiant": "bulgarian-split-squat-halteres",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Bulgarian split squat haltères"
-   ]
-  },
-  {
-   "identifiant": "cables-croises-rotation-externe",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Câbles croisés + rotation externe"
-   ]
-  },
-  {
-   "identifiant": "ecartes-cables-incline",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Écartés câbles incliné"
-   ]
-  },
-  {
-   "identifiant": "tractions-supination-chin-up",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Tractions supination (chin-up)"
    ]
   },
   {
@@ -297,14 +264,6 @@
    "surface": "musculation",
    "noms": [
     "Drop lunges (fentes sautées contrôlées)"
-   ]
-  },
-  {
-   "identifiant": "squat-au-poids-du-corps",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Squat au poids du corps"
    ]
   },
   {
@@ -345,14 +304,6 @@
    "surface": "musculation",
    "noms": [
     "Élévations latérales coude à 90°"
-   ]
-  },
-  {
-   "identifiant": "crunch-a-la-poulie",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Crunch à la poulie"
    ]
   },
   {

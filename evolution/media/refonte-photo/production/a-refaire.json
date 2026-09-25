@@ -4,9 +4,24 @@
  "aRefaire": [
   {
    "mouvement": "developpe-haltere-un-bras-debout (homme)",
-   "planche": "lot21/developpe-haltere-un-bras-debout.png",
-   "motif": "1er refus : le vert est pose sur l'EPAULE GAUCHE (bras libre) aux deux cases au lieu du deltoide DROIT qui travaille",
-   "prescription": "Développé haltère un bras debout"
+   "identifiant": "developpe-haltere-un-bras-debout",
+   "athlete": "homme",
+   "motif": "3e refus : case depart encore vert sur l epaule du bras LIBRE (la case fin etait bonne cette fois)",
+   "planche": "lot23/developpe-haltere-un-bras-debout.png"
+  },
+  {
+   "mouvement": "mountain-climbers (femme)",
+   "identifiant": "mountain-climbers",
+   "athlete": "femme",
+   "motif": "1er refus : les deux cases montrent la MEME jambe avant, aucun échange",
+   "planche": "lot23/mountain-climbers.png"
+  },
+  {
+   "mouvement": "developpe-couche-halteres (femme)",
+   "identifiant": "developpe-couche-halteres",
+   "athlete": "femme",
+   "motif": "1er refus : un seul haltere tenu a deux mains au lieu d un dans chaque main",
+   "planche": "lot23/developpe-couche-halteres.png"
   }
  ],
  "verifieesEtAcceptees": [

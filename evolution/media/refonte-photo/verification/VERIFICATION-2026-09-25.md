@@ -144,10 +144,25 @@ Relecture batch 4 : 3/3 conformes (curl-marteau-assis, curl-zottman-assis,
 curl-zottman-un-bras-banc-scott). Feuilles : `verification/lot22-01..04.jpg`,
 `verification/relecture-04.jpg`.
 
-## 14. Couverture et suite
+## 15. Lot 23 + relecture batch 5 (meme tour)
 
-Relus sur les six tours : **115 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **154 valides** actuels, **63 restent à relire** (feuilles de 3, mêmes outils).
+Lot 23 : la refusee reprise en regeneration complete (vert decrit par la position dans
+l'image) + 9 neuves. Acceptees 7 : curl-poulie-basse-supination, rowing-haltere-un-bras-prise-neutre,
+cables-croises-rotation-externe (depart mains devant le corps, fin mains ecartees coudes
+colles), ecartes-cables-incline (dos au banc incline), tractions-supination-chin-up,
+squat-au-poids-du-corps, crunch-a-la-poulie. Refusees 3 : developpe-haltere-un-bras-debout
+(3e refus : case depart vert sur l'epaule du bras libre, la case fin etait bonne),
+mountain-climbers (les deux cases montrent la meme jambe avant), developpe-couche-halteres
+(un seul haltere tenu a deux mains).
+Relecture batch 5 : 3/3 conformes (developpe-couche-barre-plat, developpe-couche-barre,
+developpe-halteres-assis-neutre-pronation) ; note mineure : sur 2 de ces 3 planches le vert
+n'apparait que sur la case de travail, ecart cosmetique tolere.
+Feuilles : `verification/lot23-01..04.jpg`, `verification/relecture-05.jpg`.
+
+## 16. Couverture et suite
+
+Relus sur les sept tours : **125 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **161 valides** actuels, **53 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

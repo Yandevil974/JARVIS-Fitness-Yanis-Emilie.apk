@@ -4,14 +4,16 @@ Liste demandée pour revue de votre côté. Tout le reste du flux tourne normale
 (**137 / 331** visuels validés, 194 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. La seule planche encore refusée (je continue dessus au prochain tour)
+## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Développé haltère un bras debout (homme)** — 2 refus | vert posé sur l'épaule du bras LIBRE aux deux cases ; l'édition ciblée de la planche lot 21 n'a rien déplacé | prompt « RIGHT shoulder deltoid », puis édition « déplacer le vert du côté de l'haltère » | régénération complète avec le vert décrit PAR LA POSITION DANS L'IMAGE : « lime green on the shoulder at the LEFT side of the image, the same side as the dumbbell, in both panels » | aucune |
+| **Développé haltère un bras debout (homme)** — 3 refus | vert sur l'épaule du bras LIBRE en case départ (la case fin était bonne au lot 23) | « RIGHT shoulder », édition ciblée, vert « côté gauche de l'image » | vert en **manche complète** : « peindre tout le bras qui tient l'haltère, de l'épaule au coude » — une grande zone se place mieux qu'un petit deltoïde | aucune |
+| **Mountain climbers (femme)** — 1 refus | les deux cases montrent la même jambe avant | prompt « les jambes ont permuté » | édition de la case 1 : « dans la case DROITE seulement, avancer l'AUTRE genou » | aucune |
+| **Développé couché haltères (femme)** — 1 refus | un seul haltère tenu à deux mains | prompt « un haltère dans chaque main » | insister sur le compte : « DEUX haltères séparés, QUATRE disques visibles, les mains ne se touchent jamais » | aucune |
 
 Clos depuis la dernière liste : rowing-barre-buste-penche-test-3-5-reps (tirage complet obtenu
-par édition de la case fin ; écart résiduel « arrivée au ventre » soumis à votre option du §3).
+par édition ; écart résiduel « arrivée au ventre » soumis à votre option du §3).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
