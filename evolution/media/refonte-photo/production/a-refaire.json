@@ -6,9 +6,25 @@
    "mouvement": "developpe-incline-halteres (femme)",
    "identifiant": "developpe-incline-halteres",
    "athlete": "femme",
-   "motif": "2e refus (lot31) : case1 correcte (deux halteres separes) mais case2 un seul haltere tenu a deux mains ; planche lot31 refusee",
-   "planche": "lot31/developpe-incline-halteres.png",
-   "strategieSuivante": "lot32 : deux cases SIMPLES generees separement (une par case, un haltere par main verrouille, quatre disques) puis assemblage PIL cote a cote (methode qui a resolu elevations-laterales-coude-a-90 au lot30)"
+   "motif": "3e refus (lot32, cases separees) : case1 ambigue, case2 un seul haltere tenu a deux mains",
+   "planche": "lot32/developpe-incline-halteres.png",
+   "strategieSuivante": "lot33 : vue de FACE pied de banc (camera dans l axe des pieds), les deux halteres separes a gauche et a droite du buste, verrou de comptage ; sinon EDITION de la case 2 uniquement"
+  },
+  {
+   "mouvement": "tirage-vertical-prise-large (homme)",
+   "identifiant": "tirage-vertical-prise-large",
+   "athlete": "homme",
+   "motif": "1er refus (lot32) : generation en grille 2x2, tetes coupees, barre absente en case 2",
+   "planche": "lot32/tirage-vertical-prise-large.png",
+   "strategieSuivante": "lot33 : consigne de format explicite EXACTLY TWO panels side by side landscape 2:1, tetes et barre entieres dans les deux cases, cable tendu de la poulie haute a la barre"
+  },
+  {
+   "mouvement": "ab-wheel-roulette (homme)",
+   "identifiant": "ab-wheel-roulette",
+   "athlete": "homme",
+   "motif": "1er refus (lot32) : gestes corrects mais orientation inversee entre les cases (tete a gauche puis a droite)",
+   "planche": "lot32/ab-wheel-roulette.png",
+   "strategieSuivante": "lot33 : ancre d orientation head faces LEFT in BOTH panels"
   }
  ],
  "verifieesEtAcceptees": [

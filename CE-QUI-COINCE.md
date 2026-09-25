@@ -1,19 +1,20 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 31
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 32
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**210 / 331** visuels validés, 121 restants) ; ce fichier ne contient que les points
+(**216 / 331** visuels validés, 115 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. La planche encore refusée (je continue dessus au prochain tour)
+## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Développé incliné haltères (femme)** — 2 refus | lot30 : un seul haltère à deux mains aux deux cases ; lot31 : case 1 correcte (deux haltères séparés) mais case 2 de nouveau un seul haltère à deux mains | verrou texte « deux haltères, quatre disques, mains jamais jointes » | **lot32 : deux cases SIMPLES générées séparément** (une génération par case, un haltère par main verrouillé) **puis assemblage PIL** côte à côte — la méthode qui a résolu élévations-coude-90 (lot30) | aucune |
+| **Développé incliné haltères (femme)** — 3 refus | lot32 en cases séparées : case 1 ambiguë, case 2 un seul haltère à deux mains | verrous texte, cases séparées + assemblage PIL | **vue de FACE pied de banc** (caméra dans l'axe des pieds) : les deux haltères séparés à gauche et à droite du buste ; sinon ÉDITION de la case 2 seule | aucune |
+| **Tirage vertical prise large (homme)** — 1 refus | génération en grille 2×2 : têtes coupées, barre absente en case 2 | — | consigne de format explicite : EXACTLY TWO panels side by side, paysage 2:1, têtes et barre entières aux deux cases, câble tendu poulie haute→barre | aucune |
+| **Ab wheel / roulette (homme)** — 1 refus | gestes corrects mais orientation inversée entre les cases (tête à gauche puis à droite) | — | ancre d'orientation « head faces LEFT in BOTH panels » | aucune |
 
-Clos ce tour : **mountain climbers (femme) RÉSOLUE après 9 refus** par la **vue de FACE**
-(caméra basse devant l'athlète, genou avant à gauche de l'image case 1, à droite case 2 —
-la permutation est enfin lisible) ; élévations latérales coude à 90 (cases simples
-assemblées, lot30) ; relevés de jambes incliné (chaussures uniques, lot30).
+Clos ce tour : extensions triceps barre EZ (cases générées inversées, échangées par PIL),
+leg curl machine, relevés de jambes, face pull élastique, tractions prise large,
+développé militaire depuis les pins. Mountain climbers restait clos au lot 31 (vue de FACE).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 210,
-  "restants": 121,
+  "valides": 216,
+  "restants": 115,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 163,
+   "musculation": 169,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 39,
+   "musculation": 33,
    "piscine-protocole": 40,
    "piscine": 9,
    "tabata-aqua": 6,
@@ -94,6 +94,7 @@
   "developpe-militaire-debout|homme",
   "developpe-militaire-halteres-assis-test-3-5-reps|femme",
   "developpe-militaire-halteres-assis|femme",
+  "developpe-militaire-inertie-depuis-les-pins|homme",
   "developpe-militaire-test-1rm|homme",
   "dips|homme",
   "drop-lunges-fentes-controlees|homme",
@@ -122,8 +123,10 @@
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
   "extension-triceps-a-la-poulie|femme",
+  "extensions-triceps-barre-ez|homme",
   "extensions-triceps-poulie|homme",
   "extensions-triceps-pullover-barre-ez|homme",
+  "face-pull-a-l-elastique|femme",
   "face-pull-a-la-poulie|femme",
   "fentes-alternees|homme",
   "fentes-arriere-alternees|femme",
@@ -163,6 +166,7 @@
   "leg-curl-allonge|homme",
   "leg-curl-debout|homme",
   "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
+  "leg-curl-machine|femme",
   "leg-extension|homme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
@@ -187,6 +191,7 @@
   "releves-de-jambes-allongee|femme",
   "releves-de-jambes-allonge|homme",
   "releves-de-jambes-incline|homme",
+  "releves-de-jambes|femme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
   "reverse-crunch|femme",
@@ -224,6 +229,7 @@
   "tirage-vertical-lean-away|homme",
   "torsion-allongee-genoux|homme",
   "torsion-allongee|homme",
+  "tractions-prise-large|homme",
   "tractions-prise-neutre-chin-up|homme",
   "tractions-pull-up|homme",
   "tractions-supination-chin-up|homme",
@@ -234,14 +240,6 @@
   "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  {
-   "identifiant": "extensions-triceps-barre-ez",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Extensions triceps barre EZ"
-   ]
-  },
   {
    "identifiant": "barre-au-front-pushdown-triceps",
    "athlete": "homme",
@@ -283,14 +281,6 @@
    ]
   },
   {
-   "identifiant": "leg-curl-machine",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Leg curl machine"
-   ]
-  },
-  {
    "identifiant": "squat-cycliste",
    "athlete": "homme",
    "surface": "musculation",
@@ -304,14 +294,6 @@
    "surface": "musculation",
    "noms": [
     "Développé haltères décliné, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "developpe-militaire-inertie-depuis-les-pins",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé militaire, inertie depuis les pins"
    ]
   },
   {
@@ -363,14 +345,6 @@
    "surface": "musculation",
    "noms": [
     "Kickback à la poulie — drop set final"
-   ]
-  },
-  {
-   "identifiant": "face-pull-a-l-elastique",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Face pull à l'élastique"
    ]
   },
   {
@@ -432,14 +406,6 @@
    ]
   },
   {
-   "identifiant": "releves-de-jambes",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Relevés de jambes"
-   ]
-  },
-  {
    "identifiant": "releves-de-jambes-suspendu",
    "athlete": "homme",
    "surface": "musculation",
@@ -453,14 +419,6 @@
    "surface": "musculation",
    "noms": [
     "Tirage vertical prise large"
-   ]
-  },
-  {
-   "identifiant": "tractions-prise-large",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Tractions prise large"
    ]
   },
   {

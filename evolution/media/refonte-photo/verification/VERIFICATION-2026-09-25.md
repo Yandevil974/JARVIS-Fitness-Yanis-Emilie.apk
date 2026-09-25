@@ -297,3 +297,27 @@ valides relus**, **39 restent à relire** (feuilles de 3, mêmes outils, aucun r
 vignette). **1 planche en attente** dans `production/a-refaire.json` :
 developpe-incline-halteres (2ᵉ refus). Prochain lot 32 : cette planche en cases simples
 séparées + assemblage PIL, puis poursuite musculation (39) selon le plan.
+
+## 35. Lot 32 : refus en cases separees + musculation (meme tour)
+
+Developpe incline halteres tente en deux cases SIMPLES separees puis assemblees PIL :
+case 2 de nouveau un seul haltere a deux mains -> 3e refus. Huit planches neuves :
+acceptees 6 : extensions-triceps-barre-ez (cases generees inversees, echangees par PIL),
+leg-curl-machine (machine complete, bassin plaque), releves-de-jambes (jambes basses->
+verticale), face-pull-a-l-elastique (ancre = montant du rack, coudes hauts),
+tractions-prise-large (suspension->menton), developpe-militaire-inertie-depuis-les-pins
+(barre au front depuis les pins->verrouillage).
+Refusees 3 : developpe-incline-halteres (3e), tirage-vertical-prise-large (grille 2x2,
+tetes coupees), ab-wheel-roulette (orientation inversee entre cases).
+Relecture batch 13 : 3/3 conformes (fentes-arriere-au-poids-du-corps, fentes-barre,
+fentes-bulgares-halteres-pied-avant-sureleve). Feuilles : `verification/lot32b-01..03.jpg`,
+`verification/relecture-13.jpg`.
+
+## 36. Couverture et suite (etat lot 32)
+
+**216 / 331 couples valides**, 115 restants (protocoles piscine 40, musculation 33,
+tabata au sol 27, piscine guides 9, aqua tabata 6). Relecture cumulative : **174 couples
+valides relus**, **42 restent a relire**. **3 planches en attente** dans
+`production/a-refaire.json` : developpe-incline-halteres (3e refus), tirage-vertical-prise-large
+(1er), ab-wheel-roulette (1er). Prochain lot 33 : ces 3 planches (strategies ci-dessus)
++ 7 planches de musculation.

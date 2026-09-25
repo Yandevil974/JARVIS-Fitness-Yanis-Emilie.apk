@@ -267,6 +267,39 @@
    "myo_reps": false
   },
   {
+   "cle": "back-extension-horizontal|homme",
+   "fichier": "gif/homme/back-extension-horizontal-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Back extension horizontal"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    620,
+    1857
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.55,
+    0.46
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3003,
+   "myo_reps": false
+  },
+  {
    "cle": "back-squat-barre-haute|homme",
    "fichier": "gif/homme/back-squat-barre-haute-homme.gif",
    "frames": 2,
@@ -284,19 +317,19 @@
    ],
    "surface": "musculation",
    "vert_px": [
-    326,
-    2740
+    4126,
+    3233
    ],
    "vert_zone": "milieu-bas",
    "vert_centre": [
-    0.53,
-    0.61
+    0.58,
+    0.62
    ],
    "vert_attendu": [
     "milieu-bas",
     "bas"
    ],
-   "mouvement_px": 0.34,
+   "mouvement_px": 0.3687,
    "myo_reps": false
   },
   {
@@ -333,7 +366,7 @@
     500
    ],
    "taille": [
-    388,
+    382,
     440
    ],
    "boucle": 0,
@@ -342,19 +375,19 @@
    ],
    "surface": "musculation",
    "vert_px": [
-    659,
-    3570
+    746,
+    3689
    ],
    "vert_zone": "milieu-bas",
    "vert_centre": [
-    0.53,
+    0.51,
     0.64
    ],
    "vert_attendu": [
     "milieu-bas",
     "bas"
    ],
-   "mouvement_px": 0.3001,
+   "mouvement_px": 0.4261,
    "myo_reps": true
   },
   {
@@ -421,6 +454,31 @@
     "bas"
    ],
    "mouvement_px": 0.3437,
+   "myo_reps": false
+  },
+  {
+   "cle": "bird-dog|femme",
+   "fichier": "gif/femme/bird-dog-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    360,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Bird dog"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1748
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.1805,
    "myo_reps": false
   },
   {
@@ -553,6 +611,72 @@
    "myo_reps": false
   },
   {
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "fichier": "gif/femme/bulgarian-split-squat-halteres-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Bulgarian split squat haltères"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1269,
+    1049
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.53,
+    0.64
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.2087,
+   "myo_reps": false
+  },
+  {
+   "cle": "bulgarian-split-squat|homme",
+   "fichier": "gif/homme/bulgarian-split-squat-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    376,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Bulgarian split squat"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1339,
+    1894
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.5,
+    0.55
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.5027,
+   "myo_reps": false
+  },
+  {
    "cle": "burpees|homme",
    "fichier": "gif/homme/burpees-homme.gif",
    "frames": 2,
@@ -561,7 +685,7 @@
     500
    ],
    "taille": [
-    386,
+    388,
     440
    ],
    "boucle": 0,
@@ -570,16 +694,113 @@
    ],
    "surface": "tabata-au-sol",
    "vert_px": [
-    5668,
-    2308
+    1783,
+    4109
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.64,
+    0.56
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.5667,
+   "myo_reps": false
+  },
+  {
+   "cle": "cables-croises-rotation-externe|homme",
+   "fichier": "gif/homme/cables-croises-rotation-externe-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    363,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Câbles croisés + rotation externe"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1494,
+    570
    ],
    "vert_zone": "milieu-haut",
    "vert_centre": [
-    0.47,
-    0.65
+    0.38,
+    0.41
    ],
-   "vert_attendu": null,
-   "mouvement_px": 0.3533,
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2322,
+   "myo_reps": false
+  },
+  {
+   "cle": "cables-croises|homme",
+   "fichier": "gif/homme/cables-croises-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    391,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Câbles croisés"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1266,
+    1389
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.34,
+    0.37
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2253,
+   "myo_reps": false
+  },
+  {
+   "cle": "california-press-barre-au-cou|homme",
+   "fichier": "gif/homme/california-press-barre-au-cou-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    382,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "California press (barre au cou)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    744,
+    523
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.53,
+    0.49
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.3626,
    "myo_reps": false
   },
   {
@@ -612,6 +833,31 @@
     "milieu-bas"
    ],
    "mouvement_px": 0.1826,
+   "myo_reps": false
+  },
+  {
+   "cle": "circuit-gainage-planche-lateral-bird-dog|femme",
+   "fichier": "gif/femme/circuit-gainage-planche-lateral-bird-dog-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    383,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Circuit gainage (planche + latéral + bird dog)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1304
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.1857,
    "myo_reps": false
   },
   {
@@ -705,6 +951,63 @@
    "myo_reps": false
   },
   {
+   "cle": "crunch-a-la-poulie-ou-au-sol|femme",
+   "fichier": "gif/femme/crunch-a-la-poulie-ou-au-sol-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Crunch à la poulie (ou au sol)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.185,
+   "myo_reps": false
+  },
+  {
+   "cle": "crunch-a-la-poulie|homme",
+   "fichier": "gif/homme/crunch-a-la-poulie-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    339,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Crunch à la poulie"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1159,
+    1332
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.51,
+    0.52
+   ],
+   "vert_attendu": [
+    "milieu-bas"
+   ],
+   "mouvement_px": 0.5511,
+   "myo_reps": false
+  },
+  {
    "cle": "crunch-sur-swiss-ball|homme",
    "fichier": "gif/homme/crunch-sur-swiss-ball-homme.gif",
    "frames": 2,
@@ -767,6 +1070,38 @@
    "myo_reps": false
   },
   {
+   "cle": "curl-barre-debout|homme",
+   "fichier": "gif/homme/curl-barre-debout-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    389,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl barre debout"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    5033,
+    3423
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.46,
+    0.47
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2237,
+   "myo_reps": false
+  },
+  {
    "cle": "curl-barre|homme",
    "fichier": "gif/homme/curl-barre-homme.gif",
    "frames": 2,
@@ -796,6 +1131,38 @@
     "milieu-haut"
    ],
    "mouvement_px": 0.3993,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-concentration|homme",
+   "fichier": "gif/homme/curl-concentration-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl concentration"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    956,
+    2707
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.46,
+    0.45
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.366,
    "myo_reps": false
   },
   {
@@ -831,6 +1198,95 @@
    "myo_reps": false
   },
   {
+   "cle": "curl-halteres-incline-supination|homme",
+   "fichier": "gif/homme/curl-halteres-incline-supination-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    389,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl haltères incliné, supination"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1902,
+    1407
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.45,
+    0.46
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2402,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-halteres-incline|homme",
+   "fichier": "gif/homme/curl-halteres-incline-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl haltères incliné"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    3111,
+    1804
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.46,
+    0.45
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2125,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-halteres|femme",
+   "fichier": "gif/femme/curl-halteres-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl haltères"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.0909,
+   "myo_reps": false
+  },
+  {
    "cle": "curl-marteau-assis|homme",
    "fichier": "gif/homme/curl-marteau-assis-homme.gif",
    "frames": 2,
@@ -860,6 +1316,198 @@
     "milieu-haut"
    ],
    "mouvement_px": 0.1973,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-marteau|homme",
+   "fichier": "gif/homme/curl-marteau-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl marteau"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    742,
+    726
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.47,
+    0.46
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2353,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-poulie-basse-supination|homme",
+   "fichier": "gif/homme/curl-poulie-basse-supination-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    378,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl poulie basse, supination"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1520,
+    2176
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.44,
+    0.4
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2594,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-poulie-basse|homme",
+   "fichier": "gif/homme/curl-poulie-basse-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    333,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl poulie basse"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    997,
+    937
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.43
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.515,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-scott-barre-ez-pronation|homme",
+   "fichier": "gif/homme/curl-scott-barre-ez-pronation-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    392,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl Scott barre EZ, pronation"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    3822,
+    4108
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.48,
+    0.45
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2342,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-scott-barre-ez-supination|homme",
+   "fichier": "gif/homme/curl-scott-barre-ez-supination-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl Scott barre EZ, supination"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1654,
+    1480
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.43
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.4131,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "fichier": "gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl Scott haltère, prise neutre"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1817,
+    675
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.5,
+    0.49
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.3644,
    "myo_reps": false
   },
   {
@@ -927,6 +1575,38 @@
    "myo_reps": false
   },
   {
+   "cle": "curl-zottman|homme",
+   "fichier": "gif/homme/curl-zottman-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Curl Zottman"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    3625,
+    2784
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.4
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.1891,
+   "myo_reps": false
+  },
+  {
    "cle": "dead-bug-avec-rotation|femme",
    "fichier": "gif/femme/dead-bug-avec-rotation-femme.gif",
    "frames": 2,
@@ -935,7 +1615,7 @@
     500
    ],
    "taille": [
-    342,
+    375,
     440
    ],
    "boucle": 0,
@@ -945,10 +1625,35 @@
    "surface": "musculation",
    "vert_px": [
     0,
-    892
+    0
    ],
-   "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.3585,
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1464,
+   "myo_reps": false
+  },
+  {
+   "cle": "dead-bug|femme",
+   "fichier": "gif/femme/dead-bug-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "erreur": " athlete plan=homme VERT ABSENT (case [0])",
+   "noms": [
+    "Dead bug"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    0,
+    63
+   ],
+   "mouvement_px": 0.1588,
    "myo_reps": false
   },
   {
@@ -992,7 +1697,7 @@
     500
    ],
    "taille": [
-    386,
+    391,
     440
    ],
    "boucle": 0,
@@ -1001,18 +1706,133 @@
    ],
    "surface": "musculation",
    "vert_px": [
-    1258,
-    1798
+    0,
+    1539
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.2756,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-couche-decline-prise-serree|homme",
+   "fichier": "gif/homme/developpe-couche-decline-prise-serree-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    373,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Développé couché décliné prise serrée"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1538
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.4321,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-couche-halteres|femme",
+   "fichier": "gif/femme/developpe-couche-halteres-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Développé couché haltères"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1215,
+    1036
    ],
    "vert_zone": "milieu-haut",
    "vert_centre": [
-    0.51,
-    0.53
+    0.47,
+    0.47
    ],
    "vert_attendu": [
     "milieu-haut"
    ],
-   "mouvement_px": 0.2984,
+   "mouvement_px": 0.1426,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-couche-plat-inertie-depuis-les-pins|homme",
+   "fichier": "gif/homme/developpe-couche-plat-inertie-depuis-les-pins-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Développé couché plat, inertie depuis les pins"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1150,
+    1134
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.54,
+    0.54
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.1919,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-couche-prise-serree|homme",
+   "fichier": "gif/homme/developpe-couche-prise-serree-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    382,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Développé couché prise serrée"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1871,
+    2124
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.59,
+    0.56
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.4009,
    "myo_reps": false
   },
   {
@@ -1034,10 +1854,74 @@
    "surface": "musculation",
    "vert_px": [
     0,
-    2211
+    1619
    ],
    "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.2674,
+   "mouvement_px": 0.2729,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-derriere-la-nuque|homme",
+   "fichier": "gif/homme/developpe-derriere-la-nuque-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Développé derrière la nuque"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    761,
+    914
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.46,
+    0.45
+   ],
+   "vert_attendu": [
+    "haut"
+   ],
+   "mouvement_px": 0.2906,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-haltere-un-bras-debout|homme",
+   "fichier": "gif/homme/developpe-haltere-un-bras-debout-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    244,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Développé haltère un bras debout"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    936,
+    1839
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.3
+   ],
+   "vert_attendu": [
+    "haut"
+   ],
+   "mouvement_px": 0.1011,
    "myo_reps": false
   },
   {
@@ -1134,6 +2018,31 @@
     "haut"
    ],
    "mouvement_px": 0.27,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-halteres-plat|homme",
+   "fichier": "gif/homme/developpe-halteres-plat-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Développé haltères plat"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    964
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.2949,
    "myo_reps": false
   },
   {
@@ -1315,6 +2224,135 @@
    "myo_reps": false
   },
   {
+   "cle": "drop-lunges-fentes-controlees|homme",
+   "fichier": "gif/homme/drop-lunges-fentes-controlees-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    387,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Drop lunges (fentes contrôlées)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    2116,
+    2153
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.55,
+    0.59
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.2492,
+   "myo_reps": false
+  },
+  {
+   "cle": "ecartes-cables-incline|homme",
+   "fichier": "gif/homme/ecartes-cables-incline-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    382,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Écartés câbles incliné"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1486,
+    664
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.5,
+    0.52
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2127,
+   "myo_reps": false
+  },
+  {
+   "cle": "ecartes-halteres-decline|homme",
+   "fichier": "gif/homme/ecartes-halteres-decline-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    338,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Écartés haltères décliné"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    258,
+    592
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.55,
+    0.53
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.5147,
+   "myo_reps": false
+  },
+  {
+   "cle": "ecartes-halteres|homme",
+   "fichier": "gif/homme/ecartes-halteres-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Écartés haltères"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    2008,
+    1057
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.54,
+    0.52
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.3023,
+   "myo_reps": false
+  },
+  {
    "cle": "echauffement-mise-en-route|homme",
    "fichier": "gif/homme/echauffement-mise-en-route-homme.gif",
    "frames": 2,
@@ -1466,6 +2504,128 @@
     "haut"
    ],
    "mouvement_px": 0.445,
+   "myo_reps": false
+  },
+  {
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "fichier": "gif/homme/elevations-laterales-coude-a-90-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    262,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Élévations latérales coude à 90°"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    368,
+    1239
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.41,
+    0.4
+   ],
+   "vert_attendu": [
+    "haut"
+   ],
+   "mouvement_px": 0.1453,
+   "myo_reps": false
+  },
+  {
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "fichier": "gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    392,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Élévations latérales haltères — myo-reps"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1675,
+   "myo_reps": true
+  },
+  {
+   "cle": "elevations-laterales-halteres|homme",
+   "fichier": "gif/homme/elevations-laterales-halteres-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    368,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Élévations latérales haltères"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    2306,
+    2017
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.35,
+    0.38
+   ],
+   "vert_attendu": [
+    "haut"
+   ],
+   "mouvement_px": 0.4616,
+   "myo_reps": false
+  },
+  {
+   "cle": "elevations-laterales-incline-30-face-au-banc|homme",
+   "fichier": "gif/homme/elevations-laterales-incline-30-face-au-banc-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Élévations latérales incliné 30° (face au banc)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1331,
+    1110
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.45,
+    0.43
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2905,
    "myo_reps": false
   },
   {
@@ -1845,6 +3005,123 @@
    "myo_reps": false
   },
   {
+   "cle": "extension-triceps-a-la-poulie|femme",
+   "fichier": "gif/femme/extension-triceps-a-la-poulie-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    340,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Extension triceps à la poulie"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1021
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.4678,
+   "myo_reps": false
+  },
+  {
+   "cle": "extensions-triceps-poulie|homme",
+   "fichier": "gif/homme/extensions-triceps-poulie-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Extensions triceps poulie"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    651,
+    614
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.45,
+    0.47
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.1834,
+   "myo_reps": false
+  },
+  {
+   "cle": "extensions-triceps-pullover-barre-ez|homme",
+   "fichier": "gif/homme/extensions-triceps-pullover-barre-ez-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    382,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Extensions triceps + pullover barre EZ",
+    "Extensions triceps barre EZ + pullover"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    482,
+    620
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.47,
+    0.45
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.3453,
+   "myo_reps": false
+  },
+  {
+   "cle": "face-pull-a-la-poulie|femme",
+   "fichier": "gif/femme/face-pull-a-la-poulie-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Face pull à la poulie"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1045,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [1])",
+   "mouvement_px": 0.2098,
+   "myo_reps": false
+  },
+  {
    "cle": "fentes-alternees|homme",
    "fichier": "gif/homme/fentes-alternees-homme.gif",
    "frames": 2,
@@ -2082,6 +3359,31 @@
    "myo_reps": false
   },
   {
+   "cle": "fire-hydrant-a-l-elastique|femme",
+   "fichier": "gif/femme/fire-hydrant-a-l-elastique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Fire hydrant à l'élastique"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1739,
+   "myo_reps": false
+  },
+  {
    "cle": "flexion-avant-jambes-tendues|homme",
    "fichier": "gif/homme/flexion-avant-jambes-tendues-homme.gif",
    "frames": 2,
@@ -2112,6 +3414,105 @@
     "bas"
    ],
    "mouvement_px": 0.3056,
+   "myo_reps": false
+  },
+  {
+   "cle": "french-press-barre-ez|homme",
+   "fichier": "gif/homme/french-press-barre-ez-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "French press barre EZ"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1355,
+    714
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.53,
+    0.54
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2035,
+   "myo_reps": false
+  },
+  {
+   "cle": "french-press-haltere-un-bras|homme",
+   "fichier": "gif/homme/french-press-haltere-un-bras-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    377,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "French press haltère un bras"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    2047,
+    1429
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.5,
+    0.52
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.3546,
+   "myo_reps": false
+  },
+  {
+   "cle": "french-press-poulie-basse|homme",
+   "fichier": "gif/homme/french-press-poulie-basse-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    340,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "French press poulie basse"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1808,
+    930
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.52,
+    0.51
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.5045,
    "myo_reps": false
   },
   {
@@ -2148,6 +3549,31 @@
    "myo_reps": false
   },
   {
+   "cle": "gainage-lateral-dynamique|femme",
+   "fichier": "gif/femme/gainage-lateral-dynamique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    340,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Gainage latéral dynamique"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.3555,
+   "myo_reps": false
+  },
+  {
    "cle": "gainage-planche|homme",
    "fichier": "gif/homme/gainage-planche-homme.gif",
    "frames": 2,
@@ -2178,6 +3604,38 @@
    "myo_reps": false
   },
   {
+   "cle": "glute-bridge-en-1-5-reps|femme",
+   "fichier": "gif/femme/glute-bridge-en-1-5-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    369,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Glute bridge en 1,5 reps"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1591,
+    1741
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.71,
+    0.72
+   ],
+   "vert_attendu": [
+    "milieu-bas"
+   ],
+   "mouvement_px": 0.327,
+   "myo_reps": true
+  },
+  {
    "cle": "glute-bridge-pieds-sur-banc|femme",
    "fichier": "gif/femme/glute-bridge-pieds-sur-banc-femme.gif",
    "frames": 2,
@@ -2203,6 +3661,105 @@
    "myo_reps": false
   },
   {
+   "cle": "glute-ham-raise|homme",
+   "fichier": "gif/homme/glute-ham-raise-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Glute ham raise"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1786,
+    1774
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.54,
+    0.56
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3409,
+   "myo_reps": false
+  },
+  {
+   "cle": "goblet-squat|femme",
+   "fichier": "gif/femme/goblet-squat-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Goblet squat"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1629,
+    2084
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.55,
+    0.64
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.2101,
+   "myo_reps": false
+  },
+  {
+   "cle": "good-morning-debout|homme",
+   "fichier": "gif/homme/good-morning-debout-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    382,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Good morning debout"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    390,
+    378
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.47,
+    0.52
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3745,
+   "myo_reps": false
+  },
+  {
    "cle": "grenouille-plantes-jointes|homme",
    "fichier": "gif/homme/grenouille-plantes-jointes-homme.gif",
    "frames": 2,
@@ -2211,7 +3768,7 @@
     500
    ],
    "taille": [
-    398,
+    392,
     440
    ],
    "boucle": 0,
@@ -2220,18 +3777,18 @@
    ],
    "surface": "etirement",
    "vert_px": [
-    3661,
-    4411
+    6373,
+    1984
    ],
-   "vert_zone": "milieu-haut",
+   "vert_zone": "milieu-bas",
    "vert_centre": [
-    0.41,
-    0.58
+    0.65,
+    0.57
    ],
    "vert_attendu": [
     "milieu-bas"
    ],
-   "mouvement_px": 0.4999,
+   "mouvement_px": 0.321,
    "myo_reps": false
   },
   {
@@ -2257,6 +3814,31 @@
    ],
    "erreur": " VERT ABSENT (case [0, 1])",
    "mouvement_px": 0.5992,
+   "myo_reps": false
+  },
+  {
+   "cle": "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
+   "fichier": "gif/femme/hip-thrust-barre-test-de-charge-max-3-5-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Hip thrust barre — test de charge max (3-5 reps)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2206,
    "myo_reps": false
   },
   {
@@ -2289,6 +3871,56 @@
     "milieu-bas"
    ],
    "mouvement_px": 0.1363,
+   "myo_reps": false
+  },
+  {
+   "cle": "hip-thrust-unilateral-1-jambe|femme",
+   "fichier": "gif/femme/hip-thrust-unilateral-1-jambe-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    341,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Hip thrust unilatéral (1 jambe)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    527
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.4508,
+   "myo_reps": false
+  },
+  {
+   "cle": "hip-thrust-unilateral|femme",
+   "fichier": "gif/femme/hip-thrust-unilateral-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Hip thrust unilatéral"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1082
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.187,
    "myo_reps": false
   },
   {
@@ -2354,6 +3986,38 @@
    "myo_reps": false
   },
   {
+   "cle": "kickback-a-l-elastique|femme",
+   "fichier": "gif/femme/kickback-a-l-elastique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    339,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Kickback à l'élastique"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    579,
+    1285
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.34,
+    0.34
+   ],
+   "vert_attendu": [
+    "milieu-bas"
+   ],
+   "mouvement_px": 0.5185,
+   "myo_reps": false
+  },
+  {
    "cle": "kickback-a-la-poulie|femme",
    "fichier": "gif/femme/kickback-a-la-poulie-femme.gif",
    "frames": 2,
@@ -2362,7 +4026,7 @@
     500
    ],
    "taille": [
-    383,
+    375,
     440
    ],
    "boucle": 0,
@@ -2372,10 +4036,10 @@
    "surface": "musculation",
    "vert_px": [
     0,
-    1234
+    964
    ],
    "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.2049,
+   "mouvement_px": 0.273,
    "myo_reps": false
   },
   {
@@ -2419,7 +4083,7 @@
     500
    ],
    "taille": [
-    388,
+    390,
     440
    ],
    "boucle": 0,
@@ -2428,11 +4092,19 @@
    ],
    "surface": "musculation",
    "vert_px": [
-    0,
-    4089
+    1687,
+    1405
    ],
-   "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.444,
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.52,
+    0.54
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.2156,
    "myo_reps": false
   },
   {
@@ -2527,6 +4199,39 @@
    "myo_reps": false
   },
   {
+   "cle": "leg-curl-debout|homme",
+   "fichier": "gif/homme/leg-curl-debout-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Leg curl debout"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    472,
+    644
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.54,
+    0.55
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3229,
+   "myo_reps": false
+  },
+  {
    "cle": "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
    "fichier": "gif/femme/leg-curl-machine-ou-swiss-ball-leg-curl-femme.gif",
    "frames": 2,
@@ -2549,6 +4254,39 @@
    ],
    "erreur": " VERT ABSENT (case [0])",
    "mouvement_px": 0.133,
+   "myo_reps": false
+  },
+  {
+   "cle": "leg-extension|homme",
+   "fichier": "gif/homme/leg-extension-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Leg extension"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    2492,
+    655
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.52,
+    0.49
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3365,
    "myo_reps": false
   },
   {
@@ -2617,6 +4355,38 @@
    "myo_reps": false
   },
   {
+   "cle": "mobilite-des-epaules|homme",
+   "fichier": "gif/homme/mobilite-des-epaules-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Mobilité des épaules"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1542,
+    1171
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.34,
+    0.38
+   ],
+   "vert_attendu": [
+    "haut"
+   ],
+   "mouvement_px": 0.3203,
+   "myo_reps": false
+  },
+  {
    "cle": "mollet-en-escalier|homme",
    "fichier": "gif/homme/mollet-en-escalier-homme.gif",
    "frames": 2,
@@ -2674,6 +4444,101 @@
    "myo_reps": false
   },
   {
+   "cle": "mollets-debout-unilateraux|femme",
+   "fichier": "gif/femme/mollets-debout-unilateraux-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    348,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Mollets debout unilatéraux"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    503,
+    1145
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.71,
+    0.54
+   ],
+   "vert_attendu": [
+    "bas"
+   ],
+   "mouvement_px": 0.5894,
+   "myo_reps": false
+  },
+  {
+   "cle": "mollets-debout|homme",
+   "fichier": "gif/homme/mollets-debout-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Mollets debout"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1665,
+    1654
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.67,
+    0.66
+   ],
+   "vert_attendu": [
+    "bas"
+   ],
+   "mouvement_px": 0.4242,
+   "myo_reps": false
+  },
+  {
+   "cle": "mountain-climbers|femme",
+   "fichier": "gif/femme/mountain-climbers-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "erreur": " athlete plan=homme",
+   "noms": [
+    "Mountain climbers"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    576,
+    498
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.42
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.125,
+   "myo_reps": false
+  },
+  {
    "cle": "mountain-climbers|homme",
    "fichier": "gif/homme/mountain-climbers-homme.gif",
    "frames": 2,
@@ -2701,6 +4566,31 @@
    ],
    "vert_attendu": null,
    "mouvement_px": 0.4371,
+   "myo_reps": false
+  },
+  {
+   "cle": "pallof-press-a-l-elastique|femme",
+   "fichier": "gif/femme/pallof-press-a-l-elastique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    344,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pallof press à l'élastique"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.444,
    "myo_reps": false
   },
   {
@@ -2736,6 +4626,31 @@
    "myo_reps": false
   },
   {
+   "cle": "pompes-inclinees-mains-surelevees|femme",
+   "fichier": "gif/femme/pompes-inclinees-mains-surelevees-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    358,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pompes inclinées (mains surélevées)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1329
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.3969,
+   "myo_reps": false
+  },
+  {
    "cle": "pompes|homme",
    "fichier": "gif/homme/pompes-homme.gif",
    "frames": 2,
@@ -2763,6 +4678,38 @@
    ],
    "vert_attendu": null,
    "mouvement_px": 0.2914,
+   "myo_reps": false
+  },
+  {
+   "cle": "pont-fessier-au-sol-activation|femme",
+   "fichier": "gif/femme/pont-fessier-au-sol-activation-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    370,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pont fessier au sol — activation"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1000,
+    754
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.77,
+    0.72
+   ],
+   "vert_attendu": [
+    "milieu-bas"
+   ],
+   "mouvement_px": 0.3181,
    "myo_reps": false
   },
   {
@@ -2863,6 +4810,103 @@
    "myo_reps": false
   },
   {
+   "cle": "pullover-cable-bras-tendus|homme",
+   "fichier": "gif/homme/pullover-cable-bras-tendus-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    336,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pullover câble bras tendus"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    574,
+    399
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.5,
+    0.54
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.5101,
+   "myo_reps": false
+  },
+  {
+   "cle": "pullover-haltere-plat|homme",
+   "fichier": "gif/homme/pullover-haltere-plat-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    391,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pullover haltère plat"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    2381,
+    3134
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.59,
+    0.58
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.1623,
+   "myo_reps": false
+  },
+  {
+   "cle": "pushdown-triceps-cable|homme",
+   "fichier": "gif/homme/pushdown-triceps-cable-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    335,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pushdown triceps câble"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1606,
+    1180
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.45,
+    0.45
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.5618,
+   "myo_reps": false
+  },
+  {
    "cle": "releves-de-jambes-allongee|femme",
    "fichier": "gif/femme/releves-de-jambes-allongee-femme.gif",
    "frames": 2,
@@ -2927,6 +4971,38 @@
    "myo_reps": false
   },
   {
+   "cle": "releves-de-jambes-incline|homme",
+   "fichier": "gif/homme/releves-de-jambes-incline-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Relevés de jambes incliné"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1318,
+    1319
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.59,
+    0.57
+   ],
+   "vert_attendu": [
+    "milieu-bas"
+   ],
+   "mouvement_px": 0.2823,
+   "myo_reps": false
+  },
+  {
    "cle": "releves-de-jambes|homme",
    "fichier": "gif/homme/releves-de-jambes-homme.gif",
    "frames": 2,
@@ -2986,6 +5062,63 @@
     "haut"
    ],
    "mouvement_px": 0.2979,
+   "myo_reps": false
+  },
+  {
+   "cle": "reverse-crunch|femme",
+   "fichier": "gif/femme/reverse-crunch-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    377,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Reverse crunch"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2179,
+   "myo_reps": false
+  },
+  {
+   "cle": "rowing-a-l-elastique|homme",
+   "fichier": "gif/homme/rowing-a-l-elastique-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing à l’élastique"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    353,
+    732
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.5,
+    0.5
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2451,
    "myo_reps": false
   },
   {
@@ -3142,6 +5275,274 @@
    "myo_reps": false
   },
   {
+   "cle": "rowing-barre-buste-penche-test-3-5-reps|femme",
+   "fichier": "gif/femme/rowing-barre-buste-penche-test-3-5-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    377,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing barre buste penché — test (3-5 reps)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.222,
+   "myo_reps": true
+  },
+  {
+   "cle": "rowing-barre-buste-penche|femme",
+   "fichier": "gif/femme/rowing-barre-buste-penche-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing barre buste penché"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2028,
+   "myo_reps": false
+  },
+  {
+   "cle": "rowing-barre-ez-supination-buste-penche|homme",
+   "fichier": "gif/homme/rowing-barre-ez-supination-buste-penche-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    380,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing barre EZ supination, buste penché"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1774,
+    710
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.46,
+    0.47
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2663,
+   "myo_reps": false
+  },
+  {
+   "cle": "rowing-haltere-buste-penche|homme",
+   "fichier": "gif/homme/rowing-haltere-buste-penche-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing haltère buste penché"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1856,
+    1374
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.36,
+    0.44
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.3323,
+   "myo_reps": false
+  },
+  {
+   "cle": "rowing-haltere-un-bras-coude-ouvert|homme",
+   "fichier": "gif/homme/rowing-haltere-un-bras-coude-ouvert-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing haltère un bras, coude ouvert"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    843,
+    3380
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.46,
+    0.33
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.236,
+   "myo_reps": false
+  },
+  {
+   "cle": "rowing-haltere-un-bras-prise-neutre|homme",
+   "fichier": "gif/homme/rowing-haltere-un-bras-prise-neutre-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing haltère un bras, prise neutre"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    244,
+    1401
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.48,
+    0.43
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2665,
+   "myo_reps": false
+  },
+  {
+   "cle": "rowing-haltere-un-bras|homme",
+   "fichier": "gif/homme/rowing-haltere-un-bras-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Rowing haltère un bras"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    824,
+    3070
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.46,
+    0.31
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.246,
+   "myo_reps": false
+  },
+  {
+   "cle": "safety-bar-squat-ou-barre-classique|homme",
+   "fichier": "gif/homme/safety-bar-squat-ou-barre-classique-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Safety bar squat (ou barre classique)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    3456,
+    2786
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.59,
+    0.64
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3511,
+   "myo_reps": false
+  },
+  {
+   "cle": "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
+   "fichier": "gif/femme/souleve-de-terre-roumain-barre-test-3-5-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Soulevé de terre roumain barre — test (3-5 reps)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    2206
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.2213,
+   "myo_reps": true
+  },
+  {
    "cle": "souleve-de-terre-roumain-barre|homme",
    "fichier": "gif/homme/souleve-de-terre-roumain-barre-homme.gif",
    "frames": 2,
@@ -3172,6 +5573,64 @@
     "bas"
    ],
    "mouvement_px": 0.2843,
+   "myo_reps": false
+  },
+  {
+   "cle": "souleve-de-terre-roumain-halteres|homme",
+   "fichier": "gif/homme/souleve-de-terre-roumain-halteres-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Soulevé de terre roumain haltères"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    452,
+    676
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.5,
+    0.49
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.2006,
+   "myo_reps": false
+  },
+  {
+   "cle": "souleve-de-terre-roumain-unilateral-haltere|femme",
+   "fichier": "gif/femme/souleve-de-terre-roumain-unilateral-haltere-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    363,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Soulevé de terre roumain unilatéral haltère"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2752,
    "myo_reps": false
   },
   {
@@ -3274,6 +5733,105 @@
    "myo_reps": false
   },
   {
+   "cle": "split-squat-poulie-basse|homme",
+   "fichier": "gif/homme/split-squat-poulie-basse-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Split squat poulie basse"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    559,
+    4875
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.52,
+    0.61
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3687,
+   "myo_reps": false
+  },
+  {
+   "cle": "squat-au-poids-du-corps|homme",
+   "fichier": "gif/homme/squat-au-poids-du-corps-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    373,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Squat au poids du corps"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    866,
+    1183
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.53,
+    0.55
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.4372,
+   "myo_reps": false
+  },
+  {
+   "cle": "squat-cycliste-squat-complet|homme",
+   "fichier": "gif/homme/squat-cycliste-squat-complet-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Squat cycliste (squat complet)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1560,
+    1319
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.54,
+    0.61
+   ],
+   "vert_attendu": [
+    "milieu-bas",
+    "bas"
+   ],
+   "mouvement_px": 0.3912,
+   "myo_reps": false
+  },
+  {
    "cle": "squats|homme",
    "fichier": "gif/homme/squats-homme.gif",
    "frames": 2,
@@ -3334,6 +5892,31 @@
     "bas"
    ],
    "mouvement_px": 0.3441,
+   "myo_reps": false
+  },
+  {
+   "cle": "step-up-sur-banc-hauteur-du-genou|femme",
+   "fichier": "gif/femme/step-up-sur-banc-hauteur-du-genou-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    378,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Step-up sur banc (hauteur du genou)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    2198,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [1])",
+   "mouvement_px": 0.2149,
    "myo_reps": false
   },
   {
@@ -3432,6 +6015,38 @@
    "myo_reps": false
   },
   {
+   "cle": "tirage-horizontal-a-la-poulie|femme",
+   "fichier": "gif/femme/tirage-horizontal-a-la-poulie-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    341,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Tirage horizontal à la poulie"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    587,
+    1718
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.48,
+    0.41
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.469,
+   "myo_reps": false
+  },
+  {
    "cle": "tirage-vertical-lean-away|homme",
    "fichier": "gif/homme/tirage-vertical-lean-away-homme.gif",
    "frames": 2,
@@ -3521,6 +6136,38 @@
    "myo_reps": false
   },
   {
+   "cle": "tractions-prise-neutre-chin-up|homme",
+   "fichier": "gif/homme/tractions-prise-neutre-chin-up-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    371,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Tractions prise neutre (chin-up)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    3282,
+    4004
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.46,
+    0.45
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.5311,
+   "myo_reps": false
+  },
+  {
    "cle": "tractions-pull-up|homme",
    "fichier": "gif/homme/tractions-pull-up-homme.gif",
    "frames": 2,
@@ -3550,6 +6197,38 @@
     "milieu-haut"
    ],
    "mouvement_px": 0.2852,
+   "myo_reps": false
+  },
+  {
+   "cle": "tractions-supination-chin-up|homme",
+   "fichier": "gif/homme/tractions-supination-chin-up-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Tractions supination (chin-up)"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1532,
+    1744
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.48,
+    0.42
+   ],
+   "vert_attendu": [
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.2275,
    "myo_reps": false
   },
   {
@@ -3583,6 +6262,64 @@
    "myo_reps": false
   },
   {
+   "cle": "triceps-dips|homme",
+   "fichier": "gif/homme/triceps-dips-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    383,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Triceps dips"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.3992,
+   "myo_reps": false
+  },
+  {
+   "cle": "triceps-extensions-halteres-banc-plat|homme",
+   "fichier": "gif/homme/triceps-extensions-halteres-banc-plat-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    382,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Triceps extensions haltères, banc plat"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1432,
+    1976
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.52,
+    0.53
+   ],
+   "vert_attendu": [
+    "haut",
+    "milieu-haut"
+   ],
+   "mouvement_px": 0.1308,
+   "myo_reps": false
+  },
+  {
    "cle": "une-jambe-tendue-une-pliee|homme",
    "fichier": "gif/homme/une-jambe-tendue-une-pliee-homme.gif",
    "frames": 2,
@@ -3613,6 +6350,38 @@
     "bas"
    ],
    "mouvement_px": 0.4456,
+   "myo_reps": false
+  },
+  {
+   "cle": "wood-chop-poulie-haute|homme",
+   "fichier": "gif/homme/wood-chop-poulie-haute-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    365,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Wood chop poulie haute"
+   ],
+   "surface": "musculation",
+   "vert_px": [
+    1369,
+    1599
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.48,
+    0.48
+   ],
+   "vert_attendu": [
+    "milieu-bas"
+   ],
+   "mouvement_px": 0.368,
    "myo_reps": false
   }
  ],
@@ -3816,6 +6585,50 @@
    "myo_reps": false
   },
   {
+   "cle": "bird-dog|femme",
+   "fichier": "gif/femme/bird-dog-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    360,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1748
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.1805,
+   "myo_reps": false
+  },
+  {
+   "cle": "circuit-gainage-planche-lateral-bird-dog|femme",
+   "fichier": "gif/femme/circuit-gainage-planche-lateral-bird-dog-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    383,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1304
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.1857,
+   "myo_reps": false
+  },
+  {
    "cle": "clamshell-a-l-elastique|femme",
    "fichier": "gif/femme/clamshell-a-l-elastique-femme.gif",
    "frames": 2,
@@ -3838,6 +6651,50 @@
    "myo_reps": false
   },
   {
+   "cle": "crunch-a-la-poulie-ou-au-sol|femme",
+   "fichier": "gif/femme/crunch-a-la-poulie-ou-au-sol-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.185,
+   "myo_reps": false
+  },
+  {
+   "cle": "curl-halteres|femme",
+   "fichier": "gif/femme/curl-halteres-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.0909,
+   "myo_reps": false
+  },
+  {
    "cle": "dead-bug-avec-rotation|femme",
    "fichier": "gif/femme/dead-bug-avec-rotation-femme.gif",
    "frames": 2,
@@ -3846,17 +6703,83 @@
     500
    ],
    "taille": [
-    342,
+    375,
     440
    ],
    "boucle": 0,
    "surface": "musculation",
    "vert_px": [
     0,
-    892
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1464,
+   "myo_reps": false
+  },
+  {
+   "cle": "dead-bug|femme",
+   "fichier": "gif/femme/dead-bug-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "erreur": " athlete plan=homme VERT ABSENT (case [0])",
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    0,
+    63
+   ],
+   "mouvement_px": 0.1588,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-couche-barre|homme",
+   "fichier": "gif/homme/developpe-couche-barre-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    391,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1539
    ],
    "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.3585,
+   "mouvement_px": 0.2756,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-couche-decline-prise-serree|homme",
+   "fichier": "gif/homme/developpe-couche-decline-prise-serree-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    373,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1538
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.4321,
    "myo_reps": false
   },
   {
@@ -3875,10 +6798,32 @@
    "surface": "musculation",
    "vert_px": [
     0,
-    2211
+    1619
    ],
    "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.2674,
+   "mouvement_px": 0.2729,
+   "myo_reps": false
+  },
+  {
+   "cle": "developpe-halteres-plat|homme",
+   "fichier": "gif/homme/developpe-halteres-plat-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    964
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.2949,
    "myo_reps": false
   },
   {
@@ -3923,6 +6868,72 @@
    ],
    "erreur": " VERT ABSENT (case [0])",
    "mouvement_px": 0.1126,
+   "myo_reps": false
+  },
+  {
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "fichier": "gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    392,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1675,
+   "myo_reps": true
+  },
+  {
+   "cle": "extension-triceps-a-la-poulie|femme",
+   "fichier": "gif/femme/extension-triceps-a-la-poulie-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    340,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1021
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.4678,
+   "myo_reps": false
+  },
+  {
+   "cle": "face-pull-a-la-poulie|femme",
+   "fichier": "gif/femme/face-pull-a-la-poulie-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    1045,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [1])",
+   "mouvement_px": 0.2098,
    "myo_reps": false
   },
   {
@@ -3992,6 +7003,50 @@
    "myo_reps": false
   },
   {
+   "cle": "fire-hydrant-a-l-elastique|femme",
+   "fichier": "gif/femme/fire-hydrant-a-l-elastique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    381,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1739,
+   "myo_reps": false
+  },
+  {
+   "cle": "gainage-lateral-dynamique|femme",
+   "fichier": "gif/femme/gainage-lateral-dynamique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    340,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.3555,
+   "myo_reps": false
+  },
+  {
    "cle": "glute-bridge-pieds-sur-banc|femme",
    "fichier": "gif/femme/glute-bridge-pieds-sur-banc-femme.gif",
    "frames": 2,
@@ -4036,6 +7091,72 @@
    "myo_reps": false
   },
   {
+   "cle": "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
+   "fichier": "gif/femme/hip-thrust-barre-test-de-charge-max-3-5-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2206,
+   "myo_reps": false
+  },
+  {
+   "cle": "hip-thrust-unilateral-1-jambe|femme",
+   "fichier": "gif/femme/hip-thrust-unilateral-1-jambe-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    341,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    527
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.4508,
+   "myo_reps": false
+  },
+  {
+   "cle": "hip-thrust-unilateral|femme",
+   "fichier": "gif/femme/hip-thrust-unilateral-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1082
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.187,
+   "myo_reps": false
+  },
+  {
    "cle": "kickback-a-la-poulie|femme",
    "fichier": "gif/femme/kickback-a-la-poulie-femme.gif",
    "frames": 2,
@@ -4044,39 +7165,17 @@
     500
    ],
    "taille": [
-    383,
+    375,
     440
    ],
    "boucle": 0,
    "surface": "musculation",
    "vert_px": [
     0,
-    1234
+    964
    ],
    "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.2049,
-   "myo_reps": false
-  },
-  {
-   "cle": "leg-curl-allonge-1-1-4-en-haut|homme",
-   "fichier": "gif/homme/leg-curl-allonge-1-1-4-en-haut-homme.gif",
-   "frames": 2,
-   "durees": [
-    500,
-    500
-   ],
-   "taille": [
-    388,
-    440
-   ],
-   "boucle": 0,
-   "surface": "musculation",
-   "vert_px": [
-    0,
-    4089
-   ],
-   "erreur": " VERT ABSENT (case [0])",
-   "mouvement_px": 0.444,
+   "mouvement_px": 0.273,
    "myo_reps": false
   },
   {
@@ -4146,6 +7245,100 @@
    "myo_reps": false
   },
   {
+   "cle": "mountain-climbers|femme",
+   "fichier": "gif/femme/mountain-climbers-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    385,
+    440
+   ],
+   "boucle": 0,
+   "erreur": " athlete plan=homme",
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    576,
+    498
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.42
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.125,
+   "myo_reps": false
+  },
+  {
+   "cle": "pallof-press-a-l-elastique|femme",
+   "fichier": "gif/femme/pallof-press-a-l-elastique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    344,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.444,
+   "myo_reps": false
+  },
+  {
+   "cle": "pompes-inclinees-mains-surelevees|femme",
+   "fichier": "gif/femme/pompes-inclinees-mains-surelevees-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    358,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    1329
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.3969,
+   "myo_reps": false
+  },
+  {
+   "cle": "reverse-crunch|femme",
+   "fichier": "gif/femme/reverse-crunch-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    377,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2179,
+   "myo_reps": false
+  },
+  {
    "cle": "rowing-assis-cable-unilateral|homme",
    "fichier": "gif/homme/rowing-assis-cable-unilateral-homme.gif",
    "frames": 2,
@@ -4165,6 +7358,116 @@
    ],
    "erreur": " VERT ABSENT (case [0])",
    "mouvement_px": 0.5156,
+   "myo_reps": false
+  },
+  {
+   "cle": "rowing-barre-buste-penche-test-3-5-reps|femme",
+   "fichier": "gif/femme/rowing-barre-buste-penche-test-3-5-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    377,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.222,
+   "myo_reps": true
+  },
+  {
+   "cle": "rowing-barre-buste-penche|femme",
+   "fichier": "gif/femme/rowing-barre-buste-penche-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2028,
+   "myo_reps": false
+  },
+  {
+   "cle": "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
+   "fichier": "gif/femme/souleve-de-terre-roumain-barre-test-3-5-reps-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    2206
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.2213,
+   "myo_reps": true
+  },
+  {
+   "cle": "souleve-de-terre-roumain-unilateral-haltere|femme",
+   "fichier": "gif/femme/souleve-de-terre-roumain-unilateral-haltere-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    363,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2752,
+   "myo_reps": false
+  },
+  {
+   "cle": "step-up-sur-banc-hauteur-du-genou|femme",
+   "fichier": "gif/femme/step-up-sur-banc-hauteur-du-genou-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    378,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    2198,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [1])",
+   "mouvement_px": 0.2149,
    "myo_reps": false
   },
   {
@@ -4188,6 +7491,28 @@
    "erreur": " VERT ABSENT (case [0])",
    "mouvement_px": 0.2734,
    "myo_reps": false
+  },
+  {
+   "cle": "triceps-dips|homme",
+   "fichier": "gif/homme/triceps-dips-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    383,
+    440
+   ],
+   "boucle": 0,
+   "surface": "musculation",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.3992,
+   "myo_reps": false
   }
  ],
  "aRelire": [
@@ -4206,6 +7531,12 @@
  ],
  "doubles": [],
  "orphelins": [
+  "gif/homme/developpe-militaire-inertie-depuis-les-pins-homme.gif",
+  "gif/homme/extensions-triceps-barre-ez-homme.gif",
+  "gif/homme/tractions-prise-large-homme.gif",
+  "gif/femme/face-pull-a-l-elastique-femme.gif",
+  "gif/femme/leg-curl-machine-femme.gif",
+  "gif/femme/releves-de-jambes-femme.gif",
   "racine/curl-marteau-assis-femme.gif",
   "racine/elevations-laterales-assises-homme.gif"
  ]
