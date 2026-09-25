@@ -3,29 +3,9 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "rowing-assis-prise-neutre (homme)",
-   "motif": "planche inversée : la case de gauche montrait la fin du geste (buste penché en avant) et celle de droite la position tirée",
-   "prescription": "Rowing assis, prise neutre — poulie basse, câble horizontal, poignée neutre V, tirage vers le ventre"
-  },
-  {
-   "mouvement": "rowing-assis-etirement (homme)",
-   "motif": "planche inversée : l'étirement (buste penché vers l'avant) est montré au début du geste au lieu de la fin",
-   "prescription": "Rowing assis + étirement — tirage vers le ventre PUIS relâchement long en avant"
-  },
-  {
-   "mouvement": "abduction-hanche-a-la-poulie (femme)",
-   "motif": "la jambe part en ARRIERE au lieu de s'ouvrir sur le COTE ; le moyen fessier travaille latéralement (le vert doit être sur le côté de la hanche)",
-   "prescription": "Abduction hanche à la poulie — buste droit, aucune rotation du bassin, ouverture latérale"
-  },
-  {
-   "mouvement": "abduction-hanche-a-la-poulie-myo-reps (femme)",
-   "motif": "même figure que le mouvement de base avec en plus un texte d'amplitude courte : à refaire avec la jambe ouverte SUR LE COTE",
-   "prescription": "Abduction hanche à la poulie — myo-reps : mêmes répétitions, 1 série longue puis mini-séries"
-  },
-  {
-   "mouvement": "mollets-assis (homme)",
-   "motif": "génération refusée par le filtre de contenu (aucune image produite)",
-   "prescription": "Mollets assis — machine à mollets assis, talons qui descendent bas puis montée sur la pointe"
+   "mouvement": "elevations-laterales-lean-away (homme)",
+   "motif": "non produite : le générateur a refusé la 1re formulation (aucune image) puis le plafond de 10 générations du tour a été atteint",
+   "prescription": "Élévations latérales lean away — 3 x 12-15, appui sur un support, un bras travaille"
   }
  ],
  "verifieesEtAcceptees": [
@@ -104,6 +84,8 @@
  "reglesPrompt": [
   "POULIES : un rowing / tirage horizontal part d'une poulie BASSE, câble horizontal ; un tirage vertical part d'une poulie HAUTE, câble vertical. Écrire la position de la poulie en toutes lettres.",
   "ALIAS : quand un nom d'origine est rataché à une cible différente dans l'app, c'est la CIBLE qui décrit la machine et le geste (ex. « rowing assis au cou » se dessine en TIRAGE VERTICAL prise large).",
-  "MOUVEMENT UNILATERAL : écrire explicitement que le second bras/membre reste immobile et ne touche jamais l'engin, du début à la fin."
+  "MOUVEMENT UNILATERAL : écrire explicitement que le second bras/membre reste immobile et ne touche jamais l'engin, du début à la fin.",
+  "SENS DE LECTURE : une planche se lit de GAUCHE (début) à DROITE (fin) ; l'écrire explicitement dans le prompt et le vérifier à la lecture.",
+  "MYO-REPS / mini-séries : préciser que les deux cases sont presque identiques et que le membre NE revient PAS à la position de départ."
  ]
 }

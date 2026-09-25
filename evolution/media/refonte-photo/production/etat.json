@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 84,
-  "restants": 247,
+  "valides": 96,
+  "restants": 235,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 37,
+   "musculation": 49,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 165,
+   "musculation": 153,
    "piscine-protocole": 40,
    "piscine": 9,
    "tabata-aqua": 6,
@@ -26,6 +26,8 @@
   "abduction-assise-machine-ou-elastique|femme",
   "abduction-assise-machine|femme",
   "abduction-hanche-a-l-elastique|femme",
+  "abduction-hanche-a-la-poulie-myo-reps|femme",
+  "abduction-hanche-a-la-poulie|femme",
   "abduction-hanche-debout-a-la-poulie|femme",
   "adduction-de-la-hanche-debout|homme",
   "allonge-sur-le-cote|homme",
@@ -37,6 +39,7 @@
   "bras-tendu-devant-main-tiree|homme",
   "burpees|homme",
   "circuit-abdominaux-crunch-releves-gainage|femme",
+  "clamshell-a-l-elastique|femme",
   "cobra-doux|homme",
   "coude-au-dessus-de-la-tete|homme",
   "crunch|homme",
@@ -54,6 +57,8 @@
   "echauffement-mise-en-route|homme",
   "echauffement-mobilite|homme",
   "echauffement-series-d-approche|homme",
+  "elevations-laterales-assises-variante|homme",
+  "elevations-laterales-assises|homme",
   "elliptique-fractionne|femme",
   "elliptique-mise-en-route|femme",
   "elliptique-recuperation-active|femme",
@@ -69,12 +74,14 @@
   "fentes-arriere-alternees|femme",
   "fentes-arriere-au-poids-du-corps|homme",
   "fentes-avant-alternees|femme",
+  "fentes-bulgares-halteres-pied-avant-sureleve|homme",
   "fentes-bulgares-pied-arriere-sureleve|femme",
   "flexion-avant-jambes-tendues|homme",
   "gainage-planche|homme",
   "grenouille-plantes-jointes|homme",
   "hip-thrust-barre|femme",
   "jumping-jacks|homme",
+  "kickback-a-la-poulie|femme",
   "leg-curl-allonge-1-1-4-en-haut|homme",
   "leg-curl-allonge-pieds-flechis|homme",
   "leg-curl-allonge-pieds-pointes|homme",
@@ -82,6 +89,7 @@
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
   "mollet-en-escalier|homme",
+  "mollets-assis|homme",
   "mountain-climbers|homme",
   "pigeon-assis|homme",
   "pompes|homme",
@@ -94,9 +102,13 @@
   "respiration-diaphragmatique-allongee|homme",
   "rowing-assis-au-cou|homme",
   "rowing-assis-cable-unilateral|homme",
+  "rowing-assis-etirement|homme",
+  "rowing-assis-prise-neutre|homme",
   "rowing-barre-buste-penche-pronation|homme",
+  "souleve-de-terre-roumain-barre|homme",
   "souleve-de-terre-test-1rm|homme",
   "souleve-de-terre|homme",
+  "split-squat-barbell-pied-avant-sureleve|homme",
   "squats|homme",
   "superman|homme",
   "suspension-a-la-barre|homme",
@@ -109,83 +121,11 @@
  ],
  "restants": [
   {
-   "identifiant": "abduction-hanche-a-la-poulie-myo-reps",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Abduction hanche à la poulie — myo-reps"
-   ]
-  },
-  {
-   "identifiant": "abduction-hanche-a-la-poulie",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Abduction hanche à la poulie"
-   ]
-  },
-  {
    "identifiant": "developpe-militaire-halteres-assis-test-3-5-reps",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Développé militaire haltères assis — test (3-5 reps)"
-   ]
-  },
-  {
-   "identifiant": "rowing-assis-etirement",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing assis + étirement"
-   ]
-  },
-  {
-   "identifiant": "mollets-assis",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Mollets assis"
-   ]
-  },
-  {
-   "identifiant": "rowing-assis-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing assis, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "elevations-laterales-assises",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales assises"
-   ]
-  },
-  {
-   "identifiant": "elevations-laterales-assises-variante",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales assises (variante)"
-   ]
-  },
-  {
-   "identifiant": "split-squat-barbell-pied-avant-sureleve",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Split squat barbell (pied avant surélevé)"
-   ]
-  },
-  {
-   "identifiant": "fentes-bulgares-halteres-pied-avant-sureleve",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Fentes bulgares haltères (pied avant surélevé)"
    ]
   },
   {
@@ -478,14 +418,6 @@
    ]
   },
   {
-   "identifiant": "souleve-de-terre-roumain-barre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Soulevé de terre roumain barre"
-   ]
-  },
-  {
    "identifiant": "curl-poulie-basse",
    "athlete": "homme",
    "surface": "musculation",
@@ -675,14 +607,6 @@
    "surface": "musculation",
    "noms": [
     "Wood chop poulie haute"
-   ]
-  },
-  {
-   "identifiant": "clamshell-a-l-elastique",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Clamshell à l'élastique"
    ]
   },
   {
@@ -1320,14 +1244,6 @@
    "surface": "musculation",
    "noms": [
     "Relevés de jambes suspendu"
-   ]
-  },
-  {
-   "identifiant": "kickback-a-la-poulie",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Kickback à la poulie"
    ]
   },
   {
