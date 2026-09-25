@@ -3,40 +3,22 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "back-extension-horizontal (homme)",
-   "planche": "lot19/back-extension-horizontal.png",
-   "motif": "4e/5e refus : mains croisees enfin obtenues mais la TETE est coupee au bord gauche de la case de fin et le cadrage differe entre les deux cases",
-   "prescription": "Back extension horizontal — banc horizontal, buste qui descend vers le sol puis remonte aligne"
-  },
-  {
-   "mouvement": "curl-poulie-basse (homme)",
-   "planche": "lot18/curl-poulie-basse.png",
-   "motif": "1er refus : cadrage different entre les deux cases (athlete petit a gauche, grand a droite) : l'animation saute",
-   "prescription": "Curl poulie basse"
-  },
-  {
    "mouvement": "rowing-barre-buste-penche-test-3-5-reps (femme)",
-   "planche": "lot19/rowing-barre-buste-penche-test-3-5-reps.png",
-   "motif": "2e refus : tirage incomplet (barre a la hanche au lieu des cotes) et vert quasi absent en case de fin",
+   "planche": "lot20/rowing-barre-buste-penche-test-3-5-reps.png",
+   "motif": "3e refus : tirage toujours incomplet (barre a la hanche, coudes a 45 degres, pas aux cotes)",
    "prescription": "Rowing barre buste penché — test (3-5 reps)"
   },
   {
-   "mouvement": "back-squat-barre-haute (homme)",
-   "planche": "lot19/back-squat-barre-haute.png",
-   "motif": "2e refus : barre sur le dos dans les DEUX cases (progres) mais le VERT est pose sur les adducteurs/aine au lieu des quadriceps",
-   "prescription": "Back squat barre haute"
-  },
-  {
-   "mouvement": "back-squat-inertie-pause-complete (homme)",
-   "planche": "lot19/back-squat-inertie-pause-complete.png",
-   "motif": "2e refus : barre encore en rack AVANT en case de depart, sur le dos en case de fin",
-   "prescription": "Back squat inertie (pause complète)"
-  },
-  {
    "mouvement": "good-morning-debout (homme)",
-   "planche": "lot19/good-morning-debout.png",
-   "motif": "1er refus : barre devant le cou a gauche, derriere le cou a droite : la barre saute",
+   "planche": "lot20/good-morning-debout.png",
+   "motif": "2e refus : vue de dos obtenue mais la case de fin le montre DEBOUT barre dans les mains au lieu du buste penche, barre sur le dos",
    "prescription": "Good morning debout"
+  },
+  {
+   "mouvement": "rowing-haltere-un-bras (homme)",
+   "planche": "lot20/rowing-haltere-un-bras.png",
+   "motif": "1er refus : l'orientation du corps est INVERSEE entre les deux cases (profil droite puis profil gauche) : saut de 180 degres dans l'animation",
+   "prescription": "Rowing haltère un bras"
   }
  ],
  "verifieesEtAcceptees": [

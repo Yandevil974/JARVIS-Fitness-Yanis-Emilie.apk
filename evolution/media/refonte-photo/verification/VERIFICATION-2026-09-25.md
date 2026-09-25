@@ -103,12 +103,24 @@ back-squat-inertie-pause-complete (rack avant a gauche encore), good-morning-deb
 (barre devant le cou a gauche, derriere a droite), rowing-barre-buste-penche-test-3-5-reps
 (tirage a la hanche, vert absent en case de fin). Feuilles : `verification/lot19-01..03.jpg`.
 
-## 8. Couverture et suite
+## 9. Lot 20 (solution aux planches refusees, meme tour)
 
-Relus sur les deux tours : **79 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **130 valides** actuels, **69 restent à relire** (feuilles de 3, mêmes outils).
-Production : **130 / 331** ; restants 201 (musculation 119, protocoles piscine 40,
-tabata au sol 27, piscine guides 9, aqua tabata 6). **6 planches en attente** dans
-`production/a-refaire.json` : back-extension-horizontal (5ᵉ refus), curl-poulie-basse
-(moderation d'image a retenter), rowing-barre-buste-penche-test-3-5-reps,
-back-squat-barre-haute, back-squat-inertie-pause-complete, good-morning-debout.
+Changement de strategie par type d'echec : marges explicites (tetes/pieds jamais coupes),
+vert impose aux DEUX cases, vues de FACE ou de DOS pour garantir la barre sur le dos,
+echelle identique entre les cases. Acceptees 7 : back-extension-horizontal (6e essai),
+curl-poulie-basse, back-squat-barre-haute (vert quadriceps), back-squat-inertie-pause-complete
+(vue de dos), bulgarian-split-squat, bird-dog, dead-bug (note : bras au sol au lieu
+d'overhead en case de fin, ecart de consigne non bloquant).
+Refusees 3 : good-morning-debout (case fin debout barre dans les mains), rowing-haltere-un-bras
+(profil retourne entre les cases), rowing-barre-buste-penche-test-3-5-reps (3e refus,
+tirage a la hanche). Feuilles : `verification/lot20-01..04.jpg`.
+Liste des blocs et decisions attendues : `CE-QUI-COINCE.md` a la racine du depot.
+
+## 10. Couverture et suite
+
+Relus sur les trois tours : **89 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **137 valides** actuels, **69 restent à relire** (feuilles de 3, mêmes outils).
+Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
+tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
+`production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),
+good-morning-debout (2ᵉ refus), rowing-haltere-un-bras (1ᵉʳ refus).

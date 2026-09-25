@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 130,
-  "restants": 201,
+  "valides": 137,
+  "restants": 194,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 83,
+   "musculation": 90,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 119,
+   "musculation": 112,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -32,13 +32,18 @@
   "adduction-de-la-hanche-debout|homme",
   "allonge-sur-le-cote|homme",
   "back-extension-45-prise-snatch|homme",
+  "back-extension-horizontal|homme",
+  "back-squat-barre-haute|homme",
   "back-squat-charge-moderee|femme",
+  "back-squat-inertie-pause-complete|homme",
   "back-squat-test-1rm|homme",
   "back-squat|homme",
+  "bird-dog|femme",
   "bras-tendu-contre-la-poitrine|homme",
   "bras-tendu-contre-le-mur|homme",
   "bras-tendu-derriere|homme",
   "bras-tendu-devant-main-tiree|homme",
+  "bulgarian-split-squat|homme",
   "burpees|homme",
   "california-press-barre-au-cou|homme",
   "circuit-abdominaux-crunch-releves-gainage|femme",
@@ -50,11 +55,13 @@
   "curl-barre|homme",
   "curl-haltere-supination-banc-scott-90|homme",
   "curl-marteau-assis|homme",
+  "curl-poulie-basse|homme",
   "curl-scott-barre-ez-pronation|homme",
   "curl-scott-barre-ez-supination|homme",
   "curl-zottman-assis|homme",
   "curl-zottman-un-bras-banc-scott|homme",
   "dead-bug-avec-rotation|femme",
+  "dead-bug|femme",
   "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
   "developpe-couche-test-1rm|homme",
@@ -155,30 +162,6 @@
  ],
  "restants": [
   {
-   "identifiant": "back-squat-barre-haute",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Back squat barre haute"
-   ]
-  },
-  {
-   "identifiant": "back-squat-inertie-pause-complete",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Back squat — inertie, pause complète"
-   ]
-  },
-  {
-   "identifiant": "back-extension-horizontal",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Back extension horizontal"
-   ]
-  },
-  {
    "identifiant": "rowing-barre-buste-penche-test-3-5-reps",
    "athlete": "femme",
    "surface": "musculation",
@@ -220,14 +203,6 @@
    ]
   },
   {
-   "identifiant": "curl-poulie-basse",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl poulie basse"
-   ]
-  },
-  {
    "identifiant": "curl-poulie-basse-supination",
    "athlete": "homme",
    "surface": "musculation",
@@ -257,14 +232,6 @@
    "surface": "musculation",
    "noms": [
     "Circuit gainage (planche + latéral + bird dog)"
-   ]
-  },
-  {
-   "identifiant": "bird-dog",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Bird dog"
    ]
   },
   {
@@ -324,27 +291,11 @@
    ]
   },
   {
-   "identifiant": "dead-bug",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Dead bug"
-   ]
-  },
-  {
    "identifiant": "bulgarian-split-squat-halteres",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Bulgarian split squat haltères"
-   ]
-  },
-  {
-   "identifiant": "bulgarian-split-squat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Bulgarian split squat"
    ]
   },
   {
