@@ -6,15 +6,15 @@
    "mouvement": "developpe-haltere-un-bras-debout (homme)",
    "identifiant": "developpe-haltere-un-bras-debout",
    "athlete": "homme",
-   "motif": "4e refus : deux halteres en case depart et cote de travail inverse entre les cases",
-   "planche": "lot24/developpe-haltere-un-bras-debout.png"
+   "motif": "5e refus : case 1 assemblee = haltere dans la mauvaise main (bras vert vide)",
+   "planche": "lot25/developpe-haltere-un-bras-debout.png"
   },
   {
    "mouvement": "mountain-climbers (femme)",
    "identifiant": "mountain-climbers",
    "athlete": "femme",
-   "motif": "2e refus : l'edition n'a pas echange les jambes, les deux cases identiques",
-   "planche": "lot24/mountain-climbers.png"
+   "motif": "3e refus : cases separees = saut d'angle et de decor, echange de jambes illisible",
+   "planche": "lot25/mountain-climbers.png"
   }
  ],
  "verifieesEtAcceptees": [

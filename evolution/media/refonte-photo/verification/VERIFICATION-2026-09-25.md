@@ -191,10 +191,23 @@ Prochaine strategie pour ces deux-la : generer les deux cases SEPAREMENT (descri
 relative a la camera : jambe proche/lointaine, bras cote gauche de l'image) puis assembler
 la planche par script. Feuilles : `verification/lot24-01..03.jpg`.
 
-## 20. Couverture et suite
+## 21. Lot 25 : refaits utilisateur + cases separees (meme tour)
 
-Relus sur les sept tours : **125 couples** (+7 remplacements d'audit relus au lot 24 = 132) (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **161 valides** actuels, **53 restent à relire** (feuilles de 3, mêmes outils).
+Refaites a la demande utilisateur : ecartes-cables-incline (desormais ALLONGE sur le pad,
+vert aux deux cases, deux poulies basses ancrees) et elevations-laterales-incline-30-face-au-banc
+(torse FACE au pad, pieds joints derriere, plus a califourchon) : acceptees toutes les deux.
+Cases separees puis assemblees : developpe-haltere-un-bras-debout (case 2 bonne, case 1
+haltere dans la mauvaise main : 5e refus), mountain-climbers (saut d'angle et de decor entre
+les cases, echange illisible : 3e refus). Neuves acceptees 4 : extensions-triceps-pullover-barre-ez,
+curl-halteres-incline, leg-curl-debout, curl-scott-haltere-prise-neutre.
+Relecture batch 6 : 3/3 conformes (developpe-halteres-assis-prise-neutre, developpe-halteres-assis,
+developpe-incline-barre ; note cosmetique vert case fin seule sur 2 d'entre elles).
+Feuilles : `verification/lot25-01..03.jpg`, `verification/relecture-06.jpg`.
+
+## 22. Couverture et suite
+
+Relus sur les neuf tours : **141 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **166 valides** actuels, **53 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

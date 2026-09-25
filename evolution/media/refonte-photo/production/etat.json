@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 162,
-  "restants": 169,
+  "valides": 166,
+  "restants": 165,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 115,
+   "musculation": 119,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 87,
+   "musculation": 83,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -59,11 +59,13 @@
   "curl-barre|homme",
   "curl-concentration|homme",
   "curl-haltere-supination-banc-scott-90|homme",
+  "curl-halteres-incline|homme",
   "curl-marteau-assis|homme",
   "curl-poulie-basse-supination|homme",
   "curl-poulie-basse|homme",
   "curl-scott-barre-ez-pronation|homme",
   "curl-scott-barre-ez-supination|homme",
+  "curl-scott-haltere-prise-neutre|homme",
   "curl-zottman-assis|homme",
   "curl-zottman-un-bras-banc-scott|homme",
   "dead-bug-avec-rotation|femme",
@@ -100,6 +102,7 @@
   "etirement-du-cobra|homme",
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
+  "extensions-triceps-pullover-barre-ez|homme",
   "fentes-alternees|homme",
   "fentes-arriere-alternees|femme",
   "fentes-arriere-au-poids-du-corps|homme",
@@ -130,6 +133,7 @@
   "leg-curl-allonge-pieds-flechis|homme",
   "leg-curl-allonge-pieds-pointes|homme",
   "leg-curl-allonge|homme",
+  "leg-curl-debout|homme",
   "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
@@ -192,15 +196,6 @@
    "surface": "musculation",
    "noms": [
     "Curl barre debout"
-   ]
-  },
-  {
-   "identifiant": "extensions-triceps-pullover-barre-ez",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Extensions triceps + pullover barre EZ",
-    "Extensions triceps barre EZ + pullover"
    ]
   },
   {
@@ -316,22 +311,6 @@
    ]
   },
   {
-   "identifiant": "leg-curl-debout",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Leg curl debout"
-   ]
-  },
-  {
-   "identifiant": "curl-scott-haltere-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Scott haltère, prise neutre"
-   ]
-  },
-  {
    "identifiant": "curl-scott-haltere-neutre",
    "athlete": "homme",
    "surface": "musculation",
@@ -353,14 +332,6 @@
    "surface": "musculation",
    "noms": [
     "Curl haltères"
-   ]
-  },
-  {
-   "identifiant": "curl-halteres-incline",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl haltères incliné"
    ]
   },
   {
