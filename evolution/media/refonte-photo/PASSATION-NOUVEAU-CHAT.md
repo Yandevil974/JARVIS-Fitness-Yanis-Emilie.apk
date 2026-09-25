@@ -10,18 +10,18 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
 - Branche de travail **obligatoire** : `arena/01a0d6f5-jarvis-fitness-yanis-emilie-ap`
   (session Arena courante ; ne jamais pousser sur `main`, ne jamais créer d'autre branche).
-- Avancement : **230 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
-  Restent **101** : piscine (protocoles) 40, tabata au sol 27, musculation 19,
+- Avancement : **235 / 331 animations validées** (`production/etat.json`, clé `chiffres`).
+  Restent **96** : piscine (protocoles) 40, tabata au sol 27, musculation 14,
   piscine (guides) 9, aqua tabata 6.
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
 - **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
   (`verification/VERIFICATION-2026-09-25.md`) ; 7 gestes faux trouvés parmi les livrés
   (4 refaits et acceptés au lot 17 ; 3 retirés des valides ce tour : back-squat-barre-haute,
-  back-squat-inertie-pause-complete, burpees) ; **40 couples restent à relire** (feuilles de 3,
-  190 déjà relus).
+  back-squat-inertie-pause-complete, burpees) ; **43 couples restent à relire** (feuilles de 3,
+  192 déjà relus).
   Style : 21 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
   à reprendre dans un lot dédié sans toucher aux gestes.
-- Index visuel numéroté : `review/index-general.jpg` (230 vignettes, régénéré à chaque lot).
+- Index visuel numéroté : `review/index-general.jpg` (235 vignettes, régénéré à chaque lot).
 
 ## 2. Ce que l'utilisateur a demandé (et qui ne change pas)
 
@@ -117,12 +117,14 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-1. Reprendre les **3 planches en attente** (`production/a-refaire.json`) : tirage-vertical-prise-neutre
-   (prise pronation au lieu de neutre → poignées parallèles), souleve-de-terre-partiel (deux lockouts →
-   départ fléchi sur pins imposé), mollets-unilateraux (pied libre au sol → croisé en l'air).
-   Résolus au lot 34 : ab-wheel-roulette (« EXACTLY ONE person per panel ») et extensions-triceps-barre-ez
-   (ancre de tête). Résolus au lot 33 : developpe-incline-halteres (vue de FACE pied de banc) et
-   tirage-vertical-prise-large (format 2 panneaux). Mountain climbers résolue au lot 31 (vue de FACE).
+1. Reprendre les **5 planches en attente** (`production/a-refaire.json`) : souleve-de-terre-partiel
+   (2ᵉ refus → barre posée sur pins + vert chaîne postérieure), curl-halteres-incline-prise-neutre et
+   releves-de-jambes-suspendu (grille 2×2 → format 2 panneaux), mollets-a-la-presse (genoux tendus,
+   cheville seule), hip-thrust-barre (retirée relecture-16 → BARRE et non haltères).
+   Résolus au lot 35 : tirage-vertical-prise-neutre (poignées parallèles) et mollets-unilateraux
+   (pied libre croisé en l'air). Résolus au lot 34 : ab-wheel et extensions-triceps-barre-ez.
+   Résolus au lot 33 : developpe-incline-halteres et tirage-vertical-prise-large.
+   Mountain climbers résolue au lot 31 (vue de FACE).
    Anciennement en attente : mountain-climbers, developpe-incline, tirage-vertical, ab-wheel, extensions-ez
    (vue de FACE, genou avant côté gauche puis droit de l'image) et developpe-incline-halteres
    (deux haltères séparés, quatre disques). Méthode gagnante sur refus

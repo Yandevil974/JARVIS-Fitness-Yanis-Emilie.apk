@@ -369,3 +369,26 @@ valides relus**, **40 restent a relire**. **3 planches en attente** dans
 `production/a-refaire.json` : tirage-vertical-prise-neutre, souleve-de-terre-partiel,
 mollets-unilateraux (1er refus chacun). Prochain lot 35 : ces 3 planches + 7 planches
 (musculation 19 puis tabata au sol 27).
+
+## 41. Lot 35 : poignees neutres et pied libre en l'air (meme tour)
+
+Acceptees 6 : tirage-vertical-prise-neutre (**resolu** : deux poignees verticales paralleles,
+paumes face a face), mollets-unilateraux (**resolu** : pied libre croise derriere la cheville,
+en l'air aux deux cases), developpe-halteres-plat-prise-neutre (vue de FACE pied de banc,
+deux halteres separes), extensions-triceps-halteres-plat, curl-scott-90-haltere-supination,
+leg-press-unilateral (pied droit hors sled aux deux cases).
+Refusees 4 : souleve-de-terre-partiel (2e : depart non pose sur pins + vert quadriceps),
+curl-halteres-incline-prise-neutre (grille 2x2), releves-de-jambes-suspendu (grille 2x2),
+mollets-a-la-presse (case 2 genoux flechis = leg press, vert absent case 2).
+Relecture batch 16 : 2/3 ; **hip-thrust-barre RETIREE des valides** (halteres au lieu de la
+barre = materiel faux, critere utilisateur) ; gainage-planche et jackknife-sur-swiss-ball
+conformes. Feuilles : `verification/lot35b-01..04.jpg`, `verification/relecture-16.jpg`.
+
+## 42. Couverture et suite (etat lot 35)
+
+**235 / 331 couples valides**, 96 restants (protocoles piscine 40, tabata au sol 27,
+musculation 14, piscine guides 9, aqua tabata 6). Relecture cumulative : **192 couples
+valides relus**, **43 restent a relire**. **5 planches en attente** dans
+`production/a-refaire.json` : souleve-de-terre-partiel (2e), curl-halteres-incline-prise-neutre,
+releves-de-jambes-suspendu, mollets-a-la-presse (1ers), hip-thrust-barre (relecture).
+Prochain lot 36 : ces 5 planches + 5 planches (musculation 14 puis tabata au sol 27).

@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 230,
-  "restants": 101,
+  "valides": 235,
+  "restants": 96,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 183,
+   "musculation": 188,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 19,
+   "musculation": 14,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -71,6 +71,7 @@
   "curl-marteau|homme",
   "curl-poulie-basse-supination|homme",
   "curl-poulie-basse|homme",
+  "curl-scott-90-haltere-supination|homme",
   "curl-scott-barre-ez-pronation|homme",
   "curl-scott-barre-ez-supination|homme",
   "curl-scott-haltere-neutre|homme",
@@ -92,6 +93,7 @@
   "developpe-halteres-assis-neutre-pronation|homme",
   "developpe-halteres-assis-prise-neutre|homme",
   "developpe-halteres-assis|homme",
+  "developpe-halteres-plat-prise-neutre|homme",
   "developpe-halteres-plat|homme",
   "developpe-incline-barre|homme",
   "developpe-incline-halteres|femme",
@@ -129,6 +131,7 @@
   "etirement-du-piriforme-assis|homme",
   "extension-triceps-a-la-poulie|femme",
   "extensions-triceps-barre-ez|homme",
+  "extensions-triceps-halteres-plat|homme",
   "extensions-triceps-poulie|homme",
   "extensions-triceps-pullover-barre-ez|homme",
   "face-pull-a-l-elastique|femme",
@@ -158,7 +161,6 @@
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
   "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
-  "hip-thrust-barre|femme",
   "hip-thrust-unilateral-1-jambe|femme",
   "hip-thrust-unilateral-leste|femme",
   "hip-thrust-unilateral|femme",
@@ -176,6 +178,7 @@
   "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
   "leg-curl-machine|femme",
   "leg-extension|homme",
+  "leg-press-unilateral|homme",
   "leg-press|homme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
@@ -184,6 +187,7 @@
   "mollets-assis|homme",
   "mollets-debout-unilateraux|femme",
   "mollets-debout|homme",
+  "mollets-unilateraux|homme",
   "mountain-climbers|femme",
   "mountain-climbers|homme",
   "pallof-press-a-l-elastique|femme",
@@ -241,6 +245,7 @@
   "tirage-horizontal-a-la-poulie|femme",
   "tirage-vertical-lean-away|homme",
   "tirage-vertical-prise-large|homme",
+  "tirage-vertical-prise-neutre|femme",
   "torsion-allongee-genoux|homme",
   "torsion-allongee|homme",
   "tractions-prise-large|homme",
@@ -260,14 +265,6 @@
    "surface": "musculation",
    "noms": [
     "Curl haltères incliné, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "curl-scott-90-haltere-supination",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Scott 90° haltère supination"
    ]
   },
   {
@@ -292,14 +289,6 @@
    "surface": "musculation",
    "noms": [
     "Développé haltères incliné, pronation"
-   ]
-  },
-  {
-   "identifiant": "developpe-halteres-plat-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères plat, prise neutre"
    ]
   },
   {
@@ -329,14 +318,6 @@
    ]
   },
   {
-   "identifiant": "extensions-triceps-halteres-plat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Extensions triceps haltères plat"
-   ]
-  },
-  {
    "identifiant": "gainage-planche",
    "athlete": "femme",
    "surface": "musculation",
@@ -345,11 +326,11 @@
    ]
   },
   {
-   "identifiant": "leg-press-unilateral",
-   "athlete": "homme",
+   "identifiant": "hip-thrust-barre",
+   "athlete": "femme",
    "surface": "musculation",
    "noms": [
-    "Leg press unilatéral"
+    "Hip thrust barre"
    ]
   },
   {
@@ -358,14 +339,6 @@
    "surface": "musculation",
    "noms": [
     "Mollets à la presse"
-   ]
-  },
-  {
-   "identifiant": "mollets-unilateraux",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Mollets unilatéraux"
    ]
   },
   {
@@ -390,14 +363,6 @@
    "surface": "musculation",
    "noms": [
     "Soulevé de terre partiel, prise snatch"
-   ]
-  },
-  {
-   "identifiant": "tirage-vertical-prise-neutre",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Tirage vertical prise neutre"
    ]
   },
   {

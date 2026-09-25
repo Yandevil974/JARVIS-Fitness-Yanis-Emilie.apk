@@ -1,21 +1,23 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 34
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 35
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**230 / 331** visuels validés, 101 restants) ; ce fichier ne contient que les points
+(**235 / 331** visuels validés, 96 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 5 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Tirage vertical prise neutre (femme)** — 1 refus | la prise est montrée en pronation large sur barre droite, pas en prise neutre | format 2 panneaux paysage (OK par ailleurs) | lot35 : « TWO PARALLEL VERTICAL HANDLES, palms facing each other, NOT a wide pronated grip » | aucune |
-| **Soulevé de terre partiel (homme)** — 1 refus | les deux cases montrent le lockout debout : aucune position de départ fléchie sur les pins | vue de face, pins sous les genoux | lot35 : imposer LEFT buste penché ~45° barre SUR les pins / RIGHT debout, cases obligatoirement différentes | aucune |
-| **Mollets unilatéraux (homme)** — 1 refus | le pied libre touche le sol aux deux cases (donc pas unilatéral) | ancre d'orientation, marche basse | lot35 : pied libre CROISÉ derrière la cheville porteuse, en l'air aux deux cases | aucune |
+| **Soulevé de terre partiel (homme)** — 2 refus | départ non posé sur les pins (barre à mi-cuisse, buste quasi droit) et vert sur quadriceps au lieu de chaîne postérieure | vue de face, pins, « cases différentes » | lot36 : LEFT barre **posée sur les pins** sous les genoux, buste 45° ; vert uniquement fessiers/ischios | aucune |
+| **Curl haltères incliné prise neutre (homme)** — 1 refus | génération en grille 2×2 (quatre quadrants) | bench incliné, ancre de tête | lot36 : « EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid » | aucune |
+| **Relevés de jambes suspendu (homme)** — 1 refus | génération en grille 2×2 (quatre quadrants) | barre de traction, vue de profil | lot36 : même consigne de format 2 panneaux | aucune |
+| **Mollets à la presse (homme)** — 1 refus | case 2 = genoux fléchis (leg press) au lieu de chevilles seules ; vert absent en case 2 | presse 45°, marges machine | lot36 : genoux tendus immobiles, mouvement de cheville seul, vert mollets aux deux cases | aucune |
+| **Hip thrust barre (femme)** — retirée à la relecture | haltères montrés au lieu de la **barre** (matériel faux, critère utilisateur) | lot précédent accepté à tort | lot36 : barre longue avec disques aux deux bouts posée sur le pli de hanche | aucune |
 
-Clos ce tour : **ab-wheel RÉSOLU** (« EXACTLY ONE person per panel », 2ᵉ refus effacé) et
-**extensions triceps barre EZ RÉSOLUE** (régénération avec ancre de tête, retrait relecture
-effacé) ; + gainage latéral, soulevé de terre roumain unilatéral, respiration
-diaphragmatique, squat cycliste, élévations latérales.
+Clos ce tour : **tirage vertical prise neutre RÉSOLU** (poignées parallèles verticales) et
+**mollets unilatéraux RÉSOLUS** (pied libre croisé en l'air) ; + développé haltères plat
+prise neutre (vue de FACE pied de banc), extensions triceps haltères plat, curl Scott 90
+supination, leg press unilatéral.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

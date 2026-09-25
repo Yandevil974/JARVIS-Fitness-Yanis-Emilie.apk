@@ -3,28 +3,44 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "tirage-vertical-prise-neutre (femme)",
-   "identifiant": "tirage-vertical-prise-neutre",
-   "athlete": "femme",
-   "motif": "1er refus (lot34) : prise montre pronation large sur barre droite au lieu de prise neutre (paumes face a face)",
-   "planche": "lot34/tirage-vertical-prise-neutre.png",
-   "strategieSuivante": "lot35 : decrire TWO PARALLEL VERTICAL HANDLES shoulder-width, palms facing each other, NOT a wide pronated grip on a straight bar"
-  },
-  {
    "mouvement": "souleve-de-terre-partiel (homme)",
    "identifiant": "souleve-de-terre-partiel",
    "athlete": "homme",
-   "motif": "1er refus (lot34) : les deux cases montrent le lockout debout, aucune position de depart fléchie sur les pins",
-   "planche": "lot34/souleve-de-terre-partiel.png",
-   "strategieSuivante": "lot35 : imposer LEFT = hips hinged back, torso penche ~45 deg, bar ON the pins below knees ; RIGHT = upright ; les deux cases doivent différer"
+   "motif": "2e refus (lot35) : depart non pose sur les pins (barre a mi-cuisse, buste quasi droit) et vert sur quadriceps au lieu de chaine posterieure",
+   "planche": "lot35/souleve-de-terre-partiel.png",
+   "strategieSuivante": "lot36 : LEFT = barre POSÉE sur les pins sous les genoux, buste penche 45 deg ; vert UNIQUEMENT fessiers/ischios/lombaires"
   },
   {
-   "mouvement": "mollets-unilateraux (homme)",
-   "identifiant": "mollets-unilateraux",
+   "mouvement": "curl-halteres-incline-prise-neutre (homme)",
+   "identifiant": "curl-halteres-incline-prise-neutre",
    "athlete": "homme",
-   "motif": "1er refus (lot34) : le pied libre touche le sol aux deux cases (pas unilatéral)",
-   "planche": "lot34/mollets-unilateraux.png",
-   "strategieSuivante": "lot35 : pied libre CROISE behind the working ankle, clearly OFF the floor and OFF the step in BOTH panels"
+   "motif": "1er refus (lot35) : generation en grille 2x2 (quatre quadrants)",
+   "planche": "lot35/curl-halteres-incline-prise-neutre.png",
+   "strategieSuivante": "lot36 : consigne EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, NOT four quadrants"
+  },
+  {
+   "mouvement": "releves-de-jambes-suspendu (homme)",
+   "identifiant": "releves-de-jambes-suspendu",
+   "athlete": "homme",
+   "motif": "1er refus (lot35) : generation en grille 2x2 (quatre quadrants)",
+   "planche": "lot35/releves-de-jambes-suspendu.png",
+   "strategieSuivante": "lot36 : consigne EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, NOT four quadrants"
+  },
+  {
+   "mouvement": "mollets-a-la-presse (homme)",
+   "identifiant": "mollets-a-la-presse",
+   "athlete": "homme",
+   "motif": "1er refus (lot35) : case 2 = genoux flechis (leg press) au lieu de chevilles seules, et vert absent en case 2",
+   "planche": "lot35/mollets-a-la-presse.png",
+   "strategieSuivante": "lot36 : genoux TENDUS et immobiles aux deux cases, mouvement UNIQUEMENT de cheville (talon bas -> talon haut), vert mollets aux DEUX cases"
+  },
+  {
+   "mouvement": "hip-thrust-barre (femme)",
+   "identifiant": "hip-thrust-barre",
+   "athlete": "femme",
+   "motif": "retiree a la relecture-16 (acceptee lot precedent) : halteres montres au lieu de la BARRE (materiel faux, critere utilisateur)",
+   "planche": "lot anterieur hip-thrust-barre",
+   "strategieSuivante": "lot36 : BARRE longue avec disques aux deux bouts posee sur le pli de hanche, pas d'halteres"
   }
  ],
  "verifieesEtAcceptees": [
