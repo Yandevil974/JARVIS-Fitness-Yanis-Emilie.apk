@@ -2,18 +2,23 @@
 
 ## En cours — refonte de TOUS les visuels sur la nouvelle photo (25 septembre 2026)
 
+**Cible réelle : 331 GIF** = un couple (mouvement × athlète). Les 343 lignes du plan ne
+contiennent que 325 identifiants : 17 gestes existent chez les deux athlètes et demandent
+deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué de 4 est clos.
+
 **Avancement mesuré** (fichier suivi : `evolution/media/refonte-photo/production/etat.json`) :
 
 | Surface | Faits et vérifiés | Restants |
 |---|---|---|
-| Musculation | 10 | 189 |
+| Musculation | 20 | 182 |
 | Tabata au sol | 10 | 27 |
-| Étirements | 18 | 11 |
-| Piscine (guides + protocoles) | 0 | 60 |
+| Étirements | 29 | 0 ✅ |
+| Piscine (guides) | 0 | 9 |
+| Piscine (protocoles) | 0 | 40 |
 | Aqua Tabata | 0 | 6 |
 | Elliptique | 5 | 0 ✅ |
 | Échauffement | 3 | 0 ✅ |
-| **Total** | **46** | **297** |
+| **Total** | **67** | **264** |
 
 **Deux outils ajoutés à cette étape, qui changent la méthode** :
 
