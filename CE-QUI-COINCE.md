@@ -1,20 +1,21 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 33
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 34
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**223 / 331** visuels validés, 108 restants) ; ce fichier ne contient que les points
+(**230 / 331** visuels validés, 101 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Ab wheel / roulette (homme)** — 2 refus | lot33 : case 1 = deux personnages (corps dupliqué), case 2 correcte | ancre d'orientation (lot32), planche paysage | **lot34 : « EXACTLY ONE person per panel »**, aucun second personnage, tête à gauche aux deux cases | aucune |
-| **Extensions triceps barre EZ (homme)** — retirée à la relecture | orientation de la tête inversée entre les deux cases (l'échange PIL du lot32 avait corrigé l'ordre des cases, pas l'orientation) | cases inversées puis échange PIL | **lot34 : régénération complète** avec ancre « head faces LEFT in BOTH panels », départ barre au front / fin bras tendus | aucune |
+| **Tirage vertical prise neutre (femme)** — 1 refus | la prise est montrée en pronation large sur barre droite, pas en prise neutre | format 2 panneaux paysage (OK par ailleurs) | lot35 : « TWO PARALLEL VERTICAL HANDLES, palms facing each other, NOT a wide pronated grip » | aucune |
+| **Soulevé de terre partiel (homme)** — 1 refus | les deux cases montrent le lockout debout : aucune position de départ fléchie sur les pins | vue de face, pins sous les genoux | lot35 : imposer LEFT buste penché ~45° barre SUR les pins / RIGHT debout, cases obligatoirement différentes | aucune |
+| **Mollets unilatéraux (homme)** — 1 refus | le pied libre touche le sol aux deux cases (donc pas unilatéral) | ancre d'orientation, marche basse | lot35 : pied libre CROISÉ derrière la cheville porteuse, en l'air aux deux cases | aucune |
 
-Clos ce tour : **developpé incliné haltères RÉSOLU (4ᵉ refus) par la vue de FACE pied de
-banc** (deux haltères séparés de part et d'autre du buste) ; **tirage vertical prise large
-RÉSOLU** par la consigne de format 2 panneaux paysage ; kickback poulie, hip thrust
-unilatéral lesté, pallof press poulie, pushdown triceps, curl Scott neutre, leg press.
+Clos ce tour : **ab-wheel RÉSOLU** (« EXACTLY ONE person per panel », 2ᵉ refus effacé) et
+**extensions triceps barre EZ RÉSOLUE** (régénération avec ancre de tête, retrait relecture
+effacé) ; + gainage latéral, soulevé de terre roumain unilatéral, respiration
+diaphragmatique, squat cycliste, élévations latérales.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

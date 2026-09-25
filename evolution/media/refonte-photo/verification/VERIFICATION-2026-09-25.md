@@ -346,3 +346,26 @@ valides relus**, **47 restent a relire**. **2 planches en attente** dans
 `production/a-refaire.json` : ab-wheel-roulette (2e refus), extensions-triceps-barre-ez
 (retiree a la relecture). Prochain lot 34 : ces 2 planches + 8 planches (musculation 26
 puis tabata au sol 27).
+
+## 39. Lot 34 : un seul personnage et ancre de tete (meme tour)
+
+Ab wheel : consigne EXACTLY ONE person per panel -> plus de corps duplique, orientation
+coherente aux deux cases : **2e refus efface**. Extensions triceps barre EZ : regeneration
+avec ancre « head faces LEFT in BOTH panels » -> ordre ET orientation corrects : **retrait
+relecture efface**. Acceptees 7 : ab-wheel-roulette, extensions-triceps-barre-ez,
+gainage-lateral (planche laterale, bras au plafond), souleve-de-terre-roumain-unilateral
+(haltere main opposee, jambe libre tendue), respiration-diaphragmatique (ventre plat->
+souleve), squat-cycliste (talons sur plots, squat complet), elevations-laterales.
+Refusees 3 : tirage-vertical-prise-neutre (prise montree pronation large), souleve-de-terre-partiel
+(deux lockouts, pas de depart sur pins), mollets-unilateraux (pied libre au sol).
+Relecture batch 15 : 3/3 conformes (fentes-marchees, flexion-avant-jambes-tendues, front-squat).
+Feuilles : `verification/lot34b-01..04.jpg`, `verification/relecture-15.jpg`.
+
+## 40. Couverture et suite (etat lot 34)
+
+**230 / 331 couples valides**, 101 restants (protocoles piscine 40, tabata au sol 27,
+musculation 19, piscine guides 9, aqua tabata 6). Relecture cumulative : **190 couples
+valides relus**, **40 restent a relire**. **3 planches en attente** dans
+`production/a-refaire.json` : tirage-vertical-prise-neutre, souleve-de-terre-partiel,
+mollets-unilateraux (1er refus chacun). Prochain lot 35 : ces 3 planches + 7 planches
+(musculation 19 puis tabata au sol 27).

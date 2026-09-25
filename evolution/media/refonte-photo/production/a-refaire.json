@@ -3,20 +3,28 @@
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
  "aRefaire": [
   {
-   "mouvement": "ab-wheel-roulette (homme)",
-   "identifiant": "ab-wheel-roulette",
-   "athlete": "homme",
-   "motif": "2e refus (lot33) : case 1 = deux personnages (corps duplique), case 2 correcte",
-   "planche": "lot33/ab-wheel-roulette.png",
-   "strategieSuivante": "lot34 : consigne EXACTLY ONE person per panel, aucun second personnage ; ancre tete a gauche aux deux cases"
+   "mouvement": "tirage-vertical-prise-neutre (femme)",
+   "identifiant": "tirage-vertical-prise-neutre",
+   "athlete": "femme",
+   "motif": "1er refus (lot34) : prise montre pronation large sur barre droite au lieu de prise neutre (paumes face a face)",
+   "planche": "lot34/tirage-vertical-prise-neutre.png",
+   "strategieSuivante": "lot35 : decrire TWO PARALLEL VERTICAL HANDLES shoulder-width, palms facing each other, NOT a wide pronated grip on a straight bar"
   },
   {
-   "mouvement": "extensions-triceps-barre-ez (homme)",
-   "identifiant": "extensions-triceps-barre-ez",
+   "mouvement": "souleve-de-terre-partiel (homme)",
+   "identifiant": "souleve-de-terre-partiel",
    "athlete": "homme",
-   "motif": "retiree a la relecture-14 (acceptee lot32) : orientation de la tete inversee entre les deux cases (l'echange PIL avait corrige l'ordre, pas l'orientation)",
-   "planche": "lot32/extensions-triceps-barre-ez.png",
-   "strategieSuivante": "lot34 : regeneration complete avec ancre head faces LEFT in BOTH panels, depart barre au front / fin bras tendus"
+   "motif": "1er refus (lot34) : les deux cases montrent le lockout debout, aucune position de depart fléchie sur les pins",
+   "planche": "lot34/souleve-de-terre-partiel.png",
+   "strategieSuivante": "lot35 : imposer LEFT = hips hinged back, torso penche ~45 deg, bar ON the pins below knees ; RIGHT = upright ; les deux cases doivent différer"
+  },
+  {
+   "mouvement": "mollets-unilateraux (homme)",
+   "identifiant": "mollets-unilateraux",
+   "athlete": "homme",
+   "motif": "1er refus (lot34) : le pied libre touche le sol aux deux cases (pas unilatéral)",
+   "planche": "lot34/mollets-unilateraux.png",
+   "strategieSuivante": "lot35 : pied libre CROISE behind the working ankle, clearly OFF the floor and OFF the step in BOTH panels"
   }
  ],
  "verifieesEtAcceptees": [

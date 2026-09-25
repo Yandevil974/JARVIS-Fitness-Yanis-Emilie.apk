@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 223,
-  "restants": 108,
+  "valides": 230,
+  "restants": 101,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 176,
+   "musculation": 183,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 26,
+   "musculation": 19,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -22,6 +22,7 @@
   }
  },
  "valides": [
+  "ab-wheel-roulette|homme",
   "abduction-assise-en-1-5-reps|femme",
   "abduction-assise-machine-ou-elastique|femme",
   "abduction-assise-machine|femme",
@@ -114,6 +115,7 @@
   "elevations-laterales-halteres|homme",
   "elevations-laterales-incline-30-face-au-banc|homme",
   "elevations-laterales-lean-away|homme",
+  "elevations-laterales|homme",
   "elliptique-fractionne|femme",
   "elliptique-mise-en-route|femme",
   "elliptique-recuperation-active|femme",
@@ -126,6 +128,7 @@
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
   "extension-triceps-a-la-poulie|femme",
+  "extensions-triceps-barre-ez|homme",
   "extensions-triceps-poulie|homme",
   "extensions-triceps-pullover-barre-ez|homme",
   "face-pull-a-l-elastique|femme",
@@ -145,6 +148,7 @@
   "french-press-poulie-basse|homme",
   "front-squat|homme",
   "gainage-lateral-dynamique|femme",
+  "gainage-lateral|femme",
   "gainage-planche|homme",
   "glute-bridge-en-1-5-reps|femme",
   "glute-bridge-pieds-sur-banc|femme",
@@ -200,6 +204,7 @@
   "releves-de-jambes|femme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
+  "respiration-diaphragmatique|homme",
   "reverse-crunch|femme",
   "rowing-a-l-elastique|homme",
   "rowing-assis-au-cou|homme",
@@ -219,12 +224,14 @@
   "souleve-de-terre-roumain-barre|homme",
   "souleve-de-terre-roumain-halteres|homme",
   "souleve-de-terre-roumain-unilateral-haltere|femme",
+  "souleve-de-terre-roumain-unilateral|femme",
   "souleve-de-terre-test-1rm|homme",
   "souleve-de-terre|homme",
   "split-squat-barbell-pied-avant-sureleve|homme",
   "split-squat-poulie-basse|homme",
   "squat-au-poids-du-corps|homme",
   "squat-cycliste-squat-complet|homme",
+  "squat-cycliste|homme",
   "squats|homme",
   "step-up-haut|homme",
   "step-up-sur-banc-hauteur-du-genou|femme",
@@ -247,14 +254,6 @@
   "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  {
-   "identifiant": "ab-wheel-roulette",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Ab wheel (roulette)"
-   ]
-  },
   {
    "identifiant": "curl-halteres-incline-prise-neutre",
    "athlete": "homme",
@@ -312,14 +311,6 @@
    ]
   },
   {
-   "identifiant": "elevations-laterales",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Élévations latérales"
-   ]
-  },
-  {
    "identifiant": "elevations-laterales-incline-30",
    "athlete": "homme",
    "surface": "musculation",
@@ -327,14 +318,6 @@
     "Élévations latérales incliné 30°",
     "Élévations latérales incliné 45°",
     "Élévations latérales incliné"
-   ]
-  },
-  {
-   "identifiant": "extensions-triceps-barre-ez",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Extensions triceps barre EZ"
    ]
   },
   {
@@ -351,14 +334,6 @@
    "surface": "musculation",
    "noms": [
     "Extensions triceps haltères plat"
-   ]
-  },
-  {
-   "identifiant": "gainage-lateral",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Gainage latéral"
    ]
   },
   {
@@ -402,14 +377,6 @@
    ]
   },
   {
-   "identifiant": "respiration-diaphragmatique",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Respiration diaphragmatique"
-   ]
-  },
-  {
    "identifiant": "souleve-de-terre-partiel",
    "athlete": "homme",
    "surface": "musculation",
@@ -423,22 +390,6 @@
    "surface": "musculation",
    "noms": [
     "Soulevé de terre partiel, prise snatch"
-   ]
-  },
-  {
-   "identifiant": "souleve-de-terre-roumain-unilateral",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Soulevé de terre roumain unilatéral"
-   ]
-  },
-  {
-   "identifiant": "squat-cycliste",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Squat cycliste"
    ]
   },
   {
