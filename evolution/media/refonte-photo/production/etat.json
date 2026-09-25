@@ -1,19 +1,20 @@
 {
- "regle": "une cible = un couple (identifiant, athlete) ; le GIF porte le suffixe -homme / -femme",
- "noteEcart": "343 lignes de plan = 325 identifiants distincts = 331 couples (un meme geste compte deux fois chez les deux athletes).",
+ "regle": "une cible = un couple (identifiant, athlete)",
+ "noteEcart": "343 lignes de plan = 325 identifiants distincts = 331 couples (17 gestes existent chez les deux athletes).",
+ "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 75,
-  "restants": 256,
+  "valides": 84,
+  "restants": 247,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 28,
+   "musculation": 37,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 174,
+   "musculation": 165,
    "piscine-protocole": 40,
    "piscine": 9,
    "tabata-aqua": 6,
@@ -39,9 +40,15 @@
   "cobra-doux|homme",
   "coude-au-dessus-de-la-tete|homme",
   "crunch|homme",
+  "curl-marteau-assis|homme",
+  "curl-zottman-assis|homme",
   "developpe-couche-barre|homme",
   "developpe-couche-test-1rm|homme",
+  "developpe-halteres-assis-neutre-pronation|homme",
+  "developpe-halteres-assis-prise-neutre|homme",
+  "developpe-halteres-assis|homme",
   "developpe-militaire-debout|homme",
+  "developpe-militaire-halteres-assis|femme",
   "developpe-militaire-test-1rm|homme",
   "dips|homme",
   "echauffement-mise-en-route|homme",
@@ -60,6 +67,7 @@
   "etirement-du-piriforme-assis|homme",
   "fentes-alternees|homme",
   "fentes-arriere-alternees|femme",
+  "fentes-arriere-au-poids-du-corps|homme",
   "fentes-avant-alternees|femme",
   "fentes-bulgares-pied-arriere-sureleve|femme",
   "flexion-avant-jambes-tendues|homme",
@@ -84,6 +92,8 @@
   "releves-de-jambes-allonge|homme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
+  "rowing-assis-au-cou|homme",
+  "rowing-assis-cable-unilateral|homme",
   "rowing-barre-buste-penche-pronation|homme",
   "souleve-de-terre-test-1rm|homme",
   "souleve-de-terre|homme",
@@ -115,83 +125,11 @@
    ]
   },
   {
-   "identifiant": "fentes-arriere-au-poids-du-corps",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Fentes arrière au poids du corps"
-   ]
-  },
-  {
-   "identifiant": "rowing-assis-cable-unilateral",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing assis câble unilatéral"
-   ]
-  },
-  {
-   "identifiant": "rowing-assis-au-cou",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing assis au cou"
-   ]
-  },
-  {
-   "identifiant": "curl-marteau-assis",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl marteau assis"
-   ]
-  },
-  {
-   "identifiant": "curl-zottman-assis",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl Zottman assis"
-   ]
-  },
-  {
-   "identifiant": "developpe-halteres-assis",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères assis"
-   ]
-  },
-  {
-   "identifiant": "developpe-militaire-halteres-assis",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Développé militaire haltères assis"
-   ]
-  },
-  {
    "identifiant": "developpe-militaire-halteres-assis-test-3-5-reps",
    "athlete": "femme",
    "surface": "musculation",
    "noms": [
     "Développé militaire haltères assis — test (3-5 reps)"
-   ]
-  },
-  {
-   "identifiant": "developpe-halteres-assis-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères assis, prise neutre"
-   ]
-  },
-  {
-   "identifiant": "developpe-halteres-assis-neutre-pronation",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères assis, neutre→pronation"
    ]
   },
   {

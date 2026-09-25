@@ -10,7 +10,7 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 
 | Surface | Faits et vérifiés | Restants |
 |---|---|---|
-| Musculation | 28 | 174 |
+| Musculation | 37 | 165 |
 | Tabata au sol | 10 | 27 |
 | Étirements | 29 | 0 ✅ |
 | Piscine (guides) | 0 | 9 |
@@ -18,7 +18,7 @@ deux GIF distincts (l'un à l'homme, l'autre à la femme). L'écart inexpliqué 
 | Aqua Tabata | 0 | 6 |
 | Elliptique | 5 | 0 ✅ |
 | Échauffement | 3 | 0 ✅ |
-| **Total** | **75** | **256** |
+| **Total** | **84** | **247** |
 
 **Deux outils ajoutés à cette étape, qui changent la méthode** :
 
