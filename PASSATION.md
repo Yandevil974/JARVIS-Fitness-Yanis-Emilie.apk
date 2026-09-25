@@ -2,49 +2,46 @@
 
 ## En cours — refonte de TOUS les visuels sur la nouvelle photo (25 septembre 2026)
 
-> « Refais en entier les gifs animés via la nouvelle photo de l'homme et de la femme
-> que je viens de mettre. Les nouveaux gifs doivent être conformes à la photo, même
-> style, exactement le même visage et corps. Je souhaite que tous les exercices,
-> musculation, Tabata, Aqua Tabata, piscine, Metcon piscine, vélo elliptique,
-> échauffement, étirement, enfin tout soit changé et conforme à la nouvelle photo.
-> Aucun oubli et aucun exercice ne doit avoir un blanc, tout doit être représenté.
-> Montre-moi un exemple de l'homme et de la femme créés et un exemple sur 2 exercices
-> chacun. »
+**Avancement mesuré** (fichier suivi : `evolution/media/refonte-photo/production/etat.json`) :
 
-**Méthode retenue (celle de la refonte v5, déjà approuvée)** : on ne redessine pas un
-personnage, **on retouche la photo de l'utilisateur**. Chaque position d'exercice est
-une retouche de la position précédente (« Edit this image. Keep EVERYTHING identical…
-Change ONLY the arms »), d'où le même visage, le même corps et le même décor partout.
-Deux positions = un GIF de 2 images, 500 ms, boucle infinie. Détail complet :
-`evolution/media/refonte-photo/README.md`.
+| Surface | Faits et vérifiés | Restants |
+|---|---|---|
+| Musculation | 10 | 189 |
+| Tabata au sol | 10 | 27 |
+| Étirements | 18 | 11 |
+| Piscine (guides + protocoles) | 0 | 60 |
+| Aqua Tabata | 0 | 6 |
+| Elliptique | 5 | 0 ✅ |
+| Échauffement | 3 | 0 ✅ |
+| **Total** | **46** | **297** |
 
-**Références épinglées, jamais régénérées** : la photo de l'utilisateur
-(`evolution/media/refonte-photo/photo/homme-source.jpg`, `femme-source.jpg`) et sa
-copie déjà épinglée dans le dépôt (commit `763f4d7`, `jarvis-man-avatar.png`,
-`jarvis-woman-avatar.png`). Mesure image par image : **même photo** (écart moyen
-2,7 / 255 pour la femme, même visage, même salle et même corps pour l'homme).
+**Deux outils ajoutés à cette étape, qui changent la méthode** :
 
-**Fait à cette étape** :
+1. `evolution/media/tools/refonte-sheet.py` — une planche 2 cases devient un GIF :
+   les deux positions sortent d'une seule génération (même athlète, même salle, même
+   cadrage), puis les cases sont recalées par corrélation du décor et la **même fenêtre**
+   est découpée dans les deux. C'est ce qui rend l'enchaînement fluide, sans saut.
+2. `evolution/media/refonte-photo/production/prescriptions.json` — les **343 gestes**
+   sont désormais écrits en collant la **prescription exacte lue dans l'APK livré**
+   (nom + durée + consigne), extraite du paquet. Plus aucune posture n'est devinée.
 
-- les deux modèles maîtres conformes à la photo (homme et femme, salle lumineuse,
-  corps entier) : `planches/maitre-homme.png`, `planches/maitre-femme.png` ;
-- **deux exemples complets demandés** : `gif/elevations-laterales-assises-homme.gif`
-  et `gif/curl-marteau-assis-femme.gif`, avec la planche de contrôle
-  `evolution/media/refonte-photo/exemple-2-exercices-chacun.jpg` ;
-- l'outil d'assemblage `evolution/media/tools/photo-to-gif.py` (2 images, 500 ms,
-  largeurs différentes tolérées sans déformation) ;
-- l'étendue du travail mesurée sur l'inventaire livré : **399 noms distincts à
-  illustrer** (209 musculation, 29 étirements, 38 Tabata au sol, 6 Tabata aqua,
-  19 guides piscine, 111 noms d'étapes de protocoles piscine, 5 cardio/elliptique,
-  3 échauffement), soit **798 images à produire** à 2 positions par nom, plus les
-  variantes d'alias.
+**Plan de production** : `production/plan.json` — 729 noms de l'application rattachés à
+**343 mouvements** ; quand deux noms désignent le même geste, un seul GIF les sert
+(autorisé pour deux identifiants). Aucun nom ne reste sans visuel.
 
-**Ce qui reste ouvert** : production des 399 noms, câblage (carte `alias-visuals-map`,
-`build.mjs`, `BUNDLE_SHA`, tests qui comptent 10 variantes), reconstruction de l'APK,
-`.sha256` + `.fidelity.json`, 64 tests, puis essai sur le téléphone de l'utilisateur.
-La clé de récupération de signature n'est **pas** dans cet espace de travail : elle doit
-être recollée par l'utilisateur (`/tmp/rk.txt`, droits 0600) avant de pouvoir signer.
-**Aucun groupe de constats n'est fermé** et l'IA conversationnelle reste en pause.
+**Contrôle qualité, sans complaisance** : 5 planches produites ont été **refusées après
+lecture des deux cases** et sont listées dans `production/a-refaire.json` avec le motif
+et la prescription concernée. Elles ne sont pas comptées comme faites.
+
+**Vocabulaire visuel imposé** (identique à la famille déjà livrée) : photo de l'utilisateur
+comme seul modèle, une seule chose change par image, les muscles travaillés en **vert
+lime** et eux seuls, éclairage clair, aucun texte, aucun cadrage qui coupe la tête ou les pieds.
+
+**Reste à faire** : les 297 mouvements, puis le câblage (carte des alias, `build.mjs`,
+`BUNDLE_SHA`), la reconstruction de l'APK, `.sha256` + `.fidelity.json`, les 64 tests.
+**La clé de signature n'est pas dans cet espace de travail** : elle devra être recollée
+par l'utilisateur au moment de la construction finale (`/tmp/rk.txt`, droits 0600).
+Aucun groupe de constats n'est fermé ; l'IA conversationnelle reste en pause.
 
 ## Télécharger la version livrée (1.4.8 — 24 septembre 2026)
 

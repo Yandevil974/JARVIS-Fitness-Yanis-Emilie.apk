@@ -1,0 +1,1633 @@
+{
+ "source": "assets/public/assets/index-CBCies4k.js de l APK 1.4.8",
+ "methode": "le nom est cherche dans le script livre, contexte de 380 caracteres conserve tel quel",
+ "total": 325,
+ "trouves": 343,
+ "entrees": {
+  "Elliptique — récupération active": {
+   "trouve": true,
+   "surface": "cardio-elliptique",
+   "extrait": "é jusqu'à la fin.\"]},{k:[\"recuperation active\",\"recup active\"],t:\"Elliptique — récupération active\",img:\"/media/cardio-recup-active.jpg\",h:[\"Ralentissez franchement, laissez le rythme cardiaque redescendre.\",\"Relâchez les épaules et les bras, restez en mouvement.\",\"Ne vous arrêtez pas net : la reprise en serait plus dure.\",\"Profitez-en pour boire une gorgée.\"]},{k:[\"retour au calme elliptique\"],t:\"Elliptiqu"
+  },
+  "Elliptique — retour au calme": {
+   "trouve": true,
+   "surface": "cardio-elliptique",
+   "extrait": "en pour boire une gorgée.\"]},{k:[\"retour au calme elliptique\"],t:\"Elliptique — retour au calme\",img:\"/media/cardio-recup-active.jpg\",h:[\"Allure très facile, mouvement fluide.\",\"Diminuez progressivement jusqu'à l'arrêt.\",\"Respirez profondément, relâchez tout le haut du corps.\",\"Hydratez-vous : la récupération commence maintenant.\"]},{k:[\"transition\"],t:\"Transition\",img:\"/media/cardio-transition.jpg\",h:[\"Buve"
+  },
+  "Elliptique — fractionné": {
+   "trouve": true,
+   "surface": "cardio-elliptique",
+   "extrait": "ir une conversation.\"]},{k:[\"fractionne soutenu\",\"fractionne\"],t:\"Elliptique — fractionné\",img:\"/media/cardio-elliptique.jpg\",h:[\"Augmentez la cadence sans casser la posture.\",\"Poussez fort sur les jambes, tirez franchement sur les bras.\",\"Respiration ample : inspirez par le nez, soufflez par la bouche.\",\"L'effort doit être difficile mais maîtrisé jusqu'à la fin.\"]},{k:[\"recuperation active\",\"recup active\"]"
+  },
+  "Elliptique — mise en route": {
+   "trouve": true,
+   "surface": "cardio-elliptique",
+   "extrait": "i.h.map(Zu)})),If=[{k:[\"echauffement elliptique\",\"elliptique\"],t:\"Elliptique — mise en route\",img:\"/media/cardio-elliptique.jpg\",h:[\"Buste droit, épaules basses, regard devant.\",\"Pieds à plat sur les pédales, appui réparti sur tout le pied.\",\"Poussez et tirez les bras : le haut du corps travaille aussi.\",\"Allure facile : vous devez pouvoir tenir une conversation.\"]},{k:[\"fractionne soutenu\",\"fractionne\"],t:"
+  },
+  "Transition": {
+   "trouve": true,
+   "surface": "cardio-elliptique",
+   "extrait": ";Cf=1;var i=Symbol.for(\"react.transitional.element\"),o=Symbol.for(\"react.fragment\");function n(l,c,u){var p=null;if(u!==void 0&&(p=\"\"+u),c.key!==void 0&&(p=\"\"+c.key),\"key\"in c){u={};for(var f in c)f!==\"key\"&&(u[f]=c[f])}else u=c;return c=u.ref,{$$typeof:i,type:l,key:p,ref:c!==void 0?c:null,props:u}}return rl.Fragment=o,rl.jsx=n,rl.jsxs=n,rl}var Ef;function E8(){return Ef||(Ef=1,Tu.exports=C8()),Tu.exports}v"
+  },
+  "Échauffement — séries d’approche": {
+   "trouve": true,
+   "surface": "echauffement",
+   "extrait": "-8) + 90 s très facile. 5 min d'échauffement et 3 min de retour au calme.\"},\"exos\":[[\"Hip thrust barre\",\"fes\",3,\"10-12\",\"3112\",90,\"Rappel fessier : même technique que J1, charge confortable, focus sur la contraction.\"],[\"Soulevé de terre roumain haltères\",\"isc\",3,\"10\",\"3011\",90,\"Chaîne postérieure complète.\"],[\"Développé couché haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"Coudes à 45°, descente contrôlée.\"],[\"Tirag"
+  },
+  "Échauffement — mise en route": {
+   "trouve": true,
+   "surface": "echauffement",
+   "extrait": "-8) + 90 s très facile. 5 min d'échauffement et 3 min de retour au calme.\"},\"exos\":[[\"Hip thrust barre\",\"fes\",3,\"10-12\",\"3112\",90,\"Rappel fessier : même technique que J1, charge confortable, focus sur la contraction.\"],[\"Soulevé de terre roumain haltères\",\"isc\",3,\"10\",\"3011\",90,\"Chaîne postérieure complète.\"],[\"Développé couché haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"Coudes à 45°, descente contrôlée.\"],[\"Tirag"
+  },
+  "Échauffement — mobilité": {
+   "trouve": true,
+   "surface": "echauffement",
+   "extrait": "-8) + 90 s très facile. 5 min d'échauffement et 3 min de retour au calme.\"},\"exos\":[[\"Hip thrust barre\",\"fes\",3,\"10-12\",\"3112\",90,\"Rappel fessier : même technique que J1, charge confortable, focus sur la contraction.\"],[\"Soulevé de terre roumain haltères\",\"isc\",3,\"10\",\"3011\",90,\"Chaîne postérieure complète.\"],[\"Développé couché haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"Coudes à 45°, descente contrôlée.\"],[\"Tirag"
+  },
+  "Adduction de la hanche debout": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "oyen fessier / hanches\",\"exos\":[[\"🦩\",\"Adduction de la hanche debout\",\"20-30 s/côté\",\"Debout, croisez une jambe derrière l'autre et penchez le buste du côté de la jambe croisée. Étire le moyen fessier et le tenseur du fascia lata.\"],[\"🧎\",\"Étirement du fléchisseur de hanche (chevalier)\",\"30 s/côté\",\"Un genou au sol, bassin basculé vers l'arrière, poussez les hanches vers l'avant. Indispensable pour un hip thr"
+  },
+  "Allongé sur le côté": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "ez la cheville, genoux serrés.\"],[\"➡️\",\"Allongé sur le côté\",\"20-30 s/côté\",\"Sur le côté, ramenez le talon vers la fesse, poussez la hanche vers l'avant.\"]]},\"isc\":{\"nom\":\"Ischio-jambiers\",\"exos\":[[\"📐\",\"Flexion avant jambes tendues\",\"30-45 s\",\"Assis, jambes tendues, penchez-vous vers les pieds en gardant le dos long et droit.\"],[\"1️⃣\",\"Une jambe tendue, une pliée\",\"20-30 s/côté\",\"Assis, une jambe tendue, l'"
+  },
+  "Respiration diaphragmatique allongée": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": " abdominale après le gainage.\"],[\"🌬️\",\"Respiration diaphragmatique allongée\",\"1 min\",\"Allongée, genoux pliés, inspirez en gonflant le ventre, expirez longuement en rentrant le nombril vers la colonne. 6 à 8 respirations.\"]]},\"qua\":{\"nom\":\"Quadriceps\",\"exos\":[[\"🦵\",\"Talon vers la fesse (debout)\",\"20-30 s/côté\",\"Tenez-vous à un support, ramenez le talon vers la fesse, attrapez la cheville, genoux serrés.\"],[\"➡"
+  },
+  "Torsion allongée genoux": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": ", bras tendus, front au sol.\"],[\"🔄\",\"Torsion allongée genoux\",\"20-30 s/côté\",\"Sur le dos, genoux pliés, basculez les jambes à gauche puis à droite.\"]]},\"fes\":{\"nom\":\"Fessiers\",\"exos\":[[\"🕊️\",\"Pigeon assis\",\"30-45 s/côté\",\"Assis, une cheville posée sur l'autre genou, penchez-vous doucement vers l'avant, dos droit. C'est l'étirement clé après une séance fessiers.\"],[\"🪑\",\"Étirement du piriforme assis\",\"30 s/côt"
+  },
+  "Torsion allongée": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "ds du corps étirer le dos.\"],[\"🔄\",\"Torsion allongée\",\"20-30 s/côté\",\"Sur le dos, genoux pliés, basculez les jambes d'un côté, regardez de l'autre.\"]]},\"epA\":{\"nom\":\"Épaules antérieures\",\"exos\":[[\"🤝\",\"Mains croisées derrière le dos\",\"20-30 s\",\"Mains croisées dans le dos, bras tendus, montez doucement les mains tout en poussant la poitrine vers l'avant.\"]]},\"epL\":{\"nom\":\"Épaules latérales\",\"exos\":[[\"➡️\",\"Bras"
+  },
+  "Étirement du piriforme assis": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "lé après une séance fessiers.\"],[\"🪑\",\"Étirement du piriforme assis\",\"30 s/côté\",\"Assise sur une chaise, croisez la cheville sur le genou opposé et penchez le buste droit vers l'avant.\"]]},\"moy\":{\"nom\":\"Moyen fessier / hanches\",\"exos\":[[\"🦩\",\"Adduction de la hanche debout\",\"20-30 s/côté\",\"Debout, croisez une jambe derrière l'autre et penchez le buste du côté de la jambe croisée. Étire le moyen fessier et le t"
+  },
+  "Pigeon assis": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "fes\":{\"nom\":\"Fessiers\",\"exos\":[[\"🕊️\",\"Pigeon assis\",\"30-45 s/côté\",\"Assis, une cheville posée sur l'autre genou, penchez-vous doucement vers l'avant, dos droit. C'est l'étirement clé après une séance fessiers.\"],[\"🪑\",\"Étirement du piriforme assis\",\"30 s/côté\",\"Assise sur une chaise, croisez la cheville sur le genou opposé et penchez le buste droit vers l'avant.\"]]},\"moy\":{\"nom\":\"Moyen fessier / hanches\",\"ex"
+  },
+  "Flexion avant jambes tendues": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": ":{\"nom\":\"Ischio-jambiers\",\"exos\":[[\"📐\",\"Flexion avant jambes tendues\",\"30-45 s\",\"Assis, jambes tendues, penchez-vous vers les pieds en gardant le dos long et droit.\"],[\"1️⃣\",\"Une jambe tendue, une pliée\",\"20-30 s/côté\",\"Assis, une jambe tendue, l'autre pliée plante contre la cuisse, penchez-vous vers le pied tendu.\"]]},\"add\":{\"nom\":\"Adducteurs\",\"exos\":[[\"🐸\",\"Grenouille (plantes jointes)\",\"30-45 s\",\"Assis, p"
+  },
+  "Position de l'enfant (Balasana)": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "om\":\"Dos / dorsaux\",\"exos\":[[\"🐈\",\"Position de l'enfant (Balasana)\",\"30-45 s\",\"Assis sur les talons, bras tendus au sol devant vous, front au sol. Respirez profondément dans le dos.\"],[\"🕸️\",\"Suspension à la barre\",\"20-30 s\",\"Suspendu à une barre de traction, épaules relâchées, laissez le poids du corps étirer le dos.\"],[\"🔄\",\"Torsion allongée\",\"20-30 s/côté\",\"Sur le dos, genoux pliés, basculez les jambes d'un"
+  },
+  "Suspension à la barre": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "profondément dans le dos.\"],[\"🕸️\",\"Suspension à la barre\",\"20-30 s\",\"Suspendu à une barre de traction, épaules relâchées, laissez le poids du corps étirer le dos.\"],[\"🔄\",\"Torsion allongée\",\"20-30 s/côté\",\"Sur le dos, genoux pliés, basculez les jambes d'un côté, regardez de l'autre.\"]]},\"epA\":{\"nom\":\"Épaules antérieures\",\"exos\":[[\"🤝\",\"Mains croisées derrière le dos\",\"20-30 s\",\"Mains croisées dans le dos, bra"
+  },
+  "Bras tendu contre le mur": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "oitrine. Changez de côté.\"],[\"🧱\",\"Bras tendu contre le mur\",\"20-30 s\",\"Bras tendu le long du mur, paume posée, faites pivoter le buste à l'opposé. Changez de côté.\"]]},\"dos\":{\"nom\":\"Dos / dorsaux\",\"exos\":[[\"🐈\",\"Position de l'enfant (Balasana)\",\"30-45 s\",\"Assis sur les talons, bras tendus au sol devant vous, front au sol. Respirez profondément dans le dos.\"],[\"🕸️\",\"Suspension à la barre\",\"20-30 s\",\"Suspendu "
+  },
+  "Bras tendu contre la poitrine": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": ":\"Épaules latérales\",\"exos\":[[\"➡️\",\"Bras tendu contre la poitrine\",\"20-30 s/côté\",\"Bras tendu horizontalement, tirez-le doucement vers la poitrine avec l'autre main. Épaule basse.\"]]},\"epP\":{\"nom\":\"Épaules postérieures\",\"exos\":[[\"🔃\",\"Bras tendu devant, main tirée\",\"20-30 s/côté\",\"Bras tendu devant vous, paume vers le bas, tirez la main vers vous avec l'autre main.\"]]},\"bic\":{\"nom\":\"Biceps\",\"exos\":[[\"🙌\",\"Bra"
+  },
+  "Bras tendu derrière": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "\"bic\":{\"nom\":\"Biceps\",\"exos\":[[\"🙌\",\"Bras tendu derrière\",\"20-30 s/côté\",\"Bras tendu dans le dos, paume vers le haut, tirez doucement la main vers le bas avec l'autre main.\"]]},\"tri\":{\"nom\":\"Triceps\",\"exos\":[[\"💪\",\"Coude au-dessus de la tête\",\"20-30 s/côté\",\"Bras plié derrière la tête, poussez le coude vers le bas avec l'autre main.\"],[\"🤲\",\"Main dans le dos\",\"20-30 s/côté\",\"Une main glissée dans le dos entre "
+  },
+  "Bras tendu devant, main tirée": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "Épaules postérieures\",\"exos\":[[\"🔃\",\"Bras tendu devant, main tirée\",\"20-30 s/côté\",\"Bras tendu devant vous, paume vers le bas, tirez la main vers vous avec l'autre main.\"]]},\"bic\":{\"nom\":\"Biceps\",\"exos\":[[\"🙌\",\"Bras tendu derrière\",\"20-30 s/côté\",\"Bras tendu dans le dos, paume vers le haut, tirez doucement la main vers le bas avec l'autre main.\"]]},\"tri\":{\"nom\":\"Triceps\",\"exos\":[[\"💪\",\"Coude au-dessus de la tê"
+  },
+  "Étirement du fléchisseur de hanche (chevalier)": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "et le tenseur du fascia lata.\"],[\"🧎\",\"Étirement du fléchisseur de hanche (chevalier)\",\"30 s/côté\",\"Un genou au sol, bassin basculé vers l'arrière, poussez les hanches vers l'avant. Indispensable pour un hip thrust complet.\"]]},\"tra\":{\"nom\":\"Transverse / sangle abdominale\",\"exos\":[[\"🐍\",\"Cobra doux\",\"20-30 s\",\"Sur le ventre, poussez sur les mains pour décoller légèrement la poitrine, sans cambrer les lombaire"
+  },
+  "Cobra doux": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "se / sangle abdominale\",\"exos\":[[\"🐍\",\"Cobra doux\",\"20-30 s\",\"Sur le ventre, poussez sur les mains pour décoller légèrement la poitrine, sans cambrer les lombaires. Relâche la sangle abdominale après le gainage.\"],[\"🌬️\",\"Respiration diaphragmatique allongée\",\"1 min\",\"Allongée, genoux pliés, inspirez en gonflant le ventre, expirez longuement en rentrant le nombril vers la colonne. 6 à 8 respirations.\"]]},\"qua"
+  },
+  "Étirement du cobra": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "s\":{\"nom\":\"Abdominaux\",\"exos\":[[\"🐍\",\"Étirement du cobra\",\"20-30 s\",\"Sur le ventre, poussez sur les mains pour cambrer légèrement le dos, regardez devant, sans forcer sur les lombaires.\"]]},\"lom\":{\"nom\":\"Lombaires\",\"exos\":[[\"🐈\",\"Position de l'enfant\",\"30-45 s\",\"Assis sur les talons, bras tendus, front au sol.\"],[\"🔄\",\"Torsion allongée genoux\",\"20-30 s/côté\",\"Sur le dos, genoux pliés, basculez les jambes à gau"
+  },
+  "Étirement contre le mur": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "]]},\"mol\":{\"nom\":\"Mollets\",\"exos\":[[\"🧱\",\"Étirement contre le mur\",\"20-30 s/côté\",\"En appui contre le mur, une jambe tendue derrière (talon au sol), l'autre pliée, poussez le talon au sol.\"],[\"🪜\",\"Mollet en escalier\",\"20-30 s/côté\",\"Avant-pied sur une marche, talon qui descend sous le niveau de la marche.\"]]}},\"LS_KEY\":\"emilie_transformation_v1\",\"EXO_GIFS\":{\"Abduction assise (machine ou élastique)\":\"<svg cla"
+  },
+  "Coude au-dessus de la tête": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "tri\":{\"nom\":\"Triceps\",\"exos\":[[\"💪\",\"Coude au-dessus de la tête\",\"20-30 s/côté\",\"Bras plié derrière la tête, poussez le coude vers le bas avec l'autre main.\"],[\"🤲\",\"Main dans le dos\",\"20-30 s/côté\",\"Une main glissée dans le dos entre les omoplates, poussez le coude vers le bas.\"]]},\"avb\":{\"nom\":\"Avant-bras\",\"exos\":[[\"✊\",\"Étirement des fléchisseurs\",\"20-30 s/côté\",\"Bras tendu, paume vers le haut, tirez les do"
+  },
+  "Mains croisées derrière le dos": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "Épaules antérieures\",\"exos\":[[\"🤝\",\"Mains croisées derrière le dos\",\"20-30 s\",\"Mains croisées dans le dos, bras tendus, montez doucement les mains tout en poussant la poitrine vers l'avant.\"]]},\"epL\":{\"nom\":\"Épaules latérales\",\"exos\":[[\"➡️\",\"Bras tendu contre la poitrine\",\"20-30 s/côté\",\"Bras tendu horizontalement, tirez-le doucement vers la poitrine avec l'autre main. Épaule basse.\"]]},\"epP\":{\"nom\":\"Épaules"
+  },
+  "Main dans le dos": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "s le bas avec l'autre main.\"],[\"🤲\",\"Main dans le dos\",\"20-30 s/côté\",\"Une main glissée dans le dos entre les omoplates, poussez le coude vers le bas.\"]]},\"avb\":{\"nom\":\"Avant-bras\",\"exos\":[[\"✊\",\"Étirement des fléchisseurs\",\"20-30 s/côté\",\"Bras tendu, paume vers le haut, tirez les doigts vers le bas avec l'autre main.\"],[\"🖐️\",\"Étirement des extenseurs\",\"20-30 s/côté\",\"Bras tendu, paume vers le bas, tirez le d"
+  },
+  "Étirement dans l'encadrement de porte": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": ":{\"nom\":\"Pectoraux\",\"exos\":[[\"🚪\",\"Étirement dans l'encadrement de porte\",\"20-30 s\",\"Avant-bras à 90° contre le montant, fente légère vers l'avant jusqu'à sentir l'étirement dans la poitrine. Changez de côté.\"],[\"🧱\",\"Bras tendu contre le mur\",\"20-30 s\",\"Bras tendu le long du mur, paume posée, faites pivoter le buste à l'opposé. Changez de côté.\"]]},\"dos\":{\"nom\":\"Dos / dorsaux\",\"exos\":[[\"🐈\",\"Position de l'enf"
+  },
+  "Talon vers la fesse (debout)": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "qua\":{\"nom\":\"Quadriceps\",\"exos\":[[\"🦵\",\"Talon vers la fesse (debout)\",\"20-30 s/côté\",\"Tenez-vous à un support, ramenez le talon vers la fesse, attrapez la cheville, genoux serrés.\"],[\"➡️\",\"Allongé sur le côté\",\"20-30 s/côté\",\"Sur le côté, ramenez le talon vers la fesse, poussez la hanche vers l'avant.\"]]},\"isc\":{\"nom\":\"Ischio-jambiers\",\"exos\":[[\"📐\",\"Flexion avant jambes tendues\",\"30-45 s\",\"Assis, jambes tend"
+  },
+  "Étirement des extenseurs": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "s le bas avec l'autre main.\"],[\"🖐️\",\"Étirement des extenseurs\",\"20-30 s/côté\",\"Bras tendu, paume vers le bas, tirez le dos de la main vers vous.\"]]},\"abs\":{\"nom\":\"Abdominaux\",\"exos\":[[\"🐍\",\"Étirement du cobra\",\"20-30 s\",\"Sur le ventre, poussez sur les mains pour cambrer légèrement le dos, regardez devant, sans forcer sur les lombaires.\"]]},\"lom\":{\"nom\":\"Lombaires\",\"exos\":[[\"🐈\",\"Position de l'enfant\",\"30-45 s"
+  },
+  "Étirement des fléchisseurs": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "\":{\"nom\":\"Avant-bras\",\"exos\":[[\"✊\",\"Étirement des fléchisseurs\",\"20-30 s/côté\",\"Bras tendu, paume vers le haut, tirez les doigts vers le bas avec l'autre main.\"],[\"🖐️\",\"Étirement des extenseurs\",\"20-30 s/côté\",\"Bras tendu, paume vers le bas, tirez le dos de la main vers vous.\"]]},\"abs\":{\"nom\":\"Abdominaux\",\"exos\":[[\"🐍\",\"Étirement du cobra\",\"20-30 s\",\"Sur le ventre, poussez sur les mains pour cambrer légèreme"
+  },
+  "Position de l'enfant": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": "om\":\"Dos / dorsaux\",\"exos\":[[\"🐈\",\"Position de l'enfant (Balasana)\",\"30-45 s\",\"Assis sur les talons, bras tendus au sol devant vous, front au sol. Respirez profondément dans le dos.\"],[\"🕸️\",\"Suspension à la barre\",\"20-30 s\",\"Suspendu à une barre de traction, épaules relâchées, laissez le poids du corps étirer le dos.\"],[\"🔄\",\"Torsion allongée\",\"20-30 s/côté\",\"Sur le dos, genoux pliés, basculez les jambes d'un"
+  },
+  "Mollet en escalier": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": " pliée, poussez le talon au sol.\"],[\"🪜\",\"Mollet en escalier\",\"20-30 s/côté\",\"Avant-pied sur une marche, talon qui descend sous le niveau de la marche.\"]]}},\"LS_KEY\":\"emilie_transformation_v1\",\"EXO_GIFS\":{\"Abduction assise (machine ou élastique)\":\"<svg class=\\\"exo-gif\\\" viewBox=\\\"0 0 120 100\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><style>.exo-gif{width:100%;height:auto;border-radius:8px;background:#0a0e"
+  },
+  "Grenouille (plantes jointes)": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": ",\"add\":{\"nom\":\"Adducteurs\",\"exos\":[[\"🐸\",\"Grenouille (plantes jointes)\",\"30-45 s\",\"Assis, plantes des pieds jointes, genoux écartés, poussez doucement les genoux vers le sol.\"]]},\"mol\":{\"nom\":\"Mollets\",\"exos\":[[\"🧱\",\"Étirement contre le mur\",\"20-30 s/côté\",\"En appui contre le mur, une jambe tendue derrière (talon au sol), l'autre pliée, poussez le talon au sol.\"],[\"🪜\",\"Mollet en escalier\",\"20-30 s/côté\",\"Avan"
+  },
+  "Une jambe tendue, une pliée": {
+   "trouve": true,
+   "surface": "etirement",
+   "extrait": " gardant le dos long et droit.\"],[\"1️⃣\",\"Une jambe tendue, une pliée\",\"20-30 s/côté\",\"Assis, une jambe tendue, l'autre pliée plante contre la cuisse, penchez-vous vers le pied tendu.\"]]},\"add\":{\"nom\":\"Adducteurs\",\"exos\":[[\"🐸\",\"Grenouille (plantes jointes)\",\"30-45 s\",\"Assis, plantes des pieds jointes, genoux écartés, poussez doucement les genoux vers le sol.\"]]},\"mol\":{\"nom\":\"Mollets\",\"exos\":[[\"🧱\",\"Étirement"
+  },
+  "Back squat — test 1RM": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "stez votre record annuel en toute sécurité.\"],[\"Back squat — test 1RM\",\"qua\",5,\"1-5\",\"4010\",180,\"\"],[\"Soulevé de terre — test 1RM\",\"isc\",5,\"1-5\",\"4010\",180,\"\"],[\"Développé militaire — test 1RM\",\"epA\",5,\"1-5\",\"4010\",180,\"\"]]},\"J3\":{\"nom\":\"Full body — affûtage & pose\",\"muscles\":[\"pec\",\"dos\",\"abs\",\"mol\"],\"exos\":[[\"Développé haltères incliné\",\"pec\",3,\"10-12\",\"3010\",90,\"\"],[\"Rowing haltère un bras\",\"dos\",3,\"10-1"
+  },
+  "Développé couché — test 1RM": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",\"muscles\":[\"pec\",\"qua\",\"isc\",\"epA\"],\"exos\":[[\"Développé couché — test 1RM\",\"pec\",5,\"1-5\",\"4010\",180,\"Testez votre record annuel en toute sécurité.\"],[\"Back squat — test 1RM\",\"qua\",5,\"1-5\",\"4010\",180,\"\"],[\"Soulevé de terre — test 1RM\",\"isc\",5,\"1-5\",\"4010\",180,\"\"],[\"Développé militaire — test 1RM\",\"epA\",5,\"1-5\",\"4010\",180,\"\"]]},\"J3\":{\"nom\":\"Full body — affûtage & pose\",\"muscles\":[\"pec\",\"dos\",\"abs\",\"mol\"],\"e"
+  },
+  "Développé militaire — test 1RM": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "erre — test 1RM\",\"isc\",5,\"1-5\",\"4010\",180,\"\"],[\"Développé militaire — test 1RM\",\"epA\",5,\"1-5\",\"4010\",180,\"\"]]},\"J3\":{\"nom\":\"Full body — affûtage & pose\",\"muscles\":[\"pec\",\"dos\",\"abs\",\"mol\"],\"exos\":[[\"Développé haltères incliné\",\"pec\",3,\"10-12\",\"3010\",90,\"\"],[\"Rowing haltère un bras\",\"dos\",3,\"10-12\",\"3010\",90,\"\"],[\"Élévations latérales\",\"epL\",3,\"12-15\",\"3010\",75,\"\"],[\"Crunch à la poulie\",\"abs\",3,\"15-20\",\"3011"
+  },
+  "Soulevé de terre — test 1RM": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "quat — test 1RM\",\"qua\",5,\"1-5\",\"4010\",180,\"\"],[\"Soulevé de terre — test 1RM\",\"isc\",5,\"1-5\",\"4010\",180,\"\"],[\"Développé militaire — test 1RM\",\"epA\",5,\"1-5\",\"4010\",180,\"\"]]},\"J3\":{\"nom\":\"Full body — affûtage & pose\",\"muscles\":[\"pec\",\"dos\",\"abs\",\"mol\"],\"exos\":[[\"Développé haltères incliné\",\"pec\",3,\"10-12\",\"3010\",90,\"\"],[\"Rowing haltère un bras\",\"dos\",3,\"10-12\",\"3010\",90,\"\"],[\"Élévations latérales\",\"epL\",3,\"12-1"
+  },
+  "Circuit abdominaux (crunch + relevés + gainage)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "oy\",3,\"20/côté\",\"2011\",45,\"\"],[\"Circuit abdominaux (crunch + relevés + gainage)\",\"abs\",3,\"45 s\",\"—\",45,\"\"]]},\"J5\":{\"nom\":\"🍑 Rappel fessiers + abdominaux (séance légère)\",\"muscles\":[\"fes\",\"moy\",\"tra\",\"abs\"],\"cardio\":{\"apres\":\"piscine\",\"duree\":30,\"detail\":\"30 min de piscine ou marche active 40 min. Optionnel si la fatigue est élevée.\"},\"exos\":[[\"Glute bridge pieds sur banc\",\"fes\",4,\"15\",\"2012\",60,\"\"],[\"Abduct"
+  },
+  "Abduction assise (machine ou élastique)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "dez pas de la jambe au sol.\"],[\"Abduction assise (machine ou élastique)\",\"moy\",3,\"20\",\"2011\",40,\"Séries longues : le moyen fessier répond très bien aux reps élevées et à la brûlure.\"],[\"Clamshell à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"Bassin stable, montée du genou seule. Activation pure du moyen fessier.\"],[\"Mollets debout unilatéraux\",\"mol\",3,\"15\",\"2112\",45,\"Amplitude complète : talon qui descend bas"
+  },
+  "Abduction assise machine": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "es fessiers et les ischios.\"],[\"Abduction assise machine\",\"moy\",4,\"20\",\"2011\",40,\"\"],[\"Clamshell à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"\"],[\"Mollets assis\",\"mol\",3,\"15-20\",\"2112\",45,\"Soléaire : amplitude complète, 2 s en position étirée.\"],[\"Relevés de jambes\",\"abs\",3,\"12\",\"2011\",45,\"\"],[\"Gainage latéral\",\"tra\",3,\"30 s/côté\",\"—\",30,\"\"]]},\"J4\":{\"nom\":\"🔥 Full body + fessiers + cardio\",\"muscles\":[\"fes\",\"i"
+  },
+  "Abduction assise en 1,5 reps": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "s\",\"qua\",3,\"12\",\"3011\",75,\"\"],[\"Abduction assise en 1,5 reps\",\"moy\",4,\"15\",\"2011\",40,\"1,5 reps : ouverture complète + demi-fermeture + réouverture. Volume ciblé moyen fessier.\"],[\"Clamshell à l'élastique\",\"moy\",3,\"20/côté\",\"2011\",40,\"\"],[\"Mollets debout unilatéraux\",\"mol\",4,\"12-15\",\"2112\",45,\"Mollets harmonieux : amplitude complète, 2 s de contraction.\"],[\"Reverse crunch\",\"abs\",3,\"15\",\"2011\",45,\"\"],[\"Gainag"
+  },
+  "Abduction hanche debout à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "s de décollage des hanches.\"],[\"Abduction hanche debout à la poulie\",\"moy\",3,\"15/côté\",\"2011\",45,\"Moyen fessier = arrondi latéral. Buste droit, aucune rotation du bassin, montée lente.\"],[\"Kickback à la poulie\",\"fes\",3,\"15/côté\",\"2011\",45,\"Grand fessier isolé : jambe légèrement fléchie, montée contrôlée sans cambrer le bas du dos.\"],[\"Dead bug\",\"tra\",2,\"10/côté\",\"3010\",45,\"Transverse : lombaires plaquées au"
+  },
+  "Abduction hanche à l'élastique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ns hyperextension lombaire.\"],[\"Abduction hanche à l'élastique\",\"moy\",3,\"20/côté\",\"2011\",45,\"Séries longues, brûlure ciblée sur le moyen fessier.\"],[\"Kickback à l'élastique\",\"fes\",3,\"15/côté\",\"2011\",45,\"Volume fessier sans fatigue nerveuse.\"],[\"Dead bug\",\"tra\",3,\"10/côté\",\"3010\",45,\"\"],[\"Gainage planche\",\"abs\",3,\"40 s\",\"—\",45,\"\"]]}}},\"2\":{\"titre\":\"Adaptation 2 — Amplitude & contrôle\",\"type\":\"adaptation\",\"ma"
+  },
+  "Abduction hanche à la poulie — myo-reps": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"isc\",4,\"10-12\",\"3011\",60,\"\"],[\"Abduction hanche à la poulie — myo-reps\",\"moy\",3,\"12-15 + myo\",\"2011\",45,\"Myo-reps : 1 série de 12-15 reps proche de l'échec, puis 4 mini-séries de 3-5 reps avec 15 s de repos. Moyen fessier = arrondi latéral.\"],[\"Kickback à la poulie — drop set final\",\"fes\",3,\"12-15/côté\",\"2011\",45,\"Sur la dernière série : retirez 30 % de la charge et enchaînez jusqu'à l'échec technique.\"],["
+  },
+  "Abduction hanche à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"isc\",3,\"12-15\",\"3011\",60,\"\"],[\"Abduction hanche à la poulie\",\"moy\",4,\"15/côté\",\"2011\",45,\"Moyen fessier : arrondi latéral et stabilité de hanche.\"],[\"Kickback à la poulie\",\"fes\",3,\"15/côté\",\"2011\",45,\"\"],[\"Fire hydrant à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"Petit et moyen fessiers : galbe du haut de la fesse.\"],[\"Dead bug avec rotation\",\"tra\",3,\"12/côté\",\"3010\",45,\"Transverse + obliques profonds : ven"
+  },
+  "Leg curl allongé, pieds fléchis": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",5,\"6-8\",\"4010\",0,\"Contracter les mollets.\"],[\"Leg curl allongé, pieds fléchis\",\"isc\",5,\"6-8\",\"4010\",0,\"Tirer les pieds (tibial antérieur).\"],[\"Good morning debout\",\"isc\",5,\"8-10\",\"3010\",0,\"Léger si première fois.\"],[\"Back extension horizontal\",\"isc\",5,\"8-10\",\"3010\",120,\"\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"pec\",\"dos\"],\"exos\":[[\"Développé haltères incliné 45°, prise neutre\",\"pec\",5,\"8-10\",\"3010\","
+  },
+  "Leg curl allongé, 1 1/4 en haut": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "],[\"Hack squat\",\"qua\",5,\"8-10\",\"3010\",120,\"\"],[\"Leg curl allongé, 1 1/4 en haut\",\"isc\",5,\"4-6\",\"3210\",0,\"Méthode 1 1/4 : demi-rep en plus en haut.\"],[\"Soulevé de terre roumain barre\",\"isc\",5,\"8-10\",\"3010\",120,\"\"],[\"Mollets debout\",\"mol\",5,\"6-8\",\"3011\",0,\"\"],[\"Mollets à la presse\",\"mol\",5,\"8-10\",\"3010\",90,\"\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"dos\",\"pec\",\"epP\"],\"exos\":[[\"Rowing barre EZ supination, "
+  },
+  "Leg curl allongé": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "éger, contraction complète + pause en haut.\"],[\"Leg curl allongé\",\"isc\",5,\"8-10\",\"3010\",0,\"\"],[\"Soulevé de terre roumain haltères\",\"isc\",5,\"10-12\",\"3010\",0,\"Dos droit en permanence.\"],[\"Back extension horizontal\",\"isc\",5,\"12-15\",\"3010\",120,\"\"],[\"Mollets debout\",\"mol\",4,\"8-10\",\"3210\",60,\"Tenir 2 s en position contractée en haut.\"],[\"Mollets assis\",\"mol\",3,\"15-20\",\"2210\",60,\"Tenir 2 s en position étirée en ba"
+  },
+  "Leg curl allongé, pieds pointés": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"],[\"Leg press\",\"qua\",5,\"8-10\",\"3010\",120,\"\"],[\"Leg curl allongé, pieds pointés\",\"isc\",5,\"6-8\",\"4010\",0,\"Contracter les mollets.\"],[\"Leg curl allongé, pieds fléchis\",\"isc\",5,\"6-8\",\"4010\",0,\"Tirer les pieds (tibial antérieur).\"],[\"Good morning debout\",\"isc\",5,\"8-10\",\"3010\",0,\"Léger si première fois.\"],[\"Back extension horizontal\",\"isc\",5,\"8-10\",\"3010\",120,\"\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"pec\","
+  },
+  "Relevés de jambes allongé": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "légère, technique parfaite.\"],[\"Relevés de jambes allongée\",\"abs\",3,\"12\",\"2011\",45,\"Lombaires plaquées : si le bas du dos décolle, pliez davantage les genoux.\"],[\"Mountain climbers\",\"tra\",3,\"30 s\",\"—\",45,\"Gainage dynamique + dépense énergétique. Bassin bas, épaules au-dessus des poignets.\"]]},\"J5\":{\"nom\":\"🍑 Rappel fessiers + abdominaux (séance légère)\",\"muscles\":[\"fes\",\"moy\",\"tra\",\"abs\"],\"cardio\":{\"apres\":\""
+  },
+  "Relevés de jambes allongée": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "légère, technique parfaite.\"],[\"Relevés de jambes allongée\",\"abs\",3,\"12\",\"2011\",45,\"Lombaires plaquées : si le bas du dos décolle, pliez davantage les genoux.\"],[\"Mountain climbers\",\"tra\",3,\"30 s\",\"—\",45,\"Gainage dynamique + dépense énergétique. Bassin bas, épaules au-dessus des poignets.\"]]},\"J5\":{\"nom\":\"🍑 Rappel fessiers + abdominaux (séance légère)\",\"muscles\":[\"fes\",\"moy\",\"tra\",\"abs\"],\"cardio\":{\"apres\":\""
+  },
+  "Fentes arrière alternées": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "d'appui légèrement fléchie.\"],[\"Fentes arrière alternées\",\"fes\",3,\"10/jambe\",\"3010\",75,\"Pas long et buste penché en avant = fessiers. Pas court et buste droit = quadriceps.\"],[\"Step-up sur banc (hauteur du genou)\",\"qua\",3,\"10/jambe\",\"2011\",60,\"Poussez avec le talon du pied sur le banc, ne vous aidez pas de la jambe au sol.\"],[\"Abduction assise (machine ou élastique)\",\"moy\",3,\"20\",\"2011\",40,\"Séries longues :"
+  },
+  "Fentes avant alternées": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "sc\",3,\"10/côté\",\"3011\",75,\"\"],[\"Fentes avant alternées\",\"fes\",3,\"10/jambe\",\"3010\",75,\"\"],[\"Presse à cuisses pieds hauts\",\"qua\",3,\"12\",\"3011\",75,\"Pieds hauts et écartés sur le plateau : transfert du travail vers les fessiers et les ischios.\"],[\"Abduction assise machine\",\"moy\",4,\"20\",\"2011\",40,\"\"],[\"Clamshell à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"\"],[\"Mollets assis\",\"mol\",3,\"15-20\",\"2112\",45,\"Soléaire :"
+  },
+  "Fentes bulgares (pied arrière surélevé)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "sc\",3,\"10/côté\",\"3011\",75,\"\"],[\"Fentes bulgares (pied arrière surélevé)\",\"fes\",4,\"8-10/jambe\",\"3010\",90,\"Buste penché en avant, grand pas : fessiers et ischios en priorité.\"],[\"Presse à cuisses pieds hauts\",\"qua\",3,\"12\",\"3011\",75,\"\"],[\"Abduction assise en 1,5 reps\",\"moy\",4,\"15\",\"2011\",40,\"1,5 reps : ouverture complète + demi-fermeture + réouverture. Volume ciblé moyen fessier.\"],[\"Clamshell à l'élastique\",\""
+  },
+  "Fentes arrière au poids du corps": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "0-15\",\"3010\",90,\"Fixer solidement l’élastique avant de tirer.\"],[\"Fentes arrière au poids du corps\",\"qua\",3,\"8-12\",\"3010\",90,\"Se tenir à un support si nécessaire.\"],[\"Mobilité des épaules\",\"epA\",2,\"30 s\",\"lent\",15,\"Cercles lents et indolores.\"],[\"Respiration diaphragmatique\",\"tra\",1,\"60 s\",\"lent\",0,\"Inspirer 4 secondes et expirer 6 secondes, sans apnée.\"]];for(const i of mg)sr.set(uh(i[0]),{row:i,sources:[\""
+  },
+  "Rowing assis câble unilatéral": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "pé haltères plat\",\"pec\",4,\"7-9\",\"4010\",90,\"\"],[\"Rowing assis câble unilatéral\",\"dos\",4,\"7-9\",\"3011\",90,\"\"],[\"French press barre EZ\",\"tri\",3,\"10-12\",\"3010\",75,\"\"],[\"Curl Zottman\",\"bic\",3,\"10-12\",\"3010\",75,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles\":[\"qua\",\"isc\",\"abs\"],\"exos\":[[\"Back squat barre haute\",\"qua\",6,\"5,5,7,7,9,9\",\"4010\",180,\"Charge maximale puis -5-6 % par palier.\"],[\"Squat cycliste\",\"qua\",5,\"7-9\""
+  },
+  "Rowing assis au cou": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "câbles incliné\",\"pec\",5,\"8-10\",\"3010\",120,\"\"],[\"Rowing assis au cou\",\"dos\",5,\"6-8\",\"3011\",0,\"\"],[\"Élévations latérales incliné 30°\",\"epP\",5,\"8-10\",\"3010\",90,\"\"]]}}},\"8\":{\"titre\":\"Intensification 4 — Wave load\",\"type\":\"intensification\",\"macro\":\"B · Développement\",\"mois\":\"S. 29–32\",\"schema\":\"3-5 (vague)\",\"intensite\":\"83 %\",\"methode\":\"Wave loading 7,5,7,5,7,5 → charges très lourdes\",\"objectif\":\"Pic de force du"
+  },
+  "Curl marteau assis": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "en supination pour protéger les avant-bras.\"],[\"Curl marteau assis\",\"bic\",4,\"10-12\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",4,\"12-15\",\"3010\",120,\"\"],[\"Élévations latérales assises\",\"epL\",4,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales assises (variante)\",\"epL\",4,\"10-12\",\"3010\",0,\"\"],[\"Élévations latérales coude à 90°\",\"epL\",4,\"12-15\",\"3010\",120,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"mol\","
+  },
+  "Curl Zottman assis": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "t haltère neutre\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl Zottman assis\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl poulie basse\",\"bic\",3,\"8-10\",\"3010\",120,\"\"],[\"Élévations latérales incliné 30°\",\"epP\",3,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales incliné 45°\",\"epP\",3,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales\",\"epL\",3,\"8-10\",\"3010\",0,\"\"],[\"Développé haltères assis\",\"e"
+  },
+  "Développé haltères assis": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ic\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"],[\"Développé haltères assis, neutre→pronation\",\"epA\",4,\"8-10\",\"3010\",90,\"\"],[\"Élévations latérales haltères\",\"epL\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"]]},\"J2\":{\"nom\":\"Bas de corps\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"abs\",\"mol\"],\"exos\":[[\"Back squat barre haute\",\"qua\",4,\"8-10\",\"3010\",120,\"\"],[\"Leg curl allongé\",\"isc\",4,\"10/8/6\",\"3010\",90,\"Drop set.\"],[\"Hack squat\""
+  },
+  "Développé militaire haltères assis": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "u bassin. Épaisseur du dos.\"],[\"Développé militaire haltères assis\",\"epA\",3,\"10-12\",\"2011\",75,\"Épaules dessinées : montez sans cambrer, abdominaux gainés.\"],[\"Élévations latérales haltères\",\"epL\",3,\"15\",\"2011\",45,\"Charge légère, montée jusqu'à l'horizontale, petit doigt légèrement plus haut. Épaule ronde sans volume.\"],[\"Face pull à l'élastique\",\"epP\",3,\"15\",\"2011\",45,\"Posture et santé d'épaule : coudes hau"
+  },
+  "Développé militaire haltères assis — test (3-5 reps)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": ",\"dos\",5,\"3-5\",\"3011\",180,\"\"],[\"Développé militaire haltères assis — test (3-5 reps)\",\"epA\",4,\"3-5\",\"2011\",150,\"\"],[\"Tirage vertical prise large\",\"dos\",3,\"10-12\",\"2011\",90,\"\"],[\"Élévations latérales haltères\",\"epL\",3,\"12-15\",\"2011\",45,\"\"],[\"Curl haltères\",\"bic\",2,\"12\",\"2011\",45,\"\"],[\"Extension triceps à la poulie\",\"tri\",2,\"12\",\"2011\",45,\"\"],[\"Gainage planche\",\"abs\",3,\"60 s\",\"—\",45,\"\"]]},\"J3\":{\"nom\":\"🍑 Fessi"
+  },
+  "Développé haltères assis, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Développé haltères assis, prise neutre\",\"epA\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Élévations latérales lean away\",\"epL\",3,\"12-15\",\"3011\",60,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",5,\"4-6\",\"3010\",0,\"\"],[\"Back squat barre haute\",\"qua\",5,\"2-4\",\"3010\",120,\"Même charge que le front squat.\"],[\"Soulevé de terre "
+  },
+  "Développé haltères assis, neutre→pronation": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ic\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"],[\"Développé haltères assis, neutre→pronation\",\"epA\",4,\"8-10\",\"3010\",90,\"\"],[\"Élévations latérales haltères\",\"epL\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"]]},\"J2\":{\"nom\":\"Bas de corps\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"abs\",\"mol\"],\"exos\":[[\"Back squat barre haute\",\"qua\",4,\"8-10\",\"3010\",120,\"\"],[\"Leg curl allongé\",\"isc\",4,\"10/8/6\",\"3010\",90,\"Drop set.\"],[\"Hack squat\""
+  },
+  "Rowing assis + étirement": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "isés\",\"pec\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Rowing assis + étirement\",\"dos\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Élévations latérales incliné 30° (face au banc)\",\"epP\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]}}},\"4\":{\"titre\":\"Intensification 2 — Stage system\",\"type\":\"intensification\",\"macro\":\"A · Fondations\",\"mois\":\"S. 13–16\",\"schema\":\"6, 6, 6, 8, 8\",\"intensite\":\"81 %\",\"methode\":\"Stage system (charges lourdes "
+  },
+  "Mollets assis": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "oy\",3,\"15/côté\",\"2011\",40,\"\"],[\"Mollets assis\",\"mol\",3,\"15-20\",\"2112\",45,\"Soléaire : amplitude complète, 2 s en position étirée.\"],[\"Relevés de jambes\",\"abs\",3,\"12\",\"2011\",45,\"\"],[\"Gainage latéral\",\"tra\",3,\"30 s/côté\",\"—\",30,\"\"]]},\"J4\":{\"nom\":\"🔥 Full body + fessiers + cardio\",\"muscles\":[\"fes\",\"isc\",\"pec\",\"dos\",\"qua\",\"moy\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"elliptique\",\"duree\":22,\"detail\":\"Fractionné : 8 × 30 s"
+  },
+  "Rowing assis, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "enché, pronation\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"dos\",5,\"10-12\",\"3010\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"12-15\",\"3010\",120,\"\"],[\"Relevés de jambes allongé\",\"abs\",4,\"10-12\",\"3010\",60,\"\"],[\"Crunch sur swiss ball\",\"abs\",3,\"15-20\",\"2012\",60,\"Tenir 2 s en position contractée.\"]]}}},\"2\":{\"titre\":\"Intensification 1 — Pauses isométriques\",\"type\":\"intensification\",\"macro\":"
+  },
+  "Élévations latérales assises": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "tères incliné\",\"bic\",4,\"12-15\",\"3010\",120,\"\"],[\"Élévations latérales assises\",\"epL\",4,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales assises (variante)\",\"epL\",4,\"10-12\",\"3010\",0,\"\"],[\"Élévations latérales coude à 90°\",\"epL\",4,\"12-15\",\"3010\",120,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"mol\",\"fes\"],\"exos\":[[\"Squat cycliste (squat complet)\",\"qua\",5,\"8-10\",\"3010\",0,\"Plus léger qu'un squat classique "
+  },
+  "Élévations latérales assises (variante)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "atérales assises\",\"epL\",4,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales assises (variante)\",\"epL\",4,\"10-12\",\"3010\",0,\"\"],[\"Élévations latérales coude à 90°\",\"epL\",4,\"12-15\",\"3010\",120,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"mol\",\"fes\"],\"exos\":[[\"Squat cycliste (squat complet)\",\"qua\",5,\"8-10\",\"3010\",0,\"Plus léger qu'un squat classique ; ischios contre mollets en bas.\"],[\"Leg press\",\"qua\",5,\"10-"
+  },
+  "Split squat barbell (pied avant surélevé)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "80,\"Charge maximale puis -5-6 % par palier.\"],[\"Split squat barbell (pied avant surélevé)\",\"qua\",4,\"7-9\",\"3210\",90,\"\"],[\"Leg curl allongé, 1 1/4 en haut\",\"isc\",4,\"5-7\",\"3210\",90,\"\"],[\"Jackknife sur swiss ball\",\"abs\",4,\"10-12\",\"3020\",75,\"\"],[\"Mollets debout\",\"mol\",4,\"10-12\",\"3020\",75,\"\"]]}}},\"11\":{\"titre\":\"Accumulation 6 — Plateaux ascendants volume\",\"type\":\"accumulation\",\"macro\":\"C · Perfectionnement\",\"mois"
+  },
+  "Fentes bulgares haltères (pied avant surélevé)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "Leg curl debout\",\"isc\",4,\"8-10\",\"4010\",90,\"\"],[\"Fentes bulgares haltères (pied avant surélevé)\",\"qua\",4,\"8-10\",\"4010\",90,\"\"],[\"Soulevé de terre roumain barre\",\"isc\",4,\"8-10\",\"4010\",0,\"\"],[\"Relevés de jambes incliné\",\"abs\",4,\"10-12\",\"3010\",90,\"\"],[\"Mollets unilatéraux\",\"mol\",4,\"10-12\",\"3210\",75,\"Tenir 2 s en position étirée.\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"tri\",\"bic\"],\"exos\":[[\"Déve"
+  },
+  "Dead bug avec rotation": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " galbe du haut de la fesse.\"],[\"Dead bug avec rotation\",\"tra\",3,\"12/côté\",\"3010\",45,\"Transverse + obliques profonds : ventre plat et taille tenue.\"],[\"Gainage planche\",\"abs\",2,\"45 s\",\"—\",45,\"\"],[\"Pallof press à la poulie\",\"tra\",2,\"12/côté\",\"2010\",45,\"\"]]},\"J2\":{\"nom\":\"💪 Haut du corps + ventre + cardio\",\"muscles\":[\"dos\",\"epL\",\"epA\",\"epP\",\"pec\",\"bic\",\"tri\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"elliptique\",\"duree\":2"
+  },
+  "Élévations latérales lean away": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Élévations latérales lean away\",\"epL\",3,\"12-15\",\"3011\",60,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",5,\"4-6\",\"3010\",0,\"\"],[\"Back squat barre haute\",\"qua\",5,\"2-4\",\"3010\",120,\"Même charge que le front squat.\"],[\"Soulevé de terre roumain barre\",\"isc\",5,\"8-10\",\"4010\",120,\"\"],[\"Leg curl allongé\",\"isc\",4,\"6-8\",\"3210\",90,\"Mé"
+  },
+  "Lean away pull-ups": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"3010\",120,\"Ajouter du poids si nécessaire.\"],[\"Lean away pull-ups\",\"dos\",7,\"3-5\",\"3010\",120,\"\"],[\"Développé haltères incliné 45°\",\"pec\",5,\"5-7\",\"4010\",120,\"\"],[\"Rowing haltère un bras, prise neutre\",\"dos\",5,\"5-7\",\"4010\",120,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"qua\",\"isc\",\"mol\",\"abs\"],\"exos\":[[\"Front squat\",\"qua\",7,\"3-5\",\"3010\",180,\"\"],[\"Soulevé de terre partiel\",\"isc\",7,\"3-5\",\"3210\",180,\"Pause co"
+  },
+  "Tirage vertical lean away": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Tirage vertical lean away\",\"dos\",4,\"8-10\",\"3012\",90,\"Méthode 1 1/4 en bas.\"],[\"Écartés haltères décliné\",\"pec\",3,\"12-15\",\"3010\",60,\"\"],[\"Pullover haltère plat\",\"dos\",3,\"12-15\",\"3010\",60,\"\"]]}}},\"12\":{\"titre\":\"Intensification 6 — Wave load final\",\"type\":\"intensification\",\"macro\":\"C · Perfectionnement\",\"mois\":\"S. 45–48\",\"schema\":\"8, 6, 4 (vague)\",\"intensite\":\"85"
+  },
+  "Back squat barre haute": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"/></g></g></g></svg>\"},\"MUSCU_GUIDES\":{\"back squat barre haute\":{\"img\":\"/media/530326beb7c7a652.gif\",\"tip\":\"💡 Poitrine haute, genoux dans l'axe des pieds.\"},\"abduction assise (machine ou elastique)\":{\"img\":\"/media/f73444e9dc2fee89.gif\",\"tip\":\"💡 Amplitude large, sans pencher le bassin.\"},\"abduction assise en 1,5 reps\":{\"img\":\"/media/f73444e9dc2fee89.gif\",\"tip\":\"💡 Amplitude large, sans pencher le bassin.\"},\""
+  },
+  "Back squat (charge modérée)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ération des jambes.\"},\"exos\":[[\"Back squat (charge modérée)\",\"qua\",3,\"10-12\",\"3011\",120,\"Quadriceps contrôlés : ne cherchez pas la charge maximale, descendez sous la parallèle en gardant le buste droit.\"],[\"Hip thrust unilatéral\",\"fes\",3,\"10/côté\",\"2112\",90,\"Symétrie des fessiers : commencez par le côté faible.\"],[\"Soulevé de terre roumain unilatéral\",\"isc\",3,\"10/côté\",\"3011\",75,\"\"],[\"Fentes avant alternées"
+  },
+  "Back squat inertie (pause complète)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ont squat\",\"qua\",5,\"6,6,6,8,8\",\"4010\",180,\"\"],[\"Back squat inertie (pause complète)\",\"qua\",5,\"6-8\",\"3210\",150,\"Pause complète sur les barres de sécurité.\"],[\"Fentes barre\",\"qua\",3,\"8-10\",\"2010\",75,\"10 reps par côté.\"],[\"Soulevé de terre roumain barre\",\"isc\",3,\"8-10\",\"4010\",75,\"\"],[\"Mollets debout\",\"mol\",4,\"8-10\",\"3020\",75,\"\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"epA\",\"tri\",\"bic\"],\"exos\":["
+  },
+  "Back extension horizontal": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": ",\"10-12\",\"3010\",0,\"Dos droit en permanence.\"],[\"Back extension horizontal\",\"isc\",5,\"12-15\",\"3010\",120,\"\"],[\"Mollets debout\",\"mol\",4,\"8-10\",\"3210\",60,\"Tenir 2 s en position contractée en haut.\"],[\"Mollets assis\",\"mol\",3,\"15-20\",\"2210\",60,\"Tenir 2 s en position étirée en bas.\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"pec\",\"dos\",\"abs\"],\"exos\":[[\"Développé incliné barre\",\"pec\",5,\"8-10\",\"3010\",0,\"Mains légèr"
+  },
+  "Back extension 45°, prise snatch": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "quat\",\"qua\",4,\"10/8/6\",\"3010\",90,\"Drop set.\"],[\"Back extension 45°, prise snatch\",\"lom\",3,\"10-12\",\"3010\",60,\"\"],[\"Jackknife sur swiss ball\",\"abs\",3,\"10-12\",\"3010\",60,\"\"],[\"Mollets debout\",\"mol\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"pec\",\"dos\",\"epP\"],\"exos\":[[\"Développé haltères plat\",\"pec\",4,\"8-10\",\"3010\",75,\"\"],[\"Rowing barre EZ supination, buste penché\",\"dos\",4,\"8-1"
+  },
+  "Back squat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ération des jambes.\"},\"exos\":[[\"Back squat (charge modérée)\",\"qua\",3,\"10-12\",\"3011\",120,\"Quadriceps contrôlés : ne cherchez pas la charge maximale, descendez sous la parallèle en gardant le buste droit.\"],[\"Hip thrust unilatéral\",\"fes\",3,\"10/côté\",\"2112\",90,\"Symétrie des fessiers : commencez par le côté faible.\"],[\"Soulevé de terre roumain unilatéral\",\"isc\",3,\"10/côté\",\"3011\",75,\"\"],[\"Fentes avant alternées"
+  },
+  "Crunch sur swiss ball": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "jambes allongé\",\"abs\",4,\"10-12\",\"3010\",60,\"\"],[\"Crunch sur swiss ball\",\"abs\",3,\"15-20\",\"2012\",60,\"Tenir 2 s en position contractée.\"]]}}},\"2\":{\"titre\":\"Intensification 1 — Pauses isométriques\",\"type\":\"intensification\",\"macro\":\"A · Fondations\",\"mois\":\"S. 5–8\",\"schema\":\"5-7\",\"intensite\":\"80 %\",\"methode\":\"Pauses isométriques (2 s) sur les exercices principaux\",\"objectif\":\"Recruter un maximum d'unités motrices "
+  },
+  "Leg curl machine (ou swiss-ball leg curl)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "imal plutôt que quadriceps.\"],[\"Leg curl machine (ou swiss-ball leg curl)\",\"isc\",3,\"12-15\",\"3011\",60,\"Pointes de pieds vers vous, bassin plaqué, pas de décollage des hanches.\"],[\"Abduction hanche debout à la poulie\",\"moy\",3,\"15/côté\",\"2011\",45,\"Moyen fessier = arrondi latéral. Buste droit, aucune rotation du bassin, montée lente.\"],[\"Kickback à la poulie\",\"fes\",3,\"15/côté\",\"2011\",45,\"Grand fessier isolé : j"
+  },
+  "Jackknife sur swiss ball": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": ", prise snatch\",\"lom\",3,\"10-12\",\"3010\",60,\"\"],[\"Jackknife sur swiss ball\",\"abs\",3,\"10-12\",\"3010\",60,\"\"],[\"Mollets debout\",\"mol\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"pec\",\"dos\",\"epP\"],\"exos\":[[\"Développé haltères plat\",\"pec\",4,\"8-10\",\"3010\",75,\"\"],[\"Rowing barre EZ supination, buste penché\",\"dos\",4,\"8-10\",\"3010\",75,\"\"],[\"Câbles croisés\",\"pec\",4,\"10/8/6\",\"3010\",75,\"Dro"
+  },
+  "Curl Zottman un bras, banc Scott": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "h press barre EZ\",\"tri\",4,\"6-8\",\"4010\",75,\"\"],[\"Curl Zottman un bras, banc Scott\",\"bic\",4,\"6-8\",\"4010\",75,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles\":[\"qua\",\"isc\"],\"exos\":[[\"Back squat\",\"qua\",6,\"8,8,6,6,4,4\",\"4010\",180,\"Charge croissante.\"],[\"Split squat poulie basse\",\"qua\",4,\"6-8\",\"4010\",90,\"\"],[\"Leg curl debout\",\"isc\",4,\"6-8\",\"3011\",90,\"\"],[\"Leg press\",\"qua\",4,\"12-15\",\"3010\",75,\"\"],[\"Soulevé de terre rou"
+  },
+  "Glute bridge pieds sur banc": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "tion active idéale.\"},\"exos\":[[\"Glute bridge pieds sur banc\",\"fes\",3,\"15\",\"2012\",60,\"Contraction 2 s en haut, sans hyperextension lombaire.\"],[\"Abduction hanche à l'élastique\",\"moy\",3,\"20/côté\",\"2011\",45,\"Séries longues, brûlure ciblée sur le moyen fessier.\"],[\"Kickback à l'élastique\",\"fes\",3,\"15/côté\",\"2011\",45,\"Volume fessier sans fatigue nerveuse.\"],[\"Dead bug\",\"tra\",3,\"10/côté\",\"3010\",45,\"\"],[\"Gainage p"
+  },
+  "Curl haltère supination, banc Scott 90°": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "llover barre EZ\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl haltère supination, banc Scott 90°\",\"bic\",3,\"8-10\",\"3010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"abs\"],\"exos\":[[\"Soulevé de terre\",\"isc\",5,\"6,6,6,8,8\",\"4010\",180,\"\"],[\"Bulgarian split squat\",\"qua\",5,\"6-8\",\"4010\",90,\"\"],[\"Leg curl allongé\",\"isc\",5,\"6-8\",\"4010\",90,\"\"],[\"Step-up haut\",\"qua\",4,\"12-15\",\"2010\",75,\"\"],[\"Relevés de jambes s"
+  },
+  "Élévations latérales incliné 30° (face au banc)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ment\",\"dos\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Élévations latérales incliné 30° (face au banc)\",\"epP\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]}}},\"4\":{\"titre\":\"Intensification 2 — Stage system\",\"type\":\"intensification\",\"macro\":\"A · Fondations\",\"mois\":\"S. 13–16\",\"schema\":\"6, 6, 6, 8, 8\",\"intensite\":\"81 %\",\"methode\":\"Stage system (charges lourdes puis dégressives)\",\"objectif\":\"Pic de force du 1er macrocycle : char"
+  },
+  "Triceps extensions haltères, banc plat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "essaire. Alternative : close grip push-ups.\"],[\"Triceps extensions haltères, banc plat\",\"tri\",4,\"10-12\",\"3010\",0,\"\"],[\"French press poulie basse\",\"tri\",4,\"12-15\",\"3010\",120,\"\"],[\"Curl Scott barre EZ, pronation\",\"bic\",4,\"8-10\",\"3010\",0,\"Beaucoup plus léger qu'en supination pour protéger les avant-bras.\"],[\"Curl marteau assis\",\"bic\",4,\"10-12\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",4,\"12-15\",\"3010\",120,\"\""
+  },
+  "Step-up sur banc (hauteur du genou)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "t buste droit = quadriceps.\"],[\"Step-up sur banc (hauteur du genou)\",\"qua\",3,\"10/jambe\",\"2011\",60,\"Poussez avec le talon du pied sur le banc, ne vous aidez pas de la jambe au sol.\"],[\"Abduction assise (machine ou élastique)\",\"moy\",3,\"20\",\"2011\",40,\"Séries longues : le moyen fessier répond très bien aux reps élevées et à la brûlure.\"],[\"Clamshell à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"Bassin stable, mon"
+  },
+  "Safety bar squat (ou barre classique)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Safety bar squat (ou barre classique)\",\"qua\",4,\"12,10,8,15\",\"3010\",120,\"12→10→8 puis back-off 15.\"],[\"Hack squat\",\"qua\",4,\"12,10,8,15\",\"3010\",90,\"\"],[\"Leg curl allongé\",\"isc\",4,\"12,10,8,15\",\"3010\",90,\"\"],[\"Leg press\",\"qua\",3,\"12-15\",\"3010\",60,\"\"],[\"Soulevé de terre roumain haltères\",\"isc\",3,\"12-15\",\"3010\",60,\"\"],[\"Mollets debout\",\"mol\",4,\"12,10,8,15\",\"3010\",60"
+  },
+  "Rowing barre buste penché, pronation": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "3010\",120,\"Insister sur l'étirement en bas.\"],[\"Rowing barre buste penché, pronation\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"dos\",5,\"10-12\",\"3010\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"12-15\",\"3010\",120,\"\"],[\"Relevés de jambes allongé\",\"abs\",4,\"10-12\",\"3010\",60,\"\"],[\"Crunch sur swiss ball\",\"abs\",3,\"15-20\",\"2012\",60,\"Tenir 2 s en position contractée.\"]]}}},\"2\":{\"titre\":\"Intens"
+  },
+  "Rowing barre buste penché — test (3-5 reps)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "modéré 60-68 % FCM.\"},\"exos\":[[\"Rowing barre buste penché — test (3-5 reps)\",\"dos\",5,\"3-5\",\"3011\",180,\"\"],[\"Développé militaire haltères assis — test (3-5 reps)\",\"epA\",4,\"3-5\",\"2011\",150,\"\"],[\"Tirage vertical prise large\",\"dos\",3,\"10-12\",\"2011\",90,\"\"],[\"Élévations latérales haltères\",\"epL\",3,\"12-15\",\"2011\",45,\"\"],[\"Curl haltères\",\"bic\",2,\"12\",\"2011\",45,\"\"],[\"Extension triceps à la poulie\",\"tri\",2,\"12\",\"2011"
+  },
+  "Rowing barre buste penché": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "s vers le bas et l'arrière.\"],[\"Rowing barre buste penché\",\"dos\",3,\"10-12\",\"2011\",90,\"Buste à 45°, pas d'élan avec les reins.\"],[\"Développé militaire haltères assis\",\"epA\",3,\"10-12\",\"2011\",75,\"\"],[\"Élévations latérales haltères\",\"epL\",4,\"12-15\",\"2011\",45,\"Épaules légèrement dessinées : reps élevées, charge modérée.\"],[\"Face pull à la poulie\",\"epP\",3,\"15\",\"2011\",45,\"\"],[\"Développé incliné haltères\",\"pec\",3,\""
+  },
+  "Rowing barre EZ supination, buste penché": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "é haltères plat\",\"pec\",4,\"8-10\",\"3010\",75,\"\"],[\"Rowing barre EZ supination, buste penché\",\"dos\",4,\"8-10\",\"3010\",75,\"\"],[\"Câbles croisés\",\"pec\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Rowing assis + étirement\",\"dos\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Élévations latérales incliné 30° (face au banc)\",\"epP\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]}}},\"4\":{\"titre\":\"Intensification 2 — Stage system\",\"type\":\"intensificatio"
+  },
+  "California press (barre au cou)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "upination\",\"bic\",4,\"12,10,8,15\",\"3010\",90,\"\"],[\"California press (barre au cou)\",\"tri\",4,\"12-15\",\"3010\",60,\"Ne pas trop charger !\"],[\"Élévations latérales incliné\",\"epL\",4,\"12-15\",\"3010\",60,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Safety bar squat (ou barre classique)\",\"qua\",4,\"12,10,8,15\",\"3010\",120,\"12→10→8 puis back-off 15.\"],[\"Hack squat\",\"qua\",4,\"12,10,8,15\",\"3010\",90,\"\"],[\"Le"
+  },
+  "Hip thrust barre — test de charge max (3-5 reps)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "elâcher la tension.\"},\"exos\":[[\"Hip thrust barre — test de charge max (3-5 reps)\",\"fes\",5,\"3-5\",\"3012\",180,\"Testez votre meilleure charge sur 3 à 5 reps propres. Le 1RM est estimé automatiquement. Jamais à l'échec total, et jamais seule si la charge est lourde.\"],[\"Soulevé de terre roumain barre — test (3-5 reps)\",\"isc\",4,\"3-5\",\"3011\",180,\"\"],[\"Bulgarian split squat\",\"qua\",3,\"10/jambe\",\"3010\",90,\"\"],[\"Abduc"
+  },
+  "Développé couché barre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "cles\":[\"pec\",\"dos\",\"epA\",\"tri\",\"bic\"],\"exos\":[[\"Développé couché barre plat\",\"pec\",5,\"6,6,6,8,8\",\"4010\",90,\"\"],[\"Tractions supination (chin-up)\",\"dos\",5,\"6,6,6,8,8\",\"4010\",90,\"\"],[\"Développé haltères assis\",\"epA\",4,\"6-8\",\"4010\",90,\"\"],[\"Rowing haltère un bras, coude ouvert\",\"dos\",4,\"6-8\",\"4010\",90,\"\"],[\"Extensions triceps + pullover barre EZ\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl haltère supination, banc Scot"
+  },
+  "Développé couché barre plat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "cles\":[\"pec\",\"dos\",\"epA\",\"tri\",\"bic\"],\"exos\":[[\"Développé couché barre plat\",\"pec\",5,\"6,6,6,8,8\",\"4010\",90,\"\"],[\"Tractions supination (chin-up)\",\"dos\",5,\"6,6,6,8,8\",\"4010\",90,\"\"],[\"Développé haltères assis\",\"epA\",4,\"6-8\",\"4010\",90,\"\"],[\"Rowing haltère un bras, coude ouvert\",\"dos\",4,\"6-8\",\"4010\",90,\"\"],[\"Extensions triceps + pullover barre EZ\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl haltère supination, banc Scot"
+  },
+  "Curl barre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "haltère un bras\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl barre debout\",\"bic\",3,\"8-10\",\"3010\",75,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",5,\"6,6,6,8,8\",\"4010\",180,\"\"],[\"Back squat inertie (pause complète)\",\"qua\",5,\"6-8\",\"3210\",150,\"Pause complète sur les barres de sécurité.\"],[\"Fentes barre\",\"qua\",3,\"8-10\",\"2010\",75,\"10 reps par côté.\"],[\"Soulevé de terre roum"
+  },
+  "Curl barre debout": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "haltère un bras\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl barre debout\",\"bic\",3,\"8-10\",\"3010\",75,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",5,\"6,6,6,8,8\",\"4010\",180,\"\"],[\"Back squat inertie (pause complète)\",\"qua\",5,\"6-8\",\"3210\",150,\"Pause complète sur les barres de sécurité.\"],[\"Fentes barre\",\"qua\",3,\"8-10\",\"2010\",75,\"10 reps par côté.\"],[\"Soulevé de terre roum"
+  },
+  "Curl Scott barre EZ, pronation": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " poulie basse\",\"tri\",4,\"12-15\",\"3010\",120,\"\"],[\"Curl Scott barre EZ, pronation\",\"bic\",4,\"8-10\",\"3010\",0,\"Beaucoup plus léger qu'en supination pour protéger les avant-bras.\"],[\"Curl marteau assis\",\"bic\",4,\"10-12\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",4,\"12-15\",\"3010\",120,\"\"],[\"Élévations latérales assises\",\"epL\",4,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales assises (variante)\",\"epL\",4,\"10-12\",\"3010\",0,\""
+  },
+  "Curl Scott barre EZ, supination": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "riceps barre EZ\",\"tri\",4,\"8-10\",\"4010\",75,\"\"],[\"Curl Scott barre EZ, supination\",\"bic\",4,\"8-10\",\"4010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"fes\",\"abs\",\"mol\"],\"exos\":[[\"Soulevé de terre\",\"isc\",5,\"5-7\",\"4210\",120,\"Pause de 2 s à 2 pouces du sol (méthode).\"],[\"Leg press\",\"qua\",4,\"10-12\",\"3010\",90,\"Pieds largeur de hanches.\"],[\"Back extension horizontal\",\"isc\",4,\"8-10\",\"4010\",90,\"\"],[\"S"
+  },
+  "Développé incliné barre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " & dos\",\"muscles\":[\"pec\",\"dos\",\"abs\"],\"exos\":[[\"Développé incliné barre\",\"pec\",5,\"8-10\",\"3010\",0,\"Mains légèrement plus larges que les épaules.\"],[\"Développé haltères plat, prise neutre\",\"pec\",5,\"10-12\",\"3010\",0,\"\"],[\"Écartés haltères décliné\",\"pec\",5,\"12-15\",\"3010\",120,\"Insister sur l'étirement en bas.\"],[\"Rowing barre buste penché, pronation\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"dos\""
+  },
+  "Extensions triceps + pullover barre EZ": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "as, coude ouvert\",\"dos\",4,\"6-8\",\"4010\",90,\"\"],[\"Extensions triceps + pullover barre EZ\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl haltère supination, banc Scott 90°\",\"bic\",3,\"8-10\",\"3010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"abs\"],\"exos\":[[\"Soulevé de terre\",\"isc\",5,\"6,6,6,8,8\",\"4010\",180,\"\"],[\"Bulgarian split squat\",\"qua\",5,\"6-8\",\"4010\",90,\"\"],[\"Leg curl allongé\",\"isc\",5,\"6-8\",\"4010\",90,"
+  },
+  "Extensions triceps barre EZ": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "s, coude ouvert\",\"dos\",4,\"8-10\",\"4010\",90,\"\"],[\"Extensions triceps barre EZ\",\"tri\",4,\"8-10\",\"4010\",75,\"\"],[\"Curl Scott barre EZ, supination\",\"bic\",4,\"8-10\",\"4010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"fes\",\"abs\",\"mol\"],\"exos\":[[\"Soulevé de terre\",\"isc\",5,\"5-7\",\"4210\",120,\"Pause de 2 s à 2 pouces du sol (méthode).\"],[\"Leg press\",\"qua\",4,\"10-12\",\"3010\",90,\"Pieds largeur de hanches.\"],["
+  },
+  "Fentes barre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"Pause complète sur les barres de sécurité.\"],[\"Fentes barre\",\"qua\",3,\"8-10\",\"2010\",75,\"10 reps par côté.\"],[\"Soulevé de terre roumain barre\",\"isc\",3,\"8-10\",\"4010\",75,\"\"],[\"Mollets debout\",\"mol\",4,\"8-10\",\"3020\",75,\"\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"epA\",\"tri\",\"bic\"],\"exos\":[[\"Développé couché barre plat\",\"pec\",5,\"6,6,6,8,8\",\"4010\",90,\"\"],[\"Tractions supination (chin-up)\",\"dos\",5,\"6,"
+  },
+  "French press barre EZ": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "haltère un bras\",\"dos\",4,\"8-10\",\"4010\",90,\"\"],[\"French press barre EZ\",\"tri\",4,\"8-10\",\"4010\",75,\"\"],[\"Curl marteau assis\",\"bic\",4,\"8-10\",\"4010\",75,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles\":[\"qua\",\"isc\",\"abs\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",5,\"5-7\",\"4210\",120,\"Pause de 2 s en bas complètement.\"],[\"Leg curl debout\",\"isc\",4,\"8-10\",\"4010\",90,\"\"],[\"Fentes bulgares haltères (pied avant surélevé)\",\"qua\",4,\""
+  },
+  "Barre au front (pushdown triceps)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "e, prise neutre\",\"bic\",4,\"8-10\",\"3010\",75,\"\"],[\"Barre au front (pushdown triceps)\",\"tri\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set : après l'échec à 10, réduire et enchaîner 8, puis 6.\"],[\"Curl poulie basse, supination\",\"bic\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"],[\"Développé haltères assis, neutre→pronation\",\"epA\",4,\"8-10\",\"3010\",90,\"\"],[\"Élévations latérales haltères\",\"epL\",3,\"10/8/6\",\"3010\",75,\"Méthode d"
+  },
+  "Hip thrust barre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "e fessier, pas les ischios.\"],[\"Hip thrust barre\",\"fes\",3,\"12-15\",\"3112\",90,\"Pieds largeur de hanches, tibias verticaux en haut, menton rentré, côtes basses. 1 s de contraction en haut. La charge vient APRÈS la sensation.\"],[\"Soulevé de terre roumain haltères\",\"isc\",3,\"12\",\"3011\",90,\"Hinge : poussez les hanches loin derrière, genoux souples, dos neutre. Étirement maximal des ischios en bas.\"],[\"Bulgarian sp"
+  },
+  "Soulevé de terre roumain barre — test (3-5 reps)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "le si la charge est lourde.\"],[\"Soulevé de terre roumain barre — test (3-5 reps)\",\"isc\",4,\"3-5\",\"3011\",180,\"\"],[\"Bulgarian split squat\",\"qua\",3,\"10/jambe\",\"3010\",90,\"\"],[\"Abduction hanche à la poulie\",\"moy\",3,\"15/côté\",\"2011\",45,\"\"],[\"Pallof press à la poulie\",\"tra\",3,\"12/côté\",\"2010\",45,\"\"]]},\"J2\":{\"nom\":\"💪 Haut du corps — test & entretien\",\"muscles\":[\"dos\",\"epA\",\"epL\",\"bic\",\"tri\",\"abs\"],\"cardio\":{\"apres\":"
+  },
+  "Soulevé de terre roumain barre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "progressez ici en priorité.\"],[\"Soulevé de terre roumain barre\",\"isc\",3,\"10-12\",\"3011\",105,\"Descendez jusqu'à l'étirement complet des ischios, dos neutre, barre au contact des cuisses.\"],[\"Bulgarian split squat\",\"qua\",3,\"10/jambe\",\"3010\",90,\"Buste penché en avant, talon ancré : priorité fessiers.\"],[\"Leg curl machine\",\"isc\",3,\"12-15\",\"3011\",60,\"\"],[\"Abduction hanche à la poulie\",\"moy\",4,\"15/côté\",\"2011\",45,"
+  },
+  "Curl poulie basse": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "échec à 10, réduire et enchaîner 8, puis 6.\"],[\"Curl poulie basse, supination\",\"bic\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"],[\"Développé haltères assis, neutre→pronation\",\"epA\",4,\"8-10\",\"3010\",90,\"\"],[\"Élévations latérales haltères\",\"epL\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"]]},\"J2\":{\"nom\":\"Bas de corps\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"abs\",\"mol\"],\"exos\":[[\"Back squat barre haute\",\"qua\",4,\"8-10\",\"3010\","
+  },
+  "Curl poulie basse, supination": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "échec à 10, réduire et enchaîner 8, puis 6.\"],[\"Curl poulie basse, supination\",\"bic\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"],[\"Développé haltères assis, neutre→pronation\",\"epA\",4,\"8-10\",\"3010\",90,\"\"],[\"Élévations latérales haltères\",\"epL\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"]]},\"J2\":{\"nom\":\"Bas de corps\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"abs\",\"mol\"],\"exos\":[[\"Back squat barre haute\",\"qua\",4,\"8-10\",\"3010\","
+  },
+  "French press poulie basse": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ères, banc plat\",\"tri\",4,\"10-12\",\"3010\",0,\"\"],[\"French press poulie basse\",\"tri\",4,\"12-15\",\"3010\",120,\"\"],[\"Curl Scott barre EZ, pronation\",\"bic\",4,\"8-10\",\"3010\",0,\"Beaucoup plus léger qu'en supination pour protéger les avant-bras.\"],[\"Curl marteau assis\",\"bic\",4,\"10-12\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",4,\"12-15\",\"3010\",120,\"\"],[\"Élévations latérales assises\",\"epL\",4,\"8-10\",\"3010\",0,\"\"],[\"Élévati"
+  },
+  "Split squat poulie basse": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "8,8,6,6,4,4\",\"4010\",180,\"Charge croissante.\"],[\"Split squat poulie basse\",\"qua\",4,\"6-8\",\"4010\",90,\"\"],[\"Leg curl debout\",\"isc\",4,\"6-8\",\"3011\",90,\"\"],[\"Leg press\",\"qua\",4,\"12-15\",\"3010\",75,\"\"],[\"Soulevé de terre roumain haltères\",\"isc\",4,\"10-12\",\"4010\",75,\"\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"tri\",\"bic\"],\"exos\":[[\"Dips\",\"pec\",6,\"8,8,6,6,4,4\",\"4010\",120,\"Charge croissante.\"],[\"Tractions "
+  },
+  "Circuit gainage (planche + latéral + bird dog)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "oy\",3,\"20/côté\",\"2011\",45,\"\"],[\"Circuit gainage (planche + latéral + bird dog)\",\"abs\",3,\"45 s\",\"—\",45,\"\"]]},\"J5\":{\"nom\":\"🍑 Rappel fessiers + abdominaux (séance légère)\",\"muscles\":[\"fes\",\"moy\",\"tra\",\"abs\"],\"cardio\":{\"apres\":\"piscine\",\"duree\":30,\"detail\":\"30 min de piscine libre ou de repos actif (marche 30-40 min).\"},\"exos\":[[\"Glute bridge pieds sur banc\",\"fes\",4,\"15\",\"2012\",60,\"\"],[\"Abduction hanche à l'éla"
+  },
+  "Bird dog": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " corps, extension complète.\"],[\"Bird dog\",\"tra\",3,\"10/côté\",\"3010\",30,\"Gainage profond et posture : bassin immobile, bras et jambe alignés.\"],[\"Crunch à la poulie (ou au sol)\",\"abs\",3,\"15\",\"2011\",45,\"Enroulement de la colonne, pas de traction sur la nuque.\"]]},\"J3\":{\"nom\":\"🍑 Fessiers + jambes\",\"muscles\":[\"fes\",\"moy\",\"qua\",\"isc\",\"mol\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"piscine\",\"duree\":20,\"detail\":\"Option idéal"
+  },
+  "Pullover câble bras tendus": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "tation externe\",\"pec\",3,\"12-15\",\"3010\",60,\"\"],[\"Pullover câble bras tendus\",\"dos\",3,\"12-15\",\"3010\",60,\"\"]]}}},\"10\":{\"titre\":\"Intensification 5 — Plateaux ascendants\",\"type\":\"intensification\",\"macro\":\"C · Perfectionnement\",\"mois\":\"S. 37–40\",\"schema\":\"5, 5, 7, 7, 9, 9\",\"intensite\":\"85 %\",\"methode\":\"Plateaux ascendants — méthode Reg Park adaptée\",\"objectif\":\"Densité et force : commencer lourd, diminuer la char"
+  },
+  "Rowing haltère un bras, coude ouvert": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "é, prise neutre\",\"pec\",4,\"8-10\",\"4010\",90,\"\"],[\"Rowing haltère un bras, coude ouvert\",\"dos\",4,\"8-10\",\"4010\",90,\"\"],[\"Extensions triceps barre EZ\",\"tri\",4,\"8-10\",\"4010\",75,\"\"],[\"Curl Scott barre EZ, supination\",\"bic\",4,\"8-10\",\"4010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"fes\",\"abs\",\"mol\"],\"exos\":[[\"Soulevé de terre\",\"isc\",5,\"5-7\",\"4210\",120,\"Pause de 2 s à 2 pouces du sol (méthode).\"],"
+  },
+  "Développé haltère un bras debout": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ull-up)\",\"dos\",6,\"5,5,7,7,9,9\",\"4010\",120,\"\"],[\"Développé haltère un bras debout\",\"epA\",4,\"7-9\",\"4010\",90,\"\"],[\"Rowing barre EZ supination, buste penché\",\"dos\",4,\"7-9\",\"3011\",90,\"\"],[\"Extensions triceps barre EZ + pullover\",\"tri\",3,\"10-12\",\"3010\",75,\"\"],[\"Curl concentration\",\"bic\",3,\"10-12\",\"3010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"abs\",\"mol\"],\"exos\":[[\"Soulevé de terre\",\"isc\",6,\""
+  },
+  "French press haltère un bras": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " haltère un bras\",\"dos\",4,\"6-8\",\"4010\",90,\"\"],[\"French press haltère un bras\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl barre debout\",\"bic\",3,\"8-10\",\"3010\",75,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",5,\"6,6,6,8,8\",\"4010\",180,\"\"],[\"Back squat inertie (pause complète)\",\"qua\",5,\"6-8\",\"3210\",150,\"Pause complète sur les barres de sécurité.\"],[\"Fentes barre\",\"qua\",3,"
+  },
+  "Rowing haltère un bras, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "res incliné 45°\",\"pec\",5,\"5-7\",\"4010\",120,\"\"],[\"Rowing haltère un bras, prise neutre\",\"dos\",5,\"5-7\",\"4010\",120,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"qua\",\"isc\",\"mol\",\"abs\"],\"exos\":[[\"Front squat\",\"qua\",7,\"3-5\",\"3010\",180,\"\"],[\"Soulevé de terre partiel\",\"isc\",7,\"3-5\",\"3210\",180,\"Pause complète de 2 s sur les barres de sécurité.\"],[\"Mollets unilatéraux\",\"mol\",4,\"10-12\",\"3020\",75,\"\"],[\"Ab wheel (roule"
+  },
+  "Rowing haltère un bras": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "Posture : poitrine ouverte.\"],[\"Rowing haltère un bras\",\"dos\",3,\"12/côté\",\"2011\",60,\"Coude le long du corps, pas de rotation du bassin. Épaisseur du dos.\"],[\"Développé militaire haltères assis\",\"epA\",3,\"10-12\",\"2011\",75,\"Épaules dessinées : montez sans cambrer, abdominaux gainés.\"],[\"Élévations latérales haltères\",\"epL\",3,\"15\",\"2011\",45,\"Charge légère, montée jusqu'à l'horizontale, petit doigt légèrement pl"
+  },
+  "Glute bridge en 1,5 reps": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ymétries et galbe la fesse.\"],[\"Glute bridge en 1,5 reps\",\"fes\",3,\"10-12\",\"2112\",75,\"1 rep = montée complète + redescente à mi-course + remontée. Temps sous tension maximal sur le grand fessier.\"],[\"Leg curl machine\",\"isc\",4,\"10-12\",\"3011\",60,\"\"],[\"Abduction hanche à la poulie — myo-reps\",\"moy\",3,\"12-15 + myo\",\"2011\",45,\"Myo-reps : 1 série de 12-15 reps proche de l'échec, puis 4 mini-séries de 3-5 reps avec"
+  },
+  "Dead bug": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "sans cambrer le bas du dos.\"],[\"Dead bug\",\"tra\",2,\"10/côté\",\"3010\",45,\"Transverse : lombaires plaquées au sol en permanence. Si le bas du dos décolle, réduisez l'amplitude.\"],[\"Gainage planche\",\"abs\",2,\"30-40 s\",\"—\",45,\"Fessiers et abdominaux serrés, bassin neutre. Respirez normalement.\"],[\"Pallof press à l'élastique\",\"tra\",2,\"12/côté\",\"2010\",45,\"Anti-rotation : stabilise la taille et affine visuellement le"
+  },
+  "Bulgarian split squat haltères": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "e la fermeté sous la fesse.\"],[\"Bulgarian split squat haltères\",\"qua\",4,\"8-10/jambe\",\"3010\",90,\"Unilatéral lourd : corrige les asymétries et galbe la fesse.\"],[\"Glute bridge en 1,5 reps\",\"fes\",3,\"10-12\",\"2112\",75,\"1 rep = montée complète + redescente à mi-course + remontée. Temps sous tension maximal sur le grand fessier.\"],[\"Leg curl machine\",\"isc\",4,\"10-12\",\"3011\",60,\"\"],[\"Abduction hanche à la poulie — m"
+  },
+  "Bulgarian split squat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "maximal des ischios en bas.\"],[\"Bulgarian split squat\",\"qua\",3,\"10/jambe\",\"3010\",75,\"Buste légèrement penché en avant et talon bien ancré = recrutement fessier maximal plutôt que quadriceps.\"],[\"Leg curl machine (ou swiss-ball leg curl)\",\"isc\",3,\"12-15\",\"3011\",60,\"Pointes de pieds vers vous, bassin plaqué, pas de décollage des hanches.\"],[\"Abduction hanche debout à la poulie\",\"moy\",3,\"15/côté\",\"2011\",45,\"Mo"
+  },
+  "Rowing haltère buste penché": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ical prise large\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing haltère buste penché\",\"dos\",5,\"8-10\",\"3010\",120,\"\"]]}}},\"6\":{\"titre\":\"Intensification 3 — Plateaux descendants\",\"type\":\"intensification\",\"macro\":\"B · Développement\",\"mois\":\"S. 21–24\",\"schema\":\"8, 8, 6, 6, 4, 4\",\"intensite\":\"83 %\",\"methode\":\"Plateaux descendants (8→8→6→6→4→4, charge croissante)\",\"objectif\":\"Stress mécanique croissant au fil des séries : "
+  },
+  "Pushdown triceps câble": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "h press barre EZ\",\"tri\",3,\"8-10\",\"3010\",0,\"\"],[\"Pushdown triceps câble\",\"tri\",3,\"8-10\",\"3010\",120,\"\"],[\"Curl Scott haltère neutre\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl Zottman assis\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl poulie basse\",\"bic\",3,\"8-10\",\"3010\",120,\"\"],[\"Élévations latérales incliné 30°\",\"epP\",3,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales incliné 45"
+  },
+  "Câbles croisés": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "n, buste penché\",\"dos\",4,\"8-10\",\"3010\",75,\"\"],[\"Câbles croisés\",\"pec\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Rowing assis + étirement\",\"dos\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Élévations latérales incliné 30° (face au banc)\",\"epP\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]}}},\"4\":{\"titre\":\"Intensification 2 — Stage system\",\"type\":\"intensification\",\"macro\":\"A · Fondations\",\"mois\":\"S. 13–16\",\"schema\":\"6, 6, 6, 8, 8\",\"i"
+  },
+  "Câbles croisés + rotation externe": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ise large\",\"dos\",4,\"12,10,8,15\",\"3010\",90,\"\"],[\"Câbles croisés + rotation externe\",\"pec\",3,\"12-15\",\"3010\",60,\"\"],[\"Pullover câble bras tendus\",\"dos\",3,\"12-15\",\"3010\",60,\"\"]]}}},\"10\":{\"titre\":\"Intensification 5 — Plateaux ascendants\",\"type\":\"intensification\",\"macro\":\"C · Perfectionnement\",\"mois\":\"S. 37–40\",\"schema\":\"5, 5, 7, 7, 9, 9\",\"intensite\":\"85 %\",\"methode\":\"Plateaux ascendants — méthode Reg Park adapté"
+  },
+  "Écartés câbles incliné": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ppé haltères plat\",\"pec\",5,\"4-6\",\"3210\",0,\"\"],[\"Écartés câbles incliné\",\"pec\",5,\"8-10\",\"3010\",120,\"\"],[\"Rowing assis au cou\",\"dos\",5,\"6-8\",\"3011\",0,\"\"],[\"Élévations latérales incliné 30°\",\"epP\",5,\"8-10\",\"3010\",90,\"\"]]}}},\"8\":{\"titre\":\"Intensification 4 — Wave load\",\"type\":\"intensification\",\"macro\":\"B · Développement\",\"mois\":\"S. 29–32\",\"schema\":\"3-5 (vague)\",\"intensite\":\"83 %\",\"methode\":\"Wave loading 7,5,7,5"
+  },
+  "Tractions prise neutre (chin-up)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": ",5,\"5-7\",\"4210\",90,\"Pause de 2 s au menton.\"],[\"Tractions prise neutre (chin-up)\",\"dos\",5,\"5-7\",\"4210\",90,\"Pause de 2 s en bas. Alternative : tirage vertical neutre.\"],[\"Développé haltères décliné, prise neutre\",\"pec\",4,\"8-10\",\"4010\",90,\"\"],[\"Rowing haltère un bras, coude ouvert\",\"dos\",4,\"8-10\",\"4010\",90,\"\"],[\"Extensions triceps barre EZ\",\"tri\",4,\"8-10\",\"4010\",75,\"\"],[\"Curl Scott barre EZ, supination\",\"bic\""
+  },
+  "Tractions supination (chin-up)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "barre plat\",\"pec\",5,\"6,6,6,8,8\",\"4010\",90,\"\"],[\"Tractions supination (chin-up)\",\"dos\",5,\"6,6,6,8,8\",\"4010\",90,\"\"],[\"Développé haltères assis\",\"epA\",4,\"6-8\",\"4010\",90,\"\"],[\"Rowing haltère un bras, coude ouvert\",\"dos\",4,\"6-8\",\"4010\",90,\"\"],[\"Extensions triceps + pullover barre EZ\",\"tri\",3,\"8-10\",\"3010\",75,\"\"],[\"Curl haltère supination, banc Scott 90°\",\"bic\",3,\"8-10\",\"3010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2"
+  },
+  "Wood chop poulie haute": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ess unilatéral\",\"qua\",4,\"10-12\",\"3010\",90,\"\"],[\"Wood chop poulie haute\",\"abs\",3,\"10-12\",\"3010\",75,\"\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"epA\",\"tri\",\"bic\"],\"exos\":[[\"Développé couché barre plat\",\"pec\",6,\"5,5,7,7,9,9\",\"4010\",120,\"Charge maximale puis -5-6 % par palier.\"],[\"Tractions (pull-up)\",\"dos\",6,\"5,5,7,7,9,9\",\"4010\",120,\"\"],[\"Développé haltère un bras debout\",\"epA\",4,\"7-9\",\"4010\",90"
+  },
+  "Clamshell à l'élastique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ps élevées et à la brûlure.\"],[\"Clamshell à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"Bassin stable, montée du genou seule. Activation pure du moyen fessier.\"],[\"Mollets debout unilatéraux\",\"mol\",3,\"15\",\"2112\",45,\"Amplitude complète : talon qui descend bas, 1 s de contraction en haut.\"],[\"Reverse crunch\",\"abs\",3,\"12\",\"2011\",45,\"Bas du ventre : enroulez le bassin vers la poitrine, sans élan.\"],[\"Gainage laté"
+  },
+  "Mountain climbers": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "pliez davantage les genoux.\"],[\"Mountain climbers\",\"tra\",3,\"30 s\",\"—\",45,\"Gainage dynamique + dépense énergétique. Bassin bas, épaules au-dessus des poignets.\"]]},\"J5\":{\"nom\":\"🍑 Rappel fessiers + abdominaux (séance légère)\",\"muscles\":[\"fes\",\"moy\",\"tra\",\"abs\"],\"cardio\":{\"apres\":\"piscine\",\"duree\":30,\"detail\":\"30 min de piscine à allure libre : nage, aquagym ou marche dans l'eau. Récupération active idéale.\"},"
+  },
+  "Squat cycliste (squat complet)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "cles\":[\"qua\",\"isc\",\"lom\",\"mol\",\"fes\"],\"exos\":[[\"Squat cycliste (squat complet)\",\"qua\",5,\"8-10\",\"3010\",0,\"Plus léger qu'un squat classique ; ischios contre mollets en bas.\"],[\"Leg press\",\"qua\",5,\"10-12\",\"3010\",0,\"Pieds parallèles, largeur de hanches.\"],[\"Leg extension\",\"qua\",5,\"12-15\",\"2011\",120,\"Très léger, contraction complète + pause en haut.\"],[\"Leg curl allongé\",\"isc\",5,\"8-10\",\"3010\",0,\"\"],[\"Soulevé de "
+  },
+  "Curl concentration": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " EZ + pullover\",\"tri\",3,\"10-12\",\"3010\",75,\"\"],[\"Curl concentration\",\"bic\",3,\"10-12\",\"3010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"abs\",\"mol\"],\"exos\":[[\"Soulevé de terre\",\"isc\",6,\"5,5,7,7,9,9\",\"4010\",180,\"Charge maximale puis -5-6 % par palier.\"],[\"Split squat barbell (pied avant surélevé)\",\"qua\",4,\"7-9\",\"3210\",90,\"\"],[\"Leg curl allongé, 1 1/4 en haut\",\"isc\",4,\"5-7\",\"3210\",90,\"\"],[\"Jac"
+  },
+  "Drop lunges (fentes contrôlées)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "010\",180,\"Vague 8→6→4 — record annuel ici !\"],[\"Drop lunges (fentes contrôlées)\",\"qua\",6,\"8-10\",\"1010\",180,\"\"],[\"Ab wheel (roulette)\",\"abs\",4,\"10-12\",\"3020\",90,\"\"]]}}},\"finale\":{\"titre\":\"Phase finale — Affûtage & bilan 12 mois\",\"type\":\"finale\",\"macro\":\"Finale\",\"mois\":\"S. 49–52\",\"semaine\":[49,52],\"objectif\":\"Finalisation esthétique : affûtage léger, maintien de la force, comparaison complète des données, pré"
+  },
+  "Drop lunges (fentes sautées contrôlées)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "uat barre haute\",\"qua\",7,\"3-5\",\"3010\",180,\"\"],[\"Drop lunges (fentes sautées contrôlées)\",\"qua\",5,\"5-7\",\"2010\",120,\"\"],[\"Glute ham raise\",\"isc\",5,\"5-7\",\"4010\",120,\"\"],[\"Relevés de jambes suspendu\",\"abs\",4,\"10-12\",\"3020\",90,\"\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\"],\"exos\":[[\"Dips\",\"pec\",7,\"3-5\",\"3010\",120,\"Ajouter du poids si nécessaire.\"],[\"Lean away pull-ups\",\"dos\",7,\"3-5\",\"3010\",120,\"\"],["
+  },
+  "Squat au poids du corps": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ec\",3,\"8-15\",\"3010\",90,\"Mains sous les épaules, corps aligné.\"],[\"Squat au poids du corps\",\"qua\",3,\"10-15\",\"3010\",60,\"Descendre selon une amplitude confortable.\"],[\"Rowing à l’élastique\",\"dos\",3,\"10-15\",\"3010\",90,\"Fixer solidement l’élastique avant de tirer.\"],[\"Fentes arrière au poids du corps\",\"qua\",3,\"8-12\",\"3010\",90,\"Se tenir à un support si nécessaire.\"],[\"Mobilité des épaules\",\"epA\",2,\"30 s\",\"lent\",15"
+  },
+  "Développé couché décliné prise serrée": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",\"muscles\":[\"tri\",\"bic\",\"epA\",\"epL\"],\"exos\":[[\"Développé couché décliné prise serrée\",\"tri\",5,\"8-10\",\"3010\",90,\"\"],[\"Curl barre debout\",\"bic\",5,\"8-10\",\"3010\",90,\"\"],[\"Extensions triceps haltères plat\",\"tri\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Curl haltères incliné, prise neutre\",\"bic\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Développé haltères assis, prise neutre\",\"epA\",4,\"8-10\",\"3210\",90,\"M"
+  },
+  "Développé couché plat, inertie depuis les pins": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"3010\",120,\"Ajouter du poids si nécessaire.\"],[\"Développé couché plat, inertie depuis les pins\",\"pec\",5,\"6-8\",\"4010\",120,\"Pause complète sur les pins.\"],[\"Rowing haltère un bras\",\"dos\",5,\"6-8\",\"3011\",120,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles\":[\"qua\",\"isc\",\"abs\"],\"exos\":[[\"Back squat barre haute\",\"qua\",6,\"8,6,4,8,6,4\",\"3010\",180,\"Vague 8→6→4.\"],[\"Soulevé de terre partiel\",\"isc\",6,\"6-8\",\"3210\",180,\"Barr"
+  },
+  "Développé couché haltères": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "haîne postérieure complète.\"],[\"Développé couché haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"Coudes à 45°, descente contrôlée.\"],[\"Tirage horizontal à la poulie\",\"dos\",3,\"12\",\"2011\",75,\"Buste fixe, tirez vers le nombril.\"],[\"Bulgarian split squat\",\"qua\",2,\"8/jambe\",\"3010\",60,\"Rappel unilatéral, charge légère, technique parfaite.\"],[\"Relevés de jambes allongée\",\"abs\",3,\"12\",\"2011\",45,\"Lombaires plaquées : si le bas"
+  },
+  "Développé couché prise serrée": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "cles\":[\"tri\",\"bic\",\"epP\",\"epL\",\"epA\"],\"exos\":[[\"Développé couché prise serrée\",\"tri\",3,\"8-10\",\"3010\",0,\"\"],[\"Extensions triceps haltères incliné\",\"tri\",3,\"8-10\",\"3010\",0,\"Banc à 30°.\"],[\"French press barre EZ\",\"tri\",3,\"8-10\",\"3010\",0,\"\"],[\"Pushdown triceps câble\",\"tri\",3,\"8-10\",\"3010\",120,\"\"],[\"Curl Scott haltère neutre\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl Zottman assis\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl ha"
+  },
+  "Élévations latérales coude à 90°": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ises (variante)\",\"epL\",4,\"10-12\",\"3010\",0,\"\"],[\"Élévations latérales coude à 90°\",\"epL\",4,\"12-15\",\"3010\",120,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"mol\",\"fes\"],\"exos\":[[\"Squat cycliste (squat complet)\",\"qua\",5,\"8-10\",\"3010\",0,\"Plus léger qu'un squat classique ; ischios contre mollets en bas.\"],[\"Leg press\",\"qua\",5,\"10-12\",\"3010\",0,\"Pieds parallèles, largeur de hanches.\"],[\"Leg extension\",\""
+  },
+  "Crunch à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ile, bras et jambe alignés.\"],[\"Crunch à la poulie (ou au sol)\",\"abs\",3,\"15\",\"2011\",45,\"Enroulement de la colonne, pas de traction sur la nuque.\"]]},\"J3\":{\"nom\":\"🍑 Fessiers + jambes\",\"muscles\":[\"fes\",\"moy\",\"qua\",\"isc\",\"mol\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"piscine\",\"duree\":20,\"detail\":\"Option idéale : 20 min de nage souple ou d'aquagym. Zéro impact, drainage des jambes, récupération active.\"},\"exos\":[[\"Goble"
+  },
+  "Crunch à la poulie (ou au sol)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ile, bras et jambe alignés.\"],[\"Crunch à la poulie (ou au sol)\",\"abs\",3,\"15\",\"2011\",45,\"Enroulement de la colonne, pas de traction sur la nuque.\"]]},\"J3\":{\"nom\":\"🍑 Fessiers + jambes\",\"muscles\":[\"fes\",\"moy\",\"qua\",\"isc\",\"mol\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"piscine\",\"duree\":20,\"detail\":\"Option idéale : 20 min de nage souple ou d'aquagym. Zéro impact, drainage des jambes, récupération active.\"},\"exos\":[[\"Goble"
+  },
+  "Reverse crunch": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "1 s de contraction en haut.\"],[\"Reverse crunch\",\"abs\",3,\"12\",\"2011\",45,\"Bas du ventre : enroulez le bassin vers la poitrine, sans élan.\"],[\"Gainage latéral\",\"tra\",2,\"30 s/côté\",\"—\",30,\"Taille visuellement plus fine : obliques toniques sans épaississement.\"]]},\"J4\":{\"nom\":\"🔥 Full body + fessiers + cardio\",\"muscles\":[\"fes\",\"isc\",\"pec\",\"dos\",\"qua\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"elliptique\",\"duree\":20,\"detail\""
+  },
+  "Presse à cuisses pieds hauts": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "s\",3,\"10/jambe\",\"3010\",75,\"\"],[\"Presse à cuisses pieds hauts\",\"qua\",3,\"12\",\"3011\",75,\"Pieds hauts et écartés sur le plateau : transfert du travail vers les fessiers et les ischios.\"],[\"Abduction assise machine\",\"moy\",4,\"20\",\"2011\",40,\"\"],[\"Clamshell à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"\"],[\"Mollets assis\",\"mol\",3,\"15-20\",\"2112\",45,\"Soléaire : amplitude complète, 2 s en position étirée.\"],[\"Relevés de"
+  },
+  "Leg curl debout": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "210\",120,\"Pause de 2 s en bas complètement.\"],[\"Leg curl debout\",\"isc\",4,\"8-10\",\"4010\",90,\"\"],[\"Fentes bulgares haltères (pied avant surélevé)\",\"qua\",4,\"8-10\",\"4010\",90,\"\"],[\"Soulevé de terre roumain barre\",\"isc\",4,\"8-10\",\"4010\",0,\"\"],[\"Relevés de jambes incliné\",\"abs\",4,\"10-12\",\"3010\",90,\"\"],[\"Mollets unilatéraux\",\"mol\",4,\"10-12\",\"3210\",75,\"Tenir 2 s en position étirée.\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"m"
+  },
+  "Curl Scott haltère, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "[[\"Triceps dips\",\"tri\",4,\"8-10\",\"3010\",75,\"\"],[\"Curl Scott haltère, prise neutre\",\"bic\",4,\"8-10\",\"3010\",75,\"\"],[\"Barre au front (pushdown triceps)\",\"tri\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set : après l'échec à 10, réduire et enchaîner 8, puis 6.\"],[\"Curl poulie basse, supination\",\"bic\",3,\"10/8/6\",\"3010\",75,\"Méthode drop set.\"],[\"Développé haltères assis, neutre→pronation\",\"epA\",4,\"8-10\",\"3010\",90,\"\"],[\"Élé"
+  },
+  "Curl Scott haltère neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " triceps câble\",\"tri\",3,\"8-10\",\"3010\",120,\"\"],[\"Curl Scott haltère neutre\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl Zottman assis\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl poulie basse\",\"bic\",3,\"8-10\",\"3010\",120,\"\"],[\"Élévations latérales incliné 30°\",\"epP\",3,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales incliné 45°\",\"epP\",3,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales\",\""
+  },
+  "Curl Scott 90° haltère supination": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " la nuque\",\"epA\",4,\"12,10,8,15\",\"3010\",90,\"\"],[\"Curl Scott 90° haltère supination\",\"bic\",4,\"12,10,8,15\",\"3010\",90,\"\"],[\"California press (barre au cou)\",\"tri\",4,\"12-15\",\"3010\",60,\"Ne pas trop charger !\"],[\"Élévations latérales incliné\",\"epL\",4,\"12-15\",\"3010\",60,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Safety bar squat (ou barre classique)\",\"qua\",4,\"12,10,8,15\",\"3010\",120,\"12→10→8 p"
+  },
+  "Curl haltères": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "jusqu'à sentir l'étirement.\"],[\"Curl haltères\",\"bic\",2,\"12\",\"2011\",45,\"Coudes fixes le long du corps, pas d'élan.\"],[\"Extension triceps à la poulie\",\"tri\",2,\"12\",\"2011\",45,\"Coudes collés au corps, extension complète.\"],[\"Bird dog\",\"tra\",3,\"10/côté\",\"3010\",30,\"Gainage profond et posture : bassin immobile, bras et jambe alignés.\"],[\"Crunch à la poulie (ou au sol)\",\"abs\",3,\"15\",\"2011\",45,\"Enroulement de la col"
+  },
+  "Curl haltères incliné": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "l marteau assis\",\"bic\",4,\"10-12\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",4,\"12-15\",\"3010\",120,\"\"],[\"Élévations latérales assises\",\"epL\",4,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales assises (variante)\",\"epL\",4,\"10-12\",\"3010\",0,\"\"],[\"Élévations latérales coude à 90°\",\"epL\",4,\"12-15\",\"3010\",120,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"lom\",\"mol\",\"fes\"],\"exos\":[[\"Squat cycliste (squat complet)\",\"q"
+  },
+  "Curl haltères incliné, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Curl haltères incliné, prise neutre\",\"bic\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Développé haltères assis, prise neutre\",\"epA\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Élévations latérales lean away\",\"epL\",3,\"12-15\",\"3011\",60,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",5,\"4-6\",\"3010\",0,\"\"],[\"Back squat bar"
+  },
+  "Curl haltères incliné, supination": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",\"4010\",0,\"Ajouter du poids si nécessaire.\"],[\"Curl haltères incliné, supination\",\"bic\",5,\"8-10\",\"3010\",120,\"\"],[\"Développé derrière la nuque\",\"epA\",5,\"6-8\",\"4010\",0,\"\"],[\"Élévations latérales assises (variante)\",\"epL\",5,\"8-10\",\"3010\",90,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Back squat barre haute\",\"qua\",5,\"6-8\",\"4010\",0,\"\"],[\"Hack squat\",\"qua\",5,\"8-10\",\"3010\",120,\"\"],[\"Leg cur"
+  },
+  "Leg curl machine": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "imal plutôt que quadriceps.\"],[\"Leg curl machine (ou swiss-ball leg curl)\",\"isc\",3,\"12-15\",\"3011\",60,\"Pointes de pieds vers vous, bassin plaqué, pas de décollage des hanches.\"],[\"Abduction hanche debout à la poulie\",\"moy\",3,\"15/côté\",\"2011\",45,\"Moyen fessier = arrondi latéral. Buste droit, aucune rotation du bassin, montée lente.\"],[\"Kickback à la poulie\",\"fes\",3,\"15/côté\",\"2011\",45,\"Grand fessier isolé : j"
+  },
+  "Curl marteau": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ps\",1],[\"dips\",\"dip\",1],[\"curl\",\"curl marteau\",0.8],[\"curl\",\"marteau\",0.8],[\"curl\",\"hammer\",0.8],[\"curl\",\"dumbell curl\",0.5,true],[\"curl\",\"zottman\",0.5,true],[\"curl\",\"concentration\",0.45,true],[\"curl\",\"scott\",0.85],[\"curl\",\"poulie basse\",0.75],[\"curl\",\"low pulley\",0.75],[\"curl\",\"curl\",1],[\"row\",\"rowing halt\",0.7,true],[\"row\",\"rowing barre\",1],[\"row\",\"rowing assis\",0.85],[\"row\",\"seated row\",0.85],[\"row\",\"row"
+  },
+  "Curl Zottman": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "t haltère neutre\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl Zottman assis\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl poulie basse\",\"bic\",3,\"8-10\",\"3010\",120,\"\"],[\"Élévations latérales incliné 30°\",\"epP\",3,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales incliné 45°\",\"epP\",3,\"8-10\",\"3010\",0,\"\"],[\"Élévations latérales\",\"epL\",3,\"8-10\",\"3010\",0,\"\"],[\"Développé haltères assis\",\"e"
+  },
+  "Squat cycliste": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "],[\"squat\",\"hack\",0.9],[\"squat\",\"squat cycliste\",0.8],[\"squat\",\"cycliste\",0.8],[\"squat\",\"goblet\",0.8],[\"squat\",\"safety bar\",1],[\"squat\",\"squat\",1],[\"bench\",\"developpe couche\",1],[\"bench\",\"developpe halt\",0.45,true],[\"bench\",\"flat dumbell press\",0.45,true],[\"bench\",\"incline dumbell press\",0.45,true],[\"bench\",\"decline dumbell press\",0.45,true],[\"bench\",\"dumbell press\",0.45,true],[\"bench\",\"incline\",0.85],[\"ben"
+  },
+  "Développé militaire debout": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "cles\":[\"epA\",\"tri\",\"dos\",\"bic\",\"pec\"],\"exos\":[[\"Développé militaire debout\",\"epA\",5,\"5-7\",\"4210\",90,\"Pause de 2 s au menton, sans relâcher la tension.\"],[\"Tractions (pull-up)\",\"dos\",5,\"5-7\",\"4210\",90,\"Pause de 2 s en bas. Alternative : tirage vertical.\"],[\"Développé haltères incliné 30°\",\"pec\",4,\"8-10\",\"4010\",90,\"\"],[\"Rowing haltère un bras\",\"dos\",4,\"8-10\",\"4010\",90,\"\"],[\"French press barre EZ\",\"tri\",4,\"8-1"
+  },
+  "Good morning debout": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "010\",0,\"Tirer les pieds (tibial antérieur).\"],[\"Good morning debout\",\"isc\",5,\"8-10\",\"3010\",0,\"Léger si première fois.\"],[\"Back extension horizontal\",\"isc\",5,\"8-10\",\"3010\",120,\"\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"pec\",\"dos\"],\"exos\":[[\"Développé haltères incliné 45°, prise neutre\",\"pec\",5,\"8-10\",\"3010\",0,\"\"],[\"Développé haltères incliné 30°\",\"pec\",5,\"8-10\",\"3010\",0,\"Diminuer l'angle du banc.\"],[\"Câ"
+  },
+  "Mollets debout": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "tion pure du moyen fessier.\"],[\"Mollets debout unilatéraux\",\"mol\",3,\"15\",\"2112\",45,\"Amplitude complète : talon qui descend bas, 1 s de contraction en haut.\"],[\"Reverse crunch\",\"abs\",3,\"12\",\"2011\",45,\"Bas du ventre : enroulez le bassin vers la poitrine, sans élan.\"],[\"Gainage latéral\",\"tra\",2,\"30 s/côté\",\"—\",30,\"Taille visuellement plus fine : obliques toniques sans épaississement.\"]]},\"J4\":{\"nom\":\"🔥 Full bo"
+  },
+  "Mollets debout unilatéraux": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "tion pure du moyen fessier.\"],[\"Mollets debout unilatéraux\",\"mol\",3,\"15\",\"2112\",45,\"Amplitude complète : talon qui descend bas, 1 s de contraction en haut.\"],[\"Reverse crunch\",\"abs\",3,\"12\",\"2011\",45,\"Bas du ventre : enroulez le bassin vers la poitrine, sans élan.\"],[\"Gainage latéral\",\"tra\",2,\"30 s/côté\",\"—\",30,\"Taille visuellement plus fine : obliques toniques sans épaississement.\"]]},\"J4\":{\"nom\":\"🔥 Full bo"
+  },
+  "Développé haltères décliné, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " bas. Alternative : tirage vertical neutre.\"],[\"Développé haltères décliné, prise neutre\",\"pec\",4,\"8-10\",\"4010\",90,\"\"],[\"Rowing haltère un bras, coude ouvert\",\"dos\",4,\"8-10\",\"4010\",90,\"\"],[\"Extensions triceps barre EZ\",\"tri\",4,\"8-10\",\"4010\",75,\"\"],[\"Curl Scott barre EZ, supination\",\"bic\",4,\"8-10\",\"4010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"fes\",\"abs\",\"mol\"],\"exos\":[[\"Soulevé de terr"
+  },
+  "Écartés haltères décliné": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "t, prise neutre\",\"pec\",5,\"10-12\",\"3010\",0,\"\"],[\"Écartés haltères décliné\",\"pec\",5,\"12-15\",\"3010\",120,\"Insister sur l'étirement en bas.\"],[\"Rowing barre buste penché, pronation\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"dos\",5,\"10-12\",\"3010\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"12-15\",\"3010\",120,\"\"],[\"Relevés de jambes allongé\",\"abs\",4,\"10-12\",\"3010\",60,\"\"],[\"Crunch sur swiss ba"
+  },
+  "Développé militaire, inertie depuis les pins": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"3010\",120,\"Ajouter du poids si nécessaire.\"],[\"Développé militaire, inertie depuis les pins\",\"epA\",5,\"6-8\",\"3210\",120,\"Barre à hauteur du front.\"],[\"Rowing haltère un bras, coude ouvert\",\"dos\",5,\"6-8\",\"3011\",120,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"isc\",\"qua\",\"abs\"],\"exos\":[[\"Soulevé de terre\",\"isc\",6,\"8,6,4,8,6,4\",\"3010\",180,\"Vague 8→6→4 — record annuel ici !\"],[\"Drop lunges (fentes contrôlées)\""
+  },
+  "Développé derrière la nuque": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "né, supination\",\"bic\",5,\"8-10\",\"3010\",120,\"\"],[\"Développé derrière la nuque\",\"epA\",5,\"6-8\",\"4010\",0,\"\"],[\"Élévations latérales assises (variante)\",\"epL\",5,\"8-10\",\"3010\",90,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":[\"qua\",\"isc\",\"mol\"],\"exos\":[[\"Back squat barre haute\",\"qua\",5,\"6-8\",\"4010\",0,\"\"],[\"Hack squat\",\"qua\",5,\"8-10\",\"3010\",120,\"\"],[\"Leg curl allongé, 1 1/4 en haut\",\"isc\",5,\"4-6\",\"3210\",0,\"Méthode 1 1/4 : d"
+  },
+  "Mobilité des épaules": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "qua\",3,\"8-12\",\"3010\",90,\"Se tenir à un support si nécessaire.\"],[\"Mobilité des épaules\",\"epA\",2,\"30 s\",\"lent\",15,\"Cercles lents et indolores.\"],[\"Respiration diaphragmatique\",\"tra\",1,\"60 s\",\"lent\",0,\"Inspirer 4 secondes et expirer 6 secondes, sans apnée.\"]];for(const i of mg)sr.set(uh(i[0]),{row:i,sources:[\"jarvis\"]});const dl={...lt.elite.MUSCU_GUIDES,...lt.emilie.MUSCU_GUIDES},gg={\"french press barre ez\":"
+  },
+  "Développé incliné haltères": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "e\",\"epP\",3,\"15\",\"2011\",45,\"\"],[\"Développé incliné haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"\"],[\"Curl haltères\",\"bic\",3,\"12\",\"2011\",45,\"\"],[\"Extension triceps à la poulie\",\"tri\",3,\"12\",\"2011\",45,\"\"],[\"Bird dog\",\"tra\",2,\"12/côté\",\"3010\",30,\"\"],[\"Reverse crunch\",\"abs\",3,\"12\",\"2011\",45,\"\"],[\"Pallof press à la poulie\",\"tra\",2,\"12/côté\",\"2010\",45,\"\"]]},\"J3\":{\"nom\":\"🍑 Fessiers + jambes\",\"muscles\":[\"fes\",\"moy\",\"qua\",\"i"
+  },
+  "Développé haltères incliné 45°, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "toraux & dos\",\"muscles\":[\"pec\",\"dos\"],\"exos\":[[\"Développé haltères incliné 45°, prise neutre\",\"pec\",5,\"8-10\",\"3010\",0,\"\"],[\"Développé haltères incliné 30°\",\"pec\",5,\"8-10\",\"3010\",0,\"Diminuer l'angle du banc.\"],[\"Câbles croisés\",\"pec\",5,\"8-10\",\"3010\",0,\"\"],[\"Écartés haltères\",\"pec\",5,\"8-10\",\"3010\",120,\"\"],[\"Rowing barre EZ supination, buste penché\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"do"
+  },
+  "Développé haltères incliné, pronation": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "e large\",\"dos\",6,\"8,8,6,6,4,4\",\"4010\",120,\"\"],[\"Développé haltères incliné, pronation\",\"pec\",4,\"6-8\",\"4010\",90,\"\"],[\"Rowing barre EZ supination, buste penché\",\"dos\",4,\"6-8\",\"3011\",90,\"\"],[\"Extensions triceps barre EZ\",\"tri\",4,\"6-8\",\"4010\",75,\"\"],[\"Curl haltères incliné\",\"bic\",4,\"6-8\",\"4010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"qua\",\"isc\",\"abs\",\"mol\"],\"exos\":[[\"Front squat\",\"qua\",6,\"8,8,6,6,4,4\""
+  },
+  "Développé haltères plat, prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ins légèrement plus larges que les épaules.\"],[\"Développé haltères plat, prise neutre\",\"pec\",5,\"10-12\",\"3010\",0,\"\"],[\"Écartés haltères décliné\",\"pec\",5,\"12-15\",\"3010\",120,\"Insister sur l'étirement en bas.\"],[\"Rowing barre buste penché, pronation\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"dos\",5,\"10-12\",\"3010\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"12-15\",\"3010\",120,\"\"],[\"Relevés "
+  },
+  "Développé haltères plat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ins légèrement plus larges que les épaules.\"],[\"Développé haltères plat, prise neutre\",\"pec\",5,\"10-12\",\"3010\",0,\"\"],[\"Écartés haltères décliné\",\"pec\",5,\"12-15\",\"3010\",120,\"Insister sur l'étirement en bas.\"],[\"Rowing barre buste penché, pronation\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"dos\",5,\"10-12\",\"3010\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"12-15\",\"3010\",120,\"\"],[\"Relevés "
+  },
+  "Respiration diaphragmatique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " abdominale après le gainage.\"],[\"🌬️\",\"Respiration diaphragmatique allongée\",\"1 min\",\"Allongée, genoux pliés, inspirez en gonflant le ventre, expirez longuement en rentrant le nombril vers la colonne. 6 à 8 respirations.\"]]},\"qua\":{\"nom\":\"Quadriceps\",\"exos\":[[\"🦵\",\"Talon vers la fesse (debout)\",\"20-30 s/côté\",\"Tenez-vous à un support, ramenez le talon vers la fesse, attrapez la cheville, genoux serrés.\"],[\"➡"
+  },
+  "Dips": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": ",[\"pullup\",\"lean away pull\",1],[\"dips\",\"dips\",1],[\"dips\",\"dip\",1],[\"curl\",\"curl marteau\",0.8],[\"curl\",\"marteau\",0.8],[\"curl\",\"hammer\",0.8],[\"curl\",\"dumbell curl\",0.5,true],[\"curl\",\"zottman\",0.5,true],[\"curl\",\"concentration\",0.45,true],[\"curl\",\"scott\",0.85],[\"curl\",\"poulie basse\",0.75],[\"curl\",\"low pulley\",0.75],[\"curl\",\"curl\",1],[\"row\",\"rowing halt\",0.7,true],[\"row\",\"rowing barre\",1],[\"row\",\"rowing assis\",0"
+  },
+  "Triceps dips": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "paules\",\"muscles\":[\"tri\",\"bic\",\"epL\"],\"exos\":[[\"Triceps dips\",\"tri\",4,\"8-10\",\"3010\",0,\"Attacher un poids si nécessaire. Alternative : close grip push-ups.\"],[\"Triceps extensions haltères, banc plat\",\"tri\",4,\"10-12\",\"3010\",0,\"\"],[\"French press poulie basse\",\"tri\",4,\"12-15\",\"3010\",120,\"\"],[\"Curl Scott barre EZ, pronation\",\"bic\",4,\"8-10\",\"3010\",0,\"Beaucoup plus léger qu'en supination pour protéger les avant-br"
+  },
+  "Kickback à la poulie — drop set final": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " fessier = arrondi latéral.\"],[\"Kickback à la poulie — drop set final\",\"fes\",3,\"12-15/côté\",\"2011\",45,\"Sur la dernière série : retirez 30 % de la charge et enchaînez jusqu'à l'échec technique.\"],[\"Pallof press à la poulie\",\"tra\",2,\"12/côté\",\"2010\",45,\"\"],[\"Crunch à la poulie\",\"abs\",3,\"15\",\"2011\",45,\"Résistance progressive : abdominaux légèrement visibles.\"],[\"Gainage planche\",\"abs\",2,\"45-60 s\",\"—\",45,\"\"]]},"
+  },
+  "Gainage latéral dynamique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "h\",\"abs\",3,\"15\",\"2011\",45,\"\"],[\"Gainage latéral dynamique\",\"tra\",3,\"30 s/côté\",\"—\",30,\"\"]]},\"J4\":{\"nom\":\"🔥 Full body + fessiers + cardio\",\"muscles\":[\"fes\",\"isc\",\"pec\",\"dos\",\"qua\",\"moy\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"elliptique\",\"duree\":24,\"detail\":\"Fractionné : 8-10 × 30 s rapide + 90 s très facile. Dépense énergétique élevée sans détruire la récupération.\"},\"exos\":[[\"Hip thrust barre\",\"fes\",3,\"10-12\",\"301"
+  },
+  "Écartés haltères": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "t, prise neutre\",\"pec\",5,\"10-12\",\"3010\",0,\"\"],[\"Écartés haltères décliné\",\"pec\",5,\"12-15\",\"3010\",120,\"Insister sur l'étirement en bas.\"],[\"Rowing barre buste penché, pronation\",\"dos\",5,\"8-10\",\"3010\",0,\"\"],[\"Rowing assis, prise neutre\",\"dos\",5,\"10-12\",\"3010\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"12-15\",\"3010\",120,\"\"],[\"Relevés de jambes allongé\",\"abs\",4,\"10-12\",\"3010\",60,\"\"],[\"Crunch sur swiss ba"
+  },
+  "Face pull à l'élastique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": ". Épaule ronde sans volume.\"],[\"Face pull à l'élastique\",\"epP\",3,\"15\",\"2011\",45,\"Posture et santé d'épaule : coudes hauts, omoplates serrées en fin de mouvement.\"],[\"Pompes inclinées (mains surélevées)\",\"pec\",3,\"8-12\",\"2010\",60,\"Corps gainé, coudes à 45°. Descendez jusqu'à sentir l'étirement.\"],[\"Curl haltères\",\"bic\",2,\"12\",\"2011\",45,\"Coudes fixes le long du corps, pas d'élan.\"],[\"Extension triceps à la pou"
+  },
+  "Fire hydrant à l'élastique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "es\",3,\"15/côté\",\"2011\",45,\"\"],[\"Fire hydrant à l'élastique\",\"moy\",3,\"15/côté\",\"2011\",40,\"Petit et moyen fessiers : galbe du haut de la fesse.\"],[\"Dead bug avec rotation\",\"tra\",3,\"12/côté\",\"3010\",45,\"Transverse + obliques profonds : ventre plat et taille tenue.\"],[\"Gainage planche\",\"abs\",2,\"45 s\",\"—\",45,\"\"],[\"Pallof press à la poulie\",\"tra\",2,\"12/côté\",\"2010\",45,\"\"]]},\"J2\":{\"nom\":\"💪 Haut du corps + ventre + "
+  },
+  "Kickback à l'élastique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "iblée sur le moyen fessier.\"],[\"Kickback à l'élastique\",\"fes\",3,\"15/côté\",\"2011\",45,\"Volume fessier sans fatigue nerveuse.\"],[\"Dead bug\",\"tra\",3,\"10/côté\",\"3010\",45,\"\"],[\"Gainage planche\",\"abs\",3,\"40 s\",\"—\",45,\"\"]]}}},\"2\":{\"titre\":\"Adaptation 2 — Amplitude & contrôle\",\"type\":\"adaptation\",\"macro\":\"PHASE 1 — ADAPTATION & ACTIVATION FESSIERS\",\"mois\":\"Mois 2 (S. 5–8)\",\"cycle\":\"P1\",\"cycleNom\":\"PHASE 1 — ADAPTATI"
+  },
+  "Pallof press à l'élastique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "utre. Respirez normalement.\"],[\"Pallof press à l'élastique\",\"tra\",2,\"12/côté\",\"2010\",45,\"Anti-rotation : stabilise la taille et affine visuellement le tour de taille.\"]]},\"J2\":{\"nom\":\"💪 Haut du corps + ventre + cardio\",\"muscles\":[\"dos\",\"epL\",\"epA\",\"epP\",\"pec\",\"bic\",\"tri\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"elliptique\",\"duree\":18,\"detail\":\"Cardio modéré 60-68 % FCM : vous pouvez parler par phrases courtes. Brûle"
+  },
+  "Rowing à l’élastique": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "Posture : poitrine ouverte.\"],[\"Rowing haltère un bras\",\"dos\",3,\"12/côté\",\"2011\",60,\"Coude le long du corps, pas de rotation du bassin. Épaisseur du dos.\"],[\"Développé militaire haltères assis\",\"epA\",3,\"10-12\",\"2011\",75,\"Épaules dessinées : montez sans cambrer, abdominaux gainés.\"],[\"Élévations latérales haltères\",\"epL\",3,\"15\",\"2011\",45,\"Charge légère, montée jusqu'à l'horizontale, petit doigt légèrement pl"
+  },
+  "Élévations latérales haltères": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "cambrer, abdominaux gainés.\"],[\"Élévations latérales haltères\",\"epL\",3,\"15\",\"2011\",45,\"Charge légère, montée jusqu'à l'horizontale, petit doigt légèrement plus haut. Épaule ronde sans volume.\"],[\"Face pull à l'élastique\",\"epP\",3,\"15\",\"2011\",45,\"Posture et santé d'épaule : coudes hauts, omoplates serrées en fin de mouvement.\"],[\"Pompes inclinées (mains surélevées)\",\"pec\",3,\"8-12\",\"2010\",60,\"Corps gainé, coud"
+  },
+  "Élévations latérales haltères — myo-reps": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"epA\",3,\"10-12\",\"2011\",90,\"\"],[\"Élévations latérales haltères — myo-reps\",\"epL\",3,\"12-15 + myo\",\"2011\",45,\"Épaules légèrement dessinées : myo-reps légers, sensation de brûlure, jamais lourd.\"],[\"Face pull à la poulie\",\"epP\",3,\"15\",\"2011\",45,\"\"],[\"Développé incliné haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"\"],[\"Rowing haltère un bras\",\"dos\",3,\"10/côté\",\"2011\",60,\"\"],[\"Curl haltères\",\"bic\",3,\"10-12\",\"2011\",45,\"\"],"
+  },
+  "Élévations latérales incliné 30°": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ment\",\"dos\",4,\"10/8/6\",\"3010\",75,\"Drop set.\"],[\"Élévations latérales incliné 30° (face au banc)\",\"epP\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]}}},\"4\":{\"titre\":\"Intensification 2 — Stage system\",\"type\":\"intensification\",\"macro\":\"A · Fondations\",\"mois\":\"S. 13–16\",\"schema\":\"6, 6, 6, 8, 8\",\"intensite\":\"81 %\",\"methode\":\"Stage system (charges lourdes puis dégressives)\",\"objectif\":\"Pic de force du 1er macrocycle : char"
+  },
+  "Élévations latérales": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "cambrer, abdominaux gainés.\"],[\"Élévations latérales haltères\",\"epL\",3,\"15\",\"2011\",45,\"Charge légère, montée jusqu'à l'horizontale, petit doigt légèrement plus haut. Épaule ronde sans volume.\"],[\"Face pull à l'élastique\",\"epP\",3,\"15\",\"2011\",45,\"Posture et santé d'épaule : coudes hauts, omoplates serrées en fin de mouvement.\"],[\"Pompes inclinées (mains surélevées)\",\"pec\",3,\"8-12\",\"2010\",60,\"Corps gainé, coud"
+  },
+  "Leg extension": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"barre au front\",0.95],[\"squat\",\"leg extension\",0.35],[\"squat\",\"mollet\",0.45],[\"squat\",\"calf\",0.45],[\"squat\",\"presse a cuisses\",1.35],[\"squat\",\"leg press\",1.2],[\"squat\",\"presse\",1.2],[\"latraise\",\"elevations lat\",1,true],[\"latraise\",\"lateral raise\",1,true],[\"latraise\",\"lateral\",1,true],[\"ohp\",\"lean away\",0.25,true],[\"ohp\",\"telle raise\",0.25,true],[\"ohp\",\"prone\",0.2,true],[\"ohp\",\"rear delt\",0.2,true],[\"ohp\",\""
+  },
+  "Extension triceps à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " long du corps, pas d'élan.\"],[\"Extension triceps à la poulie\",\"tri\",2,\"12\",\"2011\",45,\"Coudes collés au corps, extension complète.\"],[\"Bird dog\",\"tra\",3,\"10/côté\",\"3010\",30,\"Gainage profond et posture : bassin immobile, bras et jambe alignés.\"],[\"Crunch à la poulie (ou au sol)\",\"abs\",3,\"15\",\"2011\",45,\"Enroulement de la colonne, pas de traction sur la nuque.\"]]},\"J3\":{\"nom\":\"🍑 Fessiers + jambes\",\"muscles\":[\""
+  },
+  "Extensions triceps haltères incliné": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ché prise serrée\",\"tri\",3,\"8-10\",\"3010\",0,\"\"],[\"Extensions triceps haltères incliné\",\"tri\",3,\"8-10\",\"3010\",0,\"Banc à 30°.\"],[\"French press barre EZ\",\"tri\",3,\"8-10\",\"3010\",0,\"\"],[\"Pushdown triceps câble\",\"tri\",3,\"8-10\",\"3010\",120,\"\"],[\"Curl Scott haltère neutre\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl Zottman assis\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl haltères incliné\",\"bic\",3,\"8-10\",\"3010\",0,\"\"],[\"Curl poulie bas"
+  },
+  "Extensions triceps haltères plat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "rl barre debout\",\"bic\",5,\"8-10\",\"3010\",90,\"\"],[\"Extensions triceps haltères plat\",\"tri\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Curl haltères incliné, prise neutre\",\"bic\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Développé haltères assis, prise neutre\",\"epA\",4,\"8-10\",\"3210\",90,\"Méthode 1 1/4 en bas.\"],[\"Élévations latérales lean away\",\"epL\",3,\"12-15\",\"3011\",60,\"\"]]},\"J2\":{\"nom\":\"Jambes\",\"muscles\":"
+  },
+  "Extensions triceps poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "],[\"Back squat\",\"qua\",3,\"8-10\",\"3010\",150,\"\"],[\"Extensions triceps poulie\",\"tri\",3,\"10-12\",\"3010\",75,\"\"],[\"Curl barre\",\"bic\",3,\"10-12\",\"3010\",75,\"\"]]},\"J2\":{\"nom\":\"Records personnels (session test)\",\"muscles\":[\"pec\",\"qua\",\"isc\",\"epA\"],\"exos\":[[\"Développé couché — test 1RM\",\"pec\",5,\"1-5\",\"4010\",180,\"Testez votre record annuel en toute sécurité.\"],[\"Back squat — test 1RM\",\"qua\",5,\"1-5\",\"4010\",180,\"\"],[\"Soulev"
+  },
+  "Face pull à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ps élevées, charge modérée.\"],[\"Face pull à la poulie\",\"epP\",3,\"15\",\"2011\",45,\"\"],[\"Développé incliné haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"\"],[\"Curl haltères\",\"bic\",3,\"12\",\"2011\",45,\"\"],[\"Extension triceps à la poulie\",\"tri\",3,\"12\",\"2011\",45,\"\"],[\"Bird dog\",\"tra\",2,\"12/côté\",\"3010\",30,\"\"],[\"Reverse crunch\",\"abs\",3,\"12\",\"2011\",45,\"\"],[\"Pallof press à la poulie\",\"tra\",2,\"12/côté\",\"2010\",45,\"\"]]},\"J3\":{\"nom\":\""
+  },
+  "Fentes marchées": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\"\"],[\"Hack squat\",\"qua\",5,\"8-10\",\"3010\",0,\"\"],[\"Fentes marchées\",\"qua\",5,\"15-20\",\"3010\",0,\"10 par côté.\"],[\"Leg press\",\"qua\",5,\"8-10\",\"3010\",120,\"\"],[\"Leg curl allongé, pieds pointés\",\"isc\",5,\"6-8\",\"4010\",0,\"Contracter les mollets.\"],[\"Leg curl allongé, pieds fléchis\",\"isc\",5,\"6-8\",\"4010\",0,\"Tirer les pieds (tibial antérieur).\"],[\"Good morning debout\",\"isc\",5,\"8-10\",\"3010\",0,\"Léger si première fois.\"],[\"Bac"
+  },
+  "Pont fessier au sol — activation": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ation des fessiers.\"},\"exos\":[[\"Pont fessier au sol — activation\",\"fes\",2,\"15\",\"2012\",45,\"Activation obligatoire : 2 s de contraction en haut, bassin neutre, ne cambrez pas les lombaires. Vous devez sentir le fessier, pas les ischios.\"],[\"Hip thrust barre\",\"fes\",3,\"12-15\",\"3112\",90,\"Pieds largeur de hanches, tibias verticaux en haut, menton rentré, côtes basses. 1 s de contraction en haut. La charge vient A"
+  },
+  "Front squat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "\",\"overhead\",0.8,true],[\"squat\",\"front squat\",0.85],[\"squat\",\"back squat\",1],[\"squat\",\"hack\",0.9],[\"squat\",\"squat cycliste\",0.8],[\"squat\",\"cycliste\",0.8],[\"squat\",\"goblet\",0.8],[\"squat\",\"safety bar\",1],[\"squat\",\"squat\",1],[\"bench\",\"developpe couche\",1],[\"bench\",\"developpe halt\",0.45,true],[\"bench\",\"flat dumbell press\",0.45,true],[\"bench\",\"incline dumbell press\",0.45,true],[\"bench\",\"decline dumbell press\",0."
+  },
+  "Gainage latéral": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ers la poitrine, sans élan.\"],[\"Gainage latéral\",\"tra\",2,\"30 s/côté\",\"—\",30,\"Taille visuellement plus fine : obliques toniques sans épaississement.\"]]},\"J4\":{\"nom\":\"🔥 Full body + fessiers + cardio\",\"muscles\":[\"fes\",\"isc\",\"pec\",\"dos\",\"qua\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"elliptique\",\"duree\":20,\"detail\":\"Format fractionné court : 6 × 30 s rapide (RPE 7-8) + 90 s très facile. 5 min d'échauffement et 3 min de r"
+  },
+  "Gainage planche": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "olle, réduisez l'amplitude.\"],[\"Gainage planche\",\"abs\",2,\"30-40 s\",\"—\",45,\"Fessiers et abdominaux serrés, bassin neutre. Respirez normalement.\"],[\"Pallof press à l'élastique\",\"tra\",2,\"12/côté\",\"2010\",45,\"Anti-rotation : stabilise la taille et affine visuellement le tour de taille.\"]]},\"J2\":{\"nom\":\"💪 Haut du corps + ventre + cardio\",\"muscles\":[\"dos\",\"epL\",\"epA\",\"epP\",\"pec\",\"bic\",\"tri\",\"abs\",\"tra\"],\"cardio\":{"
+  },
+  "Glute ham raise": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ées contrôlées)\",\"qua\",5,\"5-7\",\"2010\",120,\"\"],[\"Glute ham raise\",\"isc\",5,\"5-7\",\"4010\",120,\"\"],[\"Relevés de jambes suspendu\",\"abs\",4,\"10-12\",\"3020\",90,\"\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\"],\"exos\":[[\"Dips\",\"pec\",7,\"3-5\",\"3010\",120,\"Ajouter du poids si nécessaire.\"],[\"Lean away pull-ups\",\"dos\",7,\"3-5\",\"3010\",120,\"\"],[\"Développé haltères incliné 45°\",\"pec\",5,\"5-7\",\"4010\",120,\"\"],[\"Rowing h"
+  },
+  "Goblet squat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "écupération active.\"},\"exos\":[[\"Goblet squat\",\"qua\",3,\"12\",\"3011\",90,\"Quadriceps volontairement contrôlés : amplitude complète, genoux dans l'axe des orteils, talons au sol.\"],[\"Hip thrust unilatéral (1 jambe)\",\"fes\",3,\"12/côté\",\"2112\",75,\"Symétrie : travaillez d'abord le côté le plus faible, puis le même nombre de reps de l'autre.\"],[\"Soulevé de terre roumain unilatéral haltère\",\"isc\",3,\"10/côté\",\"3011\",60"
+  },
+  "Hack squat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ongé\",\"isc\",4,\"10/8/6\",\"3010\",90,\"Drop set.\"],[\"Hack squat\",\"qua\",4,\"10/8/6\",\"3010\",90,\"Drop set.\"],[\"Back extension 45°, prise snatch\",\"lom\",3,\"10-12\",\"3010\",60,\"\"],[\"Jackknife sur swiss ball\",\"abs\",3,\"10-12\",\"3010\",60,\"\"],[\"Mollets debout\",\"mol\",3,\"10/8/6\",\"3010\",75,\"Drop set.\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"pec\",\"dos\",\"epP\"],\"exos\":[[\"Développé haltères plat\",\"pec\",4,\"8-10\",\"3010\",75,\"\"],[\""
+  },
+  "Pullover haltère plat": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ltères décliné\",\"pec\",3,\"12-15\",\"3010\",60,\"\"],[\"Pullover haltère plat\",\"dos\",3,\"12-15\",\"3010\",60,\"\"]]}}},\"12\":{\"titre\":\"Intensification 6 — Wave load final\",\"type\":\"intensification\",\"macro\":\"C · Perfectionnement\",\"mois\":\"S. 45–48\",\"schema\":\"8, 6, 4 (vague)\",\"intensite\":\"85 %\",\"methode\":\"Wave loading 8,6,4,8,6,4 — pic annuel\",\"objectif\":\"PIC de l'année : battre tous vos records (développé couché, militaire, "
+  },
+  "Soulevé de terre roumain unilatéral haltère": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " nombre de reps de l'autre.\"],[\"Soulevé de terre roumain unilatéral haltère\",\"isc\",3,\"10/côté\",\"3011\",60,\"Ischios + moyen fessier + équilibre. Jambe d'appui légèrement fléchie.\"],[\"Fentes arrière alternées\",\"fes\",3,\"10/jambe\",\"3010\",75,\"Pas long et buste penché en avant = fessiers. Pas court et buste droit = quadriceps.\"],[\"Step-up sur banc (hauteur du genou)\",\"qua\",3,\"10/jambe\",\"2011\",60,\"Poussez avec le t"
+  },
+  "Soulevé de terre roumain haltères": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "e vient APRÈS la sensation.\"],[\"Soulevé de terre roumain haltères\",\"isc\",3,\"12\",\"3011\",90,\"Hinge : poussez les hanches loin derrière, genoux souples, dos neutre. Étirement maximal des ischios en bas.\"],[\"Bulgarian split squat\",\"qua\",3,\"10/jambe\",\"3010\",75,\"Buste légèrement penché en avant et talon bien ancré = recrutement fessier maximal plutôt que quadriceps.\"],[\"Leg curl machine (ou swiss-ball leg curl)\","
+  },
+  "Step-up haut": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "sion horizontal\",\"isc\",4,\"8-10\",\"4010\",90,\"\"],[\"Step-up haut\",\"qua\",4,\"8-10\",\"4010\",0,\"\"],[\"Crunch à la poulie\",\"abs\",4,\"12-15\",\"3011\",90,\"\"],[\"Mollets assis\",\"mol\",4,\"12-15\",\"3020\",75,\"\"]]}}},\"3\":{\"titre\":\"Accumulation 2 — Drop sets\",\"type\":\"accumulation\",\"macro\":\"A · Fondations\",\"mois\":\"S. 9–12\",\"schema\":\"10 / 8 / 6\",\"intensite\":\"74 %\",\"methode\":\"Drop sets 10/8/6 (réduire la charge, continuer)\",\"objectif\""
+  },
+  "Hip thrust unilatéral (1 jambe)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "des orteils, talons au sol.\"],[\"Hip thrust unilatéral (1 jambe)\",\"fes\",3,\"12/côté\",\"2112\",75,\"Symétrie : travaillez d'abord le côté le plus faible, puis le même nombre de reps de l'autre.\"],[\"Soulevé de terre roumain unilatéral haltère\",\"isc\",3,\"10/côté\",\"3011\",60,\"Ischios + moyen fessier + équilibre. Jambe d'appui légèrement fléchie.\"],[\"Fentes arrière alternées\",\"fes\",3,\"10/jambe\",\"3010\",75,\"Pas long et b"
+  },
+  "Hip thrust unilatéral lesté": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "as la performance en squat.\"],[\"Hip thrust unilatéral lesté\",\"fes\",4,\"8/côté\",\"2112\",105,\"Grand fessier en unilatéral lourd : symétrie et galbe.\"],[\"Soulevé de terre roumain unilatéral\",\"isc\",3,\"10/côté\",\"3011\",75,\"\"],[\"Fentes bulgares (pied arrière surélevé)\",\"fes\",4,\"8-10/jambe\",\"3010\",90,\"Buste penché en avant, grand pas : fessiers et ischios en priorité.\"],[\"Presse à cuisses pieds hauts\",\"qua\",3,\"12\",\"3"
+  },
+  "Hip thrust unilatéral": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "des orteils, talons au sol.\"],[\"Hip thrust unilatéral (1 jambe)\",\"fes\",3,\"12/côté\",\"2112\",75,\"Symétrie : travaillez d'abord le côté le plus faible, puis le même nombre de reps de l'autre.\"],[\"Soulevé de terre roumain unilatéral haltère\",\"isc\",3,\"10/côté\",\"3011\",60,\"Ischios + moyen fessier + équilibre. Jambe d'appui légèrement fléchie.\"],[\"Fentes arrière alternées\",\"fes\",3,\"10/jambe\",\"3010\",75,\"Pas long et b"
+  },
+  "Tirage horizontal à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " à 45°, descente contrôlée.\"],[\"Tirage horizontal à la poulie\",\"dos\",3,\"12\",\"2011\",75,\"Buste fixe, tirez vers le nombril.\"],[\"Bulgarian split squat\",\"qua\",2,\"8/jambe\",\"3010\",60,\"Rappel unilatéral, charge légère, technique parfaite.\"],[\"Relevés de jambes allongée\",\"abs\",3,\"12\",\"2011\",45,\"Lombaires plaquées : si le bas du dos décolle, pliez davantage les genoux.\"],[\"Mountain climbers\",\"tra\",3,\"30 s\",\"—\",45,\"G"
+  },
+  "Relevés de jambes incliné": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "re roumain barre\",\"isc\",4,\"8-10\",\"4010\",0,\"\"],[\"Relevés de jambes incliné\",\"abs\",4,\"10-12\",\"3010\",90,\"\"],[\"Mollets unilatéraux\",\"mol\",4,\"10-12\",\"3210\",75,\"Tenir 2 s en position étirée.\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"tri\",\"bic\"],\"exos\":[[\"Développé incliné barre\",\"pec\",5,\"5-7\",\"4210\",90,\"Pause de 2 s au menton.\"],[\"Tractions prise neutre (chin-up)\",\"dos\",5,\"5-7\",\"4210\",90,\"Pause de"
+  },
+  "Pompes inclinées (mains surélevées)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "errées en fin de mouvement.\"],[\"Pompes inclinées (mains surélevées)\",\"pec\",3,\"8-12\",\"2010\",60,\"Corps gainé, coudes à 45°. Descendez jusqu'à sentir l'étirement.\"],[\"Curl haltères\",\"bic\",2,\"12\",\"2011\",45,\"Coudes fixes le long du corps, pas d'élan.\"],[\"Extension triceps à la poulie\",\"tri\",2,\"12\",\"2011\",45,\"Coudes collés au corps, extension complète.\"],[\"Bird dog\",\"tra\",3,\"10/côté\",\"3010\",30,\"Gainage profond et"
+  },
+  "Relevés de jambes": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "légère, technique parfaite.\"],[\"Relevés de jambes allongée\",\"abs\",3,\"12\",\"2011\",45,\"Lombaires plaquées : si le bas du dos décolle, pliez davantage les genoux.\"],[\"Mountain climbers\",\"tra\",3,\"30 s\",\"—\",45,\"Gainage dynamique + dépense énergétique. Bassin bas, épaules au-dessus des poignets.\"]]},\"J5\":{\"nom\":\"🍑 Rappel fessiers + abdominaux (séance légère)\",\"muscles\":[\"fes\",\"moy\",\"tra\",\"abs\"],\"cardio\":{\"apres\":\""
+  },
+  "Relevés de jambes suspendu": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "[\"Step-up haut\",\"qua\",4,\"12-15\",\"2010\",75,\"\"],[\"Relevés de jambes suspendu\",\"abs\",4,\"8-10\",\"3020\",75,\"\"]]}}},\"5\":{\"titre\":\"Accumulation 3 — Giant sets\",\"type\":\"accumulation\",\"macro\":\"B · Développement\",\"mois\":\"S. 17–20\",\"schema\":\"10 / 10 / 10 / 10\",\"intensite\":\"74 %\",\"methode\":\"Giant sets (4 exercices du même muscle à la suite)\",\"objectif\":\"Début du 2e macrocycle : volume élevé, stress métabolique maximal, "
+  },
+  "Kickback à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "on du bassin, montée lente.\"],[\"Kickback à la poulie\",\"fes\",3,\"15/côté\",\"2011\",45,\"Grand fessier isolé : jambe légèrement fléchie, montée contrôlée sans cambrer le bas du dos.\"],[\"Dead bug\",\"tra\",2,\"10/côté\",\"3010\",45,\"Transverse : lombaires plaquées au sol en permanence. Si le bas du dos décolle, réduisez l'amplitude.\"],[\"Gainage planche\",\"abs\",2,\"30-40 s\",\"—\",45,\"Fessiers et abdominaux serrés, bassin neut"
+  },
+  "Tirage vertical prise large": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " pour les fessiers.\"},\"exos\":[[\"Tirage vertical prise large\",\"dos\",4,\"10-12\",\"2011\",90,\"Dos large et posture : coudes vers le bas et l'arrière.\"],[\"Rowing barre buste penché\",\"dos\",3,\"10-12\",\"2011\",90,\"Buste à 45°, pas d'élan avec les reins.\"],[\"Développé militaire haltères assis\",\"epA\",3,\"10-12\",\"2011\",75,\"\"],[\"Élévations latérales haltères\",\"epL\",4,\"12-15\",\"2011\",45,\"Épaules légèrement dessinées : reps él"
+  },
+  "Tractions prise large": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "8,8,6,6,4,4\",\"4010\",120,\"Charge croissante.\"],[\"Tractions prise large\",\"dos\",6,\"8,8,6,6,4,4\",\"4010\",120,\"\"],[\"Développé haltères incliné, pronation\",\"pec\",4,\"6-8\",\"4010\",90,\"\"],[\"Rowing barre EZ supination, buste penché\",\"dos\",4,\"6-8\",\"3011\",90,\"\"],[\"Extensions triceps barre EZ\",\"tri\",4,\"6-8\",\"4010\",75,\"\"],[\"Curl haltères incliné\",\"bic\",4,\"6-8\",\"4010\",75,\"\"]]},\"J4\":{\"nom\":\"Bas du corps 2\",\"muscles\":[\"qua\",\""
+  },
+  "Leg press": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "resse a cuisses\",1.35],[\"squat\",\"leg press\",1.2],[\"squat\",\"presse\",1.2],[\"latraise\",\"elevations lat\",1,true],[\"latraise\",\"lateral raise\",1,true],[\"latraise\",\"lateral\",1,true],[\"ohp\",\"lean away\",0.25,true],[\"ohp\",\"telle raise\",0.25,true],[\"ohp\",\"prone\",0.2,true],[\"ohp\",\"rear delt\",0.2,true],[\"ohp\",\"face pull\",0.18],[\"ohp\",\"wood chop\",0.25],[\"ohp\",\"militaire\",0.8,true],[\"ohp\",\"halteres assis\",0.45,true],[\"ohp"
+  },
+  "Leg press unilatéral": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "morning debout\",\"isc\",4,\"10-12\",\"3020\",90,\"\"],[\"Leg press unilatéral\",\"qua\",4,\"10-12\",\"3010\",90,\"\"],[\"Wood chop poulie haute\",\"abs\",3,\"10-12\",\"3010\",75,\"\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"epA\",\"tri\",\"bic\"],\"exos\":[[\"Développé couché barre plat\",\"pec\",6,\"5,5,7,7,9,9\",\"4010\",120,\"Charge maximale puis -5-6 % par palier.\"],[\"Tractions (pull-up)\",\"dos\",6,\"5,5,7,7,9,9\",\"4010\",120,\"\"],[\"Dév"
+  },
+  "Mollets à la presse": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": ",[\"Mollets debout\",\"mol\",5,\"6-8\",\"3011\",0,\"\"],[\"Mollets à la presse\",\"mol\",5,\"8-10\",\"3010\",90,\"\"]]},\"J3\":{\"nom\":\"Pectoraux & dos\",\"muscles\":[\"dos\",\"pec\",\"epP\"],\"exos\":[[\"Rowing barre EZ supination, buste penché\",\"dos\",5,\"6-8\",\"3011\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"8-10\",\"3010\",120,\"\"],[\"Développé haltères plat\",\"pec\",5,\"4-6\",\"3210\",0,\"\"],[\"Écartés câbles incliné\",\"pec\",5,\"8-10\",\"3010\",120,"
+  },
+  "Mollets unilatéraux": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "jambes incliné\",\"abs\",4,\"10-12\",\"3010\",90,\"\"],[\"Mollets unilatéraux\",\"mol\",4,\"10-12\",\"3210\",75,\"Tenir 2 s en position étirée.\"]]},\"J3\":{\"nom\":\"Haut du corps 2\",\"muscles\":[\"pec\",\"dos\",\"tri\",\"bic\"],\"exos\":[[\"Développé incliné barre\",\"pec\",5,\"5-7\",\"4210\",90,\"Pause de 2 s au menton.\"],[\"Tractions prise neutre (chin-up)\",\"dos\",5,\"5-7\",\"4210\",90,\"Pause de 2 s en bas. Alternative : tirage vertical neutre.\"],[\"Déve"
+  },
+  "Tirage vertical prise neutre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "t le surlendemain).\"},\"exos\":[[\"Tirage vertical prise neutre\",\"dos\",3,\"12-15\",\"2011\",75,\"Tirez avec les coudes vers le bas, omoplates basses et serrées. Posture : poitrine ouverte.\"],[\"Rowing haltère un bras\",\"dos\",3,\"12/côté\",\"2011\",60,\"Coude le long du corps, pas de rotation du bassin. Épaisseur du dos.\"],[\"Développé militaire haltères assis\",\"epA\",3,\"10-12\",\"2011\",75,\"Épaules dessinées : montez sans camb"
+  },
+  "Pallof press à la poulie": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "he\",\"abs\",2,\"45 s\",\"—\",45,\"\"],[\"Pallof press à la poulie\",\"tra\",2,\"12/côté\",\"2010\",45,\"\"]]},\"J2\":{\"nom\":\"💪 Haut du corps + ventre + cardio\",\"muscles\":[\"dos\",\"epL\",\"epA\",\"epP\",\"pec\",\"bic\",\"tri\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"elliptique\",\"duree\":22,\"detail\":\"Cardio modéré 62-70 % FCM, 20-25 min. Zone lipolyse : on puise dans les graisses sans stress pour les fessiers.\"},\"exos\":[[\"Tirage vertical prise large\""
+  },
+  "Soulevé de terre partiel, prise snatch": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "8,8,6,6,4,4\",\"4010\",180,\"Charge croissante.\"],[\"Soulevé de terre partiel, prise snatch\",\"isc\",5,\"6-8\",\"3210\",120,\"Pause complète de 2 s sur les barres de sécurité.\"],[\"Mollets unilatéraux\",\"mol\",4,\"12-15\",\"2011\",75,\"\"],[\"Jackknife sur swiss ball\",\"abs\",4,\"10-12\",\"3011\",75,\"\"]]}}},\"7\":{\"titre\":\"Accumulation 4 — Supersets agonistes\",\"type\":\"accumulation\",\"macro\":\"B · Développement\",\"mois\":\"S. 25–28\",\"schema\":"
+  },
+  "Soulevé de terre partiel": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "8,8,6,6,4,4\",\"4010\",180,\"Charge croissante.\"],[\"Soulevé de terre partiel, prise snatch\",\"isc\",5,\"6-8\",\"3210\",120,\"Pause complète de 2 s sur les barres de sécurité.\"],[\"Mollets unilatéraux\",\"mol\",4,\"12-15\",\"2011\",75,\"\"],[\"Jackknife sur swiss ball\",\"abs\",4,\"10-12\",\"3011\",75,\"\"]]}}},\"7\":{\"titre\":\"Accumulation 4 — Supersets agonistes\",\"type\":\"accumulation\",\"macro\":\"B · Développement\",\"mois\":\"S. 25–28\",\"schema\":"
+  },
+  "Pompes": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "errées en fin de mouvement.\"],[\"Pompes inclinées (mains surélevées)\",\"pec\",3,\"8-12\",\"2010\",60,\"Corps gainé, coudes à 45°. Descendez jusqu'à sentir l'étirement.\"],[\"Curl haltères\",\"bic\",2,\"12\",\"2011\",45,\"Coudes fixes le long du corps, pas d'élan.\"],[\"Extension triceps à la poulie\",\"tri\",2,\"12\",\"2011\",45,\"Coudes collés au corps, extension complète.\"],[\"Bird dog\",\"tra\",3,\"10/côté\",\"3010\",30,\"Gainage profond et"
+  },
+  "Tirage vertical prise pronation": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "s, prise neutre\",\"dos\",5,\"10-12\",\"3010\",0,\"\"],[\"Tirage vertical prise pronation\",\"dos\",5,\"12-15\",\"3010\",120,\"\"],[\"Relevés de jambes allongé\",\"abs\",4,\"10-12\",\"3010\",60,\"\"],[\"Crunch sur swiss ball\",\"abs\",3,\"15-20\",\"2012\",60,\"Tenir 2 s en position contractée.\"]]}}},\"2\":{\"titre\":\"Intensification 1 — Pauses isométriques\",\"type\":\"intensification\",\"macro\":\"A · Fondations\",\"mois\":\"S. 5–8\",\"schema\":\"5-7\",\"intensite\""
+  },
+  "Tractions (pull-up)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "de 2 s au menton, sans relâcher la tension.\"],[\"Tractions (pull-up)\",\"dos\",5,\"5-7\",\"4210\",90,\"Pause de 2 s en bas. Alternative : tirage vertical.\"],[\"Développé haltères incliné 30°\",\"pec\",4,\"8-10\",\"4010\",90,\"\"],[\"Rowing haltère un bras\",\"dos\",4,\"8-10\",\"4010\",90,\"\"],[\"French press barre EZ\",\"tri\",4,\"8-10\",\"4010\",75,\"\"],[\"Curl marteau assis\",\"bic\",4,\"8-10\",\"4010\",75,\"\"]]},\"J2\":{\"nom\":\"Bas du corps 1\",\"muscles"
+  },
+  "Ab wheel (roulette)": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "ts unilatéraux\",\"mol\",4,\"10-12\",\"3020\",75,\"\"],[\"Ab wheel (roulette)\",\"abs\",4,\"10-12\",\"3020\",75,\"\"]]}}},\"9\":{\"titre\":\"Accumulation 5 — Pyramide large\",\"type\":\"accumulation\",\"macro\":\"C · Perfectionnement\",\"mois\":\"S. 33–36\",\"schema\":\"11, 9, 7, 7, 9, 11\",\"intensite\":\"76 %\",\"methode\":\"Pyramide large (12,10,8,15 avec back-off set)\",\"objectif\":\"3e macrocycle : nouveau volume élevé, reconnexion métabolique, prépara"
+  },
+  "Soulevé de terre roumain unilatéral": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": " nombre de reps de l'autre.\"],[\"Soulevé de terre roumain unilatéral haltère\",\"isc\",3,\"10/côté\",\"3011\",60,\"Ischios + moyen fessier + équilibre. Jambe d'appui légèrement fléchie.\"],[\"Fentes arrière alternées\",\"fes\",3,\"10/jambe\",\"3010\",75,\"Pas long et buste penché en avant = fessiers. Pas court et buste droit = quadriceps.\"],[\"Step-up sur banc (hauteur du genou)\",\"qua\",3,\"10/jambe\",\"2011\",60,\"Poussez avec le t"
+  },
+  "Soulevé de terre": {
+   "trouve": true,
+   "surface": "musculation",
+   "extrait": "a technique de hip thrust et de soulevé de terre roumain, installer le gainage profond. Aucune recherche de charge.\",\"schema\":\"12-15\",\"int\":\"60-68 %\",\"meth\":\"Activation fessiers + tempo lent + amplitude complète\"},{\"m\":2,\"cy\":\"P1\",\"t\":\"Adaptation 2 — Amplitude & contrôle\",\"obj\":\"Améliorer l'amplitude de hanche et la qualité de contraction, ajouter une série sur les exercices principaux, consolider la sangle"
+  },
+  "Aqua-jogging sur place": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "he aquatique\",180],[\"Tour 1/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\","
+  },
+  "Mobilité épaules aquatique": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "tout.\",\"steps\":[[\"Nage douce sur place\",300],[\"Mobilité épaules aquatique\",120],[\"Mobilité hanches / chevilles\",120],[\"Étirements au bord\",120]]},{\"n\":\"COMPLÈTE 18 MIN\",\"conseil\":\"Notre protocole standard de récupération.\",\"steps\":[[\"Nage douce sur place\",360],[\"Mobilité épaules aquatique\",180],[\"Mobilité hanches / chevilles\",180],[\"Nage douce + respiration\",180],[\"Étirements au bord\",120]]},{\"n\":\"TOTALE 25"
+  },
+  "Marche aquatique": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "rd\",120],[\"Nage statique douce\",240],[\"Récup — marche aquatique\",60],[\"Nage statique douce\",240],[\"Retour au calme + respiration\",120]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"Deux blocs Z2. Focus glisse et respiration régulière (tous les 3 temps si crawl).\",\"steps\":[[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\"Récup — marche aquatique\",90],[\"Nage statique Z2\",420],[\"Retour au calme — nag"
+  },
+  "Battements au bord": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "nd aquatique : nage statique à l'élastique (ou battements au bord) en zone facile. Idéal en récupération active.\",\"niveaux\":[{\"n\":\"BEGINNER\",\"conseil\":\"Allure facile : vous pouvez parler. Élastique souple ou battements amples au bord.\",\"steps\":[[\"Échauffement — battements au bord\",120],[\"Nage statique douce\",240],[\"Récup — marche aquatique\",60],[\"Nage statique douce\",240],[\"Retour au calme + respiration\",12"
+  },
+  "Ciseaux au bord": {
+   "trouve": true,
+   "surface": "tabata-aqua",
+   "extrait": "Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\""
+  },
+  "Étirements au bord": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "e\",120],[\"Mobilité hanches / chevilles\",120],[\"Étirements au bord\",120]]},{\"n\":\"COMPLÈTE 18 MIN\",\"conseil\":\"Notre protocole standard de récupération.\",\"steps\":[[\"Nage douce sur place\",360],[\"Mobilité épaules aquatique\",180],[\"Mobilité hanches / chevilles\",180],[\"Nage douce + respiration\",180],[\"Étirements au bord\",120]]},{\"n\":\"TOTALE 25 MIN\",\"conseil\":\"Version longue pour semaines chargées.\",\"steps\":[[\"Nage"
+  },
+  "Gainage au bord (vertical)": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": " une partie du poids.\"]},{\"k\":[\"gainage\"],\"t\":\"Gainage au bord (vertical)\",\"img\":\"/media/f1dde35bd517f24b.gif\",\"h\":[\"Face au bord, eau à hauteur de poitrine\",\"<b>Mains sur la margelle</b>, bras tendus\",\"Jambes tendues vers le fond, <b>abdos + fessiers contractés</b>\",\"💡 Tenez sans bouger, dos droit, respiration régulière.\"]},{\"k\":[\"mobilite epaules\"],\"t\":\"Mobilité épaules aquatique\",\"img\":\"/media/b2b32833d7"
+  },
+  "Pompes au bord": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "ts latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Rep"
+  },
+  "Retour au calme": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": " min d'échauffement et 3 min de retour au calme.\"},\"exos\":[[\"Hip thrust barre\",\"fes\",3,\"10-12\",\"3112\",90,\"Rappel fessier : même technique que J1, charge confortable, focus sur la contraction.\"],[\"Soulevé de terre roumain haltères\",\"isc\",3,\"10\",\"3011\",90,\"Chaîne postérieure complète.\"],[\"Développé couché haltères\",\"pec\",3,\"10-12\",\"2011\",75,\"Coudes à 45°, descente contrôlée.\"],[\"Tirage horizontal à la poulie\""
+  },
+  "Mobilité hanches / chevilles": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "ace\",300],[\"Mobilité épaules aquatique\",120],[\"Mobilité hanches / chevilles\",120],[\"Étirements au bord\",120]]},{\"n\":\"COMPLÈTE 18 MIN\",\"conseil\":\"Notre protocole standard de récupération.\",\"steps\":[[\"Nage douce sur place\",360],[\"Mobilité épaules aquatique\",180],[\"Mobilité hanches / chevilles\",180],[\"Nage douce + respiration\",180],[\"Étirements au bord\",120]]},{\"n\":\"TOTALE 25 MIN\",\"conseil\":\"Version longue pou"
+  },
+  "Récup complète — souffler": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "x — nage douce\",180],[\"Nager sprint 1/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 2/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 3/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 4/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 5/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 6/8\",15],[\"Récup complète — souffler au bord\",45]"
+  },
+  "Déplacements latéraux (4 m)": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": ",[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Retour au calme — nage dou"
+  },
+  "Nage douce": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "opre jusqu'au bout.\",\"steps\":[[\"Échauffement — nage douce\",180],[\"Nage statique Z2\",600],[\"Récup active — marche aquatique\",90],[\"Nage statique Z2/Z3\",600],[\"Nage douce\",120],[\"Retour au calme + mobilité\",240]]}]},{\"id\":\"interval\",\"ic\":\"⚡\",\"nom\":\"Swim Interval\",\"desc\":\"Intervalles soutenus / récupération. Le format roi du petit bassin : intensité sans longueurs.\",\"niveaux\":[{\"n\":\"BEGINNER\",\"conseil\":\"6 répé"
+  },
+  "Nage statique (à l'élastique)": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "ide et tonique.\"]},{\"k\":[\"nage statique\"],\"t\":\"Nage statique (à l'élastique)\",\"h\":[\"Élastique accroché au bord, <b>ceinture autour de la taille</b>\",\"<b>Nagez sur place</b> (crawl de préférence) contre la résistance\",\"Sans élastique : <b>battements amples au bord</b>\",\"💡 Allure facile : vous devez pouvoir parler.\"]},{\"k\":[\"nage douce\"],\"t\":\"Nage douce\",\"h\":[\"<b>Nagez lentement</b> sur place ou en petits all"
+  },
+  "Récup entre tabatas": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFF"
+  },
+  "Talons-fesses": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT"
+  },
+  "Sprint — nager à fond": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "ropre que la première.\"]},{\"k\":[\"sprint\"],\"t\":\"Sprint — nager à fond\",\"h\":[\"<b>Nagez à fond</b> pendant les secondes indiquées\",\"Corps <b>gainé</b>, battements explosifs\",\"Récup <b>complète</b> entre chaque sprint (soufflez au bord)\",\"💡 Qualité > quantité : 8 sprints propres plutôt que 12 bâclés.\"]},{\"k\":[\"souffler\"],\"t\":\"Récup complète — souffler\",\"h\":[\"<b>Arrêtez-vous au bord</b>, mains sur la margelle\",\""
+  },
+  "Fractionné — nager": {
+   "trouve": true,
+   "surface": "piscine",
+   "extrait": "plus ça travaille.\"]},{\"k\":[\"fractionne\"],\"t\":\"Fractionné — nager\",\"h\":[\"<b>Nagez à allure soutenue</b> (statique ou petits allers-retours)\",\"Intensité : <b>ça doit piquer</b> mais rester propre techniquement\",\"Puis récup en marchant comme indiqué\",\"💡 La dernière répétition doit être aussi propre que la première.\"]},{\"k\":[\"sprint\"],\"t\":\"Sprint — nager à fond\",\"h\":[\"<b>Nagez à fond</b> pendant les secondes i"
+  },
+  "Montées de genoux": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Re"
+  },
+  "Récup active — marche aquatique": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": " — nage douce\",180],[\"Nage statique Z2\",600],[\"Récup active — marche aquatique\",90],[\"Nage statique Z2/Z3\",600],[\"Nage douce\",120],[\"Retour au calme + mobilité\",240]]}]},{\"id\":\"interval\",\"ic\":\"⚡\",\"nom\":\"Swim Interval\",\"desc\":\"Intervalles soutenus / récupération. Le format roi du petit bassin : intensité sans longueurs.\",\"niveaux\":[{\"n\":\"BEGINNER\",\"conseil\":\"6 répétitions. Allure « soutenue mais propre », ré"
+  },
+  "Aqua-jogging — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": " aquatique\",120],[\"Tabata 1/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Re"
+  },
+  "Échauffement — marche aquatique": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "mplète, appuis dynamiques au fond.\",\"steps\":[[\"Échauffement — marche aquatique\",180],[\"Tour 1/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de"
+  },
+  "Récup — marche aquatique": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "ts au bord\",120],[\"Nage statique douce\",240],[\"Récup — marche aquatique\",60],[\"Nage statique douce\",240],[\"Retour au calme + respiration\",120]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"Deux blocs Z2. Focus glisse et respiration régulière (tous les 3 temps si crawl).\",\"steps\":[[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\"Récup — marche aquatique\",90],[\"Nage statique Z2\",420],[\"Retour au cal"
+  },
+  "Échauffement — battements au bord": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "uple ou battements amples au bord.\",\"steps\":[[\"Échauffement — battements au bord\",120],[\"Nage statique douce\",240],[\"Récup — marche aquatique\",60],[\"Nage statique douce\",240],[\"Retour au calme + respiration\",120]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"Deux blocs Z2. Focus glisse et respiration régulière (tous les 3 temps si crawl).\",\"steps\":[[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\""
+  },
+  "Échauffement — battements + mobilité": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "lière (tous les 3 temps si crawl).\",\"steps\":[[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\"Récup — marche aquatique\",90],[\"Nage statique Z2\",420],[\"Retour au calme — nage très douce\",180]]},{\"n\":\"ADVANCED\",\"conseil\":\"Gros volume Z2/Z3. Gardez la technique propre jusqu'au bout.\",\"steps\":[[\"Échauffement — nage douce\",180],[\"Nage statique Z2\",600],[\"Récup active — marche aquatique\",90"
+  },
+  "Battements de jambes — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFOR"
+  },
+  "Ciseaux au bord — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\""
+  },
+  "Ciseaux — mains au bord": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "s\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",4"
+  },
+  "Récup complète — souffler au bord": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "x — nage douce\",180],[\"Nager sprint 1/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 2/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 3/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 4/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 5/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 6/8\",15],[\"Récup complète — souffler au bord\",45]"
+  },
+  "Pompes au bord — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "ts latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Rep"
+  },
+  "Gainage vertical au bord": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "éplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Retour au calme — nage douce\",180]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"3 tour"
+  },
+  "Retour au calme — nage douce": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Retour au calme — nage douce\",180]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"3 tours. Gardez le rythme sur les déplacements latéraux.\",\"steps\":[[\"Échauffement — marche aquatique\",180],[\"Tour 1/3 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\""
+  },
+  "Retour au calme — nage très douce": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "rche aquatique\",90],[\"Nage statique Z2\",420],[\"Retour au calme — nage très douce\",180]]},{\"n\":\"ADVANCED\",\"conseil\":\"Gros volume Z2/Z3. Gardez la technique propre jusqu'au bout.\",\"steps\":[[\"Échauffement — nage douce\",180],[\"Nage statique Z2\",600],[\"Récup active — marche aquatique\",90],[\"Nage statique Z2/Z3\",600],[\"Nage douce\",120],[\"Retour au calme + mobilité\",240]]}]},{\"id\":\"interval\",\"ic\":\"⚡\",\"nom\":\"Swim I"
+  },
+  "Retour au calme + mobilité": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "Nage statique Z2/Z3\",600],[\"Nage douce\",120],[\"Retour au calme + mobilité\",240]]}]},{\"id\":\"interval\",\"ic\":\"⚡\",\"nom\":\"Swim Interval\",\"desc\":\"Intervalles soutenus / récupération. Le format roi du petit bassin : intensité sans longueurs.\",\"niveaux\":[{\"n\":\"BEGINNER\",\"conseil\":\"6 répétitions. Allure « soutenue mais propre », récup complète en marchant.\",\"steps\":[[\"Échauffement — nage douce\",180],[\"Nager — fracti"
+  },
+  "Retour au calme + respiration": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "e aquatique\",60],[\"Nage statique douce\",240],[\"Retour au calme + respiration\",120]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"Deux blocs Z2. Focus glisse et respiration régulière (tous les 3 temps si crawl).\",\"steps\":[[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\"Récup — marche aquatique\",90],[\"Nage statique Z2\",420],[\"Retour au calme — nage très douce\",180]]},{\"n\":\"ADVANCED\",\"conseil\":\"Gros"
+  },
+  "Récup courte — marche": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "e douce\",240],[\"Nager — fractionné 1/10\",60],[\"Récup courte — marche\",30],[\"Nager — fractionné 2/10\",60],[\"Récup courte — marche\",30],[\"Nager — fractionné 3/10\",60],[\"Récup courte — marche\",30],[\"Nager — fractionné 4/10\",60],[\"Récup courte — marche\",30],[\"Nager — fractionné 5/10\",60],[\"Récup courte — marche\",30],[\"Nager — fractionné 6/10\",60],[\"Récup courte — marche\",30],[\"Nager — fractionné 7/10\",60],[\"Réc"
+  },
+  "Déplacements latéraux (4 m) — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "tements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20"
+  },
+  "Échauffement — nage douce": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "la technique propre jusqu'au bout.\",\"steps\":[[\"Échauffement — nage douce\",180],[\"Nage statique Z2\",600],[\"Récup active — marche aquatique\",90],[\"Nage statique Z2/Z3\",600],[\"Nage douce\",120],[\"Retour au calme + mobilité\",240]]}]},{\"id\":\"interval\",\"ic\":\"⚡\",\"nom\":\"Swim Interval\",\"desc\":\"Intervalles soutenus / récupération. Le format roi du petit bassin : intensité sans longueurs.\",\"niveaux\":[{\"n\":\"BEGINNER\",\"c"
+  },
+  "Échauffement soigneux — nage douce": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "ainé, récup complète entre chacun.\",\"steps\":[[\"Échauffement soigneux — nage douce\",180],[\"Nager sprint 1/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 2/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 3/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 4/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 5/8\",15],[\"Récup complète — souffler au bord\",4"
+  },
+  "Nage douce + respiration": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "e\",180],[\"Mobilité hanches / chevilles\",180],[\"Nage douce + respiration\",180],[\"Étirements au bord\",120]]},{\"n\":\"TOTALE 25 MIN\",\"conseil\":\"Version longue pour semaines chargées.\",\"steps\":[[\"Nage douce sur place\",480],[\"Mobilité épaules aquatique\",240],[\"Mobilité hanches / chevilles\",240],[\"Nage douce + respiration\",300],[\"Étirements au bord\",240]]}]},{\"id\":\"aquatabata\",\"ic\":\"🔥\",\"nom\":\"Aqua Tabata\",\"desc\":\"T"
+  },
+  "Nage statique douce": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "\":[[\"Échauffement — battements au bord\",120],[\"Nage statique douce\",240],[\"Récup — marche aquatique\",60],[\"Nage statique douce\",240],[\"Retour au calme + respiration\",120]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"Deux blocs Z2. Focus glisse et respiration régulière (tous les 3 temps si crawl).\",\"steps\":[[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\"Récup — marche aquatique\",90],[\"Nage stati"
+  },
+  "Talons-fesses — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT"
+  },
+  "Gainage vertical — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": ",[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFO"
+  },
+  "Montées de genoux — EFFORT": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tab"
+  },
+  "Nager — fractionné 1/6": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "\",\"steps\":[[\"Échauffement — nage douce\",180],[\"Nager — fractionné 1/6\",30],[\"Récup — marche\",60],[\"Nager — fractionné 2/6\",30],[\"Récup — marche\",60],[\"Nager — fractionné 3/6\",30],[\"Récup — marche\",60],[\"Nager — fractionné 4/6\",30],[\"Récup — marche\",60],[\"Nager — fractionné 5/6\",30],[\"Récup — marche\",60],[\"Nager — fractionné 6/6\",30],[\"Récup — marche\",60],[\"Retour au calme — nage très douce\",180]]},{\"n\":\"INT"
+  },
+  "Récup — marche": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "ts au bord\",120],[\"Nage statique douce\",240],[\"Récup — marche aquatique\",60],[\"Nage statique douce\",240],[\"Retour au calme + respiration\",120]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"Deux blocs Z2. Focus glisse et respiration régulière (tous les 3 temps si crawl).\",\"steps\":[[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\"Récup — marche aquatique\",90],[\"Nage statique Z2\",420],[\"Retour au cal"
+  },
+  "Nage statique Z2": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "[\"Échauffement — battements + mobilité\",180],[\"Nage statique Z2\",420],[\"Récup — marche aquatique\",90],[\"Nage statique Z2\",420],[\"Retour au calme — nage très douce\",180]]},{\"n\":\"ADVANCED\",\"conseil\":\"Gros volume Z2/Z3. Gardez la technique propre jusqu'au bout.\",\"steps\":[[\"Échauffement — nage douce\",180],[\"Nage statique Z2\",600],[\"Récup active — marche aquatique\",90],[\"Nage statique Z2/Z3\",600],[\"Nage douce\",1"
+  },
+  "Nager sprint 1/8": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": ":[[\"Échauffement soigneux — nage douce\",180],[\"Nager sprint 1/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 2/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 3/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 4/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 5/8\",15],[\"Récup complète — souffler au bord\",45],[\"Nager sprint 6/8\",15],[\"Récup complète"
+  },
+  "Repos": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "er:!0}),rest:xe(i.rest,0,3600,\"Repos\"),name:String(i.name||\"Activité\").slice(0,150),note:String(i.note||\"\").slice(0,1500)}}function lg(i){jl(i.date);const o={};for(const[c,u]of Object.entries(i.values||{})){const p=xe(u,1,300,\"Mensuration\");p!=null&&(o[c]=p)}const n=xe(i.weight,25,350,\"Poids\"),l=xe(i.bodyFat,1,70,\"Masse grasse\");if(n==null&&l==null&&!Object.keys(o).length)throw new Error(\"Ajoutez au moins u"
+  },
+  "Tabata 1/2 — en place": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "ps\":[[\"Échauffement — marche aquatique\",120],[\"Tabata 1/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFORT\",20],[\"Repos\",10],[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talo"
+  },
+  "Tour 1/2 — en place": {
+   "trouve": true,
+   "surface": "piscine-protocole",
+   "extrait": "ps\":[[\"Échauffement — marche aquatique\",180],[\"Tour 1/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — ma"
+  },
+  "Aqua-jogging": {
+   "trouve": true,
+   "surface": "tabata-aqua",
+   "extrait": "he aquatique\",180],[\"Tour 1/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\","
+  },
+  "Battements de jambes": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "[\"Ciseaux au bord — EFFORT\",20],[\"Repos\",10],[\"Battements de jambes — EFFORT\",20],[\"Repos\",10],[\"Déplacements latéraux (4 m) — EFFORT\",20],[\"Repos\",10],[\"Pompes au bord — EFFORT\",20],[\"Repos\",10],[\"Gainage vertical — EFFORT\",20],[\"Repos\",10],[\"Talons-fesses — EFFORT\",20],[\"Repos\",10],[\"Récup entre tabatas\",120],[\"Tabata 2/2 — en place\",5],[\"Aqua-jogging — EFFORT\",20],[\"Repos\",10],[\"Montées de genoux — EFFOR"
+  },
+  "Déplacements latéraux": {
+   "trouve": true,
+   "surface": "tabata-aqua",
+   "extrait": ",[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Retour au calme — nage dou"
+  },
+  "Gainage vertical": {
+   "trouve": true,
+   "surface": "tabata-aqua",
+   "extrait": "éplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Tour 2/2 — en place\",5],[\"Aqua-jogging sur place\",40],[\"Repos\",20],[\"Montées de genoux\",40],[\"Repos\",20],[\"Ciseaux — mains au bord\",40],[\"Repos\",20],[\"Déplacements latéraux (4 m)\",40],[\"Repos\",20],[\"Gainage vertical au bord\",40],[\"Repos\",20],[\"Retour au calme — nage douce\",180]]},{\"n\":\"INTERMEDIATE\",\"conseil\":\"3 tour"
+  },
+  "Repos actif": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": ":\"30 min de piscine libre ou de repos actif (marche 30-40 min).\"},\"exos\":[[\"Glute bridge pieds sur banc\",\"fes\",4,\"15\",\"2012\",60,\"\"],[\"Abduction hanche à l'élastique\",\"moy\",3,\"20/côté\",\"2011\",45,\"\"],[\"Kickback à l'élastique\",\"fes\",3,\"15/côté\",\"2011\",45,\"\"],[\"Dead bug\",\"tra\",2,\"12/côté\",\"3010\",45,\"\"],[\"Pallof press à l'élastique\",\"tra\",2,\"12/côté\",\"2010\",45,\"\"],[\"Gainage planche\",\"abs\",3,\"45 s\",\"—\",45,\"\"]]}}}"
+  },
+  "Fentes alternées": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "🔥\",\"exos\":[\"Jumping jacks\",\"Squats\",\"Pompes\",\"Mountain climbers\",\"Fentes alternées\",\"Gainage planche\",\"Burpees simplifiés\",\"Relevés de jambes\"]},{\"id\":\"upper\",\"nom\":\"Upper\",\"ic\":\"💪\",\"exos\":[\"Pompes\",\"Dips au bord\",\"Gainage planche\",\"Pompes inclinées\",\"Superman\",\"Mountain climbers\",\"Planche latérale G\",\"Planche latérale D\"]},{\"id\":\"lower\",\"nom\":\"Lower\",\"ic\":\"🦵\",\"exos\":[\"Squats\",\"Fentes alternées\",\"Ponts fess"
+  },
+  "Fentes arrière": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "d'appui légèrement fléchie.\"],[\"Fentes arrière alternées\",\"fes\",3,\"10/jambe\",\"3010\",75,\"Pas long et buste penché en avant = fessiers. Pas court et buste droit = quadriceps.\"],[\"Step-up sur banc (hauteur du genou)\",\"qua\",3,\"10/jambe\",\"2011\",60,\"Poussez avec le talon du pied sur le banc, ne vous aidez pas de la jambe au sol.\"],[\"Abduction assise (machine ou élastique)\",\"moy\",3,\"20\",\"2011\",40,\"Séries longues :"
+  },
+  "Dips au bord": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": " jambes\"]},{\"id\":\"upper\",\"nom\":\"Upper\",\"ic\":\"💪\",\"exos\":[\"Pompes\",\"Dips au bord\",\"Gainage planche\",\"Pompes inclinées\",\"Superman\",\"Mountain climbers\",\"Planche latérale G\",\"Planche latérale D\"]},{\"id\":\"lower\",\"nom\":\"Lower\",\"ic\":\"🦵\",\"exos\":[\"Squats\",\"Fentes alternées\",\"Ponts fessiers\",\"Squats sumo\",\"Montées sur mollets\",\"Fentes arrière\",\"Chaise au mur\",\"Battements de jambes\"]},{\"id\":\"core\",\"nom\":\"Core\",\"ic\":\"🧱\""
+  },
+  "Burpees": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "Pompes\",\"Mountain climbers\",\"Fentes alternées\",\"Gainage planche\",\"Burpees simplifiés\",\"Relevés de jambes\"]},{\"id\":\"upper\",\"nom\":\"Upper\",\"ic\":\"💪\",\"exos\":[\"Pompes\",\"Dips au bord\",\"Gainage planche\",\"Pompes inclinées\",\"Superman\",\"Mountain climbers\",\"Planche latérale G\",\"Planche latérale D\"]},{\"id\":\"lower\",\"nom\":\"Lower\",\"ic\":\"🦵\",\"exos\":[\"Squats\",\"Fentes alternées\",\"Ponts fessiers\",\"Squats sumo\",\"Montées sur moll"
+  },
+  "Burpees simplifiés": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "Pompes\",\"Mountain climbers\",\"Fentes alternées\",\"Gainage planche\",\"Burpees simplifiés\",\"Relevés de jambes\"]},{\"id\":\"upper\",\"nom\":\"Upper\",\"ic\":\"💪\",\"exos\":[\"Pompes\",\"Dips au bord\",\"Gainage planche\",\"Pompes inclinées\",\"Superman\",\"Mountain climbers\",\"Planche latérale G\",\"Planche latérale D\"]},{\"id\":\"lower\",\"nom\":\"Lower\",\"ic\":\"🦵\",\"exos\":[\"Squats\",\"Fentes alternées\",\"Ponts fessiers\",\"Squats sumo\",\"Montées sur moll"
+  },
+  "Chaise douce": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "e\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inter\",\"nom\":\"Intervalles\",\"ic\":\"⚡\",\"desc\":\"1 min soutenu / 1 min facile\"},{\"id\":\"hiit\",\"nom\":\"HIIT\",\"ic\":\"🔥\",\"desc\":\"30 s fort / 30 s facile\"},{\"id\":\"recup\",\"nom\":\"Récup active\",\"ic\":\"🌿\",\"d"
+  },
+  "Chaise au mur": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "s fessiers\",\"Squats sumo\",\"Montées sur mollets\",\"Fentes arrière\",\"Chaise au mur\",\"Battements de jambes\"]},{\"id\":\"core\",\"nom\":\"Core\",\"ic\":\"🧱\",\"exos\":[\"Crunch\",\"Relevés de jambes\",\"Gainage planche\",\"Russian twist\",\"Planche\",\"Mountain climbers lents\",\"Dead bug\",\"Superman\"]},{\"id\":\"cardio\",\"nom\":\"Cardio\",\"ic\":\"🫀\",\"exos\":[\"Jumping jacks\",\"Montées de genoux\",\"Burpees\",\"Corde invisible\",\"Patineurs\",\"High knees\",\"S"
+  },
+  "Oiseau-chien": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inter\",\"nom\":\"Intervalles\",\"ic\":\"⚡\",\"desc\":\"1 min soutenu / 1 min facile\"},{\"id\":\"hiit\",\"nom\":\"HIIT\",\"ic\":\"🔥\",\"desc\":\"30 s fort / 30 s facile\"},{\"id\":\"recup\",\"nom\":\"Récup acti"
+  },
+  "Mountain climbers lents": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": ",\"Relevés de jambes\",\"Gainage planche\",\"Russian twist\",\"Planche\",\"Mountain climbers lents\",\"Dead bug\",\"Superman\"]},{\"id\":\"cardio\",\"nom\":\"Cardio\",\"ic\":\"🫀\",\"exos\":[\"Jumping jacks\",\"Montées de genoux\",\"Burpees\",\"Corde invisible\",\"Patineurs\",\"High knees\",\"Squats sautés\",\"Repos actif\"]},{\"id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien"
+  },
+  "Corde invisible": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "\",\"ic\":\"🫀\",\"exos\":[\"Jumping jacks\",\"Montées de genoux\",\"Burpees\",\"Corde invisible\",\"Patineurs\",\"High knees\",\"Squats sautés\",\"Repos actif\"]},{\"id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler poss"
+  },
+  "Crunch": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "ile, bras et jambe alignés.\"],[\"Crunch à la poulie (ou au sol)\",\"abs\",3,\"15\",\"2011\",45,\"Enroulement de la colonne, pas de traction sur la nuque.\"]]},\"J3\":{\"nom\":\"🍑 Fessiers + jambes\",\"muscles\":[\"fes\",\"moy\",\"qua\",\"isc\",\"mol\",\"abs\",\"tra\"],\"cardio\":{\"apres\":\"piscine\",\"duree\":20,\"detail\":\"Option idéale : 20 min de nage souple ou d'aquagym. Zéro impact, drainage des jambes, récupération active.\"},\"exos\":[[\"Goble"
+  },
+  "Squats doux": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inter\",\"nom\":\"Intervalles\",\"ic\":\"⚡\",\"desc\":\"1 min soutenu / 1 min facile\"},{\"id\":\"hiit\",\"nom\":\"HIIT\",\"ic\":\"🔥\",\"desc\":\"30 s fort "
+  },
+  "Ponts fessiers": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "nce fessiers (2-3 min) :\\ • 2×12 ponts fessiers au sol avec 2 s de contraction en haut\\ • 2×15 clamshells à l'élastique (ou au sol) par côté\\ • 2×12 abductions de hanche debout par côté\\ • 2×10 kickbacks au poids du corps par côté\\ But : réveiller le grand fessier et le moyen fessier AVANT de charger. Sans activation, le corps compense avec les ischios, les lombaires et les quadriceps — et le galbe ne "
+  },
+  "High knees": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "cks\",\"Montées de genoux\",\"Burpees\",\"Corde invisible\",\"Patineurs\",\"High knees\",\"Squats sautés\",\"Repos actif\"]},{\"id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inter\",\"nom\":\"In"
+  },
+  "Pompes inclinées": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "errées en fin de mouvement.\"],[\"Pompes inclinées (mains surélevées)\",\"pec\",3,\"8-12\",\"2010\",60,\"Corps gainé, coudes à 45°. Descendez jusqu'à sentir l'étirement.\"],[\"Curl haltères\",\"bic\",2,\"12\",\"2011\",45,\"Coudes fixes le long du corps, pas d'élan.\"],[\"Extension triceps à la poulie\",\"tri\",2,\"12\",\"2011\",45,\"Coudes collés au corps, extension complète.\"],[\"Bird dog\",\"tra\",3,\"10/côté\",\"3010\",30,\"Gainage profond et"
+  },
+  "Jumping jacks": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": ",\"TABATA_MODES\":[{\"id\":\"full\",\"nom\":\"Full Body\",\"ic\":\"🔥\",\"exos\":[\"Jumping jacks\",\"Squats\",\"Pompes\",\"Mountain climbers\",\"Fentes alternées\",\"Gainage planche\",\"Burpees simplifiés\",\"Relevés de jambes\"]},{\"id\":\"upper\",\"nom\":\"Upper\",\"ic\":\"💪\",\"exos\":[\"Pompes\",\"Dips au bord\",\"Gainage planche\",\"Pompes inclinées\",\"Superman\",\"Mountain climbers\",\"Planche latérale G\",\"Planche latérale D\"]},{\"id\":\"lower\",\"nom\":\"Lower\",\"i"
+  },
+  "Planche latérale G": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "inage planche\",\"Pompes inclinées\",\"Superman\",\"Mountain climbers\",\"Planche latérale G\",\"Planche latérale D\"]},{\"id\":\"lower\",\"nom\":\"Lower\",\"ic\":\"🦵\",\"exos\":[\"Squats\",\"Fentes alternées\",\"Ponts fessiers\",\"Squats sumo\",\"Montées sur mollets\",\"Fentes arrière\",\"Chaise au mur\",\"Battements de jambes\"]},{\"id\":\"core\",\"nom\":\"Core\",\"ic\":\"🧱\",\"exos\":[\"Crunch\",\"Relevés de jambes\",\"Gainage planche\",\"Russian twist\",\"Planche\",\""
+  },
+  "Marche sur place": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": ",\"Repos actif\"]},{\"id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inter\",\"nom\":\"Intervalles\",\"ic\":\"⚡\",\"desc\":\"1 min soutenu / 1 min facile\"},{\"id\":\"hiit\",\"nom\":\"HIIT\",\"ic\":\"🔥\""
+  },
+  "Mollets": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "\"ic\":\"🦵\",\"prio\":4},\"mol\":{\"n\":\"Mollets\",\"zone\":[2,6],\"ic\":\"🦶\",\"prio\":4},\"epA\":{\"n\":\"Épaules antérieures\",\"zone\":[2,7],\"ic\":\"🟡\",\"prio\":4},\"bic\":{\"n\":\"Biceps\",\"zone\":[2,6],\"ic\":\"💪\",\"prio\":4},\"tri\":{\"n\":\"Triceps\",\"zone\":[2,6],\"ic\":\"💪\",\"prio\":4},\"lom\":{\"n\":\"Lombaires\",\"zone\":[0,6],\"ic\":\"🔙\",\"prio\":4},\"pec\":{\"n\":\"Pectoraux\",\"zone\":[3,8],\"ic\":\"🏋️\",\"prio\":5},\"add\":{\"n\":\"Adducteurs\",\"zone\":[0,4],\"ic\":\"🦵\",\"prio\":5},\""
+  },
+  "Montées sur mollets": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "xos\":[\"Squats\",\"Fentes alternées\",\"Ponts fessiers\",\"Squats sumo\",\"Montées sur mollets\",\"Fentes arrière\",\"Chaise au mur\",\"Battements de jambes\"]},{\"id\":\"core\",\"nom\":\"Core\",\"ic\":\"🧱\",\"exos\":[\"Crunch\",\"Relevés de jambes\",\"Gainage planche\",\"Russian twist\",\"Planche\",\"Mountain climbers lents\",\"Dead bug\",\"Superman\"]},{\"id\":\"cardio\",\"nom\":\"Cardio\",\"ic\":\"🫀\",\"exos\":[\"Jumping jacks\",\"Montées de genoux\",\"Burpees\",\"Corde"
+  },
+  "Pompes au mur": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inter\",\"nom\":\"Intervalles\",\"ic\":\"⚡\",\"desc\":\"1 min soutenu / 1 min facile\"},{\"id\":\"hiit\",\"nom\":\"HIIT\",\"ic\":\"🔥\",\"desc\":\"30 s fort / 30 s facile\""
+  },
+  "Patineurs": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "[\"Jumping jacks\",\"Montées de genoux\",\"Burpees\",\"Corde invisible\",\"Patineurs\",\"High knees\",\"Squats sautés\",\"Repos actif\"]},{\"id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inte"
+  },
+  "Planche": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "duisez l'amplitude.\"],[\"Gainage planche\",\"abs\",2,\"30-40 s\",\"—\",45,\"Fessiers et abdominaux serrés, bassin neutre. Respirez normalement.\"],[\"Pallof press à l'élastique\",\"tra\",2,\"12/côté\",\"2010\",45,\"Anti-rotation : stabilise la taille et affine visuellement le tour de taille.\"]]},\"J2\":{\"nom\":\"💪 Haut du corps + ventre + cardio\",\"muscles\":[\"dos\",\"epL\",\"epA\",\"epP\",\"pec\",\"bic\",\"tri\",\"abs\",\"tra\"],\"cardio\":{\"apres\":"
+  },
+  "Respiration profonde": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": " rebondir), 20-30 s par exercice, respiration profonde et lente. Étirez uniquement les muscles travaillés aujourd'hui, sans douleur vive.\"},\"ETIREMENTS_PAR_MUSCLE\":{\"pec\":{\"nom\":\"Pectoraux\",\"exos\":[[\"🚪\",\"Étirement dans l'encadrement de porte\",\"20-30 s\",\"Avant-bras à 90° contre le montant, fente légère vers l'avant jusqu'à sentir l'étirement dans la poitrine. Changez de côté.\"],[\"🧱\",\"Bras tendu contre le mur"
+  },
+  "Russian twist": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": ",\"ic\":\"🧱\",\"exos\":[\"Crunch\",\"Relevés de jambes\",\"Gainage planche\",\"Russian twist\",\"Planche\",\"Mountain climbers lents\",\"Dead bug\",\"Superman\"]},{\"id\":\"cardio\",\"nom\":\"Cardio\",\"ic\":\"🫀\",\"exos\":[\"Jumping jacks\",\"Montées de genoux\",\"Burpees\",\"Corde invisible\",\"Patineurs\",\"High knees\",\"Squats sautés\",\"Repos actif\"]},{\"id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Pon"
+  },
+  "Squats sautés": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": " de genoux\",\"Burpees\",\"Corde invisible\",\"Patineurs\",\"High knees\",\"Squats sautés\",\"Repos actif\"]},{\"id\":\"low\",\"nom\":\"Low Impact\",\"ic\":\"🌿\",\"exos\":[\"Marche sur place\",\"Squats doux\",\"Pompes au mur\",\"Ponts fessiers\",\"Oiseau-chien\",\"Chaise douce\",\"Mollets\",\"Respiration profonde\"]}],\"CARDIO_TYPES\":[{\"id\":\"endu\",\"nom\":\"Endurance\",\"ic\":\"🫀\",\"desc\":\"allure facile, parler possible\"},{\"id\":\"inter\",\"nom\":\"Intervalles\",\"i"
+  },
+  "Squats": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "e pas.\",\"ACTIVATION_JAMBES\":\"2×10 squats au poids du corps (lents) + 2×12 ponts fessiers avec contraction + 2×10 élévations mollets + 2×12 abductions de hanche. But : réveiller quadriceps, fessiers et mollets avant de charger.\",\"ACTIVATION_HAUT\":\"2×15 rotations externes des épaules avec élastique léger (ou 2×10 pompes faciles). But : stabiliser les épaules avant les poussées et tractions.\",\"ACTIVATION_BRAS\""
+  },
+  "Squats sumo": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "r\",\"ic\":\"🦵\",\"exos\":[\"Squats\",\"Fentes alternées\",\"Ponts fessiers\",\"Squats sumo\",\"Montées sur mollets\",\"Fentes arrière\",\"Chaise au mur\",\"Battements de jambes\"]},{\"id\":\"core\",\"nom\":\"Core\",\"ic\":\"🧱\",\"exos\":[\"Crunch\",\"Relevés de jambes\",\"Gainage planche\",\"Russian twist\",\"Planche\",\"Mountain climbers lents\",\"Dead bug\",\"Superman\"]},{\"id\":\"cardio\",\"nom\":\"Cardio\",\"ic\":\"🫀\",\"exos\":[\"Jumping jacks\",\"Montées de genoux\",\"B"
+  },
+  "Superman": {
+   "trouve": true,
+   "surface": "tabata-au-sol",
+   "extrait": "ell\",\"fire hydrant\",\"elastique\",\"superman\"],\"CHARGE_RULES\":[[\"rdl\",\"roumain unilateral\",0.35,true],[\"rdl\",\"roumain unilat\",0.35,true],[\"rdl\",\"unilateral haltere\",0.35,true],[\"row\",\"rowing haltere\",0.5,true],[\"row\",\"rowing un bras\",0.5,true],[\"bench\",\"developpe couche halteres\",0.45,true],[\"bench\",\"developpe couche halt\",0.45,true],[\"bench\",\"developpe incline halteres\",0.45,true],[\"bench\",\"developpe incline "
+  }
+ }
+}

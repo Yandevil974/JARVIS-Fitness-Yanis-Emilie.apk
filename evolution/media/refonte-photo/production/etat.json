@@ -1,5 +1,5 @@
 {
- "faits": [
+ "valides": [
   "abduction-assise-machine",
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",
@@ -10,7 +10,6 @@
   "bras-tendu-devant-main-tiree",
   "burpees",
   "cobra-doux",
-  "coude-au-dessus-de-la-tete",
   "crunch",
   "developpe-couche-barre",
   "developpe-militaire-debout",
@@ -48,7 +47,25 @@
   "tractions-pull-up",
   "transition"
  ],
+ "a_refaire": [
+  "coude-au-dessus-de-la-tete",
+  "etirement-des-extenseurs",
+  "grenouille-plantes-jointes",
+  "mollet-en-escalier",
+  "position-de-l-enfant"
+ ],
  "restants": [
+  {
+   "identifiant": "coude-au-dessus-de-la-tete",
+   "surface": "etirement",
+   "athlete": "homme",
+   "noms": [
+    "Coude au-dessus de la tête"
+   ],
+   "slugs": [
+    "coude-au-dessus-de-la-tete"
+   ]
+  },
   {
    "identifiant": "mains-croisees-derriere-le-dos",
    "surface": "etirement",
@@ -4035,11 +4052,12 @@
   }
  ],
  "chiffres": {
-  "faits": 47,
-  "restants": 292,
+  "valides": 46,
+  "a_refaire": 5,
   "total": 343,
+  "restants": 293,
   "par_surface": {
-   "etirement": 10,
+   "etirement": 11,
    "musculation": 189,
    "piscine": 19,
    "piscine-protocole": 41,
