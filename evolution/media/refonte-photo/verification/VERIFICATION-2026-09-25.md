@@ -574,3 +574,34 @@ pushdown-triceps-cable). Feuilles : `verification/lot43b.jpg`, `verification/lot
 Relecture cumulative : **258 couples valides relus**, **27 restent a relire**.
 **Aucune planche en attente** (a-refaire VIDE). Prochain lot 44 : 10 planches de
 protocoles piscine (féminines), puis aqua tabata (6).
+
+## 59. Lot 44 : protocoles piscine, 8 planches + 26 copies conformes (meme tour)
+
+Acceptees 8 (femme, bassin) : aqua-jogging-sur-place (genoux alternes, bras pompes),
+ciseaux-mains-au-bord (jambes en V -> croisees serrees), deplacements-lateraux-4-m
+(demi-squat tenu, pas chasses), montees-de-genoux-effort (genoux aux hanches, bras
+opposes), etirements-au-bord (triceps/epaule d'un cote puis de l'autre),
+mobilite-epaules-aquatique (bras devant -> balais arriere sous l'eau),
+mobilite-hanches-chevilles (genou 90 deg devant d'un cote puis de l'autre), repos
+(vertical relache au bord, 2 frames calmes).
+Refusee 1 : nage-douce (case 2 DEUX femmes, corps duplique) -> a-refaire, lot 45 avec
+ancre EXACTLY ONE woman. nage-douce-respiration : echec transitoire MAX_TOKENS puis
+plafond atteint : generee au lot 45.
+26 copies conformes de GIF deja valides pour les etapes de protocole au MEME geste que
+leur guide (l'app d'origine partageait deja ces medias) : recuperations marchees (5),
+retour-au-calme, variantes EFFORT (battements, ciseaux, deplacements, gainage, pompes,
+talons-fesses), echauffements (battements, battements+mobilite, marche), gainage vertical,
+nage statique douce/Z2, fractionne 1/6, sprint 1/8, tabata/tour en place, aqua-jogging
+EFFORT, recup complete au bord, retour-au-calme-respiration/mobilite.
+Notes style mesurees [0,0] : etirements-au-bord et repos (vert absent des deux cases) ;
+relecture-23 : releves-de-jambes-allong homme case 1 sans vert -> style-a-reprendre (25).
+Relecture batch 23 : 3/3 conformes (releves-de-jambes femme, homme, allonge homme).
+Feuilles : `verification/lot44f-01..03.jpg`, `verification/relecture-23.jpg`.
+
+## 60. Couverture et suite (etat lot 44)
+
+**319 / 331 couples valides**, 12 restants (protocoles piscine 6 de la famille
+« nage douce », aqua tabata 6). Relecture cumulative : **295 couples valides relus**,
+**24 restent a relire**. **1 planche en attente** : nage-douce (+ nage-douce-respiration
+a generer). Prochain lot 45 : nage-douce (ancre une seule femme), nage-douce-respiration,
+4 copies conformes depuis nage-douce, puis les 6 aqua tabata (plafond 10 generations).

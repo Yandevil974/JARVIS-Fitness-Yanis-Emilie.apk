@@ -221,6 +221,38 @@
    "cases_sans_vert": [
     0
    ]
+  },
+  {
+   "cle": "etirements-au-bord|femme",
+   "vert_px": [
+    0,
+    0
+   ],
+   "cases_sans_vert": [
+    0,
+    1
+   ]
+  },
+  {
+   "cle": "repos|femme",
+   "vert_px": [
+    0,
+    0
+   ],
+   "cases_sans_vert": [
+    0,
+    1
+   ]
+  },
+  {
+   "cle": "releves-de-jambes-allonge|homme",
+   "vert_px": [
+    661,
+    2857
+   ],
+   "cases_sans_vert": [
+    0
+   ]
   }
  ]
 }

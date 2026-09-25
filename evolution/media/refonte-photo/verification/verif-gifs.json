@@ -8119,6 +8119,1758 @@
    "vert_attendu": null,
    "mouvement_px": 0.2222,
    "myo_reps": false
+  },
+  {
+   "cle": "oiseau-chien|homme",
+   "fichier": "gif/homme/oiseau-chien-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Oiseau-chien"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    1762,
+    1760
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.52,
+    0.53
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.4957,
+   "myo_reps": false
+  },
+  {
+   "cle": "ponts-fessiers|homme",
+   "fichier": "gif/homme/ponts-fessiers-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    441,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Ponts fessiers"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    1741,
+    822
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.43,
+    0.4
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.2712,
+   "myo_reps": false
+  },
+  {
+   "cle": "repos-actif|homme",
+   "fichier": "gif/homme/repos-actif-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    427,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Repos actif"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    4007,
+    3560
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.67,
+    0.7
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.3785,
+   "myo_reps": false
+  },
+  {
+   "cle": "respiration-profonde|homme",
+   "fichier": "gif/homme/respiration-profonde-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    436,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Respiration profonde"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    1445,
+    1758
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.54,
+    0.59
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.2861,
+   "myo_reps": false
+  },
+  {
+   "cle": "squats-sumo|homme",
+   "fichier": "gif/homme/squats-sumo-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    430,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Squats sumo"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    420,
+    1715
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.54,
+    0.58
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.3163,
+   "myo_reps": false
+  },
+  {
+   "cle": "gainage-au-bord-vertical|femme",
+   "fichier": "gif/femme/gainage-au-bord-vertical-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    416,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Gainage au bord (vertical)"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2167,
+   "myo_reps": false
+  },
+  {
+   "cle": "pompes-au-bord|femme",
+   "fichier": "gif/femme/pompes-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    439,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pompes au bord"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.236,
+   "myo_reps": false
+  },
+  {
+   "cle": "squats-doux|homme",
+   "fichier": "gif/homme/squats-doux-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    422,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Squats doux"
+   ],
+   "surface": "tabata-au-sol",
+   "vert_px": [
+    1423,
+    2088
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.56,
+    0.59
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.4151,
+   "myo_reps": false
+  },
+  {
+   "cle": "battements-au-bord|femme",
+   "fichier": "gif/femme/battements-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    438,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Battements au bord"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    1673,
+    1626
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.57,
+    0.57
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1049,
+   "myo_reps": false
+  },
+  {
+   "cle": "marche-aquatique|femme",
+   "fichier": "gif/femme/marche-aquatique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Marche aquatique"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "fractionne-nager|femme",
+   "fichier": "gif/femme/fractionne-nager-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    415,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Fractionné — nager"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1533,
+   "myo_reps": false
+  },
+  {
+   "cle": "nage-statique-a-l-elastique|femme",
+   "fichier": "gif/femme/nage-statique-a-l-elastique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    412,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Nage statique (à l'élastique)"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1328,
+   "myo_reps": false
+  },
+  {
+   "cle": "recup-complete-souffler|femme",
+   "fichier": "gif/femme/recup-complete-souffler-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    428,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Récup complète — souffler"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    1562,
+    1178
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.57,
+    0.57
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1308,
+   "myo_reps": false
+  },
+  {
+   "cle": "sprint-nager-a-fond|femme",
+   "fichier": "gif/femme/sprint-nager-a-fond-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    441,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Sprint — nager à fond"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    945,
+    935
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.43
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1145,
+   "myo_reps": false
+  },
+  {
+   "cle": "talons-fesses|femme",
+   "fichier": "gif/femme/talons-fesses-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    428,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Talons-fesses"
+   ],
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2482,
+   "myo_reps": false
+  },
+  {
+   "cle": "aqua-jogging-sur-place|femme",
+   "fichier": "gif/femme/aqua-jogging-sur-place-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    423,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    3072,
+    3075
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.62,
+    0.61
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1067,
+   "myo_reps": false
+  },
+  {
+   "cle": "ciseaux-mains-au-bord|femme",
+   "fichier": "gif/femme/ciseaux-mains-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    442,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    2782,
+    2991
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.51,
+    0.51
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0717,
+   "myo_reps": false
+  },
+  {
+   "cle": "deplacements-lateraux-4-m|femme",
+   "fichier": "gif/femme/deplacements-lateraux-4-m-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    441,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4094,
+    4935
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.62,
+    0.63
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1237,
+   "myo_reps": false
+  },
+  {
+   "cle": "montees-de-genoux-effort|femme",
+   "fichier": "gif/femme/montees-de-genoux-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    411,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    2412,
+    1841
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.67,
+    0.67
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.2975,
+   "myo_reps": false
+  },
+  {
+   "cle": "etirements-au-bord|femme",
+   "fichier": "gif/femme/etirements-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    430,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Étirements au bord",
+    "Étirements au bord",
+    "Étirements au bord"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.0625,
+   "myo_reps": false
+  },
+  {
+   "cle": "mobilite-epaules-aquatique|femme",
+   "fichier": "gif/femme/mobilite-epaules-aquatique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    431,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    251,
+    2073
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.32,
+    0.48
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1949,
+   "myo_reps": false
+  },
+  {
+   "cle": "mobilite-hanches-chevilles|femme",
+   "fichier": "gif/femme/mobilite-hanches-chevilles-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    410,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    2461,
+    2224
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.64,
+    0.64
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1214,
+   "myo_reps": false
+  },
+  {
+   "cle": "repos|femme",
+   "fichier": "gif/femme/repos-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    425,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.3707,
+   "myo_reps": false
+  },
+  {
+   "cle": "echauffement-battements-au-bord|femme",
+   "fichier": "gif/femme/echauffement-battements-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    438,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Échauffement — battements au bord"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    1673,
+    1626
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.57,
+    0.57
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1049,
+   "myo_reps": false
+  },
+  {
+   "cle": "battements-de-jambes-effort|femme",
+   "fichier": "gif/femme/battements-de-jambes-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    438,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    1673,
+    1626
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.57,
+    0.57
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1049,
+   "myo_reps": false
+  },
+  {
+   "cle": "echauffement-battements-mobilite|femme",
+   "fichier": "gif/femme/echauffement-battements-mobilite-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    438,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Échauffement — battements + mobilité"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    1673,
+    1626
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.57,
+    0.57
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1049,
+   "myo_reps": false
+  },
+  {
+   "cle": "ciseaux-au-bord-effort|femme",
+   "fichier": "gif/femme/ciseaux-au-bord-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    442,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    2782,
+    2991
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.51,
+    0.51
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0717,
+   "myo_reps": false
+  },
+  {
+   "cle": "deplacements-lateraux-4-m-effort|femme",
+   "fichier": "gif/femme/deplacements-lateraux-4-m-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    441,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4094,
+    4935
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.62,
+    0.63
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1237,
+   "myo_reps": false
+  },
+  {
+   "cle": "echauffement-marche-aquatique|femme",
+   "fichier": "gif/femme/echauffement-marche-aquatique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "recup-active-marche-aquatique|femme",
+   "fichier": "gif/femme/recup-active-marche-aquatique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "recup-courte-marche|femme",
+   "fichier": "gif/femme/recup-courte-marche-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "recup-marche|femme",
+   "fichier": "gif/femme/recup-marche-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "recup-marche-aquatique|femme",
+   "fichier": "gif/femme/recup-marche-aquatique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Récup — marche aquatique",
+    "Récup — marche aquatique"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "recup-entre-tabatas|femme",
+   "fichier": "gif/femme/recup-entre-tabatas-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "retour-au-calme|femme",
+   "fichier": "gif/femme/retour-au-calme-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    404,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Retour au calme"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    4186,
+    3675
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.6,
+    0.6
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.0654,
+   "myo_reps": false
+  },
+  {
+   "cle": "gainage-vertical-au-bord|femme",
+   "fichier": "gif/femme/gainage-vertical-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    416,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2167,
+   "myo_reps": false
+  },
+  {
+   "cle": "gainage-vertical-effort|femme",
+   "fichier": "gif/femme/gainage-vertical-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    416,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2167,
+   "myo_reps": false
+  },
+  {
+   "cle": "nage-statique-douce|femme",
+   "fichier": "gif/femme/nage-statique-douce-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    412,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Nage statique douce",
+    "Nage statique douce"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1328,
+   "myo_reps": false
+  },
+  {
+   "cle": "nage-statique-z2|femme",
+   "fichier": "gif/femme/nage-statique-z2-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    412,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2/Z3"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1328,
+   "myo_reps": false
+  },
+  {
+   "cle": "nager-fractionne-1-6|femme",
+   "fichier": "gif/femme/nager-fractionne-1-6-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    415,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Nager — fractionné 1/6",
+    "Nager — fractionné 2/6",
+    "Nager — fractionné 3/6",
+    "Nager — fractionné 4/6",
+    "Nager — fractionné 5/6",
+    "Nager — fractionné 6/6",
+    "Nager — fractionné 1/8",
+    "Nager — fractionné 2/8",
+    "Nager — fractionné 3/8",
+    "Nager — fractionné 4/8",
+    "Nager — fractionné 5/8",
+    "Nager — fractionné 6/8",
+    "Nager — fractionné 7/8",
+    "Nager — fractionné 8/8",
+    "Nager — fractionné 1/10",
+    "Nager — fractionné 2/10",
+    "Nager — fractionné 3/10",
+    "Nager — fractionné 4/10",
+    "Nager — fractionné 5/10",
+    "Nager — fractionné 6/10",
+    "Nager — fractionné 7/10",
+    "Nager — fractionné 8/10",
+    "Nager — fractionné 9/10",
+    "Nager — fractionné 10/10"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1533,
+   "myo_reps": false
+  },
+  {
+   "cle": "nager-sprint-1-8|femme",
+   "fichier": "gif/femme/nager-sprint-1-8-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    441,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Nager sprint 1/8",
+    "Nager sprint 2/8",
+    "Nager sprint 3/8",
+    "Nager sprint 4/8",
+    "Nager sprint 5/8",
+    "Nager sprint 6/8",
+    "Nager sprint 7/8",
+    "Nager sprint 8/8",
+    "Nager sprint 1/10",
+    "Nager sprint 2/10",
+    "Nager sprint 3/10",
+    "Nager sprint 4/10",
+    "Nager sprint 5/10",
+    "Nager sprint 6/10",
+    "Nager sprint 7/10",
+    "Nager sprint 8/10",
+    "Nager sprint 9/10",
+    "Nager sprint 10/10",
+    "Nager sprint 1/12",
+    "Nager sprint 2/12",
+    "Nager sprint 3/12",
+    "Nager sprint 4/12",
+    "Nager sprint 5/12",
+    "Nager sprint 6/12",
+    "Nager sprint 7/12",
+    "Nager sprint 8/12",
+    "Nager sprint 9/12",
+    "Nager sprint 10/12",
+    "Nager sprint 11/12",
+    "Nager sprint 12/12"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    945,
+    935
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.43,
+    0.43
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1145,
+   "myo_reps": false
+  },
+  {
+   "cle": "pompes-au-bord-effort|femme",
+   "fichier": "gif/femme/pompes-au-bord-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    439,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.236,
+   "myo_reps": false
+  },
+  {
+   "cle": "recup-complete-souffler-au-bord|femme",
+   "fichier": "gif/femme/recup-complete-souffler-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    428,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    1562,
+    1178
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.57,
+    0.57
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1308,
+   "myo_reps": false
+  },
+  {
+   "cle": "retour-au-calme-respiration|femme",
+   "fichier": "gif/femme/retour-au-calme-respiration-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    428,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Retour au calme + respiration"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    1562,
+    1178
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.57,
+    0.57
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1308,
+   "myo_reps": false
+  },
+  {
+   "cle": "retour-au-calme-mobilite|femme",
+   "fichier": "gif/femme/retour-au-calme-mobilite-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    431,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Retour au calme + mobilité"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    251,
+    2073
+   ],
+   "vert_zone": "milieu-haut",
+   "vert_centre": [
+    0.32,
+    0.48
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1949,
+   "myo_reps": false
+  },
+  {
+   "cle": "talons-fesses-effort|femme",
+   "fichier": "gif/femme/talons-fesses-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    428,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2482,
+   "myo_reps": false
+  },
+  {
+   "cle": "aqua-jogging-effort|femme",
+   "fichier": "gif/femme/aqua-jogging-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    423,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    3072,
+    3075
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.62,
+    0.61
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1067,
+   "myo_reps": false
+  },
+  {
+   "cle": "tabata-1-2-en-place|femme",
+   "fichier": "gif/femme/tabata-1-2-en-place-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    423,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Tabata 1/2 — en place",
+    "Tabata 2/2 — en place",
+    "Tabata 1/3 — en place",
+    "Tabata 2/3 — en place",
+    "Tabata 3/3 — en place",
+    "Tabata 1/4 — en place",
+    "Tabata 2/4 — en place",
+    "Tabata 3/4 — en place",
+    "Tabata 4/4 — en place"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    3072,
+    3075
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.62,
+    0.61
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1067,
+   "myo_reps": false
+  },
+  {
+   "cle": "tour-1-2-en-place|femme",
+   "fichier": "gif/femme/tour-1-2-en-place-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    423,
+    440
+   ],
+   "boucle": 0,
+   "noms": [
+    "Tour 1/2 — en place",
+    "Tour 2/2 — en place",
+    "Tour 1/3 — en place",
+    "Tour 2/3 — en place",
+    "Tour 3/3 — en place",
+    "Tour 1/4 — en place",
+    "Tour 2/4 — en place",
+    "Tour 3/4 — en place",
+    "Tour 4/4 — en place"
+   ],
+   "surface": "piscine-protocole",
+   "vert_px": [
+    3072,
+    3075
+   ],
+   "vert_zone": "milieu-bas",
+   "vert_centre": [
+    0.62,
+    0.61
+   ],
+   "vert_attendu": null,
+   "mouvement_px": 0.1067,
+   "myo_reps": false
   }
  ],
  "anomalies": [
@@ -9783,6 +11535,314 @@
    "erreur": " VERT ABSENT (case [1])",
    "mouvement_px": 0.3724,
    "myo_reps": false
+  },
+  {
+   "cle": "gainage-au-bord-vertical|femme",
+   "fichier": "gif/femme/gainage-au-bord-vertical-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    416,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2167,
+   "myo_reps": false
+  },
+  {
+   "cle": "pompes-au-bord|femme",
+   "fichier": "gif/femme/pompes-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    439,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.236,
+   "myo_reps": false
+  },
+  {
+   "cle": "fractionne-nager|femme",
+   "fichier": "gif/femme/fractionne-nager-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    415,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1533,
+   "myo_reps": false
+  },
+  {
+   "cle": "nage-statique-a-l-elastique|femme",
+   "fichier": "gif/femme/nage-statique-a-l-elastique-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    412,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1328,
+   "myo_reps": false
+  },
+  {
+   "cle": "talons-fesses|femme",
+   "fichier": "gif/femme/talons-fesses-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    428,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2482,
+   "myo_reps": false
+  },
+  {
+   "cle": "etirements-au-bord|femme",
+   "fichier": "gif/femme/etirements-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    430,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.0625,
+   "myo_reps": false
+  },
+  {
+   "cle": "repos|femme",
+   "fichier": "gif/femme/repos-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    425,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.3707,
+   "myo_reps": false
+  },
+  {
+   "cle": "gainage-vertical-au-bord|femme",
+   "fichier": "gif/femme/gainage-vertical-au-bord-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    416,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2167,
+   "myo_reps": false
+  },
+  {
+   "cle": "gainage-vertical-effort|femme",
+   "fichier": "gif/femme/gainage-vertical-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    416,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2167,
+   "myo_reps": false
+  },
+  {
+   "cle": "nage-statique-douce|femme",
+   "fichier": "gif/femme/nage-statique-douce-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    412,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1328,
+   "myo_reps": false
+  },
+  {
+   "cle": "nage-statique-z2|femme",
+   "fichier": "gif/femme/nage-statique-z2-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    412,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1328,
+   "myo_reps": false
+  },
+  {
+   "cle": "nager-fractionne-1-6|femme",
+   "fichier": "gif/femme/nager-fractionne-1-6-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    415,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.1533,
+   "myo_reps": false
+  },
+  {
+   "cle": "pompes-au-bord-effort|femme",
+   "fichier": "gif/femme/pompes-au-bord-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    439,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.236,
+   "myo_reps": false
+  },
+  {
+   "cle": "talons-fesses-effort|femme",
+   "fichier": "gif/femme/talons-fesses-effort-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    428,
+    440
+   ],
+   "boucle": 0,
+   "surface": "piscine-protocole",
+   "vert_px": [
+    0,
+    0
+   ],
+   "erreur": " VERT ABSENT (case [0, 1])",
+   "mouvement_px": 0.2482,
+   "myo_reps": false
   }
  ],
  "aRelire": [
@@ -9803,9 +11863,289 @@
    "motif": "vert en zone milieu-bas, muscle cible (tra) attendu en haut"
   }
  ],
- "doubles": [],
+ "doubles": [
+  {
+   "a": "gainage-au-bord-vertical|femme",
+   "b": "gainage-vertical-au-bord|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "gainage-au-bord-vertical|femme",
+   "b": "gainage-vertical-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "pompes-au-bord|femme",
+   "b": "pompes-au-bord-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "battements-au-bord|femme",
+   "b": "echauffement-battements-au-bord|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "battements-au-bord|femme",
+   "b": "battements-de-jambes-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "battements-au-bord|femme",
+   "b": "echauffement-battements-mobilite|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "marche-aquatique|femme",
+   "b": "echauffement-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "marche-aquatique|femme",
+   "b": "recup-active-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "marche-aquatique|femme",
+   "b": "recup-courte-marche|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "marche-aquatique|femme",
+   "b": "recup-marche|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "marche-aquatique|femme",
+   "b": "recup-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "marche-aquatique|femme",
+   "b": "recup-entre-tabatas|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "marche-aquatique|femme",
+   "b": "retour-au-calme|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "fractionne-nager|femme",
+   "b": "nager-fractionne-1-6|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "nage-statique-a-l-elastique|femme",
+   "b": "nage-statique-douce|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "nage-statique-a-l-elastique|femme",
+   "b": "nage-statique-z2|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-complete-souffler|femme",
+   "b": "recup-complete-souffler-au-bord|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-complete-souffler|femme",
+   "b": "retour-au-calme-respiration|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "sprint-nager-a-fond|femme",
+   "b": "nager-sprint-1-8|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "talons-fesses|femme",
+   "b": "talons-fesses-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "aqua-jogging-sur-place|femme",
+   "b": "aqua-jogging-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "aqua-jogging-sur-place|femme",
+   "b": "tabata-1-2-en-place|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "aqua-jogging-sur-place|femme",
+   "b": "tour-1-2-en-place|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "ciseaux-mains-au-bord|femme",
+   "b": "ciseaux-au-bord-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "deplacements-lateraux-4-m|femme",
+   "b": "deplacements-lateraux-4-m-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "mobilite-epaules-aquatique|femme",
+   "b": "retour-au-calme-mobilite|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-battements-au-bord|femme",
+   "b": "battements-de-jambes-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-battements-au-bord|femme",
+   "b": "echauffement-battements-mobilite|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "battements-de-jambes-effort|femme",
+   "b": "echauffement-battements-mobilite|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-marche-aquatique|femme",
+   "b": "recup-active-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-marche-aquatique|femme",
+   "b": "recup-courte-marche|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-marche-aquatique|femme",
+   "b": "recup-marche|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-marche-aquatique|femme",
+   "b": "recup-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-marche-aquatique|femme",
+   "b": "recup-entre-tabatas|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "echauffement-marche-aquatique|femme",
+   "b": "retour-au-calme|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-active-marche-aquatique|femme",
+   "b": "recup-courte-marche|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-active-marche-aquatique|femme",
+   "b": "recup-marche|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-active-marche-aquatique|femme",
+   "b": "recup-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-active-marche-aquatique|femme",
+   "b": "recup-entre-tabatas|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-active-marche-aquatique|femme",
+   "b": "retour-au-calme|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-courte-marche|femme",
+   "b": "recup-marche|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-courte-marche|femme",
+   "b": "recup-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-courte-marche|femme",
+   "b": "recup-entre-tabatas|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-courte-marche|femme",
+   "b": "retour-au-calme|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-marche|femme",
+   "b": "recup-marche-aquatique|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-marche|femme",
+   "b": "recup-entre-tabatas|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-marche|femme",
+   "b": "retour-au-calme|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-marche-aquatique|femme",
+   "b": "recup-entre-tabatas|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-marche-aquatique|femme",
+   "b": "retour-au-calme|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-entre-tabatas|femme",
+   "b": "retour-au-calme|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "gainage-vertical-au-bord|femme",
+   "b": "gainage-vertical-effort|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "nage-statique-douce|femme",
+   "b": "nage-statique-z2|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "recup-complete-souffler-au-bord|femme",
+   "b": "retour-au-calme-respiration|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "aqua-jogging-effort|femme",
+   "b": "tabata-1-2-en-place|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "aqua-jogging-effort|femme",
+   "b": "tour-1-2-en-place|femme",
+   "ecart": 0.0
+  },
+  {
+   "a": "tabata-1-2-en-place|femme",
+   "b": "tour-1-2-en-place|femme",
+   "ecart": 0.0
+  }
+ ],
  "orphelins": [
-  "gif/homme/oiseau-chien-homme.gif",
   "racine/curl-marteau-assis-femme.gif",
   "racine/elevations-laterales-assises-homme.gif"
  ]

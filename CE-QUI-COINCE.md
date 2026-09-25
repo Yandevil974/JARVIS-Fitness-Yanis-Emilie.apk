@@ -1,19 +1,23 @@
-# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 43
+# 🚧 Ce qui coince — état au 25 septembre 2026, après lot 44
 
 Liste demandée pour revue de votre côté. Tout le reste du flux tourne normalement
-(**285 / 331** visuels validés, 46 restants) ; ce fichier ne contient que les points
+(**319 / 331** visuels validés, 12 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
-**Aucune planche refusée en attente** : `production/a-refaire.json` est VIDE après le lot 43
-(squats-doux résolu du 2ᵉ essai, face caméra ancrée aux deux cases).
+| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
+|---|---|---|---|---|
+| **Nage douce (femme)** — 1 refus | case 2 : DEUX femmes dans la même case (corps dupliqué) | prompt brasse douce standard | **lot45 : ancre « EXACTLY ONE woman, ONE head, ONE body per panel »** + même lot pour nage-douce-respiration (échec transitoire MAX_TOKENS au lot 44) | aucune |
 
-Clos ce tour (lot 43) : squats-doux RÉSOLU ; replays OK des 2 échecs transitoires
-(battements-au-bord, marche-aquatique) ; fractionné-nager, nage statique à l'élastique
-(élastique UN tendu même ancre), récup-complete-souffler, sprint-nager-à-fond,
-talons-fesses — **tabata au sol TERMINÉE 37/37 et piscine guides TERMINÉE 9/9**.
-Reste : protocoles piscine 40 + aqua tabata 6.
+Clos ce tour (lot 44, protocoles piscine) : 8 planches acceptées (aqua-jogging sur place,
+ciseaux mains au bord, déplacements latéraux 4 m, montées de genoux EFFORT, étirements au
+bord, mobilité épaules, mobilité hanches/chevilles, repos) + **26 copies conformes** de GIF
+déjà validés pour les étapes de protocole qui décrivent le MÊME geste que leur guide
+(comme le fait l'app d'origine avec ses médias) : récupérations marchées, variantes EFFORT,
+échauffements, tours/tabatas en place, nage statique Z2, fractionné/sprint 1-6/1-8…
+Notes style : étirements-au-bord et repos sans vert mesuré ([0,0]) → `style-a-reprendre.json`
+(25 entrées) ; relecture-23 : relevés de jambes allongé homme case 1 sans vert → idem.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
