@@ -6,64 +6,15 @@
    "mouvement": "developpe-haltere-un-bras-debout (homme)",
    "identifiant": "developpe-haltere-un-bras-debout",
    "athlete": "homme",
-   "motif": "3e refus : case depart encore vert sur l epaule du bras LIBRE (la case fin etait bonne cette fois)",
-   "planche": "lot23/developpe-haltere-un-bras-debout.png"
+   "motif": "4e refus : deux halteres en case depart et cote de travail inverse entre les cases",
+   "planche": "lot24/developpe-haltere-un-bras-debout.png"
   },
   {
    "mouvement": "mountain-climbers (femme)",
    "identifiant": "mountain-climbers",
    "athlete": "femme",
-   "motif": "1er refus : les deux cases montrent la MEME jambe avant, aucun échange",
-   "planche": "lot23/mountain-climbers.png"
-  },
-  {
-   "mouvement": "developpe-couche-halteres (femme)",
-   "identifiant": "developpe-couche-halteres",
-   "athlete": "femme",
-   "motif": "1er refus : un seul haltere tenu a deux mains au lieu d un dans chaque main",
-   "planche": "lot23/developpe-couche-halteres.png"
-  },
-  {
-   "mouvement": "cables-croises-rotation-externe (homme)",
-   "identifiant": "cables-croises-rotation-externe",
-   "athlete": "homme",
-   "motif": "audit réalisme : grée incohérente entre les cases : une poulie haute puis deux câbles croisés ; la rotation externe décrite est impossible avec cette grée",
-   "origine": "audit-realisme-2026-09-25"
-  },
-  {
-   "mouvement": "developpe-couche-barre (homme)",
-   "identifiant": "developpe-couche-barre",
-   "athlete": "homme",
-   "motif": "audit réalisme : exécuté ASSIS au banc au lieu d'allongé : ce n'est pas un développé couché",
-   "origine": "audit-realisme-2026-09-25"
-  },
-  {
-   "mouvement": "developpe-couche-test-1rm (homme)",
-   "identifiant": "developpe-couche-test-1rm",
-   "athlete": "homme",
-   "motif": "audit réalisme : haltère puis barre penchée à un seul plateau : charge de 1RM invraisemblable",
-   "origine": "audit-realisme-2026-09-25"
-  },
-  {
-   "mouvement": "ecartes-cables-incline (homme)",
-   "identifiant": "ecartes-cables-incline",
-   "athlete": "homme",
-   "motif": "audit réalisme : les deux poignées partent d'UNE seule poulie basse devant le banc ; un écarté exige deux poulies, une de chaque côté",
-   "origine": "audit-realisme-2026-09-25"
-  },
-  {
-   "mouvement": "kickback-a-la-poulie (femme)",
-   "identifiant": "kickback-a-la-poulie",
-   "athlete": "femme",
-   "motif": "audit réalisme : case 1 : câble posé au sol, non fixé à la cheville ; la pile serait détendue",
-   "origine": "audit-realisme-2026-09-25"
-  },
-  {
-   "mouvement": "step-up-sur-banc-hauteur-du-genou (femme)",
-   "identifiant": "step-up-sur-banc-hauteur-du-genou",
-   "athlete": "femme",
-   "motif": "audit réalisme : case 2 : le pied d'appui ne touche pas le banc, genou levé dans le vide à côté du banc",
-   "origine": "audit-realisme-2026-09-25"
+   "motif": "2e refus : l'edition n'a pas echange les jambes, les deux cases identiques",
+   "planche": "lot24/mountain-climbers.png"
   }
  ],
  "verifieesEtAcceptees": [

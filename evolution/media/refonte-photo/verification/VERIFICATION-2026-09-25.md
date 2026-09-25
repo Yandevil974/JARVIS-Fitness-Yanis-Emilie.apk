@@ -176,9 +176,24 @@ kickback-a-la-poulie (câble au sol non fixé en case 1), step-up-sur-banc-haute
 (pied d'appui hors banc en case 2). Règles de grée pour tous les prompts futurs dans
 `production/audit-realisme.json` (`regles_futurs_prompts`).
 
-## 18. Couverture et suite
+## 19. Lot 24 = les 9 refus/audit (meme tour)
 
-Relus sur les sept tours : **125 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+9 regenérations avec les règles de grée de `production/audit-realisme.json`.
+Acceptees 7 : les 6 remplacements d'audit (cables-croises-rotation-externe : grée unique
+ancree poulie poitrine ; developpe-couche-barre : allonge ; developpe-couche-test-1rm :
+barre chargee des deux cotes ; ecartes-cables-incline : deux poulies basses une de chaque
+cote ; kickback-a-la-poulie : sangle fixee cable tendu des la case 1 ; step-up-sur-banc :
+pied d'appui sur le banc en case 2) + developpe-couche-halteres (deux halteres separes).
+Note cosmetique : ecartes-cables-incline n'a du vert que sur la case de travail.
+Refusees 2 : developpe-haltere-un-bras-debout (4e refus : deux halteres en case depart,
+cote de travail inverse entre les cases), mountain-climbers (2e refus : jambes non echangees).
+Prochaine strategie pour ces deux-la : generer les deux cases SEPAREMENT (description
+relative a la camera : jambe proche/lointaine, bras cote gauche de l'image) puis assembler
+la planche par script. Feuilles : `verification/lot24-01..03.jpg`.
+
+## 20. Couverture et suite
+
+Relus sur les sept tours : **125 couples** (+7 remplacements d'audit relus au lot 24 = 132) (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
 Sur les **161 valides** actuels, **53 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans

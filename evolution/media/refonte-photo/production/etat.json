@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 161,
-  "restants": 170,
+  "valides": 162,
+  "restants": 169,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 114,
+   "musculation": 115,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 88,
+   "musculation": 87,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -70,6 +70,7 @@
   "dead-bug|femme",
   "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
+  "developpe-couche-halteres|femme",
   "developpe-couche-test-1rm|homme",
   "developpe-halteres-assis-neutre-pronation|homme",
   "developpe-halteres-assis-prise-neutre|homme",
@@ -280,14 +281,6 @@
    "surface": "musculation",
    "noms": [
     "Développé couché plat, inertie depuis les pins"
-   ]
-  },
-  {
-   "identifiant": "developpe-couche-halteres",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Développé couché haltères"
    ]
   },
   {

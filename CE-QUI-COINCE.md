@@ -4,34 +4,24 @@ Liste demandée pour revue de votre côté. Tout le reste du flux tourne normale
 (**137 / 331** visuels validés, 194 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 3 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Développé haltère un bras debout (homme)** — 3 refus | vert sur l'épaule du bras LIBRE en case départ (la case fin était bonne au lot 23) | « RIGHT shoulder », édition ciblée, vert « côté gauche de l'image » | vert en **manche complète** : « peindre tout le bras qui tient l'haltère, de l'épaule au coude » — une grande zone se place mieux qu'un petit deltoïde | aucune |
-| **Mountain climbers (femme)** — 1 refus | les deux cases montrent la même jambe avant | prompt « les jambes ont permuté » | édition de la case 1 : « dans la case DROITE seulement, avancer l'AUTRE genou » | aucune |
-| **Développé couché haltères (femme)** — 1 refus | un seul haltère tenu à deux mains | prompt « un haltère dans chaque main » | insister sur le compte : « DEUX haltères séparés, QUATRE disques visibles, les mains ne se touchent jamais » | aucune |
+| **Développé haltère un bras debout (homme)** — 4 refus | lot 24 : deux haltères en case départ et côté de travail inversé entre les cases ; auparavant vert sur le bras libre | vert côté haltère, édition, manche complète | générer les **deux cases séparément** puis assembler : case 1 « haltère à l'épaule du côté GAUCHE de l'image, manche verte sur ce bras », case 2 « même bras tendu verticalement, côté GAUCHE de l'image » | aucune |
+| **Mountain climbers (femme)** — 2 refus | les deux cases montrent la même jambe avant (prompt et édition) | prompt « jambes permutées », édition ciblée | cases séparées : case 1 « genou de la jambe PROCHE de la caméra sous la poitrine », case 2 « genou de la jambe LOINTAINE sous la poitrine » | aucune |
 
-Clos depuis la dernière liste : rowing-barre-buste-penche-test-3-5-reps (tirage complet obtenu
-par édition ; écart résiduel « arrivée au ventre » soumis à votre option du §3).
+**Audit réalisme clos** : les 6 planches validées condamnées ont toutes été remplacées et
+acceptées au lot 24 (voir §1b ci-dessous, grées désormais cohérentes).
 
-## 1b. Audit réalisme terminé : 6 planches validées à refaire (avant toute production)
+## 1b. Audit réalisme (clos au lot 24)
 
-Audit complet demandé : 68 planches avec appareil relues sur planches-contact
-(`verification/audit-machines-01..09.jpg`, `audit-bancs-01..02.jpg`,
-`audit-bancs-appui-01.jpg`) ; 93 sans appareil (haltères, barre, sol, étirements, piscine)
-hors périmètre du défaut retenu. Verdict : **6 à refaire**, détails et règles de grée futures
-dans `production/audit-realisme.json` :
-
-1. cables-croises-rotation-externe (H) — grée incohérente entre les deux cases ;
-2. developpe-couche-barre (H) — assis au banc au lieu d'allongé ;
-3. developpe-couche-test-1rm (H) — haltère puis barre penchée à un seul plateau ;
-4. ecartes-cables-incline (H) — deux poignées sur une seule poulie basse ;
-5. kickback-a-la-poulie (F) — câble posé au sol, non fixé à la cheville, en case 1 ;
-6. step-up-sur-banc-hauteur-du-genou (F) — pied d'appui hors banc en case 2.
-
-Prochain tour : ces 6 + les 3 refus de production = 9 régénérations (lot 24), avec les
-règles de grée du fichier d'audit dans chaque prompt.
+68 planches avec appareil relues sur planches-contact (`verification/audit-machines-01..09.jpg`,
+`audit-bancs-01..02.jpg`, `audit-bancs-appui-01.jpg`) ; 93 sans appareil hors périmètre.
+6 planches condamnées, toutes remplacées et acceptées au lot 24 : cables-croises-rotation-externe,
+developpe-couche-barre, developpe-couche-test-1rm, ecartes-cables-incline, kickback-a-la-poulie,
+step-up-sur-banc-hauteur-du-genou. Règles de grée conservées dans `production/audit-realisme.json`
+et appliquées à tous les prompts depuis le lot 24.
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
