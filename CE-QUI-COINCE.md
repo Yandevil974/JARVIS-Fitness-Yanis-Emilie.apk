@@ -4,14 +4,15 @@ Liste demandée pour revue de votre côté. Tout le reste du flux tourne normale
 (**137 / 331** visuels validés, 194 restants) ; ce fichier ne contient que les points
 bloquants ou qui demandent une décision.
 
-## 1. Les 2 planches encore refusées (je continue dessus au prochain tour)
+## 1. Les 3 planches encore refusées
 
-| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
+| Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue | Décision attendue de vous |
 |---|---|---|---|---|
-| **Mountain climbers (femme)** — 6 refus | aucune permutation de jambes obtenue, par aucune méthode | prompts permutés, éditions de planche, cases séparées, proche/lointaine, cadrage imposé, édition ancrée chaussures | DERNIER essai généré : édition nommant chaque jambe par la position de sa chaussure dans l'image ; **si échec : je vous soumets le choix** (a) garder une planche jambe unique genou haut/genou bas (moins fidèle au mouvement), (b) supprimer visuellement l'alternance en montrant le mouvement sur 2 hauteurs de genou, (c) me donner vous-même une photo de référence | **oui, si le 7ᵉ essai échoue** |
-| **Élévations latérales coude à 90 (homme)** — 3 refus | vert enfin limité aux deltoïdes, mais textes « START/END » incrustés et 4 haltères en case fin | départs variés, géométrie, vert exclusif | même prompt géométrique + « absolutely no words, no letters, no captions ; exactly TWO dumbbells in the whole sheet, one per hand » | aucune |
+| **Mountain climbers (femme)** — 7 refus | aucune permutation de jambes obtenue | prompts permutés, éditions de planche et de case, cases séparées, proche/lointaine, cadrage imposé, éditions ancrées chaussures | suspendu à votre choix (question posée ce tour) | **OUI : (a) ultime essai vue de FACE (genou avant côté gauche puis droit de l'image), (b) vous me donnez une photo de référence, (c) visuel simplifié genou haut/genou bas sans alternance** |
+| **Élévations latérales coude à 90 (homme)** — 4 refus | case départ toujours bras tendus le long du corps (le reste est bon) | départs variés, géométrie, vert exclusif, sans texte | deux cases SIMPLES générées séparément (départ avant-bras horizontaux ; fin goalpost) puis assemblage | aucune |
+| **Relevés de jambes incliné (homme)** — 1 refus | paire de chaussures en double posée sous le banc en case 2 | — | régénération avec « les deux chaussures restent à ses pieds dans les deux cases, rien au sol » | aucune |
 
-Clos ce tour : soulevé de terre roumain haltères (après blocage modération, reformulation sobre).
+Clos ce tour : 7 neuves acceptées (élastiques et poulies conformes aux règles de grée).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 

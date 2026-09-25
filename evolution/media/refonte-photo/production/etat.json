@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 188,
-  "restants": 143,
+  "valides": 195,
+  "restants": 136,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 141,
+   "musculation": 148,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 61,
+   "musculation": 54,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -115,6 +115,7 @@
   "etirement-du-cobra|homme",
   "etirement-du-flechisseur-de-hanche-chevalier|homme",
   "etirement-du-piriforme-assis|homme",
+  "extension-triceps-a-la-poulie|femme",
   "extensions-triceps-pullover-barre-ez|homme",
   "face-pull-a-la-poulie|femme",
   "fentes-alternees|homme",
@@ -125,6 +126,7 @@
   "fentes-bulgares-halteres-pied-avant-sureleve|homme",
   "fentes-bulgares-pied-arriere-sureleve|femme",
   "fentes-marchees|homme",
+  "fire-hydrant-a-l-elastique|femme",
   "flexion-avant-jambes-tendues|homme",
   "french-press-barre-ez|homme",
   "french-press-haltere-un-bras|homme",
@@ -142,6 +144,7 @@
   "hip-thrust-unilateral|femme",
   "jackknife-sur-swiss-ball|homme",
   "jumping-jacks|homme",
+  "kickback-a-l-elastique|femme",
   "kickback-a-la-poulie|femme",
   "lean-away-pull-ups|homme",
   "leg-curl-allonge-1-1-4-en-haut|homme",
@@ -155,8 +158,10 @@
   "mains-croisees-derriere-le-dos|homme",
   "mollet-en-escalier|homme",
   "mollets-assis|homme",
+  "mollets-debout-unilateraux|femme",
   "mollets-debout|homme",
   "mountain-climbers|homme",
+  "pallof-press-a-l-elastique|femme",
   "pigeon-assis|homme",
   "pompes-inclinees-mains-surelevees|femme",
   "pompes|homme",
@@ -165,12 +170,14 @@
   "position-de-l-enfant|homme",
   "presse-a-cuisses-pieds-hauts|femme",
   "pullover-cable-bras-tendus|homme",
+  "pullover-haltere-plat|homme",
   "pushdown-triceps-cable|homme",
   "releves-de-jambes-allongee|femme",
   "releves-de-jambes-allonge|homme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
   "reverse-crunch|femme",
+  "rowing-a-l-elastique|homme",
   "rowing-assis-au-cou|homme",
   "rowing-assis-cable-unilateral|homme",
   "rowing-assis-etirement|homme",
@@ -309,14 +316,6 @@
    ]
   },
   {
-   "identifiant": "mollets-debout-unilateraux",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Mollets debout unilatéraux"
-   ]
-  },
-  {
    "identifiant": "developpe-halteres-decline-prise-neutre",
    "athlete": "homme",
    "surface": "musculation",
@@ -432,38 +431,6 @@
    ]
   },
   {
-   "identifiant": "fire-hydrant-a-l-elastique",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Fire hydrant à l'élastique"
-   ]
-  },
-  {
-   "identifiant": "kickback-a-l-elastique",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Kickback à l'élastique"
-   ]
-  },
-  {
-   "identifiant": "pallof-press-a-l-elastique",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Pallof press à l'élastique"
-   ]
-  },
-  {
-   "identifiant": "rowing-a-l-elastique",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Rowing à l’élastique"
-   ]
-  },
-  {
    "identifiant": "elevations-laterales-halteres-myo-reps",
    "athlete": "femme",
    "surface": "musculation",
@@ -487,14 +454,6 @@
    "surface": "musculation",
    "noms": [
     "Élévations latérales"
-   ]
-  },
-  {
-   "identifiant": "extension-triceps-a-la-poulie",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Extension triceps à la poulie"
    ]
   },
   {
@@ -543,14 +502,6 @@
    "surface": "musculation",
    "noms": [
     "Glute ham raise"
-   ]
-  },
-  {
-   "identifiant": "pullover-haltere-plat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Pullover haltère plat"
    ]
   },
   {

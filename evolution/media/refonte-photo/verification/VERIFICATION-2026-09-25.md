@@ -239,10 +239,22 @@ mountain-climbers (6e : l'edition ancree sur les chaussures n'a pas permute les 
 Relecture batch 9 : 3/3 conformes (elevations-laterales-assises, elevations-laterales-lean-away,
 elliptique-fractionne). Feuilles : `verification/lot28-01..03.jpg`, `verification/relecture-09.jpg`.
 
-## 28. Couverture et suite
+## 29. Lot 29 (meme tour)
 
-Relus sur les douze tours : **172 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **188 valides** actuels, **41 restent à relire** (feuilles de 3, mêmes outils).
+Acceptees 7 : pullover-haltere-plat, rowing-a-l-elastique, extension-triceps-a-la-poulie,
+pallof-press-a-l-elastique, fire-hydrant-a-l-elastique, kickback-a-l-elastique,
+mollets-debout-unilateraux. Refusees 3 : elevations-laterales-coude-a-90 (4e : plus de texte,
+2 halteres, vert correct, mais case depart encore bras tendus), mountain-climbers (7e : edition
+chaussures sans permutation — decision utilisateur demandee), releves-de-jambes-incline
+(1er : paire de chaussures en double sous le banc en case 2).
+Relecture batch 10 : 3/3 conformes (elliptique-mise-en-route, elliptique-recuperation-active,
+elliptique-retour-au-calme). Feuilles : `verification/lot29-01..04.jpg`,
+`verification/relecture-10.jpg`.
+
+## 30. Couverture et suite
+
+Relus sur les treize tours : **182 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **195 valides** actuels, **38 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),
