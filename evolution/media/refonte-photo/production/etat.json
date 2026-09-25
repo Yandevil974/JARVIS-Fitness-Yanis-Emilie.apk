@@ -1,12 +1,21 @@
 {
  "faits": [
   "abduction-assise-machine",
+  "adduction-de-la-hanche-debout",
+  "allonge-sur-le-cote",
   "back-squat",
   "burpees",
   "crunch",
   "developpe-couche-barre",
   "developpe-militaire-debout",
   "dips",
+  "echauffement-mise-en-route",
+  "echauffement-mobilite",
+  "echauffement-series-d-approche",
+  "elliptique-fractionne",
+  "elliptique-mise-en-route",
+  "elliptique-recuperation-active",
+  "elliptique-retour-au-calme",
   "fentes-alternees",
   "gainage-planche",
   "hip-thrust-barre",
@@ -19,119 +28,10 @@
   "souleve-de-terre",
   "squats",
   "superman",
-  "tractions-pull-up"
+  "tractions-pull-up",
+  "transition"
  ],
  "restants": [
-  {
-   "identifiant": "elliptique-recuperation-active",
-   "surface": "cardio-elliptique",
-   "athlete": "femme",
-   "noms": [
-    "Elliptique — récupération active"
-   ],
-   "slugs": [
-    "elliptique-recuperation-active"
-   ]
-  },
-  {
-   "identifiant": "elliptique-retour-au-calme",
-   "surface": "cardio-elliptique",
-   "athlete": "femme",
-   "noms": [
-    "Elliptique — retour au calme"
-   ],
-   "slugs": [
-    "elliptique-retour-au-calme"
-   ]
-  },
-  {
-   "identifiant": "elliptique-fractionne",
-   "surface": "cardio-elliptique",
-   "athlete": "femme",
-   "noms": [
-    "Elliptique — fractionné"
-   ],
-   "slugs": [
-    "elliptique-fractionne"
-   ]
-  },
-  {
-   "identifiant": "elliptique-mise-en-route",
-   "surface": "cardio-elliptique",
-   "athlete": "femme",
-   "noms": [
-    "Elliptique — mise en route"
-   ],
-   "slugs": [
-    "elliptique-mise-en-route"
-   ]
-  },
-  {
-   "identifiant": "transition",
-   "surface": "cardio-elliptique",
-   "athlete": "femme",
-   "noms": [
-    "Transition"
-   ],
-   "slugs": [
-    "transition"
-   ]
-  },
-  {
-   "identifiant": "echauffement-series-d-approche",
-   "surface": "echauffement",
-   "athlete": "homme",
-   "noms": [
-    "Échauffement — séries d’approche"
-   ],
-   "slugs": [
-    "echauffement-series-d-approche"
-   ]
-  },
-  {
-   "identifiant": "echauffement-mise-en-route",
-   "surface": "echauffement",
-   "athlete": "homme",
-   "noms": [
-    "Échauffement — mise en route"
-   ],
-   "slugs": [
-    "echauffement-mise-en-route"
-   ]
-  },
-  {
-   "identifiant": "echauffement-mobilite",
-   "surface": "echauffement",
-   "athlete": "homme",
-   "noms": [
-    "Échauffement — mobilité"
-   ],
-   "slugs": [
-    "echauffement-mobilite"
-   ]
-  },
-  {
-   "identifiant": "adduction-de-la-hanche-debout",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Adduction de la hanche debout"
-   ],
-   "slugs": [
-    "adduction-de-la-hanche-debout"
-   ]
-  },
-  {
-   "identifiant": "allonge-sur-le-cote",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Allongé sur le côté"
-   ],
-   "slugs": [
-    "allonge-sur-le-cote"
-   ]
-  },
   {
    "identifiant": "respiration-diaphragmatique-allongee",
    "surface": "etirement",
@@ -4305,23 +4205,16 @@
   }
  ],
  "chiffres": {
-  "faits": 20,
-  "restants": 319,
+  "faits": 30,
+  "restants": 309,
   "total": 343,
-  "images_restantes": 638,
   "par_surface": {
-   "cardio-elliptique": 5,
-   "echauffement": 3,
-   "etirement": 29,
+   "etirement": 27,
    "musculation": 189,
    "piscine": 19,
    "piscine-protocole": 41,
    "tabata-aqua": 6,
    "tabata-au-sol": 27
-  },
-  "par_athlete": {
-   "femme": 129,
-   "homme": 190
   }
  }
 }
