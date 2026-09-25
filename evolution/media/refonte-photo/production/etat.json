@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 235,
-  "restants": 96,
+  "valides": 238,
+  "restants": 93,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 188,
+   "musculation": 191,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 14,
+   "musculation": 11,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -64,6 +64,7 @@
   "curl-barre|homme",
   "curl-concentration|homme",
   "curl-haltere-supination-banc-scott-90|homme",
+  "curl-halteres-incline-prise-neutre|homme",
   "curl-halteres-incline-supination|homme",
   "curl-halteres-incline|homme",
   "curl-halteres|femme",
@@ -161,6 +162,7 @@
   "grenouille-plantes-jointes|homme",
   "hack-squat|homme",
   "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
+  "hip-thrust-barre|femme",
   "hip-thrust-unilateral-1-jambe|femme",
   "hip-thrust-unilateral-leste|femme",
   "hip-thrust-unilateral|femme",
@@ -205,6 +207,7 @@
   "releves-de-jambes-allongee|femme",
   "releves-de-jambes-allonge|homme",
   "releves-de-jambes-incline|homme",
+  "releves-de-jambes-suspendu|homme",
   "releves-de-jambes|femme",
   "releves-de-jambes|homme",
   "respiration-diaphragmatique-allongee|homme",
@@ -259,14 +262,6 @@
   "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  {
-   "identifiant": "curl-halteres-incline-prise-neutre",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Curl haltères incliné, prise neutre"
-   ]
-  },
   {
    "identifiant": "developpe-halteres-decline-prise-neutre",
    "athlete": "homme",
@@ -326,27 +321,11 @@
    ]
   },
   {
-   "identifiant": "hip-thrust-barre",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Hip thrust barre"
-   ]
-  },
-  {
    "identifiant": "mollets-a-la-presse",
    "athlete": "homme",
    "surface": "musculation",
    "noms": [
     "Mollets à la presse"
-   ]
-  },
-  {
-   "identifiant": "releves-de-jambes-suspendu",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Relevés de jambes suspendu"
    ]
   },
   {

@@ -6,41 +6,17 @@
    "mouvement": "souleve-de-terre-partiel (homme)",
    "identifiant": "souleve-de-terre-partiel",
    "athlete": "homme",
-   "motif": "2e refus (lot35) : depart non pose sur les pins (barre a mi-cuisse, buste quasi droit) et vert sur quadriceps au lieu de chaine posterieure",
-   "planche": "lot35/souleve-de-terre-partiel.png",
-   "strategieSuivante": "lot36 : LEFT = barre POSÉE sur les pins sous les genoux, buste penche 45 deg ; vert UNIQUEMENT fessiers/ischios/lombaires"
-  },
-  {
-   "mouvement": "curl-halteres-incline-prise-neutre (homme)",
-   "identifiant": "curl-halteres-incline-prise-neutre",
-   "athlete": "homme",
-   "motif": "1er refus (lot35) : generation en grille 2x2 (quatre quadrants)",
-   "planche": "lot35/curl-halteres-incline-prise-neutre.png",
-   "strategieSuivante": "lot36 : consigne EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, NOT four quadrants"
-  },
-  {
-   "mouvement": "releves-de-jambes-suspendu (homme)",
-   "identifiant": "releves-de-jambes-suspendu",
-   "athlete": "homme",
-   "motif": "1er refus (lot35) : generation en grille 2x2 (quatre quadrants)",
-   "planche": "lot35/releves-de-jambes-suspendu.png",
-   "strategieSuivante": "lot36 : consigne EXACTLY TWO panels side by side landscape 2:1, NOT a 2x2 grid, NOT four quadrants"
+   "motif": "5e refus (lot36) : le generateur ne dessine jamais le depart barre sur pins buste 45 (4 prompts texte + 2 cases separees + vocabulaire deadlift bottom) ; vert souvent sur quadriceps",
+   "planche": "lot36/souleve-de-terre-partiel.png",
+   "strategieSuivante": "lot37 : EDITION d'image : prendre la case lockout propre (v5 droite) et demander via edit de descendre la barre SUR les pins sous les genoux et de pencher le buste a 45 deg bras tendus ; vert ajoute ensuite verifiable"
   },
   {
    "mouvement": "mollets-a-la-presse (homme)",
    "identifiant": "mollets-a-la-presse",
    "athlete": "homme",
-   "motif": "1er refus (lot35) : case 2 = genoux flechis (leg press) au lieu de chevilles seules, et vert absent en case 2",
-   "planche": "lot35/mollets-a-la-presse.png",
-   "strategieSuivante": "lot36 : genoux TENDUS et immobiles aux deux cases, mouvement UNIQUEMENT de cheville (talon bas -> talon haut), vert mollets aux DEUX cases"
-  },
-  {
-   "mouvement": "hip-thrust-barre (femme)",
-   "identifiant": "hip-thrust-barre",
-   "athlete": "femme",
-   "motif": "retiree a la relecture-16 (acceptee lot precedent) : halteres montres au lieu de la BARRE (materiel faux, critere utilisateur)",
-   "planche": "lot anterieur hip-thrust-barre",
-   "strategieSuivante": "lot36 : BARRE longue avec disques aux deux bouts posee sur le pli de hanche, pas d'halteres"
+   "motif": "3e refus (lot36) : genoux flechis (leg press) et/ou vert sur tibias ; case2 generee en planche double",
+   "planche": "lot36/mollets-a-la-presse.png",
+   "strategieSuivante": "lot37 : generer UNE seule case (jambes tendues comme des colonnes, talon bas sous la plaque) puis EDITION de cette meme image pour la case2 (talon haut, sled un peu plus haut) : paire garantie coherente"
   }
  ],
  "verifieesEtAcceptees": [
