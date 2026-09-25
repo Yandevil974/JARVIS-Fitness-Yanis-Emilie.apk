@@ -43,12 +43,14 @@ function buildFigure(spec, t) {
     py = 176 + (p.pelvisY || 0),
     floor = 286;
   if (["sit-machine", "machine-seat"].includes(rig)) py = 210;
-  if (rig === "bench") ((py = 222), (floor = 286));
-  if (rig === "floor-back" || rig === "figure4") ((py = 240), (floor = 280));
+  if (rig === "bench") ((py = 238), (floor = 286));
+  if (rig === "floor-back" || rig === "figure4") ((py = 240 + (p.pelvisY || 0)), (floor = 280));
   if (prone) ((py = 240), (floor = 280));
   if (rig === "plank") ((py = 238), (floor = 284));
   if (rig === "pool") ((py = 208), (floor = 0));
   if (["kneel-rollout", "quadruped", "child"].includes(rig)) ((py = 232), (floor = 284));
+  if (rig === "cobra") ((py = 262), (floor = 284));
+  if (rig === "sit-floor") ((py = 272), (floor = 284));
   if (rig === "hang") py = 156;
   const ink = "#31506e";
   let figure;
@@ -68,8 +70,9 @@ function buildFigure(spec, t) {
     const dir = prone ? 1 : -1;
     const chestP = [px + dir * L.torso * Math.cos(((p.torso ?? 8) - (prone ? 0 : 0)) * RAD) * (prone ? -1 : -1), py - (lying ? L.torso * Math.sin((p.torso ?? 8) * RAD) * 0.25 : 0)];
     const hip = [px, py];
-    const knee = joint(hip[0], hip[1], prone ? 92 * dir : 90 - (p.hip ?? 8), lying ? L.thigh : L.thigh * 0.9);
-    const ankle = joint(knee[0], knee[1], prone ? 178 : 178 - (p.knee ?? 90), L.shin);
+    const knee = joint(hip[0], hip[1], prone ? -96 + (p.hip ?? 4) : 90 - (p.hip ?? 8), lying ? L.thigh : L.thigh * 0.9);
+    const ankle = joint(knee[0], knee[1], prone ? -96 + (p.hip ?? 4) - (p.knee ?? 6) : 178 - (p.knee ?? 90), L.shin);
+    if (!prone && p.legUp) { knee[1] -= p.legUp; ankle[1] -= p.legUp; }
     const head = [chestP[0] + dir * 14, chestP[1] - 6];
     const sh = [chestP[0] + dir * -2, chestP[1] + 6];
     const elbow = joint(sh[0], sh[1], prone ? 40 : 90 + (p.shoulder ?? 0), L.upper);
@@ -78,9 +81,11 @@ function buildFigure(spec, t) {
       <g color={ink}>
         <line x1={hip[0]} y1={hip[1]} x2={chestP[0]} y2={chestP[1]} stroke={ink} strokeWidth={15} strokeLinecap="round" />
         <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
+        {!prone && p.legStraight2 && <Poly pts={[hip, [hip[0] - 50, hip[1] + 2], [hip[0] - 98, hip[1] + 2]]} w={9} o={0.45} />}
         <Poly pts={[hip, knee, ankle]} w={9} />
         {!prone && <Poly pts={[sh, elbow, hand]} w={7} />}
         {rig === "bench" && <Bar hand={hand} />}
+        {p.bar === "hips" && <Bar hand={[hip[0] + 10, hip[1] - 12]} wide={40} />}
       </g>
     );
   } else if (rig === "plank") {
@@ -97,10 +102,25 @@ function buildFigure(spec, t) {
         <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
       </g>
     );
-  } else if (rig === "kneel-rollout" || rig === "quadruped") {
+  } else if (rig === "kneel-rollout") {
+    const rt = ((p.torso ?? 30) - 30) / 38;
+    const hip = [252 - 20 * rt, 230 + 12 * rt];
+    const chestP = [194 - 22 * rt, 218 + 17 * rt];
+    const hand = [215 - 85 * rt, 268 + 4 * rt];
+    const knee = [254, floor - 8];
+    figure = (
+      <g color={ink}>
+        <Poly pts={[hip, knee, [knee[0] + 20, floor - 2]]} w={9} />
+        <line x1={hip[0]} y1={hip[1]} x2={chestP[0]} y2={chestP[1]} stroke={ink} strokeWidth={14} strokeLinecap="round" />
+        <circle cx={chestP[0] - 5} cy={chestP[1] - 18} r={L.head} fill={ink} />
+        <Poly pts={[chestP, hand]} w={7} />
+        <circle cx={hand[0] - 6} cy={floor - 10} r="10" fill="none" stroke={ink} strokeWidth="5" />
+      </g>
+    );
+  } else if (rig === "quadruped") {
     const chestP = joint([px - 6, py][0], py, 66 + (p.torso ?? 20) * 0.5, 34, false);
     const head = [chestP[0] - 14, chestP[1] + 6];
-    const hand = rig === "quadruped" ? [chestP[0] - 18, floor - 4] : joint(chestP[0], chestP[1], 128 + (p.shoulder ?? 8) * 0.2, 30);
+    const hand = [chestP[0] - 18, floor - 4];
     const hip = [px + 34, py + (p.hip ?? 60) * 0.16];
     const knee = [px + 44, floor - 14];
     figure = (
@@ -109,19 +129,57 @@ function buildFigure(spec, t) {
         <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
         <Poly pts={[hip, knee, [px + 22, floor - 2]]} w={9} />
         <Poly pts={[chestP, hand]} w={7} />
-        {rig === "kneel-rollout" && <circle cx={hand[0] - 6} cy={floor - 10} r="10" fill="none" stroke={ink} strokeWidth="5" />}
         {p.side && <Poly pts={[hip, [hip[0] + 6, hip[1] - (p.knee ?? 60) * 0.4], [hip[0] + 26, hip[1] - (p.knee ?? 60) * 0.5]]} w={8} o={0.6} />}
       </g>
     );
   } else if (rig === "child") {
-    const hip = [px + 30, floor - 26];
-    const chestP = joint(hip[0], hip[1], 208 + (p.torso ?? 60) * 0.2, 52, true);
-    const hand = [chestP[0] - 46, floor - 2];
+    const ct = (p.torso ?? 60) - 60;
+    const hip = [250, 264];
+    const chestP = [195 - ct * 0.3, 272 - ct * 0.4];
+    const hand = [chestP[0] - 55, floor - 2];
+    const amid = [(chestP[0] + hand[0]) / 2, (chestP[1] + hand[1]) / 2 - 2];
     figure = (
       <g color={ink}>
-        <Poly pts={[chestP, hip, [hip[0] + 8, floor - 2]]} w={14} />
-        <circle cx={chestP[0] - 12} cy={chestP[1] - 6} r={L.head} fill={ink} />
-        <Poly pts={[chestP, hand]} w={7} />
+        <line x1={hip[0]} y1={hip[1]} x2={chestP[0]} y2={chestP[1]} stroke={ink} strokeWidth={14.5} strokeLinecap="round" />
+        <Poly pts={[hip, [228, 280], [272, 282]]} w={9} />
+        <Poly pts={[chestP, amid, hand]} w={7} />
+        <circle cx={chestP[0] - 12} cy={chestP[1] + 8} r={L.head} fill={ink} />
+      </g>
+    );
+  } else if (rig === "cobra") {
+    const hip = [250, 268];
+    const cc = (p.torso ?? 40) * RAD;
+    const sh = [hip[0] - 60 * Math.cos(cc), hip[1] - 60 * Math.sin(cc)];
+    const head = [sh[0] - 10, sh[1] - 16];
+    const hand = [sh[0] + 4, floor - 6];
+    figure = (
+      <g color={ink}>
+        <line x1={hip[0]} y1={hip[1]} x2={sh[0]} y2={sh[1]} stroke={ink} strokeWidth={14.5} strokeLinecap="round" />
+        <Poly pts={[hip, [hip[0] + 50, hip[1] + 8], [hip[0] + 98, hip[1] + 10]]} w={9} />
+        <Poly pts={[sh, hand]} w={7} />
+        <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
+      </g>
+    );
+  } else if (rig === "front") {
+    const hipF = [210, 176 + (p.crouch || 0)];
+    const chestF = [210 + (p.lean || 0), hipF[1] - 60];
+    const headF = [chestF[0], chestF[1] - 20];
+    const legF = (sd, ang, tang) => {
+      const k = joint(hipF[0] + sd * 4, hipF[1], sd * ang, L.thigh);
+      return [[hipF[0] + sd * 4, hipF[1]], k, joint(k[0], k[1], sd * tang, L.shin)];
+    };
+    const armF = (sh2, ang, bend) => {
+      const e = joint(sh2[0], sh2[1], ang, L.upper);
+      return [sh2, e, joint(e[0], e[1], ang + bend, L.fore)];
+    };
+    figure = (
+      <g color={ink}>
+        <Poly pts={legF(-1, p.legL ?? 20, p.legTibL ?? 5)} w={9} o={p.legGhost ?? 1} />
+        <Poly pts={legF(1, p.legR ?? 20, p.legTibR ?? 5)} w={9} />
+        <line x1={hipF[0]} y1={hipF[1]} x2={chestF[0]} y2={chestF[1]} stroke={ink} strokeWidth={14.5} strokeLinecap="round" />
+        <Poly pts={armF([chestF[0] + 8, chestF[1] + 4], p.armR ?? 10, p.armBendR ?? 5)} w={7} />
+        <Poly pts={armF([chestF[0] - 8, chestF[1] + 4], -(p.armL ?? 10), -(p.armBendL ?? 5))} w={7} />
+        <circle cx={headF[0]} cy={headF[1]} r={L.head} fill={ink} />
       </g>
     );
   } else {
@@ -147,6 +205,17 @@ function buildFigure(spec, t) {
       const k2 = [hip[0] - 16, hip[1] + 4];
       leg2 = [hip, k2, [k2[0] + 4, k2[1] + L.shin]];
     }
+    if (!leg2 && p.stance) {
+      leg2 = [hip, [hip[0] - 2, hip[1] + L.thigh], [hip[0] - 2, hip[1] + L.thigh + L.shin]];
+    }
+    if (!leg2 && p.lungeBack) {
+      const f2 = [hip[0] - 38, floor - 8];
+      leg2 = [hip, [hip[0] + (f2[0] - hip[0]) * 0.51, hip[1] + (f2[1] - hip[1]) * 0.51], f2];
+    }
+    if (!leg2 && p.kneel) leg2 = [hip, [hip[0] - 8, floor - 4], [hip[0] - 52, floor - 2]];
+    if (!leg2 && p.bent2) leg2 = [hip, [hip[0] + 20, hip[1] + 2], [hip[0] + 6, hip[1] + 6]];
+    if (!leg2 && p.cross2) leg2 = [hip, [hip[0] + 25, hip[1] + 8], [hip[0] + 48, hip[1] - 6]];
+    if (!leg2 && p.lift2) leg2 = [hip, [hip[0] - 15, hip[1] + 30], [hip[0] - 25, hip[1] + 15]];
     const chestP = hang
       ? joint(hip[0], hip[1], (p.torso ?? 2), L.torso, true)
       : joint(hip[0], hip[1], p.torso ?? 4, L.torso, true);
@@ -164,12 +233,17 @@ function buildFigure(spec, t) {
       <g color={ink}>
         {leg2 && <Poly pts={leg2} w={9} o={0.45} />}
         <Poly pts={[hip, knee, ankle]} w={9} />
-        <Poly pts={[ankle, [ankle[0] + 15, ankle[1] + 2]]} w={5} />
+        {p.step && <rect x={ankle[0] - 2} y={floor - 30} width={74} height={30} fill="#cbb79a" opacity={0.85} />}
+        {p.step ? (
+          <Poly pts={[ankle, [ankle[0] - 6, floor - 30 + (p.heelDrop || 0) * 14], [ankle[0] + 15, floor - 30]]} w={5} />
+        ) : (
+          <Poly pts={[ankle, [ankle[0] + 15, (ankle[1] + 2) * (1 - (p.toeLift || 0)) + (floor - 1) * (p.toeLift || 0)]]} w={5} />
+        )}
         <line x1={hip[0]} y1={hip[1]} x2={chestP[0]} y2={chestP[1]} stroke={ink} strokeWidth={14.5 * (p.chest || 1)} strokeLinecap="round" />
         <Poly pts={armBack} w={6} o={0.35} />
         <Poly pts={[sh, elbow, hand]} w={7} />
         <circle cx={head[0]} cy={head[1]} r={L.head} fill={ink} />
-        {rig === "hang" && <line x1={hand[0] - 22} y1={60} x2={hand[0] + 34} y2="60" stroke={ink} strokeWidth="7" strokeLinecap="round" />}
+        {rig === "hang" && <line x1={hand[0] - 22} y1={hand[1]} x2={hand[0] + 34} y2={hand[1]} stroke={ink} strokeWidth="7" strokeLinecap="round" />}
         <Props p={p} sh={sh} elbow={elbow} hand={hand} chest={chestP} hip={hip} knee={knee} ankle={ankle} floor={floor} />
       </g>
     );
@@ -219,6 +293,10 @@ function Props({ p, sh, elbow, hand, chest, hip, ankle, floor }) {
       <path key="bd" d={`M ${hand[0]} ${hand[1]} Q ${(hand[0] + 280) / 2} ${Math.max(hand[1], 250) + 12} 280 250`} stroke="#e0a24f" strokeWidth="4" fill="none" />,
     );
   if (p.grab) out.push(<line key="gr" x1={hand[0]} y1={hand[1]} x2={ankle[0]} y2={ankle[1] - 14} stroke="#46617f" strokeWidth="4" strokeLinecap="round" />);
+  if (p.support === "left") {
+    out.push(<line key="sp" x1={120} y1={84} x2={120} y2={284} stroke="#cbb79a" strokeWidth="10" strokeLinecap="round" />);
+    out.push(<line key="sa" x1={sh[0] - 6} y1={sh[1] + 2} x2={120} y2={sh[1] + 30} stroke="#31506e" strokeWidth="7" strokeLinecap="round" />);
+  }
   return out;
 }
 function HumanAnim({ spec, paused = false, reduced = false, small = false, className = "" }) {

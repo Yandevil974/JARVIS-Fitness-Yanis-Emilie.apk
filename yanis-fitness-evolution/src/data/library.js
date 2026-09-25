@@ -90,11 +90,12 @@ function patternFor(name, m) {
     return "hinge";
   if (/mollet/.test(n)) return "calf";
   if (/rowing|tirage horizontal|face pull/.test(n)) return "row";
-  if (/traction|tirage vertical|pullover/.test(n)) return "pull";
+  if (/traction|tirage vertical|pullover|pull up|chin up/.test(n)) return "pull";
   if (m === "bic") return "curl";
   if (m === "tri") return "triceps";
   if (/elevation|ecarte/.test(n)) return "lat";
-  if (/militaire|nuque|halteres assis/.test(n)) return "raise";
+  if (/militaire|nuque|halteres assis|developpe (haltere )?un bras/.test(n))
+    return "raise";
   if (m === "pec") return "press";
   if (["abs", "tra"].includes(m)) return "crunch";
   return "static";
@@ -185,7 +186,33 @@ const extra = [
   ],
 ];
 for (const row of extra) rows.set(slug(row[0]), { row, sources: ["jarvis"] });
-const guides = { ...legacy.elite.MUSCU_GUIDES, ...legacy.emilie.MUSCU_GUIDES };
+const _guides = { ...legacy.elite.MUSCU_GUIDES, ...legacy.emilie.MUSCU_GUIDES };
+// Index normalise (audit visuels 2026-09-25) : les cles sources contiennent
+// apostrophes, tirets et tirets longs (« tractions (pull-up) »,
+// « ... — myo-reps », « ... a l'elastique ») alors que le lookup utilisait la
+// forme normalisee (norm) — 20 GIF exacts n'etaient jamais trouves et les
+// exercices retombaient sur une variante. L'index restaure l'exact.
+// Verifie : aucune collision de norm sur les 115 cles ; les 6 refs restent
+// resolubles via norm(ref).
+const guides = new Map();
+for (const [k, v] of Object.entries(_guides)) {
+  const nk = norm(k);
+  if (!guides.has(nk)) guides.set(nk, v);
+}
+// GIF sources rejetes apres verification visuelle frame par frame : le geste
+// montre est faux (pas le bon exercice). Le conseil (tip) est conserve, seule
+// l'image est ignoree — l'exercice retombe sur sa variante explicite.
+// - « kickback a l elastique » : 04ab405e919744b5.gif montre un rowing
+//   haltere un bras sur banc, pas un kickback fessier (la variante « Kickback
+//   a la poulie » est correcte et prend le relais).
+const GIF_EXCLUS = new Set(["kickback a l elastique"]);
+function guideFor(name) {
+  const n = norm(name);
+  let g = guides.get(n);
+  if (g?.ref) g = guides.get(norm(g.ref)) || guides.get(g.ref);
+  if (g?.img && GIF_EXCLUS.has(n)) g = { ...g, img: null };
+  return g;
+}
 // Vérifié à l'audit : « french press barre EZ » → ea226c444f72de0f.gif et
 // « french press poulie basse » → 4c2b19fa924f90a8.gif sont déjà corrects et
 // distincts dans les données sources. Aucune réassociation n'est nécessaire.
@@ -249,8 +276,7 @@ export const PATTERN_INFO = {
 export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
   const [name, muscle, sets, reps, tempo, rest, note] = row;
   const n = norm(name);
-  let guide = guides[n];
-  if (guide?.ref) guide = guides[guide.ref];
+  const guide = guideFor(name);
   const pattern = patternFor(name, muscle);
   const equipment = equipmentFor(name);
   const numbers = String(reps).match(/\d+/g)?.map(Number) || [10];

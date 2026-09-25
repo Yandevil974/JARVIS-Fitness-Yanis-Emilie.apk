@@ -9,6 +9,7 @@
 // moteur de mouvement humain (human-motion.js) avec le bon geste.
 import { EXERCISES } from "../data/library.js";
 import { norm } from "./utils.js";
+import { EXERCISE_MOTIONS } from "./human-motion.js";
 export const EXPLICIT_MATCHES = {
   "pont-fessier-au-sol-activation": "Glute bridge pieds sur banc",
   "kickback-a-l-elastique": "Kickback à la poulie",
@@ -96,7 +97,6 @@ export const EXPLICIT_MATCHES = {
   "safety-bar-squat-ou-barre-classique": "Back squat",
   "squat-au-poids-du-corps": "Goblet squat",
   "leg-press-unilateral": "Leg press",
-  "leg-extension": "Leg press",
   "mollets-a-la-presse": "Mollets debout",
   "fentes-barre": "Fentes avant alternées",
   "fentes-marchees": "Fentes avant alternées",
@@ -107,7 +107,7 @@ export const EXPLICIT_MATCHES = {
   "split-squat-poulie-basse": "Bulgarian split squat",
   "split-squat-barbell-pied-avant-sureleve": "Bulgarian split squat",
   "good-morning-debout": "Soulevé de terre roumain barre",
-  "glute-ham-raise": "Leg curl allongé",
+  "glute-ham-raise": "Back extension horizontal",
   "souleve-de-terre-partiel": "Soulevé de terre",
   "souleve-de-terre-partiel-prise-snatch": "Soulevé de terre",
   "back-extension-45-prise-snatch": "Back extension horizontal",
@@ -170,6 +170,13 @@ for (const exercise of EXERCISES) {
     });
     continue;
   }
+  // Priorité à l'animation créée (audit visuels 2026-09-25) : quand le moteur
+  // human-motion définit le geste exact de l'exercice (respiration, wood chop,
+  // ab wheel...), on ne cherche PAS de GIF « famille » — le score automatique
+  // recréait les associations hors sujet retirées à l'audit (respiration →
+  // mountain climbers, ab wheel → reverse crunch, wood chop → crunch poulie).
+  // Ordre : exact > variante explicite > animation créée > famille.
+  if (EXERCISE_MOTIONS[exercise.id]) continue;
   const family = familyMatch(exercise);
   if (family?.gif)
     demoCache.set(exercise.id, {
