@@ -6,7 +6,11 @@
   "back-squat",
   "bras-tendu-contre-la-poitrine",
   "bras-tendu-contre-le-mur",
+  "bras-tendu-derriere",
+  "bras-tendu-devant-main-tiree",
   "burpees",
+  "cobra-doux",
+  "coude-au-dessus-de-la-tete",
   "crunch",
   "developpe-couche-barre",
   "developpe-militaire-debout",
@@ -18,6 +22,9 @@
   "elliptique-mise-en-route",
   "elliptique-recuperation-active",
   "elliptique-retour-au-calme",
+  "etirement-contre-le-mur",
+  "etirement-du-cobra",
+  "etirement-du-flechisseur-de-hanche-chevalier",
   "etirement-du-piriforme-assis",
   "fentes-alternees",
   "flexion-avant-jambes-tendues",
@@ -42,83 +49,6 @@
   "transition"
  ],
  "restants": [
-  {
-   "identifiant": "bras-tendu-derriere",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Bras tendu derrière"
-   ],
-   "slugs": [
-    "bras-tendu-derriere"
-   ]
-  },
-  {
-   "identifiant": "bras-tendu-devant-main-tiree",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Bras tendu devant, main tirée"
-   ],
-   "slugs": [
-    "bras-tendu-devant-main-tiree"
-   ]
-  },
-  {
-   "identifiant": "etirement-du-flechisseur-de-hanche-chevalier",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Étirement du fléchisseur de hanche (chevalier)"
-   ],
-   "slugs": [
-    "etirement-du-flechisseur-de-hanche-chevalier"
-   ]
-  },
-  {
-   "identifiant": "cobra-doux",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Cobra doux"
-   ],
-   "slugs": [
-    "cobra-doux"
-   ]
-  },
-  {
-   "identifiant": "etirement-du-cobra",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Étirement du cobra"
-   ],
-   "slugs": [
-    "etirement-du-cobra"
-   ]
-  },
-  {
-   "identifiant": "etirement-contre-le-mur",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Étirement contre le mur"
-   ],
-   "slugs": [
-    "etirement-contre-le-mur"
-   ]
-  },
-  {
-   "identifiant": "coude-au-dessus-de-la-tete",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Coude au-dessus de la tête"
-   ],
-   "slugs": [
-    "coude-au-dessus-de-la-tete"
-   ]
-  },
   {
    "identifiant": "mains-croisees-derriere-le-dos",
    "surface": "etirement",
@@ -4105,11 +4035,11 @@
   }
  ],
  "chiffres": {
-  "faits": 40,
-  "restants": 299,
+  "faits": 47,
+  "restants": 292,
   "total": 343,
   "par_surface": {
-   "etirement": 17,
+   "etirement": 10,
    "musculation": 189,
    "piscine": 19,
    "piscine-protocole": 41,
