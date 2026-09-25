@@ -228,10 +228,21 @@ Relecture batch 8 : 3/3 conformes (echauffement-mobilite, echauffement-series-d-
 elevations-laterales-assises-variante). Feuilles : `verification/lot27-01..03.jpg`,
 `verification/relecture-08.jpg`.
 
-## 26. Couverture et suite
+## 27. Lot 28 (meme tour)
 
-Relus sur les onze tours : **162 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **181 valides** actuels, **44 restent à relire** (feuilles de 3, mêmes outils).
+Acceptees 7 : souleve-de-terre-roumain-halteres (reformulation sobre apres blocage moderation),
+developpe-couche-decline-prise-serree, ecartes-halteres et developpe-halteres-plat (vue axiale
+cote tete, coherente aux deux cases), leg-extension (machine ancree), pont-fessier-au-sol-activation,
+pompes-inclinees-mains-surelevees. Refusees 2 : elevations-laterales-coude-a-90 (3e : vert enfin
+limite aux deltoïdes mais textes START/END incrustes et 4 halteres en case fin),
+mountain-climbers (6e : l'edition ancree sur les chaussures n'a pas permute les jambes).
+Relecture batch 9 : 3/3 conformes (elevations-laterales-assises, elevations-laterales-lean-away,
+elliptique-fractionne). Feuilles : `verification/lot28-01..03.jpg`, `verification/relecture-09.jpg`.
+
+## 28. Couverture et suite
+
+Relus sur les douze tours : **172 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **188 valides** actuels, **41 restent à relire** (feuilles de 3, mêmes outils).
 Production : **137 / 331** ; restants 194 (musculation 112, protocoles piscine 40,
 tabata au sol 27, piscine guides 9, aqua tabata 6). **3 planches en attente** dans
 `production/a-refaire.json` : rowing-barre-buste-penche-test-3-5-reps (3ᵉ refus),

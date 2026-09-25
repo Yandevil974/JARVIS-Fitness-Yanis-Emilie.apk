@@ -4,17 +4,17 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 331,
-  "valides": 181,
-  "restants": 150,
+  "valides": 188,
+  "restants": 143,
   "valides_par_surface": {
    "cardio-elliptique": 5,
    "echauffement": 3,
    "etirement": 29,
-   "musculation": 134,
+   "musculation": 141,
    "tabata-au-sol": 10
   },
   "restants_par_surface": {
-   "musculation": 68,
+   "musculation": 61,
    "piscine": 9,
    "piscine-protocole": 40,
    "tabata-aqua": 6,
@@ -78,6 +78,7 @@
   "dead-bug|femme",
   "developpe-couche-barre-plat|homme",
   "developpe-couche-barre|homme",
+  "developpe-couche-decline-prise-serree|homme",
   "developpe-couche-halteres|femme",
   "developpe-couche-prise-serree|homme",
   "developpe-couche-test-1rm|homme",
@@ -85,6 +86,7 @@
   "developpe-halteres-assis-neutre-pronation|homme",
   "developpe-halteres-assis-prise-neutre|homme",
   "developpe-halteres-assis|homme",
+  "developpe-halteres-plat|homme",
   "developpe-incline-barre|homme",
   "developpe-militaire-debout|homme",
   "developpe-militaire-halteres-assis-test-3-5-reps|femme",
@@ -93,6 +95,7 @@
   "dips|homme",
   "drop-lunges-fentes-controlees|homme",
   "ecartes-cables-incline|homme",
+  "ecartes-halteres|homme",
   "echauffement-mise-en-route|homme",
   "echauffement-mobilite|homme",
   "echauffement-series-d-approche|homme",
@@ -147,6 +150,7 @@
   "leg-curl-allonge|homme",
   "leg-curl-debout|homme",
   "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
+  "leg-extension|homme",
   "main-dans-le-dos|homme",
   "mains-croisees-derriere-le-dos|homme",
   "mollet-en-escalier|homme",
@@ -154,7 +158,9 @@
   "mollets-debout|homme",
   "mountain-climbers|homme",
   "pigeon-assis|homme",
+  "pompes-inclinees-mains-surelevees|femme",
   "pompes|homme",
+  "pont-fessier-au-sol-activation|femme",
   "position-de-l-enfant-balasana|homme",
   "position-de-l-enfant|homme",
   "presse-a-cuisses-pieds-hauts|femme",
@@ -180,6 +186,7 @@
   "safety-bar-squat-ou-barre-classique|homme",
   "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
   "souleve-de-terre-roumain-barre|homme",
+  "souleve-de-terre-roumain-halteres|homme",
   "souleve-de-terre-test-1rm|homme",
   "souleve-de-terre|homme",
   "split-squat-barbell-pied-avant-sureleve|homme",
@@ -235,14 +242,6 @@
    "surface": "musculation",
    "noms": [
     "Drop lunges (fentes sautées contrôlées)"
-   ]
-  },
-  {
-   "identifiant": "developpe-couche-decline-prise-serree",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé couché décliné prise serrée"
    ]
   },
   {
@@ -393,14 +392,6 @@
    ]
   },
   {
-   "identifiant": "developpe-halteres-plat",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Développé haltères plat"
-   ]
-  },
-  {
    "identifiant": "respiration-diaphragmatique",
    "athlete": "homme",
    "surface": "musculation",
@@ -430,14 +421,6 @@
    "surface": "musculation",
    "noms": [
     "Gainage latéral dynamique"
-   ]
-  },
-  {
-   "identifiant": "ecartes-halteres",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Écartés haltères"
    ]
   },
   {
@@ -507,14 +490,6 @@
    ]
   },
   {
-   "identifiant": "leg-extension",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Leg extension"
-   ]
-  },
-  {
    "identifiant": "extension-triceps-a-la-poulie",
    "athlete": "femme",
    "surface": "musculation",
@@ -544,14 +519,6 @@
    "surface": "musculation",
    "noms": [
     "Extensions triceps poulie"
-   ]
-  },
-  {
-   "identifiant": "pont-fessier-au-sol-activation",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Pont fessier au sol — activation"
    ]
   },
   {
@@ -595,14 +562,6 @@
    ]
   },
   {
-   "identifiant": "souleve-de-terre-roumain-halteres",
-   "athlete": "homme",
-   "surface": "musculation",
-   "noms": [
-    "Soulevé de terre roumain haltères"
-   ]
-  },
-  {
    "identifiant": "hip-thrust-unilateral-1-jambe",
    "athlete": "femme",
    "surface": "musculation",
@@ -624,14 +583,6 @@
    "surface": "musculation",
    "noms": [
     "Relevés de jambes incliné"
-   ]
-  },
-  {
-   "identifiant": "pompes-inclinees-mains-surelevees",
-   "athlete": "femme",
-   "surface": "musculation",
-   "noms": [
-    "Pompes inclinées (mains surélevées)"
    ]
   },
   {

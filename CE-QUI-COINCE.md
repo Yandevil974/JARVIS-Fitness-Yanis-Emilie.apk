@@ -8,11 +8,10 @@ bloquants ou qui demandent une décision.
 
 | Mouvement | Ce qui coince, mesuré | Déjà essayé | Solution prévue au prochain tour | Décision attendue de vous |
 |---|---|---|---|---|
-| **Mountain climbers (femme)** — 5 refus | cases assemblées : pieds nus d'un côté, chaussures de l'autre, et même jambe avant | prompt permuté, édition de planche, cases séparées, proche/lointaine, cadrage imposé | **éditer UNE seule case** (lot27-case1, chaussures imposées) : « tends la jambe pliée vers l'arrière et amène le genou de l'autre jambe sous la poitrine » ; assembler ensuite case éditée + case d'origine inversée | aucune |
-| **Élévations latérales coude à 90 (homme)** — 2 refus | géométrie enfin bonne mais vert posé AUSSI sur les abdominaux aux deux cases | départs variés, géométrie avant-bras horizontaux | même prompt géométrique + règle de vert exclusive : « vert UNIQUEMENT sur les deux deltoïdes latéraux ; abdomen, poitrine et bras gardent leur couleur naturelle » | aucune |
+| **Mountain climbers (femme)** — 6 refus | aucune permutation de jambes obtenue, par aucune méthode | prompts permutés, éditions de planche, cases séparées, proche/lointaine, cadrage imposé, édition ancrée chaussures | DERNIER essai généré : édition nommant chaque jambe par la position de sa chaussure dans l'image ; **si échec : je vous soumets le choix** (a) garder une planche jambe unique genou haut/genou bas (moins fidèle au mouvement), (b) supprimer visuellement l'alternance en montrant le mouvement sur 2 hauteurs de genou, (c) me donner vous-même une photo de référence | **oui, si le 7ᵉ essai échoue** |
+| **Élévations latérales coude à 90 (homme)** — 3 refus | vert enfin limité aux deltoïdes, mais textes « START/END » incrustés et 4 haltères en case fin | départs variés, géométrie, vert exclusif | même prompt géométrique + « absolutely no words, no letters, no captions ; exactly TWO dumbbells in the whole sheet, one per hand » | aucune |
 
-Clos ce tour : 7 neuves acceptées ; souleve-de-terre-roumain-halteres reporté d'un tour
-(plafond de 10 générations atteint).
+Clos ce tour : soulevé de terre roumain haltères (après blocage modération, reformulation sobre).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
