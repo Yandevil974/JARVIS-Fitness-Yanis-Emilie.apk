@@ -90,13 +90,25 @@ back-squat-inertie-pause-complete (barre en rack AVANT à gauche puis SUR LE DOS
 la barre saute), burpees (cases inversées : saut à gauche, planche à droite).
 Ces 3 GIF sont retirés des valides et repassent en production.
 
-## 6. Couverture et suite
+## 7. Lot 19 (reprise des planches refusees, meme tour)
 
-Relus ce tour : **70 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
-Sur les **126 valides** actuels, **69 restent à relire** (feuilles de 3, mêmes outils).
-Production : **126 / 331** ; restants 205 (musculation 123, protocoles piscine 40,
-tabata au sol 27, piscine guides 9, aqua tabata 6). **7 planches en attente** dans
-`production/a-refaire.json` : back-extension-horizontal (3ᵉ refus),
-rowing-barre-ez-supination-buste-penche, curl-poulie-basse,
-rowing-barre-buste-penche-test-3-5-reps, back-squat-barre-haute,
-back-squat-inertie-pause-complete, burpees.
+10 generations (1 echec de moderation compte dans le lot : curl-poulie-basse, a retenter).
+Acceptees 4 : rowing-barre-ez-supination-buste-penche (barre complete aux deux bouts,
+supination lisible), burpees (planche a gauche, saut a droite, enfin dans l'ordre),
+hip-thrust-unilateral (pied d'appui seul, genou libre leve), souleve-de-terre-roumain-barre-test-3-5-reps
+(charge lourde, barre sous les genoux, ischios).
+Refusees 5 : back-extension-horizontal (5e refus : tete coupee au bord de la case de fin),
+back-squat-barre-haute (vert sur les adducteurs au lieu des quadriceps),
+back-squat-inertie-pause-complete (rack avant a gauche encore), good-morning-debout
+(barre devant le cou a gauche, derriere a droite), rowing-barre-buste-penche-test-3-5-reps
+(tirage a la hanche, vert absent en case de fin). Feuilles : `verification/lot19-01..03.jpg`.
+
+## 8. Couverture et suite
+
+Relus sur les deux tours : **79 couples** (38 livrés + 10 lot 17 + 12 relecture + 10 lot 18).
+Sur les **130 valides** actuels, **69 restent à relire** (feuilles de 3, mêmes outils).
+Production : **130 / 331** ; restants 201 (musculation 119, protocoles piscine 40,
+tabata au sol 27, piscine guides 9, aqua tabata 6). **6 planches en attente** dans
+`production/a-refaire.json` : back-extension-horizontal (5ᵉ refus), curl-poulie-basse
+(moderation d'image a retenter), rowing-barre-buste-penche-test-3-5-reps,
+back-squat-barre-haute, back-squat-inertie-pause-complete, good-morning-debout.

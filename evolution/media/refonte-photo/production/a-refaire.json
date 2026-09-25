@@ -4,15 +4,9 @@
  "aRefaire": [
   {
    "mouvement": "back-extension-horizontal (homme)",
-   "planche": "lot18/back-extension-horizontal.png",
-   "motif": "3e refus : le banc horizontal (GHD) est enfin bon mais le bras PEND vers le sol en case de depart au lieu d'etre croise sur la poitrine comme en case de fin : saut de posture dans l'animation",
+   "planche": "lot19/back-extension-horizontal.png",
+   "motif": "4e/5e refus : mains croisees enfin obtenues mais la TETE est coupee au bord gauche de la case de fin et le cadrage differe entre les deux cases",
    "prescription": "Back extension horizontal — banc horizontal, buste qui descend vers le sol puis remonte aligne"
-  },
-  {
-   "mouvement": "rowing-barre-ez-supination-buste-penche (homme)",
-   "planche": "lot18/rowing-barre-ez-supination-buste-penche.png",
-   "motif": "1er refus : un HALTERE unique est dessine au lieu d'une BARRE EZ, et la prise supination ne se lit pas",
-   "prescription": "Rowing barre EZ supination, buste penché"
   },
   {
    "mouvement": "curl-poulie-basse (homme)",
@@ -22,27 +16,27 @@
   },
   {
    "mouvement": "rowing-barre-buste-penche-test-3-5-reps (femme)",
-   "planche": "lot18/rowing-barre-buste-penche-test-3-5-reps.png",
-   "motif": "1er refus : le tirage n'apparait pas, la barre reste basse en case de fin ; buste non parallele au sol",
+   "planche": "lot19/rowing-barre-buste-penche-test-3-5-reps.png",
+   "motif": "2e refus : tirage incomplet (barre a la hanche au lieu des cotes) et vert quasi absent en case de fin",
    "prescription": "Rowing barre buste penché — test (3-5 reps)"
   },
   {
    "mouvement": "back-squat-barre-haute (homme)",
-   "planche": "GIF livre (lot precedent)",
-   "motif": "relecture 25/09 : barre en rack AVANT (coude haut, barre sur la poitrine) en case de depart puis barre sur le dos en case de fin : la barre saute d'avant en arriere",
+   "planche": "lot19/back-squat-barre-haute.png",
+   "motif": "2e refus : barre sur le dos dans les DEUX cases (progres) mais le VERT est pose sur les adducteurs/aine au lieu des quadriceps",
    "prescription": "Back squat barre haute"
   },
   {
    "mouvement": "back-squat-inertie-pause-complete (homme)",
-   "planche": "GIF livre (lot precedent)",
-   "motif": "relecture 25/09 : meme defaut, barre en rack AVANT a gauche puis sur le dos a droite",
+   "planche": "lot19/back-squat-inertie-pause-complete.png",
+   "motif": "2e refus : barre encore en rack AVANT en case de depart, sur le dos en case de fin",
    "prescription": "Back squat inertie (pause complète)"
   },
   {
-   "mouvement": "burpees (homme)",
-   "planche": "GIF livre (lot precedent)",
-   "motif": "relecture 25/09 : cases INVERSEES (gauche = saut bras leves = fin, droite = planche = debut)",
-   "prescription": "Burpees"
+   "mouvement": "good-morning-debout (homme)",
+   "planche": "lot19/good-morning-debout.png",
+   "motif": "1er refus : barre devant le cou a gauche, derriere le cou a droite : la barre saute",
+   "prescription": "Good morning debout"
   }
  ],
  "verifieesEtAcceptees": [
