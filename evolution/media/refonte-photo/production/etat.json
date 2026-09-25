@@ -10,6 +10,7 @@
   "bras-tendu-devant-main-tiree",
   "burpees",
   "cobra-doux",
+  "coude-au-dessus-de-la-tete",
   "crunch",
   "developpe-couche-barre",
   "developpe-militaire-debout",
@@ -22,18 +23,22 @@
   "elliptique-recuperation-active",
   "elliptique-retour-au-calme",
   "etirement-contre-le-mur",
+  "etirement-des-extenseurs",
   "etirement-du-cobra",
   "etirement-du-flechisseur-de-hanche-chevalier",
   "etirement-du-piriforme-assis",
   "fentes-alternees",
   "flexion-avant-jambes-tendues",
   "gainage-planche",
+  "grenouille-plantes-jointes",
   "hip-thrust-barre",
   "jumping-jacks",
   "leg-curl-allonge",
+  "mollet-en-escalier",
   "mountain-climbers",
   "pigeon-assis",
   "pompes",
+  "position-de-l-enfant",
   "position-de-l-enfant-balasana",
   "releves-de-jambes",
   "respiration-diaphragmatique-allongee",
@@ -47,25 +52,7 @@
   "tractions-pull-up",
   "transition"
  ],
- "a_refaire": [
-  "coude-au-dessus-de-la-tete",
-  "etirement-des-extenseurs",
-  "grenouille-plantes-jointes",
-  "mollet-en-escalier",
-  "position-de-l-enfant"
- ],
  "restants": [
-  {
-   "identifiant": "coude-au-dessus-de-la-tete",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Coude au-dessus de la tête"
-   ],
-   "slugs": [
-    "coude-au-dessus-de-la-tete"
-   ]
-  },
   {
    "identifiant": "mains-croisees-derriere-le-dos",
    "surface": "etirement",
@@ -111,17 +98,6 @@
    ]
   },
   {
-   "identifiant": "etirement-des-extenseurs",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Étirement des extenseurs"
-   ],
-   "slugs": [
-    "etirement-des-extenseurs"
-   ]
-  },
-  {
    "identifiant": "etirement-des-flechisseurs",
    "surface": "etirement",
    "athlete": "homme",
@@ -130,39 +106,6 @@
    ],
    "slugs": [
     "etirement-des-flechisseurs"
-   ]
-  },
-  {
-   "identifiant": "position-de-l-enfant",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Position de l'enfant"
-   ],
-   "slugs": [
-    "position-de-l-enfant"
-   ]
-  },
-  {
-   "identifiant": "mollet-en-escalier",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Mollet en escalier"
-   ],
-   "slugs": [
-    "mollet-en-escalier"
-   ]
-  },
-  {
-   "identifiant": "grenouille-plantes-jointes",
-   "surface": "etirement",
-   "athlete": "homme",
-   "noms": [
-    "Grenouille (plantes jointes)"
-   ],
-   "slugs": [
-    "grenouille-plantes-jointes"
    ]
   },
   {
@@ -4052,12 +3995,12 @@
   }
  ],
  "chiffres": {
-  "valides": 46,
-  "a_refaire": 5,
+  "valides": 51,
   "total": 343,
-  "restants": 293,
+  "restants": 288,
+  "a_refaire": 0,
   "par_surface": {
-   "etirement": 11,
+   "etirement": 6,
    "musculation": 189,
    "piscine": 19,
    "piscine-protocole": 41,

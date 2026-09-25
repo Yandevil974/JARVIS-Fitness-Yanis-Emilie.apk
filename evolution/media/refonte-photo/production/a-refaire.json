@@ -1,20 +1,34 @@
 {
  "regle": "Une planche n'est acceptee qu'apres lecture de SES DEUX cases. Toute planche refusee est refaite avant d'etre livree : elle n'est jamais comptee comme faite.",
  "methode": "Chaque geste est desormais ecrit en collant la prescription exacte de l'application (evolution/media/refonte-photo/production/prescriptions.json, extraite du paquet livre).",
- "aRefaire": [
-  {"identifiant": "coude-au-dessus-de-la-tete", "motif": "les deux bras sont leves alors que la prescription est unilaterale", "prescription": "Bras plie derriere la tete, poussez le coude vers le bas avec l'autre main."},
-  {"identifiant": "etirement-des-extenseurs", "motif": "montre la paume posee alors que la prescription demande la paume vers le bas et le dos de la main tire vers soi", "prescription": "Bras tendu, paume vers le bas, tirez le dos de la main vers vous."},
-  {"identifiant": "mollet-en-escalier", "motif": "l'avant-pied n'est pas sur la marche et la jambe est pliee : le mollet n'est pas etire", "prescription": "Avant-pied sur une marche, talon qui descend sous le niveau de la marche, jambe tendue."},
-  {"identifiant": "grenouille-plantes-jointes", "motif": "montre un etirement du flechisseur de hanche, pas la grenouille", "prescription": "A genoux sur le tapis, genoux ecartes, plantes de pieds jointes, fessiers vers les talons, front au sol."},
-  {"identifiant": "position-de-l-enfant", "motif": "les bras ne sont pas tendus au sol devant, le dos n'est donc pas etire", "prescription": "Assis sur les talons, bras tendus au sol devant vous, front au sol."}
- ],
+ "aRefaire": [],
  "verifieesEtAcceptees": [
-  "mains-croisees-derriere-le-dos", "etirement-dans-l-encadrement-de-porte", "talon-vers-la-fesse-debout",
-  "etirement-des-flechisseurs", "respiration-diaphragmatique-allongee", "torsion-allongee-genoux",
-  "torsion-allongee", "etirement-du-piriforme-assis", "pigeon-assis", "flexion-avant-jambes-tendues",
-  "position-de-l-enfant-balasana", "suspension-a-la-barre", "bras-tendu-contre-le-mur",
-  "bras-tendu-contre-la-poitrine", "bras-tendu-derriere", "bras-tendu-devant-main-tiree",
-  "etirement-du-flechisseur-de-hanche-chevalier", "cobra-doux", "etirement-du-cobra",
-  "etirement-contre-le-mur", "adduction-de-la-hanche-debout", "allonge-sur-le-cote"
+  "adduction-de-la-hanche-debout",
+  "allonge-sur-le-cote",
+  "bras-tendu-contre-la-poitrine",
+  "bras-tendu-contre-le-mur",
+  "bras-tendu-derriere",
+  "bras-tendu-devant-main-tiree",
+  "cobra-doux",
+  "coude-au-dessus-de-la-tete",
+  "etirement-contre-le-mur",
+  "etirement-dans-l-encadrement-de-porte",
+  "etirement-des-extenseurs",
+  "etirement-des-flechisseurs",
+  "etirement-du-cobra",
+  "etirement-du-flechisseur-de-hanche-chevalier",
+  "etirement-du-piriforme-assis",
+  "flexion-avant-jambes-tendues",
+  "grenouille-plantes-jointes",
+  "mains-croisees-derriere-le-dos",
+  "mollet-en-escalier",
+  "pigeon-assis",
+  "position-de-l-enfant",
+  "position-de-l-enfant-balasana",
+  "respiration-diaphragmatique-allongee",
+  "suspension-a-la-barre",
+  "talon-vers-la-fesse-debout",
+  "torsion-allongee",
+  "torsion-allongee-genoux"
  ]
 }
