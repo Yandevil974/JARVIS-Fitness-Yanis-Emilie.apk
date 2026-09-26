@@ -91,11 +91,11 @@
   {
    "cle": "curl-zottman-assis|homme",
    "numero_signale": 47,
-   "lot": 65,
+   "lot": 66,
    "motif": "Extension de la correction n°46 : Zottman assis.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot65 : essais isolés assis depuis lot11. Nouvelle phase basse supinée avec vert obtenue (47-bas-supination-normalise.png). Essai bas pronation ne tourne que la main à gauche image : droite reste supinée, refus. Haut pronation double main échoue techniquement (blocage modération), compte comme10e appel. Aucun GIF candidat. Prochain : retoucher seulement main DROITE image dans bas pronation, puis mains hautes séparément avec recadrages exacts ; conserver posture assise, source haute guides/47-haut-supination.png. Première sélection de source mal étiquetée debout corrigée et fichiers renommés47 ; ne pas réutiliser ancien montage refusé."
+    "Lot66 : proposition assise4 phases : bas supination, haut supination, haut pronation, bas pronation. Trois retouches individuelles : main droite image basse et deux mains hautes ; deux paumes en haut et deux dos de main en bas pour descente. Corps/caméra conservés, pas miroir ni rotation globale. Réserves raccords des poignets, petites différences de cadrage/poids et rendu vert plus étendu en bas (aspect manchon) ; présence mesurée ne vaut pas validation stylistique. Aucune intégration."
    ],
    "validationUtilisateurRequise": true
   },
@@ -124,11 +124,11 @@
   {
    "cle": "ecartes-halteres|homme",
    "numero_signale": 80,
-   "lot": 62,
+   "lot": 66,
    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
    "statut": "a_produire",
    "reglesPrompt": [
-    "Nom livré Écartés haltères ; n°79 = Écartés câbles incliné, n°81 = décliné. Confirmer inclinaison si nécessaire ; ne pas changer prescription."
+    "Lot66 : GIF livré relu, banc PLAT ; retour utilisateur dit « incliné ». Clarification demandée en fin de lot : garder banc plat et corriger seulement les paumes, ou passer aussi sur banc incliné ? Réponse attendue avant génération/changement du banc. Aucun changement de prescription."
    ],
    "validationUtilisateurRequise": true
   },

@@ -3,7 +3,38 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — Lot65 — Zottman debout46 proposé, assis47 incomplet (26/09/2026)
+## Dernière avancée — Lot66 — Zottman assis47 proposé, clarification80 (26/09/2026)
+
+Workspace restauré d721868 propre ; fetch/reset du dernier distant77af07b, venv recréé.
+**3 générations,3 succès techniques** : main droite image en bas + chaque main haute séparément.
+Source ASSISE lot11 via guides47 lot65, pas la posture debout lot26. Recadrage bas vérifié sur
+TAILLE RÉELLE2096×512 (les aperçus redimensionnés ne donnent pas les coordonnées natives).
+
+**47 proposé en4 phases** : bas supination, haut supination, haut pronation, bas pronation.
+La main basse encore supinée a été corrigée dans zone(1520,0,2096,512) du détail lot65. Deux retouches
+hautes locales, zones(155,185,290,300) et(395,185,530,300) de la photo entière684×768, recomposées
+avec bord fondu sans déplacer le corps. Pas de miroir/rotation globale. Les DEUX paumes sont visibles
+vers caméra en haut de descente, les DEUX dos de mains en bas de descente. Hauts et bas relus.
+Réserves : raccords poignets, légères différences de cadrage/poids, zones vertes plus étendues en bas
+et aspect manchon. Présence de vert mesurée ne signifie pas style approuvé ni harmonisé avec260.
+GIF392×440,4×500ms,sans recalage ; planche2736×808 avec titres hors photo. ROI avant-bras par phase
+dans mesures.json :298/158/166/336 pixels strict lime. Contrôle review/lot66-proposition-47.jpg.
+Reconstruction reproductible : propositions/lot66/assemble.py (Pillow,numpy), sorties isolées.
+
+**80 clarification demandée en réponse de fin de lot** : GIF livré relu, banc PLAT alors que retour
+utilisateur indique « incliné ». Demander : conserver banc plat et corriger seulement les paumes,
+ou passer aussi sur banc incliné ? Réponse attendue ; aucun changement de prescription/génération80.
+Question persistée dans registre retours, clarification.reponse=null, a-refaire.json actualisé.
+**22 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
+**4 sans proposition** :26/80/85/204.
+Tous Zottman46/47/48 ont désormais une proposition4phases, AUCUNE image approuvée. Réserves des lots
+précédents maintenues. verif-ids OK1 ;22 SHA/frames avant-après vérifiés ;395 fichiers livrés inchangés.
+Comparatif refuse4 manquants ; aucun PDF final, aucune intégration et aucun buildAPK.
+Quand toutes reprises prêtes : PDF uniquement reprises AVANT gauche/APRÈS droite, lien chat.
+AVANT étape3 : question vert identique260 ; à construction app : rappeler metcon + piscine nage
+fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder. Rappels toujours non traités.
+
+## Étape précédente — Lot65 — Zottman debout46 proposé, assis47 incomplet (26/09/2026)
 
 Workspace restauré d721868 propre ; fetch/reset du dernier distant6aec8b9, venv recréé.
 **10 appels génération, dont1 échec technique** (dernier haut pronation47 bloqué par modération).

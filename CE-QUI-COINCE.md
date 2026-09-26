@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot65 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot66 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
@@ -27,14 +27,15 @@ La relecture interne antérieure ne remplace pas votre validation.
 
 ## 1. Retours PDF :26 points ouverts, accord utilisateur obligatoire
 
-**21 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
-**5 sans proposition** :26/47/80/85/204.
-Lot65 :10 appels dont1 échec ;46 debout4 phases proposé,392×440,500ms/phase,vert ROI273/146/146/273.
-Réserves raccords poignets, taille/nombre de disques, aplats verts ; pas validé techniquement.
-47 : bas supination avec vert obtenu ; bas pronation main droite image reste supinée ; haut pronation
-échoué. Aucun GIF47. Prochain retoucher mains séparément depuis sources ASSISES lot11, pas lot26 debout.
-Reconstruction lot65/assemble.py (opencv requis), review/lot65-proposition-46.jpg ; détail §82.
-Anciennes réserves maintenues. Aucun livré remplacé ; comparatif bloque5 manquants.
+**22 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
+**4 sans proposition** :26/80/85/204.
+Lot66 :3 générations ;47 assis4phases proposé,392×440,500ms/phase,vert ROI298/158/166/336.
+Deux mains hautes et main droite image basse corrigées localement. Réserves raccords/cadrage/poids,
+zones vertes en bas aspect manchon. Tous Zottman proposés, pas approuvés.
+80 : question posée en réponse finale — banc plat livré, « incliné » dans retour ; garder plat et
+corriger paumes seules, ou incliner aussi ? Attendre réponse persistée dans registre (null actuellement).
+Reconstruction lot66/assemble.py ; review/lot66-proposition-47.jpg ; détail §83.
+Anciennes réserves maintenues. Aucun livré remplacé ; comparatif bloque4 manquants.
 PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.
 
 ### Rappels obligatoires
