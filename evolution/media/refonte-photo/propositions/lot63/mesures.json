@@ -1,0 +1,26 @@
+{
+  "numero": 148,
+  "size": [
+    788,
+    440
+  ],
+  "durees_ms": [
+    500,
+    500
+  ],
+  "recalage": [
+    0,
+    0
+  ],
+  "roi_abdos": [
+    315,
+    110,
+    385,
+    190
+  ],
+  "strict_lime": [
+    0,
+    0
+  ],
+  "validation_utilisateur": false
+}

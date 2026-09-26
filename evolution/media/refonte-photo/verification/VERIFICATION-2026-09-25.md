@@ -1204,3 +1204,42 @@ Comparatif complet refuse10 manquants, aucun PDF final créé. Test SHA/frames d
 Toujours ÉTAPE2. Quand TOUT prêt : PDF uniquement reprises, AVANT gauche/APRÈS droite, lien chat.
 AVANT étape3 : demander choix vert identique260. À construction app : rappeler metcon + piscine
 nage fractionnée et/ou Aqua Tabata pour Émilie ; confirmer avant coder. Aucun rappel considéré traité.
+
+
+## 80. Lot63 — Mountain climbers proposé, prises Scott à finir (26/09/2026)
+
+**10 générations** :4 Mountain climbers,4 Scott,2 latérales90. Toutes réussies techniquement,
+mais les résultats restent soumis au contrôle du geste. Aucune génération supplémentaire ce tour.
+
+- **148 proposé** : photo genou proche plié ; édition directe refusée (même jambe encore pliée).
+  Guide jambes peintes produit d’abord une planche jambes tendues ; édition de cette base permet
+  enfin de plier la jambe éloignée, proche restant tendue. Deux jambes/deux chaussures par case,
+  même orientation tête à gauche, alternance visible, mains et pieds entiers. Pas de miroir.
+  Planche2752×768 ; conversion auto741×440 décalage44/4 abandonnée (déplacement artificiel du
+  tronc). GIF reconstruit depuis photos entières788×440,2×500ms SANS recalage. ROI abdominale
+  [315,110,385,190] :0/0 strict lime ; teinte olive non conforme, réserve style maintenue.
+- **44/45 NON proposés** : référence prise haute37 puis basse37 ignorées à l’échelle photo entière.
+  Progrès : recadrage main seule (145,855,465,1185), édition axe profondeur puis recomposition
+  locale du patch320×330 avec bord fondu donne scott-debut-compose.png. Disque masque une partie
+  de la main, prise exacte à contrôler. Phase haute revient en SUPINATION, refus. Aucun GIF/copie45.
+  Prochain : recadrer main/haltère HAUTS de scott-fin.png (~140,290,455,555), éditer seulement
+  cette zone vers marteau vertical avec guides/prise-neutre.png puis recomposer localement.
+  Vérifier raccords et appui ; ne pas rééditer photo entière, ne pas confondre axe profondeur en
+  bas et vertical en haut. Décor Scott gris et teinte verte atypique restent réserves.
+- **85 refusé** : première phase haute angle peu lisible ; vue haute montre poignets abaissés
+  sous coudes, avant-bras pas horizontaux. Aucune phase basse/GIF. Prochain guide3D coude/poignet
+  dans le même plan horizontal, pas simple changement de caméra.
+
+Guides reproductibles persistés dans propositions/lot63/guides/ (pas seulement .cache).
+Toutes images lues pleine définition ; contrôle final review/lot63-proposition-mountain-climbers.jpg.
+Mesures propositions/lot63/mesures.json. Registre retours et a-refaire mis à jour sans validation.
+**17 propositions sur26 points, aucune approuvée** :19/31/37/38/64/87/90/126/148/149/150/194/222/239/265/298/380.
+**9 sans proposition** :26/44/45/46/47/48/80/85/204.
+Les réserves précédentes restent ouvertes :31 contact,194 cadrage,222/298 eau hanches,239 rotation,
+plus couleur de plusieurs candidats. Proposition ≠ correction techniquement terminée.
+verif-ids OK1 planche ; SHA/frames des17 propositions vérifiés.395 fichiers livrés identiques à HEAD.
+Comparatif complet refuse9 manquants ; aucun PDF final créé. Aucun APK ni livraison remplacé.
+
+Toujours étape2 : quand TOUT prêt, PDF uniquement reprises, AVANT gauche/APRÈS droite et lien chat.
+AVANT étape3 demander choix vert identique260 ; à construction app rappeler metcon + piscine nage
+fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder. Rappels non traités.

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 62,
+  "lot": 63,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -117,7 +117,7 @@
       "retour_utilisateur": "Curl Scott : bras de départ non posé sur le pupitre.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Lot62 : case basse seule vue de face surélevée rétablit appui sur pupitre ; mais main reste SUPINÉE au lieu de neutre. Édition textuelle puis guide peint local échouent à tourner la prise. Pas de case haute ni GIF candidat. Prochain : référence photo recadrée de la prise marteau correcte37 (géométrie main seule), plutôt que refaire tout le corps.",
+      "detail": "Lot63 : références des prises haute puis basse37 ignorées en édition entière. Gros plan main seule enfin modifié en axe profondeur, recomposé localement sans déplacer corps (scott-debut-compose.png). Phase haute générée retourne en supination : REFUS, aucun GIF/copie45. Prochain : recadrer SEULEMENT main/poids de scott-fin.png, éditer vers marteau vertical avec prise haute37 puis recomposer localement comme phase basse ; vérifier raccords, paume et appui avant assembler. Décor Scott gris au lieu parquet, réserve style.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
@@ -132,7 +132,7 @@
       "retour_utilisateur": "Tourner la paume au départ.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Scott commun44/45 : appui bas amélioré, mais paume encore supinée. Aucune copie effectuée ; reprendre avec référence de main neutre issue du37, puis produire la case haute seulement si prise basse correcte.",
+      "detail": "Lot63 : références des prises haute puis basse37 ignorées en édition entière. Gros plan main seule enfin modifié en axe profondeur, recomposé localement sans déplacer corps (scott-debut-compose.png). Phase haute générée retourne en supination : REFUS, aucun GIF/copie45. Prochain : recadrer SEULEMENT main/poids de scott-fin.png, éditer vers marteau vertical avec prise haute37 puis recomposer localement comme phase basse ; vérifier raccords, paume et appui avant assembler. Décor Scott gris au lieu parquet, réserve style.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
@@ -229,7 +229,7 @@
       "retour_utilisateur": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Lot60 : départ bras tendus et final mains/poids coupés avec mouvement de tirage. Refus. Prochain : schéma3D des bras coudes90°, avant-bras horizontaux au même niveau, marge large des deux côtés.",
+      "detail": "Lot63 : position haute seule puis vue surélevée. Premier angle masque flexion ; second montre poignets plus bas que coudes, pas avant-bras horizontaux. REFUS, pas phase basse/GIF. Prochain : guide 3D montrant explicitement les quatre points coude/poignet dans un même plan horizontal, pas simple demande caméra haute.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
@@ -309,13 +309,20 @@
       "nom": "Mountain climbers",
       "retour_utilisateur": "Mountain climbers : image finale avec trois jambes ; supprimer le membre surnuméraire.",
       "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot58 essai1 encore 3 jambes ; essai2 schéma deux jambes : anatomie améliorée mais même jambe pliée deux fois. Reprendre avec deux poses séparées, jambe lointaine dessinée explicitement au second cadre.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot63 : deux jambes dans chaque case ; genou proche ramené au départ, genou éloigné ramené en fin. Édition directe refusée (même jambe), guide passé par planche jambes tendues puis flexion jambe éloignée : alternance obtenue sans miroir. GIF sans recalage, mains/pieds entiers. Teinte abdominale olive, style/couleur non validés ; anatomie et amplitude à apprécier en revue.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/mountain-climbers-homme.gif",
         "sha256": "aa789a750ed2c2c5eb911776b44629b08b31a9a189c5a708704d8284a768340c",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 63,
+        "gif": "evolution/media/refonte-photo/propositions/lot63/gif/homme/mountain-climbers-homme.gif",
+        "sha256": "b0bbbea5a96ea72959f86fe82cfac96f9b13968d51100ed730aeea28b9c79462",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
