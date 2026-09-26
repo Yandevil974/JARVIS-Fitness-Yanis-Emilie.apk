@@ -121,9 +121,13 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 1. **Aucune planche en attente** : `production/a-refaire.json` VIDE. **331/331 couples
    valides** après lot 45 (nage-douce résolue au 2ᵉ essai, nage-douce-respiration du 1ᵉʳ,
    10 copies conformes : 4 protocoles nage douce + 6 aqua tabata).
-   Prochain tour = **livraison finale** : APK signé avec VOTRE cle (jamais publiée, à
-   re-coller ; /tmp/rk.txt mode 0600), images pleine résolution, lien raw unique dans le
-   chat ; en parallèle lot « style » (25 GIF) et relecture des 24 couples restants.
+   **Lot 48 : PDF de revue livré** `livraison/REVUE-331-exercices.pdf` (112 pages, 331
+   exercices numérotés 1→331, nom + athlète + frames 1-2 ; outil `tools/pdf-revue-331.py`) :
+   l'utilisateur relit par NUMÉRO et signalera les coquilles. Lot 47 : APK 1.4.9 NON SIGNÉ
+   construit et contrôlé (§65). Prochain tour = **livraison finale** : APK signé avec VOTRE
+   cle (jamais publiée, à re-coller ; /tmp/rk.txt mode 0600), images pleine résolution,
+   lien raw unique dans le chat ; en parallèle lot « style » (26 GIF) et relecture des
+   21 couples restants. Bloc de reprise copiable : `PASSATION-COPIER-COLLER.md` (racine).
    Résolus au lot 35 : tirage-vertical-prise-neutre (poignées parallèles) et mollets-unilateraux
    (pied libre croisé en l'air). Résolus au lot 34 : ab-wheel et extensions-triceps-barre-ez.
    Résolus au lot 33 : developpe-incline-halteres et tirage-vertical-prise-large.
