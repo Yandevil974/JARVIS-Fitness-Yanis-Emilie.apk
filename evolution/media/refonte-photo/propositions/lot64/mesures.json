@@ -1,0 +1,76 @@
+[
+  {
+    "numero": 44,
+    "size": [
+      264,
+      440
+    ],
+    "frames": 2,
+    "duree_ms": 500,
+    "recalage": [
+      0,
+      0
+    ],
+    "roi_biceps": [
+      67,
+      165,
+      82,
+      215
+    ],
+    "strict_lime": [
+      0,
+      0
+    ],
+    "validation_utilisateur": false
+  },
+  {
+    "numero": 45,
+    "size": [
+      264,
+      440
+    ],
+    "frames": 2,
+    "duree_ms": 500,
+    "recalage": [
+      0,
+      0
+    ],
+    "roi_biceps": [
+      67,
+      165,
+      82,
+      215
+    ],
+    "strict_lime": [
+      0,
+      0
+    ],
+    "validation_utilisateur": false
+  },
+  {
+    "numero": 48,
+    "size": [
+      264,
+      440
+    ],
+    "frames": 4,
+    "duree_ms": 500,
+    "recalage": [
+      0,
+      0
+    ],
+    "roi_biceps": [
+      67,
+      165,
+      82,
+      215
+    ],
+    "strict_lime": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "validation_utilisateur": false
+  }
+]

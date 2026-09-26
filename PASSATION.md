@@ -3,7 +3,43 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — Lot63 — Mountain climbers proposé, prises Scott à finir (26/09/2026)
+## Dernière avancée — Lot64 — propositions Scott44/45 et Zottman48 (26/09/2026)
+
+**7 générations** :2 gros plans Scott haut (premier recadré incorrectement, second exploitable),
+2 gros plans Zottman en pronation haut/bas,2 passages haltères bas hex→ronds,1 retouche peau main
+haute pronation. Toutes techniquement réussies ; premier Scott hors cadre non utilisé.
+Prescriptions44/45/48 relues, inchangées. Aucun miroir/rotation globale. Aucun livré remplacé.
+
+- **44 et45 proposés** : même geste Scott neutre, prescriptions distinctes conservées. Bas repris
+  de lot63/scott-debut-compose.png ; haut issu de scott-fin.png, zone(140,285,465,560) éditée seule
+  puis recomposée. Main haute en marteau vertical, bras/coude appuyés sur pupitre aux deux cases.
+  GIF264×440,2×500ms,sans recalage. Réserves : main basse partiellement cachée par disque, échelle
+  et rendu haltère, raccords à apprécier, décor gris, vert diffus cyan avec débordements sur torse.
+- **48 Zottman un bras banc Scott proposé** : QUATRE phases dans l’ordre bas supination→haut
+  supination→haut pronation→bas pronation. Paumes/dos de main différenciés par retouches locales,
+  coude et pupitre conservés. Haltères ronds aux4 cases ; chiffres35 ajoutés par génération retirés
+  avec texture de disque propre, sans toucher la main. Main haute verte corrigée localement ;
+  recoloration indésirable de l’épaule dans cette génération exclue par masque de main seulement.
+  GIF264×440,4×500ms. Réserves anatomie/raccords/échelle poids/style. Format4 autorisé ≠ images validées.
+
+Reconstruction reproductible : propositions/lot64/assemble.py, uniquement sorties isolées sous lot64
+et reviews. Planches1600×1374 pour44/45,3200×1374 pour48, titres phases hors photos. Contrôles
+review/lot64-proposition-{44,45,48}.jpg ; détails gestes et gros plans lus avant assemblage final.
+ROI biceps[67,165,82,215] strict lime :44=0/0,45=0/0,48=0/0/0/0. Vert visible mais teinte ne satisfait
+pas le seuil strict ; NE PAS annoncer le style terminé. Mesures dans propositions/lot64/mesures.json.
+**20 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
+**6 sans proposition** :26/46/47/80/85/204.
+Les réserves des lots précédents demeurent ouvertes. Proposition ≠ techniquement prête.
+verif-ids OK3 planches ;20 SHA/frames avant-après vérifiés (48 quatre frames),395 fichiers livrés
+inchangés. Outil comparatif refuse6 manquants, aucun PDF final créé. Aucun APK reconstruit.
+
+Suite :46/47 Zottman debout/assis à produire séparément, réutiliser la méthode gros plans mains,
+pas ces postures Scott ;26/80/85/204 restent ouverts. Quand toutes reprises prêtes, PDF seulement
+reprises AVANT gauche/APRÈS droite, lien téléchargeable chat, accord avant intégration.
+AVANT étape3 : poser question vert identique260 ; à construction app : rappeler metcon + piscine
+nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder. Rappels restent non traités.
+
+## Étape précédente — Lot63 — Mountain climbers proposé, prises Scott à finir (26/09/2026)
 
 **10 générations** :4 Mountain climbers,4 Scott,2 latérales90. Toutes réussies techniquement,
 mais les résultats restent soumis au contrôle du geste. Aucune génération supplémentaire ce tour.

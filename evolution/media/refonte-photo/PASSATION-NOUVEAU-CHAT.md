@@ -5,22 +5,23 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot63 — ÉTAPE2, propositions AVANT validation utilisateur
+## État prioritaire lot64 — ÉTAPE2, propositions AVANT validation utilisateur
 
-**17 propositions sur26 points, aucune approuvée** :19/31/37/38/64/87/90/126/148/149/150/194/222/239/265/298/380.
-**9 sans proposition** :26/44/45/46/47/48/80/85/204.
-Lot63 :10 générations ;148 deux jambes/case et genou opposé ramené, GIF sans recalage. Vert strict0/0.
-Scott44/45 : bas amélioré par édition gros plan/recomposition, haut supiné refusé. Prochain : éditer
-uniquement gros plan main haute de scott-fin.png, puis recomposer comme bas ; guides persistés lot63.
-85 : vue haute garde poignets sous coudes, refus. Prochain guide3D points dans même plan horizontal.
-Anciennes réserves maintenues, aucun remplacement livré. Détails VERIFICATION §80.
-Comparatif complet bloque9 manquants. PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt.
+**20 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
+**6 sans proposition** :26/46/47/80/85/204.
+Lot64 :7 générations ;44/45 paire Scott neutre obtenue par retouche locale main haute ;48 Zottman
+Scott4phases (supination bas/haut puis pronation haut/bas). GIF isolés264×440,500ms par phase.
+Réserves prises/raccords/échelle haltère, décor gris et vert cyan diffus non lime (ROI strict tout0).
+Reconstruction propositions/lot64/assemble.py ; reviews lot64-proposition-44/45/48.jpg ; détails §81.
+Suite :46/47 nécessitent poses debout/assis propres et gros plans mains, pas copie posture Scott.
+Anciennes réserves maintenues. Aucun livré remplacé ; comparatif bloque6 manquants.
+PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.
 
 ### Rappels utilisateur OBLIGATOIRES
 1. AVANT étape3, demander choix vert identique260 ; attendre réponse, pas d’uniformisation automatique.
 2. À construction application, rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie ;
    confirmer périmètre avant coder. Registre production/rappels-utilisateur.json.
-Zottman46/47/48 : format4 autorisé mais images toujours refusées.148 = Mountain climbers homme à3 jambes.
+Zottman : format4 autorisé ;48 proposé lot64,46/47 restent sans proposition.148 = Mountain climbers homme à3 jambes.
 
 ## 1. Où l'on en est (mesuré, pas estimé)
 

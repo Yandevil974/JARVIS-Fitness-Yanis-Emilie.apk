@@ -58,22 +58,22 @@
   {
    "cle": "curl-scott-haltere-neutre|homme",
    "numero_signale": 44,
-   "lot": 63,
+   "lot": 64,
    "motif": "Curl Scott : bras de départ non posé sur le pupitre.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot63 : références des prises haute puis basse37 ignorées en édition entière. Gros plan main seule enfin modifié en axe profondeur, recomposé localement sans déplacer corps (scott-debut-compose.png). Phase haute générée retourne en supination : REFUS, aucun GIF/copie45. Prochain : recadrer SEULEMENT main/poids de scott-fin.png, éditer vers marteau vertical avec prise haute37 puis recomposer localement comme phase basse ; vérifier raccords, paume et appui avant assembler. Décor Scott gris au lieu parquet, réserve style."
+    "Lot64 : prise haute marteau obtenue par édition du gros plan, recomposée sans déplacer le corps. Bras/coude sur pupitre en bas et haut ; prise basse axe profondeur depuis lot63. Proposition partagée avec45 (même geste, prescriptions conservées). Réserves : main basse partiellement masquée par disque, dimensions/rendu haltère, vert diffus cyan non lime et débordant, décor gris ; aucun accord ni intégration."
    ],
    "validationUtilisateurRequise": true
   },
   {
    "cle": "curl-scott-haltere-prise-neutre|homme",
    "numero_signale": 45,
-   "lot": 63,
+   "lot": 64,
    "motif": "Tourner la paume au départ.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot63 : références des prises haute puis basse37 ignorées en édition entière. Gros plan main seule enfin modifié en axe profondeur, recomposé localement sans déplacer corps (scott-debut-compose.png). Phase haute générée retourne en supination : REFUS, aucun GIF/copie45. Prochain : recadrer SEULEMENT main/poids de scott-fin.png, éditer vers marteau vertical avec prise haute37 puis recomposer localement comme phase basse ; vérifier raccords, paume et appui avant assembler. Décor Scott gris au lieu parquet, réserve style."
+    "Lot64 : même paire Scott neutre que44, main haute en marteau et appui sur pupitre. Prescriptions spécifiques45 inchangées. Réserves de lecture prise basse, dimensions haltère, teinte/débordement vert et décor gris identiques44 ; proposition non validée."
    ],
    "validationUtilisateurRequise": true
   },
@@ -102,11 +102,11 @@
   {
    "cle": "curl-zottman-un-bras-banc-scott|homme",
    "numero_signale": 48,
-   "lot": 62,
+   "lot": 64,
    "motif": "Extension de la correction n°46 : Zottman un bras banc Scott.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise."
+    "Lot64 : proposition4 phases autorisées en principe : bas supination, haut supination, haut pronation, bas pronation. Retouches locales des mains rendent paume/dos main distincts, sans miroir ni rotation globale. Disques ronds harmonisés, chiffres parasites supprimés localement ; peau main haute retouchée sans recolorer épaule. Réserves anatomie/raccords/échelle haltère, vert diffus cyan non lime et décor gris ; format autorisé ne vaut pas validation de ces images."
    ],
    "validationUtilisateurRequise": true
   },

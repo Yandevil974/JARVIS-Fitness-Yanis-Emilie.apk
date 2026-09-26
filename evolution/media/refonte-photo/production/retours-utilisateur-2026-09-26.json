@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 63,
+  "lot": 64,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -116,13 +116,20 @@
       "nom": "Curl Scott haltère neutre",
       "retour_utilisateur": "Curl Scott : bras de départ non posé sur le pupitre.",
       "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot63 : références des prises haute puis basse37 ignorées en édition entière. Gros plan main seule enfin modifié en axe profondeur, recomposé localement sans déplacer corps (scott-debut-compose.png). Phase haute générée retourne en supination : REFUS, aucun GIF/copie45. Prochain : recadrer SEULEMENT main/poids de scott-fin.png, éditer vers marteau vertical avec prise haute37 puis recomposer localement comme phase basse ; vérifier raccords, paume et appui avant assembler. Décor Scott gris au lieu parquet, réserve style.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot64 : prise haute marteau obtenue par édition du gros plan, recomposée sans déplacer le corps. Bras/coude sur pupitre en bas et haut ; prise basse axe profondeur depuis lot63. Proposition partagée avec45 (même geste, prescriptions conservées). Réserves : main basse partiellement masquée par disque, dimensions/rendu haltère, vert diffus cyan non lime et débordant, décor gris ; aucun accord ni intégration.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
         "sha256": "197187199037767a6d42065141b53e3a51b6e2fa83f78585168bb08b5addebf8",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 64,
+        "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-neutre-homme.gif",
+        "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -131,13 +138,20 @@
       "nom": "Curl Scott haltère, prise neutre",
       "retour_utilisateur": "Tourner la paume au départ.",
       "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot63 : références des prises haute puis basse37 ignorées en édition entière. Gros plan main seule enfin modifié en axe profondeur, recomposé localement sans déplacer corps (scott-debut-compose.png). Phase haute générée retourne en supination : REFUS, aucun GIF/copie45. Prochain : recadrer SEULEMENT main/poids de scott-fin.png, éditer vers marteau vertical avec prise haute37 puis recomposer localement comme phase basse ; vérifier raccords, paume et appui avant assembler. Décor Scott gris au lieu parquet, réserve style.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot64 : même paire Scott neutre que44, main haute en marteau et appui sur pupitre. Prescriptions spécifiques45 inchangées. Réserves de lecture prise basse, dimensions haltère, teinte/débordement vert et décor gris identiques44 ; proposition non validée.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
         "sha256": "7cdb8ca673040b71d58e7cfd064761938c4671d5340147c85a110f443e5014f7",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 64,
+        "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+        "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -176,13 +190,20 @@
       "nom": "Curl Zottman un bras, banc Scott",
       "retour_utilisateur": "Extension de la correction n°46 : Zottman un bras banc Scott.",
       "origine": "extension_variante",
-      "statut": "refuse_interne",
-      "detail": "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot64 : proposition4 phases autorisées en principe : bas supination, haut supination, haut pronation, bas pronation. Retouches locales des mains rendent paume/dos main distincts, sans miroir ni rotation globale. Disques ronds harmonisés, chiffres parasites supprimés localement ; peau main haute retouchée sans recolorer épaule. Réserves anatomie/raccords/échelle haltère, vert diffus cyan non lime et décor gris ; format autorisé ne vaut pas validation de ces images.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
         "sha256": "fa3e504b6d0114181fdefc9fab0cb5189400f8b7b9a851187e0376c54ff868fa",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 64,
+        "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
+        "sha256": "1f1a351d87f5efd4fcd6d1ae9ef8bf9ae36086e67274c2dac63566a86dcd3a2d",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
