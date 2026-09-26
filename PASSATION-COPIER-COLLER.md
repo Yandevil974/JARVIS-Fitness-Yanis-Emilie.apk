@@ -1,11 +1,42 @@
 # BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 67, 26 septembre 2026
 
+## 🚩 Reprise après lot67 — préparation26, génération indisponible (26/09/2026)
+
+**Blocage du tour : outil de génération d’images non disponible.0 appel,0 nouveau rendu,0 nouveau GIF.**
+Dernier lot de production67 inchangé ; NE PAS annoncer un lot68 produit.23 propositions non validées
+sur26, toujours26/85/204 sans proposition. Aucune validation ni intégration.
+
+Le n°26 est préparé dans `evolution/media/refonte-photo/production/preparation-26/BRIEF-REPRISE.md` :
+arrivée seule d’abord, profil fixe visage gauche/station derrière à droite, mains et corde derrière
+la tête, câble continu réellement raccordé et espace à la machine ; contrôler le geste puis produire
+le départ. Il s’agit d’une fiche de composition, PAS d’une image candidate. Ne pas relancer la même
+mauvaise paire entière. Les prescriptions restent inchangées.
+
+À la reprise, vérifier si l’outil de génération est disponible. S’il l’est, repartir de la fiche26 ;
+sinon signaler le blocage sans inventer de rendu ni augmenter les compteurs. Jusqu’à10 appels/tour,
+échecs inclus, aucune famille C, maîtres homme/femme selon profil, mêmes cadrage/orientation/machine,
+début à gauche, pas miroir/rotation globale, vert mesuré sur le corps, lecture pleine définition.
+
+Maintenir le 🚩 et ce bloc de reprise ; si le contexte approche sa limite, prévenir explicitement
+et renvoyer vers PASSATION-COPIER-COLLER.md. Celui-ci reste le bloc à transmettre au nouveau chat.
+Ne pas confondre blocage d’outil et limite de contexte : aucune saturation du contexte n’est mesurée ici.
+
+Avant accord : sorties uniquement sous propositions/, registre validation false, contrôles/mesures.
+**Ne pas exécuter valide-couples.py ni reconstruire la livraison/le PDF principal avant accord.**
+Quand toutes reprises ET réserves sont prêtes : PDF des seules reprises, AVANT gauche/APRÈS droite,
+lien téléchargeable chat, validation utilisateur avant remplacement.
+AVANT étape3 : demander si le vert doit être identique260, attendre la réponse. Construction app :
+rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder.
+Jamais pousser main ; uniquement branche arena/01a0dcad-jarvis-fitness-yanis-emilie-ap. Clé utilisateur
+uniquement, jamais dans Git/chat. Étapes suivantes dans l’ordre inchangées ; IA en dernier.
+
+
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Cette session a repris l'ancienne branche 01a0dbe5 au commit e96e51b. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
 Lire dans l'ordre :
 1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 67, recette, pièges ; anciens compteurs historiques).
 2. CE-QUI-COINCE.md (§0 feuille de route utilisateur, §1 reprises, §3 décisions).
-3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–85.
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–86.
 4. evolution/media/refonte-photo/livraison/LIVRAISON-README.md et manifeste-331.json.
 
 ÉTAPE2 — **26 points ouverts :23 numéros +3 variantes**, aucune proposition approuvée.
@@ -35,11 +66,11 @@ RAPPELS UTILISATEUR OBLIGATOIRES pour plus tard (production/rappels-utilisateur.
    et/ou Aqua tabata pour Émilie**. Confirmer le périmètre avant de coder ces ajouts.
 
 Suite : rester étape2, continuer reprises≤10 par tour puis comparatif complet, accord par numéro avant intégration.
-Détails VERIFICATION §83. Aucun APK reconstruit ce tour ; documents/registre seuls et propositions isolées.
+Détails VERIFICATION §85–86. Aucun APK reconstruit ce tour ; documents/registre seuls et propositions isolées.
 
 Câblage athlète = profil déjà posé dans tools/overlay-331.py : globalThis.__refonteSwap + patch bt + constante If (§70). Yanis homme, Émilie femme pour les variantes produites, désormais toutes disponibles sur piscine/cardio. 33 GIF historiques avec une case sans vert : lot style UNIQUEMENT sur décision utilisateur.
 
-Chaîne après lot : verif-ids.py → lecture des DEUX cases pleine définition (zoom PIL au doute ; enlever bandes grises/grilles 2×2 par PIL) → refonte-sheet.py --athlete homme --out $R/gif/homme --sheet $R/review/lotNN-homme.jpg planches_acceptées → tools/valide-couples.py --athlete homme --lot lotNN --acceptes a,b (copies, manifeste, état, numéros PDF, map) → tools/pdf-revue-331.py → tools/index-general.py → docs → commit + push branche session. Mesurer vert sur CORPS (pas plantes du décor). Ne jamais intégrer les refus.
+Chaîne après ACCORD UTILISATEUR explicite pour intégration (pas pour une proposition isolée) : verif-ids.py → lecture des DEUX cases pleine définition (zoom PIL au doute ; enlever bandes grises/grilles 2×2 par PIL) → refonte-sheet.py --athlete homme --out $R/gif/homme --sheet $R/review/lotNN-homme.jpg planches_acceptées → tools/valide-couples.py --athlete homme --lot lotNN --acceptes a,b (copies, manifeste, état, numéros PDF, map) → tools/pdf-revue-331.py → tools/index-general.py → docs → commit + push branche session. Mesurer vert sur CORPS (pas plantes du décor). Ne jamais intégrer les refus.
 
 Correctif lot55 : payloads-148.mjs lit TOUJOURS l’APK original, plus le cache web modifié ; idempotence payloads/bundle vérifiée sur deux exécutions successives.
 

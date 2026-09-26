@@ -1,5 +1,36 @@
 # 🚧 Ce qui coince — état au 26 septembre 2026, après lot67 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
+## 🚩 Reprise après lot67 — préparation26, génération indisponible (26/09/2026)
+
+**Blocage du tour : outil de génération d’images non disponible.0 appel,0 nouveau rendu,0 nouveau GIF.**
+Dernier lot de production67 inchangé ; NE PAS annoncer un lot68 produit.23 propositions non validées
+sur26, toujours26/85/204 sans proposition. Aucune validation ni intégration.
+
+Le n°26 est préparé dans `evolution/media/refonte-photo/production/preparation-26/BRIEF-REPRISE.md` :
+arrivée seule d’abord, profil fixe visage gauche/station derrière à droite, mains et corde derrière
+la tête, câble continu réellement raccordé et espace à la machine ; contrôler le geste puis produire
+le départ. Il s’agit d’une fiche de composition, PAS d’une image candidate. Ne pas relancer la même
+mauvaise paire entière. Les prescriptions restent inchangées.
+
+À la reprise, vérifier si l’outil de génération est disponible. S’il l’est, repartir de la fiche26 ;
+sinon signaler le blocage sans inventer de rendu ni augmenter les compteurs. Jusqu’à10 appels/tour,
+échecs inclus, aucune famille C, maîtres homme/femme selon profil, mêmes cadrage/orientation/machine,
+début à gauche, pas miroir/rotation globale, vert mesuré sur le corps, lecture pleine définition.
+
+Maintenir le 🚩 et ce bloc de reprise ; si le contexte approche sa limite, prévenir explicitement
+et renvoyer vers PASSATION-COPIER-COLLER.md. Celui-ci reste le bloc à transmettre au nouveau chat.
+Ne pas confondre blocage d’outil et limite de contexte : aucune saturation du contexte n’est mesurée ici.
+
+Avant accord : sorties uniquement sous propositions/, registre validation false, contrôles/mesures.
+**Ne pas exécuter valide-couples.py ni reconstruire la livraison/le PDF principal avant accord.**
+Quand toutes reprises ET réserves sont prêtes : PDF des seules reprises, AVANT gauche/APRÈS droite,
+lien téléchargeable chat, validation utilisateur avant remplacement.
+AVANT étape3 : demander si le vert doit être identique260, attendre la réponse. Construction app :
+rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder.
+Jamais pousser main ; uniquement branche arena/01a0dcad-jarvis-fitness-yanis-emilie-ap. Clé utilisateur
+uniquement, jamais dans Git/chat. Étapes suivantes dans l’ordre inchangées ; IA en dernier.
+
+
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
 La relecture interne antérieure ne remplace pas votre validation.

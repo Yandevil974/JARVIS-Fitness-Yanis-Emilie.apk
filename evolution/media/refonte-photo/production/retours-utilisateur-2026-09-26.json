@@ -36,12 +36,18 @@
       "retour_utilisateur": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Lot62 : tentative station derrière à droite échouée ; homme reste tourné vers machine, mains/corde reviennent devant tête à arrivée, éloignement insuffisant. Refus. Prochain : schéma des points tête/mains/poulie et câble unique, construire la case fléchie seule avant assemblage.",
+      "detail": "Derniers essais26 toujours refusés (lot62 : orientation incorrecte, corde/mains devant tête en fin, trop proche de la station). Après lot67 : fiche de reprise indépendante prête, arrivée seule d’abord avec repères tête/mains/poulie/câble continu, puis départ depuis arrivée contrôlée. Outil de génération indisponible ce tour :0 appel, aucun nouveau rendu ni GIF candidat. Voir production/preparation-26/BRIEF-REPRISE.md. Ne pas compter cette préparation comme une proposition.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
         "sha256": "2b5be5e924f07fbf554543b6023acd988a061a189054d1220493645d8163dd56",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "preparation": {
+        "brief": "evolution/media/refonte-photo/production/preparation-26/BRIEF-REPRISE.md",
+        "statut": "en_attente_outil_generation",
+        "generations_ce_tour": 0,
+        "date": "2026-09-26"
       }
     },
     {

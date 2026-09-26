@@ -18,7 +18,7 @@
    "motif": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
    "statut": "refuse_interne",
    "reglesPrompt": [
-    "Lot62 : tentative station derrière à droite échouée ; homme reste tourné vers machine, mains/corde reviennent devant tête à arrivée, éloignement insuffisant. Refus. Prochain : schéma des points tête/mains/poulie et câble unique, construire la case fléchie seule avant assemblage."
+    "Derniers essais26 toujours refusés (lot62 : orientation incorrecte, corde/mains devant tête en fin, trop proche de la station). Après lot67 : fiche de reprise indépendante prête, arrivée seule d’abord avec repères tête/mains/poulie/câble continu, puis départ depuis arrivée contrôlée. Outil de génération indisponible ce tour :0 appel, aucun nouveau rendu ni GIF candidat. Voir production/preparation-26/BRIEF-REPRISE.md. Ne pas compter cette préparation comme une proposition."
    ],
    "validationUtilisateurRequise": true
   },
