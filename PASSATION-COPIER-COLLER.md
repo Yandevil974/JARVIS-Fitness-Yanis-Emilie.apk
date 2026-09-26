@@ -5,7 +5,7 @@ Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yan
 Lire dans l'ordre :
 1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 66, recette, pièges ; anciens compteurs historiques).
 2. CE-QUI-COINCE.md (§0 feuille de route utilisateur, §1 reprises, §3 décisions).
-3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–83.
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–84.
 4. evolution/media/refonte-photo/livraison/LIVRAISON-README.md et manifeste-331.json.
 
 ÉTAPE2 — **26 points ouverts :23 numéros +3 variantes**, aucune proposition approuvée.
@@ -18,8 +18,8 @@ Consigne MONTRER AVANT VALIDATION : aucun GIF livré/PDF principal/manifeste/ét
 Lot66 :3 générations ;47 assis4phases proposé,392×440,500ms/phase,vert ROI298/158/166/336.
 Deux mains hautes et main droite image basse corrigées localement. Réserves raccords/cadrage/poids,
 zones vertes en bas aspect manchon. Tous Zottman proposés, pas approuvés.
-80 : question posée en réponse finale — banc plat livré, « incliné » dans retour ; garder plat et
-corriger paumes seules, ou incliner aussi ? Attendre réponse persistée dans registre (null actuellement).
+80 : décision utilisateur reçue — « 80 banc incliné ». Produire sur banc INCLINÉ et corriger
+les paumes vers le plafond. Angle exact non précisé ; aucune image validée. Décision persistée, §84.
 Reconstruction lot66/assemble.py ; review/lot66-proposition-47.jpg ; détail §83.
 Anciennes réserves maintenues. Aucun livré remplacé ; comparatif bloque4 manquants.
 PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.

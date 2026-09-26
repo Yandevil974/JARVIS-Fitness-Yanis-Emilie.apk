@@ -3,6 +3,15 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
+## Clarification après lot66 — n°80 : banc incliné confirmé (26/09/2026)
+
+Réponse exacte : « 80 banc incliné ». Choix enregistré dans les deux registres et passations.
+Prochaine proposition80 : banc INCLINÉ, paumes vers le plafond selon retour initial. Angle non précisé.
+Ne pas changer séries/répétitions/tempo ; choix de banc ≠ validation des images ni autorisation d’intégration.
+Aucune génération ce tour, aucun livré modifié. Toujours22 propositions non validées/26 ; manquants26/80/85/204.
+Rappels inchangés : question vert260 avant étape3 ; metcon + piscine fractionnée et/ou Aqua Tabata
+pour Émilie à la construction de l’application. PDF comparatif complet uniquement quand tout prêt.
+
 ## Dernière avancée — Lot66 — Zottman assis47 proposé, clarification80 (26/09/2026)
 
 Workspace restauré d721868 propre ; fetch/reset du dernier distant77af07b, venv recréé.

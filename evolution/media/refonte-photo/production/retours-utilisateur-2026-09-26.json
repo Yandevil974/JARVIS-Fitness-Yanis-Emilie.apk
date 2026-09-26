@@ -249,7 +249,7 @@
       "retour_utilisateur": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
       "origine": "retour_direct",
       "statut": "a_produire",
-      "detail": "Lot66 : GIF livré relu, banc PLAT ; retour utilisateur dit « incliné ». Clarification demandée en fin de lot : garder banc plat et corriger seulement les paumes, ou passer aussi sur banc incliné ? Réponse attendue avant génération/changement du banc. Aucun changement de prescription.",
+      "detail": "Clarification utilisateur reçue le 26/09/2026 : « 80 banc incliné ». Produire une proposition sur banc incliné, avec correction des paumes vers le plafond selon retour initial. Angle exact non précisé. Séries/répétitions/tempo inchangés. Cette décision de banc ne valide aucune image et n’autorise pas une intégration sans revue.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/ecartes-halteres-homme.gif",
@@ -258,7 +258,7 @@
       },
       "clarification": {
         "question": "Conserver banc plat et corriger seulement les paumes, ou passer aussi sur banc incliné ?",
-        "reponse": null
+        "reponse": "80 banc incliné"
       }
     },
     {

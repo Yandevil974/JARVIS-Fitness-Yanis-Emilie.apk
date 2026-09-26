@@ -12,8 +12,8 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 Lot66 :3 générations ;47 assis4phases proposé,392×440,500ms/phase,vert ROI298/158/166/336.
 Deux mains hautes et main droite image basse corrigées localement. Réserves raccords/cadrage/poids,
 zones vertes en bas aspect manchon. Tous Zottman proposés, pas approuvés.
-80 : question posée en réponse finale — banc plat livré, « incliné » dans retour ; garder plat et
-corriger paumes seules, ou incliner aussi ? Attendre réponse persistée dans registre (null actuellement).
+80 : décision utilisateur reçue — « 80 banc incliné ». Produire sur banc INCLINÉ et corriger
+les paumes vers le plafond. Angle exact non précisé ; aucune image validée. Décision persistée, §84.
 Reconstruction lot66/assemble.py ; review/lot66-proposition-47.jpg ; détail §83.
 Anciennes réserves maintenues. Aucun livré remplacé ; comparatif bloque4 manquants.
 PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.

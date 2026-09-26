@@ -1347,3 +1347,13 @@ Comparatif refuse4 manquants ; aucun PDF final, aucune intégration et aucun bui
 Quand toutes reprises prêtes : PDF uniquement reprises AVANT gauche/APRÈS droite, lien chat.
 AVANT étape3 : question vert identique260 ; à construction app : rappeler metcon + piscine nage
 fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder. Rappels toujours non traités.
+
+
+## 84. Clarification après lot66 — n°80 : banc incliné confirmé (26/09/2026)
+
+Réponse exacte : « 80 banc incliné ». Choix enregistré dans les deux registres et passations.
+Prochaine proposition80 : banc INCLINÉ, paumes vers le plafond selon retour initial. Angle non précisé.
+Ne pas changer séries/répétitions/tempo ; choix de banc ≠ validation des images ni autorisation d’intégration.
+Aucune génération ce tour, aucun livré modifié. Toujours22 propositions non validées/26 ; manquants26/80/85/204.
+Rappels inchangés : question vert260 avant étape3 ; metcon + piscine fractionnée et/ou Aqua Tabata
+pour Émilie à la construction de l’application. PDF comparatif complet uniquement quand tout prêt.
