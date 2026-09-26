@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 50 — 331/331 valides, 331/331 relus
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 51 — 363 valides / 26 restants (Yanis piscine en cours)
 
 Liste demandée pour revue de votre côté. **331 / 331 visuels validés, 0 restant, et la
 relecture case par case est TERMINÉE (331 / 331 relus)**. Ce fichier ne contient que les
@@ -9,9 +9,24 @@ points bloquants ou qui demandent une décision.
 > `11d1594`) y a été récupéré intégralement ; tout le travail est désormais poussé sur
 > **`01a0dbe5`** uniquement. L'ancienne branche n'est plus alimentée.
 
+## 0. Feuille de route donnée par l'utilisateur le 26/09 (dans cet ordre, par étapes)
+
+1. **Piscine + cardio pour Yanis (images manquantes)** → EN COURS : 58 couples homme ajoutés,
+   **32 validés au lot 51** (n° 332–363 du PDF), 26 restants = 15 générations (lot 52 : 10 piscine,
+   lot 53 : 5 elliptique/transition) + câblage « athlète = profil » pour piscine/elliptique.
+2. Vérification du PDF par l'utilisateur → corrections par numéro (priorité 1 dès réception).
+3. Pouvoir **augmenter le niveau** du programme cardio (piscine et autres) sur Émilie et Yanis
+   (les protocoles ont déjà 3 niveaux `niveaux[]` ; la sélection est automatique dans `bh()` :
+   à exposer à l'utilisateur — à concevoir après l'étape 1).
+4. **Images pendant le chronomètre** (piscine, aqua, nage fractionnée, elliptique) : le timer `v5`
+   n'affiche une image que pour piscine (`JarvisPoolMedia`) ; les étapes elliptique n'en ont aucune.
+5. Construire l'application (1.4.9 → clé de signature utilisateur).
+6. IA conversationnelle (en dernier).
+
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
-**Aucune** : `production/a-refaire.json` est VIDE. Les 3 refus de la relecture 26
+**1** : `battements-au-bord|homme` (lot 51 : même jambe levée aux deux cases, 0 px de vert) →
+retry lot 52 avec ancrage par côté caméra + vue 3/4 arrière. Les 3 refus de la relecture 26
 (torsion allongée montrée ASSISE, soulevé de terre ordre inversé + angle qui change,
 transition face/profil) ont été **refaits et acceptés dans le même tour** (lot 50, 3 générations),
 et rowing assis + étirement a eu ses cases remises dans le bon sens (début = étirement).
@@ -43,9 +58,9 @@ et rowing assis + étirement a eu ses cases remises dans le bon sens (début = �
    → garder tel quel, ou refaire avec barre prise large sur les épaules ?
 2. **Lot « style » des 33 GIF** dont une case n'a pas de vert lime : les régénérer
    (3 à 4 lots de 10) ou accepter l'état livré ?
-3. **PDF de revue** (`livraison/REVUE-331-exercices.pdf`, régénéré ce tour avec les MÊMES
-   numéros ; n° 169, 180, 327, 330 ont changé d'image) : vos « coquille au n° X » sont traités
-   en priorité 1 au prochain tour.
+3. **PDF de revue** (`livraison/REVUE-331-exercices.pdf`, 122 pages, 363 exercices) : numéros
+   **figés** (1–331 inchangés ; Yanis piscine à partir du n° 332). Vos « coquille au n° X » sont
+   traités en priorité 1 au prochain tour.
 4. **Essai téléphone de la 1.4.8** : les groupes de constats restent OUVERTS jusqu'à votre
    retour ; aucun n'est clos sans vous.
 5. **Souleve de terre — test 1RM** : un seul plateau par côté (charge peu crédible pour un 1RM),

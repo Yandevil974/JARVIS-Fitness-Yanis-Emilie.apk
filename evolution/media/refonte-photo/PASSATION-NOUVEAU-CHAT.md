@@ -129,6 +129,12 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
+0bis. **État lot 51 (26/09, plus récent)** : **363 valides / 26 restants** — demande utilisateur :
+   visuels piscine/cardio pour YANIS (homme dans le bassin / sur l'elliptique). Lot 51 = 9/10 acceptées
+   + 23 copies conformes (n° 332–363). Reste 15 générations (lot 52 piscine ×10 dont retry
+   battements-au-bord ; lot 53 elliptique ×5) puis câblage `bt`/`If` (VERIFICATION §68). Outils :
+   `valide-couples.py`, numérotation PDF figée `livraison/numerotation-pdf.json`. Feuille de route
+   utilisateur en 6 étapes : voir `CE-QUI-COINCE.md` §0.
 0. **État lot 50 (26/09)** : 331/331 valides, **331/331 relus**, `a-refaire.json` VIDE, style 33,
    PDF régénéré (mêmes numéros ; n° 169/180/327/330 = nouvelles images), APK 1.4.9 non signé
    reconstruit et contrôlé par `build-media-149.py --unsigned`. **Ordre des priorités au réveil :**

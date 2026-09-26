@@ -3,6 +3,16 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
+## Dernière avancée — lot 51 : Yanis dans le bassin, 32 couples homme validés, numéros PDF figés (26 septembre 2026)
+
+- **Retour utilisateur** : aucun visuel piscine/cardio pour Yanis (tout était femme). 58 couples homme
+  ajoutés au plan ; **lot 51 : 9/10 planches acceptées** (bassin intérieur, même famille que la femme)
+  + 23 copies conformes → **363 valides / 26 restants** ; 1 refus (battements-au-bord : même jambe aux
+  deux cases, sans vert) à refaire au lot 52. Détail : `verification/VERIFICATION-2026-09-25.md` §68.
+- **PDF** : numéros **figés** (`livraison/numerotation-pdf.json`) — 1–331 inchangés, Yanis piscine dès
+  le n° 332 (122 pages, 363 exercices). Nouvel outil `tools/valide-couples.py`.
+- **Feuille de route utilisateur (6 étapes)** : `CE-QUI-COINCE.md` §0. Étape 1 en cours (2 lots + câblage).
+
 ## Dernière avancée — lot 50 : relecture TERMINÉE 331/331, 3 refaits, PDF mêmes numéros, chaîne 1.4.9 outillée (26 septembre 2026)
 
 > ⚠️ Branche de session changée par la plateforme : **`arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap`**

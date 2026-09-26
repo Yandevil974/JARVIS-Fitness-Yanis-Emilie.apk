@@ -1,5 +1,18 @@
 {
- "aRefaire": [],
+ "aRefaire": [
+  {
+   "cle": "battements-au-bord|homme",
+   "lot": 51,
+   "essai": 1,
+   "motif": "les deux cases montrent la MEME jambe levee (aucune alternance) et aucun vert (0 px) : mouvement inexistant + surlignage absent",
+   "prescription": "Mains sur la margelle, bras tendus, corps allonge dans l eau ; jambes tendues, battez des pieds (haut-bas, petite amplitude) ; restez gaine, fesses a la surface",
+   "reglesPrompt": [
+    "ancrer par cote camera : case 1 = jambe la PLUS PROCHE de la camera levee hors de l eau, jambe LOINTAINE basse ; case 2 = l inverse",
+    "ecrire PAINT lime green sur fessiers + arriere des cuisses, visible a travers l eau, dans LES DEUX cases",
+    "strategie differente : vue de 3/4 arriere surelevee (comme ciseaux) plutot que profil strict"
+   ]
+  }
+ ],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",

@@ -743,3 +743,53 @@ web = 272 + 385, 331 GIF refonte verifies SHA dans le zip, hook 331 chemins pres
 pendouillant) -> `.cache/build/Yanis-Fitness-Evolution-1.4.9-non-signe.apk` (103 757 865 o).
 Mode `--real` (signature v2+v3 avec l'identite `150e3846…` restauree par la cle utilisateur,
 depot `downloads/…-1.4.9.apk` + `.sha256` + `.fidelity.json`) ecrit, **non execute : cle absente**.
+
+## 68. Lot 51 : Yanis dans le bassin — 9/10 acceptees, 32 couples homme valides (26/09, apres reset #2 de la session)
+
+**Retour utilisateur (26/09)** : « Piscine et autres exercices de cardio pour Yanis : il n'y a pas
+d'image » — exact : les 60 couples piscine / aqua tabata / elliptique n'existaient que chez la femme.
+Regle athlete = proprietaire du profil -> **58 couples homme ajoutes au plan** (`plan.json` : lignes
+homme miroir des lignes femme aquatiques/elliptique ; `etat.json` restants = 58 ; 2 cles en collision
+avec la version terrestre deja valide — battements-de-jambes|homme, montees-de-genoux|homme — sont
+servies par le guide piscine du meme geste, par NOM, au cablage). 24 gestes distincts a generer,
+le reste en copies conformes exactement comme chez la femme (memes groupes de SHA).
+
+**Numerotation PDF FIGEE** : `livraison/numerotation-pdf.json` (cle -> numero) ; `pdf-revue-331.py`
+lit ce fichier : 1-331 ne bougent plus jamais, les nouveaux couples recoivent les numeros suivants.
+Nouveaux outils : `tools/valide-couples.py` (GIF -> copies conformes + manifeste + etat + numero PDF +
+map candidate, en une commande).
+
+Lot 51 = 10 generations homme, bassin interieur, memes reperes que la famille femme (vue coupee
+au niveau de l'eau, eau poitrine/taille, maillot noir, vert visible a travers l'eau), feuilles
+`verification/lot51-01..04.jpg` relues case par case :
+
+| Planche | Verdict |
+|---|---|
+| aqua-jogging-sur-place | ACCEPT (genou droit puis gauche, bras opposes, vert cuisses + abdos) |
+| battements-au-bord | **REFUS** : meme jambe levee dans les 2 cases + 0 px de vert -> a-refaire (lot 52, ancrage par cote camera, vue 3/4 arriere) |
+| ciseaux-mains-au-bord | ACCEPT (V ouvert -> jambes croisees, vue 3/4 arriere surelevee) |
+| deplacements-lateraux-4-m | ACCEPT (demi-squat tenu, pieds ecartes -> joints ; note : eau a la taille) |
+| gainage-au-bord-vertical | ACCEPT (vertical mains au bord -> genoux poitrine) |
+| marche-aquatique | ACCEPT (2 phases de grand pas, bras opposes ; note : eau a la taille) |
+| montees-de-genoux-effort | ACCEPT (genou droit puis gauche a la hanche, splash) |
+| nage-douce | ACCEPT (brasse : glisse -> traction tete sortie ; bandes grises du generateur recadrees avant conversion, GIF 570x440) |
+| pompes-au-bord | ACCEPT (bras tendus -> coudes flechis poitrine au bord) |
+| repos | ACCEPT (avant-bras au bord, expire -> inspire, vert leger epaules) |
+
+`valide-couples.py --athlete homme --lot lot51` : 9 GIF + **23 copies conformes** = **32 couples
+homme valides (n° 332 a 363)**. PDF regenere : 122 pages, 363 exercices, 1-331 inchanges (page 61 = n° 180
+controlee). `review/lot51-homme.jpg`, `review/index-general.jpg` (363 vignettes).
+
+**Etat : 363 valides / 26 restants** (piscine 9, protocoles 12, elliptique 5) = 15 generations restantes :
+lot 52 (10) : battements-au-bord (retry), nage-statique-a-l-elastique, fractionne-nager, sprint-nager-a-fond,
+recup-complete-souffler, talons-fesses, etirements-au-bord, mobilite-epaules-aquatique,
+mobilite-hanches-chevilles, nage-douce-respiration ; lot 53 (5) : elliptique-mise-en-route, elliptique-fractionne,
+elliptique-recuperation-active, elliptique-retour-au-calme, transition (homme).
+
+**Cablage prevu (lot 53)** : les visuels piscine/elliptique ne passent pas par le hook `REFONTE_MEDIA`
+(ids) mais par `POOL_GUIDES` (payload, par NOM), la constante `If` (guides elliptique, codee en dur,
+imgs `/media/cardio-*.jpg` non redirigees par l'overlay actuel) et `providedAnimations/Recoveries`.
+Solution retenue : patch de `bt` (resolveur universel des `src` d'images) -> `__refonteSwap(path)` :
+tout chemin `/media/refonte-<ident>-<athlete>.gif` (ou ancien chemin table `REFONTE_OLD`) est servi
+dans la variante de l'athlete du profil actif quand elle existe ; + patch de `If` vers les chemins
+refonte. Verification : apercu web, profil Yanis -> homme dans le bassin ; profil Emilie -> femme.

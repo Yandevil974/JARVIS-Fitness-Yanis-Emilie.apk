@@ -43,16 +43,20 @@ def fit(im, box):
 
 def main():
     man = json.load(open(LIV / 'manifeste-331.json'))
-    entrees = sorted(man['entrees'], key=lambda e: (SURFACES.index(e['surface']) if e['surface'] in SURFACES else 99,
-                                                    e['identifiant'], e['athlete']))
+    # Numerotation FIGEE (livraison/numerotation-pdf.json) : un numero ne change jamais ;
+    # les couples ajoutes apres coup recoivent les numeros suivants (valide-couples.py).
+    numeros = json.load(open(LIV / 'numerotation-pdf.json'))['numeros']
+    sans = [e['cle'] for e in man['entrees'] if e['cle'] not in numeros]
+    assert not sans, 'couples sans numero PDF (lancer valide-couples.py) : %s' % sans
+    entrees = sorted(man['entrees'], key=lambda e: numeros[e['cle']])
     pages = []
     draw = None
     # page de titre
     pg = Image.new('RGB', PAGE, 'white')
     d = ImageDraw.Draw(pg)
-    d.text((60, 70), 'JARVIS Fitness — Revue des 331 exercices', font=F_HDR, fill='black')
+    d.text((60, 70), f'JARVIS Fitness — Revue des {len(entrees)} exercices', font=F_HDR, fill='black')
     d.text((60, 150), 'Chaque exercice : numero + nom + les 2 images animees (frame 1 et frame 2)', font=F_SUB, fill='#333333')
-    d.text((60, 190), 'Signalez simplement le NUMERO en cas de coquille.', font=F_SUB, fill='#333333')
+    d.text((60, 190), 'Signalez simplement le NUMERO en cas de coquille. Les numeros sont figes : 1-331 inchanges, nouveaux couples a la suite.', font=F_SUB, fill='#333333')
     y = 260
     from collections import Counter
     c = Counter(e['surface'] for e in entrees)
@@ -70,7 +74,7 @@ def main():
     buf = []
     cur_surface = None
     for e in entrees:
-        num += 1
+        num = numeros[e['cle']]
         nom = e['noms'][0] if e['noms'] else e['identifiant']
         f1, f2 = frames(EV / e['gif'])
         buf.append((num, e, nom, f1, f2))

@@ -1656,6 +1656,166 @@
    "gif": "media/refonte-photo/gif/homme/wood-chop-poulie-haute-homme.gif",
    "sha256": "9b353c570b841963b619888219a8cd0306d9ff0cce437d2ae85d7a9c3b9f89ad",
    "surface": "musculation"
+  },
+  "aqua-jogging-sur-place|homme": {
+   "gif": "media/refonte-photo/gif/homme/aqua-jogging-sur-place-homme.gif",
+   "sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "surface": "piscine"
+  },
+  "aqua-jogging|homme": {
+   "gif": "media/refonte-photo/gif/homme/aqua-jogging-homme.gif",
+   "sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "surface": "tabata-aqua"
+  },
+  "aqua-jogging-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/aqua-jogging-effort-homme.gif",
+   "sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "surface": "piscine-protocole"
+  },
+  "tabata-1-2-en-place|homme": {
+   "gif": "media/refonte-photo/gif/homme/tabata-1-2-en-place-homme.gif",
+   "sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "surface": "piscine-protocole"
+  },
+  "tour-1-2-en-place|homme": {
+   "gif": "media/refonte-photo/gif/homme/tour-1-2-en-place-homme.gif",
+   "sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "surface": "piscine-protocole"
+  },
+  "ciseaux-mains-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/ciseaux-mains-au-bord-homme.gif",
+   "sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "surface": "piscine-protocole"
+  },
+  "ciseaux-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/ciseaux-au-bord-homme.gif",
+   "sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "surface": "piscine"
+  },
+  "ciseaux-au-bord-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/ciseaux-au-bord-effort-homme.gif",
+   "sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "surface": "piscine-protocole"
+  },
+  "deplacements-lateraux-4-m|homme": {
+   "gif": "media/refonte-photo/gif/homme/deplacements-lateraux-4-m-homme.gif",
+   "sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "surface": "piscine"
+  },
+  "deplacements-lateraux|homme": {
+   "gif": "media/refonte-photo/gif/homme/deplacements-lateraux-homme.gif",
+   "sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "surface": "tabata-aqua"
+  },
+  "deplacements-lateraux-4-m-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/deplacements-lateraux-4-m-effort-homme.gif",
+   "sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "surface": "piscine-protocole"
+  },
+  "gainage-au-bord-vertical|homme": {
+   "gif": "media/refonte-photo/gif/homme/gainage-au-bord-vertical-homme.gif",
+   "sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "surface": "piscine"
+  },
+  "gainage-vertical|homme": {
+   "gif": "media/refonte-photo/gif/homme/gainage-vertical-homme.gif",
+   "sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "surface": "tabata-aqua"
+  },
+  "gainage-vertical-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/gainage-vertical-au-bord-homme.gif",
+   "sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "surface": "piscine-protocole"
+  },
+  "gainage-vertical-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/gainage-vertical-effort-homme.gif",
+   "sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "surface": "piscine-protocole"
+  },
+  "marche-aquatique|homme": {
+   "gif": "media/refonte-photo/gif/homme/marche-aquatique-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine"
+  },
+  "echauffement-marche-aquatique|homme": {
+   "gif": "media/refonte-photo/gif/homme/echauffement-marche-aquatique-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine-protocole"
+  },
+  "recup-active-marche-aquatique|homme": {
+   "gif": "media/refonte-photo/gif/homme/recup-active-marche-aquatique-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine-protocole"
+  },
+  "recup-courte-marche|homme": {
+   "gif": "media/refonte-photo/gif/homme/recup-courte-marche-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine-protocole"
+  },
+  "recup-entre-tabatas|homme": {
+   "gif": "media/refonte-photo/gif/homme/recup-entre-tabatas-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine"
+  },
+  "recup-marche|homme": {
+   "gif": "media/refonte-photo/gif/homme/recup-marche-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine-protocole"
+  },
+  "recup-marche-aquatique|homme": {
+   "gif": "media/refonte-photo/gif/homme/recup-marche-aquatique-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine-protocole"
+  },
+  "retour-au-calme|homme": {
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-homme.gif",
+   "sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "surface": "piscine"
+  },
+  "montees-de-genoux-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/montees-de-genoux-effort-homme.gif",
+   "sha256": "1bc91a9fcf375cec75446e37c1f5b18fbb3701609661f2d6345da2e548963690",
+   "surface": "piscine-protocole"
+  },
+  "nage-douce|homme": {
+   "gif": "media/refonte-photo/gif/homme/nage-douce-homme.gif",
+   "sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "surface": "piscine"
+  },
+  "echauffement-nage-douce|homme": {
+   "gif": "media/refonte-photo/gif/homme/echauffement-nage-douce-homme.gif",
+   "sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "surface": "piscine-protocole"
+  },
+  "echauffement-soigneux-nage-douce|homme": {
+   "gif": "media/refonte-photo/gif/homme/echauffement-soigneux-nage-douce-homme.gif",
+   "sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "surface": "piscine-protocole"
+  },
+  "retour-au-calme-nage-douce|homme": {
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-nage-douce-homme.gif",
+   "sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "surface": "piscine-protocole"
+  },
+  "retour-au-calme-nage-tres-douce|homme": {
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-nage-tres-douce-homme.gif",
+   "sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "surface": "piscine-protocole"
+  },
+  "pompes-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/pompes-au-bord-homme.gif",
+   "sha256": "2230059bd74dadeb17b57bde84f1072631fb6bc145192b123a676f4f31af6dbb",
+   "surface": "piscine"
+  },
+  "pompes-au-bord-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/pompes-au-bord-effort-homme.gif",
+   "sha256": "2230059bd74dadeb17b57bde84f1072631fb6bc145192b123a676f4f31af6dbb",
+   "surface": "piscine-protocole"
+  },
+  "repos|homme": {
+   "gif": "media/refonte-photo/gif/homme/repos-homme.gif",
+   "sha256": "78873f737bd9ff2da9ab968caa93bfb3f4ebf76c44776f2e50d6621274370e6c",
+   "surface": "piscine-protocole"
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "version": "1.4.9-refonte",
- "total": 331,
+ "total": 363,
  "entrees": [
   {
    "cle": "ab-wheel-roulette|homme",
@@ -5976,6 +5976,801 @@
     440
    ],
    "planche": "planches/lot22/wood-chop-poulie-haute.png"
+  },
+  {
+   "cle": "aqua-jogging-sur-place|homme",
+   "identifiant": "aqua-jogging-sur-place",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Aqua-jogging sur place"
+   ],
+   "gif": "media/refonte-photo/gif/homme/aqua-jogging-sur-place-homme.gif",
+   "gif_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot51/aqua-jogging-sur-place.png"
+  },
+  {
+   "cle": "aqua-jogging|homme",
+   "identifiant": "aqua-jogging",
+   "athlete": "homme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Aqua-jogging"
+   ],
+   "gif": "media/refonte-photo/gif/homme/aqua-jogging-homme.gif",
+   "gif_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot51/aqua-jogging-sur-place.png"
+  },
+  {
+   "cle": "aqua-jogging-effort|homme",
+   "identifiant": "aqua-jogging-effort",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/homme/aqua-jogging-effort-homme.gif",
+   "gif_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot51/aqua-jogging-sur-place.png"
+  },
+  {
+   "cle": "tabata-1-2-en-place|homme",
+   "identifiant": "tabata-1-2-en-place",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Tabata 1/2 — en place",
+    "Tabata 2/2 — en place",
+    "Tabata 1/3 — en place",
+    "Tabata 2/3 — en place",
+    "Tabata 3/3 — en place",
+    "Tabata 1/4 — en place",
+    "Tabata 2/4 — en place",
+    "Tabata 3/4 — en place",
+    "Tabata 4/4 — en place"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tabata-1-2-en-place-homme.gif",
+   "gif_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot51/aqua-jogging-sur-place.png"
+  },
+  {
+   "cle": "tour-1-2-en-place|homme",
+   "identifiant": "tour-1-2-en-place",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Tour 1/2 — en place",
+    "Tour 2/2 — en place",
+    "Tour 1/3 — en place",
+    "Tour 2/3 — en place",
+    "Tour 3/3 — en place",
+    "Tour 1/4 — en place",
+    "Tour 2/4 — en place",
+    "Tour 3/4 — en place",
+    "Tour 4/4 — en place"
+   ],
+   "gif": "media/refonte-photo/gif/homme/tour-1-2-en-place-homme.gif",
+   "gif_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "gif_frames": 2,
+   "gif_size": [
+    388,
+    440
+   ],
+   "planche": "planches/lot51/aqua-jogging-sur-place.png"
+  },
+  {
+   "cle": "ciseaux-mains-au-bord|homme",
+   "identifiant": "ciseaux-mains-au-bord",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ciseaux-mains-au-bord-homme.gif",
+   "gif_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot51/ciseaux-mains-au-bord.png"
+  },
+  {
+   "cle": "ciseaux-au-bord|homme",
+   "identifiant": "ciseaux-au-bord",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Ciseaux au bord"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ciseaux-au-bord-homme.gif",
+   "gif_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot51/ciseaux-mains-au-bord.png"
+  },
+  {
+   "cle": "ciseaux-au-bord-effort|homme",
+   "identifiant": "ciseaux-au-bord-effort",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/homme/ciseaux-au-bord-effort-homme.gif",
+   "gif_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "gif_frames": 2,
+   "gif_size": [
+    391,
+    440
+   ],
+   "planche": "planches/lot51/ciseaux-mains-au-bord.png"
+  },
+  {
+   "cle": "deplacements-lateraux-4-m|homme",
+   "identifiant": "deplacements-lateraux-4-m",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Déplacements latéraux (4 m)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/deplacements-lateraux-4-m-homme.gif",
+   "gif_sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot51/deplacements-lateraux-4-m.png"
+  },
+  {
+   "cle": "deplacements-lateraux|homme",
+   "identifiant": "deplacements-lateraux",
+   "athlete": "homme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Déplacements latéraux"
+   ],
+   "gif": "media/refonte-photo/gif/homme/deplacements-lateraux-homme.gif",
+   "gif_sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot51/deplacements-lateraux-4-m.png"
+  },
+  {
+   "cle": "deplacements-lateraux-4-m-effort|homme",
+   "identifiant": "deplacements-lateraux-4-m-effort",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/homme/deplacements-lateraux-4-m-effort-homme.gif",
+   "gif_sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot51/deplacements-lateraux-4-m.png"
+  },
+  {
+   "cle": "gainage-au-bord-vertical|homme",
+   "identifiant": "gainage-au-bord-vertical",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Gainage au bord (vertical)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/gainage-au-bord-vertical-homme.gif",
+   "gif_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "gif_frames": 2,
+   "gif_size": [
+    370,
+    440
+   ],
+   "planche": "planches/lot51/gainage-au-bord-vertical.png"
+  },
+  {
+   "cle": "gainage-vertical|homme",
+   "identifiant": "gainage-vertical",
+   "athlete": "homme",
+   "surface": "tabata-aqua",
+   "noms": [
+    "Gainage vertical"
+   ],
+   "gif": "media/refonte-photo/gif/homme/gainage-vertical-homme.gif",
+   "gif_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "gif_frames": 2,
+   "gif_size": [
+    370,
+    440
+   ],
+   "planche": "planches/lot51/gainage-au-bord-vertical.png"
+  },
+  {
+   "cle": "gainage-vertical-au-bord|homme",
+   "identifiant": "gainage-vertical-au-bord",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord"
+   ],
+   "gif": "media/refonte-photo/gif/homme/gainage-vertical-au-bord-homme.gif",
+   "gif_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "gif_frames": 2,
+   "gif_size": [
+    370,
+    440
+   ],
+   "planche": "planches/lot51/gainage-au-bord-vertical.png"
+  },
+  {
+   "cle": "gainage-vertical-effort|homme",
+   "identifiant": "gainage-vertical-effort",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/homme/gainage-vertical-effort-homme.gif",
+   "gif_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "gif_frames": 2,
+   "gif_size": [
+    370,
+    440
+   ],
+   "planche": "planches/lot51/gainage-au-bord-vertical.png"
+  },
+  {
+   "cle": "marche-aquatique|homme",
+   "identifiant": "marche-aquatique",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/homme/marche-aquatique-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "echauffement-marche-aquatique|homme",
+   "identifiant": "echauffement-marche-aquatique",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/homme/echauffement-marche-aquatique-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "recup-active-marche-aquatique|homme",
+   "identifiant": "recup-active-marche-aquatique",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/homme/recup-active-marche-aquatique-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "recup-courte-marche|homme",
+   "identifiant": "recup-courte-marche",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche"
+   ],
+   "gif": "media/refonte-photo/gif/homme/recup-courte-marche-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "recup-entre-tabatas|homme",
+   "identifiant": "recup-entre-tabatas",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Récup entre tabatas"
+   ],
+   "gif": "media/refonte-photo/gif/homme/recup-entre-tabatas-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "recup-marche|homme",
+   "identifiant": "recup-marche",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche"
+   ],
+   "gif": "media/refonte-photo/gif/homme/recup-marche-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "recup-marche-aquatique|homme",
+   "identifiant": "recup-marche-aquatique",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup — marche aquatique",
+    "Récup — marche aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/homme/recup-marche-aquatique-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "retour-au-calme|homme",
+   "identifiant": "retour-au-calme",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Retour au calme"
+   ],
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-homme.gif",
+   "gif_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/marche-aquatique.png"
+  },
+  {
+   "cle": "montees-de-genoux-effort|homme",
+   "identifiant": "montees-de-genoux-effort",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/homme/montees-de-genoux-effort-homme.gif",
+   "gif_sha256": "1bc91a9fcf375cec75446e37c1f5b18fbb3701609661f2d6345da2e548963690",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot51/montees-de-genoux-effort.png"
+  },
+  {
+   "cle": "nage-douce|homme",
+   "identifiant": "nage-douce",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/homme/nage-douce-homme.gif",
+   "gif_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "gif_frames": 2,
+   "gif_size": [
+    570,
+    440
+   ],
+   "planche": "planches/lot51/nage-douce.png"
+  },
+  {
+   "cle": "echauffement-nage-douce|homme",
+   "identifiant": "echauffement-nage-douce",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/homme/echauffement-nage-douce-homme.gif",
+   "gif_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "gif_frames": 2,
+   "gif_size": [
+    570,
+    440
+   ],
+   "planche": "planches/lot51/nage-douce.png"
+  },
+  {
+   "cle": "echauffement-soigneux-nage-douce|homme",
+   "identifiant": "echauffement-soigneux-nage-douce",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/homme/echauffement-soigneux-nage-douce-homme.gif",
+   "gif_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "gif_frames": 2,
+   "gif_size": [
+    570,
+    440
+   ],
+   "planche": "planches/lot51/nage-douce.png"
+  },
+  {
+   "cle": "retour-au-calme-nage-douce|homme",
+   "identifiant": "retour-au-calme-nage-douce",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce"
+   ],
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-nage-douce-homme.gif",
+   "gif_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "gif_frames": 2,
+   "gif_size": [
+    570,
+    440
+   ],
+   "planche": "planches/lot51/nage-douce.png"
+  },
+  {
+   "cle": "retour-au-calme-nage-tres-douce|homme",
+   "identifiant": "retour-au-calme-nage-tres-douce",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce"
+   ],
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-nage-tres-douce-homme.gif",
+   "gif_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "gif_frames": 2,
+   "gif_size": [
+    570,
+    440
+   ],
+   "planche": "planches/lot51/nage-douce.png"
+  },
+  {
+   "cle": "pompes-au-bord|homme",
+   "identifiant": "pompes-au-bord",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Pompes au bord"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pompes-au-bord-homme.gif",
+   "gif_sha256": "2230059bd74dadeb17b57bde84f1072631fb6bc145192b123a676f4f31af6dbb",
+   "gif_frames": 2,
+   "gif_size": [
+    374,
+    440
+   ],
+   "planche": "planches/lot51/pompes-au-bord.png"
+  },
+  {
+   "cle": "pompes-au-bord-effort|homme",
+   "identifiant": "pompes-au-bord-effort",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/homme/pompes-au-bord-effort-homme.gif",
+   "gif_sha256": "2230059bd74dadeb17b57bde84f1072631fb6bc145192b123a676f4f31af6dbb",
+   "gif_frames": 2,
+   "gif_size": [
+    374,
+    440
+   ],
+   "planche": "planches/lot51/pompes-au-bord.png"
+  },
+  {
+   "cle": "repos|homme",
+   "identifiant": "repos",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos"
+   ],
+   "gif": "media/refonte-photo/gif/homme/repos-homme.gif",
+   "gif_sha256": "78873f737bd9ff2da9ab968caa93bfb3f4ebf76c44776f2e50d6621274370e6c",
+   "gif_frames": 2,
+   "gif_size": [
+    382,
+    440
+   ],
+   "planche": "planches/lot51/repos.png"
   }
  ]
 }

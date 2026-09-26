@@ -1,6 +1,6 @@
 {
  "source": "evolution/media/review/inventory-1.4.0.json",
- "regleAthlete": "Emilie (femme) = exercices emilie ; Yanis (homme) = elite, jarvis et partages",
+ "regleAthlete": "Emilie (femme) = exercices emilie ; Yanis (homme) = elite, jarvis et partages ; depuis le 26/09 (demande utilisateur) : piscine, aqua tabata et elliptique existent chez LES DEUX athletes (Yanis voit l'homme dans le bassin / sur l'elliptique)",
  "famille": "2 images retouchees de la photo validee, 500 ms, boucle infinie",
  "noms": [
   {
@@ -10035,6 +10035,5719 @@
    "slug": "echauffement-series-d-approche",
    "mouvement": "approche echauffement series",
    "athlete": "homme"
+  },
+  {
+   "surface": "tabata-aqua",
+   "nom": "Aqua-jogging",
+   "domaine": "homme",
+   "detail": {
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "tabata-aqua",
+   "nom": "Ciseaux au bord",
+   "domaine": "homme",
+   "detail": {
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord",
+   "mouvement": "bord ciseaux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "tabata-aqua",
+   "nom": "Déplacements latéraux",
+   "domaine": "homme",
+   "detail": {
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "tabata-aqua",
+   "nom": "Gainage vertical",
+   "domaine": "homme",
+   "detail": {
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical",
+   "mouvement": "gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Pompes au bord",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "pompes au bord"
+    ],
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord",
+   "mouvement": "bord pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Gainage au bord (vertical)",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "gainage"
+    ],
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-au-bord-vertical",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Mobilité épaules aquatique",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "mobilite epaules"
+    ],
+    "visuelLivre": "/media/b2b32833d73d3ca4.gif"
+   },
+   "slug": "mobilite-epaules-aquatique",
+   "mouvement": "aquatique epaules mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Mobilité hanches / chevilles",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "mobilite hanches",
+     "chevilles"
+    ],
+    "visuelLivre": "/media/faa82528766b9402.gif"
+   },
+   "slug": "mobilite-hanches-chevilles",
+   "mouvement": "chevilles hanches mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Étirements au bord",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "etirements au bord"
+    ],
+    "visuelLivre": "/media/pool-etirements-bord.jpg"
+   },
+   "slug": "etirements-au-bord",
+   "mouvement": "bord etirements",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Battements au bord",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "battements"
+    ],
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-au-bord",
+   "mouvement": "battements bord",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Nage statique (à l'élastique)",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "nage statique"
+    ],
+    "visuelLivre": "/media/pool-nage-statique.jpg"
+   },
+   "slug": "nage-statique-a-l-elastique",
+   "mouvement": "elastique nage statique",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Nage douce",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "nage douce"
+    ],
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "nage-douce",
+   "mouvement": "douce nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "marche"
+    ],
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "marche-aquatique",
+   "mouvement": "aquatique marche",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Fractionné — nager",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "fractionne"
+    ],
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "fractionne-nager",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Sprint — nager à fond",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "sprint"
+    ],
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "sprint-nager-a-fond",
+   "mouvement": "fond nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Récup complète — souffler",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "souffler"
+    ],
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler",
+   "mouvement": "complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Récup entre tabatas",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "recup entre tabatas"
+    ],
+    "visuelLivre": "/media/pool-recup-tabata.jpg"
+   },
+   "slug": "recup-entre-tabatas",
+   "mouvement": "entre recup tabatas",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Retour au calme",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "retour au calme"
+    ],
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme",
+   "mouvement": "calme retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "aqua-jogging"
+    ],
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Ciseaux au bord",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "ciseaux"
+    ],
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord",
+   "mouvement": "bord ciseaux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "deplacements lateraux"
+    ],
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine",
+   "nom": "Talons-fesses",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "talons-fesses"
+    ],
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses",
+   "mouvement": "fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — battements au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "echauffement-battements-au-bord",
+   "mouvement": "battements bord echauffement",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage statique douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-nage-statique.jpg"
+   },
+   "slug": "nage-statique-douce",
+   "mouvement": "douce nage statique",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche-aquatique",
+   "mouvement": "aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage statique douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-nage-statique.jpg"
+   },
+   "slug": "nage-statique-douce",
+   "mouvement": "douce nage statique",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme + respiration",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-respiration",
+   "mouvement": "calme respiration retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — battements + mobilité",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "echauffement-battements-mobilite",
+   "mouvement": "battements echauffement mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage statique Z2",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-nage-statique.jpg"
+   },
+   "slug": "nage-statique-z2",
+   "mouvement": "nage statique",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche-aquatique",
+   "mouvement": "aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage statique Z2",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-nage-statique.jpg"
+   },
+   "slug": "nage-statique-z2",
+   "mouvement": "nage statique",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage très douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-nage-tres-douce",
+   "mouvement": "calme douce nage retour tres",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "echauffement-nage-douce",
+   "mouvement": "douce echauffement nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage statique Z2",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-nage-statique.jpg"
+   },
+   "slug": "nage-statique-z2",
+   "mouvement": "nage statique",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage statique Z2/Z3",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-nage-statique.jpg"
+   },
+   "slug": "nage-statique-z2-z3",
+   "mouvement": "nage statique",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "nage-douce",
+   "mouvement": "douce nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme + mobilité",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Endurance",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-mobilite",
+   "mouvement": "calme mobilite retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "echauffement-nage-douce",
+   "mouvement": "douce echauffement nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 1/6",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-1-6",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 2/6",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-2-6",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 3/6",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-3-6",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 4/6",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-4-6",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 5/6",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-5-6",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 6/6",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-6-6",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage très douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-nage-tres-douce",
+   "mouvement": "calme douce nage retour tres",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "echauffement-nage-douce",
+   "mouvement": "douce echauffement nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 1/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-1-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 2/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-2-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 3/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-3-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 4/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-4-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 5/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-5-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 6/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-6-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 7/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-7-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 8/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-8-8",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup active — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-active-marche-aquatique",
+   "mouvement": "active aquatique marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage très douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-nage-tres-douce",
+   "mouvement": "calme douce nage retour tres",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "echauffement-nage-douce",
+   "mouvement": "douce echauffement nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 1/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-1-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 2/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-2-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 3/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-3-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 4/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-4-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 5/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-5-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 6/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-6-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 7/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-7-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 8/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-8-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 9/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-9-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager — fractionné 10/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-fractionne.jpg"
+   },
+   "slug": "nager-fractionne-10-10",
+   "mouvement": "fractionne nager",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup courte — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-courte-marche",
+   "mouvement": "courte marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage très douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Interval",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-nage-tres-douce",
+   "mouvement": "calme douce nage retour tres",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement soigneux — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "echauffement-soigneux-nage-douce",
+   "mouvement": "douce echauffement nage soigneux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 1/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-1-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 2/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-2-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 3/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-3-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 4/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-4-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 5/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-5-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 6/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-6-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 7/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-7-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 8/8",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-8-8",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage très douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-nage-tres-douce",
+   "mouvement": "calme douce nage retour tres",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement soigneux — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "echauffement-soigneux-nage-douce",
+   "mouvement": "douce echauffement nage soigneux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 1/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-1-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 2/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-2-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 3/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-3-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 4/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-4-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 5/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-5-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 6/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-6-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 7/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-7-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 8/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-8-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 9/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-9-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 10/10",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-10-10",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup complète — souffler au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-recup-complete.jpg"
+   },
+   "slug": "recup-complete-souffler-au-bord",
+   "mouvement": "bord complete recup souffler",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage très douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme-nage-tres-douce",
+   "mouvement": "calme douce nage retour tres",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement soigneux — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "echauffement-soigneux-nage-douce",
+   "mouvement": "douce echauffement nage soigneux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 1/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-1-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 2/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-2-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 3/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-3-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 4/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-4-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 5/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-5-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 6/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-6-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 7/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-7-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 8/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-8-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 9/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-9-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 10/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-10-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 11/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-11-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nager sprint 12/12",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-sprint.jpg"
+   },
+   "slug": "nager-sprint-12-12",
+   "mouvement": "nager sprint",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup — marche",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "recup-marche",
+   "mouvement": "marche recup",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Swim Sprint",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-retour-calme.jpg"
+   },
+   "slug": "retour-au-calme",
+   "mouvement": "calme retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "echauffement-marche-aquatique",
+   "mouvement": "aquatique echauffement marche",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 1/2 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "tour-1-2-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 2/2 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "tour-2-2-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "BEGINNER",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "retour-au-calme-nage-douce",
+   "mouvement": "calme douce nage retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "echauffement-marche-aquatique",
+   "mouvement": "aquatique echauffement marche",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 1/3 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "tour-1-3-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 2/3 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "tour-2-3-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 3/3 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "tour-3-3-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "INTERMEDIATE",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "retour-au-calme-nage-douce",
+   "mouvement": "calme douce nage retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "echauffement-marche-aquatique",
+   "mouvement": "aquatique echauffement marche",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 1/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "tour-1-4-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 2/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "tour-2-4-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 3/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "tour-3-4-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tour 4/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "tour-4-4-en-place",
+   "mouvement": "tour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-sur-place",
+   "mouvement": "aqua jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux — mains au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-mains-au-bord",
+   "mouvement": "bord ciseaux mains",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m)",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m",
+   "mouvement": "deplacements lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-au-bord",
+   "mouvement": "bord gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua HIIT (sans nage)",
+    "niveau": "ADVANCED",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "retour-au-calme-nage-douce",
+   "mouvement": "calme douce nage retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage douce sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "DOUCE 12 MIN",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "nage-douce-sur-place",
+   "mouvement": "douce nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Mobilité épaules aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "DOUCE 12 MIN",
+    "visuelLivre": "/media/b2b32833d73d3ca4.gif"
+   },
+   "slug": "mobilite-epaules-aquatique",
+   "mouvement": "aquatique epaules mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Mobilité hanches / chevilles",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "DOUCE 12 MIN",
+    "visuelLivre": "/media/faa82528766b9402.gif"
+   },
+   "slug": "mobilite-hanches-chevilles",
+   "mouvement": "chevilles hanches mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Étirements au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "DOUCE 12 MIN",
+    "visuelLivre": "/media/pool-etirements-bord.jpg"
+   },
+   "slug": "etirements-au-bord",
+   "mouvement": "bord etirements",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage douce sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "COMPLÈTE 18 MIN",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "nage-douce-sur-place",
+   "mouvement": "douce nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Mobilité épaules aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "COMPLÈTE 18 MIN",
+    "visuelLivre": "/media/b2b32833d73d3ca4.gif"
+   },
+   "slug": "mobilite-epaules-aquatique",
+   "mouvement": "aquatique epaules mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Mobilité hanches / chevilles",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "COMPLÈTE 18 MIN",
+    "visuelLivre": "/media/faa82528766b9402.gif"
+   },
+   "slug": "mobilite-hanches-chevilles",
+   "mouvement": "chevilles hanches mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage douce + respiration",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "COMPLÈTE 18 MIN",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "nage-douce-respiration",
+   "mouvement": "douce nage respiration",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Étirements au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "COMPLÈTE 18 MIN",
+    "visuelLivre": "/media/pool-etirements-bord.jpg"
+   },
+   "slug": "etirements-au-bord",
+   "mouvement": "bord etirements",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage douce sur place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "TOTALE 25 MIN",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "nage-douce-sur-place",
+   "mouvement": "douce nage",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Mobilité épaules aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "TOTALE 25 MIN",
+    "visuelLivre": "/media/b2b32833d73d3ca4.gif"
+   },
+   "slug": "mobilite-epaules-aquatique",
+   "mouvement": "aquatique epaules mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Mobilité hanches / chevilles",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "TOTALE 25 MIN",
+    "visuelLivre": "/media/faa82528766b9402.gif"
+   },
+   "slug": "mobilite-hanches-chevilles",
+   "mouvement": "chevilles hanches mobilite",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Nage douce + respiration",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "TOTALE 25 MIN",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "nage-douce-respiration",
+   "mouvement": "douce nage respiration",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Étirements au bord",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Recovery",
+    "niveau": "TOTALE 25 MIN",
+    "visuelLivre": "/media/pool-etirements-bord.jpg"
+   },
+   "slug": "etirements-au-bord",
+   "mouvement": "bord etirements",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "echauffement-marche-aquatique",
+   "mouvement": "aquatique echauffement marche",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 1/2 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "tabata-1-2-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup entre tabatas",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/pool-recup-tabata.jpg"
+   },
+   "slug": "recup-entre-tabatas",
+   "mouvement": "entre recup tabatas",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 2/2 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "tabata-2-2-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "BEGINNER ×2",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "retour-au-calme-nage-douce",
+   "mouvement": "calme douce nage retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "echauffement-marche-aquatique",
+   "mouvement": "aquatique echauffement marche",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 1/3 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "tabata-1-3-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup entre tabatas",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/pool-recup-tabata.jpg"
+   },
+   "slug": "recup-entre-tabatas",
+   "mouvement": "entre recup tabatas",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 2/3 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "tabata-2-3-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup entre tabatas",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/pool-recup-tabata.jpg"
+   },
+   "slug": "recup-entre-tabatas",
+   "mouvement": "entre recup tabatas",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 3/3 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "tabata-3-3-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "INTERMEDIATE ×3",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "retour-au-calme-nage-douce",
+   "mouvement": "calme douce nage retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Échauffement — marche aquatique",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-marche-aquatique.jpg"
+   },
+   "slug": "echauffement-marche-aquatique",
+   "mouvement": "aquatique echauffement marche",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 1/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "tabata-1-4-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup entre tabatas",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-recup-tabata.jpg"
+   },
+   "slug": "recup-entre-tabatas",
+   "mouvement": "entre recup tabatas",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 2/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "tabata-2-4-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup entre tabatas",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-recup-tabata.jpg"
+   },
+   "slug": "recup-entre-tabatas",
+   "mouvement": "entre recup tabatas",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 3/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "tabata-3-4-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Récup entre tabatas",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-recup-tabata.jpg"
+   },
+   "slug": "recup-entre-tabatas",
+   "mouvement": "entre recup tabatas",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Tabata 4/4 — en place",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "tabata-4-4-en-place",
+   "mouvement": "tabata",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Aqua-jogging — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/e035a3d8e8c21744.gif"
+   },
+   "slug": "aqua-jogging-effort",
+   "mouvement": "aqua effort jogging",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Montées de genoux — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fe34482aa6faf932.gif"
+   },
+   "slug": "montees-de-genoux-effort",
+   "mouvement": "effort genoux montees",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Ciseaux au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/48fe4a8cbb0d125c.gif"
+   },
+   "slug": "ciseaux-au-bord-effort",
+   "mouvement": "bord ciseaux effort",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Battements de jambes — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/fd7c5fb1226873f6.gif"
+   },
+   "slug": "battements-de-jambes-effort",
+   "mouvement": "battements effort jambes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Déplacements latéraux (4 m) — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-deplacements-lateraux.jpg"
+   },
+   "slug": "deplacements-lateraux-4-m-effort",
+   "mouvement": "deplacements effort lateraux",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Pompes au bord — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/2e234599c9335530.gif"
+   },
+   "slug": "pompes-au-bord-effort",
+   "mouvement": "bord effort pompes",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Gainage vertical — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/f1dde35bd517f24b.gif"
+   },
+   "slug": "gainage-vertical-effort",
+   "mouvement": "effort gainage vertical",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Talons-fesses — EFFORT",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/7517a916496ec766.gif"
+   },
+   "slug": "talons-fesses-effort",
+   "mouvement": "effort fesses talons",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Repos",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": null
+   },
+   "slug": "repos",
+   "mouvement": "repos",
+   "athlete": "homme"
+  },
+  {
+   "surface": "piscine-protocole",
+   "nom": "Retour au calme — nage douce",
+   "domaine": "homme",
+   "detail": {
+    "protocole": "Aqua Tabata",
+    "niveau": "ADVANCED ×4",
+    "visuelLivre": "/media/pool-nage-douce.jpg"
+   },
+   "slug": "retour-au-calme-nage-douce",
+   "mouvement": "calme douce nage retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "cardio-elliptique",
+   "nom": "Elliptique — mise en route",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "echauffement elliptique",
+     "elliptique"
+    ],
+    "visuelLivre": "/media/cardio-elliptique.jpg"
+   },
+   "slug": "elliptique-mise-en-route",
+   "mouvement": "elliptique mise route",
+   "athlete": "homme"
+  },
+  {
+   "surface": "cardio-elliptique",
+   "nom": "Elliptique — fractionné",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "fractionne soutenu",
+     "fractionne"
+    ],
+    "visuelLivre": "/media/cardio-elliptique.jpg"
+   },
+   "slug": "elliptique-fractionne",
+   "mouvement": "elliptique fractionne",
+   "athlete": "homme"
+  },
+  {
+   "surface": "cardio-elliptique",
+   "nom": "Elliptique — récupération active",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "recuperation active",
+     "recup active"
+    ],
+    "visuelLivre": "/media/cardio-recup-active.jpg"
+   },
+   "slug": "elliptique-recuperation-active",
+   "mouvement": "active elliptique recuperation",
+   "athlete": "homme"
+  },
+  {
+   "surface": "cardio-elliptique",
+   "nom": "Elliptique — retour au calme",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "retour au calme elliptique"
+    ],
+    "visuelLivre": "/media/cardio-recup-active.jpg"
+   },
+   "slug": "elliptique-retour-au-calme",
+   "mouvement": "calme elliptique retour",
+   "athlete": "homme"
+  },
+  {
+   "surface": "cardio-elliptique",
+   "nom": "Transition",
+   "domaine": "homme",
+   "detail": {
+    "alias": [
+     "transition"
+    ],
+    "visuelLivre": "/media/cardio-transition.jpg"
+   },
+   "slug": "transition",
+   "mouvement": "transition",
+   "athlete": "homme"
   }
  ],
  "mouvements": [
@@ -14582,11 +20295,1490 @@
    "slugs": [
     "superman"
    ]
+  },
+  {
+   "identifiant": "elliptique-recuperation-active",
+   "surface": "cardio-elliptique",
+   "athlete": "homme",
+   "noms": [
+    "Elliptique — récupération active"
+   ],
+   "slugs": [
+    "elliptique-recuperation-active"
+   ]
+  },
+  {
+   "identifiant": "elliptique-retour-au-calme",
+   "surface": "cardio-elliptique",
+   "athlete": "homme",
+   "noms": [
+    "Elliptique — retour au calme"
+   ],
+   "slugs": [
+    "elliptique-retour-au-calme"
+   ]
+  },
+  {
+   "identifiant": "elliptique-fractionne",
+   "surface": "cardio-elliptique",
+   "athlete": "homme",
+   "noms": [
+    "Elliptique — fractionné"
+   ],
+   "slugs": [
+    "elliptique-fractionne"
+   ]
+  },
+  {
+   "identifiant": "elliptique-mise-en-route",
+   "surface": "cardio-elliptique",
+   "athlete": "homme",
+   "noms": [
+    "Elliptique — mise en route"
+   ],
+   "slugs": [
+    "elliptique-mise-en-route"
+   ]
+  },
+  {
+   "identifiant": "transition",
+   "surface": "cardio-elliptique",
+   "athlete": "homme",
+   "noms": [
+    "Transition"
+   ],
+   "slugs": [
+    "transition"
+   ]
+  },
+  {
+   "identifiant": "aqua-jogging-sur-place",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Aqua-jogging sur place"
+   ],
+   "slugs": [
+    "aqua-jogging-sur-place"
+   ]
+  },
+  {
+   "identifiant": "mobilite-epaules-aquatique",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Mobilité épaules aquatique"
+   ],
+   "slugs": [
+    "mobilite-epaules-aquatique"
+   ]
+  },
+  {
+   "identifiant": "marche-aquatique",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Marche aquatique"
+   ],
+   "slugs": [
+    "marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "battements-au-bord",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Battements au bord"
+   ],
+   "slugs": [
+    "battements-au-bord"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-au-bord",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Ciseaux au bord"
+   ],
+   "slugs": [
+    "ciseaux-au-bord"
+   ]
+  },
+  {
+   "identifiant": "etirements-au-bord",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Étirements au bord"
+   ],
+   "slugs": [
+    "etirements-au-bord"
+   ]
+  },
+  {
+   "identifiant": "gainage-au-bord-vertical",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Gainage au bord (vertical)"
+   ],
+   "slugs": [
+    "gainage-au-bord-vertical"
+   ]
+  },
+  {
+   "identifiant": "pompes-au-bord",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Pompes au bord"
+   ],
+   "slugs": [
+    "pompes-au-bord"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Retour au calme"
+   ],
+   "slugs": [
+    "retour-au-calme"
+   ]
+  },
+  {
+   "identifiant": "mobilite-hanches-chevilles",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Mobilité hanches / chevilles"
+   ],
+   "slugs": [
+    "mobilite-hanches-chevilles"
+   ]
+  },
+  {
+   "identifiant": "recup-complete-souffler",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Récup complète — souffler"
+   ],
+   "slugs": [
+    "recup-complete-souffler"
+   ]
+  },
+  {
+   "identifiant": "deplacements-lateraux-4-m",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Déplacements latéraux (4 m)"
+   ],
+   "slugs": [
+    "deplacements-lateraux-4-m"
+   ]
+  },
+  {
+   "identifiant": "nage-douce",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Nage douce"
+   ],
+   "slugs": [
+    "nage-douce"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-a-l-elastique",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Nage statique (à l'élastique)"
+   ],
+   "slugs": [
+    "nage-statique-a-l-elastique"
+   ]
+  },
+  {
+   "identifiant": "recup-entre-tabatas",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Récup entre tabatas"
+   ],
+   "slugs": [
+    "recup-entre-tabatas"
+   ]
+  },
+  {
+   "identifiant": "talons-fesses",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Talons-fesses"
+   ],
+   "slugs": [
+    "talons-fesses"
+   ]
+  },
+  {
+   "identifiant": "sprint-nager-a-fond",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Sprint — nager à fond"
+   ],
+   "slugs": [
+    "sprint-nager-a-fond"
+   ]
+  },
+  {
+   "identifiant": "fractionne-nager",
+   "surface": "piscine",
+   "athlete": "homme",
+   "noms": [
+    "Fractionné — nager"
+   ],
+   "slugs": [
+    "fractionne-nager"
+   ]
+  },
+  {
+   "identifiant": "recup-active-marche-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique",
+    "Récup active — marche aquatique"
+   ],
+   "slugs": [
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique",
+    "recup-active-marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "aqua-jogging-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT",
+    "Aqua-jogging — EFFORT"
+   ],
+   "slugs": [
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort",
+    "aqua-jogging-effort"
+   ]
+  },
+  {
+   "identifiant": "aqua-jogging-sur-place",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place",
+    "Aqua-jogging sur place"
+   ],
+   "slugs": [
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place",
+    "aqua-jogging-sur-place"
+   ]
+  },
+  {
+   "identifiant": "echauffement-marche-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique",
+    "Échauffement — marche aquatique"
+   ],
+   "slugs": [
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique",
+    "echauffement-marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "mobilite-epaules-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique",
+    "Mobilité épaules aquatique"
+   ],
+   "slugs": [
+    "mobilite-epaules-aquatique",
+    "mobilite-epaules-aquatique",
+    "mobilite-epaules-aquatique"
+   ]
+  },
+  {
+   "identifiant": "recup-marche-aquatique",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Récup — marche aquatique",
+    "Récup — marche aquatique"
+   ],
+   "slugs": [
+    "recup-marche-aquatique",
+    "recup-marche-aquatique"
+   ]
+  },
+  {
+   "identifiant": "echauffement-battements-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement — battements au bord"
+   ],
+   "slugs": [
+    "echauffement-battements-au-bord"
+   ]
+  },
+  {
+   "identifiant": "echauffement-battements-mobilite",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement — battements + mobilité"
+   ],
+   "slugs": [
+    "echauffement-battements-mobilite"
+   ]
+  },
+  {
+   "identifiant": "battements-de-jambes-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT",
+    "Battements de jambes — EFFORT"
+   ],
+   "slugs": [
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort",
+    "battements-de-jambes-effort"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-au-bord-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT",
+    "Ciseaux au bord — EFFORT"
+   ],
+   "slugs": [
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort",
+    "ciseaux-au-bord-effort"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-mains-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord",
+    "Ciseaux — mains au bord"
+   ],
+   "slugs": [
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord",
+    "ciseaux-mains-au-bord"
+   ]
+  },
+  {
+   "identifiant": "recup-complete-souffler-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord"
+   ],
+   "slugs": [
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord",
+    "recup-complete-souffler-au-bord"
+   ]
+  },
+  {
+   "identifiant": "pompes-au-bord-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT",
+    "Pompes au bord — EFFORT"
+   ],
+   "slugs": [
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort",
+    "pompes-au-bord-effort"
+   ]
+  },
+  {
+   "identifiant": "etirements-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Étirements au bord",
+    "Étirements au bord",
+    "Étirements au bord"
+   ],
+   "slugs": [
+    "etirements-au-bord",
+    "etirements-au-bord",
+    "etirements-au-bord"
+   ]
+  },
+  {
+   "identifiant": "gainage-vertical-au-bord",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord",
+    "Gainage vertical au bord"
+   ],
+   "slugs": [
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord",
+    "gainage-vertical-au-bord"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce",
+    "Retour au calme — nage douce"
+   ],
+   "slugs": [
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce",
+    "retour-au-calme-nage-douce"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-nage-tres-douce",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce",
+    "Retour au calme — nage très douce"
+   ],
+   "slugs": [
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce",
+    "retour-au-calme-nage-tres-douce"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-mobilite",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Retour au calme + mobilité"
+   ],
+   "slugs": [
+    "retour-au-calme-mobilite"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme-respiration",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Retour au calme + respiration"
+   ],
+   "slugs": [
+    "retour-au-calme-respiration"
+   ]
+  },
+  {
+   "identifiant": "retour-au-calme",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Retour au calme"
+   ],
+   "slugs": [
+    "retour-au-calme"
+   ]
+  },
+  {
+   "identifiant": "mobilite-hanches-chevilles",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles",
+    "Mobilité hanches / chevilles"
+   ],
+   "slugs": [
+    "mobilite-hanches-chevilles",
+    "mobilite-hanches-chevilles",
+    "mobilite-hanches-chevilles"
+   ]
+  },
+  {
+   "identifiant": "recup-courte-marche",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche",
+    "Récup courte — marche"
+   ],
+   "slugs": [
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche",
+    "recup-courte-marche"
+   ]
+  },
+  {
+   "identifiant": "deplacements-lateraux-4-m-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT",
+    "Déplacements latéraux (4 m) — EFFORT"
+   ],
+   "slugs": [
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort",
+    "deplacements-lateraux-4-m-effort"
+   ]
+  },
+  {
+   "identifiant": "deplacements-lateraux-4-m",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)",
+    "Déplacements latéraux (4 m)"
+   ],
+   "slugs": [
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m",
+    "deplacements-lateraux-4-m"
+   ]
+  },
+  {
+   "identifiant": "echauffement-nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce",
+    "Échauffement — nage douce"
+   ],
+   "slugs": [
+    "echauffement-nage-douce",
+    "echauffement-nage-douce",
+    "echauffement-nage-douce",
+    "echauffement-nage-douce"
+   ]
+  },
+  {
+   "identifiant": "echauffement-soigneux-nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce",
+    "Échauffement soigneux — nage douce"
+   ],
+   "slugs": [
+    "echauffement-soigneux-nage-douce",
+    "echauffement-soigneux-nage-douce",
+    "echauffement-soigneux-nage-douce"
+   ]
+  },
+  {
+   "identifiant": "nage-douce",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Nage douce",
+    "Nage douce sur place",
+    "Nage douce sur place",
+    "Nage douce sur place"
+   ],
+   "slugs": [
+    "nage-douce",
+    "nage-douce-sur-place",
+    "nage-douce-sur-place",
+    "nage-douce-sur-place"
+   ]
+  },
+  {
+   "identifiant": "nage-douce-respiration",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Nage douce + respiration",
+    "Nage douce + respiration"
+   ],
+   "slugs": [
+    "nage-douce-respiration",
+    "nage-douce-respiration"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-douce",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Nage statique douce",
+    "Nage statique douce"
+   ],
+   "slugs": [
+    "nage-statique-douce",
+    "nage-statique-douce"
+   ]
+  },
+  {
+   "identifiant": "talons-fesses-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT"
+   ],
+   "slugs": [
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort",
+    "talons-fesses-effort"
+   ]
+  },
+  {
+   "identifiant": "gainage-vertical-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT",
+    "Gainage vertical — EFFORT"
+   ],
+   "slugs": [
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort",
+    "gainage-vertical-effort"
+   ]
+  },
+  {
+   "identifiant": "montees-de-genoux-effort",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT",
+    "Montées de genoux — EFFORT"
+   ],
+   "slugs": [
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort",
+    "montees-de-genoux-effort"
+   ]
+  },
+  {
+   "identifiant": "recup-entre-tabatas",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas",
+    "Récup entre tabatas"
+   ],
+   "slugs": [
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas",
+    "recup-entre-tabatas"
+   ]
+  },
+  {
+   "identifiant": "nager-fractionne-1-6",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Nager — fractionné 1/6",
+    "Nager — fractionné 2/6",
+    "Nager — fractionné 3/6",
+    "Nager — fractionné 4/6",
+    "Nager — fractionné 5/6",
+    "Nager — fractionné 6/6",
+    "Nager — fractionné 1/8",
+    "Nager — fractionné 2/8",
+    "Nager — fractionné 3/8",
+    "Nager — fractionné 4/8",
+    "Nager — fractionné 5/8",
+    "Nager — fractionné 6/8",
+    "Nager — fractionné 7/8",
+    "Nager — fractionné 8/8",
+    "Nager — fractionné 1/10",
+    "Nager — fractionné 2/10",
+    "Nager — fractionné 3/10",
+    "Nager — fractionné 4/10",
+    "Nager — fractionné 5/10",
+    "Nager — fractionné 6/10",
+    "Nager — fractionné 7/10",
+    "Nager — fractionné 8/10",
+    "Nager — fractionné 9/10",
+    "Nager — fractionné 10/10"
+   ],
+   "slugs": [
+    "nager-fractionne-1-6",
+    "nager-fractionne-2-6",
+    "nager-fractionne-3-6",
+    "nager-fractionne-4-6",
+    "nager-fractionne-5-6",
+    "nager-fractionne-6-6",
+    "nager-fractionne-1-8",
+    "nager-fractionne-2-8",
+    "nager-fractionne-3-8",
+    "nager-fractionne-4-8",
+    "nager-fractionne-5-8",
+    "nager-fractionne-6-8",
+    "nager-fractionne-7-8",
+    "nager-fractionne-8-8",
+    "nager-fractionne-1-10",
+    "nager-fractionne-2-10",
+    "nager-fractionne-3-10",
+    "nager-fractionne-4-10",
+    "nager-fractionne-5-10",
+    "nager-fractionne-6-10",
+    "nager-fractionne-7-10",
+    "nager-fractionne-8-10",
+    "nager-fractionne-9-10",
+    "nager-fractionne-10-10"
+   ]
+  },
+  {
+   "identifiant": "recup-marche",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche",
+    "Récup — marche"
+   ],
+   "slugs": [
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche",
+    "recup-marche"
+   ]
+  },
+  {
+   "identifiant": "nage-statique-z2",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2/Z3"
+   ],
+   "slugs": [
+    "nage-statique-z2",
+    "nage-statique-z2",
+    "nage-statique-z2",
+    "nage-statique-z2-z3"
+   ]
+  },
+  {
+   "identifiant": "nager-sprint-1-8",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Nager sprint 1/8",
+    "Nager sprint 2/8",
+    "Nager sprint 3/8",
+    "Nager sprint 4/8",
+    "Nager sprint 5/8",
+    "Nager sprint 6/8",
+    "Nager sprint 7/8",
+    "Nager sprint 8/8",
+    "Nager sprint 1/10",
+    "Nager sprint 2/10",
+    "Nager sprint 3/10",
+    "Nager sprint 4/10",
+    "Nager sprint 5/10",
+    "Nager sprint 6/10",
+    "Nager sprint 7/10",
+    "Nager sprint 8/10",
+    "Nager sprint 9/10",
+    "Nager sprint 10/10",
+    "Nager sprint 1/12",
+    "Nager sprint 2/12",
+    "Nager sprint 3/12",
+    "Nager sprint 4/12",
+    "Nager sprint 5/12",
+    "Nager sprint 6/12",
+    "Nager sprint 7/12",
+    "Nager sprint 8/12",
+    "Nager sprint 9/12",
+    "Nager sprint 10/12",
+    "Nager sprint 11/12",
+    "Nager sprint 12/12"
+   ],
+   "slugs": [
+    "nager-sprint-1-8",
+    "nager-sprint-2-8",
+    "nager-sprint-3-8",
+    "nager-sprint-4-8",
+    "nager-sprint-5-8",
+    "nager-sprint-6-8",
+    "nager-sprint-7-8",
+    "nager-sprint-8-8",
+    "nager-sprint-1-10",
+    "nager-sprint-2-10",
+    "nager-sprint-3-10",
+    "nager-sprint-4-10",
+    "nager-sprint-5-10",
+    "nager-sprint-6-10",
+    "nager-sprint-7-10",
+    "nager-sprint-8-10",
+    "nager-sprint-9-10",
+    "nager-sprint-10-10",
+    "nager-sprint-1-12",
+    "nager-sprint-2-12",
+    "nager-sprint-3-12",
+    "nager-sprint-4-12",
+    "nager-sprint-5-12",
+    "nager-sprint-6-12",
+    "nager-sprint-7-12",
+    "nager-sprint-8-12",
+    "nager-sprint-9-12",
+    "nager-sprint-10-12",
+    "nager-sprint-11-12",
+    "nager-sprint-12-12"
+   ]
+  },
+  {
+   "identifiant": "repos",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos",
+    "Repos"
+   ],
+   "slugs": [
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos",
+    "repos"
+   ]
+  },
+  {
+   "identifiant": "tabata-1-2-en-place",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Tabata 1/2 — en place",
+    "Tabata 2/2 — en place",
+    "Tabata 1/3 — en place",
+    "Tabata 2/3 — en place",
+    "Tabata 3/3 — en place",
+    "Tabata 1/4 — en place",
+    "Tabata 2/4 — en place",
+    "Tabata 3/4 — en place",
+    "Tabata 4/4 — en place"
+   ],
+   "slugs": [
+    "tabata-1-2-en-place",
+    "tabata-2-2-en-place",
+    "tabata-1-3-en-place",
+    "tabata-2-3-en-place",
+    "tabata-3-3-en-place",
+    "tabata-1-4-en-place",
+    "tabata-2-4-en-place",
+    "tabata-3-4-en-place",
+    "tabata-4-4-en-place"
+   ]
+  },
+  {
+   "identifiant": "tour-1-2-en-place",
+   "surface": "piscine-protocole",
+   "athlete": "homme",
+   "noms": [
+    "Tour 1/2 — en place",
+    "Tour 2/2 — en place",
+    "Tour 1/3 — en place",
+    "Tour 2/3 — en place",
+    "Tour 3/3 — en place",
+    "Tour 1/4 — en place",
+    "Tour 2/4 — en place",
+    "Tour 3/4 — en place",
+    "Tour 4/4 — en place"
+   ],
+   "slugs": [
+    "tour-1-2-en-place",
+    "tour-2-2-en-place",
+    "tour-1-3-en-place",
+    "tour-2-3-en-place",
+    "tour-3-3-en-place",
+    "tour-1-4-en-place",
+    "tour-2-4-en-place",
+    "tour-3-4-en-place",
+    "tour-4-4-en-place"
+   ]
+  },
+  {
+   "identifiant": "aqua-jogging",
+   "surface": "tabata-aqua",
+   "athlete": "homme",
+   "noms": [
+    "Aqua-jogging"
+   ],
+   "slugs": [
+    "aqua-jogging"
+   ]
+  },
+  {
+   "identifiant": "ciseaux-au-bord",
+   "surface": "tabata-aqua",
+   "athlete": "homme",
+   "noms": [
+    "Ciseaux au bord"
+   ],
+   "slugs": [
+    "ciseaux-au-bord"
+   ]
+  },
+  {
+   "identifiant": "deplacements-lateraux",
+   "surface": "tabata-aqua",
+   "athlete": "homme",
+   "noms": [
+    "Déplacements latéraux"
+   ],
+   "slugs": [
+    "deplacements-lateraux"
+   ]
+  },
+  {
+   "identifiant": "gainage-vertical",
+   "surface": "tabata-aqua",
+   "athlete": "homme",
+   "noms": [
+    "Gainage vertical"
+   ],
+   "slugs": [
+    "gainage-vertical"
+   ]
   }
  ],
  "chiffres": {
   "noms": 729,
-  "mouvements": 343,
+  "mouvements": 410,
   "images": 686,
   "parSurface": {
    "cardio-elliptique": 5,
@@ -14601,6 +21793,7 @@
   "parAthlete": {
    "femme": 134,
    "homme": 209
-  }
+  },
+  "lignes": 1167
  }
 }

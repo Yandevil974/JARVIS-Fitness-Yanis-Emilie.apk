@@ -1,4 +1,4 @@
-# 📋 BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT (état lot 50, 26 septembre 2026)
+# 📋 BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT (état lot 51, 26 septembre 2026)
 
 Tu reprends le projet de refonte des visuels de l'app JARVIS Fitness (Yanis & Émilie).
 Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Branche portant tout le travail :
@@ -15,11 +15,23 @@ branche dans `PASSATION-COPIER-COLLER.md`, `evolution/media/refonte-photo/PASSAT
 3. `evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md` (§65→67)
 4. `evolution/media/refonte-photo/livraison/LIVRAISON-README.md` + `livraison/manifeste-331.json`
 
-**État actuel :** 331/331 couples valides, 0 restant ; **relecture case par case TERMINÉE
-(331/331 relus, relecture 26)** ; `production/a-refaire.json` VIDE ; style : **33 GIF** en attente de
-décision user (`production/style-a-reprendre.json`). PDF de revue régénéré AVEC LES MÊMES NUMÉROS :
-`evolution/media/refonte-photo/livraison/REVUE-331-exercices.pdf` (112 pages, 1→331 ; n° 169, 180, 327,
-330 ont une nouvelle image depuis le lot 50) — l'utilisateur relit par NUMÉRO. Chaîne APK 1.4.9
+**État actuel :** **363 couples valides / 26 restants** (les 331 d'origine sont tous valides ET relus ;
+le 26/09 l'utilisateur a demandé les visuels piscine/cardio pour YANIS : 58 couples homme ajoutés,
+32 validés au lot 51). `production/a-refaire.json` : 1 (battements-au-bord|homme, retry lot 52 avec
+ancrage par côté caméra). Restent 15 générations : lot 52 = battements-au-bord, nage-statique-a-l-elastique,
+fractionne-nager, sprint-nager-a-fond, recup-complete-souffler, talons-fesses, etirements-au-bord,
+mobilite-epaules-aquatique, mobilite-hanches-chevilles, nage-douce-respiration (homme, bassin) ; lot 53 =
+elliptique-mise-en-route, -fractionne, -recuperation-active, -retour-au-calme, transition (homme) PUIS le
+câblage « athlète = profil » pour piscine/elliptique (patch `bt` + constante `If`, voir VERIFICATION §68).
+Après chaque lot : `verif-ids.py` → `refonte-sheet.py --athlete homme` → lecture des 2 cases →
+`tools/valide-couples.py --athlete homme --lot lotNN --acceptes …` (copies conformes + manifeste + etat +
+numéro PDF) → `pdf-revue-331.py` (numéros FIGÉS par `livraison/numerotation-pdf.json`) → `index-general.py`.
+Style : 33 GIF en attente de décision user. PDF : `livraison/REVUE-331-exercices.pdf` (122 pages, 363
+exercices, 1→331 inchangés, Yanis piscine dès 332) — l'utilisateur relit par NUMÉRO.
+**Feuille de route utilisateur (26/09, par étapes)** : 1 Yanis piscine/cardio (en cours) ; 2 corrections
+PDF sur ses retours ; 3 pouvoir augmenter le niveau du programme cardio (piscine + autres) pour les deux ;
+4 images pendant le chrono (piscine, aqua, nage fractionnée, elliptique) ; 5 construire l'app ; 6 IA
+conversationnelle en dernier. Prévenir l'utilisateur dès que la limite de contexte approche. Chaîne APK 1.4.9
 rejouable en 1 min sans clé : `node evolution/media/tools/payloads-148.mjs` →
 `python3 evolution/media/tools/overlay-331.py` → `python3 evolution/android/build-media-149.py --unsigned`
 (APK non signé `.cache/build/…-1.4.9-non-signe.apk`, 103,8 Mo, 331 GIF vérifiés SHA dans le zip, hook
