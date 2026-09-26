@@ -5,16 +5,17 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot58 — ÉTAPE2, corrections AVANT validation utilisateur
+## État prioritaire lot59 — ÉTAPE2, propositions AVANT validation
 
-**26 points ouverts** (23 numéros +3 variantes) ;149 ajouté,148 confirmé Mountain climbers homme
-à3 jambes. Zottman46/47/48 : format4 positions approuvé, images non approuvées.
-5 propositions non validées19/37/64/149/150 ;21 points encore à préparer/expliquer.
-Aucun remplacement livré sans accord utilisateur ; PDF principal389 exercices inchangé.
-Lot58 :8 appels dont1 échec ; Pallof149/150 proposés,148 et Zottman refusés. VERIFICATION §75.
-**Livraison de corrections demandée** : quand TOUT prêt, UN PDF téléchargeable seulement des exercices
-concernés, AVANT gauche / APRÈS droite côte à côte. Outil tools/pdf-corrections-avant-apres.py bloque
-si incomplet ; lit AVANT dans GIF du commit figé (pas planche source). Pas de PDF partiel final.
+26 points ouverts,10 propositions NON VALIDÉES :19/37/64/90/149/150/194/222/298/380.
+16 sans proposition :26/31/38/44/45/46/47/48/80/85/87/126/148/204/239/265.
+Lot59 :10 générations, propositions90/194/222+copie298/380 ;126 et239 restent refusés.
+194 : disques coupés à reprendre avant intégration ;222/298 : eau hanches, immersion à apprécier.
+90 GIF sans recalage automatique pour garder mains/haltère complets. Toutes propositions isolées.
+Couleur jaune-vert au seuil lime strict nul pour plusieurs candidats ; ne pas anticiper choix260.
+Aucun GIF livré/PDF principal/manifeste/état remplacé. Aucune acceptation utilisateur reçue.
+Comparatif final seulement quand toutes reprises prêtes : AVANT gauche / APRÈS droite, seulement
+exercices concernés ; outil pdf-corrections-avant-apres.py refuse incomplet. Détails §76.
 
 ### Rappels utilisateur OBLIGATOIRES (ne pas oublier aux prochains chats)
 1. **AVANT de passer à l’étape3** : demander si le vert musculaire doit être identique au **n°260**

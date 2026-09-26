@@ -1054,3 +1054,39 @@ Aucun PDF final de corrections créé/livré ce tour. Le PDF principal389 exerci
 
 **Suite** : rester à l’étape2, continuer les reprises par lots≤10 puis comparatif complet, accord utilisateur
 par numéro avant intégration. Les nouveaux rappels sont des arrêts obligatoires aux étapes indiquées.
+
+
+## 76. Lot59 — cinq numéros supplémentaires proposés, AUCUNE intégration (26/09/2026)
+
+**10 générations** :6 initiales (90,126,194,222,239,380) +4 reprises (90,126,222,239).
+Prescriptions relues et AVANT extrait des GIF réellement livrés (pas des planches associées).
+Propositions NON VALIDÉES :
+-90 : essai1 refusé (support plié + curl) ; essai2 schéma indépendant : support tendu et vraie
+  élévation latérale. Recalage automatique -92px coupait mains/haltère : GIF candidat reconstruit
+  des deux demi-planches ENTIÈRES sans recalage, hauteur440,2×500ms. Vert ROI242/212 pixels.
+-194 : même jambe droite appuyée sur step au départ et à l’arrivée. Réserve explicite : disques
+  de barre partiellement coupés ; ce n’est PAS prêt à intégrer sans revue/correction de cadrage.
+-222/298 : femme debout DANS le bassin, pieds au fond, jambes sous eau. Eau aux hanches ; profondeur
+  à apprécier par utilisateur (ne pas prétendre que l’abdomen est immergé). Essai2 demandant eau
+  poitrine n’a pas remonté l’eau de départ ; essai1 conservé comme proposition.298 copie conforme
+  CANDIDATE de222, aucune copie dans le répertoire GIF livré.
+-380 : tronc reste orienté droite, jambe devant puis derrière. Proposition non validée.
+Refus :126 (tronc corrigé face sol, pieds/ballon encore coupés ou zoom différent après reprise) ;
+239 (bras croisé devant poitrine, puis essai2 sans main au mur au départ et coude plié fin).
+Stratégies différentes suivantes consignées dans a-refaire.json et registre retours.
+
+**Total :10 propositions sur26 points** (19,37,64,90,149,150,194,222,298,380), aucune approuvée.
+16 points sans proposition :26,31,38,44,45,46,47,48,80,85,87,126,148,204,239,265.
+Les réserves de cadrage/style sur propositions existantes restent OUVERTES : « proposition » n’est
+ni acceptation de l’utilisateur ni validation technique finale. Ne pas confondre compteurs.
+Mesures `propositions/lot59/mesures.json` :90 vert strict positif ;194/222/298/380 zéro au seuil strict
+(teinte jaune-vert). Ne pas anticiper décision utilisateur sur vert n°260.
+Contrôles à montrer : review/lot59-propositions-homme.jpg et lot59-propositions-piscine.jpg.
+Toutes images/GIF candidats isolés sous propositions/lot59/ ; verif-ids OK sur6 identifiants.
+
+Assertions : PDF principal, manifeste, état, numérotation et TOUS GIF livrés identiques à HEAD.
+Outil comparatif refuse le registre incomplet (16 manquants), aucun PDF final créé. Pas de build APK.
+Rester étape2. PDF final quand tout prêt : seulement reprises, AVANT gauche / APRÈS droite,
+lien téléchargeable dans le chat, validation utilisateur avant intégration.
+**Rappels maintenus** : AVANT étape3 poser question vert identique260 ; à construction app rappeler
+metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie, puis confirmer périmètre.

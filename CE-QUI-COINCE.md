@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot58 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot59 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
@@ -29,7 +29,8 @@ La relecture interne antérieure ne remplace pas votre validation.
 
 148 confirmé Mountain climbers homme (3 jambes fin),149 ET150 Pallof à reprendre. Format4 positions
 Zottman46/47/48 accepté pour préparation, pas les images. Registre retours-utilisateur-2026-09-26.json.
-5 propositions non validées :19/37/64 +149/150 ;21 points encore à préparer/expliquer.
+10 propositions non validées :19/37/64/90/149/150/194/222/298/380 ;16 sans proposition.
+Réserves :194 disques coupés ;222/298 eau hanches, profondeur à apprécier.126/239 toujours refusés.
 Quand tout prêt : UN PDF téléchargeable limité aux reprises, AVANT À GAUCHE / APRÈS À DROITE.
 Ne pas confondre approbation du format et approbation des images. Aucun GIF livré remplacé.
 149/150 : même corps/cadrage, bras bougent ; couleur mesurée jaune-vert (seuil strict lime absent).

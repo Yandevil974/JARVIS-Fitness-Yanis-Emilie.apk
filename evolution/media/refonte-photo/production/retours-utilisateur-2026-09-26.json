@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 58,
+  "lot": 59,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -244,13 +244,20 @@
       "nom": "Élévations latérales lean away",
       "retour_utilisateur": "Lean away : bras qui tient la barre tendu.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot59 essai2 avec schéma : bras d’appui tendu, élévation latérale et inclinaison maintenues. GIF candidat sans recalage automatique qui coupait les mains. Non validé.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-lean-away-homme.gif",
         "sha256": "c2c18f416e8d2e2bac6450b7779475d0774b1a8cf332a1e2ffe72bf652b75fa7",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 59,
+        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/elevations-laterales-lean-away-homme.gif",
+        "sha256": "e89971ee6ba059fabcd7f7a3dd7f37ee222876d30bab55180109cc23a01abeaf",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -259,8 +266,8 @@
       "nom": "Jackknife sur swiss ball",
       "retour_utilisateur": "Jackknife : homme à l’envers en position finale.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "refuse_interne",
+      "detail": "Lot59 essais1/2 : tronc face sol corrigé, mais pieds/ballon coupés en case1 puis zoom inégal entre les cases. Prochain : schéma large même échelle, mains et ballon entièrement dans le cadre.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
@@ -333,13 +340,20 @@
       "nom": "Step-up haut",
       "retour_utilisateur": "Step-up haut : pas la même jambe au départ et à l’arrivée.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot59 : même jambe droite sur le step au départ et à l’arrivée. Réserve : disques de barre partiellement coupés par le cadrage ; contrôle final requis avant intégration.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/step-up-haut-homme.gif",
         "sha256": "55312a3f227db7a47c7f4ee9b9d9e30bc6791f1fce82e30fb06a4c397dee66dc",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 59,
+        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/step-up-haut-homme.gif",
+        "sha256": "508eef3f410ac239b8aaabbf84d784351c8fc8409b6603967951c4b28e2eb8ba",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -363,13 +377,20 @@
       "nom": "Pompes au bord",
       "retour_utilisateur": "Corps dans l’eau.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot59 : femme debout DANS le bassin, pieds au fond et jambes immergées. Eau aux hanches, profondeur à apprécier par utilisateur ; essai2 eau plus haute non obtenu. Non validé.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-femme.gif",
         "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 59,
+        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-femme.gif",
+        "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -378,8 +399,8 @@
       "nom": "Bras tendu contre le mur",
       "retour_utilisateur": "Bras tendu ; tronc à l’envers par rapport aux pieds.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "refuse_interne",
+      "detail": "Lot59 essai1 bras croisé devant poitrine au lieu ouverture ; essai2 main absente du mur au départ et coude plié à arrivée. Prochain : schéma vue de dessus/3-4 arrière, main au mur même côté épaule, bras tendu deux cases, rotation douce corps/pieds ensemble.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
@@ -408,13 +429,20 @@
       "nom": "Pompes au bord — EFFORT",
       "retour_utilisateur": "Corps dans l’eau.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "propose_attente_accord",
+      "detail": "Copie conforme CANDIDATE du n°222. Femme debout dans le bassin ; profondeur eau aux hanches à apprécier. Non validé.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-effort-femme.gif",
         "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 59,
+        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-effort-femme.gif",
+        "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -423,13 +451,20 @@
       "nom": "Mobilité hanches / chevilles",
       "retour_utilisateur": "Tronc à l’envers en position finale.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot59 : tronc orienté vers la droite aux deux cases, jambe devant puis derrière. Non validé.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/mobilite-hanches-chevilles-homme.gif",
         "sha256": "134626c223afbab34250bda7a904164bcd8c5766062d849ea3f2b3e365efdd65",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 59,
+        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/mobilite-hanches-chevilles-homme.gif",
+        "sha256": "f2bab6bc3f793ce9c0113a8d56d5dfebaff11cb41a277d7795f1080898668d20",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     }
   ],
