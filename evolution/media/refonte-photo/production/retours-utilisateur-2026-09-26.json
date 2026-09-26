@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 66,
+  "lot": 67,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -248,8 +248,8 @@
       "nom": "Écartés haltères",
       "retour_utilisateur": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Clarification utilisateur reçue le 26/09/2026 : « 80 banc incliné ». Produire une proposition sur banc incliné, avec correction des paumes vers le plafond selon retour initial. Angle exact non précisé. Séries/répétitions/tempo inchangés. Cette décision de banc ne valide aucune image et n’autorise pas une intégration sans revue.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot67 : proposition sur banc visiblement incliné selon confirmation utilisateur. Départ bras ouverts, paumes orientées vers le haut, mains fermées. Arrivée haltères rapprochés au-dessus du haut de poitrine et bras davantage allongés, après refus des arrivées trop fléchies. Corps/bench/feet entièrement cadrés, sans miroir ni recalage. Réserves : flexion résiduelle des coudes et trajectoire à apprécier, taille apparente des haltères différente en haut, légère variation du buste/tête et rendu des aplats verts. Inclinaison non mesurée ; angle non prescrit. Séries/répétitions/tempo inchangés. Aucune validation ni intégration.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/ecartes-halteres-homme.gif",
@@ -259,6 +259,13 @@
       "clarification": {
         "question": "Conserver banc plat et corriger seulement les paumes, ou passer aussi sur banc incliné ?",
         "reponse": "80 banc incliné"
+      },
+      "proposition": {
+        "lot": 67,
+        "gif": "evolution/media/refonte-photo/propositions/lot67/gif/homme/ecartes-halteres-homme.gif",
+        "sha256": "13a016d05e32d03a2c657fbd735f3c618d563bea5fb12493df0198b5187d61ec",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {

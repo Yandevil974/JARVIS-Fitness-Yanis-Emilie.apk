@@ -3,6 +3,36 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
+## Dernière avancée — Lot67 — proposition80 banc incliné (26/09/2026)
+
+Workspace restauré d721868 propre ; fetch/reset du dernier distant147849d, venv recréé.
+**7 générations,7 succès techniques**, mais plusieurs poses refusées avant assemblage.
+Confirmation utilisateur80 « banc incliné » appliquée à la proposition, PAS à la livraison.
+
+**80 proposé** : départ photo1 refusé (pieds coupés/main ouverte), reprise large avec prises fermées,
+puis bras plus ouverts pour éviter le développé. Arrivées initiales refusées : trop de flexion des
+coudes et poids écartés. Guide peint de fermeture produit un haut encore fléchi, des poids hexagonaux
+et perd le vert. Dernier essai décrit une position d’extension de bras rapprochés comme repère de pose
+(pas changement de prescription) : haltères ronds au-dessus du haut de poitrine et vert retrouvé.
+Paire retenue : ecartes-debut-bras-ouverts.png + ecartes-fin-extension.png. Départ paumes vers le haut,
+prises fermées, banc visiblement incliné ; arrivée bras davantage allongés/poids rapprochés. Pieds,
+poids et banc entiers. Aucun miroir/rotation globale ni recalage. Angle du banc non mesuré/non prescrit.
+Réserves explicites : flexion résiduelle des coudes/trajectoire à apprécier, taille apparente des poids
+plus grande en haut, légère variation buste/tête, aplats verts. Proposition ≠ techniquement validée.
+GIF788×440,2×500ms ; planche2752×810 avec titres hors photo. ROI pectoraux[370,145,435,160] :626/487
+pixels strict lime, hors décor. Présence mesurée ne valide pas le style ni le choix couleur260.
+Sources/guide/refus isolés lot67 ; reconstruction propositions/lot67/assemble.py (Pillow,numpy).
+Contrôle review/lot67-proposition-80.jpg et phases pleine définition lus. Identifiant stable ecartes-halteres.
+**23 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
+**3 sans proposition** :26/85/204.
+Réserves antérieures maintenues. verif-ids OK1 ;23 SHA/frames avant-après vérifiés.396 fichiers livrés
+et prescriptions identiques à HEAD avant lot. Aucun GIF livré/PDF principal/manifeste/état changé.
+Comparatif refuse3 manquants ; aucun PDF final et aucun buildAPK. Décision80 persistée inchangée.
+Suite26/85/204 selon stratégies a-refaire.json, puis reprises des réserves avant considérer tout prêt.
+Quand toutes reprises prêtes : PDF uniquement reprises AVANT gauche/APRÈS droite, lien chat.
+AVANT étape3 : question vert identique260 ; à construction app : rappeler metcon + piscine nage
+fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder. Rappels toujours non traités.
+
 ## Clarification après lot66 — n°80 : banc incliné confirmé (26/09/2026)
 
 Réponse exacte : « 80 banc incliné ». Choix enregistré dans les deux registres et passations.
@@ -12,7 +42,7 @@ Aucune génération ce tour, aucun livré modifié. Toujours22 propositions non 
 Rappels inchangés : question vert260 avant étape3 ; metcon + piscine fractionnée et/ou Aqua Tabata
 pour Émilie à la construction de l’application. PDF comparatif complet uniquement quand tout prêt.
 
-## Dernière avancée — Lot66 — Zottman assis47 proposé, clarification80 (26/09/2026)
+## Étape précédente — Lot66 — Zottman assis47 proposé, clarification80 (26/09/2026)
 
 Workspace restauré d721868 propre ; fetch/reset du dernier distant77af07b, venv recréé.
 **3 générations,3 succès techniques** : main droite image en bas + chaque main haute séparément.

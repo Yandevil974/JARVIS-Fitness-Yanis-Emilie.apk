@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot66 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot67 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
@@ -27,15 +27,14 @@ La relecture interne antérieure ne remplace pas votre validation.
 
 ## 1. Retours PDF :26 points ouverts, accord utilisateur obligatoire
 
-**22 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
-**4 sans proposition** :26/80/85/204.
-Lot66 :3 générations ;47 assis4phases proposé,392×440,500ms/phase,vert ROI298/158/166/336.
-Deux mains hautes et main droite image basse corrigées localement. Réserves raccords/cadrage/poids,
-zones vertes en bas aspect manchon. Tous Zottman proposés, pas approuvés.
-80 : décision utilisateur reçue — « 80 banc incliné ». Produire sur banc INCLINÉ et corriger
-les paumes vers le plafond. Angle exact non précisé ; aucune image validée. Décision persistée, §84.
-Reconstruction lot66/assemble.py ; review/lot66-proposition-47.jpg ; détail §83.
-Anciennes réserves maintenues. Aucun livré remplacé ; comparatif bloque4 manquants.
+**23 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
+**3 sans proposition** :26/85/204.
+Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
+Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
+Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.
+GIF788×440,2×500ms ; ROI pectoraux626/487, pas validation de style. Aucun angle exact prescrit.
+Reconstruction lot67/assemble.py ; review/lot67-proposition-80.jpg ; détail §85.
+Suite26/85/204 et réserves restantes. Aucun livré remplacé ; comparatif bloque3 manquants.
 PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.
 
 ### Rappels obligatoires

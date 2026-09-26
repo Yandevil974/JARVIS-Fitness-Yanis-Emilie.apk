@@ -124,11 +124,11 @@
   {
    "cle": "ecartes-halteres|homme",
    "numero_signale": 80,
-   "lot": 66,
+   "lot": 67,
    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
-   "statut": "a_produire",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Clarification utilisateur reçue le 26/09/2026 : « 80 banc incliné ». Produire une proposition sur banc incliné, avec correction des paumes vers le plafond selon retour initial. Angle exact non précisé. Séries/répétitions/tempo inchangés. Cette décision de banc ne valide aucune image et n’autorise pas une intégration sans revue."
+    "Lot67 : proposition sur banc visiblement incliné selon confirmation utilisateur. Départ bras ouverts, paumes orientées vers le haut, mains fermées. Arrivée haltères rapprochés au-dessus du haut de poitrine et bras davantage allongés, après refus des arrivées trop fléchies. Corps/bench/feet entièrement cadrés, sans miroir ni recalage. Réserves : flexion résiduelle des coudes et trajectoire à apprécier, taille apparente des haltères différente en haut, légère variation du buste/tête et rendu des aplats verts. Inclinaison non mesurée ; angle non prescrit. Séries/répétitions/tempo inchangés. Aucune validation ni intégration."
    ],
    "validationUtilisateurRequise": true
   },

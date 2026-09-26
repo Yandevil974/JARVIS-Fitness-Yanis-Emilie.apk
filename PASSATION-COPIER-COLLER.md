@@ -1,11 +1,11 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 66, 26 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 67, 26 septembre 2026
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Cette session a repris l'ancienne branche 01a0dbe5 au commit e96e51b. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
 Lire dans l'ordre :
-1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 66, recette, pièges ; anciens compteurs historiques).
+1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 67, recette, pièges ; anciens compteurs historiques).
 2. CE-QUI-COINCE.md (§0 feuille de route utilisateur, §1 reprises, §3 décisions).
-3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–84.
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–85.
 4. evolution/media/refonte-photo/livraison/LIVRAISON-README.md et manifeste-331.json.
 
 ÉTAPE2 — **26 points ouverts :23 numéros +3 variantes**, aucune proposition approuvée.
@@ -13,15 +13,14 @@ NOUVELLES PRÉCISIONS :148 = Mountain climbers homme,3 jambes fin ;149 ET150 = P
 Zottman46/47/48 : format4 positions accepté, PAS images. Registre production/retours-utilisateur-2026-09-26.json,
 a-refaire.json. Numéros :19,26,31,37,38,44,45,46,47,48,64,80,85,87,90,126,148,149,150,194,204,222,239,265,298,380.
 Consigne MONTRER AVANT VALIDATION : aucun GIF livré/PDF principal/manifeste/état/map remplacé sans accord.
-**22 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
-**4 sans proposition** :26/80/85/204.
-Lot66 :3 générations ;47 assis4phases proposé,392×440,500ms/phase,vert ROI298/158/166/336.
-Deux mains hautes et main droite image basse corrigées localement. Réserves raccords/cadrage/poids,
-zones vertes en bas aspect manchon. Tous Zottman proposés, pas approuvés.
-80 : décision utilisateur reçue — « 80 banc incliné ». Produire sur banc INCLINÉ et corriger
-les paumes vers le plafond. Angle exact non précisé ; aucune image validée. Décision persistée, §84.
-Reconstruction lot66/assemble.py ; review/lot66-proposition-47.jpg ; détail §83.
-Anciennes réserves maintenues. Aucun livré remplacé ; comparatif bloque4 manquants.
+**23 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
+**3 sans proposition** :26/85/204.
+Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
+Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
+Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.
+GIF788×440,2×500ms ; ROI pectoraux626/487, pas validation de style. Aucun angle exact prescrit.
+Reconstruction lot67/assemble.py ; review/lot67-proposition-80.jpg ; détail §85.
+Suite26/85/204 et réserves restantes. Aucun livré remplacé ; comparatif bloque3 manquants.
 PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.
 
 PDF CORRECTIONS demandé : QUAND TOUTES PRÊTES, UN PDF téléchargeable dans chat, UNIQUEMENT reprises,
