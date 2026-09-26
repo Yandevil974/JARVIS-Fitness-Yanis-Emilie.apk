@@ -1,5 +1,5 @@
 {
- "copies": 386,
+ "copies": 388,
  "overwrites": 146,
  "ambigus": 30,
  "payload_exo": 72,
@@ -67,9 +67,11 @@
   "retour-au-calme-respiration",
   "sprint-nager-a-fond",
   "tabata-1-2-en-place",
+  "talons-fesses",
+  "talons-fesses-effort",
   "tour-1-2-en-place",
   "transition"
  ],
- "media_files": 590,
- "bundle_size": 1184095
+ "media_files": 592,
+ "bundle_size": 1184220
 }

@@ -1,6 +1,6 @@
 {
  "version": "1.4.9-refonte",
- "total": 386,
+ "total": 388,
  "entrees": [
   {
    "cle": "ab-wheel-roulette|homme",
@@ -7244,6 +7244,48 @@
     440
    ],
    "planche": "planches/lot54/elliptique-mise-en-route.png"
+  },
+  {
+   "cle": "talons-fesses|homme",
+   "identifiant": "talons-fesses",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Talons-fesses"
+   ],
+   "gif": "media/refonte-photo/gif/homme/talons-fesses-homme.gif",
+   "gif_sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+   "gif_frames": 2,
+   "gif_size": [
+    129,
+    440
+   ],
+   "planche": "planches/lot55/talons-fesses.png"
+  },
+  {
+   "cle": "talons-fesses-effort|homme",
+   "identifiant": "talons-fesses-effort",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT",
+    "Talons-fesses — EFFORT"
+   ],
+   "gif": "media/refonte-photo/gif/homme/talons-fesses-effort-homme.gif",
+   "gif_sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+   "gif_frames": 2,
+   "gif_size": [
+    129,
+    440
+   ],
+   "planche": "planches/lot55/talons-fesses.png"
   }
  ]
 }

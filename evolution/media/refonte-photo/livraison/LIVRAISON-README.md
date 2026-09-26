@@ -1,10 +1,11 @@
-# État actuel — lot 54, 26 septembre 2026
+# État actuel — lot 55, 26 septembre 2026
 
-**386 couples valides / 3 restants**, PDF 130 pages. Nouveau n° 386 : elliptique mise en route homme.
-APK non signé reconstruit : 386 GIF, 712 fichiers web ; signature non effectuée.
-Branche actuelle : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`.
+**388 couples valides / 1 restant**, PDF 131 pages. N° 387 talons-fesses homme,
+n° 388 talons-fesses-effort homme (copie conforme). Reste elliptique-fractionné homme.
+APK non signé contrôlé : 388 GIF, 714 fichiers web ; aucune signature effectuée.
+Branche : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`.
 La suite utilisateur (relecture, niveau cardio, images chrono) précède la signature.
-Les sections ci-dessous documentent les livraisons historiques (331 d’origine).
+Les sections suivantes documentent les livraisons historiques.
 
 # Livraison finale — refonte photo des 331 animations (prête à signer)
 

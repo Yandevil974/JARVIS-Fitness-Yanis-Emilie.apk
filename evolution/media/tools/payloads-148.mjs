@@ -4,10 +4,8 @@
 //
 //   node evolution/media/tools/payloads-148.mjs
 //
-// Prerequis : le bundle original extrait de downloads/Yanis-Fitness-Evolution-1.4.8.apk
-// (assets/public/assets/index-CBCies4k.js). Si .cache/web-148 n'existe pas encore, le
-// script lit directement dans l'APK (zip) via python3 pour ne dependre de rien d'autre.
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+// Lit toujours le bundle ORIGINAL dans l’APK, jamais le cache web déjà modifié.
+import { writeFileSync, mkdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -17,15 +15,11 @@ const APK = path.join(ROOT, 'downloads/Yanis-Fitness-Evolution-1.4.8.apk');
 const BUNDLE_IN_APK = 'assets/public/assets/index-CBCies4k.js';
 const OUT = path.join(ROOT, '.cache/payloads-148.json');
 
-let js;
-const local = path.join(ROOT, '.cache/web-148/assets/index-CBCies4k.js');
-if (existsSync(local)) {
-  js = readFileSync(local, 'utf8');
-} else {
-  js = execFileSync('python3', ['-c',
-    `import zipfile,sys;sys.stdout.buffer.write(zipfile.ZipFile(${JSON.stringify(APK)}).read(${JSON.stringify(BUNDLE_IN_APK)}))`],
-    { maxBuffer: 256 * 1024 * 1024 }).toString('utf8');
-}
+// Le cache web peut déjà contenir l'overlay d'un lot précédent.
+// L'utiliser ici rendrait la chaîne dépendante de l'ordre des exécutions.
+const js = execFileSync('python3', ['-c',
+  `import zipfile,sys;sys.stdout.buffer.write(zipfile.ZipFile(${JSON.stringify(APK)}).read(${JSON.stringify(BUNDLE_IN_APK)}))`],
+  { maxBuffer: 256 * 1024 * 1024 }).toString('utf8');
 const re = /=JSON\.parse\((`[^`]*`)\)/g;
 const payloads = [];
 let m;

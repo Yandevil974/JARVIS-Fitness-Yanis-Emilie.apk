@@ -4,22 +4,20 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 389,
-  "valides": 386,
-  "restants": 3,
+  "valides": 388,
+  "restants": 1,
   "valides_par_surface": {
+   "piscine-protocole": 64,
    "musculation": 203,
-   "etirement": 29,
-   "piscine-protocole": 63,
-   "piscine": 36,
-   "cardio-elliptique": 9,
-   "tabata-aqua": 7,
+   "piscine": 37,
    "tabata-au-sol": 36,
+   "etirement": 29,
+   "tabata-aqua": 7,
+   "cardio-elliptique": 9,
    "echauffement": 3
   },
   "restants_par_surface": {
-   "piscine-protocole": 1,
-   "cardio-elliptique": 1,
-   "piscine": 1
+   "cardio-elliptique": 1
   }
  },
  "valides": [
@@ -389,7 +387,9 @@
   "tabata-1-2-en-place|homme",
   "talon-vers-la-fesse-debout|homme",
   "talons-fesses-effort|femme",
+  "talons-fesses-effort|homme",
   "talons-fesses|femme",
+  "talons-fesses|homme",
   "tirage-horizontal-a-la-poulie|femme",
   "tirage-vertical-lean-away|homme",
   "tirage-vertical-prise-large|homme",
@@ -411,9 +411,7 @@
   "wood-chop-poulie-haute|homme"
  ],
  "restants": [
-  "elliptique-fractionne|homme",
-  "talons-fesses-effort|homme",
-  "talons-fesses|homme"
+  "elliptique-fractionne|homme"
  ],
  "relecture": {
   "regle": "chaque couple valide relu case par case en pleine definition (feuilles de 3) ou lu a la production (lots >= 17)",

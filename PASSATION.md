@@ -3,7 +3,42 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — Lot 54 — reprise de session, 386 valides / 3 restants (26/09/2026)
+## Dernière avancée — Lot 55 — talons-fesses résolu, 388 valides / 1 restant (26/09/2026)
+
+**7 générations**, sans miroir global :
+1. Talons-fesses essai 5, dos strict : alternance juste, mais second talon trop bas.
+2. Elliptique fractionné essai 4 depuis mise-en-route : même phase, main libre derrière le dos → refus.
+3. Talons essai 6, édition amplitude : vert renforcé mais second talon toujours bas → refus en l'état.
+4. Elliptique essai 5, vue ¾ frontale : même jambe proche basse → refus.
+5. Talons essai 7, case droite guidée : ancienne pose effacée localement et guide dessiné par PIL,
+   puis rendu photographique par générateur. **Accepté** : jambe droite pliée talon à la fesse,
+   jambe gauche au sol. Assemblage PIL avec case gauche de l'essai 6 ; aucun miroir/rotation.
+6. Elliptique essai 6, guide rose superposé : le générateur supprime le guide sans changer de jambe → refus.
+7. Elliptique essai 7, ancienne pose effacée et guide peint : même jambe encore → refus.
+
+Planche finale talons-fesses relue en pleine définition, puis GIF : 129×440 (planche étroite de dos),
+2 frames de 500 ms, boucle infinie ; vert DANS LA ROI jambes : **349 / 756 pixels**.
+`verification/lot55-mesures.json`, contrôle accepté `review/lot55-homme.jpg`.
+Les intermédiaires refusés sont dans `verification/lot55-refus/` (pas intégrés dans l'app).
+`valide-couples.py` : talons-fesses homme **n° 387**, copie conforme talons-fesses-effort **n° 388**.
+Les 386 anciens numéros restent identiques (assertion). PDF **131 pages / 388 exercices**,
+index 388, manifeste/état/map actualisés. Yanis piscine : terminé ; reste seulement l'elliptique fractionné.
+
+**Prochain lot 56, essai 8** : génération d'une phase seule depuis maître + schéma indépendant,
+vue de face stricte, sans photo d'ancienne pose qui ancre le générateur ; ensuite phase opposée
+même machine, deux mains sur poignées, contrôle avant assemblage. Voir a-refaire.json.
+
+**Correctif technique** : payloads-148.mjs lisait le cache web s'il existait, donc pouvait extraire
+les payloads déjà modifiés de l'overlay. Désormais lecture TOUJOURS depuis l'APK original 1.4.8.
+Test : deux chaînes payloads → overlay successives avec cache présent produisent exactement les
+mêmes SHA payloads et bundle ; 72 EXO_GIFS / 133 images repatchés à chaque exécution.
+Build --unsigned contrôlé : **388 GIF SHA, 714 fichiers web, 9 DEX identiques**, aucun chemin manquant,
+APK 114420961 octets. Pas de signature, pas de livraison APK finale.
+
+Les 33 cas style historiques restent ouverts. Ordre utilisateur inchangé : finir dernier visuel,
+retours PDF, proposition niveau cardio à valider, images chrono, signature, IA en dernier.
+
+## Étape précédente — Lot 54 — reprise de session, 386 valides / 3 restants (26/09/2026)
 
 Branche imposée `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`, reprise de l'ancienne
 `arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap` au commit `e96e51b`. Pas de push sur main.

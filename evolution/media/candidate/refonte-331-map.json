@@ -1931,6 +1931,16 @@
    "gif": "media/refonte-photo/gif/homme/elliptique-mise-en-route-homme.gif",
    "sha256": "7acb83b71752c44cb6b0f6f20332b3abc4eb8ec4d8a9bc25dcd582104e699cae",
    "surface": "cardio-elliptique"
+  },
+  "talons-fesses|homme": {
+   "gif": "media/refonte-photo/gif/homme/talons-fesses-homme.gif",
+   "sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+   "surface": "piscine"
+  },
+  "talons-fesses-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/talons-fesses-effort-homme.gif",
+   "sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+   "surface": "piscine-protocole"
   }
  }
 }

@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 54 — 386 valides / 3 restants, câblage profil posé
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 55 — 388 valides / 1 restant, câblage profil posé
 
 Liste demandée pour revue de votre côté. **331 / 331 visuels validés, 0 restant, et la
 relecture case par case est TERMINÉE (331 / 331 relus)**. Ce fichier ne contient que les
@@ -12,8 +12,8 @@ points bloquants ou qui demandent une décision.
 ## 0. Feuille de route donnée par l'utilisateur le 26/09 (dans cet ordre, par étapes)
 
 1. **Piscine + cardio pour Yanis (images manquantes)** → EN COURS : 58 couples homme ajoutés,
-   **55 validés aux lots 51–54** (n° 332–386 du PDF), 3 restants = 2 gestes (lot 55 : talons-fesses
-   essai 5 dos strict, elliptique-fractionné essai 4 avec référence de phases réussies). **Câblage « athlète = profil » POSÉ**
+   **57 validés aux lots 51–55** (n° 332–388 du PDF), 1 restant : elliptique-fractionné homme
+   (lot56 essai8 : maître + schéma indépendant sans photo de la pose précédente). **Câblage « athlète = profil » POSÉ**
    (`overlay-331.py` : `__refonteSwap` + `bt` + constante `If`, simulé sur les deux profils, §70).
 2. Vérification du PDF par l'utilisateur → corrections par numéro (priorité 1 dès réception).
 3. Pouvoir **augmenter le niveau** du programme cardio (piscine et autres) sur Émilie et Yanis
@@ -24,13 +24,14 @@ points bloquants ou qui demandent une décision.
 5. Construire l'application (1.4.9 → clé de signature utilisateur).
 6. IA conversationnelle (en dernier).
 
-## 1. Deux gestes encore refusés
+## 1. Un geste encore refusé
 
-`production/a-refaire.json` : talons-fesses homme (même jambe malgré vue ¾ arrière puis édition
-ciblée, essais 3–4) ; elliptique-fractionné homme (même pédale malgré édition ciblée, essais 2–3).
-Lot 55 : dos strict symétrique pour talons-fesses ; référence des phases réussies de mise en route
-pour le fractionné. Jamais de miroir global. La copie talons-fesses-effort attend sa source valide.
-Mise en route homme acceptée au lot 54, n° 386, vert corrigé et mesuré aux deux cases (§71).
+`production/a-refaire.json` : elliptique-fractionné homme, essais 4–7 au lot55 tous refusés
+(même jambe malgré référence mise-en-route, vue frontale ¾, guide superposé puis pose effacée).
+Lot56 essai8 : nouvelle phase seule depuis maître + schéma indépendant, vue de face stricte,
+puis phase opposée avec même machine ; aucun miroir global. Deux mains sur poignées mobiles.
+Talons-fesses homme enfin accepté au lot55 : dos strict + guide de pose local, n°387 et copie
+« effort » n°388. Voir VERIFICATION §72.
 
 ## 1b. Chantiers ouverts (pas bloquants, planifiés)
 
@@ -59,7 +60,7 @@ Mise en route homme acceptée au lot 54, n° 386, vert corrigé et mesuré aux d
    → garder tel quel, ou refaire avec barre prise large sur les épaules ?
 2. **Lot « style » des 33 GIF** dont une case n'a pas de vert lime : les régénérer
    (3 à 4 lots de 10) ou accepter l'état livré ?
-3. **PDF de revue** (`livraison/REVUE-331-exercices.pdf`, 130 pages, 386 exercices) : numéros
+3. **PDF de revue** (`livraison/REVUE-331-exercices.pdf`, 131 pages, 388 exercices) : numéros
    **figés** (1–331 inchangés ; Yanis piscine à partir du n° 332). Vos « coquille au n° X » sont
    traités en priorité 1 au prochain tour.
 4. **Essai téléphone de la 1.4.8** : les groupes de constats restent OUVERTS jusqu'à votre

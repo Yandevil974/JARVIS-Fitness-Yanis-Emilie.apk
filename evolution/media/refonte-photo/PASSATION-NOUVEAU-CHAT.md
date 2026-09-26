@@ -5,15 +5,16 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot 54 (remplace les compteurs historiques ci-dessous)
+## État prioritaire lot 55 (remplace les compteurs historiques ci-dessous)
 
-**386 / 389 valides, 3 restants.** Lot 54 : 6 générations, seule mise-en-route homme acceptée
-(n° 386, vert renforcé). Deux refus persistants : talons-fesses (essais 3 et 4), elliptique
-fractionné (essais 2 et 3). Lot 55 : stratégies dans `production/a-refaire.json` ; talons-fesses-effort
-suivra en copie conforme. PDF 130 pages / 386 exercices, numéros 1–385 inchangés.
-Build non signé contrôlé : 386 GIF, 712 fichiers web. Détail VERIFICATION §71.
-Session actuelle : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`, reprise au commit e96e51b
-sur l'ancienne branche 01a0dbe5. Les sections anciennes ci-dessous sont historiques.
+**388 / 389 valides, 1 restant : elliptique-fractionne homme.** Talons-fesses résolu (dos strict +
+guide de pose local puis rendu photo), n° 387 et copie effort n° 388. Lot55 : 7 générations.
+Fractionné essais 4–7 refusés : même phase malgré changement de vue et guides ; lot56 essai8
+sans photo de pose précédente (maître + schéma indépendant), détail dans a-refaire.json et §72.
+PDF 131 pages / 388 exercices, numéros 1–386 inchangés. Contrôle review/lot55-homme.jpg.
+Build non signé : 388 GIF, 714 fichiers web. payloads-148.mjs corrigé : toujours lire l'APK original,
+jamais le cache modifié ; deux exécutions successives produisent mêmes SHA payloads/bundle.
+Branche actuelle : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`.
 
 ## 1. Où l'on en est (mesuré, pas estimé)
 
