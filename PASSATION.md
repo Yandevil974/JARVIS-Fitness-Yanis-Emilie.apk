@@ -3,7 +3,41 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — Lot64 — propositions Scott44/45 et Zottman48 (26/09/2026)
+## Dernière avancée — Lot65 — Zottman debout46 proposé, assis47 incomplet (26/09/2026)
+
+Workspace restauré d721868 propre ; fetch/reset du dernier distant6aec8b9, venv recréé.
+**10 appels génération, dont1 échec technique** (dernier haut pronation47 bloqué par modération).
+4 premiers essais mains sur source assise ;3 retouches debout46 ;3 essais47 dont échec final.
+Erreur initiale de sélection/étiquetage des sources corrigée : **lot26/curl-zottman.png est DEBOUT**,
+**lot11/curl-zottman-assis.png est ASSIS**. Les fichiers originaux ne sont pas mal associés ; ne pas
+confondre l’ordre des résultats visuels parallèles. Guides/essais mal nommés renommés47 avant commit.
+
+- **46 proposé en4 phases** : bas supination, haut supination, haut pronation, bas pronation.
+  Poses debout issues de lot26, retouches mains locales depuis recadrages exacts. Premier montage
+  avec grands rectangles dégradait raccords/décor : remplacé par masques de premier plan, translations
+  locales des mains basses(-12/+12px), inpainting OpenCV des anciens disques de face. Aucun miroir
+  ni rotation globale. Corps/visage/caméra conservés. Réserves : raccords poignets, différence de taille
+  et nombre des disques entre positions hautes/basses, aplats verts. PAS techniquement validé.
+  GIF392×440,4×500ms,sans recalage global ; planche2736×808, titres hors photo. ROI biceps par phase
+  consignée dans mesures.json :273/146/146/273 strict lime, hors décor. Présence mesurée ≠ style approuvé.
+- **47 toujours sans proposition** : bas supination pleine photo assise avec vert obtenu, normalisé
+ 684×768 ; bas pronation ne tourne qu’une main (gauche image), droite encore supinée → REFUS.
+  Haut pronation double main non généré (échec10). Haut supination source disponible. Ne pas annoncer
+  trois phases prêtes. Prochain : corriger seulement main droite image basse en gros plan, puis
+  deux mains hautes séparément ; tester raccords. Guides/47-haut-supination.png, phases/47-bas-
+  supination-normalise.png. Essais initiaux incomplets/mal raccordés isolés, pas GIF47.
+
+Reconstruction46 : propositions/lot65/assemble.py nécessite pillow,numpy,opencv-python-headless.
+Contrôle review/lot65-proposition-46.jpg ; images finales pleine définition et détails mains lus.
+**21 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/48/64/87/90/126/148/149/150/194/222/239/265/298/380.
+**5 sans proposition** :26/47/80/85/204.
+Réserves antérieures maintenues. verif-ids OK1 ;21 SHA/frames avant-après vérifiés ;395 fichiers livrés
+inchangés. Comparatif refuse5 manquants ; aucun PDF final, aucune intégration et aucun buildAPK.
+Quand toutes reprises prêtes : PDF uniquement reprises AVANT gauche/APRÈS droite, lien chat.
+AVANT étape3 : question vert identique260 ; à construction app : rappeler metcon + piscine nage
+fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder. Rappels toujours non traités.
+
+## Étape précédente — Lot64 — propositions Scott44/45 et Zottman48 (26/09/2026)
 
 **7 générations** :2 gros plans Scott haut (premier recadré incorrectement, second exploitable),
 2 gros plans Zottman en pronation haut/bas,2 passages haltères bas hex→ronds,1 retouche peau main

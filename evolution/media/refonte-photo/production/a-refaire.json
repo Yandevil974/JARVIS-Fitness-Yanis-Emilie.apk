@@ -80,22 +80,22 @@
   {
    "cle": "curl-zottman|homme",
    "numero_signale": 46,
-   "lot": 62,
+   "lot": 65,
    "motif": "Zottman : montrer montée curl classique et descente curl inversé ; corriger les autres Zottman.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise."
+    "Lot65 : proposition debout en4 phases : bas supination, haut supination, haut pronation, bas pronation. Deux mains différenciées aux rotations. Sources debout lot26 ; retouches locales et masques de premier plan, anciens disques effacés par inpainting, aucune inversion globale. Réserves raccords des poignets, taille/nombre de disques différents entre bas/haut, rendu des aplats verts. Proposition non validée, pas prête pour intégration."
    ],
    "validationUtilisateurRequise": true
   },
   {
    "cle": "curl-zottman-assis|homme",
    "numero_signale": 47,
-   "lot": 62,
+   "lot": 65,
    "motif": "Extension de la correction n°46 : Zottman assis.",
    "statut": "refuse_interne",
    "reglesPrompt": [
-    "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise."
+    "Lot65 : essais isolés assis depuis lot11. Nouvelle phase basse supinée avec vert obtenue (47-bas-supination-normalise.png). Essai bas pronation ne tourne que la main à gauche image : droite reste supinée, refus. Haut pronation double main échoue techniquement (blocage modération), compte comme10e appel. Aucun GIF candidat. Prochain : retoucher seulement main DROITE image dans bas pronation, puis mains hautes séparément avec recadrages exacts ; conserver posture assise, source haute guides/47-haut-supination.png. Première sélection de source mal étiquetée debout corrigée et fichiers renommés47 ; ne pas réutiliser ancien montage refusé."
    ],
    "validationUtilisateurRequise": true
   },

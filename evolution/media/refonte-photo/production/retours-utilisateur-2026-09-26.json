@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 64,
+  "lot": 65,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -160,13 +160,20 @@
       "nom": "Curl Zottman",
       "retour_utilisateur": "Zottman : montrer montée curl classique et descente curl inversé ; corriger les autres Zottman.",
       "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot65 : proposition debout en4 phases : bas supination, haut supination, haut pronation, bas pronation. Deux mains différenciées aux rotations. Sources debout lot26 ; retouches locales et masques de premier plan, anciens disques effacés par inpainting, aucune inversion globale. Réserves raccords des poignets, taille/nombre de disques différents entre bas/haut, rendu des aplats verts. Proposition non validée, pas prête pour intégration.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-homme.gif",
         "sha256": "f7b27078da26260e96c56dacfa39a81f871a4a8bf0ce43750de31097e53f0a6e",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 65,
+        "gif": "evolution/media/refonte-photo/propositions/lot65/gif/homme/curl-zottman-homme.gif",
+        "sha256": "f3af21c2eec127f0c619cd2d95e9fe09fb1fdf3d5b4641776f51c5466eafbf01",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -176,7 +183,7 @@
       "retour_utilisateur": "Extension de la correction n°46 : Zottman assis.",
       "origine": "extension_variante",
       "statut": "refuse_interne",
-      "detail": "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise.",
+      "detail": "Lot65 : essais isolés assis depuis lot11. Nouvelle phase basse supinée avec vert obtenue (47-bas-supination-normalise.png). Essai bas pronation ne tourne que la main à gauche image : droite reste supinée, refus. Haut pronation double main échoue techniquement (blocage modération), compte comme10e appel. Aucun GIF candidat. Prochain : retoucher seulement main DROITE image dans bas pronation, puis mains hautes séparément avec recadrages exacts ; conserver posture assise, source haute guides/47-haut-supination.png. Première sélection de source mal étiquetée debout corrigée et fichiers renommés47 ; ne pas réutiliser ancien montage refusé.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-assis-homme.gif",
