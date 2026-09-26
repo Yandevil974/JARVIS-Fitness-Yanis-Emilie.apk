@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 51 — 363 valides / 26 restants (Yanis piscine en cours)
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 52 — 375 valides / 14 restants (Yanis piscine en cours)
 
 Liste demandée pour revue de votre côté. **331 / 331 visuels validés, 0 restant, et la
 relecture case par case est TERMINÉE (331 / 331 relus)**. Ce fichier ne contient que les
@@ -12,8 +12,8 @@ points bloquants ou qui demandent une décision.
 ## 0. Feuille de route donnée par l'utilisateur le 26/09 (dans cet ordre, par étapes)
 
 1. **Piscine + cardio pour Yanis (images manquantes)** → EN COURS : 58 couples homme ajoutés,
-   **32 validés au lot 51** (n° 332–363 du PDF), 26 restants = 15 générations (lot 52 : 10 piscine,
-   lot 53 : 5 elliptique/transition) + câblage « athlète = profil » pour piscine/elliptique.
+   **44 validés aux lots 51–52** (n° 332–375 du PDF), 14 restants = 9 générations (lot 53 : 4 reprises
+   piscine + 5 elliptique/transition) + câblage « athlète = profil » pour piscine/elliptique.
 2. Vérification du PDF par l'utilisateur → corrections par numéro (priorité 1 dès réception).
 3. Pouvoir **augmenter le niveau** du programme cardio (piscine et autres) sur Émilie et Yanis
    (les protocoles ont déjà 3 niveaux `niveaux[]` ; la sélection est automatique dans `bh()` :
@@ -25,8 +25,10 @@ points bloquants ou qui demandent une décision.
 
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
-**1** : `battements-au-bord|homme` (lot 51 : même jambe levée aux deux cases, 0 px de vert) →
-retry lot 52 avec ancrage par côté caméra + vue 3/4 arrière. Les 3 refus de la relecture 26
+**4** (`production/a-refaire.json`, stratégie différente consignée pour chacune) :
+`battements-au-bord|homme` (2 essais : même jambe / jambe pliée → essai 3 vue zénithale),
+`mobilite-hanches-chevilles|homme` (20 cm d'eau → eau à la taille), `sprint-nager-a-fond|homme`
+(corps vertical → profil horizontal), `talons-fesses|homme` (genou devant → talon derrière). Les 3 refus de la relecture 26
 (torsion allongée montrée ASSISE, soulevé de terre ordre inversé + angle qui change,
 transition face/profil) ont été **refaits et acceptés dans le même tour** (lot 50, 3 générations),
 et rowing assis + étirement a eu ses cases remises dans le bon sens (début = étirement).

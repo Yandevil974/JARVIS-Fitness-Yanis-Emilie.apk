@@ -793,3 +793,25 @@ Solution retenue : patch de `bt` (resolveur universel des `src` d'images) -> `__
 tout chemin `/media/refonte-<ident>-<athlete>.gif` (ou ancien chemin table `REFONTE_OLD`) est servi
 dans la variante de l'athlete du profil actif quand elle existe ; + patch de `If` vers les chemins
 refonte. Verification : apercu web, profil Yanis -> homme dans le bassin ; profil Emilie -> femme.
+
+## 69. Lot 52 : piscine Yanis suite — 6/10 acceptees, 4 refus motives (26/09)
+
+10 generations homme (bassin), vert mesure present dans les DEUX cases des 10 planches, feuilles
+`verification/lot52-01..04.jpg` relues case par case :
+
+| Planche | Verdict |
+|---|---|
+| battements-au-bord (essai 2, vue 3/4 arriere) | **REFUS** : jambe levee PLIEE + meme jambe aux 2 cases (vert OK) -> essai 3 en vue zenithale |
+| etirements-au-bord | ACCEPT (mollet pied au mur -> quadriceps talon a la fesse, main au bord) |
+| fractionne-nager | ACCEPT (traction tete dans l'eau -> retour aerien + respiration laterale) |
+| mobilite-epaules-aquatique | ACCEPT (bras bas a la surface -> bras tendus au-dessus de la tete ; note : eau a la taille) |
+| mobilite-hanches-chevilles | **REFUS** : homme debout dans 20 cm d'eau (marche du bassin) + jambe devant aux 2 cases |
+| nage-douce-respiration | ACCEPT (expire bulles face dans l'eau -> inspire tete tournee) |
+| nage-statique-a-l-elastique | ACCEPT apres recadrage : le generateur a rendu une GRILLE 2x2 (2 rangees identiques) -> rangee du haut conservee (PIL, 1376x381) ; elastique jaune unique ancre au bord, ceinture, streamline -> traction |
+| recup-complete-souffler | ACCEPT (mains au bord, inspire yeux fermes -> expire levres pincees epaules basses) |
+| sprint-nager-a-fond | **REFUS** : corps VERTICAL (course aquatique) au lieu d'un crawl horizontal -> essai 2 en profil |
+| talons-fesses | **REFUS** : case 1 = genou devant (montee de genou) au lieu du talon a la fesse |
+
+`valide-couples.py --lot lot52` : 6 GIF + 6 copies conformes = **12 couples (n° 364-375)**. PDF : 126 pages,
+375 exercices, 1-331 inchanges. **Etat : 375 valides / 14 restants** = 9 generations : 4 retries
+(`a-refaire.json`, strategies differentes consignees) + 5 elliptique/transition homme -> lot 53, puis cablage.

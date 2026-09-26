@@ -363,6 +363,18 @@
   "retour-au-calme-nage-tres-douce|homme": 360,
   "pompes-au-bord|homme": 361,
   "pompes-au-bord-effort|homme": 362,
-  "repos|homme": 363
+  "repos|homme": 363,
+  "etirements-au-bord|homme": 364,
+  "fractionne-nager|homme": 365,
+  "nager-fractionne-1-6|homme": 366,
+  "mobilite-epaules-aquatique|homme": 367,
+  "retour-au-calme-mobilite|homme": 368,
+  "nage-douce-respiration|homme": 369,
+  "nage-statique-a-l-elastique|homme": 370,
+  "nage-statique-douce|homme": 371,
+  "nage-statique-z2|homme": 372,
+  "recup-complete-souffler|homme": 373,
+  "recup-complete-souffler-au-bord|homme": 374,
+  "retour-au-calme-respiration|homme": 375
  }
 }

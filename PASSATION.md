@@ -3,7 +3,13 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — lot 51 : Yanis dans le bassin, 32 couples homme validés, numéros PDF figés (26 septembre 2026)
+## Dernière avancée — lot 52 : piscine Yanis suite, 375 valides / 14 restants (26 septembre 2026)
+
+- Lot 52 : 6/10 acceptées (étirements au bord, fractionné nager, mobilité épaules, nage douce +
+  respiration, nage statique à l'élastique — grille 2×2 du générateur recadrée —, récup souffler) + 6 copies
+  conformes → n° 364–375. 4 refus motivés → `a-refaire.json` (lot 53). Détail §69.
+
+## Étape précédente — lot 51 : Yanis dans le bassin, 32 couples homme validés, numéros PDF figés (26 septembre 2026)
 
 - **Retour utilisateur** : aucun visuel piscine/cardio pour Yanis (tout était femme). 58 couples homme
   ajoutés au plan ; **lot 51 : 9/10 planches acceptées** (bassin intérieur, même famille que la femme)

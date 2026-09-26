@@ -2,14 +2,50 @@
  "aRefaire": [
   {
    "cle": "battements-au-bord|homme",
-   "lot": 51,
-   "essai": 1,
-   "motif": "les deux cases montrent la MEME jambe levee (aucune alternance) et aucun vert (0 px) : mouvement inexistant + surlignage absent",
-   "prescription": "Mains sur la margelle, bras tendus, corps allonge dans l eau ; jambes tendues, battez des pieds (haut-bas, petite amplitude) ; restez gaine, fesses a la surface",
+   "lot": 52,
+   "essai": 2,
+   "motif": "essai 2 (vue 3/4 arriere) : jambe levee PLIEE au genou et meme jambe dans les 2 cases ; vert OK cette fois",
+   "prescription": "Mains sur la margelle, bras tendus, corps allonge dans l eau ; jambes TENDUES, battez des pieds haut-bas petite amplitude ; fesses a la surface",
    "reglesPrompt": [
-    "ancrer par cote camera : case 1 = jambe la PLUS PROCHE de la camera levee hors de l eau, jambe LOINTAINE basse ; case 2 = l inverse",
-    "ecrire PAINT lime green sur fessiers + arriere des cuisses, visible a travers l eau, dans LES DEUX cases",
-    "strategie differente : vue de 3/4 arriere surelevee (comme ciseaux) plutot que profil strict"
+    "essai 3 = strategie differente : vue ZENITHALE (camera au-dessus, a la verticale), corps allonge le long de l image, mains au bord en haut",
+    "les deux jambes TENDUES, genoux verrouilles ; case 1 pied droit affleure la surface / pied gauche 30 cm sous l eau ; case 2 inverse",
+    "PAINT fessiers + arriere des cuisses lime green aux deux cases"
+   ]
+  },
+  {
+   "cle": "mobilite-hanches-chevilles|homme",
+   "lot": 52,
+   "essai": 1,
+   "motif": "geste juste (balancier jambe tendue, main au bord) mais l homme est debout dans 20 cm d eau (marche du bassin) : niveau d eau faux pour un guide aquatique ; les deux cases montrent la jambe DEVANT (pas d arriere)",
+   "prescription": "Hanches (une main au bord) : jambe tendue, balancez avant/arriere puis lateral ; genou leve : cercles ; chevilles",
+   "reglesPrompt": [
+    "eau a la TAILLE, l homme est DANS le bassin (pas sur une marche), la jambe balancee reste sous l eau",
+    "case 1 jambe tendue devant, case 2 la MEME jambe tendue DERRIERE",
+    "vert hanche + fessier"
+   ]
+  },
+  {
+   "cle": "sprint-nager-a-fond|homme",
+   "lot": 52,
+   "essai": 1,
+   "motif": "vue 3/4 face : corps VERTICAL dans l eau (jambes sous le buste) = course aquatique, pas un crawl sprinte",
+   "prescription": "Nagez a fond ; corps gaine, battements explosifs ; bras alternes au-dessus de l eau, gros splash",
+   "reglesPrompt": [
+    "vue de PROFIL au niveau de l eau (comme fractionne-nager, qui a reussi), corps HORIZONTAL a la surface",
+    "case 1 bras droit haut hors de l eau, case 2 bras gauche ; gros splash aux pieds",
+    "vert epaules + dos"
+   ]
+  },
+  {
+   "cle": "talons-fesses|homme",
+   "lot": 52,
+   "essai": 1,
+   "motif": "case 1 = genou monte DEVANT (montee de genou) au lieu du talon a la fesse ; case 2 juste",
+   "prescription": "Sur place, joggez en ramenant les talons aux fesses ; buste droit, bras qui accompagnent",
+   "reglesPrompt": [
+    "genou pointe VERS LE BAS, talon DERRIERE vers la fesse, jamais devant ; ecrire « the knee stays under the hip, pointing down »",
+    "case 1 talon droit a la fesse, case 2 talon gauche",
+    "vert ischios"
    ]
   }
  ],

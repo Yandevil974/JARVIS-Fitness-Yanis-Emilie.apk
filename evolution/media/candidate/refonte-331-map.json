@@ -1816,6 +1816,66 @@
    "gif": "media/refonte-photo/gif/homme/repos-homme.gif",
    "sha256": "78873f737bd9ff2da9ab968caa93bfb3f4ebf76c44776f2e50d6621274370e6c",
    "surface": "piscine-protocole"
+  },
+  "etirements-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/etirements-au-bord-homme.gif",
+   "sha256": "b8ec7015069f653b89dbec2449c3df064bcd5641023be8e132fcb67bbdc1a0af",
+   "surface": "piscine"
+  },
+  "fractionne-nager|homme": {
+   "gif": "media/refonte-photo/gif/homme/fractionne-nager-homme.gif",
+   "sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+   "surface": "piscine"
+  },
+  "nager-fractionne-1-6|homme": {
+   "gif": "media/refonte-photo/gif/homme/nager-fractionne-1-6-homme.gif",
+   "sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+   "surface": "piscine-protocole"
+  },
+  "mobilite-epaules-aquatique|homme": {
+   "gif": "media/refonte-photo/gif/homme/mobilite-epaules-aquatique-homme.gif",
+   "sha256": "b114493c7ecf5b5a5cbe78ee052ef7434991260ec1854314f3d04e159c9ebac9",
+   "surface": "piscine"
+  },
+  "retour-au-calme-mobilite|homme": {
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-mobilite-homme.gif",
+   "sha256": "b114493c7ecf5b5a5cbe78ee052ef7434991260ec1854314f3d04e159c9ebac9",
+   "surface": "piscine-protocole"
+  },
+  "nage-douce-respiration|homme": {
+   "gif": "media/refonte-photo/gif/homme/nage-douce-respiration-homme.gif",
+   "sha256": "f5754e3553d3922c94ac0b02b4e4bbbf79024db74c0c7f2d762ea050f16fb602",
+   "surface": "piscine-protocole"
+  },
+  "nage-statique-a-l-elastique|homme": {
+   "gif": "media/refonte-photo/gif/homme/nage-statique-a-l-elastique-homme.gif",
+   "sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "surface": "piscine"
+  },
+  "nage-statique-douce|homme": {
+   "gif": "media/refonte-photo/gif/homme/nage-statique-douce-homme.gif",
+   "sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "surface": "piscine-protocole"
+  },
+  "nage-statique-z2|homme": {
+   "gif": "media/refonte-photo/gif/homme/nage-statique-z2-homme.gif",
+   "sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "surface": "piscine-protocole"
+  },
+  "recup-complete-souffler|homme": {
+   "gif": "media/refonte-photo/gif/homme/recup-complete-souffler-homme.gif",
+   "sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "surface": "piscine"
+  },
+  "recup-complete-souffler-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/recup-complete-souffler-au-bord-homme.gif",
+   "sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "surface": "piscine-protocole"
+  },
+  "retour-au-calme-respiration|homme": {
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-respiration-homme.gif",
+   "sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "surface": "piscine-protocole"
   }
  }
 }

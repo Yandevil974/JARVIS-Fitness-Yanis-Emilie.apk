@@ -1,6 +1,6 @@
 {
  "version": "1.4.9-refonte",
- "total": 363,
+ "total": 375,
  "entrees": [
   {
    "cle": "ab-wheel-roulette|homme",
@@ -6771,6 +6771,255 @@
     440
    ],
    "planche": "planches/lot51/repos.png"
+  },
+  {
+   "cle": "etirements-au-bord|homme",
+   "identifiant": "etirements-au-bord",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Étirements au bord"
+   ],
+   "gif": "media/refonte-photo/gif/homme/etirements-au-bord-homme.gif",
+   "gif_sha256": "b8ec7015069f653b89dbec2449c3df064bcd5641023be8e132fcb67bbdc1a0af",
+   "gif_frames": 2,
+   "gif_size": [
+    362,
+    440
+   ],
+   "planche": "planches/lot52/etirements-au-bord.png"
+  },
+  {
+   "cle": "fractionne-nager|homme",
+   "identifiant": "fractionne-nager",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Fractionné — nager"
+   ],
+   "gif": "media/refonte-photo/gif/homme/fractionne-nager-homme.gif",
+   "gif_sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot52/fractionne-nager.png"
+  },
+  {
+   "cle": "nager-fractionne-1-6|homme",
+   "identifiant": "nager-fractionne-1-6",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nager — fractionné 1/6",
+    "Nager — fractionné 2/6",
+    "Nager — fractionné 3/6",
+    "Nager — fractionné 4/6",
+    "Nager — fractionné 5/6",
+    "Nager — fractionné 6/6",
+    "Nager — fractionné 1/8",
+    "Nager — fractionné 2/8",
+    "Nager — fractionné 3/8",
+    "Nager — fractionné 4/8",
+    "Nager — fractionné 5/8",
+    "Nager — fractionné 6/8",
+    "Nager — fractionné 7/8",
+    "Nager — fractionné 8/8",
+    "Nager — fractionné 1/10",
+    "Nager — fractionné 2/10",
+    "Nager — fractionné 3/10",
+    "Nager — fractionné 4/10",
+    "Nager — fractionné 5/10",
+    "Nager — fractionné 6/10",
+    "Nager — fractionné 7/10",
+    "Nager — fractionné 8/10",
+    "Nager — fractionné 9/10",
+    "Nager — fractionné 10/10"
+   ],
+   "gif": "media/refonte-photo/gif/homme/nager-fractionne-1-6-homme.gif",
+   "gif_sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+   "gif_frames": 2,
+   "gif_size": [
+    392,
+    440
+   ],
+   "planche": "planches/lot52/fractionne-nager.png"
+  },
+  {
+   "cle": "mobilite-epaules-aquatique|homme",
+   "identifiant": "mobilite-epaules-aquatique",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Mobilité épaules aquatique"
+   ],
+   "gif": "media/refonte-photo/gif/homme/mobilite-epaules-aquatique-homme.gif",
+   "gif_sha256": "b114493c7ecf5b5a5cbe78ee052ef7434991260ec1854314f3d04e159c9ebac9",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot52/mobilite-epaules-aquatique.png"
+  },
+  {
+   "cle": "retour-au-calme-mobilite|homme",
+   "identifiant": "retour-au-calme-mobilite",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme + mobilité"
+   ],
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-mobilite-homme.gif",
+   "gif_sha256": "b114493c7ecf5b5a5cbe78ee052ef7434991260ec1854314f3d04e159c9ebac9",
+   "gif_frames": 2,
+   "gif_size": [
+    386,
+    440
+   ],
+   "planche": "planches/lot52/mobilite-epaules-aquatique.png"
+  },
+  {
+   "cle": "nage-douce-respiration|homme",
+   "identifiant": "nage-douce-respiration",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage douce + respiration",
+    "Nage douce + respiration"
+   ],
+   "gif": "media/refonte-photo/gif/homme/nage-douce-respiration-homme.gif",
+   "gif_sha256": "f5754e3553d3922c94ac0b02b4e4bbbf79024db74c0c7f2d762ea050f16fb602",
+   "gif_frames": 2,
+   "gif_size": [
+    497,
+    440
+   ],
+   "planche": "planches/lot52/nage-douce-respiration.png"
+  },
+  {
+   "cle": "nage-statique-a-l-elastique|homme",
+   "identifiant": "nage-statique-a-l-elastique",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Nage statique (à l'élastique)"
+   ],
+   "gif": "media/refonte-photo/gif/homme/nage-statique-a-l-elastique-homme.gif",
+   "gif_sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "gif_frames": 2,
+   "gif_size": [
+    794,
+    440
+   ],
+   "planche": "planches/lot52/nage-statique-a-l-elastique.png"
+  },
+  {
+   "cle": "nage-statique-douce|homme",
+   "identifiant": "nage-statique-douce",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage statique douce",
+    "Nage statique douce"
+   ],
+   "gif": "media/refonte-photo/gif/homme/nage-statique-douce-homme.gif",
+   "gif_sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "gif_frames": 2,
+   "gif_size": [
+    794,
+    440
+   ],
+   "planche": "planches/lot52/nage-statique-a-l-elastique.png"
+  },
+  {
+   "cle": "nage-statique-z2|homme",
+   "identifiant": "nage-statique-z2",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2",
+    "Nage statique Z2/Z3"
+   ],
+   "gif": "media/refonte-photo/gif/homme/nage-statique-z2-homme.gif",
+   "gif_sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "gif_frames": 2,
+   "gif_size": [
+    794,
+    440
+   ],
+   "planche": "planches/lot52/nage-statique-a-l-elastique.png"
+  },
+  {
+   "cle": "recup-complete-souffler|homme",
+   "identifiant": "recup-complete-souffler",
+   "athlete": "homme",
+   "surface": "piscine",
+   "noms": [
+    "Récup complète — souffler"
+   ],
+   "gif": "media/refonte-photo/gif/homme/recup-complete-souffler-homme.gif",
+   "gif_sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot52/recup-complete-souffler.png"
+  },
+  {
+   "cle": "recup-complete-souffler-au-bord|homme",
+   "identifiant": "recup-complete-souffler-au-bord",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord",
+    "Récup complète — souffler au bord"
+   ],
+   "gif": "media/refonte-photo/gif/homme/recup-complete-souffler-au-bord-homme.gif",
+   "gif_sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot52/recup-complete-souffler.png"
+  },
+  {
+   "cle": "retour-au-calme-respiration|homme",
+   "identifiant": "retour-au-calme-respiration",
+   "athlete": "homme",
+   "surface": "piscine-protocole",
+   "noms": [
+    "Retour au calme + respiration"
+   ],
+   "gif": "media/refonte-photo/gif/homme/retour-au-calme-respiration-homme.gif",
+   "gif_sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "gif_frames": 2,
+   "gif_size": [
+    385,
+    440
+   ],
+   "planche": "planches/lot52/recup-complete-souffler.png"
   }
  ]
 }
