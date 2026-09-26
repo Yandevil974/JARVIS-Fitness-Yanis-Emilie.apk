@@ -8,20 +8,24 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 ## 1. Où l'on en est (mesuré, pas estimé)
 
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
-- Branche de travail **obligatoire** : `arena/01a0d6f5-jarvis-fitness-yanis-emilie-ap`
-  (session Arena courante ; ne jamais pousser sur `main`, ne jamais créer d'autre branche).
+- Branche de travail **obligatoire** : `arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap`
+  (session Arena courante depuis le 26/09 ; contenu de `arena/01a0d6f5-…` repris au commit
+  `11d1594` ; ne jamais pousser sur `main`, ne jamais créer d'autre branche). Si la plateforme
+  impose un AUTRE nom de branche au prochain chat : `git fetch origin arena/01a0dbe5-… &&
+  git reset --hard FETCH_HEAD` puis travailler et pousser sur la branche imposée, et mettre à
+  jour ce fichier + `PASSATION-COPIER-COLLER.md` + `tools/pdf-revue-331.py` (page de titre).
 - Avancement : **331 / 331 animations validées — JALON : plus aucun exercice sans visuel** (`production/etat.json`, clé `chiffres`).
   Restent **0**. Toutes surfaces terminées (musculation 203, tabata sol 37,
   piscine guides 9, protocoles 40, aqua tabata 6, étirements 29, elliptique 5, échauffement 3).
   **Tabata au sol TERMINÉE (37/37), piscine guides TERMINÉE (9/9).** **Musculation TERMINÉE (203/203).**
   Terminés : **étirements 29 ✅, elliptique 5 ✅, échauffement 3 ✅**.
-- **Vérification des mouvements déjà créés (25/09)** : 70 couples relus case par case
-  (`verification/VERIFICATION-2026-09-25.md`) ; 7 gestes faux trouvés parmi les livrés
-  (4 refaits et acceptés au lot 17 ; 3 retirés des valides ce tour : back-squat-barre-haute,
-  back-squat-inertie-pause-complete, burpees) ; **21 couples restent à relire** (feuilles de 3,
-  310 déjà relus).
-  Style : 26 GIF ont une case sans vert lime (`production/style-a-reprendre.json`),
-  à reprendre dans un lot dédié sans toucher aux gestes.
+- **Relecture case par case TERMINÉE (26/09, relecture 26, §66)** : 331 / 331 couples relus
+  (`verification/VERIFICATION-2026-09-25.md`). Sur l'ensemble : 10 gestes/cadrages faux trouvés
+  parmi les livrés et tous refaits (dont, au lot 50 : torsion-allongee montrée assise,
+  souleve-de-terre ordre inversé + angle, transition face/profil ; rowing-assis-etirement cases
+  échangées par PIL). `a-refaire.json` VIDE.
+  Style : **33** GIF ont une case sans vert lime sur le corps (`production/style-a-reprendre.json`),
+  à reprendre dans un lot dédié sans toucher aux gestes, **sur décision explicite de l'utilisateur**.
 - Index visuel numéroté : `review/index-general.jpg` (331 vignettes, régénéré à chaque lot).
 
 ## 2. Ce que l'utilisateur a demandé (et qui ne change pas)
@@ -50,9 +54,11 @@ un échec compte aussi). L'utilisateur écrit « suite » pour enchaîner.
 ```bash
 cd /home/user/JARVIS-Fitness-Yanis-Emilie.apk
 git log --oneline -1                     # si HEAD != branche arena : récupérer
-git fetch origin '+refs/heads/arena/01a0d51c-jarvis-fitness-yanis-emilie-ap:refs/remotes/origin/arena/01a0d51c-jarvis-fitness-yanis-emilie-ap'
-git reset --hard origin/arena/01a0d51c-jarvis-fitness-yanis-emilie-ap
-python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install -q pillow numpy
+git fetch origin arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD
+python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install -q pillow numpy pymupdf
+# chaîne APK (1 min, sans clé) :
+node evolution/media/tools/payloads-148.mjs && python3 evolution/media/tools/overlay-331.py
+python3 evolution/android/build-media-149.py --unsigned
 ```
 
 Ne jamais supprimer ni renommer la racine du dépôt.
@@ -66,6 +72,11 @@ Ne jamais supprimer ni renommer la racine du dépôt.
 | `evolution/media/tools/verif-gifs.py` | mesure les GIF livrés (2 images, 500 ms, 440 px, identifiant du plan, vert des deux cases, quasi-doubles, zone du vert) : `verification/verif-gifs.json` |
 | `evolution/media/tools/feuilles-verif.py` | imprime les DEUX cases d'un GIF en pleine définition, 3 mouvements par feuille : l'outil de relecture humaine imposé |
 | `evolution/media/tools/index-general.py` | régénère `review/index-general.jpg` (vignettes numérotées de tous les valides) |
+| `evolution/media/tools/pdf-revue-331.py` | PDF de revue utilisateur, **numéros stables** (tri : surface du manifeste puis identifiant, athlète — ne pas changer) |
+| `evolution/media/tools/maj-manifeste-331.py` | après tout GIF refait : re-mesure SHA/frames/taille, retrouve la planche source par correspondance d'image, met à jour `candidate/refonte-331-map.json` |
+| `evolution/media/tools/payloads-148.mjs` (node) | extrait les 2 payloads du bundle ORIGINAL 1.4.8 → `.cache/payloads-148.json` (prérequis de l'overlay) |
+| `evolution/media/tools/overlay-331.py` | web 1.4.8 + 331 GIF + hook `REFONTE_MEDIA` (athlète = profil actif) → `.cache/web-148` |
+| `evolution/android/build-media-149.py` | `--unsigned` : APK 1.4.9 non signé + contrôles (sans clé) ; `--real` : signature v2+v3 avec l'identité restaurée → `downloads/` |
 | `production/plan.json` | 343 lignes = **331 couples (mouvement × athlète)** ; 17 gestes existent chez les deux athlètes et demandent deux GIF |
 | `production/prescriptions.json` | le geste exact lu dans l'APK livrée (source de tous les prompts) |
 | `production/etat.json` | valides / restants / chiffres par surface |
@@ -118,6 +129,14 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
+0. **État lot 50 (26/09)** : 331/331 valides, **331/331 relus**, `a-refaire.json` VIDE, style 33,
+   PDF régénéré (mêmes numéros ; n° 169/180/327/330 = nouvelles images), APK 1.4.9 non signé
+   reconstruit et contrôlé par `build-media-149.py --unsigned`. **Ordre des priorités au réveil :**
+   (1) « coquille au n° X » → corriger, régénérer GIF, `maj-manifeste-331.py`, PDF mêmes numéros,
+   planche de contrôle ; (2) clé collée dans `/tmp/rk.txt` → `pip install --target
+   .cache/signing-tools jdk4py==17.0.9.2 cryptography==46.0.3`, `prepare-home-tools.py`,
+   `signing-media.py restore --recovery-key-file /tmp/rk.txt`, `build-media-149.py --real`,
+   un seul lien raw ; (3) sinon lot style seulement sur décision explicite.
 1. **Aucune planche en attente** : `production/a-refaire.json` VIDE. **331/331 couples
    valides** après lot 45 (nage-douce résolue au 2ᵉ essai, nage-douce-respiration du 1ᵉʳ,
    10 copies conformes : 4 protocoles nage douce + 6 aqua tabata).
@@ -138,9 +157,8 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
    asymétrique : éditer la case réussie pour fabriquer l'autre. L'audit réalisme est clos : ses 6 remplacements
    sont acceptés ; règles de grée obligatoires dans chaque prompt futur
    (`production/audit-realisme.json`).
-2. Continuer la relecture des **75 couples déjà valides non relus** (feuilles de 3,
-   `feuilles-verif.py`), puis le lot « style » des 22 GIF sans vert sur une case
-   (`production/style-a-reprendre.json`).
+2. Relecture : **terminée** (rien à relire). Lot « style » des 33 GIF sans vert sur une case
+   (`production/style-a-reprendre.json`) : **seulement si l'utilisateur le décide**.
 3. Continuer la musculation (48 restants), puis
    **tabata au sol (27)**, **piscine guides (9)**, **piscine protocoles (40)**,
    **aqua tabata (6)** — par lots de ≤ 10.

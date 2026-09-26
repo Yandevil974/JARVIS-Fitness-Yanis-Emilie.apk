@@ -63,7 +63,7 @@ def main():
     for k, v in autres.items():
         d.text((60, y), f'{k} : {v}', font=F_SUB, fill='black')
         y += 40
-    d.text((60, y + 20), f'Total : {len(entrees)} — branche arena/01a0d6f5', font=F_SUB, fill='#555555')
+    d.text((60, y + 20), f'Total : {len(entrees)} — branche arena/01a0dbe5', font=F_SUB, fill='#555555')
     pages.append(pg)
 
     num = 0

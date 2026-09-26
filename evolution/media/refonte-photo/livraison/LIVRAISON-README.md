@@ -38,9 +38,10 @@ visage A), lue case par case avant acceptation.
 
 ## Chantiers connexes (non bloquants)
 
-- Lot « style » : 26 GIF ayant une case sans vert lime (`production/style-a-reprendre.json`),
+- Lot « style » : 33 GIF ayant une case sans vert lime (`production/style-a-reprendre.json`),
   reprise sans toucher aux gestes, selon la décision utilisateur §3 de `CE-QUI-COINCE.md`.
-- Relecture cumulative : 310 couples relus, 21 restent à relire (feuilles de 3).
+- Relecture cumulative : **TERMINÉE** (331 / 331 relus, relecture 26 du 26/09 ; 3 GIF refaits au lot 50 :
+  torsion-allongee, souleve-de-terre, transition ; rowing-assis-etirement cases remises dans l'ordre).
 
 
 ---
@@ -57,3 +58,19 @@ visage A), lue case par case avant acceptation.
   `activeProfile` (localStorage `jarvis_fitness_v3`) — Émilie voit la femme, Yanis l'homme.
 - **Manque uniquement : la clé de signature utilisateur** (jamais fabriquée ni publiée),
   puis dépôt `downloads/…-1.4.9.apk` + `.sha256` + `.fidelity.json` + lien raw unique.
+
+---
+
+## État lot 50 (26 septembre 2026)
+
+- Branche de session : `arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap`.
+- Manifeste rafraîchi par `evolution/media/tools/maj-manifeste-331.py` (SHA/frames/taille re-mesurés,
+  planche source retrouvée par correspondance d'image) ; `candidate/refonte-331-map.json` à jour.
+- PDF de revue régénéré avec les mêmes numéros (n° 169, 180, 327, 330 = nouvelles images).
+- Chaîne APK rejouable sans clé : `node evolution/media/tools/payloads-148.mjs` →
+  `python3 evolution/media/tools/overlay-331.py` → `python3 evolution/android/build-media-149.py --unsigned`
+  (contrôles : 9 DEX identiques, 657 fichiers web, 331 GIF refonte SHA OK dans le zip, hook complet,
+  aucun média manquant ; APK non signé 103 757 865 o).
+- **Signature** : `python3 evolution/android/build-media-149.py --real` après
+  `signing-media.py restore --recovery-key-file /tmp/rk.txt` (clé utilisateur, jamais créée ici) ;
+  dépôt `downloads/Yanis-Fitness-Evolution-1.4.9.apk` + `.sha256` + `.fidelity.json` + lien raw unique.

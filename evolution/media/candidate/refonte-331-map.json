@@ -1379,7 +1379,7 @@
   },
   "rowing-assis-etirement|homme": {
    "gif": "media/refonte-photo/gif/homme/rowing-assis-etirement-homme.gif",
-   "sha256": "a71bee50bdd4f995e9895eac2b49f861106baa3d86eefd443c272e083200493d",
+   "sha256": "b2d6a7d98ed3d56018f571ea5476878afb03b6e69278f451d6944ee8be953782",
    "surface": "musculation"
   },
   "rowing-assis-prise-neutre|homme": {
@@ -1479,7 +1479,7 @@
   },
   "souleve-de-terre|homme": {
    "gif": "media/refonte-photo/gif/homme/souleve-de-terre-homme.gif",
-   "sha256": "a86fc663836d7dc9e8feb95fa4ad6e3ddb27e2e1a2e46bd3399d6c852b1a19b0",
+   "sha256": "6cfcff2b2b4dcee517d56d279d2b25274463bf13b7d2b929d61ad3e54d4283a4",
    "surface": "musculation"
   },
   "split-squat-barbell-pied-avant-sureleve|homme": {
@@ -1604,7 +1604,7 @@
   },
   "torsion-allongee|homme": {
    "gif": "media/refonte-photo/gif/homme/torsion-allongee-homme.gif",
-   "sha256": "7cd3d22b5f38dabf55982212709b0e54f29016da14198c19f6d3171737e6ab2d",
+   "sha256": "cf7af56885b9a27b289c3166f23bc91aab0ef027b931f04d874d9a6f2e963ceb",
    "surface": "etirement"
   },
   "tour-1-2-en-place|femme": {
@@ -1634,7 +1634,7 @@
   },
   "transition|femme": {
    "gif": "media/refonte-photo/gif/femme/transition-femme.gif",
-   "sha256": "817fdeabd642696e324a0d23f08014b58d49dee0512a1be6dc41396fad5153aa",
+   "sha256": "524c459ec951747e258ecedb9614a4c37626585da1e2ba818a82aa2baa0ea796",
    "surface": "cardio-elliptique"
   },
   "triceps-dips|homme": {

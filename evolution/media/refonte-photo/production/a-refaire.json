@@ -31,6 +31,18 @@
   "torsion-allongee-genoux",
   "squats-doux|homme",
   "nage-douce|femme",
-  "nage-douce-respiration|femme"
- ]
+  "nage-douce-respiration|femme",
+  "torsion-allongee|homme",
+  "souleve-de-terre|homme",
+  "transition|femme",
+  "rowing-assis-etirement|homme"
+ ],
+ "historiqueRelecture26": {
+  "date": "2026-09-26",
+  "lot": 50,
+  "torsion-allongee|homme": "REFUSE a la relecture (lot04 : torsion ASSISE au lieu de « sur le dos, genoux plies, basculez les jambes d un cote, regardez de l autre ») -> refait lot50 : sur le dos, genoux bascules cote oppose a la camera, tete tournee vers la camera, vue de cote surelevee ; ACCEPTE",
+  "souleve-de-terre|homme": "REFUSE a la relecture (lot01 : ordre inverse gauche=verrouillage, angle face puis 3/4, vert sur quadriceps pour cible ischios) -> refait lot50 : profil strict, gauche=barre au sol hanches hautes, droite=verrouillage, vert ischios+fessiers aux deux cases ; ACCEPTE",
+  "transition|femme": "REFUSE a la relecture (lot03 : case 1 de face, case 2 de profil = GIF qui saute) -> refait lot50 : profil aux deux cases pres de l elliptique, boire puis marcher (texte app : boire, se secher, rejoindre le bassin sans trainer) ; ACCEPTE",
+  "rowing-assis-etirement|homme": "cases INVERSEES a la relecture (gauche=poignee au ventre=fin, droite=etirement=debut) -> cases echangees par PIL (planche lot50, aucune generation) ; ACCEPTE"
+ }
 }

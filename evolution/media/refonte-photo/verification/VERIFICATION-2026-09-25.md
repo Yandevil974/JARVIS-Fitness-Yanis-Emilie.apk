@@ -681,3 +681,65 @@ Pipeline outille et rejouable (reset #33 surmonte, tout reconstruit depuis `50de
 - Restant : signature **avec la cle utilisateur uniquement** (jamais fabriquee/publiee),
   depot `downloads/Yanis-Fitness-Evolution-1.4.9.apk` + `.sha256` + `.fidelity.json`,
   lien raw unique.
+
+## 66. Relecture 26 : les 16 derniers couples relus, 3 gestes/cadrages faux corriges (lot 50, 26/09)
+
+**Reprise dans un nouveau chat** : session Arena `arena/01a0dbe5-…` (contenu de
+`arena/01a0d6f5-…` recupere au commit `11d1594`, puis travail poursuivi sur la nouvelle branche —
+l'ancienne branche n'est plus alimentee).
+
+Liste nominative reconstruite (le compteur « 310 relus / 21 restants » etait un compteur
+glissant, sans liste) : couples valides en ordre alphabetique apres le curseur
+`reverse-crunch|femme` de la relecture 25, produits avant le lot 17 (les lots >= 17 sont lus
+case par case a la production) et absents des feuilles du batch 1 = **16 couples**. Feuilles
+`verification/relecture-26-01..06.jpg` (pleine definition, 3 par feuille), prescriptions relues
+dans `production/prescriptions.json` AVANT lecture.
+
+| Couple | Verdict |
+|---|---|
+| rowing-assis-au-cou | conforme (tirage vertical prise large, barre a la nuque, vue de dos aux 2 cases) ; vert case 1 absent -> style |
+| rowing-assis-etirement | **cases INVERSEES** (gauche = poignee au ventre = fin ; droite = etirement = debut) -> cases echangees par PIL, planche `lot50/rowing-assis-etirement.png`, aucune generation ; vert case fin absent -> style |
+| rowing-assis-prise-neutre | conforme (poulie basse, cable horizontal, poignee V, debut bras tendus) ; vert case 1 absent -> style |
+| souleve-de-terre | **REFUSE** : ordre inverse (gauche = verrouillage debout), angle qui change (face puis 3/4), vert sur quadriceps pour cible ischios -> **refait lot 50** (profil strict, gauche = barre au sol hanches hautes dos plat prise pronation, droite = verrouillage, memes plateaux, vert ischios + fessiers aux 2 cases) ; accepte |
+| souleve-de-terre-roumain-barre | conforme (debout -> barre sous les genoux, jambes quasi tendues, dos neutre) ; vert case 1 faible -> style |
+| souleve-de-terre-test-1rm | conforme (barre au sol -> verrouillage, vue de face aux 2 cases) ; note : un seul plateau par cote pour un 1RM (cosmetique) |
+| split-squat-barbell-pied-avant-sureleve | conforme ; zoom : barre SUR LE DOS aux 2 cases, pied avant sur le step, genou arriere pres du sol |
+| squats | conforme (debout -> squat, vert quadriceps aux 2 cases) |
+| superman | conforme (a plat -> bras et jambes decolles) ; vert case 1 absent -> style |
+| suspension-a-la-barre | conforme (suspendu, epaules relachees) ; vert case 1 absent -> style |
+| talon-vers-la-fesse-debout | conforme (appui, talon a la fesse, cheville tenue, genoux serres, vert quadriceps) |
+| tirage-vertical-lean-away | conforme ; zoom : poulie haute, cable vertical, poignee double, buste incline en arriere ; vert case 1 absent -> style |
+| torsion-allongee | **REFUSE** : torsion ASSISE (jambe croisee, main au sol) alors que la fiche dit « sur le dos, genoux plies, basculez les jambes d'un cote, regardez de l'autre » -> **refait lot 50** (sur le dos, vue de cote surelevee, genoux bascules du cote oppose a la camera, tete tournee vers la camera, vert taille/lombaires) ; different de torsion-allongee-genoux (vue zenithale, genoux a droite) : pas de quasi-double ; accepte |
+| tractions-pull-up | conforme (pronation, suspension -> menton au-dessus de la barre, vert dorsaux aux 2 cases) |
+| transition (femme, elliptique) | **REFUSE** : case 1 de face, case 2 de profil = GIF qui saute -> **refait lot 50** (profil aux 2 cases pres de l'elliptique : boire une gorgee, puis marcher vers le bassin ; texte de l'app : « buvez quelques gorgees, sechez-vous et rejoignez le bassin sans trainer, gardez les muscles chauds ») ; accepte |
+| une-jambe-tendue-une-pliee | conforme ; zoom : plante du pied plie contre la cuisse, penche vers le pied tendu |
+
+Lot 50 = **3 generations** (plafond 10 intact pour 7), 0 echec, `verif-ids.py` OK avant conversion,
+`refonte-sheet.py` -> `gif/homme/{torsion-allongee,souleve-de-terre,rowing-assis-etirement}-homme.gif`,
+`gif/femme/transition-femme.gif` ; planches de controle `review/lot50-homme.jpg`, `review/lot50-femme.jpg`.
+`verif-gifs.py` : 331 GIF, structure 100 % conforme, aucun nouveau quasi-double hors copies piscine
+declarees, 2 orphelins historiques inchanges.
+
+**PDF de revue regenere AVEC LES MEMES NUMEROS** (`livraison/REVUE-331-exercices.pdf`, 112 pages ;
+verification programmatique : meme ordre de cles avant/apres) : n° **169** rowing assis + etirement,
+n° **180** souleve de terre, n° **327** torsion allongee, n° **330** transition — pages 61 et 110 controlees a l'ecran.
+
+Manifeste : nouvel outil `evolution/media/tools/maj-manifeste-331.py` (SHA/frames/taille re-mesures,
+planche source retrouvee par correspondance d'image, jamais par le nom seul) : 4 entrees GIF
+mises a jour, 10 planches `lot01/lot03/{homme,femme}` retrouvees, 3 attributions corrigees
+(dead-bug femme lot20, gainage-planche homme lot37, releves-de-jambes homme lot02 : les jumeaux
+homme/femme pointaient sur la meme planche). `candidate/refonte-331-map.json` : 4 SHA mis a jour.
+
+## 67. Couverture et suite (etat lot 50)
+
+**331 / 331 couples valides, 0 restant. Relecture cumulative TERMINEE : 331 / 331 relus, 0 restant.**
+Style : **33 GIF** ayant une case sans vert sur le corps (26 mesures + 7 constates a la lecture
+visuelle de cette relecture ; geste juste partout) — decision utilisateur attendue.
+`a-refaire.json` VIDE. Chaine 1.4.9 rejouee apres reset : `payloads-148.mjs` (nouveau, node),
+`overlay-331.py` (331 copies, 146 ecrasements, 72 EXO_GIFS, 133 imgs, 325 cles, 6 duaux, 535 medias,
+`node --check` OK), **`evolution/android/build-media-149.py --unsigned`** (nouveau : APK 1.4.0 base
+epinglee + web 1.4.8 refondu, META-INF retire, version 1.4.9 / code 20, 9 DEX identiques, 657 fichiers
+web = 272 + 385, 331 GIF refonte verifies SHA dans le zip, hook 331 chemins presents, aucun media
+pendouillant) -> `.cache/build/Yanis-Fitness-Evolution-1.4.9-non-signe.apk` (103 757 865 o).
+Mode `--real` (signature v2+v3 avec l'identite `150e3846…` restauree par la cle utilisateur,
+depot `downloads/…-1.4.9.apk` + `.sha256` + `.fidelity.json`) ecrit, **non execute : cle absente**.

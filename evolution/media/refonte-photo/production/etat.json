@@ -356,5 +356,12 @@
   "gainage-vertical|femme",
   "montees-de-genoux|femme"
  ],
- "restants": []
+ "restants": [],
+ "relecture": {
+  "regle": "chaque couple valide relu case par case en pleine definition (feuilles de 3) ou lu a la production (lots >= 17)",
+  "derniere": "relecture-26 (2026-09-26, 16 couples : 12 conformes, 1 cases echangees, 3 refaits lot50)",
+  "relus": 331,
+  "restants": 0,
+  "note": "compteur precedent « 310 relus / 21 restants » = compteur glissant ; liste nominative reconstruite (ordre alphabetique, curseur apres reverse-crunch|femme, hors lots >= 17 et hors batch 1) = 16 couples, tous relus ce tour"
+ }
 }

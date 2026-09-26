@@ -6374,7 +6374,7 @@
     500
    ],
    "taille": [
-    385,
+    386,
     440
    ],
    "boucle": 0,
@@ -6383,18 +6383,18 @@
    ],
    "surface": "musculation",
    "vert_px": [
-    524,
-    2024
+    2036,
+    490
    ],
    "vert_zone": "milieu-haut",
    "vert_centre": [
-    0.49,
-    0.46
+    0.46,
+    0.49
    ],
    "vert_attendu": [
     "milieu-haut"
    ],
-   "mouvement_px": 0.3153,
+   "mouvement_px": 0.2945,
    "myo_reps": false
   },
   {
@@ -6975,7 +6975,7 @@
     500
    ],
    "taille": [
-    389,
+    386,
     440
    ],
    "boucle": 0,
@@ -6984,19 +6984,19 @@
    ],
    "surface": "musculation",
    "vert_px": [
-    4076,
-    3199
+    191,
+    744
    ],
    "vert_zone": "milieu-bas",
    "vert_centre": [
-    0.57,
-    0.55
+    0.52,
+    0.54
    ],
    "vert_attendu": [
     "milieu-bas",
     "bas"
    ],
-   "mouvement_px": 0.4013,
+   "mouvement_px": 0.3549,
    "myo_reps": false
   },
   {
@@ -7550,7 +7550,7 @@
     500
    ],
    "taille": [
-    389,
+    386,
     440
    ],
    "boucle": 0,
@@ -7559,18 +7559,11 @@
    ],
    "surface": "etirement",
    "vert_px": [
-    4899,
-    5417
+    0,
+    1718
    ],
-   "vert_zone": "milieu-bas",
-   "vert_centre": [
-    0.6,
-    0.62
-   ],
-   "vert_attendu": [
-    "milieu-haut"
-   ],
-   "mouvement_px": 0.2538,
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.3038,
    "myo_reps": false
   },
   {
@@ -7710,7 +7703,7 @@
     500
    ],
    "taille": [
-    373,
+    390,
     440
    ],
    "boucle": 0,
@@ -7719,16 +7712,11 @@
    ],
    "surface": "cardio-elliptique",
    "vert_px": [
-    1080,
-    1155
+    0,
+    334
    ],
-   "vert_zone": "milieu-bas",
-   "vert_centre": [
-    0.59,
-    0.55
-   ],
-   "vert_attendu": null,
-   "mouvement_px": 0.2185,
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.3098,
    "myo_reps": false
   },
   {
@@ -11836,6 +11824,50 @@
    ],
    "erreur": " VERT ABSENT (case [0])",
    "mouvement_px": 0.2734,
+   "myo_reps": false
+  },
+  {
+   "cle": "torsion-allongee|homme",
+   "fichier": "gif/homme/torsion-allongee-homme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    386,
+    440
+   ],
+   "boucle": 0,
+   "surface": "etirement",
+   "vert_px": [
+    0,
+    1718
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.3038,
+   "myo_reps": false
+  },
+  {
+   "cle": "transition|femme",
+   "fichier": "gif/femme/transition-femme.gif",
+   "frames": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "taille": [
+    390,
+    440
+   ],
+   "boucle": 0,
+   "surface": "cardio-elliptique",
+   "vert_px": [
+    0,
+    334
+   ],
+   "erreur": " VERT ABSENT (case [0])",
+   "mouvement_px": 0.3098,
    "myo_reps": false
   },
   {

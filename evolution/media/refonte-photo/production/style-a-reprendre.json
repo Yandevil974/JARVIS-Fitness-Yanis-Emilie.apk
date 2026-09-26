@@ -263,6 +263,63 @@
    "cases_sans_vert": [
     0
    ]
+  },
+  {
+   "cle": "rowing-assis-au-cou|homme",
+   "vert_px": null,
+   "cases_sans_vert": [
+    0
+   ],
+   "source": "relecture-26 (lecture visuelle pleine definition, lot 50) : geste juste, vert absent du corps sur la case indiquee"
+  },
+  {
+   "cle": "rowing-assis-prise-neutre|homme",
+   "vert_px": null,
+   "cases_sans_vert": [
+    0
+   ],
+   "source": "relecture-26 (lecture visuelle pleine definition, lot 50) : geste juste, vert absent du corps sur la case indiquee"
+  },
+  {
+   "cle": "superman|homme",
+   "vert_px": null,
+   "cases_sans_vert": [
+    0
+   ],
+   "source": "relecture-26 (lecture visuelle pleine definition, lot 50) : geste juste, vert absent du corps sur la case indiquee"
+  },
+  {
+   "cle": "suspension-a-la-barre|homme",
+   "vert_px": null,
+   "cases_sans_vert": [
+    0
+   ],
+   "source": "relecture-26 (lecture visuelle pleine definition, lot 50) : geste juste, vert absent du corps sur la case indiquee"
+  },
+  {
+   "cle": "souleve-de-terre-roumain-barre|homme",
+   "vert_px": null,
+   "cases_sans_vert": [
+    0
+   ],
+   "source": "relecture-26 (lecture visuelle pleine definition, lot 50) : geste juste, vert absent du corps sur la case indiquee"
+  },
+  {
+   "cle": "tirage-vertical-lean-away|homme",
+   "vert_px": null,
+   "cases_sans_vert": [
+    0
+   ],
+   "source": "relecture-26 (lecture visuelle pleine definition, lot 50) : geste juste, vert absent du corps sur la case indiquee"
+  },
+  {
+   "cle": "rowing-assis-etirement|homme",
+   "vert_px": null,
+   "cases_sans_vert": [
+    1
+   ],
+   "source": "relecture-26 (lecture visuelle pleine definition, lot 50) : geste juste, vert absent du corps sur la case indiquee"
   }
- ]
+ ],
+ "note_relecture_26": "7 ajouts par lecture visuelle : le masque mesure comptait les plantes/le parquet comme du vert sur ces cases ; le geste est juste, seul le surlignage manque."
 }

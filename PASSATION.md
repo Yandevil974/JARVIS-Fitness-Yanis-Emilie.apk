@@ -3,6 +3,33 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
+## Dernière avancée — lot 50 : relecture TERMINÉE 331/331, 3 refaits, PDF mêmes numéros, chaîne 1.4.9 outillée (26 septembre 2026)
+
+> ⚠️ Branche de session changée par la plateforme : **`arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap`**
+> (contenu de `arena/01a0d6f5-…` repris au commit `11d1594`). Restauration :
+> `git fetch origin arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD`.
+
+- **Relecture case par case terminée** : les 16 derniers couples (liste nominative reconstruite,
+  `verification/relecture-26-01..06.jpg`) → 12 conformes, **3 refusés et refaits dans le même tour**
+  (torsion allongée montrée ASSISE au lieu de « sur le dos » ; soulevé de terre ordre inversé + angle
+  face/3-4 + vert sur quadriceps pour cible ischios ; transition case de face puis de profil), 1 planche
+  aux cases inversées remise dans le bon sens par PIL (rowing assis + étirement). Lot 50 = 3 générations,
+  0 échec. Détail : `verification/VERIFICATION-2026-09-25.md` §66–67.
+- **PDF de revue régénéré AVEC LES MÊMES NUMÉROS** (`livraison/REVUE-331-exercices.pdf`, 112 pages) :
+  n° 169, 180, 327, 330 portent les nouvelles images. Vos « coquille au n° X » restent la priorité 1.
+- **Style** : 33 GIF ont une case sans vert sur le corps (26 mesurés + 7 vus à la relecture) —
+  geste juste partout — en attente de votre décision (`CE-QUI-COINCE.md` §3.2).
+- **Chaîne 1.4.9 rejouée après reset et outillée** : `evolution/media/tools/payloads-148.mjs`
+  (node) → `overlay-331.py` → **`evolution/android/build-media-149.py --unsigned`** (nouveau) :
+  APK 1.4.0 base épinglée + web 1.4.8 refondu, version 1.4.9 / code 20, 9 DEX identiques, 657 fichiers
+  web, 331 GIF vérifiés SHA dans le zip, hook 331 chemins présents, aucun média manquant →
+  `.cache/build/Yanis-Fitness-Evolution-1.4.9-non-signe.apk` (103 757 865 o). Le mode `--real`
+  (signature v2+v3, identité durable `150e3846…` restaurée par **votre** clé de récupération) est écrit
+  et **attend uniquement la clé** ; il dépose `downloads/…-1.4.9.apk` + `.sha256` + `.fidelity.json`.
+- Manifeste : `tools/maj-manifeste-331.py` (SHA re-mesurés, planches sources retrouvées par image :
+  10 chemins comblés, 3 attributions homme/femme corrigées) ; `candidate/refonte-331-map.json` à jour.
+- Bloc de reprise pour un nouveau chat : `PASSATION-COPIER-COLLER.md` (racine).
+
 ## En cours — refonte de TOUS les visuels sur la nouvelle photo (25 septembre 2026)
 
 **Cible réelle : 331 GIF** = un couple (mouvement × athlète). Les 343 lignes du plan ne
