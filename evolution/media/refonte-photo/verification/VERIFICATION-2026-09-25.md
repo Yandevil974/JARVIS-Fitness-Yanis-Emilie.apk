@@ -815,3 +815,37 @@ refonte. Verification : apercu web, profil Yanis -> homme dans le bassin ; profi
 `valide-couples.py --lot lot52` : 6 GIF + 6 copies conformes = **12 couples (n° 364-375)**. PDF : 126 pages,
 375 exercices, 1-331 inchanges. **Etat : 375 valides / 14 restants** = 9 generations : 4 retries
 (`a-refaire.json`, strategies differentes consignees) + 5 elliptique/transition homme -> lot 53, puis cablage.
+
+## 70. Lot 53 : 6/9 acceptees, CABLAGE « athlete = profil » pose pour piscine/elliptique (26/09, apres reset #3)
+
+9 generations (4 reprises + 5 elliptique/transition homme), vert mesure aux 2 cases sur les 9, feuilles
+`verification/lot53-01..03.jpg` :
+
+| Planche | Verdict |
+|---|---|
+| battements-au-bord (essai 3, vue zenithale) | **ACCEPT** : jambes tendues, pied droit puis pied gauche a la surface, vert fessiers/ischios |
+| mobilite-hanches-chevilles (essai 2) | ACCEPT : eau a la taille, main au bord, jambe tendue devant -> derriere |
+| sprint-nager-a-fond (essai 2, profil) | ACCEPT : crawl horizontal, bras droit puis gauche en retour aerien, gros splash |
+| talons-fesses (essai 2) | **REFUS** : talon a la fesse juste mais MEME jambe aux 2 cases -> essai 3 en vue 3/4 arriere |
+| elliptique-mise-en-route | **REFUS** : machine en MIROIR entre les cases (console devant puis derriere) |
+| elliptique-fractionne | **REFUS** : cases quasi identiques (meme pedale, meme genou) |
+| elliptique-recuperation-active | ACCEPT : vue 3/4 arriere, pedalage lent puis gorgee d'eau (texte app : « profitez-en pour boire ») |
+| elliptique-retour-au-calme | ACCEPT : dernier pas tres lent -> machine arretee, main sur la poitrine, inspiration |
+| transition (homme) | ACCEPT : boire pres de l'elliptique -> marcher vers le bassin, serviette |
+
+`valide-couples.py --lot lot53` : 6 GIF + 4 copies = **10 couples (n° 376-385)**. **Etat : 385 valides / 4 restants**
+(talons-fesses + talons-fesses-effort, elliptique-mise-en-route, elliptique-fractionne) = 3 generations,
+strategies consignees dans `a-refaire.json`. PDF : 129 pages, 385 exercices, 1-331 inchanges.
+
+**Cablage pose dans `overlay-331.py`** (verifie par simulation node des deux profils) :
+- `globalThis.__refonteSwap(chemin)` : tout `/media/refonte-<id>-<athlete>.gif` OU ancien chemin non ambigu
+  (`REFONTE_OLD`, 146 chemins : `/media/2e23…gif`, `/media/pool-repos.gif`, `/media/cardio-transition.jpg`…)
+  est servi dans la variante de l'athlete du profil actif quand `REFONTE_MEDIA[id]` est double (60 ids duaux) ;
+- `bt` (resolveur universel des `src` d'images) appelle `__refonteSwap` : couvre POOL_GUIDES (par nom), la
+  constante `If`, providedAnimations/Recoveries, la map `yg`, le timer, les vignettes et la modale image ;
+- constante `If` (5 guides elliptique) : imgs `/media/cardio-*.jpg` -> chemins refonte du meme nom.
+Simulation : profil yanis -> nage-douce, aqua-jogging, pompes au bord (ancien chemin), transition, repos =
+variantes HOMME ; profil emilie = variantes FEMME ; musculation homme-only inchangee ; elliptique-mise-en-route
+reste femme chez Yanis tant que l'homme n'est pas produit (lot 54). `node --check` OK ;
+`build-media-149.py --unsigned` OK : 711 fichiers web, 385 GIF verifies SHA dans le zip, hook 385 chemins,
+aucun media pendouillant (les controles acceptent desormais N >= 331 couples).

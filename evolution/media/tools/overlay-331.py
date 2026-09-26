@@ -131,6 +131,34 @@ def main():
             'const __p=typeof __v==="string"?__v:(__v.homme||__v.femme);'
             'if(eo.has(__k)){const __e=eo.get(__k);eo.set(__k,{path:__p,name:__e.name,level:"exact"})}}')
     js = js.replace(anchor, const + pick + loop + anchor, 1)
+    # --- athlete = profil actif PARTOUT : piscine/elliptique ne passent pas par le hook (ids) mais par
+    # POOL_GUIDES (noms), la constante If, providedAnimations/Recoveries et la map yg -> tous rendus via
+    # bt(chemin). On redirige donc au niveau de bt : chemin refonte (ou ancien chemin non ambigu) -> variante
+    # de l'athlete du profil actif quand elle existe (REFONTE_MEDIA[id] = {homme, femme}).
+    old2ident = {}
+    for cle, olds in assoc.items():
+        if cle in newpath:
+            for o in olds:
+                if o not in amb and ' ' not in o and (WEB / o.lstrip('/')).exists():
+                    old2ident.setdefault(o, cle.split('|')[0])
+    swap = ('globalThis.REFONTE_OLD=' + json.dumps(old2ident, ensure_ascii=False, separators=(',', ':')) + ';'
+            'globalThis.__refonteSwap=function(p){if(typeof p!=="string")return p;let id=null;'
+            'const m=/^\\/media\\/refonte-(.+)-(homme|femme)\\.gif$/.exec(p);'
+            'if(m)id=m[1];else if(globalThis.REFONTE_OLD[p])id=globalThis.REFONTE_OLD[p];if(!id)return p;'
+            'const v=REFONTE_MEDIA[id];if(!v)return p;if(typeof v==="string")return v;return __refontePick({id:id})||p};')
+    js = js.replace(anchor, swap + anchor, 1)
+    bt_old = 'bt=i=>{var o;return((o=globalThis.__JARVIS_ASSETS__)==null?void 0:o[i])??i}'
+    assert js.count(bt_old) == 1, 'resolveur bt introuvable'
+    js = js.replace(bt_old, 'bt=i=>{i=(globalThis.__refonteSwap||(x=>x))(i);var o;return((o=globalThis.__JARVIS_ASSETS__)==null?void 0:o[i])??i}', 1)
+    # constante If (guides elliptique, codee en dur) : img -> chemin refonte du meme nom
+    i0 = js.find('If=[{k:["echauffement elliptique"')
+    i1 = js.find('];', i0) + 2
+    assert 0 < i0 < i1
+    def patch_if(m):
+        c = nom2cle.get(norm(m.group(2)))
+        return m.group(1) + (newpath[c] if c else m.group(3)) + m.group(4)
+    bloc, n_if = re.subn(r'(t:"([^"]+)",img:")([^"]+)(")', patch_if, js[i0:i1])
+    js = js[:i0] + bloc + js[i1:]
     anchor2 = 'function JarvisReviewedMedia(i){'
     assert js.count(anchor2) == 1
     js = js.replace(anchor2, anchor2 +
@@ -139,7 +167,7 @@ def main():
     js_path.write_text(js, encoding='utf-8')
     rep = {'copies': len(man['entrees']), 'overwrites': overw, 'ambigus': len(amb),
            'payload_exo': stats['exo'], 'payload_img': stats['img'],
-           'refonte_keys': len(ref),
+           'refonte_keys': len(ref), 'old_paths_swap': len(old2ident), 'if_patches': n_if,
            'dual_ids': sorted(k for k, v in ref.items() if isinstance(v, dict)),
            'media_files': len(list((WEB / 'media').iterdir())),
            'bundle_size': len(js)}

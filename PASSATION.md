@@ -3,7 +3,16 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — lot 52 : piscine Yanis suite, 375 valides / 14 restants (26 septembre 2026)
+## Dernière avancée — lot 53 : 385 valides / 4 restants, câblage « athlète = profil » posé (26 septembre 2026)
+
+- Lot 53 : 6/9 acceptées (battements au bord en vue zénithale, mobilité hanches, sprint crawl, elliptique
+  récup active, elliptique retour au calme, transition homme) + 4 copies → n° 376–385 ; 3 refus motivés
+  (talons-fesses, elliptique mise en route, elliptique fractionné) → lot 54. §70.
+- **Câblage** : `overlay-331.py` sert désormais la variante de l'athlète du profil actif pour TOUS les chemins
+  refonte et anciens chemins (piscine, elliptique, transition) via `bt` ; simulé sur les deux profils ; APK
+  1.4.9 non signé reconstruit et contrôlé (711 fichiers web, 385 GIF).
+
+## Étape précédente — lot 52 : piscine Yanis suite, 375 valides / 14 restants (26 septembre 2026)
 
 - Lot 52 : 6/10 acceptées (étirements au bord, fractionné nager, mobilité épaules, nage douce +
   respiration, nage statique à l'élastique — grille 2×2 du générateur recadrée —, récup souffler) + 6 copies

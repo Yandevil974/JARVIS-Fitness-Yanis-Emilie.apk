@@ -1876,6 +1876,56 @@
    "gif": "media/refonte-photo/gif/homme/retour-au-calme-respiration-homme.gif",
    "sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
    "surface": "piscine-protocole"
+  },
+  "battements-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/battements-au-bord-homme.gif",
+   "sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "surface": "piscine"
+  },
+  "battements-de-jambes-effort|homme": {
+   "gif": "media/refonte-photo/gif/homme/battements-de-jambes-effort-homme.gif",
+   "sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "surface": "piscine-protocole"
+  },
+  "echauffement-battements-au-bord|homme": {
+   "gif": "media/refonte-photo/gif/homme/echauffement-battements-au-bord-homme.gif",
+   "sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "surface": "piscine-protocole"
+  },
+  "echauffement-battements-mobilite|homme": {
+   "gif": "media/refonte-photo/gif/homme/echauffement-battements-mobilite-homme.gif",
+   "sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "surface": "piscine-protocole"
+  },
+  "mobilite-hanches-chevilles|homme": {
+   "gif": "media/refonte-photo/gif/homme/mobilite-hanches-chevilles-homme.gif",
+   "sha256": "134626c223afbab34250bda7a904164bcd8c5766062d849ea3f2b3e365efdd65",
+   "surface": "piscine"
+  },
+  "sprint-nager-a-fond|homme": {
+   "gif": "media/refonte-photo/gif/homme/sprint-nager-a-fond-homme.gif",
+   "sha256": "1cecadb65e47315a18a84b54ae9e504625d618f55329cbfb172c121ff9d5d4ef",
+   "surface": "piscine"
+  },
+  "nager-sprint-1-8|homme": {
+   "gif": "media/refonte-photo/gif/homme/nager-sprint-1-8-homme.gif",
+   "sha256": "1cecadb65e47315a18a84b54ae9e504625d618f55329cbfb172c121ff9d5d4ef",
+   "surface": "piscine-protocole"
+  },
+  "elliptique-recuperation-active|homme": {
+   "gif": "media/refonte-photo/gif/homme/elliptique-recuperation-active-homme.gif",
+   "sha256": "7d74994e8d8777be8bc76a6316ea3130ef1a85df044d957575f8084ee3d749d4",
+   "surface": "cardio-elliptique"
+  },
+  "elliptique-retour-au-calme|homme": {
+   "gif": "media/refonte-photo/gif/homme/elliptique-retour-au-calme-homme.gif",
+   "sha256": "098935746d0a45c310eb80883feb37b36ec512d284fe85587f338b58e036aee1",
+   "surface": "cardio-elliptique"
+  },
+  "transition|homme": {
+   "gif": "media/refonte-photo/gif/homme/transition-homme.gif",
+   "sha256": "bf54d3bdd17514e250db70734293afbf739c1e4ba2f6f45732c09ec72a1e50c1",
+   "surface": "cardio-elliptique"
   }
  }
 }

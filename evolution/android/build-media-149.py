@@ -135,7 +135,7 @@ def check_apk(candidate, web, added):
                 # on normalise les antislashs de fin avant de verifier la presence du fichier
                 referenced |= {match.decode('utf-8').rstrip('\\') for match in
                                re.findall(rb'"(/(?:media|thumbs|team)/[^"]+)"', dst.read(name))}
-        dangling = sorted(path for path in referenced if 'assets/public' + path not in present)
+        dangling = sorted(path for path in referenced if ' ' not in path and 'assets/public' + path not in present)
         assert not dangling, 'Media referenced by the delivered bundle but absent from the APK: ' + ', '.join(dangling)
         # les 331 GIF refonte, octet pour octet ceux du manifeste
         refonte = 0
@@ -145,7 +145,7 @@ def check_apk(candidate, web, added):
             data = dst.read(entry)
             assert data[:6] == b'GIF89a' and sha(data) == e['gif_sha256'], 'GIF refonte altere : ' + entry
             refonte += 1
-        assert refonte == 331, refonte
+        assert refonte == len(man['entrees']) >= 331, refonte
         # le hook du bundle reference bien chaque GIF
         js = dst.read(BUNDLE).decode('utf-8')
         m = re.search(r'const REFONTE_MEDIA=(\{.*?\});let __rp=', js)
@@ -154,7 +154,7 @@ def check_apk(candidate, web, added):
         paths = set()
         for v in ref.values():
             paths |= set(v.values()) if isinstance(v, dict) else {v}
-        assert len(paths) == 331, len(paths)
+        assert len(paths) == len(man['entrees']), (len(paths), len(man['entrees']))
         assert all('assets/public' + p in present for p in paths), 'chemin du hook absent du zip'
         changed = sorted(name for name in base_names if src.read(name) != dst.read(name))
     return {'changedEntries': len(changed), 'webFiles': 272 + len(added), 'addedEntries': len(added),

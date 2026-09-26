@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 52 — 375 valides / 14 restants (Yanis piscine en cours)
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 53 — 385 valides / 4 restants, câblage profil posé
 
 Liste demandée pour revue de votre côté. **331 / 331 visuels validés, 0 restant, et la
 relecture case par case est TERMINÉE (331 / 331 relus)**. Ce fichier ne contient que les
@@ -12,8 +12,9 @@ points bloquants ou qui demandent une décision.
 ## 0. Feuille de route donnée par l'utilisateur le 26/09 (dans cet ordre, par étapes)
 
 1. **Piscine + cardio pour Yanis (images manquantes)** → EN COURS : 58 couples homme ajoutés,
-   **44 validés aux lots 51–52** (n° 332–375 du PDF), 14 restants = 9 générations (lot 53 : 4 reprises
-   piscine + 5 elliptique/transition) + câblage « athlète = profil » pour piscine/elliptique.
+   **54 validés aux lots 51–53** (n° 332–385 du PDF), 4 restants = 3 générations (lot 54 : talons-fesses
+   essai 3, elliptique-mise-en-route, elliptique-fractionné). **Câblage « athlète = profil » POSÉ**
+   (`overlay-331.py` : `__refonteSwap` + `bt` + constante `If`, simulé sur les deux profils, §70).
 2. Vérification du PDF par l'utilisateur → corrections par numéro (priorité 1 dès réception).
 3. Pouvoir **augmenter le niveau** du programme cardio (piscine et autres) sur Émilie et Yanis
    (les protocoles ont déjà 3 niveaux `niveaux[]` ; la sélection est automatique dans `bh()` :
@@ -25,10 +26,9 @@ points bloquants ou qui demandent une décision.
 
 ## 1. La planche encore refusée (je continue dessus au prochain tour)
 
-**4** (`production/a-refaire.json`, stratégie différente consignée pour chacune) :
-`battements-au-bord|homme` (2 essais : même jambe / jambe pliée → essai 3 vue zénithale),
-`mobilite-hanches-chevilles|homme` (20 cm d'eau → eau à la taille), `sprint-nager-a-fond|homme`
-(corps vertical → profil horizontal), `talons-fesses|homme` (genou devant → talon derrière). Les 3 refus de la relecture 26
+**3** (`production/a-refaire.json`, stratégie différente consignée) : `talons-fesses|homme` (essai 3 :
+vue ¾ arrière, talon droit puis gauche), `elliptique-mise-en-route|homme` (machine ancrée, même
+orientation aux 2 cases), `elliptique-fractionne|homme` (pédales opposées avant-haut / arrière-bas). Les 3 refus de la relecture 26
 (torsion allongée montrée ASSISE, soulevé de terre ordre inversé + angle qui change,
 transition face/profil) ont été **refaits et acceptés dans le même tour** (lot 50, 3 générations),
 et rowing assis + étirement a eu ses cases remises dans le bon sens (début = étirement).

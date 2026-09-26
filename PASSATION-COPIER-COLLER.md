@@ -1,4 +1,4 @@
-# 📋 BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT (état lot 52, 26 septembre 2026)
+# 📋 BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT (état lot 53, 26 septembre 2026)
 
 Tu reprends le projet de refonte des visuels de l'app JARVIS Fitness (Yanis & Émilie).
 Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Branche portant tout le travail :
@@ -15,14 +15,14 @@ branche dans `PASSATION-COPIER-COLLER.md`, `evolution/media/refonte-photo/PASSAT
 3. `evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md` (§65→67)
 4. `evolution/media/refonte-photo/livraison/LIVRAISON-README.md` + `livraison/manifeste-331.json`
 
-**État actuel :** **375 couples valides / 14 restants** (les 331 d'origine sont tous valides ET relus ;
+**État actuel :** **385 couples valides / 4 restants** (les 331 d'origine sont tous valides ET relus ;
 le 26/09 l'utilisateur a demandé les visuels piscine/cardio pour YANIS : 58 couples homme ajoutés,
-44 validés aux lots 51–52, n° 332–375). `production/a-refaire.json` : **4 reprises** avec stratégie
-différente consignée (battements-au-bord essai 3 vue zénithale jambes tendues ; mobilite-hanches-chevilles
-eau à la taille ; sprint-nager-a-fond profil horizontal ; talons-fesses genou vers le bas). Restent 9
-générations = lot 53 : ces 4 reprises + elliptique-mise-en-route, -fractionne, -recuperation-active,
--retour-au-calme, transition (homme sur l'elliptique, même salle que la femme lot03/lot50) PUIS le câblage
-« athlète = profil » pour piscine/elliptique (patch `bt` + constante `If`, voir VERIFICATION §68).
+54 validés aux lots 51–53, n° 332–385). `production/a-refaire.json` : **3 reprises** avec stratégie
+différente consignée (talons-fesses essai 3 en vue ¾ arrière talon droit puis gauche ; elliptique-mise-en-route
+machine ancrée même orientation aux 2 cases ; elliptique-fractionne pédales opposées). Lot 54 = ces 3
+générations puis `valide-couples.py` (talons-fesses-effort suivra en copie). **Câblage « athlète = profil »
+POSÉ** dans `overlay-331.py` (`__refonteSwap` + patch de `bt` + constante `If`, simulé sur les deux profils,
+VERIFICATION §70) : Yanis voit l'homme en piscine/elliptique, Émilie la femme.
 Après chaque lot : `verif-ids.py` → `refonte-sheet.py --athlete homme` → lecture des 2 cases →
 `tools/valide-couples.py --athlete homme --lot lotNN --acceptes …` (copies conformes + manifeste + etat +
 numéro PDF) → `pdf-revue-331.py` (numéros FIGÉS par `livraison/numerotation-pdf.json`) → `index-general.py`.

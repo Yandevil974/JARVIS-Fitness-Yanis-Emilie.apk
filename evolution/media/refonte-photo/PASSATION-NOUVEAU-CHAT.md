@@ -129,7 +129,7 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 
 ## 7. À faire au démarrage du nouveau chat
 
-0bis. **État lot 52 (26/09, plus récent)** : **375 valides / 14 restants** (lot 52 : 6/10 acceptées, 4 reprises
+0bis. **État lot 53 (26/09, plus récent)** : **385 valides / 4 restants**, câblage profil posé (§70) ; lot 52 : **375 valides / 14 restants** (lot 52 : 6/10 acceptées, 4 reprises
    motivées dans `a-refaire.json`, VERIFICATION §69) ; précédemment lot 51 : **363 valides / 26 restants** — demande utilisateur :
    visuels piscine/cardio pour YANIS (homme dans le bassin / sur l'elliptique). Lot 51 = 9/10 acceptées
    + 23 copies conformes (n° 332–363). Reste 15 générations (lot 52 piscine ×10 dont retry
