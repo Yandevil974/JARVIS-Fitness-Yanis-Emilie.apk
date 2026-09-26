@@ -1,0 +1,54 @@
+[
+  {
+    "numero": 126,
+    "roi": [
+      180,
+      195,
+      295,
+      260
+    ],
+    "size": [
+      608,
+      440
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 0,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 0,
+        "duree": 500
+      }
+    ],
+    "validation_utilisateur": false
+  },
+  {
+    "numero": 239,
+    "roi": [
+      160,
+      95,
+      250,
+      180
+    ],
+    "size": [
+      390,
+      440
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 1012,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 989,
+        "duree": 500
+      }
+    ],
+    "validation_utilisateur": false
+  }
+]

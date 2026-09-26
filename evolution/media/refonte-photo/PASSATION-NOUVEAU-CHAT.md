@@ -5,22 +5,21 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot60 — ÉTAPE2, propositions AVANT validation utilisateur
+## État prioritaire lot61 — ÉTAPE2, propositions AVANT validation utilisateur
 
-26 points ouverts, aucune proposition approuvée. **13 propositions isolées** :19/37/38/64/87/90/
-149/150/194/222/265/298/380. **13 sans proposition** :26/31/44/45/46/47/48/80/85/126/148/204/239.
-Lot60 :8 appels dont1 échec ; nouvelles propositions38 marteau assis,87 élévation latérale,265 porte.
-26/85/204 refusés ; stratégies dans a-refaire.json et registre retours. Réserves couleur/cadrage
-anciennes ET nouvelles encore ouvertes, comptage proposition ≠ correction achevée. VERIFICATION §77.
-Aucun GIF livré/PDF principal/manifeste/état/map remplacé. Comparatif final attend toutes reprises :
-UN PDF téléchargeable uniquement des exercices concernés, AVANT GAUCHE / APRÈS DROITE.
-Outil pdf-corrections-avant-apres.py bloque si incomplet ; utiliser GIF AVANT au commit figé.
+26 points ouverts, aucune approbation. **15 propositions** :19/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
+**11 sans proposition** :26/31/44/45/46/47/48/80/85/148/204.
+Lot61 :7 générations ;126 jackknife cadrage/tronc corrigés,239 mur orientation cohérente mais rotation faible.
+31 et Scott44/45 refusés (coude ou bras hors appui). Stratégies dans a-refaire.json et registre, §78.
+Réserves de couleur/cadrage/geste toujours ouvertes ; proposition ne veut pas dire techniquement prête.
+Aucun GIF livré/PDF principal/manifeste/état/map remplacé. Comparatif complet bloque sur11 manquants.
+Quand tout prêt : UN PDF uniquement exercices concernés, AVANT gauche/APRÈS droite, lien téléchargeable.
 
 ### Rappels utilisateur OBLIGATOIRES
-1. AVANT étape3, demander si le vert doit être identique au n°260 ; ATTENDRE réponse, pas de recoloration automatique.
-2. À construction application, rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie,
-   puis confirmer périmètre avant coder. Production/rappels-utilisateur.json fait foi.
-Zottman46/47/48 : format4 positions autorisé, pas les images. 148=homme à3 jambes,149/150 Pallof.
+1. AVANT étape3, demander choix vert identique260 ; attendre réponse, pas d’uniformisation automatique.
+2. À construction application, rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie ;
+   confirmer périmètre avant coder. Registre production/rappels-utilisateur.json.
+Zottman46/47/48 : format4 autorisé mais images toujours refusées.148 = Mountain climbers homme à3 jambes.
 
 ## 1. Où l'on en est (mesuré, pas estimé)
 

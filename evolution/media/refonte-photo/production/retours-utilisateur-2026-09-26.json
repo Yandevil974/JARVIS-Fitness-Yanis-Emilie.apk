@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 60,
+  "lot": 61,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -51,7 +51,7 @@
       "retour_utilisateur": "Curl concentration : tourner la main vers la droite au départ.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Rotation de la main de départ non obtenue. Prochain : gros plan schématique de supination avant planche complète.",
+      "detail": "Lot61 : main de départ supinée plus lisible, mais coude quitte la cuisse en haut ; édition ciblée essai2 ne rétablit pas contact. Refus. Prochain : posture penchée avant et cuisse plus haute sur schéma, produire d’abord la case haute avec coude réellement posé.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-concentration-homme.gif",
@@ -110,7 +110,7 @@
       "retour_utilisateur": "Curl Scott : bras de départ non posé sur le pupitre.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Bras initial encore à côté du pupitre, prise finale supinée. Vue latérale avec coude/pad explicitement guidés.",
+      "detail": "Lot61 schéma latéral puis élargissement pad : bras de départ encore à côté du pupitre ; pad change entre cases. Refus. Prochain : vue de face très légèrement surélevée, un pupitre large sous toute la largeur de bras, générer case étendue seule avant flexion.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
@@ -125,7 +125,7 @@
       "retour_utilisateur": "Tourner la paume au départ.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Image quasi inchangée, prise finale encore supinée. Refaire depuis schéma de main neutre.",
+      "detail": "Même correction de prise neutre/appui visée que44. Essais communs Scott lot61 refusés, aucune copie candidate effectuée. Stratégie suivante identique44 : contact bras-pupitre en case basse avant de produire case haute.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
@@ -280,13 +280,20 @@
       "nom": "Jackknife sur swiss ball",
       "retour_utilisateur": "Jackknife : homme à l’envers en position finale.",
       "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot59 essais1/2 : tronc face sol corrigé, mais pieds/ballon coupés en case1 puis zoom inégal entre les cases. Prochain : schéma large même échelle, mains et ballon entièrement dans le cadre.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot61 schéma large : tronc face sol dans les deux cases, mains fixes, genoux ramenés, ballon et pieds entièrement cadrés. Proposition non validée.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
         "sha256": "e066ca4c6da13a2b3afada04d4636f565484e62cc985042d1fae8acc49573e63",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 61,
+        "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/jackknife-sur-swiss-ball-homme.gif",
+        "sha256": "5c2fdfab8ac788be1f5b0af4bd22b995e86262050656be6149062ac0c5d88170",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -413,13 +420,20 @@
       "nom": "Bras tendu contre le mur",
       "retour_utilisateur": "Bras tendu ; tronc à l’envers par rapport aux pieds.",
       "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot59 essai1 bras croisé devant poitrine au lieu ouverture ; essai2 main absente du mur au départ et coude plié à arrivée. Prochain : schéma vue de dessus/3-4 arrière, main au mur même côté épaule, bras tendu deux cases, rotation douce corps/pieds ensemble.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot61 essai2 : bras tendu au mur, corps et pieds cohérents, pas de passage à une vue de dos. Rotation du tronc faible (tête tourne davantage) à apprécier ; proposition non validée.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
         "sha256": "0cf727335e61934175f92724c743916e8ff13d8cdb5817c4ed352a36132d2fd2",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 61,
+        "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/bras-tendu-contre-le-mur-homme.gif",
+        "sha256": "e195ea6f2c61d00b57f72e6128c1dfd83e95315f1b3cc2a47e8e4885f2ab97b0",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {

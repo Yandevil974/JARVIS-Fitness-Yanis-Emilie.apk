@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot60 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot61 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
@@ -27,18 +27,17 @@ La relecture interne antérieure ne remplace pas votre validation.
 
 ## 1. Retours PDF :26 points ouverts, accord utilisateur obligatoire
 
-**13 propositions non validées** :19/37/38/64/87/90/149/150/194/222/265/298/380.
-**13 sans proposition** :26/31/44/45/46/47/48/80/85/126/148/204/239.
-Lot60 :38 marteau assis,87 élévation latérale,265 encadrement porte proposés ;26/85/204 refusés.
-Des réserves techniques/style restent sur propositions existantes (dont194 cadrage) : elles ne sont
-pas toutes prêtes à intégrer. Aucun changement livré sans accord par numéro.
-PDF demandé QUAND TOUT prêt : seulement reprises, AVANT gauche / APRÈS droite, lien téléchargeable.
-Registre retours-utilisateur-2026-09-26.json et a-refaire.json. Vérification §77.
+15 propositions NON VALIDÉES :19/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
+11 sans proposition :26/31/44/45/46/47/48/80/85/148/204.
+Lot61 :126 et239 proposés (239 rotation faible à apprécier) ;31/44/45 toujours refusés (appui incorrect).
+Anciennes réserves techniques/style restent, notamment194 cadrage. Aucun remplacement sans accord.
+PDF final QUAND TOUT prêt : seulement reprises, AVANT gauche / APRÈS droite, lien téléchargeable.
+Registre retours-utilisateur-2026-09-26.json, a-refaire.json ; VERIFICATION §78.
 
-### Rappels aux étapes prévues
--AVANT étape3, demander si le vert des muscles doit être identique au n°260 ; attendre réponse.
--À construction application, rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie,
-  confirmer périmètre avant coder. Production/rappels-utilisateur.json reste non traité.
+### Rappels obligatoires
+-AVANT étape3 : demander choix vert identique260, attendre réponse.
+-À construction app : rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie,
+  confirmer périmètre avant coder. Rappels-utilisateur.json reste non traité.
 
 ## 1b. Chantiers ouverts (pas bloquants, planifiés)
 

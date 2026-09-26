@@ -3,7 +3,41 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — Lot60 — trois propositions supplémentaires, aucune validation (26/09/2026)
+## Dernière avancée — Lot61 — propositions126/239, refus Scott et concentration (26/09/2026)
+
+**7 générations** :4 initiales (Scott44 visé aussi45, concentration31, jackknife126, bras au mur239)
++3 reprises (Scott, concentration, mur). Prescriptions relues ; schémas indépendants pour Scott
+et jackknife. Aucun miroir/rotation globale. Aucun test ni intégration sur les GIF livrés.
+
+Propositions isolées NON VALIDÉES :
+-126 : cadre large guidé ; tronc face sol aux deux cases, mains fixées, genoux ramenés ;
+  ballon et pieds entièrement visibles. GIF608×440,2×500ms ; vert ROI strict0/0 (couleur à revoir).
+-239 : premier essai refusé pour changement face/profil/dos difficile à lire ; second essai
+  vue avant3/4 : main au mur et bras tendu, tronc/pieds cohérents. Réserve : rotation du tronc
+  peu marquée, tête tourne davantage ; à apprécier par utilisateur. GIF390×440,2×500ms,
+  vert ROI pectoral1012/989 pixels. Ne pas compter comme techniquement terminé sans revue.
+Contrôle `review/lot61-propositions-homme.jpg` ; mesures `propositions/lot61/mesures.json`.
+
+Refus :
+-31 : supination de départ mieux visible mais coude décollé de cuisse en haut ; reprise ciblée
+  ne rétablit pas contact. Prochain schéma buste penché, cuisse haute, produire d’abord case haute.
+-44/45 : Scott schéma latéral puis élargissement du pad ; bras initial toujours hors pupitre,
+  pad change entre cases. AUCUNE copie44→45 générée. Prochain vue face légèrement surélevée,
+  appui large sous tout le bras, fabriquer d’abord case basse correcte avant flexion.
+Stratégies mises dans a-refaire.json et registre retours, fichiers refusés conservés isolément.
+
+**15 propositions sur26 points, aucune approuvée** :19/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
+**11 sans proposition** :26/31/44/45/46/47/48/80/85/148/204. Les réserves techniques/couleur/cadrage
+anciennes restent ouvertes (notamment194 cadrage,222 profondeur,239 faible rotation).
+verif-ids OK4 identifiants, lecture pleine définition + contrôleGIF. Assertions livrés inchangés.
+Comparatif refuse11 manquants ; aucun PDF final créé. Pas de buildAPK.
+
+Toujours étape2. Quand toutes reprises prêtes : PDF des seuls exercices concernés, AVANT gauche /
+APRÈS droite et lien téléchargeable, accord utilisateur avant remplacement.
+Rappels : AVANT étape3 question vert identique260 ; à construction app rappel metcon + piscine
+nage fractionnée et/ou Aqua tabata pour Émilie, confirmer avant coder.
+
+## Étape précédente — Lot60 — trois propositions supplémentaires, aucune validation (26/09/2026)
 
 Workspace réinitialisé au commit initial : arbre propre, fetch/reset sur branche de session,
 reprise du dernier état distant **088ac98 (lot59)**, venv restauré. Aucun travail distant écrasé.
