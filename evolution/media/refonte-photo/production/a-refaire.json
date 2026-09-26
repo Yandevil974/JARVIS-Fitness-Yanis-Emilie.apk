@@ -2,38 +2,25 @@
  "aRefaire": [
   {
    "cle": "talons-fesses|homme",
-   "lot": 53,
-   "essai": 2,
-   "motif": "essai 2 (profil, eau taille) : talon a la fesse juste mais MEME jambe dans les 2 cases (quasi identiques)",
+   "lot": 54,
+   "essai": 4,
+   "motif": "Vue 3/4 arrière puis édition de la case seule : toujours même jambe levée. Deux tentatives lot54 refusées.",
    "prescription": "Sur place, joggez en ramenant les talons aux fesses ; buste droit, bras qui accompagnent",
    "reglesPrompt": [
-    "essai 3 : vue 3/4 ARRIERE (les talons montent vers la camera, plante du pied visible)",
-    "case 1 talon DROIT a la fesse, case 2 talon GAUCHE ; ecrire « the other foot is flat on the pool floor »",
-    "vert ischios aux 2 cases"
+    "Essai 5 : vue de DOS STRICTE symétrique (pas 3/4), deux silhouettes centrées, repères spatiaux gauche/droite de chaque case.",
+    "Produire séparément les phases si nécessaire : pied côté gauche image levé, puis pied côté droit image levé ; autre pied à plat ; aucun miroir global.",
+    "Vert ischios aux deux cases."
    ]
   },
   {
    "cle": "elliptique-fractionne|homme",
-   "lot": 53,
-   "essai": 1,
-   "motif": "les deux cases sont quasi identiques (meme pedale avant, meme genou haut) : mouvement inexistant",
+   "lot": 54,
+   "essai": 3,
+   "motif": "Profil pédales opposées puis édition ciblée de case : même jambe proche devant aux deux cases. Deux tentatives lot54 refusées.",
    "prescription": "Elliptique — fractionne : cadence haute, pousser fort sur les jambes, tirer franchement sur les bras, posture tenue",
    "reglesPrompt": [
-    "vue de PROFIL, machine identique et au meme endroit ; case 1 : jambe PROCHE camera devant et haute (genou plie), case 2 : jambe PROCHE camera tendue DERRIERE en bas, jambe lointaine devant",
-    "decrire les 2 positions des pedales comme opposees (avant-haut / arriere-bas)",
-    "vert cuisses + fessiers + mollets"
-   ]
-  },
-  {
-   "cle": "elliptique-mise-en-route|homme",
-   "lot": 53,
-   "essai": 1,
-   "motif": "la machine est en MIROIR entre les 2 cases (console devant puis derriere) : GIF qui saute",
-   "prescription": "Elliptique — mise en route : buste droit, epaules basses, pieds a plat, pousser/tirer les bras, allure facile",
-   "reglesPrompt": [
-    "ancrer la machine : « the machine stays EXACTLY in the same place and orientation in both panels: flywheel housing at the LEFT (rear), console and handlebars at the RIGHT (front), the man faces RIGHT »",
-    "seules les pedales et les membres changent",
-    "vert leger cuisses + mollets"
+    "Essai 4 : prendre la planche mise-en-route lot54 comme référence de PHASES correctes, conserver machine et poses alternées, exprimer effort soutenu par bras et posture maîtrisée.",
+    "Ne pas copier le GIF mise en route sans démonstration spécifique du fractionné ; vert cuisses fessiers mollets aux deux cases."
    ]
   }
  ],
@@ -75,7 +62,8 @@
   "rowing-assis-etirement|homme",
   "battements-au-bord|homme",
   "mobilite-hanches-chevilles|homme",
-  "sprint-nager-a-fond|homme"
+  "sprint-nager-a-fond|homme",
+  "elliptique-mise-en-route|homme"
  ],
  "historiqueRelecture26": {
   "date": "2026-09-26",

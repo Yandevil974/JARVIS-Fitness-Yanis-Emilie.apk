@@ -1926,6 +1926,11 @@
    "gif": "media/refonte-photo/gif/homme/transition-homme.gif",
    "sha256": "bf54d3bdd17514e250db70734293afbf739c1e4ba2f6f45732c09ec72a1e50c1",
    "surface": "cardio-elliptique"
+  },
+  "elliptique-mise-en-route|homme": {
+   "gif": "media/refonte-photo/gif/homme/elliptique-mise-en-route-homme.gif",
+   "sha256": "7acb83b71752c44cb6b0f6f20332b3abc4eb8ec4d8a9bc25dcd582104e699cae",
+   "surface": "cardio-elliptique"
   }
  }
 }

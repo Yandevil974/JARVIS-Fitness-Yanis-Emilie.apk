@@ -1,6 +1,6 @@
 {
  "version": "1.4.9-refonte",
- "total": 385,
+ "total": 386,
  "entrees": [
   {
    "cle": "ab-wheel-roulette|homme",
@@ -7227,6 +7227,23 @@
     440
    ],
    "planche": "planches/lot53/transition.png"
+  },
+  {
+   "cle": "elliptique-mise-en-route|homme",
+   "identifiant": "elliptique-mise-en-route",
+   "athlete": "homme",
+   "surface": "cardio-elliptique",
+   "noms": [
+    "Elliptique — mise en route"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elliptique-mise-en-route-homme.gif",
+   "gif_sha256": "7acb83b71752c44cb6b0f6f20332b3abc4eb8ec4d8a9bc25dcd582104e699cae",
+   "gif_frames": 2,
+   "gif_size": [
+    415,
+    440
+   ],
+   "planche": "planches/lot54/elliptique-mise-en-route.png"
   }
  ]
 }

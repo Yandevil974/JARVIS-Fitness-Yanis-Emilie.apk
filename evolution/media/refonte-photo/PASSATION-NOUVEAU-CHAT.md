@@ -5,13 +5,23 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
+## État prioritaire lot 54 (remplace les compteurs historiques ci-dessous)
+
+**386 / 389 valides, 3 restants.** Lot 54 : 6 générations, seule mise-en-route homme acceptée
+(n° 386, vert renforcé). Deux refus persistants : talons-fesses (essais 3 et 4), elliptique
+fractionné (essais 2 et 3). Lot 55 : stratégies dans `production/a-refaire.json` ; talons-fesses-effort
+suivra en copie conforme. PDF 130 pages / 386 exercices, numéros 1–385 inchangés.
+Build non signé contrôlé : 386 GIF, 712 fichiers web. Détail VERIFICATION §71.
+Session actuelle : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`, reprise au commit e96e51b
+sur l'ancienne branche 01a0dbe5. Les sections anciennes ci-dessous sont historiques.
+
 ## 1. Où l'on en est (mesuré, pas estimé)
 
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
-- Branche de travail **obligatoire** : `arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap`
+- Branche de travail **obligatoire** : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`
   (session Arena courante depuis le 26/09 ; contenu de `arena/01a0d6f5-…` repris au commit
   `11d1594` ; ne jamais pousser sur `main`, ne jamais créer d'autre branche). Si la plateforme
-  impose un AUTRE nom de branche au prochain chat : `git fetch origin arena/01a0dbe5-… &&
+  impose un AUTRE nom de branche au prochain chat : `git fetch origin arena/01a0dcad-… &&
   git reset --hard FETCH_HEAD` puis travailler et pousser sur la branche imposée, et mettre à
   jour ce fichier + `PASSATION-COPIER-COLLER.md` + `tools/pdf-revue-331.py` (page de titre).
 - Avancement : **331 / 331 animations validées — JALON : plus aucun exercice sans visuel** (`production/etat.json`, clé `chiffres`).
@@ -54,7 +64,7 @@ un échec compte aussi). L'utilisateur écrit « suite » pour enchaîner.
 ```bash
 cd /home/user/JARVIS-Fitness-Yanis-Emilie.apk
 git log --oneline -1                     # si HEAD != branche arena : récupérer
-git fetch origin arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD
+git fetch origin arena/01a0dcad-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD
 python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install -q pillow numpy pymupdf
 # chaîne APK (1 min, sans clé) :
 node evolution/media/tools/payloads-148.mjs && python3 evolution/media/tools/overlay-331.py

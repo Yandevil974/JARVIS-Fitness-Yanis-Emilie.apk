@@ -1,19 +1,19 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 53 — 385 valides / 4 restants, câblage profil posé
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 54 — 386 valides / 3 restants, câblage profil posé
 
 Liste demandée pour revue de votre côté. **331 / 331 visuels validés, 0 restant, et la
 relecture case par case est TERMINÉE (331 / 331 relus)**. Ce fichier ne contient que les
 points bloquants ou qui demandent une décision.
 
 > ⚠️ **Branche de travail changée par la plateforme** : cette session Arena est fixée sur
-> `arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap`. Le contenu de `arena/01a0d6f5-…` (commit
-> `11d1594`) y a été récupéré intégralement ; tout le travail est désormais poussé sur
-> **`01a0dbe5`** uniquement. L'ancienne branche n'est plus alimentée.
+> `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Le contenu de `arena/01a0dbe5-…` (commit
+> `e96e51b`) y a été récupéré intégralement ; tout le travail est désormais poussé sur
+> **`01a0dcad`** uniquement. L'ancienne branche n'est plus alimentée.
 
 ## 0. Feuille de route donnée par l'utilisateur le 26/09 (dans cet ordre, par étapes)
 
 1. **Piscine + cardio pour Yanis (images manquantes)** → EN COURS : 58 couples homme ajoutés,
-   **54 validés aux lots 51–53** (n° 332–385 du PDF), 4 restants = 3 générations (lot 54 : talons-fesses
-   essai 3, elliptique-mise-en-route, elliptique-fractionné). **Câblage « athlète = profil » POSÉ**
+   **55 validés aux lots 51–54** (n° 332–386 du PDF), 3 restants = 2 gestes (lot 55 : talons-fesses
+   essai 5 dos strict, elliptique-fractionné essai 4 avec référence de phases réussies). **Câblage « athlète = profil » POSÉ**
    (`overlay-331.py` : `__refonteSwap` + `bt` + constante `If`, simulé sur les deux profils, §70).
 2. Vérification du PDF par l'utilisateur → corrections par numéro (priorité 1 dès réception).
 3. Pouvoir **augmenter le niveau** du programme cardio (piscine et autres) sur Émilie et Yanis
@@ -24,14 +24,13 @@ points bloquants ou qui demandent une décision.
 5. Construire l'application (1.4.9 → clé de signature utilisateur).
 6. IA conversationnelle (en dernier).
 
-## 1. La planche encore refusée (je continue dessus au prochain tour)
+## 1. Deux gestes encore refusés
 
-**3** (`production/a-refaire.json`, stratégie différente consignée) : `talons-fesses|homme` (essai 3 :
-vue ¾ arrière, talon droit puis gauche), `elliptique-mise-en-route|homme` (machine ancrée, même
-orientation aux 2 cases), `elliptique-fractionne|homme` (pédales opposées avant-haut / arrière-bas). Les 3 refus de la relecture 26
-(torsion allongée montrée ASSISE, soulevé de terre ordre inversé + angle qui change,
-transition face/profil) ont été **refaits et acceptés dans le même tour** (lot 50, 3 générations),
-et rowing assis + étirement a eu ses cases remises dans le bon sens (début = étirement).
+`production/a-refaire.json` : talons-fesses homme (même jambe malgré vue ¾ arrière puis édition
+ciblée, essais 3–4) ; elliptique-fractionné homme (même pédale malgré édition ciblée, essais 2–3).
+Lot 55 : dos strict symétrique pour talons-fesses ; référence des phases réussies de mise en route
+pour le fractionné. Jamais de miroir global. La copie talons-fesses-effort attend sa source valide.
+Mise en route homme acceptée au lot 54, n° 386, vert corrigé et mesuré aux deux cases (§71).
 
 ## 1b. Chantiers ouverts (pas bloquants, planifiés)
 
@@ -39,7 +38,7 @@ et rowing assis + étirement a eu ses cases remises dans le bon sens (début = �
    (`production/style-a-reprendre.json` : 26 mesurés + 7 constatés à la lecture visuelle de ce
    tour). Le geste est juste partout ; reprise **uniquement sur votre décision** (§3.2).
 2. **Relecture cumulative : TERMINÉE** (feuilles `verification/relecture-26-01..06.jpg`).
-3. **Livraison finale** : il ne manque QUE votre clé (§3.6).
+3. **Livraison finale** : terminer les étapes utilisateur §0 avant signature (§3.6).
 
 ## 2. Blocs techniques récurrents du générateur d'images (constats, pas des excuses)
 
@@ -60,7 +59,7 @@ et rowing assis + étirement a eu ses cases remises dans le bon sens (début = �
    → garder tel quel, ou refaire avec barre prise large sur les épaules ?
 2. **Lot « style » des 33 GIF** dont une case n'a pas de vert lime : les régénérer
    (3 à 4 lots de 10) ou accepter l'état livré ?
-3. **PDF de revue** (`livraison/REVUE-331-exercices.pdf`, 122 pages, 363 exercices) : numéros
+3. **PDF de revue** (`livraison/REVUE-331-exercices.pdf`, 130 pages, 386 exercices) : numéros
    **figés** (1–331 inchangés ; Yanis piscine à partir du n° 332). Vos « coquille au n° X » sont
    traités en priorité 1 au prochain tour.
 4. **Essai téléphone de la 1.4.8** : les groupes de constats restent OUVERTS jusqu'à votre
@@ -68,7 +67,7 @@ et rowing assis + étirement a eu ses cases remises dans le bon sens (début = �
 5. **Souleve de terre — test 1RM** : un seul plateau par côté (charge peu crédible pour un 1RM),
    geste et ordre justes. → garder, ou refaire avec barre lourde ?
 6. **Clé de signature** : absente de cet espace de travail, je ne la fabrique ni ne la
-   publie. **Tout le reste est prêt** : `evolution/android/build-media-149.py --unsigned`
+   publie. **Chaîne technique prête, mais feuille de route §0 encore en cours** : `evolution/android/build-media-149.py --unsigned`
    reconstruit et contrôle l'APK 1.4.9 non signé en 3 s (103,8 Mo, 331 GIF vérifiés dans le zip) ;
    le mode `--real` signe v2+v3 avec l'identité durable `150e3846…` restaurée depuis le
    chiffré du dépôt par **votre clé de récupération** (`/tmp/rk.txt`, mode 0600), dépose
@@ -79,7 +78,7 @@ et rowing assis + étirement a eu ses cases remises dans le bon sens (début = �
 ## 4. Contraintes d'environnement (sans impact sur le contenu)
 
 - L'espace de travail se réinitialise souvent : restauration = `git fetch origin
-  arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD` + venv.
+  arena/01a0dcad-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD` + venv.
   **Zéro perte** : tout est poussé à chaque tour.
 - `.cache/` n'est pas persistant : web 1.4.8, payloads, APK non signé se régénèrent en
   moins d'une minute (`payloads-148.mjs` → `overlay-331.py` → `build-media-149.py --unsigned`).

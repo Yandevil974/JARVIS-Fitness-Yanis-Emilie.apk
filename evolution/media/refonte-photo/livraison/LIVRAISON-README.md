@@ -1,3 +1,11 @@
+# État actuel — lot 54, 26 septembre 2026
+
+**386 couples valides / 3 restants**, PDF 130 pages. Nouveau n° 386 : elliptique mise en route homme.
+APK non signé reconstruit : 386 GIF, 712 fichiers web ; signature non effectuée.
+Branche actuelle : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`.
+La suite utilisateur (relecture, niveau cardio, images chrono) précède la signature.
+Les sections ci-dessous documentent les livraisons historiques (331 d’origine).
+
 # Livraison finale — refonte photo des 331 animations (prête à signer)
 
 25 septembre 2026. **331 / 331 couples validés, 0 restant** : chaque exercice de l'app

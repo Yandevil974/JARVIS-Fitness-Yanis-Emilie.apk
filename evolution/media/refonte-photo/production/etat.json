@@ -4,21 +4,21 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 389,
-  "valides": 385,
-  "restants": 4,
+  "valides": 386,
+  "restants": 3,
   "valides_par_surface": {
-   "piscine": 36,
-   "cardio-elliptique": 8,
    "musculation": 203,
-   "tabata-au-sol": 36,
    "etirement": 29,
    "piscine-protocole": 63,
+   "piscine": 36,
+   "cardio-elliptique": 9,
    "tabata-aqua": 7,
+   "tabata-au-sol": 36,
    "echauffement": 3
   },
   "restants_par_surface": {
-   "cardio-elliptique": 2,
    "piscine-protocole": 1,
+   "cardio-elliptique": 1,
    "piscine": 1
   }
  },
@@ -167,6 +167,7 @@
   "elevations-laterales|homme",
   "elliptique-fractionne|femme",
   "elliptique-mise-en-route|femme",
+  "elliptique-mise-en-route|homme",
   "elliptique-recuperation-active|femme",
   "elliptique-recuperation-active|homme",
   "elliptique-retour-au-calme|femme",
@@ -411,7 +412,6 @@
  ],
  "restants": [
   "elliptique-fractionne|homme",
-  "elliptique-mise-en-route|homme",
   "talons-fesses-effort|homme",
   "talons-fesses|homme"
  ],

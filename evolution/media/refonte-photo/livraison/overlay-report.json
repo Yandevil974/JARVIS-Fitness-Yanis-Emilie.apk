@@ -1,5 +1,5 @@
 {
- "copies": 385,
+ "copies": 386,
  "overwrites": 146,
  "ambigus": 30,
  "payload_exo": 72,
@@ -26,6 +26,7 @@
   "echauffement-marche-aquatique",
   "echauffement-nage-douce",
   "echauffement-soigneux-nage-douce",
+  "elliptique-mise-en-route",
   "elliptique-recuperation-active",
   "elliptique-retour-au-calme",
   "etirements-au-bord",
@@ -69,6 +70,6 @@
   "tour-1-2-en-place",
   "transition"
  ],
- "media_files": 589,
- "bundle_size": 1184025
+ "media_files": 590,
+ "bundle_size": 1184095
 }

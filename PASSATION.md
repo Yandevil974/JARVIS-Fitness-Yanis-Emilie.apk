@@ -3,7 +3,41 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — lot 53 : 385 valides / 4 restants, câblage « athlète = profil » posé (26 septembre 2026)
+## Dernière avancée — Lot 54 — reprise de session, 386 valides / 3 restants (26/09/2026)
+
+Branche imposée `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`, reprise de l'ancienne
+`arena/01a0dbe5-jarvis-fitness-yanis-emilie-ap` au commit `e96e51b`. Pas de push sur main.
+
+**6 générations** : 3 planches initiales, 2 éditions ciblées de cases refusées,
+1 édition de couleur de la mise en route (vert initial trop faible : 413 / 8 pixels dans la ROI jambes).
+
+- **Elliptique mise en route homme ACCEPTÉE, n° 386** : deux phases alternées, même orientation
+  et même cadrage, pieds sur pédales. Le modèle a choisi un volant avant, mais identique dans les
+  deux cases (la prescription n'impose pas de volant arrière). Bande grise centrale retirée par PIL
+  avant édition couleur. Édition finale : gestes conservés et vert lime renforcé aux deux cases.
+- **Talons-fesses REFUSÉ** : essai 3 vue ¾ arrière, puis essai 4 édition d'une case seule : toujours
+  la même jambe levée. Pas de GIF intégré. Prochain essai : dos strict symétrique, repères gauche/droite
+  de chaque case, pas de miroir global.
+- **Elliptique fractionné REFUSÉ** : essai 2 pédales opposées puis essai 3 édition de la case seule :
+  même jambe proche devant. Pas de GIF intégré. Prochain essai : référence de phases de la mise en route
+  réussie, demande d'effort soutenu spécifique, pas de simple copie du GIF facile.
+- Refus conservés dans `planches/lot54/` et `verification/lot54-refus/` ; contrôle initial des trois
+  candidats `review/lot54-candidats.jpg` (ATTENTION : contient les refus et la mise en route avant renforcement).
+  Contrôle FINAL accepté : `review/lot54-homme.jpg`.
+
+Contrôles : `verif-ids.py` OK ; lecture des deux cases pleine définition ; GIF 415×440,
+2 frames de 500 ms, boucle 0 ; vert mesuré DANS LA ROI JAMBES : **2271 / 2689 pixels**
+(pas les plantes du décor), `verification/lot54-mesures.json`.
+`valide-couples.py` : 1 ajout, aucune copie. Les 385 numéros antérieurs sont inchangés (assertion).
+PDF **130 pages / 386 exercices**, index 386, manifeste/état/map à jour.
+Chaîne payloads → overlay → build --unsigned OK : **712 fichiers web, 386 GIF SHA vérifiés**,
+9 DEX identiques, contrôle chemins/hook ; APK non signé 114288643 octets. Aucun APK signé livré.
+
+Reste **3 couples / 2 gestes** : talons-fesses homme + copie talons-fesses-effort homme,
+elliptique-fractionne homme. `a-refaire.json` mis à jour avec stratégies différentes pour le lot 55.
+Les 33 cas de style historiques restent en attente de décision utilisateur.
+
+## Étape précédente — lot 53 : 385 valides / 4 restants, câblage « athlète = profil » posé (26 septembre 2026)
 
 - Lot 53 : 6/9 acceptées (battements au bord en vue zénithale, mobilité hanches, sprint crawl, elliptique
   récup active, elliptique retour au calme, transition homme) + 4 copies → n° 376–385 ; 3 refus motivés
