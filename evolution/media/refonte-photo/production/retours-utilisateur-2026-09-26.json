@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 61,
+  "lot": 62,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -36,7 +36,7 @@
       "retour_utilisateur": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Lot60 : pieds/cadrage larges, mais inscription ABS indésirable, câble indépendant non connecté à corde et faible flexion. Refus. Prochain : générer depuis schéma unique câble haut→corde derrière tête, sans photo erronée en référence.",
+      "detail": "Lot62 : tentative station derrière à droite échouée ; homme reste tourné vers machine, mains/corde reviennent devant tête à arrivée, éloignement insuffisant. Refus. Prochain : schéma des points tête/mains/poulie et câble unique, construire la case fléchie seule avant assemblage.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
@@ -50,13 +50,20 @@
       "nom": "Curl concentration",
       "retour_utilisateur": "Curl concentration : tourner la main vers la droite au départ.",
       "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot61 : main de départ supinée plus lisible, mais coude quitte la cuisse en haut ; édition ciblée essai2 ne rétablit pas contact. Refus. Prochain : posture penchée avant et cuisse plus haute sur schéma, produire d’abord la case haute avec coude réellement posé.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot62 : deux positions séparées, case haute produite d’abord puis extension depuis cette référence. Buste penché, paume de départ en supination plus lisible, coude proche de l’intérieur cuisse. Contact précis coude-cuisse et direction paume à apprécier dans la revue utilisateur ; proposition non validée.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-concentration-homme.gif",
         "sha256": "b18b490f9567c8dd6933f0385259d6db464d965cc5aa16534171781dbcd33da8",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 62,
+        "gif": "evolution/media/refonte-photo/propositions/lot62/gif/homme/curl-concentration-homme.gif",
+        "sha256": "3825c9b3d9ff3cba1d08165860467d08d433c17a1afd9d577fdfa24a09a73755",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -110,7 +117,7 @@
       "retour_utilisateur": "Curl Scott : bras de départ non posé sur le pupitre.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Lot61 schéma latéral puis élargissement pad : bras de départ encore à côté du pupitre ; pad change entre cases. Refus. Prochain : vue de face très légèrement surélevée, un pupitre large sous toute la largeur de bras, générer case étendue seule avant flexion.",
+      "detail": "Lot62 : case basse seule vue de face surélevée rétablit appui sur pupitre ; mais main reste SUPINÉE au lieu de neutre. Édition textuelle puis guide peint local échouent à tourner la prise. Pas de case haute ni GIF candidat. Prochain : référence photo recadrée de la prise marteau correcte37 (géométrie main seule), plutôt que refaire tout le corps.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
@@ -125,7 +132,7 @@
       "retour_utilisateur": "Tourner la paume au départ.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Même correction de prise neutre/appui visée que44. Essais communs Scott lot61 refusés, aucune copie candidate effectuée. Stratégie suivante identique44 : contact bras-pupitre en case basse avant de produire case haute.",
+      "detail": "Scott commun44/45 : appui bas amélioré, mais paume encore supinée. Aucune copie effectuée ; reprendre avec référence de main neutre issue du37, puis produire la case haute seulement si prise basse correcte.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
@@ -384,7 +391,7 @@
       "retour_utilisateur": "À refaire.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Lot60 essai1 : prise encore pronation et menton sous barre ; essai2 échec technique sans image. Prochain : référence de mains supination seule + schéma menton au-dessus barre, photo de profil3/4, pas référence du faux grip.",
+      "detail": "Lot62 case haute seule : menton atteint la barre, mais orientation underhand non démontrée clairement (paumes visibles vers caméra). Refus, aucun GIF. Prochain : gros plan de la prise supination indépendante comme contrainte visuelle avant de générer corps suspendu.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",

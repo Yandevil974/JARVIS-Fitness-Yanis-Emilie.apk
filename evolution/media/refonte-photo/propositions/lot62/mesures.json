@@ -1,0 +1,26 @@
+{
+  "numero": 31,
+  "roi": [
+    60,
+    145,
+    124,
+    270
+  ],
+  "size": [
+    262,
+    440
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "duree": 500,
+      "vert_roi_biceps": 173
+    },
+    {
+      "frame": 2,
+      "duree": 500,
+      "vert_roi_biceps": 229
+    }
+  ],
+  "validation_utilisateur": false
+}

@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot61 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot62 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
@@ -27,12 +27,14 @@ La relecture interne antérieure ne remplace pas votre validation.
 
 ## 1. Retours PDF :26 points ouverts, accord utilisateur obligatoire
 
-15 propositions NON VALIDÉES :19/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
-11 sans proposition :26/31/44/45/46/47/48/80/85/148/204.
-Lot61 :126 et239 proposés (239 rotation faible à apprécier) ;31/44/45 toujours refusés (appui incorrect).
-Anciennes réserves techniques/style restent, notamment194 cadrage. Aucun remplacement sans accord.
-PDF final QUAND TOUT prêt : seulement reprises, AVANT gauche / APRÈS droite, lien téléchargeable.
-Registre retours-utilisateur-2026-09-26.json, a-refaire.json ; VERIFICATION §78.
+**16 propositions sur26 points, aucune approuvée** :19/31/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
+**10 sans proposition** :26/44/45/46/47/48/80/85/148/204.
+Lot62 :7 générations,1 nouveau candidat31 isolé. Proposition ≠ correction validée/techniquement prête.
+31 : deux positions séparées, buste penché, main supinée ; contact coude-cuisse à apprécier.
+44/45 : appui amélioré mais prise encore supinée, refus des3 essais.26 corde devant tête fin ;
+204 sous-prise pas clairement démontrée : refus. Stratégies différentes consignées dans registre.
+Réserves anciennes maintenues. Aucun remplacement sans accord. PDF final QUAND TOUT prêt :
+seulement reprises, AVANT gauche/APRÈS droite, lien téléchargeable. VERIFICATION §79.
 
 ### Rappels obligatoires
 -AVANT étape3 : demander choix vert identique260, attendre réponse.

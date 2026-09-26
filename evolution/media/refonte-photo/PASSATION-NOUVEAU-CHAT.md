@@ -5,15 +5,16 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot61 — ÉTAPE2, propositions AVANT validation utilisateur
+## État prioritaire lot62 — ÉTAPE2, propositions AVANT validation utilisateur
 
-26 points ouverts, aucune approbation. **15 propositions** :19/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
-**11 sans proposition** :26/31/44/45/46/47/48/80/85/148/204.
-Lot61 :7 générations ;126 jackknife cadrage/tronc corrigés,239 mur orientation cohérente mais rotation faible.
-31 et Scott44/45 refusés (coude ou bras hors appui). Stratégies dans a-refaire.json et registre, §78.
-Réserves de couleur/cadrage/geste toujours ouvertes ; proposition ne veut pas dire techniquement prête.
-Aucun GIF livré/PDF principal/manifeste/état/map remplacé. Comparatif complet bloque sur11 manquants.
-Quand tout prêt : UN PDF uniquement exercices concernés, AVANT gauche/APRÈS droite, lien téléchargeable.
+**16 propositions sur26 points, aucune approuvée** :19/31/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
+**10 sans proposition** :26/44/45/46/47/48/80/85/148/204.
+Lot62 :7 générations,1 nouveau candidat31 isolé. Proposition ≠ correction validée/techniquement prête.
+31 paume départ plus lisible, buste penché ; contact coude-cuisse à apprécier.44/45 prise encore
+supinée malgré appui meilleur ;26 corde devant tête fin ;204 sous-prise pas démontrée : refus.
+Prochaines stratégies dans registre retours/a-refaire.json ; détail VERIFICATION §79.
+Aucun GIF livré/PDF principal/manifeste/état/map remplacé. Comparatif bloque sur10 manquants.
+Quand tout prêt : PDF uniquement reprises, AVANT gauche/APRÈS droite, lien téléchargeable.
 
 ### Rappels utilisateur OBLIGATOIRES
 1. AVANT étape3, demander choix vert identique260 ; attendre réponse, pas d’uniformisation automatique.

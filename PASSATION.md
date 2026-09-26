@@ -3,7 +3,39 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — Lot61 — propositions126/239, refus Scott et concentration (26/09/2026)
+## Dernière avancée — Lot62 — concentration proposé, prises Scott toujours refusées (26/09/2026)
+
+**7 générations, aucune erreur technique** :3 Scott (case basse, édition neutre, édition guide
+local peint),2 concentration (case haute puis basse),1 chin-up case haute,1 crunch double case.
+Lecture pleine définition ; aucun miroir/rotation globale. Propositions isolées, pas de buildAPK.
+
+- **31 concentration proposé** : case haute produite avec buste penché, puis case basse depuis cette
+  référence. Paume de départ en supination plus lisible. Contact précis coude-cuisse et direction
+  main à apprécier à la revue, PAS validation automatique. Planche pleine définition1606×1334,
+  GIF262×440,2×500ms,recalage(-4,-4). Vert ROI biceps[60,145,124,270] :173/229 pixels stricts,
+  mesuré hors plantes ; ceci ne valide ni couleur ni anatomie.
+- **44/45 refusés** : appui bras-pupitre rétabli en case basse frontale surélevée, mais paume reste
+  supinée. Édition neutre puis guide local haltère vertical ignorés. Pas de case haute ni copie45.
+  Prochain essai : référence de main seule recadrée depuis37, pas une nouvelle édition identique.
+- **204 refusé** : menton atteint barre mais sous-prise non démontrée clairement ; aucune phase basse.
+  Prochain : référence de prise supination lisible, vérifier mains avant produire corps complet.
+- **26 refusé** : orientation homme/machine n’obéit pas au plan ; corde/mains devant tête en fin,
+  éloignement insuffisant. Prochain : schéma tête/mains/poulie/câble unique, case fléchie seule.
+
+Registres mis à jour. Contrôle review/lot62-proposition-concentration.jpg, sources et mesures
+propositions/lot62/. Les essais refusés n’ont AUCUN GIF candidat, ne pas les intégrer.
+**16 propositions sur26 points, aucune approuvée** :19/31/37/38/64/87/90/126/149/150/194/222/239/265/298/380.
+**10 sans proposition** :26/44/45/46/47/48/80/85/148/204.
+Lot62 :7 générations,1 nouveau candidat31 isolé. Proposition ≠ correction validée/techniquement prête.
+Réserves antérieures maintenues (194 cadrage,222/298 profondeur eau,239 faible rotation, couleurs).
+verif-ids OK2 planches ; GIF contrôlé. Assertions : PDF/manifeste/numéros/état/GIF livrés inchangés.
+Comparatif complet refuse10 manquants, aucun PDF final créé. Test SHA/frames des16 propositions.
+
+Toujours ÉTAPE2. Quand TOUT prêt : PDF uniquement reprises, AVANT gauche/APRÈS droite, lien chat.
+AVANT étape3 : demander choix vert identique260. À construction app : rappeler metcon + piscine
+nage fractionnée et/ou Aqua Tabata pour Émilie ; confirmer avant coder. Aucun rappel considéré traité.
+
+## Étape précédente — Lot61 — propositions126/239, refus Scott et concentration (26/09/2026)
 
 **7 générations** :4 initiales (Scott44 visé aussi45, concentration31, jackknife126, bras au mur239)
 +3 reprises (Scott, concentration, mur). Prescriptions relues ; schémas indépendants pour Scott
