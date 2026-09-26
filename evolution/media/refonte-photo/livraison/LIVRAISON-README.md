@@ -1,11 +1,13 @@
-# État actuel — lot 55, 26 septembre 2026
+# État actuel — lot 56 : ÉTAPE 2, relecture utilisateur
 
-**388 couples valides / 1 restant**, PDF 131 pages. N° 387 talons-fesses homme,
-n° 388 talons-fesses-effort homme (copie conforme). Reste elliptique-fractionné homme.
-APK non signé contrôlé : 388 GIF, 714 fichiers web ; aucune signature effectuée.
+26 septembre 2026. **389 / 389 couples validés, 0 restant.** Dernier n°389 : elliptique-fractionné
+homme. PDF REVUE-331-exercices.pdf : **131 pages / 389 exercices**, numéros 1–388 inchangés.
+Les 58 ajouts homme piscine/cardio sont terminés. Attendre corrections utilisateur par NUMÉRO.
+Contrôle final : review/lot56-homme.jpg. État, manifeste, numérotation, index et map à jour.
+APK NON SIGNÉ : 389 GIF contrôlés SHA, 715 fichiers web ; pas de livraison signée.
+Suite : revue PDF → réglage niveau cardio à concevoir/valider → images chrono → signature → IA.
 Branche : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`.
-La suite utilisateur (relecture, niveau cardio, images chrono) précède la signature.
-Les sections suivantes documentent les livraisons historiques.
+Les sections suivantes sont historiques.
 
 # Livraison finale — refonte photo des 331 animations (prête à signer)
 

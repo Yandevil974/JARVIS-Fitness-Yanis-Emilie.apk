@@ -3,7 +3,43 @@
 > 🚩 **Reprise dans un nouveau chat** : suivre `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`
 > (état mesuré, outils, recette de prompt, pièges, prochaines étapes).
 
-## Dernière avancée — Lot 55 — talons-fesses résolu, 388 valides / 1 restant (26/09/2026)
+## Dernière avancée — Lot 56 — ÉTAPE 1 TERMINÉE, passage à l’ÉTAPE 2 (26/09/2026)
+
+**389 / 389 couples validés, 0 restant.** Les 58 ajouts homme piscine/cardio sont terminés.
+Elliptique-fractionné homme **n° 389**. L'utilisateur demande explicitement d'être prévenu
+au passage à l'étape 2 : annoncé dans le chat, PDF présenté pour SA relecture.
+
+Workspace réinitialisé au début du tour (HEAD d721868) : arbre propre, récupération de c2a56c4
+sur la branche de session `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`, venv réinstallé.
+
+**4 générations** :
+- Phase A, maître seul face stricte : pédalage lisible mais vert sur short et non muscles → refus.
+- Phase B, édition de A : noir/vert corrigés, mais même jambe → refus comme seconde phase.
+- Phase C, maître + schéma de pose indépendant : genou côté gauche image haut, autre pied bas,
+  deux mains aux poignées, quadriceps/mollets verts, machine de face → acceptée comme début.
+- Phase D, C + schéma de pose opposé : genou côté droit image haut, autre pied bas ; même machine,
+  même orientation, même décor → acceptée comme fin. Seul le schéma abstrait de guidage a été
+  symétrisé ; AUCUNE photo/athlète/machine/décor n'a été retourné en miroir.
+Assemblage des photos C+D par PIL, lecture des deux cases pleine définition puis contrôle GIF.
+Les bras restent sur les poignées ; l'alternance est démontrée par les jambes et pédales.
+
+GIF 292×440, deux frames 500 ms, boucle infinie. Vert ROI jambes **638 / 319 pixels**,
+différence moyenne ROI 43,30 niveaux RGB. Mesures `verification/lot56-mesures.json`.
+`verif-ids.py` OK ; 389 SHA du manifeste contrôlés ; état 389/0 ; a-refaire.json vide
+(ancienne reprise conservée en historique). Contrôle accepté `review/lot56-homme.jpg`.
+PDF **131 pages / 389 exercices**, les 388 numéros antérieurs inchangés (assertion).
+Index 389 ; manifeste/état/map mis à jour. Simulation du hook extrait du bundle : 6 résolutions
+(talons, talons effort, elliptique fractionné × profils Yanis/Émilie) correctes, rapport
+`verification/lot56-profils.json`.
+
+Chaîne payloads → overlay → build --unsigned OK : **389 GIF SHA, 715 fichiers web, 9 DEX identiques**,
+aucun média manquant, APK non signé 114574436 octets. Pas d'APK signé livré.
+
+**Prochaine action = ÉTAPE 2** : attendre les retours utilisateur par NUMÉRO du PDF, corriger en
+priorité sans renumérotation. Ne pas lancer étape 3 (réglage niveau cardio) avant fin de sa revue
+ou instruction explicite. 33 cas style et autres décisions de CE-QUI-COINCE §3 toujours ouverts.
+
+## Étape précédente — Lot 55 — talons-fesses résolu, 388 valides / 1 restant (26/09/2026)
 
 **7 générations**, sans miroir global :
 1. Talons-fesses essai 5, dos strict : alternance juste, mais second talon trop bas.

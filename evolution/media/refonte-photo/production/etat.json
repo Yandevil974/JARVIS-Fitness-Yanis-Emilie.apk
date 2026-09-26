@@ -4,21 +4,19 @@
  "noteVariantes": "quand l'application distingue deux variantes du meme geste (ex. developpe halteres prise neutre vs neutre->pronation), les deux recoivent DEUX visuels differents : ici neutre = pallier (deltoides), neutre->pronation = tete (deltoides).",
  "chiffres": {
   "total": 389,
-  "valides": 388,
-  "restants": 1,
+  "valides": 389,
+  "restants": 0,
   "valides_par_surface": {
-   "piscine-protocole": 64,
-   "musculation": 203,
    "piscine": 37,
-   "tabata-au-sol": 36,
+   "musculation": 203,
    "etirement": 29,
-   "tabata-aqua": 7,
-   "cardio-elliptique": 9,
-   "echauffement": 3
+   "piscine-protocole": 64,
+   "tabata-au-sol": 36,
+   "cardio-elliptique": 10,
+   "echauffement": 3,
+   "tabata-aqua": 7
   },
-  "restants_par_surface": {
-   "cardio-elliptique": 1
-  }
+  "restants_par_surface": {}
  },
  "valides": [
   "ab-wheel-roulette|homme",
@@ -164,6 +162,7 @@
   "elevations-laterales-lean-away|homme",
   "elevations-laterales|homme",
   "elliptique-fractionne|femme",
+  "elliptique-fractionne|homme",
   "elliptique-mise-en-route|femme",
   "elliptique-mise-en-route|homme",
   "elliptique-recuperation-active|femme",
@@ -410,9 +409,7 @@
   "une-jambe-tendue-une-pliee|homme",
   "wood-chop-poulie-haute|homme"
  ],
- "restants": [
-  "elliptique-fractionne|homme"
- ],
+ "restants": [],
  "relecture": {
   "regle": "chaque couple valide relu case par case en pleine definition (feuilles de 3) ou lu a la production (lots >= 17)",
   "derniere": "relecture-26 (2026-09-26, 16 couples : 12 conformes, 1 cases echangees, 3 refaits lot50)",

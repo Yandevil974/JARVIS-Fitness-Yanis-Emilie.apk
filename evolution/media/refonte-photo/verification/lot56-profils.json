@@ -1,0 +1,32 @@
+[
+  {
+    "profile": "yanis",
+    "id": "elliptique-fractionne",
+    "path": "/media/refonte-elliptique-fractionne-homme.gif"
+  },
+  {
+    "profile": "yanis",
+    "id": "talons-fesses",
+    "path": "/media/refonte-talons-fesses-homme.gif"
+  },
+  {
+    "profile": "yanis",
+    "id": "talons-fesses-effort",
+    "path": "/media/refonte-talons-fesses-effort-homme.gif"
+  },
+  {
+    "profile": "emilie",
+    "id": "elliptique-fractionne",
+    "path": "/media/refonte-elliptique-fractionne-femme.gif"
+  },
+  {
+    "profile": "emilie",
+    "id": "talons-fesses",
+    "path": "/media/refonte-talons-fesses-femme.gif"
+  },
+  {
+    "profile": "emilie",
+    "id": "talons-fesses-effort",
+    "path": "/media/refonte-talons-fesses-effort-femme.gif"
+  }
+]

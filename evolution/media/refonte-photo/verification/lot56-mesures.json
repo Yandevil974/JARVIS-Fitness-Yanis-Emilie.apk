@@ -1,0 +1,28 @@
+{
+  "frames": 2,
+  "size": [
+    292,
+    440
+  ],
+  "loop": 0,
+  "mesures": [
+    {
+      "frame": 1,
+      "duration": 500,
+      "vert_jambes_roi": 638
+    },
+    {
+      "frame": 2,
+      "duration": 500,
+      "vert_jambes_roi": 319
+    }
+  ],
+  "roi_jambes_xyxy": [
+    90,
+    195,
+    190,
+    360
+  ],
+  "difference_moyenne_roi_jambes": 43.30145454545455,
+  "numeros_anterieurs_inchanges": 388
+}

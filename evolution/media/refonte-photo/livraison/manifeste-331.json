@@ -1,6 +1,6 @@
 {
  "version": "1.4.9-refonte",
- "total": 388,
+ "total": 389,
  "entrees": [
   {
    "cle": "ab-wheel-roulette|homme",
@@ -7286,6 +7286,23 @@
     440
    ],
    "planche": "planches/lot55/talons-fesses.png"
+  },
+  {
+   "cle": "elliptique-fractionne|homme",
+   "identifiant": "elliptique-fractionne",
+   "athlete": "homme",
+   "surface": "cardio-elliptique",
+   "noms": [
+    "Elliptique — fractionné"
+   ],
+   "gif": "media/refonte-photo/gif/homme/elliptique-fractionne-homme.gif",
+   "gif_sha256": "d003581431ffef91e867febac6d5080f9d33094b0d41f81f5af8a82228728d5b",
+   "gif_frames": 2,
+   "gif_size": [
+    292,
+    440
+   ],
+   "planche": "planches/lot56/elliptique-fractionne.png"
   }
  ]
 }

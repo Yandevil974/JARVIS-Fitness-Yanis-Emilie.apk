@@ -5,16 +5,16 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot 55 (remplace les compteurs historiques ci-dessous)
+## État prioritaire lot 56 — ÉTAPE 2 : relecture utilisateur du PDF
 
-**388 / 389 valides, 1 restant : elliptique-fractionne homme.** Talons-fesses résolu (dos strict +
-guide de pose local puis rendu photo), n° 387 et copie effort n° 388. Lot55 : 7 générations.
-Fractionné essais 4–7 refusés : même phase malgré changement de vue et guides ; lot56 essai8
-sans photo de pose précédente (maître + schéma indépendant), détail dans a-refaire.json et §72.
-PDF 131 pages / 388 exercices, numéros 1–386 inchangés. Contrôle review/lot55-homme.jpg.
-Build non signé : 388 GIF, 714 fichiers web. payloads-148.mjs corrigé : toujours lire l'APK original,
-jamais le cache modifié ; deux exécutions successives produisent mêmes SHA payloads/bundle.
-Branche actuelle : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`.
+**389 / 389 validés, 0 restant. ÉTAPE 1 TERMINÉE.** Les 58 visuels homme piscine/cardio sont
+validés, dernier n°389 elliptique-fractionné (face stricte + schémas indépendants, §73).
+PDF 131 pages / 389 exercices, numéros stables ; a-refaire.json VIDE.
+L'utilisateur a demandé d'être prévenu au passage à l'étape 2 : annoncé, PDF présenté.
+Attendre ses corrections par NUMÉRO ; ne pas commencer niveau cardio (étape3) sans instruction.
+33 cas style restent en attente de sa décision. Contrôle review/lot56-homme.jpg.
+Build NON SIGNÉ contrôlé : 389 GIF, 715 fichiers web, 9 DEX identiques. Hook profils testé sur
+les 3 derniers ajouts homme/femme (6 résolutions OK). Branche 01a0dcad inchangée.
 
 ## 1. Où l'on en est (mesuré, pas estimé)
 

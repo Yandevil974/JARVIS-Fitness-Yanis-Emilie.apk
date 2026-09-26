@@ -1,18 +1,5 @@
 {
- "aRefaire": [
-  {
-   "cle": "elliptique-fractionne|homme",
-   "lot": 55,
-   "essai": 7,
-   "motif": "Essai4 référence mise-en-route : même phase + main libre derrière dos ; essai5 vue 3/4 frontale : même jambe ; essai6 guide rose superposé puis essai7 ancienne pose effacée et guide peint : toujours même jambe proche basse. Tous refusés.",
-   "prescription": "Elliptique — fractionne : cadence haute, pousser fort sur les jambes, tirer franchement sur les bras, posture tenue",
-   "reglesPrompt": [
-    "Essai8 : générer une NOUVELLE phase seule depuis référence maître + schéma indépendant de machine, sans photo de pose précédente (ancrage trop fort). Vue de FACE STRICTE et genou côté gauche image haut, autre jambe tendue basse.",
-    "Puis créer la phase opposée avec le même modèle de machine ; contrôler décor et machine avant assemblage, pas de miroir global.",
-    "Deux mains sur poignées mobiles, pieds à plat sur pédales opposées, vert cuisses fessiers mollets aux deux cases."
-   ]
-  }
- ],
+ "aRefaire": [],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",
@@ -53,7 +40,8 @@
   "mobilite-hanches-chevilles|homme",
   "sprint-nager-a-fond|homme",
   "elliptique-mise-en-route|homme",
-  "talons-fesses|homme"
+  "talons-fesses|homme",
+  "elliptique-fractionne|homme"
  ],
  "historiqueRelecture26": {
   "date": "2026-09-26",
@@ -62,5 +50,19 @@
   "souleve-de-terre|homme": "REFUSE a la relecture (lot01 : ordre inverse gauche=verrouillage, angle face puis 3/4, vert sur quadriceps pour cible ischios) -> refait lot50 : profil strict, gauche=barre au sol hanches hautes, droite=verrouillage, vert ischios+fessiers aux deux cases ; ACCEPTE",
   "transition|femme": "REFUSE a la relecture (lot03 : case 1 de face, case 2 de profil = GIF qui saute) -> refait lot50 : profil aux deux cases pres de l elliptique, boire puis marcher (texte app : boire, se secher, rejoindre le bassin sans trainer) ; ACCEPTE",
   "rowing-assis-etirement|homme": "cases INVERSEES a la relecture (gauche=poignee au ventre=fin, droite=etirement=debut) -> cases echangees par PIL (planche lot50, aucune generation) ; ACCEPTE"
- }
+ },
+ "historiqueLot56": [
+  {
+   "cle": "elliptique-fractionne|homme",
+   "lot": 55,
+   "essai": 7,
+   "motif": "Essai4 référence mise-en-route : même phase + main libre derrière dos ; essai5 vue 3/4 frontale : même jambe ; essai6 guide rose superposé puis essai7 ancienne pose effacée et guide peint : toujours même jambe proche basse. Tous refusés.",
+   "prescription": "Elliptique — fractionne : cadence haute, pousser fort sur les jambes, tirer franchement sur les bras, posture tenue",
+   "reglesPrompt": [
+    "Essai8 : générer une NOUVELLE phase seule depuis référence maître + schéma indépendant de machine, sans photo de pose précédente (ancrage trop fort). Vue de FACE STRICTE et genou côté gauche image haut, autre jambe tendue basse.",
+    "Puis créer la phase opposée avec le même modèle de machine ; contrôler décor et machine avant assemblage, pas de miroir global.",
+    "Deux mains sur poignées mobiles, pieds à plat sur pédales opposées, vert cuisses fessiers mollets aux deux cases."
+   ]
+  }
+ ]
 }

@@ -1941,6 +1941,11 @@
    "gif": "media/refonte-photo/gif/homme/talons-fesses-effort-homme.gif",
    "sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
    "surface": "piscine-protocole"
+  },
+  "elliptique-fractionne|homme": {
+   "gif": "media/refonte-photo/gif/homme/elliptique-fractionne-homme.gif",
+   "sha256": "d003581431ffef91e867febac6d5080f9d33094b0d41f81f5af8a82228728d5b",
+   "surface": "cardio-elliptique"
   }
  }
 }
