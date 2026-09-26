@@ -1,0 +1,83 @@
+[
+  {
+    "numero": 19,
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/femme/bulgarian-split-squat-halteres-femme.gif",
+    "size": [
+      381,
+      440
+    ],
+    "roi": [
+      65,
+      170,
+      200,
+      340
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 0,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 0,
+        "duree": 500
+      }
+    ],
+    "non_valide": true
+  },
+  {
+    "numero": 37,
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/curl-marteau-homme.gif",
+    "size": [
+      454,
+      440
+    ],
+    "roi": [
+      172,
+      123,
+      300,
+      260
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 14,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 3,
+        "duree": 500
+      }
+    ],
+    "non_valide": true
+  },
+  {
+    "numero": 64,
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
+    "size": [
+      362,
+      440
+    ],
+    "roi": [
+      80,
+      160,
+      180,
+      275
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 184,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 74,
+        "duree": 500
+      }
+    ],
+    "non_valide": true
+  }
+]

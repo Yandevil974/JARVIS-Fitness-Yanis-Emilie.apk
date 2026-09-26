@@ -5,16 +5,19 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot 56 — ÉTAPE 2 : relecture utilisateur du PDF
+## État prioritaire lot57 — ÉTAPE2, corrections AVANT validation utilisateur
 
-**389 / 389 validés, 0 restant. ÉTAPE 1 TERMINÉE.** Les 58 visuels homme piscine/cardio sont
-validés, dernier n°389 elliptique-fractionné (face stricte + schémas indépendants, §73).
-PDF 131 pages / 389 exercices, numéros stables ; a-refaire.json VIDE.
-L'utilisateur a demandé d'être prévenu au passage à l'étape 2 : annoncé, PDF présenté.
-Attendre ses corrections par NUMÉRO ; ne pas commencer niveau cardio (étape3) sans instruction.
-33 cas style restent en attente de sa décision. Contrôle review/lot56-homme.jpg.
-Build NON SIGNÉ contrôlé : 389 GIF, 715 fichiers web, 9 DEX identiques. Hook profils testé sur
-les 3 derniers ajouts homme/femme (6 résolutions OK). Branche 01a0dcad inchangée.
+**NOUVEAU : 22 numéros contestés + 3 variantes = 25 points.** Registre détaillé
+`production/retours-utilisateur-2026-09-26.json`, reprises `a-refaire.json`.
+L'utilisateur exige de voir les corrections AVANT validation. NE PAS remplacer les GIF livrés,
+PDF principal, manifeste/état/map sans accord explicite par numéro. Les 389 entrées livrées
+restent inchangées ; leurs anciens statuts ne signifient pas acceptation après ces retours.
+Lot57 : 10 générations, 3 propositions 19/37/64 isolées dans propositions/lot57/ ; 5 essais refusés
+26/31/38/44/45. PDF comparatif review/LOT57-propositions-avant-validation.pdf (4 pages).
+19 : anatomie proposée, vert olive à renforcer (0 pixel lime strict) ; 37 vert faible.
+Clarifier 148 vs149 Pallof, 150 corps stable vs poses identiques ; Zottman46/47/48 proposer
+4 phases avant tout changement de format. 80 nom « Écartés haltères » vs utilisateur « incliné ».
+Attendre avis / continuer propositions sans intégration. Détail VERIFICATION §74.
 
 ## 1. Où l'on en est (mesuré, pas estimé)
 

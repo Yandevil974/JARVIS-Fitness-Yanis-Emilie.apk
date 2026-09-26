@@ -1,22 +1,32 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 56, 26 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 57, 26 septembre 2026
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Cette session a repris l'ancienne branche 01a0dbe5 au commit e96e51b. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
 Lire dans l'ordre :
-1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 56, recette, pièges ; anciens compteurs historiques).
+1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 57, recette, pièges ; anciens compteurs historiques).
 2. CE-QUI-COINCE.md (§0 feuille de route utilisateur, §1 reprises, §3 décisions).
-3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–73.
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–74.
 4. evolution/media/refonte-photo/livraison/LIVRAISON-README.md et manifeste-331.json.
 
-État mesuré : **389 / 389 couples validés, 0 restant. ÉTAPE 1 TERMINÉE, ÉTAPE 2 EN COURS**.
-L'utilisateur a demandé « dis-moi quand on est à l'étape2 » : annoncé et PDF présenté.
-Les 58 ajouts homme piscine/cardio sont tous validés. Dernier n°389 elliptique-fractionné homme,
-lot56 : 4 générations, solution face stricte + schémas indépendants de pose ; deux phases
-alternées, machine/décor stables, aucune photo retournée. Vert jambes 638/319 pixels, 2×500 ms.
-Contrôle review/lot56-homme.jpg. a-refaire.json VIDE (refus antérieur en historique).
-PDF `evolution/media/refonte-photo/livraison/REVUE-331-exercices.pdf` : **131 pages / 389 exercices**,
-numéros 1–388 inchangés. Attendre les retours utilisateur par NUMÉRO ; priorité corrections,
-pas d'étape3 tant que revue non terminée ou instruction explicite. Détail VERIFICATION §73.
+ÉTAPE2 — retours PDF reçus : **22 numéros signalés + 3 variantes = 25 points ouverts**.
+NOUVELLE CONSIGNE : « Montre-moi corrections avant validation ». Aucun GIF livré/PDF principal/
+manifeste/état/map remplacé sans accord explicite par numéro. Les 389 entrées livrées sont inchangées,
+mais les statuts « valides » historiques ne valent pas acceptation après ces contestations.
+Registre complet : production/retours-utilisateur-2026-09-26.json ; reprises dans a-refaire.json.
+Numéros : 19,26,31,37,44,45,46,64,80,85,87,90,126,148,150,194,204,222,298,239,265,380.
+Extensions : marteau assis38 ; Zottman assis47 et Scott un bras48.
+Lot57 : **10 générations**, 3 propositions 19/37/64 isolées dans propositions/lot57/.
+Comparatif à montrer : review/LOT57-propositions-avant-validation.pdf (4 pages). AUCUNE validée.
+19 jambe corrigée mais teinte olive, ZERO pixel lime strict → renforcer avant intégration.
+37 marteau corrigé par schéma vertical, vert faible. 64 banc décliné corrigé par schéma tête basse.
+Refus internes 26/31/38/44/45 : pas encore corrections réussies. Autres points à traiter.
+Clarifier : 148 = Mountain climbers homme ; Pallof élastique femme =149. N°150 corps/cadrage
+stable, seuls bras mobiles ? Zottman46/47/48 : proposer 4 phases montée supination / descente pronation,
+accord avant modification format. 80 registre Écartés haltères vs « incliné » demandé : à confirmer.
+265 = étirement pectoral avant-bras90° sur montant + petite fente avant, expliquer le geste.
+PDF PRINCIPAL inchangé : 131 pages /389 exercices, numéros fixes. Assertions : PDF/manifeste/état/
+numéros/TOUS GIF livrés identiques. Aucune reconstruction APK ce tour. Détail VERIFICATION §74.
+Suite : montrer/attendre avis, puis continuer reprises par lots≤10 ; pas d'étape3 sans instruction.
 
 Câblage athlète = profil déjà posé dans tools/overlay-331.py : globalThis.__refonteSwap + patch bt + constante If (§70). Yanis homme, Émilie femme pour les variantes produites, désormais toutes disponibles sur piscine/cardio. 33 GIF historiques avec une case sans vert : lot style UNIQUEMENT sur décision utilisateur.
 

@@ -1,5 +1,281 @@
 {
- "aRefaire": [],
+ "aRefaire": [
+  {
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "numero_signale": 19,
+   "lot": 57,
+   "motif": "Bulgarian Split : jambe pliée de la fille à l’envers.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Genou arrière fléchi dans le bon sens, même jambe. Amplitude à apprécier (départ déjà fléchi). Teinte olive : vert lime à renforcer avant intégration."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "crunch-a-la-poulie|homme",
+   "numero_signale": 26,
+   "lot": 57,
+   "motif": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
+   "statut": "refuse_interne",
+   "reglesPrompt": [
+    "Corde derrière tête mieux placée, mais éloignement insuffisant, pieds coupés et amplitude faible. Refaire en vue large depuis schéma indépendant."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-concentration|homme",
+   "numero_signale": 31,
+   "lot": 57,
+   "motif": "Curl concentration : tourner la main vers la droite au départ.",
+   "statut": "refuse_interne",
+   "reglesPrompt": [
+    "Rotation de la main de départ non obtenue. Prochain : gros plan schématique de supination avant planche complète."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-marteau|homme",
+   "numero_signale": 37,
+   "lot": 57,
+   "motif": "Curl marteau : en haut, paume vers le corps comme au départ. Corriger les autres marteau.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Essai2 guidé : paumes neutres en haut, haltères verticaux. Relire cadrage avant accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-marteau-assis|homme",
+   "numero_signale": 38,
+   "lot": 57,
+   "motif": "Extension de la correction n°37 : curl marteau assis.",
+   "statut": "refuse_interne",
+   "reglesPrompt": [
+    "Supination en haut encore présente. Repartir du schéma gagnant n°37, adapter position assise."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-scott-haltere-neutre|homme",
+   "numero_signale": 44,
+   "lot": 57,
+   "motif": "Curl Scott : bras de départ non posé sur le pupitre.",
+   "statut": "refuse_interne",
+   "reglesPrompt": [
+    "Bras initial encore à côté du pupitre, prise finale supinée. Vue latérale avec coude/pad explicitement guidés."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "numero_signale": 45,
+   "lot": 57,
+   "motif": "Tourner la paume au départ.",
+   "statut": "refuse_interne",
+   "reglesPrompt": [
+    "Image quasi inchangée, prise finale encore supinée. Refaire depuis schéma de main neutre."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-zottman|homme",
+   "numero_signale": 46,
+   "lot": 57,
+   "motif": "Zottman : montrer montée curl classique et descente curl inversé ; corriger les autres Zottman.",
+   "statut": "conception_a_confirmer",
+   "reglesPrompt": [
+    "Proposer 4 phases pour montée supinée, rotation haute, descente pronation. Aucun changement du format livré sans accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-zottman-assis|homme",
+   "numero_signale": 47,
+   "lot": 57,
+   "motif": "Extension de la correction n°46 : Zottman assis.",
+   "statut": "conception_a_confirmer",
+   "reglesPrompt": [
+    "Proposer 4 phases pour montée supinée, rotation haute, descente pronation. Aucun changement du format livré sans accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-zottman-un-bras-banc-scott|homme",
+   "numero_signale": 48,
+   "lot": 57,
+   "motif": "Extension de la correction n°46 : Zottman un bras banc Scott.",
+   "statut": "conception_a_confirmer",
+   "reglesPrompt": [
+    "Proposer 4 phases pour montée supinée, rotation haute, descente pronation. Aucun changement du format livré sans accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "developpe-halteres-decline-prise-neutre|homme",
+   "numero_signale": 64,
+   "lot": 57,
+   "motif": "Développé haltères décliné : banc non décliné.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Essai2 guidé : banc clairement décliné tête sous bassin. Relire aussi la prise neutre avant accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "ecartes-halteres|homme",
+   "numero_signale": 80,
+   "lot": 57,
+   "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Nom livré Écartés haltères ; n°79 = Écartés câbles incliné, n°81 = décliné. Confirmer inclinaison si nécessaire ; ne pas changer prescription."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "numero_signale": 85,
+   "lot": 57,
+   "motif": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "numero_signale": 87,
+   "lot": 57,
+   "motif": "Ce n’est pas le bon mouvement.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "elevations-laterales-lean-away|homme",
+   "numero_signale": 90,
+   "lot": 57,
+   "motif": "Lean away : bras qui tient la barre tendu.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "jackknife-sur-swiss-ball|homme",
+   "numero_signale": 126,
+   "lot": 57,
+   "motif": "Jackknife : homme à l’envers en position finale.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": null,
+   "numero_signale": 148,
+   "lot": 57,
+   "motif": "Pallof fille : au départ de face sur la photo.",
+   "statut": "clarification",
+   "reglesPrompt": [
+    "Le n°148 est Mountain climbers homme. Pallof élastique femme est n°149 ; confirmer cible avant de modifier."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pallof-press-a-la-poulie|femme",
+   "numero_signale": 150,
+   "lot": 57,
+   "motif": "Position de départ et finale doivent être pareilles.",
+   "statut": "clarification",
+   "reglesPrompt": [
+    "Confirmer même orientation/cadrage du corps, seuls bras bougent, plutôt que deux poses identiques."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "step-up-haut|homme",
+   "numero_signale": 194,
+   "lot": 57,
+   "motif": "Step-up haut : pas la même jambe au départ et à l’arrivée.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "tractions-supination-chin-up|homme",
+   "numero_signale": 204,
+   "lot": 57,
+   "motif": "À refaire.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pompes-au-bord|femme",
+   "numero_signale": 222,
+   "lot": 57,
+   "motif": "Corps dans l’eau.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "bras-tendu-contre-le-mur|homme",
+   "numero_signale": 239,
+   "lot": 57,
+   "motif": "Bras tendu ; tronc à l’envers par rapport aux pieds.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "etirement-dans-l-encadrement-de-porte|homme",
+   "numero_signale": 265,
+   "lot": 57,
+   "motif": "Ne comprend pas le mouvement.",
+   "statut": "a_expliquer",
+   "reglesPrompt": [
+    "Prescription : avant-bras à 90° contre montant, légère fente vers avant pour étirer poitrine, changer côté. Montrer nouvelle explication visuelle si demandé."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pompes-au-bord-effort|femme",
+   "numero_signale": 298,
+   "lot": 57,
+   "motif": "Corps dans l’eau.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "mobilite-hanches-chevilles|homme",
+   "numero_signale": 380,
+   "lot": 57,
+   "motif": "Tronc à l’envers en position finale.",
+   "statut": "a_produire",
+   "reglesPrompt": [
+    "Lire prescription et planche initiale avant génération."
+   ],
+   "validationUtilisateurRequise": true
+  }
+ ],
  "verifieesEtAcceptees": [
   "adduction-de-la-hanche-debout",
   "allonge-sur-le-cote",

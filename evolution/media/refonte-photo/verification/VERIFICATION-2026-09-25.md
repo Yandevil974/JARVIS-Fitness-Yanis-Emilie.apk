@@ -957,3 +957,48 @@ aucun média manquant, APK non signé 114574436 octets. Pas d'APK signé livré.
 **Prochaine action = ÉTAPE 2** : attendre les retours utilisateur par NUMÉRO du PDF, corriger en
 priorité sans renumérotation. Ne pas lancer étape 3 (réglage niveau cardio) avant fin de sa revue
 ou instruction explicite. 33 cas style et autres décisions de CE-QUI-COINCE §3 toujours ouverts.
+
+
+## 74. Lot 57 — retours PDF utilisateur, PROPOSITIONS AVANT VALIDATION (26/09/2026)
+
+**Nouvelle règle explicite : « Montre-moi corrections avant validation ».** Aucun GIF livré,
+PDF principal, manifeste, état publié, map ou numéro modifié. Les 389 entrées existent toujours,
+mais le « 389 validés » historique n'est PLUS un verdict de qualité après les retours utilisateur.
+Registre `production/retours-utilisateur-2026-09-26.json` : **22 numéros signalés + 3 variantes = 25 points**.
+Reprises inscrites dans `production/a-refaire.json`, statuts distincts, accord par numéro obligatoire.
+
+Tous les retours : 19, 26, 31, 37, 44, 45, 46, 64, 80, 85, 87, 90, 126, 148, 150, 194, 204,
+222, 298, 239, 265, 380. Extensions : marteau assis 38 ; Zottman assis 47 et Scott un bras 48.
+**Ambiguïtés** : 148 est Mountain climbers homme, Pallof élastique femme est 149 (ne pas modifier
+148 par supposition). 150 : confirmer même corps/cadrage avec bras mobiles. Zottman : proposer
+4 phases pour monter supination/descendre pronation ; attendre accord avant changement de format.
+80 : nom du registre Écartés haltères, pas « incliné » ; vérifier avec utilisateur avant changer banc.
+265 : prescription = avant-bras 90° au montant, fente douce vers avant, étirement pectoral, changer côté.
+
+Workspace réinitialisé, repris e538e03 (arbre propre) sur branche 01a0dcad ; venv restauré.
+**10 générations** : 8 planches initiales + 2 reprises guidées par schémas indépendants (37,64).
+Tous les noms vérifiés `verif-ids.py`, prescriptions lues ; images lues pleine définition.
+
+| N° | Verdict de préparation, PAS validation utilisateur |
+|---|---|
+|19|Proposition : jambe arrière corrigée, même jambe ; amplitude de départ déjà fléchie à apprécier. Vert olive : ZERO pixel au seuil lime strict, à renforcer avant intégration.|
+|26|Refus interne : éloignement insuffisant, pieds coupés, amplitude insuffisante.|
+|31|Refus interne : rotation de main départ non obtenue.|
+|37|Essai1 refusé (supination), essai2 schéma marteau vertical : proposition paumes neutres.|
+|38|Refus interne : supination en haut ; utiliser schéma gagnant 37 au prochain lot.|
+|44|Refus interne : bras encore à côté du pupitre au départ, supination en haut.|
+|45|Refus interne : quasi inchangé.|
+|64|Essai1 refusé (banc incliné mauvais sens), essai2 schéma tête basse : proposition décliné ; prise à relire avec utilisateur.|
+
+Les 3 propositions sont ISOLÉES dans `propositions/lot57/` (planches, GIF candidats, mesures).
+**Document à montrer** : `review/LOT57-propositions-avant-validation.pdf` (4 pages) : avant/proposition
+19,37,64 puis suivi complet des 25 points. Contrôles JPG `review/lot57-proposition-femme.jpg`,
+`review/lot57-propositions-homme.jpg`. Les 5 refus internes ne sont pas présentés comme corrections réussies.
+Mesures `propositions/lot57/mesures.json` : 2×500 ms ; vert ROI 19=0/0 (olive), 37=14/3 (faible),
+64=184/74. Ne PAS confondre approbation gestuelle des propositions et contrôle final prêt à intégrer.
+
+Assertions binaires : PDF principal, manifeste, numérotation, état et TOUS GIF livrés identiques à HEAD.
+Aucun `valide-couples.py`, `maj-manifeste-331.py`, rebuild PDF principal ni APK exécuté.
+**Suite** : attendre avis sur propositions et réponses aux questions ; continuer les reprises par lots
+≤10. Toute intégration nécessite accord explicite ET contrôles finaux (notamment vert de 19).
+Étape2 toujours en cours ; étape3 interdite sans instruction. Les 33 cas style historiques restent séparés.

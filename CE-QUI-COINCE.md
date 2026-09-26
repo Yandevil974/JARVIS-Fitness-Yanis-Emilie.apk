@@ -1,8 +1,8 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot 56 — 389 valides / 0 restant — ÉTAPE 2 : relecture utilisateur
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot57 — ÉTAPE2 : 25 retours ouverts, corrections à montrer avant validation
 
-Liste demandée pour revue de votre côté. **331 / 331 visuels validés, 0 restant, et la
-relecture case par case est TERMINÉE (331 / 331 relus)**. Ce fichier ne contient que les
-points bloquants ou qui demandent une décision.
+Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
+**25 points de suivi** : aucune proposition n’est intégrée avant votre accord.
+La relecture interne antérieure ne remplace pas votre validation.
 
 > ⚠️ **Branche de travail changée par la plateforme** : cette session Arena est fixée sur
 > `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Le contenu de `arena/01a0dbe5-…` (commit
@@ -14,8 +14,8 @@ points bloquants ou qui demandent une décision.
 1. **Piscine + cardio pour Yanis TERMINÉ** : 58 couples homme ajoutés et validés aux lots51–56,
    n°332–389. Câblage athlète=profil posé et testé. Dernier : elliptique-fractionné homme n°389.
 2. **ÉTAPE ACTUELLE : vérification du PDF par l'utilisateur.** PDF 131 pages / 389 exercices,
-   numéros stables. Passage annoncé à sa demande. Attendre ses retours ; corrections par numéro
-   prioritaires. Ne pas commencer étape3 sans instruction ou fin de revue.
+   numéros stables. Retours reçus : 25 points ouverts (§1). Montrer les propositions AVANT validation.
+   Ne pas commencer étape3 sans instruction ou fin de revue.
 3. Pouvoir **augmenter le niveau** du programme cardio (piscine et autres) sur Émilie et Yanis
    (les protocoles ont déjà 3 niveaux `niveaux[]` ; la sélection est automatique dans `bh()` :
    à exposer à l'utilisateur — à concevoir après l'étape 1).
@@ -24,11 +24,17 @@ points bloquants ou qui demandent une décision.
 5. Construire l'application (1.4.9 → clé de signature utilisateur).
 6. IA conversationnelle (en dernier).
 
-## 1. Aucune reprise de production en attente
+## 1. Retours PDF : 25 points ouverts, validation utilisateur obligatoire
 
-`production/a-refaire.json` VIDE. Elliptique fractionné homme résolu au lot56, face stricte,
-phases guidées par schémas indépendants, n°389. Les deux cases relues ; vert mesuré sur jambes.
-**La validation de production ne remplace pas votre relecture : nous sommes à l'étape2.**
+22 numéros signalés + extensions marteau38 et Zottman47/48, tous dans
+`production/retours-utilisateur-2026-09-26.json` et `a-refaire.json`.
+**Montrer AVANT validation** : aucun remplacement livré sans accord explicite par numéro.
+Lot57 : 3 propositions (19/37/64) dans `review/LOT57-propositions-avant-validation.pdf`.
+19 nécessite encore renforcement lime (teinte olive) ; 37 vert faible. Refus internes
+26/31/38/44/45 à refaire avec autres stratégies. Autres points encore à traiter.
+Clarifications : 148 est Mountain climbers homme, Pallof femme élastique est149 ; 150 = corps/cadrage
+identiques mais bras mobiles ? Zottman : accord pour 4 phases ? 80 incliné vs nom Écartés haltères.
+389 visuels publiés inchangés, PAS 389 approuvés après ces retours. Étape2 reste ouverte.
 
 ## 1b. Chantiers ouverts (pas bloquants, planifiés)
 
