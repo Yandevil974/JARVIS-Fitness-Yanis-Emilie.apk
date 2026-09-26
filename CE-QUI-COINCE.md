@@ -1,7 +1,7 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot57 — ÉTAPE2 : 25 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot58 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
-**25 points de suivi** : aucune proposition n’est intégrée avant votre accord.
+**26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
 La relecture interne antérieure ne remplace pas votre validation.
 
 > ⚠️ **Branche de travail changée par la plateforme** : cette session Arena est fixée sur
@@ -14,27 +14,32 @@ La relecture interne antérieure ne remplace pas votre validation.
 1. **Piscine + cardio pour Yanis TERMINÉ** : 58 couples homme ajoutés et validés aux lots51–56,
    n°332–389. Câblage athlète=profil posé et testé. Dernier : elliptique-fractionné homme n°389.
 2. **ÉTAPE ACTUELLE : vérification du PDF par l'utilisateur.** PDF 131 pages / 389 exercices,
-   numéros stables. Retours reçus : 25 points ouverts (§1). Montrer les propositions AVANT validation.
+   numéros stables. Retours reçus : 26 points ouverts (§1). Montrer les propositions AVANT validation.
    Ne pas commencer étape3 sans instruction ou fin de revue.
 3. Pouvoir **augmenter le niveau** du programme cardio (piscine et autres) sur Émilie et Yanis
    (les protocoles ont déjà 3 niveaux `niveaux[]` ; la sélection est automatique dans `bh()` :
    à exposer à l'utilisateur — à concevoir après l'étape 1).
 4. **Images pendant le chronomètre** (piscine, aqua, nage fractionnée, elliptique) : le timer `v5`
    n'affiche une image que pour piscine (`JarvisPoolMedia`) ; les étapes elliptique n'en ont aucune.
-5. Construire l'application (1.4.9 → clé de signature utilisateur).
+5. Construire l'application (1.4.9 → clé de signature utilisateur). AVANT cela, rappeler les ajouts
+   metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie (§1).
 6. IA conversationnelle (en dernier).
 
-## 1. Retours PDF : 25 points ouverts, validation utilisateur obligatoire
+## 1. Retours PDF :26 points ouverts, validation utilisateur obligatoire
 
-22 numéros signalés + extensions marteau38 et Zottman47/48, tous dans
-`production/retours-utilisateur-2026-09-26.json` et `a-refaire.json`.
-**Montrer AVANT validation** : aucun remplacement livré sans accord explicite par numéro.
-Lot57 : 3 propositions (19/37/64) dans `review/LOT57-propositions-avant-validation.pdf`.
-19 nécessite encore renforcement lime (teinte olive) ; 37 vert faible. Refus internes
-26/31/38/44/45 à refaire avec autres stratégies. Autres points encore à traiter.
-Clarifications : 148 est Mountain climbers homme, Pallof femme élastique est149 ; 150 = corps/cadrage
-identiques mais bras mobiles ? Zottman : accord pour 4 phases ? 80 incliné vs nom Écartés haltères.
-389 visuels publiés inchangés, PAS 389 approuvés après ces retours. Étape2 reste ouverte.
+148 confirmé Mountain climbers homme (3 jambes fin),149 ET150 Pallof à reprendre. Format4 positions
+Zottman46/47/48 accepté pour préparation, pas les images. Registre retours-utilisateur-2026-09-26.json.
+5 propositions non validées :19/37/64 +149/150 ;21 points encore à préparer/expliquer.
+Quand tout prêt : UN PDF téléchargeable limité aux reprises, AVANT À GAUCHE / APRÈS À DROITE.
+Ne pas confondre approbation du format et approbation des images. Aucun GIF livré remplacé.
+149/150 : même corps/cadrage, bras bougent ; couleur mesurée jaune-vert (seuil strict lime absent).
+
+### Rappels à déclencher aux étapes prévues
+-**AVANT étape3** : poser la question « Voulez-vous que le vert des muscles soit identique à celui
+  du n°260 ? ». Réponse nécessaire ; pas de recoloration automatique.
+-**Construction application** : rappeler à l’utilisateur de rajouter **metcon + piscine nage
+  fractionnée et/ou Aqua tabata pour Émilie**, puis confirmer le périmètre avec lui.
+Données : production/rappels-utilisateur.json. Aucun de ces deux rappels n’est considéré traité.
 
 ## 1b. Chantiers ouverts (pas bloquants, planifiés)
 

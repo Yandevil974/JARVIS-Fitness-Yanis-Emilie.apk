@@ -1002,3 +1002,55 @@ Aucun `valide-couples.py`, `maj-manifeste-331.py`, rebuild PDF principal ni APK 
 **Suite** : attendre avis sur propositions et réponses aux questions ; continuer les reprises par lots
 ≤10. Toute intégration nécessite accord explicite ET contrôles finaux (notamment vert de 19).
 Étape2 toujours en cours ; étape3 interdite sans instruction. Les 33 cas style historiques restent séparés.
+
+
+## 75. Lot58 — clarifications utilisateur, rappels d’étapes, propositions Pallof (26/09/2026)
+
+**Nouvelles consignes confirmées** :
+-148 = Mountain climbers homme, image finale à TROIS jambes ; cible désormais certaine.
+-149 ET150 = deux Pallof à retravailler ;149 ajouté au registre (pas remplacé par148).
+-Zottman46/47/48 : accord pour préparer4 positions, PAS validation des images.
+-Quand TOUTES les corrections demandées sont prêtes, fournir UN PDF téléchargeable dans le chat,
+  UNIQUEMENT exercices concernés, **AVANT À GAUCHE / APRÈS À DROITE, côte à côte**.
+  Aucun PDF partiel présenté comme final. Le comparatif du lot57 était empilé : il est historique.
+-**AVANT étape3, poser la question** : uniformiser le vert des muscles sur celui du **n°260** ?
+  Ne pas prendre cette décision à la place de l’utilisateur, ni recolorer automatiquement.
+-**Au moment de construire l’application**, rappeler à l’utilisateur d’ajouter **metcon + piscine
+  nage fractionnée et/ou Aqua tabata pour Émilie**. Ce rappel n’autorise pas encore le codage.
+Rappels structurés : `production/rappels-utilisateur.json`, statuts à demander / à rappeler.
+
+Registre : **26 points =23 numéros directement concernés +3 variantes**, tous non approuvés.
+5 propositions existantes au total :19/37/64 (lot57),149/150 (lot58) ;21 encore à préparer/expliquer.
+Le registre conserve pour chaque AVANT le chemin GIF, SHA et commit figé e538e03 ; ne PAS utiliser
+aveuglément la planche source (celle associée au n°148 montre une femme alors que le GIF livré
+homme est bien un homme à3 jambes). Le comparatif lit les GIF exacts, pas cette association erronée.
+
+**8 appels génération, dont1 échec technique** (plafond10 respecté) :
+-148 essai1 : encore3 jambes → refus ; essai2 schéma deux jambes : plus de jambe surnuméraire,
+  mais même jambe pliée dans les deux cases → refus (deux images empilées, non converties).
+-149 : proposition frontale stable, élastique ancré à gauche, bras repliés→tendus ; non validée.
+-150 : proposition même corps/cadrage, poulie à droite, bras repliés→tendus ; non validée.
+-46 : premier appel sans image (MAX_TOKENS), second2×2 : pas de rotation nette des prises → refus.
+-47 : grille2×2, supination identique aux cases2/3 et1/4 → refus.
+-48 :4 cases horizontales, même prise et bras à côté du pupitre en bas → refus.
+Tous les fichiers isolés sous `propositions/lot58/`, aucun n’est intégré.
+
+`verif-ids.py` OK pour6 identifiants. Seuls149/150 convertis en GIF CANDIDATS (396×440,2×500ms).
+Contrôle `review/lot58-propositions-pallof.jpg`, lecture pleine définition puis GIF.
+Mesures ROI abdomen :0/0 pixels au seuil strict lime sur les deux propositions (teinte jaune-vert).
+C’est un contrôle gestuel proposé, pas une validation couleur ; arbitrage futur n°260 non anticipé.
+Prochaines stratégies :148 deux phases séparées avec jambe lointaine explicitement guidée ;
+Zottman une paire curl classique et une paire curl INVERSÉ indépendantes, contrôle de chaque prise
+avant assemblage4 frames. Ne jamais considérer4 cases identiques comme cycle correct.
+
+**Outil comparatif** `tools/pdf-corrections-avant-apres.py` :
+-Une page par numéro concerné, avant gauche/après droite, phases2 ou4 dans chaque colonne.
+-Lit AVANT depuis le commit figé avec contrôle SHA ; APRÈS depuis proposition avec contrôle SHA.
+-Refuse AVANT toute création du PDF final si un numéro n’a pas de proposition (21 manquants actuellement).
+-Toujours marqué PROPOSITION NON VALIDÉE ; aucune écriture du manifeste/GIF livré.
+Tests : rejet du registre incomplet ; test2 pages149/150 dans .cache seulement (4 images/page,
+coordonnées AVANT gauche/APRÈS droite vérifiées) ; lecture4 frames synthétiques OK.
+Aucun PDF final de corrections créé/livré ce tour. Le PDF principal389 exercices reste inchangé.
+
+**Suite** : rester à l’étape2, continuer les reprises par lots≤10 puis comparatif complet, accord utilisateur
+par numéro avant intégration. Les nouveaux rappels sont des arrêts obligatoires aux étapes indiquées.

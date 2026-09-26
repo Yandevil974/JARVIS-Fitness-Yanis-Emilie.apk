@@ -1,32 +1,36 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 57, 26 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 58, 26 septembre 2026
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Cette session a repris l'ancienne branche 01a0dbe5 au commit e96e51b. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
 Lire dans l'ordre :
-1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 57, recette, pièges ; anciens compteurs historiques).
+1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 58, recette, pièges ; anciens compteurs historiques).
 2. CE-QUI-COINCE.md (§0 feuille de route utilisateur, §1 reprises, §3 décisions).
-3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–74.
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–75.
 4. evolution/media/refonte-photo/livraison/LIVRAISON-README.md et manifeste-331.json.
 
-ÉTAPE2 — retours PDF reçus : **22 numéros signalés + 3 variantes = 25 points ouverts**.
-NOUVELLE CONSIGNE : « Montre-moi corrections avant validation ». Aucun GIF livré/PDF principal/
-manifeste/état/map remplacé sans accord explicite par numéro. Les 389 entrées livrées sont inchangées,
-mais les statuts « valides » historiques ne valent pas acceptation après ces contestations.
-Registre complet : production/retours-utilisateur-2026-09-26.json ; reprises dans a-refaire.json.
-Numéros : 19,26,31,37,44,45,46,64,80,85,87,90,126,148,150,194,204,222,298,239,265,380.
-Extensions : marteau assis38 ; Zottman assis47 et Scott un bras48.
-Lot57 : **10 générations**, 3 propositions 19/37/64 isolées dans propositions/lot57/.
-Comparatif à montrer : review/LOT57-propositions-avant-validation.pdf (4 pages). AUCUNE validée.
-19 jambe corrigée mais teinte olive, ZERO pixel lime strict → renforcer avant intégration.
-37 marteau corrigé par schéma vertical, vert faible. 64 banc décliné corrigé par schéma tête basse.
-Refus internes 26/31/38/44/45 : pas encore corrections réussies. Autres points à traiter.
-Clarifier : 148 = Mountain climbers homme ; Pallof élastique femme =149. N°150 corps/cadrage
-stable, seuls bras mobiles ? Zottman46/47/48 : proposer 4 phases montée supination / descente pronation,
-accord avant modification format. 80 registre Écartés haltères vs « incliné » demandé : à confirmer.
-265 = étirement pectoral avant-bras90° sur montant + petite fente avant, expliquer le geste.
-PDF PRINCIPAL inchangé : 131 pages /389 exercices, numéros fixes. Assertions : PDF/manifeste/état/
-numéros/TOUS GIF livrés identiques. Aucune reconstruction APK ce tour. Détail VERIFICATION §74.
-Suite : montrer/attendre avis, puis continuer reprises par lots≤10 ; pas d'étape3 sans instruction.
+ÉTAPE2 — **26 points ouverts :23 numéros +3 variantes**, aucune proposition approuvée.
+NOUVELLES PRÉCISIONS :148 = Mountain climbers homme,3 jambes fin ;149 ET150 = Pallof à retravailler.
+Zottman46/47/48 : format4 positions accepté, PAS images. Registre production/retours-utilisateur-2026-09-26.json,
+a-refaire.json. Numéros :19,26,31,37,38,44,45,46,47,48,64,80,85,87,90,126,148,149,150,194,204,222,239,265,298,380.
+Consigne MONTRER AVANT VALIDATION : aucun GIF livré/PDF principal/manifeste/état/map remplacé sans accord.
+5 propositions isolées :19/37/64 (lot57),149/150 (lot58),21 points encore à préparer/expliquer.
+Lot58 :8 appels dont1 échec technique ;148 et Zottman refusés (anatomie/alternance ou prises non distinctes).
+Pallof149/150 corps/cadrage stables, bras bougent ; candidats non validés, vert strict absent (teinte jaune-vert).
+19 vert olive à renforcer ;37 vert faible. Ne pas anticiper choix couleur avant question ci-dessous.
+
+PDF CORRECTIONS demandé : QUAND TOUTES PRÊTES, UN PDF téléchargeable dans chat, UNIQUEMENT reprises,
+**AVANT GAUCHE / APRÈS DROITE côte à côte**. Outil tools/pdf-corrections-avant-apres.py refuse registre
+incomplet ; lit avant depuis GIF exact du commit e538e03 (source planche148 mal associée, ne pas l’utiliser).
+Pas de PDF final de corrections créé ce tour. PDF principal389 exercices inchangé.
+
+RAPPELS UTILISATEUR OBLIGATOIRES pour plus tard (production/rappels-utilisateur.json) :
+1. **AVANT étape3, poser la question** : veut-il le vert des muscles identique au **n°260** (elliptique
+   fractionné femme) ? ATTENDRE décision ; ne pas recolorer automatiquement ni considérer question déjà réglée.
+2. **À l’étape construction application**, lui rappeler de rajouter **metcon + piscine nage fractionnée
+   et/ou Aqua tabata pour Émilie**. Confirmer le périmètre avant de coder ces ajouts.
+
+Suite : rester étape2, continuer reprises≤10 par tour puis comparatif complet, accord par numéro avant intégration.
+Détails VERIFICATION §75. Aucun APK reconstruit ce tour ; documents/registre seuls et propositions isolées.
 
 Câblage athlète = profil déjà posé dans tools/overlay-331.py : globalThis.__refonteSwap + patch bt + constante If (§70). Yanis homme, Émilie femme pour les variantes produites, désormais toutes disponibles sur piscine/cardio. 33 GIF historiques avec une case sans vert : lot style UNIQUEMENT sur décision utilisateur.
 

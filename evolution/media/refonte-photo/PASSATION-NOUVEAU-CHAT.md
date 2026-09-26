@@ -5,19 +5,23 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot57 — ÉTAPE2, corrections AVANT validation utilisateur
+## État prioritaire lot58 — ÉTAPE2, corrections AVANT validation utilisateur
 
-**NOUVEAU : 22 numéros contestés + 3 variantes = 25 points.** Registre détaillé
-`production/retours-utilisateur-2026-09-26.json`, reprises `a-refaire.json`.
-L'utilisateur exige de voir les corrections AVANT validation. NE PAS remplacer les GIF livrés,
-PDF principal, manifeste/état/map sans accord explicite par numéro. Les 389 entrées livrées
-restent inchangées ; leurs anciens statuts ne signifient pas acceptation après ces retours.
-Lot57 : 10 générations, 3 propositions 19/37/64 isolées dans propositions/lot57/ ; 5 essais refusés
-26/31/38/44/45. PDF comparatif review/LOT57-propositions-avant-validation.pdf (4 pages).
-19 : anatomie proposée, vert olive à renforcer (0 pixel lime strict) ; 37 vert faible.
-Clarifier 148 vs149 Pallof, 150 corps stable vs poses identiques ; Zottman46/47/48 proposer
-4 phases avant tout changement de format. 80 nom « Écartés haltères » vs utilisateur « incliné ».
-Attendre avis / continuer propositions sans intégration. Détail VERIFICATION §74.
+**26 points ouverts** (23 numéros +3 variantes) ;149 ajouté,148 confirmé Mountain climbers homme
+à3 jambes. Zottman46/47/48 : format4 positions approuvé, images non approuvées.
+5 propositions non validées19/37/64/149/150 ;21 points encore à préparer/expliquer.
+Aucun remplacement livré sans accord utilisateur ; PDF principal389 exercices inchangé.
+Lot58 :8 appels dont1 échec ; Pallof149/150 proposés,148 et Zottman refusés. VERIFICATION §75.
+**Livraison de corrections demandée** : quand TOUT prêt, UN PDF téléchargeable seulement des exercices
+concernés, AVANT gauche / APRÈS droite côte à côte. Outil tools/pdf-corrections-avant-apres.py bloque
+si incomplet ; lit AVANT dans GIF du commit figé (pas planche source). Pas de PDF partiel final.
+
+### Rappels utilisateur OBLIGATOIRES (ne pas oublier aux prochains chats)
+1. **AVANT de passer à l’étape3** : demander si le vert musculaire doit être identique au **n°260**
+   (elliptique-fractionné femme). Attendre réponse, ne pas uniformiser de soi-même.
+2. **À la construction de l’application** : rappeler l’ajout de **metcon + piscine nage fractionnée
+   et/ou Aqua tabata pour Émilie** ; demander confirmation avant codage de ces ajouts.
+Registre : production/rappels-utilisateur.json (décisions pas encore prises).
 
 ## 1. Où l'on en est (mesuré, pas estimé)
 

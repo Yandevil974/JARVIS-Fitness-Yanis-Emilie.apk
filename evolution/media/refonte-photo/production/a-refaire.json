@@ -3,7 +3,7 @@
   {
    "cle": "bulgarian-split-squat-halteres|femme",
    "numero_signale": 19,
-   "lot": 57,
+   "lot": 58,
    "motif": "Bulgarian Split : jambe pliée de la fille à l’envers.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
@@ -14,7 +14,7 @@
   {
    "cle": "crunch-a-la-poulie|homme",
    "numero_signale": 26,
-   "lot": 57,
+   "lot": 58,
    "motif": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
    "statut": "refuse_interne",
    "reglesPrompt": [
@@ -25,7 +25,7 @@
   {
    "cle": "curl-concentration|homme",
    "numero_signale": 31,
-   "lot": 57,
+   "lot": 58,
    "motif": "Curl concentration : tourner la main vers la droite au départ.",
    "statut": "refuse_interne",
    "reglesPrompt": [
@@ -36,7 +36,7 @@
   {
    "cle": "curl-marteau|homme",
    "numero_signale": 37,
-   "lot": 57,
+   "lot": 58,
    "motif": "Curl marteau : en haut, paume vers le corps comme au départ. Corriger les autres marteau.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
@@ -47,7 +47,7 @@
   {
    "cle": "curl-marteau-assis|homme",
    "numero_signale": 38,
-   "lot": 57,
+   "lot": 58,
    "motif": "Extension de la correction n°37 : curl marteau assis.",
    "statut": "refuse_interne",
    "reglesPrompt": [
@@ -58,7 +58,7 @@
   {
    "cle": "curl-scott-haltere-neutre|homme",
    "numero_signale": 44,
-   "lot": 57,
+   "lot": 58,
    "motif": "Curl Scott : bras de départ non posé sur le pupitre.",
    "statut": "refuse_interne",
    "reglesPrompt": [
@@ -69,7 +69,7 @@
   {
    "cle": "curl-scott-haltere-prise-neutre|homme",
    "numero_signale": 45,
-   "lot": 57,
+   "lot": 58,
    "motif": "Tourner la paume au départ.",
    "statut": "refuse_interne",
    "reglesPrompt": [
@@ -80,40 +80,40 @@
   {
    "cle": "curl-zottman|homme",
    "numero_signale": 46,
-   "lot": 57,
+   "lot": 58,
    "motif": "Zottman : montrer montée curl classique et descente curl inversé ; corriger les autres Zottman.",
-   "statut": "conception_a_confirmer",
+   "statut": "refuse_interne",
    "reglesPrompt": [
-    "Proposer 4 phases pour montée supinée, rotation haute, descente pronation. Aucun changement du format livré sans accord."
+    "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise."
    ],
    "validationUtilisateurRequise": true
   },
   {
    "cle": "curl-zottman-assis|homme",
    "numero_signale": 47,
-   "lot": 57,
+   "lot": 58,
    "motif": "Extension de la correction n°46 : Zottman assis.",
-   "statut": "conception_a_confirmer",
+   "statut": "refuse_interne",
    "reglesPrompt": [
-    "Proposer 4 phases pour montée supinée, rotation haute, descente pronation. Aucun changement du format livré sans accord."
+    "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise."
    ],
    "validationUtilisateurRequise": true
   },
   {
    "cle": "curl-zottman-un-bras-banc-scott|homme",
    "numero_signale": 48,
-   "lot": 57,
+   "lot": 58,
    "motif": "Extension de la correction n°46 : Zottman un bras banc Scott.",
-   "statut": "conception_a_confirmer",
+   "statut": "refuse_interne",
    "reglesPrompt": [
-    "Proposer 4 phases pour montée supinée, rotation haute, descente pronation. Aucun changement du format livré sans accord."
+    "Format4 positions APPROUVÉ, pas images. Lot58 : supination/pronation non différenciées aux cases hautes et basses. Générer séparément une paire classique et une paire curl inversé avec repères paume/dos main ; réassembler seulement après vérification de chaque prise."
    ],
    "validationUtilisateurRequise": true
   },
   {
    "cle": "developpe-halteres-decline-prise-neutre|homme",
    "numero_signale": 64,
-   "lot": 57,
+   "lot": 58,
    "motif": "Développé haltères décliné : banc non décliné.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
@@ -124,7 +124,7 @@
   {
    "cle": "ecartes-halteres|homme",
    "numero_signale": 80,
-   "lot": 57,
+   "lot": 58,
    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -135,7 +135,7 @@
   {
    "cle": "elevations-laterales-coude-a-90|homme",
    "numero_signale": 85,
-   "lot": 57,
+   "lot": 58,
    "motif": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -146,7 +146,7 @@
   {
    "cle": "elevations-laterales-halteres-myo-reps|femme",
    "numero_signale": 87,
-   "lot": 57,
+   "lot": 58,
    "motif": "Ce n’est pas le bon mouvement.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -157,7 +157,7 @@
   {
    "cle": "elevations-laterales-lean-away|homme",
    "numero_signale": 90,
-   "lot": 57,
+   "lot": 58,
    "motif": "Lean away : bras qui tient la barre tendu.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -168,7 +168,7 @@
   {
    "cle": "jackknife-sur-swiss-ball|homme",
    "numero_signale": 126,
-   "lot": 57,
+   "lot": 58,
    "motif": "Jackknife : homme à l’envers en position finale.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -177,31 +177,42 @@
    "validationUtilisateurRequise": true
   },
   {
-   "cle": null,
+   "cle": "mountain-climbers|homme",
    "numero_signale": 148,
-   "lot": 57,
-   "motif": "Pallof fille : au départ de face sur la photo.",
-   "statut": "clarification",
+   "lot": 58,
+   "motif": "Mountain climbers : image finale avec trois jambes ; supprimer le membre surnuméraire.",
+   "statut": "refuse_interne",
    "reglesPrompt": [
-    "Le n°148 est Mountain climbers homme. Pallof élastique femme est n°149 ; confirmer cible avant de modifier."
+    "Lot58 essai1 encore 3 jambes ; essai2 schéma deux jambes : anatomie améliorée mais même jambe pliée deux fois. Reprendre avec deux poses séparées, jambe lointaine dessinée explicitement au second cadre."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pallof-press-a-l-elastique|femme",
+   "numero_signale": 149,
+   "lot": 58,
+   "motif": "149 et150 à retravailler. Pour149, athlète de face au départ.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot58 vue de face maintenue, ancrage élastique latéral gauche, seules mains avancent. Proposition non validée."
    ],
    "validationUtilisateurRequise": true
   },
   {
    "cle": "pallof-press-a-la-poulie|femme",
    "numero_signale": 150,
-   "lot": 57,
-   "motif": "Position de départ et finale doivent être pareilles.",
-   "statut": "clarification",
+   "lot": 58,
+   "motif": "149 et150 à retravailler ; position corps et cadrage cohérents.",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Confirmer même orientation/cadrage du corps, seuls bras bougent, plutôt que deux poses identiques."
+    "Lot58 même orientation corps et pieds aux deux cases, station à droite ; bras repliés puis tendus. Proposition non validée."
    ],
    "validationUtilisateurRequise": true
   },
   {
    "cle": "step-up-haut|homme",
    "numero_signale": 194,
-   "lot": 57,
+   "lot": 58,
    "motif": "Step-up haut : pas la même jambe au départ et à l’arrivée.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -212,7 +223,7 @@
   {
    "cle": "tractions-supination-chin-up|homme",
    "numero_signale": 204,
-   "lot": 57,
+   "lot": 58,
    "motif": "À refaire.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -223,7 +234,7 @@
   {
    "cle": "pompes-au-bord|femme",
    "numero_signale": 222,
-   "lot": 57,
+   "lot": 58,
    "motif": "Corps dans l’eau.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -234,7 +245,7 @@
   {
    "cle": "bras-tendu-contre-le-mur|homme",
    "numero_signale": 239,
-   "lot": 57,
+   "lot": 58,
    "motif": "Bras tendu ; tronc à l’envers par rapport aux pieds.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -245,7 +256,7 @@
   {
    "cle": "etirement-dans-l-encadrement-de-porte|homme",
    "numero_signale": 265,
-   "lot": 57,
+   "lot": 58,
    "motif": "Ne comprend pas le mouvement.",
    "statut": "a_expliquer",
    "reglesPrompt": [
@@ -256,7 +267,7 @@
   {
    "cle": "pompes-au-bord-effort|femme",
    "numero_signale": 298,
-   "lot": 57,
+   "lot": 58,
    "motif": "Corps dans l’eau.",
    "statut": "a_produire",
    "reglesPrompt": [
@@ -267,7 +278,7 @@
   {
    "cle": "mobilite-hanches-chevilles|homme",
    "numero_signale": 380,
-   "lot": 57,
+   "lot": 58,
    "motif": "Tronc à l’envers en position finale.",
    "statut": "a_produire",
    "reglesPrompt": [

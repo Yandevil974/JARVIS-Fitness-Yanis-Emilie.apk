@@ -1,0 +1,54 @@
+[
+  {
+    "numero": 149,
+    "roi": [
+      158,
+      158,
+      233,
+      205
+    ],
+    "size": [
+      396,
+      440
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi_abdomen": 0,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi_abdomen": 0,
+        "duree": 500
+      }
+    ],
+    "validation_utilisateur": false
+  },
+  {
+    "numero": 150,
+    "roi": [
+      158,
+      158,
+      233,
+      205
+    ],
+    "size": [
+      396,
+      440
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi_abdomen": 0,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi_abdomen": 0,
+        "duree": 500
+      }
+    ],
+    "validation_utilisateur": false
+  }
+]
