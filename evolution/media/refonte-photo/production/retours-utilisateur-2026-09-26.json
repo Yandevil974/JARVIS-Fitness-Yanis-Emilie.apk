@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "lot": 59,
+  "lot": 60,
   "etape": 2,
   "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
   "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
@@ -36,7 +36,7 @@
       "retour_utilisateur": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
       "origine": "retour_direct",
       "statut": "refuse_interne",
-      "detail": "Corde derrière tête mieux placée, mais éloignement insuffisant, pieds coupés et amplitude faible. Refaire en vue large depuis schéma indépendant.",
+      "detail": "Lot60 : pieds/cadrage larges, mais inscription ABS indésirable, câble indépendant non connecté à corde et faible flexion. Refus. Prochain : générer depuis schéma unique câble haut→corde derrière tête, sans photo erronée en référence.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
@@ -87,13 +87,20 @@
       "nom": "Curl marteau assis",
       "retour_utilisateur": "Extension de la correction n°37 : curl marteau assis.",
       "origine": "extension_variante",
-      "statut": "refuse_interne",
-      "detail": "Supination en haut encore présente. Repartir du schéma gagnant n°37, adapter position assise.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot60 : déclinaison assise de la référence marteau corrigée37. Paumes neutres et haltères verticaux en haut, bras initial bas. Proposition non validée.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/curl-marteau-assis-homme.gif",
         "sha256": "2b24a4da9f9d774eede7d4f4fa2cd09754d7e515a584622b3eb28439b70b6c9d",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 60,
+        "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/curl-marteau-assis-homme.gif",
+        "sha256": "dff2488caaa4caea0933c968f6c4279ade1411693a2e38bff4f3b2b9b7bd165e",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -214,8 +221,8 @@
       "nom": "Élévations latérales coude à 90°",
       "retour_utilisateur": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "refuse_interne",
+      "detail": "Lot60 : départ bras tendus et final mains/poids coupés avec mouvement de tirage. Refus. Prochain : schéma3D des bras coudes90°, avant-bras horizontaux au même niveau, marge large des deux côtés.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
@@ -229,13 +236,20 @@
       "nom": "Élévations latérales haltères — myo-reps",
       "retour_utilisateur": "Ce n’est pas le bon mouvement.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot60 : vraie élévation latérale bras vers les côtés, haltères légers ; pas un curl. Le protocole myo-reps conserve ses séries/pauses, seul le geste est illustré. Proposition non validée.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
         "sha256": "89487b94baa87c1c8a29d28d87e10dffccf1b658b7d6dcad019a149a9e32940b",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 60,
+        "gif": "evolution/media/refonte-photo/propositions/lot60/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+        "sha256": "3cab00f65a47df9cf4455a71060c3e623cb28f9140e8d9c55fb87aa0a502f58d",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {
@@ -362,8 +376,8 @@
       "nom": "Tractions supination (chin-up)",
       "retour_utilisateur": "À refaire.",
       "origine": "retour_direct",
-      "statut": "a_produire",
-      "detail": "Lire prescription et planche initiale avant génération.",
+      "statut": "refuse_interne",
+      "detail": "Lot60 essai1 : prise encore pronation et menton sous barre ; essai2 échec technique sans image. Prochain : référence de mains supination seule + schéma menton au-dessus barre, photo de profil3/4, pas référence du faux grip.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
@@ -414,13 +428,20 @@
       "nom": "Étirement dans l'encadrement de porte",
       "retour_utilisateur": "Ne comprend pas le mouvement.",
       "origine": "retour_direct",
-      "statut": "a_expliquer",
-      "detail": "Prescription : avant-bras à 90° contre montant, légère fente vers avant pour étirer poitrine, changer côté. Montrer nouvelle explication visuelle si demandé.",
+      "statut": "propose_attente_accord",
+      "detail": "Lot60 essai2 guidé : avant-bras vertical au montant, coude90°, petite fente avant. GIF sans recalage (le recalage coupait la main finale). Vert plus sourd et amplitude douce à apprécier ; proposition non validée.",
       "validation_utilisateur": false,
       "avant": {
         "gif": "evolution/media/refonte-photo/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
         "sha256": "214150ca9201891bf0839d048b53ff580ee6cac3cb6cf3cd5cba0d53c4998a71",
         "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+      },
+      "proposition": {
+        "lot": 60,
+        "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
+        "sha256": "30a57d2b483b4e96d7549edea58794ca84eaf0c1cdaf7c041206aa0c20af4ff2",
+        "validation_utilisateur": false,
+        "controle_final_requis": true
       }
     },
     {

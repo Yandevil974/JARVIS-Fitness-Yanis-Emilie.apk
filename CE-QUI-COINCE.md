@@ -1,4 +1,4 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot59 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état au 26 septembre 2026, après lot60 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
@@ -25,22 +25,20 @@ La relecture interne antérieure ne remplace pas votre validation.
    metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie (§1).
 6. IA conversationnelle (en dernier).
 
-## 1. Retours PDF :26 points ouverts, validation utilisateur obligatoire
+## 1. Retours PDF :26 points ouverts, accord utilisateur obligatoire
 
-148 confirmé Mountain climbers homme (3 jambes fin),149 ET150 Pallof à reprendre. Format4 positions
-Zottman46/47/48 accepté pour préparation, pas les images. Registre retours-utilisateur-2026-09-26.json.
-10 propositions non validées :19/37/64/90/149/150/194/222/298/380 ;16 sans proposition.
-Réserves :194 disques coupés ;222/298 eau hanches, profondeur à apprécier.126/239 toujours refusés.
-Quand tout prêt : UN PDF téléchargeable limité aux reprises, AVANT À GAUCHE / APRÈS À DROITE.
-Ne pas confondre approbation du format et approbation des images. Aucun GIF livré remplacé.
-149/150 : même corps/cadrage, bras bougent ; couleur mesurée jaune-vert (seuil strict lime absent).
+**13 propositions non validées** :19/37/38/64/87/90/149/150/194/222/265/298/380.
+**13 sans proposition** :26/31/44/45/46/47/48/80/85/126/148/204/239.
+Lot60 :38 marteau assis,87 élévation latérale,265 encadrement porte proposés ;26/85/204 refusés.
+Des réserves techniques/style restent sur propositions existantes (dont194 cadrage) : elles ne sont
+pas toutes prêtes à intégrer. Aucun changement livré sans accord par numéro.
+PDF demandé QUAND TOUT prêt : seulement reprises, AVANT gauche / APRÈS droite, lien téléchargeable.
+Registre retours-utilisateur-2026-09-26.json et a-refaire.json. Vérification §77.
 
-### Rappels à déclencher aux étapes prévues
--**AVANT étape3** : poser la question « Voulez-vous que le vert des muscles soit identique à celui
-  du n°260 ? ». Réponse nécessaire ; pas de recoloration automatique.
--**Construction application** : rappeler à l’utilisateur de rajouter **metcon + piscine nage
-  fractionnée et/ou Aqua tabata pour Émilie**, puis confirmer le périmètre avec lui.
-Données : production/rappels-utilisateur.json. Aucun de ces deux rappels n’est considéré traité.
+### Rappels aux étapes prévues
+-AVANT étape3, demander si le vert des muscles doit être identique au n°260 ; attendre réponse.
+-À construction application, rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie,
+  confirmer périmètre avant coder. Production/rappels-utilisateur.json reste non traité.
 
 ## 1b. Chantiers ouverts (pas bloquants, planifiés)
 

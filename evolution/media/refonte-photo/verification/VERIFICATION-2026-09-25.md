@@ -1090,3 +1090,49 @@ Rester étape2. PDF final quand tout prêt : seulement reprises, AVANT gauche / 
 lien téléchargeable dans le chat, validation utilisateur avant intégration.
 **Rappels maintenus** : AVANT étape3 poser question vert identique260 ; à construction app rappeler
 metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie, puis confirmer périmètre.
+
+
+## 77. Lot60 — trois propositions supplémentaires, aucune validation (26/09/2026)
+
+Workspace réinitialisé au commit initial : arbre propre, fetch/reset sur branche de session,
+reprise du dernier état distant **088ac98 (lot59)**, venv restauré. Aucun travail distant écrasé.
+Prescriptions relues pour26/38/85/87/204/265 avant génération.
+
+**8 appels génération, dont1 échec technique** :5 initiales38/85/87/204/265,
+reprise265 guidée par schéma indépendant,26 nouvelle stratégie vue large, reprise204 sans image.
+
+Propositions isolées NON VALIDÉES :
+-**38 curl marteau assis** : référence du37 corrigé, posture assise, prise neutre maintenue et
+  haltères verticaux en haut. Deux cases différentes, pieds visibles.
+-**87 élévations latérales haltères myo-reps femme** : véritable élévation vers les côtés, pas curl.
+  Le protocole myo-reps (séries/pauses) n’est pas modifié, l’image montre seulement le geste.
+-**265 étirement encadrement de porte** : essai1 refusé (seule paume au montant, avant-bras pas
+  vertical) ; essai2 schéma coude90°, avant-bras sur montant + petite fente avant. Amplitude douce
+  et couleur à apprécier. Recalage automatique -84px coupait le bras final : GIF reconstruit
+  depuis les demi-planches entières SANS recalage (180×440,2×500ms).
+
+Refus internes :
+-26 : mention ABS parasite, câble indépendant passant devant corps sans connexion à la corde,
+  faible flexion ; ne pas intégrer. Prochain schéma câble unique correctement relié.
+-85 : bras tendus départ, position haute proche tirage et poids coupés. Prochain schéma3D
+  coudes90°, avant-bras horizontaux même hauteur, cadre large.
+-204 : pronation au lieu de supination, menton sous barre ; reprise échouée techniquement.
+  Prochain référence des mains seules + schéma menton au-dessus barre.
+
+`verif-ids.py` OK sur6 identifiants ; toutes images lues pleine définition puis GIF relus.
+Mesures ROI dans `propositions/lot60/mesures.json` :38=0/7,87=0/0,265=686/0 pixels strict lime.
+Les teintes/ROI ne valent pas validation stylistique : réserves couleur ouvertes, pas d’uniformisation
+avant la question260. Contrôles review/lot60-propositions-homme.jpg et lot60-proposition-femme.jpg.
+Les3 GIF candidats sont UNIQUEMENT dans propositions/lot60/gif/, aucun GIF livré remplacé.
+
+**Total13 propositions sur26 points**, toutes NON approuvées :19/37/38/64/87/90/149/150/194/222/265/298/380.
+**13 sans proposition** :26/31/44/45/46/47/48/80/85/126/148/204/239.
+Les réserves de cadrage et de style des candidats des lots précédents restent ouvertes ;
+13 propositions ne veut PAS dire13 corrections techniquement terminées.
+Comparatif complet bloqué sur ces13 manquants ; aucun PDF final de corrections créé.
+Assertions : PDF principal/manifeste/état/numéros/TOUS GIF livrés inchangés. Aucun APK reconstruit.
+
+Étape2 maintenue. À la fin des reprises : PDF UNIQUEMENT exercices concernés, avant GAUCHE/après DROITE,
+lien téléchargeable, accord utilisateur avant toute intégration.
+Rappels inchangés : AVANT étape3 demander choix vert identique260 ; lors construction application
+rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie, confirmer avant codage.

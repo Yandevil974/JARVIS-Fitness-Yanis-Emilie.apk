@@ -5,24 +5,22 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot59 — ÉTAPE2, propositions AVANT validation
+## État prioritaire lot60 — ÉTAPE2, propositions AVANT validation utilisateur
 
-26 points ouverts,10 propositions NON VALIDÉES :19/37/64/90/149/150/194/222/298/380.
-16 sans proposition :26/31/38/44/45/46/47/48/80/85/87/126/148/204/239/265.
-Lot59 :10 générations, propositions90/194/222+copie298/380 ;126 et239 restent refusés.
-194 : disques coupés à reprendre avant intégration ;222/298 : eau hanches, immersion à apprécier.
-90 GIF sans recalage automatique pour garder mains/haltère complets. Toutes propositions isolées.
-Couleur jaune-vert au seuil lime strict nul pour plusieurs candidats ; ne pas anticiper choix260.
-Aucun GIF livré/PDF principal/manifeste/état remplacé. Aucune acceptation utilisateur reçue.
-Comparatif final seulement quand toutes reprises prêtes : AVANT gauche / APRÈS droite, seulement
-exercices concernés ; outil pdf-corrections-avant-apres.py refuse incomplet. Détails §76.
+26 points ouverts, aucune proposition approuvée. **13 propositions isolées** :19/37/38/64/87/90/
+149/150/194/222/265/298/380. **13 sans proposition** :26/31/44/45/46/47/48/80/85/126/148/204/239.
+Lot60 :8 appels dont1 échec ; nouvelles propositions38 marteau assis,87 élévation latérale,265 porte.
+26/85/204 refusés ; stratégies dans a-refaire.json et registre retours. Réserves couleur/cadrage
+anciennes ET nouvelles encore ouvertes, comptage proposition ≠ correction achevée. VERIFICATION §77.
+Aucun GIF livré/PDF principal/manifeste/état/map remplacé. Comparatif final attend toutes reprises :
+UN PDF téléchargeable uniquement des exercices concernés, AVANT GAUCHE / APRÈS DROITE.
+Outil pdf-corrections-avant-apres.py bloque si incomplet ; utiliser GIF AVANT au commit figé.
 
-### Rappels utilisateur OBLIGATOIRES (ne pas oublier aux prochains chats)
-1. **AVANT de passer à l’étape3** : demander si le vert musculaire doit être identique au **n°260**
-   (elliptique-fractionné femme). Attendre réponse, ne pas uniformiser de soi-même.
-2. **À la construction de l’application** : rappeler l’ajout de **metcon + piscine nage fractionnée
-   et/ou Aqua tabata pour Émilie** ; demander confirmation avant codage de ces ajouts.
-Registre : production/rappels-utilisateur.json (décisions pas encore prises).
+### Rappels utilisateur OBLIGATOIRES
+1. AVANT étape3, demander si le vert doit être identique au n°260 ; ATTENDRE réponse, pas de recoloration automatique.
+2. À construction application, rappeler metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie,
+   puis confirmer périmètre avant coder. Production/rappels-utilisateur.json fait foi.
+Zottman46/47/48 : format4 positions autorisé, pas les images. 148=homme à3 jambes,149/150 Pallof.
 
 ## 1. Où l'on en est (mesuré, pas estimé)
 

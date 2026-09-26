@@ -1,0 +1,80 @@
+[
+  {
+    "numero": 38,
+    "roi": [
+      125,
+      130,
+      285,
+      260
+    ],
+    "size": [
+      396,
+      440
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 0,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 7,
+        "duree": 500
+      }
+    ],
+    "validation_utilisateur": false
+  },
+  {
+    "numero": 87,
+    "roi": [
+      125,
+      80,
+      275,
+      165
+    ],
+    "size": [
+      387,
+      440
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 0,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 0,
+        "duree": 500
+      }
+    ],
+    "validation_utilisateur": false
+  },
+  {
+    "numero": 265,
+    "roi": [
+      62,
+      120,
+      133,
+      198
+    ],
+    "size": [
+      180,
+      440
+    ],
+    "frames": [
+      {
+        "frame": 1,
+        "vert_roi": 686,
+        "duree": 500
+      },
+      {
+        "frame": 2,
+        "vert_roi": 0,
+        "duree": 500
+      }
+    ],
+    "validation_utilisateur": false
+  }
+]
