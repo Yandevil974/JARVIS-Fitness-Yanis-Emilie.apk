@@ -1,19 +1,17 @@
 # 🚩 PASSATION — reprendre la refonte des visuels dans un nouveau chat
 
-## 🚩 Lot68 tour3 (27/09/2026) — 26, 85 ET 204 proposés : 26/26 propositions prêtes, 6/10 appels
+## 🚩 Lot68 tour4 (27/09/2026) — réserves de teinte traitées 19/44/45/80, 4/10 appels
 
-**Budget : 6/10 ce tour (204 : 4 dont 2 éditions refusées par le modèle). Restent 4.**
-**Proposition n°204 isolée NON VALIDÉE** : `propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif`
-(SHA256 4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10, 385×440, 2×500 ms ; hang mort bras
-tendus à gauche, menton clairement au-dessus de la barre à droite, supination lisible aux deux cases grâce au
-guide de prise ; vert 1840/1083 px ; réserves : échelle plus grande en fin — saut de case, défaut aussi présent
-dans l'AVANT livré —, marge menton modérée). Méthode : éditions hang→haut refusées par le modèle → retour à la
-recette DIPTYQUE une génération avec guides en contrainte.
-**Propositions n°26 et n°85 inchangées** (SHA 5342c88e… / 1813e380…), NON VALIDÉES.
-**26 propositions non validées sur 26 points — 0 sans proposition.** Aucune approuvée ; le « T » reçu NE VALIDE RIEN.
-Reste avant PDF : RÉSERVES des propositions (registres), puis PDF AVANT gauche/APRÈS droite des seules reprises
-via `tools/pdf-corrections-avant-apres.py`, accord utilisateur avant intégration. Rien d'intégré, aucun livré/
-PDF/manifeste modifié, pas de valide-couples.py. **Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.**
+**Workspace reset puis récupéré sans perte (239e2c6).** Tour consacré aux RÉSERVES :
+- **19** : olive → lime strict PIL (plante épargnée, strict 1809/1265 px) — SHA b1c1a1df…, original .avant-recolor.gif.
+- **44/45** : cyan diffus → lime strict PIL (case2 0→545 px strict) — SHA b7b404d8…, originaux .avant-recolor.gif.
+- **80** : aplats mouchetés → plastron lime uniforme (2 éditions génératives ; fin après 2 échecs « peau » +
+  remplissage) — SHA 2e42b553…, GIF sous lot68, review/lot68-proposition-80-reprise.jpg. Réserves restantes 80 :
+  2 taches sombres (mamelons), dérive légère visage fin, échelle poids, flexion/trajectoire.
+Rapport : propositions/lot68/recolorisation-reserves.json. **Toujours 26 propositions NON VALIDÉES, 0 approuvée ;
+recolorisation ≠ accord.** Reste : réserves non-teinte, puis PDF AVANT gauche/APRÈS droite des seules reprises
+(via `tools/pdf-corrections-avant-apres.py`, SHAs registre à jour pour 19/44/45/80, VÉRIFIER les autres), accord
+avant intégration. 6/10 appels restants ce tour. **Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.**
 AVANT étape3 : question vert n°260, attendre. Construction app : rappeler metcon + piscine nage fractionnée
 et/ou Aqua Tabata pour Émilie. Rappels non traités. Maintenir le 🚩.
 
@@ -22,11 +20,12 @@ session neuve (sans mémoire de la conversation précédente) puisse continuer s
 
 ---
 
-## État prioritaire lot68 tour3 — ÉTAPE2, propositions AVANT validation utilisateur
+## État prioritaire lot68 tour4 — ÉTAPE2, propositions AVANT validation utilisateur
 
 **26 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
-**0 sans proposition.** Prochain travail : réserves des propositions (registres), puis PDF reprises.
-Lot68 :21 générations cumulées (26 : 8 ; 85 : 7 ; 204 : 6 dont 1 échec + 2 refus modèle) ; tour3 : 6/10.
+**Réserves de teinte TRAITÉES tour4 : 19, 44, 45, 80** (PIL et/ou édition ; originaux .avant-recolor.gif).
+Prochain travail : réserves restantes (échelle poids 80, main masquée 44/45, tapis 26, cadrages…), puis PDF reprises.
+Lot68 :25 générations cumulées ; tour4 : 4/10 (2 pour 80, 1 fin-remplissage comptée, 1 début).
 Historique : Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.

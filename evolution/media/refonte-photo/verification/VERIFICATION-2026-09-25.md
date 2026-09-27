@@ -1547,3 +1547,36 @@ avant « tout prêt ») ; pas de valide-couples.py ; aucun build APK. Push arena
 Suite : réserves des 26 propositions (≤10 générations/tour), PDF AVANT gauche/APRÈS droite des seules
 reprises quand TOUT est prêt, accord avant intégration. AVANT étape3 : question vert identique260.
 Rappels app Émilie : metcon + piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.
+
+## 90. Lot68 tour4 — réserves de teinte 19/44/45/80 (27/09/2026)
+
+Workspace reset à d721868 en début de tour : récupéré sans perte (merge --ff-only 239e2c6), venv recréé.
+Question utilisateur « T'as presque terminé les corrections ? » → réponse : couverture 26/26 propositions
+OUI, validation et réserves restantes NON ; tour consacré aux réserves. **4/10 appels utilisés.**
+
+Méthode PIL : recolorisation des pixels verts/olive/cyan vers le lime strict (référence n°260 ≈ RGB
+154,205,50), luminance préservée (échelle L/lum_lime, bornes), fusion 75–80 %, masque BORNÉ à la zone
+muscle (plantes du décor exclues), original sauvegardé en .avant-recolor.gif. Itérations honnêtes : n°19 a
+demandé 3 passes (1re : plante recoloriée par erreur → refaite ; 2e : masque trop étroit ; 3e : signature
+olive (g-b>20, g-r<25) + zone cuisse x[122,182] y[205,268] coupée au feuillage — le masque visible magenta
+a guidé la géométrie). Résultats mesurés : 19 strict patch 1809/1265 px (100 % masqué), plante intacte
+(avant=après 454/185 px) ; 44/45 case1 832→1407, case2 0→545 px strict ; SHA mis à jour dans
+retours-utilisateur (b1c1a1df…, b7b404d8…) et rapport propositions/lot68/recolorisation-reserves.json.
+
+**80 (génératif, 2 éditions + 2 échecs)** : début 80-debut-propre.png OK direct (plastron lime uniforme) ;
+fin : édition « lisser l'intérieur » → plastron redevenu peau (ÉCHEC 1), 2e tentative idem (ÉCHEC 2),
+3e approche « remplir le contour vert » depuis la 1re édition → plastron plein lime (SUCCÈS). GIF refait
+sous propositions/lot68/gif/homme/ecartes-halteres-homme.gif (788×440, 2×500 ms), SHA
+2e42b553c16127a235ae528358a4f1c00375c2d98f5924b588bd7707096fec2a, strict ROI pec 770/975 px (ROI
+historique [370,145,435,160]), review/lot68-proposition-80-reprise.jpg. Réserves restantes 80 : 2 taches
+sombres résiduelles (positions mamelons) dans le lime, légère dérive du visage en fin (édition), échelle
+poids, flexion coudes/trajectoire — TOUTES documentées, aucune masquée.
+
+**Rien d'intégré** : gif/ livré, manifeste, état, PDF principal inchangés ; pas de valide-couples.py ; les
+candidats recolorisés restent des PROPOSITIONS (recolorisation ≠ accord). Registres (retours, a-refaire)
+mis à jour avec « reserve_traitee_lot68 » + réserves restantes explicites. Passations + CE-QUI-COINCE à jour.
+Suite : inventaire précis des réserves restantes (échelle poids 80, main masquée 44/45, tapis 26, cadrages,
+trajectoires…), correction PIL d'abord puis générative si nécessaire, puis PDF AVANT gauche/APRÈS droite des
+seules reprises via tools/pdf-corrections-avant-apres.py (SHAs registre : 19/44/45/80 à jour, VÉRIFIER les
+autres entrées avant exécution), lien chat, ACCORD utilisateur avant intégration. AVANT étape3 : question
+vert identique260. Rappels app Émilie : metcon + piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.

@@ -1,0 +1,78 @@
+{
+ "lot": 68,
+ "operation": "recolorisation PIL vers lime strict (référence 260 ≈ RGB 154,205,50), masque borné muscle, sauvegarde .avant-recolor.gif",
+ "cibles": [
+  {
+   "numero": 19,
+   "gif": "propositions/lot57/gif/femme/bulgarian-split-squat-halteres-femme.gif",
+   "sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
+   "frames": [
+    {
+     "patch_px": 1809,
+     "strict_patch": 1809,
+     "plante_avant": 454,
+     "plante_apres": 454
+    },
+    {
+     "patch_px": 1265,
+     "strict_patch": 1265,
+     "plante_avant": 185,
+     "plante_apres": 185
+    }
+   ],
+   "note": "passe finale : signature olive (g-b>20, g-r<25) + zone x[122,182] y[205,268] coupée au feuillage ; plante intacte (avant=apres)"
+  },
+  {
+   "numero": 44,
+   "gif": "propositions/lot64/gif/homme/curl-scott-haltere-neutre-homme.gif",
+   "sha256": "b7b404d880df5f5269522e017736fd104a189daaee2697efdde0747487d7cc07",
+   "frames": [
+    {
+     "mask_px": 2321,
+     "strict_lime_avant": 832,
+     "strict_lime_apres": 1407
+    },
+    {
+     "mask_px": 1239,
+     "strict_lime_avant": 0,
+     "strict_lime_apres": 545
+    }
+   ]
+  },
+  {
+   "numero": 45,
+   "gif": "propositions/lot64/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+   "sha256": "b7b404d880df5f5269522e017736fd104a189daaee2697efdde0747487d7cc07",
+   "frames": [
+    {
+     "mask_px": 2321,
+     "strict_lime_avant": 832,
+     "strict_lime_apres": 1407
+    },
+    {
+     "mask_px": 1239,
+     "strict_lime_avant": 0,
+     "strict_lime_apres": 545
+    }
+   ]
+  },
+  {
+   "numero": 80,
+   "gif": "propositions/lot67/gif/homme/ecartes-halteres-homme.gif",
+   "sha256": "49684c857162d524e654d546f8b6aed2cd5cf45127a52eedb2bf73ac5bead4f8",
+   "frames": [
+    {
+     "mask_px": 2009,
+     "strict_lime_avant": 2433,
+     "strict_lime_apres": 2433
+    },
+    {
+     "mask_px": 1937,
+     "strict_lime_avant": 1628,
+     "strict_lime_apres": 2226
+    }
+   ]
+  }
+ ],
+ "validation_utilisateur": false
+}

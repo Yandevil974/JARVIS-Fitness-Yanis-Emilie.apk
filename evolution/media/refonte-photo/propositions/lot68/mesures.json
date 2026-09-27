@@ -1,124 +1,141 @@
 {
-  "lot68": {
-    "note": "mesures consolidées des propositions isolées lot68",
-    "propositions": [
-      {
-        "numero": 26,
-        "identifiant": "crunch-a-la-poulie|homme",
-        "size": [
-          788,
-          440
-        ],
-        "frames": 2,
-        "duration_ms": 500,
-        "roi_abdominaux": [
-          220,
-          176,
-          394,
-          286
-        ],
-        "strict_lime": [
-          457,
-          250
-        ],
-        "strict_lime_corps_hors_plantes": [
-          512,
-          286
-        ],
-        "sources": [
-          "phases/crunch-depart-2.png",
-          "phases/crunch-fin-5.png"
-        ],
-        "strategie": "brief-reprise : arrivée construite d'abord (5 essais dont 4 éditions guidées), départ édité depuis l'arrivée (2 essais)",
-        "generations_lot68": 8,
-        "validation_utilisateur": false
-      },
-      {
-        "numero": 85,
-        "identifiant": "elevations-laterales-coude-a-90|homme",
-        "size": [
-          788,
-          440
-        ],
-        "frames": 2,
-        "duration_ms": 500,
-        "roi_deltoide": [
-          320,
-          85,
-          480,
-          145
-        ],
-        "strict_lime": [
-          975,
-          928
-        ],
-        "sources": [
-          "phases/85-depart-2.png",
-          "phases/85-fin-4.png"
-        ],
-        "guide": "guides/85-guide-plan-horizontal.png (position haute, 3 éditions guidées depuis 85-fin.png)",
-        "strategie": "position haute construite avec guide 3D du plan coude/poignet, départ édité depuis la haute",
-        "generations_lot68_numero85": 7,
-        "reserves": [
-          "léger débord du vert vers le haut du bras (deltoïde antérieur) à apprécier",
-          "paume de départ vers le corps lisible mais prise petite à cette échelle",
-          "écarture des coudes à apprécier par l utilisateur"
-        ],
-        "validation_utilisateur": false
-      },
-      {
-        "numero": 204,
-        "identifiant": "tractions-supination-chin-up|homme",
-        "size": [
-          385,
-          440
-        ],
-        "frames": 2,
-        "duration_ms": 500,
-        "recalage_decoupe": [
-          4,
-          4
-        ],
-        "vert_total_frames": [
-          1840,
-          1083
-        ],
-        "vert_bbox_frames": [
-          [
-            11,
-            236,
-            176,
-            309
-          ],
-          [
-            38,
-            183,
-            139,
-            314
-          ]
-        ],
-        "sources": [
-          "planches/204-planche-brute.png (diptyque une génération, guide prise supination)"
-        ],
-        "strategie": "editions hang->haut refusées par le modèle (5 appels) ; retour à la recette diptyque historique en 1 génération",
-        "reserves": [
-          "echelle du corps plus grande en fin (cadrage plus serré) : GIF saute au changement de case — défaut aussi présent dans l'AVANT livré",
-          "menton au-dessus de la barre lisible mais marge modérée",
-          "supination lisible aux deux cases (pouces croisés face caméra)"
-        ],
-        "validation_utilisateur": false
-      }
+ "lot68": {
+  "note": "mesures consolidées des propositions isolées lot68",
+  "propositions": [
+   {
+    "numero": 26,
+    "identifiant": "crunch-a-la-poulie|homme",
+    "size": [
+     788,
+     440
     ],
-    "echecs_generation_lot68": [
-      "appel manquant fichier guide (85-fin, rejeté immédiatement)",
-      "204-depart : réponse modèle sans image (plafond atteint)",
-      "tour3 : aucune (6/6 succes) ; tour precedent : 204-depart reponse sans image"
+    "frames": 2,
+    "duration_ms": 500,
+    "roi_abdominaux": [
+     220,
+     176,
+     394,
+     286
     ],
-    "validation_utilisateur_globale": false,
-    "generations_204": {
-      "tours_precedents": 3,
-      "ce_tour": 6,
-      "echecs_cumules": 1
-    }
-  }
+    "strict_lime": [
+     457,
+     250
+    ],
+    "strict_lime_corps_hors_plantes": [
+     512,
+     286
+    ],
+    "sources": [
+     "phases/crunch-depart-2.png",
+     "phases/crunch-fin-5.png"
+    ],
+    "strategie": "brief-reprise : arrivée construite d'abord (5 essais dont 4 éditions guidées), départ édité depuis l'arrivée (2 essais)",
+    "generations_lot68": 8,
+    "validation_utilisateur": false
+   },
+   {
+    "numero": 85,
+    "identifiant": "elevations-laterales-coude-a-90|homme",
+    "size": [
+     788,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "roi_deltoide": [
+     320,
+     85,
+     480,
+     145
+    ],
+    "strict_lime": [
+     975,
+     928
+    ],
+    "sources": [
+     "phases/85-depart-2.png",
+     "phases/85-fin-4.png"
+    ],
+    "guide": "guides/85-guide-plan-horizontal.png (position haute, 3 éditions guidées depuis 85-fin.png)",
+    "strategie": "position haute construite avec guide 3D du plan coude/poignet, départ édité depuis la haute",
+    "generations_lot68_numero85": 7,
+    "reserves": [
+     "léger débord du vert vers le haut du bras (deltoïde antérieur) à apprécier",
+     "paume de départ vers le corps lisible mais prise petite à cette échelle",
+     "écarture des coudes à apprécier par l utilisateur"
+    ],
+    "validation_utilisateur": false
+   },
+   {
+    "numero": 204,
+    "identifiant": "tractions-supination-chin-up|homme",
+    "size": [
+     385,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "recalage_decoupe": [
+     4,
+     4
+    ],
+    "vert_total_frames": [
+     1840,
+     1083
+    ],
+    "vert_bbox_frames": [
+     [
+      11,
+      236,
+      176,
+      309
+     ],
+     [
+      38,
+      183,
+      139,
+      314
+     ]
+    ],
+    "sources": [
+     "planches/204-planche-brute.png (diptyque une génération, guide prise supination)"
+    ],
+    "strategie": "editions hang->haut refusées par le modèle (5 appels) ; retour à la recette diptyque historique en 1 génération",
+    "reserves": [
+     "echelle du corps plus grande en fin (cadrage plus serré) : GIF saute au changement de case — défaut aussi présent dans l'AVANT livré",
+     "menton au-dessus de la barre lisible mais marge modérée",
+     "supination lisible aux deux cases (pouces croisés face caméra)"
+    ],
+    "validation_utilisateur": false
+   }
+  ],
+  "echecs_generation_lot68": [
+   "appel manquant fichier guide (85-fin, rejeté immédiatement)",
+   "204-depart : réponse modèle sans image (plafond atteint)",
+   "tour3 : aucune (6/6 succes) ; tour precedent : 204-depart reponse sans image"
+  ],
+  "validation_utilisateur_globale": false,
+  "generations_204": {
+   "tours_precedents": 3,
+   "ce_tour": 6,
+   "echecs_cumules": 1
+  },
+  "recolorisation_reserves": [
+   {
+    "numero": 80,
+    "methode": "2 éditions génératives (début OK direct ; fin : 2 échecs peau puis remplissage OK)",
+    "gif": "propositions/lot68/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "2e42b553c16127a235ae528358a4f1c00375c2d98f5924b588bd7707096fec2a",
+    "roi_pectoraux_strict_lime": [
+     770,
+     975
+    ],
+    "reserves": [
+     "deux taches sombres résiduelles (positions des mamelons) à apprécier dans le comparatif",
+     "visage case fin légèrement différent de la source lot67 (dérive légère édit)"
+    ],
+    "validation_utilisateur": false
+   }
+  ]
+ }
 }

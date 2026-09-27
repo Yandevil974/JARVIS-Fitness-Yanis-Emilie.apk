@@ -19,9 +19,10 @@
    "proposition": {
     "lot": 57,
     "gif": "evolution/media/refonte-photo/propositions/lot57/gif/femme/bulgarian-split-squat-halteres-femme.gif",
-    "sha256": "a96e7d8435e72a0614e981e571dbb2d514c115e0899c67d1f0fec8e80ad2942b",
+    "sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
     "validation_utilisateur": false,
-    "controle_final_requis": true
+    "controle_final_requis": true,
+    "reserve_traitee_lot68": "teinte olive -> lime strict (PIL, patch cuisse x[122,182] y[205,268], plante du décor intacte, original .avant-recolor.gif)"
    },
    "avant": {
     "gif": "evolution/media/refonte-photo/gif/femme/bulgarian-split-squat-halteres-femme.gif",
@@ -148,7 +149,8 @@
     "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-neutre-homme.gif",
     "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
     "validation_utilisateur": false,
-    "controle_final_requis": true
+    "controle_final_requis": true,
+    "reserve_traitee_lot68": "vert cyan diffus -> lime strict (PIL, zone bras, case2 0->545 px strict), original .avant-recolor.gif"
    }
   },
   {
@@ -170,7 +172,8 @@
     "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
     "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
     "validation_utilisateur": false,
-    "controle_final_requis": true
+    "controle_final_requis": true,
+    "reserve_traitee_lot68": "même recolorisation que 44 (paire partagée), original .avant-recolor.gif"
    }
   },
   {
@@ -281,10 +284,11 @@
    },
    "proposition": {
     "lot": 67,
-    "gif": "evolution/media/refonte-photo/propositions/lot67/gif/homme/ecartes-halteres-homme.gif",
-    "sha256": "13a016d05e32d03a2c657fbd735f3c618d563bea5fb12493df0198b5187d61ec",
+    "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "2e42b553c16127a235ae528358a4f1c00375c2d98f5924b588bd7707096fec2a",
     "validation_utilisateur": false,
-    "controle_final_requis": true
+    "controle_final_requis": true,
+    "reserve_traitee_lot68": "aplats mouchetés -> plastron lime uniforme (2 éditions génératives ; début OK direct, fin après remplissage) ; réserves restantes : 2 taches sombres (mamelons), légère dérive du visage en fin"
    }
   },
   {

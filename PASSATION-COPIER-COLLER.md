@@ -1,36 +1,37 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour3, 27 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour4, 27 septembre 2026
 
-## 🚩 Lot68 tour3 — 26, 85 ET 204 proposés : les 3 reprises manquantes existent, 6/6 appels (27/09/2026)
+## 🚩 Lot68 tour4 — réserves de teinte traitées 19/44/45/80, 4/10 appels (27/09/2026)
 
-**Budget génération : 6/10 utilisés ce tour, tous réussis (204 : 4, dont 2 éditions hang→haut REFUSÉES par
-le modèle + 1 hang frais + 1 diptyque ; plus 2 au total à bien vérifier — détail VERIFICATION §89). Restent 4.**
-**LES 26 POINTS ONTOURNT DÉSORMAIS TOUS UNE PROPOSITION : 26 propositions non validées (aucune approuvée)**
-= 19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
-**Proposition n°204 (tractions supination, Yanis) — NON VALIDÉE :**
-`propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif` — SHA256
-4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10, 385×440 (comme l'AVANT livré), 2×500 ms,
-DÉBUT gauche (hang mort bras complètement tendus, menton une tête sous la barre) / FIN droite (menton
-clairement AU-DESSUS de la barre), prise supination lisible aux DEUX cases (paumes face caméra, pouces
-croisés) grâce au guide 204-guide-prise-supination.png. Vert (grand dorsal) frames 1840/1083 px.
-Réserves : échelle du corps plus grande en FIN (cadrage plus serré, GIF saute au changement de case —
-défaut aussi présent dans l'AVANT livré) ; marge menton/barre modérée.
-**Propositions n°26** (SHA 5342c88e…ab46f3fbe) **et n°85** (SHA 1813e380…711c4d3) inchangées, NON VALIDÉES.
+**⚠️ Workspace reset à d721868 en début de tour : récupéré sans perte (fetch+merge --ff-only de la
+branche session, 239e2c6).** Réponse utilisateur : « Poursuis / T'as presque terminé les corrections ? » —
+répondu : couverture 26/26 OUI, mais réserves restantes → tour consacré aux réserves.
 
-**Reste à faire avant le PDF : les RÉSERVES des propositions existantes** (registres retours-utilisateur /
-a-refaire : teintes olive 19, débords verts 44/45/80/85, échelle poids 80, tapis 26, trajectoires, cadrages…)
-puis **PDF AVANT gauche/APRÈS droite des seules reprises via `tools/pdf-corrections-avant-apres.py`**,
-lien chat, ACCORD utilisateur avant intégration. Le « T » reçu ce tour NE VALIDE RIEN (règle des lettres
-isolées). ≤10 appels/tour échecs compris. Méthode utile : quand le modèle refuse d'éditer une pose
-(ex. hang→traction), revenir au DIPTYQUE une génération avec guides en contrainte.
-Aucun PDF final ni APK ce tour ; aucun livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
-AVANT étape3 : question vert identique n°260, ATTENDRE la réponse. Construction app : rappeler metcon +
-piscine nage fractionnée et/ou Aqua Tabata pour Émilie. Rappels-utilisateur.json non traité.
-Vert mesuré sur le CORPS (plantes exclues). Pas de famille C, visage A, maîtres homme/femme, début à
-gauche, pas de miroir/rotation globale, prescription inchangée.
-**Branche imposée : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (contenu 01a0dcad repris à 0a4327a ;
-deux resets d721868 déjà survenus le 27/09, récupérés sans perte par fetch+merge --ff-only). Ne jamais
-pousser main. Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md,
-tools/pdf-revue-331.py. Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
+**Réserves de TEINTE traitées (4/10 appels utilisés, 6 restants) :**
+- **n°19** (Bulgarian split femme) : olive sombre → lime STRICT par PIL (patch cuisse x[122,182] y[205,268],
+  signature olive g-b>20 & g-r<25 ; plante du décor INTACTE vérifiée avant=après). SHA  b1c1a1dfbc11cf58…
+  Résiduel à apprécier : léger chevauchement blocky sur pointes de feuilles (case1).
+- **n°44/45** (curl Scott haltere neutre) : vert cyan diffus → lime STRICT par PIL (zone bras ; case2
+  0→545 px strict). SHA b7b404d880df… Réserves restantes : main basse masquée par disque, dimensions haltère, décor gris.
+- **n°80** (écartés haltères, banc incliné) : aplats mouchetés → plastron lime UNIFORME par 2 éditions
+  génératives (début OK direct ; fin : 2 échecs « plastron devenu peau » puis remplissage OK) ; strict ROI pec
+  770/975 px. SHA 2e42b553c16127a2… Réserves restantes : 2 taches sombres (positions mamelons), légère
+  dérive du visage en fin, échelle poids, flexion coudes/trajectoire. review/lot68-proposition-80-reprise.jpg.
+Toutes les sorties restent sous propositions/ (GIF recolorisés ÉCRASENT les candidats lot57/64/67 avec
+original .avant-recolor.gif conservé ; 80 : nouveau GIF sous lot68). Rapport : propositions/lot68/recolorisation-reserves.json.
+**TOUJOURS 26 propositions NON VALIDÉES (0 approuvée) — recolorisation ≠ accord utilisateur.**
+**Reste avant PDF :** réserves non-teinte (échelle poids 80, main masquée 44/45, dérives, tapis 26, cadrages…)
+→ à lister précisément, corriger si possible (PIL d'abord, génératif ensuite), puis **PDF AVANT gauche/APRÈS
+droite des seules reprises** via `tools/pdf-corrections-avant-apres.py` (verifie SHA — mettre à jour les SHA
+dans le registre AVANT de le lancer : FAIT pour 19/44/45/80, VÉRIFIER les autres entrées), lien chat, ACCORD
+avant intégration. Réponse « presque terminé » : il reste les réserves + votre revue ; les 26 propositions
+couvrent tous les points, mais rien n'est validé ni intégré.
+≤10 appels/tour échecs compris. Aucun livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
+AVANT étape3 : question vert identique n°260, ATTENDRE. Construction app : rappeler metcon + piscine nage
+fractionnée et/ou Aqua Tabata pour Émilie. Vert mesuré sur le CORPS (plantes exclues). Pas de famille C,
+visage A, début à gauche, pas de miroir/rotation globale, prescription inchangée.
+**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (resets d721868 ×3 le 27/09, récupérés sans perte).
+Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md, tools/pdf-revue-331.py.
+Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 

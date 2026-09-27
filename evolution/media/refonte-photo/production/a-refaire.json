@@ -7,7 +7,7 @@
    "motif": "Bulgarian Split : jambe pliée de la fille à l’envers.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Genou arrière fléchi dans le bon sens, même jambe. Amplitude à apprécier (départ déjà fléchi). Teinte olive : vert lime à renforcer avant intégration."
+    "Lot68 : réserve teinte TRAITÉE — olive sombre recolorisé lime strict par PIL (patch cuisse, plante épargnée, strict 1809/1265 px), original en .avant-recolor.gif. À re-vérifier dans le comparatif avant accord."
    ],
    "validationUtilisateurRequise": true
   },
@@ -62,7 +62,7 @@
    "motif": "Curl Scott : bras de départ non posé sur le pupitre.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot64 : prise haute marteau obtenue par édition du gros plan, recomposée sans déplacer le corps. Bras/coude sur pupitre en bas et haut ; prise basse axe profondeur depuis lot63. Proposition partagée avec45 (même geste, prescriptions conservées). Réserves : main basse partiellement masquée par disque, dimensions/rendu haltère, vert diffus cyan non lime et débordant, décor gris ; aucun accord ni intégration."
+    "Lot68 : réserve teinte TRAITÉE — cyan diffus recolorisé lime strict par PIL (case2 0->545 px strict), original en .avant-recolor.gif. Réserves restantes : main basse masquée par disque, dimensions haltère, décor gris."
    ],
    "validationUtilisateurRequise": true
   },
@@ -73,7 +73,7 @@
    "motif": "Tourner la paume au départ.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot64 : même paire Scott neutre que44, main haute en marteau et appui sur pupitre. Prescriptions spécifiques45 inchangées. Réserves de lecture prise basse, dimensions haltère, teinte/débordement vert et décor gris identiques44 ; proposition non validée."
+    "Lot68 : réserve teinte TRAITÉE comme 44 (paire partagée). Réserves restantes : lecture prise basse, dimensions haltère, décor gris."
    ],
    "validationUtilisateurRequise": true
   },
@@ -128,7 +128,7 @@
    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot67 : proposition sur banc visiblement incliné selon confirmation utilisateur. Départ bras ouverts, paumes orientées vers le haut, mains fermées. Arrivée haltères rapprochés au-dessus du haut de poitrine et bras davantage allongés, après refus des arrivées trop fléchies. Corps/bench/feet entièrement cadrés, sans miroir ni recalage. Réserves : flexion résiduelle des coudes et trajectoire à apprécier, taille apparente des haltères différente en haut, légère variation du buste/tête et rendu des aplats verts. Inclinaison non mesurée ; angle non prescrit. Séries/répétitions/tempo inchangés. Aucune validation ni intégration."
+    "Lot68 : réserve aplats TRAITÉE — plastron lime uniforme (début OK direct, fin après 2 échecs peau + remplissage ; strict 770/975 px ROI pec). Réserves restantes : 2 taches sombres (mamelons), légère dérive visage en fin, échelle poids, flexion coudes/trajectoire."
    ],
    "validationUtilisateurRequise": true
   },
