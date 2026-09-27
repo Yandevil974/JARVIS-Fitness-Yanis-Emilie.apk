@@ -35,6 +35,10 @@ vert clairement visible et suivant les formes anatomiques, jamais une simple pla
 par `verif-ids.py` et `refonte-sheet.py`, mais 26 et 80 ont encore des réserves Le n°80 lot69 a été refusé : prise tournée en fin ; lot70 également refusé ; lot71 était trop plié ; la photo jointe précise la cible : bras presque tendus rapprochés au-dessus du torse comme un clap, sans rotation. Lot73 reprend cette cible. Le PDF ciblé 3 pages (`review/CORRECTIONS-ciblees-lot69.pdf`) a été actualisé, toujours non validé ; le PDF complet 26 pages reste à refaire. Statut :
 révisions demandées, 0 approbation, 0 intégration ; livrés intacts. Voir VERIFICATION §99 et `retours-utilisateur-2026-09-26.json`.
 
+**N°80 : lot73 refusé explicitement** — l’utilisateur constate encore la main tournée quand le bras monte. Lot74 a aussi reproduit l’erreur et est
+écarté. La photo fixe la cible (bras presque tendus réunis au-dessus du torse comme un clap, sans rotation bras/mains, banc incliné). Page80 du PDF
+ciblé précédent obsolète pour validation ; reprendre avec guide visuel et contrôle de la prise avant tout PDF. Voir VERIFICATION §100. Livrés intacts.
+
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
 La relecture interne antérieure ne remplace pas votre validation.

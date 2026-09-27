@@ -61,6 +61,14 @@ NE JAMAIS pousser sur main ; ne jamais supprimer/renommer la racine du dépôt n
   `review/CORRECTIONS-ciblees-lot69.pdf` (26, 44/45, 80, AVANT/ÉBAUCHE). Le comparatif complet 26 pages n’est pas régénéré.
   Aucun approuvé, aucune intégration ; les GIF livrés restent intacts. La page 80 montre la révision lot73. Voir VERIFICATION §99.
 
+
+
+### Refus utilisateur — n°80 (27/09)
+L’utilisateur refuse explicitement lot73 : « toujours pareil », main tournée quand le bras monte. Reconnaître l’échec ; lot73 et nouvel essai lot74
+ne sont pas valides. Cible de la photo : départ bras ouverts ; fin bras presque tendus ramenés au-dessus du torse, mains/haltères réunis comme
+pour taper dans les mains ; aucun pivot/rotation bras, poignets ou mains ; garder le banc incliné. La page 80 du PDF ciblé précédent est obsolète
+et ne doit pas être utilisée pour valider. Voir VERIFICATION §100. Aucune modification des GIFs livrés.
+
 ## 4. CE QUE J'ATTENDS AU PROCHAIN CHAT (réponses utilisateur à obtenir, pas à deviner)
 1. **Validation par numéro** : l'utilisateur dira « OK les 26 », ou « OK : 19, 26, 31 … » (liste), ou
    « je relis le PDF ». Une phrase générale ne suffit pas à intégrer ; une LETTRE ISOLÉE (T, Y, E…) est une

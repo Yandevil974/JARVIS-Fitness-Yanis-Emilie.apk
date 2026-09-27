@@ -403,9 +403,15 @@
     "frames": 2,
     "duration_ms": 500,
     "validation_utilisateur": false,
-    "statut": "brouillon_non_valide",
+    "statut": "refuse_par_utilisateur_2026-09-27",
     "correction_demandee": "Départ ouvert à gauche ; fin bras presque tendus vers le haut et rapprochés jusqu’à réunir les mains/haltères au-dessus du torse comme un clap ; aucune rotation des bras/mains. Basé sur la référence visuelle utilisateur.",
-    "controle_requis": "Confirmer la trajectoire de clap et prise constante ; vérifier la continuité de cadrage (largeur frame 348 px) et le vert anatomique séparément."
+    "controle_requis": "Confirmer la trajectoire de clap et prise constante ; vérifier la continuité de cadrage (largeur frame 348 px) et le vert anatomique séparément.",
+    "note_refus": "L’utilisateur dit que la main tourne encore lorsque le bras monte ; ne pas valider, intégrer ou présenter comme correction réussie."
+   },
+   "retour_revision_utilisateur_2026_09_27_5": "Refus explicite : « Non, je valide pas, c’est toujours pareil. Tu tournes la main quand le bras est en haut. » La référence utilisateur est la cible : bras presque tendus ramenés au-dessus du torse, mains/haltères rapprochés comme pour taper dans les mains, sans rotation des bras ni des mains.",
+   "revision_tentative_lot74": {
+    "statut": "rejet_interne_non_retenu",
+    "note": "Un nouvel essai image unique a reproduit la même erreur d’orientation ; supprimé du lot actif, aucune proposition GIF créée."
    }
   },
   {
@@ -771,9 +777,9 @@
    "disposition": "AVANT proposition précédente / APRÈS ébauche lot69 ; DÉBUT et FIN visibles",
    "sha256": "d905b68a74a2bcd39d4c0e54ce14fedd5466c952cc27b87cd4f262aa8c21e1d6",
    "octets": 1095998,
-   "statut": "brouillon_non_valide",
+   "statut": "a_reviser_apres_refus_utilisateur_2026-09-27",
    "gif_livres_remplaces": false,
-   "note": "PDF limité aux corrections demandées par l’utilisateur. Les ébauches restent à contrôler et ne valent ni validation ni intégration.",
+   "note": "La page 80 montre lot73, refusé explicitement par l’utilisateur car la main tourne encore en position haute. Ne pas utiliser ce PDF pour valider le n°80 tant qu’une nouvelle correction conforme n’est pas produite.",
    "revision_80": "lot73 créé depuis la référence visuelle utilisateur; bras ouverts vers bras presque tendus rapprochés au-dessus du torse sans rotation"
   }
  },

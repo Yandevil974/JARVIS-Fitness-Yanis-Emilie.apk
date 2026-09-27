@@ -1773,3 +1773,21 @@ de l’orientation des mains, le cadrage (GIF plus étroit que l’ancienne prop
 PDF ciblé `review/CORRECTIONS-ciblees-lot69.pdf` mis à jour : 3 pages, page 80 = lot73, n°26 et 44/45 inchangés. Taille 1,095,998 octets,
 SHA-256 `d905b68a74a2bcd39d4c0e54ce14fedd5466c952cc27b87cd4f262aa8c21e1d6`. Tous restent propositions non validées. Aucun GIF livré,
 manifest, état, prescription, PDF principal ou APK modifié ; pas de `valide-couples.py`. Critère global du vert reste séparé et non résolu.
+
+
+## 100. Refus explicite du lot73 — rotation de main toujours présente (27/09/2026)
+
+L’utilisateur refuse le lot73 : il voit toujours une rotation de la main lorsque le bras monte. Je confirme que le geste n’est pas corrigé ;
+je ne dois pas appeler lot73 une réussite ni déduire une validation. Un essai supplémentaire de génération dans ce tour a reproduit le
+même problème ; fichier rejeté non conservé comme proposition. Pas de nouveau GIF accepté, aucun intégration.
+
+La référence photo utilisateur demeure le seul guide du trajet : départ bras ouverts ; arrivée bras presque tendus remontés et rapprochés
+jusqu’à réunir les mains/haltères au-dessus du torse, comme pour taper dans les mains. Les bras, poignets, paumes et mains ne tournent pas.
+Conserver le banc incliné du mouvement ; n’emprunter à la référence que le trajet et l’orientation.
+
+Le PDF ciblé précédent contient la page lot73 : désormais signalée obsolète pour le n°80 et non utilisable pour validation ; pas de nouvelle
+version PDF tant que l’image n’a pas été comparée à la référence et que l’orientation de main n’est pas correcte. La règle globale de vert
+anatomique reste distincte. GIF livrés, manifeste, état, prescriptions, PDF principal et APK inchangés.
+
+Prochaine méthode : interrompre les éditions répétées qui recréent le même pivot ; construire un guide de pose phase finale à partir de la
+référence, vérifier visuellement la main/poignet face au départ, puis seulement assembler et mettre à jour le PDF. Attendre le contrôle utilisateur.

@@ -31,6 +31,11 @@ GIFs du PDF corrections). 10 appels tentés ce tour (1 échec, 9 rendus). Brouil
 et `propositions/lot69/gif/homme/` ; contrôles images normés OK, mais 26/80 gardent des réserves de teinte/lecture et
 un PDF ciblé provisoire de 3 pages (`review/CORRECTIONS-ciblees-lot69.pdf`, 26/44-45/80 AVANT/ÉBAUCHE) est disponible ; le comparatif complet 26 pages reste à refaire. Précision utilisateur suivante sur le n°80 : départ correct, ne pas tourner les mains en fin. Lot69 puis lot70 refusés. Nouvelle consigne : remonter/rapprocher les bras comme avant de taper dans ses mains sans tourner bras ni mains ; la référence visuelle fournie ensuite précise une fin bras presque tendus réunis au-dessus du torse comme un clap ; lot71/72 sont dépassés et le lot73 reprend ce geste sans rotation. PDF ciblé actualisé ; lot73 toujours non validé. Aucun GIF livré remplacé. Voir §99.
 
+**Refus utilisateur le plus récent (27/09, n°80) :** lot73 encore faux, la main tourne en haut ; ne pas le qualifier de corrigé. Un nouvel essai lot74
+a aussi échoué et a été écarté. La photo utilisateur fixe la pose : départ bras largement ouverts ; fin bras presque tendus réunis au-dessus du torse
+comme pour taper dans les mains, sans rotation des bras ou des mains. Banc incliné conservé. Page 80 du PDF ciblé précédente version obsolète.
+Pas d’intégration ; voir VERIFICATION §100. Reprendre avec un guide visuel de pose et contrôler l’orientation des mains avant tout PDF.
+
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.
 
