@@ -1619,3 +1619,32 @@ entrées du registre (31/37/38/46/47/64/87/90/126/148/149/150/194/222/239/265/29
 candidats ont été retouchés, puis exécuter tools/pdf-corrections-avant-apres.py, lien chat, ACCORD utilisateur
 avant intégration. AVANT étape3 : question vert identique260 (cf. découverte). Rappels app Émilie : metcon +
 piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.
+
+## 92. Lot68 tour6 — PDF comparatif produit, SHAs 26/26 vérifiés (27/09/2026)
+
+Lettre isolée « E » : aucune validation déduite. Espace intact (6b87827), pymupdf installé (venv).
+**0 appel de génération (0/10).**
+
+Contrôle préalable complet du registre : 26/26 propositions présentes ; SHAs AVANT vérifiés contre
+git show e538e03 (aucun écart) ; SHAs APRÈS comparés au disque : 2 écarts trouvés (44/45 : champ sha256
+non actualisé après la recolorisation tour4 — registre notait la réserve sans le SHA) → corrigés
+(b7b404d880df5f5269522e017736fd104a189daaee2697efdde0747487d7cc07 ; chemin 45 ré-aligné sur son fichier).
+Re-contrôle : 26/26 OK.
+
+**PDF généré** : `evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf` (12 Mo, 26 pages A4
+paysage, une par reprise, tri par numéro). Disposition : AVANT gauche / APRÈS droite ; phases empilées
+(2 frames) ou grille 2×2 (4 frames Zottman 46/47/48) ; bandeau « PROPOSITION NON VALIDÉE - aucun
+remplacement sans votre accord » ; trait séparateur central ; pied de page = retour utilisateur + détail
+(chaîne, mesures, réserves restantes). Contrôle visuel page 26 (n°26 crunch) : conforme. Note cosmétique :
+certains apostrophes/flèches du TEXTE rendus « ? » par la police intégrée du PDF (les SHAs et images sont
+exactes ; à corriger plus tard si besoin dans l'outil, sans toucher aux images).
+
+Registre : format_comparatif.pdf_produit = {chemin, date, 26 exercices, statut en_attente_validation_utilisateur,
+shas_verifies_avant_generation=true}. Passations + CE-QUI-COINCE mis à jour (PDF produit, validation attendue).
+Livrés inchangés : gif/, manifeste, état, PDF principal 389. Pas de valide-couples.py, aucun APK.
+
+**Prochaine étape : validation utilisateur par numéro.** Après accord explicite par numéro : intégration des
+seuls validés via chaîne imposée (verif-ids, lecture pleine définition des deux cases, refonte-sheet,
+valide-couples, pdf-revue, index) — JAMAIS les refusés. AVANT étape3 : question vert identique260 (RGB réel
+117,189,18 ; si oui re-passe PIL sur 19/44/45/48/80/85 avant intégration). Rappels app Émilie : metcon +
+piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.

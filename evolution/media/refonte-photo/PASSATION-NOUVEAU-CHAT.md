@@ -1,34 +1,29 @@
 # 🚩 PASSATION — reprendre la refonte des visuels dans un nouveau chat
 
-## 🚩 Lot68 tour5 (27/09/2026) — réserves PIL 85/48/80, vert 260 mesuré, 0 appel génération
+## 🚩 Lot68 tour6 (27/09/2026) — PDF comparatif 26 reprises PRODUIT, validation attendue
 
-**Workspace reset puis récupéré sans perte (6ffe1c8). « Y » = lettre isolée, aucune validation déduite.**
-**0/10 appels ce tour (tout est PIL). Découverte : vert réel du n°260 = RGB ≈ (117,189,18), différent du
-(154,205,50) des recolorisations — la question « vert identique 260 ? » reste POSÉE ; si oui, re-passe PIL
-triviale à faire sur toutes les propositions recolorisées. Ne pas anticiper.**
-- **85** : débord vert au-dessus de la ligne d'épaule SUPPRIMÉ (dé-verdissage vers peau, 0 strict restant
-  au-dessus) ; SHA 4a99ad5b…, phases .avant-degreen.png.
-- **48** : cyan → lime strict PIL 4 phases ; SHA 41530fc7…, original .avant-recolor.gif.
-- **80** : taches sombres du plastron fortement atténuées (passe luminance, 0 px sous seuil) ; SHA 3b244665….
-Rapport : propositions/lot68/recolorisation-reserves.json. SHAs 19/44/45/48/80/85 à jour dans le registre.
-**26 propositions NON VALIDÉES, 0 approuvée.** Reste : PDF AVANT gauche/APRÈS droite des seules reprises via
-`tools/pdf-corrections-avant-apres.py` (vérifier/actualiser les autres SHAs du registre puis lancer), lien chat,
-ACCORD avant intégration ; les réserves d'appréciation (échelle, trajectoires, cadrages) seront visibles dans le PDF.
-**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.** AVANT étape3 : question vert n°260, attendre.
-Construction app : rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie. Maintenir le 🚩.
+**« E » = lettre isolée, aucune validation déduite. 0/10 appels.**
+**PDF : `evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf`** (12 Mo, 26 pages, AVANT gauche /
+APRÈS droite, NON VALIDÉ marqué sur chaque page, retours+réserves en pied de page). Généré après vérification
+**26/26 SHAs** (correction préalable : 44/45 re-mis à jour). format_comparatif.pdf_produit = en_attente_validation.
+**EN ATTENTE DE VALIDATION PAR NUMÉRO — aucune intégration sans accord explicite.** Après accord : chaîne §70
+(valide-couples.py, GIF livrés, manifeste, PDF principal, index) pour les seuls numéros validés.
+Rappels : vert identique 260 ? (RGB réel 117,189,18 ; si oui re-passe PIL sur 19/44/45/48/80/85 avant intégration)
+— AVANT étape3. Construction app : metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie.
+**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.** Maintenir le 🚩.
 
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.
 
 ---
 
-## État prioritaire lot68 tour5 — ÉTAPE2, propositions AVANT validation utilisateur
+## État prioritaire lot68 tour6 — ÉTAPE2, PDF comparatif en validation utilisateur
 
-**26 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
-**Réserves TRAITÉES (teinte/débord/taches) : 19, 44, 45, 48, 80, 85** (PIL ou édition ; originaux conservés).
-**Vert n°260 réel mesuré : RGB ≈ (117,189,18)** — question « identique 260 ? » toujours POSÉE.
-Prochain travail : PDF reprises (vérifier SHAs registre puis pdf-corrections-avant-apres.py), accord, intégration.
-Lot68 :25 générations cumulées ; tour5 : 0/10 (100 % PIL).
+**PDF CORRECTIONS-avant-apres.pdf produit (26 reprises, AVANT/APRÈS, tout NON VALIDÉ).**
+**26 propositions sur26 points, 0 approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
+**Réserves traitées (teinte/débord/taches) : 19, 44, 45, 48, 80, 85.** Vert n°260 réel : RGB ≈ (117,189,18).
+Prochain travail : VALIDATION utilisateur par numéro, puis intégration des seuls validés (chaîne §70).
+Lot68 :25 générations cumulées ; tour6 : 0/10.
 Historique : Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.

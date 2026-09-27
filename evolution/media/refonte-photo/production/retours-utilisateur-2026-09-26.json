@@ -147,7 +147,7 @@
    "proposition": {
     "lot": 64,
     "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-neutre-homme.gif",
-    "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
+    "sha256": "b7b404d880df5f5269522e017736fd104a189daaee2697efdde0747487d7cc07",
     "validation_utilisateur": false,
     "controle_final_requis": true,
     "reserve_traitee_lot68": "vert cyan diffus -> lime strict (PIL, zone bras, case2 0->545 px strict), original .avant-recolor.gif"
@@ -170,7 +170,7 @@
    "proposition": {
     "lot": 64,
     "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
-    "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
+    "sha256": "b7b404d880df5f5269522e017736fd104a189daaee2697efdde0747487d7cc07",
     "validation_utilisateur": false,
     "controle_final_requis": true,
     "reserve_traitee_lot68": "même recolorisation que 44 (paire partagée), original .avant-recolor.gif"
@@ -631,7 +631,15 @@
   "perimetre": "Uniquement les exercices à reprendre et leurs variantes concernées",
   "disposition": "AVANT à gauche, APRÈS à droite, côte à côte ; mêmes numéros",
   "livraison": "Un PDF téléchargeable par lien dans le chat",
-  "complet_requis": true
+  "complet_requis": true,
+  "pdf_produit": {
+   "chemin": "evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf",
+   "date": "2026-09-27",
+   "exercices": 26,
+   "disposition": "AVANT gauche / APRÈS droite, phases empilées (2) ou grille 2x2 (4)",
+   "statut": "en_attente_validation_utilisateur"
+  },
+  "shas_verifies_avant_generation": true
  },
  "accord_format_zottman": {
   "numeros": [

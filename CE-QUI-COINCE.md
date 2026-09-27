@@ -1,17 +1,20 @@
 # 🚧 Ce qui coince — état au 26 septembre 2026, après lot67 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
-## 🚩 Lot68 tour5 (27/09/2026) — réserves PIL 85/48/80, 0 appel génération
+## 🚩 Lot68 tour6 (27/09/2026) — PDF comparatif PRODUIT, en attente de votre validation
 
-**Workspace reset puis récupéré sans perte. « Y » = lettre isolée, aucune validation déduite. 0/10 appels.**
-Traitées : **85** débord au-dessus des épaules supprimé (SHA 4a99ad5b…) ; **48** cyan→lime 4 phases
-(SHA 41530fc7…) ; **80** taches plastron atténuées (passe luminance, SHA 3b244665…). Découverte :
-**vert réel n°260 = RGB ≈ (117,189,18)** ≠ (154,205,50) utilisé — question « identique 260 ? » toujours
-POSÉE (si oui : re-passe PIL triviale sur les recolorisées, ne pas anticiper).
-**26 propositions NON VALIDÉES, 0 approuvée.** Reste : PDF AVANT gauche/APRÈS droite des seules reprises via
-`tools/pdf-corrections-avant-apres.py` (SHAs 19/44/45/48/80/85 à jour ; vérifier les autres puis lancer),
-lien chat, ACCORD utilisateur avant intégration ; réserves d'appréciation visibles dans le PDF.
-**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.** AVANT étape3 : question vert n°260, attendre.
-Rappels non traités.
+**« E » = lettre isolée, aucune validation déduite. 0/10 appels.**
+**PDF PRODUIT : `evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf`** — 26 pages (une par
+reprise), AVANT à gauche / APRÈS à droite, chaque page marquée PROPOSITION NON VALIDÉE avec votre retour et
+les réserves restantes en pied de page. Généré par `tools/pdf-corrections-avant-apres.py` après vérification
+des **26/26 SHAs** (44/45 re-mis à jour avant exécution).
+**PROCHAINE ÉTAPE = VOTRE REVUE, PAR NUMÉRO.** Répondez par numéro : « n° X ok » / « n° X à refaire ».
+Aucun numéro validé ne sera intégré sans une phrase explicite de votre part (une lettre isolée ne compte pas).
+Après accord : intégration des seuls validés via la chaîne imposée (valide-couples.py → livrés → manifeste →
+PDF principal → index), contrôles pleine définition avant chaque copie.
+**Rappel en attente avant étape3 :** vert identique au n°260 ? (RGB réel 117,189,18 ; si « identique »,
+re-passe PIL sur 19/44/45/48/80/85 avant intégration). Construction app : metcon + piscine nage fractionnée
+et/ou Aqua Tabata pour Émilie, à confirmer avant de coder.
+**26 propositions, 0 approuvée. Livrés inchangés.** **Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.**
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
@@ -40,10 +43,9 @@ La relecture interne antérieure ne remplace pas votre validation.
 
 ## 1. Retours PDF :26 points ouverts, accord utilisateur obligatoire
 
-**26 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
-**Réserves traitées (teinte/débord/taches) : 19, 44, 45, 48, 80, 85.** Vert n°260 réel : RGB ≈ (117,189,18).
-Prochain travail : PDF reprises (SHAs à vérifier puis pdf-corrections-avant-apres.py), accord, intégration.
-Lot68 :25 générations cumulées ; tour5 : 0/10 (100 % PIL).
+**26 propositions sur26 points, 0 approuvée.** PDF comparatif PRODUIT (26 pages, tout NON VALIDÉ) :
+review/CORRECTIONS-avant-apres.pdf. Prochain travail : validation utilisateur par numéro, puis intégration
+des seuls validés. Lot68 :25 générations cumulées ; tour6 : 0/10.
 Historique : Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.

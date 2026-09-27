@@ -1,40 +1,28 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour5, 27 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour6, 27 septembre 2026
 
-## 🚩 Lot68 tour5 — réserves PIL 85/48/80 + référence vert mesurée, 0 appel génération (27/09/2026)
+## 🚩 Lot68 tour6 — PDF comparatif 26 reprises PRODUIT, en attente de validation (27/09/2026)
 
-**⚠️ Workspace reset à d721868 encore en début de tour : récupéré sans perte (6ffe1c8).**
-**« Y » reçu : lettre isolée, AUCUNE validation déduite (règle enregistrée).**
-**Tour 100 % PIL : 0/10 appel de génération utilisé (10 restants).**
-**Découverte clé : le vert du n°260 livré mesure RGB ≈ (117,189,18) — DIFFÉRENT du (154,205,50)
-utilisé pour les recolorisations. La question « vert identique au 260 ? » reste POSÉE et NON DÉCIDE ;
-si l'utilisateur choisit « identique 260 », une re-passe PIL triviale (même méthode, LIME=117,189,18)
-harmonisera toutes les propositions recolorisées. Ne pas l'anticiper.**
-**Réserves traitées ce tour :**
-- **85** : débord vert au-dessus de la ligne d'épaule SUPPRIMÉ (dé-verdissage PIL vers peau médiane,
-  0 px strict restant au-dessus de la ligne ; halo faible harmonisé) ; GIF reconstruit depuis phases
-  corrigées. SHA 4a99ad5b2304de83… Phases originales .avant-degreen.png.
-- **48** (Zottman Scott 4 phases) : cyan → lime strict PIL zone bras, 4 frames (2013/382/187/2153 px).
-  SHA 41530fc75cfc38f6… Original .avant-recolor.gif. Restent : raccords poignets, disques, bords crénelés discrets.
-- **80** : taches sombres (mamelons) du plastron FORTEMENT ATTÉNUÉES par passe luminance hue-agnostique
-  (1128/1247 px corrigés, 0 px sous seuil restant ; traces légères possibles à apprécier).
-  SHA 3b24466574ad2a5b… Original .avant-recolor.gif. Restent : dérive visage fin, échelle poids, flexion/trajectoire.
-Rapport cumulé : propositions/lot68/recolorisation-reserves.json. SHAs 19/44/45/48/80/85 à jour dans
-retours-utilisateur-2026-09-26.json (vérifier les autres entrées avant pdf-corrections-avant-apres.py).
-**Réserves restantes NON corrigeables sans risque** (à montrer dans le PDF, à apprécier par l'utilisateur) :
-échelle poids 80, dérive visage fin 80, paumes petites 85, écarture coudes 85, main masquée 44/45,
-disques 46/47, disques coupés 194, tapis 26, saut d'échelle 204 (aussi dans l'AVANT), raccords poignets 46/47/48.
-**Toujours 26 propositions NON VALIDÉES, 0 approuvée.**
-**Prochaine étape : PDF AVANT gauche/APRÈS droite des seules reprises** via
-`tools/pdf-corrections-avant-apres.py` (lit le registre + SHA ; mettre à jour les SHAs restants si le
-registre contient d'anciens SHA, puis lancer), lien chat, ACCORD utilisateur avant intégration.
-≤10 appels/tour échecs compris. Aucun livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
-AVANT étape3 : question vert identique n°260, ATTENDRE (cf. découverte ci-dessus). Construction app :
-rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie. Rappels non traités.
-Vert mesuré sur le CORPS (plantes exclues). Pas de famille C, visage A, début à gauche, pas de
-miroir/rotation globale, prescription inchangée.
-**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (resets d721868 ×5 le 27/09, récupérés sans perte).
-Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md, tools/pdf-revue-331.py.
-Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
+**« E » reçu : lettre isolée, AUCUNE validation déduite (règle enregistrée). 0 appel de génération ce tour.**
+**PDF COMPARATIF PRODUIT : `evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf`**
+(12 Mo, 26 pages = 26 reprises, AVANT gauche / APRÈS droite, phases empilées 2 ou grille 2×2 pour les 4
+phases, chaque page marquée PROPOSITION NON VALIDÉE avec retour utilisateur + réserves en pied de page).
+Généré par `tools/pdf-corrections-avant-apres.py` après vérification complète : **26/26 SHAs AVANT (commit
+figé e538e03) et APRÈS (disque) corrects** — correction préalable : SHAs 44/45 re-mis à jour dans le registre
+(b7b404d8… après recolorisation tour4) ; SHA 45 aligné sur son propre fichier.
+**EN ATTENTE DE VALIDATION UTILISATEUR page par page (par numéro). AUCUNE intégration sans accord explicite.**
+Après accord par numéro : chaîne d'intégration (§70 passation) avec valide-couples.py, GIF livrés, manifeste,
+PDF principal, index — UNIQUEMENT pour les numéros validés.
+**Rappels en attente :** (1) AVANT étape3 : vert identique au n°260 ? (260 réel = RGB ≈ (117,189,18) ≠
+(154,205,50) des recolorisations ; si « identique » : re-passe PIL triviale sur 19/44/45/48/80/85 avant
+intégration — ne pas anticiper) ; (2) à la construction app : metcon + piscine nage fractionnée et/ou Aqua
+Tabata pour Émilie, confirmer avant de coder.
+Réserves d'appréciation visibles dans le PDF (échelle poids 80, trajectoires, main masquée 44/45, disques
+coupés 194, saut d'échelle 204 aussi présent dans l'AVANT, etc.).
+**État : 26 propositions, 0 approuvée. Livrés inchangés (gif/, manifeste, état, PDF principal 389).**
+≤10 appels/tour échecs compris. Aucun APK. Pas de famille C, visage A, début à gauche, pas de miroir.
+**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (resets d721868 ×5 le 27/09, récupérés sans
+perte). Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md,
+tools/pdf-revue-331.py. Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
