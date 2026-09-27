@@ -1710,3 +1710,17 @@ Prochaine étape : clarifier si « tous les GIFs » vise l’ensemble des 331 vi
 les mains de 26, la supination et la forme/étendue du vert de 44/45, l’orientation de 80 ; effectuer d’éventuelles nouvelles
 reprises dans un autre tour (plafond génération atteint) puis refaire le PDF comparatif lorsqu’il est cohérent. Toujours 0/26
 approuvées. La question de teinte uniforme au n°260 reste distincte et en attente.
+
+
+## 96. PDF téléchargeable des seules corrections pointées — lot69 (27/09/2026)
+
+À la demande explicite de l’utilisateur (« un pdf téléchargeable dans le chat […] juste ce que j’avais pointé »), PDF ciblé
+`review/CORRECTIONS-ciblees-lot69.pdf` produit et contrôlé : 3 pages A4 paysage, 980,388 octets, SHA-256
+`86f1bf6566df79ce786bc06dbe1d8030cb4b7dc824c6d6795009f9e9ec753753`. Périmètre exact : page 1 n°26, page 2 n°44/45
+(paire commune), page 3 n°80. Chaque page montre proposition précédente vs ébauche lot69, phases début/fin et la demande associée.
+Bandeau explicite « PROPOSITION NON VALIDÉE » ; les ébauches restent sujettes au contrôle utilisateur (notamment mains 26,
+prise 44/45, orientation/vert 80). Ce fichier est un aperçu ciblé, pas le PDF complet de validation des 26 reprises.
+
+Le PDF complet `CORRECTIONS-avant-apres.pdf` n’a pas été modifié. Aucun GIF livré/intégré, manifeste, état, prescriptions,
+PDF principal ou APK touché ; aucune validation déduite. Le nouveau PDF est inscrit au registre comme brouillon non validé.
+Contrôle PyMuPDF : 3 pages ; hash et taille vérifiés. Reste à présenter via le viewer/téléchargement du chat.

@@ -695,9 +695,26 @@
    "disposition": "AVANT gauche / APRÈS droite, phases empilées (2) ou grille 2x2 (4)",
    "statut": "a_reviser_apres_retours_utilisateur_2026-09-27",
    "lien_chat": "https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/d57f6e21e21868b45643b73269e7af485a048a3a/evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf",
-   "note": "Le PDF actuellement au chemin enregistré précède les nouvelles demandes sur 26/44/45/80 ; ne pas le considérer comme PDF de validation final. Attendre les révisions contrôlées."
+   "note": "Le PDF comparatif complet 26 pages précède les nouvelles demandes sur 26/44/45/80 ; il reste à refaire après validation des brouillons. Le PDF ciblé de 3 pages est un aperçu provisoire de ces seules corrections."
   },
-  "shas_verifies_avant_generation": true
+  "shas_verifies_avant_generation": true,
+  "pdf_revision_ciblee_lot69": {
+   "chemin": "evolution/media/refonte-photo/review/CORRECTIONS-ciblees-lot69.pdf",
+   "date": "2026-09-27",
+   "pages": 3,
+   "numeros": [
+    26,
+    44,
+    45,
+    80
+   ],
+   "disposition": "AVANT proposition précédente / APRÈS ébauche lot69 ; DÉBUT et FIN visibles",
+   "sha256": "86f1bf6566df79ce786bc06dbe1d8030cb4b7dc824c6d6795009f9e9ec753753",
+   "octets": 980388,
+   "statut": "brouillon_non_valide",
+   "gif_livres_remplaces": false,
+   "note": "PDF limité aux corrections demandées par l’utilisateur. Les ébauches restent à contrôler et ne valent ni validation ni intégration."
+  }
  },
  "accord_format_zottman": {
   "numeros": [
