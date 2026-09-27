@@ -375,8 +375,37 @@
     "frames": 2,
     "duration_ms": 500,
     "validation_utilisateur": false,
+    "statut": "remplace_par_reference_visuelle_lot73",
+    "correction_demandee": "Dans la phase finale, bras élevés et rapprochés au-dessus du haut de poitrine, mains/dumbbells proches comme juste avant de taper dans les mains ; aucun retournement des bras, poignets ou mains. Diptyque généré en une image avec le départ sur la gauche.",
+    "note": "Ancienne ébauche trop pliée/insuffisamment proche de la référence gestuelle fournie ensuite."
+   },
+   "retour_revision_utilisateur_2026_09_27_4": "La photo de référence montre : départ bras largement ouverts ; fin bras presque tendus remontés et rapprochés jusqu’à réunir les mains/haltères au-dessus du torse, comme pour taper dans les mains. Ne tourner ni les bras ni les mains. Conserver le banc incliné de l’exercice ; la photo sert au trajet/à la prise.",
+   "revision_candidate_lot72": {
+    "gif": "evolution/media/refonte-photo/propositions/lot72/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "cd35bfe08913ced70d144ae7f5631a18425230a8b7b8555e2d76926e27c46236",
+    "size": [
+     348,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
+    "statut": "intermediaire_non_retenu",
+    "note": "Ébauche de transition avant réception de la référence visuelle précise ; fin encore trop pliée."
+   },
+   "revision_candidate_lot73": {
+    "gif": "evolution/media/refonte-photo/propositions/lot73/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "cd35bfe08913ced70d144ae7f5631a18425230a8b7b8555e2d76926e27c46236",
+    "size": [
+     348,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
     "statut": "brouillon_non_valide",
-    "correction_demandee": "Dans la phase finale, bras élevés et rapprochés au-dessus du haut de poitrine, mains/dumbbells proches comme juste avant de taper dans les mains ; aucun retournement des bras, poignets ou mains. Diptyque généré en une image avec le départ sur la gauche."
+    "correction_demandee": "Départ ouvert à gauche ; fin bras presque tendus vers le haut et rapprochés jusqu’à réunir les mains/haltères au-dessus du torse comme un clap ; aucune rotation des bras/mains. Basé sur la référence visuelle utilisateur.",
+    "controle_requis": "Confirmer la trajectoire de clap et prise constante ; vérifier la continuité de cadrage (largeur frame 348 px) et le vert anatomique séparément."
    }
   },
   {
@@ -740,12 +769,12 @@
     80
    ],
    "disposition": "AVANT proposition précédente / APRÈS ébauche lot69 ; DÉBUT et FIN visibles",
-   "sha256": "1cf339defb757cca8f6c5676a17b3bcaff8cf009a1e0238526367004a8c32e58",
-   "octets": 1074041,
+   "sha256": "d905b68a74a2bcd39d4c0e54ce14fedd5466c952cc27b87cd4f262aa8c21e1d6",
+   "octets": 1095998,
    "statut": "brouillon_non_valide",
    "gif_livres_remplaces": false,
    "note": "PDF limité aux corrections demandées par l’utilisateur. Les ébauches restent à contrôler et ne valent ni validation ni intégration.",
-   "revision_80": "lot70 refusé ; page 80 actualisée avec proposition lot71 (bras remontés/rapprochés sans rotation)."
+   "revision_80": "lot73 créé depuis la référence visuelle utilisateur; bras ouverts vers bras presque tendus rapprochés au-dessus du torse sans rotation"
   }
  },
  "accord_format_zottman": {

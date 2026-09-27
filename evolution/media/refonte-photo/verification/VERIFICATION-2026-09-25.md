@@ -1755,3 +1755,21 @@ Candidat lot71 non validé ; critère antérieur de vert anatomique reste sépar
 PDF ciblé `review/CORRECTIONS-ciblees-lot69.pdf` actualisé, 3 pages, page 80 remplacée par lot71 ; taille 1,074,041 octets, SHA-256
 `1cf339defb757cca8f6c5676a17b3bcaff8cf009a1e0238526367004a8c32e58`. Aucun GIF livré, livraison, manifeste, état, PDF principal,
 prescription ou APK modifié ; pas de validation utilisateur. Génération : 1 appel réussi ce tour.
+
+
+## 99. N°80 — référence gestuelle fournie, nouvelle proposition lot73 (27/09/2026)
+
+L’utilisateur joint un exemple visuel et précise le geste : départ bras ouverts ; fin bras presque tendus remontés et rapprochés pour réunir
+les mains/haltères au-dessus du torse, comme pour taper dans les mains, sans rotation des bras ni des mains. La photo jointe sert au trajet
+et à la prise ; l’exercice demeure sur banc incliné conformément à la clarification précédente. Les ébauches lot71/72 ne sont pas la version
+retenue pour cette référence (lot71 trop fléchi).
+
+Lot73 : une génération a échoué (`MAX_TOKENS` sans image), une suivante a produit un diptyque ; total de ce tour : 3 appels, 2 images,
+1 échec. `verif-ids.py` OK ; `refonte-sheet.py` produit un GIF candidat 348×440, 2 images, 500 ms, SHA-256
+`cd35bfe08913ced70d144ae7f5631a18425230a8b7b8555e2d76926e27c46236`. Aperçu `review/lot73-revision-80.jpg` lu : départ bras ouverts,
+fin bras levés et rapprochés, haltères réunis au-dessus du torse. Contrôle utilisateur toujours requis sur la légère flexion, la constance
+de l’orientation des mains, le cadrage (GIF plus étroit que l’ancienne proposition) et le vert anatomique.
+
+PDF ciblé `review/CORRECTIONS-ciblees-lot69.pdf` mis à jour : 3 pages, page 80 = lot73, n°26 et 44/45 inchangés. Taille 1,095,998 octets,
+SHA-256 `d905b68a74a2bcd39d4c0e54ce14fedd5466c952cc27b87cd4f262aa8c21e1d6`. Tous restent propositions non validées. Aucun GIF livré,
+manifest, état, prescription, PDF principal ou APK modifié ; pas de `valide-couples.py`. Critère global du vert reste séparé et non résolu.
