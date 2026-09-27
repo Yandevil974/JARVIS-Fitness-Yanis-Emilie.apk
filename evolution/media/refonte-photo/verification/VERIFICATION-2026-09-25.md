@@ -1648,3 +1648,14 @@ seuls validés via chaîne imposée (verif-ids, lecture pleine définition des d
 valide-couples, pdf-revue, index) — JAMAIS les refusés. AVANT étape3 : question vert identique260 (RGB réel
 117,189,18 ; si oui re-passe PIL sur 19/44/45/48/80/85 avant intégration). Rappels app Émilie : metcon +
 piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.
+
+## 93. Règle utilisateur — lettres isolées = chat bloqué (27/09/2026)
+
+Instruction explicite de l'utilisateur : les lettres isolées (T, Y, E…) envoyées ce jour étaient des
+relances d'un chat bloqué côté interface (même un rafraîchissement ne passait pas). RÈGLE ENREGISTRÉE :
+à réception d'une lettre isolée, NE RIEN FAIRE (aucun travail, aucun appel, aucun compteur), rappeler
+l'état en cours et attendre le vrai message. Cette règle annule l'interprétation précédente
+(« lettre = poursuis accidentel ») : désormais une lettre ne déclenche plus aucun travail.
+Le widget de questions (validation + vert 260) a été ignoré par l'interface : questions reposées en
+texte simple, réponses attendues dans un prochain message. État inchangé : PDF
+review/CORRECTIONS-avant-apres.pdf en attente de validation, 26 propositions, 0 approuvée, livrés intacts.

@@ -1,5 +1,12 @@
 # 🚩 PASSATION — reprendre la refonte des visuels dans un nouveau chat
 
+**RÈGLE (27/09, instruction utilisateur) : les lettres isolées (T, Y, E, etc.) sont des relances
+d'un CHAT BLOQUÉ côté interface — PAS des instructions. À réception d'une lettre : NE RIEN FAIRE
+(aucun travail, aucun appel, aucun compteur), rappeler l'état en cours et attendre le vrai message.**
+**Questions en attente (widget ignoré par l'interface, reposées en texte simple) :**
+(1) Validation : « les 26 » ou liste de numéros « ok » (ex. « ok 19, 26, 31 ») ou « je relis le PDF ».
+(2) Vert : garder (154,205,50) ou uniformiser sur le n°260 (117,189,18) ou décider plus tard.
+
 ## 🚩 Lot68 tour6 (27/09/2026) — PDF comparatif 26 reprises PRODUIT, validation attendue
 
 **« E » = lettre isolée, aucune validation déduite. 0/10 appels.**
