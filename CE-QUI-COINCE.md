@@ -1,4 +1,14 @@
-# 🚧 Ce qui coince — état au 26 septembre 2026, après lot67 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
+# 🚧 Ce qui coince — état prioritaire au 27 septembre 2026 — Étape 2 : n°80 toujours non corrigé
+
+## 🚩 Situation actuelle — après refus utilisateur du lot73 (§100)
+
+L’utilisateur refuse le n°80 : la main tourne encore quand le bras monte. Lot74 a également échoué et a été écarté.
+**Aucune correction n’est validée pour le n°80.** Cible exacte : départ bras ouverts ; arrivée bras presque tendus levés et rapprochés
+pour réunir les mains/haltères au-dessus du torse comme pour taper dans ses mains, sans rotation bras/poignets/mains ; garder le
+banc incliné. Ne pas présenter lot73 comme corrigé. La page 80 du PDF ciblé est obsolète pour validation ; ne pas intégrer.
+Prochaine méthode : guide de pose fidèle à la photo utilisateur puis lecture pleine définition de l’orientation aux deux phases.
+Les GIF livrés restent intacts. Détails §100 et registre des retours.
+
 
 **RÈGLE (27/09, instruction utilisateur) : les lettres isolées (T, Y, E, etc.) sont des relances
 d'un CHAT BLOQUÉ côté interface — PAS des instructions. À réception d'une lettre : NE RIEN FAIRE

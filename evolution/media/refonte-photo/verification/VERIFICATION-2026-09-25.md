@@ -1791,3 +1791,11 @@ anatomique reste distincte. GIF livrés, manifeste, état, prescriptions, PDF pr
 
 Prochaine méthode : interrompre les éditions répétées qui recréent le même pivot ; construire un guide de pose phase finale à partir de la
 référence, vérifier visuellement la main/poignet face au départ, puis seulement assembler et mettre à jour le PDF. Attendre le contrôle utilisateur.
+
+
+## 101. Préparation d’une passation autonome après refus du n°80 (27/09/2026)
+
+À la demande de l’utilisateur, le bloc copiable `PASSATION-COPIER-COLLER.md`, la passation longue et `CE-QUI-COINCE.md` ont été
+réordonnés/actualisés avec l’état prioritaire §100. Le prochain chat doit savoir que lot73 et l’essai lot74 ne corrigent pas le
+n°80 : main tournée en position haute, aucun accord, aucun GIF livré touché. La cible est explicitée depuis la photo utilisateur ;
+aucune génération ni intégration effectuée pour ce tour. HEAD de départ `0ac5fa7`, branche de session Arena imposée conservée.

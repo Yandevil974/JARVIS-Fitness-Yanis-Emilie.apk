@@ -1,40 +1,20 @@
 # 🚩 PASSATION — reprendre la refonte des visuels dans un nouveau chat
 
-**RÈGLE (27/09, instruction utilisateur) : les lettres isolées (T, Y, E, etc.) sont des relances
-d'un CHAT BLOQUÉ côté interface — PAS des instructions. À réception d'une lettre : NE RIEN FAIRE
-(aucun travail, aucun appel, aucun compteur), rappeler l'état en cours et attendre le vrai message.**
-**Questions en attente (widget ignoré par l'interface, reposées en texte simple) :**
-(1) Validation : « les 26 » ou liste de numéros « ok » (ex. « ok 19, 26, 31 ») ou « je relis le PDF ».
-(2) Vert : garder (154,205,50) ou uniformiser sur le n°260 (117,189,18) ou décider plus tard.
+**ÉTAT PRIORITAIRE (27/09, après §100) :** session sur `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`, HEAD `0ac5fa7`.
+ÉTAPE 2 ; 26 points ouverts, 0 approuvé. Le n°80 n’est PAS corrigé : l’utilisateur a refusé lot73, la main tourne encore
+lorsque le bras monte. Lot74 était également un essai raté écarté. Aucun GIF livré n’a été remplacé.
 
-## 🚩 Lot68 tour6 (27/09/2026) — PDF comparatif 26 reprises PRODUIT, validation attendue
+**Référence n°80 donnée par l’utilisateur :** banc incliné conservé ; bras largement ouverts au départ ; en fin, bras presque
+tendus remontés et rapprochés pour réunir les mains/haltères au-dessus du torse comme pour taper dans ses mains ; aucune
+rotation des bras/avant-bras/poignets/mains. Construire un guide visuel fidèle, cesser les edits prompt répétés qui gardent
+la rotation, contrôler la prise aux deux phases avant tout GIF/PDF.
 
-**« E » = lettre isolée, aucune validation déduite. 0/10 appels.**
-**PDF : `evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf`** (12 Mo, 26 pages, AVANT gauche /
-APRÈS droite, NON VALIDÉ marqué sur chaque page, retours+réserves en pied de page). Généré après vérification
-**26/26 SHAs** (correction préalable : 44/45 re-mis à jour). format_comparatif.pdf_produit = en_attente_validation.
-**EN ATTENTE DE VALIDATION PAR NUMÉRO — aucune intégration sans accord explicite.** Après accord : chaîne §70
-(valide-couples.py, GIF livrés, manifeste, PDF principal, index) pour les seuls numéros validés.
-Rappels : vert identique 260 ? (RGB réel 117,189,18 ; si oui re-passe PIL sur 19/44/45/48/80/85 avant intégration)
-— AVANT étape3. Construction app : metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie.
-**Branche de session imposée : `arena/01a0e231-jarvis-fitness-yanis-emilie-ap` ; état récupéré depuis la branche source `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` au commit 8663b6e. Pousser uniquement sur la branche de session.** Maintenir le 🚩.
+**PDF ciblé `review/CORRECTIONS-ciblees-lot69.pdf` :** page 80 montre lot73 rejeté, obsolète pour validation ; ne pas renvoyer
+comme correction réussie. PDF complet 26 pages en attente de validation. Propositions 26 et 44/45 non validées aussi.
+Les livrés/manifeste/état/prescriptions/PDF principal/APK sont intacts. Aucun `valide-couples.py` lancé.
 
-**État de reprise (27/09, après tour6) :** branche Arena imposée `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`,
-source restaurée au commit `8663b6e`. Vérifications : PDF 26 pages, propositions/SHA 26/26 conformes, 0 approbation.
-Aucune génération, intégration, recoloration ou modification des livrés pendant cette reprise. Réponses utilisateur
-(validation des numéros et teinte verte) toujours attendues ; voir VERIFICATION §94.
-
-**Nouveau retour utilisateur 27/09 (prioritaire) :** réviser 26 phase 2 (deux mains derrière la tête), 44/45
-(curl normal supiné, pas marteau), 80 (prise phase 2 identique à phase 1). Nouvelle exigence de style pour tous les GIFs :
-vert vif/visible épousant l’anatomie musculaire, pas une plaque. Portée exacte à clarifier (331 GIFs application ou seuls
-GIFs du PDF corrections). 10 appels tentés ce tour (1 échec, 9 rendus). Brouillons lot69 à revoir sous `review/lot69-revision-*.jpg`
-et `propositions/lot69/gif/homme/` ; contrôles images normés OK, mais 26/80 gardent des réserves de teinte/lecture et
-un PDF ciblé provisoire de 3 pages (`review/CORRECTIONS-ciblees-lot69.pdf`, 26/44-45/80 AVANT/ÉBAUCHE) est disponible ; le comparatif complet 26 pages reste à refaire. Précision utilisateur suivante sur le n°80 : départ correct, ne pas tourner les mains en fin. Lot69 puis lot70 refusés. Nouvelle consigne : remonter/rapprocher les bras comme avant de taper dans ses mains sans tourner bras ni mains ; la référence visuelle fournie ensuite précise une fin bras presque tendus réunis au-dessus du torse comme un clap ; lot71/72 sont dépassés et le lot73 reprend ce geste sans rotation. PDF ciblé actualisé ; lot73 toujours non validé. Aucun GIF livré remplacé. Voir §99.
-
-**Refus utilisateur le plus récent (27/09, n°80) :** lot73 encore faux, la main tourne en haut ; ne pas le qualifier de corrigé. Un nouvel essai lot74
-a aussi échoué et a été écarté. La photo utilisateur fixe la pose : départ bras largement ouverts ; fin bras presque tendus réunis au-dessus du torse
-comme pour taper dans les mains, sans rotation des bras ou des mains. Banc incliné conservé. Page 80 du PDF ciblé précédente version obsolète.
-Pas d’intégration ; voir VERIFICATION §100. Reprendre avec un guide visuel de pose et contrôler l’orientation des mains avant tout PDF.
+**Règle interface :** lettres isolées (T, Y, E, etc.) = relances d’un chat bloqué, pas des instructions ; rappeler l’état et attendre.
+**Questions ouvertes :** validation explicite par numéro ; choix de teinte (vert actuel 154,205,50 / n°260 RGB ≈117,189,18 / décider plus tard) ; portée du vert anatomique « sur tous les GIFs » (331 livrés ou corrections PDF).
 
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.
