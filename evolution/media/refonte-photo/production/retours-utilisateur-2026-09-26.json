@@ -4,7 +4,7 @@
  "etape": 2,
  "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
  "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
- "nombre_numeros_directs": 25,
+ "nombre_numeros_directs": 26,
  "nombre_variantes_ajoutees": 3,
  "entrees": [
   {
@@ -481,13 +481,32 @@
    "nom": "Tractions supination (chin-up)",
    "retour_utilisateur": "À refaire.",
    "origine": "retour_direct",
-   "statut": "refuse_interne",
-   "detail": "Lot68 (suite) : position haute produite avec le gros plan de prise en référence — supination lisible (paumes vers la caméra, pouces croisés), menton À la barre mais pas nettement au-dessus (réserve), phases/204-fin-2.png isolée comme base de travail, PAS une proposition (pas de GIF, phase basse manquante). Dernier appel du plafond (10/10) ÉCHOUÉ (réponse modèle sans image) pour le départ bras tendus. Prochain tour : refaire le départ depuis 204-fin-2, resserrer le menton au-dessus de la barre si besoin, puis assembler et contrôler.",
+   "statut": "propose_attente_accord",
+   "detail": "Lot68 (tour3) : les éditions hang→haut sont systématiquement refusées par le modèle (5 appels) ; retour à la recette diptyque historique UNE génération avec le gros plan de prise en contrainte : SUCCÈS. Départ hang mort bras complètement tendus (menton une tête sous la barre), fin menton clairement AU-DESSUS de la barre, prise supination lisible aux DEUX cases (paumes face caméra, pouces croisés). Proposition isolée sous propositions/lot68/, NON VALIDÉE. Réserves : échelle du corps plus grande en fin (GIF saute au changement de case — défaut aussi présent dans l'AVANT livré), marge menton/barre modérée. Prescription inchangée.",
    "validation_utilisateur": false,
    "avant": {
     "gif": "evolution/media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
     "sha256": "d9bfa9bd06ca082cf304ececf68bab8bd5b6b874d0385fb1385b6bf27d8f9736",
     "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 68,
+    "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif",
+    "sha256": "4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10",
+    "planche": "evolution/media/refonte-photo/propositions/lot68/planches/tractions-supination-chin-up.png",
+    "review": "evolution/media/refonte-photo/review/lot68-proposition-204.jpg",
+    "size": [
+     385,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "vert_total_frames": [
+     1840,
+     1083
+    ],
+    "validation_utilisateur": false,
+    "controle_final_requis": true
    }
   },
   {

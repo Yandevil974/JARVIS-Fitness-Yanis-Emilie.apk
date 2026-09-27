@@ -1510,3 +1510,40 @@ branche rappelée dans les 4 fichiers. Aucun livré/manifeste/état/PDF principa
 de corrections (85/204 : 204 reste à produire + réserves des 25) ; pas de valide-couples.py, aucun build
 APK. Push arena/01a0e12a uniquement. Suite : 204, réserves des 25, PDF reprises quand TOUT est prêt,
 accord avant intégration. AVANT étape3 : question vert identique260. Rappels app Émilie inchangés.
+
+## 89. Lot68 tour3 — proposition204, les 26 points ont une proposition (27/09/2026)
+
+Espace intact (HEAD a86fff6, arbre propre) au réveil. Lettre isolée « T » reçue de l'utilisateur :
+traitée comme accidentel, AUCUNE validation déduite (règle enregistrée).
+
+**Budget : 6 appels / 10, 6 rendus, 0 échec technique.** 204 : (1) édition hang depuis 204-fin-2 → corps
+descendu mais bras NON tendus (refus pose) ; (2) édition « tendre complètement » → pose mi-course inchangée
+(refus pose) ; (3) hang frais généré depuis maître+guide prise → SUCCÈS (bras complètement tendus, menton une
+tête sous la barre, supination lisible en gros plan) ; (4) édition hang→haut → SANS EFFET (pose ancrée) ;
+(5) 2ᵉ édition anatomique hang→haut → SANS EFFET (refus pose). CONSTAT : ce modèle refuse de PLIER les bras
+depuis un hang par édition (miroir du refus de tendre depuis la traction) ; (6) RETOUR À LA RECETTE DIPTYQUE
+historique — une génération, planche 16:9 deux cases, maître+guide prise en contrainte → SUCCÈS COMPLET :
+gauche hang mort bras tendus, droite menton clairement AU-DESSUS de la barre, supination lisible aux DEUX
+cases (vérifiée en gros plan des deux prises : paumes face caméra, pouces croisés, doigts enroulés vers la
+caméra), même salle/lumière, barre sur toute la largeur de chaque case.
+
+**204 proposé** : verif-ids OK ; refonte-sheet (découpe filet, recalage décalage (4,4), hauteur 440).
+propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif, 385×440 (même format que l'AVANT livré
+390×440), 2×500 ms, DÉBUT gauche. SHA256 4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10.
+Mesures vert total frames 1840/1083 px (bbox frame1 x[11,236] y[176,309], frame2 x[38,183] y[139,314]) ;
+vert sur flancs du torse (grand dorsal) ; plantes du décor hors zone de mesure stricte ROI à l'intégration.
+RÉSERVES explicites : échelle du corps plus grande en FIN (cadrage plus serré → le GIF « saute » au changement
+de case ; défaut aussi présent dans l'AVANT livré, à apprécier par l'utilisateur) ; marge menton/barre modérée ;
+prise fine à l'échelle du GIF, gros plans de contrôle faits sur la planche brute. Proposition ≠ validation ;
+validation_utilisateur=false ; prescription inchangée. Sources brutes + planche nommée + review conservées
+(propositions/lot68/planches/204-planche-brute.png → tractions-supination-chin-up.png).
+
+**26 propositions sur26 points, aucune approuvée — 0 sans proposition** :
+19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
+mesures.json consolidé (26+85+204+échecs). Registres retours/a-refaire alignés (204 :
+propose_attente_accord). Passations + CE-QUI-COINCE à jour ; § référencé jusqu'ici (§89).
+Aucun livré/manifeste/état/PDF principal modifié ; aucun PDF final (RÉSERVES des propositions restantes
+avant « tout prêt ») ; pas de valide-couples.py ; aucun build APK. Push arena/01a0e12a uniquement.
+Suite : réserves des 26 propositions (≤10 générations/tour), PDF AVANT gauche/APRÈS droite des seules
+reprises quand TOUT est prêt, accord avant intégration. AVANT étape3 : question vert identique260.
+Rappels app Émilie : metcon + piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.

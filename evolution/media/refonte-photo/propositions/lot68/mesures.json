@@ -65,12 +65,60 @@
           "écarture des coudes à apprécier par l utilisateur"
         ],
         "validation_utilisateur": false
+      },
+      {
+        "numero": 204,
+        "identifiant": "tractions-supination-chin-up|homme",
+        "size": [
+          385,
+          440
+        ],
+        "frames": 2,
+        "duration_ms": 500,
+        "recalage_decoupe": [
+          4,
+          4
+        ],
+        "vert_total_frames": [
+          1840,
+          1083
+        ],
+        "vert_bbox_frames": [
+          [
+            11,
+            236,
+            176,
+            309
+          ],
+          [
+            38,
+            183,
+            139,
+            314
+          ]
+        ],
+        "sources": [
+          "planches/204-planche-brute.png (diptyque une génération, guide prise supination)"
+        ],
+        "strategie": "editions hang->haut refusées par le modèle (5 appels) ; retour à la recette diptyque historique en 1 génération",
+        "reserves": [
+          "echelle du corps plus grande en fin (cadrage plus serré) : GIF saute au changement de case — défaut aussi présent dans l'AVANT livré",
+          "menton au-dessus de la barre lisible mais marge modérée",
+          "supination lisible aux deux cases (pouces croisés face caméra)"
+        ],
+        "validation_utilisateur": false
       }
     ],
     "echecs_generation_lot68": [
       "appel manquant fichier guide (85-fin, rejeté immédiatement)",
-      "204-depart : réponse modèle sans image (plafond atteint)"
+      "204-depart : réponse modèle sans image (plafond atteint)",
+      "tour3 : aucune (6/6 succes) ; tour precedent : 204-depart reponse sans image"
     ],
-    "validation_utilisateur_globale": false
+    "validation_utilisateur_globale": false,
+    "generations_204": {
+      "tours_precedents": 3,
+      "ce_tour": 6,
+      "echecs_cumules": 1
+    }
   }
 }

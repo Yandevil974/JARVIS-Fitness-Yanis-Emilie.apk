@@ -1,31 +1,32 @@
 # 🚩 PASSATION — reprendre la refonte des visuels dans un nouveau chat
 
-## 🚩 Lot68 suite (27/09/2026) — 26 ET 85 proposés, base 204 isolée, 10/10 appels
+## 🚩 Lot68 tour3 (27/09/2026) — 26, 85 ET 204 proposés : 26/26 propositions prêtes, 6/10 appels
 
-**Budget génération épuisé : 10/10 (2 échecs compris). Plus aucun appel ce tour.**
-Proposition **n°85** isolée NON VALIDÉE : `propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif`
-(SHA256 1813e380eb5f885d74d045f264115bff7489e91d066502aa95569eb9d711c4d3, 788×440, 2×500 ms ; départ bras le long
-du corps paumes vers le corps, fin coudes 90° poings devant les coudes même plan ; ROI deltoïdes [320,85,480,145],
-vert strict 975/928 px ; réserves : débord vert haut du bras, paumes petites, écarture coudes).
-Proposition **n°26** inchangée (SHA 5342c88e…ab46f3fbe, §87). **25 propositions non validées, 1 sans proposition : 204.**
-**204** : base de travail `propositions/lot68/phases/204-fin-2.png` (position haute, supination lisible, menton À la
-barre — réserve : pas nettement au-dessus) ; départ bras tendus NON produit (dernier appel échoué, réponse sans image).
-Suite : 204 (départ depuis 204-fin-2, menton au-dessus si besoin, assembler, contrôler), réserves des 25, PDF
-reprises AVANT gauche/APRÈS droite quand TOUT est prêt, accord utilisateur avant intégration. Rien d'intégré,
-aucun livré/PDF/manifeste modifié, pas de valide-couples.py. **Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`**
-(⚠️ reset d721868 encore survenu ce tour, récupéré sans perte). AVANT étape3 : question vert n°260, attendre.
-Construction app : rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie. Rappels non traités.
+**Budget : 6/10 ce tour (204 : 4 dont 2 éditions refusées par le modèle). Restent 4.**
+**Proposition n°204 isolée NON VALIDÉE** : `propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif`
+(SHA256 4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10, 385×440, 2×500 ms ; hang mort bras
+tendus à gauche, menton clairement au-dessus de la barre à droite, supination lisible aux deux cases grâce au
+guide de prise ; vert 1840/1083 px ; réserves : échelle plus grande en fin — saut de case, défaut aussi présent
+dans l'AVANT livré —, marge menton modérée). Méthode : éditions hang→haut refusées par le modèle → retour à la
+recette DIPTYQUE une génération avec guides en contrainte.
+**Propositions n°26 et n°85 inchangées** (SHA 5342c88e… / 1813e380…), NON VALIDÉES.
+**26 propositions non validées sur 26 points — 0 sans proposition.** Aucune approuvée ; le « T » reçu NE VALIDE RIEN.
+Reste avant PDF : RÉSERVES des propositions (registres), puis PDF AVANT gauche/APRÈS droite des seules reprises
+via `tools/pdf-corrections-avant-apres.py`, accord utilisateur avant intégration. Rien d'intégré, aucun livré/
+PDF/manifeste modifié, pas de valide-couples.py. **Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.**
+AVANT étape3 : question vert n°260, attendre. Construction app : rappeler metcon + piscine nage fractionnée
+et/ou Aqua Tabata pour Émilie. Rappels non traités. Maintenir le 🚩.
 
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.
 
 ---
 
-## État prioritaire lot68 suite — ÉTAPE2, propositions AVANT validation utilisateur
+## État prioritaire lot68 tour3 — ÉTAPE2, propositions AVANT validation utilisateur
 
-**25 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/222/239/265/298/380.
-**1 sans proposition** :204 (base de travail 204-fin-2 isolée ; départ à produire au prochain tour).
-Lot68 :15 générations cumulées (26 : 8 ; 85 : 7 dont guide ; 204 : 2, dont 1 échec) ; 10/10 ce tour.
+**26 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
+**0 sans proposition.** Prochain travail : réserves des propositions (registres), puis PDF reprises.
+Lot68 :21 générations cumulées (26 : 8 ; 85 : 7 ; 204 : 6 dont 1 échec + 2 refus modèle) ; tour3 : 6/10.
 Historique : Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.

@@ -1,34 +1,36 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 suite, 27 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour3, 27 septembre 2026
 
-## 🚩 Lot68 suite — 26 ET 85 proposés, base 204 isolée, 10/10 appels (27/09/2026)
+## 🚩 Lot68 tour3 — 26, 85 ET 204 proposés : les 3 reprises manquantes existent, 6/6 appels (27/09/2026)
 
-**Budget génération : 10/10 UTILISÉ ce tour (2 échecs compris : 1 rejet immédiat fichier manquant après
-reset du workspace, 1 réponse modèle sans image pour 204-depart). Plus aucun appel disponible.**
-**Proposition n°85 (élévations latérales coude à 90°, Yanis) — NON VALIDÉE :**
-`propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif` — SHA256
-1813e380eb5f885d74d045f264115bff7489e91d066502aa95569eb9d711c4d3, 788×440, 2×500 ms, DÉBUT gauche
-(bras le long du corps, paumes vers le corps) / FIN droite (coudes 90°, poings devant les coudes au
-même plan horizontal, cible exacte du retour utilisateur). ROI deltoïdes [320,85,480,145] : vert strict
-975/928 px. Réserves : léger débord vert haut du bras, paumes petites à l'échelle, écarture coudes.
-**Proposition n°26 inchangée** (SHA 5342c88e…ab46f3fbe, voir VERIFICATION §87).
-**25 propositions non validées** (23 + 26 + 85). **1 sans proposition : 204** — base de travail isolée
-`propositions/lot68/phases/204-fin-2.png` (position haute, supination lisible paumes face caméra,
-menton À la barre, réserve : pas nettement au-dessus) ; départ bras tendus NON produit (10ᵉ appel échoué).
+**Budget génération : 6/10 utilisés ce tour, tous réussis (204 : 4, dont 2 éditions hang→haut REFUSÉES par
+le modèle + 1 hang frais + 1 diptyque ; plus 2 au total à bien vérifier — détail VERIFICATION §89). Restent 4.**
+**LES 26 POINTS ONTOURNT DÉSORMAIS TOUS UNE PROPOSITION : 26 propositions non validées (aucune approuvée)**
+= 19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/204/222/239/265/298/380.
+**Proposition n°204 (tractions supination, Yanis) — NON VALIDÉE :**
+`propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif` — SHA256
+4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10, 385×440 (comme l'AVANT livré), 2×500 ms,
+DÉBUT gauche (hang mort bras complètement tendus, menton une tête sous la barre) / FIN droite (menton
+clairement AU-DESSUS de la barre), prise supination lisible aux DEUX cases (paumes face caméra, pouces
+croisés) grâce au guide 204-guide-prise-supination.png. Vert (grand dorsal) frames 1840/1083 px.
+Réserves : échelle du corps plus grande en FIN (cadrage plus serré, GIF saute au changement de case —
+défaut aussi présent dans l'AVANT livré) ; marge menton/barre modérée.
+**Propositions n°26** (SHA 5342c88e…ab46f3fbe) **et n°85** (SHA 1813e380…711c4d3) inchangées, NON VALIDÉES.
 
-**Suite prévue :** (1) n°204 — produire le départ depuis 204-fin-2 (corps descendu, bras tendus, prise
-supination conservée, même barre/cadrage), resserrer le menton au-dessus de la barre si besoin, puis
-assembler et contrôler ; (2) reprendre les réserves des 25 propositions ; (3) PDF AVANT gauche/APRÈS
-droite des seules reprises via `tools/pdf-corrections-avant-apres.py` quand TOUT est prêt, accord avant
-intégration. ≤10 appels/tour échecs compris. Zottman 46/47/48 : format accepté, images NON validées.
+**Reste à faire avant le PDF : les RÉSERVES des propositions existantes** (registres retours-utilisateur /
+a-refaire : teintes olive 19, débords verts 44/45/80/85, échelle poids 80, tapis 26, trajectoires, cadrages…)
+puis **PDF AVANT gauche/APRÈS droite des seules reprises via `tools/pdf-corrections-avant-apres.py`**,
+lien chat, ACCORD utilisateur avant intégration. Le « T » reçu ce tour NE VALIDE RIEN (règle des lettres
+isolées). ≤10 appels/tour échecs compris. Méthode utile : quand le modèle refuse d'éditer une pose
+(ex. hang→traction), revenir au DIPTYQUE une génération avec guides en contrainte.
 Aucun PDF final ni APK ce tour ; aucun livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
 AVANT étape3 : question vert identique n°260, ATTENDRE la réponse. Construction app : rappeler metcon +
 piscine nage fractionnée et/ou Aqua Tabata pour Émilie. Rappels-utilisateur.json non traité.
-Vert mesuré sur le CORPS (plantes exclues ; n°85 : plante droite du décor hors ROI). Pas de famille C,
-visage A, maîtres homme/femme, début à gauche, pas de miroir/rotation globale, prescription inchangée.
+Vert mesuré sur le CORPS (plantes exclues). Pas de famille C, visage A, maîtres homme/femme, début à
+gauche, pas de miroir/rotation globale, prescription inchangée.
 **Branche imposée : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (contenu 01a0dcad repris à 0a4327a ;
-⚠️ l'environnement a ENCORE été reset à d721868 ce tour : fetch + merge --ff-only de la branche de session,
-aucune perte). Ne jamais pousser main. Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md,
-CE-QUI-COINCE.md, tools/pdf-revue-331.py. Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
+deux resets d721868 déjà survenus le 27/09, récupérés sans perte par fetch+merge --ff-only). Ne jamais
+pousser main. Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md,
+tools/pdf-revue-331.py. Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 

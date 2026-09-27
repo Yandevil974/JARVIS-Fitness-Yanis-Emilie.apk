@@ -225,9 +225,9 @@
    "numero_signale": 204,
    "lot": 62,
    "motif": "À refaire.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot68 : position haute avec prise supination lisible (paumes face caméra) obtenue ; menton à la barre, réserve : pas nettement au-dessus. phases/204-fin-2.png = base de travail, PAS une proposition. Départ bras tendus NON produit (dernier appel du plafond échoué : réponse sans image). Prochain tour : départ depuis 204-fin-2, resserrer menton, assembler."
+    "Lot68 tour3 : recette diptyque + guide prise supination → départ hang bras tendus, fin menton au-dessus de la barre, supination lisible aux deux cases. Proposition lot68 isolée NON VALIDÉE. Réserves : échelle plus grande en fin (saut de case), marge menton modérée. Ne pas intégrer sans accord."
    ],
    "validationUtilisateurRequise": true
   },
