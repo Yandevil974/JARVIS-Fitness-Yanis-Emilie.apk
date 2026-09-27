@@ -1724,3 +1724,18 @@ prise 44/45, orientation/vert 80). Ce fichier est un aperçu ciblé, pas le PDF 
 Le PDF complet `CORRECTIONS-avant-apres.pdf` n’a pas été modifié. Aucun GIF livré/intégré, manifeste, état, prescriptions,
 PDF principal ou APK touché ; aucune validation déduite. Le nouveau PDF est inscrit au registre comme brouillon non validé.
 Contrôle PyMuPDF : 3 pages ; hash et taille vérifiés. Reste à présenter via le viewer/téléchargement du chat.
+
+
+## 97. N°80 — correction de prise en phase finale et PDF ciblé actualisé (27/09/2026)
+
+Retour utilisateur sur l’ébauche lot69 : « Les mains sont bonnes en position de départ. Toi tu les tournes en position finale il ne faut pas. »
+Le candidat lot69 est explicitement refusé pour cette raison ; prescription et GIF livrés ne changent pas. Une ébauche lot70 a été créée
+en conservant la phase de départ exacte de la proposition précédente et en générant la phase finale depuis cette référence, sans rotation
+des mains/poignets. `verif-ids.py` OK pour `ecartes-halteres`; `refonte-sheet.py` : GIF 788×440, 2 images de 500 ms ; SHA-256
+`dd23e7f130e79ddff0588b7b9a30dbac4473a26b60ce3dae48c2d657c943d312`. Aperçu : `review/lot70-revision-80.jpg`.
+
+Le PDF ciblé téléchargeable `review/CORRECTIONS-ciblees-lot69.pdf` a été mis à jour : toujours 3 pages (26, 44/45, 80), mais la page 80
+compare maintenant l’ancienne proposition au nouveau candidat lot70. Version actuelle : 1,160,348 octets, SHA-256
+`83f3c5b48f1855dbc92c6c0f3c21e00bbb8ef2d5fbc3bfb6419c71f47474e7e7`. Page 80 relue après rendu ; la phase initiale est conservée.
+Candidat et PDF marqués NON VALIDÉS : faire confirmer par l’utilisateur que l’orientation phase finale est désormais correcte. Le vert
+anatomique reste un point de revue séparé. Aucun GIF livré, PDF principal, manifeste, état, prescription ou APK modifié.

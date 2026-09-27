@@ -344,8 +344,24 @@
     "frames": 2,
     "duration_ms": 500,
     "validation_utilisateur": false,
+    "statut": "refuse_par_utilisateur_2026-09-27",
+    "controle_requis": "Nouvelle paire générée. À contrôler : orientation des mains phase 2 comparée à phase 1, continuité du cadrage et définition anatomique du vert ; non prête à remplacer la proposition précédente.",
+    "note_refus": "L’utilisateur signale que les mains sont correctes au départ mais tournées en phase finale ; ne pas réutiliser ce candidat."
+   },
+   "retour_revision_utilisateur_2026_09_27_2": "Votre précision : la position des mains au départ est correcte ; ne pas tourner les mains en position finale. Garder exactement la même orientation du poignet/prise pendant le mouvement.",
+   "revision_candidate_lot70": {
+    "gif": "evolution/media/refonte-photo/propositions/lot70/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "dd23e7f130e79ddff0588b7b9a30dbac4473a26b60ce3dae48c2d657c943d312",
+    "size": [
+     788,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
     "statut": "brouillon_non_valide",
-    "controle_requis": "Nouvelle paire générée. À contrôler : orientation des mains phase 2 comparée à phase 1, continuité du cadrage et définition anatomique du vert ; non prête à remplacer la proposition précédente."
+    "correction_demandee": "Phase de départ recopiée depuis la proposition précédente sans modification ; nouvelle phase finale générée en prenant la phase de départ comme guide, sans rotation de la prise.",
+    "controle_requis": "L’utilisateur doit confirmer que les deux orientations de main sont maintenant identiques ; vert anatomique reste un critère distinct à améliorer/valider."
    }
   },
   {
@@ -709,11 +725,12 @@
     80
    ],
    "disposition": "AVANT proposition précédente / APRÈS ébauche lot69 ; DÉBUT et FIN visibles",
-   "sha256": "86f1bf6566df79ce786bc06dbe1d8030cb4b7dc824c6d6795009f9e9ec753753",
-   "octets": 980388,
+   "sha256": "83f3c5b48f1855dbc92c6c0f3c21e00bbb8ef2d5fbc3bfb6419c71f47474e7e7",
+   "octets": 1160348,
    "statut": "brouillon_non_valide",
    "gif_livres_remplaces": false,
-   "note": "PDF limité aux corrections demandées par l’utilisateur. Les ébauches restent à contrôler et ne valent ni validation ni intégration."
+   "note": "PDF limité aux corrections demandées par l’utilisateur. Les ébauches restent à contrôler et ne valent ni validation ni intégration.",
+   "revision_80": "phase départ conservée, phase finale révisée lot70 selon la dernière précision utilisateur"
   }
  },
  "accord_format_zottman": {
