@@ -106,7 +106,7 @@
    "motif": "Extension de la correction n°46 : Zottman un bras banc Scott.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot64 : proposition4 phases autorisées en principe : bas supination, haut supination, haut pronation, bas pronation. Retouches locales des mains rendent paume/dos main distincts, sans miroir ni rotation globale. Disques ronds harmonisés, chiffres parasites supprimés localement ; peau main haute retouchée sans recolorer épaule. Réserves anatomie/raccords/échelle haltère, vert diffus cyan non lime et décor gris ; format autorisé ne vaut pas validation de ces images."
+    "Lot68 tour5 : réserve teinte TRAITÉE — cyan -> lime strict PIL sur les 4 phases (original .avant-recolor.gif). Restent : raccords poignets, disques, bords crénelés discrets. Format 4 phases accepté, images NON validées."
    ],
    "validationUtilisateurRequise": true
   },
@@ -128,7 +128,7 @@
    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot68 : réserve aplats TRAITÉE — plastron lime uniforme (début OK direct, fin après 2 échecs peau + remplissage ; strict 770/975 px ROI pec). Réserves restantes : 2 taches sombres (mamelons), légère dérive visage en fin, échelle poids, flexion coudes/trajectoire."
+    "Lot68 tour5 : réserve taches TRAITÉE — passe luminance dans le plastron, 0 px sombre restant sous seuil (traces légères possibles). Restent : dérive visage fin, échelle poids, flexion/trajectoire."
    ],
    "validationUtilisateurRequise": true
   },
@@ -139,7 +139,7 @@
    "motif": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot68 : guide plan-horizontal utilisé, position haute en 4 images (coudes 90°, poings devant les coudes au même plan), départ édité (paumes vers le corps). Proposition lot68 isolée NON VALIDÉE. Réserves : débord vert haut du bras, paumes petites, écarture coudes. Ne pas intégrer sans accord."
+    "Lot68 tour5 : réserve débord TRAITÉE — vert supprimé au-dessus de la ligne d'épaule (0 px strict restant), halo harmonisé ; phases .avant-degreen.png. Restent : paumes petites à l'échelle, écarture coudes à apprécier."
    ],
    "validationUtilisateurRequise": true
   },

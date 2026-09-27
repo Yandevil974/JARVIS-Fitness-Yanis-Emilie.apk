@@ -237,9 +237,10 @@
    "proposition": {
     "lot": 64,
     "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
-    "sha256": "1f1a351d87f5efd4fcd6d1ae9ef8bf9ae36086e67274c2dac63566a86dcd3a2d",
+    "sha256": "41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704",
     "validation_utilisateur": false,
-    "controle_final_requis": true
+    "controle_final_requis": true,
+    "reserve_traitee_lot68": "vert cyan -> lime strict PIL (4 phases, zone bras, original .avant-recolor.gif). Restent : raccords poignets, taille/nombre disques, bords légèrement crénelés"
    }
   },
   {
@@ -285,10 +286,10 @@
    "proposition": {
     "lot": 67,
     "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/ecartes-halteres-homme.gif",
-    "sha256": "2e42b553c16127a235ae528358a4f1c00375c2d98f5924b588bd7707096fec2a",
+    "sha256": "3b24466574ad2a5b851ebe0f26b302985bb3c6c62940aecf82862e68f92b5bdb",
     "validation_utilisateur": false,
     "controle_final_requis": true,
-    "reserve_traitee_lot68": "aplats mouchetés -> plastron lime uniforme (2 éditions génératives ; début OK direct, fin après remplissage) ; réserves restantes : 2 taches sombres (mamelons), légère dérive du visage en fin"
+    "reserve_traitee_lot68": "taches sombres du plastron FORTEMENT ATTÉNUÉES (passe luminance, 0 px sous seuil ; traces légères possibles à apprécier) — original .avant-recolor.gif. Restent : dérive légère du visage en fin, échelle poids, flexion coudes/trajectoire"
    }
   },
   {
@@ -308,7 +309,7 @@
    "proposition": {
     "lot": 68,
     "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif",
-    "sha256": "1813e380eb5f885d74d045f264115bff7489e91d066502aa95569eb9d711c4d3",
+    "sha256": "4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4",
     "planche": "evolution/media/refonte-photo/propositions/lot68/planches/elevations-laterales-coude-a-90.png",
     "review": "evolution/media/refonte-photo/review/lot68-proposition-85.jpg",
     "size": [
@@ -322,7 +323,8 @@
      928
     ],
     "validation_utilisateur": false,
-    "controle_final_requis": true
+    "controle_final_requis": true,
+    "reserve_traitee_lot68": "débord vert au-dessus de la ligne d épaule SUPPRIMÉ (dé-verdissage PIL vers peau, 0 px strict restant au-dessus) + halo harmonisé ; phases sources .avant-degreen.png. Restent : paumes petites, écarture coudes"
    }
   },
   {

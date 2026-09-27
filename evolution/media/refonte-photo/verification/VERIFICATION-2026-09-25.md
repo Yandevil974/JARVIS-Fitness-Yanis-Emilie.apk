@@ -1580,3 +1580,42 @@ trajectoires…), correction PIL d'abord puis générative si nécessaire, puis 
 seules reprises via tools/pdf-corrections-avant-apres.py (SHAs registre : 19/44/45/80 à jour, VÉRIFIER les
 autres entrées avant exécution), lien chat, ACCORD utilisateur avant intégration. AVANT étape3 : question
 vert identique260. Rappels app Émilie : metcon + piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.
+
+## 91. Lot68 tour5 — réserves PIL 85/48/80, mesure du vert 260 (27/09/2026)
+
+Workspace reset à d721868 (5ᵉ fois le 27/09) : récupéré sans perte (merge --ff-only 6ffe1c8), venv recréé.
+Lettre isolée « Y » : aucune validation déduite. **0 appel de génération ce tour (0/10) — 100 % PIL.**
+
+**Mesure du vert de référence n°260** (elliptique-fractionne-femme.gif livré) : lime réel RGB ≈ (117,189,18)
+médiane (112,182,12). CONSTAT : les recolorisations des tours précédents ont utilisé (154,205,50). La question
+utilisateur « vert identique au 260 ? » reste POSÉE et sans réponse : si l'utilisateur répond « identique »,
+re-passe PIL triviale (même méthode, cible 117,189,18) sur toutes les propositions recolorisées (19/44/45/48/80/85).
+Ne pas anticiper cette décision.
+
+**85 — débord d'épaule** : sur les phases sources (85-depart-2.png, 85-fin-4.png ; sauvegardées
+.avant-degreen.png), vert strict au-dessus de la ligne d'épaule (y_top+12) remplacé par la peau médiane
+échantillonnée en anneau (584/1018 px dé-verdis), halo faible sous la ligne harmonisé en lime (1783/2010 px).
+Résultat mesuré : 0 px strict restant au-dessus de la ligne sur les deux phases. GIF reconstruit via
+assemble-85.py : SHA 4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4 (strict ROI 972/592).
+
+**48 — Zottman Scott 4 phases** : cyan/vert faible → lime strict PIL, zone bras x[45,150] y[125,250],
+4 frames (2013/382/187/2153 px, 100 % strict après passe). SHA 41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704.
+Original .avant-recolor.gif. Bords légèrement crénelés possibles (à apprécier dans le PDF) ; réserves restantes :
+raccords poignets, taille/nombre disques entre phases.
+
+**80 — taches du plastron** : 2 passes vert (30/1 px puis 203/3 px) SUFFISANTES pour le vert mais les taches
+sombres (mamelons) ne passent aucun filtre de teinte → passe 3 hue-agnostique par luminance à l'intérieur du
+plastron (zone + dilatation du masque strict) : 1128/1247 px corrigés, 0 pixel sous lum<méd×0,78 restant,
+strict total 3654/4697. SHA 3b24466574ad2a5b851ebe0f26b302985bb3c6c62940aecf82862e68f92b5bdb. Contrôle visuel :
+taches fortement atténuées, traces légères possibles à apprécier. Original .avant-recolor.gif. Restent :
+dérive légère visage fin, échelle poids, flexion/trajectoire.
+
+**Rien d'intégré** : gif/ livré, manifeste, état, PDF principal inchangés ; pas de valide-couples.py ;
+propositions toujours NON VALIDÉES (26/26, 0 approuvée). SHAs 19/44/45/48/80/85 à jour dans
+retours-utilisateur-2026-09-26.json (+ reserve_traitee_lot68) ; a-refaire aligné ; rapport cumulé
+propositions/lot68/recolorisation-reserves.json (opérations détaillées). Passations + CE-QUI-COINCE à jour.
+**Prochaine étape : PDF AVANT gauche/APRÈS droite des seules reprises** — vérifier les SHAs des autres
+entrées du registre (31/37/38/46/47/64/87/90/126/148/149/150/194/222/239/265/298/380), les actualiser si les
+candidats ont été retouchés, puis exécuter tools/pdf-corrections-avant-apres.py, lien chat, ACCORD utilisateur
+avant intégration. AVANT étape3 : question vert identique260 (cf. découverte). Rappels app Émilie : metcon +
+piscine fractionnée et/ou Aqua Tabata. 🚩 maintenu.

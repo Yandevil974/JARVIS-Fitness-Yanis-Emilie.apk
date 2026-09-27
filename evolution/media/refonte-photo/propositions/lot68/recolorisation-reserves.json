@@ -74,5 +74,94 @@
    ]
   }
  ],
- "validation_utilisateur": false
+ "validation_utilisateur": false,
+ "lot68_tour5": true,
+ "operations": [
+  {
+   "numero": 85,
+   "phase": "85-depart-2",
+   "ligne_epaule_y": 192,
+   "deverdi_au_dessus_px": 584,
+   "harmonise_halo_px": 1783,
+   "strict_restant_au_dessus_ligne": 0
+  },
+  {
+   "numero": 85,
+   "phase": "85-fin-4",
+   "ligne_epaule_y": 174,
+   "deverdi_au_dessus_px": 1018,
+   "harmonise_halo_px": 2010,
+   "strict_restant_au_dessus_ligne": 0
+  },
+  {
+   "numero": 48,
+   "methode": "PIL cyan->lime strict zone bras, 4 frames, original .avant-recolor.gif",
+   "sha256": "41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704",
+   "frames": [
+    {
+     "px": 2013,
+     "strict_apres": 2013
+    },
+    {
+     "px": 382,
+     "strict_apres": 382
+    },
+    {
+     "px": 187,
+     "strict_apres": 187
+    },
+    {
+     "px": 2153,
+     "strict_apres": 2153
+    }
+   ]
+  },
+  {
+   "numero": 80,
+   "methode": "PIL uniformisation luminance interieur plastron (taches mamelons), original .avant-recolor.gif + passe2 olive->lime + passe3 luminance (taches sombres, hue-agnostique)",
+   "sha256": "3b24466574ad2a5b851ebe0f26b302985bb3c6c62940aecf82862e68f92b5bdb",
+   "frames": [
+    {
+     "interieur_px": 1336,
+     "taches_corrigees": 30,
+     "lum_medicane": 157.9,
+     "strict_total": 2696
+    },
+    {
+     "interieur_px": 2072,
+     "taches_corrigees": 1,
+     "lum_medicane": 157.8,
+     "strict_total": 3583
+    }
+   ],
+   "passe2": [
+    {
+     "olive_corrigee_px": 203,
+     "olive_restante": 0,
+     "lum_cible": 150.9,
+     "strict_total": 2899
+    },
+    {
+     "olive_corrigee_px": 3,
+     "olive_restante": 0,
+     "lum_cible": 150.7,
+     "strict_total": 3586
+    }
+   ],
+   "passe3_luminance": [
+    {
+     "taches_corrigees": 1128,
+     "restes_sombres": 0,
+     "med": 157.9,
+     "strict_total": 3654
+    },
+    {
+     "taches_corrigees": 1247,
+     "restes_sombres": 0,
+     "med": 157.8,
+     "strict_total": 4697
+    }
+   ]
+  }
+ ]
 }

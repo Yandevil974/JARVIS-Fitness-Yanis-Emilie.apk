@@ -1,35 +1,38 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour4, 27 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour5, 27 septembre 2026
 
-## 🚩 Lot68 tour4 — réserves de teinte traitées 19/44/45/80, 4/10 appels (27/09/2026)
+## 🚩 Lot68 tour5 — réserves PIL 85/48/80 + référence vert mesurée, 0 appel génération (27/09/2026)
 
-**⚠️ Workspace reset à d721868 en début de tour : récupéré sans perte (fetch+merge --ff-only de la
-branche session, 239e2c6).** Réponse utilisateur : « Poursuis / T'as presque terminé les corrections ? » —
-répondu : couverture 26/26 OUI, mais réserves restantes → tour consacré aux réserves.
-
-**Réserves de TEINTE traitées (4/10 appels utilisés, 6 restants) :**
-- **n°19** (Bulgarian split femme) : olive sombre → lime STRICT par PIL (patch cuisse x[122,182] y[205,268],
-  signature olive g-b>20 & g-r<25 ; plante du décor INTACTE vérifiée avant=après). SHA  b1c1a1dfbc11cf58…
-  Résiduel à apprécier : léger chevauchement blocky sur pointes de feuilles (case1).
-- **n°44/45** (curl Scott haltere neutre) : vert cyan diffus → lime STRICT par PIL (zone bras ; case2
-  0→545 px strict). SHA b7b404d880df… Réserves restantes : main basse masquée par disque, dimensions haltère, décor gris.
-- **n°80** (écartés haltères, banc incliné) : aplats mouchetés → plastron lime UNIFORME par 2 éditions
-  génératives (début OK direct ; fin : 2 échecs « plastron devenu peau » puis remplissage OK) ; strict ROI pec
-  770/975 px. SHA 2e42b553c16127a2… Réserves restantes : 2 taches sombres (positions mamelons), légère
-  dérive du visage en fin, échelle poids, flexion coudes/trajectoire. review/lot68-proposition-80-reprise.jpg.
-Toutes les sorties restent sous propositions/ (GIF recolorisés ÉCRASENT les candidats lot57/64/67 avec
-original .avant-recolor.gif conservé ; 80 : nouveau GIF sous lot68). Rapport : propositions/lot68/recolorisation-reserves.json.
-**TOUJOURS 26 propositions NON VALIDÉES (0 approuvée) — recolorisation ≠ accord utilisateur.**
-**Reste avant PDF :** réserves non-teinte (échelle poids 80, main masquée 44/45, dérives, tapis 26, cadrages…)
-→ à lister précisément, corriger si possible (PIL d'abord, génératif ensuite), puis **PDF AVANT gauche/APRÈS
-droite des seules reprises** via `tools/pdf-corrections-avant-apres.py` (verifie SHA — mettre à jour les SHA
-dans le registre AVANT de le lancer : FAIT pour 19/44/45/80, VÉRIFIER les autres entrées), lien chat, ACCORD
-avant intégration. Réponse « presque terminé » : il reste les réserves + votre revue ; les 26 propositions
-couvrent tous les points, mais rien n'est validé ni intégré.
+**⚠️ Workspace reset à d721868 encore en début de tour : récupéré sans perte (6ffe1c8).**
+**« Y » reçu : lettre isolée, AUCUNE validation déduite (règle enregistrée).**
+**Tour 100 % PIL : 0/10 appel de génération utilisé (10 restants).**
+**Découverte clé : le vert du n°260 livré mesure RGB ≈ (117,189,18) — DIFFÉRENT du (154,205,50)
+utilisé pour les recolorisations. La question « vert identique au 260 ? » reste POSÉE et NON DÉCIDE ;
+si l'utilisateur choisit « identique 260 », une re-passe PIL triviale (même méthode, LIME=117,189,18)
+harmonisera toutes les propositions recolorisées. Ne pas l'anticiper.**
+**Réserves traitées ce tour :**
+- **85** : débord vert au-dessus de la ligne d'épaule SUPPRIMÉ (dé-verdissage PIL vers peau médiane,
+  0 px strict restant au-dessus de la ligne ; halo faible harmonisé) ; GIF reconstruit depuis phases
+  corrigées. SHA 4a99ad5b2304de83… Phases originales .avant-degreen.png.
+- **48** (Zottman Scott 4 phases) : cyan → lime strict PIL zone bras, 4 frames (2013/382/187/2153 px).
+  SHA 41530fc75cfc38f6… Original .avant-recolor.gif. Restent : raccords poignets, disques, bords crénelés discrets.
+- **80** : taches sombres (mamelons) du plastron FORTEMENT ATTÉNUÉES par passe luminance hue-agnostique
+  (1128/1247 px corrigés, 0 px sous seuil restant ; traces légères possibles à apprécier).
+  SHA 3b24466574ad2a5b… Original .avant-recolor.gif. Restent : dérive visage fin, échelle poids, flexion/trajectoire.
+Rapport cumulé : propositions/lot68/recolorisation-reserves.json. SHAs 19/44/45/48/80/85 à jour dans
+retours-utilisateur-2026-09-26.json (vérifier les autres entrées avant pdf-corrections-avant-apres.py).
+**Réserves restantes NON corrigeables sans risque** (à montrer dans le PDF, à apprécier par l'utilisateur) :
+échelle poids 80, dérive visage fin 80, paumes petites 85, écarture coudes 85, main masquée 44/45,
+disques 46/47, disques coupés 194, tapis 26, saut d'échelle 204 (aussi dans l'AVANT), raccords poignets 46/47/48.
+**Toujours 26 propositions NON VALIDÉES, 0 approuvée.**
+**Prochaine étape : PDF AVANT gauche/APRÈS droite des seules reprises** via
+`tools/pdf-corrections-avant-apres.py` (lit le registre + SHA ; mettre à jour les SHAs restants si le
+registre contient d'anciens SHA, puis lancer), lien chat, ACCORD utilisateur avant intégration.
 ≤10 appels/tour échecs compris. Aucun livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
-AVANT étape3 : question vert identique n°260, ATTENDRE. Construction app : rappeler metcon + piscine nage
-fractionnée et/ou Aqua Tabata pour Émilie. Vert mesuré sur le CORPS (plantes exclues). Pas de famille C,
-visage A, début à gauche, pas de miroir/rotation globale, prescription inchangée.
-**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (resets d721868 ×3 le 27/09, récupérés sans perte).
+AVANT étape3 : question vert identique n°260, ATTENDRE (cf. découverte ci-dessus). Construction app :
+rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie. Rappels non traités.
+Vert mesuré sur le CORPS (plantes exclues). Pas de famille C, visage A, début à gauche, pas de
+miroir/rotation globale, prescription inchangée.
+**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (resets d721868 ×5 le 27/09, récupérés sans perte).
 Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md, tools/pdf-revue-331.py.
 Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
 
