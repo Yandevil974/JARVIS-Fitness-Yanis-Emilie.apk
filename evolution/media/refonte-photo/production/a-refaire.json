@@ -18,7 +18,8 @@
    "motif": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot68 : stratégie du brief appliquée — arrivée d'abord (câble unique poulie haute→corde derrière la tête, deux mains lisibles, enroulement du tronc, éloignement), départ édité depuis l'arrivée. Proposition lot68 isolée, NON VALIDÉE. Réserves : micro-variation tapis, main lointaine près du mousqueton en fin. Ne pas intégrer sans accord."
+    "Lot68 : stratégie du brief appliquée — arrivée d'abord (câble unique poulie haute→corde derrière la tête, deux mains lisibles, enroulement du tronc, éloignement), départ édité depuis l'arrivée. Proposition lot68 isolée, NON VALIDÉE. Réserves : micro-variation tapis, main lointaine près du mousqueton en fin. Ne pas intégrer sans accord.",
+    "27/09 retour utilisateur : Phase 2 : les deux mains doivent tenir la corde derrière la tête. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition."
    ],
    "validationUtilisateurRequise": true
   },
@@ -62,7 +63,8 @@
    "motif": "Curl Scott : bras de départ non posé sur le pupitre.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot68 : réserve teinte TRAITÉE — cyan diffus recolorisé lime strict par PIL (case2 0->545 px strict), original en .avant-recolor.gif. Réserves restantes : main basse masquée par disque, dimensions haltère, décor gris."
+    "Lot68 : réserve teinte TRAITÉE — cyan diffus recolorisé lime strict par PIL (case2 0->545 px strict), original en .avant-recolor.gif. Réserves restantes : main basse masquée par disque, dimensions haltère, décor gris.",
+    "27/09 retour utilisateur : Ce n’est pas un curl marteau : corriger l’orientation des mains pour un curl normal supiné. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition."
    ],
    "validationUtilisateurRequise": true
   },
@@ -73,7 +75,8 @@
    "motif": "Tourner la paume au départ.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot68 : réserve teinte TRAITÉE comme 44 (paire partagée). Réserves restantes : lecture prise basse, dimensions haltère, décor gris."
+    "Lot68 : réserve teinte TRAITÉE comme 44 (paire partagée). Réserves restantes : lecture prise basse, dimensions haltère, décor gris.",
+    "27/09 retour utilisateur : Ce n’est pas un curl marteau : corriger l’orientation des mains pour un curl normal supiné (paire commune avec le n°44). Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition."
    ],
    "validationUtilisateurRequise": true
   },
@@ -128,7 +131,8 @@
    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
    "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot68 tour5 : réserve taches TRAITÉE — passe luminance dans le plastron, 0 px sombre restant sous seuil (traces légères possibles). Restent : dérive visage fin, échelle poids, flexion/trajectoire."
+    "Lot68 tour5 : réserve taches TRAITÉE — passe luminance dans le plastron, 0 px sombre restant sous seuil (traces légères possibles). Restent : dérive visage fin, échelle poids, flexion/trajectoire.",
+    "27/09 retour utilisateur : En phase 2, l’orientation des mains doit être identique à la phase 1 ; corriger la prise. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition."
    ],
    "validationUtilisateurRequise": true
   },
@@ -351,5 +355,11 @@
     "Deux mains sur poignées mobiles, pieds à plat sur pédales opposées, vert cuisses fessiers mollets aux deux cases."
    ]
   }
- ]
+ ],
+ "regleStyleVerteUtilisateur2026_09_27": {
+  "demande": "Le vert de tous les GIFs doit être bien visible et suivre la forme du muscle, pas être une plaque colorée.",
+  "statut": "critere global enregistré; périmètre exact à confirmer (ensemble des 331 GIFs livrés ou GIFs du PDF de corrections).",
+  "regle": "Présence du vert mesurée sur le corps hors plantes; vérifier contours anatomiques, texture visible et absence d’aplat géométrique.",
+  "aucun_livre_modifie": true
+ }
 }

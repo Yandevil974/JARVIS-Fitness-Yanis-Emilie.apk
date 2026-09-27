@@ -24,6 +24,13 @@ source restaurée au commit `8663b6e`. Vérifications : PDF 26 pages, propositio
 Aucune génération, intégration, recoloration ou modification des livrés pendant cette reprise. Réponses utilisateur
 (validation des numéros et teinte verte) toujours attendues ; voir VERIFICATION §94.
 
+**Nouveau retour utilisateur 27/09 (prioritaire) :** réviser 26 phase 2 (deux mains derrière la tête), 44/45
+(curl normal supiné, pas marteau), 80 (prise phase 2 identique à phase 1). Nouvelle exigence de style pour tous les GIFs :
+vert vif/visible épousant l’anatomie musculaire, pas une plaque. Portée exacte à clarifier (331 GIFs application ou seuls
+GIFs du PDF corrections). 10 appels tentés ce tour (1 échec, 9 rendus). Brouillons lot69 à revoir sous `review/lot69-revision-*.jpg`
+et `propositions/lot69/gif/homme/` ; contrôles images normés OK, mais 26/80 gardent des réserves de teinte/lecture et
+le PDF comparatif n’a pas été mis à jour. Toutes propositions non validées ; aucune intégration. Voir §95.
+
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.
 

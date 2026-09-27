@@ -1680,3 +1680,33 @@ ou APK. Aucune réponse de validation par numéro ni choix de teinte n'est reçu
 Prochaine action : attendre une validation explicite par numéros (ou « je relis le PDF ») et le choix du
 vert si le sujet est repris ; ne rien intégrer ni recolorer par anticipation. Le rappel pré-étape3 sur
 RGB du n°260 et le périmètre metcon/piscine/Aqua Tabata pour Émilie reste ouvert.
+
+
+## 95. Retours utilisateur sur le PDF — ébauches de révision lot69 (27/09/2026)
+
+Nouvelles consignes directes : n°26, les deux mains derrière la tête en phase 2 ; n°44/45, prise de curl normal
+supinée et non marteau ; n°80, prise phase 2 identique à la phase 1. Exigence de style pour **tous les GIFs** :
+vert bien visible qui dessine la forme du muscle, pas une plaque colorée. La portée exacte de « tous » reste à confirmer
+(331 GIFs livrés ou périmètre des GIFs du PDF de corrections). Le critère est enregistré sans modifier les 331 livrés.
+
+**10 appels de génération au total, 9 images obtenues + 1 tentative rejetée pour chemin/extension de sortie invalide ; plafond
+atteint.** Aucun nouvel appel ne doit être fait dans ce tour. Ébauches de phases assemblées sous `propositions/lot69/` :
+26 SHA `f85fc4869a4a719466886eb8880b540bb20daf492b77d96ee6f5dae4a826e983` ; 44 et 45 paire partagée SHA
+`980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c` ; 80 SHA
+`b2f296b050cfec630f5f10fcd69699d99129d41151a58c1b171ed17f94c7d8f6`. 4 identifiants vérifiés par `verif-ids.py` ;
+`refonte-sheet.py` a produit des GIF 2 frames × 500 ms (26/80 788×440 ; 44/45 259×440). Contrôles visuels :
+44/45 montrent une orientation supinée plus proche du curl normal ; restent à vérifier l’étendue anatomique du vert.
+26 : lecture des deux mains en phase 2 encore réservée et vert départ non satisfaisant au comptage lime strict.
+80 : vérification de l’orientation exacte phase 2/phase 1, cadrage et contour du vert encore nécessaires. Ces 4 assets
+sont des brouillons non validés, gardés séparés des GIF livrés. Aperçus `review/lot69-revision-26.jpg`,
+`review/lot69-revision-44-45.jpg`, `review/lot69-revision-80.jpg`.
+
+Registre retours mis à jour pour 26/44/45/80 et critère global vert ; `a-refaire.json` porte les mêmes consignes. Le PDF
+`CORRECTIONS-avant-apres.pdf` n’a pas été remplacé car il ne reflète pas les nouvelles demandes et des contrôles restent
+ouverts : statut du registre changé en `a_reviser_apres_retours_utilisateur_2026-09-27`. Pas de validation utilisateur, pas de
+`valide-couples.py`, pas de changement aux GIF livrés, manifeste, état, PDF principal, prescriptions ou APK.
+
+Prochaine étape : clarifier si « tous les GIFs » vise l’ensemble des 331 visuels ou le lot PDF ; contrôler avec l’utilisateur
+les mains de 26, la supination et la forme/étendue du vert de 44/45, l’orientation de 80 ; effectuer d’éventuelles nouvelles
+reprises dans un autre tour (plafond génération atteint) puis refaire le PDF comparatif lorsqu’il est cohérent. Toujours 0/26
+approuvées. La question de teinte uniforme au n°260 reste distincte et en attente.

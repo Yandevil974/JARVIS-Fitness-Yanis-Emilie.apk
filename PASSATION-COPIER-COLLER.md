@@ -48,6 +48,18 @@ NE JAMAIS pousser sur main ; ne jamais supprimer/renommer la racine du dépôt n
 - Réponses toujours attendues : validation explicite par numéro (ou « je relis le PDF ») et décision sur le
   vert (154,205,50 ou n°260 mesuré ≈117,189,18, ou plus tard). Ne rien supposer. Détails §94.
 
+
+
+### Dernier retour utilisateur — révisions PDF demandées (27/09)
+- N°26 : en phase 2, les deux mains derrière la tête. N°44/45 : curl normal supiné, pas marteau.
+  N°80 : orientation des mains en phase 2 identique à la phase 1.
+- Critère demandé pour **tous les GIFs** : vert visible, suivant la forme du muscle, pas une plaque.
+  Portée à préciser : les 331 GIFs de l’app ou les GIFs concernés par le PDF de corrections ?
+- 10 appels de génération consommés (dont 1 erreur d’extension, 9 réussites). Ébauches lot69 visibles sous
+  `review/lot69-revision-*.jpg` et GIFs sous `propositions/lot69/gif/homme/`. Refonte-sheet + verif-ids OK.
+  Certaines ébauches restent à contrôler (mains de 26, vert de 26/80) : le PDF comparatif n’a pas été régénéré.
+  Aucun approuvé, aucune intégration ; les GIF livrés restent intacts. Détails VERIFICATION §95.
+
 ## 4. CE QUE J'ATTENDS AU PROCHAIN CHAT (réponses utilisateur à obtenir, pas à deviner)
 1. **Validation par numéro** : l'utilisateur dira « OK les 26 », ou « OK : 19, 26, 31 … » (liste), ou
    « je relis le PDF ». Une phrase générale ne suffit pas à intégrer ; une LETTRE ISOLÉE (T, Y, E…) est une

@@ -28,6 +28,13 @@ et/ou Aqua Tabata pour Émilie, à confirmer avant de coder.
 propositions/SHA 26/26 ; 0 approbation. Aucun appel de génération ni intégration. Réponses validation par numéro
 et choix du vert toujours en attente (détails VERIFICATION §94).
 
+**Retour utilisateur 27/09 — PDF à réviser :** n°26 phase 2 avec les deux mains derrière la tête ; n°44/45 en curl
+normal supiné (pas marteau) ; n°80 phase 2 avec la même orientation des mains que la phase 1. Exigence de style globale :
+vert clairement visible et suivant les formes anatomiques, jamais une simple plaque. **Portée du « tous les GIFs » à confirmer**
+(ensemble 331 GIFs livrés, ou GIFs du PDF de corrections). 10 appels tentés dont un rejet de format ; ébauches lot69 contrôlées
+par `verif-ids.py` et `refonte-sheet.py`, mais 26 et 80 ont encore des réserves et le PDF n’est pas régénéré. Statut :
+révisions demandées, 0 approbation, 0 intégration ; livrés intacts. Voir VERIFICATION §95 et `retours-utilisateur-2026-09-26.json`.
+
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
 La relecture interne antérieure ne remplace pas votre validation.

@@ -62,6 +62,20 @@
     ],
     "validation_utilisateur": false,
     "controle_final_requis": true
+   },
+   "retour_revision_utilisateur_2026_09_27": "Phase 2 : les deux mains doivent tenir la corde derrière la tête.",
+   "revision_candidate_lot69": {
+    "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/crunch-a-la-poulie-homme.gif",
+    "sha256": "f85fc4869a4a719466886eb8880b540bb20daf492b77d96ee6f5dae4a826e983",
+    "size": [
+     788,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
+    "statut": "brouillon_non_valide",
+    "controle_requis": "Ébauche phase 2 générée et assemblée avec la phase 1 précédente. À vérifier : deux mains distinctes derrière la tête ; vert du départ pas encore suffisamment lumineux selon le contrôle strict."
    }
   },
   {
@@ -151,6 +165,20 @@
     "validation_utilisateur": false,
     "controle_final_requis": true,
     "reserve_traitee_lot68": "vert cyan diffus -> lime strict (PIL, zone bras, case2 0->545 px strict), original .avant-recolor.gif"
+   },
+   "retour_revision_utilisateur_2026_09_27": "Ce n’est pas un curl marteau : corriger l’orientation des mains pour un curl normal supiné.",
+   "revision_candidate_lot69": {
+    "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-neutre-homme.gif",
+    "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+    "size": [
+     259,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
+    "statut": "brouillon_non_valide",
+    "controle_requis": "Nouvelle paire générée avec supination. Orientation du curl normal plus lisible ; contour et étendue du vert du biceps restent à contrôler."
    }
   },
   {
@@ -174,6 +202,20 @@
     "validation_utilisateur": false,
     "controle_final_requis": true,
     "reserve_traitee_lot68": "même recolorisation que 44 (paire partagée), original .avant-recolor.gif"
+   },
+   "retour_revision_utilisateur_2026_09_27": "Ce n’est pas un curl marteau : corriger l’orientation des mains pour un curl normal supiné (paire commune avec le n°44).",
+   "revision_candidate_lot69": {
+    "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+    "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+    "size": [
+     259,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
+    "statut": "brouillon_non_valide",
+    "controle_requis": "Même paire candidate que le n°44, pour le mouvement/variante concerné. Non validée."
    }
   },
   {
@@ -290,6 +332,20 @@
     "validation_utilisateur": false,
     "controle_final_requis": true,
     "reserve_traitee_lot68": "taches sombres du plastron FORTEMENT ATTÉNUÉES (passe luminance, 0 px sous seuil ; traces légères possibles à apprécier) — original .avant-recolor.gif. Restent : dérive légère du visage en fin, échelle poids, flexion coudes/trajectoire"
+   },
+   "retour_revision_utilisateur_2026_09_27": "En phase 2, l’orientation des mains doit être identique à la phase 1 ; corriger la prise.",
+   "revision_candidate_lot69": {
+    "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "b2f296b050cfec630f5f10fcd69699d99129d41151a58c1b171ed17f94c7d8f6",
+    "size": [
+     788,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
+    "statut": "brouillon_non_valide",
+    "controle_requis": "Nouvelle paire générée. À contrôler : orientation des mains phase 2 comparée à phase 1, continuité du cadrage et définition anatomique du vert ; non prête à remplacer la proposition précédente."
    }
   },
   {
@@ -637,8 +693,9 @@
    "date": "2026-09-27",
    "exercices": 26,
    "disposition": "AVANT gauche / APRÈS droite, phases empilées (2) ou grille 2x2 (4)",
-   "statut": "en_attente_validation_utilisateur",
-   "lien_chat": "https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/d57f6e21e21868b45643b73269e7af485a048a3a/evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf"
+   "statut": "a_reviser_apres_retours_utilisateur_2026-09-27",
+   "lien_chat": "https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/d57f6e21e21868b45643b73269e7af485a048a3a/evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf",
+   "note": "Le PDF actuellement au chemin enregistré précède les nouvelles demandes sur 26/44/45/80 ; ne pas le considérer comme PDF de validation final. Attendre les révisions contrôlées."
   },
   "shas_verifies_avant_generation": true
  },
@@ -651,5 +708,11 @@
   "frames": 4,
   "accord_utilisateur": true,
   "accord_images": false
+ },
+ "regle_style_verte_utilisateur_2026_09_27": {
+  "demande": "Sur tous les GIFs, le vert doit être bien visible et dessiner le muscle, pas seulement former une plaque colorée.",
+  "statut": "critere_global_enregistre; portée du chantier à confirmer (331 GIFs livrés vs GIFs du PDF de corrections).",
+  "application_immediate": "Toutes propositions et révisions en cours.",
+  "livres": "Aucun GIF livré modifié dans ce tour; audit/mise à jour globaux à planifier après clarification de portée et validation des propositions."
  }
 }
