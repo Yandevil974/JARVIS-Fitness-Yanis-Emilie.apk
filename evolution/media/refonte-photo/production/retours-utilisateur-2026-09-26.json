@@ -4,7 +4,7 @@
  "etape": 2,
  "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
  "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
- "nombre_numeros_directs": 24,
+ "nombre_numeros_directs": 25,
  "nombre_variantes_ajoutees": 3,
  "entrees": [
   {
@@ -293,13 +293,32 @@
    "nom": "Élévations latérales coude à 90°",
    "retour_utilisateur": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
    "origine": "retour_direct",
-   "statut": "refuse_interne",
-   "detail": "Lot63 : deux refus (angle masquant la flexion ; poignets sous les coudes). Lot68 : guide préparatoire propositions/lot68/guides/85-guide-plan-horizontal.png produit (plan horizontal ligné à hauteur épaules) avec réserve : mannequin de face, avant-bras non lisibles vers l'avant ; compléter d'une vue de profil au prochain tour, puis générer la position haute avec ce guide en contrainte visuelle, départ ensuite. Toujours AUCUNE proposition ni GIF pour ce numéro.",
+   "statut": "propose_attente_accord",
+   "detail": "Lot68 (suite) : guide 85-guide-plan-horizontal.png utilisé comme contrainte visuelle ; position haute construite en 4 images (3 éditions guidées : avant-bras ramenés à l'horizontale, poings devant les coudes, même plan que les coudes), départ édité depuis la haute (bras le long du corps, paumes vers le corps, décor conservé — vérifié en gros plan gauche). 7 générations dont 0 échec pour ce numéro. Proposition isolée sous propositions/lot68/, NON VALIDÉE. Réserves : léger débord du vert vers le haut du bras, prise/paumes petites à l'échelle, écarture des coudes à apprécier. Prescription inchangée.",
    "validation_utilisateur": false,
    "avant": {
     "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
     "sha256": "f32bca1d8f9c2eb217a062cc7e5d19be7d21427a4b084793c6c0e38f250ccdae",
     "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 68,
+    "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif",
+    "sha256": "1813e380eb5f885d74d045f264115bff7489e91d066502aa95569eb9d711c4d3",
+    "planche": "evolution/media/refonte-photo/propositions/lot68/planches/elevations-laterales-coude-a-90.png",
+    "review": "evolution/media/refonte-photo/review/lot68-proposition-85.jpg",
+    "size": [
+     788,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "roi_deltoide_strict_lime": [
+     975,
+     928
+    ],
+    "validation_utilisateur": false,
+    "controle_final_requis": true
    }
   },
   {
@@ -463,7 +482,7 @@
    "retour_utilisateur": "À refaire.",
    "origine": "retour_direct",
    "statut": "refuse_interne",
-   "detail": "Lot62 : case haute refusée (supination non démontrée). Lot68 : gros plan de la prise supination produit et contrôlé — propositions/lot68/guides/204-guide-prise-supination.png (paumes face caméra, doigts enroulés, pouces croisés vers l'intérieur, largeur épaules) : utilisable comme contrainte visuelle. Prochain tour : générer la position haute (menton au-dessus de la barre) avec ce gros plan en référence, puis la phase basse. Toujours AUCUNE proposition ni GIF pour ce numéro.",
+   "detail": "Lot68 (suite) : position haute produite avec le gros plan de prise en référence — supination lisible (paumes vers la caméra, pouces croisés), menton À la barre mais pas nettement au-dessus (réserve), phases/204-fin-2.png isolée comme base de travail, PAS une proposition (pas de GIF, phase basse manquante). Dernier appel du plafond (10/10) ÉCHOUÉ (réponse modèle sans image) pour le départ bras tendus. Prochain tour : refaire le départ depuis 204-fin-2, resserrer le menton au-dessus de la barre si besoin, puis assembler et contrôler.",
    "validation_utilisateur": false,
    "avant": {
     "gif": "evolution/media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",

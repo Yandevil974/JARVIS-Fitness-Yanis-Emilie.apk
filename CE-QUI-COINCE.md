@@ -1,19 +1,17 @@
 # 🚧 Ce qui coince — état au 26 septembre 2026, après lot67 — ÉTAPE2 : 26 retours ouverts, corrections à montrer avant validation
 
-## 🚩 Lot68 (27/09/2026) — n°26 proposé, guides 85/204 prêts, budget génération épuisé
+## 🚩 Lot68 suite (27/09/2026) — 26 ET 85 proposés, base 204 isolée, budget épuisé
 
-**Outil de génération DISPONIBLE : 10 appels utilisés (8 pour le n°26, 2 guides). Plus aucun ce tour.**
-Proposition n°26 isolée sous `propositions/lot68/` (stratégie du brief appliquée : arrivée construite
-d'abord, départ édité ; câble unique raccordé, deux mains sur la corde derrière la tête, enroulement réel,
-éloignement). SHA256 5342c88e60862a7bd86efeaaef722413c37bef3d815267dccc4e7faab46f3fbe ; 788×440, 2×500 ms ;
-vert CORPS hors plantes 512/286 px. Réserves : micro-variation tapis, main lointaine près du mousqueton
-en fin. NON VALIDÉE. **24 propositions non validées**, **2 sans proposition (85/204)** avec guides
-préparatoires lot68 : 85 (réserve : compléter d'un profil) et 204 (gros plan de prise contrôlé).
-Rien d'intégré ; aucun GIF livré, manifeste, état ou PDF principal modifié ; pas de valide-couples.py.
-**Branche changée par la plateforme : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (contenu 01a0dcad
-récupéré au commit 0a4327a). Les 4 fichiers portant la branche sont à jour.
-Suite : 85 (position haute : coudes 90°, avant-bras à hauteur des coudes ; départ paumes vers le corps),
-puis 204 (position haute menton au-dessus de la barre, supination lisible), puis réserves des 24 ;
+**10/10 appels utilisés ce tour (2 échecs compris). Proposition n°85 isolée NON VALIDÉE**
+(SHA 1813e380…711c4d3 ; départ bras bas paumes vers le corps, fin coudes 90° avant-bras horizontaux au
+même plan — la cible exacte du retour ; ROI deltoïdes 975/928 px strict ; réserves : débord vert haut du
+bras, paumes petites, écarture coudes). **Proposition n°26 inchangée** (SHA 5342c88e…ab46f3fbe).
+**25 propositions non validées, 1 sans proposition : 204** — base de travail `propositions/lot68/phases/204-fin-2.png`
+(position haute, supination lisible, menton À la barre — réserve : pas nettement au-dessus) ; départ bras
+tendus NON produit (10ᵉ appel échoué : réponse sans image). Rien d'intégré ; aucun GIF livré, manifeste,
+état ou PDF principal modifié ; pas de valide-couples.py. **Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`**
+(⚠️ environnement encore reset à d721868 ce tour ; récupération sans perte par merge --ff-only).
+Suite : 204 (départ depuis 204-fin-2, resserrer menton au-dessus si besoin, assembler), puis réserves des 25 ;
 PDF reprises AVANT gauche/APRÈS droite quand TOUT est prêt ; accord utilisateur avant intégration.
 AVANT étape3 : question vert identique n°260, attendre la réponse. Rappels-utilisateur.json non traité.
 
@@ -44,9 +42,9 @@ La relecture interne antérieure ne remplace pas votre validation.
 
 ## 1. Retours PDF :26 points ouverts, accord utilisateur obligatoire
 
-**24 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
-**2 sans proposition** :85/204 (guides préparatoires lot68 produits, propositions à venir).
-Lot68 :10 générations ;26 proposé selon le brief (arrivée d'abord, départ édité) ; guides 85/204.
+**25 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/222/239/265/298/380.
+**1 sans proposition** :204 (base de travail 204-fin-2 isolée ; départ à produire au prochain tour).
+Lot68 :15 générations cumulées (26 : 8 ; 85 : 7 ; 204 : 2 dont 1 échec) ; plafond 10/tour, échecs compris.
 Historique : Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.

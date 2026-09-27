@@ -1,27 +1,76 @@
 {
-  "numero": 26,
-  "identifiant": "crunch-a-la-poulie|homme",
-  "size": [
-    788,
-    440
-  ],
-  "frames": 2,
-  "duration_ms": 500,
-  "roi_abdominaux": [
-    220,
-    176,
-    394,
-    286
-  ],
-  "strict_lime": [
-    457,
-    250
-  ],
-  "sources": [
-    "phases/crunch-depart-2.png",
-    "phases/crunch-fin-5.png"
-  ],
-  "strategie": "brief-reprise : arrivée construite d'abord (5 essais dont 4 éditions guidées), départ édité depuis l'arrivée (2 essais)",
-  "generations_lot68": 8,
-  "validation_utilisateur": false
+  "lot68": {
+    "note": "mesures consolidées des propositions isolées lot68",
+    "propositions": [
+      {
+        "numero": 26,
+        "identifiant": "crunch-a-la-poulie|homme",
+        "size": [
+          788,
+          440
+        ],
+        "frames": 2,
+        "duration_ms": 500,
+        "roi_abdominaux": [
+          220,
+          176,
+          394,
+          286
+        ],
+        "strict_lime": [
+          457,
+          250
+        ],
+        "strict_lime_corps_hors_plantes": [
+          512,
+          286
+        ],
+        "sources": [
+          "phases/crunch-depart-2.png",
+          "phases/crunch-fin-5.png"
+        ],
+        "strategie": "brief-reprise : arrivée construite d'abord (5 essais dont 4 éditions guidées), départ édité depuis l'arrivée (2 essais)",
+        "generations_lot68": 8,
+        "validation_utilisateur": false
+      },
+      {
+        "numero": 85,
+        "identifiant": "elevations-laterales-coude-a-90|homme",
+        "size": [
+          788,
+          440
+        ],
+        "frames": 2,
+        "duration_ms": 500,
+        "roi_deltoide": [
+          320,
+          85,
+          480,
+          145
+        ],
+        "strict_lime": [
+          975,
+          928
+        ],
+        "sources": [
+          "phases/85-depart-2.png",
+          "phases/85-fin-4.png"
+        ],
+        "guide": "guides/85-guide-plan-horizontal.png (position haute, 3 éditions guidées depuis 85-fin.png)",
+        "strategie": "position haute construite avec guide 3D du plan coude/poignet, départ édité depuis la haute",
+        "generations_lot68_numero85": 7,
+        "reserves": [
+          "léger débord du vert vers le haut du bras (deltoïde antérieur) à apprécier",
+          "paume de départ vers le corps lisible mais prise petite à cette échelle",
+          "écarture des coudes à apprécier par l utilisateur"
+        ],
+        "validation_utilisateur": false
+      }
+    ],
+    "echecs_generation_lot68": [
+      "appel manquant fichier guide (85-fin, rejeté immédiatement)",
+      "204-depart : réponse modèle sans image (plafond atteint)"
+    ],
+    "validation_utilisateur_globale": false
+  }
 }

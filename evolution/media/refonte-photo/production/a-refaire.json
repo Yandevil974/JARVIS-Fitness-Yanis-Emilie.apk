@@ -137,9 +137,9 @@
    "numero_signale": 85,
    "lot": 63,
    "motif": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Lot63 : deux refus internes (flexion masquée ; poignets sous les coudes). Lot68 : guide 85-guide-plan-horizontal.png produit, réserve : avant-bras non lisibles de face — compléter d'un profil. Prochain : position haute avec guide en contrainte, puis phase basse. Aucun GIF tant que le plan coude/poignet n'est pas lisible."
+    "Lot68 : guide plan-horizontal utilisé, position haute en 4 images (coudes 90°, poings devant les coudes au même plan), départ édité (paumes vers le corps). Proposition lot68 isolée NON VALIDÉE. Réserves : débord vert haut du bras, paumes petites, écarture coudes. Ne pas intégrer sans accord."
    ],
    "validationUtilisateurRequise": true
   },
@@ -227,7 +227,7 @@
    "motif": "À refaire.",
    "statut": "refuse_interne",
    "reglesPrompt": [
-    "Lot62 : case haute refusée (supination invisible). Lot68 : gros plan 204-guide-prise-supination.png produit et contrôlé (paumes vers caméra). Prochain : position haute générée avec ce guide en référence, puis phase basse ; vérifier supination lisible et position haute (menton au-dessus de la barre)."
+    "Lot68 : position haute avec prise supination lisible (paumes face caméra) obtenue ; menton à la barre, réserve : pas nettement au-dessus. phases/204-fin-2.png = base de travail, PAS une proposition. Départ bras tendus NON produit (dernier appel du plafond échoué : réponse sans image). Prochain tour : départ depuis 204-fin-2, resserrer menton, assembler."
    ],
    "validationUtilisateurRequise": true
   },

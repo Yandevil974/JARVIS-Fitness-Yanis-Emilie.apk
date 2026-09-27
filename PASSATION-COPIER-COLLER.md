@@ -1,37 +1,34 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68, 27 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 suite, 27 septembre 2026
 
-## 🚩 Lot68 — n°26 proposé, guides 85/204 prêts, budget génération épuisé (27/09/2026)
+## 🚩 Lot68 suite — 26 ET 85 proposés, base 204 isolée, 10/10 appels (27/09/2026)
 
-**Outil de génération DISPONIBLE cette session : 10 appels utilisés (8 pour le n°26, 2 guides), 10/10, plus aucun pour ce tour.**
-**Proposition n°26 produite (stratégie du brief respectée : arrivée construite d'abord, départ édité depuis l'arrivée) :**
-`propositions/lot68/gif/homme/crunch-a-la-poulie-homme.gif` — SHA256 5342c88e60862a7bd86efeaaef722413c37bef3d815267dccc4e7faab46f3fbe,
-788×440, 2×500 ms, DÉBUT gauche (tronc déroulé) / FIN droite (enroulement, mains et corde derrière la tête, câble unique
-poulie haute→corde, éloignement net de la station). Vert corporel mesuré HORS PLANTES : 512 px (départ) / 286 px (fin),
-ROI [220,176,394,286]. Planche `review/lot68-proposition-26.jpg`. Réserves explicites : micro-variation du tapis (bord gris
-visible au départ), main lointaine placée près du mousqueton en fin. NON VALIDÉE — validation false, rien d'intégré.
-**24 propositions non validées** (23 précédentes + n°26). **Restent sans proposition : 85 et 204**, mais guides préparatoires :
-`propositions/lot68/guides/85-guide-plan-horizontal.png` (réserve : avant-bras non lisibles de face ; compléter d'un profil)
-et `propositions/lot68/guides/204-guide-prise-supination.png` (contrôlé : paumes face caméra, exploitable tel quel).
+**Budget génération : 10/10 UTILISÉ ce tour (2 échecs compris : 1 rejet immédiat fichier manquant après
+reset du workspace, 1 réponse modèle sans image pour 204-depart). Plus aucun appel disponible.**
+**Proposition n°85 (élévations latérales coude à 90°, Yanis) — NON VALIDÉE :**
+`propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif` — SHA256
+1813e380eb5f885d74d045f264115bff7489e91d066502aa95569eb9d711c4d3, 788×440, 2×500 ms, DÉBUT gauche
+(bras le long du corps, paumes vers le corps) / FIN droite (coudes 90°, poings devant les coudes au
+même plan horizontal, cible exacte du retour utilisateur). ROI deltoïdes [320,85,480,145] : vert strict
+975/928 px. Réserves : léger débord vert haut du bras, paumes petites à l'échelle, écarture coudes.
+**Proposition n°26 inchangée** (SHA 5342c88e…ab46f3fbe, voir VERIFICATION §87).
+**25 propositions non validées** (23 + 26 + 85). **1 sans proposition : 204** — base de travail isolée
+`propositions/lot68/phases/204-fin-2.png` (position haute, supination lisible paumes face caméra,
+menton À la barre, réserve : pas nettement au-dessus) ; départ bras tendus NON produit (10ᵉ appel échoué).
 
-**Suite prévue :** (1) n°85 — complément de profil si utile, puis position haute (coudes 90°, avant-bras à hauteur des
-coudes ; départ paumes vers le corps) et départ ensuite ; (2) n°204 — position haute avec le gros plan de prise en référence
-(menton au-dessus de la barre, supination lisible), puis phase basse ; (3) reprendre les réserves des 24 propositions ;
-(4) quand TOUT est prêt : PDF AVANT gauche/APRÈS droite des seules reprises via `tools/pdf-corrections-avant-apres.py`,
-lien téléchargeable chat, ATTENDRE l'accord avant intégration. ≤10 appels/tour, échecs compris.
-Zottman 46/47/48 : format 4 phases accepté, images NON validées. Décision 80 banc incliné enregistrée, images non validées.
-Aucun PDF final ni APK ce tour ; aucun GIF livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
-AVANT étape3 : demander si le vert doit être identique au n°260, ATTENDRE la réponse. À la construction app : rappeler
-metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant de coder. Rappels-utilisateur.json non traité.
-Vert mesuré sur le CORPS (pas les plantes). Pas de famille C, visage A, maîtres homme/femme selon profil, début à gauche,
-même cadrage/machine/orientation, pas de miroir/rotation globale, prescription jamais réécrite.
-
-Maintenir le 🚩 et ce bloc de reprise ; prévenir explicitement si le contexte approche sa limite et renvoyer vers
-PASSATION-COPIER-COLLER.md. Blocage d'outil RÉSOLU ce tour ; limite de contexte non atteinte.
-
-**Branche changée par la plateforme : nouvelle branche imposée `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`**
-(contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, sans écrasement). Travailler et pousser UNIQUEMENT sur cette
-branche ; jamais sur main ; ne jamais supprimer/renommer la racine ni .git. Fichiers où la branche est écrite : ce fichier,
-`evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`, `CE-QUI-COINCE.md`, `tools/pdf-revue-331.py` (à jour).
+**Suite prévue :** (1) n°204 — produire le départ depuis 204-fin-2 (corps descendu, bras tendus, prise
+supination conservée, même barre/cadrage), resserrer le menton au-dessus de la barre si besoin, puis
+assembler et contrôler ; (2) reprendre les réserves des 25 propositions ; (3) PDF AVANT gauche/APRÈS
+droite des seules reprises via `tools/pdf-corrections-avant-apres.py` quand TOUT est prêt, accord avant
+intégration. ≤10 appels/tour échecs compris. Zottman 46/47/48 : format accepté, images NON validées.
+Aucun PDF final ni APK ce tour ; aucun livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
+AVANT étape3 : question vert identique n°260, ATTENDRE la réponse. Construction app : rappeler metcon +
+piscine nage fractionnée et/ou Aqua Tabata pour Émilie. Rappels-utilisateur.json non traité.
+Vert mesuré sur le CORPS (plantes exclues ; n°85 : plante droite du décor hors ROI). Pas de famille C,
+visage A, maîtres homme/femme, début à gauche, pas de miroir/rotation globale, prescription inchangée.
+**Branche imposée : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (contenu 01a0dcad repris à 0a4327a ;
+⚠️ l'environnement a ENCORE été reset à d721868 ce tour : fetch + merge --ff-only de la branche de session,
+aucune perte). Ne jamais pousser main. Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md,
+CE-QUI-COINCE.md, tools/pdf-revue-331.py. Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
@@ -46,14 +43,14 @@ NOUVELLES PRÉCISIONS :148 = Mountain climbers homme,3 jambes fin ;149 ET150 = P
 Zottman46/47/48 : format4 positions accepté, PAS images. Registre production/retours-utilisateur-2026-09-26.json,
 a-refaire.json. Numéros :19,26,31,37,38,44,45,46,47,48,64,80,85,87,90,126,148,149,150,194,204,222,239,265,298,380.
 Consigne MONTRER AVANT VALIDATION : aucun GIF livré/PDF principal/manifeste/état/map remplacé sans accord.
-**24 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
-**2 sans proposition** :85/204 (guides préparatoires lot68 prêts, voir bloc du haut).
+**25 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/85/87/90/126/148/149/150/194/222/239/265/298/380.
+**1 sans proposition** :204 (base de travail 204-fin-2 isolée, départ à produire, voir bloc du haut).
 Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.
 GIF788×440,2×500ms ; ROI pectoraux626/487, pas validation de style. Aucun angle exact prescrit.
 Reconstruction lot67/assemble.py ; review/lot67-proposition-80.jpg ; détail §85.
-Suite85/204 et réserves restantes. Aucun livré remplacé ; comparatif bloque2 manquants.
+Suite204 et réserves restantes. Aucun livré remplacé ; comparatif bloque1 manquant.
 PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.
 
 PDF CORRECTIONS demandé : QUAND TOUTES PRÊTES, UN PDF téléchargeable dans chat, UNIQUEMENT reprises,

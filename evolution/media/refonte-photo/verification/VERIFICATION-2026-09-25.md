@@ -1468,3 +1468,45 @@ réserves restants) ; pas de valide-couples.py, aucun build APK. Comparatif inte
 Suite : 85 puis 204 avec leurs guides, réserves des 24 propositions, puis PDF reprises AVANT gauche/APRÈS
 droite, accord avant intégration. AVANT étape3 : question vert identique260. Rappels app : metcon + piscine
 fractionnée et/ou Aqua Tabata pour Émilie. Branche : push arena/01a0e12a uniquement.
+
+## 88. Lot68 suite — proposition85, base 204, plafond 10/10 (27/09/2026)
+
+Workspace ENCORE reset à d721868 en début de tour : fetch + merge --ff-only de arena/01a0e12a (c0023b6)
+sans perte, venv recréé. Vérification immédiate de l'outil de génération par production utile.
+
+**Budget : 10 appels, 10 consommés (échecs compris) : 1 rejet immédiat (fichier guide introuvable AVANT
+récupération du reset — compte au plafond), 8 rendus, 1 échec modèle « réponse sans image » (204-depart).**
+Détail : 85 = 6 rendus (85-fin, fin-2, fin-3, fin-4 ; depart, depart-2) ; 204 = 2 rendus (204-fin, fin-2)
++ 1 échec (204-depart).
+
+**85 proposé** : guide 85-guide-plan-horizontal.png (lot68 précédent) utilisé comme contrainte visuelle avec
+l'identité maître-homme. Position haute construite en 4 images : (1) avant-bras vers le haut (refusé :
+motif exact du refus lot63), (2) bras tendus en T (refusé : flexion perdue), (3) poings à hauteur mais
+flexion non lisible (refusé), (4) POINGS DEVANT LES COUDES au même plan horizontal — pose cible atteinte,
+vérifiée en gros plan des deux bras. Départ édité depuis la haute : bras le long du corps, paumes vers le
+corps, haltères aux cuisses ; décor périphérique suspecté dérivant puis INFIRMÉ par comparaison en gros
+plan des bandes gauches (même fenêtre, plante, rack, kettlebell présent des deux côtés). Candidat isolé :
+propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif, 788×440, 2×500 ms, DÉBUT gauche.
+SHA256 1813e380eb5f885d74d045f264115bff7489e91d066502aa95569eb9d711c4d3. Mesures : ROI deltoïdes
+[320,85,480,145], vert strict 975 px (départ) / 928 px (fin) ; vert total hors plantes gauche 2138/2457 px
+(plante droite du décor x>660 exclue de la cible, mentionnée). Réserves explicites : léger débord du vert
+vers le haut du bras, paumes/prise petites à l'échelle, écarture des coudes à apprécier par l'utilisateur.
+Proposition ≠ validation ; validation_utilisateur=false. Prescription inchangée. Contrôles review/lot68-
+proposition-85.jpg (depuis GIF) + gros plans .cache (non poussés).
+
+**204 NON proposé** : position haute produite avec le gros plan de prise lot68 en référence — supination
+LISIBLE (paumes face caméra, pouces croisés, doigts enroulés), vert sur les flancs (grand dorsal), menton
+À la barre. Édition « menton au-dessus de la barre » SANS EFFET VISIBLE (204-fin-2 ≈ 204-fin) : réserve
+maintenue. Dernier appel (départ bras tendus) ÉCHOUÉ (réponse modèle sans image) : plafond atteint, aucune
+tentative de plus. phases/204-fin-2.png isolée comme BASE DE TRAVAIL, pas un candidat, pas de GIF, pas de
+compteur de proposition augmenté pour 204. Prochain tour : départ depuis 204-fin-2 (corps descendu, bras
+tendus, prise conservée, même barre/cadrage), menton resserré au-dessus de la barre si besoin, assembler,
+contrôler supination + hauteur + raccords.
+
+**25 propositions sur26 points, aucune approuvée** (23 + 26 + 85). **1 sans proposition : 204.**
+mesures.json lot68 consolidé (26 + 85 + échecs). Registres retours/a-refaire alignés (85 :
+propose_attente_accord ; 204 : refuse_interne avec base isolée). Passations et CE-QUI-COINCE à jour,
+branche rappelée dans les 4 fichiers. Aucun livré/manifeste/état/PDF principal modifié ; aucun PDF final
+de corrections (85/204 : 204 reste à produire + réserves des 25) ; pas de valide-couples.py, aucun build
+APK. Push arena/01a0e12a uniquement. Suite : 204, réserves des 25, PDF reprises quand TOUT est prêt,
+accord avant intégration. AVANT étape3 : question vert identique260. Rappels app Émilie inchangés.
