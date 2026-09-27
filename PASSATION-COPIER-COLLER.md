@@ -1,36 +1,78 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68 tour6, 27 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — CONSIGNES FINALES, 27 septembre 2026
 
-**RÈGLE (27/09, instruction utilisateur) : les lettres isolées (T, Y, E, etc.) sont des relances
-d'un CHAT BLOQUÉ côté interface — PAS des instructions. À réception d'une lettre : NE RIEN FAIRE
-(aucun travail, aucun appel, aucun compteur), rappeler l'état en cours et attendre le vrai message.**
-**Questions en attente (widget ignoré par l'interface, reposées en texte simple) :**
-(1) Validation : « les 26 » ou liste de numéros « ok » (ex. « ok 19, 26, 31 ») ou « je relis le PDF ».
-(2) Vert : garder (154,205,50) ou uniformiser sur le n°260 (117,189,18) ou décider plus tard.
+Tu reprends la refonte des visuels JARVIS Fitness Yanis & Émilie, dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk.
+NE JAMAIS pousser sur main ; ne jamais supprimer/renommer la racine du dépôt ni .git.
 
-## 🚩 Lot68 tour6 — PDF comparatif 26 reprises PRODUIT, en attente de validation (27/09/2026)
+## 1. Récupérer le bon état
+- Tout le travail est sur la branche **arena/01a0e12a-jarvis-fitness-yanis-emilie-ap**, dernier commit **c31b9e6**.
+- Si l'environnement est revenu au commit initial d721868 (ça arrive plusieurs fois par jour) : arbre vide,
+  récupérer SANS écraser :
+  git status ; git fetch origin arena/01a0e12a-jarvis-fitness-yanis-emilie-ap ; git merge FETCH_HEAD --ff-only
+- Si Arena impose une AUTRE branche dans le nouveau chat : fetch la branche ci-dessus, git reset --hard FETCH_HEAD,
+  travailler et pousser UNIQUEMENT sur la branche imposée, et mettre à jour le nom de branche dans les 4 fichiers :
+  PASSATION-COPIER-COLLER.md, evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md,
+  evolution/media/tools/pdf-revue-331.py (page de titre).
+- Venv (à recréer après chaque reset, .cache ne persiste pas) :
+  python3 -m venv evolution/media/refonte-photo/.cache/pyvenv
+  evolution/media/refonte-photo/.cache/pyvenv/bin/pip install -q pillow numpy pymupdf
 
-**« E » reçu : lettre isolée, AUCUNE validation déduite (règle enregistrée). 0 appel de génération ce tour.**
-**PDF COMPARATIF PRODUIT : `evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf`**
-(12 Mo, 26 pages = 26 reprises, AVANT gauche / APRÈS droite, phases empilées 2 ou grille 2×2 pour les 4
-phases, chaque page marquée PROPOSITION NON VALIDÉE avec retour utilisateur + réserves en pied de page).
-Généré par `tools/pdf-corrections-avant-apres.py` après vérification complète : **26/26 SHAs AVANT (commit
-figé e538e03) et APRÈS (disque) corrects** — correction préalable : SHAs 44/45 re-mis à jour dans le registre
-(b7b404d8… après recolorisation tour4) ; SHA 45 aligné sur son propre fichier.
-**LIEN TÉLÉCHARGEABLE (donné dans le chat) :** `https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/d57f6e21e21868b45643b73269e7af485a048a3a/evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf`
-**EN ATTENTE DE VALIDATION UTILISATEUR page par page (par numéro). AUCUNE intégration sans accord explicite.**
-Après accord par numéro : chaîne d'intégration (§70 passation) avec valide-couples.py, GIF livrés, manifeste,
-PDF principal, index — UNIQUEMENT pour les numéros validés.
-**Rappels en attente :** (1) AVANT étape3 : vert identique au n°260 ? (260 réel = RGB ≈ (117,189,18) ≠
-(154,205,50) des recolorisations ; si « identique » : re-passe PIL triviale sur 19/44/45/48/80/85 avant
-intégration — ne pas anticiper) ; (2) à la construction app : metcon + piscine nage fractionnée et/ou Aqua
-Tabata pour Émilie, confirmer avant de coder.
-Réserves d'appréciation visibles dans le PDF (échelle poids 80, trajectoires, main masquée 44/45, disques
-coupés 194, saut d'échelle 204 aussi présent dans l'AVANT, etc.).
-**État : 26 propositions, 0 approuvée. Livrés inchangés (gif/, manifeste, état, PDF principal 389).**
-≤10 appels/tour échecs compris. Aucun APK. Pas de famille C, visage A, début à gauche, pas de miroir.
-**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (resets d721868 ×5 le 27/09, récupérés sans
-perte). Fichiers branche à jour : ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md,
-tools/pdf-revue-331.py. Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
+## 2. Lire dans l'ordre
+1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire, recette de prompt, pièges).
+2. CE-QUI-COINCE.md (feuille de route utilisateur, décisions ouvertes).
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md, sections §85 à §93.
+4. Registres sous evolution/media/refonte-photo/production/ : retours-utilisateur-2026-09-26.json,
+   a-refaire.json, rappels-utilisateur.json, prescriptions.json (les sections récentes priment).
+
+## 3. État exact au 27/09 (fin tour6)
+- ÉTAPE 2 (corrections des visuels du PDF de revue). **26 propositions, 0 approuvée** pour les 26 points ouverts :
+  19,26,31,37,38,44,45,46,47,48,64,80,85,87,90,126,148,149,150,194,204,222,239,265,298,380.
+- **PDF comparatif PRODUIT et poussé** : evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf
+  (12 Mo, 26 pages, AVANT gauche / APRÈS droite, tout marqué PROPOSITION NON VALIDÉ, retour utilisateur +
+  réserves en pied de page). SHAs vérifiés 26/26 (AVANT depuis commit figé e538e03, APRÈS au disque ;
+  44/45 ré-alignés avant génération). Lien téléchargeable donné dans l'ancien chat :
+  https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/d57f6e21e21868b45643b73269e7af485a048a3a/evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf
+- Réserves de teinte DÉJÀ traitées (originaux .avant-recolor.gif / .avant-degreen.png conservés) :
+  19 (olive→lime), 44/45 (cyan→lime), 48 (cyan 4 phases), 80 (aplats puis taches sombres atténuées),
+  85 (débord au-dessus des épaules supprimé). Détail : propositions/lot68/recolorisation-reserves.json.
+- Livrés INTACTS : gif/, manifeste-331, état.json, PDF principal 389, aucun APK, pas de valide-couples.py lancé.
+- 3 exercices avaient leurs propositions produites au lot68 (26, 85, 204) : voir VERIFICATION §87–89.
+
+## 4. CE QUE J'ATTENDS AU PROCHAIN CHAT (réponses utilisateur à obtenir, pas à deviner)
+1. **Validation par numéro** : l'utilisateur dira « OK les 26 », ou « OK : 19, 26, 31 … » (liste), ou
+   « je relis le PDF ». Une phrase générale ne suffit pas à intégrer ; une LETTRE ISOLÉE (T, Y, E…) est une
+   relance de chat bloqué : NE RIEN FAIRE, rappeler l'état, attendre.
+2. **Vert des muscles** : garder (154,205,50) ou uniformiser sur le n°260 (RGB réel mesuré ≈ 117,189,18)
+   ou décider plus tard. Si « identique 260 » : re-passe PIL (même méthode, cible 117,189,18) sur
+   19/44/45/48/80/85 AVANT toute intégration. Ne pas anticiper la décision.
+3. Après validation explicite : intégrer UNIQUEMENT les numéros validés par la chaîne imposée (§70 de la
+   passation longue) : verif-ids.py → lecture pleine définition des DEUX cases (zoom PIL au doute) →
+   valide-couples.py --athlete homme --lot lot68 --acceptes <numéros> (copies, manifeste, état, PDF, map) →
+   tools/pdf-revue-331.py → tools/index-general.py → docs → commit + push branche session.
+   JAMAIS intégrer les refus ; jamais lancer valide-couples.py sans accord.
+
+## 5. Règles impératives (inchangées)
+≤10 appels de génération par tour, échecs compris ; aucune famille C ; visage A, maîtres homme/femme selon
+profil (Yanis homme, Émilie femme) ; début à gauche, même cadrage/machine/orientation, pas de miroir ni
+rotation globale ; vert mesuré sur le CORPS (plantes du décor exclues) ; ne jamais modifier une prescription
+pour justifier une image ; proposition ≠ validation ≠ techniquement terminée ; aucune modification des livrés
+sans accord explicite ; signature APK uniquement avec la clé utilisateur (jamais fabriquée, jamais publiée) ;
+IA conversationnelle en dernier ; préserver l'application existante (2 profils, fonctionnalités).
+Piège connu : ce modèle REFUSE d'éditer certaines poses (plier/tendre des bras) → revenir au DIPTYQUE
+une génération avec guides en contrainte (récettes §87–89).
+
+## 6. Rappels obligatoires (rappels-utilisateur.json, non traités)
+- AVANT l'étape 3 : la question du vert identique 260 (posée, réponse en attente — ne pas re-colorer sans décision).
+- À la CONSTRUCTION de l'application : rappeler les ajouts **metcon + piscine nage fractionnée et/ou Aqua
+  Tabata pour Émilie**, confirmer le périmètre AVANT de coder.
+- Feuille de route : étape 2 (corrections, en cours) → étape 3 (niveau cardio/piscine ajustable 2 profils,
+  proposition persistante à valider avant codage) → étape 4 (images pendant les chronos piscine/aqua/nage
+  fractionnée/elliptique) → construction APK signé (clé utilisateur dans /tmp/rk.txt 0600, jamais Git/chat) → IA en dernier.
+
+## 7. Chaque tour
+Lire/actualiser PASSATION-COPIER-COLLER.md, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md, VERIFICATION
+(nouvelle section numérotée), registres concernés ; montrer les contrôles utiles (review/, mesures) ;
+commit + push UNIQUEMENT sur la branche Arena de session ; terminer par un bloc de reprise 🚩 actualisé.
+Prévenir explicitement si le contexte approche sa limite et préparer la reprise avant de perdre l'information.
 
 Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
