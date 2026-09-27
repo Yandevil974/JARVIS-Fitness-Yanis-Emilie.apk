@@ -359,9 +359,24 @@
     "frames": 2,
     "duration_ms": 500,
     "validation_utilisateur": false,
-    "statut": "brouillon_non_valide",
+    "statut": "refuse_par_utilisateur_2026-09-27",
     "correction_demandee": "Phase de départ recopiée depuis la proposition précédente sans modification ; nouvelle phase finale générée en prenant la phase de départ comme guide, sans rotation de la prise.",
-    "controle_requis": "L’utilisateur doit confirmer que les deux orientations de main sont maintenant identiques ; vert anatomique reste un critère distinct à améliorer/valider."
+    "controle_requis": "L’utilisateur doit confirmer que les deux orientations de main sont maintenant identiques ; vert anatomique reste un critère distinct à améliorer/valider.",
+    "note_refus": "La position finale ne convient toujours pas selon le retour suivant ; garder le départ et rapprocher les bras/mains vers le haut sans rotation."
+   },
+   "retour_revision_utilisateur_2026_09_27_3": "Précision : écarté incliné, ramener les bras vers le haut et rapprocher les mains comme si l’on allait taper dans ses mains ; ne tourner ni les bras ni les mains.",
+   "revision_candidate_lot71": {
+    "gif": "evolution/media/refonte-photo/propositions/lot71/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "e990130c50c9d9c4c535171107142577955f92cb1763f7f6ddfdd15b28df2de2",
+    "size": [
+     348,
+     440
+    ],
+    "frames": 2,
+    "duration_ms": 500,
+    "validation_utilisateur": false,
+    "statut": "brouillon_non_valide",
+    "correction_demandee": "Dans la phase finale, bras élevés et rapprochés au-dessus du haut de poitrine, mains/dumbbells proches comme juste avant de taper dans les mains ; aucun retournement des bras, poignets ou mains. Diptyque généré en une image avec le départ sur la gauche."
    }
   },
   {
@@ -725,12 +740,12 @@
     80
    ],
    "disposition": "AVANT proposition précédente / APRÈS ébauche lot69 ; DÉBUT et FIN visibles",
-   "sha256": "83f3c5b48f1855dbc92c6c0f3c21e00bbb8ef2d5fbc3bfb6419c71f47474e7e7",
-   "octets": 1160348,
+   "sha256": "1cf339defb757cca8f6c5676a17b3bcaff8cf009a1e0238526367004a8c32e58",
+   "octets": 1074041,
    "statut": "brouillon_non_valide",
    "gif_livres_remplaces": false,
    "note": "PDF limité aux corrections demandées par l’utilisateur. Les ébauches restent à contrôler et ne valent ni validation ni intégration.",
-   "revision_80": "phase départ conservée, phase finale révisée lot70 selon la dernière précision utilisateur"
+   "revision_80": "lot70 refusé ; page 80 actualisée avec proposition lot71 (bras remontés/rapprochés sans rotation)."
   }
  },
  "accord_format_zottman": {

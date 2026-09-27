@@ -32,8 +32,8 @@ et choix du vert toujours en attente (détails VERIFICATION §94).
 normal supiné (pas marteau) ; n°80 phase 2 avec la même orientation des mains que la phase 1. Exigence de style globale :
 vert clairement visible et suivant les formes anatomiques, jamais une simple plaque. **Portée du « tous les GIFs » à confirmer**
 (ensemble 331 GIFs livrés, ou GIFs du PDF de corrections). 10 appels tentés dont un rejet de format ; ébauches lot69 contrôlées
-par `verif-ids.py` et `refonte-sheet.py`, mais 26 et 80 ont encore des réserves Le n°80 lot69 a été refusé : prise tournée en fin ; lot70 conserve le départ et révise la position finale sans tourner les mains. Le PDF ciblé 3 pages (`review/CORRECTIONS-ciblees-lot69.pdf`) a été actualisé, non validé ; le PDF complet 26 pages reste à refaire. Statut :
-révisions demandées, 0 approbation, 0 intégration ; livrés intacts. Voir VERIFICATION §97 et `retours-utilisateur-2026-09-26.json`.
+par `verif-ids.py` et `refonte-sheet.py`, mais 26 et 80 ont encore des réserves Le n°80 lot69 a été refusé : prise tournée en fin ; lot70 également refusé ; lot71 remonte et rapproche les bras comme avant de taper dans ses mains sans rotation bras/mains. Le PDF ciblé 3 pages (`review/CORRECTIONS-ciblees-lot69.pdf`) a été actualisé, toujours non validé ; le PDF complet 26 pages reste à refaire. Statut :
+révisions demandées, 0 approbation, 0 intégration ; livrés intacts. Voir VERIFICATION §98 et `retours-utilisateur-2026-09-26.json`.
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.

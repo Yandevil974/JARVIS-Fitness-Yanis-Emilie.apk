@@ -29,7 +29,7 @@ Aucune génération, intégration, recoloration ou modification des livrés pend
 vert vif/visible épousant l’anatomie musculaire, pas une plaque. Portée exacte à clarifier (331 GIFs application ou seuls
 GIFs du PDF corrections). 10 appels tentés ce tour (1 échec, 9 rendus). Brouillons lot69 à revoir sous `review/lot69-revision-*.jpg`
 et `propositions/lot69/gif/homme/` ; contrôles images normés OK, mais 26/80 gardent des réserves de teinte/lecture et
-un PDF ciblé provisoire de 3 pages (`review/CORRECTIONS-ciblees-lot69.pdf`, 26/44-45/80 AVANT/ÉBAUCHE) est disponible ; le comparatif complet 26 pages reste à refaire. Précision utilisateur suivante sur le n°80 : départ correct, ne pas tourner les mains en fin. Lot69 refusé ; ébauche lot70 conserve le départ et révise la fin. PDF ciblé actualisé avec cette page, toujours non validé ; aucune intégration. Voir §97.
+un PDF ciblé provisoire de 3 pages (`review/CORRECTIONS-ciblees-lot69.pdf`, 26/44-45/80 AVANT/ÉBAUCHE) est disponible ; le comparatif complet 26 pages reste à refaire. Précision utilisateur suivante sur le n°80 : départ correct, ne pas tourner les mains en fin. Lot69 puis lot70 refusés. Nouvelle consigne : remonter/rapprocher les bras comme avant de taper dans ses mains sans tourner bras ni mains ; ébauche lot71 générée et page PDF ciblée actualisée, toujours non validée. Aucun GIF livré remplacé. Voir §98.
 
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.

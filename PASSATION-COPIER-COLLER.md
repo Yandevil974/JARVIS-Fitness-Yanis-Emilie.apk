@@ -57,9 +57,9 @@ NE JAMAIS pousser sur main ; ne jamais supprimer/renommer la racine du dépôt n
   Portée à préciser : les 331 GIFs de l’app ou les GIFs concernés par le PDF de corrections ?
 - 10 appels de génération consommés (dont 1 erreur d’extension, 9 réussites). Ébauches lot69 visibles sous
   `review/lot69-revision-*.jpg` et GIFs sous `propositions/lot69/gif/homme/`. Refonte-sheet + verif-ids OK.
-  Certaines ébauches restent à contrôler (mains de 26, vert de 26/80). Pour le n°80, lot69 refusé (prise tournée en fin) ; lot70 conserve le départ et corrige la fin. PDF ciblé provisoire 3 pages créé/actualisé :
+  Certaines ébauches restent à contrôler (mains de 26, vert de 26/80). Pour le n°80, lot69 refusé (prise tournée en fin) ; lot70 refusé ; lot71 rapproche les bras vers le haut comme avant de taper dans ses mains, sans rotation. PDF ciblé 3 pages actualisé :
   `review/CORRECTIONS-ciblees-lot69.pdf` (26, 44/45, 80, AVANT/ÉBAUCHE). Le comparatif complet 26 pages n’est pas régénéré.
-  Aucun approuvé, aucune intégration ; les GIF livrés restent intacts. La page 80 montre la révision lot70. Voir VERIFICATION §97.
+  Aucun approuvé, aucune intégration ; les GIF livrés restent intacts. La page 80 montre la révision lot71. Voir VERIFICATION §98.
 
 ## 4. CE QUE J'ATTENDS AU PROCHAIN CHAT (réponses utilisateur à obtenir, pas à deviner)
 1. **Validation par numéro** : l'utilisateur dira « OK les 26 », ou « OK : 19, 26, 31 … » (liste), ou

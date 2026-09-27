@@ -1739,3 +1739,19 @@ compare maintenant l’ancienne proposition au nouveau candidat lot70. Version a
 `83f3c5b48f1855dbc92c6c0f3c21e00bbb8ef2d5fbc3bfb6419c71f47474e7e7`. Page 80 relue après rendu ; la phase initiale est conservée.
 Candidat et PDF marqués NON VALIDÉS : faire confirmer par l’utilisateur que l’orientation phase finale est désormais correcte. Le vert
 anatomique reste un point de revue séparé. Aucun GIF livré, PDF principal, manifeste, état, prescription ou APK modifié.
+
+
+## 98. N°80 — correction de trajectoire, bras rapprochés sans rotation (27/09/2026)
+
+L’utilisateur refuse également la position finale lot70 et précise le geste : écarté incliné, remonter les bras et rapprocher les mains comme
+juste avant de taper dans ses mains, sans tourner les bras ni les mains. Lot70 est marqué refusé. Une nouvelle planche lot71 a été générée en
+un diptyque unique : position ouverte à gauche, position haute/rapprochée à droite, prise conservée sans consigne de rotation.
+
+Contrôles : `verif-ids.py` OK (`ecartes-halteres`), `refonte-sheet.py` OK ; GIF candidat 348×440, 2 frames, 500 ms ; SHA-256
+`e990130c50c9d9c4c535171107142577955f92cb1763f7f6ddfdd15b28df2de2`. Aperçu humain
+`review/lot71-revision-80.jpg` lu. L’image illustre les bras remontés et rapprochés, mains avec haltères réunis au-dessus du buste.
+Candidat lot71 non validé ; critère antérieur de vert anatomique reste séparé et non résolu.
+
+PDF ciblé `review/CORRECTIONS-ciblees-lot69.pdf` actualisé, 3 pages, page 80 remplacée par lot71 ; taille 1,074,041 octets, SHA-256
+`1cf339defb757cca8f6c5676a17b3bcaff8cf009a1e0238526367004a8c32e58`. Aucun GIF livré, livraison, manifeste, état, PDF principal,
+prescription ou APK modifié ; pas de validation utilisateur. Génération : 1 appel réussi ce tour.
