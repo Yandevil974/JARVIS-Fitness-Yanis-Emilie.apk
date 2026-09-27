@@ -21,16 +21,20 @@ PDF principal → index), contrôles pleine définition avant chaque copie.
 **Rappel en attente avant étape3 :** vert identique au n°260 ? (RGB réel 117,189,18 ; si « identique »,
 re-passe PIL sur 19/44/45/48/80/85 avant intégration). Construction app : metcon + piscine nage fractionnée
 et/ou Aqua Tabata pour Émilie, à confirmer avant de coder.
-**26 propositions, 0 approuvée. Livrés inchangés.** **Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.**
+**26 propositions, 0 approuvée. Livrés inchangés.** **Branche : `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`.**
+
+**Reprise 27/09 :** la branche de session imposée est `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`
+(base récupérée depuis `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` à `8663b6e`). Contrôles : PDF 26 pages ;
+propositions/SHA 26/26 ; 0 approbation. Aucun appel de génération ni intégration. Réponses validation par numéro
+et choix du vert toujours en attente (détails VERIFICATION §94).
 
 Les 389 visuels du PDF restent publiés sans modification. Votre relecture a rouvert
 **26 points de suivi** : aucune proposition n’est intégrée avant votre accord.
 La relecture interne antérieure ne remplace pas votre validation.
 
-> ⚠️ **Branche de travail changée par la plateforme** : cette session Arena est fixée sur
-> `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Le contenu de `arena/01a0dbe5-…` (commit
-> `e96e51b`) y a été récupéré intégralement ; tout le travail est désormais poussé sur
-> **`01a0dcad`** uniquement. L'ancienne branche n'est plus alimentée.
+> ⚠️ **Branche de session imposée par Arena : `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`.**
+> Le contenu a été récupéré sans écraser de modifications depuis `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`
+> au commit `8663b6e`. Tous les changements de cette session restent sur la branche imposée ; jamais sur `main`.
 
 ## 0. Feuille de route donnée par l'utilisateur le 26/09 (dans cet ordre, par étapes)
 
@@ -111,8 +115,10 @@ PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord ava
 
 ## 4. Contraintes d'environnement (sans impact sur le contenu)
 
-- L'espace de travail se réinitialise souvent : restauration = `git fetch origin
-  arena/01a0dcad-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD` + venv.
+- L'espace de travail se réinitialise souvent : source = `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`
+  (état récupéré au commit 8663b6e) ; branche de session imposée =
+  `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`. Vérifier `git status`, fetch/reset la source si nécessaire,
+  puis pousser uniquement sur la branche imposée ; recréer le venv.
   **Zéro perte** : tout est poussé à chaque tour.
 - `.cache/` n'est pas persistant : web 1.4.8, payloads, APK non signé se régénèrent en
   moins d'une minute (`payloads-148.mjs` → `overlay-331.py` → `build-media-149.py --unsigned`).

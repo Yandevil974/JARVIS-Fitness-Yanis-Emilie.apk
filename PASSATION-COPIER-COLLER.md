@@ -4,11 +4,12 @@ Tu reprends la refonte des visuels JARVIS Fitness Yanis & Émilie, dépôt Yande
 NE JAMAIS pousser sur main ; ne jamais supprimer/renommer la racine du dépôt ni .git.
 
 ## 1. Récupérer le bon état
-- Tout le travail est sur la branche **arena/01a0e12a-jarvis-fitness-yanis-emilie-ap**, dernier commit **c31b9e6**.
+- Branche de session : **arena/01a0e231-jarvis-fitness-yanis-emilie-ap** ; base récupérée au commit **8663b6e** (lire `git log -1` pour le HEAD courant).
 - Si l'environnement est revenu au commit initial d721868 (ça arrive plusieurs fois par jour) : arbre vide,
   récupérer SANS écraser :
-  git status ; git fetch origin arena/01a0e12a-jarvis-fitness-yanis-emilie-ap ; git merge FETCH_HEAD --ff-only
-- Si Arena impose une AUTRE branche dans le nouveau chat : fetch la branche ci-dessus, git reset --hard FETCH_HEAD,
+  git status ; git fetch origin arena/01a0e12a-jarvis-fitness-yanis-emilie-ap ; git reset --hard FETCH_HEAD
+- La session Arena impose actuellement `arena/01a0e231-jarvis-fitness-yanis-emilie-ap` ; le contenu a été récupéré sans écraser de changements depuis `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` au commit **8663b6e**. Pousser uniquement sur la branche de session.
+- Si un futur environnement impose une AUTRE branche : fetch la branche source ci-dessus, git reset --hard FETCH_HEAD,
   travailler et pousser UNIQUEMENT sur la branche imposée, et mettre à jour le nom de branche dans les 4 fichiers :
   PASSATION-COPIER-COLLER.md, evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md,
   evolution/media/tools/pdf-revue-331.py (page de titre).
@@ -19,7 +20,7 @@ NE JAMAIS pousser sur main ; ne jamais supprimer/renommer la racine du dépôt n
 ## 2. Lire dans l'ordre
 1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire, recette de prompt, pièges).
 2. CE-QUI-COINCE.md (feuille de route utilisateur, décisions ouvertes).
-3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md, sections §85 à §93.
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md, sections §85 à §94.
 4. Registres sous evolution/media/refonte-photo/production/ : retours-utilisateur-2026-09-26.json,
    a-refaire.json, rappels-utilisateur.json, prescriptions.json (les sections récentes priment).
 
@@ -36,6 +37,16 @@ NE JAMAIS pousser sur main ; ne jamais supprimer/renommer la racine du dépôt n
   85 (débord au-dessus des épaules supprimé). Détail : propositions/lot68/recolorisation-reserves.json.
 - Livrés INTACTS : gif/, manifeste-331, état.json, PDF principal 389, aucun APK, pas de valide-couples.py lancé.
 - 3 exercices avaient leurs propositions produites au lot68 (26, 85, 204) : voir VERIFICATION §87–89.
+
+
+
+### Reprise sur branche imposée Arena (27/09, continuation après tour6)
+- Session fixée sur `arena/01a0e231-jarvis-fitness-yanis-emilie-ap` ; état restauré de la branche source
+  `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`, commit de base `8663b6e`.
+- Vérification de reprise : comparatif 26 pages présent ; 26/26 propositions et SHA conformes ; 0 validation.
+  Aucun GIF livré ni PDF principal modifié. Aucun appel de génération ou script d'intégration.
+- Réponses toujours attendues : validation explicite par numéro (ou « je relis le PDF ») et décision sur le
+  vert (154,205,50 ou n°260 mesuré ≈117,189,18, ou plus tard). Ne rien supposer. Détails §94.
 
 ## 4. CE QUE J'ATTENDS AU PROCHAIN CHAT (réponses utilisateur à obtenir, pas à deviner)
 1. **Validation par numéro** : l'utilisateur dira « OK les 26 », ou « OK : 19, 26, 31 … » (liste), ou
@@ -74,7 +85,7 @@ Lire/actualiser PASSATION-COPIER-COLLER.md, PASSATION-NOUVEAU-CHAT.md, CE-QUI-CO
 commit + push UNIQUEMENT sur la branche Arena de session ; terminer par un bloc de reprise 🚩 actualisé.
 Prévenir explicitement si le contexte approche sa limite et préparer la reprise avant de perdre l'information.
 
-Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
+Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e231-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
 Lire dans l'ordre :
 1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 68, recette, pièges ; anciens compteurs historiques).

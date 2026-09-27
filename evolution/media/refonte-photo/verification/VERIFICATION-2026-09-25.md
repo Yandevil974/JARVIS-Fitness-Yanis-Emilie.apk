@@ -1659,3 +1659,24 @@ l'état en cours et attendre le vrai message. Cette règle annule l'interprétat
 Le widget de questions (validation + vert 260) a été ignoré par l'interface : questions reposées en
 texte simple, réponses attendues dans un prochain message. État inchangé : PDF
 review/CORRECTIONS-avant-apres.pdf en attente de validation, 26 propositions, 0 approuvée, livrés intacts.
+
+
+## 94. Reprise sur la branche de session Arena imposée — état inchangé (27/09/2026)
+
+Workspace retrouvé sur `d721868` avec arbre propre, branche de session imposée
+`arena/01a0e231-jarvis-fitness-yanis-emilie-ap`. Vérification de `git status`, fetch de la branche source
+`arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`, puis restauration sans modifications locales à écraser :
+HEAD `8663b6e` (contenu du tour6). Tout changement de ce tour reste sur la branche de session imposée,
+jamais `main`. Les quatre fichiers de passation et la page de titre de l'outil PDF reflètent ce nom.
+
+Contrôles de reprise : recréation du venv demandé (Pillow, NumPy, PyMuPDF). PDF
+`review/CORRECTIONS-avant-apres.pdf` présent, 11,795,415 octets, 26 pages, SHA-256
+`6611d0bcc1b17a17fb994aa7e09eac48e4338f6f1cc530ac8aefbbbca5fc73fb`. Les 26 propositions du registre
+existent et leurs SHA correspondent au disque ; aucun indicateur de validation utilisateur n'est vrai.
+Statut comparatif `en_attente_validation_utilisateur`. Pas d'appel de génération, pas d'exécution de
+`valide-couples.py`, pas de modification aux GIF livrés, manifeste, état, PDF principal, prescriptions
+ou APK. Aucune réponse de validation par numéro ni choix de teinte n'est reçu dans ce tour.
+
+Prochaine action : attendre une validation explicite par numéros (ou « je relis le PDF ») et le choix du
+vert si le sujet est repris ; ne rien intégrer ni recolorer par anticipation. Le rappel pré-étape3 sur
+RGB du n°260 et le périmètre metcon/piscine/Aqua Tabata pour Émilie reste ouvert.

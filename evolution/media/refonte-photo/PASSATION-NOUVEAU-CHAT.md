@@ -17,7 +17,12 @@ APRÈS droite, NON VALIDÉ marqué sur chaque page, retours+réserves en pied de
 (valide-couples.py, GIF livrés, manifeste, PDF principal, index) pour les seuls numéros validés.
 Rappels : vert identique 260 ? (RGB réel 117,189,18 ; si oui re-passe PIL sur 19/44/45/48/80/85 avant intégration)
 — AVANT étape3. Construction app : metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie.
-**Branche : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`.** Maintenir le 🚩.
+**Branche de session imposée : `arena/01a0e231-jarvis-fitness-yanis-emilie-ap` ; état récupéré depuis la branche source `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` au commit 8663b6e. Pousser uniquement sur la branche de session.** Maintenir le 🚩.
+
+**État de reprise (27/09, après tour6) :** branche Arena imposée `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`,
+source restaurée au commit `8663b6e`. Vérifications : PDF 26 pages, propositions/SHA 26/26 conformes, 0 approbation.
+Aucune génération, intégration, recoloration ou modification des livrés pendant cette reprise. Réponses utilisateur
+(validation des numéros et teinte verte) toujours attendues ; voir VERIFICATION §94.
 
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.
@@ -48,12 +53,13 @@ Zottman : format4 autorisé ;48 proposé lot64,46 lot65,47 lot66 ; aucune image 
 ## 1. Où l'on en est (mesuré, pas estimé)
 
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`
-- Branche de travail **obligatoire** : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`
-  (session Arena courante depuis le 26/09 ; contenu de `arena/01a0d6f5-…` repris au commit
-  `11d1594` ; ne jamais pousser sur `main`, ne jamais créer d'autre branche). Si la plateforme
-  impose un AUTRE nom de branche au prochain chat : `git fetch origin arena/01a0dcad-… &&
-  git reset --hard FETCH_HEAD` puis travailler et pousser sur la branche imposée, et mettre à
-  jour ce fichier + `PASSATION-COPIER-COLLER.md` + `tools/pdf-revue-331.py` (page de titre).
+- Branche de session Arena **obligatoire** : `arena/01a0e231-jarvis-fitness-yanis-emilie-ap` ; l'état du
+  commit `8663b6e` a été récupéré depuis `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`. Ne jamais pousser
+  sur `main` ni créer une autre branche. Si l'espace revient à `d721868`, vérifier `git status`, récupérer
+  la branche source avec `git fetch origin arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`, puis restaurer son état
+  (`git reset --hard FETCH_HEAD`) sans avoir de modifications locales à écraser ; pousser uniquement sur la
+  branche de session Arena `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`. Mettre à jour les quatre fichiers
+  de passation et le nom de branche de la page de titre de `tools/pdf-revue-331.py` si Arena impose une autre.
 - Avancement : **331 / 331 animations validées — JALON : plus aucun exercice sans visuel** (`production/etat.json`, clé `chiffres`).
   Restent **0**. Toutes surfaces terminées (musculation 203, tabata sol 37,
   piscine guides 9, protocoles 40, aqua tabata 6, étirements 29, elliptique 5, échauffement 3).
@@ -94,7 +100,7 @@ un échec compte aussi). L'utilisateur écrit « suite » pour enchaîner.
 ```bash
 cd /home/user/JARVIS-Fitness-Yanis-Emilie.apk
 git log --oneline -1                     # si HEAD != branche arena : récupérer
-git fetch origin arena/01a0dcad-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD
+git fetch origin arena/01a0e12a-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD
 python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install -q pillow numpy pymupdf
 # chaîne APK (1 min, sans clé) :
 node evolution/media/tools/payloads-148.mjs && python3 evolution/media/tools/overlay-331.py
