@@ -1,42 +1,44 @@
-# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot 67, 26 septembre 2026
+# BLOC À COPIER-COLLER DANS UN NOUVEAU CHAT — lot68, 27 septembre 2026
 
-## 🚩 Reprise après lot67 — préparation26, génération indisponible (26/09/2026)
+## 🚩 Lot68 — n°26 proposé, guides 85/204 prêts, budget génération épuisé (27/09/2026)
 
-**Blocage du tour : outil de génération d’images non disponible.0 appel,0 nouveau rendu,0 nouveau GIF.**
-Dernier lot de production67 inchangé ; NE PAS annoncer un lot68 produit.23 propositions non validées
-sur26, toujours26/85/204 sans proposition. Aucune validation ni intégration.
+**Outil de génération DISPONIBLE cette session : 10 appels utilisés (8 pour le n°26, 2 guides), 10/10, plus aucun pour ce tour.**
+**Proposition n°26 produite (stratégie du brief respectée : arrivée construite d'abord, départ édité depuis l'arrivée) :**
+`propositions/lot68/gif/homme/crunch-a-la-poulie-homme.gif` — SHA256 5342c88e60862a7bd86efeaaef722413c37bef3d815267dccc4e7faab46f3fbe,
+788×440, 2×500 ms, DÉBUT gauche (tronc déroulé) / FIN droite (enroulement, mains et corde derrière la tête, câble unique
+poulie haute→corde, éloignement net de la station). Vert corporel mesuré HORS PLANTES : 512 px (départ) / 286 px (fin),
+ROI [220,176,394,286]. Planche `review/lot68-proposition-26.jpg`. Réserves explicites : micro-variation du tapis (bord gris
+visible au départ), main lointaine placée près du mousqueton en fin. NON VALIDÉE — validation false, rien d'intégré.
+**24 propositions non validées** (23 précédentes + n°26). **Restent sans proposition : 85 et 204**, mais guides préparatoires :
+`propositions/lot68/guides/85-guide-plan-horizontal.png` (réserve : avant-bras non lisibles de face ; compléter d'un profil)
+et `propositions/lot68/guides/204-guide-prise-supination.png` (contrôlé : paumes face caméra, exploitable tel quel).
 
-Le n°26 est préparé dans `evolution/media/refonte-photo/production/preparation-26/BRIEF-REPRISE.md` :
-arrivée seule d’abord, profil fixe visage gauche/station derrière à droite, mains et corde derrière
-la tête, câble continu réellement raccordé et espace à la machine ; contrôler le geste puis produire
-le départ. Il s’agit d’une fiche de composition, PAS d’une image candidate. Ne pas relancer la même
-mauvaise paire entière. Les prescriptions restent inchangées.
+**Suite prévue :** (1) n°85 — complément de profil si utile, puis position haute (coudes 90°, avant-bras à hauteur des
+coudes ; départ paumes vers le corps) et départ ensuite ; (2) n°204 — position haute avec le gros plan de prise en référence
+(menton au-dessus de la barre, supination lisible), puis phase basse ; (3) reprendre les réserves des 24 propositions ;
+(4) quand TOUT est prêt : PDF AVANT gauche/APRÈS droite des seules reprises via `tools/pdf-corrections-avant-apres.py`,
+lien téléchargeable chat, ATTENDRE l'accord avant intégration. ≤10 appels/tour, échecs compris.
+Zottman 46/47/48 : format 4 phases accepté, images NON validées. Décision 80 banc incliné enregistrée, images non validées.
+Aucun PDF final ni APK ce tour ; aucun GIF livré/manifeste/état/PDF principal modifié ; pas de valide-couples.py.
+AVANT étape3 : demander si le vert doit être identique au n°260, ATTENDRE la réponse. À la construction app : rappeler
+metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant de coder. Rappels-utilisateur.json non traité.
+Vert mesuré sur le CORPS (pas les plantes). Pas de famille C, visage A, maîtres homme/femme selon profil, début à gauche,
+même cadrage/machine/orientation, pas de miroir/rotation globale, prescription jamais réécrite.
 
-À la reprise, vérifier si l’outil de génération est disponible. S’il l’est, repartir de la fiche26 ;
-sinon signaler le blocage sans inventer de rendu ni augmenter les compteurs. Jusqu’à10 appels/tour,
-échecs inclus, aucune famille C, maîtres homme/femme selon profil, mêmes cadrage/orientation/machine,
-début à gauche, pas miroir/rotation globale, vert mesuré sur le corps, lecture pleine définition.
+Maintenir le 🚩 et ce bloc de reprise ; prévenir explicitement si le contexte approche sa limite et renvoyer vers
+PASSATION-COPIER-COLLER.md. Blocage d'outil RÉSOLU ce tour ; limite de contexte non atteinte.
 
-Maintenir le 🚩 et ce bloc de reprise ; si le contexte approche sa limite, prévenir explicitement
-et renvoyer vers PASSATION-COPIER-COLLER.md. Celui-ci reste le bloc à transmettre au nouveau chat.
-Ne pas confondre blocage d’outil et limite de contexte : aucune saturation du contexte n’est mesurée ici.
+**Branche changée par la plateforme : nouvelle branche imposée `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`**
+(contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, sans écrasement). Travailler et pousser UNIQUEMENT sur cette
+branche ; jamais sur main ; ne jamais supprimer/renommer la racine ni .git. Fichiers où la branche est écrite : ce fichier,
+`evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`, `CE-QUI-COINCE.md`, `tools/pdf-revue-331.py` (à jour).
 
-Avant accord : sorties uniquement sous propositions/, registre validation false, contrôles/mesures.
-**Ne pas exécuter valide-couples.py ni reconstruire la livraison/le PDF principal avant accord.**
-Quand toutes reprises ET réserves sont prêtes : PDF des seules reprises, AVANT gauche/APRÈS droite,
-lien téléchargeable chat, validation utilisateur avant remplacement.
-AVANT étape3 : demander si le vert doit être identique260, attendre la réponse. Construction app :
-rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder.
-Jamais pousser main ; uniquement branche arena/01a0dcad-jarvis-fitness-yanis-emilie-ap. Clé utilisateur
-uniquement, jamais dans Git/chat. Étapes suivantes dans l’ordre inchangées ; IA en dernier.
-
-
-Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0dcad-jarvis-fitness-yanis-emilie-ap`. Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Cette session a repris l'ancienne branche 01a0dbe5 au commit e96e51b. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
+Tu reprends la refonte des visuels JARVIS Fitness (Yanis & Émilie), dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk. Branche portant tout le travail : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap` (depuis le 27/09 ; contenu de `arena/01a0dcad-…` récupéré au commit 0a4327a, qui avait lui-même repris `arena/01a0d6f5-…` au commit 11d1594 puis l'ancienne `01a0dbe5` à e96e51b). Jamais push sur main ; ne jamais supprimer/renommer la racine ni .git. Si Arena impose une autre branche, récupérer le contenu de la branche ci-dessus (vérifier d'abord l'absence de modifications locales), travailler et pousser uniquement sur la branche imposée ; mettre à jour les branches dans ce fichier, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md et tools/pdf-revue-331.py.
 
 Lire dans l'ordre :
-1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 67, recette, pièges ; anciens compteurs historiques).
+1. evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md (état prioritaire lot 68, recette, pièges ; anciens compteurs historiques).
 2. CE-QUI-COINCE.md (§0 feuille de route utilisateur, §1 reprises, §3 décisions).
-3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–86.
+3. evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md §66–87.
 4. evolution/media/refonte-photo/livraison/LIVRAISON-README.md et manifeste-331.json.
 
 ÉTAPE2 — **26 points ouverts :23 numéros +3 variantes**, aucune proposition approuvée.
@@ -44,14 +46,14 @@ NOUVELLES PRÉCISIONS :148 = Mountain climbers homme,3 jambes fin ;149 ET150 = P
 Zottman46/47/48 : format4 positions accepté, PAS images. Registre production/retours-utilisateur-2026-09-26.json,
 a-refaire.json. Numéros :19,26,31,37,38,44,45,46,47,48,64,80,85,87,90,126,148,149,150,194,204,222,239,265,298,380.
 Consigne MONTRER AVANT VALIDATION : aucun GIF livré/PDF principal/manifeste/état/map remplacé sans accord.
-**23 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
-**3 sans proposition** :26/85/204.
+**24 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
+**2 sans proposition** :85/204 (guides préparatoires lot68 prêts, voir bloc du haut).
 Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.
 GIF788×440,2×500ms ; ROI pectoraux626/487, pas validation de style. Aucun angle exact prescrit.
 Reconstruction lot67/assemble.py ; review/lot67-proposition-80.jpg ; détail §85.
-Suite26/85/204 et réserves restantes. Aucun livré remplacé ; comparatif bloque3 manquants.
+Suite85/204 et réserves restantes. Aucun livré remplacé ; comparatif bloque2 manquants.
 PDF uniquement reprises, AVANT gauche/APRÈS droite quand TOUT prêt, accord avant intégration.
 
 PDF CORRECTIONS demandé : QUAND TOUTES PRÊTES, UN PDF téléchargeable dans chat, UNIQUEMENT reprises,

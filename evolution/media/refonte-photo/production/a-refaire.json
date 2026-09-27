@@ -16,9 +16,9 @@
    "numero_signale": 26,
    "lot": 62,
    "motif": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
-   "statut": "refuse_interne",
+   "statut": "propose_attente_accord",
    "reglesPrompt": [
-    "Derniers essais26 toujours refusés (lot62 : orientation incorrecte, corde/mains devant tête en fin, trop proche de la station). Après lot67 : fiche de reprise indépendante prête, arrivée seule d’abord avec repères tête/mains/poulie/câble continu, puis départ depuis arrivée contrôlée. Outil de génération indisponible ce tour :0 appel, aucun nouveau rendu ni GIF candidat. Voir production/preparation-26/BRIEF-REPRISE.md. Ne pas compter cette préparation comme une proposition."
+    "Lot68 : stratégie du brief appliquée — arrivée d'abord (câble unique poulie haute→corde derrière la tête, deux mains lisibles, enroulement du tronc, éloignement), départ édité depuis l'arrivée. Proposition lot68 isolée, NON VALIDÉE. Réserves : micro-variation tapis, main lointaine près du mousqueton en fin. Ne pas intégrer sans accord."
    ],
    "validationUtilisateurRequise": true
   },
@@ -139,7 +139,7 @@
    "motif": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
    "statut": "refuse_interne",
    "reglesPrompt": [
-    "Lot63 : position haute seule puis vue surélevée. Premier angle masque flexion ; second montre poignets plus bas que coudes, pas avant-bras horizontaux. REFUS, pas phase basse/GIF. Prochain : guide 3D montrant explicitement les quatre points coude/poignet dans un même plan horizontal, pas simple demande caméra haute."
+    "Lot63 : deux refus internes (flexion masquée ; poignets sous les coudes). Lot68 : guide 85-guide-plan-horizontal.png produit, réserve : avant-bras non lisibles de face — compléter d'un profil. Prochain : position haute avec guide en contrainte, puis phase basse. Aucun GIF tant que le plan coude/poignet n'est pas lisible."
    ],
    "validationUtilisateurRequise": true
   },
@@ -227,7 +227,7 @@
    "motif": "À refaire.",
    "statut": "refuse_interne",
    "reglesPrompt": [
-    "Lot62 case haute seule : menton atteint la barre, mais orientation underhand non démontrée clairement (paumes visibles vers caméra). Refus, aucun GIF. Prochain : gros plan de la prise supination indépendante comme contrainte visuelle avant de générer corps suspendu."
+    "Lot62 : case haute refusée (supination invisible). Lot68 : gros plan 204-guide-prise-supination.png produit et contrôlé (paumes vers caméra). Prochain : position haute générée avec ce guide en référence, puis phase basse ; vérifier supination lisible et position haute (menton au-dessus de la barre)."
    ],
    "validationUtilisateurRequise": true
   },

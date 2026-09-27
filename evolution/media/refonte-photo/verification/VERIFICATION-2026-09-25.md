@@ -1422,3 +1422,49 @@ uniquement, jamais dans Git/chat. Étapes suivantes dans l’ordre inchangées ;
 
 Contrôles :23 SHA/frames avant-après,26 points non validés,396 fichiers livrés/prescriptions inchangés ;
 comparatif complet refuse26/85/204. Aucun PDF final ni APK produit. Fiche de reprise uniquement.
+
+## 87. Lot68 — proposition26 selon le brief, guides 85/204 (27/09/2026)
+
+Workspace restauré d721868 ; travail récupéré de arena/01a0dcad au commit 0a4327a (fetch + merge --ff-only,
+aucune modification locale écrasée) ; branche session imposée arena/01a0e12a. Venv recréé
+(refonte-photo/.cache/pyvenv, pillow+numpy). Passations, CE-QUI-COINCE, VERIFICATION §85–86, registres
+(retours/a-refaire/rappels/prescriptions) et BRIEF-REPRISE.md lus avant toute production.
+
+**Outil de génération DISPONIBLE : 10 appels, 10 succès techniques, 0 échec — plafond atteint.**
+Décompte : 8 pour le n°26 (arrivée essais 1–5 dont 4 éditions guidées : câble vers la base corrigé vers
+la poulie haute, seconde main rendue lisible ; départ essais 1–2 dont 1 édition pour la seconde main),
+1 guide 85, 1 guide 204.
+
+**26 proposé** : stratégie du brief appliquée à la lettre — arrivée construite et acceptée au contrôle
+interne D'ABORD (profil fixe : visage à gauche, station derrière à droite ; deux mains lisibles tenant les
+deux extrémités de corde derrière la tête ; câble unique poulie haute→mousqueton→corde, aucun câble au sol ;
+enroulement réel du tronc ; éloignement net ; aucun élément coupé), puis départ édité depuis l'arrivée
+(tronc déroulé, même station/profil/cadrage, mains/corde/câble conservés). Pas de miroir ni rotation globale.
+Candidat isolé : propositions/lot68/gif/homme/crunch-a-la-poulie-homme.gif, 788×440, 2×500 ms, DÉBUT gauche.
+SHA256 5342c88e60862a7bd86efeaaef722413c37bef3d815267dccc4e7faab46f3fbe. Sources phases + planche titrée +
+assemble.py conservés sous propositions/lot68/. Mesures : vert strict CORPS HORS PLANTES 512 px (départ) /
+286 px (fin), ROI [220,176,394,286] ; bbox vert corporel x≈[150,376] y≈[97,285] ; les pixels verts du bord
+gauche (x<150) sont les plantes du décor et sont exclus de la mesure. Lecture pleine définition + gros plans
+(mains, raccord câble, poulies) aux deux phases. Contrôle review/lot68-proposition-26.jpg (depuis le GIF).
+Réserves explicites : micro-variation du tapis (bord gris visible au départ), main lointaine placée près du
+mousqueton en fin, vert fin (250–512 px/case) à relire. Proposition ≠ validation ; validation_utilisateur=false.
+Prescriptions, plan.json, livrés (gif/, manifeste, état, PDF principal, numérotation) INCHANGÉS.
+
+**Guides 85/204** (isolés propositions/lot68/guides/) : 85-guide-plan-horizontal.png = mannequin face, ligne
+horizontale à hauteur épaules ; RÉSERVE : avant-bras non lisibles vers l'avant de face → compléter d'une vue
+de profil au prochain tour avant de générer la position haute (cible : coudes 90°, quatre points coude/poignet
+dans un même plan horizontal, départ paumes vers le corps). 204-guide-prise-supination.png = gros plan contrôlé
+(paumes face caméra, doigts enroulés sur la barre, pouces croisés, largeur épaules, peau/ton cohérents maître
+homme) → utilisable comme contrainte visuelle pour la position haute (menton au-dessus de la barre, supination
+lisible), phase basse ensuite. Aucune proposition ni GIF pour 85/204 ce tour.
+
+**24 propositions sur26 points, aucune approuvée** (23 + 26). **2 sans proposition : 85/204.**
+Registres mis à jour : retours-utilisateur-2026-09-26.json (lot68, 26=propose_attente_accord avec
+proposition+SHA+mesures, 85/204=refuse_interne+guides, numéros directs 24), a-refaire.json (statuts et
+reglesPrompt alignés). rappels-utilisateur.json inchangé (2 rappels non traités). Branches mises à jour dans
+PASSATION-COPIER-COLLER.md, PASSATION-NOUVEAU-CHAT.md, CE-QUI-COINCE.md, tools/pdf-revue-331.py (01a0e12a).
+Aucun PDF final de corrections (condition « TOUTES reprises ET réserves prêtes » non remplie : 85/204 et
+réserves restants) ; pas de valide-couples.py, aucun build APK. Comparatif interne : refuse toujours 85/204.
+Suite : 85 puis 204 avec leurs guides, réserves des 24 propositions, puis PDF reprises AVANT gauche/APRÈS
+droite, accord avant intégration. AVANT étape3 : question vert identique260. Rappels app : metcon + piscine
+fractionnée et/ou Aqua Tabata pour Émilie. Branche : push arena/01a0e12a uniquement.

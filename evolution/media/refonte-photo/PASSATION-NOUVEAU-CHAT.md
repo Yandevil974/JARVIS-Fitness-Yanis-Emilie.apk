@@ -1,46 +1,37 @@
 # 🚩 PASSATION — reprendre la refonte des visuels dans un nouveau chat
 
-## 🚩 Reprise après lot67 — préparation26, génération indisponible (26/09/2026)
+## 🚩 Lot68 (27/09/2026) — n°26 proposé, guides 85/204 prêts, 10/10 appels utilisés
 
-**Blocage du tour : outil de génération d’images non disponible.0 appel,0 nouveau rendu,0 nouveau GIF.**
-Dernier lot de production67 inchangé ; NE PAS annoncer un lot68 produit.23 propositions non validées
-sur26, toujours26/85/204 sans proposition. Aucune validation ni intégration.
-
-Le n°26 est préparé dans `evolution/media/refonte-photo/production/preparation-26/BRIEF-REPRISE.md` :
-arrivée seule d’abord, profil fixe visage gauche/station derrière à droite, mains et corde derrière
-la tête, câble continu réellement raccordé et espace à la machine ; contrôler le geste puis produire
-le départ. Il s’agit d’une fiche de composition, PAS d’une image candidate. Ne pas relancer la même
-mauvaise paire entière. Les prescriptions restent inchangées.
-
-À la reprise, vérifier si l’outil de génération est disponible. S’il l’est, repartir de la fiche26 ;
-sinon signaler le blocage sans inventer de rendu ni augmenter les compteurs. Jusqu’à10 appels/tour,
-échecs inclus, aucune famille C, maîtres homme/femme selon profil, mêmes cadrage/orientation/machine,
-début à gauche, pas miroir/rotation globale, vert mesuré sur le corps, lecture pleine définition.
-
-Maintenir le 🚩 et ce bloc de reprise ; si le contexte approche sa limite, prévenir explicitement
-et renvoyer vers PASSATION-COPIER-COLLER.md. Celui-ci reste le bloc à transmettre au nouveau chat.
-Ne pas confondre blocage d’outil et limite de contexte : aucune saturation du contexte n’est mesurée ici.
-
-Avant accord : sorties uniquement sous propositions/, registre validation false, contrôles/mesures.
-**Ne pas exécuter valide-couples.py ni reconstruire la livraison/le PDF principal avant accord.**
-Quand toutes reprises ET réserves sont prêtes : PDF des seules reprises, AVANT gauche/APRÈS droite,
-lien téléchargeable chat, validation utilisateur avant remplacement.
-AVANT étape3 : demander si le vert doit être identique260, attendre la réponse. Construction app :
-rappeler metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer avant coder.
-Jamais pousser main ; uniquement branche arena/01a0dcad-jarvis-fitness-yanis-emilie-ap. Clé utilisateur
-uniquement, jamais dans Git/chat. Étapes suivantes dans l’ordre inchangées ; IA en dernier.
-
+**Outil de génération disponible : 10 appels consommés (8 pour le n°26, 2 guides). Plus aucun pour ce tour.**
+Proposition n°26 isolée : `propositions/lot68/gif/homme/crunch-a-la-poulie-homme.gif`
+(SHA256 5342c88e60862a7bd86efeaaef722413c37bef3d815267dccc4e7faab46f3fbe, 788×440, 2×500 ms ; stratégie du
+brief `production/preparation-26/BRIEF-REPRISE.md` appliquée : arrivée construite d'abord — deux mains sur la
+corde derrière la tête, câble unique raccordé poulie haute, enroulement réel du tronc, éloignement — puis
+départ édité depuis l'arrivée). Vert CORPS hors plantes : 512/286 px (ROI [220,176,394,286]).
+Réserves : micro-variation tapis au départ ; main lointaine près du mousqueton en fin. NON VALIDÉE.
+**24 propositions non validées** (23 + 26), **2 sans proposition : 85/204**, guides lot68 prêts :
+`propositions/lot68/guides/85-guide-plan-horizontal.png` (réserve : avant-bras non lisibles de face, compléter
+d'un profil) et `propositions/lot68/guides/204-guide-prise-supination.png` (contrôlé, exploitable).
+Rien d'intégré, aucun livré/PDF/manifeste modifié, pas de valide-couples.py.
+Suite : 85 puis 204 avec guides, réserves des 24, PDF reprises (AVANT gauche / APRÈS droite) quand TOUT est
+prêt, accord utilisateur avant intégration. Zottman 46/47/48 : format accepté, images NON validées.
+**Branche imposée par la plateforme : `arena/01a0e12a-jarvis-fitness-yanis-emilie-ap`** (contenu 01a0dcad
+récupéré au commit 0a4327a, sans écrasement). Ne jamais pousser main. 4 fichiers portant la branche à jour.
+AVANT étape3 : question vert identique n°260, attendre réponse. Construction app : rappeler metcon +
+piscine nage fractionnée et/ou Aqua Tabata pour Émilie, confirmer périmètre avant coder.
+Rappels-utilisateur.json toujours non traité. Maintenir le 🚩 ; prévenir si le contexte approche sa limite.
 
 **À lire en entier avant de produire quoi que ce soit.** Ce fichier est écrit pour qu'une
 session neuve (sans mémoire de la conversation précédente) puisse continuer sans rien casser.
 
 ---
 
-## État prioritaire lot67 — ÉTAPE2, propositions AVANT validation utilisateur
+## État prioritaire lot68 — ÉTAPE2, propositions AVANT validation utilisateur
 
-**23 propositions sur26 points, aucune approuvée** :19/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
-**3 sans proposition** :26/85/204.
-Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
+**24 propositions sur26 points, aucune approuvée** :19/26/31/37/38/44/45/46/47/48/64/80/87/90/126/148/149/150/194/222/239/265/298/380.
+**2 sans proposition** :85/204 (guides préparatoires lot68 produits).
+Lot68 :10 générations ;26 proposé selon le brief (arrivée d'abord, départ édité) ; guides 85/204 produits.
+Historique : Lot67 :7 générations ;80 proposé sur banc INCLINÉ conformément à confirmation utilisateur.
 Départ paumes vers le haut, prises fermées/bras ouverts ; arrivée plus allongée/poids rapprochés.
 Réserves flexion coudes/trajectoire, échelle poids, légère variation buste/tête, aplats verts.
 GIF788×440,2×500ms ; ROI pectoraux626/487, pas validation de style. Aucun angle exact prescrit.

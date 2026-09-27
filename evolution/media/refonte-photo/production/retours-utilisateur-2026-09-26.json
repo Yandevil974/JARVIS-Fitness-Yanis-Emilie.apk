@@ -1,589 +1,602 @@
 {
-  "date": "2026-09-26",
-  "lot": 67,
-  "etape": 2,
-  "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
-  "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
-  "nombre_numeros_directs": 23,
-  "nombre_variantes_ajoutees": 3,
-  "entrees": [
-    {
-      "numero_signale": 19,
-      "cle_numerotation": "bulgarian-split-squat-halteres|femme",
-      "nom": "Bulgarian split squat haltères",
-      "retour_utilisateur": "Bulgarian Split : jambe pliée de la fille à l’envers.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Genou arrière fléchi dans le bon sens, même jambe. Amplitude à apprécier (départ déjà fléchi). Teinte olive : vert lime à renforcer avant intégration.",
-      "validation_utilisateur": false,
-      "proposition": {
-        "lot": 57,
-        "gif": "evolution/media/refonte-photo/propositions/lot57/gif/femme/bulgarian-split-squat-halteres-femme.gif",
-        "sha256": "a96e7d8435e72a0614e981e571dbb2d514c115e0899c67d1f0fec8e80ad2942b",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      },
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/femme/bulgarian-split-squat-halteres-femme.gif",
-        "sha256": "76ec865a3eb818794c4dcb8d4f61a1c2f7c64f522e92ead8463f84c69fffd3c7",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      }
-    },
-    {
-      "numero_signale": 26,
-      "cle_numerotation": "crunch-a-la-poulie|homme",
-      "nom": "Crunch à la poulie",
-      "retour_utilisateur": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
-      "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Derniers essais26 toujours refusés (lot62 : orientation incorrecte, corde/mains devant tête en fin, trop proche de la station). Après lot67 : fiche de reprise indépendante prête, arrivée seule d’abord avec repères tête/mains/poulie/câble continu, puis départ depuis arrivée contrôlée. Outil de génération indisponible ce tour :0 appel, aucun nouveau rendu ni GIF candidat. Voir production/preparation-26/BRIEF-REPRISE.md. Ne pas compter cette préparation comme une proposition.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
-        "sha256": "2b5be5e924f07fbf554543b6023acd988a061a189054d1220493645d8163dd56",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "preparation": {
-        "brief": "evolution/media/refonte-photo/production/preparation-26/BRIEF-REPRISE.md",
-        "statut": "en_attente_outil_generation",
-        "generations_ce_tour": 0,
-        "date": "2026-09-26"
-      }
-    },
-    {
-      "numero_signale": 31,
-      "cle_numerotation": "curl-concentration|homme",
-      "nom": "Curl concentration",
-      "retour_utilisateur": "Curl concentration : tourner la main vers la droite au départ.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot62 : deux positions séparées, case haute produite d’abord puis extension depuis cette référence. Buste penché, paume de départ en supination plus lisible, coude proche de l’intérieur cuisse. Contact précis coude-cuisse et direction paume à apprécier dans la revue utilisateur ; proposition non validée.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-concentration-homme.gif",
-        "sha256": "b18b490f9567c8dd6933f0385259d6db464d965cc5aa16534171781dbcd33da8",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 62,
-        "gif": "evolution/media/refonte-photo/propositions/lot62/gif/homme/curl-concentration-homme.gif",
-        "sha256": "3825c9b3d9ff3cba1d08165860467d08d433c17a1afd9d577fdfa24a09a73755",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 37,
-      "cle_numerotation": "curl-marteau|homme",
-      "nom": "Curl marteau",
-      "retour_utilisateur": "Curl marteau : en haut, paume vers le corps comme au départ. Corriger les autres marteau.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Essai2 guidé : paumes neutres en haut, haltères verticaux. Relire cadrage avant accord.",
-      "validation_utilisateur": false,
-      "proposition": {
-        "lot": 57,
-        "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/curl-marteau-homme.gif",
-        "sha256": "2de901b0e9f6bfb49de8d2f7695eb3a61c7552be2916ad43dc15b4e8edc7baaa",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      },
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-marteau-homme.gif",
-        "sha256": "b3e93e1e1a7f9eb9069971fe6bf9527663992e03d7a3b91eb8b9ef24d189d0fa",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      }
-    },
-    {
-      "numero_signale": 38,
-      "cle_numerotation": "curl-marteau-assis|homme",
-      "nom": "Curl marteau assis",
-      "retour_utilisateur": "Extension de la correction n°37 : curl marteau assis.",
-      "origine": "extension_variante",
-      "statut": "propose_attente_accord",
-      "detail": "Lot60 : déclinaison assise de la référence marteau corrigée37. Paumes neutres et haltères verticaux en haut, bras initial bas. Proposition non validée.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-marteau-assis-homme.gif",
-        "sha256": "2b24a4da9f9d774eede7d4f4fa2cd09754d7e515a584622b3eb28439b70b6c9d",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 60,
-        "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/curl-marteau-assis-homme.gif",
-        "sha256": "dff2488caaa4caea0933c968f6c4279ade1411693a2e38bff4f3b2b9b7bd165e",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 44,
-      "cle_numerotation": "curl-scott-haltere-neutre|homme",
-      "nom": "Curl Scott haltère neutre",
-      "retour_utilisateur": "Curl Scott : bras de départ non posé sur le pupitre.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot64 : prise haute marteau obtenue par édition du gros plan, recomposée sans déplacer le corps. Bras/coude sur pupitre en bas et haut ; prise basse axe profondeur depuis lot63. Proposition partagée avec45 (même geste, prescriptions conservées). Réserves : main basse partiellement masquée par disque, dimensions/rendu haltère, vert diffus cyan non lime et débordant, décor gris ; aucun accord ni intégration.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
-        "sha256": "197187199037767a6d42065141b53e3a51b6e2fa83f78585168bb08b5addebf8",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 64,
-        "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-neutre-homme.gif",
-        "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 45,
-      "cle_numerotation": "curl-scott-haltere-prise-neutre|homme",
-      "nom": "Curl Scott haltère, prise neutre",
-      "retour_utilisateur": "Tourner la paume au départ.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot64 : même paire Scott neutre que44, main haute en marteau et appui sur pupitre. Prescriptions spécifiques45 inchangées. Réserves de lecture prise basse, dimensions haltère, teinte/débordement vert et décor gris identiques44 ; proposition non validée.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
-        "sha256": "7cdb8ca673040b71d58e7cfd064761938c4671d5340147c85a110f443e5014f7",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 64,
-        "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
-        "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 46,
-      "cle_numerotation": "curl-zottman|homme",
-      "nom": "Curl Zottman",
-      "retour_utilisateur": "Zottman : montrer montée curl classique et descente curl inversé ; corriger les autres Zottman.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot65 : proposition debout en4 phases : bas supination, haut supination, haut pronation, bas pronation. Deux mains différenciées aux rotations. Sources debout lot26 ; retouches locales et masques de premier plan, anciens disques effacés par inpainting, aucune inversion globale. Réserves raccords des poignets, taille/nombre de disques différents entre bas/haut, rendu des aplats verts. Proposition non validée, pas prête pour intégration.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-homme.gif",
-        "sha256": "f7b27078da26260e96c56dacfa39a81f871a4a8bf0ce43750de31097e53f0a6e",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 65,
-        "gif": "evolution/media/refonte-photo/propositions/lot65/gif/homme/curl-zottman-homme.gif",
-        "sha256": "f3af21c2eec127f0c619cd2d95e9fe09fb1fdf3d5b4641776f51c5466eafbf01",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 47,
-      "cle_numerotation": "curl-zottman-assis|homme",
-      "nom": "Curl Zottman assis",
-      "retour_utilisateur": "Extension de la correction n°46 : Zottman assis.",
-      "origine": "extension_variante",
-      "statut": "propose_attente_accord",
-      "detail": "Lot66 : proposition assise4 phases : bas supination, haut supination, haut pronation, bas pronation. Trois retouches individuelles : main droite image basse et deux mains hautes ; deux paumes en haut et deux dos de main en bas pour descente. Corps/caméra conservés, pas miroir ni rotation globale. Réserves raccords des poignets, petites différences de cadrage/poids et rendu vert plus étendu en bas (aspect manchon) ; présence mesurée ne vaut pas validation stylistique. Aucune intégration.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-assis-homme.gif",
-        "sha256": "088734f0b07937f1642c5f83896ee330d84fdf2f428dbcfe0037fc964b6f27aa",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 66,
-        "gif": "evolution/media/refonte-photo/propositions/lot66/gif/homme/curl-zottman-assis-homme.gif",
-        "sha256": "902ccda003422bea77276c4f9d826ddf6123422b3070d7f62844ec61155a9875",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 48,
-      "cle_numerotation": "curl-zottman-un-bras-banc-scott|homme",
-      "nom": "Curl Zottman un bras, banc Scott",
-      "retour_utilisateur": "Extension de la correction n°46 : Zottman un bras banc Scott.",
-      "origine": "extension_variante",
-      "statut": "propose_attente_accord",
-      "detail": "Lot64 : proposition4 phases autorisées en principe : bas supination, haut supination, haut pronation, bas pronation. Retouches locales des mains rendent paume/dos main distincts, sans miroir ni rotation globale. Disques ronds harmonisés, chiffres parasites supprimés localement ; peau main haute retouchée sans recolorer épaule. Réserves anatomie/raccords/échelle haltère, vert diffus cyan non lime et décor gris ; format autorisé ne vaut pas validation de ces images.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
-        "sha256": "fa3e504b6d0114181fdefc9fab0cb5189400f8b7b9a851187e0376c54ff868fa",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 64,
-        "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
-        "sha256": "1f1a351d87f5efd4fcd6d1ae9ef8bf9ae36086e67274c2dac63566a86dcd3a2d",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 64,
-      "cle_numerotation": "developpe-halteres-decline-prise-neutre|homme",
-      "nom": "Développé haltères décliné, prise neutre",
-      "retour_utilisateur": "Développé haltères décliné : banc non décliné.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Essai2 guidé : banc clairement décliné tête sous bassin. Relire aussi la prise neutre avant accord.",
-      "validation_utilisateur": false,
-      "proposition": {
-        "lot": 57,
-        "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
-        "sha256": "3d037d6be0f1f0d33babc249194bbc56bb4b66474954b4ed3ea97fdf04c6d718",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      },
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
-        "sha256": "293ac99c80e4bcf55e6b96844f56d3904c0b841bcf9f9c7123b75316c3ee85a3",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      }
-    },
-    {
-      "numero_signale": 80,
-      "cle_numerotation": "ecartes-halteres|homme",
-      "nom": "Écartés haltères",
-      "retour_utilisateur": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot67 : proposition sur banc visiblement incliné selon confirmation utilisateur. Départ bras ouverts, paumes orientées vers le haut, mains fermées. Arrivée haltères rapprochés au-dessus du haut de poitrine et bras davantage allongés, après refus des arrivées trop fléchies. Corps/bench/feet entièrement cadrés, sans miroir ni recalage. Réserves : flexion résiduelle des coudes et trajectoire à apprécier, taille apparente des haltères différente en haut, légère variation du buste/tête et rendu des aplats verts. Inclinaison non mesurée ; angle non prescrit. Séries/répétitions/tempo inchangés. Aucune validation ni intégration.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/ecartes-halteres-homme.gif",
-        "sha256": "bb6790d94f7411fced0fa8e42edf4caadc68d384dc15b47ea09155f685184468",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "clarification": {
-        "question": "Conserver banc plat et corriger seulement les paumes, ou passer aussi sur banc incliné ?",
-        "reponse": "80 banc incliné"
-      },
-      "proposition": {
-        "lot": 67,
-        "gif": "evolution/media/refonte-photo/propositions/lot67/gif/homme/ecartes-halteres-homme.gif",
-        "sha256": "13a016d05e32d03a2c657fbd735f3c618d563bea5fb12493df0198b5187d61ec",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 85,
-      "cle_numerotation": "elevations-laterales-coude-a-90|homme",
-      "nom": "Élévations latérales coude à 90°",
-      "retour_utilisateur": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
-      "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot63 : position haute seule puis vue surélevée. Premier angle masque flexion ; second montre poignets plus bas que coudes, pas avant-bras horizontaux. REFUS, pas phase basse/GIF. Prochain : guide 3D montrant explicitement les quatre points coude/poignet dans un même plan horizontal, pas simple demande caméra haute.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
-        "sha256": "f32bca1d8f9c2eb217a062cc7e5d19be7d21427a4b084793c6c0e38f250ccdae",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      }
-    },
-    {
-      "numero_signale": 87,
-      "cle_numerotation": "elevations-laterales-halteres-myo-reps|femme",
-      "nom": "Élévations latérales haltères — myo-reps",
-      "retour_utilisateur": "Ce n’est pas le bon mouvement.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot60 : vraie élévation latérale bras vers les côtés, haltères légers ; pas un curl. Le protocole myo-reps conserve ses séries/pauses, seul le geste est illustré. Proposition non validée.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
-        "sha256": "89487b94baa87c1c8a29d28d87e10dffccf1b658b7d6dcad019a149a9e32940b",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 60,
-        "gif": "evolution/media/refonte-photo/propositions/lot60/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
-        "sha256": "3cab00f65a47df9cf4455a71060c3e623cb28f9140e8d9c55fb87aa0a502f58d",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 90,
-      "cle_numerotation": "elevations-laterales-lean-away|homme",
-      "nom": "Élévations latérales lean away",
-      "retour_utilisateur": "Lean away : bras qui tient la barre tendu.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot59 essai2 avec schéma : bras d’appui tendu, élévation latérale et inclinaison maintenues. GIF candidat sans recalage automatique qui coupait les mains. Non validé.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-lean-away-homme.gif",
-        "sha256": "c2c18f416e8d2e2bac6450b7779475d0774b1a8cf332a1e2ffe72bf652b75fa7",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 59,
-        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/elevations-laterales-lean-away-homme.gif",
-        "sha256": "e89971ee6ba059fabcd7f7a3dd7f37ee222876d30bab55180109cc23a01abeaf",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 126,
-      "cle_numerotation": "jackknife-sur-swiss-ball|homme",
-      "nom": "Jackknife sur swiss ball",
-      "retour_utilisateur": "Jackknife : homme à l’envers en position finale.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot61 schéma large : tronc face sol dans les deux cases, mains fixes, genoux ramenés, ballon et pieds entièrement cadrés. Proposition non validée.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
-        "sha256": "e066ca4c6da13a2b3afada04d4636f565484e62cc985042d1fae8acc49573e63",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 61,
-        "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/jackknife-sur-swiss-ball-homme.gif",
-        "sha256": "5c2fdfab8ac788be1f5b0af4bd22b995e86262050656be6149062ac0c5d88170",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 148,
-      "cle_numerotation": "mountain-climbers|homme",
-      "nom": "Mountain climbers",
-      "retour_utilisateur": "Mountain climbers : image finale avec trois jambes ; supprimer le membre surnuméraire.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot63 : deux jambes dans chaque case ; genou proche ramené au départ, genou éloigné ramené en fin. Édition directe refusée (même jambe), guide passé par planche jambes tendues puis flexion jambe éloignée : alternance obtenue sans miroir. GIF sans recalage, mains/pieds entiers. Teinte abdominale olive, style/couleur non validés ; anatomie et amplitude à apprécier en revue.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/mountain-climbers-homme.gif",
-        "sha256": "aa789a750ed2c2c5eb911776b44629b08b31a9a189c5a708704d8284a768340c",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 63,
-        "gif": "evolution/media/refonte-photo/propositions/lot63/gif/homme/mountain-climbers-homme.gif",
-        "sha256": "b0bbbea5a96ea72959f86fe82cfac96f9b13968d51100ed730aeea28b9c79462",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 149,
-      "cle_numerotation": "pallof-press-a-l-elastique|femme",
-      "nom": "Pallof press à l'élastique",
-      "retour_utilisateur": "149 et150 à retravailler. Pour149, athlète de face au départ.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot58 vue de face maintenue, ancrage élastique latéral gauche, seules mains avancent. Proposition non validée.",
-      "validation_utilisateur": false,
-      "proposition": {
-        "lot": 58,
-        "gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-l-elastique-femme.gif",
-        "sha256": "31dbb90a17c19788e8ef4b6d7a21588b11da166ef3b1eedd4cc8322f30b066b4",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      },
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/femme/pallof-press-a-l-elastique-femme.gif",
-        "sha256": "7de6cc31c5c5301e2d03228ad9d552fafcdf65b0d5c7d5741b29c01e4938b0a9",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      }
-    },
-    {
-      "numero_signale": 150,
-      "cle_numerotation": "pallof-press-a-la-poulie|femme",
-      "nom": "Pallof press à la poulie",
-      "retour_utilisateur": "149 et150 à retravailler ; position corps et cadrage cohérents.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot58 même orientation corps et pieds aux deux cases, station à droite ; bras repliés puis tendus. Proposition non validée.",
-      "validation_utilisateur": false,
-      "proposition": {
-        "lot": 58,
-        "gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-la-poulie-femme.gif",
-        "sha256": "5fb6a2341be9c03f3eae88e9f6c77dc5322522dce02f264b6462d722fe112c44",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      },
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/femme/pallof-press-a-la-poulie-femme.gif",
-        "sha256": "feabd4e608d48f3f7c3ac6fd3937b353e875329f53844a4e36fe8ca4bfea895c",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      }
-    },
-    {
-      "numero_signale": 194,
-      "cle_numerotation": "step-up-haut|homme",
-      "nom": "Step-up haut",
-      "retour_utilisateur": "Step-up haut : pas la même jambe au départ et à l’arrivée.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot59 : même jambe droite sur le step au départ et à l’arrivée. Réserve : disques de barre partiellement coupés par le cadrage ; contrôle final requis avant intégration.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/step-up-haut-homme.gif",
-        "sha256": "55312a3f227db7a47c7f4ee9b9d9e30bc6791f1fce82e30fb06a4c397dee66dc",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 59,
-        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/step-up-haut-homme.gif",
-        "sha256": "508eef3f410ac239b8aaabbf84d784351c8fc8409b6603967951c4b28e2eb8ba",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 204,
-      "cle_numerotation": "tractions-supination-chin-up|homme",
-      "nom": "Tractions supination (chin-up)",
-      "retour_utilisateur": "À refaire.",
-      "origine": "retour_direct",
-      "statut": "refuse_interne",
-      "detail": "Lot62 case haute seule : menton atteint la barre, mais orientation underhand non démontrée clairement (paumes visibles vers caméra). Refus, aucun GIF. Prochain : gros plan de la prise supination indépendante comme contrainte visuelle avant de générer corps suspendu.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
-        "sha256": "d9bfa9bd06ca082cf304ececf68bab8bd5b6b874d0385fb1385b6bf27d8f9736",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      }
-    },
-    {
-      "numero_signale": 222,
-      "cle_numerotation": "pompes-au-bord|femme",
-      "nom": "Pompes au bord",
-      "retour_utilisateur": "Corps dans l’eau.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot59 : femme debout DANS le bassin, pieds au fond et jambes immergées. Eau aux hanches, profondeur à apprécier par utilisateur ; essai2 eau plus haute non obtenu. Non validé.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-femme.gif",
-        "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 59,
-        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-femme.gif",
-        "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 239,
-      "cle_numerotation": "bras-tendu-contre-le-mur|homme",
-      "nom": "Bras tendu contre le mur",
-      "retour_utilisateur": "Bras tendu ; tronc à l’envers par rapport aux pieds.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot61 essai2 : bras tendu au mur, corps et pieds cohérents, pas de passage à une vue de dos. Rotation du tronc faible (tête tourne davantage) à apprécier ; proposition non validée.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
-        "sha256": "0cf727335e61934175f92724c743916e8ff13d8cdb5817c4ed352a36132d2fd2",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 61,
-        "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/bras-tendu-contre-le-mur-homme.gif",
-        "sha256": "e195ea6f2c61d00b57f72e6128c1dfd83e95315f1b3cc2a47e8e4885f2ab97b0",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 265,
-      "cle_numerotation": "etirement-dans-l-encadrement-de-porte|homme",
-      "nom": "Étirement dans l'encadrement de porte",
-      "retour_utilisateur": "Ne comprend pas le mouvement.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot60 essai2 guidé : avant-bras vertical au montant, coude90°, petite fente avant. GIF sans recalage (le recalage coupait la main finale). Vert plus sourd et amplitude douce à apprécier ; proposition non validée.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
-        "sha256": "214150ca9201891bf0839d048b53ff580ee6cac3cb6cf3cd5cba0d53c4998a71",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 60,
-        "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
-        "sha256": "30a57d2b483b4e96d7549edea58794ca84eaf0c1cdaf7c041206aa0c20af4ff2",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 298,
-      "cle_numerotation": "pompes-au-bord-effort|femme",
-      "nom": "Pompes au bord — EFFORT",
-      "retour_utilisateur": "Corps dans l’eau.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Copie conforme CANDIDATE du n°222. Femme debout dans le bassin ; profondeur eau aux hanches à apprécier. Non validé.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-effort-femme.gif",
-        "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 59,
-        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-effort-femme.gif",
-        "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    },
-    {
-      "numero_signale": 380,
-      "cle_numerotation": "mobilite-hanches-chevilles|homme",
-      "nom": "Mobilité hanches / chevilles",
-      "retour_utilisateur": "Tronc à l’envers en position finale.",
-      "origine": "retour_direct",
-      "statut": "propose_attente_accord",
-      "detail": "Lot59 : tronc orienté vers la droite aux deux cases, jambe devant puis derrière. Non validé.",
-      "validation_utilisateur": false,
-      "avant": {
-        "gif": "evolution/media/refonte-photo/gif/homme/mobilite-hanches-chevilles-homme.gif",
-        "sha256": "134626c223afbab34250bda7a904164bcd8c5766062d849ea3f2b3e365efdd65",
-        "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
-      },
-      "proposition": {
-        "lot": 59,
-        "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/mobilite-hanches-chevilles-homme.gif",
-        "sha256": "f2bab6bc3f793ce9c0113a8d56d5dfebaff11cb41a277d7795f1080898668d20",
-        "validation_utilisateur": false,
-        "controle_final_requis": true
-      }
-    }
-  ],
-  "format_comparatif": {
-    "moment": "Lorsque toutes les corrections demandées sont prêtes, avant validation utilisateur",
-    "perimetre": "Uniquement les exercices à reprendre et leurs variantes concernées",
-    "disposition": "AVANT à gauche, APRÈS à droite, côte à côte ; mêmes numéros",
-    "livraison": "Un PDF téléchargeable par lien dans le chat",
-    "complet_requis": true
+ "date": "2026-09-26",
+ "lot": 68,
+ "etape": 2,
+ "base_livree_commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4",
+ "regle": "Montrer AVANT validation. Aucun remplacement de GIF livré, manifeste, état ou PDF principal sans accord utilisateur par numéro.",
+ "nombre_numeros_directs": 24,
+ "nombre_variantes_ajoutees": 3,
+ "entrees": [
+  {
+   "numero_signale": 19,
+   "cle_numerotation": "bulgarian-split-squat-halteres|femme",
+   "nom": "Bulgarian split squat haltères",
+   "retour_utilisateur": "Bulgarian Split : jambe pliée de la fille à l’envers.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Genou arrière fléchi dans le bon sens, même jambe. Amplitude à apprécier (départ déjà fléchi). Teinte olive : vert lime à renforcer avant intégration.",
+   "validation_utilisateur": false,
+   "proposition": {
+    "lot": 57,
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/femme/bulgarian-split-squat-halteres-femme.gif",
+    "sha256": "a96e7d8435e72a0614e981e571dbb2d514c115e0899c67d1f0fec8e80ad2942b",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   },
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/femme/bulgarian-split-squat-halteres-femme.gif",
+    "sha256": "76ec865a3eb818794c4dcb8d4f61a1c2f7c64f522e92ead8463f84c69fffd3c7",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   }
   },
-  "accord_format_zottman": {
-    "numeros": [
-      46,
-      47,
-      48
+  {
+   "numero_signale": 26,
+   "cle_numerotation": "crunch-a-la-poulie|homme",
+   "nom": "Crunch à la poulie",
+   "retour_utilisateur": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot68 : stratégie du brief suivie — arrivée construite d'abord (profil fixe visage gauche/station derrière à droite, câble unique raccordé poulie haute→corde, enroulement réel du tronc, éloignement net), puis départ édité depuis l'arrivée (même station/profil/cadrage, tronc déroulé). 8 générations, dont 4 éditions guidées pour câble et seconde main. Proposition isolée sous propositions/lot68/, NON VALIDÉE. Réserves : micro-variation du tapis (bord gris visible au départ), main lointaine placée près du mousqueton en fin, vert corporel mesuré 512/286 px strict hors plantes du décor. Prescription inchangée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
+    "sha256": "2b5be5e924f07fbf554543b6023acd988a061a189054d1220493645d8163dd56",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 68,
+    "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/crunch-a-la-poulie-homme.gif",
+    "sha256": "5342c88e60862a7bd86efeaaef722413c37bef3d815267dccc4e7faab46f3fbe",
+    "planche": "evolution/media/refonte-photo/propositions/lot68/planches/crunch-a-la-poulie.png",
+    "review": "evolution/media/refonte-photo/review/lot68-proposition-26.jpg",
+    "size": [
+     788,
+     440
     ],
-    "frames": 4,
-    "accord_utilisateur": true,
-    "accord_images": false
+    "frames": 2,
+    "duration_ms": 500,
+    "roi_abdominaux_strict_lime_hors_plantes": [
+     512,
+     286
+    ],
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 31,
+   "cle_numerotation": "curl-concentration|homme",
+   "nom": "Curl concentration",
+   "retour_utilisateur": "Curl concentration : tourner la main vers la droite au départ.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot62 : deux positions séparées, case haute produite d’abord puis extension depuis cette référence. Buste penché, paume de départ en supination plus lisible, coude proche de l’intérieur cuisse. Contact précis coude-cuisse et direction paume à apprécier dans la revue utilisateur ; proposition non validée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-concentration-homme.gif",
+    "sha256": "b18b490f9567c8dd6933f0385259d6db464d965cc5aa16534171781dbcd33da8",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 62,
+    "gif": "evolution/media/refonte-photo/propositions/lot62/gif/homme/curl-concentration-homme.gif",
+    "sha256": "3825c9b3d9ff3cba1d08165860467d08d433c17a1afd9d577fdfa24a09a73755",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 37,
+   "cle_numerotation": "curl-marteau|homme",
+   "nom": "Curl marteau",
+   "retour_utilisateur": "Curl marteau : en haut, paume vers le corps comme au départ. Corriger les autres marteau.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Essai2 guidé : paumes neutres en haut, haltères verticaux. Relire cadrage avant accord.",
+   "validation_utilisateur": false,
+   "proposition": {
+    "lot": 57,
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/curl-marteau-homme.gif",
+    "sha256": "2de901b0e9f6bfb49de8d2f7695eb3a61c7552be2916ad43dc15b4e8edc7baaa",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   },
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-marteau-homme.gif",
+    "sha256": "b3e93e1e1a7f9eb9069971fe6bf9527663992e03d7a3b91eb8b9ef24d189d0fa",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   }
+  },
+  {
+   "numero_signale": 38,
+   "cle_numerotation": "curl-marteau-assis|homme",
+   "nom": "Curl marteau assis",
+   "retour_utilisateur": "Extension de la correction n°37 : curl marteau assis.",
+   "origine": "extension_variante",
+   "statut": "propose_attente_accord",
+   "detail": "Lot60 : déclinaison assise de la référence marteau corrigée37. Paumes neutres et haltères verticaux en haut, bras initial bas. Proposition non validée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-marteau-assis-homme.gif",
+    "sha256": "2b24a4da9f9d774eede7d4f4fa2cd09754d7e515a584622b3eb28439b70b6c9d",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 60,
+    "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/curl-marteau-assis-homme.gif",
+    "sha256": "dff2488caaa4caea0933c968f6c4279ade1411693a2e38bff4f3b2b9b7bd165e",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 44,
+   "cle_numerotation": "curl-scott-haltere-neutre|homme",
+   "nom": "Curl Scott haltère neutre",
+   "retour_utilisateur": "Curl Scott : bras de départ non posé sur le pupitre.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot64 : prise haute marteau obtenue par édition du gros plan, recomposée sans déplacer le corps. Bras/coude sur pupitre en bas et haut ; prise basse axe profondeur depuis lot63. Proposition partagée avec45 (même geste, prescriptions conservées). Réserves : main basse partiellement masquée par disque, dimensions/rendu haltère, vert diffus cyan non lime et débordant, décor gris ; aucun accord ni intégration.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
+    "sha256": "197187199037767a6d42065141b53e3a51b6e2fa83f78585168bb08b5addebf8",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 64,
+    "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-neutre-homme.gif",
+    "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 45,
+   "cle_numerotation": "curl-scott-haltere-prise-neutre|homme",
+   "nom": "Curl Scott haltère, prise neutre",
+   "retour_utilisateur": "Tourner la paume au départ.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot64 : même paire Scott neutre que44, main haute en marteau et appui sur pupitre. Prescriptions spécifiques45 inchangées. Réserves de lecture prise basse, dimensions haltère, teinte/débordement vert et décor gris identiques44 ; proposition non validée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+    "sha256": "7cdb8ca673040b71d58e7cfd064761938c4671d5340147c85a110f443e5014f7",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 64,
+    "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+    "sha256": "ec2941d00d3945c4254bf28a66d67ff72d94433005ecd9b54364a1aa4b9b87a1",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 46,
+   "cle_numerotation": "curl-zottman|homme",
+   "nom": "Curl Zottman",
+   "retour_utilisateur": "Zottman : montrer montée curl classique et descente curl inversé ; corriger les autres Zottman.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot65 : proposition debout en4 phases : bas supination, haut supination, haut pronation, bas pronation. Deux mains différenciées aux rotations. Sources debout lot26 ; retouches locales et masques de premier plan, anciens disques effacés par inpainting, aucune inversion globale. Réserves raccords des poignets, taille/nombre de disques différents entre bas/haut, rendu des aplats verts. Proposition non validée, pas prête pour intégration.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-homme.gif",
+    "sha256": "f7b27078da26260e96c56dacfa39a81f871a4a8bf0ce43750de31097e53f0a6e",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 65,
+    "gif": "evolution/media/refonte-photo/propositions/lot65/gif/homme/curl-zottman-homme.gif",
+    "sha256": "f3af21c2eec127f0c619cd2d95e9fe09fb1fdf3d5b4641776f51c5466eafbf01",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 47,
+   "cle_numerotation": "curl-zottman-assis|homme",
+   "nom": "Curl Zottman assis",
+   "retour_utilisateur": "Extension de la correction n°46 : Zottman assis.",
+   "origine": "extension_variante",
+   "statut": "propose_attente_accord",
+   "detail": "Lot66 : proposition assise4 phases : bas supination, haut supination, haut pronation, bas pronation. Trois retouches individuelles : main droite image basse et deux mains hautes ; deux paumes en haut et deux dos de main en bas pour descente. Corps/caméra conservés, pas miroir ni rotation globale. Réserves raccords des poignets, petites différences de cadrage/poids et rendu vert plus étendu en bas (aspect manchon) ; présence mesurée ne vaut pas validation stylistique. Aucune intégration.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-assis-homme.gif",
+    "sha256": "088734f0b07937f1642c5f83896ee330d84fdf2f428dbcfe0037fc964b6f27aa",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 66,
+    "gif": "evolution/media/refonte-photo/propositions/lot66/gif/homme/curl-zottman-assis-homme.gif",
+    "sha256": "902ccda003422bea77276c4f9d826ddf6123422b3070d7f62844ec61155a9875",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 48,
+   "cle_numerotation": "curl-zottman-un-bras-banc-scott|homme",
+   "nom": "Curl Zottman un bras, banc Scott",
+   "retour_utilisateur": "Extension de la correction n°46 : Zottman un bras banc Scott.",
+   "origine": "extension_variante",
+   "statut": "propose_attente_accord",
+   "detail": "Lot64 : proposition4 phases autorisées en principe : bas supination, haut supination, haut pronation, bas pronation. Retouches locales des mains rendent paume/dos main distincts, sans miroir ni rotation globale. Disques ronds harmonisés, chiffres parasites supprimés localement ; peau main haute retouchée sans recolorer épaule. Réserves anatomie/raccords/échelle haltère, vert diffus cyan non lime et décor gris ; format autorisé ne vaut pas validation de ces images.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
+    "sha256": "fa3e504b6d0114181fdefc9fab0cb5189400f8b7b9a851187e0376c54ff868fa",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 64,
+    "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
+    "sha256": "1f1a351d87f5efd4fcd6d1ae9ef8bf9ae36086e67274c2dac63566a86dcd3a2d",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 64,
+   "cle_numerotation": "developpe-halteres-decline-prise-neutre|homme",
+   "nom": "Développé haltères décliné, prise neutre",
+   "retour_utilisateur": "Développé haltères décliné : banc non décliné.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Essai2 guidé : banc clairement décliné tête sous bassin. Relire aussi la prise neutre avant accord.",
+   "validation_utilisateur": false,
+   "proposition": {
+    "lot": 57,
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
+    "sha256": "3d037d6be0f1f0d33babc249194bbc56bb4b66474954b4ed3ea97fdf04c6d718",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   },
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
+    "sha256": "293ac99c80e4bcf55e6b96844f56d3904c0b841bcf9f9c7123b75316c3ee85a3",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   }
+  },
+  {
+   "numero_signale": 80,
+   "cle_numerotation": "ecartes-halteres|homme",
+   "nom": "Écartés haltères",
+   "retour_utilisateur": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot67 : proposition sur banc visiblement incliné selon confirmation utilisateur. Départ bras ouverts, paumes orientées vers le haut, mains fermées. Arrivée haltères rapprochés au-dessus du haut de poitrine et bras davantage allongés, après refus des arrivées trop fléchies. Corps/bench/feet entièrement cadrés, sans miroir ni recalage. Réserves : flexion résiduelle des coudes et trajectoire à apprécier, taille apparente des haltères différente en haut, légère variation du buste/tête et rendu des aplats verts. Inclinaison non mesurée ; angle non prescrit. Séries/répétitions/tempo inchangés. Aucune validation ni intégration.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "bb6790d94f7411fced0fa8e42edf4caadc68d384dc15b47ea09155f685184468",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "clarification": {
+    "question": "Conserver banc plat et corriger seulement les paumes, ou passer aussi sur banc incliné ?",
+    "reponse": "80 banc incliné"
+   },
+   "proposition": {
+    "lot": 67,
+    "gif": "evolution/media/refonte-photo/propositions/lot67/gif/homme/ecartes-halteres-homme.gif",
+    "sha256": "13a016d05e32d03a2c657fbd735f3c618d563bea5fb12493df0198b5187d61ec",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 85,
+   "cle_numerotation": "elevations-laterales-coude-a-90|homme",
+   "nom": "Élévations latérales coude à 90°",
+   "retour_utilisateur": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
+   "origine": "retour_direct",
+   "statut": "refuse_interne",
+   "detail": "Lot63 : deux refus (angle masquant la flexion ; poignets sous les coudes). Lot68 : guide préparatoire propositions/lot68/guides/85-guide-plan-horizontal.png produit (plan horizontal ligné à hauteur épaules) avec réserve : mannequin de face, avant-bras non lisibles vers l'avant ; compléter d'une vue de profil au prochain tour, puis générer la position haute avec ce guide en contrainte visuelle, départ ensuite. Toujours AUCUNE proposition ni GIF pour ce numéro.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
+    "sha256": "f32bca1d8f9c2eb217a062cc7e5d19be7d21427a4b084793c6c0e38f250ccdae",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   }
+  },
+  {
+   "numero_signale": 87,
+   "cle_numerotation": "elevations-laterales-halteres-myo-reps|femme",
+   "nom": "Élévations latérales haltères — myo-reps",
+   "retour_utilisateur": "Ce n’est pas le bon mouvement.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot60 : vraie élévation latérale bras vers les côtés, haltères légers ; pas un curl. Le protocole myo-reps conserve ses séries/pauses, seul le geste est illustré. Proposition non validée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+    "sha256": "89487b94baa87c1c8a29d28d87e10dffccf1b658b7d6dcad019a149a9e32940b",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 60,
+    "gif": "evolution/media/refonte-photo/propositions/lot60/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+    "sha256": "3cab00f65a47df9cf4455a71060c3e623cb28f9140e8d9c55fb87aa0a502f58d",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 90,
+   "cle_numerotation": "elevations-laterales-lean-away|homme",
+   "nom": "Élévations latérales lean away",
+   "retour_utilisateur": "Lean away : bras qui tient la barre tendu.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot59 essai2 avec schéma : bras d’appui tendu, élévation latérale et inclinaison maintenues. GIF candidat sans recalage automatique qui coupait les mains. Non validé.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-lean-away-homme.gif",
+    "sha256": "c2c18f416e8d2e2bac6450b7779475d0774b1a8cf332a1e2ffe72bf652b75fa7",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 59,
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/elevations-laterales-lean-away-homme.gif",
+    "sha256": "e89971ee6ba059fabcd7f7a3dd7f37ee222876d30bab55180109cc23a01abeaf",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 126,
+   "cle_numerotation": "jackknife-sur-swiss-ball|homme",
+   "nom": "Jackknife sur swiss ball",
+   "retour_utilisateur": "Jackknife : homme à l’envers en position finale.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot61 schéma large : tronc face sol dans les deux cases, mains fixes, genoux ramenés, ballon et pieds entièrement cadrés. Proposition non validée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
+    "sha256": "e066ca4c6da13a2b3afada04d4636f565484e62cc985042d1fae8acc49573e63",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 61,
+    "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/jackknife-sur-swiss-ball-homme.gif",
+    "sha256": "5c2fdfab8ac788be1f5b0af4bd22b995e86262050656be6149062ac0c5d88170",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 148,
+   "cle_numerotation": "mountain-climbers|homme",
+   "nom": "Mountain climbers",
+   "retour_utilisateur": "Mountain climbers : image finale avec trois jambes ; supprimer le membre surnuméraire.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot63 : deux jambes dans chaque case ; genou proche ramené au départ, genou éloigné ramené en fin. Édition directe refusée (même jambe), guide passé par planche jambes tendues puis flexion jambe éloignée : alternance obtenue sans miroir. GIF sans recalage, mains/pieds entiers. Teinte abdominale olive, style/couleur non validés ; anatomie et amplitude à apprécier en revue.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/mountain-climbers-homme.gif",
+    "sha256": "aa789a750ed2c2c5eb911776b44629b08b31a9a189c5a708704d8284a768340c",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 63,
+    "gif": "evolution/media/refonte-photo/propositions/lot63/gif/homme/mountain-climbers-homme.gif",
+    "sha256": "b0bbbea5a96ea72959f86fe82cfac96f9b13968d51100ed730aeea28b9c79462",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 149,
+   "cle_numerotation": "pallof-press-a-l-elastique|femme",
+   "nom": "Pallof press à l'élastique",
+   "retour_utilisateur": "149 et150 à retravailler. Pour149, athlète de face au départ.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot58 vue de face maintenue, ancrage élastique latéral gauche, seules mains avancent. Proposition non validée.",
+   "validation_utilisateur": false,
+   "proposition": {
+    "lot": 58,
+    "gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-l-elastique-femme.gif",
+    "sha256": "31dbb90a17c19788e8ef4b6d7a21588b11da166ef3b1eedd4cc8322f30b066b4",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   },
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/femme/pallof-press-a-l-elastique-femme.gif",
+    "sha256": "7de6cc31c5c5301e2d03228ad9d552fafcdf65b0d5c7d5741b29c01e4938b0a9",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   }
+  },
+  {
+   "numero_signale": 150,
+   "cle_numerotation": "pallof-press-a-la-poulie|femme",
+   "nom": "Pallof press à la poulie",
+   "retour_utilisateur": "149 et150 à retravailler ; position corps et cadrage cohérents.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot58 même orientation corps et pieds aux deux cases, station à droite ; bras repliés puis tendus. Proposition non validée.",
+   "validation_utilisateur": false,
+   "proposition": {
+    "lot": 58,
+    "gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-la-poulie-femme.gif",
+    "sha256": "5fb6a2341be9c03f3eae88e9f6c77dc5322522dce02f264b6462d722fe112c44",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   },
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/femme/pallof-press-a-la-poulie-femme.gif",
+    "sha256": "feabd4e608d48f3f7c3ac6fd3937b353e875329f53844a4e36fe8ca4bfea895c",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   }
+  },
+  {
+   "numero_signale": 194,
+   "cle_numerotation": "step-up-haut|homme",
+   "nom": "Step-up haut",
+   "retour_utilisateur": "Step-up haut : pas la même jambe au départ et à l’arrivée.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot59 : même jambe droite sur le step au départ et à l’arrivée. Réserve : disques de barre partiellement coupés par le cadrage ; contrôle final requis avant intégration.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/step-up-haut-homme.gif",
+    "sha256": "55312a3f227db7a47c7f4ee9b9d9e30bc6791f1fce82e30fb06a4c397dee66dc",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 59,
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/step-up-haut-homme.gif",
+    "sha256": "508eef3f410ac239b8aaabbf84d784351c8fc8409b6603967951c4b28e2eb8ba",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 204,
+   "cle_numerotation": "tractions-supination-chin-up|homme",
+   "nom": "Tractions supination (chin-up)",
+   "retour_utilisateur": "À refaire.",
+   "origine": "retour_direct",
+   "statut": "refuse_interne",
+   "detail": "Lot62 : case haute refusée (supination non démontrée). Lot68 : gros plan de la prise supination produit et contrôlé — propositions/lot68/guides/204-guide-prise-supination.png (paumes face caméra, doigts enroulés, pouces croisés vers l'intérieur, largeur épaules) : utilisable comme contrainte visuelle. Prochain tour : générer la position haute (menton au-dessus de la barre) avec ce gros plan en référence, puis la phase basse. Toujours AUCUNE proposition ni GIF pour ce numéro.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
+    "sha256": "d9bfa9bd06ca082cf304ececf68bab8bd5b6b874d0385fb1385b6bf27d8f9736",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   }
+  },
+  {
+   "numero_signale": 222,
+   "cle_numerotation": "pompes-au-bord|femme",
+   "nom": "Pompes au bord",
+   "retour_utilisateur": "Corps dans l’eau.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot59 : femme debout DANS le bassin, pieds au fond et jambes immergées. Eau aux hanches, profondeur à apprécier par utilisateur ; essai2 eau plus haute non obtenu. Non validé.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-femme.gif",
+    "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 59,
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-femme.gif",
+    "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 239,
+   "cle_numerotation": "bras-tendu-contre-le-mur|homme",
+   "nom": "Bras tendu contre le mur",
+   "retour_utilisateur": "Bras tendu ; tronc à l’envers par rapport aux pieds.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot61 essai2 : bras tendu au mur, corps et pieds cohérents, pas de passage à une vue de dos. Rotation du tronc faible (tête tourne davantage) à apprécier ; proposition non validée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
+    "sha256": "0cf727335e61934175f92724c743916e8ff13d8cdb5817c4ed352a36132d2fd2",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 61,
+    "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/bras-tendu-contre-le-mur-homme.gif",
+    "sha256": "e195ea6f2c61d00b57f72e6128c1dfd83e95315f1b3cc2a47e8e4885f2ab97b0",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 265,
+   "cle_numerotation": "etirement-dans-l-encadrement-de-porte|homme",
+   "nom": "Étirement dans l'encadrement de porte",
+   "retour_utilisateur": "Ne comprend pas le mouvement.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot60 essai2 guidé : avant-bras vertical au montant, coude90°, petite fente avant. GIF sans recalage (le recalage coupait la main finale). Vert plus sourd et amplitude douce à apprécier ; proposition non validée.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
+    "sha256": "214150ca9201891bf0839d048b53ff580ee6cac3cb6cf3cd5cba0d53c4998a71",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 60,
+    "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
+    "sha256": "30a57d2b483b4e96d7549edea58794ca84eaf0c1cdaf7c041206aa0c20af4ff2",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 298,
+   "cle_numerotation": "pompes-au-bord-effort|femme",
+   "nom": "Pompes au bord — EFFORT",
+   "retour_utilisateur": "Corps dans l’eau.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Copie conforme CANDIDATE du n°222. Femme debout dans le bassin ; profondeur eau aux hanches à apprécier. Non validé.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-effort-femme.gif",
+    "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 59,
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-effort-femme.gif",
+    "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
+  },
+  {
+   "numero_signale": 380,
+   "cle_numerotation": "mobilite-hanches-chevilles|homme",
+   "nom": "Mobilité hanches / chevilles",
+   "retour_utilisateur": "Tronc à l’envers en position finale.",
+   "origine": "retour_direct",
+   "statut": "propose_attente_accord",
+   "detail": "Lot59 : tronc orienté vers la droite aux deux cases, jambe devant puis derrière. Non validé.",
+   "validation_utilisateur": false,
+   "avant": {
+    "gif": "evolution/media/refonte-photo/gif/homme/mobilite-hanches-chevilles-homme.gif",
+    "sha256": "134626c223afbab34250bda7a904164bcd8c5766062d849ea3f2b3e365efdd65",
+    "commit": "e538e03823ea7830d97cf897f8a0d503c9625bd4"
+   },
+   "proposition": {
+    "lot": 59,
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/mobilite-hanches-chevilles-homme.gif",
+    "sha256": "f2bab6bc3f793ce9c0113a8d56d5dfebaff11cb41a277d7795f1080898668d20",
+    "validation_utilisateur": false,
+    "controle_final_requis": true
+   }
   }
+ ],
+ "format_comparatif": {
+  "moment": "Lorsque toutes les corrections demandées sont prêtes, avant validation utilisateur",
+  "perimetre": "Uniquement les exercices à reprendre et leurs variantes concernées",
+  "disposition": "AVANT à gauche, APRÈS à droite, côte à côte ; mêmes numéros",
+  "livraison": "Un PDF téléchargeable par lien dans le chat",
+  "complet_requis": true
+ },
+ "accord_format_zottman": {
+  "numeros": [
+   46,
+   47,
+   48
+  ],
+  "frames": 4,
+  "accord_utilisateur": true,
+  "accord_images": false
+ }
 }

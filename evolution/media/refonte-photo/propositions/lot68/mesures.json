@@ -1,0 +1,27 @@
+{
+  "numero": 26,
+  "identifiant": "crunch-a-la-poulie|homme",
+  "size": [
+    788,
+    440
+  ],
+  "frames": 2,
+  "duration_ms": 500,
+  "roi_abdominaux": [
+    220,
+    176,
+    394,
+    286
+  ],
+  "strict_lime": [
+    457,
+    250
+  ],
+  "sources": [
+    "phases/crunch-depart-2.png",
+    "phases/crunch-fin-5.png"
+  ],
+  "strategie": "brief-reprise : arrivée construite d'abord (5 essais dont 4 éditions guidées), départ édité depuis l'arrivée (2 essais)",
+  "generations_lot68": 8,
+  "validation_utilisateur": false
+}
