@@ -16,6 +16,7 @@ phases, chaque page marquée PROPOSITION NON VALIDÉE avec retour utilisateur + 
 Généré par `tools/pdf-corrections-avant-apres.py` après vérification complète : **26/26 SHAs AVANT (commit
 figé e538e03) et APRÈS (disque) corrects** — correction préalable : SHAs 44/45 re-mis à jour dans le registre
 (b7b404d8… après recolorisation tour4) ; SHA 45 aligné sur son propre fichier.
+**LIEN TÉLÉCHARGEABLE (donné dans le chat) :** `https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/d57f6e21e21868b45643b73269e7af485a048a3a/evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf`
 **EN ATTENTE DE VALIDATION UTILISATEUR page par page (par numéro). AUCUNE intégration sans accord explicite.**
 Après accord par numéro : chaîne d'intégration (§70 passation) avec valide-couples.py, GIF livrés, manifeste,
 PDF principal, index — UNIQUEMENT pour les numéros validés.

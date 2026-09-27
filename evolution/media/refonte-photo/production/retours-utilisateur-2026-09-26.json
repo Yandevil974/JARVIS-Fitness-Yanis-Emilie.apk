@@ -637,7 +637,8 @@
    "date": "2026-09-27",
    "exercices": 26,
    "disposition": "AVANT gauche / APRÈS droite, phases empilées (2) ou grille 2x2 (4)",
-   "statut": "en_attente_validation_utilisateur"
+   "statut": "en_attente_validation_utilisateur",
+   "lien_chat": "https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/d57f6e21e21868b45643b73269e7af485a048a3a/evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf"
   },
   "shas_verifies_avant_generation": true
  },
