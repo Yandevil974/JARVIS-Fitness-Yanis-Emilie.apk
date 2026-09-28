@@ -1,15 +1,16 @@
 {
   "avant_etape_3": {
-    "etat": "choix_teinte_confirme_perimetre_a_preciser",
+    "etat": "choix_et_perimetre_confirmes_style_en_cours",
     "question": "Souhaitez-vous uniformiser la couleur verte des muscles sur celle du n°260 ?",
     "reference_numero": 260,
     "reference_cle": "elliptique-fractionne|femme",
     "reference_gif": "evolution/media/refonte-photo/gif/femme/elliptique-fractionne-femme.gif",
     "decision": "Uniformiser comme le n°260, avec démarcation anatomique visible du muscle ; pas une couche verte posée.",
-    "interdiction": "Clarifier le périmètre (26 corrections ou ensemble des GIFs) avant toute recoloration. Ne pas modifier les gestes validés.",
+    "interdiction": "Préserver les gestes validés. Propositions de style séparées ; contrôler et présenter avant intégration.",
     "date_decision": "2026-09-28",
     "citation_utilisateur": "uniformiser comme le 260 mais pas une couche verte posée mais que je vois bien la démarcation du muscle",
-    "perimetre": null
+    "perimetre": "Les 389 visuels actuels",
+    "citation_perimetre": "tout, les 389"
   },
   "construction_application": {
     "etat": "a_rappeler",

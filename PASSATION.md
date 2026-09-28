@@ -1,3 +1,13 @@
+# STYLE — périmètre confirmé : les 389 visuels (28/09/2026)
+
+L’utilisateur répond **« tout, les 389 »** : uniformiser le vert comme le n°260, avec muscle nettement délimité et relief, pas une plaque. Ne plus redemander le choix ni le périmètre.
+Audit **technique** 389/389 terminé (SHA, décodage, dimensions, phases/durées), PAS une validation anatomique. Rapport `style-260/audit-technique-389.json`.
+Premier essai de teinte seule 44/45 insuffisant : effet plaque conservé, pas de généralisation. Un essai de texture musculaire généré localement pour 44/45 phase1 puis composité uniquement dans le masque vert ; pixels hors masque inchangés. Anatomie et teinte restent à contrôler ; phase2 pas traitée. Aperçu `style-260/lot01/STYLE-389-premier-essai.pdf`.
+**0/389 GIF style finalisés, 0 intégré.** N°80 et tous les gestes validés sont intacts. Un appel génération dans ce tour. Pas de recoloration des plantes.
+Suite : valider une méthode anatomique locale, traiter par lots avec contrôle des DEUX phases (4 pour Zottman), notamment 19/44/45/48/80/85. Ne pas annoncer 389 corrigés sur la foi d’une mesure de vert ou d’un audit technique. Étape3 cardio/piscine à poursuivre après ce chantier demandé. APK inchangé.
+
+---
+
 # Décision style — 28/09/2026 (prioritaire)
 
 L’utilisateur choisit **uniformiser le vert comme le n°260**, avec **démarcation anatomique nette du muscle, pas une couche verte posée**. Choix de teinte résolu ; ne plus le redemander. Préserver relief/texture/faisceaux et tous les gestes validés, notamment les mains du n°80.

@@ -1,0 +1,18 @@
+{
+ "numero": 260,
+ "sha256": "17b2e2fcfe181f96c0539c81772b08cedaaee76805470d972811fb42430cb170",
+ "roi_corps_xyxy": [
+  116,
+  65,
+  247,
+  352
+ ],
+ "rgb_median_mesure": [
+  112,
+  182,
+  12
+ ],
+ "pixels_mesures": 2912,
+ "plantes_exclues": true,
+ "reference_modifiee": false
+}

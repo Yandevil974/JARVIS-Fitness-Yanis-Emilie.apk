@@ -1435,7 +1435,11 @@
    "Contrôler chaque phase et exclure les plantes des mesures.",
    "Préserver intégralement gestes, mains, visages, cadrages et matériels déjà validés."
   ],
-  "perimetre": "a_confirmer_26_corrections_ou_ensemble_des_389_visuels",
-  "recoloration_effectuee": false
+  "perimetre": "ensemble_des_389_visuels",
+  "recoloration_effectuee": false,
+  "accord_perimetre": "tout, les 389",
+  "statut": "audit_technique_termine_premier_essai_local_non_valide",
+  "gif_style_finalises": 0,
+  "gif_style_integres": 0
  }
 }

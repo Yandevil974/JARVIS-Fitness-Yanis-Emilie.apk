@@ -1,0 +1,84 @@
+{
+ "reference_rgb": [
+  112,
+  182,
+  12
+ ],
+ "generation": 0,
+ "gif_livres_modifies": 0,
+ "propositions": [
+  {
+   "numero": 44,
+   "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "proposition_sha256": "f40c257ce9f1fc36e6a9e42d72e65f54cb6c090d13c4b659856c2bbe1b98eb76",
+   "statut": "proposition_teinte_non_validee_anatomie_a_revoir",
+   "controle": [
+    {
+     "phase": 1,
+     "roi_xyxy": [
+      62,
+      127,
+      119,
+      234
+     ],
+     "pixels_masque": 2703,
+     "nuances_disponibles": 7,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "roi_xyxy": [
+      64,
+      147,
+      111,
+      223
+     ],
+     "pixels_masque": 1489,
+     "nuances_disponibles": 6,
+     "pixels_modifies_hors_masque": 0
+    }
+   ],
+   "integration": false
+  },
+  {
+   "numero": 45,
+   "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "proposition_sha256": "f40c257ce9f1fc36e6a9e42d72e65f54cb6c090d13c4b659856c2bbe1b98eb76",
+   "statut": "proposition_teinte_non_validee_anatomie_a_revoir",
+   "controle": [
+    {
+     "phase": 1,
+     "roi_xyxy": [
+      62,
+      127,
+      119,
+      234
+     ],
+     "pixels_masque": 2703,
+     "nuances_disponibles": 7,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "roi_xyxy": [
+      64,
+      147,
+      111,
+      223
+     ],
+     "pixels_masque": 1489,
+     "nuances_disponibles": 6,
+     "pixels_modifies_hors_masque": 0
+    }
+   ],
+   "integration": false
+  }
+ ],
+ "differes": [
+  {
+   "numero": 80,
+   "phase": 1,
+   "motif": "Palette partagée avec le décor : pas assez de couleurs libres pour préserver exactement les pixels hors muscle. Aucune proposition produite."
+  }
+ ]
+}
