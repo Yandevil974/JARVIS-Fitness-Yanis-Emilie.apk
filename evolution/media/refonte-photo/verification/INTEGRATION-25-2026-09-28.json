@@ -1,0 +1,574 @@
+{
+ "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+ "accord": "oui validé",
+ "validations_total": 26,
+ "restants_non_approuves": 0,
+ "numero80_inchange_sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+ "generation_images": 0,
+ "recoloration": false,
+ "apk_reconstruit": false,
+ "integrations": [
+  {
+   "numero": 19,
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/femme/bulgarian-split-squat-halteres-femme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot57/gif/femme/bulgarian-split-squat-halteres-femme.gif",
+   "sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
+   "frames": 2,
+   "size": [
+    381,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 26,
+   "cle": "crunch-a-la-poulie|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/crunch-a-la-poulie-homme.gif",
+   "sha256": "f85fc4869a4a719466886eb8880b540bb20daf492b77d96ee6f5dae4a826e983",
+   "frames": 2,
+   "size": [
+    788,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 31,
+   "cle": "curl-concentration|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-concentration-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot62/gif/homme/curl-concentration-homme.gif",
+   "sha256": "3825c9b3d9ff3cba1d08165860467d08d433c17a1afd9d577fdfa24a09a73755",
+   "frames": 2,
+   "size": [
+    262,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 37,
+   "cle": "curl-marteau|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-marteau-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/curl-marteau-homme.gif",
+   "sha256": "2de901b0e9f6bfb49de8d2f7695eb3a61c7552be2916ad43dc15b4e8edc7baaa",
+   "frames": 2,
+   "size": [
+    454,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 38,
+   "cle": "curl-marteau-assis|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-marteau-assis-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/curl-marteau-assis-homme.gif",
+   "sha256": "dff2488caaa4caea0933c968f6c4279ade1411693a2e38bff4f3b2b9b7bd165e",
+   "frames": 2,
+   "size": [
+    396,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 44,
+   "cle": "curl-scott-haltere-neutre|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-neutre-homme.gif",
+   "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "frames": 2,
+   "size": [
+    259,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 45,
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+   "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "frames": 2,
+   "size": [
+    259,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 46,
+   "cle": "curl-zottman|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot65/gif/homme/curl-zottman-homme.gif",
+   "sha256": "f3af21c2eec127f0c619cd2d95e9fe09fb1fdf3d5b4641776f51c5466eafbf01",
+   "frames": 4,
+   "size": [
+    392,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500,
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 47,
+   "cle": "curl-zottman-assis|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-assis-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot66/gif/homme/curl-zottman-assis-homme.gif",
+   "sha256": "902ccda003422bea77276c4f9d826ddf6123422b3070d7f62844ec61155a9875",
+   "frames": 4,
+   "size": [
+    392,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500,
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 48,
+   "cle": "curl-zottman-un-bras-banc-scott|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
+   "sha256": "41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704",
+   "frames": 4,
+   "size": [
+    264,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500,
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 64,
+   "cle": "developpe-halteres-decline-prise-neutre|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
+   "sha256": "3d037d6be0f1f0d33babc249194bbc56bb4b66474954b4ed3ea97fdf04c6d718",
+   "frames": 2,
+   "size": [
+    362,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 85,
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif",
+   "sha256": "4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4",
+   "frames": 2,
+   "size": [
+    788,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 87,
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot60/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
+   "sha256": "3cab00f65a47df9cf4455a71060c3e623cb28f9140e8d9c55fb87aa0a502f58d",
+   "frames": 2,
+   "size": [
+    387,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 90,
+   "cle": "elevations-laterales-lean-away|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/elevations-laterales-lean-away-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/elevations-laterales-lean-away-homme.gif",
+   "sha256": "e89971ee6ba059fabcd7f7a3dd7f37ee222876d30bab55180109cc23a01abeaf",
+   "frames": 2,
+   "size": [
+    394,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 126,
+   "cle": "jackknife-sur-swiss-ball|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/jackknife-sur-swiss-ball-homme.gif",
+   "sha256": "5c2fdfab8ac788be1f5b0af4bd22b995e86262050656be6149062ac0c5d88170",
+   "frames": 2,
+   "size": [
+    608,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 148,
+   "cle": "mountain-climbers|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/mountain-climbers-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot63/gif/homme/mountain-climbers-homme.gif",
+   "sha256": "b0bbbea5a96ea72959f86fe82cfac96f9b13968d51100ed730aeea28b9c79462",
+   "frames": 2,
+   "size": [
+    788,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 149,
+   "cle": "pallof-press-a-l-elastique|femme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/femme/pallof-press-a-l-elastique-femme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-l-elastique-femme.gif",
+   "sha256": "31dbb90a17c19788e8ef4b6d7a21588b11da166ef3b1eedd4cc8322f30b066b4",
+   "frames": 2,
+   "size": [
+    396,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 150,
+   "cle": "pallof-press-a-la-poulie|femme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/femme/pallof-press-a-la-poulie-femme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-la-poulie-femme.gif",
+   "sha256": "5fb6a2341be9c03f3eae88e9f6c77dc5322522dce02f264b6462d722fe112c44",
+   "frames": 2,
+   "size": [
+    396,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 194,
+   "cle": "step-up-haut|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/step-up-haut-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/step-up-haut-homme.gif",
+   "sha256": "508eef3f410ac239b8aaabbf84d784351c8fc8409b6603967951c4b28e2eb8ba",
+   "frames": 2,
+   "size": [
+    125,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 204,
+   "cle": "tractions-supination-chin-up|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif",
+   "sha256": "4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10",
+   "frames": 2,
+   "size": [
+    385,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 222,
+   "cle": "pompes-au-bord|femme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-femme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-femme.gif",
+   "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+   "frames": 2,
+   "size": [
+    401,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 239,
+   "cle": "bras-tendu-contre-le-mur|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/bras-tendu-contre-le-mur-homme.gif",
+   "sha256": "e195ea6f2c61d00b57f72e6128c1dfd83e95315f1b3cc2a47e8e4885f2ab97b0",
+   "frames": 2,
+   "size": [
+    390,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 265,
+   "cle": "etirement-dans-l-encadrement-de-porte|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
+   "sha256": "30a57d2b483b4e96d7549edea58794ca84eaf0c1cdaf7c041206aa0c20af4ff2",
+   "frames": 2,
+   "size": [
+    180,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 298,
+   "cle": "pompes-au-bord-effort|femme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/femme/pompes-au-bord-effort-femme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-effort-femme.gif",
+   "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+   "frames": 2,
+   "size": [
+    401,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  },
+  {
+   "numero": 380,
+   "cle": "mobilite-hanches-chevilles|homme",
+   "date": "2026-09-28",
+   "accord": "oui validé — réponse à la demande de validation des 25 autres propositions",
+   "gif": "evolution/media/refonte-photo/gif/homme/mobilite-hanches-chevilles-homme.gif",
+   "source_commit": "c685298378773817460fb358bc605af7ce154b8b",
+   "source_gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/mobilite-hanches-chevilles-homme.gif",
+   "sha256": "f2bab6bc3f793ce9c0113a8d56d5dfebaff11cb41a277d7795f1080898668d20",
+   "frames": 2,
+   "size": [
+    127,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "copie_octet_pour_octet": true,
+   "recoloration": false,
+   "apk_reconstruit": false
+  }
+ ],
+ "pdf_principal_pages": 131,
+ "pdf_zottman_quatre_phases": true,
+ "manifestes_sha_controles": 389,
+ "numerotation_inchangee": true,
+ "etat_plan_rappels_inchanges": true,
+ "index_vignettes": 389
+}

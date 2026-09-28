@@ -29,7 +29,7 @@ def frames(path):
     im = Image.open(path)
     out = []
     n = getattr(im, 'n_frames', 1)
-    for i in range(min(n, 2)):
+    for i in range(min(n, 4)):
         im.seek(i)
         out.append(im.convert('RGB'))
     while len(out) < 2:
@@ -55,7 +55,7 @@ def main():
     pg = Image.new('RGB', PAGE, 'white')
     d = ImageDraw.Draw(pg)
     d.text((60, 70), f'JARVIS Fitness — Revue des {len(entrees)} exercices', font=F_HDR, fill='black')
-    d.text((60, 150), 'Chaque exercice : numero + nom + les 2 images animees (frame 1 et frame 2)', font=F_SUB, fill='#333333')
+    d.text((60, 150), 'Chaque exercice : numero + nom + les phases animees (2 images, ou 4 pour les curls Zottman)', font=F_SUB, fill='#333333')
     d.text((60, 190), 'Signalez simplement le NUMERO en cas de coquille. Les numeros sont figes : 1-331 inchanges, nouveaux couples a la suite.', font=F_SUB, fill='#333333')
     y = 260
     from collections import Counter
@@ -76,8 +76,8 @@ def main():
     for e in entrees:
         num = numeros[e['cle']]
         nom = e['noms'][0] if e['noms'] else e['identifiant']
-        f1, f2 = frames(EV / e['gif'])
-        buf.append((num, e, nom, f1, f2))
+        poses = frames(EV / e['gif'])
+        buf.append((num, e, nom, poses))
     # composition des pages
     idx = 0
     page_no = 1
@@ -89,7 +89,7 @@ def main():
         for s in range(PER_PAGE):
             if idx >= len(buf):
                 break
-            num, e, nom, f1, f2 = buf[idx]
+            num, e, nom, poses = buf[idx]
             idx += 1
             y0 = 40 + s * slot_h
             if e['surface'] != cur_surface:
@@ -99,19 +99,18 @@ def main():
             d.text((60, y0), titre, font=F_TITLE, fill='black')
             d.text((60, y0 + 44), f'{SURF_LABEL.get(e["surface"], e["surface"])} · {e["identifiant"]}',
                    font=F_SUB, fill='#666666')
-            # frames
-            im1 = fit(f1, (480, slot_h - 145))
-            im2 = fit(f2, (480, slot_h - 145))
-            gap = 40
-            tot = im1.width + im2.width + gap
-            x = (PAGE[0] - tot) // 2
-            y = y0 + 104
-            d.text((x, y - 26), 'frame 1', font=F_FOOT, fill='#999999')
-            d.text((x + im1.width + gap, y - 26), 'frame 2', font=F_FOOT, fill='#999999')
-            pg.paste(im1, (x, y))
-            pg.paste(im2, (x + im1.width + gap, y))
-            d.rectangle([x - 2, y - 2, x + im1.width + 2, y + im1.height + 2], outline='#cccccc')
-            d.rectangle([x + im1.width + gap - 2, y - 2, x + im1.width + gap + im2.width + 2, y + im2.height + 2], outline='#cccccc')
+            # Deux phases côte à côte ; Zottman : quatre phases, grille 2x2.
+            rows = 2 if len(poses) > 2 else 1
+            available = slot_h - 130
+            cell_h = available // rows
+            for i, pose in enumerate(poses):
+                pic = fit(pose, (480, cell_h - 28))
+                col, row = i % 2, i // 2
+                x = 90 + col * 550 + (480 - pic.width) // 2
+                y = y0 + 104 + row * cell_h
+                d.text((x, y - 24), f'phase {i + 1}', font=F_FOOT, fill='#999999')
+                pg.paste(pic, (x, y))
+                d.rectangle([x - 2, y - 2, x + pic.width + 2, y + pic.height + 2], outline='#cccccc')
         page_no += 1
         d.text((60, PAGE[1] - 50), f'JARVIS Fitness — revue 331 — page {page_no}/{total_pages}', font=F_FOOT, fill='#999999')
         pages.append(pg)

@@ -139,7 +139,7 @@
   },
   "bras-tendu-contre-le-mur|homme": {
    "gif": "media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
-   "sha256": "0cf727335e61934175f92724c743916e8ff13d8cdb5817c4ed352a36132d2fd2",
+   "sha256": "e195ea6f2c61d00b57f72e6128c1dfd83e95315f1b3cc2a47e8e4885f2ab97b0",
    "surface": "etirement"
   },
   "bras-tendu-derriere|homme": {
@@ -154,7 +154,7 @@
   },
   "bulgarian-split-squat-halteres|femme": {
    "gif": "media/refonte-photo/gif/femme/bulgarian-split-squat-halteres-femme.gif",
-   "sha256": "76ec865a3eb818794c4dcb8d4f61a1c2f7c64f522e92ead8463f84c69fffd3c7",
+   "sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
    "surface": "musculation"
   },
   "bulgarian-split-squat|homme": {
@@ -249,7 +249,7 @@
   },
   "crunch-a-la-poulie|homme": {
    "gif": "media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
-   "sha256": "2b5be5e924f07fbf554543b6023acd988a061a189054d1220493645d8163dd56",
+   "sha256": "f85fc4869a4a719466886eb8880b540bb20daf492b77d96ee6f5dae4a826e983",
    "surface": "musculation"
   },
   "crunch-sur-swiss-ball|homme": {
@@ -274,7 +274,7 @@
   },
   "curl-concentration|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-concentration-homme.gif",
-   "sha256": "b18b490f9567c8dd6933f0385259d6db464d965cc5aa16534171781dbcd33da8",
+   "sha256": "3825c9b3d9ff3cba1d08165860467d08d433c17a1afd9d577fdfa24a09a73755",
    "surface": "musculation"
   },
   "curl-haltere-supination-banc-scott-90|homme": {
@@ -304,12 +304,12 @@
   },
   "curl-marteau-assis|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-marteau-assis-homme.gif",
-   "sha256": "2b24a4da9f9d774eede7d4f4fa2cd09754d7e515a584622b3eb28439b70b6c9d",
+   "sha256": "dff2488caaa4caea0933c968f6c4279ade1411693a2e38bff4f3b2b9b7bd165e",
    "surface": "musculation"
   },
   "curl-marteau|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-marteau-homme.gif",
-   "sha256": "b3e93e1e1a7f9eb9069971fe6bf9527663992e03d7a3b91eb8b9ef24d189d0fa",
+   "sha256": "2de901b0e9f6bfb49de8d2f7695eb3a61c7552be2916ad43dc15b4e8edc7baaa",
    "surface": "musculation"
   },
   "curl-poulie-basse-supination|homme": {
@@ -339,27 +339,27 @@
   },
   "curl-scott-haltere-neutre|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
-   "sha256": "197187199037767a6d42065141b53e3a51b6e2fa83f78585168bb08b5addebf8",
+   "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
    "surface": "musculation"
   },
   "curl-scott-haltere-prise-neutre|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
-   "sha256": "7cdb8ca673040b71d58e7cfd064761938c4671d5340147c85a110f443e5014f7",
+   "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
    "surface": "musculation"
   },
   "curl-zottman-assis|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-zottman-assis-homme.gif",
-   "sha256": "088734f0b07937f1642c5f83896ee330d84fdf2f428dbcfe0037fc964b6f27aa",
+   "sha256": "902ccda003422bea77276c4f9d826ddf6123422b3070d7f62844ec61155a9875",
    "surface": "musculation"
   },
   "curl-zottman-un-bras-banc-scott|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
-   "sha256": "fa3e504b6d0114181fdefc9fab0cb5189400f8b7b9a851187e0376c54ff868fa",
+   "sha256": "41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704",
    "surface": "musculation"
   },
   "curl-zottman|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-zottman-homme.gif",
-   "sha256": "f7b27078da26260e96c56dacfa39a81f871a4a8bf0ce43750de31097e53f0a6e",
+   "sha256": "f3af21c2eec127f0c619cd2d95e9fe09fb1fdf3d5b4641776f51c5466eafbf01",
    "surface": "musculation"
   },
   "dead-bug-avec-rotation|femme": {
@@ -454,7 +454,7 @@
   },
   "developpe-halteres-decline-prise-neutre|homme": {
    "gif": "media/refonte-photo/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
-   "sha256": "293ac99c80e4bcf55e6b96844f56d3904c0b841bcf9f9c7123b75316c3ee85a3",
+   "sha256": "3d037d6be0f1f0d33babc249194bbc56bb4b66474954b4ed3ea97fdf04c6d718",
    "surface": "musculation"
   },
   "developpe-halteres-incline-45-prise-neutre|homme": {
@@ -599,12 +599,12 @@
   },
   "elevations-laterales-coude-a-90|homme": {
    "gif": "media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
-   "sha256": "f32bca1d8f9c2eb217a062cc7e5d19be7d21427a4b084793c6c0e38f250ccdae",
+   "sha256": "4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4",
    "surface": "musculation"
   },
   "elevations-laterales-halteres-myo-reps|femme": {
    "gif": "media/refonte-photo/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
-   "sha256": "89487b94baa87c1c8a29d28d87e10dffccf1b658b7d6dcad019a149a9e32940b",
+   "sha256": "3cab00f65a47df9cf4455a71060c3e623cb28f9140e8d9c55fb87aa0a502f58d",
    "surface": "musculation"
   },
   "elevations-laterales-halteres|homme": {
@@ -624,7 +624,7 @@
   },
   "elevations-laterales-lean-away|homme": {
    "gif": "media/refonte-photo/gif/homme/elevations-laterales-lean-away-homme.gif",
-   "sha256": "c2c18f416e8d2e2bac6450b7779475d0774b1a8cf332a1e2ffe72bf652b75fa7",
+   "sha256": "e89971ee6ba059fabcd7f7a3dd7f37ee222876d30bab55180109cc23a01abeaf",
    "surface": "musculation"
   },
   "elevations-laterales|homme": {
@@ -659,7 +659,7 @@
   },
   "etirement-dans-l-encadrement-de-porte|homme": {
    "gif": "media/refonte-photo/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
-   "sha256": "214150ca9201891bf0839d048b53ff580ee6cac3cb6cf3cd5cba0d53c4998a71",
+   "sha256": "30a57d2b483b4e96d7549edea58794ca84eaf0c1cdaf7c041206aa0c20af4ff2",
    "surface": "etirement"
   },
   "etirement-des-extenseurs|homme": {
@@ -919,7 +919,7 @@
   },
   "jackknife-sur-swiss-ball|homme": {
    "gif": "media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
-   "sha256": "e066ca4c6da13a2b3afada04d4636f565484e62cc985042d1fae8acc49573e63",
+   "sha256": "5c2fdfab8ac788be1f5b0af4bd22b995e86262050656be6149062ac0c5d88170",
    "surface": "musculation"
   },
   "jumping-jacks|homme": {
@@ -1099,7 +1099,7 @@
   },
   "mountain-climbers|homme": {
    "gif": "media/refonte-photo/gif/homme/mountain-climbers-homme.gif",
-   "sha256": "aa789a750ed2c2c5eb911776b44629b08b31a9a189c5a708704d8284a768340c",
+   "sha256": "b0bbbea5a96ea72959f86fe82cfac96f9b13968d51100ed730aeea28b9c79462",
    "surface": "musculation"
   },
   "nage-douce-respiration|femme": {
@@ -1144,12 +1144,12 @@
   },
   "pallof-press-a-l-elastique|femme": {
    "gif": "media/refonte-photo/gif/femme/pallof-press-a-l-elastique-femme.gif",
-   "sha256": "7de6cc31c5c5301e2d03228ad9d552fafcdf65b0d5c7d5741b29c01e4938b0a9",
+   "sha256": "31dbb90a17c19788e8ef4b6d7a21588b11da166ef3b1eedd4cc8322f30b066b4",
    "surface": "musculation"
   },
   "pallof-press-a-la-poulie|femme": {
    "gif": "media/refonte-photo/gif/femme/pallof-press-a-la-poulie-femme.gif",
-   "sha256": "feabd4e608d48f3f7c3ac6fd3937b353e875329f53844a4e36fe8ca4bfea895c",
+   "sha256": "5fb6a2341be9c03f3eae88e9f6c77dc5322522dce02f264b6462d722fe112c44",
    "surface": "musculation"
   },
   "patineurs|homme": {
@@ -1174,12 +1174,12 @@
   },
   "pompes-au-bord-effort|femme": {
    "gif": "media/refonte-photo/gif/femme/pompes-au-bord-effort-femme.gif",
-   "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+   "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
    "surface": "piscine-protocole"
   },
   "pompes-au-bord|femme": {
    "gif": "media/refonte-photo/gif/femme/pompes-au-bord-femme.gif",
-   "sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+   "sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
    "surface": "piscine"
   },
   "pompes-au-mur|homme": {
@@ -1534,7 +1534,7 @@
   },
   "step-up-haut|homme": {
    "gif": "media/refonte-photo/gif/homme/step-up-haut-homme.gif",
-   "sha256": "55312a3f227db7a47c7f4ee9b9d9e30bc6791f1fce82e30fb06a4c397dee66dc",
+   "sha256": "508eef3f410ac239b8aaabbf84d784351c8fc8409b6603967951c4b28e2eb8ba",
    "surface": "musculation"
   },
   "step-up-sur-banc-hauteur-du-genou|femme": {
@@ -1629,7 +1629,7 @@
   },
   "tractions-supination-chin-up|homme": {
    "gif": "media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
-   "sha256": "d9bfa9bd06ca082cf304ececf68bab8bd5b6b874d0385fb1385b6bf27d8f9736",
+   "sha256": "4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10",
    "surface": "musculation"
   },
   "transition|femme": {
@@ -1899,7 +1899,7 @@
   },
   "mobilite-hanches-chevilles|homme": {
    "gif": "media/refonte-photo/gif/homme/mobilite-hanches-chevilles-homme.gif",
-   "sha256": "134626c223afbab34250bda7a904164bcd8c5766062d849ea3f2b3e365efdd65",
+   "sha256": "f2bab6bc3f793ce9c0113a8d56d5dfebaff11cb41a277d7795f1080898668d20",
    "surface": "piscine"
   },
   "sprint-nager-a-fond|homme": {

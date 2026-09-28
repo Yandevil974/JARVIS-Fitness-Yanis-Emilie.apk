@@ -1,3 +1,21 @@
+# ÉTAT PRIORITAIRE — 28/09/2026 : 26/26 CORRECTIONS VALIDÉES ET INTÉGRÉES AUX MÉDIAS
+
+Branche : `arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap`.
+Après validation spécifique du n°80, l’utilisateur répond « oui validé » à la demande de validation des 25 autres propositions. Accord enregistré et intégration effectuée, sans recoloration ni nouvelle génération.
+- n°80 : GIF approuvé inchangé, SHA e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b.
+- n°26,44,45 : dernières révisions lot69. Autres : propositions référencées dans le registre, SHA contrôlés depuis c685298.
+- 26/26 approuvés ; zéro point de ce lot en attente. `aRefaire` mis à jour ; autres historiques conservés.
+- 389 SHA de livrés contrôlés dans le miroir `.cache/integration80`. Manifeste/map, PDF principal (131 pages) et index (389 vignettes) actualisés. Numérotation inchangée. Le PDF montre désormais les 4 phases des Zottman 46/47/48.
+- État, plan, prescriptions et fonctionnalités de l’app non modifiés. APK non reconstruit : l’application installée ne contient pas encore ces corrections.
+- Le checkout ne contient que les 26 GIF corrigés ; autres sources et livrés disponibles à c685298, reconstruits dans le miroir pour vérification. Ne pas lancer une construction directement depuis cette arborescence partielle.
+
+**Prochaine étape : étape 3 — réglage du niveau cardio/piscine pour les deux profils.** Avant de commencer, obtenir le choix du vert : conserver l’actuel (154,205,50), uniformiser au n°260 (~117,189,18), ou décider plus tard. La validation des images n’est PAS une réponse à ce choix. Si uniformisation demandée, contrôler notamment 19/44/45/48/80/85 ; la portée globale reste à préciser.
+Avant construction d’application : rappeler les ajouts metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie et confirmer le périmètre. Signature avec clé utilisateur uniquement, IA conversationnelle en dernier.
+Rapport : `evolution/media/refonte-photo/verification/INTEGRATION-25-2026-09-28.json`.
+
+---
+## Historique (anciens compteurs et refus remplacés par l’accord ci-dessus)
+
 # ÉTAT PRIORITAIRE — 28/09/2026 : n°80 VALIDÉ ET INTÉGRÉ AUX MÉDIAS
 
 Branche active : `arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap`.

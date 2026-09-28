@@ -1,5 +1,99 @@
 {
- "aRefaire": [
+ "aRefaire": [],
+ "verifieesEtAcceptees": [
+  "adduction-de-la-hanche-debout",
+  "allonge-sur-le-cote",
+  "bras-tendu-contre-la-poitrine",
+  "bras-tendu-contre-le-mur",
+  "bras-tendu-derriere",
+  "bras-tendu-devant-main-tiree",
+  "cobra-doux",
+  "coude-au-dessus-de-la-tete",
+  "etirement-contre-le-mur",
+  "etirement-dans-l-encadrement-de-porte",
+  "etirement-des-extenseurs",
+  "etirement-des-flechisseurs",
+  "etirement-du-cobra",
+  "etirement-du-flechisseur-de-hanche-chevalier",
+  "etirement-du-piriforme-assis",
+  "flexion-avant-jambes-tendues",
+  "grenouille-plantes-jointes",
+  "mains-croisees-derriere-le-dos",
+  "mollet-en-escalier",
+  "mountain-climbers",
+  "pigeon-assis",
+  "position-de-l-enfant",
+  "position-de-l-enfant-balasana",
+  "respiration-diaphragmatique-allongee",
+  "suspension-a-la-barre",
+  "talon-vers-la-fesse-debout",
+  "torsion-allongee",
+  "torsion-allongee-genoux",
+  "squats-doux|homme",
+  "nage-douce|femme",
+  "nage-douce-respiration|femme",
+  "torsion-allongee|homme",
+  "souleve-de-terre|homme",
+  "transition|femme",
+  "rowing-assis-etirement|homme",
+  "battements-au-bord|homme",
+  "mobilite-hanches-chevilles|homme",
+  "sprint-nager-a-fond|homme",
+  "elliptique-mise-en-route|homme",
+  "talons-fesses|homme",
+  "elliptique-fractionne|homme"
+ ],
+ "historiqueRelecture26": {
+  "date": "2026-09-26",
+  "lot": 50,
+  "torsion-allongee|homme": "REFUSE a la relecture (lot04 : torsion ASSISE au lieu de « sur le dos, genoux plies, basculez les jambes d un cote, regardez de l autre ») -> refait lot50 : sur le dos, genoux bascules cote oppose a la camera, tete tournee vers la camera, vue de cote surelevee ; ACCEPTE",
+  "souleve-de-terre|homme": "REFUSE a la relecture (lot01 : ordre inverse gauche=verrouillage, angle face puis 3/4, vert sur quadriceps pour cible ischios) -> refait lot50 : profil strict, gauche=barre au sol hanches hautes, droite=verrouillage, vert ischios+fessiers aux deux cases ; ACCEPTE",
+  "transition|femme": "REFUSE a la relecture (lot03 : case 1 de face, case 2 de profil = GIF qui saute) -> refait lot50 : profil aux deux cases pres de l elliptique, boire puis marcher (texte app : boire, se secher, rejoindre le bassin sans trainer) ; ACCEPTE",
+  "rowing-assis-etirement|homme": "cases INVERSEES a la relecture (gauche=poignee au ventre=fin, droite=etirement=debut) -> cases echangees par PIL (planche lot50, aucune generation) ; ACCEPTE"
+ },
+ "historiqueLot56": [
+  {
+   "cle": "elliptique-fractionne|homme",
+   "lot": 55,
+   "essai": 7,
+   "motif": "Essai4 référence mise-en-route : même phase + main libre derrière dos ; essai5 vue 3/4 frontale : même jambe ; essai6 guide rose superposé puis essai7 ancienne pose effacée et guide peint : toujours même jambe proche basse. Tous refusés.",
+   "prescription": "Elliptique — fractionne : cadence haute, pousser fort sur les jambes, tirer franchement sur les bras, posture tenue",
+   "reglesPrompt": [
+    "Essai8 : générer une NOUVELLE phase seule depuis référence maître + schéma indépendant de machine, sans photo de pose précédente (ancrage trop fort). Vue de FACE STRICTE et genou côté gauche image haut, autre jambe tendue basse.",
+    "Puis créer la phase opposée avec le même modèle de machine ; contrôler décor et machine avant assemblage, pas de miroir global.",
+    "Deux mains sur poignées mobiles, pieds à plat sur pédales opposées, vert cuisses fessiers mollets aux deux cases."
+   ]
+  }
+ ],
+ "regleStyleVerteUtilisateur2026_09_27": {
+  "demande": "Le vert de tous les GIFs doit être bien visible et suivre la forme du muscle, pas être une plaque colorée.",
+  "statut": "critere global enregistré; périmètre exact à confirmer (ensemble des 331 GIFs livrés ou GIFs du PDF de corrections).",
+  "regle": "Présence du vert mesurée sur le corps hors plantes; vérifier contours anatomiques, texture visible et absence d’aplat géométrique.",
+  "aucun_livre_modifie": true
+ },
+ "historiqueValidation80_2026_09_28": {
+  "entrees_anterieures": [
+   {
+    "cle": "ecartes-halteres|homme",
+    "numero_signale": 80,
+    "lot": 67,
+    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
+    "statut": "propose_attente_accord",
+    "reglesPrompt": [
+     "Lot68 tour5 : réserve taches TRAITÉE — passe luminance dans le plastron, 0 px sombre restant sous seuil (traces légères possibles). Restent : dérive visage fin, échelle poids, flexion/trajectoire.",
+     "27/09 retour utilisateur : En phase 2, l’orientation des mains doit être identique à la phase 1 ; corriger la prise. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition.",
+     "27/09 précision utilisateur : la position des mains au départ est correcte ; ne pas les tourner en position finale, conserver exactement la même orientation des poignets/prise. Lot69 refusé par l’utilisateur ; révision phase finale lot70 non validée, à lire avant d’avancer.",
+     "27/09 précision 2 utilisateur : écarté incliné ; remonter et rapprocher les bras comme juste avant de taper dans ses mains, sans tourner bras ni mains. Lot70 refusé ; nouvelle ébauche diptyque lot71 non validée.",
+     "Référence visuelle fournie 27/09 : départ bras très ouverts ; fin bras presque tendus remontés et rapprochés pour réunir les mains/haltères au-dessus du torse comme un clap. Même orientation de prise, aucun twist/rotation des bras ou des mains. Conserver le banc incliné prescrit. Ébauche lot73 en attente de revue.",
+     "27/09 retour explicite : lot73 refusé, la main tourne encore quand le bras monte. La référence utilisateur impose bras presque tendus réunis au-dessus du torse comme pour taper dans les mains, sans tourner bras ni mains. Ne pas re-présenter lot73/lot74 comme correction."
+    ],
+    "validationUtilisateurRequise": true
+   }
+  ],
+  "statut": "valide_integre",
+  "sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b"
+ },
+ "historiqueValidation25_2026_09_28": [
   {
    "cle": "bulgarian-split-squat-halteres|femme",
    "numero_signale": 19,
@@ -279,97 +373,35 @@
    "validationUtilisateurRequise": true
   }
  ],
- "verifieesEtAcceptees": [
-  "adduction-de-la-hanche-debout",
-  "allonge-sur-le-cote",
-  "bras-tendu-contre-la-poitrine",
-  "bras-tendu-contre-le-mur",
-  "bras-tendu-derriere",
-  "bras-tendu-devant-main-tiree",
-  "cobra-doux",
-  "coude-au-dessus-de-la-tete",
-  "etirement-contre-le-mur",
-  "etirement-dans-l-encadrement-de-porte",
-  "etirement-des-extenseurs",
-  "etirement-des-flechisseurs",
-  "etirement-du-cobra",
-  "etirement-du-flechisseur-de-hanche-chevalier",
-  "etirement-du-piriforme-assis",
-  "flexion-avant-jambes-tendues",
-  "grenouille-plantes-jointes",
-  "mains-croisees-derriere-le-dos",
-  "mollet-en-escalier",
-  "mountain-climbers",
-  "pigeon-assis",
-  "position-de-l-enfant",
-  "position-de-l-enfant-balasana",
-  "respiration-diaphragmatique-allongee",
-  "suspension-a-la-barre",
-  "talon-vers-la-fesse-debout",
-  "torsion-allongee",
-  "torsion-allongee-genoux",
-  "squats-doux|homme",
-  "nage-douce|femme",
-  "nage-douce-respiration|femme",
-  "torsion-allongee|homme",
-  "souleve-de-terre|homme",
-  "transition|femme",
-  "rowing-assis-etirement|homme",
-  "battements-au-bord|homme",
-  "mobilite-hanches-chevilles|homme",
-  "sprint-nager-a-fond|homme",
-  "elliptique-mise-en-route|homme",
-  "talons-fesses|homme",
-  "elliptique-fractionne|homme"
- ],
- "historiqueRelecture26": {
-  "date": "2026-09-26",
-  "lot": 50,
-  "torsion-allongee|homme": "REFUSE a la relecture (lot04 : torsion ASSISE au lieu de « sur le dos, genoux plies, basculez les jambes d un cote, regardez de l autre ») -> refait lot50 : sur le dos, genoux bascules cote oppose a la camera, tete tournee vers la camera, vue de cote surelevee ; ACCEPTE",
-  "souleve-de-terre|homme": "REFUSE a la relecture (lot01 : ordre inverse gauche=verrouillage, angle face puis 3/4, vert sur quadriceps pour cible ischios) -> refait lot50 : profil strict, gauche=barre au sol hanches hautes, droite=verrouillage, vert ischios+fessiers aux deux cases ; ACCEPTE",
-  "transition|femme": "REFUSE a la relecture (lot03 : case 1 de face, case 2 de profil = GIF qui saute) -> refait lot50 : profil aux deux cases pres de l elliptique, boire puis marcher (texte app : boire, se secher, rejoindre le bassin sans trainer) ; ACCEPTE",
-  "rowing-assis-etirement|homme": "cases INVERSEES a la relecture (gauche=poignee au ventre=fin, droite=etirement=debut) -> cases echangees par PIL (planche lot50, aucune generation) ; ACCEPTE"
- },
- "historiqueLot56": [
-  {
-   "cle": "elliptique-fractionne|homme",
-   "lot": 55,
-   "essai": 7,
-   "motif": "Essai4 référence mise-en-route : même phase + main libre derrière dos ; essai5 vue 3/4 frontale : même jambe ; essai6 guide rose superposé puis essai7 ancienne pose effacée et guide peint : toujours même jambe proche basse. Tous refusés.",
-   "prescription": "Elliptique — fractionne : cadence haute, pousser fort sur les jambes, tirer franchement sur les bras, posture tenue",
-   "reglesPrompt": [
-    "Essai8 : générer une NOUVELLE phase seule depuis référence maître + schéma indépendant de machine, sans photo de pose précédente (ancrage trop fort). Vue de FACE STRICTE et genou côté gauche image haut, autre jambe tendue basse.",
-    "Puis créer la phase opposée avec le même modèle de machine ; contrôler décor et machine avant assemblage, pas de miroir global.",
-    "Deux mains sur poignées mobiles, pieds à plat sur pédales opposées, vert cuisses fessiers mollets aux deux cases."
-   ]
-  }
- ],
- "regleStyleVerteUtilisateur2026_09_27": {
-  "demande": "Le vert de tous les GIFs doit être bien visible et suivre la forme du muscle, pas être une plaque colorée.",
-  "statut": "critere global enregistré; périmètre exact à confirmer (ensemble des 331 GIFs livrés ou GIFs du PDF de corrections).",
-  "regle": "Présence du vert mesurée sur le corps hors plantes; vérifier contours anatomiques, texture visible et absence d’aplat géométrique.",
-  "aucun_livre_modifie": true
- },
- "historiqueValidation80_2026_09_28": {
-  "entrees_anterieures": [
-   {
-    "cle": "ecartes-halteres|homme",
-    "numero_signale": 80,
-    "lot": 67,
-    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
-    "statut": "propose_attente_accord",
-    "reglesPrompt": [
-     "Lot68 tour5 : réserve taches TRAITÉE — passe luminance dans le plastron, 0 px sombre restant sous seuil (traces légères possibles). Restent : dérive visage fin, échelle poids, flexion/trajectoire.",
-     "27/09 retour utilisateur : En phase 2, l’orientation des mains doit être identique à la phase 1 ; corriger la prise. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition.",
-     "27/09 précision utilisateur : la position des mains au départ est correcte ; ne pas les tourner en position finale, conserver exactement la même orientation des poignets/prise. Lot69 refusé par l’utilisateur ; révision phase finale lot70 non validée, à lire avant d’avancer.",
-     "27/09 précision 2 utilisateur : écarté incliné ; remonter et rapprocher les bras comme juste avant de taper dans ses mains, sans tourner bras ni mains. Lot70 refusé ; nouvelle ébauche diptyque lot71 non validée.",
-     "Référence visuelle fournie 27/09 : départ bras très ouverts ; fin bras presque tendus remontés et rapprochés pour réunir les mains/haltères au-dessus du torse comme un clap. Même orientation de prise, aucun twist/rotation des bras ou des mains. Conserver le banc incliné prescrit. Ébauche lot73 en attente de revue.",
-     "27/09 retour explicite : lot73 refusé, la main tourne encore quand le bras monte. La référence utilisateur impose bras presque tendus réunis au-dessus du torse comme pour taper dans les mains, sans tourner bras ni mains. Ne pas re-présenter lot73/lot74 comme correction."
-    ],
-    "validationUtilisateurRequise": true
-   }
+ "validationUtilisateur2026_09_28": {
+  "numeros": [
+   19,
+   26,
+   31,
+   37,
+   38,
+   44,
+   45,
+   46,
+   47,
+   48,
+   64,
+   85,
+   87,
+   90,
+   126,
+   148,
+   149,
+   150,
+   194,
+   204,
+   222,
+   239,
+   265,
+   298,
+   380
   ],
   "statut": "valide_integre",
-  "sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b"
+  "accord": "oui validé"
  }
 }

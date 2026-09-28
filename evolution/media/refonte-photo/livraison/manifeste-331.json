@@ -486,13 +486,17 @@
     "Bras tendu contre le mur"
    ],
    "gif": "media/refonte-photo/gif/homme/bras-tendu-contre-le-mur-homme.gif",
-   "gif_sha256": "0cf727335e61934175f92724c743916e8ff13d8cdb5817c4ed352a36132d2fd2",
+   "gif_sha256": "e195ea6f2c61d00b57f72e6128c1dfd83e95315f1b3cc2a47e8e4885f2ab97b0",
    "gif_frames": 2,
    "gif_size": [
-    389,
+    390,
     440
    ],
-   "planche": "planches/lot04/bras-tendu-contre-le-mur.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/bras-tendu-contre-le-mur-homme.gif"
+   }
   },
   {
    "cle": "bras-tendu-derriere|homme",
@@ -537,13 +541,17 @@
     "Bulgarian split squat haltères"
    ],
    "gif": "media/refonte-photo/gif/femme/bulgarian-split-squat-halteres-femme.gif",
-   "gif_sha256": "76ec865a3eb818794c4dcb8d4f61a1c2f7c64f522e92ead8463f84c69fffd3c7",
+   "gif_sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
    "gif_frames": 2,
    "gif_size": [
-    390,
+    381,
     440
    ],
-   "planche": "planches/lot27/bulgarian-split-squat-halteres.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/femme/bulgarian-split-squat-halteres-femme.gif"
+   }
   },
   {
    "cle": "bulgarian-split-squat|homme",
@@ -876,13 +884,17 @@
     "Crunch à la poulie"
    ],
    "gif": "media/refonte-photo/gif/homme/crunch-a-la-poulie-homme.gif",
-   "gif_sha256": "2b5be5e924f07fbf554543b6023acd988a061a189054d1220493645d8163dd56",
+   "gif_sha256": "f85fc4869a4a719466886eb8880b540bb20daf492b77d96ee6f5dae4a826e983",
    "gif_frames": 2,
    "gif_size": [
-    339,
+    788,
     440
    ],
-   "planche": "planches/lot23/crunch-a-la-poulie.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/crunch-a-la-poulie-homme.gif"
+   }
   },
   {
    "cle": "crunch-sur-swiss-ball|homme",
@@ -961,13 +973,17 @@
     "Curl concentration"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-concentration-homme.gif",
-   "gif_sha256": "b18b490f9567c8dd6933f0385259d6db464d965cc5aa16534171781dbcd33da8",
+   "gif_sha256": "3825c9b3d9ff3cba1d08165860467d08d433c17a1afd9d577fdfa24a09a73755",
    "gif_frames": 2,
    "gif_size": [
-    385,
+    262,
     440
    ],
-   "planche": "planches/lot22/curl-concentration.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot62/gif/homme/curl-concentration-homme.gif"
+   }
   },
   {
    "cle": "curl-haltere-supination-banc-scott-90|homme",
@@ -1063,13 +1079,17 @@
     "Curl marteau assis"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-marteau-assis-homme.gif",
-   "gif_sha256": "2b24a4da9f9d774eede7d4f4fa2cd09754d7e515a584622b3eb28439b70b6c9d",
+   "gif_sha256": "dff2488caaa4caea0933c968f6c4279ade1411693a2e38bff4f3b2b9b7bd165e",
    "gif_frames": 2,
    "gif_size": [
-    390,
+    396,
     440
    ],
-   "planche": "planches/lot11/curl-marteau-assis.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/curl-marteau-assis-homme.gif"
+   }
   },
   {
    "cle": "curl-marteau|homme",
@@ -1080,13 +1100,17 @@
     "Curl marteau"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-marteau-homme.gif",
-   "gif_sha256": "b3e93e1e1a7f9eb9069971fe6bf9527663992e03d7a3b91eb8b9ef24d189d0fa",
+   "gif_sha256": "2de901b0e9f6bfb49de8d2f7695eb3a61c7552be2916ad43dc15b4e8edc7baaa",
    "gif_frames": 2,
    "gif_size": [
-    390,
+    454,
     440
    ],
-   "planche": "planches/lot26/curl-marteau.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/curl-marteau-homme.gif"
+   }
   },
   {
    "cle": "curl-poulie-basse-supination|homme",
@@ -1182,13 +1206,17 @@
     "Curl Scott haltère neutre"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
-   "gif_sha256": "197187199037767a6d42065141b53e3a51b6e2fa83f78585168bb08b5addebf8",
+   "gif_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
    "gif_frames": 2,
    "gif_size": [
-    392,
+    259,
     440
    ],
-   "planche": "planches/lot33/curl-scott-haltere-neutre.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-neutre-homme.gif"
+   }
   },
   {
    "cle": "curl-scott-haltere-prise-neutre|homme",
@@ -1199,13 +1227,17 @@
     "Curl Scott haltère, prise neutre"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
-   "gif_sha256": "7cdb8ca673040b71d58e7cfd064761938c4671d5340147c85a110f443e5014f7",
+   "gif_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
    "gif_frames": 2,
    "gif_size": [
-    386,
+    259,
     440
    ],
-   "planche": "planches/lot25/curl-scott-haltere-prise-neutre.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-prise-neutre-homme.gif"
+   }
   },
   {
    "cle": "curl-zottman-assis|homme",
@@ -1216,13 +1248,17 @@
     "Curl Zottman assis"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-zottman-assis-homme.gif",
-   "gif_sha256": "088734f0b07937f1642c5f83896ee330d84fdf2f428dbcfe0037fc964b6f27aa",
-   "gif_frames": 2,
+   "gif_sha256": "902ccda003422bea77276c4f9d826ddf6123422b3070d7f62844ec61155a9875",
+   "gif_frames": 4,
    "gif_size": [
-    390,
+    392,
     440
    ],
-   "planche": "planches/lot11/curl-zottman-assis.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot66/gif/homme/curl-zottman-assis-homme.gif"
+   }
   },
   {
    "cle": "curl-zottman-un-bras-banc-scott|homme",
@@ -1233,13 +1269,17 @@
     "Curl Zottman un bras, banc Scott"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif",
-   "gif_sha256": "fa3e504b6d0114181fdefc9fab0cb5189400f8b7b9a851187e0376c54ff868fa",
-   "gif_frames": 2,
+   "gif_sha256": "41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704",
+   "gif_frames": 4,
    "gif_size": [
-    392,
+    264,
     440
    ],
-   "planche": "planches/lot16/curl-zottman-un-bras-banc-scott.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot64/gif/homme/curl-zottman-un-bras-banc-scott-homme.gif"
+   }
   },
   {
    "cle": "curl-zottman|homme",
@@ -1250,13 +1290,17 @@
     "Curl Zottman"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-zottman-homme.gif",
-   "gif_sha256": "f7b27078da26260e96c56dacfa39a81f871a4a8bf0ce43750de31097e53f0a6e",
-   "gif_frames": 2,
+   "gif_sha256": "f3af21c2eec127f0c619cd2d95e9fe09fb1fdf3d5b4641776f51c5466eafbf01",
+   "gif_frames": 4,
    "gif_size": [
-    390,
+    392,
     440
    ],
-   "planche": "planches/lot26/curl-zottman.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot65/gif/homme/curl-zottman-homme.gif"
+   }
   },
   {
    "cle": "dead-bug-avec-rotation|femme",
@@ -1581,13 +1625,17 @@
     "Développé haltères décliné, prise neutre"
    ],
    "gif": "media/refonte-photo/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif",
-   "gif_sha256": "293ac99c80e4bcf55e6b96844f56d3904c0b841bcf9f9c7123b75316c3ee85a3",
+   "gif_sha256": "3d037d6be0f1f0d33babc249194bbc56bb4b66474954b4ed3ea97fdf04c6d718",
    "gif_frames": 2,
    "gif_size": [
-    392,
+    362,
     440
    ],
-   "planche": "planches/lot37/developpe-halteres-decline-prise-neutre.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot57/gif/homme/developpe-halteres-decline-prise-neutre-homme.gif"
+   }
   },
   {
    "cle": "developpe-halteres-incline-45-prise-neutre|homme",
@@ -2087,13 +2135,17 @@
     "Élévations latérales coude à 90°"
    ],
    "gif": "media/refonte-photo/gif/homme/elevations-laterales-coude-a-90-homme.gif",
-   "gif_sha256": "f32bca1d8f9c2eb217a062cc7e5d19be7d21427a4b084793c6c0e38f250ccdae",
+   "gif_sha256": "4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4",
    "gif_frames": 2,
    "gif_size": [
-    262,
+    788,
     440
    ],
-   "planche": "planches/lot30/elevations-laterales-coude-a-90.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/elevations-laterales-coude-a-90-homme.gif"
+   }
   },
   {
    "cle": "elevations-laterales-halteres-myo-reps|femme",
@@ -2104,13 +2156,17 @@
     "Élévations latérales haltères — myo-reps"
    ],
    "gif": "media/refonte-photo/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif",
-   "gif_sha256": "89487b94baa87c1c8a29d28d87e10dffccf1b658b7d6dcad019a149a9e32940b",
+   "gif_sha256": "3cab00f65a47df9cf4455a71060c3e623cb28f9140e8d9c55fb87aa0a502f58d",
    "gif_frames": 2,
    "gif_size": [
-    392,
+    387,
     440
    ],
-   "planche": "planches/lot31/elevations-laterales-halteres-myo-reps.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot60/gif/femme/elevations-laterales-halteres-myo-reps-femme.gif"
+   }
   },
   {
    "cle": "elevations-laterales-halteres|homme",
@@ -2174,13 +2230,17 @@
     "Élévations latérales lean away"
    ],
    "gif": "media/refonte-photo/gif/homme/elevations-laterales-lean-away-homme.gif",
-   "gif_sha256": "c2c18f416e8d2e2bac6450b7779475d0774b1a8cf332a1e2ffe72bf652b75fa7",
+   "gif_sha256": "e89971ee6ba059fabcd7f7a3dd7f37ee222876d30bab55180109cc23a01abeaf",
    "gif_frames": 2,
    "gif_size": [
-    376,
+    394,
     440
    ],
-   "planche": "planches/lot13/elevations-laterales-lean-away.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/elevations-laterales-lean-away-homme.gif"
+   }
   },
   {
    "cle": "elevations-laterales|homme",
@@ -2293,13 +2353,17 @@
     "Étirement dans l'encadrement de porte"
    ],
    "gif": "media/refonte-photo/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif",
-   "gif_sha256": "214150ca9201891bf0839d048b53ff580ee6cac3cb6cf3cd5cba0d53c4998a71",
+   "gif_sha256": "30a57d2b483b4e96d7549edea58794ca84eaf0c1cdaf7c041206aa0c20af4ff2",
    "gif_frames": 2,
    "gif_size": [
-    369,
+    180,
     440
    ],
-   "planche": "planches/lot06/etirement-dans-l-encadrement-de-porte.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot60/gif/homme/etirement-dans-l-encadrement-de-porte-homme.gif"
+   }
   },
   {
    "cle": "etirement-des-extenseurs|homme",
@@ -3194,13 +3258,17 @@
     "Jackknife sur swiss ball"
    ],
    "gif": "media/refonte-photo/gif/homme/jackknife-sur-swiss-ball-homme.gif",
-   "gif_sha256": "e066ca4c6da13a2b3afada04d4636f565484e62cc985042d1fae8acc49573e63",
+   "gif_sha256": "5c2fdfab8ac788be1f5b0af4bd22b995e86262050656be6149062ac0c5d88170",
    "gif_frames": 2,
    "gif_size": [
-    385,
+    608,
     440
    ],
-   "planche": "planches/lot15/jackknife-sur-swiss-ball.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot61/gif/homme/jackknife-sur-swiss-ball-homme.gif"
+   }
   },
   {
    "cle": "jumping-jacks|homme",
@@ -3814,13 +3882,17 @@
     "Mountain climbers"
    ],
    "gif": "media/refonte-photo/gif/homme/mountain-climbers-homme.gif",
-   "gif_sha256": "aa789a750ed2c2c5eb911776b44629b08b31a9a189c5a708704d8284a768340c",
+   "gif_sha256": "b0bbbea5a96ea72959f86fe82cfac96f9b13968d51100ed730aeea28b9c79462",
    "gif_frames": 2,
    "gif_size": [
-    335,
+    788,
     440
    ],
-   "planche": "planches/lot31/mountain-climbers.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot63/gif/homme/mountain-climbers-homme.gif"
+   }
   },
   {
    "cle": "nage-douce-respiration|femme",
@@ -4024,13 +4096,17 @@
     "Pallof press à l'élastique"
    ],
    "gif": "media/refonte-photo/gif/femme/pallof-press-a-l-elastique-femme.gif",
-   "gif_sha256": "7de6cc31c5c5301e2d03228ad9d552fafcdf65b0d5c7d5741b29c01e4938b0a9",
+   "gif_sha256": "31dbb90a17c19788e8ef4b6d7a21588b11da166ef3b1eedd4cc8322f30b066b4",
    "gif_frames": 2,
    "gif_size": [
-    344,
+    396,
     440
    ],
-   "planche": "planches/lot29/pallof-press-a-l-elastique.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-l-elastique-femme.gif"
+   }
   },
   {
    "cle": "pallof-press-a-la-poulie|femme",
@@ -4041,13 +4117,17 @@
     "Pallof press à la poulie"
    ],
    "gif": "media/refonte-photo/gif/femme/pallof-press-a-la-poulie-femme.gif",
-   "gif_sha256": "feabd4e608d48f3f7c3ac6fd3937b353e875329f53844a4e36fe8ca4bfea895c",
+   "gif_sha256": "5fb6a2341be9c03f3eae88e9f6c77dc5322522dce02f264b6462d722fe112c44",
    "gif_frames": 2,
    "gif_size": [
-    363,
+    396,
     440
    ],
-   "planche": "planches/lot33/pallof-press-a-la-poulie.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot58/gif/femme/pallof-press-a-la-poulie-femme.gif"
+   }
   },
   {
    "cle": "patineurs|homme",
@@ -4135,13 +4215,17 @@
     "Pompes au bord — EFFORT"
    ],
    "gif": "media/refonte-photo/gif/femme/pompes-au-bord-effort-femme.gif",
-   "gif_sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+   "gif_sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
    "gif_frames": 2,
    "gif_size": [
-    439,
+    401,
     440
    ],
-   "planche": null
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-effort-femme.gif"
+   }
   },
   {
    "cle": "pompes-au-bord|femme",
@@ -4152,13 +4236,17 @@
     "Pompes au bord"
    ],
    "gif": "media/refonte-photo/gif/femme/pompes-au-bord-femme.gif",
-   "gif_sha256": "ea5dc40dc354a8ed919a5e7f6abf4deaf02d8436772388b1e81d94ba1eb58794",
+   "gif_sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
    "gif_frames": 2,
    "gif_size": [
-    439,
+    401,
     440
    ],
-   "planche": "planches/lot42/pompes-au-bord.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/femme/pompes-au-bord-femme.gif"
+   }
   },
   {
    "cle": "pompes-au-mur|homme",
@@ -5537,13 +5625,17 @@
     "Step-up haut"
    ],
    "gif": "media/refonte-photo/gif/homme/step-up-haut-homme.gif",
-   "gif_sha256": "55312a3f227db7a47c7f4ee9b9d9e30bc6791f1fce82e30fb06a4c397dee66dc",
+   "gif_sha256": "508eef3f410ac239b8aaabbf84d784351c8fc8409b6603967951c4b28e2eb8ba",
    "gif_frames": 2,
    "gif_size": [
-    381,
+    125,
     440
    ],
-   "planche": "planches/lot14/step-up-haut.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/step-up-haut-homme.gif"
+   }
   },
   {
    "cle": "step-up-sur-banc-hauteur-du-genou|femme",
@@ -5884,13 +5976,17 @@
     "Tractions supination (chin-up)"
    ],
    "gif": "media/refonte-photo/gif/homme/tractions-supination-chin-up-homme.gif",
-   "gif_sha256": "d9bfa9bd06ca082cf304ececf68bab8bd5b6b874d0385fb1385b6bf27d8f9736",
+   "gif_sha256": "4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10",
    "gif_frames": 2,
    "gif_size": [
-    390,
+    385,
     440
    ],
-   "planche": "planches/lot23/tractions-supination-chin-up.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot68/gif/homme/tractions-supination-chin-up-homme.gif"
+   }
   },
   {
    "cle": "transition|femme",
@@ -7106,13 +7202,17 @@
     "Mobilité hanches / chevilles"
    ],
    "gif": "media/refonte-photo/gif/homme/mobilite-hanches-chevilles-homme.gif",
-   "gif_sha256": "134626c223afbab34250bda7a904164bcd8c5766062d849ea3f2b3e365efdd65",
+   "gif_sha256": "f2bab6bc3f793ce9c0113a8d56d5dfebaff11cb41a277d7795f1080898668d20",
    "gif_frames": 2,
    "gif_size": [
-    378,
+    127,
     440
    ],
-   "planche": "planches/lot53/mobilite-hanches-chevilles.png"
+   "planche": null,
+   "source_proposition": {
+    "commit": "c685298378773817460fb358bc605af7ce154b8b",
+    "gif": "evolution/media/refonte-photo/propositions/lot59/gif/homme/mobilite-hanches-chevilles-homme.gif"
+   }
   },
   {
    "cle": "sprint-nager-a-fond|homme",
