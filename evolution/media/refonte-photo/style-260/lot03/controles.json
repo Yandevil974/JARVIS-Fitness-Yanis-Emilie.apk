@@ -1,0 +1,398 @@
+{
+ "date": "2026-09-28",
+ "generations": 10,
+ "echecs": 0,
+ "propositions": [
+  {
+   "numero": 19,
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "reference_demonstration": 19,
+   "source_sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
+   "proposition_sha256": "de42cba93001f9e76c353b10d2cdad31e3428c8ba21ab4bf9bb57e0bdf720025",
+   "taille": [
+    381,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 1663,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 1346,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 85,
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "reference_demonstration": 85,
+   "source_sha256": "4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4",
+   "proposition_sha256": "95c39773ae9d9fe83e28158005ca647f4215f9291607ec8d326305ca94436709",
+   "taille": [
+    788,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 1140,
+     "indices_nouveaux": 0,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 634,
+     "indices_nouveaux": 0,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 214,
+   "cle": "gainage-au-bord-vertical|femme",
+   "reference_demonstration": 214,
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220",
+   "taille": [
+    416,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 726,
+     "indices_nouveaux": 2,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 900,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 274,
+   "cle": "gainage-vertical|femme",
+   "reference_demonstration": 214,
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220",
+   "taille": [
+    416,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 726,
+     "indices_nouveaux": 2,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 900,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 275,
+   "cle": "gainage-vertical-au-bord|femme",
+   "reference_demonstration": 214,
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220",
+   "taille": [
+    416,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 726,
+     "indices_nouveaux": 2,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 900,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 276,
+   "cle": "gainage-vertical-effort|femme",
+   "reference_demonstration": 214,
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220",
+   "taille": [
+    416,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 726,
+     "indices_nouveaux": 2,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 900,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 223,
+   "cle": "recup-complete-souffler|femme",
+   "reference_demonstration": 223,
+   "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "proposition_sha256": "164d3821059ec1dac2cba8bca7ea5ab09c0c1aeff27851eaf3289d3df929d25f",
+   "taille": [
+    428,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 1569,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 1246,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 305,
+   "cle": "recup-complete-souffler-au-bord|femme",
+   "reference_demonstration": 223,
+   "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "proposition_sha256": "164d3821059ec1dac2cba8bca7ea5ab09c0c1aeff27851eaf3289d3df929d25f",
+   "taille": [
+    428,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 1569,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 1246,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 316,
+   "cle": "retour-au-calme-respiration|femme",
+   "reference_demonstration": 223,
+   "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "proposition_sha256": "164d3821059ec1dac2cba8bca7ea5ab09c0c1aeff27851eaf3289d3df929d25f",
+   "taille": [
+    428,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 1569,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 1246,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 337,
+   "cle": "ciseaux-mains-au-bord|homme",
+   "reference_demonstration": 337,
+   "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "proposition_sha256": "fc24fcff9090cea9f26e755f6e24ea0385dd1108c83f70720e56defa294ce2b9",
+   "taille": [
+    391,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 2325,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 2430,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 338,
+   "cle": "ciseaux-au-bord|homme",
+   "reference_demonstration": 337,
+   "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "proposition_sha256": "fc24fcff9090cea9f26e755f6e24ea0385dd1108c83f70720e56defa294ce2b9",
+   "taille": [
+    391,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 2325,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 2430,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  },
+  {
+   "numero": 339,
+   "cle": "ciseaux-au-bord-effort|homme",
+   "reference_demonstration": 337,
+   "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "proposition_sha256": "fc24fcff9090cea9f26e755f6e24ea0385dd1108c83f70720e56defa294ce2b9",
+   "taille": [
+    391,
+    440
+   ],
+   "frames": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 2325,
+     "indices_nouveaux": 4,
+     "pixels_modifies_hors_masque": 0
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 2430,
+     "indices_nouveaux": 3,
+     "pixels_modifies_hors_masque": 0
+    }
+   ]
+  }
+ ],
+ "nombre_gif_proposes": 12,
+ "gif_livres_modifies": 0,
+ "reprise48": {
+  "statut": "rejet_interne_raccord_coussin_non_concluant",
+  "generation": 0,
+  "integre": false
+ }
+}

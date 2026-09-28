@@ -1474,10 +1474,10 @@
   "perimetre": "ensemble_des_389_visuels",
   "recoloration_effectuee": false,
   "accord_perimetre": "tout, les 389",
-  "statut": "lot02_44_45_80_valides_integres",
+  "statut": "lot03_12_propositions_en_attente_3_styles_integres",
   "gif_style_finalises": 3,
   "gif_style_integres": 3,
   "accord_direction_style": "super vas-y",
-  "gif_style_proposes": 0
+  "gif_style_proposes": 12
  }
 }

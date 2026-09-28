@@ -1,3 +1,14 @@
+# STYLE389 — lot03 (28/09/2026) :12 propositions supplémentaires
+
+Demande : « Termine la couleur sur les gifs ». **Travail NON terminé sur389.**
+**3 intégrés (44/45/80),12 propositions,1 à reprendre(48),373 non traités.** Les propositions lot03 :19,85,214,274,275,276,223,305,316,337,338,339. PDF5 pages `style-260/lot03/STYLE-260-lot03.pdf`. Copies conformes vérifiées par SHA ; toutes les phases contrôlées et masquées localement, aucun pixel hors masque changé après GIF.
+10 générations de crops locaux réussies dans ce tour, plafond atteint. Un essai de montage48 sans génération a échoué au contrôle du raccord coussin ; exclu du PDF, ne pas intégrer.
+Audit automatisé des389 avec segmentation humaine disponible dans `style-260/audit-corps/audit-389.json`. **Exploratoire uniquement**, ne remplace pas le contrôle humain : nombreux cas de piscine/occlusion ambigus. Aucun recoloriage automatique généralisé effectué.
+Sources389 récupérées dans `.cache/style-global/source` (c685298 +26 corrections présentes +3 styles intégrés). Poids ONNX non livrés dans l’app, cache seulement. SHA des livrés inchangés.
+Prochaine action : revue lot03, reprendre48 proprement, poursuivre les373 non traités. Pas de nouvelle demande de périmètre/teinte : confirmé389, référence260 et démarcation anatomique. APK inchangé.
+
+---
+
 # STYLE 389 — lot02 VALIDÉ ET INTÉGRÉ (28/09/2026)
 
 L’utilisateur répond **« Validé »** au PDF montrant **44/45 et80 uniquement**. Ces trois GIF ont été copiés octet pour octet dans les médias livrés. Accord enregistré, manifeste/map et suivi actualisés. Les phases, durées, dimensions et pixels hors masque restent identiques aux gestes approuvés. Aucun nouvel appel de génération.

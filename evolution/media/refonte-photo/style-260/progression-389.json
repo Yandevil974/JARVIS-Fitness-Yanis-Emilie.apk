@@ -6,9 +6,9 @@
  "reference_style": "lot01/STYLE-389-premier-essai.pdf, n°44 phase1",
  "teinte_reference_numero": 260,
  "gestes_valides_preserves": true,
- "propositions_completes": 0,
+ "propositions_completes": 12,
  "a_reprendre": 1,
- "non_traites": 385,
+ "non_traites": 373,
  "style_integre": 3,
  "entrees": [
   {
@@ -141,8 +141,10 @@
    "numero": 19,
    "cle": "bulgarian-split-squat-halteres|femme",
    "source_sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "de42cba93001f9e76c353b10d2cdad31e3428c8ba21ab4bf9bb57e0bdf720025"
   },
   {
    "numero": 20,
@@ -609,8 +611,10 @@
    "numero": 85,
    "cle": "elevations-laterales-coude-a-90|homme",
    "source_sha256": "4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "95c39773ae9d9fe83e28158005ca647f4215f9291607ec8d326305ca94436709"
   },
   {
    "numero": 86,
@@ -1512,8 +1516,10 @@
    "numero": 214,
    "cle": "gainage-au-bord-vertical|femme",
    "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220"
   },
   {
    "numero": 215,
@@ -1575,8 +1581,10 @@
    "numero": 223,
    "cle": "recup-complete-souffler|femme",
    "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "164d3821059ec1dac2cba8bca7ea5ab09c0c1aeff27851eaf3289d3df929d25f"
   },
   {
    "numero": 224,
@@ -1932,22 +1940,28 @@
    "numero": 274,
    "cle": "gainage-vertical|femme",
    "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220"
   },
   {
    "numero": 275,
    "cle": "gainage-vertical-au-bord|femme",
    "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220"
   },
   {
    "numero": 276,
    "cle": "gainage-vertical-effort|femme",
    "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "c93a2ba5ea1b4e781cc6e5bb2e2b0f36fdea131e6606636b9f3fe98fff4ff220"
   },
   {
    "numero": 277,
@@ -2149,8 +2163,10 @@
    "numero": 305,
    "cle": "recup-complete-souffler-au-bord|femme",
    "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "164d3821059ec1dac2cba8bca7ea5ab09c0c1aeff27851eaf3289d3df929d25f"
   },
   {
    "numero": 306,
@@ -2226,8 +2242,10 @@
    "numero": 316,
    "cle": "retour-au-calme-respiration|femme",
    "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "164d3821059ec1dac2cba8bca7ea5ab09c0c1aeff27851eaf3289d3df929d25f"
   },
   {
    "numero": 317,
@@ -2373,22 +2391,28 @@
    "numero": 337,
    "cle": "ciseaux-mains-au-bord|homme",
    "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "fc24fcff9090cea9f26e755f6e24ea0385dd1108c83f70720e56defa294ce2b9"
   },
   {
    "numero": 338,
    "cle": "ciseaux-au-bord|homme",
    "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "fc24fcff9090cea9f26e755f6e24ea0385dd1108c83f70720e56defa294ce2b9"
   },
   {
    "numero": 339,
    "cle": "ciseaux-au-bord-effort|homme",
    "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
-   "statut_style": "a_traiter",
-   "style_integre": false
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false,
+   "proposition_lot": "lot03",
+   "proposition_sha256": "fc24fcff9090cea9f26e755f6e24ea0385dd1108c83f70720e56defa294ce2b9"
   },
   {
    "numero": 340,
