@@ -1,3 +1,10 @@
+# Décision style — 28/09/2026 (prioritaire)
+
+L’utilisateur choisit **uniformiser le vert comme le n°260**, avec **démarcation anatomique nette du muscle, pas une couche verte posée**. Choix de teinte résolu ; ne plus le redemander. Préserver relief/texture/faisceaux et tous les gestes validés, notamment les mains du n°80.
+**Seul le périmètre reste à confirmer : les 26 corrections ou l’ensemble des 389 visuels actuels (331 historiques + 58 ajouts).** Aucune recoloration engagée à ce stade ; aucune validation du futur rendu déduite. Les 26 corrections de geste restent approuvées et intégrées aux médias. Avant intégration du style, contrôler notamment 19/44/45/48/80/85, plantes exclues.
+
+---
+
 # ÉTAT PRIORITAIRE — 28/09/2026 : 26/26 CORRECTIONS VALIDÉES ET INTÉGRÉES AUX MÉDIAS
 
 Branche : `arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap`.

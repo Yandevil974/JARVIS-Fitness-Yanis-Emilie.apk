@@ -1419,5 +1419,23 @@
   "statut": "critere_global_enregistre; portée du chantier à confirmer (331 GIFs livrés vs GIFs du PDF de corrections).",
   "application_immediate": "Toutes propositions et révisions en cours.",
   "livres": "Aucun GIF livré modifié dans ce tour; audit/mise à jour globaux à planifier après clarification de portée et validation des propositions."
+ },
+ "decision_style_2026_09_28": {
+  "reference_numero": 260,
+  "reference_cle": "elliptique-fractionne|femme",
+  "teinte_indicative_rgb": [
+   117,
+   189,
+   18
+  ],
+  "demande": "Même vert que le 260, muscle clairement délimité anatomiquement, pas de couche uniforme posée.",
+  "criteres": [
+   "Contours suivant le muscle réel, sans débord sur muscles voisins ou décor.",
+   "Relief, ombres, texture et séparation des faisceaux conservés ; aucune plaque opaque.",
+   "Contrôler chaque phase et exclure les plantes des mesures.",
+   "Préserver intégralement gestes, mains, visages, cadrages et matériels déjà validés."
+  ],
+  "perimetre": "a_confirmer_26_corrections_ou_ensemble_des_389_visuels",
+  "recoloration_effectuee": false
  }
 }
