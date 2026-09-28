@@ -2766,5 +2766,11 @@
   }
  ],
  "style_valide": 3,
- "restants_style": 386
+ "restants_style": 386,
+ "priorite_qualite_hd_2026_09_28": {
+  "statut": "serie_suspendue_attente_prototype_hd",
+  "registre": "evolution/media/refonte-photo/production/QUALITE-HD-2026-09-28.json",
+  "reprise_en_serie_autorisee": false,
+  "ancien_etat_conserve": true
+ }
 }

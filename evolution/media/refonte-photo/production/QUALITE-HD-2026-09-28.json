@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-28",
+  "statut": "serie_suspendue_attente_prototype_hd",
+  "retour_utilisateur": "Ce sera aussi pixellisé que sur les photos ? C’est moche",
+  "demande": "Passation pour repartir sur quelque chose de mieux défini dans les GIF",
+  "perimetre": 389,
+  "accord_teinte": 260,
+  "geste_et_prises_valides_a_preserver": true,
+  "gif_modifies_ce_tour": 0,
+  "generation_ce_tour": 0,
+  "integrations_style_historiques": [
+    44,
+    45,
+    80
+  ],
+  "propositions_lot03_non_validees": [
+    19,
+    85,
+    214,
+    274,
+    275,
+    276,
+    223,
+    305,
+    316,
+    337,
+    338,
+    339
+  ],
+  "a_reprendre": 48,
+  "non_traites": 373,
+  "priorite": "Sources PNG haute qualité -> montage sans perte -> prototype export réel comparé à taille native et zoom -> accord utilisateur -> série",
+  "prototype_recommande": [
+    44,
+    45
+  ],
+  "interdictions": [
+    "Ne pas agrandir simplement les GIF pixellisés et appeler cela HD.",
+    "Ne pas poursuivre la recoloration de masse actuelle.",
+    "Ne pas changer le geste ou les mains80.",
+    "Ne pas adopter WebP/APNG sans test et accord.",
+    "Ne pas confondre validation antérieure du style et validation de la netteté du futur export."
+  ],
+  "bloc_copiable": "PASSATION-COPIER-COLLER.md"
+}

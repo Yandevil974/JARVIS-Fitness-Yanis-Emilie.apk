@@ -1,3 +1,31 @@
+# PRIORITÉ — REPARTIR SUR UNE VRAIE QUALITÉ HD (28/09/2026)
+
+**Série style389 SUSPENDUE pour problème de pixellisation.** Dernier retour utilisateur : « Ce sera aussi pixellisé que sur les photos ? C’est moche ». Demande suivante : consigne et passation pour un nouveau chat afin de repartir sur des GIF mieux définis.
+Lire le nouveau bloc autonome `PASSATION-COPIER-COLLER.md`. Ne plus exécuter la suite des lots sur les GIF indexés existants sans prototype haute qualité approuvé.
+
+## Diagnostic et méthode à changer
+
+Les lots01–03 ont travaillé sur des crops générés plus grands puis les ont réduits et recomposés dans les GIF existants. Par exemple44/45 =259×440,48=264×440,80=684×768. La méthode verrouillait les pixels hors masque à l’identique et réservait seulement les indices de palette libres pour les nouvelles textures : parfois6–7 couleurs libres, et0 sur80. Ce verrouillage a préservé les gestes mais limité la qualité des dégradés et généré du tramage/moucheté. **Ne pas confondre cette fidélité pixel avec une bonne qualité d’image.**
+Repartir de sources PNG/planches natives suffisamment définies, identifier le crop exact de chaque phase, travailler sans perte et exporter seulement à la fin. Le numéro et la prise validés restent les références. Ne pas inventer des détails de mains avec un agrandissement génératif ; pour80 repartir de `production/lot75/ecartes-halteres.png`, pas d’un essai rejeté. Le rendu biceps apprécié est une référence de style, pas une justification pour appliquer des fibres de biceps à tous les muscles.
+La nouvelle référence de fidélité doit être la géométrie/prise du geste approuvé et les images sources de meilleure qualité. Si la nouvelle quantification modifie des nuances hors muscle, l’expliquer et comparer ; **ne pas continuer à sacrifier les gradients uniquement pour conserver une ancienne palette pauvre**. Ne jamais promettre « pixels identiques » si ce contrôle n’est plus vrai.
+
+### Prototype requis avant série
+
+1. n°44/45 recommandé : vérifier les sources PNG lot69 à c685298, leur vraie définition et leur correspondance avec le geste validé.
+2. Retouche anatomique locale enPNG sans perte, deux phases, pas de recompression intermédiaire depuisGIF/JPEG.
+3. Comparer exportsGIF (résolution native/adaptée, palette/tramage) à taille d’affichage réelle etzoom100%, poids/durées/nombre de phases mesurés. Montrer le GIF décodé, pas seulement la sourcePNG.
+4. SiGIF reste insuffisant : comparer WebP animé/APNG, tester la compatibilité effective avec la WebView Android avant proposition d’adoption. Pas de changement de format de l’app sans accord.
+5. Validation utilisateur explicite du prototype et du compromisqualité/poids/fluidité, puis seulement reprise389. Pas de reconstructionAPK à ce stade.
+
+## État conservé, mais méthode suspendue
+
+26 corrections de geste approuvées et intégrées. Style :3 intégrés(44/45/80),12 propositions lot03 non validées,48 à reprendre,373 non traités. La critique de qualité n’efface pas les anciens accords de gestes et n’autorise pas un retour automatique aux versions précédentes. Aucun fichier média modifié lors de cette passation.
+Teinte260 et périmètre389 déjà confirmés. Les anciens compteurs et validations ci-dessous sont historiques ; aucune approbation de nettetéHD acquise.
+Les docs, registres et candidatPDF sont dans le dépôt ; `.cache`/modèles/dépendances/sources miroir ne sont pas persistants. Base complète historiquec685298 + corrections de la branchecourante ; ne pas écraser les secondes avec la première.
+
+---
+## HISTORIQUE — ne pas exécuter les anciens « prochaine action » contre la priorité HD
+
 # STYLE389 — lot03 (28/09/2026) :12 propositions supplémentaires
 
 Demande : « Termine la couleur sur les gifs ». **Travail NON terminé sur389.**

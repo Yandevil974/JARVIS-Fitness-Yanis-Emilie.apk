@@ -1,21 +1,27 @@
 {
-  "avant_etape_3": {
-    "etat": "choix_et_perimetre_confirmes_style_en_cours",
-    "question": "Souhaitez-vous uniformiser la couleur verte des muscles sur celle du n°260 ?",
-    "reference_numero": 260,
-    "reference_cle": "elliptique-fractionne|femme",
-    "reference_gif": "evolution/media/refonte-photo/gif/femme/elliptique-fractionne-femme.gif",
-    "decision": "Uniformiser comme le n°260, avec démarcation anatomique visible du muscle ; pas une couche verte posée.",
-    "interdiction": "Préserver les gestes validés. Propositions de style séparées ; contrôler et présenter avant intégration.",
-    "date_decision": "2026-09-28",
-    "citation_utilisateur": "uniformiser comme le 260 mais pas une couche verte posée mais que je vois bien la démarcation du muscle",
-    "perimetre": "Les 389 visuels actuels",
-    "citation_perimetre": "tout, les 389"
-  },
-  "construction_application": {
-    "etat": "a_rappeler",
-    "texte": "Rappeler à l’utilisateur de rajouter metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie.",
-    "decision": null,
-    "interdiction": "Rappel au moment de construire application ; ne pas coder ces ajouts sans confirmation."
-  }
+ "avant_etape_3": {
+  "etat": "choix_et_perimetre_confirmes_style_en_cours",
+  "question": "Souhaitez-vous uniformiser la couleur verte des muscles sur celle du n°260 ?",
+  "reference_numero": 260,
+  "reference_cle": "elliptique-fractionne|femme",
+  "reference_gif": "evolution/media/refonte-photo/gif/femme/elliptique-fractionne-femme.gif",
+  "decision": "Uniformiser comme le n°260, avec démarcation anatomique visible du muscle ; pas une couche verte posée.",
+  "interdiction": "Préserver les gestes validés. Propositions de style séparées ; contrôler et présenter avant intégration.",
+  "date_decision": "2026-09-28",
+  "citation_utilisateur": "uniformiser comme le 260 mais pas une couche verte posée mais que je vois bien la démarcation du muscle",
+  "perimetre": "Les 389 visuels actuels",
+  "citation_perimetre": "tout, les 389"
+ },
+ "construction_application": {
+  "etat": "a_rappeler",
+  "texte": "Rappeler à l’utilisateur de rajouter metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie.",
+  "decision": null,
+  "interdiction": "Rappel au moment de construire application ; ne pas coder ces ajouts sans confirmation."
+ },
+ "priorite_qualite_hd_2026_09_28": {
+  "statut": "serie_suspendue_attente_prototype_hd",
+  "registre": "evolution/media/refonte-photo/production/QUALITE-HD-2026-09-28.json",
+  "reprise_en_serie_autorisee": false,
+  "ancien_etat_conserve": true
+ }
 }
