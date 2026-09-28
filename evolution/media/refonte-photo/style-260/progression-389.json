@@ -1,0 +1,2738 @@
+{
+ "date": "2026-09-28",
+ "perimetre": 389,
+ "accord_perimetre": "tout, les 389",
+ "accord_style": "super vas-y",
+ "reference_style": "lot01/STYLE-389-premier-essai.pdf, n°44 phase1",
+ "teinte_reference_numero": 260,
+ "gestes_valides_preserves": true,
+ "propositions_completes": 3,
+ "a_reprendre": 1,
+ "non_traites": 385,
+ "style_integre": 0,
+ "entrees": [
+  {
+   "numero": 1,
+   "cle": "ab-wheel-roulette|homme",
+   "source_sha256": "02f973187111ca81cc29401c16a7f49bd19fcf9d8f717ac81435c0db318ea913",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 2,
+   "cle": "abduction-assise-en-1-5-reps|femme",
+   "source_sha256": "2044047872737c7ce4f144645c8edb141d344d16f95b63a0d5e712f729584189",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 3,
+   "cle": "abduction-assise-machine|femme",
+   "source_sha256": "e930987721c896ca0dd29b6301562d5c3ebecb4dd21e1d0ae4169298de8f1a46",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 4,
+   "cle": "abduction-assise-machine-ou-elastique|femme",
+   "source_sha256": "e9abbf1d4e5cec5d6d933d23af78556a459c4d091ec7cff41281b2b782c9853a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 5,
+   "cle": "abduction-hanche-a-l-elastique|femme",
+   "source_sha256": "71105357b5f1b5a1187aef994bd7b6096241237d1d1641d6cd2cfde6afd51a86",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 6,
+   "cle": "abduction-hanche-a-la-poulie|femme",
+   "source_sha256": "4eb12d1198df8864130bb608889a1195fec8dea50458bc861c01b10084b73e35",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 7,
+   "cle": "abduction-hanche-a-la-poulie-myo-reps|femme",
+   "source_sha256": "4d80713eb3e1fc0b755ca9f42632195776c47165f80a0bf29048bb0328179f50",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 8,
+   "cle": "abduction-hanche-debout-a-la-poulie|femme",
+   "source_sha256": "84f5f11c5c65c581067f5d9544b5aa34f2e48c4c8b29603926faa7c54f6eee58",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 9,
+   "cle": "back-extension-45-prise-snatch|homme",
+   "source_sha256": "aed05e9f734fc1f7012cd3477f1f3de131c98b76ca0fd7f0c386979d67b474fc",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 10,
+   "cle": "back-extension-horizontal|homme",
+   "source_sha256": "774f37ddb80acf9cd86af850ae650f309e2cb71834d2b9e1dd687307106af3be",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 11,
+   "cle": "back-squat|homme",
+   "source_sha256": "8403a244b533745c1d59f35b83650912ec975d30582a0cc3abd2852d4bfbbf71",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 12,
+   "cle": "back-squat-barre-haute|homme",
+   "source_sha256": "dd73820dcde3f43542e310243f4e7d57aac898fbc869b9a4440e05560e1e5c83",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 13,
+   "cle": "back-squat-charge-moderee|femme",
+   "source_sha256": "80b5062c826ce614fd7e1d79591f1191fed4d1afc4c0bc9b8b83ab1d8100e3ca",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 14,
+   "cle": "back-squat-inertie-pause-complete|homme",
+   "source_sha256": "43f74ddd846f79bcd654c5d7f64357cc98483d2b5dcea6d051f3dcdfde2912ac",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 15,
+   "cle": "back-squat-test-1rm|homme",
+   "source_sha256": "f2d8f3f06dc0b4392f5b520965eb3599aaf0a299bb0f74ef7438fca39c31fb14",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 16,
+   "cle": "barre-au-front-pushdown-triceps|homme",
+   "source_sha256": "4b9f932f0c18e7630b52d9f70be60977aa0da6b6769202ce9845921c0db1fa45",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 17,
+   "cle": "bird-dog|femme",
+   "source_sha256": "1c6cf53a687ac740eba6ec0ea5136f8828e22a4419014adf2000c625693ad678",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 18,
+   "cle": "bulgarian-split-squat|homme",
+   "source_sha256": "bf9d47332a696d321614af4b5164cfc4313210a09c20ad138264ab643d266175",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 19,
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "source_sha256": "b1c1a1dfbc11cf588ca1c37066df3317406757f14895131f5b9a0760c5aa1f35",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 20,
+   "cle": "cables-croises|homme",
+   "source_sha256": "09395898bff010e6af2b9ba2c0085b44497e22ab5d2cc65cad3c3a76d8b012a1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 21,
+   "cle": "cables-croises-rotation-externe|homme",
+   "source_sha256": "2c4a62fd4b68688455123a3fcc25b83c3514e2f4deb99f546ceee60ff451589e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 22,
+   "cle": "california-press-barre-au-cou|homme",
+   "source_sha256": "da8f3794f05f5a6aa97cfd592fc801a3922922b05bbae198a3a21c31ad768a3d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 23,
+   "cle": "circuit-abdominaux-crunch-releves-gainage|femme",
+   "source_sha256": "0d86ebee7f5e461a6bfbc2a1033d486ed421adb252558cfc2306ed4251abfae3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 24,
+   "cle": "circuit-gainage-planche-lateral-bird-dog|femme",
+   "source_sha256": "81e2524bf1c171c94b0eb4b46aaeb39965707d59758beb144e0635603e0c037c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 25,
+   "cle": "clamshell-a-l-elastique|femme",
+   "source_sha256": "491a14439fa13d26b965b567b59a60957028a83db18fc929786be89fb6b1d7d4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 26,
+   "cle": "crunch-a-la-poulie|homme",
+   "source_sha256": "f85fc4869a4a719466886eb8880b540bb20daf492b77d96ee6f5dae4a826e983",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 27,
+   "cle": "crunch-a-la-poulie-ou-au-sol|femme",
+   "source_sha256": "8df34d9f9d05539e0fa64e568e066b83331b4f1e49cbaf251cfb5258573467f7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 28,
+   "cle": "crunch-sur-swiss-ball|homme",
+   "source_sha256": "52092c8690fc5f6ed4c15f9ca116a39de721811dfc910ea6eeda6f6684507a52",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 29,
+   "cle": "curl-barre|homme",
+   "source_sha256": "35a344aacf3dd581e09098c708e1d0d122dc0c82ab431539845bfb013233492f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 30,
+   "cle": "curl-barre-debout|homme",
+   "source_sha256": "9e855268e1b51523acafc37bd58541bb417942dc64fe0deacbd7bea9c031b907",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 31,
+   "cle": "curl-concentration|homme",
+   "source_sha256": "3825c9b3d9ff3cba1d08165860467d08d433c17a1afd9d577fdfa24a09a73755",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 32,
+   "cle": "curl-haltere-supination-banc-scott-90|homme",
+   "source_sha256": "3387705757e6015dc31642edfeb5692d569a85ff29f3f21f01fe595c42972c49",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 33,
+   "cle": "curl-halteres|femme",
+   "source_sha256": "87fa283fb39395935ee20c5870fae57d6ad48e4e2769e98d7c5aca0976fd20a7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 34,
+   "cle": "curl-halteres-incline|homme",
+   "source_sha256": "f10b7a3c11ed8df2beb7dff74dc67847a05d5bb5fe51a3d246b468594838aaeb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 35,
+   "cle": "curl-halteres-incline-prise-neutre|homme",
+   "source_sha256": "2642d39b0f67a2d87e1caeb49d560ca198977a03f55386973360b9e479cc38d2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 36,
+   "cle": "curl-halteres-incline-supination|homme",
+   "source_sha256": "477daf83c345fa33d5c29f628f6a2549f6ac9806787202c036ab39ac7320af48",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 37,
+   "cle": "curl-marteau|homme",
+   "source_sha256": "2de901b0e9f6bfb49de8d2f7695eb3a61c7552be2916ad43dc15b4e8edc7baaa",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 38,
+   "cle": "curl-marteau-assis|homme",
+   "source_sha256": "dff2488caaa4caea0933c968f6c4279ade1411693a2e38bff4f3b2b9b7bd165e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 39,
+   "cle": "curl-poulie-basse|homme",
+   "source_sha256": "71bafc979c3027a8f11478330e99abc0fe75374b2bf70e0cf5d835c891be7a21",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 40,
+   "cle": "curl-poulie-basse-supination|homme",
+   "source_sha256": "2c413fc688059206e0a5f3886209b0b3935860964aa60b0b0a46c48480ea59db",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 41,
+   "cle": "curl-scott-90-haltere-supination|homme",
+   "source_sha256": "08fa83632f20a9b23e7ab174f868799622248fb6c5eced41557d35fd451630ab",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 42,
+   "cle": "curl-scott-barre-ez-pronation|homme",
+   "source_sha256": "ce76a006bacfe668834a023ada15b6df556629bbeb08abeccba032dc68f24a51",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 43,
+   "cle": "curl-scott-barre-ez-supination|homme",
+   "source_sha256": "581932dd20f0171fc316ae07eaf0adc27cb0ddb1f162519446dfffe1a2d97bdd",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 44,
+   "cle": "curl-scott-haltere-neutre|homme",
+   "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false
+  },
+  {
+   "numero": 45,
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false
+  },
+  {
+   "numero": 46,
+   "cle": "curl-zottman|homme",
+   "source_sha256": "f3af21c2eec127f0c619cd2d95e9fe09fb1fdf3d5b4641776f51c5466eafbf01",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 47,
+   "cle": "curl-zottman-assis|homme",
+   "source_sha256": "902ccda003422bea77276c4f9d826ddf6123422b3070d7f62844ec61155a9875",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 48,
+   "cle": "curl-zottman-un-bras-banc-scott|homme",
+   "source_sha256": "41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704",
+   "statut_style": "a_reprendre_raccord_coussin",
+   "style_integre": false
+  },
+  {
+   "numero": 49,
+   "cle": "dead-bug|femme",
+   "source_sha256": "d4ef23e9784bdc3756acfce90798715ba80160172a6008394a036a6f48706146",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 50,
+   "cle": "dead-bug|homme",
+   "source_sha256": "431dc132992811426f16dfafa31e6d549576ba44a4cb70165999499568e47378",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 51,
+   "cle": "dead-bug-avec-rotation|femme",
+   "source_sha256": "9a26df1efda1f762ef9ee1b75e154f6f65d32a083cba3dd9a98766315765113e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 52,
+   "cle": "developpe-couche-barre|homme",
+   "source_sha256": "e4d9c22e0a05ea25ced9498f13d6322b2fa2a632014191973821fdc67133001e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 53,
+   "cle": "developpe-couche-barre-plat|homme",
+   "source_sha256": "3f5a1b6e9a0fc4f8316741bb95841531a7386076735dd4f7fb1d4112445c48af",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 54,
+   "cle": "developpe-couche-decline-prise-serree|homme",
+   "source_sha256": "0684d5408ba6e6d2b4a7afce78d9249de004cea26e5212498234381419a2d76d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 55,
+   "cle": "developpe-couche-halteres|femme",
+   "source_sha256": "6f21183bb94b2b485ae6798d60a6145042815661b65720c0bba78c46037c516c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 56,
+   "cle": "developpe-couche-plat-inertie-depuis-les-pins|homme",
+   "source_sha256": "a73949925ba1c2fd96375031d0630b2682f8a0476efa9b4a1a14bcd647663b7c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 57,
+   "cle": "developpe-couche-prise-serree|homme",
+   "source_sha256": "5e38d08443e263199501110b6e8614fe92d185128188f4c0ae15822eebf9971a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 58,
+   "cle": "developpe-couche-test-1rm|homme",
+   "source_sha256": "bcaf491c4edff6deb41c5435b9a494ff8fca40f0f64ab255eed2e5d946548da3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 59,
+   "cle": "developpe-derriere-la-nuque|homme",
+   "source_sha256": "110f2ff4726345037ed6328f4d3cf7650f004d39fb36b6fea0560e10d55918e8",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 60,
+   "cle": "developpe-haltere-un-bras-debout|homme",
+   "source_sha256": "75b355758a02d50d9235666c824f6751c11bfcb75088b252885f0a20d4c2bfc9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 61,
+   "cle": "developpe-halteres-assis|homme",
+   "source_sha256": "f6db6170a201743abd2b2e2a5ebd8f6d60d2e923fa839bf419c975751eec5e3a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 62,
+   "cle": "developpe-halteres-assis-neutre-pronation|homme",
+   "source_sha256": "884b8db46ca9a947056211129f2f828571f589088b7658ce789098999a1e1c9d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 63,
+   "cle": "developpe-halteres-assis-prise-neutre|homme",
+   "source_sha256": "5d87213f7a64c97ed2895e478ceb22666e90f42eac43c40822864a91e2c06bdd",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 64,
+   "cle": "developpe-halteres-decline-prise-neutre|homme",
+   "source_sha256": "3d037d6be0f1f0d33babc249194bbc56bb4b66474954b4ed3ea97fdf04c6d718",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 65,
+   "cle": "developpe-halteres-incline-45-prise-neutre|homme",
+   "source_sha256": "ee6a1c6f5a9a02bd3f6091527bb279045538394757d0b4543ea35351fff54d68",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 66,
+   "cle": "developpe-halteres-incline-pronation|homme",
+   "source_sha256": "7ae94caf326740dfb95ce54beca8724c128e35dfb70f6c5f09aa3e4f2e972cde",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 67,
+   "cle": "developpe-halteres-plat|homme",
+   "source_sha256": "9f40dc906598b4fadae013b36ed07a776dc453751afafbb2fd59e30b5d7c573e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 68,
+   "cle": "developpe-halteres-plat-prise-neutre|homme",
+   "source_sha256": "c226aa5bb418d5a893d09b8e6f86afc3cc1f62de6a29c4ece51891f848a3410c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 69,
+   "cle": "developpe-incline-barre|homme",
+   "source_sha256": "11b92b52d38b23d1bf051eb2adb530b07d9a98ebf875f26b26e5549cb75e9e6e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 70,
+   "cle": "developpe-incline-halteres|femme",
+   "source_sha256": "8de6e89e5395700cfa45a7f87840fc90bf9909f0cb9f1a967f8dd8635c13335b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 71,
+   "cle": "developpe-militaire-debout|homme",
+   "source_sha256": "e2b66e36bb29654e73da80e2792bb085cd7cd992a8cb1d867d5afb774b3fd18c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 72,
+   "cle": "developpe-militaire-halteres-assis|femme",
+   "source_sha256": "961917e9b811d034ee849b85ff32549fa4a85662faee346d9a4b8d9d88fb8aff",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 73,
+   "cle": "developpe-militaire-halteres-assis-test-3-5-reps|femme",
+   "source_sha256": "8b50132bdd346e9016bf1cf407a02d8db03fcbd5960b19f7d49d9aa8aae5c2f6",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 74,
+   "cle": "developpe-militaire-inertie-depuis-les-pins|homme",
+   "source_sha256": "2e64bf2629810e521e96059bcb2a4514e9f25a3e3b706f713972634c47ab06cb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 75,
+   "cle": "developpe-militaire-test-1rm|homme",
+   "source_sha256": "e264f1d521391d3c396d7668df098b1012aaf5c4f65929fc56230deea4db5b01",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 76,
+   "cle": "dips|homme",
+   "source_sha256": "f24f53a9c7dbaf1bce05a485a63e3882364dec241ed94293358e2631d9ec554c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 77,
+   "cle": "drop-lunges-fentes-controlees|homme",
+   "source_sha256": "cb0991bbf15915509ff1a2413fccd044844b6d4cd71015caf013e86643f89e8b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 78,
+   "cle": "drop-lunges-fentes-sautees-controlees|homme",
+   "source_sha256": "11a4883b106e89b3c7b55cef169ddd875d68fff9ed3f2887b0bbdde9dc4d7141",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 79,
+   "cle": "ecartes-cables-incline|homme",
+   "source_sha256": "12340891882ef2efc61d7cb20d0bf3e40cd3cd6c43db887a3a0380658d4b45fb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 80,
+   "cle": "ecartes-halteres|homme",
+   "source_sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+   "statut_style": "proposition_style_a_controler",
+   "style_integre": false
+  },
+  {
+   "numero": 81,
+   "cle": "ecartes-halteres-decline|homme",
+   "source_sha256": "3caa6c5e7a2bef7196c87df6e76da0d57bc0d30178aa7d816762eb35a37930cd",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 82,
+   "cle": "elevations-laterales|homme",
+   "source_sha256": "e169d622c8002b389ba1eb8a13ad4549749bd8750adac0e30e7ddc4968b908e7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 83,
+   "cle": "elevations-laterales-assises|homme",
+   "source_sha256": "fa7442793fd72d352d135955517e3e2b23f71d4ac51232d8aa12d7f3eccec400",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 84,
+   "cle": "elevations-laterales-assises-variante|homme",
+   "source_sha256": "a876fde41269dbafb94c551a566a539bd90b946ed4a56dc30f137914266045c3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 85,
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "source_sha256": "4a99ad5b2304de833f33bcf6580f581f4bb8fe36cc85964db5b09886fcc13fd4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 86,
+   "cle": "elevations-laterales-halteres|homme",
+   "source_sha256": "ed9d170a7c28700132f9c67d69f1446825824fc419b245f2e542a3e40ad09496",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 87,
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "source_sha256": "3cab00f65a47df9cf4455a71060c3e623cb28f9140e8d9c55fb87aa0a502f58d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 88,
+   "cle": "elevations-laterales-incline-30|homme",
+   "source_sha256": "448285afa76d7757d899ea8ecdcb4284e88c616e6f519633a35f3e0e9d893d67",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 89,
+   "cle": "elevations-laterales-incline-30-face-au-banc|homme",
+   "source_sha256": "54bd272d94b4b7881355fce7105973f63fd4de06d200f6e961bb40f0cd28deeb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 90,
+   "cle": "elevations-laterales-lean-away|homme",
+   "source_sha256": "e89971ee6ba059fabcd7f7a3dd7f37ee222876d30bab55180109cc23a01abeaf",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 91,
+   "cle": "extension-triceps-a-la-poulie|femme",
+   "source_sha256": "8a1f0ac986d38db57dd06e1307bbbdc9228bf6fa8ed22b0ecb6a1ebce9a9a60e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 92,
+   "cle": "extensions-triceps-barre-ez|homme",
+   "source_sha256": "e9aa82132494b30061f5750dfcb7015d8ad39f44b80a259d8ac319773cb53a85",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 93,
+   "cle": "extensions-triceps-halteres-incline|homme",
+   "source_sha256": "2ec2c2c1b7eb18a5e9245ca18419017a10d6511cb0b535206df4cf756ad9fbf2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 94,
+   "cle": "extensions-triceps-halteres-plat|homme",
+   "source_sha256": "4245ee48dd3c17a579f1ddff41df621532b6778bea22c82bc6964d49b4e84612",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 95,
+   "cle": "extensions-triceps-poulie|homme",
+   "source_sha256": "6832f958bb4f710691a969396bf02b6dc17ff556fc65819e49f448e20a8e4b40",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 96,
+   "cle": "extensions-triceps-pullover-barre-ez|homme",
+   "source_sha256": "4c288342b75bde7d4c9e38b05b2d4cbb8eb1cbdf346a2fe9c64cb30c019f831b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 97,
+   "cle": "face-pull-a-l-elastique|femme",
+   "source_sha256": "da0df09961077306f776a8143aa82b2428042c45a84f78adb7b8fcb994fc3c35",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 98,
+   "cle": "face-pull-a-la-poulie|femme",
+   "source_sha256": "1bf1710ddafea5d87474c91691fc923b919ba90f3934bb15a2fa938f9e866a1c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 99,
+   "cle": "fentes-arriere-alternees|femme",
+   "source_sha256": "1e73894a11bbec9c94824642ef1faf146ba59c53b862850351fc6d5a992a79f5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 100,
+   "cle": "fentes-arriere-au-poids-du-corps|homme",
+   "source_sha256": "5e4cdda12471b2b34d52510f8b45ab199c0d1ba0fb7a120cd0f047508248e7e8",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 101,
+   "cle": "fentes-avant-alternees|femme",
+   "source_sha256": "5bc5625d9433ca6e937e405f385a1567c5a79c2adf6ab1ece469b8df252bfee3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 102,
+   "cle": "fentes-barre|homme",
+   "source_sha256": "79aaec788db36846a9bf22b400bd4b3ecd8952ff1fec07444cc0bbaa0fd58517",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 103,
+   "cle": "fentes-bulgares-halteres-pied-avant-sureleve|homme",
+   "source_sha256": "a5f01971f29278bd8f1def456fc64b966a78c1119b5a4fee355a3ae5fcc50ba8",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 104,
+   "cle": "fentes-bulgares-pied-arriere-sureleve|femme",
+   "source_sha256": "b8c441a8a10e163bd0ee816a24c0dd746d63dc80a851fa55dc837f4a8f24f990",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 105,
+   "cle": "fentes-marchees|homme",
+   "source_sha256": "11221d745c89b52331d282844d4ac1705be39d9937f9695c0e0ca0ef859c2a9f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 106,
+   "cle": "fire-hydrant-a-l-elastique|femme",
+   "source_sha256": "bad374a6afbb744ec428b0c3a74e36866bd33ad8174513fc9d4dd59e5374b309",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 107,
+   "cle": "french-press-barre-ez|homme",
+   "source_sha256": "71936fa0ed7795dde9eb3a4fa406adc3bd0afbe4132e4b84c317aebb9fe904ef",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 108,
+   "cle": "french-press-haltere-un-bras|homme",
+   "source_sha256": "a40720f67740d2a0351cf1679d76cd0e27df800ac5a0cd1238aff4fd0be15b52",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 109,
+   "cle": "french-press-poulie-basse|homme",
+   "source_sha256": "fcb319ec021c6094ef4b241e157731f7da6803e8184804096fa89f162049db75",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 110,
+   "cle": "front-squat|homme",
+   "source_sha256": "24fdfdf2b1e5192480d1d3b396b36019d13562cada14ae293924388330fbd079",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 111,
+   "cle": "gainage-lateral|femme",
+   "source_sha256": "d13c73eedc9ff79e65c02f90b6d6f5ef436134bc77173371e860711c39c15e3b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 112,
+   "cle": "gainage-lateral-dynamique|femme",
+   "source_sha256": "c2ffd7729cfe07f776d5611b33f132517c7cb83055abc72be312fbfc193fc721",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 113,
+   "cle": "gainage-planche|femme",
+   "source_sha256": "6536e369db2d9ed5252b4b7237bc173bd932d80d1996dea6ef7983fa4bfe0c2d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 114,
+   "cle": "gainage-planche|homme",
+   "source_sha256": "ccac233a36da99dee7428def56834c57ce241dc86b55a515744b55f2f0c7d92f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 115,
+   "cle": "glute-bridge-en-1-5-reps|femme",
+   "source_sha256": "fb4ef4eff0b4ba78bf70cd024f9987f164717b8d575a7516480ec8b4b2c56c25",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 116,
+   "cle": "glute-bridge-pieds-sur-banc|femme",
+   "source_sha256": "4b7cd87efd8cfe7ecfc1a19abb5d7cf8d825fa8f65e8a8100e06b7ec8ffc48ca",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 117,
+   "cle": "glute-ham-raise|homme",
+   "source_sha256": "72ee533b1621d1e9e4c1ffe4ce84041a9c81e32ee8b9a5d91d6c2df76a228c13",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 118,
+   "cle": "goblet-squat|femme",
+   "source_sha256": "04f326d81f8d502846e1cf9fbf3ca54db109e7590e9f15cc64edafd2448bae1b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 119,
+   "cle": "good-morning-debout|homme",
+   "source_sha256": "f0a30121a67e264568addf4409721e678c3c2e29794c7e0480f20c745458d25f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 120,
+   "cle": "hack-squat|homme",
+   "source_sha256": "6fd14eb1f53b128d2a53011ed9b4531a575c762e2fd63799b37470c9be0fb42f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 121,
+   "cle": "hip-thrust-barre|femme",
+   "source_sha256": "4e7b70938b8a2e57ec0bb05ec8d5285f3636a9d8842c8fb57e9c6eda803dee4b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 122,
+   "cle": "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
+   "source_sha256": "44f11dabe987bb77c34a1968f7fa4c0c4ae1a094b04ac083a75a892888cba504",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 123,
+   "cle": "hip-thrust-unilateral|femme",
+   "source_sha256": "3edfcfc8caee68172c03d006a9bb8b2245e301bf67b575558037412b064923e1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 124,
+   "cle": "hip-thrust-unilateral-1-jambe|femme",
+   "source_sha256": "119726d91194b9b6644154fab049caf8a6b173aa35fc404a93801b4adaf0cc5c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 125,
+   "cle": "hip-thrust-unilateral-leste|femme",
+   "source_sha256": "adb35d9546c880f2e573d1dc8084ffd701b04d9566c4287089a843806121e1ff",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 126,
+   "cle": "jackknife-sur-swiss-ball|homme",
+   "source_sha256": "5c2fdfab8ac788be1f5b0af4bd22b995e86262050656be6149062ac0c5d88170",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 127,
+   "cle": "kickback-a-l-elastique|femme",
+   "source_sha256": "9ea5b7136f88d7efd379400cf7130061bc0a705f50691ce8f61796468de7230d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 128,
+   "cle": "kickback-a-la-poulie|femme",
+   "source_sha256": "2e92cd9229baf0a33ffac3dd361db946116e9e381ae6973af75d2ea25f41facf",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 129,
+   "cle": "kickback-a-la-poulie-drop-set-final|femme",
+   "source_sha256": "32fa389d5f16c0d467e8731c56030685be0ec859b8e219bfa21640d5b7a7f20c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 130,
+   "cle": "lean-away-pull-ups|homme",
+   "source_sha256": "031caeb63a4f2c4ad37b3ad22e302e4f712ac2bbadef31737d4d463e33a77956",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 131,
+   "cle": "leg-curl-allonge|homme",
+   "source_sha256": "fe5ba5ac12982ae4fdccc88514202032f563eae0139783c2a000f755df43274a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 132,
+   "cle": "leg-curl-allonge-1-1-4-en-haut|homme",
+   "source_sha256": "7b4d83612d9838394885e3d4e1254c2f6f804f75cab3bf3785a4a8734ca1c1a9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 133,
+   "cle": "leg-curl-allonge-pieds-flechis|homme",
+   "source_sha256": "b954305f0f5568b272ee51f5e3a7ad8a54625a0d230d48a18756a755855881cd",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 134,
+   "cle": "leg-curl-allonge-pieds-pointes|homme",
+   "source_sha256": "1bdd45afb59cc29890a22daae58942ec095e356d32b866bb8943b7fcb2955ed6",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 135,
+   "cle": "leg-curl-debout|homme",
+   "source_sha256": "e9e6a04fac667b2b55c667b060829f605f2b74eb6575ac7bd512e053726a07b8",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 136,
+   "cle": "leg-curl-machine|femme",
+   "source_sha256": "9bfb90294c482fc0d9a50e753445ee98c6d2e25a8fb5ec8af9da68f45223ab8f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 137,
+   "cle": "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
+   "source_sha256": "688c3eaea53ad59b8b39168e1652d1e1445e6a46f39c3915c042f9d00a71865c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 138,
+   "cle": "leg-extension|homme",
+   "source_sha256": "26f2b337d32111ac06048313dbb7f770eea70e1af4197b51d6c8d0f7798093c2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 139,
+   "cle": "leg-press|homme",
+   "source_sha256": "0b424a5a07c9a2c770768a6f9042129d8d1dcde827798b34ebb76217aa36db06",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 140,
+   "cle": "leg-press-unilateral|homme",
+   "source_sha256": "a4443a1008f6202bd1cccd5dde4c251b675fea1e0ac235bcc9348d1a51e5412b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 141,
+   "cle": "mobilite-des-epaules|homme",
+   "source_sha256": "6e8ef0c7fab7dba865aa7f69692e5820713f8119ae6b86136c6e1e950e48cc1e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 142,
+   "cle": "mollets-a-la-presse|homme",
+   "source_sha256": "f1a40f2c8c8502db54e5742a434ef4837daed44dece1d663d8551f967af2982d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 143,
+   "cle": "mollets-assis|homme",
+   "source_sha256": "7bd2e942f541b18e66dd3203ab3412fcef3a3a5630eecfe29c9b3b11470d92fe",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 144,
+   "cle": "mollets-debout|homme",
+   "source_sha256": "01f869e102150bba63338dda0ebf8cd5b8ff0069eba6de57b1b122ae771dad2f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 145,
+   "cle": "mollets-debout-unilateraux|femme",
+   "source_sha256": "8917d493ac1f32de2046483fc10b3ebad92cbfb555631d6909869b178944e538",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 146,
+   "cle": "mollets-unilateraux|homme",
+   "source_sha256": "9bb24b54ea4ead72c9fbf6b2091293eef60448b96797d03921b15622c8eac387",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 147,
+   "cle": "mountain-climbers|femme",
+   "source_sha256": "0daad20322109b138631d1a320376df157220e160d11fd51b57712029e079ee2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 148,
+   "cle": "mountain-climbers|homme",
+   "source_sha256": "b0bbbea5a96ea72959f86fe82cfac96f9b13968d51100ed730aeea28b9c79462",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 149,
+   "cle": "pallof-press-a-l-elastique|femme",
+   "source_sha256": "31dbb90a17c19788e8ef4b6d7a21588b11da166ef3b1eedd4cc8322f30b066b4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 150,
+   "cle": "pallof-press-a-la-poulie|femme",
+   "source_sha256": "5fb6a2341be9c03f3eae88e9f6c77dc5322522dce02f264b6462d722fe112c44",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 151,
+   "cle": "pompes|homme",
+   "source_sha256": "7e96ab14f783b3385b8da6250a69aedd57a238bca20aa03bb1fa0bbf0c63f4db",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 152,
+   "cle": "pompes-inclinees-mains-surelevees|femme",
+   "source_sha256": "b196348d289870a430870559154c2b516e0824b412b86e1b667eac86b28f4235",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 153,
+   "cle": "pont-fessier-au-sol-activation|femme",
+   "source_sha256": "666443484c7f0861d9cb0132d8819ff3ac6b8b5d53867fab0b01bab838415179",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 154,
+   "cle": "presse-a-cuisses-pieds-hauts|femme",
+   "source_sha256": "f7355ac312d674a1538a506f76ae3cefddf643c3595054b9725e7f2cb02486df",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 155,
+   "cle": "pullover-cable-bras-tendus|homme",
+   "source_sha256": "8c88fbe1e490944187ae12ddd4b386a089844c2c442dcd71a139f85e4d42bfcc",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 156,
+   "cle": "pullover-haltere-plat|homme",
+   "source_sha256": "f56fbc2e2510c4b26f45d57a89fa805ae59817249d7c55eb583734ad39e71b81",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 157,
+   "cle": "pushdown-triceps-cable|homme",
+   "source_sha256": "028724a3c679a470813ca50f2668a976dbd7bbaa9b9f83d749b718774b066fa1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 158,
+   "cle": "releves-de-jambes|femme",
+   "source_sha256": "5ba5f775e90ad37e6a4d35204d3975988a85d1d487247da81a5f7530de72ad82",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 159,
+   "cle": "releves-de-jambes|homme",
+   "source_sha256": "e3683062b2c86348938ae33acaf222b6d5509404fb790c65cd7155ffed5cc4a5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 160,
+   "cle": "releves-de-jambes-allonge|homme",
+   "source_sha256": "69ddf0f4ec9c937bbc982245ac6877efbc9908d5711c9b7d4404e282ced89a08",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 161,
+   "cle": "releves-de-jambes-allongee|femme",
+   "source_sha256": "d9158e999b36e85a2572a145831ef361f49fa9e4326fffb4b285d2c70ce78725",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 162,
+   "cle": "releves-de-jambes-incline|homme",
+   "source_sha256": "04baa4392f5b1f22598ccbc054cc3530692986d8c135bcf68468822e90eb2e13",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 163,
+   "cle": "releves-de-jambes-suspendu|homme",
+   "source_sha256": "6208e0a452a19b0882ab84939a0342726a26610adfd0b0cab30cc031c909eef7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 164,
+   "cle": "respiration-diaphragmatique|homme",
+   "source_sha256": "114a727b696375ef8407bd330e18a72f5fccd42eda659c977acd53fa4682097c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 165,
+   "cle": "reverse-crunch|femme",
+   "source_sha256": "fae84592e330ca0b4cc45819d1f0c406ca8526d54f252bee0ef8d6ad3bcbced7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 166,
+   "cle": "rowing-a-l-elastique|homme",
+   "source_sha256": "e19753d0efd83b1028828e4364153cd63def0e2ceb806b024849e1022b247e62",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 167,
+   "cle": "rowing-assis-au-cou|homme",
+   "source_sha256": "108ebf1d815f3a9052e5f15c195748c6bffe12e90d1ec05f52937e72b9faa9bf",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 168,
+   "cle": "rowing-assis-cable-unilateral|homme",
+   "source_sha256": "cfa999e3a88716f6dc5948c73e17872cf10ccaa900c1fcd452b2adb82c845580",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 169,
+   "cle": "rowing-assis-etirement|homme",
+   "source_sha256": "b2d6a7d98ed3d56018f571ea5476878afb03b6e69278f451d6944ee8be953782",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 170,
+   "cle": "rowing-assis-prise-neutre|homme",
+   "source_sha256": "7cf1a57fd7bacf7e34327b58bb2b9e3fd166484e403fb0cc01aca1094d4dd6ce",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 171,
+   "cle": "rowing-barre-buste-penche|femme",
+   "source_sha256": "b4659c4fcdf2fdcf40bf310f5e4cd9e6f813b52eeb82d7e03e06efa3c4f44a3d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 172,
+   "cle": "rowing-barre-buste-penche-pronation|homme",
+   "source_sha256": "fa328628709606a9b42416fbaa582341739124162c3679c1f078e3217b1e0c0b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 173,
+   "cle": "rowing-barre-buste-penche-test-3-5-reps|femme",
+   "source_sha256": "4515b82f0ab37ca5c7eeed257542a4df7ad563a66638f87ecc3c76f2d8bd9a50",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 174,
+   "cle": "rowing-barre-ez-supination-buste-penche|homme",
+   "source_sha256": "79659c3ed2e8b5940f74b4f670983593fecd15696ee9496f7576fd78228a51fb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 175,
+   "cle": "rowing-haltere-buste-penche|homme",
+   "source_sha256": "23beb23cf39592a5522ce0867db65b28fd7bc51c8b7e5333aa0aeb1fd7cb9f27",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 176,
+   "cle": "rowing-haltere-un-bras|homme",
+   "source_sha256": "60245cfd4153bea3fe0799ea945e7569d3cc5e2317e0228593d9e85ce3de79fc",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 177,
+   "cle": "rowing-haltere-un-bras-coude-ouvert|homme",
+   "source_sha256": "afcf1dd5d8ffa417b052c44a59de4ad7428e2affe85ebe67ab1043998991a04d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 178,
+   "cle": "rowing-haltere-un-bras-prise-neutre|homme",
+   "source_sha256": "2fbfc7c455ffaae108ef27a1fe7a6dd2cf18b422860e14c8693cc7e6dc641cc2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 179,
+   "cle": "safety-bar-squat-ou-barre-classique|homme",
+   "source_sha256": "ac4b515aecf50e23a90d0b72d12128cec49687ed69684694da0c39d7e8d2e826",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 180,
+   "cle": "souleve-de-terre|homme",
+   "source_sha256": "6cfcff2b2b4dcee517d56d279d2b25274463bf13b7d2b929d61ad3e54d4283a4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 181,
+   "cle": "souleve-de-terre-partiel|homme",
+   "source_sha256": "66e84e7479c88c0d64d4d547115e4f32ee13745bbe87b16dfe45ee56a17be5f1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 182,
+   "cle": "souleve-de-terre-partiel-prise-snatch|homme",
+   "source_sha256": "f6878ab706b5c3cfe09c83eb81e2d3bda161f57e55f2ee102efa7506eb820dba",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 183,
+   "cle": "souleve-de-terre-roumain-barre|homme",
+   "source_sha256": "4145262fe443b83ecb51189c4643e903b4a008a6f357f387e18242d8c6d35d50",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 184,
+   "cle": "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
+   "source_sha256": "e5532fe8fa9b40e92619a2b0b600e0123e75a3b5e1024fb9dc5a0c1c629c89e9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 185,
+   "cle": "souleve-de-terre-roumain-halteres|homme",
+   "source_sha256": "81925c640cf288a04d9717ad385a0f7fba474ca0e1659de667be22e4ed3785ae",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 186,
+   "cle": "souleve-de-terre-roumain-unilateral|femme",
+   "source_sha256": "bfb51255e2ec710111de9cd17653b0cc981f8c56e70d21259710499003cc038c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 187,
+   "cle": "souleve-de-terre-roumain-unilateral-haltere|femme",
+   "source_sha256": "b5e25770d7dd88c035c04d755779917dd285abf10040a925d3d69345bb7d3ded",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 188,
+   "cle": "souleve-de-terre-test-1rm|homme",
+   "source_sha256": "ff7d82be3903075d935b13535057eccf0cebad9f241099c7b09462e917fedcb9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 189,
+   "cle": "split-squat-barbell-pied-avant-sureleve|homme",
+   "source_sha256": "e2092a9d98b64a547010fdabd632e9c8e269e80e87f546e9f73b8f54cc92d823",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 190,
+   "cle": "split-squat-poulie-basse|homme",
+   "source_sha256": "624927304fb9efbd7dacae0f58c5ac5f66f072fa9a967af865418e8f2db38b47",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 191,
+   "cle": "squat-au-poids-du-corps|homme",
+   "source_sha256": "3a18659a669ab642cd8d24686ab529acca1bc0f4c005a1c86af793e49d9b75c7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 192,
+   "cle": "squat-cycliste|homme",
+   "source_sha256": "fdcc2d01cb5a53d13ad2508c58438d9abb49e57f358b6995acbf45f455a0d0bc",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 193,
+   "cle": "squat-cycliste-squat-complet|homme",
+   "source_sha256": "c8df3a9bc0eaaac8455fc0da929b04eae97c5a1ebb33e1d47d6114dbc4bee36b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 194,
+   "cle": "step-up-haut|homme",
+   "source_sha256": "508eef3f410ac239b8aaabbf84d784351c8fc8409b6603967951c4b28e2eb8ba",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 195,
+   "cle": "step-up-sur-banc-hauteur-du-genou|femme",
+   "source_sha256": "b74c8ef81f7c0bda4dc69abe532f70d81a4da8eb9e3edf81d922dc08479aa050",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 196,
+   "cle": "tirage-horizontal-a-la-poulie|femme",
+   "source_sha256": "9be67e5e4d0fbd50742d1c23970662317efd352f8b3b478ed56baf43715a1c46",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 197,
+   "cle": "tirage-vertical-lean-away|homme",
+   "source_sha256": "f44fc658f6103c5b7c9d28481a207991d6ed66408280959c328e880f81f8673c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 198,
+   "cle": "tirage-vertical-prise-large|homme",
+   "source_sha256": "522a30c39bfb64ea7cfa5d6235d73dea1a32315a7187801acfb3d291fb591761",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 199,
+   "cle": "tirage-vertical-prise-neutre|femme",
+   "source_sha256": "f6b1c2d0b5fae0cc763f807833a13d109a01c836da221ba86039818ce3dcd99d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 200,
+   "cle": "tirage-vertical-prise-pronation|homme",
+   "source_sha256": "c98efe7e8fd13a1e5eef3e95285affb99b8fdf7af7cee020f6987a2ed320e8c3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 201,
+   "cle": "tractions-prise-large|homme",
+   "source_sha256": "1e5e8f5780c28245e044952bde2529235f15861912b2c015aa517bf1f7c3c7f7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 202,
+   "cle": "tractions-prise-neutre-chin-up|homme",
+   "source_sha256": "561920fcf8afeb91466bf0ff13f90e662c96fbac156884698d850a3fc7d4f170",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 203,
+   "cle": "tractions-pull-up|homme",
+   "source_sha256": "b07b1b4168e0a4dd67189bcad6b22c2a051aa5121f08b8684127c91d66f8ddef",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 204,
+   "cle": "tractions-supination-chin-up|homme",
+   "source_sha256": "4efdfe0cbe5bedd9ebded172faa7d66483ac19b2f4bbee8d21f5786072ef3e10",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 205,
+   "cle": "triceps-dips|homme",
+   "source_sha256": "0f0e7ca28ee7f5262ced24049966d5e82ece4d2c95b74cf2ece5ebf0c944011d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 206,
+   "cle": "triceps-extensions-halteres-banc-plat|homme",
+   "source_sha256": "3aea2b016706d5d4f53baf1a3495760c53d204ec4f6aed606d4c6e136193f736",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 207,
+   "cle": "wood-chop-poulie-haute|homme",
+   "source_sha256": "9b353c570b841963b619888219a8cd0306d9ff0cce437d2ae85d7a9c3b9f89ad",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 208,
+   "cle": "aqua-jogging-sur-place|femme",
+   "source_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 209,
+   "cle": "battements-au-bord|femme",
+   "source_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 210,
+   "cle": "ciseaux-au-bord|femme",
+   "source_sha256": "f8fed44ca325852fc5d01ff033c4a587ebe1a49fa7e0c1411764c2b62b0b6097",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 211,
+   "cle": "deplacements-lateraux-4-m|femme",
+   "source_sha256": "0bddac76645e3de91f72c8b6ca4888ab67abb7c5f3f986b7aeec0d565cd5e85f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 212,
+   "cle": "etirements-au-bord|femme",
+   "source_sha256": "8f862f2ae511a13e5f4a0c227af551fb256124eeb728fb477e3f71147666046a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 213,
+   "cle": "fractionne-nager|femme",
+   "source_sha256": "19750699871755e538f1387193bd83666951215d924ac9fa551317f12dda3f04",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 214,
+   "cle": "gainage-au-bord-vertical|femme",
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 215,
+   "cle": "marche-aquatique|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 216,
+   "cle": "mobilite-epaules-aquatique|femme",
+   "source_sha256": "7ff5fea738f927d8dd28a919e8af4fc4e2b680f3c4c1113dab19249f4c96e4f0",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 217,
+   "cle": "mobilite-hanches-chevilles|femme",
+   "source_sha256": "30261f92038b5ca32f4ee3eee7bc88b796e1623b627871676034618476eb307f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 218,
+   "cle": "montees-de-genoux|femme",
+   "source_sha256": "07d64eaf46c2dc2fcf87e38dc2fe7bcd27037586273e3e5ec0b16bc987c68083",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 219,
+   "cle": "montees-de-genoux|homme",
+   "source_sha256": "c44c661ce50cfb15c2cb1aa158de80d885e617289ec6f6dd5c72bcf2439b8fba",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 220,
+   "cle": "nage-douce|femme",
+   "source_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 221,
+   "cle": "nage-statique-a-l-elastique|femme",
+   "source_sha256": "236c40fd157f0f41ecd49a30c077294a5901f6cf134a25f09b59ec1ae1c3e072",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 222,
+   "cle": "pompes-au-bord|femme",
+   "source_sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 223,
+   "cle": "recup-complete-souffler|femme",
+   "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 224,
+   "cle": "recup-entre-tabatas|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 225,
+   "cle": "retour-au-calme|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 226,
+   "cle": "sprint-nager-a-fond|femme",
+   "source_sha256": "47746e12d90c5e2ce45f1921b31ec9540f7c6e7a4f9cd3686b3da07387e196fd",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 227,
+   "cle": "talons-fesses|femme",
+   "source_sha256": "4ffe4ebe811fc2a8c22018c8f71950e7b18ef28aad31cb3a9a21ce21a0c40dc1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 228,
+   "cle": "echauffement-mise-en-route|homme",
+   "source_sha256": "7a19c37100cf148f2b8abc2f14c725fa541527450d37e420fe860b607aeb6fe2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 229,
+   "cle": "echauffement-mobilite|homme",
+   "source_sha256": "df8e7e9b65108876b0b9ba879eb8ef81ed0f2625469b594c1ce37b98f4d394a1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 230,
+   "cle": "echauffement-series-d-approche|homme",
+   "source_sha256": "9fc2b3620357078798a9aaeab4ba6c0dfa9ec0c1c3c178949ff1a626190a8b14",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 231,
+   "cle": "adduction-de-la-hanche-debout|homme",
+   "source_sha256": "6ec4644eeb54b838f945f626c40d9f40a8c4212269409ea38770229d58697db5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 232,
+   "cle": "allonge-sur-le-cote|homme",
+   "source_sha256": "69858722346f40bf8646dca07ab7e9a02100f822123acc8aba7eca22fba73a6a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 233,
+   "cle": "aqua-jogging|femme",
+   "source_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 234,
+   "cle": "aqua-jogging-effort|femme",
+   "source_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 235,
+   "cle": "battements-de-jambes|femme",
+   "source_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 236,
+   "cle": "battements-de-jambes|homme",
+   "source_sha256": "ecdcebbd1133325dc6adc352b644519a115ad5474fd62c67ea36b64485e91954",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 237,
+   "cle": "battements-de-jambes-effort|femme",
+   "source_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 238,
+   "cle": "bras-tendu-contre-la-poitrine|homme",
+   "source_sha256": "64889e5c53a06784b5d3ecefa5e93c739cb86d3081ef0ad66b8a83e65364afe3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 239,
+   "cle": "bras-tendu-contre-le-mur|homme",
+   "source_sha256": "e195ea6f2c61d00b57f72e6128c1dfd83e95315f1b3cc2a47e8e4885f2ab97b0",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 240,
+   "cle": "bras-tendu-derriere|homme",
+   "source_sha256": "fea2fafa28306ecce9b4935ee7613fbaeaacb0d4b206ba460e6cdece5cbd0bb3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 241,
+   "cle": "bras-tendu-devant-main-tiree|homme",
+   "source_sha256": "f704179757f839cd30e2cb2869853d4c1c8d42befee0c2e23645bcb73bc9d0c0",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 242,
+   "cle": "burpees|homme",
+   "source_sha256": "83a58904a8967e9a6729438b00488b3504f718074457eee9214d8b3b14e29f6b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 243,
+   "cle": "burpees-simplifies|homme",
+   "source_sha256": "0bce9dc43c3b25179177a5d7dc1a000f44c3396966eaeadc4160b3fc89731701",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 244,
+   "cle": "chaise-au-mur|homme",
+   "source_sha256": "a292bf967a074d353ba331a153a4108ffa99f5048fa709585c73f101343ed443",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 245,
+   "cle": "chaise-douce|homme",
+   "source_sha256": "22de3f52c624be930dc0de6c8c8a618017234ece673b25de42a55adc757a43b5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 246,
+   "cle": "ciseaux-au-bord-effort|femme",
+   "source_sha256": "f8fed44ca325852fc5d01ff033c4a587ebe1a49fa7e0c1411764c2b62b0b6097",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 247,
+   "cle": "ciseaux-mains-au-bord|femme",
+   "source_sha256": "f8fed44ca325852fc5d01ff033c4a587ebe1a49fa7e0c1411764c2b62b0b6097",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 248,
+   "cle": "cobra-doux|homme",
+   "source_sha256": "75b18e2302c8c721a9e7514e09640aaa44fd2e7863b63a3ef9a7efb8fba96a20",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 249,
+   "cle": "corde-invisible|homme",
+   "source_sha256": "e5e523860faa9e7041adc2ee652d143bc5a99bb66ecf57e0df25658f8d165291",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 250,
+   "cle": "coude-au-dessus-de-la-tete|homme",
+   "source_sha256": "385ff605943ddd08dc1b8154b3b265c70d4814683d3d645710bf56b9026736c1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 251,
+   "cle": "crunch|homme",
+   "source_sha256": "2a26b0bb509b81e0329ba8a17a16af6f0f8ccad037ccff1092d1780f400aadec",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 252,
+   "cle": "deplacements-lateraux|femme",
+   "source_sha256": "0bddac76645e3de91f72c8b6ca4888ab67abb7c5f3f986b7aeec0d565cd5e85f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 253,
+   "cle": "deplacements-lateraux-4-m-effort|femme",
+   "source_sha256": "0bddac76645e3de91f72c8b6ca4888ab67abb7c5f3f986b7aeec0d565cd5e85f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 254,
+   "cle": "dips-au-bord|homme",
+   "source_sha256": "212f5c752f93e8c162be6cafd8f5a1d929541c3b7a0a37a26d9c2d59237019b0",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 255,
+   "cle": "echauffement-battements-au-bord|femme",
+   "source_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 256,
+   "cle": "echauffement-battements-mobilite|femme",
+   "source_sha256": "412e719e885c20ed69689ba9012898a46817fa002086b5676da204f3992ce96b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 257,
+   "cle": "echauffement-marche-aquatique|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 258,
+   "cle": "echauffement-nage-douce|femme",
+   "source_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 259,
+   "cle": "echauffement-soigneux-nage-douce|femme",
+   "source_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 260,
+   "cle": "elliptique-fractionne|femme",
+   "source_sha256": "17b2e2fcfe181f96c0539c81772b08cedaaee76805470d972811fb42430cb170",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 261,
+   "cle": "elliptique-mise-en-route|femme",
+   "source_sha256": "faf36719f9d19e7549fac38da7329028416653fe55003e0088a3b808895a9090",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 262,
+   "cle": "elliptique-recuperation-active|femme",
+   "source_sha256": "29b722fb3b737b89e32538049d708049a076f3fc96c0f2a10f0d3a5cac350247",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 263,
+   "cle": "elliptique-retour-au-calme|femme",
+   "source_sha256": "4f2c80886ae7d3269da29a7922c8210bf4c630b865e90a65e904d15bae9bd9eb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 264,
+   "cle": "etirement-contre-le-mur|homme",
+   "source_sha256": "1e6e0dd8a12b35d699a3131fcda26fbbeed3687dca1cbdf12650ff491b807747",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 265,
+   "cle": "etirement-dans-l-encadrement-de-porte|homme",
+   "source_sha256": "30a57d2b483b4e96d7549edea58794ca84eaf0c1cdaf7c041206aa0c20af4ff2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 266,
+   "cle": "etirement-des-extenseurs|homme",
+   "source_sha256": "9010e2f9e3d1423353511c67208d9d67ec4e37f32763e45d3442e299f6d8ffb4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 267,
+   "cle": "etirement-des-flechisseurs|homme",
+   "source_sha256": "b2b87c3a254bd7fdf8123d7db5f35aaac47e04c691def631c543a4f6d9215cde",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 268,
+   "cle": "etirement-du-cobra|homme",
+   "source_sha256": "70f0e7b4bad530c72af375e3791c831bb28bb25b6353e19d200b18c6eaede7c9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 269,
+   "cle": "etirement-du-flechisseur-de-hanche-chevalier|homme",
+   "source_sha256": "8b2309caa8cad1cee77b65607f8b019354a257f4b0558d22c6ea7ab3f1cc2447",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 270,
+   "cle": "etirement-du-piriforme-assis|homme",
+   "source_sha256": "1e8d5bfcc0bc9eadfc20a58a9f302fee8c533d890139536a4d977b99026c8791",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 271,
+   "cle": "fentes-alternees|homme",
+   "source_sha256": "524e72fe748d5732cca6d7fc2989bdc34724c45cdb89d539a8a6aabee9d9468b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 272,
+   "cle": "fentes-arriere|homme",
+   "source_sha256": "4d8588d0fe781283371b878a756755f13130f3f2b5a2a302ada17e49c22f4f59",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 273,
+   "cle": "flexion-avant-jambes-tendues|homme",
+   "source_sha256": "b5c280103b62b9e65889b98b31835c5bdbd32744162f79b5fe6fc0a62ae95d48",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 274,
+   "cle": "gainage-vertical|femme",
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 275,
+   "cle": "gainage-vertical-au-bord|femme",
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 276,
+   "cle": "gainage-vertical-effort|femme",
+   "source_sha256": "e4545f4946f3fc0ad00c99814b31cd26c153ee4bece5fd963d911f8b875ec5e9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 277,
+   "cle": "grenouille-plantes-jointes|homme",
+   "source_sha256": "fc041ed2c5084f83425fbb69e52a86d6e8cd359bc1520dc82864e938eaeba97b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 278,
+   "cle": "high-knees|homme",
+   "source_sha256": "d167ad11643a47cfbf15eb09d88ef9f187db6e08a5e756295d6051aa40a592bd",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 279,
+   "cle": "jumping-jacks|homme",
+   "source_sha256": "c4d38fa88ecbf5370706f627cbfac00594e39d968ac9ad49bf5466a8432079f9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 280,
+   "cle": "main-dans-le-dos|homme",
+   "source_sha256": "8f53c697bc6ba576d7e48d2839c621a4c2ba8616199e858efb9acb55d741e527",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 281,
+   "cle": "mains-croisees-derriere-le-dos|homme",
+   "source_sha256": "35a75b58860e85ec269dec7715271b0b2f613486e5d5c44546275c930f57871e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 282,
+   "cle": "marche-sur-place|homme",
+   "source_sha256": "f4ec0f57cddfd7aba48b5a923ab5d85e68d910ff496a1eb4884ff8706ef0859b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 283,
+   "cle": "mollet-en-escalier|homme",
+   "source_sha256": "9151efe4c2262c968f90da3178af586e3a02c88254081973a0336698ad0bab41",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 284,
+   "cle": "mollets|homme",
+   "source_sha256": "3612263405930874167d50e781515677ffdc2bf0d0d3fad87280dc5a223a65f4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 285,
+   "cle": "montees-de-genoux-effort|femme",
+   "source_sha256": "07d64eaf46c2dc2fcf87e38dc2fe7bcd27037586273e3e5ec0b16bc987c68083",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 286,
+   "cle": "montees-sur-mollets|homme",
+   "source_sha256": "2f18d124f8a83d4ef46025fd39b6b6023a68c52531cdaee3a47a453f29daf4df",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 287,
+   "cle": "mountain-climbers-lents|homme",
+   "source_sha256": "f45acf6d65339fce33c17c0f30264848c5908ae027abdceb3a109c7d332078f2",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 288,
+   "cle": "nage-douce-respiration|femme",
+   "source_sha256": "a9b2430d317e3bba88f16d2538c4724bb66ab07cac0e374b779dbef0b77bd335",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 289,
+   "cle": "nage-statique-douce|femme",
+   "source_sha256": "236c40fd157f0f41ecd49a30c077294a5901f6cf134a25f09b59ec1ae1c3e072",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 290,
+   "cle": "nage-statique-z2|femme",
+   "source_sha256": "236c40fd157f0f41ecd49a30c077294a5901f6cf134a25f09b59ec1ae1c3e072",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 291,
+   "cle": "nager-fractionne-1-6|femme",
+   "source_sha256": "19750699871755e538f1387193bd83666951215d924ac9fa551317f12dda3f04",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 292,
+   "cle": "nager-sprint-1-8|femme",
+   "source_sha256": "47746e12d90c5e2ce45f1921b31ec9540f7c6e7a4f9cd3686b3da07387e196fd",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 293,
+   "cle": "oiseau-chien|homme",
+   "source_sha256": "ff8da6669ded238d123eb473404b519fc2153368fc44154b557848015015b972",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 294,
+   "cle": "patineurs|homme",
+   "source_sha256": "c937caee1e7ea8f7d49adac642c3a51413c998eb615e25cea863a2bc2186607f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 295,
+   "cle": "pigeon-assis|homme",
+   "source_sha256": "2af48ab193eaafb4518cf14df271b4a48dfdc6700f76325808d800e61ed7acce",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 296,
+   "cle": "planche|homme",
+   "source_sha256": "f59b2eb7a8eda3a174c44bf13e2b5cfe07946e00f26d46612b1437ba2fe9e15e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 297,
+   "cle": "planche-laterale-g|homme",
+   "source_sha256": "2baeb1b19fde1b86f6782b4ec05af13b68e3690e8eaadca7e2244125c77feff6",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 298,
+   "cle": "pompes-au-bord-effort|femme",
+   "source_sha256": "ff8455430abf42f0e3f2bb88001f031e6877e96ae611a65db8f4c67da2d00b55",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 299,
+   "cle": "pompes-au-mur|homme",
+   "source_sha256": "966aae5ddbd59234313cd9bf40800aa26bec27f7c79638862091476c137bf98b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 300,
+   "cle": "pompes-inclinees|homme",
+   "source_sha256": "33b7068aa34ff96812533736ad457cfd3c88bc8e438942900ea892cce6de3024",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 301,
+   "cle": "ponts-fessiers|homme",
+   "source_sha256": "ebde577e05a55bed8bb02470baef383e14dc0f06fa98752ce2567a7f0c1625c8",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 302,
+   "cle": "position-de-l-enfant|homme",
+   "source_sha256": "02e02042c969f616473560f20b8473c2fbb761410c26944b3db9d9b5c26f928e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 303,
+   "cle": "position-de-l-enfant-balasana|homme",
+   "source_sha256": "616fc69f3a7503bf22625ff3d5d10ab90587ecc45b00933d2605b45ced27184a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 304,
+   "cle": "recup-active-marche-aquatique|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 305,
+   "cle": "recup-complete-souffler-au-bord|femme",
+   "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 306,
+   "cle": "recup-courte-marche|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 307,
+   "cle": "recup-marche|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 308,
+   "cle": "recup-marche-aquatique|femme",
+   "source_sha256": "60207d563d74fd85cdca4a92074d42e4e8cbfaf4e5a6efd8e363cfec4747008c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 309,
+   "cle": "repos|femme",
+   "source_sha256": "cf45fce9dceafeb4862ef5a0462f90ad064e3968233bf21a5f6a25aa477c7cac",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 310,
+   "cle": "repos-actif|homme",
+   "source_sha256": "6e77f29b4f7b4870ad78fb2b38ce7e0907ff6fc129d5bf4ba7bc53a7975feb5e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 311,
+   "cle": "respiration-diaphragmatique-allongee|homme",
+   "source_sha256": "54a3ca1547a3a6132b545d9812f1393f7b7f907921ec61a3a7d58030b528c215",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 312,
+   "cle": "respiration-profonde|homme",
+   "source_sha256": "9b3cc7d681fe70481c3220a9102463d02f80b8de8e15217542ec9d0f66af4675",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 313,
+   "cle": "retour-au-calme-mobilite|femme",
+   "source_sha256": "7ff5fea738f927d8dd28a919e8af4fc4e2b680f3c4c1113dab19249f4c96e4f0",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 314,
+   "cle": "retour-au-calme-nage-douce|femme",
+   "source_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 315,
+   "cle": "retour-au-calme-nage-tres-douce|femme",
+   "source_sha256": "3d44d275ca25d14695b9294ae3cae0064d87a800e989f71d4ab9a9bf85232135",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 316,
+   "cle": "retour-au-calme-respiration|femme",
+   "source_sha256": "d72ff5db739f1e85658cbb832694043e91bde3718dbc5966f138246f7bc30a53",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 317,
+   "cle": "russian-twist|homme",
+   "source_sha256": "2204cfebd9d348e89f4330649ba77d472fe9437925c294c50c4e36e228fe180e",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 318,
+   "cle": "squats|homme",
+   "source_sha256": "eb6b4ca3fa5a3f78537ba4a6844d047c6b4d3992b9619348191af56cb453dd90",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 319,
+   "cle": "squats-doux|homme",
+   "source_sha256": "90366242bb0e0b8b639901a234eb57a00444426dc5b2b0726ae59b9833be08ca",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 320,
+   "cle": "squats-sautes|homme",
+   "source_sha256": "e739223b003d361156bad015acedde21197e03a4318815c1748c354a1a41f907",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 321,
+   "cle": "squats-sumo|homme",
+   "source_sha256": "e6c19b6540cdcf3048be64a2fefdd246d390869632b71c51a6cd34ab7d2eadcf",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 322,
+   "cle": "superman|homme",
+   "source_sha256": "8047d3ad4dc93bc77edda95a7b395606bc9fb53e4163df5781abddcccec6714d",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 323,
+   "cle": "suspension-a-la-barre|homme",
+   "source_sha256": "bcea47097d3f6f500e472a40cc165a3366d8ae3e429aa4dd01efacc44c90c933",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 324,
+   "cle": "tabata-1-2-en-place|femme",
+   "source_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 325,
+   "cle": "talon-vers-la-fesse-debout|homme",
+   "source_sha256": "58caaf8e87d7a05009b2561337b9e859a6540017ded9e811caaa99c9ba6db00a",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 326,
+   "cle": "talons-fesses-effort|femme",
+   "source_sha256": "4ffe4ebe811fc2a8c22018c8f71950e7b18ef28aad31cb3a9a21ce21a0c40dc1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 327,
+   "cle": "torsion-allongee|homme",
+   "source_sha256": "cf7af56885b9a27b289c3166f23bc91aab0ef027b931f04d874d9a6f2e963ceb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 328,
+   "cle": "torsion-allongee-genoux|homme",
+   "source_sha256": "22ff5ac222d5ef2f8aafc1bee9b085d764ce559dc80dc155ec7e1921b3174f10",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 329,
+   "cle": "tour-1-2-en-place|femme",
+   "source_sha256": "34bb7bcf656e88775b317bc0bf1a688d1f9bf91d80009e6863cc7ed94344128c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 330,
+   "cle": "transition|femme",
+   "source_sha256": "524c459ec951747e258ecedb9614a4c37626585da1e2ba818a82aa2baa0ea796",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 331,
+   "cle": "une-jambe-tendue-une-pliee|homme",
+   "source_sha256": "93fc13ba7cb57d7a490c7c99b702179ce08ad3f532af1bb3b4c2ee67117d48d7",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 332,
+   "cle": "aqua-jogging-sur-place|homme",
+   "source_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 333,
+   "cle": "aqua-jogging|homme",
+   "source_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 334,
+   "cle": "aqua-jogging-effort|homme",
+   "source_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 335,
+   "cle": "tabata-1-2-en-place|homme",
+   "source_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 336,
+   "cle": "tour-1-2-en-place|homme",
+   "source_sha256": "1df3b49ed74b1925ac1ddf2a9e36932cc4efa9057b23aeb86a1c9565535ddab5",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 337,
+   "cle": "ciseaux-mains-au-bord|homme",
+   "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 338,
+   "cle": "ciseaux-au-bord|homme",
+   "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 339,
+   "cle": "ciseaux-au-bord-effort|homme",
+   "source_sha256": "9bb0c2ca85d475fea529a9ebd5b283c9c9d426ca8f4e38cce9e102912604b6d4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 340,
+   "cle": "deplacements-lateraux-4-m|homme",
+   "source_sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 341,
+   "cle": "deplacements-lateraux|homme",
+   "source_sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 342,
+   "cle": "deplacements-lateraux-4-m-effort|homme",
+   "source_sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 343,
+   "cle": "gainage-au-bord-vertical|homme",
+   "source_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 344,
+   "cle": "gainage-vertical|homme",
+   "source_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 345,
+   "cle": "gainage-vertical-au-bord|homme",
+   "source_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 346,
+   "cle": "gainage-vertical-effort|homme",
+   "source_sha256": "ea89dfb8521cdcc6224413a2a7b7351b509c62c77e9b9f0eb9a8e4abb00b1c42",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 347,
+   "cle": "marche-aquatique|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 348,
+   "cle": "echauffement-marche-aquatique|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 349,
+   "cle": "recup-active-marche-aquatique|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 350,
+   "cle": "recup-courte-marche|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 351,
+   "cle": "recup-entre-tabatas|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 352,
+   "cle": "recup-marche|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 353,
+   "cle": "recup-marche-aquatique|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 354,
+   "cle": "retour-au-calme|homme",
+   "source_sha256": "333e9e6ac33e22bb4a181aee27629030b8dc48b9db18a8a6ecfadafbda305f65",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 355,
+   "cle": "montees-de-genoux-effort|homme",
+   "source_sha256": "1bc91a9fcf375cec75446e37c1f5b18fbb3701609661f2d6345da2e548963690",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 356,
+   "cle": "nage-douce|homme",
+   "source_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 357,
+   "cle": "echauffement-nage-douce|homme",
+   "source_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 358,
+   "cle": "echauffement-soigneux-nage-douce|homme",
+   "source_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 359,
+   "cle": "retour-au-calme-nage-douce|homme",
+   "source_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 360,
+   "cle": "retour-au-calme-nage-tres-douce|homme",
+   "source_sha256": "3d2c2e5b9e90f3b7b5eee490d6d39d104cff9a09000a0bb3af3e622ad54b55a4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 361,
+   "cle": "pompes-au-bord|homme",
+   "source_sha256": "2230059bd74dadeb17b57bde84f1072631fb6bc145192b123a676f4f31af6dbb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 362,
+   "cle": "pompes-au-bord-effort|homme",
+   "source_sha256": "2230059bd74dadeb17b57bde84f1072631fb6bc145192b123a676f4f31af6dbb",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 363,
+   "cle": "repos|homme",
+   "source_sha256": "78873f737bd9ff2da9ab968caa93bfb3f4ebf76c44776f2e50d6621274370e6c",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 364,
+   "cle": "etirements-au-bord|homme",
+   "source_sha256": "b8ec7015069f653b89dbec2449c3df064bcd5641023be8e132fcb67bbdc1a0af",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 365,
+   "cle": "fractionne-nager|homme",
+   "source_sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 366,
+   "cle": "nager-fractionne-1-6|homme",
+   "source_sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 367,
+   "cle": "mobilite-epaules-aquatique|homme",
+   "source_sha256": "b114493c7ecf5b5a5cbe78ee052ef7434991260ec1854314f3d04e159c9ebac9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 368,
+   "cle": "retour-au-calme-mobilite|homme",
+   "source_sha256": "b114493c7ecf5b5a5cbe78ee052ef7434991260ec1854314f3d04e159c9ebac9",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 369,
+   "cle": "nage-douce-respiration|homme",
+   "source_sha256": "f5754e3553d3922c94ac0b02b4e4bbbf79024db74c0c7f2d762ea050f16fb602",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 370,
+   "cle": "nage-statique-a-l-elastique|homme",
+   "source_sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 371,
+   "cle": "nage-statique-douce|homme",
+   "source_sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 372,
+   "cle": "nage-statique-z2|homme",
+   "source_sha256": "fcf1161f1d9a09d81a82e552da9d51793fdd52d75028a534eb3cfb84f4ac6654",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 373,
+   "cle": "recup-complete-souffler|homme",
+   "source_sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 374,
+   "cle": "recup-complete-souffler-au-bord|homme",
+   "source_sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 375,
+   "cle": "retour-au-calme-respiration|homme",
+   "source_sha256": "08daba09974f37b0c805665c209f87a2db38af749f7d732e921fb7f1aef4d8bf",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 376,
+   "cle": "battements-au-bord|homme",
+   "source_sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 377,
+   "cle": "battements-de-jambes-effort|homme",
+   "source_sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 378,
+   "cle": "echauffement-battements-au-bord|homme",
+   "source_sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 379,
+   "cle": "echauffement-battements-mobilite|homme",
+   "source_sha256": "28c30533035866c348c1feba6c27ae9173bc0d50852adf2a75418d3ccfeec8ec",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 380,
+   "cle": "mobilite-hanches-chevilles|homme",
+   "source_sha256": "f2bab6bc3f793ce9c0113a8d56d5dfebaff11cb41a277d7795f1080898668d20",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 381,
+   "cle": "sprint-nager-a-fond|homme",
+   "source_sha256": "1cecadb65e47315a18a84b54ae9e504625d618f55329cbfb172c121ff9d5d4ef",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 382,
+   "cle": "nager-sprint-1-8|homme",
+   "source_sha256": "1cecadb65e47315a18a84b54ae9e504625d618f55329cbfb172c121ff9d5d4ef",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 383,
+   "cle": "elliptique-recuperation-active|homme",
+   "source_sha256": "7d74994e8d8777be8bc76a6316ea3130ef1a85df044d957575f8084ee3d749d4",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 384,
+   "cle": "elliptique-retour-au-calme|homme",
+   "source_sha256": "098935746d0a45c310eb80883feb37b36ec512d284fe85587f338b58e036aee1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 385,
+   "cle": "transition|homme",
+   "source_sha256": "bf54d3bdd17514e250db70734293afbf739c1e4ba2f6f45732c09ec72a1e50c1",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 386,
+   "cle": "elliptique-mise-en-route|homme",
+   "source_sha256": "7acb83b71752c44cb6b0f6f20332b3abc4eb8ec4d8a9bc25dcd582104e699cae",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 387,
+   "cle": "talons-fesses|homme",
+   "source_sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 388,
+   "cle": "talons-fesses-effort|homme",
+   "source_sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  },
+  {
+   "numero": 389,
+   "cle": "elliptique-fractionne|homme",
+   "source_sha256": "d003581431ffef91e867febac6d5080f9d33094b0d41f81f5af8a82228728d5b",
+   "statut_style": "a_traiter",
+   "style_integre": false
+  }
+ ]
+}

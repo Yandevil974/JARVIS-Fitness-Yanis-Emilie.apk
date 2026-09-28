@@ -1,0 +1,157 @@
+{
+ "date": "2026-09-28",
+ "perimetre_global": 389,
+ "lots_precedents": "lot01 : style phase1 approuvé par « super vas-y »",
+ "appels_generation_ce_tour": 6,
+ "echecs_generation_ce_tour": 1,
+ "gif_livres_modifies": 0,
+ "gif_proposes": 3,
+ "gif_a_reprendre": 1,
+ "propositions": [
+  {
+   "numero": 44,
+   "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "proposition_sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+   "frames": 2,
+   "taille": [
+    259,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_style_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 2703,
+     "nouveaux_indices_palette": 7,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 8.979
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 1564,
+     "nouveaux_indices_palette": 6,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 12.989
+    }
+   ]
+  },
+  {
+   "numero": 48,
+   "source_sha256": "41530fc75cfc38f69ec68dfc9f94601d21f8ff8f37a3af7f87381ab7c051a704",
+   "proposition_sha256": "b418f839c5d311063e48745ed65d3312df065a573180ca61f5f4043a4628be48",
+   "frames": 4,
+   "taille": [
+    264,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500,
+    500,
+    500
+   ],
+   "statut": "a_reprendre_raccord_coussin",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 2926,
+     "nouveaux_indices_palette": 6,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 11.452
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 1293,
+     "nouveaux_indices_palette": 3,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 10.118
+    },
+    {
+     "phase": 3,
+     "pixels_masque": 1662,
+     "nouveaux_indices_palette": 1,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 9.178
+    },
+    {
+     "phase": 4,
+     "pixels_masque": 2992,
+     "nouveaux_indices_palette": 7,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 10.608
+    }
+   ]
+  },
+  {
+   "numero": 80,
+   "source_sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+   "proposition_sha256": "5dd6b0eeac3e4d3aa566994b9159b81036365dbddd09c83df4459afdb29914d5",
+   "frames": 2,
+   "taille": [
+    684,
+    768
+   ],
+   "durees_ms": [
+    1000,
+    1000
+   ],
+   "statut": "proposition_style_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 5568,
+     "nouveaux_indices_palette": 0,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 13.288
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 764,
+     "nouveaux_indices_palette": 0,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 12.439
+    }
+   ]
+  },
+  {
+   "numero": 45,
+   "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "proposition_sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+   "frames": 2,
+   "taille": [
+    259,
+    440
+   ],
+   "durees_ms": [
+    500,
+    500
+   ],
+   "statut": "proposition_style_a_controler",
+   "integre": false,
+   "phases": [
+    {
+     "phase": 1,
+     "pixels_masque": 2703,
+     "nouveaux_indices_palette": 7,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 8.979
+    },
+    {
+     "phase": 2,
+     "pixels_masque": 1564,
+     "nouveaux_indices_palette": 6,
+     "pixels_modifies_hors_masque": 0,
+     "erreur_moyenne_rgb_dans_masque_apres_palette": 12.989
+    }
+   ],
+   "copie_conforme_de": 44
+  }
+ ]
+}

@@ -1,3 +1,13 @@
+# STYLE 389 — lot02 (28/09/2026), priorité actuelle
+
+L’utilisateur a répondu **« super vas-y »** au premier essai de relief : direction de style acceptée, poursuivre les 389. Ne pas redemander teinte/périmètre.
+Lot02 : **3 GIF complets proposés (44/45/80), 1 à reprendre (48), 385 non traités, 0 intégré**. N°48 exclu du PDF présenté : raccord muscle/coussin insuffisant. PDF de contrôle `style-260/lot02/STYLE-260-lot02.pdf` : 2 pages.
+Six générations tentées (5 crops + 1 échec), uniquement muscles locaux. Sources/masques et script reproductible conservés. Contrôle sur GIF décodés : **0 pixel modifié hors masque**, donc mains/visages/gestes préservés ; n°80 approuvé inchangé dans les livrés. Aucun APK ni manifeste modifié.
+Suivi exhaustif : `style-260/progression-389.json`. Reste : corriger48 puis19/85 et avancer par lots sur les autres. Le style n’est pas terminé sur les389. Les images générées restent des propositions, pas des validations utilisateur automatiques.
+Reprise technique de session : HEAD local revenu à ddd1fb9 avec fichiers présents ; fetch branche imposée puis reset MIXED vers323773e (aucun fichier de travail écrasé). Dépendances réinstallées dans .cache.
+
+---
+
 # STYLE — périmètre confirmé : les 389 visuels (28/09/2026)
 
 L’utilisateur répond **« tout, les 389 »** : uniformiser le vert comme le n°260, avec muscle nettement délimité et relief, pas une plaque. Ne plus redemander le choix ni le périmètre.

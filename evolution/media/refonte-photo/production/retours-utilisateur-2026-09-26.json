@@ -1438,8 +1438,10 @@
   "perimetre": "ensemble_des_389_visuels",
   "recoloration_effectuee": false,
   "accord_perimetre": "tout, les 389",
-  "statut": "audit_technique_termine_premier_essai_local_non_valide",
+  "statut": "lot02_3_propositions_1_reprise_385_a_traiter",
   "gif_style_finalises": 0,
-  "gif_style_integres": 0
+  "gif_style_integres": 0,
+  "accord_direction_style": "super vas-y",
+  "gif_style_proposes": 3
  }
 }
