@@ -1,0 +1,17 @@
+{
+  "avant_etape_3": {
+    "etat": "a_demander",
+    "question": "Souhaitez-vous uniformiser la couleur verte des muscles sur celle du n°260 ?",
+    "reference_numero": 260,
+    "reference_cle": "elliptique-fractionne|femme",
+    "reference_gif": "evolution/media/refonte-photo/gif/femme/elliptique-fractionne-femme.gif",
+    "decision": null,
+    "interdiction": "Ne pas uniformiser automatiquement ; demander AVANT passage à étape3."
+  },
+  "construction_application": {
+    "etat": "a_rappeler",
+    "texte": "Rappeler à l’utilisateur de rajouter metcon + piscine nage fractionnée et/ou Aqua tabata pour Émilie.",
+    "decision": null,
+    "interdiction": "Rappel au moment de construire application ; ne pas coder ces ajouts sans confirmation."
+  }
+}

@@ -1,0 +1,375 @@
+{
+ "aRefaire": [
+  {
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "numero_signale": 19,
+   "lot": 62,
+   "motif": "Bulgarian Split : jambe pliée de la fille à l’envers.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot68 : réserve teinte TRAITÉE — olive sombre recolorisé lime strict par PIL (patch cuisse, plante épargnée, strict 1809/1265 px), original en .avant-recolor.gif. À re-vérifier dans le comparatif avant accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "crunch-a-la-poulie|homme",
+   "numero_signale": 26,
+   "lot": 62,
+   "motif": "Crunch poulie : mains et corde derrière la tête ; éloigner davantage de la machine.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot68 : stratégie du brief appliquée — arrivée d'abord (câble unique poulie haute→corde derrière la tête, deux mains lisibles, enroulement du tronc, éloignement), départ édité depuis l'arrivée. Proposition lot68 isolée, NON VALIDÉE. Réserves : micro-variation tapis, main lointaine près du mousqueton en fin. Ne pas intégrer sans accord.",
+    "27/09 retour utilisateur : Phase 2 : les deux mains doivent tenir la corde derrière la tête. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-concentration|homme",
+   "numero_signale": 31,
+   "lot": 62,
+   "motif": "Curl concentration : tourner la main vers la droite au départ.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot62 : deux positions séparées, case haute produite d’abord puis extension depuis cette référence. Buste penché, paume de départ en supination plus lisible, coude proche de l’intérieur cuisse. Contact précis coude-cuisse et direction paume à apprécier dans la revue utilisateur ; proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-marteau|homme",
+   "numero_signale": 37,
+   "lot": 62,
+   "motif": "Curl marteau : en haut, paume vers le corps comme au départ. Corriger les autres marteau.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Essai2 guidé : paumes neutres en haut, haltères verticaux. Relire cadrage avant accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-marteau-assis|homme",
+   "numero_signale": 38,
+   "lot": 62,
+   "motif": "Extension de la correction n°37 : curl marteau assis.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot60 : déclinaison assise de la référence marteau corrigée37. Paumes neutres et haltères verticaux en haut, bras initial bas. Proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-scott-haltere-neutre|homme",
+   "numero_signale": 44,
+   "lot": 64,
+   "motif": "Curl Scott : bras de départ non posé sur le pupitre.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot68 : réserve teinte TRAITÉE — cyan diffus recolorisé lime strict par PIL (case2 0->545 px strict), original en .avant-recolor.gif. Réserves restantes : main basse masquée par disque, dimensions haltère, décor gris.",
+    "27/09 retour utilisateur : Ce n’est pas un curl marteau : corriger l’orientation des mains pour un curl normal supiné. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "numero_signale": 45,
+   "lot": 64,
+   "motif": "Tourner la paume au départ.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot68 : réserve teinte TRAITÉE comme 44 (paire partagée). Réserves restantes : lecture prise basse, dimensions haltère, décor gris.",
+    "27/09 retour utilisateur : Ce n’est pas un curl marteau : corriger l’orientation des mains pour un curl normal supiné (paire commune avec le n°44). Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-zottman|homme",
+   "numero_signale": 46,
+   "lot": 65,
+   "motif": "Zottman : montrer montée curl classique et descente curl inversé ; corriger les autres Zottman.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot65 : proposition debout en4 phases : bas supination, haut supination, haut pronation, bas pronation. Deux mains différenciées aux rotations. Sources debout lot26 ; retouches locales et masques de premier plan, anciens disques effacés par inpainting, aucune inversion globale. Réserves raccords des poignets, taille/nombre de disques différents entre bas/haut, rendu des aplats verts. Proposition non validée, pas prête pour intégration."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-zottman-assis|homme",
+   "numero_signale": 47,
+   "lot": 66,
+   "motif": "Extension de la correction n°46 : Zottman assis.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot66 : proposition assise4 phases : bas supination, haut supination, haut pronation, bas pronation. Trois retouches individuelles : main droite image basse et deux mains hautes ; deux paumes en haut et deux dos de main en bas pour descente. Corps/caméra conservés, pas miroir ni rotation globale. Réserves raccords des poignets, petites différences de cadrage/poids et rendu vert plus étendu en bas (aspect manchon) ; présence mesurée ne vaut pas validation stylistique. Aucune intégration."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "curl-zottman-un-bras-banc-scott|homme",
+   "numero_signale": 48,
+   "lot": 64,
+   "motif": "Extension de la correction n°46 : Zottman un bras banc Scott.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot68 tour5 : réserve teinte TRAITÉE — cyan -> lime strict PIL sur les 4 phases (original .avant-recolor.gif). Restent : raccords poignets, disques, bords crénelés discrets. Format 4 phases accepté, images NON validées."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "developpe-halteres-decline-prise-neutre|homme",
+   "numero_signale": 64,
+   "lot": 62,
+   "motif": "Développé haltères décliné : banc non décliné.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Essai2 guidé : banc clairement décliné tête sous bassin. Relire aussi la prise neutre avant accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "numero_signale": 85,
+   "lot": 63,
+   "motif": "Élévation latérale coude 90 : départ paume vers corps ; fin avant-bras au niveau du coude à 90°.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot68 tour5 : réserve débord TRAITÉE — vert supprimé au-dessus de la ligne d'épaule (0 px strict restant), halo harmonisé ; phases .avant-degreen.png. Restent : paumes petites à l'échelle, écarture coudes à apprécier."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "numero_signale": 87,
+   "lot": 62,
+   "motif": "Ce n’est pas le bon mouvement.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot60 : vraie élévation latérale bras vers les côtés, haltères légers ; pas un curl. Le protocole myo-reps conserve ses séries/pauses, seul le geste est illustré. Proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "elevations-laterales-lean-away|homme",
+   "numero_signale": 90,
+   "lot": 62,
+   "motif": "Lean away : bras qui tient la barre tendu.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot59 essai2 avec schéma : bras d’appui tendu, élévation latérale et inclinaison maintenues. GIF candidat sans recalage automatique qui coupait les mains. Non validé."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "jackknife-sur-swiss-ball|homme",
+   "numero_signale": 126,
+   "lot": 62,
+   "motif": "Jackknife : homme à l’envers en position finale.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot61 schéma large : tronc face sol dans les deux cases, mains fixes, genoux ramenés, ballon et pieds entièrement cadrés. Proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "mountain-climbers|homme",
+   "numero_signale": 148,
+   "lot": 63,
+   "motif": "Mountain climbers : image finale avec trois jambes ; supprimer le membre surnuméraire.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot63 : deux jambes dans chaque case ; genou proche ramené au départ, genou éloigné ramené en fin. Édition directe refusée (même jambe), guide passé par planche jambes tendues puis flexion jambe éloignée : alternance obtenue sans miroir. GIF sans recalage, mains/pieds entiers. Teinte abdominale olive, style/couleur non validés ; anatomie et amplitude à apprécier en revue."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pallof-press-a-l-elastique|femme",
+   "numero_signale": 149,
+   "lot": 62,
+   "motif": "149 et150 à retravailler. Pour149, athlète de face au départ.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot58 vue de face maintenue, ancrage élastique latéral gauche, seules mains avancent. Proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pallof-press-a-la-poulie|femme",
+   "numero_signale": 150,
+   "lot": 62,
+   "motif": "149 et150 à retravailler ; position corps et cadrage cohérents.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot58 même orientation corps et pieds aux deux cases, station à droite ; bras repliés puis tendus. Proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "step-up-haut|homme",
+   "numero_signale": 194,
+   "lot": 62,
+   "motif": "Step-up haut : pas la même jambe au départ et à l’arrivée.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot59 : même jambe droite sur le step au départ et à l’arrivée. Réserve : disques de barre partiellement coupés par le cadrage ; contrôle final requis avant intégration."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "tractions-supination-chin-up|homme",
+   "numero_signale": 204,
+   "lot": 62,
+   "motif": "À refaire.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot68 tour3 : recette diptyque + guide prise supination → départ hang bras tendus, fin menton au-dessus de la barre, supination lisible aux deux cases. Proposition lot68 isolée NON VALIDÉE. Réserves : échelle plus grande en fin (saut de case), marge menton modérée. Ne pas intégrer sans accord."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pompes-au-bord|femme",
+   "numero_signale": 222,
+   "lot": 62,
+   "motif": "Corps dans l’eau.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot59 : femme debout DANS le bassin, pieds au fond et jambes immergées. Eau aux hanches, profondeur à apprécier par utilisateur ; essai2 eau plus haute non obtenu. Non validé."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "bras-tendu-contre-le-mur|homme",
+   "numero_signale": 239,
+   "lot": 62,
+   "motif": "Bras tendu ; tronc à l’envers par rapport aux pieds.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot61 essai2 : bras tendu au mur, corps et pieds cohérents, pas de passage à une vue de dos. Rotation du tronc faible (tête tourne davantage) à apprécier ; proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "etirement-dans-l-encadrement-de-porte|homme",
+   "numero_signale": 265,
+   "lot": 62,
+   "motif": "Ne comprend pas le mouvement.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot60 essai2 guidé : avant-bras vertical au montant, coude90°, petite fente avant. GIF sans recalage (le recalage coupait la main finale). Vert plus sourd et amplitude douce à apprécier ; proposition non validée."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "pompes-au-bord-effort|femme",
+   "numero_signale": 298,
+   "lot": 62,
+   "motif": "Corps dans l’eau.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Copie conforme CANDIDATE du n°222. Femme debout dans le bassin ; profondeur eau aux hanches à apprécier. Non validé."
+   ],
+   "validationUtilisateurRequise": true
+  },
+  {
+   "cle": "mobilite-hanches-chevilles|homme",
+   "numero_signale": 380,
+   "lot": 62,
+   "motif": "Tronc à l’envers en position finale.",
+   "statut": "propose_attente_accord",
+   "reglesPrompt": [
+    "Lot59 : tronc orienté vers la droite aux deux cases, jambe devant puis derrière. Non validé."
+   ],
+   "validationUtilisateurRequise": true
+  }
+ ],
+ "verifieesEtAcceptees": [
+  "adduction-de-la-hanche-debout",
+  "allonge-sur-le-cote",
+  "bras-tendu-contre-la-poitrine",
+  "bras-tendu-contre-le-mur",
+  "bras-tendu-derriere",
+  "bras-tendu-devant-main-tiree",
+  "cobra-doux",
+  "coude-au-dessus-de-la-tete",
+  "etirement-contre-le-mur",
+  "etirement-dans-l-encadrement-de-porte",
+  "etirement-des-extenseurs",
+  "etirement-des-flechisseurs",
+  "etirement-du-cobra",
+  "etirement-du-flechisseur-de-hanche-chevalier",
+  "etirement-du-piriforme-assis",
+  "flexion-avant-jambes-tendues",
+  "grenouille-plantes-jointes",
+  "mains-croisees-derriere-le-dos",
+  "mollet-en-escalier",
+  "mountain-climbers",
+  "pigeon-assis",
+  "position-de-l-enfant",
+  "position-de-l-enfant-balasana",
+  "respiration-diaphragmatique-allongee",
+  "suspension-a-la-barre",
+  "talon-vers-la-fesse-debout",
+  "torsion-allongee",
+  "torsion-allongee-genoux",
+  "squats-doux|homme",
+  "nage-douce|femme",
+  "nage-douce-respiration|femme",
+  "torsion-allongee|homme",
+  "souleve-de-terre|homme",
+  "transition|femme",
+  "rowing-assis-etirement|homme",
+  "battements-au-bord|homme",
+  "mobilite-hanches-chevilles|homme",
+  "sprint-nager-a-fond|homme",
+  "elliptique-mise-en-route|homme",
+  "talons-fesses|homme",
+  "elliptique-fractionne|homme"
+ ],
+ "historiqueRelecture26": {
+  "date": "2026-09-26",
+  "lot": 50,
+  "torsion-allongee|homme": "REFUSE a la relecture (lot04 : torsion ASSISE au lieu de « sur le dos, genoux plies, basculez les jambes d un cote, regardez de l autre ») -> refait lot50 : sur le dos, genoux bascules cote oppose a la camera, tete tournee vers la camera, vue de cote surelevee ; ACCEPTE",
+  "souleve-de-terre|homme": "REFUSE a la relecture (lot01 : ordre inverse gauche=verrouillage, angle face puis 3/4, vert sur quadriceps pour cible ischios) -> refait lot50 : profil strict, gauche=barre au sol hanches hautes, droite=verrouillage, vert ischios+fessiers aux deux cases ; ACCEPTE",
+  "transition|femme": "REFUSE a la relecture (lot03 : case 1 de face, case 2 de profil = GIF qui saute) -> refait lot50 : profil aux deux cases pres de l elliptique, boire puis marcher (texte app : boire, se secher, rejoindre le bassin sans trainer) ; ACCEPTE",
+  "rowing-assis-etirement|homme": "cases INVERSEES a la relecture (gauche=poignee au ventre=fin, droite=etirement=debut) -> cases echangees par PIL (planche lot50, aucune generation) ; ACCEPTE"
+ },
+ "historiqueLot56": [
+  {
+   "cle": "elliptique-fractionne|homme",
+   "lot": 55,
+   "essai": 7,
+   "motif": "Essai4 référence mise-en-route : même phase + main libre derrière dos ; essai5 vue 3/4 frontale : même jambe ; essai6 guide rose superposé puis essai7 ancienne pose effacée et guide peint : toujours même jambe proche basse. Tous refusés.",
+   "prescription": "Elliptique — fractionne : cadence haute, pousser fort sur les jambes, tirer franchement sur les bras, posture tenue",
+   "reglesPrompt": [
+    "Essai8 : générer une NOUVELLE phase seule depuis référence maître + schéma indépendant de machine, sans photo de pose précédente (ancrage trop fort). Vue de FACE STRICTE et genou côté gauche image haut, autre jambe tendue basse.",
+    "Puis créer la phase opposée avec le même modèle de machine ; contrôler décor et machine avant assemblage, pas de miroir global.",
+    "Deux mains sur poignées mobiles, pieds à plat sur pédales opposées, vert cuisses fessiers mollets aux deux cases."
+   ]
+  }
+ ],
+ "regleStyleVerteUtilisateur2026_09_27": {
+  "demande": "Le vert de tous les GIFs doit être bien visible et suivre la forme du muscle, pas être une plaque colorée.",
+  "statut": "critere global enregistré; périmètre exact à confirmer (ensemble des 331 GIFs livrés ou GIFs du PDF de corrections).",
+  "regle": "Présence du vert mesurée sur le corps hors plantes; vérifier contours anatomiques, texture visible et absence d’aplat géométrique.",
+  "aucun_livre_modifie": true
+ },
+ "historiqueValidation80_2026_09_28": {
+  "entrees_anterieures": [
+   {
+    "cle": "ecartes-halteres|homme",
+    "numero_signale": 80,
+    "lot": 67,
+    "motif": "Écartés incliné : tourner la main, paume dirigée vers le plafond.",
+    "statut": "propose_attente_accord",
+    "reglesPrompt": [
+     "Lot68 tour5 : réserve taches TRAITÉE — passe luminance dans le plastron, 0 px sombre restant sous seuil (traces légères possibles). Restent : dérive visage fin, échelle poids, flexion/trajectoire.",
+     "27/09 retour utilisateur : En phase 2, l’orientation des mains doit être identique à la phase 1 ; corriger la prise. Candidat lot69 non validé ; ne pas intégrer avant lecture des deux phases pleine définition.",
+     "27/09 précision utilisateur : la position des mains au départ est correcte ; ne pas les tourner en position finale, conserver exactement la même orientation des poignets/prise. Lot69 refusé par l’utilisateur ; révision phase finale lot70 non validée, à lire avant d’avancer.",
+     "27/09 précision 2 utilisateur : écarté incliné ; remonter et rapprocher les bras comme juste avant de taper dans ses mains, sans tourner bras ni mains. Lot70 refusé ; nouvelle ébauche diptyque lot71 non validée.",
+     "Référence visuelle fournie 27/09 : départ bras très ouverts ; fin bras presque tendus remontés et rapprochés pour réunir les mains/haltères au-dessus du torse comme un clap. Même orientation de prise, aucun twist/rotation des bras ou des mains. Conserver le banc incliné prescrit. Ébauche lot73 en attente de revue.",
+     "27/09 retour explicite : lot73 refusé, la main tourne encore quand le bras monte. La référence utilisateur impose bras presque tendus réunis au-dessus du torse comme pour taper dans les mains, sans tourner bras ni mains. Ne pas re-présenter lot73/lot74 comme correction."
+    ],
+    "validationUtilisateurRequise": true
+   }
+  ],
+  "statut": "valide_integre",
+  "sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b"
+ }
+}

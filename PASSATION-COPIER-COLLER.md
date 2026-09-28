@@ -1,0 +1,90 @@
+# ÉTAT PRIORITAIRE — 28/09/2026 : n°80 VALIDÉ ET INTÉGRÉ AUX MÉDIAS
+
+Branche active : `arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap`.
+Accord explicite utilisateur sur `review/80-photo-reference-directe.gif` (commit e85296d).
+Copie octet pour octet dans `gif/homme/ecartes-halteres-homme.gif` ; manifeste et map actualisés, PDF principal et index régénérés.
+**1/26 approuvé, 25 en attente.** Aucun autre GIF modifié. APK non reconstruit, application installée inchangée.
+Étape 2 reste ouverte ; ne pas valider les 25 autres par déduction. Avant étape 3 (réglages de niveau cardio/piscine des deux profils), demander le choix du vert : actuel (154,205,50), identique au n°260 (~117,189,18), ou décider plus tard. Aucune recoloration effectuée.
+Avant construction : rappeler metcon + piscine fractionnée et/ou Aqua Tabata pour Émilie. Signature uniquement clé utilisateur ; IA en dernier.
+Le checkout initial ne contenait pas l’arborescence evolution : les registres proviennent de c685298 ; les autres livrés sont contrôlés dans `.cache/integration80`, non importés en masse. Pour une construction complète, restaurer les sources de c685298 dans un espace de travail puis appliquer les corrections de cette branche.
+Les paragraphes ci-dessous sont HISTORIQUES et leurs anciens compteurs/refus du n°80 sont dépassés par cet accord.
+
+---
+
+# 🚩 BLOC DE REPRISE — à copier-coller dans un nouveau chat (27/09/2026)
+
+Tu reprends la refonte des visuels JARVIS Fitness Yanis & Émilie dans `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`.
+
+**Règles de dépôt :** ne jamais pousser sur `main`, ne jamais supprimer/renommer la racine du dépôt ni `.git`.
+Branche de cette session Arena : `arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap`. HEAD au début de la passation : `0ac5fa7`.
+Si l’espace repart de `d721868`, vérifier qu’il n’y a aucune modification locale, puis récupérer la branche de session :
+
+```bash
+git status
+git fetch origin arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap
+git reset --hard FETCH_HEAD
+```
+
+Toujours travailler/pousser uniquement sur la branche Arena imposée au nouveau chat. Si le système impose un autre nom,
+obéir au nom de session fourni par Arena et mettre à jour les noms de branche dans les 4 fichiers prévus.
+
+## À lire dans cet ordre
+
+1. `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md` (l’état le plus récent est tout en haut ; historique plus bas).
+2. `CE-QUI-COINCE.md`.
+3. `evolution/media/refonte-photo/verification/VERIFICATION-2026-09-25.md`, §§85–101.
+4. Registres `production/retours-utilisateur-2026-09-26.json`, `a-refaire.json`, `rappels-utilisateur.json`, `prescriptions.json`.
+
+## État prioritaire au 27/09 — ÉTAPE 2, n°80 NON CORRIGÉ
+
+- 26 points du PDF de revue sont encore **non approuvés** : 19, 26, 31, 37, 38, 44, 45, 46, 47, 48, 64, 80, 85, 87, 90,
+  126, 148, 149, 150, 194, 204, 222, 239, 265, 298, 380. **0 validation.**
+- Les consignes récentes des n°26 (deux mains derrière la tête en phase 2) et 44/45 (curl normal supiné, pas marteau)
+  sont enregistrées ; leurs lots restent des propositions à contrôler, pas des validations.
+- **Le n°80 n’a pas de correction acceptée.** L’utilisateur a refusé explicitement les essais précédents, dont le lot73 :
+  la main tourne encore quand le bras est levé. Un essai lot74 a également échoué et a été écarté. Ne pas les présenter
+  comme corrigés et ne pas les intégrer.
+- Référence gestuelle fournie par l’utilisateur pour le n°80 : conserver le banc incliné ; départ bras largement ouverts ;
+  fin bras presque tendus remontés et rapprochés jusqu’à réunir les mains/haltères au-dessus du torse, comme pour taper
+  dans ses mains. **Ne tourner ni les bras, ni les avant-bras, ni les poignets, ni les mains** entre le départ et la fin.
+  La photo de référence est un guide du trajet et de la prise, pas une demande de changer le banc.
+- Méthode suivante : repartir de cette consigne/du guide visuel, éviter les retouches répétées par prompt qui refont le même
+  pivot, vérifier en gros plan l’orientation relative main-poignet-haltère aux DEUX phases, puis seulement produire un GIF de
+  proposition et le montrer. Ne compter aucune proposition comme validée sans contrôle utilisateur explicite.
+
+## PDFs et livrés — attention
+
+- `evolution/media/refonte-photo/review/CORRECTIONS-avant-apres.pdf` : comparatif complet des 26 reprises, mais toujours
+  en attente de validation utilisateur.
+- `evolution/media/refonte-photo/review/CORRECTIONS-ciblees-lot69.pdf` : 3 pages (26, 44/45, 80). **La page 80 montre
+  le lot73 rejeté et est obsolète pour validation. Ne pas la renvoyer comme correction réussie.** La remplacer seulement
+  lorsqu’une proposition du n°80 est réellement conforme et contrôlée.
+- Les GIF de l’application, manifeste, état, PDF principal, prescriptions et APK sont restés intacts. Aucun `valide-couples.py`
+  n’a été lancé ; aucune proposition n’a été intégrée.
+
+## Instructions impératives
+
+- Maximum **10 appels de génération par tour**, échecs compris. Aucune famille C. Visage A ; maître homme pour Yanis,
+  femme pour Émilie. Début à gauche ; même cadrage, banc/machine/orientation ; pas de miroir ni rotation globale.
+- Le vert doit être visible et dessiner anatomiquement le muscle, pas former une plaque colorée ; plantes exclues des mesures.
+  La portée de « tous les GIFs » (les 331 livrés ou le lot du PDF de corrections) reste à clarifier.
+- Ne jamais modifier une prescription pour justifier une image. Proposition ≠ validation ≠ intégration.
+- Ne jamais modifier les GIF livrés sans accord explicite par numéro ; ne jamais lancer `valide-couples.py` sans cet accord.
+- APK signé uniquement avec la clé utilisateur, jamais fabriquée ni publiée. IA conversationnelle en dernier. Préserver l’application,
+  ses 2 profils et ses fonctionnalités.
+- Les lettres isolées (`T`, `Y`, `E`, etc.) sont des relances de chat bloqué : ne rien faire, rappeler l’état et attendre.
+
+## Décisions/rappels encore en attente
+
+1. Avant l’étape 3 : garder le vert actuel `(154,205,50)`, l’uniformiser au n°260 (RGB mesuré ≈`(117,189,18)`), ou décider plus tard.
+   Ne pas recolorer avant réponse. Si « identique au 260 », repasser PIL sur 19/44/45/48/80/85 avant toute intégration.
+2. Avant toute construction d’application, rappeler les ajouts metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie
+   et confirmer le périmètre.
+3. Feuille de route après l’étape 2 : cardio/piscine ajustables pour 2 profils → images pendant chronos piscine/aqua/nage
+   fractionnée/elliptique → APK signé par clé utilisateur → IA conversationnelle en dernier.
+
+## À chaque tour
+
+Lire/actualiser ce bloc, `PASSATION-NOUVEAU-CHAT.md`, `CE-QUI-COINCE.md`, `VERIFICATION` (nouvelle section numérotée) et les
+registres concernés ; montrer les contrôles/review ; commit + push uniquement sur la branche Arena de session ; finir par un
+bloc 🚩 de reprise actualisé. Prévenir si le contexte approche de sa limite.
