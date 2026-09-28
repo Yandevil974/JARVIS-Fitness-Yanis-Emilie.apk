@@ -339,12 +339,12 @@
   },
   "curl-scott-haltere-neutre|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
-   "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
    "surface": "musculation"
   },
   "curl-scott-haltere-prise-neutre|homme": {
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
-   "sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
    "surface": "musculation"
   },
   "curl-zottman-assis|homme": {
@@ -544,7 +544,7 @@
   },
   "ecartes-halteres|homme": {
    "gif": "media/refonte-photo/gif/homme/ecartes-halteres-homme.gif",
-   "sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+   "sha256": "5dd6b0eeac3e4d3aa566994b9159b81036365dbddd09c83df4459afdb29914d5",
    "surface": "musculation"
   },
   "echauffement-battements-au-bord|femme": {

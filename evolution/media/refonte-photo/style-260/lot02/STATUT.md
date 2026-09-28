@@ -1,3 +1,9 @@
+# État courant : 44/45/80 validés et intégrés
+Accord utilisateur « Validé » reçu sur le PDF de deux pages. Copie exacte des trois GIF proposés ; manifeste/map/PDF principal/index et progression actualisés. 48 exclu de cet accord et non intégré. 3/389 styles intégrés, 386 à terminer. APK inchangé. Rapport INTEGRATION-VALIDEE.json.
+
+---
+Historique de préparation (statuts ci-dessous dépassés pour44/45/80) :
+
 # Lot02 — suite autorisée « super vas-y »
 Le style local montré au lot01 est accepté comme direction de travail pour les 389 visuels. Aucune approbation d’images futures n’est inventée.
 - 6 appels génération, dont 1 échec sans image ; 5 crops obtenus. Pas de personnage entier régénéré.

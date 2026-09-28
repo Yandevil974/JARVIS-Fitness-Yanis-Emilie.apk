@@ -4,7 +4,7 @@
  "lots_precedents": "lot01 : style phase1 approuvé par « super vas-y »",
  "appels_generation_ce_tour": 6,
  "echecs_generation_ce_tour": 1,
- "gif_livres_modifies": 0,
+ "gif_livres_modifies": 3,
  "gif_proposes": 3,
  "gif_a_reprendre": 1,
  "propositions": [
@@ -21,8 +21,8 @@
     500,
     500
    ],
-   "statut": "proposition_style_a_controler",
-   "integre": false,
+   "statut": "valide_integre",
+   "integre": true,
    "phases": [
     {
      "phase": 1,
@@ -38,7 +38,9 @@
      "pixels_modifies_hors_masque": 0,
      "erreur_moyenne_rgb_dans_masque_apres_palette": 12.989
     }
-   ]
+   ],
+   "accord": "Validé",
+   "date_validation": "2026-09-28"
   },
   {
    "numero": 48,
@@ -101,8 +103,8 @@
     1000,
     1000
    ],
-   "statut": "proposition_style_a_controler",
-   "integre": false,
+   "statut": "valide_integre",
+   "integre": true,
    "phases": [
     {
      "phase": 1,
@@ -118,7 +120,9 @@
      "pixels_modifies_hors_masque": 0,
      "erreur_moyenne_rgb_dans_masque_apres_palette": 12.439
     }
-   ]
+   ],
+   "accord": "Validé",
+   "date_validation": "2026-09-28"
   },
   {
    "numero": 45,
@@ -133,8 +137,8 @@
     500,
     500
    ],
-   "statut": "proposition_style_a_controler",
-   "integre": false,
+   "statut": "valide_integre",
+   "integre": true,
    "phases": [
     {
      "phase": 1,
@@ -151,7 +155,15 @@
      "erreur_moyenne_rgb_dans_masque_apres_palette": 12.989
     }
    ],
-   "copie_conforme_de": 44
+   "copie_conforme_de": 44,
+   "accord": "Validé",
+   "date_validation": "2026-09-28"
   }
+ ],
+ "validation_utilisateur": "Validé",
+ "numeros_integres": [
+  44,
+  45,
+  80
  ]
 }

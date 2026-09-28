@@ -1206,7 +1206,7 @@
     "Curl Scott haltère neutre"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-neutre-homme.gif",
-   "gif_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "gif_sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
    "gif_frames": 2,
    "gif_size": [
     259,
@@ -1216,6 +1216,16 @@
    "source_proposition": {
     "commit": "c685298378773817460fb358bc605af7ce154b8b",
     "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-neutre-homme.gif"
+   },
+   "style": {
+    "reference_numero": 260,
+    "lot": "lot02",
+    "date": "2026-09-28",
+    "validation_utilisateur": "Validé",
+    "source": "evolution/media/refonte-photo/style-260/lot02/44-style-proposition.gif",
+    "sha256_avant": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+    "sha256_apres": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+    "hors_masque_pixels_modifies": 0
    }
   },
   {
@@ -1227,7 +1237,7 @@
     "Curl Scott haltère, prise neutre"
    ],
    "gif": "media/refonte-photo/gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
-   "gif_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "gif_sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
    "gif_frames": 2,
    "gif_size": [
     259,
@@ -1237,6 +1247,16 @@
    "source_proposition": {
     "commit": "c685298378773817460fb358bc605af7ce154b8b",
     "gif": "evolution/media/refonte-photo/propositions/lot69/gif/homme/curl-scott-haltere-prise-neutre-homme.gif"
+   },
+   "style": {
+    "reference_numero": 260,
+    "lot": "lot02",
+    "date": "2026-09-28",
+    "validation_utilisateur": "Validé",
+    "source": "evolution/media/refonte-photo/style-260/lot02/45-style-proposition.gif",
+    "sha256_avant": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+    "sha256_apres": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+    "hors_masque_pixels_modifies": 0
    }
   },
   {
@@ -1938,13 +1958,24 @@
     "Écartés haltères"
    ],
    "gif": "media/refonte-photo/gif/homme/ecartes-halteres-homme.gif",
-   "gif_sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+   "gif_sha256": "5dd6b0eeac3e4d3aa566994b9159b81036365dbddd09c83df4459afdb29914d5",
    "gif_frames": 2,
    "gif_size": [
     684,
     768
    ],
-   "planche": "production/lot75/ecartes-halteres.png"
+   "planche": null,
+   "style": {
+    "reference_numero": 260,
+    "lot": "lot02",
+    "date": "2026-09-28",
+    "validation_utilisateur": "Validé",
+    "source": "evolution/media/refonte-photo/style-260/lot02/80-style-proposition.gif",
+    "sha256_avant": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+    "sha256_apres": "5dd6b0eeac3e4d3aa566994b9159b81036365dbddd09c83df4459afdb29914d5",
+    "hors_masque_pixels_modifies": 0
+   },
+   "planche_geste_avant_style": "production/lot75/ecartes-halteres.png"
   },
   {
    "cle": "echauffement-battements-au-bord|femme",

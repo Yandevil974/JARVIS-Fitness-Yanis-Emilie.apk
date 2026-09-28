@@ -339,7 +339,19 @@
     "controle_final_requis": true,
     "reserve_traitee_lot68": "vert cyan diffus -> lime strict (PIL, zone bras, case2 0->545 px strict), original .avant-recolor.gif"
    },
-   "detail_validation_2026_09_28": "Accord explicite utilisateur reçu. Les réserves et anciennes mentions non-validées conservées dans les champs historiques ne décrivent plus le statut courant."
+   "detail_validation_2026_09_28": "Accord explicite utilisateur reçu. Les réserves et anciennes mentions non-validées conservées dans les champs historiques ne décrivent plus le statut courant.",
+   "integration_style_2026_09_28": {
+    "numero": 44,
+    "cle": "curl-scott-haltere-neutre|homme",
+    "reference_numero": 260,
+    "lot": "lot02",
+    "date": "2026-09-28",
+    "validation_utilisateur": "Validé",
+    "source": "evolution/media/refonte-photo/style-260/lot02/44-style-proposition.gif",
+    "sha256_avant": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+    "sha256_apres": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+    "hors_masque_pixels_modifies": 0
+   }
   },
   {
    "numero_signale": 45,
@@ -412,7 +424,19 @@
     "controle_final_requis": true,
     "reserve_traitee_lot68": "même recolorisation que 44 (paire partagée), original .avant-recolor.gif"
    },
-   "detail_validation_2026_09_28": "Accord explicite utilisateur reçu. Les réserves et anciennes mentions non-validées conservées dans les champs historiques ne décrivent plus le statut courant."
+   "detail_validation_2026_09_28": "Accord explicite utilisateur reçu. Les réserves et anciennes mentions non-validées conservées dans les champs historiques ne décrivent plus le statut courant.",
+   "integration_style_2026_09_28": {
+    "numero": 45,
+    "cle": "curl-scott-haltere-prise-neutre|homme",
+    "reference_numero": 260,
+    "lot": "lot02",
+    "date": "2026-09-28",
+    "validation_utilisateur": "Validé",
+    "source": "evolution/media/refonte-photo/style-260/lot02/45-style-proposition.gif",
+    "sha256_avant": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+    "sha256_apres": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+    "hors_masque_pixels_modifies": 0
+   }
   },
   {
    "numero_signale": 46,
@@ -725,6 +749,18 @@
     ],
     "accord": "oui oui oui enfin au bout de 15 chat. Je valide fais les corrections et on passe à la prochaine étape c’est ça?",
     "apk_reconstruit": false
+   },
+   "integration_style_2026_09_28": {
+    "numero": 80,
+    "cle": "ecartes-halteres|homme",
+    "reference_numero": 260,
+    "lot": "lot02",
+    "date": "2026-09-28",
+    "validation_utilisateur": "Validé",
+    "source": "evolution/media/refonte-photo/style-260/lot02/80-style-proposition.gif",
+    "sha256_avant": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+    "sha256_apres": "5dd6b0eeac3e4d3aa566994b9159b81036365dbddd09c83df4459afdb29914d5",
+    "hors_masque_pixels_modifies": 0
    }
   },
   {
@@ -1438,10 +1474,10 @@
   "perimetre": "ensemble_des_389_visuels",
   "recoloration_effectuee": false,
   "accord_perimetre": "tout, les 389",
-  "statut": "lot02_3_propositions_1_reprise_385_a_traiter",
-  "gif_style_finalises": 0,
-  "gif_style_integres": 0,
+  "statut": "lot02_44_45_80_valides_integres",
+  "gif_style_finalises": 3,
+  "gif_style_integres": 3,
   "accord_direction_style": "super vas-y",
-  "gif_style_proposes": 3
+  "gif_style_proposes": 0
  }
 }

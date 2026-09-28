@@ -6,10 +6,10 @@
  "reference_style": "lot01/STYLE-389-premier-essai.pdf, n°44 phase1",
  "teinte_reference_numero": 260,
  "gestes_valides_preserves": true,
- "propositions_completes": 3,
+ "propositions_completes": 0,
  "a_reprendre": 1,
  "non_traites": 385,
- "style_integre": 0,
+ "style_integre": 3,
  "entrees": [
   {
    "numero": 1,
@@ -316,15 +316,19 @@
    "numero": 44,
    "cle": "curl-scott-haltere-neutre|homme",
    "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
-   "statut_style": "proposition_style_a_controler",
-   "style_integre": false
+   "statut_style": "valide_integre",
+   "style_integre": true,
+   "validation_utilisateur": "Validé",
+   "gif_courant_sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427"
   },
   {
    "numero": 45,
    "cle": "curl-scott-haltere-prise-neutre|homme",
    "source_sha256": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
-   "statut_style": "proposition_style_a_controler",
-   "style_integre": false
+   "statut_style": "valide_integre",
+   "style_integre": true,
+   "validation_utilisateur": "Validé",
+   "gif_courant_sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427"
   },
   {
    "numero": 46,
@@ -568,8 +572,10 @@
    "numero": 80,
    "cle": "ecartes-halteres|homme",
    "source_sha256": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
-   "statut_style": "proposition_style_a_controler",
-   "style_integre": false
+   "statut_style": "valide_integre",
+   "style_integre": true,
+   "validation_utilisateur": "Validé",
+   "gif_courant_sha256": "5dd6b0eeac3e4d3aa566994b9159b81036365dbddd09c83df4459afdb29914d5"
   },
   {
    "numero": 81,
@@ -2734,5 +2740,7 @@
    "statut_style": "a_traiter",
    "style_integre": false
   }
- ]
+ ],
+ "style_valide": 3,
+ "restants_style": 386
 }

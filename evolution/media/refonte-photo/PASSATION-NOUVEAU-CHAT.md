@@ -1,3 +1,13 @@
+# STYLE 389 — lot02 VALIDÉ ET INTÉGRÉ (28/09/2026)
+
+L’utilisateur répond **« Validé »** au PDF montrant **44/45 et80 uniquement**. Ces trois GIF ont été copiés octet pour octet dans les médias livrés. Accord enregistré, manifeste/map et suivi actualisés. Les phases, durées, dimensions et pixels hors masque restent identiques aux gestes approuvés. Aucun nouvel appel de génération.
+**3/389 styles validés et intégrés ; 386 restants : n°48 à reprendre +385 non traités.** Ne pas intégrer48 : il n’était pas dans le comparatif validé.
+PDF principal mis à jour uniquement pour44/45/80 (pages16 et28), 131 pages conservées ; les129 autres images de pages sont identiques. Index actualisé pour les trois numéros. Numérotation, état et plan inchangés. **APK non reconstruit, application installée inchangée.**
+Rapport : `style-260/lot02/INTEGRATION-VALIDEE.json`. Comparatif validé : `style-260/lot02/STYLE-260-lot02-VALIDE.pdf`. Progression : `style-260/progression-389.json`.
+Prochaine action : reprendre raccord muscle/coussin48, puis19 et85. Teinte260 et portée389 déjà confirmées. Ne pas redemander. Avant construction : rappel metcon/piscine fractionnée/Aqua Tabata Émilie ; signature clé utilisateur seulement. IA en dernier.
+
+---
+
 # STYLE 389 — lot02 (28/09/2026), priorité actuelle
 
 L’utilisateur a répondu **« super vas-y »** au premier essai de relief : direction de style acceptée, poursuivre les 389. Ne pas redemander teinte/périmètre.

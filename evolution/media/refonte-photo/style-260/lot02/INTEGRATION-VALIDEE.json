@@ -1,0 +1,66 @@
+{
+ "date": "2026-09-28",
+ "accord": "Validé",
+ "perimetre_accord": [
+  44,
+  45,
+  80
+ ],
+ "numero48_integre": false,
+ "generation": 0,
+ "gif_integres": 3,
+ "restants_style": 386,
+ "manifeste_autres_entrees_inchangees": true,
+ "autres_gif_locaux_inchanges": true,
+ "controle_pixels_hors_masque": 0,
+ "pdf_pages": 131,
+ "pages_pdf_modifiees_base1": [
+  16,
+  28
+ ],
+ "pdf_autres_images_inchangees": true,
+ "index_vignettes_remplacees": [
+  44,
+  45,
+  80
+ ],
+ "apk_reconstruit": false,
+ "changements": [
+  {
+   "numero": 44,
+   "cle": "curl-scott-haltere-neutre|homme",
+   "reference_numero": 260,
+   "lot": "lot02",
+   "date": "2026-09-28",
+   "validation_utilisateur": "Validé",
+   "source": "evolution/media/refonte-photo/style-260/lot02/44-style-proposition.gif",
+   "sha256_avant": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "sha256_apres": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+   "hors_masque_pixels_modifies": 0
+  },
+  {
+   "numero": 45,
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "reference_numero": 260,
+   "lot": "lot02",
+   "date": "2026-09-28",
+   "validation_utilisateur": "Validé",
+   "source": "evolution/media/refonte-photo/style-260/lot02/45-style-proposition.gif",
+   "sha256_avant": "980f0805421fec4eaf7f91913ff25c72e8bdd2021a201b1160e990824cf7e02c",
+   "sha256_apres": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427",
+   "hors_masque_pixels_modifies": 0
+  },
+  {
+   "numero": 80,
+   "cle": "ecartes-halteres|homme",
+   "reference_numero": 260,
+   "lot": "lot02",
+   "date": "2026-09-28",
+   "validation_utilisateur": "Validé",
+   "source": "evolution/media/refonte-photo/style-260/lot02/80-style-proposition.gif",
+   "sha256_avant": "e8e5b756e84e0ed7b47fe1aba80c156bffcef9317780593562489b2dd27d165b",
+   "sha256_apres": "5dd6b0eeac3e4d3aa566994b9159b81036365dbddd09c83df4459afdb29914d5",
+   "hors_masque_pixels_modifies": 0
+  }
+ ]
+}
