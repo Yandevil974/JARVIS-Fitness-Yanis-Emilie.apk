@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>JARVIS Fitness — test netteté / format (prototype n°44)</title>
+<style>
+  :root { --line:#dcdfe4; --ink:#12242f; --muted:#5a6a75; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:16px 14px 60px; background:#f5f6f8; color:var(--ink);
+         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+  h1 { font-size:20px; margin:0 0 6px; }
+  h2 { font-size:16px; margin:28px 0 4px; }
+  p.lead { color:var(--muted); font-size:13px; margin:0 0 4px; }
+  .note { background:#fff8e1; border:1px solid #f0e0a8; border-radius:10px; padding:10px 12px;
+          font-size:13px; margin:12px 0; }
+  /* même règle que l'application : .movement-visual { height:300px } */
+  .movement-visual { height:300px; display:flex; align-items:center; justify-content:center;
+                     background:#32343824; border:1px solid var(--line); border-radius:12px;
+                     overflow:hidden; }
+  .movement-visual img { height:100%; width:auto; max-width:100%; object-fit:contain; display:block; }
+  .grille { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; }
+  .carte { background:#fff; border:1px solid var(--line); border-radius:12px; padding:8px; }
+  .carte h3 { font-size:12px; margin:0 0 6px; font-weight:600; }
+  .carte .poids { font-size:11px; color:var(--muted); margin-top:6px; }
+  .zoom { overflow:auto; background:#fff; border:1px solid var(--line); border-radius:12px; padding:8px;
+          -webkit-overflow-scrolling:touch; }
+  .zoom img { display:block; image-rendering:auto; }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; background:#fff; border-radius:12px; overflow:hidden; }
+  th,td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; }
+  th { background:#eef1f4; font-size:11px; text-transform:uppercase; letter-spacing:.6px; }
+  pre { background:#101c26; color:#d7e6f2; padding:12px; border-radius:10px; font-size:12px; overflow:auto; }
+  .ok { color:#0a7d4b; font-weight:600; }
+  .ko { color:#b3261e; font-weight:600; }
+</style>
+</head>
+<body>
+<h1>Prototype n°44 — test de netteté et de format</h1>
+<p class="lead">Aucun fichier de l'application n'est modifié. Cette page sert seulement à juger
+<strong>sur le téléphone</strong> ce que donnent les différentes définitions et les différents formats.</p>
+
+<div class="note">
+<strong>À faire :</strong> ouvrir cette page sur le téléphone, puis répondre aux 3 questions du bas.
+1. Quelle définition paraît la plus nette <em>sans être lourde</em> ? &nbsp; 2. Le WebP animé
+<strong>bouge-t-il</strong> (bloc « formats ») ? &nbsp;3. Le vert vous convient-il tel quel ?
+</div>
+
+<h2>1 · Affichage réel dans l'application (300 px de haut)</h2>
+<p class="lead">Exactement la taille que <code>.movement-visual</code> donne à l'image dans JARVIS.</p>
+<div class="grille">
+  <div class="carte"><h3>Livré aujourd'hui — 259×440</h3>
+    <div class="movement-visual"><img src="prototype-44/sources/44-livre-actuel-259x440.gif" alt="GIF livré"></div>
+    <div class="poids">198 ko</div></div>
+  <div class="carte"><h3>Export 440 px</h3>
+    <div class="movement-visual"><img src="prototype-44/exports/44-h440-gif-actuel.gif" alt="GIF 440"></div>
+    <div class="poids">202 ko</div></div>
+  <div class="carte"><h3>Export 660 px</h3>
+    <div class="movement-visual"><img src="prototype-44/exports/44-h660-gif-actuel.gif" alt="GIF 660"></div>
+    <div class="poids">412 ko</div></div>
+  <div class="carte"><h3>Export 880 px</h3>
+    <div class="movement-visual"><img src="prototype-44/exports/44-h880-gif-actuel.gif" alt="GIF 880"></div>
+    <div class="poids">682 ko</div></div>
+</div>
+
+<h2>2 · Zoom 100 % (1 pixel du fichier = 1 pixel de l'écran)</h2>
+<p class="lead">Faire glisser horizontalement. C'est ici que la différence de définition se voit.</p>
+<div class="zoom"><img src="prototype-44/exports/44-h880-gif-actuel.gif" alt="zoom 880" style="height:880px"></div>
+<div class="zoom" style="margin-top:10px"><img src="prototype-44/sources/44-livre-actuel-259x440.gif" alt="zoom livré" style="height:440px"></div>
+
+<h2>3 · Formats (mêmes images de travail, même définition 880 px)</h2>
+<p class="lead">GIF limité à 256 couleurs par image · WebP animé · APNG sans perte.</p>
+<div class="grille">
+  <div class="carte"><h3>GIF 880 — 682 ko</h3>
+    <div class="movement-visual"><img id="f-gif" src="prototype-44/exports/44-h880-gif-actuel.gif" alt="GIF"></div></div>
+  <div class="carte"><h3>WebP animé 880 — 140 ko</h3>
+    <div class="movement-visual"><img id="f-webp" src="prototype-44/exports/44-h880-webp-q90.webp" alt="WebP"></div></div>
+  <div class="carte"><h3>APNG 880 — 1 300 ko</h3>
+    <div class="movement-visual"><img id="f-apng" src="prototype-44/exports/44-h880-apng.png" alt="APNG"></div></div>
+</div>
+
+<h2>4 · Diagnostic automatique de cet appareil</h2>
+<p class="lead">Le test dessine chaque image sur un canvas à deux instants : si les pixels changent,
+l'animation joue réellement dans ce navigateur / cette WebView.</p>
+<pre id="diag">test en cours…</pre>
+
+<h2>5 · Poids comparés (mesurés sur les fichiers)</h2>
+<table>
+  <tr><th>Réglage</th><th>Poids</th><th>Erreur hors vert</th><th>Erreur dans le vert</th></tr>
+  <tr><td>Livré 259×440</td><td>198 ko</td><td>10,7</td><td>24,0</td></tr>
+  <tr><td>GIF 440</td><td>202 ko</td><td>1,9</td><td>9,7</td></tr>
+  <tr><td>GIF 660</td><td>412 ko</td><td>1,9</td><td>10,2</td></tr>
+  <tr><td>GIF 880</td><td>682 ko</td><td>1,9</td><td>10,0</td></tr>
+  <tr><td>WebP animé 660 q90</td><td>99 ko</td><td>1,9</td><td>2,6</td></tr>
+  <tr><td>WebP animé 880 q90</td><td>140 ko</td><td>1,7</td><td>2,2</td></tr>
+  <tr><td>APNG 880 (sans perte)</td><td>1 300 ko</td><td>0</td><td>0</td></tr>
+</table>
+
+<h2>6 · Ce qu'il faut répondre</h2>
+<p class="lead">1. Définition retenue : 440, <strong>660 (recommandé)</strong> ou 880 ?<br>
+2. Format : GIF conservé ou WebP animé (si le test ci-dessus montre que l'animation joue) ?<br>
+3. Vert : inchangé, ou rapproché du n°260 avant export ?</p>
+
+<script>
+const cibles = ['f-gif','f-webp','f-apng'];
+function echantillon(img){
+  const c = document.createElement('canvas');
+  c.width = 40; c.height = 40;
+  c.getContext('2d').drawImage(img, 0, 0, 40, 40);
+  return c.getContext('2d').getImageData(0,0,40,40).data;
+}
+function different(a,b){ let d=0; for(let i=0;i<a.length;i+=4){ if(Math.abs(a[i]-b[i])>6) d++; } return d; }
+const lignes = [];
+lignes.push('navigateur : ' + navigator.userAgent);
+lignes.push('devicePixelRatio : ' + (window.devicePixelRatio||1));
+lignes.push('WebP : ' + (document.createElement('canvas').toDataURL('image/webp').indexOf('image/webp')===0 ? 'oui' : 'non'));
+let restants = cibles.length;
+cibles.forEach(id => {
+  const img = document.getElementById(id);
+  const nom = id.replace('f-','').toUpperCase();
+  const fini = (texte) => { lignes.push(nom + ' : ' + texte); if(--restants===0){ document.getElementById('diag').textContent = lignes.join('\n'); } };
+  img.addEventListener('error', () => fini('ÉCHEC D’AFFICHAGE ❌'));
+  const depart = () => {
+    const t0 = Date.now();
+    const a = echantillon(img);
+    setTimeout(() => {
+      const b = echantillon(img);
+      const px = different(a,b);
+      fini('affiché ' + img.naturalWidth + '×' + img.naturalHeight + ' — animation : ' +
+           (px > 0 ? 'OUI ✅ (' + px + ' pixels changés en ' + (Date.now()-t0) + ' ms)' : 'non / figée ❌'));
+    }, 1100);
+  };
+  if (img.complete && img.naturalWidth) depart(); else img.addEventListener('load', depart);
+});
+</script>
+</body>
+</html>

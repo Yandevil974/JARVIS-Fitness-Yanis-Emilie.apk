@@ -1,0 +1,6 @@
+# Caches de travail (non persistants, jamais livrés) : dépendances Python, sources miroir, builds
+.cache/
+__pycache__/
+*.pyc
+node_modules/
+dist/
