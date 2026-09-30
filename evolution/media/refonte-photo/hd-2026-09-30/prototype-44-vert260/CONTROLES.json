@@ -1,0 +1,598 @@
+{
+ "date": "2026-09-30",
+ "numero": 44,
+ "cle": "curl-scott-haltere-neutre|homme",
+ "decisions_utilisateur": {
+  "format": "webp animé",
+  "hauteur_px": 660,
+  "vert": "rapproché du 260"
+ },
+ "generation_images": 0,
+ "recoloration": "oui, déterministe (aucun modèle)",
+ "gif_livres_modifies": 0,
+ "apk_reconstruit": false,
+ "proposition_non_integree": true,
+ "sources": [
+  {
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44/sources/44-phase1-supinated-800x1333.png",
+   "taille": [
+    800,
+    1333
+   ],
+   "sha256": "8b243d378b27291e5b1cdbbc78463d57c9f2ac8b9bfde84edbd891af1a38cb45"
+  },
+  {
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44/sources/44-phase2-supinated-800x1333.png",
+   "taille": [
+    800,
+    1333
+   ],
+   "sha256": "6e5c149e3128ce9727bf339a25f139d9b7c7b1d953d915c3f11b9c5bf8bc26a1"
+  }
+ ],
+ "correspondance": {
+  "ancres_master_saturation": [
+   0.483,
+   0.686,
+   0.98
+  ],
+  "cible_260_saturation": [
+   0.627,
+   0.914,
+   0.968
+  ],
+  "ancres_master_valeur": [
+   0.451,
+   0.714,
+   0.906
+  ],
+  "cible_260_valeur": [
+   0.325,
+   0.616,
+   0.91
+  ],
+  "teinte_master_deg": 86.7,
+  "teinte_260_deg": 86.3,
+  "regle": "percentiles appariés (p5/p50/p95) ; teinte recentrée à 50 % de l’écart ; aucun pixel uniformisé"
+ },
+ "vert_avant": [
+  {
+   "pixels": 19294,
+   "mediane_rgb": [
+    134,
+    179,
+    62
+   ],
+   "mediane_hsv": {
+    "teinte_deg": 85.4,
+    "saturation": 0.677,
+    "valeur": 0.702
+   },
+   "percentiles_saturation": [
+    0.525,
+    0.677,
+    0.845
+   ],
+   "percentiles_valeur": [
+    0.459,
+    0.702,
+    0.902
+   ],
+   "nuances_distinctes": 15049,
+   "part_teinte_dominante": 0.002,
+   "teintes_principales": [
+    [
+     164,
+     231,
+     74
+    ],
+    [
+     164,
+     231,
+     75
+    ],
+    [
+     164,
+     231,
+     76
+    ],
+    [
+     162,
+     229,
+     72
+    ],
+    [
+     163,
+     229,
+     71
+    ]
+   ]
+  },
+  {
+   "pixels": 13328,
+   "mediane_rgb": [
+    116,
+    187,
+    47
+   ],
+   "mediane_hsv": {
+    "teinte_deg": 90.4,
+    "saturation": 0.749,
+    "valeur": 0.733
+   },
+   "percentiles_saturation": [
+    0.442,
+    0.749,
+    1.0
+   ],
+   "percentiles_valeur": [
+    0.447,
+    0.733,
+    0.922
+   ],
+   "nuances_distinctes": 12332,
+   "part_teinte_dominante": 0.001,
+   "teintes_principales": [
+    [
+     46,
+     114,
+     0
+    ],
+    [
+     47,
+     114,
+     0
+    ],
+    [
+     50,
+     119,
+     0
+    ],
+    [
+     48,
+     120,
+     0
+    ],
+    [
+     57,
+     124,
+     0
+    ]
+   ]
+  }
+ ],
+ "vert_apres": [
+  {
+   "pixels": 19294,
+   "mediane_rgb": [
+    104,
+    156,
+    20
+   ],
+   "mediane_hsv": {
+    "teinte_deg": 85.6,
+    "saturation": 0.894,
+    "valeur": 0.612
+   },
+   "percentiles_saturation": [
+    0.645,
+    0.894,
+    0.943
+   ],
+   "percentiles_valeur": [
+    0.337,
+    0.612,
+    0.906
+   ],
+   "nuances_distinctes": 11137,
+   "part_teinte_dominante": 0.003,
+   "teintes_principales": [
+    [
+     139,
+     229,
+     20
+    ],
+    [
+     139,
+     227,
+     19
+    ],
+    [
+     142,
+     232,
+     22
+    ],
+    [
+     140,
+     229,
+     20
+    ],
+    [
+     142,
+     232,
+     23
+    ]
+   ]
+  },
+  {
+   "pixels": 13328,
+   "mediane_rgb": [
+    96,
+    166,
+    13
+   ],
+   "mediane_hsv": {
+    "teinte_deg": 88.1,
+    "saturation": 0.925,
+    "valeur": 0.651
+   },
+   "percentiles_saturation": [
+    0.542,
+    0.925,
+    0.972
+   ],
+   "percentiles_valeur": [
+    0.322,
+    0.651,
+    0.933
+   ],
+   "nuances_distinctes": 9657,
+   "part_teinte_dominante": 0.002,
+   "teintes_principales": [
+    [
+     41,
+     82,
+     2
+    ],
+    [
+     49,
+     93,
+     3
+    ],
+    [
+     49,
+     94,
+     3
+    ],
+    [
+     43,
+     86,
+     3
+    ],
+    [
+     44,
+     88,
+     3
+    ]
+   ]
+  }
+ ],
+ "reference_260": {
+  "pixels": 3810,
+  "mediane_rgb": [
+   91,
+   157,
+   17
+  ],
+  "mediane_hsv": {
+   "teinte_deg": 86.3,
+   "saturation": 0.914,
+   "valeur": 0.616
+  },
+  "percentiles_saturation": [
+   0.627,
+   0.914,
+   0.968
+  ],
+  "percentiles_valeur": [
+   0.325,
+   0.616,
+   0.91
+  ],
+  "nuances_distinctes": 6,
+  "part_teinte_dominante": 0.31,
+  "teintes_principales": [
+   [
+    52,
+    83,
+    17
+   ],
+   [
+    91,
+    157,
+    5
+   ],
+   [
+    112,
+    182,
+    12
+   ],
+   [
+    139,
+    232,
+    20
+   ],
+   [
+    85,
+    118,
+    44
+   ]
+  ]
+ },
+ "contour": [
+  {
+   "phase": 1,
+   "coeur_avant_px": 10386,
+   "perimetre_px": 787,
+   "largeur_transition_avant_px": 13.02,
+   "largeur_transition_apres_px": 8.51,
+   "rampe_alpha_utilisee": [
+    0.03,
+    0.17
+   ]
+  },
+  {
+   "phase": 2,
+   "coeur_avant_px": 10158,
+   "perimetre_px": 484,
+   "largeur_transition_avant_px": 8.17,
+   "largeur_transition_apres_px": 5.48,
+   "rampe_alpha_utilisee": [
+    0.03,
+    0.17
+   ]
+  }
+ ],
+ "garantie_hors_zone": [
+  {
+   "phase": 1,
+   "pixels_hors_zone": 1045768,
+   "ecart_max_hors_zone": 0.0,
+   "pixels_modifies_hors_zone": 0
+  },
+  {
+   "phase": 2,
+   "pixels_hors_zone": 1052290,
+   "ecart_max_hors_zone": 0.0,
+   "pixels_modifies_hors_zone": 0
+  }
+ ],
+ "exports": [
+  {
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-q90.webp",
+   "note": "WebP animé q90",
+   "sha256": "0ecbbd679668154303d0c33090c7fc48b086a7ae82460f6ac284205a6e642618",
+   "poids_ko": 98,
+   "images": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    660
+   ],
+   "phases": [
+    {
+     "phase": 1,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 33976,
+     "erreur_hors_vert": 1.85,
+     "erreur_dans_vert": 1.88,
+     "erreur_max": 18,
+     "psnr_db": 41.28
+    },
+    {
+     "phase": 2,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 32666,
+     "erreur_hors_vert": 1.9,
+     "erreur_dans_vert": 1.91,
+     "erreur_max": 23,
+     "psnr_db": 41.1
+    }
+   ],
+   "format": "webp",
+   "qualite": 90,
+   "hauteur": 660
+  },
+  {
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-q85.webp",
+   "note": "WebP animé q85",
+   "sha256": "739cd09f2e1c280701e722c71ad6a48c21d95515191fec032b0c3ad48abab1d9",
+   "poids_ko": 73,
+   "images": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    660
+   ],
+   "phases": [
+    {
+     "phase": 1,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 35248,
+     "erreur_hors_vert": 2.23,
+     "erreur_dans_vert": 2.29,
+     "erreur_max": 19,
+     "psnr_db": 39.46
+    },
+    {
+     "phase": 2,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 33958,
+     "erreur_hors_vert": 2.35,
+     "erreur_dans_vert": 2.36,
+     "erreur_max": 25,
+     "psnr_db": 39.21
+    }
+   ],
+   "format": "webp",
+   "qualite": 85,
+   "hauteur": 660
+  },
+  {
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-q92.webp",
+   "note": "WebP animé q92",
+   "sha256": "1614984b47c1e613e1a93191dfd48113d10f22c51abf210c64b3d9b17d9d695b",
+   "poids_ko": 115,
+   "images": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    660
+   ],
+   "phases": [
+    {
+     "phase": 1,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 34135,
+     "erreur_hors_vert": 1.61,
+     "erreur_dans_vert": 1.68,
+     "erreur_max": 17,
+     "psnr_db": 42.23
+    },
+    {
+     "phase": 2,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 32596,
+     "erreur_hors_vert": 1.67,
+     "erreur_dans_vert": 1.71,
+     "erreur_max": 23,
+     "psnr_db": 42.07
+    }
+   ],
+   "format": "webp",
+   "qualite": 92,
+   "hauteur": 660
+  },
+  {
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-sans-perte.webp",
+   "note": "WebP animé sans perte",
+   "sha256": "1d76e3bbb59e45e5118d436cd9278707db91fee4985bbf1cba013735d84b1b55",
+   "poids_ko": 612,
+   "images": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    660
+   ],
+   "phases": [
+    {
+     "phase": 1,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 79101,
+     "erreur_hors_vert": 0.0,
+     "erreur_dans_vert": 0.0,
+     "erreur_max": 0,
+     "psnr_db": 138.13
+    },
+    {
+     "phase": 2,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 75996,
+     "erreur_hors_vert": 0.0,
+     "erreur_dans_vert": 0.0,
+     "erreur_max": 0,
+     "psnr_db": 138.13
+    }
+   ],
+   "format": "webp",
+   "qualite": "sans perte",
+   "hauteur": 660
+  },
+  {
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-repli.gif",
+   "note": "GIF de repli si la WebView refuse le WebP",
+   "sha256": "847bbcb2d383c859b1b39a1f345fbee8e825f92239d4c0eb3cef81b17f0232ff",
+   "poids_ko": 403,
+   "images": 2,
+   "durees_ms": [
+    500,
+    500
+   ],
+   "taille": [
+    388,
+    660
+   ],
+   "phases": [
+    {
+     "phase": 1,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 256,
+     "erreur_hors_vert": 2.79,
+     "erreur_dans_vert": 2.05,
+     "erreur_max": 35,
+     "psnr_db": 37.53
+    },
+    {
+     "phase": 2,
+     "taille": [
+      388,
+      660
+     ],
+     "couleurs_uniques": 256,
+     "erreur_hors_vert": 2.03,
+     "erreur_dans_vert": 2.08,
+     "erreur_max": 47,
+     "psnr_db": 36.55
+    }
+   ],
+   "format": "gif",
+   "qualite": "palette 256",
+   "hauteur": 660
+  }
+ ],
+ "planches": [
+  "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/planches/VERT260-taille-application.png",
+  "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/planches/VERT260-phase1-avant-apres.png",
+  "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/planches/VERT260-phase2-avant-apres.png",
+  "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/planches/VERT260-png-vs-decode.png"
+ ],
+ "livres_inchanges": [
+  {
+   "fichier": "gif/homme/curl-scott-haltere-neutre-homme.gif",
+   "sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427"
+  },
+  {
+   "fichier": "gif/homme/curl-scott-haltere-prise-neutre-homme.gif",
+   "sha256": "4696c1435660b820f53adbdebbaf284531549677495fe53c85f8fc9f0e852427"
+  }
+ ]
+}
