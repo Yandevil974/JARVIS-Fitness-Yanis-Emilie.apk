@@ -31,12 +31,33 @@ alimente donc un export 660 px **sans agrandissement** — argument décisif en 
 Les 34 entrées sans source native correspondent au chantier **piscine/aqua/cardio**, prévu **après** les visuels :
 elles seront traitées avec ce chantier (guides piscine), pas en aveugle.
 
-## 3. Prochain lot proposé (aucune action engagée sans votre accord)
+## 3. Lot 1 FAIT le 30/09/2026 (n°45, 48, 19, 85) — EN ATTENTE DE VALIDATION, RIEN D'INTÉGRÉ
 
-Lot 1 : **n°45** (jumeau du 44), **n°48** (à reprendre : raccord muscle/coussin), **n°19** et **n°85**
-(propositions lot03 non validées) — quatre cas différents pour juger la méthode avant une série.
-Chaque proposition restera **non intégrée** et fournie avec ses contrôles (0 pixel hors zone verte,
-avant/après, PNG de travail, fichier réellement décodé).
+Consigne utilisateur : « Fais le a » (les quatre numéros du lot 1 proposé). Méthode **identique au n°44 validé**,
+zéro génération d'image : outil `evolution/media/tools/retouche-lot1-vert260.py`, sorties dans
+`evolution/media/refonte-photo/hd-2026-09-30/lot1/` (`travail/`, `exports/`, `planches/`, `CONTROLES.json`),
+page de validation **`hd-2026-09-30/lot1/valider.html`** (servie sur le port 8080).
+
+| N° | Source native | Export | WebP q90 | GIF de repli | Ce qui a été fait |
+|---|---|---|---|---|---|
+| 45 | = n°44 (GIF livrés identiques, sha `4696c143…`) | 388×660 | 98 ko | 403 ko | reprise **à l'identique** de la sortie validée du 44, aucune recuisson |
+| 48 | `lot64/phases/zottman-phase1..4.png` 800×1334 | 396×660, 4 phases | 157 ko | 762 ko | voile vert translucide de l'avant-bras **préservé** (peau/veines visibles) ; le **coussin teal foncé du banc est écarté du masque** (plancher de luminosité 0,45) : c'est lui qui donnait le « raccord plat » signalé ; l'ancien GIF faisait 264×440 |
+| 19 | `lot57/planches/bulgarian-split-squat-halteres.png` 688×768 ×2 | 572×660 | 80 ko | 392 ko | le vert de l'app **est le panneau du legging** (olive), pas un muscle : panneau réel gardé (tissu, couture, ombre) ramené dans la famille 260 ; l'aplat lime du lot68 (`recolorisation-reserves.json`, `validation_utilisateur: false`) est abandonné ; **plus de débordement sur l'avant-bras** ; plantes du décor hors zone |
+| 85 | `lot68/phases/85-depart-2.png` + `85-fin-4.png` 1376×768 | 1182×660 | 200 ko | 843 ko | deltoïdes **remontés à leur clarté d'origine** (l'ancien export les assombrissait, V 0,60 → 0,52) avec forme anatomique et ombres ; deux ROI (un par deltoïde) pour traiter les deux épaules |
+
+Contrôles mesurés (détail complet dans `lot1/CONTROLES.json`) : erreur WebP 1,52 / 1,84 / 1,64 (PSNR 42,96 / 41,42 / 42,22 dB),
+GIF 2,17 / 2,80 / 3,13 ; zones vertes 5 903 px (19), 37 125 px (48), 4 047 px (85) ; contraste du vert après passage
+(19 : S 0,694 → 0,887 ; 48 : 0,424 → 0,724 ; 85 : 0,784 → 0,907) ; **aucun pixel modifié hors zone**.
+
+Interdits respectés : `gif_livres_modifies: 0`, `apk_reconstruit: false`, `proposition_non_integree: true`,
+aucun `git push` hors `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`. Commit `d01fb1a`.
+
+## 4. Prochain lot proposé (aucune action engagée sans votre accord)
+
+Après validation numéro par numéro du lot 1, reprendre les 389 par lots de quatre en partant des sources
+natives (voir `INVENTAIRE-SOURCES-389.json` : 340 numéros exploitables à 660 px sans agrandissement).
+Les 34 numéros féminins piscine/aqua/elliptique sans PNG natif (210, 224-259, 274-276, 289-330) demandent un
+chantier à part : ils ne peuvent pas être « dé-pixellisés » à partir de l'existant.
 
 ---
 # PROTOTYPE n°44 — RÉGLAGES CHOISIS PAR L'UTILISATEUR ET PROTOTYPE CONSTRUIT (30/09/2026)
