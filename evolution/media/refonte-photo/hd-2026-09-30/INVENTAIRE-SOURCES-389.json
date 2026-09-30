@@ -1,0 +1,4806 @@
+{
+ "A_manifeste": [
+  {
+   "numero": 1,
+   "cle": "ab-wheel-roulette|homme",
+   "chemin": "planches/lot34/ab-wheel-roulette.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 2,
+   "cle": "abduction-assise-en-1-5-reps|femme",
+   "chemin": "planches/lot09/abduction-assise-en-1-5-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 4,
+   "cle": "abduction-assise-machine-ou-elastique|femme",
+   "chemin": "planches/lot09/abduction-assise-machine-ou-elastique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 5,
+   "cle": "abduction-hanche-a-l-elastique|femme",
+   "chemin": "planches/lot09/abduction-hanche-a-l-elastique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 7,
+   "cle": "abduction-hanche-a-la-poulie-myo-reps|femme",
+   "chemin": "planches/lot12/abduction-hanche-a-la-poulie-myo-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 6,
+   "cle": "abduction-hanche-a-la-poulie|femme",
+   "chemin": "planches/lot12/abduction-hanche-a-la-poulie.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 8,
+   "cle": "abduction-hanche-debout-a-la-poulie|femme",
+   "chemin": "planches/lot09/abduction-hanche-debout-a-la-poulie.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 231,
+   "cle": "adduction-de-la-hanche-debout|homme",
+   "chemin": "planches/lot03/homme/adduction-de-la-hanche-debout.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 232,
+   "cle": "allonge-sur-le-cote|homme",
+   "chemin": "planches/lot03/homme/allonge-sur-le-cote.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 208,
+   "cle": "aqua-jogging-sur-place|femme",
+   "chemin": "planches/lot44/aqua-jogging-sur-place.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 9,
+   "cle": "back-extension-45-prise-snatch|homme",
+   "chemin": "planches/lot15/back-extension-45-prise-snatch.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 10,
+   "cle": "back-extension-horizontal|homme",
+   "chemin": "planches/lot20/back-extension-horizontal.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 12,
+   "cle": "back-squat-barre-haute|homme",
+   "chemin": "planches/lot20/back-squat-barre-haute.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 13,
+   "cle": "back-squat-charge-moderee|femme",
+   "chemin": "planches/lot15/back-squat-charge-moderee.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 14,
+   "cle": "back-squat-inertie-pause-complete|homme",
+   "chemin": "planches/lot20/back-squat-inertie-pause-complete.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 15,
+   "cle": "back-squat-test-1rm|homme",
+   "chemin": "planches/lot09/back-squat-test-1rm.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 16,
+   "cle": "barre-au-front-pushdown-triceps|homme",
+   "chemin": "planches/lot33/barre-au-front-pushdown-triceps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 209,
+   "cle": "battements-au-bord|femme",
+   "chemin": "planches/lot43/battements-au-bord.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 235,
+   "cle": "battements-de-jambes|femme",
+   "chemin": "planches/lot40/battements-de-jambes.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 236,
+   "cle": "battements-de-jambes|homme",
+   "chemin": "planches/lot40/battements-de-jambes.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 17,
+   "cle": "bird-dog|femme",
+   "chemin": "planches/lot20/bird-dog.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 238,
+   "cle": "bras-tendu-contre-la-poitrine|homme",
+   "chemin": "planches/lot04/bras-tendu-contre-la-poitrine.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 240,
+   "cle": "bras-tendu-derriere|homme",
+   "chemin": "planches/lot05/bras-tendu-derriere.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 241,
+   "cle": "bras-tendu-devant-main-tiree|homme",
+   "chemin": "planches/lot07/bras-tendu-devant-main-tiree.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 18,
+   "cle": "bulgarian-split-squat|homme",
+   "chemin": "planches/lot20/bulgarian-split-squat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 243,
+   "cle": "burpees-simplifies|homme",
+   "chemin": "planches/lot40/burpees-simplifies.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 242,
+   "cle": "burpees|homme",
+   "chemin": "planches/lot19/burpees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 21,
+   "cle": "cables-croises-rotation-externe|homme",
+   "chemin": "planches/lot24/cables-croises-rotation-externe.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 20,
+   "cle": "cables-croises|homme",
+   "chemin": "planches/lot22/cables-croises.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 22,
+   "cle": "california-press-barre-au-cou|homme",
+   "chemin": "planches/lot18/california-press-barre-au-cou.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 244,
+   "cle": "chaise-au-mur|homme",
+   "chemin": "planches/lot40/chaise-au-mur.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 245,
+   "cle": "chaise-douce|homme",
+   "chemin": "planches/lot40/chaise-douce.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 23,
+   "cle": "circuit-abdominaux-crunch-releves-gainage|femme",
+   "chemin": "planches/lot09/circuit-abdominaux-crunch-releves-gainage.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 24,
+   "cle": "circuit-gainage-planche-lateral-bird-dog|femme",
+   "chemin": "planches/lot21/circuit-gainage-planche-lateral-bird-dog.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 247,
+   "cle": "ciseaux-mains-au-bord|femme",
+   "chemin": "planches/lot44/ciseaux-mains-au-bord.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 25,
+   "cle": "clamshell-a-l-elastique|femme",
+   "chemin": "planches/lot13/clamshell-a-l-elastique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 248,
+   "cle": "cobra-doux|homme",
+   "chemin": "planches/lot05/cobra-doux.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 249,
+   "cle": "corde-invisible|homme",
+   "chemin": "planches/lot41/corde-invisible.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 250,
+   "cle": "coude-au-dessus-de-la-tete|homme",
+   "chemin": "planches/lot07/coude-au-dessus-de-la-tete.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 27,
+   "cle": "crunch-a-la-poulie-ou-au-sol|femme",
+   "chemin": "planches/lot26/crunch-a-la-poulie-ou-au-sol.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 28,
+   "cle": "crunch-sur-swiss-ball|homme",
+   "chemin": "planches/lot15/crunch-sur-swiss-ball.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 251,
+   "cle": "crunch|homme",
+   "chemin": "planches/lot02/crunch.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 30,
+   "cle": "curl-barre-debout|homme",
+   "chemin": "planches/lot26/curl-barre-debout.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 29,
+   "cle": "curl-barre|homme",
+   "chemin": "planches/lot15/curl-barre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 32,
+   "cle": "curl-haltere-supination-banc-scott-90|homme",
+   "chemin": "planches/lot16/curl-haltere-supination-banc-scott-90.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 35,
+   "cle": "curl-halteres-incline-prise-neutre|homme",
+   "chemin": "planches/lot36/curl-halteres-incline-prise-neutre.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 36,
+   "cle": "curl-halteres-incline-supination|homme",
+   "chemin": "planches/lot30/curl-halteres-incline-supination.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 34,
+   "cle": "curl-halteres-incline|homme",
+   "chemin": "planches/lot25/curl-halteres-incline.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 33,
+   "cle": "curl-halteres|femme",
+   "chemin": "planches/lot27/curl-halteres.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 40,
+   "cle": "curl-poulie-basse-supination|homme",
+   "chemin": "planches/lot23/curl-poulie-basse-supination.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 39,
+   "cle": "curl-poulie-basse|homme",
+   "chemin": "planches/lot20/curl-poulie-basse.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 41,
+   "cle": "curl-scott-90-haltere-supination|homme",
+   "chemin": "planches/lot35/curl-scott-90-haltere-supination.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 42,
+   "cle": "curl-scott-barre-ez-pronation|homme",
+   "chemin": "planches/lot18/curl-scott-barre-ez-pronation.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 43,
+   "cle": "curl-scott-barre-ez-supination|homme",
+   "chemin": "planches/lot18/curl-scott-barre-ez-supination.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 51,
+   "cle": "dead-bug-avec-rotation|femme",
+   "chemin": "planches/lot17/dead-bug-avec-rotation.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 49,
+   "cle": "dead-bug|femme",
+   "chemin": "planches/lot20/dead-bug.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 50,
+   "cle": "dead-bug|homme",
+   "chemin": "planches/lot40/dead-bug.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 211,
+   "cle": "deplacements-lateraux-4-m|femme",
+   "chemin": "planches/lot44/deplacements-lateraux-4-m.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 53,
+   "cle": "developpe-couche-barre-plat|homme",
+   "chemin": "planches/lot15/developpe-couche-barre-plat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 52,
+   "cle": "developpe-couche-barre|homme",
+   "chemin": "planches/lot24/developpe-couche-barre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 54,
+   "cle": "developpe-couche-decline-prise-serree|homme",
+   "chemin": "planches/lot28/developpe-couche-decline-prise-serree.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 55,
+   "cle": "developpe-couche-halteres|femme",
+   "chemin": "planches/lot24/developpe-couche-halteres.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 56,
+   "cle": "developpe-couche-plat-inertie-depuis-les-pins|homme",
+   "chemin": "planches/lot30/developpe-couche-plat-inertie-depuis-les-pins.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 57,
+   "cle": "developpe-couche-prise-serree|homme",
+   "chemin": "planches/lot27/developpe-couche-prise-serree.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 58,
+   "cle": "developpe-couche-test-1rm|homme",
+   "chemin": "planches/lot24/developpe-couche-test-1rm.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 59,
+   "cle": "developpe-derriere-la-nuque|homme",
+   "chemin": "planches/lot31/developpe-derriere-la-nuque.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 60,
+   "cle": "developpe-haltere-un-bras-debout|homme",
+   "chemin": "planches/lot26/developpe-haltere-un-bras-debout.png",
+   "dims": [
+    1544,
+    1376
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 1376,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 62,
+   "cle": "developpe-halteres-assis-neutre-pronation|homme",
+   "chemin": "planches/lot11/developpe-halteres-assis-neutre-pronation.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 63,
+   "cle": "developpe-halteres-assis-prise-neutre|homme",
+   "chemin": "planches/lot11/developpe-halteres-assis-prise-neutre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 61,
+   "cle": "developpe-halteres-assis|homme",
+   "chemin": "planches/lot11/developpe-halteres-assis.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 65,
+   "cle": "developpe-halteres-incline-45-prise-neutre|homme",
+   "chemin": "planches/lot37/developpe-halteres-incline-45-prise-neutre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 66,
+   "cle": "developpe-halteres-incline-pronation|homme",
+   "chemin": "planches/lot38/developpe-halteres-incline-pronation.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 68,
+   "cle": "developpe-halteres-plat-prise-neutre|homme",
+   "chemin": "planches/lot35/developpe-halteres-plat-prise-neutre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 67,
+   "cle": "developpe-halteres-plat|homme",
+   "chemin": "planches/lot28/developpe-halteres-plat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 69,
+   "cle": "developpe-incline-barre|homme",
+   "chemin": "planches/lot15/developpe-incline-barre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 70,
+   "cle": "developpe-incline-halteres|femme",
+   "chemin": "planches/lot33/developpe-incline-halteres.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 73,
+   "cle": "developpe-militaire-halteres-assis-test-3-5-reps|femme",
+   "chemin": "planches/lot16/developpe-militaire-halteres-assis-test-3-5-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 72,
+   "cle": "developpe-militaire-halteres-assis|femme",
+   "chemin": "planches/lot11/developpe-militaire-halteres-assis.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 74,
+   "cle": "developpe-militaire-inertie-depuis-les-pins|homme",
+   "chemin": "planches/lot32/developpe-militaire-inertie-depuis-les-pins.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 75,
+   "cle": "developpe-militaire-test-1rm|homme",
+   "chemin": "planches/lot09/developpe-militaire-test-1rm.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 254,
+   "cle": "dips-au-bord|homme",
+   "chemin": "planches/lot40/dips-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 76,
+   "cle": "dips|homme",
+   "chemin": "planches/lot01/homme/dips.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 77,
+   "cle": "drop-lunges-fentes-controlees|homme",
+   "chemin": "planches/lot26/drop-lunges-fentes-controlees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 78,
+   "cle": "drop-lunges-fentes-sautees-controlees|homme",
+   "chemin": "planches/lot38/drop-lunges-fentes-sautees-controlees.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 79,
+   "cle": "ecartes-cables-incline|homme",
+   "chemin": "planches/lot25/ecartes-cables-incline.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 81,
+   "cle": "ecartes-halteres-decline|homme",
+   "chemin": "planches/lot30/ecartes-halteres-decline.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 228,
+   "cle": "echauffement-mise-en-route|homme",
+   "chemin": "planches/lot03/homme/echauffement-mise-en-route.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 230,
+   "cle": "echauffement-series-d-approche|homme",
+   "chemin": "planches/lot03/homme/echauffement-series-d-approche.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 84,
+   "cle": "elevations-laterales-assises-variante|homme",
+   "chemin": "planches/lot12/elevations-laterales-assises-variante.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 83,
+   "cle": "elevations-laterales-assises|homme",
+   "chemin": "planches/lot12/elevations-laterales-assises.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 86,
+   "cle": "elevations-laterales-halteres|homme",
+   "chemin": "planches/lot27/elevations-laterales-halteres.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 89,
+   "cle": "elevations-laterales-incline-30-face-au-banc|homme",
+   "chemin": "planches/lot25/elevations-laterales-incline-30-face-au-banc.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 88,
+   "cle": "elevations-laterales-incline-30|homme",
+   "chemin": "planches/lot38/elevations-laterales-incline-30.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 82,
+   "cle": "elevations-laterales|homme",
+   "chemin": "planches/lot34/elevations-laterales.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 260,
+   "cle": "elliptique-fractionne|femme",
+   "chemin": "planches/lot03/femme/elliptique-fractionne.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 261,
+   "cle": "elliptique-mise-en-route|femme",
+   "chemin": "planches/lot03/femme/elliptique-mise-en-route.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 262,
+   "cle": "elliptique-recuperation-active|femme",
+   "chemin": "planches/lot03/femme/elliptique-recuperation-active.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 264,
+   "cle": "etirement-contre-le-mur|homme",
+   "chemin": "planches/lot05/etirement-contre-le-mur.png",
+   "dims": [
+    800,
+    1334
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 1334,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 266,
+   "cle": "etirement-des-extenseurs|homme",
+   "chemin": "planches/lot07/etirement-des-extenseurs.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 267,
+   "cle": "etirement-des-flechisseurs|homme",
+   "chemin": "planches/lot06/etirement-des-flechisseurs.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 268,
+   "cle": "etirement-du-cobra|homme",
+   "chemin": "planches/lot05/etirement-du-cobra.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 269,
+   "cle": "etirement-du-flechisseur-de-hanche-chevalier|homme",
+   "chemin": "planches/lot05/etirement-du-flechisseur-de-hanche-chevalier.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 270,
+   "cle": "etirement-du-piriforme-assis|homme",
+   "chemin": "planches/lot04/etirement-du-piriforme-assis.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 212,
+   "cle": "etirements-au-bord|femme",
+   "chemin": "planches/lot44/etirements-au-bord.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 91,
+   "cle": "extension-triceps-a-la-poulie|femme",
+   "chemin": "planches/lot29/extension-triceps-a-la-poulie.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 92,
+   "cle": "extensions-triceps-barre-ez|homme",
+   "chemin": "planches/lot34/extensions-triceps-barre-ez.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 93,
+   "cle": "extensions-triceps-halteres-incline|homme",
+   "chemin": "planches/lot37/extensions-triceps-halteres-incline.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 94,
+   "cle": "extensions-triceps-halteres-plat|homme",
+   "chemin": "planches/lot35/extensions-triceps-halteres-plat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 95,
+   "cle": "extensions-triceps-poulie|homme",
+   "chemin": "planches/lot31/extensions-triceps-poulie.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 96,
+   "cle": "extensions-triceps-pullover-barre-ez|homme",
+   "chemin": "planches/lot25/extensions-triceps-pullover-barre-ez.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 97,
+   "cle": "face-pull-a-l-elastique|femme",
+   "chemin": "planches/lot32/face-pull-a-l-elastique.png",
+   "dims": [
+    1408,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 98,
+   "cle": "face-pull-a-la-poulie|femme",
+   "chemin": "planches/lot27/face-pull-a-la-poulie.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 271,
+   "cle": "fentes-alternees|homme",
+   "chemin": "planches/lot02/fentes-alternees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 99,
+   "cle": "fentes-arriere-alternees|femme",
+   "chemin": "planches/lot10/fentes-arriere-alternees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 100,
+   "cle": "fentes-arriere-au-poids-du-corps|homme",
+   "chemin": "planches/lot11/fentes-arriere-au-poids-du-corps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 272,
+   "cle": "fentes-arriere|homme",
+   "chemin": "planches/lot40/fentes-arriere.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 101,
+   "cle": "fentes-avant-alternees|femme",
+   "chemin": "planches/lot10/fentes-avant-alternees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 102,
+   "cle": "fentes-barre|homme",
+   "chemin": "planches/lot14/fentes-barre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 103,
+   "cle": "fentes-bulgares-halteres-pied-avant-sureleve|homme",
+   "chemin": "planches/lot12/fentes-bulgares-halteres-pied-avant-sureleve.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 104,
+   "cle": "fentes-bulgares-pied-arriere-sureleve|femme",
+   "chemin": "planches/lot10/fentes-bulgares-pied-arriere-sureleve.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 105,
+   "cle": "fentes-marchees|homme",
+   "chemin": "planches/lot14/fentes-marchees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 106,
+   "cle": "fire-hydrant-a-l-elastique|femme",
+   "chemin": "planches/lot29/fire-hydrant-a-l-elastique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 273,
+   "cle": "flexion-avant-jambes-tendues|homme",
+   "chemin": "planches/lot04/flexion-avant-jambes-tendues.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 213,
+   "cle": "fractionne-nager|femme",
+   "chemin": "planches/lot43/fractionne-nager.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 107,
+   "cle": "french-press-barre-ez|homme",
+   "chemin": "planches/lot18/french-press-barre-ez.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 108,
+   "cle": "french-press-haltere-un-bras|homme",
+   "chemin": "planches/lot21/french-press-haltere-un-bras.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 109,
+   "cle": "french-press-poulie-basse|homme",
+   "chemin": "planches/lot22/french-press-poulie-basse.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 110,
+   "cle": "front-squat|homme",
+   "chemin": "planches/lot14/front-squat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 214,
+   "cle": "gainage-au-bord-vertical|femme",
+   "chemin": "planches/lot42/gainage-au-bord-vertical.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 112,
+   "cle": "gainage-lateral-dynamique|femme",
+   "chemin": "planches/lot31/gainage-lateral-dynamique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 111,
+   "cle": "gainage-lateral|femme",
+   "chemin": "planches/lot34/gainage-lateral.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 113,
+   "cle": "gainage-planche|femme",
+   "chemin": "planches/lot38/gainage-planche.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 114,
+   "cle": "gainage-planche|homme",
+   "chemin": "planches/lot37/gainage-planche.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 115,
+   "cle": "glute-bridge-en-1-5-reps|femme",
+   "chemin": "planches/lot21/glute-bridge-en-1-5-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 116,
+   "cle": "glute-bridge-pieds-sur-banc|femme",
+   "chemin": "planches/lot16/glute-bridge-pieds-sur-banc.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 117,
+   "cle": "glute-ham-raise|homme",
+   "chemin": "planches/lot31/glute-ham-raise.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 118,
+   "cle": "goblet-squat|femme",
+   "chemin": "planches/lot27/goblet-squat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 119,
+   "cle": "good-morning-debout|homme",
+   "chemin": "planches/lot21/good-morning-debout.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 277,
+   "cle": "grenouille-plantes-jointes|homme",
+   "chemin": "planches/lot17/grenouille-plantes-jointes.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 120,
+   "cle": "hack-squat|homme",
+   "chemin": "planches/lot14/hack-squat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 278,
+   "cle": "high-knees|homme",
+   "chemin": "planches/lot40/high-knees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 122,
+   "cle": "hip-thrust-barre-test-de-charge-max-3-5-reps|femme",
+   "chemin": "planches/lot18/hip-thrust-barre-test-de-charge-max-3-5-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 121,
+   "cle": "hip-thrust-barre|femme",
+   "chemin": "planches/lot36/hip-thrust-barre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 124,
+   "cle": "hip-thrust-unilateral-1-jambe|femme",
+   "chemin": "planches/lot31/hip-thrust-unilateral-1-jambe.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 125,
+   "cle": "hip-thrust-unilateral-leste|femme",
+   "chemin": "planches/lot33/hip-thrust-unilateral-leste.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 123,
+   "cle": "hip-thrust-unilateral|femme",
+   "chemin": "planches/lot19/hip-thrust-unilateral.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 279,
+   "cle": "jumping-jacks|homme",
+   "chemin": "planches/lot02/jumping-jacks.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 127,
+   "cle": "kickback-a-l-elastique|femme",
+   "chemin": "planches/lot29/kickback-a-l-elastique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 129,
+   "cle": "kickback-a-la-poulie-drop-set-final|femme",
+   "chemin": "planches/lot33/kickback-a-la-poulie-drop-set-final.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 128,
+   "cle": "kickback-a-la-poulie|femme",
+   "chemin": "planches/lot24/kickback-a-la-poulie.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 130,
+   "cle": "lean-away-pull-ups|homme",
+   "chemin": "planches/lot15/lean-away-pull-ups.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 132,
+   "cle": "leg-curl-allonge-1-1-4-en-haut|homme",
+   "chemin": "planches/lot17/leg-curl-allonge-1-1-4-en-haut.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 133,
+   "cle": "leg-curl-allonge-pieds-flechis|homme",
+   "chemin": "planches/lot10/leg-curl-allonge-pieds-flechis.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 134,
+   "cle": "leg-curl-allonge-pieds-pointes|homme",
+   "chemin": "planches/lot10/leg-curl-allonge-pieds-pointes.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 135,
+   "cle": "leg-curl-debout|homme",
+   "chemin": "planches/lot25/leg-curl-debout.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 137,
+   "cle": "leg-curl-machine-ou-swiss-ball-leg-curl|femme",
+   "chemin": "planches/lot16/leg-curl-machine-ou-swiss-ball-leg-curl.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 136,
+   "cle": "leg-curl-machine|femme",
+   "chemin": "planches/lot32/leg-curl-machine.png",
+   "dims": [
+    1408,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 138,
+   "cle": "leg-extension|homme",
+   "chemin": "planches/lot28/leg-extension.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 140,
+   "cle": "leg-press-unilateral|homme",
+   "chemin": "planches/lot35/leg-press-unilateral.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 139,
+   "cle": "leg-press|homme",
+   "chemin": "planches/lot33/leg-press.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 280,
+   "cle": "main-dans-le-dos|homme",
+   "chemin": "planches/lot06/main-dans-le-dos.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 281,
+   "cle": "mains-croisees-derriere-le-dos|homme",
+   "chemin": "planches/lot06/mains-croisees-derriere-le-dos.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 215,
+   "cle": "marche-aquatique|femme",
+   "chemin": "planches/lot43/marche-aquatique.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 282,
+   "cle": "marche-sur-place|homme",
+   "chemin": "planches/lot40/marche-sur-place.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 141,
+   "cle": "mobilite-des-epaules|homme",
+   "chemin": "planches/lot31/mobilite-des-epaules.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 216,
+   "cle": "mobilite-epaules-aquatique|femme",
+   "chemin": "planches/lot44/mobilite-epaules-aquatique.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 217,
+   "cle": "mobilite-hanches-chevilles|femme",
+   "chemin": "planches/lot44/mobilite-hanches-chevilles.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 283,
+   "cle": "mollet-en-escalier|homme",
+   "chemin": "planches/lot07/mollet-en-escalier.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 142,
+   "cle": "mollets-a-la-presse|homme",
+   "chemin": "planches/lot39/mollets-a-la-presse.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 143,
+   "cle": "mollets-assis|homme",
+   "chemin": "planches/lot12/mollets-assis.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 145,
+   "cle": "mollets-debout-unilateraux|femme",
+   "chemin": "planches/lot29/mollets-debout-unilateraux.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 144,
+   "cle": "mollets-debout|homme",
+   "chemin": "planches/lot22/mollets-debout.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 146,
+   "cle": "mollets-unilateraux|homme",
+   "chemin": "planches/lot35/mollets-unilateraux.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 284,
+   "cle": "mollets|homme",
+   "chemin": "planches/lot41/mollets.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 285,
+   "cle": "montees-de-genoux-effort|femme",
+   "chemin": "planches/lot44/montees-de-genoux-effort.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 218,
+   "cle": "montees-de-genoux|femme",
+   "chemin": "planches/lot41/montees-de-genoux.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 219,
+   "cle": "montees-de-genoux|homme",
+   "chemin": "planches/lot41/montees-de-genoux.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 286,
+   "cle": "montees-sur-mollets|homme",
+   "chemin": "planches/lot41/montees-sur-mollets.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 287,
+   "cle": "mountain-climbers-lents|homme",
+   "chemin": "planches/lot41/mountain-climbers-lents.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 147,
+   "cle": "mountain-climbers|femme",
+   "chemin": "planches/lot31/mountain-climbers.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 288,
+   "cle": "nage-douce-respiration|femme",
+   "chemin": "planches/lot45/nage-douce-respiration.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 220,
+   "cle": "nage-douce|femme",
+   "chemin": "planches/lot45/nage-douce.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 221,
+   "cle": "nage-statique-a-l-elastique|femme",
+   "chemin": "planches/lot43/nage-statique-a-l-elastique.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 293,
+   "cle": "oiseau-chien|homme",
+   "chemin": "planches/lot42/oiseau-chien.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 294,
+   "cle": "patineurs|homme",
+   "chemin": "planches/lot41/patineurs.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 295,
+   "cle": "pigeon-assis|homme",
+   "chemin": "planches/lot04/pigeon-assis.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 297,
+   "cle": "planche-laterale-g|homme",
+   "chemin": "planches/lot41/planche-laterale-g.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 296,
+   "cle": "planche|homme",
+   "chemin": "planches/lot41/planche.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 299,
+   "cle": "pompes-au-mur|homme",
+   "chemin": "planches/lot41/pompes-au-mur.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 152,
+   "cle": "pompes-inclinees-mains-surelevees|femme",
+   "chemin": "planches/lot28/pompes-inclinees-mains-surelevees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 300,
+   "cle": "pompes-inclinees|homme",
+   "chemin": "planches/lot38/pompes-inclinees.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 151,
+   "cle": "pompes|homme",
+   "chemin": "planches/lot02/pompes.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 153,
+   "cle": "pont-fessier-au-sol-activation|femme",
+   "chemin": "planches/lot28/pont-fessier-au-sol-activation.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 301,
+   "cle": "ponts-fessiers|homme",
+   "chemin": "planches/lot42/ponts-fessiers.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 303,
+   "cle": "position-de-l-enfant-balasana|homme",
+   "chemin": "planches/lot04/position-de-l-enfant-balasana.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 302,
+   "cle": "position-de-l-enfant|homme",
+   "chemin": "planches/lot07/position-de-l-enfant.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 154,
+   "cle": "presse-a-cuisses-pieds-hauts|femme",
+   "chemin": "planches/lot08/presse-a-cuisses-pieds-hauts.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 155,
+   "cle": "pullover-cable-bras-tendus|homme",
+   "chemin": "planches/lot21/pullover-cable-bras-tendus.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 156,
+   "cle": "pullover-haltere-plat|homme",
+   "chemin": "planches/lot29/pullover-haltere-plat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 157,
+   "cle": "pushdown-triceps-cable|homme",
+   "chemin": "planches/lot22/pushdown-triceps-cable.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 223,
+   "cle": "recup-complete-souffler|femme",
+   "chemin": "planches/lot43/recup-complete-souffler.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 161,
+   "cle": "releves-de-jambes-allongee|femme",
+   "chemin": "planches/lot10/releves-de-jambes-allongee.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 160,
+   "cle": "releves-de-jambes-allonge|homme",
+   "chemin": "planches/lot10/releves-de-jambes-allonge.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 162,
+   "cle": "releves-de-jambes-incline|homme",
+   "chemin": "planches/lot30/releves-de-jambes-incline.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 163,
+   "cle": "releves-de-jambes-suspendu|homme",
+   "chemin": "planches/lot36/releves-de-jambes-suspendu.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 158,
+   "cle": "releves-de-jambes|femme",
+   "chemin": "planches/lot32/releves-de-jambes.png",
+   "dims": [
+    1408,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 159,
+   "cle": "releves-de-jambes|homme",
+   "chemin": "planches/lot02/releves-de-jambes.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 310,
+   "cle": "repos-actif|homme",
+   "chemin": "planches/lot42/repos-actif.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 309,
+   "cle": "repos|femme",
+   "chemin": "planches/lot44/repos.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 311,
+   "cle": "respiration-diaphragmatique-allongee|homme",
+   "chemin": "planches/lot04/respiration-diaphragmatique-allongee.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 164,
+   "cle": "respiration-diaphragmatique|homme",
+   "chemin": "planches/lot34/respiration-diaphragmatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 312,
+   "cle": "respiration-profonde|homme",
+   "chemin": "planches/lot42/respiration-profonde.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 165,
+   "cle": "reverse-crunch|femme",
+   "chemin": "planches/lot26/reverse-crunch.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 166,
+   "cle": "rowing-a-l-elastique|homme",
+   "chemin": "planches/lot29/rowing-a-l-elastique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 167,
+   "cle": "rowing-assis-au-cou|homme",
+   "chemin": "planches/lot11/rowing-assis-au-cou.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 168,
+   "cle": "rowing-assis-cable-unilateral|homme",
+   "chemin": "planches/lot11/rowing-assis-cable-unilateral.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 169,
+   "cle": "rowing-assis-etirement|homme",
+   "chemin": "planches/lot50/rowing-assis-etirement.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 170,
+   "cle": "rowing-assis-prise-neutre|homme",
+   "chemin": "planches/lot12/rowing-assis-prise-neutre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 172,
+   "cle": "rowing-barre-buste-penche-pronation|homme",
+   "chemin": "planches/lot01/homme/rowing-barre-buste-penche-pronation.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 173,
+   "cle": "rowing-barre-buste-penche-test-3-5-reps|femme",
+   "chemin": "planches/lot22/rowing-barre-buste-penche-test-3-5-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 171,
+   "cle": "rowing-barre-buste-penche|femme",
+   "chemin": "planches/lot17/rowing-barre-buste-penche.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 174,
+   "cle": "rowing-barre-ez-supination-buste-penche|homme",
+   "chemin": "planches/lot19/rowing-barre-ez-supination-buste-penche.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 175,
+   "cle": "rowing-haltere-buste-penche|homme",
+   "chemin": "planches/lot22/rowing-haltere-buste-penche.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 177,
+   "cle": "rowing-haltere-un-bras-coude-ouvert|homme",
+   "chemin": "planches/lot21/rowing-haltere-un-bras-coude-ouvert.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 178,
+   "cle": "rowing-haltere-un-bras-prise-neutre|homme",
+   "chemin": "planches/lot23/rowing-haltere-un-bras-prise-neutre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 176,
+   "cle": "rowing-haltere-un-bras|homme",
+   "chemin": "planches/lot21/rowing-haltere-un-bras.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 317,
+   "cle": "russian-twist|homme",
+   "chemin": "planches/lot38/russian-twist.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 179,
+   "cle": "safety-bar-squat-ou-barre-classique|homme",
+   "chemin": "planches/lot17/safety-bar-squat-ou-barre-classique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 182,
+   "cle": "souleve-de-terre-partiel-prise-snatch|homme",
+   "chemin": "planches/lot39/souleve-de-terre-partiel-prise-snatch.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 181,
+   "cle": "souleve-de-terre-partiel|homme",
+   "chemin": "planches/lot39/souleve-de-terre-partiel.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 184,
+   "cle": "souleve-de-terre-roumain-barre-test-3-5-reps|femme",
+   "chemin": "planches/lot19/souleve-de-terre-roumain-barre-test-3-5-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 183,
+   "cle": "souleve-de-terre-roumain-barre|homme",
+   "chemin": "planches/lot13/souleve-de-terre-roumain-barre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 185,
+   "cle": "souleve-de-terre-roumain-halteres|homme",
+   "chemin": "planches/lot28/souleve-de-terre-roumain-halteres.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 187,
+   "cle": "souleve-de-terre-roumain-unilateral-haltere|femme",
+   "chemin": "planches/lot30/souleve-de-terre-roumain-unilateral-haltere.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 186,
+   "cle": "souleve-de-terre-roumain-unilateral|femme",
+   "chemin": "planches/lot34/souleve-de-terre-roumain-unilateral.png",
+   "dims": [
+    1408,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 188,
+   "cle": "souleve-de-terre-test-1rm|homme",
+   "chemin": "planches/lot09/souleve-de-terre-test-1rm.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 180,
+   "cle": "souleve-de-terre|homme",
+   "chemin": "planches/lot50/souleve-de-terre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 189,
+   "cle": "split-squat-barbell-pied-avant-sureleve|homme",
+   "chemin": "planches/lot12/split-squat-barbell-pied-avant-sureleve.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 190,
+   "cle": "split-squat-poulie-basse|homme",
+   "chemin": "planches/lot21/split-squat-poulie-basse.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 226,
+   "cle": "sprint-nager-a-fond|femme",
+   "chemin": "planches/lot43/sprint-nager-a-fond.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 191,
+   "cle": "squat-au-poids-du-corps|homme",
+   "chemin": "planches/lot23/squat-au-poids-du-corps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 193,
+   "cle": "squat-cycliste-squat-complet|homme",
+   "chemin": "planches/lot26/squat-cycliste-squat-complet.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 192,
+   "cle": "squat-cycliste|homme",
+   "chemin": "planches/lot34/squat-cycliste.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 319,
+   "cle": "squats-doux|homme",
+   "chemin": "planches/lot43/squats-doux.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 320,
+   "cle": "squats-sautes|homme",
+   "chemin": "planches/lot39/squats-sautes.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 321,
+   "cle": "squats-sumo|homme",
+   "chemin": "planches/lot42/squats-sumo.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 318,
+   "cle": "squats|homme",
+   "chemin": "planches/lot02/squats.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 195,
+   "cle": "step-up-sur-banc-hauteur-du-genou|femme",
+   "chemin": "planches/lot24/step-up-sur-banc-hauteur-du-genou.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 322,
+   "cle": "superman|homme",
+   "chemin": "planches/lot02/superman.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 323,
+   "cle": "suspension-a-la-barre|homme",
+   "chemin": "planches/lot04/suspension-a-la-barre.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 325,
+   "cle": "talon-vers-la-fesse-debout|homme",
+   "chemin": "planches/lot06/talon-vers-la-fesse-debout.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 227,
+   "cle": "talons-fesses|femme",
+   "chemin": "planches/lot43/talons-fesses.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 196,
+   "cle": "tirage-horizontal-a-la-poulie|femme",
+   "chemin": "planches/lot27/tirage-horizontal-a-la-poulie.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 197,
+   "cle": "tirage-vertical-lean-away|homme",
+   "chemin": "planches/lot15/tirage-vertical-lean-away.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 198,
+   "cle": "tirage-vertical-prise-large|homme",
+   "chemin": "planches/lot33/tirage-vertical-prise-large.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 199,
+   "cle": "tirage-vertical-prise-neutre|femme",
+   "chemin": "planches/lot35/tirage-vertical-prise-neutre.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 200,
+   "cle": "tirage-vertical-prise-pronation|homme",
+   "chemin": "planches/lot37/tirage-vertical-prise-pronation.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 328,
+   "cle": "torsion-allongee-genoux|homme",
+   "chemin": "planches/lot04/torsion-allongee-genoux.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 327,
+   "cle": "torsion-allongee|homme",
+   "chemin": "planches/lot50/torsion-allongee.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 201,
+   "cle": "tractions-prise-large|homme",
+   "chemin": "planches/lot32/tractions-prise-large.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 202,
+   "cle": "tractions-prise-neutre-chin-up|homme",
+   "chemin": "planches/lot22/tractions-prise-neutre-chin-up.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 203,
+   "cle": "tractions-pull-up|homme",
+   "chemin": "planches/lot01/homme/tractions-pull-up.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 330,
+   "cle": "transition|femme",
+   "chemin": "planches/lot50/transition.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 205,
+   "cle": "triceps-dips|homme",
+   "chemin": "planches/lot31/triceps-dips.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 206,
+   "cle": "triceps-extensions-halteres-banc-plat|homme",
+   "chemin": "planches/lot18/triceps-extensions-halteres-banc-plat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 331,
+   "cle": "une-jambe-tendue-une-pliee|homme",
+   "chemin": "planches/lot08/une-jambe-tendue-une-pliee.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 207,
+   "cle": "wood-chop-poulie-haute|homme",
+   "chemin": "planches/lot22/wood-chop-poulie-haute.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 332,
+   "cle": "aqua-jogging-sur-place|homme",
+   "chemin": "planches/lot51/aqua-jogging-sur-place.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 333,
+   "cle": "aqua-jogging|homme",
+   "chemin": "planches/lot51/aqua-jogging-sur-place.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 334,
+   "cle": "aqua-jogging-effort|homme",
+   "chemin": "planches/lot51/aqua-jogging-sur-place.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 335,
+   "cle": "tabata-1-2-en-place|homme",
+   "chemin": "planches/lot51/aqua-jogging-sur-place.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 336,
+   "cle": "tour-1-2-en-place|homme",
+   "chemin": "planches/lot51/aqua-jogging-sur-place.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 337,
+   "cle": "ciseaux-mains-au-bord|homme",
+   "chemin": "planches/lot51/ciseaux-mains-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 338,
+   "cle": "ciseaux-au-bord|homme",
+   "chemin": "planches/lot51/ciseaux-mains-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 339,
+   "cle": "ciseaux-au-bord-effort|homme",
+   "chemin": "planches/lot51/ciseaux-mains-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 340,
+   "cle": "deplacements-lateraux-4-m|homme",
+   "chemin": "planches/lot51/deplacements-lateraux-4-m.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 341,
+   "cle": "deplacements-lateraux|homme",
+   "chemin": "planches/lot51/deplacements-lateraux-4-m.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 342,
+   "cle": "deplacements-lateraux-4-m-effort|homme",
+   "chemin": "planches/lot51/deplacements-lateraux-4-m.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 343,
+   "cle": "gainage-au-bord-vertical|homme",
+   "chemin": "planches/lot51/gainage-au-bord-vertical.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 344,
+   "cle": "gainage-vertical|homme",
+   "chemin": "planches/lot51/gainage-au-bord-vertical.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 345,
+   "cle": "gainage-vertical-au-bord|homme",
+   "chemin": "planches/lot51/gainage-au-bord-vertical.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 346,
+   "cle": "gainage-vertical-effort|homme",
+   "chemin": "planches/lot51/gainage-au-bord-vertical.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 347,
+   "cle": "marche-aquatique|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 348,
+   "cle": "echauffement-marche-aquatique|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 349,
+   "cle": "recup-active-marche-aquatique|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 350,
+   "cle": "recup-courte-marche|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 351,
+   "cle": "recup-entre-tabatas|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 352,
+   "cle": "recup-marche|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 353,
+   "cle": "recup-marche-aquatique|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 354,
+   "cle": "retour-au-calme|homme",
+   "chemin": "planches/lot51/marche-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 355,
+   "cle": "montees-de-genoux-effort|homme",
+   "chemin": "planches/lot51/montees-de-genoux-effort.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 356,
+   "cle": "nage-douce|homme",
+   "chemin": "planches/lot51/nage-douce.png",
+   "dims": [
+    1376,
+    527
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 527,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 357,
+   "cle": "echauffement-nage-douce|homme",
+   "chemin": "planches/lot51/nage-douce.png",
+   "dims": [
+    1376,
+    527
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 527,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 358,
+   "cle": "echauffement-soigneux-nage-douce|homme",
+   "chemin": "planches/lot51/nage-douce.png",
+   "dims": [
+    1376,
+    527
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 527,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 359,
+   "cle": "retour-au-calme-nage-douce|homme",
+   "chemin": "planches/lot51/nage-douce.png",
+   "dims": [
+    1376,
+    527
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 527,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 360,
+   "cle": "retour-au-calme-nage-tres-douce|homme",
+   "chemin": "planches/lot51/nage-douce.png",
+   "dims": [
+    1376,
+    527
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 527,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 361,
+   "cle": "pompes-au-bord|homme",
+   "chemin": "planches/lot51/pompes-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 362,
+   "cle": "pompes-au-bord-effort|homme",
+   "chemin": "planches/lot51/pompes-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 363,
+   "cle": "repos|homme",
+   "chemin": "planches/lot51/repos.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 364,
+   "cle": "etirements-au-bord|homme",
+   "chemin": "planches/lot52/etirements-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 365,
+   "cle": "fractionne-nager|homme",
+   "chemin": "planches/lot52/fractionne-nager.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 366,
+   "cle": "nager-fractionne-1-6|homme",
+   "chemin": "planches/lot52/fractionne-nager.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 367,
+   "cle": "mobilite-epaules-aquatique|homme",
+   "chemin": "planches/lot52/mobilite-epaules-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 368,
+   "cle": "retour-au-calme-mobilite|homme",
+   "chemin": "planches/lot52/mobilite-epaules-aquatique.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 369,
+   "cle": "nage-douce-respiration|homme",
+   "chemin": "planches/lot52/nage-douce-respiration.png",
+   "dims": [
+    1376,
+    596
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 596,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 370,
+   "cle": "nage-statique-a-l-elastique|homme",
+   "chemin": "planches/lot52/nage-statique-a-l-elastique.png",
+   "dims": [
+    1376,
+    381
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 381,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 371,
+   "cle": "nage-statique-douce|homme",
+   "chemin": "planches/lot52/nage-statique-a-l-elastique.png",
+   "dims": [
+    1376,
+    381
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 381,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 372,
+   "cle": "nage-statique-z2|homme",
+   "chemin": "planches/lot52/nage-statique-a-l-elastique.png",
+   "dims": [
+    1376,
+    381
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 381,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 373,
+   "cle": "recup-complete-souffler|homme",
+   "chemin": "planches/lot52/recup-complete-souffler.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 374,
+   "cle": "recup-complete-souffler-au-bord|homme",
+   "chemin": "planches/lot52/recup-complete-souffler.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 375,
+   "cle": "retour-au-calme-respiration|homme",
+   "chemin": "planches/lot52/recup-complete-souffler.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 376,
+   "cle": "battements-au-bord|homme",
+   "chemin": "planches/lot53/battements-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 377,
+   "cle": "battements-de-jambes-effort|homme",
+   "chemin": "planches/lot53/battements-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 378,
+   "cle": "echauffement-battements-au-bord|homme",
+   "chemin": "planches/lot53/battements-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 379,
+   "cle": "echauffement-battements-mobilite|homme",
+   "chemin": "planches/lot53/battements-au-bord.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 381,
+   "cle": "sprint-nager-a-fond|homme",
+   "chemin": "planches/lot53/sprint-nager-a-fond.png",
+   "dims": [
+    1376,
+    544
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 544,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 382,
+   "cle": "nager-sprint-1-8|homme",
+   "chemin": "planches/lot53/sprint-nager-a-fond.png",
+   "dims": [
+    1376,
+    544
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 544,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 383,
+   "cle": "elliptique-recuperation-active|homme",
+   "chemin": "planches/lot53/elliptique-recuperation-active.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 384,
+   "cle": "elliptique-retour-au-calme|homme",
+   "chemin": "planches/lot53/elliptique-retour-au-calme.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 385,
+   "cle": "transition|homme",
+   "chemin": "planches/lot53/transition.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 386,
+   "cle": "elliptique-mise-en-route|homme",
+   "chemin": "planches/lot54/elliptique-mise-en-route.png",
+   "dims": [
+    1445,
+    736
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 736,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 387,
+   "cle": "talons-fesses|homme",
+   "chemin": "planches/lot55/talons-fesses.png",
+   "dims": [
+    798,
+    1334
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 1334,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 388,
+   "cle": "talons-fesses-effort|homme",
+   "chemin": "planches/lot55/talons-fesses.png",
+   "dims": [
+    798,
+    1334
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 1334,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 389,
+   "cle": "elliptique-fractionne|homme",
+   "chemin": "planches/lot56/elliptique-fractionne.png",
+   "dims": [
+    1692,
+    1264
+   ],
+   "origine": "manifeste",
+   "hauteur_panneau": 1264,
+   "sans_agrandissement_a_660": true
+  }
+ ],
+ "B_propositions": [
+  {
+   "numero": 239,
+   "cle": "bras-tendu-contre-le-mur|homme",
+   "lot": "lot61",
+   "chemin": "propositions/lot61/planches/bras-tendu-contre-le-mur.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 19,
+   "cle": "bulgarian-split-squat-halteres|femme",
+   "lot": "lot57",
+   "chemin": "propositions/lot57/planches/bulgarian-split-squat-halteres.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 26,
+   "cle": "crunch-a-la-poulie|homme",
+   "lot": "lot69",
+   "chemin": "propositions/lot69/planches/crunch-a-la-poulie.png",
+   "dims": [
+    1582,
+    440
+   ],
+   "hauteur_panneau": 440,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 31,
+   "cle": "curl-concentration|homme",
+   "lot": "lot62",
+   "chemin": "propositions/lot62/planches/curl-concentration.png",
+   "dims": [
+    1606,
+    1334
+   ],
+   "hauteur_panneau": 1334,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 38,
+   "cle": "curl-marteau-assis|homme",
+   "lot": "lot60",
+   "chemin": "propositions/lot60/planches/curl-marteau-assis.png",
+   "dims": [
+    1456,
+    720
+   ],
+   "hauteur_panneau": 720,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 37,
+   "cle": "curl-marteau|homme",
+   "lot": "lot57",
+   "chemin": "propositions/lot57/planches/curl-marteau.png",
+   "dims": [
+    1584,
+    672
+   ],
+   "hauteur_panneau": 672,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 44,
+   "cle": "curl-scott-haltere-neutre|homme",
+   "lot": "lot69",
+   "chemin": "propositions/lot69/planches/curl-scott-haltere-neutre.png",
+   "dims": [
+    534,
+    440
+   ],
+   "hauteur_panneau": 440,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 45,
+   "cle": "curl-scott-haltere-prise-neutre|homme",
+   "lot": "lot69",
+   "chemin": "propositions/lot69/planches/curl-scott-haltere-prise-neutre.png",
+   "dims": [
+    534,
+    440
+   ],
+   "hauteur_panneau": 440,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 47,
+   "cle": "curl-zottman-assis|homme",
+   "lot": "lot66",
+   "chemin": "propositions/lot66/planches/curl-zottman-assis.png",
+   "dims": [
+    2736,
+    808
+   ],
+   "hauteur_panneau": 808,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 48,
+   "cle": "curl-zottman-un-bras-banc-scott|homme",
+   "lot": "lot64",
+   "chemin": "propositions/lot64/planches/curl-zottman-un-bras-banc-scott.png",
+   "dims": [
+    3200,
+    1374
+   ],
+   "hauteur_panneau": 1374,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 46,
+   "cle": "curl-zottman|homme",
+   "lot": "lot65",
+   "chemin": "propositions/lot65/planches/curl-zottman.png",
+   "dims": [
+    2736,
+    808
+   ],
+   "hauteur_panneau": 808,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 64,
+   "cle": "developpe-halteres-decline-prise-neutre|homme",
+   "lot": "lot57",
+   "chemin": "propositions/lot57/planches/developpe-halteres-decline-prise-neutre.png",
+   "dims": [
+    1333,
+    800
+   ],
+   "hauteur_panneau": 800,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 85,
+   "cle": "elevations-laterales-coude-a-90|homme",
+   "lot": "lot68",
+   "chemin": "propositions/lot68/planches/elevations-laterales-coude-a-90.png",
+   "dims": [
+    2752,
+    810
+   ],
+   "hauteur_panneau": 810,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 87,
+   "cle": "elevations-laterales-halteres-myo-reps|femme",
+   "lot": "lot60",
+   "chemin": "propositions/lot60/planches/elevations-laterales-halteres-myo-reps.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 90,
+   "cle": "elevations-laterales-lean-away|homme",
+   "lot": "lot59",
+   "chemin": "propositions/lot59/planches/elevations-laterales-lean-away.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 265,
+   "cle": "etirement-dans-l-encadrement-de-porte|homme",
+   "lot": "lot60",
+   "chemin": "propositions/lot60/planches/etirement-dans-l-encadrement-de-porte.png",
+   "dims": [
+    928,
+    1127
+   ],
+   "hauteur_panneau": 1127,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 126,
+   "cle": "jackknife-sur-swiss-ball|homme",
+   "lot": "lot61",
+   "chemin": "propositions/lot61/planches/jackknife-sur-swiss-ball.png",
+   "dims": [
+    1707,
+    608
+   ],
+   "hauteur_panneau": 608,
+   "sans_agrandissement_a_660": false
+  },
+  {
+   "numero": 148,
+   "cle": "mountain-climbers|homme",
+   "lot": "lot63",
+   "chemin": "propositions/lot63/planches/mountain-climbers.png",
+   "dims": [
+    2752,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 149,
+   "cle": "pallof-press-a-l-elastique|femme",
+   "lot": "lot58",
+   "chemin": "propositions/lot58/planches/pallof-press-a-l-elastique.png",
+   "dims": [
+    1408,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 150,
+   "cle": "pallof-press-a-la-poulie|femme",
+   "lot": "lot58",
+   "chemin": "propositions/lot58/planches/pallof-press-a-la-poulie.png",
+   "dims": [
+    1408,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 222,
+   "cle": "pompes-au-bord|femme",
+   "lot": "lot59",
+   "chemin": "propositions/lot59/planches/pompes-au-bord.png",
+   "dims": [
+    1408,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 194,
+   "cle": "step-up-haut|homme",
+   "lot": "lot59",
+   "chemin": "propositions/lot59/planches/step-up-haut.png",
+   "dims": [
+    800,
+    1334
+   ],
+   "hauteur_panneau": 1334,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 204,
+   "cle": "tractions-supination-chin-up|homme",
+   "lot": "lot68",
+   "chemin": "propositions/lot68/planches/tractions-supination-chin-up.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "hauteur_panneau": 768,
+   "sans_agrandissement_a_660": true
+  },
+  {
+   "numero": 380,
+   "cle": "mobilite-hanches-chevilles|homme",
+   "lot": "lot59",
+   "chemin": "propositions/lot59/planches/mobilite-hanches-chevilles.png",
+   "dims": [
+    800,
+    1334
+   ],
+   "hauteur_panneau": 1334,
+   "sans_agrandissement_a_660": true
+  }
+ ],
+ "C_sans_source": [
+  {
+   "numero": 3,
+   "cle": "abduction-assise-machine|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 234,
+   "cle": "aqua-jogging-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 233,
+   "cle": "aqua-jogging|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 11,
+   "cle": "back-squat|homme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 237,
+   "cle": "battements-de-jambes-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 246,
+   "cle": "ciseaux-au-bord-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 210,
+   "cle": "ciseaux-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 253,
+   "cle": "deplacements-lateraux-4-m-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 252,
+   "cle": "deplacements-lateraux|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 71,
+   "cle": "developpe-militaire-debout|homme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 80,
+   "cle": "ecartes-halteres|homme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 255,
+   "cle": "echauffement-battements-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 256,
+   "cle": "echauffement-battements-mobilite|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 257,
+   "cle": "echauffement-marche-aquatique|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 229,
+   "cle": "echauffement-mobilite|homme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 258,
+   "cle": "echauffement-nage-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 259,
+   "cle": "echauffement-soigneux-nage-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 263,
+   "cle": "elliptique-retour-au-calme|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 275,
+   "cle": "gainage-vertical-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 276,
+   "cle": "gainage-vertical-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 274,
+   "cle": "gainage-vertical|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 131,
+   "cle": "leg-curl-allonge|homme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 289,
+   "cle": "nage-statique-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 290,
+   "cle": "nage-statique-z2|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 291,
+   "cle": "nager-fractionne-1-6|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 292,
+   "cle": "nager-sprint-1-8|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 298,
+   "cle": "pompes-au-bord-effort|femme",
+   "lot": "lot59",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 304,
+   "cle": "recup-active-marche-aquatique|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 305,
+   "cle": "recup-complete-souffler-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 306,
+   "cle": "recup-courte-marche|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 224,
+   "cle": "recup-entre-tabatas|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 308,
+   "cle": "recup-marche-aquatique|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 307,
+   "cle": "recup-marche|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 313,
+   "cle": "retour-au-calme-mobilite|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 314,
+   "cle": "retour-au-calme-nage-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 315,
+   "cle": "retour-au-calme-nage-tres-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 316,
+   "cle": "retour-au-calme-respiration|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 225,
+   "cle": "retour-au-calme|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 324,
+   "cle": "tabata-1-2-en-place|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 326,
+   "cle": "talons-fesses-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 329,
+   "cle": "tour-1-2-en-place|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  }
+ ],
+ "resume": {
+  "A": 324,
+  "B": 24,
+  "C": 41,
+  "sans_agrandissement_a_660": 333
+ },
+ "C2_retrouves_par_nom": [
+  {
+   "numero": 3,
+   "cle": "abduction-assise-machine|femme",
+   "chemin": "planches/lot01/femme/abduction-assise-machine.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "candidats": [
+    "planches/lot01/femme/abduction-assise-machine.png"
+   ]
+  },
+  {
+   "numero": 11,
+   "cle": "back-squat|homme",
+   "chemin": "planches/lot01/homme/back-squat.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "candidats": [
+    "planches/lot01/homme/back-squat.png"
+   ]
+  },
+  {
+   "numero": 71,
+   "cle": "developpe-militaire-debout|homme",
+   "chemin": "planches/lot01/homme/developpe-militaire-debout.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "candidats": [
+    "planches/lot01/homme/developpe-militaire-debout.png"
+   ]
+  },
+  {
+   "numero": 80,
+   "cle": "ecartes-halteres|homme",
+   "chemin": "planches/lot28/ecartes-halteres.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "candidats": [
+    "planches/lot28/ecartes-halteres.png",
+    "propositions/lot67/planches/ecartes-halteres.png",
+    "propositions/lot69/planches/ecartes-halteres.png"
+   ]
+  },
+  {
+   "numero": 229,
+   "cle": "echauffement-mobilite|homme",
+   "chemin": "planches/lot03/homme/echauffement-mobilite.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "candidats": [
+    "planches/lot03/homme/echauffement-mobilite.png"
+   ]
+  },
+  {
+   "numero": 263,
+   "cle": "elliptique-retour-au-calme|femme",
+   "chemin": "planches/lot03/femme/elliptique-retour-au-calme.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "candidats": [
+    "planches/lot03/femme/elliptique-retour-au-calme.png",
+    "planches/lot53/elliptique-retour-au-calme.png"
+   ]
+  },
+  {
+   "numero": 131,
+   "cle": "leg-curl-allonge|homme",
+   "chemin": "planches/lot01/homme/leg-curl-allonge.png",
+   "dims": [
+    1376,
+    768
+   ],
+   "candidats": [
+    "planches/lot01/homme/leg-curl-allonge.png"
+   ]
+  }
+ ],
+ "C3_sans_aucune_source": [
+  {
+   "numero": 234,
+   "cle": "aqua-jogging-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 233,
+   "cle": "aqua-jogging|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 237,
+   "cle": "battements-de-jambes-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 246,
+   "cle": "ciseaux-au-bord-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 210,
+   "cle": "ciseaux-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 253,
+   "cle": "deplacements-lateraux-4-m-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 252,
+   "cle": "deplacements-lateraux|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 255,
+   "cle": "echauffement-battements-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 256,
+   "cle": "echauffement-battements-mobilite|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 257,
+   "cle": "echauffement-marche-aquatique|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 258,
+   "cle": "echauffement-nage-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 259,
+   "cle": "echauffement-soigneux-nage-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 275,
+   "cle": "gainage-vertical-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 276,
+   "cle": "gainage-vertical-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 274,
+   "cle": "gainage-vertical|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 289,
+   "cle": "nage-statique-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 290,
+   "cle": "nage-statique-z2|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 291,
+   "cle": "nager-fractionne-1-6|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 292,
+   "cle": "nager-sprint-1-8|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 298,
+   "cle": "pompes-au-bord-effort|femme",
+   "lot": "lot59",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 304,
+   "cle": "recup-active-marche-aquatique|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 305,
+   "cle": "recup-complete-souffler-au-bord|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 306,
+   "cle": "recup-courte-marche|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 224,
+   "cle": "recup-entre-tabatas|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 308,
+   "cle": "recup-marche-aquatique|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 307,
+   "cle": "recup-marche|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 313,
+   "cle": "retour-au-calme-mobilite|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 314,
+   "cle": "retour-au-calme-nage-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 315,
+   "cle": "retour-au-calme-nage-tres-douce|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 316,
+   "cle": "retour-au-calme-respiration|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 225,
+   "cle": "retour-au-calme|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 324,
+   "cle": "tabata-1-2-en-place|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 326,
+   "cle": "talons-fesses-effort|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  },
+  {
+   "numero": 329,
+   "cle": "tour-1-2-en-place|femme",
+   "lot": "",
+   "chemin": null,
+   "dims": null
+  }
+ ]
+}

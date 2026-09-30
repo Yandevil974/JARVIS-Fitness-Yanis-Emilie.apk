@@ -1,3 +1,44 @@
+# VALIDATION UTILISATEUR + INVENTAIRE DES SOURCES (30/09/2026) — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`
+
+## 1. Prototype n°44 VALIDÉ (accord explicite, fichier identifié par son empreinte)
+
+L'utilisateur a cité le lien brut de `44-vert260-660-webp-q90.webp` (commit `7bbaca5`) et répondu **« validé »**.
+Enregistré dans `evolution/media/refonte-photo/hd-2026-09-30/VALIDATION-44-2026-09-30.json` :
+
+- fichier validé : `…/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-q90.webp`,
+  **sha256 `0ecbbd679668154303d0c33090c7fc48b086a7ae82460f6ac284205a6e642618`**, 388×660, 2 images de 500 ms, **98 ko** ;
+- réglages validés : **WebP animé**, **q90**, **660 px**, **vert rapproché du 260** (contour resserré,
+  correspondance de percentiles) ; cadrage identique au GIF livré ;
+- fichier de secours consigné (GIF 660, 403 ko) si la WebView refuse le WebP ;
+- contrôles du prototype : **0 pixel modifié hors zone verte** (1 045 768 / 1 052 290 px vérifiés),
+  saturation 0,894/0,925 pour 0,914 sur le 260, 11 137 nuances conservées, transition de contour 13,0 → 8,5 px.
+- **Portée** : couvre le **n°44** seulement. Le **n°45** (même démonstration) attend un accord explicite séparé.
+  **Aucun GIF livré remplacé, APK non reconstruit.**
+
+## 2. Inventaire des sources des 389 (fichier `INVENTAIRE-SOURCES-389.json`)
+
+Construit en lisant les en-têtes PNG directement dans les objets git (aucun téléchargement, aucun média modifié) :
+
+| Source native disponible | Nombre |
+|---|---|
+| Planche native enregistrée dans le manifeste (324) + retrouvée dans un lot de propositions (24) + retrouvée par nom (7) | **355** |
+| Dont exploitable à **660 px sans agrandissement** (panneau ≥ 660 px) | **340** |
+| Dont nécessitant un léger agrandissement (panneaux de 381 à 596 px de haut) | 15 |
+| **Aucune source PNG native** : 34 entrées, **toutes « femme »**, séries piscine/aqua/elliptique (210, 224-259, 274-276, 289-330) | 34 |
+
+Dimensions natives dominantes : **1376×768** (266 entrées) et 1456×720 (43). Un panneau de 768 px de haut
+alimente donc un export 660 px **sans agrandissement** — argument décisif en faveur des 660 px retenus.
+Les 34 entrées sans source native correspondent au chantier **piscine/aqua/cardio**, prévu **après** les visuels :
+elles seront traitées avec ce chantier (guides piscine), pas en aveugle.
+
+## 3. Prochain lot proposé (aucune action engagée sans votre accord)
+
+Lot 1 : **n°45** (jumeau du 44), **n°48** (à reprendre : raccord muscle/coussin), **n°19** et **n°85**
+(propositions lot03 non validées) — quatre cas différents pour juger la méthode avant une série.
+Chaque proposition restera **non intégrée** et fournie avec ses contrôles (0 pixel hors zone verte,
+avant/après, PNG de travail, fichier réellement décodé).
+
+---
 # PROTOTYPE n°44 — RÉGLAGES CHOISIS PAR L'UTILISATEUR ET PROTOTYPE CONSTRUIT (30/09/2026)
 
 **Décisions utilisateur du 30/09/2026 : format WebP animé · hauteur 660 px · vert rapproché du n°260.**
