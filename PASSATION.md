@@ -1,4 +1,7 @@
-# VALIDATION UTILISATEUR + INVENTAIRE DES SOURCES (30/09/2026) — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`
+# ÉTAT AU 01/10/2026 — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`
+
+> **Bloc de reprise prêt à copier-coller dans un nouveau chat : `PASSATION-COPIER-COLLER.md`**
+> (consigne + passation complète, état au 01/10/2026 : lot 1 validé, lot 2 proposé).
 
 ## 1. Prototype n°44 VALIDÉ (accord explicite, fichier identifié par son empreinte)
 
