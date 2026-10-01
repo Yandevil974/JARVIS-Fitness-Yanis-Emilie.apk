@@ -1,266 +1,188 @@
-# VALIDATION UTILISATEUR + INVENTAIRE DES SOURCES (30/09/2026) — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`
+# 📋 À COPIER-COLLER DANS LE NOUVEAU CHAT — état au 01/10/2026
 
-## 1. Prototype n°44 VALIDÉ (accord explicite, fichier identifié par son empreinte)
-
-L'utilisateur a cité le lien brut de `44-vert260-660-webp-q90.webp` (commit `7bbaca5`) et répondu **« validé »**.
-Enregistré dans `evolution/media/refonte-photo/hd-2026-09-30/VALIDATION-44-2026-09-30.json` :
-
-- fichier validé : `…/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-q90.webp`,
-  **sha256 `0ecbbd679668154303d0c33090c7fc48b086a7ae82460f6ac284205a6e642618`**, 388×660, 2 images de 500 ms, **98 ko** ;
-- réglages validés : **WebP animé**, **q90**, **660 px**, **vert rapproché du 260** (contour resserré,
-  correspondance de percentiles) ; cadrage identique au GIF livré ;
-- fichier de secours consigné (GIF 660, 403 ko) si la WebView refuse le WebP ;
-- contrôles du prototype : **0 pixel modifié hors zone verte** (1 045 768 / 1 052 290 px vérifiés),
-  saturation 0,894/0,925 pour 0,914 sur le 260, 11 137 nuances conservées, transition de contour 13,0 → 8,5 px.
-- **Portée** : couvre le **n°44** seulement. Le **n°45** (même démonstration) attend un accord explicite séparé.
-  **Aucun GIF livré remplacé, APK non reconstruit.**
-
-## 2. Inventaire des sources des 389 (fichier `INVENTAIRE-SOURCES-389.json`)
-
-Construit en lisant les en-têtes PNG directement dans les objets git (aucun téléchargement, aucun média modifié) :
-
-| Source native disponible | Nombre |
-|---|---|
-| Planche native enregistrée dans le manifeste (324) + retrouvée dans un lot de propositions (24) + retrouvée par nom (7) | **355** |
-| Dont exploitable à **660 px sans agrandissement** (panneau ≥ 660 px) | **340** |
-| Dont nécessitant un léger agrandissement (panneaux de 381 à 596 px de haut) | 15 |
-| **Aucune source PNG native** : 34 entrées, **toutes « femme »**, séries piscine/aqua/elliptique (210, 224-259, 274-276, 289-330) | 34 |
-
-Dimensions natives dominantes : **1376×768** (266 entrées) et 1456×720 (43). Un panneau de 768 px de haut
-alimente donc un export 660 px **sans agrandissement** — argument décisif en faveur des 660 px retenus.
-Les 34 entrées sans source native correspondent au chantier **piscine/aqua/cardio**, prévu **après** les visuels :
-elles seront traitées avec ce chantier (guides piscine), pas en aveugle.
-
-## 3. Lot 1 VALIDÉ le 01/10/2026 (n°45, 48, 19, 85) — TOUJOURS NON INTÉGRÉ
-
-Consigne utilisateur : « Fais le a » (les quatre numéros du lot 1 proposé). Méthode **identique au n°44 validé**,
-zéro génération d'image : outil `evolution/media/tools/retouche-lot1-vert260.py`, sorties dans
-`evolution/media/refonte-photo/hd-2026-09-30/lot1/` (`travail/`, `exports/`, `planches/`, `CONTROLES.json`),
-page de validation **`hd-2026-09-30/lot1/valider.html`** (servie sur le port 8080).
-
-**VALIDATION** : l'utilisateur a répondu **« C'est bon »** après avoir consulté `lot1/valider.html`.
-Enregistré dans `hd-2026-09-30/VALIDATION-LOT1-2026-10-01.json`, avec l'empreinte des 8 fichiers validés
-(4 WebP q90 + 4 GIF de repli) :
-
-| N° | WebP validé (sha256, début) | poids | taille |
-|---|---|---|---|
-| 45 | `0ecbbd6796681543…` | 98 ko | 388×660 |
-| 48 | `760d7f2b9caa2dae…` | 157 ko | 396×660, 4 phases |
-| 19 | `fce01231559fa5e7…` | 80 ko | 572×660 |
-| 85 | `89adcd10c03f674d…` | 200 ko | 1182×660 |
-
-**Portée de cette validation** : les 4 propositions, telles quelles. Elle **ne couvre pas** l'intégration :
-aucun GIF livré remplacé, APK non reconstruit, format WebP dans l'app non adopté (accord + test WebView
-toujours requis). Rappel : *proposition ≠ validation ≠ intégration*.
-
-**Suite** : la méthode est validée → reprise de la série des 389 par lots de quatre, en partant des sources
-natives, tant que les numéros ont un PNG natif exploitable.
-
-| N° | Source native | Export | WebP q90 | GIF de repli | Ce qui a été fait |
-|---|---|---|---|---|---|
-| 45 | = n°44 (GIF livrés identiques, sha `4696c143…`) | 388×660 | 98 ko | 403 ko | reprise **à l'identique** de la sortie validée du 44, aucune recuisson |
-| 48 | `lot64/phases/zottman-phase1..4.png` 800×1334 | 396×660, 4 phases | 157 ko | 762 ko | voile vert translucide de l'avant-bras **préservé** (peau/veines visibles) ; le **coussin teal foncé du banc est écarté du masque** (plancher de luminosité 0,45) : c'est lui qui donnait le « raccord plat » signalé ; l'ancien GIF faisait 264×440 |
-| 19 | `lot57/planches/bulgarian-split-squat-halteres.png` 688×768 ×2 | 572×660 | 80 ko | 392 ko | le vert de l'app **est le panneau du legging** (olive), pas un muscle : panneau réel gardé (tissu, couture, ombre) ramené dans la famille 260 ; l'aplat lime du lot68 (`recolorisation-reserves.json`, `validation_utilisateur: false`) est abandonné ; **plus de débordement sur l'avant-bras** ; plantes du décor hors zone |
-| 85 | `lot68/phases/85-depart-2.png` + `85-fin-4.png` 1376×768 | 1182×660 | 200 ko | 843 ko | deltoïdes **remontés à leur clarté d'origine** (l'ancien export les assombrissait, V 0,60 → 0,52) avec forme anatomique et ombres ; deux ROI (un par deltoïde) pour traiter les deux épaules |
-
-Contrôles mesurés (détail complet dans `lot1/CONTROLES.json`) : erreur WebP 1,52 / 1,84 / 1,64 (PSNR 42,96 / 41,42 / 42,22 dB),
-GIF 2,17 / 2,80 / 3,13 ; zones vertes 5 903 px (19), 37 125 px (48), 4 047 px (85) ; contraste du vert après passage
-(19 : S 0,694 → 0,887 ; 48 : 0,424 → 0,724 ; 85 : 0,784 → 0,907) ; **aucun pixel modifié hors zone**.
-
-Interdits respectés : `gif_livres_modifies: 0`, `apk_reconstruit: false`, `proposition_non_integree: true`,
-aucun `git push` hors `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`. Commit `d01fb1a`.
-
-## 3bis. Lot 2 PROPOSÉ le 01/10/2026 (n°11, 12, 30, 42) — RIEN D'INTÉGRÉ
-
-Même méthode (outil `evolution/media/tools/retouche-lot2-vert260.py`, qui réutilise les fonctions du lot 1).
-Sorties : `hd-2026-09-30/lot2/` (`travail/`, `exports/`, `planches/`, `CONTROLES.json`), page de validation
-**`hd-2026-09-30/lot2/valider.html`** (port 8080). Choix des numéros : les plus gros écarts mesurés entre le
-GIF livré et sa source native **qui portent un vrai vert sur le muscle**.
-
-| N° | Source native | Export | WebP q90 | GIF repli | Ce que ça montre |
-|---|---|---|---|---|---|
-| 11 | `planches/lot01/homme/back-squat.png` (2 cases) | 577×660 | 101 ko | 389 ko | fessiers + quadriceps des 2 jambes |
-| 12 | `planches/lot20/back-squat-barre-haute.png` | 577×660 | 103 ko | 392 ko | idem, variante barre haute |
-| 30 | `planches/lot26/curl-barre-debout.png` | 583×660 | 110 ko | 402 ko | biceps + avant-bras, stries conservées |
-| 42 | `planches/lot18/curl-scott-barre-ez-pronation.png` | 588×660 | 113 ko | 419 ko | avant-bras sur pupitre, doigts/tendons nets |
-
-Contrôles : erreur WebP 1.74 / 1.75 / 1.74 / 1.71 (PSNR ≈ 41.7–41.9 dB) ; GIF 2.9–3.1 ;
-saturation après passage 0.904 / 0.930 / 0.873 / 0.876 (référence 260 = 0.914) ;
-**0 pixel modifié hors zone**. Cadrage identique au GIF livré (décalage mesuré par appariement).
-
-**Deux pièges découverts pendant la sélection (à connaître pour la suite) :**
-
-1. **Le vert du GIF livré peut ne pas exister dans la source native.** n°1, 9, 10 : le vert présent dans
-   l'app est une bande fabriquée à l'intégration — dans la planche native, le vert mesuré est celui du
-   **feuillage du décor** (la couleur la plus « lime » de la case est `RGB 202,215,21` sur une feuille).
-   Ces numéros ne sont donc pas des candidats de retouche tant que la source du vert de l'app n'est pas
-   identifiée. Écartés du lot, signalés à l'utilisateur.
-2. **Les GIF de l'app ne sont pas les fichiers des branches d'archive.** `public/media` est un magasin
-   **par empreinte** (94 GIF uniques pour 389 numéros, 0 contenu commun avec `refonte-photo/gif/`), et la
-   branche de passation (`3cbb3e5`) ne contient que les 26 GIF retouchés du lot68 — les autres numéros
-   gardent la version de `c685298`. Toujours vérifier `git show <branche>:<chemin>` avant de comparer.
-
-Autre point de méthode : `git fetch` ne peut pas récupérer ces branches par leur nom sur ce remote
-(`couldn't find remote ref`), mais **par SHA oui** :
-`git fetch origin <sha>:refs/remotes/base/passation`. C'est ainsi que les bases `base/passation` et
-`base/lots-complets` sont reconstituées après un redémarrage du bac à sable.
-
-## 4. Prochain lot proposé (aucune action engagée sans votre accord)
-
-Après validation numéro par numéro du lot 1, reprendre les 389 par lots de quatre en partant des sources
-natives (voir `INVENTAIRE-SOURCES-389.json` : 340 numéros exploitables à 660 px sans agrandissement).
-Les 34 numéros féminins piscine/aqua/elliptique sans PNG natif (210, 224-259, 274-276, 289-330) demandent un
-chantier à part : ils ne peuvent pas être « dé-pixellisés » à partir de l'existant.
+> Ce fichier contient **deux blocs** : (1) la *consigne* à coller en premier message,
+> (2) la *passation* complète à coller juste derrière. Rien d'autre n'est nécessaire pour reprendre.
 
 ---
-# PROTOTYPE n°44 — RÉGLAGES CHOISIS PAR L'UTILISATEUR ET PROTOTYPE CONSTRUIT (30/09/2026)
 
-**Décisions utilisateur du 30/09/2026 : format WebP animé · hauteur 660 px · vert rapproché du n°260.**
-Le prototype correspondant est construit, mesuré et **non intégré** : aucun GIF livré remplacé,
-0 appel de génération d'image, APK non reconstruit. Rapport : `hd-2026-09-30/RAPPORT-VERT260-44.md` ;
-outil rejouable : `evolution/media/tools/prototype-hd-44-vert260.py` ; page de test téléphone :
-`hd-2026-09-30/index.html` (diagnostic automatique de lecture de l'animation WebP incluse).
+## BLOC 1 — LA CONSIGNE (à coller en premier)
 
-Ce qui a été fait, dans l'ordre imposé (retouche **avant** export) :
+```
+Reprise du chantier « qualité des visuels » de l'app JARVIS Fitness (Yanis & Émilie),
+dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk, branche arena/01a0edb7-jarvis-fitness-yanis-emilie-ap.
 
-- **Le vert des masters est dilué, pas seulement pastel** : cœur 10 386 px pour un périmètre de 787 px,
-  soit une transition de ~13 px avec la peau (phase 2 ~8 px) — c'est la cause de l'effet « feuille collée ».
-  Une seule zone verte par phase (bras) : aucune plante parasite. Contour resserré (rampe 0,03–0,17) :
-  transition 13,0 → 8,5 px et 8,2 → 5,5 px. Silhouette = plus grande composante connexe, trous internes comblés.
-- **Famille 260** par correspondance de percentiles (p5/p50/p95) sur saturation et valeur, teinte recentrée
-  à 50 % de l'écart, calculée sur les **deux phases ensemble**. Aucun pixel uniformisé.
-  Saturation 0,677/0,749 → **0,894/0,925** (référence 260 = 0,914) ; valeur 0,702/0,733 → 0,612/0,651
-  (260 = 0,616) ; teinte 85,6°/88,1° (260 = 86,3°). **11 137 nuances conservées**, teinte dominante 0,3 %
-  (le GIF 260 mesuré n'a que 6 teintes avec 31 % sur la dominante : c'est un témoin appauvri, pas la cible à copier).
-- **0 pixel modifié hors zone verte** (1 045 768 / 1 052 290 pixels vérifiés, écart max 0).
-- **Exports décodés** (388×660, 2 images, 2×500 ms) : WebP q90 **98 ko** (err. 1,85 hors vert / 1,88 dans le vert,
-  PSNR 41,3 dB) · q92 115 ko (1,61 / 1,68, 42,2 dB) · q85 73 ko (2,23 / 2,29, 39,5 dB) · sans perte 612 ko ·
-  GIF de repli 403 ko (moucheté dans le vert, limite des 256 couleurs). Livré actuel pour mémoire : 198 ko,
-  10,7 / 24,0, PSNR 21,7 dB.
-- **Poids projeté des 389** : ≈ **37 Mo** en WebP q90 (44 Mo en q92) contre 72 Mo aujourd'hui.
-- Cadrage inchangé (fenêtre 259/264 identique au livré), ni recadrage, ni miroir, ni rotation ; geste/prise
-  issus du master lot69 validé. `sha256` des GIF livrés 44/45 consignés (inchangés).
+Priorité absolue : NETTETÉ et QUALITÉ. On ne recolore plus des GIF pixellisés : on part des sources
+PNG natives, on retouche à la résolution native, PUIS on exporte.
 
-**Décision encore attendue** : (1) le WebP s'anime-t-il sur le téléphone (diagnostic de la page de test) ?
-(2) q92 / **q90** / q85 ? (3) le vert est-il validé tel quel ? Ensuite seulement, reprise des 389 numéro par
-numéro, avec accord explicite avant tout remplacement de GIF livré.
+Méthode VALIDÉE (n°44, puis lot 1 : 45/48/19/85) — à reprendre telle quelle, sans l'inventer à nouveau :
+outils evolution/media/tools/retouche-lot1-vert260.py et retouche-lot2-vert260.py ; sortie = PNG de travail
+natif + WebP animé 660 q90 (livrable) + GIF de repli 660 ; contrôles dans CONTROLES.json ; page de
+validation en HTML à ouvrir sur le téléphone.
 
-Branche de travail : `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`.
+État : lot 1 VALIDÉ par l'utilisateur (propositions seules, RIEN d'intégré).
+Lot 2 (n°11, 12, 30, 42) PROPOSÉ, en attente de validation numéro par numéro.
 
----
-# PROTOTYPE HD n°44 — MESURÉ LE 30/09/2026 — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`
+Ta tâche immédiate : faire valider le lot 2, puis continuer par lots de 4 numéros tant qu'il existe un PNG
+natif exploitable (340 numéros sur 389). Ne remplace AUCUN GIF livré sans un accord explicite couvrant
+le numéro. Ne touche ni à l'APK, ni aux prescriptions, ni aux gestes/prises validés.
 
-**Priorité netteté : le prototype demandé (n°44, deux phases) est construit et mesuré.** Aucune recoloration,
-aucun GIF livré remplacé, aucun appel de génération d'image, APK intact. Rapport complet :
-`evolution/media/refonte-photo/hd-2026-09-30/RAPPORT-PROTOTYPE-HD-44.md` ; outil rejouable :
-`evolution/media/tools/prototype-hd-44.py` ; page de test à ouvrir sur le téléphone :
-`evolution/media/refonte-photo/hd-2026-09-30/index.html`.
+Interdits permanents : proposition ≠ validation ≠ intégration ; 0 image générée sans nécessité ;
+≤ 10 générations par tour ; une lettre isolée (Y, E, T…) = ne rien faire et attendre ;
+push uniquement sur la branche imposée ; WebP/APNG dans l'app seulement après test sur le téléphone + accord.
 
-Faits mesurés (aucun n'invente une validation) :
+Après la qualité des visuels : réglage cardio/piscine des 2 profils → visuels des séries piscine/aqua/
+elliptique (34 numéros « femme » sans source native) → construction de l'app → IA conversationnelle en dernier.
+Avant la construction, rappeler à l'utilisateur de confirmer les ajouts metcon + piscine nage fractionnée
+et/ou Aqua Tabata pour Émilie.
 
-- Les masters 800×1333 du lot69 (`propositions/lot69/44-phase1-supinated.png`, `44-phase2-supinated.png`)
-  **ne sont pas du 800 natif** : ils portent 1,7 à 1,9× plus de détail qu'un agrandissement du 264 déjà
-  utilisé dans les GIF (contrôle par grille de compression) → **définition utile ≈ 450–550 px de haut**.
-  Ils correspondent bien au geste livré : même pose, même prise, même cadrage (décalage de fabrication
-  −1/+2 px phase1, 0/−1 px phase2 ; aucune main, aucun membre déplacé localement).
-- Le GIF livré 44/45 (259×440, 198 ko, 2×500 ms) est agrandi ×2 à ×3,4 par l'application
-  (`.movement-visual { height:300px }` dans `src/styles.css`) : c'est la cause mécanique du « pixellisé ».
-- À définition égale, l'écart du fichier livré contre le maître est de **10,7/255 hors vert et 24/255 dans
-  le vert** (PSNR 21,7 dB) ; un export rejoué depuis le maître à 440 px tombe à **1,9 et 9,7** (PSNR 38,2 dB).
-  Une grande part du mauvais rendu vient donc de la chaîne de fabrication, pas du format.
-- L'erreur du GIF se concentre dans le vert (≈10/255 contre ≈1,9 ailleurs) : le plafond de 256 couleurs
-  frappe exactement la zone regardée.
-- **Le tramage Pillow ne change rien** (Floyd–Steinberg = aucun : fichiers bit à bit identiques ; palettes
-  adaptive/MEDIANCUT/FASTOCTREE/« pipeline actuel » confondues). Palette partagée entre les 2 phases :
-  −11 ko à qualité égale. WebP animé 880 px : **140 ko et erreur 2,2** contre GIF 682 ko / 10,0.
-  APNG : sans perte mais ≈2× le poids du GIF.
-- Poids du projet si reprise des 389 : GIF 660 ≈ **160 Mo**, GIF 880 ≈ 265 Mo, WebP animé 660 ≈ **38 Mo**,
-  aujourd'hui 72 Mo (391 GIF mesurés). Le GIF à définition utile est le scénario le plus lourd.
-- Vert : maître 44 médiane [132,177,61] (fragmenté, relief) ; GIF livré [118,171,44] (5 teintes, part
-  dominante 0,22 = plaque) ; référence 260 [112,182,12] (plus foncée/saturée). Retouche éventuelle à
-  faire dans le PNG de travail **avant** export.
-
-**Décision attendue avant toute reprise des 389** : définition (440 / **660 recommandé** / 880),
-format (GIF conservé ou WebP animé après test réel dans la WebView — page de test fournie), et teinte du vert.
-Aucun PDF de revue n'a été régénéré ce tour (`pdf-revue-331.py` non utilisé). Les 3 styles intégrés
-(44/45/80) et les 26 corrections de geste restent en place, non retirés.
-
-Branche de travail actuelle : `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`. Partout où les documents
-ci-dessous citent `arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap` comme branche active, lire la branche
-actuelle ; `01a0e6c9` (head `3cbb3e5`) et `01a0e231` (`c685298`) restent les sources à récupérer,
-à ne jamais écraser.
+Lis la passation ci-dessous en entier avant d'agir, puis dis-moi ce que tu as compris et ce que tu proposes.
+```
 
 ---
-# BLOC À COPIER DANS LE NOUVEAU CHAT — 28/09/2026
 
-Tu reprends JARVIS Fitness Yanis & Émilie, dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`.
+## BLOC 2 — LA PASSATION COMPLÈTE (à coller juste après)
 
-## PRIORITÉ ABSOLUE : QUALITÉ / NETTETÉ, SÉRIE ACTUELLE SUSPENDUE
+```
+=== PASSATION — JARVIS FITNESS (visuels), 01/10/2026 ===
 
-L’utilisateur a demandé : « Ce sera aussi pixellisé que sur les photos ? C’est moche ».
-Il veut maintenant repartir sur **des animations mieux définies**, pas continuer à recolorer les GIF basse résolution.
-Il demande cette passation pour changer de chat. **Ne lance pas une nouvelle production en série avant un prototype net approuvé.**
+DÉPÔT : Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk
+BRANCHE DE TRAVAIL : arena/01a0edb7-jarvis-fitness-yanis-emilie-ap (tête : 4bdcb4a)
+NE JAMAIS pousser ailleurs, ne jamais supprimer/renommer la racine du dépôt ni .git.
 
-### Consigne de travail
+------------------------------------------------------------
+1. OÙ EN EST LE CHANTIER
+------------------------------------------------------------
+- Prototype n°44 : VALIDÉ (WebP animé 660 q90, vert famille 260). Fichier
+  44-vert260-660-webp-q90.webp, sha256 0ecbbd67…, 388×660, 98 ko.
+- Lot 1 : n°45, 48, 19, 85 — VALIDÉS par l'utilisateur (« C'est bon ») le 01/10/2026,
+  empreintes dans hd-2026-09-30/VALIDATION-LOT1-2026-10-01.json. RIEN N'EST INTÉGRÉ :
+  les GIF de l'app n'ont pas été remplacés, l'APK n'a pas été reconstruit.
+- Lot 2 : n°11, 12, 30, 42 — PROPOSÉ le 01/10/2026, en attente de validation.
+- Fichiers produits (jamais dans l'app) :
+  evolution/media/refonte-photo/hd-2026-09-30/
+    lot1/  (travail/, exports/, planches/, CONTROLES.json, valider.html)
+    lot2/  (idem)
+  Page à ouvrir sur le téléphone : …/hd-2026-09-30/lot2/valider.html (serveur local port 8080).
 
-1. Repartir des **meilleures sources PNG/planches réellement disponibles**, contrôler leurs dimensions natives. Un agrandissement d’un GIF pixelisé n’est PAS une source HD.
-2. Retoucher les muscles sur des images de travail sans perte, à la résolution native des sources, AVANT tout export GIF. Préserver les gestes, prises, visages, profils et matériel validés.
-3. Vert : **comme le n°260**, avec **contour anatomique clairement délimité, relief, ombres et texture**, pas une plaque/feuille verte collée. Repère historique RGB ≈117,189,18, variable selon lumière et zone mesurée. Ne pas forcer tous les pixels à une couleur uniforme.
-4. Faire un **prototype représentatif unique**, recommandé n°44 (et45, même démonstration), avec les deux phases. Montrer PNG de travail, GIF exporté réellement décodé, taille native et zoom100%. Ne pas présenter un PNG net comme preuve que le GIF est net.
-5. Comparer des exports GIF de meilleure qualité (résolution adaptée à l’affichage réel, palette optimisée, tramage testé). **Le GIF reste limité à256 couleurs par palette** ; augmenter la définition ne supprime pas cette limite. Ne pas promettre un rendu photo sans défaut.
-6. Si nécessaire, proposer une comparaison WebP animé/APNG avec le GIF, **sans changer le format de l’application sans accord et sans test de compatibilité dans sa WebView Android**. Vérifier l’affichage mobile réel, pas seulement un gros plan PDF.
-7. Faire valider ce prototype et le compromis netteté/poids/fluidité. **Ensuite seulement**, reprendre les389 selon la méthode approuvée. Pas de modification massive, pas d’intégration automatique d’anciens essais.
+------------------------------------------------------------
+2. LA MÉTHODE VALIDÉE (ne pas réinventer)
+------------------------------------------------------------
+Ordre imposé : source PNG native → retouche sur PNG de travail à la résolution native → PUIS export.
+Jamais l'inverse. Jamais d'agrandissement d'un GIF (ce n'est pas une source HD).
 
-### À préserver impérativement
+Ce que fait la retouche (déterministe, aucun modèle) :
+ a) identifie la zone verte réelle du numéro (ROI + seuil ; possibilité de plusieurs ROI, ex. 85 : un
+    deltoïde par ROI) ;
+ b) resserre le contour : rampe alpha 0,03–0,17 (le halo de 6–13 px donnait l'effet « plaque collée ») ;
+ c) rapproche la famille de couleurs de la référence n°260 par correspondance de percentiles p5/p50/p95
+    sur la saturation et la valeur, teinte recentrée de moitié — AUCUN pixel uniformisé : chaque pixel
+    garde sa nuance (texture, relief, ombres) ;
+ d) n'écrit qu'ensuite : PNG de travail natif, WebP animé 660 q90, GIF de repli 660 (palette partagée) ;
+ e) décode réellement chaque export et le compare au PNG de travail ; consigne « 0 pixel modifié hors zone ».
 
-- Les389 visuels : Yanis=homme, Émilie=femme, visageA et maîtres photo existants ; aucune familleC.
-- Gestes déjà validés : ne pas les redessiner pour gagner en netteté. **N°80 : NE PLUS TOURNER LES MAINS.** Conserver exactement la prise et la pose finalement acceptées ; ne pas réimposer les anciens essais refusés ni un autre angle de coude.
-- Départ à gauche, même caméra/banc/machine/orientation entre phases ; ni miroir ni rotation globale. Vérifier toutes les phases (4 pour Zottman).
-- Aucun GIF livré remplacé sans accord explicite couvrant le numéro ; aucune prescription modifiée pour justifier une image. Proposition ≠ validation ≠ intégration.
-- Maximum10 appels de génération par tour, échecs compris. Une lettre isolée (`Y`, `T`, `E`…) = relance technique : ne rien faire et attendre.
-- APK signé seulement avec la clé utilisateur, jamais créée ni publiée. Préserver les2 profils et fonctions. IA conversationnelle en dernier.
+Référence de vert = n°260 (RGB ≈ 112,182,12 ; saturation médiane 0,914 ; teinte 86,3°). Ce n'est pas
+une couleur uniforme à plaquer : la consigne utilisateur est « contour anatomique net, relief, ombres,
+texture » — pas une feuille verte collée.
 
-## ÉTAT EXACT À LA PASSATION
+Pièges vérifiés (à ne pas répéter) :
+ 1) Le vert vu dans le GIF de l'app peut ne pas exister dans la source native : sur n°1, 9, 10 le vert de
+    la case est celui du FEUILLAGE du décor (RGB 202,215,21 sur une feuille). Toujours identifier la zone
+    verte sur la source avant de retoucher, sinon on peint une plante.
+ 2) Le « vert » peut être un vêtement, pas un muscle : n°19 = panneau vert du legging (olive, R≈G, B très
+    bas). Le lot68 l'a transformé en aplat lime qui débordait sur l'avant-bras (fichier
+    recolorisation-reserves.json, validation_utilisateur: false) → à ne jamais reprendre.
+ 3) Les GIF de l'app ne sont PAS les fichiers des branches d'archive : yanis-fitness-evolution/public/media
+    est un magasin par empreinte de nom (94 GIF uniques pour 389 numéros, 0 contenu commun avec
+    refonte-photo/gif/). Toujours vérifier git show <réf>:<chemin> avant toute comparaison.
+ 4) Agrandir/recadrer ne crée pas de netteté. Le tramage Pillow ne change rien (Floyd = aucun).
+    Seule la palette partagée entre phases aide (≈ −11 ko à qualité égale).
 
-- Les26 anciennes corrections de geste ont été validées et intégrées aux médias du projet.
-- Pour le chantier vert/anatomie : **3 styles validés et intégrés :44,45,80** ; **12 propositions lot03 non validées** ; **48 à reprendre** ; **373 non traités**. Total389.
-- Lot03 :19,85,214,274,275,276,223,305,316,337,338,339. Son PDF n’est PAS une livraison finale nette.
-- **La plainte sur la pixellisation suspend la méthode actuelle**, y compris sa généralisation. Les validations de gestes ne sont pas annulées. Les3 styles intégrés ne sont pas retirés automatiquement : ils servent de témoins, mais ne prouvent pas que la qualité HD est acceptée.
-- N°48 : débord/raccord entre muscle et coussin toujours insatisfaisant. Ne pas intégrer les essais rejetés.
-- APK non reconstruit : l’application installée n’a pas reçu ces modifications.
-- Deux audits sur389 existent (technique et segmentation automatique). **Ils ne certifient ni netteté ni anatomie.** Segmentation incertaine pour piscine/occlusions ; ne pas traiter aveuglément ses masques.
+------------------------------------------------------------
+3. POURQUOI CE CHANTIER (mesures conservées)
+------------------------------------------------------------
+- Le GIF livré du 44 (259×440) est agrandi ×2 à ×3,4 par l'app (.movement-visual = 300 px de haut) :
+  c'est la cause mécanique du « pixélisé ». Écart au maître : 10,7/255 hors vert et 24/255 dans le vert
+  (PSNR 21,7 dB) ; un export rejoué depuis le maître tombe à 1,9 et 9,7 (PSNR 38,2 dB).
+- L'erreur du GIF se concentre dans le vert : le plafond de 256 couleurs frappe exactement la zone regardée.
+- Poids projeté des 389 : aujourd'hui 72 Mo (391 GIF) ; WebP animé 660 q90 ≈ 37 Mo ;
+  GIF 660 ≈ 160 Mo. Le GIF haute définition est le scénario le plus lourd.
+- Inventaire : 355 numéros sur 389 ont une source native ; 340 sont exploitables à 660 px SANS agrandissement
+  (panneaux natifs 1376×768 et 1456×720). 34 numéros n'ont AUCUNE source PNG native : tous « femme »,
+  séries piscine/aqua/elliptique (210, 224-259, 274-276, 289-330) → chantier piscine séparé, à traiter avec
+  les guides piscine, jamais en aveugle.
 
-## FICHIERS À LIRE DANS CET ORDRE
+------------------------------------------------------------
+4. INTERDITS PERMANENTS (accord explicite de l'utilisateur)
+------------------------------------------------------------
+- Aucun GIF livré remplacé sans un accord explicite couvrant LE numéro. Proposition ≠ validation ≠ intégration.
+- APK : intact ; jamais reconstruit ni signé (seule la clé de l'utilisateur pourrait le signer) ;
+  conserver les 2 profils et les fonctionnalités ; l'IA conversationnelle en dernier.
+- Ne pas modifier une prescription pour justifier une image. Ne pas redessiner les gestes/prises validés.
+  N°80 : ne JAMAIS tourner les mains à nouveau ; garder la prise acceptée.
+- Départ de phase gauche→droite, même caméra/même machine/même orientation entre les phases ;
+  pas de miroir ni de rotation globale ; vérifier TOUTES les phases (4 pour le Zottman n°48).
+- Ne pas intégrer d'essais rejetés (ex. raccord coussin du 48 : rejeté, à ne pas reprendre).
+- Les deux audits des 389 (technique + segmentation automatique) ne certifient ni la netteté ni l'anatomie :
+  segmentation incertaine en piscine/occlusions → ne pas appliquer les masques aveuglément.
+- WebP/APNG : uniquement en comparaison ; changement de format de l'app interdit sans test réel sur le
+  téléphone (WebView) ET accord. Le GIF reste plafonné à 256 couleurs : ne pas promettre une photo parfaite.
+- Ne pas présenter un PNG net comme preuve que le GIF est net : montrer le fichier réellement décodé.
+- ≤ 10 appels de génération d'image par tour (échecs compris) ; une lettre isolée (Y, T, E…) = relance
+  technique : ne rien faire, attendre.
+- Push uniquement sur arena/01a0edb7-jarvis-fitness-yanis-emilie-ap. Jamais main. Jamais de reset --hard.
 
-1. `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md` : priorité récente en tête ; anciens états plus bas sont historiques.
-2. `CE-QUI-COINCE.md`.
-3. `evolution/media/refonte-photo/production/QUALITE-HD-2026-09-28.json`.
-4. `evolution/media/refonte-photo/style-260/progression-389.json`.
-5. `evolution/media/refonte-photo/production/retours-utilisateur-2026-09-26.json` et `rappels-utilisateur.json`.
+------------------------------------------------------------
+5. LOT 2 — CE QUI ATTEND TON VERDICT
+------------------------------------------------------------
+n°11 (back-squat, 2 cases) → 577×660, WebP 101 ko, PSNR 41,85 ; GIF repli 389 ko.
+n°12 (back-squat barre haute) → 577×660, WebP 103 ko, PSNR 41,81 ; GIF repli 392 ko.
+n°30 (curl barre debout) → 583×660, WebP 110 ko, PSNR 41,70 ; GIF repli 402 ko.
+n°42 (curl Scott barre EZ pronation) → 588×660, WebP 113 ko, PSNR 41,93 ; GIF repli 419 ko.
+Fessiers/quadriceps, biceps/avant-bras : 0 pixel modifié hors zone ; saturation après passage 0,904 / 0,930 /
+0,873 / 0,876 (référence 260 = 0,914).
+→ Demander à l'utilisateur : « 11 OK », « 12 OK », « 30 OK », « 42 OK » — ou ce qui cloche, numéro par numéro.
 
-## SOURCES ET RÉFÉRENCES UTILES
+------------------------------------------------------------
+6. SUITE (dans cet ordre)
+------------------------------------------------------------
+1) Faire valider le lot 2 (et le lot 1 s'il redemande des retouches).
+2) Continuer par lots de 4 numéros, en partant des sources natives (INVENTAIRE-SOURCES-389.json).
+   Priorité aux numéros dont le GIF livré est le plus éloigné de sa source.
+   Attention : vérifier que le vert existe bien dans la source (pièges §2).
+3) Quand la série visuelle est validée : décider avec l'utilisateur le sort de l'intégration
+   (GIF 660 plus lourds, ou WebP animé dans l'app après test WebView + accord) puis intégrer,
+   numéro par numéro, sans rien écraser d'autre.
+4) Réglage cardio/piscine des 2 profils → visuels des séries piscine/aqua/elliptique (34 numéros sans source).
+5) Construction de l'app. Avant : faire confirmer les ajouts metcon + piscine nage fractionnée et/ou
+   Aqua Tabata pour Émilie.
+6) IA conversationnelle en dernier.
 
-- **N°80, original net choisi** : `evolution/media/refonte-photo/production/lot75/ecartes-halteres.png` (planche1376×768, deux cases). Ne pas choisir les v2/v3/v4/v5 refusées.
-- Témoin du geste80 accepté : `evolution/media/refonte-photo/review/80-photo-reference-directe.gif` (684×768,2 phases de1000ms). C’est un témoin de prise/pose, PAS le master pour une restauration HD.
-- Photo annotée utilisateur : `20260928_113016.jpg` ; cercles jaunes=guide, pas à garder dans le rendu.
-- Style anatomique apprécié : `style-260/lot01/biceps-texture-essai.png` et son comparatif. Cette image est **un crop de texture généré**, pas la preuve d’un corps entier enHD ni une anatomie médicalement certifiée.
-- Styles44/45/80 intégrés : `style-260/lot02/INTEGRATION-VALIDEE.json` ; GIF proposés de ce lot copiés à l’identique dans les livrés.
-- Le registre `livraison/manifeste-331.json` contient389 entrées ; `livraison/numerotation-pdf.json` fixe les numéros. **Ne pas renuméroter.**
-- Anciens PNG de44/45 à rechercher au commit `c685298378773817460fb358bc605af7ce154b8b` : `evolution/media/refonte-photo/propositions/lot69/44-phase1-supinated.png`, `44-phase2-supinated.png`, `planches/curl-scott-haltere-neutre.png`. Contrôler leur taille et leur correspondance exacte avec le geste validé avant emploi.
+------------------------------------------------------------
+7. REPRISE TECHNIQUE (nouveau bac à sable)
+------------------------------------------------------------
+- Le bac à sable se réinitialise (venv et métadonnées git) : recréer l'environnement
+  (python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install pillow numpy) et refaire un git fetch.
+- Récupérer les bases d'archive par leur SHA (le fetch par nom échoue sur ce remote) :
+    git fetch origin 3cbb3e5:refs/remotes/base/passation      # 25 GIF livrés + les 4 docs de passation
+    git fetch origin c685298:refs/remotes/base/lots-complets  # base complète (391 GIF, tous les lots)
+  Ces réfs ne doivent JAMAIS être écrasées.
+- Après réinitialisation, ne jamais faire reset --hard : vérifier git status, puis au besoin
+  git reset --mixed origin/arena/01a0edb7-jarvis-fitness-yanis-emilie-ap et restaurer les fichiers suivis
+  (git checkout -- .), en préservant les fichiers non suivis.
+- Outils disponibles :
+    evolution/media/tools/prototype-hd-44.py et prototype-hd-44-vert260.py (prototype 44)
+    evolution/media/tools/retouche-lot1-vert260.py (lot 1 ; contient toutes les fonctions)
+    evolution/media/tools/retouche-lot2-vert260.py (lot 2 ; réutilise le lot 1)
+- Registres : livraison/numerotation-pdf.json (les 389), production/plan.json, livraison/manifeste-331.json,
+  hd-2026-09-30/INVENTAIRE-SOURCES-389.json (source native de chaque numéro).
+- Documents longs (même état, version détaillée) : PASSATION.md, PASSATION-NOUVEAU-CHAT.md,
+  CE-QUI-COINCE.md, ainsi que hd-2026-09-30/VALIDATION-44-2026-09-30.json,
+  VALIDATION-LOT1-2026-10-01.json, lot1/CONTROLES.json, lot2/CONTROLES.json.
+```
 
-## DÉPÔT / REPRISE TECHNIQUE
+---
 
-- Branche de la session quittée : `arena/01a0e6c9-jarvis-fitness-yanis-emilie-ap`.
-- Dernier commit de production avant cette passation : `9a28da734bf03846f831b37712707c69a646200c`. La passation est ajoutée ensuite sur la même branche : **récupérer sa tête distante**, pas seulement ce commit.
-- Ancienne source complète : branche `arena/01a0e231-jarvis-fitness-yanis-emilie-ap`, commit `c685298378773817460fb358bc605af7ce154b8b`.
-- **Le checkout de cette session est partiel pour `evolution`** :26 GIF canoniques présents, pas les389 sources complètes. Les autres ont été récupérés en cache pour les contrôles. Les caches, bibliothèques et poids de segmentation ne sont pas persistants.
-- Si le nouveau chat repart de `ddd1fb9`, NE PAS considérer cette ancienne base comme l’état final. Vérifier `git status`, branche et commits, puis récupérer les sources sans écraser de modifications locales. **Pas de reset--hard aveugle.** Ne pas écraser les derniers GIF validés avec ceux de l’ancienne branche.
-- Travailler et pousser uniquement sur **la branche imposée par Arena au nouveau chat**, même si son nom diffère. Ne jamais basculer sur/pousser vers `main`, ni supprimer/renommer la racine ou `.git`.
-- Mettre à jour la branche courante dans les4 passations : `PASSATION.md`, `PASSATION-COPIER-COLLER.md`, `CE-QUI-COINCE.md`, `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`, et dans le générateur de PDF si utilisé.
+## Deux phrases à retenir
 
-## APRÈS LA QUALITÉ DES VISUELS
-
-Réglage du niveau cardio/piscine des2 profils → images pendant les chronos piscine/aqua/nage fractionnée/elliptique → construction de l’application → IA conversationnelle en dernier.
-Avant construction, rappeler et confirmer les ajouts **metcon + piscine nage fractionnée et/ou Aqua Tabata pour Émilie**. Ne pas les oublier.
-
-**Première action attendue du nouveau chat : examiner les sources haute définition et le pipeline d’export, puis préparer un seul prototype net. Ne pas repartir sur le lot de recoloration des anciens GIF.**
+- **La méthode est validée, la série peut reprendre** : sources natives → PNG de travail natif → WebP 660 q90 (+ GIF de repli), avec « 0 pixel modifié hors zone ».
+- **Rien n'est dans l'app** : lot 1 validé mais non intégré, lot 2 en attente, APK intact. Aucun GIF livré ne sera remplacé sans un accord numéro par numéro.
