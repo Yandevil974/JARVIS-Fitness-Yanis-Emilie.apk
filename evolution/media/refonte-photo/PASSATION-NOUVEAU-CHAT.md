@@ -70,6 +70,41 @@ GIF 2,17 / 2,80 / 3,13 ; zones vertes 5 903 px (19), 37 125 px (48), 4 047 px (8
 Interdits respectés : `gif_livres_modifies: 0`, `apk_reconstruit: false`, `proposition_non_integree: true`,
 aucun `git push` hors `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`. Commit `d01fb1a`.
 
+## 3bis. Lot 2 PROPOSÉ le 01/10/2026 (n°11, 12, 30, 42) — RIEN D'INTÉGRÉ
+
+Même méthode (outil `evolution/media/tools/retouche-lot2-vert260.py`, qui réutilise les fonctions du lot 1).
+Sorties : `hd-2026-09-30/lot2/` (`travail/`, `exports/`, `planches/`, `CONTROLES.json`), page de validation
+**`hd-2026-09-30/lot2/valider.html`** (port 8080). Choix des numéros : les plus gros écarts mesurés entre le
+GIF livré et sa source native **qui portent un vrai vert sur le muscle**.
+
+| N° | Source native | Export | WebP q90 | GIF repli | Ce que ça montre |
+|---|---|---|---|---|---|
+| 11 | `planches/lot01/homme/back-squat.png` (2 cases) | 577×660 | 101 ko | 389 ko | fessiers + quadriceps des 2 jambes |
+| 12 | `planches/lot20/back-squat-barre-haute.png` | 577×660 | 103 ko | 392 ko | idem, variante barre haute |
+| 30 | `planches/lot26/curl-barre-debout.png` | 583×660 | 110 ko | 402 ko | biceps + avant-bras, stries conservées |
+| 42 | `planches/lot18/curl-scott-barre-ez-pronation.png` | 588×660 | 113 ko | 419 ko | avant-bras sur pupitre, doigts/tendons nets |
+
+Contrôles : erreur WebP 1.74 / 1.75 / 1.74 / 1.71 (PSNR ≈ 41.7–41.9 dB) ; GIF 2.9–3.1 ;
+saturation après passage 0.904 / 0.930 / 0.873 / 0.876 (référence 260 = 0.914) ;
+**0 pixel modifié hors zone**. Cadrage identique au GIF livré (décalage mesuré par appariement).
+
+**Deux pièges découverts pendant la sélection (à connaître pour la suite) :**
+
+1. **Le vert du GIF livré peut ne pas exister dans la source native.** n°1, 9, 10 : le vert présent dans
+   l'app est une bande fabriquée à l'intégration — dans la planche native, le vert mesuré est celui du
+   **feuillage du décor** (la couleur la plus « lime » de la case est `RGB 202,215,21` sur une feuille).
+   Ces numéros ne sont donc pas des candidats de retouche tant que la source du vert de l'app n'est pas
+   identifiée. Écartés du lot, signalés à l'utilisateur.
+2. **Les GIF de l'app ne sont pas les fichiers des branches d'archive.** `public/media` est un magasin
+   **par empreinte** (94 GIF uniques pour 389 numéros, 0 contenu commun avec `refonte-photo/gif/`), et la
+   branche de passation (`3cbb3e5`) ne contient que les 26 GIF retouchés du lot68 — les autres numéros
+   gardent la version de `c685298`. Toujours vérifier `git show <branche>:<chemin>` avant de comparer.
+
+Autre point de méthode : `git fetch` ne peut pas récupérer ces branches par leur nom sur ce remote
+(`couldn't find remote ref`), mais **par SHA oui** :
+`git fetch origin <sha>:refs/remotes/base/passation`. C'est ainsi que les bases `base/passation` et
+`base/lots-complets` sont reconstituées après un redémarrage du bac à sable.
+
 ## 4. Prochain lot proposé (aucune action engagée sans votre accord)
 
 Après validation numéro par numéro du lot 1, reprendre les 389 par lots de quatre en partant des sources
