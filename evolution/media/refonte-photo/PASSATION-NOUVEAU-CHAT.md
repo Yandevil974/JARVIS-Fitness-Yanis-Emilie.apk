@@ -31,12 +31,30 @@ alimente donc un export 660 px **sans agrandissement** — argument décisif en 
 Les 34 entrées sans source native correspondent au chantier **piscine/aqua/cardio**, prévu **après** les visuels :
 elles seront traitées avec ce chantier (guides piscine), pas en aveugle.
 
-## 3. Lot 1 FAIT le 30/09/2026 (n°45, 48, 19, 85) — EN ATTENTE DE VALIDATION, RIEN D'INTÉGRÉ
+## 3. Lot 1 VALIDÉ le 01/10/2026 (n°45, 48, 19, 85) — TOUJOURS NON INTÉGRÉ
 
 Consigne utilisateur : « Fais le a » (les quatre numéros du lot 1 proposé). Méthode **identique au n°44 validé**,
 zéro génération d'image : outil `evolution/media/tools/retouche-lot1-vert260.py`, sorties dans
 `evolution/media/refonte-photo/hd-2026-09-30/lot1/` (`travail/`, `exports/`, `planches/`, `CONTROLES.json`),
 page de validation **`hd-2026-09-30/lot1/valider.html`** (servie sur le port 8080).
+
+**VALIDATION** : l'utilisateur a répondu **« C'est bon »** après avoir consulté `lot1/valider.html`.
+Enregistré dans `hd-2026-09-30/VALIDATION-LOT1-2026-10-01.json`, avec l'empreinte des 8 fichiers validés
+(4 WebP q90 + 4 GIF de repli) :
+
+| N° | WebP validé (sha256, début) | poids | taille |
+|---|---|---|---|
+| 45 | `0ecbbd6796681543…` | 98 ko | 388×660 |
+| 48 | `760d7f2b9caa2dae…` | 157 ko | 396×660, 4 phases |
+| 19 | `fce01231559fa5e7…` | 80 ko | 572×660 |
+| 85 | `89adcd10c03f674d…` | 200 ko | 1182×660 |
+
+**Portée de cette validation** : les 4 propositions, telles quelles. Elle **ne couvre pas** l'intégration :
+aucun GIF livré remplacé, APK non reconstruit, format WebP dans l'app non adopté (accord + test WebView
+toujours requis). Rappel : *proposition ≠ validation ≠ intégration*.
+
+**Suite** : la méthode est validée → reprise de la série des 389 par lots de quatre, en partant des sources
+natives, tant que les numéros ont un PNG natif exploitable.
 
 | N° | Source native | Export | WebP q90 | GIF de repli | Ce qui a été fait |
 |---|---|---|---|---|---|
