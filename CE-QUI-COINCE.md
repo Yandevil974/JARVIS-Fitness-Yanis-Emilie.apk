@@ -130,6 +130,41 @@ consignées dans **`hd-2026-09-30/VALIDATION-LOT2-2026-10-02.json`**.
 APK intact, WebP dans l'app toujours soumis au test WebView sur le téléphone + accord.
 Rappel : *proposition ≠ validation ≠ intégration*.
 
+---
+
+## Lot 3 — VALIDÉ le 02/10/2026 (n°387, 388, 264, 14) — TOUJOURS NON INTÉGRÉ
+
+Validé numéro par numéro (« 387 OK », « 388 OK », « 264 OK », « 14 OK ») après consultation de
+`lot3/valider.html`. Empreintes et mesures dans **`hd-2026-09-30/VALIDATION-LOT3-2026-10-02.json`** ;
+détail des ROI, seuils, percentiles et PSNR dans `lot3/CONTROLES.json`.
+
+| N° | Exercice | Export | WebP | PSNR | GIF repli | Saturation avant → après (réf. 260 = 0,914) |
+|---|---|---|---|---|---|---|
+| 387 | talons-fesses | 193×660 | 42 ko | 41,49 dB | 120 ko | 0,690 → 0,930 |
+| 388 | talons-fesses effort | 193×660 | 42 ko | 41,49 dB | 120 ko | identique (même source, même GIF livré) |
+| 264 | étirement contre le mur | 188×660 | 39 ko | 41,67 dB | 130 ko | 0,835 → 0,918 |
+| 14 | back squat inertie/pause | 573×660 | 99 ko | 42,04 dB | 397 ko | 0,908 → 0,947 · 0,572 → 0,775 |
+
+**Contrôle clé** : **0 pixel modifié hors zone verte** sur les 8 phases du lot.
+
+**Deux particularités à connaître** :
+- **387 et 388** partagent la même source et le même GIF livré (sha256 identiques) : les deux exports
+  sont donc identiques, et c'est volontaire.
+- **14** : la phase 2 est restée plus terne (0,775) parce que l'ombrage entre phases est conservé ;
+  l'utilisateur a validé ce choix tel quel.
+- Les **ROI du lot 3 ne sont pas posées à l'œil** : elles sont dérivées de la tache verte mesurée dans
+  le GIF livré (bbox consignée, élargie de 100 %). Session sans vision, voir
+  `hd-2026-09-30/PRIORITE-SOURCES-TRI.md` : **tous les essais de tri automatique muscle/décor ont
+  échoué**, ne pas les retenter.
+
+**Portée** : les 4 propositions telles quelles. **Non couvert** : l'intégration — aucun GIF livré
+remplacé, APK intact, WebP dans l'app toujours soumis au test WebView + accord.
+
+**Suite** : la file d'attente est `hd-2026-09-30/PRIORITE-SOURCES.json` (78 numéros retenus, triés par
+« perte » décroissante). Le lot 4 se choisit sur la page de tri visuel (`tri/tri.html`, à refabriquer
+avec `evolution/media/tools/planche-tri.py`, car `tri/` et `.cache/` sont ignorés par git et ne
+survivent pas à un changement de session).
+
 **Suite** : lots suivants de 4 numéros depuis les sources natives, avec vérification préalable que le vert
 existe bien dans la source (pièges §2) ; priorité aux numéros dont le GIF livré perd le plus de pixels
 (`evolution/media/tools/priorite-sources.py`, tableau `hd-2026-09-30/PRIORITE-SOURCES.json`).
