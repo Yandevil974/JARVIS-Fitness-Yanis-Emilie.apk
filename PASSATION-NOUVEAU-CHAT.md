@@ -166,6 +166,14 @@ implémentées** dans la même séance (`v1.6.0-coachs`) :
 - `Training.jsx` : bannière « Décision du coach » sur la prochaine séance (A).
 - Tests : `tests/coach-state.test.js` (14 cas). Total : **116 tests, 114 passent, 0 échec**.
 
+**Livraison chantier 1** : tag `v1.6.0-coachs` → APK signé construit par
+`android-release.yml`, miroir commité par `mirror-apk.yml` sur la branche
+`arena/01a0fdbd-…` : `downloads/Yanis-Fitness-Evolution-1.6.0-coachs.apk`
+(87 784 592 o, sha256 `1b3b9a7e…`). Lien brut à coller dans Chrome :
+`https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/arena/01a0fdbd-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.6.0-coachs.apk`
+L'utilisateur exige ce lien **cliquable dans le chat** (format Markdown
+`[texte](url)`, pas de bloc de code), comme les fois précédentes.
+
 **Prochaine action concrète** : chantier 2 (METCON piscine + METCON aqua tabata pour
 Émilie, en plus de ce qu'elle a déjà), puis chantier 3 (enrichir/durcir piscine et aqua
 tabata), puis chantier 4 (IA conversationnelle, en dernier). Méthode inchangée :
