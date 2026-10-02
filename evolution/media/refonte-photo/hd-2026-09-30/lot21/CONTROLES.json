@@ -1,0 +1,2742 @@
+{
+ "date": "2026-10-02",
+ "lot": 21,
+ "numeros": [
+  159,
+  103,
+  268,
+  386,
+  35
+ ],
+ "methode": "identique au prototype n°44, au lot 1 et au lot 2 validés",
+ "decisions_utilisateur": {
+  "format": "webp animé",
+  "hauteur_px": 660,
+  "vert": "famille du n°260",
+  "sources": "natives, sans agrandissement"
+ },
+ "generation_images": 0,
+ "recoloration": "oui, déterministe (aucun modèle)",
+ "gif_livres_modifies": 0,
+ "apk_reconstruit": false,
+ "proposition_non_integree": true,
+ "roi": "dérivées de la tache verte mesurée dans le GIF livré (bbox consignée, élargie de 100 %)",
+ "reference_260": {
+  "pixels": 3810,
+  "mediane_rgb": [
+   91,
+   157,
+   17
+  ],
+  "mediane_hsv": {
+   "teinte_deg": 86.3,
+   "saturation": 0.914,
+   "valeur": 0.616
+  },
+  "percentiles_saturation": [
+   0.627,
+   0.914,
+   0.968
+  ],
+  "percentiles_valeur": [
+   0.325,
+   0.616,
+   0.91
+  ],
+  "nuances_distinctes": 6,
+  "part_teinte_dominante": 0.31,
+  "teintes_principales": [
+   [
+    52,
+    83,
+    17
+   ],
+   [
+    91,
+    157,
+    5
+   ],
+   [
+    112,
+    182,
+    12
+   ],
+   [
+    139,
+    232,
+    20
+   ],
+   [
+    85,
+    118,
+    44
+   ]
+  ]
+ },
+ "numeros_detail": {
+  "159": {
+   "cle": "releves-de-jambes|homme",
+   "note": "releves de jambes ; erreur d’alignement 8.49/255, perte x3.05",
+   "sources": [
+    {
+     "fichier": "planches/lot02/releves-de-jambes.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "7a651f2dd6958b0132598a5ce6c9d7f279c0664ab5c3ca14bde80a0d824a3f7a"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      14,
+      0,
+      688,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      107,
+      312,
+      166,
+      355
+     ],
+     "roi_native": [
+      98,
+      470,
+      407,
+      695
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 4073,
+     "pixels_silhouette": 5065,
+     "couverture_peau": 0.412,
+     "debordement_vert": 0.013,
+     "manque": {
+      "manque_peau": 0.038,
+      "manque_vert_pale": 0.529,
+      "manque_autre": 0.022
+     }
+    },
+    {
+     "caisse_native": [
+      684,
+      0,
+      1358,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      152,
+      311,
+      217,
+      363
+     ],
+     "roi_native": [
+      836,
+      452,
+      1176,
+      724
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 5372,
+     "pixels_silhouette": 6502,
+     "couverture_peau": 0.434,
+     "debordement_vert": 0.029,
+     "manque": {
+      "manque_peau": 0.055,
+      "manque_vert_pale": 0.495,
+      "manque_autre": 0.016
+     }
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/159-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "3115e1debcaf0aa80b4eed073b0b255a3d092cdf323de1cc4394ac93d96af84c",
+     "poids_ko": 91,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      579,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        579,
+        660
+       ],
+       "couleurs_uniques": 60214,
+       "erreur_moyenne": 1.65,
+       "erreur_max": 13,
+       "psnr_db": 42.38
+      },
+      {
+       "taille": [
+        579,
+        660
+       ],
+       "couleurs_uniques": 64624,
+       "erreur_moyenne": 1.68,
+       "erreur_max": 12,
+       "psnr_db": 42.15
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/159-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "125f10c3eb00a8ef2512bb594f0d22d5907c6b706b7fb0d6b2313678d51cfc15",
+     "poids_ko": 389,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      579,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        579,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.76,
+       "erreur_max": 47,
+       "psnr_db": 35.98
+      },
+      {
+       "taille": [
+        579,
+        660
+       ],
+       "couleurs_uniques": 254,
+       "erreur_moyenne": 3.36,
+       "erreur_max": 48,
+       "psnr_db": 35.01
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.6,
+     0.808,
+     0.96
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.553,
+     0.78,
+     0.933
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 88.5,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 4073,
+     "mediane_rgb": [
+      126,
+      204,
+      39
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 88.3,
+      "saturation": 0.807,
+      "valeur": 0.8
+     },
+     "percentiles_saturation": [
+      0.576,
+      0.807,
+      0.949
+     ],
+     "percentiles_valeur": [
+      0.576,
+      0.8,
+      0.937
+     ],
+     "nuances_distinctes": 3776,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       118,
+       204,
+       31
+      ],
+      [
+       142,
+       215,
+       49
+      ],
+      [
+       142,
+       217,
+       52
+      ],
+      [
+       122,
+       204,
+       30
+      ],
+      [
+       117,
+       216,
+       39
+      ]
+     ]
+    },
+    {
+     "pixels": 5372,
+     "mediane_rgb": [
+      121,
+      195,
+      37
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 88.6,
+      "saturation": 0.809,
+      "valeur": 0.765
+     },
+     "percentiles_saturation": [
+      0.618,
+      0.809,
+      0.969
+     ],
+     "percentiles_valeur": [
+      0.541,
+      0.765,
+      0.925
+     ],
+     "nuances_distinctes": 4978,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       130,
+       202,
+       51
+      ],
+      [
+       82,
+       149,
+       7
+      ],
+      [
+       101,
+       173,
+       18
+      ],
+      [
+       141,
+       211,
+       59
+      ],
+      [
+       101,
+       174,
+       19
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 4073,
+     "mediane_rgb": [
+      102,
+      169,
+      16
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.2,
+      "saturation": 0.911,
+      "valeur": 0.663
+     },
+     "percentiles_saturation": [
+      0.593,
+      0.911,
+      0.964
+     ],
+     "percentiles_valeur": [
+      0.365,
+      0.663,
+      0.918
+     ],
+     "nuances_distinctes": 3180,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       96,
+       167,
+       11
+      ],
+      [
+       99,
+       167,
+       12
+      ],
+      [
+       97,
+       167,
+       12
+      ],
+      [
+       74,
+       126,
+       6
+      ],
+      [
+       102,
+       176,
+       14
+      ]
+     ]
+    },
+    {
+     "pixels": 5372,
+     "mediane_rgb": [
+      93,
+      152,
+      14
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.4,
+      "saturation": 0.912,
+      "valeur": 0.596
+     },
+     "percentiles_saturation": [
+      0.651,
+      0.912,
+      0.971
+     ],
+     "percentiles_valeur": [
+      0.32,
+      0.596,
+      0.894
+     ],
+     "nuances_distinctes": 4129,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       70,
+       119,
+       6
+      ],
+      [
+       63,
+       107,
+       4
+      ],
+      [
+       55,
+       93,
+       3
+      ],
+      [
+       73,
+       124,
+       7
+      ],
+      [
+       61,
+       103,
+       4
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 423,
+     "largeur_transition_avant_px": 1.74,
+     "largeur_transition_apres_px": 1.63
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 533,
+     "largeur_transition_avant_px": 1.68,
+     "largeur_transition_apres_px": 1.57
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 513223,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 511819,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/releves-de-jambes-homme.gif",
+    "sha256": "e3683062b2c86348938ae33acaf222b6d5509404fb790c65cd7155ffed5cc4a5",
+    "taille": [
+     386,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 189,
+    "phases": [
+     {
+      "pixels": 2845,
+      "mediane_rgb": [
+       126,
+       162,
+       57
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 82.3,
+       "saturation": 0.648,
+       "valeur": 0.635
+      },
+      "percentiles_saturation": [
+       0.534,
+       0.648,
+       0.735
+      ],
+      "percentiles_valeur": [
+       0.518,
+       0.635,
+       0.867
+      ],
+      "nuances_distinctes": 4,
+      "part_teinte_dominante": 0.498,
+      "teintes_principales": [
+       [
+        126,
+        162,
+        57
+       ],
+       [
+        96,
+        132,
+        35
+       ],
+       [
+        160,
+        221,
+        103
+       ],
+       [
+        162,
+        203,
+        116
+       ]
+      ]
+     },
+     {
+      "pixels": 3494,
+      "mediane_rgb": [
+       114,
+       158,
+       42
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 82.8,
+       "saturation": 0.734,
+       "valeur": 0.62
+      },
+      "percentiles_saturation": [
+       0.493,
+       0.734,
+       0.734
+      ],
+      "percentiles_valeur": [
+       0.467,
+       0.62,
+       0.851
+      ],
+      "nuances_distinctes": 4,
+      "part_teinte_dominante": 0.584,
+      "teintes_principales": [
+       [
+        114,
+        158,
+        42
+       ],
+       [
+        88,
+        119,
+        39
+       ],
+       [
+        162,
+        217,
+        110
+       ],
+       [
+        158,
+        199,
+        110
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot21/planches/LOT21-159-export-decode.png",
+    "lot21/planches/LOT21-159-avant-apres-natif.png",
+    "lot21/planches/LOT21-159-taille-application.png"
+   ]
+  },
+  "103": {
+   "cle": "fentes-bulgares-halteres-pied-avant-sureleve|homme",
+   "note": "fentes bulgares halteres pied avant sureleve ; erreur d’alignement 9.5/255, perte x3.05",
+   "sources": [
+    {
+     "fichier": "planches/lot12/fentes-bulgares-halteres-pied-avant-sureleve.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "2b25b285e3670b1794935ec201ffb8941d2e6456439dcc39cbae9454fb27a743"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      679,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      67,
+      213,
+      89,
+      236
+     ],
+     "roi_native": [
+      79,
+      332,
+      194,
+      452
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 3402,
+     "pixels_silhouette": 4605,
+     "couverture_peau": 0.599,
+     "debordement_vert": 0.103,
+     "manque": {
+      "manque_peau": 0.015,
+      "manque_vert_pale": 0.367,
+      "manque_autre": 0.019
+     }
+    },
+    {
+     "caisse_native": [
+      684,
+      0,
+      1363,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      211,
+      232,
+      256,
+      343
+     ],
+     "roi_native": [
+      974,
+      211,
+      1209,
+      768
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 6277,
+     "pixels_silhouette": 7884,
+     "couverture_peau": 0.391,
+     "debordement_vert": 0.004,
+     "manque": {
+      "manque_peau": 0.064,
+      "manque_vert_pale": 0.514,
+      "manque_autre": 0.031
+     }
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/103-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "06c27afdd30bf7c2e07ab69d98674bb704a54469667e7752649f82e7ea0c90b3",
+     "poids_ko": 107,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      584,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        584,
+        660
+       ],
+       "couleurs_uniques": 65722,
+       "erreur_moyenne": 1.63,
+       "erreur_max": 12,
+       "psnr_db": 42.41
+      },
+      {
+       "taille": [
+        584,
+        660
+       ],
+       "couleurs_uniques": 72831,
+       "erreur_moyenne": 1.64,
+       "erreur_max": 16,
+       "psnr_db": 42.35
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/103-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "7709724c07a6ef0707759ea53b5af87000c932ad27a8129350f280bcfe3d1e29",
+     "poids_ko": 415,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      584,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        584,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.89,
+       "erreur_max": 56,
+       "psnr_db": 35.54
+      },
+      {
+       "taille": [
+        584,
+        660
+       ],
+       "couleurs_uniques": 249,
+       "erreur_moyenne": 3.99,
+       "erreur_max": 68,
+       "psnr_db": 31.83
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.382,
+     0.616,
+     1.0
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.408,
+     0.686,
+     0.871
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 79.2,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 3402,
+     "mediane_rgb": [
+      107,
+      151,
+      6
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.2,
+      "saturation": 0.962,
+      "valeur": 0.592
+     },
+     "percentiles_saturation": [
+      0.204,
+      0.962,
+      1.0
+     ],
+     "percentiles_valeur": [
+      0.329,
+      0.592,
+      0.824
+     ],
+     "nuances_distinctes": 3257,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       76,
+       102,
+       0
+      ],
+      [
+       158,
+       195,
+       2
+      ],
+      [
+       103,
+       145,
+       0
+      ],
+      [
+       106,
+       150,
+       0
+      ],
+      [
+       109,
+       153,
+       1
+      ]
+     ]
+    },
+    {
+     "pixels": 6277,
+     "mediane_rgb": [
+      154,
+      188,
+      75
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 78.6,
+      "saturation": 0.592,
+      "valeur": 0.737
+     },
+     "percentiles_saturation": [
+      0.49,
+      0.592,
+      0.793
+     ],
+     "percentiles_valeur": [
+      0.506,
+      0.737,
+      0.878
+     ],
+     "nuances_distinctes": 5670,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       185,
+       226,
+       103
+      ],
+      [
+       183,
+       224,
+       101
+      ],
+      [
+       168,
+       208,
+       88
+      ],
+      [
+       168,
+       207,
+       88
+      ],
+      [
+       160,
+       193,
+       79
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 3402,
+     "mediane_rgb": [
+      79,
+      134,
+      5
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 88.2,
+      "saturation": 0.962,
+      "valeur": 0.525
+     },
+     "percentiles_saturation": [
+      0.335,
+      0.962,
+      0.978
+     ],
+     "percentiles_valeur": [
+      0.271,
+      0.525,
+      0.831
+     ],
+     "nuances_distinctes": 2924,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       127,
+       190,
+       6
+      ],
+      [
+       62,
+       91,
+       1
+      ],
+      [
+       60,
+       112,
+       4
+      ],
+      [
+       105,
+       166,
+       5
+      ],
+      [
+       61,
+       92,
+       2
+      ]
+     ]
+    },
+    {
+     "pixels": 6277,
+     "mediane_rgb": [
+      122,
+      181,
+      35
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.5,
+      "saturation": 0.806,
+      "valeur": 0.71
+     },
+     "percentiles_saturation": [
+      0.668,
+      0.806,
+      0.92
+     ],
+     "percentiles_valeur": [
+      0.459,
+      0.71,
+      0.918
+     ],
+     "nuances_distinctes": 5486,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       153,
+       238,
+       46
+      ],
+      [
+       119,
+       166,
+       33
+      ],
+      [
+       131,
+       199,
+       29
+      ],
+      [
+       92,
+       143,
+       24
+      ],
+      [
+       120,
+       167,
+       34
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 537,
+     "largeur_transition_avant_px": 6.21,
+     "largeur_transition_apres_px": 6.0
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 597,
+     "largeur_transition_avant_px": 12.83,
+     "largeur_transition_apres_px": 12.69
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 516893,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 513678,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/fentes-bulgares-halteres-pied-avant-sureleve-homme.gif",
+    "sha256": "a5f01971f29278bd8f1def456fc64b966a78c1119b5a4fee355a3ae5fcc50ba8",
+    "taille": [
+     389,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 205,
+    "phases": [
+     {
+      "pixels": 1518,
+      "mediane_rgb": [
+       80,
+       109,
+       39
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 84.9,
+       "saturation": 0.642,
+       "valeur": 0.427
+      },
+      "percentiles_saturation": [
+       0.549,
+       0.642,
+       0.642
+      ],
+      "percentiles_valeur": [
+       0.427,
+       0.427,
+       0.557
+      ],
+      "nuances_distinctes": 2,
+      "part_teinte_dominante": 0.596,
+      "teintes_principales": [
+       [
+        80,
+        109,
+        39
+       ],
+       [
+        111,
+        142,
+        64
+       ]
+      ]
+     },
+     {
+      "pixels": 3644,
+      "mediane_rgb": [
+       141,
+       176,
+       49
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 81.1,
+       "saturation": 0.657,
+       "valeur": 0.69
+      },
+      "percentiles_saturation": [
+       0.492,
+       0.657,
+       0.767
+      ],
+      "percentiles_valeur": [
+       0.443,
+       0.69,
+       0.855
+      ],
+      "nuances_distinctes": 5,
+      "part_teinte_dominante": 0.274,
+      "teintes_principales": [
+       [
+        81,
+        113,
+        32
+       ],
+       [
+        185,
+        218,
+        102
+       ],
+       [
+        110,
+        143,
+        49
+       ],
+       [
+        141,
+        176,
+        41
+       ],
+       [
+        147,
+        179,
+        91
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot21/planches/LOT21-103-export-decode.png",
+    "lot21/planches/LOT21-103-avant-apres-natif.png",
+    "lot21/planches/LOT21-103-taille-application.png"
+   ]
+  },
+  "268": {
+   "cle": "etirement-du-cobra|homme",
+   "note": "etirement du cobra ; erreur d’alignement 9.62/255, perte x3.05",
+   "sources": [
+    {
+     "fichier": "planches/lot05/etirement-du-cobra.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "5997b7a9fda569243cfd828ef8e392c7c9bec94f4f0f7c2973e4f87f73387f45"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      7,
+      0,
+      688,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      257,
+      264,
+      293,
+      319
+     ],
+     "roi_native": [
+      393,
+      365,
+      581,
+      653
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 3521,
+     "pixels_silhouette": 3998,
+     "couverture_peau": 0.278,
+     "debordement_vert": 0.076,
+     "manque": {
+      "manque_peau": 0.097,
+      "manque_vert_pale": 0.588,
+      "manque_autre": 0.037
+     }
+    },
+    {
+     "caisse_native": [
+      684,
+      0,
+      1365,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      252,
+      256,
+      298,
+      312
+     ],
+     "roi_native": [
+      1044,
+      349,
+      1285,
+      642
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 4294,
+     "pixels_silhouette": 4788,
+     "couverture_peau": 0.451,
+     "debordement_vert": 0.025,
+     "manque": {
+      "manque_peau": 0.028,
+      "manque_vert_pale": 0.506,
+      "manque_autre": 0.015
+     }
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/268-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "c913e18f2811b00383f458a0112af8d1b996f2c896e4eae009e4ab5c3e270ef5",
+     "poids_ko": 97,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      585,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        585,
+        660
+       ],
+       "couleurs_uniques": 64733,
+       "erreur_moyenne": 1.64,
+       "erreur_max": 12,
+       "psnr_db": 42.4
+      },
+      {
+       "taille": [
+        585,
+        660
+       ],
+       "couleurs_uniques": 63401,
+       "erreur_moyenne": 1.65,
+       "erreur_max": 13,
+       "psnr_db": 42.38
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/268-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "a94e68af2dbb03244dbd4982bd50ee0ae93f5796927b72bb33449a7425954939",
+     "poids_ko": 402,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      585,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        585,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.92,
+       "erreur_max": 46,
+       "psnr_db": 35.6
+      },
+      {
+       "taille": [
+        585,
+        660
+       ],
+       "couleurs_uniques": 254,
+       "erreur_moyenne": 3.34,
+       "erreur_max": 49,
+       "psnr_db": 35.15
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.656,
+     0.981,
+     1.0
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.416,
+     0.737,
+     0.988
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 80.3,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 3521,
+     "mediane_rgb": [
+      135,
+      190,
+      4
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 80.4,
+      "saturation": 0.977,
+      "valeur": 0.745
+     },
+     "percentiles_saturation": [
+      0.622,
+      0.977,
+      1.0
+     ],
+     "percentiles_valeur": [
+      0.4,
+      0.745,
+      0.988
+     ],
+     "nuances_distinctes": 3029,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       85,
+       131,
+       1
+      ],
+      [
+       131,
+       183,
+       0
+      ],
+      [
+       84,
+       130,
+       0
+      ],
+      [
+       87,
+       125,
+       0
+      ],
+      [
+       93,
+       129,
+       1
+      ]
+     ]
+    },
+    {
+     "pixels": 4294,
+     "mediane_rgb": [
+      131,
+      186,
+      2
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 80.2,
+      "saturation": 0.985,
+      "valeur": 0.729
+     },
+     "percentiles_saturation": [
+      0.681,
+      0.985,
+      1.0
+     ],
+     "percentiles_valeur": [
+      0.424,
+      0.729,
+      0.984
+     ],
+     "nuances_distinctes": 3401,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       90,
+       134,
+       0
+      ],
+      [
+       90,
+       132,
+       0
+      ],
+      [
+       91,
+       135,
+       0
+      ],
+      [
+       90,
+       131,
+       0
+      ],
+      [
+       97,
+       141,
+       0
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 3521,
+     "mediane_rgb": [
+      99,
+      159,
+      12
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.2,
+      "saturation": 0.912,
+      "valeur": 0.624
+     },
+     "percentiles_saturation": [
+      0.598,
+      0.912,
+      0.972
+     ],
+     "percentiles_valeur": [
+      0.314,
+      0.624,
+      0.91
+     ],
+     "nuances_distinctes": 2570,
+     "part_teinte_dominante": 0.003,
+     "teintes_principales": [
+      [
+       61,
+       105,
+       6
+      ],
+      [
+       87,
+       144,
+       5
+      ],
+      [
+       92,
+       153,
+       5
+      ],
+      [
+       67,
+       115,
+       4
+      ],
+      [
+       64,
+       107,
+       3
+      ]
+     ]
+    },
+    {
+     "pixels": 4294,
+     "mediane_rgb": [
+      95,
+      155,
+      9
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.2,
+      "saturation": 0.925,
+      "valeur": 0.608
+     },
+     "percentiles_saturation": [
+      0.65,
+      0.925,
+      0.972
+     ],
+     "percentiles_valeur": [
+      0.337,
+      0.608,
+      0.906
+     ],
+     "nuances_distinctes": 2743,
+     "part_teinte_dominante": 0.004,
+     "teintes_principales": [
+      [
+       63,
+       108,
+       3
+      ],
+      [
+       63,
+       109,
+       3
+      ],
+      [
+       62,
+       108,
+       3
+      ],
+      [
+       74,
+       125,
+       4
+      ],
+      [
+       65,
+       111,
+       4
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 240,
+     "largeur_transition_avant_px": 4.78,
+     "largeur_transition_apres_px": 4.38
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 248,
+     "largeur_transition_avant_px": 3.81,
+     "largeur_transition_apres_px": 3.23
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 519229,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 518461,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/etirement-du-cobra-homme.gif",
+    "sha256": "70f0e7b4bad530c72af375e3791c831bb28bb25b6353e19d200b18c6eaede7c9",
+    "taille": [
+     390,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 199,
+    "phases": [
+     {
+      "pixels": 2469,
+      "mediane_rgb": [
+       113,
+       155,
+       20
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 78.7,
+       "saturation": 0.871,
+       "valeur": 0.608
+      },
+      "percentiles_saturation": [
+       0.658,
+       0.871,
+       0.871
+      ],
+      "percentiles_valeur": [
+       0.494,
+       0.608,
+       0.918
+      ],
+      "nuances_distinctes": 3,
+      "part_teinte_dominante": 0.505,
+      "teintes_principales": [
+       [
+        113,
+        155,
+        20
+       ],
+       [
+        90,
+        126,
+        26
+       ],
+       [
+        183,
+        234,
+        80
+       ]
+      ]
+     },
+     {
+      "pixels": 2781,
+      "mediane_rgb": [
+       118,
+       153,
+       43
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 80.2,
+       "saturation": 0.719,
+       "valeur": 0.6
+      },
+      "percentiles_saturation": [
+       0.675,
+       0.719,
+       0.857
+      ],
+      "percentiles_valeur": [
+       0.494,
+       0.6,
+       0.91
+      ],
+      "nuances_distinctes": 4,
+      "part_teinte_dominante": 0.416,
+      "teintes_principales": [
+       [
+        86,
+        126,
+        18
+       ],
+       [
+        118,
+        153,
+        43
+       ],
+       [
+        176,
+        232,
+        66
+       ],
+       [
+        157,
+        197,
+        64
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot21/planches/LOT21-268-export-decode.png",
+    "lot21/planches/LOT21-268-avant-apres-natif.png",
+    "lot21/planches/LOT21-268-taille-application.png"
+   ]
+  },
+  "386": {
+   "cle": "elliptique-mise-en-route|homme",
+   "note": "elliptique mise en route ; erreur d’alignement 11.18/255, perte x2.8",
+   "sources": [
+    {
+     "fichier": "planches/lot54/elliptique-mise-en-route.png",
+     "ref_git": "c685298",
+     "taille": [
+      1445,
+      736
+     ],
+     "sha256": "6f247f66dc2b2f9828bc445b5bc7724306c7ec39c10373e4939caab49c494c0b"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      27,
+      0,
+      721,
+      736
+     ],
+     "bbox_vert_gif_livre": [
+      202,
+      199,
+      242,
+      296
+     ],
+     "roi_native": [
+      298,
+      171,
+      499,
+      657
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 2064,
+     "pixels_silhouette": 2784,
+     "couverture_peau": 0.212,
+     "debordement_vert": 0.001,
+     "manque": {
+      "manque_peau": 0.07,
+      "manque_vert_pale": 0.662,
+      "manque_autre": 0.055
+     }
+    },
+    {
+     "caisse_native": [
+      722,
+      0,
+      1416,
+      736
+     ],
+     "bbox_vert_gif_livre": [
+      146,
+      223,
+      232,
+      347
+     ],
+     "roi_native": [
+      822,
+      166,
+      1254,
+      736
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 9128,
+     "pixels_silhouette": 11773,
+     "couverture_peau": 0.704,
+     "debordement_vert": 0.062,
+     "manque": {
+      "manque_peau": 0.059,
+      "manque_vert_pale": 0.199,
+      "manque_autre": 0.038
+     }
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/386-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "ebe700a0154ddd7a212864dcc849036f905ac8e85789c73030e91dfcba707f6a",
+     "poids_ko": 115,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      622,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        622,
+        660
+       ],
+       "couleurs_uniques": 72105,
+       "erreur_moyenne": 1.65,
+       "erreur_max": 13,
+       "psnr_db": 42.3
+      },
+      {
+       "taille": [
+        622,
+        660
+       ],
+       "couleurs_uniques": 72290,
+       "erreur_moyenne": 1.68,
+       "erreur_max": 14,
+       "psnr_db": 42.18
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/386-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "deb88e0824fb0ce6c4cec5e6e41faf191d176be410edec4f53d064f001dca949",
+     "poids_ko": 446,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      622,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        622,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 3.02,
+       "erreur_max": 46,
+       "psnr_db": 35.24
+      },
+      {
+       "taille": [
+        622,
+        660
+       ],
+       "couleurs_uniques": 253,
+       "erreur_moyenne": 3.51,
+       "erreur_max": 46,
+       "psnr_db": 34.42
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.35,
+     0.898,
+     1.0
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.439,
+     0.612,
+     0.953
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 80.2,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 2064,
+     "mediane_rgb": [
+      103,
+      150,
+      15
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 78.4,
+      "saturation": 0.891,
+      "valeur": 0.588
+     },
+     "percentiles_saturation": [
+      0.39,
+      0.891,
+      0.986
+     ],
+     "percentiles_valeur": [
+      0.471,
+      0.588,
+      0.949
+     ],
+     "nuances_distinctes": 1982,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       211,
+       243,
+       146
+      ],
+      [
+       107,
+       140,
+       15
+      ],
+      [
+       105,
+       159,
+       11
+      ],
+      [
+       104,
+       148,
+       7
+      ],
+      [
+       82,
+       112,
+       0
+      ]
+     ]
+    },
+    {
+     "pixels": 9128,
+     "mediane_rgb": [
+      114,
+      159,
+      14
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 80.7,
+      "saturation": 0.902,
+      "valeur": 0.624
+     },
+     "percentiles_saturation": [
+      0.336,
+      0.902,
+      1.0
+     ],
+     "percentiles_valeur": [
+      0.435,
+      0.624,
+      0.957
+     ],
+     "nuances_distinctes": 8509,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       84,
+       124,
+       2
+      ],
+      [
+       78,
+       110,
+       0
+      ],
+      [
+       83,
+       122,
+       2
+      ],
+      [
+       81,
+       120,
+       0
+      ],
+      [
+       73,
+       112,
+       0
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 2064,
+     "mediane_rgb": [
+      89,
+      147,
+      13
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.1,
+      "saturation": 0.908,
+      "valeur": 0.576
+     },
+     "percentiles_saturation": [
+      0.558,
+      0.908,
+      0.964
+     ],
+     "percentiles_valeur": [
+      0.408,
+      0.576,
+      0.922
+     ],
+     "nuances_distinctes": 1875,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       92,
+       160,
+       11
+      ],
+      [
+       180,
+       236,
+       101
+      ],
+      [
+       93,
+       154,
+       13
+      ],
+      [
+       174,
+       236,
+       93
+      ],
+      [
+       91,
+       158,
+       12
+      ]
+     ]
+    },
+    {
+     "pixels": 9128,
+     "mediane_rgb": [
+      98,
+      160,
+      12
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.2,
+      "saturation": 0.915,
+      "valeur": 0.627
+     },
+     "percentiles_saturation": [
+      0.529,
+      0.915,
+      0.971
+     ],
+     "percentiles_valeur": [
+      0.353,
+      0.627,
+      0.918
+     ],
+     "nuances_distinctes": 7750,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       63,
+       100,
+       3
+      ],
+      [
+       71,
+       102,
+       4
+      ],
+      [
+       50,
+       86,
+       2
+      ],
+      [
+       72,
+       103,
+       4
+      ],
+      [
+       61,
+       102,
+       4
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 343,
+     "largeur_transition_avant_px": 6.51,
+     "largeur_transition_apres_px": 6.38
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 1203,
+     "largeur_transition_avant_px": 6.21,
+     "largeur_transition_apres_px": 5.98
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 508011,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 499176,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/elliptique-mise-en-route-homme.gif",
+    "sha256": "7acb83b71752c44cb6b0f6f20332b3abc4eb8ec4d8a9bc25dcd582104e699cae",
+    "taille": [
+     415,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 222,
+    "phases": [
+     {
+      "pixels": 2964,
+      "mediane_rgb": [
+       103,
+       146,
+       15
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 79.7,
+       "saturation": 0.897,
+       "valeur": 0.573
+      },
+      "percentiles_saturation": [
+       0.388,
+       0.897,
+       0.897
+      ],
+      "percentiles_valeur": [
+       0.573,
+       0.573,
+       0.91
+      ],
+      "nuances_distinctes": 3,
+      "part_teinte_dominante": 0.611,
+      "teintes_principales": [
+       [
+        103,
+        146,
+        15
+       ],
+       [
+        150,
+        176,
+        92
+       ],
+       [
+        201,
+        232,
+        142
+       ]
+      ]
+     },
+     {
+      "pixels": 4618,
+      "mediane_rgb": [
+       97,
+       143,
+       15
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 80.4,
+       "saturation": 0.858,
+       "valeur": 0.561
+      },
+      "percentiles_saturation": [
+       0.464,
+       0.858,
+       0.937
+      ],
+      "percentiles_valeur": [
+       0.416,
+       0.561,
+       0.914
+      ],
+      "nuances_distinctes": 5,
+      "part_teinte_dominante": 0.244,
+      "teintes_principales": [
+       [
+        75,
+        106,
+        15
+       ],
+       [
+        127,
+        174,
+        30
+       ],
+       [
+        92,
+        128,
+        15
+       ],
+       [
+        97,
+        143,
+        9
+       ],
+       [
+        191,
+        233,
+        125
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot21/planches/LOT21-386-export-decode.png",
+    "lot21/planches/LOT21-386-avant-apres-natif.png",
+    "lot21/planches/LOT21-386-taille-application.png"
+   ]
+  },
+  "35": {
+   "cle": "curl-halteres-incline-prise-neutre|homme",
+   "note": "curl halteres incline prise neutre ; erreur d’alignement 14.97/255, perte x2.68",
+   "sources": [
+    {
+     "fichier": "planches/lot36/curl-halteres-incline-prise-neutre.png",
+     "ref_git": "c685298",
+     "taille": [
+      1456,
+      720
+     ],
+     "sha256": "a2d7ce3cf1eeebb6539a01eaef67db3da275fde9e0f262849815579beb182539"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      725,
+      720
+     ],
+     "bbox_vert_gif_livre": [
+      45,
+      216,
+      93,
+      251
+     ],
+     "roi_native": [
+      0,
+      296,
+      231,
+      468
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 4584,
+     "pixels_silhouette": 6178,
+     "couverture_peau": 0.654,
+     "debordement_vert": 0.281,
+     "manque": {
+      "manque_peau": 0.073,
+      "manque_vert_pale": 0.245,
+      "manque_autre": 0.028
+     }
+    },
+    {
+     "caisse_native": [
+      0,
+      0,
+      725,
+      720
+     ],
+     "bbox_vert_gif_livre": [
+      42,
+      218,
+      91,
+      253
+     ],
+     "roi_native": [
+      0,
+      299,
+      229,
+      471
+     ],
+     "seuil": 0.1,
+     "seuil_effectif": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 4584,
+     "pixels_silhouette": 6178,
+     "couverture_peau": 0.744,
+     "debordement_vert": 0.334,
+     "manque": {
+      "manque_peau": 0.016,
+      "manque_vert_pale": 0.214,
+      "manque_autre": 0.027
+     }
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/35-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "ec3746719e3851d89e3d0c4e6d7808ca46dd44ec7128f57485d7d1e0f75bac9d",
+     "poids_ko": 55,
+     "images": 1,
+     "durees_ms": [
+      0
+     ],
+     "taille": [
+      665,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        665,
+        660
+       ],
+       "couleurs_uniques": 68606,
+       "erreur_moyenne": 1.66,
+       "erreur_max": 17,
+       "psnr_db": 42.28
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/35-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "c1cae5b0122d9b7db05fd7d9b670c0bc348ce274c32fc360f1fe5dfd902b2143",
+     "poids_ko": 468,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      665,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        665,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.94,
+       "erreur_max": 52,
+       "psnr_db": 35.24
+      },
+      {
+       "taille": [
+        665,
+        660
+       ],
+       "couleurs_uniques": 254,
+       "erreur_moyenne": 3.31,
+       "erreur_max": 56,
+       "psnr_db": 34.8
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.186,
+     0.951,
+     1.0
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.4,
+     0.627,
+     0.847
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 81.7,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 4584,
+     "mediane_rgb": [
+      120,
+      160,
+      7
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 81.7,
+      "saturation": 0.951,
+      "valeur": 0.627
+     },
+     "percentiles_saturation": [
+      0.186,
+      0.951,
+      1.0
+     ],
+     "percentiles_valeur": [
+      0.4,
+      0.627,
+      0.847
+     ],
+     "nuances_distinctes": 4386,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       83,
+       110,
+       0
+      ],
+      [
+       147,
+       179,
+       2
+      ],
+      [
+       153,
+       185,
+       3
+      ],
+      [
+       140,
+       181,
+       2
+      ],
+      [
+       84,
+       110,
+       2
+      ]
+     ]
+    },
+    {
+     "pixels": 4584,
+     "mediane_rgb": [
+      120,
+      160,
+      7
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 81.7,
+      "saturation": 0.951,
+      "valeur": 0.627
+     },
+     "percentiles_saturation": [
+      0.186,
+      0.951,
+      1.0
+     ],
+     "percentiles_valeur": [
+      0.4,
+      0.627,
+      0.847
+     ],
+     "nuances_distinctes": 4386,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       83,
+       110,
+       0
+      ],
+      [
+       147,
+       179,
+       2
+      ],
+      [
+       153,
+       185,
+       3
+      ],
+      [
+       140,
+       181,
+       2
+      ],
+      [
+       84,
+       110,
+       2
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 4584,
+     "mediane_rgb": [
+      103,
+      157,
+      11
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 85.8,
+      "saturation": 0.923,
+      "valeur": 0.616
+     },
+     "percentiles_saturation": [
+      0.454,
+      0.923,
+      0.973
+     ],
+     "percentiles_valeur": [
+      0.345,
+      0.616,
+      0.89
+     ],
+     "nuances_distinctes": 4296,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       67,
+       119,
+       4
+      ],
+      [
+       68,
+       99,
+       3
+      ],
+      [
+       70,
+       101,
+       2
+      ],
+      [
+       39,
+       85,
+       5
+      ],
+      [
+       74,
+       106,
+       4
+      ]
+     ]
+    },
+    {
+     "pixels": 4584,
+     "mediane_rgb": [
+      103,
+      157,
+      11
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 85.8,
+      "saturation": 0.923,
+      "valeur": 0.616
+     },
+     "percentiles_saturation": [
+      0.454,
+      0.923,
+      0.973
+     ],
+     "percentiles_valeur": [
+      0.345,
+      0.616,
+      0.89
+     ],
+     "nuances_distinctes": 4296,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       67,
+       119,
+       4
+      ],
+      [
+       68,
+       99,
+       3
+      ],
+      [
+       70,
+       101,
+       2
+      ],
+      [
+       39,
+       85,
+       5
+      ],
+      [
+       74,
+       106,
+       4
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 683,
+     "largeur_transition_avant_px": 7.15,
+     "largeur_transition_apres_px": 6.96
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 683,
+     "largeur_transition_avant_px": 7.15,
+     "largeur_transition_apres_px": 6.96
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 515851,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 515851,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/curl-halteres-incline-prise-neutre-homme.gif",
+    "sha256": "2642d39b0f67a2d87e1caeb49d560ca198977a03f55386973360b9e479cc38d2",
+    "taille": [
+     443,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 226,
+    "phases": [
+     {
+      "pixels": 2022,
+      "mediane_rgb": [
+       119,
+       152,
+       47
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 78.9,
+       "saturation": 0.691,
+       "valeur": 0.596
+      },
+      "percentiles_saturation": [
+       0.691,
+       0.691,
+       0.698
+      ],
+      "percentiles_valeur": [
+       0.455,
+       0.596,
+       0.596
+      ],
+      "nuances_distinctes": 2,
+      "part_teinte_dominante": 0.541,
+      "teintes_principales": [
+       [
+        119,
+        152,
+        47
+       ],
+       [
+        85,
+        116,
+        35
+       ]
+      ]
+     },
+     {
+      "pixels": 1700,
+      "mediane_rgb": [
+       107,
+       148,
+       23
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 79.7,
+       "saturation": 0.845,
+       "valeur": 0.58
+      },
+      "percentiles_saturation": [
+       0.746,
+       0.845,
+       0.845
+      ],
+      "percentiles_valeur": [
+       0.447,
+       0.58,
+       0.58
+      ],
+      "nuances_distinctes": 2,
+      "part_teinte_dominante": 0.554,
+      "teintes_principales": [
+       [
+        107,
+        148,
+        23
+       ],
+       [
+        83,
+        114,
+        29
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot21/planches/LOT21-35-export-decode.png",
+    "lot21/planches/LOT21-35-avant-apres-natif.png",
+    "lot21/planches/LOT21-35-taille-application.png"
+   ]
+  }
+ }
+}
