@@ -1,6 +1,16 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — tous les exercices avec leur GIF humain
+## Version à installer — tous les GIF humains, chrono compris
+
+[Yanis-Fitness-Evolution-1.5.1-chrono-gifs.apk](downloads/Yanis-Fitness-Evolution-1.5.1-chrono-gifs.apk) — 81 727 540 octets, signature `168df81a…` (empreinte SHA-256 dans le `.sha256` joint).
+
+**Le chrono affiche un GIF humain à chaque étape** : c'était le défaut signalé (« quand je
+lance le chrono il n'y a pas le GIF »). 50 visuels d'étapes sont passés des illustrations
+statiques à des **GIF humains** (variante homme/femme) : 29 étirements, 19 guides piscine,
+10 étapes de protocole piscine/aqua, 5 étapes de cardio elliptique, 3 étapes d'échauffement.
+Un résolveur garantit qu'un chrono affiche toujours un humain animé.
+
+## Version précédente — tous les exercices avec leur GIF humain
 
 [Yanis-Fitness-Evolution-1.5.1-gifs-integres.apk](downloads/Yanis-Fitness-Evolution-1.5.1-gifs-integres.apk) — 68 150 190 octets, signature `168df81a…` (empreinte SHA-256 dans le `.sha256` joint).
 
