@@ -1,5 +1,10 @@
 # ÉTAT AU 01/10/2026 — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`
 
+> **Suite du chantier (02/10/2026) : branche `arena/01a0fae1-jarvis-fitness-yanis-emilie-ap`.**
+> L'historique de `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap` (tête `3c163a6`) a été repris **tel quel**
+> (`git fetch origin 3c163a6:refs/remotes/base/passation`, puis adoption de l'arbre, aucun `reset --hard`).
+> État inchangé au moment de la reprise : lot 1 validé non intégré, lot 2 proposé en attente, APK intact.
+> Ce document reste la référence ; seul le nom de la branche de travail change.
 > **Bloc de reprise prêt à copier-coller dans un nouveau chat : `PASSATION-COPIER-COLLER.md`**
 > (consigne + passation complète, état au 01/10/2026 : lot 1 validé, lot 2 proposé).
 

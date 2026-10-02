@@ -1,5 +1,10 @@
 # 📋 À COPIER-COLLER DANS LE NOUVEAU CHAT — état au 01/10/2026
 
+> **Suite du chantier (02/10/2026) : branche `arena/01a0fae1-jarvis-fitness-yanis-emilie-ap`.**
+> L'historique de `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap` (tête `3c163a6`) a été repris **tel quel**
+> (`git fetch origin 3c163a6:refs/remotes/base/passation`, puis adoption de l'arbre, aucun `reset --hard`).
+> État inchangé au moment de la reprise : lot 1 validé non intégré, lot 2 proposé en attente, APK intact.
+> Ce document reste la référence ; seul le nom de la branche de travail change.
 > Ce fichier contient **deux blocs** : (1) la *consigne* à coller en premier message,
 > (2) la *passation* complète à coller juste derrière. Rien d'autre n'est nécessaire pour reprendre.
 
@@ -9,7 +14,8 @@
 
 ```
 Reprise du chantier « qualité des visuels » de l'app JARVIS Fitness (Yanis & Émilie),
-dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk, branche arena/01a0edb7-jarvis-fitness-yanis-emilie-ap.
+dépôt Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk, branche arena/01a0fae1-jarvis-fitness-yanis-emilie-ap
+(suite de arena/01a0edb7-..., repris tel quel).
 
 Priorité absolue : NETTETÉ et QUALITÉ. On ne recolore plus des GIF pixellisés : on part des sources
 PNG natives, on retouche à la résolution native, PUIS on exporte.
@@ -46,7 +52,8 @@ Lis la passation ci-dessous en entier avant d'agir, puis dis-moi ce que tu as co
 === PASSATION — JARVIS FITNESS (visuels), 01/10/2026 ===
 
 DÉPÔT : Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk
-BRANCHE DE TRAVAIL : arena/01a0edb7-jarvis-fitness-yanis-emilie-ap (tête : 4bdcb4a)
+BRANCHE DE TRAVAIL : arena/01a0fae1-jarvis-fitness-yanis-emilie-ap
+  (branche imposée par la session ; a repris l'arbre de arena/01a0edb7-..., tête 3c163a6)
 NE JAMAIS pousser ailleurs, ne jamais supprimer/renommer la racine du dépôt ni .git.
 
 ------------------------------------------------------------
@@ -129,7 +136,8 @@ Pièges vérifiés (à ne pas répéter) :
 - Ne pas présenter un PNG net comme preuve que le GIF est net : montrer le fichier réellement décodé.
 - ≤ 10 appels de génération d'image par tour (échecs compris) ; une lettre isolée (Y, T, E…) = relance
   technique : ne rien faire, attendre.
-- Push uniquement sur arena/01a0edb7-jarvis-fitness-yanis-emilie-ap. Jamais main. Jamais de reset --hard.
+- Push uniquement sur la branche imposée par la session (arena/01a0fae1-jarvis-fitness-yanis-emilie-ap
+  au 02/10/2026). Jamais main. Jamais de reset --hard.
 
 ------------------------------------------------------------
 5. LOT 2 — CE QUI ATTEND TON VERDICT
@@ -163,11 +171,12 @@ Fessiers/quadriceps, biceps/avant-bras : 0 pixel modifié hors zone ; saturation
 - Le bac à sable se réinitialise (venv et métadonnées git) : recréer l'environnement
   (python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install pillow numpy) et refaire un git fetch.
 - Récupérer les bases d'archive par leur SHA (le fetch par nom échoue sur ce remote) :
-    git fetch origin 3cbb3e5:refs/remotes/base/passation      # 25 GIF livrés + les 4 docs de passation
+    git fetch origin 3c163a6:refs/remotes/base/passation      # 02/10/2026 : arbre complet du chantier visuels
+    git fetch origin 3cbb3e5:refs/remotes/base/passation-old   # 01/10/2026 : 25 GIF livrés + les 4 docs
     git fetch origin c685298:refs/remotes/base/lots-complets  # base complète (391 GIF, tous les lots)
   Ces réfs ne doivent JAMAIS être écrasées.
 - Après réinitialisation, ne jamais faire reset --hard : vérifier git status, puis au besoin
-  git reset --mixed origin/arena/01a0edb7-jarvis-fitness-yanis-emilie-ap et restaurer les fichiers suivis
+  git reset --mixed origin/arena/01a0fae1-jarvis-fitness-yanis-emilie-ap et restaurer les fichiers suivis
   (git checkout -- .), en préservant les fichiers non suivis.
 - Outils disponibles :
     evolution/media/tools/prototype-hd-44.py et prototype-hd-44-vert260.py (prototype 44)
