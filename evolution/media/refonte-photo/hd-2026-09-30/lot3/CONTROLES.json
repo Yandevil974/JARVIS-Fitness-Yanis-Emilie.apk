@@ -1,0 +1,2172 @@
+{
+ "date": "2026-10-02",
+ "lot": 3,
+ "numeros": [
+  387,
+  388,
+  264,
+  14
+ ],
+ "methode": "identique au prototype n°44, au lot 1 et au lot 2 validés",
+ "decisions_utilisateur": {
+  "format": "webp animé",
+  "hauteur_px": 660,
+  "vert": "famille du n°260",
+  "sources": "natives, sans agrandissement"
+ },
+ "generation_images": 0,
+ "recoloration": "oui, déterministe (aucun modèle)",
+ "gif_livres_modifies": 0,
+ "apk_reconstruit": false,
+ "proposition_non_integree": true,
+ "roi": "dérivées de la tache verte mesurée dans le GIF livré (bbox consignée, élargie de 100 %)",
+ "reference_260": {
+  "pixels": 3810,
+  "mediane_rgb": [
+   91,
+   157,
+   17
+  ],
+  "mediane_hsv": {
+   "teinte_deg": 86.3,
+   "saturation": 0.914,
+   "valeur": 0.616
+  },
+  "percentiles_saturation": [
+   0.627,
+   0.914,
+   0.968
+  ],
+  "percentiles_valeur": [
+   0.325,
+   0.616,
+   0.91
+  ],
+  "nuances_distinctes": 6,
+  "part_teinte_dominante": 0.31,
+  "teintes_principales": [
+   [
+    52,
+    83,
+    17
+   ],
+   [
+    91,
+    157,
+    5
+   ],
+   [
+    112,
+    182,
+    12
+   ],
+   [
+    139,
+    232,
+    20
+   ],
+   [
+    85,
+    118,
+    44
+   ]
+  ]
+ },
+ "numeros_detail": {
+  "387": {
+   "cle": "talons-fesses|homme",
+   "note": "caisse = fenetre recalee sur le GIF livre ; vert sur l’arriere de la cuisse",
+   "sources": [
+    {
+     "fichier": "planches/lot55/talons-fesses.png",
+     "ref_git": "c685298",
+     "taille": [
+      798,
+      1334
+     ],
+     "sha256": "0cb979dd5ad7f8f594d3c96c48b16387d1ce28e81c0b3f96f99257879803357c"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      391,
+      1334
+     ],
+     "bbox_vert_gif_livre": [
+      82,
+      221,
+      96,
+      257
+     ],
+     "roi_native": [
+      206,
+      561,
+      333,
+      888
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 3414,
+     "pixels_silhouette": 3957
+    },
+    {
+     "caisse_native": [
+      398,
+      0,
+      789,
+      1334
+     ],
+     "bbox_vert_gif_livre": [
+      42,
+      223,
+      66,
+      281
+     ],
+     "roi_native": [
+      453,
+      500,
+      671,
+      1028
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 10805,
+     "pixels_silhouette": 12481
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/387-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "7029c88524d32b19b9654ec42500ab43892a5814614db33e0611078d096cdb41",
+     "poids_ko": 42,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      193,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 41950,
+       "erreur_moyenne": 1.83,
+       "erreur_max": 13,
+       "psnr_db": 41.49
+      },
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 42813,
+       "erreur_moyenne": 1.94,
+       "erreur_max": 20,
+       "psnr_db": 40.41
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/387-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "41c0dbe5294affe23e3e0b57ddded554b1643128fc98e6ab9228459b63efaed5",
+     "poids_ko": 120,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      193,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 255,
+       "erreur_moyenne": 3.21,
+       "erreur_max": 46,
+       "psnr_db": 35.05
+      },
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 4.15,
+       "erreur_max": 48,
+       "psnr_db": 32.08
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.383,
+     0.632,
+     0.825
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.408,
+     0.635,
+     0.898
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 90.9,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 3414,
+     "mediane_rgb": [
+      134,
+      193,
+      57
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.4,
+      "saturation": 0.69,
+      "valeur": 0.759
+     },
+     "percentiles_saturation": [
+      0.346,
+      0.69,
+      0.849
+     ],
+     "percentiles_valeur": [
+      0.478,
+      0.759,
+      0.922
+     ],
+     "nuances_distinctes": 3307,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       151,
+       231,
+       36
+      ],
+      [
+       136,
+       167,
+       66
+      ],
+      [
+       180,
+       241,
+       58
+      ],
+      [
+       171,
+       234,
+       50
+      ],
+      [
+       167,
+       221,
+       64
+      ]
+     ]
+    },
+    {
+     "pixels": 10805,
+     "mediane_rgb": [
+      104,
+      157,
+      59
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 92.0,
+      "saturation": 0.62,
+      "valeur": 0.616
+     },
+     "percentiles_saturation": [
+      0.394,
+      0.62,
+      0.792
+     ],
+     "percentiles_valeur": [
+      0.392,
+      0.616,
+      0.882
+     ],
+     "nuances_distinctes": 9982,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       170,
+       222,
+       129
+      ],
+      [
+       171,
+       222,
+       129
+      ],
+      [
+       91,
+       147,
+       36
+      ],
+      [
+       172,
+       223,
+       130
+      ],
+      [
+       84,
+       131,
+       33
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 3414,
+     "mediane_rgb": [
+      122,
+      192,
+      14
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.1,
+      "saturation": 0.93,
+      "valeur": 0.755
+     },
+     "percentiles_saturation": [
+      0.495,
+      0.93,
+      0.974
+     ],
+     "percentiles_valeur": [
+      0.439,
+      0.755,
+      0.937
+     ],
+     "nuances_distinctes": 3061,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       143,
+       228,
+       6
+      ],
+      [
+       144,
+       229,
+       6
+      ],
+      [
+       140,
+       226,
+       7
+      ],
+      [
+       128,
+       210,
+       16
+      ],
+      [
+       137,
+       222,
+       8
+      ]
+     ]
+    },
+    {
+     "pixels": 10805,
+     "mediane_rgb": [
+      91,
+      151,
+      17
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.9,
+      "saturation": 0.882,
+      "valeur": 0.592
+     },
+     "percentiles_saturation": [
+      0.6,
+      0.882,
+      0.955
+     ],
+     "percentiles_valeur": [
+      0.322,
+      0.592,
+      0.894
+     ],
+     "nuances_distinctes": 8902,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       71,
+       117,
+       6
+      ],
+      [
+       74,
+       121,
+       6
+      ],
+      [
+       95,
+       158,
+       11
+      ],
+      [
+       89,
+       147,
+       10
+      ],
+      [
+       82,
+       140,
+       8
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 259,
+     "largeur_transition_avant_px": 6.26,
+     "largeur_transition_apres_px": 6.03
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 828,
+     "largeur_transition_avant_px": 5.52,
+     "largeur_transition_apres_px": 5.2
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 517637,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 509298,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/talons-fesses-homme.gif",
+    "sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+    "taille": [
+     129,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 64,
+    "phases": [
+     {
+      "pixels": 395,
+      "mediane_rgb": [
+       164,
+       227,
+       79
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 85.5,
+       "saturation": 0.652,
+       "valeur": 0.89
+      },
+      "percentiles_saturation": [
+       0.35,
+       0.652,
+       0.652
+      ],
+      "percentiles_valeur": [
+       0.718,
+       0.89,
+       0.89
+      ],
+      "nuances_distinctes": 3,
+      "part_teinte_dominante": 0.858,
+      "teintes_principales": [
+       [
+        164,
+        227,
+        79
+       ],
+       [
+        154,
+        183,
+        119
+       ],
+       [
+        138,
+        202,
+        171
+       ]
+      ]
+     },
+     {
+      "pixels": 1116,
+      "mediane_rgb": [
+       95,
+       150,
+       58
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 92.5,
+       "saturation": 0.611,
+       "valeur": 0.588
+      },
+      "percentiles_saturation": [
+       0.288,
+       0.611,
+       0.713
+      ],
+      "percentiles_valeur": [
+       0.506,
+       0.588,
+       0.694
+      ],
+      "nuances_distinctes": 6,
+      "part_teinte_dominante": 0.379,
+      "teintes_principales": [
+       [
+        95,
+        150,
+        43
+       ],
+       [
+        117,
+        175,
+        68
+       ],
+       [
+        149,
+        177,
+        126
+       ],
+       [
+        86,
+        129,
+        58
+       ],
+       [
+        97,
+        150,
+        115
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot3/planches/LOT3-387-export-decode.png",
+    "lot3/planches/LOT3-387-avant-apres-natif.png",
+    "lot3/planches/LOT3-387-taille-application.png"
+   ]
+  },
+  "388": {
+   "cle": "talons-fesses-effort|homme",
+   "note": "MEME source et MEME GIF livre que le n°387 (sha256 identiques) : export identique, c’est attendu",
+   "sources": [
+    {
+     "fichier": "planches/lot55/talons-fesses.png",
+     "ref_git": "c685298",
+     "taille": [
+      798,
+      1334
+     ],
+     "sha256": "0cb979dd5ad7f8f594d3c96c48b16387d1ce28e81c0b3f96f99257879803357c"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      391,
+      1334
+     ],
+     "bbox_vert_gif_livre": [
+      82,
+      221,
+      96,
+      257
+     ],
+     "roi_native": [
+      206,
+      561,
+      333,
+      888
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 3414,
+     "pixels_silhouette": 3957
+    },
+    {
+     "caisse_native": [
+      398,
+      0,
+      789,
+      1334
+     ],
+     "bbox_vert_gif_livre": [
+      42,
+      223,
+      66,
+      281
+     ],
+     "roi_native": [
+      453,
+      500,
+      671,
+      1028
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 10805,
+     "pixels_silhouette": 12481
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/388-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "7029c88524d32b19b9654ec42500ab43892a5814614db33e0611078d096cdb41",
+     "poids_ko": 42,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      193,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 41950,
+       "erreur_moyenne": 1.83,
+       "erreur_max": 13,
+       "psnr_db": 41.49
+      },
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 42813,
+       "erreur_moyenne": 1.94,
+       "erreur_max": 20,
+       "psnr_db": 40.41
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/388-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "41c0dbe5294affe23e3e0b57ddded554b1643128fc98e6ab9228459b63efaed5",
+     "poids_ko": 120,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      193,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 255,
+       "erreur_moyenne": 3.21,
+       "erreur_max": 46,
+       "psnr_db": 35.05
+      },
+      {
+       "taille": [
+        193,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 4.15,
+       "erreur_max": 48,
+       "psnr_db": 32.08
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.383,
+     0.632,
+     0.825
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.408,
+     0.635,
+     0.898
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 90.9,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 3414,
+     "mediane_rgb": [
+      134,
+      193,
+      57
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.4,
+      "saturation": 0.69,
+      "valeur": 0.759
+     },
+     "percentiles_saturation": [
+      0.346,
+      0.69,
+      0.849
+     ],
+     "percentiles_valeur": [
+      0.478,
+      0.759,
+      0.922
+     ],
+     "nuances_distinctes": 3307,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       151,
+       231,
+       36
+      ],
+      [
+       136,
+       167,
+       66
+      ],
+      [
+       180,
+       241,
+       58
+      ],
+      [
+       171,
+       234,
+       50
+      ],
+      [
+       167,
+       221,
+       64
+      ]
+     ]
+    },
+    {
+     "pixels": 10805,
+     "mediane_rgb": [
+      104,
+      157,
+      59
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 92.0,
+      "saturation": 0.62,
+      "valeur": 0.616
+     },
+     "percentiles_saturation": [
+      0.394,
+      0.62,
+      0.792
+     ],
+     "percentiles_valeur": [
+      0.392,
+      0.616,
+      0.882
+     ],
+     "nuances_distinctes": 9982,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       170,
+       222,
+       129
+      ],
+      [
+       171,
+       222,
+       129
+      ],
+      [
+       91,
+       147,
+       36
+      ],
+      [
+       172,
+       223,
+       130
+      ],
+      [
+       84,
+       131,
+       33
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 3414,
+     "mediane_rgb": [
+      122,
+      192,
+      14
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.1,
+      "saturation": 0.93,
+      "valeur": 0.755
+     },
+     "percentiles_saturation": [
+      0.495,
+      0.93,
+      0.974
+     ],
+     "percentiles_valeur": [
+      0.439,
+      0.755,
+      0.937
+     ],
+     "nuances_distinctes": 3061,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       143,
+       228,
+       6
+      ],
+      [
+       144,
+       229,
+       6
+      ],
+      [
+       140,
+       226,
+       7
+      ],
+      [
+       128,
+       210,
+       16
+      ],
+      [
+       137,
+       222,
+       8
+      ]
+     ]
+    },
+    {
+     "pixels": 10805,
+     "mediane_rgb": [
+      91,
+      151,
+      17
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.9,
+      "saturation": 0.882,
+      "valeur": 0.592
+     },
+     "percentiles_saturation": [
+      0.6,
+      0.882,
+      0.955
+     ],
+     "percentiles_valeur": [
+      0.322,
+      0.592,
+      0.894
+     ],
+     "nuances_distinctes": 8902,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       71,
+       117,
+       6
+      ],
+      [
+       74,
+       121,
+       6
+      ],
+      [
+       95,
+       158,
+       11
+      ],
+      [
+       89,
+       147,
+       10
+      ],
+      [
+       82,
+       140,
+       8
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 259,
+     "largeur_transition_avant_px": 6.26,
+     "largeur_transition_apres_px": 6.03
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 828,
+     "largeur_transition_avant_px": 5.52,
+     "largeur_transition_apres_px": 5.2
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 517637,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 509298,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/talons-fesses-effort-homme.gif",
+    "sha256": "5d72daefeab297b13143ecbf203e9b626fcc435588060e1b59c6d644a8095e7f",
+    "taille": [
+     129,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 64,
+    "phases": [
+     {
+      "pixels": 395,
+      "mediane_rgb": [
+       164,
+       227,
+       79
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 85.5,
+       "saturation": 0.652,
+       "valeur": 0.89
+      },
+      "percentiles_saturation": [
+       0.35,
+       0.652,
+       0.652
+      ],
+      "percentiles_valeur": [
+       0.718,
+       0.89,
+       0.89
+      ],
+      "nuances_distinctes": 3,
+      "part_teinte_dominante": 0.858,
+      "teintes_principales": [
+       [
+        164,
+        227,
+        79
+       ],
+       [
+        154,
+        183,
+        119
+       ],
+       [
+        138,
+        202,
+        171
+       ]
+      ]
+     },
+     {
+      "pixels": 1116,
+      "mediane_rgb": [
+       95,
+       150,
+       58
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 92.5,
+       "saturation": 0.611,
+       "valeur": 0.588
+      },
+      "percentiles_saturation": [
+       0.288,
+       0.611,
+       0.713
+      ],
+      "percentiles_valeur": [
+       0.506,
+       0.588,
+       0.694
+      ],
+      "nuances_distinctes": 6,
+      "part_teinte_dominante": 0.379,
+      "teintes_principales": [
+       [
+        95,
+        150,
+        43
+       ],
+       [
+        117,
+        175,
+        68
+       ],
+       [
+        149,
+        177,
+        126
+       ],
+       [
+        86,
+        129,
+        58
+       ],
+       [
+        97,
+        150,
+        115
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot3/planches/LOT3-388-export-decode.png",
+    "lot3/planches/LOT3-388-avant-apres-natif.png",
+    "lot3/planches/LOT3-388-taille-application.png"
+   ]
+  },
+  "264": {
+   "cle": "etirement-contre-le-mur|homme",
+   "note": "source 800x1334 ; la tache verte du GIF est la plus grosse du lot (1509 px)",
+   "sources": [
+    {
+     "fichier": "planches/lot05/etirement-contre-le-mur.png",
+     "ref_git": "c685298",
+     "taille": [
+      800,
+      1334
+     ],
+     "sha256": "591848390539dd4ad606d50f8212bf0b1fd836fa3c644d7ba8069f91d612848e"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      12,
+      0,
+      391,
+      1334
+     ],
+     "bbox_vert_gif_livre": [
+      41,
+      109,
+      81,
+      157
+     ],
+     "roi_native": [
+      15,
+      185,
+      379,
+      622
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 7257,
+     "pixels_silhouette": 8104
+    },
+    {
+     "caisse_native": [
+      400,
+      0,
+      779,
+      1334
+     ],
+     "bbox_vert_gif_livre": [
+      33,
+      109,
+      82,
+      158
+     ],
+     "roi_native": [
+      400,
+      182,
+      779,
+      628
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 8333,
+     "pixels_silhouette": 9231
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/264-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "9b7a9feb785de4f52737616d7f98421e23e1074299086ee1f98985174a8b09e0",
+     "poids_ko": 39,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      188,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        188,
+        660
+       ],
+       "couleurs_uniques": 38564,
+       "erreur_moyenne": 1.79,
+       "erreur_max": 12,
+       "psnr_db": 41.67
+      },
+      {
+       "taille": [
+        188,
+        660
+       ],
+       "couleurs_uniques": 31128,
+       "erreur_moyenne": 1.77,
+       "erreur_max": 12,
+       "psnr_db": 41.71
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/264-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "a5b9fe10553096b63b5d8065a48d21e925e9abc237589934ddadd3db6eb44b2e",
+     "poids_ko": 130,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      188,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        188,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 3.07,
+       "erreur_max": 36,
+       "psnr_db": 35.38
+      },
+      {
+       "taille": [
+        188,
+        660
+       ],
+       "couleurs_uniques": 236,
+       "erreur_moyenne": 3.84,
+       "erreur_max": 31,
+       "psnr_db": 34.65
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.386,
+     0.821,
+     0.994
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.62,
+     0.886,
+     0.98
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 82.6,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 7257,
+     "mediane_rgb": [
+      155,
+      224,
+      37
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 82.4,
+      "saturation": 0.835,
+      "valeur": 0.878
+     },
+     "percentiles_saturation": [
+      0.376,
+      0.835,
+      0.994
+     ],
+     "percentiles_valeur": [
+      0.616,
+      0.878,
+      0.98
+     ],
+     "nuances_distinctes": 6139,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       159,
+       235,
+       48
+      ],
+      [
+       158,
+       233,
+       46
+      ],
+      [
+       154,
+       227,
+       35
+      ],
+      [
+       158,
+       234,
+       46
+      ],
+      [
+       158,
+       233,
+       44
+      ]
+     ]
+    },
+    {
+     "pixels": 8333,
+     "mediane_rgb": [
+      158,
+      227,
+      45
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 82.8,
+      "saturation": 0.8,
+      "valeur": 0.89
+     },
+     "percentiles_saturation": [
+      0.391,
+      0.8,
+      0.995
+     ],
+     "percentiles_valeur": [
+      0.62,
+      0.89,
+      0.976
+     ],
+     "nuances_distinctes": 7047,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       118,
+       184,
+       0
+      ],
+      [
+       117,
+       181,
+       2
+      ],
+      [
+       156,
+       228,
+       36
+      ],
+      [
+       160,
+       232,
+       45
+      ],
+      [
+       161,
+       230,
+       51
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 7257,
+     "mediane_rgb": [
+      96,
+      157,
+      13
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.1,
+      "saturation": 0.918,
+      "valeur": 0.616
+     },
+     "percentiles_saturation": [
+      0.586,
+      0.918,
+      0.969
+     ],
+     "percentiles_valeur": [
+      0.349,
+      0.616,
+      0.915
+     ],
+     "nuances_distinctes": 3982,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       85,
+       144,
+       9
+      ],
+      [
+       93,
+       156,
+       12
+      ],
+      [
+       104,
+       176,
+       15
+      ],
+      [
+       106,
+       179,
+       15
+      ],
+      [
+       86,
+       145,
+       9
+      ]
+     ]
+    },
+    {
+     "pixels": 8333,
+     "mediane_rgb": [
+      100,
+      163,
+      17
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.4,
+      "saturation": 0.898,
+      "valeur": 0.639
+     },
+     "percentiles_saturation": [
+      0.619,
+      0.898,
+      0.97
+     ],
+     "percentiles_valeur": [
+      0.357,
+      0.639,
+      0.902
+     ],
+     "nuances_distinctes": 4649,
+     "part_teinte_dominante": 0.003,
+     "teintes_principales": [
+      [
+       99,
+       166,
+       14
+      ],
+      [
+       90,
+       153,
+       11
+      ],
+      [
+       92,
+       156,
+       12
+      ],
+      [
+       91,
+       155,
+       12
+      ],
+      [
+       96,
+       163,
+       13
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 422,
+     "largeur_transition_avant_px": 4.96,
+     "largeur_transition_apres_px": 4.73
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 445,
+     "largeur_transition_avant_px": 4.94,
+     "largeur_transition_apres_px": 4.66
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 497511,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 496422,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/etirement-contre-le-mur-homme.gif",
+    "sha256": "1e6e0dd8a12b35d699a3131fcda26fbbeed3687dca1cbdf12650ff491b807747",
+    "taille": [
+     125,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 71,
+    "phases": [
+     {
+      "pixels": 1518,
+      "mediane_rgb": [
+       149,
+       200,
+       29
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 80.0,
+       "saturation": 0.808,
+       "valeur": 0.784
+      },
+      "percentiles_saturation": [
+       0.372,
+       0.808,
+       0.874
+      ],
+      "percentiles_valeur": [
+       0.435,
+       0.784,
+       0.937
+      ],
+      "nuances_distinctes": 7,
+      "part_teinte_dominante": 0.233,
+      "teintes_principales": [
+       [
+        112,
+        151,
+        29
+       ],
+       [
+        81,
+        111,
+        21
+       ],
+       [
+        149,
+        222,
+        28
+       ],
+       [
+        170,
+        234,
+        62
+       ],
+       [
+        198,
+        239,
+        150
+       ]
+      ]
+     },
+     {
+      "pixels": 784,
+      "mediane_rgb": [
+       155,
+       223,
+       41
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 82.4,
+       "saturation": 0.816,
+       "valeur": 0.875
+      },
+      "percentiles_saturation": [
+       0.387,
+       0.816,
+       0.816
+      ],
+      "percentiles_valeur": [
+       0.8,
+       0.875,
+       0.937
+      ],
+      "nuances_distinctes": 3,
+      "part_teinte_dominante": 0.652,
+      "teintes_principales": [
+       [
+        155,
+        223,
+        41
+       ],
+       [
+        177,
+        239,
+        84
+       ],
+       [
+        178,
+        204,
+        125
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot3/planches/LOT3-264-export-decode.png",
+    "lot3/planches/LOT3-264-avant-apres-natif.png",
+    "lot3/planches/LOT3-264-taille-application.png"
+   ]
+  },
+  "14": {
+   "cle": "back-squat-inertie-pause-complete|homme",
+   "note": "planche classique 1376x768, deux cases ; erreur d’alignement la plus basse du lot (4,15/255)",
+   "sources": [
+    {
+     "fichier": "planches/lot20/back-squat-inertie-pause-complete.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "3841ee6a2b39da251e6b6d1a4e333a993aeae128dbe06c6974243cad532bc1be"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      667,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      59,
+      204,
+      90,
+      234
+     ],
+     "roi_native": [
+      49,
+      304,
+      211,
+      461
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 3871,
+     "pixels_silhouette": 5499
+    },
+    {
+     "caisse_native": [
+      678,
+      0,
+      1345,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      183,
+      270,
+      224,
+      309
+     ],
+     "roi_native": [
+      926,
+      403,
+      1141,
+      607
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 4836,
+     "pixels_silhouette": 6250
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/14-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "c344bfc9f8972371961359842a072fa0853ecb5e9d84cd5dd9ed3695cacf15db",
+     "poids_ko": 99,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      573,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        573,
+        660
+       ],
+       "couleurs_uniques": 60886,
+       "erreur_moyenne": 1.72,
+       "erreur_max": 12,
+       "psnr_db": 42.04
+      },
+      {
+       "taille": [
+        573,
+        660
+       ],
+       "couleurs_uniques": 62892,
+       "erreur_moyenne": 1.68,
+       "erreur_max": 14,
+       "psnr_db": 42.18
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot3/exports/14-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "d7f9e6b6ba8a231b4bb0ea13033bea941e9421e7f33d01465a4d32c8e7736e56",
+     "poids_ko": 397,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      573,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        573,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.84,
+       "erreur_max": 47,
+       "psnr_db": 35.76
+      },
+      {
+       "taille": [
+        573,
+        660
+       ],
+       "couleurs_uniques": 252,
+       "erreur_moyenne": 4.06,
+       "erreur_max": 55,
+       "psnr_db": 32.63
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.279,
+     0.624,
+     0.994
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.412,
+     0.671,
+     0.922
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 80.4,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 3871,
+     "mediane_rgb": [
+      113,
+      156,
+      12
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.8,
+      "saturation": 0.908,
+      "valeur": 0.612
+     },
+     "percentiles_saturation": [
+      0.19,
+      0.908,
+      1.0
+     ],
+     "percentiles_valeur": [
+      0.345,
+      0.612,
+      0.824
+     ],
+     "nuances_distinctes": 3742,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       145,
+       183,
+       2
+      ],
+      [
+       100,
+       158,
+       1
+      ],
+      [
+       112,
+       148,
+       1
+      ],
+      [
+       180,
+       210,
+       181
+      ],
+      [
+       166,
+       197,
+       160
+      ]
+     ]
+    },
+    {
+     "pixels": 4836,
+     "mediane_rgb": [
+      147,
+      182,
+      71
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 79.3,
+      "saturation": 0.572,
+      "valeur": 0.714
+     },
+     "percentiles_saturation": [
+      0.375,
+      0.572,
+      0.673
+     ],
+     "percentiles_valeur": [
+      0.553,
+      0.714,
+      0.953
+     ],
+     "nuances_distinctes": 4278,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       129,
+       156,
+       53
+      ],
+      [
+       132,
+       160,
+       57
+      ],
+      [
+       143,
+       177,
+       61
+      ],
+      [
+       141,
+       174,
+       59
+      ],
+      [
+       130,
+       158,
+       54
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 3871,
+     "mediane_rgb": [
+      86,
+      142,
+      7
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 88.0,
+      "saturation": 0.947,
+      "valeur": 0.557
+     },
+     "percentiles_saturation": [
+      0.416,
+      0.947,
+      0.973
+     ],
+     "percentiles_valeur": [
+      0.278,
+      0.557,
+      0.804
+     ],
+     "nuances_distinctes": 3453,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       83,
+       132,
+       4
+      ],
+      [
+       112,
+       169,
+       5
+      ],
+      [
+       66,
+       119,
+       4
+      ],
+      [
+       110,
+       168,
+       5
+      ],
+      [
+       71,
+       103,
+       3
+      ]
+     ]
+    },
+    {
+     "pixels": 4836,
+     "mediane_rgb": [
+      115,
+      173,
+      34
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.3,
+      "saturation": 0.775,
+      "valeur": 0.678
+     },
+     "percentiles_saturation": [
+      0.564,
+      0.775,
+      0.884
+     ],
+     "percentiles_valeur": [
+      0.51,
+      0.678,
+      0.949
+     ],
+     "nuances_distinctes": 3975,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       107,
+       147,
+       30
+      ],
+      [
+       107,
+       149,
+       30
+      ],
+      [
+       109,
+       151,
+       31
+      ],
+      [
+       116,
+       172,
+       27
+      ],
+      [
+       115,
+       185,
+       21
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 525,
+     "largeur_transition_avant_px": 8.08,
+     "largeur_transition_apres_px": 7.89
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 528,
+     "largeur_transition_avant_px": 11.49,
+     "largeur_transition_apres_px": 11.45
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 506863,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 506055,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/back-squat-inertie-pause-complete-homme.gif",
+    "sha256": "43f74ddd846f79bcd654c5d7f64357cc98483d2b5dcea6d051f3dcdfde2912ac",
+    "taille": [
+     382,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 195,
+    "phases": [
+     {
+      "pixels": 1710,
+      "mediane_rgb": [
+       81,
+       110,
+       36
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 83.5,
+       "saturation": 0.673,
+       "valeur": 0.431
+      },
+      "percentiles_saturation": [
+       0.444,
+       0.673,
+       0.673
+      ],
+      "percentiles_valeur": [
+       0.431,
+       0.431,
+       0.706
+      ],
+      "nuances_distinctes": 3,
+      "part_teinte_dominante": 0.564,
+      "teintes_principales": [
+       [
+        81,
+        110,
+        36
+       ],
+       [
+        116,
+        147,
+        71
+       ],
+       [
+        148,
+        180,
+        100
+       ]
+      ]
+     },
+     {
+      "pixels": 3742,
+      "mediane_rgb": [
+       125,
+       158,
+       55
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 79.2,
+       "saturation": 0.652,
+       "valeur": 0.62
+      },
+      "percentiles_saturation": [
+       0.328,
+       0.652,
+       0.661
+      ],
+      "percentiles_valeur": [
+       0.459,
+       0.62,
+       0.741
+      ],
+      "nuances_distinctes": 4,
+      "part_teinte_dominante": 0.352,
+      "teintes_principales": [
+       [
+        125,
+        158,
+        55
+       ],
+       [
+        89,
+        117,
+        41
+       ],
+       [
+        151,
+        186,
+        63
+       ],
+       [
+        162,
+        189,
+        127
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot3/planches/LOT3-14-export-decode.png",
+    "lot3/planches/LOT3-14-avant-apres-natif.png",
+    "lot3/planches/LOT3-14-taille-application.png"
+   ]
+  }
+ }
+}
