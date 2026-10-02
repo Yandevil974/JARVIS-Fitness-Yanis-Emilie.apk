@@ -1,6 +1,16 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — tous les GIF humains, chrono compris
+## Version à installer — tous les GIF humains, chrono compris (y compris HIIT / Aqua Tabata)
+
+[Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v3.apk](downloads/Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v3.apk) — 87 763 952 octets, signature `168df81a…` (empreinte SHA-256 dans le `.sha256` joint).
+
+**Le chrono affiche le GIF humain du mouvement exact**, quelle que soit la séance : musculation,
+échauffement, étirements, piscine et aqua, cardio elliptique, et désormais les **25 mouvements
+HIIT / Aqua Tabata** (Burpees, Squats, Jumping jacks, Montées de genoux, Planche latérale,
+Russian twist, Superman, Ponts fessiers, Pompes au mur, Corde invisible, Patineurs…) — avec
+la variante femme pour Montées de genoux, Fentes alternées, Ponts fessiers et Squats.
+
+## Version précédente — deuxième passe
 
 [Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v2.apk](downloads/Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v2.apk) — 81 950 730 octets, signature `168df81a…` (empreinte SHA-256 dans le `.sha256` joint).
 
