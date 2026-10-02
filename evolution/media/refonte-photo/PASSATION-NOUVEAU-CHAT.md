@@ -645,3 +645,15 @@ Reprise, dans cet ordre :
 5. refabriquer la page de tri si besoin : `planche-tri.py <numéros> "titre"`.
 
 **Conséquence pratique** : les pages de validation se consultent **pendant le tour**, pas après.
+
+## Regroupement par planche — les numéros qui partagent une retouche
+
+Mesure faite sur les 54 candidats restants au 02/10/2026 : **54 numéros = 46 retouches distinctes seulement**, parce que plusieurs numéros partagent la même planche ET les mêmes fenêtres. Groupes de 2 et plus (une seule retouche couvre tout le groupe) :
+
+    [350, 351, 352, 353, 354]  <- planches/lot51/marche-aquatique.png
+    [337, 338, 339]            <- planches/lot51/ciseaux-mains-au-bord.png
+    [370, 371, 372]            <- planches/lot51/nage-statique-a-l-elastique.png
+
+Les 43 autres numéros sont isolés (une retouche chacun). S'y ajoutent les groupes déjà traités : [364, 365, 366] en deux lots, [340, 341, 342] et [376, 377, 378, 379].
+
+Conséquence pratique : le **lot 9 (350 à 353) est sorti identique à l'octet près au n°347 validé au lot 8** (sha256 `2c42f5b87df21152…`). Le n°354 suivra avec le même fichier. Quand un lot tombe sur un groupe déjà validé, il n'y a rien de nouveau à juger : le dire clairement plutôt que de faire revalider la même image.
