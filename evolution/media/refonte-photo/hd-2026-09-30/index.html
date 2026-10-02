@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>JARVIS Fitness — prototype n°44 : WebP 660, vert 260</title>
+<style>
+  :root { --line:#dcdfe4; --ink:#12242f; --muted:#5a6a75; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:16px 14px 60px; background:#f5f6f8; color:var(--ink);
+         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+  h1 { font-size:20px; margin:0 0 6px; }
+  h2 { font-size:16px; margin:26px 0 4px; }
+  p.lead { color:var(--muted); font-size:13px; margin:0 0 8px; }
+  .note { background:#fff8e1; border:1px solid #f0e0a8; border-radius:10px; padding:10px 12px;
+          font-size:13px; margin:12px 0; }
+  .note.vert { background:#eefbe9; border-color:#bfe6ae; }
+  /* règle réelle de l'application : .movement-visual { height:300px } */
+  .movement-visual { height:300px; display:flex; align-items:center; justify-content:center;
+                     background:#32343824; border:1px solid var(--line); border-radius:12px;
+                     overflow:hidden; }
+  .movement-visual img { height:100%; width:auto; max-width:100%; object-fit:contain; display:block; }
+  .grille { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; }
+  .carte { background:#fff; border:1px solid var(--line); border-radius:12px; padding:8px; }
+  .carte h3 { font-size:12px; margin:0 0 6px; font-weight:600; }
+  .carte .poids { font-size:11px; color:var(--muted); margin-top:6px; }
+  .zoom { overflow:auto; background:#fff; border:1px solid var(--line); border-radius:12px; padding:8px;
+          -webkit-overflow-scrolling:touch; }
+  .zoom img { display:block; }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; background:#fff; border-radius:12px; overflow:hidden; }
+  th,td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; }
+  th { background:#eef1f4; font-size:11px; text-transform:uppercase; letter-spacing:.6px; }
+  pre { background:#101c26; color:#d7e6f2; padding:12px; border-radius:10px; font-size:12px; overflow:auto; }
+  .bon { color:#0a7d4b; font-weight:700; } .mauvais { color:#b3261e; font-weight:700; }
+</style>
+</head>
+<body>
+<h1>Prototype n°44 — WebP animé 660 px, vert rapproché du 260</h1>
+<p class="lead">Réglages retenus : <strong>WebP animé</strong>, <strong>660 px de haut</strong>,
+<strong>vert rapproché du n°260</strong>. Aucun GIF livré n'a été remplacé, l'application n'est pas modifiée.</p>
+
+<div class="note">
+<strong>À faire :</strong> vérifier <strong>sur le téléphone</strong> que les deux images s'animent dans le
+bloc « affichage réel ». Le diagnostic en bas de page le dit aussi automatiquement.
+</div>
+
+<h2>1 · Affichage réel dans l'application (300 px de haut)</h2>
+<p class="lead">Même taille que <code>.movement-visual</code> dans JARVIS : à gauche ce qui est livré
+aujourd'hui, à droite le prototype.</p>
+<div class="grille">
+  <div class="carte"><h3>Livré aujourd'hui — GIF 259×440</h3>
+    <div class="movement-visual"><img id="a-livre" src="prototype-44/sources/44-livre-actuel-259x440.gif" alt="livré"></div>
+    <div class="poids">198 ko</div></div>
+  <div class="carte"><h3>Prototype — WebP 388×660 q90</h3>
+    <div class="movement-visual"><img id="a-webp" src="prototype-44-vert260/exports/44-vert260-660-webp-q90.webp" alt="prototype WebP"></div>
+    <div class="poids">98 ko</div></div>
+</div>
+
+<h2>2 · Zoom 100 % (1 pixel du fichier = 1 pixel de l'écran)</h2>
+<p class="lead">Défiler horizontalement. C'est ici que se juge la netteté du muscle et du visage.</p>
+<div class="zoom"><img id="z-webp" src="prototype-44-vert260/exports/44-vert260-660-webp-q90.webp" alt="zoom prototype" style="height:660px"></div>
+<div class="zoom" style="margin-top:10px"><img id="z-livre" src="prototype-44/sources/44-livre-actuel-259x440.gif" alt="zoom livré" style="height:440px"></div>
+
+<h2>3 · WebP contre GIF, à définition identique (660 px)</h2>
+<p class="lead">Mêmes images de travail : seule la façon de les enregistrer change. Le GIF est limité à
+256 couleurs, ce qui se voit dans le muscle (moucheté).</p>
+<div class="grille">
+  <div class="carte"><h3>WebP animé q90 — 98 ko</h3>
+    <div class="movement-visual"><img id="c-webp" src="prototype-44-vert260/exports/44-vert260-660-webp-q90.webp" alt="webp"></div></div>
+  <div class="carte"><h3>GIF 660 — 403 ko</h3>
+    <div class="movement-visual"><img id="c-gif" src="prototype-44-vert260/exports/44-vert260-660-repli.gif" alt="gif"></div></div>
+</div>
+
+<h2>4 · Le vert : avant / après (PNG de travail, zoom ×2)</h2>
+<p class="lead">Le vert est retouché <em>avant</em> l'export, dans l'image de travail : contour resserré
+et famille de couleurs du n°260, sans aplatir la texture.</p>
+<div class="grille">
+  <div class="carte"><h3>Avant — master 800×1333</h3>
+    <img src="prototype-44-vert260/planches/VERT260-phase1-avant-apres.png" style="width:100%;height:auto" alt="avant après">
+    <div class="poids">planche complète : référence 260 · avant · après</div></div>
+  <div class="carte"><h3>Après — même zone</h3>
+    <img src="prototype-44-vert260/planches/VERT260-phase2-avant-apres.png" style="width:100%;height:auto" alt="phase 2">
+    <div class="poids">phase 2 : avant / après</div></div>
+</div>
+
+<h2>5 · Diagnostic de cet appareil</h2>
+<pre id="diag">test en cours…</pre>
+
+<h2>6 · Mesures (fichiers réellement décodés)</h2>
+<table>
+  <tr><th>Réglage</th><th>Poids</th><th>Erreur hors vert</th><th>Erreur dans le vert</th><th>PSNR</th></tr>
+  <tr><td>Livré : GIF 259×440</td><td>198 ko</td><td>10,7</td><td>24,0</td><td>21,7 dB</td></tr>
+  <tr><td>Prototype : WebP q92</td><td>115 ko</td><td>1,6</td><td>1,7</td><td>42,2 dB</td></tr>
+  <tr><td><strong>Prototype : WebP q90</strong></td><td><strong>98 ko</strong></td><td>1,9</td><td>1,9</td><td>41,3 dB</td></tr>
+  <tr><td>Prototype : WebP q85</td><td>73 ko</td><td>2,2</td><td>2,3</td><td>39,5 dB</td></tr>
+  <tr><td>WebP sans perte (référence de contrôle)</td><td>612 ko</td><td>0</td><td>0</td><td>sans perte</td></tr>
+  <tr><td>GIF de repli 660 (si le WebP ne passe pas)</td><td>403 ko</td><td>2,8</td><td>2,1</td><td>37,5 dB</td></tr>
+</table>
+
+<h2>7 · Ce qu'il reste à valider</h2>
+<p class="lead">1. Le WebP <strong>s'anime-t-il</strong> sur le téléphone ?<br>
+2. Qualité d'image : <strong>q92</strong> (115 ko), <strong>q90</strong> (98 ko) ou q85 (73 ko) ?<br>
+3. Le vert vous convient-il tel quel (contour resserré, famille 260) ?</p>
+
+<script>
+const cibles = ['a-livre','a-webp','z-webp','z-livre','c-webp','c-gif'];
+function echantillon(img){
+  const c = document.createElement('canvas'); c.width = 40; c.height = 40;
+  c.getContext('2d').drawImage(img, 0, 0, 40, 40);
+  return c.getContext('2d').getImageData(0,0,40,40).data;
+}
+function different(a,b){ let d=0; for(let i=0;i<a.length;i+=4){ if(Math.abs(a[i]-b[i])>6) d++; } return d; }
+const lignes = [];
+lignes.push('navigateur : ' + navigator.userAgent);
+lignes.push('devicePixelRatio : ' + (window.devicePixelRatio||1));
+lignes.push('WebP : ' + (document.createElement('canvas').toDataURL('image/webp').indexOf('image/webp')===0 ? 'oui' : 'non'));
+let restants = cibles.length;
+cibles.forEach(id => {
+  const img = document.getElementById(id);
+  if (!img) { return; }
+  const nom = id.replace(/^[azc]-/,'');
+  const fini = (texte) => { lignes.push(nom + ' : ' + texte); if(--restants<=0){ document.getElementById('diag').textContent = lignes.join('\n'); } };
+  img.addEventListener('error', () => fini('ÉCHEC D’AFFICHAGE ❌'));
+  const depart = () => {
+    const a = echantillon(img);
+    setTimeout(() => {
+      const b = echantillon(img);
+      const px = different(a,b);
+      fini('affiché ' + img.naturalWidth + '×' + img.naturalHeight + ' — animation : ' +
+           (px > 0 ? 'OUI ✅ (' + px + ' pixels changés)' : 'non / figée ❌'));
+    }, 1100);
+  };
+  if (img.complete && img.naturalWidth) depart(); else img.addEventListener('load', depart);
+});
+</script>
+</body>
+</html>

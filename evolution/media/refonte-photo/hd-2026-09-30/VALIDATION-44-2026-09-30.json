@@ -1,0 +1,85 @@
+{
+ "date": "2026-09-30",
+ "numero": 44,
+ "cle": "curl-scott-haltere-neutre|homme",
+ "accord_utilisateur": {
+  "texte": "message utilisateur : lien brut du fichier 44-vert260-660-webp-q90.webp + « validé »",
+  "fichier_cite": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-q90.webp",
+  "commit_cite": "7bbaca5"
+ },
+ "fichier_valide": {
+  "chemin": "evolution/media/refonte-photo/hd-2026-09-30/prototype-44-vert260/exports/44-vert260-660-webp-q90.webp",
+  "sha256": "0ecbbd679668154303d0c33090c7fc48b086a7ae82460f6ac284205a6e642618",
+  "poids_ko": 98,
+  "taille": [
+   388,
+   660
+  ],
+  "images": 2,
+  "durees_ms": [
+   500,
+   500
+  ]
+ },
+ "reglages_valides": {
+  "format": "webp animé",
+  "qualite": 90,
+  "hauteur_px": 660,
+  "vert": "rapproché du 260 (contour resserré, correspondance de percentiles)",
+  "cadrage": "identique au GIF livré (fenêtre 259/264)"
+ },
+ "fichier_de_secours": {
+  "chemin": "…/44-vert260-660-repli.gif",
+  "sha256": "847bbcb2d383c859b1b39a1f345fbee8e825f92239d4c0eb3cef81b17f0232ff",
+  "poids_ko": 403,
+  "note": "GIF 256 couleurs : moucheté dans le vert, à n’utiliser que si la WebView refuse le WebP"
+ },
+ "controles_du_prototype": {
+  "pixels_modifies_hors_zone_verte": 0,
+  "pixels_hors_zone_verifies": [
+   1045768,
+   1052290
+  ],
+  "saturation_obtenue": [
+   0.894,
+   0.925
+  ],
+  "saturation_reference_260": 0.914,
+  "valeur_obtenue": [
+   0.612,
+   0.651
+  ],
+  "valeur_reference_260": 0.616,
+  "nuances_conservees": [
+   11137,
+   9657
+  ],
+  "transition_contour_px": {
+   "avant": [
+    13.02,
+    8.17
+   ],
+   "apres": [
+    8.51,
+    5.48
+   ]
+  }
+ },
+ "portee": {
+  "couvert": [
+   44
+  ],
+  "non_couvert": {
+   "45": "même démonstration que 44 : accord explicite séparé à demander",
+   "48": "à reprendre (raccord muscle/coussin)",
+   "autres": "373 non traités"
+  },
+  "gif_livres_remplaces": 0,
+  "apk_reconstruit": false,
+  "note": "La validation porte sur le rendu et le compromis netteté/poids. Le remplacement du média livré 44 exige un accord séparé + un test de lecture WebP dans la WebView de l’application."
+ },
+ "outils_reproductibles": [
+  "evolution/media/tools/prototype-hd-44-vert260.py",
+  "evolution/media/tools/prototype-hd-44.py"
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "date": "2026-10-01",
+ "lot": 1,
+ "numeros": [
+  45,
+  48,
+  19,
+  85
+ ],
+ "reponse_utilisateur": "C'est bon",
+ "contexte": "Après publication de la page de validation lot1/valider.html (WebP animé 660 q90 + GIF de repli, servie sur le port 8080), suite au « Y » du tour précédent.",
+ "fichier_valides": [
+  {
+   "numero": 45,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/45-vert260-660-webp-q90.webp",
+   "sha256": "0ecbbd679668154303d0c33090c7fc48b086a7ae82460f6ac284205a6e642618",
+   "taille": [
+    388,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 98
+  },
+  {
+   "numero": 45,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/45-vert260-660-repli.gif",
+   "sha256": "847bbcb2d383c859b1b39a1f345fbee8e825f92239d4c0eb3cef81b17f0232ff",
+   "taille": [
+    388,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 403
+  },
+  {
+   "numero": 48,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/48-vert260-660-webp-q90.webp",
+   "sha256": "760d7f2b9caa2dae0cceaf8ec62fd6963f2bc512fe2d64a5102154c7797c99f3",
+   "taille": [
+    396,
+    660
+   ],
+   "images": 4,
+   "poids_ko": 157
+  },
+  {
+   "numero": 48,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/48-vert260-660-repli.gif",
+   "sha256": "fafaa646f23dd0d46400c1ef096d782c57b2ae80db747fe336028e0f90ae23a4",
+   "taille": [
+    396,
+    660
+   ],
+   "images": 4,
+   "poids_ko": 762
+  },
+  {
+   "numero": 19,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/19-vert260-660-webp-q90.webp",
+   "sha256": "fce01231559fa5e73b7295c676bf58651b383e6d37777a94a0fbe60447c9d636",
+   "taille": [
+    572,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 80
+  },
+  {
+   "numero": 19,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/19-vert260-660-repli.gif",
+   "sha256": "baf2d8590660fc970d866103169571a0382ca6ceacaf55559ed725cbd848a2eb",
+   "taille": [
+    572,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 392
+  },
+  {
+   "numero": 85,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/85-vert260-660-webp-q90.webp",
+   "sha256": "89adcd10c03f674dfe420ca32c03e9955d08e3eec29c719cbfc2e30e9fb8e51c",
+   "taille": [
+    1182,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 200
+  },
+  {
+   "numero": 85,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot1/exports/85-vert260-660-repli.gif",
+   "sha256": "8f4f4491bc6c575d14412a8b30603cd0b88f435205da0b9cae8ccfa4585814b7",
+   "taille": [
+    1182,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 842
+  }
+ ],
+ "portee": "Les 4 propositions du lot 1, telles quelles (fichiers identifiés par leur empreinte ci-dessus). Le n°44 reste couvert par sa propre validation du 30/09 (VALIDATION-44-2026-09-30.json).",
+ "non_couvert": "Aucune intégration dans l'application : les GIF livrés ne sont pas remplacés, l'APK n'est pas reconstruit, le format WebP de l'app n'est pas adopté (il faudra un accord et le test WebView sur le téléphone).",
+ "methode": "evolution/media/tools/retouche-lot1-vert260.py — retouche déterministe depuis les sources natives, 0 image générée, 0 GIF livré remplacé",
+ "regle": "proposition ≠ validation ≠ intégration"
+}
