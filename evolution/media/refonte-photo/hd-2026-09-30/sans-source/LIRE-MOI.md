@@ -13,9 +13,10 @@ nécessaire ici est donc de **1,5** — modéré, ce n'est pas un ×3.
 
 ## Ce que contient le PDF
 
-`EXEMPLE-AGRANDISSEMENT-34-FEMME.pdf` (5 pages, 1,9 Mo) montre deux numéros (233 aqua-jogging
-et 274 gainage vertical) traités de trois façons, en vue d'ensemble **et en zoom ×3 sur les
-pixels réels** :
+`EXEMPLE-AGRANDISSEMENT-34-FEMME.pdf` (7 pages, 2,1 Mo) montre deux numéros (233 aqua-jogging
+et 274 gainage vertical) traités de trois façons. **Pas de zoom** : l'original est laissé tel quel
+et les quatre cases sont affichées **à la même taille**, celle de l'application — seule la densité
+de pixels change. Chaque image du GIF a sa page (les GIF ont 2 images).
 
 | | Méthode | Bruit de plat | Acuité des contours | Couleurs |
 |---|---|---|---|---|
@@ -33,7 +34,7 @@ d'agrandir.
 
 ## Comment décider
 
-Regardez le **zoom**, pas la vue d'ensemble :
+Comparez chaque variante **à l'original posé juste à côté**, du même coup d'œil :
 
 1. Le bord de la silhouette : franc, ou mou ?
 2. La peau et l'eau : reste-t-il des petits points de tramage ?

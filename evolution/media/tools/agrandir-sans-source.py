@@ -227,7 +227,7 @@ def main():
             "livré. Le seul départ est donc ce GIF. La consigne du chantier interdit d'agrandir un "
             "GIF pixelisé — mais vous autorisez l'agrandissement si le résultat reste bon. "
             "Comme je n'ai pas de vision dans cette session, <b>c'est votre œil qui tranche</b> : "
-            "ce document montre le même visuel traité de trois façons, en grand et en zoom.",
+            "ce document montre le même visuel traité de trois façons, à la taille où vous le voyez dans l'application, l'original restant tel quel.",
             s["corps"]),
         Paragraph("Ce que mesurent les chiffres", s["titre2"]),
         Paragraph(
@@ -285,71 +285,73 @@ def main():
                 "la seconde est traitée exactement de la même façon.", s["corps"]),
         ]
 
-        # comparatif plein cadre : original + les 3 variantes
-        imgs, leg = [], []
-        orig = src  # tel qu'il est aujourd'hui
+        # comparatif : une grille 2×2 par image du GIF, à la taille où l'utilisateur
+        # la verra dans l'application. Pas de zoom : l'original reste tel quel, et
+        # toutes les cases sont affichées à la même taille — seule la densité change.
         for nom, titre, desc, fn in VARIANTES:
-            out, duree = fn(src)
-            m = dict(bruit_plat=round(bruit_plat(out), 2), acuite=round(acuite(out), 2),
-                     couleurs=couleurs(out), secondes=round(duree, 2))
-            bloc["variantes"][nom] = dict(titre=titre, description=desc, **m)
-            imgs.append((nom, out))
-        m0 = dict(bruit_plat=round(bruit_plat(orig), 2), acuite=None,
-                  couleurs=couleurs(orig))
-        bloc["original"] = m0
+            r = [fn(f) for f in frames]
+            bloc["variantes"][nom] = dict(
+                titre=titre, description=desc,
+                bruit_plat=round(bruit_plat(r[0][0]), 2),
+                acuite=round(acuite(r[0][0]), 2),
+                couleurs=couleurs(r[0][0]),
+                secondes=round(sum(x[1] for x in r) / len(r), 2))
+        bloc["original"] = dict(bruit_plat=round(bruit_plat(frames[0]), 2),
+                                acuite=None, couleurs=couleurs(frames[0]))
 
-        # bandeau : original + 3 variantes, à la même largeur
-        ncol = 4
-        cw = W / ncol - 4
-        cells = []
-        p = _save(orig, CACHE / f"vignette-{numero}-orig.jpg", jpeg=True)
-        p = pathlib.Path(p)
-        cells.append(RLImage(str(p), width=cw, height=cw * h0 / w0))
-        for nom, out in imgs:
-            p = pathlib.Path(_save(out, CACHE / f"vignette-{numero}-{nom}.jpg", jpeg=True))
-            cells.append(RLImage(str(p), width=cw, height=cw * out.size[1] / out.size[0]))
-        entetes = ["GIF livré<br/>(départ)"] + [
-            f"<b>{nom}</b><br/>{t}" for nom, t, _, _ in VARIANTES]
-        tale = Table([[Paragraph(h, s["petit"]) for h in entetes], cells],
-                     colWidths=[W / ncol] * ncol)
-        tale.setStyle(TableStyle([
-            ("GRID", (0, 0), (-1, -1), 0.3, colors.HexColor("#9aa4b2")),
-            ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("ALIGN", (0, 0), (-1, -1), "CENTER"),
-            ("LEFTPADDING", (0, 0), (-1, -1), 2), ("RIGHTPADDING", (0, 0), (-1, -1), 2),
-        ]))
-        story += [tale, Spacer(1, 5)]
+        LIBELLES = [
+            "GIF livré<br/><b>tel quel</b> (départ)",
+            "<b>A</b> — agrandissement simple",
+            "<b>B</b> — sur-échantillonnage",
+            "<b>C</b> — anti-bruit + netteté",
+        ]
+        cw = W / 2 - 6
 
-        # zoom sur la zone la plus détaillée, pixels réels (aucun lissage)
-        box = fenetre_detail(src)
-        def zoom(img, facteur=3):
-            hr = HAUTEUR / h0 if img is not orig else 1.0
-            b = [round(v * hr) for v in box]
-            c = img.crop((b[0], b[1], min(b[2], img.size[0]), min(b[3], img.size[1])))
-            return c.resize((c.size[0] * facteur, c.size[1] * facteur), Image.NEAREST)
+        def cellule(label, img, k):
+            chemin = pathlib.Path(_save(img, CACHE / f"c{numero}-{k}.jpg", jpeg=True))
+            t = Table(
+                [[Paragraph(label, s["petit"])],
+                 [RLImage(str(chemin), width=cw, height=cw * img.size[1] / img.size[0])]],
+                colWidths=[cw])
+            t.setStyle(TableStyle([
+                ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 2),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 2),
+                ("TOPPADDING", (0, 0), (-1, -1), 2),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
+                ("BOX", (0, 0), (-1, -1), 0.3, colors.HexColor("#9aa4b2")),
+            ]))
+            return t
 
-        cells = [RLImage(str(_save(zoom(orig), CACHE / f"zoom-{numero}-orig.png")),
-                         width=W / 4 - 4, height=(W / 4 - 4))]
-        for nom, out in imgs:
-            cells.append(RLImage(str(_save(zoom(out), CACHE / f"zoom-{numero}-{nom}.png")),
-                                 width=W / 4 - 4, height=(W / 4 - 4)))
-        tale = Table([[Paragraph(h, s["petit"]) for h in entetes], cells],
-                     colWidths=[W / 4] * 4)
-        tale.setStyle(TableStyle([
-            ("GRID", (0, 0), (-1, -1), 0.3, colors.HexColor("#9aa4b2")),
-            ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("ALIGN", (0, 0), (-1, -1), "CENTER"),
-            ("LEFTPADDING", (0, 0), (-1, -1), 2), ("RIGHTPADDING", (0, 0), (-1, -1), 2),
-        ]))
-        story += [Paragraph(
-            "Zoom ×3 sur la zone la plus détaillée, <b>pixels réels</b> (aucun lissage ajouté) : "
-            "c'est ici que se voient le tramage et les marches d'escalier.", s["corps"]),
-            tale, Spacer(1, 6)]
+        for i in range(len(frames)):
+            images = [frames[i]] + [fn(frames[i])[0] for _, _, _, fn in VARIANTES]
+            grille = [[cellule(LIBELLES[0], images[0], f"{i}-0"),
+                       cellule(LIBELLES[1], images[1], f"{i}-1")],
+                      [cellule(LIBELLES[2], images[2], f"{i}-2"),
+                       cellule(LIBELLES[3], images[3], f"{i}-3")]]
+            tale = Table(grille, colWidths=[W / 2, W / 2])
+            tale.setStyle(TableStyle([
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 3),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 3),
+            ]))
+            story += [
+                Paragraph(
+                    f"Image {i + 1} sur {len(frames)} — les quatre cases sont affichées à la "
+                    "même taille, celle que vous voyez dans l'application. Seule la densité "
+                    "de pixels change. L'original est laissé tel quel.", s["petit"]),
+                tale, Spacer(1, 6),
+            ]
+            if i == 0 and len(frames) > 1:
+                story.append(PageBreak())
 
         # tableau des chiffres
         lig = [["", "bruit de plat", "acuité des contours", "couleurs", "durée / image"]]
-        lig.append(["GIF livré (départ, 440 px)", f"{m0['bruit_plat']:.2f}",
-                    "— autre échelle", f"{m0['couleurs']}", "—"])
+        o = bloc["original"]
+        lig.append(["GIF livré (départ, 440 px)", f"{o['bruit_plat']:.2f}",
+                    "— autre échelle", f"{o['couleurs']}", "—"])
         for nom, _, _, _ in VARIANTES:
             v = bloc["variantes"][nom]
             lig.append([f"{nom} — {v['titre']}", f"{v['bruit_plat']:.2f}", f"{v['acuite']:.1f}",
@@ -363,7 +365,7 @@ def main():
             ("BACKGROUND", (0, 1), (-1, 1), colors.HexColor("#f4e7d4")),
             ("ALIGN", (1, 0), (-1, -1), "CENTER"),
         ]))
-        story += [tb, PageBreak()]
+        story += [tb]
         mesures["exemples"].append(bloc)
 
     # ---- dernière page : comment décider
@@ -379,12 +381,14 @@ def main():
             "nets : C réduit le bruit de plat d'environ un tiers tout en gardant des contours plus "
             "francs que A et B. Mais un chiffre ne remplace pas un œil — c'est le zoom qu'il faut "
             "regarder.", s["corps"]),
-        Paragraph("Ce qu'il faut regarder dans le zoom", s["titre2"]),
+        Paragraph("Ce qu'il faut regarder", s["titre2"]),
         Paragraph(
             "1. Le bord de la silhouette : est-il encore franc, ou bien mou ? "
             "2. La peau et l'eau : y a-t-il encore des petits points (tramage) ? "
-            "3. Les doigts et le visage : les détails tiennent-ils à l'agrandissement ? "
-            "4. Le vert, quand il y en a (n°233) : reste-t-il net et bien posé ?", s["corps"]),
+            "3. Les doigts et le visage : les détails tiennent-ils ? "
+            "4. Le vert, quand il y en a (n°233) : reste-t-il net et bien posé ? "
+            "5. Comparez l'original et la variante du même coup d'œil : c'est cet écart-là "
+            "qui compte, pas le résultat pris seul.", s["corps"]),
         Paragraph("Et si aucune variante ne va ?", s["titre2"]),
         Paragraph(
             "L'autre voie que vous avez ouverte est la <b>création d'un PNG</b> : refaire le visuel "
@@ -417,9 +421,9 @@ def main():
 
 
 def _save(img, chemin, jpeg=False):
-    """JPEG q92 pour les vues d'ensemble (poids du PDF), PNG sans perte pour les zooms."""
+    """JPEG q94 : sans zoom, le poids du PDF reste raisonnable à cette qualité."""
     if jpeg:
-        img.save(chemin, "JPEG", quality=92, subsampling=0)
+        img.save(chemin, "JPEG", quality=94, subsampling=0)
     else:
         img.save(chemin)
     return chemin
