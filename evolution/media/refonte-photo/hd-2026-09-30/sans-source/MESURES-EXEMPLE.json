@@ -1,0 +1,96 @@
+{
+ "exemples": [
+  {
+   "numero": 233,
+   "cle": "aqua-jogging",
+   "source": "423×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "variantes": {
+    "A": {
+     "titre": "Agrandissement simple",
+     "description": "Lanczos 440 → 660, sans rien d'autre.",
+     "bruit_plat": 0.78,
+     "acuite": 178.16,
+     "couleurs": 46473,
+     "secondes": 0.01
+    },
+    "B": {
+     "titre": "Sur-échantillonnage",
+     "description": "Lanczos 440 → 880, puis retour Lanczos à 660. Le passage par le double lisse les marches d'escalier.",
+     "bruit_plat": 0.78,
+     "acuite": 178.8,
+     "couleurs": 48452,
+     "secondes": 0.03
+    },
+    "C": {
+     "titre": "Anti-bruit + sur-échantillonnage + netteté",
+     "description": "Retrait du tramage GIF (256 couleurs) puis sur-échantillonnage, puis netteté légère.",
+     "bruit_plat": 0.58,
+     "acuite": 200.76,
+     "couleurs": 79950,
+     "secondes": 0.35
+    }
+   },
+   "original": {
+    "bruit_plat": 0.91,
+    "acuite": null,
+    "couleurs": 256
+   }
+  },
+  {
+   "numero": 274,
+   "cle": "gainage-vertical",
+   "source": "416×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "variantes": {
+    "A": {
+     "titre": "Agrandissement simple",
+     "description": "Lanczos 440 → 660, sans rien d'autre.",
+     "bruit_plat": 0.73,
+     "acuite": 176.24,
+     "couleurs": 46048,
+     "secondes": 0.0
+    },
+    "B": {
+     "titre": "Sur-échantillonnage",
+     "description": "Lanczos 440 → 880, puis retour Lanczos à 660. Le passage par le double lisse les marches d'escalier.",
+     "bruit_plat": 0.74,
+     "acuite": 176.92,
+     "couleurs": 47677,
+     "secondes": 0.03
+    },
+    "C": {
+     "titre": "Anti-bruit + sur-échantillonnage + netteté",
+     "description": "Retrait du tramage GIF (256 couleurs) puis sur-échantillonnage, puis netteté légère.",
+     "bruit_plat": 0.58,
+     "acuite": 205.67,
+     "couleurs": 69678,
+     "secondes": 0.34
+    }
+   },
+   "original": {
+    "bruit_plat": 0.89,
+    "acuite": null,
+    "couleurs": 256
+   }
+  }
+ ],
+ "resume": {
+  "date": "2026-10-02",
+  "numeros_sans_source": 34,
+  "hauteur_source": 440,
+  "hauteur_cible": 660,
+  "facteur": 1.5,
+  "gif_livres_modifies": 0,
+  "apk_reconstruit": false,
+  "en_attente": "choix de l'utilisateur entre A, B, C, ou création d'un PNG"
+ }
+}
