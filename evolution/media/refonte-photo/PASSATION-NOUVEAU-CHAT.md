@@ -61,6 +61,64 @@ et le dossier neuf `evolution/reglages/`.
 **Le build n'a pas été refait pour livrer** : `release/` a été restauré à `c58a207` après vérification
 (`npm run build` sert ici de contrôle, la sortie n'est pas conservée).
 
+## Chantier 2 — Les 34 visuels « femme » sans source native : VERT SEUL, PAS D'AGRANDISSEMENT
+
+**Décision utilisateur du 02/10/2026** : « N'agrandit pas. Laisse comme c'est. Juste la couleur
+verte à améliorer. » Donc, pour ces 34 numéros :
+
+- **aucun agrandissement** : travail et export à la taille exacte du GIF livré (440 px de haut,
+  2 images de 500 ms). Les 3 variantes d'agrandissement préparées (A Lanczos, B sur-échantillonnage,
+  C anti-bruit) sont **abandonnées** — la voie « création d'un PNG » n'est pas non plus retenue.
+- **seul le vert change**, ramené dans la famille du n°260 par correspondance de percentiles,
+  méthode du prototype 44 validé. `ETENDRE_VERT = False` (cœur vert franc, pas le halo).
+
+Outil : `evolution/media/tools/retouche-vert-seul.py` (importe les primitives éprouvées de
+`retouche-lot1-vert260.py`). Sorties : `hd-2026-09-30/sans-source/vert/`
+(`avant/`, `exports/`, `planches/`, `CONTROLES.json`, `valider.html` — servie port 8080).
+
+### Résultat (34 numéros = 14 fichiers uniques)
+
+| | |
+|---|---|
+| Fichiers uniques | **14** (plusieurs numéros partagent le même GIF à l'octet près) |
+| Sans vert du tout | **6 numéros** : 289, 290, 291, 298, 305, 316 — rien à améliorer |
+| Images traitées | **10** |
+| Pixels modifiés hors zone verte | **0** |
+| Taille des exports | identique à la source, 2 images de 500 ms |
+| Saturation | remontée vers **0,918** (référence 260 = **0,914**) |
+
+Deux mesures à connaître, établies en refaisant le calcul :
+
+- **La référence 260 se mesure en MÉDIANE, pas en moyenne** : à seuil 0,12 on retrouve
+  exactement les 0,914 et 86,1° de la consigne (la moyenne, elle, donne 0,691). Le seuil 0,12 est
+  aussi celui du « cœur vert franc ». Moyenne et médiane ne sont pas interchangeables.
+- **Le débordement doit se mesurer contre le halo** (score > 0,02), pas contre le seul cœur vert
+  franc : sinon le halo, une fois remonté, compte comme débordement alors que l'app le peignait.
+  Avec cette définition : **débordement = 0,00 partout** (0,45 à 0,69 avec l'ancienne définition).
+
+### Piège retrouvé : l'eau prise pour le muscle
+
+5 des 10 images ont une teinte éloignée du vert muscle (260 = 86,3°) — signalées en rouge dans
+`valider.html`, à trancher à l'œil :
+
+| n° | teinte avant | alerte |
+|---|---|---|
+| 292 | 147,5° | **très éloignée** : probablement l'eau du bassin, pas un muscle |
+| 313 | 164,7° | **très éloignée** : cyan. Et sa saturation **descend** (0,840 → 0,764) |
+| 210, 246 | 124,9° | tire vers le cyan |
+| 274, 275, 276 | 125,0° | tire vers le cyan |
+| 326 | 122,5° | tire vers le cyan |
+
+C'est le piège déjà rencontré sur les n°1/9/10 (le vert mesuré était le feuillage du décor) :
+ici l'eau du bassin peut être prise pour le muscle peint. **À valider numéro par numéro.**
+
+Les 5 autres sont franches : 224/225/257/304/306/307/308 (80,0°), 233/234/324/329 (96,2°),
+237/255/256 (83,1°), 252/253 (87,0°), 258/259/314/315 (100,3°).
+
+**En attente de votre validation.** `gif_livres_modifies : 0`, APK intact, rien d'intégré.
+
+---
+
 ---
 
 # ÉTAT AU 01/10/2026 — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`

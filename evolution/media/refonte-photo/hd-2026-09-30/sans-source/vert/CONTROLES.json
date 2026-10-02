@@ -1,0 +1,451 @@
+{
+ "date": "2026-10-02",
+ "methode": "vert seul, taille native, famille 260",
+ "agrandissement": false,
+ "hauteur_export": "taille native du GIF livré",
+ "reference_260": {
+  "saturation": 0.914,
+  "valeur": 0.714,
+  "teinte": 86.1,
+  "pixels": 840,
+  "saturation_moyenne": 0.691
+ },
+ "images": [
+  {
+   "alerte": "teinte tirant vers le cyan : vérifier que c'est bien le muscle et non l'eau.",
+   "numeros": [
+    210,
+    246
+   ],
+   "cle": "ciseaux-au-bord-effort",
+   "taille": "442×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "f8fed44ca325852f",
+   "poids_source": 208751,
+   "poids_export": 177451,
+   "empreinte_export": "da2ffd87ac18a1e830e8def606d051ca66eb30789fd3ba1db0c645d1a3af810c",
+   "export": "exports/210-vert260-442x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 0.728,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.0,
+   "manque_vert_pale": 0.272,
+   "manque_autre": 0.0,
+   "avant": {
+    "saturation": 0.425,
+    "valeur": 0.812,
+    "teinte": 124.9,
+    "saturation_moyenne": 0.469,
+    "pixels": 1993,
+    "nuances": 78
+   },
+   "apres": {
+    "saturation": 0.918,
+    "valeur": 0.714,
+    "teinte": 98.2,
+    "saturation_moyenne": 0.572,
+    "pixels": 1993,
+    "nuances": 71
+   }
+  },
+  {
+   "alerte": "",
+   "numeros": [
+    224,
+    225,
+    257,
+    304,
+    306,
+    307,
+    308
+   ],
+   "cle": "echauffement-marche-aquatique",
+   "taille": "404×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "60207d563d74fd85",
+   "poids_source": 154068,
+   "poids_export": 144097,
+   "empreinte_export": "14170349578b3fdb271b348a3b3c6f318c2ed5cd35ad3ae52fde4f67339bec49",
+   "export": "exports/224-vert260-404x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 0.918,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.0,
+   "manque_vert_pale": 0.078,
+   "manque_autre": 0.004,
+   "avant": {
+    "saturation": 0.613,
+    "valeur": 0.588,
+    "teinte": 80.0,
+    "saturation_moyenne": 0.579,
+    "pixels": 1482,
+    "nuances": 37
+   },
+   "apres": {
+    "saturation": 0.917,
+    "valeur": 0.71,
+    "teinte": 82.8,
+    "saturation_moyenne": 0.781,
+    "pixels": 1482,
+    "nuances": 15
+   }
+  },
+  {
+   "alerte": "",
+   "numeros": [
+    233,
+    234,
+    324,
+    329
+   ],
+   "cle": "aqua-jogging-effort",
+   "taille": "423×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "34bb7bcf656e8877",
+   "poids_source": 172122,
+   "poids_export": 158665,
+   "empreinte_export": "918740f6a87d568148ba12c80583ac25475e99f24a14ca280c1748fee4c7e10e",
+   "export": "exports/233-vert260-423x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 1.0,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.0,
+   "manque_vert_pale": 0.0,
+   "manque_autre": 0.0,
+   "avant": {
+    "saturation": 0.591,
+    "valeur": 0.529,
+    "teinte": 96.2,
+    "saturation_moyenne": 0.52,
+    "pixels": 2414,
+    "nuances": 99
+   },
+   "apres": {
+    "saturation": 0.918,
+    "valeur": 0.714,
+    "teinte": 82.6,
+    "saturation_moyenne": 0.689,
+    "pixels": 2414,
+    "nuances": 93
+   }
+  },
+  {
+   "alerte": "",
+   "numeros": [
+    237,
+    255,
+    256
+   ],
+   "cle": "battements-de-jambes-effort",
+   "taille": "438×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "412e719e885c20ed",
+   "poids_source": 187513,
+   "poids_export": 173032,
+   "empreinte_export": "3c4e418989edad422c6f255180d8ef8b1e818a7bd8335b296a442cb1938ef222",
+   "export": "exports/237-vert260-438x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 0.814,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.016,
+   "manque_vert_pale": 0.068,
+   "manque_autre": 0.102,
+   "avant": {
+    "saturation": 0.58,
+    "valeur": 0.616,
+    "teinte": 83.1,
+    "saturation_moyenne": 0.537,
+    "pixels": 1824,
+    "nuances": 53
+   },
+   "apres": {
+    "saturation": 0.918,
+    "valeur": 0.714,
+    "teinte": 84.8,
+    "saturation_moyenne": 0.712,
+    "pixels": 1824,
+    "nuances": 46
+   }
+  },
+  {
+   "alerte": "",
+   "numeros": [
+    252,
+    253
+   ],
+   "cle": "deplacements-lateraux-4-m-effort",
+   "taille": "441×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "0bddac76645e3de9",
+   "poids_source": 155237,
+   "poids_export": 143066,
+   "empreinte_export": "365abb508d34af16db041424ba68c5d8096790d17e408ceec912c98fdcd407cd",
+   "export": "exports/252-vert260-441x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 0.936,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.0,
+   "manque_vert_pale": 0.052,
+   "manque_autre": 0.012,
+   "avant": {
+    "saturation": 0.497,
+    "valeur": 0.624,
+    "teinte": 87.0,
+    "saturation_moyenne": 0.515,
+    "pixels": 3303,
+    "nuances": 76
+   },
+   "apres": {
+    "saturation": 0.918,
+    "valeur": 0.714,
+    "teinte": 86.3,
+    "saturation_moyenne": 0.81,
+    "pixels": 3303,
+    "nuances": 52
+   }
+  },
+  {
+   "alerte": "",
+   "numeros": [
+    258,
+    259,
+    314,
+    315
+   ],
+   "cle": "echauffement-nage-douce",
+   "taille": "441×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "3d44d275ca25d146",
+   "poids_source": 157644,
+   "poids_export": 140302,
+   "empreinte_export": "e7699039b93fdb20aa4b9ff00eb20c784cf989580b3889a270372df3f7c2d7f1",
+   "export": "exports/258-vert260-441x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 1.0,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.0,
+   "manque_vert_pale": 0.0,
+   "manque_autre": 0.0,
+   "avant": {
+    "saturation": 0.513,
+    "valeur": 0.443,
+    "teinte": 100.3,
+    "saturation_moyenne": 0.7,
+    "pixels": 938,
+    "nuances": 62
+   },
+   "apres": {
+    "saturation": 0.918,
+    "valeur": 0.714,
+    "teinte": 93.4,
+    "saturation_moyenne": 0.853,
+    "pixels": 938,
+    "nuances": 43
+   }
+  },
+  {
+   "alerte": "teinte tirant vers le cyan : vérifier que c'est bien le muscle et non l'eau.",
+   "numeros": [
+    274,
+    275,
+    276
+   ],
+   "cle": "gainage-vertical-au-bord",
+   "taille": "416×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "e4545f4946f3fc0a",
+   "poids_source": 169408,
+   "poids_export": 149314,
+   "empreinte_export": "888e26f63ae4b8d6d2c7e97ed852b12ee40aeb9e062e8f1b6823493c15407a6d",
+   "export": "exports/274-vert260-416x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 0.896,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.054,
+   "manque_vert_pale": 0.048,
+   "manque_autre": 0.002,
+   "avant": {
+    "saturation": 0.277,
+    "valeur": 0.51,
+    "teinte": 125.0,
+    "saturation_moyenne": 0.447,
+    "pixels": 643,
+    "nuances": 66
+   },
+   "apres": {
+    "saturation": 0.918,
+    "valeur": 0.714,
+    "teinte": 105.6,
+    "saturation_moyenne": 0.843,
+    "pixels": 643,
+    "nuances": 64
+   }
+  },
+  {
+   "alerte": "teinte très éloignée du vert muscle (260 = 86°) : ce que l'on mesure est probablement l'eau du bassin, pas un muscle. À regarder avant d'accepter.",
+   "numeros": [
+    292
+   ],
+   "cle": "nager-sprint-1-8",
+   "taille": "441×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "47746e12d90c5e2c",
+   "poids_source": 172656,
+   "poids_export": 160436,
+   "empreinte_export": "2f02dcceffc27db71df930da231e9320b8fe957daf9eb1fc3dd2c7f8a4bca21f",
+   "export": "exports/292-vert260-441x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 0.998,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.0,
+   "manque_vert_pale": 0.002,
+   "manque_autre": 0.0,
+   "avant": {
+    "saturation": 0.526,
+    "valeur": 0.506,
+    "teinte": 147.5,
+    "saturation_moyenne": 0.513,
+    "pixels": 1221,
+    "nuances": 76
+   },
+   "apres": {
+    "saturation": 0.917,
+    "valeur": 0.714,
+    "teinte": 116.5,
+    "saturation_moyenne": 0.756,
+    "pixels": 1221,
+    "nuances": 73
+   }
+  },
+  {
+   "alerte": "teinte très éloignée du vert muscle (260 = 86°) : ce que l'on mesure est probablement l'eau du bassin, pas un muscle. À regarder avant d'accepter.",
+   "numeros": [
+    313
+   ],
+   "cle": "retour-au-calme-mobilite",
+   "taille": "431×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "7ff5fea738f927d8",
+   "poids_source": 191710,
+   "poids_export": 177976,
+   "empreinte_export": "9701d6f5bdb746fc23a2f2578e6e1621a3dcecb76aec2fcf6b9e50c04567a4c9",
+   "export": "exports/313-vert260-431x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 1.0,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.0,
+   "manque_vert_pale": 0.0,
+   "manque_autre": 0.0,
+   "avant": {
+    "saturation": 0.84,
+    "valeur": 0.796,
+    "teinte": 164.7,
+    "saturation_moyenne": 0.798,
+    "pixels": 619,
+    "nuances": 26
+   },
+   "apres": {
+    "saturation": 0.764,
+    "valeur": 0.714,
+    "teinte": 96.0,
+    "saturation_moyenne": 0.669,
+    "pixels": 619,
+    "nuances": 25
+   }
+  },
+  {
+   "alerte": "teinte tirant vers le cyan : vérifier que c'est bien le muscle et non l'eau.",
+   "numeros": [
+    326
+   ],
+   "cle": "talons-fesses-effort",
+   "taille": "428×440",
+   "images": 2,
+   "durees": [
+    500,
+    500
+   ],
+   "empreinte_source": "4ffe4ebe811fc2a8",
+   "poids_source": 177413,
+   "poids_export": 158614,
+   "empreinte_export": "5e97ffa887ffc414b4d4904c46cdc74f6f93a829b60c05c9310e565c345f074b",
+   "export": "exports/326-vert260-428x440.gif",
+   "pixels_hors_zone_modifies": 0,
+   "couverture_peau": 0.981,
+   "debordement_vert": 0.0,
+   "manque_peau": 0.016,
+   "manque_vert_pale": 0.0,
+   "manque_autre": 0.003,
+   "avant": {
+    "saturation": 0.259,
+    "valeur": 0.506,
+    "teinte": 122.5,
+    "saturation_moyenne": 0.27,
+    "pixels": 1607,
+    "nuances": 67
+   },
+   "apres": {
+    "saturation": 0.916,
+    "valeur": 0.714,
+    "teinte": 104.2,
+    "saturation_moyenne": 0.664,
+    "pixels": 1607,
+    "nuances": 55
+   }
+  }
+ ],
+ "numeros_sans_vert": [
+  289,
+  290,
+  291,
+  298,
+  305,
+  316
+ ],
+ "resume": {
+  "numeros_total": 34,
+  "fichiers_uniques": 14,
+  "images_traitees": 10,
+  "numeros_sans_vert": 6,
+  "pixels_hors_zone_modifies": 0,
+  "agrandissement": false,
+  "gif_livres_modifies": 0,
+  "apk_reconstruit": false
+ }
+}
