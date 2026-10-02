@@ -860,3 +860,60 @@ Ne pas y toucher sans raison : chacun repond a une demande precise de l'utilisat
 3. **Brancher `couverture_peau` et `debordement_vert` sur `page-lot.py`** : ils ne
    s'affichent toujours pas dans `valider.html`, on doit lire `CONTROLES.json`.
 4. Terminer les 5 derniers numeros.
+
+---
+
+# 🚩 DRAPEAU ROUGE — FIN DE SESSION, 02/10/2026 (3e et derniere pose)
+
+## LE PROGRAMME DE RETOUCHE EST TERMINE
+
+**21 lots, 89 visuels** (88 numeros + le prototype n°44). Tous les PV sont rediges :
+`hd-2026-09-30/VALIDATION-LOT1` a `LOT21-2026-10-02.json`. Plus aucun numero en attente.
+Aucun GIF livre remplace, APK intact, rien d'integre dans l'app.
+
+## Consigne en vigueur — la recopier en tete de la prochaine session
+
+1. **« Le vert doit bien couvrir la peau, pas depasse. »** Mesure par `couverture_peau`,
+   `debordement_vert` et `manque` dans chaque `CONTROLES.json`.
+2. **Des que la limite de session est atteinte : drapeau rouge, avec consigne et passation.**
+3. Lots de 4 numeros · ne JAMAIS toucher a un numero valide · ne JAMAIS remplacer un GIF
+   livre sans accord explicite · APK intact · rien d'integre sans demande.
+
+## Reglages par numero dans le modele `evolution/media/tools/retouche-lot4-vert260.py`
+
+| reglage | valeur | pourquoi |
+|---|---|---|
+| `ETENDRE_VERT` | `False` | l'utilisateur veut le COEUR VERT FRANC, pas le halo |
+| `COUVRIR_PEAU` | `{1, 66, 297}` | couvrir aussi la peau que le GIF livre peignait |
+| `GAMMA_VALEUR` | `{124: [0.55, 1.0]}` | vert presque noir, eclairci en phase 1 seulement |
+| 370 / 371 / 372 | gardes | source 688x381 < GIF livre 794x440 : agrandissement x1,73 assume, **jamais vendus comme un gain de nettete** |
+
+## La suite, dans l'ordre decide par l'utilisateur
+
+1. **Cardio et piscine des deux profils** (reglages, pas des visuels).
+2. **Les 34 visuels « femme » sans source native** — il faudra une methode differente,
+   aucune planche PNG n'existe pour eux.
+3. **Le build de l'app.**
+4. **L'IA conversationnelle en dernier.**
+5. Avant le build : lui redemander de confirmer les ajouts **metcon + piscine fractionnee**
+   et/ou l'**Aqua Tabata d'Emilie**.
+
+## Deux chantiers techniques laisses ouverts
+
+- **`page-lot.py` n'affiche toujours pas `couverture_peau` ni `debordement_vert`** dans
+  `valider.html`. Il faut lire `CONTROLES.json`. A brancher.
+- **Le n°35 n'a qu'une seule phase** au lieu de deux (erreur d'alignement 14,97/255, la
+  plus forte du programme). Accepte tel quel, mais a comprendre si on refait la selection.
+
+## Apres une purge du sandbox — procedure verifiee 17 fois
+
+    git fetch origin arena/01a0fae1-jarvis-fitness-yanis-emilie-ap
+    git log --oneline -2        # si HEAD = ddd1fb9 + un commit a vous => commit egarre
+    git show --name-only --oneline HEAD | grep -v '\.cache/pyvenv'
+    #   ne rend QUE l'en-tete => aucun travail reel => git reset --hard FETCH_HEAD
+    #   sinon                 => git merge --ff-only FETCH_HEAD
+    python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install -q pillow numpy
+    git fetch --depth=1 origin c685298378773817460fb358bc605af7ce154b8b:refs/remotes/base/lots-complets
+
+Enchainer venv + fetch + travail dans la MEME commande : le venv est purge en 1 a 2 minutes.
+Un `.gitignore` couvre `.cache/`, `tri/` et `__pycache__/`.
