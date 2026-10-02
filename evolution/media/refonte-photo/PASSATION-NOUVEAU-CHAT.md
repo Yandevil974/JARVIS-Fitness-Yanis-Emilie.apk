@@ -796,3 +796,18 @@ les 49 numeros deja valides. Le halo degrade du muscle n'est donc PAS repris.
   consignees** dans chaque `CONTROLES.json`, mais elles n'agissent plus sur le masque.
   Elles servent de temoin : si un numero sort avec une couverture tres basse, le signaler.
 - Le lot 13 (28, 22, 267, 303) a ete valide tel quel, avec ces chiffres.
+
+## Trois numeros IMPOSSIBLES : 370, 371, 372 (decouvert le 02/10/2026)
+
+Leur planche `planches/lot52/nage-statique-a-l-elastique.png` fait **1376 x 381 px** — une
+hauteur moitie de toutes les autres (720 ou 768). La fenetre utile fait 688 x 381, soit
+**plus petit que le GIF deja livre (794 x 440)**.
+
+Ce sont les trois seuls candidats du programme avec un facteur de perte < 1 (0,75). Les
+exporter en 1192 x 660 = agrandir x1,73, ce que la regle absolue de l'utilisateur interdit
+(nettete d'abord, jamais d'agrandissement). Aucune version HD n'est possible pour eux.
+
+Si l'utilisateur confirme, les retirer du programme : il restera alors 14 numeros au lieu
+de 17. Verifier avec :
+
+    python3 -c "import json;d=json.load(open('evolution/media/refonte-photo/hd-2026-09-30/PRIORITE-SOURCES.json'));print([r['numero'] for r in d['numeros'] if r['verdict'].startswith('RETENUE') and r.get('facteur_perte',9)<1])"
