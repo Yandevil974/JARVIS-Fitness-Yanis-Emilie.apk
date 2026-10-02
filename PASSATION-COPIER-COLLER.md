@@ -140,7 +140,7 @@ Pièges vérifiés (à ne pas répéter) :
   au 02/10/2026). Jamais main. Jamais de reset --hard.
 
 ------------------------------------------------------------
-5. LOT 2 — CE QUI ATTEND TON VERDICT
+5. LOT 2 — VALIDÉ LE 02/10/2026 (ne plus redemander)
 ------------------------------------------------------------
 n°11 (back-squat, 2 cases) → 577×660, WebP 101 ko, PSNR 41,85 ; GIF repli 389 ko.
 n°12 (back-squat barre haute) → 577×660, WebP 103 ko, PSNR 41,81 ; GIF repli 392 ko.
@@ -148,7 +148,9 @@ n°30 (curl barre debout) → 583×660, WebP 110 ko, PSNR 41,70 ; GIF repli 402 
 n°42 (curl Scott barre EZ pronation) → 588×660, WebP 113 ko, PSNR 41,93 ; GIF repli 419 ko.
 Fessiers/quadriceps, biceps/avant-bras : 0 pixel modifié hors zone ; saturation après passage 0,904 / 0,930 /
 0,873 / 0,876 (référence 260 = 0,914).
-→ Demander à l'utilisateur : « 11 OK », « 12 OK », « 30 OK », « 42 OK » — ou ce qui cloche, numéro par numéro.
+→ DÉJÀ VALIDÉ le 02/10/2026 : « 11 OK », « 12 OK », « 30 OK », « 42 OK » (empreintes et mesures dans
+  hd-2026-09-30/VALIDATION-LOT2-2026-10-02.json). Portée : les propositions, pas l'intégration.
+→ Lot suivant : 4 numéros depuis les sources natives, priorité au plus gros écart GIF livré ↔ source.
 
 ------------------------------------------------------------
 6. SUITE (dans cet ordre)

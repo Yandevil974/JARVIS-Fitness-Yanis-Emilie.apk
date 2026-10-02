@@ -1,0 +1,189 @@
+{
+ "date": "2026-10-02",
+ "lot": 2,
+ "numeros": [
+  11,
+  12,
+  30,
+  42
+ ],
+ "reponse_utilisateur": "11 OK / 12 OK / 30 OK / 42 OK (validation numéro par numéro, via le questionnaire)",
+ "contexte": "Après consultation de la page de validation lot2/valider.html (WebP animé 660 q90 + GIF de repli), servie sur le port 8080. Reprise du chantier sur la branche arena/01a0fae1-... (arbre de arena/01a0edb7-... / tête 3c163a6 adopté tel quel). Empreintes des 8 exports vérifiées identiques à lot2/CONTROLES.json avant validation.",
+ "fichier_valides": [
+  {
+   "numero": 11,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/11-vert260-660-webp-q90.webp",
+   "sha256": "71876430d23be5eba1694a1c9899ebc041f85ff5970419cc75e4e5ce196a15b7",
+   "taille": [
+    577,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 101
+  },
+  {
+   "numero": 11,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/11-vert260-660-repli.gif",
+   "sha256": "9cc6f9c05061308d99a8fc2e128d07359c50973097d53ec924018f67eacd49e1",
+   "taille": [
+    577,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 389
+  },
+  {
+   "numero": 12,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/12-vert260-660-webp-q90.webp",
+   "sha256": "fd465c308965a68a6277208f4e79c1c5bfc8f7dc46519a8d59853b9d1401de57",
+   "taille": [
+    577,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 103
+  },
+  {
+   "numero": 12,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/12-vert260-660-repli.gif",
+   "sha256": "dcf2495f19b92d50f7c72e3b7128cd3f4b837521f0e082004a7423389eb03c39",
+   "taille": [
+    577,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 392
+  },
+  {
+   "numero": 30,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/30-vert260-660-webp-q90.webp",
+   "sha256": "43c18771d9ad7a8e08415228f89d34efdb17e7e64b58f74c7f16c83be2d0d924",
+   "taille": [
+    583,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 110
+  },
+  {
+   "numero": 30,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/30-vert260-660-repli.gif",
+   "sha256": "5f34fc2dab826c6b73403ec1a61b6c02f8fa958b5a1fcbf62717cfc35506ac79",
+   "taille": [
+    583,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 402
+  },
+  {
+   "numero": 42,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/42-vert260-660-webp-q90.webp",
+   "sha256": "471ba0741d9d7f085ed606161f464f4da6c9af5ea6c568192a3d9777a938e091",
+   "taille": [
+    588,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 113
+  },
+  {
+   "numero": 42,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot2/exports/42-vert260-660-repli.gif",
+   "sha256": "5a4e600e04883bd6ae0e0d09f9286f5547569557b6f752df0704034e7276cee1",
+   "taille": [
+    588,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 419
+  }
+ ],
+ "mesures": {
+  "11": {
+   "psnr_webp_db": [
+    41.85,
+    42.21
+   ],
+   "psnr_gif_db": [
+    35.76,
+    35.31
+   ],
+   "saturation_apres": [
+    0.904,
+    0.928
+   ],
+   "taille": [
+    577,
+    660
+   ]
+  },
+  "12": {
+   "psnr_webp_db": [
+    41.81,
+    41.85
+   ],
+   "psnr_gif_db": [
+    35.9,
+    35.72
+   ],
+   "saturation_apres": [
+    0.93,
+    0.898
+   ],
+   "taille": [
+    577,
+    660
+   ]
+  },
+  "30": {
+   "psnr_webp_db": [
+    41.7,
+    41.89
+   ],
+   "psnr_gif_db": [
+    35.31,
+    35.28
+   ],
+   "saturation_apres": [
+    0.873,
+    0.903
+   ],
+   "taille": [
+    583,
+    660
+   ]
+  },
+  "42": {
+   "psnr_webp_db": [
+    41.93,
+    41.94
+   ],
+   "psnr_gif_db": [
+    35.51,
+    34.78
+   ],
+   "saturation_apres": [
+    0.876,
+    0.887
+   ],
+   "taille": [
+    588,
+    660
+   ]
+  }
+ },
+ "saturation_reference_260": 0.914,
+ "portee": "Les 4 propositions du lot 2, telles quelles (fichiers identifiés par leur empreinte ci-dessus). Le n°44 et le lot 1 restent couverts par leurs propres validations.",
+ "non_couvert": "Aucune intégration dans l'application : les GIF livrés ne sont pas remplacés, l'APK n'est pas reconstruit, le format WebP de l'app n'est pas adopté (il faudra un accord et le test WebView sur le téléphone).",
+ "methode": "evolution/media/tools/retouche-lot2-vert260.py — retouche déterministe depuis les sources natives, 0 image générée, 0 GIF livré remplacé",
+ "regle": "proposition ≠ validation ≠ intégration"
+}

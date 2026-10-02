@@ -78,7 +78,7 @@ GIF 2,17 / 2,80 / 3,13 ; zones vertes 5 903 px (19), 37 125 px (48), 4 047 px (8
 Interdits respectés : `gif_livres_modifies: 0`, `apk_reconstruit: false`, `proposition_non_integree: true`,
 aucun `git push` hors `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`. Commit `d01fb1a`.
 
-## 3bis. Lot 2 PROPOSÉ le 01/10/2026 (n°11, 12, 30, 42) — RIEN D'INTÉGRÉ
+## 3bis. Lot 2 (n°11, 12, 30, 42) — VALIDÉ le 02/10/2026, TOUJOURS NON INTÉGRÉ
 
 Même méthode (outil `evolution/media/tools/retouche-lot2-vert260.py`, qui réutilise les fonctions du lot 1).
 Sorties : `hd-2026-09-30/lot2/` (`travail/`, `exports/`, `planches/`, `CONTROLES.json`), page de validation
@@ -112,6 +112,29 @@ Autre point de méthode : `git fetch` ne peut pas récupérer ces branches par l
 (`couldn't find remote ref`), mais **par SHA oui** :
 `git fetch origin <sha>:refs/remotes/base/passation`. C'est ainsi que les bases `base/passation` et
 `base/lots-complets` sont reconstituées après un redémarrage du bac à sable.
+
+**VALIDÉ le 02/10/2026** — numéro par numéro (« 11 OK », « 12 OK », « 30 OK », « 42 OK ») après
+consultation de `lot2/valider.html` (servie sur le port 8080), sur la branche
+`arena/01a0fae1-jarvis-fitness-yanis-emilie-ap` qui a repris l'arbre de `arena/01a0edb7-…` (tête `3c163a6`).
+Empreintes sha256 des 8 exports vérifiées identiques à `lot2/CONTROLES.json` **avant** validation, puis
+consignées dans **`hd-2026-09-30/VALIDATION-LOT2-2026-10-02.json`**.
+
+| N° | WebP validé (sha256, début) | poids | taille | PSNR |
+|---|---|---|---|---|
+| 11 | `71876430d23be5eb…` | 101 ko | 577×660 | 41,85 dB |
+| 12 | `fd465c308965a68a…` | 103 ko | 577×660 | 41,81 dB |
+| 30 | `43c18771d9ad7a8e…` | 110 ko | 583×660 | 41,70 dB |
+| 42 | `471ba0741d9d7f08…` | 113 ko | 588×660 | 41,93 dB |
+
+**Portée** : les 4 propositions telles quelles. **Non couvert** : l'intégration — aucun GIF livré remplacé,
+APK intact, WebP dans l'app toujours soumis au test WebView sur le téléphone + accord.
+Rappel : *proposition ≠ validation ≠ intégration*.
+
+**Suite** : lots suivants de 4 numéros depuis les sources natives, avec vérification préalable que le vert
+existe bien dans la source (pièges §2) ; priorité aux numéros dont le GIF livré perd le plus de pixels
+(`evolution/media/tools/priorite-sources.py`, tableau `hd-2026-09-30/PRIORITE-SOURCES.json`).
+
+---
 
 ## 4. Prochain lot proposé (aucune action engagée sans votre accord)
 
