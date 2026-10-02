@@ -241,8 +241,9 @@ const STEP_KEYWORDS = [
   [/transition/i, "cardio-transition"],
   [/elliptique/i, "cardio-elliptique-mise-en-route"],
   [/mise en route|marche|r[ée]veil|cardio/i, "warmup-route"],
-  [/mobilit[ée]/i, "warmup-mobilite"],
+  [/mobilit[ée]|[ée]paules|scapulaire|thoracique|poignets?|coudes?/i, "warmup-mobilite"],
   [/activation|approche/i, "warmup-approche"],
+  [/respir|inspir|expir|souffl|rel[aâ]ch/i, "stretch-respiration"],
 ];
 
 export function stepGifFromName(nom, profil) {
@@ -261,4 +262,24 @@ export function stepGifFromName(nom, profil) {
     }
   }
   return null;
+}
+
+// Filet de sécurité : si ni l'étape, ni le guide, ni son nom ne donnent de
+// visuel, on choisit un GIF humain d'après la nature de l'effort. Aucun chrono
+// ne doit rester sans humain animé (défaut signalé le 02/10/2026).
+const PATTERN_FALLBACK = {
+  breathe: "stretch-respiration",
+  stretch: "stretch-dos-enfant",
+  swim: "pool-nage-douce",
+  aqua: "pool-marche-aquatique",
+  walk: "cardio-transition",
+  run: "cardio-elliptique-mise-en-route",
+  bike: "cardio-elliptique-mise-en-route",
+  row: "warmup-mobilite",
+  lat: "warmup-mobilite",
+  curl: "warmup-mobilite",
+};
+
+export function stepGifByPattern(pattern, profil) {
+  return stepGif(PATTERN_FALLBACK[pattern] || "warmup-mobilite", profil);
 }

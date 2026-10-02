@@ -17,9 +17,15 @@ import {
   RECOVERY_EXERCISES,
   stretchImage,
   exerciseById,
+  findExercise,
 } from "../../data/library.js";
 import { stepGuide } from "../../data/visuals.js";
-import { stepGifFromName, STRETCH_KEY_BY_NAME, stepGif } from "../../data/visuals-gifs.js";
+import {
+  stepGifFromName,
+  stepGifByPattern,
+  STRETCH_KEY_BY_NAME,
+  stepGif,
+} from "../../data/visuals-gifs.js";
 import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
@@ -45,7 +51,9 @@ export function TimerModal() {
     step.img ||
     guide?.img ||
     stepGif(STRETCH_KEY_BY_NAME[step.name], p.id) ||
-    stepGifFromName(step.name, p.id);
+    stepGifFromName(step.name, p.id) ||
+    findExercise(step.name)?.gif ||
+    stepGifByPattern(step.pattern, p.id);
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {

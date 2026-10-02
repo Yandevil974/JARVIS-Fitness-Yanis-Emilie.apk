@@ -47,6 +47,7 @@ export const GIF_OVERRIDES = {
  "developpe couche test 1rm": "/media/bcaf491c4edff6de.gif",
  "developpe derriere la nuque": "/media/110f2ff472634503.gif",
  "developpe haltere un bras debout": "/media/75b355758a02d50d.gif",
+ "developpe halteres assis": "/media/f6db6170a201743a.gif",
  "developpe halteres assis, neutre→pronation": "/media/6f21183bb94b2b48.gif",
  "developpe halteres assis, prise neutre": "/media/5d87213f7a64c97e.gif",
  "developpe halteres incline": "/media/08aa27f428cbd97f.gif",
