@@ -1,0 +1,291 @@
+{
+ "date": "2026-10-02",
+ "lot": 21,
+ "numeros": [
+  35,
+  103,
+  159,
+  268,
+  386
+ ],
+ "reponse_utilisateur": "Oui pour les cinq : 159, 103, 268, 386, 35. Le n°35 n'a qu'une phase, accepte.",
+ "contexte": "Après consultation de la page lot21/valider.html (servie sur le port 8080).",
+ "fichier_valides": [
+  {
+   "numero": 35,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/35-vert260-660-webp-q90.webp",
+   "sha256": "ec3746719e3851d89e3d0c4e6d7808ca46dd44ec7128f57485d7d1e0f75bac9d",
+   "taille": [
+    665,
+    660
+   ],
+   "images": 1,
+   "poids_ko": 55
+  },
+  {
+   "numero": 35,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/35-vert260-660-repli.gif",
+   "sha256": "c1cae5b0122d9b7db05fd7d9b670c0bc348ce274c32fc360f1fe5dfd902b2143",
+   "taille": [
+    665,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 468
+  },
+  {
+   "numero": 103,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/103-vert260-660-webp-q90.webp",
+   "sha256": "06c27afdd30bf7c2e07ab69d98674bb704a54469667e7752649f82e7ea0c90b3",
+   "taille": [
+    584,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 107
+  },
+  {
+   "numero": 103,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/103-vert260-660-repli.gif",
+   "sha256": "7709724c07a6ef0707759ea53b5af87000c932ad27a8129350f280bcfe3d1e29",
+   "taille": [
+    584,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 415
+  },
+  {
+   "numero": 159,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/159-vert260-660-webp-q90.webp",
+   "sha256": "3115e1debcaf0aa80b4eed073b0b255a3d092cdf323de1cc4394ac93d96af84c",
+   "taille": [
+    579,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 91
+  },
+  {
+   "numero": 159,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/159-vert260-660-repli.gif",
+   "sha256": "125f10c3eb00a8ef2512bb594f0d22d5907c6b706b7fb0d6b2313678d51cfc15",
+   "taille": [
+    579,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 389
+  },
+  {
+   "numero": 268,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/268-vert260-660-webp-q90.webp",
+   "sha256": "c913e18f2811b00383f458a0112af8d1b996f2c896e4eae009e4ab5c3e270ef5",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 97
+  },
+  {
+   "numero": 268,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/268-vert260-660-repli.gif",
+   "sha256": "a94e68af2dbb03244dbd4982bd50ee0ae93f5796927b72bb33449a7425954939",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 402
+  },
+  {
+   "numero": 386,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/386-vert260-660-webp-q90.webp",
+   "sha256": "ebe700a0154ddd7a212864dcc849036f905ac8e85789c73030e91dfcba707f6a",
+   "taille": [
+    622,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 115
+  },
+  {
+   "numero": 386,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot21/exports/386-vert260-660-repli.gif",
+   "sha256": "deb88e0824fb0ce6c4cec5e6e41faf191d176be410edec4f53d064f001dca949",
+   "taille": [
+    622,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 446
+  }
+ ],
+ "mesures": {
+  "35": {
+   "psnr_webp_db": [
+    42.28
+   ],
+   "psnr_gif_db": [
+    35.24,
+    34.8
+   ],
+   "saturation_avant": [
+    0.951,
+    0.951
+   ],
+   "saturation_apres": [
+    0.923,
+    0.923
+   ],
+   "teinte_source_deg": 81.7,
+   "transition_contour_apres_px": [
+    6.96,
+    6.96
+   ],
+   "pixels_zone": [
+    4584,
+    4584
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "103": {
+   "psnr_webp_db": [
+    42.41,
+    42.35
+   ],
+   "psnr_gif_db": [
+    35.54,
+    31.83
+   ],
+   "saturation_avant": [
+    0.962,
+    0.592
+   ],
+   "saturation_apres": [
+    0.962,
+    0.806
+   ],
+   "teinte_source_deg": 79.2,
+   "transition_contour_apres_px": [
+    6.0,
+    12.69
+   ],
+   "pixels_zone": [
+    3402,
+    6277
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "159": {
+   "psnr_webp_db": [
+    42.38,
+    42.15
+   ],
+   "psnr_gif_db": [
+    35.98,
+    35.01
+   ],
+   "saturation_avant": [
+    0.807,
+    0.809
+   ],
+   "saturation_apres": [
+    0.911,
+    0.912
+   ],
+   "teinte_source_deg": 88.5,
+   "transition_contour_apres_px": [
+    1.63,
+    1.57
+   ],
+   "pixels_zone": [
+    4073,
+    5372
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "268": {
+   "psnr_webp_db": [
+    42.4,
+    42.38
+   ],
+   "psnr_gif_db": [
+    35.6,
+    35.15
+   ],
+   "saturation_avant": [
+    0.977,
+    0.985
+   ],
+   "saturation_apres": [
+    0.912,
+    0.925
+   ],
+   "teinte_source_deg": 80.3,
+   "transition_contour_apres_px": [
+    4.38,
+    3.23
+   ],
+   "pixels_zone": [
+    3521,
+    4294
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "386": {
+   "psnr_webp_db": [
+    42.3,
+    42.18
+   ],
+   "psnr_gif_db": [
+    35.24,
+    34.42
+   ],
+   "saturation_avant": [
+    0.891,
+    0.902
+   ],
+   "saturation_apres": [
+    0.908,
+    0.915
+   ],
+   "teinte_source_deg": 80.2,
+   "transition_contour_apres_px": [
+    6.38,
+    5.98
+   ],
+   "pixels_zone": [
+    2064,
+    9128
+   ],
+   "pixels_modifies_hors_zone": 0
+  }
+ },
+ "saturation_reference_260": 0.914,
+ "particularites": {
+  "159": "Debordement 0,013/0,029 : le vert ne sort presque pas du perimetre du GIF livre. S 0,81 -> 0,91.",
+  "103": "Phase 2 tres pale dans la source (S 0,59) remontee a 0,81 : le plus grand ecart entre ses deux phases.",
+  "268": "Etirement du cobra. S 0,98 -> 0,91/0,93. Couverture 0,28/0,45.",
+  "386": "Debordement 0,001 en phase 1 : quasi parfait. Couverture 0,21/0,70.",
+  "35": "Deux phases calculees mais UN SEUL export : erreur d'alignement 14,97/255, la plus forte du programme. Accepte tel quel par l'utilisateur."
+ },
+ "verifications": {
+  "pixels_modifies_hors_zone_sur_le_lot": 0
+ },
+ "portee": "Les propositions du lot, telles quelles (fichiers identifiés par leur empreinte ci-dessus).",
+ "non_couvert": "Aucune intégration : les GIF livrés ne sont pas remplacés, l'APK n'est pas reconstruit, le format WebP de l'app n'est pas adopté (accord + test WebView sur le téléphone toujours requis).",
+ "methode": "evolution/media/tools/retouche-lot21-vert260.py — mêmes fonctions déterministes que les lots précédents, 0 image générée, 0 GIF livré remplacé",
+ "regle": "proposition ≠ validation ≠ intégration"
+}
