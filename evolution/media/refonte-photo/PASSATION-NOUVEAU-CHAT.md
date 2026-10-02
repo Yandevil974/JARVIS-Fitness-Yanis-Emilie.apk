@@ -811,3 +811,11 @@ Si l'utilisateur confirme, les retirer du programme : il restera alors 14 numero
 de 17. Verifier avec :
 
     python3 -c "import json;d=json.load(open('evolution/media/refonte-photo/hd-2026-09-30/PRIORITE-SOURCES.json'));print([r['numero'] for r in d['numeros'] if r['verdict'].startswith('RETENUE') and r.get('facteur_perte',9)<1])"
+
+## Decision du 02/10/2026 sur les 370 / 371 / 372
+
+L'utilisateur a choisi de les **GARDER** malgre l'agrandissement x1,73 (source 688x381,
+export 1192x660). C'est une exception assumee a la regle « jamais d'agrandissement » :
+ils ne doivent donc **jamais etre presentes comme un gain de nettete**. Leur PSNR eleve
+(43,3 dB) mesure la fidelite de la compression, pas la resolution reelle. Le dire dans
+toute communication et dans le PV de validation.

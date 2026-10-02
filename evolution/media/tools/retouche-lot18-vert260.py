@@ -126,7 +126,7 @@ ETENDRE_VERT = False
 # Numeros ou l'utilisateur a demande que le vert COUVRE AUSSI LA PEAU que le GIF livre
 # peignait en vert (demande du 02/10/2026 : n°66 ou le manque atteignait 33 %, puis n°1 a 23 %).
 # Le vert ne s'ajoute que la ou le GIF livre en mettait : jamais ailleurs.
-COUVRIR_PEAU = {1: True, 66: True}
+COUVRIR_PEAU = {1: True, 66: True, 297: True}
 SEUIL_DEBORDEMENT = 0.12   # au-dela, le vert deborde franchement hors de ce que le GIF livre couvrait
 
 
