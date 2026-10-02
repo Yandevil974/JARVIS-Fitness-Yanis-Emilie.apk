@@ -1,9 +1,9 @@
-# Caches de travail (non persistants, jamais livrés) : dépendances Python, sources miroir, builds
+# Caches locaux (venv, sources extraites) — ne jamais committer
 .cache/
+
+# Tri working (regenerable)
+evolution/media/refonte-photo/hd-2026-09-30/tri/
+
+# Python
 __pycache__/
 *.pyc
-node_modules/
-dist/
-
-# Planches de tri visuel (artefacts de travail, reconstruites a la demande)
-evolution/media/refonte-photo/hd-2026-09-30/tri/
