@@ -1223,7 +1223,7 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot19/exports/124-vert260-660-webp-q90.webp",
      "note": "WebP animé q90 — livrable principal",
-     "sha256": "cbaee2463b6d4c6214dd1023c1c6a2d19223966165a69a2f7c8e866d1643752e",
+     "sha256": "39dce2bfa60ba86865fe5b5138cbf33233c80f081c816ece4397e0386ee210c9",
      "poids_ko": 65,
      "images": 2,
      "durees_ms": [
@@ -1240,20 +1240,20 @@
         512,
         660
        ],
-       "couleurs_uniques": 31522,
+       "couleurs_uniques": 31941,
        "erreur_moyenne": 1.48,
        "erreur_max": 10,
-       "psnr_db": 43.28
+       "psnr_db": 43.27
       },
       {
        "taille": [
         512,
         660
        ],
-       "couleurs_uniques": 34823,
+       "couleurs_uniques": 34619,
        "erreur_moyenne": 1.51,
        "erreur_max": 15,
-       "psnr_db": 43.04
+       "psnr_db": 43.01
       }
      ],
      "format": "webp",
@@ -1263,8 +1263,8 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot19/exports/124-vert260-660-repli.gif",
      "note": "GIF de repli (palette 256 partagée)",
-     "sha256": "c6381a0fafab0c8f33a55ebf858acf45076b0752b57750511131074504390ee5",
-     "poids_ko": 336,
+     "sha256": "630dd8231d6fb45d23a768c2f43070af5482543be69e366f48aded9b749232f1",
+     "poids_ko": 333,
      "images": 2,
      "durees_ms": [
       500,
@@ -1281,9 +1281,9 @@
         660
        ],
        "couleurs_uniques": 256,
-       "erreur_moyenne": 2.01,
-       "erreur_max": 48,
-       "psnr_db": 38.14
+       "erreur_moyenne": 1.98,
+       "erreur_max": 45,
+       "psnr_db": 38.46
       },
       {
        "taille": [
@@ -1291,9 +1291,9 @@
         660
        ],
        "couleurs_uniques": 255,
-       "erreur_moyenne": 4.58,
-       "erreur_max": 66,
-       "psnr_db": 28.88
+       "erreur_moyenne": 4.44,
+       "erreur_max": 70,
+       "psnr_db": 29.14
       }
      ],
      "format": "gif",
@@ -1436,104 +1436,104 @@
     {
      "pixels": 2223,
      "mediane_rgb": [
-      53,
-      92,
-      4
+      74,
+      128,
+      6
      ],
      "mediane_hsv": {
       "teinte_deg": 87.0,
-      "saturation": 0.956,
-      "valeur": 0.361
+      "saturation": 0.954,
+      "valeur": 0.502
      },
      "percentiles_saturation": [
-      0.915,
-      0.956,
-      0.98
+      0.911,
+      0.954,
+      0.977
      ],
      "percentiles_valeur": [
-      0.235,
       0.361,
-      0.486
+      0.502,
+      0.635
      ],
-     "nuances_distinctes": 1414,
-     "part_teinte_dominante": 0.008,
+     "nuances_distinctes": 1502,
+     "part_teinte_dominante": 0.005,
      "teintes_principales": [
       [
-       45,
-       83,
-       2
+       65,
+       118,
+       3
       ],
       [
-       44,
-       87,
-       2
+       63,
+       114,
+       3
       ],
       [
-       47,
-       86,
-       2
+       67,
+       122,
+       3
       ],
       [
-       45,
-       81,
-       2
+       66,
+       129,
+       4
       ],
       [
-       34,
-       71,
-       2
+       64,
+       117,
+       3
       ]
      ]
     },
     {
      "pixels": 4247,
      "mediane_rgb": [
-      125,
-      190,
-      30
+      140,
+      213,
+      34
      ],
      "mediane_hsv": {
       "teinte_deg": 86.1,
       "saturation": 0.833,
-      "valeur": 0.745
+      "valeur": 0.835
      },
      "percentiles_saturation": [
-      0.476,
+      0.481,
       0.833,
       0.969
      ],
      "percentiles_valeur": [
-      0.447,
-      0.745,
-      0.898
+      0.635,
+      0.835,
+      0.933
      ],
-     "nuances_distinctes": 3990,
+     "nuances_distinctes": 3973,
      "part_teinte_dominante": 0.001,
      "teintes_principales": [
       [
-       62,
-       121,
-       4
+       82,
+       166,
+       5
       ],
       [
-       101,
-       162,
+       85,
+       166,
+       5
+      ],
+      [
+       119,
+       207,
        7
       ],
       [
-       70,
-       124,
-       4
+       142,
+       226,
+       7
       ],
       [
-       57,
-       114,
-       4
-      ],
-      [
-       63,
-       117,
-       4
+       90,
+       166,
+       5
       ]
      ]
     }
