@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      TAG: ${{ github.event.inputs.tag || 'v1.5.1-chrono-gifs' }}
+      TAG: ${{ github.event.inputs.tag || 'v1.5.1-chrono-gifs-v2' }}
       NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v2.apk' }}
     steps:
       - name: Checkout
