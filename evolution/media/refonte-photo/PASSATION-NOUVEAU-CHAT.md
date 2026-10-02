@@ -784,3 +784,15 @@ fichiers valides**. Regle : ne JAMAIS rejouer un outil sur un lot deja valide. S
 necessaire, le faire dans un dossier de travail separe, ou verifier les sha256 du PV apres
 coup (`VALIDATION-LOTn-*.json`, cle `fichier_valides`) et restaurer par `git checkout HEAD --`.
 C'est ce que j'ai fait : le lot 4 a ete restaure.
+
+## Decision du 02/10/2026 — la question du halo est TRANCHEE
+
+L'utilisateur a repondu : **« Rester sur le coeur vert franc »**, pour rester coherents avec
+les 49 numeros deja valides. Le halo degrade du muscle n'est donc PAS repris.
+
+- `ETENDRE_VERT = False` dans `evolution/media/tools/retouche-lot4-vert260.py` (le modele
+  dont tous les lots suivants heritent). Ne pas le reactiver sans lui redemander.
+- Les mesures `couverture_peau`, `debordement_vert` et `manque` restent **calculees et
+  consignees** dans chaque `CONTROLES.json`, mais elles n'agissent plus sur le masque.
+  Elles servent de temoin : si un numero sort avec une couverture tres basse, le signaler.
+- Le lot 13 (28, 22, 267, 303) a ete valide tel quel, avec ces chiffres.
