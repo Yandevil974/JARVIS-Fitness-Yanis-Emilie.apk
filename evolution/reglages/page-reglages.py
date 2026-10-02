@@ -124,13 +124,13 @@ ul{{margin:8px 0;padding-left:20px}} li{{margin:5px 0}}
 <h1>Cardio &amp; piscine — réglages des deux profils</h1>
 <p class="sous">Vérification du moteur de l'application contre les deux fichiers sources
 (<code>Transformation_Elite_V2</code> = Yanis, <code>Emilie_transformation_V7</code> = Émilie).
-Aucun visuel, aucune image : uniquement les réglages. Rien n'a été modifié.</p>
+Aucun visuel, aucune image : uniquement les réglages.<br>Un écart a été trouvé puis corrigé sur votre décision (§2) : un seul fichier de l'application a changé.</p>
 
 <div class="cartes">
   <div class="carte"><b>{t['joursComparés']:,}</b><span>jours comparés</span></div>
   <div class="carte"><b class="ok">{t['divergents']}</b><span>écart de placement (cardio / piscine)</span></div>
   <div class="carte"><b class="ok">{t['cardioDureesDivergentes']}</b><span>écart de durée ou de zone</span></div>
-  <div class="carte"><b class="ko">{t['regulationDivergente']}</b><span>écarts d'auto-régulation</span></div>
+  <div class="carte"><b class="ok">{t['regulationDivergente']}</b><span>écart d'auto-régulation<br>après correction</span></div>
 </div>
 
 <div class="encadre vert"><p><b>Le placement est fidèle.</b> 18 scénarios (2 profils × 3 fréquences
@@ -147,16 +147,24 @@ Les durées et zones cardiaques d'Émilie sont identiques sur toute l'année.</p
 <li>Contenu du METCON de Yanis (elliptique + transition 5 min + piscine) et sa rotation de protocoles.</li>
 </ul>
 
-<h2>2. Le seuil « 3 séances dures / 7 jours » (Yanis) — 3 écarts</h2>
+<h2>2. Le seuil « 3 séances dures / 7 jours » (Yanis) — corrigé</h2>
 <p>C'est le réglage qui fait basculer le METCON en version modérée quand la charge est élevée.
 La source compte comme « dure » : tout tabata, tout elliptique en HIIT ou Intervalles, et toute
-piscine qui n'est ni Aqua Recovery ni Swim Endurance. L'application ne compte que les
-activités de type <code>hiit</code> ou <code>aqua</code> (plus, en supplément, toute séance notée RPE ≥ 8).</p>
+piscine qui n'est ni Aqua Recovery ni Swim Endurance.</p>
+<div class="encadre rouge"><p><b>Ce qui n'allait pas.</b> L'application ne comptait que les activités de
+type <code>hiit</code> ou <code>aqua</code> (plus, en supplément, toute séance notée RPE ≥ 8).
+Après trois METCON « elliptique HIIT + Swim Sprint » : la source comptait <b>6 séances dures</b>
+et basculait en version modérée ; l'application en comptait <b>0</b> et restait en version intense.
+<b>Le réglage ne protégeait plus Yanis.</b></p></div>
+<p><b>Corrigé le 02/10/2026</b>, sur votre décision, en revenant exactement à la règle de la source
+(<code>sourceProtoName</code> et <code>sourceHardSession</code> dans <code>src/engine/source-schedule.js</code>).
+L'ajout « RPE ≥ 8 » est retiré, puisque vous avez choisi le retour strict à la source ; il se remet
+en une ligne si vous le souhaitez. Les 96 tests de l'application passent et le build se fait.</p>
 <table><tr><th>Cas (sur 7 jours)</th><th class="n">dures source</th><th class="n">dures app</th><th>source</th><th>application</th></tr>
 {lignes_reg}</table>
-<div class="encadre rouge"><p><b>Conséquence mesurée.</b> Après trois METCON « elliptique HIIT + Swim Sprint »,
-la source bascule en version modérée ; l'application reste en version intense, car elle ne compte
-aucune de ces six séances comme dure. Le réglage ne protège donc plus Yanis.</p></div>
+<div class="encadre vert"><p><b>Les 16 cas sont maintenant identiques.</b> Trois METCON HIIT + Sprint
+→ 6 dures → version modérée (Intervalles + Aqua Tabata). Trois Aqua Recovery → 0 dure → version intense
+inchangée. Trois tabatas au sol → 3 dures → version modérée.</p></div>
 
 <h2>3. Un réglage sans effet chez Yanis</h2>
 <p>Les cases <b>Piscine</b> et <b>Vélo elliptique</b> de « Profil → Matériel &amp; préférences »
@@ -176,18 +184,20 @@ dernière séance <em>de toute l'histoire</em>. L'application ne regarde que les
 après une semaine sans piscine, le même protocole peut revenir deux fois de suite.</li>
 </ul>
 
-<h2>5. Ce qui est une addition de l'application (à confirmer avant le build)</h2>
-<div class="question"><p><b>1 · La piscine fractionnée.</b> L'écran « Nage en longueurs »
-(séries × distance, récupération, style, temps cible, bouton « Lancer le fractionné »)
-n'existe dans <b>aucun</b> des deux fichiers sources : l'expression « Nage en longueurs »
-y apparaît zéro fois. C'est un ajout. Le garder ?</p></div>
-<div class="question"><p><b>2 · L'Aqua Tabata d'Émilie.</b> Celui-là n'est <b>pas</b> un ajout :
-il vient de la source, qui écrit « le Tabata se fait aussi dans la piscine (20/10, zéro impact) :
-voir Pool Lab → Aqua Tabata » et liste les six protocoles « chacun en 3 niveaux ».
-Il est déjà proposé dans l'application, et il entre aussi dans la rotation du METCON de Yanis.
-Le confirmer tel quel ?</p></div>
-<div class="question"><p><b>3 · Le METCON.</b> Son contenu et sa rotation sont fidèles à la source,
-à l'exception du seuil du §2. Faut-il corriger le seuil pour revenir au comportement de la source ?</p></div>
+<h2>5. Décisions prises le 02/10/2026 (avant le build)</h2>
+<div class="question"><p><b>1 · Seuil d'auto-régulation — corrigé.</b> Retour strict au comportement
+de la source : comptent comme dures les tabatas, les elliptiques HIIT/Intervalles et les piscines
+hors Recovery/Endurance. L'ajout « RPE ≥ 8 » est retiré. Un seul fichier modifié :
+<code>src/engine/source-schedule.js</code>.</p></div>
+<div class="question"><p><b>2 · Matériel sans effet chez Yanis — laissé fidèle à la source.</b>
+Le METCON reste imposé quel que soit le matériel, comme dans le fichier source. Aucune modification :
+on signale seulement que les cases affichées ne servent pas chez Yanis.</p></div>
+<div class="question"><p><b>3 · Piscine fractionnée — gardée.</b> L'écran « Nage en longueurs »
+(séries × distance, récupération, style, temps cible) reste dans l'application. C'est un ajout
+assumé : l'expression « Nage en longueurs » apparaît <b>0 fois</b> dans les deux fichiers sources.</p></div>
+<div class="question"><p><b>4 · Aqua Tabata — confirmé tel quel.</b> Proposé à Émilie et dans la
+rotation du METCON de Yanis, exactement comme aujourd'hui. Rappel : ce n'est <b>pas</b> un ajout,
+il vient de la source (« Pool Lab → Aqua Tabata », les six protocoles « chacun en 3 niveaux »).</p></div>
 
 <h2>6. Comment ces chiffres sont obtenus</h2>
 <p><code>evolution/reglages/comparer-cardio-piscine.mjs</code> importe le vrai moteur de

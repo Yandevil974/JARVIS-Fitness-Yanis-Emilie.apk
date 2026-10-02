@@ -18,8 +18,13 @@ import { dirname, resolve } from "node:path";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const APP = resolve(ROOT, "yanis-fitness-evolution");
 
-const { sourceDay, sourcePosition, sourceTrainingDays, sourceCardioDay } =
-  await import(resolve(APP, "src/engine/source-schedule.js"));
+const {
+  sourceDay,
+  sourcePosition,
+  sourceTrainingDays,
+  sourceCardioDay,
+  sourceHardSession,
+} = await import(resolve(APP, "src/engine/source-schedule.js"));
 const legacy = JSON.parse(
   readFileSync(resolve(APP, "src/data/legacy.json"), "utf8"),
 );
@@ -411,9 +416,9 @@ const hardLegacy = (sessions) =>
     if (s.kind === "cardio") return /HIIT|Intervalles/.test(s.proto || "");
     return !/Recovery|Endurance/.test(s.proto || ""); // natation
   }).length;
-const hardApp = (activities, date) =>
-  activities.filter((a) => ["hiit", "aqua"].includes(a.type) || a.rpe >= 8)
-    .length;
+// la fonction RÉELLE de l'application, importée — pas une recopie
+const hardApp = (activities) =>
+  activities.filter((a) => sourceHardSession(a)).length;
 
 const regulation = [];
 for (const [label, def] of Object.entries(SEANCES))

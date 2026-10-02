@@ -170,7 +170,7 @@
   "joursComparés": 6552,
   "divergents": 0,
   "cardioDureesDivergentes": 0,
-  "regulationDivergente": 3
+  "regulationDivergente": 0
  },
  "equipmentCases": [
   {
@@ -771,30 +771,30 @@
   {
    "cas": "METCON elliptique HIIT + Swim Sprint ×1",
    "dureSource": 2,
-   "dureApp": 0,
+   "dureApp": 2,
    "basculeSource": "intense",
    "basculeApp": "intense"
   },
   {
    "cas": "METCON elliptique HIIT + Swim Sprint ×3",
    "dureSource": 6,
-   "dureApp": 0,
+   "dureApp": 6,
    "basculeSource": "modéré",
-   "basculeApp": "intense"
+   "basculeApp": "modéré"
   },
   {
    "cas": "METCON elliptique Intervalles + Swim Interval ×1",
    "dureSource": 2,
-   "dureApp": 0,
+   "dureApp": 2,
    "basculeSource": "intense",
    "basculeApp": "intense"
   },
   {
    "cas": "METCON elliptique Intervalles + Swim Interval ×3",
    "dureSource": 6,
-   "dureApp": 0,
+   "dureApp": 6,
    "basculeSource": "modéré",
-   "basculeApp": "intense"
+   "basculeApp": "modéré"
   },
   {
    "cas": "Aqua HIIT seul ×1",
@@ -869,16 +869,16 @@
   {
    "cas": "Cardio libre noté RPE 9 ×1",
    "dureSource": 0,
-   "dureApp": 1,
+   "dureApp": 0,
    "basculeSource": "intense",
    "basculeApp": "intense"
   },
   {
    "cas": "Cardio libre noté RPE 9 ×3",
    "dureSource": 0,
-   "dureApp": 3,
+   "dureApp": 0,
    "basculeSource": "intense",
-   "basculeApp": "modéré"
+   "basculeApp": "intense"
   }
  ],
  "dureesZones": []

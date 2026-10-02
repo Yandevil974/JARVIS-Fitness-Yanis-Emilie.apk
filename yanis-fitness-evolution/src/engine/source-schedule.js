@@ -236,6 +236,54 @@ export function sourceExtraSequence(p, date) {
   }
   return n;
 }
+/**
+ * Nom de protocole au sens du fichier source, pour la règle « séances dures ».
+ * L'application range tout dans `activities` ; le HTML séparait
+ * `state.natation`, `state.cardio` et `state.tabata`. On retrouve le nom que le
+ * fichier source écrivait dans `proto`, à partir de l'identifiant de protocole
+ * (séances guidées) ou, à défaut, du mode saisi (cardio libre).
+ */
+export function sourceProtoName(a) {
+  if (a?.protocolId)
+    return (
+      {
+        hiit: "HIIT",
+        inter: "Intervalles",
+        endu: "Endurance",
+        recup: "Récupération",
+        endurance: "Swim Endurance",
+        interval: "Swim Interval",
+        sprint: "Swim Sprint",
+        aquahiit: "Aqua HIIT",
+        aquatabata: "Aqua Tabata",
+        recovery: "Aqua Recovery",
+      }[a.protocolId] || ""
+    );
+  return (
+    {
+      hiit: "HIIT",
+      intervals: "Intervalles",
+      endurance: "Endurance",
+      moderate: "Endurance",
+      recovery: "Récupération",
+    }[a?.mode || ""] || ""
+  );
+}
+/**
+ * Règle du coach source (elite-coachExtra.js) : une séance des 7 derniers jours
+ * compte comme « dure » si c'est un tabata, un elliptique en HIIT ou en
+ * Intervalles, ou une piscine qui n'est ni Recovery ni Endurance.
+ * Trois séances dures basculent le METCON en version modérée.
+ */
+export function sourceHardSession(a) {
+  if (a?.type === "hiit") return true; // tabata : toujours dur dans la source
+  const proto = sourceProtoName(a);
+  if (["cardio", "metcon"].includes(a?.type))
+    return /HIIT|Intervalles/.test(proto);
+  if (["swim", "aqua", "recovery"].includes(a?.type))
+    return !/Recovery|Endurance/.test(proto);
+  return false;
+}
 const POOL_NAME = {
   endurance: "Swim Endurance",
   interval: "Swim Interval",
@@ -342,9 +390,7 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
       const recent = (p.activities || []).filter(
           (a) => a.date >= addDays(date, -6) && a.date <= date,
         ),
-        hard = recent.filter(
-          (a) => ["hiit", "aqua"].includes(a.type) || a.rpe >= 8,
-        ).length;
+        hard = recent.filter(sourceHardSession).length;
       const moderate = (score != null && score < 65) || hard >= 3;
       const options = rotation(
         moderate

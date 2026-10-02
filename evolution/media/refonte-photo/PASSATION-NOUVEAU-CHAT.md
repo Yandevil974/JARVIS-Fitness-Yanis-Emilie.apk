@@ -4,52 +4,62 @@
 > retouche terminé, 87 visuels) a été reprise **telle quelle** par
 > `git fetch origin arena/01a0fae1-jarvis-fitness-yanis-emilie-ap` puis
 > `git merge --ff-only FETCH_HEAD`. Aucun `reset --hard`, aucun fichier perdu.
-> **Rien de l'état chiffré du §1 ne change** : 21 lots validés, 87 visuels, APK intact.
+> **Rien de l'état chiffré du §1 ne change** : 21 lots validés, 87 visuels, APK intact,
+> aucun GIF livré remplacé, rien d'intégré dans l'app.
 
-## Chantier 1 — Cardio & piscine des deux profils (RÉGLAGES, pas des visuels)
+## Chantier 1 — Cardio & piscine des deux profils (RÉGLAGES, pas des visuels) : FAIT
 
-Vérification du moteur contre les deux fichiers sources. **Outil rejouable** :
-`evolution/reglages/comparer-cardio-piscine.mjs` → `rapport-cardio-piscine.json` →
-`page-reglages.py` → `cardio-piscine.html` (servi sur le port 8080).
+Outil rejouable : `evolution/reglages/comparer-cardio-piscine.mjs` → `rapport-cardio-piscine.json`
+→ `page-reglages.py` → `cardio-piscine.html` (port 8080). Contrôle ciblé : `verifier-seuil.mjs`.
+Il **importe le vrai moteur** (`src/engine/source-schedule.js`) et le confronte aux fonctions
+extraites des deux fichiers sources (`audit/reference/` : `elite-weekPlan.js`, `emilie-weekPlan.js`,
+`emilie-cardioDuJour.js`, `elite-coachExtra.js`).
 
 | Mesure | Résultat |
 |---|---|
-| Jours comparés (18 scénarios : 2 profils × 3 fréquences × 3 configs jours piscine, 52 semaines) | **6 552** |
+| Jours comparés (18 scénarios : 2 profils × 3 fréquences × 3 configs jours piscine × 52 semaines) | **6 552** |
 | Écarts de placement du cardio / de la piscine | **0** |
 | Écarts de durée ou de zone cardiaque (Émilie) | **0** |
-| Écarts d'auto-régulation | **3** |
+| Écarts d'auto-régulation (après correction) | **0** |
 
-**Le placement est fidèle à 100 %.** Trois écarts réels, tous sur un seul réglage :
+### Le seul défaut trouvé, et corrigé
 
-1. **Seuil « 3 séances dures / 7 jours » (Yanis)** — `src/engine/source-schedule.js`, `sourceExtra`.
-   La source (`audit/reference/elite-coachExtra.js`) compte comme dure : tout tabata, tout
-   elliptique HIIT/Intervalles, et toute piscine qui n'est ni Recovery ni Endurance.
-   L'application ne compte que `type` ∈ {`hiit`, `aqua`} (+ ajout : RPE ≥ 8).
-   → Après 3 METCON « HIIT + Swim Sprint » : source 6 dures (bascule modéré), application 0
-   (reste intense). **Le réglage ne protège plus Yanis.**
-2. **Mémoire du dernier protocole** : source = dernière séance de toute l'histoire ;
-   application = 7 derniers jours seulement → un protocole peut se répéter.
-3. **Latent (sans effet aujourd'hui)** : jours piscine de Yanis sans le garde
-   `phase.type !== "finale"` de la source — masqué car la phase finale est toujours en deload.
+**Seuil « 3 séances dures / 7 jours » (Yanis)** — `sourceExtra` dans `src/engine/source-schedule.js`.
+La source (`elite-coachExtra.js`) compte comme dure : tout tabata, tout elliptique HIIT/Intervalles,
+toute piscine hors Recovery/Endurance. L'application ne comptait que `type` ∈ {`hiit`,`aqua`}
+(+ l'ajout `rpe >= 8`). Après 3 METCON « elliptique HIIT + Swim Sprint » : source 6 dures
+(bascule modéré), application 0 (restait intense). **Le réglage ne protégeait plus Yanis.**
 
-**Deux réglages à connaître :**
+**Corrigé** par l'ajout de `sourceProtoName()` et `sourceHardSession()`, qui rejouent textuellement
+les deux expressions de la source (`/HIIT|Intervalles/`, `!/Recovery|Endurance/`) sur le nom de
+protocole reconstitué. L'ajout « RPE ≥ 8 » est **retiré** (choix explicite : retour strict à la
+source) — il se remet en une ligne. **16 cas de contrôle : 16 conformes.** 96 tests passent, build OK.
 
-- **Matériel sans effet chez Yanis** : les cases Piscine / Elliptique ne changent rien à sa
-  semaine (METCON imposé). Conforme à la source, mais les cases affichées ne servent pas.
-  Chez Émilie le même réglage fonctionne.
-- **Jour piscine par défaut d'Émilie** : `newProfile` met `poolDays: [4]` (vendredi), qui est
-  déjà un jour cardio à 4 séances/semaine → absorbé. La source démarre à `[]`.
+### Décisions de l'utilisateur (02/10/2026) — à rejouer avant le build
 
-**Additions à faire confirmer avant le build** (point 5 de la consigne) :
+1. **Seuil d'auto-régulation** → corrigé, retour strict à la source. *(seule modif de code)*
+2. **Matériel sans effet chez Yanis** → laissé **fidèle à la source**. Le METCON reste imposé
+   quel que soit le matériel (cases Piscine/Elliptique sans effet chez lui, contrairement à Émilie).
+   Aucune modification.
+3. **Piscine fractionnée** (« Nage en longueurs ») → **gardée**. C'est un ajout assumé :
+   l'expression apparaît **0 fois** dans les deux fichiers sources.
+4. **Aqua Tabata** → **confirmé tel quel** (Émilie + rotation METCON de Yanis). Ce n'est **pas**
+   un ajout : il vient de la source (« Pool Lab → Aqua Tabata », six protocoles « en 3 niveaux »).
 
-- *Piscine fractionnée* : l'écran « Nage en longueurs » (séries × distance, récup, style,
-  temps cible) est un **ajout** — « Nage en longueurs » apparaît **0 fois** dans les deux sources.
-- *Aqua Tabata d'Émilie* : **pas un ajout** — il vient de la source (« Pool Lab → Aqua Tabata »,
-  les 6 protocoles « chacun en 3 niveaux »). Déjà proposé, et dans la rotation METCON de Yanis.
-- *METCON* : contenu et rotation fidèles à la source, sauf le seuil ci-dessus.
+### Deux réglages signalés, laissés tels quels
 
-**En attente de la décision de l'utilisateur** : corriger ou non le seuil d'auto-régulation ;
-garder ou non la piscine fractionnée. Aucune ligne de code de l'application n'a été modifiée.
+- **Mémoire du dernier protocole** : source = dernière séance de toute l'histoire ;
+  application = 7 derniers jours seulement → un protocole peut se répéter après une semaine sans piscine.
+- **Jour piscine par défaut d'Émilie** : `newProfile` met `poolDays: [4]` (vendredi), qui est déjà un
+  jour cardio à 4 séances/semaine → absorbé. La source démarre à `[]`.
+- **Latent** : jours piscine de Yanis sans le garde `phase.type !== "finale"` de la source —
+  sans effet aujourd'hui car la phase finale est toujours en deload.
+
+**Fichiers modifiés :** `yanis-fitness-evolution/src/engine/source-schedule.js` (seul fichier de
+l'application touché), `evolution/media/refonte-photo/PASSATION-NOUVEAU-CHAT.md`,
+et le dossier neuf `evolution/reglages/`.
+**Le build n'a pas été refait pour livrer** : `release/` a été restauré à `c58a207` après vérification
+(`npm run build` sert ici de contrôle, la sortie n'est pas conservée).
 
 ---
 
