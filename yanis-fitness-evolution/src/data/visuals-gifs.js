@@ -1,0 +1,264 @@
+// Visuels d'étapes en GIF humain (homme / femme), issus du corpus des 389
+// visuels livrés et des retouches validées. Rien n'est un dessin : ce sont les
+// mêmes GIF que les exercices, attribués aux étapes d'échauffement, de piscine,
+// de cardio et d'étirements, pour que le chrono affiche toujours un humain animé.
+export const GIF_STEPS = {
+ "cardio-elliptique-fractionne": {
+  "femme": "/media/17b2e2fcfe181f96.gif",
+  "homme": "/media/d003581431ffef91.gif"
+ },
+ "cardio-elliptique-mise-en-route": {
+  "femme": "/media/faf36719f9d19e75.gif",
+  "homme": "/media/7acb83b71752c44c.gif"
+ },
+ "cardio-elliptique-recup": {
+  "femme": "/media/29b722fb3b737b89.gif",
+  "homme": "/media/7d74994e8d8777be.gif"
+ },
+ "cardio-elliptique-retour": {
+  "femme": "/media/4f2c80886ae7d326.gif",
+  "homme": "/media/098935746d0a45c3.gif"
+ },
+ "cardio-transition": {
+  "femme": "/media/524c459ec951747e.gif",
+  "homme": "/media/bf54d3bdd17514e2.gif"
+ },
+ "guide-aqua-jogging": {
+  "femme": "/media/34bb7bcf656e8877.gif",
+  "homme": "/media/1df3b49ed74b1925.gif"
+ },
+ "guide-battements-au-bord": {
+  "femme": "/media/412e719e885c20ed.gif",
+  "homme": "/media/28c30533035866c3.gif"
+ },
+ "guide-ciseaux-au-bord": {
+  "femme": "/media/f8fed44ca325852f.gif",
+  "homme": "/media/9bb0c2ca85d475fe.gif"
+ },
+ "guide-gainage-vertical": {
+  "femme": "/media/e4545f4946f3fc0a.gif",
+  "homme": "/media/ea89dfb8521cdcc6.gif"
+ },
+ "guide-nage-douce-respiration": {
+  "femme": "/media/a9b2430d317e3bba.gif",
+  "homme": "/media/f5754e3553d3922c.gif"
+ },
+ "guide-talons-fesses": {
+  "femme": "/media/4ffe4ebe811fc2a8.gif",
+  "homme": "/media/5d72daefeab297b1.gif"
+ },
+ "pool-deplacements-lateraux": {
+  "femme": "/media/0bddac76645e3de9.gif",
+  "homme": "/media/1577377e6f4c748e.gif"
+ },
+ "pool-etirements-bord": {
+  "femme": "/media/8f862f2ae511a13e.gif",
+  "homme": "/media/b8ec7015069f653b.gif"
+ },
+ "pool-fractionne": {
+  "femme": "/media/19750699871755e5.gif",
+  "homme": "/media/0c5c94c45d4c9963.gif"
+ },
+ "pool-marche-aquatique": {
+  "femme": "/media/60207d563d74fd85.gif",
+  "homme": "/media/333e9e6ac33e22bb.gif"
+ },
+ "pool-nage-douce": {
+  "femme": "/media/3d44d275ca25d146.gif",
+  "homme": "/media/3d2c2e5b9e90f3b7.gif"
+ },
+ "pool-nage-statique": {
+  "femme": "/media/236c40fd157f0f41.gif",
+  "homme": "/media/fcf1161f1d9a09d8.gif"
+ },
+ "pool-recup-complete": {
+  "femme": "/media/d72ff5db739f1e85.gif",
+  "homme": "/media/08daba09974f37b0.gif"
+ },
+ "pool-recup-tabata": {
+  "femme": "/media/60207d563d74fd85.gif",
+  "homme": "/media/333e9e6ac33e22bb.gif"
+ },
+ "pool-retour-calme": {
+  "femme": "/media/7ff5fea738f927d8.gif",
+  "homme": "/media/b114493c7ecf5b5a.gif"
+ },
+ "pool-sprint": {
+  "femme": "/media/47746e12d90c5e2c.gif",
+  "homme": "/media/1cecadb65e47315a.gif"
+ },
+ "stretch-adduction-debout": {
+  "homme": "/media/6ec4644eeb54b838.gif"
+ },
+ "stretch-avb-extenseurs": {
+  "homme": "/media/9010e2f9e3d14233.gif"
+ },
+ "stretch-avb-flechisseurs": {
+  "homme": "/media/b2b87c3a254bd7fd.gif"
+ },
+ "stretch-biceps": {
+  "homme": "/media/fea2fafa28306ecc.gif"
+ },
+ "stretch-cobra": {
+  "homme": "/media/70f0e7b4bad530c7.gif"
+ },
+ "stretch-dos-enfant": {
+  "homme": "/media/616fc69f3a7503bf.gif"
+ },
+ "stretch-dos-suspension": {
+  "homme": "/media/bcea47097d3f6f50.gif"
+ },
+ "stretch-ep-arriere": {
+  "homme": "/media/35a75b58860e85ec.gif"
+ },
+ "stretch-ep-lateral": {
+  "homme": "/media/64889e5c53a06784.gif"
+ },
+ "stretch-ep-posterieur": {
+  "homme": "/media/f704179757f839cd.gif"
+ },
+ "stretch-flechisseur-hanche": {
+  "homme": "/media/8b2309caa8cad1ce.gif"
+ },
+ "stretch-grenouille": {
+  "homme": "/media/fc041ed2c5084f83.gif"
+ },
+ "stretch-isc-flexion": {
+  "homme": "/media/b5c280103b62b9e6.gif"
+ },
+ "stretch-isc-une-jambe": {
+  "homme": "/media/93fc13ba7cb57d7a.gif"
+ },
+ "stretch-mollet-marche": {
+  "homme": "/media/9151efe4c2262c96.gif"
+ },
+ "stretch-mollet-mur": {
+  "homme": "/media/1e6e0dd8a12b35d6.gif"
+ },
+ "stretch-pec-mur": {
+  "homme": "/media/0cf727335e619341.gif"
+ },
+ "stretch-pec-porte": {
+  "homme": "/media/214150ca9201891b.gif"
+ },
+ "stretch-pigeon": {
+  "homme": "/media/2af48ab193eaafb4.gif"
+ },
+ "stretch-piriforme": {
+  "homme": "/media/1e8d5bfcc0bc9ead.gif"
+ },
+ "stretch-quad-cote": {
+  "homme": "/media/69858722346f40bf.gif"
+ },
+ "stretch-quad-debout": {
+  "homme": "/media/58caaf8e87d7a050.gif"
+ },
+ "stretch-respiration": {
+  "homme": "/media/54a3ca1547a3a613.gif"
+ },
+ "stretch-torsion-allongee": {
+  "homme": "/media/cf7af56885b9a27b.gif"
+ },
+ "stretch-triceps-coude": {
+  "homme": "/media/385ff605943ddd08.gif"
+ },
+ "stretch-triceps-dos": {
+  "homme": "/media/8f53c697bc6ba576.gif"
+ },
+ "warmup-approche": {
+  "homme": "/media/9fc2b36203570787.gif"
+ },
+ "warmup-mobilite": {
+  "homme": "/media/df8e7e9b65108876.gif"
+ },
+ "warmup-route": {
+  "homme": "/media/7a19c37100cf148f.gif"
+ }
+};
+
+// Visuel d'étape pour un profil donné ('elite' -> homme, 'emilie' -> femme),
+// avec repli sur l'autre variante si elle n'existe pas.
+export function stepGif(cle, profil) {
+  const v = GIF_STEPS[cle];
+  if (!v) return null;
+  const veut = profil === 'emilie' ? 'femme' : 'homme';
+  return v[veut] || v.homme || v.femme || null;
+}
+
+// Nom d'étirement (tel qu'affiché) -> clé de visuel humain.
+export const STRETCH_KEY_BY_NAME = {
+ "Adduction de la hanche debout": "stretch-adduction-debout",
+ "Allongé sur le côté": "stretch-quad-cote",
+ "Bras tendu contre la poitrine": "stretch-ep-lateral",
+ "Bras tendu contre le mur": "stretch-pec-mur",
+ "Bras tendu derrière": "stretch-biceps",
+ "Bras tendu devant, main tirée": "stretch-ep-posterieur",
+ "Cobra doux": "stretch-cobra",
+ "Coude au-dessus de la tête": "stretch-triceps-coude",
+ "Flexion avant jambes tendues": "stretch-isc-flexion",
+ "Grenouille (plantes jointes)": "stretch-grenouille",
+ "Main dans le dos": "stretch-triceps-dos",
+ "Mains croisées derrière le dos": "stretch-ep-arriere",
+ "Mollet en escalier": "stretch-mollet-marche",
+ "Pigeon assis": "stretch-pigeon",
+ "Position de l'enfant": "stretch-dos-enfant",
+ "Position de l'enfant (Balasana)": "stretch-dos-enfant",
+ "Respiration diaphragmatique allongée": "stretch-respiration",
+ "Suspension à la barre": "stretch-dos-suspension",
+ "Talon vers la fesse (debout)": "stretch-quad-debout",
+ "Torsion allongée": "stretch-torsion-allongee",
+ "Torsion allongée genoux": "stretch-torsion-allongee",
+ "Une jambe tendue, une pliée": "stretch-isc-une-jambe",
+ "Étirement contre le mur": "stretch-mollet-mur",
+ "Étirement dans l'encadrement de porte": "stretch-pec-porte",
+ "Étirement des extenseurs": "stretch-avb-extenseurs",
+ "Étirement des fléchisseurs": "stretch-avb-flechisseurs",
+ "Étirement du cobra": "stretch-cobra",
+ "Étirement du fléchisseur de hanche (chevalier)": "stretch-flechisseur-hanche",
+ "Étirement du piriforme assis": "stretch-piriforme"
+};
+
+// Résolveur « nom d'étape -> GIF humain » : garantit qu'un chrono affiche
+// toujours un humain animé, même si l'étape n'embarque pas d'image.
+const STEP_KEYWORDS = [
+  [/nage statique/i, "pool-nage-statique"],
+  [/nage douce|nage en longueurs|nage facile|nager doucement/i, "pool-nage-douce"],
+  [/marche aquatique/i, "pool-marche-aquatique"],
+  [/fractionn/i, "pool-fractionne"],
+  [/sprint/i, "pool-sprint"],
+  [/r[ée]cup compl[èe]te|souffler/i, "pool-recup-complete"],
+  [/tabata/i, "pool-recup-tabata"],
+  [/retour au calme/i, "pool-retour-calme"],
+  [/d[ée]placements? lat[ée]raux?/i, "pool-deplacements-lateraux"],
+  [/[ée]tirements? au bord/i, "pool-etirements-bord"],
+  [/ciseaux/i, "guide-ciseaux-au-bord"],
+  [/aqua[- ]?jogging/i, "guide-aqua-jogging"],
+  [/battements?/i, "guide-battements-au-bord"],
+  [/talons?[- ]fesses/i, "guide-talons-fesses"],
+  [/gainage (au bord|vertical)/i, "guide-gainage-vertical"],
+  [/elliptique.*r[ée]cup|r[ée]cup.*active/i, "cardio-elliptique-recup"],
+  [/retour au calme elliptique/i, "cardio-elliptique-retour"],
+  [/transition/i, "cardio-transition"],
+  [/elliptique/i, "cardio-elliptique-mise-en-route"],
+  [/mise en route|marche|r[ée]veil|cardio/i, "warmup-route"],
+  [/mobilit[ée]/i, "warmup-mobilite"],
+  [/activation|approche/i, "warmup-approche"],
+];
+
+export function stepGifFromName(nom, profil) {
+  const n = String(nom || "");
+  if (!n) return null;
+  // Un étirement nommé exactement (table dédiée) passe en premier.
+  const stretch = STRETCH_KEY_BY_NAME?.[n];
+  if (stretch) {
+    const g = stepGif(stretch, profil);
+    if (g) return g;
+  }
+  for (const [motif, cle] of STEP_KEYWORDS) {
+    if (motif.test(n)) {
+      const g = stepGif(cle, profil);
+      if (g) return g;
+    }
+  }
+  return null;
+}

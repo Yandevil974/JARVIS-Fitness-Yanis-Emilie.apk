@@ -15,9 +15,11 @@ import {
   POOL_PROTOCOLS,
   POOL_GUIDES,
   RECOVERY_EXERCISES,
+  stretchImage,
   exerciseById,
 } from "../../data/library.js";
 import { stepGuide } from "../../data/visuals.js";
+import { stepGifFromName, STRETCH_KEY_BY_NAME, stepGif } from "../../data/visuals-gifs.js";
 import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
@@ -37,6 +39,13 @@ export function TimerModal() {
         total) *
       100;
   const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
+  // Un chrono affiche toujours un humain animé : image de l'étape, sinon guide
+  // piscine, sinon résolution par nom d'étape (étirement, cardio, aqua, tabata).
+  const stepImage =
+    step.img ||
+    guide?.img ||
+    stepGif(STRETCH_KEY_BY_NAME[step.name], p.id) ||
+    stepGifFromName(step.name, p.id);
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {
@@ -100,16 +109,16 @@ export function TimerModal() {
           {durationLabel(t.done ? 0 : t.remaining)}
         </div>
         {!t.done &&
-          (step.img ? (
+          (stepImage ? (
             <button
               type="button"
               className="timer-step-visual"
               title="Agrandir"
               onClick={() =>
-                setModal({ type: "image", src: step.img, title: step.name })
+                setModal({ type: "image", src: stepImage, title: step.name })
               }
             >
-              <img src={assetSrc(step.img)} alt={step.name} />
+              <img src={assetSrc(stepImage)} alt={step.name} />
               <Icon name="Maximize2" size={15} />
             </button>
           ) : (
@@ -469,19 +478,19 @@ export function CooldownModal({ session }) {
             <span className="warmup-step-number">
               {String(i + 1).padStart(2, "0")}
             </span>
-            {ex.img && (
+            {stretchImage(ex, p.id) && (
               <button
                 type="button"
                 className="warmup-step-thumb"
                 title="Agrandir"
                 onClick={() =>
-                  setModal({ type: "image", src: ex.img, title: ex.name })
+                  setModal({ type: "image", src: stretchImage(ex, p.id), title: ex.name })
                 }
               >
                 <img
                   className="warmup-step-img"
                   loading="lazy"
-                  src={assetSrc(ex.img)}
+                  src={assetSrc(stretchImage(ex, p.id))}
                   alt={ex.name}
                 />
                 <Icon name="Maximize2" size={13} />
@@ -504,7 +513,7 @@ export function CooldownModal({ session }) {
                 name: e.name,
                 seconds: e.seconds || 30,
                 instruction: e.instruction,
-                img: e.img,
+                img: stretchImage(e, p.id),
                 pattern: "stretch",
               })),
               { type: "warmup", name: "Étirements guidés" },
@@ -549,14 +558,27 @@ export function ImageViewer({ src, title, motion }) {
   );
 }
 export function StretchModal({ exercise }) {
-  const { closeModal, setTimer } = useApp();
+  const { p, setModal, closeModal, setTimer } = useApp();
+  const visuel = stretchImage(exercise, p.id);
   return (
     <Modal
       title={exercise.name}
       subtitle={`${exercise.duration} · étirement doux, jamais douloureux`}
       onClose={closeModal}
     >
-      <Movement exercise={exercise} />
+      {visuel ? (
+        <button
+          type="button"
+          className="timer-step-visual"
+          title="Agrandir"
+          onClick={() => setModal({ type: "image", src: visuel, title: exercise.name })}
+        >
+          <img src={assetSrc(visuel)} alt={exercise.name} />
+          <Icon name="Maximize2" size={15} />
+        </button>
+      ) : (
+        <Movement exercise={exercise} />
+      )}
       <p className="stretch-instruction">{exercise.instruction}</p>
       <div className="info-line">
         <Icon name="Wind" />
@@ -578,6 +600,7 @@ export function StretchModal({ exercise }) {
                   seconds: 30,
                   pattern: "stretch",
                   instruction: exercise.instruction,
+                  img: visuel,
                 },
               ],
               { type: "recovery", name: exercise.name },

@@ -20,6 +20,7 @@ import {
   forceSourceLabel,
   parseTargetReps,
 } from "./force.js";
+import { stepGif } from "../data/visuals-gifs.js";
 import { WARMUP_IMAGES } from "../data/visuals.js";
 export function estimate1RM(weight, reps) {
   const w = num(weight),
@@ -419,7 +420,7 @@ export function warmup(p, session) {
       name: "Mise en route",
       seconds: 180,
       pattern: "walk",
-      img: WARMUP_IMAGES.route,
+      img: stepGif("warmup-route", p.id) || WARMUP_IMAGES.route,
       instruction:
         "Marche ou vélo très facile. Vous devez pouvoir parler confortablement.",
     },
@@ -427,7 +428,7 @@ export function warmup(p, session) {
       name: lower ? "Mobilité hanches & chevilles" : "Mobilité des épaules",
       seconds: 60,
       pattern: lower ? "lunge" : "lat",
-      img: WARMUP_IMAGES.mobilite,
+      img: stepGif("warmup-mobilite", p.id) || WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Mobilisez doucement les chevilles et les hanches, sans forcer."
         : "Cercles d’épaules lents, puis mouvements scapulaires contrôlés.",
@@ -436,7 +437,7 @@ export function warmup(p, session) {
       name: lower ? "Activation fessiers" : "Activation scapulaire",
       seconds: 60,
       pattern: lower ? "bridge" : "row",
-      img: WARMUP_IMAGES.mobilite,
+      img: stepGif("warmup-mobilite", p.id) || WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Ponts fessiers au sol, 10 répétitions contrôlées."
         : "Rétractions des omoplates et rotations externes sans fatigue.",
@@ -445,7 +446,7 @@ export function warmup(p, session) {
       name: `Approche ${i + 1}${w > 0 ? " · " + roundLoad(w * pct, p.user.increment || 2.5, "down") + " kg" : " · charge légère à choisir"}`,
       seconds: 60,
       pattern: ex?.pattern || "squat",
-      img: WARMUP_IMAGES.approche,
+      img: stepGif("warmup-approche", p.id) || WARMUP_IMAGES.approche,
       instruction: `${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
     })),
   ];
