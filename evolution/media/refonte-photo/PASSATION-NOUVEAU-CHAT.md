@@ -661,3 +661,66 @@ Conséquence pratique : le **lot 9 (350 à 353) est sorti identique à l'octet p
 ## .gitignore ajoute (02/10/2026)
 
 Le depot n'avait pas de `.gitignore`. Lors d'une purge, un `git add -A` a commite tout le venv `.cache/pyvenv` (~40 Mo). Un `.gitignore` a ete ajoute (commit `b2a7966`) couvrant `.cache/`, `evolution/media/refonte-photo/hd-2026-09-30/tri/` et `__pycache__/`. Si l'arbre local diverge apres une purge avec un commit qui ne contient que le venv, l'annuler : verifier d'abord `git show --name-only <sha> | grep -v '.cache/pyvenv'` (s'il ne reste que la ligne d'en-tete, il n'y a aucun travail reel dedans), puis `git reset --hard FETCH_HEAD`.
+
+---
+
+# POINT D'ARRET — 02/10/2026 au soir
+
+L'utilisateur a valide le lot 12 puis demande une pause. Reprendre ici.
+
+## Ou en est le chantier
+
+**12 lots valides, 49 numeros** (plus le prototype n°44) = 50 visuels refaits a partir des PNG natifs.
+Chaque lot a son `hd-2026-09-30/VALIDATION-LOTn-2026-10-02.json` (sha256 de chaque fichier + mesures + particularites).
+Sur les 37 numeros restants, **0 pixel modifie hors zone** a chaque fois (48 phases controlees). Aucun GIF livre remplace, APK intact, rien d'integre dans l'app.
+
+Recapitulatif des lots : 1 (45,48,19,85) · 2 (11,12,30,42) · 3 (387,388,264,14) · 4 (131,133,114,23) · 5 (364,365,366,340) · 6 (341,342,376,377) · 7 (378,379,217,208) · 8 (247,347,348,349) · 9 (350,351,352,353) · 10 (354,215,337,338,339) · 11 (355,214,250,163) · 12 (310,231,263,172).
+
+## Prochaine file — 37 numeros, 35 retouches
+
+Triee par erreur d'alignement croissante (groupes de planche deja fusionnes) :
+
+| numeros | err. | planche |
+|---|---|---|
+| 28 | 4.7 | `planches/lot15/crunch-sur-swiss-ball.png` |
+| 22 | 4.84 | `planches/lot18/california-press-barre-au-cou.png` |
+| 267 | 4.86 | `planches/lot06/etirement-des-flechisseurs.png` |
+| 303 | 4.97 | `planches/lot04/position-de-l-enfant-balasana.png` |
+| 269 | 5.01 | `planches/lot05/etirement-du-flechisseur-de-hanche-chevalier.png` |
+| 270 | 5.04 | `planches/lot04/etirement-du-piriforme-assis.png` |
+| 295 | 5.11 | `planches/lot04/pigeon-assis.png` |
+| 331 | 5.48 | `planches/lot08/une-jambe-tendue-une-pliee.png` |
+| 273 | 5.77 | `planches/lot04/flexion-avant-jambes-tendues.png` |
+| 1 | 6.01 | `planches/lot34/ab-wheel-roulette.png` |
+| 325 | 6.15 | `planches/lot06/talon-vers-la-fesse-debout.png` |
+| 66 | 6.26 | `planches/lot38/developpe-halteres-incline-pronation.png` |
+Les 12 premiers groupes sont listes ; au-dela, relancer le tri (voir ci-dessous) car la file se recalcule a chaque lot.
+
+## Trois pieges deja rencontres — ne pas les refaire
+
+1. **Lire la file triee par erreur, pas par numero.** `PRIORITE-SOURCES.json` est en ordre de numero. J'ai annonce une fois « 158, 268, 151 » qui n'existaient pas dans la file : c'etait le debut de la liste en ordre de numero. Toujours trier par `erreur_alignement_max` et grouper par `(chemin_planche, fenetres)` avant d'annoncer quoi que ce soit.
+2. **Un lot peut ne contenir aucune nouvelle image.** Les numeros d'un meme groupe sortent a l'octet pres identiques (350-354 = le 347 ; 337-339 ; 340-342 ; 376-379). Le dire clairement a l'utilisateur au lieu de lui faire revalider la meme image.
+3. **Trois regimes de vert, pas un seul.** (a) vert pale a remonter (le plus frequent, S 0,5-0,7 → 0,88) ; (b) vert deja bon, gain de nettete pure (250, 163, 376-379) ; (c) **vert SUR-sature a faire descendre** (lot 12 : 310 a 0,991 → 0,929, 231 a 0,957 → 0,920, 172 a 0,974 → 0,929). Le cas (c) fait paraitre le vert moins intense qu'avant alors qu'il rejoint la reference 0,914 : le signaler, c'est un choix d'oeil. L'utilisateur a valide les trois.
+
+## Apres une purge du sandbox — procedure verifiee 11 fois
+
+La purge remet l'arbre local sur `ddd1fb9` (main) alors que la pointe reelle est sur le distant, et efface `.cache/` (venv + sources extraites), `refs/remotes/base/*` et le serveur de validation.
+
+    git fetch origin arena/01a0fae1-jarvis-fitness-yanis-emilie-ap
+    git log --oneline -2                      # si HEAD = ddd1fb9 + un commit a vous : commit egarre
+    git show --name-only --oneline HEAD | grep -v '\.cache/pyvenv'
+    #   si cette ligne ne rend QUE l'en-tete du commit -> aucun travail reel dedans -> l'annuler :
+    git reset --hard FETCH_HEAD
+    #   sinon -> fast-forward simple :
+    git merge --ff-only FETCH_HEAD
+
+Puis recreer l'environnement **dans la meme commande** que le travail (il est purge en 1 a 2 minutes) :
+
+    python3 -m venv .cache/pyvenv && .cache/pyvenv/bin/pip install -q pillow numpy
+    git fetch --depth=1 origin c685298378773817460fb358bc605af7ce154b8b:refs/remotes/base/lots-complets
+
+Un `.gitignore` existe depuis le commit `b2a7966` (`.cache/`, `tri/`, `__pycache__/`) : sans lui, un `git add -A` commite tout le venv.
+
+## Pour la suite du chantier (rappel, non commence)
+
+Cardio/piscine des deux profils → visuels piscine/aqua/elliptique sans source native (34 numeros « femme ») → build de l'app → IA conversationnelle en dernier. Avant le build, rappeler a l'utilisateur de confirmer les ajouts metcon + piscine fractionnee et/ou l'Aqua Tabata d'Emilie.
