@@ -34,7 +34,10 @@ def etat_lots():
             continue
         ctr = json.load(open(d / 'CONTROLES.json'))
         vals = sorted(BASE.glob(f'VALIDATION-LOT{d.name[3:]}-*.json'))
-        numeros = ', '.join('n°' + str(x) for x in ctr.get('numeros', []))
+        # NB : le champ 'numeros' de lot2/CONTROLES.json est erroné (il liste 1, 9, 10, 12 qui
+        # sont les numéros ÉCARTÉS). On prend donc les numéros réellement produits.
+        faits = sorted(int(k) for k in ctr.get('numeros_detail', {}))
+        numeros = ', '.join('n°' + str(x) for x in (faits or ctr.get('numeros', [])))
         lots.append((int(d.name[3:]), d.name, numeros, bool(vals)))
     return lots
 
