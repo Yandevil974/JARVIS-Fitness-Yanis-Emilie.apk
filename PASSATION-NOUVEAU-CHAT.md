@@ -47,8 +47,15 @@ humains, variante homme/femme :
 - **10 étapes de protocole piscine/aqua** et **5 étapes de cardio elliptique** ;
 - **3 étapes d'échauffement** (mise en route, mobilité, approche).
 Un **résolveur « nom d'étape → GIF humain »** a été ajouté : tout chrono affiche un humain
-animé même si l'étape ne transporte pas d'image. 0 image statique restante, 0 visuel
-introuvable.
+animé même si l'étape ne transporte pas d'image. Deux trous ont été bouchés dans la
+foulée : le **dernier exercice de musculation** encore illustré par une image statique
+(« Développé haltères assis » → GIF humain vérifié à l'œil) et les **chronos lancés sans
+image** depuis les routines (respiration lente, mobilité des épaules, étirement ouvert
+depuis la bibliothèque). Un **filet de sécurité** choisit désormais un GIF humain selon la
+nature de l'effort (breathe, stretch, swim, aqua, walk, run, row, lat, curl) : aucun chrono,
+quelle que soit son origine, ne peut plus rester sans humain animé.
+Contrôles : **209/209 exercices**, **420 étapes** de protocoles piscine/aqua, 18 étapes
+écrites en dur, 70 étirements/échauffement, 22 replis — **0 sans GIF, 0 visuel introuvable**.
 
 **C. Livraison.** APK signé (keystore du dépôt) construit par workflow sur tag `v*`, puis
 copié dans `downloads/` par `mirror-apk.yml` → lien `raw` à coller dans Chrome. 96 tests :

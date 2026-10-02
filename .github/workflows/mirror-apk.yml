@@ -16,11 +16,11 @@ on:
       tag:
         description: "Tag de la release a copier"
         required: true
-        default: "v1.5.1-chrono-gifs"
+        default: "v1.5.1-chrono-gifs-v2"
       nom:
         description: "Nom du fichier dans downloads/"
         required: true
-        default: "Yanis-Fitness-Evolution-1.5.1-chrono-gifs.apk"
+        default: "Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v2.apk"
 
 permissions:
   contents: write
@@ -31,7 +31,7 @@ jobs:
     timeout-minutes: 15
     env:
       TAG: ${{ github.event.inputs.tag || 'v1.5.1-chrono-gifs' }}
-      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.5.1-chrono-gifs.apk' }}
+      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v2.apk' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
