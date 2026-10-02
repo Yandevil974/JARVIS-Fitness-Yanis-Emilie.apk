@@ -6,6 +6,7 @@ import {
   CARDIO_STEPS,
   WARMUP_IMAGES,
 } from "./visuals.js";
+import { GIF_OVERRIDES, POOL_IMG_OVERRIDES } from "./gif-overrides.js";
 export { legacy };
 export { STRETCH_IMAGES, POOL_STEP_IMAGES, CARDIO_STEPS, WARMUP_IMAGES };
 export const MUSCLES = {
@@ -275,7 +276,7 @@ export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
     rest: Number(rest) || 60,
     note: textOnly(note),
     tip: textOnly(guide?.tip),
-    gif: guide?.img || null,
+    gif: GIF_OVERRIDES[n] || guide?.img || null,
     level: /test|inertie|snatch|drop|myo|1,5/.test(n)
       ? "Avancé"
       : equipment.includes("bodyweight")
@@ -412,7 +413,8 @@ export const POOL_PROTOCOLS = legacy.emilie.POOL_PROTOS.map((p) => ({
 }));
 export const POOL_GUIDES = legacy.emilie.POOL_GUIDES.map((g) => ({
   ...g,
-  img: g.img || POOL_STEP_IMAGES[g.t] || null,
+  // Le visuel animé humain (retouché, validé) remplace l'illustration statique.
+  img: POOL_IMG_OVERRIDES[g.t] || g.img || POOL_STEP_IMAGES[g.t] || null,
   h: g.h.map(textOnly),
 }));
 export const FOOD = legacy.elite.ALIMENTS;
