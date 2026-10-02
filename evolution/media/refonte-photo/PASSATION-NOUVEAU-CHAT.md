@@ -1,3 +1,58 @@
+# ÉTAT AU 02/10/2026 — BRANCHE `arena/01a0fc53-jarvis-fitness-yanis-emilie-ap`
+
+> **Reprise du 02/10/2026.** La branche `arena/01a0fae1-…` (tête `c58a207`, programme de
+> retouche terminé, 87 visuels) a été reprise **telle quelle** par
+> `git fetch origin arena/01a0fae1-jarvis-fitness-yanis-emilie-ap` puis
+> `git merge --ff-only FETCH_HEAD`. Aucun `reset --hard`, aucun fichier perdu.
+> **Rien de l'état chiffré du §1 ne change** : 21 lots validés, 87 visuels, APK intact.
+
+## Chantier 1 — Cardio & piscine des deux profils (RÉGLAGES, pas des visuels)
+
+Vérification du moteur contre les deux fichiers sources. **Outil rejouable** :
+`evolution/reglages/comparer-cardio-piscine.mjs` → `rapport-cardio-piscine.json` →
+`page-reglages.py` → `cardio-piscine.html` (servi sur le port 8080).
+
+| Mesure | Résultat |
+|---|---|
+| Jours comparés (18 scénarios : 2 profils × 3 fréquences × 3 configs jours piscine, 52 semaines) | **6 552** |
+| Écarts de placement du cardio / de la piscine | **0** |
+| Écarts de durée ou de zone cardiaque (Émilie) | **0** |
+| Écarts d'auto-régulation | **3** |
+
+**Le placement est fidèle à 100 %.** Trois écarts réels, tous sur un seul réglage :
+
+1. **Seuil « 3 séances dures / 7 jours » (Yanis)** — `src/engine/source-schedule.js`, `sourceExtra`.
+   La source (`audit/reference/elite-coachExtra.js`) compte comme dure : tout tabata, tout
+   elliptique HIIT/Intervalles, et toute piscine qui n'est ni Recovery ni Endurance.
+   L'application ne compte que `type` ∈ {`hiit`, `aqua`} (+ ajout : RPE ≥ 8).
+   → Après 3 METCON « HIIT + Swim Sprint » : source 6 dures (bascule modéré), application 0
+   (reste intense). **Le réglage ne protège plus Yanis.**
+2. **Mémoire du dernier protocole** : source = dernière séance de toute l'histoire ;
+   application = 7 derniers jours seulement → un protocole peut se répéter.
+3. **Latent (sans effet aujourd'hui)** : jours piscine de Yanis sans le garde
+   `phase.type !== "finale"` de la source — masqué car la phase finale est toujours en deload.
+
+**Deux réglages à connaître :**
+
+- **Matériel sans effet chez Yanis** : les cases Piscine / Elliptique ne changent rien à sa
+  semaine (METCON imposé). Conforme à la source, mais les cases affichées ne servent pas.
+  Chez Émilie le même réglage fonctionne.
+- **Jour piscine par défaut d'Émilie** : `newProfile` met `poolDays: [4]` (vendredi), qui est
+  déjà un jour cardio à 4 séances/semaine → absorbé. La source démarre à `[]`.
+
+**Additions à faire confirmer avant le build** (point 5 de la consigne) :
+
+- *Piscine fractionnée* : l'écran « Nage en longueurs » (séries × distance, récup, style,
+  temps cible) est un **ajout** — « Nage en longueurs » apparaît **0 fois** dans les deux sources.
+- *Aqua Tabata d'Émilie* : **pas un ajout** — il vient de la source (« Pool Lab → Aqua Tabata »,
+  les 6 protocoles « chacun en 3 niveaux »). Déjà proposé, et dans la rotation METCON de Yanis.
+- *METCON* : contenu et rotation fidèles à la source, sauf le seuil ci-dessus.
+
+**En attente de la décision de l'utilisateur** : corriger ou non le seuil d'auto-régulation ;
+garder ou non la piscine fractionnée. Aucune ligne de code de l'application n'a été modifiée.
+
+---
+
 # ÉTAT AU 01/10/2026 — BRANCHE `arena/01a0edb7-jarvis-fitness-yanis-emilie-ap`
 
 > **Suite du chantier (02/10/2026) : branche `arena/01a0fae1-jarvis-fitness-yanis-emilie-ap`.**

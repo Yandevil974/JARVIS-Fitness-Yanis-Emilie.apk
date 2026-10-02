@@ -1,0 +1,885 @@
+{
+ "start": "2026-09-07",
+ "scenarios": [
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 3,
+   "joursPiscine": "aucun jour piscine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 3,
+   "joursPiscine": "jeudi + dimanche (L=0)",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 3,
+   "joursPiscine": "toute la semaine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 4,
+   "joursPiscine": "aucun jour piscine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 4,
+   "joursPiscine": "jeudi + dimanche (L=0)",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 4,
+   "joursPiscine": "toute la semaine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 5,
+   "joursPiscine": "aucun jour piscine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 5,
+   "joursPiscine": "jeudi + dimanche (L=0)",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "elite",
+   "nom": "Yanis",
+   "frequence": 5,
+   "joursPiscine": "toute la semaine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 3,
+   "joursPiscine": "aucun jour piscine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 3,
+   "joursPiscine": "jeudi + dimanche (L=0)",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 3,
+   "joursPiscine": "toute la semaine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 4,
+   "joursPiscine": "aucun jour piscine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 4,
+   "joursPiscine": "jeudi + dimanche (L=0)",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 4,
+   "joursPiscine": "toute la semaine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 5,
+   "joursPiscine": "aucun jour piscine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 5,
+   "joursPiscine": "jeudi + dimanche (L=0)",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  },
+  {
+   "profil": "emilie",
+   "nom": "Émilie",
+   "frequence": 5,
+   "joursPiscine": "toute la semaine",
+   "jours": 364,
+   "divergents": 0,
+   "echantillons": {}
+  }
+ ],
+ "divergences": {},
+ "totals": {
+  "scenarios": 18,
+  "joursComparés": 6552,
+  "divergents": 0,
+  "cardioDureesDivergentes": 0,
+  "regulationDivergente": 3
+ },
+ "equipmentCases": [
+  {
+   "profil": "Yanis",
+   "materiel": "piscine + elliptique",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "Bras & épaules",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "Jambes",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "Pectoraux & dos",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    },
+    {
+     "jour": "sam",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  },
+  {
+   "profil": "Yanis",
+   "materiel": "elliptique seulement",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "Bras & épaules",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "Jambes",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "Pectoraux & dos",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    },
+    {
+     "jour": "sam",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  },
+  {
+   "profil": "Yanis",
+   "materiel": "piscine seulement",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "Bras & épaules",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "Jambes",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "Pectoraux & dos",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    },
+    {
+     "jour": "sam",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  },
+  {
+   "profil": "Yanis",
+   "materiel": "ni l’un ni l’autre",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "Bras & épaules",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "Jambes",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "Pectoraux & dos",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    },
+    {
+     "jour": "sam",
+     "type": "metcon",
+     "nom": "METCON elliptique + piscine",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  },
+  {
+   "profil": "Émilie",
+   "materiel": "piscine + elliptique",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "🍑 Fessiers + ischios + abdominaux",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "💪 Haut du corps + ventre + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "cardio",
+     "nom": "Cardio elliptique",
+     "cardio": "elliptique 20 min Z1"
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "🍑 Fessiers + jambes",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "swim",
+     "nom": "Piscine · programme source",
+     "cardio": "piscine 25 min Z1"
+    },
+    {
+     "jour": "sam",
+     "type": "strength",
+     "nom": "🔥 Full body + fessiers + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  },
+  {
+   "profil": "Émilie",
+   "materiel": "elliptique seulement",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "🍑 Fessiers + ischios + abdominaux",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "💪 Haut du corps + ventre + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "cardio",
+     "nom": "Cardio elliptique",
+     "cardio": "elliptique 20 min Z1"
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "🍑 Fessiers + jambes",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "cardio",
+     "nom": "Cardio elliptique",
+     "cardio": "elliptique 20 min Z1"
+    },
+    {
+     "jour": "sam",
+     "type": "strength",
+     "nom": "🔥 Full body + fessiers + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  },
+  {
+   "profil": "Émilie",
+   "materiel": "piscine seulement",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "🍑 Fessiers + ischios + abdominaux",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "💪 Haut du corps + ventre + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "recovery",
+     "nom": "Repos",
+     "cardio": "repos 35 min Z0"
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "🍑 Fessiers + jambes",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "swim",
+     "nom": "Piscine · programme source",
+     "cardio": "piscine 25 min Z1"
+    },
+    {
+     "jour": "sam",
+     "type": "strength",
+     "nom": "🔥 Full body + fessiers + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  },
+  {
+   "profil": "Émilie",
+   "materiel": "ni l’un ni l’autre",
+   "semaine1": [
+    {
+     "jour": "lun",
+     "type": "strength",
+     "nom": "🍑 Fessiers + ischios + abdominaux",
+     "cardio": null
+    },
+    {
+     "jour": "mar",
+     "type": "strength",
+     "nom": "💪 Haut du corps + ventre + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "mer",
+     "type": "recovery",
+     "nom": "Repos",
+     "cardio": "repos 35 min Z0"
+    },
+    {
+     "jour": "jeu",
+     "type": "strength",
+     "nom": "🍑 Fessiers + jambes",
+     "cardio": null
+    },
+    {
+     "jour": "ven",
+     "type": "recovery",
+     "nom": "Repos",
+     "cardio": "repos 35 min Z0"
+    },
+    {
+     "jour": "sam",
+     "type": "strength",
+     "nom": "🔥 Full body + fessiers + cardio",
+     "cardio": null
+    },
+    {
+     "jour": "dim",
+     "type": "rest",
+     "nom": "Repos",
+     "cardio": null
+    }
+   ]
+  }
+ ],
+ "durees": [
+  {
+   "profil": "Yanis",
+   "moment": "Mois 1 · adaptation",
+   "deload": false,
+   "jour": "mer",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Yanis",
+   "moment": "Mois 1 · adaptation",
+   "deload": false,
+   "jour": "sam",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Yanis",
+   "moment": "Mois 7 · développement",
+   "deload": false,
+   "jour": "mer",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Yanis",
+   "moment": "Mois 7 · développement",
+   "deload": false,
+   "jour": "sam",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Yanis",
+   "moment": "Mois 10 · composition",
+   "deload": false,
+   "jour": "mer",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Yanis",
+   "moment": "Mois 10 · composition",
+   "deload": false,
+   "jour": "sam",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Yanis",
+   "moment": "Mois 12 · maintien",
+   "deload": false,
+   "jour": "mer",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Yanis",
+   "moment": "Mois 12 · maintien",
+   "deload": false,
+   "jour": "sam",
+   "type": "metcon",
+   "nom": "METCON elliptique + piscine",
+   "cardio": null
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 1 · adaptation",
+   "deload": false,
+   "jour": "mer",
+   "type": "cardio",
+   "nom": "Cardio elliptique",
+   "cardio": {
+    "format": "elliptique",
+    "minutes": 20,
+    "zone": 1,
+    "detail": "Cardio modéré, conversation possible par phrases courtes."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 1 · adaptation",
+   "deload": false,
+   "jour": "ven",
+   "type": "swim",
+   "nom": "Piscine · programme source",
+   "cardio": {
+    "format": "piscine",
+    "minutes": 25,
+    "zone": 1,
+    "detail": "Cardio modéré, conversation possible par phrases courtes."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 7 · développement",
+   "deload": false,
+   "jour": "mer",
+   "type": "cardio",
+   "nom": "Cardio elliptique",
+   "cardio": {
+    "format": "elliptique",
+    "minutes": 20,
+    "zone": 1,
+    "detail": "Cardio modéré et réduit pour préserver la récupération des fessiers."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 7 · développement",
+   "deload": false,
+   "jour": "ven",
+   "type": "swim",
+   "nom": "Piscine · programme source",
+   "cardio": {
+    "format": "piscine",
+    "minutes": 25,
+    "zone": 1,
+    "detail": "Cardio modéré et réduit pour préserver la récupération des fessiers."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 10 · composition",
+   "deload": false,
+   "jour": "mer",
+   "type": "cardio",
+   "nom": "Cardio elliptique",
+   "cardio": {
+    "format": "elliptique",
+    "minutes": 28,
+    "zone": 2,
+    "detail": "Cardio de la phase de composition : intensité maîtrisée, en respectant la récupération."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 10 · composition",
+   "deload": false,
+   "jour": "ven",
+   "type": "swim",
+   "nom": "Piscine · programme source",
+   "cardio": {
+    "format": "piscine",
+    "minutes": 30,
+    "zone": 1,
+    "detail": "Cardio de la phase de composition : intensité maîtrisée, en respectant la récupération."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 12 · maintien",
+   "deload": false,
+   "jour": "mer",
+   "type": "cardio",
+   "nom": "Cardio elliptique",
+   "cardio": {
+    "format": "elliptique",
+    "minutes": 25,
+    "zone": 1,
+    "detail": "Entretien de la condition physique à allure modérée."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Mois 12 · maintien",
+   "deload": false,
+   "jour": "ven",
+   "type": "swim",
+   "nom": "Piscine · programme source",
+   "cardio": {
+    "format": "piscine",
+    "minutes": 30,
+    "zone": 1,
+    "detail": "Entretien de la condition physique à allure modérée."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Finale (S49+)",
+   "deload": true,
+   "jour": "mer",
+   "type": "swim",
+   "nom": "Piscine · programme source",
+   "cardio": {
+    "format": "piscine",
+    "minutes": 30,
+    "zone": 0,
+    "detail": "Semaine de deload : récupération active uniquement, aucune intensité."
+   }
+  },
+  {
+   "profil": "Émilie",
+   "moment": "Finale (S49+)",
+   "deload": true,
+   "jour": "ven",
+   "type": "swim",
+   "nom": "Piscine · programme source",
+   "cardio": null
+  }
+ ],
+ "regulation": [
+  {
+   "cas": "METCON elliptique HIIT + Swim Sprint ×1",
+   "dureSource": 2,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "METCON elliptique HIIT + Swim Sprint ×3",
+   "dureSource": 6,
+   "dureApp": 0,
+   "basculeSource": "modéré",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "METCON elliptique Intervalles + Swim Interval ×1",
+   "dureSource": 2,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "METCON elliptique Intervalles + Swim Interval ×3",
+   "dureSource": 6,
+   "dureApp": 0,
+   "basculeSource": "modéré",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Aqua HIIT seul ×1",
+   "dureSource": 1,
+   "dureApp": 1,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Aqua HIIT seul ×3",
+   "dureSource": 3,
+   "dureApp": 3,
+   "basculeSource": "modéré",
+   "basculeApp": "modéré"
+  },
+  {
+   "cas": "Aqua Tabata seul ×1",
+   "dureSource": 1,
+   "dureApp": 1,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Aqua Tabata seul ×3",
+   "dureSource": 3,
+   "dureApp": 3,
+   "basculeSource": "modéré",
+   "basculeApp": "modéré"
+  },
+  {
+   "cas": "Swim Endurance seul ×1",
+   "dureSource": 0,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Swim Endurance seul ×3",
+   "dureSource": 0,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Aqua Recovery seul ×1",
+   "dureSource": 0,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Aqua Recovery seul ×3",
+   "dureSource": 0,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Cardio endurance seul ×1",
+   "dureSource": 0,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Cardio endurance seul ×3",
+   "dureSource": 0,
+   "dureApp": 0,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Cardio libre noté RPE 9 ×1",
+   "dureSource": 0,
+   "dureApp": 1,
+   "basculeSource": "intense",
+   "basculeApp": "intense"
+  },
+  {
+   "cas": "Cardio libre noté RPE 9 ×3",
+   "dureSource": 0,
+   "dureApp": 3,
+   "basculeSource": "intense",
+   "basculeApp": "modéré"
+  }
+ ],
+ "dureesZones": []
+}
