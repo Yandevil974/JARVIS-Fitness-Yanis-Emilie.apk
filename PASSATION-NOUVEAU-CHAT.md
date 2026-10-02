@@ -104,6 +104,11 @@ copié dans `downloads/` par `mirror-apk.yml` → lien `raw` à coller dans Chro
    (≈ 3 min).
 2. `mirror-apk.yml` copie l'APK dans `downloads/` (sha256 vérifié avant commit) → lien à
    coller : `https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/<branche>/downloads/<fichier>.apk`
+   Version livrée le 02/10 : `downloads/Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v3.apk`
+   (87 763 952 o, sha256 `45b589da…`, contenu neuf = tag `v1.5.1-chrono-gifs-v3`).
+   Attention : `mirror-apk.yml` lit ses valeurs **par défaut** dans le fichier du commit
+   poussé — quand le nom change, corriger les **quatre** lignes (`default` tag, `default`
+   nom, `TAG`, `NOM`), pas seulement celles entre guillemets.
 3. `pages-apk.yml` existe pour un lien `github.io`, mais **GitHub Pages doit être activé à
    la main** (Settings → Pages → Source : GitHub Actions) : l'agent n'a pas ce droit.
 4. Le lien doit être **écrit en clair dans le message** (copier-coller dans Chrome). Les
