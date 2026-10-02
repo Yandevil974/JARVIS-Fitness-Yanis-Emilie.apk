@@ -1,0 +1,239 @@
+{
+ "date": "2026-10-02",
+ "lot": 13,
+ "numeros": [
+  22,
+  28,
+  267,
+  303
+ ],
+ "reponse_utilisateur": "Oui pour les quatre. Et pour la suite : rester sur le coeur vert franc.",
+ "contexte": "Après consultation de la page lot13/valider.html (servie sur le port 8080).",
+ "fichier_valides": [
+  {
+   "numero": 22,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/22-vert260-660-webp-q90.webp",
+   "sha256": "759791aee891591c6eb77422bde4ffdff79aa4fa852d29c8224046d0e5c37a98",
+   "taille": [
+    573,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 89
+  },
+  {
+   "numero": 22,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/22-vert260-660-repli.gif",
+   "sha256": "843d0c24da25ffee98a7566c668144ef1e901ff3bece80172afaa9dd1502a06a",
+   "taille": [
+    573,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 388
+  },
+  {
+   "numero": 28,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/28-vert260-660-webp-q90.webp",
+   "sha256": "cb01e9b9e9275caa1343eaf549cfbd1caecf1b19064eda4e4d85cce230238d21",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 95
+  },
+  {
+   "numero": 28,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/28-vert260-660-repli.gif",
+   "sha256": "74feda7869f70e9d0cb650c3a1f0fe622552a06ad88f16b06de6d25e597bc157",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 397
+  },
+  {
+   "numero": 267,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/267-vert260-660-webp-q90.webp",
+   "sha256": "34d24765726bd143048b16ac5df10785809dc3d0265bff61407a9f457743226b",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 93
+  },
+  {
+   "numero": 267,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/267-vert260-660-repli.gif",
+   "sha256": "80d67073d9d67043061d5a611a936da6e5ee445f90bedbcbd5ba52e27260f9c3",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 389
+  },
+  {
+   "numero": 303,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/303-vert260-660-webp-q90.webp",
+   "sha256": "824c0e0667a8bbc6ea74fe82ebd791e66c5afd2d73c70b50f626e2fdf626778b",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 98
+  },
+  {
+   "numero": 303,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/303-vert260-660-repli.gif",
+   "sha256": "940bbda49e74407d5d3efd6c654247deed26f72a2dd915bb9a83dfde093514fb",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 394
+  }
+ ],
+ "mesures": {
+  "22": {
+   "psnr_webp_db": [
+    42.19,
+    42.42
+   ],
+   "psnr_gif_db": [
+    34.82,
+    34.7
+   ],
+   "saturation_avant": [
+    0.944,
+    0.951
+   ],
+   "saturation_apres": [
+    0.917,
+    0.921
+   ],
+   "teinte_source_deg": 81.5,
+   "transition_contour_apres_px": [
+    8.01,
+    7.08
+   ],
+   "pixels_zone": [
+    3736,
+    3863
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "28": {
+   "psnr_webp_db": [
+    42.58,
+    42.58
+   ],
+   "psnr_gif_db": [
+    36.11,
+    32.82
+   ],
+   "saturation_avant": [
+    0.953,
+    0.91
+   ],
+   "saturation_apres": [
+    0.936,
+    0.906
+   ],
+   "teinte_source_deg": 79.3,
+   "transition_contour_apres_px": [
+    6.94,
+    3.65
+   ],
+   "pixels_zone": [
+    2905,
+    3428
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "267": {
+   "psnr_webp_db": [
+    42.46,
+    42.38
+   ],
+   "psnr_gif_db": [
+    34.85,
+    34.76
+   ],
+   "saturation_avant": [
+    0.902,
+    0.966
+   ],
+   "saturation_apres": [
+    0.872,
+    0.944
+   ],
+   "teinte_source_deg": 73.6,
+   "transition_contour_apres_px": [
+    8.62,
+    7.18
+   ],
+   "pixels_zone": [
+    2359,
+    2182
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "303": {
+   "psnr_webp_db": [
+    42.34,
+    42.42
+   ],
+   "psnr_gif_db": [
+    36.2,
+    35.46
+   ],
+   "saturation_avant": [
+    0.918,
+    0.788
+   ],
+   "saturation_apres": [
+    0.938,
+    0.867
+   ],
+   "teinte_source_deg": 81.1,
+   "transition_contour_apres_px": [
+    3.13,
+    2.73
+   ],
+   "pixels_zone": [
+    5230,
+    5616
+   ],
+   "pixels_modifies_hors_zone": 0
+  }
+ },
+ "saturation_reference_260": 0.914,
+ "particularites": {
+  "28": "Premier numero mesure avec la couverture du vert. Couverture 0,33-0,52 ; le manque tombe sur du vert pale (44-61 %), presque pas sur la peau (2-7 %).",
+  "22": "Couverture 0,50-0,70, la meilleure du lot. Debordement 0,27 en phase 2 et manque sur peau 17 % : le plus eleve du lot, signale a l'utilisateur, valide tel quel.",
+  "267": "Le plus propre : debordement 0,01. Couverture 0,40-0,42.",
+  "303": "Couverture 0,46-0,49, debordement 0,08. Manque sur peau 3-5 % seulement.",
+  "_lot": "Premier lot porteur des mesures couverture/debordement. Decision de l'utilisateur au vu de ces chiffres : RESTER SUR LE COEUR VERT FRANC (coherence avec les 49 numeros valides), le halo degrade du muscle n'est pas repris -> ETENDRE_VERT = False dans l'outil."
+ },
+ "verifications": {
+  "pixels_modifies_hors_zone_sur_le_lot": 0
+ },
+ "portee": "Les propositions du lot, telles quelles (fichiers identifiés par leur empreinte ci-dessus).",
+ "non_couvert": "Aucune intégration : les GIF livrés ne sont pas remplacés, l'APK n'est pas reconstruit, le format WebP de l'app n'est pas adopté (accord + test WebView sur le téléphone toujours requis).",
+ "methode": "evolution/media/tools/retouche-lot13-vert260.py — mêmes fonctions déterministes que les lots précédents, 0 image générée, 0 GIF livré remplacé",
+ "regle": "proposition ≠ validation ≠ intégration"
+}

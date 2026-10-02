@@ -117,6 +117,10 @@ ELARGISSEMENT = (1.0, 1.0)   # on ajoute 100 % de la largeur et 100 % de la haut
 # Sous SEUIL_COUVERTURE, on baisse le seuil de detection du vert natif pour boucher les trous,
 # en refusant tout essai qui agrandirait le debordement au-dela de SEUIL_DEBORDEMENT.
 SEUIL_COUVERTURE = 0.85
+# Consigne de l'utilisateur du 02/10/2026, apres avoir vu les chiffres du lot 13 :
+# rester sur le COEUR VERT FRANC, comme les 49 numeros deja valides. Le halo degrade du
+# muscle reste tel quel. Les mesures restent calculees et consignees, mais n'agissent plus.
+ETENDRE_VERT = False
 SEUIL_DEBORDEMENT = 0.12   # au-dela, le vert deborde franchement hors de ce que le GIF livre couvrait
 
 
@@ -251,7 +255,7 @@ def main():
             sil = dilater(remplir_trous(m), 2)
             couv, deb, compo = couverture_et_debordement(sil, attendu, a)
             seuil_eff = ph['seuil']
-            if couv < SEUIL_COUVERTURE:
+            if ETENDRE_VERT and couv < SEUIL_COUVERTURE:
                 # Le halo vert du muscle est large : on s'y etend de proche en proche, en
                 # gardant la meilleure couverture qui ne depasse pas SEUIL_DEBORDEMENT.
                 meilleur = (couv, deb, m, sil, ph['seuil'])
