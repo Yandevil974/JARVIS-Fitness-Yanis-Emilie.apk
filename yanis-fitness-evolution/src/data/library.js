@@ -6,6 +6,8 @@ import {
   CARDIO_STEPS,
   WARMUP_IMAGES,
 } from "./visuals.js";
+import { GIF_OVERRIDES, POOL_IMG_OVERRIDES } from "./gif-overrides.js";
+import { stepGif, STRETCH_KEY_BY_NAME } from "./visuals-gifs.js";
 export { legacy };
 export { STRETCH_IMAGES, POOL_STEP_IMAGES, CARDIO_STEPS, WARMUP_IMAGES };
 export const MUSCLES = {
@@ -275,7 +277,7 @@ export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
     rest: Number(rest) || 60,
     note: textOnly(note),
     tip: textOnly(guide?.tip),
-    gif: guide?.img || null,
+    gif: GIF_OVERRIDES[n] || guide?.img || null,
     level: /test|inertie|snatch|drop|myo|1,5/.test(n)
       ? "Avancé"
       : equipment.includes("bodyweight")
@@ -381,38 +383,77 @@ export function searchExercises(query = "", group = "all", equipment = "all") {
         )),
   ).sort((a, b) => Number(b.level !== "Avancé") - Number(a.level !== "Avancé"));
 }
-export const RECOVERY_EXERCISES = Object.entries({
-  ...legacy.elite.ETIREMENTS_PAR_MUSCLE,
-  ...legacy.emilie.ETIREMENTS_PAR_MUSCLE,
-}).flatMap(([muscle, v]) =>
-  v.exos.map((e, i) => ({
-    id: `stretch-${muscle}-${i}`,
-    name: e[1],
-    muscle,
-    secondary: [],
-    stabilizers: [],
-    pattern: "stretch",
-    equipment: ["bodyweight"],
-    timed: true,
-    seconds: 30,
-    unit: "secondes",
-    instruction: e[3],
-    duration: e[2],
-    level: "Tous niveaux",
-    // Visuel exact porté de la 1.5.0 (photo du geste nommé) ; l'animation
-    // propre au mouvement est assurée par le moteur human-motion.
-    img: STRETCH_IMAGES[e[1]] || null,
-  })),
-);
+// Les étirements sont étiquetés par profil d'origine : le visuel humain suit
+// l'utilisateur (homme pour Yanis, femme pour Émilie), avec repli sur l'autre.
+// Une même position n'apparaît qu'une fois, avec les deux variantes possibles.
+const STRETCH_SOURCES = [
+  ...Object.entries(legacy.elite.ETIREMENTS_PAR_MUSCLE).map(([m, v]) => [m, v, "elite"]),
+  ...Object.entries(legacy.emilie.ETIREMENTS_PAR_MUSCLE).map(([m, v]) => [m, v, "emilie"]),
+];
+const STRETCH_MAP = new Map();
+for (const [muscle, v, profil] of STRETCH_SOURCES) {
+  v.exos.forEach((e, i) => {
+    const cle = `${muscle}|${e[1]}`;
+    const gif = stepGif(STRETCH_KEY_BY_NAME[e[1]], profil) || STRETCH_IMAGES[e[1]] || null;
+    const item = STRETCH_MAP.get(cle) || {
+      id: `stretch-${muscle}-${i}`,
+      name: e[1],
+      muscle,
+      secondary: [],
+      stabilizers: [],
+      pattern: "stretch",
+      equipment: ["bodyweight"],
+      timed: true,
+      seconds: 30,
+      unit: "secondes",
+      instruction: e[3],
+      duration: e[2],
+      level: "Tous niveaux",
+      img_homme: null,
+      img_femme: null,
+    };
+    if (profil === "elite") item.img_homme = item.img_homme || gif;
+    else item.img_femme = item.img_femme || gif;
+    item.img = item.img_femme || item.img_homme;
+    STRETCH_MAP.set(cle, item);
+  });
+}
+export const RECOVERY_EXERCISES = [...STRETCH_MAP.values()];
+// Visuel de l'étirement selon le profil actif ('elite' = homme, 'emilie' = femme).
+export const stretchImage = (ex, profilId) =>
+  (profilId === "emilie" ? ex.img_femme : ex.img_homme) || ex.img || null;
 export const POOL_PROTOCOLS = legacy.emilie.POOL_PROTOS.map((p) => ({
   ...p,
   desc: p.desc
     .replace(/zéro risque articulaire/gi, "faible impact articulaire")
     .replace(/zéro impact/gi, "faible impact"),
 }));
+const POOL_GUIDE_GIF = {
+  "Ciseaux au bord": stepGif("guide-ciseaux-au-bord", "emilie"),
+  "Aqua-jogging sur place": stepGif("guide-aqua-jogging", "emilie"),
+  "Battements au bord": stepGif("guide-battements-au-bord", "emilie"),
+  "Talons-fesses": stepGif("guide-talons-fesses", "emilie"),
+  "Gainage au bord (vertical)": stepGif("guide-gainage-vertical", "emilie"),
+  "Nage douce": stepGif("pool-nage-douce", "emilie"),
+  "Marche aquatique": stepGif("pool-marche-aquatique", "emilie"),
+  "Étirements au bord": stepGif("pool-etirements-bord", "emilie"),
+  "Nage statique (à l'élastique)": stepGif("pool-nage-statique", "emilie"),
+  "Fractionné — nager": stepGif("pool-fractionne", "emilie"),
+  "Sprint — nager à fond": stepGif("pool-sprint", "emilie"),
+  "Récup complète — souffler": stepGif("pool-recup-complete", "emilie"),
+  "Récup entre tabatas": stepGif("pool-recup-tabata", "emilie"),
+  "Retour au calme": stepGif("pool-retour-calme", "emilie"),
+  "Déplacements latéraux (4 m)": stepGif("pool-deplacements-lateraux", "emilie"),
+};
 export const POOL_GUIDES = legacy.emilie.POOL_GUIDES.map((g) => ({
   ...g,
-  img: g.img || POOL_STEP_IMAGES[g.t] || null,
+  // Le visuel animé humain (retouché, validé) remplace l'illustration statique.
+  img:
+    POOL_IMG_OVERRIDES[g.t] ||
+    POOL_GUIDE_GIF[g.t] ||
+    g.img ||
+    POOL_STEP_IMAGES[g.t] ||
+    null,
   h: g.h.map(textOnly),
 }));
 export const FOOD = legacy.elite.ALIMENTS;
