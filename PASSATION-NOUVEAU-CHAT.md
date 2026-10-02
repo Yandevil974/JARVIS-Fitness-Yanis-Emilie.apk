@@ -1,8 +1,10 @@
-# PASSATION — JARVIS Fitness (Yanis & Émilie) — état au 02/10/2026 (soir)
+# PASSATION — JARVIS Fitness (Yanis & Émilie) — état au 02/10/2026 (soir, séance 2)
 
 Bloc à coller **avant toute action** dans un nouveau chat. Dépôt :
 `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Branche de travail :
-`arena/01a0fd17-jarvis-fitness-yanis-emilie-ap`.
+`arena/01a0fdbd-jarvis-fitness-yanis-emilie-ap` (issue de
+`arena/01a0fd17-jarvis-fitness-yanis-emilie-ap`, SHA `b331a1b`, récupérée par
+`git fetch origin <sha>` + `git reset --hard FETCH_HEAD`).
 
 **Important** : l'espace de travail est réinitialisé souvent. Mesurer l'état réel avec
 `git fetch origin <branche>` puis `git reset --hard FETCH_HEAD` — c'est la seule source
@@ -121,3 +123,33 @@ générique ou incohérent, puis propositions de règles qui réagissent aux ret
 résultats (RPE, séances manquées, progression 1RM, cardio, douleurs). Ne rien modifier
 dans l'app sans validation. Ensuite : chantier 2 (metcon piscine + aqua tabata pour
 Émilie), chantier 3 (diversification piscine/aqua), chantier 4 (IA conversationnelle).
+
+---
+
+## 7. SÉANCE DU 02/10/2026 (2e chat) — AUDIT REFAIT À NEUF
+
+L'utilisateur a redemandé de vérifier que **tous** les exercices/chronos ont un GIF.
+J'ai réécrit un audit complet (`scripts/audit-gifs.mjs`) + un test de non-régression
+(`tests/gif-coverage.test.js`, 6 cas). Résultat, **vérifié sur la branche** :
+
+- **Musculation : 209/209** exercices avec démonstration humaine (GIF exact, 0 variante
+  forcée, 0 « animation créée »). Fichiers présents.
+- **Étirements : 29 positions × 2 profils = 58 visuels**, 0 manquant.
+- **Chronos piscine/aqua : 840/840** étapes résolues (tous niveaux × homme/femme).
+- **HIIT / Aqua Tabata : 25 mouvements × 2 profils = 50**, 0 manquant.
+- **Chronos METCON : elliptique seul + combo elliptique→piscine, 856/856** résolus.
+- **intervalSteps (tabata libre) : 0 étape sans GIF.**
+- **0 fichier média référencé introuvable** (tous les `/media/*.gif` existent).
+
+**Tests : 102 au total, 100 passent, 0 échec, 2 ignorés** (`npm test`).
+
+L'APK livré `downloads/Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v3.apk`
+(87 763 952 o, sha256 `45b589da…`) contient bien les 381 fichiers de `public/media/`
+et le code du résolveur (`pool-nage-statique`, `guide-ciseaux-au-bord`, `Burpees`
+présents dans le bundle). Donc la correction du 02/10 est **bien dans l'APK livré** ;
+si l'utilisateur ne voit toujours pas les GIF, c'est un cache/ancienne installation —
+réinstaller l'APK v3 depuis le lien brut.
+
+**Chantier 1 (coachs)** : inventaire fait, propositions soumises à validation dans le
+chat (voir historique). Rien n'est modifié dans l'app tant que l'utilisateur n'a pas
+validé, conformément à la consigne « proposer → valider → modifier ».
