@@ -3,17 +3,24 @@ name: Miroir APK dans le depot (telechargement direct)
 # Recopie l'APK publie (release) dans downloads/ du depot, sous le nom utilise
 # par la page de telechargement, apres controle de l'empreinte sha256.
 #
-# Raison d'etre : fournir une copie telechargeable depuis github.com/codeload,
-# independamment des hotes d'assets de release (*.githubusercontent.com) qui
-# peuvent etre filtres selon le reseau du telephone.
+# Raison d'etre : fournir une copie telechargeable depuis github.com, sans
+# dependre des hotes d'assets de release (*.githubusercontent.com) qui peuvent
+# etre filtres selon le reseau du telephone.
 
 on:
+  push:
+    paths:
+      - ".github/workflows/mirror-apk.yml"
   workflow_dispatch:
     inputs:
       tag:
         description: "Tag de la release a copier"
         required: true
-        default: "v1.5.1-evolution-build4"
+        default: "v1.5.1-apercu-visuels"
+      nom:
+        description: "Nom du fichier dans downloads/"
+        required: true
+        default: "Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk"
 
 permissions:
   contents: write
@@ -22,6 +29,9 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      TAG: ${{ github.event.inputs.tag || 'v1.5.1-apercu-visuels' }}
+      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,7 +39,6 @@ jobs:
       - name: Telecharger l'APK et son empreinte depuis la release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.event.inputs.tag || 'v1.5.1-evolution-build4' }}
         run: |
           set -euo pipefail
           mkdir -p _tmp
@@ -48,10 +57,10 @@ jobs:
           set -euo pipefail
           mkdir -p downloads
           APK=$(ls _tmp/*.apk | head -1)
-          cp "$APK" downloads/Yanis-Fitness-Evolution-1.5.1.apk
+          cp "$APK" "downloads/$NOM"
           cd downloads
-          sha256sum Yanis-Fitness-Evolution-1.5.1.apk > Yanis-Fitness-Evolution-1.5.1.apk.sha256
-          sha256sum -c Yanis-Fitness-Evolution-1.5.1.apk.sha256
+          sha256sum "$NOM" > "$NOM.sha256"
+          sha256sum -c "$NOM.sha256"
 
       - name: Commit et push du miroir
         run: |
@@ -63,9 +72,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "Miroir deja a jour, rien a committer."
           else
-            git commit -m "Miroir de l'APK publie dans downloads/ (copie conforme, sha256 verifie)"
+            git commit -m "Miroir de l'APK publie : $NOM (copie conforme, sha256 verifie)"
             git push origin "HEAD:refs/heads/${GITHUB_REF_NAME}"
           fi
 
       - name: Rappel
-        run: cat downloads/Yanis-Fitness-Evolution-1.5.1.apk.sha256
+        run: cat "downloads/$NOM.sha256"
