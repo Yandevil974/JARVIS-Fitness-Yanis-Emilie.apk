@@ -130,6 +130,25 @@ def masque_vert_gif(frame, caisse):
     return np.asarray(up) > 127
 
 
+def etendre_sur_vert(m, sc, seuil_bas, portee=6):
+    """Etend le masque de proche en proche, uniquement sur les pixels deja verts.
+
+    Le muscle n'est pas uniforme : ses bords et ses zones d'ombre sont verts, mais trop
+    peu pour franchir le seuil. Plutot que de baisser le seuil partout (ce qui peindrait
+    aussi le decor, souvent verdatre lui aussi), on part du vert franc et on gagne du
+    terrain par pas de 2 px en n'acceptant que les pixels dont le score reste vert.
+    Un decor ELOIGNE n'est donc jamais atteint : la progression est locale.
+    """
+    grow = m.copy()
+    candidat = sc >= seuil_bas
+    for _ in range(portee):
+        pas = dilater(grow, 2) & candidat & ~grow
+        if not pas.any():
+            break
+        grow |= pas
+    return grow
+
+
 def couverture_et_debordement(sil, attendu, native=None):
     """(couverture, debordement, composition du vert manquant).
 
@@ -234,13 +253,23 @@ def main():
             couv, deb, compo = couverture_et_debordement(sil, attendu, a)
             seuil_eff = ph['seuil']
             if couv < SEUIL_COUVERTURE:
-                for essai in (0.07, 0.05, 0.03, 0.02):
-                    m2, sil2 = masque_pour(essai), None
+                # 1er remede : s'etendre de proche en proche sur le vert deja present
+                for essai in (0.06, 0.04, 0.02):
+                    m2 = etendre_sur_vert(m, sc, essai)
                     sil2 = dilater(remplir_trous(m2), 2)
                     c2, d2, _ = couverture_et_debordement(sil2, attendu)
                     if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
-                        m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, essai
-                        break
+                        m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, f'etendu {essai}'
+                # 2e remede : baisser le seuil si l'extension n'a pas suffi
+                if couv < SEUIL_COUVERTURE:
+                    for essai in (0.07, 0.05, 0.03, 0.02):
+                        m2 = masque_pour(essai)
+                        sil2 = dilater(remplir_trous(m2), 2)
+                        c2, d2, _ = couverture_et_debordement(sil2, attendu)
+                        if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
+                            m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, essai
+                            break
+                compo = couverture_et_debordement(sil, attendu, a)[2]
             couvertures.append(couv); debordements.append(deb)
             alpha = np.clip((sc - ALPHA_BAS) / (ALPHA_HAUT - ALPHA_BAS), 0, 1) * sil
             masques.append(m); silhouettes.append(sil); alphas.append(alpha)

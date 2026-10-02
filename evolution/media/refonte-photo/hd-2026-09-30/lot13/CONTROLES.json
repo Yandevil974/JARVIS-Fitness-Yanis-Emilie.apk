@@ -634,16 +634,16 @@
       483
      ],
      "seuil": 0.1,
-     "seuil_effectif": 0.07,
+     "seuil_effectif": "etendu 0.06",
      "mini_tache": 200,
-     "pixels_zone": 5357,
-     "pixels_silhouette": 6765,
-     "couverture_peau": 0.571,
-     "debordement_vert": 0.152,
+     "pixels_zone": 5518,
+     "pixels_silhouette": 6786,
+     "couverture_peau": 0.574,
+     "debordement_vert": 0.154,
      "manque": {
-      "manque_peau": 0.173,
-      "manque_vert_pale": 0.269,
-      "manque_autre": 0.053
+      "manque_peau": 0.172,
+      "manque_vert_pale": 0.206,
+      "manque_autre": 0.048
      }
     },
     {
@@ -687,7 +687,7 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/22-vert260-660-webp-q90.webp",
      "note": "WebP animé q90 — livrable principal",
-     "sha256": "15b77f9d00e048c521ab80cc9724297a7b0a6ea9e3d88f96f3b7b9c65d277678",
+     "sha256": "e4470596b83afd7e1a1475f6b559f9fb9a503ff5765941ae52fbf9f180b21991",
      "poids_ko": 88,
      "images": 2,
      "durees_ms": [
@@ -704,7 +704,7 @@
         573,
         660
        ],
-       "couleurs_uniques": 57848,
+       "couleurs_uniques": 57914,
        "erreur_moyenne": 1.68,
        "erreur_max": 15,
        "psnr_db": 42.19
@@ -714,10 +714,10 @@
         573,
         660
        ],
-       "couleurs_uniques": 56213,
+       "couleurs_uniques": 56275,
        "erreur_moyenne": 1.61,
-       "erreur_max": 16,
-       "psnr_db": 42.41
+       "erreur_max": 15,
+       "psnr_db": 42.43
       }
      ],
      "format": "webp",
@@ -727,8 +727,8 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/22-vert260-660-repli.gif",
      "note": "GIF de repli (palette 256 partagée)",
-     "sha256": "f0a7e2c73ca074f357d64a8fb2c5566d3d46b58dbab8412bab94db32e36fcee4",
-     "poids_ko": 387,
+     "sha256": "12e6ef39db2da4201b33a2f9bbd835f217fa23d94d154849e1fc7255038ef722",
+     "poids_ko": 388,
      "images": 2,
      "durees_ms": [
       500,
@@ -745,9 +745,9 @@
         660
        ],
        "couleurs_uniques": 256,
-       "erreur_moyenne": 2.86,
-       "erreur_max": 53,
-       "psnr_db": 35.12
+       "erreur_moyenne": 2.87,
+       "erreur_max": 52,
+       "psnr_db": 35.02
       },
       {
        "taille": [
@@ -755,9 +755,9 @@
         660
        ],
        "couleurs_uniques": 251,
-       "erreur_moyenne": 3.24,
-       "erreur_max": 53,
-       "psnr_db": 34.98
+       "erreur_moyenne": 3.25,
+       "erreur_max": 51,
+       "psnr_db": 34.89
       }
      ],
      "format": "gif",
@@ -767,8 +767,8 @@
    ],
    "correspondance": {
     "ancres_source_saturation": [
-     0.161,
-     0.929,
+     0.152,
+     0.924,
      1.0
     ],
     "cible_260_saturation": [
@@ -777,48 +777,58 @@
      0.968
     ],
     "ancres_source_valeur": [
-     0.345,
-     0.624,
-     0.839
+     0.357,
+     0.627,
+     0.851
     ],
     "cible_260_valeur": [
      0.325,
      0.616,
      0.91
     ],
-    "teinte_source_deg": 81.2,
+    "teinte_source_deg": 81.1,
     "teinte_260_deg": 86.3,
     "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
    },
    "vert_avant": [
     {
-     "pixels": 5357,
+     "pixels": 5518,
      "mediane_rgb": [
-      121,
-      158,
-      12
+      123,
+      161,
+      14
      ],
      "mediane_hsv": {
-      "teinte_deg": 81.2,
-      "saturation": 0.898,
-      "valeur": 0.62
+      "teinte_deg": 81.1,
+      "saturation": 0.885,
+      "valeur": 0.631
      },
      "percentiles_saturation": [
-      0.144,
-      0.898,
+      0.135,
+      0.885,
       1.0
      ],
      "percentiles_valeur": [
-      0.31,
-      0.62,
-      0.851
+      0.318,
+      0.631,
+      0.863
      ],
-     "nuances_distinctes": 5157,
+     "nuances_distinctes": 5306,
      "part_teinte_dominante": 0.001,
      "teintes_principales": [
       [
+       109,
+       125,
+       3
+      ],
+      [
        35,
        101,
+       0
+      ],
+      [
+       143,
+       179,
        0
       ],
       [
@@ -827,19 +837,9 @@
        200
       ],
       [
-       143,
-       179,
-       0
-      ],
-      [
-       39,
-       64,
-       0
-      ],
-      [
-       114,
-       161,
-       1
+       121,
+       156,
+       3
       ]
      ]
     },
@@ -898,106 +898,106 @@
    ],
    "vert_apres": [
     {
-     "pixels": 5357,
+     "pixels": 5518,
      "mediane_rgb": [
-      104,
-      157,
-      12
+      106,
+      158,
+      13
      ],
      "mediane_hsv": {
       "teinte_deg": 85.5,
-      "saturation": 0.901,
-      "valeur": 0.616
+      "saturation": 0.894,
+      "valeur": 0.62
      },
      "percentiles_saturation": [
-      0.345,
-      0.901,
-      0.979
+      0.31,
+      0.894,
+      0.98
      ],
      "percentiles_valeur": [
       0.298,
-      0.616,
+      0.62,
       0.886
      ],
-     "nuances_distinctes": 5075,
+     "nuances_distinctes": 5207,
      "part_teinte_dominante": 0.001,
      "teintes_principales": [
+      [
+       80,
+       142,
+       5
+      ],
+      [
+       110,
+       164,
+       6
+      ],
+      [
+       103,
+       124,
+       4
+      ],
       [
        105,
        156,
        5
       ],
       [
-       110,
-       179,
-       7
-      ],
-      [
-       111,
-       165,
-       7
-      ],
-      [
-       36,
-       58,
-       1
-      ],
-      [
-       96,
-       163,
-       5
+       75,
+       137,
+       4
       ]
      ]
     },
     {
      "pixels": 3863,
      "mediane_rgb": [
-      102,
-      158,
-      10
+      101,
+      157,
+      9
      ],
      "mediane_hsv": {
       "teinte_deg": 85.7,
-      "saturation": 0.933,
-      "valeur": 0.62
+      "saturation": 0.935,
+      "valeur": 0.616
      },
      "percentiles_saturation": [
       0.484,
-      0.933,
+      0.935,
       0.974
      ],
      "percentiles_valeur": [
-      0.388,
-      0.62,
-      0.867
+      0.38,
+      0.616,
+      0.855
      ],
-     "nuances_distinctes": 3561,
-     "part_teinte_dominante": 0.001,
+     "nuances_distinctes": 3553,
+     "part_teinte_dominante": 0.002,
      "teintes_principales": [
       [
-       122,
-       184,
-       7
-      ],
-      [
-       101,
+       102,
        152,
        4
       ],
       [
-       83,
-       153,
-       6
+       100,
+       151,
+       4
       ],
       [
-       94,
+       82,
        151,
        5
       ],
       [
-       84,
-       141,
-       5
+       107,
+       173,
+       6
+      ],
+      [
+       83,
+       140,
+       4
       ]
      ]
     }
@@ -1005,9 +1005,9 @@
    "contour": [
     {
      "phase": 1,
-     "perimetre_px": 411,
-     "largeur_transition_avant_px": 13.37,
-     "largeur_transition_apres_px": 13.02
+     "perimetre_px": 399,
+     "largeur_transition_avant_px": 13.7,
+     "largeur_transition_apres_px": 13.3
     },
     {
      "phase": 2,
@@ -1019,7 +1019,7 @@
    "garantie_hors_zone": [
     {
      "phase": 1,
-     "pixels_hors_zone": 505763,
+     "pixels_hors_zone": 505790,
      "pixels_modifies_hors_zone": 0
     },
     {
@@ -1160,16 +1160,16 @@
       501
      ],
      "seuil": 0.1,
-     "seuil_effectif": 0.05,
+     "seuil_effectif": "etendu 0.06",
      "mini_tache": 200,
-     "pixels_zone": 2180,
-     "pixels_silhouette": 2589,
-     "couverture_peau": 0.375,
-     "debordement_vert": 0.003,
+     "pixels_zone": 2096,
+     "pixels_silhouette": 2492,
+     "couverture_peau": 0.367,
+     "debordement_vert": 0.0,
      "manque": {
-      "manque_peau": 0.062,
-      "manque_vert_pale": 0.593,
-      "manque_autre": 0.03
+      "manque_peau": 0.057,
+      "manque_vert_pale": 0.553,
+      "manque_autre": 0.023
      }
     },
     {
@@ -1192,16 +1192,16 @@
       367
      ],
      "seuil": 0.1,
-     "seuil_effectif": 0.07,
+     "seuil_effectif": "etendu 0.04",
      "mini_tache": 200,
-     "pixels_zone": 1796,
-     "pixels_silhouette": 2321,
-     "couverture_peau": 0.381,
+     "pixels_zone": 1940,
+     "pixels_silhouette": 2374,
+     "couverture_peau": 0.378,
      "debordement_vert": 0.0,
      "manque": {
-      "manque_peau": 0.065,
-      "manque_vert_pale": 0.604,
-      "manque_autre": 0.023
+      "manque_peau": 0.052,
+      "manque_vert_pale": 0.552,
+      "manque_autre": 0.018
      }
     }
    ],
@@ -1213,8 +1213,8 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/267-vert260-660-webp-q90.webp",
      "note": "WebP animé q90 — livrable principal",
-     "sha256": "070e27bec1ecb436d63b9db00fb8a5f2b1bbb9d027d0309f76fd15d2b05e73bc",
-     "poids_ko": 94,
+     "sha256": "adab4a849b9fb6ed0aa014dd6f5b756dea01639dceb62b8719aa456a3f2d76ca",
+     "poids_ko": 93,
      "images": 2,
      "durees_ms": [
       500,
@@ -1230,8 +1230,8 @@
         585,
         660
        ],
-       "couleurs_uniques": 64436,
-       "erreur_moyenne": 1.61,
+       "couleurs_uniques": 64751,
+       "erreur_moyenne": 1.62,
        "erreur_max": 13,
        "psnr_db": 42.46
       },
@@ -1240,10 +1240,10 @@
         585,
         660
        ],
-       "couleurs_uniques": 64286,
+       "couleurs_uniques": 64260,
        "erreur_moyenne": 1.64,
        "erreur_max": 12,
-       "psnr_db": 42.39
+       "psnr_db": 42.4
       }
      ],
      "format": "webp",
@@ -1253,7 +1253,7 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot13/exports/267-vert260-660-repli.gif",
      "note": "GIF de repli (palette 256 partagée)",
-     "sha256": "d98f96628eacc540d8a8521dd3de22290696265e6afdc7a01caf559d1106136d",
+     "sha256": "dd2f51750595ec9ebcddfc4ed1ac099f1b94c58f3dbac53614d187738a2790d1",
      "poids_ko": 389,
      "images": 2,
      "durees_ms": [
@@ -1271,9 +1271,9 @@
         660
        ],
        "couleurs_uniques": 256,
-       "erreur_moyenne": 2.99,
-       "erreur_max": 52,
-       "psnr_db": 35.06
+       "erreur_moyenne": 3.01,
+       "erreur_max": 58,
+       "psnr_db": 34.73
       },
       {
        "taille": [
@@ -1281,9 +1281,9 @@
         660
        ],
        "couleurs_uniques": 254,
-       "erreur_moyenne": 3.39,
-       "erreur_max": 52,
-       "psnr_db": 34.8
+       "erreur_moyenne": 3.41,
+       "erreur_max": 58,
+       "psnr_db": 34.59
       }
      ],
      "format": "gif",
@@ -1293,8 +1293,8 @@
    ],
    "correspondance": {
     "ancres_source_saturation": [
-     0.751,
-     0.946,
+     0.756,
+     0.947,
      1.0
     ],
     "cible_260_saturation": [
@@ -1303,8 +1303,8 @@
      0.968
     ],
     "ancres_source_valeur": [
-     0.443,
-     0.588,
+     0.435,
+     0.584,
      0.835
     ],
     "cible_260_valeur": [
@@ -1312,34 +1312,34 @@
      0.616,
      0.91
     ],
-    "teinte_source_deg": 74.2,
+    "teinte_source_deg": 74.1,
     "teinte_260_deg": 86.3,
     "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
    },
    "vert_avant": [
     {
-     "pixels": 2180,
+     "pixels": 2096,
      "mediane_rgb": [
-      147,
-      179,
+      148,
+      180,
       17
      ],
      "mediane_hsv": {
-      "teinte_deg": 73.4,
-      "saturation": 0.904,
-      "valeur": 0.702
+      "teinte_deg": 73.5,
+      "saturation": 0.905,
+      "valeur": 0.706
      },
      "percentiles_saturation": [
-      0.715,
-      0.904,
+      0.725,
+      0.905,
       1.0
      ],
      "percentiles_valeur": [
       0.435,
-      0.702,
+      0.706,
       0.847
      ],
-     "nuances_distinctes": 2083,
+     "nuances_distinctes": 2000,
      "part_teinte_dominante": 0.002,
      "teintes_principales": [
       [
@@ -1348,13 +1348,13 @@
        0
       ],
       [
-       87,
-       119,
+       83,
+       117,
        0
       ],
       [
-       83,
-       117,
+       87,
+       119,
        0
       ],
       [
@@ -1370,28 +1370,28 @@
      ]
     },
     {
-     "pixels": 1796,
+     "pixels": 1940,
      "mediane_rgb": [
       107,
-      143,
+      142,
       5
      ],
      "mediane_hsv": {
-      "teinte_deg": 75.3,
-      "saturation": 0.965,
-      "valeur": 0.561
+      "teinte_deg": 75.0,
+      "saturation": 0.964,
+      "valeur": 0.557
      },
      "percentiles_saturation": [
-      0.827,
-      0.965,
+      0.817,
+      0.964,
       1.0
      ],
      "percentiles_valeur": [
-      0.463,
-      0.561,
-      0.694
+      0.435,
+      0.557,
+      0.69
      ],
-     "nuances_distinctes": 1655,
+     "nuances_distinctes": 1794,
      "part_teinte_dominante": 0.002,
      "teintes_principales": [
       [
@@ -1405,14 +1405,14 @@
        0
       ],
       [
-       86,
-       124,
+       98,
+       112,
        0
       ],
       [
-       118,
-       153,
-       5
+       86,
+       124,
+       0
       ],
       [
        105,
@@ -1424,106 +1424,106 @@
    ],
    "vert_apres": [
     {
-     "pixels": 2180,
+     "pixels": 2096,
      "mediane_rgb": [
       132,
-      187,
-      25
+      188,
+      26
      ],
      "mediane_hsv": {
-      "teinte_deg": 81.5,
-      "saturation": 0.871,
-      "valeur": 0.733
+      "teinte_deg": 82.0,
+      "saturation": 0.868,
+      "valeur": 0.737
      },
      "percentiles_saturation": [
-      0.624,
-      0.871,
-      0.984
+      0.623,
+      0.868,
+      0.983
      ],
      "percentiles_valeur": [
-      0.361,
-      0.733,
+      0.369,
+      0.737,
       0.918
      ],
-     "nuances_distinctes": 2068,
+     "nuances_distinctes": 1989,
      "part_teinte_dominante": 0.002,
      "teintes_principales": [
       [
-       59,
-       98,
+       60,
+       100,
        2
       ],
       [
-       64,
-       103,
+       65,
+       105,
        2
       ],
       [
-       53,
-       89,
+       54,
+       92,
        2
       ],
       [
-       89,
-       163,
-       6
+       56,
+       94,
+       2
       ],
       [
-       61,
-       93,
+       62,
+       96,
        2
       ]
      ]
     },
     {
-     "pixels": 1796,
+     "pixels": 1940,
      "mediane_rgb": [
-      90,
+      92,
       143,
       8
      ],
      "mediane_hsv": {
-      "teinte_deg": 84.7,
+      "teinte_deg": 83.8,
       "saturation": 0.942,
       "valeur": 0.561
      },
      "percentiles_saturation": [
-      0.768,
+      0.762,
       0.942,
-      0.983
+      0.989
      ],
      "percentiles_valeur": [
-      0.412,
+      0.404,
       0.561,
       0.737
      ],
-     "nuances_distinctes": 1638,
+     "nuances_distinctes": 1773,
      "part_teinte_dominante": 0.002,
      "teintes_principales": [
       [
-       62,
-       114,
+       64,
+       117,
        3
       ],
       [
-       62,
-       117,
-       4
-      ],
-      [
-       67,
-       127,
-       4
-      ],
-      [
-       88,
+       64,
        120,
-       2
+       4
       ],
       [
-       68,
-       129,
+       90,
+       107,
+       0
+      ],
+      [
+       70,
+       132,
        4
+      ],
+      [
+       75,
+       140,
+       8
       ]
      ]
     }
@@ -1531,26 +1531,26 @@
    "contour": [
     {
      "phase": 1,
-     "perimetre_px": 205,
-     "largeur_transition_avant_px": 9.42,
-     "largeur_transition_apres_px": 9.1
+     "perimetre_px": 199,
+     "largeur_transition_avant_px": 9.56,
+     "largeur_transition_apres_px": 9.26
     },
     {
      "phase": 2,
-     "perimetre_px": 259,
-     "largeur_transition_avant_px": 6.78,
-     "largeur_transition_apres_px": 6.47
+     "perimetre_px": 205,
+     "largeur_transition_avant_px": 8.37,
+     "largeur_transition_apres_px": 7.95
     }
    ],
    "garantie_hors_zone": [
     {
      "phase": 1,
-     "pixels_hors_zone": 520706,
+     "pixels_hors_zone": 520734,
      "pixels_modifies_hors_zone": 0
     },
     {
      "phase": 2,
-     "pixels_hors_zone": 520943,
+     "pixels_hors_zone": 520984,
      "pixels_modifies_hors_zone": 0
     }
    ],

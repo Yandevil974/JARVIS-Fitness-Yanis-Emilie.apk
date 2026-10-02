@@ -117,7 +117,7 @@ ELARGISSEMENT = (1.0, 1.0)   # on ajoute 100 % de la largeur et 100 % de la haut
 # Sous SEUIL_COUVERTURE, on baisse le seuil de detection du vert natif pour boucher les trous,
 # en refusant tout essai qui agrandirait le debordement au-dela de SEUIL_DEBORDEMENT.
 SEUIL_COUVERTURE = 0.85
-SEUIL_DEBORDEMENT = 0.25
+SEUIL_DEBORDEMENT = 0.12   # au-dela, le vert deborde franchement hors de ce que le GIF livre couvrait
 
 
 def masque_vert_gif(frame, caisse):
@@ -252,22 +252,17 @@ def main():
             couv, deb, compo = couverture_et_debordement(sil, attendu, a)
             seuil_eff = ph['seuil']
             if couv < SEUIL_COUVERTURE:
-                # 1er remede : s'etendre de proche en proche sur le vert deja present
-                for essai in (0.06, 0.04, 0.02):
-                    m2 = etendre_sur_vert(m, sc, essai)
-                    sil2 = dilater(remplir_trous(m2), 2)
-                    c2, d2, _ = couverture_et_debordement(sil2, attendu)
-                    if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
-                        m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, f'etendu {essai}'
-                # 2e remede : baisser le seuil si l'extension n'a pas suffi
-                if couv < SEUIL_COUVERTURE:
-                    for essai in (0.07, 0.05, 0.03, 0.02):
-                        m2 = masque_pour(essai)
+                # Le halo vert du muscle est large : on s'y etend de proche en proche, en
+                # gardant la meilleure couverture qui ne depasse pas SEUIL_DEBORDEMENT.
+                meilleur = (couv, deb, m, sil, ph['seuil'])
+                for essai in (0.05, 0.02):
+                    for portee in (8, 20, 40):
+                        m2 = etendre_sur_vert(m, sc, essai, portee)
                         sil2 = dilater(remplir_trous(m2), 2)
                         c2, d2, _ = couverture_et_debordement(sil2, attendu)
-                        if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
-                            m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, essai
-                            break
+                        if d2 <= SEUIL_DEBORDEMENT and (c2, -d2) > (meilleur[0], -meilleur[1]):
+                            meilleur = (c2, d2, m2, sil2, f'etendu {essai}/{portee}')
+                couv, deb, m, sil, seuil_eff = meilleur
                 compo = couverture_et_debordement(sil, attendu, a)[2]
             couvertures.append(couv); debordements.append(deb)
             alpha = np.clip((sc - ALPHA_BAS) / (ALPHA_HAUT - ALPHA_BAS), 0, 1) * sil
