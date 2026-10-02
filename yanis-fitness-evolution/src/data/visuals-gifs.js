@@ -255,9 +255,65 @@ export function stepGifFromName(nom, profil) {
     const g = stepGif(stretch, profil);
     if (g) return g;
   }
+  // Un mouvement de cardio / HIIT / aqua tabata nommé exactement.
+  const mouvement = movementGif(n, profil);
+  if (mouvement) return mouvement;
   for (const [motif, cle] of STEP_KEYWORDS) {
     if (motif.test(n)) {
       const g = stepGif(cle, profil);
+      if (g) return g;
+    }
+  }
+  return null;
+}
+
+// Mouvements de cardio / HIIT / aqua tabata : GIF humains du corpus, intégrés
+// pour que la liste ET le chrono montrent le mouvement exact (Burpees, Squats,
+// Planche latérale, Montées de genoux, Pompes au mur, Russian twist…).
+// Clé = nom normalisé (sans accents ni ponctuation).
+export const MOVEMENT_GIF_BY_NAME = {
+ "burpees": { "homme": "/media/83a58904a8967e9a.gif" },
+ "burpees simplifies": { "homme": "/media/0bce9dc43c3b2517.gif" },
+ "chaise au mur": { "homme": "/media/a292bf967a074d35.gif" },
+ "chaise douce": { "homme": "/media/22de3f52c624be93.gif" },
+ "corde invisible": { "homme": "/media/e5e523860faa9e70.gif" },
+ "dips au bord": { "homme": "/media/212f5c752f93e8c1.gif" },
+ "fentes alternees": { "homme": "/media/524e72fe748d5732.gif", "femme": "/media/5bc5625d9433ca6e.gif" },
+ "high knees": { "homme": "/media/d167ad11643a47cf.gif" },
+ "jumping jacks": { "homme": "/media/c4d38fa88ecbf537.gif" },
+ "montees de genoux": { "homme": "/media/c44c661ce50cfb15.gif", "femme": "/media/07d64eaf46c2dc2f.gif" },
+ "montees sur mollets": { "homme": "/media/2f18d124f8a83d4e.gif" },
+ "mountain climbers lents": { "homme": "/media/f45acf6d65339fce.gif" },
+ "oiseau chien": { "homme": "/media/ff8da6669ded238d.gif" },
+ "patineurs": { "homme": "/media/c937caee1e7ea8f7.gif" },
+ "planche laterale g": { "homme": "/media/2baeb1b19fde1b86.gif" },
+ "planche laterale d": { "homme": "/media/2baeb1b19fde1b86.gif" },
+ "pompes au mur": { "homme": "/media/966aae5ddbd59234.gif" },
+ "ponts fessiers": { "homme": "/media/ebde577e05a55bed.gif", "femme": "/media/666443484c7f0861.gif" },
+ "repos actif": { "homme": "/media/6e77f29b4f7b4870.gif" },
+ "russian twist": { "homme": "/media/2204cfebd9d348e8.gif" },
+ "squats": { "homme": "/media/eb6b4ca3fa5a3f78.gif", "femme": "/media/04f326d81f8d5028.gif" },
+ "squats doux": { "homme": "/media/90366242bb0e0b8b.gif" },
+ "squats sautes": { "homme": "/media/e739223b003d3611.gif" },
+ "squats sumo": { "homme": "/media/e6c19b6540cdcf30.gif" },
+ "superman": { "homme": "/media/8047d3ad4dc93bc7.gif" },
+};
+
+const CLE = (v) =>
+  String(v || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+// Visuel d'un mouvement nommé (le chrono ajoute « · round 3/8 » : on l'ignore).
+export function movementGif(nom, profil) {
+  const brut = String(nom || "");
+  for (const essai of [brut, brut.split(" · ")[0], brut.split(" — ")[0]]) {
+    const v = MOVEMENT_GIF_BY_NAME[CLE(essai)];
+    if (v) {
+      const g = profil === "emilie" ? v.femme || v.homme : v.homme || v.femme;
       if (g) return g;
     }
   }

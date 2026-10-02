@@ -54,8 +54,16 @@ image** depuis les routines (respiration lente, mobilité des épaules, étireme
 depuis la bibliothèque). Un **filet de sécurité** choisit désormais un GIF humain selon la
 nature de l'effort (breathe, stretch, swim, aqua, walk, run, row, lat, curl) : aucun chrono,
 quelle que soit son origine, ne peut plus rester sans humain animé.
+Enfin, les **25 mouvements de cardio / HIIT / aqua tabata** (Burpees, Burpees simplifiés,
+Squats, Squats doux, Squats sautés, Squats sumo, Jumping jacks, High knees, Montées de
+genoux, Montées sur mollets, Chaise au mur, Chaise douce, Corde invisible, Dips au bord,
+Fentes alternées, Mountain climbers lents, Oiseau-chien, Patineurs, Planche latérale G et D,
+Pompes au mur, Ponts fessiers, Repos actif, Russian twist, Superman) ont reçu leur **GIF
+humain du corpus** — le chrono n'affiche plus un visuel d'emprunt. Variante femme intégrée
+pour Montées de genoux, Fentes alternées, Ponts fessiers et Squats.
 Contrôles : **209/209 exercices**, **420 étapes** de protocoles piscine/aqua, 18 étapes
-écrites en dur, 70 étirements/échauffement, 22 replis — **0 sans GIF, 0 visuel introuvable**.
+écrites en dur, 70 étirements/échauffement, **25 mouvements HIIT/Tabata**, 22 replis,
+52 types de chrono × 2 profils — **0 sans GIF, 0 visuel introuvable**.
 
 **C. Livraison.** APK signé (keystore du dépôt) construit par workflow sur tag `v*`, puis
 copié dans `downloads/` par `mirror-apk.yml` → lien `raw` à coller dans Chrome. 96 tests :
