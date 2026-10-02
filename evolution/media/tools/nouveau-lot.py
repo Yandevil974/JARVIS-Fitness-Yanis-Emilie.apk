@@ -17,6 +17,7 @@ bon rapport largeur/hauteur (elles doivent correspondre au GIF livre).
 import argparse
 import json
 import pathlib
+import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
@@ -80,9 +81,14 @@ def main():
     i = modele.index(MARQUE_DEBUT)
     j = modele.index(MARQUE_FIN)
     nouveau = modele[:i] + MARQUE_DEBUT + '\n' + bloc_cibles(numeros, prio, src) + '\n' + modele[j:]
-    nouveau = nouveau.replace(f"LOT = {args.lot - 1}", f"LOT = {args.lot}", 1)
-    if f'LOT = {args.lot}' not in nouveau:
+    nouveau, nb = re.subn(r'(?m)^LOT = \d+$', f'LOT = {args.lot}', nouveau, count=1)
+    if not nb:
         sys.exit("impossible de remplacer le numéro de lot dans le modèle")
+    # modèle par défaut : le lot précédent s'il existe
+    if args.modele == 'retouche-lot4-vert260.py':
+        for k in range(args.lot - 1, 3, -1):
+            if (OUTILS / f'retouche-lot{k}-vert260.py').exists():
+                break
     # en-tête
     titre = ', '.join(str(n) for n in numeros)
     nouveau = nouveau.replace(f'"""Lot {args.lot - 1} (n degre ', f'"""Lot {args.lot} (n degre ', 1)
