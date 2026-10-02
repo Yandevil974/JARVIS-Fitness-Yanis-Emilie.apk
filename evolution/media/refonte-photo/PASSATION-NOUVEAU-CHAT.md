@@ -819,3 +819,44 @@ export 1192x660). C'est une exception assumee a la regle « jamais d'agrandissem
 ils ne doivent donc **jamais etre presentes comme un gain de nettete**. Leur PSNR eleve
 (43,3 dB) mesure la fidelite de la compression, pas la resolution reelle. Le dire dans
 toute communication et dans le PV de validation.
+
+---
+
+# 🚩 DRAPEAU ROUGE — fin de session du 02/10/2026 (2e pose)
+
+**Arret en fin de session. Le lot 20 (261, 302, 369, 280) est produit mais PAS valide.
+Les lots 18 et 19 sont valides numero par numero mais leur PV n est pas encore redige.**
+
+## Consigne en vigueur
+
+1. **« Le vert doit bien couvrir la peau, pas depasse. »** Mesure par deux chiffres dans
+   chaque `CONTROLES.json` : `couverture_peau` et `debordement_vert`, plus la decomposition
+   du manque (`manque_peau` / `manque_vert_pale` / `manque_autre`).
+2. **Des que la limite de session est atteinte : drapeau rouge, avec consigne et passation.**
+3. Lots de 4 · jamais toucher a un numero valide · jamais remplacer un GIF livre sans accord.
+
+## Etat chiffre
+
+- **17 lots valides et enregistres = 69 numeros** (plus le prototype n°44).
+- **Lots 18 et 19 valides a l'oral (8 numeros), PV a rediger.**
+- **Lot 20 en attente de verdict** (261, 302, 369, 280).
+- **5 numeros restants** apres le lot 20.
+
+## Reglages par numero, dans le modele `retouche-lot4-vert260.py`
+
+Ne pas y toucher sans raison : chacun repond a une demande precise de l'utilisateur.
+
+| reglage | numeros | pourquoi |
+|---|---|---|
+| `ETENDRE_VERT = False` | tous | l'utilisateur a choisi de rester sur le coeur vert franc |
+| `COUVRIR_PEAU` | 1, 66, 297 | le vert couvre aussi la peau que le GIF livre peignait |
+| `GAMMA_VALEUR` | 124 : [0.55, 1.0] | vert presque noir, eclairci en phase 1 seulement |
+| 370 / 371 / 372 | — | gardes malgre l'agrandissement x1,73, jamais vendus comme un gain de nettete |
+
+## A faire en priorite a la prochaine session
+
+1. Rediger les PV des lots 18 et 19 (`enregistrer-validation.py`).
+2. Faire valider le lot 20.
+3. **Brancher `couverture_peau` et `debordement_vert` sur `page-lot.py`** : ils ne
+   s'affichent toujours pas dans `valider.html`, on doit lire `CONTROLES.json`.
+4. Terminer les 5 derniers numeros.
