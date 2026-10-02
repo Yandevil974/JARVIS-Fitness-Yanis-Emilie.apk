@@ -724,3 +724,63 @@ Un `.gitignore` existe depuis le commit `b2a7966` (`.cache/`, `tri/`, `__pycache
 ## Pour la suite du chantier (rappel, non commence)
 
 Cardio/piscine des deux profils → visuels piscine/aqua/elliptique sans source native (34 numeros « femme ») → build de l'app → IA conversationnelle en dernier. Avant le build, rappeler a l'utilisateur de confirmer les ajouts metcon + piscine fractionnee et/ou l'Aqua Tabata d'Emilie.
+
+---
+
+# 🚩 DRAPEAU ROUGE — fin de session, a reprendre ici
+
+Pose le 02/10/2026 en fin de session. **Le lot 13 est produit mais PAS encore valide.**
+
+## Consigne en vigueur (ne pas perdre)
+
+1. **« Le vert doit bien couvrir la peau, pas depasse. »** C'est la consigne donnee par
+   l'utilisateur au moment de reprendre. Concretement : le vert doit couvrir tout le muscle
+   que le GIF livre couvrait, sans deborder sur le decor.
+2. **Des que la limite de session est atteinte : drapeau rouge, avec consigne et passation.**
+   C'est ce bloc. Le recopier en tete de la prochaine session.
+3. Le reste des regles anterieures tient : lots de 4 numeros, jamais toucher a un numero
+   valide, jamais remplacer un GIF livre sans accord, APK intact, rien d'integre.
+
+## Etat
+
+12 lots valides (49 numeros + prototype 44). **Lot 13 (28, 22, 267, 303) produit, en attente
+de verdict.** 33 numeros restants apres lui.
+
+Les outils ont evolue dans cette session — attention, ils ne sont plus identiques a ceux des
+lots 1-12 :
+- `couverture_et_debordement()` : mesure la couverture du vert attendu et le debordement.
+- `etendre_sur_vert()` : etend le masque de proche en proche sur le vert deja present.
+- Le lot choisit la meilleure couverture qui garde le debordement sous **12 %**.
+- Chaque phase porte `couverture_peau`, `debordement_vert` et `manque` (peau / vert pale /
+  autre) dans `CONTROLES.json`.
+
+**Ces mesures n'ont PAS encore ete branchées sur `page-lot.py`** : les alertes de couverture
+ne s'affichent pas dans `valider.html`, il faut lire `CONTROLES.json`. C'est le premier
+travail de la prochaine session.
+
+## Ce que la mesure a appris — et la question ouverte
+
+Le vert du GIF livre couvre en moyenne **3 fois plus large** que le notre. Apres extension,
+la couverture plafonne autour de 0,33-0,70, et le manque se decompose ainsi :
+
+| | peau | vert pale | autre |
+|---|---|---|---|
+| ce que nous ne couvrons pas | 2 a 17 % | **21 a 61 %** | 1 a 5 % |
+
+Autrement dit : **le vert manque tombe massivement sur du vert pale deja present dans la
+planche native** (le halo degrade du muscle), presque pas sur de la peau nue, et jamais sur
+le decor. L'extension de proche en proche ne l'atteint pas : ce halo n'est pas contigu au
+coeur vert franc.
+
+**La question a trancher par l'utilisateur, a l'oeil, sur les planches du lot 13** : faut-il
+etendre le vert sur tout ce halo (vert plus large, plus proche du GIF livre, au risque de
+deborder), ou rester sur le coeur franc (coherent avec les 49 numeros deja valides) ?
+Je n'ai pas de vision : c'est son verdict qui compte, pas mes chiffres.
+
+## Piege de cette session — ne pas le refaire
+
+J'ai lance une regression du lot 4 (deja valide) pour tester l'outil : **elle a ecrase 6
+fichiers valides**. Regle : ne JAMAIS rejouer un outil sur un lot deja valide. Si c'est
+necessaire, le faire dans un dossier de travail separe, ou verifier les sha256 du PV apres
+coup (`VALIDATION-LOTn-*.json`, cle `fichier_valides`) et restaurer par `git checkout HEAD --`.
+C'est ce que j'ai fait : le lot 4 a ete restaure.
