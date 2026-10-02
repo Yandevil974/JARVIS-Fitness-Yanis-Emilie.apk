@@ -110,6 +110,34 @@ CIBLES = [
 ELARGISSEMENT = (1.0, 1.0)   # on ajoute 100 % de la largeur et 100 % de la hauteur autour de la bbox
 
 
+# --- Consigne du 02/10/2026 : le vert doit COUVRIR la peau, sans DEPASSER -----------------
+# Le vert du GIF livre, ramene en resolution native, sert de verite de terrain :
+#   couverture  = part de ce vert attendu que notre retouche recouvre  (trous si trop bas)
+#   debordement = part de notre vert posee LA OU LE GIF LIVRE N'EN AVAIT PAS (decor si haut)
+# Sous SEUIL_COUVERTURE, on baisse le seuil de detection du vert natif pour boucher les trous,
+# en refusant tout essai qui agrandirait le debordement au-dela de SEUIL_DEBORDEMENT.
+SEUIL_COUVERTURE = 0.85
+SEUIL_DEBORDEMENT = 0.25
+
+
+def masque_vert_gif(frame, caisse):
+    """Masque vert du GIF livre, ramene a la taille exacte de la caisse native."""
+    x0, y0, x1, y1 = caisse
+    a = np.asarray(frame.convert('RGB')).astype(float)
+    m = composantes(score_vert(a) > 0.08, 30)
+    up = Image.fromarray((m * 255).astype(np.uint8)).resize((x1 - x0, y1 - y0), Image.NEAREST)
+    return np.asarray(up) > 127
+
+
+def couverture_et_debordement(sil, attendu):
+    """(part du vert attendu effectivement couverte, part du vert posee en trop)."""
+    if not sil.any() or not attendu.any():
+        return 0.0, 0.0
+    couv = float((sil & attendu).sum()) / float(attendu.sum())
+    deb = float((sil & ~dilater(attendu, 3)).sum()) / float(sil.sum())
+    return couv, deb
+
+
 def roi_depuis_bbox_gif(bbox_gif, caisse, gif_taille):
     """Convertit la bbox mesurée dans le GIF livré en ROI dans la caisse native, élargie."""
     gx0, gy0, gx1, gy1 = bbox_gif
@@ -163,6 +191,7 @@ def main():
         gif_taille = (lf[0].width, lf[0].height)
 
         imgs_src, masques, silhouettes, alphas, avant = [], [], [], [], []
+        couvertures, debordements = [], []
         for i, ph in enumerate(cible['phases']):
             caisse = ph['caisse']
             case = board.crop(caisse)
@@ -170,23 +199,43 @@ def main():
             a = np.asarray(case).astype(float)
             sc = score_vert(a)
             roi = roi_depuis_bbox_gif(ph['vert_gif'], caisse, gif_taille)
-            m = np.zeros(sc.shape, bool)
             bx0, by0, bx1, by1 = roi
             rx0, ry0 = bx0 - caisse[0], by0 - caisse[1]
             rx1, ry1 = bx1 - caisse[0], by1 - caisse[1]
-            partiel = np.zeros(sc.shape, bool)
-            partiel[ry0:ry1, rx0:rx1] = sc[ry0:ry1, rx0:rx1] >= ph['seuil']
-            m |= composantes(partiel, ph['mini'])
+
+            def masque_pour(seuil):
+                partiel = np.zeros(sc.shape, bool)
+                partiel[ry0:ry1, rx0:rx1] = sc[ry0:ry1, rx0:rx1] >= seuil
+                return np.zeros(sc.shape, bool) | composantes(partiel, ph['mini'])
+
+            # la peau que le vert doit couvrir, et le perimetre qu'il ne doit pas depasser
+            attendu = masque_vert_gif(lf[i], caisse)
+
+            m = masque_pour(ph['seuil'])
             sil = dilater(remplir_trous(m), 2)
+            couv, deb = couverture_et_debordement(sil, attendu)
+            seuil_eff = ph['seuil']
+            if couv < SEUIL_COUVERTURE:
+                for essai in (0.07, 0.05, 0.03, 0.02):
+                    m2, sil2 = masque_pour(essai), None
+                    sil2 = dilater(remplir_trous(m2), 2)
+                    c2, d2 = couverture_et_debordement(sil2, attendu)
+                    if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
+                        m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, essai
+                        break
+            couvertures.append(couv); debordements.append(deb)
             alpha = np.clip((sc - ALPHA_BAS) / (ALPHA_HAUT - ALPHA_BAS), 0, 1) * sil
             masques.append(m); silhouettes.append(sil); alphas.append(alpha)
             avant.append(statistiques_zone(np.asarray(case), m))
             detail['phases'].append({'caisse_native': list(caisse),
                                      'bbox_vert_gif_livre': list(ph['vert_gif']),
                                      'roi_native': [roi[0], roi[1], roi[2], roi[3]],
-                                     'seuil': ph['seuil'], 'mini_tache': ph['mini'],
+                                     'seuil': ph['seuil'], 'seuil_effectif': seuil_eff,
+                                     'mini_tache': ph['mini'],
                                      'pixels_zone': int(m.sum()),
-                                     'pixels_silhouette': int(sil.sum())})
+                                     'pixels_silhouette': int(sil.sum()),
+                                     'couverture_peau': round(couv, 3),
+                                     'debordement_vert': round(deb, 3)})
 
         if not any(m.any() for m in masques):
             print(f"n°{n} : AUCUNE zone verte trouvée — numéro abandonné, rien d'écrit")
@@ -207,6 +256,9 @@ def main():
             'regle': 'percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé',
         }
 
+        print(f"   couverture de la peau {min(couvertures):.2f} a {max(couvertures):.2f}"
+              f" | debordement du vert {max(debordements):.2f}"
+              f" | seuil {'abaisse' if any(p['seuil_effectif'] != p['seuil'] for p in detail['phases']) else 'nominal'}")
         travail, png_660, apres = [], [], []
         for i, case in enumerate(imgs_src):
             a = np.asarray(case).astype(float)
