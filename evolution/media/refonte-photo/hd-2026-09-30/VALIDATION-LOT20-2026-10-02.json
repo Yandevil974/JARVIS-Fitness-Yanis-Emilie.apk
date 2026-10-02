@@ -1,0 +1,238 @@
+{
+ "date": "2026-10-02",
+ "lot": 20,
+ "numeros": [
+  261,
+  280,
+  302,
+  369
+ ],
+ "reponse_utilisateur": "\"Oui pour les quatre : 261, 302, 369, 280.\"",
+ "contexte": "Après consultation de la page lot20/valider.html (servie sur le port 8080).",
+ "fichier_valides": [
+  {
+   "numero": 261,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/261-vert260-660-webp-q90.webp",
+   "sha256": "6a46cf8d570aa395eecdbee7042131a94bee88f3a7fea9d874ff0e11511336f1",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 93
+  },
+  {
+   "numero": 261,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/261-vert260-660-repli.gif",
+   "sha256": "1b82b2d6c5e95d35fe7b26cc9787a29797c80095cbfd33e6c5ba25ce95f7b7ab",
+   "taille": [
+    585,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 427
+  },
+  {
+   "numero": 280,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/280-vert260-660-webp-q90.webp",
+   "sha256": "e1d4a399fc205a204dc43b5bbca60e3795148770bf5592d1d4189429bc97a39c",
+   "taille": [
+    578,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 96
+  },
+  {
+   "numero": 280,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/280-vert260-660-repli.gif",
+   "sha256": "1186cf22eab8d6b93a7029229b6af6c7488e70854ea8f8b1cb45f7a223ea947a",
+   "taille": [
+    578,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 376
+  },
+  {
+   "numero": 302,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/302-vert260-660-webp-q90.webp",
+   "sha256": "2587c13fc386b1aae074849fa6d158eeb9d71f108b5903614bde7b28da023e77",
+   "taille": [
+    571,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 90
+  },
+  {
+   "numero": 302,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/302-vert260-660-repli.gif",
+   "sha256": "75f874b450c6aec455d05a52cb2c05362a0b1af3e223caf585b722e3c56f6985",
+   "taille": [
+    571,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 366
+  },
+  {
+   "numero": 369,
+   "role": "webp-q90",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/369-vert260-660-webp-q90.webp",
+   "sha256": "01705d03f66b5f288b0cfcea201ec7efba4fe7e911d69dbb528a3fd82a222c2b",
+   "taille": [
+    745,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 79
+  },
+  {
+   "numero": 369,
+   "role": "gif-repli",
+   "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot20/exports/369-vert260-660-repli.gif",
+   "sha256": "e478c39211d6de64f904ccfc72640a84c0b909a321f64afeacfad8e5e4cdd8f1",
+   "taille": [
+    745,
+    660
+   ],
+   "images": 2,
+   "poids_ko": 414
+  }
+ ],
+ "mesures": {
+  "261": {
+   "psnr_webp_db": [
+    42.4,
+    42.25
+   ],
+   "psnr_gif_db": [
+    36.79,
+    36.02
+   ],
+   "saturation_avant": [
+    0.955,
+    0.955
+   ],
+   "saturation_apres": [
+    0.915,
+    0.914
+   ],
+   "teinte_source_deg": 85.4,
+   "transition_contour_apres_px": [
+    1.72,
+    1.88
+   ],
+   "pixels_zone": [
+    11819,
+    12514
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "280": {
+   "psnr_webp_db": [
+    42.18,
+    42.2
+   ],
+   "psnr_gif_db": [
+    35.17,
+    34.63
+   ],
+   "saturation_avant": [
+    0.966,
+    0.981
+   ],
+   "saturation_apres": [
+    0.916,
+    0.934
+   ],
+   "teinte_source_deg": 73.8,
+   "transition_contour_apres_px": [
+    11.89,
+    7.03
+   ],
+   "pixels_zone": [
+    1876,
+    2642
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "302": {
+   "psnr_webp_db": [
+    42.2,
+    42.36
+   ],
+   "psnr_gif_db": [
+    36.11,
+    34.75
+   ],
+   "saturation_avant": [
+    0.879,
+    0.855
+   ],
+   "saturation_apres": [
+    0.921,
+    0.9
+   ],
+   "teinte_source_deg": 77.2,
+   "transition_contour_apres_px": [
+    5.6,
+    6.44
+   ],
+   "pixels_zone": [
+    5334,
+    5958
+   ],
+   "pixels_modifies_hors_zone": 0
+  },
+  "369": {
+   "psnr_webp_db": [
+    42.7,
+    42.91
+   ],
+   "psnr_gif_db": [
+    37.69,
+    32.86
+   ],
+   "saturation_avant": [
+    0.487,
+    0.518
+   ],
+   "saturation_apres": [
+    0.791,
+    0.82
+   ],
+   "teinte_source_deg": 99.3,
+   "transition_contour_apres_px": [
+    14.29,
+    12.9
+   ],
+   "pixels_zone": [
+    3790,
+    7799
+   ],
+   "pixels_modifies_hors_zone": 0
+  }
+ },
+ "saturation_reference_260": 0.914,
+ "particularites": {
+  "261": "Debordement 0,008, couverture 0,83.",
+  "302": "Debordement 0,000 en phase 1.",
+  "369": "Debordement 0,42 (record) valide.",
+  "280": "Couverture 0,29 mais debordement 0,04."
+ },
+ "verifications": {
+  "pixels_modifies_hors_zone_sur_le_lot": 0
+ },
+ "portee": "Les propositions du lot, telles quelles (fichiers identifiés par leur empreinte ci-dessus).",
+ "non_couvert": "Aucune intégration : les GIF livrés ne sont pas remplacés, l'APK n'est pas reconstruit, le format WebP de l'app n'est pas adopté (accord + test WebView sur le téléphone toujours requis).",
+ "methode": "evolution/media/tools/retouche-lot20-vert260.py — mêmes fonctions déterministes que les lots précédents, 0 image générée, 0 GIF livré remplacé",
+ "regle": "proposition ≠ validation ≠ intégration"
+}
