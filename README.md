@@ -1,39 +1,37 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — aperçu des visuels retouchés
+## Version à installer — tous les exercices avec leur GIF humain
 
-[Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk](downloads/Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk) — 34 305 511 octets, SHA-256 `4c38a85d1b192fbce98e925d8ac5c1d2def93b99bbe71489fed5341763e7656e`, signature `168df81a…`.
+[Yanis-Fitness-Evolution-1.5.1-gifs-integres.apk](downloads/Yanis-Fitness-Evolution-1.5.1-gifs-integres.apk) — 68 150 190 octets, signature `168df81a…` (empreinte SHA-256 dans le `.sha256` joint).
 
-Cette version ajoute un onglet **« Aperçu visuels »** dans le menu : les **87 visuels
-retouchés** (lots 1 à 21 + prototype n°44) et les **10 corrections de vert du chantier 2
-« femme »** (28 numéros) — soit **115 numéros**, à juger à l'œil sur le téléphone.
+**Ce qui change** : les **209 exercices** ont maintenant un visuel humain animé (95 avant).
 
-**Rien n'est remplacé** : ces visuels sont posés à côté, dans `public/apercu/` ; les GIF
-déjà livrés et les médias de l'application sont intacts. L'intégration aux médias ne se
-fera qu'après accord, numéro par numéro.
+- **38 visuels** viennent des retouches validées (lots 1 à 21, prototype n°44, série
+  « femme » au vert corrigé) — ce sont les remplacements demandés.
+- **106 visuels** viennent du corpus des GIF livrés (les 389 visuels), attribués à
+  l'exercice correspondant.
+- **10 guides piscine** reçoivent leur visuel animé à la place de l'illustration statique :
+  Ciseaux au bord, Marche aquatique, Aqua-jogging, Battements, Déplacements latéraux,
+  Nage douce, Gainage vertical, Sprint (n°292), Retour au calme (n°313), Talons-fesses.
+- L'onglet **« Aperçu visuels »** reste disponible pour comparer avant/après.
+- Règle respectée : un GIF existant n'a été remplacé que là où une retouche validée le
+  concerne.
 
-Ce qu'il faut regarder en premier (tirent vers le cyan : l'eau du bassin peut avoir été
-prise pour le muscle peint) : **n°292, 313, 210, 274, 326**.
+## Versions précédentes
 
-Installation : directe, **à côté** de JARVIS Fitness 1.5.0 (identifiant distinct,
-`app.yanis.fitness.evolution`) ; rien n'est écrasé.
-
-## Version stable (sans la galerie)
-
-[Yanis-Fitness-Evolution-1.5.1.apk](downloads/Yanis-Fitness-Evolution-1.5.1.apk) — 24 564 188 octets, SHA-256 `d44bda228fdcb70d3a65c2e1443c54cb0918b2843fb4a98bdc574c454f2aba0d`, signature `168df81a…`.
-
-Contient le **chantier 1** (seuil « 3 séances dures / 7 jours » de Yanis) : retour strict à
-la source avec `sourceProtoName()` / `sourceHardSession()`.
+- [Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk](downloads/Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk) — 34 305 511 octets : galerie d'aperçu, médias d'origine.
+- [Yanis-Fitness-Evolution-1.5.1.apk](downloads/Yanis-Fitness-Evolution-1.5.1.apk) — 24 564 188 octets : version stable de base (chantier 1).
 
 ## Ce qui n'est pas dans ces versions
 
-- Aucun GIF livré n'a été remplacé, aucun APK d'origine modifié, prescriptions, gestes et
-  prises intouchés.
-- Les visuels de la galerie restent hors des médias de l'application tant qu'ils ne sont
-  pas validés numéro par numéro.
+- Aucun APK d'origine modifié, prescriptions, gestes et prises intouchés.
+- Les 4 chantiers demandés le 02/10/2026 (coachs, metcon piscine/aqua pour Émilie,
+  diversification des séances piscine, IA conversationnelle) sont à mener dans un
+  nouveau chat — voir `PASSATION-NOUVEAU-CHAT.md`.
 
 ## Vérifications
 
 - 96 tests unitaires : **94 passent, 0 échec, 2 ignorés**.
+- 209/209 exercices avec visuel présent dans le magasin média, 0 fichier manquant, 0
+  vignette manquante.
 - APK : archive saine (`unzip -t`), signature v2 avec le certificat du keystore du dépôt.
-- Empreintes : `sha256sum -c *.sha256` dans `downloads/`.

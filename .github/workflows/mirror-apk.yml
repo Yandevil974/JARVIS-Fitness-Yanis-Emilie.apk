@@ -16,11 +16,11 @@ on:
       tag:
         description: "Tag de la release a copier"
         required: true
-        default: "v1.5.1-apercu-visuels"
+        default: "v1.5.1-gifs-integres"
       nom:
         description: "Nom du fichier dans downloads/"
         required: true
-        default: "Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk"
+        default: "Yanis-Fitness-Evolution-1.5.1-gifs-integres.apk"
 
 permissions:
   contents: write
@@ -30,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      TAG: ${{ github.event.inputs.tag || 'v1.5.1-apercu-visuels' }}
-      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk' }}
+      TAG: ${{ github.event.inputs.tag || 'v1.5.1-gifs-integres' }}
+      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.5.1-gifs-integres.apk' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
