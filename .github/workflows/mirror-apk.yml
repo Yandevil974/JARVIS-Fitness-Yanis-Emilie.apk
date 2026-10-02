@@ -1,0 +1,62 @@
+name: Miroir APK dans le depot (telechargement direct)
+
+# Recopie l'APK publie (release) dans dist/ du depot, avec controle sha256.
+# Objectif : disposer d'une copie lisible depuis github.com/codeload pour la
+# servir en telechargement direct quand l'hote des assets de release est
+# injoignable. Le fichier est identique a l'octet pres a l'asset publie.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/mirror-apk.yml"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag de la release a copier"
+        required: true
+        default: "v1.5.1-evolution-build4"
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Telecharger l'APK et son empreinte depuis la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.inputs.tag || 'v1.5.1-evolution-build4' }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          gh release download "$TAG" --pattern '*.apk' --dir dist --clobber
+          gh release download "$TAG" --pattern '*.sha256' --dir dist --clobber
+          ls -la dist/
+
+      - name: Controler le sha256 avant tout commit
+        run: |
+          set -euo pipefail
+          cd dist
+          sha256sum -c ./*.sha256
+          sha256sum ./*.apk | tee /tmp/apk.sha256
+
+      - name: Commit et push du miroir
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist
+          if git diff --cached --quiet; then
+            echo "Miroir deja present, rien a committer."
+          else
+            git commit -m "Miroir de l'APK publie dans dist/ (copie conforme, sha256 verifie)"
+            git push origin "HEAD:refs/heads/${GITHUB_REF_NAME}"
+          fi
+
+      - name: Rappel
+        run: cat /tmp/apk.sha256
