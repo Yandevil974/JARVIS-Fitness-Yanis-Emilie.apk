@@ -53,7 +53,7 @@ L1 = _charger('lot1', 'retouche-lot1-vert260.py')
 L2 = _charger('lot2', 'retouche-lot2-vert260.py')
 
 BASE = L1.BASE
-LOT = 4
+LOT = 13
 OUT = BASE / f'lot{LOT}'
 SRC = ROOT / f'.cache/lot{LOT}/src'
 HAUTEUR_EXPORT = L1.HAUTEUR_EXPORT
@@ -81,31 +81,32 @@ ALPHA_BAS, ALPHA_HAUT = L1.ALPHA_BAS, L1.ALPHA_HAUT
 # --------------------------------------------------------------------------------------
 # --- CIBLES (début) ---
 CIBLES = [
-    dict(numero=131, cle='leg-curl-allonge|homme',
-         planche='planches/lot01/homme/leg-curl-allonge.png', ref_source='c685298',
-         livre='gif/homme/leg-curl-allonge-homme.gif', ref_livre='base/lots-complets',
-         note='leg curl allonge ; vert attendu sur les ischio-jambiers, erreur d’alignement 5,14/255',
-         phases=[dict(caisse=(0, 0, 667, 768), vert_gif=(119, 224, 181, 266), seuil=0.10, mini=200),
-                 dict(caisse=(678, 0, 1345, 768), vert_gif=(132, 226, 179, 267), seuil=0.10, mini=200)]),
-    dict(numero=133, cle='leg-curl-allonge-pieds-flechis|homme',
-         planche='planches/lot10/leg-curl-allonge-pieds-flechis.png', ref_source='c685298',
-         livre='gif/homme/leg-curl-allonge-pieds-flechis-homme.gif', ref_livre='base/lots-complets',
-         note='variante pieds flechis du 131 ; erreur d’alignement 5,02/255 (la plus basse du lot)',
-         phases=[dict(caisse=(0, 0, 674, 768), vert_gif=(58, 205, 81, 231), seuil=0.10, mini=200),
-                 dict(caisse=(684, 0, 1358, 768), vert_gif=(136, 223, 180, 277), seuil=0.10, mini=200)]),
-    dict(numero=114, cle='gainage-planche|homme',
-         planche='planches/lot37/gainage-planche.png', ref_source='c685298',
-         livre='gif/homme/gainage-planche-homme.gif', ref_livre='base/lots-complets',
-         note='gainage planche ; la zone verte du GIF est la plus petite du lot (673 et 721 px)',
-         phases=[dict(caisse=(0, 0, 684, 768), vert_gif=(39, 201, 72, 228), seuil=0.10, mini=200),
-                 dict(caisse=(692, 0, 1376, 768), vert_gif=(41, 203, 71, 230), seuil=0.10, mini=200)]),
-    dict(numero=23, cle='circuit-abdominaux-crunch-releves-gainage|femme',
-         planche='planches/lot09/circuit-abdominaux-crunch-releves-gainage.png', ref_source='c685298',
-         livre='gif/femme/circuit-abdominaux-crunch-releves-gainage-femme.gif', ref_livre='base/lots-complets',
-         note='seul numéro « femme » du lot ; zone verte la plus étendue (2177 et 2039 px)',
-         phases=[dict(caisse=(7, 0, 688, 768), vert_gif=(165, 325, 198, 372), seuil=0.10, mini=200),
-                 dict(caisse=(692, 0, 1373, 768), vert_gif=(214, 298, 249, 339), seuil=0.10, mini=200)]),
-]# --- CIBLES (fin) ---
+    dict(numero=28, cle='crunch-sur-swiss-ball|homme',
+         planche='planches/lot15/crunch-sur-swiss-ball.png', ref_source='c685298',
+         livre='gif/homme/crunch-sur-swiss-ball-homme.gif', ref_livre='base/lots-complets',
+         note='crunch sur swiss ball ; erreur d’alignement 4.7/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 681, 768), vert_gif=(73, 195, 96, 219), seuil=0.10, mini=200),
+                 dict(caisse=(692, 0, 1373, 768), vert_gif=(202, 187, 249, 232), seuil=0.10, mini=200)]),
+    dict(numero=22, cle='california-press-barre-au-cou|homme',
+         planche='planches/lot18/california-press-barre-au-cou.png', ref_source='c685298',
+         livre='gif/homme/california-press-barre-au-cou-homme.gif', ref_livre='base/lots-complets',
+         note='california press barre au cou ; erreur d’alignement 4.84/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 667, 768), vert_gif=(52, 219, 91, 248), seuil=0.10, mini=200),
+                 dict(caisse=(678, 0, 1345, 768), vert_gif=(61, 221, 102, 250), seuil=0.10, mini=200)]),
+    dict(numero=267, cle='etirement-des-flechisseurs|homme',
+         planche='planches/lot06/etirement-des-flechisseurs.png', ref_source='c685298',
+         livre='gif/homme/etirement-des-flechisseurs-homme.gif', ref_livre='base/lots-complets',
+         note='etirement des flechisseurs ; erreur d’alignement 4.86/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 681, 768), vert_gif=(185, 165, 198, 226), seuil=0.10, mini=200),
+                 dict(caisse=(692, 0, 1373, 768), vert_gif=(191, 162, 245, 186), seuil=0.10, mini=200)]),
+    dict(numero=303, cle='position-de-l-enfant-balasana|homme',
+         planche='planches/lot04/position-de-l-enfant-balasana.png', ref_source='c685298',
+         livre='gif/homme/position-de-l-enfant-balasana-homme.gif', ref_livre='base/lots-complets',
+         note='position de l enfant balasana ; erreur d’alignement 4.97/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 681, 768), vert_gif=(235, 243, 290, 271), seuil=0.10, mini=200),
+                 dict(caisse=(692, 0, 1373, 768), vert_gif=(240, 266, 295, 291), seuil=0.10, mini=200)]),
+]
+# --- CIBLES (fin) ---
 
 ELARGISSEMENT = (1.0, 1.0)   # on ajoute 100 % de la largeur et 100 % de la hauteur autour de la bbox
 
@@ -127,25 +128,6 @@ def masque_vert_gif(frame, caisse):
     m = composantes(score_vert(a) > 0.08, 30)
     up = Image.fromarray((m * 255).astype(np.uint8)).resize((x1 - x0, y1 - y0), Image.NEAREST)
     return np.asarray(up) > 127
-
-
-def etendre_sur_vert(m, sc, seuil_bas, portee=6):
-    """Etend le masque de proche en proche, uniquement sur les pixels deja verts.
-
-    Le muscle n'est pas uniforme : ses bords et ses zones d'ombre sont verts, mais trop
-    peu pour franchir le seuil. Plutot que de baisser le seuil partout (ce qui peindrait
-    aussi le decor, souvent verdatre lui aussi), on part du vert franc et on gagne du
-    terrain par pas de 2 px en n'acceptant que les pixels dont le score reste vert.
-    Un decor ELOIGNE n'est donc jamais atteint : la progression est locale.
-    """
-    grow = m.copy()
-    candidat = sc >= seuil_bas
-    for _ in range(portee):
-        pas = dilater(grow, 2) & candidat & ~grow
-        if not pas.any():
-            break
-        grow |= pas
-    return grow
 
 
 def couverture_et_debordement(sil, attendu, native=None):
@@ -252,23 +234,13 @@ def main():
             couv, deb, compo = couverture_et_debordement(sil, attendu, a)
             seuil_eff = ph['seuil']
             if couv < SEUIL_COUVERTURE:
-                # 1er remede : s'etendre de proche en proche sur le vert deja present
-                for essai in (0.06, 0.04, 0.02):
-                    m2 = etendre_sur_vert(m, sc, essai)
+                for essai in (0.07, 0.05, 0.03, 0.02):
+                    m2, sil2 = masque_pour(essai), None
                     sil2 = dilater(remplir_trous(m2), 2)
                     c2, d2, _ = couverture_et_debordement(sil2, attendu)
                     if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
-                        m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, f'etendu {essai}'
-                # 2e remede : baisser le seuil si l'extension n'a pas suffi
-                if couv < SEUIL_COUVERTURE:
-                    for essai in (0.07, 0.05, 0.03, 0.02):
-                        m2 = masque_pour(essai)
-                        sil2 = dilater(remplir_trous(m2), 2)
-                        c2, d2, _ = couverture_et_debordement(sil2, attendu)
-                        if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
-                            m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, essai
-                            break
-                compo = couverture_et_debordement(sil, attendu, a)[2]
+                        m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, essai
+                        break
             couvertures.append(couv); debordements.append(deb)
             alpha = np.clip((sc - ALPHA_BAS) / (ALPHA_HAUT - ALPHA_BAS), 0, 1) * sil
             masques.append(m); silhouettes.append(sil); alphas.append(alpha)
