@@ -1,6 +1,32 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — tous les GIF humains, chrono compris (y compris HIIT / Aqua Tabata)
+## Version à installer — coachs réactifs (chantier 1 : A–E) + tous les GIF humains
+
+**[Yanis-Fitness-Evolution-1.6.0-coachs.apk](downloads/Yanis-Fitness-Evolution-1.6.0-coachs.apk)** — APK signé, keystore du dépôt.
+
+**Ce qui change (chantier 1 — propositions A à E validées le 02/10/2026)** :
+- **A — Une seule décision du coach par semaine**, calculée sur vos retours réels
+  (RPE/RIR saisis, séances manquées, bilans fatigue/douleur, score de récupération,
+  progression) et affichée de façon identique dans « Mon équipe », la carte « Le coach
+  a noté » et l'en-tête de la prochaine séance. Décisions possibles : protéger
+  (douleur), décharge −40 %, allégement −20 %, reprise progressive après coupure,
+  prêt à progresser (+2,5 kg), cap maintenu.
+- **B — Le bilan agit** : fatigue ≥ 4/5 ou douleur ≥ 3/5 dans le bilan hebdomadaire
+  ⇒ la prochaine séance est automatiquement réduite (visible dans « Mes adaptations »,
+  une fois par jour, jamais de rattrapage inventé).
+- **C — RPE systématique** : RPE moyen > 8,5 ⇒ allègement proposé ; ≤ 6,5 avec toutes
+  les séances terminées ⇒ progression de charge annoncée.
+- **D — Séances manquées** : alerte avec action pour réajuster la fréquence ; chaque
+  séance manquée reste replanifiable depuis Programme.
+- **E — Rôles santé et mobilité branchés sur vos données** (douleurs et énergie des
+  7 derniers jours, échauffements et retours au calme validés) au lieu de textes fixes.
+- Rien d'autre n'a changé : les 209 exercices, les chronos en GIF humain (piscine,
+  aqua, METCON, étirements, elliptique, HIIT/Aqua Tabata) sont identiques à la
+  version `chrono-gifs-v3`.
+
+Tests : **116 tests, 114 passent, 0 échec** (dont 14 nouveaux pour l'état du coach).
+
+## Version précédente — tous les GIF humains, chrono compris (y compris HIIT / Aqua Tabata)
 
 [Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v3.apk](downloads/Yanis-Fitness-Evolution-1.5.1-chrono-gifs-v3.apk) — 87 763 952 octets, signature `168df81a…` (empreinte SHA-256 dans le `.sha256` joint).
 

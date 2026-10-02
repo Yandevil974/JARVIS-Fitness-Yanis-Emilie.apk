@@ -150,6 +150,23 @@ présents dans le bundle). Donc la correction du 02/10 est **bien dans l'APK liv
 si l'utilisateur ne voit toujours pas les GIF, c'est un cache/ancienne installation —
 réinstaller l'APK v3 depuis le lien brut.
 
-**Chantier 1 (coachs)** : inventaire fait, propositions soumises à validation dans le
-chat (voir historique). Rien n'est modifié dans l'app tant que l'utilisateur n'a pas
-validé, conformément à la consigne « proposer → valider → modifier ».
+**Chantier 1 (coachs)** : propositions A–E **validées par l'utilisateur et
+implémentées** dans la même séance (`v1.6.0-coachs`) :
+- Nouveau module `src/engine/coach-state.js` : `weeklyCoachState(p, date, reviewOverride)`
+  (décision unique : protect / deload −40 % / lighten −20 % / reprise / progress /
+  maintain / nodata, avec raisons chiffrées), `applyCoachStateToSession`,
+  `applyReviewAdaptation` (bilan fatigue ≥ 4 ou douleur ≥ 3 ⇒ prochaine séance réduite,
+  une fois par jour). Les bilans de plus de 8 jours ne pèsent plus.
+- `coach.js` : action `coach-state` dans `applyCoachAction` ; `coachFindings` affiche la
+  décision en finding unique (remplace les findings douleur/récupération/creux séparés) ;
+  séances manquées → action `replan`.
+- `team.js` : `teamAdvice` ouvre sur la décision de la semaine ; `teamInsights` rôle 0
+  porte la décision, rôles santé/mobilité lisent douleurs/énergie/échauffements réels.
+- `Team.jsx` : enregistrer un bilan applique l'adaptation (B) + entrée « Mes adaptations ».
+- `Training.jsx` : bannière « Décision du coach » sur la prochaine séance (A).
+- Tests : `tests/coach-state.test.js` (14 cas). Total : **116 tests, 114 passent, 0 échec**.
+
+**Prochaine action concrète** : chantier 2 (METCON piscine + METCON aqua tabata pour
+Émilie, en plus de ce qu'elle a déjà), puis chantier 3 (enrichir/durcir piscine et aqua
+tabata), puis chantier 4 (IA conversationnelle, en dernier). Méthode inchangée :
+inventaire → propositions → validation → modification.

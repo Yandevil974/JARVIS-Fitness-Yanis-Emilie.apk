@@ -3148,6 +3148,61 @@ textarea.input {
   color: var(--muted);
   line-height: 1.8;
 }
+/* Décision unique du coach (chantier 1 — A) : même voix dans l'équipe, la
+   carte « Le coach a noté » et l'en-tête de la prochaine séance. */
+.coach-state {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--mint);
+  background: color-mix(in srgb, var(--mint) 7%, transparent);
+}
+.coach-state > svg {
+  color: var(--mint);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.coach-state strong {
+  display: block;
+  font-size: 13.5px;
+}
+.coach-state p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.coach-state small {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--mint);
+}
+.coach-state-protect,
+.coach-state-deload {
+  border-left-color: var(--red);
+  background: color-mix(in srgb, var(--red) 7%, transparent);
+}
+.coach-state-protect > svg,
+.coach-state-deload > svg {
+  color: var(--red);
+}
+.coach-state-lighten,
+.coach-state-reprise {
+  border-left-color: var(--amber);
+  background: color-mix(in srgb, var(--amber) 8%, transparent);
+}
+.coach-state-lighten > svg,
+.coach-state-reprise > svg {
+  color: var(--amber);
+}
 .preview-focus {
   display: flex;
   gap: 7px;

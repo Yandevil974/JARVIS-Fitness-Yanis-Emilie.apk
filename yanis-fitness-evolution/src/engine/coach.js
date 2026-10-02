@@ -49,6 +49,10 @@ import { nutritionTargets } from "./nutrition.js";
 import { archivePlan } from "./plan-memory.js";
 import { validDate } from "./validation.js";
 import { pauseTimer, advanceTimer } from "./timer.js";
+import {
+  weeklyCoachState,
+  applyCoachStateToSession,
+} from "./coach-state.js";
 
 // ————— Normalisation —————
 const TYPO_FIXES = [
@@ -840,6 +844,24 @@ export function applyCoachAction(p, action, extra = {}) {
       detail = `Séance manquée conservée et reportée au ${r.date}.`;
       break;
     }
+    case "coach-state": {
+      const state = weeklyCoachState(q);
+      const target = q.workout || nextSession(q);
+      if (!target) throw new Error("Aucune séance à adapter.");
+      if (target.coachAdapted === today())
+        throw new Error("Cette séance a déjà été adaptée aujourd'hui.");
+      const changed = applyCoachStateToSession(target, state);
+      if (q.workout?.id === target.id) q.workout = target;
+      else
+        q.plan.sessions = q.plan.sessions.map((s) =>
+          s.id === target.id ? target : s,
+        );
+      detail =
+        state.volumeFactor >= 1
+          ? `Décision du coach : ${state.label}. ${state.detail}`
+          : `Décision appliquée (${state.label}) : volume ajusté à partir de vos retours réels, séries déjà réalisées conservées.`;
+      break;
+    }
     case "replace": {
       const to = exerciseById(extra.exerciseId);
       const s =
@@ -964,38 +986,35 @@ export function followUpSchedule(dates, weeks = PHOTO_WEEKS, on = today()) {
 export function coachFindings(p, on = today()) {
   if (!p) return [];
   const findings = [];
-  const painDates = Object.entries(p.checkIns || {})
-    .filter(
-      ([date, c]) => c?.painReported && daysBetween(date, on) <= 3,
-    )
-    .map(([date]) => date)
-    .sort();
-  if (painDates.length)
+  // Décision unique de la semaine (chantier 1 — A) : douleur, récupération
+  // basse, fatigue du bilan, RPE élevé et reprise après coupure passent tous
+  // par la même voix, avec les chiffres réels qui la justifient.
+  const state = weeklyCoachState(p, on);
+  const adapted =
+    (p.workout || nextSession(p))?.coachAdapted === today();
+  if (
+    ["protect", "deload", "lighten", "reprise"].includes(state.decision) &&
+    !adapted
+  )
     findings.push({
-      key: `watch-pain-${painDates[painDates.length - 1]}`,
-      severity: "high",
-      title: "Une douleur a été signalée",
+      key: `coach-state-${state.decision}-${on}`,
+      severity: state.severity === "high" ? "high" : "medium",
+      title: `Décision du coach : ${state.label}`,
       detail:
-        "Votre prochaine séance n’en tient pas encore compte. Je peux alléger le volume et éviter les mouvements sur la zone concernée, en gardant vos séries déjà réalisées.",
-      action: { type: "fatigue" },
+        state.detail +
+        (state.reasons.length
+          ? ` Mesuré sur : ${state.reasons.join(" ; ")}.`
+          : ""),
+      action: { type: "coach-state" },
     });
-  const scores = [];
-  for (let i = 0; i < RECOVERY_WATCH_DAYS; i++) {
-    const date = addDays(on, -i);
-    if (!p.checkIns?.[date]) continue;
-    const s = recoveryScore(p, date).score;
-    if (s != null) scores.push(s);
-  }
-  if (scores.length >= RECOVERY_WATCH_DAYS && scores.every((s) => s < LOW_RECOVERY)) {
-    const avg = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+  else if (state.decision === "progress")
     findings.push({
-      key: `watch-recovery-${on}`,
-      severity: "high",
-      title: "Votre récupération reste basse",
-      detail: `Score moyen de ${avg}/100 sur ${scores.length} jours. Ce n’est pas un mauvais jour isolé. Je peux réduire le volume de la prochaine séance sans toucher au programme d’origine.`,
-      action: { type: "fatigue" },
+      key: `coach-state-progress-${on}`,
+      severity: "low",
+      title: `Décision du coach : ${state.label}`,
+      detail: state.detail,
+      action: { type: "navigate", page: "training" },
     });
-  }
   const past = (p.plan?.sessions || [])
     .filter((s) => s.date < on)
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -1009,28 +1028,9 @@ export function coachFindings(p, on = today()) {
       severity: "medium",
       title: `${missedStreak} séances non réalisées`,
       detail:
-        "Un programme qu’on ne suit pas n’est pas le bon programme. Plutôt que de rattraper, je peux le réajuster à votre rythme réel — quitte à réduire la fréquence.",
+        "Un programme qu’on ne suit pas n’est pas le bon programme. Je peux réajuster la fréquence à votre rythme réel (bouton ci-dessous) ; vous pouvez aussi replacer une séance manquée depuis la page Programme.",
       action: { type: "replan" },
     });
-  const lastSessionDate = [...(p.sessions || [])]
-    .filter((s) => s.status === "completed" && s.date <= on)
-    .map((s) => s.date)
-    .sort()
-    .pop();
-  if (lastSessionDate) {
-    const gap = daysBetween(lastSessionDate, on);
-    if (gap >= FINDING_GAP_DAYS)
-      findings.push({
-        key: `watch-gap-${lastSessionDate}`,
-        severity: gap >= 21 ? "high" : "medium",
-        title: `${gap} jours sans séance`,
-        detail:
-          gap >= 21
-            ? "Après une coupure de cette durée, reprendre aux charges d’avant expose à la blessure. Je peux proposer une reprise progressive."
-            : "Une reprise en douceur vaut mieux qu’un rattrapage. Je peux alléger la première séance.",
-        action: { type: "fatigue" },
-      });
-  }
   const force = forceRevalState(p);
   if (!force.due && force.done && force.days != null && force.days <= FINDING_SOON_DAYS)
     findings.push({

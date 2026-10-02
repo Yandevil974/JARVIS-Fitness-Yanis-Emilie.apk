@@ -15,6 +15,7 @@ import {
   Empty,
 } from "../components/ui.jsx";
 import { teamInsights, teamWeek, teamAdvice } from "../engine/team.js";
+import { applyReviewAdaptation } from "../engine/coach-state.js";
 import { sourcePosition } from "../engine/source-schedule.js";
 import { photoReading } from "../engine/fitness.js";
 import { today, dateLabel, assetSrc, uid, num } from "../engine/utils.js";
@@ -247,12 +248,28 @@ function TeamReviewForm() {
     e.preventDefault();
     try {
       const review = makeTeamReview(p, form);
-      updateProfile((q) => {
-        q.teamReviews = (q.teamReviews || []).filter((r) => r.id !== review.id);
-        q.teamReviews.push(review);
-      });
+      // Bilan → action (chantier 1 — B) : fatigue ≥ 4 ou douleur ≥ 3 drape la
+      // prochaine séance (volume réduit), une fois par jour, visible dans
+      // « Mes adaptations ». Calcul hors du setState : le profil de
+      // remplacement est complet et déterministe.
+      const q = structuredClone(p);
+      q.teamReviews = (q.teamReviews || []).filter((r) => r.id !== review.id);
+      q.teamReviews.push(review);
+      const r = applyReviewAdaptation(q, review);
+      if (r.changed)
+        q.adaptations.unshift({
+          id: uid(),
+          date: today(),
+          at: Date.now(),
+          label: "Bilan pris en compte",
+          detail: r.detail,
+          action: "review",
+        });
+      updateProfile(() => q);
       notify(
-        "Bilan et retours enregistrés. La programmation n’a pas été modifiée.",
+        r.changed
+          ? `Bilan enregistré. ${r.detail}`
+          : "Bilan et retours enregistrés. La programmation n’a pas été modifiée.",
       );
     } catch (e) {
       notify(e.message, "error");

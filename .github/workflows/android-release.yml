@@ -73,15 +73,15 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.5.1 (versionCode 151)
+            ## Yanis Fitness Evolution 1.6.0 (versionCode 160)
             APK signé avec la clé propre à l'application (`app.yanis.fitness.evolution`).
 
             **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Vos deux jeux de données restent indépendants (clés de stockage distinctes ; l'ancienne clé n'est lue qu'une fois pour l'import, jamais modifiée).
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.5.1.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.6.0.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.5.1.apk.sha256`.
+            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.6.0.apk.sha256`.
 
             ### Importer vos données
             Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.
