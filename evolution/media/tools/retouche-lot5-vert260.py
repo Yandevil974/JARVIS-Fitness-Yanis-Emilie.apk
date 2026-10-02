@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lot 4 (n degre 131, 133, 114, 23) — meme methode que les lots 2 et 3 valides le 02/10/2026.
+"""Lot 5 (n degre 131, 133, 114, 23) — meme methode que les lots 2 et 3 valides le 02/10/2026.
 
 Aucune innovation de methode : memes fonctions deterministes que le lot 1 / lot 2, memes
 reglages (WebP anime 660 q90, vert ramene dans la famille du n degre 260, rampe alpha
@@ -53,7 +53,7 @@ L1 = _charger('lot1', 'retouche-lot1-vert260.py')
 L2 = _charger('lot2', 'retouche-lot2-vert260.py')
 
 BASE = L1.BASE
-LOT = 4
+LOT = 5
 OUT = BASE / f'lot{LOT}'
 SRC = ROOT / f'.cache/lot{LOT}/src'
 HAUTEUR_EXPORT = L1.HAUTEUR_EXPORT
@@ -81,31 +81,32 @@ ALPHA_BAS, ALPHA_HAUT = L1.ALPHA_BAS, L1.ALPHA_HAUT
 # --------------------------------------------------------------------------------------
 # --- CIBLES (début) ---
 CIBLES = [
-    dict(numero=131, cle='leg-curl-allonge|homme',
-         planche='planches/lot01/homme/leg-curl-allonge.png', ref_source='c685298',
-         livre='gif/homme/leg-curl-allonge-homme.gif', ref_livre='base/lots-complets',
-         note='leg curl allonge ; vert attendu sur les ischio-jambiers, erreur d’alignement 5,14/255',
-         phases=[dict(caisse=(0, 0, 667, 768), vert_gif=(119, 224, 181, 266), seuil=0.10, mini=200),
-                 dict(caisse=(678, 0, 1345, 768), vert_gif=(132, 226, 179, 267), seuil=0.10, mini=200)]),
-    dict(numero=133, cle='leg-curl-allonge-pieds-flechis|homme',
-         planche='planches/lot10/leg-curl-allonge-pieds-flechis.png', ref_source='c685298',
-         livre='gif/homme/leg-curl-allonge-pieds-flechis-homme.gif', ref_livre='base/lots-complets',
-         note='variante pieds flechis du 131 ; erreur d’alignement 5,02/255 (la plus basse du lot)',
-         phases=[dict(caisse=(0, 0, 674, 768), vert_gif=(58, 205, 81, 231), seuil=0.10, mini=200),
-                 dict(caisse=(684, 0, 1358, 768), vert_gif=(136, 223, 180, 277), seuil=0.10, mini=200)]),
-    dict(numero=114, cle='gainage-planche|homme',
-         planche='planches/lot37/gainage-planche.png', ref_source='c685298',
-         livre='gif/homme/gainage-planche-homme.gif', ref_livre='base/lots-complets',
-         note='gainage planche ; la zone verte du GIF est la plus petite du lot (673 et 721 px)',
-         phases=[dict(caisse=(0, 0, 684, 768), vert_gif=(39, 201, 72, 228), seuil=0.10, mini=200),
-                 dict(caisse=(692, 0, 1376, 768), vert_gif=(41, 203, 71, 230), seuil=0.10, mini=200)]),
-    dict(numero=23, cle='circuit-abdominaux-crunch-releves-gainage|femme',
-         planche='planches/lot09/circuit-abdominaux-crunch-releves-gainage.png', ref_source='c685298',
-         livre='gif/femme/circuit-abdominaux-crunch-releves-gainage-femme.gif', ref_livre='base/lots-complets',
-         note='seul numéro « femme » du lot ; zone verte la plus étendue (2177 et 2039 px)',
-         phases=[dict(caisse=(7, 0, 688, 768), vert_gif=(165, 325, 198, 372), seuil=0.10, mini=200),
-                 dict(caisse=(692, 0, 1373, 768), vert_gif=(214, 298, 249, 339), seuil=0.10, mini=200)]),
-]# --- CIBLES (fin) ---
+    dict(numero=364, cle='etirements-au-bord|homme',
+         planche='planches/lot52/etirements-au-bord.png', ref_source='c685298',
+         livre='gif/homme/etirements-au-bord-homme.gif', ref_livre='base/lots-complets',
+         note='etirements au bord ; erreur d’alignement 2.8/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 632, 768), vert_gif=(145, 299, 186, 359), seuil=0.10, mini=200),
+                 dict(caisse=(643, 0, 1275, 768), vert_gif=(233, 251, 281, 318), seuil=0.10, mini=200)]),
+    dict(numero=365, cle='fractionne-nager|homme',
+         planche='planches/lot52/fractionne-nager.png', ref_source='c685298',
+         livre='gif/homme/fractionne-nager-homme.gif', ref_livre='base/lots-complets',
+         note='fractionne nager ; erreur d’alignement 2.92/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 684, 768), vert_gif=(216, 176, 307, 218), seuil=0.10, mini=200),
+                 dict(caisse=(692, 0, 1376, 768), vert_gif=(230, 180, 311, 227), seuil=0.10, mini=200)]),
+    dict(numero=366, cle='nager-fractionne-1-6|homme',
+         planche='planches/lot52/fractionne-nager.png', ref_source='c685298',
+         livre='gif/homme/nager-fractionne-1-6-homme.gif', ref_livre='base/lots-complets',
+         note='nager fractionne 1 6 ; erreur d’alignement 2.92/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 684, 768), vert_gif=(216, 176, 307, 218), seuil=0.10, mini=200),
+                 dict(caisse=(692, 0, 1376, 768), vert_gif=(230, 180, 311, 227), seuil=0.10, mini=200)]),
+    dict(numero=340, cle='deplacements-lateraux-4-m|homme',
+         planche='planches/lot51/deplacements-lateraux-4-m.png', ref_source='c685298',
+         livre='gif/homme/deplacements-lateraux-4-m-homme.gif', ref_livre='base/lots-complets',
+         note='deplacements lateraux 4 m ; erreur d’alignement 3.05/255, perte x3.05',
+         phases=[dict(caisse=(0, 0, 684, 768), vert_gif=(142, 249, 183, 349), seuil=0.10, mini=200),
+                 dict(caisse=(692, 0, 1376, 768), vert_gif=(156, 246, 194, 303), seuil=0.10, mini=200)]),
+]
+# --- CIBLES (fin) ---
 
 ELARGISSEMENT = (1.0, 1.0)   # on ajoute 100 % de la largeur et 100 % de la hauteur autour de la bbox
 

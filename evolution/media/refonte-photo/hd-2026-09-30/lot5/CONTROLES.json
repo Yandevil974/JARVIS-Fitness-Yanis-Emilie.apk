@@ -1,0 +1,2177 @@
+{
+ "date": "2026-10-02",
+ "lot": 5,
+ "numeros": [
+  364,
+  365,
+  366,
+  340
+ ],
+ "methode": "identique au prototype n°44, au lot 1 et au lot 2 validés",
+ "decisions_utilisateur": {
+  "format": "webp animé",
+  "hauteur_px": 660,
+  "vert": "famille du n°260",
+  "sources": "natives, sans agrandissement"
+ },
+ "generation_images": 0,
+ "recoloration": "oui, déterministe (aucun modèle)",
+ "gif_livres_modifies": 0,
+ "apk_reconstruit": false,
+ "proposition_non_integree": true,
+ "roi": "dérivées de la tache verte mesurée dans le GIF livré (bbox consignée, élargie de 100 %)",
+ "reference_260": {
+  "pixels": 3810,
+  "mediane_rgb": [
+   91,
+   157,
+   17
+  ],
+  "mediane_hsv": {
+   "teinte_deg": 86.3,
+   "saturation": 0.914,
+   "valeur": 0.616
+  },
+  "percentiles_saturation": [
+   0.627,
+   0.914,
+   0.968
+  ],
+  "percentiles_valeur": [
+   0.325,
+   0.616,
+   0.91
+  ],
+  "nuances_distinctes": 6,
+  "part_teinte_dominante": 0.31,
+  "teintes_principales": [
+   [
+    52,
+    83,
+    17
+   ],
+   [
+    91,
+    157,
+    5
+   ],
+   [
+    112,
+    182,
+    12
+   ],
+   [
+    139,
+    232,
+    20
+   ],
+   [
+    85,
+    118,
+    44
+   ]
+  ]
+ },
+ "numeros_detail": {
+  "364": {
+   "cle": "etirements-au-bord|homme",
+   "note": "etirements au bord ; erreur d’alignement 2.8/255, perte x3.05",
+   "sources": [
+    {
+     "fichier": "planches/lot52/etirements-au-bord.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "a4d62c996534486ce24f12d1f9df3640f9e26dc0fc5a3d7b0cfb107369eebf57"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      632,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      145,
+      299,
+      186,
+      359
+     ],
+     "roi_native": [
+      182,
+      417,
+      396,
+      731
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 2247,
+     "pixels_silhouette": 2721
+    },
+    {
+     "caisse_native": [
+      643,
+      0,
+      1275,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      233,
+      251,
+      281,
+      318
+     ],
+     "roi_native": [
+      966,
+      321,
+      1217,
+      672
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 6147,
+     "pixels_silhouette": 6937
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/364-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "b28cc1fd98284585f6c0a9b8a3e73c34d025eaafbcf5dff2d4fa22f915e6803e",
+     "poids_ko": 70,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      543,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        543,
+        660
+       ],
+       "couleurs_uniques": 37889,
+       "erreur_moyenne": 1.64,
+       "erreur_max": 19,
+       "psnr_db": 42.08
+      },
+      {
+       "taille": [
+        543,
+        660
+       ],
+       "couleurs_uniques": 38937,
+       "erreur_moyenne": 1.57,
+       "erreur_max": 35,
+       "psnr_db": 42.17
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/364-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "93f0e4e381aa08de9834b24f17d1d2f3b38312f8c37865b880115e805b6ffdb5",
+     "poids_ko": 335,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      543,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        543,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.21,
+       "erreur_max": 57,
+       "psnr_db": 36.22
+      },
+      {
+       "taille": [
+        543,
+        660
+       ],
+       "couleurs_uniques": 250,
+       "erreur_moyenne": 3.57,
+       "erreur_max": 81,
+       "psnr_db": 32.64
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.42,
+     0.599,
+     0.664
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.494,
+     0.584,
+     0.647
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 90.3,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 2247,
+     "mediane_rgb": [
+      100,
+      150,
+      60
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 92.9,
+      "saturation": 0.604,
+      "valeur": 0.588
+     },
+     "percentiles_saturation": [
+      0.391,
+      0.604,
+      0.64
+     ],
+     "percentiles_valeur": [
+      0.443,
+      0.588,
+      0.627
+     ],
+     "nuances_distinctes": 1558,
+     "part_teinte_dominante": 0.004,
+     "teintes_principales": [
+      [
+       100,
+       150,
+       58
+      ],
+      [
+       99,
+       149,
+       57
+      ],
+      [
+       106,
+       152,
+       58
+      ],
+      [
+       102,
+       151,
+       60
+      ],
+      [
+       101,
+       151,
+       59
+      ]
+     ]
+    },
+    {
+     "pixels": 6147,
+     "mediane_rgb": [
+      104,
+      148,
+      59
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.7,
+      "saturation": 0.596,
+      "valeur": 0.58
+     },
+     "percentiles_saturation": [
+      0.435,
+      0.596,
+      0.669
+     ],
+     "percentiles_valeur": [
+      0.522,
+      0.58,
+      0.655
+     ],
+     "nuances_distinctes": 4635,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       124,
+       153,
+       63
+      ],
+      [
+       124,
+       153,
+       62
+      ],
+      [
+       121,
+       151,
+       60
+      ],
+      [
+       124,
+       154,
+       64
+      ],
+      [
+       123,
+       152,
+       62
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 2247,
+     "mediane_rgb": [
+      94,
+      162,
+      14
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 87.7,
+      "saturation": 0.917,
+      "valeur": 0.635
+     },
+     "percentiles_saturation": [
+      0.486,
+      0.917,
+      0.949
+     ],
+     "percentiles_valeur": [
+      0.252,
+      0.635,
+      0.82
+     ],
+     "nuances_distinctes": 1453,
+     "part_teinte_dominante": 0.005,
+     "teintes_principales": [
+      [
+       90,
+       157,
+       8
+      ],
+      [
+       103,
+       171,
+       12
+      ],
+      [
+       90,
+       157,
+       11
+      ],
+      [
+       94,
+       157,
+       8
+      ],
+      [
+       97,
+       162,
+       10
+      ]
+     ]
+    },
+    {
+     "pixels": 6147,
+     "mediane_rgb": [
+      94,
+      152,
+      23
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 84.6,
+      "saturation": 0.843,
+      "valeur": 0.596
+     },
+     "percentiles_saturation": [
+      0.605,
+      0.843,
+      0.97
+     ],
+     "percentiles_valeur": [
+      0.427,
+      0.596,
+      0.855
+     ],
+     "nuances_distinctes": 4395,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       122,
+       167,
+       38
+      ],
+      [
+       122,
+       167,
+       35
+      ],
+      [
+       122,
+       167,
+       36
+      ],
+      [
+       116,
+       161,
+       31
+      ],
+      [
+       76,
+       141,
+       3
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 236,
+     "largeur_transition_avant_px": 3.56,
+     "largeur_transition_apres_px": 3.24
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 347,
+     "largeur_transition_avant_px": 12.49,
+     "largeur_transition_apres_px": 12.03
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 482775,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 478672,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/etirements-au-bord-homme.gif",
+    "sha256": "b8ec7015069f653b89dbec2449c3df064bcd5641023be8e132fcb67bbdc1a0af",
+    "taille": [
+     362,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 170,
+    "phases": [
+     {
+      "pixels": 666,
+      "mediane_rgb": [
+       99,
+       148,
+       92
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 112.5,
+       "saturation": 0.378,
+       "valeur": 0.58
+      },
+      "percentiles_saturation": [
+       0.378,
+       0.378,
+       0.378
+      ],
+      "percentiles_valeur": [
+       0.58,
+       0.58,
+       0.58
+      ],
+      "nuances_distinctes": 1,
+      "part_teinte_dominante": 1.0,
+      "teintes_principales": [
+       [
+        99,
+        148,
+        92
+       ]
+      ]
+     },
+     {
+      "pixels": 2065,
+      "mediane_rgb": [
+       113,
+       149,
+       57
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 83.5,
+       "saturation": 0.617,
+       "valeur": 0.584
+      },
+      "percentiles_saturation": [
+       0.438,
+       0.617,
+       0.617
+      ],
+      "percentiles_valeur": [
+       0.573,
+       0.584,
+       0.592
+      ],
+      "nuances_distinctes": 3,
+      "part_teinte_dominante": 0.793,
+      "teintes_principales": [
+       [
+        113,
+        149,
+        57
+       ],
+       [
+        94,
+        146,
+        82
+       ],
+       [
+        68,
+        151,
+        118
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot5/planches/LOT5-364-export-decode.png",
+    "lot5/planches/LOT5-364-avant-apres-natif.png",
+    "lot5/planches/LOT5-364-taille-application.png"
+   ]
+  },
+  "365": {
+   "cle": "fractionne-nager|homme",
+   "note": "fractionne nager ; erreur d’alignement 2.92/255, perte x3.05",
+   "sources": [
+    {
+     "fichier": "planches/lot52/fractionne-nager.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "e9963c21cdd3b8193cae0d3630d5ae8c2c1cd850881cec74b2bc5138e9a87765"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      684,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      216,
+      176,
+      307,
+      218
+     ],
+     "roi_native": [
+      218,
+      234,
+      684,
+      454
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 9270,
+     "pixels_silhouette": 10656
+    },
+    {
+     "caisse_native": [
+      692,
+      0,
+      1376,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      230,
+      180,
+      311,
+      227
+     ],
+     "roi_native": [
+      952,
+      232,
+      1376,
+      478
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 9495,
+     "pixels_silhouette": 10661
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/365-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "95672ef62ad657388b9c601a6a35b81f471146bf8f423affd4bf823a211c1b54",
+     "poids_ko": 70,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      588,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 35444,
+       "erreur_moyenne": 1.57,
+       "erreur_max": 21,
+       "psnr_db": 42.43
+      },
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 48462,
+       "erreur_moyenne": 1.69,
+       "erreur_max": 15,
+       "psnr_db": 41.83
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/365-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "6b106d8b5d5c1957ce3c886409d111d37126fe735cd8a474aed8806462260aab",
+     "poids_ko": 347,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      588,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.17,
+       "erreur_max": 49,
+       "psnr_db": 34.87
+      },
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 247,
+       "erreur_moyenne": 3.46,
+       "erreur_max": 50,
+       "psnr_db": 32.08
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.355,
+     0.574,
+     0.706
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.412,
+     0.69,
+     0.906
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 91.8,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 9270,
+     "mediane_rgb": [
+      123,
+      173,
+      75
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 92.4,
+      "saturation": 0.553,
+      "valeur": 0.678
+     },
+     "percentiles_saturation": [
+      0.291,
+      0.553,
+      0.689
+     ],
+     "percentiles_valeur": [
+      0.412,
+      0.678,
+      0.929
+     ],
+     "nuances_distinctes": 8966,
+     "part_teinte_dominante": 0.0,
+     "teintes_principales": [
+      [
+       134,
+       167,
+       80
+      ],
+      [
+       142,
+       178,
+       80
+      ],
+      [
+       158,
+       197,
+       90
+      ],
+      [
+       57,
+       93,
+       61
+      ],
+      [
+       101,
+       131,
+       64
+      ]
+     ]
+    },
+    {
+     "pixels": 9495,
+     "mediane_rgb": [
+      126,
+      178,
+      74
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 91.2,
+      "saturation": 0.587,
+      "valeur": 0.698
+     },
+     "percentiles_saturation": [
+      0.409,
+      0.587,
+      0.717
+     ],
+     "percentiles_valeur": [
+      0.408,
+      0.698,
+      0.886
+     ],
+     "nuances_distinctes": 9161,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       144,
+       180,
+       75
+      ],
+      [
+       57,
+       88,
+       48
+      ],
+      [
+       74,
+       126,
+       60
+      ],
+      [
+       65,
+       120,
+       43
+      ],
+      [
+       108,
+       151,
+       69
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 9270,
+     "mediane_rgb": [
+      97,
+      155,
+      20
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.7,
+      "saturation": 0.863,
+      "valeur": 0.608
+     },
+     "percentiles_saturation": [
+      0.47,
+      0.863,
+      0.96
+     ],
+     "percentiles_valeur": [
+      0.345,
+      0.608,
+      0.941
+     ],
+     "nuances_distinctes": 8672,
+     "part_teinte_dominante": 0.0,
+     "teintes_principales": [
+      [
+       49,
+       89,
+       27
+      ],
+      [
+       174,
+       248,
+       20
+      ],
+      [
+       70,
+       124,
+       7
+      ],
+      [
+       92,
+       143,
+       17
+      ],
+      [
+       88,
+       140,
+       21
+      ]
+     ]
+    },
+    {
+     "pixels": 9495,
+     "mediane_rgb": [
+      102,
+      161,
+      16
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.1,
+      "saturation": 0.902,
+      "valeur": 0.631
+     },
+     "percentiles_saturation": [
+      0.615,
+      0.902,
+      0.97
+     ],
+     "percentiles_valeur": [
+      0.333,
+      0.631,
+      0.882
+     ],
+     "nuances_distinctes": 8705,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       137,
+       210,
+       15
+      ],
+      [
+       106,
+       161,
+       12
+      ],
+      [
+       108,
+       158,
+       18
+      ],
+      [
+       118,
+       166,
+       26
+      ],
+      [
+       128,
+       197,
+       14
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 589,
+     "largeur_transition_avant_px": 7.64,
+     "largeur_transition_apres_px": 7.17
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 564,
+     "largeur_transition_avant_px": 7.66,
+     "largeur_transition_apres_px": 7.15
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 514850,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 514836,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/fractionne-nager-homme.gif",
+    "sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+    "taille": [
+     392,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 167,
+    "phases": [
+     {
+      "pixels": 2315,
+      "mediane_rgb": [
+       112,
+       150,
+       112
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 120.0,
+       "saturation": 0.253,
+       "valeur": 0.588
+      },
+      "percentiles_saturation": [
+       0.253,
+       0.253,
+       0.368
+      ],
+      "percentiles_valeur": [
+       0.533,
+       0.588,
+       0.706
+      ],
+      "nuances_distinctes": 4,
+      "part_teinte_dominante": 0.521,
+      "teintes_principales": [
+       [
+        112,
+        150,
+        112
+       ],
+       [
+        126,
+        180,
+        138
+       ],
+       [
+        86,
+        136,
+        104
+       ],
+       [
+        187,
+        228,
+        173
+       ]
+      ]
+     },
+     {
+      "pixels": 3437,
+      "mediane_rgb": [
+       132,
+       180,
+       114
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 99.5,
+       "saturation": 0.406,
+       "valeur": 0.706
+      },
+      "percentiles_saturation": [
+       0.233,
+       0.406,
+       0.422
+      ],
+      "percentiles_valeur": [
+       0.553,
+       0.706,
+       0.875
+      ],
+      "nuances_distinctes": 8,
+      "part_teinte_dominante": 0.428,
+      "teintes_principales": [
+       [
+        132,
+        180,
+        107
+       ],
+       [
+        160,
+        198,
+        122
+       ],
+       [
+        129,
+        163,
+        125
+       ],
+       [
+        107,
+        141,
+        114
+       ],
+       [
+        177,
+        223,
+        129
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot5/planches/LOT5-365-export-decode.png",
+    "lot5/planches/LOT5-365-avant-apres-natif.png",
+    "lot5/planches/LOT5-365-taille-application.png"
+   ]
+  },
+  "366": {
+   "cle": "nager-fractionne-1-6|homme",
+   "note": "nager fractionne 1 6 ; erreur d’alignement 2.92/255, perte x3.05",
+   "sources": [
+    {
+     "fichier": "planches/lot52/fractionne-nager.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "e9963c21cdd3b8193cae0d3630d5ae8c2c1cd850881cec74b2bc5138e9a87765"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      684,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      216,
+      176,
+      307,
+      218
+     ],
+     "roi_native": [
+      218,
+      234,
+      684,
+      454
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 9270,
+     "pixels_silhouette": 10656
+    },
+    {
+     "caisse_native": [
+      692,
+      0,
+      1376,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      230,
+      180,
+      311,
+      227
+     ],
+     "roi_native": [
+      952,
+      232,
+      1376,
+      478
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 9495,
+     "pixels_silhouette": 10661
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/366-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "95672ef62ad657388b9c601a6a35b81f471146bf8f423affd4bf823a211c1b54",
+     "poids_ko": 70,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      588,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 35444,
+       "erreur_moyenne": 1.57,
+       "erreur_max": 21,
+       "psnr_db": 42.43
+      },
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 48462,
+       "erreur_moyenne": 1.69,
+       "erreur_max": 15,
+       "psnr_db": 41.83
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/366-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "6b106d8b5d5c1957ce3c886409d111d37126fe735cd8a474aed8806462260aab",
+     "poids_ko": 347,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      588,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.17,
+       "erreur_max": 49,
+       "psnr_db": 34.87
+      },
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 247,
+       "erreur_moyenne": 3.46,
+       "erreur_max": 50,
+       "psnr_db": 32.08
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.355,
+     0.574,
+     0.706
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.412,
+     0.69,
+     0.906
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 91.8,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 9270,
+     "mediane_rgb": [
+      123,
+      173,
+      75
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 92.4,
+      "saturation": 0.553,
+      "valeur": 0.678
+     },
+     "percentiles_saturation": [
+      0.291,
+      0.553,
+      0.689
+     ],
+     "percentiles_valeur": [
+      0.412,
+      0.678,
+      0.929
+     ],
+     "nuances_distinctes": 8966,
+     "part_teinte_dominante": 0.0,
+     "teintes_principales": [
+      [
+       134,
+       167,
+       80
+      ],
+      [
+       142,
+       178,
+       80
+      ],
+      [
+       158,
+       197,
+       90
+      ],
+      [
+       57,
+       93,
+       61
+      ],
+      [
+       101,
+       131,
+       64
+      ]
+     ]
+    },
+    {
+     "pixels": 9495,
+     "mediane_rgb": [
+      126,
+      178,
+      74
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 91.2,
+      "saturation": 0.587,
+      "valeur": 0.698
+     },
+     "percentiles_saturation": [
+      0.409,
+      0.587,
+      0.717
+     ],
+     "percentiles_valeur": [
+      0.408,
+      0.698,
+      0.886
+     ],
+     "nuances_distinctes": 9161,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       144,
+       180,
+       75
+      ],
+      [
+       57,
+       88,
+       48
+      ],
+      [
+       74,
+       126,
+       60
+      ],
+      [
+       65,
+       120,
+       43
+      ],
+      [
+       108,
+       151,
+       69
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 9270,
+     "mediane_rgb": [
+      97,
+      155,
+      20
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.7,
+      "saturation": 0.863,
+      "valeur": 0.608
+     },
+     "percentiles_saturation": [
+      0.47,
+      0.863,
+      0.96
+     ],
+     "percentiles_valeur": [
+      0.345,
+      0.608,
+      0.941
+     ],
+     "nuances_distinctes": 8672,
+     "part_teinte_dominante": 0.0,
+     "teintes_principales": [
+      [
+       49,
+       89,
+       27
+      ],
+      [
+       174,
+       248,
+       20
+      ],
+      [
+       70,
+       124,
+       7
+      ],
+      [
+       92,
+       143,
+       17
+      ],
+      [
+       88,
+       140,
+       21
+      ]
+     ]
+    },
+    {
+     "pixels": 9495,
+     "mediane_rgb": [
+      102,
+      161,
+      16
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 86.1,
+      "saturation": 0.902,
+      "valeur": 0.631
+     },
+     "percentiles_saturation": [
+      0.615,
+      0.902,
+      0.97
+     ],
+     "percentiles_valeur": [
+      0.333,
+      0.631,
+      0.882
+     ],
+     "nuances_distinctes": 8705,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       137,
+       210,
+       15
+      ],
+      [
+       106,
+       161,
+       12
+      ],
+      [
+       108,
+       158,
+       18
+      ],
+      [
+       118,
+       166,
+       26
+      ],
+      [
+       128,
+       197,
+       14
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 589,
+     "largeur_transition_avant_px": 7.64,
+     "largeur_transition_apres_px": 7.17
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 564,
+     "largeur_transition_avant_px": 7.66,
+     "largeur_transition_apres_px": 7.15
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 514850,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 514836,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/nager-fractionne-1-6-homme.gif",
+    "sha256": "0c5c94c45d4c996331d8669fe4e84fadc8f945512a4cebfb3c42192f43173fb3",
+    "taille": [
+     392,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 167,
+    "phases": [
+     {
+      "pixels": 2315,
+      "mediane_rgb": [
+       112,
+       150,
+       112
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 120.0,
+       "saturation": 0.253,
+       "valeur": 0.588
+      },
+      "percentiles_saturation": [
+       0.253,
+       0.253,
+       0.368
+      ],
+      "percentiles_valeur": [
+       0.533,
+       0.588,
+       0.706
+      ],
+      "nuances_distinctes": 4,
+      "part_teinte_dominante": 0.521,
+      "teintes_principales": [
+       [
+        112,
+        150,
+        112
+       ],
+       [
+        126,
+        180,
+        138
+       ],
+       [
+        86,
+        136,
+        104
+       ],
+       [
+        187,
+        228,
+        173
+       ]
+      ]
+     },
+     {
+      "pixels": 3437,
+      "mediane_rgb": [
+       132,
+       180,
+       114
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 99.5,
+       "saturation": 0.406,
+       "valeur": 0.706
+      },
+      "percentiles_saturation": [
+       0.233,
+       0.406,
+       0.422
+      ],
+      "percentiles_valeur": [
+       0.553,
+       0.706,
+       0.875
+      ],
+      "nuances_distinctes": 8,
+      "part_teinte_dominante": 0.428,
+      "teintes_principales": [
+       [
+        132,
+        180,
+        107
+       ],
+       [
+        160,
+        198,
+        122
+       ],
+       [
+        129,
+        163,
+        125
+       ],
+       [
+        107,
+        141,
+        114
+       ],
+       [
+        177,
+        223,
+        129
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot5/planches/LOT5-366-export-decode.png",
+    "lot5/planches/LOT5-366-avant-apres-natif.png",
+    "lot5/planches/LOT5-366-taille-application.png"
+   ]
+  },
+  "340": {
+   "cle": "deplacements-lateraux-4-m|homme",
+   "note": "deplacements lateraux 4 m ; erreur d’alignement 3.05/255, perte x3.05",
+   "sources": [
+    {
+     "fichier": "planches/lot51/deplacements-lateraux-4-m.png",
+     "ref_git": "c685298",
+     "taille": [
+      1376,
+      768
+     ],
+     "sha256": "d64f1645331be4dff18b173990927819bfc5778190ae9c715558aa08bd5dfdf6"
+    }
+   ],
+   "phases": [
+    {
+     "caisse_native": [
+      0,
+      0,
+      684,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      142,
+      249,
+      183,
+      349
+     ],
+     "roi_native": [
+      176,
+      260,
+      391,
+      768
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 6269,
+     "pixels_silhouette": 7174
+    },
+    {
+     "caisse_native": [
+      692,
+      0,
+      1376,
+      768
+     ],
+     "bbox_vert_gif_livre": [
+      156,
+      246,
+      194,
+      303
+     ],
+     "roi_native": [
+      898,
+      330,
+      1097,
+      628
+     ],
+     "seuil": 0.1,
+     "mini_tache": 200,
+     "pixels_zone": 8481,
+     "pixels_silhouette": 9805
+    }
+   ],
+   "rampe_alpha": [
+    0.03,
+    0.17
+   ],
+   "exports": [
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/340-vert260-660-webp-q90.webp",
+     "note": "WebP animé q90 — livrable principal",
+     "sha256": "8235644235cdbae55d85c46b7ddbe256bbdc60d75cb77663be1f54ae484f5d47",
+     "poids_ko": 71,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      588,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 41104,
+       "erreur_moyenne": 1.63,
+       "erreur_max": 28,
+       "psnr_db": 41.96
+      },
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 41101,
+       "erreur_moyenne": 1.61,
+       "erreur_max": 29,
+       "psnr_db": 42.16
+      }
+     ],
+     "format": "webp",
+     "qualite": 90,
+     "hauteur": 660
+    },
+    {
+     "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot5/exports/340-vert260-660-repli.gif",
+     "note": "GIF de repli (palette 256 partagée)",
+     "sha256": "8995de6ec55a74d028907d462c15c57d5d35f0431510725314fbdb6330170dbc",
+     "poids_ko": 331,
+     "images": 2,
+     "durees_ms": [
+      500,
+      500
+     ],
+     "taille": [
+      588,
+      660
+     ],
+     "phases": [
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 256,
+       "erreur_moyenne": 2.23,
+       "erreur_max": 59,
+       "psnr_db": 35.65
+      },
+      {
+       "taille": [
+        588,
+        660
+       ],
+       "couleurs_uniques": 243,
+       "erreur_moyenne": 2.81,
+       "erreur_max": 56,
+       "psnr_db": 34.55
+      }
+     ],
+     "format": "gif",
+     "qualite": "palette 256",
+     "hauteur": 660
+    }
+   ],
+   "correspondance": {
+    "ancres_source_saturation": [
+     0.383,
+     0.588,
+     0.68
+    ],
+    "cible_260_saturation": [
+     0.627,
+     0.914,
+     0.968
+    ],
+    "ancres_source_valeur": [
+     0.42,
+     0.545,
+     0.835
+    ],
+    "cible_260_valeur": [
+     0.325,
+     0.616,
+     0.91
+    ],
+    "teinte_source_deg": 88.4,
+    "teinte_260_deg": 86.3,
+    "regle": "percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé"
+   },
+   "vert_avant": [
+    {
+     "pixels": 6269,
+     "mediane_rgb": [
+      94,
+      135,
+      59
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 90.7,
+      "saturation": 0.593,
+      "valeur": 0.529
+     },
+     "percentiles_saturation": [
+      0.356,
+      0.593,
+      0.677
+     ],
+     "percentiles_valeur": [
+      0.431,
+      0.529,
+      0.859
+     ],
+     "nuances_distinctes": 4812,
+     "part_teinte_dominante": 0.002,
+     "teintes_principales": [
+      [
+       84,
+       128,
+       43
+      ],
+      [
+       84,
+       130,
+       44
+      ],
+      [
+       85,
+       129,
+       43
+      ],
+      [
+       84,
+       128,
+       44
+      ],
+      [
+       90,
+       133,
+       47
+      ]
+     ]
+    },
+    {
+     "pixels": 8481,
+     "mediane_rgb": [
+      108,
+      143,
+      63
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 87.3,
+      "saturation": 0.586,
+      "valeur": 0.561
+     },
+     "percentiles_saturation": [
+      0.412,
+      0.586,
+      0.684
+     ],
+     "percentiles_valeur": [
+      0.416,
+      0.561,
+      0.824
+     ],
+     "nuances_distinctes": 6795,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       103,
+       139,
+       52
+      ],
+      [
+       131,
+       171,
+       74
+      ],
+      [
+       81,
+       121,
+       39
+      ],
+      [
+       147,
+       203,
+       71
+      ],
+      [
+       122,
+       162,
+       66
+      ]
+     ]
+    }
+   ],
+   "vert_apres": [
+    {
+     "pixels": 6269,
+     "mediane_rgb": [
+      87,
+      148,
+      18
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 87.5,
+      "saturation": 0.891,
+      "valeur": 0.58
+     },
+     "percentiles_saturation": [
+      0.495,
+      0.891,
+      0.965
+     ],
+     "percentiles_valeur": [
+      0.373,
+      0.58,
+      0.933
+     ],
+     "nuances_distinctes": 4420,
+     "part_teinte_dominante": 0.004,
+     "teintes_principales": [
+      [
+       73,
+       132,
+       5
+      ],
+      [
+       77,
+       139,
+       6
+      ],
+      [
+       76,
+       136,
+       6
+      ],
+      [
+       67,
+       122,
+       5
+      ],
+      [
+       74,
+       134,
+       5
+      ]
+     ]
+    },
+    {
+     "pixels": 8481,
+     "mediane_rgb": [
+      102,
+      156,
+      22
+     ],
+     "mediane_hsv": {
+      "teinte_deg": 85.9,
+      "saturation": 0.856,
+      "valeur": 0.612
+     },
+     "percentiles_saturation": [
+      0.571,
+      0.856,
+      0.959
+     ],
+     "percentiles_valeur": [
+      0.349,
+      0.612,
+      0.898
+     ],
+     "nuances_distinctes": 6353,
+     "part_teinte_dominante": 0.001,
+     "teintes_principales": [
+      [
+       102,
+       156,
+       22
+      ],
+      [
+       60,
+       107,
+       5
+      ],
+      [
+       98,
+       153,
+       19
+      ],
+      [
+       88,
+       141,
+       17
+      ],
+      [
+       96,
+       154,
+       16
+      ]
+     ]
+    }
+   ],
+   "contour": [
+    {
+     "phase": 1,
+     "perimetre_px": 417,
+     "largeur_transition_avant_px": 10.21,
+     "largeur_transition_apres_px": 9.2
+    },
+    {
+     "phase": 2,
+     "perimetre_px": 562,
+     "largeur_transition_avant_px": 13.87,
+     "largeur_transition_apres_px": 13.42
+    }
+   ],
+   "garantie_hors_zone": [
+    {
+     "phase": 1,
+     "pixels_hors_zone": 518358,
+     "pixels_modifies_hors_zone": 0
+    },
+    {
+     "phase": 2,
+     "pixels_hors_zone": 515767,
+     "pixels_modifies_hors_zone": 0
+    }
+   ],
+   "gif_livre_mesure": {
+    "fichier": "gif/homme/deplacements-lateraux-4-m-homme.gif",
+    "sha256": "1577377e6f4c748ef89696e0bdfa3d8247bfa7cae18342be28a6b55555fc43cb",
+    "taille": [
+     392,
+     440
+    ],
+    "images": 2,
+    "poids_ko": 162,
+    "phases": [
+     {
+      "pixels": 5133,
+      "mediane_rgb": [
+       85,
+       137,
+       83
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 99.7,
+       "saturation": 0.46,
+       "valeur": 0.537
+      },
+      "percentiles_saturation": [
+       0.234,
+       0.46,
+       0.662
+      ],
+      "percentiles_valeur": [
+       0.455,
+       0.537,
+       0.62
+      ],
+      "nuances_distinctes": 7,
+      "part_teinte_dominante": 0.315,
+      "teintes_principales": [
+       [
+        85,
+        130,
+        44
+       ],
+       [
+        101,
+        137,
+        74
+       ],
+       [
+        132,
+        158,
+        121
+       ],
+       [
+        106,
+        151,
+        83
+       ],
+       [
+        78,
+        155,
+        121
+       ]
+      ]
+     },
+     {
+      "pixels": 4198,
+      "mediane_rgb": [
+       83,
+       139,
+       75
+      ],
+      "mediane_hsv": {
+       "teinte_deg": 90.9,
+       "saturation": 0.465,
+       "valeur": 0.545
+      },
+      "percentiles_saturation": [
+       0.309,
+       0.465,
+       0.631
+      ],
+      "percentiles_valeur": [
+       0.478,
+       0.545,
+       0.749
+      ],
+      "nuances_distinctes": 6,
+      "part_teinte_dominante": 0.328,
+      "teintes_principales": [
+       [
+        83,
+        122,
+        45
+       ],
+       [
+        106,
+        139,
+        75
+       ],
+       [
+        117,
+        158,
+        92
+       ],
+       [
+        83,
+        155,
+        125
+       ],
+       [
+        132,
+        191,
+        142
+       ]
+      ]
+     }
+    ]
+   },
+   "planches": [
+    "lot5/planches/LOT5-340-export-decode.png",
+    "lot5/planches/LOT5-340-avant-apres-natif.png",
+    "lot5/planches/LOT5-340-taille-application.png"
+   ]
+  }
+ }
+}
