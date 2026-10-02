@@ -121,6 +121,11 @@ SEUIL_COUVERTURE = 0.85
 # rester sur le COEUR VERT FRANC, comme les 49 numeros deja valides. Le halo degrade du
 # muscle reste tel quel. Les mesures restent calculees et consignees, mais n'agissent plus.
 ETENDRE_VERT = False
+
+# Numeros ou l'utilisateur a demande que le vert COUVRE AUSSI LA PEAU que le GIF livre
+# peignait en vert (demande du 02/10/2026 sur le n°66, ou le manque atteignait 33 %).
+# Le vert ne s'ajoute que la ou le GIF livre en mettait : jamais ailleurs.
+COUVRIR_PEAU = {66: True}
 SEUIL_DEBORDEMENT = 0.12   # au-dela, le vert deborde franchement hors de ce que le GIF livre couvrait
 
 
@@ -252,6 +257,9 @@ def main():
             attendu = masque_vert_gif(lf[i], caisse)
 
             m = masque_pour(ph['seuil'])
+            if n in COUVRIR_PEAU:
+                rr, gg, bb = a[..., 0], a[..., 1], a[..., 2]
+                m = m | (attendu & ~m & (rr > gg) & (gg > bb) & ((rr - bb) > 12))
             sil = dilater(remplir_trous(m), 2)
             couv, deb, compo = couverture_et_debordement(sil, attendu, a)
             seuil_eff = ph['seuil']
