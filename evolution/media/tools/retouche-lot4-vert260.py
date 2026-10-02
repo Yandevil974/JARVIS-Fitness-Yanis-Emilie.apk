@@ -129,13 +129,30 @@ def masque_vert_gif(frame, caisse):
     return np.asarray(up) > 127
 
 
-def couverture_et_debordement(sil, attendu):
-    """(part du vert attendu effectivement couverte, part du vert posee en trop)."""
+def couverture_et_debordement(sil, attendu, native=None):
+    """(couverture, debordement, composition du vert manquant).
+
+    `native` = pixels natifs (H, W, 3) : sert a dire SUR QUOI tombe le vert que nous ne
+    mettons pas alors que le GIF livre, lui, etait vert a cet endroit. Decompose en :
+      manque_peau       -> rouge > vert > bleu : c'est le muscle, le vert doit y aller
+      manque_vert_pale  -> deja vert, mais trop discret pour franchir le seuil
+      manque_autre      -> decor, fond, vetement : le vert n'a rien a y faire
+    """
     if not sil.any() or not attendu.any():
-        return 0.0, 0.0
+        return 0.0, 0.0, {}
     couv = float((sil & attendu).sum()) / float(attendu.sum())
     deb = float((sil & ~dilater(attendu, 3)).sum()) / float(sil.sum())
-    return couv, deb
+    compo = {}
+    if native is not None:
+        manque = attendu & ~sil
+        tot = float(attendu.sum())
+        r, g, b = native[..., 0], native[..., 1], native[..., 2]
+        peau = manque & (r > g) & (g > b) & ((r - b) > 12)
+        pale = manque & ~peau & (score_vert(native) > 0.02)
+        compo = {'manque_peau': round(float(peau.sum()) / tot, 3),
+                 'manque_vert_pale': round(float(pale.sum()) / tot, 3),
+                 'manque_autre': round(float((manque & ~peau & ~pale).sum()) / tot, 3)}
+    return couv, deb, compo
 
 
 def roi_depuis_bbox_gif(bbox_gif, caisse, gif_taille):
@@ -213,13 +230,13 @@ def main():
 
             m = masque_pour(ph['seuil'])
             sil = dilater(remplir_trous(m), 2)
-            couv, deb = couverture_et_debordement(sil, attendu)
+            couv, deb, compo = couverture_et_debordement(sil, attendu, a)
             seuil_eff = ph['seuil']
             if couv < SEUIL_COUVERTURE:
                 for essai in (0.07, 0.05, 0.03, 0.02):
                     m2, sil2 = masque_pour(essai), None
                     sil2 = dilater(remplir_trous(m2), 2)
-                    c2, d2 = couverture_et_debordement(sil2, attendu)
+                    c2, d2, _ = couverture_et_debordement(sil2, attendu)
                     if c2 >= couv + 0.05 and d2 <= max(deb, SEUIL_DEBORDEMENT):
                         m, sil, couv, deb, seuil_eff = m2, sil2, c2, d2, essai
                         break
@@ -235,7 +252,8 @@ def main():
                                      'pixels_zone': int(m.sum()),
                                      'pixels_silhouette': int(sil.sum()),
                                      'couverture_peau': round(couv, 3),
-                                     'debordement_vert': round(deb, 3)})
+                                     'debordement_vert': round(deb, 3),
+                                     'manque': compo})
 
         if not any(m.any() for m in masques):
             print(f"n°{n} : AUCUNE zone verte trouvée — numéro abandonné, rien d'écrit")
@@ -256,8 +274,9 @@ def main():
             'regle': 'percentiles p5/p50/p95 appariés ; teinte recentrée de moitié ; aucun pixel uniformisé',
         }
 
-        print(f"   couverture de la peau {min(couvertures):.2f} a {max(couvertures):.2f}"
-              f" | debordement du vert {max(debordements):.2f}"
+        manque_peau = max(pf.get('manque', {}).get('manque_peau', 0) for pf in detail['phases'])
+        print(f"   couverture {min(couvertures):.2f} a {max(couvertures):.2f}"
+              f" | debordement {max(debordements):.2f} | MANQUE sur peau {manque_peau:.2f}"
               f" | seuil {'abaisse' if any(p['seuil_effectif'] != p['seuil'] for p in detail['phases']) else 'nominal'}")
         travail, png_660, apres = [], [], []
         for i, case in enumerate(imgs_src):
