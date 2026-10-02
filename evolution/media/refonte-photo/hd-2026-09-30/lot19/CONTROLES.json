@@ -1223,7 +1223,7 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot19/exports/124-vert260-660-webp-q90.webp",
      "note": "WebP animé q90 — livrable principal",
-     "sha256": "39dce2bfa60ba86865fe5b5138cbf33233c80f081c816ece4397e0386ee210c9",
+     "sha256": "8843a3c62d1460b92b9ceed3d36564a4674c6f885d30a0908aa9d4d937950dd1",
      "poids_ko": 65,
      "images": 2,
      "durees_ms": [
@@ -1250,10 +1250,10 @@
         512,
         660
        ],
-       "couleurs_uniques": 34619,
+       "couleurs_uniques": 34823,
        "erreur_moyenne": 1.51,
        "erreur_max": 15,
-       "psnr_db": 43.01
+       "psnr_db": 43.04
       }
      ],
      "format": "webp",
@@ -1263,7 +1263,7 @@
     {
      "fichier": "evolution/media/refonte-photo/hd-2026-09-30/lot19/exports/124-vert260-660-repli.gif",
      "note": "GIF de repli (palette 256 partagée)",
-     "sha256": "630dd8231d6fb45d23a768c2f43070af5482543be69e366f48aded9b749232f1",
+     "sha256": "cd5a8b464328c8b969848c43f7c8560477084c412333e2f9ea75206b707fb518",
      "poids_ko": 333,
      "images": 2,
      "durees_ms": [
@@ -1291,9 +1291,9 @@
         660
        ],
        "couleurs_uniques": 255,
-       "erreur_moyenne": 4.44,
-       "erreur_max": 70,
-       "psnr_db": 29.14
+       "erreur_moyenne": 4.35,
+       "erreur_max": 65,
+       "psnr_db": 29.45
       }
      ],
      "format": "gif",
@@ -1488,52 +1488,52 @@
     {
      "pixels": 4247,
      "mediane_rgb": [
-      140,
-      213,
-      34
+      125,
+      190,
+      30
      ],
      "mediane_hsv": {
       "teinte_deg": 86.1,
       "saturation": 0.833,
-      "valeur": 0.835
+      "valeur": 0.745
      },
      "percentiles_saturation": [
-      0.481,
+      0.476,
       0.833,
       0.969
      ],
      "percentiles_valeur": [
-      0.635,
-      0.835,
-      0.933
+      0.447,
+      0.745,
+      0.898
      ],
-     "nuances_distinctes": 3973,
+     "nuances_distinctes": 3990,
      "part_teinte_dominante": 0.001,
      "teintes_principales": [
       [
-       82,
-       166,
-       5
+       62,
+       121,
+       4
       ],
       [
-       85,
-       166,
-       5
-      ],
-      [
-       119,
-       207,
+       101,
+       162,
        7
       ],
       [
-       142,
-       226,
-       7
+       70,
+       124,
+       4
       ],
       [
-       90,
-       166,
-       5
+       57,
+       114,
+       4
+      ],
+      [
+       63,
+       117,
+       4
       ]
      ]
     }
