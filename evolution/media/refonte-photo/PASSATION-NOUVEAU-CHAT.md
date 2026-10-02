@@ -657,3 +657,7 @@ Mesure faite sur les 54 candidats restants au 02/10/2026 : **54 numéros = 46 re
 Les 43 autres numéros sont isolés (une retouche chacun). S'y ajoutent les groupes déjà traités : [364, 365, 366] en deux lots, [340, 341, 342] et [376, 377, 378, 379].
 
 Conséquence pratique : le **lot 9 (350 à 353) est sorti identique à l'octet près au n°347 validé au lot 8** (sha256 `2c42f5b87df21152…`). Le n°354 suivra avec le même fichier. Quand un lot tombe sur un groupe déjà validé, il n'y a rien de nouveau à juger : le dire clairement plutôt que de faire revalider la même image.
+
+## .gitignore ajoute (02/10/2026)
+
+Le depot n'avait pas de `.gitignore`. Lors d'une purge, un `git add -A` a commite tout le venv `.cache/pyvenv` (~40 Mo). Un `.gitignore` a ete ajoute (commit `b2a7966`) couvrant `.cache/`, `evolution/media/refonte-photo/hd-2026-09-30/tri/` et `__pycache__/`. Si l'arbre local diverge apres une purge avec un commit qui ne contient que le venv, l'annuler : verifier d'abord `git show --name-only <sha> | grep -v '.cache/pyvenv'` (s'il ne reste que la ligne d'en-tete, il n'y a aucun travail reel dedans), puis `git reset --hard FETCH_HEAD`.
