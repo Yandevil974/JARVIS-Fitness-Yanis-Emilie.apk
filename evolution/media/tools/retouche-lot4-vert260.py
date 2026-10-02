@@ -126,6 +126,11 @@ ETENDRE_VERT = False
 # peignait en vert (demande du 02/10/2026 : n°66 ou le manque atteignait 33 %, puis n°1 a 23 %).
 # Le vert ne s'ajoute que la ou le GIF livre en mettait : jamais ailleurs.
 COUVRIR_PEAU = {1: True, 66: True, 297: True}
+
+# Numeros dont le vert reste trop SOMBRE apres retouche (le muscle est dans l'ombre sur la
+# planche) : on eclaircit par une gamma sur la luminosite. Gamma < 1 => plus clair.
+# Demande le 02/10/2026 pour le n°124, dont le vert sortait a RVB(53, 92, 4).
+GAMMA_VALEUR = {124: 0.55}
 SEUIL_DEBORDEMENT = 0.12   # au-dela, le vert deborde franchement hors de ce que le GIF livre couvrait
 
 
@@ -321,6 +326,8 @@ def main():
             h, s, v = rgb_vers_hsv(a.reshape(-1, 3) / 255.0)
             s2 = np.clip(mapper_par_ancres(s, ancres_s, ref_stats['percentiles_saturation']), 0, 1)
             v2 = np.clip(mapper_par_ancres(v, ancres_v, ref_stats['percentiles_valeur']), 0, 1)
+            if n in GAMMA_VALEUR:
+                v2 = np.clip(v2 ** GAMMA_VALEUR[n], 0, 1)
             h2 = teinte_cible / 360 + (h - teinte_src / 360) * 0.5
             nouveau = hsv_vers_rgb(h2 % 1.0, s2, v2).reshape(a.shape) * 255.0
             melange = a * (1 - alpha) + nouveau * alpha
