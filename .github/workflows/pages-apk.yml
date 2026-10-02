@@ -11,7 +11,7 @@ on:
   push:
     paths:
       - ".github/workflows/pages-apk.yml"
-      - "dist/**"
+      - "downloads/**"
   workflow_dispatch:
 
 permissions:
@@ -33,17 +33,17 @@ jobs:
       - name: Controler l'empreinte de l'APK avant publication
         run: |
           set -euo pipefail
-          cd dist
+          cd downloads
           sha256sum -c ./*.sha256
 
       - name: Preparer le site
         run: |
           set -euo pipefail
           mkdir -p _site
-          cp dist/yanis-fitness-evolution-1.5.1.apk _site/
-          cp dist/yanis-fitness-evolution-1.5.1.apk.sha256 _site/
-          EMPREINTE=$(cut -d' ' -f1 < dist/yanis-fitness-evolution-1.5.1.apk.sha256)
-          TAILLE=$(stat -c %s dist/yanis-fitness-evolution-1.5.1.apk)
+          cp downloads/Yanis-Fitness-Evolution-1.5.1.apk _site/
+          cp downloads/Yanis-Fitness-Evolution-1.5.1.apk.sha256 _site/
+          EMPREINTE=$(cut -d' ' -f1 < downloads/Yanis-Fitness-Evolution-1.5.1.apk.sha256)
+          TAILLE=$(stat -c %s downloads/Yanis-Fitness-Evolution-1.5.1.apk)
           cat > _site/index.html <<HTML
           <!doctype html>
           <html lang="fr">
