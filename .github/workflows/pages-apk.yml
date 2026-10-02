@@ -1,0 +1,103 @@
+name: APK sur GitHub Pages (lien de telechargement direct)
+
+# Publie l'APK du miroir (dist/) sur GitHub Pages, afin de disposer d'un lien de
+# telechargement direct sur le domaine github.io, independant des hotes
+# d'assets de release (*.githubusercontent.com) qui peuvent etre filtres.
+#
+# L'empreinte sha256 est controlee AVANT publication : aucun fichier non
+# verifie ne peut etre mis en ligne.
+
+on:
+  push:
+    paths:
+      - ".github/workflows/pages-apk.yml"
+      - "dist/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-apk
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Controler l'empreinte de l'APK avant publication
+        run: |
+          set -euo pipefail
+          cd dist
+          sha256sum -c ./*.sha256
+
+      - name: Preparer le site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp dist/yanis-fitness-evolution-1.5.1.apk _site/
+          cp dist/yanis-fitness-evolution-1.5.1.apk.sha256 _site/
+          EMPREINTE=$(cut -d' ' -f1 < dist/yanis-fitness-evolution-1.5.1.apk.sha256)
+          TAILLE=$(stat -c %s dist/yanis-fitness-evolution-1.5.1.apk)
+          cat > _site/index.html <<HTML
+          <!doctype html>
+          <html lang="fr">
+          <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Telecharger — Yanis Fitness Evolution 1.5.1</title>
+          <style>
+            body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+                   background:#0b0f14; color:#e8eef6; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; padding:24px; }
+            .card { width:100%; max-width:560px; background:#131a23; border:1px solid #223041; border-radius:18px; padding:28px; text-align:center; }
+            h1 { font-size:22px; margin:0 0 6px; }
+            .sub { color:#9fb0c4; font-size:14px; margin-bottom:22px; }
+            a.btn { display:block; background:#16a34a; color:#04140a; text-decoration:none; font-weight:700; font-size:19px;
+                    padding:18px 22px; border-radius:14px; margin-bottom:18px; }
+            .meta { text-align:left; font-size:13px; color:#9fb0c4; background:#0e141b; border:1px solid #1d2835;
+                    border-radius:12px; padding:14px; }
+            .meta div { margin:4px 0; word-break:break-all; }
+            code { color:#cfe3ff; font-size:12px; }
+          </style>
+          </head>
+          <body>
+            <div class="card">
+              <h1>Yanis Fitness Evolution 1.5.1</h1>
+              <div class="sub">APK signe — build 4 (chantier 1 : seuil des seances dures)</div>
+              <a class="btn" href="yanis-fitness-evolution-1.5.1.apk">Telecharger l'APK</a>
+              <div class="meta">
+                <div><strong>Taille :</strong> ${TAILLE} octets</div>
+                <div><strong>SHA-256 :</strong> <code>${EMPREINTE}</code></div>
+                <div><strong>Installation :</strong> a cote de JARVIS Fitness 1.5.0, rien n'est ecrase.</div>
+              </div>
+            </div>
+          </body>
+          </html>
+          HTML
+          ls -la _site
+
+      - name: Configurer Pages (activation si besoin)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Televerser l'artefact du site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deployer sur Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
