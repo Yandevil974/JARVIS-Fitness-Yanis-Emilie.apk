@@ -140,7 +140,7 @@ Pièges vérifiés (à ne pas répéter) :
   au 02/10/2026). Jamais main. Jamais de reset --hard.
 
 ------------------------------------------------------------
-5. LOTS 2 ET 3 — VALIDÉS LE 02/10/2026 (ne plus redemander)
+5. LOTS 2, 3 ET 4 — VALIDÉS LE 02/10/2026 (ne plus redemander)
 ------------------------------------------------------------
 n°11 (back-squat, 2 cases) → 577×660, WebP 101 ko, PSNR 41,85 ; GIF repli 389 ko.
 n°12 (back-squat barre haute) → 577×660, WebP 103 ko, PSNR 41,81 ; GIF repli 392 ko.
@@ -152,6 +152,9 @@ Fessiers/quadriceps, biceps/avant-bras : 0 pixel modifié hors zone ; saturation
   hd-2026-09-30/VALIDATION-LOT2-2026-10-02.json). Portée : les propositions, pas l'intégration.
 → Lot 3 : n°387, 388, 264, 14 — VALIDÉ le 02/10/2026 (VALIDATION-LOT3-2026-10-02.json).
   387/388 partagent source et GIF livré (exports identiques) ; 14 : phase 2 volontairement plus terne.
+→ Lot 4 : n°131, 133, 114, 23 — VALIDÉ le 02/10/2026 (VALIDATION-LOT4-2026-10-02.json).
+→ PLANNING MODIFIÉ le 02/10/2026 : les numéros PISCINE ne sont plus réservés, ils entrent
+  dans la file (364, 365, 366, 340, 341, 342, 376, 377, 379, 347 / 208, 217, 247).
 → Lot suivant : 4 numéros depuis les sources natives, choisis sur la page de tri visuel
   (priorité mesurée dans hd-2026-09-30/PRIORITE-SOURCES.json).
 → ATTENTION session sans vision : les ROI dérivées de la mesure sont moins sûres qu'un repérage à l'œil.

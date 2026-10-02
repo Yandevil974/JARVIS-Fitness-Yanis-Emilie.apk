@@ -596,3 +596,52 @@ $P evolution/media/tools/refonte-sheet.py --athlete homme --out $R/gif/homme \
 Une **seule** version complète à la fin, APK signé, **images en pleine définition**, et un
 **lien cliquable unique** dans le chat :
 `https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/<commit>/<chemin>`
+
+---
+
+## Lot 4 — VALIDÉ le 02/10/2026 (n°131, 133, 114, 23) — TOUJOURS NON INTÉGRÉ
+
+Validé numéro par numéro (« 131 OK », « 133 OK », « 114 OK », « 23 OK »), **sans** demande d'égalisation
+de phase ni de resserrage de contour. Empreintes et mesures :
+**`hd-2026-09-30/VALIDATION-LOT4-2026-10-02.json`** ; détail : `lot4/CONTROLES.json`.
+
+| N° | Exercice | Export | WebP | PSNR | GIF repli | Saturation avant → après (réf. 0,914) | Contour |
+|---|---|---|---|---|---|---|---|
+| 131 | leg curl allongé | 573×660 | 94 ko | 42,32 dB | 389 ko | 0,855 → 0,901 · 0,884 → 0,919 | 5,6 / 3,1 px |
+| 133 | leg curl pieds fléchis | 579×660 | 92 ko | 42,45 dB | 405 ko | 0,964 → 0,960 · 0,652 → 0,828 | 6,7 / 6,2 px |
+| 114 | gainage planche | 588×660 | 87 ko | 42,68 dB | 381 ko | 0,946 → 0,921 · 0,944 → 0,918 | 6,4 / 6,1 px |
+| 23 | circuit abdominaux (femme) | 585×660 | 64 ko | 43,53 dB | 375 ko | 0,718 → 0,880 · 0,776 → 0,902 | 9,8 / 11,8 px |
+
+**Contrôle clé** : **0 pixel modifié hors zone verte** sur les 8 phases.
+
+**Points signalés puis validés tels quels** : le n°133 garde sa phase 2 à 0,828 (ombrage entre phases) ;
+le n°23 a un contour nettement plus doux (9,8 et 11,8 px). L'utilisateur a accepté les deux.
+
+---
+
+## ⚠️ DÉCISION DE PLANNING — 02/10/2026 : les numéros PISCINE ne sont plus réservés
+
+Les numéros piscine **entrent dans la file comme les autres**, au lieu d'attendre le chantier
+cardio/piscine. Concrètement : 364, 365, 366, 340, 341, 342, 376, 377, 379, 347 côté « homme »
+(erreur d'alignement 2,8 à 3,4/255, les meilleures du lot restant) et 208, 217, 247 côté « femme ».
+Rappel : la segmentation automatique est **incertaine en piscine** (occlusions, éclaboussures) —
+le repérage visuel de la zone verte y est encore plus indispensable qu'ailleurs.
+
+---
+
+## 🧰 Réinitialisation du bac à sable — procédure éprouvée (2 réinitialisations le 02/10/2026)
+
+Ce qui disparaît : `.cache/` (venv + sources extraites), `tri/` (page de tri, ignorée par git),
+les **réfs d'archive** `base/*`, le serveur du port 8080, et parfois **tout l'arbre de travail**
+(retour au clone de `main`). Ce qui survit : **tout ce qui est poussé sur la branche**.
+
+Reprise, dans cet ordre :
+1. `git fetch origin arena/01a0fae1-jarvis-fitness-yanis-emilie-ap`
+2. si l'arbre est revenu à `main` : `git merge --ff-only FETCH_HEAD` (avance rapide, **rien d'écrasé**)
+   — ne jamais `reset --hard` ;
+3. `bash evolution/media/tools/preparer-session.sh` → venv, réfs `base/lots-complets` (c685298),
+   `base/passation` (3c163a6), `base/gif-livres` (3cbb3e5) ;
+4. relancer le serveur : `python3 evolution/media/tools/serve-validation.py 8080` ;
+5. refabriquer la page de tri si besoin : `planche-tri.py <numéros> "titre"`.
+
+**Conséquence pratique** : les pages de validation se consultent **pendant le tour**, pas après.
