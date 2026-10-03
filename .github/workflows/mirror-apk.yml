@@ -16,11 +16,11 @@ on:
       tag:
         description: "Tag de la release a copier"
         required: true
-        default: "v1.6.1-coachs"
+        default: "v1.7.0-metcon-emilie"
       nom:
         description: "Nom du fichier dans downloads/"
         required: true
-        default: "Yanis-Fitness-Evolution-1.6.1-coachs.apk"
+        default: "Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk"
 
 permissions:
   contents: write
@@ -30,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      TAG: ${{ github.event.inputs.tag || 'v1.6.1-coachs' }}
-      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.6.1-coachs.apk' }}
+      TAG: ${{ github.event.inputs.tag || 'v1.7.0-metcon-emilie' }}
+      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
