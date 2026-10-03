@@ -1,6 +1,27 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — coachs réactifs (chantier 1 : A–E) + tous les GIF humains
+## Version à installer — correctifs visuels du 03/10/2026 (1.6.1)
+
+**[Yanis-Fitness-Evolution-1.6.1-coachs.apk](downloads/Yanis-Fitness-Evolution-1.6.1-coachs.apk)** — APK signé, keystore du dépôt.
+
+**Ce qui change (1.6.1 — trois défauts visuels signalés, corrigés sans toucher
+aux chiffres ni aux GIF validés)** :
+1. **« Ma bibliothèque »** : les 74 dernières illustrations anatomiques sont
+   remplacées par vos photos humaines animées du corpus livré (GIF humain du
+   même muscle + même type de mouvement ; table de correspondance dans
+   `src/data/gif-overrides.js`, bloc « Rattrapage 03/10/2026 »).
+2. **Piscine / aqua — étape « Repos »** : le repli affiche désormais une
+   récupération DANS l'eau (marche/récup aquatique), plus l'homme aux
+   abdominaux au sol de la salle.
+3. **Crawl « Nage douce »** : la paire dont la 2 image redressait la personne
+   à la verticale (« personne à l'envers ») est remplacée par la paire du
+   corpus à deux images horizontales (femme `a9b2430d317e3bba`,
+   homme `f5754e3553d3922c`).
+
+Tests : **119 tests, 117 passent, 0 échec** (3 nouveaux verrous : repli piscine,
+crawl propre, bibliothèque 100 % corpus humain).
+
+## Version précédente — coachs réactifs (chantier 1 : A–E) + tous les GIF humains
 
 **[Yanis-Fitness-Evolution-1.6.0-coachs.apk](downloads/Yanis-Fitness-Evolution-1.6.0-coachs.apk)** — APK signé, keystore du dépôt.
 

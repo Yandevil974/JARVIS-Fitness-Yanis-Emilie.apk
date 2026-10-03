@@ -138,7 +138,83 @@ export const GIF_OVERRIDES = {
  "tractions prise neutre (chin up)": "/media/561920fcf8afeb91.gif",
  "tractions supination (chin up)": "/media/d9bfa9bd06ca082c.gif",
  "triceps extensions halteres, banc plat": "/media/3aea2b016706d5d4.gif",
- "wood chop poulie haute": "/media/9b353c570b841963.gif"
+  // ── Rattrapage 03/10/2026 (BUG 1) : 74 visuels humains (même muscle +
+ // même pattern) en remplacement des illustrations anatomiques legacy.
+ "wood chop poulie haute": "/media/9b353c570b841963.gif",
+ "hip thrust barre": "/media/4e7b70938b8a2e57.gif", // ≈ Hip thrust barre — test de charge max (3-5 reps)
+ "souleve de terre roumain halteres": "/media/e5532fe8fa9b40e9.gif", // ≈ Soulevé de terre roumain barre — test (3-5 reps)
+ "abduction hanche debout a la poulie": "/media/4d80713eb3e1fc0b.gif", // ≈ Abduction hanche à la poulie — myo-reps
+ "kickback a la poulie": "/media/32fa389d5f16c0d4.gif", // ≈ Kickback à la poulie — drop set final
+ "dead bug": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
+ "tirage vertical prise neutre": "/media/f44fc658f6103c5b.gif", // ≈ Tirage vertical lean away
+ "rowing haltere un bras": "/media/23beb23cf39592a5.gif", // ≈ Rowing haltère buste penché
+ "developpe militaire halteres assis": "/media/961917e9b811d034.gif", // ≈ Développé militaire haltères assis — test (3-5 reps)
+ "elevations laterales halteres": "/media/89487b94baa87c1c.gif", // ≈ Élévations latérales haltères — myo-reps
+ "pompes inclinees (mains surelevees)": "/media/7e96ab14f783b338.gif", // ≈ Pompes
+ "curl halteres": "/media/7cdb8ca673040b71.gif", // ≈ Curl Scott haltère, prise neutre
+ "extension triceps a la poulie": "/media/028724a3c679a470.gif", // ≈ Pushdown triceps câble
+ "bird dog": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
+ "goblet squat": "/media/d7f9e6b6ba8a231b.gif", // ≈ Back squat (charge modérée)
+ "souleve de terre roumain unilateral haltere": "/media/e5532fe8fa9b40e9.gif", // ≈ Soulevé de terre roumain barre — test (3-5 reps)
+ "abduction assise (machine ou elastique)": "/media/71105357b5f1b5a1.gif", // ≈ Abduction hanche à l'élastique
+ "mollets debout unilateraux": "/media/f1a40f2c8c8502db.gif", // ≈ Mollets à la presse
+ "reverse crunch": "/media/74feda7869f70e9d.gif", // ≈ Crunch sur swiss ball
+ "gainage lateral": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
+ "developpe couche halteres": "/media/e4d9c22e0a05ea25.gif", // ≈ Développé couché barre
+ "tirage horizontal a la poulie": "/media/b2d6a7d98ed3d560.gif", // ≈ Rowing assis + étirement
+ "releves de jambes allongee": "/media/125f10c3eb00a8ef.gif", // ≈ Relevés de jambes
+ "mountain climbers": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
+ "glute bridge pieds sur banc": "/media/666443484c7f0861.gif", // ≈ Pont fessier au sol — activation
+ "souleve de terre roumain barre": "/media/e5532fe8fa9b40e9.gif", // ≈ Soulevé de terre roumain barre — test (3-5 reps)
+ "leg curl machine": "/media/9bfb90294c482fc0.gif", // ≈ Leg curl machine (ou swiss-ball leg curl)
+ "abduction hanche a la poulie": "/media/4d80713eb3e1fc0b.gif", // ≈ Abduction hanche à la poulie — myo-reps
+ "dead bug avec rotation": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
+ "pallof press a la poulie": "/media/7de6cc31c5c5301e.gif", // ≈ Pallof press à l'élastique
+ "tirage vertical prise large": "/media/f44fc658f6103c5b.gif", // ≈ Tirage vertical lean away
+ "face pull a la poulie": "/media/da0df09961077306.gif", // ≈ Face pull à l'élastique
+ "developpe incline halteres": "/media/8de6e89e5395700c.gif", // ≈ Développé haltères incliné 45°, prise neutre
+ "hip thrust unilateral": "/media/cd5a8b464328c8b9.gif", // ≈ Hip thrust unilatéral (1 jambe)
+ "souleve de terre roumain unilateral": "/media/e5532fe8fa9b40e9.gif", // ≈ Soulevé de terre roumain barre — test (3-5 reps)
+ "fentes avant alternees": "/media/f1330639adb8d27f.gif", // ≈ Fentes arrière alternées
+ "abduction assise machine": "/media/71105357b5f1b5a1.gif", // ≈ Abduction hanche à l'élastique
+ "mollets assis": "/media/f1a40f2c8c8502db.gif", // ≈ Mollets à la presse
+ "glute bridge en 1,5 reps": "/media/666443484c7f0861.gif", // ≈ Pont fessier au sol — activation
+ "crunch a la poulie": "/media/2c9a6633b3c5c687.gif", // ≈ Crunch à la poulie (ou au sol)
+ "hip thrust unilateral leste": "/media/cd5a8b464328c8b9.gif", // ≈ Hip thrust unilatéral (1 jambe)
+ "abduction assise en 1,5 reps": "/media/4d80713eb3e1fc0b.gif", // ≈ Abduction hanche à la poulie — myo-reps
+ "gainage lateral dynamique": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
+ "circuit abdominaux (crunch + releves + gainage)": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
+ "triceps dips": "/media/3aea2b016706d5d4.gif", // ≈ Triceps extensions haltères, banc plat
+ "french press poulie basse": "/media/a40720f67740d2a0.gif", // ≈ French press haltère un bras
+ "curl marteau assis": "/media/b3e93e1e1a7f9eb9.gif", // ≈ Curl marteau
+ "elevations laterales assises (variante)": "/media/fa7442793fd72d35.gif", // ≈ Élévations latérales assises
+ "leg press": "/media/a4443a1008f6202b.gif", // ≈ Leg press unilatéral
+ "back extension horizontal": "/media/6cfcff2b2b4dcee5.gif", // ≈ Soulevé de terre partiel, prise snatch
+ "mollets debout": "/media/f1a40f2c8c8502db.gif", // ≈ Mollets à la presse
+ "developpe incline barre": "/media/e4d9c22e0a05ea25.gif", // ≈ Développé couché barre
+ "developpe halteres plat, prise neutre": "/media/8de6e89e5395700c.gif", // ≈ Développé haltères incliné 45°, prise neutre
+ "ecartes halteres decline": "/media/bb6790d94f7411fc.gif", // ≈ Écartés haltères
+ "rowing barre buste penche, pronation": "/media/f00bd9ef43286ee0.gif", // ≈ Rowing barre buste penché
+ "rowing assis, prise neutre": "/media/2fbfc7c455ffaae1.gif", // ≈ Rowing haltère un bras, prise neutre
+ "tirage vertical prise pronation": "/media/f44fc658f6103c5b.gif", // ≈ Tirage vertical lean away
+ "developpe militaire debout": "/media/961917e9b811d034.gif", // ≈ Développé militaire haltères assis — test (3-5 reps)
+ "developpe halteres incline 30°": "/media/8de6e89e5395700c.gif", // ≈ Développé haltères incliné 45°, prise neutre
+ "french press barre ez": "/media/a40720f67740d2a0.gif", // ≈ French press haltère un bras
+ "front squat": "/media/d7f9e6b6ba8a231b.gif", // ≈ Back squat (charge modérée)
+ "leg curl debout": "/media/9bfb90294c482fc0.gif", // ≈ Leg curl machine (ou swiss-ball leg curl)
+ "mollets unilateraux": "/media/f1a40f2c8c8502db.gif", // ≈ Mollets à la presse
+ "developpe halteres decline, prise neutre": "/media/8de6e89e5395700c.gif", // ≈ Développé haltères incliné 45°, prise neutre
+ "rowing haltere un bras, coude ouvert": "/media/2fbfc7c455ffaae1.gif", // ≈ Rowing haltère un bras, prise neutre
+ "extensions triceps barre ez": "/media/3aea2b016706d5d4.gif", // ≈ Triceps extensions haltères, banc plat
+ "souleve de terre": "/media/e5532fe8fa9b40e9.gif", // ≈ Soulevé de terre roumain barre — test (3-5 reps)
+ "hack squat": "/media/d7f9e6b6ba8a231b.gif", // ≈ Back squat (charge modérée)
+ "jackknife sur swiss ball": "/media/74feda7869f70e9d.gif", // ≈ Crunch sur swiss ball
+ "developpe halteres plat": "/media/8de6e89e5395700c.gif", // ≈ Développé haltères incliné 45°, prise neutre
+ "rowing barre ez supination, buste penche": "/media/f00bd9ef43286ee0.gif", // ≈ Rowing barre buste penché
+ "cables croises": "/media/09395898bff010e6.gif", // ≈ Câbles croisés + rotation externe
+ "developpe couche barre plat": "/media/e4d9c22e0a05ea25.gif", // ≈ Développé couché barre
+ "dips": "/media/7e96ab14f783b338.gif", // ≈ Pompes
+ "leg curl allonge, 1 1/4 en haut": "/media/1bdd45afb59cc298.gif", // ≈ Leg curl allongé, pieds pointés
 };
 
 // Guides piscine : le visuel animé humain remplace l'illustration statique.
@@ -149,7 +225,10 @@ export const POOL_IMG_OVERRIDES = {
  "Déplacements latéraux (4 m)": "/media/365abb508d34af16.gif",
  "Gainage au bord (vertical)": "/media/888e26f63ae4b8d6.gif",
  "Marche aquatique": "/media/14170349578b3fdb.gif",
- "Nage douce": "/media/e7699039b93fdb20.gif",
+ // 03/10/2026 : l'ancien GIF (e7699039b93fdb20) alternait nage horizontale et
+ // personne redressée à la verticale (« crawl à l'envers » signalé). Paire
+ // propre du corpus : a9b2430d317e3bba (femme) / f5754e3553d3922c (homme).
+ "Nage douce": "/media/a9b2430d317e3bba.gif",
  "Retour au calme": "/media/9701d6f5bdb746fc.gif",
  "Sprint — nager à fond": "/media/2f02dcceffc27db7.gif",
  "Talons-fesses": "/media/5e97ffa887ffc414.gif"

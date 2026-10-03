@@ -64,8 +64,12 @@ export const GIF_STEPS = {
   "homme": "/media/333e9e6ac33e22bb.gif"
  },
  "pool-nage-douce": {
-  "femme": "/media/3d44d275ca25d146.gif",
-  "homme": "/media/3d2c2e5b9e90f3b7.gif"
+  // 03/10/2026 : l'ancienne paire (3d44d275… / 3d2c2e5b…) alternait une image
+  // horizontale et une image où la personne se redresse à la verticale — effet
+  // « personne à l'envers » signalé par l'utilisateur sur le crawl. Remplacée
+  // par la paire du corpus dont les deux images restent horizontales.
+  "femme": "/media/a9b2430d317e3bba.gif",
+  "homme": "/media/f5754e3553d3922c.gif"
  },
  "pool-nage-statique": {
   "femme": "/media/236c40fd157f0f41.gif",
@@ -336,6 +340,14 @@ const PATTERN_FALLBACK = {
   curl: "warmup-mobilite",
 };
 
-export function stepGifByPattern(pattern, profil) {
+// En contexte piscine / aqua (segment « pool » ou séance swim/aqua), le repli
+// par motif reste dans le bassin : jamais un humain au sol de salle pendant
+// une pause de natation (défaut utilisateur du 03/10/2026 : « Repos » affichait
+// un homme aux abdominaux en salle au lieu de la piscine).
+export function stepGifByPattern(pattern, profil, pool = false) {
+  if (pool) {
+    if (pattern === "breathe") return stepGif("pool-recup-tabata", profil);
+    if (pattern === "stretch") return stepGif("pool-etirements-bord", profil);
+  }
   return stepGif(PATTERN_FALLBACK[pattern] || "warmup-mobilite", profil);
 }

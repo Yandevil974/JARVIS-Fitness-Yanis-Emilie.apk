@@ -43,7 +43,7 @@ export const STRETCH_IMAGES = {
 export const POOL_STEP_IMAGES = {
   "Étirements au bord": "/media/8f862f2ae511a13e.gif",
   "Nage statique (à l'élastique)": "/media/236c40fd157f0f41.gif",
-  "Nage douce": "/media/3d44d275ca25d146.gif",
+  "Nage douce": "/media/a9b2430d317e3bba.gif",
   "Marche aquatique": "/media/60207d563d74fd85.gif",
   "Fractionné — nager": "/media/19750699871755e5.gif",
   "Sprint — nager à fond": "/media/47746e12d90c5e2c.gif",

@@ -45,6 +45,12 @@ export function TimerModal() {
         total) *
       100;
   const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
+  // Contexte bassin : le repli par motif doit montrer un humain DANS l'eau
+  // pendant une séance piscine/aqua (pas un exercice au sol de salle).
+  const isPool =
+    step.segment === "pool" ||
+    t.meta?.type === "swim" ||
+    t.meta?.type === "aqua";
   // Un chrono affiche toujours un humain animé : image de l'étape, sinon guide
   // piscine, sinon résolution par nom d'étape (étirement, cardio, aqua, tabata).
   const stepImage =
@@ -53,7 +59,7 @@ export function TimerModal() {
     stepGif(STRETCH_KEY_BY_NAME[step.name], p.id) ||
     stepGifFromName(step.name, p.id) ||
     findExercise(step.name)?.gif ||
-    stepGifByPattern(step.pattern, p.id);
+    stepGifByPattern(step.pattern, p.id, isPool);
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {

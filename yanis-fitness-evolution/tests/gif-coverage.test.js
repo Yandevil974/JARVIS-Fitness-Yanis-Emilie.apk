@@ -15,6 +15,7 @@ import {
   stretchImage,
 } from "../src/data/library.js";
 import { demonstrationFor } from "../src/engine/demo-match.js";
+import { GIF_OVERRIDES } from "../src/data/gif-overrides.js";
 import { stepGuide } from "../src/data/visuals.js";
 import {
   stepGif,
@@ -36,13 +37,17 @@ const fileOk = (src) => !!src && existsSync(publicDir + src);
 // Même chaîne de résolution que TimerModal (ProtocolModals.jsx).
 function resolutionChrono(step, profil) {
   const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
+  const pool =
+    step.segment === "pool" ||
+    step.metaType === "swim" ||
+    step.metaType === "aqua";
   return (
     step.img ||
     guide?.img ||
     stepGif(STRETCH_KEY_BY_NAME[step.name], profil) ||
     stepGifFromName(step.name, profil) ||
     EXERCISES.find((e) => e.name === step.name)?.gif ||
-    stepGifByPattern(step.pattern, profil)
+    stepGifByPattern(step.pattern, profil, pool)
   );
 }
 
@@ -52,6 +57,19 @@ test("musculation : chaque exercice a une démonstration humaine (GIF existant)"
     const d = demonstrationFor(ex);
     assert.ok(d, `aucune démo pour « ${ex.name} »`);
     assert.ok(fileOk(d.path), `fichier manquant pour « ${ex.name} » : ${d.path}`);
+  }
+});
+
+test("03/10 : la bibliothèque n'affiche plus aucune illustration anatomique", () => {
+  // Chaque GIF de la bibliothèque doit venir du corpus humain livré
+  // (GIF_OVERRIDES) ; les 74 visuels legacy dessinés ont été remplacés.
+  const humains = new Set(Object.values(GIF_OVERRIDES));
+  for (const ex of EXERCISES) {
+    assert.ok(ex.gif, `exercice sans GIF : ${ex.name}`);
+    assert.ok(
+      humains.has(ex.gif),
+      `« ${ex.name} » affiche encore un visuel hors corpus humain : ${ex.gif}`,
+    );
   }
 });
 
@@ -80,6 +98,47 @@ test("chronos piscine/aqua : toutes les étapes de tous les niveaux résolues", 
           assert.ok(fileOk(img), `fichier manquant : ${img}`);
         }
       }
+});
+
+test("03/10 : une pause en piscine montre un humain DANS l'eau (jamais le sol de salle)", () => {
+  const ABS_SALLE = "/media/54a3ca1547a3a613.gif"; // stretch-respiration (salle)
+  for (const profil of ["elite", "emilie"]) {
+    const img = resolutionChrono(
+      { name: "Repos", seconds: 30, pattern: "breathe", metaType: "aqua" },
+      profil,
+    );
+    assert.ok(img, "Repos piscine sans GIF");
+    assert.notEqual(img, ABS_SALLE, "Repos piscine : visuel de salle interdit");
+    assert.ok(
+      /60207d563d74fd85|333e9e6ac33e22bb/.test(img),
+      `Repos piscine : attendu une récupération dans l'eau, obtenu ${img}`,
+    );
+  }
+  // Hors bassin, le repli « respirations » reste celui validé en v1.6.0.
+  assert.equal(
+    resolutionChrono({ name: "Repos", seconds: 30, pattern: "breathe" }, "elite"),
+    ABS_SALLE,
+  );
+});
+
+test("03/10 : le crawl « Nage douce » n'utilise plus les GIF à personne retournée", () => {
+  // Les anciens visuels alternaient une image horizontale et une image où la
+  // personne se redresse à la verticale : effet « à l'envers » signalé.
+  const ANCIENS = [
+    "/media/e7699039b93fdb20.gif",
+    "/media/3d44d275ca25d146.gif",
+    "/media/3d2c2e5b9e90f3b7.gif",
+  ];
+  for (const g of POOL_GUIDES)
+    assert.ok(!ANCIENS.includes(g.img), `guide ${g.t} encore sur un GIF retourné`);
+  for (const profil of ["elite", "emilie"]) {
+    const img = resolutionChrono(
+      { name: "Échauffement — nage douce", seconds: 120, pattern: "swim", segment: "pool" },
+      profil,
+    );
+    assert.ok(!ANCIENS.includes(img), `nage douce encore sur un GIF retourné (${img})`);
+    assert.ok(fileOk(img), `fichier manquant : ${img}`);
+  }
 });
 
 test("mouvements HIIT / aqua tabata : GIF homme et femme", () => {
