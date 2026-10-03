@@ -17757,3 +17757,112 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .rest-next-thumb img { width: 56px; height: 56px; object-fit: cover; display: block; }
 .rest-next-thumb svg { position: absolute; right: 4px; bottom: 4px; color: #fff; opacity: 0.85; }
 .rest-next-body { display: flex; gap: 10px; align-items: center; }
+
+/* METCON Émilie — cartes, choix hebdomadaire et rappel de récupération. */
+.metcon-protocols { margin-bottom: 24px; }
+.protocol-icon.pool-6 {
+  background: #e1f3f0;
+  border-color: #b7ded7;
+  color: #2b7771;
+}
+.protocol-icon.pool-7 {
+  background: #fff0df;
+  border-color: #efd3b0;
+  color: #b46a27;
+}
+.metcon-week-panel { margin-top: 22px; }
+.metcon-week-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.metcon-week-day {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--panel-2);
+  color: var(--text);
+}
+.metcon-week-day.is-cardio {
+  border-color: #8fc9bd;
+  box-shadow: inset 3px 0 #61a99a;
+}
+.metcon-week-date,
+.metcon-week-original,
+.metcon-week-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.metcon-week-date {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.metcon-week-date strong,
+.metcon-week-original strong { font-size: 12px; }
+.metcon-week-date small,
+.metcon-week-choice small,
+.metcon-week-original span {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.metcon-week-choice select { width: 100%; min-width: 0; }
+.metcon-week-original strong { overflow-wrap: anywhere; }
+.metcon-recovery-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #e4c896;
+  border-radius: 12px;
+  background: #fff4dc;
+  color: #563d1d;
+}
+.metcon-recovery-warning > svg { flex: 0 0 auto; color: #a96d24; }
+.metcon-recovery-warning strong { display: block; font-size: 13px; }
+.metcon-recovery-warning p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.metcon-modal-actions { flex-wrap: wrap; justify-content: flex-start; }
+.metcon-modal-actions > .btn { flex: 1 1 210px; }
+[data-theme="dark"] .protocol-icon.pool-6 {
+  background: #173b38;
+  border-color: #2c6760;
+  color: #82d5c8;
+}
+[data-theme="dark"] .protocol-icon.pool-7 {
+  background: #452f23;
+  border-color: #76523a;
+  color: #ffbd75;
+}
+[data-theme="dark"] .metcon-week-day {
+  background: var(--panel-2);
+  border-color: var(--line);
+  color: var(--text);
+}
+[data-theme="dark"] .metcon-week-day.is-cardio {
+  border-color: #3e8278;
+  box-shadow: inset 3px 0 #65b8aa;
+}
+[data-theme="dark"] .metcon-recovery-warning {
+  background: #382d1c;
+  border-color: #685335;
+  color: #f3ddba;
+}
+[data-theme="dark"] .metcon-recovery-warning > svg { color: #ffc475; }
+@media (max-width: 700px) {
+  .metcon-week-grid { grid-template-columns: 1fr; }
+  .metcon-modal-actions { flex-direction: column; }
+  .metcon-modal-actions > .btn { width: 100%; flex-basis: auto; }
+}

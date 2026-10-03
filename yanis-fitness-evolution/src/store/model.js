@@ -72,6 +72,7 @@ export function newProfile(id) {
       priorities: em ? ["fes", "moy", "tra"] : [],
       muscleTargets: {},
       poolDays: em ? [4] : [],
+      metconLevel: 0,
       voice: false,
       notifications: false,
       reducedMotion: false,

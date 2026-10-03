@@ -30,6 +30,7 @@ import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
 import { durationLabel, today, norm, assetSrc } from "../../engine/utils.js";
+import { poolRecoveryGate } from "../../engine/source-schedule.js";
 export function TimerModal() {
   const { p, updateProfile, closeModal, setModal, notify } = useApp();
   const now = useNow();
@@ -226,34 +227,44 @@ export function ProtocolModal({ protocolId, level = 0 }) {
   if (!lv) return null;
   const key = `${today()}-${protocolId}-${level}`,
     checked = p.protocolChecks?.[key] || [];
-  const minutes = Math.round(lv.steps.reduce((s, r) => s + r[1], 0) / 60);
-  function launch() {
-    const score = recoveryScore(p).score;
-    if (
-      score != null &&
-      score < 45 &&
-      !["recovery", "endurance"].includes(pr.id)
-    ) {
-      notify(
-        "Récupération faible : choisissez Aqua Recovery ou une nage très facile aujourd’hui.",
-        "info",
-      );
-      return;
-    }
+  const minutes = Math.round(lv.steps.reduce((s, r) => s + r[1], 0) / 60),
+    score = recoveryScore(p).score,
+    softMetconRecovery = poolRecoveryGate(pr.id, score).soft;
+  function startProtocol(target, targetLevel, targetIndex) {
     setTimer(
-      lv.steps.map(([name, seconds]) => ({
+      targetLevel.steps.map(([name, seconds]) => ({
         name,
         seconds,
-        pattern: /repos|respiration|recup/i.test(name) ? "breathe" : "swim",
-        kind: /repos|recup/i.test(name) ? "rest" : "work",
+        pattern: /repos|respiration|r[ée]cup/i.test(name) ? "breathe" : "swim",
+        kind: /repos|r[ée]cup|calme/i.test(name) ? "rest" : "work",
       })),
       {
-        type: pr.id === "aquahiit" || pr.id === "aquatabata" ? "aqua" : "swim",
-        name: pr.nom,
-        protocolId: pr.id,
-        level,
+        type: ["aquahiit", "aquatabata", "metcon-aquatabata"].includes(target.id)
+          ? "aqua"
+          : "swim",
+        name: target.nom,
+        protocolId: target.id,
+        level: targetIndex,
       },
     );
+  }
+  function launch(forceMetcon = false) {
+    const currentScore = recoveryScore(p).score,
+      gate = poolRecoveryGate(pr.id, currentScore, forceMetcon);
+    if (gate.blocked) {
+      if (!gate.soft)
+        notify(
+          "Récupération faible : choisissez Aqua Recovery ou une nage très facile aujourd’hui.",
+          "info",
+        );
+      return;
+    }
+    startProtocol(pr, lv, level);
+  }
+  function launchRecovery() {
+    const recovery = POOL_PROTOCOLS.find((item) => item.id === "recovery"),
+      recoveryLevel = recovery?.niveaux[0];
+    if (recovery && recoveryLevel) startProtocol(recovery, recoveryLevel, 0);
   }
   return (
     <Modal
@@ -270,6 +281,18 @@ export function ProtocolModal({ protocolId, level = 0 }) {
             mémorisent vos étapes cochées, mais ne créent pas une performance.
           </p>
         </div>
+        {softMetconRecovery && (
+          <div className="metcon-recovery-warning" role="status">
+            <Icon name="HeartPulse" size={20} />
+            <div>
+              <strong>Récupération {score}/100 aujourd’hui</strong>
+              <p>
+                Aqua Recovery est recommandé. Vous gardez la possibilité de
+                lancer le METCON si vous le décidez.
+              </p>
+            </div>
+          </div>
+        )}
         <div className="protocol-steps">
           {lv.steps.map(([name, sec], i) => {
             const guide = POOL_GUIDES.find((g) =>
@@ -322,22 +345,51 @@ export function ProtocolModal({ protocolId, level = 0 }) {
             );
           })}
         </div>
-        <div className="modal-actions">
-          <Button
-            variant="secondary"
-            icon="NotebookPen"
-            onClick={() =>
-              setModal({
-                type: "log-activity",
-                data: { type: "swim", name: pr.nom },
-              })
-            }
-          >
-            Saisir sans chrono
-          </Button>
-          <Button variant="primary" icon="Play" onClick={launch}>
-            Lancer le protocole
-          </Button>
+        <div className={`modal-actions ${softMetconRecovery ? "metcon-modal-actions" : ""}`}>
+          {softMetconRecovery ? (
+            <>
+              <Button variant="primary" icon="Waves" onClick={launchRecovery}>
+                Lancer Aqua Recovery (recommandé)
+              </Button>
+              <Button
+                variant="secondary"
+                icon="Play"
+                onClick={() => launch(true)}
+              >
+                Lancer le METCON quand même
+              </Button>
+              <Button
+                variant="secondary"
+                icon="NotebookPen"
+                onClick={() =>
+                  setModal({
+                    type: "log-activity",
+                    data: { type: "swim", name: pr.nom },
+                  })
+                }
+              >
+                Saisir sans chrono
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button
+                variant="secondary"
+                icon="NotebookPen"
+                onClick={() =>
+                  setModal({
+                    type: "log-activity",
+                    data: { type: "swim", name: pr.nom },
+                  })
+                }
+              >
+                Saisir sans chrono
+              </Button>
+              <Button variant="primary" icon="Play" onClick={launch}>
+                Lancer le protocole
+              </Button>
+            </>
+          )}
         </div>
         <p className="small-subtitle">
           Pas de distance déduite d’une nage statique. Pas d’apnée. Conditions

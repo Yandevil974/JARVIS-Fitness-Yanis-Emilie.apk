@@ -1,5 +1,5 @@
-import { legacy } from "../data/library.js";
-import { today, parseDate, addDays, dayDiff, clamp, num } from "./utils.js";
+import { legacy, POOL_PROTOCOLS } from "../data/library.js";
+import { today, parseDate, addDays, dayDiff, clamp, num, monday } from "./utils.js";
 
 export const SOURCE_SCHEDULE_REVISION = 3;
 export function sourcePosition(p, date = today()) {
@@ -31,6 +31,57 @@ export function sourceTrainingDays(id, frequency = 4) {
     ? js.map((d) => (d + 6) % 7)
     : { 1: [0], 2: [0, 3], 6: [0, 1, 2, 3, 4, 5] }[f] || [0, 1, 3, 4];
 }
+const METCON_FORMATS = new Set(["metcon-piscine", "metcon-aquatabata"]);
+const METCON_DURATIONS = {
+  "metcon-piscine": [18, 22, 27],
+  "metcon-aquatabata": [20, 25, 30],
+};
+export function isMetconFormat(format) {
+  return METCON_FORMATS.has(format);
+}
+export function poolRecoveryGate(protocolId, score, allowMetcon = false) {
+  const value = num(score),
+    low = value != null && value < 45,
+    soft = low && isMetconFormat(protocolId);
+  return {
+    soft,
+    blocked:
+      low &&
+      !["recovery", "endurance"].includes(protocolId) &&
+      !(soft && allowMetcon),
+  };
+}
+export function metconLevel(p) {
+  const value = num(p?.preferences?.metconLevel);
+  return value == null ? 0 : clamp(Math.round(value), 0, 2);
+}
+export function metconMinutes(format, level = 0) {
+  const values = METCON_DURATIONS[format];
+  if (!values) return null;
+  const parsed = num(level);
+  return values[clamp(Math.round(parsed ?? 0), 0, 2)];
+}
+export function sourceCardioDayEligible(p, date) {
+  if (!p || p.id !== "emilie" || !date) return false;
+  const pos = sourcePosition(p, date);
+  if (pos.beforeStart || pos.afterEnd) return false;
+  const frequency = Math.round(p.user?.frequency || 4);
+  let days = ({ 3: [2, 6], 4: [3, 5], 5: [3] }[frequency] || [2, 6]).slice();
+  if (pos.deload) days = days.slice(0, 1);
+  return days.includes(parseDate(date).getDay());
+}
+export function sourceCardioSlots(p, date = today()) {
+  const start = monday(date);
+  return Array.from({ length: 7 }, (_, index) => {
+    const slotDate = addDays(start, index);
+    return {
+      date: slotDate,
+      jsDay: parseDate(slotDate).getDay(),
+      eligible: sourceCardioDayEligible(p, slotDate),
+      day: sourceDay(p, slotDate),
+    };
+  });
+}
 export function sourceCardioDay(p, date, jsDay, pos = sourcePosition(p, date)) {
   const choices = p.preferences.cardioChoices || {},
     pool = p.equipment.includes("pool"),
@@ -46,9 +97,15 @@ export function sourceCardioDay(p, date, jsDay, pos = sourcePosition(p, date)) {
         : elliptical
           ? "elliptique"
           : "repos");
-  if (!["piscine", "elliptique", "repos"].includes(format)) format = "repos";
+  const validMetcon = p.id === "emilie" && isMetconFormat(format);
+  if (!["piscine", "elliptique", "repos"].includes(format) && !validMetcon)
+    format = "repos";
   let minutes, detail, zone;
-  if (pos.deload) {
+  if (validMetcon) {
+    minutes = metconMinutes(format, metconLevel(p));
+    zone = 2;
+    detail = `${format === "metcon-piscine" ? "METCON Piscine" : "METCON Aqua Tabata"} · ${minutes} min, niveau ${metconLevel(p) + 1}.`;
+  } else if (pos.deload) {
     minutes = format === "piscine" ? 30 : 25;
     zone = 0;
     detail =
@@ -131,7 +188,7 @@ export function sourceDay(
       if (cd.includes(jsDay)) {
         cardio = sourceCardioDay(p, date, jsDay, pos);
         type =
-          cardio.format === "piscine"
+          cardio.format === "piscine" || isMetconFormat(cardio.format)
             ? "swim"
             : cardio.format === "repos"
               ? "recovery"
@@ -154,7 +211,9 @@ export function sourceDay(
       (type === "metcon"
         ? "METCON elliptique + piscine"
         : type === "swim"
-          ? "Piscine · programme source"
+          ? isMetconFormat(cardio?.format)
+            ? POOL_NAME[cardio.format]
+            : "Piscine · programme source"
           : type === "cardio"
             ? "Cardio elliptique"
             : pos.deload
@@ -257,6 +316,8 @@ export function sourceProtoName(a) {
         aquahiit: "Aqua HIIT",
         aquatabata: "Aqua Tabata",
         recovery: "Aqua Recovery",
+        "metcon-piscine": "METCON Piscine",
+        "metcon-aquatabata": "METCON Aqua Tabata",
       }[a.protocolId] || ""
     );
   return (
@@ -291,6 +352,8 @@ const POOL_NAME = {
   aquahiit: "Aqua HIIT",
   recovery: "Aqua Recovery",
   aquatabata: "Aqua Tabata",
+  "metcon-piscine": "METCON Piscine",
+  "metcon-aquatabata": "METCON Aqua Tabata",
 };
 export function sourcePoolProtocol(p, date, { planning = false } = {}) {
   const pos = sourcePosition(p, date),
@@ -327,7 +390,8 @@ export function sourcePoolProtocol(p, date, { planning = false } = {}) {
   };
 }
 export function sourcePool(p, id, level = 0) {
-  const proto = legacy[p.id].POOL_PROTOS.find((x) => x.id === id);
+  const protocols = p.id === "emilie" ? POOL_PROTOCOLS : legacy[p.id].POOL_PROTOS;
+  const proto = protocols.find((x) => x.id === id);
   const data = proto?.niveaux[level] || proto?.niveaux[0];
   return {
     id,
@@ -355,8 +419,17 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
     reason = "";
   if (p.id === "emilie") {
     if (day.type === "swim") {
-      pool = sourcePoolProtocol(p, date, { planning });
-      reason = pool.reason;
+      if (isMetconFormat(day.cardio?.format)) {
+        pool = {
+          id: day.cardio.format,
+          level: metconLevel(p),
+          reason: day.cardio.detail,
+        };
+        reason = pool.reason;
+      } else {
+        pool = sourcePoolProtocol(p, date, { planning });
+        reason = pool.reason;
+      }
     } else {
       const c =
         day.cardio || sourceCardioDay(p, date, parseDate(date).getDay(), pos);
@@ -448,7 +521,7 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
     const pp = sourcePool(p, pool.id, pool.level);
     components.push({
       key: "pool",
-      type: ["aquahiit", "aquatabata"].includes(pool.id)
+      type: ["aquahiit", "aquatabata", "metcon-aquatabata"].includes(pool.id)
         ? "aqua"
         : pool.id === "recovery"
           ? "recovery"

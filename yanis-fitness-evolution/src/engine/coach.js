@@ -12,6 +12,7 @@ import {
   numberLabel,
   monday,
   parseDate,
+  dayDiff,
 } from "./utils.js";
 import {
   EXERCISES,
@@ -53,6 +54,7 @@ import {
   weeklyCoachState,
   applyCoachStateToSession,
 } from "./coach-state.js";
+import { isMetconFormat, metconLevel, metconMinutes } from "./source-schedule.js";
 
 // ————— Normalisation —————
 const TYPO_FIXES = [
@@ -983,6 +985,78 @@ export function followUpSchedule(dates, weeks = PHOTO_WEEKS, on = today()) {
     bientot: left > 0 && left <= FINDING_SOON_DAYS,
   };
 }
+function metconFormatFromItem(item) {
+  if (!item) return null;
+  const direct = [item.protocolId, item.format].find(isMetconFormat);
+  if (direct) return direct;
+  for (const component of item.components || []) {
+    const format = [component.protocolId, component.format].find(isMetconFormat);
+    if (format) return format;
+  }
+  const name = norm(item.name || item.title || "");
+  if (/metcon/.test(name) && /aqua tabata|aquatabata/.test(name))
+    return "metcon-aquatabata";
+  if (/metcon/.test(name) && /piscine|swim/.test(name))
+    return "metcon-piscine";
+  return null;
+}
+function isMetconRecord(item) {
+  return !!(
+    item &&
+    (item.type === "metcon" ||
+      metconFormatFromItem(item) ||
+      /\bmetcon\b/.test(norm(item.name || item.title || "")))
+  );
+}
+export function weeklyMetconSuggestion(p, on = today()) {
+  if (!p || p.id !== "emilie") return null;
+  const weekStart = monday(on),
+    weekEnd = addDays(weekStart, 6),
+    recovery = recoveryScore(p, on).score;
+  if (recovery != null && recovery < 45) return null;
+
+  const activities = [...(p.activities || []), ...(p.sessions || [])];
+  const planned = [...(p.plan?.sessions || []), ...(p.workout ? [p.workout] : [])];
+  const inWeek = (item) =>
+    item?.date >= weekStart && item?.date <= weekEnd && isMetconRecord(item);
+  if ([...activities, ...planned].some(inWeek)) return null;
+  if (
+    Object.entries(p.preferences?.cardioChoices || {}).some(
+      ([date, format]) =>
+        date >= weekStart && date <= weekEnd && isMetconFormat(format),
+    )
+  )
+    return null;
+
+  const history = [];
+  for (const item of [...activities, ...planned])
+    if (item?.date < weekStart && isMetconRecord(item))
+      history.push({ date: item.date, format: metconFormatFromItem(item) });
+  for (const [date, format] of Object.entries(
+    p.preferences?.cardioChoices || {},
+  ))
+    if (date < weekStart && isMetconFormat(format)) history.push({ date, format });
+  history.sort((a, b) => a.date.localeCompare(b.date));
+  const previousFormat = history.at(-1)?.format;
+  const weekIndex = Math.max(
+    0,
+    Math.floor(dayDiff(weekStart, monday(p.user?.startDate || weekStart)) / 7),
+  );
+  const format = previousFormat
+    ? previousFormat === "metcon-piscine"
+      ? "metcon-aquatabata"
+      : "metcon-piscine"
+    : weekIndex % 2 === 0
+      ? "metcon-piscine"
+      : "metcon-aquatabata";
+  return {
+    key: `weekly-metcon-${weekStart}`,
+    weekStart,
+    format,
+    level: metconLevel(p),
+    minutes: metconMinutes(format, metconLevel(p)),
+  };
+}
 export function coachFindings(p, on = today()) {
   if (!p) return [];
   const findings = [];
@@ -1094,6 +1168,15 @@ export function coachFindings(p, on = today()) {
         ? `Vos charges sont calculées sur un bilan du ${force.last}. Refaites le test pour qu’elles restent justes.`
         : "Vos charges sont estimées d’après votre journal seulement. Un bilan 1RM les rendrait fiables.",
       action: { type: "navigate", page: "force" },
+    });
+  const metcon = weeklyMetconSuggestion(p, on);
+  if (metcon)
+    findings.push({
+      key: metcon.key,
+      severity: "low",
+      title: "METCON de la semaine",
+      detail: `Une proposition : ${metcon.format === "metcon-piscine" ? "METCON Piscine" : "METCON Aqua Tabata"}, ${metcon.minutes} min au niveau ${metcon.level + 1}. Rien n’est choisi à votre place.`,
+      action: { type: "navigate", page: "cardio" },
     });
   const order = { high: 0, medium: 1, low: 2 };
   return findings.sort((a, b) => order[a.severity] - order[b.severity]);

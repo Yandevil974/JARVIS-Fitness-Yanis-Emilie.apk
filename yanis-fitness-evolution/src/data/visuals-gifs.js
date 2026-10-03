@@ -225,6 +225,7 @@ export const STRETCH_KEY_BY_NAME = {
 // Résolveur « nom d'étape -> GIF humain » : garantit qu'un chrono affiche
 // toujours un humain animé, même si l'étape n'embarque pas d'image.
 const STEP_KEYWORDS = [
+  [/r[ée]cup courte/i, "pool-recup-tabata"],
   [/nage statique/i, "pool-nage-statique"],
   [/nage douce|nage en longueurs|nage facile|nager doucement/i, "pool-nage-douce"],
   [/marche aquatique/i, "pool-marche-aquatique"],

@@ -15,11 +15,21 @@ import {
   Empty,
   Metric,
 } from "../components/ui.jsx";
-import { POOL_PROTOCOLS, legacy } from "../data/library.js";
+import {
+  SOURCE_POOL_PROTOCOLS,
+  METCON_PROTOCOLS,
+  legacy,
+} from "../data/library.js";
 import { intervalSteps } from "../engine/timer.js";
 import { recoveryScore, stats } from "../engine/fitness.js";
 import { heartZones } from "../engine/nutrition.js";
-import { today, addDays, dateLabel, numberLabel } from "../engine/utils.js";
+import {
+  sourceCardioDay,
+  sourceCardioSlots,
+  metconLevel as getMetconLevel,
+  isMetconFormat,
+} from "../engine/source-schedule.js";
+import { today, addDays, dateLabel, numberLabel, parseDate } from "../engine/utils.js";
 const MODALITIES = [
   ["running", "Footprints", "Course"],
   ["bike", "Bike", "Vélo"],
@@ -28,6 +38,13 @@ const MODALITIES = [
   ["rowing", "Sailboat", "Rameur"],
   ["free", "HeartPulse", "Cardio libre"],
 ];
+const CARDIO_FORMAT_LABELS = {
+  piscine: "Piscine source",
+  elliptique: "Elliptique",
+  repos: "Repos / marche active",
+  "metcon-piscine": "METCON Piscine",
+  "metcon-aquatabata": "METCON Aqua Tabata",
+};
 export default function Cardio() {
   const { p, tab, setTab, setModal } = useApp();
   const value =
@@ -336,6 +353,20 @@ function Swim() {
     [pace, setPace] = useState(35),
     [style, setStyle] = useState("Crawl"),
     [level, setLevel] = useState(0);
+  const metconLevelValue = getMetconLevel(p),
+    weekSlots = p.id === "emilie" ? sourceCardioSlots(p, today()) : [];
+  function setMetconLevel(value) {
+    updateProfile((q) => {
+      q.preferences.metconLevel = value;
+    });
+  }
+  function setCardioFormat(date, format) {
+    updateProfile((q) => {
+      q.preferences.cardioChoices = q.preferences.cardioChoices || {};
+      if (format === "auto") delete q.preferences.cardioChoices[date];
+      else q.preferences.cardioChoices[date] = format;
+    });
+  }
   function start() {
     if (
       !rounds ||
@@ -531,7 +562,7 @@ function Swim() {
         </Select>
       </SectionHeading>
       <div className="pool-protocols">
-        {POOL_PROTOCOLS.map((pr, i) => {
+        {SOURCE_POOL_PROTOCOLS.map((pr, i) => {
           const lvl = pr.niveaux[level];
           const minutes = Math.round(
             lvl.steps.reduce((s, x) => s + x[1], 0) / 60,
@@ -576,6 +607,146 @@ function Swim() {
           );
         })}
       </div>
+      {p.id === "emilie" && (
+        <>
+          <SectionHeading
+            title="METCON Émilie"
+            subtitle="Deux protocoles ajoutés aux six protocoles source conservés."
+          >
+            <Select
+              value={metconLevelValue}
+              onChange={(e) => setMetconLevel(Number(e.target.value))}
+              aria-label="Niveau METCON d’Émilie"
+            >
+              <option value="0">Niveau 1 · progressif</option>
+              <option value="1">Niveau 2 · intermédiaire</option>
+              <option value="2">Niveau 3 · avancé</option>
+            </Select>
+          </SectionHeading>
+          <div className="pool-protocols metcon-protocols">
+            {METCON_PROTOCOLS.map((pr, i) => {
+              const lvl = pr.niveaux[metconLevelValue];
+              const minutes = Math.round(
+                lvl.steps.reduce((s, step) => s + step[1], 0) / 60,
+              );
+              return (
+                <Panel className="protocol-card metcon-card" key={pr.id}>
+                  <div className="protocol-card-top">
+                    <span className={`protocol-icon pool-${i + 6}`}>
+                      <Icon name={i === 0 ? "Waves" : "Flame"} size={25} />
+                    </span>
+                    <Badge color={i === 0 ? "blue" : "amber"}>
+                      {minutes} MIN
+                    </Badge>
+                  </div>
+                  <h3>{pr.nom}</h3>
+                  <p>{pr.desc}</p>
+                  <span className="small-subtitle">
+                    {lvl.n} · {lvl.steps.length} étapes
+                  </span>
+                  <div>
+                    <Button
+                      variant="secondary small"
+                      icon="List"
+                      onClick={() =>
+                        setModal({
+                          type: "protocol",
+                          protocolId: pr.id,
+                          level: metconLevelValue,
+                        })
+                      }
+                    >
+                      Voir le protocole
+                    </Button>
+                    <IconButton
+                      icon="Play"
+                      label={`Lancer ${pr.nom}`}
+                      onClick={() =>
+                        setModal({
+                          type: "protocol",
+                          protocolId: pr.id,
+                          level: metconLevelValue,
+                        })
+                      }
+                    />
+                  </div>
+                </Panel>
+              );
+            })}
+          </div>
+          <Panel className="metcon-week-panel">
+            <SectionHeading
+              title="Le METCON dans votre semaine"
+              subtitle="Choisissez un format sur les jours cardio du programme source. Auto conserve la prescription d’origine."
+            />
+            <div className="metcon-week-grid">
+              {weekSlots.map(({ date, day, eligible }) => {
+                const saved = p.preferences.cardioChoices?.[date];
+                const choice =
+                  saved &&
+                  [
+                    "elliptique",
+                    "piscine",
+                    "repos",
+                    "metcon-piscine",
+                    "metcon-aquatabata",
+                  ].includes(saved)
+                    ? saved
+                    : "auto";
+                const effective = sourceCardioDay(
+                  p,
+                  date,
+                  parseDate(date).getDay(),
+                );
+                const dayName = dateLabel(date, { weekday: "long" });
+                const summary =
+                  choice === "auto"
+                    ? `Auto · ${day.name}`
+                    : `${CARDIO_FORMAT_LABELS[choice]}${
+                        isMetconFormat(choice) ? ` · ${effective.minutes} min` : ""
+                      }`;
+                return (
+                  <div
+                    className={`metcon-week-day ${eligible ? "is-cardio" : ""}`}
+                    key={date}
+                  >
+                    <div className="metcon-week-date">
+                      <strong>{dayName}</strong>
+                      <small>{dateLabel(date)}</small>
+                    </div>
+                    {eligible ? (
+                      <div className="metcon-week-choice">
+                        <Select
+                          value={choice}
+                          onChange={(e) =>
+                            setCardioFormat(date, e.target.value)
+                          }
+                          aria-label={`Format cardio du ${dayName} ${dateLabel(date)}`}
+                        >
+                          <option value="auto">Auto · règle source</option>
+                          <option value="elliptique">Elliptique</option>
+                          <option value="piscine">Piscine source</option>
+                          <option value="repos">Repos / marche active</option>
+                          <option value="metcon-piscine">METCON Piscine</option>
+                          <option value="metcon-aquatabata">
+                            METCON Aqua Tabata
+                          </option>
+                        </Select>
+                        <small>{summary}</small>
+                      </div>
+                    ) : (
+                      <div className="metcon-week-original">
+                        <span>Séance d’origine</span>
+                        <strong>{day.name}</strong>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </Panel>
+        </>
+      )}
     </>
   );
 }

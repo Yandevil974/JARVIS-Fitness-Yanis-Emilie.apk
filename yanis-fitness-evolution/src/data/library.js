@@ -8,6 +8,7 @@ import {
 } from "./visuals.js";
 import { GIF_OVERRIDES, POOL_IMG_OVERRIDES } from "./gif-overrides.js";
 import { stepGif, STRETCH_KEY_BY_NAME } from "./visuals-gifs.js";
+import { METCON_PROTOCOLS } from "./metcon-emilie.js";
 export { legacy };
 export { STRETCH_IMAGES, POOL_STEP_IMAGES, CARDIO_STEPS, WARMUP_IMAGES };
 export const MUSCLES = {
@@ -422,12 +423,16 @@ export const RECOVERY_EXERCISES = [...STRETCH_MAP.values()];
 // Visuel de l'étirement selon le profil actif ('elite' = homme, 'emilie' = femme).
 export const stretchImage = (ex, profilId) =>
   (profilId === "emilie" ? ex.img_femme : ex.img_homme) || ex.img || null;
-export const POOL_PROTOCOLS = legacy.emilie.POOL_PROTOS.map((p) => ({
+// Les six protocoles source gardent leur ordre, leurs étapes et leur texte
+// d'affichage existant. Les deux METCON d'Émilie sont ajoutés sans remplacement.
+export const SOURCE_POOL_PROTOCOLS = legacy.emilie.POOL_PROTOS.map((p) => ({
   ...p,
   desc: p.desc
     .replace(/zéro risque articulaire/gi, "faible impact articulaire")
     .replace(/zéro impact/gi, "faible impact"),
 }));
+export { METCON_PROTOCOLS };
+export const POOL_PROTOCOLS = [...SOURCE_POOL_PROTOCOLS, ...METCON_PROTOCOLS];
 const POOL_GUIDE_GIF = {
   "Ciseaux au bord": stepGif("guide-ciseaux-au-bord", "emilie"),
   "Aqua-jogging sur place": stepGif("guide-aqua-jogging", "emilie"),
