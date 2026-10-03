@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément | Valeur |
 | --- | --- |
 | appId / namespace | `app.yanis.fitness.evolution` |
-| versionName / versionCode | `1.5.1` / `151` |
+| versionName / versionCode | `1.7.0` / `170` |
 | Clé de release | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`) |
 | Stockage navigateur | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
@@ -18,8 +18,8 @@ empreinte de signature) :
 ## Chaîne complète
 
 ```bash
-npm run build          # vite → release/
 npm run build:portable # runtime.js + runtime.css + media-index.json pour l’export « HTML autonome »
+npm run build          # vite → release/
 npx cap sync android   # copie release/ dans android/app/src/main/assets/public
 cd android && ./gradlew assembleRelease
 # APK : android/app/build/outputs/apk/release/app-release.apk
@@ -34,9 +34,10 @@ les changer :
 
 ## Vérifications locales possibles
 
-- `npm test` — 96 tests unitaires (94 verts) (moteur, stockage, import DOC réel, minuteur/voix).
-- `npx playwright test` — parcours complets une fois les navigateurs installés
-  (`npx playwright install chromium`).
+- `npm test` — 128 tests au total : 126 réussis, 0 échec, 2 ignorés.
+- Audits : 209 GIF musculation, 58 étirements, 1454/1454 étapes piscine/aqua,
+  50/50 HIIT, 912/912 METCON, 0 média manquant ; 0 étape statique.
+- `npx playwright test` — 17 réussis, 0 échec, 11 ignorés (Chromium installé).
 
 ## Cohabitation avec l’ancienne application
 

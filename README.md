@@ -1,6 +1,16 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — correctifs visuels du 03/10/2026 (1.6.1)
+## Version à installer — METCON Émilie (1.7.0)
+
+**[Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk](downloads/Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk)** — APK signé, copie miroir de la release GitHub.
+
+**Chantier 2 validé** : METCON Piscine et METCON Aqua Tabata sont ajoutés au profil Émilie sans modifier les six protocoles source. Le niveau et le choix cardio sur les sept jours du calendrier source sont mémorisés. Sous 45/100, Aqua Recovery est recommandé sans verrouillage dur ; le coach propose au plus un format par semaine.
+
+Durées totales : Piscine **1080 / 1320 / 1620 s** ; Aqua Tabata **1185 / 1475 / 1795 s**.
+
+Tests : **128 tests, 126 réussis, 0 échec, 2 ignorés**. E2E : **17 réussis, 0 échec, 11 ignorés**.
+
+## Version précédente — correctifs visuels du 03/10/2026 (1.6.1)
 
 **[Yanis-Fitness-Evolution-1.6.1-coachs.apk](downloads/Yanis-Fitness-Evolution-1.6.1-coachs.apk)** — APK signé, keystore du dépôt.
 
@@ -98,13 +108,15 @@ animé. Contrôles : 209/209 exercices, 420 étapes de protocoles, 0 visuel intr
 ## Ce qui n'est pas dans ces versions
 
 - Aucun APK d'origine modifié, prescriptions, gestes et prises intouchés.
-- Les 4 chantiers demandés le 02/10/2026 (coachs, metcon piscine/aqua pour Émilie,
-  diversification des séances piscine, IA conversationnelle) sont à mener dans un
-  nouveau chat — voir `PASSATION-NOUVEAU-CHAT.md`.
+- Le chantier 2 (METCON Piscine et Aqua Tabata pour Émilie) est livré en 1.7.0.
+  La diversification des séances piscine et l'IA conversationnelle restent à venir ;
+  l'IA demeure le dernier chantier. Voir `PASSATION-NOUVEAU-CHAT.md`.
 
 ## Vérifications
 
-- 96 tests unitaires : **94 passent, 0 échec, 2 ignorés**.
-- 209/209 exercices avec visuel présent dans le magasin média, 0 fichier manquant, 0
-  vignette manquante.
+- `npm test` : **128 tests, 126 réussis, 0 échec, 2 ignorés** ; E2E :
+  **17 réussis, 0 échec, 11 ignorés**.
+- Audit GIF : 209/209 exercices, 58 positions d'étirement, 1454/1454 étapes
+  piscine/aqua, 50/50 HIIT, 912/912 METCON, 0 média manquant ; audit statique :
+  0 étape statique.
 - APK : archive saine (`unzip -t`), signature v2 avec le certificat du keystore du dépôt.

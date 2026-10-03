@@ -1,6 +1,6 @@
 name: Build Yanis Fitness Evolution APK (release)
 
-# Construit l'APK signé 1.5.1 (appId app.yanis.fitness.evolution, keystore du
+# Construit l'APK signé 1.7.0 (appId app.yanis.fitness.evolution, keystore du
 # dépôt) et l'attache au GitHub Release correspondant au tag poussé.
 on:
   push:
@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.5.1-evolution"
+        default: "v1.7.0-metcon-emilie"
 
 permissions:
   contents: write
@@ -50,8 +50,8 @@ jobs:
 
       - name: Build web (vite) + portable runtime + cap sync
         run: |
-          npm run build
           npm run build:portable
+          npm run build
           npx cap sync android
 
       - name: Assemble signed release APK
@@ -61,7 +61,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.5.1'" 2>/dev/null || echo 1.5.1)
+          VERSION=$(node -p "require('../package.json').version || '1.7.0'" 2>/dev/null || echo 1.7.0)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
 
@@ -73,20 +73,21 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.6.1 (versionCode 161)
-            APK signé avec la clé propre à l'application (`app.yanis.fitness.evolution`).
+            ## Yanis Fitness Evolution 1.7.0 — METCON Émilie
+            APK signé pour `app.yanis.fitness.evolution` (versionCode 170).
 
-            ### Correctifs visuels du 03/10/2026
-            1. « Ma bibliothèque » : les 74 illustrations anatomiques restantes sont remplacées par des GIF humains animés du corpus livré (même muscle + même type de mouvement).
-            2. Piscine / aqua : une étape « Repos » montre désormais une récupération DANS l'eau (plus l'homme aux abdominaux au sol de la salle).
-            3. Crawl « Nage douce » : la paire de GIF dont la deuxième image redressait la personne à la verticale (« personne à l'envers ») est remplacée par une paire du corpus dont les deux images restent horizontales (femme a9b2430d317e3bba / homme f5754e3553d3922c).
+            ### Chantier 2 — METCON piscine et Aqua Tabata
+            - Ajout de METCON Piscine et METCON Aqua Tabata au profil Émilie, sans retirer ni modifier les six protocoles source.
+            - Les niveaux et durées sont ceux validés pour le chantier 2. Les choix cardio de la semaine source et le niveau METCON sont mémorisés.
+            - Sous 45/100 de récupération, Aqua Recovery est recommandé sans verrouillage dur des deux METCON.
+            - Le coach peut proposer au plus un format METCON par semaine.
 
-            **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Vos deux jeux de données restent indépendants (clés de stockage distinctes ; l'ancienne clé n'est lue qu'une fois pour l'import, jamais modifiée).
+            **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Les deux jeux de données restent indépendants.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.6.1.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.7.0.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.6.1.apk.sha256`.
+            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.7.0.apk.sha256`.
 
             ### Importer vos données
             Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.
