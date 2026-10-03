@@ -178,3 +178,40 @@ L'utilisateur exige ce lien **cliquable dans le chat** (format Markdown
 Émilie, en plus de ce qu'elle a déjà), puis chantier 3 (enrichir/durcir piscine et aqua
 tabata), puis chantier 4 (IA conversationnelle, en dernier). Méthode inchangée :
 inventaire → propositions → validation → modification.
+
+---
+
+## 3. LIVRAISON 1.6.1 — correctifs visuels du 03/10/2026 (faits, vérifiés)
+
+Trois défauts signalés sur v1.6.0-coachs, corrigés **sans toucher aucun chiffre ni
+aucun GIF validé** (commit `617b8e4`, tag `v1.6.1-coachs`) :
+1. **« Ma bibliothèque »** : les 74 dernières illustrations anatomiques remplacées par
+   des GIF humains du corpus livré (même muscle + même pattern ; bloc
+   « Rattrapage 03/10/2026 » dans `src/data/gif-overrides.js`, générateur
+   `scripts/gen-remap-biblio.mjs`). Contrôle : 0 visuel anatomique restant (test
+   verrou), planches de contrôle à l'œil OK.
+2. **« Repos » piscine/aqua** : `stepGifByPattern(pattern, profil, pool)` — en contexte
+   bassin le repli montre une récupération DANS l'eau (`pool-recup-tabata`), plus
+   l'homme aux abdominaux au sol de la salle (`54a3ca1547a3a613` reste réservé au
+   contexte hors bassin, tel que validé en 1.6.0).
+3. **Crawl « Nage douce »** : l'ancienne paire (`3d44d275ca25d146` / `3d2c2e5b9e90f3b7`)
+   alternait une image horizontale et une image où la personne se redresse à la
+   verticale (« personne à l'envers ») → paire du corpus à deux images horizontales
+   (femme `a9b2430d317e3bba`, homme `f5754e3553d3922c`), vérifiée à l'œil.
+Tests : **119, 117 passent, 0 échec** (3 verrous ajoutés dans `gif-coverage.test.js`).
+
+**Livraison** : build android `run 37098280556` SUCCESS ; release `v1.6.1-coachs`
+(asset `yanis-fitness-evolution-1.6.1.apk`, 87 785 244 o). Miroir dans le dépôt :
+`downloads/Yanis-Fitness-Evolution-1.6.1-coachs.apk` (defaults de `mirror-apk.yml`
+passés en 1.6.1 ; le push du fichier déclenche le miroir). Lien cliquable à donner :
+`https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/raw/arena/01a0fdbd-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.6.1-coachs.apk`
+
+**Pièges sandbox re-vécus le 03/10** : réinitialisation du disque (HEAD revenu à
+`ddd1fb9`, node_modules effacés) → `git fetch origin arena/01a0fdbd-…` +
+`git reset --hard FETCH_HEAD`, `npm ci`, `pip install --break-system-packages pillow`.
+Le CDN des assets de release (`*.githubusercontent.com`) est **inaccessible depuis le
+sandbox** (curl/gh EOF) : ne JAMAIS tenter de télécharger l'APK ici — c'est le workflow
+`mirror-apk.yml` (côté GitHub) qui copie l'APK dans `downloads/`, puis `git pull`.
+
+**État** : 1.6.1 livré. Prochaine action : chantier 2 (METCON piscine + METCON aqua
+tabata pour Émilie), puis chantier 3, puis chantier 4.
