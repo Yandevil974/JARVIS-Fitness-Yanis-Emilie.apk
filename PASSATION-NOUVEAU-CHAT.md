@@ -215,3 +215,21 @@ sandbox** (curl/gh EOF) : ne JAMAIS tenter de télécharger l'APK ici — c'est 
 
 **État** : 1.6.1 livré. Prochaine action : chantier 2 (METCON piscine + METCON aqua
 tabata pour Émilie), puis chantier 3, puis chantier 4.
+
+**Chantier 2 — proposition soumise, EN ATTENTE DE VALIDATION utilisateur** (question
+posée deux fois, non tranchée) :
+- Deux nouveaux protocoles pour Émilie, 100 % vocabulaire de mouvements existants :
+  1. **METCON piscine** : 3 niveaux ~18/22/27 min, blocs nage courte alternés avec
+     renfo au bord à repos courts (fractionné 45 s → pompes au bord 30 s → sprint
+     20 s → gainage vertical 30 s…), échauffement/retour au calme dans l'eau.
+  2. **METCON aqua tabata** : 3 niveaux ~20/25/30 min, tabata 20/10 dont les
+     mouvements CHANGENT à chaque round (l'aqua tabata actuel répète le même round).
+- Intégration sans rien retirer : section « METCON Émilie » sur la page Piscine
+  (ProtocolModal existant) + extension du choix par jour cardio (`cardioChoices` :
+  « metcon-piscine », « metcon-aquatabata ») + garde récupération < 45 → METCON
+  bloqué. Rien n'est imposé par défaut (prescription d'origine intacte).
+- Plan technique : nouveau fichier `src/data/metcon-emilie.js` (entrées au format
+  `POOL_PROTOS`), ajout dans `POOL_PROTOCOLS` de `library.js`, `sourcePool` lit la
+  liste combinée, tests `gif-coverage` étendus aux nouvelles étapes.
+- Variante possible si l'utilisateur le demande : proposition automatique du coach
+  1×/sem selon récupération, remplaçable par elle.
