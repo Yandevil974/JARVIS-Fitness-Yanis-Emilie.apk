@@ -10,6 +10,7 @@ name: APK sur GitHub Pages (lien de telechargement direct)
 on:
   push:
     paths:
+      - ".github/workflows/pages-apk.yml"
       - "downloads/**"
   workflow_dispatch:
 
