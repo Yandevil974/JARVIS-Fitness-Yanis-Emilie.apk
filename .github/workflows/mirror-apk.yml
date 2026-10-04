@@ -16,11 +16,11 @@ on:
       tag:
         description: "Tag de la release a copier"
         required: true
-        default: "v1.7.1-piscine-emilie"
+        default: "v1.7.2-pyramide-circuit-aqua"
       nom:
         description: "Nom du fichier dans downloads/"
         required: true
-        default: "Yanis-Fitness-Evolution-1.7.1-piscine-emilie.apk"
+        default: "Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk"
 
 permissions:
   contents: write
@@ -30,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      TAG: ${{ github.event.inputs.tag || 'v1.7.1-piscine-emilie' }}
-      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.7.1-piscine-emilie.apk' }}
+      TAG: ${{ github.event.inputs.tag || 'v1.7.2-pyramide-circuit-aqua' }}
+      NOM: ${{ github.event.inputs.nom || 'Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
