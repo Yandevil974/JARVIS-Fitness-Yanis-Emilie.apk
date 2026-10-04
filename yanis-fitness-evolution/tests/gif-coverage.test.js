@@ -19,9 +19,8 @@ import { GIF_OVERRIDES } from "../src/data/gif-overrides.js";
 import { stepGuide } from "../src/data/visuals.js";
 import {
   stepGif,
-  stepGifFromName,
-  stepGifByPattern,
-  STRETCH_KEY_BY_NAME,
+  isPoolTimerStep,
+  resolveTimerStepGif,
   movementGif,
 } from "../src/data/visuals-gifs.js";
 import { intervalSteps } from "../src/engine/timer.js";
@@ -35,20 +34,19 @@ const publicDir = fileURLToPath(new URL("../public", import.meta.url));
 const fileOk = (src) => !!src && existsSync(publicDir + src);
 
 // Même chaîne de résolution que TimerModal (ProtocolModals.jsx).
-function resolutionChrono(step, profil) {
-  const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
-  const pool =
-    step.segment === "pool" ||
-    step.metaType === "swim" ||
-    step.metaType === "aqua";
-  return (
-    step.img ||
-    guide?.img ||
-    stepGif(STRETCH_KEY_BY_NAME[step.name], profil) ||
-    stepGifFromName(step.name, profil) ||
-    EXERCISES.find((e) => e.name === step.name)?.gif ||
-    stepGifByPattern(step.pattern, profil, pool)
+function resolutionChrono(step, profil, meta = {}) {
+  if (step.metaType && !meta.type) meta = { ...meta, type: step.metaType };
+  const pool = isPoolTimerStep(step, meta);
+  const guide = stepGuide(
+    step.name,
+    pool ? "pool" : step.segment,
+    POOL_GUIDES,
   );
+  return resolveTimerStepGif(step, profil, {
+    pool,
+    guideImg: guide?.img,
+    exerciseGif: EXERCISES.find((e) => e.name === step.name)?.gif,
+  });
 }
 
 test("musculation : chaque exercice a une démonstration humaine (GIF existant)", () => {
@@ -119,6 +117,49 @@ test("03/10 : une pause en piscine montre un humain DANS l'eau (jamais le sol de
     resolutionChrono({ name: "Repos", seconds: 30, pattern: "breathe" }, "elite"),
     ABS_SALLE,
   );
+});
+
+test("Piscine après musculation : une récupération active reste une nage pour Émilie", () => {
+  const name =
+      "Option idéale : 20 min de nage souple ou d'aquagym. Zéro impact, drainage des jambes, récupération active.",
+    components = [
+      {
+        key: "post",
+        format: "pool",
+        customSteps: [
+          { name, seconds: 1200, kind: "work", pattern: "swim" },
+        ],
+      },
+    ],
+    step = sourceExtraSteps({ id: "emilie" }, { components })[0],
+    meta = { type: "source-combo", components };
+
+  assert.equal(step.segment, "post");
+  assert.equal(isPoolTimerStep(step, meta), true);
+  assert.equal(stepGuide(step.name, "pool", POOL_GUIDES), null);
+  const img = resolutionChrono(step, "emilie", meta);
+  assert.equal(img, stepGif("pool-nage-douce", "emilie"));
+  assert.notEqual(img, stepGif("cardio-elliptique-recup", "emilie"));
+  assert.ok(fileOk(img), `fichier manquant : ${img}`);
+});
+
+test("les étapes de récupération elliptique gardent leur visuel de vélo", () => {
+  const step = sourceCardioSteps("inter", 20).find(
+      (candidate) => candidate.name === "Récupération active",
+    ),
+    meta = {
+      type: "source-combo",
+      components: [{ key: "post", format: "elliptical" }],
+    },
+    guide = stepGuide(step.name, "cardio", POOL_GUIDES),
+    img = resolutionChrono(step, "elite", meta);
+
+  assert.equal(isPoolTimerStep(step, meta), false);
+  assert.ok(guide?.img, "étape elliptique sans guide cardio");
+  assert.equal(img, guide.img);
+  assert.match(img, /\/media\/7d74994e8d8777be\.gif$/);
+  assert.notEqual(img, stepGif("pool-nage-douce", "elite"));
+  assert.ok(fileOk(img), `fichier manquant : ${img}`);
 });
 
 test("03/10 : le crawl « Nage douce » n'utilise plus les GIF à personne retournée", () => {

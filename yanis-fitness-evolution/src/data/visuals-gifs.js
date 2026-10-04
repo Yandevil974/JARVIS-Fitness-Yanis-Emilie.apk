@@ -349,6 +349,50 @@ export function stepGifByPattern(pattern, profil, pool = false) {
   if (pool) {
     if (pattern === "breathe") return stepGif("pool-recup-tabata", profil);
     if (pattern === "stretch") return stepGif("pool-etirements-bord", profil);
+    if (pattern === "walk") return stepGif("pool-marche-aquatique", profil);
+    if (["run", "aqua"].includes(pattern))
+      return stepGif("guide-aqua-jogging", profil);
+    // Dans un chrono piscine, un motif inconnu ne doit jamais retomber sur
+    // l'elliptique, la marche au sol ou la salle.
+    return stepGif("pool-nage-douce", profil);
   }
   return stepGif(PATTERN_FALLBACK[pattern] || "warmup-mobilite", profil);
+}
+
+// Un bloc post-musculation peut conserver le segment « post » tout en étant
+// une séance piscine. Le type et les composants du chrono rétablissent alors
+// le bon domaine visuel sans toucher aux médias livrés.
+export function isPoolTimerStep(step, meta) {
+  if (
+    step?.segment === "pool" ||
+    ["swim", "aqua"].includes(step?.pattern) ||
+    ["swim", "aqua"].includes(meta?.type)
+  )
+    return true;
+  return (
+    Array.isArray(meta?.components) &&
+    meta.components.some(
+      (component) =>
+        component?.format === "pool" && component.key === step?.segment,
+    )
+  );
+}
+
+// Priorité au visuel du bon domaine avant les mots génériques du texte : une
+// prescription de nage peut dire « récupération active », sans devenir un
+// exercice elliptique. Les étapes hors bassin gardent leur résolution actuelle.
+export function resolveTimerStepGif(
+  step,
+  profil,
+  { pool = false, guideImg = null, exerciseGif = null } = {},
+) {
+  return (
+    step.img ||
+    guideImg ||
+    (pool ? stepGifByPattern(step.pattern, profil, true) : null) ||
+    stepGif(STRETCH_KEY_BY_NAME[step.name], profil) ||
+    stepGifFromName(step.name, profil) ||
+    exerciseGif ||
+    stepGifByPattern(step.pattern, profil, pool)
+  );
 }

@@ -21,10 +21,8 @@ import {
 } from "../../data/library.js";
 import { stepGuide } from "../../data/visuals.js";
 import {
-  stepGifFromName,
-  stepGifByPattern,
-  STRETCH_KEY_BY_NAME,
-  stepGif,
+  isPoolTimerStep,
+  resolveTimerStepGif,
 } from "../../data/visuals-gifs.js";
 import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
@@ -45,22 +43,21 @@ export function TimerModal() {
         t.remaining) /
         total) *
       100;
-  const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
-  // Contexte bassin : le repli par motif doit montrer un humain DANS l'eau
-  // pendant une séance piscine/aqua (pas un exercice au sol de salle).
-  const isPool =
-    step.segment === "pool" ||
-    t.meta?.type === "swim" ||
-    t.meta?.type === "aqua";
-  // Un chrono affiche toujours un humain animé : image de l'étape, sinon guide
-  // piscine, sinon résolution par nom d'étape (étirement, cardio, aqua, tabata).
-  const stepImage =
-    step.img ||
-    guide?.img ||
-    stepGif(STRETCH_KEY_BY_NAME[step.name], p.id) ||
-    stepGifFromName(step.name, p.id) ||
-    findExercise(step.name)?.gif ||
-    stepGifByPattern(step.pattern, p.id, isPool);
+  // Le segment « post » est aussi utilisé par le bloc piscine après musculation.
+  // Le type/composant du chrono permet de rétablir son vrai domaine visuel.
+  const isPool = isPoolTimerStep(step, t.meta);
+  const guide = stepGuide(
+    step.name,
+    isPool ? "pool" : step.segment,
+    POOL_GUIDES,
+  );
+  // Résout d'abord le GIF humain du domaine piscine avant d'analyser le texte :
+  // « récupération active » dans une prescription de nage ne signifie pas vélo.
+  const stepImage = resolveTimerStepGif(step, p.id, {
+    pool: isPool,
+    guideImg: guide?.img,
+    exerciseGif: findExercise(step.name)?.gif,
+  });
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {

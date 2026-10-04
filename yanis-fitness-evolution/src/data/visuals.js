@@ -113,10 +113,8 @@ export const CARDIO_STEPS = [
     ],
   },
 ];
-// Résolution contextuelle : une étape de piscine cherche d'abord un guide
-// piscine, une étape cardio d'abord un guide cardio ; le repli croisé n'est
-// accepté que si AUCUN guide du domaine ne correspond (jamais un vélo pendant
-// une nage, jamais une nage pendant un elliptique lorsque l'image existe).
+// Un segment « pool » ou « cardio » reste strictement dans son domaine.
+// Sans segment spécialisé, on conserve le repli croisé historique.
 export function stepGuide(name, segment, poolGuides = []) {
   // Normalisation IDENTIQUE des deux côtés (nom d'étape ET clés des guides) :
   // l'original 1.5.0 normalisait aussi les deux (Ge) — un tirait la clé
@@ -142,7 +140,12 @@ export function stepGuide(name, segment, poolGuides = []) {
       }
     return hit;
   };
-  const poolFirst = !segment || segment === "pool";
+  // Les segments explicites sont des frontières de domaine : un texte de
+  // piscine qui mentionne « récupération active » ne doit pas tomber sur le
+  // guide elliptique, et inversement.
+  if (segment === "pool") return best(poolGuides);
+  if (segment === "cardio") return best(CARDIO_STEPS);
+  const poolFirst = !segment;
   const a = poolFirst ? [poolGuides, CARDIO_STEPS] : [CARDIO_STEPS, poolGuides];
   return best(a[0]) || best(a[1]);
 }

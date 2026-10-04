@@ -12,6 +12,7 @@ import {
 import { today, dateLabel, uid, num, assetSrc } from "../../engine/utils.js";
 import { POOL_GUIDES } from "../../data/library.js";
 import { stepGuide } from "../../data/visuals.js";
+import { stepGifByPattern } from "../../data/visuals-gifs.js";
 import {
   sourceDay,
   sourceExtra,
@@ -235,12 +236,23 @@ export function SourceExtraModal({ event }) {
                     (s) => s.segment === (c.key === "post" ? "post" : c.key),
                   )
                   .map((s, j) => {
-                    // Visuel humain de SON domaine (guide piscine ou cardio
-                    // elliptique), identique à l'affichage 1.5.0.
-                    const guide = stepGuide(s.name, s.segment, POOL_GUIDES);
+                    // Le format de ce bloc prime sur les mots de la prescription :
+                    // « récupération active » en nage ne doit pas sélectionner le vélo.
+                    const isPool = c.format === "pool";
+                    const guide = stepGuide(
+                      s.name,
+                      isPool ? "pool" : s.segment,
+                      POOL_GUIDES,
+                    );
+                    const image =
+                      guide?.img ||
+                      (isPool
+                        ? stepGifByPattern(s.pattern, p.id, true)
+                        : null);
+                    const imageTitle = guide?.t || s.name;
                     return (
                       <li key={j}>
-                        {guide?.img && (
+                        {image && (
                           <button
                             type="button"
                             className="pool-step-thumb"
@@ -248,16 +260,16 @@ export function SourceExtraModal({ event }) {
                             onClick={() =>
                               setModal({
                                 type: "image",
-                                src: guide.img,
-                                title: guide.t,
+                                src: image,
+                                title: imageTitle,
                               })
                             }
                           >
                             <img
                               className="pool-step-img"
                               loading="lazy"
-                              src={assetSrc(guide.img)}
-                              alt={guide.t}
+                              src={assetSrc(image)}
+                              alt={imageTitle}
                             />
                             <Icon name="Maximize2" size={13} />
                           </button>
