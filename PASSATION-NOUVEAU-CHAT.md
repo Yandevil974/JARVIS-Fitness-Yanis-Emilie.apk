@@ -11,7 +11,12 @@ Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`. Branche fixe :
 - Les six protocoles source et les deux METCON validés sont conservés ; les mouvements et GIF existants sont réutilisés, sans modification des médias.
 - Vérifications : `npm test` — 136 tests, 134 réussis, 0 échec, 2 ignorés ; build web et build Android signé réussis ; empreinte du miroir vérifiée.
 - E2E : dernier passage complet connu en 1.7.0 — 17 réussis, 0 échec, 11 ignorés. Le nouveau scénario Playwright piscine/aqua n'a pas pu être lancé ici (Chromium absent, téléchargement indisponible).
-- **Suite** : le chantier 4 — IA conversationnelle — reste le dernier chantier ; ne pas l'entamer avant inventaire, proposition puis validation utilisateur.
+- **Chantier 4 en cours — inventaire uniquement** : `pages/Jarvis.jsx` affiche le chat ; `engine/coach.js` est un interpréteur français local à règles/intents, appelé synchroniquement par `AppContext.sendCoach`. Pas de modèle, SDK d’IA, service HTTP d’IA, serveur, fournisseur ni clé API dans le dépôt.
+- Messages par profil, limités à 100, persistés avec l’état local (IndexedDB/localStorage et sauvegarde native Android). Dictée/lecture vocale existantes via services du navigateur/Android selon réglages ; elles sont distinctes d’un LLM.
+- Calculs, recommandations et actions passent actuellement par les moteurs locaux et des types d’action connus ; l’arrêt douleur est automatique, les autres changements passent normalement par une confirmation utilisateur. **Garde-fou recommandé pour la proposition** : aucun modèle ne modifie directement l’état ni ne fabrique des charges/mesures.
+- **Proposition à valider, pas implémentée** : architecture hybride avec relais serveur pour la clé fournisseur, contexte sportif strictement minimal et opt-in, moteur local comme repli, actions proposées sous schéma fermé puis confirmation dans l’app. Fournisseur/hébergement/coût, données autorisées et niveau d’action restent à décider.
+- **Point annexe repéré** : `src/app-identity.js` affiche encore `V 1.5.1` alors que package/Gradle sont en 1.7.2 (`versionCode 172`) ; ne pas corriger sans l’inclure au périmètre validé.
+- **Suite** : chantier 4 reste le dernier ; terminer l’inventaire, soumettre et faire valider la proposition avant toute modification applicative.
 - Pages reste bloqué par permissions ; ne pas dispatcher `pages-apk.yml` sans changement des permissions.
 
 La branche distante est la source de vérité : toujours `git fetch origin`, vérifier la branche et le diff, puis avancer proprement si nécessaire. Ne pas changer de branche ni utiliser les anciennes consignes `git reset --hard` des notes historiques ci-dessous.
