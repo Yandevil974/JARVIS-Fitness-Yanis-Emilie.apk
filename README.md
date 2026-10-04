@@ -1,8 +1,16 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — METCON Émilie (1.7.0)
+## Version à installer — correctif visuel piscine (1.7.1)
 
-**[Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk](downloads/Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk)** — APK signé, copie miroir de la release GitHub.
+**[Yanis-Fitness-Evolution-1.7.1-piscine-emilie.apk](downloads/Yanis-Fitness-Evolution-1.7.1-piscine-emilie.apk)** — APK signée, copie miroir de la release GitHub.
+
+**Correctif** : « Piscine après musculation » affiche maintenant une femme dans l’eau pour le profil Émilie. Les étapes elliptiques gardent leur visuel de vélo. Les médias GIF et les contenus validés sont inchangés.
+
+Tests : **130 tests, 128 réussis, 0 échec, 2 ignorés**. Build Android signé : réussi.
+
+## Version précédente — METCON Émilie (1.7.0)
+
+**[Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk](downloads/Yanis-Fitness-Evolution-1.7.0-metcon-emilie.apk)** — APK signée, copie miroir de la release GitHub.
 
 **Chantier 2 validé** : METCON Piscine et METCON Aqua Tabata sont ajoutés au profil Émilie sans modifier les six protocoles source. Le niveau et le choix cardio sur les sept jours du calendrier source sont mémorisés. Sous 45/100, Aqua Recovery est recommandé sans verrouillage dur ; le coach propose au plus un format par semaine.
 
@@ -114,8 +122,8 @@ animé. Contrôles : 209/209 exercices, 420 étapes de protocoles, 0 visuel intr
 
 ## Vérifications
 
-- `npm test` : **128 tests, 126 réussis, 0 échec, 2 ignorés** ; E2E :
-  **17 réussis, 0 échec, 11 ignorés**.
+- `npm test` : **130 tests, 128 réussis, 0 échec, 2 ignorés**.
+- E2E (dernière exécution en 1.7.0) : **17 réussis, 0 échec, 11 ignorés**.
 - Audit GIF : 209/209 exercices, 58 positions d'étirement, 1454/1454 étapes
   piscine/aqua, 50/50 HIIT, 912/912 METCON, 0 média manquant ; audit statique :
   0 étape statique.
