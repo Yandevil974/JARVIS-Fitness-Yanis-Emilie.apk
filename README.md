@@ -1,6 +1,21 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — correctif visuel piscine (1.7.1)
+## Version à installer — diversification piscine/aqua (1.7.2)
+
+**[Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk](downloads/Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk)** — APK signée, copie miroir de la release GitHub (87 796 244 octets ; SHA-256 vérifié dans le fichier `.sha256` joint).
+
+**Chantier 3 validé** — deux séances facultatives, lancées manuellement par Yanis ou Émilie :
+
+- **Pyramide piscine** : trois niveaux progressifs de 18, 24 et 30 min.
+- **Circuit aqua à intervalles variables** : trois niveaux de 21, 27 et 30 min 50 s.
+- Aucun ajout à la programmation automatique ; les six protocoles source et les deux METCON validés restent inchangés.
+- Les mouvements et GIF existants sont réutilisés ; aucun média validé n'a été modifié.
+
+Tests : **136 au total, 134 réussis, 0 échec, 2 ignorés**. Build Android signé et publication GitHub réussis ; le miroir et son SHA-256 ont été vérifiés.
+
+E2E : dernière exécution complète connue en 1.7.0, avant ce chantier, **17 réussis, 0 échec, 11 ignorés**. Le nouveau scénario Playwright des séances optionnelles n'a pas pu être exécuté ici (Chromium absent et téléchargement indisponible).
+
+## Version précédente — correctif visuel piscine (1.7.1)
 
 **[Yanis-Fitness-Evolution-1.7.1-piscine-emilie.apk](downloads/Yanis-Fitness-Evolution-1.7.1-piscine-emilie.apk)** — APK signée, copie miroir de la release GitHub.
 
@@ -24,6 +39,7 @@ Tests : **128 tests, 126 réussis, 0 échec, 2 ignorés**. E2E : **17 réussis, 
 
 **Ce qui change (1.6.1 — trois défauts visuels signalés, corrigés sans toucher
 aux chiffres ni aux GIF validés)** :
+
 1. **« Ma bibliothèque »** : les 74 dernières illustrations anatomiques sont
    remplacées par vos photos humaines animées du corpus livré (GIF humain du
    même muscle + même type de mouvement ; table de correspondance dans
@@ -44,6 +60,7 @@ crawl propre, bibliothèque 100 % corpus humain).
 **[Yanis-Fitness-Evolution-1.6.0-coachs.apk](downloads/Yanis-Fitness-Evolution-1.6.0-coachs.apk)** — APK signé, keystore du dépôt.
 
 **Ce qui change (chantier 1 — propositions A à E validées le 02/10/2026)** :
+
 - **A — Une seule décision du coach par semaine**, calculée sur vos retours réels
   (RPE/RIR saisis, séances manquées, bilans fatigue/douleur, score de récupération,
   progression) et affichée de façon identique dans « Mon équipe », la carte « Le coach
@@ -113,18 +130,15 @@ animé. Contrôles : 209/209 exercices, 420 étapes de protocoles, 0 visuel intr
 - [Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk](downloads/Yanis-Fitness-Evolution-1.5.1-apercu-visuels.apk) — 34 305 511 octets : galerie d'aperçu, médias d'origine.
 - [Yanis-Fitness-Evolution-1.5.1.apk](downloads/Yanis-Fitness-Evolution-1.5.1.apk) — 24 564 188 octets : version stable de base (chantier 1).
 
-## Ce qui n'est pas dans ces versions
+## Périmètre préservé et suite
 
-- Aucun APK d'origine modifié, prescriptions, gestes et prises intouchés.
-- Le chantier 2 (METCON Piscine et Aqua Tabata pour Émilie) est livré en 1.7.0.
-  La diversification des séances piscine et l'IA conversationnelle restent à venir ;
-  l'IA demeure le dernier chantier. Voir `PASSATION-NOUVEAU-CHAT.md`.
+- Aucun APK d'origine modifié ; prescriptions, gestes et prises validés restent intouchés.
+- Le chantier 2 (METCON Piscine et Aqua Tabata pour Émilie) a été livré en 1.7.0 ; la diversification piscine/aqua du chantier 3 est livrée en 1.7.2.
+- Seul le chantier 4 — l'IA conversationnelle — reste à venir et demeure le dernier chantier. Voir `PASSATION-NOUVEAU-CHAT.md`.
 
 ## Vérifications
 
-- `npm test` : **130 tests, 128 réussis, 0 échec, 2 ignorés**.
-- E2E (dernière exécution en 1.7.0) : **17 réussis, 0 échec, 11 ignorés**.
-- Audit GIF : 209/209 exercices, 58 positions d'étirement, 1454/1454 étapes
-  piscine/aqua, 50/50 HIIT, 912/912 METCON, 0 média manquant ; audit statique :
-  0 étape statique.
-- APK : archive saine (`unzip -t`), signature v2 avec le certificat du keystore du dépôt.
+- `npm test` : **136 tests, 134 réussis, 0 échec, 2 ignorés**.
+- E2E : dernière exécution complète connue en 1.7.0, **17 réussis, 0 échec, 11 ignorés** ; le scénario Playwright des options piscine/aqua n'a pas pu être lancé localement (Chromium absent, téléchargement indisponible).
+- Couverture GIF vérifiée : 209/209 exercices, 58 positions d'étirement, 1920/1920 étapes piscine/aqua pour les profils homme et femme, 50/50 HIIT et 912/912 METCON.
+- APK 1.7.2 : build Android signé réussi via GitHub Actions ; miroir vérifié, **87 796 244 octets**, SHA-256 `ec89ec894635578dafabf41d460067f6ad2e8042c362d262c9f63aaabc868eaa`.
