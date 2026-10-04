@@ -37,11 +37,7 @@ const fileOk = (src) => !!src && existsSync(publicDir + src);
 function resolutionChrono(step, profil, meta = {}) {
   if (step.metaType && !meta.type) meta = { ...meta, type: step.metaType };
   const pool = isPoolTimerStep(step, meta);
-  const guide = stepGuide(
-    step.name,
-    pool ? "pool" : step.segment,
-    POOL_GUIDES,
-  );
+  const guide = stepGuide(step.name, pool ? "pool" : step.segment, POOL_GUIDES);
   return resolveTimerStepGif(step, profil, {
     pool,
     guideImg: guide?.img,
@@ -126,9 +122,7 @@ test("Piscine après musculation : une récupération active reste une nage pour
       {
         key: "post",
         format: "pool",
-        customSteps: [
-          { name, seconds: 1200, kind: "work", pattern: "swim" },
-        ],
+        customSteps: [{ name, seconds: 1200, kind: "work", pattern: "swim" }],
       },
     ],
     step = sourceExtraSteps({ id: "emilie" }, { components })[0],

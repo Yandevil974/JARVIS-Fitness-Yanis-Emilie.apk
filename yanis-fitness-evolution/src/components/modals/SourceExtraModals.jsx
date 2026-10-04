@@ -246,9 +246,7 @@ export function SourceExtraModal({ event }) {
                     );
                     const image =
                       guide?.img ||
-                      (isPool
-                        ? stepGifByPattern(s.pattern, p.id, true)
-                        : null);
+                      (isPool ? stepGifByPattern(s.pattern, p.id, true) : null);
                     const imageTitle = guide?.t || s.name;
                     return (
                       <li key={j}>
