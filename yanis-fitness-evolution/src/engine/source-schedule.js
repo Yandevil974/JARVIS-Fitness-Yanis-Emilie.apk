@@ -1,4 +1,8 @@
-import { legacy, POOL_PROTOCOLS } from "../data/library.js";
+import {
+  legacy,
+  POOL_PROTOCOLS,
+  OPTIONAL_POOL_PROTOCOLS,
+} from "../data/library.js";
 import { today, parseDate, addDays, dayDiff, clamp, num, monday } from "./utils.js";
 
 export const SOURCE_SCHEDULE_REVISION = 3;
@@ -391,7 +395,9 @@ export function sourcePoolProtocol(p, date, { planning = false } = {}) {
 }
 export function sourcePool(p, id, level = 0) {
   const protocols = p.id === "emilie" ? POOL_PROTOCOLS : legacy[p.id].POOL_PROTOS;
-  const proto = protocols.find((x) => x.id === id);
+  const proto =
+    protocols.find((x) => x.id === id) ||
+    OPTIONAL_POOL_PROTOCOLS.find((x) => x.id === id);
   const data = proto?.niveaux[level] || proto?.niveaux[0];
   return {
     id,

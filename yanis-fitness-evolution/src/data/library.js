@@ -9,6 +9,7 @@ import {
 import { GIF_OVERRIDES, POOL_IMG_OVERRIDES } from "./gif-overrides.js";
 import { stepGif, STRETCH_KEY_BY_NAME } from "./visuals-gifs.js";
 import { METCON_PROTOCOLS } from "./metcon-emilie.js";
+import { OPTIONAL_POOL_PROTOCOLS } from "./pool-diversity.js";
 export { legacy };
 export { STRETCH_IMAGES, POOL_STEP_IMAGES, CARDIO_STEPS, WARMUP_IMAGES };
 export const MUSCLES = {
@@ -431,8 +432,9 @@ export const SOURCE_POOL_PROTOCOLS = legacy.emilie.POOL_PROTOS.map((p) => ({
     .replace(/zéro risque articulaire/gi, "faible impact articulaire")
     .replace(/zéro impact/gi, "faible impact"),
 }));
-export { METCON_PROTOCOLS };
+export { METCON_PROTOCOLS, OPTIONAL_POOL_PROTOCOLS };
 export const POOL_PROTOCOLS = [...SOURCE_POOL_PROTOCOLS, ...METCON_PROTOCOLS];
+export const ALL_POOL_PROTOCOLS = [...POOL_PROTOCOLS, ...OPTIONAL_POOL_PROTOCOLS];
 const POOL_GUIDE_GIF = {
   "Ciseaux au bord": stepGif("guide-ciseaux-au-bord", "emilie"),
   "Aqua-jogging sur place": stepGif("guide-aqua-jogging", "emilie"),

@@ -13,6 +13,7 @@ import Movement from "../Movement.jsx";
 import HumanAnim from "../HumanAnim.jsx";
 import {
   POOL_PROTOCOLS,
+  OPTIONAL_POOL_PROTOCOLS,
   POOL_GUIDES,
   RECOVERY_EXERCISES,
   stretchImage,
@@ -24,6 +25,10 @@ import {
   isPoolTimerStep,
   resolveTimerStepGif,
 } from "../../data/visuals-gifs.js";
+import {
+  isOptionalPoolProtocol,
+  optionalPoolStepGif,
+} from "../../data/pool-diversity.js";
 import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
@@ -219,7 +224,9 @@ export function TimerModal() {
 }
 export function ProtocolModal({ protocolId, level = 0 }) {
   const { p, setTimer, setModal, closeModal, notify, updateProfile } = useApp();
-  const pr = POOL_PROTOCOLS.find((p) => p.id === protocolId);
+  const pr =
+    POOL_PROTOCOLS.find((p) => p.id === protocolId) ||
+    OPTIONAL_POOL_PROTOCOLS.find((p) => p.id === protocolId);
   const lv = pr?.niveaux[level];
   if (!lv) return null;
   const key = `${today()}-${protocolId}-${level}`,
@@ -228,15 +235,31 @@ export function ProtocolModal({ protocolId, level = 0 }) {
     score = recoveryScore(p).score,
     softMetconRecovery = poolRecoveryGate(pr.id, score).soft;
   function startProtocol(target, targetLevel, targetIndex) {
+    const optional = isOptionalPoolProtocol(target.id);
     setTimer(
-      targetLevel.steps.map(([name, seconds]) => ({
-        name,
-        seconds,
-        pattern: /repos|respiration|r[ée]cup/i.test(name) ? "breathe" : "swim",
-        kind: /repos|r[ée]cup|calme/i.test(name) ? "rest" : "work",
-      })),
+      targetLevel.steps.map(([name, seconds]) => {
+        const pattern = /repos|respiration|r[ée]cup/i.test(name)
+          ? "breathe"
+          : "swim";
+        return {
+          name,
+          seconds,
+          pattern,
+          kind: /repos|r[ée]cup|calme/i.test(name) ? "rest" : "work",
+          ...(optional
+            ? {
+                img: optionalPoolStepGif(name, p.id, pattern),
+              }
+            : {}),
+        };
+      }),
       {
-        type: ["aquahiit", "aquatabata", "metcon-aquatabata"].includes(target.id)
+        type: [
+          "aquahiit",
+          "aquatabata",
+          "metcon-aquatabata",
+          "circuit-aqua-variable",
+        ].includes(target.id)
           ? "aqua"
           : "swim",
         name: target.nom,
@@ -295,6 +318,14 @@ export function ProtocolModal({ protocolId, level = 0 }) {
             const guide = POOL_GUIDES.find((g) =>
               g.k.some((k) => norm(name).includes(norm(k))),
             );
+            const guideImage =
+              guide && isOptionalPoolProtocol(pr.id)
+                ? optionalPoolStepGif(
+                    name,
+                    p.id,
+                    /repos|respiration|r[ée]cup/i.test(name) ? "breathe" : "swim",
+                  ) || guide.img
+                : guide?.img;
             return (
               <div key={i}>
                 <label>
@@ -323,10 +354,10 @@ export function ProtocolModal({ protocolId, level = 0 }) {
                       Technique <Icon name="ChevronDown" size={12} />
                     </summary>
                     <div className="pool-guide-content">
-                      {guide.img && (
+                      {guideImage && (
                         <img
                           loading="lazy"
-                          src={assetSrc(guide.img)}
+                          src={assetSrc(guideImage)}
                           alt={guide.t}
                         />
                       )}

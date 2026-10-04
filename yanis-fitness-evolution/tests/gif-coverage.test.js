@@ -10,7 +10,8 @@ import { fileURLToPath } from "node:url";
 import {
   EXERCISES,
   RECOVERY_EXERCISES,
-  POOL_PROTOCOLS,
+  ALL_POOL_PROTOCOLS,
+  OPTIONAL_POOL_PROTOCOLS,
   POOL_GUIDES,
   stretchImage,
 } from "../src/data/library.js";
@@ -24,6 +25,7 @@ import {
   movementGif,
 } from "../src/data/visuals-gifs.js";
 import { intervalSteps } from "../src/engine/timer.js";
+import { isOptionalPoolProtocol, optionalPoolStepGif } from "../src/data/pool-diversity.js";
 import {
   sourceCardioSteps,
   sourceExtraSteps,
@@ -77,16 +79,22 @@ test("étirements : visuel humain pour chaque position et chaque profil", () => 
 });
 
 test("chronos piscine/aqua : toutes les étapes de tous les niveaux résolues", () => {
-  for (const pr of POOL_PROTOCOLS)
+  for (const pr of ALL_POOL_PROTOCOLS)
     for (const niveau of pr.niveaux)
       for (const [name, seconds] of niveau.steps) {
-        const step = {
-          name,
-          seconds,
-          pattern: /repos|respiration|recup/i.test(name) ? "breathe" : "swim",
-          segment: "pool",
-        };
+        const pattern = /repos|respiration|r[ée]cup/i.test(name)
+          ? "breathe"
+          : "swim";
         for (const profil of ["elite", "emilie"]) {
+          const step = {
+            name,
+            seconds,
+            pattern,
+            segment: "pool",
+            ...(isOptionalPoolProtocol(pr.id)
+              ? { img: optionalPoolStepGif(name, profil, pattern) }
+              : {}),
+          };
           const img = resolutionChrono(step, profil);
           assert.ok(img, `${pr.id} · ${name} (${profil}) sans GIF`);
           assert.ok(fileOk(img), `fichier manquant : ${img}`);
@@ -202,7 +210,7 @@ test("chronos metcon : elliptique seul et combo elliptique + piscine", () => {
         assert.ok(img, `metcon ${id} · ${step.name} (${profil}) sans GIF`);
         assert.ok(fileOk(img), `fichier manquant : ${img}`);
       }
-  for (const pr of POOL_PROTOCOLS) {
+  for (const pr of ALL_POOL_PROTOCOLS) {
     const event = {
       components: [
         { key: "cardio", protocolId: "inter", minutes: 15 },
@@ -212,7 +220,14 @@ test("chronos metcon : elliptique seul et combo elliptique + piscine", () => {
     };
     for (const step of sourceExtraSteps({ id: "elite" }, event))
       for (const profil of ["elite", "emilie"]) {
-        const img = resolutionChrono(step, profil);
+        const pattern = step.pattern ||
+          (/repos|respiration|r[ée]cup/i.test(step.name) ? "breathe" : "swim");
+        const optionalStep = OPTIONAL_POOL_PROTOCOLS.some(
+          (protocol) => protocol.id === pr.id,
+        )
+          ? { ...step, img: optionalPoolStepGif(step.name, profil, pattern) }
+          : step;
+        const img = resolutionChrono(optionalStep, profil);
         assert.ok(img, `combo ${pr.id} · ${step.name} (${profil}) sans GIF`);
         assert.ok(fileOk(img), `fichier manquant : ${img}`);
       }

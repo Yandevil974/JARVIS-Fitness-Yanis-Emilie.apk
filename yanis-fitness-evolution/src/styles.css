@@ -17758,6 +17758,11 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .rest-next-thumb svg { position: absolute; right: 4px; bottom: 4px; color: #fff; opacity: 0.85; }
 .rest-next-body { display: flex; gap: 10px; align-items: center; }
 
+/* Formats optionnels — cartes accessibles aux deux profils, sans planning automatique. */
+.optional-pool-protocols {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  margin-bottom: 24px;
+}
 /* METCON Émilie — cartes, choix hebdomadaire et rappel de récupération. */
 .metcon-protocols { margin-bottom: 24px; }
 .protocol-icon.pool-6 {

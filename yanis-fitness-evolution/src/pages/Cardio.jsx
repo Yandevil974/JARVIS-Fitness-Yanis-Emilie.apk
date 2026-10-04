@@ -18,6 +18,7 @@ import {
 import {
   SOURCE_POOL_PROTOCOLS,
   METCON_PROTOCOLS,
+  OPTIONAL_POOL_PROTOCOLS,
   legacy,
 } from "../data/library.js";
 import { intervalSteps } from "../engine/timer.js";
@@ -352,7 +353,8 @@ function Swim() {
     [rest, setRest] = useState(30),
     [pace, setPace] = useState(35),
     [style, setStyle] = useState("Crawl"),
-    [level, setLevel] = useState(0);
+    [level, setLevel] = useState(0),
+    [optionalLevel, setOptionalLevel] = useState(0);
   const metconLevelValue = getMetconLevel(p),
     weekSlots = p.id === "emilie" ? sourceCardioSlots(p, today()) : [];
   function setMetconLevel(value) {
@@ -600,6 +602,69 @@ function Swim() {
                   label={`Lancer ${pr.nom}`}
                   onClick={() =>
                     setModal({ type: "protocol", protocolId: pr.id, level })
+                  }
+                />
+              </div>
+            </Panel>
+          );
+        })}
+      </div>
+      <SectionHeading
+        title="Nouvelles séances optionnelles"
+        subtitle="Formats disponibles aux deux profils, à lancer manuellement. Ils ne modifient pas votre programme ni votre planning."
+      >
+        <Select
+          value={optionalLevel}
+          onChange={(e) => setOptionalLevel(Number(e.target.value))}
+          aria-label="Niveau des séances optionnelles piscine et aqua"
+        >
+          <option value="0">Niveau 1 · progressif</option>
+          <option value="1">Niveau 2 · intermédiaire</option>
+          <option value="2">Niveau 3 · avancé</option>
+        </Select>
+      </SectionHeading>
+      <div className="pool-protocols optional-pool-protocols">
+        {OPTIONAL_POOL_PROTOCOLS.map((pr, i) => {
+          const lvl = pr.niveaux[optionalLevel];
+          const minutes = Math.round(
+            lvl.steps.reduce((sum, step) => sum + step[1], 0) / 60,
+          );
+          return (
+            <Panel className="protocol-card" key={pr.id}>
+              <div className="protocol-card-top">
+                <span className={`protocol-icon pool-${i + 6}`}>
+                  <Icon name={i === 0 ? "Waves" : "Activity"} size={25} />
+                </span>
+                <Badge color="mint">OPTIONNEL · {minutes} MIN</Badge>
+              </div>
+              <h3>{pr.nom}</h3>
+              <p>{pr.desc}</p>
+              <span className="small-subtitle">
+                {lvl.n} · {lvl.steps.length} étapes
+              </span>
+              <div>
+                <Button
+                  variant="secondary small"
+                  icon="List"
+                  onClick={() =>
+                    setModal({
+                      type: "protocol",
+                      protocolId: pr.id,
+                      level: optionalLevel,
+                    })
+                  }
+                >
+                  Voir le protocole
+                </Button>
+                <IconButton
+                  icon="Play"
+                  label={`Lancer ${pr.nom}`}
+                  onClick={() =>
+                    setModal({
+                      type: "protocol",
+                      protocolId: pr.id,
+                      level: optionalLevel,
+                    })
                   }
                 />
               </div>
