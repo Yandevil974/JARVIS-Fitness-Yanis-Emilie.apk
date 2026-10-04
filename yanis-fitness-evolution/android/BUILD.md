@@ -3,12 +3,12 @@
 Application autonome, séparée de « JARVIS Fitness » (n’importe pas son
 empreinte de signature) :
 
-| Élément | Valeur |
-| --- | --- |
-| appId / namespace | `app.yanis.fitness.evolution` |
-| versionName / versionCode | `1.7.1` / `171` |
-| Clé de release | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`) |
-| Stockage navigateur | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
+| Élément                   | Valeur                                                                                                                            |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
+| versionName / versionCode | `1.7.2` / `172`                                                                                                                   |
+| Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
+| Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
 ## Prérequis (machine locale)
 
@@ -34,10 +34,9 @@ les changer :
 
 ## Vérifications locales possibles
 
-- `npm test` — 130 tests au total : 128 réussis, 0 échec, 2 ignorés.
-- Audits : 209 GIF musculation, 58 étirements, 1454/1454 étapes piscine/aqua,
-  50/50 HIIT, 912/912 METCON, 0 média manquant ; 0 étape statique.
-- `npx playwright test` — 17 réussis, 0 échec, 11 ignorés (Chromium installé).
+- `npm test` — 136 tests au total : 134 réussis, 0 échec, 2 ignorés.
+- Couverture GIF : 209 exercices, 58 étirements et 1920/1920 étapes piscine/aqua vérifiées pour les profils homme et femme.
+- E2E : dernière exécution complète avant ce chantier, 17 réussis, 0 échec, 11 ignorés. Le scénario Playwright des séances optionnelles a été ajouté, mais n'a pas pu être exécuté ici (Chromium absent et téléchargement réseau indisponible).
 
 ## Cohabitation avec l’ancienne application
 
