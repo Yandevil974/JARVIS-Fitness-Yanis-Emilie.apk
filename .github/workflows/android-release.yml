@@ -1,7 +1,7 @@
 name: Build Yanis Fitness Evolution APK (release)
 
-# Construit l'APK signé 1.7.0 (appId app.yanis.fitness.evolution, keystore du
-# dépôt) et l'attache au GitHub Release correspondant au tag poussé.
+# Construit l'APK signé de la version déclarée dans package.json (appId
+# app.yanis.fitness.evolution, keystore du dépôt) et l'attache au tag poussé.
 on:
   push:
     tags:
@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.7.0-metcon-emilie"
+        default: "v1.7.1-piscine-emilie"
 
 permissions:
   contents: write
@@ -61,7 +61,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.7.0'" 2>/dev/null || echo 1.7.0)
+          VERSION=$(node -p "require('../package.json').version || '1.7.1'" 2>/dev/null || echo 1.7.1)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
 
@@ -73,21 +73,20 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.7.0 — METCON Émilie
-            APK signé pour `app.yanis.fitness.evolution` (versionCode 170).
+            ## Yanis Fitness Evolution 1.7.1 — correctif visuel piscine
+            APK signé pour `app.yanis.fitness.evolution` (versionCode 171).
 
-            ### Chantier 2 — METCON piscine et Aqua Tabata
-            - Ajout de METCON Piscine et METCON Aqua Tabata au profil Émilie, sans retirer ni modifier les six protocoles source.
-            - Les niveaux et durées sont ceux validés pour le chantier 2. Les choix cardio de la semaine source et le niveau METCON sont mémorisés.
-            - Sous 45/100 de récupération, Aqua Recovery est recommandé sans verrouillage dur des deux METCON.
-            - Le coach peut proposer au plus un format METCON par semaine.
+            ### Correctif d'illustration
+            - « Piscine après musculation » affiche désormais un GIF de femme dans le bassin pour le profil Émilie.
+            - Les étapes elliptiques conservent leur visuel de vélo.
+            - Les GIFs et contenus validés ne sont pas modifiés.
 
             **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Les deux jeux de données restent indépendants.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.7.0.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.7.1.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.7.0.apk.sha256`.
+            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.7.1.apk.sha256`.
 
             ### Importer vos données
             Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.
