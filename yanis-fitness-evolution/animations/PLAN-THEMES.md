@@ -55,9 +55,9 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Fire hydrant à l'élastique | `fire-hydrant-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-02 |
-| 2 | Squat au poids du corps | `squat-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 |
-| 3 | Fentes arrière au poids du corps | `fentes-arriere-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 |
+| 1 | Fire hydrant à l'élastique | `fire-hydrant-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-02 H+F (F sous réserve) |
+| 2 | Squat au poids du corps | `squat-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 H+F (F sous réserve) |
+| 3 | Fentes arrière au poids du corps | `fentes-arriere-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 H+F (F sous réserve) |
 
 ### Lot A-03
 
