@@ -47,9 +47,9 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Mobilité des épaules | `mobilite-des-epaules` | épaules (antérieur) | poids du corps · H + F (2 anim.) | ✅ LOT A-01 |
-| 2 | Pont fessier au sol — activation | `pont-fessier-au-sol-activation` | fessiers | poids du corps · H + F (2 anim.) | ✅ LOT A-01 |
-| 3 | Clamshell à l'élastique | `clamshell-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-01 |
+| 1 | Mobilité des épaules | `mobilite-des-epaules` | épaules (antérieur) | poids du corps · H + F (2 anim.) | ✅ LOT A-01 H+F |
+| 2 | Pont fessier au sol — activation | `pont-fessier-au-sol-activation` | fessiers | poids du corps · H + F (2 anim.) | ✅ LOT A-01 H+F |
+| 3 | Clamshell à l'élastique | `clamshell-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-01 H+F |
 
 ### Lot A-02
 

@@ -12,15 +12,16 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | 28 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + **A-03 : 3**) |
+| Animations créées | 31 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-01 FEMME : 3**) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3) + A-01 (3) + A-02 (3) + **A-03 (3)** |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** |
+| Versions femme produites | **3 / 307** |
 | Thème A (échauffement) | 17 / 25 entrées · **8 restantes · 16 animations H+F** |
-| Doublons sur les fichiers du chantier | 0 (32 empreintes md5 distinctes) |
+| Doublons sur les fichiers du chantier | 0 (35 empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -121,10 +122,30 @@ Contrôle : 6 empreintes md5 distinctes en thème A, 0 doublon sur l'ensemble du
 Planche : `themeA/LOT-A03-echauffement.gif`. 9 animations livrées en thème A,
 0 doublon sur l'ensemble du chantier (32 empreintes md5 distinctes).
 
+## LOT A-01 FEMME — ÉCHAUFFEMENT, mannequin femme (`animations/themeA/femme/`) — 2026-10-06
+
+**Référence du personnage : `animations/REF-personnage-feminin.jpg`** (commitée dans le
+dépôt par le user — elle survivra désormais aux resets du sandbox).
+
+| Fichier | Exercice | Positions |
+| --- | --- | --- |
+| `femme/mobilite-des-epaules-3poses.gif` | Mobilité des épaules | A = bras le long du corps · M = à l'horizontale · B = au-dessus de la tête |
+| `femme/pont-fessier-activation-3poses.gif` | Pont fessier au sol — activation | A = bassin au sol · M = mi-hauteur · B = ligne droite épaules-hanches-genoux |
+| `femme/clamshell-elastique-3poses.gif` | Clamshell à l'élastique | A = genoux joints · M = ouverture ~30-40° · B = ouverture maximale |
+
+Planche : `themeA/femme/LOT-A01F-echauffement-femme.gif`.
+Convention de nommage retenue : `themeA/<exercice>-3poses.gif` = homme,
+`themeA/femme/<exercice>-3poses.gif` = femme.
+
+⚠️ **Le LOT A-04 (abduction assise, pallof press, face pull) a été perdu en cours de
+route** : les positions A et M étaient générées mais les positions B ont été interrompues,
+puis le reset du sandbox a effacé les fichiers intermédiaires. **À refaire depuis zéro.**
+
 ### Décisions prises le 2026-10-06
 
 | Sujet | Décision |
 | --- | --- |
+| **Référence personnage femme** | `yanis-fitness-evolution/animations/REF-personnage-feminin.jpg`, commitée dans le dépôt (seul moyen de survivre aux resets — les uploads `/home/user/uploads/` sont effacés) |
 | **Périmètre HOMME + FEMME** | **Tout le chantier en double** : chaque exercice, chaque étirement et chaque guide piscine existe en version Yanis (homme) **et** Émilie (femme). Total : **614 animations** (209×2 + 100 chrono + 29×2 + 19×2) |
 | Organisation des lots | **Par thème** (A échauffement → B musculation → C étirements → D cardio → E piscine) |
 | Terminer un thème avant le suivant | **Oui — consigne du user : finir le thème A (échauffement) avant d'attaquer le thème B** |
