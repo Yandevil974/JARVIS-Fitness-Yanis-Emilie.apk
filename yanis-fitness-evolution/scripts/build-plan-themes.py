@@ -74,6 +74,9 @@ LIVRE = {
     "fire-hydrant-a-l-elastique": "LOT A-02",
     "squat-au-poids-du-corps": "LOT A-02",
     "fentes-arriere-au-poids-du-corps": "LOT A-02",
+    "pompes": "LOT A-03",
+    "gainage-planche": "LOT A-03",
+    "abduction-hanche-a-l-elastique": "LOT A-03",
 }
 
 # ——— Sous-thèmes de musculation, par groupe musculaire ———

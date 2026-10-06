@@ -11,16 +11,16 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 
 | Élément | Valeur |
 | --- | --- |
-| Animations nécessaires (minimum) | 357 |
-| Animations créées | 25 (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + LOT A-01 : 3 + **LOT A-02 : 3**) |
+| Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
+| Animations créées | 28 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + **A-03 : 3**) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3) + LOT A-01 (3) + **LOT A-02 (3)** |
-| Thème A (échauffement) | 14 / 25 entrées · **11 restantes** |
-| Doublons sur les fichiers du chantier | 0 (29 empreintes md5 distinctes) |
+| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3) + A-01 (3) + A-02 (3) + **A-03 (3)** |
+| Thème A (échauffement) | 17 / 25 entrées · **8 restantes · 16 animations H+F** |
+| Doublons sur les fichiers du chantier | 0 (32 empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -110,10 +110,22 @@ Planche : `themeA/LOT-A02-echauffement.gif`. La planche A-01 a été régénér�
 même gabarit (colonnes espacées de 12 px) via `scripts/build-gif-lot.sh`.
 Contrôle : 6 empreintes md5 distinctes en thème A, 0 doublon sur l'ensemble du chantier.
 
+## LOT A-03 — ÉCHAUFFEMENT & ACTIVATION, suite (`animations/themeA/`) — 2026-10-06
+
+| Fichier | Exercice | Positions | Source technique |
+| --- | --- | --- | --- |
+| `pompes-3poses.gif` | Pompes | A = planche haute, bras tendus · M = descente à mi-hauteur · B = poitrine à quelques cm du sol | Mains un peu plus larges que les épaules, **corps en ligne droite épaules → chevilles**, coudes à **~45° du buste** (pas en T), amplitude complète ([odyn](https://odyn.fr/pages/articles/pompes-debutants-guide-complet.php), [marbosport](https://www.marbosport.fr/Les-pompes-comment-bien-les-executer-et-quelles-variantes-choisir-blog-fre-1777531313.html)) |
+| `gainage-planche-3poses.gif` | Gainage planche | A = planche haute sur les mains · M = transition, un avant-bras posé · B = planche complète sur les deux avant-bras, corps aligné | Coudes à l'aplomb des épaules, avant-bras parallèles, **ligne droite tête → épaules → hanches → talons**, abdominaux et fessiers contractés, hanches qui ne s'affaissent pas |
+| `abduction-hanche-elastique-3poses.gif` | Abduction hanche à l'élastique (debout) | A = pieds joints · M = jambe écartée ~20° · B = abduction maximale ~40° | Élastique autour des **chevilles**, debout, jambe tendue écartée sur le côté **sans rotation des hanches ni du buste**, buste vertical, amplitude **30-45° maximum** (au-delà c'est le bassin qui bascule) ([mickaelconseillerlr](https://mickaelconseillerlr.fr/produit/abduction-debout-avec-elastique-renforcement-des-hanches-et-des-fessiers/), [magicfit](https://www.magicfit.fr/abducteurs-a-la-poulie-musculation/)) |
+
+Planche : `themeA/LOT-A03-echauffement.gif`. 9 animations livrées en thème A,
+0 doublon sur l'ensemble du chantier (32 empreintes md5 distinctes).
+
 ### Décisions prises le 2026-10-06
 
 | Sujet | Décision |
 | --- | --- |
+| **Périmètre HOMME + FEMME** | **Tout le chantier en double** : chaque exercice, chaque étirement et chaque guide piscine existe en version Yanis (homme) **et** Émilie (femme). Total : **614 animations** (209×2 + 100 chrono + 29×2 + 19×2) |
 | Organisation des lots | **Par thème** (A échauffement → B musculation → C étirements → D cardio → E piscine) |
 | Terminer un thème avant le suivant | **Oui — consigne du user : finir le thème A (échauffement) avant d'attaquer le thème B** |
 | Circuits du LOT 3 | **Animation composite en 3 phases** — les trois mouvements déroulés à la suite (≈ 9 images par circuit, 1 circuit par tour). À faire en fin de thème A |

@@ -63,9 +63,9 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Pompes | `pompes` | pectoraux | poids du corps · H + F (2 anim.) | à recréer |
-| 2 | Gainage planche | `gainage-planche` | abdominaux | poids du corps · H + F (2 anim.) | à recréer |
-| 3 | Abduction hanche à l'élastique | `abduction-hanche-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | à recréer |
+| 1 | Pompes | `pompes` | pectoraux | poids du corps · H + F (2 anim.) | ✅ LOT A-03 |
+| 2 | Gainage planche | `gainage-planche` | abdominaux | poids du corps · H + F (2 anim.) | ✅ LOT A-03 |
+| 3 | Abduction hanche à l'élastique | `abduction-hanche-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-03 |
 
 ### Lot A-04
 
