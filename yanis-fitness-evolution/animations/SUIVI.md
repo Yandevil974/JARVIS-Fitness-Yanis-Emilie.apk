@@ -13,6 +13,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | --- | --- |
 | Animations nécessaires (minimum) | 357 |
 | Animations créées | 19 (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3) |
+| Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
@@ -55,20 +56,41 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 ## Audit de conformité des animations existantes (2026-10-06)
 
 Les 16 animations des lots POC → LOT 4 ont été recontrôlées image par image. Aucun
-fichier n'est dupliqué (21 empreintes md5 toutes distinctes) et les 3 positions
-(A → M → B) existent partout. Réserves relevées, à traiter en priorité avant
-l'intégration dans l'application (phase 11) :
-
-- **POC (`SHEET-POC`)** : cadrages souvent coupés (torse seul au squat, tête tronquée)
-  et artefacts visuels nets sur `hip-thrust-barre.gif` (planche coupée) et
-  `souleve-de-terre-roumain.gif` (tête et pieds coupés, salissures dans le décor).
-- **Séquence la plus faible** : `lot2/dead-bug-rotation-3poses.gif` — le retour au sol
-  est utilisé comme position A, la rotation n'est jamais montrée (A = jambes tendues
-  bras levés, M = crunch, B = allongé) : ne respecte pas « départ → mi-course → finale ».
-- **Doublons de concept** : `lot3/circuit-gainage-3poses.gif` et
-  `lot2/gainage-lateral-dyn-3poses.gif` montrent la même chose (planche latérale) ;
-  idem `lot1/gainage-lateral-3poses.gif`. Le circuit gainage ne montre que la planche
-  frontale, alors que `lot3/LOT3-circuits.gif` affiche une autre planche latérale.
-- **Artefacts résiduels** dans plusieurs lots 1 à 3 (bavures au-dessus des planches).
+fichier n'est dupliqué (24 empreintes md5 toutes distinctes) et les 3 positions
+(A → M → B) existent partout.
 - Tous les fichiers multi-positions utilisent des frames partiellement optimisées :
   pour l'affichage, toujours passer par `convert x.gif -coalesce`.
+
+### Option A — corrections appliquées (2026-10-06)
+
+Technique vérifiée en ligne avant régénération (dead bug : bras et jambe opposés +
+rotation du tronc pour les obliques, lombaires plaquées au sol ; planche latérale :
+coude sous l'épaule, main libre sur la hanche, corps en ligne droite, hanches qui ne
+s'affaissent pas).
+
+| Fichier | Avant | Après |
+| --- | --- | --- |
+| `lot2/dead-bug-rotation-3poses.gif` | A = jambes tendues bras levés (retour au sol), M = crunch, B = allongé : rotation jamais montrée | A = dead bug (genoux 90°, bras au plafond), M = rotation du tronc avec bras étendu au-dessus de la tête et jambe opposée tendue, B = extension maximale |
+| `lot1/gainage-lateral-3poses.gif` | A = planche sur avant-bras, M = bras levé, B = planche haute sur la main : incohérent | A = hanches basses (installation), M = hanches à mi-hauteur, B = ligne droite complète, main libre sur la hanche |
+| `lot2/gainage-lateral-dyn-3poses.gif` | A et B visuellement identiques (même planche sur avant-bras) | A = hanches hautes (ligne droite), M = hanches descendues (creux), B = retour hanches hautes |
+
+### Rester à corriger (option A, non terminée)
+
+Le POC n'a pas pu être régénéré : plafond de 10 images IA atteint au 2ᵉ tour de
+l'option A. À reprendre au prochain tour (3 images à produire, puis assemblage) :
+
+- `poc/back-squat.gif` — départ cadré trop serré (torse seul) : régénérer la position A
+  en pied, corps entier jusqu'aux semelles, barre complète dans le cadre.
+- `poc/hip-thrust-barre.gif` — artefacts (planche coupée) : régénérer la position A
+  avec banc et barre entièrement visibles, épaules contre le banc, hanches basses.
+- `poc/souleve-de-terre-roumain.gif` — tête et pieds coupés + salissures : régénérer la
+  position A debout, barre au contact des cuisses, corps entier dans le cadre.
+- Les positions M et B seront chaînées depuis chaque nouvelle position A.
+
+### Réserves non traitées
+
+- **`lot3/circuit-gainage-3poses.gif`** et **`lot3/LOT3-circuits.gif`** montrent encore
+  une planche frontale / latérale qui recoupe les exercices désormais corrigés. Le
+  circuit ne déroule qu'une seule de ses trois positions (planche → latéral → bird dog) :
+  à décider (animation composite en plusieurs phases ou découpage).
+- **Artefacts résiduels** dans les lots 1 et 3 (bavures au-dessus des tapis).
