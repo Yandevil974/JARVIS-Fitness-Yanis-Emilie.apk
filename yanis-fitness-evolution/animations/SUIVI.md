@@ -12,16 +12,17 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | 31 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-01 FEMME : 3**) |
+| Animations créées | 34 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-01 FEMME : 3** + **A-02 FEMME : 3**) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
+| Animations femme à reprendre | **2** (A-02F fire hydrant, A-02F squat — voir § LOT A-02 FEMME) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** |
-| Versions femme produites | **3 / 307** |
-| Thème A (échauffement) | 17 / 25 entrées · **8 restantes · 16 animations H+F** |
-| Doublons sur les fichiers du chantier | 0 (35 empreintes md5 distinctes) |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** |
+| Versions femme produites | **6 / 307** |
+| Thème A (échauffement) | 17 / 25 entrées en **homme**, **6 / 25 en femme** · reste 8 entrées jamais produites (×2) + 2 circuits (×2) |
+| Doublons sur les fichiers du chantier | 0 (45 empreintes md5 distinctes pour 45 GIF) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -151,6 +152,62 @@ puis le reset du sandbox a effacé les fichiers intermédiaires. **À refaire de
 | Terminer un thème avant le suivant | **Oui — consigne du user : finir le thème A (échauffement) avant d'attaquer le thème B** |
 | Circuits du LOT 3 | **Animation composite en 3 phases** — les trois mouvements déroulés à la suite (≈ 9 images par circuit, 1 circuit par tour). À faire en fin de thème A |
 | `developpe-incline-halteres` | ✅ **TRANCHÉ PAR LE USER** — **banc incliné 30°, prise neutre** (paumes face à face). À produire dans le thème B — pectoraux |
+
+## LOT A-02 FEMME — ÉCHAUFFEMENT, mannequin femme (`animations/themeA/femme/`) — 2026-10-06
+
+Versions **femme** des trois entrées du LOT A-02, chaînées depuis
+`animations/REF-personnage-feminin.jpg` (identité) + une frame du LOT A-01 FEMME
+(décor terrasse, cadrage, tapis noir).
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `femme/fire-hydrant-elastique-3poses.gif` | Fire hydrant à l'élastique | A = à quatre pattes, genou au sol (+ élastique au-dessus des genoux) · M = genou soulevé · B = jambe haute | ⚠️ **M et B à refaire** (voir ci-dessous) |
+| `femme/squat-poids-du-corps-3poses.gif` | Squat au poids du corps | A = debout, bras tendus devant · M = mi-descente · B = squat bas | ⚠️ **M à refaire** (trop proche du A) |
+| `femme/fentes-arriere-pdc-3poses.gif` | Fentes arrière au poids du corps | A = debout, mains sur les hanches · M = jambe arrière posée, demi-descente · B = fente basse, genou arrière au sol | ✅ conforme |
+
+Planche : `themeA/femme/LOT-A02F-echauffement-femme.gif` (1420×265).
+Contrôle anti-doublon : 45 fichiers GIF dans le chantier, 45 empreintes md5 distinctes,
+0 doublon.
+
+### 🔎 Nouveauté de méthode — l'agent VOIT désormais les images
+
+Contrairement aux tours précédents (réserve « l'agent ne voit pas les images »),
+l'agent a pu **contrôler visuellement** les 9 images générées et les GIF déjà livrés.
+Ce contrôle a révélé les défauts ci-dessous : c'est précisément ce qui a permis de les
+identifier au lieu de les livrer en silence.
+
+### Réserves honnêtes de ce lot (2 animations sur 3)
+
+1. **`femme/fire-hydrant-elastique-3poses.gif` — M et B non conformes.**
+   La technique demandée (vérifiée en ligne) est une **abduction latérale** : genou
+   fléchi à 90° **constant**, mouvement issu uniquement de la hanche, montée latérale
+   jusqu'à hauteur de hanche maximum, bassin qui ne bascule pas
+   ([callisthenie-corner](https://www.callisthenie-corner.fr/fire-hydrant/),
+   [epicfitness](https://epicfitness.fr/sculptez-fessiers-fire-hydrant),
+   [my15minutechallenge](https://www.my15minutechallenge.com/exercices/fire-hydrants/)).
+   Sur les images obtenues, le mouvement se lit comme une **extension de jambe vers
+   l'arrière** (proche d'un donkey kick), le genou ne reste pas à 90° et la plante du
+   pied ne regarde pas vers l'arrière. → à régénérer.
+2. **`femme/squat-poids-du-corps-3poses.gif` — position M (mi-course) insuffisante.**
+   La mi-descente est trop proche du départ (quasi debout) : l'amplitude ne se lit pas.
+   Régénérée une fois dans la limite des 10 images du tour, le résultat reste trop
+   proche du A. À refaire.
+   *À noter, honnêtement :* la version **homme** du même squat (`themeA/squat-poids-du-corps-3poses.gif`,
+   livrée au LOT A-02) présente la même faiblesse d'amplitude en position finale — la
+   position B est un demi-squat, les cuisses n'atteignent pas le parallèle annoncé.
+   Comme la règle 2 interdit de remplacer une animation livrée sans accord, elle n'a
+   **pas** été touchée : accord du user à demander.
+3. **Cadrages** : le générateur change légèrement d'angle et d'échelle d'une position à
+   l'autre (le squat passe d'une vue de face à une vue de dos puis de profil). La
+   boucle reste lisible, mais ce n'est pas parfaitement stable.
+
+### Fichiers de reprise conservés dans git (pour ne pas repayer 6 images)
+
+`themeA/femme/_sources/A-02F/` contient les **6 positions saines** (fire hydrant A,
+squat A et B, fentes A/M/B) en PNG 920×514. Au prochain tour, seules **3 images**
+seront à régénérer (fire hydrant M, fire hydrant B, squat M) au lieu de 9.
+Ce dossier est un **atelier temporaire** : il sera supprimé une fois les 2 animations
+corrigées.
 
 ## Audit de conformité des animations existantes (2026-10-06)
 
