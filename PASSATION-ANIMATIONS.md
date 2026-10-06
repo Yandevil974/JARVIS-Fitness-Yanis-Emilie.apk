@@ -2,16 +2,20 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 6 octobre 2026 · dernier commit de contenu `bda24e1` · branche de session `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 6 octobre 2026 · dernier commit de contenu : LOT A-03 FEMME (thème A, 1 réserve) · branche de session `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
 
 > ### 🚩 DRAPEAU ROUGE — limite du tour atteinte
 >
-> **10 images IA sur 10 utilisées** (LOT A-02 FEMME : 3 exercices × 3 positions + 1
-> régénération de la mi-course du squat). Ce drapeau marque une **limite technique de
-> génération**, pas un jugement sur les images produites. Le lot est livré, commité et
-> poussé — **avec 2 animations sous réserve** (fire hydrant, squat).
+> **10 images IA sur 10 utilisées** (LOT A-03 FEMME : pompes 3 positions, gainage planche
+> 3 positions dont **1 échec rejoué**, abduction hanche 3 positions). Ce drapeau marque
+> une **limite technique de génération**, pas un jugement sur les images produites.
+> Le lot est livré, commité et poussé — **avec 1 réserve** (abduction hanche position B
+> trop proche de la mi-course, 1 image à régénérer).
 >
-> Cette passation est ajoutée dans le **commit immédiatement suivant `bda24e1`**.
+> **Aucune image n'a été gaspillée en silence** : l'échec du gainage planche (mi-course
+> rendue identique au départ) a été détecté par comparaison objective des pixels
+> (RMSE 0,054) *avant* assemblage, et la position a été régénérée avec une consigne
+> d'asymétrie explicite.
 >
 > ### 👁️ NOUVEAUTÉ MAJEURE — l'agent VOIT les images
 >
@@ -84,6 +88,7 @@ git push -u origin arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap
 ### Historique consolidé
 
 ```
+(prochain commit)  LOT A-03 FEMME — mannequin femme (pompes + gainage planche + abduction)
 bda24e1  LOT A-02 FEMME — mannequin femme (thème A, 2 animations sous réserve)
 475beaa  DRAPEAU ROUGE — passation (état de la branche arena/50bc4ba3-…)
 da07c20  LOT A-01 FEMME — mannequin femme (thème A)
@@ -233,28 +238,30 @@ dans le sandbox au 2026-10-06 — les comptages ont été refaits en Python depu
 
 | Élément | Valeur |
 | --- | --- |
-| Animations créées | **34 / 614** |
-| **Restant à produire** | **580** |
-| Versions femme produites | **6 / 307** (LOT A-01 FEMME : 3 · **LOT A-02 FEMME : 3**) |
-| Animations femme à reprendre | **2** (A-02F fire hydrant, A-02F squat) |
+| Animations créées | **37 / 614** |
+| **Restant à produire** | **577** |
+| Versions femme produites | **9 / 307** (LOT A-01 FEMME : 3 · **LOT A-02 FEMME : 3** · **LOT A-03 FEMME : 3**) |
+| Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M, A-03F abduction B) |
 | Animations corrigées | 3 / 5 (option A partielle) |
 | Fichiers dupliqués traités | 4 / 48 · `666443484c7f0861.gif` → 1 / 3 |
 | `bcdbe16aeafaafec.gif` | 8 / 8 ✅ soldé |
 | `8de6e89e5395700c.gif` | 6 / 7 (le 7ᵉ est tranché : 30° prise neutre) |
-| Doublons sur les fichiers du chantier | 0 (45 empreintes md5 distinctes pour 45 GIF) |
-| Lots livrés | 11 (POC, L1, L2, L3, L4, L5, A-01, A-02, A-03, **A-01 FEMME**, **A-02 FEMME**) |
+| Doublons sur les fichiers du chantier | 0 (64 empreintes md5 distinctes pour 64 fichiers GIF/PNG) |
+| Lots livrés | 12 (POC, L1, L2, L3, L4, L5, A-01, A-02, A-03, **A-01 FEMME**, **A-02 FEMME**, **A-03 FEMME**) |
 
-### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : 17 / 25 entrées en HOMME, 6 en FEMME
+### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : 17 / 25 entrées en HOMME, 9 en FEMME
 
 **Convention de nommage :** `themeA/<exercice>-3poses.gif` = homme,
 `themeA/femme/<exercice>-3poses.gif` = femme.
 
-**Restant pour solder le thème A (H + F) ≈ 45 animations :**
-- 8 exercices livrés en homme sans version femme → **8 versions femme** (il en restait 11,
-  le LOT A-02 FEMME en a soldé 3) ; **dont 2 à reprendre** (fire hydrant, squat) ;
-- **LOT A-04 à refaire** (abduction assise, pallof press, face pull) : perdu au reset ;
-- 8 entrées jamais produites → **16 animations** (8 homme + 8 femme) ;
-- 2 circuits → **4 animations** composites (2 homme + 2 femme).
+**Restant pour solder le thème A (H + F) = 24 animations neuves (+ 3 images de reprise) :**
+- **8 versions femme à rattraper** (les lots 1, 2 et 3 n'existent qu'en homme) → 3 tours ;
+  il ne reste plus rien à rattraper sur A-01 / A-02 / A-03 FEMME (soldés) ;
+- **LOT A-04 jamais produit** (abduction assise, pallof press, face pull) → H **et** F ;
+- **8 entrées jamais produites** → 16 animations (8 homme + 8 femme) ;
+- 2 circuits → **4 animations** composites (2 homme + 2 femme) ;
+- reprises : A-02F fire hydrant M/B + squat M (3 images) et A-03F abduction B (1 image),
+  **en attente d'accord du user** (règle 2).
 
 | Lot | Contenu | Statut |
 | --- | --- | --- |
@@ -266,9 +273,9 @@ dans le sandbox au 2026-10-06 — les comptages ont été refaits en Python depu
 | **A-03** | pompes, gainage planche, abduction hanche élastique | ✅ livré |
 | **A-01 FEMME** | mobilité des épaules, pont fessier, clamshell — mannequin femme | ✅ livré (`themeA/femme/`) |
 | **A-02 FEMME** | fire hydrant, squat pdc, fentes arrière — mannequin femme | ⚠️ **livré sous réserve** (fire hydrant M/B et squat M à refaire) |
-| **A-03 — versions FEMME** | pompes, gainage planche, abduction hanche | ⬜ à produire |
-| **A-04** | abduction assise, pallof press, face pull élastique | ⚠️ **perdu au reset — à refaire** |
-| **A-04** | abduction assise, pallof press, face pull élastique | ⬜ à produire |
+| **A-03 FEMME** | pompes, gainage planche, abduction hanche — mannequin femme | ✅ livré (`themeA/femme/`) · ⚠️ abduction B sous réserve |
+| **LOTS 1/2/3 — versions FEMME** | dead bug, bird dog, gainage latéral, mountain climbers, dead bug rotation, gainage latéral dyn., 2 circuits | ⬜ **à produire (rattrapage de la fille)** |
+| **A-04** | abduction assise, pallof press, face pull élastique | ⚠️ **perdu au reset — jamais produit (H ni F)** |
 | **A-05** | respiration diaphragmatique, hip thrust unilatéral (1 jambe) | ⬜ à produire |
 | **A-06/A-07** | `warmup-route`, `warmup-mobilite`, `warmup-approche` (H + F = 6 anim.) | ⬜ à produire |
 | — | circuits gainage + abdominaux, version **composite 3 phases** | ⬜ à refaire |
@@ -281,34 +288,40 @@ Le user a demandé de **terminer le thème échauffement avant de passer au suiv
 
 0. ✅ **FAIT** — la photo du personnage féminin est dans le dépôt
    (`yanis-fitness-evolution/animations/REF-personnage-feminin.jpg`).
-1. 🔴 **À FAIRE EN PRIORITÉ — rattrapage du LOT A-02 FEMME** (3 images seulement,
-   grâce aux sources conservées) : régénérer `fire-hydrant-elastique-M.png`,
-   `fire-hydrant-elastique-B.png` (abduction latérale réelle, genou à 90° constant) et
-   `squat-poids-du-corps-M.png` (vraie mi-descente), puis réassembler avec
-   `scripts/build-gif-lot.sh` à partir de
-   `animations/themeA/femme/_sources/A-02F/`. Supprimer `_sources/` une fois corrigé.
-2. **Versions FEMME restantes du thème A** (8 animations, 3 tours) :
-   `pompes`, `gainage-planche`, `abduction-hanche-a-l-elastique` (lot A-03 FEMME),
-   puis les 5 autres entrées déjà livrées en homme.
-3. **LOT A-04** (`animations/themeA/`) : `abduction-assise-machine-ou-elastique`,
-   `pallof-press-a-l-elastique`, `face-pull-a-l-elastique` — 3 exercices, 9 images
-   (**jamais produits, aucune version** : H d'abord, F ensuite).
+1. ✅ **FAIT (ce tour)** — **LOT A-03 FEMME** (`pompes`, `gainage-planche`,
+   `abduction-hanche-a-l-elastique`) livré, commité et poussé. 3 animations, 1 réserve
+   (abduction B trop proche de la mi-course).
+2. 🔴 **À FAIRE EN PRIORITÉ — RATTRAPAGE DE LA FILLE** (consigne du user : que les deux
+   mannequins avancent ensuite au même rythme). Il reste **8 entrées du thème A qui
+   n'existent qu'en homme** → 8 animations femme, à produire dans cet ordre :
+   - **lot 1 FEMME** : `dead-bug`, `bird-dog`, `gainage-lateral` ;
+   - **lot 2 FEMME** : `mountain-climbers`, `dead-bug-rotation`, `gainage-lateral-dyn` ;
+   - **lot 3 FEMME** : `circuit-gainage`, `circuit-abdos` (versions composites).
+   Puis H et F avancent **ensemble** sur les entrées jamais produites (A-04 → A-05 →
+   étapes chrono `warmup-*` → circuits composites).
+3. **LOT A-04** : `abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
+   `face-pull-a-l-elastique` — 3 exercices, 9 images (**jamais produits** : H d'abord,
+   F juste après).
 4. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`
-   (2 exercices = 6 images) + 1 animation d'étape chrono (3 images).
-5. **Étapes chrono d'échauffement** (4 tours en H + F) : `warmup-route` H/F,
-   `warmup-mobilite` H/F, `warmup-approche` H/F = 6 animations.
+   (2 exercices) + les étapes chrono.
+5. **Étapes chrono d'échauffement** (H + F) : `warmup-route` H/F, `warmup-mobilite` H/F,
+   `warmup-approche` H/F = 6 animations.
    - `warmup-route` = mise en route, marche ou vélo très facile, allure conversationnelle.
    - `warmup-mobilite` = cercles d'épaules (haut du corps) / mobilité hanches & chevilles
      (bas du corps) — **à garder visuellement distinct de « mobilité des épaules » (A-01)**.
    - `warmup-approche` = série d'approche légère, ~50 % de la charge de travail.
-6. **Circuits composites** (4 tours en H + F, 1 circuit par tour) :
+6. **Circuits composites** (H + F, 1 circuit par tour) :
    - circuit gainage : planche → latéral → bird dog,
    - circuit abdominaux : crunch → relevés de jambes → gainage.
    Décision du user : les **trois mouvements déroulés à la suite** dans une seule animation
-   (≈ 3 phases × 3 positions = 9 images par circuit). **Remplacent** les fichiers LOT 3
-   existants — accord explicite du user déjà donné (décision § 7.2), mais montrer la planche
-   avant de committer le remplacement.
-7. **Ensuite seulement : thème B — musculation**, en commençant par
+   (3 phases × 3 positions = 9 images par circuit). **Remplacent** les fichiers LOT 3
+   existants — accord explicite déjà donné (§ 7.2), mais montrer la planche avant de
+   committer le remplacement.
+7. **Reprises en attente d'accord** (règle 2 — ne pas toucher sans validation) :
+   A-02F fire hydrant M/B + squat M (3 images, sources dans `_sources/A-02F/`),
+   A-03F abduction B (1 image, sources dans `_sources/A-03F/`), squat HOMME (position
+   finale pas assez basse).
+8. **Ensuite seulement : thème B — musculation**, en commençant par
    `developpe-incline-halteres` (30°, prise neutre), puis jambes/quadriceps.
 
 ### ⚠️ Toujours en souffrance (reporté à chaque tour depuis `acae07f`)
@@ -358,6 +371,9 @@ Le user a demandé de **terminer le thème échauffement avant de passer au suiv
      livrée sans accord explicite.
    - Confirmation que la planche `themeA/femme/LOT-A02F-echauffement-femme.gif`
      montre bien le bon personnage et le bon décor.
+   - **Accord pour refaire la position B de l'abduction hanche FEMME**
+     (`themeA/femme/abduction-hanche-elastique-3poses.gif`) — 1 image au prochain tour,
+     les 8 autres positions sont déjà dans git et dans `_sources/A-03F/`.
 8. ⏳ **Aucune autre décision en attente.**
 
 ---
@@ -378,6 +394,10 @@ Le user a demandé de **terminer le thème échauffement avant de passer au suiv
 - **LOT A-02 FEMME** : 2 animations livrées **non conformes** (fire hydrant M/B = le
   mouvement part en extension arrière ; squat M = mi-descente trop proche du départ).
   Détail et sources dans la section « LOT A-02 FEMME » de `animations/SUIVI.md`.
+- **LOT A-03 FEMME** : 1 animation sous réserve — `abduction-hanche-elastique-3poses.gif`
+  position finale trop proche de la mi-course (écart RMSE 0,029 : le mouvement ne se lit
+  pas). Les 9 positions sources sont conservées dans `themeA/femme/_sources/A-03F/` :
+  **1 seule image** à régénérer. Pompes et gainage planche FEMME conformes.
 - **Squat HOMME (LOT A-02)** : position finale pas assez basse (cuisses sous le
   parallèle) — défaut constaté par contrôle visuel, **non corrigé** faute d'accord
   (règle 2).
@@ -438,21 +458,27 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/6a360b
 > Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 > Dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`, branche de session affichée dans
 > le prompt système (l'agent ne peut écrire que sur celle-là ; elle contient tout
-> l'historique du chantier), dernier commit de contenu `bda24e1`.
+> l'historique du chantier).
+> En ouverture de tour : `git fetch origin` puis, si HEAD est retombé sur `ddd1fb9`,
+> `git reset --hard origin/<branche de session>`.
 > Lis `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
-> `yanis-fitness-evolution/animations/PLAN-THEMES.md`, mets à jour la branche locale
-> depuis origin (`git fetch` puis `git merge --ff-only origin/<branche de session>` si
-> elle est retombée sur `ddd1fb9`), puis :
-> 1. **règle d'abord les 2 réserves du LOT A-02 FEMME** — régénère seulement 3 images
->    (fire hydrant M, fire hydrant B, squat M) en repartant des positions saines
->    conservées dans `animations/themeA/femme/_sources/A-02F/`, réassemble avec
->    `scripts/build-gif-lot.sh`, montre la planche, puis supprime `_sources/` ;
-> 2. attends l'accord du user pour corriger le **squat HOMME** (position finale pas
->    assez basse) — ne pas remplacer une animation livrée sans accord ;
-> 3. produis le **lot A-03 FEMME** (pompes, gainage planche, abduction hanche) puis les
->    versions femme restantes, puis le **LOT A-04** (abduction assise, pallof press,
->    face-pull élastique — jamais produits) ;
-> 4. **termine tout le thème A (échauffement) en HOMME + FEMME avant le thème B**, en
->    finissant par les 3 étapes chrono `warmup-*` et les 2 circuits composites.
-> Périmètre : **614 animations** (H + F). ⚠️ 3 exercices maxi par tour (10 images IA),
-> et **l'agent voit les images** : contrôler avant de livrer.
+> `yanis-fitness-evolution/animations/PLAN-THEMES.md`, puis :
+> 1. **RATTRAPAGE DE LA FILLE** (consigne du user : rattraper l'homme pour qu'ensuite les
+>    deux avancent au même rythme) — il reste **8 entrées du thème A qui n'existent qu'en
+>    homme** : **lot 1 FEMME** (`dead-bug`, `bird-dog`, `gainage-lateral`), puis
+>    **lot 2 FEMME** (`mountain-climbers`, `dead-bug-rotation`, `gainage-lateral-dyn`),
+>    puis **lot 3 FEMME** (les 2 circuits). Référence identité :
+>    `animations/REF-personnage-feminin.jpg` ; chaîner A → M → B ; assembler avec
+>    `scripts/build-gif-lot.sh` (460×257, `-delay 130/110`, planche 1420×265, **jamais
+>    `-layers optimize` sur la planche**) ; montrer la planche ; commit + push ;
+>    mettre à jour `SUIVI.md` / `PLAN-THEMES.md`.
+> 2. **Reprises en attente d'accord du user** (ne jamais remplacer une animation livrée
+>    sans accord) : A-02F fire hydrant M/B + squat M (3 images), A-03F abduction B
+>    (1 image) — les positions saines sont dans `themeA/femme/_sources/` ; squat HOMME.
+> 3. **Ensuite** : LOT A-04 (abduction assise, pallof press, face pull — jamais produits),
+>    LOT A-05, les étapes chrono `warmup-*` H + F, puis les circuits composites.
+> 4. **Terminer tout le thème A (H + F) avant d'attaquer le thème B.**
+> Périmètre : **614 animations**. ⚠️ **3 exercices maxi par tour (10 images IA)**.
+> L'agent **voit les images** : contrôler chaque position (et comparer objectivement les
+> pixels, ex. `compare -metric RMSE`) **avant** de livrer, et signaler les réserves
+> honnêtement — jamais de faux 100 %.

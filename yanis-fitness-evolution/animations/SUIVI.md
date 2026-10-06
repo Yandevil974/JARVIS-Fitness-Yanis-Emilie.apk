@@ -12,17 +12,17 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | 34 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-01 FEMME : 3** + **A-02 FEMME : 3**) |
+| Animations créées | 37 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-01 FEMME : 3** + **A-02 FEMME : 3** + **A-03 FEMME : 3**) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
-| Animations femme à reprendre | **2** (A-02F fire hydrant, A-02F squat — voir § LOT A-02 FEMME) |
+| Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M — voir § LOT A-02 FEMME ; + A-03F abduction B trop proche de M, voir § LOT A-03 FEMME) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** |
-| Versions femme produites | **6 / 307** |
-| Thème A (échauffement) | 17 / 25 entrées en **homme**, **6 / 25 en femme** · reste 8 entrées jamais produites (×2) + 2 circuits (×2) |
-| Doublons sur les fichiers du chantier | 0 (45 empreintes md5 distinctes pour 45 GIF) |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** |
+| Versions femme produites | **9 / 307** |
+| Thème A (échauffement) | 17 / 25 entrées en **homme**, **9 / 25 en femme** · reste 8 entrées jamais produites (×2) + 2 circuits composites (×2) + 8 versions femme à rattraper (lots 1/2/3) |
+| Doublons sur les fichiers du chantier | 0 (64 empreintes md5 distinctes pour 64 fichiers GIF/PNG, dont **49 GIF**) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -207,7 +207,55 @@ identifier au lieu de les livrer en silence.
 squat A et B, fentes A/M/B) en PNG 920×514. Au prochain tour, seules **3 images**
 seront à régénérer (fire hydrant M, fire hydrant B, squat M) au lieu de 9.
 Ce dossier est un **atelier temporaire** : il sera supprimé une fois les 2 animations
-corrigées.
+corrigées. Le LOT A-03 FEMME applique la même règle avec son propre atelier
+`themeA/femme/_sources/A-03F/` (9 positions PNG 1376×768).
+
+## LOT A-03 FEMME — ÉCHAUFFEMENT, mannequin femme (`animations/themeA/femme/`) — 2026-10-06
+
+Versions **femme** des trois entrées du LOT A-03 (pompes, gainage planche, abduction
+hanche), chaînées depuis `animations/REF-personnage-feminin.jpg` pour l'identité, puis
+image à image (A → M → B) comme le veut la méthode : chaque position est générée depuis
+la précédente, dans une seule session de génération (cadrage, lumière et décor restent
+donc stables d'une position à l'autre).
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `femme/pompes-3poses.gif` | Pompes | A = planche haute bras tendus · M = descente bras ~45° du buste · B = poitrine à quelques cm du tapis | ✅ conforme |
+| `femme/gainage-planche-3poses.gif` | Gainage planche | A = planche haute sur les mains · M = un avant-bras posé (asymétrie visible) · B = planche complète sur les deux avant-bras | ✅ conforme |
+| `femme/abduction-hanche-elastique-3poses.gif` | Abduction hanche à l'élastique | A = debout, pieds joints, élastique aux chevilles · M = jambe écartée ~20° · B = abduction ~40° | ⚠️ **B trop proche de M** (écart RMSE 0,029) |
+
+Planche : `themeA/femme/LOT-A03F-echauffement-femme.gif` (1420×265).
+Contrôle anti-doublon : 64 fichiers GIF/PNG dans le chantier, 64 empreintes md5
+distinctes, **0 doublon**.
+Sources de reprise conservées : `themeA/femme/_sources/A-03F/` (les 9 positions PNG
+1376×768, pour corriger l'abduction B avec **1 seule** image au prochain tour).
+
+### Réserve honnête de ce lot (1 animation sur 3)
+
+- **`femme/abduction-hanche-elastique-3poses.gif` — position B trop proche de M.**
+  La jambe est bien écartée à la mi-course ; la position finale n'ajoute presque rien
+  (mesure objective : RMSE 0,029 entre M et B, contre 0,104 entre des positions
+  réellement différentes). La technique est en revanche respectée : buste vertical,
+  mains sur les hanches, bassin qui ne bascule pas, élastique aux chevilles, amplitude
+  dans la fourchette 30-45° recommandée
+  ([mickaelconseillerlr](https://mickaelconseillerlr.fr/produit/abduction-debout-avec-elastique-renforcement-des-hanches-et-des-fessiers/)).
+  → **1 image à régénérer** au prochain tour (accord user demandé, règle 2).
+- **Pompes FEMME** : générateur utilisé pour la *mi-course* d'un exercice totalement
+  différent (gainage planche) — il a rendu une image quasi identique au départ. Régénérée
+  avec une consigne d'asymétrie explicite (« un bras tendu / l'autre sur l'avant-bras »),
+  la version retenue est correcte. **2 images payées** pour cette position (comptées dans
+  le budget du tour).
+- **Style** : conforme (corps argenté mat, visage noir sans traits, casquette, tresse,
+  tenue noire, baskets blanches, terrasse bord de mer, tapis noir, muscles dorés).
+  À noter, la paire de lunettes de soleil apparue sur certaines frames du fire hydrant
+  (LOT A-02 FEMME) **n'est pas réapparue** ici.
+
+### 📊 Budget d'images IA de ce tour : 10 / 10 (drapeau rouge)
+
+3 positions de pompes + 2 positions de gainage planche (1 échec) + 3 positions
+d'abduction hanche = **8 images utiles + 1 image ratée rejouée = 10 images**.
+La position B de l'abduction a été payée mais n'apporte pas l'amplitude attendue : elle
+n'est **pas** masquée dans le compteur, elle est signalée ci-dessus.
 
 ## Audit de conformité des animations existantes (2026-10-06)
 
