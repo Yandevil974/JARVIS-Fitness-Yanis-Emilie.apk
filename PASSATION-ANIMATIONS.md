@@ -2,13 +2,16 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 6 octobre 2026 · commit `48106d9` · branche `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 6 octobre 2026 · dernier commit de contenu `918e424` · branche `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
 
 > ### 🚩 DRAPEAU ROUGE — limite du tour atteinte
 >
-> **9 images IA sur 10 utilisées** (3 exercices × 3 positions) pour livrer le **LOT A-01**.
+> **9 images IA sur 10 utilisées** (3 exercices × 3 positions) pour livrer le **LOT A-02**.
 > Ce drapeau marque une **limite technique de génération**, pas un jugement sur les images
 > produites. Le lot est livré, commité et poussé. La suite reprend au prochain tour.
+>
+> Cette passation est ajoutée dans le **commit immédiatement suivant `918e424`**
+> (`git log --oneline` pour le retrouver).
 
 À copier-coller tel quel pour reprendre le chantier dans un nouveau chat.
 
@@ -18,14 +21,13 @@
 
 - Dépôt : `github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public)
 - **Branche de travail (session courante) : `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
-- Dernier commit de contenu : **`6bb5fad`** — LOT A-01, échauffement & activation
-  (plan thématique ajouté en `e8b7199`)
+- Dernier commit de contenu : **`918e424`** — LOT A-02, échauffement (suite)
 
 ### ⚠️ Reprise de l'ancienne branche — FAIT, ne pas refaire
 
 L'historique du chantier vivait sur `arena/fbb1ddb2-…` (dernier commit `acae07f`), lui-même
 descendant de `arena/773dbe1e-…`. Au 2026-10-06, la branche de session `arena/50bc4ba3-…`
-était encore sur `main` (`ddd1fb9`). Reprise effectuée :
+était encore sur `main` (`ddd1fb9`). Reprise effectuée en fast-forward :
 
 ```bash
 git fetch origin arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap
@@ -33,17 +35,20 @@ git merge --ff-only FETCH_HEAD        # fast-forward : ddd1fb9 est bien un ancê
 git push -u origin arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap
 ```
 
-**Tout l'historique (POC → LOT 5 → passation `acae07f`) est donc présent sur
+**Tout l'historique (POC → LOT 5 → passation `acae07f`) est présent sur
 `arena/50bc4ba3-…`.** Les autres branches ne sont plus nécessaires : ne plus y toucher.
 
-### Historique consolidé (de la branche de session)
+### Historique consolidé
 
 ```
+918e424  LOT A-02 — échauffement, suite (thème A) + script build-gif-lot.sh
+c45342b  décisions user — circuits composites, A-01 validé
+48106d9  DRAPEAU ROUGE — consigne + passation
 6bb5fad  LOT A-01 — échauffement & activation (thème A)
 e8b7199  plan de production thématique (357 animations, 5 thèmes, 108 lots)
-acae07f  passation — commit de référence à jour
+acae07f  passation — commit de référence à jour (ancienne branche)
 4dd79d9  passation — référence, restauration après reset, comptage exact
-67d6751  référence de commit exacte dans la passation
+67d6751  référence de commit exacte
 845a112  consigne + passation à jour pour reprise du chantier
 9fdf21b  PDF dédié aux nouveaux GIF (LOT 4, LOT 5, corrections)
 ef9f148  bilan visuel PDF du chantier + script de génération
@@ -84,8 +89,10 @@ ef9f148  bilan visuel PDF du chantier + script de génération
 7. **L'œil de l'utilisateur tranche.** Afficher la planche de montage dans le chat pour
    validation.
 8. Le user a donné son accord permanent pour committer et pousser les lots de ce chantier.
-9. **Nouveau (2026-10-06) : les lots suivants sont organisés PAR THÈME**, plus par fichier
-   dupliqué. Voir `yanis-fitness-evolution/animations/PLAN-THEMES.md`.
+9. **Les lots sont organisés PAR THÈME**, plus par fichier dupliqué.
+   Voir `yanis-fitness-evolution/animations/PLAN-THEMES.md`.
+10. **Terminer un thème entier avant de passer au suivant** (consigne du user, 2026-10-06).
+    Le thème A (échauffement) est en cours — ne pas attaquer le thème B avant la fin.
 
 ---
 
@@ -110,38 +117,28 @@ ef9f148  bilan visuel PDF du chantier + script de génération
 2. Générer la **MI-COURSE** en CHAÎNANT sur l'image précédente (source_image = l'étape
    d'avant).
 3. Générer la **POSITION FINALE** en chaînant sur la mi-course.
-4. Assembler le GIF : A → M → B → M → boucle (ImageMagick `convert`,
-   `-delay 130/110`, `-colors 96 -layers optimize`), format **460×257**
-   (`-resize 460x257^ -gravity center -extent 460x257`).
-5. Assembler une planche animée de montage, 3 colonnes (une par exercice).
+4. Assembler le GIF : A → M → B → M → boucle, format **460×257**.
+5. Assembler une planche animée de montage, 1 colonne par exercice.
 6. Afficher la planche dans le chat pour validation, puis committer et pousser
    immédiatement.
-7. Mettre à jour `animations/SUIVI.md` (compteurs, réserves, prochaines étapes)
-   et `animations/PLAN-THEMES.md` (statuts — via `scripts/build-plan-themes.py`).
+7. Mettre à jour `animations/SUIVI.md` (compteurs, réserves) et
+   `animations/PLAN-THEMES.md` (statuts, via `scripts/build-plan-themes.py`).
 
 **Plafond : 10 images IA par tour = 3 exercices par tour maximum.**
 Chaque image chaînée doit être générée après que sa source existe (ne pas chaîner
 plusieurs niveaux dans le même appel parallèle).
 
-### Recette d'assemblage éprouvée (LOT A-01)
+### Script d'assemblage (à utiliser tel quel)
 
 ```bash
-# 1. recadrage + GIF 3 positions
-convert "$n-$p.png" -resize '460x257^' -gravity center -extent 460x257 "r-$n-$p.png"
-convert -delay 130 r-A.png -delay 110 r-M.png -delay 130 r-B.png -delay 110 r-M.png \
-        -loop 0 -colors 96 -layers optimize "$n-3poses.gif"
-# 2. planche 3 colonnes animée (1404x265)
-convert "SEQ-$n.gif" -coalesce "f-$n-%d.png"          # 4 frames A M B M
-for i in 0 1 2 3; do
-  convert -background '#0b0e13' -gravity center f-a-$i.png f-b-$i.png f-c-$i.png \
-          +append -bordercolor '#0b0e13' -border 4 -gravity center -extent 1404x265 row-$i.png
-done
-convert -delay 130 row-0.png -delay 110 row-1.png -delay 130 row-2.png \
-        -delay 110 row-3.png -loop 0 -colors 96 PLANCHE.gif
+scripts/build-gif-lot.sh <dossier_source> <dossier_sortie> <titre_planche> <ex1> <ex2> [<ex3>]
+# le dossier source contient <ex>-A.png / -M.png / -B.png (ou déjà <ex>-3poses.gif)
+# produit <ex>-3poses.gif (460x257, -delay 130/110, -colors 96) + la planche animée
 ```
 
-⚠️ **Ne pas appliquer `-layers optimize` à la planche** : cela recadre les frames
-(obtenu 473×265 au lieu de 1404×265). L'optimiser uniquement sur les GIF individuels.
+⚠️ **Ne jamais appliquer `-layers optimize` à la planche** : cela recadre les frames sur
+la zone qui bouge (473×265 obtenu au lieu de 1404×265). L'optimiser uniquement sur les GIF
+individuels. Le script contient déjà le garde-fou.
 
 ⚠️ Pour afficher un GIF multi-positions à l'écran, toujours passer par
 `convert x.gif -coalesce` (frames partiellement optimisées).
@@ -169,56 +166,57 @@ dans le sandbox au 2026-10-06 — les comptages ont été refaits en Python depu
 
 | Élément | Valeur |
 | --- | --- |
-| Animations créées | **22 / 357** |
-| **Restant à produire** | **335** |
+| Animations créées | **25 / 357** |
+| **Restant à produire** | **332** |
 | Animations corrigées | 3 / 5 (option A partielle) |
 | Fichiers dupliqués traités | 4 / 48 · `666443484c7f0861.gif` → 1 / 3 |
 | `bcdbe16aeafaafec.gif` | 8 / 8 ✅ soldé |
-| `8de6e89e5395700c.gif` | 6 / 7 |
-| Doublons sur les 29 fichiers du chantier | 0 (26 empreintes md5 distinctes) |
-| Lots livrés | 7 (POC, L1, L2, L3, L4, L5, **A-01**) |
+| `8de6e89e5395700c.gif` | 6 / 7 (le 7ᵉ est tranché : 30° prise neutre) |
+| Doublons sur les fichiers du chantier | 0 (29 empreintes md5 distinctes) |
+| Lots livrés | 8 (POC, L1, L2, L3, L4, L5, A-01, A-02) |
 
-### Lots livrés
+### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : 14 / 25 entrées
 
-- **POC** (`animations/poc/`) — 5 : back squat, développé couché barre, hip thrust barre,
-  soulevé de terre roumain, nage douce (femme).
-- **LOT 1** (`animations/lot1/`) — 3 : dead bug, bird dog, gainage latéral.
-- **LOT 2** (`animations/lot2/`) — 3 : mountain climbers, dead bug avec rotation,
-  gainage latéral dynamique.
-- **LOT 3** (`animations/lot3/`) — 2 : circuit gainage, circuit abdominaux.
-- **LOT 4** (`animations/lot4/`) — 3 : développé haltères plat, plat prise neutre,
-  décliné prise neutre.
-- **LOT 5** (`animations/lot5/`) — 3 : développé haltères incliné 30°, incliné 45°,
-  incliné 45° prise neutre.
-- **LOT A-01** (`animations/themeA/`) — 3 *(nouveau, plan thématique)* :
-  mobilité des épaules, pont fessier au sol — activation, clamshell à l'élastique.
-  Planche : `themeA/LOT-A01-echauffement.gif`.
-
-Corrigées (commit `4a61b62`) : dead bug avec rotation, gainage latéral,
-gainage latéral dynamique.
+| Lot | Contenu | Statut |
+| --- | --- | --- |
+| LOT 1 | dead bug, bird dog, gainage latéral | ✅ |
+| LOT 2 | mountain climbers, dead bug rotation, gainage latéral dyn. | ✅ |
+| LOT 3 | circuit gainage, circuit abdominaux | ✅ **mais à REFAIRE en composite** |
+| **A-01** | mobilité des épaules, pont fessier activation, clamshell | ✅ validé |
+| **A-02** | fire hydrant, squat poids du corps, fentes arrière pdc | ✅ livré (validation en cours) |
+| **A-03** | pompes, gainage planche, abduction hanche élastique | ⬜ à produire |
+| **A-04** | abduction assise, pallof press, face pull élastique | ⬜ à produire |
+| **A-05** | respiration diaphragmatique, hip thrust unilatéral (1 jambe) | ⬜ à produire |
+| **A-06/A-07** | `warmup-route`, `warmup-mobilite`, `warmup-approche` (H + F = 6 anim.) | ⬜ à produire |
+| — | circuits gainage + abdominaux, version **composite 3 phases** | ⬜ à refaire |
 
 ---
 
-## 6. PROCHAINE ACTION
+## 6. PROCHAINE ACTION — FINIR LE THÈME A (≈ 7 tours)
 
-Ordre demandé par le user : **thème par thème** (échauffement → musculation →
-étirements → cardio → piscine).
+Le user a demandé de **terminer le thème échauffement avant de passer au suivant**.
 
-1. ▶️ **LOT A-02** (`animations/themeA/`) — **validé par le user, à produire au
-   prochain tour** — 3 exercices :
-   `fire-hydrant-a-l-elastique`, `squat-au-poids-du-corps`,
-   `fentes-arriere-au-poids-du-corps`.
-2. **LOT A-03** : `pompes`, `gainage-planche`, `abduction-hanche-a-l-elastique`.
-3. **LOT A-04** : `abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
-   `face-pull-a-l-elastique`.
-4. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`
-   (dead bug déjà livré en LOT 1).
-5. **Fin du thème A** : les 3 étapes chrono d'échauffement `warmup-route`,
-   `warmup-mobilite`, `warmup-approche` (2 animations chacune : homme + femme),
-   puis les **2 circuits composites** (gainage, abdominaux) — 1 circuit par tour.
-6. Puis **thème B — musculation**, sous-thème par sous-thème (jambes/quadriceps en
-   premier), **thème C — étirements**, **thème D — cardio**, **thème E — piscine**.
-7. **Phase 11** : intégration dans l'application, après validation complète des lots.
+1. ▶️ **LOT A-03** (`animations/themeA/`) : `pompes`, `gainage-planche`,
+   `abduction-hanche-a-l-elastique` — 3 exercices, 9 images.
+2. **LOT A-04** : `abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
+   `face-pull-a-l-elastique` — 3 exercices, 9 images.
+3. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`
+   (2 exercices = 6 images) + 1 animation d'étape chrono (3 images).
+4. **Étapes chrono d'échauffement** (2 tours) : `warmup-route` H/F, `warmup-mobilite` H/F,
+   `warmup-approche` H/F = 6 animations.
+   - `warmup-route` = mise en route, marche ou vélo très facile, allure conversationnelle.
+   - `warmup-mobilite` = cercles d'épaules (haut du corps) / mobilité hanches & chevilles
+     (bas du corps) — **à garder visuellement distinct de « mobilité des épaules » (A-01)**.
+   - `warmup-approche` = série d'approche légère, ~50 % de la charge de travail.
+5. **Circuits composites** (2 tours, 1 circuit par tour) :
+   - circuit gainage : planche → latéral → bird dog,
+   - circuit abdominaux : crunch → relevés de jambes → gainage.
+   Décision du user : les **trois mouvements déroulés à la suite** dans une seule animation
+   (≈ 3 phases × 3 positions = 9 images par circuit). **Remplacent** les fichiers LOT 3
+   existants — accord explicite du user déjà donné (décision § 7.2), mais montrer la planche
+   avant de committer le remplacement.
+6. **Ensuite seulement : thème B — musculation**, en commençant par
+   `developpe-incline-halteres` (30°, prise neutre), puis jambes/quadriceps.
 
 ### ⚠️ Toujours en souffrance (reporté à chaque tour depuis `acae07f`)
 
@@ -231,44 +229,43 @@ Ordre demandé par le user : **thème par thème** (échauffement → musculatio
 - `poc/souleve-de-terre-roumain.gif` → tête et pieds coupés + salissures : refaire
   debout, barre au contact des cuisses, corps entier dans le cadre.
 - Puis chaîner M et B depuis chaque nouvelle position A.
+- À caser **après** la fin du thème A, sauf contre-ordre du user.
 
 ---
 
-## 7. DÉCISIONS EN ATTENTE (ne pas trancher seul)
+## 7. DÉCISIONS
 
-1. ⏳ **`developpe-incline-halteres`** — 7ᵉ et dernier exercice du fichier
-   `8de6e89e5395700c.gif`. Son nom ne précise ni angle ni prise.
-   **Le user a répondu « autre » sans préciser (2026-10-06).** Redemander explicitement
-   l'angle (30° / 45° / autre) et la prise (classique / neutre) avant de produire.
-   **Ne pas deviner.** C'est le seul exercice restant de `8de6e89e5395700c.gif` (6/7).
-2. ✅ **Circuits du LOT 3 — TRANCHÉ PAR LE USER (2026-10-06) : animation COMPOSITE en
-   plusieurs phases.** Le circuit gainage (planche → latéral → bird dog) et le circuit
-   abdominaux (crunch → relevés de jambes → gainage) doivent dérouler **les trois
-   mouvements à la suite** dans une seule animation.
-   Conséquence : ≈ 3 phases × 3 positions = **9 images par circuit, soit 1 circuit par
-   tour**. À reprogrammer en fin de thème A.
-3. ✅ **Confirmé au 2026-10-06 :** les lots sont produits **par thème**
-   (A échauffement → B musculation → C étirements → D cardio → E piscine), et non plus
-   par fichier dupliqué. Le thème A est ouvert avec A-01. Les fichiers dupliqués restants
-   (`e5532fe8fa9b40e9.gif` soulevés de terre, `f1a40f2c8c8502db.gif` mollets,
-   `e169d622c8002b38.gif` élévations latérales…) sont traités **à l'intérieur** du thème B.
-4. ✅ **LOT A-01 validé par le user (2026-10-06)** — feu vert pour le LOT A-02.
+1. ✅ **`developpe-incline-halteres` — TRANCHÉ PAR LE USER (2026-10-06) :
+   banc incliné 30°, prise neutre** (paumes face à face).
+   À produire en ouverture du thème B — pectoraux.
+   Attention à le rendre visuellement distinct de `developpe-halteres-incline-30`
+   (LOT 5, 30° prise classique) et de `developpe-halteres-incline-45-prise-neutre`
+   (LOT 5, 45° prise neutre).
+2. ✅ **Circuits du LOT 3 — TRANCHÉ PAR LE USER : animation COMPOSITE en 3 phases.**
+   Les trois mouvements déroulés à la suite dans une seule animation
+   (≈ 9 images par circuit → 1 circuit par tour). À faire en fin de thème A.
+3. ✅ **Lots par thème** (A échauffement → B musculation → C étirements → D cardio →
+   E piscine). Les anciens fichiers dupliqués (`e5532fe8fa9b40e9.gif` soulevés de terre,
+   `f1a40f2c8c8502db.gif` mollets, `e169d622c8002b38.gif` élévations latérales…) sont
+   désormais traités **à l'intérieur** du thème B.
+4. ✅ **Terminer le thème A avant d'attaquer le thème B** (consigne du user, 2026-10-06).
+5. ✅ **LOT A-01 validé par le user** — LOT A-02 livré, en attente de validation.
+6. ⏳ **Aucune autre décision en attente.**
 
 ---
 
 ## 8. RÉSERVES CONNUES (honnêtes)
 
 - **POC** : cadrages coupés et artefacts sur 3 animations (voir § 6, option A).
-- **Circuit gainage / circuit abdominaux** : une seule position animée sur trois, alors que
-  le user a tranché pour une **animation composite en 3 phases** (§ 7.2). À refaire en fin
-  de thème A, à raison d'un circuit par tour (9 images par circuit).
+- **Circuits LOT 3** : une seule position animée sur trois alors que le user veut une
+  animation composite en 3 phases. À refaire (§ 6.5).
 - **Artefacts résiduels** dans les lots 1 et 3 (bavures au-dessus des tapis).
 - **Cadrages hétérogènes** : la largeur des images varie d'un lot à l'autre.
 - **LOT 4** : mouvements sur banc, donc pas de tapis noir au sol ; développé plat montré
   en prise classique ; léger écart de cadrage entre les trois mouvements.
-- **LOT A-01** : l'agent **ne peut pas voir les images générées** (pas de capacité
-  visuelle sur ce poste). La conformité au style est décrite dans les prompts, pas
-  constatée. Validation visuelle = utilisateur.
+- **LOTS A-01 / A-02** : l'agent **ne peut pas voir les images générées** (pas de
+  capacité visuelle sur ce poste). La conformité au style est décrite dans les prompts,
+  pas constatée. Validation visuelle = utilisateur.
 - Pour afficher un GIF multi-positions à l'écran, toujours passer par
   `convert x.gif -coalesce`.
 
@@ -280,6 +277,7 @@ Documents livrés (dépôt public, branche `arena/50bc4ba3-jarvis-fitness-yanis-
 
 - **`yanis-fitness-evolution/animations/PLAN-THEMES.md`** — plan de production thématique
   (5 thèmes, 108 lots de 3), régénéré par `scripts/build-plan-themes.py`.
+- **`yanis-fitness-evolution/scripts/build-gif-lot.sh`** — assemblage GIF + planche.
 - `yanis-fitness-evolution/animations/SUIVI.md` — suivi, compteurs, réserves.
 - `yanis-fitness-evolution/animations/INVENTAIRE.md` — inventaire lisible.
 - `yanis-fitness-evolution/animations/BILAN-VISUEL-ANIMATIONS.pdf` — bilan 14 pages.
@@ -306,9 +304,11 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/50bc4b
 
 > Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 > Dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`, branche
-> `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`, dernier commit `48106d9`.
+> `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`, dernier commit de contenu `918e424`.
 > Lis `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
 > `yanis-fitness-evolution/animations/PLAN-THEMES.md`, mets à jour la branche locale
-> depuis origin, puis enchaîne sur la prochaine action : **LOT A-02**
-> (fire hydrant à l'élastique, squat au poids du corps, fentes arrière au poids du corps).
-> Ne tranche pas seul les décisions en attente (§ 7).
+> depuis origin, puis enchaîne sur la prochaine action : **LOT A-03**
+> (pompes, gainage planche, abduction hanche à l'élastique).
+> **Termine tout le thème A (échauffement) avant d'attaquer le thème B**, en finissant par
+> les 3 étapes chrono `warmup-*` (H + F) et les 2 circuits composites.
+> Aucune décision en attente (§ 7) sauf validation visuelle des lots.
