@@ -88,7 +88,7 @@ git push -u origin arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap
 ### Historique consolidé
 
 ```
-(prochain commit)  LOT A-03 FEMME — mannequin femme (pompes + gainage planche + abduction)
+(e33605b)  LOT A-03 FEMME — mannequin femme (pompes + gainage planche + abduction)
 bda24e1  LOT A-02 FEMME — mannequin femme (thème A, 2 animations sous réserve)
 475beaa  DRAPEAU ROUGE — passation (état de la branche arena/50bc4ba3-…)
 da07c20  LOT A-01 FEMME — mannequin femme (thème A)
