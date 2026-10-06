@@ -12,9 +12,10 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires (minimum) | 357 |
-| Animations créées | 8 (POC 5 + lot 1 : 3) |
+| Animations créées | 11 (POC 5 + lot 1 : 3 + lot 2 : 3) |
 | Fichiers dupliqués corrigés | 3 / 48 |
-| Lots livrés | POC (5 exercices) + LOT 1 (3 exercices) |
+| Exercices du fichier bcdbe16aeafaafec.gif traités | 6 / 8 |
+| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) |
 
 ## Lots
 
@@ -24,4 +25,8 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
   des 8 exercices qui partageaient `bcdbe16aeafaafec.gif`.
   Restent sur ce fichier : mountain climbers, dead bug avec rotation, circuit gainage,
   gainage latéral dynamique, circuit abdominaux.
-- **LOT 2** (à venir) : les 5 exercices restants de `bcdbe16aeafaafec.gif`.
+- **LOT 2** (`animations/lot2/`) : mountain climbers, dead bug avec rotation,
+  gainage latéral dynamique — trois nouveaux mouvements spécifiques.
+- **LOT 3** (à venir) : les 2 circuits restants de `bcdbe16aeafaafec.gif`
+  (circuit gainage planche/latéral/bird dog, circuit abdominaux crunch/relevés/gainage),
+  puis les 47 autres fichiers dupliqués.
