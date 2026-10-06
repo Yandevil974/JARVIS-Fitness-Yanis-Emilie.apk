@@ -1,6 +1,6 @@
 {
   "name": "yanis-fitness-evolution",
-  "version": "1.7.2",
+  "version": "1.8.0",
   "private": true,
   "type": "module",
   "description": "Yanis Fitness Evolution — coaching local, musculation, piscine et récupération. Nouvelle application distincte de JARVIS Fitness, sans régression.",

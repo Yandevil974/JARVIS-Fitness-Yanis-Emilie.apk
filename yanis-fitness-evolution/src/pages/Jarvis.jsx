@@ -12,6 +12,8 @@ import {
 } from "../components/ui.jsx";
 import { exerciseById } from "../data/library.js";
 import { dateLabel } from "../engine/utils.js";
+import { brainEnabled } from "../brain/policy.js";
+import { memoryStats } from "../brain/memory.js";
 export default function Jarvis() {
   const {
     p,
@@ -22,6 +24,8 @@ export default function Jarvis() {
     updateProfile,
     notify,
   } = useApp();
+  const brain = memoryStats(p),
+    brainOn = brainEnabled(p);
   const [input, setInput] = useState(""),
     [listening, setListening] = useState(false);
   const bottom = useRef(),
@@ -96,6 +100,8 @@ export default function Jarvis() {
     "Je n’ai que 30 minutes",
     "Je suis fatigué",
     "Prépare 4 séances par semaine pendant 12 semaines",
+    "Retiens que je préfère m’entraîner le matin",
+    "Qu’est-ce que tu sais sur moi ?",
     "Remplace cet exercice",
     "Analyse ma semaine",
     "Exercice haut des pectoraux",
@@ -228,6 +234,27 @@ export default function Jarvis() {
                         : "Appliquer l’adaptation"}
                     </Button>
                   )}
+                  {m.brain?.kind === "memory_confirmation_guard" && (
+                    <div className="brain-guard-note">
+                      <Icon name="LockKeyhole" size={14} />
+                      Confirmation volontairement manuelle : le chat ne
+                      confirme, ne refuse et n’enregistre aucune mémoire.
+                    </div>
+                  )}
+                  {m.brain?.memoryId && (
+                    <button
+                      className="brain-memory-chip"
+                      onClick={() => navigate("profile", "brain")}
+                    >
+                      <Icon name="Brain" size={15} />
+                      {m.brain.memoryState === "hypothesis"
+                        ? "Hypothèse — à confirmer dans la mémoire contrôlée"
+                        : "Proposition mémoire en attente de confirmation"}
+                      <span>
+                        Ouvrir <Icon name="ArrowUpRight" size={13} />
+                      </span>
+                    </button>
+                  )}
                   {m.applied && (
                     <div className="applied-state">
                       <Icon name="CircleCheck" size={15} />
@@ -289,11 +316,51 @@ export default function Jarvis() {
             <Icon name="LockKeyhole" size={12} /> Analyse par règles locales,
             pas de modèle externe connecté. Aucune donnée envoyée par JARVIS.
             <br />
+            Fitness Brain local : mémoire proposée uniquement sur commande
+            explicite, confirmée à la main dans Profil → Mémoire JARVIS, jamais
+            par un « oui » du chat.
+            <br />
             La dictée, si utilisée, peut utiliser le service vocal Android ou
             celui du navigateur, selon vos réglages.
           </div>
         </Panel>
         <aside className="chat-rail">
+          <Panel className={`brain-rail ${brainOn ? "" : "off"}`}>
+            <div className="eyebrow">FITNESS BRAIN · LOCAL</div>
+            <h3>Mémoire contrôlée</h3>
+            <p className="small-subtitle">
+              Le Brain propose, vous confirmez. Aucun apprentissage automatique,
+              aucune donnée envoyée : le coach déterministe reste aux commandes
+              du programme.
+            </p>
+            <div className="brain-counts">
+              <div>
+                <strong>{brain.pending + brain.hypotheses}</strong>
+                <span>à confirmer</span>
+              </div>
+              <div>
+                <strong>{brain.confirmed}</strong>
+                <span>confirmées</span>
+              </div>
+              <div>
+                <strong>{brain.expired}</strong>
+                <span>expirées</span>
+              </div>
+            </div>
+            <Button
+              variant="secondary small"
+              icon="Brain"
+              onClick={() => navigate("profile", "brain")}
+            >
+              Ouvrir la mémoire contrôlée
+            </Button>
+            <p className="brain-status">
+              <Icon name={brainOn ? "CircleCheck" : "Ban"} size={13} />
+              {brainOn
+                ? "Brain actif · rappel en lecture seule des seules mémoires confirmées."
+                : "Brain désactivé · le coach déterministe historique reste utilisable."}
+            </p>
+          </Panel>
           <Panel>
             <div className="eyebrow">MÉMOIRE SPORTIVE</div>
             <h3>Un contexte. Pas des suppositions.</h3>

@@ -55,6 +55,11 @@ import {
   applyCoachStateToSession,
 } from "./coach-state.js";
 import { isMetconFormat, metconLevel, metconMinutes } from "./source-schedule.js";
+// Fitness Brain local : le coach déterministe reste l'unique auteur des
+// actions sportives. Il ne lit ici que l'état de la mémoire contrôlée pour
+// répondre honnêtement quand le Brain est désactivé — jamais pour agir.
+import { brainEnabled } from "../brain/policy.js";
+import { memoryStats } from "../brain/memory.js";
 
 // ————— Normalisation —————
 const TYPO_FIXES = [
@@ -281,6 +286,23 @@ export const INTENTS = [
   { id: "weight", cues: [["mon poids", 5], ["je pese", 5], ["pesee", 5], ["balance", 4], ["maigrir", 4], ["perdre du poids", 5], ["prendre du poids", 5]] },
   { id: "recovery", cues: [["recuperation", 5], ["sommeil", 5], ["energie", 4], ["repos", 4], ["etirement", 4], ["mobilite", 4], ["souplesse", 4], ["respiration", 4]] },
   { id: "session", cues: [["ma seance", 5], ["seance du jour", 5], ["aujourd hui", 4], ["au programme", 5], ["je fais quoi", 5], ["on fait quoi", 5], ["prochaine seance", 5], ["planning", 3]] },
+  // Mémoire contrôlée : le coach ne mémorise rien lui-même (le Brain local
+  // s'en charge quand il est actif) ; il répond honnêtement sinon.
+  {
+    id: "memory",
+    cues: [
+      ["retiens", 6],
+      ["retiens bien", 6],
+      ["memorise", 6],
+      ["souviens toi", 6],
+      ["garde en memoire", 6],
+      ["ma memoire", 5],
+      ["memoire jarvis", 5],
+      ["qu est ce que tu sais sur moi", 6],
+      ["qu est ce que tu retiens", 6],
+      ["je veux que tu retiennes", 6],
+    ],
+  },
 ];
 export function scoreIntents(q, entities) {
   const scored = [];
@@ -304,6 +326,27 @@ export function specialResponses(p, q, entities, intentId, convo) {
   const turns = (p.messages || []).length,
     prefix = pick(TONE_PREFIX[toneFor(q)], turns),
     ctx = contextSnapshot(p);
+  // Le Brain local traite les commandes de mémoire quand il est actif (le
+  // routeur passe avant). Ce chemin reste utile quand il est désactivé ou
+  // appelé directement : on explique, on n'enregistre rien, on n'invente rien.
+  if (intentId === "memory") {
+    const stats = memoryStats(p);
+    if (!brainEnabled(p))
+      return {
+        text:
+          "Le Fitness Brain local est désactivé : je n’enregistre aucune mémoire, même sur demande explicite.\n\n" +
+          "Pour l’activer : Profil → Mémoire JARVIS. Le coach déterministe reste entièrement disponible pour votre programme, vos séances et vos charges.",
+        navigate: "profile",
+        tab: "brain",
+      };
+    return {
+      text:
+        `La mémoire contrôlée est active : ${stats.confirmed} mémoire(s) confirmée(s), ${stats.pending} proposition(s) en attente, ${stats.hypotheses} hypothèse(s).\n\n` +
+        "Je n’enregistre rien d’office : une proposition naît non confirmée et ne sert ni au rappel ni au contexte avant votre confirmation dans Profil → Mémoire JARVIS. Un « oui » dans le chat ne confirme jamais une mémoire.",
+      navigate: "profile",
+      tab: "brain",
+    };
+  }
   if (intentId === "smalltalk") {
     if (/merci/.test(q))
       return {

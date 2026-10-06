@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.7.2-pyramide-circuit-aqua"
+        default: "v1.8.0-fitness-brain"
 
 permissions:
   contents: write
@@ -73,21 +73,28 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.7.2 — nouvelles structures piscine/aqua
-            APK signée pour `app.yanis.fitness.evolution` (versionCode 172).
+            ## Yanis Fitness Evolution 1.8.0 — Fitness Brain local (mémoire contrôlée)
+            APK signée pour `app.yanis.fitness.evolution` (versionCode 180).
 
-            ### Séances optionnelles
-            - **Pyramide piscine** : trois niveaux progressifs, 18 / 24 / 30 min.
-            - **Circuit aqua à intervalles variables** : trois niveaux, 21 / 27 / 31 min.
-            - Disponibles pour Yanis et Émilie, à lancer manuellement ; aucun ajout automatique au programme ou au planning.
-            - Les six protocoles source et les deux METCON validés restent inchangés. Les GIFs existants sont réutilisés, sans modification des médias.
+            ### Nouveau : mémoire contrôlée, 100 % locale
+            - Dans JARVIS, une commande explicite (« Retiens que… ») crée une **proposition de mémoire**, avec une date de confirmation vide.
+            - Elle reste **inutilisable** (hors rappel et hors contexte) jusqu'à votre confirmation manuelle dans **Profil → Mémoire JARVIS**.
+            - Un « oui » dans le chat **ne confirme pas** une mémoire : la confirmation est volontairement manuelle, dans l'interface.
+            - Une demande ambiguë reste une **hypothèse** ; une mémoire **expirée** sort du rappel.
+            - Le rappel (« Qu'est-ce que tu sais sur moi ? ») est en **lecture seule** : ni programme, ni séance, ni performance modifiés.
+            - Une mémoire ne déclenche **jamais** d'action sportive : le coach déterministe reste seul à agir.
+            - Interrupteur dans **Profil → Mémoire JARVIS** ; désactivé, le coach fonctionne exactement comme avant.
+            - **Aucun fournisseur, SDK, appel distant ni clé** : aucune donnée ne quitte le téléphone.
+
+            ### Inchangé
+            - Programmes, protocoles piscine/aqua, prescriptions, exercices, GIF et médias : aucune modification.
 
             **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Les deux jeux de données restent indépendants.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.7.2.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.8.0.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.7.2.apk.sha256`.
+            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.8.0.apk.sha256`.
 
             ### Importer vos données
             Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.

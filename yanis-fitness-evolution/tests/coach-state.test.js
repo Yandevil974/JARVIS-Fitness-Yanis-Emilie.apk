@@ -12,7 +12,12 @@ import {
   RPE_HIGH,
   RPE_LOW,
 } from "../src/engine/coach-state.js";
-import { coachFindings, applyCoachAction } from "../src/engine/coach.js";
+import { coachFindings, applyCoachAction, interpretCommand } from "../src/engine/coach.js";
+import {
+  confirmMemory,
+  draftMemory,
+  materializeMemory,
+} from "../src/brain/memory.js";
 import { teamAdvice, teamInsights } from "../src/engine/team.js";
 import { makeTeamReview } from "../src/engine/team-review.js";
 import { today, addDays } from "../src/engine/utils.js";
@@ -192,4 +197,46 @@ test("équipe : le coach principal porte la décision, santé et mobilité lisen
   assert.ok(/douleur signalée/i.test(insights[4].text));
   assert.ok(/énergie basse/i.test(insights[4].text));
   assert.ok(/échauffement/i.test(insights[5].text));
+});
+
+// ————— Compatibilité Fitness Brain (module additif) —————
+// Le Brain local n'existe que pour la mémoire contrôlée : la décision du coach
+// et les réponses déterministes doivent rester identiques, mémoire confirmée ou
+// non, Brain actif ou coupé.
+test("le coach déterministe répond à l'identique avec des mémoires confirmées", () => {
+  const phrases = [
+    "Je suis fatigué, allège ma séance",
+    "Quelle charge pour le développé couché ?",
+    "Analyse ma semaine",
+    "Je n’ai que 30 minutes",
+  ];
+  const plain = seeded();
+  const withMemory = structuredClone(plain);
+  const draft = draftMemory("je préfère m’entraîner le matin", {
+    type: "preference",
+  });
+  materializeMemory(withMemory, draft);
+  confirmMemory(withMemory, draft.id, { via: "interface" });
+  materializeMemory(
+    withMemory,
+    draftMemory("peut-être que je préfère le mardi", { state: "hypothesis" }),
+  );
+  for (const phrase of phrases) {
+    assert.deepEqual(
+      interpretCommand(withMemory, phrase),
+      interpretCommand(plain, phrase),
+    );
+  }
+});
+
+test("les mémoires confirmées ne modifient pas la décision hebdomadaire", () => {
+  const p = seeded({ sets: [{ rpe: 6.2 }] });
+  const before = weeklyCoachState(p);
+  const withMemory = structuredClone(p);
+  const draft = draftMemory("je préfère la barre libre", {
+    type: "preference",
+  });
+  materializeMemory(withMemory, draft);
+  confirmMemory(withMemory, draft.id, { via: "interface" });
+  assert.deepEqual(weeklyCoachState(withMemory), before);
 });

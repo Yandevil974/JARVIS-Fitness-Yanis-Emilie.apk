@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément                   | Valeur                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
-| versionName / versionCode | `1.7.2` / `172`                                                                                                                   |
+| versionName / versionCode | `1.8.0` / `180`                                                                                                                   |
 | Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
 | Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
