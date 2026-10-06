@@ -1,0 +1,6175 @@
+{
+ "genere_le": "2026-10-06T10:10:38.595Z",
+ "regle": "1 exercice = 1 animation spécifique (aucun fichier partagé entre deux exercices)",
+ "statistiques": {
+  "exercices_musculation": 209,
+  "etapes_chrono": 50,
+  "etirements": 29,
+  "guides_piscine": 19,
+  "protocoles": 10,
+  "fichiers_media": 381,
+  "animations_necessaires_minimum": 357
+ },
+ "exercices": [
+  {
+   "id": "pont-fessier-au-sol-activation",
+   "nom": "Pont fessier au sol — activation",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/666443484c7f0861.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "hip-thrust-barre",
+   "nom": "Hip thrust barre",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/4e7b70938b8a2e57.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-roumain-halteres",
+   "nom": "Soulevé de terre roumain haltères",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/e5532fe8fa9b40e9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "bulgarian-split-squat",
+   "nom": "Bulgarian split squat",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/dc3d5e6a21656655.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-curl-machine-ou-swiss-ball-leg-curl",
+   "nom": "Leg curl machine (ou swiss-ball leg curl)",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legcurl",
+   "chronometre": false,
+   "animation_actuelle": "/media/9bfb90294c482fc0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "abduction-hanche-debout-a-la-poulie",
+   "nom": "Abduction hanche debout à la poulie",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/4d80713eb3e1fc0b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "kickback-a-la-poulie",
+   "nom": "Kickback à la poulie",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/32fa389d5f16c0d4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "dead-bug",
+   "nom": "Dead bug",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "gainage-planche",
+   "nom": "Gainage planche",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": true,
+   "animation_actuelle": "/media/0703d5049735ed62.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pallof-press-a-l-elastique",
+   "nom": "Pallof press à l'élastique",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/7de6cc31c5c5301e.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tirage-vertical-prise-neutre",
+   "nom": "Tirage vertical prise neutre",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/f44fc658f6103c5b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-haltere-un-bras",
+   "nom": "Rowing haltère un bras",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/23beb23cf39592a5.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-militaire-halteres-assis",
+   "nom": "Développé militaire haltères assis",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/961917e9b811d034.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-halteres",
+   "nom": "Élévations latérales haltères",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/89487b94baa87c1c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "face-pull-a-l-elastique",
+   "nom": "Face pull à l'élastique",
+   "categorie": "musculation",
+   "muscle": "epP",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/da0df09961077306.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pompes-inclinees-mains-surelevees",
+   "nom": "Pompes inclinées (mains surélevées)",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/7e96ab14f783b338.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-halteres",
+   "nom": "Curl haltères",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/7cdb8ca673040b71.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "extension-triceps-a-la-poulie",
+   "nom": "Extension triceps à la poulie",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/028724a3c679a470.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "bird-dog",
+   "nom": "Bird dog",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "crunch-a-la-poulie-ou-au-sol",
+   "nom": "Crunch à la poulie (ou au sol)",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/2c9a6633b3c5c687.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "goblet-squat",
+   "nom": "Goblet squat",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/d7f9e6b6ba8a231b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "hip-thrust-unilateral-1-jambe",
+   "nom": "Hip thrust unilatéral (1 jambe)",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/cd5a8b464328c8b9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-roumain-unilateral-haltere",
+   "nom": "Soulevé de terre roumain unilatéral haltère",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/e5532fe8fa9b40e9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fentes-arriere-alternees",
+   "nom": "Fentes arrière alternées",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/f1330639adb8d27f.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "step-up-sur-banc-hauteur-du-genou",
+   "nom": "Step-up sur banc (hauteur du genou)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/b74c8ef81f7c0bda.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "abduction-assise-machine-ou-elastique",
+   "nom": "Abduction assise (machine ou élastique)",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/71105357b5f1b5a1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "clamshell-a-l-elastique",
+   "nom": "Clamshell à l'élastique",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/491a14439fa13d26.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "mollets-debout-unilateraux",
+   "nom": "Mollets debout unilatéraux",
+   "categorie": "musculation",
+   "muscle": "mol",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "calf",
+   "chronometre": false,
+   "animation_actuelle": "/media/f1a40f2c8c8502db.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "reverse-crunch",
+   "nom": "Reverse crunch",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/74feda7869f70e9d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "gainage-lateral",
+   "nom": "Gainage latéral",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": true,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-couche-halteres",
+   "nom": "Développé couché haltères",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/e4d9c22e0a05ea25.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tirage-horizontal-a-la-poulie",
+   "nom": "Tirage horizontal à la poulie",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/b2d6a7d98ed3d560.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "releves-de-jambes-allongee",
+   "nom": "Relevés de jambes allongée",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/125f10c3eb00a8ef.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "mountain-climbers",
+   "nom": "Mountain climbers",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": true,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "glute-bridge-pieds-sur-banc",
+   "nom": "Glute bridge pieds sur banc",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/666443484c7f0861.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "abduction-hanche-a-l-elastique",
+   "nom": "Abduction hanche à l'élastique",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/71105357b5f1b5a1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "kickback-a-l-elastique",
+   "nom": "Kickback à l'élastique",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/9ea5b7136f88d7ef.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-roumain-barre",
+   "nom": "Soulevé de terre roumain barre",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/e5532fe8fa9b40e9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-curl-machine",
+   "nom": "Leg curl machine",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legcurl",
+   "chronometre": false,
+   "animation_actuelle": "/media/9bfb90294c482fc0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "abduction-hanche-a-la-poulie",
+   "nom": "Abduction hanche à la poulie",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/4d80713eb3e1fc0b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fire-hydrant-a-l-elastique",
+   "nom": "Fire hydrant à l'élastique",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/bad374a6afbb744e.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "dead-bug-avec-rotation",
+   "nom": "Dead bug avec rotation",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pallof-press-a-la-poulie",
+   "nom": "Pallof press à la poulie",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/7de6cc31c5c5301e.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tirage-vertical-prise-large",
+   "nom": "Tirage vertical prise large",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/f44fc658f6103c5b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-barre-buste-penche",
+   "nom": "Rowing barre buste penché",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/f00bd9ef43286ee0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "face-pull-a-la-poulie",
+   "nom": "Face pull à la poulie",
+   "categorie": "musculation",
+   "muscle": "epP",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/da0df09961077306.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-incline-halteres",
+   "nom": "Développé incliné haltères",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/8de6e89e5395700c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "back-squat-charge-moderee",
+   "nom": "Back squat (charge modérée)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/d7f9e6b6ba8a231b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "hip-thrust-unilateral",
+   "nom": "Hip thrust unilatéral",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/cd5a8b464328c8b9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-roumain-unilateral",
+   "nom": "Soulevé de terre roumain unilatéral",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/e5532fe8fa9b40e9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fentes-avant-alternees",
+   "nom": "Fentes avant alternées",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/f1330639adb8d27f.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "presse-a-cuisses-pieds-hauts",
+   "nom": "Presse à cuisses pieds hauts",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/27c43e424dc2ea1a.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "abduction-assise-machine",
+   "nom": "Abduction assise machine",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/71105357b5f1b5a1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "mollets-assis",
+   "nom": "Mollets assis",
+   "categorie": "musculation",
+   "muscle": "mol",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "calf",
+   "chronometre": false,
+   "animation_actuelle": "/media/f1a40f2c8c8502db.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "releves-de-jambes",
+   "nom": "Relevés de jambes",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/125f10c3eb00a8ef.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "circuit-gainage-planche-lateral-bird-dog",
+   "nom": "Circuit gainage (planche + latéral + bird dog)",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": true,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "bulgarian-split-squat-halteres",
+   "nom": "Bulgarian split squat haltères",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/baf2d8590660fc97.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "glute-bridge-en-1-5-reps",
+   "nom": "Glute bridge en 1,5 reps",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/666443484c7f0861.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "abduction-hanche-a-la-poulie-myo-reps",
+   "nom": "Abduction hanche à la poulie — myo-reps",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/4d80713eb3e1fc0b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "kickback-a-la-poulie-drop-set-final",
+   "nom": "Kickback à la poulie — drop set final",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/32fa389d5f16c0d4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "crunch-a-la-poulie",
+   "nom": "Crunch à la poulie",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/2c9a6633b3c5c687.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-halteres-myo-reps",
+   "nom": "Élévations latérales haltères — myo-reps",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/89487b94baa87c1c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "back-squat",
+   "nom": "Back squat",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/9cc6f9c05061308d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "hip-thrust-unilateral-leste",
+   "nom": "Hip thrust unilatéral lesté",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/cd5a8b464328c8b9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fentes-bulgares-pied-arriere-sureleve",
+   "nom": "Fentes bulgares (pied arrière surélevé)",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/7709724c07a6ef07.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "abduction-assise-en-1-5-reps",
+   "nom": "Abduction assise en 1,5 reps",
+   "categorie": "musculation",
+   "muscle": "moy",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "abduction",
+   "chronometre": false,
+   "animation_actuelle": "/media/4d80713eb3e1fc0b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "gainage-lateral-dynamique",
+   "nom": "Gainage latéral dynamique",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": true,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "circuit-abdominaux-crunch-releves-gainage",
+   "nom": "Circuit abdominaux (crunch + relevés + gainage)",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": true,
+   "animation_actuelle": "/media/bcdbe16aeafaafec.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+   "nom": "Hip thrust barre — test de charge max (3-5 reps)",
+   "categorie": "musculation",
+   "muscle": "fes",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "bridge",
+   "chronometre": false,
+   "animation_actuelle": "/media/4e7b70938b8a2e57.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-roumain-barre-test-3-5-reps",
+   "nom": "Soulevé de terre roumain barre — test (3-5 reps)",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/e5532fe8fa9b40e9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-barre-buste-penche-test-3-5-reps",
+   "nom": "Rowing barre buste penché — test (3-5 reps)",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/b4659c4fcdf2fdcf.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-militaire-halteres-assis-test-3-5-reps",
+   "nom": "Développé militaire haltères assis — test (3-5 reps)",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/961917e9b811d034.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "triceps-dips",
+   "nom": "Triceps dips",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/3aea2b016706d5d4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "triceps-extensions-halteres-banc-plat",
+   "nom": "Triceps extensions haltères, banc plat",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/3aea2b016706d5d4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "french-press-poulie-basse",
+   "nom": "French press poulie basse",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/a40720f67740d2a0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-scott-barre-ez-pronation",
+   "nom": "Curl Scott barre EZ, pronation",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/35a344aacf3dd581.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-marteau-assis",
+   "nom": "Curl marteau assis",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/b3e93e1e1a7f9eb9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-halteres-incline",
+   "nom": "Curl haltères incliné",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/c1cae5b0122d9b7d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-assises",
+   "nom": "Élévations latérales assises",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/fa7442793fd72d35.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-assises-variante",
+   "nom": "Élévations latérales assises (variante)",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/fa7442793fd72d35.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-coude-a-90",
+   "nom": "Élévations latérales coude à 90°",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/e169d622c8002b38.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "squat-cycliste-squat-complet",
+   "nom": "Squat cycliste (squat complet)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/fdcc2d01cb5a53d1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-press",
+   "nom": "Leg press",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/a4443a1008f6202b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-extension",
+   "nom": "Leg extension",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legext",
+   "chronometre": false,
+   "animation_actuelle": "/media/26f2b337d32111ac.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-curl-allonge",
+   "nom": "Leg curl allongé",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legcurl",
+   "chronometre": false,
+   "animation_actuelle": "/media/d907d47eb2de1547.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "back-extension-horizontal",
+   "nom": "Back extension horizontal",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/6cfcff2b2b4dcee5.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "mollets-debout",
+   "nom": "Mollets debout",
+   "categorie": "musculation",
+   "muscle": "mol",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "calf",
+   "chronometre": false,
+   "animation_actuelle": "/media/f1a40f2c8c8502db.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-incline-barre",
+   "nom": "Développé incliné barre",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "barbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/e4d9c22e0a05ea25.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-plat-prise-neutre",
+   "nom": "Développé haltères plat, prise neutre",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/8de6e89e5395700c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "ecartes-halteres-decline",
+   "nom": "Écartés haltères décliné",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/bb6790d94f7411fc.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-barre-buste-penche-pronation",
+   "nom": "Rowing barre buste penché, pronation",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/f00bd9ef43286ee0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-assis-prise-neutre",
+   "nom": "Rowing assis, prise neutre",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/2fbfc7c455ffaae1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tirage-vertical-prise-pronation",
+   "nom": "Tirage vertical prise pronation",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/f44fc658f6103c5b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "releves-de-jambes-allonge",
+   "nom": "Relevés de jambes allongé",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/69ddf0f4ec9c937b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "crunch-sur-swiss-ball",
+   "nom": "Crunch sur swiss ball",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/74feda7869f70e9d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-militaire-debout",
+   "nom": "Développé militaire debout",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/961917e9b811d034.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tractions-pull-up",
+   "nom": "Tractions (pull-up)",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "pullup"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/1e5e8f5780c28245.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-incline-30",
+   "nom": "Développé haltères incliné 30°",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/8de6e89e5395700c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "french-press-barre-ez",
+   "nom": "French press barre EZ",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/a40720f67740d2a0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "front-squat",
+   "nom": "Front squat",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/d7f9e6b6ba8a231b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-curl-debout",
+   "nom": "Leg curl debout",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legcurl",
+   "chronometre": false,
+   "animation_actuelle": "/media/9bfb90294c482fc0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fentes-bulgares-halteres-pied-avant-sureleve",
+   "nom": "Fentes bulgares haltères (pied avant surélevé)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/a5f01971f29278bd.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "releves-de-jambes-incline",
+   "nom": "Relevés de jambes incliné",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/04baa4392f5b1f22.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "mollets-unilateraux",
+   "nom": "Mollets unilatéraux",
+   "categorie": "musculation",
+   "muscle": "mol",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "calf",
+   "chronometre": false,
+   "animation_actuelle": "/media/f1a40f2c8c8502db.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tractions-prise-neutre-chin-up",
+   "nom": "Tractions prise neutre (chin-up)",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "pullup"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/561920fcf8afeb91.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-decline-prise-neutre",
+   "nom": "Développé haltères décliné, prise neutre",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/8de6e89e5395700c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-haltere-un-bras-coude-ouvert",
+   "nom": "Rowing haltère un bras, coude ouvert",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/2fbfc7c455ffaae1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "extensions-triceps-barre-ez",
+   "nom": "Extensions triceps barre EZ",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/3aea2b016706d5d4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-scott-barre-ez-supination",
+   "nom": "Curl Scott barre EZ, supination",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/35a344aacf3dd581.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre",
+   "nom": "Soulevé de terre",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/e5532fe8fa9b40e9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "step-up-haut",
+   "nom": "Step-up haut",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/55312a3f227db7a4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-scott-haltere-prise-neutre",
+   "nom": "Curl Scott haltère, prise neutre",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/7cdb8ca673040b71.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "barre-au-front-pushdown-triceps",
+   "nom": "Barre au front (pushdown triceps)",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/4b9f932f0c18e763.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-poulie-basse-supination",
+   "nom": "Curl poulie basse, supination",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/2c413fc688059206.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-assis-neutre-pronation",
+   "nom": "Développé haltères assis, neutre→pronation",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/6f21183bb94b2b48.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "back-squat-barre-haute",
+   "nom": "Back squat barre haute",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/dcf2495f19b92d50.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "hack-squat",
+   "nom": "Hack squat",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/d7f9e6b6ba8a231b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "back-extension-45-prise-snatch",
+   "nom": "Back extension 45°, prise snatch",
+   "categorie": "musculation",
+   "muscle": "lom",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/aed05e9f734fc1f7.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "jackknife-sur-swiss-ball",
+   "nom": "Jackknife sur swiss ball",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/74feda7869f70e9d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-plat",
+   "nom": "Développé haltères plat",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/8de6e89e5395700c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-barre-ez-supination-buste-penche",
+   "nom": "Rowing barre EZ supination, buste penché",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/f00bd9ef43286ee0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "cables-croises",
+   "nom": "Câbles croisés",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/09395898bff010e6.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-assis-etirement",
+   "nom": "Rowing assis + étirement",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/b2d6a7d98ed3d560.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-incline-30-face-au-banc",
+   "nom": "Élévations latérales incliné 30° (face au banc)",
+   "categorie": "musculation",
+   "muscle": "epP",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/e169d622c8002b38.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "french-press-haltere-un-bras",
+   "nom": "French press haltère un bras",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/a40720f67740d2a0.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-barre-debout",
+   "nom": "Curl barre debout",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/5f34fc2dab826c6b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "back-squat-inertie-pause-complete",
+   "nom": "Back squat inertie (pause complète)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/8403a244b533745c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fentes-barre",
+   "nom": "Fentes barre",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/79aaec788db36846.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-couche-barre-plat",
+   "nom": "Développé couché barre plat",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "barbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/e4d9c22e0a05ea25.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tractions-supination-chin-up",
+   "nom": "Tractions supination (chin-up)",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "pullup"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/d9bfa9bd06ca082c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-assis",
+   "nom": "Développé haltères assis",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/f6db6170a201743a.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "extensions-triceps-pullover-barre-ez",
+   "nom": "Extensions triceps + pullover barre EZ",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/e9aa82132494b300.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-haltere-supination-banc-scott-90",
+   "nom": "Curl haltère supination, banc Scott 90°",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/3387705757e6015d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "releves-de-jambes-suspendu",
+   "nom": "Relevés de jambes suspendu",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "pullup"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/73207adea6ee540f.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-couche-prise-serree",
+   "nom": "Développé couché prise serrée",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/5e38d08443e26319.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "extensions-triceps-halteres-incline",
+   "nom": "Extensions triceps haltères incliné",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/2ec2c2c1b7eb18a5.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pushdown-triceps-cable",
+   "nom": "Pushdown triceps câble",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/028724a3c679a470.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-scott-haltere-neutre",
+   "nom": "Curl Scott haltère neutre",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/847bbcb2d383c859.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-zottman-assis",
+   "nom": "Curl Zottman assis",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/088734f0b07937f1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-poulie-basse",
+   "nom": "Curl poulie basse",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/71bafc979c3027a8.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-incline-30",
+   "nom": "Élévations latérales incliné 30°",
+   "categorie": "musculation",
+   "muscle": "epP",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/e169d622c8002b38.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-incline-45",
+   "nom": "Élévations latérales incliné 45°",
+   "categorie": "musculation",
+   "muscle": "epP",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/e169d622c8002b38.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales",
+   "nom": "Élévations latérales",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/8f4f4491bc6c575d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fentes-marchees",
+   "nom": "Fentes marchées",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/11221d745c89b523.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-curl-allonge-pieds-pointes",
+   "nom": "Leg curl allongé, pieds pointés",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legcurl",
+   "chronometre": false,
+   "animation_actuelle": "/media/1bdd45afb59cc298.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-curl-allonge-pieds-flechis",
+   "nom": "Leg curl allongé, pieds fléchis",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legcurl",
+   "chronometre": false,
+   "animation_actuelle": "/media/b954305f0f5568b2.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "good-morning-debout",
+   "nom": "Good morning debout",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/f0a30121a67e2645.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-incline-45-prise-neutre",
+   "nom": "Développé haltères incliné 45°, prise neutre",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/8de6e89e5395700c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "ecartes-halteres",
+   "nom": "Écartés haltères",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/bb6790d94f7411fc.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-haltere-buste-penche",
+   "nom": "Rowing haltère buste penché",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/23beb23cf39592a5.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-zottman-un-bras-banc-scott",
+   "nom": "Curl Zottman un bras, banc Scott",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/f7b27078da26260e.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "split-squat-poulie-basse",
+   "nom": "Split squat poulie basse",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/0506f08e38e5f283.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "dips",
+   "nom": "Dips",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/7e96ab14f783b338.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tractions-prise-large",
+   "nom": "Tractions prise large",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "pullup"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/5934c70ce1ea1dff.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-incline-pronation",
+   "nom": "Développé haltères incliné, pronation",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/7ae94caf326740df.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-partiel-prise-snatch",
+   "nom": "Soulevé de terre partiel, prise snatch",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/6cfcff2b2b4dcee5.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-halteres-incline-supination",
+   "nom": "Curl haltères incliné, supination",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/87fa283fb3939593.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-derriere-la-nuque",
+   "nom": "Développé derrière la nuque",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/110f2ff472634503.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-curl-allonge-1-1-4-en-haut",
+   "nom": "Leg curl allongé, 1 1/4 en haut",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "legcurl",
+   "chronometre": false,
+   "animation_actuelle": "/media/1bdd45afb59cc298.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "mollets-a-la-presse",
+   "nom": "Mollets à la presse",
+   "categorie": "musculation",
+   "muscle": "mol",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "calf",
+   "chronometre": false,
+   "animation_actuelle": "/media/f1a40f2c8c8502db.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "ecartes-cables-incline",
+   "nom": "Écartés câbles incliné",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/12340891882ef2ef.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-assis-au-cou",
+   "nom": "Rowing assis au cou",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/108ebf1d815f3a90.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "drop-lunges-fentes-sautees-controlees",
+   "nom": "Drop lunges (fentes sautées contrôlées)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/cb0991bbf1591550.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "glute-ham-raise",
+   "nom": "Glute ham raise",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/72ee533b1621d1e9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "lean-away-pull-ups",
+   "nom": "Lean away pull-ups",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "pullup"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/031caeb63a4f2c4a.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-incline-45",
+   "nom": "Développé haltères incliné 45°",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/8de6e89e5395700c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-haltere-un-bras-prise-neutre",
+   "nom": "Rowing haltère un bras, prise neutre",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/2fbfc7c455ffaae1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-partiel",
+   "nom": "Soulevé de terre partiel",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/66e84e7479c88c0d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "ab-wheel-roulette",
+   "nom": "Ab wheel (roulette)",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/95021dba5e760d1a.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-marteau",
+   "nom": "Curl marteau",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/b3e93e1e1a7f9eb9.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-scott-90-haltere-supination",
+   "nom": "Curl Scott 90° haltère supination",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/08fa83632f20a9b2.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "california-press-barre-au-cou",
+   "nom": "California press (barre au cou)",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/843d0c24da25ffee.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-incline",
+   "nom": "Élévations latérales incliné",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/e169d622c8002b38.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "safety-bar-squat-ou-barre-classique",
+   "nom": "Safety bar squat (ou barre classique)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/ac4b515aecf50e23.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-incline",
+   "nom": "Développé haltères incliné",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/08aa27f428cbd97f.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "cables-croises-rotation-externe",
+   "nom": "Câbles croisés + rotation externe",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/09395898bff010e6.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pullover-cable-bras-tendus",
+   "nom": "Pullover câble bras tendus",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/8c88fbe1e4909441.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-assis-cable-unilateral",
+   "nom": "Rowing assis câble unilatéral",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/cfa999e3a88716f6.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-zottman",
+   "nom": "Curl Zottman",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/fafaa646f23dd0d4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "squat-cycliste",
+   "nom": "Squat cycliste",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/fdcc2d01cb5a53d1.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "leg-press-unilateral",
+   "nom": "Leg press unilatéral",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "machine"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/a4443a1008f6202b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "wood-chop-poulie-haute",
+   "nom": "Wood chop poulie haute",
+   "categorie": "musculation",
+   "muscle": "abs",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "crunch",
+   "chronometre": false,
+   "animation_actuelle": "/media/9b353c570b841963.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-haltere-un-bras-debout",
+   "nom": "Développé haltère un bras debout",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "static",
+   "chronometre": false,
+   "animation_actuelle": "/media/75b355758a02d50d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "extensions-triceps-barre-ez-pullover",
+   "nom": "Extensions triceps barre EZ + pullover",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/e9aa82132494b300.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-concentration",
+   "nom": "Curl concentration",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/b18b490f9567c8dd.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "split-squat-barbell-pied-avant-sureleve",
+   "nom": "Split squat barbell (pied avant surélevé)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/e2092a9d98b64a54.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-couche-decline-prise-serree",
+   "nom": "Développé couché décliné prise serrée",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/0684d5408ba6e6d2.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "extensions-triceps-halteres-plat",
+   "nom": "Extensions triceps haltères plat",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/4245ee48dd3c17a5.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-halteres-incline-prise-neutre",
+   "nom": "Curl haltères incliné, prise neutre",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/87fa283fb3939593.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-halteres-assis-prise-neutre",
+   "nom": "Développé haltères assis, prise neutre",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "dumbbell",
+    "bench"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/5d87213f7a64c97e.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "elevations-laterales-lean-away",
+   "nom": "Élévations latérales lean away",
+   "categorie": "musculation",
+   "muscle": "epL",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lat",
+   "chronometre": false,
+   "animation_actuelle": "/media/c2c18f416e8d2e2b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "tirage-vertical-lean-away",
+   "nom": "Tirage vertical lean away",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/f44fc658f6103c5b.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pullover-haltere-plat",
+   "nom": "Pullover haltère plat",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "dumbbell"
+   ],
+   "pattern": "pull",
+   "chronometre": false,
+   "animation_actuelle": "/media/f56fbc2e2510c4b2.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-couche-plat-inertie-depuis-les-pins",
+   "nom": "Développé couché plat, inertie depuis les pins",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/a73949925ba1c2fd.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-militaire-inertie-depuis-les-pins",
+   "nom": "Développé militaire, inertie depuis les pins",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/2e64bf2629810e52.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "drop-lunges-fentes-controlees",
+   "nom": "Drop lunges (fentes contrôlées)",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/cb0991bbf1591550.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-couche-barre",
+   "nom": "Développé couché barre",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "barbell",
+    "bench"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/e4d9c22e0a05ea25.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "extensions-triceps-poulie",
+   "nom": "Extensions triceps poulie",
+   "categorie": "musculation",
+   "muscle": "tri",
+   "materiel": [
+    "cable"
+   ],
+   "pattern": "triceps",
+   "chronometre": false,
+   "animation_actuelle": "/media/6832f958bb4f7106.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "curl-barre",
+   "nom": "Curl barre",
+   "categorie": "musculation",
+   "muscle": "bic",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "curl",
+   "chronometre": false,
+   "animation_actuelle": "/media/5a4e600e04883bd6.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-couche-test-1rm",
+   "nom": "Développé couché — test 1RM",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/bcaf491c4edff6de.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "back-squat-test-1rm",
+   "nom": "Back squat — test 1RM",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "barbell"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/f2d8f3f06dc0b439.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "souleve-de-terre-test-1rm",
+   "nom": "Soulevé de terre — test 1RM",
+   "categorie": "musculation",
+   "muscle": "isc",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "hinge",
+   "chronometre": false,
+   "animation_actuelle": "/media/ff7d82be3903075d.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "developpe-militaire-test-1rm",
+   "nom": "Développé militaire — test 1RM",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "raise",
+   "chronometre": false,
+   "animation_actuelle": "/media/e264f1d521391d3c.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pompes",
+   "nom": "Pompes",
+   "categorie": "musculation",
+   "muscle": "pec",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "press",
+   "chronometre": false,
+   "animation_actuelle": "/media/7e96ab14f783b338.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "squat-au-poids-du-corps",
+   "nom": "Squat au poids du corps",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "squat",
+   "chronometre": false,
+   "animation_actuelle": "/media/3a18659a669ab642.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "rowing-a-l-elastique",
+   "nom": "Rowing à l’élastique",
+   "categorie": "musculation",
+   "muscle": "dos",
+   "materiel": [
+    "band"
+   ],
+   "pattern": "row",
+   "chronometre": false,
+   "animation_actuelle": "/media/e19753d0efd83b10.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "fentes-arriere-au-poids-du-corps",
+   "nom": "Fentes arrière au poids du corps",
+   "categorie": "musculation",
+   "muscle": "qua",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "lunge",
+   "chronometre": false,
+   "animation_actuelle": "/media/5e4cdda12471b2b3.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "mobilite-des-epaules",
+   "nom": "Mobilité des épaules",
+   "categorie": "musculation",
+   "muscle": "epA",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "static",
+   "chronometre": true,
+   "animation_actuelle": "/media/6e8ef0c7fab7dba8.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "respiration-diaphragmatique",
+   "nom": "Respiration diaphragmatique",
+   "categorie": "musculation",
+   "muscle": "tra",
+   "materiel": [
+    "bodyweight"
+   ],
+   "pattern": "crunch",
+   "chronometre": true,
+   "animation_actuelle": "/media/114a727b696375ef.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  }
+ ],
+ "etapes_chrono": [
+  {
+   "id": "cardio-elliptique-fractionne",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/d003581431ffef91.gif",
+    "femme": "/media/17b2e2fcfe181f96.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "cardio-elliptique-mise-en-route",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/7acb83b71752c44c.gif",
+    "femme": "/media/faf36719f9d19e75.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "cardio-elliptique-recup",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/7d74994e8d8777be.gif",
+    "femme": "/media/29b722fb3b737b89.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "cardio-elliptique-retour",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/098935746d0a45c3.gif",
+    "femme": "/media/4f2c80886ae7d326.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "cardio-transition",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/bf54d3bdd17514e2.gif",
+    "femme": "/media/524c459ec951747e.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "guide-aqua-jogging",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/1df3b49ed74b1925.gif",
+    "femme": "/media/34bb7bcf656e8877.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "guide-battements-au-bord",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/28c30533035866c3.gif",
+    "femme": "/media/412e719e885c20ed.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "guide-ciseaux-au-bord",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/9bb0c2ca85d475fe.gif",
+    "femme": "/media/f8fed44ca325852f.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "guide-gainage-vertical",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/ea89dfb8521cdcc6.gif",
+    "femme": "/media/e4545f4946f3fc0a.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "guide-nage-douce-respiration",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/f5754e3553d3922c.gif",
+    "femme": "/media/a9b2430d317e3bba.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "guide-talons-fesses",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/5d72daefeab297b1.gif",
+    "femme": "/media/4ffe4ebe811fc2a8.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-deplacements-lateraux",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/1577377e6f4c748e.gif",
+    "femme": "/media/0bddac76645e3de9.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-etirements-bord",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/b8ec7015069f653b.gif",
+    "femme": "/media/8f862f2ae511a13e.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-fractionne",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/0c5c94c45d4c9963.gif",
+    "femme": "/media/19750699871755e5.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-marche-aquatique",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/333e9e6ac33e22bb.gif",
+    "femme": "/media/60207d563d74fd85.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-nage-douce",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/f5754e3553d3922c.gif",
+    "femme": "/media/a9b2430d317e3bba.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-nage-statique",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/fcf1161f1d9a09d8.gif",
+    "femme": "/media/236c40fd157f0f41.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-recup-complete",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/08daba09974f37b0.gif",
+    "femme": "/media/d72ff5db739f1e85.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-recup-tabata",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/333e9e6ac33e22bb.gif",
+    "femme": "/media/60207d563d74fd85.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-retour-calme",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/b114493c7ecf5b5a.gif",
+    "femme": "/media/7ff5fea738f927d8.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pool-sprint",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/1cecadb65e47315a.gif",
+    "femme": "/media/47746e12d90c5e2c.gif"
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-adduction-debout",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/6ec4644eeb54b838.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-avb-extenseurs",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/9010e2f9e3d14233.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-avb-flechisseurs",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/b2b87c3a254bd7fd.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-biceps",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/fea2fafa28306ecc.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-cobra",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/70f0e7b4bad530c7.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-dos-enfant",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/616fc69f3a7503bf.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-dos-suspension",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/bcea47097d3f6f50.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-ep-arriere",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/35a75b58860e85ec.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-ep-lateral",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/64889e5c53a06784.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-ep-posterieur",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/f704179757f839cd.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-flechisseur-hanche",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/8b2309caa8cad1ce.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-grenouille",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/fc041ed2c5084f83.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-isc-flexion",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/b5c280103b62b9e6.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-isc-une-jambe",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/93fc13ba7cb57d7a.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-mollet-marche",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/9151efe4c2262c96.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-mollet-mur",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/1e6e0dd8a12b35d6.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-pec-mur",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/0cf727335e619341.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-pec-porte",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/214150ca9201891b.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-pigeon",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/2af48ab193eaafb4.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-piriforme",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/1e8d5bfcc0bc9ead.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-quad-cote",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/69858722346f40bf.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-quad-debout",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/58caaf8e87d7a050.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-respiration",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/54a3ca1547a3a613.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-torsion-allongee",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/cf7af56885b9a27b.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-triceps-coude",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/385ff605943ddd08.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-triceps-dos",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/8f53c697bc6ba576.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "warmup-approche",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/9fc2b36203570787.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "warmup-mobilite",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/df8e7e9b65108876.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "warmup-route",
+   "categorie": "etape-chrono",
+   "variantes": {
+    "homme": "/media/7a19c37100cf148f.gif",
+    "femme": null
+   },
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  }
+ ],
+ "etirements": [
+  {
+   "id": "stretch-pec-0",
+   "nom": "Étirement dans l'encadrement de porte",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-pec-1",
+   "nom": "Bras tendu contre le mur",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-dos-0",
+   "nom": "Position de l'enfant (Balasana)",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-dos-1",
+   "nom": "Suspension à la barre",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-dos-2",
+   "nom": "Torsion allongée",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-epA-0",
+   "nom": "Mains croisées derrière le dos",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-epL-0",
+   "nom": "Bras tendu contre la poitrine",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-epP-0",
+   "nom": "Bras tendu devant, main tirée",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-bic-0",
+   "nom": "Bras tendu derrière",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-tri-0",
+   "nom": "Coude au-dessus de la tête",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-tri-1",
+   "nom": "Main dans le dos",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-avb-0",
+   "nom": "Étirement des fléchisseurs",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-avb-1",
+   "nom": "Étirement des extenseurs",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-abs-0",
+   "nom": "Étirement du cobra",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-lom-0",
+   "nom": "Position de l'enfant",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-lom-1",
+   "nom": "Torsion allongée genoux",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-fes-0",
+   "nom": "Pigeon assis",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-qua-0",
+   "nom": "Talon vers la fesse (debout)",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-qua-1",
+   "nom": "Allongé sur le côté",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-isc-0",
+   "nom": "Flexion avant jambes tendues",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-isc-1",
+   "nom": "Une jambe tendue, une pliée",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-add-0",
+   "nom": "Grenouille (plantes jointes)",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-mol-0",
+   "nom": "Étirement contre le mur",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-mol-1",
+   "nom": "Mollet en escalier",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-fes-1",
+   "nom": "Étirement du piriforme assis",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-moy-0",
+   "nom": "Adduction de la hanche debout",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-moy-1",
+   "nom": "Étirement du fléchisseur de hanche (chevalier)",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-tra-0",
+   "nom": "Cobra doux",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "id": "stretch-tra-1",
+   "nom": "Respiration diaphragmatique allongée",
+   "categorie": "etirement-recuperation",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  }
+ ],
+ "guides": [
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/2e234599c9335530.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/888e26f63ae4b8d6.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/b2b32833d73d3ca4.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/faa82528766b9402.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/8f862f2ae511a13e.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/3c4e418989edad42.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/236c40fd157f0f41.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/a9b2430d317e3bba.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/14170349578b3fdb.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/19750699871755e5.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/2f02dcceffc27db7.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/d72ff5db739f1e85.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/60207d563d74fd85.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/9701d6f5bdb746fc.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/918740f6a87d5681.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/fe34482aa6faf932.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/da2ffd87ac18a1e8.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/365abb508d34af16.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  },
+  {
+   "categorie": "guide-piscine",
+   "animation_actuelle": "/media/5e97ffa887ffc414.gif",
+   "animation_necessaire": true,
+   "statut": "à recréer"
+  }
+ ],
+ "protocoles": [
+  {
+   "id": "endurance",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "interval",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "sprint",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "aquahiit",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "recovery",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "aquatabata",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "metcon-piscine",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "metcon-aquatabata",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "pyramide-piscine",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  },
+  {
+   "id": "circuit-aqua-variable",
+   "categorie": "protocole-piscine-aqua",
+   "etapes": 0,
+   "animation_necessaire": false,
+   "statut": "à recréer"
+  }
+ ],
+ "duplications": [
+  {
+   "path": "/media/bcdbe16aeafaafec.gif",
+   "count": 8,
+   "exercices": [
+    {
+     "id": "dead-bug",
+     "name": "Dead bug"
+    },
+    {
+     "id": "bird-dog",
+     "name": "Bird dog"
+    },
+    {
+     "id": "gainage-lateral",
+     "name": "Gainage latéral"
+    },
+    {
+     "id": "mountain-climbers",
+     "name": "Mountain climbers"
+    },
+    {
+     "id": "dead-bug-avec-rotation",
+     "name": "Dead bug avec rotation"
+    },
+    {
+     "id": "circuit-gainage-planche-lateral-bird-dog",
+     "name": "Circuit gainage (planche + latéral + bird dog)"
+    },
+    {
+     "id": "gainage-lateral-dynamique",
+     "name": "Gainage latéral dynamique"
+    },
+    {
+     "id": "circuit-abdominaux-crunch-releves-gainage",
+     "name": "Circuit abdominaux (crunch + relevés + gainage)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/8de6e89e5395700c.gif",
+   "count": 7,
+   "exercices": [
+    {
+     "id": "developpe-incline-halteres",
+     "name": "Développé incliné haltères"
+    },
+    {
+     "id": "developpe-halteres-plat-prise-neutre",
+     "name": "Développé haltères plat, prise neutre"
+    },
+    {
+     "id": "developpe-halteres-incline-30",
+     "name": "Développé haltères incliné 30°"
+    },
+    {
+     "id": "developpe-halteres-decline-prise-neutre",
+     "name": "Développé haltères décliné, prise neutre"
+    },
+    {
+     "id": "developpe-halteres-plat",
+     "name": "Développé haltères plat"
+    },
+    {
+     "id": "developpe-halteres-incline-45-prise-neutre",
+     "name": "Développé haltères incliné 45°, prise neutre"
+    },
+    {
+     "id": "developpe-halteres-incline-45",
+     "name": "Développé haltères incliné 45°"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/e5532fe8fa9b40e9.gif",
+   "count": 6,
+   "exercices": [
+    {
+     "id": "souleve-de-terre-roumain-halteres",
+     "name": "Soulevé de terre roumain haltères"
+    },
+    {
+     "id": "souleve-de-terre-roumain-unilateral-haltere",
+     "name": "Soulevé de terre roumain unilatéral haltère"
+    },
+    {
+     "id": "souleve-de-terre-roumain-barre",
+     "name": "Soulevé de terre roumain barre"
+    },
+    {
+     "id": "souleve-de-terre-roumain-unilateral",
+     "name": "Soulevé de terre roumain unilatéral"
+    },
+    {
+     "id": "souleve-de-terre-roumain-barre-test-3-5-reps",
+     "name": "Soulevé de terre roumain barre — test (3-5 reps)"
+    },
+    {
+     "id": "souleve-de-terre",
+     "name": "Soulevé de terre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/f1a40f2c8c8502db.gif",
+   "count": 5,
+   "exercices": [
+    {
+     "id": "mollets-debout-unilateraux",
+     "name": "Mollets debout unilatéraux"
+    },
+    {
+     "id": "mollets-assis",
+     "name": "Mollets assis"
+    },
+    {
+     "id": "mollets-debout",
+     "name": "Mollets debout"
+    },
+    {
+     "id": "mollets-unilateraux",
+     "name": "Mollets unilatéraux"
+    },
+    {
+     "id": "mollets-a-la-presse",
+     "name": "Mollets à la presse"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/e169d622c8002b38.gif",
+   "count": 5,
+   "exercices": [
+    {
+     "id": "elevations-laterales-coude-a-90",
+     "name": "Élévations latérales coude à 90°"
+    },
+    {
+     "id": "elevations-laterales-incline-30-face-au-banc",
+     "name": "Élévations latérales incliné 30° (face au banc)"
+    },
+    {
+     "id": "elevations-laterales-incline-30",
+     "name": "Élévations latérales incliné 30°"
+    },
+    {
+     "id": "elevations-laterales-incline-45",
+     "name": "Élévations latérales incliné 45°"
+    },
+    {
+     "id": "elevations-laterales-incline",
+     "name": "Élévations latérales incliné"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/4d80713eb3e1fc0b.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "abduction-hanche-debout-a-la-poulie",
+     "name": "Abduction hanche debout à la poulie"
+    },
+    {
+     "id": "abduction-hanche-a-la-poulie",
+     "name": "Abduction hanche à la poulie"
+    },
+    {
+     "id": "abduction-hanche-a-la-poulie-myo-reps",
+     "name": "Abduction hanche à la poulie — myo-reps"
+    },
+    {
+     "id": "abduction-assise-en-1-5-reps",
+     "name": "Abduction assise en 1,5 reps"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/f44fc658f6103c5b.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "tirage-vertical-prise-neutre",
+     "name": "Tirage vertical prise neutre"
+    },
+    {
+     "id": "tirage-vertical-prise-large",
+     "name": "Tirage vertical prise large"
+    },
+    {
+     "id": "tirage-vertical-prise-pronation",
+     "name": "Tirage vertical prise pronation"
+    },
+    {
+     "id": "tirage-vertical-lean-away",
+     "name": "Tirage vertical lean away"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/d7f9e6b6ba8a231b.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "goblet-squat",
+     "name": "Goblet squat"
+    },
+    {
+     "id": "back-squat-charge-moderee",
+     "name": "Back squat (charge modérée)"
+    },
+    {
+     "id": "front-squat",
+     "name": "Front squat"
+    },
+    {
+     "id": "hack-squat",
+     "name": "Hack squat"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/e4d9c22e0a05ea25.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "developpe-couche-halteres",
+     "name": "Développé couché haltères"
+    },
+    {
+     "id": "developpe-incline-barre",
+     "name": "Développé incliné barre"
+    },
+    {
+     "id": "developpe-couche-barre-plat",
+     "name": "Développé couché barre plat"
+    },
+    {
+     "id": "developpe-couche-barre",
+     "name": "Développé couché barre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/666443484c7f0861.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "pont-fessier-au-sol-activation",
+     "name": "Pont fessier au sol — activation"
+    },
+    {
+     "id": "glute-bridge-pieds-sur-banc",
+     "name": "Glute bridge pieds sur banc"
+    },
+    {
+     "id": "glute-bridge-en-1-5-reps",
+     "name": "Glute bridge en 1,5 reps"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/9bfb90294c482fc0.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "leg-curl-machine-ou-swiss-ball-leg-curl",
+     "name": "Leg curl machine (ou swiss-ball leg curl)"
+    },
+    {
+     "id": "leg-curl-machine",
+     "name": "Leg curl machine"
+    },
+    {
+     "id": "leg-curl-debout",
+     "name": "Leg curl debout"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/961917e9b811d034.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "developpe-militaire-halteres-assis",
+     "name": "Développé militaire haltères assis"
+    },
+    {
+     "id": "developpe-militaire-halteres-assis-test-3-5-reps",
+     "name": "Développé militaire haltères assis — test (3-5 reps)"
+    },
+    {
+     "id": "developpe-militaire-debout",
+     "name": "Développé militaire debout"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/7e96ab14f783b338.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "pompes-inclinees-mains-surelevees",
+     "name": "Pompes inclinées (mains surélevées)"
+    },
+    {
+     "id": "dips",
+     "name": "Dips"
+    },
+    {
+     "id": "pompes",
+     "name": "Pompes"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/cd5a8b464328c8b9.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "hip-thrust-unilateral-1-jambe",
+     "name": "Hip thrust unilatéral (1 jambe)"
+    },
+    {
+     "id": "hip-thrust-unilateral",
+     "name": "Hip thrust unilatéral"
+    },
+    {
+     "id": "hip-thrust-unilateral-leste",
+     "name": "Hip thrust unilatéral lesté"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/71105357b5f1b5a1.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "abduction-assise-machine-ou-elastique",
+     "name": "Abduction assise (machine ou élastique)"
+    },
+    {
+     "id": "abduction-hanche-a-l-elastique",
+     "name": "Abduction hanche à l'élastique"
+    },
+    {
+     "id": "abduction-assise-machine",
+     "name": "Abduction assise machine"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/74feda7869f70e9d.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "reverse-crunch",
+     "name": "Reverse crunch"
+    },
+    {
+     "id": "crunch-sur-swiss-ball",
+     "name": "Crunch sur swiss ball"
+    },
+    {
+     "id": "jackknife-sur-swiss-ball",
+     "name": "Jackknife sur swiss ball"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/f00bd9ef43286ee0.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "rowing-barre-buste-penche",
+     "name": "Rowing barre buste penché"
+    },
+    {
+     "id": "rowing-barre-buste-penche-pronation",
+     "name": "Rowing barre buste penché, pronation"
+    },
+    {
+     "id": "rowing-barre-ez-supination-buste-penche",
+     "name": "Rowing barre EZ supination, buste penché"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/3aea2b016706d5d4.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "triceps-dips",
+     "name": "Triceps dips"
+    },
+    {
+     "id": "triceps-extensions-halteres-banc-plat",
+     "name": "Triceps extensions haltères, banc plat"
+    },
+    {
+     "id": "extensions-triceps-barre-ez",
+     "name": "Extensions triceps barre EZ"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/a40720f67740d2a0.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "french-press-poulie-basse",
+     "name": "French press poulie basse"
+    },
+    {
+     "id": "french-press-barre-ez",
+     "name": "French press barre EZ"
+    },
+    {
+     "id": "french-press-haltere-un-bras",
+     "name": "French press haltère un bras"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/2fbfc7c455ffaae1.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "rowing-assis-prise-neutre",
+     "name": "Rowing assis, prise neutre"
+    },
+    {
+     "id": "rowing-haltere-un-bras-coude-ouvert",
+     "name": "Rowing haltère un bras, coude ouvert"
+    },
+    {
+     "id": "rowing-haltere-un-bras-prise-neutre",
+     "name": "Rowing haltère un bras, prise neutre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/4e7b70938b8a2e57.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "hip-thrust-barre",
+     "name": "Hip thrust barre"
+    },
+    {
+     "id": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+     "name": "Hip thrust barre — test de charge max (3-5 reps)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/32fa389d5f16c0d4.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "kickback-a-la-poulie",
+     "name": "Kickback à la poulie"
+    },
+    {
+     "id": "kickback-a-la-poulie-drop-set-final",
+     "name": "Kickback à la poulie — drop set final"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/7de6cc31c5c5301e.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "pallof-press-a-l-elastique",
+     "name": "Pallof press à l'élastique"
+    },
+    {
+     "id": "pallof-press-a-la-poulie",
+     "name": "Pallof press à la poulie"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/23beb23cf39592a5.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "rowing-haltere-un-bras",
+     "name": "Rowing haltère un bras"
+    },
+    {
+     "id": "rowing-haltere-buste-penche",
+     "name": "Rowing haltère buste penché"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/89487b94baa87c1c.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "elevations-laterales-halteres",
+     "name": "Élévations latérales haltères"
+    },
+    {
+     "id": "elevations-laterales-halteres-myo-reps",
+     "name": "Élévations latérales haltères — myo-reps"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/da0df09961077306.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "face-pull-a-l-elastique",
+     "name": "Face pull à l'élastique"
+    },
+    {
+     "id": "face-pull-a-la-poulie",
+     "name": "Face pull à la poulie"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/7cdb8ca673040b71.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-halteres",
+     "name": "Curl haltères"
+    },
+    {
+     "id": "curl-scott-haltere-prise-neutre",
+     "name": "Curl Scott haltère, prise neutre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/028724a3c679a470.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "extension-triceps-a-la-poulie",
+     "name": "Extension triceps à la poulie"
+    },
+    {
+     "id": "pushdown-triceps-cable",
+     "name": "Pushdown triceps câble"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/2c9a6633b3c5c687.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "crunch-a-la-poulie-ou-au-sol",
+     "name": "Crunch à la poulie (ou au sol)"
+    },
+    {
+     "id": "crunch-a-la-poulie",
+     "name": "Crunch à la poulie"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/f1330639adb8d27f.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "fentes-arriere-alternees",
+     "name": "Fentes arrière alternées"
+    },
+    {
+     "id": "fentes-avant-alternees",
+     "name": "Fentes avant alternées"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/b2d6a7d98ed3d560.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "tirage-horizontal-a-la-poulie",
+     "name": "Tirage horizontal à la poulie"
+    },
+    {
+     "id": "rowing-assis-etirement",
+     "name": "Rowing assis + étirement"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/125f10c3eb00a8ef.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "releves-de-jambes-allongee",
+     "name": "Relevés de jambes allongée"
+    },
+    {
+     "id": "releves-de-jambes",
+     "name": "Relevés de jambes"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/35a344aacf3dd581.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-scott-barre-ez-pronation",
+     "name": "Curl Scott barre EZ, pronation"
+    },
+    {
+     "id": "curl-scott-barre-ez-supination",
+     "name": "Curl Scott barre EZ, supination"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/b3e93e1e1a7f9eb9.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-marteau-assis",
+     "name": "Curl marteau assis"
+    },
+    {
+     "id": "curl-marteau",
+     "name": "Curl marteau"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/fa7442793fd72d35.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "elevations-laterales-assises",
+     "name": "Élévations latérales assises"
+    },
+    {
+     "id": "elevations-laterales-assises-variante",
+     "name": "Élévations latérales assises (variante)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/fdcc2d01cb5a53d1.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "squat-cycliste-squat-complet",
+     "name": "Squat cycliste (squat complet)"
+    },
+    {
+     "id": "squat-cycliste",
+     "name": "Squat cycliste"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/a4443a1008f6202b.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "leg-press",
+     "name": "Leg press"
+    },
+    {
+     "id": "leg-press-unilateral",
+     "name": "Leg press unilatéral"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/6cfcff2b2b4dcee5.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "back-extension-horizontal",
+     "name": "Back extension horizontal"
+    },
+    {
+     "id": "souleve-de-terre-partiel-prise-snatch",
+     "name": "Soulevé de terre partiel, prise snatch"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/bb6790d94f7411fc.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "ecartes-halteres-decline",
+     "name": "Écartés haltères décliné"
+    },
+    {
+     "id": "ecartes-halteres",
+     "name": "Écartés haltères"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/09395898bff010e6.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "cables-croises",
+     "name": "Câbles croisés"
+    },
+    {
+     "id": "cables-croises-rotation-externe",
+     "name": "Câbles croisés + rotation externe"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/e9aa82132494b300.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "extensions-triceps-pullover-barre-ez",
+     "name": "Extensions triceps + pullover barre EZ"
+    },
+    {
+     "id": "extensions-triceps-barre-ez-pullover",
+     "name": "Extensions triceps barre EZ + pullover"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/1bdd45afb59cc298.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "leg-curl-allonge-pieds-pointes",
+     "name": "Leg curl allongé, pieds pointés"
+    },
+    {
+     "id": "leg-curl-allonge-1-1-4-en-haut",
+     "name": "Leg curl allongé, 1 1/4 en haut"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/87fa283fb3939593.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-halteres-incline-supination",
+     "name": "Curl haltères incliné, supination"
+    },
+    {
+     "id": "curl-halteres-incline-prise-neutre",
+     "name": "Curl haltères incliné, prise neutre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/cb0991bbf1591550.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "drop-lunges-fentes-sautees-controlees",
+     "name": "Drop lunges (fentes sautées contrôlées)"
+    },
+    {
+     "id": "drop-lunges-fentes-controlees",
+     "name": "Drop lunges (fentes contrôlées)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/f5754e3553d3922c.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "guide-nage-douce-respiration:homme",
+     "name": "guide-nage-douce-respiration"
+    },
+    {
+     "id": "pool-nage-douce:homme",
+     "name": "pool-nage-douce"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/a9b2430d317e3bba.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "guide-nage-douce-respiration:femme",
+     "name": "guide-nage-douce-respiration"
+    },
+    {
+     "id": "pool-nage-douce:femme",
+     "name": "pool-nage-douce"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/333e9e6ac33e22bb.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "pool-marche-aquatique:homme",
+     "name": "pool-marche-aquatique"
+    },
+    {
+     "id": "pool-recup-tabata:homme",
+     "name": "pool-recup-tabata"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  },
+  {
+   "path": "/media/60207d563d74fd85.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "pool-marche-aquatique:femme",
+     "name": "pool-marche-aquatique"
+    },
+    {
+     "id": "pool-recup-tabata:femme",
+     "name": "pool-recup-tabata"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation"
+  }
+ ],
+ "fichiers_orphelins": [
+  "03098b19c4672ce5.gif",
+  "04ab405e919744b5.gif",
+  "04f326d81f8d5028.gif",
+  "055d358895efaa10.gif",
+  "0766d3a06bf79dc8.gif",
+  "07d64eaf46c2dc2f.gif",
+  "0860394a5a99f74b.gif",
+  "0a5625b92247ed69.gif",
+  "0bce9dc43c3b2517.gif",
+  "10ab787fbf26b1f4.gif",
+  "1317e405efd6ef2b.gif",
+  "14170349578b3fdb.gif",
+  "1519aacc58d53c5c.gif",
+  "16f6ff0f7ceba611.gif",
+  "1c28908ab83cde2e.gif",
+  "1c63a36d168d8b74.gif",
+  "1f27c3cbcf803765.gif",
+  "212f5c752f93e8c1.gif",
+  "2204cfebd9d348e8.gif",
+  "22146cff6a787e8a.gif",
+  "22ce97e4b3cb18cf.gif",
+  "22de3f52c624be93.gif",
+  "2baeb1b19fde1b86.gif",
+  "2c51d8ca1b6fb79a.gif",
+  "2e234599c9335530.gif",
+  "2f02dcceffc27db7.gif",
+  "2f18d124f8a83d4e.gif",
+  "30adf4e98e55b6cd.gif",
+  "3438ce158299c474.jpg",
+  "365abb508d34af16.gif",
+  "36c6cb37445d3880.gif",
+  "37f614cd3432709b.gif",
+  "3bcaad5ec7cdf892.gif",
+  "3c4e418989edad42.gif",
+  "3d29edbd3afb4da6.jpg",
+  "3d2c2e5b9e90f3b7.gif",
+  "3d44d275ca25d146.gif",
+  "3e2ed581e11781d5.gif",
+  "43bad87368c12614.gif",
+  "44fc577dce29aff5.gif",
+  "45a34272da9569a6.gif",
+  "489169360e044c48.gif",
+  "48fe4a8cbb0d125c.gif",
+  "497ab2e22c01080c.gif",
+  "4af33157ce25267c.gif",
+  "4c2b19fa924f90a8.gif",
+  "4dfda05b1db24000.gif",
+  "4eff701bcdf9a359.gif",
+  "524e72fe748d5732.gif",
+  "530326beb7c7a652.gif",
+  "54e922d2264af08a.jpg",
+  "5bc5625d9433ca6e.gif",
+  "5d6a89132df205f8.gif",
+  "5dd80c9e1b36df25.gif",
+  "5e97ffa887ffc414.gif",
+  "6223da1b562d9339.gif",
+  "63e925f417c73b92.gif",
+  "64f9a3c89ee9369b.jpg",
+  "66849c3144d589f2.gif",
+  "6809d9052927484a.gif",
+  "6e77f29b4f7b4870.gif",
+  "6fcfe5741629ca2a.gif",
+  "7517a916496ec766.gif",
+  "789c6d90f30eb33e.gif",
+  "78f9aee57a4101b1.gif",
+  "7c0c6d264e85d66a.gif",
+  "8047d3ad4dc93bc7.gif",
+  "805f8592e2bccb1a.gif",
+  "83a58904a8967e9a.gif",
+  "882c9c361686a9c9.gif",
+  "888e26f63ae4b8d6.gif",
+  "8eecb0152081ff26.gif",
+  "8fe5818f3a4ebebe.gif",
+  "90366242bb0e0b8b.gif",
+  "918740f6a87d5681.gif",
+  "93ab17b0de26fbc8.gif",
+  "966aae5ddbd59234.gif",
+  "9701d6f5bdb746fc.gif",
+  "995e1f9a9cedc5ec.gif",
+  "9dfc7f7acb3e74e5.gif",
+  "9e7f92622aca6913.gif",
+  "9f22747c305f521b.gif",
+  "9f8ae03b97d31344.gif",
+  "a292bf967a074d35.gif",
+  "a4c1fb89be18062f.gif",
+  "a5c1c2427ee83c93.gif",
+  "a8b1d1173ade4e8f.gif",
+  "a8fb4616e53e9cb9.gif",
+  "aab0de0aad0c275a.gif",
+  "afe2f533cbbef546.gif",
+  "b0d0b89c32ca0aec.gif",
+  "b2236e6b7a81a1b5.gif",
+  "b2b32833d73d3ca4.gif",
+  "b395c84efcad344b.gif",
+  "b4522eb6968d20d0.gif",
+  "b49969e64dc275f5.gif",
+  "b54f07a7b66c1aed.gif",
+  "ba6ba483a1372c9e.gif",
+  "bc4d9bed4bbb590a.gif",
+  "c07b14f1bcc8e8ca.gif",
+  "c1065beff4823907.gif",
+  "c3a2b9892161522e.gif",
+  "c44c661ce50cfb15.gif",
+  "c4d2de309fa47b4c.gif",
+  "c4d38fa88ecbf537.gif",
+  "c937caee1e7ea8f7.gif",
+  "c99b47eef506fe79.jpg",
+  "c9c8fd84181374ab.jpg",
+  "ca785b4cf81c98fa.gif",
+  "cardio-elliptique.jpg",
+  "cardio-recup-active.jpg",
+  "cardio-transition.jpg",
+  "cd0cc940608ac100.gif",
+  "cf312b839f6da027.gif",
+  "d06257e45606b033.gif",
+  "d13d9f751f4731ab.gif",
+  "d167ad11643a47cf.gif",
+  "d9c88be0658a81af.gif",
+  "da2ffd87ac18a1e8.gif",
+  "dc0cabae23adbfd5.gif",
+  "e035a3d8e8c21744.gif",
+  "e56d7d8feec13a3a.gif",
+  "e5e523860faa9e70.gif",
+  "e5f17140d8d97591.gif",
+  "e6c19b6540cdcf30.gif",
+  "e739223b003d3611.gif",
+  "e7699039b93fdb20.gif",
+  "ea226c444f72de0f.gif",
+  "eb6b4ca3fa5a3f78.gif",
+  "ebc7379850a4ee2f.gif",
+  "ebde577e05a55bed.gif",
+  "elite-j0-compl.jpg",
+  "elite-j0-dos.jpg",
+  "elite-j0-face.jpg",
+  "elite-j0-profil.jpg",
+  "elite-m12-compl.jpg",
+  "elite-m12-dos.jpg",
+  "elite-m12-face.jpg",
+  "elite-m12-profil.jpg",
+  "f1dde35bd517f24b.gif",
+  "f45acf6d65339fce.gif",
+  "f529e06a69b973f4.gif",
+  "f64281e2dbd7986f.gif",
+  "f73444e9dc2fee89.gif",
+  "faa82528766b9402.gif",
+  "fabb86971a81ea03.gif",
+  "fd7c5fb1226873f6.gif",
+  "fe34482aa6faf932.gif",
+  "ff100d7322ba1193.gif",
+  "ff8da6669ded238d.gif",
+  "pool-deplacements-lateraux.jpg",
+  "pool-etirements-bord.jpg",
+  "pool-fractionne.jpg",
+  "pool-marche-aquatique.jpg",
+  "pool-nage-douce.jpg",
+  "pool-nage-statique.jpg",
+  "pool-recup-complete.jpg",
+  "pool-recup-tabata.jpg",
+  "pool-retour-calme.jpg",
+  "pool-sprint.jpg",
+  "stretch-adduction-debout.jpg",
+  "stretch-avb-extenseurs.jpg",
+  "stretch-avb-flechisseurs.jpg",
+  "stretch-biceps.jpg",
+  "stretch-cobra.jpg",
+  "stretch-dos-enfant.jpg",
+  "stretch-dos-suspension.jpg",
+  "stretch-ep-arriere.jpg",
+  "stretch-ep-lateral.jpg",
+  "stretch-ep-posterieur.jpg",
+  "stretch-flechisseur-hanche.jpg",
+  "stretch-grenouille.jpg",
+  "stretch-isc-flexion.jpg",
+  "stretch-isc-une-jambe.jpg",
+  "stretch-mollet-marche.jpg",
+  "stretch-mollet-mur.jpg",
+  "stretch-pec-mur.jpg",
+  "stretch-pec-porte.jpg",
+  "stretch-pigeon.jpg",
+  "stretch-piriforme.jpg",
+  "stretch-quad-cote.jpg",
+  "stretch-quad-debout.jpg",
+  "stretch-respiration.jpg",
+  "stretch-torsion-allongee.jpg",
+  "stretch-triceps-coude.jpg",
+  "stretch-triceps-dos.jpg",
+  "warmup-cardio.jpg",
+  "warmup-mobilite.jpg",
+  "warmup-series-approche.jpg"
+ ],
+ "problemes": [
+  {
+   "type": "animation_missing",
+   "id": "stretch-adduction-debout",
+   "label": "stretch-adduction-debout (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-avb-extenseurs",
+   "label": "stretch-avb-extenseurs (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-avb-flechisseurs",
+   "label": "stretch-avb-flechisseurs (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-biceps",
+   "label": "stretch-biceps (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-cobra",
+   "label": "stretch-cobra (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-dos-enfant",
+   "label": "stretch-dos-enfant (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-dos-suspension",
+   "label": "stretch-dos-suspension (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-ep-arriere",
+   "label": "stretch-ep-arriere (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-ep-lateral",
+   "label": "stretch-ep-lateral (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-ep-posterieur",
+   "label": "stretch-ep-posterieur (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-flechisseur-hanche",
+   "label": "stretch-flechisseur-hanche (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-grenouille",
+   "label": "stretch-grenouille (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-isc-flexion",
+   "label": "stretch-isc-flexion (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-isc-une-jambe",
+   "label": "stretch-isc-une-jambe (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-mollet-marche",
+   "label": "stretch-mollet-marche (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-mollet-mur",
+   "label": "stretch-mollet-mur (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-pec-mur",
+   "label": "stretch-pec-mur (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-pec-porte",
+   "label": "stretch-pec-porte (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-pigeon",
+   "label": "stretch-pigeon (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-piriforme",
+   "label": "stretch-piriforme (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-quad-cote",
+   "label": "stretch-quad-cote (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-quad-debout",
+   "label": "stretch-quad-debout (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-respiration",
+   "label": "stretch-respiration (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-torsion-allongee",
+   "label": "stretch-torsion-allongee (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-triceps-coude",
+   "label": "stretch-triceps-coude (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "stretch-triceps-dos",
+   "label": "stretch-triceps-dos (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "warmup-approche",
+   "label": "warmup-approche (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "warmup-mobilite",
+   "label": "warmup-mobilite (femme)"
+  },
+  {
+   "type": "animation_missing",
+   "id": "warmup-route",
+   "label": "warmup-route (femme)"
+  },
+  {
+   "path": "/media/bcdbe16aeafaafec.gif",
+   "count": 8,
+   "exercices": [
+    {
+     "id": "dead-bug",
+     "name": "Dead bug"
+    },
+    {
+     "id": "bird-dog",
+     "name": "Bird dog"
+    },
+    {
+     "id": "gainage-lateral",
+     "name": "Gainage latéral"
+    },
+    {
+     "id": "mountain-climbers",
+     "name": "Mountain climbers"
+    },
+    {
+     "id": "dead-bug-avec-rotation",
+     "name": "Dead bug avec rotation"
+    },
+    {
+     "id": "circuit-gainage-planche-lateral-bird-dog",
+     "name": "Circuit gainage (planche + latéral + bird dog)"
+    },
+    {
+     "id": "gainage-lateral-dynamique",
+     "name": "Gainage latéral dynamique"
+    },
+    {
+     "id": "circuit-abdominaux-crunch-releves-gainage",
+     "name": "Circuit abdominaux (crunch + relevés + gainage)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/bcdbe16aeafaafec.gif",
+   "label": "8 usages"
+  },
+  {
+   "path": "/media/8de6e89e5395700c.gif",
+   "count": 7,
+   "exercices": [
+    {
+     "id": "developpe-incline-halteres",
+     "name": "Développé incliné haltères"
+    },
+    {
+     "id": "developpe-halteres-plat-prise-neutre",
+     "name": "Développé haltères plat, prise neutre"
+    },
+    {
+     "id": "developpe-halteres-incline-30",
+     "name": "Développé haltères incliné 30°"
+    },
+    {
+     "id": "developpe-halteres-decline-prise-neutre",
+     "name": "Développé haltères décliné, prise neutre"
+    },
+    {
+     "id": "developpe-halteres-plat",
+     "name": "Développé haltères plat"
+    },
+    {
+     "id": "developpe-halteres-incline-45-prise-neutre",
+     "name": "Développé haltères incliné 45°, prise neutre"
+    },
+    {
+     "id": "developpe-halteres-incline-45",
+     "name": "Développé haltères incliné 45°"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/8de6e89e5395700c.gif",
+   "label": "7 usages"
+  },
+  {
+   "path": "/media/e5532fe8fa9b40e9.gif",
+   "count": 6,
+   "exercices": [
+    {
+     "id": "souleve-de-terre-roumain-halteres",
+     "name": "Soulevé de terre roumain haltères"
+    },
+    {
+     "id": "souleve-de-terre-roumain-unilateral-haltere",
+     "name": "Soulevé de terre roumain unilatéral haltère"
+    },
+    {
+     "id": "souleve-de-terre-roumain-barre",
+     "name": "Soulevé de terre roumain barre"
+    },
+    {
+     "id": "souleve-de-terre-roumain-unilateral",
+     "name": "Soulevé de terre roumain unilatéral"
+    },
+    {
+     "id": "souleve-de-terre-roumain-barre-test-3-5-reps",
+     "name": "Soulevé de terre roumain barre — test (3-5 reps)"
+    },
+    {
+     "id": "souleve-de-terre",
+     "name": "Soulevé de terre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/e5532fe8fa9b40e9.gif",
+   "label": "6 usages"
+  },
+  {
+   "path": "/media/f1a40f2c8c8502db.gif",
+   "count": 5,
+   "exercices": [
+    {
+     "id": "mollets-debout-unilateraux",
+     "name": "Mollets debout unilatéraux"
+    },
+    {
+     "id": "mollets-assis",
+     "name": "Mollets assis"
+    },
+    {
+     "id": "mollets-debout",
+     "name": "Mollets debout"
+    },
+    {
+     "id": "mollets-unilateraux",
+     "name": "Mollets unilatéraux"
+    },
+    {
+     "id": "mollets-a-la-presse",
+     "name": "Mollets à la presse"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/f1a40f2c8c8502db.gif",
+   "label": "5 usages"
+  },
+  {
+   "path": "/media/e169d622c8002b38.gif",
+   "count": 5,
+   "exercices": [
+    {
+     "id": "elevations-laterales-coude-a-90",
+     "name": "Élévations latérales coude à 90°"
+    },
+    {
+     "id": "elevations-laterales-incline-30-face-au-banc",
+     "name": "Élévations latérales incliné 30° (face au banc)"
+    },
+    {
+     "id": "elevations-laterales-incline-30",
+     "name": "Élévations latérales incliné 30°"
+    },
+    {
+     "id": "elevations-laterales-incline-45",
+     "name": "Élévations latérales incliné 45°"
+    },
+    {
+     "id": "elevations-laterales-incline",
+     "name": "Élévations latérales incliné"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/e169d622c8002b38.gif",
+   "label": "5 usages"
+  },
+  {
+   "path": "/media/4d80713eb3e1fc0b.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "abduction-hanche-debout-a-la-poulie",
+     "name": "Abduction hanche debout à la poulie"
+    },
+    {
+     "id": "abduction-hanche-a-la-poulie",
+     "name": "Abduction hanche à la poulie"
+    },
+    {
+     "id": "abduction-hanche-a-la-poulie-myo-reps",
+     "name": "Abduction hanche à la poulie — myo-reps"
+    },
+    {
+     "id": "abduction-assise-en-1-5-reps",
+     "name": "Abduction assise en 1,5 reps"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/4d80713eb3e1fc0b.gif",
+   "label": "4 usages"
+  },
+  {
+   "path": "/media/f44fc658f6103c5b.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "tirage-vertical-prise-neutre",
+     "name": "Tirage vertical prise neutre"
+    },
+    {
+     "id": "tirage-vertical-prise-large",
+     "name": "Tirage vertical prise large"
+    },
+    {
+     "id": "tirage-vertical-prise-pronation",
+     "name": "Tirage vertical prise pronation"
+    },
+    {
+     "id": "tirage-vertical-lean-away",
+     "name": "Tirage vertical lean away"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/f44fc658f6103c5b.gif",
+   "label": "4 usages"
+  },
+  {
+   "path": "/media/d7f9e6b6ba8a231b.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "goblet-squat",
+     "name": "Goblet squat"
+    },
+    {
+     "id": "back-squat-charge-moderee",
+     "name": "Back squat (charge modérée)"
+    },
+    {
+     "id": "front-squat",
+     "name": "Front squat"
+    },
+    {
+     "id": "hack-squat",
+     "name": "Hack squat"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/d7f9e6b6ba8a231b.gif",
+   "label": "4 usages"
+  },
+  {
+   "path": "/media/e4d9c22e0a05ea25.gif",
+   "count": 4,
+   "exercices": [
+    {
+     "id": "developpe-couche-halteres",
+     "name": "Développé couché haltères"
+    },
+    {
+     "id": "developpe-incline-barre",
+     "name": "Développé incliné barre"
+    },
+    {
+     "id": "developpe-couche-barre-plat",
+     "name": "Développé couché barre plat"
+    },
+    {
+     "id": "developpe-couche-barre",
+     "name": "Développé couché barre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/e4d9c22e0a05ea25.gif",
+   "label": "4 usages"
+  },
+  {
+   "path": "/media/666443484c7f0861.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "pont-fessier-au-sol-activation",
+     "name": "Pont fessier au sol — activation"
+    },
+    {
+     "id": "glute-bridge-pieds-sur-banc",
+     "name": "Glute bridge pieds sur banc"
+    },
+    {
+     "id": "glute-bridge-en-1-5-reps",
+     "name": "Glute bridge en 1,5 reps"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/666443484c7f0861.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/9bfb90294c482fc0.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "leg-curl-machine-ou-swiss-ball-leg-curl",
+     "name": "Leg curl machine (ou swiss-ball leg curl)"
+    },
+    {
+     "id": "leg-curl-machine",
+     "name": "Leg curl machine"
+    },
+    {
+     "id": "leg-curl-debout",
+     "name": "Leg curl debout"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/9bfb90294c482fc0.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/961917e9b811d034.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "developpe-militaire-halteres-assis",
+     "name": "Développé militaire haltères assis"
+    },
+    {
+     "id": "developpe-militaire-halteres-assis-test-3-5-reps",
+     "name": "Développé militaire haltères assis — test (3-5 reps)"
+    },
+    {
+     "id": "developpe-militaire-debout",
+     "name": "Développé militaire debout"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/961917e9b811d034.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/7e96ab14f783b338.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "pompes-inclinees-mains-surelevees",
+     "name": "Pompes inclinées (mains surélevées)"
+    },
+    {
+     "id": "dips",
+     "name": "Dips"
+    },
+    {
+     "id": "pompes",
+     "name": "Pompes"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/7e96ab14f783b338.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/cd5a8b464328c8b9.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "hip-thrust-unilateral-1-jambe",
+     "name": "Hip thrust unilatéral (1 jambe)"
+    },
+    {
+     "id": "hip-thrust-unilateral",
+     "name": "Hip thrust unilatéral"
+    },
+    {
+     "id": "hip-thrust-unilateral-leste",
+     "name": "Hip thrust unilatéral lesté"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/cd5a8b464328c8b9.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/71105357b5f1b5a1.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "abduction-assise-machine-ou-elastique",
+     "name": "Abduction assise (machine ou élastique)"
+    },
+    {
+     "id": "abduction-hanche-a-l-elastique",
+     "name": "Abduction hanche à l'élastique"
+    },
+    {
+     "id": "abduction-assise-machine",
+     "name": "Abduction assise machine"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/71105357b5f1b5a1.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/74feda7869f70e9d.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "reverse-crunch",
+     "name": "Reverse crunch"
+    },
+    {
+     "id": "crunch-sur-swiss-ball",
+     "name": "Crunch sur swiss ball"
+    },
+    {
+     "id": "jackknife-sur-swiss-ball",
+     "name": "Jackknife sur swiss ball"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/74feda7869f70e9d.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/f00bd9ef43286ee0.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "rowing-barre-buste-penche",
+     "name": "Rowing barre buste penché"
+    },
+    {
+     "id": "rowing-barre-buste-penche-pronation",
+     "name": "Rowing barre buste penché, pronation"
+    },
+    {
+     "id": "rowing-barre-ez-supination-buste-penche",
+     "name": "Rowing barre EZ supination, buste penché"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/f00bd9ef43286ee0.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/3aea2b016706d5d4.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "triceps-dips",
+     "name": "Triceps dips"
+    },
+    {
+     "id": "triceps-extensions-halteres-banc-plat",
+     "name": "Triceps extensions haltères, banc plat"
+    },
+    {
+     "id": "extensions-triceps-barre-ez",
+     "name": "Extensions triceps barre EZ"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/3aea2b016706d5d4.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/a40720f67740d2a0.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "french-press-poulie-basse",
+     "name": "French press poulie basse"
+    },
+    {
+     "id": "french-press-barre-ez",
+     "name": "French press barre EZ"
+    },
+    {
+     "id": "french-press-haltere-un-bras",
+     "name": "French press haltère un bras"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/a40720f67740d2a0.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/2fbfc7c455ffaae1.gif",
+   "count": 3,
+   "exercices": [
+    {
+     "id": "rowing-assis-prise-neutre",
+     "name": "Rowing assis, prise neutre"
+    },
+    {
+     "id": "rowing-haltere-un-bras-coude-ouvert",
+     "name": "Rowing haltère un bras, coude ouvert"
+    },
+    {
+     "id": "rowing-haltere-un-bras-prise-neutre",
+     "name": "Rowing haltère un bras, prise neutre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/2fbfc7c455ffaae1.gif",
+   "label": "3 usages"
+  },
+  {
+   "path": "/media/4e7b70938b8a2e57.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "hip-thrust-barre",
+     "name": "Hip thrust barre"
+    },
+    {
+     "id": "hip-thrust-barre-test-de-charge-max-3-5-reps",
+     "name": "Hip thrust barre — test de charge max (3-5 reps)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/4e7b70938b8a2e57.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/32fa389d5f16c0d4.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "kickback-a-la-poulie",
+     "name": "Kickback à la poulie"
+    },
+    {
+     "id": "kickback-a-la-poulie-drop-set-final",
+     "name": "Kickback à la poulie — drop set final"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/32fa389d5f16c0d4.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/7de6cc31c5c5301e.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "pallof-press-a-l-elastique",
+     "name": "Pallof press à l'élastique"
+    },
+    {
+     "id": "pallof-press-a-la-poulie",
+     "name": "Pallof press à la poulie"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/7de6cc31c5c5301e.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/23beb23cf39592a5.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "rowing-haltere-un-bras",
+     "name": "Rowing haltère un bras"
+    },
+    {
+     "id": "rowing-haltere-buste-penche",
+     "name": "Rowing haltère buste penché"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/23beb23cf39592a5.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/89487b94baa87c1c.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "elevations-laterales-halteres",
+     "name": "Élévations latérales haltères"
+    },
+    {
+     "id": "elevations-laterales-halteres-myo-reps",
+     "name": "Élévations latérales haltères — myo-reps"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/89487b94baa87c1c.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/da0df09961077306.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "face-pull-a-l-elastique",
+     "name": "Face pull à l'élastique"
+    },
+    {
+     "id": "face-pull-a-la-poulie",
+     "name": "Face pull à la poulie"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/da0df09961077306.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/7cdb8ca673040b71.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-halteres",
+     "name": "Curl haltères"
+    },
+    {
+     "id": "curl-scott-haltere-prise-neutre",
+     "name": "Curl Scott haltère, prise neutre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/7cdb8ca673040b71.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/028724a3c679a470.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "extension-triceps-a-la-poulie",
+     "name": "Extension triceps à la poulie"
+    },
+    {
+     "id": "pushdown-triceps-cable",
+     "name": "Pushdown triceps câble"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/028724a3c679a470.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/2c9a6633b3c5c687.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "crunch-a-la-poulie-ou-au-sol",
+     "name": "Crunch à la poulie (ou au sol)"
+    },
+    {
+     "id": "crunch-a-la-poulie",
+     "name": "Crunch à la poulie"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/2c9a6633b3c5c687.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/f1330639adb8d27f.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "fentes-arriere-alternees",
+     "name": "Fentes arrière alternées"
+    },
+    {
+     "id": "fentes-avant-alternees",
+     "name": "Fentes avant alternées"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/f1330639adb8d27f.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/b2d6a7d98ed3d560.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "tirage-horizontal-a-la-poulie",
+     "name": "Tirage horizontal à la poulie"
+    },
+    {
+     "id": "rowing-assis-etirement",
+     "name": "Rowing assis + étirement"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/b2d6a7d98ed3d560.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/125f10c3eb00a8ef.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "releves-de-jambes-allongee",
+     "name": "Relevés de jambes allongée"
+    },
+    {
+     "id": "releves-de-jambes",
+     "name": "Relevés de jambes"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/125f10c3eb00a8ef.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/35a344aacf3dd581.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-scott-barre-ez-pronation",
+     "name": "Curl Scott barre EZ, pronation"
+    },
+    {
+     "id": "curl-scott-barre-ez-supination",
+     "name": "Curl Scott barre EZ, supination"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/35a344aacf3dd581.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/b3e93e1e1a7f9eb9.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-marteau-assis",
+     "name": "Curl marteau assis"
+    },
+    {
+     "id": "curl-marteau",
+     "name": "Curl marteau"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/b3e93e1e1a7f9eb9.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/fa7442793fd72d35.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "elevations-laterales-assises",
+     "name": "Élévations latérales assises"
+    },
+    {
+     "id": "elevations-laterales-assises-variante",
+     "name": "Élévations latérales assises (variante)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/fa7442793fd72d35.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/fdcc2d01cb5a53d1.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "squat-cycliste-squat-complet",
+     "name": "Squat cycliste (squat complet)"
+    },
+    {
+     "id": "squat-cycliste",
+     "name": "Squat cycliste"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/fdcc2d01cb5a53d1.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/a4443a1008f6202b.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "leg-press",
+     "name": "Leg press"
+    },
+    {
+     "id": "leg-press-unilateral",
+     "name": "Leg press unilatéral"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/a4443a1008f6202b.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/6cfcff2b2b4dcee5.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "back-extension-horizontal",
+     "name": "Back extension horizontal"
+    },
+    {
+     "id": "souleve-de-terre-partiel-prise-snatch",
+     "name": "Soulevé de terre partiel, prise snatch"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/6cfcff2b2b4dcee5.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/bb6790d94f7411fc.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "ecartes-halteres-decline",
+     "name": "Écartés haltères décliné"
+    },
+    {
+     "id": "ecartes-halteres",
+     "name": "Écartés haltères"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/bb6790d94f7411fc.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/09395898bff010e6.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "cables-croises",
+     "name": "Câbles croisés"
+    },
+    {
+     "id": "cables-croises-rotation-externe",
+     "name": "Câbles croisés + rotation externe"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/09395898bff010e6.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/e9aa82132494b300.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "extensions-triceps-pullover-barre-ez",
+     "name": "Extensions triceps + pullover barre EZ"
+    },
+    {
+     "id": "extensions-triceps-barre-ez-pullover",
+     "name": "Extensions triceps barre EZ + pullover"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/e9aa82132494b300.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/1bdd45afb59cc298.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "leg-curl-allonge-pieds-pointes",
+     "name": "Leg curl allongé, pieds pointés"
+    },
+    {
+     "id": "leg-curl-allonge-1-1-4-en-haut",
+     "name": "Leg curl allongé, 1 1/4 en haut"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/1bdd45afb59cc298.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/87fa283fb3939593.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "curl-halteres-incline-supination",
+     "name": "Curl haltères incliné, supination"
+    },
+    {
+     "id": "curl-halteres-incline-prise-neutre",
+     "name": "Curl haltères incliné, prise neutre"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/87fa283fb3939593.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/cb0991bbf1591550.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "drop-lunges-fentes-sautees-controlees",
+     "name": "Drop lunges (fentes sautées contrôlées)"
+    },
+    {
+     "id": "drop-lunges-fentes-controlees",
+     "name": "Drop lunges (fentes contrôlées)"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/cb0991bbf1591550.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/f5754e3553d3922c.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "guide-nage-douce-respiration:homme",
+     "name": "guide-nage-douce-respiration"
+    },
+    {
+     "id": "pool-nage-douce:homme",
+     "name": "pool-nage-douce"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/f5754e3553d3922c.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/a9b2430d317e3bba.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "guide-nage-douce-respiration:femme",
+     "name": "guide-nage-douce-respiration"
+    },
+    {
+     "id": "pool-nage-douce:femme",
+     "name": "pool-nage-douce"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/a9b2430d317e3bba.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/333e9e6ac33e22bb.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "pool-marche-aquatique:homme",
+     "name": "pool-marche-aquatique"
+    },
+    {
+     "id": "pool-recup-tabata:homme",
+     "name": "pool-recup-tabata"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/333e9e6ac33e22bb.gif",
+   "label": "2 usages"
+  },
+  {
+   "path": "/media/60207d563d74fd85.gif",
+   "count": 2,
+   "exercices": [
+    {
+     "id": "pool-marche-aquatique:femme",
+     "name": "pool-marche-aquatique"
+    },
+    {
+     "id": "pool-recup-tabata:femme",
+     "name": "pool-recup-tabata"
+    }
+   ],
+   "verdict": "À CORRIGER",
+   "type": "duplicate_animation",
+   "id": "/media/60207d563d74fd85.gif",
+   "label": "2 usages"
+  },
+  {
+   "type": "orphan_animation",
+   "count": 189,
+   "files": [
+    "03098b19c4672ce5.gif",
+    "04ab405e919744b5.gif",
+    "04f326d81f8d5028.gif",
+    "055d358895efaa10.gif",
+    "0766d3a06bf79dc8.gif",
+    "07d64eaf46c2dc2f.gif",
+    "0860394a5a99f74b.gif",
+    "0a5625b92247ed69.gif",
+    "0bce9dc43c3b2517.gif",
+    "10ab787fbf26b1f4.gif",
+    "1317e405efd6ef2b.gif",
+    "14170349578b3fdb.gif",
+    "1519aacc58d53c5c.gif",
+    "16f6ff0f7ceba611.gif",
+    "1c28908ab83cde2e.gif",
+    "1c63a36d168d8b74.gif",
+    "1f27c3cbcf803765.gif",
+    "212f5c752f93e8c1.gif",
+    "2204cfebd9d348e8.gif",
+    "22146cff6a787e8a.gif"
+   ]
+  }
+ ]
+}
