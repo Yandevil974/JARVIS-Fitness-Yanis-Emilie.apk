@@ -2,7 +2,7 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 6 octobre 2026 · commit `6bb5fad` · branche `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 6 octobre 2026 · commit `48106d9` · branche `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
 
 > ### 🚩 DRAPEAU ROUGE — limite du tour atteinte
 >
@@ -204,7 +204,8 @@ gainage latéral dynamique.
 Ordre demandé par le user : **thème par thème** (échauffement → musculation →
 étirements → cardio → piscine).
 
-1. **LOT A-02** (`animations/themeA/`) — 3 exercices :
+1. ▶️ **LOT A-02** (`animations/themeA/`) — **validé par le user, à produire au
+   prochain tour** — 3 exercices :
    `fire-hydrant-a-l-elastique`, `squat-au-poids-du-corps`,
    `fentes-arriere-au-poids-du-corps`.
 2. **LOT A-03** : `pompes`, `gainage-planche`, `abduction-hanche-a-l-elastique`.
@@ -212,8 +213,9 @@ Ordre demandé par le user : **thème par thème** (échauffement → musculatio
    `face-pull-a-l-elastique`.
 4. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`
    (dead bug déjà livré en LOT 1).
-5. **LOT A-08/A-09** : les 3 étapes chrono d'échauffement `warmup-route`,
-   `warmup-mobilite`, `warmup-approche` (2 animations chacune : homme + femme).
+5. **Fin du thème A** : les 3 étapes chrono d'échauffement `warmup-route`,
+   `warmup-mobilite`, `warmup-approche` (2 animations chacune : homme + femme),
+   puis les **2 circuits composites** (gainage, abdominaux) — 1 circuit par tour.
 6. Puis **thème B — musculation**, sous-thème par sous-thème (jambes/quadriceps en
    premier), **thème C — étirements**, **thème D — cardio**, **thème E — piscine**.
 7. **Phase 11** : intégration dans l'application, après validation complète des lots.
@@ -234,26 +236,32 @@ Ordre demandé par le user : **thème par thème** (échauffement → musculatio
 
 ## 7. DÉCISIONS EN ATTENTE (ne pas trancher seul)
 
-1. **`developpe-incline-halteres`** — 7ᵉ et dernier exercice du fichier
-   `8de6e89e5395700c.gif`. Son nom ne précise ni angle ni prise : impossible de deviner.
-   **Demander à l'utilisateur** : banc 30° ? 45° ? prise classique ou neutre ?
-2. **Circuits du LOT 3** — le circuit gainage (planche → latéral → bird dog) et le circuit
-   abdominaux (crunch → relevés de jambes → gainage) comportent 3 mouvements enchaînés,
-   mais l'animation n'en déroule qu'un seul. **Animation composite en plusieurs phases,
-   ou découpage ?**
-3. **Nouveau — confirmé au 2026-10-06 :** les lots suivants sont bien produits **par
-   thème** (A échauffement → B musculation → C étirements → D cardio → E piscine), et non
-   plus par fichier dupliqué. Le thème A est ouvert avec A-01 ; les fichiers dupliqués
-   restants (`e5532fe8fa9b40e9.gif` soulevés de terre, `f1a40f2c8c8502db.gif` mollets,
-   `e169d622c8002b38.gif` élévations latérales…) sont désormais traités **à l'intérieur**
-   du thème B.
+1. ⏳ **`developpe-incline-halteres`** — 7ᵉ et dernier exercice du fichier
+   `8de6e89e5395700c.gif`. Son nom ne précise ni angle ni prise.
+   **Le user a répondu « autre » sans préciser (2026-10-06).** Redemander explicitement
+   l'angle (30° / 45° / autre) et la prise (classique / neutre) avant de produire.
+   **Ne pas deviner.** C'est le seul exercice restant de `8de6e89e5395700c.gif` (6/7).
+2. ✅ **Circuits du LOT 3 — TRANCHÉ PAR LE USER (2026-10-06) : animation COMPOSITE en
+   plusieurs phases.** Le circuit gainage (planche → latéral → bird dog) et le circuit
+   abdominaux (crunch → relevés de jambes → gainage) doivent dérouler **les trois
+   mouvements à la suite** dans une seule animation.
+   Conséquence : ≈ 3 phases × 3 positions = **9 images par circuit, soit 1 circuit par
+   tour**. À reprogrammer en fin de thème A.
+3. ✅ **Confirmé au 2026-10-06 :** les lots sont produits **par thème**
+   (A échauffement → B musculation → C étirements → D cardio → E piscine), et non plus
+   par fichier dupliqué. Le thème A est ouvert avec A-01. Les fichiers dupliqués restants
+   (`e5532fe8fa9b40e9.gif` soulevés de terre, `f1a40f2c8c8502db.gif` mollets,
+   `e169d622c8002b38.gif` élévations latérales…) sont traités **à l'intérieur** du thème B.
+4. ✅ **LOT A-01 validé par le user (2026-10-06)** — feu vert pour le LOT A-02.
 
 ---
 
 ## 8. RÉSERVES CONNUES (honnêtes)
 
 - **POC** : cadrages coupés et artefacts sur 3 animations (voir § 6, option A).
-- **Circuit gainage / circuit abdominaux** : une seule position animée sur trois (§ 7.2).
+- **Circuit gainage / circuit abdominaux** : une seule position animée sur trois, alors que
+  le user a tranché pour une **animation composite en 3 phases** (§ 7.2). À refaire en fin
+  de thème A, à raison d'un circuit par tour (9 images par circuit).
 - **Artefacts résiduels** dans les lots 1 et 3 (bavures au-dessus des tapis).
 - **Cadrages hétérogènes** : la largeur des images varie d'un lot à l'autre.
 - **LOT 4** : mouvements sur banc, donc pas de tapis noir au sol ; développé plat montré
@@ -298,7 +306,7 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/50bc4b
 
 > Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 > Dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`, branche
-> `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`, dernier commit `6bb5fad`.
+> `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`, dernier commit `48106d9`.
 > Lis `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
 > `yanis-fitness-evolution/animations/PLAN-THEMES.md`, mets à jour la branche locale
 > depuis origin, puis enchaîne sur la prochaine action : **LOT A-02**

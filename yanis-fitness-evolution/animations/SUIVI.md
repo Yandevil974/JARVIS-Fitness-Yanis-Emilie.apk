@@ -95,6 +95,16 @@ Contrôle anti-doublon : 4 empreintes md5 distinctes, 0 doublon sur l'ensemble d
 poste) — la validation visuelle appartient à l'utilisateur (règle 7). Les trois
 dessins sont décrits ci-dessus tels qu'ils ont été demandés au générateur.
 
+**Validation utilisateur (2026-10-06)** : LOT A-01 validé → feu vert pour le LOT A-02.
+
+### Décisions prises le 2026-10-06
+
+| Sujet | Décision |
+| --- | --- |
+| Organisation des lots | **Par thème** (A échauffement → B musculation → C étirements → D cardio → E piscine) |
+| Circuits du LOT 3 | **Animation composite en 3 phases** — les trois mouvements déroulés à la suite (≈ 9 images par circuit, 1 circuit par tour). À faire en fin de thème A |
+| `developpe-incline-halteres` | ⏳ **Toujours en attente** — le user a répondu « autre » sans préciser l'angle ni la prise. Ne pas deviner |
+
 ## Audit de conformité des animations existantes (2026-10-06)
 
 Les 16 animations des lots POC → LOT 4 ont été recontrôlées image par image. Aucun
