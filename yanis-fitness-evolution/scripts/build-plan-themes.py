@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Plan de production THÉMATIQUE du chantier « reconstruction des animations ».
 
-Regroupe les 357 animations nécessaires par thème (échauffement, musculation,
+Regroupe les animations nécessaires par thème (échauffement, musculation,
 étirements, cardio, piscine) puis découpe chaque thème en lots de 3 exercices
 (plafond de production : 10 images IA par tour = 3 exercices × 3 positions).
+
+PÉRIMÈTRE HOMME + FEMME (décision du user, 2026-10-06) :
+chaque exercice, chaque étirement et chaque guide piscine existe en DEUX
+animations — une avec le mannequin homme (Yanis) et une avec le mannequin femme
+(Émilie). Les étapes de chrono étaient déjà comptées homme + femme.
+  Total = 209x2 exercices + 100 chrono + 29x2 étirements + 19x2 guides = 614.
 
 Source de vérité : animations/inventaire.json
 Sortie : animations/PLAN-THEMES.md
@@ -117,11 +123,11 @@ def main():
         if not e:
             raise SystemExit("id inconnu dans ACTIVATION : " + i)
         a_items.append(("Exercice", e["nom"], e["id"], MUSCLE_LABEL.get(e["muscle"], e["muscle"]),
-                        mat(e), LIVRE.get(i)))
+                        mat(e) + " · H + F (2 anim.)", LIVRE.get(i)))
     for step in inv["etapes_chrono"]:
         if step["id"].startswith("warmup-"):
             a_items.append(("Étape chrono", step["id"], step["id"], "échauffement",
-                            "homme + femme (2 animations)", None))
+                            "étape chrono · H + F (2 anim.)", None))
     themes.append(("A", "ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION",
                    "Ce qui est montré AVANT la séance : mise en route, mobilité "
                    "articulaire, activation, séries d'approche.", a_items,
@@ -139,19 +145,19 @@ def main():
                 continue
             items.append(("Exercice", e["nom"], e["id"],
                           MUSCLE_LABEL.get(e["muscle"], e["muscle"]),
-                          mat(e), LIVRE.get(e["id"])))
+                          mat(e) + " · H + F (2 anim.)", LIVRE.get(e["id"])))
         if items:
             themes.append(("B", titre, "Sous-thème musculation — " +
                            ", ".join(MUSCLE_LABEL.get(m, m) for m in muscles),
                            items, None))
 
     # ——— THÈME C : étirements & récupération ———
-    c_items = [("Étirement", s["nom"], s["id"], "étirement", "profil actif", None)
+    c_items = [("Étirement", s["nom"], s["id"], "étirement", "H + F (2 anim.)", None)
                for s in inv["etirements"]]
     for step in inv["etapes_chrono"]:
         if step["id"].startswith("stretch-"):
             c_items.append(("Étape chrono", step["id"], step["id"], "étirement",
-                            "homme + femme (2 animations)", None))
+                            "étape chrono · H + F (2 anim.)", None))
     themes.append(("C", "ÉTIREMENTS & RÉCUPÉRATION",
                    "Fin de séance et jours de récupération.", c_items, None))
 
@@ -160,7 +166,7 @@ def main():
     for step in inv["etapes_chrono"]:
         if step["id"].startswith("cardio-"):
             d_items.append(("Étape chrono", step["id"], step["id"], "cardio",
-                            "homme + femme (2 animations)", None))
+                            "étape chrono · H + F (2 anim.)", None))
     themes.append(("D", "CARDIO & TRANSITIONS",
                    "Étapes chronométrées de cardio (elliptique) et transitions.",
                    d_items, None))
@@ -170,23 +176,25 @@ def main():
     for step in inv["etapes_chrono"]:
         if step["id"].startswith("pool-") or step["id"].startswith("guide-"):
             e_items.append(("Étape chrono", step["id"], step["id"], "piscine",
-                            "homme + femme (2 animations)", None))
+                            "étape chrono · H + F (2 anim.)", None))
     for i, g in enumerate(inv["guides"], 1):
         e_items.append(("Guide piscine", "Guide piscine %d" % i,
-                        "guide-piscine-%d" % i, "piscine", "1 animation", None))
+                        "guide-piscine-%d" % i, "piscine", "guide · H + F (2 anim.)", None))
     themes.append(("E", "PISCINE & AQUA",
                    "Décor exception : piscine intérieure, vue mi-air / mi-eau.",
                    e_items, None))
 
     # ——— Comptage des animations (une étape chrono = 2 animations, H + F) ———
     def poids(item):
-        return 2 if "2 animations" in item[4] else 1
+        # Périmètre homme + femme : chaque entrée vaut 2 animations.
+        return 2
 
     # ——— Sortie markdown ———
     L = []
     L.append("# Plan de production THÉMATIQUE — reconstruction des animations\n")
     L.append("Généré par `scripts/build-plan-themes.py` depuis `animations/inventaire.json`.\n")
     L.append("Règle : **1 exercice = 1 animation spécifique**, aucun fichier partagé.\n")
+    L.append("Périmètre **HOMME + FEMME** : chaque entrée = 2 animations (Yanis + Émilie).\n")
     L.append("Plafond de production : **10 images IA par tour = 1 lot de 3 exercices par tour**\n")
     L.append("(3 positions par exercice : départ → mi-course → finale).\n")
 
