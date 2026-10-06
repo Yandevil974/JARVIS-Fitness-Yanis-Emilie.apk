@@ -9,7 +9,8 @@
 
 - **Dépôt** : `github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public)
 - **Branche de travail** : `arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`
-- **Dernier commit** : `9fdf21b` — PDF dédié aux nouveaux GIF
+- **Dernier commit de contenu** : `9fdf21b` — PDF dédié aux nouveaux GIF
+  (ce document de passation a été ajouté juste après, en `845a112`)
 - **Historique du chantier** : `9fdf21b` → `ef9f148` → `4a61b62` → `3d0d196` → `02f7c8d`
   → `1e7f70a` (LOT 3) → `26a1ffe` (LOT 2) → `8e5b5d3` (LOT 1) → `957fffe` (POC)
 - **Toujours commencer par** : `git fetch origin`, vérifier la branche et le diff, puis avancer.
