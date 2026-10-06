@@ -12,10 +12,10 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires (minimum) | 357 |
-| Animations créées | 11 (POC 5 + lot 1 : 3 + lot 2 : 3) |
+| Animations créées | 13 (POC 5 + lot 1 : 3 + lot 2 : 3 + lot 3 : 2) |
 | Fichiers dupliqués corrigés | 3 / 48 |
-| Exercices du fichier bcdbe16aeafaafec.gif traités | 6 / 8 |
-| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) |
+| Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
+| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2 circuits) |
 
 ## Lots
 
@@ -27,6 +27,9 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
   gainage latéral dynamique, circuit abdominaux.
 - **LOT 2** (`animations/lot2/`) : mountain climbers, dead bug avec rotation,
   gainage latéral dynamique — trois nouveaux mouvements spécifiques.
-- **LOT 3** (à venir) : les 2 circuits restants de `bcdbe16aeafaafec.gif`
-  (circuit gainage planche/latéral/bird dog, circuit abdominaux crunch/relevés/gainage),
-  puis les 47 autres fichiers dupliqués.
+- **LOT 3** (`animations/lot3/`) : circuit gainage (planche → latéral → bird dog) et
+  circuit abdominaux (crunch → relevés de jambes → gainage) — 2 mouvements propres.
+  Le fichier `bcdbe16aeafaafec.gif` est **entièrement remplacé (8/8)**.
+- **LOT 4** (à venir) : `8de6e89e5395700c.gif` → 7 développés haltères, puis
+  `e5532fe8fa9b40e9.gif` (6 soulevés de terre), `f1a40f2c8c8502db.gif` (5 mollets),
+  `e169d622c8002b38.gif` (5 élévations latérales), puis les 43 autres fichiers dupliqués.
