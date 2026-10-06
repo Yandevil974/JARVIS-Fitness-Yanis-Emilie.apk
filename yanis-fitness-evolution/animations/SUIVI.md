@@ -12,11 +12,11 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires (minimum) | 357 |
-| Animations créées | 16 (POC 5 + lot 1 : 3 + lot 2 : 3 + lot 3 : 2 + lot 4 : 3) |
-| Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé + 1 en cours) |
+| Animations créées | 19 (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3) |
+| Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
-| Exercices du fichier 8de6e89e5395700c.gif traités | 3 / 7 |
-| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2 circuits) + LOT 4 (3 développés) |
+| Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
+| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3 inclinés) |
 
 ## Lots
 
@@ -40,6 +40,35 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
   varient légèrement entre les trois premiers mouvements.
   Restent sur ce fichier : développé incliné haltères, développé haltères incliné 30°,
   développé haltères incliné 45° (départ), développé haltères incliné 45° prise neutre.
-- **LOT 5** (à venir) : fin de `8de6e89e5395700c.gif` (4 inclinés), puis
-  `e5532fe8fa9b40e9.gif` (6 soulevés de terre), `f1a40f2c8c8502db.gif` (5 mollets),
-  `e169d622c8002b38.gif` (5 élévations latérales), puis les 43 autres fichiers dupliqués.
+- **LOT 5** (`animations/lot5/`) : développé haltères incliné 30°, développé haltères
+  incliné 45°, développé haltères incliné 45° prise neutre. Technique vérifiée en ligne
+  avant génération : banc 30° = cible le haut des pectoraux, 45° = deltoïdes antérieurs
+  davantage sollicités (l'angle est donc bien visible et distinct sur les animations) ;
+  coudes à 45° du buste, omoplates serrées, haltères jamais entrechoqués en haut ;
+  prise neutre = paumes face à face, coudes rentrés.
+  Reste sur ce fichier : `developpe-incline-halteres` (aucun angle ni prise précisés —
+  décision utilisateur requise, cf. question ouverte).
+- **LOT 6** (à venir) : `e5532fe8fa9b40e9.gif` (6 soulevés de terre),
+  `f1a40f2c8c8502db.gif` (5 mollets), `e169d622c8002b38.gif` (5 élévations latérales),
+  puis les 43 autres fichiers dupliqués.
+
+## Audit de conformité des animations existantes (2026-10-06)
+
+Les 16 animations des lots POC → LOT 4 ont été recontrôlées image par image. Aucun
+fichier n'est dupliqué (21 empreintes md5 toutes distinctes) et les 3 positions
+(A → M → B) existent partout. Réserves relevées, à traiter en priorité avant
+l'intégration dans l'application (phase 11) :
+
+- **POC (`SHEET-POC`)** : cadrages souvent coupés (torse seul au squat, tête tronquée)
+  et artefacts visuels nets sur `hip-thrust-barre.gif` (planche coupée) et
+  `souleve-de-terre-roumain.gif` (tête et pieds coupés, salissures dans le décor).
+- **Séquence la plus faible** : `lot2/dead-bug-rotation-3poses.gif` — le retour au sol
+  est utilisé comme position A, la rotation n'est jamais montrée (A = jambes tendues
+  bras levés, M = crunch, B = allongé) : ne respecte pas « départ → mi-course → finale ».
+- **Doublons de concept** : `lot3/circuit-gainage-3poses.gif` et
+  `lot2/gainage-lateral-dyn-3poses.gif` montrent la même chose (planche latérale) ;
+  idem `lot1/gainage-lateral-3poses.gif`. Le circuit gainage ne montre que la planche
+  frontale, alors que `lot3/LOT3-circuits.gif` affiche une autre planche latérale.
+- **Artefacts résiduels** dans plusieurs lots 1 à 3 (bavures au-dessus des planches).
+- Tous les fichiers multi-positions utilisent des frames partiellement optimisées :
+  pour l'affichage, toujours passer par `convert x.gif -coalesce`.
