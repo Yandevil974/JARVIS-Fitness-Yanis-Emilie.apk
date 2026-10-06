@@ -12,14 +12,15 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires (minimum) | 357 |
-| Animations créées | 22 (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + **LOT A-01 : 3**) |
+| Animations créées | 25 (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + LOT A-01 : 3 + **LOT A-02 : 3**) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3) + **LOT A-01 (3)** |
-| Doublons sur les fichiers du chantier | 0 (26 empreintes md5 distinctes) |
+| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3) + LOT A-01 (3) + **LOT A-02 (3)** |
+| Thème A (échauffement) | 14 / 25 entrées · **11 restantes** |
+| Doublons sur les fichiers du chantier | 0 (29 empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -97,13 +98,26 @@ dessins sont décrits ci-dessus tels qu'ils ont été demandés au générateur.
 
 **Validation utilisateur (2026-10-06)** : LOT A-01 validé → feu vert pour le LOT A-02.
 
+## LOT A-02 — ÉCHAUFFEMENT & ACTIVATION, suite (`animations/themeA/`) — 2026-10-06
+
+| Fichier | Exercice | Positions | Source technique |
+| --- | --- | --- | --- |
+| `fire-hydrant-elastique-3poses.gif` | Fire hydrant à l'élastique | A = à quatre pattes, genou au sol · M = genou soulevé à mi-hauteur · B = genou à hauteur de hanche, cuisse parallèle au sol | À quatre pattes, mains sous les épaules, genoux sous les hanches, genou fléchi à 90° **qui ne change pas**, ouverture latérale jusqu'au parallélisme, **bassin qui ne bascule pas**, dos plat ([epicfitness](https://epicfitness.fr/sculptez-fessiers-fire-hydrant), [litobox](https://www.litobox.com/exercice-fire-hydrant)) |
+| `squat-poids-du-corps-3poses.gif` | Squat au poids du corps | A = debout · M = genoux ~45° · B = cuisses parallèles au sol | Pieds largeur d'épaules, orteils légèrement dehors, poids sur les talons, descendre jusqu'à cuisses parallèles, genoux dans l'axe des orteils, buste droit ([fitdistance](https://fitdistance.io/exercice-musculation/squats-au-poids-du-corps)) |
+| `fentes-arriere-pdc-3poses.gif` | Fentes arrière au poids du corps | A = debout · M = demi-descente · B = fente basse, genou arrière frôlant le sol | Grand pas **en arrière**, genou avant à l'aplomb de la cheville (tibia vertical), genou arrière descendant frôler le sol sans le toucher, buste droit et gainé ([magicfit](https://www.magicfit.fr/fente-arriere-musculation/), [fitnesce](https://fitnesce.fr/fente-arriere/)) |
+
+Planche : `themeA/LOT-A02-echauffement.gif`. La planche A-01 a été régénérée avec le
+même gabarit (colonnes espacées de 12 px) via `scripts/build-gif-lot.sh`.
+Contrôle : 6 empreintes md5 distinctes en thème A, 0 doublon sur l'ensemble du chantier.
+
 ### Décisions prises le 2026-10-06
 
 | Sujet | Décision |
 | --- | --- |
 | Organisation des lots | **Par thème** (A échauffement → B musculation → C étirements → D cardio → E piscine) |
+| Terminer un thème avant le suivant | **Oui — consigne du user : finir le thème A (échauffement) avant d'attaquer le thème B** |
 | Circuits du LOT 3 | **Animation composite en 3 phases** — les trois mouvements déroulés à la suite (≈ 9 images par circuit, 1 circuit par tour). À faire en fin de thème A |
-| `developpe-incline-halteres` | ⏳ **Toujours en attente** — le user a répondu « autre » sans préciser l'angle ni la prise. Ne pas deviner |
+| `developpe-incline-halteres` | ✅ **TRANCHÉ PAR LE USER** — **banc incliné 30°, prise neutre** (paumes face à face). À produire dans le thème B — pectoraux |
 
 ## Audit de conformité des animations existantes (2026-10-06)
 

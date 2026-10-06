@@ -65,6 +65,9 @@ LIVRE = {
     "mobilite-des-epaules": "LOT A-01",
     "pont-fessier-au-sol-activation": "LOT A-01",
     "clamshell-a-l-elastique": "LOT A-01",
+    "fire-hydrant-a-l-elastique": "LOT A-02",
+    "squat-au-poids-du-corps": "LOT A-02",
+    "fentes-arriere-au-poids-du-corps": "LOT A-02",
 }
 
 # ——— Sous-thèmes de musculation, par groupe musculaire ———
