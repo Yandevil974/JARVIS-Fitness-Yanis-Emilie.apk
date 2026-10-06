@@ -12,12 +12,35 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires (minimum) | 357 |
-| Animations créées | 19 (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3) |
+| Animations créées | 22 (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + **LOT A-01 : 3**) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
-| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3 inclinés) |
+| Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
+| Lots livrés | POC (5) + LOT 1 (3) + LOT 2 (3) + LOT 3 (2) + LOT 4 (3) + LOT 5 (3) + **LOT A-01 (3)** |
+| Doublons sur les fichiers du chantier | 0 (26 empreintes md5 distinctes) |
+
+## Passage au plan THÉMATIQUE (2026-10-06)
+
+Le user a demandé d'organiser la suite des lots **par thème** (échauffement, musculation,
+étirements, cardio, piscine) et non plus par fichier dupliqué.
+
+Nouveau document de référence : **`animations/PLAN-THEMES.md`**, généré par
+`scripts/build-plan-themes.py` depuis `inventaire.json`.
+
+Répartition exacte (357 animations) :
+
+| Thème | Contenu | Animations | Lots de 3 |
+| --- | --- | --- | --- |
+| **A** | Échauffement, mobilité & activation | 28 | 9 |
+| **B** | Musculation (9 sous-thèmes par groupe musculaire) | 187 | 66 |
+| **C** | Étirements & récupération | 81 | 19 |
+| **D** | Cardio & transitions | 10 | 2 |
+| **E** | Piscine & aqua | 51 | 12 |
+
+Les lots POC → LOT 5 restent valides ; ils sont reclassés dans le plan thématique
+(les abdominaux/gainage en thème A, les développés en thème B — pectoraux).
 
 ## Lots
 
@@ -52,6 +75,25 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 - **LOT 6** (à venir) : `e5532fe8fa9b40e9.gif` (6 soulevés de terre),
   `f1a40f2c8c8502db.gif` (5 mollets), `e169d622c8002b38.gif` (5 élévations latérales),
   puis les 43 autres fichiers dupliqués.
+
+## LOT A-01 — ÉCHAUFFEMENT & ACTIVATION (`animations/themeA/`) — 2026-10-06
+
+Premier lot du plan thématique. Trois exercices, trois positions chaînées
+(départ → mi-course → finale, image source = position précédente), référence de
+style `Screenshot_20261005_212714_Facebook.jpg`.
+
+| Fichier | Exercice | Positions | Source technique |
+| --- | --- | --- | --- |
+| `mobilite-des-epaules-3poses.gif` | Mobilité des épaules | A = bras le long du corps · M = bras à l'horizontale · B = bras au-dessus de la tête | Cercles de bras : debout, pieds largeur d'épaules, bras tendus, petits cercles dont on augmente l'amplitude, puis inversion du sens ([croq-kilos](https://www.croq-kilos.com/actus/5-exercices-special-echauffement), [fitdistance](https://fitdistance.io/exercice-musculation/cercles-alternes-bras-echauffement)) |
+| `pont-fessier-activation-3poses.gif` | Pont fessier au sol — activation | A = bassin au sol · M = bassin à mi-hauteur · B = ligne droite épaules-hanches-genoux | Pieds à plat largeur de hanche, genoux ~90°, pousser sur les talons, monter jusqu'à l'alignement épaules-hanches-genoux sans creuser les lombaires, contracter les fessiers 1-2 s en haut ([maboxdecross](https://maboxdecross.fr/mouvement/glute-bridge)) |
+| `clamshell-elastique-3poses.gif` | Clamshell à l'élastique | A = genoux joints · M = ouverture à mi-hauteur (~30-40°) · B = ouverture maximale | Allongé sur le côté, hanches fléchies ~45°, genoux pliés, pieds superposés, élastique au-dessus des genoux, ouvrir le genou supérieur en rotation externe **sans faire basculer le bassin** ([handball-formation](https://handball-formation.fr/exercice-pour-fessier/), [saintdenis-dojo](https://www.saintdenis-dojo.fr/renforcement-moyen-fessier-exercices-conseils/)) |
+
+Planche de montage : `themeA/LOT-A01-echauffement.gif` (3 colonnes animées, 1404×265).
+Contrôle anti-doublon : 4 empreintes md5 distinctes, 0 doublon sur l'ensemble du chantier.
+
+**Réserve honnête** : je ne peux pas voir les images générées (pas de vision sur ce
+poste) — la validation visuelle appartient à l'utilisateur (règle 7). Les trois
+dessins sont décrits ci-dessus tels qu'ils ont été demandés au générateur.
 
 ## Audit de conformité des animations existantes (2026-10-06)
 

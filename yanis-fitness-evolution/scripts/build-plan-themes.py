@@ -62,6 +62,9 @@ LIVRE = {
     "developpe-halteres-incline-30": "LOT 5",
     "developpe-halteres-incline-45": "LOT 5",
     "developpe-halteres-incline-45-prise-neutre": "LOT 5",
+    "mobilite-des-epaules": "LOT A-01",
+    "pont-fessier-au-sol-activation": "LOT A-01",
+    "clamshell-a-l-elastique": "LOT A-01",
 }
 
 # ——— Sous-thèmes de musculation, par groupe musculaire ———
