@@ -11,8 +11,8 @@
 - **Dépôt** : `github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public)
 - **Branche de travail** : `arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`
 - **Dernier commit de contenu** : `9fdf21b` — PDF dédié aux nouveaux GIF
-  (cette passation a été ajoutée en `845a112` puis ajustée en `67d6751`)
-- **Historique du chantier** : `67d6751` → `845a112` → `9fdf21b` → `ef9f148` → `4a61b62`
+  (cette passation a été ajoutée en `845a112`, ajustée en `67d6751` puis `4dd79d9`)
+- **Historique du chantier** : `4dd79d9` → `67d6751` → `845a112` → `9fdf21b` → `ef9f148` → `4a61b62`
   → `3d0d196` (LOT 5) → `02f7c8d` (LOT 4) → `1e7f70a` (LOT 3) → `26a1ffe` (LOT 2)
   → `8e5b5d3` (LOT 1) → `957fffe` (POC)
 - **Toujours commencer par** : `git fetch origin`, vérifier la branche et le diff, puis avancer.
@@ -201,7 +201,7 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/fbb1dd
 
 > Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 > Dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`, branche
-> `arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`, dernier commit `67d6751`.
+> `arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`, dernier commit `4dd79d9`.
 > Lis `PASSATION-ANIMATIONS.md` et `yanis-fitness-evolution/animations/SUIVI.md`,
 > mets à jour la branche locale depuis origin, puis enchaîne sur la prochaine action :
 > les 3 reprises du POC (back squat, hip thrust, soulevé de terre roumain), puis le LOT 6
