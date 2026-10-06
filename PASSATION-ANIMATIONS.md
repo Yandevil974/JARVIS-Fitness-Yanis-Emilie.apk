@@ -2,25 +2,36 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 6 octobre 2026 · dernier commit de contenu `494682f` · branche `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 6 octobre 2026 · dernier commit de contenu `da07c20` · branche `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
 
 > ### 🚩 DRAPEAU ROUGE — limite du tour atteinte
 >
-> **9 images IA sur 10 utilisées** (3 exercices × 3 positions) pour livrer le **LOT A-03**.
-> Ce drapeau marque une **limite technique de génération**, pas un jugement sur les images
-> produites. Le lot est livré, commité et poussé. La suite reprend au prochain tour.
+> **9 images IA sur 10 utilisées** (3 exercices × 3 positions) pour livrer le
+> **LOT A-01 FEMME**. Ce drapeau marque une **limite technique de génération**, pas un
+> jugement sur les images produites. Le lot est livré, commité et poussé.
 >
-> Cette passation est ajoutée dans le **commit immédiatement suivant `494682f`**
-> (`git log --oneline` pour le retrouver).
+> Cette passation est ajoutée dans le **commit immédiatement suivant `da07c20`**.
 >
-> ### 🚨 BLOQUANT — la photo de référence du personnage FÉMININ a été perdue
+> ### ✅ DÉBLOQUÉ — la photo du personnage féminin est dans le dépôt
 >
-> Le user a envoyé `Screenshot_20261006_215711_Chrome.jpg` (photo du mannequin femme
-> déjà validé). Le sandbox s'est réinitialisé avant que je puisse la committer :
-> **le fichier a disparu** (il était dans `/home/user/uploads/`, hors dépôt).
-> 👉 **Redemander la photo au user et la COMMITER IMMÉDIATEMENT dans le dépôt**
-> (par ex. `yanis-fitness-evolution/animations/REF-personnage-feminin.jpg`).
-> Tant qu'elle n'est pas dans git, un reset la fera disparaître à nouveau.
+> `yanis-fitness-evolution/animations/REF-personnage-feminin.jpg` (déposée par le user
+> sur GitHub, déplacée et commitée en `f9b95da`). Elle survivra désormais aux resets.
+> **C'est la source à utiliser pour toutes les versions Émilie.**
+>
+> ### 🚨 RÈGLE VITALE — le sandbox se réinitialise à CHAQUE tour
+>
+> Constaté 4 fois le 2026-10-06. À chaque tour : la branche locale retombe sur `ddd1fb9`
+> et **tout ce qui est hors de git est effacé** (`/home/user/uploads/`, `/home/user/work/`).
+> Deux conséquences opérationnelles :
+> 1. **Toujours commencer par** `git fetch origin` puis, si HEAD est retombé,
+>    `git reset --hard origin/arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`.
+> 2. **Ne jamais laisser un livrable ou une référence hors de git.** Pour toute nouvelle
+>    image de référence : demander au user de la déposer **sur GitHub** (onglet du dépôt →
+>    branche `arena/50bc4ba3-…` → *Add file* → *Upload files*). Les pièces jointes du chat
+>    et `curl` (pas d'accès HTTP sortant depuis le sandbox) ne fonctionnent pas.
+> 3. **Un lot interrompu est un lot perdu** : les images intermédiaires sont hors dépôt.
+>    Ne commencer un lot que si l'on a les 9 images disponibles dans le tour.
+>    Le LOT A-04 en a fait les frais (A et M générées, B interrompues, tout effacé).
 
 À copier-coller tel quel pour reprendre le chantier dans un nouveau chat.
 
@@ -30,7 +41,7 @@
 
 - Dépôt : `github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public)
 - **Branche de travail (session courante) : `arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`**
-- Dernier commit de contenu : **`494682f`** — LOT A-03, échauffement (suite)
+- Dernier commit de contenu : **`da07c20`** — LOT A-01 FEMME, première version femme du chantier
 
 ### ⚠️ Reprise de l'ancienne branche — FAIT, ne pas refaire
 
@@ -50,6 +61,9 @@ git push -u origin arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap
 ### Historique consolidé
 
 ```
+da07c20  LOT A-01 FEMME — mannequin femme (thème A)
+f9b95da  référence du personnage féminin, déplacée et commitée
+45056dd  Add files via upload (dépôt du user : photo du personnage femme)
 494682f  LOT A-03 — échauffement, suite (thème A)
 c05a672  périmètre HOMME + FEMME — 614 animations
 918e424  LOT A-02 — échauffement, suite (thème A) + script build-gif-lot.sh
@@ -108,9 +122,12 @@ ef9f148  bilan visuel PDF du chantier + script de génération
     étirement et chaque guide piscine existe en **deux** animations — mannequin homme
     (Yanis) et mannequin femme (Émilie). Les étapes de chrono étaient déjà H + F.
     **Total = 614 animations.**
-12. **Committer immédiatement toute nouvelle image de référence.** Les fichiers déposés
-    dans `/home/user/uploads/` ou `/home/user/work/` sont **effacés** par les resets du
-    sandbox. Seul ce qui est dans git survit.
+12. **Le sandbox se réinitialise à chaque tour.** Toujours `git fetch origin` + si
+    besoin `git reset --hard origin/arena/50bc4ba3-…` **en ouverture de tour**.
+    **Seul ce qui est dans git survit.** Toute référence doit être déposée par le user
+    **sur GitHub** (pas en pièce jointe du chat) puis commitée.
+13. **Un lot commencé doit être terminé dans le même tour** (9 images), sinon les images
+    intermédiaires sont perdues au reset suivant. Voir le LOT A-04, perdu ainsi.
 
 ---
 
@@ -190,20 +207,24 @@ dans le sandbox au 2026-10-06 — les comptages ont été refaits en Python depu
 
 | Élément | Valeur |
 | --- | --- |
-| Animations créées | **28 / 614** (toutes en version homme pour l'instant) |
-| **Restant à produire** | **586** |
-| Versions femme produites | **0** — bloqué, voir l'alerte 🚨 en tête de document |
+| Animations créées | **31 / 614** |
+| **Restant à produire** | **583** |
+| Versions femme produites | **3 / 307** (LOT A-01 FEMME) — débloqué, référence en `f9b95da` |
 | Animations corrigées | 3 / 5 (option A partielle) |
 | Fichiers dupliqués traités | 4 / 48 · `666443484c7f0861.gif` → 1 / 3 |
 | `bcdbe16aeafaafec.gif` | 8 / 8 ✅ soldé |
 | `8de6e89e5395700c.gif` | 6 / 7 (le 7ᵉ est tranché : 30° prise neutre) |
-| Doublons sur les fichiers du chantier | 0 (32 empreintes md5 distinctes) |
-| Lots livrés | 9 (POC, L1, L2, L3, L4, L5, A-01, A-02, A-03) |
+| Doublons sur les fichiers du chantier | 0 (35 empreintes md5 distinctes) |
+| Lots livrés | 10 (POC, L1, L2, L3, L4, L5, A-01, A-02, A-03, **A-01 FEMME**) |
 
-### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : 17 / 25 entrées (versions HOMME)
+### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : 17 / 25 entrées en HOMME, 3 en FEMME
 
-**Restant pour solder le thème A (H + F) ≈ 34 animations ≈ 12 tours :**
-- 14 exercices déjà livrés en homme → **14 versions femme** à produire ;
+**Convention de nommage :** `themeA/<exercice>-3poses.gif` = homme,
+`themeA/femme/<exercice>-3poses.gif` = femme.
+
+**Restant pour solder le thème A (H + F) ≈ 45 animations ≈ 15 tours :**
+- 11 exercices livrés en homme sans version femme → **11 versions femme** ;
+- **LOT A-04 à refaire** (abduction assise, pallof press, face pull) : perdu au reset ;
 - 8 entrées jamais produites → **16 animations** (8 homme + 8 femme) ;
 - 2 circuits → **4 animations** composites (2 homme + 2 femme).
 
@@ -215,7 +236,9 @@ dans le sandbox au 2026-10-06 — les comptages ont été refaits en Python depu
 | **A-01** | mobilité des épaules, pont fessier activation, clamshell | ✅ validé |
 | **A-02** | fire hydrant, squat poids du corps, fentes arrière pdc | ✅ livré |
 | **A-03** | pompes, gainage planche, abduction hanche élastique | ✅ livré |
-| **A-01/02/03 — versions FEMME** | les 9 mêmes exercices avec le mannequin femme | 🚨 bloqué : photo de référence perdue |
+| **A-01 FEMME** | mobilité des épaules, pont fessier, clamshell — mannequin femme | ✅ livré (`themeA/femme/`) |
+| **A-02/A-03 — versions FEMME** | fire hydrant, squat pdc, fentes arrière, pompes, gainage planche, abduction hanche | ⬜ à produire |
+| **A-04** | abduction assise, pallof press, face pull élastique | ⚠️ **perdu au reset — à refaire** |
 | **A-04** | abduction assise, pallof press, face pull élastique | ⬜ à produire |
 | **A-05** | respiration diaphragmatique, hip thrust unilatéral (1 jambe) | ⬜ à produire |
 | **A-06/A-07** | `warmup-route`, `warmup-mobilite`, `warmup-approche` (H + F = 6 anim.) | ⬜ à produire |
@@ -285,13 +308,10 @@ Le user a demandé de **terminer le thème échauffement avant de passer au suiv
    désormais traités **à l'intérieur** du thème B.
 4. ✅ **Terminer le thème A avant d'attaquer le thème B** (consigne du user, 2026-10-06).
 5. ✅ **LOT A-01 validé par le user** — LOT A-02 livré, en attente de validation.
-6. ⏳ **Tenue du mannequin femme** : le user a répondu « je l'avais déjà validée,
-   remontre-la moi ». La planche de présentation a été montrée
-   (`animations/PLANCHE-PERSONNAGE-FEMININ.png`, à régénérer — elle n'a pas survécu au
-   reset). À revalider dès que la photo de référence est revenue.
-   Choix par défaut appliqué en attendant : **parité avec l'homme** — brassière noire +
-   short noir + baskets blanches + casquette blanche, corps blanc argenté mat, tête noire
-   sans traits, muscles dorés. À confirmer.
+6. ⏳ **Validation visuelle du LOT A-01 FEMME** par le user (planche
+   `themeA/femme/LOT-A01F-echauffement-femme.gif`) : confirmer que le personnage
+   correspond bien à celui déjà validé. En cas d'écart, corriger avant de produire la
+   suite des versions femme (11 restantes sur le thème A).
 7. ⏳ **Aucune autre décision en attente.**
 
 ---
@@ -308,11 +328,15 @@ Le user a demandé de **terminer le thème échauffement avant de passer au suiv
 - **LOTS A-01 / A-02 / A-03** : l'agent **ne peut pas voir les images générées** (pas de
   capacité visuelle sur ce poste). La conformité au style est décrite dans les prompts,
   pas constatée. Validation visuelle = utilisateur.
-- **Reset du sandbox × 2 en une seule session** (2026-10-06) : la branche locale est
-  retombée sur `ddd1fb9` et les fichiers hors dépôt ont été effacés (dont la photo du
-  personnage femme et les images intermédiaires). Restauration systématique par
+- **Reset du sandbox × 4 dans la même session** (2026-10-06), **à chaque tour** : la
+  branche locale retombe sur `ddd1fb9` et tout ce qui est hors dépôt est effacé (photos
+  envoyées en pièce jointe, images intermédiaires). Restauration par
   `git reset --hard origin/arena/50bc4ba3-jarvis-fitness-yanis-emilie-ap`.
-  **Conséquence : ne jamais laisser un livrable ou une référence hors de git.**
+  **Conséquences :** (a) ne jamais laisser un livrable ou une référence hors de git ;
+  (b) terminer un lot dans le tour où il est commencé — le **LOT A-04 a été perdu**
+  ainsi (positions A et M générées, B interrompues, fichiers effacés) ;
+  (c) `curl` n'a pas d'accès HTTP sortant depuis le sandbox : seule la voie GitHub
+  (dépôt du user puis `git fetch`) permet de recevoir un fichier.
 - Pour afficher un GIF multi-positions à l'écran, toujours passer par
   `convert x.gif -coalesce`.
 
