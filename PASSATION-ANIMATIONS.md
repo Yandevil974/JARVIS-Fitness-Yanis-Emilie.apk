@@ -1,7 +1,8 @@
 # CONSIGNE + PASSATION — Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
 À copier-coller tel quel pour reprendre le chantier dans un nouveau chat.
-État consolidé au **6 octobre 2026**, commit **9fdf21b**.
+État consolidé au **6 octobre 2026**, commit **67d6751**
+(dernier commit de contenu : `9fdf21b`).
 
 ---
 
@@ -10,16 +11,21 @@
 - **Dépôt** : `github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public)
 - **Branche de travail** : `arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`
 - **Dernier commit de contenu** : `9fdf21b` — PDF dédié aux nouveaux GIF
-  (ce document de passation a été ajouté juste après, en `845a112`)
-- **Historique du chantier** : `9fdf21b` → `ef9f148` → `4a61b62` → `3d0d196` → `02f7c8d`
-  → `1e7f70a` (LOT 3) → `26a1ffe` (LOT 2) → `8e5b5d3` (LOT 1) → `957fffe` (POC)
+  (cette passation a été ajoutée en `845a112` puis ajustée en `67d6751`)
+- **Historique du chantier** : `67d6751` → `845a112` → `9fdf21b` → `ef9f148` → `4a61b62`
+  → `3d0d196` (LOT 5) → `02f7c8d` (LOT 4) → `1e7f70a` (LOT 3) → `26a1ffe` (LOT 2)
+  → `8e5b5d3` (LOT 1) → `957fffe` (POC)
 - **Toujours commencer par** : `git fetch origin`, vérifier la branche et le diff, puis avancer.
   Ne jamais changer de branche, ne jamais travailler sur une autre branche.
 - ⚠️ Une consigne historique mentionnait la branche `arena/773dbe1e-…`. Elle contenait le même
   chantier : son historique a été récupéré et repris sur la branche de session `arena/fbb1ddb2-…`
   (qui est un descendant direct). **Travailler uniquement sur `arena/fbb1ddb2-…`.**
-- ⚠️ Le sandbox se réinitialise souvent. **Committer et pousser immédiatement après chaque lot.**
-  Le distant est la source de vérité : en cas de reset, `git fetch` puis se remettre dessus.
+- ⚠️ Le sandbox se réinitialise souvent (constaté plusieurs fois, parfois entre deux messages).
+  **Committer et pousser immédiatement après chaque lot.** Le distant est la source de vérité.
+  Après un reset, la branche locale peut retomber sur un vieux commit : restaurer avec
+  `git fetch origin` puis
+  `git reset --hard origin/arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`
+  (vérifier d'abord que l'ancien HEAD local est bien un ancêtre, pour ne rien perdre).
 
 ---
 
@@ -100,7 +106,7 @@ Script d'audit : `scripts/audit-animations.mjs`
 | Fichiers dupliqués traités | 4 / 48 |
 | `bcdbe16aeafaafec.gif` | **8 / 8 ✅ soldé** |
 | `8de6e89e5395700c.gif` | 6 / 7 |
-| Doublons de fichier sur les 24 animations | 0 (empreintes md5 distinctes) |
+| Doublons de fichier sur les 25 fichiers du chantier | 0 (19 animations + 6 planches, md5 distincts) |
 
 **Lots livrés**
 
@@ -195,6 +201,9 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/fbb1dd
 
 > Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 > Dépôt `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`, branche
-> `arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`, dernier commit `9fdf21b`.
+> `arena/fbb1ddb2-jarvis-fitness-yanis-emilie-ap`, dernier commit `67d6751`.
 > Lis `PASSATION-ANIMATIONS.md` et `yanis-fitness-evolution/animations/SUIVI.md`,
-> vérifie l'état de la branche, puis enchaîne sur la prochaine action.
+> mets à jour la branche locale depuis origin, puis enchaîne sur la prochaine action :
+> les 3 reprises du POC (back squat, hip thrust, soulevé de terre roumain), puis le LOT 6
+> (6 soulevés de terre du fichier e5532fe8fa9b40e9.gif). Ne tranche pas seul les deux
+> décisions en attente (§ 7).
