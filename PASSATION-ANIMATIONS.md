@@ -2,37 +2,25 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 (Fitness 13 — 5ᵉ tour) · 55 / 614 animations livrées
-(thème A : 22/25 en HOMME, 22/25 en FEMME — les 22 exercices d'activation/mobilité/gainage
-sont 100 % terminés en H et F ✅) · LOT A-04 H+F et LOT A-05 H+F 100 % complets · ne
-restent sur le Thème A que les 3 étapes chrono `warmup-route`, `warmup-mobilite`,
-`warmup-approche` (H + F) et le passage des 2 circuits LOT 3 HOMME en composite · branche
+**État consolidé au 7 octobre 2026 (Fitness 13 — 6ᵉ tour) · 57 / 614 animations livrées
+(thème A : 24/25 en HOMME, 22/25 en FEMME) · `warmup-route` HOMME (`8cf93fa`) et
+`warmup-mobilite` HOMME (`d698285`) livrés · `warmup-approche` HOMME pos B prête · branche
 de session `arena/93096144-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13 — 5ᵉ tour) — LOT A-05 HOMME et LOT A-05 FEMME 100 % livrés (22/25 H et 22/25 F sur le Thème A)
+> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13 — 6ᵉ tour) — `warmup-route` H et `warmup-mobilite` H livrés (24/25 HOMME sur le Thème A)
 >
-> 1. **`circuit-abdominaux` FEMME LIVRÉ (`5e5a2e3`)** : 9ᵉ position (planche haute tenue)
->    produite, GIF composite `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames)
->    et planche `themeA/femme/LOT3F-circuit-abdominaux-femme.gif` (1420×265) assemblés.
-> 2. **Corrections autorisées par le user (feu vert) soldées :**
->    - ✅ **squat FEMME position M** (`277b87f`, RMSE A→M 0,288) ;
->    - ✅ **abduction hanche FEMME position B** (`e67a36f`, RMSE M→B 0,255) ;
->    - ✅ **fire hydrant FEMME A/M/B** en **vue arrière trois-quarts** (`e5b670a`, RMSE A→M 0,088, M→B 0,090) ;
->    - ✅ **squat HOMME A/M/B** refait en trois-quarts sur tapis noir (`9ed4d87`, RMSE A→M 0,076, M→B 0,090).
-> 3. **LOT A-04 HOMME (`db1c520`) et LOT A-04 FEMME (`2a202a4`) COMPLETS (3/3 H + 3/3 F) :**
->    - ✅ `abduction-assise-machine-ou-elastique` (H + F), `pallof-press-a-l-elastique` (H + F),
->      `face-pull-a-l-elastique` (H + F) + planches `LOT-A04-echauffement.gif` et
->      `LOT-A04F-echauffement-femme.gif`.
-> 4. **LOT A-05 HOMME COMPLET (3/3, `5346b43`) :**
->    - ✅ **`respiration-diaphragmatique` HOMME** (`1ca6f4e`, RMSE A→M 0,0616, M→B 0,1144) ;
->    - ✅ **`hip-thrust-unilateral-1-jambe` HOMME** (`5346b43`, RMSE A→M 0,1502, M→B 0,1194) ;
->    - ✅ `dead-bug` HOMME (déjà en LOT 1) + planche `themeA/LOT-A05-echauffement.gif` (1420×265)
->      + grille `themeA/LOT-A05-PLANCHE-TRAVAIL.jpg`.
-> 5. **LOT A-05 FEMME COMPLET (3/3) :**
->    - ✅ **`respiration-diaphragmatique` FEMME** (`beb04bf`, RMSE A→M 0,0865, M→B 0,1106) ;
->    - ✅ **`hip-thrust-unilateral-1-jambe` FEMME** (RMSE A→M 0,0842, M→B 0,1706) ;
->    - ✅ `dead-bug` FEMME (déjà en LOT R1F) + planche `themeA/femme/LOT-A05F-echauffement-femme.gif`
->      (1420×265) + grille `themeA/femme/LOT-A05F-PLANCHE-TRAVAIL.jpg`.
+> 1. **LOT A-04 H+F (`db1c520`, `2a202a4`) et LOT A-05 H+F (`5346b43`, `0b5c1fd`) 100 % livrés.**
+> 2. **Étapes chrono `warmup-*` HOMME (2 / 3 livrées + base B de la 3ᵉ) :**
+>    - ✅ **`warmup-route` HOMME** (`8cf93fa`) : marche active dynamique / montée de genou
+>      souple sur place (A départ deux pieds au sol → M genou gauche à mi-hauteur → B genou
+>      gauche haut ~80°, RMSE A→M 0,0713, M→B 0,0994) ;
+>    - ✅ **`warmup-mobilite` HOMME** (`d698285`) : ouverture thoracique & rétraction
+>      scapulaire dynamique (A fermeture coudes devant poitrine → M rotation externe 90/90
+>      Cactus → B grande ouverture thoracique en T, RMSE A→M 0,0586, M→B 0,0553) ;
+>    - ⏳ **`warmup-approche` HOMME** : position B (barre légère en front-rack aux clavicules)
+>      prête dans `themeA/_sources/A-08/warmup-approche-B.png`. Reste à générer A (barre
+>      légère tenue bras tendus devant les cuisses) et M (tirage/montée à mi-buste) dès
+>      l'ouverture du prochain tour (2 images IA).
 
 > ### 🔄 MISES À JOUR DU 2026-10-07 (2ᵉ passe) — règles 14 et 15
 >

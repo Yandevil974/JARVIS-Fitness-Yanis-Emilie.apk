@@ -31,35 +31,30 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 5ᵉ tour)
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 6ᵉ tour)
 
-- **55 / 614 animations livrées.** Thème A : **22 / 25 en homme, 22 / 25 en femme**
+- **57 / 614 animations livrées.** Thème A : **24 / 25 en homme, 22 / 25 en femme**
   (les 22 exercices d'activation/mobilité/gainage sont **100 % terminés en H et F** ✅).
-- **`circuit-gainage` FEMME (`f07c04d`) et `circuit-abdominaux` FEMME (`5e5a2e3`) : LIVRÉS**
-  (composites 3 phases, 9/9 positions).
-- **Corrections autorisées par le user (feu vert du 2026-10-07) — toutes livrées :**
-  squat F pos M (`277b87f`), abduction F pos B (`e67a36f`), fire hydrant F A/M/B en arrière
-  trois-quarts (`e5b670a`), squat H A/M/B en trois-quarts sur tapis noir (`9ed4d87`).
-- **LOT A-04 HOMME (`db1c520`) et LOT A-04 FEMME (`2a202a4`) : 100 % LIVRÉS (3/3 H + 3/3 F)**
-  (`abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
-  `face-pull-a-l-elastique`).
-- **LOT A-05 HOMME (`5346b43`) et LOT A-05 FEMME : 100 % LIVRÉS (3/3 H + 3/3 F)** :
-  - ✅ **`respiration-diaphragmatique` HOMME** (`1ca6f4e`, RMSE A→M 0,0616, M→B 0,1144) et
-    **FEMME** (`beb04bf`, RMSE A→M 0,0865, M→B 0,1106) ;
-  - ✅ **`hip-thrust-unilateral-1-jambe` HOMME** (`5346b43`, RMSE A→M 0,1502, M→B 0,1194) et
-    **FEMME** (RMSE A→M 0,0842, M→B 0,1706) ;
-  - ✅ Planches animées `themeA/LOT-A05-echauffement.gif` et
-    `themeA/femme/LOT-A05F-echauffement-femme.gif` (1420×265, 4 frames) + grilles
-    `LOT-A05-PLANCHE-TRAVAIL.jpg` et `LOT-A05F-PLANCHE-TRAVAIL.jpg` (1440×600).
+- **LOT A-04 H+F (`db1c520`, `2a202a4`) et LOT A-05 H+F (`5346b43`, `0b5c1fd`) : 100 % LIVRÉS.**
+- **Étapes chrono `warmup-*` HOMME : 2 / 3 livrées + base B de la 3ᵉ prête :**
+  - ✅ **`warmup-route` HOMME** (`8cf93fa`, RMSE A→M 0,0713, M→B 0,0994) ;
+  - ✅ **`warmup-mobilite` HOMME** (`d698285`, RMSE A→M 0,0586, M→B 0,0553) ;
+  - ⏳ **`warmup-approche` HOMME** : position B (barre légère reçue en front-rack aux
+    clavicules) prête dans `themeA/_sources/A-08/warmup-approche-B.png`. Reste à générer
+    A (barre légère tenue bras tendus devant les cuisses) et M (tirage/montée à mi-buste)
+    dès l'ouverture du prochain tour (2 images IA).
 - **À FAIRE, dans l'ordre :**
-  1. **Les 3 étapes chrono d'échauffement `warmup-route` (Mise en route cardio — 3 min),
-     `warmup-mobilite` (Mobilité articulaire — 4 min), `warmup-approche` (Séries d'approche
-     — 3 min)** — **en HOMME (9 images IA) puis en FEMME (9 images IA)** pour boucler à
-     **25 / 25 H et 25 / 25 F** le Thème A ;
-  2. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
+  1. **Terminer `warmup-approche` HOMME (2 images IA : A et M)** depuis
+     `themeA/_sources/A-08/warmup-approche-B.png` → GIF + planche `LOT-A08-echauffement.gif`
+     (1420×265, réunissant `warmup-route`, `warmup-mobilite`, `warmup-approche`) + grille 3×3
+     `LOT-A08-PLANCHE-TRAVAIL.jpg` → **25 / 25 HOMME sur le Thème A !**
+  2. **Produire les 3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche` en
+     FEMME (9 images IA)** en s'appuyant sur `REF-personnage-feminin.jpg` + les poses HOMME
+     de `themeA/_sources/A-08/` → **25 / 25 FEMME sur le Thème A !**
+  3. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
      vue arrière trois-quarts ;
-  3. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
-  4. ensuite seulement : **thème B — musculation**.
+  4. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
+  5. ensuite seulement : **thème B — musculation**.
 
 ## 2. CONSIGNE À NE PAS NÉGOCIER
 
