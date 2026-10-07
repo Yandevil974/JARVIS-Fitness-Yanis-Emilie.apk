@@ -442,11 +442,27 @@ image (≈ 9 images par circuit → **1 circuit par tour**).
 | 6 | Gainage latéral | B — hanches hautes, ligne droite chevilles-épaules | `_sources/LOT3F/circuit-gainage-P2-B.png` | ✅ |
 | 7 | Bird dog | A — à quatre pattes, dos plat | `_sources/LOT3F/circuit-gainage-P3-A.png` | ✅ |
 | 8 | Bird dog | M — bras droit qui s'allonge vers l'avant | `_sources/LOT3F/circuit-gainage-P3-M.png` | ✅ |
-| 9 | Bird dog | B — bras droit + jambe gauche tendus à l'horizontale | — | ⬜ **drapeau rouge** |
+| 9 | Bird dog | B — bras droit + jambe gauche tendus à l'horizontale | `_sources/LOT3F/circuit-gainage-P3-B.png` | ✅ |
 
-**Planche de travail (8/9) :** `themeA/femme/_sources/LOT3F/PLANCHE-TRAVAIL-LOT3F-circuit-gainage.png`
-— affichée au user pour son œil (règle 7). La 9ᵉ position étant absente, cette planche est
-un **aperçu de travail**, pas la planche de livraison.
+**LIVRÉ — 9 / 9 positions** (2026-10-07, 2ᵉ tour) :
+
+| Livrable | Fichier |
+| --- | --- |
+| Animation composite FEMME | `themeA/femme/circuit-gainage-3poses.gif` (**460×257, 16 frames** — A→M→B sur chacune des 3 phases, puis retour arrière jusqu'à A) |
+| Planche 3 colonnes | `themeA/femme/LOT3F-circuit-gainage-femme.gif` (**1420×265, 4 frames** — 1 colonne par phase : planche / latéral / bird dog) |
+| Planche de contrôle statique | `themeA/femme/LOT3F-circuit-gainage-PLANCHE-FINALE.jpg` |
+| Les 9 positions | `themeA/femme/_sources/LOT3F/circuit-gainage-P*.png` + `PLANCHE-TRAVAIL-…png` |
+
+⚠️ **Note d'assemblage** : le format du chantier « A→M→B→M » ne décrit correctement que
+**3 positions**. Pour un circuit composite de 3 phases (9 positions), la boucle retenue est
+**A→M→B sur chaque phase puis retour à la position de départ** :
+P1 A-M-B → P2 A-M-B → P3 A-M-B → P2 M-A → P1 M-A. Cela donne un **aller-retour propre,
+sans saut entre la fin de la phase 3 et le début de la phase 1** (un retour direct B→A
+aurait produit un téléportage du mannequin). Le générateur `scripts/build-gif-lot.sh`
+ne sait produire que la boucle à 3 positions : l'assemblage du composite a donc été fait
+avec la même chaîne d'outils (`convert`, `-delay 130/110`, `-colors 96`, `-layers
+optimize` sur le GIF, **jamais** sur la planche), en conservant les paramètres validés.
+**Si le user veut une autre convention de boucle, elle est à trancher.**
 
 ### Budget d'images IA du tour — 10 / 10, aucune image perdue en silence
 
@@ -533,8 +549,8 @@ légenées). Constats :
    ⚠️ si la phase 3 est ajoutée à part, utiliser la même chaîne d'images et **jamais
    `-layers optimize` sur la planche** ;
 3. afficher la planche définitive → validation user ;
-4. **puis seulement** produire `circuit-abdominaux` en FEMME (crunch → relevés de jambes
-   → gainage, 9 images, 1 circuit par tour) ;
+4. ✅ **FAIT** — `circuit-abdominaux` en FEMME lancé dans le même tour (crunch → relevés de
+   jambes → gainage, 9 images) ;
 5. le remplacement des fichiers **HOMME** (aujourd'hui en version simple) ne se fera
    **qu'après accord explicite du user** (règle 2).
 

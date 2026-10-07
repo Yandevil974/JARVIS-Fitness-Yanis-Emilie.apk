@@ -282,8 +282,14 @@ Ces dossiers évitent de repayer des images déjà générées.
 2. ✅ **FAIT** — r**attrapage de la fille sur les lots 1 et 2** :
    `dead-bug`, `bird-dog`, `gainage-lateral`, `mountain-climbers`, `dead-bug-rotation`,
    `gainage-lateral-dyn` existent en HOMME **et** FEMME.
-3. 🟠 **LOT 3 EN COURS — `circuit-gainage` FEMME : 8 / 9 positions produites** (commit
-   `56ec4ce`), chaînées en 3 phases :
+3. ✅ **FAIT le 2026-10-07 — LOT 3 FEMME `circuit-gainage` : 9 / 9 positions, livré.**
+   Animation composite `themeA/femme/circuit-gainage-3poses.gif` (460×257, 16 frames) +
+   planche 3 colonnes `themeA/femme/LOT3F-circuit-gainage-femme.gif` (1420×265).
+   **Boucle retenue** : A→M→B sur chacune des 3 phases, puis retour arrière jusqu'au
+   départ (évite un saut entre la fin du circuit et son début) — convention à confirmer
+   par le user.
+   `circuit-abdominaux` FEMME enchaîné dans le même tour (voir ci-dessous).
+   Rappel du déroulé (3 phases chaînées) :
    - **phase 1 planche** : A installation à genoux → M jambes qui s'allongent → B planche
      complète sur avant-bras ;
    - **phase 2 gainage latéral** : A flanc gauche hanches basses → M bassin à mi-hauteur →
@@ -291,10 +297,11 @@ Ces dossiers évitent de repayer des images déjà générées.
    - **phase 3 bird dog** : A quatre pattes → M bras droit qui s'allonge → **B (extension
      complète) REFUSÉE par la limite des 10 images IA : à produire en ouverture du
      prochain tour.**
-   **Contrôle du 2026-10-07 (2ᵉ passe, à la demande du user)** — voir le détail et les
-   réserves en § 8 et dans `SUIVI.md` ; l'aperçu est **dans le dépôt** :
-   `animations/themeA/femme/_sources/LOT3F/PLANCHE-TRAVAIL-LOT3F-circuit-gainage.png`
-   (+ `GRILLE-CHECK-LOT3F-circuit-gainage.jpg`).
+   **Contrôle du 2026-10-07 (2ᵉ passe, à la demande du user)** — planche validée par le
+   user (« valider, poursuis ») malgré les réserves listées en § 8 ; l'aperçu est **dans
+   le dépôt** :
+   `animations/themeA/femme/LOT3F-circuit-gainage-PLANCHE-TRAVAIL.png`
+   (+ `GRILLE-CHECK-LOT3F-circuit-gainage.jpg`, `LOT3F-circuit-gainage-PLANCHE-FINALE.jpg`).
    Corrections identifiées et **à trancher par le user** avant de poursuivre :
    (a) P1-A : la main gauche est déjà posée au sol devant le genou, ce qui rend la
    séquence d'installation confuse pour un mouvement à quatre pattes ;
