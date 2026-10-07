@@ -2,25 +2,29 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 (Fitness 13 — 6ᵉ tour) · 57 / 614 animations livrées
-(thème A : 24/25 en HOMME, 22/25 en FEMME) · `warmup-route` HOMME (`8cf93fa`) et
-`warmup-mobilite` HOMME (`d698285`) livrés · `warmup-approche` HOMME pos B prête · branche
-de session `arena/93096144-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 7 octobre 2026 (Fitness 13 — 7ᵉ tour) · 60 / 614 animations livrées
+(thème A : 25/25 en HOMME [100% ✅], 24/25 en FEMME) · LOT A-08/09 HOMME complet (`204a8b4`) ·
+`warmup-route` FEMME (`b017eb6`) et `warmup-mobilite` FEMME (`b932ebd`) livrés ·
+`warmup-approche` FEMME pos A prête · branche de session `arena/93096144-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13 — 6ᵉ tour) — `warmup-route` H et `warmup-mobilite` H livrés (24/25 HOMME sur le Thème A)
+> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13 — 7ᵉ tour) — Thème A HOMME 100 % terminé (25/25) + 24/25 en FEMME
 >
-> 1. **LOT A-04 H+F (`db1c520`, `2a202a4`) et LOT A-05 H+F (`5346b43`, `0b5c1fd`) 100 % livrés.**
-> 2. **Étapes chrono `warmup-*` HOMME (2 / 3 livrées + base B de la 3ᵉ) :**
->    - ✅ **`warmup-route` HOMME** (`8cf93fa`) : marche active dynamique / montée de genou
->      souple sur place (A départ deux pieds au sol → M genou gauche à mi-hauteur → B genou
->      gauche haut ~80°, RMSE A→M 0,0713, M→B 0,0994) ;
->    - ✅ **`warmup-mobilite` HOMME** (`d698285`) : ouverture thoracique & rétraction
->      scapulaire dynamique (A fermeture coudes devant poitrine → M rotation externe 90/90
->      Cactus → B grande ouverture thoracique en T, RMSE A→M 0,0586, M→B 0,0553) ;
->    - ⏳ **`warmup-approche` HOMME** : position B (barre légère en front-rack aux clavicules)
->      prête dans `themeA/_sources/A-08/warmup-approche-B.png`. Reste à générer A (barre
->      légère tenue bras tendus devant les cuisses) et M (tirage/montée à mi-buste) dès
->      l'ouverture du prochain tour (2 images IA).
+> 1. **LOT A-08 / A-09 HOMME (`warmup-*`) 100 % livré (`204a8b4`) → Thème A HOMME = 25 / 25 :**
+>    - ✅ **`warmup-route` HOMME** (`8cf93fa`, RMSE A→M 0,0713, M→B 0,0994) ;
+>    - ✅ **`warmup-mobilite` HOMME** (`d698285`, RMSE A→M 0,0586, M→B 0,0553) ;
+>    - ✅ **`warmup-approche` HOMME** (`204a8b4`, RMSE A→M 0,0740, M→B 0,0990) + planche animée
+>      3 colonnes `themeA/LOT-A08-echauffement.gif` (1420×265) + grille 3×3 `themeA/LOT-A08-PLANCHE-TRAVAIL.jpg`.
+> 2. **LOT A-08F / A-09F FEMME (`warmup-*`) : 2 / 3 livrées + base A de la 3ᵉ :**
+>    - ✅ **`warmup-route` FEMME** (`b017eb6`) : marche active dynamique / montée de genou souple
+>      sur place (A départ deux pieds au sol → M genou gauche à mi-hauteur ~45° → B genou gauche
+>      haut ~90°, RMSE A→M 0,0837, M→B 0,1078 ; réserve : colline lointaine apparue à gauche en B) ;
+>    - ✅ **`warmup-mobilite` FEMME** (`b932ebd`) : ouverture thoracique & rétraction scapulaire
+>      dynamique (A avant-bras fermés devant buste → M rotation externe 90/90 Cactus → B grande
+>      ouverture thoracique en T, RMSE A→M 0,0652, M→B 0,0475) ;
+>    - ⏳ **`warmup-approche` FEMME** : position A (barre légère tenue bras tendus devant le haut
+>      des cuisses, dallage de pierre irrégulier cohérent avec le lot) prête dans
+>      `themeA/femme/_sources/A-08F/warmup-approche-A.png`. Reste à générer M (tirage mi-buste)
+>      et B (front-rack aux clavicules) dès l'ouverture du prochain tour (2 images IA).
 
 > ### 🔄 MISES À JOUR DU 2026-10-07 (2ᵉ passe) — règles 14 et 15
 >

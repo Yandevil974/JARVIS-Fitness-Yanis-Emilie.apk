@@ -12,17 +12,17 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **57 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 2/3** (`warmup-route` `8cf93fa`, `warmup-mobilite` `d698285` ; `warmup-approche` pos B prête) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
-| Restant à produire | **557** |
+| Animations créées | **60 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`warmup-route` `8cf93fa`, `warmup-mobilite` `d698285`, `warmup-approche` `204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 2/3** (`warmup-route` `b017eb6`, `warmup-mobilite` `b932ebd` ; `warmup-approche` pos A prête) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
+| Restant à produire | **554** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (2/3 `warmup-*` livrés + base B de `warmup-approche`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) |
-| Versions femme produites | **22 / 307** |
-| Thème A (échauffement) | **24 / 25 en homme, 22 / 25 en femme** · `warmup-route` H (`8cf93fa`) et `warmup-mobilite` H (`d698285`) livrés · Reste `warmup-approche` H (2 images A et M à chaîner vers B prête), les 3 `warmup-*` FEMME (9 images), et les **2 circuits HOMME** à passer en version composite |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (2/3 `warmup-*` livrés + base A de `warmup-approche`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) |
+| Versions femme produites | **24 / 307** |
+| Thème A (échauffement) | **25 / 25 en homme (100% ✅), 24 / 25 en femme** · LOT A-08/09 HOMME complet (`204a8b4`) · `warmup-route` F (`b017eb6`) et `warmup-mobilite` F (`b932ebd`) livrés · Reste `warmup-approche` F (2 images M et B à chaîner depuis A prête) et les **2 circuits HOMME** à passer en version composite |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -782,17 +782,49 @@ LOT A-02 FEMME (profil / face).
 - `themeA/femme/LOT-A05F-respiration-diaphragmatique-PLANCHE-FINALE.jpg` ;
 - `themeA/femme/LOT-A05F-hip-thrust-unilateral-PLANCHE-FINALE.jpg`.
 
-## LOT A-08 / A-09 HOMME — 3 étapes chrono `warmup-*` (2 / 3 livrées + base B du 3ᵉ) — 2026-10-07
+## LOT A-08 / A-09 HOMME — COMPLET (3 / 3 étapes chrono `warmup-*` livrées — 25/25 Thème A HOMME ✅) — 2026-10-07 (`204a8b4`)
 
 | Fichier | Étape chrono | Positions | Statut |
 | --- | --- | --- | --- |
 | `themeA/warmup-route-3poses.gif` | `warmup-route` (*Mise en route cardio — 3 min*) | Marche active dynamique / montée de genou souple sur place (vue 3/4 avant sur tapis noir) : A = deux pieds posés sur le tapis en départ de foulée · M = montée du genou gauche à mi-hauteur (~35°), bras en balancier · B = genou gauche levé haut (~75-80°), poing gauche levé en coordination | ✅ **livré (`8cf93fa`)** (RMSE A→M = **0,0713**, M→B = **0,0994**) |
 | `themeA/warmup-mobilite-3poses.gif` | `warmup-mobilite` (*Mobilité articulaire — 4 min*) | Ouverture thoracique et rétraction scapulaire dynamique debout (vue 3/4 avant) : A = avant-bras et coudes fermés verticalement devant la poitrine (protraction scapulaire) · M = ouverture à mi-course en position Cactus / W à 90/90 (rotation externe d'épaules) · B = grande ouverture thoracique bras grands ouverts en T vers l'arrière, omoplates serrées | ✅ **livré (`d698285`)** (RMSE A→M = **0,0586**, M→B = **0,0553**) |
-| `themeA/warmup-approche-3poses.gif` | `warmup-approche` (*Séries d'approche — 3 min*) | Série d'approche à la barre légère (barre olympique avec un petit disque fin d'échauffement de chaque côté) : **B produite et validée** (`_sources/A-08/warmup-approche-B.png`, barre légère amenée en front-rack aux clavicules) · A (barre légère tenue bras tendus devant les cuisses) et M (tirage/montée à mi-buste) ouvrent le prochain tour *(note technique : en tentant un squat depuis la barre haute en front-rack, le générateur verrouillait la barre horizontale à hauteur de l'horizon et refusait d'abaisser le buste ; le passage à un épaulé/tirage d'approche A cuisses → M sternum → B front-rack clavicules contourne ce verrouillage)* | ⏳ **1/3 position prête** (A et M ouvrent le prochain tour) |
+| `themeA/warmup-approche-3poses.gif` | `warmup-approche` (*Séries d'approche — 3 min*) | Épaulé / tirage d'approche à la barre légère (barre olympique avec un petit disque fin d'échauffement de chaque côté) : A = barre légère tenue bras tendus vers le bas devant le haut des cuisses · M = tirage vertical à mi-buste (sternum), coudes hauts à 90° · B = barre légère amenée en front-rack aux clavicules | ✅ **livré (`204a8b4`)** (RMSE A→M = **0,0740**, M→B = **0,0990**) |
+
+**Planche animée 3 colonnes et aperçus dans le dépôt (règle 15) :**
+- `themeA/LOT-A08-echauffement.gif` (1420×265, 4 frames, sans `-layers optimize`) ;
+- `themeA/LOT-A08-PLANCHE-TRAVAIL.jpg` (grille 3×3 complète 1440×900 des 3 étapes `warmup-*` HOMME) ;
+- `themeA/LOT-A08-warmup-route-PLANCHE-FINALE.jpg` ;
+- `themeA/LOT-A08-warmup-mobilite-PLANCHE-FINALE.jpg` ;
+- `themeA/LOT-A08-warmup-approche-PLANCHE-FINALE.jpg`.
+
+---
+
+## LOT A-08F / A-09F FEMME — 3 étapes chrono `warmup-*` (2 / 3 livrées + base A du 3ᵉ) — 2026-10-07
+
+| Fichier | Étape chrono | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeA/femme/warmup-route-3poses.gif` | `warmup-route` FEMME (*Mise en route cardio — 3 min*) | Marche active dynamique / montée de genou souple sur place (vue 3/4 avant sur tapis noir) : A = deux pieds posés sur le tapis en départ de foulée · M = montée du genou gauche à mi-hauteur (~45°), bras en balancier · B = genou gauche levé haut (~90°), poing gauche levé en coordination (réserve : apparition d'un relief lointain sur l'horizon gauche derrière le palmier en B) | ✅ **livré (`b017eb6`)** (RMSE A→M = **0,0837**, M→B = **0,1078**) |
+| `themeA/femme/warmup-mobilite-3poses.gif` | `warmup-mobilite` FEMME (*Mobilité articulaire — 4 min*) | Ouverture thoracique et rétraction scapulaire dynamique debout (vue 3/4 avant) : A = avant-bras et coudes fermés verticalement devant le buste · M = ouverture à mi-course en position Cactus / W à 90/90 (rotation externe d'épaules) · B = grande ouverture thoracique bras grands ouverts en T vers l'arrière, omoplates serrées | ✅ **livré (`b932ebd`)** (RMSE A→M = **0,0652**, M→B = **0,0475**) |
+| `themeA/femme/warmup-approche-3poses.gif` | `warmup-approche` FEMME (*Séries d'approche — 3 min*) | Épaulé / tirage d'approche à la barre légère : **A produite et validée** (`themeA/femme/_sources/A-08F/warmup-approche-A.png`, barre légère tenue bras tendus vers le bas devant le haut des cuisses, sol de pierre irrégulier cohérent avec `warmup-route` et `warmup-mobilite` FEMME) · M (tirage mi-buste) et B (front-rack aux clavicules) ouvrent le prochain tour | ⏳ **1/3 position prête** (M et B ouvrent le prochain tour) |
 
 **Aperçus dans le dépôt (règle 15) :**
-- `themeA/LOT-A08-warmup-route-PLANCHE-FINALE.jpg` ;
-- `themeA/LOT-A08-warmup-mobilite-PLANCHE-FINALE.jpg`.
+- `themeA/femme/LOT-A08F-warmup-route-PLANCHE-FINALE.jpg` ;
+- `themeA/femme/LOT-A08F-warmup-mobilite-PLANCHE-FINALE.jpg`.
+
+### Budget d'images IA du 7ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `warmup-approche` HOMME A (barre légère tenue bras tendus devant les cuisses) | ✅ conforme |
+| 2 | `warmup-approche` HOMME M (tirage vertical à mi-buste, coudes hauts à 90°) | ✅ conforme (RMSE A→M = 0,0740, M→B = 0,0990) → **LOT A-08/09 HOMME complet livré (`204a8b4`)** |
+| 3 | `warmup-route` FEMME A (deux pieds au sol sur tapis noir en départ de foulée) | ✅ conforme |
+| 4 | `warmup-route` FEMME M (genou gauche levé à mi-hauteur ~45°) | ✅ conforme (RMSE A→M = 0,0837) |
+| 5 | `warmup-route` FEMME B (genou gauche levé haut ~90°, poing gauche levé) | ✅ conforme (RMSE M→B = 0,1078 ; réserve : colline lointaine apparue à gauche en B) → **livré (`b017eb6`)** |
+| 6 | `warmup-mobilite` FEMME A (avant-bras et coudes fermés verticalement devant le buste) | ✅ conforme |
+| 7 | `warmup-mobilite` FEMME M (rotation externe 90/90 Cactus / W-pose) | ✅ conforme (RMSE A→M = 0,0652) |
+| 8 | `warmup-mobilite` FEMME B (grande ouverture thoracique bras grands ouverts en T) | ✅ conforme (RMSE M→B = 0,0475) → **livré (`b932ebd`)** |
+| 9 | `warmup-approche` FEMME A (essai 1, chaîné depuis `REF-personnage-feminin.jpg`) | ❌ rejeté (sol changé en grandes dalles lisses au lieu du dallage de pierre irrégulier) |
+| 10 | `warmup-approche` FEMME A (essai 2, chaîné depuis `warmup-mobilite-A.png` FEMME) | ✅ conforme (même dallage de pierre irrégulier et même mannequin) → **base prête pour le prochain tour** |
 
 ### Budget d'images IA du 6ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
 

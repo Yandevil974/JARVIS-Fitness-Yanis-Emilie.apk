@@ -104,14 +104,14 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Circuit abdominaux (crunch + relevés + gainage) | `circuit-abdominaux-crunch-releves-gainage` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · ✅ **LOT 3 F = composite LIVRÉ (9/9, `5e5a2e3`)** |
-| 2 | warmup-approche | `warmup-approche` | échauffement | étape chrono · H + F (2 anim.) | ⏳ **H pos B prête (`_sources/A-08/warmup-approche-B.png`), A et M ouvrent le prochain tour** · ⬜ F au prochain tour |
-| 3 | warmup-mobilite | `warmup-mobilite` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-08 H livré (`d698285`)** · ⬜ F au prochain tour |
+| 2 | warmup-approche | `warmup-approche` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-08 H livré (`204a8b4`)** · ⏳ **F pos A prête (`femme/_sources/A-08F/warmup-approche-A.png`), M et B ouvrent le prochain tour** |
+| 3 | warmup-mobilite | `warmup-mobilite` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-08 H livré (`d698285`)** · ✅ **LOT A-08F F livrée (`b932ebd`)** |
 
 ### Lot A-09
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | warmup-route | `warmup-route` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-09 H livré (`8cf93fa`)** · ⬜ F au prochain tour |
+| 1 | warmup-route | `warmup-route` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-09 H livré (`8cf93fa`)** · ✅ **LOT A-09F F livrée (`b017eb6`)** |
 
 ---
 

@@ -31,30 +31,34 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 6ᵉ tour)
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 7ᵉ tour)
 
-- **57 / 614 animations livrées.** Thème A : **24 / 25 en homme, 22 / 25 en femme**
-  (les 22 exercices d'activation/mobilité/gainage sont **100 % terminés en H et F** ✅).
-- **LOT A-04 H+F (`db1c520`, `2a202a4`) et LOT A-05 H+F (`5346b43`, `0b5c1fd`) : 100 % LIVRÉS.**
-- **Étapes chrono `warmup-*` HOMME : 2 / 3 livrées + base B de la 3ᵉ prête :**
+- **60 / 614 animations livrées.** Thème A : **25 / 25 en homme (100 % ✅), 24 / 25 en femme**
+  (les 22 exercices d'activation/mobilité/gainage sont **100 % terminés en H et F** ✅, et le
+  LOT A-08/09 HOMME est **100 % terminé** ✅).
+- **LOT A-08 / A-09 HOMME (`warmup-*`) : 100 % LIVRÉ (`204a8b4`) :**
   - ✅ **`warmup-route` HOMME** (`8cf93fa`, RMSE A→M 0,0713, M→B 0,0994) ;
   - ✅ **`warmup-mobilite` HOMME** (`d698285`, RMSE A→M 0,0586, M→B 0,0553) ;
-  - ⏳ **`warmup-approche` HOMME** : position B (barre légère reçue en front-rack aux
-    clavicules) prête dans `themeA/_sources/A-08/warmup-approche-B.png`. Reste à générer
-    A (barre légère tenue bras tendus devant les cuisses) et M (tirage/montée à mi-buste)
-    dès l'ouverture du prochain tour (2 images IA).
+  - ✅ **`warmup-approche` HOMME** (`204a8b4`, RMSE A→M 0,0740, M→B 0,0990) + planche animée
+    `themeA/LOT-A08-echauffement.gif` (1420×265) + grille 3×3 `themeA/LOT-A08-PLANCHE-TRAVAIL.jpg`.
+- **LOT A-08F / A-09F FEMME (`warmup-*`) : 2 / 3 livrées + base A de la 3ᵉ prête :**
+  - ✅ **`warmup-route` FEMME** (`b017eb6`, RMSE A→M 0,0837, M→B 0,1078) ;
+  - ✅ **`warmup-mobilite` FEMME** (`b932ebd`, RMSE A→M 0,0652, M→B 0,0475) ;
+  - ⏳ **`warmup-approche` FEMME** : position A (barre légère tenue bras tendus devant le haut
+    des cuisses, sol de pierre irrégulier cohérent) prête dans
+    `themeA/femme/_sources/A-08F/warmup-approche-A.png`. Reste à générer M (tirage mi-buste)
+    et B (front-rack aux clavicules) dès l'ouverture du prochain tour (2 images IA).
 - **À FAIRE, dans l'ordre :**
-  1. **Terminer `warmup-approche` HOMME (2 images IA : A et M)** depuis
-     `themeA/_sources/A-08/warmup-approche-B.png` → GIF + planche `LOT-A08-echauffement.gif`
-     (1420×265, réunissant `warmup-route`, `warmup-mobilite`, `warmup-approche`) + grille 3×3
-     `LOT-A08-PLANCHE-TRAVAIL.jpg` → **25 / 25 HOMME sur le Thème A !**
-  2. **Produire les 3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche` en
-     FEMME (9 images IA)** en s'appuyant sur `REF-personnage-feminin.jpg` + les poses HOMME
-     de `themeA/_sources/A-08/` → **25 / 25 FEMME sur le Thème A !**
-  3. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
-     vue arrière trois-quarts ;
-  4. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
-  5. ensuite seulement : **thème B — musculation**.
+  1. **Terminer `warmup-approche` FEMME (2 images IA : M et B)** depuis
+     `themeA/femme/_sources/A-08F/warmup-approche-A.png` → GIF + planche
+     `LOT-A08F-echauffement-femme.gif` (1420×265, réunissant `warmup-route`, `warmup-mobilite`,
+     `warmup-approche` FEMME) + grille 3×3 `LOT-A08F-PLANCHE-TRAVAIL.jpg` → **25 / 25 FEMME
+     sur le Thème A (50 / 50 animations du Thème A terminées) !**
+  2. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
+     vue arrière trois-quarts (si le user donne son accord, ou attaquer directement le **Thème B —
+     Musculation : Lot B-01** `bulgarian-split-squat`, `goblet-squat`, `step-up-sur-banc-hauteur-du-genou`) ;
+  3. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
+  4. **Thème B — musculation** (Lot B-01 H puis F).
 
 ## 2. CONSIGNE À NE PAS NÉGOCIER
 
