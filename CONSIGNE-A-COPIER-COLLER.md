@@ -31,58 +31,35 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 4ᵉ tour)
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 5ᵉ tour)
 
-- **52 / 614 animations livrées.** Thème A : **21 / 25 en homme, 20 / 25 en femme**
-  (rattrapage de la fille 100 % terminé sur les lots 1, 2, 3 et A-01 à A-04 ✅).
-- **`circuit-gainage` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `f07c04d`).
-- **`circuit-abdominaux` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `5e5a2e3`).
-  Fichiers : `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames) et
-  `themeA/femme/LOT3F-circuit-abdominaux-femme.gif` (planche 1420×265, 3 colonnes).
-  ⚠️ **Écart assumé** : sa phase 3 est une **planche HAUTE (sur les mains)**.
+- **55 / 614 animations livrées.** Thème A : **22 / 25 en homme, 22 / 25 en femme**
+  (les 22 exercices d'activation/mobilité/gainage sont **100 % terminés en H et F** ✅).
+- **`circuit-gainage` FEMME (`f07c04d`) et `circuit-abdominaux` FEMME (`5e5a2e3`) : LIVRÉS**
+  (composites 3 phases, 9/9 positions).
 - **Corrections autorisées par le user (feu vert du 2026-10-07) — toutes livrées :**
-  - ✅ **squat FEMME, position M** corrigée (`277b87f`) — RMSE A→M 0,288 ;
-  - ✅ **abduction hanche FEMME, position B** corrigée (`e67a36f`) — RMSE M→B 0,255 ;
-  - ✅ **fire hydrant FEMME, positions A, M et B** corrigées en **vue arrière trois-quarts**
-    (`e5b670a`) — RMSE A→M 0,088, M→B 0,090 ;
-  - ✅ **squat HOMME, positions A, M et B** corrigées en **vue trois-quarts sur tapis noir**
-    (`9ed4d87`) — RMSE A→M 0,076, M→B 0,090.
-- **LOT A-04 HOMME : 3 / 3 exercices LIVRÉS (`db1c520`) :**
-  - ✅ `abduction-assise-machine-ou-elastique` HOMME (`bd77abf`), `pallof-press-a-l-elastique`
-    HOMME (`f2c7d13`), `face-pull-a-l-elastique` HOMME (`db1c520`) + planche
-    `themeA/LOT-A04-echauffement.gif` (1420×265) + `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg`.
-- **LOT A-04 FEMME : 3 / 3 exercices LIVRÉS (`2a202a4`) :**
-  - ✅ **`abduction-assise-machine-ou-elastique` FEMME** (`721ad18`, RMSE A→M 0,0864, M→B 0,0746) ;
-  - ✅ **`pallof-press-a-l-elastique` FEMME** (`8686998`, RMSE A→M 0,0595, M→B 0,0949 ; réserve :
-    pieds légèrement plus écartés en B) ;
-  - ✅ **`face-pull-a-l-elastique` FEMME** (`2a202a4`, RMSE A→M 0,0578, M→B 0,0511) ;
-  - ✅ Planche animée `themeA/femme/LOT-A04F-echauffement-femme.gif` (1420×265, 4 frames) et
-    grille 3×3 `themeA/femme/LOT-A04F-PLANCHE-TRAVAIL.jpg` (1440×900).
-- **LOT A-05 HOMME : 1 / 2 nouvel exercice livré + base A du 2ᵉ (`dead-bug` déjà en LOT 1) :**
-  - ✅ **`respiration-diaphragmatique` HOMME** (`1ca6f4e`) : allongé sur le dos genoux fléchis
-    (A inspiration ventrale → M expiration ventre plat → B stomach vacuum hypopressif /
-    transverse engagé, RMSE A→M 0,0616, M→B 0,1144) ;
-  - ⏳ **`hip-thrust-unilateral-1-jambe` HOMME** : position A prête et validée dans
-    `themeA/_sources/A-05/hip-thrust-unilateral-1-jambe-A.png` (omoplates sur banc noir,
-    bassin bas près du tapis, pied gauche à plat, jambe droite levée genou à 90°). Reste à
-    chaîner M (mi-hauteur) et B (extension complète alignée genou-hanches-épaules) dès
-    l'ouverture du prochain tour (2 images IA).
+  squat F pos M (`277b87f`), abduction F pos B (`e67a36f`), fire hydrant F A/M/B en arrière
+  trois-quarts (`e5b670a`), squat H A/M/B en trois-quarts sur tapis noir (`9ed4d87`).
+- **LOT A-04 HOMME (`db1c520`) et LOT A-04 FEMME (`2a202a4`) : 100 % LIVRÉS (3/3 H + 3/3 F)**
+  (`abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
+  `face-pull-a-l-elastique`).
+- **LOT A-05 HOMME (`5346b43`) et LOT A-05 FEMME : 100 % LIVRÉS (3/3 H + 3/3 F)** :
+  - ✅ **`respiration-diaphragmatique` HOMME** (`1ca6f4e`, RMSE A→M 0,0616, M→B 0,1144) et
+    **FEMME** (`beb04bf`, RMSE A→M 0,0865, M→B 0,1106) ;
+  - ✅ **`hip-thrust-unilateral-1-jambe` HOMME** (`5346b43`, RMSE A→M 0,1502, M→B 0,1194) et
+    **FEMME** (RMSE A→M 0,0842, M→B 0,1706) ;
+  - ✅ Planches animées `themeA/LOT-A05-echauffement.gif` et
+    `themeA/femme/LOT-A05F-echauffement-femme.gif` (1420×265, 4 frames) + grilles
+    `LOT-A05-PLANCHE-TRAVAIL.jpg` et `LOT-A05F-PLANCHE-TRAVAIL.jpg` (1440×600).
 - **À FAIRE, dans l'ordre :**
-  1. **Terminer le LOT A-05 HOMME (2 images IA)** :
-     - chaîner `M.png` et `B.png` de `hip-thrust-unilateral-1-jambe` HOMME depuis
-       `themeA/_sources/A-05/hip-thrust-unilateral-1-jambe-A.png` → GIF + planche
-       `themeA/LOT-A05-echauffement.gif` (1420×265, avec `respiration-diaphragmatique`,
-       `hip-thrust-unilateral-1-jambe` et `dead-bug`) + commit ;
-  2. **LOT A-05 FEMME (6 images IA)** :
-     - produire `respiration-diaphragmatique` FEMME (A → M → B) et
-       `hip-thrust-unilateral-1-jambe` FEMME (A → M → B) → GIFs + planche
-       `themeA/femme/LOT-A05F-echauffement-femme.gif` (1420×265) + commit ;
-  3. **Les 3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche`** — **en HOMME
-     puis en FEMME** ;
-  4. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
+  1. **Les 3 étapes chrono d'échauffement `warmup-route` (Mise en route cardio — 3 min),
+     `warmup-mobilite` (Mobilité articulaire — 4 min), `warmup-approche` (Séries d'approche
+     — 3 min)** — **en HOMME (9 images IA) puis en FEMME (9 images IA)** pour boucler à
+     **25 / 25 H et 25 / 25 F** le Thème A ;
+  2. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
      vue arrière trois-quarts ;
-  5. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
-  6. ensuite seulement : **thème B — musculation**.
+  3. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
+  4. ensuite seulement : **thème B — musculation**.
 
 ## 2. CONSIGNE À NE PAS NÉGOCIER
 

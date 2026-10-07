@@ -12,17 +12,17 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **52 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + **A-05 HOMME : 1/2** (`respiration-diaphragmatique`, `1ca6f4e` ; `dead-bug` déjà en L1) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **A-04 FEMME : 3/3 complet (`2a202a4`)** + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
-| Restant à produire | **562** |
+| Animations créées | **55 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + **A-05 HOMME : 2/2 complet (`5346b43`, + `dead-bug` en L1)** + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + **A-05 FEMME : 2/2 complet (`respiration-diaphragmatique` + `hip-thrust-unilateral-1-jambe`, + `dead-bug` en R1F)** + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
+| Restant à produire | **559** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-04 HOMME (3/3 ✅)** + **A-05 HOMME (1/2 en cours + base A de `hip-thrust-unilateral`)** + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **A-04 FEMME (3/3 ✅)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
-| Versions femme produites | **20 / 307** |
-| Thème A (échauffement) | **21 / 25 en homme, 20 / 25 en femme** · LOT A-04 H+F 100 % livrés (`db1c520`, `2a202a4`), LOT A-05 HOMME à 1/2 (`respiration-diaphragmatique` livrée `1ca6f4e`, `hip-thrust-unilateral-1-jambe` pos A prête), puis LOT A-05 FEMME (2), `warmup-*` (3 H + 3 F), et les **2 circuits HOMME** à passer en version composite |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-04 HOMME (3/3 ✅)** + **A-05 HOMME (3/3 ✅)** + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **A-04 FEMME (3/3 ✅)** + **A-05 FEMME (3/3 ✅)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
+| Versions femme produites | **22 / 307** |
+| Thème A (échauffement) | **22 / 25 en homme, 22 / 25 en femme** · Les 22 exercices d'activation/mobilité/gainage sont **100 % terminés en H et F** ✅ · Ne restent plus sur le Thème A que les **3 étapes chrono** (`warmup-route`, `warmup-mobilite`, `warmup-approche` en H + F, soit 6 animations) et les **2 circuits HOMME** à passer en version composite |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -752,16 +752,50 @@ LOT A-02 FEMME (profil / face).
 
 ---
 
-## LOT A-05 HOMME — en cours (1 / 2 nouvel exercice livré + base A du 2ᵉ, `dead-bug` déjà en LOT 1) — 2026-10-07
+## LOT A-05 HOMME — COMPLET (3 / 3 exercices livrés, dont `dead-bug` en LOT 1) — 2026-10-07 (`5346b43`)
 
 | Fichier | Exercice | Positions | Statut |
 | --- | --- | --- | --- |
-| `themeA/respiration-diaphragmatique-3poses.gif` | Respiration diaphragmatique | Allongé sur le dos sur tapis noir, genoux fléchis à 90°, pieds à plat (profil 3/4 rapproché) : A = inspiration diaphragmatique ample (ventre gonflé vers le haut, deux mains sur le ventre) · M = expiration contrôlée (ventre revenu à plat, main droite sur le thorax et main gauche sur l'abdomen) · B = fin d'expiration avec Stomach Vacuum hypopressif profond sous l'arc costal (engagement maximal du transverse), bras posés le long du corps pour dégager la vue sur le creux abdominal | ✅ **livré (`1ca6f4e`)** (RMSE A→M = **0,0616**, M→B = **0,1144** ; réserve : amplitude ventrale/vacuum volontairement accentuée pour une lecture immédiate en vignette) |
-| `themeA/hip-thrust-unilateral-1-jambe-3poses.gif` | Hip thrust unilatéral (1 jambe) | Haut du dos (omoplates) appuyé contre le banc noir, bras ouverts sur le banc, pied d'appui à plat au sol, jambe libre décollée genou fléchi à 90° : **A produite et validée** (`_sources/A-05/hip-thrust-unilateral-1-jambe-A.png`, bassin bas près du tapis) · M et B à chaîner | ⏳ **1/3 position prête** (M et B ouvrent le prochain tour) |
-| `lot1/dead-bug-3poses.gif` | Dead bug | Déjà livré dans le LOT 1 HOMME | ✅ **déjà livré** |
+| `themeA/respiration-diaphragmatique-3poses.gif` | Respiration diaphragmatique HOMME | Allongé sur le dos sur tapis noir, genoux fléchis à 90°, pieds à plat (profil 3/4 rapproché) : A = inspiration diaphragmatique ample (ventre gonflé vers le haut, deux mains sur le ventre) · M = expiration contrôlée (ventre revenu à plat, main droite sur le thorax et main gauche sur l'abdomen) · B = fin d'expiration avec Stomach Vacuum hypopressif profond sous l'arc costal (engagement maximal du transverse), bras posés le long du corps pour dégager la vue sur le creux abdominal | ✅ **livré (`1ca6f4e`)** (RMSE A→M = **0,0616**, M→B = **0,1144** ; réserve : amplitude ventrale/vacuum volontairement accentuée pour une lecture immédiate en vignette) |
+| `themeA/hip-thrust-unilateral-1-jambe-3poses.gif` | Hip thrust unilatéral (1 jambe) HOMME | Haut du dos (omoplates) appuyé contre le banc noir, bras ouverts sur le banc, pied gauche à plat au sol, jambe droite décollée genou fléchi à 90° : A = bassin bas près du tapis · M = bassin monté à mi-hauteur · B = extension complète de hanche en table horizontale (épaules pivotées sur le banc, tibia gauche vertical à 90°, cuisse droite verticale à 90°) | ✅ **livré (`5346b43`)** (RMSE A→M = **0,1502**, M→B = **0,1194**) |
+| `lot1/dead-bug-3poses.gif` | Dead bug HOMME | Déjà livré dans le LOT 1 HOMME | ✅ **déjà livré** |
 
-**Aperçu dans le dépôt (règle 15) :**
-- `themeA/LOT-A05-respiration-diaphragmatique-PLANCHE-FINALE.jpg` (1440×300, 3 colonnes A/M/B).
+**Planche animée 3 colonnes et aperçus dans le dépôt (règle 15) :**
+- `themeA/LOT-A05-echauffement.gif` (1420×265, 4 frames, sans `-layers optimize`) ;
+- `themeA/LOT-A05-PLANCHE-TRAVAIL.jpg` (grille 3×2 de 1440×600 des 2 nouveaux exercices A/M/B) ;
+- `themeA/LOT-A05-respiration-diaphragmatique-PLANCHE-FINALE.jpg` ;
+- `themeA/LOT-A05-hip-thrust-unilateral-PLANCHE-FINALE.jpg`.
+
+---
+
+## LOT A-05 FEMME — COMPLET (3 / 3 exercices livrés, dont `dead-bug` en LOT R1F) — 2026-10-07
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeA/femme/respiration-diaphragmatique-3poses.gif` | Respiration diaphragmatique FEMME | Allongée sur le dos sur tapis noir, genoux fléchis à 90°, pieds à plat (profil 3/4 rapproché) : A = inspiration diaphragmatique ample (ventre gonflé, deux mains sur le ventre ; réserve : lueur dorée sur la cuisse en A) · M = expiration contrôlée (ventre revenu à plat sous la brassière noire, main droite sur la poitrine, main gauche sur l'abdomen) · B = fin d'expiration avec Stomach Vacuum hypopressif sous l'arc costal, bras posés le long des hanches | ✅ **livré (`beb04bf`)** (RMSE A→M = **0,0865**, M→B = **0,1106**) |
+| `themeA/femme/hip-thrust-unilateral-1-jambe-3poses.gif` | Hip thrust unilatéral (1 jambe) FEMME | Haut du dos (omoplates) appuyé contre le banc noir, bras ouverts sur le banc, pied gauche à plat au sol, jambe droite décollée genou fléchi à 90° : A = bassin bas près du tapis · M = montée intermédiaire (genou droit tiré plus haut vers la poitrine ; réserve : bassin encore proche du bas en M) · B = extension complète de hanche en table horizontale (épaules pivotées à plat sur le banc, tibia gauche vertical à 90°, jambe droite levée haut à 90°) | ✅ **livré** (RMSE A→M = **0,0842**, M→B = **0,1706**) |
+| `themeA/femme/dead-bug-3poses.gif` | Dead bug FEMME | Déjà livré dans le LOT R1 FEMME | ✅ **déjà livré** |
+
+**Planche animée 3 colonnes et aperçus dans le dépôt (règle 15) :**
+- `themeA/femme/LOT-A05F-echauffement-femme.gif` (1420×265, 4 frames, sans `-layers optimize`) ;
+- `themeA/femme/LOT-A05F-PLANCHE-TRAVAIL.jpg` (grille 3×2 de 1440×600 des 2 nouveaux exercices A/M/B) ;
+- `themeA/femme/LOT-A05F-respiration-diaphragmatique-PLANCHE-FINALE.jpg` ;
+- `themeA/femme/LOT-A05F-hip-thrust-unilateral-PLANCHE-FINALE.jpg`.
+
+### Budget d'images IA du 5ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `hip-thrust-unilateral-1-jambe` HOMME M (essai 1) | ❌ rejeté (bassin resté bas, RMSE dû à la lueur dorée) |
+| 2 | `hip-thrust-unilateral-1-jambe` HOMME M (essai 2, bassin monté au niveau du banc) | ✅ conforme (RMSE A→M = 0,1502) |
+| 3 | `hip-thrust-unilateral-1-jambe` HOMME B (extension complète en table horizontale) | ✅ conforme (RMSE M→B = 0,1194) → **LOT A-05 HOMME complet livré (`5346b43`)** |
+| 4 | `respiration-diaphragmatique` FEMME A (inspiration diaphragmatique ventrale) | ✅ conforme (réserve : cuisse dorée en A) |
+| 5 | `respiration-diaphragmatique` FEMME M (expiration contrôlée, ventre revenu à plat) | ✅ conforme (RMSE A→M = 0,0865) |
+| 6 | `respiration-diaphragmatique` FEMME B (essai 1, anneaux lumineux autour de la taille) | ❌ rejeté (artefact anneaux lumineux "belt") |
+| 7 | `respiration-diaphragmatique` FEMME B (essai 2, creux physique sous-costal) | ✅ conforme (RMSE M→B = 0,1106) → **livré (`beb04bf`)** |
+| 8 | `hip-thrust-unilateral-1-jambe` FEMME A (omoplates sur banc noir, bassin bas) | ✅ conforme |
+| 9 | `hip-thrust-unilateral-1-jambe` FEMME M (montée intermédiaire, genou droit haut) | ✅ conforme (RMSE A→M = 0,0842 ; réserve : bassin encore bas en M) |
+| 10 | `hip-thrust-unilateral-1-jambe` FEMME B (extension complète en table horizontale) | ✅ conforme (RMSE M→B = 0,1706) → **LOT A-05 FEMME complet livré** |
 
 ### Technique vérifiée en ligne avant génération du LOT A-05 (règle 14)
 

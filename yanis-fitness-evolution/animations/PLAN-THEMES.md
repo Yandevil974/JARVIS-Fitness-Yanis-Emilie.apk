@@ -79,8 +79,8 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Respiration diaphragmatique | `respiration-diaphragmatique` | transverse | poids du corps · H + F (2 anim.) | ✅ **LOT A-05 H livré (`1ca6f4e`)** · ⬜ F au prochain tour |
-| 2 | Hip thrust unilatéral (1 jambe) | `hip-thrust-unilateral-1-jambe` | fessiers | poids du corps · H + F (2 anim.) | ⏳ **H pos A prête (`_sources/A-05/hip-thrust-unilateral-1-jambe-A.png`), M et B ouvrent le prochain tour** · ⬜ F au prochain tour |
+| 1 | Respiration diaphragmatique | `respiration-diaphragmatique` | transverse | poids du corps · H + F (2 anim.) | ✅ **LOT A-05 H livré (`1ca6f4e`)** · ✅ **LOT A-05F F livrée (`beb04bf`)** |
+| 2 | Hip thrust unilatéral (1 jambe) | `hip-thrust-unilateral-1-jambe` | fessiers | poids du corps · H + F (2 anim.) | ✅ **LOT A-05 H livré (`5346b43`)** · ✅ **LOT A-05F F livrée** |
 | 3 | Dead bug | `dead-bug` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ✅ **LOT R1 FEMME** |
 
 ### Lot A-06
