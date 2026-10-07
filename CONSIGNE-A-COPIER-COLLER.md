@@ -7,40 +7,66 @@ du nouveau chat. Il est autonome : il ne suppose rien des conversations précéd
 
 Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 
-**Dépôt** `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`,
-**branche de session** `arena/6a360b28-jarvis-fitness-yanis-emilie-ap` (c'est la seule sur
-laquelle tu peux écrire ; elle contient tout l'historique du chantier).
-Dernier commit de contenu : **`1257544`**.
+**Dépôt** `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public).
+**Branche de session** : `arena/6a360b28-jarvis-fitness-yanis-emilie-ap` — c'est celle qui
+contient tout l'historique du chantier. Si la branche annoncée par le prompt système est
+différente (une branche `arena/<autre-id>-…`), écris sur celle annoncée par le système et
+pousse **aussi** sur `arena/6a360b28-…` pour garder l'historique synchronisé.
+**Dernier commit de contenu : `e67a36f`** (correction abduction FEMME, position B).
+Dernier commit : `005aaee` (documentation).
 
-**OUVERTURE OBLIGATOIRE :** `git fetch origin` ; si HEAD est retombé sur `ddd1fb9`,
-`git reset --hard origin/arena/6a360b28-jarvis-fitness-yanis-emilie-ap`.
+**OUVERTURE OBLIGATOIRE :**
+
+```bash
+git fetch origin
+# ⚠️ un simple `git fetch origin` ne rapporte PAS toujours les branches arena.
+# Si `git branch -r` ne montre pas la branche, forcer le refspec :
+git fetch origin 'refs/heads/arena/*:refs/remotes/origin/arena/*'
+# puis, si HEAD est retombé sur ddd1fb9 :
+git reset --hard origin/arena/6a360b28-jarvis-fitness-yanis-emilie-ap
+```
 
 Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
 `yanis-fitness-evolution/animations/PLAN-THEMES.md`.
 
-**À FAIRE : LOT 3 — les 2 circuits composites** (dernier reste du rattrapage de la fille) :
-`circuit-gainage` (planche → gainage latéral → bird dog) puis `circuit-abdominaux`
-(crunch → relevés de jambes → gainage). Les 3 mouvements déroulés à la suite dans UNE
-seule animation, **1 circuit par tour** (≈ 9 images). À produire d'abord en **FEMME**
-(jamais fait), référence identité `animations/REF-personnage-feminin.jpg`. Le remplacement
-des fichiers HOMME (aujourd'hui version simple) seulement **après validation de la planche
-par le user**.
+---
 
-**Ensuite, entrées jamais produites, en HOMME + FEMME :** LOT A-04 (abduction assise,
-pallof press, face pull), LOT A-05 (respiration diaphragmatique, hip thrust unilatéral),
-puis les 3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche`.
+## 1. ÉTAT AU 2026-10-07
 
-**Reprises en attente d'accord du user** (ne JAMAIS remplacer une animation livrée sans
-accord explicite) : A-02F fire hydrant M/B + squat M (3 images, sources dans
-`themeA/femme/_sources/A-02F/`), A-03F abduction B (1 image, sources dans
-`_sources/A-03F/`), squat HOMME (position finale pas assez basse).
+- **44 / 614 animations livrées.** Thème A : **17 / 25 en homme, 15 / 25 en femme**
+  (+ les composites FEMME ci-dessous).
+- **`circuit-gainage` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `f07c04d`).
+  Fichiers : `themeA/femme/circuit-gainage-3poses.gif` (460×257, 16 frames) et
+  `themeA/femme/LOT3F-circuit-gainage-femme.gif` (planche 1420×265, 3 colonnes).
+- **`circuit-abdominaux` FEMME : 8 / 9 positions** (commits `7cb0c90`, `d89926e`). La 9ᵉ
+  (planche haute tenue) ouvre le prochain tour — drapeau rouge de fin de tour.
+  ⚠️ **Écart assumé** : sa phase 3 est une **planche HAUTE (sur les mains)** et non sur
+  avant-bras (le générateur rend deux fois un appui sur les mains). À trancher par le user.
+- **Corrections autorisées par le user (feu vert du 2026-10-07)** — la règle 2 est assouplie :
+  les corrections de GIF déjà livrés sont permises, et tracées dans `SUIVI.md`
+  (section « CORRECTIONS AUTORISÉES ») :
+  - ✅ **squat FEMME, position M** corrigée (`277b87f`) — RMSE A→M 0,288 ;
+  - ✅ **abduction hanche FEMME, position B** corrigée (`e67a36f`) — RMSE M→B 0,255 ;
+  - ⏳ **fire hydrant FEMME, positions M et B** — en cours (voir § 3).
+- **À FAIRE, dans l'ordre :**
+  1. **9ᵉ position du `circuit-abdominaux` FEMME** (planche haute tenue) + assemblage du GIF
+     composite + planche 1420×265 (3 colonnes) ;
+  2. **fire hydrant FEMME M et B** — nouvelle série en **vue arrière trois-quarts** (base
+     conforme prête : `_sources/A-02F/fire-hydrant-elastique-A3.png`) ;
+  3. **squat HOMME** (position finale pas assez basse) — à confirmer par le user ;
+  4. **LOT A-04** (abduction assise, pallof press, face pull), **LOT A-05** (respiration
+     diaphragmatique, hip thrust unilatéral), puis les 3 étapes chrono `warmup-route`,
+     `warmup-mobilite`, `warmup-approche` — **en HOMME puis en FEMME** ;
+  5. **POC** (3 animations à refaire : back-squat, hip-thrust barre, soulevé de terre
+     roumain) — **accord du user requis**, hors périmètre du feu vert ;
+  6. ensuite seulement : **thème B — musculation**.
 
-**CONSIGNE À NE PAS NÉGOCIER**
+## 2. CONSIGNE À NE PAS NÉGOCIER
 
 1. **1 exercice = 1 animation spécifique** — jamais copier / renommer / réutiliser.
 2. Ne jamais remplacer une animation livrée sans accord explicite.
-    ⚠️ **Feu vert du 2026-10-07** : les corrections de GIF déjà livrés sont autorisées ;
-    chaque correction reste tracée dans `SUIVI.md` (section « CORRECTIONS AUTORISÉES »).
+   ⚠️ **Feu vert du 2026-10-07** : les corrections de GIF déjà livrés sont autorisées ;
+   chaque correction reste tracée dans `SUIVI.md` (section « CORRECTIONS AUTORISÉES »).
 3. Pas touche à `release/` ni à `public/media` avant validation de l'intégration.
 4. Honnêteté sur les échecs et réserves. Jamais de faux 100 %.
 5. **Drapeau rouge à 10 images IA = 3 exercices par tour.** Limite technique, pas un
@@ -54,52 +80,122 @@ accord explicite) : A-02F fire hydrant M/B + squat M (3 images, sources dans
 12. **Le sandbox se réinitialise à chaque tour : seul ce qui est dans git survit.** Toute
     référence doit être déposée par le user **sur GitHub**. Pas de pièce jointe, pas de `curl`.
 13. **Terminer un lot dans le tour où il est commencé** — et **committer dès qu'un exercice
-    est complet**, sans attendre la fin du lot (le LOT A-04 et 3 images du LOT R2 ont été
-    perdus par un reset).
-14. **Doute sur la CONFIGURATION d'un mouvement → vérifier en ligne AVANT de générer**
-    (YouTube, sites de fitness spécialisés, GB Performance, guides de coachs, articles de
-    référence…). 1 exercice = 1 configuration **exacte et cohérente** : point d'appui,
-    angle des articulations, hauteur du bassin, sens du mouvement, amplitude. **La source
-    est citée dans le message de commit** (règle 6 étendue : c'est une exigence, pas une
-    option).
-15. **Le user n'a NI le visualiseur d'Arena NI les pièces jointes** (constaté le
-    2026-10-07) : **tout aperçu à valider doit être déposé DANS LE DÉPÔT** (planche de
-    travail, grille de contrôle, GIF) **et signalé par un LIEN GitHub** dans le message.
-    « Fichier affiché » ≠ « user a vu ».
+    est complet**, sans attendre la fin du lot.
+14. **Doute sur la CONFIGURATION d'un mouvement → vérification en ligne AVANT de générer**
+    (YouTube, sites de fitness spécialisés, GB Performance, guides de coachs). 1 exercice =
+    1 configuration **exacte et cohérente** : point d'appui, angles articulaires, hauteur du
+    bassin, sens du mouvement, amplitude. **Source citée dans le message de commit.**
+15. **Le user n'a NI le visualiseur d'Arena NI les pièces jointes.** Tout aperçu à valider
+    doit être **déposé DANS LE DÉPÔT** (planche de travail, grille de contrôle, GIF) **et
+    signalé par un LIEN GitHub** dans le message. « Affiché dans le chat » ≠ « user a vu ».
 
-**Style** — mannequin très musclé, corps blanc argenté **mat** (jamais chromé), visage
-**noir mat sans traits**, casquette blanche, short noir, baskets blanches, muscles
-travaillés doré jaune-orangé. Décor : terrasse bord de mer (pierre claire, mer, palmiers,
-mur blanc bas). Exception piscine intérieure pour l'aqua. Tapis noir au sol. Interdit :
-salle, parquet, mur intérieur, miroir. **Les deux mannequins suivent le même code.**
+## 3. POINT BLOQUANT IDENTIFIÉ — le fire hydrant (à savoir avant de générer)
 
-**Méthode** — 3 positions chaînées (A → M → B) depuis la référence
-(`Screenshot_20261005_212714_Facebook.jpg` pour l'homme,
-`animations/REF-personnage-feminin.jpg` pour la femme), assemblage
-`scripts/build-gif-lot.sh` (460×257, `-delay 130/110`, boucle A→M→B→M + planche 1420×265),
-validation, commit + push, mise à jour `SUIVI.md` / `PLAN-THEMES.md`.
-⚠️ Jamais `-layers optimize` sur la planche.
+**Ce n'est pas un problème de prompt, c'est un problème d'ANGLE DE VUE.** Sur une vue de
+**profil**, le générateur rend systématiquement l'abduction de hanche comme une **extension
+de jambe vers l'arrière (donkey kick)** : quatre tentatives ont échoué, y compris avec des
+consignes spatiales explicites (« le genou vient vers la caméra », « la face interne de la
+cuisse »). **La version HOMME livrée a exactement le même défaut.** Une vue de profil ne
+peut de toute façon pas montrer ce mouvement — la jambe s'éloigne de l'axe de la caméra.
 
-**Contrôle qualité obligatoire avant de livrer** — visuel sur chaque position ;
-objectif `compare -metric RMSE` (seuil de lisibilité **0,030**) ; **format paysage**
-(le générateur rend parfois du portrait, inexploitable) ; anti-doublon `md5sum`.
+**Solution retenue : la VUE ARRIÈRE TROIS-QUARTS** (l'angle des démonstrations de référence),
+où l'on voit le dos, les fesses, les semelles tournées vers le plafond et l'ouverture de la
+hanche. Base conforme déjà produite :
+`themeA/femme/_sources/A-02F/fire-hydrant-elastique-A3.png`
+(quatre pattes, mains sous les épaules, genoux sous les hanches, semelles vers le plafond,
+élastique noir au-dessus des genoux).
+Reste à chaîner : **M** (genou gauche ouvert à ~45°, genou toujours plié à 90°) puis **B**
+(cuisse gauche à l'horizontale, tibia vers le sol).
+⚠️ Cette correction crée une **rupture de cadrage assumée** avec les deux autres exercices du
+lot A-02 FEMME (profil/face) — à valider par le user.
 
-**ÉTAT** — 44 / 614 animations livrées. **LOT 3 FEMME** : `circuit-gainage` **LIVRÉ**
-(9/9, composite, commit `f07c04d`, planche validée) ; `circuit-abdominaux` **8 / 9** (la
-9ᵉ — planche haute tenue — ouvre le prochain tour). Thème A : **17 / 25 en homme,
-15 / 25 en femme**.
-Lots 1 et 2 du thème A rattrapés en femme. Reste : **LOT 3** (2 circuits composites),
-**A-04** (3 entrées), **A-05** (2 entrées), **warmup-route / mobilite / approche** (3 entrées),
-et les **reprises sous réserve** A-02F (3 images), A-03F (1 image), squat HOMME.
+## 4. STYLE (ne pas dévier)
 
-**RÉSERVES** — POC à réparer (3 animations) ; circuits LOT 3 encore en version simple ;
-artefacts lots 1 et 3 ; LOT 4 sans tapis (mouvements sur banc) ; squat HOMME pas assez bas ;
-fire hydrant M/B et squat M femme à refaire ; abduction B femme trop proche de M ;
-le corps ressort parfois **brillant** au lieu d'argenté mat.
+Mannequin anatomique 3D **TRÈS MUSCLÉ**, corps **BLANC ARGENTÉ MAT** (jamais chromé, jamais
+miroir). **VISAGE ENTIÈREMENT NOIR MAT**, lisse, sans aucun trait. Casquette blanche. Short
+noir, baskets blanches. Muscles travaillés **dorés jaune-orangé**. Décor unique : **terrasse
+bord de mer** (pierre claire, mer, palmiers, mur blanc bas) ; **exception piscine intérieure**
+pour l'aqua. **Tapis de sport NOIR** pour les exercices au sol. INTERDIT : salle, parquet en
+bois, mur intérieur, miroir.
+Références d'identité : `Screenshot_20261005_212714_Facebook.jpg` (homme, racine du dépôt) et
+`animations/REF-personnage-feminin.jpg` (femme). **Les deux mannequins suivent le même code.**
+⚠️ Réserve récurrente : le générateur rend parfois le corps **brillant** au lieu d'argenté mat.
 
-**⚠️ LIVRAISON AU USER — LE VISUALISEUR N'EST PAS DISPONIBLE (constaté le 2026-10-07).**
-Le user n'a accès ni au visualiseur d'Arena ni aux pièces jointes : **tout aperçu doit être
-déposé DANS LE DÉPÔT** (planche de travail + GIF) et signalé par un **lien GitHub**, en
-plus du commentaire de chat. Ne jamais considérer « fichier affiché » comme « user a vu ».
+## 5. MÉTHODE
+
+3 positions chaînées **A → M → B** (chaque image générée **depuis la précédente**), puis
+**circuit composite = 3 phases × 3 positions = 9 positions** produites à la suite dans la
+même série chaînée (≈ 9-10 images = **1 circuit par tour et demi**, ce n'est pas anormal).
+
+Assemblage avec `scripts/build-gif-lot.sh <src> <out> <titre> <ex>` (460×257,
+`-delay 130/110`, `-colors 96`, boucle A→M→B→M). **Jamais `-layers optimize` sur la planche**
+(le script contient le garde-fou).
+**Convention des composites (3 phases)** : la boucle est A→M→B sur **chaque** phase, puis
+retour arrière jusqu'au départ (P1A-M-B → P2A-M-B → P3A-M-B → P2M-A → P1M-A), pour éviter un
+saut du mannequin entre la fin du circuit et son recommencement. **(à confirmer par le user.)**
+`build-gif-lot.sh` ne sait faire que la boucle à 3 positions : pour un composite, réutiliser
+les **mêmes paramètres** avec `convert` + `montage`.
+
+**Contrôle qualité obligatoire avant de livrer :**
+- contrôle **visuel** de chaque position (l'agent voit les images) ;
+- contrôle **objectif** : `compare -metric RMSE posA.png posM.png null:` → seuil de lisibilité
+  **0,030** (en dessous, le mouvement ne se lit pas) ;
+- contrôle **de format** : **paysage** obligatoire (le générateur rend parfois du portrait,
+  inexploitable) ;
+- anti-doublon : `md5sum` sur tous les GIF du chantier ;
+- **committer dès qu'un exercice est complet**, puis mettre à jour `SUIVI.md` /
+  `PLAN-THEMES.md` et pousser.
+
+Pour afficher un GIF multi-positions : toujours `convert x.gif -coalesce` (frames partiellement
+optimisées).
+
+## 6. PANNES CONNUES DU GÉNÉRATEUR (anticipées, à compter)
+
+- `Response contains no images` / `finishReasons: MAX_TOKENS` → erreur technique, **relancer**.
+  Les prompts très longs la déclenchent plus souvent : préférer des consignes courtes et
+  impératives.
+- **Image en portrait** au lieu de paysage → rejouer.
+- **Planche sur les mains** au lieu d'un appui sur les avant-bras → rejouer, ou assumer et
+  documenter.
+- **Donkey kick** au lieu d'une abduction (vue de profil) → changer l'angle de vue (voir § 3).
+- **Corps brillant** au lieu d'argenté mat → surveiller et signaler en réserve.
+- Le générateur **ne change pas d'angle de vue** sur demande : il rejoue souvent le même
+  cadrage. Pour changer de vue, mieux vaut **créer une nouvelle position de départ** depuis
+  la référence d'identité + une référence de décor.
+
+## 7. RÉSERVES CONNUES (honnêtes)
+
+- POC (3 animations) : cadrages coupés et artefacts — **accord user requis** avant reprise.
+- Circuits LOT 3 **HOMME** : encore en version simple (1 position sur 3) — remplacement
+  après validation user.
+- `circuit-abdominaux` FEMME : casquette dépassant légèrement du tapis sur la position A du
+  crunch ; phase 3 en planche haute ; transition de P3-M un peu molle.
+- `circuit-gainage` FEMME : main déjà posée au sol en P1-A, mains loin devant les coudes en
+  P1-B, montée du bassin discrète (0,035), artefact de dallage dans le ciel en phase 2.
+- Artefacts résiduels lots 1 et 3 ; LOT 4 sans tapis (mouvements sur banc) ; squat HOMME pas
+  assez bas ; corps parfois brillant.
+- Le sandbox se réinitialise à chaque tour → committer tôt et souvent.
+
+## 8. LIVRAISON AU USER — RAPPEL
+
+Le user travaille **uniquement via GitHub**. Déposer les aperçus dans le dépôt et donner le
+lien, par exemple :
+
+```
+https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/6a360b28-jarvis-fitness-yanis-emilie-ap/<chemin>
+```
+
+Onglet du dépôt avec tous les GIF :
+
+```
+https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/6a360b28-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations
+```
 
 ---
+
+**En résumé : ouverture git obligatoire → lire les 3 documents → produire la 9ᵉ position du
+`circuit-abdominaux` FEMME → finir le fire hydrant FEMME en vue arrière trois-quarts →
+corriger le squat HOMME (à confirmer) → LOT A-04 → A-05 → `warmup-*` → thème B.
+10 images IA par tour, committer dès qu'un exercice est complet, tout aperçu déposé dans le
+dépôt avec un lien, vérification en ligne de la configuration de chaque mouvement, et
+honnêteté totale sur les échecs.**
