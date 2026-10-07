@@ -55,9 +55,9 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Fire hydrant à l'élastique | `fire-hydrant-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-02 H+F (F sous réserve) |
-| 2 | Squat au poids du corps | `squat-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 H+F (F sous réserve) |
-| 3 | Fentes arrière au poids du corps | `fentes-arriere-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 H+F (F sous réserve) |
+| 1 | Fire hydrant à l'élastique | `fire-hydrant-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-02 H+F (F corrigé en arrière 3/4 ✅ · H en profil à voir) |
+| 2 | Squat au poids du corps | `squat-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 H+F (H et F corrigés ✅) |
+| 3 | Fentes arrière au poids du corps | `fentes-arriere-au-poids-du-corps` | quadriceps | poids du corps · H + F (2 anim.) | ✅ LOT A-02 H+F |
 
 ### Lot A-03
 
@@ -65,13 +65,13 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 | --- | --- | --- | --- | --- | --- |
 | 1 | Pompes | `pompes` | pectoraux | poids du corps · H + F (2 anim.) | ✅ LOT A-03 H+F |
 | 2 | Gainage planche | `gainage-planche` | abdominaux | poids du corps · H + F (2 anim.) | ✅ LOT A-03 H+F |
-| 3 | Abduction hanche à l'élastique | `abduction-hanche-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-03 H+F (F sous réserve) |
+| 3 | Abduction hanche à l'élastique | `abduction-hanche-a-l-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ LOT A-03 H+F (F corrigée ✅) |
 
 ### Lot A-04
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Abduction assise (machine ou élastique) | `abduction-assise-machine-ou-elastique` | moyen fessier | élastique · H + F (2 anim.) | à recréer |
+| 1 | Abduction assise (machine ou élastique) | `abduction-assise-machine-ou-elastique` | moyen fessier | élastique · H + F (2 anim.) | 🟠 H en cours (pos A prête dans `_sources/A-04/`) · F à recréer |
 | 2 | Pallof press à l'élastique | `pallof-press-a-l-elastique` | transverse | élastique · H + F (2 anim.) | à recréer |
 | 3 | Face pull à l'élastique | `face-pull-a-l-elastique` | épaules (postérieur) | élastique · H + F (2 anim.) | à recréer |
 
@@ -97,13 +97,13 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 | --- | --- | --- | --- | --- | --- |
 | 1 | Dead bug avec rotation | `dead-bug-avec-rotation` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 H · ✅ **LOT R2 FEMME** |
 | 2 | Gainage latéral dynamique | `gainage-lateral-dynamique` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 H · ✅ **LOT R2 FEMME** |
-| 3 | Circuit gainage (planche + latéral + bird dog) | `circuit-gainage-planche-lateral-bird-dog` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · **F en cours : composite, 8/9 positions** |
+| 3 | Circuit gainage (planche + latéral + bird dog) | `circuit-gainage-planche-lateral-bird-dog` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · ✅ **LOT 3 F = composite LIVRÉ (9/9, `f07c04d`)** |
 
 ### Lot A-08
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Circuit abdominaux (crunch + relevés + gainage) | `circuit-abdominaux-crunch-releves-gainage` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · **F à produire (après le circuit gainage)** |
+| 1 | Circuit abdominaux (crunch + relevés + gainage) | `circuit-abdominaux-crunch-releves-gainage` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · ✅ **LOT 3 F = composite LIVRÉ (9/9, `5e5a2e3`)** |
 | 2 | warmup-approche | `warmup-approche` | échauffement | étape chrono · H + F (2 anim.) | à recréer |
 | 3 | warmup-mobilite | `warmup-mobilite` | échauffement | étape chrono · H + F (2 anim.) | à recréer |
 

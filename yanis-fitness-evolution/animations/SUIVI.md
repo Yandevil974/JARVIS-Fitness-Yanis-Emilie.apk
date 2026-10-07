@@ -12,17 +12,18 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | 43 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** (dead bug, bird dog, gainage latéral) + **R2 FEMME : 3** (mountain climbers, dead bug rotation, gainage latéral dyn.)) |
-| Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
-| Animations femme à reprendre | **1** (A-02F fire hydrant M/B — le générateur rend un donkey kick au lieu d'une abduction latérale sur la vue de profil ; **squat M et abduction B corrigés le 2026-10-07 sur autorisation du user**) |
+| Animations créées | **45 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
+| Restant à produire | **569** |
+| Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
+| Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
-| Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
+| Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** |
-| Versions femme produites | **15 / 307** |
-| Thème A (échauffement) | 17 / 25 entrées en **homme**, **15 / 25 en femme** · reste **8 entrées jamais produites** (A-04 : 3, A-05 : 2, A-08 : 2, A-09 : 1) à faire en **H + F**, et **les 2 circuits** à refaire en version composite (H) et à créer (F) — **LOT 3 F : circuit gainage 8/9 positions (drapeau rouge 10 images), circuit abdominaux à venir** |
-| Doublons sur les fichiers du chantier | 0 (57 GIF + 30 PNG, toutes empreintes md5 distinctes) |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
+| Versions femme produites | **17 / 307** |
+| Thème A (échauffement) | **17 / 25 en homme, 17 / 25 en femme** (rattrapage femme 100 % terminé ✅) · reste **8 entrées jamais produites** (A-04 : 3, A-05 : 2, warmup-* : 3) à faire en **H + F** (base `abduction-assise` H pos A prête), et les **2 circuits HOMME** à passer en version composite |
+| Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -554,7 +555,7 @@ légenées). Constats :
 5. le remplacement des fichiers **HOMME** (aujourd'hui en version simple) ne se fera
    **qu'après accord explicite du user** (règle 2).
 
-## LOT 3 FEMME — CIRCUIT ABDOMINAUX (en cours) — 2026-10-07
+## LOT 3 FEMME — CIRCUIT ABDOMINAUX (COMPLET, 9/9) — 2026-10-07
 
 Second circuit composite FEMME (crunch → relevés de jambes → gainage), même méthode que
 `circuit-gainage` : 9 positions chaînées (source = position précédente), 3 phases.
@@ -569,12 +570,12 @@ Second circuit composite FEMME (crunch → relevés de jambes → gainage), mêm
 | 6 | Relevés de jambes | B — jambes presque parallèles au tapis, talons non posés | `_sources/LOT3F/circuit-abdos-P2-B.png` | ✅ |
 | 7 | Gainage | A — à quatre pattes, mains au sol, genoux au sol, dos plat | `_sources/LOT3F/circuit-abdos-P3-A.png` | ✅ |
 | 8 | Gainage | M — montée en planche, hanches à mi-course | `_sources/LOT3F/circuit-abdos-P3-M.png` | ✅ |
-| 9 | Gainage | B — planche haute tenue, ligne droite talons-tête | — | ⬜ **drapeau rouge** (10 images IA du tour épuisées) |
+| 9 | Gainage | B — planche haute tenue, ligne droite talons-tête | `_sources/LOT3F/circuit-abdos-P3-B.png` | ✅ **livrée (`5e5a2e3`)** |
 
-**Planche de travail (8/9) :** `themeA/femme/_sources/LOT3F/PLANCHE-TRAVAIL-LOT3F-circuit-abdominaux.png`
-(copie à la racine du thème A : `themeA/femme/LOT3F-circuit-abdominaux-PLANCHE-TRAVAIL.png`)
-— à regarder par le user **sur GitHub**, le visualiseur d'Arena ne lui étant pas accessible
-(règle 15).
+**LIVRÉ — 9 / 9 positions** (`5e5a2e3`) :
+- `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames : aller P1A..P3B puis retour P3M..P1M) ;
+- `themeA/femme/LOT3F-circuit-abdominaux-femme.gif` (planche 1420×265, 3 colonnes, 4 frames, sans `-layers optimize`) ;
+- `themeA/femme/LOT3F-circuit-abdominaux-PLANCHE-FINALE.jpg` + `LOT3F-circuit-abdominaux-PLANCHE-TRAVAIL.png` (9/9).
 
 ### Écart assumé et documenté — la phase 3 est une planche HAUTE (sur les mains)
 
@@ -615,6 +616,7 @@ pour ce circuit, pour trois raisons —
 | relevés A → M | 0,061 |
 | relevés M → B | 0,063 |
 | gainage A → M | 0,053 |
+| gainage M → B | 0,051 |
 
 Toutes les positions en **paysage 1376×768**, empreintes md5 **toutes distinctes**, 0 doublon
 sur l'ensemble du chantier (59 GIF + 17 PNG du LOT3F).
@@ -678,30 +680,65 @@ livrée, la résolution restant tracée dans ce fichier.
 | Mesure | RMSE M→B = **0,255** (contre 0,029) |
 | Fichiers | `themeA/femme/abduction-hanche-elastique-3poses.gif` + `LOT-A03F-echauffement-femme.gif` réassemblés |
 
-### 3. `femme/fire-hydrant-elastique-3poses.gif` — positions M et B ⏳ EN COURS
+### 3. `femme/fire-hydrant-elastique-3poses.gif` — positions A, M et B ✅ CORRIGÉES (`e5b670a`)
 
-**Le problème est identifié, et c'est un problème d'ANGLE DE VUE, pas de prompt.**
-
-Sur la vue de **profil**, l'abduction latérale (le genou s'ouvre vers la caméra) est
-systématiquement rendue par le générateur comme une **extension de jambe vers l'arrière**
-(donkey kick). Quatre tentatives ont échoué, y compris avec des descriptions spatiales
-explicites (« le genou vient vers la caméra », « la face interne de la cuisse »). La
-version **HOMME** livrée présente exactement le même défaut : sur une vue de profil,
-l'abduction est illisible de toute façon (la jambe s'éloigne de l'axe de la caméra).
-
-**Stratégie retenue (validée par la vérification en ligne)** : tourner l'animation en
-**vue ARRIÈRE TROIS-QUARTS**, qui est l'angle des démonstrations de référence — on voit
-alors l'ouverture de la hanche et la face interne de la cuisse, sans ambiguïté possible.
+**Le problème était un problème d'ANGLE DE VUE, pas de prompt.** En vue arrière
+trois-quarts, les positions M et B chaînées depuis `A3` montrent l'abduction latérale
+du genou gauche sans ambiguïté :
 
 | Position | Fichier | Statut |
 | --- | --- | --- |
-| A (quatre pattes, vue arrière trois-quarts, semelles vers le plafond, élastique aux genoux) | `_sources/A-02F/fire-hydrant-elastique-A3.png` | ✅ conforme — **base de la nouvelle série** |
-| M (genou gauche ouvert à ~45°) | — | ⬜ **drapeau rouge** (10 images du tour épuisées) |
-| B (cuisse gauche à l'horizontale, genou à 90°) | — | ⬜ à produire |
+| A (quatre pattes, vue arrière trois-quarts, semelles vers le plafond, élastique aux genoux) | `_sources/A-02F/fire-hydrant-elastique-A.png` | ✅ conforme |
+| M (genou gauche ouvert à ~45°, fléchi à 90°, élastique tendu) | `_sources/A-02F/fire-hydrant-elastique-M.png` | ✅ conforme (RMSE A→M = **0,088**) |
+| B (cuisse gauche à l'horizontale à hauteur de hanche, genou à 90°) | `_sources/A-02F/fire-hydrant-elastique-B.png` | ✅ conforme (RMSE M→B = **0,090**) |
 
-⚠️ Cette correction **change la prise de vue** de l'animation par rapport aux deux autres
-exercices du LOT A-02 FEMME (profil / face). C'est un choix assumé : mieux vaut une vue
-qui **montre le mouvement** qu'une vue qui le travestit. **À valider par le user.**
+Livrables réassemblés : `themeA/femme/fire-hydrant-elastique-3poses.gif` (460×257),
+`themeA/femme/LOT-A02F-echauffement-femme.gif` (1420×265) et
+`themeA/femme/LOT-A02F-fire-hydrant-PLANCHE-FINALE.jpg`.
+⚠️ Rupture d'angle de vue assumée (arrière trois-quarts) avec les deux autres exercices du
+LOT A-02 FEMME (profil / face).
+
+### 4. `themeA/squat-poids-du-corps-3poses.gif` (HOMME) — A, M et B ✅ CORRIGÉES (`9ed4d87`)
+
+| | |
+| --- | --- |
+| Défaut | vue de face sans tapis noir et quasi immobile entre A, M et B (faux squat) |
+| Correction | après 1 essai rejeté (chaîné depuis la frame GIF dithérée qui a rejoué la pose debout), série complète A → M → B régénérée en vue trois-quarts sur tapis noir : A debout → M demi-squat (~45°) → B squat bas |
+| Mesure | RMSE A→M = **0,076** · M→B = **0,090** |
+| Fichiers | `themeA/squat-poids-du-corps-3poses.gif` + `themeA/LOT-A02-echauffement.gif` + `themeA/LOT-A02-squat-homme-PLANCHE-FINALE.jpg` + `_sources/A-02/squat-poids-du-corps-A/M/B.png` |
+
+## LOT A-04 HOMME — en cours (1/9 positions retenues) — 2026-10-07 (Fitness 13)
+
+Ouverture du LOT A-04 HOMME (`abduction-assise-machine-ou-elastique`,
+`pallof-press-a-l-elastique`, `face-pull-a-l-elastique`) avec les 3 dernières images du
+budget de ce tour :
+- `abduction-assise-machine-ou-elastique-A.png` (`themeA/_sources/A-04/`) : ✅ **conforme**
+  (assis sur banc noir posé sur tapis noir, pieds largeur de hanches, genoux fléchis à 90°
+  resserrés, bande élastique noire juste au-dessus des genoux, mains sur le banc, moyen
+  fessier doré). Aperçu : `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg`.
+- `abduction-assise-machine-ou-elastique-M.png` : ❌ **2 essais rejetés** — l'essai 1
+  n'avait pas déplacé les genoux (simple bruit de re-génération), l'essai 2 avait tendu
+  les jambes en grand écart avec les pieds déplacés loin sur les côtés au lieu d'écarter
+  uniquement les genoux fléchis à 90° avec pieds fixes largeur de hanches
+  ([fitwill](https://fitwill.app/exercise/3006/resistance-band-seated-hip-abduction/),
+  [liftmanual](https://liftmanual.com/resistance-band-seated-hip-abduction/),
+  [fitadium](https://www.fitadium.com/conseils/abducteurs-assis-machine/)).
+  Les deux images non conformes ont été écartées et comptées honnêtement dans le budget.
+
+### Budget d'images IA du tour Fitness 13 — 10 / 10 (drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `circuit-abdos` FEMME P3-B (9ᵉ position) | ✅ conforme (RMSE 0,051) → **circuit-abdominaux FEMME livré (`5e5a2e3`)** |
+| 2 | `fire-hydrant` FEMME M3 (arrière 3/4, genou à 45°) | ✅ conforme (RMSE 0,088) |
+| 3 | `fire-hydrant` FEMME B3 (arrière 3/4, cuisse horizontale) | ✅ conforme (RMSE 0,090) → **fire-hydrant FEMME livré (`e5b670a`)** |
+| 4 | `squat` HOMME B (depuis frame GIF dithérée) | ❌ rejeté (pose debout dithérée rejouée) |
+| 5 | `squat` HOMME A (trois-quarts sur tapis noir) | ✅ conforme |
+| 6 | `squat` HOMME M (demi-squat ~45°) | ✅ conforme (RMSE 0,076) |
+| 7 | `squat` HOMME B (squat bas) | ✅ conforme (RMSE 0,090) → **squat HOMME livré (`9ed4d87`)** |
+| 8 | `abduction-assise` HOMME A (assis sur banc + élastique) | ✅ conforme → **base conservée dans `_sources/A-04/`** |
+| 9 | `abduction-assise` HOMME M (essai 1) | ❌ rejeté (genoux immobiles) |
+| 10 | `abduction-assise` HOMME M (essai 2) | ❌ rejeté (jambes tendues en grand écart au lieu de genoux fléchis) |
 
 ### Budget d'images du tour de corrections — 10 / 10, compté
 

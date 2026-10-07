@@ -8,12 +8,12 @@ du nouveau chat. Il est autonome : il ne suppose rien des conversations précéd
 Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 
 **Dépôt** `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public).
-**Branche de session** : `arena/6a360b28-jarvis-fitness-yanis-emilie-ap` — c'est celle qui
-contient tout l'historique du chantier. Si la branche annoncée par le prompt système est
-différente (une branche `arena/<autre-id>-…`), écris sur celle annoncée par le système et
-pousse **aussi** sur `arena/6a360b28-…` pour garder l'historique synchronisé.
-**Dernier commit de contenu : `e67a36f`** (correction abduction FEMME, position B).
-Dernier commit : `005aaee` (documentation).
+**Branche de session** : `arena/93096144-jarvis-fitness-yanis-emilie-ap` — c'est celle qui
+contient tout l'historique du chantier à l'issue du tour Fitness 13. Si la branche annoncée
+par le prompt système est différente (une branche `arena/<autre-id>-…`), écris sur celle
+annoncée par le système.
+**Derniers commits de contenu : `5e5a2e3` (circuit-abdos F 9/9), `e5b670a` (fire hydrant F 3/4),
+`9ed4d87` (squat H 3/4).**
 
 **OUVERTURE OBLIGATOIRE :**
 
@@ -23,7 +23,7 @@ git fetch origin
 # Si `git branch -r` ne montre pas la branche, forcer le refspec :
 git fetch origin 'refs/heads/arena/*:refs/remotes/origin/arena/*'
 # puis, si HEAD est retombé sur ddd1fb9 :
-git reset --hard origin/arena/6a360b28-jarvis-fitness-yanis-emilie-ap
+git reset --hard origin/arena/93096144-jarvis-fitness-yanis-emilie-ap
 ```
 
 Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
@@ -31,34 +31,39 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13)
 
-- **44 / 614 animations livrées.** Thème A : **17 / 25 en homme, 15 / 25 en femme**
-  (+ les composites FEMME ci-dessous).
+- **45 / 614 animations livrées.** Thème A : **17 / 25 en homme, 17 / 25 en femme**
+  (rattrapage de la fille 100 % terminé ✅).
 - **`circuit-gainage` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `f07c04d`).
-  Fichiers : `themeA/femme/circuit-gainage-3poses.gif` (460×257, 16 frames) et
-  `themeA/femme/LOT3F-circuit-gainage-femme.gif` (planche 1420×265, 3 colonnes).
-- **`circuit-abdominaux` FEMME : 8 / 9 positions** (commits `7cb0c90`, `d89926e`). La 9ᵉ
-  (planche haute tenue) ouvre le prochain tour — drapeau rouge de fin de tour.
-  ⚠️ **Écart assumé** : sa phase 3 est une **planche HAUTE (sur les mains)** et non sur
-  avant-bras (le générateur rend deux fois un appui sur les mains). À trancher par le user.
-- **Corrections autorisées par le user (feu vert du 2026-10-07)** — la règle 2 est assouplie :
-  les corrections de GIF déjà livrés sont permises, et tracées dans `SUIVI.md`
-  (section « CORRECTIONS AUTORISÉES ») :
+- **`circuit-abdominaux` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `5e5a2e3`).
+  Fichiers : `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames) et
+  `themeA/femme/LOT3F-circuit-abdominaux-femme.gif` (planche 1420×265, 3 colonnes).
+  ⚠️ **Écart assumé** : sa phase 3 est une **planche HAUTE (sur les mains)**.
+- **Corrections autorisées par le user (feu vert du 2026-10-07) — toutes livrées :**
   - ✅ **squat FEMME, position M** corrigée (`277b87f`) — RMSE A→M 0,288 ;
   - ✅ **abduction hanche FEMME, position B** corrigée (`e67a36f`) — RMSE M→B 0,255 ;
-  - ⏳ **fire hydrant FEMME, positions M et B** — en cours (voir § 3).
+  - ✅ **fire hydrant FEMME, positions A, M et B** corrigées en **vue arrière trois-quarts**
+    (`e5b670a`) — RMSE A→M 0,088, M→B 0,090 ;
+  - ✅ **squat HOMME, positions A, M et B** corrigées en **vue trois-quarts sur tapis noir**
+    (`9ed4d87`) — RMSE A→M 0,076, M→B 0,090.
 - **À FAIRE, dans l'ordre :**
-  1. **9ᵉ position du `circuit-abdominaux` FEMME** (planche haute tenue) + assemblage du GIF
-     composite + planche 1420×265 (3 colonnes) ;
-  2. **fire hydrant FEMME M et B** — nouvelle série en **vue arrière trois-quarts** (base
-     conforme prête : `_sources/A-02F/fire-hydrant-elastique-A3.png`) ;
-  3. **squat HOMME** (position finale pas assez basse) — à confirmer par le user ;
-  4. **LOT A-04** (abduction assise, pallof press, face pull), **LOT A-05** (respiration
-     diaphragmatique, hip thrust unilatéral), puis les 3 étapes chrono `warmup-route`,
-     `warmup-mobilite`, `warmup-approche` — **en HOMME puis en FEMME** ;
-  5. **POC** (3 animations à refaire : back-squat, hip-thrust barre, soulevé de terre
-     roumain) — **accord du user requis**, hors périmètre du feu vert ;
+  1. **Terminer le LOT A-04 HOMME** :
+     - `abduction-assise-machine-ou-elastique` : position A prête et conforme dans
+       `themeA/_sources/A-04/abduction-assise-machine-ou-elastique-A.png` → chaîner **M** et
+       **B** (attention : garder les pieds fixes à plat largeur de hanches et les genoux
+       fléchis à 90°, seuls les genoux s'écartent vers l'extérieur contre l'élastique — ne
+       pas laisser le générateur tendre les jambes en grand écart) ;
+     - `pallof-press-a-l-elastique` (A → M → B) ;
+     - `face-pull-a-l-elastique` (A → M → B) ;
+     - assemblage `themeA/LOT-A04-echauffement.gif` (1420×265) ;
+  2. **LOT A-04 FEMME** (les 3 mêmes exercices en FEMME) ;
+  3. **LOT A-05** (`respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`), puis les
+     3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche` — **en HOMME puis
+     en FEMME** ;
+  4. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
+     vue arrière trois-quarts ;
+  5. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
   6. ensuite seulement : **thème B — musculation**.
 
 ## 2. CONSIGNE À NE PAS NÉGOCIER

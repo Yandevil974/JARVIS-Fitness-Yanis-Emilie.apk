@@ -2,18 +2,26 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 (soir) · dernier lot livré : `f07c04d` —
-`circuit-gainage` FEMME, composite 9/9 · en cours : `circuit-abdominaux` FEMME 8/9 et
-corrections du fire hydrant FEMME · dernier commit : `05c3a4b` · branche de session
-`arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 7 octobre 2026 (Fitness 13) · derniers livrables : `5e5a2e3`
+(`circuit-abdominaux` FEMME 9/9), `e5b670a` (fire hydrant FEMME corrigé en arrière 3/4),
+`9ed4d87` (squat HOMME corrigé en 3/4 + tapis noir) · en cours : LOT A-04 HOMME
+(`abduction-assise` pos A prête) · branche de session
+`arena/93096144-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🔄 MISES À JOUR DU 2026-10-07 (3ᵉ passe) — feu vert corrections
+> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13) — rattrapage FEMME 100 % terminé + corrections soldées
 >
-> Le user a donné un **feu vert général pour corriger les GIF déjà livrés** : la règle 2 est
-> assouplie (corrections autorisées, tracées dans `SUIVI.md`, § « CORRECTIONS AUTORISÉES »).
-> Traité : **squat FEMME position M** (`277b87f`, RMSE A→M 0,288) et **abduction hanche
-> FEMME position B** (`e67a36f`, RMSE M→B 0,255). En cours : **fire hydrant FEMME M/B**
-> (voir § 3 : le problème est l'**angle de vue**, pas le prompt).
+> 1. **`circuit-abdominaux` FEMME LIVRÉ (`5e5a2e3`)** : 9ᵉ position (planche haute tenue)
+>    produite, GIF composite `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames)
+>    et planche `themeA/femme/LOT3F-circuit-abdominaux-femme.gif` (1420×265) assemblés.
+>    **Homme et femme sont désormais à égalité : 17 / 25 chacun sur le thème A (45 / 614 au total).**
+> 2. **Corrections autorisées par le user (feu vert) soldées :**
+>    - ✅ **squat FEMME position M** (`277b87f`, RMSE A→M 0,288) ;
+>    - ✅ **abduction hanche FEMME position B** (`e67a36f`, RMSE M→B 0,255) ;
+>    - ✅ **fire hydrant FEMME A/M/B** en **vue arrière trois-quarts** (`e5b670a`, RMSE A→M 0,088, M→B 0,090) ;
+>    - ✅ **squat HOMME A/M/B** refait en trois-quarts sur tapis noir (`9ed4d87`, RMSE A→M 0,076, M→B 0,090).
+> 3. **LOT A-04 HOMME ouvert** : position A de `abduction-assise-machine-ou-elastique`
+>    conforme et conservée dans `themeA/_sources/A-04/abduction-assise-machine-ou-elastique-A.png`
+>    (les 2 essais de M ont été écartés : essai 1 immobile, essai 2 jambes tendues en grand écart).
 
 > ### 🔄 MISES À JOUR DU 2026-10-07 (2ᵉ passe) — règles 14 et 15
 >
@@ -33,10 +41,11 @@ corrections du fire hydrant FEMME · dernier commit : `05c3a4b` · branche de se
 > | --- | --- | --- | --- |
 > | **Lot 1** — dead bug, bird dog, gainage latéral | ✅ | ✅ **fait** | `LOT-R1F-rattrapage-lot1-femme.gif` (1420×265, 3 colonnes) |
 > | **Lot 2** — mountain climbers, dead bug rotation, gainage latéral dyn. | ✅ | ✅ **fait** | `LOT-R2F-rattrapage-lot2-femme.gif` (1420×265, 3 colonnes) |
-> | **Lot 3** — les 2 circuits | ⚠️ version simple (remplacement après accord) | 🟠 **en cours** : `circuit-gainage` **LIVRÉ** (`f07c04d`), `circuit-abdominaux` **8/9** | `LOT3F-circuit-gainage-femme.gif` (1420×265) ; abdos : `LOT3F-circuit-abdominaux-PLANCHE-TRAVAIL.png` |
+> | **Lot 3** — les 2 circuits | ⚠️ version simple (remplacement après accord) | ✅ **fait** : `circuit-gainage` (`f07c04d`) + `circuit-abdominaux` (`5e5a2e3`) **LIVRÉS (9/9)** | `LOT3F-circuit-gainage-femme.gif` + `LOT3F-circuit-abdominaux-femme.gif` (1420×265) |
 >
-> **Le rattrapage de la fille est presque terminé** : il ne reste que la 9ᵉ position du
-> `circuit-abdominaux` (drapeau rouge du tour) et les corrections du fire hydrant.
+> **Le rattrapage de la fille est 100 % terminé** : l'homme et la femme comptent désormais
+> tous deux **17 / 25** entrées sur le thème A, et les corrections du squat (H + F), de
+> l'abduction (F) et du fire hydrant (F) sont livrées.
 >
 > ### 🚩 RÈGLE VITALE (apprise d'un incident du 2026-10-07)
 >
@@ -234,18 +243,18 @@ dans le sandbox — les comptages sont refaits en Python depuis `inventaire.json
 
 | Élément | Valeur |
 | --- | --- |
-| Animations créées | **44 / 614** livrées (`circuit-gainage` FEMME validé par le user) · **+8 positions** du `circuit-abdominaux` FEMME en cours (non comptées avant assemblage) |
-| **Restant à produire** | **571** |
-| Versions femme produites | **15 / 307** |
-| Animations femme à reprendre | **1** (fire hydrant M/B) — squat M et abduction B corrigés le 2026-10-07 |
-| Animations corrigées (option A) | 3 / 5 |
+| Animations créées | **45 / 614** livrées (`circuit-gainage` FEMME + `circuit-abdominaux` FEMME complets 9/9) |
+| **Restant à produire** | **569** |
+| Versions femme produites | **17 / 307** |
+| Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
+| Animations corrigées (option A + feu vert) | 3 / 5 (option A) + 4 (squat F, abduction F, fire hydrant F, squat H) |
 | Fichiers dupliqués traités | 4 / 48 · `666443484c7f0861.gif` → 1 / 3 |
-| `bcdbe16aeafaafec.gif` | 8 / 8 ✅ soldé |
+| `bcdbe16aeafaafec.gif` | 8 / 8 ✅ soldé (H + F) |
 | `8de6e89e5395700c.gif` | 6 / 7 |
-| Doublons sur les fichiers du chantier | **0** (57 GIF + 30 PNG, empreintes md5 toutes distinctes) |
-| Lots livrés | POC, L1, L2, L3, L4, L5, A-01, A-02, A-03, A-01F, A-02F, A-03F, **R1F**, **R2F** |
+| Doublons sur les fichiers du chantier | **0** (toutes empreintes md5 distinctes) |
+| Lots livrés | POC, L1, L2, L3, L4, L5, A-01, A-02, A-03, A-01F, A-02F, A-03F, **R1F**, **R2F**, **LOT 3F (2 composites)** |
 
-### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : **17 / 25 en HOMME, 15 / 25 en FEMME**
+### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : **17 / 25 en HOMME, 17 / 25 en FEMME**
 
 **Convention de nommage :** `themeA/<exercice>-3poses.gif` = homme,
 `themeA/femme/<exercice>-3poses.gif` = femme.
@@ -492,10 +501,11 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/6a360b
 > Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 >
 > **Dépôt** `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public). **Branche de session** :
-> `arena/6a360b28-jarvis-fitness-yanis-emilie-ap` — elle contient tout l'historique du
+> `arena/93096144-jarvis-fitness-yanis-emilie-ap` — elle contient tout l'historique du
 > chantier. Si le prompt système annonce une autre branche `arena/<id>-…`, écris sur celle
-> annoncée par le système et pousse **aussi** sur `arena/6a360b28-…` pour synchroniser.
-> **Dernier commit de contenu : `e67a36f`** · dernier commit : `05c3a4b`.
+> annoncée par le système.
+> **Dernier commit de contenu : `9ed4d87`** (`5e5a2e3` circuit-abdos F 9/9, `e5b670a` fire
+> hydrant F 3/4, `9ed4d87` squat H).
 >
 > **OUVERTURE OBLIGATOIRE :**
 >
@@ -504,30 +514,32 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/6a360b
 > # ⚠️ un simple `git fetch origin` ne rapporte PAS toujours les branches arena :
 > git fetch origin 'refs/heads/arena/*:refs/remotes/origin/arena/*'
 > # puis, si HEAD est retombé sur ddd1fb9 :
-> git reset --hard origin/arena/6a360b28-jarvis-fitness-yanis-emilie-ap
+> git reset --hard origin/arena/93096144-jarvis-fitness-yanis-emilie-ap
 > ```
 >
 > Lis `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
 > `yanis-fitness-evolution/animations/PLAN-THEMES.md`.
 >
-> **ÉTAT — 44 / 614 animations livrées.** Thème A : 17/25 en homme, 15/25 en femme.
-> `circuit-gainage` FEMME **livré** (composite 3 phases, 9/9). `circuit-abdominaux` FEMME
-> **8/9** (sa phase 3 est une **planche haute sur les mains** — écart assumé, à trancher).
-> Corrections autorisées par le user (feu vert) : squat FEMME M ✅, abduction FEMME B ✅,
-> fire hydrant FEMME M/B ⏳.
+> **ÉTAT — 45 / 614 animations livrées.** Thème A : **17/25 en homme, 17/25 en femme**
+> (rattrapage femme 100 % terminé ✅).
+> `circuit-gainage` FEMME (`f07c04d`) et `circuit-abdominaux` FEMME (`5e5a2e3`) **livrés**
+> (composites 3 phases, 9/9).
+> Corrections autorisées (feu vert) toutes livrées : squat FEMME M ✅ (`277b87f`), abduction
+> FEMME B ✅ (`e67a36f`), fire hydrant FEMME A/M/B en arrière 3/4 ✅ (`e5b670a`), squat HOMME
+> A/M/B en 3/4 sur tapis noir ✅ (`9ed4d87`).
 >
 > **À FAIRE, dans l'ordre :**
-> 1. **9ᵉ position du `circuit-abdominaux` FEMME** (planche haute tenue) → assemblage du GIF
->    composite (460×257, boucle A→M→B par phase puis retour arrière) + planche 1420×265
->    (3 colonnes) ;
-> 2. **fire hydrant FEMME M et B** en **vue arrière trois-quarts** — base conforme prête :
->    `themeA/femme/_sources/A-02F/fire-hydrant-elastique-A3.png` ; ⚠️ sur une **vue de
->    profil**, le générateur rend l'abduction en **donkey kick** (4 échecs constatés, la
->    version HOMME a le même défaut) ;
-> 3. **squat HOMME** (position finale pas assez basse) — à confirmer par le user ;
-> 4. **LOT A-04** (abduction assise, pallof press, face pull), **LOT A-05** (respiration
->    diaphragmatique, hip thrust unilatéral), puis les 3 étapes chrono `warmup-route`,
->    `warmup-mobilite`, `warmup-approche` — **en HOMME puis en FEMME** ;
+> 1. **Terminer le LOT A-04 HOMME** (`abduction-assise-machine-ou-elastique` : base A prête dans
+>    `themeA/_sources/A-04/abduction-assise-machine-ou-elastique-A.png`, chaîner M et B avec
+>    pieds fixes largeur de hanches et ouverture des genoux fléchis à 90° ; puis
+>    `pallof-press-a-l-elastique` A/M/B et `face-pull-a-l-elastique` A/M/B) → planche
+>    `themeA/LOT-A04-echauffement.gif` ;
+> 2. **LOT A-04 FEMME** (les 3 mêmes exercices en FEMME) ;
+> 3. **LOT A-05** (`respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`), puis les
+>    3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche` — **en HOMME puis
+>    en FEMME** ;
+> 4. **Circuits LOT 3 HOMME en version composite** (remplacement après validation user) et
+>    éventuellement **fire hydrant HOMME en vue arrière trois-quarts** ;
 > 5. **POC** (3 animations) — accord user requis, hors du feu vert ;
 > 6. ensuite seulement : **thème B — musculation**.
 >
