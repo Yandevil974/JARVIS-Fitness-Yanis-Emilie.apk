@@ -82,8 +82,9 @@ validation, commit + push, mise à jour `SUIVI.md` / `PLAN-THEMES.md`.
 objectif `compare -metric RMSE` (seuil de lisibilité **0,030**) ; **format paysage**
 (le générateur rend parfois du portrait, inexploitable) ; anti-doublon `md5sum`.
 
-**ÉTAT** — 43 / 614 animations livrées · **LOT 3 FEMME en cours : circuit gainage, 8 / 9 positions**
-(commit `56ec4ce`, drapeau rouge de fin de tour sur la 9ᵉ). Thème A : **17 / 25 en homme,
+**ÉTAT** — 44 / 614 animations livrées. **LOT 3 FEMME** : `circuit-gainage` **LIVRÉ**
+(9/9, composite, commit `f07c04d`, planche validée) ; `circuit-abdominaux` **8 / 9** (la
+9ᵉ — planche haute tenue — ouvre le prochain tour). Thème A : **17 / 25 en homme,
 15 / 25 en femme**.
 Lots 1 et 2 du thème A rattrapés en femme. Reste : **LOT 3** (2 circuits composites),
 **A-04** (3 entrées), **A-05** (2 entrées), **warmup-route / mobilite / approche** (3 entrées),

@@ -63,9 +63,9 @@ rattrapé) · en cours : LOT 3 FEMME, `circuit-gainage` 8/9 · branche de sessio
 - **Branche de travail : `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
   — ne jamais changer de branche, c'est elle qu'Arena suit.
 - Dernier commit de contenu **livré** : **`1257544`** — LOT R2 FEMME terminé (lot 2 rattrapé)
-- En cours : **`56ec4ce`** + commits de ce tour — **LOT 3 FEMME `circuit-gainage`, 8/9
-  positions** (2ᵉ circuit à venir), non compté comme livré tant que la planche n'est pas
-  validée par le user.
+- **`circuit-gainage` FEMME : LIVRÉ** (`f07c04d`) — 9/9 positions, animation composite
+  460×257 + planche 1420×265, planche validée par le user.
+- En cours : **`circuit-abdominaux` FEMME, 8/9 positions** (la 9ᵉ ouvre le prochain tour).
 - Ne pas toucher à `release/`, `public/media` ni à aucun fichier applicatif.
 
 ### Historique consolidé
@@ -224,7 +224,7 @@ dans le sandbox — les comptages sont refaits en Python depuis `inventaire.json
 
 | Élément | Valeur |
 | --- | --- |
-| Animations créées | **43 / 614** livrées · **+8 positions** du circuit gainage FEMME (LOT 3 en cours, non comptées tant que la planche n'est pas validée) |
+| Animations créées | **44 / 614** livrées (`circuit-gainage` FEMME validé par le user) · **+8 positions** du `circuit-abdominaux` FEMME en cours (non comptées avant assemblage) |
 | **Restant à produire** | **571** |
 | Versions femme produites | **15 / 307** |
 | Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M, A-03F abduction B) |
@@ -309,7 +309,16 @@ Ces dossiers évitent de repayer des images déjà générées.
    coudes** — le critère « coude pile sous l'épaule » n'est qu'approximatif ;
    (c) P2-M → P2-B : la montée du bassin est **discrète** (RMSE 0,035) ;
    (d) phase 2 : **artefact de dallage dans le ciel** (motif de blocs au-dessus de la mer).
-4. 🔴 **À FAIRE ENSUITE — LOT 3 : les 2 circuits composites.**
+4. 🟠 **LOT 3 FEMME `circuit-abdominaux` : 8 / 9 positions produites** (crunch → relevés de
+   jambes → gainage), chaînées en 3 phases ; la **9ᵉ (planche haute tenue)** ouvre le
+   prochain tour (drapeau rouge : 10 images IA du tour épuisées). Aperçu **dans le dépôt**
+   (règle 15 — le user n'a pas le visualiseur) :
+   `animations/themeA/femme/LOT3F-circuit-abdominaux-PLANCHE-TRAVAIL.png`.
+   ⚠️ **Écart assumé** : la phase 3 est une **planche HAUTE (sur les mains)** et non sur
+   avant-bras — le générateur a rendu deux fois un appui sur les mains ; c'est cohérent
+   avec le départ à quatre pattes et distinct du `circuit-gainage`. **À trancher par le
+   user** (si avant-bras exigés : 3 images à refaire).
+5. 🔴 **À FAIRE ENSUITE — LOT 3 : les 2 circuits composites (HOMME).**
    - `circuit-gainage` : planche → gainage latéral → bird dog ;
    - `circuit-abdominaux` : crunch → relevés de jambes → gainage.
    Décision du user (§ 7.2) : les **trois mouvements déroulés à la suite** dans une seule
@@ -317,16 +326,16 @@ Ces dossiers évitent de repayer des images déjà générées.
    À produire en **FEMME** (jamais fait) et à **refaire en HOMME** en version composite
    (aujourd'hui version simple à une seule position). **Montrer la planche avant de
    committer le remplacement des fichiers HOMME.**
-5. **LOT A-04** : `abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
+6. **LOT A-04** : `abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
    `face-pull-a-l-elastique` — 3 exercices, 9 images (**jamais produits** : H puis F).
-6. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe` (2
+7. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe` (2
    exercices = 6 images) — H puis F.
-7. **Étapes chrono d'échauffement** (H + F = 6 animations) :
+8. **Étapes chrono d'échauffement** (H + F = 6 animations) :
    - `warmup-route` = mise en route, marche ou vélo très facile, allure conversationnelle ;
    - `warmup-mobilite` = cercles d'épaules / mobilité hanches & chevilles — **à garder
      visuellement distinct de « mobilité des épaules » (A-01)** ;
    - `warmup-approche` = série d'approche légère, ~50 % de la charge de travail.
-8. **Ensuite seulement : thème B — musculation**, en commençant par
+9. **Ensuite seulement : thème B — musculation**, en commençant par
    `developpe-incline-halteres` (**banc 30°, prise neutre** — tranché par le user),
    puis jambes/quadriceps.
 
@@ -374,7 +383,11 @@ Ces dossiers évitent de repayer des images déjà générées.
 
 ## 8. RÉSERVES CONNUES (honnêtes)
 
-- **LOT 3 FEMME `circuit-gainage` (8/9, check du 2026-10-07, 2ᵉ passe)** :
+- **LOT 3 FEMME `circuit-abdominaux` (8/9)** : la **casquette dépasse légèrement du tapis
+  noir** sur la position A (crunch, corps au sol) ; la phase 3 est une **planche haute sur
+  les mains** (écart assumé, voir § 6) ; la transition de la position M de la phase 3 est
+  un peu molle (genou opposé peu lisible).
+- **LOT 3 FEMME `circuit-gainage` (9/9, LIVRÉ — planche validée par le user)** :
   (a) **P1-A** — la main gauche est déjà posée au sol devant le genou : l'installation à
   genoux se lit mal pour un mouvement à quatre pattes ;
   (b) **P1-B** — les deux avant-bras sont bien posés à plat (planche sur avant-bras

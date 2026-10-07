@@ -554,6 +554,106 @@ légenées). Constats :
 5. le remplacement des fichiers **HOMME** (aujourd'hui en version simple) ne se fera
    **qu'après accord explicite du user** (règle 2).
 
+## LOT 3 FEMME — CIRCUIT ABDOMINAUX (en cours) — 2026-10-07
+
+Second circuit composite FEMME (crunch → relevés de jambes → gainage), même méthode que
+`circuit-gainage` : 9 positions chaînées (source = position précédente), 3 phases.
+
+| # | Phase | Position | Fichier source | Statut |
+| --- | --- | --- | --- | --- |
+| 1 | Crunch | A — allongée sur le dos, genoux 90°, mains derrière la tête, dos plaqué | `_sources/LOT3F/circuit-abdos-P1-A.png` | ✅ |
+| 2 | Crunch | M — tête et épaules décollées, omoplates encore au sol | `_sources/LOT3F/circuit-abdos-P1-M.png` | ✅ |
+| 3 | Crunch | B — point haut de l'enroulement, bassin immobile | `_sources/LOT3F/circuit-abdos-P1-B.png` | ✅ |
+| 4 | Relevés de jambes | A — jambes tendues verticales (position en « L »), dos plaqué | `_sources/LOT3F/circuit-abdos-P2-A.png` | ✅ |
+| 5 | Relevés de jambes | M — jambes tendues à ~45°, descente contrôlée | `_sources/LOT3F/circuit-abdos-P2-M.png` | ✅ |
+| 6 | Relevés de jambes | B — jambes presque parallèles au tapis, talons non posés | `_sources/LOT3F/circuit-abdos-P2-B.png` | ✅ |
+| 7 | Gainage | A — à quatre pattes, mains au sol, genoux au sol, dos plat | `_sources/LOT3F/circuit-abdos-P3-A.png` | ✅ |
+| 8 | Gainage | M — montée en planche, hanches à mi-course | `_sources/LOT3F/circuit-abdos-P3-M.png` | ✅ |
+| 9 | Gainage | B — planche haute tenue, ligne droite talons-tête | — | ⬜ **drapeau rouge** (10 images IA du tour épuisées) |
+
+**Planche de travail (8/9) :** `themeA/femme/_sources/LOT3F/PLANCHE-TRAVAIL-LOT3F-circuit-abdominaux.png`
+(copie à la racine du thème A : `themeA/femme/LOT3F-circuit-abdominaux-PLANCHE-TRAVAIL.png`)
+— à regarder par le user **sur GitHub**, le visualiseur d'Arena ne lui étant pas accessible
+(règle 15).
+
+### Écart assumé et documenté — la phase 3 est une planche HAUTE (sur les mains)
+
+Deux prompts successifs demandaient l'appui sur les **avant-bras** ; le générateur a rendu
+**deux fois** un appui sur les mains, bras tendus. Décision : **garder la planche haute**
+pour ce circuit, pour trois raisons —
+1. elle est **physiquement cohérente** avec la position de départ (à quatre pattes, mains
+   au sol : la montée en planche conserve l'appui des mains, sans bascule sur les
+   avant-bras) ;
+2. c'est une **variante de gainage valide et courante** (planche haute, bras tendus) ;
+3. elle **distingue** ce circuit du `circuit-gainage` (planche sur avant-bras), ce que
+   demande l'esprit de la règle 1 (une animation spécifique par entrée).
+⚠️ **Si le user préfère la planche sur avant-bras pour ce circuit, les phases 3 devront
+être refaites (3 images) — à trancher.**
+
+### Budget d'images IA du tour — 10 / 10, compté sans dissimulation
+
+| Image | Résultat |
+| --- | --- |
+| `circuit-gainage` P3-B (fin du circuit précédent) | ✅ conforme |
+| `circuit-abdos` P1-A (essai 1) | ❌ **rejetée** : corps à moitié hors du tapis noir (tête sur la dalle) et image étirée, ciel bruité → non intégrée |
+| `circuit-abdos` P1-A (essai 2) | ✅ conforme (dos plaqué, genoux 90°, mains derrière la tête) |
+| `circuit-abdos` P1-M | ✅ conforme |
+| `circuit-abdos` P1-B | ✅ conforme |
+| `circuit-abdos` P2-A | ✅ conforme (jambes verticales en « L ») |
+| `circuit-abdos` P2-M | ✅ conforme (45°, descente contrôlée) |
+| `circuit-abdos` P2-B | ✅ conforme (talons non posés) |
+| `circuit-abdos` P3-A | ✅ conforme (quatre pattes) |
+| `circuit-abdos` P3-M | ✅ conforme (montée en planche, mains au sol) |
+| `circuit-abdos` P3-B | 🚫 **refusée par la limite** : `Image generation limit of 10 reached for this turn` |
+
+### Contrôle objectif
+
+| Comparaison | RMSE normalisé |
+| --- | --- |
+| crunch A → M | 0,077 |
+| crunch M → B | 0,055 |
+| relevés A → M | 0,061 |
+| relevés M → B | 0,063 |
+| gainage A → M | 0,053 |
+
+Toutes les positions en **paysage 1376×768**, empreintes md5 **toutes distinctes**, 0 doublon
+sur l'ensemble du chantier (59 GIF + 17 PNG du LOT3F).
+
+### Réserves honnêtes sur ces images
+
+- **P1-A** : la casquette du personnage **dépasse légèrement du tapis noir** (le corps est
+  bien au sol, seul l'arrière du crâne/casquette sort du tapis).
+- **Phase 3** : planche **haute** au lieu d'un appui sur avant-bras (voir ci-dessus).
+- **P3-M** : la jambe d'appui arrière est tendue mais le genou opposé est peu lisible
+  (transition un peu molle entre la position à genoux et l'appui sur les pointes de pieds).
+
+### Technique vérifiée en ligne avant génération
+
+- **Crunch** : enroulement progressif du haut du dos (les omoplates décollent, le bas du dos
+  reste au sol), nuque relâchée, menton légèrement rentré, mains près des tempes **sans
+  tirer sur la tête**, expiration à la montée, arrêt dès que les lombaires se creusent
+  ([sport-equipements](https://www.sport-equipements.fr/crunch-abdos/),
+  [superphysique](https://www.superphysique.org/forums/topic2840.html)).
+- **Relevés de jambes au sol** : le repère technique n°1 est la **rétroversion du bassin**
+  (bas du dos plaqué) ; ne jamais descendre les jambes plus bas que ce que le gainage
+  permet ; descente lente, sans élan, talons non posés entre les répétitions ; si les
+  lombaires se décollent, réduire l'amplitude ou fléchir les genoux
+  ([flexgymperformance](https://flexgymperformance.fr/blogs/abdos/releve-de-jambes-guide-complet),
+  [jemeremetsausport](https://jemeremetsausport.com/releves-de-jambes-au-sol/),
+  [infirmiermarseille](https://infirmiermarseille.fr/lever-jambes-bas-abdos/)).
+- **Gainage (planche haute)** : mains sous les épaules, bras tendus, corps en ligne droite
+  des talons à la tête, abdominaux + fessiers + quadriceps engagés, épaules basses
+  ([callisthenie-corner](https://www.callisthenie-corner.fr/planche/),
+  [barretractionpro](https://barretractionpro.com/gainage-planche/)).
+
+### Suite immédiate
+
+1. produire la **9ᵉ position** (P3-B, planche haute tenue) — elle ouvre le prochain tour ;
+2. assembler `themeA/femme/circuit-abdominaux-3poses.gif` (même convention de boucle que
+   `circuit-gainage` : A→M→B par phase puis retour arrière) + planche 1420×265 (3 colonnes) ;
+3. afficher les deux planches au user **via GitHub** (règle 15) ;
+4. ensuite : LOT A-04 (H + F), puis A-05, puis les 3 étapes chrono `warmup-*`.
+
 ## Audit de conformité des animations existantes (2026-10-06)
 
 Les 16 animations des lots POC → LOT 4 ont été recontrôlées image par image. Aucun
