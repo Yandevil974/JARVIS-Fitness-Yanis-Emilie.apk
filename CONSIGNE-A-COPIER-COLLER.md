@@ -39,6 +39,8 @@ accord explicite) : A-02F fire hydrant M/B + squat M (3 images, sources dans
 
 1. **1 exercice = 1 animation spécifique** — jamais copier / renommer / réutiliser.
 2. Ne jamais remplacer une animation livrée sans accord explicite.
+    ⚠️ **Feu vert du 2026-10-07** : les corrections de GIF déjà livrés sont autorisées ;
+    chaque correction reste tracée dans `SUIVI.md` (section « CORRECTIONS AUTORISÉES »).
 3. Pas touche à `release/` ni à `public/media` avant validation de l'intégration.
 4. Honnêteté sur les échecs et réserves. Jamais de faux 100 %.
 5. **Drapeau rouge à 10 images IA = 3 exercices par tour.** Limite technique, pas un

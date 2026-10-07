@@ -14,7 +14,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
 | Animations créées | 43 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** (dead bug, bird dog, gainage latéral) + **R2 FEMME : 3** (mountain climbers, dead bug rotation, gainage latéral dyn.)) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
-| Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M — voir § LOT A-02 FEMME ; + A-03F abduction B trop proche de M, voir § LOT A-03 FEMME) |
+| Animations femme à reprendre | **1** (A-02F fire hydrant M/B — le générateur rend un donkey kick au lieu d'une abduction latérale sur la vue de profil ; **squat M et abduction B corrigés le 2026-10-07 sur autorisation du user**) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
@@ -653,6 +653,91 @@ sur l'ensemble du chantier (59 GIF + 17 PNG du LOT3F).
    `circuit-gainage` : A→M→B par phase puis retour arrière) + planche 1420×265 (3 colonnes) ;
 3. afficher les deux planches au user **via GitHub** (règle 15) ;
 4. ensuite : LOT A-04 (H + F), puis A-05, puis les 3 étapes chrono `warmup-*`.
+
+## CORRECTIONS AUTORISÉES PAR LE USER — 2026-10-07 (feu vert « corriger les GIF précédents »)
+
+Le user a donné un **feu vert général** pour corriger les animations déjà livrées. Règle 2
+assouplie : les corrections décidées par le user peuvent désormais remplacer une animation
+livrée, la résolution restant tracée dans ce fichier.
+
+### 1. `femme/squat-poids-du-corps-3poses.gif` — position M ✅ CORRIGÉE
+
+| | |
+| --- | --- |
+| Défaut | mi-course trop proche du départ (l'amplitude ne se lisait pas) |
+| Correction | position M régénérée depuis `_sources/A-02F/squat-poids-du-corps-A.png` : genoux ~90°, cuisses ~45° de la verticale, fesses vers l'arrière, buste droit, talons au sol |
+| Mesure | RMSE A→M = **0,288** (contre un écart quasi nul avant) |
+| Fichiers | `themeA/femme/squat-poids-du-corps-3poses.gif` + `LOT-A02F-echauffement-femme.gif` réassemblés |
+
+### 2. `femme/abduction-hanche-elastique-3poses.gif` — position B ✅ CORRIGÉE
+
+| | |
+| --- | --- |
+| Défaut | position finale confondue avec la mi-course (RMSE 0,029) |
+| Correction | position B régénérée depuis `_sources/A-03F/abduction-hanche-elastique-M.png` : jambe à ~45° de la jambe d'appui, écart des pieds très augmenté, élastique franchement étiré, buste vertical, bassin stable |
+| Mesure | RMSE M→B = **0,255** (contre 0,029) |
+| Fichiers | `themeA/femme/abduction-hanche-elastique-3poses.gif` + `LOT-A03F-echauffement-femme.gif` réassemblés |
+
+### 3. `femme/fire-hydrant-elastique-3poses.gif` — positions M et B ⏳ EN COURS
+
+**Le problème est identifié, et c'est un problème d'ANGLE DE VUE, pas de prompt.**
+
+Sur la vue de **profil**, l'abduction latérale (le genou s'ouvre vers la caméra) est
+systématiquement rendue par le générateur comme une **extension de jambe vers l'arrière**
+(donkey kick). Quatre tentatives ont échoué, y compris avec des descriptions spatiales
+explicites (« le genou vient vers la caméra », « la face interne de la cuisse »). La
+version **HOMME** livrée présente exactement le même défaut : sur une vue de profil,
+l'abduction est illisible de toute façon (la jambe s'éloigne de l'axe de la caméra).
+
+**Stratégie retenue (validée par la vérification en ligne)** : tourner l'animation en
+**vue ARRIÈRE TROIS-QUARTS**, qui est l'angle des démonstrations de référence — on voit
+alors l'ouverture de la hanche et la face interne de la cuisse, sans ambiguïté possible.
+
+| Position | Fichier | Statut |
+| --- | --- | --- |
+| A (quatre pattes, vue arrière trois-quarts, semelles vers le plafond, élastique aux genoux) | `_sources/A-02F/fire-hydrant-elastique-A3.png` | ✅ conforme — **base de la nouvelle série** |
+| M (genou gauche ouvert à ~45°) | — | ⬜ **drapeau rouge** (10 images du tour épuisées) |
+| B (cuisse gauche à l'horizontale, genou à 90°) | — | ⬜ à produire |
+
+⚠️ Cette correction **change la prise de vue** de l'animation par rapport aux deux autres
+exercices du LOT A-02 FEMME (profil / face). C'est un choix assumé : mieux vaut une vue
+qui **montre le mouvement** qu'une vue qui le travestit. **À valider par le user.**
+
+### Budget d'images du tour de corrections — 10 / 10, compté
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | fire hydrant M (essai 1) | ❌ erreur générateur `Response contains no images` |
+| 2 | squat M | ✅ conforme → **livré** |
+| 3 | fire hydrant M (essai 2) | ❌ **rendu en donkey kick** (profil) → rejeté |
+| 4 | fire hydrant M (essai 3) | ❌ erreur générateur |
+| 5 | fire hydrant M (essai 4) | ❌ donkey kick encore (profil) → rejeté |
+| 6 | fire hydrant A2 (re-cadrage arrière demandé) | ❌ le générateur a rejoué la vue de profil → rejeté |
+| 7 | abduction B (essai 1) | ❌ erreur générateur |
+| 8 | abduction B (essai 2) | ✅ conforme → **livré** |
+| 9 | fire hydrant B2 (depuis M en donkey kick) | ❌ donkey kick (profil) → rejeté |
+| 10 | fire hydrant A3 (**nouvelle base, vue arrière trois-quarts**) | ✅ conforme → **base de la nouvelle série** |
+
+**5 images ont été rejetées** (dont 3 erreurs techniques du générateur et 2 mouvements
+non conformes) : elles sont comptées, pas dissimulées. Aucune n'est intégrée à une
+animation livrée.
+
+### Technique vérifiée en ligne avant ces corrections
+
+- **Fire hydrant** : à quatre pattes, mains sous les épaules, genoux sous les hanches ;
+  **abduction de hanche** — le genou s'écarte du centre du corps sur le côté **en restant
+  plié à ~90°**, jusqu'à la parallèle au sol ; le bassin ne tourne pas et le dos ne
+  s'étend pas ; « à quatre pattes, éloigner le genou du centre du corps tout en le gardant
+  plié » ([nievremedical](https://nievremedical.fr/sculptez-fessiers-fire-hydrant),
+  [julienquaglierini](https://julienquaglierini.com/2024/06/fire-hydrant/),
+  [YouTube — démonstration](https://www.youtube.com/watch?v=La3xYT8MGks) : « lock the
+  elbows and abduct the hip at 90 or 45 degrees »).
+- **Squat au poids du corps** : cuisses jusqu'au parallèle, poids sur les talons, genoux
+  dans l'axe des orteils, buste droit
+  ([fitdistance](https://fitdistance.io/exercice-musculation/squats-au-poids-du-corps)).
+- **Abduction debout à l'élastique** : buste vertical, mains sur les hanches, bassin
+  stable, amplitude 30-45°
+  ([mickaël Conseiller](https://mickaelconseillerlr.fr/produit/abduction-debout-avec-elastique-renforcement-des-hanches-et-des-fessiers/)).
 
 ## Audit de conformité des animations existantes (2026-10-06)
 

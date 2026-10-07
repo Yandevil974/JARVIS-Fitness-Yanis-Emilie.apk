@@ -227,7 +227,7 @@ dans le sandbox — les comptages sont refaits en Python depuis `inventaire.json
 | Animations créées | **44 / 614** livrées (`circuit-gainage` FEMME validé par le user) · **+8 positions** du `circuit-abdominaux` FEMME en cours (non comptées avant assemblage) |
 | **Restant à produire** | **571** |
 | Versions femme produites | **15 / 307** |
-| Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M, A-03F abduction B) |
+| Animations femme à reprendre | **1** (fire hydrant M/B) — squat M et abduction B corrigés le 2026-10-07 |
 | Animations corrigées (option A) | 3 / 5 |
 | Fichiers dupliqués traités | 4 / 48 · `666443484c7f0861.gif` → 1 / 3 |
 | `bcdbe16aeafaafec.gif` | 8 / 8 ✅ soldé |
@@ -370,18 +370,35 @@ Ces dossiers évitent de repayer des images déjà générées.
 6. ✅ **Personnage femme confirmé conforme** au style validé : même code visuel que
    l'homme (corps argenté mat, visage noir sans traits, casquette, tresse, tenue noire,
    baskets blanches, terrasse bord de mer, tapis noir, muscles dorés).
-7. 🔴 **Décisions EN ATTENTE du user** (règle 2 — ne rien toucher sans accord) :
-   - **Accord pour refaire les 2 animations du LOT A-02 FEMME** (fire hydrant M/B,
-     squat M) — 3 images, les 6 autres positions sont dans `_sources/A-02F/` ;
-   - **Accord pour refaire la position B de l'abduction hanche FEMME** — 1 image, les
-     8 autres positions sont dans `_sources/A-03F/` ;
-   - **Accord pour refaire le squat HOMME** (`themeA/squat-poids-du-corps-3poses.gif`,
-     position finale pas assez basse — cuisses sous le parallèle).
+7. ✅ **FEU VERT DONNÉ LE 2026-10-07** : « tu as feu vert pour faire des corrections sur
+   les gifs précédents ». Règle 2 assouplie — les corrections de GIF livrés sont autorisées
+   (elles restent tracées dans `SUIVI.md`, section « CORRECTIONS AUTORISÉES »).
+   Traité dans ce cadre :
+   - ✅ **squat FEMME position M** (`femme/squat-poids-du-corps-3poses.gif`) — corrigée,
+     RMSE A→M 0,288, réassemblée et poussée ;
+   - ✅ **abduction hanche FEMME position B** (`femme/abduction-hanche-elastique-3poses.gif`)
+     — corrigée, RMSE M→B 0,255, réassemblée et poussée ;
+   - ⏳ **fire hydrant FEMME M/B** — diagnostic : sur une vue de profil, le générateur rend
+     l'abduction latérale en **donkey kick** ; la version HOMME a le même défaut. Nouvelle
+     base tournée en **vue ARRIÈRE TROIS-QUARTS** (`_sources/A-02F/fire-hydrant-elastique-A3.png`,
+     conforme) ; M et B restent à produire (drapeau rouge du tour).
+   - ⏳ **squat HOMME** (position finale pas assez basse) : **à confirmer explicitement** —
+     le feu vert du user vise les GIF « précédents » ; je le traite comme autorisé et je le
+     corrige au prochain tour, sauf contre-ordre.
+   - ⏳ **POC (3 animations)** : hors « GIF précédents » du thème A — je demande
+     confirmation avant d'y toucher.
 8. ⏳ **Aucune autre décision en attente.**
 
 ---
 
 ## 8. RÉSERVES CONNUES (honnêtes)
+
+- **Fire hydrant FEMME (A-02F, M et B)** : la vue de **profil** ne permet pas de montrer
+  une abduction de hanche — le générateur rend systématiquement une extension arrière
+  (donkey kick), et la version HOMME livrée a le même défaut. Correction en cours par un
+  **changement de prise de vue (arrière trois-quarts)** ; la nouvelle position A est
+  conforme, M et B restent à produire. **Cela crée une rupture de cadrage assumée** avec
+  les deux autres exercices du lot (profil/face) — à valider par le user.
 
 - **LOT 3 FEMME `circuit-abdominaux` (8/9)** : la **casquette dépasse légèrement du tapis
   noir** sur la position A (crunch, corps au sol) ; la phase 3 est une **planche haute sur
