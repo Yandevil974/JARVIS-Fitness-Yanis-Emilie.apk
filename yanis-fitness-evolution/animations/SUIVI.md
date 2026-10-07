@@ -12,17 +12,18 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **60 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`warmup-route` `8cf93fa`, `warmup-mobilite` `d698285`, `warmup-approche` `204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 2/3** (`warmup-route` `b017eb6`, `warmup-mobilite` `b932ebd` ; `warmup-approche` pos A prête) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
-| Restant à produire | **554** |
+| Animations créées | **62 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 1/3** (`bulgarian-split-squat` `c2efd7d`)) |
+| Restant à produire | **552** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (2/3 `warmup-*` livrés + base A de `warmup-approche`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) |
-| Versions femme produites | **24 / 307** |
-| Thème A (échauffement) | **25 / 25 en homme (100% ✅), 24 / 25 en femme** · LOT A-08/09 HOMME complet (`204a8b4`) · `warmup-route` F (`b017eb6`) et `warmup-mobilite` F (`b932ebd`) livrés · Reste `warmup-approche` F (2 images M et B à chaîner depuis A prête) et les **2 circuits HOMME** à passer en version composite |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (3/3 ✅ `5467b86`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) + **B-01 HOMME (1/3 : `bulgarian-split-squat` livré)** |
+| Versions femme produites | **25 / 307** |
+| Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
+| Thème B (musculation) | **1 / 187 en homme** (`bulgarian-split-squat` livré dans le Lot B-01) |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -799,17 +800,76 @@ LOT A-02 FEMME (profil / face).
 
 ---
 
-## LOT A-08F / A-09F FEMME — 3 étapes chrono `warmup-*` (2 / 3 livrées + base A du 3ᵉ) — 2026-10-07
+## LOT A-08F / A-09F FEMME — COMPLET (3 / 3 étapes chrono `warmup-*` livrées — 25/25 Thème A FEMME ✅) — 2026-10-07 (`5467b86`)
 
 | Fichier | Étape chrono | Positions | Statut |
 | --- | --- | --- | --- |
 | `themeA/femme/warmup-route-3poses.gif` | `warmup-route` FEMME (*Mise en route cardio — 3 min*) | Marche active dynamique / montée de genou souple sur place (vue 3/4 avant sur tapis noir) : A = deux pieds posés sur le tapis en départ de foulée · M = montée du genou gauche à mi-hauteur (~45°), bras en balancier · B = genou gauche levé haut (~90°), poing gauche levé en coordination (réserve : apparition d'un relief lointain sur l'horizon gauche derrière le palmier en B) | ✅ **livré (`b017eb6`)** (RMSE A→M = **0,0837**, M→B = **0,1078**) |
 | `themeA/femme/warmup-mobilite-3poses.gif` | `warmup-mobilite` FEMME (*Mobilité articulaire — 4 min*) | Ouverture thoracique et rétraction scapulaire dynamique debout (vue 3/4 avant) : A = avant-bras et coudes fermés verticalement devant le buste · M = ouverture à mi-course en position Cactus / W à 90/90 (rotation externe d'épaules) · B = grande ouverture thoracique bras grands ouverts en T vers l'arrière, omoplates serrées | ✅ **livré (`b932ebd`)** (RMSE A→M = **0,0652**, M→B = **0,0475**) |
-| `themeA/femme/warmup-approche-3poses.gif` | `warmup-approche` FEMME (*Séries d'approche — 3 min*) | Épaulé / tirage d'approche à la barre légère : **A produite et validée** (`themeA/femme/_sources/A-08F/warmup-approche-A.png`, barre légère tenue bras tendus vers le bas devant le haut des cuisses, sol de pierre irrégulier cohérent avec `warmup-route` et `warmup-mobilite` FEMME) · M (tirage mi-buste) et B (front-rack aux clavicules) ouvrent le prochain tour | ⏳ **1/3 position prête** (M et B ouvrent le prochain tour) |
+| `themeA/femme/warmup-approche-3poses.gif` | `warmup-approche` FEMME (*Séries d'approche — 3 min*) | Épaulé / tirage d'approche à la barre légère : A = barre légère tenue bras tendus vers le bas devant le haut des cuisses · M = tirage vertical à mi-buste (sternum), coudes hauts à 90° · B = barre légère amenée en front-rack aux clavicules (réserve mineure : pieds légèrement rapprochés en B) | ✅ **livré (`5467b86`)** (RMSE A→M = **0,1004**, M→B = **0,1698**) |
+
+**Planche animée 3 colonnes et aperçus dans le dépôt (règle 15) :**
+- `themeA/femme/LOT-A08F-echauffement-femme.gif` (1420×265, 4 frames, sans `-layers optimize`) ;
+- `themeA/femme/LOT-A08F-PLANCHE-TRAVAIL.jpg` (grille 3×3 complète 1440×900 des 3 étapes `warmup-*` FEMME) ;
+- `themeA/femme/LOT-A08F-warmup-route-PLANCHE-FINALE.jpg` ;
+- `themeA/femme/LOT-A08F-warmup-mobilite-PLANCHE-FINALE.jpg` ;
+- `themeA/femme/LOT-A08F-warmup-approche-PLANCHE-FINALE.jpg`.
+
+---
+
+## THÈME B — MUSCULATION · LOT B-01 HOMME (1 / 3 livré : `bulgarian-split-squat`) — 2026-10-07 (`c2efd7d`)
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeB/bulgarian-split-squat-3poses.gif` | Bulgarian split squat HOMME (poids du corps) | Vue trois-quarts avant sur tapis noir avec banc de musculation plat noir derrière : A = départ jambe avant droite tendue, pied arrière gauche en appui sur le banc noir, mains aux hanches · M = demi-descente à ~45°, bras levés pour l'équilibre (réserve : banc noir légèrement plus décalé à droite sur M) · B = squat bulgare profond à 90° (cuisse avant horizontale parallèle au sol, genou arrière bas sous le banc, bras à l'horizontale) | ✅ **livré (`c2efd7d`)** (RMSE A→M = **0,1278**, M→B = **0,1347**) |
+| `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | À produire au prochain tour (haltère tenu verticalement en coupe contre le sternum, coudes vers le bas touchant l'intérieur des genoux au point bas) | ⬜ prochain tour |
+| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | À produire au prochain tour (pied entier posé sur le banc à hauteur de genou, poussée unilatérale dans le talon sans élan de la jambe arrière) | ⬜ prochain tour |
 
 **Aperçus dans le dépôt (règle 15) :**
-- `themeA/femme/LOT-A08F-warmup-route-PLANCHE-FINALE.jpg` ;
-- `themeA/femme/LOT-A08F-warmup-mobilite-PLANCHE-FINALE.jpg`.
+- `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg`.
+
+### Budget d'images IA du 8ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `warmup-approche` FEMME M (tirage vertical à mi-buste, coudes hauts à 90°) | ✅ conforme (RMSE A→M = 0,1004) |
+| 2 | `warmup-approche` FEMME B (réception en front-rack aux clavicules) | ✅ conforme (RMSE M→B = 0,1698) → **LOT A-08F/09F FEMME complet livré (`5467b86`, 50/50 Thème A !)** |
+| 3 | `bulgarian-split-squat` HOMME A (essai 1, vue de profil vers la droite) | ❌ rejeté (déjà à mi-descente et short noir masqué par la lueur dorée) |
+| 4 | `bulgarian-split-squat` HOMME A (essai 2, fusion de 2 références) | ❌ rejeté (artefact anatomique à 3 jambes : 2 pieds au sol + 1 pied sur le banc) |
+| 5 | `bulgarian-split-squat` HOMME A (essai 3, vue trois-quarts avant depuis `squat-poids-du-corps-A.png` seule) | ✅ conforme (2 jambes, jambe avant tendue, pied arrière sur le banc, short noir net) |
+| 6 | `bulgarian-split-squat` HOMME M (essai 1, chaîné depuis A seule) | ❌ rejeté (quasi immobile, RMSE 0,0365) |
+| 7 | `bulgarian-split-squat` HOMME B (squat bulgare profond 90°, cuisse avant horizontale) | ✅ conforme (RMSE A→B = 0,1016) |
+| 8 | `bulgarian-split-squat` HOMME M (essai 2, interpolation A+B avec A en 1ᵉʳ) | ❌ rejeté (bras à 45° mais jambes restées debout comme A) |
+| 9 | `bulgarian-split-squat` HOMME M (essai 3, chaîné avec B en 1ᵉʳ) | ❌ rejeté (bras à 45° mais jambes restées basses comme B, RMSE M→B = 0,0336) |
+| 10 | `bulgarian-split-squat` HOMME M (essai 4, depuis `squat-poids-du-corps-M.png` seule à mi-hauteur 45°) | ✅ conforme (vraie mi-hauteur à 45°, RMSE A→M = 0,1278, M→B = 0,1347) → **livré (`c2efd7d`)** |
+
+### Technique vérifiée en ligne avant génération du LOT B-01 (règle 14)
+
+- **Bulgarian split squat (poids du corps)** : un pied posé bien à plat au sol à l'avant,
+  l'autre pied surélevé en arrière sur un banc stable à hauteur du genou (dessus du pied
+  ou pointe en appui) ; buste droit ou très légèrement incliné vers l'avant, descente
+  contrôlée jusqu'à ce que la cuisse avant soit parallèle au sol (genou avant à ~90° dans
+  l'axe des orteils) et que le genou arrière s'approche du sol sans le toucher ; poussée
+  dans le talon avant pour remonter ([hop-sport](https://hop-sport.fr/blog/bulgarian-split-squat-muscles-sollicites-technique-et-erreurs-a-eviter),
+  [fitnesstech](https://www.fitnesstech.be/blogs/noticias/la-fente-bulgare-l-exercice-unilateral-pour-les-jambes-ayant-le-plus-grand-impact-sur-les-fessiers-et-les-quadriceps),
+  [docteur-fitness](https://www.docteur-fitness.com/squat-bulgare-avec-halteres),
+  [femme.fitness](https://femme.fitness/exercices/bulgarian-squat/),
+  [le-pied-dans-la-main](https://le-pied-dans-la-main.fr/maitriser-squat-bulgare/)).
+- **Goblet squat (haltère)** *(vérifié pour le prochain tour)* : pieds largeur d'épaules,
+  pointes ouvertes de 10-15°, haltère tenu verticalement contre le sternum (mains en coupe
+  sous la tête supérieure), coudes pointés vers le bas ; descente buste vertical jusqu'à
+  ce que les coudes touchent l'intérieur des genoux/cuisses au point bas, talons collés au
+  sol ([gym-studio](https://www.gym-studio.com/exercices/goblet-squat),
+  [wod-open](https://wod-open.com/goblet-squat/),
+  [epicfitness](https://epicfitness.fr/maitriser-goblet-squat/),
+  [creatine-academie](https://www.creatine-academie.com/goblet-squat-technique/)).
+- **Step-up sur banc (hauteur du genou)** *(vérifié pour le prochain tour)* : banc à
+  hauteur du genou (35-50 cm, genou à ~90° quand le pied est posé), pied d'appui posé
+  entièrement à plat sur le banc, montée en poussant dans le talon du pied avant sans
+  prendre d'élan avec la jambe arrière qui reste passive ([flexgymperformance](https://flexgymperformance.fr/blogs/quadriceps/step-up-guide-complet),
+  [gym-studio](https://www.gym-studio.com/exercices/step-up-halteres),
+  [musculation-nutrition](https://musculation-nutrition.fr/step-up-musculation/),
+  [arenasportclub](https://arenasportclub.fr/fitness/step-up-debutant-hauteur-support-genou-progression/)).
 
 ### Budget d'images IA du 7ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
 

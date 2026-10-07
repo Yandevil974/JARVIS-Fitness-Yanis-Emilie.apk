@@ -104,7 +104,7 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Circuit abdominaux (crunch + relevés + gainage) | `circuit-abdominaux-crunch-releves-gainage` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · ✅ **LOT 3 F = composite LIVRÉ (9/9, `5e5a2e3`)** |
-| 2 | warmup-approche | `warmup-approche` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-08 H livré (`204a8b4`)** · ⏳ **F pos A prête (`femme/_sources/A-08F/warmup-approche-A.png`), M et B ouvrent le prochain tour** |
+| 2 | warmup-approche | `warmup-approche` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-08 H livré (`204a8b4`)** · ✅ **LOT A-08F F livrée (`5467b86`)** |
 | 3 | warmup-mobilite | `warmup-mobilite` | échauffement | étape chrono · H + F (2 anim.) | ✅ **LOT A-08 H livré (`d698285`)** · ✅ **LOT A-08F F livrée (`b932ebd`)** |
 
 ### Lot A-09
@@ -127,9 +127,9 @@ Sous-thème musculation — quadriceps
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Bulgarian split squat | `bulgarian-split-squat` | quadriceps | poids du corps · H + F (2 anim.) | à recréer |
-| 2 | Goblet squat | `goblet-squat` | quadriceps | haltères · H + F (2 anim.) | à recréer |
-| 3 | Step-up sur banc (hauteur du genou) | `step-up-sur-banc-hauteur-du-genou` | quadriceps | poids du corps · H + F (2 anim.) | à recréer |
+| 1 | Bulgarian split squat | `bulgarian-split-squat` | quadriceps | poids du corps · H + F (2 anim.) | ✅ **LOT B-01 H livré (`c2efd7d`)** · ⬜ F à venir |
+| 2 | Goblet squat | `goblet-squat` | quadriceps | haltères · H + F (2 anim.) | ⬜ prochain tour (H puis F) |
+| 3 | Step-up sur banc (hauteur du genou) | `step-up-sur-banc-hauteur-du-genou` | quadriceps | poids du corps · H + F (2 anim.) | ⬜ prochain tour (H puis F) |
 
 ### Lot B-02
 

@@ -2,29 +2,28 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 (Fitness 13 — 7ᵉ tour) · 60 / 614 animations livrées
-(thème A : 25/25 en HOMME [100% ✅], 24/25 en FEMME) · LOT A-08/09 HOMME complet (`204a8b4`) ·
-`warmup-route` FEMME (`b017eb6`) et `warmup-mobilite` FEMME (`b932ebd`) livrés ·
-`warmup-approche` FEMME pos A prête · branche de session `arena/93096144-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 7 octobre 2026 (Fitness 13 — 8ᵉ tour) · 62 / 614 animations livrées
+(thème A : 25/25 en HOMME [100% ✅] et 25/25 en FEMME [100% ✅] = 50/50 · thème B : 1/187 en
+HOMME, `bulgarian-split-squat` livré `c2efd7d`) · branche de session
+`arena/93096144-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13 — 7ᵉ tour) — Thème A HOMME 100 % terminé (25/25) + 24/25 en FEMME
+> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13 — 8ᵉ tour) — Thème A 100 % terminé (50/50 H+F) + ouverture du Thème B (`bulgarian-split-squat` HOMME livré)
 >
-> 1. **LOT A-08 / A-09 HOMME (`warmup-*`) 100 % livré (`204a8b4`) → Thème A HOMME = 25 / 25 :**
->    - ✅ **`warmup-route` HOMME** (`8cf93fa`, RMSE A→M 0,0713, M→B 0,0994) ;
->    - ✅ **`warmup-mobilite` HOMME** (`d698285`, RMSE A→M 0,0586, M→B 0,0553) ;
->    - ✅ **`warmup-approche` HOMME** (`204a8b4`, RMSE A→M 0,0740, M→B 0,0990) + planche animée
->      3 colonnes `themeA/LOT-A08-echauffement.gif` (1420×265) + grille 3×3 `themeA/LOT-A08-PLANCHE-TRAVAIL.jpg`.
-> 2. **LOT A-08F / A-09F FEMME (`warmup-*`) : 2 / 3 livrées + base A de la 3ᵉ :**
->    - ✅ **`warmup-route` FEMME** (`b017eb6`) : marche active dynamique / montée de genou souple
->      sur place (A départ deux pieds au sol → M genou gauche à mi-hauteur ~45° → B genou gauche
->      haut ~90°, RMSE A→M 0,0837, M→B 0,1078 ; réserve : colline lointaine apparue à gauche en B) ;
->    - ✅ **`warmup-mobilite` FEMME** (`b932ebd`) : ouverture thoracique & rétraction scapulaire
->      dynamique (A avant-bras fermés devant buste → M rotation externe 90/90 Cactus → B grande
->      ouverture thoracique en T, RMSE A→M 0,0652, M→B 0,0475) ;
->    - ⏳ **`warmup-approche` FEMME** : position A (barre légère tenue bras tendus devant le haut
->      des cuisses, dallage de pierre irrégulier cohérent avec le lot) prête dans
->      `themeA/femme/_sources/A-08F/warmup-approche-A.png`. Reste à générer M (tirage mi-buste)
->      et B (front-rack aux clavicules) dès l'ouverture du prochain tour (2 images IA).
+> 1. **LOT A-08F / A-09F FEMME (`warmup-*`) 100 % livré (`5467b86`) → Thème A = 25/25 HOMME + 25/25 FEMME = 50 / 50 animations créées :**
+>    - ✅ **`warmup-route` FEMME** (`b017eb6`, RMSE A→M 0,0837, M→B 0,1078) ;
+>    - ✅ **`warmup-mobilite` FEMME** (`b932ebd`, RMSE A→M 0,0652, M→B 0,0475) ;
+>    - ✅ **`warmup-approche` FEMME** (`5467b86`, RMSE A→M 0,1004, M→B 0,1698) + planche animée
+>      3 colonnes `themeA/femme/LOT-A08F-echauffement-femme.gif` (1420×265) + grille 3×3
+>      `themeA/femme/LOT-A08F-PLANCHE-TRAVAIL.jpg`.
+> 2. **Ouverture du Thème B — Musculation (Sous-thème Jambes — quadriceps & squats, Lot B-01) :**
+>    - ✅ **`bulgarian-split-squat` HOMME** (`c2efd7d`, 62 / 614) : squat bulgare au poids du corps
+>      en vue trois-quarts avant (A départ jambe avant tendue, pied arrière sur banc noir →
+>      M demi-descente à ~45° → B squat bulgare profond à 90°, cuisse avant horizontale, RMSE
+>      A→M 0,1278, M→B 0,1347 ; réserve : banc noir légèrement décalé à droite sur M) + planche
+>      `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg` ;
+>    - ⬜ Reste du **Lot B-01 HOMME** à produire dès l'ouverture du prochain tour : **`goblet-squat`
+>      HOMME** (3 images) et **`step-up-sur-banc-hauteur-du-genou` HOMME** (3 images), puis le
+>      **Lot B-01 FEMME**.
 
 > ### 🔄 MISES À JOUR DU 2026-10-07 (2ᵉ passe) — règles 14 et 15
 >

@@ -31,34 +31,29 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 7ᵉ tour)
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 8ᵉ tour)
 
-- **60 / 614 animations livrées.** Thème A : **25 / 25 en homme (100 % ✅), 24 / 25 en femme**
-  (les 22 exercices d'activation/mobilité/gainage sont **100 % terminés en H et F** ✅, et le
-  LOT A-08/09 HOMME est **100 % terminé** ✅).
-- **LOT A-08 / A-09 HOMME (`warmup-*`) : 100 % LIVRÉ (`204a8b4`) :**
-  - ✅ **`warmup-route` HOMME** (`8cf93fa`, RMSE A→M 0,0713, M→B 0,0994) ;
-  - ✅ **`warmup-mobilite` HOMME** (`d698285`, RMSE A→M 0,0586, M→B 0,0553) ;
-  - ✅ **`warmup-approche` HOMME** (`204a8b4`, RMSE A→M 0,0740, M→B 0,0990) + planche animée
-    `themeA/LOT-A08-echauffement.gif` (1420×265) + grille 3×3 `themeA/LOT-A08-PLANCHE-TRAVAIL.jpg`.
-- **LOT A-08F / A-09F FEMME (`warmup-*`) : 2 / 3 livrées + base A de la 3ᵉ prête :**
-  - ✅ **`warmup-route` FEMME** (`b017eb6`, RMSE A→M 0,0837, M→B 0,1078) ;
-  - ✅ **`warmup-mobilite` FEMME** (`b932ebd`, RMSE A→M 0,0652, M→B 0,0475) ;
-  - ⏳ **`warmup-approche` FEMME** : position A (barre légère tenue bras tendus devant le haut
-    des cuisses, sol de pierre irrégulier cohérent) prête dans
-    `themeA/femme/_sources/A-08F/warmup-approche-A.png`. Reste à générer M (tirage mi-buste)
-    et B (front-rack aux clavicules) dès l'ouverture du prochain tour (2 images IA).
+- **62 / 614 animations livrées.**
+  - **Thème A (Échauffement, mobilité & activation) : 25 / 25 en HOMME (100 % ✅) et 25 / 25
+    en FEMME (100 % ✅) = 50 / 50 animations créées !**
+    - LOT A-08/09 HOMME (`warmup-*`) : 100 % livré (`204a8b4`) ;
+    - LOT A-08F/09F FEMME (`warmup-*`) : 100 % livré (`5467b86`).
+  - **Thème B (Musculation — Sous-thème Jambes : quadriceps & squats) : 1 / 187 en HOMME** :
+    - ✅ **`bulgarian-split-squat` HOMME** (`c2efd7d`, RMSE A→M 0,1278, M→B 0,1347, planche
+      `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg`).
 - **À FAIRE, dans l'ordre :**
-  1. **Terminer `warmup-approche` FEMME (2 images IA : M et B)** depuis
-     `themeA/femme/_sources/A-08F/warmup-approche-A.png` → GIF + planche
-     `LOT-A08F-echauffement-femme.gif` (1420×265, réunissant `warmup-route`, `warmup-mobilite`,
-     `warmup-approche` FEMME) + grille 3×3 `LOT-A08F-PLANCHE-TRAVAIL.jpg` → **25 / 25 FEMME
-     sur le Thème A (50 / 50 animations du Thème A terminées) !**
-  2. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
-     vue arrière trois-quarts (si le user donne son accord, ou attaquer directement le **Thème B —
-     Musculation : Lot B-01** `bulgarian-split-squat`, `goblet-squat`, `step-up-sur-banc-hauteur-du-genou`) ;
-  3. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
-  4. **Thème B — musculation** (Lot B-01 H puis F).
+  1. **Terminer le Lot B-01 HOMME (6 images IA)** :
+     - **`goblet-squat` HOMME** (A debout haltère tenu verticalement en coupe contre le sternum →
+       M demi-squat 45° → B squat profond coudes touchant l'intérieur des genoux) ;
+     - **`step-up-sur-banc-hauteur-du-genou` HOMME** (A pied gauche posé à plat sur le banc à
+       hauteur de genou, pied droit au sol → M montée à mi-hauteur en poussant dans le talon
+       gauche → B extension complète debout sur le banc) ;
+     - Assembler `themeB/LOT-B01-quadriceps.gif` (1420×265) + grille 3×3 `themeB/LOT-B01-PLANCHE-TRAVAIL.jpg`.
+  2. **Produire le Lot B-01 FEMME** (`bulgarian-split-squat`, `goblet-squat`,
+     `step-up-sur-banc-hauteur-du-genou` en version femme) ;
+  3. Poursuivre le **Thème B** lot par lot (Lot B-02, B-03, …).
+  *(Note : les 2 circuits LOT 3 HOMME en version composite et les 3 animations du POC restent
+  en réserve jusqu'à accord explicite du user.)*
 
 ## 2. CONSIGNE À NE PAS NÉGOCIER
 
