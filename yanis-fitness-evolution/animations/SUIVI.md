@@ -12,17 +12,17 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **45 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
-| Restant à produire | **569** |
+| Animations créées | **47 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-04 : 2/3** (`abduction-assise`, `pallof-press`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
+| Restant à produire | **567** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-04 HOMME (2/3 en cours)** + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
 | Versions femme produites | **17 / 307** |
-| Thème A (échauffement) | **17 / 25 en homme, 17 / 25 en femme** (rattrapage femme 100 % terminé ✅) · reste **8 entrées jamais produites** (A-04 : 3, A-05 : 2, warmup-* : 3) à faire en **H + F** (base `abduction-assise` H pos A prête), et les **2 circuits HOMME** à passer en version composite |
+| Thème A (échauffement) | **19 / 25 en homme, 17 / 25 en femme** · LOT A-04 HOMME à 2/3 (reste `face-pull-a-l-elastique`), puis LOT A-04 FEMME (3), LOT A-05 (2 H + 2 F), `warmup-*` (3 H + 3 F), et les **2 circuits HOMME** à passer en version composite |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -707,38 +707,70 @@ LOT A-02 FEMME (profil / face).
 | Mesure | RMSE A→M = **0,076** · M→B = **0,090** |
 | Fichiers | `themeA/squat-poids-du-corps-3poses.gif` + `themeA/LOT-A02-echauffement.gif` + `themeA/LOT-A02-squat-homme-PLANCHE-FINALE.jpg` + `_sources/A-02/squat-poids-du-corps-A/M/B.png` |
 
-## LOT A-04 HOMME — en cours (1/9 positions retenues) — 2026-10-07 (Fitness 13)
+## LOT A-04 HOMME — en cours (2 / 3 exercices livrés, 6 / 9 positions) — 2026-10-07
 
-Ouverture du LOT A-04 HOMME (`abduction-assise-machine-ou-elastique`,
-`pallof-press-a-l-elastique`, `face-pull-a-l-elastique`) avec les 3 dernières images du
-budget de ce tour :
-- `abduction-assise-machine-ou-elastique-A.png` (`themeA/_sources/A-04/`) : ✅ **conforme**
-  (assis sur banc noir posé sur tapis noir, pieds largeur de hanches, genoux fléchis à 90°
-  resserrés, bande élastique noire juste au-dessus des genoux, mains sur le banc, moyen
-  fessier doré). Aperçu : `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg`.
-- `abduction-assise-machine-ou-elastique-M.png` : ❌ **2 essais rejetés** — l'essai 1
-  n'avait pas déplacé les genoux (simple bruit de re-génération), l'essai 2 avait tendu
-  les jambes en grand écart avec les pieds déplacés loin sur les côtés au lieu d'écarter
-  uniquement les genoux fléchis à 90° avec pieds fixes largeur de hanches
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeA/abduction-assise-machine-ou-elastique-3poses.gif` | Abduction assise (machine ou élastique) | Vue de face directe : A = genoux et pieds serrés au centre · M = ouverture moyenne des genoux fléchis à 90°, pieds fixes au centre · B = ouverture maximale en papillon/losange, pieds sur tranche externe au centre, mains écartées sur le banc | ✅ **livré (`bd77abf`)** |
+| `themeA/pallof-press-a-l-elastique-3poses.gif` | Pallof press à l'élastique | Vue trois-quarts avant, poteau noir à gauche, élastique à hauteur de poitrine : A = mains jointes contre le sternum, coudes fléchis · M = mains poussées à mi-course devant la poitrine · B = bras verrouillés à 180° loin devant la poitrine, tronc en anti-rotation | ✅ **livré** (réserve mineure : pieds un peu plus écartés en B) |
+| `themeA/face-pull-a-l-elastique-3poses.gif` | Face pull à l'élastique | Tirage vers le visage, coudes hauts (>= épaules) + rotation externe en fin de course | ⬜ **ouvre le prochain tour** (drapeau rouge : 10/10 images IA utilisées) |
+
+**Aperçus dans le dépôt (règle 15) :**
+- `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg` (les 2 premiers exercices A/M/B sur 2 lignes) ;
+- `themeA/LOT-A04-abduction-assise-PLANCHE-FINALE.jpg` ;
+- `themeA/LOT-A04-pallof-press-PLANCHE-FINALE.jpg`.
+
+### Contrôle objectif (LOT A-04 HOMME, 2/3)
+
+| Comparaison | RMSE normalisé |
+| --- | --- |
+| abduction assise A → M | 0,073 |
+| abduction assise M → B | 0,084 |
+| pallof press A → M | 0,050 |
+| pallof press M → B | 0,090 |
+
+### Technique vérifiée en ligne avant génération (règle 14)
+
+- **Abduction assise à l'élastique** : assis sur un banc plat, bande élastique juste
+  au-dessus des genoux, pieds posés à plat au centre (ils ne s'écartent pas), genoux
+  fléchis à 90° poussés vers l'extérieur contre la bande, 1 s de contraction du moyen
+  fessier en fin de course
   ([fitwill](https://fitwill.app/exercise/3006/resistance-band-seated-hip-abduction/),
   [liftmanual](https://liftmanual.com/resistance-band-seated-hip-abduction/),
   [fitadium](https://www.fitadium.com/conseils/abducteurs-assis-machine/)).
-  Les deux images non conformes ont été écartées et comptées honnêtement dans le budget.
+  *Note d'angle de vue* : sur une vue trois-quarts avec le banc en travers, le générateur
+  bloquait les genoux ou tendait les jambes en grand écart ; le passage en **vue de face
+  symétrique** (assis en bout de banc face à la caméra) a résolu le blocage.
+- **Pallof press à l'élastique** : gainage **anti-rotation** (transverse + obliques) ;
+  debout perpendiculaire à l'ancrage fixé à hauteur de poitrine, genoux légèrement
+  fléchis, départ mains jointes contre le sternum, extension des bras droit devant la
+  poitrine **sans laisser le buste pivoter** vers l'ancrage, maintien 1-2 s bras tendus
+  ([jemeremetsausport](https://jemeremetsausport.com/pallof-press/),
+  [louismove](https://louismove.com/pallof-press/),
+  [creatine-academie](https://www.creatine-academie.com/comment-realiser-pallof-press/),
+  [muscletoncorps](https://muscletoncorps.fr/pallof-press/)).
+- **Face pull à l'élastique** *(vérifié pour l'ouverture du prochain tour)* : élastique
+  fixé à hauteur du visage/yeux, tirage vers le visage en écartant les mains de part et
+  d'autre des oreilles, **coudes maintenus hauts (à hauteur d'épaule ou légèrement
+  au-dessus)** + **rotation externe** de l'épaule en fin de mouvement et rétraction des
+  omoplates ([cerclesdelaforme](https://www.cerclesdelaforme.com/blog/coaching-sportif/muscler-epaules-face-pull/),
+  [happy-fitness](https://happy-fitness.fr/face-pull-lexercice-cle-pour-renforcer-larriere-des-epaules/),
+  [louismove](https://louismove.com/facepull/)).
 
-### Budget d'images IA du tour Fitness 13 — 10 / 10 (drapeau rouge)
+### Budget d'images IA du 2ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
 
 | # | Appel | Résultat |
 | --- | --- | --- |
-| 1 | `circuit-abdos` FEMME P3-B (9ᵉ position) | ✅ conforme (RMSE 0,051) → **circuit-abdominaux FEMME livré (`5e5a2e3`)** |
-| 2 | `fire-hydrant` FEMME M3 (arrière 3/4, genou à 45°) | ✅ conforme (RMSE 0,088) |
-| 3 | `fire-hydrant` FEMME B3 (arrière 3/4, cuisse horizontale) | ✅ conforme (RMSE 0,090) → **fire-hydrant FEMME livré (`e5b670a`)** |
-| 4 | `squat` HOMME B (depuis frame GIF dithérée) | ❌ rejeté (pose debout dithérée rejouée) |
-| 5 | `squat` HOMME A (trois-quarts sur tapis noir) | ✅ conforme |
-| 6 | `squat` HOMME M (demi-squat ~45°) | ✅ conforme (RMSE 0,076) |
-| 7 | `squat` HOMME B (squat bas) | ✅ conforme (RMSE 0,090) → **squat HOMME livré (`9ed4d87`)** |
-| 8 | `abduction-assise` HOMME A (assis sur banc + élastique) | ✅ conforme → **base conservée dans `_sources/A-04/`** |
-| 9 | `abduction-assise` HOMME M (essai 1) | ❌ rejeté (genoux immobiles) |
-| 10 | `abduction-assise` HOMME M (essai 2) | ❌ rejeté (jambes tendues en grand écart au lieu de genoux fléchis) |
+| 1 | `abduction-assise` HOMME M (sur base trois-quarts) | ❌ rejeté (genoux immobiles, RMSE 0,038 bruit) |
+| 2 | `abduction-assise` HOMME A (essai genoux collés sur base trois-quarts) | ❌ rejeté (genoux immobiles, RMSE 0,027) → changement d'angle vers vue de face directe |
+| 3 | `abduction-assise` HOMME A (nouvelle base **vue de face directe**) | ✅ conforme |
+| 4 | `abduction-assise` HOMME M (vue de face, ouverture moyenne) | ✅ conforme (RMSE A→M = 0,073) |
+| 5 | `abduction-assise` HOMME B (essai 1, mains sur le banc bloquant les genoux) | ❌ rejeté (genoux bloqués par les mains) |
+| 6 | `abduction-assise` HOMME B (essai 2, mains aux hanches) | ❌ rejeté (jambes tendues en grand écart) |
+| 7 | `abduction-assise` HOMME B (essai 3, pieds verrouillés au centre + mains écartées sur le banc) | ✅ conforme (RMSE M→B = 0,084) → **livré (`bd77abf`)** |
+| 8 | `pallof-press` HOMME A (mains au sternum, élastique à hauteur de poitrine) | ✅ conforme |
+| 9 | `pallof-press` HOMME M (mains à mi-course devant la poitrine) | ✅ conforme (RMSE A→M = 0,050) |
+| 10 | `pallof-press` HOMME B (bras verrouillés à 180° loin devant) | ✅ conforme (RMSE M→B = 0,090, réserve : pieds plus écartés) → **livré** |
 
 ### Budget d'images du tour de corrections — 10 / 10, compté
 

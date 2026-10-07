@@ -31,10 +31,10 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07 (après Fitness 13)
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 2ᵉ tour)
 
-- **45 / 614 animations livrées.** Thème A : **17 / 25 en homme, 17 / 25 en femme**
-  (rattrapage de la fille 100 % terminé ✅).
+- **47 / 614 animations livrées.** Thème A : **19 / 25 en homme, 17 / 25 en femme**
+  (rattrapage de la fille 100 % terminé sur les lots 1, 2, 3 et A-01 à A-03 ✅).
 - **`circuit-gainage` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `f07c04d`).
 - **`circuit-abdominaux` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `5e5a2e3`).
   Fichiers : `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames) et
@@ -47,17 +47,22 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
     (`e5b670a`) — RMSE A→M 0,088, M→B 0,090 ;
   - ✅ **squat HOMME, positions A, M et B** corrigées en **vue trois-quarts sur tapis noir**
     (`9ed4d87`) — RMSE A→M 0,076, M→B 0,090.
+- **LOT A-04 HOMME : 2 / 3 exercices livrés :**
+  - ✅ **`abduction-assise-machine-ou-elastique` HOMME** (`bd77abf`) en **vue de face directe**
+    (A genoux serrés → M ouverture moyenne → B ouverture maximale en papillon, pieds fixes
+    au centre, RMSE A→M 0,073, M→B 0,084) ;
+  - ✅ **`pallof-press-a-l-elastique` HOMME** en **vue trois-quarts avant** (poteau noir à
+    gauche, élastique à hauteur de poitrine, A mains au sternum → M mi-course → B bras
+    verrouillés à 180°, RMSE A→M 0,050, M→B 0,090 ; réserve : pieds plus écartés en B) ;
+  - ⏳ **`face-pull-a-l-elastique` HOMME** : ouvre le prochain tour (3 images IA) → assemblage
+    de la planche `themeA/LOT-A04-echauffement.gif` (1420×265).
 - **À FAIRE, dans l'ordre :**
-  1. **Terminer le LOT A-04 HOMME** :
-     - `abduction-assise-machine-ou-elastique` : position A prête et conforme dans
-       `themeA/_sources/A-04/abduction-assise-machine-ou-elastique-A.png` → chaîner **M** et
-       **B** (attention : garder les pieds fixes à plat largeur de hanches et les genoux
-       fléchis à 90°, seuls les genoux s'écartent vers l'extérieur contre l'élastique — ne
-       pas laisser le générateur tendre les jambes en grand écart) ;
-     - `pallof-press-a-l-elastique` (A → M → B) ;
-     - `face-pull-a-l-elastique` (A → M → B) ;
-     - assemblage `themeA/LOT-A04-echauffement.gif` (1420×265) ;
-  2. **LOT A-04 FEMME** (les 3 mêmes exercices en FEMME) ;
+  1. **Terminer le LOT A-04 HOMME (3/3)** : produire `face-pull-a-l-elastique` HOMME (A → M → B :
+     élastique fixé à hauteur du visage sur le poteau noir à gauche, tirage vers le visage
+     coudes hauts >= épaules + rotation externe en fin de course) → assembler la planche
+     `themeA/LOT-A04-echauffement.gif` (1420×265) avec les 2 exercices déjà dans `_sources/A-04/` ;
+  2. **LOT A-04 FEMME** (les 3 mêmes exercices en FEMME : abduction assise en vue de face
+     directe, pallof press, face pull) ;
   3. **LOT A-05** (`respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`), puis les
      3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche` — **en HOMME puis
      en FEMME** ;

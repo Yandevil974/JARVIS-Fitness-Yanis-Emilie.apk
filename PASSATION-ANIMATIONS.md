@@ -2,26 +2,30 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 (Fitness 13) · derniers livrables : `5e5a2e3`
-(`circuit-abdominaux` FEMME 9/9), `e5b670a` (fire hydrant FEMME corrigé en arrière 3/4),
-`9ed4d87` (squat HOMME corrigé en 3/4 + tapis noir) · en cours : LOT A-04 HOMME
-(`abduction-assise` pos A prête) · branche de session
+**État consolidé au 7 octobre 2026 (Fitness 13 — 2ᵉ tour) · 47 / 614 animations livrées
+(thème A : 19/25 en HOMME, 17/25 en FEMME) · LOT A-04 HOMME à 2/3 (`abduction-assise`
+`bd77abf` + `pallof-press` livrés, reste `face-pull-a-l-elastique`) · branche de session
 `arena/93096144-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13) — rattrapage FEMME 100 % terminé + corrections soldées
+> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13) — rattrapage FEMME 100 % terminé + corrections soldées + LOT A-04 HOMME 2/3
 >
 > 1. **`circuit-abdominaux` FEMME LIVRÉ (`5e5a2e3`)** : 9ᵉ position (planche haute tenue)
 >    produite, GIF composite `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames)
 >    et planche `themeA/femme/LOT3F-circuit-abdominaux-femme.gif` (1420×265) assemblés.
->    **Homme et femme sont désormais à égalité : 17 / 25 chacun sur le thème A (45 / 614 au total).**
 > 2. **Corrections autorisées par le user (feu vert) soldées :**
 >    - ✅ **squat FEMME position M** (`277b87f`, RMSE A→M 0,288) ;
 >    - ✅ **abduction hanche FEMME position B** (`e67a36f`, RMSE M→B 0,255) ;
 >    - ✅ **fire hydrant FEMME A/M/B** en **vue arrière trois-quarts** (`e5b670a`, RMSE A→M 0,088, M→B 0,090) ;
 >    - ✅ **squat HOMME A/M/B** refait en trois-quarts sur tapis noir (`9ed4d87`, RMSE A→M 0,076, M→B 0,090).
-> 3. **LOT A-04 HOMME ouvert** : position A de `abduction-assise-machine-ou-elastique`
->    conforme et conservée dans `themeA/_sources/A-04/abduction-assise-machine-ou-elastique-A.png`
->    (les 2 essais de M ont été écartés : essai 1 immobile, essai 2 jambes tendues en grand écart).
+> 3. **LOT A-04 HOMME à 2 / 3 exercices livrés :**
+>    - ✅ **`abduction-assise-machine-ou-elastique` HOMME** (`bd77abf`) : tourné en **vue de
+>      face directe** (sur une vue 3/4 avec le banc en travers, le générateur bloquait les
+>      genoux ou tendait les jambes en grand écart) — RMSE A→M 0,073, M→B 0,084 ;
+>    - ✅ **`pallof-press-a-l-elastique` HOMME** : vue trois-quarts avant, poteau d'ancrage
+>      noir à gauche, élastique à hauteur de poitrine, A mains au sternum → M mi-course →
+>      B bras verrouillés à 180° (RMSE A→M 0,050, M→B 0,090 ; réserve : pieds plus écartés en B) ;
+>    - ⏳ **`face-pull-a-l-elastique` HOMME** : ouvre le prochain tour (drapeau rouge 10/10),
+>      puis assemblage de `themeA/LOT-A04-echauffement.gif` (1420×265).
 
 > ### 🔄 MISES À JOUR DU 2026-10-07 (2ᵉ passe) — règles 14 et 15
 >
@@ -243,8 +247,8 @@ dans le sandbox — les comptages sont refaits en Python depuis `inventaire.json
 
 | Élément | Valeur |
 | --- | --- |
-| Animations créées | **45 / 614** livrées (`circuit-gainage` FEMME + `circuit-abdominaux` FEMME complets 9/9) |
-| **Restant à produire** | **569** |
+| Animations créées | **47 / 614** livrées (+2 du LOT A-04 HOMME : `abduction-assise`, `pallof-press`) |
+| **Restant à produire** | **567** |
 | Versions femme produites | **17 / 307** |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Animations corrigées (option A + feu vert) | 3 / 5 (option A) + 4 (squat F, abduction F, fire hydrant F, squat H) |
@@ -252,9 +256,9 @@ dans le sandbox — les comptages sont refaits en Python depuis `inventaire.json
 | `bcdbe16aeafaafec.gif` | 8 / 8 ✅ soldé (H + F) |
 | `8de6e89e5395700c.gif` | 6 / 7 |
 | Doublons sur les fichiers du chantier | **0** (toutes empreintes md5 distinctes) |
-| Lots livrés | POC, L1, L2, L3, L4, L5, A-01, A-02, A-03, A-01F, A-02F, A-03F, **R1F**, **R2F**, **LOT 3F (2 composites)** |
+| Lots livrés | POC, L1, L2, L3, L4, L5, A-01, A-02, A-03, **A-04 H (2/3)**, A-01F, A-02F, A-03F, **R1F**, **R2F**, **LOT 3F (2 composites)** |
 
-### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : **17 / 25 en HOMME, 17 / 25 en FEMME**
+### Thème A — ÉCHAUFFEMENT, MOBILITÉ & ACTIVATION : **19 / 25 en HOMME, 17 / 25 en FEMME**
 
 **Convention de nommage :** `themeA/<exercice>-3poses.gif` = homme,
 `themeA/femme/<exercice>-3poses.gif` = femme.
