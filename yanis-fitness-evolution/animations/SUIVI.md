@@ -12,7 +12,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | 39 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 2** (dead bug, gainage latéral)) |
+| Animations créées | 41 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** (dead bug, bird dog, gainage latéral) + **R2 FEMME : 1** (mountain climbers)) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M — voir § LOT A-02 FEMME ; + A-03F abduction B trop proche de M, voir § LOT A-03 FEMME) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
@@ -20,9 +20,9 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
 | Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** |
-| Versions femme produites | **11 / 307** |
-| Thème A (échauffement) | 17 / 25 entrées en **homme**, **11 / 25 en femme** · reste 6 entrées jamais produites (×2) + 2 circuits composites (×2) + **6 versions femme à rattraper** (bird dog = 1 image manquante, mountain climbers, dead bug rotation, gainage latéral dyn., 2 circuits) |
-| Doublons sur les fichiers du chantier | 0 (52 GIF + 23 PNG, toutes empreintes md5 distinctes) |
+| Versions femme produites | **13 / 307** |
+| Thème A (échauffement) | 17 / 25 entrées en **homme**, **13 / 25 en femme** · reste 6 entrées jamais produites (×2) + 2 circuits composites (×2) + **4 versions femme à rattraper** (dead bug rotation : 1 image ; gainage latéral dyn. : 2 images ; les 2 circuits) |
+| Doublons sur les fichiers du chantier | 0 (54 GIF + 27 PNG, toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -268,19 +268,18 @@ même rythme. Les 3 exercices du **LOT 1** n'existaient qu'en version homme
 | --- | --- | --- | --- |
 | `femme/dead-bug-3poses.gif` | Dead bug | A = bras verticaux, genoux à 90° · M = bras droit abaissé à 45°, jambe gauche tendue · B = extension complète bras/jambe opposés | ✅ conforme |
 | `femme/gainage-lateral-3poses.gif` | Gainage latéral | A = hanches basses (installation), flanc au sol · M = hanches à mi-hauteur, pente douce · B = ligne droite complète, main libre sur la hanche | ✅ conforme |
-| `femme/bird-dog-3poses.gif` | Bird dog | A = quatre pattes, dos plat · M = bras tendu vers l'avant à mi-hauteur · **B = MANQUANTE** | ⚠️ **incomplet — 1 image** |
+| `femme/bird-dog-3poses.gif` | Bird dog | A = quatre pattes, dos plat · M = bras tendu vers l'avant à mi-hauteur · B = bras à l'horizontale + jambe opposée tendue | ✅ conforme (B produite le 2026-10-07) |
 
-Planche partielle : `themeA/femme/LOT-R1F-rattrapage-lot1-femme.gif` (948×265, 2 colonnes :
-dead bug + gainage latéral). La planche à 3 colonnes (1420×265) sera produite au tour
-suivant, avec la position B du bird dog.
+Planche : `themeA/femme/LOT-R1F-rattrapage-lot1-femme.gif` — **complète le 2026-10-07** (1420×265,
+3 colonnes : dead bug + bird dog + gainage latéral).
 
 ### 🔴 Drapeau rouge — 10 / 10 images IA
 
 Ce tour a payé **10 images** : dead bug A + M + B (3), bird dog A + M (2),
 gainage latéral (3 positions utiles + **2 images rejouées**). Le **bird dog B** est resté
 hors budget : l'exercice est livré **incomplet et signalé comme tel**, jamais masqué.
-Les positions saines sont conservées dans `themeA/femme/_sources/LOT1F/` (7 PNG
-1376×768) pour que le prochain tour ne paie **qu'1 image**.
+Les 9 positions sont conservées dans `themeA/femme/_sources/LOT1F/` (PNG 1376×768).
+✅ **Lot 1 FEMME désormais complet (3/3).**
 
 ### Deux images rejouées — détail honnête
 
@@ -339,6 +338,79 @@ surveiller : la brillance du corps varie un peu d'une frame à l'autre (le code 
 argenté **mat**).
 
 
+
+## LOT R2 FEMME — RATTRAPAGE DU LOT 2 (partiel) — 2026-10-07
+
+Versions **femme** des exercices du **LOT 2** (mountain climbers, dead bug avec rotation,
+gainage latéral dynamique), chaînées depuis `REF-personnage-feminin.jpg` (identité) + une
+frame du LOT A-03/R1 FEMME (décor, cadrage, tapis noir).
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `femme/mountain-climbers-3poses.gif` | Mountain climbers | A = planche haute stricte · M = genou droit ramené à mi-course, pied décollé · B = genou droit aux pectoraux | ✅ conforme |
+| `femme/dead-bug-rotation-3poses.gif` | Dead bug avec rotation | A = mort, genoux 90°, bras verticaux · M = bras droit vers l'arrière + jambe gauche tendue · **B manquante** | ⚠️ **incomplet — 1 image** |
+| `femme/gainage-lateral-dyn-3poses.gif` | Gainage latéral dynamique | **A seule** (planche latérale bras levé, hanches hautes) · M et B manquantes | ⚠️ **incomplet — 2 images** |
+
+Planche partielle : `themeA/femme/LOT-R2F-partiel-mountain-climbers.gif` (476×265).
+La planche complète à 3 colonnes (1420×265) sera produite au tour suivant.
+Les GIF incomplets ne sont **pas** publiés dans le dossier livrable : seules les
+positions saines sont conservées dans `themeA/femme/_sources/LOT2F/`.
+
+### 🚩 Drapeau rouge — 10 / 10 images IA
+
+Budget du tour : **bird dog B** (rattrapage R1, 1 image) + mountain climbers A/M/B (3) +
+dead bug rotation A/M (2) + gainage latéral dyn. A (1) + **3 images rejouées**.
+Conséquence assumée et signalée : **3 positions manquent** (dead bug rotation B,
+gainage latéral dyn. M et B) pour la fin du lot 2.
+
+### Images rejouées (comptées, pas cachées)
+
+1. **dead bug rotation M** : 1ʳᵉ image revenue en **portrait** (832×1275) et avec le
+   **corps pivoté en bloc** (le buste se redresse au lieu de rester au sol) → refaite en
+   paysage avec consigne explicite « corps allongé à l'horizontale, seule la torsion du
+   tronc change ». 2ᵉ essai conforme.
+2. **dead bug rotation M (génération)** : 1 erreur technique du générateur
+   (`Response contains no images`) → relancée, comptée.
+3. **gainage latéral dyn. M** : l'image reçue montrait un **exercice allongé sur le dos**
+   au lieu de la planche latérale hanches basses → supprimée, **pas** intégrée.
+
+### Technique vérifiée en ligne avant génération
+
+- **Mountain climbers** : position de planche stricte, mains sous les épaules, **hanches
+  basses** (l'erreur n°1 est de laisser monter le bassin), genou ramené **franchement**
+  vers la poitrine (pas de demi-flexion), dos plat, bassin stable
+  ([gym-studio](https://www.gym-studio.com/exercices/mountain-climbers),
+  [jemeremetsausport](https://jemeremetsausport.com/mountain-climber-2/),
+  [homefittraining](https://homefittraining.fr/entrainement/exercices/les-mountain-climbers/)).
+- **Dead bug avec rotation** : même base que le dead bug — lombaires plaquées au tapis,
+  bras et jambe opposés — la **rotation du tronc** ajoute le travail des obliques sans
+  décoller le dos
+  ([callisthenie-corner](https://www.callisthenie-corner.fr/dead-bug/),
+  [lateliergym](https://lateliergym.fr/dead-bug-abdos-profonds-guide/)).
+- **Gainage latéral dynamique** : planche latérale (main sous l'épaule, corps aligné)
+  avec **descente puis remontée contrôlées du bassin** ; l'erreur à ne pas montrer est
+  un bassin durablement affaissé
+  ([magicfit](https://www.magicfit.fr/la-planche-laterale-musculation/),
+  [jogetjim](https://www.jogetjim.fr/gainage-lateral/)).
+
+### Contrôle objectif
+
+| Comparaison | RMSE normalisé |
+| --- | --- |
+| mountain climbers A → M | 0,144 |
+| mountain climbers M → B | 0,043 |
+| dead bug rotation A → M | 0,078 |
+
+(seuil de lisibilité : > 0,030.) Anti-doublon : **0 doublon** sur les 54 GIF du chantier.
+
+### Réserve de style (à surveiller)
+
+Le générateur rend parfois le corps **brillant** (proche du chromé) et non l'argenté
+**mat** du code visuel — visible sur les frames du mountain climbers. Aucun autre écart
+d'identité relevé : brassière et short noirs, casquette blanche, tresse, baskets
+blanches, décor terrasse bord de mer, tapis noir.
+
+## Audit de conformité des animations existantes (2026-10-06)
 
 Les 16 animations des lots POC → LOT 4 ont été recontrôlées image par image. Aucun
 fichier n'est dupliqué (24 empreintes md5 toutes distinctes) et les 3 positions

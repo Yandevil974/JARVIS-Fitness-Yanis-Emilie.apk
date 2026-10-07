@@ -87,16 +87,16 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Bird dog | `bird-dog` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ⚠️ **LOT R1 FEMME : incomplet (position B manquante)** |
+| 1 | Bird dog | `bird-dog` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ✅ **LOT R1 FEMME** |
 | 2 | Gainage latéral | `gainage-lateral` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ✅ **LOT R1 FEMME** |
-| 3 | Mountain climbers | `mountain-climbers` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 |
+| 3 | Mountain climbers | `mountain-climbers` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 H · ✅ **LOT R2 FEMME** |
 
 ### Lot A-07
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Dead bug avec rotation | `dead-bug-avec-rotation` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 |
-| 2 | Gainage latéral dynamique | `gainage-lateral-dynamique` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 |
+| 1 | Dead bug avec rotation | `dead-bug-avec-rotation` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 H · ⚠️ **LOT R2 FEMME : incomplet (position B)** |
+| 2 | Gainage latéral dynamique | `gainage-lateral-dynamique` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 H · ⚠️ **LOT R2 FEMME : incomplet (positions M et B)** |
 | 3 | Circuit gainage (planche + latéral + bird dog) | `circuit-gainage-planche-lateral-bird-dog` | abdominaux | poids du corps · H + F (2 anim.) | ✅ LOT 3 |
 
 ### Lot A-08
