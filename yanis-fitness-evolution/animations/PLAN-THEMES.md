@@ -97,13 +97,13 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 | --- | --- | --- | --- | --- | --- |
 | 1 | Dead bug avec rotation | `dead-bug-avec-rotation` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 H · ✅ **LOT R2 FEMME** |
 | 2 | Gainage latéral dynamique | `gainage-lateral-dynamique` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 H · ✅ **LOT R2 FEMME** |
-| 3 | Circuit gainage (planche + latéral + bird dog) | `circuit-gainage-planche-lateral-bird-dog` | abdominaux | poids du corps · H + F (2 anim.) | ✅ LOT 3 |
+| 3 | Circuit gainage (planche + latéral + bird dog) | `circuit-gainage-planche-lateral-bird-dog` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · **F en cours : composite, 8/9 positions** |
 
 ### Lot A-08
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Circuit abdominaux (crunch + relevés + gainage) | `circuit-abdominaux-crunch-releves-gainage` | abdominaux | poids du corps · H + F (2 anim.) | ✅ LOT 3 |
+| 1 | Circuit abdominaux (crunch + relevés + gainage) | `circuit-abdominaux-crunch-releves-gainage` | abdominaux | poids du corps · H + F (2 anim.) | ⚠️ LOT 3 H = version simple à refaire en composite · **F à produire (après le circuit gainage)** |
 | 2 | warmup-approche | `warmup-approche` | échauffement | étape chrono · H + F (2 anim.) | à recréer |
 | 3 | warmup-mobilite | `warmup-mobilite` | échauffement | étape chrono · H + F (2 anim.) | à recréer |
 

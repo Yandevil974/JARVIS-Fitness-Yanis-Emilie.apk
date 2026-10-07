@@ -21,7 +21,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
 | Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** |
 | Versions femme produites | **15 / 307** |
-| Thème A (échauffement) | 17 / 25 entrées en **homme**, **15 / 25 en femme** · reste **8 entrées jamais produites** (A-04 : 3, A-05 : 2, A-08 : 2, A-09 : 1) à faire en **H + F**, et **les 2 circuits** à refaire en version composite (H) et à créer (F) |
+| Thème A (échauffement) | 17 / 25 entrées en **homme**, **15 / 25 en femme** · reste **8 entrées jamais produites** (A-04 : 3, A-05 : 2, A-08 : 2, A-09 : 1) à faire en **H + F**, et **les 2 circuits** à refaire en version composite (H) et à créer (F) — **LOT 3 F : circuit gainage 8/9 positions (drapeau rouge 10 images), circuit abdominaux à venir** |
 | Doublons sur les fichiers du chantier | 0 (57 GIF + 30 PNG, toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -421,6 +421,105 @@ Le générateur rend parfois le corps **brillant** (proche du chromé) et non l'
 **mat** du code visuel — visible sur les frames du mountain climbers. Aucun autre écart
 d'identité relevé : brassière et short noirs, casquette blanche, tresse, baskets
 blanches, décor terrasse bord de mer, tapis noir.
+
+## LOT 3 FEMME — CIRCUIT GAINAGE (en cours) — 2026-10-07
+
+**Objectif du lot (décision user § 7.2 de la passation) :** les circuits ne sont plus des
+animations à une seule position mais des **animations COMPOSITES en 3 phases** : les trois
+mouvements du circuit sont déroulés à la suite dans une seule animation, chaînés image par
+image (≈ 9 images par circuit → **1 circuit par tour**).
+
+**Découpage retenu pour `circuit-gainage` (planche → gainage latéral → bird dog) :**
+9 positions chaînées, chacune produite depuis la précédente, en FEMME.
+
+| # | Phase | Position | Fichier source | Statut |
+| --- | --- | --- | --- | --- |
+| 1 | Planche | A — installation à genoux, avant-bras au sol | `_sources/LOT3F/circuit-gainage-P1-A.png` | ✅ |
+| 2 | Planche | M — jambes qui s'allongent, hanches à mi-course | `_sources/LOT3F/circuit-gainage-P1-M.png` | ✅ |
+| 3 | Planche | B — planche complète sur avant-bras, ligne droite | `_sources/LOT3F/circuit-gainage-P1-B.png` | ✅ |
+| 4 | Gainage latéral | A — sur le flanc gauche, avant-bras au sol, hanches basse | `_sources/LOT3F/circuit-gainage-P2-A.png` | ✅ |
+| 5 | Gainage latéral | M — bassin à mi-hauteur | `_sources/LOT3F/circuit-gainage-P2-M.png` | ✅ |
+| 6 | Gainage latéral | B — hanches hautes, ligne droite chevilles-épaules | `_sources/LOT3F/circuit-gainage-P2-B.png` | ✅ |
+| 7 | Bird dog | A — à quatre pattes, dos plat | `_sources/LOT3F/circuit-gainage-P3-A.png` | ✅ |
+| 8 | Bird dog | M — bras droit qui s'allonge vers l'avant | `_sources/LOT3F/circuit-gainage-P3-M.png` | ✅ |
+| 9 | Bird dog | B — bras droit + jambe gauche tendus à l'horizontale | — | ⬜ **drapeau rouge** |
+
+**Planche de travail (8/9) :** `themeA/femme/_sources/LOT3F/PLANCHE-TRAVAIL-LOT3F-circuit-gainage.png`
+— affichée au user pour son œil (règle 7). La 9ᵉ position étant absente, cette planche est
+un **aperçu de travail**, pas la planche de livraison.
+
+### Budget d'images IA du tour — 10 / 10, aucune image perdue en silence
+
+| Image | Résultat |
+| --- | --- |
+| P1-A (départ, depuis la référence d'identité + une frame du LOT R2F) | ✅ conforme |
+| P1-M (essai 1) | ❌ revenue en **planche sur les mains (bras tendus)** alors que la position A est sur les avant-bras → écartée, non intégrée |
+| P1-M (essai 2) | ✅ conforme (même appui des avant-bras que A) |
+| P1-B | ✅ conforme (planche complète sur avant-bras) |
+| P2-A | ✅ conforme (flanc gauche, hanches basses) |
+| P2-M (essai 1) | ❌ erreur technique du générateur : `Response contains no images` → relancée |
+| P2-M (essai 2) | ✅ conforme |
+| P2-B | ✅ conforme (hanches hautes) |
+| P3-A | ✅ conforme (quatre pattes) |
+| P3-M | ✅ conforme (bras qui part vers l'avant) |
+| P3-B | 🚫 **refusée par la limite technique** : `Image generation limit of 10 reached for this turn` |
+
+**11 appels au total** (8 images retenues + 1 image écartée + 1 erreur générateur + 1 refus
+par la limite). Le drapeau rouge est technique : il ne dit rien de la qualité des images.
+
+### Contrôle objectif des positions retenues (avant assemblage)
+
+| Comparaison | RMSE normalisé | Lecture |
+| --- | --- | --- |
+| P1-A → P1-M | 0,158 | mouvement très lisible |
+| P2-A → P2-M | 0,053 | lisible |
+| P2-M → P2-B | 0,035 | lisible (au-dessus du seuil 0,030) |
+| P3-A → P3-M | 0,057 | lisible |
+
+Toutes les positions sont en **paysage 1376×768** (aucun portrait). Anti-doublon : les 8
+PNG ont des empreintes md5 **toutes distinctes**.
+
+### Réserves honnêtes sur ces images
+
+- **P2-M et P2-B** présentent un **artefact de dallage dans le ciel** (motif de blocs
+  visible au-dessus de la mer) — l'anti-doublon/bavures déjà connues du chantier.
+- La **montée du bassin** entre P2-M et P2-B reste **discrète** (RMSE 0,035) : lisible
+  mais moins franche que sur la version HOMME validée du gainage latéral dynamique.
+- Le rendu du corps est bien **argenté mat** sur cette série (pas d'écart de brillance
+  relevé), visage noir sans traits, casquette blanche, tresse, brassière et short noirs,
+  baskets blanches, terrasse bord de mer, tapis noir : **style conforme**.
+
+### Technique vérifiée en ligne avant génération
+
+- **Planche (avant-bras)** : avant-bras au sol, **coudes pile sous les épaules**, corps en
+  **ligne droite ininterrompue des talons à la tête**, bassin neutre, abdominaux
+  contractés + fessiers serrés + quadriceps engagés, nuque dans l'axe, respiration
+  continue ; erreurs à ne pas montrer : bassin affaissé (cambrure), fesses en V inversé,
+  tête qui tombe ([callisthenie-corner](https://www.callisthenie-corner.fr/planche/),
+  [litobox](https://www.litobox.com/exercice-planche),
+  [barretractionpro](https://barretractionpro.com/gainage-planche/)).
+- **Gainage latéral** : appui sur l'avant-bras, **coude sous l'épaule**, montée du bassin
+  jusqu'à la ligne droite cheville-hanche-épaule, **main libre sur la hanche**, cage
+  thoracique tournée vers l'avant, hanches qui ne s'affaissent pas ; erreurs :
+  bassin affaissé, rotation involontaire du tronc, coude décalé
+  ([jogetjim](https://www.jogetjim.fr/gainage-lateral/),
+  [magicfit](https://www.magicfit.fr/le-gainage-lateral-musculation/),
+  [h2olesangles](https://www.h2olesangles.fr/gainage-lateral/)).
+- **Bird dog** : à quatre pattes, mains sous les épaules, genoux sous les hanches, dos
+  plat, extension **bras droit + jambe gauche opposés**, bassin qui ne bascule pas
+  (mêmes sources que le LOT R1 FEMME : [jemeremetsausport](https://jemeremetsausport.com/bird-dog/)).
+
+### Suite immédiate
+
+1. produire la **9ᵉ position** (P3-B, extension complète du bird dog) au prochain tour ;
+2. assembler `themeA/femme/circuit-gainage-3poses.gif` (460×257, `-delay 130/110`) —
+   ⚠️ si la phase 3 est ajoutée à part, utiliser la même chaîne d'images et **jamais
+   `-layers optimize` sur la planche** ;
+3. afficher la planche définitive → validation user ;
+4. **puis seulement** produire `circuit-abdominaux` en FEMME (crunch → relevés de jambes
+   → gainage, 9 images, 1 circuit par tour) ;
+5. le remplacement des fichiers **HOMME** (aujourd'hui en version simple) ne se fera
+   **qu'après accord explicite du user** (règle 2).
 
 ## Audit de conformité des animations existantes (2026-10-06)
 
