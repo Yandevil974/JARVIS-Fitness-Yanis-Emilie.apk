@@ -81,14 +81,14 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 | --- | --- | --- | --- | --- | --- |
 | 1 | Respiration diaphragmatique | `respiration-diaphragmatique` | transverse | poids du corps · H + F (2 anim.) | à recréer |
 | 2 | Hip thrust unilatéral (1 jambe) | `hip-thrust-unilateral-1-jambe` | fessiers | poids du corps · H + F (2 anim.) | à recréer |
-| 3 | Dead bug | `dead-bug` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 |
+| 3 | Dead bug | `dead-bug` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ✅ **LOT R1 FEMME** |
 
 ### Lot A-06
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Bird dog | `bird-dog` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 |
-| 2 | Gainage latéral | `gainage-lateral` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 |
+| 1 | Bird dog | `bird-dog` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ⚠️ **LOT R1 FEMME : incomplet (position B manquante)** |
+| 2 | Gainage latéral | `gainage-lateral` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ✅ **LOT R1 FEMME** |
 | 3 | Mountain climbers | `mountain-climbers` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 2 |
 
 ### Lot A-07

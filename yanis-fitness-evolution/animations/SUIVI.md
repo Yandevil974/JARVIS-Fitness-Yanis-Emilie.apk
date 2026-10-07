@@ -12,7 +12,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | 37 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-01 FEMME : 3** + **A-02 FEMME : 3** + **A-03 FEMME : 3**) |
+| Animations créées | 39 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 2** (dead bug, gainage latéral)) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M — voir § LOT A-02 FEMME ; + A-03F abduction B trop proche de M, voir § LOT A-03 FEMME) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
@@ -20,9 +20,9 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
 | Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** |
-| Versions femme produites | **9 / 307** |
-| Thème A (échauffement) | 17 / 25 entrées en **homme**, **9 / 25 en femme** · reste 8 entrées jamais produites (×2) + 2 circuits composites (×2) + 8 versions femme à rattraper (lots 1/2/3) |
-| Doublons sur les fichiers du chantier | 0 (64 empreintes md5 distinctes pour 64 fichiers GIF/PNG, dont **49 GIF**) |
+| Versions femme produites | **11 / 307** |
+| Thème A (échauffement) | 17 / 25 entrées en **homme**, **11 / 25 en femme** · reste 6 entrées jamais produites (×2) + 2 circuits composites (×2) + **6 versions femme à rattraper** (bird dog = 1 image manquante, mountain climbers, dead bug rotation, gainage latéral dyn., 2 circuits) |
+| Doublons sur les fichiers du chantier | 0 (52 GIF + 23 PNG, toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -257,7 +257,88 @@ d'abduction hanche = **8 images utiles + 1 image ratée rejouée = 10 images**.
 La position B de l'abduction a été payée mais n'apporte pas l'amplitude attendue : elle
 n'est **pas** masquée dans le compteur, elle est signalée ci-dessus.
 
-## Audit de conformité des animations existantes (2026-10-06)
+## LOT R1 FEMME — RATTRAPAGE DU LOT 1 (dead bug, gainage latéral) — 2026-10-07
+
+Consigne du user : **rattraper l'homme côté femme** pour qu'ensuite les deux avancent au
+même rythme. Les 3 exercices du **LOT 1** n'existaient qu'en version homme
+(`animations/lot1/`). Versions femme chaînées depuis `REF-personnage-feminin.jpg`
+(identité) + une frame du LOT A-03 FEMME (décor terrasse, cadrage, tapis noir).
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `femme/dead-bug-3poses.gif` | Dead bug | A = bras verticaux, genoux à 90° · M = bras droit abaissé à 45°, jambe gauche tendue · B = extension complète bras/jambe opposés | ✅ conforme |
+| `femme/gainage-lateral-3poses.gif` | Gainage latéral | A = hanches basses (installation), flanc au sol · M = hanches à mi-hauteur, pente douce · B = ligne droite complète, main libre sur la hanche | ✅ conforme |
+| `femme/bird-dog-3poses.gif` | Bird dog | A = quatre pattes, dos plat · M = bras tendu vers l'avant à mi-hauteur · **B = MANQUANTE** | ⚠️ **incomplet — 1 image** |
+
+Planche partielle : `themeA/femme/LOT-R1F-rattrapage-lot1-femme.gif` (948×265, 2 colonnes :
+dead bug + gainage latéral). La planche à 3 colonnes (1420×265) sera produite au tour
+suivant, avec la position B du bird dog.
+
+### 🔴 Drapeau rouge — 10 / 10 images IA
+
+Ce tour a payé **10 images** : dead bug A + M + B (3), bird dog A + M (2),
+gainage latéral (3 positions utiles + **2 images rejouées**). Le **bird dog B** est resté
+hors budget : l'exercice est livré **incomplet et signalé comme tel**, jamais masqué.
+Les positions saines sont conservées dans `themeA/femme/_sources/LOT1F/` (7 PNG
+1376×768) pour que le prochain tour ne paie **qu'1 image**.
+
+### Deux images rejouées — détail honnête
+
+1. **Gainage latéral, position A** : la 1ʳᵉ image est revenue en **planche haute**
+   (appui sur la main, hanches levées, brassière rendue blanche) alors que A doit être
+   l'installation hanches au sol. La 2ᵉ tentative est revenue en **planche moyenne**
+   (hanches décollées de ~20 cm). Elle a été **recyclée en position M** au lieu d'être
+   jetée. Une 3ᵉ génération (paysage) a donné la **ligne droite complète** → position B.
+   *Résultat : cadrage et style parfaitement cohérents sur les 3 frames, mais la
+   position A reste une « hanches basses / installation » plutôt qu'un corps
+   parfaitement allongé au sol — exactement la même convention que la version HOMME
+   validée (`lot1/gainage-lateral-3poses.gif` : A = hanches basses). Réserve assumée.*
+2. **Gainage latéral, position M** : 1ʳᵉ tentative revenue en **format portrait**,
+   inexploitable pour une boucle en paysage (rupture d'échelle entre les frames).
+   → régénérée en paysage.
+
+Les 2 images rejouées sont **comptées** dans le budget du tour, pas dissimulées.
+
+### Technique vérifiée en ligne avant génération
+
+- **Dead bug** : allongé sur le dos, bras perpendiculaires au sol, genoux à 90°,
+  **bras et jambe OPPOSÉS** étendus simultanément, **lombaires plaquées au sol** du début
+  à la fin, descente lente, amplitude maximale *avec* lombaires collées
+  ([lateliergym](https://lateliergym.fr/dead-bug-abdos-profonds-guide/),
+  [jemeremetsausport](https://jemeremetsausport.com/dead-bug/),
+  [callisthenie-corner](https://www.callisthenie-corner.fr/dead-bug/)).
+- **Gainage latéral** : allongé sur le côté, jambes tendues et superposées, **coude sous
+  l'épaule**, montée du bassin jusqu'à la **ligne droite cheville-hanche-épaule**, **main
+  libre sur la hanche**, cage thoracique tournée vers l'avant (pas vers le sol), bassin
+  qui ne s'affaisse pas
+  ([magicfit](https://www.magicfit.fr/la-planche-laterale-musculation/),
+  ([callisthenie-corner](https://www.callisthenie-corner.fr/planche-laterale/)),
+  [jemeremetsausport](https://jemeremetsausport.com/planche-laterale/)).
+
+### Contrôle objectif des positions
+
+| Comparaison | RMSE normalisé | Lecture |
+| --- | --- | --- |
+| dead bug A → M | 0,050 | mouvement lisible |
+| dead bug M → B | 0,052 | mouvement lisible |
+| gainage latéral A → M | 0,040 | mouvement lisible |
+| gainage latéral M → B | 0,154 | mouvement très lisible |
+
+(seuil retenu : > 0,030 = les deux positions se distinguent ; les positions déclarées
+« trop proches » aux lots précédents mesuraient 0,029.)
+
+Contrôle anti-doublon : **52 GIF** et **23 PNG** dans le chantier, **toutes les
+empreintes md5 distinctes, 0 doublon**. Les GIF femme et homme d'un même exercice ne
+partagent évidemment aucune empreinte (mannequins différents).
+
+### Réserve de style
+
+Le générateur a rendu la **brassière blanche/argentée** sur les tentatives ratées du
+gainage latéral ; les 3 frames retenues montrent bien une brassière **noire**. À
+surveiller : la brillance du corps varie un peu d'une frame à l'autre (le code impose un
+argenté **mat**).
+
+
 
 Les 16 animations des lots POC → LOT 4 ont été recontrôlées image par image. Aucun
 fichier n'est dupliqué (24 empreintes md5 toutes distinctes) et les 3 positions

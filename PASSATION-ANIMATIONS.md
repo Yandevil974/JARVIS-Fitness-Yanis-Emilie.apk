@@ -2,20 +2,18 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 6 octobre 2026 · dernier commit de contenu : LOT A-03 FEMME (thème A, 1 réserve) · branche de session `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 7 octobre 2026 · dernier commit de contenu : LOT R1 FEMME (rattrapage du lot 1, 2 animations livrées + 1 incomplète) · branche de session `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🚩 DRAPEAU ROUGE — limite du tour atteinte
+> ### 🚩 DRAPEAU ROUGE — limite du tour atteinte (2026-10-07)
 >
-> **10 images IA sur 10 utilisées** (LOT A-03 FEMME : pompes 3 positions, gainage planche
-> 3 positions dont **1 échec rejoué**, abduction hanche 3 positions). Ce drapeau marque
-> une **limite technique de génération**, pas un jugement sur les images produites.
-> Le lot est livré, commité et poussé — **avec 1 réserve** (abduction hanche position B
-> trop proche de la mi-course, 1 image à régénérer).
+> **10 images IA sur 10 utilisées** (LOT R1 FEMME : dead bug A/M/B, bird dog A/M,
+> gainage latéral + **2 images rejouées**). Le **bird dog est livré INCOMPLET** —
+> il manque la position finale B (1 image) ; c'est dit, pas masqué. Les 2 positions
+> saines sont dans `themeA/femme/_sources/LOT1F/`.
 >
-> **Aucune image n'a été gaspillée en silence** : l'échec du gainage planche (mi-course
-> rendue identique au départ) a été détecté par comparaison objective des pixels
-> (RMSE 0,054) *avant* assemblage, et la position a été régénérée avec une consigne
-> d'asymétrie explicite.
+> **Aucune image n'a été gaspillée** : la position « planche moyenne » revenue par
+> erreur a été recyclée en **mi-course M**, seule la frame en **format portrait**
+> (inexploitable en paysage) a été refaite.
 >
 > ### 👁️ NOUVEAUTÉ MAJEURE — l'agent VOIT les images
 >
@@ -31,10 +29,9 @@
 > La session en cours est rattachée à la branche
 > **`arena/6a360b28-jarvis-fitness-yanis-emilie-ap`** (contrainte technique : Arena suit
 > la session par cette branche, l'agent ne peut pas écrire sur une autre).
-> En ouverture de tour, cette branche a été **avancée en fast-forward sur tout
-> l'historique de `arena/50bc4ba3-…`** puis le LOT A-02 FEMME y a été ajouté.
-> Elle contient donc **l'intégralité du chantier** : `475beaa` (état 50bc4ba3) + LOT A-02
-> FEMME. Les liens de fichiers ci-dessous pointent sur la branche de session.
+> Cette branche contient **l'intégralité du chantier** : tout l'historique de
+> `arena/50bc4ba3-…` (`475beaa`) + LOT A-01/A-02/A-03 FEMME + **LOT R1 FEMME** (2026-10-07).
+> Les liens de fichiers ci-dessous pointent sur la branche de session.
 >
 > ### ✅ DÉBLOQUÉ — la photo du personnage féminin est dans le dépôt
 >
@@ -68,7 +65,9 @@
   — contrainte d'Arena : la session est suivie par cette branche, l'agent ne peut écrire
   que dessus. Elle a été **fast-forwardée sur tout l'historique de
   `arena/50bc4ba3-…`** (jusqu'à `475beaa`) puis complétée par le LOT A-02 FEMME.
-- Dernier commit de contenu : **`bda24e1`** — LOT A-02 FEMME (3 animations, 2 sous réserve)
+- Dernier commit de contenu : **LOT R1 FEMME (2026-10-07)** — dead bug et gainage latéral
+  femme livrés, **bird dog femme incomplet** (position B à produire, 1 image)
+  *(commit précédent de contenu : `e33605b` — LOT A-03 FEMME)*
 
 ### ⚠️ Reprise de l'ancienne branche — FAIT, ne pas refaire
 
@@ -464,10 +463,11 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/6a360b
 > Lis `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
 > `yanis-fitness-evolution/animations/PLAN-THEMES.md`, puis :
 > 1. **RATTRAPAGE DE LA FILLE** (consigne du user : rattraper l'homme pour qu'ensuite les
->    deux avancent au même rythme) — il reste **8 entrées du thème A qui n'existent qu'en
->    homme** : **lot 1 FEMME** (`dead-bug`, `bird-dog`, `gainage-lateral`), puis
->    **lot 2 FEMME** (`mountain-climbers`, `dead-bug-rotation`, `gainage-lateral-dyn`),
->    puis **lot 3 FEMME** (les 2 circuits). Référence identité :
+>    deux avancent au même rythme) — **lot 1 FEMME fait à 2/3** : `dead-bug` ✅ et
+>    `gainage-lateral` ✅ sont livrés ; il manque **la position B du `bird-dog`** (1 image,
+>    positions A et M déjà dans `themeA/femme/_sources/LOT1F/`). Ensuite **lot 2 FEMME**
+>    (`mountain-climbers`, `dead-bug-rotation`, `gainage-lateral-dyn`), puis **lot 3 FEMME**
+>    (les 2 circuits). Référence identité :
 >    `animations/REF-personnage-feminin.jpg` ; chaîner A → M → B ; assembler avec
 >    `scripts/build-gif-lot.sh` (460×257, `-delay 130/110`, planche 1420×265, **jamais
 >    `-layers optimize` sur la planche**) ; montrer la planche ; commit + push ;
