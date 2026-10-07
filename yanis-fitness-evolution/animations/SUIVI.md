@@ -12,17 +12,17 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **47 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-04 : 2/3** (`abduction-assise`, `pallof-press`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
-| Restant à produire | **567** |
+| Animations créées | **49 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-04 HOMME : 3/3 complet (`db1c520`)** + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **A-04 FEMME : 1/3** (`abduction-assise`, `721ad18`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
+| Restant à produire | **565** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-04 HOMME (2/3 en cours)** + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
-| Versions femme produites | **17 / 307** |
-| Thème A (échauffement) | **19 / 25 en homme, 17 / 25 en femme** · LOT A-04 HOMME à 2/3 (reste `face-pull-a-l-elastique`), puis LOT A-04 FEMME (3), LOT A-05 (2 H + 2 F), `warmup-*` (3 H + 3 F), et les **2 circuits HOMME** à passer en version composite |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-04 HOMME (3/3 complet ✅)** + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **A-04 FEMME (1/3 en cours + base A de `pallof-press`)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
+| Versions femme produites | **18 / 307** |
+| Thème A (échauffement) | **20 / 25 en homme, 18 / 25 en femme** · LOT A-04 HOMME 100 % livré (`db1c520`), LOT A-04 FEMME à 1/3 (`abduction-assise` livrée `721ad18`, `pallof-press` pos A prête), puis LOT A-05 (2 H + 2 F), `warmup-*` (3 H + 3 F), et les **2 circuits HOMME** à passer en version composite |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -707,27 +707,59 @@ LOT A-02 FEMME (profil / face).
 | Mesure | RMSE A→M = **0,076** · M→B = **0,090** |
 | Fichiers | `themeA/squat-poids-du-corps-3poses.gif` + `themeA/LOT-A02-echauffement.gif` + `themeA/LOT-A02-squat-homme-PLANCHE-FINALE.jpg` + `_sources/A-02/squat-poids-du-corps-A/M/B.png` |
 
-## LOT A-04 HOMME — en cours (2 / 3 exercices livrés, 6 / 9 positions) — 2026-10-07
+## LOT A-04 HOMME — COMPLET (3 / 3 exercices livrés, 9 / 9 positions) — 2026-10-07 (`db1c520`)
 
 | Fichier | Exercice | Positions | Statut |
 | --- | --- | --- | --- |
 | `themeA/abduction-assise-machine-ou-elastique-3poses.gif` | Abduction assise (machine ou élastique) | Vue de face directe : A = genoux et pieds serrés au centre · M = ouverture moyenne des genoux fléchis à 90°, pieds fixes au centre · B = ouverture maximale en papillon/losange, pieds sur tranche externe au centre, mains écartées sur le banc | ✅ **livré (`bd77abf`)** |
-| `themeA/pallof-press-a-l-elastique-3poses.gif` | Pallof press à l'élastique | Vue trois-quarts avant, poteau noir à gauche, élastique à hauteur de poitrine : A = mains jointes contre le sternum, coudes fléchis · M = mains poussées à mi-course devant la poitrine · B = bras verrouillés à 180° loin devant la poitrine, tronc en anti-rotation | ✅ **livré** (réserve mineure : pieds un peu plus écartés en B) |
-| `themeA/face-pull-a-l-elastique-3poses.gif` | Face pull à l'élastique | Tirage vers le visage, coudes hauts (>= épaules) + rotation externe en fin de course | ⬜ **ouvre le prochain tour** (drapeau rouge : 10/10 images IA utilisées) |
+| `themeA/pallof-press-a-l-elastique-3poses.gif` | Pallof press à l'élastique | Vue trois-quarts avant, poteau noir à gauche, élastique à hauteur de poitrine : A = mains jointes contre le sternum, coudes fléchis · M = mains poussées à mi-course devant la poitrine · B = bras verrouillés à 180° loin devant la poitrine, tronc en anti-rotation | ✅ **livré (`f2c7d13`)** (réserve mineure : pieds un peu plus écartés en B) |
+| `themeA/face-pull-a-l-elastique-3poses.gif` | Face pull à l'élastique | Vue trois-quarts arrière face au poteau noir à gauche (élastique fixé à hauteur des yeux) : A = bras tendus à l'horizontale · M = tirage vers le visage, coudes hauts à hauteur d'épaule (~90°) · B = rotation externe d'épaule en fin de course (avant-bras verticaux à 90°, mains de part et d'autre des tempes/oreilles, omoplates serrées) | ✅ **livré (`db1c520`)** |
 
-**Aperçus dans le dépôt (règle 15) :**
-- `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg` (les 2 premiers exercices A/M/B sur 2 lignes) ;
+**Planche animée 3 colonnes et aperçus dans le dépôt (règle 15) :**
+- `themeA/LOT-A04-echauffement.gif` (1420×265, 4 frames, sans `-layers optimize`) ;
+- `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg` (grille 3×3 complète 1440×897 des 3 exercices A/M/B) ;
 - `themeA/LOT-A04-abduction-assise-PLANCHE-FINALE.jpg` ;
-- `themeA/LOT-A04-pallof-press-PLANCHE-FINALE.jpg`.
+- `themeA/LOT-A04-pallof-press-PLANCHE-FINALE.jpg` ;
+- `themeA/LOT-A04-face-pull-PLANCHE-FINALE.jpg`.
 
-### Contrôle objectif (LOT A-04 HOMME, 2/3)
+### Contrôle objectif (LOT A-04 HOMME, 3/3)
 
 | Comparaison | RMSE normalisé |
 | --- | --- |
-| abduction assise A → M | 0,073 |
-| abduction assise M → B | 0,084 |
-| pallof press A → M | 0,050 |
-| pallof press M → B | 0,090 |
+| abduction assise HOMME A → M | 0,0735 |
+| abduction assise HOMME M → B | 0,0838 |
+| pallof press HOMME A → M | 0,0500 |
+| pallof press HOMME M → B | 0,0898 |
+| face pull HOMME A → M | 0,0566 |
+| face pull HOMME M → B | 0,0520 |
+
+---
+
+## LOT A-04 FEMME — en cours (1 / 3 exercice livré + base A de `pallof-press`, 4 / 9 positions) — 2026-10-07
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeA/femme/abduction-assise-machine-ou-elastique-3poses.gif` | Abduction assise (machine ou élastique) FEMME | Vue de face directe symétrique : A = genoux et pieds serrés au centre · M = ouverture moyenne des genoux fléchis à 90°, pieds fixes au centre, mains posées sur le banc · B = ouverture maximale en papillon/losange, pieds sur tranche externe au centre, mains écartées aux extrémités du banc | ✅ **livré (`721ad18`)** (RMSE A→M = **0,0864**, M→B = **0,0746**) |
+| `themeA/femme/pallof-press-a-l-elastique-3poses.gif` | Pallof press à l'élastique FEMME | Vue trois-quarts avant, poteau noir à gauche, élastique à hauteur de poitrine : **A produite et validée** (`_sources/A-04F/pallof-press-a-l-elastique-A.png`, mains jointes contre le sternum) · M et B à chaîner | ⏳ **1/3 position prête** (M et B ouvrent le prochain tour) |
+| `themeA/femme/face-pull-a-l-elastique-3poses.gif` | Face pull à l'élastique FEMME | Vue trois-quarts arrière face au poteau noir à gauche : A → M → B à chaîner | ⬜ **au prochain tour** (après `pallof-press` M et B) |
+
+**Aperçu dans le dépôt (règle 15) :**
+- `themeA/femme/LOT-A04F-abduction-assise-PLANCHE-FINALE.jpg` (1440×300, 3 colonnes A/M/B).
+
+### Budget d'images IA du 3ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `face-pull` HOMME A (vue 3/4 arrière face au poteau gauche, bras tendus) | ✅ conforme |
+| 2 | `face-pull` HOMME M (tirage mi-course, coudes hauts à hauteur d'épaule) | ✅ conforme (RMSE A→M = 0,0566) |
+| 3 | `face-pull` HOMME B (rotation externe 90°, mains aux tempes/oreilles) | ✅ conforme (RMSE M→B = 0,0520) → **LOT A-04 HOMME complet livré (`db1c520`)** |
+| 4 | `abduction-assise` FEMME A (vue de face directe symétrique) | ✅ conforme |
+| 5 | `abduction-assise` FEMME M (essai 1, chaîné depuis A seule) | ❌ rejeté (mains posées près des cuisses bloquant l'ouverture des genoux, RMSE 0,0471) |
+| 6 | `abduction-assise` FEMME M (essai 2, avec référence ouverture) | ✅ conforme (ouverture moyenne franche, RMSE A→M = 0,0864) |
+| 7 | `abduction-assise` FEMME B (essai 1, chaîné depuis M seule) | ⚠️ quasi identique à M (RMSE 0,0378) → retenu comme `M.png` |
+| 8 | `abduction-assise` FEMME M (essai 3, interpolation A+B) | ❌ rejeté (pieds écartés et genoux rentrés en valgus) |
+| 9 | `abduction-assise` FEMME B (essai 2, avec référence B HOMME) | ✅ conforme (ouverture maximale en losange, pieds sur tranche externe au centre, RMSE M→B = 0,0746) → **livré (`721ad18`)** |
+| 10 | `pallof-press` FEMME A (vue 3/4 avant, poteau noir à gauche, mains au sternum) | ✅ conforme → **base prête pour le prochain tour** |
 
 ### Technique vérifiée en ligne avant génération (règle 14)
 

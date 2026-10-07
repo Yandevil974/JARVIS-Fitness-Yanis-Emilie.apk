@@ -71,9 +71,9 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Abduction assise (machine ou élastique) | `abduction-assise-machine-ou-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`bd77abf`)** · F à recréer |
-| 2 | Pallof press à l'élastique | `pallof-press-a-l-elastique` | transverse | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré** · F à recréer |
-| 3 | Face pull à l'élastique | `face-pull-a-l-elastique` | épaules (postérieur) | élastique · H + F (2 anim.) | ⬜ H ouvre le prochain tour · F à recréer |
+| 1 | Abduction assise (machine ou élastique) | `abduction-assise-machine-ou-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`bd77abf`)** · ✅ **LOT A-04F F livrée (`721ad18`)** |
+| 2 | Pallof press à l'élastique | `pallof-press-a-l-elastique` | transverse | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`f2c7d13`)** · ⏳ **F pos A prête (`_sources/A-04F/pallof-press-a-l-elastique-A.png`), M et B ouvrent le prochain tour** |
+| 3 | Face pull à l'élastique | `face-pull-a-l-elastique` | épaules (postérieur) | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`db1c520`)** · ⬜ F au prochain tour |
 
 ### Lot A-05
 

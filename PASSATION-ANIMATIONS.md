@@ -2,12 +2,12 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 (Fitness 13 — 2ᵉ tour) · 47 / 614 animations livrées
-(thème A : 19/25 en HOMME, 17/25 en FEMME) · LOT A-04 HOMME à 2/3 (`abduction-assise`
-`bd77abf` + `pallof-press` livrés, reste `face-pull-a-l-elastique`) · branche de session
-`arena/93096144-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 7 octobre 2026 (Fitness 13 — 3ᵉ tour) · 49 / 614 animations livrées
+(thème A : 20/25 en HOMME, 18/25 en FEMME) · LOT A-04 HOMME 100 % complet (`db1c520`) ·
+LOT A-04 FEMME à 1/3 (`abduction-assise` `721ad18` + `pallof-press` pos A prête) · branche
+de session `arena/93096144-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13) — rattrapage FEMME 100 % terminé + corrections soldées + LOT A-04 HOMME 2/3
+> ### 🔄 MISES À JOUR DU 2026-10-07 (Fitness 13 — 3ᵉ tour) — LOT A-04 HOMME 100 % livré + LOT A-04 FEMME engagé (1/3 + base A de `pallof-press`)
 >
 > 1. **`circuit-abdominaux` FEMME LIVRÉ (`5e5a2e3`)** : 9ᵉ position (planche haute tenue)
 >    produite, GIF composite `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames)
@@ -17,15 +17,24 @@
 >    - ✅ **abduction hanche FEMME position B** (`e67a36f`, RMSE M→B 0,255) ;
 >    - ✅ **fire hydrant FEMME A/M/B** en **vue arrière trois-quarts** (`e5b670a`, RMSE A→M 0,088, M→B 0,090) ;
 >    - ✅ **squat HOMME A/M/B** refait en trois-quarts sur tapis noir (`9ed4d87`, RMSE A→M 0,076, M→B 0,090).
-> 3. **LOT A-04 HOMME à 2 / 3 exercices livrés :**
->    - ✅ **`abduction-assise-machine-ou-elastique` HOMME** (`bd77abf`) : tourné en **vue de
->      face directe** (sur une vue 3/4 avec le banc en travers, le générateur bloquait les
->      genoux ou tendait les jambes en grand écart) — RMSE A→M 0,073, M→B 0,084 ;
->    - ✅ **`pallof-press-a-l-elastique` HOMME** : vue trois-quarts avant, poteau d'ancrage
->      noir à gauche, élastique à hauteur de poitrine, A mains au sternum → M mi-course →
->      B bras verrouillés à 180° (RMSE A→M 0,050, M→B 0,090 ; réserve : pieds plus écartés en B) ;
->    - ⏳ **`face-pull-a-l-elastique` HOMME** : ouvre le prochain tour (drapeau rouge 10/10),
->      puis assemblage de `themeA/LOT-A04-echauffement.gif` (1420×265).
+> 3. **LOT A-04 HOMME COMPLET (3 / 3 exercices livrés, `db1c520`) :**
+>    - ✅ **`abduction-assise-machine-ou-elastique` HOMME** (`bd77abf`) : vue de face directe
+>      (RMSE A→M 0,0735, M→B 0,0838) ;
+>    - ✅ **`pallof-press-a-l-elastique` HOMME** (`f2c7d13`) : vue trois-quarts avant, poteau
+>      noir à gauche (RMSE A→M 0,0500, M→B 0,0898) ;
+>    - ✅ **`face-pull-a-l-elastique` HOMME** (`db1c520`) : vue trois-quarts arrière face au
+>      poteau noir à gauche, tirage vers le visage coudes hauts + rotation externe 90° en B
+>      (RMSE A→M 0,0566, M→B 0,0520) ;
+>    - ✅ Planche animée 3 colonnes `themeA/LOT-A04-echauffement.gif` (1420×265, 4 frames) +
+>      planche de contrôle 3×3 `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg` (1440×897).
+> 4. **LOT A-04 FEMME en cours (1 / 3 livré + base A du 2ᵉ exercice) :**
+>    - ✅ **`abduction-assise-machine-ou-elastique` FEMME** (`721ad18`) : vue de face directe
+>      symétrique (RMSE A→M 0,0864, M→B 0,0746) + planche `LOT-A04F-abduction-assise-PLANCHE-FINALE.jpg` ;
+>    - ⏳ **`pallof-press-a-l-elastique` FEMME** : position A produite et validée
+>      (`themeA/femme/_sources/A-04F/pallof-press-a-l-elastique-A.png`), positions M et B
+>      ouvrent le prochain tour ;
+>    - ⬜ **`face-pull-a-l-elastique` FEMME** : à produire au prochain tour → assemblage de
+>      `themeA/femme/LOT-A04F-echauffement-femme.gif` (1420×265).
 
 > ### 🔄 MISES À JOUR DU 2026-10-07 (2ᵉ passe) — règles 14 et 15
 >

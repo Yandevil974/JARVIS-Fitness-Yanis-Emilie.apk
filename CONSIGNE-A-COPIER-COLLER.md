@@ -31,9 +31,9 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 2ᵉ tour)
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 3ᵉ tour)
 
-- **47 / 614 animations livrées.** Thème A : **19 / 25 en homme, 17 / 25 en femme**
+- **49 / 614 animations livrées.** Thème A : **20 / 25 en homme, 18 / 25 en femme**
   (rattrapage de la fille 100 % terminé sur les lots 1, 2, 3 et A-01 à A-03 ✅).
 - **`circuit-gainage` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `f07c04d`).
 - **`circuit-abdominaux` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `5e5a2e3`).
@@ -47,29 +47,39 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
     (`e5b670a`) — RMSE A→M 0,088, M→B 0,090 ;
   - ✅ **squat HOMME, positions A, M et B** corrigées en **vue trois-quarts sur tapis noir**
     (`9ed4d87`) — RMSE A→M 0,076, M→B 0,090.
-- **LOT A-04 HOMME : 2 / 3 exercices livrés :**
+- **LOT A-04 HOMME : 3 / 3 exercices LIVRÉS (`db1c520`) :**
   - ✅ **`abduction-assise-machine-ou-elastique` HOMME** (`bd77abf`) en **vue de face directe**
-    (A genoux serrés → M ouverture moyenne → B ouverture maximale en papillon, pieds fixes
-    au centre, RMSE A→M 0,073, M→B 0,084) ;
-  - ✅ **`pallof-press-a-l-elastique` HOMME** en **vue trois-quarts avant** (poteau noir à
-    gauche, élastique à hauteur de poitrine, A mains au sternum → M mi-course → B bras
-    verrouillés à 180°, RMSE A→M 0,050, M→B 0,090 ; réserve : pieds plus écartés en B) ;
-  - ⏳ **`face-pull-a-l-elastique` HOMME** : ouvre le prochain tour (3 images IA) → assemblage
-    de la planche `themeA/LOT-A04-echauffement.gif` (1420×265).
+    (RMSE A→M 0,0735, M→B 0,0838) ;
+  - ✅ **`pallof-press-a-l-elastique` HOMME** (`f2c7d13`) en **vue trois-quarts avant**
+    (RMSE A→M 0,0500, M→B 0,0898 ; réserve : pieds plus écartés en B) ;
+  - ✅ **`face-pull-a-l-elastique` HOMME** (`db1c520`) en **vue trois-quarts arrière** face
+    au poteau noir à gauche (A bras tendus → M tirage coudes hauts → B rotation externe 90°,
+    RMSE A→M 0,0566, M→B 0,0520) ;
+  - ✅ Planche animée `themeA/LOT-A04-echauffement.gif` (1420×265, 4 frames) et planche 3×3
+    `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg` (1440×897).
+- **LOT A-04 FEMME : 1 / 3 exercice livré + base A du 2ᵉ exercice :**
+  - ✅ **`abduction-assise-machine-ou-elastique` FEMME** (`721ad18`) en **vue de face directe**
+    (RMSE A→M 0,0864, M→B 0,0746) + planche `themeA/femme/LOT-A04F-abduction-assise-PLANCHE-FINALE.jpg` ;
+  - ⏳ **`pallof-press-a-l-elastique` FEMME** : position A prête et validée dans
+    `themeA/femme/_sources/A-04F/pallof-press-a-l-elastique-A.png` (mains au sternum, poteau
+    noir à gauche). Reste à chaîner M et B dès l'ouverture du prochain tour (2 images IA) ;
+  - ⬜ **`face-pull-a-l-elastique` FEMME** : A → M → B en vue trois-quarts arrière face au
+    poteau noir à gauche (3 images IA) → assemblage de `themeA/femme/LOT-A04F-echauffement-femme.gif`
+    (1420×265) et `themeA/femme/LOT-A04F-PLANCHE-TRAVAIL.jpg` (1440×897).
 - **À FAIRE, dans l'ordre :**
-  1. **Terminer le LOT A-04 HOMME (3/3)** : produire `face-pull-a-l-elastique` HOMME (A → M → B :
-     élastique fixé à hauteur du visage sur le poteau noir à gauche, tirage vers le visage
-     coudes hauts >= épaules + rotation externe en fin de course) → assembler la planche
-     `themeA/LOT-A04-echauffement.gif` (1420×265) avec les 2 exercices déjà dans `_sources/A-04/` ;
-  2. **LOT A-04 FEMME** (les 3 mêmes exercices en FEMME : abduction assise en vue de face
-     directe, pallof press, face pull) ;
-  3. **LOT A-05** (`respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`), puis les
+  1. **Terminer le LOT A-04 FEMME (2/3 et 3/3)** :
+     - chaîner `M.png` et `B.png` de `pallof-press-a-l-elastique` FEMME depuis
+       `themeA/femme/_sources/A-04F/pallof-press-a-l-elastique-A.png` → GIF + commit ;
+     - produire `face-pull-a-l-elastique` FEMME (`A.png` → `M.png` → `B.png` en vue 3/4
+       arrière face au poteau noir à gauche, en s'aidant de `_sources/A-04/face-pull-a-l-elastique-*.png`)
+       → GIF + planche `themeA/femme/LOT-A04F-echauffement-femme.gif` (1420×265) + commit ;
+  2. **LOT A-05** (`respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`), puis les
      3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche` — **en HOMME puis
      en FEMME** ;
-  4. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
+  3. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
      vue arrière trois-quarts ;
-  5. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
-  6. ensuite seulement : **thème B — musculation**.
+  4. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
+  5. ensuite seulement : **thème B — musculation**.
 
 ## 2. CONSIGNE À NE PAS NÉGOCIER
 
