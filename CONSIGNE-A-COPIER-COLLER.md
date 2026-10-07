@@ -31,10 +31,10 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 3ᵉ tour)
+## 1. ÉTAT AU 2026-10-07 (après Fitness 13 — 4ᵉ tour)
 
-- **49 / 614 animations livrées.** Thème A : **20 / 25 en homme, 18 / 25 en femme**
-  (rattrapage de la fille 100 % terminé sur les lots 1, 2, 3 et A-01 à A-03 ✅).
+- **52 / 614 animations livrées.** Thème A : **21 / 25 en homme, 20 / 25 en femme**
+  (rattrapage de la fille 100 % terminé sur les lots 1, 2, 3 et A-01 à A-04 ✅).
 - **`circuit-gainage` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `f07c04d`).
 - **`circuit-abdominaux` FEMME : LIVRÉ** (composite 3 phases, 9/9 positions, commit `5e5a2e3`).
   Fichiers : `themeA/femme/circuit-abdominaux-3poses.gif` (460×257, 16 frames) et
@@ -48,38 +48,41 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
   - ✅ **squat HOMME, positions A, M et B** corrigées en **vue trois-quarts sur tapis noir**
     (`9ed4d87`) — RMSE A→M 0,076, M→B 0,090.
 - **LOT A-04 HOMME : 3 / 3 exercices LIVRÉS (`db1c520`) :**
-  - ✅ **`abduction-assise-machine-ou-elastique` HOMME** (`bd77abf`) en **vue de face directe**
-    (RMSE A→M 0,0735, M→B 0,0838) ;
-  - ✅ **`pallof-press-a-l-elastique` HOMME** (`f2c7d13`) en **vue trois-quarts avant**
-    (RMSE A→M 0,0500, M→B 0,0898 ; réserve : pieds plus écartés en B) ;
-  - ✅ **`face-pull-a-l-elastique` HOMME** (`db1c520`) en **vue trois-quarts arrière** face
-    au poteau noir à gauche (A bras tendus → M tirage coudes hauts → B rotation externe 90°,
-    RMSE A→M 0,0566, M→B 0,0520) ;
-  - ✅ Planche animée `themeA/LOT-A04-echauffement.gif` (1420×265, 4 frames) et planche 3×3
-    `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg` (1440×897).
-- **LOT A-04 FEMME : 1 / 3 exercice livré + base A du 2ᵉ exercice :**
-  - ✅ **`abduction-assise-machine-ou-elastique` FEMME** (`721ad18`) en **vue de face directe**
-    (RMSE A→M 0,0864, M→B 0,0746) + planche `themeA/femme/LOT-A04F-abduction-assise-PLANCHE-FINALE.jpg` ;
-  - ⏳ **`pallof-press-a-l-elastique` FEMME** : position A prête et validée dans
-    `themeA/femme/_sources/A-04F/pallof-press-a-l-elastique-A.png` (mains au sternum, poteau
-    noir à gauche). Reste à chaîner M et B dès l'ouverture du prochain tour (2 images IA) ;
-  - ⬜ **`face-pull-a-l-elastique` FEMME** : A → M → B en vue trois-quarts arrière face au
-    poteau noir à gauche (3 images IA) → assemblage de `themeA/femme/LOT-A04F-echauffement-femme.gif`
-    (1420×265) et `themeA/femme/LOT-A04F-PLANCHE-TRAVAIL.jpg` (1440×897).
+  - ✅ `abduction-assise-machine-ou-elastique` HOMME (`bd77abf`), `pallof-press-a-l-elastique`
+    HOMME (`f2c7d13`), `face-pull-a-l-elastique` HOMME (`db1c520`) + planche
+    `themeA/LOT-A04-echauffement.gif` (1420×265) + `themeA/LOT-A04-PLANCHE-TRAVAIL.jpg`.
+- **LOT A-04 FEMME : 3 / 3 exercices LIVRÉS (`2a202a4`) :**
+  - ✅ **`abduction-assise-machine-ou-elastique` FEMME** (`721ad18`, RMSE A→M 0,0864, M→B 0,0746) ;
+  - ✅ **`pallof-press-a-l-elastique` FEMME** (`8686998`, RMSE A→M 0,0595, M→B 0,0949 ; réserve :
+    pieds légèrement plus écartés en B) ;
+  - ✅ **`face-pull-a-l-elastique` FEMME** (`2a202a4`, RMSE A→M 0,0578, M→B 0,0511) ;
+  - ✅ Planche animée `themeA/femme/LOT-A04F-echauffement-femme.gif` (1420×265, 4 frames) et
+    grille 3×3 `themeA/femme/LOT-A04F-PLANCHE-TRAVAIL.jpg` (1440×900).
+- **LOT A-05 HOMME : 1 / 2 nouvel exercice livré + base A du 2ᵉ (`dead-bug` déjà en LOT 1) :**
+  - ✅ **`respiration-diaphragmatique` HOMME** (`1ca6f4e`) : allongé sur le dos genoux fléchis
+    (A inspiration ventrale → M expiration ventre plat → B stomach vacuum hypopressif /
+    transverse engagé, RMSE A→M 0,0616, M→B 0,1144) ;
+  - ⏳ **`hip-thrust-unilateral-1-jambe` HOMME** : position A prête et validée dans
+    `themeA/_sources/A-05/hip-thrust-unilateral-1-jambe-A.png` (omoplates sur banc noir,
+    bassin bas près du tapis, pied gauche à plat, jambe droite levée genou à 90°). Reste à
+    chaîner M (mi-hauteur) et B (extension complète alignée genou-hanches-épaules) dès
+    l'ouverture du prochain tour (2 images IA).
 - **À FAIRE, dans l'ordre :**
-  1. **Terminer le LOT A-04 FEMME (2/3 et 3/3)** :
-     - chaîner `M.png` et `B.png` de `pallof-press-a-l-elastique` FEMME depuis
-       `themeA/femme/_sources/A-04F/pallof-press-a-l-elastique-A.png` → GIF + commit ;
-     - produire `face-pull-a-l-elastique` FEMME (`A.png` → `M.png` → `B.png` en vue 3/4
-       arrière face au poteau noir à gauche, en s'aidant de `_sources/A-04/face-pull-a-l-elastique-*.png`)
-       → GIF + planche `themeA/femme/LOT-A04F-echauffement-femme.gif` (1420×265) + commit ;
-  2. **LOT A-05** (`respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe`), puis les
-     3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche` — **en HOMME puis
-     en FEMME** ;
-  3. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
+  1. **Terminer le LOT A-05 HOMME (2 images IA)** :
+     - chaîner `M.png` et `B.png` de `hip-thrust-unilateral-1-jambe` HOMME depuis
+       `themeA/_sources/A-05/hip-thrust-unilateral-1-jambe-A.png` → GIF + planche
+       `themeA/LOT-A05-echauffement.gif` (1420×265, avec `respiration-diaphragmatique`,
+       `hip-thrust-unilateral-1-jambe` et `dead-bug`) + commit ;
+  2. **LOT A-05 FEMME (6 images IA)** :
+     - produire `respiration-diaphragmatique` FEMME (A → M → B) et
+       `hip-thrust-unilateral-1-jambe` FEMME (A → M → B) → GIFs + planche
+       `themeA/femme/LOT-A05F-echauffement-femme.gif` (1420×265) + commit ;
+  3. **Les 3 étapes chrono `warmup-route`, `warmup-mobilite`, `warmup-approche`** — **en HOMME
+     puis en FEMME** ;
+  4. **Circuits LOT 3 HOMME** en version composite + éventuellement **fire hydrant HOMME** en
      vue arrière trois-quarts ;
-  4. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
-  5. ensuite seulement : **thème B — musculation**.
+  5. **POC** (3 animations à refaire) — **accord du user requis**, hors périmètre du feu vert ;
+  6. ensuite seulement : **thème B — musculation**.
 
 ## 2. CONSIGNE À NE PAS NÉGOCIER
 

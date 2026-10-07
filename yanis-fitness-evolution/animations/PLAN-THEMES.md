@@ -72,15 +72,15 @@ Ce qui est montré AVANT la séance : mise en route, mobilité articulaire, acti
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Abduction assise (machine ou élastique) | `abduction-assise-machine-ou-elastique` | moyen fessier | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`bd77abf`)** · ✅ **LOT A-04F F livrée (`721ad18`)** |
-| 2 | Pallof press à l'élastique | `pallof-press-a-l-elastique` | transverse | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`f2c7d13`)** · ⏳ **F pos A prête (`_sources/A-04F/pallof-press-a-l-elastique-A.png`), M et B ouvrent le prochain tour** |
-| 3 | Face pull à l'élastique | `face-pull-a-l-elastique` | épaules (postérieur) | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`db1c520`)** · ⬜ F au prochain tour |
+| 2 | Pallof press à l'élastique | `pallof-press-a-l-elastique` | transverse | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`f2c7d13`)** · ✅ **LOT A-04F F livrée (`8686998`)** |
+| 3 | Face pull à l'élastique | `face-pull-a-l-elastique` | épaules (postérieur) | élastique · H + F (2 anim.) | ✅ **LOT A-04 H livré (`db1c520`)** · ✅ **LOT A-04F F livrée (`2a202a4`)** |
 
 ### Lot A-05
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Respiration diaphragmatique | `respiration-diaphragmatique` | transverse | poids du corps · H + F (2 anim.) | à recréer |
-| 2 | Hip thrust unilatéral (1 jambe) | `hip-thrust-unilateral-1-jambe` | fessiers | poids du corps · H + F (2 anim.) | à recréer |
+| 1 | Respiration diaphragmatique | `respiration-diaphragmatique` | transverse | poids du corps · H + F (2 anim.) | ✅ **LOT A-05 H livré (`1ca6f4e`)** · ⬜ F au prochain tour |
+| 2 | Hip thrust unilatéral (1 jambe) | `hip-thrust-unilateral-1-jambe` | fessiers | poids du corps · H + F (2 anim.) | ⏳ **H pos A prête (`_sources/A-05/hip-thrust-unilateral-1-jambe-A.png`), M et B ouvrent le prochain tour** · ⬜ F au prochain tour |
 | 3 | Dead bug | `dead-bug` | transverse | poids du corps · H + F (2 anim.) | ✅ LOT 1 H · ✅ **LOT R1 FEMME** |
 
 ### Lot A-06

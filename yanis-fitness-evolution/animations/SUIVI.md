@@ -12,17 +12,17 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **49 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + **A-04 HOMME : 3/3 complet (`db1c520`)** + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **A-04 FEMME : 1/3** (`abduction-assise`, `721ad18`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
-| Restant à produire | **565** |
+| Animations créées | **52 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + **A-05 HOMME : 1/2** (`respiration-diaphragmatique`, `1ca6f4e` ; `dead-bug` déjà en L1) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **A-04 FEMME : 3/3 complet (`2a202a4`)** + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** (`circuit-gainage`, `circuit-abdominaux`)) |
+| Restant à produire | **562** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-04 HOMME (3/3 complet ✅)** + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **A-04 FEMME (1/3 en cours + base A de `pallof-press`)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
-| Versions femme produites | **18 / 307** |
-| Thème A (échauffement) | **20 / 25 en homme, 18 / 25 en femme** · LOT A-04 HOMME 100 % livré (`db1c520`), LOT A-04 FEMME à 1/3 (`abduction-assise` livrée `721ad18`, `pallof-press` pos A prête), puis LOT A-05 (2 H + 2 F), `warmup-*` (3 H + 3 F), et les **2 circuits HOMME** à passer en version composite |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-04 HOMME (3/3 ✅)** + **A-05 HOMME (1/2 en cours + base A de `hip-thrust-unilateral`)** + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** + **A-04 FEMME (3/3 ✅)** + **R1 FEMME (3)** + **R2 FEMME (3)** + **LOT 3 FEMME (2 composites)** |
+| Versions femme produites | **20 / 307** |
+| Thème A (échauffement) | **21 / 25 en homme, 20 / 25 en femme** · LOT A-04 H+F 100 % livrés (`db1c520`, `2a202a4`), LOT A-05 HOMME à 1/2 (`respiration-diaphragmatique` livrée `1ca6f4e`, `hip-thrust-unilateral-1-jambe` pos A prête), puis LOT A-05 FEMME (2), `warmup-*` (3 H + 3 F), et les **2 circuits HOMME** à passer en version composite |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -735,16 +735,69 @@ LOT A-02 FEMME (profil / face).
 
 ---
 
-## LOT A-04 FEMME — en cours (1 / 3 exercice livré + base A de `pallof-press`, 4 / 9 positions) — 2026-10-07
+## LOT A-04 FEMME — COMPLET (3 / 3 exercices livrés, 9 / 9 positions) — 2026-10-07 (`2a202a4`)
 
 | Fichier | Exercice | Positions | Statut |
 | --- | --- | --- | --- |
 | `themeA/femme/abduction-assise-machine-ou-elastique-3poses.gif` | Abduction assise (machine ou élastique) FEMME | Vue de face directe symétrique : A = genoux et pieds serrés au centre · M = ouverture moyenne des genoux fléchis à 90°, pieds fixes au centre, mains posées sur le banc · B = ouverture maximale en papillon/losange, pieds sur tranche externe au centre, mains écartées aux extrémités du banc | ✅ **livré (`721ad18`)** (RMSE A→M = **0,0864**, M→B = **0,0746**) |
-| `themeA/femme/pallof-press-a-l-elastique-3poses.gif` | Pallof press à l'élastique FEMME | Vue trois-quarts avant, poteau noir à gauche, élastique à hauteur de poitrine : **A produite et validée** (`_sources/A-04F/pallof-press-a-l-elastique-A.png`, mains jointes contre le sternum) · M et B à chaîner | ⏳ **1/3 position prête** (M et B ouvrent le prochain tour) |
-| `themeA/femme/face-pull-a-l-elastique-3poses.gif` | Face pull à l'élastique FEMME | Vue trois-quarts arrière face au poteau noir à gauche : A → M → B à chaîner | ⬜ **au prochain tour** (après `pallof-press` M et B) |
+| `themeA/femme/pallof-press-a-l-elastique-3poses.gif` | Pallof press à l'élastique FEMME | Vue trois-quarts avant, poteau noir à gauche, élastique à hauteur de poitrine : A = mains jointes contre le sternum · M = mains poussées à mi-course devant la poitrine · B = bras verrouillés à 180° loin devant la poitrine (réserve : pieds légèrement plus écartés en B) | ✅ **livré (`8686998`)** (RMSE A→M = **0,0595**, M→B = **0,0949**) |
+| `themeA/femme/face-pull-a-l-elastique-3poses.gif` | Face pull à l'élastique FEMME | Vue trois-quarts arrière face au poteau noir à gauche : A = bras tendus à l'horizontale · M = tirage vers le visage coudes hauts (~90°) · B = rotation externe d'épaule à 90° (avant-bras verticaux, mains aux tempes/oreilles, omoplates serrées) | ✅ **livré (`2a202a4`)** (RMSE A→M = **0,0578**, M→B = **0,0511**) |
+
+**Planche animée 3 colonnes et aperçus dans le dépôt (règle 15) :**
+- `themeA/femme/LOT-A04F-echauffement-femme.gif` (1420×265, 4 frames, sans `-layers optimize`) ;
+- `themeA/femme/LOT-A04F-PLANCHE-TRAVAIL.jpg` (grille 3×3 complète 1440×900 des 3 exercices A/M/B) ;
+- `themeA/femme/LOT-A04F-abduction-assise-PLANCHE-FINALE.jpg` ;
+- `themeA/femme/LOT-A04F-pallof-press-PLANCHE-FINALE.jpg` ;
+- `themeA/femme/LOT-A04F-face-pull-PLANCHE-FINALE.jpg`.
+
+---
+
+## LOT A-05 HOMME — en cours (1 / 2 nouvel exercice livré + base A du 2ᵉ, `dead-bug` déjà en LOT 1) — 2026-10-07
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeA/respiration-diaphragmatique-3poses.gif` | Respiration diaphragmatique | Allongé sur le dos sur tapis noir, genoux fléchis à 90°, pieds à plat (profil 3/4 rapproché) : A = inspiration diaphragmatique ample (ventre gonflé vers le haut, deux mains sur le ventre) · M = expiration contrôlée (ventre revenu à plat, main droite sur le thorax et main gauche sur l'abdomen) · B = fin d'expiration avec Stomach Vacuum hypopressif profond sous l'arc costal (engagement maximal du transverse), bras posés le long du corps pour dégager la vue sur le creux abdominal | ✅ **livré (`1ca6f4e`)** (RMSE A→M = **0,0616**, M→B = **0,1144** ; réserve : amplitude ventrale/vacuum volontairement accentuée pour une lecture immédiate en vignette) |
+| `themeA/hip-thrust-unilateral-1-jambe-3poses.gif` | Hip thrust unilatéral (1 jambe) | Haut du dos (omoplates) appuyé contre le banc noir, bras ouverts sur le banc, pied d'appui à plat au sol, jambe libre décollée genou fléchi à 90° : **A produite et validée** (`_sources/A-05/hip-thrust-unilateral-1-jambe-A.png`, bassin bas près du tapis) · M et B à chaîner | ⏳ **1/3 position prête** (M et B ouvrent le prochain tour) |
+| `lot1/dead-bug-3poses.gif` | Dead bug | Déjà livré dans le LOT 1 HOMME | ✅ **déjà livré** |
 
 **Aperçu dans le dépôt (règle 15) :**
-- `themeA/femme/LOT-A04F-abduction-assise-PLANCHE-FINALE.jpg` (1440×300, 3 colonnes A/M/B).
+- `themeA/LOT-A05-respiration-diaphragmatique-PLANCHE-FINALE.jpg` (1440×300, 3 colonnes A/M/B).
+
+### Technique vérifiée en ligne avant génération du LOT A-05 (règle 14)
+
+- **Respiration diaphragmatique & Stomach Vacuum (transverse)** : allongé sur le dos,
+  genoux fléchis, pieds à plat au sol (relâche les psoas et le bas du dos) ; inspiration
+  lente par le nez en laissant l'abdomen se soulever sous la main sans hausser les
+  épaules, puis expiration lente par la bouche en rentrant le nombril vers la colonne
+  vertébrale (engagement profond du transverse / stomach vacuum hypopressif sous les
+  côtes) ([pleinementgivre](https://pleinementgivre.fr/respiration-abdominale-diaphragmatique/),
+  [souffle-conscient](https://souffle-conscient.fr/respiration-diaphragmatique-bienfaits-exercices-guide-complet-2026/),
+  [louismove](https://louismove.com/stomach-vacuum/),
+  [nievremedical](https://nievremedical.fr/stomach-vacuum-taille/)).
+- **Hip thrust unilatéral (1 jambe)** : se distingue du pont fessier au sol par l'appui
+  du **haut du dos (pointe des omoplates) sur un banc** ; une jambe est décollée du sol
+  (genou fléchi à 90° en l'air), poussée à travers le talon du pied d'appui jusqu'à
+  l'alignement complet genou-hanches-épaules au sommet (tibia d'appui vertical à 90°),
+  gainage engagé pour ne pas cambrer les lombaires ni laisser le bassin basculer
+  ([docteur-fitness](https://www.docteur-fitness.com/hip-thrust-unilateral),
+  [hevyapp](https://www.hevyapp.com/exercises/single-leg-hip-thrust/),
+  [puregym](https://www.puregym.com/exercises/glutes/hip-thrusts/single-leg-hip-thrust/),
+  [muscleandstrength](https://www.muscleandstrength.com/exercises/single-leg-hip-thrust)).
+
+### Budget d'images IA du 4ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `pallof-press` FEMME M (mains poussées à mi-course devant la poitrine) | ✅ conforme (RMSE A→M = 0,0595) |
+| 2 | `pallof-press` FEMME B (essai 1, buste revenu de face) | ❌ rejeté (buste tourné face caméra, tresse masquée) |
+| 3 | `pallof-press` FEMME B (essai 2, angle 3/4 conservé, bras verrouillés à 180°) | ✅ conforme (RMSE M→B = 0,0949) → **livré (`8686998`)** |
+| 4 | `face-pull` FEMME A (vue 3/4 arrière face au poteau gauche, bras tendus) | ✅ conforme |
+| 5 | `face-pull` FEMME M (tirage mi-course, coudes hauts à hauteur d'épaule) | ✅ conforme (RMSE A→M = 0,0578) |
+| 6 | `face-pull` FEMME B (rotation externe 90°, mains aux tempes/oreilles) | ✅ conforme (RMSE M→B = 0,0511) → **LOT A-04 FEMME complet livré (`2a202a4`)** |
+| 7 | `respiration-diaphragmatique` HOMME A (allongé genoux fléchis, inspiration ventrale) | ✅ conforme |
+| 8 | `respiration-diaphragmatique` HOMME M (expiration contrôlée, ventre revenu à plat) | ✅ conforme (RMSE A→M = 0,0616) |
+| 9 | `respiration-diaphragmatique` HOMME B (stomach vacuum hypopressif / transverse engagé) | ✅ conforme (RMSE M→B = 0,1144) → **livré (`1ca6f4e`)** |
+| 10 | `hip-thrust-unilateral-1-jambe` HOMME A (omoplates sur banc noir, bassin bas, jambe droite levée à 90°) | ✅ conforme → **base prête pour le prochain tour** |
 
 ### Budget d'images IA du 3ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
 
