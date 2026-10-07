@@ -2,19 +2,28 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 · dernier commit de contenu : LOT R1 FEMME terminé (lot 1 femme = 3/3) + LOT R2 FEMME partiel (mountain climbers) · branche de session `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 7 octobre 2026 · dernier commit de contenu : LOT R1 FEMME (3/3) + LOT R2 FEMME (3/3) — la fille a rattrapé l'homme sur les lots 1 et 2 du thème A · branche de session `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
 
-> ### 🚩 DRAPEAU ROUGE — limite du tour atteinte (2026-10-07)
+> ### 🟡 RATTRAPAGE DE LA FILLE — lots 1 et 2 FAITS, lot 3 EN COURS (2026-10-07)
 >
-> **10 images IA sur 10 utilisées** (LOT R2 FEMME : bird dog B qui termine le lot 1,
-> mountain climbers A/M/B, dead bug rotation A/M, gainage latéral dyn. A + 3 images
-> rejouées). **3 positions manquent** pour finir le lot 2 : dead bug rotation B,
-> gainage latéral dyn. M et B. C'est dit, pas masqué — les GIF incomplets ne sont pas
-> publiés, seules les positions saines sont dans `themeA/femme/_sources/LOT2F/`.
+> Consigne du user : **rattraper l'homme côté femme** avant de faire avancer les deux au
+> même rythme. État réel, sans enjolivement :
 >
-> **Aucune image n'a été gaspillée** : la position « planche moyenne » revenue par
-> erreur a été recyclée en **mi-course M**, seule la frame en **format portrait**
-> (inexploitable en paysage) a été refaite.
+> | Lot thème A | Homme | Femme | Planche femme |
+> | --- | --- | --- | --- |
+> | **Lot 1** (dead bug, bird dog, gainage latéral) | ✅ | ✅ **fait** | `LOT-R1F-rattrapage-lot1-femme.gif` (1420×265) |
+> | **Lot 2** (mountain climbers, dead bug rotation, gainage latéral dyn.) | ✅ | ✅ **fait** | `LOT-R2F-rattrapage-lot2-femme.gif` (1420×265) |
+> | **Lot 3** (2 circuits composites) | ⚠️ version simple seulement | ❌ **à créer** | — |
+>
+> Contrôle visuel + RMSE faits sur les deux planches livrées, 0 doublon (57 GIF).
+> Le **lot 3 n'est PAS commencé** : un circuit composite demande ≈ 9 images, soit un tour
+> entier — il ne peut pas être entamé en fin de tour sans risquer de le perdre au reset.
+>
+> ### 🚩 RÈGLE VITALE (rappelée par un incident du 2026-10-07)
+>
+> Un tour **interrompu par le user** puis un **reset du sandbox** ont effacé des images
+> non commitées. Elles ont dû être régénérées. **Committer dès qu'un exercice est
+> complet**, ne pas attendre la fin du lot.
 >
 > ### 👁️ NOUVEAUTÉ MAJEURE — l'agent VOIT les images
 >
@@ -66,9 +75,8 @@
   — contrainte d'Arena : la session est suivie par cette branche, l'agent ne peut écrire
   que dessus. Elle a été **fast-forwardée sur tout l'historique de
   `arena/50bc4ba3-…`** (jusqu'à `475beaa`) puis complétée par le LOT A-02 FEMME.
-- Dernier commit de contenu : **LOT R2 FEMME (2026-10-07)** — lot 1 femme **terminé (3/3)**
-  et mountain climbers femme livré ; il reste **3 positions** pour finir le lot 2 femme
-  (dead bug rotation B, gainage latéral dyn. M et B)
+- Dernier commit de contenu : **LOT R2 FEMME (2026-10-07)** — rattrapage femme : lots 1
+  et 2 du thème A complets en **H + F** ; **reste le lot 3** (les 2 circuits composites)
 
 ### ⚠️ Reprise de l'ancienne branche — FAIT, ne pas refaire
 
@@ -463,12 +471,13 @@ https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/tree/arena/6a360b
 > `git reset --hard origin/<branche de session>`.
 > Lis `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI.md` et
 > `yanis-fitness-evolution/animations/PLAN-THEMES.md`, puis :
-> 1. **RATTRAPAGE DE LA FILLE** (consigne du user : rattraper l'homme pour qu'ensuite les
->    deux avancent au même rythme) — **lot 1 FEMME terminé (3/3)** : `dead-bug` ✅,
->    `bird-dog` ✅, `gainage-lateral` ✅. **Lot 2 FEMME** : `mountain-climbers` ✅ livré,
->    il reste **3 positions** (`dead-bug-rotation` B ; `gainage-lateral-dyn` M et B) —
->    position A de chacun déjà dans `themeA/femme/_sources/LOT2F/`. Ensuite **lot 3 FEMME**
->    (les 2 circuits). Référence identité :
+> 1. **FINIR LE RATTRAPAGE DE LA FILLE — reste le LOT 3** : les **2 circuits composites**
+>    (circuit gainage = planche → latéral → bird dog ; circuit abdominaux = crunch →
+>    relevés de jambes → gainage, décision user = animation composite en 3 phases).
+>    1 circuit par tour (≈ 9 images). À produire en FEMME (jamais fait) et à refaire en
+>    HOMME en version composite (aujourd'hui version simple, cf. § 8 réserves).
+>    Lots 1 et 2 déjà rattrapés : `dead-bug`, `bird-dog`, `gainage-lateral`,
+>    `mountain-climbers`, `dead-bug-rotation`, `gainage-lateral-dyn`. Référence identité :
 >    `animations/REF-personnage-feminin.jpg` ; chaîner A → M → B ; assembler avec
 >    `scripts/build-gif-lot.sh` (460×257, `-delay 130/110`, planche 1420×265, **jamais
 >    `-layers optimize` sur la planche**) ; montrer la planche ; commit + push ;

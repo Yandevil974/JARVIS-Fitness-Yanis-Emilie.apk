@@ -12,7 +12,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | 41 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** (dead bug, bird dog, gainage latéral) + **R2 FEMME : 1** (mountain climbers)) |
+| Animations créées | 43 / **614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + **R1 FEMME : 3** (dead bug, bird dog, gainage latéral) + **R2 FEMME : 3** (mountain climbers, dead bug rotation, gainage latéral dyn.)) |
 | Animations corrigées (option A) | 3 / 5 (dead bug rotation, gainage latéral, gainage latéral dyn.) |
 | Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M — voir § LOT A-02 FEMME ; + A-03F abduction B trop proche de M, voir § LOT A-03 FEMME) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
@@ -20,9 +20,9 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
 | Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + **A-01 FEMME (3)** + **A-02 FEMME (3)** + **A-03 FEMME (3)** |
-| Versions femme produites | **13 / 307** |
-| Thème A (échauffement) | 17 / 25 entrées en **homme**, **13 / 25 en femme** · reste 6 entrées jamais produites (×2) + 2 circuits composites (×2) + **4 versions femme à rattraper** (dead bug rotation : 1 image ; gainage latéral dyn. : 2 images ; les 2 circuits) |
-| Doublons sur les fichiers du chantier | 0 (54 GIF + 27 PNG, toutes empreintes md5 distinctes) |
+| Versions femme produites | **15 / 307** |
+| Thème A (échauffement) | 17 / 25 entrées en **homme**, **15 / 25 en femme** · reste **8 entrées jamais produites** (A-04 : 3, A-05 : 2, A-08 : 2, A-09 : 1) à faire en **H + F**, et **les 2 circuits** à refaire en version composite (H) et à créer (F) |
+| Doublons sur les fichiers du chantier | 0 (57 GIF + 30 PNG, toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
 
@@ -339,7 +339,7 @@ argenté **mat**).
 
 
 
-## LOT R2 FEMME — RATTRAPAGE DU LOT 2 (partiel) — 2026-10-07
+## LOT R2 FEMME — RATTRAPAGE DU LOT 2 — 2026-10-07 (terminé le même jour)
 
 Versions **femme** des exercices du **LOT 2** (mountain climbers, dead bug avec rotation,
 gainage latéral dynamique), chaînées depuis `REF-personnage-feminin.jpg` (identité) + une
@@ -348,20 +348,28 @@ frame du LOT A-03/R1 FEMME (décor, cadrage, tapis noir).
 | Fichier | Exercice | Positions | Statut |
 | --- | --- | --- | --- |
 | `femme/mountain-climbers-3poses.gif` | Mountain climbers | A = planche haute stricte · M = genou droit ramené à mi-course, pied décollé · B = genou droit aux pectoraux | ✅ conforme |
-| `femme/dead-bug-rotation-3poses.gif` | Dead bug avec rotation | A = mort, genoux 90°, bras verticaux · M = bras droit vers l'arrière + jambe gauche tendue · **B manquante** | ⚠️ **incomplet — 1 image** |
-| `femme/gainage-lateral-dyn-3poses.gif` | Gainage latéral dynamique | **A seule** (planche latérale bras levé, hanches hautes) · M et B manquantes | ⚠️ **incomplet — 2 images** |
+| `femme/dead-bug-rotation-3poses.gif` | Dead bug avec rotation | A = mort, genoux 90°, bras verticaux · M = bras droit vers l'arrière + jambe gauche tendue · B = extension complète bras/jambe opposés | ✅ conforme |
+| `femme/gainage-lateral-dyn-3poses.gif` | Gainage latéral dynamique | A = hanches hautes (ligne droite) · M = bassin descendu (creux) · B = retour hanches hautes | ✅ conforme (même convention que la version HOMME validée) |
 
-Planche partielle : `themeA/femme/LOT-R2F-partiel-mountain-climbers.gif` (476×265).
-La planche complète à 3 colonnes (1420×265) sera produite au tour suivant.
-Les GIF incomplets ne sont **pas** publiés dans le dossier livrable : seules les
-positions saines sont conservées dans `themeA/femme/_sources/LOT2F/`.
+Planche : `themeA/femme/LOT-R2F-rattrapage-lot2-femme.gif` (**1420×265, 3 colonnes**).
+✅ **Lot 2 FEMME désormais complet (3/3).**
+Convention retenue pour le gainage latéral dynamique : identique à la version HOMME
+validée (A = hanches hautes, M = creux, B = retour hanches hautes) — le retour à la
+position haute est mesuré à 0,038 entre A et B, ce qui est normal et attendu pour un
+mouvement cyclique.
 
-### 🚩 Drapeau rouge — 10 / 10 images IA
+### Budget d'images IA — 2 tours, aucune image perdue en silence
 
-Budget du tour : **bird dog B** (rattrapage R1, 1 image) + mountain climbers A/M/B (3) +
-dead bug rotation A/M (2) + gainage latéral dyn. A (1) + **3 images rejouées**.
-Conséquence assumée et signalée : **3 positions manquent** (dead bug rotation B,
-gainage latéral dyn. M et B) pour la fin du lot 2.
+- **Tour du 2026-10-07 (1ᵉʳ)** : 10 / 10 images. bird dog B (fin du lot 1) + mountain
+  climbers A/M/B + dead bug rotation A/M + gainage latéral dyn. A + 3 images rejouées.
+  → 3 positions manquaient, elles ont été annoncées comme telles, pas masquées.
+- **Tour du 2026-10-07 (2ᵉ)** : **4 images** (dead bug rotation B, gainage latéral dyn.
+  M et B + 1 régénération après interruption du tour par le user). Les 3 positions
+  manquantes sont produites → **lot 2 FEMME complet**.
+
+⚠️ Rappel de la règle vitale : le tour interrompu a été balayé par le reset du sandbox
+(les images non commitées ont disparu) — elles ont été régénérées et **commitée
+immédiatement**. Ne jamais travailler plus longtemps que nécessaire sans committer.
 
 ### Images rejouées (comptées, pas cachées)
 
@@ -399,9 +407,13 @@ gainage latéral dyn. M et B) pour la fin du lot 2.
 | --- | --- |
 | mountain climbers A → M | 0,144 |
 | mountain climbers M → B | 0,043 |
-| dead bug rotation A → M | 0,078 |
+| dead bug rotation A → M | 0,090 |
+| dead bug rotation M → B | 0,072 |
+| gainage latéral dyn. A → M | 0,095 |
+| gainage latéral dyn. M → B | 0,094 |
+| gainage latéral dyn. A → B | 0,038 *(retour en position haute — attendu)* |
 
-(seuil de lisibilité : > 0,030.) Anti-doublon : **0 doublon** sur les 54 GIF du chantier.
+(seuil de lisibilité : > 0,030.) Anti-doublon : **0 doublon** sur les 57 GIF du chantier.
 
 ### Réserve de style (à surveiller)
 
