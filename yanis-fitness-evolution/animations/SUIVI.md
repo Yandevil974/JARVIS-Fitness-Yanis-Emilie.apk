@@ -479,10 +479,27 @@ par la limite). Le drapeau rouge est technique : il ne dit rien de la qualité d
 Toutes les positions sont en **paysage 1376×768** (aucun portrait). Anti-doublon : les 8
 PNG ont des empreintes md5 **toutes distinctes**.
 
+### Check du 2026-10-07 (2ᵉ passe, à la demande du user) — 8 positions recontrôlées
+
+Grille de contrôle lisible dans le dépôt :
+`themeA/femme/_sources/LOT3F/GRILLE-CHECK-LOT3F-circuit-gainage.jpg` (8 vignettes,
+légenées). Constats :
+
+| Point contrôlé | Verdict |
+| --- | --- |
+| Format paysage de chaque position | ✅ 1376×768 partout |
+| Code visuel (argenté mat, visage noir sans traits, casquette, tresse, brassière + short noirs, baskets blanches) | ✅ conforme |
+| Décor (terrasse bord de mer, pierre claire, tapis noir) | ✅ conforme |
+| Planche sur avant-bras (P1-B) | ⚠️ avant-bras **bien à plat** (vérifié au zoom), mais **mains loin devant les coudes** — « coude sous l'épaule » approximatif |
+| Installation de la phase 1 (P1-A) | ⚠️ la main est **déjà au sol devant le genou** — installation à genoux peu lisible |
+| Progression du bassin en phase 2 (P2-M → P2-B) | ⚠️ **discrète** (RMSE 0,035) |
+| Propre­té du ciel en phase 2 | ❌ **artefact de dallage** (motif de blocs au-dessus de la mer) |
+| Bird dog phase 3 (A → M) | ✅ dos plat, prise de bras correcte, bassin stable (0,057) |
+
 ### Réserves honnêtes sur ces images
 
 - **P2-M et P2-B** présentent un **artefact de dallage dans le ciel** (motif de blocs
-  visible au-dessus de la mer) — l'anti-doublon/bavures déjà connues du chantier.
+  visible au-dessus de la mer) — les bavures déjà connues du chantier.
 - La **montée du bassin** entre P2-M et P2-B reste **discrète** (RMSE 0,035) : lisible
   mais moins franche que sur la version HOMME validée du gainage latéral dynamique.
 - Le rendu du corps est bien **argenté mat** sur cette série (pas d'écart de brillance

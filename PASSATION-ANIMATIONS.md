@@ -2,8 +2,18 @@
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 7 octobre 2026 · dernier commit de contenu : `1257544` (LOT R2 FEMME,
-lot 2 rattrapé) · branche de session `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
+**État consolidé au 7 octobre 2026 · dernier lot livré : `1257544` (LOT R2 FEMME, lot 2
+rattrapé) · en cours : LOT 3 FEMME, `circuit-gainage` 8/9 · branche de session
+`arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
+
+> ### 🔄 MISES À JOUR DU 2026-10-07 (2ᵉ passe) — règles 14 et 15
+>
+> 1. **Doute sur la configuration d'un mouvement → vérifier en ligne AVANT de générer**
+>    (YouTube, sites de fitness, **GB Performance**, guides de coachs) et **citer la source
+>    dans le commit** — l'exigence porte aussi sur les **angles, appuis et amplitudes**, pas
+>    seulement sur le nom du mouvement.
+> 2. **Le user ne voit NI le visualiseur d'Arena NI les pièces jointes** : les aperçus sont
+>    déposés **dans le dépôt** et signalés par un **lien GitHub**.
 
 > ### 🟢 OÙ EN EST LE RATTRAPAGE DE LA FILLE (consigne du user)
 >
@@ -52,7 +62,10 @@ lot 2 rattrapé) · branche de session `arena/6a360b28-jarvis-fitness-yanis-emil
 - Dépôt : `github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public)
 - **Branche de travail : `arena/6a360b28-jarvis-fitness-yanis-emilie-ap`**
   — ne jamais changer de branche, c'est elle qu'Arena suit.
-- Dernier commit de contenu : **`1257544`** — LOT R2 FEMME terminé (lot 2 rattrapé)
+- Dernier commit de contenu **livré** : **`1257544`** — LOT R2 FEMME terminé (lot 2 rattrapé)
+- En cours : **`56ec4ce`** + commits de ce tour — **LOT 3 FEMME `circuit-gainage`, 8/9
+  positions** (2ᵉ circuit à venir), non compté comme livré tant que la planche n'est pas
+  validée par le user.
 - Ne pas toucher à `release/`, `public/media` ni à aucun fichier applicatif.
 
 ### Historique consolidé
@@ -113,6 +126,18 @@ acae07f  passation (ancienne branche) · 02f7c8d LOT 4 · 2f5e0e5 LOT 5 · 1e7f7
     intermédiaires sont perdues au reset suivant (le LOT A-04 en a fait les frais).
     **Corollaire ajouté le 2026-10-07 : committer dès qu'un exercice est complet**, sans
     attendre la fin du lot.
+14. **Doute sur la CONFIGURATION d'un mouvement → vérification en ligne AVANT de générer**
+    (ajouté le 2026-10-07 à la demande du user) : YouTube (démonstrations de coachs), sites
+    de fitness spécialisés, **GB Performance**, guides de référence. 1 exercice = **1
+    configuration exacte et cohérente** — point d'appui, angles articulaires, hauteur du
+    bassin, sens du mouvement, amplitude. **La source est citée dans le message de commit**
+    (extension de la règle 6 : c'est une exigence, pas une option).
+15. **Le user n'a NI le visualiseur d'Arena NI les pièces jointes** (constaté le
+    2026-10-07 : « je ne peux pas avoir accès au visualiseur, il n'y a rien »). **Tout
+    aperçu à valider est déposé DANS LE DÉPÔT** (planche de travail, grille de contrôle,
+    GIF) **et signalé par un LIEN GitHub** dans le message, avec la marche à suivre
+    (onglet « Code » → chemin du fichier → vignette/raw, ou vue « Files changed » d'un
+    commit). **« Fichier affiché dans le chat » ≠ « user a vu ».**
 
 ---
 
@@ -199,7 +224,7 @@ dans le sandbox — les comptages sont refaits en Python depuis `inventaire.json
 
 | Élément | Valeur |
 | --- | --- |
-| Animations créées | **43 / 614** |
+| Animations créées | **43 / 614** livrées · **+8 positions** du circuit gainage FEMME (LOT 3 en cours, non comptées tant que la planche n'est pas validée) |
 | **Restant à produire** | **571** |
 | Versions femme produites | **15 / 307** |
 | Animations femme à reprendre | **3** (A-02F fire hydrant M/B, A-02F squat M, A-03F abduction B) |
@@ -244,7 +269,8 @@ soit **15 animations femme**.
 
 **Ateliers de reprise conservés dans git :**
 `themeA/femme/_sources/A-02F/` (6 positions saines), `_sources/A-03F/` (9 positions),
-`_sources/LOT1F/` (9 positions), `_sources/LOT2F/` (9 positions).
+`_sources/LOT1F/` (9 positions), `_sources/LOT2F/` (9 positions), `_sources/LOT3F/`
+(8 positions du `circuit-gainage` + planche de travail + grille de contrôle).
 Ces dossiers évitent de repayer des images déjà générées.
 
 ---
@@ -256,7 +282,27 @@ Ces dossiers évitent de repayer des images déjà générées.
 2. ✅ **FAIT** — r**attrapage de la fille sur les lots 1 et 2** :
    `dead-bug`, `bird-dog`, `gainage-lateral`, `mountain-climbers`, `dead-bug-rotation`,
    `gainage-lateral-dyn` existent en HOMME **et** FEMME.
-3. 🔴 **À FAIRE EN PRIORITÉ — LOT 3 : les 2 circuits composites.**
+3. 🟠 **LOT 3 EN COURS — `circuit-gainage` FEMME : 8 / 9 positions produites** (commit
+   `56ec4ce`), chaînées en 3 phases :
+   - **phase 1 planche** : A installation à genoux → M jambes qui s'allongent → B planche
+     complète sur avant-bras ;
+   - **phase 2 gainage latéral** : A flanc gauche hanches basses → M bassin à mi-hauteur →
+     B hanches hautes ;
+   - **phase 3 bird dog** : A quatre pattes → M bras droit qui s'allonge → **B (extension
+     complète) REFUSÉE par la limite des 10 images IA : à produire en ouverture du
+     prochain tour.**
+   **Contrôle du 2026-10-07 (2ᵉ passe, à la demande du user)** — voir le détail et les
+   réserves en § 8 et dans `SUIVI.md` ; l'aperçu est **dans le dépôt** :
+   `animations/themeA/femme/_sources/LOT3F/PLANCHE-TRAVAIL-LOT3F-circuit-gainage.png`
+   (+ `GRILLE-CHECK-LOT3F-circuit-gainage.jpg`).
+   Corrections identifiées et **à trancher par le user** avant de poursuivre :
+   (a) P1-A : la main gauche est déjà posée au sol devant le genou, ce qui rend la
+   séquence d'installation confuse pour un mouvement à quatre pattes ;
+   (b) P1-B : les avant-bras sont bien à plat, mais les mains partent **loin devant les
+   coudes** — le critère « coude pile sous l'épaule » n'est qu'approximatif ;
+   (c) P2-M → P2-B : la montée du bassin est **discrète** (RMSE 0,035) ;
+   (d) phase 2 : **artefact de dallage dans le ciel** (motif de blocs au-dessus de la mer).
+4. 🔴 **À FAIRE ENSUITE — LOT 3 : les 2 circuits composites.**
    - `circuit-gainage` : planche → gainage latéral → bird dog ;
    - `circuit-abdominaux` : crunch → relevés de jambes → gainage.
    Décision du user (§ 7.2) : les **trois mouvements déroulés à la suite** dans une seule
@@ -264,16 +310,16 @@ Ces dossiers évitent de repayer des images déjà générées.
    À produire en **FEMME** (jamais fait) et à **refaire en HOMME** en version composite
    (aujourd'hui version simple à une seule position). **Montrer la planche avant de
    committer le remplacement des fichiers HOMME.**
-4. **LOT A-04** : `abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
+5. **LOT A-04** : `abduction-assise-machine-ou-elastique`, `pallof-press-a-l-elastique`,
    `face-pull-a-l-elastique` — 3 exercices, 9 images (**jamais produits** : H puis F).
-5. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe` (2
+6. **LOT A-05** : `respiration-diaphragmatique`, `hip-thrust-unilateral-1-jambe` (2
    exercices = 6 images) — H puis F.
-6. **Étapes chrono d'échauffement** (H + F = 6 animations) :
+7. **Étapes chrono d'échauffement** (H + F = 6 animations) :
    - `warmup-route` = mise en route, marche ou vélo très facile, allure conversationnelle ;
    - `warmup-mobilite` = cercles d'épaules / mobilité hanches & chevilles — **à garder
      visuellement distinct de « mobilité des épaules » (A-01)** ;
    - `warmup-approche` = série d'approche légère, ~50 % de la charge de travail.
-7. **Ensuite seulement : thème B — musculation**, en commençant par
+8. **Ensuite seulement : thème B — musculation**, en commençant par
    `developpe-incline-halteres` (**banc 30°, prise neutre** — tranché par le user),
    puis jambes/quadriceps.
 
@@ -320,6 +366,19 @@ Ces dossiers évitent de repayer des images déjà générées.
 ---
 
 ## 8. RÉSERVES CONNUES (honnêtes)
+
+- **LOT 3 FEMME `circuit-gainage` (8/9, check du 2026-10-07, 2ᵉ passe)** :
+  (a) **P1-A** — la main gauche est déjà posée au sol devant le genou : l'installation à
+  genoux se lit mal pour un mouvement à quatre pattes ;
+  (b) **P1-B** — les deux avant-bras sont bien posés à plat (planche sur avant-bras
+  confirmée au zoom) mais les **mains sont loin devant les coudes** : le critère
+  « coude pile sous l'épaule » n'est qu'approximatif ;
+  (c) **P2-M → P2-B** — la montée du bassin est **discrète** (RMSE 0,035, tout juste
+  au-dessus du seuil 0,030) ;
+  (d) **phase 2** — **artefact de dallage dans le ciel** (motif de blocs au-dessus de la
+  mer), comme les bavures déjà connues des lots 1 et 3.
+  Aperçu dans le dépôt : `animations/themeA/femme/_sources/LOT3F/` (`PLANCHE-TRAVAIL-…png`,
+  `GRILLE-CHECK-…jpg`).
 
 - **POC** : cadrages coupés et artefacts sur 3 animations (voir § 6).
 - **Circuits LOT 3 (HOMME)** : une seule position animée sur trois alors que le user veut

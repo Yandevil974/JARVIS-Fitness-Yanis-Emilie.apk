@@ -54,6 +54,16 @@ accord explicite) : A-02F fire hydrant M/B + squat M (3 images, sources dans
 13. **Terminer un lot dans le tour où il est commencé** — et **committer dès qu'un exercice
     est complet**, sans attendre la fin du lot (le LOT A-04 et 3 images du LOT R2 ont été
     perdus par un reset).
+14. **Doute sur la CONFIGURATION d'un mouvement → vérifier en ligne AVANT de générer**
+    (YouTube, sites de fitness spécialisés, GB Performance, guides de coachs, articles de
+    référence…). 1 exercice = 1 configuration **exacte et cohérente** : point d'appui,
+    angle des articulations, hauteur du bassin, sens du mouvement, amplitude. **La source
+    est citée dans le message de commit** (règle 6 étendue : c'est une exigence, pas une
+    option).
+15. **Le user n'a NI le visualiseur d'Arena NI les pièces jointes** (constaté le
+    2026-10-07) : **tout aperçu à valider doit être déposé DANS LE DÉPÔT** (planche de
+    travail, grille de contrôle, GIF) **et signalé par un LIEN GitHub** dans le message.
+    « Fichier affiché » ≠ « user a vu ».
 
 **Style** — mannequin très musclé, corps blanc argenté **mat** (jamais chromé), visage
 **noir mat sans traits**, casquette blanche, short noir, baskets blanches, muscles
@@ -72,7 +82,9 @@ validation, commit + push, mise à jour `SUIVI.md` / `PLAN-THEMES.md`.
 objectif `compare -metric RMSE` (seuil de lisibilité **0,030**) ; **format paysage**
 (le générateur rend parfois du portrait, inexploitable) ; anti-doublon `md5sum`.
 
-**ÉTAT** — 43 / 614 animations. Thème A : **17 / 25 en homme, 15 / 25 en femme**.
+**ÉTAT** — 43 / 614 animations livrées · **LOT 3 FEMME en cours : circuit gainage, 8 / 9 positions**
+(commit `56ec4ce`, drapeau rouge de fin de tour sur la 9ᵉ). Thème A : **17 / 25 en homme,
+15 / 25 en femme**.
 Lots 1 et 2 du thème A rattrapés en femme. Reste : **LOT 3** (2 circuits composites),
 **A-04** (3 entrées), **A-05** (2 entrées), **warmup-route / mobilite / approche** (3 entrées),
 et les **reprises sous réserve** A-02F (3 images), A-03F (1 image), squat HOMME.
@@ -81,5 +93,10 @@ et les **reprises sous réserve** A-02F (3 images), A-03F (1 image), squat HOMME
 artefacts lots 1 et 3 ; LOT 4 sans tapis (mouvements sur banc) ; squat HOMME pas assez bas ;
 fire hydrant M/B et squat M femme à refaire ; abduction B femme trop proche de M ;
 le corps ressort parfois **brillant** au lieu d'argenté mat.
+
+**⚠️ LIVRAISON AU USER — LE VISUALISEUR N'EST PAS DISPONIBLE (constaté le 2026-10-07).**
+Le user n'a accès ni au visualiseur d'Arena ni aux pièces jointes : **tout aperçu doit être
+déposé DANS LE DÉPÔT** (planche de travail + GIF) et signalé par un **lien GitHub**, en
+plus du commentaire de chat. Ne jamais considérer « fichier affiché » comme « user a vu ».
 
 ---
