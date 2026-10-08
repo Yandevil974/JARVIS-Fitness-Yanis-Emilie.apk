@@ -1,9 +1,17 @@
 **État consolidé au 8 octobre 2026 (fin de la session `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap`) ·
-71 / 614 animations livrées · Thème A 100 % terminé (50/50) · Thème B en cours :
-**Lot B-01 terminé (H + F)**, **Lot B-02 HOMME terminé** et **Lot B-02 FEMME 1/3**
+73 / 614 animations livrées · Thème A 100 % terminé (50/50) · Thème B en cours :
+**Lot B-01 terminé (H + F)** et **Lot B-02 terminé (H + F)** — prochain lot : **B-03**
 
-> ### 🔄 BILAN DE LA SESSION `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (62/614 → 71/614)
+> ### 🔄 BILAN DE LA SESSION `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (62/614 → 73/614)
 >
+> 0. **Tour 15 — Lot B-02F FEMME COMPLET (73/614)** : `back-squat-charge-moderee` (`c422d46`)
+>    et `presse-a-cuisses-pieds-hauts` (`9e4005c`), assemblages `LOT-B02F-quadriceps.gif` +
+>    `LOT-B02F-PLANCHE-TRAVAIL.jpg` (`30da262`). Nouvelle recette documentée :
+>    **« REMPLACER L'IDENTITÉ, GARDER LES JAMBES »** (garder la frame de l'autre sexe déjà
+>    validée — machine + pose + appuis corrects — et ne demander qu'un changement d'identité) ;
+>    3 stratégies refusées sont listées dans `SUIVI.md` pour ne pas les repayer.
+>    Écart de méthode assumé : position M de la presse FEMME à **RMSE 0,0360** (juste au-dessus
+>    du seuil de 0,030) ; presse **inclinée à chariot** (écart de matériel, comme la version HOMME).
 > 1. **Thème B ouvert et Lot B-01 TERMINÉ (H + F)** — `bulgarian-split-squat`, `goblet-squat`
 >    et `step-up-sur-banc-hauteur-du-genou` livrés en HOMME (`c2efd7d`, `1e759eb`, `0c2d65a`)
 >    **et en FEMME** (`701aa95`, `cb562cb`, `857a674`), avec planches animées et grilles 3×3.
