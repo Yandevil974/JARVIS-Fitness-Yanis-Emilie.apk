@@ -12,7 +12,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **63 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 2/3** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9`)) |
+| Animations créées | **63 / 614 — dont 1 livrée SOUS RÉSERVE d'identité** (`goblet-squat` HOMME, morphologie à reprendre : voir § NON-CONFORMITÉ) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 2/3** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9`)) |
 | Restant à produire | **551** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
@@ -817,13 +817,85 @@ LOT A-02 FEMME (profil / face).
 
 ---
 
+## ⛔ NON-CONFORMITÉ D'IDENTITÉ SIGNALÉE PAR LE USER — 2026-10-08 (PRIORITÉ au prochain tour)
+
+Le user a signalé, planche `LOT-B01-goblet-squat-PLANCHE-FINALE.jpg` en main :
+**« l'homme a l'air différent des autres gif »** puis **« il semble moins musclé aussi »**.
+
+### Constat vérifié (comparatif à l'échelle 1:1 avec les poses de référence validées)
+
+| Point contrôlé | Verdict |
+| --- | --- |
+| Première version du goblet (commit `f11b3b9`) | ❌ **peau striée de fibres grises / aspect écorché**, alors que le style validé est un **blanc argenté LISSE et mat** |
+| Silhouette / masse musculaire | ❌ **plus fin que les autres GIF** : épaules moins larges, deltoïdes et pectoraux moins volumineux, bras plus minces → **carrure non conforme** (comparatif 1:1 `themeA/_sources/A-02/squat-poids-du-corps-A.png` vs `goblet-squat-A`) |
+| Échelle dans le cadre | ❌ le mannequin est **plus petit** que dans les GIF du Thème A (cadrage trop large) |
+| Technique du mouvement | ✅ conforme (haltère vertical au sternum, coudes bas, squat profond, coudes à l'intérieur des genoux) |
+
+### Cause identifiée
+
+Ces frames ont été générées en **partant d'un simple prompt texte** au lieu d'être
+**ancrées sur une pose de référence validée**. Le générateur a alors rendu son propre
+mannequin (peau striée, carrure plus fine), pas celui du chantier. Même famille de dérive
+que les réserves déjà notées (corps « brillant » du mountain climbers, dallage refait en
+grandes dalles lisses).
+
+### Remède testé et VALIDÉ (1 image de test, 2026-10-08)
+
+Régénération testée en repartant de la pose de référence validée **et** en ajoutant un
+paragraphe de **masse musculaire explicite**. Résultat : **carrure nettement plus massive
+et conforme** (épaules très larges, gros deltoïdes, bras épais, pectoraux volumineux), peau
+**lisse et mate** — la voie est bonne. Le paragraphe qui a fonctionné (à réutiliser mot
+pour mot) :
+
+> He is a VERY muscular, heavily hypertrophied 3D anatomical bodybuilder: extremely wide
+> shoulders and big round deltoids, thick massive arms, huge full rounded pectorals, wide
+> lats, deep defined abdominals, narrow waist, powerful legs. IMPORTANT: do NOT slim him
+> down, do NOT make him leaner or narrower — copy his exact silhouette, shoulder width,
+> arm thickness, chest volume and muscle size from this reference image. He must fill the
+> frame exactly the same way (same camera, same distance, same framing, same scale).
+
+⚠️ Sur ce test, la **poigne** était en revanche fautive (une main au-dessus de la tête de
+l'haltère au lieu de la **coupe à deux mains sous la tête supérieure**) : la prochaine
+régénération doit appliquer **les deux consignes à la fois** (masse + poigne en coupe).
+
+### Nouvelle règle de contrôle du chantier (à appliquer AVANT tout assemblage)
+
+1. **Contrôle d'identité** : comparer la nouvelle frame **à 1:1** (même recadrage, aucun
+   redimensionnement) avec une **pose de référence validée** (`themeA/_sources/A-02/squat-poids-du-corps-A.png`
+   pour l'homme, `themeA/femme/_sources/A-02F/` pour la femme) et vérifier trois points :
+   (a) peau blanche argentée **lisse et mate** (aucune fibre grise striée) ;
+   (b) **carrure** (largeur d'épaules, volume pectoraux/bras) comparable ;
+   (c) **échelle** dans le cadre comparable.
+2. **Partir d'une pose de référence validée** — jamais d'un prompt texte seul — dès qu'une
+   pose doit être créée « de zéro ».
+3. Si la masse musculaire a fondu → **ajouter le paragraphe de masse** ci-dessus.
+
+### État de reprise (matériel déjà payé, conservé dans git)
+
+`themeB/_sources/B-01/_reprise/` :
+
+| Fichier | Contenu | Usage au prochain tour |
+| --- | --- | --- |
+| `goblet-squat-A-v3-base-massive-poigne-a-corriger.png` | **base la plus conforme en masse** (carrure massive, peau lisse) — poigne fautive (1 main au-dessus) | **référence pour régénérer A** (corriger la poigne), puis M et B depuis ce nouveau A |
+| `goblet-squat-M-v2-corps-fin.png` | mi-squat 45°, technique conforme, **corps fin** | référence de POSE uniquement |
+| `goblet-squat-B-v2-corps-fin.png` | squat profond 90° coudes aux genoux, **corps fin** | référence de POSE uniquement |
+| `step-up-A-v2-corps-fin.png` | départ step-up, pied gauche entier sur le banc, **corps fin** | référence de POSE |
+| `step-up-M-v2-corps-fin.png` | mi-montée, pied droit décollé, **corps fin** | référence de POSE |
+| `step-up-B-v3-plateforme-corps-fin.png` | **seule pose « debout sur un support » obtenue** en 5 tentatives (support devenu une **marche basse** au lieu du banc long), **corps fin** | référence de POSE (⚠️ support à remplacer par le banc long) |
+
+⚠️ **Le dossier `_sources/B-01/` ne contient plus que les 3 PNG du `bulgarian-split-squat`.**
+Les positions du `goblet-squat` et du `step-up` ont été déplacées dans `_reprise/` afin
+qu'**aucun assemblage ne puisse se faire par erreur** avec des frames hétérogènes.
+
+---
+
 ## THÈME B — MUSCULATION · LOT B-01 HOMME (2 / 3 livré : `bulgarian-split-squat`, `goblet-squat`) — 2026-10-07/08 (`c2efd7d`, `f11b3b9`)
 
 | Fichier | Exercice | Positions | Statut |
 | --- | --- | --- | --- |
 | `themeB/bulgarian-split-squat-3poses.gif` | Bulgarian split squat HOMME (poids du corps) | Vue trois-quarts avant sur tapis noir avec banc de musculation plat noir derrière : A = départ jambe avant droite tendue, pied arrière gauche en appui sur le banc noir, mains aux hanches · M = demi-descente à ~45°, bras levés pour l'équilibre (réserve : banc noir légèrement plus décalé à droite sur M) · B = squat bulgare profond à 90° (cuisse avant horizontale parallèle au sol, genou arrière bas sous le banc, bras à l'horizontale) | ✅ **livré (`c2efd7d`)** (RMSE A→M = **0,1278**, M→B = **0,1347**) |
-| `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | Vue trois-quarts avant sur tapis noir, pieds largeur d'épaules pointes ouvertes : A = debout jambes tendues, **haltère noir tenu verticalement en coupe contre le sternum** (les deux mains sous la tête supérieure, coudes pointés vers le bas) · M = demi-squat contrôlé à ~45°, haltère collé au sternum · B = squat profond 90° (hanches sous la ligne des genoux), **coudes à l'intérieur des genoux**, talons au sol, buste vertical | ✅ **livré (`f11b3b9`)** (RMSE A→M = **0,3476**, M→B = **0,2979**) |
-| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | **EN COURS** : A et M conformes dans `_sources/B-01/` (voir § suivant) — la position B reste à produire | ⚠️ **2 / 3 positions** |
+| `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | Vue trois-quarts avant sur tapis noir, pieds largeur d'épaules pointes ouvertes : A = debout jambes tendues, **haltère noir tenu verticalement en coupe contre le sternum** (les deux mains sous la tête supérieure, coudes pointés vers le bas) · M = demi-squat contrôlé à ~45°, haltère collé au sternum · B = squat profond 90° (hanches sous la ligne des genoux), **coudes à l'intérieur des genoux**, talons au sol, buste vertical | ⚠️ **livré sous RÉSERVE d'identité (`f11b3b9`, retouché le 2026-10-08)** : technique conforme, **morphologie à reprendre** (carrure plus fine que le reste du chantier ; 1re version à peau striée) → régénération des 3 positions prévue. RMSE A→M = **0,0779**, M→B = **0,0957** (mesure propre, caméra stable) |
+| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | **NON LIVRÉ** : les 3 positions existent (A pied sur le banc → M mi-montée → B debout sur le support) mais **toutes au corps « fin »**, et la position B repose sur une **marche basse** au lieu du banc long → **série à régénérer** (voir § NON-CONFORMITÉ) | ⛔ **3 / 3 positions obtenues, 0 livrée** |
 
 **Aperçus dans le dépôt (règle 15) :**
 - `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg` ;
@@ -861,6 +933,30 @@ et M/B (plus serrés)** sur le `goblet-squat`, comme cela avait déjà été ass
 - **Aucune animation `step-up-...-3poses.gif` n'est livrée ce tour** : l'exercice est
   annoncé **incomplet**, jamais masqué (règle 4). Les 2 positions saines sont conservées
   dans git pour ne pas les payer deux fois (règle 12).
+
+### Budget d'images IA du 10ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge technique) — TOUR DE CORRECTION D'IDENTITÉ
+
+Déclenché par le retour du user (« l'homme a l'air différent des autres gif » puis « il
+semble moins musclé aussi »). Objectif du tour : réparer l'identité (peau lisse + carrure)
+et finir le `step-up`.
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `goblet-squat` A v2 (depuis la pose de référence validée, consigne « peau lisse sans fibres striées ») | ✅ conforme en peau — corrige l'aspect écorché (mais corps encore **fin**) |
+| 2 | `goblet-squat` M v2 (depuis `squat-poids-du-corps-M`) | ✅ conforme (RMSE A→M = **0,0779**, caméra stable) |
+| 3 | `goblet-squat` B v2 (depuis `squat-poids-du-corps-B`) | ✅ conforme (RMSE M→B = **0,0957**) |
+| 4 | `step-up` A v2 (depuis la pose de référence, banc en travers devant) | ✅ conforme (pied gauche entier sur le banc, 2 jambes lisibles) |
+| 5 | `step-up` M v2 (chaînée depuis le nouveau A) | ✅ conforme (pied droit décollé, pied gauche toujours sur le banc) |
+| 6 | `step-up` B tentative 1 (depuis M, consigne « debout sur le banc ») | ❌ rejetée : le mannequin reste **au sol**, le banc reste vide à côté |
+| 7 | `step-up` B tentative 2 (depuis A, consigne « poser le 2ᵉ pied sur le banc ») | ❌ rejetée : même échec (mannequin au sol) |
+| 8 | `step-up` B tentative 3 (**changement de vocabulaire : « step platform » au lieu de « bench »**) | ✅ **pose correcte** (debout, jambes tendues, les 2 pieds sur le support) — ⚠️ mais le support est devenu une **marche basse** et non le banc long |
+| 9 | `step-up` B tentative 4 (remettre le banc long sous ses pieds) | ⏹️ **appel interrompu par le user** — compté honnêtement, aucune image retenue |
+| 10 | `goblet-squat` A v3 (**test du paragraphe de masse musculaire**) | ✅ **carrure massive et conforme, peau lisse** → **remède validé** ; ❌ poigne fautive (1 main au-dessus de l'haltère) → base conservée pour la reprise |
+
+**Bilan du tour : 3 images réellement livrables** (les deux séries restent à régénérer pour
+la morphologie) **+ 5 rejets + 1 appel interrompu**. Drapeau rouge : **10 / 10**.
+Aucune image rejetée n'est intégrée à une animation livrée. Aucune animation n'a été
+annoncée comme terminée à tort.
 
 ### Budget d'images IA du 9ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge technique)
 

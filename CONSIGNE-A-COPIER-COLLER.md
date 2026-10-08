@@ -48,24 +48,48 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
     - ✅ **`bulgarian-split-squat` HOMME** (`c2efd7d`, **62 / 614**) : squat bulgare au poids
       du corps en vue 3/4 avant sur tapis noir avec banc noir derrière (RMSE A→M `0,1278`,
       M→B `0,1347`, planche `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg`).
-    - ✅ **`goblet-squat` HOMME** (`f11b3b9`, **63 / 614**) : haltère noir tenu verticalement
-      en coupe contre le sternum, A debout → M demi-squat 45° → B squat profond 90° coudes à
-      l'intérieur des genoux (planche `themeB/LOT-B01-goblet-squat-PLANCHE-FINALE.jpg`).
-      ⚠️ **Réserve déclarée** : le générateur a aussi changé l'échelle de caméra — mesuré sur
-      le **décor seul**, l'écart A→M est de `0,3946` (contre `0,1301` pour le bulgarian déjà
-      livré). Les RMSE affichés (`0,3476` / `0,2979`) **ne mesurent donc pas le mouvement** ;
-      la lisibilité a été validée à l'œil. Le dire tel quel, ne pas le maquiller.
-    - ⚠️ **`step-up-sur-banc-hauteur-du-genou` HOMME : 2 / 3 positions** — A et M conformes
-      dans `themeB/_sources/B-01/`, **la position B a été refusée 5 fois** (le générateur
-      repose le mannequin au sol au lieu de le hisser sur le banc) → **aucun GIF livré, ne pas
-      annoncer l'exercice comme terminé**. Pistes : vue de profil, ou générer B d'abord.
+    - ⚠️ **`goblet-squat` HOMME** (`f11b3b9`, **63 / 614**) : technique conforme (haltère
+      vertical au sternum, A debout → M demi-squat 45° → B squat profond coudes aux genoux),
+      mais **livré SOUS RÉSERVE d'identité** → **à régénérer** (voir le retour user ci-dessous).
+      Les 3 positions ont été refaites le 2026-10-08 avec une **peau lisse conforme** (RMSE
+      A→M `0,0779`, M→B `0,0957`, caméra stable) — la **carrure** reste à corriger.
+    - ⛔ **`step-up-sur-banc-hauteur-du-genou` HOMME** : **3 / 3 positions obtenues, 0 livrée**.
+      A (pied entier sur le banc) et M (pied opposé décollé) sont bonnes en pose mais au corps
+      « fin » ; B (debout sur le support) n'a été obtenue qu'avec le vocabulaire « step
+      platform » et le support rendu est une **marche basse** au lieu du banc long →
+      **série à régénérer**, **ne pas annoncer l'exercice comme terminé**.
+- 🔴 **RETOUR DU USER (2026-10-08) — PRIORITÉ ABSOLUE : l'homme du Lot B-01 « a l'air
+  différent des autres GIF » et « semble moins musclé ».** C'est exact et vérifié : carrure
+  plus **fine** que le reste du chantier + 1ʳᵉ version à **peau striée / écorchée** (le style
+  validé est un argenté **lisse et mat**). **Cause** : frames générées d'un **prompt texte
+  seul**, sans ancrage sur une pose de référence validée.
+  **Remède VALIDÉ** (testé) : partir de `themeA/_sources/A-02/squat-poids-du-corps-A.png`
+  (ou `themeA/femme/_sources/A-02F/…` pour la femme) **et** ajouter ce paragraphe :
+  > He is a VERY muscular, heavily hypertrophied 3D anatomical bodybuilder: extremely wide
+  > shoulders and big round deltoids, thick massive arms, huge full rounded pectorals, wide
+  > lats, deep defined abdominals, narrow waist, powerful legs. IMPORTANT: do NOT slim him
+  > down, do NOT make him leaner or narrower — copy his exact silhouette, shoulder width,
+  > arm thickness, chest volume and muscle size from this reference image. He must fill the
+  > frame exactly the same way (same camera, same distance, same framing, same scale).
+
+  **Nouveau contrôle obligatoire avant CHAQUE assemblage** : comparer la frame **à 1:1**
+  (sans redimensionner) avec la pose de référence validée sur trois points — (a) peau lisse
+  et mate sans fibres grises, (b) carrure comparable, (c) échelle comparable. À appliquer
+  aussi au `bulgarian-split-squat` déjà livré (`c2efd7d`), à recontrôler.
+  **Matériel de reprise payé** : `themeB/_sources/B-01/_reprise/` (poses correctes au corps
+  fin + la base massive `goblet-squat-A-v3-base-massive-poigne-a-corriger.png`).
+  ⚠️ `_sources/B-01/` ne contient plus que les PNG du `bulgarian-split-squat` : tout
+  assemblage depuis ce dossier échouera volontairement (garde-fou anti-frames-hétérogènes).
+- **Déblocage technique trouvé pour le step-up** : le mot « bench » fait asseoir le
+  mannequin ou le laisse au sol ; écrire **« STEP PLATFORM (solid black plyometric step,
+  ~45 cm tall, 60 cm deep)… he is the one who is high: both sneakers planted flat on its top,
+  the step UNDER his feet, carrying his full weight »** débloque la pose « debout sur le
+  support ». Reste à corriger la **forme du support** (marche basse → banc long) et la
+  **morphologie**.
 - **À FAIRE IMMÉDIATEMENT, dans l'ordre :**
-  1. **Finir `step-up-sur-banc-hauteur-du-genou` HOMME : 1 SEULE image** (position B = extension
-     complète debout sur le banc noir). A et M sont **déjà commitées** dans
-     `themeB/_sources/B-01/` — ne pas les régénérer, elles sont payées. Pistes : (a) repartir de
-     M en demandant explicitement de **hisser le mannequin sur le banc** ; (b) passer en **vue
-     de profil** (le profil débloque les poses qui échouent en 3/4) ; (c) générer **B d'abord**
-     et re-chaîner A et M depuis les sources déjà dans git.
+  1. **Régénérer les séries `goblet-squat` ET `step-up` HOMME avec la bonne identité**
+     (carrure massive + peau lisse) en appliquant le remède et le contrôle 1:1 ci-dessus.
+     Le `step-up` a besoin du support = **banc long** (pas la marche basse).
   2. **Assembler le Lot B-01 HOMME** : planche animée `themeB/LOT-B01-quadriceps.gif`
      (`1420×265`, 4 frames) + grille 3×3 `themeB/LOT-B01-PLANCHE-TRAVAIL.jpg` (`1440×900`).
      ⚠️ `scripts/build-gif-lot.sh` **régénère** les 3 GIFs individuels depuis des PNG

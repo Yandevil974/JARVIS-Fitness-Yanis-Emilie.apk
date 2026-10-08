@@ -235,17 +235,62 @@ f07c04d  feat(animations): livre circuit-gainage FEMME composite (9/9, 44/614)
 
 ## 5. PROCHAINE ACTION IMMÉDIATE (AU PROCHAIN TOUR)
 
+### 🔴 PRIORITÉ ABSOLUE — rattraper la CONFORMITÉ D'IDENTITÉ du Lot B-01
+
+**Le user a signalé le 2026-10-08 que le mannequin du `goblet-squat` « a l'air différent des
+autres GIF » et « semble moins musclé ».** Vérifié : c'est exact — carrure plus **fine** que
+le reste du chantier, et la 1ʳᵉ version livrée avait même une **peau striée / aspect écorché**
+(le style validé est un blanc argenté **LISSE et mat**). Détail complet, preuves et
+comparatifs dans `yanis-fitness-evolution/animations/SUIVI.md` § « NON-CONFORMITÉ
+D'IDENTITÉ ».
+
+**Cause** : ces frames ont été générées d'un **prompt texte seul**, sans ancrage sur une pose
+de référence validée → le générateur a rendu son propre mannequin.
+
+**Remède VALIDÉ par un test de ce tour** (à réutiliser mot pour mot) — partir de la pose de
+référence validée **et** ajouter ce paragraphe :
+
+> He is a VERY muscular, heavily hypertrophied 3D anatomical bodybuilder: extremely wide
+> shoulders and big round deltoids, thick massive arms, huge full rounded pectorals, wide
+> lats, deep defined abdominals, narrow waist, powerful legs. IMPORTANT: do NOT slim him
+> down, do NOT make him leaner or narrower — copy his exact silhouette, shoulder width,
+> arm thickness, chest volume and muscle size from this reference image. He must fill the
+> frame exactly the same way (same camera, same distance, same framing, same scale).
+
+**NOUVELLE RÈGLE DE CONTRÔLE (à appliquer avant CHAQUE assemblage)** — comparer la frame
+**à 1:1** (aucun redimensionnement) avec `themeA/_sources/A-02/squat-poids-du-corps-A.png`
+(homme) ou `themeA/femme/_sources/A-02F/` (femme) sur trois points : **(a)** peau lisse et
+mate sans fibres grises, **(b)** carrure comparable, **(c)** échelle dans le cadre comparable.
+À appliquer **aussi** au `bulgarian-split-squat` livré (`c2efd7d`) : à recontrôler avant de
+valider le lot.
+
+**Matériel de reprise déjà payé** (dans `themeB/_sources/B-01/_reprise/`, à utiliser comme
+références de **POSE**) :
+- `goblet-squat-A-v3-base-massive-poigne-a-corriger.png` = **la base la plus conforme en
+  masse** (mais poigne fautive : 1 main au-dessus de l'haltère au lieu de la coupe à deux
+  mains) → **régénérer A en corrigeant la poigne**, puis M et B depuis ce nouveau A ;
+- `goblet-squat-{M,B}-v2-corps-fin.png` = poses du goblet correctes, corps fin ;
+- `step-up-{A,M}-v2-corps-fin.png` = poses du step-up correctes (pied entier sur le banc),
+  corps fin ;
+- `step-up-B-v3-plateforme-corps-fin.png` = seule pose « debout sur un support » obtenue
+  (support = marche basse, à remplacer par le banc long).
+
+⚠️ `_sources/B-01/` ne contient plus que les PNG du `bulgarian-split-squat` : **tout
+assemblage de GIF depuis ce dossier échouera volontairement** tant que les nouvelles séries
+ne sont pas régénérées (garde-fou contre les frames hétérogènes).
+
+### Ensuite, dans l'ordre
+
 1. **Finir `step-up-sur-banc-hauteur-du-genou` HOMME — 1 seule image à produire** (position B :
    extension complète debout sur le banc noir). Les positions **A et M sont déjà conformes et
    commitées** dans `themeB/_sources/B-01/` — **ne pas les régénérer** (elles ont été payées).
-   Les 5 tentatives de ce tour ont été refusées (le générateur repose le mannequin au sol au
-   lieu de le hisser sur le banc) :
-   - *piste 1* : repartir de la position M avec une consigne « lève le mannequin : ses deux
-     pieds sont SUR le dessus du banc » — et non « reste au même endroit » ;
-   - *piste 2* : passer en **vue de profil** (le profil débloque les poses que la vue
-     trois-quarts fait échouer — même leçon qu'avec le fire hydrant FEMME) ;
-   - *piste 3* : **générer B d'abord** (mannequin debout sur le banc) puis re-chaîner A et M
-     depuis les sources saines déjà dans git.
+   ✅ **Le déblocage a été trouvé au 10ᵉ tour : le mot « bench » pousse le générateur à
+   ASSEOIR le mannequin ou à le laisser au sol. En remplaçant « bench » par
+   « STEP PLATFORM (solid black plyometric step, ~45 cm tall, 60 cm deep) » et en écrivant
+   « he is the one who is high: both sneakers are planted flat on the black top, the step is
+   directly UNDER his feet, carrying his full weight », la pose a été obtenue du premier coup.**
+   Reste à corriger dans la même consigne : **la forme du support** (le générateur a rendu une
+   **marche basse** au lieu du **banc long**) et **la morphologie** (corps fin).
    ⚠️ Ne jamais livrer cet exercice avec seulement 2 positions ni recycler une image d'un
    autre exercice (règles 1 et 4).
 2. **Assembler le Lot B-01 HOMME** une fois B livrée :
