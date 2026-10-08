@@ -8,7 +8,7 @@ du nouveau chat. Il est autonome : il ne suppose rien des conversations précéd
 Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 
 **Dépôt** : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public).
-**Branche contenant tout l'historique consolidé (67 / 614 animations)** :
+**Branche contenant tout l'historique consolidé (71 / 614 animations)** :
 `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (derniers commits : `606da8b` assemblages du
 Lot B-01F, `857a674` `step-up` FEMME, `cb562cb` `goblet-squat` FEMME, `701aa95`
 `bulgarian-split-squat` FEMME). Repli : `arena/93096144-jarvis-fitness-yanis-emilie-ap`,
