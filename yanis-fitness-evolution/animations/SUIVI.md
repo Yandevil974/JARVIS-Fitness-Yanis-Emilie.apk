@@ -12,8 +12,8 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **62 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 1/3** (`bulgarian-split-squat` `c2efd7d`)) |
-| Restant à produire | **552** |
+| Animations créées | **63 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 2/3** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9`)) |
+| Restant à produire | **551** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
@@ -23,7 +23,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (3/3 ✅ `5467b86`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) + **B-01 HOMME (1/3 : `bulgarian-split-squat` livré)** |
 | Versions femme produites | **25 / 307** |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
-| Thème B (musculation) | **1 / 187 en homme** (`bulgarian-split-squat` livré dans le Lot B-01) |
+| Thème B (musculation) | **2 / 187 en homme** (`bulgarian-split-squat` + `goblet-squat` livrés dans le Lot B-01) |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -817,16 +817,73 @@ LOT A-02 FEMME (profil / face).
 
 ---
 
-## THÈME B — MUSCULATION · LOT B-01 HOMME (1 / 3 livré : `bulgarian-split-squat`) — 2026-10-07 (`c2efd7d`)
+## THÈME B — MUSCULATION · LOT B-01 HOMME (2 / 3 livré : `bulgarian-split-squat`, `goblet-squat`) — 2026-10-07/08 (`c2efd7d`, `f11b3b9`)
 
 | Fichier | Exercice | Positions | Statut |
 | --- | --- | --- | --- |
 | `themeB/bulgarian-split-squat-3poses.gif` | Bulgarian split squat HOMME (poids du corps) | Vue trois-quarts avant sur tapis noir avec banc de musculation plat noir derrière : A = départ jambe avant droite tendue, pied arrière gauche en appui sur le banc noir, mains aux hanches · M = demi-descente à ~45°, bras levés pour l'équilibre (réserve : banc noir légèrement plus décalé à droite sur M) · B = squat bulgare profond à 90° (cuisse avant horizontale parallèle au sol, genou arrière bas sous le banc, bras à l'horizontale) | ✅ **livré (`c2efd7d`)** (RMSE A→M = **0,1278**, M→B = **0,1347**) |
-| `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | À produire au prochain tour (haltère tenu verticalement en coupe contre le sternum, coudes vers le bas touchant l'intérieur des genoux au point bas) | ⬜ prochain tour |
-| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | À produire au prochain tour (pied entier posé sur le banc à hauteur de genou, poussée unilatérale dans le talon sans élan de la jambe arrière) | ⬜ prochain tour |
+| `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | Vue trois-quarts avant sur tapis noir, pieds largeur d'épaules pointes ouvertes : A = debout jambes tendues, **haltère noir tenu verticalement en coupe contre le sternum** (les deux mains sous la tête supérieure, coudes pointés vers le bas) · M = demi-squat contrôlé à ~45°, haltère collé au sternum · B = squat profond 90° (hanches sous la ligne des genoux), **coudes à l'intérieur des genoux**, talons au sol, buste vertical | ✅ **livré (`f11b3b9`)** (RMSE A→M = **0,3476**, M→B = **0,2979**) |
+| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | **EN COURS** : A et M conformes dans `_sources/B-01/` (voir § suivant) — la position B reste à produire | ⚠️ **2 / 3 positions** |
 
 **Aperçus dans le dépôt (règle 15) :**
-- `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg`.
+- `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg` ;
+- `themeB/LOT-B01-goblet-squat-PLANCHE-FINALE.jpg` (1440×300 — A/M/B annotées).
+
+### ⚠️ Réserve de méthode importante — la mesure RMSE est « polluée » par le changement de caméra
+
+Le seuil du chantier (`compare -metric RMSE >= 0,030`) suppose implicitement que **seul le
+mannequin bouge** entre deux positions. Sur ce tour, le générateur a **aussi** changé la
+distance de caméra et l'échelle du mannequin entre les frames. Mesuré sur une bande de
+**décor seul** (350×500 sans le mannequin) :
+
+| Comparaison (décor seul) | RMSE normalisé |
+| --- | --- |
+| `goblet-squat` A → M | **0,3946** |
+| `goblet-squat` M → B | 0,2323 |
+| `bulgarian-split-squat` A → M *(exercice déjà livré, pour étalonnage)* | 0,1301 |
+
+**Conclusion honnête** : les RMSE du `goblet-squat` (0,3476 et 0,2979) sont **largement
+gonflées** par le déplacement de caméra — elles prouvent bien que les positions diffèrent,
+mais **pas** que la seule articulation ait bougé. La lisibilité du mouvement a donc été
+validée **à l'œil** (debout → demi-squat → squat profond, haltère collé au sternum), pas par
+la mesure. Réserve assumée et déclarée : **cadrage et échelle varient entre A (plus large)
+et M/B (plus serrés)** sur le `goblet-squat`, comme cela avait déjà été assumé au LOT 4.
+
+### 🚧 EN COURS — `step-up-sur-banc-hauteur-du-genou` HOMME (2 / 3 positions)
+
+| Position | Fichier source | Statut |
+| --- | --- | --- |
+| A — pied gauche entier à plat sur le banc à hauteur de genou, pied droit au sol sur le tapis, mains aux hanches | `_sources/B-01/step-up-sur-banc-hauteur-du-genou-A.png` | ✅ conforme (le banc est **en travers** devant le mannequin, genou gauche fléchi ~90°, les 2 jambes lisibles) |
+| M — montée à mi-course, jambe gauche à ~135°, pied droit décollé du sol sans élan | `_sources/B-01/step-up-sur-banc-hauteur-du-genou-M.png` | ✅ conforme (même banc, même décor que A) |
+| B — extension complète debout sur le banc | — | ⬜ **à produire** (4 tentatives rejetées ce tour, voir budget) |
+
+- RMSE A → M = **0,3262** (0,3462 sur recadrage central) — mouvement très lisible.
+- **Aucune animation `step-up-...-3poses.gif` n'est livrée ce tour** : l'exercice est
+  annoncé **incomplet**, jamais masqué (règle 4). Les 2 positions saines sont conservées
+  dans git pour ne pas les payer deux fois (règle 12).
+
+### Budget d'images IA du 9ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge technique)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `goblet-squat` HOMME A (debout, haltère vertical au sternum, depuis `squat-poids-du-corps-A.png`) | ✅ conforme |
+| 2 | `goblet-squat` HOMME M (demi-squat 45°, **depuis `squat-poids-du-corps-M.png` seule** — astuce documentée) | ✅ conforme (RMSE A→M = 0,3476) |
+| 3 | `goblet-squat` HOMME B (squat profond, **depuis `squat-poids-du-corps-B.png` seule**) | ✅ conforme (RMSE M→B = 0,2979) → **`goblet-squat` HOMME livré (`f11b3b9`, 63/614)** |
+| 4 | `step-up` HOMME A (base indépendante, une seule référence, `only two legs`) | ✅ conforme |
+| 5 | `step-up` HOMME M (base indépendante depuis `squat-poids-du-corps-B.png`) | ✅ conforme |
+| 6 | `step-up` HOMME B (tentative 1, depuis M) | ❌ rejetée : cadrage beaucoup plus large (mannequin petit) → saut d'échelle dans la boucle |
+| 7 | `step-up` HOMME B (tentative 2, depuis M, consigne « même distance ») | ❌ rejetée : zoom serré + **double image fantôme** sur le bord gauche |
+| 8 | `step-up` HOMME B (tentative 3, depuis M, consigne « ne pas zoomer ») | ❌ rejetée : **décor entièrement changé** (coucher de soleil sur l'océan, vue de face) |
+| 9 | `step-up` HOMME B (tentative 4, interpolation M + frame B rejetée) | ❌ rejetée : le générateur a **retiré la jambe du banc** et reposé les deux pieds sur le tapis — mouvement inversé |
+| 10 | `step-up` HOMME B (tentative 5, reprise de M avec consigne « ne bouge pas la caméra, ne touche pas au décor ») | ❌ rejetée : **exactement le même échec** que la tentative 4 (les 2 pieds reposés au sol, le banc à côté du mannequin) → **plafond technique atteint** |
+
+**5 images rejetées** (comptées, pas dissimulées : 1 saut d'échelle, 1 image fantôme,
+1 changement de décor, 2 mouvements inversés). Aucune n'est intégrée à une animation
+livrée. **Drapeau rouge : 10 / 10 appels `generate_image` consommés ce tour.**
+Le générateur refuse, sur cette série, de hisser le mannequin **debout sur le banc**
+(il le repose systématiquement au sol). À retenter au prochain tour avec une nouvelle
+base (par ex. une position A générée d'emblée avec le mannequin déjà **à genou sur le
+banc**, ou une vue de profil) — pistes à essayer, à commencer par la vue de profil.
 
 ### Budget d'images IA du 8ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
 
@@ -843,8 +900,37 @@ LOT A-02 FEMME (profil / face).
 | 9 | `bulgarian-split-squat` HOMME M (essai 3, chaîné avec B en 1ᵉʳ) | ❌ rejeté (bras à 45° mais jambes restées basses comme B, RMSE M→B = 0,0336) |
 | 10 | `bulgarian-split-squat` HOMME M (essai 4, depuis `squat-poids-du-corps-M.png` seule à mi-hauteur 45°) | ✅ conforme (vraie mi-hauteur à 45°, RMSE A→M = 0,1278, M→B = 0,1347) → **livré (`c2efd7d`)** |
 
-### Technique vérifiée en ligne avant génération du LOT B-01 (règle 14)
+### Technique vérifiée en ligne AVANT génération du Lot B-01 (règle 14)
 
+- **Goblet squat (haltère)** *(exercice livré ce tour, `f11b3b9`)* : pieds largeur
+  d'épaules, **pointes ouvertes de 10-15°**, haltère (ou kettlebell) maintenu
+  **verticalement contre le haut du sternum**, mains **en coupe sous la tête
+  supérieure** de l'haltère, **coudes pointés vers le bas** ; descente genoux dans
+  l'axe des orteils, **talons ancrés au sol**, torse aussi vertical que possible ;
+  descente jusqu'à ce que **les coudes touchent l'intérieur des genoux** (ou hanches
+  sous la ligne des genoux), pause d'une seconde en bas, remontée en poussant sur
+  les talons ; erreurs à ne pas montrer : charge éloignée du buste, genoux en valgus,
+  dos arrondi, talons décollés
+  ([h2olesangles](https://www.h2olesangles.fr/globe-squat/),
+  [moncoachsportifenligne](https://moncoachsportifenligne.fr/go-let-squat-guide-complet-pour-muscler-jambes-et-fessiers/),
+  [ligue-centre-val-de-loire](https://ligue-centre-val-de-loire-judo-jujitsu-da.fr/go-let-squat/),
+  [my15minutechallenge](https://www.my15minutechallenge.com/exercices/goblet-squat-avec-rebond/)).
+  *Note matériel : la prise haltère est bien celle décrite par
+  [moncoachsportifenligne](https://moncoachsportifenligne.fr/go-let-squat-guide-complet-pour-muscler-jambes-et-fessiers/)
+  (« on cale une extrémité dans les paumes, mains en coupe sous le disque supérieur ») —
+  `inventaire.json` donne bien `goblet-squat` = `["dumbbell"]`.*
+- **Step-up sur banc (hauteur du genou)** : surface stable **à hauteur du genou**
+  (≈ 40-45 cm : quand le pied est dessus, la cuisse est à peu près parallèle au sol et
+  le genou avant fléchi à ~90°) ; **pied d'appui posé ENTIÈREMENT à plat** sur le banc
+  (talon compris) ; montée en **poussant uniquement dans le talon du pied posé**, la
+  jambe arrière **reste passive et ne donne aucun élan** (elle décolle du sol) ;
+  buste droit, abdominaux et fessier contractés ; au sommet, extension complète de la
+  jambe d'appui debout sur le banc ; en cas de montée avec levée de genou, la hanche
+  et le genou de la jambe libre arrivent à ~90°
+  ([louismove](https://louismove.com/kettlebell-step-ups/),
+  [gornation](https://www.gornation.com/fr/blogs/calisthenics-exercises/step-up),
+  [litobox](https://www.litobox.com/exercice-step-ups),
+  [lady-concept](https://lady-concept.fr/7-exercices-infaillibles-pour-sculpter-vos-fessiers/)).
 - **Bulgarian split squat (poids du corps)** : un pied posé bien à plat au sol à l'avant,
   l'autre pied surélevé en arrière sur un banc stable à hauteur du genou (dessus du pied
   ou pointe en appui) ; buste droit ou très légèrement incliné vers l'avant, descente
