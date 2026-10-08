@@ -8,23 +8,23 @@ du nouveau chat. Il est autonome : il ne suppose rien des conversations précéd
 Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 
 **Dépôt** : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public).
-**Branche contenant tout l'historique consolidé (62 / 614 animations)** :
-`arena/93096144-jarvis-fitness-yanis-emilie-ap` (dernier commit : `688d8ce` ; derniers commits
-de contenu : `c2efd7d` `bulgarian-split-squat` HOMME, `5467b86` LOT A-08F/09F FEMME complet,
-`204a8b4` LOT A-08/09 HOMME complet).
+**Branche contenant tout l'historique consolidé (63 / 614 animations)** :
+`arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (derniers commits : `877f003` suivi tour 9,
+`f11b3b9` `goblet-squat` HOMME). Repli : `arena/93096144-jarvis-fitness-yanis-emilie-ap`,
+valide jusqu'à son commit `dbb6323` (62/614).
 ⚠️ Si le prompt système de ce nouveau chat t'impose une nouvelle branche de travail
 `arena/<nouvel-id>-jarvis-fitness-yanis-emilie-ap`, travaille et pousse sur la branche
 imposée par le système, MAIS commence obligatoirement par y rapatrier l'historique de
-`arena/93096144-jarvis-fitness-yanis-emilie-ap` avec les commandes ci-dessous.
+`arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` avec les commandes ci-dessous.
 
 **OUVERTURE GIT OBLIGATOIRE AU DÉBUT DE CHAQUE TOUR :**
 
 ```bash
 rm -f .git/index.lock
 # Toujours cibler la branche précise (évite de télécharger toutes les branches binaires) :
-git fetch origin arena/93096144-jarvis-fitness-yanis-emilie-ap
+git fetch origin arena/bdd122a8-jarvis-fitness-yanis-emilie-ap
 # Si HEAD est retombé sur ddd1fb9, réinitialiser sur le dernier commit du chantier :
-git reset --hard origin/arena/93096144-jarvis-fitness-yanis-emilie-ap
+git reset --hard origin/arena/bdd122a8-jarvis-fitness-yanis-emilie-ap
 ```
 
 *(Aux tours suivants du même chat, fais `git fetch origin <ta-branche-de-session>` puis
@@ -35,7 +35,7 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT CONSOLIDÉ AU 2026-10-08 (62 / 614 animations livrées)
+## 1. ÉTAT CONSOLIDÉ AU 2026-10-08 (63 / 614 animations livrées)
 
 - **Thème A (Échauffement, mobilité & activation) : 100 % TERMINÉ (50 / 50 ✅)**
   - **25 / 25 en HOMME** (LOT 1, LOT 2, LOT 3, A-01 à A-05, et LOT A-08/09 `warmup-route`,
@@ -43,23 +43,38 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
   - **25 / 25 en FEMME** (LOT R1F, LOT R2F, LOT 3F composites 9 poses `circuit-gainage`
     `f07c04d` & `circuit-abdominaux` `5e5a2e3`, A-01F à A-05F, et LOT A-08F/09F
     `warmup-route`, `warmup-mobilite`, `warmup-approche` `5467b86`).
-- **Thème B (Musculation — Sous-thème Jambes : quadriceps & squats) : ouvert (1 / 187 en HOMME)**
-  - **Lot B-01 HOMME (1 / 3 livré)** :
+- **Thème B (Musculation — Sous-thème Jambes : quadriceps & squats) : ouvert (2 / 187 en HOMME)**
+  - **Lot B-01 HOMME (2 / 3 livrés + 1 exercice à 2/3 positions)** :
     - ✅ **`bulgarian-split-squat` HOMME** (`c2efd7d`, **62 / 614**) : squat bulgare au poids
       du corps en vue 3/4 avant sur tapis noir avec banc noir derrière (RMSE A→M `0,1278`,
       M→B `0,1347`, planche `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg`).
+    - ✅ **`goblet-squat` HOMME** (`f11b3b9`, **63 / 614**) : haltère noir tenu verticalement
+      en coupe contre le sternum, A debout → M demi-squat 45° → B squat profond 90° coudes à
+      l'intérieur des genoux (planche `themeB/LOT-B01-goblet-squat-PLANCHE-FINALE.jpg`).
+      ⚠️ **Réserve déclarée** : le générateur a aussi changé l'échelle de caméra — mesuré sur
+      le **décor seul**, l'écart A→M est de `0,3946` (contre `0,1301` pour le bulgarian déjà
+      livré). Les RMSE affichés (`0,3476` / `0,2979`) **ne mesurent donc pas le mouvement** ;
+      la lisibilité a été validée à l'œil. Le dire tel quel, ne pas le maquiller.
+    - ⚠️ **`step-up-sur-banc-hauteur-du-genou` HOMME : 2 / 3 positions** — A et M conformes
+      dans `themeB/_sources/B-01/`, **la position B a été refusée 5 fois** (le générateur
+      repose le mannequin au sol au lieu de le hisser sur le banc) → **aucun GIF livré, ne pas
+      annoncer l'exercice comme terminé**. Pistes : vue de profil, ou générer B d'abord.
 - **À FAIRE IMMÉDIATEMENT, dans l'ordre :**
-  1. **Terminer le Lot B-01 HOMME (6 images IA)** dans `yanis-fitness-evolution/animations/themeB/` :
-     - **`goblet-squat` HOMME** (3 images A, M, B — haltère tenu verticalement en coupe contre
-       le sternum, coudes vers le bas touchant l'intérieur des genoux au point bas) ;
-     - **`step-up-sur-banc-hauteur-du-genou` HOMME** (3 images A, M, B — au poids du corps,
-       pied gauche posé entièrement à plat sur le banc noir à hauteur du genou, montée
-       unilatérale en poussant dans le talon gauche sans élan de la jambe arrière) ;
-     - Assembler la planche animée `themeB/LOT-B01-quadriceps.gif` (`1420×265`, 4 frames) et
-       la grille 3×3 `themeB/LOT-B01-PLANCHE-TRAVAIL.jpg` (`1440×900`).
-  2. **Enchaîner avec le Lot B-01 FEMME** (`bulgarian-split-squat`, `goblet-squat`,
-     `step-up-sur-banc-hauteur-du-genou` en version femme dans `themeB/femme/`).
-  3. **Poursuivre le Thème B** dans l'ordre de `PLAN-THEMES.md` (Lot B-02 H puis F, Lot B-03…).
+  1. **Finir `step-up-sur-banc-hauteur-du-genou` HOMME : 1 SEULE image** (position B = extension
+     complète debout sur le banc noir). A et M sont **déjà commitées** dans
+     `themeB/_sources/B-01/` — ne pas les régénérer, elles sont payées. Pistes : (a) repartir de
+     M en demandant explicitement de **hisser le mannequin sur le banc** ; (b) passer en **vue
+     de profil** (le profil débloque les poses qui échouent en 3/4) ; (c) générer **B d'abord**
+     et re-chaîner A et M depuis les sources déjà dans git.
+  2. **Assembler le Lot B-01 HOMME** : planche animée `themeB/LOT-B01-quadriceps.gif`
+     (`1420×265`, 4 frames) + grille 3×3 `themeB/LOT-B01-PLANCHE-TRAVAIL.jpg` (`1440×900`).
+     ⚠️ `scripts/build-gif-lot.sh` **régénère** les 3 GIFs individuels depuis des PNG
+     `<ex>-A/M/B.png` : passer un dossier d'appui contenant les PNG déjà commités et vérifier
+     ensuite les 3 GIFs individuels (`git checkout --` ceux qui ne devaient pas bouger).
+  3. **Enchaîner avec le Lot B-01 FEMME** (`bulgarian-split-squat`, `goblet-squat`,
+     `step-up-sur-banc-hauteur-du-genou` en version femme dans `themeB/femme/`, sources dans
+     `themeB/femme/_sources/B-01F/`), puis **Lot B-02 H puis F**.
+  4. **Poursuivre le Thème B** dans l'ordre de `PLAN-THEMES.md`.
   *(Note : les 2 circuits LOT 3 HOMME en version composite et les 3 animations du POC restent
   en réserve jusqu'à accord explicite du user).*
 
