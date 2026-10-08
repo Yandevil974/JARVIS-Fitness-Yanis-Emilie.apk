@@ -12,8 +12,8 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **63 / 614 — dont 1 livrée SOUS RÉSERVE d'identité** (`goblet-squat` HOMME, morphologie à reprendre : voir § NON-CONFORMITÉ) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 2/3** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9`)) |
-| Restant à produire | **551** |
+| Animations créées | **64 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 le 2026-10-08 : peau lisse + carrure massive) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
+| Restant à produire | **550** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
@@ -23,7 +23,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (3/3 ✅ `5467b86`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) + **B-01 HOMME (1/3 : `bulgarian-split-squat` livré)** |
 | Versions femme produites | **25 / 307** |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
-| Thème B (musculation) | **2 / 187 en homme** (`bulgarian-split-squat` + `goblet-squat` livrés dans le Lot B-01) |
+| Thème B (musculation) | **3 / 187 en homme** (Lot B-01 HOMME **complet** : `bulgarian-split-squat`, `goblet-squat`, `step-up-sur-banc-hauteur-du-genou`) |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -870,6 +870,24 @@ régénération doit appliquer **les deux consignes à la fois** (masse + poigne
    pose doit être créée « de zéro ».
 3. Si la masse musculaire a fondu → **ajouter le paragraphe de masse** ci-dessus.
 
+### ✅ RÉSOLU LE 2026-10-08 (« tour 11 ») — identité rétablie sur les 3 exercices du Lot B-01
+
+| Exercice | Ce qui a été fait | Vérification |
+| --- | --- | --- |
+| `goblet-squat` HOMME | 3 positions **régénérées** en partant de la pose de référence validée + **paragraphe de masse musculaire** (peau lisse **et** carrure massive) | comparatif **1:1** avec `themeA/_sources/A-02/squat-poids-du-corps-A.png` : carrure, épaules, pectoraux et bras **conformes** ; RMSE A→M = **0,0484**, M→B = **0,0984** (caméra stable) |
+| `step-up` HOMME | positions A et M **régénérées** avec la bonne identité, puis **position B produite du premier coup** (1 seul appel) | comparatif 1:1 conforme ; RMSE A→M = **0,0744**, M→B = **0,0789** ; la position B montre bien **le mannequin debout sur le banc**, les deux pieds sur le dessus |
+| `bulgarian-split-squat` HOMME | recontrôlé au comparatif 1:1 (il avait été généré depuis les poses de référence, donc épargné par la dérive) | ✅ conforme (carrure identique aux poses du Thème A) |
+
+**Aucune réserve d'identité ne subsiste sur le Lot B-01 HOMME.** La **nouvelle règle de
+contrôle** reste en vigueur pour toute la suite du chantier (comparatif 1:1 peau / carrure /
+échelle contre une pose de référence validée avant tout assemblage).
+
+⚠️ **Réserve MINEURE résiduelle sur le `goblet-squat`** (assumée, technique et non
+d'identité) : en position **B**, l'haltère est **un peu éloigné du sternum** (bras plus
+tendus qu'un goblet parfait) et l'haltère paraît **disproportionné** (gros) ; les coudes sont
+bien à l'intérieur des genoux et les talons au sol. Si le user veut la perfection sur ce
+point, 1 seule image est à refaire (position B).
+
 ### État de reprise (matériel déjà payé, conservé dans git)
 
 `themeB/_sources/B-01/_reprise/` :
@@ -895,11 +913,14 @@ qu'**aucun assemblage ne puisse se faire par erreur** avec des frames hétérog�
 | --- | --- | --- | --- |
 | `themeB/bulgarian-split-squat-3poses.gif` | Bulgarian split squat HOMME (poids du corps) | Vue trois-quarts avant sur tapis noir avec banc de musculation plat noir derrière : A = départ jambe avant droite tendue, pied arrière gauche en appui sur le banc noir, mains aux hanches · M = demi-descente à ~45°, bras levés pour l'équilibre (réserve : banc noir légèrement plus décalé à droite sur M) · B = squat bulgare profond à 90° (cuisse avant horizontale parallèle au sol, genou arrière bas sous le banc, bras à l'horizontale) | ✅ **livré (`c2efd7d`)** (RMSE A→M = **0,1278**, M→B = **0,1347**) |
 | `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | Vue trois-quarts avant sur tapis noir, pieds largeur d'épaules pointes ouvertes : A = debout jambes tendues, **haltère noir tenu verticalement en coupe contre le sternum** (les deux mains sous la tête supérieure, coudes pointés vers le bas) · M = demi-squat contrôlé à ~45°, haltère collé au sternum · B = squat profond 90° (hanches sous la ligne des genoux), **coudes à l'intérieur des genoux**, talons au sol, buste vertical | ⚠️ **livré sous RÉSERVE d'identité (`f11b3b9`, retouché le 2026-10-08)** : technique conforme, **morphologie à reprendre** (carrure plus fine que le reste du chantier ; 1re version à peau striée) → régénération des 3 positions prévue. RMSE A→M = **0,0779**, M→B = **0,0957** (mesure propre, caméra stable) |
-| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | **NON LIVRÉ** : les 3 positions existent (A pied sur le banc → M mi-montée → B debout sur le support) mais **toutes au corps « fin »**, et la position B repose sur une **marche basse** au lieu du banc long → **série à régénérer** (voir § NON-CONFORMITÉ) | ⛔ **3 / 3 positions obtenues, 0 livrée** |
+| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | Vue trois-quarts avant, **banc plat noir long** devant le mannequin (hauteur du genou), mains aux hanches : A = **pied gauche entier à plat sur le dessus du banc** (genou gauche ~90°), jambe droite tendue, pied droit au sol sur le tapis · M = mi-montée, poussée dans le talon gauche (jambe gauche à ~135°), hanches au niveau du banc, **pied droit décollé du sol sans élan** · B = **extension complète debout sur le banc**, les deux pieds à plat sur le dessus, jambes tendues, buste vertical | ✅ **livré (64 / 614)** (RMSE A→M = **0,0744**, M→B = **0,0789**, caméra stable) |
 
 **Aperçus dans le dépôt (règle 15) :**
 - `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg` ;
-- `themeB/LOT-B01-goblet-squat-PLANCHE-FINALE.jpg` (1440×300 — A/M/B annotées).
+- `themeB/LOT-B01-goblet-squat-PLANCHE-FINALE.jpg` (1440×300 — A/M/B annotées) ;
+- `themeB/LOT-B01-step-up-PLANCHE-FINALE.jpg` (1440×300 — A/M/B annotées) ;
+- **planche animée du lot** : `themeB/LOT-B01-quadriceps.gif` (**1420×265, 4 frames**, 3 colonnes :
+  `bulgarian-split-squat` / `goblet-squat` / `step-up-sur-banc-hauteur-du-genou`).
 
 ### ⚠️ Réserve de méthode importante — la mesure RMSE est « polluée » par le changement de caméra
 
@@ -933,6 +954,24 @@ et M/B (plus serrés)** sur le `goblet-squat`, comme cela avait déjà été ass
 - **Aucune animation `step-up-...-3poses.gif` n'est livrée ce tour** : l'exercice est
   annoncé **incomplet**, jamais masqué (règle 4). Les 2 positions saines sont conservées
   dans git pour ne pas les payer deux fois (règle 12).
+
+### Budget d'images IA du 11ᵉ tour Fitness 13 — 1 / 10 (aucun rejet, aucun drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `step-up` HOMME **position B** (depuis la position M, avec le vocabulaire « step platform » + « il garde la même longueur et la même place dans le cadre » + le paragraphe de masse) | ✅ **conforme du premier coup** : le mannequin est debout sur le **banc long**, les deux pieds à plat sur le dessus, jambes tendues → `step-up-sur-banc-hauteur-du-genou` **livré** |
+
+**1 seul appel consommé** ce tour. Les positions A et M du step-up et les 3 positions du
+goblet avaient été régénérées juste avant (voir la section « RÉSOLU » ci-dessus).
+
+### Assemblage du Lot B-01 HOMME
+
+- `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` (460×257, 4 frames) ;
+- `themeB/LOT-B01-step-up-PLANCHE-FINALE.jpg` (1440×300) ;
+- `themeB/LOT-B01-quadriceps.gif` (**1420×265, 4 frames**, 3 colonnes, sans `-layers optimize`) —
+  assemblée **depuis les GIF déjà commités** (coalesce + recoloriage `-colors 96`) et non en
+  repassant par `build-gif-lot.sh`, précisément pour **ne pas ré-encoder** les GIF
+  `bulgarian` et `goblet` déjà livrés (le script les régénère avec une empreinte différente).
 
 ### Budget d'images IA du 10ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge technique) — TOUR DE CORRECTION D'IDENTITÉ
 
