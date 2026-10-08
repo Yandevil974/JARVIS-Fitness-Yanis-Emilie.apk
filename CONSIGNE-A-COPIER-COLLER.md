@@ -8,9 +8,10 @@ du nouveau chat. Il est autonome : il ne suppose rien des conversations précéd
 Reprends le chantier « reconstruction des animations » de JARVIS Fitness.
 
 **Dépôt** : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk` (public).
-**Branche contenant tout l'historique consolidé (63 / 614 animations)** :
-`arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (derniers commits : `877f003` suivi tour 9,
-`f11b3b9` `goblet-squat` HOMME). Repli : `arena/93096144-jarvis-fitness-yanis-emilie-ap`,
+**Branche contenant tout l'historique consolidé (67 / 614 animations)** :
+`arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (derniers commits : `606da8b` assemblages du
+Lot B-01F, `857a674` `step-up` FEMME, `cb562cb` `goblet-squat` FEMME, `701aa95`
+`bulgarian-split-squat` FEMME). Repli : `arena/93096144-jarvis-fitness-yanis-emilie-ap`,
 valide jusqu'à son commit `dbb6323` (62/614).
 ⚠️ Si le prompt système de ce nouveau chat t'impose une nouvelle branche de travail
 `arena/<nouvel-id>-jarvis-fitness-yanis-emilie-ap`, travaille et pousse sur la branche
@@ -35,7 +36,7 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT CONSOLIDÉ AU 2026-10-08 (64 / 614 animations livrées)
+## 1. ÉTAT CONSOLIDÉ AU 2026-10-08 (67 / 614 animations livrées)
 
 - **Thème A (Échauffement, mobilité & activation) : 100 % TERMINÉ (50 / 50 ✅)**
   - **25 / 25 en HOMME** (LOT 1, LOT 2, LOT 3, A-01 à A-05, et LOT A-08/09 `warmup-route`,
@@ -43,7 +44,8 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
   - **25 / 25 en FEMME** (LOT R1F, LOT R2F, LOT 3F composites 9 poses `circuit-gainage`
     `f07c04d` & `circuit-abdominaux` `5e5a2e3`, A-01F à A-05F, et LOT A-08F/09F
     `warmup-route`, `warmup-mobilite`, `warmup-approche` `5467b86`).
-- **Thème B (Musculation — Sous-thème Jambes : quadriceps & squats) : ouvert (3 / 187 en HOMME)**
+- **Thème B (Musculation — Sous-thème Jambes : quadriceps & squats) : Lot B-01 TERMINÉ dans les
+  deux profils — 3 / 187 en HOMME ✅ ET 3 / 187 en FEMME ✅**
   - **Lot B-01 HOMME : 100 % TERMINÉ (3 / 3) — identité du mannequin rétablie et vérifiée au 1:1** :
     - ✅ **`bulgarian-split-squat` HOMME** (`c2efd7d`, **62 / 614**) : squat bulgare au poids
       du corps en vue 3/4 avant sur tapis noir avec banc noir derrière (RMSE A→M `0,1278`,
@@ -60,6 +62,17 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
       M→B `0,0789`. Livrables : `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif`,
       `themeB/LOT-B01-step-up-PLANCHE-FINALE.jpg`, + **planche animée du lot**
       `themeB/LOT-B01-quadriceps.gif` (1420×265, 3 colonnes).
+  - **Lot B-01 FEMME : 100 % TERMINÉ (3 / 3) — livré le 2026-10-08** :
+    - ✅ **`bulgarian-split-squat` FEMME** (`701aa95`, **65 / 614**) — banc noir derrière,
+      A jambe avant tendue → M demi-descente → B squat bulgare profond 90° ;
+    - ✅ **`goblet-squat` FEMME** (`cb562cb`, **66 / 614**) — haltère vertical en coupe contre le
+      sternum, A debout → M demi-squat 45° → B squat profond, coudes à l'intérieur des genoux ;
+    - ✅ **`step-up-sur-banc-hauteur-du-genou` FEMME** (`857a674`, **67 / 614**) — A pied gauche
+      entier à plat sur le banc → M mi-montée, pied droit décollé sans élan → B extension complète
+      debout sur le banc (RMSE A→M `0,0826`, M→B `0,1809`).
+    - Assemblages : `themeB/femme/LOT-B01F-quadriceps.gif` (1420×265, 4 frames) +
+      `themeB/femme/LOT-B01F-PLANCHE-TRAVAIL.jpg` (grille 3×3, 1440×900) +
+      les 3 planches `LOT-B01F-*-PLANCHE-FINALE.jpg`.
 - ✅ **RETOUR DU USER (2026-10-08) — RÉSOLU : l'homme du Lot B-01 « a l'air différent des
   autres GIF » / « semble moins musclé ».** C'était exact (carrure plus **fine** + 1ʳᵉ version à
   **peau striée / écorchée**). **Cause** : frames générées d'un **prompt texte seul**, sans
@@ -89,13 +102,33 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
   the step UNDER his feet, carrying his full weight »** débloque la pose « debout sur le
   support ». Reste à corriger la **forme du support** (marche basse → banc long) et la
   **morphologie**.
+- **RÉCETTE CONSOLIDÉE (apprise en 2 tours, à appliquer à CHAQUE exercice) :**
+  1. **Ne jamais générer d'un prompt texte seul** → partir d'une **pose de référence validée**
+     (`themeA/_sources/A-02/squat-poids-du-corps-{A,M,B}.png` pour l'homme,
+     `themeA/femme/_sources/A-02F/…` pour la femme).
+  2. Ajouter **le paragraphe de masse musculaire** (ci-dessus) : sans lui, la carrure fond et le
+     mannequin ne ressemble plus au chantier.
+  3. **Si la pose résiste** (objet à tenir, support à escalader) → **interpolation à 2 références** :
+     la frame du **profil voulu** en 1ᵉʳ (identité + caméra + décor) et la **pose validée de
+     l'autre profil** en 2ᵉ, avec « *the SECOND image shows ONLY THE POSE to reproduce — do NOT
+     copy the man, reproduce only the POSITION of the body* ». C'est ce qui a débloqué le
+     `step-up` FEMME après 2 rejets.
+  4. **Ne jamais écrire « bench »** pour un support sur lequel il faut **monter ou se tenir
+     debout** → écrire « *solid black rectangular STEP PLATFORM … he/she is the one who is high:
+     both sneakers planted flat on the black top, the platform directly UNDER their feet, carrying
+     their whole weight* », et préciser que le support **ne bouge pas** et **garde sa taille**.
 - **À FAIRE IMMÉDIATEMENT, dans l'ordre :**
-  1. **Lot B-01 FEMME** (`themeB/femme/`, sources `themeB/femme/_sources/B-01F/`) : les 3 mêmes
-     exercices en version Émilie, en partant de `animations/REF-personnage-feminin.jpg` **+**
-     des frames saines `themeA/femme/_sources/A-02F/squat-poids-du-corps-{A,M,B}.png`, avec le
-     paragraphe de masse musculaire (adapté femme) et le **contrôle 1:1** avant assemblage.
-  2. **Puis Lot B-02 HOMME** (`back-squat-charge-moderee`, `presse-a-cuisses-pieds-hauts`,
-     `bulgarian-split-squat-halteres`) — vérifier le matériel dans `inventaire.json`.
+  1. **Lot B-02 — Quadriceps & squats, HOMME puis FEMME** : `back-squat-charge-moderee` (barre),
+     `presse-a-cuisses-pieds-hauts` (machine), `bulgarian-split-squat-halteres` (haltères).
+     ⚠️ **Deux points à trancher avant de générer** : (a) **où placer la machine** de presse à
+     cuisses sachant que le décor unique est la **terrasse bord de mer** et qu'une salle est
+     **interdite** (convention des lots précédents : le matériel est posé **sur la terrasse** —
+     banc noir, rack du POC) ; (b) `back-squat-charge-moderee` doit rester **visuellement
+     distinct** du `back-squat` du POC (entrées différentes, règle 1) sans remplacer le POC
+     (règle 2).
+  2. **Assembler chaque lot livré** : planche animée (`1420×265`) + grille 3×3 (`1440×900`).
+     Utiliser `scripts/build-gif-lot-depuis-gifs.sh` (assemblage **depuis les GIF déjà livrés**)
+     pour ne pas ré-encoder les GIF individuels commités.
   3. **Poursuivre le Thème B** dans l'ordre de `PLAN-THEMES.md` (H puis F systématiquement).
 
 ## 2. LES 15 RÈGLES À NE PAS NÉGOCIER

@@ -3,10 +3,37 @@
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
 **État consolidé au 8 octobre 2026 (session `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap`) ·
-64 / 614 animations livrées · Thème A 100 % terminé (25/25 en HOMME ✅ + 25/25 en FEMME ✅ = 50/50) ·
-**Thème B (Musculation) : Lot B-01 HOMME 100 % TERMINÉ (3/3)** — `bulgarian-split-squat`
-(`c2efd7d`), `goblet-squat` (`f11b3b9`) et `step-up-sur-banc-hauteur-du-genou` (64ᵉ animation),
-identité du mannequin **rétablie** (peau lisse + carrure massive) sur les trois**
+67 / 614 animations livrées · Thème A 100 % terminé (25/25 en HOMME ✅ + 25/25 en FEMME ✅ = 50/50) ·
+**Thème B (Musculation) : Lot B-01 (quadriceps & squats) 100 % TERMINÉ dans les DEUX profils
+(3/3 HOMME ✅ + 3/3 FEMME ✅)** — `bulgarian-split-squat` (`c2efd7d` / `701aa95`), `goblet-squat`
+(`1e759eb` / `cb562cb`) et `step-up-sur-banc-hauteur-du-genou` (64ᵉ / `857a674`),
+identité du mannequin **rétablie** (peau lisse et mate + carrure massive) et **vérifiée 1:1**
+
+> ### 🔄 DERNIER TOUR (2026-10-08) — Lot B-01F FEMME livré + identité rétablie (+3 animations : de 64/614 à 67/614)
+>
+> 1. **Résolution complète de la non-conformité d'identité signalée par le user** (« l'homme a
+>    l'air différent des autres GIF », « il semble moins musclé ») : les 3 exercices HOMME ont été
+>    régénérés avec la **peau lisse et mate** et la **carrure massive** du chantier, puis vérifiés
+>    par **comparatif à l'échelle 1:1** contre les poses de référence validées (nouvelle règle de
+>    contrôle instaurée). Comparatif conforme pour les 6 animations du lot (3 H + 3 F).
+> 2. **`bulgarian-split-squat` FEMME livré (`701aa95`, 65/614)** — banc noir derrière, A jambe
+>    avant tendue / M demi-descente / B squat bulgare profond.
+> 3. **`goblet-squat` FEMME livré (`cb562cb`, 66/614)** — haltère vertical en coupe contre le
+>    sternum, squat profond coudes aux genoux.
+> 4. **`step-up-sur-banc-hauteur-du-genou` FEMME livré (`857a674`, 67/614)** — RMSE A→M `0,0826`,
+>    M→B `0,1809`. La position B (debout sur le banc) a résisté 2 fois de plus au générateur, puis
+>    a été débloquée par **l'interpolation à 2 références** : la frame FEMME en 1ᵉʳ (identité +
+>    caméra) et la **pose HOMME déjà validée** en 2ᵉ avec « the SECOND image shows ONLY THE POSE to
+>    reproduce — do NOT copy the man, reproduce only the POSITION of the body », combinée à
+>    l'interdiction du mot « bench » (→ « long solid black rectangular STEP PLATFORM ») et à la
+>    formule « *she is the one who is high: both of her sneakers are planted flat on the black top
+>    surface, the step platform is directly UNDER her feet, carrying her whole weight* ».
+> 5. **Assemblages du Lot B-01F (`606da8b`)** : `themeB/femme/LOT-B01F-quadriceps.gif`
+>    (1420×265, 4 frames) + `themeB/femme/LOT-B01F-PLANCHE-TRAVAIL.jpg` (grille 3×3, 1440×900) +
+>    les 3 planches statiques `LOT-B01F-*-PLANCHE-FINALE.jpg`.
+> 6. **Budget du tour : 3 / 10 appels** (2 rejets comptés honnêtement + 1 image retenue) — pas de
+>    drapeau rouge. Ajout de `scripts/build-gif-lot-depuis-gifs.sh` (assemblage de la planche
+>    animée **depuis les GIF déjà livrés**, sans ré-encoder les GIF individuels commités).
 
 > ### 🔄 BILAN DE LA SESSION `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (+1 animation livrée : de 62/614 à 63/614)
 >
@@ -220,60 +247,67 @@ f07c04d  feat(animations): livre circuit-gainage FEMME composite (9/9, 44/614)
 
 ---
 
-## 4. ÉTAT D'AVANCEMENT GLOBAL (62 / 614)
+## 4. ÉTAT D'AVANCEMENT GLOBAL (67 / 614)
 
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (307 entrées × 2 profils HOMME + FEMME) |
-| **Animations créées et livrées** | **63 / 614** (38 HOMME + 25 FEMME) |
-| **Restant à produire** | **551** |
+| **Animations créées et livrées** | **67 / 614** (39 HOMME + 28 FEMME) |
+| **Restant à produire** | **547** |
 | **Thème A — Échauffement, mobilité & activation** | **50 / 50 (100 % ✅ : 25/25 HOMME + 25/25 FEMME)** |
-| **Thème B — Musculation** | **2 / 187 en HOMME** (`bulgarian-split-squat`, `goblet-squat`) + `step-up` HOMME à 2/3 positions + anciens lots POC/L4/L5 à reclasser |
-| Versions femme produites | **25 / 307** |
+| **Thème B — Musculation** | **3 / 187 en HOMME ET 3 / 187 en FEMME** — **Lot B-01 (quadriceps & squats) complet dans les deux profils** + anciens lots POC/L4/L5 à reclasser |
+| Versions femme produites | **28 / 307** (Thème A 25 + Lot B-01F 3) |
 | Doublons MD5 sur les GIFs du chantier | **0** (toutes les empreintes MD5 sont uniques) |
 
 ---
 
 ## 5. PROCHAINE ACTION IMMÉDIATE (AU PROCHAIN TOUR)
 
-### ✅ Fait au tour précédent (ne pas refaire)
+### ✅ Fait (ne pas refaire)
 
-- **La non-conformité d'identité signalée par le user est RÉSOLUE** sur les 3 exercices du
-  Lot B-01 HOMME : peau **lisse et mate** (plus d'aspect écorché) et **carrure massive**
-  conforme aux poses de référence. Vérifié par comparatifs **1:1** (voir `SUIVI.md`).
-- **Lot B-01 HOMME complet** : `themeB/LOT-B01-quadriceps.gif` (1420×265) et les 3 planches
-  `LOT-B01-*-PLANCHE-FINALE.jpg` sont commitées.
-- ⚠️ **Réserve mineure résiduelle** (si le user veut la perfection) : sur `goblet-squat`
-  position **B**, l'haltère est un peu éloigné du sternum et paraît gros → **1 image** à
-  refaire, à ne faire QUE sur demande explicite.
+- ✅ **Lot B-01 HOMME complet (3/3)** : `themeB/LOT-B01-quadriceps.gif` (1420×265), grille
+  `themeB/LOT-B01-PLANCHE-TRAVAIL.jpg` (1440×900) et les 3 planches `LOT-B01-*-PLANCHE-FINALE.jpg`.
+- ✅ **Lot B-01 FEMME complet (3/3)** : `themeB/femme/LOT-B01F-quadriceps.gif`, grille
+  `themeB/femme/LOT-B01F-PLANCHE-TRAVAIL.jpg` et les 3 planches `LOT-B01F-*-PLANCHE-FINALE.jpg`.
+- ✅ **Identité conforme et vérifiée 1:1** sur les 6 animations du lot (peau lisse et mate,
+  carrure massive, échelle homogène).
+- ⚠️ **Réserve mineure résiduelle** (si le user veut la perfection) : sur `goblet-squat` HOMME
+  position **B**, l'haltère paraît un peu gros et légèrement décollé du sternum → **1 image** à
+  refaire, **à ne faire QUE sur demande explicite**.
 
-### Prochaine action : LOT B-01 FEMME
+### Prochaine action : LOT B-02 — Quadriceps & squats (HOMME puis FEMME)
 
-1. **Lot B-01 FEMME** (`themeB/femme/`, sources dans `themeB/femme/_sources/B-01F/`) : les 3
-   mêmes exercices en version Émilie —
-   `bulgarian-split-squat`, `goblet-squat`, `step-up-sur-banc-hauteur-du-genou`.
-   Méthode obligatoire (celle qui vient de sauver le chantier) :
-   - partir de `animations/REF-personnage-feminin.jpg` (identité) **+** d'une frame femme saine
-     pour le décor/cadrage (ex. `themeA/femme/_sources/A-02F/squat-poids-du-corps-{A,M,B}.png`) ;
-   - ajouter le paragraphe de **masse musculaire** adapté à la femme (très musclée, épaules
-     larges, fessiers et cuisses puissants — sans la transformer en homme) ;
-   - **contrôle 1:1** (peau lisse / carrure / échelle) contre `themeA/femme/_sources/A-02F/`
-     AVANT tout assemblage ;
-   - planches : `themeB/femme/LOT-B01F-…`.
-2. **Puis Lot B-02 HOMME** (`back-squat-charge-moderee`, `presse-a-cuisses-pieds-hauts`,
-   `bulgarian-split-squat-halteres`) — matériel à vérifier dans `inventaire.json`.
-3. **Poursuivre le Thème B** lot par lot (H puis F systématiquement).
-   *(Rappel : ne toucher aux 2 circuits HOMME du LOT 3 ou aux 3 animations du POC que sur ordre
-   explicite du user.)*
+| # | Entrée | Identifiant | Matériel (`inventaire.json`) |
+| --- | --- | --- | --- |
+| 1 | Back squat (charge modérée) | `back-squat-charge-moderee` | `barre` |
+| 2 | Presse à cuisses pieds hauts | `presse-a-cuisses-pieds-hauts` | `machine` |
+| 3 | Bulgarian split squat haltères | `bulgarian-split-squat-halteres` | `haltères` |
 
-### 🧠 Leçon de méthode à conserver (elle a coûté 2 tours)
+⚠️ **Deux points à trancher AVANT de générer** :
+1. **Où placer la machine** (presse à cuisses) ? Le décor validé est la **terrasse bord de mer** et
+   une salle de sport est **interdite**. Convention des lots précédents : le matériel est posé
+   **sur la terrasse** (banc noir du Lot B-01, rack du POC). La reconduire et la faire valider.
+2. **`back-squat-charge-moderee` vs le `back-squat` du POC** : deux **entrées distinctes** (règle 1)
+   → l'animation doit rester **visuellement distincte** ; le POC ne peut pas être remplacé sans
+   accord explicite (règle 2).
 
-1. **Toujours partir d'une pose de référence validée** — jamais d'un prompt texte seul : sinon
-   le générateur rend *son* mannequin (peau striée, carrure plus fine, autre échelle).
-2. **Contrôle 1:1 obligatoire** avant assemblage (peau lisse / carrure / échelle).
-3. **Paragraphe de masse musculaire** à recopier mot pour mot (voir `SUIVI.md`).
-4. **Piège de vocabulaire** : le mot « bench » fait **asseoir** le mannequin ou le laisse au
-   sol ; pour le faire **monter** sur un support, décrire une **« step platform »** avec
-   « *he is the one who is high: both sneakers planted flat on its top, the platform UNDER his
-   feet, carrying his full weight* », et préciser que le support **ne bouge pas** et **garde sa
-   taille** dans le cadre.
+### 🧠 Recette consolidée (à appliquer à CHAQUE exercice — elle a coûté 2 tours)
+
+1. **Ne jamais générer d'un prompt texte seul** : partir d'une **pose de référence validée**
+   (`themeA/_sources/A-02/squat-poids-du-corps-{A,M,B}.png` pour l'homme,
+   `themeA/femme/_sources/A-02F/…` pour la femme).
+2. Ajouter **le paragraphe de masse musculaire** mot pour mot (voir `SUIVI.md`) : sans lui, la
+   carrure fond et le mannequin ne ressemble plus au chantier.
+3. **Si la pose résiste** (objet à tenir, support à escalader) → **interpolation à 2 références** :
+   la frame du **profil voulu** en 1ᵉʳ (identité + caméra + décor) et la **pose validée de l'autre
+   profil** en 2ᵉ, avec « *the SECOND image shows ONLY THE POSE to reproduce — do NOT copy the man,
+   reproduce only the POSITION of the body* ».
+4. **Ne jamais écrire « bench »** pour un support sur lequel il faut **monter ou se tenir debout** :
+   écrire « *solid black rectangular STEP PLATFORM … he/she is the one who is high: both sneakers
+   planted flat on the black top, the platform directly UNDER their feet, carrying their whole
+   weight* », et préciser que le support **ne bouge pas** et **garde sa taille dans le cadre**.
+5. **Contrôle d'identité 1:1 obligatoire** avant tout assemblage : comparer **sans redimensionner**
+   à la pose de référence (peau lisse et mate sans fibres grises / carrure / échelle), puis
+   RMSE ≥ 0,030, puis `md5sum` (0 doublon), puis inspection visuelle.
+6. **Committer dès qu'un exercice est complet** (règle 13) et **détailler le budget d'images**
+   (règle 5) — aucun rejet dissimulé.

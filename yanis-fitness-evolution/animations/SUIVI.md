@@ -12,18 +12,18 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **64 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 le 2026-10-08 : peau lisse + carrure massive) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
-| Restant à produire | **550** |
+| Animations créées | **67 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 HOMME le 2026-10-08 : peau lisse + carrure massive ; **Lot B-01 FEMME complet** le même jour, `701aa95`, `cb562cb`, `857a674`) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
+| Restant à produire | **547** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (3/3 ✅ `5467b86`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) + **B-01 HOMME (1/3 : `bulgarian-split-squat` livré)** |
-| Versions femme produites | **25 / 307** |
+| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (3/3 ✅ `5467b86`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) + **B-01 HOMME (3/3 ✅)** + **B-01 FEMME (3/3 ✅ `701aa95`, `cb562cb`, `857a674`)** |
+| Versions femme produites | **28 / 307** (Thème A 25 + Lot B-01F 3) |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
-| Thème B (musculation) | **3 / 187 en homme** (Lot B-01 HOMME **complet** : `bulgarian-split-squat`, `goblet-squat`, `step-up-sur-banc-hauteur-du-genou`) |
+| Thème B (musculation) | **3 / 187 en homme ET 3 / 187 en femme** — **Lot B-01 complet dans les deux profils** (quadriceps & squats : `bulgarian-split-squat`, `goblet-squat`, `step-up-sur-banc-hauteur-du-genou`) |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -1266,6 +1266,69 @@ animation livrée.
 - **Abduction debout à l'élastique** : buste vertical, mains sur les hanches, bassin
   stable, amplitude 30-45°
   ([mickaël Conseiller](https://mickaelconseillerlr.fr/produit/abduction-debout-avec-elastique-renforcement-des-hanches-et-des-fessiers/)).
+
+## THÈME B — LOT B-01F FEMME COMPLET (3 / 3 exercices, 9 / 9 positions) — 2026-10-08
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeB/femme/bulgarian-split-squat-3poses.gif` | Bulgarian split squat FEMME (poids du corps) | Vue trois-quarts avant, banc noir derrière : A = jambe avant tendue, pied arrière sur le banc · M = demi-descente à ~45° · B = squat bulgare profond 90° | ✅ **livré (`701aa95`)** |
+| `themeB/femme/goblet-squat-3poses.gif` | Goblet squat FEMME (haltère) | Haltère noir tenu verticalement en coupe contre le sternum : A = debout · M = demi-squat 45° · B = squat profond, coudes à l'intérieur des genoux | ✅ **livré (`cb562cb`)** |
+| `themeB/femme/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) FEMME | Banc plat noir long devant elle, mains aux hanches : A = pied gauche entier à plat sur le banc, genou ~90°, pied droit au sol · M = mi-montée, poussée dans le talon gauche (jambe ~135°), pied droit décollé sans élan · B = extension complète debout sur le banc, les deux pieds à plat sur le dessus, jambes tendues | ✅ **livré (`857a674`)** (RMSE A→M = **0,0826**, M→B = **0,1809**) |
+
+**Assemblages du lot (règle 15) :**
+- `themeB/femme/LOT-B01F-quadriceps.gif` (1420×265, 4 frames, 3 colonnes, sans `-layers optimize`) ;
+- `themeB/femme/LOT-B01F-PLANCHE-TRAVAIL.jpg` (grille 3×3, 1440×900) ;
+- planches statiques : `LOT-B01F-bulgarian-split-squat-PLANCHE-FINALE.jpg`,
+  `LOT-B01F-goblet-squat-PLANCHE-FINALE.jpg`, `LOT-B01F-step-up-PLANCHE-FINALE.jpg`.
+
+### 🎯 Nouveau déblocage technique — l'INTERPOLATION à deux références
+
+La position B du step-up **résiste** au générateur : 3 tentatives FEMME refusées
+(le mannequin reste au sol, le banc vide à côté), exactement comme les 5 tentatives
+HOMME. La recette qui a fonctionné pour la FEMME (et qui complète celle documentée
+pour l'HOMME) :
+
+1. **référence 1 = la frame FEMME** (identité + caméra + décor qu'on veut garder) ;
+2. **référence 2 = la frame HOMME déjà validée** qui montre la pose à obtenir, avec la
+   consigne explicite « the SECOND image shows ONLY THE POSE to reproduce — do NOT copy
+   the man, reproduce only the POSITION of the body » ;
+3. dans le prompt : **jamais le mot « bench »** → « **long solid black rectangular STEP
+   PLATFORM** (a plyometric step at knee height, long enough to extend well on both sides
+   of her feet) », et la formule « **she is the one who is high : both of her sneakers are
+   planted flat on the black top surface, the step platform is directly UNDER her feet,
+   carrying her whole weight** » ;
+4. rappeler « she keeps her exact silhouette, do NOT slim her down, do NOT make her
+   leaner » (paragraphe de masse) et « the platform keeps EXACTLY the same length and the
+   same place in the frame ».
+
+### Budget d'images IA du 12ᵉ tour Fitness 13 — 3 / 10 (aucun drapeau rouge)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `step-up` FEMME B (depuis M, « long black flat bench is used as a step platform ») | ❌ rejetée : la femme reste **au sol**, le banc vide à côté |
+| 2 | `step-up` FEMME B (depuis M, recette HOMME exacte : « STEP PLATFORM », jamais « bench », + paragraphe de masse) | ❌ rejetée : même échec, elle reste au sol |
+| 3 | `step-up` FEMME B (**interpolation à 2 références** : frame FEMME + pose HOMME validée, « reproduce only the POSITION ») | ✅ **conforme** : debout sur le banc long, les deux pieds à plat sur le dessus, jambes tendues → `step-up` FEMME **livré (`857a674`, 67/614)** |
+
+**2 rejets comptés, 1 image retenue.** Les 2 images rejetées ne sont **pas** conservées
+dans git (elles ne servent à rien pour la reprise). Le GIF et la planche ont été contrôlés
+visuellement (3 frames + zooms des pieds, de la tenue et de la tresse) avant commit.
+
+### Contrôle d'identité 1:1 (nouvelle règle du 2026-10-08) — appliqué et CONFORME
+
+Comparatif à l'échelle 1:1 (aucun redimensionnement) avec les poses de référence validées :
+
+| Comparaison | Verdict |
+| --- | --- |
+| `themeA/_sources/A-02/squat-poids-du-corps-A.png` vs `themeB/_sources/B-01/goblet-squat-A.png` | ✅ peau **lisse et mate**, carrure massive comparable |
+| `themeA/_sources/A-02/squat-poids-du-corps-A.png` vs `themeB/_sources/B-01/step-up-...-A.png` | ✅ conforme |
+| `themeA/femme/_sources/A-02F/squat-poids-du-corps-A.png` vs `themeB/femme/_sources/B-01F/goblet-squat-A.png` | ✅ conforme (même femme, même carrure, même décor) |
+| `themeA/femme/_sources/A-02F/squat-poids-du-corps-A.png` vs `themeB/femme/_sources/B-01F/step-up-...-A.png` | ✅ conforme |
+
+✅ **La non-conformité d'identité signalée par le user le 2026-10-08 est donc RÉSOLUE**
+sur les 6 animations du Lot B-01 (3 HOMME + 3 FEMME) : peau lisse et mate, carrure massive,
+échelle homogène dans le cadre.
+
+---
 
 ## Audit de conformité des animations existantes (2026-10-06)
 
