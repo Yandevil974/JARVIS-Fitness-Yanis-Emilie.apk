@@ -135,9 +135,9 @@ Sous-thème musculation — quadriceps
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Back squat (charge modérée) | `back-squat-charge-moderee` | quadriceps | barre · H + F (2 anim.) | à recréer |
-| 2 | Presse à cuisses pieds hauts | `presse-a-cuisses-pieds-hauts` | quadriceps | machine · H + F (2 anim.) | à recréer |
-| 3 | Bulgarian split squat haltères | `bulgarian-split-squat-halteres` | quadriceps | haltères · H + F (2 anim.) | à recréer |
+| 1 | Back squat (charge modérée) | `back-squat-charge-moderee` | quadriceps | barre · H + F (2 anim.) | ✅ **B-02 H livré (`dcacd1c`)** · ⬜ F à venir |
+| 2 | Presse à cuisses pieds hauts | `presse-a-cuisses-pieds-hauts` | quadriceps | machine · H + F (2 anim.) | ✅ **B-02 H livré (`770e5cd`)** · ⬜ F à venir |
+| 3 | Bulgarian split squat haltères | `bulgarian-split-squat-halteres` | quadriceps | haltères · H + F (2 anim.) | ✅ **B-02 H livré (`e5d8f1c`)** · ✅ **B-02F F livrée (`da499ed`)** |
 
 ### Lot B-03
 

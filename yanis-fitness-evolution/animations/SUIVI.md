@@ -12,8 +12,8 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **67 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 HOMME le 2026-10-08 : peau lisse + carrure massive ; **Lot B-01 FEMME complet** le même jour, `701aa95`, `cb562cb`, `857a674`) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
-| Restant à produire | **547** |
+| Animations créées | **71 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 HOMME le 2026-10-08 : peau lisse + carrure massive ; **Lot B-01 FEMME complet** le même jour, `701aa95`, `cb562cb`, `857a674`) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
+| Restant à produire | **543** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
@@ -814,6 +814,115 @@ LOT A-02 FEMME (profil / face).
 - `themeA/femme/LOT-A08F-warmup-route-PLANCHE-FINALE.jpg` ;
 - `themeA/femme/LOT-A08F-warmup-mobilite-PLANCHE-FINALE.jpg` ;
 - `themeA/femme/LOT-A08F-warmup-approche-PLANCHE-FINALE.jpg`.
+
+---
+
+## THÈME B — LOT B-02 HOMME COMPLET (3 / 3 exercices, 9 / 9 positions) — 2026-10-08 (tour 13)
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeB/bulgarian-split-squat-halteres-3poses.gif` | Bulgarian split squat haltères HOMME (`dumbbell`) | Un haltère noir dans chaque main le long du corps, pied arrière sur le banc : A = jambe avant tendue · M = demi-descente 45° · B = squat bulgare profond 90°, cuisse avant horizontale | ✅ **livré (`e5d8f1c`)** |
+| `themeB/back-squat-charge-moderee-3poses.gif` | Back squat (charge modérée) HOMME (`barbell`) | Barre haute sur les trapèzes, un disque de chaque côté : A = debout, jambes tendues, prise largeur d'épaules · M = demi-squat 45°, talons au sol (RMSE 0,0952) · B = squat profond, pliure des hanches sous le haut des genoux (RMSE 0,1156) | ✅ **livré (`dcacd1c`)** |
+| `themeB/presse-a-cuisses-pieds-hauts-3poses.gif` | Presse à cuisses pieds hauts HOMME (`machine`) | Assis dans la presse, dos et bassin plaqués au dossier, pieds HAUTS sur le plateau, mains sur les poignées : A = jambes quasi tendues (genoux jamais verrouillés) · M = descente contrôlée, genoux à ~90° (RMSE 0,2380) · B = flexion profonde, plateau proche du buste (RMSE 0,0430) | ✅ **livré (`770e5cd`)** |
+
+**Assemblages du lot (règle 15) :**
+- `themeB/LOT-B02-quadriceps.gif` (1420×265, planche animée 3 colonnes, 4 frames, sans `-layers optimize`) ;
+- `themeB/LOT-B02-PLANCHE-TRAVAIL.jpg` (grille 3×3, 1440×900) ;
+- planches statiques : `LOT-B02-bulgarian-split-squat-halteres-PLANCHE-FINALE.jpg`,
+  `LOT-B02-back-squat-charge-moderee-PLANCHE-FINALE.jpg`,
+  `LOT-B02-presse-a-cuisses-pieds-hauts-PLANCHE-FINALE.jpg`.
+
+### Technique vérifiée en ligne avant génération (règle 14)
+
+- **Back squat (charge modérée)** : la barre repose **toujours sur les trapèzes, jamais sur
+  les vertèbres cervicales** ; pieds largeur d'épaules, orteils ouverts 10-30°, mains
+  largeur d'épaules, **cassure simultanée des hanches et des genoux**, poids réparti entre
+  le milieu du pied et le talon, **cuisses au moins jusqu'à la parallèle**, pliure des
+  hanches sous le haut des genoux, genoux dans l'axe des pointes de pieds, bracing
+  abdominal ; erreurs à ne pas montrer : dos arrondi, valgus, talons décollés, buttwink,
+  descente trop courte
+  ([fitness-lounge](https://www.fitness-lounge.fr/bien-faire-squats-barre/),
+  [h2olesangles](https://www.h2olesangles.fr/back-squat/),
+  [maboxdecross](https://maboxdecross.fr/mouvement/back-squat),
+  [conseilmuscu](https://www.conseilmuscu.com/exercices-de-musculation/guide-complet-force-technique-squat-maitrisez-exercice-votre-musculation/)).
+  *Chargement volontairement MODÉRÉ (1 disque de chaque côté) pour illustrer « charge
+  modérée » sans surcharger la barre.*
+- **Presse à cuisses pieds hauts** : **pieds hauts** sur le plateau = accent sur les
+  **fessiers et les ischio-jambiers** (extension de hanche accrue) ; **dos et hanches bien
+  plaqués contre le dossier**, fessiers collés au siège (le bassin ne se soulève jamais),
+  bas du dos qui ne s'arrondit pas ; **tout le pied en contact, talons ancrés** ; descente
+  contrôlée jusqu'à ~90° minimum ; **genoux jamais verrouillés en haut** ; genoux dans
+  l'axe des pointes de pieds
+  ([flexgymperformance](https://flexgymperformance.fr/blogs/quadriceps/presse-a-cuisses-guide-complet),
+  [fitadium](https://www.fitadium.com/conseils/presse-cuisses/),
+  [carefitness](https://www.carefitness.com/page/leg-press-guide-hypotrophie-musculaire)).
+
+### Réserves honnêtes du tour (règle 4)
+
+- **`presse-a-cuisses-pieds-hauts` position B** : l'amplitude entre M et B reste **modérée**
+  (RMSE **0,0430**, juste au-dessus du seuil de 0,030) — la différence se lit surtout sur
+  l'angle des genoux, pas sur la position du plateau. **2 tentatives rejetées avant** :
+  la 1ʳᵉ (chaînée depuis A) passait en **profil** avec **une seule jambe lisible** ; la 2ᵉ
+  (chaînée depuis M) est revenue **quasi identique à M** (RMSE 0,019).
+- **`presse-a-cuisses-pieds-hauts` positions A et M** : la presse est une **presse inclinée
+  à chariot** (semi-allongée) et non la presse horizontale assise : la consigne « dos
+  plaqué, bassin au siège » est respectée, mais l'assise est plus basse qu'une presse
+  classique. Écart de matériel assumé et documenté.
+- **`bulgarian-split-squat-halteres` FEMME** : caméra légèrement plus rapprochée que la
+  pose de référence du Thème A (les 3 frames du lot partagent la même caméra).
+
+### Budget d'images IA du 13ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge technique)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `back-squat-charge-moderee` A (depuis la pose de référence `squat-poids-du-corps-A` + paragraphe de masse) | ✅ conforme |
+| 2 | `back-squat-charge-moderee` B (depuis `squat-poids-du-corps-B`) | ✅ conforme |
+| 3 | `back-squat-charge-moderee` M (appel **interrompu par le user**, relancé ensuite) | ⏹️ interrompu — compté honnêtement |
+| 4 | `back-squat-charge-moderee` M (relancé, depuis `squat-poids-du-corps-M`) | ✅ conforme (RMSE A→M = 0,0952) → **livré (`dcacd1c`)** |
+| 5 | `presse-a-cuisses-pieds-hauts` A (machine, jambes quasi tendues, pieds hauts) | ✅ conforme |
+| 6 | `presse-a-cuisses-pieds-hauts` M (genoux à 90°, dos plaqué) | ✅ conforme (RMSE A→M = 0,2380) |
+| 7 | `presse-a-cuisses-pieds-hauts` B tentative 1 (depuis `squat-poids-du-corps-B`) | ❌ rejetée : **vue de profil** + **une seule jambe lisible** (angle incohérent avec A et M) |
+| 8 | `presse-a-cuisses-pieds-hauts` B tentative 2 (depuis M, « plateau au plus bas ») | ❌ rejetée : **quasi identique à M** (RMSE 0,019) |
+| 9 | `presse-a-cuisses-pieds-hauts` B tentative 3 (depuis A + pose B en 2ᵉ référence) | ❌ rejetée : toujours trop proche de A (RMSE 0,032) |
+| 10 | `presse-a-cuisses-pieds-hauts` B tentative 4 (depuis M, **description géométrique** : mollets contre cuisses, genoux vers les aisselles, ~120°) | ✅ **conforme** : même machine, même angle trois-quarts, amplitude plus franche (RMSE M→B = 0,0430) |
+
+**3 images rejetées** (1 changement d'angle + 2 amplitudes insuffisantes), comptées, aucune
+intégrée à une animation livrée. Le **`bulgarian-split-squat-halteres` FEMME** (A, M, B) a
+été produit dans le **14ᵉ tour** (3 appels, aucun rejet).
+
+### Contrôle d'identité 1:1 (règle du 2026-10-08) — appliqué et CONFORME
+
+| Comparaison | Verdict |
+| --- | --- |
+| `themeA/_sources/A-02/squat-poids-du-corps-A.png` vs `themeB/_sources/B-02/back-squat-charge-moderee-A.png` | ✅ peau lisse et mate, carrure massive comparable |
+| `themeA/_sources/A-02/squat-poids-du-corps-A.png` vs `themeB/_sources/B-02/presse-a-cuisses-pieds-hauts-A.png` | ✅ conforme (même mannequin, même décor) |
+| `themeA/femme/_sources/A-02F/squat-poids-du-corps-A.png` vs `themeB/femme/_sources/B-02F/bulgarian-split-squat-halteres-A.png` | ✅ conforme (même femme, même carrure, peau mate lisse) — réserve d'échelle mineure |
+
+---
+
+## THÈME B — LOT B-02 FEMME (1 / 3 exercice livré) — 2026-10-08 (tour 14)
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeB/femme/bulgarian-split-squat-halteres-3poses.gif` | Bulgarian split squat haltères FEMME (`dumbbell`) | Un haltère noir dans chaque main le long du corps, pied arrière sur le banc : A = jambe avant tendue · M = demi-descente 45°, genou arrière qui descend sans toucher le sol (RMSE 0,1485) · B = squat bulgare profond 90°, cuisse avant horizontale (RMSE 0,1973) | ✅ **livré (`da499ed`)** |
+| `themeB/femme/back-squat-charge-moderee-3poses.gif` | Back squat (charge modérée) FEMME | — | ⬜ prochain tour |
+| `themeB/femme/presse-a-cuisses-pieds-hauts-3poses.gif` | Presse à cuisses pieds hauts FEMME | — | ⬜ prochain tour |
+
+**Planche statique livrée :** `themeB/femme/LOT-B02F-bulgarian-split-squat-halteres-PLANCHE-FINALE.jpg` (1440×300).
+**Assemblages du lot B-02F à faire une fois les 3 exercices livrés :** `themeB/femme/LOT-B02F-quadriceps.gif` (1420×265) + `themeB/femme/LOT-B02F-PLANCHE-TRAVAIL.jpg` (grille 3×3, 1440×900) — commandes prêtes :
+`bash scripts/build-gif-lot-depuis-gifs.sh <out.gif> <ex1.gif> <ex2.gif> <ex3.gif>` puis
+`bash scripts/build-planche-grille.sh themeB/femme/_sources/B-02F <out.jpg> "<titre>" FEMME <ex1> <ex2> <ex3>`.
+
+### Budget d'images IA du 14ᵉ tour Fitness 13 — 3 / 10
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `bulgarian-split-squat-halteres` FEMME A (depuis la pose de référence FEMME + paragraphe de masse) | ✅ conforme (contrôle 1:1 OK) |
+| 2 | `bulgarian-split-squat-halteres` FEMME M (depuis `A-02F/squat-poids-du-corps-M`) | ✅ conforme (RMSE A→M = 0,1485) |
+| 3 | `bulgarian-split-squat-halteres` FEMME B (depuis `A-02F/squat-poids-du-corps-B`) | ✅ conforme (RMSE M→B = 0,1973) → **livré (`da499ed`, 71/614)** |
+
+Aucun rejet, **7 appels d'avance** sur le plafond de 10 : le tour s'arrête après la mise à
+jour du suivi (le budget du tour n'est pas consommé pour rien — la suite ouvre le tour 15).
 
 ---
 

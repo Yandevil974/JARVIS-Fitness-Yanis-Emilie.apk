@@ -1,8 +1,37 @@
+**État consolidé au 8 octobre 2026 (fin de la session `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap`) ·
+71 / 614 animations livrées · Thème A 100 % terminé (50/50) · Thème B en cours :
+**Lot B-01 terminé (H + F)**, **Lot B-02 HOMME terminé** et **Lot B-02 FEMME 1/3**
+
+> ### 🔄 BILAN DE LA SESSION `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap` (62/614 → 71/614)
+>
+> 1. **Thème B ouvert et Lot B-01 TERMINÉ (H + F)** — `bulgarian-split-squat`, `goblet-squat`
+>    et `step-up-sur-banc-hauteur-du-genou` livrés en HOMME (`c2efd7d`, `1e759eb`, `0c2d65a`)
+>    **et en FEMME** (`701aa95`, `cb562cb`, `857a674`), avec planches animées et grilles 3×3.
+> 2. **⚠️ Incident d'identité signalé par le user le 2026-10-08** (« l'homme a l'air différent
+>    des autres gif » + « il semble moins musclé ») → **vérifié et corrigé** : deux causes
+>    (peau striée / aspect écorché, et carrure plus fine) dues à des frames générées d'un
+>    **prompt texte seul**, sans ancrage sur une pose de référence validée. Remède validé et
+>    inscrit comme **règle du chantier** : partir d'une **pose de référence validée** +
+>    **paragraphe de masse musculaire**, puis **contrôle d'identité à 1:1** (peau lisse /
+>    carrure / échelle) avant tout assemblage.
+> 3. **Lot B-02 HOMME TERMINÉ (3/3)** — `bulgarian-split-squat-halteres` (`e5d8f1c`),
+>    `back-squat-charge-moderee` (`dcacd1c`), `presse-a-cuisses-pieds-hauts` (`770e5cd`) ;
+>    planche animée `themeB/LOT-B02-quadriceps.gif` + grille `themeB/LOT-B02-PLANCHE-TRAVAIL.jpg`.
+> 4. **Lot B-02 FEMME ouvert (1/3)** — `bulgarian-split-squat-halteres` FEMME (`da499ed`).
+> 5. **Déblocages techniques documentés** : l'**interpolation à deux références** (frame femme
+>    + pose homme validée, « reproduce only the POSITION ») a débloqué la position B du
+>    step-up FEMME ; et **éviter le mot « bench »** (il fait asseoir le mannequin ou le laisse
+>    au sol) au profit de « **long solid black rectangular STEP PLATFORM … the step is
+>    directly UNDER his/her feet, carrying the whole weight** ».
+> 6. **Outils ajoutés** : `scripts/build-planche-exo.sh` (planche 1440×300),
+>    `scripts/build-planche-grille.sh` (grille 3×3 1440×900) et
+>    `scripts/build-gif-lot-depuis-gifs.sh` (planche animée 1420×265 assemblée **depuis les
+>    GIF déjà livrés**, sans les ré-encoder).
+
 # 🚩 PASSATION + CONSIGNE — CHANTIER « RECONSTRUCTION DES ANIMATIONS »
 
 ## Chantier « RECONSTRUCTION DES ANIMATIONS » (JARVIS Fitness)
 
-**État consolidé au 8 octobre 2026 (session `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap`) ·
 67 / 614 animations livrées · Thème A 100 % terminé (25/25 en HOMME ✅ + 25/25 en FEMME ✅ = 50/50) ·
 **Thème B (Musculation) : Lot B-01 (quadriceps & squats) 100 % TERMINÉ dans les DEUX profils
 (3/3 HOMME ✅ + 3/3 FEMME ✅)** — `bulgarian-split-squat` (`c2efd7d` / `701aa95`), `goblet-squat`
@@ -116,6 +145,15 @@ peut dépasser le timeout de 30 s).*
 ### Historique consolidé des commits récents
 
 ```
+da499ed  feat(animations): livre bulgarian-split-squat-halteres FEMME (Lot B-02F, 71/614)
+770e5cd  feat(animations): LOT B-02 HOMME COMPLET — presse a cuisses + planche animee + grille (70/614)
+dcacd1c  feat(animations): livre back-squat-charge-moderee HOMME (Lot B-02, 69/614)
+e5d8f1c  feat(animations): livre bulgarian-split-squat-halteres HOMME (Lot B-02, 68/614)
+df9d8df  docs(animations): suivi tour 12 — Lot B-01 complet H+F (67/614) + recette consolidee
+606da8b  feat(animations): LOT B-01F FEMME COMPLET — planche animee + grille 3x3 (67/614)
+857a674  feat(animations): livre step-up-sur-banc-hauteur-du-genou FEMME (Lot B-01F, 67/614)
+0c2d65a  feat(animations): LOT B-01 HOMME COMPLET — step-up livre (64/614, Theme B 3/187)
+1e759eb  fix(animations): goblet-squat HOMME regenere avec l'identite du chantier (carrure + peau)
 877f003  docs(animations): suivi tour 9 — goblet-squat HOMME livre (63/614) + step-up HOMME 2/3 positions
 f11b3b9  feat(animations): livre goblet-squat HOMME (LOT B-01, 63/614)
 dbb6323  docs(passation): consolide PASSATION-ANIMATIONS.md et CONSIGNE-A-COPIER-COLLER.md (62/614)
@@ -262,6 +300,35 @@ f07c04d  feat(animations): livre circuit-gainage FEMME composite (9/9, 44/614)
 ---
 
 ## 5. PROCHAINE ACTION IMMÉDIATE (AU PROCHAIN TOUR)
+
+1. **Terminer le Lot B-02 FEMME (2 exercices restants, 6 images)** dans
+   `themeB/femme/_sources/B-02F/` :
+   - **`back-squat-charge-moderee` FEMME** (3 positions A, M, B) : barre haute sur les
+     trapèzes, prise largeur d'épaules, un disque de chaque côté (charge modérée), A debout →
+     M demi-squat 45° → B squat profond (pliure des hanches sous le haut des genoux), talons
+     au sol. Partir de `themeA/femme/_sources/A-02F/squat-poids-du-corps-{A,M,B}.png`
+     **+ paragraphe de masse**, puis **contrôle 1:1** ;
+   - **`presse-a-cuisses-pieds-hauts` FEMME** (3 positions) : assise dans la presse, dos et
+     bassin plaqués, **pieds hauts** sur le plateau, genoux jamais verrouillés ;
+     ⚠️ pour la position B (flexion profonde), la recette qui a marché en HOMME est la
+     **description géométrique** (« mollets contre cuisses, genoux vers les aisselles,
+     ~120° ») chaînée **depuis M** — les essais depuis A partent en profil (1 seule jambe
+     lisible, 2 rejets payés au tour 13).
+2. **Assembler le Lot B-02 FEMME** :
+   `bash scripts/build-gif-lot-depuis-gifs.sh themeB/femme/LOT-B02F-quadriceps.gif themeB/femme/<ex1>-3poses.gif themeB/femme/<ex2>-3poses.gif themeB/femme/<ex3>-3poses.gif`
+   puis
+   `bash scripts/build-planche-grille.sh themeB/femme/_sources/B-02F themeB/femme/LOT-B02F-PLANCHE-TRAVAIL.jpg "<titre>" FEMME <ex1> <ex2> <ex3>` ;
+   puis les 2 planches statiques manquantes avec `scripts/build-planche-exo.sh`.
+3. **Enchaîner le Lot B-03** (`back-squat` (POC, à refaire), `squat-cycliste-squat-complet`,
+   `leg-press`) — H puis F, même méthode.
+4. **Rappel de méthode (ne pas s'en écarter)** : 1 exercice = 1 animation ; partir d'une
+   **pose de référence validée** + **paragraphe de masse** ; **contrôle 1:1** avant
+   assemblage ; **RMSE ≥ 0,030** ; committer **dès qu'un exercice est complet** ; planches
+   `1440×300` / grille `1440×900` / planche animée `1420×265` / GIF `460×257` **commitées**
+   et annoncées par un **lien GitHub direct** (le user n'a pas le visualiseur).
+   *(Réserve toujours ouverte : reprise du POC et passage des 2 circuits HOMME du LOT 3 en
+   composite — sur accord explicite du user uniquement.)*
+
 
 ### ✅ Fait (ne pas refaire)
 

@@ -36,7 +36,7 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
 
 ---
 
-## 1. ÉTAT CONSOLIDÉ AU 2026-10-08 (67 / 614 animations livrées)
+## 1. ÉTAT CONSOLIDÉ AU 2026-10-08 (71 / 614 animations livrées)
 
 - **Thème A (Échauffement, mobilité & activation) : 100 % TERMINÉ (50 / 50 ✅)**
   - **25 / 25 en HOMME** (LOT 1, LOT 2, LOT 3, A-01 à A-05, et LOT A-08/09 `warmup-route`,
@@ -44,92 +44,67 @@ Lis ensuite `PASSATION-ANIMATIONS.md`, `yanis-fitness-evolution/animations/SUIVI
   - **25 / 25 en FEMME** (LOT R1F, LOT R2F, LOT 3F composites 9 poses `circuit-gainage`
     `f07c04d` & `circuit-abdominaux` `5e5a2e3`, A-01F à A-05F, et LOT A-08F/09F
     `warmup-route`, `warmup-mobilite`, `warmup-approche` `5467b86`).
-- **Thème B (Musculation — Sous-thème Jambes : quadriceps & squats) : Lot B-01 TERMINÉ dans les
-  deux profils — 3 / 187 en HOMME ✅ ET 3 / 187 en FEMME ✅**
-  - **Lot B-01 HOMME : 100 % TERMINÉ (3 / 3) — identité du mannequin rétablie et vérifiée au 1:1** :
-    - ✅ **`bulgarian-split-squat` HOMME** (`c2efd7d`, **62 / 614**) : squat bulgare au poids
-      du corps en vue 3/4 avant sur tapis noir avec banc noir derrière (RMSE A→M `0,1278`,
-      M→B `0,1347`, planche `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg`).
-    - ✅ **`goblet-squat` HOMME** (`f11b3b9`, **63 / 614**, identité **corrigée**) : haltère
-      noir tenu verticalement en coupe contre le sternum, A debout → M demi-squat 45° → B squat
-      profond 90° coudes à l'intérieur des genoux. Généré **depuis les poses de référence
-      validées + paragraphe de masse musculaire** ; comparatif 1:1 conforme (carrure massive,
-      peau lisse) ; RMSE A→M `0,0484`, M→B `0,0984`.
-      ⚠️ Réserve mineure assumée : en B l'haltère est un peu loin du sternum et paraît gros.
-    - ✅ **`step-up-sur-banc-hauteur-du-genou` HOMME** (**64 / 614**) : banc plat noir long à
-      hauteur du genou, A = pied gauche entier à plat sur le banc → M = mi-montée, pied droit
-      décollé sans élan → B = extension complète debout sur le banc. RMSE A→M `0,0744`,
-      M→B `0,0789`. Livrables : `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif`,
-      `themeB/LOT-B01-step-up-PLANCHE-FINALE.jpg`, + **planche animée du lot**
-      `themeB/LOT-B01-quadriceps.gif` (1420×265, 3 colonnes).
-  - **Lot B-01 FEMME : 100 % TERMINÉ (3 / 3) — livré le 2026-10-08** :
-    - ✅ **`bulgarian-split-squat` FEMME** (`701aa95`, **65 / 614**) — banc noir derrière,
-      A jambe avant tendue → M demi-descente → B squat bulgare profond 90° ;
-    - ✅ **`goblet-squat` FEMME** (`cb562cb`, **66 / 614**) — haltère vertical en coupe contre le
-      sternum, A debout → M demi-squat 45° → B squat profond, coudes à l'intérieur des genoux ;
-    - ✅ **`step-up-sur-banc-hauteur-du-genou` FEMME** (`857a674`, **67 / 614**) — A pied gauche
-      entier à plat sur le banc → M mi-montée, pied droit décollé sans élan → B extension complète
-      debout sur le banc (RMSE A→M `0,0826`, M→B `0,1809`).
-    - Assemblages : `themeB/femme/LOT-B01F-quadriceps.gif` (1420×265, 4 frames) +
-      `themeB/femme/LOT-B01F-PLANCHE-TRAVAIL.jpg` (grille 3×3, 1440×900) +
-      les 3 planches `LOT-B01F-*-PLANCHE-FINALE.jpg`.
-- ✅ **RETOUR DU USER (2026-10-08) — RÉSOLU : l'homme du Lot B-01 « a l'air différent des
-  autres GIF » / « semble moins musclé ».** C'était exact (carrure plus **fine** + 1ʳᵉ version à
-  **peau striée / écorchée**). **Cause** : frames générées d'un **prompt texte seul**, sans
-  ancrage sur une pose de référence validée. **Corrigé** : les 3 exercices du Lot B-01 ont été
-  régénérés avec l'identité du chantier et recontrôlés au 1:1. La leçon reste valable pour
-  toute la suite du chantier :
-  **Remède VALIDÉ** (testé) : partir de `themeA/_sources/A-02/squat-poids-du-corps-A.png`
-  (ou `themeA/femme/_sources/A-02F/…` pour la femme) **et** ajouter ce paragraphe :
-  > He is a VERY muscular, heavily hypertrophied 3D anatomical bodybuilder: extremely wide
-  > shoulders and big round deltoids, thick massive arms, huge full rounded pectorals, wide
-  > lats, deep defined abdominals, narrow waist, powerful legs. IMPORTANT: do NOT slim him
-  > down, do NOT make him leaner or narrower — copy his exact silhouette, shoulder width,
-  > arm thickness, chest volume and muscle size from this reference image. He must fill the
-  > frame exactly the same way (same camera, same distance, same framing, same scale).
+- **Thème B (Musculation — Jambes : quadriceps & squats) : EN COURS**
+  - **Lot B-01 TERMINÉ (H + F, 6 animations)** : `bulgarian-split-squat`, `goblet-squat`,
+    `step-up-sur-banc-hauteur-du-genou` — livrés en HOMME (`c2efd7d`, `1e759eb`, `0c2d65a`)
+    et en FEMME (`701aa95`, `cb562cb`, `857a674`), avec planche animée (`LOT-B01-quadriceps.gif`),
+    grille 3×3 (`LOT-B01-PLANCHE-TRAVAIL.jpg`) et l'équivalent FEMME (`LOT-B01F-…`).
+  - **Lot B-02 HOMME TERMINÉ (3/3)** : `bulgarian-split-squat-halteres` (`e5d8f1c`),
+    `back-squat-charge-moderee` (`dcacd1c`), `presse-a-cuisses-pieds-hauts` (`770e5cd`) ;
+    planche animée `themeB/LOT-B02-quadriceps.gif` + grille `themeB/LOT-B02-PLANCHE-TRAVAIL.jpg`.
+  - **Lot B-02 FEMME : 1 / 3** — `bulgarian-split-squat-halteres` FEMME (`da499ed`) livré avec
+    sa planche statique ; **restent `back-squat-charge-moderee` et `presse-a-cuisses-pieds-hauts`
+    en version Émilie** (6 images), puis l'assemblage du lot.
+- 🔴 **RETOUR DU USER (2026-10-08) — RÉSOLU, mais la règle reste** : « l'homme a l'air différent
+  des autres GIF » + « il semble moins musclé ». Deux causes identifiées : frames générées d'un
+  **prompt texte seul** (peau striée/écorchée) et **carrure plus fine** que le chantier.
+  **Recette désormais OBLIGATOIRE pour toute nouvelle pose** :
+  1. **partir d'une POSE DE RÉFÉRENCE VALIDÉE** (`themeA/_sources/A-02/squat-poids-du-corps-{A,M,B}.png`
+     pour l'homme, `themeA/femme/_sources/A-02F/squat-poids-du-corps-{A,M,B}.png` pour la femme) —
+     jamais d'un prompt texte seul ;
+  2. **ajouter le PARAGRAPHE DE MASSE** :
+     > He is a VERY muscular, heavily hypertrophied 3D anatomical bodybuilder: extremely wide
+     > shoulders and big round deltoids, thick massive arms, huge full rounded pectorals, wide
+     > lats, deep defined abdominals, narrow waist, powerful legs. IMPORTANT: do NOT slim him
+     > down, do NOT make him leaner or narrower — copy his exact silhouette, shoulder width,
+     > arm thickness, chest volume and muscle size from this reference image. He must fill the
+     > frame exactly the same way (same camera, same distance, same framing, same scale).
 
-  **Nouveau contrôle obligatoire avant CHAQUE assemblage** : comparer la frame **à 1:1**
-  (sans redimensionner) avec la pose de référence validée sur trois points — (a) peau lisse
-  et mate sans fibres grises, (b) carrure comparable, (c) échelle comparable. À appliquer
-  aussi au `bulgarian-split-squat` déjà livré (`c2efd7d`), à recontrôler.
-  **Matériel de reprise payé** : `themeB/_sources/B-01/_reprise/` (poses correctes au corps
-  fin + la base massive `goblet-squat-A-v3-base-massive-poigne-a-corriger.png`).
-  ⚠️ `_sources/B-01/` ne contient plus que les PNG du `bulgarian-split-squat` : tout
-  assemblage depuis ce dossier échouera volontairement (garde-fou anti-frames-hétérogènes).
-- **Déblocage technique à retenir pour le step-up (et tout support)** : le mot « bench » fait asseoir le
-  mannequin ou le laisse au sol ; écrire **« STEP PLATFORM (solid black plyometric step,
-  ~45 cm tall, 60 cm deep)… he is the one who is high: both sneakers planted flat on its top,
-  the step UNDER his feet, carrying his full weight »** débloque la pose « debout sur le
-  support ». Reste à corriger la **forme du support** (marche basse → banc long) et la
-  **morphologie**.
-- **RÉCETTE CONSOLIDÉE (apprise en 2 tours, à appliquer à CHAQUE exercice) :**
-  1. **Ne jamais générer d'un prompt texte seul** → partir d'une **pose de référence validée**
-     (`themeA/_sources/A-02/squat-poids-du-corps-{A,M,B}.png` pour l'homme,
-     `themeA/femme/_sources/A-02F/…` pour la femme).
-  2. Ajouter **le paragraphe de masse musculaire** (ci-dessus) : sans lui, la carrure fond et le
-     mannequin ne ressemble plus au chantier.
-  3. **Si la pose résiste** (objet à tenir, support à escalader) → **interpolation à 2 références** :
-     la frame du **profil voulu** en 1ᵉʳ (identité + caméra + décor) et la **pose validée de
-     l'autre profil** en 2ᵉ, avec « *the SECOND image shows ONLY THE POSE to reproduce — do NOT
-     copy the man, reproduce only the POSITION of the body* ». C'est ce qui a débloqué le
-     `step-up` FEMME après 2 rejets.
-  4. **Ne jamais écrire « bench »** pour un support sur lequel il faut **monter ou se tenir
-     debout** → écrire « *solid black rectangular STEP PLATFORM … he/she is the one who is high:
-     both sneakers planted flat on the black top, the platform directly UNDER their feet, carrying
-     their whole weight* », et préciser que le support **ne bouge pas** et **garde sa taille**.
+     (pour le mannequin féminin : même paragraphe en « She is a VERY muscular, athletic,
+     heavily trained 3D female figure… ») ;
+  3. **CONTRÔLE D'IDENTITÉ À 1:1** avant tout assemblage (comparer sans redimensionner) :
+     (a) peau blanche argentée **lisse et mate** (aucune fibre grise striée), (b) **carrure**
+     comparable, (c) **échelle** dans le cadre comparable. ✅ Cette recette a été appliquée aux
+     7 animations du Lot B-01 (H+F), aux 3 du Lot B-02 HOMME et au `bulgarian-split-squat-halteres`
+     FEMME : contrôle 1:1 conforme.
+- 🧰 **Déblocages techniques à connaître (appris les 2026-10-08)** :
+  1. **Le mot « bench » piège le générateur** (il asseoit le mannequin ou le laisse au sol
+     quand il faut monter dessus). Écrire à la place « **long solid black rectangular STEP
+     PLATFORM … the mannequin is the one who is high: both sneakers planted flat on its top,
+     the step directly UNDER the feet, carrying the whole weight** ».
+  2. **Position B d'un mouvement « debout sur un support »** : si elle résiste, utiliser
+     l'**INTERPOLATION À DEUX RÉFÉRENCES** = (1) la frame du profil voulu (femme/homme) +
+     (2) la frame **de l'autre profil déjà validée** montrant la pose, avec la consigne
+     « the SECOND image shows ONLY THE POSE to reproduce — do NOT copy the man, reproduce
+     only the POSITION of the body ».
+  3. **Presse à cuisses, position B** : chaîner **depuis M** (jamais depuis A : le générateur
+     part en profil avec une seule jambe lisible) et décrire la géométrie de façon concrète
+     (« mollets contre les cuisses, genoux vers les aisselles, ~120° »).
+  4. **Les scripts d'assemblage sont prêts** : `scripts/build-planche-exo.sh` (1440×300),
+     `scripts/build-planche-grille.sh` (1440×900), `scripts/build-gif-lot-depuis-gifs.sh`
+     (planche animée 1420×265 **depuis les GIF déjà livrés**, sans les ré-encoder) et
+     `scripts/build-gif-lot.sh` (GIF individuels 460×257 depuis les PNG).
 - **À FAIRE IMMÉDIATEMENT, dans l'ordre :**
-  1. **Lot B-02 — Quadriceps & squats, HOMME puis FEMME** : `back-squat-charge-moderee` (barre),
-     `presse-a-cuisses-pieds-hauts` (machine), `bulgarian-split-squat-halteres` (haltères).
-     ⚠️ **Deux points à trancher avant de générer** : (a) **où placer la machine** de presse à
-     cuisses sachant que le décor unique est la **terrasse bord de mer** et qu'une salle est
-     **interdite** (convention des lots précédents : le matériel est posé **sur la terrasse** —
-     banc noir, rack du POC) ; (b) `back-squat-charge-moderee` doit rester **visuellement
-     distinct** du `back-squat` du POC (entrées différentes, règle 1) sans remplacer le POC
-     (règle 2).
-  2. **Assembler chaque lot livré** : planche animée (`1420×265`) + grille 3×3 (`1440×900`).
-     Utiliser `scripts/build-gif-lot-depuis-gifs.sh` (assemblage **depuis les GIF déjà livrés**)
-     pour ne pas ré-encoder les GIF individuels commités.
-  3. **Poursuivre le Thème B** dans l'ordre de `PLAN-THEMES.md` (H puis F systématiquement).
+  1. **Finir le Lot B-02 FEMME** (6 images) : `back-squat-charge-moderee` FEMME puis
+     `presse-a-cuisses-pieds-hauts` FEMME, dans `themeB/femme/_sources/B-02F/`, en appliquant
+     la recette ci-dessus + le contrôle 1:1.
+  2. **Assembler le Lot B-02 FEMME** : planche animée `themeB/femme/LOT-B02F-quadriceps.gif`
+     (1420×265) + grille `themeB/femme/LOT-B02F-PLANCHE-TRAVAIL.jpg` (1440×900) + les 2
+     planches statiques manquantes (1440×300).
+  3. **Enchaîner le Lot B-03** (`back-squat` — POC à refaire, `squat-cycliste-squat-complet`,
+     `leg-press`) puis les lots B-04 à B-09 du sous-thème quadriceps, H puis F.
+  *(Note : les 2 circuits LOT 3 HOMME en version composite et les 3 animations du POC restent
+  en réserve jusqu'à accord explicite du user.)*
 
 ## 2. LES 15 RÈGLES À NE PAS NÉGOCIER
 
