@@ -12,7 +12,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **71 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 HOMME le 2026-10-08 : peau lisse + carrure massive ; **Lot B-01 FEMME complet** le même jour, `701aa95`, `cb562cb`, `857a674`) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
+| Animations créées | **73 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 HOMME le 2026-10-08 : peau lisse + carrure massive ; **Lot B-01 FEMME complet** le même jour, `701aa95`, `cb562cb`, `857a674`) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
 | Restant à produire | **543** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
@@ -923,6 +923,111 @@ intégrée à une animation livrée. Le **`bulgarian-split-squat-halteres` FEMME
 
 Aucun rejet, **7 appels d'avance** sur le plafond de 10 : le tour s'arrête après la mise à
 jour du suivi (le budget du tour n'est pas consommé pour rien — la suite ouvre le tour 15).
+
+---
+
+## THÈME B — LOT B-03 : SUITE (à ouvrir au prochain tour)
+
+Après le Lot B-02F (clos ce tour), le plan `PLAN-THEMES.md` donne pour **Lot B-03**
+(sous-thème Jambes — quadriceps) :
+
+| # | Entrée | Identifiant | Matériel | Statut |
+| --- | --- | --- | --- | --- |
+| 1 | Back squat | `back-squat` | barre | ⚠️ POC existant (qualité à recontrôler, règle 2) |
+| 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | poids du corps | ⬜ à produire |
+| 3 | Leg press | `leg-press` | machine | ⬜ à produire |
+
+*(La recette « interpolation à deux références » est indispensable pour `leg-press` :
+la machine doit être reprise de la presse HOMME déjà validée en `themeB/_sources/B-02/`,
+et l'identité du/de la mannequin de la pose de référence du Thème A.)*
+
+---
+
+## THÈME B — LOT B-02F FEMME COMPLET (3 / 3 exercices, 9 / 9 positions) — 2026-10-08 (tour 15)
+
+| Fichier | Exercice | Positions | Statut |
+| --- | --- | --- | --- |
+| `themeB/femme/bulgarian-split-squat-halteres-3poses.gif` | Bulgarian split squat haltères FEMME (`dumbbell`) | A = jambe avant tendue · M = demi-descente 45° · B = squat bulgare profond 90° | ✅ **livré (`da499ed`)** (tour 14) |
+| `themeB/femme/back-squat-charge-moderee-3poses.gif` | Back squat (charge modérée) FEMME (`barbell`) | Barre haute sur les trapèzes, un disque de chaque côté : A = debout, jambes tendues · M = demi-squat 45°, talons au sol (RMSE **0,1470**) · B = squat profond, pliure des hanches sous les genoux (RMSE **0,1707**) | ✅ **livré (`c422d46`)** |
+| `themeB/femme/presse-a-cuisses-pieds-hauts-3poses.gif` | Presse à cuisses pieds hauts FEMME (`machine`) | Assise dans la presse inclinée, dos et bassin plaqués au dossier, mains sur les poignées, **pieds HAUTS** sur le plateau : A = jambes quasi tendues (genoux non verrouillés) · M = genoux ~90°, plateau à mi-distance (RMSE **0,0360**) · B = amplitude profonde, plateau proche du buste, genoux ~120° (RMSE **0,2422**) | ✅ **livré (`9e4005c`)** |
+
+**Assemblages du lot (règle 15) :**
+- `themeB/femme/LOT-B02F-quadriceps.gif` (1420×265, 4 frames, 3 colonnes, sans `-layers optimize`) ;
+- `themeB/femme/LOT-B02F-PLANCHE-TRAVAIL.jpg` (grille 3×3, 1440×900) ;
+- planches statiques : `LOT-B02F-bulgarian-split-squat-halteres-PLANCHE-FINALE.jpg`,
+  `LOT-B02F-back-squat-charge-moderee-PLANCHE-FINALE.jpg`,
+  `LOT-B02F-presse-a-cuisses-pieds-hauts-PLANCHE-FINALE.jpg`.
+
+### 🎯 Recette « REMPLACER L'IDENTITÉ, GARDER LES JAMBES » — nouveau déblocage du tour
+
+Pour la presse à cuisses FEMME, trois stratégies ont échoué **avant** que la bonne soit
+trouvée. Elles sont documentées ici pour ne pas les repayée :
+
+| Stratégie | Résultat |
+| --- | --- |
+| Poser la femme sur la machine en décrivant la scène (réf. femme + réf. machine HOMME) | ❌ la femme s'assied, mais **les pieds ne sont PAS en appui sur le plateau** (jambes « en l'air ») |
+| Même consigne + « KEY DETAILS » détaillés (pieds à plat, mains sur les poignées, poussée) | ❌ même échec |
+| Inverser l'ordre des références (machine+pose HOMME en 1ʳᵉ, femme en 2ᵉ : « remplace l'homme par la femme ») | ❌ la femme est bien rendue mais **les pieds quittent le plateau** |
+| ✅ **« GARDE TOUT, NE BOUGE RIEN — seuls le torse et la tête changent »** : 1ʳᵉ réf. = frame HOMME validée (machine + pose + pieds), 2ᵉ réf. = femme ; consigne « DO NOT MOVE anything about the body: his legs, knees, ankles, and especially BOTH FEET stay EXACTLY where they are… Only the identity changes » | ✅ **conforme du premier coup** : pieds restés sur le plateau, identité FEMME conforme (brassière, tresse, peau lisse) |
+
+**Leçon générale** : quand le générateur refuse d'installer un mannequin SUR un engin, il faut
+**garder la frame de l'autre sexe déjà validée** (elle contient la pose ET l'appui corrects)
+et ne demander qu'un **changement d'identité**, jamais une re-pose complète.
+
+### Technique vérifiée en ligne avant génération (règle 14)
+
+- **Back squat (charge modérée) FEMME** : barre **sur les trapèzes** (jamais le cou), pieds
+  largeur d'épaules, orteils 10-30° ouverts, cassure simultanée hanches/genoux, poids entre
+  milieu du pied et talon, cuisses au moins jusqu'à la parallèle, bracing
+  ([fitness-lounge](https://www.fitness-lounge.fr/bien-faire-squats-barre/),
+  [h2olesangles](https://www.h2olesangles.fr/back-squat/),
+  [maboxdecross](https://maboxdecross.fr/mouvement/back-squat)).
+- **Presse à cuisses pieds hauts FEMME** : pieds **hauts** sur le plateau → accent fessiers
+  et ischio-jambiers ; dos et bassin **plaqués au dossier** (le bassin ne décolle jamais),
+  tout le pied en contact, talons ancrés, descente contrôlée jusqu'à ~90°, **genoux jamais
+  verrouillés en haut**, genoux dans l'axe des pointes de pieds
+  ([flexgymperformance](https://flexgymperformance.fr/blogs/quadriceps/presse-a-cuisses-guide-complet),
+  [fitadium](https://www.fitadium.com/conseils/presse-cuisses/),
+  [carefitness](https://www.carefitness.com/page/leg-press-guide-hypertrophie-musculaire)).
+
+### Contrôle d'identité 1:1 (règle du 2026-10-08) — appliqué et CONFORME
+
+| Comparaison | Verdict |
+| --- | --- |
+| `themeA/femme/_sources/A-02F/squat-poids-du-corps-A.png` vs `themeB/femme/_sources/B-02F/back-squat-charge-moderee-A.png` | ✅ peau lisse et mate, carrure massive, tresse, brassière + short noirs |
+| `themeA/femme/_sources/A-02F/squat-poids-du-corps-A.png` vs `themeB/femme/_sources/B-02F/presse-a-cuisses-pieds-hauts-A.png` | ✅ conforme (zoom 1:1 du buste : même femme, même silhouette) |
+
+### Réserve honnête du tour (règle 4)
+
+- **`presse-a-cuisses-pieds-hauts` position M** : l'écart avec la position A est **juste
+  au-dessus du seuil** (RMSE **0,0360** contre 0,030). Le plateau descend bien d'environ un
+  tiers de la course, mais la position A est déjà à genoux légèrement fléchis : la mi-course
+  est donc **moins ample** que sur la version HOMME validée. 1 image rejetée avant (RMSE
+  0,0256, quasi identique à A), puis 1 correctif par description géométrique explicite.
+  *Si le user veut une mi-course plus franche : 1 seule image à refaire (position M).*
+- **`presse-a-cuisses-pieds-hauts` matériel** : comme la version HOMME, c'est une **presse
+  inclinée à chariot** (semi-allongée) et non la presse horizontale assise — écart assumé
+  et documenté (la machine est celle déjà validée au tour 13).
+- **`back-squat-charge-moderee` FEMME** : aucun écart relevé ; barre bien sur les trapèzes,
+  un disque par côté, talons au sol, profondeur franche en B.
+
+### Budget d'images IA du 15ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge technique)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `back-squat-charge-moderee` FEMME A (depuis `A-02F/squat-poids-du-corps-A` + paragraphe de masse) | ✅ conforme |
+| 2 | `back-squat-charge-moderee` FEMME M (depuis `A-02F/squat-poids-du-corps-M`) | ✅ conforme (RMSE A→M = 0,1470) |
+| 3 | `back-squat-charge-moderee` FEMME B (depuis `A-02F/squat-poids-du-corps-B`) | ✅ conforme (RMSE M→B = 0,1707) → **livré (`c422d46`, 72/614)** |
+| 4 | `presse FEMME` A tentative 1 (réf. femme + réf. machine HOMME) | ❌ rejetée : **pieds non posés sur le plateau** |
+| 5 | `presse FEMME` A tentative 2 (consigne « KEY DETAILS » détaillée) | ❌ rejetée : même échec |
+| 6 | `presse FEMME` A tentative 3 (références inversées : « remplace l'homme par la femme ») | ❌ rejetée : la femme est bonne mais **les pieds quittent le plateau** |
+| 7 | `presse FEMME` A tentative 4 (**« garde tout, seuls le torse et la tête changent »**) | ✅ **conforme du premier coup** → identité FEMME validée au contrôle 1:1 |
+| 8 | `presse FEMME` M tentative 1 (consigne « genoux 90°, plateau à mi-course ») | ❌ rejetée : **quasi identique à A** (RMSE 0,0256 < seuil) |
+| 9 | `presse FEMME` M tentative 2 (description géométrique : genoux visibles 90°, plateau « much CLOSER », position des pieds rappelée + « ne déplace pas la machine ») | ✅ conforme (RMSE A→M = 0,0360) |
+| 10 | `presse FEMME` B (interpolation : 1ʳᵉ réf. = position B HOMME « reproduis la position profonde », 2ᵉ réf. = femme) | ✅ conforme (RMSE M→B = 0,2422) → **lot B-02F complet (`9e4005c`, `30da262`, 73/614)** |
+
+**4 images rejetées** (comptées, pas dissimulées : 3 refus de pose sur la machine + 1 amplitude
+insuffisante). Aucune n'est intégrée à une animation livrée.
 
 ---
 
