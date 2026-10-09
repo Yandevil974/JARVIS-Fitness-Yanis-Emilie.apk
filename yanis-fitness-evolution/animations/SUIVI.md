@@ -12,18 +12,18 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **75 / 614** (ajout du squat cycliste FEMME B-03F ; détails et sources en dernière section) |
-| Restant à produire | **539** |
+| Animations créées | **76 / 614** (ajout leg press HOMME B-03 ; détails et sources en dernière section) |
+| Restant à produire | **538** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat cycliste HOMME + FEMME livrés ; back-squat POC audité avec réserves ; leg-press H/F et back-squat FEMME à traiter** |
+| Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat cycliste HOMME + FEMME livrés ; back-squat POC audité avec réserves ; leg-press HOMME livrée ; leg-press FEMME et back-squat FEMME à traiter** |
 | Versions femme produites | **32 / 307** (Thème A 25 + B-01F 3 + B-02F 3 + cycliste B-03F 1) |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
-| Thème B (musculation) | **15 / 187** (8 HOMME + 7 FEMME, incluant le POC `back-squat` audité avec réserves et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
+| Thème B (musculation) | **16 / 187** (9 HOMME + 7 FEMME, incluant le POC `back-squat` audité avec réserves et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -1832,3 +1832,84 @@ ne pas utiliser ce ratio comme pourcentage sans audit.
 - Prochaine étape : établir une pose de référence de leg press standard dont les deux appuis
   soient vérifiables ; puis M/B et version FEMME. Back squat FEMME demeure à produire.
 - B-03 incomplet ; B-04 non commencé ; aucune intégration dans l'application.
+
+## Livraison leg press HOMME — 9 octobre 2026 (reprise après `261b3cb`)
+
+**76/614 animations livrées, 538 restantes. Objectif des 10 nouveaux GIFs : 2/10 livré,
+8 restants.** Nouvelle livraison : `leg-press` HOMME B-03, différente de la presse pieds hauts.
+
+### Reprise et recherche technique
+Le sandbox était revenu à `ddd1fb9`. Fetch puis merge --ff-only de la branche autorisée
+`arena/7967ce00-jarvis-fitness-yanis-emilie-ap` jusqu'à `261b3cb`, sans changement de branche.
+Inventaire relu : `leg-press`, matériel `machine`.
+
+Sources effectivement consultées avant génération :
+- MagicFit, texte installation/exécution : dos/bassin soutenus, genoux dans l'axe,
+  extension sans verrouillage et pieds à plat :
+  https://www.magicfit.fr/les-conseils-du-coach-lexercice-leg-press/
+- FitRated, texte sur presse compacte à siège mobile et plateau fixe :
+  https://www.fitrated.com/gear/strength-training/force-usa-compact-leg-press-review/
+- YouTube Stevie Richards Fitness, **description et transcription** de la présentation
+  Force USA Compact Leg Press (pas de visionnage vidéo image par image) : plateau réglable,
+  pieds au milieu, rouleaux/chariot, différences avec la presse à plateau mobile :
+  https://www.youtube.com/watch?v=OYZembAJ5II
+- Photo de démonstration latérale examinée pour voir les deux chaussures sur le plateau :
+  https://livefit.com/products/force-usa-compact-leg-press?variant=40021485977702
+  Image : https://livefit.com/cdn/shop/products/clp-woman-side.jpg?v=1674594143&width=1214
+  La photo sert au cadrage/à la cinématique, pas à l'identité. Photo externe non ajoutée au dépôt.
+
+### Nouveau cadrage et recette
+Les précédents essais masquaient les pieds. Un cadrage davantage latéral a été établi avec
+la photo technique, un crop de l'identité HOMME Thème A et des crops de décor/châssis B-02.
+Même famille de machine (siège sur rails inclinés, plateau fixe), mais illustration propre
+à `leg-press`, avec pieds au centre et visibles. Ce n'est pas un renommage du GIF pieds hauts.
+
+La première image demandée comme M était plus fléchie ; elle a été retenue comme **B**
+après inspection. A et M ont ensuite été obtenues par guides articulés dérivés de cette B :
+- A : translation siège/torse/dossier/poignées (+43,-43 px), pieds fixes ;
+- M : translation (+23,-23 px), pieds fixes ;
+- rotation des segments de jambes avec joints projetés, puis nettoyage IA du guide ;
+- l'identité utilisée en complément est un crop du buste B, sans redimensionnement.
+Les guides bruts ne sont jamais utilisés dans le GIF final. Pas de chaîne vers une nouvelle
+pose depuis une image générée refusée. Les deux derniers appels sont des corrections locales
+de raccord sur la même pose, pas des références pour une nouvelle pose.
+
+### 8 appels generate_image au total
+| # | Demande | Résultat |
+|---|---|---|
+| 1 | Cadrage latéral technique + identité H + crops B-02 | Retenu comme B, après vérification des pieds et flexion |
+| 2 | A directement depuis B | Rejet : siège presque inchangé, extension insuffisante |
+| 3 | M directement depuis B | Rejet : déplacement/amplitude trop faibles |
+| 4 | Guide articulé A + crop identité B | Pose retenue provisoirement ; marche parasite dans le muret à corriger |
+| 5 | Guide articulé M + crop identité B | Rejet : rendu portrait, cadrage/machine changés |
+| 6 | Guide articulé M seul, paysage explicite | Pose retenue provisoirement ; marche du muret et coussin dupliqué à corriger |
+| 7 | Correction locale A : muret horizontal | A finale retenue, corps/machine inchangés |
+| 8 | Correction locale M : muret et suppression du coussin parasite | M finale retenue |
+
+3 sources finales conservées, 3 essais rejetés et 2 états intermédiaires corrigés.
+Arrêt à 8/10, aucun drapeau rouge (celui-ci reste réservé à la limite du chat).
+
+### Contrôles de livraison
+- A/M/B : 1376×768 paysage, identité/buste contrôlés à **1:1**, peau et carrure cohérentes.
+- Crops des pieds : deux chaussures posées sur le plateau, semelles en contact, pas de talon
+  flottant. Pieds au centre, pas sur le bord haut. Vérification de la flexion et du support dos/bassin.
+- Cinématique : pieds/plateau/châssis fixes ; siège, dossier et mannequin se déplacent sur rails.
+- RMSE A→M **0,0978314**, M→B **0,102198**, seuil 0,030 passé.
+- PNG MD5 : A `22bc790e1c8505ec888a18a4db11d3d8`, M `2b9cbc6a2419dff07342e4ef558a8b9a`,
+  B `fd5a75cb90543173b714c94f9a2a1210` ; aucun doublon PNG du chantier.
+- GIF MD5 `ef415b61bb9eaec11ada7ec70a65a55d`, aucun doublon GIF ; 460×257,
+  4 frames A/M/B/M, boucle infinie, durées 130/110/130/110 centièmes.
+- Planche finale 1440×300 inspectée après assemblage.
+
+### Livrables
+- `themeB/_sources/B-03/leg-press-{A,M,B}.png`
+- `themeB/leg-press-3poses.gif`
+- `themeB/LOT-B03-leg-press-PLANCHE-FINALE.jpg`
+
+### Suite
+Produire **leg press FEMME** en partant de ces A/M/B HOMME conformes, conserver exactement
+machine, siège, jambes, pieds, appuis et camera ; ne changer que l'identité selon la recette
+FEMME documentée. Puis back squat FEMME, puis les six GIFs B-04.
+B-03 reste incomplet ; POC back squat H intact avec ses réserves. Aucun GIF livré modifié,
+aucune intégration dans `public/media`, `release/` ou le code. Validation visuelle utilisateur
+attendue sur la planche finale.

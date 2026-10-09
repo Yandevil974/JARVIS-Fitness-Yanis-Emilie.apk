@@ -1,11 +1,11 @@
 # PASSATION — reconstruction des animations JARVIS Fitness
 
-**État de référence : 9 octobre 2026 · 75 / 614 animations livrées · 539 restantes**
+**État de référence : 9 octobre 2026 · 76 / 614 animations livrées · 538 restantes**
 
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`.
 - Branche portant l'historique consolidé connu :
   `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`.
-- Dernière livraison : `squat-cycliste-squat-complet` FEMME (B-03F, 75/614).
+- Dernière livraison : `leg-press` HOMME (B-03, 76/614).
   Le dernier commit HOMME était `069dd4f`. Toujours vérifier le HEAD distant au début du prochain tour ; le sandbox peut
   revenir à un commit plus ancien.
 - La consigne autonome à copier-coller est dans `CONSIGNE-A-COPIER-COLLER.md`.
@@ -21,7 +21,7 @@
 | B-02 — quadriceps | **Terminé : 3/3 exercices HOMME et 3/3 FEMME** ; B-02F = 9/9 positions et assemblages produits |
 | B-03 — quadriceps | **En cours, ne pas annoncer terminé** ; détails ci-dessous |
 
-**Compteur Thème B : 15/187** (le détail des comptages est dans `SUIVI.md`).
+**Compteur Thème B : 16/187** (le détail des comptages est dans `SUIVI.md`).
 
 ## Lot B-03 — avancement et reprise
 
@@ -29,7 +29,7 @@
 |---|---|---|---|---|
 | `back-squat` | barre | POC audité avec réserves, intact | À produire | Ne pas remplacer le POC sans accord explicite |
 | `squat-cycliste-squat-complet` | poids du corps | ✅ Livré (`069dd4f`) | ✅ Livrée (75/614) | A/M/B et assemblages contrôlés |
-| `leg-press` | machine | À produire | À produire | Vérifier la technique et le matériel en ligne ; appliquer la recette machine |
+| `leg-press` | machine | ✅ Livrée (76/614) | À produire | Vérifier la technique et le matériel en ligne ; appliquer la recette machine |
 
 ### Livrable déjà commité : squat cycliste HOMME
 
@@ -51,7 +51,7 @@
 2. Lire `SUIVI.md`, `PLAN-THEMES.md` et la consigne autonome. Recontrôler le POC `back-squat`
    sans le remplacer ; inscrire un verdict clair. Toute reprise du POC nécessite l'accord
    explicite de l'utilisateur.
-3. Poursuivre le Lot B-03 : `leg-press` HOMME puis les versions FEMME prévues (`back-squat`,
+3. Poursuivre le Lot B-03 : versions FEMME restantes (`back-squat`,
    leg press). Recherche technique en ligne et contrôle du matériel avant chaque
    exercice.
 4. Pour chaque nouvelle image : repartir d'une pose de référence validée ; identité, carrure et
@@ -117,3 +117,22 @@
 - Reprendre par une référence machine permettant de contrôler les pieds au milieu du plateau,
   puis produire M/B et la FEMME. Ne pas confondre siège-chariot mobile et plateau mobile.
 - Conserver les animations cycliste HOMME/FEMME désormais livrées. POC back squat H intact.
+
+
+## État courant — livraison leg press HOMME (9 octobre 2026)
+
+- **76/614 animations livrées, 538 restantes**. Objectif 10 nouveaux GIFs : **2/10**, 8 restants.
+- `leg-press` HOMME désormais livrée : trois sources A/M/B 1376×768,
+  `themeB/leg-press-3poses.gif` (460×257, 4 frames) et
+  `themeB/LOT-B03-leg-press-PLANCHE-FINALE.jpg` (1440×300).
+- RMSE A→M **0,0978314**, M→B **0,102198** ; contrôles 1:1, appuis, cinématique, anti-doublons
+  et formats effectués. Identité et même cadre conservés sur les trois poses.
+- **8 appels image ce tour** : 3 sources finales, 3 essais rejetés, 2 états corrigés localement.
+- Nouveau cadrage latéral : chaussures visibles au centre du plateau. Machine à siège mobile
+  sur rails et plateau fixe. Recette et sources réelles dans la dernière section de SUIVI.md.
+- **Prochaine étape : leg press FEMME**, depuis
+  `themeB/_sources/B-03/leg-press-{A,M,B}.png`. Conserver machine, pose, pieds et appuis ;
+  changer uniquement l'identité selon la recette FEMME. Puis back squat FEMME, puis B-04.
+- B-03 incomplet ; POC back squat HOMME intact avec réserves ; aucune intégration applicative.
+- Les anciens bilans « aucune pose de presse retenue » sont historiques, remplacés par cette
+  livraison. Les GIFs cycliste H/F et presse H sont désormais à conserver sans modification.
