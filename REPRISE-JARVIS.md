@@ -30,8 +30,9 @@ servira à Yanis ET à Émilie. Les nouvelles versions FEMME sont reportées à 
 
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`.
 - Historique consolidé : `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`.
-- Dernier exercice livré : **`fa9d52a` — leg press HOMME**, après
-  `d83b70c` — squat cycliste FEMME, et `069dd4f` — squat cycliste HOMME.
+- Dernier exercice livré : **`945908f` — leg extension HOMME (B-04)**, après
+  `fa9d52a` — leg press HOMME, `d83b70c` — squat cycliste FEMME, et
+  `069dd4f` — squat cycliste HOMME.
 - Le HEAD distant peut être plus récent (documentation, nouvelles livraisons) : le vérifier.
 - Toujours rester sur la branche imposée à la session. Aucun changement de branche ni push
   sur une autre branche. Si une future session impose une autre branche, y récupérer
@@ -56,13 +57,14 @@ locaux sont à jour. Vérifier les livrables réellement présents après synchr
 
 | Élément | État |
 |---|---|
-| Compteur historique HOMME + FEMME | **76/614 livrées**, 538 restantes dans l'ancien périmètre double |
+| Compteur historique HOMME + FEMME | **77/614 livrées**, 537 restantes dans l'ancien périmètre double |
 | Première phase désormais prioritaire | **307 entrées d'exercices**, une version HOMME commune aux deux profils ; couverture réelle à auditer |
-| Objectif de 10 nouveaux GIFs en cours | **2 déjà livrés**, 8 encore à produire, désormais HOMME uniquement |
+| Objectif de 10 nouveaux GIFs en cours | **3 déjà livrés**, 7 encore à produire, désormais HOMME uniquement |
 | Thème A | 50/50 H+F historiquement livrés, dont 25 HOMME ; réserves des circuits H maintenues |
 | B-01 et B-02 quadriceps | Livrés H+F ; ne pas les refaire |
 | B-03 | Non clos sans réserve : POC back squat H imparfait ; pas de nouvelle production F à faire maintenant |
-| Intégration de ces nouveaux GIFs | Pas encore réalisée dans l'application |
+| B-04 | `leg-extension` HOMME livré (`945908f`) ; `front-squat` HOMME **en cours** (pose A validée et conservée, M/B à reprendre — amplitude insuffisante) ; `fentes-bulgares-halteres-pied-avant-sureleve` HOMME à produire |
+| Intégration de ces nouveaux GIFs | Pas encore réalisée dans l'application ; **préparation faite** : [INTEGRATION-GIFS-HOMME.md](yanis-fitness-evolution/animations/INTEGRATION-GIFS-HOMME.md) (audit couverture 37/209 exercices, mapping exercice → GIF HOMME → deux profils, plan par vagues, tests) — validation utilisateur requise avant toute modification de code/médias |
 
 **Ne pas convertir automatiquement 76/614 en une couverture HOMME de 76/307.**
 Il faut distinguer fichiers livrés, exercices couverts par un GIF HOMME validé et profils
@@ -85,6 +87,8 @@ Ne pas refaire ni attendre une FEMME pour avancer vers B-04 HOMME.
 
 ### Derniers livrables accessibles
 
+- [Leg extension HOMME — GIF](yanis-fitness-evolution/animations/themeB/leg-extension-3poses.gif)
+- [Leg extension HOMME — planche finale](yanis-fitness-evolution/animations/themeB/LOT-B04-leg-extension-PLANCHE-FINALE.jpg)
 - [Leg press HOMME — GIF](yanis-fitness-evolution/animations/themeB/leg-press-3poses.gif)
 - [Leg press HOMME — planche finale](yanis-fitness-evolution/animations/themeB/LOT-B03-leg-press-PLANCHE-FINALE.jpg)
 - [Squat cycliste HOMME — GIF](yanis-fitness-evolution/animations/themeB/squat-cycliste-squat-complet-3poses.gif)
@@ -107,7 +111,7 @@ contrôlés. Dernier tour de production : 8 appels image, 1 GIF livré.
 
 | Lot | Exercices HOMME |
 |---|---|
-| B-04 | ✅ `leg-extension` livré · `front-squat` · `fentes-bulgares-halteres-pied-avant-sureleve` |
+| B-04 | ✅ `leg-extension` livré · 🔄 `front-squat` en cours (pose A validée, M/B à reprendre) · `fentes-bulgares-halteres-pied-avant-sureleve` |
 | B-05 | `step-up-haut`, `back-squat-barre-haute`, `hack-squat` |
 | B-06, début | `back-squat-inertie-pause-complete`, `fentes-barre` |
 

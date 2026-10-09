@@ -2019,3 +2019,65 @@ bougent.
 `fentes-bulgares-halteres-pied-avant-sureleve` HOMME B-04. FEMME reportée.
 Aucune intégration dans `public/media`, `release/` ou le code applicatif.
 Préparation en parallèle du mapping d'intégration GIF HOMME → deux profils (documents).
+
+## Front squat HOMME B-04 — EN COURS, non livré — 9 octobre 2026 (même tour que `945908f`)
+
+**77/614, objectif 10 GIFs : 3/10. Aucun nouveau GIF livré pour cet exercice.**
+`front-squat` (barre, rack avant) est lancé mais **non livré** : la pose A est validée et
+conservée, M et B sont rejetées (amplitude insuffisante). Aucun GIF assemblé, aucune
+planche, aucun compteur modifié.
+
+### Recherche technique
+
+Sources consultées avant génération :
+- H2O Les Angles, front rack et exécution (clean grip : barre légèrement plus large que
+  les épaules, coudes hauts parallèles au sol ; buste vertical 80-90° ; descente
+  contrôlée, coudes maintenus) : https://www.h2olesangles.fr/front-squat/
+- Nutrimuscle, technique (barre sur les deltoïdes antérieurs, pieds largeur de hanches,
+  orteils légèrement dehors, poitrine ouverte, hanches sous les genoux, remontée par les
+  talons) :
+  https://www.nutrimuscle.com/blogs/actualites/front-squat-technique-muscles-benefices
+- ForceIndex, squat avant (rack avant, coudes hauts et parallèles, tronc vertical, squat
+  complet, genoux alignés orteils) : https://force-index.com/fr/exercises/front_squat
+- Praticonnect, encyclopédie (rack position, descente plus verticale que le back squat) :
+  https://praticonnect.com/en/encyclopedia/musculation-exercices/musculation-quadriceps/front-squat
+
+### Production — appels 6 à 10 du tour (plafond 10 atteint)
+
+| # | Demande | Résultat |
+|---|---|---|
+| 6 | A depuis référence A-02 (rack avant) | ❌ rejetée : barre lue en position haute type back squat, coudes non levés |
+| 7 | A depuis A-02, consigne rack avant explicite (barre DEVANT le cou sur les deltoïdes, coudes hauts, bras parallèles au sol) | ✅ retenue après crops (rack, pieds, identité 1:1) |
+| 8 | M depuis A validée (mi-descente, buste vertical, coudes hauts) | ❌ rejetée : amplitude insuffisante (~1/8 de squat, flexion ~20-30°) |
+| 9 | B depuis A validée (squat profond, cuisses parallèles au sol) | ❌ rejetée : amplitude insuffisante (~1/3 de squat, cuisses obliques) |
+| 10 | B depuis A validée, consigne de profondeur explicite | ⚠️ erreur technique du générateur (`Response contains no images`, MAX_TOKENS) — non relançable ce tour, plafond 10 atteint |
+
+Contrôles quantitatifs des essais M/B rejetés : RMSE A→M **0,0303084** (à peine au seuil),
+M→B **0,0628472**, A→B **0,0675709** — le seuil ne remplace pas le contrôle technique :
+l'amplitude visée (mi-descente franche, puis cuisses parallèles au sol) n'est pas atteinte.
+
+### État conservé (commité pour survivre au reset du sandbox)
+
+- `themeB/_sources/B-04/front-squat-A.png` — pose A **validée** (rack avant lisible : barre
+  devant le cou sur les deltoïdes antérieurs, coudes hauts, pieds à plat, identité 1:1).
+  Les essais M/B rejetés ne sont pas conservés (règle : pas de pose refusée en référence).
+- Reprendre à la prochaine session **depuis cette pose A validée** : produire M
+  (mi-descente franche, genoux ~90°, cuisses obliques) puis B (squat profond, cuisses
+  parallèles au sol, hanches sous les genoux), avec consigne de profondeur explicite dès
+  le premier essai. Ne pas relancer depuis un essai refusé.
+
+### Livraison : aucune
+
+Pas de GIF, pas de planche, statut inventaire inchangé (`à recréer`), compteur inchangé.
+La planche animée et la grille du lot B-04 ne sont toujours pas à assembler (attendre
+3 exercices validés du lot).
+
+### Suite
+
+1. `front-squat` HOMME : terminer M/B depuis la pose A validée, contrôler, assembler GIF
+   + planche, livrer.
+2. Puis `fentes-bulgares-halteres-pied-avant-sureleve` HOMME B-04.
+3. Préparation de l'intégration : voir `INTEGRATION-GIFS-HOMME.md` (mapping exercice →
+   GIF HOMME → deux profils, audit de couverture, plan par vagues, tests de lecture).
+   Document de préparation uniquement — validation utilisateur requise avant toute
+   modification de `public/media/`, `src/` ou `release/`.
