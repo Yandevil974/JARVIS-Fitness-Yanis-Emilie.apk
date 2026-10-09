@@ -12,8 +12,8 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **62 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 1/3** (`bulgarian-split-squat` `c2efd7d`)) |
-| Restant à produire | **552** |
+| Animations créées | **63 / 614** (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 2/3** (`bulgarian-split-squat` `c2efd7d`, `goblet-squat` `6828567`)) |
+| Restant à produire | **551** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
@@ -822,11 +822,32 @@ LOT A-02 FEMME (profil / face).
 | Fichier | Exercice | Positions | Statut |
 | --- | --- | --- | --- |
 | `themeB/bulgarian-split-squat-3poses.gif` | Bulgarian split squat HOMME (poids du corps) | Vue trois-quarts avant sur tapis noir avec banc de musculation plat noir derrière : A = départ jambe avant droite tendue, pied arrière gauche en appui sur le banc noir, mains aux hanches · M = demi-descente à ~45°, bras levés pour l'équilibre (réserve : banc noir légèrement plus décalé à droite sur M) · B = squat bulgare profond à 90° (cuisse avant horizontale parallèle au sol, genou arrière bas sous le banc, bras à l'horizontale) | ✅ **livré (`c2efd7d`)** (RMSE A→M = **0,1278**, M→B = **0,1347**) |
-| `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | À produire au prochain tour (haltère tenu verticalement en coupe contre le sternum, coudes vers le bas touchant l'intérieur des genoux au point bas) | ⬜ prochain tour |
-| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | À produire au prochain tour (pied entier posé sur le banc à hauteur de genou, poussée unilatérale dans le talon sans élan de la jambe arrière) | ⬜ prochain tour |
+| `themeB/goblet-squat-3poses.gif` | Goblet squat HOMME (haltère) | Vue trois-quarts avant sur tapis noir : A = debout jambes tendues, haltère vertical contre sternum, coudes vers le bas · M = demi-squat contrôlé à ~45° · B = squat profond cuisses parallèles, coudes à l'intérieur des genoux | ✅ **livré (`6828567`)** (RMSE A→M = **0,071**, M→B = **0,049**) |
+| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | Step-up sur banc (hauteur du genou) HOMME | Banc noir à hauteur du genou devant : A = pied gauche entier sur le banc, pied droit au sol, mains aux hanches · M = poussée unilatérale à mi-hauteur, pied droit décollé · B = debout en extension complète sur le banc | ⚠️ **A et M produits, B à reprendre au prochain tour** (4 essais : le générateur refuse de poser le pied droit sur le banc, laisse systématiquement les pieds au sol avec t-shirt noir par moments — même verrouillage que le bulgarian-split-squat au tour précédent ; stratégie à changer : utiliser une référence où le personnage est DÉJÀ debout en hauteur) |
 
 **Aperçus dans le dépôt (règle 15) :**
 - `themeB/LOT-B01-bulgarian-split-squat-PLANCHE-FINALE.jpg`.
+
+### Budget d'images IA du 9ᵉ tour Fitness 14 — 10 / 10 (drapeau rouge technique)
+
+| # | Appel | Résultat |
+| --- | --- | --- |
+| 1 | `goblet-squat` HOMME A (depuis `squat-poids-du-corps-A.png` : debout, haltère vertical contre sternum) | ✅ conforme (jambes tendues, coudes vers le bas) |
+| 2 | `goblet-squat` HOMME M (depuis `squat-M.png` en 1ʳᵉ + `goblet-A` : demi-squat ~45°) | ✅ conforme (RMSE A→M = 0,071) |
+| 3 | `goblet-squat` HOMME B (depuis `squat-B.png` en 1ʳᵉ + `goblet-A` : squat profond, coudes à l'intérieur des genoux) | ✅ conforme (RMSE M→B = 0,049) → **livré (`6828567`, 63/614)** |
+| 4 | `step-up` HOMME A (depuis `goblet-A` : pied gauche à plat sur banc, pied droit au sol, mains hanches) | ✅ conforme (2 jambes, banc à hauteur genou) |
+| 5 | `step-up` HOMME M (essai 1, chaîné depuis A) | ❌ erreur générateur (`Response contains no images`) |
+| 6 | `step-up` HOMME M (essai 2, chaîné depuis A) | ✅ conforme (corps à mi-hauteur, pied droit décollé, RMSE A→M = 0,037) |
+| 7 | `step-up` HOMME B (essai 1, chaîné depuis M) | ❌ rejeté (t-shirt noir apparu + pieds au sol au lieu du banc + décor changé) |
+| 8 | `step-up` HOMME B (essai 2, depuis `step-up-A` en insistant sur les pieds sur le banc) | ❌ rejeté (personnage debout DERRIÈRE le banc, pieds au sol) |
+| 9 | `step-up` HOMME B (essai 3, depuis `step-up-M` avec consigne explicite des 2 pieds sur le banc) | ❌ rejeté (pieds restés au sol, banc effacé devant lui) |
+| 10 | `step-up` HOMME B (essai 4, depuis `step-up-M` en décrivant la transition jambe droite) | ❌ rejeté (pieds encore au sol — le modèle résiste à poser les 2 pieds sur le banc en chaînage depuis M) |
+
+**10 appels au total** (4 images retenues pour livraison + 1 erreur technique + 5 rejets).
+- Goblet-squat HOMME : 3/3 livré ✅.
+- Step-up HOMME : A et M conservés dans `_sources/B-01/`, **B à produire au prochain tour** avec une stratégie différente (référence partant d'une position déjà debout en hauteur / sur plateforme, au lieu de chaîner depuis M qui "rabaisse" systématiquement le personnage au sol).
+
+**Morphologie** : corps TRÈS musclé (pectoraux massifs, abdos épais, bras et quadris hypertrophiés) bien respectée sur goblet A/M/B et step-up A/M. Le torse reste systématiquement SHIRTLESS (argenté mat) sauf sur un rejet B du step-up (t-shirt noir) qui n'a pas été retenu.
 
 ### Budget d'images IA du 8ᵉ tour Fitness 13 — 10 / 10 (drapeau rouge)
 
