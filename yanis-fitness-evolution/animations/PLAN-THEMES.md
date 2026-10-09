@@ -127,25 +127,25 @@ Sous-thème musculation — quadriceps
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Bulgarian split squat | `bulgarian-split-squat` | quadriceps | poids du corps · H + F (2 anim.) | ✅ **LOT B-01 H livré (`c2efd7d`)** · ⬜ F à venir |
-| 2 | Goblet squat | `goblet-squat` | quadriceps | haltères · H + F (2 anim.) | ⬜ prochain tour (H puis F) |
-| 3 | Step-up sur banc (hauteur du genou) | `step-up-sur-banc-hauteur-du-genou` | quadriceps | poids du corps · H + F (2 anim.) | ⬜ prochain tour (H puis F) |
+| 1 | Bulgarian split squat | `bulgarian-split-squat` | quadriceps | poids du corps · H + F (2 anim.) | ✅ HOMME (`c2efd7d`) · ✅ FEMME (`701aa95`) |
+| 2 | Goblet squat | `goblet-squat` | quadriceps | haltères · H + F (2 anim.) | ✅ HOMME (`1e759eb`) · ✅ FEMME (`cb562cb`) |
+| 3 | Step-up sur banc (hauteur du genou) | `step-up-sur-banc-hauteur-du-genou` | quadriceps | poids du corps · H + F (2 anim.) | ✅ HOMME (`0c2d65a`) · ✅ FEMME (`857a674`) |
 
 ### Lot B-02
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Back squat (charge modérée) | `back-squat-charge-moderee` | quadriceps | barre · H + F (2 anim.) | ✅ **B-02 H livré (`dcacd1c`)** · ⬜ F à venir |
-| 2 | Presse à cuisses pieds hauts | `presse-a-cuisses-pieds-hauts` | quadriceps | machine · H + F (2 anim.) | ✅ **B-02 H livré (`770e5cd`)** · ⬜ F à venir |
+| 1 | Back squat (charge modérée) | `back-squat-charge-moderee` | quadriceps | barre · H + F (2 anim.) | ✅ **B-02 H livré (`dcacd1c`)** · ✅ **B-02F F livrée (`c422d46`)** |
+| 2 | Presse à cuisses pieds hauts | `presse-a-cuisses-pieds-hauts` | quadriceps | machine · H + F (2 anim.) | ✅ **B-02 H livré (`770e5cd`)** · ✅ **B-02F F livrée (`9e4005c`)** |
 | 3 | Bulgarian split squat haltères | `bulgarian-split-squat-halteres` | quadriceps | haltères · H + F (2 anim.) | ✅ **B-02 H livré (`e5d8f1c`)** · ✅ **B-02F F livrée (`da499ed`)** |
 
 ### Lot B-03
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Back squat | `back-squat` | quadriceps | barre · H + F (2 anim.) | ✅ POC |
-| 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | quadriceps | poids du corps · H + F (2 anim.) | à recréer |
-| 3 | Leg press | `leg-press` | quadriceps | machine · H + F (2 anim.) | à recréer |
+| 1 | Back squat | `back-squat` | quadriceps | barre · H + F (2 anim.) | ⚠️ POC HOMME existant à recontrôler ; FEMME à produire · ne pas remplacer le POC sans accord explicite |
+| 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | quadriceps | poids du corps · H + F (2 anim.) | ✅ HOMME livré (`069dd4f`) · FEMME à produire |
+| 3 | Leg press | `leg-press` | quadriceps | machine · H + F (2 anim.) | HOMME + FEMME à produire ; recette machine dans `SUIVI.md` |
 
 ### Lot B-04
 

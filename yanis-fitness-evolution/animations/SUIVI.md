@@ -12,18 +12,18 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **73 / 614** (identité du mannequin **rétablie** sur les 3 exercices du Lot B-01 HOMME le 2026-10-08 : peau lisse + carrure massive ; **Lot B-01 FEMME complet** le même jour, `701aa95`, `cb562cb`, `857a674`) (POC 5 + L1 : 3 + L2 : 3 + L3 : 2 + L4 : 3 + L5 : 3 + A-01 : 3 + A-02 : 3 + A-03 : 3 + A-04 HOMME : 3 + A-05 HOMME : 2 + **A-08/09 HOMME : 3/3 ✅** (`204a8b4`) + A-01 FEMME : 3 + A-02 FEMME : 3 + A-03 FEMME : 3 + A-04 FEMME : 3 + A-05 FEMME : 2 + **A-08F/09F FEMME : 3/3 ✅** (`5467b86`) + **R1 FEMME : 3** + **R2 FEMME : 3** + **LOT 3 FEMME : 2 composites** + **B-01 HOMME : 3/3 ✅** (`bulgarian-split-squat` `c2efd7d` + `goblet-squat` `f11b3b9` + `step-up-sur-banc-hauteur-du-genou`)) |
-| Restant à produire | **543** |
+| Animations créées | **74 / 614** (73/614 après la clôture du Lot B-02F ; ajout du `squat-cycliste-squat-complet` HOMME du Lot B-03, commit `069dd4f`) |
+| Restant à produire | **540** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1 (3) + L2 (3) + L3 (2) + L4 (3) + L5 (3) + A-01 (3) + A-02 (3) + A-03 (3) + A-04 HOMME (3/3 ✅) + A-05 HOMME (3/3 ✅) + **A-08/09 HOMME (3/3 ✅ `204a8b4`)** + A-01 FEMME (3) + A-02 FEMME (3) + A-03 FEMME (3) + A-04 FEMME (3/3 ✅) + A-05 FEMME (3/3 ✅) + **A-08F/09F FEMME (3/3 ✅ `5467b86`)** + R1 FEMME (3) + R2 FEMME (3) + LOT 3 FEMME (2 composites) + **B-01 HOMME (3/3 ✅)** + **B-01 FEMME (3/3 ✅ `701aa95`, `cb562cb`, `857a674`)** |
-| Versions femme produites | **28 / 307** (Thème A 25 + Lot B-01F 3) |
+| Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat-cycliste-squat-complet HOMME livré (`069dd4f`) ; back-squat POC à recontrôler ; leg-press et versions FEMME à traiter** |
+| Versions femme produites | **31 / 307** (Thème A 25 + B-01F 3 + B-02F 3) |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
-| Thème B (musculation) | **3 / 187 en homme ET 3 / 187 en femme** — **Lot B-01 complet dans les deux profils** (quadriceps & squats : `bulgarian-split-squat`, `goblet-squat`, `step-up-sur-banc-hauteur-du-genou`) |
+| Thème B (musculation) | **14 / 187** (8 HOMME + 6 FEMME, incluant le POC `back-squat` à recontrôler et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -926,20 +926,45 @@ jour du suivi (le budget du tour n'est pas consommé pour rien — la suite ouvr
 
 ---
 
-## THÈME B — LOT B-03 : SUITE (à ouvrir au prochain tour)
+## THÈME B — LOT B-03 EN COURS (mise à jour après `069dd4f`)
 
-Après le Lot B-02F (clos ce tour), le plan `PLAN-THEMES.md` donne pour **Lot B-03**
-(sous-thème Jambes — quadriceps) :
+Le Lot B-02F est terminé. Le Lot B-03 (Jambes — quadriceps) progresse maintenant comme suit ;
+ne pas annoncer le lot terminé :
 
 | # | Entrée | Identifiant | Matériel | Statut |
 | --- | --- | --- | --- | --- |
-| 1 | Back squat | `back-squat` | barre | ⚠️ POC existant (qualité à recontrôler, règle 2) |
-| 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | poids du corps | ⬜ à produire |
-| 3 | Leg press | `leg-press` | machine | ⬜ à produire |
+| 1 | Back squat | `back-squat` | barre | ⚠️ POC HOMME existant à recontrôler (règle 2) ; FEMME à produire. Ne pas remplacer le POC sans accord explicite. |
+| 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | poids du corps | ✅ HOMME livré (`069dd4f`, 74/614) ; FEMME à produire |
+| 3 | Leg press | `leg-press` | machine | ⬜ HOMME + FEMME à produire ; appliquer la recette machine ci-dessous |
 
-*(La recette « interpolation à deux références » est indispensable pour `leg-press` :
-la machine doit être reprise de la presse HOMME déjà validée en `themeB/_sources/B-02/`,
-et l'identité du/de la mannequin de la pose de référence du Thème A.)*
+### `squat-cycliste-squat-complet` HOMME — livraison `069dd4f`
+
+- Sources A/M/B : `themeB/_sources/B-03/squat-cycliste-squat-complet-{A,M,B}.png` (1376×768),
+  créées depuis les poses de référence HOMME validées de `themeA/_sources/A-02/` avec le
+  paragraphe de masse musculaire.
+- Technique vérifiée en ligne avant génération (règles 6 et 14) : talons surélevés sur un disque,
+  pieds rapprochés, pointes vers l'avant, buste droit, genoux dans l'axe, descente contrôlée
+  jusqu'au squat complet. Sources : https://www.sport-equipements.fr/squat-cycliste/ ;
+  https://smartworkout.app/en/exercise-library/legs/cyclist-squat ;
+  https://www.grandestcyclisme.fr/squat-cycliste/.
+- RMSE : A→M **0,0778** ; M→B **0,0911** (seuil ≥ 0,030). Contrôle d'identité 1:1 conforme.
+- Livrables : `themeB/squat-cycliste-squat-complet-3poses.gif` (460×257, 4 frames) et
+  `themeB/LOT-B03-squat-cycliste-squat-complet-PLANCHE-FINALE.jpg` (1440×300).
+- La planche animée et la grille du lot B-03 ne sont pas encore à assembler : attendre les
+  livrables validés des autres exercices/profils.
+
+### Suite à faire
+
+1. Recontrôler le POC `back-squat` sans le remplacer ; noter le verdict et demander l'accord
+   explicite avant toute reprise.
+2. Continuer B-03 en HOMME puis FEMME ; vérifier en ligne la technique et `inventaire.json`
+   avant chaque génération. `leg-press` est une entrée distincte de
+   `presse-a-cuisses-pieds-hauts`.
+3. Pour `leg-press`, reprendre la machine dans
+   `themeB/_sources/B-02/presse-a-cuisses-pieds-hauts-{A,M,B}.png` et l'identité dans les poses
+   de référence validées du Thème A. Pour la FEMME, appliquer la recette documentée
+   **« GARDE TOUT, NE BOUGE RIEN — seuls le torse et la tête changent »** ; ne pas réessayer les
+   stratégies qui ont fait quitter le plateau aux pieds.
 
 ---
 
