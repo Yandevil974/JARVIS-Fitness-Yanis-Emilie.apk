@@ -183,3 +183,14 @@ fichiers réellement présents avant de reprendre.
 - Historique détaillé et rejets : `SUIVI.md`. Les anciennes mentions « B non validée » dans ce
   journal sont historiques, remplacées par la livraison ci-dessus.
 - Sources A/M/B, identité et recettes machine des sections précédentes restent obligatoires.
+
+## Point de reprise final du tour
+
+- Dernier exercice livré et poussé : **`d83b70c` — squat cycliste FEMME (75/614)**.
+- **4 appels image** dans ce tour (2 cycliste + 2 presse), 1 GIF livré. Objectif : **1/10**,
+  donc **9 nouveaux GIFs restants** dans la demande en cours.
+- Presse HOMME : les deux nouveaux essais A ont été refusés, le plateau masquant les appuis.
+  Pas de nouvelle pose de presse retenue, pas de GIF presse à assembler.
+- Reprendre par une référence machine permettant de contrôler les pieds au milieu du plateau,
+  puis produire M/B et la FEMME. Ne pas confondre siège-chariot mobile et plateau mobile.
+- Conserver les animations cycliste HOMME/FEMME désormais livrées. POC back squat H intact.

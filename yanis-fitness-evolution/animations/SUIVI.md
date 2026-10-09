@@ -23,7 +23,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat cycliste HOMME + FEMME livrés ; back-squat POC audité avec réserves ; leg-press H/F et back-squat FEMME à traiter** |
 | Versions femme produites | **32 / 307** (Thème A 25 + B-01F 3 + B-02F 3 + cycliste B-03F 1) |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
-| Thème B (musculation) | **15 / 187** (8 HOMME + 7 FEMME, incluant le POC `back-squat` à recontrôler et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
+| Thème B (musculation) | **15 / 187** (8 HOMME + 7 FEMME, incluant le POC `back-squat` audité avec réserves et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -1810,3 +1810,25 @@ La source B retenue a MD5 `ffcd57ec108750a18e9b8753666f8ffc` ; GIF MD5
 `651966f9d4478e27f4f548c27bde0bc1`. Boucle contrôlée A/M/B/M, durées 130/110/130/110 centièmes.
 Le dénominateur historique du Thème B (187) reste à harmoniser avec le périmètre H+F ;
 ne pas utiliser ce ratio comme pourcentage sans audit.
+
+### Fin du tour de livraison `d83b70c` — bilan exact
+
+- **4 appels generate_image au total** : 2 pour achever le cycliste F (1 rejet + B retenue),
+  puis 2 essais de leg press H A rejetés. Arrêt volontaire avant le plafond de 10.
+- **1 nouveau GIF livré**, cycliste FEMME (`d83b70c`), objectif 10 GIFs = **1/10**.
+  Compteur global **75/614**, 539 restantes. Aucun ancien GIF modifié.
+- Leg press : inventaire vérifié (`machine`), page réellement consultée avant génération :
+  https://gravitus.com/guides/exercises/leg-press/
+  Repères pieds au centre, dos/bassin soutenus, genoux non hyperétendus. Attention : cette
+  source décrit surtout un plateau mobile ; notre référence B-02 représente un siège-chariot
+  mobile et un plateau fixe. Ne pas confondre leurs cinématiques.
+- Appel 3 : référence machine B-02 M + crop identité HOMME Thème A ; jambes presque tendues,
+  plateau plus haut. **Refus après crop** : chaussures trop masquées, contacts des semelles
+  non vérifiables. Pas de pose A retenue.
+- Appel 4 : mêmes références valides, demande d'angle davantage de profil pour rendre les
+  pieds visibles. **Refus** : angle non obtenu, plateau masque toujours les appuis.
+- Ces deux essais ne sont pas sauvegardés dans les livrables ni comptés comme progression
+  du nombre de poses. Ne pas répéter la demande de profil à l'identique depuis la même image.
+- Prochaine étape : établir une pose de référence de leg press standard dont les deux appuis
+  soient vérifiables ; puis M/B et version FEMME. Back squat FEMME demeure à produire.
+- B-03 incomplet ; B-04 non commencé ; aucune intégration dans l'application.
