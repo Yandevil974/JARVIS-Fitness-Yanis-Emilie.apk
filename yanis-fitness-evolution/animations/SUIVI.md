@@ -1634,3 +1634,68 @@ l'option A. À reprendre au prochain tour (3 images à produire, puis assemblage
 - Compteur historique conservé : 74/614, 540 restantes. Le dénominateur historique
   « Thème B : 14/187 » nécessite une harmonisation avec le périmètre H+F avant
   d'en tirer un pourcentage ; ne pas le modifier sans audit.
+
+
+## Tour de production — 9 octobre 2026 (après `bcf19f2`)
+
+**Résultat : 0 nouveau GIF livré ; compteur inchangé 74/614, 540 restantes.**
+Objectif de 10 nouveaux GIFs : 0/10 terminé. Aucun GIF existant modifié.
+Branche active : `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`.
+
+### Audit POC back squat HOMME
+Lecture des frames coalescées A/M/B : corps entier et chaussures visibles en A (contrairement
+à une ancienne note « torse seul »), mais disques coupés aux bords gauche/droit, format
+portrait 480×860, B revient debout au lieu de montrer une troisième profondeur.
+Verdict : non conforme au standard actuel paysage / trois poses distinctes. Conservé intact ;
+aucune correction sans accord explicite. Son décompte historique est conservé, pas revalidé.
+
+### Recherches et matériel
+- `inventaire.json` : leg-press = machine ; squat-cycliste-squat-complet = bodyweight.
+- Pages réellement consultées pour leg press :
+  https://www.magicfit.fr/les-conseils-du-coach-lexercice-leg-press/
+  https://gravitus.com/guides/exercises/leg-press/
+  Repères : pieds milieu du plateau, appuis complets, genoux dans l'axe, dos/bassin soutenus,
+  amplitude compatible avec maintien du bassin, pas d'hyperextension des genoux.
+- Pages réellement consultées pour squat cycliste :
+  https://www.sport-equipements.fr/squat-cycliste/
+  https://smartworkout.app/en/exercise-library/legs/cyclist-squat
+  Repères : pieds rapprochés, talons surélevés, buste redressé, genoux dans l'axe,
+  descente contrôlée à parallèle ou sous parallèle selon mobilité. Disque OU cale possible.
+- Recherches GB Performance et YouTube réalisées, sans tutoriel pertinent exploitable trouvé.
+  Aucune vidéo visionnée ; ne pas les citer comme validations techniques.
+- Référence B-02 : siège/chariot sur rails inclinés et plateau fixe dans l'image ; ne pas
+  confondre avec une presse classique à siège fixe et plateau mobile.
+
+### Budget exact : 10/10 appels generate_image (pas un drapeau de limite de chat)
+| Appel | Essai | Verdict |
+|---|---|---|
+| 1 | Leg press H A | Rejet : pieds encore hauts, marquage doré inadéquat |
+| 2 | Leg press H A, plateau agrandi | Rejet : appuis masqués, marquage musculaire absent |
+| 3 | Leg press H A, nouvelle consigne | Rejet après crop des pieds : variante pieds hauts persistante |
+| 4 | Cycliste F A frontal sur disque | Rejet : contact avant-pieds/tapis non convaincant, effet flottant |
+| 5 | Cycliste F A depuis homme + identité femme | Rejet : disque à côté des pieds |
+| 6 | Cycliste F A depuis référence femme M | Rejet : disque derrière sans appui des talons |
+| 7 | Cycliste F A avec cale inclinée | Retenu comme base de reprise ; pieds en appui, identité contrôlée 1:1 |
+| 8 | Cycliste F M depuis A retenue | Travail non validé : flexion trop faible |
+| 9 | Cycliste F B depuis A retenue | Rejet : profondeur proche de M, pas de squat complet |
+| 10 | Cycliste F B avec référence hauteur B en premier | Travail non validé : plus bas, encore insuffisant pour squat complet |
+
+### Fichiers conservés et contrôles
+- Pose A retenue : `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-A.png`.
+- M et B non validées : `themeB/femme/_travail/B-03F/squat-cycliste-squat-complet-{M,B}.png`.
+  NE PAS utiliser ces essais comme références validées ni assembler un GIF final avec eux.
+- Planche : `themeB/femme/LOT-B03F-squat-cycliste-PLANCHE-TRAVAIL.jpg` (1440×300),
+  explicitement marquée TRAVAIL NON LIVRE, pas une planche finale de lot.
+- Sources conservées 1376×768 ; MD5 distincts et sans doublon PNG dans le chantier.
+- RMSE des essais A→M = 0,0489463 ; M→B = 0,112622. Les seuils passent,
+  mais ne prouvent PAS la justesse technique : amplitude visuelle refusée.
+- Contrôle buste 1:1 sans redimensionnement entre A retenue et référence femme Thème A M :
+  tenue, tresse, peau et carrure cohérentes. La référence femme A est 920×513 ; utiliser M
+  1376×768 pour le contrôle d'échelle à 1:1, ne pas comparer des tailles différentes.
+- Les autres essais rejetés ne sont pas conservés dans Git.
+
+### Prochaine reprise
+Priorité : corriger M/B du squat cycliste F, en repartant de A retenue et d'une référence
+validée de hauteur ; conserver la cale, l'orientation et les appuis. Pas de génération depuis
+les essais non conformes. Puis reprendre leg press H/F et back squat F. B-04 attend.
+B-03 reste incomplet. Aucun assemblage final de lot, aucune intégration applicative.

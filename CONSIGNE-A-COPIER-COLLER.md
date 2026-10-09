@@ -184,3 +184,22 @@ fichiers réellement présents avant de reprendre.
 - Compteur historique conservé : 74/614, 540 restantes. Le dénominateur historique
   « Thème B : 14/187 » nécessite une harmonisation avec le périmètre H+F avant
   d'en tirer un pourcentage ; ne pas le modifier sans audit.
+
+
+## Dernier tour de production — 9 octobre 2026
+
+- **10 appels image, 0 nouveau GIF livré**, compteur inchangé **74/614**, 540 restantes.
+- POC back squat H audité : portrait, disques coupés latéralement, B debout (pas trois
+  profondeurs). Corps entier visible en A. Conservé intact ; correction soumise à accord.
+- Leg press H : 3 essais A rejetés ; pas de position retenue.
+- Squat cycliste F : A retenue sur **cale inclinée** (pas disque) dans
+  `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-A.png`.
+  M/B dans `_travail/B-03F/` NON VALIDÉES : profondeur insuffisante malgré RMSE conforme.
+- Planche consultable : `themeB/femme/LOT-B03F-squat-cycliste-PLANCHE-TRAVAIL.jpg`.
+  Ce n'est ni un GIF livré ni une planche finale. Ne pas incrémenter le compteur.
+- Prochain travail : M/B du cycliste F depuis A retenue, puis leg press H/F et back squat F.
+  Ne pas chaîner depuis M/B non conformes. B-04 reste à produire ensuite.
+- Sources techniques et 10 tentatives détaillées dans la dernière section de `SUIVI.md`.
+  Recherches GB Performance/YouTube sans tutoriel exploitable ; aucune vidéo visionnée.
+- Branche de reprise actuelle : `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`.
+  Les paragraphes antérieurs sont historiques ; ce dernier bilan prévaut pour la reprise.
