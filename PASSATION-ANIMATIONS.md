@@ -80,3 +80,27 @@
   amplitude moins franche) ; presse inclinée à chariot. Ne refaire cette image que sur demande.
 - Les GIFs, planches et sources doivent être commités et annoncés avec un lien GitHub direct :
   l'utilisateur n'a pas le visualiseur Arena.
+
+
+## Précisions utilisateur — reprise du 9 octobre 2026
+
+- Le drapeau rouge signale uniquement la limite de discussion du chat : préparer alors
+  la consigne et la passation. Il ne signale pas le budget de génération d'images.
+- Objectif suivant : **10 nouveaux GIFs**, avec planches consultables et téléchargeables
+  sur GitHub dès chaque exercice complet. Le plafond reste 10 appels image par tour,
+  rejets inclus ; 10 GIFs à trois poses nécessitent plusieurs tours.
+- Avant génération, rechercher la technique dans des sources fitness, GB Performance,
+  YouTube et autres sources pertinentes ; consigner uniquement les sources réellement
+  consultées et signaler les éventuelles restrictions d'accès.
+- Reprise sur `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`, historique `cafe252`
+  récupéré par avance rapide depuis la branche précédente, sans changement de branche.
+- Ce tour est un bilan avant production : **0 appel image, 0 nouveau GIF**.
+- Ordre prévu : 4 GIFs manquants B-03 (leg press H ; back squat, squat cycliste et
+  leg press F), puis 6 GIFs B-04 (leg extension, front squat, fentes bulgares haltères
+  pied avant surélevé, H et F). Le POC back squat H reste intact et hors de ces 10 nouveautés.
+- Vérification fichiers : sources A/M/B du squat cycliste H présentes, GIF 460×257
+  à 4 frames, planche 1440×300. POC back squat présent mais toile portrait 480×860,
+  non conforme au format paysage actuel ; examen visuel détaillé encore à faire.
+- Compteur historique conservé : 74/614, 540 restantes. Le dénominateur historique
+  « Thème B : 14/187 » nécessite une harmonisation avec le périmètre H+F avant
+  d'en tirer un pourcentage ; ne pas le modifier sans audit.
