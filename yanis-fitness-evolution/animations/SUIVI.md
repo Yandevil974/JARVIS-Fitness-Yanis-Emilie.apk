@@ -1,5 +1,16 @@
 # Suivi du chantier « reconstruction des animations »
 
+## PRIORITÉ ACTUELLE — 9 octobre 2026 : HOMME commun aux deux profils
+
+**Nouvelle demande utilisateur : produire uniquement les GIFs HOMME pour Yanis ET Émilie ;
+les nouvelles versions FEMME seront faites plus tard. Conserver les FEMME déjà livrées.**
+La passation et la consigne sont réunies dans [REPRISE-JARVIS.md](../../REPRISE-JARVIS.md).
+Les anciens ordres de génération FEMME plus bas sont historiques et ne sont plus actifs.
+Un même GIF peut servir aux deux profils pour le même exercice, jamais à deux exercices distincts.
+Le compteur historique 76/614 est inchangé ; couverture HOMME commune à auditer sur 307 entrées.
+Ce changement documentaire n'effectue aucune intégration applicative.
+
+
 Règle : **1 exercice = 1 animation spécifique**. Aucun fichier partagé entre deux exercices.
 Style validé : corps blanc argenté **mat**, très musclé, visage noir **sans traits**, casquette
 blanche, short noir, baskets blanches, muscles actifs **jaune-orangé dorés**.
@@ -20,7 +31,7 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat cycliste HOMME + FEMME livrés ; back-squat POC audité avec réserves ; leg-press HOMME livrée ; leg-press FEMME et back-squat FEMME à traiter** |
+| Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat cycliste HOMME + FEMME livrés ; back-squat POC audité avec réserves ; leg-press HOMME livrée ; leg-press FEMME et back-squat FEMME reportées** |
 | Versions femme produites | **32 / 307** (Thème A 25 + B-01F 3 + B-02F 3 + cycliste B-03F 1) |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
 | Thème B (musculation) | **16 / 187** (9 HOMME + 7 FEMME, incluant le POC `back-squat` audité avec réserves et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
@@ -1913,3 +1924,20 @@ FEMME documentée. Puis back squat FEMME, puis les six GIFs B-04.
 B-03 reste incomplet ; POC back squat H intact avec ses réserves. Aucun GIF livré modifié,
 aucune intégration dans `public/media`, `release/` ou le code. Validation visuelle utilisateur
 attendue sur la planche finale.
+
+## Changement de priorité demandé — passation courte via GitHub
+
+- Création de `REPRISE-JARVIS.md`, document unique passation + consigne, accessible par lien.
+- `CONSIGNE-A-COPIER-COLLER.md` ne contient plus qu'un court message de reprise ;
+  `PASSATION-ANIMATIONS.md` renvoie à la même source de vérité.
+- Phase prioritaire : une version HOMME par exercice, commune à Yanis et Émilie. FEMME plus tard.
+  Conservation de tous les livrables existants. Pas de suppression ni de double comptage.
+- La règle « aucun fichier partagé » s'applique entre exercices distincts, pas entre profils
+  sur un même exercice. Programmes et charges individuels restent indépendants des médias.
+- 76/614 reste le bilan historique double ; ne pas annoncer 76/307 HOMME. Audit nécessaire.
+- 2 GIFs sur les 10 demandés sont déjà livrés ; les 8 prochains passent en HOMME uniquement.
+  Suite proposée : B-04 H (3), B-05 H (3), début B-06 H (2), après vérification inventaire/fichiers.
+- L'application opérationnelle rapidement est la priorité : préparer le mapping commun et
+  l'intégration progressive des GIFs validés, sans attendre les FEMME. L'intégration effective
+  reste une étape à valider puis tester ; aucun code ou APK modifié dans ce tour documentaire.
+- Ce tour : **0 appel image, 0 nouveau GIF**. Dernier exercice livré inchangé : `fa9d52a`.

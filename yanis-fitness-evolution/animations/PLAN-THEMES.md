@@ -2,11 +2,18 @@
 
 Généré par `scripts/build-plan-themes.py` depuis `animations/inventaire.json`.
 
-Règle : **1 exercice = 1 animation spécifique**, aucun fichier partagé.
+Règle : **1 exercice = 1 animation spécifique**, partage autorisé entre Yanis et Émilie pour ce même exercice, jamais entre exercices distincts.
 
-Périmètre **HOMME + FEMME** : chaque entrée = 2 animations (Yanis + Émilie).
+**Priorité actuelle (9 octobre 2026) : GIFs HOMME uniquement, communs à Yanis et Émilie.
+Versions FEMME reportées ; conserver les livraisons existantes.** Voir
+[REPRISE-JARVIS.md](../../REPRISE-JARVIS.md) pour la passation et la consigne réunies.
 
-Plafond de production : **10 images IA par tour = 1 lot de 3 exercices par tour**
+Première phase : 307 entrées avec une animation HOMME commune chacune ; couverture réelle
+à auditer. Les colonnes H+F ci-dessous conservent le périmètre historique final (614),
+pas une obligation de produire des versions FEMME maintenant. Tous leurs statuts « à produire »
+FEMME sont donc différés. Suite immédiate : B-04 HOMME, puis B-05 HOMME, puis B-06 HOMME.
+
+Plafond de production : **10 appels image par tour**, rejets et corrections compris ; aucun nombre de GIFs garanti par tour.
 
 (3 positions par exercice : départ → mi-course → finale).
 
@@ -143,9 +150,9 @@ Sous-thème musculation — quadriceps
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Back squat | `back-squat` | quadriceps | barre · H + F (2 anim.) | ⚠️ POC HOMME audité avec réserves (conservé) ; FEMME à produire · ne pas remplacer le POC sans accord explicite |
+| 1 | Back squat | `back-squat` | quadriceps | barre · H + F (2 anim.) | ⚠️ POC HOMME audité avec réserves (conservé) ; FEMME reportée · ne pas remplacer le POC sans accord explicite |
 | 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | quadriceps | poids du corps · H + F (2 anim.) | ✅ HOMME livré (`069dd4f`) · ✅ FEMME livrée (75/614) : A/M/B, GIF et planche finale contrôlés |
-| 3 | Leg press | `leg-press` | quadriceps | machine · H + F (2 anim.) | ✅ HOMME livrée (76/614) ; FEMME à produire depuis A/M/B HOMME B-03 conformes |
+| 3 | Leg press | `leg-press` | quadriceps | machine · H + F (2 anim.) | ✅ HOMME livrée (76/614) ; FEMME reportée ; utiliser le GIF HOMME pour les deux profils après intégration validée |
 
 ### Lot B-04
 

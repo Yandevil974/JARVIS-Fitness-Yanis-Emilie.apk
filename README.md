@@ -1,5 +1,11 @@
 # JARVIS-Fitness-Yanis-Emilie.apk
 
+## Reprendre le chantier animations
+
+**[Passation + consigne réunies : REPRISE-JARVIS.md](REPRISE-JARVIS.md)** · [Message court pour un nouveau chat](CONSIGNE-A-COPIER-COLLER.md)
+
+Priorité : GIFs HOMME communs à Yanis et Émilie, variantes FEMME plus tard.
+
 ## Version à installer — diversification piscine/aqua (1.7.2)
 
 **[Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk](downloads/Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk)** — APK signée, copie miroir de la release GitHub (87 796 244 octets ; SHA-256 vérifié dans le fichier `.sha256` joint).
