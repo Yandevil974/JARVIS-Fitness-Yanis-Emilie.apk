@@ -1,9 +1,10 @@
-# Essais NON VALIDÉS — squat cycliste FEMME
+# Archives d'essais NON VALIDÉS — squat cycliste FEMME
 
-- M dans ce dossier : ancien essai OBSOLÈTE, flexion trop faible.
-- B dans ce dossier : nouvel essai refusé, profondeur insuffisante pour squat complet.
-- A et la **nouvelle M retenue** se trouvent dans `../../_sources/B-03F/`.
+Ces M/B sont obsolètes et refusées. La livraison achevée (75/614) utilise UNIQUEMENT
+les A/M/B de `../../_sources/B-03F/`.
 
-Ne pas utiliser les images de ce dossier comme références validées ni pour un GIF final.
-La planche de travail montre A et M retenues, puis cet essai B refusé pour diagnostic.
-Voir la dernière section de SUIVI.md pour les recherches, contrôles et 8 appels du tour.
+La planche `LOT-B03F-squat-cycliste-PLANCHE-TRAVAIL.jpg` est également une archive.
+Consulter maintenant `LOT-B03F-squat-cycliste-squat-complet-PLANCHE-FINALE.jpg`
+et `squat-cycliste-squat-complet-3poses.gif` dans `themeB/femme/`.
+
+Ne pas utiliser les essais de ce dossier comme références validées ni pour un GIF final.

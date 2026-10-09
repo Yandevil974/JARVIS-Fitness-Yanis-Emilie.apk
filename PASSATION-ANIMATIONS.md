@@ -1,12 +1,12 @@
 # PASSATION — reconstruction des animations JARVIS Fitness
 
-**État de référence : 9 octobre 2026 · 74 / 614 animations livrées · 540 restantes**
+**État de référence : 9 octobre 2026 · 75 / 614 animations livrées · 539 restantes**
 
 - Dépôt : `Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk`.
 - Branche portant l'historique consolidé connu :
-  `arena/bdd122a8-jarvis-fitness-yanis-emilie-ap`.
-- Dernier commit d'exercice connu : `069dd4f` — `squat-cycliste-squat-complet` HOMME
-  (Lot B-03). Toujours vérifier le HEAD distant au début du prochain tour ; le sandbox peut
+  `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`.
+- Dernière livraison : `squat-cycliste-squat-complet` FEMME (B-03F, 75/614).
+  Le dernier commit HOMME était `069dd4f`. Toujours vérifier le HEAD distant au début du prochain tour ; le sandbox peut
   revenir à un commit plus ancien.
 - La consigne autonome à copier-coller est dans `CONSIGNE-A-COPIER-COLLER.md`.
 - Journal des détails, décisions techniques, sources et rejets :
@@ -21,14 +21,14 @@
 | B-02 — quadriceps | **Terminé : 3/3 exercices HOMME et 3/3 FEMME** ; B-02F = 9/9 positions et assemblages produits |
 | B-03 — quadriceps | **En cours, ne pas annoncer terminé** ; détails ci-dessous |
 
-**Compteur Thème B : 14/187** (le détail des comptages est dans `SUIVI.md`).
+**Compteur Thème B : 15/187** (le détail des comptages est dans `SUIVI.md`).
 
 ## Lot B-03 — avancement et reprise
 
 | Exercice | Matériel | HOMME | FEMME | Action |
 |---|---|---|---|---|
-| `back-squat` | barre | POC existant, qualité à recontrôler | À produire | Ne pas remplacer le POC sans accord explicite |
-| `squat-cycliste-squat-complet` | poids du corps | ✅ Livré (`069dd4f`) | À produire | Garder l'identité validée ; vérifier les trois positions |
+| `back-squat` | barre | POC audité avec réserves, intact | À produire | Ne pas remplacer le POC sans accord explicite |
+| `squat-cycliste-squat-complet` | poids du corps | ✅ Livré (`069dd4f`) | ✅ Livrée (75/614) | A/M/B et assemblages contrôlés |
 | `leg-press` | machine | À produire | À produire | Vérifier la technique et le matériel en ligne ; appliquer la recette machine |
 
 ### Livrable déjà commité : squat cycliste HOMME
@@ -52,7 +52,7 @@
    sans le remplacer ; inscrire un verdict clair. Toute reprise du POC nécessite l'accord
    explicite de l'utilisateur.
 3. Poursuivre le Lot B-03 : `leg-press` HOMME puis les versions FEMME prévues (`back-squat`,
-   squat cycliste, leg press). Recherche technique en ligne et contrôle du matériel avant chaque
+   leg press). Recherche technique en ligne et contrôle du matériel avant chaque
    exercice.
 4. Pour chaque nouvelle image : repartir d'une pose de référence validée ; identité, carrure et
    cadrage à contrôler à 1:1 ; RMSE entre positions **≥ 0,030** ; budget de **10 appels IA max
@@ -81,63 +81,28 @@
 - Les GIFs, planches et sources doivent être commités et annoncés avec un lien GitHub direct :
   l'utilisateur n'a pas le visualiseur Arena.
 
+## Nouvelle livraison — squat cycliste FEMME, 9 octobre 2026
 
-## Précisions utilisateur — reprise du 9 octobre 2026
+**75/614 animations livrées · 539 restantes. Objectif des 10 nouveaux GIFs : 1/10 livré.**
 
-- Le drapeau rouge signale uniquement la limite de discussion du chat : préparer alors
-  la consigne et la passation. Il ne signale pas le budget de génération d'images.
-- Objectif suivant : **10 nouveaux GIFs**, avec planches consultables et téléchargeables
-  sur GitHub dès chaque exercice complet. Le plafond reste 10 appels image par tour,
-  rejets inclus ; 10 GIFs à trois poses nécessitent plusieurs tours.
-- Avant génération, rechercher la technique dans des sources fitness, GB Performance,
-  YouTube et autres sources pertinentes ; consigner uniquement les sources réellement
-  consultées et signaler les éventuelles restrictions d'accès.
-- Reprise sur `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`, historique `cafe252`
-  récupéré par avance rapide depuis la branche précédente, sans changement de branche.
-- Ce tour est un bilan avant production : **0 appel image, 0 nouveau GIF**.
-- Ordre prévu : 4 GIFs manquants B-03 (leg press H ; back squat, squat cycliste et
-  leg press F), puis 6 GIFs B-04 (leg extension, front squat, fentes bulgares haltères
-  pied avant surélevé, H et F). Le POC back squat H reste intact et hors de ces 10 nouveautés.
-- Vérification fichiers : sources A/M/B du squat cycliste H présentes, GIF 460×257
-  à 4 frames, planche 1440×300. POC back squat présent mais toile portrait 480×860,
-  non conforme au format paysage actuel ; examen visuel détaillé encore à faire.
-- Compteur historique conservé : 74/614, 540 restantes. Le dénominateur historique
-  « Thème B : 14/187 » nécessite une harmonisation avec le périmètre H+F avant
-  d'en tirer un pourcentage ; ne pas le modifier sans audit.
+- A et M conservées ; B désormais produite et retenue après contrôle rapproché : bassin
+  sous le niveau des genoux, appuis sur cale conservés, buste et identité cohérents à 1:1.
+- Sources A/M/B : `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-{A,M,B}.png`
+  (1376×768).
+- GIF : `themeB/femme/squat-cycliste-squat-complet-3poses.gif` (460×257, 4 frames A/M/B/M).
+- Planche finale : `themeB/femme/LOT-B03F-squat-cycliste-squat-complet-PLANCHE-FINALE.jpg`
+  (1440×300). L'ancienne planche TRAVAIL et `_travail` sont historiques, pas la livraison.
+- RMSE A→M **0,0944469**, M→B **0,0842215**. Trois PNG distincts et aucun doublon PNG/GIF
+  dans le chantier. Contrôles visuels, identité 1:1 et crops des pieds effectués.
+- B-03 reste incomplet : leg press H/F et back squat F encore à produire ; POC back squat H
+  audité, conservé avec réserves (portrait, disques coupés, troisième pose debout).
+- La validation visuelle finale de l'utilisateur reste attendue ; aucune intégration applicative.
 
-
-## Dernier tour de production — 9 octobre 2026
-
-- **10 appels image, 0 nouveau GIF livré**, compteur inchangé **74/614**, 540 restantes.
-- POC back squat H audité : portrait, disques coupés latéralement, B debout (pas trois
-  profondeurs). Corps entier visible en A. Conservé intact ; correction soumise à accord.
-- Leg press H : 3 essais A rejetés ; pas de position retenue.
-- Squat cycliste F : A retenue sur **cale inclinée** (pas disque) dans
-  `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-A.png`.
-  M/B dans `_travail/B-03F/` NON VALIDÉES : profondeur insuffisante malgré RMSE conforme.
-- Planche consultable : `themeB/femme/LOT-B03F-squat-cycliste-PLANCHE-TRAVAIL.jpg`.
-  Ce n'est ni un GIF livré ni une planche finale. Ne pas incrémenter le compteur.
-- Prochain travail : M/B du cycliste F depuis A retenue, puis leg press H/F et back squat F.
-  Ne pas chaîner depuis M/B non conformes. B-04 reste à produire ensuite.
-- Sources techniques et 10 tentatives détaillées dans la dernière section de `SUIVI.md`.
-  Recherches GB Performance/YouTube sans tutoriel exploitable ; aucune vidéo visionnée.
-- Branche de reprise actuelle : `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`.
-  Les paragraphes antérieurs sont historiques ; ce dernier bilan prévaut pour la reprise.
-
-
-## État courant après la reprise suivant `1f099e7` — 9 octobre 2026
-
-- **Squat cycliste FEMME : A + nouvelle M retenues (2/3), B non validée.**
-- Sources à utiliser : `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-{A,M}.png`.
-- Nouvelle M : identité et appuis contrôlés, RMSE A→M **0,0944469**, pas de doublon PNG.
-- `_travail/B-03F/` contient seulement des essais refusés ; son M est OBSOLÈTE.
-- Planche `themeB/femme/LOT-B03F-squat-cycliste-PLANCHE-TRAVAIL.jpg` mise à jour :
-  A/M retenues, B explicitement refusée. « Travail non livré » = essai, pas GIF achevé.
-- **8 appels image ce tour**, 1 image retenue comme M, 7 autres refusées comme B.
-  Arrêt volontaire avant 10 : plusieurs guidages échouent sur la profondeur complète.
-- Aucun nouveau GIF : **74/614**, 540 restantes ; objectif 10 nouveaux GIFs : 0/10.
-- Recherches : Women's Health, transcription YouTube Katie Orlic et texte/photo SimpliFaster.
-  Détail des URL, contrôles et méthodes infructueuses dans la dernière section de `SUIVI.md`.
-- Priorité : trouver un guidage de pose B qui descende réellement sous les genoux, sans
-  changer identité/cadrage/appuis. Ne pas répéter à l'identique les essais déjà refusés.
-- Leg press H/F, back squat F et B-04 restent à produire. Aucun POC ou GIF existant remplacé.
+## Rappels de reprise
+- Drapeau rouge = limite de discussion du chat seulement, jamais le plafond d'images.
+- Fournir GIFs et planches via liens GitHub directs dès chaque livraison.
+- Consulter des sources fitness, GB Performance et YouTube pertinentes ; citer seulement
+  ce qui a réellement été consulté. Aucune ressource spécifique GB exploitable trouvée à ce jour.
+- Historique détaillé et rejets : `SUIVI.md`. Les anciennes mentions « B non validée » dans ce
+  journal sont historiques, remplacées par la livraison ci-dessus.
+- Sources A/M/B, identité et recettes machine des sections précédentes restent obligatoires.

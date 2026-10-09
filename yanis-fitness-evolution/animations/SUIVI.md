@@ -12,18 +12,18 @@ Animation : **3 positions** (départ → mi-course → finale → retour → bou
 | Élément | Valeur |
 | --- | --- |
 | Animations nécessaires | **614** (périmètre HOMME + FEMME, voir ci-dessous) |
-| Animations créées | **74 / 614** (73/614 après la clôture du Lot B-02F ; ajout du `squat-cycliste-squat-complet` HOMME du Lot B-03, commit `069dd4f`) |
-| Restant à produire | **540** |
+| Animations créées | **75 / 614** (ajout du squat cycliste FEMME B-03F ; détails et sources en dernière section) |
+| Restant à produire | **539** |
 | Animations corrigées (option A + feu vert du 2026-10-07) | 3 / 5 (option A) + **4 corrections feu vert** (squat F pos M, abduction F pos B, fire hydrant F A/M/B en arrière 3/4, squat H A/M/B) |
 | Animations femme à reprendre | **0** ✅ (squat M, abduction B et fire hydrant A/M/B tous corrigés le 2026-10-07) |
 | Fichiers dupliqués corrigés | 4 / 48 (1 fichier soldé, 1 quasi soldé) |
 | Exercices du fichier bcdbe16aeafaafec.gif traités | 8 / 8 ✅ (H + F) |
 | Exercices du fichier 8de6e89e5395700c.gif traités | 6 / 7 |
 | Exercices du fichier 666443484c7f0861.gif traités | 1 / 3 (pont fessier activation) |
-| Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat-cycliste-squat-complet HOMME livré (`069dd4f`) ; back-squat POC à recontrôler ; leg-press et versions FEMME à traiter** |
-| Versions femme produites | **31 / 307** (Thème A 25 + B-01F 3 + B-02F 3) |
+| Lots livrés | POC (5) + L1–L5 + Thème A (50/50) + R1/R2/LOT 3 FEMME + **B-01 HOMME et FEMME (3/3 chacun)** + **B-02 HOMME et FEMME (3/3 chacun)** + **B-03 en cours : squat cycliste HOMME + FEMME livrés ; back-squat POC audité avec réserves ; leg-press H/F et back-squat FEMME à traiter** |
+| Versions femme produites | **32 / 307** (Thème A 25 + B-01F 3 + B-02F 3 + cycliste B-03F 1) |
 | Thème A (échauffement) | **25 / 25 en homme (100% ✅), 25 / 25 en femme (100% ✅) = 50 / 50 animations du Thème A livrées !** (Reste uniquement en réserve : passer les 2 circuits HOMME en version composite après accord user) |
-| Thème B (musculation) | **14 / 187** (8 HOMME + 6 FEMME, incluant le POC `back-squat` à recontrôler et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
+| Thème B (musculation) | **15 / 187** (8 HOMME + 7 FEMME, incluant le POC `back-squat` à recontrôler et le `squat-cycliste-squat-complet` HOMME livré en B-03) ; B-01 et B-02 terminés H+F, B-03 en cours |
 | Doublons sur les fichiers du chantier | 0 (toutes empreintes md5 distinctes) |
 
 ## Passage au plan THÉMATIQUE (2026-10-06)
@@ -1767,3 +1767,46 @@ Il manque la vraie position basse B du cycliste F ; conserver A/M, ne pas annonc
 Une autre méthode de contrôle de pose doit être évaluée avant de relancer les mêmes prompts.
 Leg press H/F et back squat F toujours à produire ; B-04 non commencé.
 Le compteur de chat n'est pas concerné par cet arrêt : aucun drapeau rouge.
+
+## Nouvelle livraison — squat cycliste FEMME, 9 octobre 2026
+
+**75/614 animations livrées · 539 restantes. Objectif des 10 nouveaux GIFs : 1/10 livré.**
+
+- A et M conservées ; B désormais produite et retenue après contrôle rapproché : bassin
+  sous le niveau des genoux, appuis sur cale conservés, buste et identité cohérents à 1:1.
+- Sources A/M/B : `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-{A,M,B}.png`
+  (1376×768).
+- GIF : `themeB/femme/squat-cycliste-squat-complet-3poses.gif` (460×257, 4 frames A/M/B/M).
+- Planche finale : `themeB/femme/LOT-B03F-squat-cycliste-squat-complet-PLANCHE-FINALE.jpg`
+  (1440×300). L'ancienne planche TRAVAIL et `_travail` sont historiques, pas la livraison.
+- RMSE A→M **0,0944469**, M→B **0,0842215**. Trois PNG distincts et aucun doublon PNG/GIF
+  dans le chantier. Contrôles visuels, identité 1:1 et crops des pieds effectués.
+- B-03 reste incomplet : leg press H/F et back squat F encore à produire ; POC back squat H
+  audité, conservé avec réserves (portrait, disques coupés, troisième pose debout).
+- La validation visuelle finale de l'utilisateur reste attendue ; aucune intégration applicative.
+
+### Reprise et méthode ayant débloqué la pose
+Le sandbox était revenu à `ddd1fb9`. Historique de la branche autorisée récupéré par fetch et
+avance rapide jusqu'à `f704658`, sans reset destructif ni changement de branche.
+Matériel confirmé dans inventaire : `bodyweight`. Transcription YouTube relue avant génération :
+https://www.youtube.com/watch?v=Hvop-AYzB-I (genoux en avant, bassin vers talons, buste relevé).
+Les autres sources techniques de la reprise précédente restent applicables :
+https://www.womenshealthmag.com/uk/fitness/strength-training/a70232060/cyclist-squats-for-stronger-quads/
+https://simplifaster.com/articles/squat-progression-that-works/
+
+**2 appels image pour achever cet exercice :**
+1. Guide articulé dérivé de M validée + M complète : rejet, la génération recopie encore
+   la demi-flexion de M.
+2. Même guide articulé + **crop du buste de M validée uniquement** : B retenue. Retirer
+   la référence corps entier a permis de conserver la position basse du guide.
+
+Guide auxiliaire : découpage/rotation des segments de M validée, translation du torse
+(-25,+110 px), hanches vers y590, genoux vers y530, chevilles fixes. Le guide brut comporte
+volontairement des coutures : jamais utilisé dans le GIF. Seule l'image IA nettoyée,
+contrôlée, est utilisée. Aucune image générée refusée n'a servi de référence. Le crop identité
+M est 360×310 à +445+116, sans redimensionnement. Le buste B comparé à M à 1:1 est cohérent.
+
+La source B retenue a MD5 `ffcd57ec108750a18e9b8753666f8ffc` ; GIF MD5
+`651966f9d4478e27f4f548c27bde0bc1`. Boucle contrôlée A/M/B/M, durées 130/110/130/110 centièmes.
+Le dénominateur historique du Thème B (187) reste à harmoniser avec le périmètre H+F ;
+ne pas utiliser ce ratio comme pourcentage sans audit.
