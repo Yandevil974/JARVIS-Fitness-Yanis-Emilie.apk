@@ -123,3 +123,21 @@
   Recherches GB Performance/YouTube sans tutoriel exploitable ; aucune vidéo visionnée.
 - Branche de reprise actuelle : `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`.
   Les paragraphes antérieurs sont historiques ; ce dernier bilan prévaut pour la reprise.
+
+
+## État courant après la reprise suivant `1f099e7` — 9 octobre 2026
+
+- **Squat cycliste FEMME : A + nouvelle M retenues (2/3), B non validée.**
+- Sources à utiliser : `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-{A,M}.png`.
+- Nouvelle M : identité et appuis contrôlés, RMSE A→M **0,0944469**, pas de doublon PNG.
+- `_travail/B-03F/` contient seulement des essais refusés ; son M est OBSOLÈTE.
+- Planche `themeB/femme/LOT-B03F-squat-cycliste-PLANCHE-TRAVAIL.jpg` mise à jour :
+  A/M retenues, B explicitement refusée. « Travail non livré » = essai, pas GIF achevé.
+- **8 appels image ce tour**, 1 image retenue comme M, 7 autres refusées comme B.
+  Arrêt volontaire avant 10 : plusieurs guidages échouent sur la profondeur complète.
+- Aucun nouveau GIF : **74/614**, 540 restantes ; objectif 10 nouveaux GIFs : 0/10.
+- Recherches : Women's Health, transcription YouTube Katie Orlic et texte/photo SimpliFaster.
+  Détail des URL, contrôles et méthodes infructueuses dans la dernière section de `SUIVI.md`.
+- Priorité : trouver un guidage de pose B qui descende réellement sous les genoux, sans
+  changer identité/cadrage/appuis. Ne pas répéter à l'identique les essais déjà refusés.
+- Leg press H/F, back squat F et B-04 restent à produire. Aucun POC ou GIF existant remplacé.

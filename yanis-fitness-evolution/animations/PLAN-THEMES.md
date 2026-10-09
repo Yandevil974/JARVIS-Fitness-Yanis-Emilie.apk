@@ -144,7 +144,7 @@ Sous-thème musculation — quadriceps
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Back squat | `back-squat` | quadriceps | barre · H + F (2 anim.) | ⚠️ POC HOMME existant à recontrôler ; FEMME à produire · ne pas remplacer le POC sans accord explicite |
-| 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | quadriceps | poids du corps · H + F (2 anim.) | ✅ HOMME livré (`069dd4f`) · FEMME en travail : A sur cale retenue, M/B non validées (amplitude), aucun GIF livré |
+| 2 | Squat cycliste (squat complet) | `squat-cycliste-squat-complet` | quadriceps | poids du corps · H + F (2 anim.) | ✅ HOMME livré (`069dd4f`) · FEMME en travail : A/M sur cale retenues (2/3), B non validée (profondeur), aucun GIF livré |
 | 3 | Leg press | `leg-press` | quadriceps | machine · H + F (2 anim.) | HOMME + FEMME à produire ; recette machine dans `SUIVI.md` |
 
 ### Lot B-04

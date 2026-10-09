@@ -1699,3 +1699,71 @@ Priorité : corriger M/B du squat cycliste F, en repartant de A retenue et d'une
 validée de hauteur ; conserver la cale, l'orientation et les appuis. Pas de génération depuis
 les essais non conformes. Puis reprendre leg press H/F et back squat F. B-04 attend.
 B-03 reste incomplet. Aucun assemblage final de lot, aucune intégration applicative.
+
+
+## Reprise suivante — 9 octobre 2026 (après `1f099e7`)
+
+**Avancement réel : squat cycliste FEMME 2 poses retenues / 3 (A et nouvelle M).
+B reste non validée. Aucun GIF nouveau : 74/614, 540 restantes, objectif 10 GIFs = 0/10.**
+
+Le user a demandé « Poursuis » et ce que veut dire « travail non livré ». Réponse :
+une planche d'essais consultable n'est pas une animation achevée, contrôlée et comptée.
+Ni les essais ni les animations finales de ce chantier ne sont intégrés au code applicatif
+sans validation d'intégration distincte. Aucun ancien GIF livré ou POC modifié ce tour.
+
+### Vérifications de reprise
+HEAD local et distant de la branche de session = `1f099e7` avant travail ; arbre propre.
+Inventaire vérifié : `squat-cycliste-squat-complet`, matériel `bodyweight`.
+
+### Nouvelles sources effectivement consultées
+- Women's Health, texte technique, cale sous talons, stance étroite et profondeur contrôlée :
+  https://www.womenshealthmag.com/uk/fitness/strength-training/a70232060/cyclist-squats-for-stronger-quads/
+- YouTube, Katie Orlic, « Cyclist Squats » : **description et transcription consultées**,
+  pas une lecture vidéo image par image. Repères : genoux vers l'avant, fesses vers talons,
+  buste relevé, bassin/épaules remontant ensemble.
+  https://www.youtube.com/watch?v=Hvop-AYzB-I
+- SimpliFaster / Alan Bishop : texte et photo « Hands Free Cyclist Squat » examinés.
+  Référence auxiliaire de profondeur : ischios proches des mollets, bassin sous les genoux.
+  Le mannequin FEMME et le mouvement sans charge restent ceux du chantier (pas copie du
+  coach, de la barre ni de la salle).
+  https://simplifaster.com/articles/squat-progression-that-works/
+  Photo : https://simplifaster.com/wp-content/uploads/2025/06/Image_1_HFCS.jpg
+- Recherche GB Performance renouvelée : pas de ressource spécifique exploitable identifiée.
+  Les images de recherche génériques et les photographies externes ne sont pas ajoutées au dépôt.
+
+### 8 appels generate_image, arrêt volontaire avant le plafond de 10
+| # | Guidage | Verdict |
+|---|---|---|
+| 1 | Depuis A, demande de flexion complète | Pas assez bas pour B, mais **retenu comme M** après contrôles : descente intermédiaire distincte et appuis conservés |
+| 2 | A + guide géométrique auxiliaire (dessin de joints) | Refus B : profondeur insuffisante et tresse déplacée |
+| 3 | Guide géométrique en premier + A | Refus B : encore une demi-flexion |
+| 4 | Photo technique SimpliFaster + A validée | Refus B : reste au-dessus de la profondeur demandée |
+| 5 | Zone du personnage masquée sur A + photo technique + crop identité A | Refus B : profondeur insuffisante, marquage/carrure changent |
+| 6 | Photo technique + crop identité A seulement | Refus B : décor, cadrage et cale changent, profondeur non résolue |
+| 7 | Depuis A, consigne de position accroupie près des talons | Refus B : trop peu profond ; conservé uniquement pour illustrer le blocage sur la planche |
+| 8 | Depuis la nouvelle M retenue, continuer la descente | Refus B : changement trop faible, pas une position finale complète |
+
+Les guides dessinés/masques sont auxiliaires, pas des poses validées. Aucune image générée
+refusée n'a été utilisée comme référence pour un autre appel. L'appel 8 part de M, acceptée
+comme position intermédiaire, jamais acceptée comme B. Ne pas répéter aveuglément ces huit
+approches : le générateur reste ancré dans des flexions partielles.
+
+### Contrôles et fichiers conservés
+- A inchangée : `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-A.png`.
+- **Nouvelle M retenue** : `themeB/femme/_sources/B-03F/squat-cycliste-squat-complet-M.png`.
+  1376×768, MD5 `761b22b25abbed9f78d6302d09a65fc7`, aucun doublon parmi les PNG du chantier.
+- A→M : RMSE normalisée **0,0944469** (> 0,030).
+- B refusée illustrée : `themeB/femme/_travail/B-03F/squat-cycliste-squat-complet-B.png`.
+  M→essai B : RMSE **0,0778191** ; seuil passé mais amplitude visuelle NON conforme.
+- Buste A/M inspecté par crops sans redimensionnement (échelle 1:1) : identité, tenue,
+  carrure et peau cohérentes. Crop des pieds M : semelles en appui sur la cale.
+- Planche mise à jour : `themeB/femme/LOT-B03F-squat-cycliste-PLANCHE-TRAVAIL.jpg`, 1440×300,
+  texte « EN COURS — 2 poses retenues / 3 — aucun GIF livré » ; B explicitement refusée.
+- Ancien essai M dans `_travail` reste un essai OBSOLÈTE ; ne pas le confondre avec M retenue
+  dans `_sources`. Aucun GIF assemblé avec une pose non validée.
+
+### Suite et limite constatée
+Il manque la vraie position basse B du cycliste F ; conserver A/M, ne pas annoncer terminé.
+Une autre méthode de contrôle de pose doit être évaluée avant de relancer les mêmes prompts.
+Leg press H/F et back squat F toujours à produire ; B-04 non commencé.
+Le compteur de chat n'est pas concerné par cet arrêt : aucun drapeau rouge.
