@@ -158,7 +158,7 @@ Sous-thème musculation — quadriceps
 
 | # | Entrée | Identifiant | Groupe | Matériel | Statut |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Leg extension | `leg-extension` | quadriceps | machine · H + F (2 anim.) | à recréer |
+| 1 | Leg extension | `leg-extension` | quadriceps | machine · H + F (2 anim.) | ✅ **HOMME livré (`945908f`, 77/614)** · FEMME reportée ; GIF HOMME commun aux deux profils après intégration validée |
 | 2 | Front squat | `front-squat` | quadriceps | barre · H + F (2 anim.) | à recréer |
 | 3 | Fentes bulgares haltères (pied avant surélevé) | `fentes-bulgares-halteres-pied-avant-sureleve` | quadriceps | haltères · H + F (2 anim.) | à recréer |
 

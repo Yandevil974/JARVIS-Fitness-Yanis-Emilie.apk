@@ -68,7 +68,7 @@ locaux sont à jour. Vérifier les livrables réellement présents après synchr
 Il faut distinguer fichiers livrés, exercices couverts par un GIF HOMME validé et profils
 raccordés dans l'application. Un GIF utilisé par deux profils reste un seul GIF produit.
 Le ratio historique Thème B « 16/187 » mélange des conventions anciennes : ne pas en tirer
-un pourcentage de couverture H/F sans audit. Les 2 GIFs déjà livrés sur l'objectif de 10
+un pourcentage de couverture H/F sans audit. Les 3 GIFs déjà livrés sur l'objectif de 10
 restent comptés, même si l'un est FEMME ; la nouvelle priorité ne réécrit pas l'historique.
 
 ### B-03 — état à conserver
@@ -101,12 +101,13 @@ contrôlés. Dernier tour de production : 8 appels image, 1 GIF livré.
    [PLAN-THEMES.md](yanis-fitness-evolution/animations/PLAN-THEMES.md).
 2. Auditer la couverture des exercices par les GIFs HOMME, en séparant les POC/réserves.
    Ne pas refabriquer un GIF déjà livré pour simplement le partager avec Émilie.
-3. Poursuivre le thème B, quadriceps. File de production proposée pour les 8 GIFs restants
-   (à vérifier contre l'état réel et l'inventaire avant génération) :
+3. Poursuivre le thème B, quadriceps. File de production pour les 7 GIFs restants
+   (`leg-extension` livré `945908f`) — à vérifier contre l'état réel et l'inventaire
+   avant génération :
 
 | Lot | Exercices HOMME |
 |---|---|
-| B-04 | `leg-extension`, `front-squat`, `fentes-bulgares-halteres-pied-avant-sureleve` |
+| B-04 | ✅ `leg-extension` livré · `front-squat` · `fentes-bulgares-halteres-pied-avant-sureleve` |
 | B-05 | `step-up-haut`, `back-squat-barre-haute`, `hack-squat` |
 | B-06, début | `back-squat-inertie-pause-complete`, `fentes-barre` |
 

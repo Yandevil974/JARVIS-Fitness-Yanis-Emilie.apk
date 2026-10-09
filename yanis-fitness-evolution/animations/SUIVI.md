@@ -1941,3 +1941,81 @@ attendue sur la planche finale.
   l'intégration progressive des GIFs validés, sans attendre les FEMME. L'intégration effective
   reste une étape à valider puis tester ; aucun code ou APK modifié dans ce tour documentaire.
 - Ce tour : **0 appel image, 0 nouveau GIF**. Dernier exercice livré inchangé : `fa9d52a`.
+
+## Livraison leg extension HOMME — 9 octobre 2026 (reprise, branche de session `arena/6d7633a6`)
+
+**77/614 animations livrées, 537 restantes. Objectif des 10 nouveaux GIFs : 3/10 livré,
+7 restants — HOMME uniquement.** Nouvelle livraison : `leg-extension` HOMME B-04,
+GIF commun Yanis & Émilie pour cet exercice. FEMME reportée (priorité HOMME commune).
+
+### Reprise et recherche technique
+Le sandbox était revenu à `ddd1fb9`. Fetch de `arena/7967ce00-jarvis-fitness-yanis-emilie-ap`
+puis `git merge --ff-only FETCH_HEAD` sur la branche de session
+`arena/6d7633a6-jarvis-fitness-yanis-emilie-ap` (merge-base `ddd1fb9`, avance rapide
+jusqu'à `5283475`), sans changement de branche. REPRISE-JARVIS.md relu : priorité
+GIFs HOMME uniquement, FEMME reportées, conservation de tous les livrables.
+Inventaire relu : `leg-extension`, matériel `machine`, muscle `qua`.
+
+Sources effectivement consultées avant génération :
+- LouisMove, réglages et exécution (dossier : pli du genou au bord du siège ; axe
+  aligné au genou ; boudin sur le bas des tibias, juste au-dessus de la cheville ;
+  extension complète sans verrouillage ; descente contrôlée jusqu'aux tibias verticaux) :
+  https://louismove.com/leg-extension/
+- Fitadium, réglages machine et exécution :
+  https://www.fitadium.com/conseils/leg-extension/
+- Gravitus, guide anglais (knee on the pivot, pad above the ankle, back on the pad,
+  hands on the handles, avoid locking the knees, hips stay down) :
+  https://gravitus.com/guides/exercises/leg-extension/
+- PureGym, guide anglais (genou à 90°, saisir les barres latérales, extension
+  complète, retenir 1 s, redescente lente) :
+  https://www.puregym.com/exercises/legs/quad-exercises/leg-extensions/
+
+### Recette et production
+Pose A générée depuis la pose de référence validée
+`themeA/_sources/A-02/squat-poids-du-corps-A.png` (identité HOMME, paragraphe de
+masse musculaire verbatim, décor terrasse conservé, vue de profil, machine leg
+extension décrite : siège, dossier, poignées latérales, levier + rouleau, pile de
+disques). M et B produites depuis la pose A validée (repartir d'une pose validée,
+conserver l'identité) : mêmes machine/décor/caméra, seules les jambes et le rouleau
+bougent.
+
+### 5 appels generate_image au total
+
+| # | Demande | Résultat |
+|---|---|---|
+| 1 | A depuis référence A-02 (assis, genoux ~90°, rouleau au-dessus des chevilles) | ✅ retenue après crops (buste 1:1, jambes, rouleau/appuis) |
+| 2 | M depuis A | ❌ rejetée : jambe lointaine restée pliée à 90° (bilatéral non respecté) |
+| 3 | B depuis A | ❌ rejetée : même défaut, jambe lointaine pliée |
+| 4 | M depuis A, consigne bilatérale explicite (les deux jambes bougent ensemble) | ✅ retenue |
+| 5 | B depuis A, consigne bilatérale explicite | ✅ retenue |
+
+### Contrôles de livraison
+
+- A/M/B : 1376×768 paysage, identité/buste contrôlés à **1:1** (peau mate argentée,
+  casquette blanche, visage noir sans traits, short noir, baskets blanches,
+  carrure massive, rendu anatomique).
+- Bilatéral vérifié par crops : les deux jambes et les deux pieds bougent ensemble,
+  rouleau au contact des deux bas de tibias.
+- Appuis : rouleau juste au-dessus des deux chevilles, semelles visibles, pieds en
+  légère dorsiflexion ; dos/bassin plaqués, mains sur les poignées latérales.
+- Cinématique : extension du genou contrôlée ; B = quasi-extension SANS verrouillage
+  (légère flexion conservée).
+- RMSE A→M **0,0713134**, M→B **0,0381961**, seuil 0,030 passé.
+- PNG MD5 : A `9da15d771bb24a8115bce0a30f31429a`, M `8534d67838c0db713118c397b686800d`,
+  B `9c53a0696d5ee37d8eb6d15b7edda02c` ; aucun doublon PNG du chantier.
+- GIF MD5 `384caae9107055fac2299fe7ffd37225`, aucun doublon GIF ; 460×257,
+  4 frames A/M/B/M, boucle infinie, durées 130/110/130/110 centièmes.
+- Planche finale 1440×300 inspectée après assemblage.
+
+### Livrables (`945908f`)
+
+- `themeB/_sources/B-04/leg-extension-{A,M,B}.png`
+- `themeB/leg-extension-3poses.gif`
+- `themeB/LOT-B04-leg-extension-PLANCHE-FINALE.jpg`
+
+### Suite
+
+`front-squat` HOMME B-04 (barre, front rack), puis
+`fentes-bulgares-halteres-pied-avant-sureleve` HOMME B-04. FEMME reportée.
+Aucune intégration dans `public/media`, `release/` ou le code applicatif.
+Préparation en parallèle du mapping d'intégration GIF HOMME → deux profils (documents).
