@@ -27,3 +27,12 @@ Stockées dans `image-search/` (hors dépôt).
 - `leg-extension-M2.png` — **M rejetée** : quasi identique à A2, pas de transition. Conservée pour traçabilité.
 - **Reste à faire** : une vraie pose M intermédiaire (genoux à mi-extension), puis le GIF A2 → M → B3 → M → A2.
 - Les anciens fichiers A (vue de face) et B/B2 restent comme traces, hors séquence.
+
+## Physique et séquence musclée (10 octobre 2026)
+
+- **Consigne utilisateur** : le mannequin doit avoir le physique musclé du personnage validé (front squat). Les essais B3, A2 et M2 (plus minces et moins musclés) sont écartés.
+- `leg-extension-B4.png` — **B candidate** : jambes tendues, physique musclé, machine Titan en trois-quarts. Retenue.
+- `leg-extension-A3.png` — **A candidate** : même personnage, genoux à ~90°, même machine et angle que B4. Retenue.
+- `leg-extension-M3.png` — **M rejetée** : trop proche de B4 (jambes presque tendues).
+- `leg-extension-M4.png` — **M rejetée** : trop proche de A3 (genoux encore à ~90°).
+- **Reste à faire** : une pose M à mi-extension (genoux vers 45° de flexion), puis le GIF A3 → M → B4 → M → A3. Le générateur oscille entre les extrêmes ; à traiter ensuite.
