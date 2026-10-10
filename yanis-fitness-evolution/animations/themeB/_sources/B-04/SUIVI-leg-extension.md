@@ -13,3 +13,8 @@
 - ritfitsports.com (article « what is a leg extension machine ») — aperçu d'une machine vue de face.
 - titan.fitness (produit leg extension/curl) — aperçus en extension.
 Stockées dans `image-search/` (hors dépôt).
+
+## Nouvel essai de pose B (10 octobre 2026)
+
+- `leg-extension-B2.png` — **rejetée** : même consigne explicite (genoux tendus, tibias horizontaux) à partir de A et d'un aperçu de machine en extension. Résultat quasi identique à A, genoux toujours fléchis. Conservée pour traçabilité.
+- Constat : le générateur n'arrive pas à produire l'extension de genoux à partir d'une pose assise, malgré deux consignes différentes. Pose M non commencée.
