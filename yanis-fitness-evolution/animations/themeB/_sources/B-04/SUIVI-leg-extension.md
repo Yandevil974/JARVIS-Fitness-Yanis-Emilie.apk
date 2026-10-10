@@ -36,3 +36,8 @@ Stockées dans `image-search/` (hors dépôt).
 - `leg-extension-M3.png` — **M rejetée** : trop proche de B4 (jambes presque tendues).
 - `leg-extension-M4.png` — **M rejetée** : trop proche de A3 (genoux encore à ~90°).
 - **Reste à faire** : une pose M à mi-extension (genoux vers 45° de flexion), puis le GIF A3 → M → B4 → M → A3. Le générateur oscille entre les extrêmes ; à traiter ensuite.
+
+## Pose M retenue (10 octobre 2026)
+
+- `leg-extension-M5.png` — **M candidate** : mi-extension (genoux ~135°, tibias ~45°, rouleau à mi-tibia). Générée à partir de A3, B4 et d'un aperçu Titan en extension (`image-search/`, hors dépôt). Elle fait bien la transition, contrairement à M3 et M4.
+- `leg-extension-preview.gif` — GIF de travail A3 → M5 → B4 → M5 → A3, 1024×1024, 5 images. Non intégré, non présenté avant le lot de 10.
