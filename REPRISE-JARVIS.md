@@ -65,3 +65,10 @@ M4 est un candidat non validé ; l'ancienne M et le GIF d'origine sont conservé
 - GIF intégré : `public/media/6008e0f8a2557d40.gif`, référencé par `src/data/legacy.json` (elite, « front squat »). Index et manifeste d'audit mis à jour, et `release/` patché pour ce seul GIF (rebuild complet écarté, voir SUIVI.md).
 - Tests : 94 réussis, 0 échec.
 - Prochain exercice : fentes bulgares haltères pied avant surélevé, HOMME B-04 (`fentes-bulgares-halteres-pied-avant-sureleve`).
+
+## Règles de production des GIF HOMME (consigne de l'utilisateur, 10 octobre 2026)
+
+1. Chercher des modèles de référence sur internet (image_search / fetch_page) pour chaque pose. Ne pas se contenter d'images générées de zéro. Consigner dans SUIVI.md uniquement les URL réellement consultées.
+2. Ne pas présenter les GIF un par un : construire le lot, puis présenter les 10 GIF réalisés d'un coup.
+3. Ne rien intégrer dans l'application (public/media, src, release) sans nouvelle autorisation explicite pour ce lot.
+4. Garder les dossiers de travail (image-search/, tmp-front-squat/) hors du dépôt.
