@@ -81,6 +81,6 @@ M4 est un candidat non validé ; l'ancienne M et le GIF d'origine sont conservé
 
 **Lot (état au 10 octobre 2026)**
 1. Front squat : **intégré** (M4, GIF 440×246, hash `6008e0f8a2557d40`).
-2. Fentes bulgares haltères pied avant surélevé : GIF au format application `fentes-bulgares-app.gif` (440×246, 5 images A → M → B2 → M → A). Poses A, B2 (de face, profondeur modérée), M. Non intégré. Voir `SUIVI-fentes-bulgares.md`.
+2. Fentes bulgares haltères pied avant surélevé : **NON TERMINÉ**. `fentes-bulgares-app.gif` présenté par erreur : la flexion de la jambe avant n'est pas visible. Poses B2 et B3 rejetées. Reste à obtenir une pose B avec jambe avant fléchie à ~90°, puis M. Voir `SUIVI-fentes-bulgares.md`.
 3. Leg extension : GIF au format application `leg-extension-app.gif` (440×440, 5 images A3 → M5 → B4 → M5 → A3). Non intégré. Voir `SUIVI-leg-extension.md`.
 4. Exercices suivants : non commencés.
