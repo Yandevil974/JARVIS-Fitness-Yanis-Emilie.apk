@@ -56,3 +56,13 @@ Constat sur la planche A/M/B : M garde la barre et le haut du corps presque à l
 Les deux essais utilisent uniquement A et B comme images de référence ; aucune nouvelle URL n'a été consultée, la section « Références réellement consultées » reste inchangée.
 
 Prochaine piste : soit une nouvelle génération de M avec une autre méthode (guide de posture à mi-flexion explicitement dessiné, puis raffinement), soit validation de M actuel tel quel en acceptant la transition. Aucune intégration dans `public/media/`, `src/` ou `release/`.
+
+### Candidat M4 (même session, 10 octobre 2026)
+
+- `front-squat-M4.png` — nouveau candidat M, généré à partir de A, de l'ancien M et de B. Genoux plus fléchis que dans l'ancien M, hanches un peu plus basses, barre légèrement descendue, talons au sol, cadrage et décor identiques. Il reste plus proche de A que de B pour la hauteur de barre, mais la progression A→M4→B est plus continue.
+- `front-squat-homme-B-04-preview-M4.gif` — prévisualisation alternative, 5 images `A → M4 → B → M4 → A`, 1376×768, durées 0,25 / 0,20 / 0,50 / 0,20 / 0,25 s (même rythme que l'original).
+- `front-squat-homme-B-04-strip-M4.png` — bande comparative A / M4 / B pour contrôle visuel.
+
+**Statut : candidat, non validé.** Le GIF et la planche d'origine (`front-squat-homme-B-04-preview.gif`, `front-squat-homme-B-04-planche-validation.png`) sont conservés sans modification. Le choix entre ancienne M et M4 reste à faire après contrôle visuel. Les essais M2 et M3 sont rejetés, comme indiqué plus haut.
+
+Aucune source nouvelle n'a été consultée pour M4 ; la table des références reste inchangée. Aucune intégration dans `public/media/`, `src/` ou `release/`.
