@@ -11,3 +11,13 @@
 ## Références
 
 Aucune nouvelle URL consultée pour cette pose ; la liste de références du front squat ne s'applique pas ici.
+
+## État au 10 octobre 2026 (sauvegarde)
+
+- `fentes-bulgares-A.png` — départ, candidate.
+- `fentes-bulgares-B2.png` — pose basse, vue de face, flexion modérée. **Retenue comme B** (choix de l'utilisateur). Elle est moins profonde que la référence.
+- `fentes-bulgares-M.png` — intermédiaire entre A et B2, mouvement faible. Candidate.
+- `fentes-bulgares-B.png` — essai rejeté (quasi debout), conservé pour traçabilité.
+- `fentes-bulgares-preview.gif` — GIF de travail A → M → B2 → M → A, 1376×768, 5 images. Non intégré, non présenté avant le lot de 10.
+
+Références : aperçus d'images de recherche uniquement (fitnesstarget.com, fitfxtraining.ca, repfitness.com, athleanx.com), aucune page ouverte. Stockées dans `image-search/` (hors dépôt).
