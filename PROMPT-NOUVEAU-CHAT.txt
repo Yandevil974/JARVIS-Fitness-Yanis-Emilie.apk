@@ -1,0 +1,5 @@
+Reprends le projet JARVIS Fitness. Lis d'abord ce fichier et suis ses consignes :
+https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/PASSATION-NOUVEAU-CHAT.md
+
+Branche obligatoire : arena/83fa8373-jarvis-fitness-yanis-emilie-ap (ne jamais forcer le push).
+Présente chaque GIF dès qu'il est terminé. N'intègre rien sans autorisation explicite.
