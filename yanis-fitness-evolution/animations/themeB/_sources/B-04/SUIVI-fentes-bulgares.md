@@ -51,3 +51,12 @@ Références : aperçus d'images de recherche uniquement (fitnesstarget.com, fit
 - `fentes-bulgares-A-profil3-variante.png` — pose A de profil, banc placé à partir de B4.
 - `fentes-bulgares-profil-app-variante.gif` — GIF A3 → M → B4 → M → A3, 440×246, 5 images. Non intégré.
 - Déposée à côté de la version 2 de l'utilisateur, sans la remplacer. Le choix entre les deux reste à faire.
+
+## Banc de profil (10 octobre 2026)
+
+- **Constat utilisateur** : le banc devait être vu de profil, comme l'athlète.
+- `fentes-bulgares-B5-banc-profil.png` — **B** : banc vu de profil, jambe avant fléchie à ~90°.
+- `fentes-bulgares-A-banc-profil2.png` — **A** : jambe avant tendue, pied arrière sur le banc, même banc que B5.
+- `fentes-bulgares-M-banc-profil.png` — **M** : mi-descente, même banc.
+- `fentes-bulgares-profil-banc-app.gif` — **GIF terminé**, 440×246, 5 images A → M → B5 → M → A. Non intégré.
+- Versions précédentes (`A-profil3`, `B4-profil`, `M-profil`) : conservées pour traçabilité ; la version 2 de l'utilisateur (`fentes-bulgares-profil-app-v2.gif`) est aussi conservée.
