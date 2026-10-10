@@ -45,3 +45,9 @@ Références : aperçus d'images de recherche uniquement (fitnesstarget.com, fit
 - `fentes-bulgares-M-profil2.png` — **M v2** : jambe avant à ~125°, banc fixe.
 - `fentes-bulgares-B4-profil.png` — **B** (inchangée) : jambe avant à ~90°.
 - `fentes-bulgares-profil-app-v2.gif` — **GIF v2**, 440×246, 5 images A3 → M2 → B4 → M2 → A3. Banc fixe, profil strict.
+
+## Variante de l'assistant (10 octobre 2026) — à comparer à la version 2
+
+- `fentes-bulgares-A-profil3-variante.png` — pose A de profil, banc placé à partir de B4.
+- `fentes-bulgares-profil-app-variante.gif` — GIF A3 → M → B4 → M → A3, 440×246, 5 images. Non intégré.
+- Déposée à côté de la version 2 de l'utilisateur, sans la remplacer. Le choix entre les deux reste à faire.
