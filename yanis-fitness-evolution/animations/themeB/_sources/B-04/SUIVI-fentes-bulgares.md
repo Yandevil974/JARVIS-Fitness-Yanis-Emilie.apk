@@ -28,3 +28,12 @@ Références : aperçus d'images de recherche uniquement (fitnesstarget.com, fit
 - `fentes-bulgares-B2.png` : flexion de la jambe avant insuffisante. **Rejetée**.
 - `fentes-bulgares-B3.png` (trois-quarts) : la jambe avant reste quasi tendue, la pose ressemble à la position debout. **Rejetée**.
 - **Reste à faire** : une pose B où la jambe avant est visiblement fléchie à ~90°, puis M, puis le GIF. Le générateur n'y arrive pas à partir de la pose A ; à traiter avec une autre méthode.
+
+## Nouvelle série de profil (10 octobre 2026) — terminée
+
+- **Changement d'angle** : la vue de face ne montre pas la flexion de la jambe avant. Passage au profil strict, demandé par l'utilisateur.
+- `fentes-bulgares-A-profil2.png` — **A retenue** : debout, jambe avant tendue, pied arrière posé sur le banc.
+- `fentes-bulgares-M-profil.png` — **M retenue** : jambe avant à ~120°, pied arrière sur le banc, mi-descente.
+- `fentes-bulgares-B4-profil.png` — **B retenue** : jambe avant fléchie à ~90°, genou arrière descendu vers le tapis.
+- `fentes-bulgares-profil-app.gif` — **GIF terminé**, format application 440×246, 5 images A → M → B4 → M → A. Non intégré.
+- Anciennes séries de face (A, B2, B3, GIF `fentes-bulgares-app.gif`) : **remplacées**, conservées pour traçabilité.
