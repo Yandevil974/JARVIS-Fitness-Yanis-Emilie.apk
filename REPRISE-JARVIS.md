@@ -69,7 +69,7 @@ M4 est un candidat non validé ; l'ancienne M et le GIF d'origine sont conservé
 ## Règles de production des GIF HOMME (consigne de l'utilisateur, 10 octobre 2026)
 
 1. Chercher des modèles de référence sur internet (image_search / fetch_page) pour chaque pose. Ne pas se contenter d'images générées de zéro. Consigner dans SUIVI.md uniquement les URL réellement consultées.
-2. Ne pas présenter les GIF un par un : construire le lot, puis présenter les 10 GIF réalisés d'un coup.
+2. Présenter chaque GIF dès qu'il est terminé (consigne de l'utilisateur, 10 octobre 2026).
 3. Ne rien intégrer dans l'application (public/media, src, release) sans nouvelle autorisation explicite pour ce lot.
 4. Garder les dossiers de travail (image-search/, tmp-front-squat/) hors du dépôt.
 
