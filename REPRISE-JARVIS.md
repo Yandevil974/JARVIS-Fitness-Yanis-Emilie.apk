@@ -72,3 +72,15 @@ M4 est un candidat non validé ; l'ancienne M et le GIF d'origine sont conservé
 2. Ne pas présenter les GIF un par un : construire le lot, puis présenter les 10 GIF réalisés d'un coup.
 3. Ne rien intégrer dans l'application (public/media, src, release) sans nouvelle autorisation explicite pour ce lot.
 4. Garder les dossiers de travail (image-search/, tmp-front-squat/) hors du dépôt.
+
+## Lot HOMME en cours (10 octobre 2026) — suivi et règle de présentation
+
+**Règle** : les GIF sont présentés à l'utilisateur uniquement lorsque le lot de 10 est terminé. Les GIF du lot sont ensuite inclus dans cette passation, avec leur lien GitHub.
+
+**Physique** : personnage musclé, comme le front squat validé. Ne pas le rendre plus mince.
+
+**Lot (état au 10 octobre 2026)**
+1. Front squat : **intégré** (M4, GIF 440×246, hash `6008e0f8a2557d40`).
+2. Fentes bulgares haltères pied avant surélevé : poses A, B2 (de face, profondeur modérée), M. GIF de travail 1376×768 `fentes-bulgares-preview.gif`. Conversion au format application à faire. Voir `SUIVI-fentes-bulgares.md`.
+3. Leg extension : A3, M5, B4 retenues ; GIF au format application `leg-extension-app.gif` (440×440). Non intégré. Voir `SUIVI-leg-extension.md`.
+4. à 10 : non commencés.
