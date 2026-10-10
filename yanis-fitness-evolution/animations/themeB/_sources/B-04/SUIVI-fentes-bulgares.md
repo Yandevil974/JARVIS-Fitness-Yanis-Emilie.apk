@@ -37,3 +37,11 @@ Références : aperçus d'images de recherche uniquement (fitnesstarget.com, fit
 - `fentes-bulgares-B4-profil.png` — **B retenue** : jambe avant fléchie à ~90°, genou arrière descendu vers le tapis.
 - `fentes-bulgares-profil-app.gif` — **GIF terminé**, format application 440×246, 5 images A → M → B4 → M → A. Non intégré.
 - Anciennes séries de face (A, B2, B3, GIF `fentes-bulgares-app.gif`) : **remplacées**, conservées pour traçabilité.
+
+## Version 2 de la série de profil (10 octobre 2026) — banc fixe
+
+- **Constat utilisateur** : dans la version précédente, le banc changeait de place et de taille entre les images. Le GIF précédent (`fentes-bulgares-profil-app.gif`) est donc **remplacé** et n'est pas valide.
+- `fentes-bulgares-A-profil3.png` — **A v2** : banc à la même position que dans B4 ; jambe avant légèrement fléchie, pied arrière sur le banc.
+- `fentes-bulgares-M-profil2.png` — **M v2** : jambe avant à ~125°, banc fixe.
+- `fentes-bulgares-B4-profil.png` — **B** (inchangée) : jambe avant à ~90°.
+- `fentes-bulgares-profil-app-v2.gif` — **GIF v2**, 440×246, 5 images A3 → M2 → B4 → M2 → A3. Banc fixe, profil strict.
