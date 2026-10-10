@@ -74,3 +74,18 @@ Aucune source nouvelle n'a été consultée pour M4 ; la table des références 
 - Candidat M4 seul : [front-squat-M4.png](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-M4.png)
 - GIF d'origine (conservé) : [front-squat-homme-B-04-preview.gif](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-preview.gif)
 - Planche A/M/B d'origine (conservée) : [front-squat-homme-B-04-planche-validation.png](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-planche-validation.png)
+
+## Validation et intégration (10 octobre 2026)
+
+- **Validé** : le front squat HOMME B-04, avec **M4** comme pose M. L'ancienne M reste uniquement en archive (`front-squat-M.png`). M2 et M3 restent rejetées.
+- **Autorisation d'intégration** reçue pour cette première vague HOMME.
+- **Fichier intégré** : `public/media/6008e0f8a2557d40.gif` (440×246, 5 images `A → M4 → B → M4 → A`, durées 0,25 / 0,20 / 0,50 / 0,20 / 0,25 s, environ 300 Ko). Nommage par hash SHA-256 (16 premiers caractères), comme les autres GIF.
+- **Référence applicative** : `src/data/legacy.json`, `elite.MUSCU_GUIDES["front squat"].img` passe de `/media/1c28908ab83cde2e.gif` à `/media/6008e0f8a2557d40.gif`. L'ancien GIF reste dans `public/media/` (inutilisé).
+- **Index** : `public/media-index.json`, `release/media-index.json`, `audit/media-manifest.json` mis à jour.
+- **Release** : `release/media/6008e0f8a2557d40.gif` ajouté, et la référence est remplacée dans le bundle `release/assets/index-BLZxzv9Y.js` (seul bundle référencé par `release/index.html`). Un rebuild complet (`npm run build`) a été essayé puis annulé : il aurait embarqué des différences de source non publiées dans `release/` (taille du bundle différente de 77 octets sans lien avec le GIF).
+- **Tests** : `npm test` → 94 réussis, 0 échec, 2 ignorés. (`npm run audit:assets` n'existe pas dans ce dépôt.)
+- **Style** : le décor est volontairement en extérieur, vue mer (terrasse), contrairement aux GIF précédents de l'application (dessin au trait, salle). Point à garder en tête pour les exercices suivants.
+
+## Prochaine étape
+
+Fentes bulgares haltères pied avant surélevé, HOMME B-04 : `fentes-bulgares-halteres-pied-avant-sureleve`. Même méthode : A validé en premier, puis B, puis M.

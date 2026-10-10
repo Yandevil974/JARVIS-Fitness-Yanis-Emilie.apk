@@ -58,3 +58,10 @@ Visualisation directe sur GitHub, branche `arena/83fa8373-jarvis-fitness-yanis-e
 - Liste complète et statut : [SUIVI.md](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/SUIVI.md)
 
 M4 est un candidat non validé ; l'ancienne M et le GIF d'origine sont conservés. Aucune intégration dans l'application.
+
+## Mise à jour : front squat HOMME B-04 intégré (10 octobre 2026)
+
+- Front squat validé : pose A conservée, pose M4 retenue (l'ancienne M reste en archive), pose B validée.
+- GIF intégré : `public/media/6008e0f8a2557d40.gif`, référencé par `src/data/legacy.json` (elite, « front squat »). Index et manifeste d'audit mis à jour, et `release/` patché pour ce seul GIF (rebuild complet écarté, voir SUIVI.md).
+- Tests : 94 réussis, 0 échec.
+- Prochain exercice : fentes bulgares haltères pied avant surélevé, HOMME B-04 (`fentes-bulgares-halteres-pied-avant-sureleve`).
