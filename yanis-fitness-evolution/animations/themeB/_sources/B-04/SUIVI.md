@@ -66,3 +66,11 @@ Prochaine piste : soit une nouvelle génération de M avec une autre méthode (g
 **Statut : candidat, non validé.** Le GIF et la planche d'origine (`front-squat-homme-B-04-preview.gif`, `front-squat-homme-B-04-planche-validation.png`) sont conservés sans modification. Le choix entre ancienne M et M4 reste à faire après contrôle visuel. Les essais M2 et M3 sont rejetés, comme indiqué plus haut.
 
 Aucune source nouvelle n'a été consultée pour M4 ; la table des références reste inchangée. Aucune intégration dans `public/media/`, `src/` ou `release/`.
+
+### Liens GitHub à consulter (branche `arena/83fa8373-jarvis-fitness-yanis-emilie-ap`)
+
+- GIF candidat M4 (prévisualisation) : [front-squat-homme-B-04-preview-M4.gif](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-preview-M4.gif)
+- Bande comparative A / M4 / B : [front-squat-homme-B-04-strip-M4.png](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-strip-M4.png)
+- Candidat M4 seul : [front-squat-M4.png](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-M4.png)
+- GIF d'origine (conservé) : [front-squat-homme-B-04-preview.gif](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-preview.gif)
+- Planche A/M/B d'origine (conservée) : [front-squat-homme-B-04-planche-validation.png](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-planche-validation.png)

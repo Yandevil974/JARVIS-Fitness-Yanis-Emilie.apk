@@ -48,3 +48,13 @@ Consulter des références visuelles adaptées à l’exercice et inscrire dans 
 ### Prochaine action
 
 Ouvrir la planche et le GIF, juger si M est assez intermédiaire et si le passage M→B est crédible. Si nécessaire, corriger M sans toucher à A, mettre à jour le GIF, la planche et `SUIVI.md`, puis demander/obtenir l’autorisation explicite avant toute intégration applicative. Conserver tous les changements sur la branche Arena fixe indiquée plus haut.
+
+## Liens de visualisation (ajoutés le 10 octobre 2026)
+
+Visualisation directe sur GitHub, branche `arena/83fa8373-jarvis-fitness-yanis-emilie-ap` :
+
+- GIF candidat M4 : [front-squat-homme-B-04-preview-M4.gif](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-preview-M4.gif)
+- Bande A / M4 / B : [front-squat-homme-B-04-strip-M4.png](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/front-squat-homme-B-04-strip-M4.png)
+- Liste complète et statut : [SUIVI.md](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/arena/83fa8373-jarvis-fitness-yanis-emilie-ap/yanis-fitness-evolution/animations/themeB/_sources/B-04/SUIVI.md)
+
+M4 est un candidat non validé ; l'ancienne M et le GIF d'origine sont conservés. Aucune intégration dans l'application.
