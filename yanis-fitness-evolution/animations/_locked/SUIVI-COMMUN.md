@@ -111,6 +111,21 @@ convert GIF -coalesce -format "%s moy=%[fx:int(mean*100)]%% ec=%[fx:int(standard
 
 ---
 
+## 3 ter. DÉCORS DÉJÀ CORRIGÉS — EN ATTENTE DE VALIDATION UTILISATEUR (11 octobre)
+
+Fichiers dans `build/corrections/` (assemblés par `faire-gif.sh`, 5 images, délais `25 20 50 20 25 cs`, décor E1) :
+
+| Exercice | Fichier | Saturation | Statut |
+|---|---|---|---|
+| bulgarian split squat haltères | `bulgarian-split-squat-halteres-3poses.gif` | 43,2 / 34,7 | **attente validation** |
+| goblet squat | `goblet-squat-3poses.gif` | 29,0 / 35,8 | **attente validation** |
+| leg press | `leg-press-3poses.gif` | 27,3 / 25,9 | **attente validation** |
+
+→ **pas intégrés dans l'app** : l'intégration exige un accord explicite. Reste ensuite **15 décors** à réaligner.
+Recette appliquée : l'athlète est conservé (aucune régénération de pose), **seul le fond** est remplacé depuis les frames existantes + la référence décor E1.
+
+---
+
 ## 4. CE QUI PEUT PARTIR DANS L'APP
 
 | GIF | Exercice | État |
