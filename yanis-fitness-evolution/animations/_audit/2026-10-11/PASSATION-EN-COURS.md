@@ -38,7 +38,7 @@ Pas de lot de 10, pas d'attente de regroupement. Un GIF terminé = présenté im
 
 ## 2. L'AUDIT EST FAIT — RÉSULTAT EN UNE LIGNE
 
-**77 GIF individuels livrés (45 HOMME + 32 FEMME) · 26 planches · couverture HOMME réelle 42/307 = 13,7 % · 5 écarts techniques vérifiés dont 1 GIF cassé · lot B-04 : 1 intégré, 2 terminés non intégrés, 1 bloqué, 1 introuvable.**
+**77 GIF individuels livrés (45 HOMME + 32 FEMME) · 26 planches · couverture HOMME réelle 37/307 = 12,1 % · 5 écarts techniques vérifiés dont 1 GIF cassé · lot B-04 : 1 intégré, 2 terminés non intégrés, 1 bloqué, 1 introuvable.**
 
 Détail complet, mesures, réconciliation des compteurs 74/76/77 et preuves visuelles :
 → **`yanis-fitness-evolution/animations/_audit/2026-10-11/RAPPORT-AUDIT-2026-10-11.md`**
@@ -48,7 +48,7 @@ Détail complet, mesures, réconciliation des compteurs 74/76/77 et preuves visu
 | Périmètre | Nombre | Nature |
 |---|---|---|
 | Chantier HOMME (périmètre **actif**) | **307** entrées | ce qu'il reste à couvrir |
-| Couverture HOMME réelle | **42** | 13,7 % |
+| Couverture HOMME réelle | **37** | 12,1 % |
 | Compteur mixte historique | **77 / 614** | hérité, **ne plus l'utiliser comme objectif** |
 | `animations/` | 103 fichiers = **77 individuels + 26 planches** | 45 H + 32 F |
 | Corpus historique de l'app | 188 GIF (94 public + 94 release) | style d'origine, **pas** le style verrouillé |
@@ -89,7 +89,7 @@ Les GIF et les planches de ces 5 cas sont dans `_audit/2026-10-11/gif/B-04/` et 
 ## 7. MESSAGE DE REPRISE (à copier tel quel)
 
 > Lis cette passation en entier. La règle non négociable en tête s'applique : **mon athlète et le décor vue sur mer sont intouchables, une image doit m'être proposée pour chaque exercice avant tout GIF, chaque GIF terminé doit m'être présenté, et « Y » sert à relancer le chat.**
-> L'audit du 11 octobre est fait : **77 GIF individuels (45 HOMME + 32 FEMME), 26 planches, couverture HOMME 42/307 = 13,7 %, 5 écarts dont 1 GIF cassé, lot B-04 : 1 intégré / 2 terminés non intégrés / 1 bloqué / 1 introuvable.**
+> L'audit du 11 octobre est fait : **77 GIF individuels (45 HOMME + 32 FEMME), 26 planches, couverture HOMME 37/307 = 12,1 %, 5 écarts dont 1 GIF cassé, lot B-04 : 1 intégré / 2 terminés non intégrés / 1 bloqué / 1 introuvable.**
 > Ne génère rien. **Montre-moi d'abord le rapport d'audit et le dossier de preuves**, puis attends mes décisions.
 
 ---

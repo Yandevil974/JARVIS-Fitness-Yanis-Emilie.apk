@@ -96,7 +96,8 @@ J'ai rejoué le compteur commit par commit sur `6d7633a6` :
 | Nouveau plan thématique | 9 oct. | `a777244` | **307 entrées, 614 animations**, dont **307 HOMME communes** |
 
 Donc : **le 77/614 est un compteur mixte hérité**. Le dénominateur actif est **307** (entrées HOMME).
-**Couverture réelle HOMME : 42 GIF sur 307 entrées = 13,7 %** (les 3 `warmup-*` étant des étapes de chronomètre déjà routées, et le POC back-squat étant compté à part, avec réserves).
+**Couverture réelle HOMME : 37 exercices de l'inventaire sur 307 entrées = 12,1 %.**
+Décompte exact : 45 fichiers GIF individuels dans les dossiers HOMME, moins 1 (c'est en fait un GIF FEMME, `poc/nage-douce-femme.gif`), moins 4 POC (dont `back-squat`, conservé **avec réserves**), moins 3 `warmup-*` qui sont des **étapes de chronomètre** et non des exercices de l'inventaire → **37 exercices**.
 
 ### 3.5 Corpus historiques — à ne pas confondre avec le chantier
 
@@ -169,9 +170,10 @@ Vérification du style des trois séries B-04 : `planches/01-…`, `20-…`, `21
 | Question | Réponse vérifiée |
 |---|---|
 Exercices du périmètre HOMME | **307**
-GIF HOMME livrés correspondant à un exercice de l'inventaire | **42** (+1 POC back-squat à part, avec réserves)
-Couverture HOMME réelle | **42 / 307 = 13,7 %**
-Restant à produire | **265** (307 − 42)
+GIF HOMME livrés couvrant un exercice de l'inventaire | **37**
+Couverture HOMME réelle | **37 / 307 = 12,1 %**
+Restant à produire | **270** (307 − 37)
+Fichiers GIF individuels dans les dossiers HOMME | 45 = 37 inventaire + 4 POC (dont 1 avec réserves) + 3 étapes de chrono + 1 GIF FEMME mal rangé
 Compteur mixte historique (ne pas utiliser comme objectif) | 77 / 614 (dont 45 H + 32 F)
 GIF dans `animations/` au total | 103 = **77 individuels** + **26 planches**
 GIF « suivis » du checkout de session (corpus historique app) | **188** = 94 (public) + 94 (release), tous dans le style d'origine
