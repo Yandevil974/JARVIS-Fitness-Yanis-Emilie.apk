@@ -185,7 +185,16 @@ const extra = [
   ],
 ];
 for (const row of extra) rows.set(slug(row[0]), { row, sources: ["jarvis"] });
-const guides = { ...legacy.elite.MUSCU_GUIDES, ...legacy.emilie.MUSCU_GUIDES };
+// Les clés des guides sont normalisées à la lecture : sans cela, tout guide dont la
+// clé contient un tiret, un accent ou une apostrophe (« step-up sur banc (hauteur du
+// genou) », « pallof press à l'élastique »…) est introuvable et l'exercice s'affiche
+// SANS animation alors que son guide existe. Constaté le 11/10/2026 : 20 exercices
+// concernés, dont les tractions et le step-up. Vérifié avant correction : 0 collision
+// entre clés normalisées, et tous les « ref » du corpus sont déjà normalisés.
+const guides = {};
+for (const source of [legacy.elite.MUSCU_GUIDES, legacy.emilie.MUSCU_GUIDES]) {
+  for (const [key, value] of Object.entries(source)) guides[norm(key)] = value;
+}
 // Vérifié à l'audit : « french press barre EZ » → ea226c444f72de0f.gif et
 // « french press poulie basse » → 4c2b19fa924f90a8.gif sont déjà corrects et
 // distincts dans les données sources. Aucune réassociation n'est nécessaire.
@@ -250,7 +259,7 @@ export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
   const [name, muscle, sets, reps, tempo, rest, note] = row;
   const n = norm(name);
   let guide = guides[n];
-  if (guide?.ref) guide = guides[guide.ref];
+  if (guide?.ref) guide = guides[norm(guide.ref)] || guides[guide.ref];
   const pattern = patternFor(name, muscle);
   const equipment = equipmentFor(name);
   const numbers = String(reps).match(/\d+/g)?.map(Number) || [10];
