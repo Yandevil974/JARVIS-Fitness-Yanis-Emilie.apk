@@ -44,6 +44,11 @@ C'est un héritage de A, pas un défaut de M. Ne pas régénérer A sans demande
 media-index 278→279. Guide elite ajouté (clé nouvelle). Bundle +178/157 octets (insert, pas un remplacement de hash).
 `npm test` 94/0. Elite sans GIF : 86→85.
 
+**Curl Scott barre EZ, pronation** : fixe validée (« Ok ») → GIF assemblé
+`build/corrections/curl-scott-barre-ez-pronation-3poses.gif`
+5×440×246 · 25/20/50/20/25 · **332 Ko** (336 982) · sat 50,4/51,5 · sol coin 218/214/217.
+**Présenté, NON intégré.**
+
 **Utilisateur prévenu** (demande explicite §8 passation) : les corrections de sol/décor des GIF existants
 sont terminées. Ensuite seulement : exercices sans animation, protocole 1 image fixe → accord → GIF.
 
