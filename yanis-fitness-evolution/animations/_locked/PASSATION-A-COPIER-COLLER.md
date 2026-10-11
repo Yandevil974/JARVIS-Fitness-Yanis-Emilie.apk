@@ -181,7 +181,9 @@ en abduction, élastique aux chevilles. GIF assemblé, mesuré, **présenté —
 | Saturation | A 43,0 · B 40,8 |
 | Pose M source | `_poses-sable/abduction-hanche-elastique-1.png` (1376×768) |
 
-**Ne pas régénérer cette pose.** Attendre l'accord explicite avant intégration.
+**INTÉGRÉ le 11 oct. 2026** (accord « Ok ») : `/media/3d5191762cfcb157.gif`
+dans public + release + 2 media-index (278) + legacy.json + bundle (delta 0 octet).
+`npm test` 94/0. Ne pas régénérer.
 
 **Ce qui a été terminé** (sol sablé, contrôlé visuellement, sans artefacts) :
 gainage planche · clamshell · fire hydrant · pompes · pont-fessier-activation · face-pull ·

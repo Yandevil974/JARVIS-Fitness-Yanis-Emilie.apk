@@ -33,10 +33,13 @@ images coalescées : moy 66/64/62/64/66 %  ec 27/26/27/26/27 %  (aucune vide)
 - Sol : grandes dalles crème/sablé, pas de petits pavés gris.
 - Mer bleue dense, palmiers et plantes, lumière dorée. Un seul fond continu, pas d'artefact.
 
-## Non fait (volontaire)
-- Pas d'intégration `public/media` / `release` / index.
-- Poses A et B non régénérées (déclarées bonnes). Nuance : A a les bras dorés, M/B argent.
+## Intégration (accord « Ok »)
+- `public/media/3d5191762cfcb157.gif` + `release/media/` (325 243 octets)
+- media-index 277 → 278 (public = release, 0 manquant)
+- `legacy.json` + `index-BLZxzv9Y.js` patchés **en binaire**, delta **0 octet**
+- 1 exercice = 1 animation : seule « Abduction hanche à l'élastique »
+- `npm test` : 94 passés / 0 échec / 2 skipped
+- Ancien `b49969e64dc275f5.gif` conservé. Poulie et assise inchangées.
 
 ## Suite
-Prévenir l'utilisateur (fait). Attendre accord explicite. Puis exercices sans animation
-(protocole 1 image fixe → accord → GIF).
+Exercices sans animation : **92** (dont **86** côté elite). Protocole : 1 image fixe → accord → GIF.

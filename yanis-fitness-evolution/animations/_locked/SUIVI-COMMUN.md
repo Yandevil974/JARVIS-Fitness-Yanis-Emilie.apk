@@ -19,7 +19,19 @@ mains sur les hanches, jambe droite en abduction, élastique aux chevilles. **Pl
 | Pose source M | `animations/_audit/2026-10-11/gif/themeA/abduction-hanche-elastique-3poses.gif` image 1 |
 | Poses A/B inchangées | `_poses-sable/abduction-hanche-elastique-{0,2}.png` |
 
-**NON intégré.** En attente d'accord explicite. Un « Y » isolé ne compte pas.
+**INTÉGRÉ le 11 oct. 2026** — accord explicite de l'utilisateur (« Ok »).
+
+| Endroit | Fait, mesuré |
+|---|---|
+| `public/media/3d5191762cfcb157.gif` | 325 243 octets, sha256[:16] = `3d5191762cfcb157` |
+| `release/media/3d5191762cfcb157.gif` | identique |
+| `public/media-index.json` + `release/media-index.json` | 277 → **278** entrées, identiques, 0 fichier manquant |
+| `src/data/legacy.json` | 1 occurrence `b49969e64dc275f5` → `3d5191762cfcb157`, **delta 0 octet** (731 335) |
+| `release/assets/index-BLZxzv9Y.js` (binaire) | 1 occurrence, **delta 0 octet** (1 359 491) |
+| Résolution | `Abduction hanche à l'élastique` → `/media/3d5191762cfcb157.gif` (seul exercice, 1=1) |
+| `npm test` | **94 passés / 0 échec / 2 skipped** |
+
+Ancien fichier `b49969e64dc275f5.gif` **conservé** (pas de suppression). Poulie et assise **inchangées**.
 
 **Nuance honnête (ne bloque pas)** : la pose A déjà validée a les **bras dorés** ; M et B ont les **bras argent**.
 C'est un héritage de A, pas un défaut de M. Ne pas régénérer A sans demande.
