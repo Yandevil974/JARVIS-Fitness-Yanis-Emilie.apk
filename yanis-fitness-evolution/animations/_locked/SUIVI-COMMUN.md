@@ -84,6 +84,54 @@ car il est recadré serré sur l'athlète) et non un **1er GIF validé plein for
 
 ---
 
+## 1 quater. CORRECTIF MAJEUR DE L'APP — 20 EXERCICES SANS ANIMATION (11 octobre)
+
+**Bug réel trouvé et corrigé** dans `src/data/library.js` :
+
+```js
+const guides = { ...legacy.elite.MUSCU_GUIDES, ...legacy.emilie.MUSCU_GUIDES };   // AVANT
+```
+La résolution se fait par `guides[norm(name)]`, mais **les clés du corpus ne sont pas normalisées**.
+Toute clé contenant un tiret, un accent ou une apostrophe était donc **introuvable** :
+`step-up sur banc (hauteur du genou)`, `pallof press à l'élastique`, `back squat (charge modérée)`…
+
+**Conséquence mesurée** : **20 exercices s'affichaient SANS animation dans l'app alors que leur GIF existait**
+(dont les **tractions**, le **step-up**, le **pallof press**, le **face pull**, le **hip thrust barre**, les **kickbacks**…).
+
+**Correction** : normaliser les clés à la lecture —
+```js
+const guides = {};
+for (const source of [legacy.elite.MUSCU_GUIDES, legacy.emilie.MUSCU_GUIDES])
+  for (const [key, value] of Object.entries(source)) guides[norm(key)] = value;
+```
+et `if (guide?.ref) guide = guides[norm(guide.ref)] || guides[guide.ref];`
+**Contrôles faits avant d'écrire** : 0 collision entre clés normalisées, tous les `ref` du corpus déjà normalisés.
+**Résultat** : exercices sans animation **112 → 92**. `npm test` : 94 passés / 0 échec.
+
+---
+
+## 1 quinquies. LE SOL SABLÉ — REPRIS SUR 6 GIF (11 octobre)
+
+Les 3 verrous + les 3 nouveaux intégrés ont été **refaits avec le sol sablé** (mêmes poses, même athlète, décor E1) :
+
+| Exercice | Ancien sol | Nouveau sol | Statut |
+|---|---|---|---|
+| front squat | 200 187 174 | **232 213 183** | intégré |
+| fentes bulgares haltères | 192 171 155 | **233 213 180** | intégré |
+| leg extension | 184 172 160 | **209 189 163** | intégré |
+| back squat charge modérée | 201 184 164 | 230 209 181 | intégré |
+| presse à cuisses pieds hauts | 203 173 134 | 221 198 169 | intégré |
+| step-up sur banc | 190 173 150 | 226 201 167 | intégré |
+
+**Reste 4 GIF à reprendre pour le sol** : bulgarian haltères, goblet squat, leg press, bulgarian réparé.
+Les anciens verrous sont conservés (`01-FRONT-SQUAT-verrouille-6008e0f8a2557d40.gif` etc.) à côté des nouveaux
+(`…-SOL-SABLE.gif`) pour la traçabilité.
+
+**Référence de sol à passer en 2ᵉ image de génération : `reference/05-SOL-CIBLE-1er-GIF-valide.png`.**
+Ne plus utiliser le fichier utilisateur comme référence de décor (son sol est recadré à 192 183 165).
+
+---
+
 ## 2. CHIFFRES À JOUR
 
 | | Nombre |
