@@ -134,6 +134,42 @@ Recette appliquée : l'athlète est conservé (aucune régénération de pose), 
 
 ---
 
+## 3 quater. ACCORD UTILISATEUR DU 11 OCTOBRE 11h37 — STYLE VALIDÉ
+
+L'utilisateur a envoyé un fichier de référence (« Screenshot_20261011_113733_Chrome.jpg ») et écrit :
+> « **Oui** si tous les gifs et décor ressemblent au fichier joint, ce que tu as fait est top et c'est ce que je veux
+> comme image et gif, couleur, vue mer, plante tout y est, athlète »
+
+**Ce que cela valide** : le style E1 (mer bleue + palmiers/plantes + lumière dorée + athlète blanc/argent, muscles dorés)
+est **exactement** ce que veut l'utilisateur. La galerie qu'il a vue contenait déjà le GIF reconstruit
+`bulgarian-split-squat-3poses-CORRIGE.gif` **et** les 3 décors corrigés → **ils sont validés et intégrés**.
+
+⚠️ **Le fichier joint n'est PAS récupérable** : le bac à sable a été réinitialisé et `/home/user/uploads/` n'existe pas.
+Ne pas demander à l'utilisateur de le renvoyer : sa validation est écrite ci-dessus et fait foi.
+**Ne jamais générer d'image de remplacement** pour ce fichier.
+
+### Ce qui est intégré à la suite de cet accord
+- `Bulgarian split squat` → `/media/f183700b3362f93b.gif` (**le GIF cassé est réparé et intégré**) ;
+  il ne partage plus `cf312b839f6da027.gif` avec `Bulgarian split squat haltères` → **1 exercice = 1 animation respecté**.
+- `Bulgarian split squat haltères`, `Goblet squat`, `Leg press` → intégrés (commit `007bb86`).
+
+**Total intégré : 7 exercices.** Reste **11 décors** à réaligner.
+
+---
+
+## 3 quinquies. 3 NOUVEAUX DÉCORS CORRIGÉS — EN ATTENTE (`build/corrections/`)
+
+| Exercice | Fichier | Saturation | Statut |
+|---|---|---|---|
+| back squat charge modérée | `back-squat-charge-moderee-3poses.gif` | 27,8 / 27,3 | **attente validation** |
+| presse à cuisses pieds hauts | `presse-a-cuisses-pieds-hauts-3poses.gif` | 46,7 / 25,5 | **attente validation** |
+| step-up sur banc | `step-up-sur-banc-hauteur-du-genou-3poses.gif` | 33,5 / 35,4 | **attente validation** |
+
+Note : la pose M de la presse à cuisses était sortie **trop pâle (18,5)** à la première génération → **refaite** (60,1).
+Le contrôle de saturation **par pose** est donc obligatoire, pas seulement sur les poses A et B.
+
+---
+
 ## 4. CE QUI PEUT PARTIR DANS L'APP
 
 | GIF | Exercice | État |
