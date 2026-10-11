@@ -8,6 +8,8 @@
 > **Chiffres corrigés : 39 livrés · 268 restants · 5 GIF à corriger** (2 réparables sans générer une image).
 > Le plan avait « 36 à corriger » : c'était faux.
 >
+> **DÉCISION DE L'UTILISATEUR (11 oct.) : cible E1 (décor dense) — verrouillée. Voir `_locked/REFERENCE-VERROUILLEE.md` §5 bis.**
+>
 > **Document de référence à jour : `animations/_locked/SUIVI-COMMUN.md`.**
 > Preuve visuelle : `animations/_locked/reference/DECISION-DECOR-11-OCT.jpg`.
 > *Le texte ci-dessous est conservé pour traçabilité.*

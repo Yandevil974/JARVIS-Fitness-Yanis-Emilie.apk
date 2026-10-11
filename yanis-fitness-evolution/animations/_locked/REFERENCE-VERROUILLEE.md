@@ -113,3 +113,33 @@ conforme à ses 3 dernières validations de pose) ? Ce choix fixe quels GIF doiv
 Salle de sport, parquet, mur intérieur, miroir, fond gris.
 
 *Verrou posé sur la branche `arena/7a4a778b-jarvis-fitness-yanis-emilie-ap`. Plan de correction chiffré : `animations/_audit/2026-10-11/PLAN-CORRECTION.md`.*
+
+---
+
+## 5 bis. ✅ DÉCISION DE L'UTILISATEUR — 11 OCTOBRE 2026 : **CIBLE E1 (DENSE) — VERROUILLÉE**
+
+> **L'utilisateur a choisi E1.** Le décor de référence est **celui de son fichier**
+> `00-ATHLETE-REFERENCE-utilisateur-2026-10-11.jpg`, qui est **aussi celui des 1ers GIF validés**
+> (POC du 5 oct., lots 1 à 5).
+
+### Ce que ça veut dire concrètement
+
+| | Cible verrouillée **E1 / DENSE** |
+|---|---|
+| Mer | **bleue, bien visible**, montant dans le cadre |
+| Végétation | **dense**, palmiers et plantes, y compris au premier plan |
+| Plantes en pot | présentes sur la terrasse |
+| Lumière | chaude / dorée |
+| Muret bas | présent mais **secondaire** |
+| Saturation mesurée | **22 → 47** |
+
+**Est considéré NON conforme :** tout décor « pâle » (saturation < 22) où la mer est à peine perceptible
+et la végétation absente. C'est le rendu de la production du 7 au 10 octobre : **il doit être réaligné sur E1.**
+
+**Cette question ne doit plus être reposée.** E1 est la cible jusqu'à nouvel ordre explicite de l'utilisateur.
+
+⚠️ **Conséquence à assumer :** le **front squat** (saturation 14,9) est aujourd'hui **intégré dans l'app**
+avec un décor pâle, donc **hors cible E1**. Idem pour les 2 GIF terminés (fentes bulgares 17,1 et
+leg extension 14,1). Ne rien modifier dans l'app sans autorisation explicite, mais **le signaler**.
+
+*Mesure reproductible : `convert IMG -resize 400x -colorspace HSL -channel G -separate +channel -format "%[fx:mean*100]" info:`*
