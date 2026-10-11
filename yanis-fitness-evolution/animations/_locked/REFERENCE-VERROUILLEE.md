@@ -83,9 +83,22 @@ Si une image ne ressemble pas à `POSE-A-front-squat-reference-decor.png`, elle 
 | Végétation | quelques palmiers **en arrière-plan** | dense, au premier plan, floue |
 | Lumière | **neutre**, rendu photo | très saturée, dorée, aspect « peint » |
 
-Mesure objective utilisée pour trier : saturation moyenne de la bande haute de l'image (mer + ciel + muret).
-Référence verrouillée front squat : **≈ 18,7**. Au-delà de **≈ 28**, le décor s'écarte franchement.
-*(Indice de tri, pas une vérité absolue : l'œil de l'utilisateur tranche.)*
+### Mesures réelles (11 octobre 2026)
+
+| Image | Saturation bande haute | Saturation globale |
+|---|---|---|
+| **Votre fichier** `00-ATHLETE-REFERENCE…jpg` (développé couché prise serrée) | **20,4** | **23,1** |
+| **Verrou** `POSE-A-front-squat-reference-decor.png` | **18,4** | **15,1** |
+
+Le chiffre est **proche** — mais l'œil voit autre chose, et c'est ça qui compte :
+
+- Sur **votre fichier**, la **mer turquoise saturée occupe tout le haut de l'image**, et la **végétation sombre
+  vient au premier plan**, encadrant l'athlète.
+- Sur le **verrou**, il y a une **bande pâle ciel + mer à l'horizon**, le **muret bas blanc bien dégagé**, et la
+  végétation reste **en arrière-plan**.
+
+**Ce n'est donc pas la couleur qui diffère, c'est la composition** : place de la mer, présence du muret, proximité
+de la végétation. C'est ce point précis qui décide de la cible des corrections (voir `PLAN-CORRECTION.md`).
 
 ---
 

@@ -98,17 +98,42 @@ Ils ne font pas partie des 307 exercices de l'inventaire. **À trancher : on les
 4. **Niveau 3 (8 GIF)** ensuite.
 5. **Contrôle final** du groupe « déjà bon » (13).
 
-## 6. CE QUI BLOQUE ENCORE
+## 6. LA RÉFÉRENCE EST ARRIVÉE — DEUX CIBLES POSSIBLES, IL FAUT TRANCHER
 
-**Le fichier `Screenshot_20261011_085401_Google.jpg` n'est toujours pas arrivé dans l'espace de travail de l'agent**
-(`/home/user/uploads/` n'existe pas sur ce poste). L'image est visible dans le chat, mais elle n'est **pas enregistrée** :
-elle ne peut donc pas servir de référence de décor enregistrée pour les corrections.
+**Bonne nouvelle :** `Screenshot_20261011_085401_Google.jpg` est maintenant **dans le dépôt**
+(copié en `_locked/reference/00-ATHLETE-REFERENCE-utilisateur-2026-10-11.jpg`, 1168×729, 470 Ko).
+Le blocage de la session précédente est levé.
 
-**Deux solutions, au choix :**
-- **A.** Vous déposez l'image directement dans le dépôt (dossier `yanis-fitness-evolution/animations/_locked/reference/`) et on verrouille **votre** décor.
-- **B.** On verrouille **le décor du front squat** (déjà validé par vous le 10 octobre, déjà dans le dépôt, déjà dans le bon style) — c'est le plus rapide, et c'est **immédiatement opérationnel**.
+**Mais vos deux images ne montrent pas le même décor :**
 
-**Sans cette décision, je ne peux pas lancer les corrections de décor sans risquer de partir dans le mauvais sens.**
+| | **Cible E1 — votre fichier** | **Cible E2 — décor B-04** |
+|---|---|---|
+| Mer | **turquoise saturée, occupe tout le haut** | **bande pâle à l'horizon** |
+| Végétation | **au premier plan**, dense, encadre l'athlète | **en arrière-plan**, discrète |
+| Muret bas blanc | peu visible | **bien dégagé et continu** |
+| Saturation bande haute | 20,4 | 18,4 |
+
+**Point capital :** le décor **E2 est celui de 3 GIF que vous avez déjà validés** — front squat (intégré dans
+l'app le 10 oct.), fentes bulgares (validé « terminé »), leg extension. **C'est donc bien E2 qui correspond
+aujourd'hui aux « 1ers GIF validés ».**
+
+Si vous choisissez **E1** (le décor de votre fichier), alors **les scènes deviennent plus denses et plus
+saturées** — et il faudra le dire explicitement, parce que ça s'éloigne de ce qui est déjà validé et intégré.
+
+**Répondez simplement : « cible E1 » ou « cible E2 ».** C'est la seule chose qui bloque le lancement des corrections.
+
+---
+
+## 7. CE QUI PEUT PARTIR IMMÉDIATEMENT, SANS ATTENDRE
+
+**2 GIF sont terminés et conformes, ils n'attendent que votre feu vert pour l'intégration :**
+
+| GIF | Exercice | Format |
+|---|---|---|
+| `_locked/reference/02-FENTES-BULGARES-verrouille.gif` | Fentes bulgares haltères pied avant surélevé | 440×246, 5 images |
+| `_locked/reference/03-LEG-EXTENSION-verrouille.gif` | Leg extension | 440×440, 5 images |
+
+Ils font passer le compte d'exercices « en ligne dans l'app » de **1 à 3**. Aucune génération nécessaire, aucune attente technique : juste votre accord pour l'intégration.
 
 ---
 
