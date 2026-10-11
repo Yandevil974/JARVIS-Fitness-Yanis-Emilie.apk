@@ -57,6 +57,10 @@ Ce n'est pas un détail esthétique : c'est une exigence de fidélité.
 convert "GIF[0]" -coalesce -gravity SouthWest -crop 18%x14%+0+0 +repage -resize 60x \
   -format "%[fx:int(255*mean.r)] %[fx:int(255*mean.g)] %[fx:int(255*mean.b)]" info:
 ```
+**Mesure au coin de sol** — ⚠️ **uniquement fiable sur les exercices DEBOUT.**
+Sur les exercices **au sol** (clamshell, fire hydrant, gainage, pompes, pont fessier), le coin contient le
+**tapis noir** → la mesure tombe à 170-230 alors que le sol est bon. **Dans ce cas, le contrôle VISUEL fait foi**.`
+
 **Seuil : le rouge doit être ≈ 225–240.** En dessous de 215 → le sol est trop gris → **à refaire**.
 
 ⚠️ **Ne jamais mesurer sur le tiers bas entier** : le tapis noir et les machines faussent la moyenne
@@ -129,8 +133,10 @@ Un décor se corrige **sans jamais toucher à l'athlète** :
 2. **Générer chaque pose** avec le générateur d'image en passant **2 images** :
    - **image 1** = la pose existante (l'athlète à conserver **tel quel**) ;
    - **image 2** = `reference/05-SOL-CIBLE-1er-GIF-valide.png` (la référence de décor).
-   Et demander explicitement : *« large smooth pale cream/sandy flagstones, very light warm sandy beige,
+   Et demander explicitement : *« ONE SINGLE CONTINUOUS BACKGROUND, BRIGHTLY LIT, no collage, no patchwork,
+   no lighter rectangles, no visible seams. Large smooth pale cream/sandy flagstones, very light warm sandy beige,
    NOT grey, NOT dark, NOT small cobblestones with dark grout lines »*.
+   → Cette formulation a corrigé les **artefacts en rectangles plus clairs** du gainage planche.
 3. **Vérifier chaque pose** : coin de sol ≈ 225–240 en rouge, saturation ≥ 22, athlète inchangé.
 4. **Assembler** : `./faire-gif.sh A.png M.png B.png 440x246 sortie.gif`
    — donne 5 images, délais `25 20 50 20 25` centisecondes (vérifié).
@@ -162,16 +168,32 @@ Un décor se corrige **sans jamais toucher à l'athlète** :
 `bulgarian haltères` (228) · `goblet squat` (224) · `squat cycliste` (219) · `abduction assise` (240) ·
 `pallof press` (213) · `squat poids du corps` (235) · **`pompes` (219)** · **`pont-fessier-activation` (233)**
 
-## 6.3 RESTE À CORRIGER (le travail à finir avant toute autre chose)
+## 6.3 RESTE À CORRIGER — **1 SEULE POSE** (le travail à finir avant toute autre chose)
+Les 9 exercices qui restaient ont été traités. **Il ne manque plus qu'une pose :**
+
 | Exercice | État |
 |---|---|
-| **gainage planche** | les poses ont été générées mais **présentent des artefacts visuels** (rectangles blancs) → **à régénérer** |
-| **face-pull** | sol pâle → à refaire (poses sources : `reference/sources-poses/face-pull-*`) |
-| **clamshell** | sol pâle → à refaire |
-| **fire hydrant** | sol pâle → à refaire |
-| **abduction hanche** | sol pâle → à refaire |
+| **abduction hanche** | poses A et B **bonnes** (sol 236 / 230, athlète DEBOUT, mains sur les hanches). La **pose M est fausse** : le générateur a produit un athlète **allongé sur le côté** (autre exercice). → **régénérer UNIQUEMENT la pose M** |
 
-→ **Il reste 5 exercices.** C'est tout. Le reste des 307 animations n'a jamais été traité (périmètre à part).
+**Ce qui a été terminé** (sol sablé, contrôlé visuellement, sans artefacts) :
+gainage planche · clamshell · fire hydrant · pompes · pont-fessier-activation · face-pull ·
+bulgarian haltères · goblet squat · squat cycliste · abduction assise · pallof press · squat poids du corps ·
+bulgarian split squat · leg press · back squat charge modérée · presse à cuisses · step-up
+
+### Comment finir (1 génération suffit)
+Source de la pose M : `animations/_audit/2026-10-11/gif/themeA/abduction-hanche-elastique-3poses.gif` (image 1).
+Référence décor : `reference/05-SOL-CIBLE-1er-GIF-valide.png`.
+**Imposer dans le prompt** : *« the athlete is STANDING UPRIGHT, front-facing, both hands on the hips, one leg
+lifted straight out to the side, do NOT lie him down, do NOT change the exercise or the camera angle »*.
+Puis :
+```bash
+./animations/_locked/build/faire-gif.sh abduction-hanche-0.png abduction-hanche-1.png abduction-hanche-2.png \
+  440x246 abduction-hanche-elastique-3poses.gif
+```
+Les poses A et B sont dans `build/corrections/_poses-sable/abduction-hanche-elastique-{0,2}.png`.
+⚠️ Le quota est de **10 générations d'images par tour** : c'est la seule raison pour laquelle cette pose reste.
+
+→ **Après cette pose : les corrections sont TERMINÉES, et il faut prévenir l'utilisateur.**
 
 ## 6.4 Conformes — NE PAS Y TOUCHER (18)
 lot1 dead-bug / bird-dog / gainage-latéral · lot2 dead-bug-rotation / gainage-latéral-dyn / mountain-climbers ·
