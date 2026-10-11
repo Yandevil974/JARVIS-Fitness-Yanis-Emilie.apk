@@ -40,6 +40,50 @@ Contrôle : `npm test` = **94 passés / 0 échec** ; `media-index.json` = 267 en
 
 ---
 
+## 1 ter. CRITÈRE AJOUTÉ LE 11 OCTOBRE — **LE SOL DOIT ÊTRE SABLÉ CLAIR**
+
+L'utilisateur a signalé : « **le sol n'est plus couleur sablé** ». C'est un critère de fidélité à part entière.
+
+**Cible mesurée sur les 1ers GIF validés (votre référence) :**
+
+| Élément | Valeur cible |
+|---|---|
+| Sol (moyenne des pixels clairs du tiers bas) | **R233 V212 B186** |
+| Écart R−B (chaleur) | **≈ 47** |
+| Aspect | **dalles larges, lisses, crème/sablé TRÈS CLAIR**, joints discrets |
+
+**Mesure de contrôle (obligatoire, en plus de la saturation E1 ≥ 22) :**
+```bash
+# moyenne du sol = pixels clairs du tiers bas, tapis noir exclu
+convert "$GIF[0]" -coalesce -gravity South -crop 100%x33% +repage /tmp/bot.png
+convert /tmp/bot.png -colorspace HSL -channel L -separate +channel -threshold 45% /tmp/mask.png
+convert /tmp/bot.png /tmp/mask.png -compose multiply -composite \
+  -format "%[fx:int(255*mean.r)] %[fx:int(255*mean.g)] %[fx:int(255*mean.b)]" info:
+```
+**Seuil : le sol doit être ≈ 225-235 en rouge.** En dessous de 210 → le sol est trop gris/sombre → à refaire.
+
+**Défauts mesurés le 11 octobre (toutes mes productions, y compris les intégrées) :**
+
+| GIF | Sol mesuré | Écart |
+|---|---|---|
+| 01 front squat (intégré) | 200 187 174 | **-33** |
+| 02 fentes bulgares (intégré) | 192 171 155 | **-41** |
+| 03 leg extension (intégré) | 184 172 160 | **-49** |
+| bulgarian haltères (intégré) | 213 172 106 | -20 |
+| goblet squat (intégré) | 202 179 154 | -31 |
+| leg press (intégré) | 196 181 166 | -37 |
+| bulgarian réparé (intégré) | 193 177 158 | -40 |
+| back squat charge modérée | 201 184 164 | -32 → **corrigé 230 209 181** |
+| presse à cuisses pieds hauts | 203 173 134 | -30 → **corrigé 221 198 169** |
+| step-up sur banc | 190 173 150 | -43 → **corrigé 226 201 167** |
+
+**Cause identifiée** : la référence passée à la génération était le **fichier utilisateur** (dont le sol est en fait à 192 183 165,
+car il est recadré serré sur l'athlète) et non un **1er GIF validé plein format** dont le sol est à 233 212 186.
+**Recette correcte** : passer comme 2ᵉ image de référence **`reference/05-SOL-CIBLE-1er-GIF-valide.png`**
+(= `poc/back-squat.gif[0]`) et demander explicitement des *dalles crèmes sablées larges et claires, pas de petits pavés gris*.
+
+---
+
 ## 2. CHIFFRES À JOUR
 
 | | Nombre |
