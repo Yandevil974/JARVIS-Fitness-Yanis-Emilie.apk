@@ -74,32 +74,42 @@ Si une image ne ressemble pas à `POSE-A-front-squat-reference-decor.png`, elle 
 7. Choix des outils d'assemblage : `imagemagick` (`convert -delay`).
 8. Garder les dossiers de travail (`image-search/`, `tmp-*`) **hors du dépôt**.
 
-## 5. DÉCOR — LES DEUX RENDUS À NE PAS CONFONDRE
+## 5. DÉCOR — ⚠️ CORRECTION DU 11 OCTOBRE 2026 (preuve chiffrée)
 
-| | ✅ VERROUILLÉ (B-04, 10-11 oct.) | ❌ À NE PAS REPRODUIRE |
-|---|---|---|
-| Mer | bande **pâle et calme à l'horizon** | mer **turquoise saturée montant haut** |
-| Muret bas blanc | **visible, continu, dégagé** | masqué par la végétation |
-| Végétation | quelques palmiers **en arrière-plan** | dense, au premier plan, floue |
-| Lumière | **neutre**, rendu photo | très saturée, dorée, aspect « peint » |
+> **Cette section remplace la version précédente, qui allait dans le MAUVAIS SENS et aurait abîmé 25 GIF conformes.**
+> Mesures refaites sur les images elles-mêmes (saturation moyenne, `-colorspace HSL`). Preuves visuelles dans
+> `reference/DECISION-DECOR-11-OCT.jpg`, `reference/1ers-GIFs-valides-vs-fichier-utilisateur.jpg`,
+> `reference/front-squat-verrou-vs-1ers-valides.jpg`.
 
-### Mesures réelles (11 octobre 2026)
+### Les trois rendus, mesurés
 
-| Image | Saturation bande haute | Saturation globale |
-|---|---|---|
-| **Votre fichier** `00-ATHLETE-REFERENCE…jpg` (développé couché prise serrée) | **20,4** | **23,1** |
-| **Verrou** `POSE-A-front-squat-reference-decor.png` | **18,4** | **15,1** |
+| Rendu | Saturation | Qui | Ce qu'on voit |
+|---|---|---|---|
+| **A — DENSE** | **36 à 47** | POC (5 oct.), lots 1-5 (5-6 oct.), theme A début, **et le fichier de l'utilisateur (23,1)** | **mer bleue bien visible montant dans le cadre**, **végétation dense au 1er plan**, lumière dorée, plantes en pot, mur bas de couleurs différentes |
+| **B — PÂLE** | **13 à 21** | travail du **7 au 10 oct.** (B-01 → B-04, theme A fin) : front squat, fentes bulgares, leg extension, bulgarians, goblet, squat cycliste, leg press, presse, step-up, abductions, pallof, face-pull… | presque **tout pâle**, mer **à peine perceptible**, végétation rare, mur blanc haut |
 
-Le chiffre est **proche** — mais l'œil voit autre chose, et c'est ça qui compte :
+### La dérive, facts
 
-- Sur **votre fichier**, la **mer turquoise saturée occupe tout le haut de l'image**, et la **végétation sombre
-  vient au premier plan**, encadrant l'athlète.
-- Sur le **verrou**, il y a une **bande pâle ciel + mer à l'horizon**, le **muret bas blanc bien dégagé**, et la
-  végétation reste **en arrière-plan**.
+La production est passée du rendu **A** (5-6 oct.) au rendu **B** (7-10 oct.) **sans que personne ne le décide explicitement**.
+**19 GIF** sont au rendu B, **25 GIF** au rendu A.
 
-**Ce n'est donc pas la couleur qui diffère, c'est la composition** : place de la mer, présence du muret, proximité
-de la végétation. C'est ce point précis qui décide de la cible des corrections (voir `PLAN-CORRECTION.md`).
+### Ce que dit la consigne de l'utilisateur
 
----
+> « décor mer et végétation ressemblant aux **1ers gifs qui ont été validés** »
+
+Les 1ers GIF validés (POC du 5 oct., lots 1 à 5) sont au rendu **A — DENSE**. Le fichier de référence envoyé par
+l'utilisateur le 11 octobre est **du même côté** (mer visible, végétation dense, plantes en pot).
+**Le rendu verrouillé est donc le A — DENSE.**
+
+⚠️ **Mais** : les 3 GIF que l'utilisateur a explicitement validés les 10-11 oct. (front squat, fentes bulgares,
+leg extension) sont au rendu **B — PÂLE**. Sa validation portait sur la **pose** (c'était le sujet des échanges),
+pas sur le décor.
+
+**→ Question posée à l'utilisateur le 11 octobre : garder A (dense, conforme à ses 2 références) ou B (pâle,
+conforme à ses 3 dernières validations de pose) ? Ce choix fixe quels GIF doivent être réalignés : 19 si A, 25 si B.**
+
+### Interdits (inchangés)
+
+Salle de sport, parquet, mur intérieur, miroir, fond gris.
 
 *Verrou posé sur la branche `arena/7a4a778b-jarvis-fitness-yanis-emilie-ap`. Plan de correction chiffré : `animations/_audit/2026-10-11/PLAN-CORRECTION.md`.*

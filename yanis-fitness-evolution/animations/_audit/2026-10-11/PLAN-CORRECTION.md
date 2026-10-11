@@ -1,3 +1,19 @@
+> # ⚠️ CORRIGÉ LE 11 OCTOBRE 2026 (fin de journée) — CE PLAN ALLAIT DANS LE MAUVAIS SENS
+>
+> Ce plan proposait de **réaligner 33 GIF sur le décor du front squat (pâle)**. C'était une **erreur de direction** :
+> la consigne de l'utilisateur dit « décor ressemblant aux **1ers GIF validés** », et les 1ers validés
+> (POC du 5 oct., lots 1-5) sont au rendu **A — DENSE** (saturation 36-47) — **le même côté que le fichier
+> de référence envoyé le 11 octobre (23,1)**. Les GIF « à realigner » étaient donc, en majorité, **déjà bons**.
+>
+> **Chiffres corrigés : 39 livrés · 268 restants · 5 GIF à corriger** (2 réparables sans générer une image).
+> Le plan avait « 36 à corriger » : c'était faux.
+>
+> **Document de référence à jour : `animations/_locked/SUIVI-COMMUN.md`.**
+> Preuve visuelle : `animations/_locked/reference/DECISION-DECOR-11-OCT.jpg`.
+> *Le texte ci-dessous est conservé pour traçabilité.*
+
+---
+
 # PLAN DE CORRECTION — COMBIEN DE GIFS À CORRIGER
 **11 octobre 2026** — réponse chiffrée + ordre de traitement.
 
