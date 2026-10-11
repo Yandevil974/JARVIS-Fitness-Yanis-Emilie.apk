@@ -32,46 +32,65 @@
 
 ---
 
-## 3. LA QUEUE DE CORRECTION — 21 GIF
+## 3. LA QUEUE DE CORRECTION — VÉRIFIÉE LE 11 OCTOBRE (fin de journée)
 
-### ✅ 18 GIF CONFORMES à E1 — ne pas y toucher
+> ⚠️ **Les listes précédentes étaient gonflées par des erreurs de lecture. Voici l'état RÉELLEMENT vérifié**,
+> image par image, après `-coalesce`. Détail des corrections : §6 « RETRACTIONS ».
 
-`lot1/` dead-bug · bird-dog · gainage-lateral — `lot2/` dead-bug-rotation · gainage-lateral-dyn · mountain-climbers — `lot3/` circuit-abdos · circuit-gainage — `lot4/` plat · plat-neutre · decline-neutre — `lot5/` incline-30 · incline-45 · incline-45-prise-neutre — `themeA/` mobilite-des-epaules · respiration-diaphragmatique · hip-thrust-unilateral · fentes-arriere-pdc
+### 🔴 1 SEUL GIF EST VRAIMENT CASSÉ
 
-### 🟠 21 GIF À RÉALIGNER SUR E1 — décor pâle à corriger
-
-**A. Les 4 CASSÉS / DÉFORMÉS — priorité absolue** (défaut d'animation **en plus** du décor)
-
-| GIF | Défaut | Action |
+| GIF | Preuve | Action |
 |---|---|---|
-| `themeB/bulgarian-split-squat-3poses.gif` | **CASSÉ** : images 2-3 vides, image 4 = 1×1 px | **régénérer entièrement** |
-| `themeB/goblet-squat-3poses.gif` | pose basse **écrasée / déformée** | régénérer la pose B puis chaîner |
-| `themeB/step-up-sur-banc-hauteur-du-genou-3poses.gif` | **le banc change de place et d'échelle** | régénérer en fixant le banc |
-| `themeB/squat-cycliste-squat-complet-3poses.gif` | **l'échelle saute** entre les images | régénérer en fixant le cadrage |
+| `themeB/bulgarian-split-squat-3poses.gif` | image 1 = moyenne 66 % / écart-type 22 % (normal) — **images 2, 3 et 4 = moyenne 91 % / écart-type 5-6 % = fond vide, aucun athlète** | **régénérer entièrement** |
 
-⚠️ `bulgarian-split-squat` et `fentes-bulgares-halteres-pied-avant-sureleve` sont **deux entrées DISTINCTES**
-de l'inventaire → **interdiction de réutiliser le même GIF** (règle « 1 exercice = 1 animation »).
+⚠️ `bulgarian-split-squat` et `fentes-bulgares-halteres-pied-avant-sureleve` sont **deux entrées distinctes** de
+l'inventaire → **interdiction de réutiliser le même GIF** (règle « 1 exercice = 1 animation »).
 
-**B. 1 réparation SANS GÉNÉRATION**
+### 🟠 20 GIF — DÉCOR PÂLE, À RÉALIGNER SUR E1 (animation correcte)
 
-| GIF | Défaut | Action |
-|---|---|---|
-| `themeB/leg-extension-3poses.gif` | **4 images** au lieu de 5 (pas de retour à A) | remplacer par `leg-extension-app.gif` (440×440, 5 images, A→M→B→M→A) — **déjà disponible**, puis réaligner le décor |
+`themeB/` presse-a-cuisses-pieds-hauts · back-squat-charge-moderee · bulgarian-split-squat-halteres · leg-press ·
+**goblet-squat** · **leg-extension** · **step-up** · **squat-cycliste**
+`themeA/` abduction-assise · pallof-press · squat-poids-du-corps · face-pull · clamshell · fire-hydrant ·
+abduction-hanche · pompes · gainage-planche · pont-fessier-activation
+`B-04/` **front squat** (déjà intégré dans l'app) · **fentes bulgares** (terminé, non intégré) · **leg extension** (terminé)
 
-**C. 16 GIF — décor pâle seulement** (animation correcte)
+→ **Méthode (gain de temps majeur, §5) : garder le personnage et la pose, régénérer UNIQUEMENT les 3 fonds,
+puis relancer `build/faire-gif.sh`. Aucune régénération d'athlète.**
 
-`themeB/` presse-a-cuisses-pieds-hauts · back-squat-charge-moderee · bulgarian-split-squat-halteres · leg-press
-`themeA/` abduction-assise · pallof-press · squat-poids-du-corps · face-pull · clamshell · fire-hydrant · abduction-hanche · pompes · gainage-planche · pont-fessier-activation
-`B-04/` **front squat** (intégré dans l'app) · **fentes bulgares** (terminé, non intégré)
+### 🔵 1 GIF HORS FORMAT (hors périmètre des 307)
 
-→ **méthode : garder le personnage et la pose, ne régénérer QUE le fond sur le décor E1.**
+`poc/back-squat.gif` — **portrait 480×860** alors que la production est en paysage ; disques coupés, 3ᵉ pose debout.
+→ **à trancher avec l'utilisateur** : garder, recadrer, ou refaire.
+
+### ✅ 18 GIF CONFORMES À E1 — ne pas y toucher
+
+`lot1/` dead-bug · bird-dog · gainage-lateral — `lot2/` dead-bug-rotation · gainage-lateral-dyn · mountain-climbers —
+`lot3/` circuit-abdos · circuit-gainage — `lot4/` plat · plat-neutre · decline-neutre —
+`lot5/` incline-30 · incline-45 · incline-45-prise-neutre —
+`themeA/` mobilite-des-epaules · respiration-diaphragmatique · hip-thrust-unilateral · fentes-arriere-pdc
 
 ### Données brutes
 
-`QUEUE-CORRECTION.tsv` — mesure de saturation des 50 GIF, classés. Rejouable :
+`QUEUE-CORRECTION.tsv` — saturation des 50 GIF, classés. Rejouable :
 ```bash
 convert IMG -resize 400x -colorspace HSL -channel G -separate +channel -format "%[fx:mean*100]" info:
 ```
+
+---
+
+## 3 bis. COMMENT VÉRIFIER UN GIF SANS SE TROMPER (méthode obligatoire)
+
+```bash
+# structure + délais
+convert GIF            -coalesce -format "%s:%wx%h " info:
+convert GIF            -format "%T cs " info:
+# une image est-elle VIDE ? écart-type très bas = oui
+convert GIF -coalesce -format "%s moy=%[fx:int(mean*100)]%% ec=%[fx:int(standard_deviation*100)]%%\n" info:
+```
+
+**Piège à connaître :** `identify GIF` sur un GIF **non coalescé** affiche une image `1x1` sur des fichiers
+**parfaitement sains** (c'est le codage interne du GIF). Ne jamais conclure « image manquante » sans `-coalesce`.
+**Les 3 GIF verrouillés sont sains** : 5 images pleines, délais `25 20 50 20 25`.
 
 ---
 
@@ -114,3 +133,44 @@ developpe-couche-barre, hip-thrust-barre, souleve-de-terre-roumain, nage-douce-f
 ---
 
 *Verrou : `REFERENCE-VERROUILLEE.md` · Audit : `../_audit/2026-10-11/RAPPORT-AUDIT-2026-10-11.md`*
+
+---
+
+## 7. RETRACTIONS — ERREURS COMMISES PUIS CORRIGÉES (11 octobre 2026)
+
+À ne **pas** répéter. Corrigées après vérification image par image.
+
+| Affirmation antérieure | Verdict | Réalité vérifiée |
+|---|---|---|
+| « leg extension : 4 images au lieu de 5, athlète masqué par la machine » | ❌ **RETIRÉ** | 4 images pleines, **standard du projet**. L'extension des genoux est claire et lisible. La version app (5 images) est une **amélioration**, pas une réparation d'urgence |
+| « image 1×1 pixel / image manquante » sur leg-extension, squat-cycliste, step-up, bulgarian | ⚠️ **ARTEFACT** | `identify` sur GIF non coalescé affiche `1x1` sur des fichiers **sains**. Seul `-coalesce` fait foi |
+| « goblet squat : pose basse écrasée / déformée » | ⚠️ **EXAGÉRÉ** | La pose basse se lit bien comme un **squat correct**. Le rendu des genoux est un peu raide → **polissage**, pas régénération |
+| « step-up : le banc change de place et d'échelle » | ❌ **NON CONFIRMÉ** | Le banc reste cohérent d'une image à l'autre. Retiré de la queue |
+| « squat cycliste : l'échelle saute » | ❌ **NON CONFIRMÉ** | Cadrage cohérent. Retiré de la queue |
+| « 36 GIF à corriger » / « 33 à réaligner » (plan précédent) | ❌ **FAUX** | **1 cassé + 20 décors à réaligner.** Le plan précédent visait en plus le **mauvais décor** |
+| « 42 puis 37 puis 39 couverts » | ✅ | **39** est le bon chiffre (37 du lot historique + front squat + fentes bulgares) |
+
+**Leçon à retenir :** ne jamais conclure sur une vignette ou un `identify` brut. **Extraire, coalescer, mesurer.**
+
+---
+
+## 8. GAIN DE TEMPS MAJEUR — LE GARDE-FOU EST SOLIDE
+
+**Les 3 GIF verrouillés se reconstruisent depuis leurs PNG sources**, sans jamais retoucher l'athlète :
+
+| GIF | Sources | Taille cible | RMSE de reproduction |
+|---|---|---|---|
+| front squat | `_sources/B-04/front-squat-A / M4 / B.png` | 440×246 | ~1,7 % |
+| fentes bulgares | `_sources/B-04/fentes-bulgares-A-banc-profil2 / M-banc-profil / B5-banc-profil.png` | 440×246 | (pipeline identique) |
+| leg extension | `_sources/B-04/leg-extension-A3 / M5 / B4.png` | 440×440 | ~2 % |
+
+**Conséquence : corriger le décor = régénérer 3 FONDS par exercice**, puis relancer l'assemblage.
+Le personnage, la pose et le cadrage restent intacts. C'est ce qui rend les 20 réalignements réalisables.
+
+**Outil prêt :** `build/faire-gif.sh` — usage :
+```bash
+./build/faire-gif.sh A.png M.png B.png 440x246 sortie.gif
+```
+Il assemble `A → M → B → M → A` avec les **délais officiels 25/20/50/20/25 cs**, vérifie le nombre d'images,
+la taille, et **mesure la saturation du décor** (cible E1 ≥ 22). Exemple produit :
+`build/EXEMPLE-leg-extension-5images-440x440.gif`.

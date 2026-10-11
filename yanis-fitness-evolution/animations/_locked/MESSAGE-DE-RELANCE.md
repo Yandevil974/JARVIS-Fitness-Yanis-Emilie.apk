@@ -24,17 +24,37 @@ RÈGLE NON NÉGOCIABLE :
 5. Chaque GIF terminé m'est présenté immédiatement.
 6. « Y » = relance du chat, ce n'est pas une validation.
 
-CHIFFRES VERROUILLÉS : 307 exercices · 39 livrés · 268 restants · 21 à corriger.
+CHIFFRES VERROUILLÉS : 307 exercices · 39 livrés · 268 restants.
+À corriger : 1 cassé (bulgarian) + 20 décors à réaligner sur E1. Pas plus : les listes
+plus longues qui circulaient venaient d'erreurs de lecture, corrigées le 11 octobre.
 
-1er TRAVAIL — corriger les GIF (dans cet ordre) :
-A. Les 4 cassés/déformés : bulgarian-split-squat (cassé), goblet-squat (pose B
-   écrasée), step-up (le banc bouge), squat-cycliste (l'échelle saute).
+1er TRAVAIL — corriger les GIF (vérifié image par image le 11 octobre) :
+
+A. LE SEUL GIF VRAIMENT CASSÉ : themeB/bulgarian-split-squat-3poses.gif
+   (images 2, 3 et 4 = fond vide, aucun athlète). À régénérer entièrement.
    ATTENTION : bulgarian-split-squat et fentes-bulgares-halteres-pied-avant-sureleve
-   sont DEUX exercices distincts — pas le même GIF.
-B. Réparation gratuite : leg-extension-3poses.gif (4 images) → remplacer par
-   la version app 5 images déjà prête, puis réaligner le décor.
-C. Les 16 autres au décor pâle : garder le personnage et la pose, régénérer
-   UNIQUEMENT le fond sur E1. (dont front squat, fentes bulgares déjà terminées)
+   sont DEUX exercices distincts — interdiction de réutiliser le même GIF.
+
+B. 20 GIF au décor PÂLE à réaligner sur E1 (l'animation est correcte) :
+   presse-a-cuisses · back-squat-charge-moderee · bulgarian-halteres · leg-press ·
+   goblet-squat · leg-extension · step-up · squat-cycliste · abduction-assise ·
+   pallof-press · squat-poids-du-corps · face-pull · clamshell · fire-hydrant ·
+   abduction-hanche · pompes · gainage-planche · pont-fessier-activation ·
+   front squat (déjà dans l'app) · fentes bulgares (terminé)
+   MÉTHODE : garder le personnage et la pose, régénérer UNIQUEMENT les 3 FONDS,
+   puis relancer build/faire-gif.sh. Aucune régénération d'athlète.
+
+C. POC back-squat : hors format (portrait 480x860) — hors périmètre, à trancher.
+
+8 GIF du thème A + les 3 lots 4/5 + les circuits sont DÉJÀ conformes E1 : ne pas y toucher.
+
+VÉRIFICATION — méthode obligatoire (sinon on se trompe) :
+   convert GIF -coalesce -format "%s:%wx%h moy=%[fx:int(mean*100)]%% ec=%[fx:int(standard_deviation*100)]%%\n" info:
+   Piège : identify sur un GIF non coalescé affiche une image 1x1 sur des fichiers SAINS.
+   Toujours coalescer avant de conclure.
+
+OUTIL PRÊT : build/faire-gif.sh A.png M.png B.png 440x246 sortie.gif
+   (assemble A->M->B->M->A avec les délais officiels 25/20/50/20/25 cs et mesure le décor)
 
 MÉTHODE : partir de la dernière pose validée, jamais de zéro. Retoucher, ne pas
 recréer. Vérifier toi-même personnage + décor E1 avant de me montrer. 10 appels
