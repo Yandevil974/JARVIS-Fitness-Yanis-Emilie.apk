@@ -40,6 +40,9 @@ C'est un héritage de A, pas un défaut de M. Ne pas régénérer A sans demande
 `Triceps extensions haltères, banc plat` : fixe validée (« Ok ») → GIF assemblé
 `build/corrections/triceps-extensions-halteres-banc-plat-3poses.gif`
 5×440×246 · 25/20/50/20/25 · **324 Ko** (329 185) · sat 44,4/44,8 · sol coin 219–221.
+**INTÉGRÉ le 11 oct. (accord « Oui »).** Curl Scott barre EZ, pronation → `/media/2ef8b38d43658412.gif` (336 982 octets).
+media-index 279→280. Guide elite ajouté. Bundle +149 octets. `npm test` 94/0. Elite sans GIF : 85→84.
+
 **INTÉGRÉ le 11 oct. (accord « Ok »).** `/media/79046121e6da34f3.gif`
 media-index 278→279. Guide elite ajouté (clé nouvelle). Bundle +178/157 octets (insert, pas un remplacement de hash).
 `npm test` 94/0. Elite sans GIF : 86→85.
