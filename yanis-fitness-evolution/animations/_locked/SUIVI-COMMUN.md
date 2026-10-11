@@ -28,6 +28,12 @@
 Fait dans les 4 endroits requis : `public/media/`, `release/media/`, `public/media-index.json`, `release/media-index.json`
 (+ `legacy.json` et le bundle `release/assets/index-BLZxzv9Y.js` patché **en binaire** — delta d'octets vérifié).
 Contrôle : `npm test` = **94 passés / 0 échec** ; `media-index.json` = 267 entrées ; les 3 exercices résolvent leur GIF.
+| `Bulgarian split squat haltères` | `/media/493af81454d9f86c.gif` | **intégré** (exercice enfin séparé de la version sans haltères) |
+| `Goblet squat` | `/media/33d8d73dda8abb5b.gif` | **intégré** (décor E1) |
+| `Leg press` | `/media/d7bd0092279c8789.gif` | **intégré** (décor E1) |
+
+**Défaut « 1 exercice = 1 animation » corrigé** : `Bulgarian split squat` et `Bulgarian split squat haltères` partageaient
+`cf312b839f6da027.gif` — ils ont désormais chacun leur animation.
 → **Après ces 3 : il reste 1 cassé (bulgarian) + 18 décors pâles.** Ne pas écrire « tout est corrigé ».
 
 **En attente d'accord** : 2 images fixes de validation dans `build/validation/` (front squat A et bulgarian A, décor E1).
@@ -117,11 +123,13 @@ Fichiers dans `build/corrections/` (assemblés par `faire-gif.sh`, 5 images, dé
 
 | Exercice | Fichier | Saturation | Statut |
 |---|---|---|---|
-| bulgarian split squat haltères | `bulgarian-split-squat-halteres-3poses.gif` | 43,2 / 34,7 | **attente validation** |
-| goblet squat | `goblet-squat-3poses.gif` | 29,0 / 35,8 | **attente validation** |
-| leg press | `leg-press-3poses.gif` | 27,3 / 25,9 | **attente validation** |
+| bulgarian split squat haltères | `bulgarian-split-squat-halteres-3poses.gif` | 43,2 / 34,7 | **INTÉGRÉ** le 11/10 (accord explicite) |
+| goblet squat | `goblet-squat-3poses.gif` | 29,0 / 35,8 | **INTÉGRÉ** le 11/10 (accord explicite) |
+| leg press | `leg-press-3poses.gif` | 27,3 / 25,9 | **INTÉGRÉ** le 11/10 (accord explicite) |
+| bulgarian split squat (sans haltères) | `bulgarian-split-squat-3poses-CORRIGE.gif` | 34,8 / 33,5 | **attente validation** (GIF cassé reconstruit) |
 
-→ **pas intégrés dans l'app** : l'intégration exige un accord explicite. Reste ensuite **15 décors** à réaligner.
+→ Reste **14 décors** à réaligner après ces intégrations. Le GIF du bulgarian sans haltères n'entre PAS dans l'app
+tant que l'utilisateur ne l'a pas validé.
 Recette appliquée : l'athlète est conservé (aucune régénération de pose), **seul le fond** est remplacé depuis les frames existantes + la référence décor E1.
 
 ---
