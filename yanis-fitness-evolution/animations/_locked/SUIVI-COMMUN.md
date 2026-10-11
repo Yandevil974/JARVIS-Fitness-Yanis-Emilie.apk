@@ -17,6 +17,23 @@
 
 ---
 
+## 1 bis. INTÉGRÉ DANS L'APP LE 11 OCTOBRE (commit `2225d5b`) — feu vert explicite de l'utilisateur
+
+| Exercice (app) | Fichier média | État |
+|---|---|---|
+| `Front squat` | `/media/6008e0f8a2557d40.gif` | **intégré** (remplace l'ancien `1c28908ab83cde2e.gif`) |
+| `Fentes bulgares haltères (pied avant surélevé)` | `/media/3a817d4e229a92ee.gif` | **intégré** (nouveau) |
+| `Leg extension` | `/media/0223a993070bf19b.gif` | **intégré** (nouveau, 5 images) |
+
+Fait dans les 4 endroits requis : `public/media/`, `release/media/`, `public/media-index.json`, `release/media-index.json`
+(+ `legacy.json` et le bundle `release/assets/index-BLZxzv9Y.js` patché **en binaire** — delta d'octets vérifié).
+Contrôle : `npm test` = **94 passés / 0 échec** ; `media-index.json` = 267 entrées ; les 3 exercices résolvent leur GIF.
+→ **Après ces 3 : il reste 1 cassé (bulgarian) + 18 décors pâles.** Ne pas écrire « tout est corrigé ».
+
+**En attente d'accord** : 2 images fixes de validation dans `build/validation/` (front squat A et bulgarian A, décor E1).
+
+---
+
 ## 2. CHIFFRES À JOUR
 
 | | Nombre |
