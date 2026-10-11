@@ -304,6 +304,25 @@ developpe-couche-barre, hip-thrust-barre, souleve-de-terre-roumain, nage-douce-f
 
 ---
 
+
+---
+
+## 6 bis. RESTE À CORRIGER — 5 EXERCICES (vérifié le 11/10 après le lot R5)
+
+| Exercice | Défaut mesuré | Action |
+|---|---|---|
+| **gainage planche** | poses générées avec **artefacts visuels confirmés** (rectangles plus clairs collés dans le fond, visibles sur les poses M et B) | **régénérer les 3 poses** |
+| **face-pull** | sol pâle | refaire les 3 poses |
+| **clamshell** | sol pâle | refaire les 3 poses |
+| **fire hydrant** | sol pâle | refaire les 3 poses |
+| **abduction hanche** | sol pâle | refaire les 3 poses |
+
+**Barre de finition** : coin de sol **225-240** en rouge, saturation **>= 22**, athlète inchangé, aucune artefact.
+Quota : **10 générations d'images par tour** → 15 poses à faire = **2 tours**. Les poses déjà faites
+(`build/corrections/_poses-sable/`) ne sont **pas** repayées.
+
+**Quand ces 5 sont faits, verts et présentés → PREVENIR L'UTILISATEUR** (demande explicite).
+
 ## 7. RETRACTIONS — ERREURS COMMISES PUIS CORRIGÉES (11 octobre 2026)
 
 À ne **pas** répéter. Corrigées après vérification image par image.
