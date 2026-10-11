@@ -4,6 +4,31 @@
 
 ---
 
+## 0. CORRECTIONS DES ANIMATIONS EXISTANTES — TERMINÉES (11 oct. 2026, soir)
+
+**La dernière pose manquante est faite.** Abduction hanche, pose M : athlète **DEBOUT**, face caméra,
+mains sur les hanches, jambe droite en abduction, élastique aux chevilles. **Plus d'athlète allongé.**
+
+| | Mesure exécutée |
+|---|---|
+| Fichier | `build/corrections/abduction-hanche-elastique-3poses.gif` |
+| Format | 5 images 440×246 · délais 25 20 50 20 25 cs · **320 Ko** (325 243 octets) |
+| Sol coin 18×14 % (R V B) | A **235 214 185** · M **241 220 190** · B **230 211 185** (cible 232 211 188, rouge 225–240) |
+| Saturation | A **43,0** · B **40,8** (E1 ≥ 22) |
+| Images coalescées | 5/5 pleines (moy 62–66 %, écart-type 26–27 % — pas d'image vide) |
+| Pose source M | `animations/_audit/2026-10-11/gif/themeA/abduction-hanche-elastique-3poses.gif` image 1 |
+| Poses A/B inchangées | `_poses-sable/abduction-hanche-elastique-{0,2}.png` |
+
+**NON intégré.** En attente d'accord explicite. Un « Y » isolé ne compte pas.
+
+**Nuance honnête (ne bloque pas)** : la pose A déjà validée a les **bras dorés** ; M et B ont les **bras argent**.
+C'est un héritage de A, pas un défaut de M. Ne pas régénérer A sans demande.
+
+**Utilisateur prévenu** (demande explicite §8 passation) : les corrections de sol/décor des GIF existants
+sont terminées. Ensuite seulement : exercices sans animation, protocole 1 image fixe → accord → GIF.
+
+---
+
 ## 1. DÉCISION VERROUILLÉE : **CIBLE E1 (décor dense)**
 
 **L'utilisateur a choisi E1** le 11 octobre 2026 → le décor de référence est **celui de son fichier**

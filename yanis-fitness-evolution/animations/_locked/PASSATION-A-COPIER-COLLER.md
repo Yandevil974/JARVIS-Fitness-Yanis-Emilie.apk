@@ -168,32 +168,29 @@ Un décor se corrige **sans jamais toucher à l'athlète** :
 `bulgarian haltères` (228) · `goblet squat` (224) · `squat cycliste` (219) · `abduction assise` (240) ·
 `pallof press` (213) · `squat poids du corps` (235) · **`pompes` (219)** · **`pont-fessier-activation` (233)**
 
-## 6.3 RESTE À CORRIGER — **1 SEULE POSE** (le travail à finir avant toute autre chose)
-Les 9 exercices qui restaient ont été traités. **Il ne manque plus qu'une pose :**
+## 6.3 RESTE À CORRIGER — **AUCUNE POSE** (terminé le 11 oct. 2026)
 
-| Exercice | État |
+**Abduction hanche pose M : FAITE.** Athlète DEBOUT, face caméra, mains sur les hanches, jambe droite
+en abduction, élastique aux chevilles. GIF assemblé, mesuré, **présenté — NON intégré**.
+
+| | Mesure exécutée |
 |---|---|
-| **abduction hanche** | poses A et B **bonnes** (sol 236 / 230, athlète DEBOUT, mains sur les hanches). La **pose M est fausse** : le générateur a produit un athlète **allongé sur le côté** (autre exercice). → **régénérer UNIQUEMENT la pose M** |
+| Fichier | `build/corrections/abduction-hanche-elastique-3poses.gif` |
+| Format | 5 images 440×246 · 25 20 50 20 25 cs · **320 Ko** |
+| Sol coin (R V B) | A 235 214 185 · M 241 220 190 · B 230 211 185 |
+| Saturation | A 43,0 · B 40,8 |
+| Pose M source | `_poses-sable/abduction-hanche-elastique-1.png` (1376×768) |
+
+**Ne pas régénérer cette pose.** Attendre l'accord explicite avant intégration.
 
 **Ce qui a été terminé** (sol sablé, contrôlé visuellement, sans artefacts) :
 gainage planche · clamshell · fire hydrant · pompes · pont-fessier-activation · face-pull ·
 bulgarian haltères · goblet squat · squat cycliste · abduction assise · pallof press · squat poids du corps ·
-bulgarian split squat · leg press · back squat charge modérée · presse à cuisses · step-up
+bulgarian split squat · leg press · back squat charge modérée · presse à cuisses · step-up ·
+**abduction hanche**
 
-### Comment finir (1 génération suffit)
-Source de la pose M : `animations/_audit/2026-10-11/gif/themeA/abduction-hanche-elastique-3poses.gif` (image 1).
-Référence décor : `reference/05-SOL-CIBLE-1er-GIF-valide.png`.
-**Imposer dans le prompt** : *« the athlete is STANDING UPRIGHT, front-facing, both hands on the hips, one leg
-lifted straight out to the side, do NOT lie him down, do NOT change the exercise or the camera angle »*.
-Puis :
-```bash
-./animations/_locked/build/faire-gif.sh abduction-hanche-0.png abduction-hanche-1.png abduction-hanche-2.png \
-  440x246 abduction-hanche-elastique-3poses.gif
-```
-Les poses A et B sont dans `build/corrections/_poses-sable/abduction-hanche-elastique-{0,2}.png`.
-⚠️ Le quota est de **10 générations d'images par tour** : c'est la seule raison pour laquelle cette pose reste.
-
-→ **Après cette pose : les corrections sont TERMINÉES, et il faut prévenir l'utilisateur.**
+→ **Les corrections des GIF existants sont TERMINÉES. L'utilisateur a été prévenu.**
+Ensuite seulement : exercices sans animation, protocole **1 image fixe → accord → GIF**.
 
 ## 6.4 Conformes — NE PAS Y TOUCHER (18)
 lot1 dead-bug / bird-dog / gainage-latéral · lot2 dead-bug-rotation / gainage-latéral-dyn / mountain-climbers ·
