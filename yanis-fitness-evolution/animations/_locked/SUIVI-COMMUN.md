@@ -36,6 +36,12 @@ Ancien fichier `b49969e64dc275f5.gif` **conservé** (pas de suppression). Poulie
 **Nuance honnête (ne bloque pas)** : la pose A déjà validée a les **bras dorés** ; M et B ont les **bras argent**.
 C'est un héritage de A, pas un défaut de M. Ne pas régénérer A sans demande.
 
+**Suite production (11 oct.) — 1er exo elite sans animation**
+`Triceps extensions haltères, banc plat` : fixe validée (« Ok ») → GIF assemblé
+`build/corrections/triceps-extensions-halteres-banc-plat-3poses.gif`
+5×440×246 · 25/20/50/20/25 · **324 Ko** (329 185) · sat 44,4/44,8 · sol coin 219–221.
+**Présenté, NON intégré.**
+
 **Utilisateur prévenu** (demande explicite §8 passation) : les corrections de sol/décor des GIF existants
 sont terminées. Ensuite seulement : exercices sans animation, protocole 1 image fixe → accord → GIF.
 
