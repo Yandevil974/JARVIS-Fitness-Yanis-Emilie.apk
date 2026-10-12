@@ -429,3 +429,12 @@ B coudes à hauteur d'épaules, avant-bras horizontaux pointés vers l'avant, ha
 `build/corrections/elevations-laterales-coude-90-3poses-CORRIGE.gif` — 5 images 440x246,
 délais 25/20/50/20/25 cs, 367304 octets, saturation 48.0/48.7, sol 205/205/208 (ref. verrouillée 203).
 NON intégré : en attente de l'accord de l'utilisateur sur le GIF.
+
+### Coude à 90° — v2 : rotation des haltères (12/10/2026)
+Remarque utilisateur : « les haltères doivent être verticaux en bas pour terminer horizontaux en haut ».
+Poses corrigées : A = coudes à la taille, avant-bras horizontaux devant, **haltères VERTICAUX**
+(manche vertical, disques empilés) ; M = bras à 45°, **haltères inclinés à 45°** (rotation en cours) ;
+B = coudes à hauteur d'épaules, avant-bras horizontaux devant, **haltères HORIZONTAUX**.
+`build/corrections/elevations-laterales-coude-90-3poses-CORRIGE-v2.gif` — 5 images 440x246,
+délais 25/20/50/20/25 cs, 368227 octets, saturation 46.9/48.7, sol 202/205/208.
+NON intégré : en attente de l'accord de l'utilisateur sur le GIF.
