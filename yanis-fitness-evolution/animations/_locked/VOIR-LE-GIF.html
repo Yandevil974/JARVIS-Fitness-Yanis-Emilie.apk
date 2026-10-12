@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JARVIS — voir le GIF</title>
+<style>
+:root { color-scheme: dark; }
+body { margin: 0; background: #0b0f14; color: #e8eef5; font: 16px/1.45 system-ui, sans-serif; }
+header { padding: 20px 24px 8px; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+p { color: #8fa3b8; margin: 0 0 8px; }
+.stage {
+  margin: 12px auto 28px; padding: 18px; max-width: 920px;
+  background: #131a22; border: 1px solid #223040; border-radius: 16px; text-align: center;
+}
+.stage img { width: min(880px, 100%); height: auto; image-rendering: auto; border-radius: 8px; background: #000; }
+.meta { font: 13px/1.4 ui-monospace, monospace; color: #b7c6d4; margin-top: 10px; }
+h2 { font-size: 15px; color: #ffd479; margin: 0 0 8px; }
+.row { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; padding: 0 16px 40px; }
+.card { width: 300px; background: #131a22; border: 1px solid #223040; border-radius: 12px; padding: 12px; text-align: center; }
+.card img { width: 100%; height: auto; border-radius: 6px; }
+.card b { display: block; margin: 8px 0 2px; }
+.card span { color: #8fa3b8; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Le GIF animé — élévations latérales coude à 90°</h1>
+  <p>5 images (A → M → B → M → A), délais 25 / 20 / 50 / 20 / 25. Boucle infinie. Pas encore dans l’app.</p>
+</header>
+<div class="stage">
+  <h2>En lecture</h2>
+  <img src="build/corrections/elevations-laterales-coude-90-3poses.gif" alt="élévations latérales coude à 90°" width="440" height="246">
+  <p class="meta">440×246 · 356 Ko · sat ~50 · sol coin 211–214</p>
+</div>
+<h2 style="padding:0 24px;">Les derniers GIF (aussi en boucle)</h2>
+<div class="row">
+  <div class="card">
+    <img src="build/corrections/elevations-laterales-assises-3poses.gif" alt="élévations latérales assises">
+    <b>Élévations latérales assises</b><span>déjà intégré</span>
+  </div>
+  <div class="card">
+    <img src="build/corrections/curl-scott-barre-ez-pronation-3poses.gif" alt="curl Scott">
+    <b>Curl Scott barre EZ, pronation</b><span>déjà intégré</span>
+  </div>
+  <div class="card">
+    <img src="build/corrections/triceps-extensions-halteres-banc-plat-3poses.gif" alt="triceps">
+    <b>Triceps extensions haltères, banc plat</b><span>déjà intégré</span>
+  </div>
+  <div class="card">
+    <img src="build/corrections/abduction-hanche-elastique-3poses.gif" alt="abduction hanche">
+    <b>Abduction hanche élastique</b><span>déjà intégré</span>
+  </div>
+</div>
+</body>
+</html>
