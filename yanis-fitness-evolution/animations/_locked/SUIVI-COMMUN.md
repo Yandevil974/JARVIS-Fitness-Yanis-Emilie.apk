@@ -417,3 +417,15 @@ Le personnage, la pose et le cadrage restent intacts. C'est ce qui rend les 20 r
 Il assemble `A → M → B → M → A` avec les **délais officiels 25/20/50/20/25 cs**, vérifie le nombre d'images,
 la taille, et **mesure la saturation du décor** (cible E1 ≥ 22). Exemple produit :
 `build/EXEMPLE-leg-extension-5images-440x440.gif`.
+
+## Coude à 90° — correction du geste (12/10/2026)
+Geste faux constaté par l'utilisateur (comparé aux sites de fitness + au GIF des assises déjà validé) :
+au sommet, les avant-bras partaient vers le haut, haltères au-dessus des coudes (goal-post).
+Gestes de référence consultés : musculation.com (élévations latérales + variante assise),
+gym-studio.com (« le coude monte en premier », 90° max), exercice-musculation.fr, magicfit.fr,
+getfitcraft.com (bent-arm lateral raise — « deux équerres en L », avant-bras vers l'avant).
+Correction : pose A coudes à la taille + avant-bras horizontaux vers l'avant ; M bras à 45° ;
+B coudes à hauteur d'épaules, avant-bras horizontaux pointés vers l'avant, haltères devant.
+`build/corrections/elevations-laterales-coude-90-3poses-CORRIGE.gif` — 5 images 440x246,
+délais 25/20/50/20/25 cs, 367304 octets, saturation 48.0/48.7, sol 205/205/208 (ref. verrouillée 203).
+NON intégré : en attente de l'accord de l'utilisateur sur le GIF.
