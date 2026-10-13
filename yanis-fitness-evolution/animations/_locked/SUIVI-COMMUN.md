@@ -438,3 +438,15 @@ B = coudes à hauteur d'épaules, avant-bras horizontaux devant, **haltères HOR
 `build/corrections/elevations-laterales-coude-90-3poses-CORRIGE-v2.gif` — 5 images 440x246,
 délais 25/20/50/20/25 cs, 368227 octets, saturation 46.9/48.7, sol 202/205/208.
 NON intégré : en attente de l'accord de l'utilisateur sur le GIF.
+
+### Coude à 90° — contradiction à trancher (13/10/2026)
+Signalement utilisateur : « les mains bougent, tournent sur elles-mêmes alors qu'elles ne le doivent pas ».
+Or la demande précédente (« verticaux en bas pour terminer horizontaux en haut ») implique
+nécessairement une rotation de l'haltère pendant la montée. Les deux demandes sont contradictoires.
+Vérification sur les sites de fitness : all-musculation.com (« flexion fixe tout au long du mouvement »,
+« rotation interne excessive » = erreur), gym-studio.com (paume légèrement pronationnée, stable),
+magicfit.fr (« conservez cet angle pendant tout le mouvement »), musculation.com (« pronation neutre »,
+« position neutre à légèrement en pronation »), getfitcraft.com (bent-arm : « palms turn to face the floor »).
+→ Le consensus des sites va dans le sens d'une ORIENTATION CONSTANTE, sans rotation active du poignet.
+`build/validation/COMPARAISON-orientation-halteres.png` : les deux options côte à côte, pour trancher.
+Rien de neuf assemblé ni intégré avant la réponse de l'utilisateur.
