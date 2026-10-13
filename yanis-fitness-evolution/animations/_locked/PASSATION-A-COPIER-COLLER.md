@@ -227,3 +227,40 @@ que chaque GIF est mesuré (coin de sol 225–240, saturation ≥ 22), présent�
 
 **Ensuite seulement**, on poursuit : compléter les exercices du programme qui n'ont **aucune** animation
 (≈ 91 côté élite au dernier décompte) — en respectant le protocole : **1 image fixe → accord → GIF**.
+
+---
+
+# AJOUT DU 13 OCTOBRE 2026 — À LIRE EN PREMIER APRÈS LES §1-§7
+
+## A. SI LE DOSSIER `animations/` EST ABSENT DU CLONE — NE RIEN RÉGÉNÉRER
+
+Le refspec de fetch d'une session peut être borné à `main` + la branche courante : les autres
+branches existent sur GitHub mais n'apparaissent pas dans `git branch -a`.
+Avant de conclure « tout est perdu » :
+```bash
+gh api repos/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/branches --paginate --jq '.[].name'
+git fetch origin 'refs/heads/arena/<ancienne-branche>:refs/remotes/origin/arena/<ancienne-branche>'
+git merge --ff-only origin/arena/<ancienne-branche>      # sur SA branche, sans force-push
+```
+Ensuite seulement, continuer.
+
+## B. MESURER LA MER SUR L'IMAGE ENTIÈRE, PAS SUR UNE BANDE
+
+Mesurer le bleu dans les 45 % du haut fait annoncer « pas de mer » sur 7 GIF parfaitement
+conformes : cette bande, c'est le **ciel**. Mesure correcte : `% de pixels bleus sur l'image entière`.
+Répère : les 19 GIF/poses déjà validés vont de **1,86 %** à **21,14 %** (médiane 8,7 %).
+
+## C. L'OUTIL DE MESURE EXISTE : `build/verifier-pose.py`
+
+Sol (coin bas-gauche) · saturation · mer · végétation · vert lime · muscles dorés.
+Il ne juge PAS la posture (le générateur redessine le fond à chaque pose : 30 à 60 % de
+l'image diffère entre deux poses pourtant conformes → aucune soustraction de fond n'est fiable).
+La posture se contrôle à l'œil, par l'utilisateur, sur la planche présentée.
+
+## D. ÉTAT À L'HEURE DE CET AJOUT
+
+· Dernière pose (abduction hanche M) : **faite, mesurée, présentée, NON intégrée**.
+· 17 GIF corrigés en attente, **mesurés** : 4 encore pâles (pallof 14,3 · abduction-assise 14,5 ·
+  squat-cycliste 14,8 · squat-PDC 15,2), 3 au coin de sol gris (bulgarian-CORRIGE · face-pull ·
+  pallof), 11 sans alerte. **Aucun régénéré, aucun intégré.**
+· Suite (~91 exercices sans animation côté élite) : **non commencée**, attend le feu vert.

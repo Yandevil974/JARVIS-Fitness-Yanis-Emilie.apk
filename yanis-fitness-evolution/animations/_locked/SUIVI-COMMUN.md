@@ -361,3 +361,44 @@ Le personnage, la pose et le cadrage restent intacts. C'est ce qui rend les 20 r
 Il assemble `A → M → B → M → A` avec les **délais officiels 25/20/50/20/25 cs**, vérifie le nombre d'images,
 la taille, et **mesure la saturation du décor** (cible E1 ≥ 22). Exemple produit :
 `build/EXEMPLE-leg-extension-5images-440x440.gif`.
+
+---
+
+# 9. 13 OCTOBRE 2026 — REPRISE SUR UNE NOUVELLE SESSION + FIN DES CORRECTIONS
+
+## 9.1 Le dépôt était vide d'`animations/` — rattrapé sans casse
+
+La branche de la session précédente (`arena/7a4a778b-…`) existait sur GitHub mais pas dans le clone
+(refspec de fetch borné à `main` + branche courante). Récupérée par fetch explicite puis
+**fast-forward** sur la branche de cette session. Le verrou, les poses et les 17 GIF en attente
+sont donc intacts et aussi présents ici. Aucune force-push, aucune branche supplémentaire.
+
+## 9.2 LA DERNIÈRE POSE EST FAITE — abduction hanche
+
+`build/corrections/abduction-hanche-elastique-3poses.gif` — 5 images 440×246, délais
+25/20/50/20/25, **328 Ko**, sol 229-235, saturation 40,1-42,3, mer 2,74-5,11 %, lime 0,00 %.
+2 candidats générés, CAND2 retenu sur mesures (sol 230 vs 218, mer 4,7 % vs 1,8 %, corrélation
+structurelle 0,760 avec la pose M source = le niveau des 2 autres poses). **NON INTÉGRÉ** :
+présenté, en attente de l'accord explicite.
+
+## 9.3 Les 17 GIF en attente ont été MESURÉS (90 mesures, 5 images par GIF)
+
+Outil réutilisable : `build/verifier-pose.py`.
+· **4 encore pâles** (saturation < 22, hors E1) : pallof-press 14,3 · abduction-assise 14,5 ·
+  squat-cycliste 14,8 · squat-poids-du-corps 15,2.
+· **3 dont le coin de sol reste gris** (< 215) : bulgarian-CORRIGE 195-198 · face-pull 196 ·
+  pallof 177-213 (réserve : coin probablement occupé par un objet, contrôle visuel à faire).
+· **11 sans alerte mesurée.**
+**Rien n'a été régénéré, rien n'a été intégré.** Ces 7 cas sont proposés à l'arbitrage.
+
+## 9.4 Piège de mesure à retenir
+
+Mesurer la mer **uniquement dans les 45 % du haut** faisait annoncer « pas de mer » sur 7 GIF.
+Sur l'image entière, ils sont tous dans la plage des GIF validés (1,86 % mini).
+La bande haute, c'est le **ciel**. Toujours mesurer la mer sur **l'image entière**.
+
+## 9.5 FIN DE MISSION (conditions du §7)
+
+Dernière pose faite, mesurée, présentée → **l'utilisateur est prévenu**.
+Les corrections sont terminées. La suite (~91 exercices sans animation côté élite) n'est **pas**
+commencée : elle attend le feu vert, avec le protocole 1 image fixe → accord → GIF.
