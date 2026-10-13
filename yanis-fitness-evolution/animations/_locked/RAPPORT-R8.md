@@ -78,9 +78,42 @@ Les 3 JPG affichés aujourd'hui par `WARMUP_IMAGES` (`src/data/visuals.js`) :
 
 Dessins pâles sur fond blanc : **hors cible E1 de très loin** (cible ≥ 22).
 
-## 5. STATUT DU MODULE 1
+## 5. STATUT DU MODULE 1 — ✅ INTÉGRÉ LE 13 OCTOBRE (accord explicite de l'utilisateur)
 
-**Visuels prêts et mesurés. NON INTÉGRÉS** — en attente du feu vert explicite.
-L'intégration touchera 5 endroits : `public/media/`, `release/media/`, les deux
-`media-index.json`, `src/data/visuals.js`, plus le bundle `release/assets/index-*.js`
-(à patcher **en binaire**, jamais en mode texte).
+Les 5 endroits ont été touchés :
+
+| Endroit | Ce qui a changé |
+|---|---|
+| `public/media/` | + 3 GIF (330 / 341 / 303 Ko) |
+| `release/media/` | + les 3 mêmes GIF |
+| `public/media-index.json` | 277 → **280** entrées |
+| `release/media-index.json` | 277 → **280** entrées |
+| `src/data/visuals.js` | `WARMUP_IMAGES` → les 3 nouveaux `.gif` |
+| `release/assets/index-BLZxzv9Y.js` | patch **binaire**, delta **−2 octets** |
+
+| Remplacement | Nouveau fichier |
+|---|---|
+| `/media/warmup-cardio.jpg` | `/media/4d6d57f97bdd691e.gif` |
+| `/media/warmup-mobilite.jpg` | `/media/6d278876a579cbc8.gif` |
+| `/media/warmup-series-approche.jpg` | `/media/0c5a8fe6ba79eb47.gif` |
+
+Noms de fichiers = **sha256 du contenu** (16 premiers caractères), comme le reste du dépôt.
+Vérifié : 0 collision avec les fichiers existants.
+
+### Contrôles après intégration (tous exécutés, pas supposés)
+
+| Contrôle | Résultat |
+|---|---|
+| `node --check` sur le bundle patché | **syntaxe JS valide** |
+| anciennes références dans le bundle | **0** (les 3) |
+| nouvelles références dans le bundle | **1 chacune** |
+| `npm test` | **94 passés / 0 échec** |
+| les 3 GIF servis par l'app | **HTTP 200 · image/gif** |
+| `media-index.json` | 280 entrées, les 3 présents des 2 côtés |
+
+**Les 3 JPG d'origine sont conservés** (aucune suppression : règle du verrou).
+
+### Trouvaille : un bundle mort
+
+`release/assets/index-D_-dR1q5.js` (1,36 Mo) n'est chargé par **aucun** `index.html`.
+Il s'agit d'un ancien build resté là. Non supprimé (règle : rien sans accord).

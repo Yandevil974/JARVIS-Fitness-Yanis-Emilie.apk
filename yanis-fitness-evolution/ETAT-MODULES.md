@@ -4,7 +4,8 @@ Ordre de travail demandé par l'utilisateur :
 **échauffement · étirement · musculation · fractionné · chronométrée · elliptique · piscine · tabata · aqua**
 
 Tous les chiffres sortent de `node scripts/audit-modules.mjs` (rejouable) et de
-`animations/_locked/build/verifier-pose.py`. Rien n'a été modifié dans l'app pendant ce check.
+`animations/_locked/build/verifier-pose.py`.
+Depuis ce check, le **module 1 a été intégré** (accord explicite) — voir §1.
 
 ## Santé générale (mesurée)
 
@@ -17,7 +18,7 @@ Tous les chiffres sortent de `node scripts/audit-modules.mjs` (rejouable) et de
 
 ---
 
-## 1. ÉCHAUFFEMENT — 🟢 visuels prêts (en attente du feu vert d'intégration)
+## 1. ÉCHAUFFEMENT — ✅ INTÉGRÉ LE 13 OCTOBRE 2026 (accord explicite de l'utilisateur)
 
 - **6 étapes** générées par `warmup()` (`src/engine/fitness.js`) : mise en route · mobilité ·
   activation · approche 1/2/3 → **100 % avec visuel et 100 % avec texte**. Le module marche.
@@ -37,9 +38,20 @@ Tous les chiffres sortent de `node scripts/audit-modules.mjs` (rejouable) et de
   premier plan. Le sol réel, mesuré par la couleur dominante, est à 242.
   Nouvelle métrique `sol_dom` ajoutée à `verifier-pose.py`, étalonnée sur les 19 images
   déjà validées (**219 → 253**). Les 3 GIF sont **dans cette plage** → aucun à refaire.
-- **NON INTÉGRÉS** : en attente de l'accord explicite. 5 endroits à toucher :
-  `public/media/`, `release/media/`, les deux `media-index.json`, `src/data/visuals.js`,
-  et le bundle `release/assets/index-*.js` (patch **binaire** obligatoire).
+- ✅ **INTÉGRÉS** le 13/10 (accord explicite). Les 5 endroits ont été touchés :
+  `public/media/` + `release/media/` (3 GIF), les deux `media-index.json` (277 → 280 entrées),
+  `src/data/visuals.js`, et le bundle `release/assets/index-BLZxzv9Y.js` patché **en binaire**
+  (delta −2 octets, `node --check` = syntaxe valide).
+
+| Remplacement | Nouveau fichier |
+|---|---|
+| `/media/warmup-cardio.jpg` | `/media/4d6d57f97bdd691e.gif` |
+| `/media/warmup-mobilite.jpg` | `/media/6d278876a579cbc8.gif` |
+| `/media/warmup-series-approche.jpg` | `/media/0c5a8fe6ba79eb47.gif` |
+
+Contrôles après intégration : `npm test` = **94 passés / 0 échec** · les 3 GIF servis en
+HTTP 200 (`image/gif`) · anciennes références restantes dans le bundle : **0**.
+Les 3 JPG d'origine sont **conservés** (aucune suppression).
 
 ## 2. ÉTIREMENT — ✅ complet
 
@@ -105,8 +117,7 @@ Couvert par `CARDIO_STEPS` (3 étapes elliptique + transition). Module Émilie :
 Modules **1, 2, 4, 6, 9** : fonctionnels. Modules **7** (reste les étapes « repos ») et **5** :
 corrects. Deux chantiers réels :
 
-1. **Module 1 — échauffement** : 3 visuels prêts et mesurés, **reste l'intégration** (feu vert).
-2. **Module 3 — musculation** : 86 exercices sans animation (le chantier principal).
-3. **Module 8 — tabata** : 37 mouvements animés avec un motif qui ne correspond pas.
+1. **Module 3 — musculation** : 86 exercices sans animation (le chantier principal).
+2. **Module 8 — tabata** : 37 mouvements animés avec un motif qui ne correspond pas.
 
-À traiter dans l'ordre demandé : intégrer le module 1 (feu vert), puis attaquer le module 3.
+**Module 1 terminé et intégré.** Suite dans l'ordre demandé : module 3 (musculation).

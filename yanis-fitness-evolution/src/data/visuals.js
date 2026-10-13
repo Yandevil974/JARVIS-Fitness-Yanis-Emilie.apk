@@ -47,9 +47,9 @@ export const POOL_STEP_IMAGES = {
   "Déplacements latéraux (4 m)": "/media/pool-deplacements-lateraux.jpg",
 };
 export const WARMUP_IMAGES = {
-  route: "/media/warmup-cardio.jpg",
-  mobilite: "/media/warmup-mobilite.jpg",
-  approche: "/media/warmup-series-approche.jpg",
+  route: "/media/4d6d57f97bdd691e.gif",
+  mobilite: "/media/6d278876a579cbc8.gif",
+  approche: "/media/0c5a8fe6ba79eb47.gif",
 };
 export const CARDIO_STEPS = [
   {
