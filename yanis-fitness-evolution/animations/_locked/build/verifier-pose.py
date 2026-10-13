@@ -91,6 +91,27 @@ def mesure(path):
     hsv = rgb_to_hsv(rgb)
     hu, sa, va = hsv[..., 0], hsv[..., 1], hsv[..., 2]
 
+    # --- sol DOMINANT : couleur majoritaire des pixels CLAIRS du bas.
+    # Le coin bas-gauche (18%x14%) n'est PAS fiable : sur plusieurs images il
+    # contient un objet de premier plan, une ombre ou le bord du cadre
+    # (mesure 147 au lieu de 225). On prend donc le plus gros groupe de pixels
+    # CLAIRS (>= 45% de luminosite) dans les 45% du bas : c'est le sol.
+    bas = rgb[int(H * 0.55):]
+    mask = va[int(H * 0.55):] >= 0.45
+    sel = bas[mask]
+    sol_dom = None
+    sol_dom_pct = 0
+    if len(sel) > 200:
+        # groupes de 8 niveaux, puis MOYENNE REELLE des pixels du groupe
+        # majoritaire (le centre de palier donnait 248 pour tout, trop grossier)
+        q = np.floor(sel * 255 / 8).astype(int)
+        flat = q[:, 0] * 1000000 + q[:, 1] * 1000 + q[:, 2]
+        vals, counts = np.unique(flat, return_counts=True)
+        keep = flat == vals[np.argmax(counts)]
+        m = sel[keep].mean(axis=0) * 255
+        sol_dom = (int(m[0]), int(m[1]), int(m[2]))
+        sol_dom_pct = round(100.0 * counts.max() / len(sel), 1)
+
     # --- mer : bleu dense dans les 45% du haut
     haut = slice(0, int(H * 0.45))
     bleu = ((hu > 185) & (hu < 260) & (sa > 0.18) & (va > 0.30))
@@ -110,6 +131,8 @@ def mesure(path):
     or_pct = round(100.0 * or_.mean(), 2)
 
     sat = round(hsl_saturation_mean(rgb), 1)
+    ok_soldom = ("OK" if sol_dom and CIBLE_SOL_R[0] <= sol_dom[0] <= CIBLE_SOL_R[1]
+                 else ("BAS" if sol_dom and sol_dom[0] < CIBLE_SOL_R[0] else "HAUT"))
 
     # --- verdicts
     ok_sol = "OK" if CIBLE_SOL_R[0] <= sol[0] <= CIBLE_SOL_R[1] else ("BAS" if sol[0] < CIBLE_SOL_R[0] else "HAUT")
@@ -117,12 +140,14 @@ def mesure(path):
     ok_mer = "OK" if mer_pct >= 3.0 else "FAIBLE"
     ok_veg = "OK" if veg_pct >= 3.0 else "FAIBLE"
     ok_lime = "OK" if lime_pct <= SEUIL_LIME else "LIME!"
-    verdict = "CONFORME" if (ok_sol == "OK" and ok_sat == "OK" and ok_mer == "OK"
+    verdict = "CONFORME" if (ok_soldom == "OK" and ok_sat == "OK" and ok_mer == "OK"
                              and ok_lime == "OK") else "A_CONTROLER"
 
     return {
         "fichier": os.path.basename(path), "taille": f"{w}x{h}",
-        "sol": f"{sol[0]} {sol[1]} {sol[2]}", "sol_ok": ok_sol,
+        "sol_coin": f"{sol[0]} {sol[1]} {sol[2]}", "sol_coin_ok": ok_sol,
+        "sol_dom": f"{sol_dom[0]} {sol_dom[1]} {sol_dom[2]}" if sol_dom else "-",
+        "sol_dom%": sol_dom_pct if sol_dom else 0, "sol_ok": ok_soldom,
         "sat": sat, "sat_ok": ok_sat,
         "mer%": mer_pct, "merH%": mer_haut_pct, "mer_ok": ok_mer,
         "veg%": veg_pct,
@@ -174,8 +199,8 @@ def main():
         except Exception as e:
             print(f"ERREUR {f}: {e}", file=sys.stderr)
 
-    cols = ["fichier", "taille", "sol", "sol_ok", "sat", "sat_ok", "mer%", "merH%", "mer_ok",
-            "veg%", "lime%", "lime_ok", "or%", "verdict"]
+    cols = ["fichier", "taille", "sol_dom", "sol_dom%", "sol_ok", "sol_coin", "sol_coin_ok",
+            "sat", "sat_ok", "mer%", "merH%", "mer_ok", "veg%", "lime%", "lime_ok", "or%", "verdict"]
     if csv_out:
         with open(csv_out, "w", newline="") as fh:
             w = csv.DictWriter(fh, fieldnames=cols); w.writeheader()

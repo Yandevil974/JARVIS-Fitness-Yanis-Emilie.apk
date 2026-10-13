@@ -17,24 +17,29 @@ Tous les chiffres sortent de `node scripts/audit-modules.mjs` (rejouable) et de
 
 ---
 
-## 1. ÉCHAUFFEMENT — 🟠 fonctionnel, mais visuels hors style verrouillé
+## 1. ÉCHAUFFEMENT — 🟢 visuels prêts (en attente du feu vert d'intégration)
 
 - **6 étapes** générées par `warmup()` (`src/engine/fitness.js`) : mise en route · mobilité ·
   activation · approche 1/2/3 → **100 % avec visuel et 100 % avec texte**. Le module marche.
-- Visuels utilisés : `WARMUP_IMAGES` = 3 JPG (`warmup-cardio`, `warmup-mobilite`,
-  `warmup-series-approche`).
-- ⚠️ **Ces 3 JPG sont hors cible E1**, mesuré :
+- Visuels utilisés aujourd'hui : 3 JPG **hors cible E1 de très loin**
+  (saturation **4,1 / 6,3 / 8,5**, mer 0,1-0,8 %, aucune végétation, sol blanc 254).
+- ✅ **3 GIF conformes existent** (`warmup-route`, `warmup-mobilite`, `warmup-approche`),
+  remontés au format app et mesurés :
 
-| Fichier affiché | Saturation | Mer | Végétation | Sol |
-|---|---|---|---|---|
-| `warmup-cardio.jpg` | **4,1** (cible ≥ 22) | 0,57 % | 0,0 % | 254 (blanc) |
-| `warmup-mobilite.jpg` | **6,3** | 0,75 % | 0,0 % | 254 (blanc) |
-| `warmup-series-approche.jpg` | **8,5** | 0,11 % | 0,01 % | 243 |
+| GIF | Poids | Saturation | Mer | Lime | Sol (dominant) |
+|---|---|---|---|---|---|
+| `warmup-route-3poses-APP.gif` | 324 Ko | 46,4 | 6,67 % | 0,0 % | 251 243 219 |
+| `warmup-mobilite-3poses-APP.gif` | 336 Ko | 29,4 | 21,11 % | 0,0 % | 242 237 227 |
+| `warmup-approche-3poses-APP.gif` | 296 Ko | 40,8 | 7,50 % | 0,0 % | 251 243 218 |
 
-- ✅ **3 GIF d'échauffement existent déjà** dans `animations/_audit/2026-10-11/gif/themeA/`
-  (`warmup-route`, `warmup-mobilite`, `warmup-approche`) — **jamais intégrés**.
-  Mesurés : saturation 30,8 / 42,3 / 49,2 (conforme E1), mer 6,8 % / 7,6 % / 21,8 %.
-  Sol : 219 / 166 / 243 → à reprendre (cible 225-240).
+- ⚠️ Correction de mesure (détail : `_locked/RAPPORT-R8.md`) : j'avais d'abord annoncé
+  « mobilite à refaire (sol 166) ». **Faux** : le coin bas-gauche tombait sur un objet de
+  premier plan. Le sol réel, mesuré par la couleur dominante, est à 242.
+  Nouvelle métrique `sol_dom` ajoutée à `verifier-pose.py`, étalonnée sur les 19 images
+  déjà validées (**219 → 253**). Les 3 GIF sont **dans cette plage** → aucun à refaire.
+- **NON INTÉGRÉS** : en attente de l'accord explicite. 5 endroits à toucher :
+  `public/media/`, `release/media/`, les deux `media-index.json`, `src/data/visuals.js`,
+  et le bundle `release/assets/index-*.js` (patch **binaire** obligatoire).
 
 ## 2. ÉTIREMENT — ✅ complet
 
@@ -100,8 +105,8 @@ Couvert par `CARDIO_STEPS` (3 étapes elliptique + transition). Module Émilie :
 Modules **1, 2, 4, 6, 9** : fonctionnels. Modules **7** (reste les étapes « repos ») et **5** :
 corrects. Deux chantiers réels :
 
-1. **Module 3 — musculation** : 86 exercices sans animation (le chantier principal).
-2. **Module 8 — tabata** : 37 mouvements animés avec un motif qui ne correspond pas.
+1. **Module 1 — échauffement** : 3 visuels prêts et mesurés, **reste l'intégration** (feu vert).
+2. **Module 3 — musculation** : 86 exercices sans animation (le chantier principal).
+3. **Module 8 — tabata** : 37 mouvements animés avec un motif qui ne correspond pas.
 
-À traiter dans l'ordre demandé : d'abord terminer proprement le module 1 (remplacer les 3 JPG
-hors style par les 3 GIF existants, sol à reprendre), puis attaquer le module 3.
+À traiter dans l'ordre demandé : intégrer le module 1 (feu vert), puis attaquer le module 3.
