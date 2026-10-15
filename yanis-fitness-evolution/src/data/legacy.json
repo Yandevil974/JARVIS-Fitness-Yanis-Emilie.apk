@@ -19577,6 +19577,18 @@
    "Respiration diaphragmatique": {
     "img": "/media/88b4b38fc22d6f0c.gif",
     "tip": "💡 Inspirer 4 secondes et expirer 6 secondes, sans apnée."
+   },
+   "Développé couché barre": {
+    "img": "/media/acbab53a64c18aab.gif",
+    "tip": "💡 Barre au-dessus des pectoraux, descente contrôlée."
+   },
+   "Tractions prise large": {
+    "img": "/media/d36d738b07fe1305.gif",
+    "tip": "💡 Menton vers la barre, descente contrôlée."
+   },
+   "Fentes barre": {
+    "img": "/media/6baa655d39de069e.gif",
+    "tip": "💡 Buste haut, genou avant dans l'axe du pied."
    }
   },
   "EMBEDDED_PHOTOS": {
