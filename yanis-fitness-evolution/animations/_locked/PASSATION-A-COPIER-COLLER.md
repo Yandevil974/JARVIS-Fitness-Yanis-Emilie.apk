@@ -1,266 +1,271 @@
-# PASSATION — À COPIER-COLLER
-## JARVIS Fitness (Yanis & Émilie) — état au 11 octobre 2026
+# PASSATION — JARVIS Fitness (Yanis & Émilie) — version du 15 octobre 2026
 
-**Branche unique : `arena/7a4a778b-jarvis-fitness-yanis-emilie-ap`**
-Ne jamais créer une autre branche. Tous les agents travaillent ici, pour la continuité et la cohérence du projet.
-Avant d'écrire : `git fetch` puis `git pull` (branche partagée). **Jamais de force-push.**
-
-À lire avant de produire quoi que ce soit :
-- `yanis-fitness-evolution/animations/_locked/REFERENCE-VERROUILLEE.md` → le verrou, les règles
-- `yanis-fitness-evolution/animations/_locked/SUIVI-COMMUN.md` → l'état vérifié, les mesures, la méthode
-- `yanis-fitness-evolution/animations/_locked/GALERIE.html` → tout voir en images (à ouvrir dans un navigateur)
+> **Mode d'emploi** : colle tout ce fichier dans un nouveau chat, en premier message.
+> Il contient la mission, l'ordre de travail, l'état exact mesuré et les règles non négociables.
+> **Cette version remplace celle du 13/10** (corrections : branche réelle, ancre du bundle,
+> runtime portable, pièges de sandbox).
 
 ---
 
-# 1. L'URGENCE — À COMPRENDRE EN PREMIER
+## ⚠ POINT D'ATTENTION IMMÉDIAT (à traiter en premier)
 
-**On ne fabrique pas un musée de GIF. On livre une application rapide, fonctionnelle et performante.**
-
-- **Rapide** : l'app doit s'ouvrir et répondre instantanément sur un téléphone. Un GIF qui pèse 3 Mo est un échec.
-- **Fonctionnelle** : chaque exercice du programme doit avoir son animation **et** son texte-clé.
-- **Performante** : les GIF restent **sous 600 Ko** (les nôtres font 270–330 Ko : ne pas dépasser).
-
-**Règle d'arbitrage, en cas de doute : entre « plus beau » et « l'app qui marche », on livre l'app qui marche.**
-**Ne jamais bloquer l'application entière à cause d'un GIF.** Le GIF se corrige après, en série.
-
-**Ordre imposé : finir les corrections des animations AVANT de poursuivre autre chose.**
+**3 GIF du lot 1 musculation sont PRÊS, PRÉSENTÉS et NON INTÉGRÉS.** Ils attendent un
+feu vert **explicite en toutes lettres** (ex. « OK intégration des 3 GIF »).
+Un « Y » isolé = RELANCER LE CHAT, ce n'est **PAS** une validation (règle de l'utilisateur,
+répétée le 15/10). Ne rien intégrer tant que la phrase n'est pas claire.
 
 ---
 
-# 2. LES REVENDICATIONS DE L'UTILISATEUR — NON NÉGOCIABLES
+## 1. LA MISSION
 
-## 2.1 Le personnage est FIGÉ. Intouchable.
-Mannequin 3D **très musclé**, corps **blanc/argent mat**, **visage noir sans traits**, **casquette blanche**,
-**short noir**, **baskets blanches**, muscles travaillés en **jaune-orangé doré**.
-Référence unique et définitive : `_locked/reference/00-ATHLETE-REFERENCE-utilisateur-2026-10-11.jpg`
-→ **Jamais de redessin. Jamais de substitution. Jamais de « version alternative » du personnage.**
-→ Le générateur d'image **redessine l'athlète** : vérifier qu'il n'a pas changé de silhouette, d'échelle ni d'accessoire entre les poses.
+Terminer l'app de fitness JARVIS (musculation, natation, cardio, aqua) pour Yanis et Émilie.
 
-## 2.2 Le décor est FIGÉ : terrasse vue sur mer.
-- **Mer bleue dense, bien visible à l'horizon** (pas une bande pâle)
-- **Végétation dense** : palmiers, plantes en pot nombreuses
-- **Lumière dorée** / chaude
-- **Muret bas** présent mais secondaire
-- **Sol : sablé clair** — voir règle 2.3 (c'est une revendication explicite de l'utilisateur)
+Trois objectifs, dans cet ordre de priorité :
 
-**INTERDITS ABSOLUS** : salle de sport, parquet, mur intérieur, miroir, fond gris,
-petits pavés gris à joints sombres, décor pâle/délavé.
-
-## 2.3 Le sol doit être SABLÉ CLAIR — défaut signalé par l'utilisateur
-> « **le sol n'est plus couleur sablé** »
-
-**Cible mesurée : `232 211 188`** (R V B), soit de **grandes dalles lisses crème/sablé très clair**, joints discrets.
-Ce n'est pas un détail esthétique : c'est une exigence de fidélité.
-
-**Mesure de contrôle obligatoire — au COIN DE SOL uniquement** (bas-gauche, sans tapis ni machine) :
-```bash
-convert "GIF[0]" -coalesce -gravity SouthWest -crop 18%x14%+0+0 +repage -resize 60x \
-  -format "%[fx:int(255*mean.r)] %[fx:int(255*mean.g)] %[fx:int(255*mean.b)]" info:
-```
-**Mesure au coin de sol** — ⚠️ **uniquement fiable sur les exercices DEBOUT.**
-Sur les exercices **au sol** (clamshell, fire hydrant, gainage, pompes, pont fessier), le coin contient le
-**tapis noir** → la mesure tombe à 170-230 alors que le sol est bon. **Dans ce cas, le contrôle VISUEL fait foi**.`
-
-**Seuil : le rouge doit être ≈ 225–240.** En dessous de 215 → le sol est trop gris → **à refaire**.
-
-⚠️ **Ne jamais mesurer sur le tiers bas entier** : le tapis noir et les machines faussent la moyenne
-(ex. mesure 145 alors que le vrai sol est à 224). **Le coin de sol est le seul endroit fiable.**
-
-## 2.4 Les couleurs
-- Muscles travaillés : **jaune-orangé doré** (jamais vert lime, jamais rouge)
-- Mer : **bleu dense**
-- Sol : **sablé clair**
-Le **vert lime** appartient à un ancien style abandonné (corpus « refonte-photo ») : **ne jamais le réintroduire**.
-
-## 2.5 Le protocole de validation — non négociable
-1. **Un nouvel exercice = UNE image fixe d'abord.** On génère/compose **une seule** image fixe, **on la montre**, et **on attend l'accord explicite** avant de produire le GIF.
-2. **Chaque GIF est présenté** à l'utilisateur avant intégration.
-3. **Un « Y » isolé ne vaut PAS validation.** Seul un accord explicite compte (« oui », « ok », « vas-y », « je valide »).
-4. **Rien n'entre dans l'application sans feu vert explicite.**
-5. **Ne jamais régénérer un GIF conforme.**
+1. **L'app doit marcher et être rapide.** On ne bloque JAMAIS la livraison pour un GIF.
+2. **Corriger les décors et animations** (sol sablé clair, décor terrasse mer, athlète figé).
+3. **Compléter les exercices qui n'ont pas d'animation** (le gros chantier).
 
 ---
 
-# 3. LES 10 ERREURS À NE PAS COMMETTRE (toutes déjà commises une fois)
+## 2. OÙ EST LE CODE
 
-1. **Réaligner sur le décor pâle.** Un ancien plan (`PLAN-CORRECTION.md`) proposait de réaligner 33 GIF sur le décor pâle du front squat. **C'est faux.** La cible est le décor **dense** des 1ers GIF validés. Lire la bannière du fichier.
-2. **Mesurer le sol sur le tiers bas.** Donne des chiffres faux (145 au lieu de 224). → **Coin de sol.**
-3. **Prendre votre fichier joint comme référence de sol.** Il est recadré serré sur l'athlète : son sol mesure 162. La vraie référence de sol est `reference/05-SOL-CIBLE-1er-GIF-valide.png`.
-4. **Juger un GIF sans le coalescer.** `identify` brut affiche des frames `1×1` fantômes → faux diagnostics de « GIF cassé ». Toujours : `convert gif -coalesce`.
-5. **Annoncer des chiffres non mesurés.** Les annonces « 36 puis 33 puis 21 GIF cassés » étaient **fausses**. Ne jamais annoncer un chiffre sans l'avoir mesuré, et **corriger publiquement** en cas d'erreur.
-6. **`-delay` doit précéder CHAQUE image** dans ImageMagick, sinon les durées sont fausses. Utiliser l'outil fourni, il est testé.
-7. **Éditer un bundle JS en mode texte.** Python convertit les fins de ligne et corrompt le fichier silencieusement (12 Ko perdus une fois). Lire/écrire en **binaire** (`rb`/`wb`) et **vérifier que le delta d'octets vaut exactement la taille ajoutée**.
-8. **Mutualiser deux exercices sur une animation.** « Bulgarian split squat » et « Bulgarian split squat haltères » sont **2 exercices distincts** (ils partageaient `cf312b839f6da027.gif` — corrigé). Règle : **1 exercice = 1 animation**.
-9. **Croire que `/tmp` survit.** Il est purgé régulièrement. Tout ce qui compte va **dans le dépôt**. Avant toute génération, recopier les références depuis le dépôt.
-10. **Utiliser l'ancien `public/media` ou le corpus « refonte-photo » (salle, vert lime) comme référence.** Jamais.
-
----
-
-# 4. OÙ SONT LES CHOSES
-
-| Quoi | Où |
-|---|---|
-| Le verrou (règles + décision décor) | `animations/_locked/REFERENCE-VERROUILLEE.md` |
-| L'état vérifié (mesures, méthode, rétractations) | `animations/_locked/SUIVI-COMMUN.md` |
-| Tout voir en images | `animations/_locked/GALERIE.html` |
-| La queue chiffrée des GIF à corriger | `animations/_locked/QUEUE-CORRECTION.tsv` |
-| **L'outil d'assemblage** | `animations/_locked/build/faire-gif.sh` |
-| Les GIF corrigés (en attente d'accord) | `animations/_locked/build/corrections/` |
-| Les poses PNG déjà refaites en sablé | `animations/_locked/build/corrections/_poses-sable/` |
-| Références et verrous | `animations/_locked/reference/` |
-| Guides de l'app (clé → GIF) | `src/data/legacy.json` (fusion `elite` + `emilie`) |
-| Résolution dans l'app | `src/data/library.js` |
-| Build livré | `release/` (guides inlinés dans `release/assets/index-BLZxzv9Y.js`) |
-
-**Modules de reprise rapide :**
-```bash
-cd yanis-fitness-evolution && npm ci && npm test    # 96 tests, 0 échec attendu
-# assembler un GIF (l'outil contrôle le décor tout seul) :
-./animations/_locked/build/faire-gif.sh A.png M.png B.png 440x246 sortie.gif
-# combien d'exercices sans animation :
-node --input-type=module -e "import {EXERCISES} from './src/data/library.js';
-console.log(EXERCISES.filter(e=>!e.gif).length, 'sans GIF');"
-```
+- Dépôt : `/home/user/JARVIS-Fitness-Yanis-Emilie.apk` (dossier `yanis-fitness-evolution/`)
+- **La branche qui contient TOUT le travail : `arena/f60f808f-jarvis-fitness-yanis-emilie-ap`**
+  (au 15/10 : commit `3f59dab`).
+- ⚠ **Une nouvelle session Arena repart du clone vierge de `main`.** Au démarrage :
+  `git fetch origin arena/f60f808f-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD`
+  puis `cd yanis-fitness-evolution && npm install` et
+  `pip3 install --break-system-packages numpy pillow`.
+- **Pousser CHAQUE commit immédiatement** (`git push origin <votre branche de session>`).
+  La sandbox est réinitialisée sans prévenir (déjà 3 fois) : `.git` revient au clone vierge,
+  `node_modules`, `numpy/pillow` et `/tmp` disparaissent. **Un travail non poussé = perdu**
+  (3 images validées ont été perdues comme ça le 15/10).
+- Ne JAMAIS créer d'autre branche, jamais de force-push, ne pousser que sur votre branche
+  de session (celle du sandbox). L'ancienne branche `arena/b4c56c3f-…` est historique
+  (elle s'arrête au commit `558ddf3`) : ne pas y pousser.
+- Lancer l'app : `cd yanis-fitness-evolution && npm install && npm run dev` (port 5173).
+- Tests : `npm test` → attendu **96 tests · 94 passés · 0 échec · 2 ignorés**.
 
 ---
 
-# 5. LA RECETTE QUI FONCTIONNE (pour corriger un décor)
+## 3. ORDRE DE TRAVAIL IMPOSÉ (à respecter strictement)
 
-Un décor se corrige **sans jamais toucher à l'athlète** :
+Module par module, dans cet ordre ; **terminer un module avant le suivant**.
+Mesurer l'état réel avant de proposer quoi que ce soit.
 
-1. **Extraire les poses existantes** du GIF à corriger :
-   `convert "ancien.gif" -coalesce -scene 0 "pose-%d.png"`
-2. **Générer chaque pose** avec le générateur d'image en passant **2 images** :
-   - **image 1** = la pose existante (l'athlète à conserver **tel quel**) ;
-   - **image 2** = `reference/05-SOL-CIBLE-1er-GIF-valide.png` (la référence de décor).
-   Et demander explicitement : *« ONE SINGLE CONTINUOUS BACKGROUND, BRIGHTLY LIT, no collage, no patchwork,
-   no lighter rectangles, no visible seams. Large smooth pale cream/sandy flagstones, very light warm sandy beige,
-   NOT grey, NOT dark, NOT small cobblestones with dark grout lines »*.
-   → Cette formulation a corrigé les **artefacts en rectangles plus clairs** du gainage planche.
-3. **Vérifier chaque pose** : coin de sol ≈ 225–240 en rouge, saturation ≥ 22, athlète inchangé.
-4. **Assembler** : `./faire-gif.sh A.png M.png B.png 440x246 sortie.gif`
-   — donne 5 images, délais `25 20 50 20 25` centisecondes (vérifié).
-5. **Présenter** le GIF à l'utilisateur. **Attendre l'accord.** Puis intégrer.
-
-**Limite : 10 générations d'images par tour.** Les poses déjà générées sont **conservées dans le dépôt**
-(`build/corrections/_poses-sable/`) : un tour suivant ne repaie que ce qui manque.
-
----
-
-# 6. ÉTAT EXACT DES CORRECTIONS (honnête, vérifié)
-
-## 6.1 Intégré dans l'application — 9 exercices
-| Exercice | Média | Sol |
+| # | Module | État au 15/10/2026 |
 |---|---|---|
-| Front squat | `08e001311b255115.gif` | 237 |
-| Fentes bulgares haltères (pied avant surélevé) | `81d9dc9b0652b954.gif` | 242 |
-| Leg extension | `4a75246261f34b24.gif` | (machine) |
-| Bulgarian split squat | `f183700b3362f93b.gif` | 224 |
-| Bulgarian split squat haltères | `493af81454d9f86c.gif` | — |
-| Goblet squat | `33d8d73dda8abb5b.gif` | — |
-| Leg press | `d7bd0092279c8789.gif` | 234 |
-| Back squat (charge modérée) | `8dcad3315ed67aa3.gif` | 228 |
-| Presse à cuisses pieds hauts | `73b7bb33f4a9d6df.gif` | 226 |
-| Step-up sur banc (hauteur du genou) | `0e32e3e5fab9f6f6.gif` | 223 |
+| 1 | Échauffement | ✅ TERMINÉ ET INTÉGRÉ |
+| 2 | Étirement | 🟢 OK — 100 % des visuels (29) |
+| 3 | **Musculation** | 🔴 **EN COURS** — lot 1 (3 polyarticulaires) : 3 GIF prêts à intégrer · puis 85 autres exercices à animer |
+| 4 | Fractionné | 🟢 OK |
+| 5 | Chronométrée | 🔴 19 étapes piscine sans visuel |
+| 6 | Elliptique | 🟢 OK |
+| 7 | Piscine | 🔴 135 étapes sans visuel |
+| 8 | Tabata | 🔴 48 mouvements, 0 % de visuel, motifs attribués non conformes |
+| 9 | Aqua | 🟢 OK (77 étapes, 100 %) |
 
-## 6.2 Corrigé et prêt, en attente d'accord utilisateur
-`back-squat-charge-moderee` (229) · `step-up` (224) · `bulgarian split squat` (224) · `leg press` (234) ·
-`bulgarian haltères` (228) · `goblet squat` (224) · `squat cycliste` (219) · `abduction assise` (240) ·
-`pallof press` (213) · `squat poids du corps` (235) · **`pompes` (219)** · **`pont-fessier-activation` (233)**
-
-## 6.3 RESTE À CORRIGER — **1 SEULE POSE** (le travail à finir avant toute autre chose)
-Les 9 exercices qui restaient ont été traités. **Il ne manque plus qu'une pose :**
-
-| Exercice | État |
-|---|---|
-| **abduction hanche** | poses A et B **bonnes** (sol 236 / 230, athlète DEBOUT, mains sur les hanches). La **pose M est fausse** : le générateur a produit un athlète **allongé sur le côté** (autre exercice). → **régénérer UNIQUEMENT la pose M** |
-
-**Ce qui a été terminé** (sol sablé, contrôlé visuellement, sans artefacts) :
-gainage planche · clamshell · fire hydrant · pompes · pont-fessier-activation · face-pull ·
-bulgarian haltères · goblet squat · squat cycliste · abduction assise · pallof press · squat poids du corps ·
-bulgarian split squat · leg press · back squat charge modérée · presse à cuisses · step-up
-
-### Comment finir (1 génération suffit)
-Source de la pose M : `animations/_audit/2026-10-11/gif/themeA/abduction-hanche-elastique-3poses.gif` (image 1).
-Référence décor : `reference/05-SOL-CIBLE-1er-GIF-valide.png`.
-**Imposer dans le prompt** : *« the athlete is STANDING UPRIGHT, front-facing, both hands on the hips, one leg
-lifted straight out to the side, do NOT lie him down, do NOT change the exercise or the camera angle »*.
-Puis :
-```bash
-./animations/_locked/build/faire-gif.sh abduction-hanche-0.png abduction-hanche-1.png abduction-hanche-2.png \
-  440x246 abduction-hanche-elastique-3poses.gif
-```
-Les poses A et B sont dans `build/corrections/_poses-sable/abduction-hanche-elastique-{0,2}.png`.
-⚠️ Le quota est de **10 générations d'images par tour** : c'est la seule raison pour laquelle cette pose reste.
-
-→ **Après cette pose : les corrections sont TERMINÉES, et il faut prévenir l'utilisateur.**
-
-## 6.4 Conformes — NE PAS Y TOUCHER (18)
-lot1 dead-bug / bird-dog / gainage-latéral · lot2 dead-bug-rotation / gainage-latéral-dyn / mountain-climbers ·
-lot3 circuit-abdos / circuit-gainage · lot4 développé haltères plat / plat-neutre / décliné-neutre ·
-lot5 incliné-30 / incliné-45 / incliné-45-prise-neutre ·
-themeA mobilité-des-épaules / respiration-diaphragmatique / hip-thrust-unilateral / fentes-arrière-pdc
+**Module en cours = 3 (musculation).** Ne pas attaquer le 8 avant.
 
 ---
 
-# 7. CONSIGNES DE TRAVAIL — POUR CHAQUE AGENT
+## 4. RÈGLES INCONTOURNABLES — À NE JAMAIS ENFREINDRE
 
-1. **Une seule branche** : `arena/7a4a778b-jarvis-fitness-yanis-emilie-ap`. On s'y réfère et on la complète.
-   Pas de branche parallèle, pas de divergence : **la continuité et la cohérence du projet en dépendent.**
-2. `git fetch` **avant** d'écrire. Branche partagée entre plusieurs sessions : le local peut avoir du retard.
-   Si le distant a avancé : `git reset --hard origin/...` puis ré-appliquer son travail. **Jamais de force-push.**
-3. **Mesurer avant d'annoncer.** Chaque chiffre publié doit venir d'une commande réellement exécutée.
-4. **Écrire dans le suivi** : ce qui est fait, ce qui est mesuré, ce qui reste. Les autres agents en dépendent.
-5. **Ne pas multiplier les questions** à l'utilisateur : l'urgence est l'application. Mais **ne jamais intégrer
-   sans accord explicite** et **ne jamais prendre un « Y » seul pour une validation**.
-6. **Toujours présenter** un GIF avant de l'intégrer. Toujours.
-7. Si un outil échoue (chemin, quota, sandbox réinitialisé) : **le dire**, et continuer sur ce qui est possible.
+### 4.1 Protocole de validation (non négociable)
+
+1. Pour un nouvel exercice : produire d'abord **1 image fixe** (par lot de 3 exercices :
+   présenter les 3 images fixes d'un coup).
+2. Attendre un **accord EXPLICITE en toutes lettres** de l'utilisateur.
+3. Seulement ensuite produire le GIF (format app : 5 images **A → M → B → M → A**).
+4. **Chaque GIF est présenté AVANT intégration.**
+5. **Un « Y » isolé = relancer le chat. Ce n'est PAS une validation.** Rien n'entre
+   dans l'app sans feu vert explicite. L'utilisateur l'a rappelé lui-même le 15/10.
+6. **Ne jamais régénérer un GIF/une pose déjà conforme.**
+7. Protocole courant validé par l'utilisateur : **par lot de 3 exercices**, 3 images fixes
+   → accord → 3 GIF → présentation → accord → intégration.
+
+### 4.2 L'athlète est FIGÉ — intouchable
+
+Mannequin 3D très musclé, corps blanc/argent **mat**, **visage noir sans traits**,
+**casquette blanche**, **short noir**, **baskets blanches**, **muscles jaune-orangé doré**.
+
+- Référence unique : `animations/_locked/reference/00-ATHLETE-REFERENCE-utilisateur-2026-10-11.jpg`
+- Vérifier silhouette, échelle, accessoires et muscles à chaque génération
+  (contrôle « masse musculaire » déjà demandé : planche
+  `animations/_locked/PLANCHE-MUSCULATURE-controle-2026-10-13.jpg`, ratios cuisses/tête
+  ≥ à la référence = pas de perte).
+
+### 4.3 Le décor est FIGÉ — décor « E1 » (dense)
+
+Terrasse vue mer : **mer bleue dense** à l'horizon, **végétation dense** (palmiers, plantes
+en pot), **lumière dorée**, muret bas secondaire. Saturation cible **22 à 47**.
+
+**INTERDITS** : salle, parquet, mur intérieur, miroir, fond gris, petits pavés gris à joints
+sombres, décor pâle (saturation < 22). → **Ne jamais réaligner sur le décor PÂLE.**
+
+### 4.4 Le sol doit être sablé clair
+
+- Cible : **232 211 188** (R, V, B) — plage validée **219–253** sur la colonne `sol_dom`.
+- En dessous de 215 en rouge → à refaire. Sur les exercices au sol, le contrôle visuel fait foi.
+
+### 4.5 Les couleurs
+
+- Muscles : **jaune-orangé doré** (JAMAIS vert lime, jamais rouge). Mer : **bleue dense**. Sol : **sablé clair**.
+
+### 4.6 Autres règles
+
+- **1 exercice = 1 animation.** Jamais de mutualisation d'un GIF entre deux exercices.
+- **Avant toute proposition**, vérifier les poses sur des sites de fitness de référence
+  (posture, amplitude, prise, angle, matériel) **et** l'athlète, le décor et la couleur.
+  **Consigner les références consultées.**
+- Si l'agent a la vision (les images s'affichent via `read_file`) : **vérifier soi-même**
+  chaque image avant de présenter (pose, prise, athlète, décor). Ne jamais prétendre avoir
+  vu ce qui n'a pas pu être vu ; sinon substituts : mesures chiffrées + NCC + planche.
 
 ---
 
-# 8. FIN DE MISSION
+## 5. LES OUTILS (déjà écrits, dans le dépôt)
 
-**Les corrections sont terminées quand :** il ne reste **aucun** exercice de la liste du § 6.3,
-que chaque GIF est mesuré (coin de sol 225–240, saturation ≥ 22), présenté, et validé.
+| Outil | Emplacement | Ce qu'il fait |
+|---|---|---|
+| Mesure d'image | `animations/_locked/build/verifier-pose.py` | Mesure `sol_dom`, saturation, mer, végétation, lime, muscles dorés. Ne juge PAS la posture. (`--frames` pour les GIF.) |
+| Compteur manquant | `animations/_locked/build/lister-sans-animation.py` | Exercices sans animation (`--liste`, `--json`). Reproduit la résolution de `library.js`. |
+| Audit des 9 modules | `scripts/audit-modules.mjs` | `node scripts/audit-modules.mjs` |
+| Fabrication GIF | `animations/_locked/build/faire-gif.sh` | `./faire-gif.sh A.png M.png B.png 440x246 sortie.gif` (depuis `_locked/build/`). Délais 25/20/50/20/25 cs. |
+| État des modules | `ETAT-MODULES.md` | Tableau de bord |
+| Assemblage libellés | `convert -font DejaVuSans-Bold.ttf -annotate` | `montage -label` échoue (police helvetica absente). |
 
-**Quand c'est fait : prévenir l'utilisateur.** C'est lui qui l'a demandé explicitement.
-
-**Ensuite seulement**, on poursuit : compléter les exercices du programme qui n'ont **aucune** animation
-(≈ 91 côté élite au dernier décompte) — en respectant le protocole : **1 image fixe → accord → GIF**.
+⚠ `verifier-pose.py` exige **numpy** + **pillow**
+(`pip3 install --break-system-packages numpy pillow`) — **à réinstaller après chaque
+réinitialisation de sandbox**, comme `npm install`.
+`npm run build:portable` exige esbuild : `npm install --no-save esbuild`.
 
 ---
 
-# AJOUT DU 13 OCTOBRE 2026 — À LIRE EN PREMIER APRÈS LES §1-§7
+## 6. COMMENT INTÉGRER UN GIF DANS L'APP — LES 5 ENDROITS (+ 1)
 
-## A. SI LE DOSSIER `animations/` EST ABSENT DU CLONE — NE RIEN RÉGÉNÉRER
+Procédure exacte, déjà utilisée à plusieurs reprises.
 
-Le refspec de fetch d'une session peut être borné à `main` + la branche courante : les autres
-branches existent sur GitHub mais n'apparaissent pas dans `git branch -a`.
-Avant de conclure « tout est perdu » :
-```bash
-gh api repos/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/branches --paginate --jq '.[].name'
-git fetch origin 'refs/heads/arena/<ancienne-branche>:refs/remotes/origin/arena/<ancienne-branche>'
-git merge --ff-only origin/arena/<ancienne-branche>      # sur SA branche, sans force-push
-```
-Ensuite seulement, continuer.
+1. **Copier le GIF dans `public/media/` ET `release/media/`**
+   → nom = **sha256 du contenu, 16 premiers caractères** (`sha256sum f.gif | cut -c1-16`).
+   Vérifier l'absence de collision de nom.
+2. **Régénérer `public/media-index.json`** : liste JSON plate, **TRIÉE**, chemins préfixés `/`,
+   en JSON compact (`separators=(",",":")`), en parcourant `public/` en excluant
+   `runtime.js`, `runtime.css`, `media-index.json`. Puis **copier le même fichier** vers
+   `release/media-index.json`.
+   ⚠ `npm run build:portable` réécrit ce fichier **NON TRIÉ** : toujours re-trier après.
+3. **Ajouter le guide dans `src/data/legacy.json`** :
+   - exercices **élite** → `elite.MUSCU_GUIDES` · exercices **Émilie** → `emilie.MUSCU_GUIDES`
+   - `"Nom de l'exercice": {"img": "/media/<sha256>.gif", "tip": "💡 Conseil court."}`
+   - édition **uniquement** via `json.load` / `json.dumps(..., ensure_ascii=False, indent=1)`
+     (aller-retour sans perte ; c'est le seul format à utiliser).
+4. **Patcher le bundle `release/assets/index-BLZxzv9Y.js` EN BINAIRE** (jamais en texte :
+   UTF-8 avec emojis). Trouver les deux occurrences de `MUSCU_GUIDES":{` :
+   - **1ʳᵉ occurrence = table ÉMILIE** (commence par `back squat barre haute`,
+     `abduction assise (machine ou elastique)`, …)
+   - **2ᵉ occurrence = table ÉLITE** (commence par `Pompes`, `Fentes arrière au poids
+     du corps`, …)
+   ⚠ **L'ancien critère « les 400 octets suivants contiennent `tractions (pull-up)` » est
+   PÉRIMÉ** (le marqueur est à +620 o depuis les ajouts du stock). Se fier aux **clés de
+   tête** ci-dessus. Insérer le bloc, vérifier le delta de taille et `node --check`.
+5. **Vérifier** : `npm test` (94/0), les GIF en `HTTP 200 · image/gif`, anciennes références
+   à 0 dans les **données** (legacy.json, bundle, runtime) — les anciens **fichiers** restent
+   sur le disque et dans media-index (aucune suppression).
+6. **+1 — runtime portable** : `public/runtime.js` et `release/runtime.js` embarquent les
+   données. Après toute modification de `legacy.json`/`visuals.js` :
+   `npm run build:portable`, re-trier `public/media-index.json`, puis copier
+   `public/runtime.js` et `public/media-index.json` vers `release/`.
+   (Sans ça, l'export portable a déjà gardé 3 vieux JPG pendant des tours entiers.)
 
-## B. MESURER LA MER SUR L'IMAGE ENTIÈRE, PAS SUR UNE BANDE
+⚠ **NE PAS reconstruire l'app avec un bundler** : `vite build` écraserait `release/`.
+On **patche**, on ne reconstruit pas.
 
-Mesurer le bleu dans les 45 % du haut fait annoncer « pas de mer » sur 7 GIF parfaitement
-conformes : cette bande, c'est le **ciel**. Mesure correcte : `% de pixels bleus sur l'image entière`.
-Répère : les 19 GIF/poses déjà validés vont de **1,86 %** à **21,14 %** (médiane 8,7 %).
+---
 
-## C. L'OUTIL DE MESURE EXISTE : `build/verifier-pose.py`
+## 7. PIÈGES DÉJÀ PAYÉS — NE PAS LES REFAIRE
 
-Sol (coin bas-gauche) · saturation · mer · végétation · vert lime · muscles dorés.
-Il ne juge PAS la posture (le générateur redessine le fond à chaque pose : 30 à 60 % de
-l'image diffère entre deux poses pourtant conformes → aucune soustraction de fond n'est fiable).
-La posture se contrôle à l'œil, par l'utilisateur, sur la planche présentée.
+1. **Le coin bas-gauche n'est PAS le sol.** Utiliser la colonne `sol_dom`
+   (couleur majoritaire des pixels clairs des 45 % du bas).
+2. **L'édition minimale ne fonctionne pas** (couleur OU pose) : le générateur renvoie une
+   image quasi identique (preuve le 15/10 : pose B des fentes → NCC **0,9994**, 0,16 % de
+   pixels changés). → **Régénérer en complet** avec les 2 références verrouillées
+   (`BASE-decor-sol-sable-valide.png` + `BASE-athlete-reference-utilisateur`) et la pose
+   décrite en entier. Repères NCC : même pose/décor différent ≈ 0,73-0,86 · édition minimale
+   ≈ 0,98 · pose différente ≈ 0,88-0,96 · exercice différent < 0,1.
+3. **Mesurer la mer sur l'image entière** (la bande haute = le ciel). Seuil outil 3 % ;
+   minimum des GIF validés **1,86 %** → 2,3-2,9 % est acceptable **sous réserve du contrôle
+   visuel** (mer bien visible).
+4. **`-delay` devant CHAQUE image** d'une commande ImageMagick (sinon animation cassée).
+5. **Un GIF conforme ne se régénère pas.**
+6. **Réinitialisations de sandbox** : tout ce qui n'est pas poussé disparaît ; le dossier
+   `build/` est exclu des snapshots. Récupération :
+   `git fetch origin arena/f60f808f-jarvis-fitness-yanis-emilie-ap && git reset --hard FETCH_HEAD`.
+7. `index-D_-dR1q5.js` (1,36 Mo) est un **bundle mort** : suppression proposée mais
+   **jamais autorisée** → ne pas y toucher.
+8. Les poses validées A/M/B se fabriquent en **générations complètes** (NCC entre poses
+   ≈ 0,88-0,96) ; assembler avec `faire-gif.sh` (A→M→B→M→A, 440x246).
 
-## D. ÉTAT À L'HEURE DE CET AJOUT
+---
 
-· Dernière pose (abduction hanche M) : **faite, mesurée, présentée, NON intégrée**.
-· 17 GIF corrigés en attente, **mesurés** : 4 encore pâles (pallof 14,3 · abduction-assise 14,5 ·
-  squat-cycliste 14,8 · squat-PDC 15,2), 3 au coin de sol gris (bulgarian-CORRIGE · face-pull ·
-  pallof), 11 sans alerte. **Aucun régénéré, aucun intégré.**
-· Suite (~91 exercices sans animation côté élite) : **non commencée**, attend le feu vert.
+## 8. ÉTAT EXACT AU 15 OCTOBRE 2026 (mesuré, pas estimé)
+
+### Fait et poussé (branche `arena/f60f808f-…`)
+
+- **Module 1 (échauffement) intégré** : 3 JPG pâles remplacés par
+  `4d6d57f97bdd691e.gif` · `6d278876a579cbc8.gif` · `0c5a8fe6ba79eb47.gif`.
+- **4 animations du stock intégrées** (pompes, fentes arrière PDC, mobilité épaules,
+  respiration diaphragmatique) → 55 guides élite.
+- **Abduction de hanche INTÉGRÉE** le 15/10 : `/media/0e3fd7381f21657e.gif`
+  (sol 229-235, 335 342 o) dans les 5 endroits + runtime ; `npm test` 94/0 ;
+  ancienne ref `b49969e64dc275f5.gif` à 0 dans les données (fichier conservé).
+- **Contrôle musculature** (demandé par l'utilisateur) : **pas de perte**
+  (planche `PLANCHE-MUSCULATURE-controle-2026-10-13.jpg`, ratios cuisses/tête
+  1,21-1,70x vs 1,27x pour la photo de référence).
+- **LOT 1 (polyarticulaires) — 3 GIF prêts, mesurés, PRÉSENTÉS, NON INTÉGRÉS** :
+
+| GIF | Mesures (5 frames) | Verdict |
+|---|---|---|
+| `01-developpe-couche-barre-3poses.gif` | sol 227-235 · sat 41,6-42,9 · mer 2,8-3,9 % · lime ≤0,05 · or 4,4-5,0 | conforme (mer limite sur 2 frames) |
+| `02-tractions-prise-large-3poses.gif` | sol 229-233 · sat 43,7-46,1 · mer 2,6-3,4 % · lime ≤0,07 · or 4,2-5,1 | conforme (mer limite sur 3 frames) |
+| `03-fentes-barre-3poses.gif` | sol 225-234 · sat 43,2-45,1 · mer 2,4-2,7 % · lime ≤0,06 · or 5,8-6,1 | mer sous 3 % (visuel OK) ; joints de sol très atténués sur la pose B |
+
+  Tous en 440x246, délais 25/20/50/20/25 cs, ≈ 320 Ko. Chemin :
+  `animations/_locked/candidats/2026-10-13-lot1/`.
+- `npm test` = **96 · 94 passés · 0 échec · 2 ignorés** · media-index **285 entrées**.
+
+### En attente (ne rien faire sans accord)
+
+- **L'intégration des 3 GIF du lot 1** (feu vert explicite exigé).
+- Les 4 GIF pâles + 3 au sol gris de l'audit (pallof 14,3 · abduction assise 14,5 ·
+  squat cycliste 14,8 · squat poids du corps 15,2 · bulgarian-CORRIGE 195-198 ·
+  face-pull 196 · pallof 177-213), et les 3 alertes R7 à revérifier avec `sol_dom`.
+- **Squat au poids du corps** : écarté (clignotement saturation 15,2→47,7) — à refaire.
+- **Rowing à l'élastique** : aucun GIF.
+- Compteur : **209 exercices · 121 avec animation · 88 sans** (86 élite + rowing élastique
+  + squat PDC). Par muscle : bic 16 · qua 13 · tri 12 · dos 11 · pec 9 · isc 7 · epA 6 ·
+  abs 5 · epL 4 · epP 3 · mol 1 · lom 1.
+- `release/assets/index-D_-dR1q5.js` : **ne pas toucher**.
+
+### Documents de référence dans le dépôt
+
+`ETAT-MODULES.md` · `animations/_locked/RAPPORT-R8.md` (mesure du sol, `sol_dom`) ·
+`animations/_audit/2026-10-11/` (audits et GIF sources) ·
+`animations/_locked/build/corrections/` (planches et candidats) ·
+`animations/_locked/REFERENCE-VERROUILLEE.md` (le verrou) ·
+`animations/_locked/PLANCHE-MUSCULATURE-controle-2026-10-13.jpg`.
+
+---
+
+## 9. CE QU'IL FAUT DEMANDER À L'UTILISATEUR AVANT D'AGIR
+
+1. **En premier** : le feu vert explicite pour intégrer les 3 GIF du lot 1
+   (phrase en toutes lettres ; un « Y » ne suffit **jamais**).
+2. Puis continuer **par lots de 3 exercices polyarticulaires** (pec / dos / qua) :
+   3 images fixes → accord explicite → 3 GIF → présentation → accord → intégration.
+   **Ne pas lancer 26 tours d'un coup.**
+3. En cas de message « Y » ou message incomplet : c'est une relance de chat bloqué →
+   **ne pas en tenir compte**, ne rien intégrer, redemander poliment une phrase claire.
+
+Et toujours : **mesurer avant de proposer, présenter avant d'intégrer, ne rien mettre
+dans l'app sans feu vert explicite.**
