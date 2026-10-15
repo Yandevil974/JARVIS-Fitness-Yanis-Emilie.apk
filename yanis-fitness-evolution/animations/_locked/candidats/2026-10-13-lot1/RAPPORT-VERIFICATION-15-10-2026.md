@@ -1,6 +1,22 @@
 # LOT 1 (3 polyarticulaires) — vérification indépendante du 15/10/2026
 
-Statut : **RIEN N'EST INTÉGRÉ**. Les 3 GIF attendent un feu vert explicite en toutes lettres.
+> **MISE À JOUR — 15/10, plus tard dans la journée : lot 1 INTÉGRÉ.**
+> Feu vert explicite reçu (« J'autorise l'intégration des 3 GIF tels quels ») →
+> intégration aux 5 endroits + runtime (commit `a7090a7`), puis APK téléphone
+> **1.5.2 / versionCode 182** (commit `13bfc85`, release `v1.5.2-lot1-musculation`,
+> workflow « Build Yanis Fitness Evolution APK » : succès).
+> Vérifié après coup : les 3 exercices portent bien leur GIF
+> (`Développé couché barre` → `/media/acbab53a64c18aab.gif`,
+> `Tractions prise large` → `/media/d36d738b07fe1305.gif`,
+> `Fentes barre` → `/media/6baa655d39de069e.gif`), 124 exercices animés sur 209,
+> `media-index` 288 entrées triées, bundle à 2 tables + `node --check` OK,
+> `npm test` 96 · 94 passés · 0 échec · 2 ignorés.
+> **Les réserves du §3 restent valables** (01 : amplitude + barre horizontale ; 02 : menton vers
+> la barre) : elles ne bloquent pas la livraison (objectif 1 : l'app doit marcher) mais
+> méritent une reprise ultérieure.
+
+Statut initial de cette vérification (avant le feu vert) : **RIEN N'ÉTAIT INTÉGRÉ**, les 3 GIF
+attendaient une phrase explicite en toutes lettres.
 Vérification faite dans une nouvelle session (clone vierge + branche de reprise).
 
 ## 1. État mesuré de l'app (reproduit, pas estimé)
