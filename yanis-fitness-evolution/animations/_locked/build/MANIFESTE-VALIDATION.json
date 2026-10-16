@@ -138,11 +138,22 @@
       ]
     },
     {
+      "titre": "Module 2 — Étirement · lot 4 (triceps, taille, hanche)",
+      "entrees": [
+        {
+          "etiquette": "Coude dessus de la tête (triceps) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot4/GIF-01-coude-dessus-tete-fluide-v1.gif",
+          "mesures": "sol 219-227 (bande 219-253), mer 4,9-8,0 % (réajustée), sat 46, lime 0 ; coins BAS = réserve",
+          "num": 11
+        }
+      ]
+    },
+    {
       "titre": "En production (prochains lots, non encore présentés)",
       "entrees": [
         {
           "num": "—",
-          "etiquette": "Lots 3 (suite) à 8 : 13 visuels restants (bras devant main tirée, bras derrière, triceps, fléchisseurs, extenseurs, cobra, pigeon, quadriceps, ischios, adducteurs, mollets)",
+          "etiquette": "Lots restants : lot3-02 (refonte sol), lot3-03 (M/B), lot4-02/03, lots 5-8 — 14 visuels en production",
           "gif": "",
           "recommandations": [
             "Placeholder : chaque visuel restant aura sa propre entrée dès ses clés validées en interne (contrôle visuel + verifier-pose).",
