@@ -5,6 +5,7 @@ name: Page de telechargement (bouton sur le telephone)
 # qui peuvent etre filtres par certains reseaux mobiles.
 #
 # Lancement : push sur ce fichier, ou manuellement (workflow_dispatch).
+# (Redéclenché le 16/10 après la mise en place du miroir downloads/.)
 
 on:
   push:
