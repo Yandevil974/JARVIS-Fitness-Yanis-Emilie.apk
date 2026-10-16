@@ -1,3 +1,13 @@
+# 📲 INSTALLER L'APPLICATION (lien direct)
+
+**Yanis Fitness Evolution 1.8.2 — JARVIS + toutes les animations**
+👉 https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.2-jarvis-animations/yanis-fitness-evolution-1.8.2.apk
+
+Taille à vérifier : **95 561 328 octets (91,1 Mo)** — un fichier plus petit = téléchargement interrompu.
+Mode d'emploi complet (vérifications, installation, lien de secours) : **[INSTALLER-APPLI.md](INSTALLER-APPLI.md)**
+
+---
+
 # JARVIS-Fitness-Yanis-Emilie.apk
 
 ## Version à installer — diversification piscine/aqua (1.7.2)
