@@ -25,7 +25,7 @@ jobs:
   mirror:
     # Les tags sont construits par le workflow de release; le miroir doit pousser
     # depuis une branche (sinon le checkout est détaché et git push échoue).
-    if: startsWith(github.ref, 'refs/heads/')
+    if: github.ref == 'refs/heads/arena/84a42f70-jarvis-fitness-yanis-emilie-ap'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -91,7 +91,7 @@ jobs:
             echo "miroir deja a jour"
           else
             git commit -m "miroir : APK $APKNAME ($TAILLE octets) copie dans downloads/ (sha256 verifie) - lien de secours raw.githubusercontent"
-            git push
+            git push origin "HEAD:arena/84a42f70-jarvis-fitness-yanis-emilie-ap"
           fi
           echo "### Lien de secours" >> "$GITHUB_STEP_SUMMARY"
           echo "- https://raw.githubusercontent.com/${{ github.repository }}/$(git rev-parse --abbrev-ref HEAD)/downloads/$NOM" >> "$GITHUB_STEP_SUMMARY"
