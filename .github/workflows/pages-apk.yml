@@ -1,0 +1,114 @@
+name: Page de telechargement (bouton sur le telephone)
+
+# Page tres simple, pensée pour un telephone : un gros bouton vert qui telecharge l'APK.
+# Servie par GitHub Pages (domaine github.io), different des hotes d'assets de release
+# qui peuvent etre filtres par certains reseaux mobiles.
+#
+# Lancement : push sur ce fichier, ou manuellement (workflow_dispatch).
+
+on:
+  push:
+    paths:
+      - ".github/workflows/pages-apk.yml"
+      - "downloads/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-apk
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Controler l'empreinte de l'APK miroir
+        run: |
+          set -euo pipefail
+          cd downloads
+          ls -la
+          for f in *.apk; do
+            [ -f "$f.sha256" ] && sha256sum -c "$f.sha256"
+          done
+
+      - name: Preparer le site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp downloads/*.apk downloads/*.sha256 _site/
+          APK=$(ls _site/*.apk | head -1)
+          NOM=$(basename "$APK")
+          EMPREINTE=$(cut -d' ' -f1 < "_site/$NOM.sha256")
+          TAILLE=$(stat -c %s "$APK")
+          MO=$(awk -v t="$TAILLE" 'BEGIN{printf "%.1f", t/1048576}')
+          cat > _site/index.html <<HTML
+          <!doctype html>
+          <html lang="fr">
+          <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Telecharger Yanis Fitness Evolution 1.8.2</title>
+          <style>
+            body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+                   background:#0b0f14; color:#e8eef6; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; padding:20px; }
+            .card { width:100%; max-width:560px; background:#131a23; border:1px solid #223041; border-radius:18px; padding:26px; text-align:center; }
+            h1 { font-size:21px; margin:0 0 6px; }
+            .sub { color:#9fb0c4; font-size:14px; margin-bottom:20px; }
+            a.btn { display:block; background:#16a34a; color:#04140a; text-decoration:none; font-weight:700; font-size:20px;
+                    padding:20px 22px; border-radius:14px; margin-bottom:16px; }
+            .meta { text-align:left; font-size:13px; color:#9fb0c4; background:#0e141b; border:1px solid #1d2835;
+                    border-radius:12px; padding:14px; }
+            .meta div { margin:5px 0; word-break:break-all; }
+            code { color:#cfe3ff; font-size:12px; }
+            ol { text-align:left; color:#9fb0c4; font-size:13px; padding-left:20px; }
+            li { margin:4px 0; }
+          </style>
+          </head>
+          <body>
+            <div class="card">
+              <h1>Yanis Fitness Evolution 1.8.2</h1>
+              <div class="sub">JARVIS (memoire Brain) + toutes les animations</div>
+              <a class="btn" href="$NOM" download>Telecharger l'application</a>
+              <div class="meta">
+                <div><strong>Fichier :</strong> $NOM</div>
+                <div><strong>Taille :</strong> $TAILLE octets ($MO Mo)</div>
+                <div><strong>SHA-256 :</strong> <code>$EMPREINTE</code></div>
+              </div>
+              <ol>
+                <li>Appuyer sur le bouton vert, attendre la fin du telechargement.</li>
+                <li>Verifier la taille : $MO Mo. Un fichier plus petit = telechargement interrompu.</li>
+                <li>Ouvrir le fichier telecharge, autoriser l'installation si demande.</li>
+              </ol>
+            </div>
+          </body>
+          </html>
+          HTML
+          ls -la _site
+
+      - name: Configurer Pages (activation si besoin)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Televerser l'artefact du site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deployer sur Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
