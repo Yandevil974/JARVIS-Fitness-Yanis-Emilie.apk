@@ -87,8 +87,20 @@ jobs:
           VERSION=$(node -p "require('../package.json').version || '1.8.1'" 2>/dev/null || echo 1.8.1)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
-          # Contrôle : les GIF du lot 1 musculation doivent être dans le paquet.
-          unzip -l app/build/outputs/apk/release/app-release.apk | grep -E "acbab53a64c18aab|d36d738b07fe1305|6baa655d39de069e" || exit 1
+          # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
+          # l'APK livré doit contenir TOUT le travail présent sur la branche.
+          APK=app/build/outputs/apk/release/app-release.apk
+          N_DISQUE=$(ls release/media | wc -l)
+          N_APK=$(unzip -l "$APK" | grep -cE "assets/public/media/[^/]+\.(gif|jpg|jpeg|png|webp)$")
+          echo "medias sur le disque : $N_DISQUE"
+          echo "medias dans l'APK    : $N_APK"
+          if [ "$N_DISQUE" != "$N_APK" ]; then
+            echo "ECHEC : des medias de l'application sont absents de l'APK."
+            exit 1
+          fi
+          # Contrôle nominatif des animations du lot 1 musculation (temoin)
+          unzip -l "$APK" | grep -E "acbab53a64c18aab|d36d738b07fe1305|6baa655d39de069e" || exit 1
+          echo "Controle 'rien ne manque' : OK"
 
       - name: Publish GitHub Release with APK
         uses: softprops/action-gh-release@v2
