@@ -61,8 +61,13 @@ def main():
             recos = "".join(f"<li>{r}</li>" for r in e.get("recommandations", []))
             etat = e.get("etat", "à valider")
             cls = "" if etat.startswith("intégr") else " attente"
+            media = (f"<img src=\"{e['gif']}\" alt=\"{e['etiquette']}\">"
+                     if e.get("gif") else
+                     "<div style=\"padding:28px;background:#0d1420;color:#8fa1b3;"
+                     "text-align:center\">visuel en production — entrée ajoutée "
+                     "dès ses clés contrôlées</div>")
             cartes.append(
-                f"<figure><img src=\"{e['gif']}\" alt=\"{e['etiquette']}\">"
+                f"<figure>{media}"
                 f"<figcaption><b>{e['num']}. {e['etiquette']}</b>"
                 f"<ul>{recos}</ul>"
                 f"<span class=\"etat{cls}\">{etat}</span></figcaption></figure>"
