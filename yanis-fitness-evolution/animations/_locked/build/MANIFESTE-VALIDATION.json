@@ -137,9 +137,9 @@
         },
         {
           "num": 9,
-          "etiquette": "Bras devant, main tirée (épaule postérieure) — vue de profil",
-          "gif": "",
-          "mesures": "EN PRODUCTION : refonte au prochain tour (sol bimodal ombre/soleil non calibrable)"
+          "etiquette": "Bras devant, main tirée (épaule postérieure) — vue de profil — GIF fluide v2",
+          "gif": "candidats/2026-10-16-etirement-lot3/GIF-02-bras-devant-main-tiree-fluide-v2.gif",
+          "mesures": "sol 228-234 OK 7/7 (sol uniformément ensoleillé), mer 3,9-4,4 %, coins BAS = réserve"
         },
         {
           "num": 10,
@@ -167,8 +167,31 @@
         {
           "num": 13,
           "etiquette": "Fléchisseurs de hanche à genou (psoas) — GIF fluide v1",
-          "gif": "candidats/2026-10-16-etirement-lot4/GIF-03-flechisseurs-fluide-v1.gif",
-          "mesures": "sol 230 OK sur poses debout-genou clair ; poses M/B ombre portée dominante = édition anti-ombre au prochain tour"
+          "gif": "candidats/2026-10-16-etirement-lot4/GIF-03-flechisseurs-fluide-v2.gif",
+          "mesures": "GIF v2 : ombre portée supprimée ; sol 230 OK 7/7, mer 2,6-3,5 %, coins BAS = réserve"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 5 (poignets, dos, hanches)",
+      "entrees": [
+        {
+          "num": 14,
+          "etiquette": "Extenseurs du poignet (avant-bras) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot5/GIF-01-extenseurs-fluide-v1.gif",
+          "mesures": "sol 226-234 (1 frame 219 = borne basse bande), mer 4-5 %, coins BAS = réserve"
+        },
+        {
+          "num": 15,
+          "etiquette": "Cobra (extenseurs du dos) — clés A/M prêtes",
+          "gif": "",
+          "mesures": "EN PRODUCTION : clé B au prochain tour"
+        },
+        {
+          "num": 16,
+          "etiquette": "Pigeon assis (fessiers, hanches) — clé A prête",
+          "gif": "",
+          "mesures": "EN PRODUCTION : clés M/B au prochain tour"
         }
       ]
     },
@@ -177,7 +200,7 @@
       "entrees": [
         {
           "num": "—",
-          "etiquette": "Lots restants : lot3-02 (refonte), lot4-03 M/B (anti-ombre), lot5-01 B, lot5-02/03, lots 6-8 — 12 visuels en production",
+          "etiquette": "9 GIF restants (lots 5 suite à 8) en production",
           "gif": "",
           "recommandations": [
             "Placeholder : chaque visuel restant aura sa propre entrée dès ses clés validées en interne (contrôle visuel + verifier-pose).",
