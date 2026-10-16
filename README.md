@@ -1,33 +1,35 @@
 # 📲 INSTALLER L'APPLICATION (lien direct)
 
-**Yanis Fitness Evolution 1.8.4 — échauffement revu, piscine renforcée**
+**Yanis Fitness Evolution 1.8.3 — dernière version stable**
 
-- **APK :** [Télécharger Yanis Fitness Evolution 1.8.4](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.4-warmup-pool-build2/yanis-fitness-evolution-1.8.4.apk)
-- **Lien de secours (raw.githubusercontent.com) :** [Télécharger l'APK miroir](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/84a42f70-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.4.apk)
-- **SHA-256 :** `30bbf017eccd8488e0d813cfe945f1fb704b1776a310a15cc0290e0484cb58b6`
-- **Fichier de contrôle :** [yanis-fitness-evolution-1.8.4.apk.sha256](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.4-warmup-pool-build2/yanis-fitness-evolution-1.8.4.apk.sha256)
-- **Taille :** 104 252 489 octets (≈ 99,4 Mio) — un fichier plus petit indique un téléchargement interrompu.
+> **Avis important :** la préversion 1.8.4 a été retirée du canal stable. Ses GIFs elliptique et scapulaire étaient des changements de poses fixes, sans animation fluide suffisante. Ne l'utilisez pas comme livraison corrective; le travail visuel est repris.
 
-Version installable : **versionName 1.8.4 / versionCode 186**. Mode d'emploi complet : **[INSTALLER-APPLI.md](INSTALLER-APPLI.md)**.
+- **APK stable :** [Télécharger Yanis Fitness Evolution 1.8.3](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk)
+- **Lien de secours (raw.githubusercontent.com) :** [Télécharger l'APK miroir](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/84a42f70-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.3.apk)
+- **SHA-256 :** `f824af57a32a21da651a26fdfa2aefa7d1c6a540fe257602435c0d126ee16be2`
+- **Fichier de contrôle :** [yanis-fitness-evolution-1.8.3.apk.sha256](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk.sha256)
+- **Taille :** 97 214 600 octets (≈ 92,7 Mio)
+
+Version stable : **versionName 1.8.3 / versionCode 185**. Mode d'emploi : **[INSTALLER-APPLI.md](INSTALLER-APPLI.md)**.
 
 ---
 
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version actuelle — échauffement et piscine post-musculation (1.8.4)
+## Dernière version stable — 1.8.3
 
-APK stable publiée le 16/10/2026 à partir de la base 1.8.3. Elle intègre un échauffement de 8 minutes (elliptique, mobilité ciblée, activation et geste technique sans charge progressive), des consignes distinctes pour mobilité d'épaule et activation scapulaire, et des séances de piscine post-musculation structurées en intervalles ou en pyramide sur 20, 25 ou 30 minutes.
+La release `v1.8.3-jarvis-animations` reste la dernière version stable. Elle contient les trois GIFs d'étirement approuvés, sans remplacement des autres médias conformes.
 
-- **APK :** [Téléchargement direct](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.4-warmup-pool-build2/yanis-fitness-evolution-1.8.4.apk)
-- **Lien raw de secours :** [APK miroir](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/84a42f70-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.4.apk)
-- **SHA-256 :** `30bbf017eccd8488e0d813cfe945f1fb704b1776a310a15cc0290e0484cb58b6`
-- **Taille :** 104 252 489 octets (≈ 99,4 Mio)
-- **Android :** `app.yanis.fitness.evolution`, versionName **1.8.4**, versionCode **186** (mise à jour de 1.8.3 / 185)
-- **Contrôles CI :** 165 tests (163 réussis, 2 ignorés), manifeste Android, signature APK, tous les médias inclus (410) et GIFs témoins présents.
+- **APK :** [Téléchargement direct](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk)
+- **Lien raw de secours :** [APK miroir](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/84a42f70-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.3.apk)
+- **SHA-256 :** `f824af57a32a21da651a26fdfa2aefa7d1c6a540fe257602435c0d126ee16be2`
+- **Taille :** 97 214 600 octets (≈ 92,7 Mio)
+- **Android :** `app.yanis.fitness.evolution`, versionName **1.8.3**, versionCode **185**
+- **Contrôles de cette livraison :** 154 tests (152 réussis, 2 ignorés), manifeste, signature APK et inventaire des médias vérifiés.
 
-GIFs approuvés intégrés : elliptique de mise en route (`d53f6f22d159b4ee.gif`) et activation scapulaire (`279bb96defb9a0c8.gif`), en plus des trois GIFs d'étirement déjà livrés. Les assets sont joints à la [release stable 1.8.4](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.8.4-warmup-pool-build2).
+GIFs de cette version : encadrement de porte (`55d7d6060a20be1b.gif`), bras tendu contre le mur (`22f0bfbf80a63b77.gif`) et position de l'enfant / Balasana (`1eae9eb2d9e5bfea.gif`).
 
-Tests locaux et CI : **165 tests, 163 réussis, 2 ignorés, 0 échec**.
+**État du correctif 1.8.4 :** le code d'échauffement et de piscine a été testé, mais les deux GIFs exigés ne sont pas acceptables. La préversion est explicitement marquée comme retirée; aucun APK corrigé ne sera publié avant une vraie animation validée.
 
 ## Version précédente — diversification piscine/aqua (1.7.2)
 
