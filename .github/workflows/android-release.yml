@@ -98,9 +98,13 @@ jobs:
             echo "ECHEC : des medias de l'application sont absents de l'APK."
             exit 1
           fi
-          # Contrôle nominatif des animations du lot 1 musculation (temoin)
+          # Contrôle nominatif des animations déjà témoins du lot 1 musculation.
           unzip -l "$APK" | grep -E "acbab53a64c18aab|d36d738b07fe1305|6baa655d39de069e" || exit 1
-          echo "Controle 'rien ne manque' : OK"
+          # Les trois GIFs Étirement validés doivent également être dans l'APK.
+          for witness in 55d7d6060a20be1b 22f0bfbf80a63b77 1eae9eb2d9e5bfea; do
+            unzip -l "$APK" | grep -q "$witness.gif" || { echo "GIF témoin absent de l'APK: $witness.gif"; exit 1; }
+          done
+          echo "Controle 'rien ne manque' + GIFs Étirement : OK"
 
       - name: Publish GitHub Release with APK
         uses: softprops/action-gh-release@v2
