@@ -74,6 +74,7 @@ jobs:
           set -euo pipefail
           VERSION=$(node -p "require('./yanis-fitness-evolution/package.json').version")
           NOM="Yanis-Fitness-Evolution-${VERSION}.apk"
+          echo "NOM=$NOM" >> "$GITHUB_ENV"
           cp "/tmp/dl/$APKNAME" "downloads/$NOM"
           ( cd downloads && sha256sum "$NOM" > "$NOM.sha256" )
           # on ne garde qu'un miroir d'APK : le plus recent (le depot ne doit pas regonfler)
