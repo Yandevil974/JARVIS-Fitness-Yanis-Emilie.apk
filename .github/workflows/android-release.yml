@@ -48,6 +48,9 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Run application tests
+        run: npm test
+
       - name: Install esbuild (runtime portable)
         run: npm install --no-save esbuild
 
@@ -90,8 +93,8 @@ jobs:
           # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
           # l'APK livré doit contenir TOUT le travail présent sur la branche.
           APK=app/build/outputs/apk/release/app-release.apk
-          N_DISQUE=$(ls release/media | wc -l)
-          N_APK=$(unzip -l "$APK" | grep -cE "assets/public/media/[^/]+\.(gif|jpg|jpeg|png|webp)$")
+          N_DISQUE=$(find ../release/media -maxdepth 1 -type f | wc -l)
+          N_APK=$(unzip -l "$APK" | grep -cE "assets/public/media/[^/]+\.(gif|jpg|jpeg|png|webp)$" || true)
           echo "medias sur le disque : $N_DISQUE"
           echo "medias dans l'APK    : $N_APK"
           if [ "$N_DISQUE" != "$N_APK" ]; then
