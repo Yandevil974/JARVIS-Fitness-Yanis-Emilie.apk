@@ -16,7 +16,7 @@ on:
       tag:
         description: "Tag de la release a copier (vide = derniere release)"
         required: false
-        default: ""
+        default: "v1.8.4-warmup-pool-build2"
 
 permissions:
   contents: write
