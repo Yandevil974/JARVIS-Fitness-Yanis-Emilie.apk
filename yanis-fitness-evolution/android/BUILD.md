@@ -3,12 +3,12 @@
 Application autonome, séparée de « JARVIS Fitness » (n’importe pas son
 empreinte de signature) :
 
-| Élément | Valeur |
-| --- | --- |
-| appId / namespace | `app.yanis.fitness.evolution` |
-| versionName / versionCode | `1.5.1` / `151` |
-| Clé de release | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`) |
-| Stockage navigateur | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
+| Élément                   | Valeur                                                                                                                            |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
+| versionName / versionCode | `1.8.0` / `180`                                                                                                                   |
+| Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
+| Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
 ## Prérequis (machine locale)
 
@@ -18,8 +18,8 @@ empreinte de signature) :
 ## Chaîne complète
 
 ```bash
-npm run build          # vite → release/
 npm run build:portable # runtime.js + runtime.css + media-index.json pour l’export « HTML autonome »
+npm run build          # vite → release/
 npx cap sync android   # copie release/ dans android/app/src/main/assets/public
 cd android && ./gradlew assembleRelease
 # APK : android/app/build/outputs/apk/release/app-release.apk
@@ -34,9 +34,9 @@ les changer :
 
 ## Vérifications locales possibles
 
-- `npm test` — 96 tests unitaires (94 verts) (moteur, stockage, import DOC réel, minuteur/voix).
-- `npx playwright test` — parcours complets une fois les navigateurs installés
-  (`npx playwright install chromium`).
+- `npm test` — 136 tests au total : 134 réussis, 0 échec, 2 ignorés.
+- Couverture GIF : 209 exercices, 58 étirements et 1920/1920 étapes piscine/aqua vérifiées pour les profils homme et femme.
+- E2E : dernière exécution complète avant ce chantier, 17 réussis, 0 échec, 11 ignorés. Le scénario Playwright des séances optionnelles a été ajouté, mais n'a pas pu être exécuté ici (Chromium absent et téléchargement réseau indisponible).
 
 ## Cohabitation avec l’ancienne application
 

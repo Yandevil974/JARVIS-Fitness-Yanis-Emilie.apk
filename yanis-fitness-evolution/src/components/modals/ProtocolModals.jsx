@@ -13,15 +13,27 @@ import Movement from "../Movement.jsx";
 import HumanAnim from "../HumanAnim.jsx";
 import {
   POOL_PROTOCOLS,
+  OPTIONAL_POOL_PROTOCOLS,
   POOL_GUIDES,
   RECOVERY_EXERCISES,
+  stretchImage,
   exerciseById,
+  findExercise,
 } from "../../data/library.js";
 import { stepGuide } from "../../data/visuals.js";
+import {
+  isPoolTimerStep,
+  resolveTimerStepGif,
+} from "../../data/visuals-gifs.js";
+import {
+  isOptionalPoolProtocol,
+  optionalPoolStepGif,
+} from "../../data/pool-diversity.js";
 import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
 import { durationLabel, today, norm, assetSrc } from "../../engine/utils.js";
+import { poolRecoveryGate } from "../../engine/source-schedule.js";
 export function TimerModal() {
   const { p, updateProfile, closeModal, setModal, notify } = useApp();
   const now = useNow();
@@ -36,7 +48,21 @@ export function TimerModal() {
         t.remaining) /
         total) *
       100;
-  const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
+  // Le segment « post » est aussi utilisé par le bloc piscine après musculation.
+  // Le type/composant du chrono permet de rétablir son vrai domaine visuel.
+  const isPool = isPoolTimerStep(step, t.meta);
+  const guide = stepGuide(
+    step.name,
+    isPool ? "pool" : step.segment,
+    POOL_GUIDES,
+  );
+  // Résout d'abord le GIF humain du domaine piscine avant d'analyser le texte :
+  // « récupération active » dans une prescription de nage ne signifie pas vélo.
+  const stepImage = resolveTimerStepGif(step, p.id, {
+    pool: isPool,
+    guideImg: guide?.img,
+    exerciseGif: findExercise(step.name)?.gif,
+  });
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {
@@ -100,16 +126,16 @@ export function TimerModal() {
           {durationLabel(t.done ? 0 : t.remaining)}
         </div>
         {!t.done &&
-          (step.img ? (
+          (stepImage ? (
             <button
               type="button"
               className="timer-step-visual"
               title="Agrandir"
               onClick={() =>
-                setModal({ type: "image", src: step.img, title: step.name })
+                setModal({ type: "image", src: stepImage, title: step.name })
               }
             >
-              <img src={assetSrc(step.img)} alt={step.name} />
+              <img src={assetSrc(stepImage)} alt={step.name} />
               <Icon name="Maximize2" size={15} />
             </button>
           ) : (
@@ -198,39 +224,67 @@ export function TimerModal() {
 }
 export function ProtocolModal({ protocolId, level = 0 }) {
   const { p, setTimer, setModal, closeModal, notify, updateProfile } = useApp();
-  const pr = POOL_PROTOCOLS.find((p) => p.id === protocolId);
+  const pr =
+    POOL_PROTOCOLS.find((p) => p.id === protocolId) ||
+    OPTIONAL_POOL_PROTOCOLS.find((p) => p.id === protocolId);
   const lv = pr?.niveaux[level];
   if (!lv) return null;
   const key = `${today()}-${protocolId}-${level}`,
     checked = p.protocolChecks?.[key] || [];
-  const minutes = Math.round(lv.steps.reduce((s, r) => s + r[1], 0) / 60);
-  function launch() {
-    const score = recoveryScore(p).score;
-    if (
-      score != null &&
-      score < 45 &&
-      !["recovery", "endurance"].includes(pr.id)
-    ) {
-      notify(
-        "Récupération faible : choisissez Aqua Recovery ou une nage très facile aujourd’hui.",
-        "info",
-      );
-      return;
-    }
+  const minutes = Math.round(lv.steps.reduce((s, r) => s + r[1], 0) / 60),
+    score = recoveryScore(p).score,
+    softMetconRecovery = poolRecoveryGate(pr.id, score).soft;
+  function startProtocol(target, targetLevel, targetIndex) {
+    const optional = isOptionalPoolProtocol(target.id);
     setTimer(
-      lv.steps.map(([name, seconds]) => ({
-        name,
-        seconds,
-        pattern: /repos|respiration|recup/i.test(name) ? "breathe" : "swim",
-        kind: /repos|recup/i.test(name) ? "rest" : "work",
-      })),
+      targetLevel.steps.map(([name, seconds]) => {
+        const pattern = /repos|respiration|r[ée]cup/i.test(name)
+          ? "breathe"
+          : "swim";
+        return {
+          name,
+          seconds,
+          pattern,
+          kind: /repos|r[ée]cup|calme/i.test(name) ? "rest" : "work",
+          ...(optional
+            ? {
+                img: optionalPoolStepGif(name, p.id, pattern),
+              }
+            : {}),
+        };
+      }),
       {
-        type: pr.id === "aquahiit" || pr.id === "aquatabata" ? "aqua" : "swim",
-        name: pr.nom,
-        protocolId: pr.id,
-        level,
+        type: [
+          "aquahiit",
+          "aquatabata",
+          "metcon-aquatabata",
+          "circuit-aqua-variable",
+        ].includes(target.id)
+          ? "aqua"
+          : "swim",
+        name: target.nom,
+        protocolId: target.id,
+        level: targetIndex,
       },
     );
+  }
+  function launch(forceMetcon = false) {
+    const currentScore = recoveryScore(p).score,
+      gate = poolRecoveryGate(pr.id, currentScore, forceMetcon);
+    if (gate.blocked) {
+      if (!gate.soft)
+        notify(
+          "Récupération faible : choisissez Aqua Recovery ou une nage très facile aujourd’hui.",
+          "info",
+        );
+      return;
+    }
+    startProtocol(pr, lv, level);
+  }
+  function launchRecovery() {
+    const recovery = POOL_PROTOCOLS.find((item) => item.id === "recovery"),
+      recoveryLevel = recovery?.niveaux[0];
+    if (recovery && recoveryLevel) startProtocol(recovery, recoveryLevel, 0);
   }
   return (
     <Modal
@@ -247,11 +301,31 @@ export function ProtocolModal({ protocolId, level = 0 }) {
             mémorisent vos étapes cochées, mais ne créent pas une performance.
           </p>
         </div>
+        {softMetconRecovery && (
+          <div className="metcon-recovery-warning" role="status">
+            <Icon name="HeartPulse" size={20} />
+            <div>
+              <strong>Récupération {score}/100 aujourd’hui</strong>
+              <p>
+                Aqua Recovery est recommandé. Vous gardez la possibilité de
+                lancer le METCON si vous le décidez.
+              </p>
+            </div>
+          </div>
+        )}
         <div className="protocol-steps">
           {lv.steps.map(([name, sec], i) => {
             const guide = POOL_GUIDES.find((g) =>
               g.k.some((k) => norm(name).includes(norm(k))),
             );
+            const guideImage =
+              guide && isOptionalPoolProtocol(pr.id)
+                ? optionalPoolStepGif(
+                    name,
+                    p.id,
+                    /repos|respiration|r[ée]cup/i.test(name) ? "breathe" : "swim",
+                  ) || guide.img
+                : guide?.img;
             return (
               <div key={i}>
                 <label>
@@ -280,10 +354,10 @@ export function ProtocolModal({ protocolId, level = 0 }) {
                       Technique <Icon name="ChevronDown" size={12} />
                     </summary>
                     <div className="pool-guide-content">
-                      {guide.img && (
+                      {guideImage && (
                         <img
                           loading="lazy"
-                          src={assetSrc(guide.img)}
+                          src={assetSrc(guideImage)}
                           alt={guide.t}
                         />
                       )}
@@ -299,22 +373,51 @@ export function ProtocolModal({ protocolId, level = 0 }) {
             );
           })}
         </div>
-        <div className="modal-actions">
-          <Button
-            variant="secondary"
-            icon="NotebookPen"
-            onClick={() =>
-              setModal({
-                type: "log-activity",
-                data: { type: "swim", name: pr.nom },
-              })
-            }
-          >
-            Saisir sans chrono
-          </Button>
-          <Button variant="primary" icon="Play" onClick={launch}>
-            Lancer le protocole
-          </Button>
+        <div className={`modal-actions ${softMetconRecovery ? "metcon-modal-actions" : ""}`}>
+          {softMetconRecovery ? (
+            <>
+              <Button variant="primary" icon="Waves" onClick={launchRecovery}>
+                Lancer Aqua Recovery (recommandé)
+              </Button>
+              <Button
+                variant="secondary"
+                icon="Play"
+                onClick={() => launch(true)}
+              >
+                Lancer le METCON quand même
+              </Button>
+              <Button
+                variant="secondary"
+                icon="NotebookPen"
+                onClick={() =>
+                  setModal({
+                    type: "log-activity",
+                    data: { type: "swim", name: pr.nom },
+                  })
+                }
+              >
+                Saisir sans chrono
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button
+                variant="secondary"
+                icon="NotebookPen"
+                onClick={() =>
+                  setModal({
+                    type: "log-activity",
+                    data: { type: "swim", name: pr.nom },
+                  })
+                }
+              >
+                Saisir sans chrono
+              </Button>
+              <Button variant="primary" icon="Play" onClick={launch}>
+                Lancer le protocole
+              </Button>
+            </>
+          )}
         </div>
         <p className="small-subtitle">
           Pas de distance déduite d’une nage statique. Pas d’apnée. Conditions
@@ -469,19 +572,19 @@ export function CooldownModal({ session }) {
             <span className="warmup-step-number">
               {String(i + 1).padStart(2, "0")}
             </span>
-            {ex.img && (
+            {stretchImage(ex, p.id) && (
               <button
                 type="button"
                 className="warmup-step-thumb"
                 title="Agrandir"
                 onClick={() =>
-                  setModal({ type: "image", src: ex.img, title: ex.name })
+                  setModal({ type: "image", src: stretchImage(ex, p.id), title: ex.name })
                 }
               >
                 <img
                   className="warmup-step-img"
                   loading="lazy"
-                  src={assetSrc(ex.img)}
+                  src={assetSrc(stretchImage(ex, p.id))}
                   alt={ex.name}
                 />
                 <Icon name="Maximize2" size={13} />
@@ -504,7 +607,7 @@ export function CooldownModal({ session }) {
                 name: e.name,
                 seconds: e.seconds || 30,
                 instruction: e.instruction,
-                img: e.img,
+                img: stretchImage(e, p.id),
                 pattern: "stretch",
               })),
               { type: "warmup", name: "Étirements guidés" },
@@ -549,14 +652,27 @@ export function ImageViewer({ src, title, motion }) {
   );
 }
 export function StretchModal({ exercise }) {
-  const { closeModal, setTimer } = useApp();
+  const { p, setModal, closeModal, setTimer } = useApp();
+  const visuel = stretchImage(exercise, p.id);
   return (
     <Modal
       title={exercise.name}
       subtitle={`${exercise.duration} · étirement doux, jamais douloureux`}
       onClose={closeModal}
     >
-      <Movement exercise={exercise} />
+      {visuel ? (
+        <button
+          type="button"
+          className="timer-step-visual"
+          title="Agrandir"
+          onClick={() => setModal({ type: "image", src: visuel, title: exercise.name })}
+        >
+          <img src={assetSrc(visuel)} alt={exercise.name} />
+          <Icon name="Maximize2" size={15} />
+        </button>
+      ) : (
+        <Movement exercise={exercise} />
+      )}
       <p className="stretch-instruction">{exercise.instruction}</p>
       <div className="info-line">
         <Icon name="Wind" />
@@ -578,6 +694,7 @@ export function StretchModal({ exercise }) {
                   seconds: 30,
                   pattern: "stretch",
                   instruction: exercise.instruction,
+                  img: visuel,
                 },
               ],
               { type: "recovery", name: exercise.name },

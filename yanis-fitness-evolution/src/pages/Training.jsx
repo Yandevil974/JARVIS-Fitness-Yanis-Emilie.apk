@@ -46,7 +46,9 @@ import {
   numberLabel,
   dateLabel,
   durationLabel,
+  today,
 } from "../engine/utils.js";
+import { weeklyCoachState } from "../engine/coach-state.js";
 export default function Training() {
   const { p, tab, setTab, startWorkout, setModal, openExercise } = useApp();
   const value = tab === "session" ? "overview" : tab || "overview";
@@ -94,6 +96,7 @@ export default function Training() {
 function Preview() {
   const { p, startWorkout, openExercise, setModal, navigate } = useApp();
   const next = nextSession(p) || suggestSession(p);
+  const state = weeklyCoachState(p);
   return (
     <div className="training-layout">
       <div>
@@ -101,6 +104,21 @@ function Preview() {
           <Badge color="mint" dot>
             {next.deload ? "SEMAINE ALLÉGÉE" : "VOTRE PROCHAINE SÉANCE"}
           </Badge>
+          {state.decision !== "maintain" && (
+            <div className={`coach-state coach-state-${state.decision}`}>
+              <Icon name="Bot" size={17} />
+              <div>
+                <strong>Décision du coach : {state.label}</strong>
+                <p>{state.detail}</p>
+                {next.coachAdapted === today() && (
+                  <small>
+                    <Icon name="CircleCheck" size={12} /> Appliquée à cette
+                    séance (visible dans « Mes adaptations »).
+                  </small>
+                )}
+              </div>
+            </div>
+          )}
           <h2>{next.name}</h2>
           <p>
             {dateLabel(next.date, {

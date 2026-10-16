@@ -17,7 +17,18 @@ import React, {
 } from "react";
 import { loadState, saveState, saveOnExit } from "./storage.js";
 import { prepareWorkout, nextSession } from "../engine/planner.js";
-import { interpretCommand, applyCoachAction } from "../engine/coach.js";
+import { applyCoachAction } from "../engine/coach.js";
+import { brainAnswer, applyBrainTurn } from "../brain/conversation.js";
+import {
+  confirmMemory,
+  expireMemories,
+  findMemory,
+  forgetMemory,
+  isExpired,
+  rejectMemory,
+  setMemoryValidity,
+} from "../brain/memory.js";
+import { setBrainEnabled as applyBrainEnabled } from "../brain/policy.js";
 import { createTimer } from "../engine/timer.js";
 import { allSets, estimate1RM } from "../engine/fitness.js";
 import { exerciseById } from "../data/library.js";
@@ -81,6 +92,12 @@ export function AppProvider({ children }) {
               "La sauvegarde jointe nécessite une restauration manuelle dans Profil.";
           }
         }
+      }
+      // Mémoires expirées : marquées au chargement, avant tout rendu, pour
+      // qu'elles ne soient jamais rappelées ni reprises dans le contexte.
+      for (const id of ["elite", "emilie"]) {
+        const profile = data.profiles[id];
+        if (profile) expireMemories(profile);
       }
       setState(data);
       setStorageWarning(warning);
@@ -456,10 +473,14 @@ export function AppProvider({ children }) {
       p.preferences.voice,
     );
   };
+  // Le Fitness Brain local est consulté d'abord : soit il répond (mémoire
+  // contrôlée, rappel en lecture seule — jamais d'action sportive), soit il
+  // délègue au coach déterministe historique, strictement inchangé.
   const sendCoach = (text) => {
     if (!String(text).trim()) return;
     text = String(text).slice(0, 1500);
-    const answer = interpretCommand(p, text);
+    const answer = brainAnswer(p, text);
+    const turn = answer.turn || null;
     let newProfile = p;
     if (answer.automatic && answer.action)
       newProfile = applyCoachAction(p, answer.action).profile;
@@ -472,23 +493,104 @@ export function AppProvider({ children }) {
       exerciseIds: answer.exerciseIds,
       navigate: answer.navigate,
       tab: answer.tab,
+      brain: answer.brain,
       applied: !!answer.automatic,
       createdAt: Date.now(),
     };
-    updateProfile((q) => ({
-      ...newProfile,
-      messages: [
-        ...q.messages,
-        {
-          id: uid(),
-          role: "user",
-          text: String(text).slice(0, 1500),
-          createdAt: Date.now(),
-        },
-        a,
-      ].slice(-100),
-    }));
+    updateProfile((q) => {
+      const profile = newProfile === p ? q : newProfile;
+      // Crée l'éventuelle proposition mémoire sur le clone du profil : la
+      // mémoire reste distante de toute action sportive.
+      if (turn) applyBrainTurn(profile, turn);
+      return {
+        ...profile,
+        messages: [
+          ...q.messages,
+          {
+            id: uid(),
+            role: "user",
+            text: String(text).slice(0, 1500),
+            createdAt: Date.now(),
+          },
+          a,
+        ].slice(-100),
+      };
+    });
     speak(answer.text, p.preferences.voice);
+  };
+  // ————— Mémoire contrôlée : confirmation strictement manuelle —————
+  // Ces actions ne peuvent être appelées que depuis l'interface (le chat ne
+  // confirme jamais) : ce sont elles qui portent `via: "interface"`.
+  const brainConfirm = (id) => {
+    try {
+      const memory = findMemory(p, id);
+      if (!memory) throw new Error("Proposition mémoire introuvable.");
+      if (memory.state === "rejected")
+        throw new Error("Cette proposition a été refusée.");
+      if (memory.state === "confirmed") return;
+      if (isExpired(memory))
+        throw new Error(
+          "Cette proposition a expiré : elle n’est plus confirmable.",
+        );
+      updateProfile((q) => {
+        confirmMemory(q, id, { via: "interface" });
+      });
+      notify(
+        "Mémoire confirmée. Elle pourra être rappelée ; aucune action sportive n’a été déclenchée.",
+      );
+    } catch (e) {
+      notify(e.message, "error");
+    }
+  };
+  const brainReject = (id) => {
+    try {
+      const memory = findMemory(p, id);
+      if (!memory) throw new Error("Proposition mémoire introuvable.");
+      if (memory.state === "confirmed")
+        throw new Error("Une mémoire confirmée se supprime avec « Oublier ».");
+      updateProfile((q) => {
+        rejectMemory(q, id, { via: "interface" });
+      });
+      notify("Proposition refusée : elle ne sera ni rappelée ni reprise.");
+    } catch (e) {
+      notify(e.message, "error");
+    }
+  };
+  const brainForget = (id) => {
+    try {
+      if (!findMemory(p, id)) throw new Error("Mémoire introuvable.");
+      updateProfile((q) => {
+        forgetMemory(q, id);
+      });
+      notify("Mémoire supprimée.");
+    } catch (e) {
+      notify(e.message, "error");
+    }
+  };
+  const brainValidity = (id, days) => {
+    try {
+      if (!findMemory(p, id)) throw new Error("Mémoire introuvable.");
+      updateProfile((q) => {
+        setMemoryValidity(q, id, days);
+      });
+      notify(
+        days
+          ? `Validité mise à jour : ${days} jours.`
+          : "Validité mise à jour : permanente.",
+      );
+    } catch (e) {
+      notify(e.message, "error");
+    }
+  };
+  const brainToggle = (enabled) => {
+    updateProfile((q) => {
+      applyBrainEnabled(q, enabled);
+    });
+    notify(
+      enabled
+        ? "Fitness Brain activé : mémoire contrôlée locale, aucune donnée envoyée."
+        : "Fitness Brain désactivé : le coach déterministe reste pleinement utilisable.",
+    );
   };
   const applyMessage = (message, extra = {}) => {
     try {
@@ -547,6 +649,11 @@ export function AppProvider({ children }) {
     sendCoach,
     applyMessage,
     openExercise,
+    brainConfirm,
+    brainReject,
+    brainForget,
+    brainValidity,
+    brainToggle,
   };
   return <Context.Provider value={value}>{children}</Context.Provider>;
 }

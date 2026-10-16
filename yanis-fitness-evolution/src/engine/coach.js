@@ -12,6 +12,7 @@ import {
   numberLabel,
   monday,
   parseDate,
+  dayDiff,
 } from "./utils.js";
 import {
   EXERCISES,
@@ -49,6 +50,16 @@ import { nutritionTargets } from "./nutrition.js";
 import { archivePlan } from "./plan-memory.js";
 import { validDate } from "./validation.js";
 import { pauseTimer, advanceTimer } from "./timer.js";
+import {
+  weeklyCoachState,
+  applyCoachStateToSession,
+} from "./coach-state.js";
+import { isMetconFormat, metconLevel, metconMinutes } from "./source-schedule.js";
+// Fitness Brain local : le coach déterministe reste l'unique auteur des
+// actions sportives. Il ne lit ici que l'état de la mémoire contrôlée pour
+// répondre honnêtement quand le Brain est désactivé — jamais pour agir.
+import { brainEnabled } from "../brain/policy.js";
+import { memoryStats } from "../brain/memory.js";
 
 // ————— Normalisation —————
 const TYPO_FIXES = [
@@ -275,6 +286,23 @@ export const INTENTS = [
   { id: "weight", cues: [["mon poids", 5], ["je pese", 5], ["pesee", 5], ["balance", 4], ["maigrir", 4], ["perdre du poids", 5], ["prendre du poids", 5]] },
   { id: "recovery", cues: [["recuperation", 5], ["sommeil", 5], ["energie", 4], ["repos", 4], ["etirement", 4], ["mobilite", 4], ["souplesse", 4], ["respiration", 4]] },
   { id: "session", cues: [["ma seance", 5], ["seance du jour", 5], ["aujourd hui", 4], ["au programme", 5], ["je fais quoi", 5], ["on fait quoi", 5], ["prochaine seance", 5], ["planning", 3]] },
+  // Mémoire contrôlée : le coach ne mémorise rien lui-même (le Brain local
+  // s'en charge quand il est actif) ; il répond honnêtement sinon.
+  {
+    id: "memory",
+    cues: [
+      ["retiens", 6],
+      ["retiens bien", 6],
+      ["memorise", 6],
+      ["souviens toi", 6],
+      ["garde en memoire", 6],
+      ["ma memoire", 5],
+      ["memoire jarvis", 5],
+      ["qu est ce que tu sais sur moi", 6],
+      ["qu est ce que tu retiens", 6],
+      ["je veux que tu retiennes", 6],
+    ],
+  },
 ];
 export function scoreIntents(q, entities) {
   const scored = [];
@@ -298,6 +326,27 @@ export function specialResponses(p, q, entities, intentId, convo) {
   const turns = (p.messages || []).length,
     prefix = pick(TONE_PREFIX[toneFor(q)], turns),
     ctx = contextSnapshot(p);
+  // Le Brain local traite les commandes de mémoire quand il est actif (le
+  // routeur passe avant). Ce chemin reste utile quand il est désactivé ou
+  // appelé directement : on explique, on n'enregistre rien, on n'invente rien.
+  if (intentId === "memory") {
+    const stats = memoryStats(p);
+    if (!brainEnabled(p))
+      return {
+        text:
+          "Le Fitness Brain local est désactivé : je n’enregistre aucune mémoire, même sur demande explicite.\n\n" +
+          "Pour l’activer : Profil → Mémoire JARVIS. Le coach déterministe reste entièrement disponible pour votre programme, vos séances et vos charges.",
+        navigate: "profile",
+        tab: "brain",
+      };
+    return {
+      text:
+        `La mémoire contrôlée est active : ${stats.confirmed} mémoire(s) confirmée(s), ${stats.pending} proposition(s) en attente, ${stats.hypotheses} hypothèse(s).\n\n` +
+        "Je n’enregistre rien d’office : une proposition naît non confirmée et ne sert ni au rappel ni au contexte avant votre confirmation dans Profil → Mémoire JARVIS. Un « oui » dans le chat ne confirme jamais une mémoire.",
+      navigate: "profile",
+      tab: "brain",
+    };
+  }
   if (intentId === "smalltalk") {
     if (/merci/.test(q))
       return {
@@ -840,6 +889,24 @@ export function applyCoachAction(p, action, extra = {}) {
       detail = `Séance manquée conservée et reportée au ${r.date}.`;
       break;
     }
+    case "coach-state": {
+      const state = weeklyCoachState(q);
+      const target = q.workout || nextSession(q);
+      if (!target) throw new Error("Aucune séance à adapter.");
+      if (target.coachAdapted === today())
+        throw new Error("Cette séance a déjà été adaptée aujourd'hui.");
+      const changed = applyCoachStateToSession(target, state);
+      if (q.workout?.id === target.id) q.workout = target;
+      else
+        q.plan.sessions = q.plan.sessions.map((s) =>
+          s.id === target.id ? target : s,
+        );
+      detail =
+        state.volumeFactor >= 1
+          ? `Décision du coach : ${state.label}. ${state.detail}`
+          : `Décision appliquée (${state.label}) : volume ajusté à partir de vos retours réels, séries déjà réalisées conservées.`;
+      break;
+    }
     case "replace": {
       const to = exerciseById(extra.exerciseId);
       const s =
@@ -961,41 +1028,110 @@ export function followUpSchedule(dates, weeks = PHOTO_WEEKS, on = today()) {
     bientot: left > 0 && left <= FINDING_SOON_DAYS,
   };
 }
+function metconFormatFromItem(item) {
+  if (!item) return null;
+  const direct = [item.protocolId, item.format].find(isMetconFormat);
+  if (direct) return direct;
+  for (const component of item.components || []) {
+    const format = [component.protocolId, component.format].find(isMetconFormat);
+    if (format) return format;
+  }
+  const name = norm(item.name || item.title || "");
+  if (/metcon/.test(name) && /aqua tabata|aquatabata/.test(name))
+    return "metcon-aquatabata";
+  if (/metcon/.test(name) && /piscine|swim/.test(name))
+    return "metcon-piscine";
+  return null;
+}
+function isMetconRecord(item) {
+  return !!(
+    item &&
+    (item.type === "metcon" ||
+      metconFormatFromItem(item) ||
+      /\bmetcon\b/.test(norm(item.name || item.title || "")))
+  );
+}
+export function weeklyMetconSuggestion(p, on = today()) {
+  if (!p || p.id !== "emilie") return null;
+  const weekStart = monday(on),
+    weekEnd = addDays(weekStart, 6),
+    recovery = recoveryScore(p, on).score;
+  if (recovery != null && recovery < 45) return null;
+
+  const activities = [...(p.activities || []), ...(p.sessions || [])];
+  const planned = [...(p.plan?.sessions || []), ...(p.workout ? [p.workout] : [])];
+  const inWeek = (item) =>
+    item?.date >= weekStart && item?.date <= weekEnd && isMetconRecord(item);
+  if ([...activities, ...planned].some(inWeek)) return null;
+  if (
+    Object.entries(p.preferences?.cardioChoices || {}).some(
+      ([date, format]) =>
+        date >= weekStart && date <= weekEnd && isMetconFormat(format),
+    )
+  )
+    return null;
+
+  const history = [];
+  for (const item of [...activities, ...planned])
+    if (item?.date < weekStart && isMetconRecord(item))
+      history.push({ date: item.date, format: metconFormatFromItem(item) });
+  for (const [date, format] of Object.entries(
+    p.preferences?.cardioChoices || {},
+  ))
+    if (date < weekStart && isMetconFormat(format)) history.push({ date, format });
+  history.sort((a, b) => a.date.localeCompare(b.date));
+  const previousFormat = history.at(-1)?.format;
+  const weekIndex = Math.max(
+    0,
+    Math.floor(dayDiff(weekStart, monday(p.user?.startDate || weekStart)) / 7),
+  );
+  const format = previousFormat
+    ? previousFormat === "metcon-piscine"
+      ? "metcon-aquatabata"
+      : "metcon-piscine"
+    : weekIndex % 2 === 0
+      ? "metcon-piscine"
+      : "metcon-aquatabata";
+  return {
+    key: `weekly-metcon-${weekStart}`,
+    weekStart,
+    format,
+    level: metconLevel(p),
+    minutes: metconMinutes(format, metconLevel(p)),
+  };
+}
 export function coachFindings(p, on = today()) {
   if (!p) return [];
   const findings = [];
-  const painDates = Object.entries(p.checkIns || {})
-    .filter(
-      ([date, c]) => c?.painReported && daysBetween(date, on) <= 3,
-    )
-    .map(([date]) => date)
-    .sort();
-  if (painDates.length)
+  // Décision unique de la semaine (chantier 1 — A) : douleur, récupération
+  // basse, fatigue du bilan, RPE élevé et reprise après coupure passent tous
+  // par la même voix, avec les chiffres réels qui la justifient.
+  const state = weeklyCoachState(p, on);
+  const adapted =
+    (p.workout || nextSession(p))?.coachAdapted === today();
+  if (
+    ["protect", "deload", "lighten", "reprise"].includes(state.decision) &&
+    !adapted
+  )
     findings.push({
-      key: `watch-pain-${painDates[painDates.length - 1]}`,
-      severity: "high",
-      title: "Une douleur a été signalée",
+      key: `coach-state-${state.decision}-${on}`,
+      severity: state.severity === "high" ? "high" : "medium",
+      title: `Décision du coach : ${state.label}`,
       detail:
-        "Votre prochaine séance n’en tient pas encore compte. Je peux alléger le volume et éviter les mouvements sur la zone concernée, en gardant vos séries déjà réalisées.",
-      action: { type: "fatigue" },
+        state.detail +
+        (state.reasons.length
+          ? ` Mesuré sur : ${state.reasons.join(" ; ")}.`
+          : ""),
+      action: { type: "coach-state" },
     });
-  const scores = [];
-  for (let i = 0; i < RECOVERY_WATCH_DAYS; i++) {
-    const date = addDays(on, -i);
-    if (!p.checkIns?.[date]) continue;
-    const s = recoveryScore(p, date).score;
-    if (s != null) scores.push(s);
-  }
-  if (scores.length >= RECOVERY_WATCH_DAYS && scores.every((s) => s < LOW_RECOVERY)) {
-    const avg = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+  else if (state.decision === "progress")
     findings.push({
-      key: `watch-recovery-${on}`,
-      severity: "high",
-      title: "Votre récupération reste basse",
-      detail: `Score moyen de ${avg}/100 sur ${scores.length} jours. Ce n’est pas un mauvais jour isolé. Je peux réduire le volume de la prochaine séance sans toucher au programme d’origine.`,
-      action: { type: "fatigue" },
+      key: `coach-state-progress-${on}`,
+      severity: "low",
+      title: `Décision du coach : ${state.label}`,
+      detail: state.detail,
+      action: { type: "navigate", page: "training" },
     });
-  }
   const past = (p.plan?.sessions || [])
     .filter((s) => s.date < on)
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -1009,28 +1145,9 @@ export function coachFindings(p, on = today()) {
       severity: "medium",
       title: `${missedStreak} séances non réalisées`,
       detail:
-        "Un programme qu’on ne suit pas n’est pas le bon programme. Plutôt que de rattraper, je peux le réajuster à votre rythme réel — quitte à réduire la fréquence.",
+        "Un programme qu’on ne suit pas n’est pas le bon programme. Je peux réajuster la fréquence à votre rythme réel (bouton ci-dessous) ; vous pouvez aussi replacer une séance manquée depuis la page Programme.",
       action: { type: "replan" },
     });
-  const lastSessionDate = [...(p.sessions || [])]
-    .filter((s) => s.status === "completed" && s.date <= on)
-    .map((s) => s.date)
-    .sort()
-    .pop();
-  if (lastSessionDate) {
-    const gap = daysBetween(lastSessionDate, on);
-    if (gap >= FINDING_GAP_DAYS)
-      findings.push({
-        key: `watch-gap-${lastSessionDate}`,
-        severity: gap >= 21 ? "high" : "medium",
-        title: `${gap} jours sans séance`,
-        detail:
-          gap >= 21
-            ? "Après une coupure de cette durée, reprendre aux charges d’avant expose à la blessure. Je peux proposer une reprise progressive."
-            : "Une reprise en douceur vaut mieux qu’un rattrapage. Je peux alléger la première séance.",
-        action: { type: "fatigue" },
-      });
-  }
   const force = forceRevalState(p);
   if (!force.due && force.done && force.days != null && force.days <= FINDING_SOON_DAYS)
     findings.push({
@@ -1094,6 +1211,15 @@ export function coachFindings(p, on = today()) {
         ? `Vos charges sont calculées sur un bilan du ${force.last}. Refaites le test pour qu’elles restent justes.`
         : "Vos charges sont estimées d’après votre journal seulement. Un bilan 1RM les rendrait fiables.",
       action: { type: "navigate", page: "force" },
+    });
+  const metcon = weeklyMetconSuggestion(p, on);
+  if (metcon)
+    findings.push({
+      key: metcon.key,
+      severity: "low",
+      title: "METCON de la semaine",
+      detail: `Une proposition : ${metcon.format === "metcon-piscine" ? "METCON Piscine" : "METCON Aqua Tabata"}, ${metcon.minutes} min au niveau ${metcon.level + 1}. Rien n’est choisi à votre place.`,
+      action: { type: "navigate", page: "cardio" },
     });
   const order = { high: 0, medium: 1, low: 2 };
   return findings.sort((a, b) => order[a.severity] - order[b.severity]);

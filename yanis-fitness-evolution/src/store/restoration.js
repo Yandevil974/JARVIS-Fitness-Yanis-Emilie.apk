@@ -1,5 +1,6 @@
 import { initialState, migrateLegacy } from "./model.js";
 import { validateState } from "./schema.js";
+import { defaultBrainState } from "../brain/policy.js";
 import { archivePlan } from "../engine/plan-memory.js";
 import { generatePlan } from "../engine/planner.js";
 import { today, num } from "../engine/utils.js";
@@ -243,6 +244,23 @@ export function restoreProfile(state, input) {
   merged.badges = [
     ...new Set([...(old.badges || []), ...(validated.badges || [])]),
   ];
+  // Mémoire contrôlée du Brain : la mémoire locale (et son interrupteur) est
+  // conservée ; les entrées apportées par la sauvegarde sont ajoutées sans
+  // écraser une entrée locale de même identifiant. Une sauvegarde sans `brain`
+  // reste compatible : elle n'en apporte simplement aucune.
+  const brainMemories = new Map();
+  for (const memory of old.brain?.memories || [])
+    brainMemories.set(memory.id, structuredClone(memory));
+  for (const memory of validated.brain?.memories || [])
+    if (!brainMemories.has(memory.id))
+      brainMemories.set(memory.id, structuredClone(memory));
+  merged.brain = {
+    ...defaultBrainState(),
+    ...(validated.brain || {}),
+    ...(old.brain || {}),
+    enabled: old.brain?.enabled ?? validated.brain?.enabled ?? true,
+    memories: [...brainMemories.values()],
+  };
   for (const k of [
     "legacyArchive",
     "legacyReports",

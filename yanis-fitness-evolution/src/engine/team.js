@@ -4,10 +4,11 @@ import {
   sourceRecentRecovery,
   sourceDay,
 } from "./source-schedule.js";
-import { allSets } from "./fitness.js";
+import { allSets, allSessions } from "./fitness.js";
 import { nutritionTargets } from "./nutrition.js";
 import { today, addDays, numberLabel, round, num } from "./utils.js";
 import { plannedSessions } from "./plan-memory.js";
+import { weeklyCoachState } from "./coach-state.js";
 export function teamWeek(p, index = sourcePosition(p).weekGlobal) {
   const start = addDays(p.user.startDate || today(), index * 7),
     end = addDays(start, 6);
@@ -60,6 +61,14 @@ export function teamAdvice(p, review, week = review.week) {
   const s = teamWeek(p, week),
     messages = [];
   const add = (tag, text) => messages.push({ tag, text });
+  // Une seule voix (chantier 1 — A) : la décision hebdomadaire du coach ouvre
+  // le bilan, calculée sur les données réelles, bilan qui vient d'être saisi
+  // compris. Les messages spécialisés viennent ensuite, sans la contredire.
+  const state = weeklyCoachState(p, today(), review);
+  add(
+    "Coach",
+    `Décision de la semaine : ${state.label}. ${state.detail}`,
+  );
   if (s.planned && s.completed + s.partial < s.planned)
     add(
       "Coach",
@@ -133,10 +142,26 @@ export function teamInsights(p, date = today()) {
     lastWeight = [...p.measurements]
       .filter((m) => m.weight != null && m.date <= date)
       .sort((a, b) => b.date.localeCompare(a.date))[0];
+  // Chantier 1 — A et E : la décision unique de la semaine et des textes de
+  // rôles branchés sur vos données réelles (douleurs, énergie, échauffements).
+  const state = weeklyCoachState(p, date);
+  const weekAgo = addDays(date, -7);
+  const recentChecks = Object.entries(p.checkIns || {}).filter(
+    ([d]) => d >= weekAgo && d <= date,
+  );
+  const painCount = recentChecks.filter(([, c]) => c?.painReported).length;
+  const lowEnergy = recentChecks.filter(
+    ([, c]) => num(c?.energy) != null && c.energy <= 2,
+  ).length;
+  const weekSessions = allSessions(p).filter(
+    (s) => s.date >= week.start && s.date <= week.end,
+  );
+  const warmups = weekSessions.filter((s) => s.warmupDone).length;
+  const cooldowns = weekSessions.filter((s) => s.cooldownDone).length;
   return roles[p.id].map((r, i) => {
     let text = "";
     if (i === 0)
-      text = `Votre phase : ${pos.phase.titre}. Semaine ${pos.weekGlobal + 1}/52. ${pos.deload ? "Allégement prévu par le HTML : environ 50 % du volume et pas de méthode intensive." : `${week.planned} séances de musculation sont prévues cette semaine par la logique du fichier.`} Le programme d’origine et vos adaptations éventuelles sont distincts.`;
+      text = `Votre phase : ${pos.phase.titre}. Semaine ${pos.weekGlobal + 1}/52. ${pos.deload ? "Allégement prévu par le HTML : environ 50 % du volume et pas de méthode intensive." : `${week.planned} séances de musculation sont prévues cette semaine par la logique du fichier.`} Décision du coach : ${state.label}. ${state.detail}`;
     else if (i === 1)
       text =
         p.id === "elite"
@@ -153,13 +178,25 @@ export function teamInsights(p, date = today()) {
     else if (i === 3)
       text = `${week.completed}/${week.planned} séances musculaires validées cette semaine. ${latestReview ? `Dernier bilan enregistré le ${latestReview.date}. Vos ressentis et vos questions sont conservés avec les retours reçus.` : "Votre premier bilan permettra de conserver vos ressentis, difficultés et questions."}`;
     else if (i === 4)
-      text =
-        "Échauffement, progression maîtrisée, repos et hydratation restent importants. Douleur aiguë, malaise ou fatigue inhabituelle : arrêtez l’effort et demandez un avis compétent. Ces messages sont automatiques et ne constituent pas une consultation.";
+      text = `${
+        painCount
+          ? `${painCount} douleur${painCount > 1 ? "s" : ""} signalée${painCount > 1 ? "s" : ""} sur les 7 derniers jours : les mouvements douloureux doivent être retirés, pas forcés, et la décision du coach en tient compte. `
+          : "Aucune douleur signalée sur les 7 derniers jours. "
+      }${
+        lowEnergy
+          ? `${lowEnergy} jour${lowEnergy > 1 ? "s" : ""} à énergie basse déclarée : sommeil et alimentation d'abord. `
+          : ""
+      }Échauffement, progression maîtrisée, repos et hydratation restent importants. Douleur aiguë, malaise ou fatigue inhabituelle : arrêtez l’effort et demandez un avis compétent. Ces messages sont automatiques et ne constituent pas une consultation.`;
     else if (i === 5)
-      text =
+      text = `${
+        warmups || cooldowns
+          ? `Cette semaine : ${warmups} échauffement${warmups > 1 ? "s" : ""} validé${warmups > 1 ? "s" : ""}, ${cooldowns} retour${cooldowns > 1 ? "s" : ""} au calme. `
+          : "Aucun échauffement validé cette semaine pour l'instant : cinq minutes suffisent avant la première charge. "
+      }${
         p.id === "elite"
-          ? "La mobilité hanches/épaules et les séries d’approche précèdent l’effort. Les validations d’échauffement et d’étirements importées restent dans votre journal. Utilisez le module Récupération pour les protocoles guidés."
-          : "L’activation fessiers et la mobilité de hanche restent présentes avant les séances du fichier. Les validations d’échauffement et de retour au calme sont conservées séparément des performances.";
+          ? "La mobilité hanches/épaules et les séries d’approche précèdent l’effort. Les validations d’échauffement et d’étirements restent dans votre journal. Utilisez le module Récupération pour les protocoles guidés."
+          : "L’activation fessiers et la mobilité de hanche précèdent les séances du fichier. Les validations d’échauffement et de retour au calme sont conservées séparément des performances."
+      }`;
     else if (i === 6)
       text = `Prescription du mois : ${pos.phase.metcon}. ${pos.deload ? "Cette semaine est allégée : pas de séance intense." : p.id === "elite" ? "Les journées METCON contiennent les deux blocs du coach source : elliptique, transition, puis piscine." : "Le cardio après musculation et les jours piscine sont affichés dans votre semaine."} Les durées réalisées se confirment à part.`;
     else
