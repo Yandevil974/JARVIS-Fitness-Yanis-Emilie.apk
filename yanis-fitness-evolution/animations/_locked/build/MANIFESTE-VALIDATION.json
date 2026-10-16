@@ -72,12 +72,13 @@
         {
           "num": 4,
           "etiquette": "Position de l'enfant / Balasana (dos, lombaires)",
-          "gif": "candidats/2026-10-16-etirement-lot1/GIF-03-balasana-fluide-v2.gif",
+          "gif": "candidats/2026-10-16-etirement-lot1/GIF-03-balasana-fluide-v3.gif",
           "recommandations": [
             "Genoux au sol, hanches vers les talons, bras tendus devant, front vers le sol, respiration dans le dos, 30-45 s.",
             "Mesuré CONFORME : sol 228-235, saturation 42-44, lime ≤ 0,06 %."
           ],
-          "etat": "à valider"
+          "etat": "à valider",
+          "mesures": "GIF v3 : volume musculaire référence restauré ; 7/7 frames CONFORME"
         }
       ]
     },
@@ -108,13 +109,13 @@
         {
           "num": 7,
           "etiquette": "Mains croisées derrière le dos (épaule avant)",
-          "gif": "candidats/2026-10-16-etirement-lot2/GIF-03-mains-croisees-dos-fluide-v2.gif",
+          "gif": "candidats/2026-10-16-etirement-lot2/GIF-03-mains-croisees-dos-fluide-v3.gif",
           "recommandations": [
             "Doigts entrelacés derrière le dos, bras tendus et éloignés du dos, poitrine ouverte, épaules basses, 30 s.",
             "Mer 2,4-2,5 % : dans la plage acceptable 2,3-2,9 après contrôle visuel (mer visible au fond)."
           ],
           "etat": "à valider",
-          "mesures": "GIF v2 : volume musculaire référence restauré ; sol 229-242 (bande 219-253), mer FAIBLE = seule réserve (idem v1 accepté)"
+          "mesures": "GIF v3 : poteau marbre retiré (décoratif) + volume musculaire référence ; sol 226-244 (bande 219-253), mer FAIBLE = seule réserve"
         }
       ]
     },
@@ -130,7 +131,7 @@
             "Sol 228-242 (dans la bande 219-253), saturation 39-40, mer 2,6-2,7 % (plage acceptable après contrôle visuel)."
           ],
           "etat": "à valider",
-          "mesures": "GIF v2 : volume musculaire référence restauré ; sol 235-243 (bande 219-253), mer FAIBLE = seule réserve (idem v1 accepté)"
+          "mesures": "GIF v2 (volume référence) ; v3 sans poteau en production : cohérence fond des clés M/B en refabrication"
         }
       ]
     },
