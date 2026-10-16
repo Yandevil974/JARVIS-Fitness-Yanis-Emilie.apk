@@ -1,53 +1,44 @@
-# 📲 INSTALLER L'APPLICATION — Yanis Fitness Evolution 1.8.2
+# 📲 Installer Yanis Fitness Evolution 1.8.3
 
-**JARVIS (mémoire contrôlée) + toutes les animations musculation, échauffement, piscine, aqua.**
+**Release stable du 16 octobre 2026** — base applicative 1.8.2, avec les trois GIFs d'étirement approuvés. La release GitHub `v1.8.3-jarvis-animations` est la release stable `latest`.
 
----
+## 1. Télécharger
 
-## 1) Télécharger (lien principal)
+- **[Télécharger l'APK 1.8.3](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk)**
+- [Télécharger le fichier SHA-256](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk.sha256)
+- [Ouvrir la page de la release](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.8.3-jarvis-animations)
 
-👉 **https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.2-jarvis-animations/yanis-fitness-evolution-1.8.2.apk**
+## 2. Vérifier le fichier téléchargé
 
-## 2) Si le 1ᵉʳ lien ne fonctionne pas (lien de secours, autre serveur)
-
-👉 **https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/f2bd110d-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.2.apk**
-
----
-
-## ✅ Vérifier AVANT d'installer (le point le plus important)
-
-| À vérifier | Valeur attendue |
+| Élément | Valeur attendue |
 |---|---|
-| **Taille du fichier** | **95 561 328 octets** (≈ **91,1 Mo**) |
-| Empreinte SHA-256 | `540f15ed8a4ae2f3cf846dd2977d8dce99a024bdb1e9507b7b4eef34abfa3b31` |
-| Nom | `yanis-fitness-evolution-1.8.2.apk` |
+| Nom | `yanis-fitness-evolution-1.8.3.apk` |
+| Taille | **97 214 600 octets** (≈ **92,7 Mio**) |
+| SHA-256 | `f824af57a32a21da651a26fdfa2aefa7d1c6a540fe257602435c0d126ee16be2` |
 
-> Si la taille est **plus petite**, le téléchargement s'est arrêté en route : c'est LA cause n°1 de
-> « **Application non installée** ». Relancez le téléchargement en Wi-Fi.
+Le SHA-256 est aussi fourni par l'API des assets GitHub et dans le fichier `.apk.sha256` attaché à la release. Pour vérifier sur macOS/Linux :
 
-## 3) Installer
+```sh
+sha256sum yanis-fitness-evolution-1.8.3.apk
+```
 
-1. Espace libre : **au moins 300 Mo** sur le téléphone.
-2. Ouvrir le fichier dans **Chrome** (barre de notifications → « Ouvrir »), pas dans un aperçu.
-3. Autoriser **« Installer des applications inconnues »** pour **Chrome** *et* pour **Fichiers**.
-4. Si Play Protect affiche un avertissement : **« Installer quand même »**.
-5. C'est une **mise à jour** : même application (`app.yanis.fitness.evolution`), versionCode **184**
-   (au-dessus de 180 de la 1.8.0). Vos données sont conservées.
+Sous Windows :
 
-## 4) Utiliser l'application sans l'installer (dépannage immédiat)
+```bat
+certutil -hashfile yanis-fitness-evolution-1.8.3.apk SHA256
+```
 
-L'application est aussi disponible **dans le navigateur du téléphone** (aperçu en direct) : elle
-affiche les mêmes écrans et les mêmes animations, sans rien installer.
+La somme doit correspondre exactement à la valeur ci-dessus. Si la taille est inférieure, le téléchargement est incomplet : recommencez, de préférence en Wi-Fi.
 
----
+## 3. Installer ou mettre à jour
 
-### Contrôles déjà faits sur ce fichier (16/10/2026)
+1. Prévoir au moins **300 Mo** d'espace libre et utiliser Android **8.0 ou plus récent**.
+2. Télécharger l'APK puis l'ouvrir depuis la notification de téléchargement ou l'application **Fichiers**.
+3. Si Android le demande, autoriser temporairement l'installation d'applications inconnues pour le navigateur ou l'application Fichiers.
+4. Confirmer l'installation. Si l'application 1.8.2 est déjà installée, installer cette version **par-dessus** : ne désinstallez pas l'ancienne application.
 
-- Intégrité de l'archive : **aucune erreur** · taille **95 561 328 octets** · SHA-256 conforme.
-- Manifeste : `app.yanis.fitness.evolution`, **1.8.2 / versionCode 184**, Android **8.0 minimum**.
-- Signature : **schéma v2 valide**, certificat **identique** à celui de la 1.7.2 déjà installée
-  (aucune rupture de clé) · `resources.arsc` stocké non compressé et aligné (exigence Android 11+).
-- Contenu : 405 médias, **les 3 GIF du lot 1** (développé couché barre, tractions prise large,
-  fentes barre) + échauffement + abduction, et le module **JARVIS / mémoire** de la 1.8.0.
+C'est la même application Android, identifiant `app.yanis.fitness.evolution`, signée avec la clé du projet. La version installée passe de **versionCode 184** à **185** (versionName **1.8.3**); Android l'accepte comme mise à jour et les données locales sont conservées.
 
-Détail complet : `yanis-fitness-evolution/verification/RAPPORT-VERIFICATION-APK-1.8.2.md`
+## Contrôles de livraison
+
+Le build de release a été exécuté sur GitHub Actions depuis le commit `1096a967080a24ce01cd3c60be3e44339d7a3a19`. Les tests passent (**154 au total, 152 réussis, 2 ignorés, aucun échec**). Le workflow a validé le manifeste/version Android, la signature APK, le nombre complet de médias embarqués et la présence des trois GIFs d'étirement ainsi que des trois GIFs témoins du lot musculation.

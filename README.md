@@ -1,18 +1,33 @@
 # 📲 INSTALLER L'APPLICATION (lien direct)
 
-**Yanis Fitness Evolution 1.8.2 — JARVIS + toutes les animations**
-👉 https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.2-jarvis-animations/yanis-fitness-evolution-1.8.2.apk
+**Yanis Fitness Evolution 1.8.3 — base 1.8.2 + GIFs d'étirement approuvés**
 
-Taille à vérifier : **95 561 328 octets (91,1 Mo)** — un fichier plus petit = téléchargement interrompu.
-Mode d'emploi complet (vérifications, installation, lien de secours) : **[INSTALLER-APPLI.md](INSTALLER-APPLI.md)**
+- **APK :** [Télécharger Yanis Fitness Evolution 1.8.3](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk)
+- **SHA-256 :** `f824af57a32a21da651a26fdfa2aefa7d1c6a540fe257602435c0d126ee16be2`
+- **Fichier de contrôle :** [yanis-fitness-evolution-1.8.3.apk.sha256](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk.sha256)
+- **Taille :** 97 214 600 octets (≈ 92,7 Mio) — un fichier plus petit indique un téléchargement interrompu.
+
+Version installable : **versionName 1.8.3 / versionCode 185**. Mode d'emploi complet : **[INSTALLER-APPLI.md](INSTALLER-APPLI.md)**.
 
 ---
 
 # JARVIS-Fitness-Yanis-Emilie.apk
 
-## Version à installer — diversification piscine/aqua (1.7.2)
+## Version actuelle — GIFs d'étirement approuvés (1.8.3)
 
-**[Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk](downloads/Yanis-Fitness-Evolution-1.7.2-pyramide-circuit-aqua.apk)** — APK signée, copie miroir de la release GitHub (87 796 244 octets ; SHA-256 vérifié dans le fichier `.sha256` joint).
+APK stable publiée le 16/10/2026 depuis le commit `1096a96` de la branche de livraison. Cette mise à jour reprend la base applicative 1.8.2 et intègre les trois animations d'étirement validées, sans remplacer les GIFs déjà conformes.
+
+- **APK :** [Téléchargement direct](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk)
+- **SHA-256 :** `f824af57a32a21da651a26fdfa2aefa7d1c6a540fe257602435c0d126ee16be2`
+- **Taille :** 97 214 600 octets (≈ 92,7 Mio)
+- **Android :** `app.yanis.fitness.evolution`, versionName **1.8.3**, versionCode **185** (mise à jour de 1.8.2 / 184)
+- **Contrôles CI :** tests applicatifs, manifeste Android, signature APK, inventaire complet des médias et présence des six GIF témoins; tous réussis.
+
+GIFs intégrés : encadrement de porte (`55d7d6060a20be1b.gif`), bras tendu contre le mur (`22f0bfbf80a63b77.gif`) et position de l'enfant / Balasana (`1eae9eb2d9e5bfea.gif`). Les fichiers sont joints à la [release 1.8.3](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.8.3-jarvis-animations), avec le fichier `.apk.sha256`.
+
+Tests locaux et CI : **154 tests, 152 réussis, 2 ignorés, 0 échec**.
+
+## Version précédente — diversification piscine/aqua (1.7.2)
 
 **Chantier 3 validé** — deux séances facultatives, lancées manuellement par Yanis ou Émilie :
 
@@ -21,7 +36,7 @@ Mode d'emploi complet (vérifications, installation, lien de secours) : **[INSTA
 - Aucun ajout à la programmation automatique ; les six protocoles source et les deux METCON validés restent inchangés.
 - Les mouvements et GIF existants sont réutilisés ; aucun média validé n'a été modifié.
 
-Tests : **136 au total, 134 réussis, 0 échec, 2 ignorés**. Build Android signé et publication GitHub réussis ; le miroir et son SHA-256 ont été vérifiés.
+Tests de cette version historique : **136 au total, 134 réussis, 0 échec, 2 ignorés**.
 
 E2E : dernière exécution complète connue en 1.7.0, avant ce chantier, **17 réussis, 0 échec, 11 ignorés**. Le nouveau scénario Playwright des séances optionnelles n'a pas pu être exécuté ici (Chromium absent et téléchargement indisponible).
 
@@ -142,13 +157,13 @@ animé. Contrôles : 209/209 exercices, 420 étapes de protocoles, 0 visuel intr
 
 ## Périmètre préservé et suite
 
-- Aucun APK d'origine modifié ; prescriptions, gestes et prises validés restent intouchés.
-- Le chantier 2 (METCON Piscine et Aqua Tabata pour Émilie) a été livré en 1.7.0 ; la diversification piscine/aqua du chantier 3 est livrée en 1.7.2.
-- Seul le chantier 4 — l'IA conversationnelle — reste à venir et demeure le dernier chantier. Voir `PASSATION-NOUVEAU-CHAT.md`.
+- La 1.8.3 est construite à partir de la base 1.8.2 sur la branche de livraison; elle est publiée comme release stable et devient la release `latest`.
+- Les changements antérieurs des versions 1.7.x décrits plus bas sont conservés comme historique, pas comme lien de téléchargement courant.
+- Les prochains lots d'animations suivent la passation et les validations visuelles requises; voir `PASSATION-NOUVEAU-CHAT.md`.
 
-## Vérifications
+## Vérifications de la livraison 1.8.3
 
-- `npm test` : **136 tests, 134 réussis, 0 échec, 2 ignorés**.
-- E2E : dernière exécution complète connue en 1.7.0, **17 réussis, 0 échec, 11 ignorés** ; le scénario Playwright des options piscine/aqua n'a pas pu être lancé localement (Chromium absent, téléchargement indisponible).
-- Couverture GIF vérifiée : 209/209 exercices, 58 positions d'étirement, 1920/1920 étapes piscine/aqua pour les profils homme et femme, 50/50 HIIT et 912/912 METCON.
-- APK 1.7.2 : build Android signé réussi via GitHub Actions ; miroir vérifié, **87 796 244 octets**, SHA-256 `ec89ec894635578dafabf41d460067f6ad2e8042c362d262c9f63aaabc868eaa`.
+- `npm test` en local et dans GitHub Actions : **154 tests, 152 réussis, 2 ignorés, 0 échec**.
+- Build Android release : réussi sur GitHub Actions depuis le tag `v1.8.3-jarvis-animations`, commit `1096a967080a24ce01cd3c60be3e44339d7a3a19`.
+- CI a confirmé le manifeste `app.yanis.fitness.evolution`, versionName `1.8.3`, versionCode `185`, la signature APK, et la présence de tous les médias de `release/media` ainsi que des six témoins GIF.
+- Release stable `latest` : APK **97 214 600 octets**, SHA-256 `f824af57a32a21da651a26fdfa2aefa7d1c6a540fe257602435c0d126ee16be2` (empreinte publiée par l'API GitHub; fichier `.apk.sha256` joint à la release).
