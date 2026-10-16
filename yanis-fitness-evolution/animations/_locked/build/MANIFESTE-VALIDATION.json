@@ -134,6 +134,18 @@
           ],
           "etat": "à valider",
           "mesures": "GIF v3 : poteau marbre retiré + volume référence ; fond cohérent NCC >=0.998 ; sol 227 OK, mer FAIBLE seule réserve"
+        },
+        {
+          "num": 9,
+          "etiquette": "Bras devant, main tirée (épaule postérieure) — vue de profil",
+          "gif": "",
+          "mesures": "EN PRODUCTION : refonte au prochain tour (sol bimodal ombre/soleil non calibrable)"
+        },
+        {
+          "num": 10,
+          "etiquette": "Bras derrière le dos mains jointes (pectoraux, épaule avant) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot3/GIF-03-bras-derriere-fluide-v1.gif",
+          "mesures": "sol 229 OK 7/7, mer 6,9-8,1 % (réajustée), coins BAS (plantes) = réserve"
         }
       ]
     },
@@ -145,6 +157,18 @@
           "gif": "candidats/2026-10-16-etirement-lot4/GIF-01-coude-dessus-tete-fluide-v1.gif",
           "mesures": "sol 219-227 (bande 219-253), mer 4,9-8,0 % (réajustée), sat 46, lime 0 ; coins BAS = réserve",
           "num": 11
+        },
+        {
+          "num": 12,
+          "etiquette": "Main dans le dos, flexion latérale (taille, obliques) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot4/GIF-02-main-dans-le-dos-fluide-v1.gif",
+          "mesures": "sol 229 OK 7/7, mer 5,9-6,6 % (réajustée), coins BAS = réserve"
+        },
+        {
+          "num": 13,
+          "etiquette": "Fléchisseurs de hanche à genou (psoas) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot4/GIF-03-flechisseurs-fluide-v1.gif",
+          "mesures": "sol 230 OK sur poses debout-genou clair ; poses M/B ombre portée dominante = édition anti-ombre au prochain tour"
         }
       ]
     },
@@ -153,7 +177,7 @@
       "entrees": [
         {
           "num": "—",
-          "etiquette": "Lots restants : lot3-02 (refonte sol), lot3-03 (M/B), lot4-02/03, lots 5-8 — 14 visuels en production",
+          "etiquette": "Lots restants : lot3-02 (refonte), lot4-03 M/B (anti-ombre), lot5-01 B, lot5-02/03, lots 6-8 — 12 visuels en production",
           "gif": "",
           "recommandations": [
             "Placeholder : chaque visuel restant aura sa propre entrée dès ses clés validées en interne (contrôle visuel + verifier-pose).",
