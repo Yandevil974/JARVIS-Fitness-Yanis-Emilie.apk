@@ -4,17 +4,22 @@ Plafond plateforme : 10 images générées par tour. Cette file ordonne le reste
 travail ; chaque entrée = 1 appel generate_image. Cocher au fur et à mesure.
 
 ## Module 1 (urgent)
-- [ ] P2-vide : édition de pose-02-final.png « retirer athlète + machine » (plaque de fond scène P2)
-- [ ] P3-vide : édition de pose-03-propre.png « retirer athlète + machine » (plaque de fond scène P3)
-      → puis matte par différence + composite sur decor-E1-elliptique-vide-v1
-      (composite-elliptique.py v3 à repasser en matage différence) ; le crochet
-      résiduel de pose-03-propre est recopié depuis P3-vide (fond vrai, sans bavure).
-- [ ] scapulaire M : édition de pose-02-final.png « poitrine descendue à mi-course »
-      (delta moyen = accepté par l'éditeur, cf. lot1 M)
+- [x] P2-vide, P3-vide : plaques de fond générées (decor-E1-elliptique-P2/P3-vide-v1)
+- [x] scapulaire M : pose-M-micourse-v5 (point médian, scène identique) → GIF scapulaire fluide v1 CONFORME (mesuré)
+- [ ] POSE 3 PROPRE : le patch plaque P3 a cassé la poignée loin (le masque « crochet »
+      mordait sur la barre noire) → abandon du patch. Nouvelle voie : génération
+      text-to-image (sans image source) « phase avant + machine à 2 poignées »,
+      puis SA plaque vide (édition), puis matage différence + composite
+      (composite-elliptique.py v3) sur decor-E1-elliptique-vide-v1.
+      = 2 générations (P3-t2i, P3-t2i-vide)
+- [ ] GIF elliptique fluide = composite P1, P2, P3-propre (loop 0,1,2,1 + flous)
 
 ## Module 2 — lot 1 (clés A/M/B : 01 et 02 prêtes)
-- [ ] 03-balasana M : édition de 03-position-de-l-enfant-POSE.png ? non : édition de
-      03-balāsana-A-v2.png « buste à mi-hauteur, bras mi-tendus » (vérifier A d'abord)
+- [x] 01 : GIF fluide v2 CONFORME-mesuré (mer 2,2-2,7 % = acceptable, contrôle visuel mer présente)
+- [x] 03 : M-v3 ok (scène identique) → GIF fluide v2 CONFORME
+- [ ] 02 : M-v3 (dérive caméra) et M-v4 (torse trop doré, colonne décalée) REJETÉS
+      → réessayer M : édition de A-v2, delta moyen, verrou « colonne au même pixel,
+      torse : pectoraux dorés seuls, abdominaux blanc argent comme la source »
 
 ## Module 2 — lots 2 à 8 (19 visuels × 3 clés A, M, B)
 Lot 2 : suspension-barre · torsion-allongee · mains-croisees-dos
