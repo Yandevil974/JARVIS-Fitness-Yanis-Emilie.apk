@@ -1,3 +1,56 @@
+# ⚠ CORRECTION D'ORDRE — 16 octobre 2026 : le module EN COURS est le 2 (ÉTIREMENT)
+
+L'utilisateur a rappelé le 16/10 la règle non négociable : **module par module, dans l'ordre,
+terminer un module avant le suivant** (passation §3).
+
+## Ce qui a été mal fait
+
+Le tableau du 15/10 annonçait « **2 | Étirement | 🟢 OK — 100 % des visuels (29)** » et les sessions
+suivantes sont passées au **module 3 (musculation)** sur cette base.
+
+Mesure du 16/10 : ces 29 visuels sont ceux du **corpus 1.8.0** — humains en **salle de sport**,
+**parquet**, muscles **vert lime**.
+
+| Contrôle du module 2 | Résultat |
+|---|---|
+| Étapes couvertes (aucune étape sans image) | 24 / 24 |
+| **Visuels conformes à la charte (athlète verrouillé, terrasse-mer, sol sablé clair)** | **0 / 29** ❌ |
+
+« OK » voulait donc dire « aucune étape vide », **pas** « conforme à la charte ». Le module 2
+n'était pas terminé : il a été commencé trop tard, et le module 3 ouvert trop tôt.
+
+## Ordre rétabli
+
+| # | Module | État réel au 16/10 |
+|---|---|---|
+| 1 | Échauffement | ✅ terminé (3 GIF charte terrasse-mer couvrant les 6 étapes) |
+| 2 | Étirement | 🔴 **EN COURS — module prioritaire. 22 visuels à refaire, 0 conformes** |
+| 3 | Musculation | ⏸ **en pause** : 3 GIF charte intégrés + 18 visuels repassés en charte, le reste attend |
+| 4 à 9 | fractionné, chronométrée, elliptique, piscine, tabata, aqua | ⏸ non ouverts |
+
+**Aucun travail ne reprend sur le module 3 avant que le module 2 soit terminé** (22/22 visuels
+conformes, intégrés, tests OK).
+
+## Plan mesuré du module 2 — 24 étapes, 22 visuels uniques, 8 lots de 3
+
+Protocole appliqué sans exception, lot par lot : **3 images fixes → accord écrit de l'utilisateur
+→ 3 GIF → présentation → accord écrit → intégration**.
+
+| Lot | Visuels |
+|---|---|
+| 1 (prêt, présenté) | Étirement dans l'encadrement de porte (pec, support = montant de marbre de la terrasse) · Bras tendu contre le mur (pec) · Position de l'enfant / Balasana (dos, lom) |
+| 2 | Suspension à la barre (dos) · Torsion allongée / genoux (dos, lom) · Mains croisées derrière le dos (epA) |
+| 3 | Bras tendu contre la poitrine (epL) · Bras tendu devant, main tirée (epP) · Bras tendu derrière (bic) |
+| 4 | Coude au-dessus de la tête (tri) · Main dans le dos (tri) · Étirement des fléchisseurs (avb) |
+| 5 | Étirement des extenseurs (avb) · Étirement du cobra (abs) · Pigeon assis (fes) |
+| 6 | Talon vers la fesse debout (qua) · Allongé sur le côté (qua) · Flexion avant jambes tendues (isc) |
+| 7 | Une jambe tendue, une pliée (isc) · Grenouille plantes jointes (add) · Étirement contre le mur (mol) |
+| 8 | Mollet en escalier (mol) |
+
+Notes de comptage : 24 étapes mais **22 visuels** (Balasana sert au groupe « dos » et au groupe
+« lom » ; Torsion allongée sert à « dos » et « lom »). Dernier lot = 1 visuel.
+
+---
 # ÉTAT DES 9 MODULES — 16 octobre 2026 (fusion JARVIS 1.8.0 + animations)
 
 ## 16/10/2026 — FUSION DES DEUX LIGNES (demande utilisateur : « la dernière version de jarvis
