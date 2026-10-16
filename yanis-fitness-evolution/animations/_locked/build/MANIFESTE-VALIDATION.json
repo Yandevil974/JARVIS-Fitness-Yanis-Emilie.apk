@@ -87,12 +87,13 @@
         {
           "num": 5,
           "etiquette": "Suspension à la barre (dos)",
-          "gif": "candidats/2026-10-16-etirement-lot2/GIF-01-suspension-barre-fluide-v1.gif",
+          "gif": "candidats/2026-10-16-etirement-lot2/GIF-01-suspension-barre-fluide-v2.gif",
           "recommandations": [
             "Prise un peu plus large que les épaules, coudes tendus, corps gainé, 20-30 s.",
             "Mesuré CONFORME après réétalonnage du sol sablé : sol_dom 235, saturation 42, lime 0 %."
           ],
-          "etat": "à valider"
+          "etat": "à valider",
+          "mesures": "GIF v2 : volume musculaire référence restauré (+30 %), 7/7 frames CONFORME (sol 226-236, sat 42)"
         },
         {
           "num": 6,
@@ -107,12 +108,13 @@
         {
           "num": 7,
           "etiquette": "Mains croisées derrière le dos (épaule avant)",
-          "gif": "candidats/2026-10-16-etirement-lot2/GIF-03-mains-croisees-dos-fluide-v1.gif",
+          "gif": "candidats/2026-10-16-etirement-lot2/GIF-03-mains-croisees-dos-fluide-v2.gif",
           "recommandations": [
             "Doigts entrelacés derrière le dos, bras tendus et éloignés du dos, poitrine ouverte, épaules basses, 30 s.",
             "Mer 2,4-2,5 % : dans la plage acceptable 2,3-2,9 après contrôle visuel (mer visible au fond)."
           ],
-          "etat": "à valider"
+          "etat": "à valider",
+          "mesures": "GIF v2 : volume musculaire référence restauré ; sol 229-242 (bande 219-253), mer FAIBLE = seule réserve (idem v1 accepté)"
         }
       ]
     },
@@ -122,12 +124,13 @@
         {
           "num": 8,
           "etiquette": "Bras tendu contre la poitrine (épaule latérale)",
-          "gif": "candidats/2026-10-16-etirement-lot3/GIF-01-bras-contre-poitrine-fluide-v1.gif",
+          "gif": "candidats/2026-10-16-etirement-lot3/GIF-01-bras-contre-poitrine-fluide-v2.gif",
           "recommandations": [
             "Bras horizontal à hauteur de poitrine, avant-bras opposé en crochet, traction vers le corps, épaule basse, 30 s par côté.",
             "Sol 228-242 (dans la bande 219-253), saturation 39-40, mer 2,6-2,7 % (plage acceptable après contrôle visuel)."
           ],
-          "etat": "à valider"
+          "etat": "à valider",
+          "mesures": "GIF v2 : volume musculaire référence restauré ; sol 235-243 (bande 219-253), mer FAIBLE = seule réserve (idem v1 accepté)"
         }
       ]
     },
