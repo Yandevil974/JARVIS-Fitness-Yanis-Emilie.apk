@@ -52,22 +52,24 @@
         {
           "num": 2,
           "etiquette": "Étirement dans l'encadrement de porte (pec) — appui = montant de marbre de la terrasse",
-          "gif": "candidats/2026-10-16-etirement-lot1/GIF-01-encadrement-porte-fluide-v2.gif",
+          "gif": "candidats/2026-10-16-etirement-lot1/GIF-01-encadrement-porte-fluide-v3.gif",
           "recommandations": [
             "Appui à hauteur d'épaule, coude ~90°, thorax incliné vers l'avant, abdos engagés, 30-45 s.",
             "Mesuré : sol 227-234, saturation 37-39, mer 2,2-2,7 % (plage acceptable 2,3-2,9 après contrôle visuel : mer présente au fond)."
           ],
-          "etat": "à valider"
+          "etat": "à valider",
+          "mesures": "GIF v3 : volume musculaire référence ; poteau conservé = appui main (encadrement) ; sol 228-243 (bande 219-253), mer FAIBLE seule réserve"
         },
         {
           "num": 3,
           "etiquette": "Bras tendu contre le mur (pec)",
-          "gif": "candidats/2026-10-16-etirement-lot1/GIF-02-bras-mur-fluide-v3.gif",
+          "gif": "candidats/2026-10-16-etirement-lot1/GIF-02-bras-mur-fluide-v4.gif",
           "recommandations": [
             "Bras tendu à hauteur d'épaule, paume au montant, rotation du tronc opposée à l'appui, épaule basse, 30 s par côté.",
             "4 clés (face → bras posé → demi-rotation → rotation complète) ; colonne mesurée alignée au pixel près sur les 4 clés."
           ],
-          "etat": "à valider"
+          "etat": "à valider",
+          "mesures": "GIF v4 : volume musculaire référence ; 4 clés, poteau conservé = appui du stretch ; sol 227-235 OK, mer FAIBLE seule réserve"
         },
         {
           "num": 4,
@@ -125,13 +127,13 @@
         {
           "num": 8,
           "etiquette": "Bras tendu contre la poitrine (épaule latérale)",
-          "gif": "candidats/2026-10-16-etirement-lot3/GIF-01-bras-contre-poitrine-fluide-v2.gif",
+          "gif": "candidats/2026-10-16-etirement-lot3/GIF-01-bras-contre-poitrine-fluide-v3.gif",
           "recommandations": [
             "Bras horizontal à hauteur de poitrine, avant-bras opposé en crochet, traction vers le corps, épaule basse, 30 s par côté.",
             "Sol 228-242 (dans la bande 219-253), saturation 39-40, mer 2,6-2,7 % (plage acceptable après contrôle visuel)."
           ],
           "etat": "à valider",
-          "mesures": "GIF v2 (volume référence) ; v3 sans poteau en production : cohérence fond des clés M/B en refabrication"
+          "mesures": "GIF v3 : poteau marbre retiré + volume référence ; fond cohérent NCC >=0.998 ; sol 227 OK, mer FAIBLE seule réserve"
         }
       ]
     },
