@@ -23,6 +23,10 @@ travail ; chaque entrée = 1 appel generate_image. Cocher au fur et à mesure.
 
 ## Module 2 — lots 2 à 8 (19 visuels × 3 clés A, M, B)
 Lot 2 : suspension-barre · torsion-allongee · mains-croisees-dos
+  [x] FAIT : 3 GIF fluides v1 mesurés (01 CONFORME après réétalonnage du sol +13 %,
+      02 CONFORME, 03 mer 2,4-2,5 % = acceptable contrôle visuel) ; clés A/M/B ok
+      (A t2i rejetés une fois : carte musculaire pâle → repris par édition de clés
+      conformes du lot 1)
 Lot 3 : bras-contre-poitrine · bras-devant-main-tiree · bras-derriere
 Lot 4 : coude-dessus-tete · main-dans-le-dos · flechisseurs
 Lot 5 : extenseurs · cobra · pigeon-assis
