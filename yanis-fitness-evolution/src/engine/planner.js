@@ -7,6 +7,7 @@ import {
   sourcePosition,
   sourceExtra,
   sourceTrainingDays,
+  sourcePostStrengthPoolSteps,
   SOURCE_SCHEDULE_REVISION,
 } from "./source-schedule.js";
 import { sourceBlocks } from "./workout-flow.js";
@@ -427,17 +428,21 @@ export function generateSourcePlan(
               name: c.apres,
               minutes: c.duree,
               seconds: c.duree * 60,
-              customSteps: [
-                {
-                  name: c.detail,
-                  seconds: c.duree * 60,
-                  kind: "work",
-                  pattern: pool ? "swim" : "walk",
-                },
-              ],
+              customSteps: pool
+                ? sourcePostStrengthPoolSteps(c.duree, day.weekGlobal)
+                : [
+                    {
+                      name: c.detail,
+                      seconds: c.duree * 60,
+                      kind: "work",
+                      pattern: "walk",
+                    },
+                  ],
             },
           ],
-          instructions: c.detail,
+          instructions: pool
+            ? "Piscine après musculation : intervalles variés et plus soutenus (effort 7/10), récupérations actives et retour au calme. Pas de sprint maximal ni d’apnée; marchez dans l’eau si nécessaire."
+            : c.detail,
           estimatedMinutes: c.duree,
           sourceScheduleRevision: SOURCE_SCHEDULE_REVISION,
         });

@@ -435,7 +435,7 @@ export function WarmupModal({ session }) {
   return (
     <Modal
       title="Bien commencer, c’est déjà progresser."
-      subtitle="Échauffement spécifique · environ 8 minutes, à prolonger selon votre besoin."
+      subtitle="Échauffement dynamique · 8 minutes, sans séries de charge progressive."
       onClose={closeModal}
       wide
     >
@@ -474,13 +474,13 @@ export function WarmupModal({ session }) {
         <div>
           <h3>Préparez, sans vous épuiser.</h3>
           <p>
-            Conservez une marge confortable. Les charges d’approche sont
-            arrondies selon votre incrément et peuvent être ajustées au
-            matériel.
+            La mise en route se fait sur elliptique, puis mobilité, activation
+            ciblée et répétition du geste sans charge. Il n’y a plus de séries
+            d’approche à 50, 70 et 85 %.
           </p>
           <p>
-            En cas de douleur, ne cherchez pas à la faire disparaître en
-            chargeant davantage.
+            Commencez la première série de travail avec une charge maîtrisée;
+            arrêtez ou adaptez le mouvement en cas de douleur.
           </p>
         </div>
       </div>

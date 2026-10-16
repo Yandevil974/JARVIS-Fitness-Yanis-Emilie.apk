@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.8.3-jarvis-animations"
+        default: "v1.8.4-warmup-pool"
 
 permissions:
   contents: write
@@ -71,6 +71,9 @@ jobs:
             const list = JSON.parse(fs.readFileSync(p, 'utf8'));
             const sorted = list.slice().sort();
             if (sorted.length !== list.length) throw new Error('index corrompu');
+            for (const witness of ['d53f6f22d159b4ee', '279bb96defb9a0c8']) {
+              if (!sorted.includes(`/media/${witness}.gif`)) throw new Error(`media-index absent: ${witness}`);
+            }
             const compact = JSON.stringify(sorted, null, 0);
             fs.writeFileSync(p, compact);
             fs.writeFileSync('release/media-index.json', compact);
@@ -87,7 +90,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.8.3'" 2>/dev/null || echo 1.8.3)
+          VERSION=$(node -p "require('../package.json').version || '1.8.4'" 2>/dev/null || echo 1.8.4)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
           # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
@@ -95,7 +98,7 @@ jobs:
           APK=app/build/outputs/apk/release/app-release.apk
           BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
           BADGING=$("$BUILD_TOOLS/aapt2" dump badging "$APK")
-          printf '%s\n' "$BADGING" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='185' versionName='1.8.3'"
+          printf '%s\n' "$BADGING" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='186' versionName='1.8.4'"
           "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK"
           sha256sum "$APK"
           N_DISQUE=$(find ../release/media -maxdepth 1 -type f | wc -l)
@@ -108,11 +111,11 @@ jobs:
           fi
           # Contrôle nominatif des animations déjà témoins du lot 1 musculation.
           unzip -l "$APK" | grep -E "acbab53a64c18aab|d36d738b07fe1305|6baa655d39de069e" || exit 1
-          # Les trois GIFs Étirement validés doivent également être dans l'APK.
-          for witness in 55d7d6060a20be1b 22f0bfbf80a63b77 1eae9eb2d9e5bfea; do
+          # Les GIFs Étirement et les deux GIFs d'échauffement approuvés doivent être dans l'APK.
+          for witness in 55d7d6060a20be1b 22f0bfbf80a63b77 1eae9eb2d9e5bfea d53f6f22d159b4ee 279bb96defb9a0c8; do
             unzip -l "$APK" | grep -q "$witness.gif" || { echo "GIF témoin absent de l'APK: $witness.gif"; exit 1; }
           done
-          echo "Controle 'rien ne manque' + GIFs Étirement : OK"
+          echo "Controle 'rien ne manque' + GIFs witnesses : OK"
 
       - name: Publish GitHub Release with APK
         uses: softprops/action-gh-release@v2
@@ -123,16 +126,17 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.8.3 — base Brain 1.8.2 + mises à jour du lot 1
+            ## Yanis Fitness Evolution 1.8.4 — échauffement et piscine renforcés
 
-            APK construit depuis le commit tagué de la branche qui contient la base applicative 1.8.2
-            et les dernières modifications intégrées, dont les trois GIF approuvés du lot 1 du module Étirement.
+            APK construit depuis la branche fixe, à partir de la base stable 1.8.3.
+            Elle intègre l’échauffement elliptique de 8 minutes, les consignes de mobilité/activation distinctes,
+            des séances de piscine post-musculation progressives, et les GIF approuvés d’elliptique et d’activation scapulaire.
 
-            **Mise à jour installable** : même application (`app.yanis.fitness.evolution`), versionName 1.8.3,
-            versionCode 185 (supérieur au 184 de la 1.8.2). L'installation par-dessus conserve les données.
+            **Mise à jour installable** : même application (`app.yanis.fitness.evolution`), versionName 1.8.4,
+            versionCode 186 (supérieur au 185 de la 1.8.3). L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.8.3.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.8.4.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
             3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
 

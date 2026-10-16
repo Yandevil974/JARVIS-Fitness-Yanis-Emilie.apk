@@ -554,6 +554,100 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
     sourcePrescription: pos.phase.metcon,
   };
 }
+export function sourcePostStrengthPoolSteps(minutes, weekGlobal = 0) {
+  const duration = [20, 25, 30].includes(Number(minutes))
+      ? Number(minutes)
+      : Number(minutes) < 23
+        ? 20
+        : Number(minutes) < 28
+          ? 25
+          : 30,
+    pyramid = Math.abs(Number(weekGlobal) || 0) % 2 === 1;
+  const step = (name, seconds, kind, instruction, pattern = "swim") => ({
+    name,
+    seconds,
+    kind,
+    instruction,
+    pattern,
+  });
+  const steps = [];
+  const warm = pyramid ? 240 : duration === 20 ? 180 : duration === 25 ? 240 : 300;
+  const cool = pyramid ? 300 : duration === 20 ? 300 : 300;
+  steps.push(
+    step(
+      "Nage douce — échauffement",
+      warm,
+      "warmup",
+      "Nage facile et continue. Respirez régulièrement, sans apnée.",
+    ),
+  );
+  if (pyramid) {
+    const ladder = [30, 60, 90, 120, 90, 60, 30];
+    ladder.forEach((seconds, index) => {
+      steps.push(
+        step(
+          `Fractionné pyramidal · effort ${index + 1}/7`,
+          seconds,
+          "work",
+          `Nage soutenue ${seconds} s, effort autour de 7/10; gardez une technique propre.`,
+        ),
+      );
+      if (index < ladder.length - 1)
+        steps.push(
+          step(
+            "Récupération active — marche aquatique",
+            30,
+            "rest",
+            "Marchez ou nagez très lentement; reprenez votre souffle sans apnée.",
+          ),
+        );
+    });
+    const extraIntervals = duration === 25 ? 2 : duration === 30 ? 4 : 0;
+    for (let i = 0; i < extraIntervals; i++) {
+      steps.push(
+        step(
+          `Fractionné pyramidal · palier soutenu ${i + 1}/${extraIntervals}`,
+          120,
+          "work",
+          "Nage soutenue 2 min à effort 7/10, sans sprint maximal.",
+        ),
+        step(
+          "Récupération active — marche aquatique",
+          30,
+          "rest",
+          "Marchez ou nagez très lentement; reprenez votre souffle sans apnée.",
+        ),
+      );
+    }
+  } else {
+    const workSeconds = duration === 20 ? 60 : 90;
+    const count = duration === 30 ? 10 : 8;
+    for (let i = 0; i < count; i++)
+      steps.push(
+        step(
+          `Fractionné — nage soutenue ${i + 1}/${count}`,
+          workSeconds,
+          "work",
+          `Nage soutenue ${workSeconds} s à effort 7/10, sans sprint maximal.`,
+        ),
+        step(
+          "Récupération active — nage facile",
+          30,
+          "rest",
+          "Nagez très doucement 30 s; gardez le contrôle de votre respiration.",
+        ),
+      );
+  }
+  steps.push(
+    step(
+      "Retour au calme — nage douce",
+      cool,
+      "cooldown",
+      "Ralentissez progressivement et nagez très facilement. Arrêtez si vous êtes essoufflé ou en difficulté.",
+    ),
+  );
+  return steps;
+}
 export function sourceCardioSteps(id, minutes) {
   const total = Math.round(minutes * 60),
     warm = Math.max(120, Math.round((total * 0.15) / 30) * 30),

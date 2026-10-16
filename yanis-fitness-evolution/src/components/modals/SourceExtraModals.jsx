@@ -274,6 +274,11 @@ export function SourceExtraModal({ event }) {
                         )}
                         <strong>{s.name}</strong>
                         <span>{s.seconds} s</span>
+                        {s.instruction && (
+                          <p className="pool-step-instruction">
+                            {s.instruction}
+                          </p>
+                        )}
                         {guide?.h?.length > 0 && (
                           <ul className="pool-step-tips">
                             {guide.h.map((tip, k) => (

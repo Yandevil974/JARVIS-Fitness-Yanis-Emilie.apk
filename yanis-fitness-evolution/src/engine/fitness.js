@@ -412,43 +412,55 @@ export function recommendLoad(p, target, date = today()) {
 export function warmup(p, session) {
   const first = session?.exercises?.[0];
   const ex = first ? exerciseById(first.exerciseId) : null;
-  const rec = first ? recommendLoad(p, first) : null;
-  const w = first?.targetLoad ?? rec?.weight;
-  const lower = ex && ["qua", "isc", "fes", "moy"].includes(ex.muscle);
+  const lower = ex && ["qua", "isc", "fes", "moy", "add", "mol"].includes(ex.muscle);
+  const pattern = ex?.pattern || "squat";
+  const rehearsal = {
+    squat: ["8 squats au poids du corps", "squat"],
+    hinge: ["8 charnières de hanches sans charge", "hinge"],
+    lunge: ["6 fentes arrière alternées sans charge", "lunge"],
+    press: ["8 pompes inclinées au mur ou sur un support stable", "press"],
+    row: ["8 tirages de bras sans charge, omoplates mobiles", "row"],
+    pull: ["8 tirages de bras sans charge, épaules basses", "pull"],
+    bridge: ["8 ponts fessiers au sol", "bridge"],
+    default: ["8 répétitions lentes du geste, sans charge", pattern],
+  }[pattern] || ["8 répétitions lentes du geste, sans charge", pattern];
   return [
     {
-      name: "Mise en route",
-      seconds: 180,
-      pattern: "walk",
-      img: stepGif("warmup-route", p.id) || WARMUP_IMAGES.route,
+      name: "Mise en route · elliptique",
+      seconds: 240,
+      pattern: "elliptical",
+      // GIF E1 elliptique approuvé, distinct de la mobilité.
+      img: stepGif("warmup-elliptique", p.id),
       instruction:
-        "Marche ou vélo très facile. Vous devez pouvoir parler confortablement.",
+        "4 min à allure facile : dos droit, épaules relâchées, pieds posés à plat et cadence régulière. Vous devez pouvoir parler.",
     },
     {
       name: lower ? "Mobilité hanches & chevilles" : "Mobilité des épaules",
-      seconds: 60,
+      seconds: 90,
       pattern: lower ? "lunge" : "lat",
       img: stepGif("warmup-mobilite", p.id) || WARMUP_IMAGES.mobilite,
       instruction: lower
-        ? "Mobilisez doucement les chevilles et les hanches, sans forcer."
-        : "Cercles d’épaules lents, puis mouvements scapulaires contrôlés.",
+        ? "8 mobilisations de cheville genou-vers-l’avant par côté, puis 6 ouvertures de hanches contrôlées. Amplitude confortable."
+        : "Bras devant la poitrine : ouvrez puis croisez les bras 8 fois, puis faites 8 cercles d’épaules lents. Sans haussement ni douleur.",
     },
     {
-      name: lower ? "Activation fessiers" : "Activation scapulaire",
-      seconds: 60,
-      pattern: lower ? "bridge" : "row",
-      img: stepGif("warmup-mobilite", p.id) || WARMUP_IMAGES.mobilite,
+      name: lower ? "Activation fessiers · ponts au sol" : "Activation scapulaire · pompes inclinées",
+      seconds: 90,
+      pattern: lower ? "bridge" : "press",
+      // Pas de doublon avec la mobilité : activation scapulaire approuvée;
+      // le pont fessier reste sans visuel dédié.
+      img: stepGif(lower ? "warmup-fessiers" : "warmup-scapulaire", p.id),
       instruction: lower
-        ? "Ponts fessiers au sol, 10 répétitions contrôlées."
-        : "Rétractions des omoplates et rotations externes sans fatigue.",
+        ? "Faites 2 × 10 ponts fessiers au sol, avec une courte contraction en haut. Arrêtez avant la fatigue."
+        : "Mains sur un mur ou un support stable, bras tendus : 2 × 8 pompes scapulaires. Laissez les omoplates se rapprocher puis écartez-les en poussant le support, sans plier les coudes.",
     },
-    ...[0.5, 0.7, 0.85].map((pct, i) => ({
-      name: `Approche ${i + 1}${w > 0 ? " · " + roundLoad(w * pct, p.user.increment || 2.5, "down") + " kg" : " · charge légère à choisir"}`,
+    {
+      name: "Répétition technique sans charge",
       seconds: 60,
-      pattern: ex?.pattern || "squat",
-      img: stepGif("warmup-approche", p.id) || WARMUP_IMAGES.approche,
-      instruction: `${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
-    })),
+      pattern: rehearsal[1],
+      img: null,
+      instruction: `${rehearsal[0]}. Réalisez ce geste sans charge additionnelle, lentement et avec une amplitude maîtrisée; il ne s’agit pas d’une série d’approche. Commencez ensuite votre première série de travail avec une charge que vous contrôlez.`,
+    },
   ];
 }
 export function forceSummary(p, exerciseId, unit) {
