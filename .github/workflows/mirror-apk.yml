@@ -23,6 +23,9 @@ permissions:
 
 jobs:
   mirror:
+    # Les tags sont construits par le workflow de release; le miroir doit pousser
+    # depuis une branche (sinon le checkout est détaché et git push échoue).
+    if: startsWith(github.ref, 'refs/heads/')
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
