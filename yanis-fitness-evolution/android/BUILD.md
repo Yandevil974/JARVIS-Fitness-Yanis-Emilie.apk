@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément                   | Valeur                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
-| versionName / versionCode | `1.8.0` / `180`                                                                                                                   |
+| versionName / versionCode | `1.8.3` / `185`                                                                                                                   |
 | Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
 | Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
@@ -34,8 +34,8 @@ les changer :
 
 ## Vérifications locales possibles
 
-- `npm test` — 136 tests au total : 134 réussis, 0 échec, 2 ignorés.
-- Couverture GIF : 209 exercices, 58 étirements et 1920/1920 étapes piscine/aqua vérifiées pour les profils homme et femme.
+- `npm test` — 154 tests au total : 152 réussis, 0 échec, 2 ignorés (après ajout du contrôle des 3 GIF du lot 1).
+- Audits de modules/GIF : 209 exercices de musculation et 29 étirements (58 visuels profilés) résolus ; les audits signalent encore les modules à compléter en conformité visuelle.
 - E2E : dernière exécution complète avant ce chantier, 17 réussis, 0 échec, 11 ignorés. Le scénario Playwright des séances optionnelles a été ajouté, mais n'a pas pu être exécuté ici (Chromium absent et téléchargement réseau indisponible).
 
 ## Cohabitation avec l’ancienne application

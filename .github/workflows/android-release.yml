@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.8.1-jarvis-animations"
+        default: "v1.8.3-jarvis-animations"
 
 permissions:
   contents: write
@@ -84,7 +84,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.8.1'" 2>/dev/null || echo 1.8.1)
+          VERSION=$(node -p "require('../package.json').version || '1.8.3'" 2>/dev/null || echo 1.8.3)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
           # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
@@ -106,24 +106,27 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          prerelease: ${{ contains(github.ref_name, '-pre') }}
           files: |
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.8.1 — JARVIS (Brain local) + toutes les animations
+            ## Yanis Fitness Evolution 1.8.3 — base Brain 1.8.2 + mises à jour du lot 1
 
-            Cette version **réunit les deux lignes de travail** :
-            - le **Fitness Brain / mémoire contrôlée 100 % locale** (v1.8.0) ;
-            - **toutes les animations** produites depuis (musculation lot 1 : développé couché barre,
-              tractions prise large, fentes barre ; échauffement ; décor terrasse, sol sablé clair…).
+            APK construit depuis le commit tagué de la branche qui contient la base applicative 1.8.2
+            et les dernières modifications intégrées, dont les trois GIF approuvés du lot 1 du module Étirement.
 
-            **C'est une mise à jour** : même application (`app.yanis.fitness.evolution`),
-            versionCode 183 supérieur à la 1.8.0 (180). Installation par-dessus, **données conservées**.
+            **Mise à jour installable** : même application (`app.yanis.fitness.evolution`), versionName 1.8.3,
+            versionCode 185 (supérieur au 184 de la 1.8.2). L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.8.1.apk` ci-dessous (fichier ≈ 32-90 Mo).
+            1. Télécharger `yanis-fitness-evolution-1.8.3.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.8.1.apk.sha256`.
+            3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
+
+            ### Contrôle de livraison
+            Le workflow échoue si le nombre de médias inclus dans l'APK diffère du contenu de `release/media/`,
+            ou si les GIF témoins de la branche sont absents.
 
             ### Bon à savoir
             - L'application **JARVIS Fitness** (`app.jarvis.fitness`) est un paquet **différent** : elle n'est jamais modifiée ni remplacée par celle-ci.

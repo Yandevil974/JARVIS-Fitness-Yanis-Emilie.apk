@@ -69,7 +69,8 @@ jobs:
       - name: Copier dans downloads/ sous un nom lisible
         run: |
           set -euo pipefail
-          NOM="Yanis-Fitness-Evolution-1.8.2.apk"
+          VERSION=$(node -p "require('./yanis-fitness-evolution/package.json').version")
+          NOM="Yanis-Fitness-Evolution-${VERSION}.apk"
           cp "/tmp/dl/$APKNAME" "downloads/$NOM"
           ( cd downloads && sha256sum "$NOM" > "$NOM.sha256" )
           # on ne garde qu'un miroir d'APK : le plus recent (le depot ne doit pas regonfler)
@@ -90,4 +91,4 @@ jobs:
             git push
           fi
           echo "### Lien de secours" >> "$GITHUB_STEP_SUMMARY"
-          echo "- https://raw.githubusercontent.com/${{ github.repository }}/$(git rev-parse --abbrev-ref HEAD)/downloads/Yanis-Fitness-Evolution-1.8.2.apk" >> "$GITHUB_STEP_SUMMARY"
+          echo "- https://raw.githubusercontent.com/${{ github.repository }}/$(git rev-parse --abbrev-ref HEAD)/downloads/$NOM" >> "$GITHUB_STEP_SUMMARY"
