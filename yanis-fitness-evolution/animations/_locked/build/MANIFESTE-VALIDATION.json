@@ -183,13 +183,36 @@
         },
         {
           "num": 15,
-          "etiquette": "Cobra (extenseurs du dos) — clés A/M prêtes",
-          "gif": "",
-          "mesures": "EN PRODUCTION : clé B au prochain tour"
+          "etiquette": "Cobra (extenseurs du dos) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot5/GIF-02-cobra-fluide-v1.gif",
+          "mesures": "sol 235 OK 7/7, mer 3,4-4,3 %, coins BAS = réserve"
         },
         {
           "num": 16,
-          "etiquette": "Pigeon assis (fessiers, hanches) — clé A prête",
+          "etiquette": "Pigeon assis (fessiers, hanches) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot5/GIF-03-pigeon-assis-fluide-v1.gif",
+          "mesures": "sol 235 OK 7/7, mer 12,5-16,5 %, coins BAS = réserve"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 6 (quadriceps, chaîne latérale, ischio-jambiers)",
+      "entrees": [
+        {
+          "num": 17,
+          "etiquette": "Talon-fesse debout (quadriceps) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot6/GIF-01-talon-fesse-debout-fluide-v1.gif",
+          "mesures": "sol 235 OK 7/7, mer 7-8 %, coins BAS = réserve"
+        },
+        {
+          "num": 18,
+          "etiquette": "Allongé côté (chaîne latérale) — clé A prête",
+          "gif": "",
+          "mesures": "EN PRODUCTION : clés M/B au prochain tour"
+        },
+        {
+          "num": 19,
+          "etiquette": "Flexion avant debout (ischio-jambiers) — clé A prête",
           "gif": "",
           "mesures": "EN PRODUCTION : clés M/B au prochain tour"
         }
@@ -200,7 +223,7 @@
       "entrees": [
         {
           "num": "—",
-          "etiquette": "9 GIF restants (lots 5 suite à 8) en production",
+          "etiquette": "6 GIF restants (lot6-02, lot6-03, lot7 ×3, lot8) en production",
           "gif": "",
           "recommandations": [
             "Placeholder : chaque visuel restant aura sa propre entrée dès ses clés validées en interne (contrôle visuel + verifier-pose).",
