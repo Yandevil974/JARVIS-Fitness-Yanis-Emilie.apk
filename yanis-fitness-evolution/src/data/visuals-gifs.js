@@ -2,6 +2,8 @@
 // visuels livrés et des retouches validées. Rien n'est un dessin : ce sont les
 // mêmes GIF que les exercices, attribués aux étapes d'échauffement, de piscine,
 // de cardio et d'étirements, pour que le chrono affiche toujours un humain animé.
+// ECHAUFFEMENT (module 1, valide le 13/10) : variantes HOMME pointees sur les GIF valides
+// de la chaine athlete/décor E1. Les variantes FEMME (Emilie) sont inchangees.
 export const GIF_STEPS = {
  "cardio-elliptique-fractionne": {
   "femme": "/media/17b2e2fcfe181f96.gif",
@@ -170,13 +172,13 @@ export const GIF_STEPS = {
   "homme": "/media/8f53c697bc6ba576.gif"
  },
  "warmup-approche": {
-  "homme": "/media/9fc2b36203570787.gif"
+  "homme": "/media/0c5a8fe6ba79eb47.gif"
  },
  "warmup-mobilite": {
-  "homme": "/media/df8e7e9b65108876.gif"
+  "homme": "/media/6d278876a579cbc8.gif"
  },
  "warmup-route": {
-  "homme": "/media/7a19c37100cf148f.gif"
+  "homme": "/media/4d6d57f97bdd691e.gif"
  }
 };
 

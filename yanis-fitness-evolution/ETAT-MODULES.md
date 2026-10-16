@@ -1,3 +1,39 @@
+# ÉTAT DES 9 MODULES — 16 octobre 2026 (fusion JARVIS 1.8.0 + animations)
+
+## 16/10/2026 — FUSION DES DEUX LIGNES (demande utilisateur : « la dernière version de jarvis
+## qui avait été travaillée + tous les gif travaillés dernièrement »)
+
+Les deux lignes de développement issues du même point (27/09) sont réunies dans la version
+**1.8.2 / versionCode 184** :
+
+| | Avant | Maintenant |
+|---|---|---|
+| Fitness Brain / mémoire contrôlée (1.8.0) | dans la 1.8.0 seulement | ✅ présent |
+| Modules JARVIS, page Aperçu, coach-state, pool-diversity, metcon Émilie | 1.8.0 seulement | ✅ présents |
+| Animations « athlète verrouillé / décor E1 terrasse-mer / sol sablé » (13→15/10) | absentes de la 1.8.0 | ✅ présentes |
+| Corpus de visuels humains de la 1.8.0 | 381 médias | ✅ conservé |
+
+**Priorité aux travaux récents (16/10)** : 18 exercices + les 3 visuels d'échauffement
+(module 1 validé le 13/10) étaient masqués par le corpus 1.8.0 (`GIF_OVERRIDES` est lu avant
+les guides). Ils pointent désormais sur les animations récentes : développé couché barre,
+tractions prise large, fentes barre, front squat, leg press, leg extension, goblet squat,
+back squat charge modérée, fentes bulgares haltères, bulgarian split squat, presse à cuisses
+pieds hauts, step-up sur banc, abduction de hanche, pompes, fentes arrière au poids du corps,
+mobilité des épaules, respiration diaphragmatique, échauffement (route/mobilité/approche).
+Les variantes FEMME (Émilie) du corpus 1.8.0 sont conservées.
+
+**Mesures après fusion** (rejouables) :
+
+| Contrôle | Résultat |
+|---|---|
+| `npm test` | **153 tests · 151 passés · 0 échec · 2 ignorés** |
+| Médias | `public/media` **405** fichiers · `thumbs` 326 · `apercu` 97 · `media-index` **848** entrées triées (identique public/release) |
+| Module 3 musculation | **visuel 100 % · 0 exercice sans animation** (sur 203 étapes) |
+| Module 1 échauffement | visuel 100 % (nos 3 GIF validés) |
+| Modules 5 / 7 / 8 | inchangés : chrono piscine 19 étapes, piscine 135 étapes, tabata 48 mouvements sans visuel |
+| Audit corrigé | `scripts/audit-modules.mjs` ignore désormais résolu comme `library.js` (`GIF_OVERRIDES` d'abord) — il annonçait 83 exercices sans visuel à tort |
+
+---
 # ÉTAT DES 9 MODULES — 13 octobre 2026 (mesuré, pas estimé)
 
 Ordre de travail demandé par l'utilisateur :

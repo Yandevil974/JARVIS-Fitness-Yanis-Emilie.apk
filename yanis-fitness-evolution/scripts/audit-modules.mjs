@@ -10,6 +10,7 @@
 // ============================================================================
 import legacy from "../src/data/legacy.json" with { type: "json" };
 import { EXERCISES } from "../src/data/library.js";
+import { GIF_OVERRIDES } from "../src/data/gif-overrides.js";
 import { warmup } from "../src/engine/fitness.js";
 import {
   STRETCH_IMAGES,
@@ -131,11 +132,16 @@ say("");
           const n = norm(row[0]);
           if (!rows.has(n)) rows.set(n, row);
         }
+  // ATTENTION : src/data/library.js resout `GIF_OVERRIDES[n] || guide?.img`.
+  // L'audit ignorait GIF_OVERRIDES (corpus de visuels humains) et annoncait donc
+  // beaucoup plus d'exercices « sans animation » que l'application reelle.
+  // Corrige le 16/10/2026 : meme chaine de resolution que library.js.
   const list = [...rows.values()].map((row) => {
     const n = norm(row[0]);
     let g = guides[n];
     if (g?.ref) g = guides[norm(g.ref)] || guides[g.ref] || g;
-    return { nom: row[0], texte: g ? (g.etapes || g.conseil || "oui") : "", visuel: !!g?.img };
+    const visuel = GIF_OVERRIDES[n] || g?.img || null;
+    return { nom: row[0], texte: g ? (g.etapes || g.conseil || "oui") : "", visuel: !!visuel };
   });
   say("3. MUSCULATION");
   const r = etapes("EXERCICES (tous profils)", list);

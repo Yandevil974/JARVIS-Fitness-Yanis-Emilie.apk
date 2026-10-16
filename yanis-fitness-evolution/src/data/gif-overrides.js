@@ -4,18 +4,37 @@
 //     validé correspond à l'exercice.
 // Clé = nom d'exercice normalisé (sans accents ni ponctuation).
 export const GIF_OVERRIDES = {
+// PRIORITE AUX TRAVAUX RECENTS (16/10/2026) : les 18 entrees ci-dessous remplacent
+// volontairement le corpus 1.8.0 par les animations de la chaine « athlete verrouille /
+// decor E1 terrasse-mer / sol sable clair » produites et integrees depuis le 13/10.
+// Sans cela, le corpus 1.8.0 (humains en salle, parquet, vert lime) masquait ces
+// travaux : GIF_OVERRIDES est lu AVANT les guides. Retirer une ligne = revenir a 1.8.0.
+  "abduction hanche a l elastique": "/media/0e3fd7381f21657e.gif",
+  "back squat (charge moderee)": "/media/8dcad3315ed67aa3.gif",
+  "bulgarian split squat": "/media/f183700b3362f93b.gif",
+  "bulgarian split squat halteres": "/media/493af81454d9f86c.gif",
+  "developpe couche barre": "/media/acbab53a64c18aab.gif",
+  "fentes arriere au poids du corps": "/media/6c0dfcfe4f714ece.gif",
+  "fentes barre": "/media/6baa655d39de069e.gif",
+  "fentes bulgares halteres (pied avant sureleve)": "/media/81d9dc9b0652b954.gif",
+  "front squat": "/media/08e001311b255115.gif",
+  "goblet squat": "/media/33d8d73dda8abb5b.gif",
+  "leg extension": "/media/4a75246261f34b24.gif",
+  "leg press": "/media/d7bd0092279c8789.gif",
+  "mobilite des epaules": "/media/496f6cb98871e619.gif",
+  "pompes": "/media/8a1cd56aeaf90580.gif",
+  "presse a cuisses pieds hauts": "/media/73b7bb33f4a9d6df.gif",
+  "respiration diaphragmatique": "/media/88b4b38fc22d6f0c.gif",
+  "step up sur banc (hauteur du genou)": "/media/0e32e3e5fab9f6f6.gif",
+  "tractions prise large": "/media/d36d738b07fe1305.gif",
  "ab wheel (roulette)": "/media/95021dba5e760d1a.gif",
- "abduction hanche a l elastique": "/media/71105357b5f1b5a1.gif",
  "abduction hanche a la poulie myo reps": "/media/4d80713eb3e1fc0b.gif",
  "back extension 45°, prise snatch": "/media/aed05e9f734fc1f7.gif",
  "back squat": "/media/9cc6f9c05061308d.gif",
- "back squat (charge moderee)": "/media/d7f9e6b6ba8a231b.gif",
  "back squat barre haute": "/media/dcf2495f19b92d50.gif",
  "back squat inertie (pause complete)": "/media/8403a244b533745c.gif",
  "back squat test 1rm": "/media/f2d8f3f06dc0b439.gif",
  "barre au front (pushdown triceps)": "/media/4b9f932f0c18e763.gif",
- "bulgarian split squat": "/media/dc3d5e6a21656655.gif",
- "bulgarian split squat halteres": "/media/baf2d8590660fc97.gif",
  "cables croises + rotation externe": "/media/09395898bff010e6.gif",
  "california press (barre au cou)": "/media/843d0c24da25ffee.gif",
  "circuit gainage (planche + lateral + bird dog)": "/media/bcdbe16aeafaafec.gif",
@@ -40,7 +59,6 @@ export const GIF_OVERRIDES = {
  "curl zottman": "/media/fafaa646f23dd0d4.gif",
  "curl zottman assis": "/media/088734f0b07937f1.gif",
  "curl zottman un bras, banc scott": "/media/f7b27078da26260e.gif",
- "developpe couche barre": "/media/e4d9c22e0a05ea25.gif",
  "developpe couche decline prise serree": "/media/0684d5408ba6e6d2.gif",
  "developpe couche plat, inertie depuis les pins": "/media/a73949925ba1c2fd.gif",
  "developpe couche prise serree": "/media/5e38d08443e26319.gif",
@@ -77,10 +95,7 @@ export const GIF_OVERRIDES = {
  "extensions triceps poulie": "/media/6832f958bb4f7106.gif",
  "face pull a l elastique": "/media/da0df09961077306.gif",
  "fentes arriere alternees": "/media/f1330639adb8d27f.gif",
- "fentes arriere au poids du corps": "/media/5e4cdda12471b2b3.gif",
- "fentes barre": "/media/79aaec788db36846.gif",
  "fentes bulgares (pied arriere sureleve)": "/media/7709724c07a6ef07.gif",
- "fentes bulgares halteres (pied avant sureleve)": "/media/a5f01971f29278bd.gif",
  "fentes marchees": "/media/11221d745c89b523.gif",
  "fire hydrant a l elastique": "/media/bad374a6afbb744e.gif",
  "french press haltere un bras": "/media/a40720f67740d2a0.gif",
@@ -96,14 +111,10 @@ export const GIF_OVERRIDES = {
  "leg curl allonge, pieds flechis": "/media/b954305f0f5568b2.gif",
  "leg curl allonge, pieds pointes": "/media/1bdd45afb59cc298.gif",
  "leg curl machine (ou swiss ball leg curl)": "/media/9bfb90294c482fc0.gif",
- "leg extension": "/media/26f2b337d32111ac.gif",
  "leg press unilateral": "/media/a4443a1008f6202b.gif",
- "mobilite des epaules": "/media/6e8ef0c7fab7dba8.gif",
  "mollets a la presse": "/media/f1a40f2c8c8502db.gif",
  "pallof press a l elastique": "/media/7de6cc31c5c5301e.gif",
- "pompes": "/media/7e96ab14f783b338.gif",
  "pont fessier au sol activation": "/media/666443484c7f0861.gif",
- "presse a cuisses pieds hauts": "/media/27c43e424dc2ea1a.gif",
  "pullover cable bras tendus": "/media/8c88fbe1e4909441.gif",
  "pullover haltere plat": "/media/f56fbc2e2510c4b2.gif",
  "pushdown triceps cable": "/media/028724a3c679a470.gif",
@@ -111,7 +122,6 @@ export const GIF_OVERRIDES = {
  "releves de jambes allonge": "/media/69ddf0f4ec9c937b.gif",
  "releves de jambes incline": "/media/04baa4392f5b1f22.gif",
  "releves de jambes suspendu": "/media/73207adea6ee540f.gif",
- "respiration diaphragmatique": "/media/114a727b696375ef.gif",
  "rowing a l elastique": "/media/e19753d0efd83b10.gif",
  "rowing assis + etirement": "/media/b2d6a7d98ed3d560.gif",
  "rowing assis au cou": "/media/108ebf1d815f3a90.gif",
@@ -131,10 +141,8 @@ export const GIF_OVERRIDES = {
  "squat cycliste": "/media/fdcc2d01cb5a53d1.gif",
  "squat cycliste (squat complet)": "/media/fdcc2d01cb5a53d1.gif",
  "step up haut": "/media/55312a3f227db7a4.gif",
- "step up sur banc (hauteur du genou)": "/media/b74c8ef81f7c0bda.gif",
  "tirage vertical lean away": "/media/f44fc658f6103c5b.gif",
  "tractions (pull up)": "/media/1e5e8f5780c28245.gif",
- "tractions prise large": "/media/5934c70ce1ea1dff.gif",
  "tractions prise neutre (chin up)": "/media/561920fcf8afeb91.gif",
  "tractions supination (chin up)": "/media/d9bfa9bd06ca082c.gif",
  "triceps extensions halteres, banc plat": "/media/3aea2b016706d5d4.gif",
@@ -153,8 +161,7 @@ export const GIF_OVERRIDES = {
  "pompes inclinees (mains surelevees)": "/media/7e96ab14f783b338.gif", // ≈ Pompes
  "curl halteres": "/media/7cdb8ca673040b71.gif", // ≈ Curl Scott haltère, prise neutre
  "extension triceps a la poulie": "/media/028724a3c679a470.gif", // ≈ Pushdown triceps câble
- "bird dog": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog)
- "goblet squat": "/media/d7f9e6b6ba8a231b.gif", // ≈ Back squat (charge modérée)
+ "bird dog": "/media/bcdbe16aeafaafec.gif", // ≈ Circuit gainage (planche + latéral + bird dog) // ≈ Back squat (charge modérée)
  "souleve de terre roumain unilateral haltere": "/media/e5532fe8fa9b40e9.gif", // ≈ Soulevé de terre roumain barre — test (3-5 reps)
  "abduction assise (machine ou elastique)": "/media/71105357b5f1b5a1.gif", // ≈ Abduction hanche à l'élastique
  "mollets debout unilateraux": "/media/f1a40f2c8c8502db.gif", // ≈ Mollets à la presse
@@ -187,8 +194,7 @@ export const GIF_OVERRIDES = {
  "triceps dips": "/media/3aea2b016706d5d4.gif", // ≈ Triceps extensions haltères, banc plat
  "french press poulie basse": "/media/a40720f67740d2a0.gif", // ≈ French press haltère un bras
  "curl marteau assis": "/media/b3e93e1e1a7f9eb9.gif", // ≈ Curl marteau
- "elevations laterales assises (variante)": "/media/fa7442793fd72d35.gif", // ≈ Élévations latérales assises
- "leg press": "/media/a4443a1008f6202b.gif", // ≈ Leg press unilatéral
+ "elevations laterales assises (variante)": "/media/fa7442793fd72d35.gif", // ≈ Élévations latérales assises // ≈ Leg press unilatéral
  "back extension horizontal": "/media/6cfcff2b2b4dcee5.gif", // ≈ Soulevé de terre partiel, prise snatch
  "mollets debout": "/media/f1a40f2c8c8502db.gif", // ≈ Mollets à la presse
  "developpe incline barre": "/media/e4d9c22e0a05ea25.gif", // ≈ Développé couché barre
@@ -199,8 +205,7 @@ export const GIF_OVERRIDES = {
  "tirage vertical prise pronation": "/media/f44fc658f6103c5b.gif", // ≈ Tirage vertical lean away
  "developpe militaire debout": "/media/961917e9b811d034.gif", // ≈ Développé militaire haltères assis — test (3-5 reps)
  "developpe halteres incline 30°": "/media/8de6e89e5395700c.gif", // ≈ Développé haltères incliné 45°, prise neutre
- "french press barre ez": "/media/a40720f67740d2a0.gif", // ≈ French press haltère un bras
- "front squat": "/media/d7f9e6b6ba8a231b.gif", // ≈ Back squat (charge modérée)
+ "french press barre ez": "/media/a40720f67740d2a0.gif", // ≈ French press haltère un bras // ≈ Back squat (charge modérée)
  "leg curl debout": "/media/9bfb90294c482fc0.gif", // ≈ Leg curl machine (ou swiss-ball leg curl)
  "mollets unilateraux": "/media/f1a40f2c8c8502db.gif", // ≈ Mollets à la presse
  "developpe halteres decline, prise neutre": "/media/8de6e89e5395700c.gif", // ≈ Développé haltères incliné 45°, prise neutre
