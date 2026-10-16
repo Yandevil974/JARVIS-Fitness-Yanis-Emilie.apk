@@ -72,7 +72,12 @@ jobs:
       - name: Copier dans downloads/ sous un nom lisible
         run: |
           set -euo pipefail
-          VERSION=$(node -p "require('./yanis-fitness-evolution/package.json').version")
+          VERSION="${APKNAME#yanis-fitness-evolution-}"
+          VERSION="${VERSION%.apk}"
+          if [ "$VERSION" = "$APKNAME" ] || [ -z "$VERSION" ]; then
+            echo "Nom d'APK non reconnu : $APKNAME" >&2
+            exit 1
+          fi
           NOM="Yanis-Fitness-Evolution-${VERSION}.apk"
           echo "NOM=$NOM" >> "$GITHUB_ENV"
           cp "/tmp/dl/$APKNAME" "downloads/$NOM"
