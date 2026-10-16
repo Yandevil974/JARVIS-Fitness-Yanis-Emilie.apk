@@ -3,10 +3,10 @@
 // cardio. Chaque étape affiche le visuel de SON domaine (pas de vélo dans une
 // étape piscine, pas de piscine dans une étape elliptique).
 export const STRETCH_IMAGES = {
-  "Étirement dans l'encadrement de porte": "/media/stretch-pec-porte.jpg",
-  "Bras tendu contre le mur": "/media/stretch-pec-mur.jpg",
-  "Position de l'enfant (Balasana)": "/media/stretch-dos-enfant.jpg",
-  "Position de l'enfant": "/media/stretch-dos-enfant.jpg",
+  "Étirement dans l'encadrement de porte": "/media/55d7d6060a20be1b.gif",
+  "Bras tendu contre le mur": "/media/22f0bfbf80a63b77.gif",
+  "Position de l'enfant (Balasana)": "/media/1eae9eb2d9e5bfea.gif",
+  "Position de l'enfant": "/media/1eae9eb2d9e5bfea.gif",
   "Suspension à la barre": "/media/stretch-dos-suspension.jpg",
   "Torsion allongée": "/media/stretch-torsion-allongee.jpg",
   "Torsion allongée genoux": "/media/stretch-torsion-allongee.jpg",
