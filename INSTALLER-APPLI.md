@@ -5,6 +5,8 @@
 ## 1. Télécharger
 
 - **[Télécharger l'APK 1.8.3](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk)**
+- **[Lien de secours direct (raw.githubusercontent.com)](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/84a42f70-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.3.apk)**
+- [SHA-256 du miroir raw](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/84a42f70-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.3.apk.sha256)
 - [Télécharger le fichier SHA-256](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk.sha256)
 - [Ouvrir la page de la release](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/tag/v1.8.3-jarvis-animations)
 

@@ -3,6 +3,7 @@
 **Yanis Fitness Evolution 1.8.3 — base 1.8.2 + GIFs d'étirement approuvés**
 
 - **APK :** [Télécharger Yanis Fitness Evolution 1.8.3](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk)
+- **Lien de secours (raw.githubusercontent.com) :** [Télécharger l'APK miroir](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/arena/84a42f70-jarvis-fitness-yanis-emilie-ap/downloads/Yanis-Fitness-Evolution-1.8.3.apk)
 - **SHA-256 :** `f824af57a32a21da651a26fdfa2aefa7d1c6a540fe257602435c0d126ee16be2`
 - **Fichier de contrôle :** [yanis-fitness-evolution-1.8.3.apk.sha256](https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.3-jarvis-animations/yanis-fitness-evolution-1.8.3.apk.sha256)
 - **Taille :** 97 214 600 octets (≈ 92,7 Mio) — un fichier plus petit indique un téléchargement interrompu.
