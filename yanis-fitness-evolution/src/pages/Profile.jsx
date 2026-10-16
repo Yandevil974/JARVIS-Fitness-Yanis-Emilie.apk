@@ -36,7 +36,14 @@ import {
 } from "../components/ui.jsx";
 import { EQUIPMENT, GOALS, MUSCLES } from "../data/library.js";
 import { generatePlan } from "../engine/planner.js";
-import { today, num, uid, download, numberLabel } from "../engine/utils.js";
+import {
+  today,
+  num,
+  uid,
+  download,
+  numberLabel,
+  dateLabel,
+} from "../engine/utils.js";
 import {
   parseImport,
   validateState,
@@ -53,6 +60,19 @@ import {
 } from "../store/storage.js";
 import { exportPortable } from "../store/portable.js";
 import { estimate1RM } from "../engine/fitness.js";
+import { recallPreview } from "../brain/conversation.js";
+import {
+  VALIDITY_CHOICES,
+  confirmedMemories,
+  expiredMemories,
+  hypothesisMemories,
+  memoryStateLabel,
+  memoryStats,
+  memoryTypeLabel,
+  pendingMemories,
+} from "../brain/memory.js";
+import { BRAIN_RULES } from "../brain/contracts.js";
+import { brainEnabled } from "../brain/policy.js";
 export default function Profile() {
   const { p, tab, setTab } = useApp();
   const value = tab || "profile";
@@ -75,6 +95,7 @@ export default function Profile() {
           ["equipment", "Matériel & préférences"],
           ["goals", "Mes objectifs"],
           ["data", "Données & sauvegardes"],
+          ["brain", "Mémoire JARVIS"],
         ]}
       />
       {value === "equipment" ? (
@@ -83,6 +104,8 @@ export default function Profile() {
         <Goals />
       ) : value === "data" ? (
         <Data />
+      ) : value === "brain" ? (
+        <BrainMemory />
       ) : (
         <ProfileForm />
       )}
@@ -324,7 +347,9 @@ function Equipment() {
     updateProfile((q) => {
       q.preferences.notifications = true;
     });
-    notify("Notifications système activées. Vous recevrez vos rappels de séance.");
+    notify(
+      "Notifications système activées. Vous recevrez vos rappels de séance.",
+    );
     sendTestNotification();
   }
   return (
@@ -432,7 +457,9 @@ function Equipment() {
             }}
           />
           <Switch
-            checked={p.preferences.voice && p.preferences.sessionVoice !== false}
+            checked={
+              p.preferences.voice && p.preferences.sessionVoice !== false
+            }
             label="Guidage vocal pendant la séance"
             description="Annonce l’exercice, la série, la charge suggérée, le tempo, le décompte de récupération et les changements d’exercice. Conçu pour ne pas avoir à regarder l’écran."
             onChange={(v) => {
@@ -444,7 +471,11 @@ function Equipment() {
                 q.preferences.sessionVoice = v;
                 if (v) q.preferences.voice = true;
               });
-              notify(v ? "Guidage vocal de séance activé." : "Guidage vocal de séance coupé.");
+              notify(
+                v
+                  ? "Guidage vocal de séance activé."
+                  : "Guidage vocal de séance coupé.",
+              );
             }}
           />
           <Switch
@@ -491,7 +522,9 @@ function Equipment() {
                 updateProfile((q) => {
                   q.preferences.theme = v;
                 });
-                notify(v === "dark" ? "Thème sombre activé." : "Thème clair activé.");
+                notify(
+                  v === "dark" ? "Thème sombre activé." : "Thème clair activé.",
+                );
               }}
             >
               <option value="light">Clair</option>
@@ -515,7 +548,11 @@ function Equipment() {
                 if (v) el.pauseAnimations?.();
                 else el.unpauseAnimations?.();
               });
-              notify(v ? "Animations réduites : démonstrations mises en pause." : "Animations rétablies.");
+              notify(
+                v
+                  ? "Animations réduites : démonstrations mises en pause."
+                  : "Animations rétablies.",
+              );
             }}
           />
         </Panel>
@@ -633,6 +670,297 @@ function Goals() {
         />
       )}
     </>
+  );
+}
+// ————— Fitness Brain : mémoire contrôlée (locale) —————
+// Une proposition n'est utilisable qu'après confirmation manuelle ici même :
+// le chat ne confirme jamais, et aucune mémoire ne touche au programme, aux
+// séances ni aux performances.
+function memoryDate(ms) {
+  return ms ? dateLabel(new Date(ms).toISOString().slice(0, 10)) : "—";
+}
+function MemoryRow({
+  memory,
+  onConfirm,
+  onReject,
+  onForget,
+  onValidity,
+  showValidity = false,
+}) {
+  return (
+    <div className={`brain-memory ${memory.state}`}>
+      <div className="brain-memory-top">
+        <Badge color={memory.state === "confirmed" ? "mint" : "amber"}>
+          {memoryTypeLabel(memory.type)}
+        </Badge>
+        <small>
+          {memoryStateLabel(memory.state)}
+          {memory.confirmedAt
+            ? ` · confirmée le ${memoryDate(memory.confirmedAt)}`
+            : " · confirmée : non"}
+          {memory.expiresAt
+            ? ` · valable jusqu’au ${dateLabel(memory.expiresAt)}`
+            : " · sans expiration"}
+        </small>
+      </div>
+      <p>« {memory.text} »</p>
+      <div className="brain-memory-actions">
+        {onConfirm && (
+          <Button variant="primary small" icon="Check" onClick={onConfirm}>
+            Confirmer
+          </Button>
+        )}
+        {onReject && (
+          <Button variant="secondary small" icon="Ban" onClick={onReject}>
+            Refuser
+          </Button>
+        )}
+        {showValidity && onValidity && (
+          <>
+            <Select
+              aria-label="Validité de la mémoire"
+              defaultValue="keep"
+              onChange={(e) => {
+                if (e.target.value !== "keep")
+                  onValidity(
+                    e.target.value === "none" ? null : Number(e.target.value),
+                  );
+              }}
+            >
+              <option value="keep">Modifier la validité…</option>
+              {VALIDITY_CHOICES.map((c) => (
+                <option
+                  value={c.days == null ? "none" : String(c.days)}
+                  key={c.label}
+                >
+                  {c.label}
+                </option>
+              ))}
+            </Select>
+          </>
+        )}
+        {onForget && (
+          <Button variant="danger small" icon="Trash2" onClick={onForget}>
+            Oublier
+          </Button>
+        )}
+      </div>
+    </div>
+  );
+}
+function BrainMemory() {
+  const {
+    p,
+    brainConfirm,
+    brainReject,
+    brainForget,
+    brainValidity,
+    brainToggle,
+  } = useApp();
+  const [query, setQuery] = useState("");
+  const on = today();
+  const enabled = brainEnabled(p);
+  const stats = memoryStats(p, on);
+  const pending = pendingMemories(p, on);
+  const hypotheses = hypothesisMemories(p, on);
+  const confirmed = confirmedMemories(p, on);
+  const expired = expiredMemories(p, on);
+  const recall = enabled ? recallPreview(p, query.trim(), on) : [];
+  return (
+    <div className="brain-layout">
+      <Panel className="brain-control">
+        <SectionHeading
+          title="Fitness Brain local"
+          subtitle="Mémoire contrôlée : le Brain propose, vous confirmez. Aucun apprentissage automatique, aucune donnée envoyée."
+        />
+        <Switch
+          checked={enabled}
+          label="Activer le Fitness Brain local"
+          description="Ajoute la mémoire contrôlée et le rappel en lecture seule. Désactivé, le coach déterministe historique reste utilisable exactement comme avant."
+          onChange={brainToggle}
+        />
+        <ol className="brain-steps">
+          <li>
+            Une commande explicite (« Retiens que… ») dans JARVIS crée une
+            proposition, avec une date de confirmation vide.
+          </li>
+          <li>
+            Tant qu’elle n’est pas confirmée, elle n’apparaît ni dans le rappel
+            ni dans le contexte. Un « oui » dans le chat ne la confirme pas.
+          </li>
+          <li>
+            Vous confirmez ici : <strong>Confirmer</strong> pour l’utiliser,{" "}
+            <strong>Refuser</strong> pour l’écarter, <strong>Oublier</strong>{" "}
+            pour la supprimer.
+          </li>
+          <li>
+            Une mémoire ne déclenche jamais d’action sportive : ni programme, ni
+            séance, ni performance.
+          </li>
+        </ol>
+        <div className="info-line">
+          <Icon name="LockKeyhole" size={16} />
+          <p>
+            Tout est local : aucun fournisseur, SDK, appel distant ni clé API.
+            Le contexte du Brain ne contient que des calculs déterministes de
+            l’application et vos mémoires confirmées non expirées.
+          </p>
+        </div>
+      </Panel>
+      <div className="brain-grid">
+        <Panel>
+          <SectionHeading
+            title={`Propositions en attente${stats.pending ? ` (${stats.pending})` : ""}`}
+            subtitle="Inutilisables jusqu’à votre confirmation manuelle."
+          />
+          {pending.length ? (
+            <div className="brain-list">
+              {pending.map((m) => (
+                <MemoryRow
+                  key={m.id}
+                  memory={m}
+                  onConfirm={() => brainConfirm(m.id)}
+                  onReject={() => brainReject(m.id)}
+                />
+              ))}
+            </div>
+          ) : (
+            <Empty
+              compact
+              icon="Brain"
+              title="Aucune proposition en attente"
+              text="Dites à JARVIS : « Retiens que… ». La phrase restera une proposition jusqu’à votre confirmation ici."
+            />
+          )}
+        </Panel>
+        <Panel>
+          <SectionHeading
+            title={`Hypothèses${stats.hypotheses ? ` (${stats.hypotheses})` : ""}`}
+            subtitle="Une demande ambiguë reste une hypothèse : elle ne devient un fait qu’après confirmation manuelle."
+          />
+          {hypotheses.length ? (
+            <div className="brain-list">
+              {hypotheses.map((m) => (
+                <MemoryRow
+                  key={m.id}
+                  memory={m}
+                  onConfirm={() => brainConfirm(m.id)}
+                  onReject={() => brainReject(m.id)}
+                />
+              ))}
+            </div>
+          ) : (
+            <Empty
+              compact
+              icon="Circle"
+              title="Aucune hypothèse"
+              text="Les formulations incertaines restent ici, hors du contexte et des rappels."
+            />
+          )}
+        </Panel>
+        <Panel>
+          <SectionHeading
+            title={`Mémoires confirmées (${stats.confirmed})`}
+            subtitle="Seules ces mémoires, non expirées, peuvent être rappelées."
+          />
+          {confirmed.length ? (
+            <div className="brain-list">
+              {confirmed.map((m) => (
+                <MemoryRow
+                  key={m.id}
+                  memory={m}
+                  showValidity
+                  onValidity={(days) => brainValidity(m.id, days)}
+                  onForget={() => brainForget(m.id)}
+                />
+              ))}
+            </div>
+          ) : (
+            <Empty
+              compact
+              icon="ShieldCheck"
+              title="Aucune mémoire confirmée"
+              text="Confirmez une proposition ci-dessus pour qu’elle devienne utilisable, en rappel comme en contexte."
+            />
+          )}
+        </Panel>
+        <Panel>
+          <SectionHeading
+            title="Rappel en lecture seule"
+            subtitle="Ce que JARVIS peut restituer — et rien d’autre."
+          />
+          <Field label="Tester un rappel (facultatif)">
+            <Input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="matin, épaule, piscine…"
+              aria-label="Filtrer le rappel"
+            />
+          </Field>
+          {!enabled ? (
+            <div className="warning-box compact">
+              <Icon name="Ban" />
+              <div>
+                <strong>Brain désactivé</strong>
+                <p>
+                  Le rappel est coupé. Le coach déterministe continue de
+                  répondre normalement dans JARVIS.
+                </p>
+              </div>
+            </div>
+          ) : recall.length ? (
+            <ul className="brain-recall">
+              {recall.map((m) => (
+                <li key={m.id}>
+                  <Icon name="Brain" size={14} /> « {m.text} »
+                  <small>{memoryTypeLabel(m.type)}</small>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="small-subtitle">
+              {stats.confirmed
+                ? "Aucune mémoire confirmée ne correspond à ce filtre."
+                : "Aucune mémoire confirmée pour l’instant : les propositions en attente et les hypothèses ne sont jamais rappelées."}
+            </p>
+          )}
+          {stats.expired > 0 && (
+            <div className="brain-expired">
+              <SectionHeading
+                title={`Expirées (${stats.expired})`}
+                subtitle="Exclues du rappel et du contexte."
+              />
+              {expired.map((m) => (
+                <MemoryRow
+                  key={m.id}
+                  memory={m}
+                  onForget={() => brainForget(m.id)}
+                />
+              ))}
+            </div>
+          )}
+        </Panel>
+        <Panel className="brain-rules">
+          <SectionHeading
+            title="Règles du Brain"
+            subtitle="Ce qui est garanti, et ce qui ne le sera jamais."
+          />
+          <ul>
+            {BRAIN_RULES.map((rule) => (
+              <li key={rule}>
+                <Icon name="CircleCheck" size={14} />
+                {rule}
+              </li>
+            ))}
+          </ul>
+          <p className="small-subtitle">
+            Propositions : {stats.pending + stats.hypotheses} · confirmées :{" "}
+            {stats.confirmed} · expirées : {stats.expired} · refusées :{" "}
+            {stats.rejected} · total : {stats.total}
+          </p>
+        </Panel>
+      </div>
+    </div>
   );
 }
 function Data() {

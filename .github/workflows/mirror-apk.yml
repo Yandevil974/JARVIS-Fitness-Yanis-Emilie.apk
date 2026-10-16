@@ -1,0 +1,93 @@
+name: Miroir APK dans le depot (telechargement direct)
+
+# Le telephone de l'utilisateur a deja eu des echecs avec le telechargement direct
+# depuis les assets de release (*.githubusercontent.com peut etre filtre par certains
+# reseaux). Ce workflow recopie l'APK de la derniere release dans downloads/ du depot,
+# ce qui donne un lien servi par raw.githubusercontent.com (autre hote) et par Pages.
+#
+# Lancement : push sur ce fichier, ou manuellement (workflow_dispatch).
+
+on:
+  push:
+    paths:
+      - ".github/workflows/mirror-apk.yml"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag de la release a copier (vide = derniere release)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Recuperer l'APK et son empreinte depuis la release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.event.inputs.tag }}
+        run: |
+          set -euo pipefail
+          REPO="${{ github.repository }}"
+          mkdir -p downloads
+          if [ -z "$TAG" ]; then
+            TAG=$(gh api "repos/$REPO/releases/latest" --jq .tag_name)
+          fi
+          echo "Release cible : $TAG"
+          gh release download "$TAG" --repo "$REPO" --pattern "*.apk" --pattern "*.apk.sha256" --dir /tmp/dl --clobber
+          ls -la /tmp/dl
+          APK=$(ls /tmp/dl/*.apk | head -1)
+          # verification de l'empreinte publiee AVANT toute copie dans le depot
+          ( cd /tmp/dl && sha256sum -c "$(basename "$APK").sha256" )
+          echo "TAILLE=$(stat -c %s "$APK")" >> "$GITHUB_ENV"
+          echo "APKNAME=$(basename "$APK")" >> "$GITHUB_ENV"
+          echo "TAGNAME=$TAG" >> "$GITHUB_ENV"
+
+      - name: Controler la signature de l'APK (preuve d'installabilite)
+        run: |
+          set -euo pipefail
+          APK="/tmp/dl/$APKNAME"
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* 2>/dev/null | sort -V | tail -1 || true)
+          if [ -n "$BT" ] && [ -x "$BT/apksigner" ]; then
+            echo "--- apksigner verify ---"
+            "$BT/apksigner" verify --print-certs -v "$APK" | head -30
+          else
+            echo "apksigner indisponible, verification ignorée"
+          fi
+          if [ -n "$BT" ] && [ -x "$BT/aapt2" ]; then
+            echo "--- aapt2 badging (package, versionCode, minSdk) ---"
+            "$BT/aapt2" dump badging "$APK" | head -6 || true
+          fi
+
+      - name: Copier dans downloads/ sous un nom lisible
+        run: |
+          set -euo pipefail
+          NOM="Yanis-Fitness-Evolution-1.8.2.apk"
+          cp "/tmp/dl/$APKNAME" "downloads/$NOM"
+          ( cd downloads && sha256sum "$NOM" > "$NOM.sha256" )
+          # on ne garde qu'un miroir d'APK : le plus recent (le depot ne doit pas regonfler)
+          find downloads -maxdepth 1 -name "*.apk" ! -name "$NOM" -delete
+          find downloads -maxdepth 1 -name "*.apk.sha256" ! -name "$NOM.sha256" -delete
+          ls -la downloads
+
+      - name: Publier le miroir dans le depot
+        run: |
+          set -euo pipefail
+          git config user.name "arena-agent"
+          git config user.email "agent@arena.ai"
+          git add -A downloads
+          if git diff --cached --quiet; then
+            echo "miroir deja a jour"
+          else
+            git commit -m "miroir : APK $APKNAME ($TAILLE octets) copie dans downloads/ (sha256 verifie) - lien de secours raw.githubusercontent"
+            git push
+          fi
+          echo "### Lien de secours" >> "$GITHUB_STEP_SUMMARY"
+          echo "- https://raw.githubusercontent.com/${{ github.repository }}/$(git rev-parse --abbrev-ref HEAD)/downloads/Yanis-Fitness-Evolution-1.8.2.apk" >> "$GITHUB_STEP_SUMMARY"

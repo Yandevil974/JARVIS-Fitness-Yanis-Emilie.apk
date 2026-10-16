@@ -1,7 +1,7 @@
 name: Build Yanis Fitness Evolution APK (release)
 
-# Construit l'APK signé 1.5.1 (appId app.yanis.fitness.evolution, keystore du
-# dépôt) et l'attache au GitHub Release correspondant au tag poussé.
+# Construit l'APK signé de la version déclarée dans package.json (appId
+# app.yanis.fitness.evolution, keystore du dépôt) et l'attache au tag poussé.
 on:
   push:
     tags:
@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.5.1-evolution"
+        default: "v1.8.1-jarvis-animations"
 
 permissions:
   contents: write
@@ -48,11 +48,34 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Install esbuild (runtime portable)
+        run: npm install --no-save esbuild
+
       - name: Build web (vite) + portable runtime + cap sync
         run: |
-          npm run build
           npm run build:portable
+          npm run build
           npx cap sync android
+
+      # Piège connu (corrigé ici pour le CI) : build:portable écrit media-index.json
+      # NON trié, et vite a déjà recopié public/ dans release/ avant le tri.
+      # On remet donc les deux index identiques, triés, compact, et le runtime à jour.
+      - name: Re-trier media-index + resynchroniser le runtime portable
+        run: |
+          node -e "
+            const fs = require('fs');
+            const p = 'public/media-index.json';
+            const list = JSON.parse(fs.readFileSync(p, 'utf8'));
+            const sorted = list.slice().sort();
+            if (sorted.length !== list.length) throw new Error('index corrompu');
+            const compact = JSON.stringify(sorted, null, 0);
+            fs.writeFileSync(p, compact);
+            fs.writeFileSync('release/media-index.json', compact);
+            console.log('media-index trie :', sorted.length, 'entrees');
+          "
+          cp public/runtime.js release/runtime.js
+          cp public/runtime.css release/runtime.css
+          git diff --stat -- public/media-index.json release/media-index.json || true
 
       - name: Assemble signed release APK
         working-directory: yanis-fitness-evolution/android
@@ -61,9 +84,23 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.5.1'" 2>/dev/null || echo 1.5.1)
+          VERSION=$(node -p "require('../package.json').version || '1.8.1'" 2>/dev/null || echo 1.8.1)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
+          # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
+          # l'APK livré doit contenir TOUT le travail présent sur la branche.
+          APK=app/build/outputs/apk/release/app-release.apk
+          N_DISQUE=$(ls release/media | wc -l)
+          N_APK=$(unzip -l "$APK" | grep -cE "assets/public/media/[^/]+\.(gif|jpg|jpeg|png|webp)$")
+          echo "medias sur le disque : $N_DISQUE"
+          echo "medias dans l'APK    : $N_APK"
+          if [ "$N_DISQUE" != "$N_APK" ]; then
+            echo "ECHEC : des medias de l'application sont absents de l'APK."
+            exit 1
+          fi
+          # Contrôle nominatif des animations du lot 1 musculation (temoin)
+          unzip -l "$APK" | grep -E "acbab53a64c18aab|d36d738b07fe1305|6baa655d39de069e" || exit 1
+          echo "Controle 'rien ne manque' : OK"
 
       - name: Publish GitHub Release with APK
         uses: softprops/action-gh-release@v2
@@ -73,16 +110,21 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.5.1 (versionCode 151)
-            APK signé avec la clé propre à l'application (`app.yanis.fitness.evolution`).
+            ## Yanis Fitness Evolution 1.8.1 — JARVIS (Brain local) + toutes les animations
 
-            **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Vos deux jeux de données restent indépendants (clés de stockage distinctes ; l'ancienne clé n'est lue qu'une fois pour l'import, jamais modifiée).
+            Cette version **réunit les deux lignes de travail** :
+            - le **Fitness Brain / mémoire contrôlée 100 % locale** (v1.8.0) ;
+            - **toutes les animations** produites depuis (musculation lot 1 : développé couché barre,
+              tractions prise large, fentes barre ; échauffement ; décor terrasse, sol sablé clair…).
+
+            **C'est une mise à jour** : même application (`app.yanis.fitness.evolution`),
+            versionCode 183 supérieur à la 1.8.0 (180). Installation par-dessus, **données conservées**.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.5.1.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.8.1.apk` ci-dessous (fichier ≈ 32-90 Mo).
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.5.1.apk.sha256`.
+            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.8.1.apk.sha256`.
 
-            ### Importer vos données
-            Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.
+            ### Bon à savoir
+            - L'application **JARVIS Fitness** (`app.jarvis.fitness`) est un paquet **différent** : elle n'est jamais modifiée ni remplacée par celle-ci.
           generate_release_notes: true

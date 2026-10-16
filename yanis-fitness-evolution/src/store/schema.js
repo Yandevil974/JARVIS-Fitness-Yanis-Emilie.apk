@@ -5,6 +5,12 @@ import {
   checkInEntry,
   VALID_UNITS,
 } from "../engine/validation.js";
+import {
+  BRAIN_MEMORY_LIMIT,
+  BRAIN_TEXT_MAX,
+  defaultBrainState,
+} from "../brain/policy.js";
+import { MEMORY_STATE_IDS, MEMORY_TYPE_IDS } from "../brain/memory.js";
 const object = (v) => !!v && typeof v === "object" && !Array.isArray(v);
 const fail = (message) => {
   throw new Error(message);
@@ -122,6 +128,54 @@ function timer(t) {
   if (typeof t.paused !== "boolean" || typeof t.done !== "boolean")
     fail("État du minuteur invalide.");
 }
+// Mémoire contrôlée du Fitness Brain : structure stricte, et absence tolérée
+// (une sauvegarde antérieure au Brain est complétée par l'état par défaut).
+function brain(p) {
+  if (p.brain == null) {
+    p.brain = defaultBrainState();
+    return;
+  }
+  if (!object(p.brain) || !Array.isArray(p.brain.memories))
+    fail("Mémoire Brain invalide.");
+  if (p.brain.enabled != null && typeof p.brain.enabled !== "boolean")
+    fail("Activation Brain invalide.");
+  array(p.brain.memories, "Mémoires Brain", BRAIN_MEMORY_LIMIT);
+  const ids = new Set();
+  for (const m of p.brain.memories) {
+    if (!object(m)) fail("Mémoire Brain invalide.");
+    text(m.id, "Mémoire Brain identifiant", 250);
+    if (ids.has(m.id)) fail("Mémoire Brain : identifiant dupliqué.");
+    ids.add(m.id);
+    if (!MEMORY_TYPE_IDS.includes(m.type)) fail("Type de mémoire inconnu.");
+    if (!MEMORY_STATE_IDS.includes(m.state)) fail("État de mémoire inconnu.");
+    text(m.text, "Mémoire Brain texte", BRAIN_TEXT_MAX);
+    if (!m.text.trim()) fail("Mémoire Brain vide.");
+    array(m.topics || [], "Sujets de mémoire", 6);
+    if (!validDate(m.createdAt))
+      fail("Mémoire Brain : date de création invalide.");
+    numeric(m.createdAtMs, 0, 8640000000000000, "Horodatage mémoire", {
+      optional: true,
+    });
+    if (m.expiresAt != null && !validDate(m.expiresAt))
+      fail("Mémoire Brain : expiration invalide.");
+    if (m.state === "confirmed") {
+      numeric(m.confirmedAt, 0, 8640000000000000, "Confirmation mémoire", {
+        optional: false,
+      });
+      if (m.confirmedBy !== "interface")
+        fail(
+          "Une mémoire ne se confirme que dans l’interface de mémoire contrôlée.",
+        );
+    } else if (m.confirmedAt != null) {
+      fail(
+        "Une mémoire non confirmée ne peut pas porter de date de confirmation.",
+      );
+    }
+    if (m.rejectedAt != null)
+      numeric(m.rejectedAt, 0, 8640000000000000, "Refus mémoire");
+  }
+}
+
 /** Validate a detached copy; an invalid import never partially mutates live profiles. */
 export function validateState(input) {
   if (
@@ -281,6 +335,7 @@ export function validateState(input) {
       numeric(log.grams, 0.1, 10000, "Quantité consommée", { optional: false });
     }
     timer(p.timer);
+    brain(p);
   }
   return d;
 }
