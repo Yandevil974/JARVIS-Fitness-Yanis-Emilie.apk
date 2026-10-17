@@ -214,8 +214,7 @@
           "num": 19,
           "etiquette": "Flexion avant debout (ischio-jambiers) — GIF fluide v1",
           "gif": "candidats/2026-10-16-etirement-lot6/GIF-03-flexion-avant-fluide-v1.gif",
-          "mesures": "sol 234-236 OK 7/7, mer 6,5-8,8 %, coins BAS = réserve",
-          "video": "videos/VIDEO-02-flexion-avant-v4-reel.mp4"
+          "mesures": "sol 234-236 OK 7/7, mer 6,5-8,8 %, coins BAS = réserve"
         }
       ]
     },
@@ -230,15 +229,15 @@
         },
         {
           "num": 21,
-          "etiquette": "Grenouille (adducteurs) — clé A prête",
-          "gif": "",
-          "mesures": "EN PRODUCTION : clés M/B au prochain tour"
+          "etiquette": "Grenouille (adducteurs) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot7/GIF-02-grenouille-fluide-v1.gif",
+          "mesures": "sol 235-237 OK 7/7, mer 11-14 %, coin 218-222 = réserve"
         },
         {
           "num": 22,
-          "etiquette": "Contre le mur (épaules, dorsaux) — clé A prête",
-          "gif": "",
-          "mesures": "EN PRODUCTION : clés M/B au prochain tour"
+          "etiquette": "Contre le mur (épaules, dorsaux) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot7/GIF-03-contre-le-mur-fluide-v1.gif",
+          "mesures": "sol 227-235 OK 7/7, mer 3-7 %, clés miroir + lift x1.07, coin 220-222 = réserve"
         }
       ]
     },
@@ -247,9 +246,9 @@
       "entrees": [
         {
           "num": 23,
-          "etiquette": "Mollet sur marche d'escalier — clé A prête",
-          "gif": "",
-          "mesures": "EN PRODUCTION : clés M/B au prochain tour"
+          "etiquette": "Mollet sur marche d'escalier — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot8/GIF-01-mollet-escalier-fluide-v1.gif",
+          "mesures": "sol 228 OK 7/7, coin 224 OK, mer 3-4 %"
         }
       ]
     },
@@ -258,7 +257,7 @@
       "entrees": [
         {
           "num": "—",
-          "etiquette": "3 GIF restants (lot7-02 grenouille, lot7-03 contre-le-mur, lot8 mollet-escalier) en production",
+          "etiquette": "MODULES 1+2 COMPLETS : 22 visuels étirement + 4 échauffement — validation via cette galerie",
           "gif": "",
           "recommandations": [
             "Placeholder : chaque visuel restant aura sa propre entrée dès ses clés validées en interne (contrôle visuel + verifier-pose).",
