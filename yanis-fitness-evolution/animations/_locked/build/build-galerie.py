@@ -66,6 +66,9 @@ def main():
                      "<div style=\"padding:28px;background:#0d1420;color:#8fa1b3;"
                      "text-align:center\">visuel en production — entrée ajoutée "
                      "dès ses clés contrôlées</div>")
+            if e.get("video"):
+                media += (f"<video src=\"{e['video']}\" controls loop muted playsinline "
+                          f"style=\"width:100%;display:block;margin-top:6px\"></video>")
             cartes.append(
                 f"<figure>{media}"
                 f"<figcaption><b>{e['num']}. {e['etiquette']}</b>"
