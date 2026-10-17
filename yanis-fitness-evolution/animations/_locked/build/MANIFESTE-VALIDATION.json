@@ -206,13 +206,47 @@
         },
         {
           "num": 18,
-          "etiquette": "Allongé côté (chaîne latérale) — clé A prête",
+          "etiquette": "Allongé côté (chaîne latérale) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot6/GIF-02-allonge-cote-fluide-v1.gif",
+          "mesures": "sol 233-234 OK 7/7, mer 14-20 %, coins OK"
+        },
+        {
+          "num": 19,
+          "etiquette": "Flexion avant debout (ischio-jambiers) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot6/GIF-03-flexion-avant-fluide-v1.gif",
+          "mesures": "sol 234-236 OK 7/7, mer 6,5-8,8 %, coins BAS = réserve"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 7 (ischios au sol, adducteurs, mur)",
+      "entrees": [
+        {
+          "num": 20,
+          "etiquette": "Jambe tendue sur marche (ischio-jambiers) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot7/GIF-01-jambe-tendue-pliee-fluide-v1.gif",
+          "mesures": "sol 226-235 OK 7/7, mer 4-5 %, coins BAS (marche ombrée) = réserve"
+        },
+        {
+          "num": 21,
+          "etiquette": "Grenouille (adducteurs) — clé A prête",
           "gif": "",
           "mesures": "EN PRODUCTION : clés M/B au prochain tour"
         },
         {
-          "num": 19,
-          "etiquette": "Flexion avant debout (ischio-jambiers) — clé A prête",
+          "num": 22,
+          "etiquette": "Contre le mur (épaules, dorsaux) — clé A prête",
+          "gif": "",
+          "mesures": "EN PRODUCTION : clés M/B au prochain tour"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 8 (mollets)",
+      "entrees": [
+        {
+          "num": 23,
+          "etiquette": "Mollet sur marche d'escalier — clé A prête",
           "gif": "",
           "mesures": "EN PRODUCTION : clés M/B au prochain tour"
         }
@@ -223,7 +257,7 @@
       "entrees": [
         {
           "num": "—",
-          "etiquette": "6 GIF restants (lot6-02, lot6-03, lot7 ×3, lot8) en production",
+          "etiquette": "3 GIF restants (lot7-02 grenouille, lot7-03 contre-le-mur, lot8 mollet-escalier) en production",
           "gif": "",
           "recommandations": [
             "Placeholder : chaque visuel restant aura sa propre entrée dès ses clés validées en interne (contrôle visuel + verifier-pose).",
