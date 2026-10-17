@@ -107,9 +107,15 @@ def main():
     ux, uy = [float(v) for v in a.zoom_center.split(",")]
 
     flows = {}
+    masks = {}
     def get_flow(x, y):
         if (x, y) not in flows:
             flows[(x, y)] = (flow_between(keys[x], keys[y]), flow_between(keys[y], keys[x]))
+            ga = cv2.cvtColor(keys[x], cv2.COLOR_BGR2GRAY).astype(np.int16)
+            gb = cv2.cvtColor(keys[y], cv2.COLOR_BGR2GRAY).astype(np.int16)
+            m = (np.abs(ga - gb) > 12).astype(np.uint8)
+            m = cv2.dilate(m, np.ones((15, 15), np.uint8))
+            masks[(x, y)] = m[:, :, None].astype(bool)
         return flows[(x, y)]
 
     frames, metas = [], []  # metas: (bot, ratio, glow_t, zoom)
@@ -128,12 +134,26 @@ def main():
         else:
             x, y = [int(v) for v in spec.split(",")]
             f_ab, f_ba = get_flow(x, y)
-            steps = 7
+            steps = 9
+            mask = masks[(x, y)]
             for i in range(steps):
                 t = i / steps
-                fr = keys[x].copy() if i == 0 else intermediate(keys[x], keys[y], f_ab, f_ba, t)
+                if i == 0:
+                    fr = keys[x].copy()
+                else:
+                    fr = intermediate(keys[x], keys[y], f_ab, f_ba, t)
+                    # décor statique : hors zone de mouvement, reprendre le fond net
+                    fr = np.where(mask, fr, keys[x]).astype(np.uint8)
                 frames.append(fr)
                 metas.append((bot, None, 0.0, False, act))
+    # lissage temporel 3 tapes : les résidus de warp deviennent un flou de mouvement
+    sm = [frames[0]]
+    for i in range(1, len(frames) - 1):
+        sm.append(np.clip(0.25 * frames[i - 1].astype(np.float32)
+                          + 0.5 * frames[i].astype(np.float32)
+                          + 0.25 * frames[i + 1].astype(np.float32), 0, 255).astype(np.uint8))
+    sm.append(frames[-1])
+    frames = sm
 
     out_frames = []
     for fr, (bot, ratio, gt, zoom, act) in zip(frames, metas):

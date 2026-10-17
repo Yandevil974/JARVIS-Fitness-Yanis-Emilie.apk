@@ -96,8 +96,7 @@
             "Mesuré CONFORME après réétalonnage du sol sablé : sol_dom 235, saturation 42, lime 0 %."
           ],
           "etat": "à valider",
-          "mesures": "GIF v2 : volume musculaire référence restauré (+30 %), 7/7 frames CONFORME (sol 226-236, sat 42) | PROTO REEL v3 (style réf Facebook) : 4:5 800x960, badges cochés, muscle cible vert, zoom maintien, chrono",
-          "video": "videos/VIDEO-01-suspension-barre-v3-reel.mp4"
+          "mesures": "GIF v2 : volume musculaire référence restauré (+30 %), 7/7 frames CONFORME (sol 226-236, sat 42) | PROTO REEL v3 (style réf Facebook) : 4:5 800x960, badges cochés, muscle cible vert, zoom maintien, chrono"
         },
         {
           "num": 6,
@@ -215,7 +214,8 @@
           "num": 19,
           "etiquette": "Flexion avant debout (ischio-jambiers) — GIF fluide v1",
           "gif": "candidats/2026-10-16-etirement-lot6/GIF-03-flexion-avant-fluide-v1.gif",
-          "mesures": "sol 234-236 OK 7/7, mer 6,5-8,8 %, coins BAS = réserve"
+          "mesures": "sol 234-236 OK 7/7, mer 6,5-8,8 %, coins BAS = réserve",
+          "video": "videos/VIDEO-02-flexion-avant-v4-reel.mp4"
         }
       ]
     },
