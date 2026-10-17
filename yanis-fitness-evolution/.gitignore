@@ -5,3 +5,7 @@ node_modules/
 
 # artefacts reg\u00E9n\u00E9r\u00E9s par la suite Playwright (captures de contr\u00F4le)
 tests/screenshots/
+
+# artefacts de generation des medias (keyframes IA, rendus intermediaires)
+bench-frames/
+scripts/__pycache__/
