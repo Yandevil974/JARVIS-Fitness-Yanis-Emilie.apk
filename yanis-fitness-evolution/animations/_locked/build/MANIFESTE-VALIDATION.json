@@ -96,8 +96,8 @@
             "Mesuré CONFORME après réétalonnage du sol sablé : sol_dom 235, saturation 42, lime 0 %."
           ],
           "etat": "à valider",
-          "mesures": "GIF v2 : volume musculaire référence restauré (+30 %), 7/7 frames CONFORME (sol 226-236, sat 42) | PROTO VIDEO : mp4 H.264 880x496 4 s, 3 interpolations DIS par transition + bandeau légende",
-          "video": "videos/VIDEO-01-suspension-barre-v1.mp4"
+          "mesures": "GIF v2 : volume musculaire référence restauré (+30 %), 7/7 frames CONFORME (sol 226-236, sat 42) | PROTO REEL v2 : mp4 vertical 576x1024, titre + consignes par phase + chrono maintien",
+          "video": "videos/VIDEO-01-suspension-barre-v2-reel.mp4"
         },
         {
           "num": 6,
