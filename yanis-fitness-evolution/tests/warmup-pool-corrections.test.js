@@ -14,8 +14,8 @@ const lowerExercise = EXERCISES.find((exercise) => exercise.muscle === "qua");
 
 test("les GIFs approuvés de mise en route résolvent pour les deux profils", () => {
   for (const [key, path] of [
-    ["warmup-elliptique", "/media/d53f6f22d159b4ee.gif"],
-    ["warmup-scapulaire", "/media/279bb96defb9a0c8.gif"],
+    ["warmup-elliptique", "/media/4f40d9e04f696aa5.gif"],
+    ["warmup-scapulaire", "/media/599d7808b062f0a3.gif"],
   ]) {
     assert.equal(stepGif(key, "elite"), path);
     assert.equal(stepGif(key, "emilie"), path);

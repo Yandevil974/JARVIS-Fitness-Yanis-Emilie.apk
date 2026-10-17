@@ -14,11 +14,11 @@ export const GIF_STEPS = {
   "homme": "/media/7acb83b71752c44c.gif"
  },
  "warmup-elliptique": {
-  "femme": "/media/d53f6f22d159b4ee.gif",
+  "femme": "/media/4f40d9e04f696aa5.gif",
   "homme": "/media/4f40d9e04f696aa5.gif"
  },
  "warmup-scapulaire": {
-  "femme": "/media/279bb96defb9a0c8.gif",
+  "femme": "/media/599d7808b062f0a3.gif",
   "homme": "/media/599d7808b062f0a3.gif"
  },
  "cardio-elliptique-recup": {

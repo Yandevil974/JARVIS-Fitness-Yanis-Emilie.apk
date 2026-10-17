@@ -1,3 +1,20 @@
+# ✅ 17 octobre 2026 — MODULES 1+2 VALIDÉS PAR L'UTILISATEUR, INTÉGRÉS, LIVRÉS EN v1.8.5
+
+- **Validation** : compil film `COMPIL-VALIDATION-MODULES-1-2.mp4` (26 GIF numérotés) + galerie
+  `GALERIE-MODULES-1-2.html` → « Validé 👌 » le 17/10.
+- **Intégration app** : 26 GIF en `/media/<sha16>.gif` (public + release), `GIF_OVERRIDES`,
+  `GIF_STEPS` (homme ET femme pour warmup-elliptique/scapulaire), `STRETCH_IMAGES` patchés ;
+  `media-index.json` 878 entrées triées ; export portable `runtime.js` reconstruit.
+- **Tests** : 165 → **163 pass / 0 fail / 2 skipped** (base retrouvée avec les nouveaux visuels ;
+  les 2 tests qui figeaient les GIF défectueux d'elliptique/scapulaire ont été mis à jour sur les
+  hashes validés 17/10).
+- **Livraison** : tag **v1.8.5-jarvis-animations** = version stable corrigée (la v1.8.4 retirée
+  reste interdite ; v1.8.3 remplacée). Build APK via workflow `android-release.yml` (tags v*).
+- **Vidéo** : piste reel/mp4 abandonnée après 3 essais (morphing = doubles expositions ; la
+  référence Facebook est un rendu 3D riggé). Fichiers conservés dans `animations/_locked/videos/`.
+
+---
+
 # ⚠ CORRECTION D'ORDRE — 16 octobre 2026 : le module EN COURS est le 2 (ÉTIREMENT)
 
 L'utilisateur a rappelé le 16/10 la règle non négociable : **module par module, dans l'ordre,

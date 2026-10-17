@@ -10,9 +10,9 @@ import { RECOVERY_EXERCISES } from "../src/data/library.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lot1 = [
-  ["Étirement dans l'encadrement de porte", "/media/55d7d6060a20be1b.gif"],
-  ["Bras tendu contre le mur", "/media/22f0bfbf80a63b77.gif"],
-  ["Position de l'enfant (Balasana)", "/media/1eae9eb2d9e5bfea.gif"],
+  ["Étirement dans l'encadrement de porte", "/media/a78693d8a7586ec3.gif"],
+  ["Bras tendu contre le mur", "/media/31036c76962c0fd8.gif"],
+  ["Position de l'enfant (Balasana)", "/media/ca55d85fe63748ff.gif"],
 ];
 
 test("Lot 1: approved stretch GIFs resolve in app, release, and media indexes", () => {
