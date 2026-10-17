@@ -15,11 +15,11 @@ export const GIF_STEPS = {
  },
  "warmup-elliptique": {
   "femme": "/media/d53f6f22d159b4ee.gif",
-  "homme": "/media/d53f6f22d159b4ee.gif"
+  "homme": "/media/4f40d9e04f696aa5.gif"
  },
  "warmup-scapulaire": {
   "femme": "/media/279bb96defb9a0c8.gif",
-  "homme": "/media/279bb96defb9a0c8.gif"
+  "homme": "/media/599d7808b062f0a3.gif"
  },
  "cardio-elliptique-recup": {
   "femme": "/media/29b722fb3b737b89.gif",
@@ -105,79 +105,79 @@ export const GIF_STEPS = {
   "homme": "/media/6ec4644eeb54b838.gif"
  },
  "stretch-avb-extenseurs": {
-  "homme": "/media/9010e2f9e3d14233.gif"
+  "homme": "/media/7904d339e462c693.gif"
  },
  "stretch-avb-flechisseurs": {
   "homme": "/media/b2b87c3a254bd7fd.gif"
  },
  "stretch-biceps": {
-  "homme": "/media/fea2fafa28306ecc.gif"
+  "homme": "/media/bc05e6deaf1c4439.gif"
  },
  "stretch-cobra": {
-  "homme": "/media/70f0e7b4bad530c7.gif"
+  "homme": "/media/1651c3bb2dc4e3b0.gif"
  },
  "stretch-dos-enfant": {
-  "homme": "/media/1eae9eb2d9e5bfea.gif"
+  "homme": "/media/ca55d85fe63748ff.gif"
  },
  "stretch-dos-suspension": {
-  "homme": "/media/bcea47097d3f6f50.gif"
+  "homme": "/media/58ad573d2614c6f0.gif"
  },
  "stretch-ep-arriere": {
-  "homme": "/media/35a75b58860e85ec.gif"
+  "homme": "/media/22867473af1fb961.gif"
  },
  "stretch-ep-lateral": {
-  "homme": "/media/64889e5c53a06784.gif"
+  "homme": "/media/5b3aed6740b23734.gif"
  },
  "stretch-ep-posterieur": {
-  "homme": "/media/f704179757f839cd.gif"
+  "homme": "/media/b0929e5814095b39.gif"
  },
  "stretch-flechisseur-hanche": {
-  "homme": "/media/8b2309caa8cad1ce.gif"
+  "homme": "/media/079e5e801980964e.gif"
  },
  "stretch-grenouille": {
-  "homme": "/media/fc041ed2c5084f83.gif"
+  "homme": "/media/3dde44e4595f3e5e.gif"
  },
  "stretch-isc-flexion": {
-  "homme": "/media/b5c280103b62b9e6.gif"
+  "homme": "/media/9e70da90895119dd.gif"
  },
  "stretch-isc-une-jambe": {
-  "homme": "/media/93fc13ba7cb57d7a.gif"
+  "homme": "/media/aa441b52ee032a19.gif"
  },
  "stretch-mollet-marche": {
-  "homme": "/media/9151efe4c2262c96.gif"
+  "homme": "/media/d22b43f8c3eb9f2b.gif"
  },
  "stretch-mollet-mur": {
-  "homme": "/media/1e6e0dd8a12b35d6.gif"
+  "homme": "/media/ab272031c33d4b40.gif"
  },
  "stretch-pec-mur": {
-  "homme": "/media/22f0bfbf80a63b77.gif"
+  "homme": "/media/31036c76962c0fd8.gif"
  },
  "stretch-pec-porte": {
-  "homme": "/media/55d7d6060a20be1b.gif"
+  "homme": "/media/a78693d8a7586ec3.gif"
  },
  "stretch-pigeon": {
-  "homme": "/media/2af48ab193eaafb4.gif"
+  "homme": "/media/2c028e4433214abd.gif"
  },
  "stretch-piriforme": {
   "homme": "/media/1e8d5bfcc0bc9ead.gif"
  },
  "stretch-quad-cote": {
-  "homme": "/media/69858722346f40bf.gif"
+  "homme": "/media/7adfeb9c4e73edec.gif"
  },
  "stretch-quad-debout": {
-  "homme": "/media/58caaf8e87d7a050.gif"
+  "homme": "/media/56815335e3345463.gif"
  },
  "stretch-respiration": {
   "homme": "/media/54a3ca1547a3a613.gif"
  },
  "stretch-torsion-allongee": {
-  "homme": "/media/cf7af56885b9a27b.gif"
+  "homme": "/media/e4c658cdff400dca.gif"
  },
  "stretch-triceps-coude": {
-  "homme": "/media/385ff605943ddd08.gif"
+  "homme": "/media/10da6a636b6c241f.gif"
  },
  "stretch-triceps-dos": {
-  "homme": "/media/8f53c697bc6ba576.gif"
+  "homme": "/media/a3e613455df400b6.gif"
  },
  "warmup-approche": {
   "homme": "/media/0c5a8fe6ba79eb47.gif"

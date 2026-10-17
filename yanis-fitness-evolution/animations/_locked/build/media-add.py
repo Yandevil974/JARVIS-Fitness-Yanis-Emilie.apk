@@ -15,7 +15,7 @@ import os
 import shutil
 import sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 EXCLUS = {"runtime.js", "runtime.css", "media-index.json"}
 
 
