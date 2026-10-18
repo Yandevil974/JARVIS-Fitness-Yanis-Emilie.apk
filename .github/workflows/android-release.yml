@@ -98,7 +98,10 @@ jobs:
           APK=app/build/outputs/apk/release/app-release.apk
           BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
           BADGING=$("$BUILD_TOOLS/aapt2" dump badging "$APK")
-          printf '%s\n' "$BADGING" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='186' versionName='1.8.4'"
+          # Version attendue lue dans app/build.gradle (la check suit le bump, plus de version codée en dur).
+          EXP_CODE=$(sed -n 's/.*versionCode \([0-9][0-9]*\).*/\1/p' app/build.gradle | head -1)
+          EXP_NAME=$(sed -n 's/.*versionName "\([^"]*\)".*/\1/p' app/build.gradle | head -1)
+          printf '%s\n' "$BADGING" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='${EXP_CODE}' versionName='${EXP_NAME}'"
           "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK"
           sha256sum "$APK"
           N_DISQUE=$(find ../release/media -maxdepth 1 -type f | wc -l)
