@@ -33,7 +33,22 @@ public class JarvisSpeechPlugin extends Plugin {
     }
     @PluginMethod public void speak(PluginCall call){
         final String text=call.getString("text","");
-        getActivity().runOnUiThread(()->{if(ready&&engine!=null)engine.speak(text,TextToSpeech.QUEUE_FLUSH,null,"jarvis");else pending=text;call.resolve();});
+        final float rate=call.getFloat("rate",0.98f);
+        final String voice=call.getString("voice",null);
+        getActivity().runOnUiThread(()->{
+            if(ready&&engine!=null){
+                if(voice!=null&&voice.length()>0){
+                    java.util.Iterator<android.speech.tts.Voice> it=engine.getVoices();
+                    while(it.hasNext()){
+                        android.speech.tts.Voice v=it.next();
+                        if(voice.equals(v.getName())){engine.setVoice(v);break;}
+                    }
+                }
+                engine.setSpeechRate(Math.max(0.7f,Math.min(1.6f,rate)));
+                engine.speak(text,TextToSpeech.QUEUE_FLUSH,null,"jarvis");
+            }else pending=text;
+            call.resolve();
+        });
     }
     @PluginMethod public void listen(PluginCall call){
         if(getPermissionState("microphone")!=PermissionState.GRANTED){requestPermissionForAlias("microphone",call,"microphoneResult");return;}
