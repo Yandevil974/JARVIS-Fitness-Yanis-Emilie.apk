@@ -34,8 +34,10 @@ jobs:
         working-directory: yanis-fitness-evolution/android
         run: |
           set +e
-          ./gradlew assembleRelease --no-daemon --stacktrace --console=plain --max-workers=1 > /tmp/gradle-diag.log 2>&1
+          { echo "=== MEM AVANT ==="; free -h; nproc; ulimit -v; } > /tmp/gradle-diag.log
+          ./gradlew assembleRelease --no-daemon --stacktrace --console=plain --max-workers=1 >> /tmp/gradle-diag.log 2>&1
           RC=$?
+          { echo "=== MEM APRÈS ==="; free -h; echo "=== DMESG ==="; dmesg 2>&1 | tail -25; echo "=== TOP MEM ==="; ps aux --sort=-%mem 2>/dev/null | head -8; ls hs_err_pid*.log 2>/dev/null; } >> /tmp/gradle-diag.log
           if [ $RC -ne 0 ]; then
             {
               echo "## Gradle diag — échec (code $RC)"
