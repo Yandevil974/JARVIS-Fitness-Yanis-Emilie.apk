@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import androidx.activity.result.ActivityResult;
+import com.getcapacitor.JSArray;
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
@@ -38,9 +39,7 @@ public class JarvisSpeechPlugin extends Plugin {
         getActivity().runOnUiThread(()->{
             if(ready&&engine!=null){
                 if(voice!=null&&voice.length()>0){
-                    java.util.Iterator<android.speech.tts.Voice> it=engine.getVoices();
-                    while(it.hasNext()){
-                        android.speech.tts.Voice v=it.next();
+                    for(android.speech.tts.Voice v:engine.getVoices()){
                         if(voice.equals(v.getName())){engine.setVoice(v);break;}
                     }
                 }
@@ -52,17 +51,14 @@ public class JarvisSpeechPlugin extends Plugin {
     }
     @PluginMethod public void listVoices(PluginCall call){
         final JSObject out=new JSObject();
-        final java.util.ArrayList<JSObject> list=new java.util.ArrayList<>();
+        final JSArray list=new JSArray();
         getActivity().runOnUiThread(()->{
             if(ready&&engine!=null){
-                java.util.Iterator<android.speech.tts.Voice> it=engine.getVoices();
-                while(it.hasNext()){
-                    android.speech.tts.Voice v=it.next();
-                    if(v.getLanguage()!=null&&"fr".equals(v.getLanguage().getLanguage())){
+                for(android.speech.tts.Voice v:engine.getVoices()){
+                    if(v.getName()!=null){
                         JSObject o=new JSObject();
                         o.put("name",v.getName());
-                        o.put("uri",v.getUri()==null?"":v.getUri());
-                        list.add(o);
+                        list.put(o);
                     }
                 }
             }
