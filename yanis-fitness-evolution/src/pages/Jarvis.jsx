@@ -15,6 +15,7 @@ import { dateLabel } from "../engine/utils.js";
 import { brainEnabled } from "../brain/policy.js";
 import { memoryStats } from "../brain/memory.js";
 import { brainConfig } from "../engine/remote-brain.js";
+import { assistantLabel } from "./jarvis-label.js";
 export default function Jarvis() {
   const {
     p,
@@ -202,13 +203,7 @@ export default function Jarvis() {
                   {m.role === "assistant" && (
                     <div className="message-label">
                       JARVIS{" "}
-                      <span>
-                        {m.brain
-                          ? "ARENA//X " + m.brain.toUpperCase()
-                          : m.fallback
-                            ? "SECOURS LOCAL"
-                            : "ANALYSE LOCALE"}
-                      </span>
+                      <span>{assistantLabel(m)}</span>
                     </div>
                   )}
                   <p>{m.text}</p>
