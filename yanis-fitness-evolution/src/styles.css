@@ -18127,3 +18127,20 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
     flex: 1 1 140px;
   }
 }
+
+/* --- Panneau plate-forme IA (ARENA//X) + streaming ---------------------- */
+.brain-panel h3 { margin: 6px 0 12px; font-size: 17px; }
+.brain-row { display: flex; align-items: center; gap: 10px; margin: 9px 0; font-size: 13px; }
+.brain-row > span:first-child { min-width: 74px; color: var(--muted, #8a8f98); }
+.brain-row input[type="checkbox"] { width: 17px; height: 17px; accent-color: #4ade80; }
+.brain-row select, .brain-row input[type="password"] {
+  flex: 1; min-width: 0; background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line-soft, rgba(255, 255, 255, 0.12));
+  border-radius: 9px; color: inherit; padding: 7px 9px; font: inherit; font-size: 13px;
+}
+.brain-panel small { display: block; margin-top: 10px; color: var(--faint, #6b7078); font-size: 11.5px; line-height: 1.55; }
+.message-content.streaming p::after {
+  content: "▍"; margin-left: 2px; color: #4ade80;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }

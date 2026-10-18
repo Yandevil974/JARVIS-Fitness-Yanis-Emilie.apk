@@ -14,6 +14,7 @@ import { exerciseById } from "../data/library.js";
 import { dateLabel } from "../engine/utils.js";
 import { brainEnabled } from "../brain/policy.js";
 import { memoryStats } from "../brain/memory.js";
+import { brainConfig } from "../engine/remote-brain.js";
 export default function Jarvis() {
   const {
     p,
@@ -26,6 +27,11 @@ export default function Jarvis() {
   } = useApp();
   const brain = memoryStats(p),
     brainOn = brainEnabled(p);
+  const arena = brainConfig(p);
+  const setArena = (patch) =>
+    updateProfile((q) => {
+      q.preferences.brain = { ...(q.preferences.brain || {}), ...patch };
+    });
   const [input, setInput] = useState(""),
     [listening, setListening] = useState(false);
   const bottom = useRef(),
@@ -190,10 +196,19 @@ export default function Jarvis() {
                     <Icon name="Sparkles" size={16} />
                   </div>
                 )}
-                <div className="message-content">
+                <div
+                  className={`message-content${m.streaming ? " streaming" : ""}`}
+                >
                   {m.role === "assistant" && (
                     <div className="message-label">
-                      JARVIS <span>ANALYSE LOCALE</span>
+                      JARVIS{" "}
+                      <span>
+                        {m.brain
+                          ? "ARENA//X " + m.brain.toUpperCase()
+                          : m.fallback
+                            ? "SECOURS LOCAL"
+                            : "ANALYSE LOCALE"}
+                      </span>
                     </div>
                   )}
                   <p>{m.text}</p>
@@ -313,8 +328,10 @@ export default function Jarvis() {
             </button>
           </form>
           <div className="chat-disclaimer">
-            <Icon name="LockKeyhole" size={12} /> Analyse par règles locales,
-            pas de modèle externe connecté. Aucune donnée envoyée par JARVIS.
+            <Icon name="LockKeyhole" size={12} />{" "}
+            {arena.enabled && arena.key
+              ? "Conversation déléguée à votre plate-forme ARENA//X (clé conservée sur l’appareil). Commandes de l’appli et secours hors ligne : cerveau local."
+              : "Analyse par règles locales, pas de modèle externe connecté. Aucune donnée envoyée par JARVIS."}
             <br />
             Fitness Brain local : mémoire proposée uniquement sur commande
             explicite, confirmée à la main dans Profil → Mémoire JARVIS, jamais
@@ -325,6 +342,54 @@ export default function Jarvis() {
           </div>
         </Panel>
         <aside className="chat-rail">
+          <Panel className="brain-panel">
+            <div className="eyebrow">PLATE-FORME IA PERSONNELLE</div>
+            <h3>ARENA//X conversationnel</h3>
+            <label className="brain-row">
+              <input
+                type="checkbox"
+                checked={arena.enabled}
+                onChange={(e) => setArena({ enabled: e.target.checked })}
+              />
+              <span>Conversation via ma plate-forme IA</span>
+            </label>
+            <label className="brain-row">
+              <span>Fournisseur</span>
+              <select
+                value={arena.provider}
+                onChange={(e) => setArena({ provider: e.target.value })}
+              >
+                <option value="groq">Groq (clé gsk-…)</option>
+                <option value="openrouter">OpenRouter (clé sk-or-…)</option>
+              </select>
+            </label>
+            <label className="brain-row">
+              <span>Clé API</span>
+              <input
+                type="password"
+                autoComplete="off"
+                placeholder="Collez votre clé ici"
+                value={arena.key}
+                onChange={(e) => setArena({ key: e.target.value })}
+              />
+            </label>
+            <label className="brain-row">
+              <span>Mode</span>
+              <select
+                value={arena.style}
+                onChange={(e) => setArena({ style: e.target.value })}
+              >
+                <option value="solo">Solo — un modèle répond</option>
+                <option value="collab">Collaboration — brouillons + synthèse</option>
+              </select>
+            </label>
+            <small>
+              Moteur identique à votre arène : appels directs Groq / OpenRouter,
+              streaming, et en collaboration deux brouillons fusionnés par le
+              synthétiseur. La clé reste sur cet appareil. Sans clé, sans
+              réseau ou en cas d’erreur, le cerveau local reprend la main.
+            </small>
+          </Panel>
           <Panel className={`brain-rail ${brainOn ? "" : "off"}`}>
             <div className="eyebrow">FITNESS BRAIN · LOCAL</div>
             <h3>Mémoire contrôlée</h3>

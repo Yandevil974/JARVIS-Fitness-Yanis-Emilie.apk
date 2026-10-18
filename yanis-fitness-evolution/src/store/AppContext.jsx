@@ -19,6 +19,7 @@ import { loadState, saveState, saveOnExit } from "./storage.js";
 import { prepareWorkout, nextSession } from "../engine/planner.js";
 import { applyCoachAction } from "../engine/coach.js";
 import { brainAnswer, applyBrainTurn } from "../brain/conversation.js";
+import { brainConfig, brainReady, askArena } from "../engine/remote-brain.js";
 import {
   confirmMemory,
   expireMemories,
@@ -481,6 +482,85 @@ export function AppProvider({ children }) {
     text = String(text).slice(0, 1500);
     const answer = brainAnswer(p, text);
     const turn = answer.turn || null;
+    const arenaCfg = brainConfig(p);
+    const isCommand = !!(
+      answer.action ||
+      answer.automatic ||
+      (answer.choices && answer.choices.length) ||
+      (answer.exerciseIds && answer.exerciseIds.length) ||
+      answer.navigate
+    );
+    if (!isCommand && brainReady(arenaCfg)) {
+      const aId = uid();
+      const userMsg = { id: uid(), role: "user", text, createdAt: Date.now() };
+      updateProfile((q) => {
+        q.messages = [
+          ...q.messages,
+          userMsg,
+          {
+            id: aId,
+            role: "assistant",
+            text: "",
+            brain:
+              arenaCfg.provider +
+              (arenaCfg.style === "collab" ? "//collab" : "//solo"),
+            streaming: true,
+            createdAt: Date.now(),
+          },
+        ].slice(-100);
+      });
+      let last = 0;
+      let timer = null;
+      const paint = (full, final) => {
+        const write = () => {
+          timer = null;
+          updateProfile((q) => {
+            const m = q.messages.find((x) => x.id === aId);
+            if (m) {
+              m.text = full;
+              m.streaming = !final;
+            }
+          });
+        };
+        if (final) {
+          if (timer) clearTimeout(timer);
+          write();
+          return;
+        }
+        const now = Date.now();
+        if (now - last > 120) {
+          last = now;
+          write();
+        } else if (!timer) {
+          timer = setTimeout(write, 140);
+        }
+      };
+      askArena(arenaCfg, p.messages, text, {
+        onDelta: (full) => paint(full, false),
+      })
+        .then((finalText) => {
+          paint(finalText, true);
+          speak(finalText, p.preferences.voice);
+        })
+        .catch((e) => {
+          paint(answer.text, true);
+          updateProfile((q) => {
+            const m = q.messages.find((x) => x.id === aId);
+            if (m) {
+              m.brain = null;
+              m.fallback = true;
+            }
+          });
+          notify(
+            "Plate-forme IA injoignable (" +
+              (e && e.message ? e.message : "erreur") +
+              "). Cerveau local en secours.",
+            "info",
+          );
+          speak(answer.text, p.preferences.voice);
+        });
+      return;
+    }
     let newProfile = p;
     if (answer.automatic && answer.action)
       newProfile = applyCoachAction(p, answer.action).profile;
