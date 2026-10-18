@@ -30,6 +30,7 @@ jobs:
       - name: Gradle assembleRelease (log → annotations si échec)
         working-directory: yanis-fitness-evolution/android
         run: |
+          set +e
           ./gradlew assembleRelease --no-daemon --stacktrace > /tmp/gradle-diag.log 2>&1
           RC=$?
           if [ $RC -ne 0 ]; then
@@ -41,6 +42,9 @@ jobs:
             tail -30 /tmp/gradle-diag.log | while IFS= read -r line; do
               echo "::error file=gradle.log::$line"
             done
+            if [ ! -s /tmp/gradle-diag.log ]; then
+              echo "::error file=gradle.log::LOG VIDE — gradlew n'a rien produit (échec avant tout output)"
+            fi
             exit 1
           fi
           echo "Gradle OK (APK assemblé)."
