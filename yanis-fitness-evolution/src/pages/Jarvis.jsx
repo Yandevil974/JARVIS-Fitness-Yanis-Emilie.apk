@@ -14,7 +14,12 @@ import { exerciseById } from "../data/library.js";
 import { dateLabel } from "../engine/utils.js";
 import { brainEnabled } from "../brain/policy.js";
 import { memoryStats } from "../brain/memory.js";
-import { brainConfig } from "../engine/remote-brain.js";
+import {
+  brainConfig,
+  brainReady,
+  brainModels,
+  testArenaKey,
+} from "../engine/remote-brain.js";
 import { assistantLabel } from "./jarvis-label.js";
 export default function Jarvis() {
   const {
@@ -34,7 +39,23 @@ export default function Jarvis() {
       q.preferences.brain = { ...(q.preferences.brain || {}), ...patch };
     });
   const [input, setInput] = useState(""),
-    [listening, setListening] = useState(false);
+    [listening, setListening] = useState(false),
+    [testing, setTesting] = useState(false),
+    [testState, setTestState] = useState(null);
+  const runTest = () => {
+    if (testing || !brainReady(arena)) return;
+    setTesting(true);
+    setTestState(null);
+    testArenaKey(arena)
+      .then((r) => setTestState({ ok: true, model: r.model }))
+      .catch((e) =>
+        setTestState({
+          ok: false,
+          error: e && e.message ? e.message : "erreur inconnue",
+        }),
+      )
+      .finally(() => setTesting(false));
+  };
   const bottom = useRef(),
     recognition = useRef();
   useEffect(() => {
@@ -121,7 +142,7 @@ export default function Jarvis() {
         description="Un dialogue, des décisions expliquées, un programme qui évolue."
       >
         <Badge color="mint" dot>
-          MOTEUR LOCAL ACTIF
+          {brainReady(arena) ? "PLATE-FORME ARENA//X ACTIVE" : "MOTEUR LOCAL ACTIF"}
         </Badge>
       </PageHeading>
       <div className="coach-layout">
@@ -378,12 +399,45 @@ export default function Jarvis() {
                 <option value="collab">Collaboration — brouillons + synthèse</option>
               </select>
             </label>
+            <div className="brain-row">
+              <button
+                type="button"
+                className="brain-test-btn"
+                disabled={testing || !arena.enabled || !arena.key}
+                onClick={runTest}
+              >
+                {testing
+                  ? "Test en cours…"
+                  : testState && testState.ok
+                    ? "Retester la clé"
+                    : "Tester la clé"}
+              </button>
+            </div>
+            {testing && (
+              <small className="brain-test-info">
+                Appel de validation envoyé à votre plate-forme…
+              </small>
+            )}
+            {testState && testState.ok && (
+              <small className="brain-test-ok">
+                ✓ Clé valide — « {testState.model} » répond. La conversation est
+                active : parlez à JARVIS.
+              </small>
+            )}
+            {testState && !testState.ok && (
+              <small className="brain-test-err">✗ {testState.error}</small>
+            )}
             <small>
               Moteur identique à votre arène : appels directs Groq / OpenRouter,
               streaming, et en collaboration deux brouillons fusionnés par le
               synthétiseur. La clé reste sur cet appareil. Sans clé, sans
               réseau ou en cas d’erreur, le cerveau local reprend la main.
             </small>
+            {brainReady(arena) && (
+              <small className="brain-ready">
+                ● PRÊT — modèle : {brainModels(arena)[0]}
+              </small>
+            )}
           </Panel>
           <Panel className={`brain-rail ${brainOn ? "" : "off"}`}>
             <div className="eyebrow">FITNESS BRAIN · LOCAL</div>

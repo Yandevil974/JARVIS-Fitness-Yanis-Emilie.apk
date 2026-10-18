@@ -173,6 +173,20 @@ async function draftOnce(cfg, modelId, messages, signal) {
   return json.choices?.[0]?.message?.content || "";
 }
 
+/* Validation de clé : ping minimal (quelques jetons) sur le premier modèle
+   du catalogue actif. 200 = clé + modèle opérationnels. */
+export async function testArenaKey(cfg) {
+  const model = brainModels(cfg)[0];
+  const res = await postOnce(cfg, model, [{ role: "user", content: "ping" }], false);
+  const json = await res.json().catch(() => ({}));
+  const content =
+    (json.choices && json.choices[0] &&
+      (json.choices[0].message && json.choices[0].message.content)) ||
+    (json.choices && json.choices[0].text) ||
+    "";
+  return { ok: true, model, reply: String(content).slice(0, 120) };
+}
+
 /* Point d'entrée : conversation via la plate-forme ARENA//X de l'utilisateur.
    Renvoie le texte final ; onDelta(full, chunk) est appelé pendant le flux. */
 export async function askArena(cfg, history, userText, opts = {}) {

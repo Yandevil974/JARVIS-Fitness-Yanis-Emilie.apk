@@ -10,6 +10,7 @@ import {
   parseSSELine,
   conversationMessages,
   askArena,
+  testArenaKey,
 } from "../src/engine/remote-brain.js";
 
 function sseResponse(chunks) {
@@ -186,5 +187,44 @@ test("askArena : erreur réseau remontée pour le secours local", async () => {
   };
   const cfg = { provider: "groq", key: "gsk-1234567890", style: "solo", model: null };
   await assert.rejects(() => askArena(cfg, [], "salut"), /network down/);
+  delete global.fetch;
+});
+
+test("testArenaKey : clé valide → 200 + modèle du catalogue", async () => {
+  const cfg = { provider: "groq", key: "gsk-1234567890", style: "solo", model: null };
+  global.fetch = async (url, opts) => {
+    assert.match(url, /api\.groq\.com/);
+    assert.equal(opts.headers.Authorization, "Bearer gsk-1234567890");
+    assert.equal(JSON.parse(opts.body).stream, false);
+    return jsonResponse("pong");
+  };
+  const r = await testArenaKey(cfg);
+  assert.equal(r.ok, true);
+  assert.equal(r.model, ARENA_FREE_MODELS.groq[0]);
+  assert.equal(r.reply, "pong");
+  delete global.fetch;
+});
+
+test("testArenaKey : clé refusée → rejet HTTP 401", async () => {
+  const cfg = { provider: "openrouter", key: "sk-or-abc", style: "solo", model: null };
+  global.fetch = async () => ({
+    ok: false,
+    status: 401,
+    text: async () => "Invalid API key",
+  });
+  await assert.rejects(() => testArenaKey(cfg), /HTTP 401/);
+  delete global.fetch;
+});
+
+test("testArenaKey : modèle custom utilisé en priorité", async () => {
+  const cfg = {
+    provider: "groq",
+    key: "gsk-1234567890",
+    style: "solo",
+    model: "openai/gpt-oss-20b",
+  };
+  global.fetch = async () => jsonResponse("ok");
+  const r = await testArenaKey(cfg);
+  assert.equal(r.model, "openai/gpt-oss-20b");
   delete global.fetch;
 });
