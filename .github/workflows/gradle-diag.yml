@@ -57,10 +57,14 @@ jobs:
               echo '```'
             } > /tmp/diag-comment.md
             gh api -X post repos/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/comments \
-              -f commit_id="$(git rev-parse HEAD)" -F body="$(cat /tmp/diag-comment.md)" > /tmp/diag-comment.json 2>/dev/null || true
-            if [ -s /tmp/diag-comment.json ]; then
-              echo "Commentaire de diagnostic créé : id=$(python3 -c 'import json;print(json.load(open("/tmp/diag-comment.json"))["id"])' 2>/dev/null || echo '?')"
+              -f commit_id="$(git rev-parse HEAD)" -F body="$(cat /tmp/diag-comment.md)" > /tmp/diag-comment.json 2>/tmp/diag-gh-err.txt || true
+            if [ ! -s /tmp/diag-comment.json ]; then
+              echo "::warning title=gh api post échoué::$(head -3 /tmp/diag-gh-err.txt)"
             fi
+            # Log complet en base64 dans 2 grosses annotations (lisibles via l'API check-runs).
+            B64=$(base64 -w0 /tmp/gradle-diag.log 2>/dev/null)
+            echo "::error title=GRADLE-LOG-PART1-of-2::${B64:0:30000}"
+            echo "::error title=GRADLE-LOG-PART2-of-2::${B64:30000}"
             tail -60 /tmp/gradle-diag.log
             exit 1
           fi
