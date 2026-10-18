@@ -1,5 +1,8 @@
 # Liens de téléchargement — démonstration vidéo 3D
 
+> **Le plus simple** : ouvrir la page du fichier, puis cliquer sur
+> **« Download raw file »** (icône ⤓ en haut à droite de la visionneuse GitHub).
+
 ## Vidéos
 
 | Fichier | Téléchargement direct | Page GitHub |
