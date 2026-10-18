@@ -1,0 +1,11 @@
+LIVRAISON APK 1.8.9 — JARVIS Voix + Récap sportif
+=====================================================
+
+Lien de téléchargement :
+https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.9-jarvis-voice-3/yanis-fitness-evolution-1.8.9.apk
+
+Vérification d'empreinte :
+https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.8.9-jarvis-voice-3/yanis-fitness-evolution-1.8.9.apk.sha256
+
+Version : 1.8.9 (versionCode 190 — installe par-dessus la 1.8.8, données conservées)
+Application : app.yanis.fitness.evolution (inchangée)
