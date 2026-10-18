@@ -50,6 +50,26 @@ public class JarvisSpeechPlugin extends Plugin {
             call.resolve();
         });
     }
+    @PluginMethod public void listVoices(PluginCall call){
+        final JSObject out=new JSObject();
+        final java.util.ArrayList<JSObject> list=new java.util.ArrayList<>();
+        getActivity().runOnUiThread(()->{
+            if(ready&&engine!=null){
+                java.util.Iterator<android.speech.tts.Voice> it=engine.getVoices();
+                while(it.hasNext()){
+                    android.speech.tts.Voice v=it.next();
+                    if(v.getLanguage()!=null&&"fr".equals(v.getLanguage().getLanguage())){
+                        JSObject o=new JSObject();
+                        o.put("name",v.getName());
+                        o.put("uri",v.getUri()==null?"":v.getUri());
+                        list.add(o);
+                    }
+                }
+            }
+            out.put("voices",list);
+            call.resolve(out);
+        });
+    }
     @PluginMethod public void listen(PluginCall call){
         if(getPermissionState("microphone")!=PermissionState.GRANTED){requestPermissionForAlias("microphone",call,"microphoneResult");return;}
         launchRecognition(call);

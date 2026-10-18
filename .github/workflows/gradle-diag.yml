@@ -34,17 +34,21 @@ jobs:
           ./gradlew assembleRelease --no-daemon --stacktrace > /tmp/gradle-diag.log 2>&1
           RC=$?
           if [ $RC -ne 0 ]; then
-            echo "::error title=Gradle a échoué (code $RC)::Dernières lignes d'erreur ci-dessous (annotations)."
-            grep -n -E "\.java:[0-9]+: error|error:|FAILED|What went wrong|Caused by|Execution failed|> Task" /tmp/gradle-diag.log | head -60 | while IFS= read -r line; do
-              echo "::error file=gradle.log::$line"
-            done
-            echo "::error file=gradle.log::--- FIN DE GRADLE (30 dernières lignes) ---"
-            tail -30 /tmp/gradle-diag.log | while IFS= read -r line; do
-              echo "::error file=gradle.log::$line"
-            done
-            if [ ! -s /tmp/gradle-diag.log ]; then
-              echo "::error file=gradle.log::LOG VIDE — gradlew n'a rien produit (échec avant tout output)"
+            {
+              echo "## Gradle diag — échec (code $RC)"
+              echo ""
+              echo "Log : $(wc -l < /tmp/gradle-diag.log) lignes. 100 dernières lignes :"
+              echo ""
+              echo '```'
+              tail -100 /tmp/gradle-diag.log
+              echo '```'
+            } > /tmp/diag-comment.md
+            gh api -X post repos/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/comments \
+              -f commit_id="$(git rev-parse HEAD)" -F body="$(cat /tmp/diag-comment.md)" > /tmp/diag-comment.json 2>/dev/null || true
+            if [ -s /tmp/diag-comment.json ]; then
+              echo "Commentaire de diagnostic créé : id=$(python3 -c 'import json;print(json.load(open("/tmp/diag-comment.json"))["id"])' 2>/dev/null || echo '?')"
             fi
+            tail -60 /tmp/gradle-diag.log
             exit 1
           fi
           echo "Gradle OK (APK assemblé)."
