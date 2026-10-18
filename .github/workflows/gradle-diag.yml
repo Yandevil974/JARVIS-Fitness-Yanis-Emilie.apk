@@ -5,6 +5,9 @@ on:
     tags:
       - "diag-*"
 
+permissions:
+  contents: write
+
 jobs:
   diag:
     runs-on: ubuntu-latest
@@ -31,7 +34,7 @@ jobs:
         working-directory: yanis-fitness-evolution/android
         run: |
           set +e
-          ./gradlew assembleRelease --no-daemon --stacktrace > /tmp/gradle-diag.log 2>&1
+          ./gradlew assembleRelease --no-daemon --stacktrace --console=plain > /tmp/gradle-diag.log 2>&1
           RC=$?
           if [ $RC -ne 0 ]; then
             {
@@ -41,6 +44,16 @@ jobs:
               echo ""
               echo '```'
               tail -100 /tmp/gradle-diag.log
+              echo '```'
+              echo ""
+              echo "### hs_err (crash JVM) :"
+              echo '```'
+              cat hs_err_pid*.log 2>/dev/null | head -40 || echo "aucun"
+              echo '```'
+              echo ""
+              echo "### dmesg (OOM killer) :"
+              echo '```'
+              (dmesg 2>/dev/null | tail -15) || echo "dmesg non lisible"
               echo '```'
             } > /tmp/diag-comment.md
             gh api -X post repos/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/comments \
