@@ -14,8 +14,8 @@ from human import (
 )
 
 FLOOR = (0.085, 0.089, 0.098)
-WALL = (0.055, 0.060, 0.070)
-WALL_PANEL = (0.075, 0.080, 0.092)
+WALL = (0.085, 0.092, 0.105)
+WALL_PANEL = (0.115, 0.122, 0.138)
 STEEL = (0.28, 0.30, 0.34)
 DARK_STEEL = (0.13, 0.14, 0.17)
 
@@ -166,6 +166,12 @@ def build_gym():
         for i in range(6):
             for m in _dumbbell((-4.15 + i * 0.38, yy + 0.10, -5.72), size=0.8 + 0.05 * tier):
                 sc.add(m)
+    # panneaux lumineux diffus derrière le sujet (halo de salle de sport)
+    for zz in (-1.0, 1.6):
+        sc.add(rounded_box(v(-6.28, 2.05, zz), (0.06, 1.4, 0.9),
+                           radius_ratio=0.4, seg=10, rings=5,
+                           color=(0.85, 0.82, 0.75), spec=0.05, shin=8, rim=0.0,
+                           emis=(0.42, 0.38, 0.32)))
     # colonnes
     for xx, zz in ((-5.6, -4.2), (5.6, -4.2), (-5.6, 4.2), (5.6, 4.2)):
         sc.add(rounded_box(v(xx, 2.2, zz), (0.24, 4.4, 0.24), radius_ratio=0.2,

@@ -365,7 +365,7 @@ def vignette(img):
 
 
 def compose_frame(arr, time):
-    img = to_image(arr, exposure=1.30).convert("RGB")
+    img = to_image(arr, exposure=0.92).convert("RGB")
     img = vignette(img)
     phase, power = rep_phase(time)
     # titre + badges (apparition en fondu)

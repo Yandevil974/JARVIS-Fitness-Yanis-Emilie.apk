@@ -116,17 +116,31 @@ class Mesh:
     __slots__ = ("verts", "faces", "normals", "color", "spec", "shin", "rim", "emis")
 
     def __init__(self, verts, faces, normals=None, color=(0.7, 0.7, 0.7), spec=0.1,
-                 shin=20.0, rim=0.25, emis=(0, 0, 0)):
+                 shin=20.0, rim=0.25, emis=(0, 0, 0), smooth=True):
         self.verts = np.asarray(verts, dtype=np.float32)
         self.faces = np.asarray(faces, dtype=np.int32)
-        self.normals = (
-            np.asarray(normals, dtype=np.float32)
-            if normals is not None
-            else vertex_normals(self.verts, self.faces)
-        )
+        if normals is not None:
+            self.normals = np.asarray(normals, dtype=np.float32)
+        else:
+            self.normals = vertex_normals(self.verts, self.faces)
+            if smooth:
+                # moyenne des normales de faces sur les sommets : surface lisse
+                fn = face_normals_np(self.verts, self.faces)
+                acc = np.zeros_like(self.verts)
+                for i in range(3):
+                    np.add.at(acc, self.faces[:, i], fn)
+                avg = norm(acc)
+                self.normals = norm(self.normals * 0.25 + avg * 0.75)
         col = np.asarray(color, dtype=np.float32)
         nf = len(self.faces)
         self.color = col if col.ndim == 2 else np.tile(col, (nf, 1))
+        # auto-éclairage des surfaces claires (peau/mannequin) : évite les faces noires
+        if self.color.ndim == 2:
+            albedo = float(np.clip(self.color.mean(), 0, 1))
+            if albedo > 0.35:
+                em = np.asarray(emis, dtype=np.float32)
+                em = em if em.ndim == 2 else np.tile(em, (nf, 1))
+                self.emis = em + (albedo - 0.35) * 0.30
         self.spec, self.shin, self.rim = float(spec), float(shin), float(rim)
         em = np.asarray(emis, dtype=np.float32)
         self.emis = em if em.ndim == 2 else np.tile(em, (nf, 1))
@@ -151,6 +165,12 @@ class Mesh:
         out.color, out.spec, out.shin, out.rim = self.color, self.spec, self.shin, self.rim
         out.emis = self.emis
         return out
+
+
+def face_normals_np(verts, faces):
+    fn = np.cross(verts[faces[:, 1]] - verts[faces[:, 0]],
+                  verts[faces[:, 2]] - verts[faces[:, 0]])
+    return norm(fn)
 
 
 def vertex_normals(verts, faces):
@@ -374,7 +394,8 @@ class Scene:
         self.spec.append(np.full(nf, mesh.spec, dtype=np.float32))
         self.shin.append(np.full(nf, mesh.shin, dtype=np.float32))
         self.rim.append(np.full(nf, mesh.rim, dtype=np.float32))
-        self.emis.append(mesh.emis)
+        em = np.asarray(mesh.emis, dtype=np.float32)
+        self.emis.append(em if em.ndim == 2 else np.tile(em, (nf, 1)))
         self.count += len(mesh.verts)
 
     def arrays(self):
@@ -394,14 +415,22 @@ class Scene:
 
 # ---------------------------------------------------------------- rendu ------
 DEFAULT_LIGHTS = {
+    # clé (haut-droit, chaude) / remplissage frontal (froide) / contre-jour
     "key": norm(np.array([0.55, 0.85, 0.65])),
-    "key_color": np.array([1.0, 0.95, 0.87], dtype=np.float32),
-    "fill": norm(np.array([-0.75, 0.15, 0.45])),
-    "fill_color": np.array([0.46, 0.58, 0.78], dtype=np.float32),
+    "key_color": np.array([1.00, 0.94, 0.86], dtype=np.float32),
+    "fill": norm(np.array([0.35, 0.18, 0.92])),
+    "fill_color": np.array([0.62, 0.74, 0.94], dtype=np.float32),
     "rim": norm(np.array([-0.85, 0.45, -0.75])),
-    "rim_color": np.array([1.0, 0.74, 0.55], dtype=np.float32),
-    "ambient": 0.44,
+    "rim_color": np.array([1.00, 0.78, 0.60], dtype=np.float32),
+    "ambient": 0.62,
+    "sky": np.array([0.30, 0.34, 0.40], dtype=np.float32),
+    "ground": np.array([0.16, 0.16, 0.18], dtype=np.float32),
 }
+
+
+def _tone(x, knee=1.25):
+    """Tonemap doux : compresse les hautes lumières sans blanchir les gris."""
+    return knee * (1.0 - np.exp(-x / knee))
 
 
 def render(scene: Scene, cam: Camera, background=None, bg_depth=None,
@@ -497,16 +526,23 @@ def render(scene: Scene, cam: Camera, background=None, bg_depth=None,
         hinv = 1.0 / np.sqrt(hx * hx + hy * hy + hz * hz)
         ndh = np.clip((nx * hx + ny * hy + nz * hz) * hinv, 0, 1)
         base = A["color"][fi]
+        # micro-relief de fibres (profondeur lissée par sommet, pas de damier)
+        relief = 1.0 + 1.9 * (float(A["emis"][fi, 0]) - 0.001) / (
+            1e-4 + float(np.abs(A["emis"][:, 0]).max()) + 0.001)
         spec = A["spec"][fi] * ndh ** A["shin"][fi]
         rim = A["rim"][fi] * (1 - np.clip(ndr, 0, 1)) ** 2.4
-        shade = amb + 1.00 * ndl
+        hemi = 0.5 + 0.5 * ny  # ciel au-dessus, sol en dessous
+        sky = lights.get("sky", np.array([0.30, 0.34, 0.40], np.float32))
+        ground = lights.get("ground", np.array([0.16, 0.16, 0.18], np.float32))
         px = (
-            base[None, None, :] * shade[:, :, None]
-            + (base * Fc)[None, None, :] * (0.26 * ndf)[:, :, None]
-            + (Rc * 0.38)[None, None, :] * rim[:, :, None]
-            + spec[:, :, None]
+            base[None, None, :] * (amb + 1.45 * ndl)[:, :, None]
+            + (base * Fc)[None, None, :] * (0.42 * ndf)[:, :, None]
+            + (base[None, None, :] * (sky * hemi[:, :, None] + (1 - hemi[:, :, None]) * ground)) * 1.15
+            + (Rc * 0.26)[None, None, :] * rim[:, :, None]
+            + (spec * min(1.7, max(0.35, relief)))[:, :, None] * 0.85
             + A["emis"][fi][None, None, :]
         )
+        px = _tone(px)
         # brouillard de profondeur
         fog = 1 - np.exp(-np.clip(z, 0, None) * fog_density)
         px = px * (1 - fog[:, :, None]) + np.array(fog_color, dtype=np.float32)[None, None, :] * fog[:, :, None]

@@ -14,19 +14,19 @@ from engine3d import (
     rounded_box, smoothstep, translate, tube, v,
 )
 
-SKIN = (0.80, 0.585, 0.470)
-SKIN_DARK = (0.74, 0.53, 0.42)
-SHIRT = (0.66, 0.10, 0.13)
-SHIRT_DARK = (0.48, 0.07, 0.10)
+SKIN = (0.620, 0.632, 0.655)          # gris argenté de mannequin anatomique
+SKIN_DARK = (0.545, 0.557, 0.582)
+SHIRT = (0.600, 0.075, 0.095)         # débardeur rouge translucide
+SHIRT_DARK = (0.400, 0.045, 0.060)
 SHORTS = (0.075, 0.080, 0.095)
 SHOE = (0.10, 0.105, 0.12)
 ACCENT = (0.93, 0.43, 0.13)
 STEEL = (0.30, 0.33, 0.37)
 RUBBER = (0.055, 0.058, 0.065)
-TRICEPS = (0.86, 0.10, 0.08)
-TRICEPS2 = (0.72, 0.06, 0.06)
-TRICEPS3 = (0.96, 0.22, 0.10)
-SECONDARY = (0.95, 0.55, 0.14)
+TRICEPS = (0.95, 0.075, 0.045)
+TRICEPS2 = (0.82, 0.045, 0.035)
+TRICEPS3 = (0.99, 0.24, 0.075)
+SECONDARY = (0.98, 0.55, 0.075)
 
 
 def partial_tube(p0, p1, radii, a0, a1, seg=14, color=(0.8, 0.1, 0.1), **mat):
@@ -53,6 +53,70 @@ def partial_tube(p0, p1, radii, a0, a1, seg=14, color=(0.8, 0.1, 0.1), **mat):
             faces.append((a, c, b))
             faces.append((b, c, dd))
     return Mesh(verts, faces, color=color, **mat)
+
+
+def _striations(mesh, center, axis, radial=15.0, along=110.0, amp=0.20,
+                depth=0.55, phase=0.0):
+    """Striations musculaires : bandes le long des fibres + micro-relief.
+
+    Le modèle de référence est un écorché gris argenté : les fibres courent le
+    long du muscle, donc la teinte varie surtout autour de l'axe du membre.
+    """
+    from engine3d import basis_from_axis, face_centroids
+
+    c = face_centroids(mesh) - np.asarray(center, dtype=np.float32)
+    a = norm(np.asarray(axis, dtype=np.float32))
+    u, w = basis_from_axis(a)
+    ang = np.arctan2(c @ w, c @ u)
+    t = c @ a
+    k = 0.70 * np.sin(ang * radial + t * 26.0 + phase)
+    k += 0.22 * np.sin(ang * radial * 2.7 - t * along + phase * 1.7)
+    k += 0.08 * np.sin(t * along * 2.1)
+    # Les fibres modulent la profondeur (émission -> relief spéculaire), pas la
+    # couleur : on évite ainsi tout effet de damier sur les facettes.
+    _apply_relief(mesh, 0.0025 + amp * 0.010 * (0.5 + 0.5 * k))
+    return mesh
+
+
+def _apply_relief(mesh, amount):
+    """Écrit la profondeur de fibres sur les sommets puis moyenne par face."""
+    nf = len(mesh.faces)
+    w = np.asarray(amount, dtype=np.float32)
+    if w.ndim == 1:
+        acc = np.zeros((len(mesh.verts), 1), dtype=np.float32)
+        cnt = np.zeros((len(mesh.verts), 1), dtype=np.float32)
+        for i in range(3):
+            np.add.at(acc, mesh.faces[:, i], w[:, None])
+            np.add.at(cnt, mesh.faces[:, i], 1.0)
+        w = (acc / np.maximum(cnt, 1.0))[mesh.faces].mean(axis=1)
+    w = np.clip(np.asarray(w, dtype=np.float32).reshape(-1), 0.0, 0.03)
+    mesh.emis = np.stack([w, np.zeros_like(w), np.zeros_like(w)], axis=1)
+    return mesh
+
+
+def _smooth_vertex_shade(mesh):
+    """Reporte la teinte des faces sur les sommets (rendu des fibres continu)."""
+    base = mesh.color if mesh.color.ndim == 2 else np.tile(mesh.color, (len(mesh.faces), 1))
+    acc = np.zeros_like(mesh.verts)
+    cnt = np.zeros((len(mesh.verts), 1), dtype=np.float32)
+    for i in range(3):
+        np.add.at(acc, mesh.faces[:, i], base)
+        np.add.at(cnt, mesh.faces[:, i], 1.0)
+    vcol = acc / np.maximum(cnt, 1.0)
+    fcol = vcol[mesh.faces].mean(axis=1)
+    mesh.color = np.clip(fcol, 0, 1).astype(np.float32)
+    return mesh
+
+
+def _fibers_linear(mesh, direction, freq=170.0, amp=0.18, phase=0.0):
+    """Striations droites (torse, ceinture) le long d'une direction donnée."""
+    from engine3d import face_centroids
+
+    c = face_centroids(mesh)
+    d = norm(np.asarray(direction, dtype=np.float32))
+    k = np.sin((c @ d) * freq + phase) + 0.35 * np.sin((c @ d) * freq * 2.3 + phase)
+    _apply_relief(mesh, 0.0018 + amp * 0.008 * (0.5 + 0.5 * k))
+    return mesh
 
 
 def _profile(radii, t):
@@ -100,7 +164,9 @@ def build_arm(side, shoulder, elbow, wrist, pose, muscle_glow=1.0):
     front = np.clip(-(n @ back), 0, 1) ** 1.2
     lo = np.clip(((c - shoulder) @ v(0, 1, 0)) / 0.07, 0, 1)
     w = front * np.clip(0.35 + lo, 0, 1)
-    out.append(paint(delt, w * 0.72, (0.86, 0.48, 0.11), emission=(0.055 * g, 0.026 * g, 0.0)))
+    delt = paint(delt, w * 0.80, (0.92, 0.46, 0.06), emission=(0.03 * g, 0.012 * g, 0.0))
+    _striations(delt, shoulder, d_upper, radial=20.0, along=120.0, amp=0.34, depth=1.0)
+    out.append(delt)
     # ------------------------------------------------------ haut du bras ---
     upper_radii = [0.052, 0.072, 0.086, 0.092, 0.090, 0.083, 0.072, 0.062, 0.056]
     arm_m = tube(shoulder, elbow, upper_radii, seg=30, color=SKIN,
@@ -120,8 +186,10 @@ def build_arm(side, shoulder, elbow, wrist, pose, muscle_glow=1.0):
     col = np.tile(np.array(TRICEPS, np.float32), (len(arm_m.faces), 1))
     col[tone == 2.0] = TRICEPS2
     col[tone == 3.0] = TRICEPS3
-    out.append(paint(arm_m, weight, col, emission=(0.30 * g, 0.015 * g, 0.006 * g)))
-    # deltoïde déjà peint ci-dessus
+    arm_m = paint(arm_m, weight, col, emission=(0.10 * g, 0.006 * g, 0.002 * g))
+    # fibres du triceps : très visibles, comme sur le modèle de référence
+    _striations(arm_m, shoulder, d_upper, radial=26.0, along=150.0, amp=0.40, depth=1.0)
+    out.append(arm_m)
     # ---------------------------------------------------------- avant-bras --
     fore_radii = [0.052, 0.068, 0.062, 0.043, 0.036]
     fore = tube(elbow, wrist, fore_radii, seg=18, color=SKIN,
@@ -131,16 +199,19 @@ def build_arm(side, shoulder, elbow, wrist, pose, muscle_glow=1.0):
     tf = (c - elbow) @ (wrist - elbow) / float((wrist - elbow) @ (wrist - elbow))
     up_out = np.clip(-(n @ back) * 0.55 + (n @ out_dir) * 0.75 + 0.15, 0, 1)
     wb = up_out * _smooth_bump(tf, 0.02, 0.62, 0.16) * 0.8
-    out.append(paint(fore, wb, SECONDARY, emission=(0.10 * g, 0.045 * g, 0.0)))
-    out.append(ellipsoid(elbow, (0.052, 0.055, 0.055), seg=14, rings=9,
-                         color=SKIN, spec=0.09, shin=16, rim=0.30))
+    fore = paint(fore, wb, SECONDARY, emission=(0.035 * g, 0.014 * g, 0.0))
+    _striations(fore, elbow, wrist - elbow, radial=18.0, along=190.0, amp=0.36, depth=1.0)
+    out.append(fore)
+    elbow_m = ellipsoid(elbow, (0.052, 0.055, 0.055), seg=14, rings=9,
+                        color=SKIN, spec=0.16, shin=26, rim=0.30)
+    out.append(_striations(elbow_m, elbow, d_upper, radial=9.0, along=80.0, amp=0.22, depth=0.5))
     # main (poing fermé autour de la barre)
     hand_c = wrist + v(0.030, -0.010, 0)
     out.append(rounded_box(hand_c, (0.082, 0.098, 0.072), radius_ratio=0.42,
-                           seg=14, rings=8, color=SKIN_DARK, spec=0.09, shin=14, rim=0.26))
+                           seg=14, rings=8, color=(0.40, 0.41, 0.44), spec=0.20, shin=26, rim=0.22))
     out.append(ellipsoid(hand_c + v(0.030, -0.030, -side * 0.030),
                          (0.030, 0.024, 0.022), seg=10, rings=7,
-                         color=SKIN_DARK, spec=0.08, shin=12, rim=0.22))
+                         color=(0.34, 0.35, 0.38), spec=0.18, shin=24, rim=0.20))
     info = {
         "triceps": shoulder + axis * 0.62 + back * 0.07,
         "deltoid": shoulder + v(0.05, 0.01, side * 0.06),
@@ -151,18 +222,21 @@ def build_arm(side, shoulder, elbow, wrist, pose, muscle_glow=1.0):
 
 def build_leg(side, hip, knee, ankle, foot_forward):
     out = []
-    # cuisse
-    out.append(tube(hip, knee, [0.108, 0.122, 0.112, 0.082], seg=16,
-                    color=(0.22, 0.21, 0.22), spec=0.06, shin=10, rim=0.22))
+    # cuisse (short noir, texture tissu)
+    thigh = tube(hip, knee, [0.108, 0.122, 0.112, 0.082], seg=20,
+                 color=(0.075, 0.078, 0.088), spec=0.09, shin=16, rim=0.18)
+    out.append(_striations(thigh, hip, knee - hip, radial=22.0, along=110.0, amp=0.05, depth=0.0))
     # genou
     out.append(ellipsoid(knee, (0.072, 0.075, 0.070), seg=14, rings=9,
-                         color=(0.22, 0.21, 0.22), spec=0.05, shin=10, rim=0.20))
-    # tibia + mollet
-    out.append(tube(knee, ankle, [0.060, 0.070, 0.050, 0.036], seg=14,
-                    color=(0.74, 0.54, 0.43), spec=0.09, shin=16, rim=0.30))
+                         color=(0.075, 0.078, 0.088), spec=0.10, shin=18, rim=0.18))
+    # tibia + mollet (peau grise du mannequin)
+    shin = tube(knee, ankle, [0.060, 0.070, 0.050, 0.036], seg=20,
+                color=SKIN, spec=0.16, shin=26, rim=0.30)
+    out.append(_striations(shin, knee, ankle - knee, radial=18.0, along=170.0, amp=0.34, depth=1.0))
     calf = knee + (ankle - knee) * 0.36 + v(-0.022, 0, 0)
-    out.append(ellipsoid(calf, (0.052, 0.095, 0.058), seg=14, rings=9,
-                         color=(0.74, 0.54, 0.43), spec=0.09, shin=16, rim=0.30))
+    calf_m = ellipsoid(calf, (0.052, 0.095, 0.058), seg=16, rings=11,
+                       color=SKIN, spec=0.16, shin=26, rim=0.30)
+    out.append(_striations(calf_m, knee, ankle - knee, radial=16.0, along=160.0, amp=0.38, depth=1.0))
     # chaussette (manchon ouvert autour de la cheville)
     sock_top = ankle + (knee - ankle) * 0.19
     out.append(tube(sock_top, ankle + v(0.008, -0.045, 0),
@@ -245,10 +319,13 @@ def build_athlete(pose, glow=1.0):
         (1.445, 0.130, 0.204, cx(1.445), 0.022),
         (1.480, 0.100, 0.150, cx(1.480), 0.018),
     ]
-    meshes.append(loft(rings, seg=26, color=SKIN, n=2.35, spec=0.10, shin=16, rim=0.28))
+    torso = loft(rings, seg=30, color=SKIN, n=2.35, spec=0.16, shin=26, rim=0.28)
+    _fibers_linear(torso, (0, 0, 1), freq=105.0, amp=0.30)
+    meshes.append(torso)
     # trapèzes / cou
-    meshes.append(ellipsoid((cx(1.47) - 0.01, 1.468, 0), (0.092, 0.062, 0.148),
-                            seg=18, rings=10, color=SKIN, spec=0.1, shin=14, rim=0.25))
+    traps = ellipsoid((cx(1.47) - 0.01, 1.468, 0), (0.092, 0.062, 0.148),
+                      seg=18, rings=10, color=SKIN, spec=0.14, shin=22, rim=0.25)
+    meshes.append(_fibers_linear(traps, (0, 0, 1), freq=90.0, amp=0.30))
     meshes.append(tube((cx(1.46), 1.462, 0), (cx(1.60) + 0.018, 1.610, 0),
                        [0.060, 0.062, 0.055], seg=16, color=SKIN, spec=0.1,
                        shin=16, rim=0.3))
@@ -262,25 +339,30 @@ def build_athlete(pose, glow=1.0):
     # nez discret
     meshes.append(ellipsoid(hc + v(0.082, -0.012, 0), (0.020, 0.026, 0.017),
                             seg=10, rings=7, color=SKIN, spec=0.08, shin=12, rim=0.2))
-    # lunettes de soleil
-    meshes.append(rounded_box(hc + v(0.072, 0.022, 0), (0.028, 0.026, 0.126),
-                              radius_ratio=0.5, seg=14, rings=6,
-                              color=(0.035, 0.035, 0.042), spec=0.70, shin=80, rim=0.40))
-    meshes.append(tube(hc + v(0.055, 0.022, -0.062), hc + v(-0.02, 0.030, -0.080),
-                       [0.006, 0.006], seg=6, color=(0.05, 0.05, 0.06)))
-    meshes.append(tube(hc + v(0.055, 0.022, 0.062), hc + v(-0.02, 0.030, 0.080),
-                       [0.006, 0.006], seg=6, color=(0.05, 0.05, 0.06)))
+    # orbites discrètes : visage de mannequin, sans accessoire
+    for s_ in (-1, 1):
+        meshes.append(ellipsoid(hc + v(0.070, 0.016, s_ * 0.036),
+                                (0.016, 0.012, 0.022), seg=10, rings=7,
+                                color=(0.34, 0.35, 0.37), spec=0.05, shin=8, rim=0.1))
+    # lèvre / bouche neutre
+    meshes.append(ellipsoid(hc + v(0.082, -0.050, 0), (0.010, 0.008, 0.026),
+                            seg=10, rings=6, color=(0.44, 0.45, 0.47),
+                            spec=0.08, shin=12, rim=0.1))
     for s_ in (-1, 1):
         meshes.append(ellipsoid(hc + v(-0.014, -0.006, s_ * 0.080),
                                 (0.022, 0.030, 0.012), seg=10, rings=7,
-                                color=SKIN, spec=0.08, shin=12, rim=0.2))
+                                color=SKIN, spec=0.12, shin=18, rim=0.2))
     # casquette
-    meshes.append(ellipsoid(hc + v(-0.006, 0.050, 0), (0.096, 0.076, 0.092),
-                            seg=22, rings=11, color=(0.075, 0.075, 0.085),
-                            spec=0.16, shin=24, rim=0.32))
-    meshes.append(rounded_box(hc + v(0.100, 0.036, 0), (0.130, 0.020, 0.120),
-                              radius_ratio=0.45, seg=16, rings=6,
-                              color=(0.065, 0.065, 0.075), spec=0.20, shin=26, rim=0.30))
+    meshes.append(ellipsoid(hc + v(-0.006, 0.048, 0), (0.094, 0.078, 0.090),
+                            seg=22, rings=11, color=(0.085, 0.087, 0.098),
+                            spec=0.22, shin=30, rim=0.34))
+    meshes.append(rounded_box(hc + v(0.098, 0.032, 0), (0.132, 0.018, 0.118),
+                              radius_ratio=0.5, seg=16, rings=6,
+                              color=(0.070, 0.072, 0.082), spec=0.26, shin=34, rim=0.30))
+    # visière avant de la casquette
+    meshes.append(rounded_box(hc + v(0.112, 0.010, 0), (0.075, 0.014, 0.108),
+                              radius_ratio=0.5, seg=14, rings=5,
+                              color=(0.062, 0.064, 0.074), spec=0.24, shin=30, rim=0.28))
     # ---------------------------------------------------------- épaules -----
     arm_l, info_l = build_arm(+1, S["shoulder_l"], S["elbow_l"], S["wrist_l"], pose, glow)
     arm_r, info_r = build_arm(-1, S["shoulder_r"], S["elbow_r"], S["wrist_r"], pose, glow)
@@ -306,24 +388,33 @@ def build_athlete(pose, glow=1.0):
                            caps=False))
     meshes += leg_l + leg_r
     # ------------------------------------------------------------ brassière -
-    # haut rouge (tank) : du bassin au haut du sternum, plus les bretelles
+    # débardeur rouge translucide : les fibres musculaires restent visibles
     top = 1.452
     shirt_rings = []
     for (y, rx, rz, cxx, cz) in rings:
         if 1.005 <= y <= top:
-            shirt_rings.append((y, rx * 1.025, rz * 1.025, cxx, cz))
+            shirt_rings.append((y, rx * 1.028, rz * 1.028, cxx, cz))
     shirt_rings.append((top, 0.128, 0.168, cx(top), 0.020))
-    meshes.append(loft(shirt_rings, seg=26, color=SHIRT, n=2.35,
-                       spec=0.06, shin=8, rim=0.16))
+    shirt = loft(shirt_rings, seg=30, color=SHIRT, n=2.35,
+                 spec=0.10, shin=14, rim=0.18)
+    # fibres du torse affleurant sous le tissu (effet translucide)
+    from engine3d import face_centroids as _fc
+    c = _fc(shirt)
+    k = np.sin(c[:, 2] * 95.0 + c[:, 1] * 30.0) * 0.5 + np.sin(c[:, 1] * 60.0) * 0.5
+    base = np.tile(np.array(SHIRT, np.float32), (len(shirt.faces), 1))
+    hi = np.array((0.86, 0.16, 0.16), np.float32)
+    mix = np.clip(0.22 + 0.10 * k, 0, 1)[:, None].astype(np.float32)
+    shirt.color = np.clip(base * (1 - mix) + hi * mix, 0, 1).astype(np.float32)
+    meshes.append(shirt)
     # bretelles
     for s in (-1, 1):
         a = v(cx(1.40) + 0.10, 1.40, s * 0.105)
         b = v(cx(1.47) - 0.02, 1.475, s * 0.125)
-        c = v(cx(1.42) - 0.115, 1.40, s * 0.095)
+        c2 = v(cx(1.42) - 0.115, 1.40, s * 0.095)
         meshes.append(tube(a, b, [0.034, 0.038, 0.032], seg=10, color=SHIRT,
-                           spec=0.05, shin=6, rim=0.12))
-        meshes.append(tube(b, c, [0.036, 0.038, 0.030], seg=10, color=SHIRT,
-                           spec=0.05, shin=6, rim=0.12))
+                           spec=0.08, shin=10, rim=0.12))
+        meshes.append(tube(b, c2, [0.036, 0.038, 0.030], seg=10, color=SHIRT,
+                           spec=0.08, shin=10, rim=0.12))
     # --------------------------------------------------------- barre + câble --
     bar = S["bar"]
     bar_mesh = tube(bar + v(0, 0, -0.30), bar + v(0, 0, 0.30),

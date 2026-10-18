@@ -24,7 +24,7 @@ de la chaîne de repli existante.
 
 | Livrable | Emplacement |
 | --- | --- |
-| Vidéo MP4 de démonstration | `public/media/video/extension-triceps-poulie.mp4` (778 Ko, 900×1124, 24 i/s, H.264, 11,5 s) |
+| Vidéo MP4 de démonstration | `public/media/video/extension-triceps-poulie.mp4` (718 Ko, 900×1124, 24 i/s, H.264, 11,5 s) |
 | Affiche (première image) | `public/media/video/extension-triceps-poulie-poster.jpg` (113 Ko) |
 | Manifeste exercice → vidéo | `public/media/video/manifest.json` |
 | Résolveur applicatif | `src/engine/demo-video.js` |
@@ -67,7 +67,7 @@ Garanties :
 | --- | --- |
 | `npm test` (101 tests, dont 5 nouveaux) | ✅ 99 verts, 2 ignorés (préexistants), 0 échec |
 | Association exercice ↔ vidéo, noms exacts, fichiers présents | ✅ |
-| Poids des fichiers (limite 8 Mo / vidéo) | ✅ 778 Ko |
+| Poids des fichiers (limite 8 Mo / vidéo) | ✅ 718 Ko |
 | Validation du repli `null` pour tous les autres exercices | ✅ |
 | `npm run build` (Vite) | ✅ |
 | Lecture H.264 / format / continuité (analyse des 276 trames) | ✅ 3 coupes de caméra, aucune anomalie |
@@ -90,13 +90,16 @@ Garanties :
 
 - **Coût : 0 €.** Aucune API payante, aucune clé, aucun envoi de données vers un service
   externe. Le rendu tourne avec Python + numpy + Pillow + ffmpeg déjà présents.
-- **Poids** : ~780 Ko par vidéo ; à 260 exercices, ~190 Mo. Au-delà d'une vingtaine de
+- **Poids** : ~720 Ko par vidéo ; à 260 exercices, ~190 Mo. Au-delà d'une vingtaine de
   vidéos, il faudra un stockage externe (CDN / bucket) plutôt que le dépôt Git — l'URL du
   manifeste est déjà relative, il suffira de changer `VIDEO_BASE` dans
   `src/engine/demo-video.js`.
-- **Fidélité anatomique** : personnage stylisé et planches 2D ; ce n'est pas un scan réel
-  ni une simulation de déformation musculaire. C'est documenté dans le manifeste et dans
-  la fiche de l'exercice.
+- **Fidélité anatomique** : le personnage a été repris dans le style de la vidéo de
+  référence — modèle anatomique gris argenté strié, débardeur rouge translucide, triceps
+  saturés — mais ce n'est pas un scan humain réel ni une simulation de déformation
+  musculaire. C'est documenté dans le manifeste et dans la fiche de l'exercice.
+- **Comparatif** : `docs/video-preview/comparatif-reference-vs-rendu.jpg` (référence à
+  gauche, rendu à droite).
 - **Pas d'audio** : la vidéo est muette, les annonces vocales existantes restent seules
   responsables du son pendant l'effort.
 

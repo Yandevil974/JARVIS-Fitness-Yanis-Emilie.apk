@@ -52,7 +52,7 @@ fichier ne se charge pas, l'application reprend exactement son fonctionnement
 d'origine (GIF puis animation créée), sans écran vide.
 
 - Première vidéo validée : **Extension triceps à la poulie**
-  (`public/media/video/extension-triceps-poulie.mp4`, 900×1124, 778 Ko).
+  (`public/media/video/extension-triceps-poulie.mp4`, 900×1124, 718 Ko).
 - Générateur reproductible, sans service externe : `tools/anatomy-video/`.
 - Dossier et prompt Arena.ai : `docs/prompts/extension-triceps-a-la-poulie.md`.
 - Rapport complet (audit, tests, limites, suite) : `docs/VIDEO-DEMOS.md`.
