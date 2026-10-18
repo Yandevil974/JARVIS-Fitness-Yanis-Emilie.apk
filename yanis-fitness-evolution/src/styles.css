@@ -2656,6 +2656,29 @@ textarea.input {
 .movement.has-media .movement-visual {
   background: #32343836;
 }
+/* Démonstration vidéo 3D (H.264 vertical, lecture en boucle, sans son) */
+.movement-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #0b0d12;
+  display: block;
+}
+.movement-video:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 2px;
+}
+.image-viewer-video {
+  width: 100%;
+  max-height: 72vh;
+  border-radius: 12px;
+  background: #0b0d12;
+  display: block;
+}
+.reduce-motion .movement-video {
+  /* animations réduites : la vidéo reste sur sa première image */
+  filter: none;
+}
 .movement-controls {
   display: flex;
   align-items: center;
@@ -17702,3 +17725,22 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .rest-next-thumb img { width: 56px; height: 56px; object-fit: cover; display: block; }
 .rest-next-thumb svg { position: absolute; right: 4px; bottom: 4px; color: #fff; opacity: 0.85; }
 .rest-next-body { display: flex; gap: 10px; align-items: center; }
+
+/* Une vidéo verticale a besoin de plus de hauteur qu'un GIF pour rester lisible
+   sur téléphone : on agrandit le cadre uniquement quand une vidéo est active. */
+.movement.has-video .movement-visual,
+.exercise-stage .movement.has-video .movement-visual,
+.exercise-detail-layout .movement.has-video .movement-visual {
+  height: clamp(340px, 54vh, 520px);
+  background: #0b0d12;
+}
+.movement.has-video .movement-controls {
+  background: #12151b;
+  border-top-color: #232833;
+}
+.movement.has-video .movement-controls > button {
+  color: #4fd1b0;
+}
+.movement.has-video .movement-controls > span {
+  color: #9aa3b2;
+}

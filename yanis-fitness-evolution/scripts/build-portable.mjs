@@ -29,7 +29,12 @@ function walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p);
-    else if (!/runtime\.(js|css)$|media-index\.json$/.test(p))
+    // Les démonstrations vidéo 3D ne sont pas encodées dans l’export HTML
+    // autonome (poids) : l’export retombe sur les animations d’origine.
+    else if (
+      !/runtime\.(js|css)$|media-index\.json$/.test(p) &&
+      !/^public\/media\/video\//.test(p)
+    )
       files.push("/" + p.replace(/^public\//, ""));
   }
 }

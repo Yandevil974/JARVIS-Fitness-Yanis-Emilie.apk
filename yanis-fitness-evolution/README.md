@@ -41,6 +41,25 @@ modifiée, ni remplacée.
 - Aucun import d’animation d’un autre domaine quand une animation manque :
   un visuel cohérent est généré et rattaché à l’exercice.
 
+
+## Démonstrations vidéo 3D
+
+Une bibliothèque de vidéos anatomiques peut remplacer, exercice par exercice, les
+animations d'origine. Les vidéos sont déclarées dans
+`public/media/video/manifest.json` et associées par l'identifiant exact du
+catalogue ; tant qu'une entrée n'est pas marquée `validated: true`, ou si le
+fichier ne se charge pas, l'application reprend exactement son fonctionnement
+d'origine (GIF puis animation créée), sans écran vide.
+
+- Première vidéo validée : **Extension triceps à la poulie**
+  (`public/media/video/extension-triceps-poulie.mp4`, 900×1124, 778 Ko).
+- Générateur reproductible, sans service externe : `tools/anatomy-video/`.
+- Dossier et prompt Arena.ai : `docs/prompts/extension-triceps-a-la-poulie.md`.
+- Rapport complet (audit, tests, limites, suite) : `docs/VIDEO-DEMOS.md`.
+
+Les vidéos ne sont pas incluses dans l'export HTML autonome (poids) : cet export
+conserve les animations d'origine.
+
 ## Démarrage
 
 ```bash

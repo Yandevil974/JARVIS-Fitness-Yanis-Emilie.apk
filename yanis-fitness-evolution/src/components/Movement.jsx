@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { assetSrc, norm } from "../engine/utils.js";
 import { demonstrationFor, DEMO_LABELS } from "../engine/demo-match.js";
+import { demoVideoFor } from "../engine/demo-video.js";
 import { motionFor } from "../engine/human-motion.js";
 import { POOL_GUIDES } from "../data/library.js";
 import { useApp } from "../store/AppContext.jsx";
@@ -17,6 +18,9 @@ import HumanAnim from "./HumanAnim.jsx";
 //    cardio elliptique, HIIT) ; elles reçoivent le visuel humain de
 //    récupération (ou la cadence respiratoire), comme dans l'original ;
 // 5. respiration guidée ; 6. vue anatomique (exercices non filmables).
+// Avant tout : une démonstration vidéo 3D validée (manifeste
+// src/engine/demo-video.js) prend la main. Si le fichier ne se charge pas, on
+// retombe immédiatement sur la résolution d'origine : rien ne casse hors ligne.
 function poolGuideFor(name) {
   const n = norm(name);
   return (
@@ -45,7 +49,8 @@ export default function Movement({
   controls = true,
 }) {
   const media = demonstration(exercise, movementName),
-    image = useRef();
+    image = useRef(),
+    videoRef = useRef();
   const { p, setModal } = useApp();
   const reduced =
     !!p?.preferences?.reducedMotion ||
@@ -53,6 +58,12 @@ export default function Movement({
       !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches);
   const [paused, setPaused] = useState(reduced);
   const [frozen, setFrozen] = useState(null);
+  const [videoBroken, setVideoBroken] = useState(false);
+  // Vidéo 3D validée : priorité absolue tant qu'elle se lit correctement.
+  // Jamais dans les vignettes compactes (`small`) : une liste de séance ne doit
+  // pas télécharger plusieurs vidéos — les GIF/animations d'origine y restent.
+  const video =
+    !videoBroken && !small && exercise ? demoVideoFor(exercise) : null;
   const breathe = ["breathe", "respiration"].includes(
     pattern || exercise?.pattern,
   );
@@ -74,18 +85,48 @@ export default function Movement({
   useEffect(() => {
     setFrozen(null);
     setPaused(reduced);
+    setVideoBroken(false);
   }, [exercise?.id, media?.path, reduced]);
+  // Un seul état de lecture pilote l'image animée ET la vidéo.
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    if (paused) el.pause();
+    else {
+      const p = el.play();
+      if (p?.catch) p.catch(() => setPaused(true));
+    }
+  }, [paused, video?.path]);
   const toggle = () => {
+    if (video) {
+      setPaused((v) => !v);
+      return;
+    }
     if (!paused) capture();
     setPaused((v) => !v);
   };
-  const zoomable = (media || motion) && !small;
+  const zoomable = (video || media || motion) && !small;
   return (
     <div
-      className={`movement human-movement ${small ? "small" : ""} ${media || motion ? "has-media" : ""} ${breathe ? "breathing-human" : ""}`}
+      className={`movement human-movement ${small ? "small" : ""} ${media || motion ? "has-media" : ""} ${video ? "has-video" : ""} ${breathe ? "breathing-human" : ""}`}
     >
       <div className="movement-visual">
-        {media ? (
+        {video ? (
+          <video
+            ref={videoRef}
+            className="movement-media movement-video"
+            src={assetSrc(video.path)}
+            poster={video.posterPath ? assetSrc(video.posterPath) : undefined}
+            muted
+            loop
+            playsInline
+            autoPlay={!reduced}
+            preload="metadata"
+            disablePictureInPicture
+            aria-label={`Démonstration 3D : ${exercise.name}`}
+            onError={() => setVideoBroken(true)}
+          />
+        ) : media ? (
           <img
             ref={image}
             className={`movement-media ${paused ? "paused" : ""}`}
@@ -145,8 +186,9 @@ export default function Movement({
               setModal({
                 type: "image",
                 src: media?.path,
-                poster: null,
-                title: media ? media.name : exercise?.name,
+                video: video?.path || null,
+                poster: video?.posterPath || null,
+                title: video ? exercise?.name : media ? media.name : exercise?.name,
                 motion: motion || null,
               })
             }
@@ -157,7 +199,7 @@ export default function Movement({
       </div>
       {controls && (
         <div className="movement-controls">
-          {media || motion || breathe ? (
+          {video || media || motion || breathe ? (
             <button
               onClick={toggle}
               aria-label={
@@ -171,7 +213,9 @@ export default function Movement({
             <Icon name="ScanLine" size={15} />
           )}
           <span>
-            {media
+            {video
+              ? "Démonstration 3D · mouvement contrôlé"
+              : media
               ? DEMO_LABELS[media.level] || DEMO_LABELS.variante
               : motion
                 ? DEMO_LABELS.creee

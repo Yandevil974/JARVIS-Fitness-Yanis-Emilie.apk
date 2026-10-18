@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-10-18",
+  "generator": "tools/anatomy-video (rendu 3D procédural, aucun service externe)",
+  "notes": [
+    "Seules les entrées « validated: true » sont utilisées par l'application.",
+    "Les vidéos ne sont pas incluses dans l'export HTML autonome (repli sur les animations d'origine).",
+    "Le surlignage musculaire est une planche anatomique 2D superposée, construite à partir de l'atlas livré avec l'application ; ce n'est pas une simulation de déformation musculaire en temps réel."
+  ],
+  "videos": [
+    {
+      "exerciseId": "extension-triceps-a-la-poulie",
+      "exerciseName": "Extension triceps à la poulie",
+      "muscle": "tri",
+      "secondary": ["epA"],
+      "equipment": ["cable"],
+      "file": "extension-triceps-poulie.mp4",
+      "poster": "extension-triceps-poulie-poster.jpg",
+      "width": 900,
+      "height": 1124,
+      "fps": 24,
+      "durationSeconds": 11.5,
+      "codec": "H.264 Main · yuv420p · aucun flux audio (muet)",
+      "views": [
+        "3/4 avant droit : posture, coudes fixes",
+        "profil droit : trajectoire de la barre et amplitude",
+        "arrière 3/4 droit : triceps et deltoïde postérieur"
+      ],
+      "validated": true,
+      "validatedAt": "2026-10-18",
+      "validation": {
+        "exerciseMatch": true,
+        "limbs": 2,
+        "jointsConsistent": true,
+        "equipmentPath": true,
+        "noMajorDeformation": true,
+        "musclesVisible": true,
+        "continuousMotion": true,
+        "loopFriendly": true
+      },
+      "limitations": [
+        "Personnage stylisé (proportions athlétiques, pas de scan réel).",
+        "Trois vues enchaînées avec fond identique ; pas de raccord de personnage à gérer.",
+        "Pas de charge chiffrée affichée : consignes de sécurité dans le texte de l'exercice."
+      ]
+    }
+  ]
+}
