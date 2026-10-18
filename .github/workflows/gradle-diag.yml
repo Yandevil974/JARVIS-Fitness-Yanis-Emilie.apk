@@ -1,20 +1,15 @@
 name: Gradle diagnostic (annotations)
 
 on:
-  workflow_dispatch:
-    inputs:
-      ref:
-        description: "Réf git à tester (branche)"
-        required: true
-        default: "arena/55b7c0d4-jarvis-fitness-yanis-emilie-ap"
+  push:
+    tags:
+      - "diag-*"
 
 jobs:
   diag:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: 20
