@@ -186,6 +186,12 @@ const extra = [
 ];
 for (const row of extra) rows.set(slug(row[0]), { row, sources: ["jarvis"] });
 const guides = { ...legacy.elite.MUSCU_GUIDES, ...legacy.emilie.MUSCU_GUIDES };
+const EXERCISE_VIDEO_ASSETS = {
+  "extension-triceps-a-la-poulie": {
+    src: "/media/triceps-pushdown-reel.mp4",
+    poster: "/media/triceps-pushdown-cover.jpg",
+  },
+};
 // Vérifié à l'audit : « french press barre EZ » → ea226c444f72de0f.gif et
 // « french press poulie basse » → 4c2b19fa924f90a8.gif sont déjà corrects et
 // distincts dans les données sources. Aucune réassociation n'est nécessaire.
@@ -276,6 +282,8 @@ export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
     note: textOnly(note),
     tip: textOnly(guide?.tip),
     gif: guide?.img || null,
+    video: EXERCISE_VIDEO_ASSETS[id]?.src || null,
+    videoPoster: EXERCISE_VIDEO_ASSETS[id]?.poster || null,
     level: /test|inertie|snatch|drop|myo|1,5/.test(n)
       ? "Avancé"
       : equipment.includes("bodyweight")

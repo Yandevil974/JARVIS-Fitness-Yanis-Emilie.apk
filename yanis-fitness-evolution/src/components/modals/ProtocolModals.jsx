@@ -528,13 +528,26 @@ export function CooldownModal({ session }) {
   );
 }
 // Visionneuse : agrandit une image d’étape, ou agrandit l’animation créée.
-export function ImageViewer({ src, title, motion }) {
+export function ImageViewer({ src, poster, title, motion }) {
   const { closeModal } = useApp();
   if (!src && !motion) return null;
+  const video = /\.(mp4|webm|mov)$/i.test(src || "");
   return (
     <Modal title={title || "Mouvement"} onClose={closeModal} wide>
       <div className="image-viewer">
-        {src ? (
+        {video ? (
+          <video
+            src={assetSrc(src)}
+            poster={poster ? assetSrc(poster) : undefined}
+            aria-label={title || "Démonstration vidéo du mouvement"}
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
+        ) : src ? (
           <img src={assetSrc(src)} alt={title || "Mouvement"} />
         ) : (
           <HumanAnim spec={motion} className="zoomed" />

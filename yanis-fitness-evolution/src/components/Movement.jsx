@@ -45,7 +45,10 @@ export default function Movement({
   controls = true,
 }) {
   const media = demonstration(exercise, movementName),
-    image = useRef();
+    image = useRef(),
+    video = useRef();
+  const isVideo =
+    media?.type === "video" || /\.(mp4|webm|mov)$/i.test(media?.path || "");
   const { p, setModal } = useApp();
   const reduced =
     !!p?.preferences?.reducedMotion ||
@@ -75,8 +78,17 @@ export default function Movement({
     setFrozen(null);
     setPaused(reduced);
   }, [exercise?.id, media?.path, reduced]);
+  useEffect(() => {
+    if (!isVideo || !video.current) return;
+    if (paused || reduced) {
+      video.current.pause();
+      return;
+    }
+    const playing = video.current.play();
+    playing?.catch?.(() => setPaused(true));
+  }, [isVideo, media?.path, paused, reduced]);
   const toggle = () => {
-    if (!paused) capture();
+    if (!paused && !isVideo) capture();
     setPaused((v) => !v);
   };
   const zoomable = (media || motion) && !small;
@@ -84,8 +96,25 @@ export default function Movement({
     <div
       className={`movement human-movement ${small ? "small" : ""} ${media || motion ? "has-media" : ""} ${breathe ? "breathing-human" : ""}`}
     >
-      <div className="movement-visual">
-        {media ? (
+      <div className={`movement-visual ${isVideo ? "movement-video-visual" : ""}`}>
+        {media && isVideo ? (
+          <video
+            ref={video}
+            className={`movement-media ${paused ? "paused" : ""}`}
+            src={assetSrc(media.path)}
+            poster={media.poster ? assetSrc(media.poster) : undefined}
+            aria-label={
+              media.exact
+                ? `Démonstration vidéo : ${media.name}`
+                : `Démonstration vidéo d’un mouvement proche : ${media.name}`
+            }
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            autoPlay={!paused && !reduced}
+          />
+        ) : media ? (
           <img
             ref={image}
             className={`movement-media ${paused ? "paused" : ""}`}
@@ -145,8 +174,8 @@ export default function Movement({
               setModal({
                 type: "image",
                 src: media?.path,
-                poster: null,
                 title: media ? media.name : exercise?.name,
+                poster: media?.poster || null,
                 motion: motion || null,
               })
             }
@@ -161,7 +190,13 @@ export default function Movement({
             <button
               onClick={toggle}
               aria-label={
-                paused ? "Lire l’animation" : "Mettre l’animation en pause"
+                paused
+                  ? isVideo
+                    ? "Lire la vidéo"
+                    : "Lire l’animation"
+                  : isVideo
+                    ? "Mettre la vidéo en pause"
+                    : "Mettre l’animation en pause"
               }
             >
               <Icon name={paused ? "Play" : "Pause"} size={14} />
@@ -172,7 +207,8 @@ export default function Movement({
           )}
           <span>
             {media
-              ? DEMO_LABELS[media.level] || DEMO_LABELS.variante
+              ? DEMO_LABELS[isVideo ? "video" : media.level] ||
+                DEMO_LABELS.variante
               : motion
                 ? DEMO_LABELS.creee
                 : breathe

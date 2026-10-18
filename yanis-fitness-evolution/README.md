@@ -28,6 +28,9 @@ modifiée, ni remplacée.
 - **Zoom images** : toutes les animations et photos ouvrent une visionneuse ;
   chaque animation reste explicitement associée à son exercice (aucune
   substitution inter-domaine, jamais).
+- **Démonstration triceps** : reel vertical local pour l’extension à la poulie,
+  avec boucle de mouvement, repères de placement et respiration ; lecture
+  muette intégrée à la fiche d’exercice.
 - **Entraînements, programme HTML conservé, Progression, Cardio & piscine,
   Récupération, Nutrition, Mon équipe** avec lecture chiffrée des photos de
   progression.

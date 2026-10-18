@@ -152,6 +152,16 @@ function familyMatch(exercise) {
 const byName = new Map(EXERCISES.map((e) => [e.name, e]));
 const demoCache = new Map();
 for (const exercise of EXERCISES) {
+  if (exercise.video) {
+    demoCache.set(exercise.id, {
+      path: exercise.video,
+      poster: exercise.videoPoster || null,
+      name: exercise.name,
+      level: "exact",
+      type: "video",
+    });
+    continue;
+  }
   if (exercise.gif) {
     demoCache.set(exercise.id, {
       path: exercise.gif,
@@ -183,6 +193,7 @@ export function demonstrationFor(exercise) {
 }
 export const DEMO_LABELS = {
   exact: "Illustration humaine · source",
+  video: "Démonstration vidéo · extension triceps",
   variante: "Variante très proche · suivez les consignes ci-dessous",
   famille: "Mouvement de la même famille · suivez les consignes ci-dessous",
   creee: "Animation humaine créée · adaptée au mouvement",
@@ -194,6 +205,7 @@ export function demoInventory() {
     muscle: e.muscle,
     pattern: e.pattern,
     gif: e.gif || null,
+    video: e.video || null,
     demo: demoCache.get(e.id) || null,
   }));
 }
