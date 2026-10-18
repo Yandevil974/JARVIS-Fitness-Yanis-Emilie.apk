@@ -92,7 +92,7 @@ export function parseSSELine(line) {
   }
 }
 
-export function conversationMessages(history, userText) {
+export function conversationMessages(history, userText, context = null) {
   const past = (Array.isArray(history) ? history : [])
     .filter((m) => m && m.text && (m.role === "user" || m.role === "assistant"))
     .slice(-12)
@@ -100,11 +100,11 @@ export function conversationMessages(history, userText) {
       role: m.role === "user" ? "user" : "assistant",
       content: String(m.text).slice(0, 800),
     }));
-  return [
-    { role: "system", content: JARVIS_SYSTEM },
-    ...past,
-    { role: "user", content: String(userText).slice(0, 1500) },
-  ];
+  const out = [{ role: "system", content: JARVIS_SYSTEM }];
+  if (context && String(context).trim())
+    out.push({ role: "system", content: String(context).trim() });
+  out.push(...past, { role: "user", content: String(userText).slice(0, 1500) });
+  return out;
 }
 
 async function postOnce(cfg, modelId, messages, stream, signal) {
@@ -190,9 +190,9 @@ export async function testArenaKey(cfg) {
 /* Point d'entrée : conversation via la plate-forme ARENA//X de l'utilisateur.
    Renvoie le texte final ; onDelta(full, chunk) est appelé pendant le flux. */
 export async function askArena(cfg, history, userText, opts = {}) {
-  const { signal = null, onDelta = null } = opts;
+  const { signal = null, onDelta = null, context = null } = opts;
   const models = brainModels(cfg);
-  const messages = conversationMessages(history, userText);
+  const messages = conversationMessages(history, userText, context);
   if (cfg.style !== "collab" || models.length < 2) {
     const text = await streamOnce(cfg, models[0], messages, signal, onDelta);
     if (!text.trim()) throw new Error("réponse vide");

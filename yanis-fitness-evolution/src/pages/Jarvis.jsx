@@ -26,6 +26,7 @@ export default function Jarvis() {
     p,
     sendCoach,
     applyMessage,
+    setModal,
     navigate,
     openExercise,
     updateProfile,
@@ -174,6 +175,14 @@ export default function Jarvis() {
               }}
             >
               <Icon name={p.preferences.voice ? "Volume2" : "VolumeX"} />
+            </button>
+            <button
+              type="button"
+              className="icon-button"
+              aria-label="Vitesse et voix de JARVIS"
+              onClick={() => setModal({ type: "voice-settings" })}
+            >
+              <Icon name="Gauge" />
             </button>
           </div>
           <div className="chat-messages">

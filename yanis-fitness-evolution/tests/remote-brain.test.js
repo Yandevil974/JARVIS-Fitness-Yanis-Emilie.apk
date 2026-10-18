@@ -228,3 +228,15 @@ test("testArenaKey : modèle custom utilisé en priorité", async () => {
   assert.equal(r.model, "openai/gpt-oss-20b");
   delete global.fetch;
 });
+
+test("conversationMessages : contexte sportif injecté après le système, sans contexte intact", () => {
+  const withCtx = conversationMessages([], "salut", "Contexte sportif : demain dos");
+  assert.equal(withCtx[0].role, "system");
+  assert.equal(withCtx[1].role, "system");
+  assert.match(withCtx[1].content, /Contexte sportif : demain dos/);
+  assert.equal(withCtx[2].role, "user");
+  const plain = conversationMessages([], "salut");
+  assert.equal(plain.length, 2);
+  assert.equal(plain[0].role, "system");
+  assert.equal(plain[1].role, "user");
+});

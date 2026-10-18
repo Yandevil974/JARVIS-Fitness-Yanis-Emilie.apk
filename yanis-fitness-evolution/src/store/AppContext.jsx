@@ -20,6 +20,8 @@ import { prepareWorkout, nextSession } from "../engine/planner.js";
 import { applyCoachAction } from "../engine/coach.js";
 import { brainAnswer, applyBrainTurn } from "../brain/conversation.js";
 import { brainConfig, brainReady, askArena } from "../engine/remote-brain.js";
+import { arenaSportContext } from "../engine/arena-context.js";
+import { clampRate, RATE_DEFAULT } from "../engine/voice-settings.js";
 import {
   confirmMemory,
   expireMemories,
@@ -38,10 +40,19 @@ import { actualSet, numeric } from "../engine/validation.js";
 import { completePlanned } from "../engine/plan-memory.js";
 const Context = createContext(null);
 export const useApp = () => useContext(Context);
+let voiceSettings = { rate: RATE_DEFAULT, voiceName: null };
+export { clampRate };
+export function setVoiceSettings(s) {
+  voiceSettings = {
+    rate: clampRate(s && s.rate != null ? s.rate : 0.98),
+    voiceName: s && typeof s.voiceName === "string" && s.voiceName ? s.voiceName : null,
+  };
+}
 export function speak(text, enabled = true) {
   if (!enabled) return;
+  const { rate, voiceName } = voiceSettings;
   if (isAndroid()) {
-    NativeSpeech.speak({ text }).catch(() => {});
+    NativeSpeech.speak({ text, rate, voice: voiceName }).catch(() => {});
     return;
   }
   if (!globalThis.speechSynthesis) return;
@@ -49,10 +60,11 @@ export function speak(text, enabled = true) {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "fr-FR";
-    u.rate = 0.98;
-    const voice = speechSynthesis
-      .getVoices()
-      .find((v) => v.lang.startsWith("fr"));
+    u.rate = rate;
+    const voices = speechSynthesis.getVoices();
+    const voice =
+      (voiceName && voices.find((v) => v.name === voiceName)) ||
+      voices.find((v) => v.lang.startsWith("fr"));
     if (voice) u.voice = voice;
     speechSynthesis.speak(u);
   } catch (e) {}
@@ -159,6 +171,9 @@ export function AppProvider({ children }) {
     };
   }, [page, modal]);
   const p = state?.profiles[state.activeProfile];
+  useEffect(() => {
+    setVoiceSettings(p?.preferences?.voiceSettings);
+  }, [p?.preferences?.voiceSettings]);
   const notify = useCallback((message, type = "success") => {
     clearTimeout(toastTimeout.current);
     setToast({ message, type, id: uid() });
@@ -537,6 +552,7 @@ export function AppProvider({ children }) {
       };
       askArena(arenaCfg, p.messages, text, {
         onDelta: (full) => paint(full, false),
+        context: arenaSportContext(p),
       })
         .then((finalText) => {
           paint(finalText, true);

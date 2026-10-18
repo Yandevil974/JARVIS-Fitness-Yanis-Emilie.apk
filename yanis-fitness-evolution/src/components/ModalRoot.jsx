@@ -12,8 +12,14 @@ import {
 } from "./modals/SourceExtraModals.jsx";
 import RestorationModal from "./modals/RestorationModal.jsx";
 import { findPlanned } from "../engine/plan-memory.js";
-import React from "react";
-import { useApp } from "../store/AppContext.jsx";
+import React, { useEffect, useState } from "react";
+import {
+  useApp,
+  speak,
+  setVoiceSettings,
+  clampRate,
+} from "../store/AppContext.jsx";
+import { isAndroid, NativeSpeech } from "../platform/native.js";
 import { Modal, Confirm, Button, Icon, Empty, Badge } from "./ui.jsx";
 import ExerciseModal from "./modals/ExerciseModal.jsx";
 import {
@@ -46,6 +52,131 @@ import {
   exportRecoveryData,
   unlockStorage,
 } from "../store/storage.js";
+function VoiceSettingsModal() {
+  const { p, updateProfile, closeModal, notify } = useApp();
+  const vs = p?.preferences?.voiceSettings || {};
+  const rate = clampRate(vs.rate != null ? vs.rate : 0.98);
+  const voiceName = vs.voiceName || null;
+  const [voices, setVoices] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    let alive = true;
+    const fromWeb = () => {
+      const list = globalThis.speechSynthesis
+        ? speechSynthesis
+            .getVoices()
+            .filter((v) => v.lang.toLowerCase().startsWith("fr"))
+            .map((v) => ({ name: v.name }))
+        : [];
+      if (alive) {
+        setVoices(list);
+        setLoading(false);
+      }
+    };
+    (async () => {
+      if (isAndroid()) {
+        try {
+          const r = await NativeSpeech.listVoices();
+          if (alive) {
+            setVoices((r && r.voices) || []);
+            setLoading(false);
+          }
+        } catch (e) {
+          if (alive) {
+            setVoices([]);
+            setLoading(false);
+          }
+        }
+      } else {
+        fromWeb();
+        if (globalThis.speechSynthesis)
+          speechSynthesis.addEventListener("voiceschanged", fromWeb);
+      }
+    })();
+    return () => {
+      alive = false;
+      if (globalThis.speechSynthesis)
+        speechSynthesis.removeEventListener("voiceschanged", fromWeb);
+    };
+  }, []);
+  const save = (patch) =>
+    updateProfile((q) => {
+      q.preferences.voiceSettings = {
+        rate: clampRate(vs.rate != null ? vs.rate : 0.98),
+        voiceName: vs.voiceName || null,
+        ...patch,
+      };
+    });
+  const step = (dir) => save({ rate: clampRate(rate + dir * 0.05) });
+  const sample = () => {
+    setVoiceSettings({ rate, voiceName });
+    speak(
+      "Bonjour, voici la voix et la vitesse de JARVIS. Si c’est bon, gardez ce réglage.",
+      true,
+    );
+    notify("Écoutez l’échantillon — la vitesse et la voix sont appliquées.");
+  };
+  return (
+    <Modal
+      title="Voix de JARVIS"
+      subtitle="Vitesse du discours et choix de la voix"
+      onClose={closeModal}
+    >
+      <label>
+        Vitesse du discours
+        <div className="rate-stepper">
+          <button type="button" onClick={() => step(-1)} aria-label="Ralentir">
+            <Icon name="Minus" size={16} />
+          </button>
+          <span className="rate-value">
+            {String(rate).replace(".", ",").replace(/0$/, "")}×
+          </span>
+          <button type="button" onClick={() => step(1)} aria-label="Accélérer">
+            <Icon name="Plus" size={16} />
+          </button>
+        </div>
+      </label>
+      <label>
+        Voix
+        {loading ? (
+          <span className="small-subtitle">Chargement des voix…</span>
+        ) : voices.length > 1 ? (
+          <select
+            value={voiceName || ""}
+            onChange={(e) => save({ voiceName: e.target.value || null })}
+          >
+            <option value="">Voix française par défaut</option>
+            {voices.map((v) => (
+              <option key={v.name} value={v.name}>
+                {v.name}
+              </option>
+            ))}
+          </select>
+        ) : (
+          <span className="small-subtitle">
+            {voices.length === 1
+              ? voices[0].name + " (unique)"
+              : "Voix française système (aucune liste disponible)"}
+          </span>
+        )}
+      </label>
+      <div className="modal-actions">
+        <Button variant="ghost" onClick={sample} icon="Play">
+          Écouter un échantillon
+        </Button>
+        <Button onClick={closeModal} icon="Check">
+          Fermer
+        </Button>
+      </div>
+      <p className="small-subtitle">
+        Sur Android, la liste dépend des voix installées (Paramètres du
+        téléphone → Système → Langues et saisie → Synthèse vocale). La vitesse
+        s’applique partout.
+      </p>
+    </Modal>
+  );
+}
+
 export default function ModalRoot() {
   const {
     modal,
@@ -100,6 +231,7 @@ export default function ModalRoot() {
     cooldown: <CooldownModal session={m.session} />,
     image: <ImageViewer src={m.src} title={m.title} motion={m.motion} />,
     stretch: <StretchModal exercise={m.exercise} />,
+    "voice-settings": <VoiceSettingsModal />,
   };
   if (map[m.type]) return map[m.type];
   if (m.type === "notifications")
