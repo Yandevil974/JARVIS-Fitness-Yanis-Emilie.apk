@@ -98,3 +98,22 @@ de l'atlas humain livré avec l'application (`public/human/back.webp`,
 `src/components/anatomical-regions.js`). C'est une aide pédagogique fidèle à la
 localisation des chefs du triceps, **pas** une simulation de déformation musculaire en
 temps réel : cette limite est écrite dans le manifeste et dans la fiche exercice.
+
+## 6. Mise à jour 2026-10-19 — corps anatomique réel
+
+La vidéo livrée n'utilise plus le mannequin procédural : elle est rendue à partir d'un
+**vrai maillage anatomique libre**, la peau de **BodyParts3D 4.0**
+(`ashemag/human-atlas`, pièce `FMA7163`, 22 902 sommets / 44 744 faces,
+licence **CC BY-SA 2.1 Japan**).
+
+| Aspect | Choix retenu |
+| --- | --- |
+| Rig | poids du coude calculés par **distance géodésique** sur la peau (pas de fuite vers le torse), rotation rigide autour du coude |
+| Matière | gris argenté + **stries de fibres calculées au pixel** (fréquence 1500 m⁻¹), surlignage triceps/deltoïde par face |
+| Tenue | champs signés analytiques : **coutures lisses**, coupe du tissu au pixel (1,4 mm), débardeur rouge translucide à 87 % |
+| Normales | réorientation cohérente des 44 744 faces (le maillage source est mélangé) + lissage par sommet |
+| Perf | 5,5 s/trame à 900×1124 (≈ 30 min pour 8,6 s), 449 Ko de MP4 |
+
+Générateur : `tools/anatomy-real/` (voir son README). Le mannequin procédural
+(`tools/anatomy-video/`) reste le moteur de rendu et l'historique de la première version.
+

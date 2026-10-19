@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-18",
-  "generator": "tools/anatomy-video (rendu 3D procédural, aucun service externe)",
+  "updatedAt": "2026-10-19",
+  "generator": "tools/anatomy-real (maillage anatomique réel, aucun service externe)",
   "notes": [
     "Seules les entrées « validated: true » sont utilisées par l'application.",
     "Les vidéos ne sont pas incluses dans l'export HTML autonome (repli sur les animations d'origine).",
-    "Rendu 3D stylisé type modèle anatomique (gris argenté + fibres) : ce n'est pas un scan humain réel ; le surlignage musculaire repose sur l'atlas de l'application."
+    "Corps anatomique réel (BodyParts3D) riggé et rendu localement ; la coupe des tissus et les stries sont calculées au pixel."
   ],
   "videos": [
     {
@@ -23,12 +23,12 @@
       "width": 900,
       "height": 1124,
       "fps": 24,
-      "durationSeconds": 11.5,
+      "durationSeconds": 8.6,
       "codec": "H.264 Main · yuv420p · aucun flux audio (muet)",
       "views": [
-        "3/4 avant droit : posture, coudes fixes",
-        "profil droit : trajectoire de la barre et amplitude",
-        "arrière 3/4 droit : triceps et deltoïde postérieur"
+        "3/4 avant : posture, coudes fixes, barre",
+        "profil : trajectoire de la barre et amplitude",
+        "arrière 3/4 : triceps et deltoïde postérieur"
       ],
       "validated": true,
       "validatedAt": "2026-10-18",
@@ -44,11 +44,17 @@
         "styleReference": true
       },
       "limitations": [
-        "Personnage stylisé (proportions athlétiques, pas de scan réel).",
-        "Trois vues enchaînées avec fond identique ; pas de raccord de personnage à gérer.",
-        "Pas de charge chiffrée affichée : consignes de sécurité dans le texte de l'exercice."
+        "Corps anatomique réel libre (BodyParts3D, CC BY-SA 2.1 JP), pas un scan de l'athlète.",
+        "Rig du coude calculé sur la peau (rotation rigide) : pas de déformation musculaire.",
+        "Trois vues enchaînées, même décor ; pas de charge chiffrée affichée."
       ],
-      "style": "modèle anatomique gris argenté strié, débardeur rouge translucide, muscles saturés (aligné sur la vidéo de référence)"
+      "style": "corps anatomique réel (maillage BodyParts3D, 22 902 sommets) : gris argenté strié, triceps/deltoïde saturés, débardeur rouge translucide, short, chaussettes, chaussures, gants et casquette noirs",
+      "source": {
+        "dataset": "BodyParts3D 4.0 via ashemag/human-atlas",
+        "license": "CC BY-SA 2.1 Japan",
+        "citation": "Mitsuhashi et al., Nucleic Acids Research 2009",
+        "generator": "tools/anatomy-real"
+      }
     }
   ]
 }

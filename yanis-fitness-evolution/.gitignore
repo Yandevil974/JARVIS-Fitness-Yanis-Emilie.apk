@@ -8,3 +8,7 @@ tests/screenshots/
 
 # cache Python du générateur de vidéos
 tools/anatomy-video/__pycache__/
+
+# générateur « corps réel » : cache Python et atlas téléchargé (hors dépôt)
+tools/anatomy-real/__pycache__/
+tools/anatomy-real/renders/

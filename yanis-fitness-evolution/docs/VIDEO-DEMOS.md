@@ -1,6 +1,6 @@
 # Démonstrations vidéo 3D — état du projet
 
-Dernière mise à jour : 2026-10-18 · branche `arena/d5e16737-jarvis-fitness-yanis-emilie-ap`
+Dernière mise à jour : 2026-10-19 · branche `arena/d5e16737-jarvis-fitness-yanis-emilie-ap`
 
 ## 1. Audit de l'application (avant toute modification)
 
@@ -24,13 +24,14 @@ de la chaîne de repli existante.
 
 | Livrable | Emplacement |
 | --- | --- |
-| Vidéo MP4 de démonstration | `public/media/video/extension-triceps-poulie.mp4` (718 Ko, 900×1124, 24 i/s, H.264, 11,5 s) |
+| Vidéo MP4 de démonstration | `public/media/video/extension-triceps-poulie.mp4` (449 Ko, 900×1124, 24 i/s, H.264, 8,6 s, muet) |
 | Affiche (première image) | `public/media/video/extension-triceps-poulie-poster.jpg` (113 Ko) |
 | Manifeste exercice → vidéo | `public/media/video/manifest.json` |
 | Résolveur applicatif | `src/engine/demo-video.js` |
 | Lecteur intégré | `src/components/Movement.jsx`, `src/components/modals/ProtocolModals.jsx`, `src/styles.css` |
 | Tests dédiés | `tests/video-demos.test.js` |
-| Générateur 3D | `tools/anatomy-video/` (Python + numpy + Pillow + ffmpeg) |
+| Générateur « corps réel » | `tools/anatomy-real/` (peau BodyParts3D riggée, Python + numpy + Pillow + ffmpeg) |
+| Générateur d'origine | `tools/anatomy-video/` (mannequin procédural, conservé pour l'historique et le moteur de rendu) |
 | Dossier + prompt Arena.ai | `docs/prompts/extension-triceps-a-la-poulie.md` |
 | Prévisualisation | `node tools/anatomy-video/preview-server.mjs` → http://localhost:8099 |
 
@@ -66,8 +67,10 @@ Garanties :
 | Test | Résultat |
 | --- | --- |
 | `npm test` (101 tests, dont 5 nouveaux) | ✅ 99 verts, 2 ignorés (préexistants), 0 échec |
+| `npm run build` + `npm run build:portable` | ✅ 264 médias, vidéo non encodée dans l'export autonome |
+| Contrôle image par image (206 trames, 8,6 s) | ✅ aucune déformation, aucune coupe cassée, cadrages complets |
 | Association exercice ↔ vidéo, noms exacts, fichiers présents | ✅ |
-| Poids des fichiers (limite 8 Mo / vidéo) | ✅ 718 Ko |
+| Poids des fichiers (limite 8 Mo / vidéo) | ✅ 449 Ko |
 | Validation du repli `null` pour tous les autres exercices | ✅ |
 | `npm run build` (Vite) | ✅ |
 | Lecture H.264 / format / continuité (analyse des 276 trames) | ✅ 3 coupes de caméra, aucune anomalie |
@@ -94,10 +97,13 @@ Garanties :
   vidéos, il faudra un stockage externe (CDN / bucket) plutôt que le dépôt Git — l'URL du
   manifeste est déjà relative, il suffira de changer `VIDEO_BASE` dans
   `src/engine/demo-video.js`.
-- **Fidélité anatomique** : le personnage a été repris dans le style de la vidéo de
-  référence — modèle anatomique gris argenté strié, débardeur rouge translucide, triceps
-  saturés — mais ce n'est pas un scan humain réel ni une simulation de déformation
-  musculaire. C'est documenté dans le manifeste et dans la fiche de l'exercice.
+- **Fidélité anatomique** : le corps est un **vrai maillage anatomique libre**
+  (peau BodyParts3D 4.0, 22 902 sommets / 44 744 faces, via `ashemag/human-atlas`,
+  licence CC BY-SA 2.1 Japan). Il est riggé à la main (poids du coude par distance
+  géodésique sur la peau) et rendu localement : gris argenté strié au pixel, triceps et
+  deltoïde saturés, débardeur rouge translucide (coupe au pixel), short, chaussettes,
+  chaussures, gants et casquette noirs. Ce n'est pas un scan de l'athlète ni une
+  simulation de contraction musculaire — c'est documenté dans le manifeste.
 - **Comparatif** : `docs/video-preview/comparatif-reference-vs-rendu.jpg` (référence à
   gauche, rendu à droite).
 - **Pas d'audio** : la vidéo est muette, les annonces vocales existantes restent seules
@@ -116,11 +122,23 @@ Garanties :
 ## 8. Régénérer la vidéo livrée
 
 ```bash
-cd tools/anatomy-video
-python3 video.py            # → public/media/video/extension-triceps-poulie.mp4 + affiche
-python3 -c "import anatomy_badge; anatomy_badge.build_badges()"  # planches anatomiques
-node preview-server.mjs     # prévisualisation http://localhost:8099
+cd tools/anatomy-real
+python3 fetch_atlas.py      # télécharge l'atlas dans /tmp/anat (≈ 57 Mo, hors dépôt)
+PYTHONPATH=..:../anatomy-video python3 final_video.py \
+    ../../public/media/video/extension-triceps-poulie.mp4
+PYTHONPATH=..:../anatomy-video python3 preview_assets.py \
+    ../../public/media/video/extension-triceps-poulie.mp4   # GIF + planche + affiche
 ```
 
-Dépendances : `python3`, `numpy`, `Pillow`, `imageio-ffmpeg` (fournit le binaire ffmpeg).
-Le rendu est déterministe : relancer la commande redonne le même fichier.
+Le rendu complet prend ≈ 30 min sur 2 cœurs (206 trames à 900×1124). L'ancien
+mannequin procédural reste générable via `tools/anatomy-video/video.py`.
+
+Dépendances : `python3`, `numpy`, `Pillow`, `imageio-ffmpeg` (fournit le binaire ffmpeg)
+et `gh` authentifié pour le téléchargement de l'atlas. Le rendu est déterministe.
+
+## 9. Licence des données anatomiques
+
+BodyParts3D est distribué sous **CC BY-SA 2.1 Japan** ; citation requise :
+Mitsuhashi N. *et al.*, « BodyParts3D: 3D structure database for anatomical concepts »,
+*Nucleic Acids Research* 37 (suppl_1), D782-D785, 2009.
+Les scripts de génération sont dans `tools/anatomy-real/` (voir son README).

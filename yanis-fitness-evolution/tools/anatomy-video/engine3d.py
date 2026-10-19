@@ -113,10 +113,12 @@ class Camera:
 
 # ------------------------------------------------------------------ maillage ---
 class Mesh:
-    __slots__ = ("verts", "faces", "normals", "color", "spec", "shin", "rim", "emis")
+    __slots__ = ("verts", "faces", "normals", "color", "spec", "shin", "rim", "emis",
+                 "vcolor", "striate", "cloth", "cloth_pal")
 
     def __init__(self, verts, faces, normals=None, color=(0.7, 0.7, 0.7), spec=0.1,
-                 shin=20.0, rim=0.25, emis=(0, 0, 0), smooth=True):
+                 shin=20.0, rim=0.25, emis=(0, 0, 0), smooth=True, vcolor=None,
+                 striate=None, cloth=None):
         self.verts = np.asarray(verts, dtype=np.float32)
         self.faces = np.asarray(faces, dtype=np.int32)
         if normals is not None:
@@ -141,9 +143,22 @@ class Mesh:
                 em = np.asarray(emis, dtype=np.float32)
                 em = em if em.ndim == 2 else np.tile(em, (nf, 1))
                 self.emis = em + (albedo - 0.35) * 0.30
-        self.spec, self.shin, self.rim = float(spec), float(shin), float(rim)
+        self.spec = spec if np.ndim(spec) else float(spec)
+        self.shin = shin if np.ndim(shin) else float(shin)
+        self.rim = rim if np.ndim(rim) else float(rim)
         em = np.asarray(emis, dtype=np.float32)
         self.emis = em if em.ndim == 2 else np.tile(em, (nf, 1))
+        # couleur par sommet facultative (dégradés doux, bords de tissu fondus)
+        self.vcolor = None if vcolor is None else np.asarray(vcolor, dtype=np.float32)
+        # stries de fibres : (fréquence, amplitude, direction) appliquées au pixel
+        # champs signés de tissu par sommet (coupe nette au pixel)
+        self.cloth = None if cloth is None else np.asarray(cloth, dtype=np.float32)
+        self.cloth_pal = None
+        self.striate = None
+        if striate is not None:
+            freq, amp, axis = striate
+            amp = np.asarray(amp, dtype=np.float32)
+            self.striate = (float(freq), amp, np.asarray(axis, dtype=np.float32))
 
     def transform(self, M):
         R = M[:3, :3]
@@ -155,6 +170,10 @@ class Mesh:
         out.normals = norm(nrm)
         out.color, out.spec, out.shin, out.rim = self.color, self.spec, self.shin, self.rim
         out.emis = self.emis
+        out.vcolor = self.vcolor
+        out.striate = self.striate
+        out.cloth = self.cloth
+        out.cloth_pal = self.cloth_pal
         return out
 
     def mirrored_z(self):
@@ -164,6 +183,10 @@ class Mesh:
         out.normals = self.normals * np.array([1, 1, -1], dtype=np.float32)
         out.color, out.spec, out.shin, out.rim = self.color, self.spec, self.shin, self.rim
         out.emis = self.emis
+        out.vcolor = None if self.vcolor is None else self.vcolor[:, [0, 1, 2]]
+        out.striate = self.striate
+        out.cloth = self.cloth
+        out.cloth_pal = self.cloth_pal
         return out
 
 
@@ -381,6 +404,12 @@ class Scene:
         self.shin = []
         self.rim = []
         self.emis = []
+        self.vcolor = []
+        self.use_v = []
+        self.stripe = []
+        self.cloth = []
+        self.use_c = []
+        self.cloth_pal = None
         self.count = 0
 
     def add(self, mesh: Mesh):
@@ -391,11 +420,38 @@ class Scene:
         self.faces.append(mesh.faces + self.count)
         nf = len(mesh.faces)
         self.color.append(mesh.color)
-        self.spec.append(np.full(nf, mesh.spec, dtype=np.float32))
-        self.shin.append(np.full(nf, mesh.shin, dtype=np.float32))
-        self.rim.append(np.full(nf, mesh.rim, dtype=np.float32))
+        for store, val in ((self.spec, mesh.spec), (self.shin, mesh.shin),
+                           (self.rim, mesh.rim)):
+            a = np.asarray(val, dtype=np.float32).reshape(-1)
+            store.append(np.full(nf, a[0], dtype=np.float32) if a.size == 1 else a)
         em = np.asarray(mesh.emis, dtype=np.float32)
         self.emis.append(em if em.ndim == 2 else np.tile(em, (nf, 1)))
+        if mesh.vcolor is None:
+            self.vcolor.append(np.zeros((len(mesh.verts), 3), dtype=np.float32))
+            self.use_v.append(np.zeros(nf, bool))
+        else:
+            self.vcolor.append(np.asarray(mesh.vcolor, dtype=np.float32))
+            self.use_v.append(np.ones(nf, bool))
+        if mesh.cloth is None:
+            self.cloth.append(np.zeros((len(mesh.verts), 6), dtype=np.float32))
+            self.use_c.append(np.zeros(nf, bool))
+        else:
+            self.cloth.append(np.asarray(mesh.cloth, dtype=np.float32))
+            self.use_c.append(np.ones(nf, bool))
+            if getattr(mesh, "cloth_pal", None) is not None:
+                self.cloth_pal = np.asarray(mesh.cloth_pal, dtype=np.float32)
+        if mesh.striate is None:
+            self.stripe.append(np.zeros((nf, 5), dtype=np.float32))
+        else:
+            freq, amp, axis = mesh.striate
+            a = np.broadcast_to(amp, (nf,)).astype(np.float32)
+            sp = np.zeros((nf, 5), dtype=np.float32)
+            sp[:, 0] = (a > 1e-4)
+            sp[:, 1] = freq
+            sp[:, 2] = a
+            sp[:, 3] = axis[0]
+            sp[:, 4] = axis[1]
+            self.stripe.append(sp)
         self.count += len(mesh.verts)
 
     def arrays(self):
@@ -410,6 +466,13 @@ class Scene:
             shin=np.concatenate(self.shin),
             rim=np.concatenate(self.rim),
             emis=np.concatenate(self.emis),
+            vcolor=np.concatenate(self.vcolor),
+            use_v=np.concatenate(self.use_v),
+            stripe=np.concatenate(self.stripe),
+            cloth=np.concatenate(self.cloth),
+            use_c=np.concatenate(self.use_c),
+            cloth_pal=(self.cloth_pal if self.cloth_pal is not None
+                       else np.zeros((6, 4), np.float32)),
         )
 
 
@@ -426,6 +489,24 @@ DEFAULT_LIGHTS = {
     "sky": np.array([0.30, 0.34, 0.40], dtype=np.float32),
     "ground": np.array([0.16, 0.16, 0.18], dtype=np.float32),
 }
+
+
+def _cloth_shade(base, fields, pal):
+    """Applique les tissus au pixel : champ signé -> couverture nette (1,4 mm).
+
+    `fields` : (H, W, K) distances signées (mètres) pour K pièces.
+    `pal` : (K+1, 4) couleurs (r, g, b, opacité).
+    """
+    w = np.clip(fields / 0.0014 + 0.5, 0.0, 1.0)
+    w = w * w * (3.0 - 2.0 * w)
+    out = base.copy()
+    cover = np.zeros(base.shape[:2], np.float32)
+    for k in range(w.shape[2]):
+        a = w[:, :, k] * pal[k, 3]
+        col = pal[k, :3]
+        out = out * (1.0 - a[:, :, None]) + col[None, None, :] * a[:, :, None]
+        cover = np.maximum(cover, w[:, :, k] * pal[k, 3])
+    return out, cover
 
 
 def _tone(x, knee=1.25):
@@ -526,6 +607,27 @@ def render(scene: Scene, cam: Camera, background=None, bg_depth=None,
         hinv = 1.0 / np.sqrt(hx * hx + hy * hy + hz * hz)
         ndh = np.clip((nx * hx + ny * hy + nz * hz) * hinv, 0, 1)
         base = A["color"][fi]
+        if A["use_v"][fi]:
+            vc = A["vcolor"]
+            base = (w0[:, :, None] * vc[f[0]] + w1[:, :, None] * vc[f[1]]
+                    + w2[:, :, None] * vc[f[2]])
+        else:
+            base = base[None, None, :]
+        if A["use_c"][fi]:
+            fc = A["cloth"][f]
+            cf = (w0[:, :, None] * fc[0] + w1[:, :, None] * fc[1]
+                  + w2[:, :, None] * fc[2])
+            base, cover = _cloth_shade(base, cf, A["cloth_pal"])
+            if A["stripe"][fi, 0] and np.mean(cover) > 0.02:
+                base = base * (1.0 - 0.0 * cover)[:, :, None]  # contours francs
+        if A["stripe"][fi, 0]:
+            _, fr, am, ax, az = A["stripe"][fi]
+            vtx = A["verts"]
+            px_ = (w0[:, :, None] * vtx[f[0]] + w1[:, :, None] * vtx[f[1]]
+                   + w2[:, :, None] * vtx[f[2]])
+            t = px_[:, :, 1] * ax + px_[:, :, 2] * az
+            wave = np.sin(fr * t) * 0.62 + np.sin(fr * 2.17 * t + 1.7) * 0.38
+            base = np.clip(base * (1.0 + am * wave)[:, :, None], 0, 1.2)
         # micro-relief de fibres (profondeur lissée par sommet, pas de damier)
         relief = 1.0 + 1.9 * (float(A["emis"][fi, 0]) - 0.001) / (
             1e-4 + float(np.abs(A["emis"][:, 0]).max()) + 0.001)
@@ -535,9 +637,9 @@ def render(scene: Scene, cam: Camera, background=None, bg_depth=None,
         sky = lights.get("sky", np.array([0.30, 0.34, 0.40], np.float32))
         ground = lights.get("ground", np.array([0.16, 0.16, 0.18], np.float32))
         px = (
-            base[None, None, :] * (amb + 1.45 * ndl)[:, :, None]
-            + (base * Fc)[None, None, :] * (0.42 * ndf)[:, :, None]
-            + (base[None, None, :] * (sky * hemi[:, :, None] + (1 - hemi[:, :, None]) * ground)) * 1.15
+            base * (amb + 1.45 * ndl)[:, :, None]
+            + (base * Fc[None, None, :]) * (0.42 * ndf)[:, :, None]
+            + (base * (sky * hemi[:, :, None] + (1 - hemi[:, :, None]) * ground)) * 1.15
             + (Rc * 0.26)[None, None, :] * rim[:, :, None]
             + (spec * min(1.7, max(0.35, relief)))[:, :, None] * 0.85
             + A["emis"][fi][None, None, :]
