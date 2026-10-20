@@ -439,7 +439,7 @@ export function warmup(p, session) {
       img: WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Ponts fessiers au sol, 10 répétitions contrôlées."
-        : "Rétractions des omoplates et rotations externes sans fatigue.",
+        : "Avec l’élastique : bras tendus devant vous, écartez en serrant les omoplates. Mouvement lent, sans fatigue.",
     },
     ...[0.5, 0.7, 0.85].map((pct, i) => ({
       name: `Approche ${i + 1}${w > 0 ? " · " + roundLoad(w * pct, p.user.increment || 2.5, "down") + " kg" : " · charge légère à choisir"}`,
