@@ -20,10 +20,34 @@ export const STEP_VIDEOS = {
     poster: "/videos/posters/warmup-mise-en-route.jpg",
     label: "Vidéo 3D · Mise en route",
   },
+  // Échauffement — E2 « Mobilité des épaules » (séances haut du corps).
+  // Validée le 20/10/2026 : cercles de bras, mouvement confirmé,
+  // filigrane PixVerse — remplaçable sans toucher au code.
+  "mobilite des epaules": {
+    src: "/videos/warmup-mobilite-epaules.mp4",
+    poster: "/videos/posters/warmup-mobilite-epaules.jpg",
+    label: "Vidéo 3D · Mobilité des épaules",
+  },
+  // Échauffement — E3 « Mobilité hanches & chevilles » (séances jambes).
+  // Validée le 20/10/2026 : squat profond tenu + remontée, mouvement confirmé,
+  // filigrane PixVerse — remplaçable sans toucher au code.
+  "mobilite hanches chevilles": {
+    src: "/videos/warmup-mobilite-hanches.mp4",
+    poster: "/videos/posters/warmup-mobilite-hanches.jpg",
+    label: "Vidéo 3D · Mobilité hanches & chevilles",
+  },
+  // Échauffement — E4 « Activation fessiers » (pont fessier, séances jambes).
+  // Validée le 20/10/2026 avec réserve : montée/descente du bassin correcte
+  // mais style du personnage dérivant légèrement (chromé → réaliste) et glow
+  // des fessiers perdu en cours de vidéo. Régénérable sans toucher au code.
+  "activation fessiers": {
+    src: "/videos/warmup-pont-fessier.mp4",
+    poster: "/videos/posters/warmup-pont-fessier.jpg",
+    label: "Vidéo 3D · Activation fessiers",
+  },
 };
 
 /** Retourne la vidéo validée d'une étape nommée, ou null (→ affichage actuel). */
 export function stepVideoFor(stepName) {
-  const v = STEP_VIDEOS[norm(stepName || "")];
-  return v?.src ? v : null;
+  return STEP_VIDEOS[norm(stepName || "")] || null;
 }

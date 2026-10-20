@@ -24,12 +24,15 @@
 
 ## En attente ⏳ (nécessite ton action : génération vidéo par toi)
 
-- **20/10/2026 — 1ʳᵉ vidéo reçue et intégrée** : E1 Mise en route
-  (`warmup-mise-en-route.mp4`, générée via PixVerse à partir de la photo E1).
-- **Manquent encore** : E2 (épaules), E3 (hanches), E4 (pont fessier) et les
-  3 pilotes muscu (curl, triceps ⭐, back squat). L’atelier ne peut pas
-  générer de vidéo lui-même — dépose les MP4 sur la branche (comme tu as
-  fait), je contrôle (grille B), j’intègre et je teste.
+- **20/10/2026 — 5 vidéos intégrées** : E1 Mise en route + E2 Épaules +
+  E3 Hanches + E4 Pont fessier (kit échauffement COMPLET ✅) et le pilote
+  muscu **triceps** ⭐ (`extension-triceps-a-la-poulie.mp4`, 8,6 s).
+  Sources : PixVerse (E1-E4, via branche `arena/d5e16737-…`) + rendu local
+  session précédente (triceps, même branche).
+- **Manquent encore** : 2 pilotes muscu (curl haltères, back squat), puis
+  muscu vague 1, piscine, elliptique, étirements. Dépose les MP4 sur une
+  branche (n’importe laquelle, je les trouve), je contrôle (grille B),
+  j’intègre et je teste.
 
 ## Fichiers modifiés / créés
 

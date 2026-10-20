@@ -43,7 +43,38 @@ vagues, puis piscine, elliptique, étirements.
 6. **Étirements** (~8 vidéos).
 7. **Muscu vagues suivantes** par groupe musculaire.
 
-## KIT ÉCHAUFFEMENT — prêt ✅ (19/10/2026)
+## KIT ÉCHAUFFEMENT — 4/4 VALIDÉES + INTÉGRÉES ✅ (20/10/2026)
+
+Vidéos récupérées sur la branche `arena/d5e16737-…` (générées via PixVerse
+à partir des photos du kit). E1 déjà intégrée ; E2/E3/E4 + triceps intégrés
+le 20/10/2026. Réserves : filigrane PixVerse bref (E1-E3), E4 avec légère
+dérive de style — toutes remplaçables fichier par fichier sans toucher au code.
+
+### E2 — Mobilité des épaules ✅ VALIDÉE + INTÉGRÉE le 20/10/2026
+MP4 : `public/videos/warmup-mobilite-epaules.mp4` (4 s, 386 Ko).
+Cercles de bras confirmés (bras tendus → cercle à t=3s), anatomie OK.
+Étape « Mobilité des épaules » (séances haut du corps).
+
+### E3 — Mobilité hanches ✅ VALIDÉE + INTÉGRÉE le 20/10/2026
+MP4 : `public/videos/warmup-mobilite-hanches.mp4` (4 s, 855 Ko).
+Squat profond tenu + remontée confirmés (tête baissée → relevée, hanches
+remontées à t=3s), quads orange, anatomie OK.
+Étape « Mobilité hanches & chevilles » (séances jambes).
+
+### E4 — Activation fessiers ✅ VALIDÉE (avec réserve) + INTÉGRÉE le 20/10/2026
+MP4 : `public/videos/warmup-pont-fessier.mp4` (4 s, 903 Ko).
+Montée/descente du bassin correcte ; réserve : style dérivant légèrement
+et glow des fessiers perdu — régénérable plus tard si souhaité.
+Étape « Activation fessiers » (séances jambes).
+
+### TRICEPS (pilote muscu) ✅ VALIDÉ + INTÉGRÉ le 20/10/2026
+MP4 : `public/videos/extension-triceps-a-la-poulie.mp4` (8,6 s, 459 Ko,
+rendu local d'une session précédente, récupéré sur `arena/d5e16737-…`).
+Pushdown 4 reps avec phases FR, triceps orange, sans filigrane.
+Style v1 (mannequin gris, pas le chromé) — une version chromée PixVerse
+pourra le remplacer (prompt triceps déjà prêt, photo `ref-triceps-pushdown.jpg`).
+
+## Prompts du kit (conservés pour régénération) — (19/10/2026)
 
 Générer sur https://arena.ai/video : joindre la photo, coller le texte.
 

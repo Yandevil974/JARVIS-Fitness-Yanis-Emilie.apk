@@ -28,10 +28,14 @@ export const EXERCISE_VIDEOS = {
   },
   "extension-triceps-a-la-poulie": {
     // Pilote 2 — poulie / triceps (demande prioritaire de Yanis).
-    src: null, // "/videos/extension-triceps-a-la-poulie.mp4" une fois validée
+    // VALIDÉE le 20/10/2026 : mannequin + casquette, pushdown 4 reps,
+    // triceps orange, compteur de phase FR, sans filigrane (8,6 s).
+    // Style v1 (mannequin gris, pas chromé) — remplaçable par une version
+    // chromée sans toucher au lecteur.
+    src: "/videos/extension-triceps-a-la-poulie.mp4",
     poster: "/videos/posters/extension-triceps-a-la-poulie.jpg",
     label: "Vidéo 3D · Extension triceps à la poulie",
-    status: "pending",
+    status: "validated",
   },
   "back-squat": {
     // Pilote 3 — jambes + barre.
