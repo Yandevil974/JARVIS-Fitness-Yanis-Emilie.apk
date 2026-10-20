@@ -9,7 +9,7 @@ import {
   SectionHeading,
   ProgressBar,
 } from "../ui.jsx";
-import Movement from "../Movement.jsx";
+import Movement, { demonstration } from "../Movement.jsx";
 import HumanAnim from "../HumanAnim.jsx";
 import {
   POOL_PROTOCOLS,
@@ -23,6 +23,7 @@ import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
 import { durationLabel, today, norm, assetSrc } from "../../engine/utils.js";
 import { stepVideoFor } from "../../data/step-videos.js";
+import { videoFor } from "../../data/exercise-videos.js";
 export function TimerModal() {
   const { p, updateProfile, closeModal, setModal, notify } = useApp();
   const now = useNow();
@@ -40,6 +41,12 @@ export function TimerModal() {
   const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
   // Vidéo 3D validée de l’étape en cours (chronomètre guidé), sinon image actuelle.
   const stepVideo = t.done ? null : stepVideoFor(step.name);
+  // Étape adossée à un exercice (approches d'échauffement) : sa démo
+  // (vidéo 3D validée sinon GIF) au lieu de l'image générique dupliquée.
+  const stepExercise =
+    !t.done && !stepVideo && step.exerciseId
+      ? exerciseById(step.exerciseId)
+      : null;
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {
@@ -131,6 +138,8 @@ export function TimerModal() {
               />
               <Icon name="Maximize2" size={15} />
             </button>
+          ) : stepExercise ? (
+            <Movement exercise={stepExercise} small controls={false} />
           ) : step.img ? (
             <button
               type="button"
@@ -369,8 +378,13 @@ export function WarmupModal({ session }) {
     >
       <div className="warmup-detail">
         {steps.map((st, i) => {
-          // Vidéo 3D validée si l’étape en a une, sinon image actuelle.
+          // Vidéo 3D validée si l’étape en a une, sinon démo de l’exercice
+          // adossé (approches), sinon image actuelle.
           const v = stepVideoFor(st.name);
+          const stepEx = !v && st.exerciseId ? exerciseById(st.exerciseId) : null;
+          const stepExVideo = stepEx ? videoFor(stepEx) : null;
+          const stepExDemo =
+            !stepExVideo && stepEx ? demonstration(stepEx) : null;
           return (
           <div key={i}>
             <span className="warmup-step-number">0{i + 1}</span>
@@ -397,6 +411,55 @@ export function WarmupModal({ session }) {
                   loop
                   playsInline
                   preload="metadata"
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
+            ) : stepExVideo ? (
+              <button
+                type="button"
+                className="warmup-step-thumb has-video"
+                title="Agrandir la vidéo"
+                onClick={() =>
+                  setModal({
+                    type: "image",
+                    src: stepExVideo.src,
+                    poster: stepExVideo.poster,
+                    title: stepExVideo.label,
+                  })
+                }
+              >
+                <video
+                  className="warmup-step-video"
+                  src={assetSrc(stepExVideo.src)}
+                  poster={
+                    stepExVideo.poster ? assetSrc(stepExVideo.poster) : undefined
+                  }
+                  title={stepExVideo.label}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
+            ) : stepExDemo ? (
+              <button
+                type="button"
+                className="warmup-step-thumb"
+                title="Agrandir"
+                onClick={() =>
+                  setModal({
+                    type: "image",
+                    src: stepExDemo.path,
+                    title: stepExDemo.name,
+                  })
+                }
+              >
+                <img
+                  className="warmup-step-img"
+                  loading="lazy"
+                  src={assetSrc(stepExDemo.path)}
+                  alt={stepExDemo.name}
                 />
                 <Icon name="Maximize2" size={13} />
               </button>
@@ -455,6 +518,7 @@ export function WarmupModal({ session }) {
                 instruction: x.instruction,
                 img: x.img,
                 pattern: x.pattern,
+                exerciseId: x.exerciseId || null,
               })),
               {
                 type: "warmup",

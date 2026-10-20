@@ -67,6 +67,22 @@ Montée/descente du bassin correcte ; réserve : style dérivant légèrement
 et glow des fessiers perdu — régénérable plus tard si souhaité.
 Étape « Activation fessiers » (séances jambes).
 
+### E5 — Activation scapulaire (séances haut du corps) 🎬 KIT PRÊT, vidéo à générer
+Photo : `warmup-activation-scapulaire.jpg` (écarté avec élastique, haut du
+dos orange). Générer sur PixVerse/Arena à partir de la photo + prompt :
+```text
+Animate this chrome character with black cap doing slow resistance band pull-aparts: arms extended forward at chest height, pulling the orange band apart by squeezing shoulder blades together, then controlled return. Upper-back and rear shoulders glowing orange. Front view, static camera, bright gym, smooth loop, no deformed hands.
+```
+À réception : `public/videos/warmup-activation-scapulaire.mp4` + clé
+`"activation scapulaire"` dans `step-videos.js` (1 entrée, repli actuel sinon).
+
+### Approches 1/2/3 — RÉSOLU PAR CODE le 20/10/2026 (aucune vidéo à générer)
+Les 3 approches partageaient la même image générique. Désormais chaque
+approche rejoue la démo du 1er exercice de la séance (vidéo 3D validée sinon
+GIF exact) dans l'échauffement + le chrono guidé, et la consigne nomme
+l'exercice (`fitness.js` → `exerciseId`, `ProtocolModals.jsx` → branche
+exercice). Fini les répétitions identiques dans le chronomètre.
+
 ### TRICEPS (pilote muscu) ✅ VALIDÉ + INTÉGRÉ le 20/10/2026
 MP4 : `public/videos/extension-triceps-a-la-poulie.mp4` (8,6 s, 459 Ko,
 rendu local d'une session précédente, récupéré sur `arena/d5e16737-…`).
