@@ -67,6 +67,12 @@ Montée/descente du bassin correcte ; réserve : style dérivant légèrement
 et glow des fessiers perdu — régénérable plus tard si souhaité.
 Étape « Activation fessiers » (séances jambes).
 
+### Aperçu complet — VIDÉO DE TOUT L'ÉCHAUFFEMENT ✅ (20/10/2026)
+`public/videos/warmup-apercu-complet.mp4` (23 s, 2,7 Mo) : E1→E2→E3→E4 avec
+cartons-titres FR, montée par script (`docs/videos-3d/montage-apercu.py`).
+Affichée dans l'écran d'échauffement (clic → plein écran). Quand la vidéo E5
+arrivera : décommenter 1 ligne dans le script + relancer = aperçu v2.
+
 ### E5 — Activation scapulaire (séances haut du corps) 🎬 KIT PRÊT, vidéo à générer
 Photo : `warmup-activation-scapulaire.jpg` (écarté avec élastique, haut du
 dos orange). Générer sur PixVerse/Arena à partir de la photo + prompt :

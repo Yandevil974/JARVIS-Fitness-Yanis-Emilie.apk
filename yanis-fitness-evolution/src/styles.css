@@ -17753,3 +17753,39 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
   border-radius: 13px;
   display: block;
 }
+
+/* Aperçu vidéo complet de l'échauffement (bloc récap, colonne 190px). */
+.warmup-overview {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 0;
+  width: 190px;
+}
+.warmup-overview > video {
+  width: 190px;
+  height: 143px;
+  object-fit: cover;
+  display: block;
+  background: #101418;
+}
+.warmup-overview > span {
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #fff;
+  background: #251e18ad;
+  border-radius: 6px;
+  padding: 5px 4px;
+  line-height: 1.2;
+}

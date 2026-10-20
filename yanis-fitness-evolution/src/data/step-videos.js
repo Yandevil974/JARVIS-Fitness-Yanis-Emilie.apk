@@ -47,6 +47,15 @@ export const STEP_VIDEOS = {
   },
 };
 
+// Aperçu complet de l'échauffement : montage des étapes validées + cartons
+// (docs/videos-3d/montage-apercu.py — relancer le script quand E5 arrivera).
+export const WARMUP_OVERVIEW = {
+  src: "/videos/warmup-apercu-complet.mp4",
+  poster: "/videos/posters/warmup-apercu-complet.jpg",
+  label: "Vidéo 3D · Tout l'échauffement",
+  duration: "23 s",
+};
+
 /** Retourne la vidéo validée d'une étape nommée, ou null (→ affichage actuel). */
 export function stepVideoFor(stepName) {
   return STEP_VIDEOS[norm(stepName || "")] || null;

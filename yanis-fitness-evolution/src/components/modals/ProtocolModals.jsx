@@ -22,7 +22,10 @@ import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
 import { durationLabel, today, norm, assetSrc } from "../../engine/utils.js";
-import { stepVideoFor } from "../../data/step-videos.js";
+import {
+  stepVideoFor,
+  WARMUP_OVERVIEW,
+} from "../../data/step-videos.js";
 import { videoFor } from "../../data/exercise-videos.js";
 export function TimerModal() {
   const { p, updateProfile, closeModal, setModal, notify } = useApp();
@@ -493,7 +496,33 @@ export function WarmupModal({ session }) {
         })}
       </div>
       <div className="warmup-visual">
-        <Movement pattern={steps[1].pattern} small />
+        <button
+          type="button"
+          className="warmup-overview"
+          title="Voir tout l’échauffement en vidéo"
+          onClick={() =>
+            setModal({
+              type: "image",
+              src: WARMUP_OVERVIEW.src,
+              poster: WARMUP_OVERVIEW.poster,
+              title: WARMUP_OVERVIEW.label,
+            })
+          }
+        >
+          <video
+            src={assetSrc(WARMUP_OVERVIEW.src)}
+            poster={assetSrc(WARMUP_OVERVIEW.poster)}
+            title={WARMUP_OVERVIEW.label}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
+          <span>
+            <Icon name="Play" size={12} /> Tout l’échauffement ·{" "}
+            {WARMUP_OVERVIEW.duration}
+          </span>
+        </button>
         <div>
           <h3>Préparez, sans vous épuiser.</h3>
           <p>
