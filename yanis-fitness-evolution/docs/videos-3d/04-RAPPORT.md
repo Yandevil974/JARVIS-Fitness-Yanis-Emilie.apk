@@ -22,12 +22,14 @@
   - posters pilotes déjà copiés dans `public/videos/posters/`.
 - **Aucune ressource supprimée ou remplacée.** Séquence séance inchangée.
 
-## En attente ⏳ (nécessite ton action dans Arena.ai)
+## En attente ⏳ (nécessite ton action : génération vidéo par toi)
 
-- **Génération des 3 vidéos MP4** (fonction Video d’Arena.ai) : l’atelier de
-  code ne peut pas générer de vidéo lui-même — c’est à toi de lancer les
-  générations avec les prompts fournis, puis de me déposer les MP4 ici.
-- Contrôle grille B, compression, passage en `validated`, tests E.
+- **20/10/2026 — 1ʳᵉ vidéo reçue et intégrée** : E1 Mise en route
+  (`warmup-mise-en-route.mp4`, générée via PixVerse à partir de la photo E1).
+- **Manquent encore** : E2 (épaules), E3 (hanches), E4 (pont fessier) et les
+  3 pilotes muscu (curl, triceps ⭐, back squat). L’atelier ne peut pas
+  générer de vidéo lui-même — dépose les MP4 sur la branche (comme tu as
+  fait), je contrôle (grille B), j’intègre et je teste.
 
 ## Fichiers modifiés / créés
 

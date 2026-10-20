@@ -47,8 +47,11 @@ vagues, puis piscine, elliptique, étirements.
 
 Générer sur https://arena.ai/video : joindre la photo, coller le texte.
 
-### E1 — Mise en route (marche tapis)
-Photo : `warmup-mise-en-route.jpg`
+### E1 — Mise en route (marche tapis) ✅ VALIDÉE + INTÉGRÉE le 20/10/2026
+Photo : `warmup-mise-en-route.jpg` — MP4 : `public/videos/warmup-mise-en-route.mp4`
+(4 s, 1024×768, 930 Ko, audio retiré). Contrôle : marche conforme, anatomie
+OK, filigrane PixVerse bref en début (acceptable, remplaçable plus tard).
+Affichée dans l'échauffement + le minuteur guidé (`step-videos.js`).
 ```text
 Animate this chrome character with black cap walking briskly on a treadmill: steady natural stride, arms swinging, upright posture. Legs glowing warm orange. Side view, static camera, bright gym, realistic tempo, smooth loop, no deformed feet.
 ```

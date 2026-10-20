@@ -22,6 +22,7 @@ import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
 import { durationLabel, today, norm, assetSrc } from "../../engine/utils.js";
+import { stepVideoFor } from "../../data/step-videos.js";
 export function TimerModal() {
   const { p, updateProfile, closeModal, setModal, notify } = useApp();
   const now = useNow();
@@ -37,6 +38,8 @@ export function TimerModal() {
         total) *
       100;
   const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
+  // Vidéo 3D validée de l’étape en cours (chronomètre guidé), sinon image actuelle.
+  const stepVideo = t.done ? null : stepVideoFor(step.name);
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {
@@ -100,7 +103,35 @@ export function TimerModal() {
           {durationLabel(t.done ? 0 : t.remaining)}
         </div>
         {!t.done &&
-          (step.img ? (
+          (stepVideo ? (
+            <button
+              type="button"
+              className="timer-step-visual has-video"
+              title="Agrandir la vidéo"
+              onClick={() =>
+                setModal({
+                  type: "image",
+                  src: stepVideo.src,
+                  poster: stepVideo.poster,
+                  title: stepVideo.label,
+                })
+              }
+            >
+              <video
+                src={assetSrc(stepVideo.src)}
+                poster={
+                  stepVideo.poster ? assetSrc(stepVideo.poster) : undefined
+                }
+                title={stepVideo.label}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <Icon name="Maximize2" size={15} />
+            </button>
+          ) : step.img ? (
             <button
               type="button"
               className="timer-step-visual"
@@ -337,10 +368,40 @@ export function WarmupModal({ session }) {
       wide
     >
       <div className="warmup-detail">
-        {steps.map((st, i) => (
+        {steps.map((st, i) => {
+          // Vidéo 3D validée si l’étape en a une, sinon image actuelle.
+          const v = stepVideoFor(st.name);
+          return (
           <div key={i}>
             <span className="warmup-step-number">0{i + 1}</span>
-            {st.img && (
+            {v ? (
+              <button
+                type="button"
+                className="warmup-step-thumb has-video"
+                title="Agrandir la vidéo"
+                onClick={() =>
+                  setModal({
+                    type: "image",
+                    src: v.src,
+                    poster: v.poster,
+                    title: v.label,
+                  })
+                }
+              >
+                <video
+                  className="warmup-step-video"
+                  src={assetSrc(v.src)}
+                  poster={v.poster ? assetSrc(v.poster) : undefined}
+                  title={v.label}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
+            ) : (
+              st.img && (
               <button
                 type="button"
                 className="warmup-step-thumb"
@@ -357,6 +418,7 @@ export function WarmupModal({ session }) {
                 />
                 <Icon name="Maximize2" size={13} />
               </button>
+              )
             )}
             <div>
               <h3>{st.name}</h3>
@@ -364,7 +426,8 @@ export function WarmupModal({ session }) {
             </div>
             <Badge>{durationLabel(st.seconds)}</Badge>
           </div>
-        ))}
+          );
+        })}
       </div>
       <div className="warmup-visual">
         <Movement pattern={steps[1].pattern} small />

@@ -17731,3 +17731,25 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
     max-height: 300px;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Vidéos 3D des étapes de protocoles (échauffement, minuteur guidé).  */
+/* Ajout non destructif : ne modifie aucune règle existante.          */
+/* ------------------------------------------------------------------ */
+.warmup-step-thumb > video.warmup-step-video {
+  width: 104px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 7px;
+  background: #101418;
+  display: block;
+  flex-shrink: 0;
+}
+.timer-step-visual > video {
+  width: 100%;
+  height: clamp(170px, 30dvh, 260px);
+  object-fit: contain;
+  background: #101418;
+  border-radius: 13px;
+  display: block;
+}
