@@ -41,10 +41,9 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
 
 1. **Échauffement** ✅ TERMINÉ (E1→E5 + aperçu 30 s).
 2. **Triceps poulie** ✅ FAIT v1 (mannequin gris) — version chromée en option.
-3. **Vague 0** 🎬 EN COURS : Curl haltères ✅ VALIDÉ+INTÉGRÉ 21/10 (FLUX,
-   4,7 s, alterné) + Back squat (photo de référence CORRIGÉE le 21/10 :
-   barre posée sur le dos, vue arrière — l'ancienne montrait la barre
-   devant ; prompt M2 renforcé, voir `06-DESCRIPTIONS-PRECISES.md`).
+3. **Vague 0** ✅ CLOSE le 21/10 : Curl haltères (FLUX, 4,7 s, alterné)
+   + Back squat (PixVerse, 4 s, barre sur les trapèzes, filigrane bref).
+   Les 2 vidéos sont dans les fiches + les séances.
 4. **Vague 1** : Biceps complet (20 exos, lots de 4 dans l'ordre du catalogue).
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),

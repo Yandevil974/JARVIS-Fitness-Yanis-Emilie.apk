@@ -42,10 +42,13 @@ export const EXERCISE_VIDEOS = {
   },
   "back-squat": {
     // Pilote 3 — jambes + barre.
-    src: null, // "/videos/back-squat.mp4" une fois validée
+    // VALIDÉE le 21/10/2026 : montée/descente (4 s, PixVerse), barre posée
+    // sur les trapèzes du début à la fin, quads rouges + fessiers orange,
+    // anatomie OK. Réserve : filigrane PixVerse.ai bref (comme E1).
+    src: "/videos/back-squat.mp4",
     poster: "/videos/posters/back-squat.jpg",
     label: "Vidéo 3D · Back squat",
-    status: "pending",
+    status: "validated",
   },
 };
 
