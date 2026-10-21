@@ -40,10 +40,22 @@ export const STEP_VIDEOS = {
   // Validée le 20/10/2026 avec réserve : montée/descente du bassin correcte
   // mais style du personnage dérivant légèrement (chromé → réaliste) et glow
   // des fessiers perdu en cours de vidéo. Régénérable sans toucher au code.
+  // Échauffement — E4 « Activation fessiers » (pont fessier, séances jambes).
+  // Validée le 20/10/2026 avec réserve : montée/descente du bassin correcte
+  // mais style du personnage dérivant légèrement (chromé → réaliste) et glow
+  // des fessiers perdu en cours de vidéo. Régénérable sans toucher au code.
   "activation fessiers": {
     src: "/videos/warmup-pont-fessier.mp4",
     poster: "/videos/posters/warmup-pont-fessier.jpg",
     label: "Vidéo 3D · Activation fessiers",
+  },
+  // Échauffement — E5 « Activation scapulaire » (séances haut du corps).
+  // Validée le 21/10/2026 : écarté avec élastique (pull-apart + retour),
+  // 10 s, sans filigrane (MiniMax), haut du dos orange, anatomie OK.
+  "activation scapulaire": {
+    src: "/videos/warmup-activation-scapulaire.mp4",
+    poster: "/videos/posters/warmup-activation-scapulaire.jpg",
+    label: "Vidéo 3D · Activation scapulaire",
   },
 };
 
@@ -53,7 +65,7 @@ export const WARMUP_OVERVIEW = {
   src: "/videos/warmup-apercu-complet.mp4",
   poster: "/videos/posters/warmup-apercu-complet.jpg",
   label: "Vidéo 3D · Tout l'échauffement",
-  duration: "23 s",
+  duration: "30 s",
 };
 
 /** Retourne la vidéo validée d'une étape nommée, ou null (→ affichage actuel). */

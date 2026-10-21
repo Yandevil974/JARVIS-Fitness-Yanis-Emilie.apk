@@ -73,7 +73,14 @@ cartons-titres FR, montée par script (`docs/videos-3d/montage-apercu.py`).
 Affichée dans l'écran d'échauffement (clic → plein écran). Quand la vidéo E5
 arrivera : décommenter 1 ligne dans le script + relancer = aperçu v2.
 
-### E5 — Activation scapulaire (séances haut du corps) 🎬 KIT PRÊT, vidéo à générer
+### E5 — Activation scapulaire ✅ VALIDÉE + INTÉGRÉE le 21/10/2026
+MP4 : `public/videos/warmup-activation-scapulaire.mp4` (10 s, 1,3 Mo,
+MiniMax, SANS filigrane). Écarté avec élastique + retour confirmés,
+haut du dos orange, anatomie OK. Module échauffement 100 % terminé :
+E1→E5 + aperçu complet v2 (30 s). Descriptions précises des prochaines
+vidéos : voir `06-DESCRIPTIONS-PRECISES.md` (gabarit + prompts T1/M1/M2).
+
+### E5 — kit d'origine (conservé pour régénération)
 Photo : `warmup-activation-scapulaire.jpg` (écarté avec élastique, haut du
 dos orange). Générer sur PixVerse/Arena à partir de la photo + prompt :
 ```text

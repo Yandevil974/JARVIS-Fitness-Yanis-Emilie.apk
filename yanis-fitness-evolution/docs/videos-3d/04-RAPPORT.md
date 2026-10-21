@@ -29,9 +29,13 @@
   muscu **triceps** ⭐ (`extension-triceps-a-la-poulie.mp4`, 8,6 s).
   Sources : PixVerse (E1-E4, via branche `arena/d5e16737-…`) + rendu local
   session précédente (triceps, même branche).
-- **Manquent encore** : 2 pilotes muscu (curl haltères, back squat), puis
-  muscu vague 1, piscine, elliptique, étirements. Dépose les MP4 sur une
-  branche (n’importe laquelle, je les trouve), je contrôle (grille B),
+- **21/10/2026 — E5 intégrée, échauffement 100 % terminé** : 5 vidéos
+  + aperçu complet v2 (30 s, E1→E2→E5→E3→E4). Guide des descriptions
+  précises créé (`06-DESCRIPTIONS-PRECISES.md`) : prompts T1 (triceps
+  chromé), M1 (curl), M2 (squat) prêts pour PixVerse/MiniMax.
+- **Manquent encore** : 2 pilotes muscu (curl, squat) + triceps chromé,
+  puis muscu vague 1, piscine, elliptique, étirements. Dépose les MP4 sur
+  n’importe quelle branche, dis « c’est fait », je contrôle (grille B),
   j’intègre et je teste.
 
 ## Fichiers modifiés / créés
