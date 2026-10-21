@@ -33,15 +33,21 @@
 d'abord ce qui passe à CHAQUE séance (échauffement), puis la muscu par
 vagues, puis piscine, elliptique, étirements.
 
-## Ordre proposé
+## Ordre validé (21/10/2026)
 
-1. **Triceps** (kit déjà livré : image présentée + prompt envoyé).
-2. **Échauffement** (kit ci-dessous, 4 vidéos = 2 jours de génération).
-3. **Muscu vague 1** : bras + pectoraux (~10 vidéos).
-4. **Piscine** (~12 vidéos).
-5. **Elliptique** (2-3 vidéos).
-6. **Étirements** (~8 vidéos).
-7. **Muscu vagues suivantes** par groupe musculaire.
+DÉCISION Yanis : **1 vidéo exacte par exercice, pas de mutualisation entre
+variantes** (les variantes approximatives obligent à vérifier sur internet —
+chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
+
+1. **Échauffement** ✅ TERMINÉ (E1→E5 + aperçu 30 s).
+2. **Triceps poulie** ✅ FAIT v1 (mannequin gris) — version chromée en option.
+3. **Vague 0** 🎬 EN COURS : Curl haltères + Back squat (photos + prompts
+   précis prêts, voir `06-DESCRIPTIONS-PRECISES.md` M1/M2).
+4. **Vague 1** : Biceps complet (20 exos, lots de 4 dans l'ordre du catalogue).
+5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
+6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
+   Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
+   elliptique, étirements.
 
 ## KIT ÉCHAUFFEMENT — 4/4 VALIDÉES + INTÉGRÉES ✅ (20/10/2026)
 
