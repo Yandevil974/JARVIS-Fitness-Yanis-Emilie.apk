@@ -85,3 +85,79 @@ haussées), coudes tendus, hanches, genoux, tête.
 ```text
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing tall holding an orange resistance band with both hands at chest height, arms straight forward. PHASE 1 (~2s): pull the band apart sideways by squeezing the shoulder blades together, band stretched across the chest, arms staying at chest height. PHASE 2 (~2-3s): slow controlled return forward. LOCKED: torso, shoulders down (no shrugging), elbows straight, hips, knees, head. Upper-back and rear shoulders glowing orange with stable glow, no flicker. Front view, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: bending elbows, shrugging shoulders, torso rotation, band morphing, deformed hands, extra limbs, watermark, text.
 ```
+
+---
+
+## Vague 1 — Lot 1 : biceps 01→04 (21/10/2026)
+
+### B1 — Curl barre EZ (debout)
+
+**Photo :** `vague1-biceps-01-curl-ez.jpg`
+
+**Description précise (FR) :** Debout, barre EZ tenue en SUPINATION
+(paumes vers le haut), bras le long du corps, coudes plaqués aux flancs.
+PHASE 1 (~2,5 s) : flexion des coudes, la barre monte en arc vers les
+épaules, coudes IMMOBILES collés au corps, buste droit, aucun élan.
+PHASE 2 (~2 s) : descente contrôlée jusqu'à bras quasi tendus (coudes
+jamais verrouillés). VERROUILLÉ : coudes au corps, poignets droits,
+pieds au sol, regard devant.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing and holding a chrome EZ curl bar with small black plates with an UNDERHAND supinated grip (palms facing up), arms down, elbows pinned against his sides. PHASE 1 (~2.5s): bend ONLY the elbows, curling the bar up in an arc toward the shoulders, elbows GLUED to the body and perfectly still, torso upright, no swinging or leaning. PHASE 2 (~2s): slow controlled lowering back to nearly straight arms (elbows never locked). LOCKED: elbows against the body, straight wrists, feet planted, eyes forward. Biceps glowing vivid RED with stable glow, no flicker. Front three-quarter medium shot, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: moving elbows, swinging torso, bent wrists, fully locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
+```
+
+### B2 — Curl pupitre barre EZ pronation
+
+**Photo :** `vague1-biceps-02-scott-ez-pronation.jpg`
+
+**Description précise (FR) :** Assis au pupitre (banc Scott), haut des
+bras posé À PLAT sur le plan incliné, barre EZ en PRISE PRONATION
+(paumes vers le BAS, dos des mains visible — reverse curl). PHASE 1
+(~2,5 s) : flexion des coudes, la barre monte vers le menton, bras
+COLLÉS au pupitre, buste immobile. PHASE 2 (~2 s) : descente lente sans
+tendre les bras à fond. VERROUILLÉ : bras sur le pupitre en permanence,
+prise pronation gardée, aucune épaule qui bouge.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated at a preacher curl bench, upper arms resting FLAT on the angled pad, holding a chrome EZ curl bar with small black plates with an OVERHAND PRONATED GRIP (palms facing DOWN, knuckles up — reverse curl). PHASE 1 (~2.5s): bend ONLY the elbows, curling the bar up toward the chin, upper arms GLUED to the pad, torso still. PHASE 2 (~2s): slow lowering without fully straightening the arms. LOCKED: arms on the pad at all times, pronated grip held, no shoulder movement. Biceps glowing vivid RED and forearms orange, stable glow, no flicker. Side medium shot showing the pad contact and the overhand grip, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: underhand grip, arms lifting off the pad, swinging torso, locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
+```
+
+### B3 — Curl marteau assis
+
+**Photo :** `vague1-biceps-03-marteau-assis.jpg`
+
+**Description précise (FR) :** Assis bien droit sur un banc plat, un
+haltère dans chaque main en PRISE MARTEAU / NEUTRE (paumes FACE À FACE,
+vers l'intérieur). PHASE 1 (~2,5 s) : flexion des coudes, les deux
+haltères montent ENSEMBLE vers les épaules, coudes fixes aux flancs,
+paumes RESTENT face à face tout le long (aucune rotation), dos droit,
+fesses sur le banc. PHASE 2 (~2 s) : descente contrôlée, bras quasi
+tendus. VERROUILLÉ : prise neutre, coudes aux flancs, posture assise.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated upright on a flat bench, a hex dumbbell in each hand with a NEUTRAL HAMMER GRIP (palms facing EACH OTHER inward). PHASE 1 (~2.5s): bend ONLY the elbows, curling both dumbbells up together toward the shoulders, elbows pinned at his sides, palms STAY facing each other the whole time (no rotation), back straight, glutes on the bench. PHASE 2 (~2s): slow controlled lowering to arms nearly straight. LOCKED: neutral grip, elbows at sides, seated posture. Biceps glowing vivid RED, stable glow, no flicker. Front three-quarter medium shot, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: rotating palms, moving elbows, leaning back, standing up, alternating arms, extra limbs, deformed hands, flickering muscles, watermark, text.
+```
+
+### B4 — Curl incliné haltères
+
+**Photo :** `vague1-biceps-04-incline-halteres.jpg`
+
+**Description précise (FR) :** Assis sur un banc INCLINÉ à ~45°, dos
+collé au dossier, bras pendants, un haltère dans chaque main en
+supination. PHASE 1 (~2,5 s) : flexion des coudes, les haltères montent
+vers les épaules, coudes pointés vers le BAS et légèrement en arrière,
+IMMOBILES, dos collé au banc, aucun élan. PHASE 2 (~2 s) : descente
+complète, étirement en bas. VERROUILLÉ : dos sur le banc, coudes fixes
+vers le bas, pieds à plat au sol.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated on an incline bench reclined at about 45 degrees, back FLAT against the pad, arms hanging down, a hex dumbbell in each hand with underhand grip. PHASE 1 (~2.5s): bend ONLY the elbows, curling both dumbbells up toward the shoulders, elbows pointing DOWN and slightly back and perfectly STILL, back glued to the bench, no swinging. PHASE 2 (~2s): slow full lowering to a deep stretch at the bottom. LOCKED: back on the bench, elbows fixed pointing down, feet flat on the floor. Biceps glowing vivid RED, stable glow, no flicker. Side three-quarter medium shot, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: back lifting off the bench, elbows drifting forward, swinging dumbbells, partial range, extra limbs, deformed hands, flickering muscles, watermark, text.
+```
