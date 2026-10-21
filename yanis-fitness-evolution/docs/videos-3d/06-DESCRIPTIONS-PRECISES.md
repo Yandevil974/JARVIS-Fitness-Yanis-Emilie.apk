@@ -57,18 +57,18 @@ Animate this same silver-chrome athletic man with matte black baseball cap, blac
 ## M2 — Back squat (pilote muscu, en attente)
 Photo : `ref-back-squat.jpg`
 
-**Description précise (FR) :** Debout, barre chargée sur le HAUT DU DOS (pas
+**Description précise (FR) :** Debout, barre chargée POSÉE EN CONTACT sur le haut du dos (trapèzes, position high-bar : derrière la nuque mais ASSISE sur les muscles, JAMAIS en l'air ni devant). Vue arrière 3/4 : on DOIT voir la barre posée sur le dos. Mains en pronation larges
 la nuque), mains en pronation larges, pieds largeur épaules pointes légèrement
 dehors, poitrine haute, regard devant. Phase 1 — descente (~3 s) : hanches
 reculent + genoux fléchissent ENSEMBLE, genoux dans l'axe des pieds (ni
 dedans ni dehors), talons restent au sol, dos neutre, jusqu'à cuisses
 horizontales (parallèle), barre descendant verticalement. Phase 2 — remontée
 (~2 s) : pousser le sol, hanches et épaules remontent ensemble, finir debout
-poitrine haute. VERROUILLÉ : mains sur la barre, barre horizontale et stable,
+poitrine haute. VERROUILLÉ : mains sur la barre, barre horizontale, stable ET TOUJOURS EN CONTACT avec les trapèzes,
 talons au sol.
 
 ```text
-Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing with a loaded barbell across the UPPER BACK (not the neck). START: wide overhand grip, feet shoulder-width slightly turned out, chest up, eyes forward. PHASE 1 (~3s): hips push back AND knees bend TOGETHER, knees track exactly over the toes (never caving in), heels stay glued to the floor, neutral back, down to parallel thighs, barbell descending vertically. PHASE 2 (~2s): drive through the floor, hips and shoulders rise together, finish standing tall. LOCKED: hands on the bar, barbell horizontal and stable, heels down. Quadriceps glowing vivid RED and glutes orange with stable glow, no flicker. Side three-quarter wide view showing feet, head and full bar, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: knees caving inward, heels lifting, rounded back, sliding bar, extra limbs, deformed feet, flickering muscles, watermark, text.
+Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing with a loaded barbell RESTING IN DIRECT CONTACT ON the upper-back trapezius shelf (high-bar position: behind the neck but SITTING ON the back muscles — never floating, never in front of the shoulders, never on the neck bones). START: wide overhand grip, feet shoulder-width slightly turned out, chest up, eyes forward. PHASE 1 (~3s): hips push back AND knees bend TOGETHER, knees track exactly over the toes (never caving in), heels stay glued to the floor, neutral back, down to parallel thighs, barbell descending vertically. PHASE 2 (~2s): drive through the floor, hips and shoulders rise together, finish standing tall. LOCKED: hands on the bar, barbell horizontal, stable and IN CONTACT with the traps at all times, heels down. Quadriceps glowing vivid RED and glutes orange with stable glow, no flicker. Rear three-quarter wide view clearly showing the barbell resting ON the back, feet and full bar, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: bar in front of the chest, bar floating off the back, bar on the neck, knees caving inward, heels lifting, rounded back, sliding bar, extra limbs, deformed feet, flickering muscles, watermark, text.
 ```
 
 ## E5-bis — Activation scapulaire (régénération si besoin)

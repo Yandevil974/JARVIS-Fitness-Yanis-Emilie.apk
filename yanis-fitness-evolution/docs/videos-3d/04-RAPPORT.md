@@ -33,10 +33,12 @@
   + aperçu complet v2 (30 s, E1→E2→E5→E3→E4). Guide des descriptions
   précises créé (`06-DESCRIPTIONS-PRECISES.md`) : prompts T1 (triceps
   chromé), M1 (curl), M2 (squat) prêts pour PixVerse/MiniMax.
-- **Manquent encore** : 2 pilotes muscu (curl, squat) + triceps chromé,
-  puis muscu vague 1, piscine, elliptique, étirements. Dépose les MP4 sur
-  n’importe quelle branche, dis « c’est fait », je contrôle (grille B),
-  j’intègre et je teste.
+- **21/10/2026 — Curl validé+intégré** (vague 0 : 1/2). Back squat :
+  photo de référence refaite (barre sur le dos, vue arrière) + prompt M2
+  corrigé après ton retour (« barre derrière la tête »).
+- **Manquent encore** : squat + triceps chromé, puis vague 1 (biceps),
+  piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
+  branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
 
 ## Fichiers modifiés / créés
 

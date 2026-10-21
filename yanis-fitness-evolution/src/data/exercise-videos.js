@@ -20,11 +20,14 @@
 export const EXERCISE_VIDEOS = {
   // ---- LOT PILOTE (3 exercices) ----
   "curl-halteres": {
-    // Pilote 1 — haltères. Vidéo à générer (prompt 01, voir docs/videos-3d).
-    src: null, // "/videos/curl-halteres.mp4" une fois validée
+    // Pilote 1 — haltères.
+    // VALIDÉE le 21/10/2026 : curl alterné (4,7 s, FLUX, sans filigrane),
+    // biceps rouges stables, coudes fixes, anatomie OK. Alterné plutôt que
+    // simultané : variante d'exécution légitime du « Curl haltères ».
+    src: "/videos/curl-halteres.mp4",
     poster: "/videos/posters/curl-halteres.jpg",
     label: "Vidéo 3D · Curl haltères",
-    status: "pending",
+    status: "validated",
   },
   "extension-triceps-a-la-poulie": {
     // Pilote 2 — poulie / triceps (demande prioritaire de Yanis).
