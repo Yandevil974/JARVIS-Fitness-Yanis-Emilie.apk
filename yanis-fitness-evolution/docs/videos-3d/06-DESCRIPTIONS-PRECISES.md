@@ -231,7 +231,7 @@ VERROUILLÉ : coudes aux flancs, tension constante du câble.
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing facing a LOW PULLEY cable machine, holding a short STRAIGHT bar attached to the low cable with an UNDERHAND SUPINATED GRIP (palms facing UP), elbows pinned against his sides, cable taut from the floor pulley. From this mid-curl position, PHASE 1 (~2s): extend the elbows slowly, lowering the bar to thigh level WITHOUT locking the elbows, torso upright and still, cable stays taut. PHASE 2 (~2.5s): curl the bar back up toward the shoulders by bending ONLY the elbows, no leaning, no shoulder swing. LOCKED: elbows at sides, underhand grip, constant cable tension, feet planted. Biceps glowing vivid RED, stable glow, no flicker. Front three-quarter medium shot showing the low pulley and taut cable, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: EZ bar, high pulley, leaning back, moving elbows, slack cable, locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
 
-### B9 — Curl haltère supination, banc Scott 90° (#09, v3 FINALE : prise COPIÉE d'une photo réelle, ancre `ancres/pose-09-top.jpg`)
+### B9 — Curl haltère supination, banc Scott 90° (#09, v4 FINALE le 22/10 : copiée de LA photo de Yanis, ancre `ancres/yanis-09-haltere.jpg`)
 
 **Photo :** `vague1-biceps-09-supination-scott-90.jpg` + zoom de contrôle
 `vague1-biceps-09-zoom-prise.jpg`
