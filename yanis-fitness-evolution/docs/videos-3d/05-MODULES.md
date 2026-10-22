@@ -46,10 +46,11 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    Les 2 vidéos sont dans les fiches + les séances.
 4. **Vague 1** : Biceps complet (20 exos, lots de 4 dans l'ordre du catalogue).
    Lot 1 : #03 + #04 + #08 ✅ 22/10 (#08 gardée : barre EZ acceptée).
-   #02 v1 REJETÉE le 22/10 (supination au lieu de pronation, retour
-   Yanis) : vidéo désactivée (repli GIF), photo refaite (paumes vers le
-   bas, vue face), v2 à générer.
-   Reste : #05, #06, #07, #09 → #20 (lot 2 = #05, #06, #07, #09).
+   Lot 2 : #05 + #06 + #07 ✅ 22/10 (PixVerse 4 s, prises vérifiées en zoom).
+   #02 + #09 EN ATTENTE : 9 photos de prise pronation rejetées par Yanis
+   (l'IA régénère toujours de la supination) → Yanis envoie une photo de
+   référence du web, recopie chromée ensuite. Vidéo #02 v1 désactivée.
+   Reste : #02, #09, #10 → #20 (lot 3 = #10, #11, #12, #13).
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

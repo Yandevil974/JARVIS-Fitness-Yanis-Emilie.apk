@@ -45,6 +45,11 @@
   petites imagettes) → vidéo désactivée (repli GIF), photo refaite
   (paumes vers le bas, vue face), prompt B2 renforcé. Leçon : contrôler
   la PRISE en gros plan avant de valider.
+- **22/10/2026 — Vague 1 lot 2 intégré (biceps 7/20)** : #05 Scott EZ
+  supination + #06 Scott haltère neutre + #07 poulie basse (PixVerse 4 s,
+  filigranes brefs, prises vérifiées en zoom). #02/#09 parquées : prise
+  pronation impossible à générer (9 rejets) → Yanis fournit une photo de
+  référence du web.
 - **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.

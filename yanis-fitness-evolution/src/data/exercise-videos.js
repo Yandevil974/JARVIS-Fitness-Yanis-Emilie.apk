@@ -89,6 +89,34 @@ export const EXERCISE_VIDEOS = {
     label: "Vidéo 3D · Curl haltères incliné",
     status: "validated",
   },
+  // ---- VAGUE 1 LOT 2 (validé le 22/10/2026, #09 en attente) ----
+  "curl-scott-barre-ez-supination": {
+    // B5 (catalogue bic #05). VALIDÉE : curl au pupitre bas→haut (4 s,
+    // PixVerse), prise supination (paumes haut, vérifiée en zoom), bras
+    // sur le plan. Réserves : filigrane bref + angle dérivant (côté→face).
+    src: "/videos/curl-scott-barre-ez-supination.mp4",
+    poster: "/videos/posters/curl-scott-barre-ez-supination.jpg",
+    label: "Vidéo 3D · Curl Scott EZ supination",
+    status: "validated",
+  },
+  "curl-scott-haltere-prise-neutre": {
+    // B6 (catalogue bic #06). VALIDÉE : curl marteau au pupitre bas→haut
+    // (4 s, PixVerse), prise neutre paumes face à face (vérifiée en zoom),
+    // bras sur le plan. Réserves : filigrane bref + angle dérivant.
+    src: "/videos/curl-scott-haltere-prise-neutre.mp4",
+    poster: "/videos/posters/curl-scott-haltere-prise-neutre.jpg",
+    label: "Vidéo 3D · Curl Scott haltère neutre",
+    status: "validated",
+  },
+  "curl-poulie-basse-supination": {
+    // B7 (catalogue bic #07). VALIDÉE : montée/descente complète face à
+    // la poulie basse (4 s, PixVerse), barre droite, supination (vérifiée
+    // en zoom), câble tendu. Réserve : filigrane bref.
+    src: "/videos/curl-poulie-basse-supination.mp4",
+    poster: "/videos/posters/curl-poulie-basse-supination.jpg",
+    label: "Vidéo 3D · Curl poulie basse supination",
+    status: "validated",
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;
