@@ -45,8 +45,10 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    + Back squat (PixVerse, 4 s, barre sur les trapèzes, filigrane bref).
    Les 2 vidéos sont dans les fiches + les séances.
 4. **Vague 1** : Biceps complet (20 exos, lots de 4 dans l'ordre du catalogue).
-   Lot 1 ✅ 22/10 : #02 Scott EZ pronation + #03 marteau assis + #04 incliné
-   + #08 barre debout (vidéo = barre EZ, à confirmer vs barre droite).
+   Lot 1 : #03 + #04 + #08 ✅ 22/10 (#08 gardée : barre EZ acceptée).
+   #02 v1 REJETÉE le 22/10 (supination au lieu de pronation, retour
+   Yanis) : vidéo désactivée (repli GIF), photo refaite (paumes vers le
+   bas, vue face), v2 à générer.
    Reste : #05, #06, #07, #09 → #20 (lot 2 = #05, #06, #07, #09).
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),

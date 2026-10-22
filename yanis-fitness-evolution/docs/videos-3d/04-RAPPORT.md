@@ -40,6 +40,11 @@
   EZ pronation + #03 marteau assis (alterné) + #04 incliné (PixVerse 4 s,
   filigranes brefs) + #08 barre debout (FLUX 10 s, sans filigrane —
   montre une barre EZ, exactitude à confirmer).
+- **22/10/2026 — #02 rejetée post-validation** : la v1 montrait une
+  supination au lieu de la pronation (retour Yanis, validé trop vite sur
+  petites imagettes) → vidéo désactivée (repli GIF), photo refaite
+  (paumes vers le bas, vue face), prompt B2 renforcé. Leçon : contrôler
+  la PRISE en gros plan avant de valider.
 - **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.

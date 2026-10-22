@@ -63,13 +63,14 @@ export const EXERCISE_VIDEOS = {
     status: "validated",
   },
   "curl-scott-barre-ez-pronation": {
-    // B2 (catalogue bic #02). VALIDÉE : curl au pupitre bas→haut (4 s,
-    // PixVerse), bras sur le plan, biceps rouges. Réserves : filigrane
-    // bref + angle de caméra qui dérive (côté→face).
+    // B2 (catalogue bic #02). V1 REJETÉE le 22/10 (retour Yanis) : la vidéo
+    // montrait une SUPINATION au lieu de la pronation → disabled = repli
+    // GIF en attendant la v2 (photo refaite paumes vers le bas, prompt B2
+    // renforcé, voir 06-DESCRIPTIONS-PRECISES.md).
     src: "/videos/curl-scott-barre-ez-pronation.mp4",
     poster: "/videos/posters/curl-scott-barre-ez-pronation.jpg",
     label: "Vidéo 3D · Curl Scott EZ pronation",
-    status: "validated",
+    status: "disabled",
   },
   "curl-marteau-assis": {
     // B3 (catalogue bic #03). VALIDÉE : marteau assis ALTERNE (4 s,
