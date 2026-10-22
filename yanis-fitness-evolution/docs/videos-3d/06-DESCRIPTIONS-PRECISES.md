@@ -250,3 +250,53 @@ continue des poignets dans les 2 sens, poings fermés.
 ```text
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated at a preacher curl bench in FRONT VIEW, upper arms resting FLAT on the angled pad, a hex dumbbell in EACH hand held UP near chin level in CLOSED PRONATED FISTS (palms facing DOWN toward the floor, backs of the hands toward the camera). PHASE 1 (~2.5s): lower both dumbbells slowly to near-full extension WITHOUT locking the elbows, ROTATING the wrists continuously from pronation into SUPINATION (palms turning to face the face at the bottom), upper arms GLUED to the pad. PHASE 2 (~2.5s): curl back up to the top while ROTATING the wrists back from supination into PRONATION (palms facing the floor at the top). LOCKED: arms on the pad, smooth continuous wrist rotation in BOTH directions, closed fists, no elbow lockout. Biceps glowing vivid RED, stable glow, no flicker. FRONT medium shot clearly showing the fists and rotation, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: static grip, no rotation, open hands, arms off the pad, locked elbows, swinging torso, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
+
+## Vague 1 — Lot 4 : biceps #14, #15, #16, #17 (22/10/2026, photos texte seul, style verrouillé lot d'origine)
+
+### B14 — Curl haltères incliné, supination (#14)
+
+**Photo :** `vague1-biceps-14-incline-db-supination.jpg` + zoom `vague1-biceps-14-zoom-prise.jpg`
+
+**Description précise (FR) :** DÉPART (photo) : assis sur banc incliné ~45°, buste appuyé, 2 haltères EN HAUT à hauteur d'épaules, SUPINATION (paumes vers le visage), poings fermés. PHASE 1 : descente lente bras quasi tendus le long du banc, supination gardée. PHASE 2 : remontée aux épaules. VERROUILLÉ : dos sur le banc, coudes fixes, pas d'élan.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+Animate this same silver-chrome bulky athletic man, black cap, white sneakers, seated on an incline bench leaning back about 45 degrees, torso supported. START = TOP: both dumbbells held UP at shoulder height in CLOSED SUPINATED FISTS (palms facing the face). PHASE 1 (~2.5s): lower both dumbbells slowly to near-full extension along the bench, KEEPING the supinated grip, no elbow lockout. PHASE 2 (~2.5s): curl back UP to shoulder height. LOCKED: back on the bench, elbows fixed, closed fists, no swinging. Biceps glowing RED, static camera, bright light-grey studio, end pose identical to start pose for a perfect loop. AVOID: open hands, pronation, torso lifting off the bench, swinging, extra limbs, deformed hands, flicker, watermark, text.
+```
+
+### B15 — Curl marteau debout (#15, v3 : 2 échecs bras ballants → "UP beside the head")
+
+**Photo :** `vague1-biceps-15-marteau-debout.jpg` + zoom `vague1-biceps-15-zoom-prise.jpg`
+
+**Description précise (FR) :** DÉPART (photo) : DEBOUT, 2 haltères EN HAUT à hauteur d'épaules près de la tête, coudes fléchis 90°, PRISE NEUTRE marteau (paumes face à face, pouces vers le haut), poings fermés. PHASE 1 : descente lente jusqu'aux cuisses, neutre gardée. PHASE 2 : remontée. VERROUILLÉ : coudes au corps, buste fixe.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+Animate this same silver-chrome bulky athletic man, black cap, white sneakers, STANDING upright, feet planted. START = TOP: both dumbbells held UP at shoulder height beside the head, elbows bent 90 degrees, CLOSED NEUTRAL hammer fists (palms facing EACH OTHER, thumbs UP). PHASE 1 (~2.5s): lower both dumbbells slowly to the thighs, KEEPING the neutral grip, arms extending. PHASE 2 (~2.5s): curl back UP to shoulder height. LOCKED: elbows pinned at the sides, torso still, closed fists, no swinging. Biceps glowing RED, static camera, bright light-grey studio, end pose identical to start pose for a perfect loop. AVOID: open hands, supinated grip, elbows flaring, swinging torso, extra limbs, deformed hands, flicker, watermark, text.
+```
+
+### B16 — Curl Scott 90° haltère supination, UN BRAS (#16 ; bilatéral = #09, phases programme différentes → 1 bras pour distinguer, comme #10/#13)
+
+**Photo :** `vague1-biceps-16-scott-1bras-supination.jpg` + zoom `vague1-biceps-16-zoom-prise.jpg`
+
+**Description précise (FR) :** DÉPART (photo) : assis au Scott, SEUL le bras DROIT travaille : haltère EN HAUT près de l'épaule, SUPINATION (paume vers le visage), poing fermé ; main gauche VIDE sur la cuisse. PHASE 1 : descente lente bras quasi tendu sur le plan. PHASE 2 : remontée en supination, serrage en haut. VERROUILLÉ : bras droit sur le plan, gauche immobile.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+Animate this same silver-chrome bulky athletic man, black cap, white sneakers, seated at a Scott preacher bench, torso upright. ONLY the RIGHT arm works: START = TOP with ONE dumbbell held UP high near the shoulder in a CLOSED SUPINATED fist (palm facing the face), right upper arm flat on the pad; LEFT hand EMPTY resting on the thigh. PHASE 1 (~2.5s): lower the dumbbell slowly to near-full extension on the pad, no elbow lockout. PHASE 2 (~2.5s): curl back UP high near the shoulder, squeezing. LOCKED: right arm glued to the pad, left hand stays empty and still, closed fist, one dumbbell only. Biceps glowing RED, static camera, bright light-grey studio, end pose identical to start pose for a perfect loop. AVOID: left arm moving, second dumbbell, open hands, arm off the pad, swinging, extra limbs, deformed hands, flicker, watermark, text.
+```
+
+### B17 — Curl Zottman debout (#17)
+
+**Photo :** `vague1-biceps-17-zottman-debout.jpg` + zoom `vague1-biceps-17-zoom-prise.jpg`
+
+**Description précise (FR) :** DÉPART (photo) : DEBOUT, 2 haltères EN HAUT à hauteur d'épaules, SUPINATION (paumes vers le visage), poings fermés = HAUT du cycle Zottman. PHASE 1 : rotation vers PRONATION (paumes vers le sol) PUIS descente lente jusqu'aux cuisses. PHASE 2 : en bas rotation vers SUPINATION puis remontée. VERROUILLÉ : coudes au corps, rotation dans les 2 sens.
+
+**Prompt arena.ai (EN, copiable) :**
+
+```text
+ZOTTMAN CYCLE, same silver-chrome bulky athletic man, black cap, white sneakers, STANDING upright, feet planted. START = TOP: both dumbbells held UP at shoulder height in CLOSED SUPINATED fists (palms facing the face). PHASE 1 (~2.5s): ROTATE both wrists into PRONATION (palms turning down) THEN lower the dumbbells slowly to the thighs, arms extending, no elbow lockout. PHASE 2 (~2.5s): at the bottom ROTATE back into SUPINATION (palms up) THEN curl back UP to shoulder height. LOCKED: elbows at the sides, smooth wrist rotation in BOTH directions, closed fists, torso still. Biceps glowing RED, static camera, bright light-grey studio, end pose identical to start pose for a perfect loop. AVOID: no rotation, open hands, swinging, extra limbs, deformed hands, flicker, watermark, text.
+```
