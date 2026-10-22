@@ -108,28 +108,25 @@ pieds au sol, regard devant.
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing and holding a chrome EZ curl bar with small black plates with an UNDERHAND supinated grip (palms facing up), arms down, elbows pinned against his sides. PHASE 1 (~2.5s): bend ONLY the elbows, curling the bar up in an arc toward the shoulders, elbows GLUED to the body and perfectly still, torso upright, no swinging or leaning. PHASE 2 (~2s): slow controlled lowering back to nearly straight arms (elbows never locked). LOCKED: elbows against the body, straight wrists, feet planted, eyes forward. Biceps glowing vivid RED with stable glow, no flicker. Front three-quarter medium shot, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: moving elbows, swinging torso, bent wrists, fully locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
 
-### B2 — Curl pupitre barre EZ pronation (REFAIT v6 le 22/10 : mains DESSUS, doigts pendants)
+### B2 — Curl pupitre barre EZ pronation (v8 validée le 22/10 : départ EN HAUT, poings fermés)
 
 **Photo :** `vague1-biceps-02-scott-ez-pronation.jpg` + zoom de contrôle
-`vague1-biceps-02-zoom-prise.jpg` (v1→v4 rejetées : supination au lieu de
-pronation — v5 comparée à une planche anatomique de reverse curl :
-mains en TOIT sur la barre, bouts des doigts vers le BAS)
+`vague1-biceps-02-zoom-prise.jpg`
 
 **Description précise (FR) :** POSITION DE DÉPART (photo) : VUE DE FACE,
-assis au pupitre, haut des bras À PLAT, bras ALLONGÉS le long du plan,
-barre EZ en bas en PRISE PRONATION EN TOIT : dos des mains +
-articulations vers la caméra, doigts passent PAR-DESSUS la barre, bouts
-des doigts vers le BAS, paumes vers le sol. PHASE 1 (~2,5 s) : flexion
-des coudes, barre monte vers le menton, bouts des doigts RESTENT vers
-le bas. PHASE 2 (~2 s) : descente lente jusqu'à extension quasi
-complète, sans verrouiller. VERROUILLÉ : pronation À TOUT MOMENT
-(bouts des doigts vers le haut ou paumes visibles = FAUX), bras sur le
-pupitre, buste immobile.
+assis au pupitre, haut des bras À PLAT, coudes FLÉCHIS, barre EZ EN HAUT
+au niveau du menton, POINGS FERMÉS en pronation : dos des mains +
+articulations vers la caméra, bouts des doigts vers le BAS, paumes vers
+le sol. PHASE 1 (~2,5 s) : descente lente jusqu'à extension quasi
+complète SANS verrouiller, pronation GARDÉE (bouts des doigts restent
+vers le bas). PHASE 2 (~2,5 s) : remontée au menton. VERROUILLÉ :
+pronation À TOUT MOMENT (paumes visibles ou doigts vers le haut = FAUX),
+bras sur le pupitre, buste immobile.
 
 **Prompt arena.ai (EN, copiable) :**
 
 ```text
-Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated at a preacher curl bench in FRONT VIEW, upper arms resting FLAT on the angled pad, arms EXTENDED down along the pad, chrome EZ curl bar with small black plates resting LOW in an OVERHAND PRONATED GRIP LIKE A ROOF OVER THE BAR: backs of the hands and knuckles toward the camera, fingers passing OVER the bar with fingertips pointing DOWN, palms facing the floor, wrists straight. PHASE 1 (~2.5s): close the grip over the bar and bend ONLY the elbows, curling the bar up toward the chin, fingertips STAY pointing down and palms STAY facing the floor the whole time, upper arms GLUED to the pad, torso still. PHASE 2 (~2s): slow lowering back to near-full extension WITHOUT locking the elbows. LOCKED: pronated overhand grip AT ALL TIMES — fingertips pointing up or visible palms is WRONG — arms on the pad, no shoulder movement. Biceps glowing vivid RED and forearms orange, stable glow, no flicker. FRONT medium shot clearly showing the roof grip with downward fingertips, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: underhand grip, fingertips pointing up, visible palms, supination, arms lifting off the pad, swinging torso, locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
+Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated at a preacher curl bench in FRONT VIEW, upper arms resting FLAT on the angled pad, elbows FULLY BENT, chrome EZ curl bar with small black plates held UP AT CHIN LEVEL in CLOSED OVERHAND FISTS: knuckles and backs of the hands toward the camera, fingertips wrapped under pointing DOWN, palms facing the floor. PHASE 1 (~2.5s): lower the bar slowly to near-full extension WITHOUT locking the elbows, pronation HELD the whole time (fingertips stay down, no palms showing), upper arms GLUED to the pad, torso still. PHASE 2 (~2.5s): curl the bar back up to chin level by bending ONLY the elbows. LOCKED: pronated closed fists AT ALL TIMES — visible palms or upward fingertips is WRONG — arms on the pad, no shoulder movement. Biceps glowing vivid RED and forearms orange, stable glow, no flicker. FRONT medium shot clearly showing the fists, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: underhand grip, open hands, fingertips pointing up, visible palms, supination, arms lifting off the pad, swinging torso, locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
 
 ### B3 — Curl marteau assis
@@ -234,23 +231,22 @@ VERROUILLÉ : coudes aux flancs, tension constante du câble.
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing facing a LOW PULLEY cable machine, holding a short STRAIGHT bar attached to the low cable with an UNDERHAND SUPINATED GRIP (palms facing UP), elbows pinned against his sides, cable taut from the floor pulley. From this mid-curl position, PHASE 1 (~2s): extend the elbows slowly, lowering the bar to thigh level WITHOUT locking the elbows, torso upright and still, cable stays taut. PHASE 2 (~2.5s): curl the bar back up toward the shoulders by bending ONLY the elbows, no leaning, no shoulder swing. LOCKED: elbows at sides, underhand grip, constant cable tension, feet planted. Biceps glowing vivid RED, stable glow, no flicker. Front three-quarter medium shot showing the low pulley and taut cable, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: EZ bar, high pulley, leaning back, moving elbows, slack cable, locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
 
-### B9 — Curl haltère supination, banc Scott 90° (#09)
+### B9 — Curl haltère supination, banc Scott 90° (#09, v2 : départ en haut EN PRONATION, choix Yanis)
 
-**Photo :** `vague1-biceps-09-supination-scott-90.jpg` (montre le HAUT :
-supination complète, paumes vers le visage)
+**Photo :** `vague1-biceps-09-supination-scott-90.jpg` + zoom de contrôle
+`vague1-biceps-09-zoom-prise.jpg`
 
-**Description précise (FR) :** Assis au pupitre, haut des bras À PLAT,
-un haltère dans chaque main. DÉPART en haut, supination complète.
-PHASE 1 (~2,5 s) : descente lente en DÉVISSANT les poignets : de
-supination vers NEUTRE (paumes face à face) en bas, sans verrouiller.
-PHASE 2 (~2,5 s) : remontée en VISSANT : rotation progressive dès la
-mi-montée (pouces vers l'extérieur, auriculaires vers le haut) jusqu'à
-supination COMPLÈTE en haut (paumes vers le visage), contraction
-marquée. VERROUILLÉ : bras sur le pupitre, rotation continue et
-fluide des poignets.
+**Description précise (FR) :** POSITION DE DÉPART (photo) : VUE DE FACE,
+assis au pupitre, haut des bras À PLAT, haltères EN HAUT près du menton,
+POINGS FERMÉS EN PRONATION (paumes vers le SOL). PHASE 1 (~2,5 s) :
+descente lente en TOURNANT les poignets : de pronation vers SUPINATION
+(paumes vers le visage) en bas, sans verrouiller. PHASE 2 (~2,5 s) :
+remontée en tournant EN SENS INVERSE : de supination vers PRONATION
+(paumes vers le sol) en haut. VERROUILLÉ : bras sur le pupitre, rotation
+continue des poignets dans les 2 sens, poings fermés.
 
 **Prompt arena.ai (EN, copiable) :**
 
 ```text
-Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated at a preacher curl bench, upper arms resting FLAT on the pad, a hex dumbbell in each hand, STARTING from this top contracted position with FULL SUPINATION (palms facing the face). PHASE 1 (~2.5s): lower both dumbbells slowly while UNWINDING the wrists, rotating from supinated to NEUTRAL grip (palms facing each other) at full extension WITHOUT locking the elbows, upper arms GLUED to the pad. PHASE 2 (~2.5s): curl back up while ROTATING the wrists from neutral into FULL SUPINATION — palms turn progressively upward from mid-range, pinkies rotating up, finishing with palms facing the face at the top, peak squeeze. LOCKED: arms on the pad, smooth continuous wrist rotation, no elbow lockout. Biceps glowing vivid RED, stable glow, no flicker. Front three-quarter medium shot showing the wrist rotation clearly, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: no rotation, static grip, arms off the pad, locked elbows, swinging torso, extra limbs, deformed hands, flickering muscles, watermark, text.
+Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated at a preacher curl bench in FRONT VIEW, upper arms resting FLAT on the angled pad, a hex dumbbell in EACH hand held UP near chin level in CLOSED PRONATED FISTS (palms facing DOWN toward the floor, backs of the hands toward the camera). PHASE 1 (~2.5s): lower both dumbbells slowly to near-full extension WITHOUT locking the elbows, ROTATING the wrists continuously from pronation into SUPINATION (palms turning to face the face at the bottom), upper arms GLUED to the pad. PHASE 2 (~2.5s): curl back up to the top while ROTATING the wrists back from supination into PRONATION (palms facing the floor at the top). LOCKED: arms on the pad, smooth continuous wrist rotation in BOTH directions, closed fists, no elbow lockout. Biceps glowing vivid RED, stable glow, no flicker. FRONT medium shot clearly showing the fists and rotation, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: static grip, no rotation, open hands, arms off the pad, locked elbows, swinging torso, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
