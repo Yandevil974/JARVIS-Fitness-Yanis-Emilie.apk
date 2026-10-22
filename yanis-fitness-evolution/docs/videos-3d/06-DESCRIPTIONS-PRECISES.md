@@ -108,7 +108,7 @@ pieds au sol, regard devant.
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing and holding a chrome EZ curl bar with small black plates with an UNDERHAND supinated grip (palms facing up), arms down, elbows pinned against his sides. PHASE 1 (~2.5s): bend ONLY the elbows, curling the bar up in an arc toward the shoulders, elbows GLUED to the body and perfectly still, torso upright, no swinging or leaning. PHASE 2 (~2s): slow controlled lowering back to nearly straight arms (elbows never locked). LOCKED: elbows against the body, straight wrists, feet planted, eyes forward. Biceps glowing vivid RED with stable glow, no flicker. Front three-quarter medium shot, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: moving elbows, swinging torso, bent wrists, fully locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
 
-### B2 — Curl pupitre barre EZ pronation (v8 validée le 22/10 : départ EN HAUT, poings fermés)
+### B2 — Curl pupitre barre EZ pronation (v9 FINALE le 22/10 : prise COPIÉE d'une planche réelle, ancre `ancres/pose-02-top.jpg`)
 
 **Photo :** `vague1-biceps-02-scott-ez-pronation.jpg` + zoom de contrôle
 `vague1-biceps-02-zoom-prise.jpg`
@@ -231,7 +231,7 @@ VERROUILLÉ : coudes aux flancs, tension constante du câble.
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, standing facing a LOW PULLEY cable machine, holding a short STRAIGHT bar attached to the low cable with an UNDERHAND SUPINATED GRIP (palms facing UP), elbows pinned against his sides, cable taut from the floor pulley. From this mid-curl position, PHASE 1 (~2s): extend the elbows slowly, lowering the bar to thigh level WITHOUT locking the elbows, torso upright and still, cable stays taut. PHASE 2 (~2.5s): curl the bar back up toward the shoulders by bending ONLY the elbows, no leaning, no shoulder swing. LOCKED: elbows at sides, underhand grip, constant cable tension, feet planted. Biceps glowing vivid RED, stable glow, no flicker. Front three-quarter medium shot showing the low pulley and taut cable, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: EZ bar, high pulley, leaning back, moving elbows, slack cable, locked elbows, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
 
-### B9 — Curl haltère supination, banc Scott 90° (#09, v2 : départ en haut EN PRONATION, choix Yanis)
+### B9 — Curl haltère supination, banc Scott 90° (#09, v3 FINALE : prise COPIÉE d'une photo réelle, ancre `ancres/pose-09-top.jpg`)
 
 **Photo :** `vague1-biceps-09-supination-scott-90.jpg` + zoom de contrôle
 `vague1-biceps-09-zoom-prise.jpg`
