@@ -251,7 +251,7 @@ continue des poignets dans les 2 sens, poings fermés.
 Animate this same silver-chrome athletic man with matte black baseball cap, black shorts, white sneakers, seated at a preacher curl bench in FRONT VIEW, upper arms resting FLAT on the angled pad, a hex dumbbell in EACH hand held UP near chin level in CLOSED PRONATED FISTS (palms facing DOWN toward the floor, backs of the hands toward the camera). PHASE 1 (~2.5s): lower both dumbbells slowly to near-full extension WITHOUT locking the elbows, ROTATING the wrists continuously from pronation into SUPINATION (palms turning to face the face at the bottom), upper arms GLUED to the pad. PHASE 2 (~2.5s): curl back up to the top while ROTATING the wrists back from supination into PRONATION (palms facing the floor at the top). LOCKED: arms on the pad, smooth continuous wrist rotation in BOTH directions, closed fists, no elbow lockout. Biceps glowing vivid RED, stable glow, no flicker. FRONT medium shot clearly showing the fists and rotation, static camera, bright gym, end pose identical to start pose for a perfect loop. AVOID: static grip, no rotation, open hands, arms off the pad, locked elbows, swinging torso, extra limbs, deformed hands, flickering muscles, watermark, text.
 ```
 
-## Vague 1 — Lot 4 : biceps #14, #15, #16, #17 (22/10/2026, photos texte seul, style verrouillé lot d'origine)
+## Vague 1 — Lot 4 : biceps #14, #15, #16, #17 (22/10/2026 — vFINALE : re-ancrées sur frame vidéo #09, athlète MASSIF, bannissement du modèle slim)
 
 ### B14 — Curl haltères incliné, supination (#14)
 
