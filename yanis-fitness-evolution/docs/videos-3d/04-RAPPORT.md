@@ -61,6 +61,19 @@
   (criticalbody, barre EZ en haut : dos des mains vers l'avant, doigts
   dessous, paumes vers le bas), vérifiée en comparatif. Sa photo à lui
   montrait une prise standard — la vraie inversée est l'inverse.
+- **22/10/2026 — #02 parquée, lot 3 lancé** (ordre Yanis) : reprise de
+  #02 plus tard sur le personnage d'origine (l'ancre photo réelle avait
+  fait dériver le personnage). Lot 3 = #10 Scott haltère neutre UN BRAS
+  (distinct de #06 bilatéral) + #11 Zottman assis + #12 poulie basse à
+  la CORDE neutre (distinct de #07 barre supination) + #13 Zottman UN
+  BRAS au Scott (distinct de #09 bilatéral). Règle perso : plus d'ancre
+  photo réelle, retour au personnage d'origine en texte.
+- **22/10/2026 — Lot 3 photos prêtes** : Yanis a imposé le personnage
+  de #05 comme référence (« le personnage c'est ça ») → les 4 photos
+  sont ancrées sur #05/#07 (style + personnage identiques, fond studio
+  gris). #10 refaite (2 mains → 1 seul bras, ancre #06 pour la neutre),
+  #11 refaite (mains ouvertes → poings fermés, ancre #09). Prises
+  vérifiées en zoom, prompts vidéo envoyés.
 - **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
