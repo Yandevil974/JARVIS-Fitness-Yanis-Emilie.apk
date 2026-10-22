@@ -93,7 +93,8 @@
   lu par le guidage vocal (intro + « Consigne technique ») et affiché
   sur la fiche exercice. Fichiers : `library.js`, `voice-coach.js`,
   `VoiceCoach.jsx`, `ExerciseModal.jsx`, `Training.jsx`.
-- **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
+- **22/10/2026 — #09 GARDÉE** (ordre Yanis : les IA ne font pas certaines spécificités) : vidéo supination `validated` (biceps 9/20 avec #01). La photo pronation reste archivée, la vidéo fait foi.
+- **Manquent encore** : triceps chromé, puis vague 1 (biceps 11 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
 

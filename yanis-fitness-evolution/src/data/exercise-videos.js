@@ -121,16 +121,17 @@ export const EXERCISE_VIDEOS = {
   },
   // ---- VAGUE 1 (biceps #09, vidéo reçue le 22/10, décision Yanis) ----
   "curl-haltere-supination-banc-scott-90": {
-    // B9 (catalogue bic #09). Vidéo Yanis reçue (1792688446226.mp4) :
-    // haltères au Scott haut→bas→mi-haut (4 s, PixVerse), supination en
-    // haut (paumes vers le visage, vérifiée en zoom). EN ATTENTE : la
-    // photo validée montre une PRONATION en haut (choix assumé) →
-    // Yanis arbitre (garder la vidéo supination standard ou régénérer).
-    // En attendant : pending = repli GIF.
+    // B9 (catalogue bic #09). VALIDÉE le 22/10 (vidéo Yanis
+    // 1792688446226.mp4, GARDÉE sur son ordre) : haltères au Scott
+    // haut→bas→mi-haut (4 s, PixVerse), supination en haut (paumes vers
+    // le visage, vérifiée en zoom), rotation visible. Note : la photo
+    // validée montre une pronation (choix assumé) — la vidéo standard
+    // fait foi (retour Yanis : les IA ne font pas certaines
+    // spécificités). Réserve : filigrane bref.
     src: "/videos/curl-haltere-supination-banc-scott-90.mp4",
     poster: "/videos/posters/curl-haltere-supination-banc-scott-90.jpg",
     label: "Vidéo 3D · Supination au Scott",
-    status: "pending",
+    status: "validated",
   },
 };
 
