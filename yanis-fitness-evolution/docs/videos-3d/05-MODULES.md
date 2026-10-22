@@ -50,7 +50,8 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    #02 + #09 PRIORITAIRES : reprise depuis test7 avec le personnage
    `reference-personnage-verrouille.jpg` choisi par Yanis. Nouveaux visuels,
    zooms et prompts dans `07-BICEPS-02-09-CORRECTIONS.md`.
-   #02 reste `disabled`, #09 reste `pending` jusqu'à validation explicite.
+   Au 23/10, #02 et #09 sont `coached` : MP4 jouables, mais rotation IA
+   signalée et corrigée par le descriptif audio ; aucun n'est `validated`.
    Ensuite seulement : #10 → #20 (lot 3 = #10, #11, #12, #13).
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),

@@ -1,5 +1,5 @@
 import React from "react";
-import { useApp } from "../../store/AppContext.jsx";
+import { speak, useApp } from "../../store/AppContext.jsx";
 import { Modal, Icon, Button, Badge, SectionHeading } from "../ui.jsx";
 import Movement from "../Movement.jsx";
 import Anatomy from "../Anatomy.jsx";
@@ -13,6 +13,7 @@ import {
 } from "../../data/library.js";
 import { nextSession } from "../../engine/planner.js";
 import { applyCoachAction } from "../../engine/coach.js";
+import { coachingFor } from "../../data/exercise-videos.js";
 export default function ExerciseModal({ id }) {
   const { p, closeModal, updateProfile, notify, setModal } = useApp();
   const ex = exerciseById(id),
@@ -21,6 +22,7 @@ export default function ExerciseModal({ id }) {
     (e) => e.id !== id && e.muscle === ex.muscle && e.pattern === ex.pattern,
   ).slice(0, 5);
   const alt = alternatives(ex, p);
+  const coaching = coachingFor(ex);
   const session = p.workout || nextSession(p);
   const inSession = session?.exercises.some((e) => e.exerciseId === id);
   const replace = (to) => {
@@ -47,6 +49,25 @@ export default function ExerciseModal({ id }) {
       <div className="exercise-detail-layout">
         <div>
           <Movement exercise={ex} />
+          {coaching && (
+            <div className="source-technique exercise-audio-cue">
+              <Icon name="Volume2" size={18} />
+              <div>
+                <h3>Descriptif audio — prise et exécution</h3>
+                <p>
+                  <strong>{coaching.handCue}</strong>
+                </p>
+                <p>{coaching.movementCue}</p>
+                <Button
+                  variant="secondary small"
+                  icon="Volume2"
+                  onClick={() => speak(coaching.spoken, true)}
+                >
+                  Écouter le descriptif
+                </Button>
+              </div>
+            </div>
+          )}
           <div className="exercise-detail-actions">
             <Button
               variant={

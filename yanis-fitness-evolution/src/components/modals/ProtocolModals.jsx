@@ -795,7 +795,7 @@ export function CooldownModal({ session }) {
 }
 // Visionneuse : agrandit une vidéo 3D, une image d’étape,
 // ou agrandit l’animation créée.
-export function ImageViewer({ src, title, motion, poster }) {
+export function ImageViewer({ src, title, motion, poster, notice, spoken }) {
   const { closeModal } = useApp();
   if (!src && !motion) return null;
   const isVideo = typeof src === "string" && /\.(mp4|webm)(\?|#|$)/i.test(src);
@@ -820,7 +820,21 @@ export function ImageViewer({ src, title, motion, poster }) {
           <HumanAnim spec={motion} className="zoomed" />
         )}
       </div>
+      {notice && (
+        <p className="movement-media-note movement-coaching-note">
+          <strong>Consigne de prise prioritaire.</strong> {notice}
+        </p>
+      )}
       <div className="modal-actions">
+        {spoken && (
+          <Button
+            variant="secondary"
+            icon="Volume2"
+            onClick={() => speak(spoken, true)}
+          >
+            Écouter le descriptif
+          </Button>
+        )}
         <Button icon="X" onClick={closeModal}>
           Fermer
         </Button>

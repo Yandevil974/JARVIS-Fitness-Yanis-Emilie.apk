@@ -12,8 +12,10 @@
   `reference-personnage-verrouille.jpg`. Les nouvelles productions doivent
   utiliser cette ancre, pas les anciens personnages des documents historiques.
 - **Priorité #02/#09 :** nouveaux visuels, zooms et prompts dans
-  `07-BICEPS-02-09-CORRECTIONS.md`. #02 reste `disabled`, #09 reste
-  `pending` : aucune ancienne ou nouvelle vidéo n'est validée automatiquement.
+  `07-BICEPS-02-09-CORRECTIONS.md`. Au 23/10, les deux MP4 de Yanis sont
+  intégrés en `coached` avec descriptif audio de prise fixe et avertissement
+  contre la rotation IA. Ils ne sont pas marqués `validated`. Le poster #02
+  est le visuel v9 approuvé par Yanis.
 
 ## Terminé ✅
 

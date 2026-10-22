@@ -63,3 +63,94 @@ test("l'échauffement test7 affiche ses vidéos dans le récap et le minuteur", 
   ).toHaveAttribute("src", "/videos/warmup-mise-en-route.mp4");
   expect(errors).toEqual([]);
 });
+
+test("biceps #02 et #09 affichent leur vidéo IA et dictent la prise fixe", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.speechSynthesis.cancel = () => {};
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      name: "Curl Scott barre EZ, pronation",
+      query: "Curl Scott barre EZ",
+      src: "/videos/curl-scott-barre-ez-pronation.mp4",
+    },
+    {
+      name: "Curl haltère supination, banc Scott 90°",
+      query: "Curl haltère supination, banc Scott 90",
+      src: "/videos/curl-haltere-supination-banc-scott-90.mp4",
+    },
+  ];
+  for (const [index, item] of cases.entries()) {
+    await page.getByLabel("Rechercher un exercice").fill(item.query);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      /paumes vers le sol/i,
+    );
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      /ne reproduisez pas cette rotation/i,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(/paumes vers le sol/i);
+    expect(spoken).toMatch(/dos des mains vers le haut/i);
+    expect(spoken).toMatch(/poignets verrouillés/i);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+
+    if (index === 0) {
+      await dialog
+        .getByRole("button", { name: "Agrandir", exact: true })
+        .click();
+      const viewer = page.getByRole("dialog", {
+        name: /Vidéo IA · Curl Scott EZ/,
+      });
+      await expect(viewer.locator(".movement-coaching-note")).toBeVisible();
+      await expect(
+        viewer.getByRole("button", {
+          name: "Écouter le descriptif",
+          exact: true,
+        }),
+      ).toBeVisible();
+      await viewer
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    } else {
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    }
+  }
+  expect(errors).toEqual([]);
+});

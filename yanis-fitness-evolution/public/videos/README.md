@@ -3,13 +3,15 @@
 ## Convention de nommage
 
 ```
-/public/videos/<id-exercice>.mp4        → vidéo validée (H.264)
+/public/videos/<id-exercice>.mp4        → vidéo validée ou accompagnée (H.264)
 /public/videos/posters/<id-exercice>.jpg → image d’attente (poster)
 ```
 
 `<id-exercice>` = identifiant unique du catalogue (`EXERCISE_MAP`,
 ex. `extension-triceps-a-la-poulie`). L’association vidéo ↔ exercice se fait
-dans `src/data/exercise-videos.js` (statut `pending` → `validated`).
+dans `src/data/exercise-videos.js` (statut `pending` → `coached` ou
+`validated`). `coached` est réservé aux vidéos IA avec défaut connu : le
+`coaching.spoken`, la consigne visible et le repli GIF sont alors obligatoires.
 
 ## Spécifications des fichiers
 
@@ -34,7 +36,8 @@ ffmpeg -i public/videos/<id-exercice>.mp4 -ss 00:00:01 -frames:v 1 -q:v 3 \
 
 ## Règle anti-gonflement du dépôt
 
-- Ne committer que des vidéos **validées** (check-list `docs/videos-3d/03-PROCEDURE.md`).
+- Ne committer que des vidéos **validées**, ou **coached** avec leur consigne
+  corrective (check-list `docs/videos-3d/03-PROCEDURE.md`).
 - Au-delà de ~20 vidéos, passer au stockage externe (hébergeur statique ou
   GitHub Releases) : mettre l’URL https dans `src` de `exercise-videos.js`
   au lieu d’un chemin local. Le lecteur (`Movement.jsx`) accepte les deux.

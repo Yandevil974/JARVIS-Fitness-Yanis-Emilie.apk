@@ -104,6 +104,8 @@ export default function ModalRoot() {
         title={m.title}
         motion={m.motion}
         poster={m.poster}
+        notice={m.notice}
+        spoken={m.spoken}
       />
     ),
     stretch: <StretchModal exercise={m.exercise} />,

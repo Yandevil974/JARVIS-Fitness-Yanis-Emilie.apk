@@ -5,11 +5,21 @@ Point de reprise : `c88ae9f` (`v1.5.1-videos-vague1-test7`).
 Les essais postérieurs à test7 ne sont **pas** repris.
 
 > **Correction prioritaire de Yanis — 22/10/2026 :** sur #02 comme sur #09,
-> les mains de la position de départ doivent être orientées **paumes vers le
-> sol**. Les anciennes images avec les paumes vers le haut sont rejetées. Les
-> fichiers ci-dessous sont les nouveaux candidats corrigés, encore soumis à la
-> validation de Yanis ; aucune vidéo n'est activée. Pour #09, la position
-> haute d'origine est conservée : seule l'orientation des mains change.
+> les mains doivent être orientées **paumes vers le sol**. Les anciennes images
+> avec les paumes vers le haut sont rejetées. Pour #09, la position haute
+> d'origine est conservée : seule l'orientation des mains change.
+>
+> **Mise à jour 23/10/2026 :** le visuel #02 v9 est approuvé par Yanis
+> (« OK parfait »). Les deux MP4 fournis par Yanis sont intégrés en statut
+> `coached`, et non `validated`, car l'IA fait encore tourner les poignets.
+> L'application affiche et dicte la correction : **paumes vers le sol, dos des
+> mains vers le haut, poignets verrouillés, aucune rotation pendant la flexion
+> ou l'extension**. La rotation visible dans les MP4 n'est pas à reproduire.
+>
+> - #02 : `1792699316399.mp4` → `public/videos/curl-scott-barre-ez-pronation.mp4`
+>   ; poster remplacé par le visuel v9 approuvé.
+> - #09 : `1792698257620.mp4` →
+>   `public/videos/curl-haltere-supination-banc-scott-90.mp4`.
 
 ## 1. Personnage verrouillé par Yanis
 
@@ -27,8 +37,8 @@ uniquement l'orientation des mains pour corriger #02 ; elle ne change pas la
 position du corps validée ou demandée pour #09.
 
 **Verrou de production :** aucune vidéo n'est marquée `validated` sans contrôle
-du geste ET de la prise en zoom. Les visuels ci-dessous restent des propositions
-de production tant que Yanis n'a pas validé le geste corrigé.
+du geste ET de la prise en zoom. Le statut `coached` signale explicitement une
+vidéo IA imparfaite : son descriptif audio et son avertissement sont obligatoires.
 
 ---
 
@@ -38,14 +48,15 @@ de production tant que Yanis n'a pas validé le geste corrigé.
 
 **Les candidats v3 et v4 sont rejetés par Yanis : les mains étaient encore
 orientées vers le haut. Ne pas les utiliser pour produire la vidéo.** Sur v5,
-la main droite a été approuvée mais pas la gauche. Le candidat ci-dessous
+la main droite a été approuvée mais pas la gauche. Le visuel ci-dessous
 conserve exactement cette main droite et reprend directement la main gauche de
 la capture de référence fournie par Yanis, sans régénérer le reste de l'image.
+**Il est approuvé par Yanis (« OK parfait ») et sert maintenant de poster #02.**
 
 - [Visuel #02 — barre EZ, main droite conservée et main gauche corrigée](./biceps-02-ez-reference-utilisateur-v9.jpg)
 - [Zoom #02 — contrôle des deux mains](./biceps-02-ez-reference-utilisateur-v9-zoom.jpg)
 
-SHA-256 du candidat #02 : `037747e7fbb8c8a2da612895a9177f0851f11f158aca3a5e89c130ce237ddaf4`.
+SHA-256 du visuel #02 approuvé : `037747e7fbb8c8a2da612895a9177f0851f11f158aca3a5e89c130ce237ddaf4`.
 
 ### Description précise du geste
 
@@ -117,7 +128,10 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ---
 
-## 4. Grille de validation avant intégration MP4
+## 4. Grille de validation avant le statut `validated`
+
+L'intégration `coached` des MP4 ne valide pas ces critères anatomiques. Elle
+fournit une trajectoire indicative, toujours subordonnée à la consigne de prise.
 
 - [ ] Même athlète que l'image maître dans toutes les images et les vidéos.
 - [ ] #02 : deux mains en pronation sur une barre EZ, vérifiées en zoom.

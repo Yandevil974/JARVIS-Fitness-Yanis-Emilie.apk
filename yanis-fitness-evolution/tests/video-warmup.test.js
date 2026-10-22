@@ -13,12 +13,12 @@ function publicAssetExists(src) {
   return existsSync(fileURLToPath(new URL(`../public${src}`, import.meta.url)));
 }
 
-test("chaque vidéo d'exercice validée et chaque poster sont présents", () => {
+test("chaque vidéo d'exercice activée et chaque poster sont présents", () => {
   const entries = Object.entries(EXERCISE_VIDEOS);
   assert.ok(entries.length >= 10);
   for (const [id, video] of entries) {
     assert.ok(publicAssetExists(video.poster), `poster absent : ${id}`);
-    if (video.status === "validated") {
+    if (["validated", "coached"].includes(video.status)) {
       assert.ok(publicAssetExists(video.src), `vidéo absente : ${id}`);
       assert.equal(videoFor(id), video);
     } else {
@@ -27,17 +27,32 @@ test("chaque vidéo d'exercice validée et chaque poster sont présents", () => 
   }
 });
 
-test("biceps #02 et #09 restent verrouillés avant validation de Yanis", () => {
-  assert.equal(
-    EXERCISE_VIDEOS["curl-scott-barre-ez-pronation"].status,
-    "disabled",
+test("biceps #02 et #09 sont jouables avec correction audio, sans être validés", () => {
+  for (const id of [
+    "curl-scott-barre-ez-pronation",
+    "curl-haltere-supination-banc-scott-90",
+  ]) {
+    const video = EXERCISE_VIDEOS[id];
+    assert.equal(video.status, "coached");
+    assert.equal(videoFor(id), video);
+    assert.match(video.coaching.spoken, /paumes vers le sol/i);
+    assert.match(video.coaching.spoken, /dos des mains vers le haut/i);
+    assert.match(video.coaching.spoken, /poignets verrouillés/i);
+    assert.match(video.coaching.spoken, /seulement les coudes/i);
+    assert.match(video.coaching.notice, /ne reproduisez pas cette rotation/i);
+  }
+  assert.match(
+    EXERCISE_VIDEOS["curl-scott-barre-ez-pronation"].coaching.spoken,
+    /barre EZ/i,
   );
-  assert.equal(
-    EXERCISE_VIDEOS["curl-haltere-supination-banc-scott-90"].status,
-    "pending",
+  assert.match(
+    EXERCISE_VIDEOS["curl-haltere-supination-banc-scott-90"].coaching.spoken,
+    /deux haltères/i,
   );
-  assert.equal(videoFor("curl-scott-barre-ez-pronation"), null);
-  assert.equal(videoFor("curl-haltere-supination-banc-scott-90"), null);
+  assert.match(
+    EXERCISE_VIDEOS["curl-haltere-supination-banc-scott-90"].coaching.spoken,
+    /haltères horizontaux/i,
+  );
 });
 
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {

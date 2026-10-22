@@ -8,11 +8,15 @@
 //                 Le lecteur bascule automatiquement sur le GIF existant.
 //   "validated" — vidéo vérifiée (anatomie, trajectoire, continuité) et
 //                 intégrée. Le lecteur affiche la vidéo EN PREMIER.
+//   "coached"   — vidéo IA jouable comme support de trajectoire, avec un
+//                 défaut connu : le descriptif audio et l'avertissement de
+//                 `coaching` sont obligatoires et priment sur l'image.
 //   "disabled"  — vidéo écartée (défaut constaté) : repli sur le GIF.
 //
 // RÈGLES :
-// - Ne JAMAIS supprimer le GIF d'origine tant que la vidéo n'est pas
-//   "validated" (solution de repli obligatoire).
+// - Ne JAMAIS supprimer le GIF d'origine : il reste la solution de repli.
+// - Ne JAMAIS marquer "validated" une vidéo dont la prise ou le geste est faux.
+//   Une vidéo IA imparfaite reste "coached", avec consigne corrective explicite.
 // - Formats acceptés : .mp4 (H.264, recommandé Android) puis .webm.
 // - Fichiers dans /public/videos/<id-exercice>.mp4 (+ poster .jpg).
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
@@ -63,17 +67,24 @@ export const EXERCISE_VIDEOS = {
     status: "validated",
   },
   "curl-scott-barre-ez-pronation": {
-    // B2 (catalogue bic #02). V1 REJETÉE le 22/10 (retour Yanis) : la vidéo
-    // montrait une SUPINATION au lieu de la pronation → disabled = repli
-    // GIF en attendant la v2. Les visuels v3/v4 sont rejetés par Yanis : mains
-    // encore vers le haut. Sur v5, main droite approuvée mais pas la gauche.
-    // Le candidat v9 conserve la droite et reprend la gauche de la capture de
-    // Yanis (voir zoom dans le fichier 07). Vidéo désactivée jusqu'à validation
-    // explicite des deux mains.
+    // B2 (catalogue bic #02). Vidéo PixVerse fournie par Yanis le 23/10.
+    // La rotation des poignets reste visible : la vidéo sert uniquement de
+    // support de trajectoire. Le poster v9 et la consigne ci-dessous définissent
+    // la prise à reproduire ; ne pas copier la supination de la vidéo IA.
     src: "/videos/curl-scott-barre-ez-pronation.mp4",
     poster: "/videos/posters/curl-scott-barre-ez-pronation.jpg",
-    label: "Vidéo 3D · Curl Scott EZ pronation",
-    status: "disabled",
+    label: "Vidéo IA · Curl Scott EZ, consigne de prise prioritaire",
+    status: "coached",
+    coaching: {
+      handCue:
+        "Prise inversée : paumes vers le sol, dos des mains vers le haut, poignets verrouillés.",
+      movementCue:
+        "Haut des bras posé sur le pupitre. Montez et descendez la barre EZ en pliant puis en dépliant seulement les coudes, sans élan et sans rotation des mains.",
+      notice:
+        "La vidéo IA fait tourner les poignets : ne reproduisez pas cette rotation. Suivez le descriptif audio et gardez les paumes vers le sol du début à la fin.",
+      spoken:
+        "Curl Scott avec barre EZ en prise inversée. Prenez la barre par-dessus : paumes vers le sol, dos des mains vers le haut, poignets verrouillés. Ne les tournez jamais. Le haut des bras reste posé sur le pupitre. Montez en pliant seulement les coudes, puis descendez lentement. Ne reproduisez pas la rotation des mains visible dans la vidéo.",
+    },
   },
   "curl-marteau-assis": {
     // B3 (catalogue bic #03). VALIDÉE : marteau assis ALTERNE (4 s,
@@ -121,27 +132,43 @@ export const EXERCISE_VIDEOS = {
     status: "validated",
   },
   "curl-haltere-supination-banc-scott-90": {
-    // B9 (catalogue bic #09). EN ATTENTE : la position haute d'origine est
-    // conservée, avec DEUX haltères horizontaux et les paumes vers le sol en
-    // pronation fixe (retour Yanis du 22/10). Le descriptif et le prompt sans
-    // rotation des poignets sont dans le fichier 07. Aucune vidéo n'est
-    // activée avant validation du visuel et du geste par Yanis.
+    // B9 (catalogue bic #09). Vidéo PixVerse fournie par Yanis le 23/10.
+    // Comme pour #02, l'IA tourne les poignets pendant la répétition. Le statut
+    // reste donc "coached", jamais "validated" : l'audio impose la prise fixe.
     src: "/videos/curl-haltere-supination-banc-scott-90.mp4",
     poster: "/videos/posters/curl-haltere-supination-banc-scott-90.jpg",
-    label: "Vidéo 3D · Curl haltères supination au banc Scott 90°",
-    status: "pending",
+    label: "Vidéo IA · Curl Scott 90°, consigne de prise prioritaire",
+    status: "coached",
+    coaching: {
+      handCue:
+        "Deux haltères en prise inversée : paumes vers le sol, dos des mains vers le haut, poignets verrouillés.",
+      movementCue:
+        "Gardez les deux haltères horizontaux et le haut des bras sur le pupitre. Descendez puis remontez en pliant seulement les coudes, ensemble et sans rotation des mains.",
+      notice:
+        "La vidéo IA fait tourner les poignets : ne reproduisez pas cette rotation. Gardez les paumes vers le sol et les deux haltères horizontaux pendant toute la répétition.",
+      spoken:
+        "Curl au banc Scott avec deux haltères en prise inversée. Paumes vers le sol, dos des mains vers le haut, poignets verrouillés. Gardez les haltères horizontaux et le haut des bras posé sur le pupitre. Descendez puis remontez ensemble, en pliant seulement les coudes. Aucune rotation des mains : ne reproduisez pas celle visible dans la vidéo.",
+    },
   },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;
 
-/** Retourne la vidéo validée d'un exercice, ou null (→ repli GIF). */
+/** Retourne la vidéo validée ou accompagnée d'une consigne corrective. */
 export function videoFor(exercise) {
   const id = typeof exercise === "string" ? exercise : exercise?.id;
   if (!id) return null;
   const v = EXERCISE_VIDEOS[id];
-  if (!v || v.status !== "validated" || !v.src) return null;
+  if (!v || !["validated", "coached"].includes(v.status) || !v.src) return null;
+  // Une vidéo IA imparfaite sans consigne ne doit jamais devenir jouable.
+  if (v.status === "coached" && !v.coaching?.spoken) return null;
   return v;
+}
+
+/** Descriptif texte/audio prioritaire associé à un exercice, s'il existe. */
+export function coachingFor(exercise) {
+  const id = typeof exercise === "string" ? exercise : exercise?.id;
+  return id ? EXERCISE_VIDEOS[id]?.coaching || null : null;
 }
 
 /** Vrai si `src` est une ressource vidéo (pour la visionneuse). */

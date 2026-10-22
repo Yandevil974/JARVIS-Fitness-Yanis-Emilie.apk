@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { assetSrc, norm } from "../engine/utils.js";
 import { demonstrationFor, DEMO_LABELS } from "../engine/demo-match.js";
-import { videoFor, VIDEO_LABEL } from "../data/exercise-videos.js";
+import { coachingFor, videoFor, VIDEO_LABEL } from "../data/exercise-videos.js";
 import { motionFor } from "../engine/human-motion.js";
 import { POOL_GUIDES } from "../data/library.js";
 import { useApp } from "../store/AppContext.jsx";
@@ -10,7 +10,7 @@ import Anatomy from "./Anatomy.jsx";
 import HumanAnim from "./HumanAnim.jsx";
 // Démonstration d'un exercice ou d'une étape de séance.
 // Ordre de résolution (aucun écran vide, aucun placeholder générique) :
-// 0. vidéo 3D validée (exercise-videos.js, statut "validated") ;
+// 0. vidéo 3D validée ou vidéo IA avec consigne corrective ("coached") ;
 // 1. GIF source exact de l'exercice ; 2. association explicite / famille
 // (moteur demo-match) ; 3. visuel de guide piscine pour une étape nommée ;
 // 4. animation humaine créée (moteur human-motion, geste propre au pattern)
@@ -52,8 +52,9 @@ export default function Movement({
 }) {
   const media = demonstration(exercise, movementName),
     image = useRef();
-  // Vidéo 3D prioritaire si elle existe ET est validée, sinon repli GIF.
-  const video = exercise ? videoFor(exercise) : null;
+  // Vidéo prioritaire si elle est validée ou accompagnée de sa consigne.
+  const video = exercise ? videoFor(exercise) : null,
+    coaching = exercise ? coachingFor(exercise) : null;
   const videoRef = useRef(null);
   const { p, setModal } = useApp();
   const reduced =
@@ -179,6 +180,8 @@ export default function Movement({
                 src: video?.src || media?.path,
                 poster: video?.poster || null,
                 title: video?.label || media?.name || exercise?.name,
+                notice: video?.status === "coached" ? coaching?.notice : null,
+                spoken: video?.status === "coached" ? coaching?.spoken : null,
                 motion: video || media ? null : motion || null,
               })
             }
@@ -204,7 +207,9 @@ export default function Movement({
           )}
           <span>
             {video
-              ? VIDEO_LABEL
+              ? video.status === "coached"
+                ? "Vidéo IA · consigne de prise prioritaire"
+                : VIDEO_LABEL
               : media
                 ? DEMO_LABELS[media.level] || DEMO_LABELS.variante
                 : motion
@@ -214,6 +219,12 @@ export default function Movement({
                     : "Anatomie humaine · vue détaillée"}
           </span>
         </div>
+      )}
+      {video?.status === "coached" && coaching && !small && (
+        <p className="movement-media-note movement-coaching-note">
+          <strong>Ne copiez pas la rotation des mains de la vidéo IA.</strong>{" "}
+          {coaching.notice}
+        </p>
       )}
       {!video && media && !media.exact && exercise && !small && (
         <p className="movement-media-note">

@@ -7,12 +7,13 @@ import {
   setCompleteCue,
   restCountdownCue,
   restOverCue,
-  tempoReminderCue,
+  techniqueCue,
   tempoCueSentence,
 } from "../engine/voice-coach.js";
 import { useNow } from "./RestTimer.jsx";
 import { Icon } from "./ui.jsx";
 import { exerciseById as exerciseLookup } from "../data/library.js";
+import { coachingFor } from "../data/exercise-videos.js";
 // Bandeau de guidage vocal de la séance (port de la 1.5.0). Annonces déduites
 // de l’état réel : exercice suivant, séries validées, compte à rebours de
 // repos, fin de repos, tempo prescrit. Jamais de phrase pendant la pause.
@@ -42,7 +43,13 @@ export default function VoiceCoach() {
     });
   }, [enabled, exercise?.id, index, workout?.id]);
   useEffect(() => {
-    if (!enabled || !exercise || !row || completedSets === 0 || completedSets >= row.targetSets)
+    if (
+      !enabled ||
+      !exercise ||
+      !row ||
+      completedSets === 0 ||
+      completedSets >= row.targetSets
+    )
       return;
     queue.current.say(
       setCompleteCue(
@@ -54,8 +61,7 @@ export default function VoiceCoach() {
       { enabled },
     );
   }, [enabled, completedSets, exercise?.id]);
-  const restTimer =
-    workout && p?.timer?.meta.type === "rest" ? p.timer : null;
+  const restTimer = workout && p?.timer?.meta.type === "rest" ? p.timer : null;
   useEffect(() => {
     if (!enabled || !restTimer) return;
     const t = advanceTimer(restTimer, now);
@@ -76,7 +82,8 @@ export default function VoiceCoach() {
     if (restTimer?.id) queue.current.reset("rest-over");
   }, [restTimer?.id]);
   if (!workout) return null;
-  const tempoSentence = tempoCueSentence(row?.tempo || exercise?.tempo);
+  const tempoSentence = tempoCueSentence(row?.tempo || exercise?.tempo),
+    coaching = coachingFor(exercise);
   return (
     <div className={`voice-coach ${enabled ? "on" : ""}`}>
       <button
@@ -91,12 +98,12 @@ export default function VoiceCoach() {
           queue.current.reset();
           notify(
             next
-              ? "Guidage vocal activé : séries, tempo, repos et changements d’exercice sont annoncés."
+              ? "Guidage vocal activé : séries, prises, tempo, repos et changements d’exercice sont annoncés."
               : "Guidage vocal coupé.",
           );
           if (next)
             speak(
-              "Guidage vocal activé. Je vous annonce les séries, le tempo et la récupération.",
+              "Guidage vocal activé. Je vous annonce les séries, les consignes de prise, le tempo et la récupération.",
               true,
             );
         }}
@@ -106,8 +113,7 @@ export default function VoiceCoach() {
           <strong>Guidage vocal {enabled ? "actif" : "coupé"}</strong>
           <small>
             {enabled
-              ? last ||
-                "Séries, tempo, récupération et changements annoncés."
+              ? last || "Séries, tempo, récupération et changements annoncés."
               : "Activez pour être guidé sans regarder l’écran."}
           </small>
         </span>
@@ -117,11 +123,16 @@ export default function VoiceCoach() {
           <Icon name="Timer" size={13} /> Tempo prescrit : {tempoSentence}
         </p>
       )}
+      {enabled && coaching && (
+        <p className="voice-coach-tempo voice-coach-grip">
+          <Icon name="Info" size={13} /> {coaching.handCue}
+        </p>
+      )}
       {enabled && (
         <div className="voice-coach-actions">
           <button
             onClick={() => {
-              const cue = tempoReminderCue(exercise, row?.tempo);
+              const cue = techniqueCue(exercise, row?.tempo);
               speak(
                 cue?.text ||
                   "Gardez la technique. Une ou deux répétitions en réserve.",
