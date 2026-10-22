@@ -47,13 +47,14 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
 4. **Vague 1** : Biceps complet (20 exos, lots de 4 dans l'ordre du catalogue).
    Lot 1 : #03 + #04 + #08 ✅ 22/10 (#08 gardée : barre EZ acceptée).
    Lot 2 : #05 + #06 + #07 ✅ 22/10 (PixVerse 4 s, prises vérifiées en zoom).
-   #02 PARQUÉE le 22/10 (ordre Yanis « mets ça de côté ») : la photo
-   vraie inversée est prête mais le personnage a dérivé — reprise plus
-   tard sur le personnage d'origine. #09 : photo fidèle livrée, en
-   attente de la vidéo Yanis. Vidéo #02 v1 désactivée.
-   Lot 3 PHOTOS PRÊTES le 22/10 : #10 + #11 + #12 + #13 (personnage
-   ancré sur #05, ordre Yanis ; prises vérifiées en zoom ; prompts
-   envoyés). Reste : #02, #09, #10 → #20.
+   #02 REFAITE le 22/10 (style lot d'origine + vraie inversée : dos des
+   mains caméra, doigts dessous, EZ en haut — vérifiée en zoom).
+   #09 RESTAURÉE le 22/10 : version d'origine fdd8154 remise (fichier
+   re-déposé par Yanis, octet-identique). Vidéo #02 v1 désactivée.
+   Lot 3 PHOTOS PRÊTES le 22/10 : #10 + #11 + #12 + #13 (prises
+   vérifiées en zoom ; prompts envoyés). MP4 câble de Yanis (supination
+   barre) : doublon #07 — affectation à confirmer.
+   Reste : #02, #09, #10 → #20.
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

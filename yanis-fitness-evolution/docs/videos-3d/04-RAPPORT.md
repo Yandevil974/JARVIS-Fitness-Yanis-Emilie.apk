@@ -74,6 +74,14 @@
   gris). #10 refaite (2 mains → 1 seul bras, ancre #06 pour la neutre),
   #11 refaite (mains ouvertes → poings fermés, ancre #09). Prises
   vérifiées en zoom, prompts vidéo envoyés.
+- **22/10/2026 — Personnage tranché + #02/#09 relancées** : Yanis a
+  re-déposé #05 (identique) + #09 d'origine fdd8154 + capture
+  photo/vidéo + 1 MP4 câble. Leçon : l'ancre image-à-image ne garantit
+  PAS le style (dérive miroir/contrastée) — #02 refaite en texte seul
+  style « lot d'origine » (satiné, visage lisse, pad gris clair) :
+  inversée correcte vérifiée en zoom. #09 restaurée à l'original.
+  MP4 = curl poulie barre supination (rép complète, prise tenue) =
+  doublon #07 → affectation demandée à Yanis.
 - **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
