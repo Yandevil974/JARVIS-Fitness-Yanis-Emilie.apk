@@ -98,7 +98,14 @@ export default function ModalRoot() {
     protocol: <ProtocolModal protocolId={m.protocolId} level={m.level} />,
     warmup: <WarmupModal session={m.session} />,
     cooldown: <CooldownModal session={m.session} />,
-    image: <ImageViewer src={m.src} title={m.title} motion={m.motion} />,
+    image: (
+      <ImageViewer
+        src={m.src}
+        title={m.title}
+        motion={m.motion}
+        poster={m.poster}
+      />
+    ),
     stretch: <StretchModal exercise={m.exercise} />,
   };
   if (map[m.type]) return map[m.type];

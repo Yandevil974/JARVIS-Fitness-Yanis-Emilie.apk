@@ -15,11 +15,8 @@ import {
 import { exerciseById, MUSCLES } from "../data/library.js";
 import { plannedSessions } from "./plan-memory.js";
 import { validDate } from "./validation.js";
-import {
-  loadForExercise,
-  forceSourceLabel,
-  parseTargetReps,
-} from "./force.js";
+import { loadForExercise, forceSourceLabel, parseTargetReps } from "./force.js";
+import { stepGif } from "../data/visuals-gifs.js";
 import { WARMUP_IMAGES } from "../data/visuals.js";
 export function estimate1RM(weight, reps) {
   const w = num(weight),
@@ -253,10 +250,15 @@ export function recommendLoad(p, target, date = today()) {
     // 1.5.0 : la première charge vient du pipeline de référence complet
     // (1RM déclaré ou recalculé, ratio de famille, règle de progression,
     // plafond 68 % en semaine allégée), pas d’un simple pourcentage fixe.
-    const strength = loadForExercise(p, ex, target.repScheme || `${low}-${high}`, {
-      deload: !!target.deload || (rec.score != null && rec.score < 45),
-      unit,
-    });
+    const strength = loadForExercise(
+      p,
+      ex,
+      target.repScheme || `${low}-${high}`,
+      {
+        deload: !!target.deload || (rec.score != null && rec.score < 45),
+        unit,
+      },
+    );
     if (strength?.load != null) {
       const capped =
         rec.score != null && rec.score < 50
@@ -265,7 +267,10 @@ export function recommendLoad(p, target, date = today()) {
       return {
         ...base,
         weight: capped,
-        reps: Math.max(low, Math.min(high, parseTargetReps(target.repScheme) || low)),
+        reps: Math.max(
+          low,
+          Math.min(high, parseTargetReps(target.repScheme) || low),
+        ),
         decision: "keep",
         color: strength.fromJournal ? "blue" : "amber",
         label: strength.fromJournal
@@ -411,7 +416,10 @@ export function recommendLoad(p, target, date = today()) {
 export function warmup(p, session) {
   const first = session?.exercises?.[0];
   const ex = first ? exerciseById(first.exerciseId) : null;
-  const rec = first ? recommendLoad(p, first) : null;
+  const rec =
+    first && Array.isArray(p.sessions) && p.checkIns && p.user
+      ? recommendLoad(p, first)
+      : null;
   const w = first?.targetLoad ?? rec?.weight;
   const lower = ex && ["qua", "isc", "fes", "moy"].includes(ex.muscle);
   return [
@@ -439,14 +447,17 @@ export function warmup(p, session) {
       img: WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Ponts fessiers au sol, 10 répétitions contrôlées."
-        : "Rétractions des omoplates et rotations externes sans fatigue.",
+        : "Avec l’élastique : bras tendus devant vous, écartez en serrant les omoplates. Mouvement lent, sans fatigue.",
     },
     ...[0.5, 0.7, 0.85].map((pct, i) => ({
       name: `Approche ${i + 1}${w > 0 ? " · " + roundLoad(w * pct, p.user.increment || 2.5, "down") + " kg" : " · charge légère à choisir"}`,
       seconds: 60,
       pattern: ex?.pattern || "squat",
+      // L'approche rejoue le 1er exercice de la séance : sa démo (vidéo 3D
+      // validée sinon GIF exact) remplace l'image générique dupliquée.
+      exerciseId: ex?.id || null,
       img: WARMUP_IMAGES.approche,
-      instruction: `${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
+      instruction: `${ex ? ex.name + " — " : ""}${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
     })),
   ];
 }
@@ -858,7 +869,9 @@ export function photoReading(profile) {
   if (a?.weight != null && b?.weight != null) {
     const d = +(b.weight - a.weight).toFixed(1);
     bits.push(
-      d === 0 ? "poids stable" : `${d > 0 ? "+" : ""}${d} kg (${a.weight} → ${b.weight})`,
+      d === 0
+        ? "poids stable"
+        : `${d > 0 ? "+" : ""}${d} kg (${a.weight} → ${b.weight})`,
     );
   }
   if (a?.bodyFat != null && b?.bodyFat != null) {

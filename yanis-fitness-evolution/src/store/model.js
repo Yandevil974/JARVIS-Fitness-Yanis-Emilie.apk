@@ -25,6 +25,7 @@ import {
 } from "../data/library.js";
 import { generatePlan } from "../engine/planner.js";
 import { validDate } from "../engine/validation.js";
+import { defaultBrainState } from "../brain/policy.js";
 export function newProfile(id) {
   const src = legacy[id]?.defaults;
   const em = id === "emilie";
@@ -72,6 +73,7 @@ export function newProfile(id) {
       priorities: em ? ["fes", "moy", "tra"] : [],
       muscleTargets: {},
       poolDays: em ? [4] : [],
+      metconLevel: 0,
       voice: false,
       notifications: false,
       reducedMotion: false,
@@ -102,6 +104,9 @@ export function newProfile(id) {
     legacyArchive: null,
     badges: [],
     timer: null,
+    // Fitness Brain local : mémoire contrôlée, aucun service distant.
+    // Le coach déterministe reste seul auteur des actions sportives.
+    brain: defaultBrainState(),
   };
   p.sourceProgramRevision = 2;
   p.plan = generatePlan(p, { source: "legacy", weeks: 52, startDate: today() });

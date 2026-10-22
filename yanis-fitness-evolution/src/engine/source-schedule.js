@@ -1,5 +1,9 @@
-import { legacy } from "../data/library.js";
-import { today, parseDate, addDays, dayDiff, clamp, num } from "./utils.js";
+import {
+  legacy,
+  POOL_PROTOCOLS,
+  OPTIONAL_POOL_PROTOCOLS,
+} from "../data/library.js";
+import { today, parseDate, addDays, dayDiff, clamp, num, monday } from "./utils.js";
 
 export const SOURCE_SCHEDULE_REVISION = 3;
 export function sourcePosition(p, date = today()) {
@@ -31,6 +35,57 @@ export function sourceTrainingDays(id, frequency = 4) {
     ? js.map((d) => (d + 6) % 7)
     : { 1: [0], 2: [0, 3], 6: [0, 1, 2, 3, 4, 5] }[f] || [0, 1, 3, 4];
 }
+const METCON_FORMATS = new Set(["metcon-piscine", "metcon-aquatabata"]);
+const METCON_DURATIONS = {
+  "metcon-piscine": [18, 22, 27],
+  "metcon-aquatabata": [20, 25, 30],
+};
+export function isMetconFormat(format) {
+  return METCON_FORMATS.has(format);
+}
+export function poolRecoveryGate(protocolId, score, allowMetcon = false) {
+  const value = num(score),
+    low = value != null && value < 45,
+    soft = low && isMetconFormat(protocolId);
+  return {
+    soft,
+    blocked:
+      low &&
+      !["recovery", "endurance"].includes(protocolId) &&
+      !(soft && allowMetcon),
+  };
+}
+export function metconLevel(p) {
+  const value = num(p?.preferences?.metconLevel);
+  return value == null ? 0 : clamp(Math.round(value), 0, 2);
+}
+export function metconMinutes(format, level = 0) {
+  const values = METCON_DURATIONS[format];
+  if (!values) return null;
+  const parsed = num(level);
+  return values[clamp(Math.round(parsed ?? 0), 0, 2)];
+}
+export function sourceCardioDayEligible(p, date) {
+  if (!p || p.id !== "emilie" || !date) return false;
+  const pos = sourcePosition(p, date);
+  if (pos.beforeStart || pos.afterEnd) return false;
+  const frequency = Math.round(p.user?.frequency || 4);
+  let days = ({ 3: [2, 6], 4: [3, 5], 5: [3] }[frequency] || [2, 6]).slice();
+  if (pos.deload) days = days.slice(0, 1);
+  return days.includes(parseDate(date).getDay());
+}
+export function sourceCardioSlots(p, date = today()) {
+  const start = monday(date);
+  return Array.from({ length: 7 }, (_, index) => {
+    const slotDate = addDays(start, index);
+    return {
+      date: slotDate,
+      jsDay: parseDate(slotDate).getDay(),
+      eligible: sourceCardioDayEligible(p, slotDate),
+      day: sourceDay(p, slotDate),
+    };
+  });
+}
 export function sourceCardioDay(p, date, jsDay, pos = sourcePosition(p, date)) {
   const choices = p.preferences.cardioChoices || {},
     pool = p.equipment.includes("pool"),
@@ -46,9 +101,15 @@ export function sourceCardioDay(p, date, jsDay, pos = sourcePosition(p, date)) {
         : elliptical
           ? "elliptique"
           : "repos");
-  if (!["piscine", "elliptique", "repos"].includes(format)) format = "repos";
+  const validMetcon = p.id === "emilie" && isMetconFormat(format);
+  if (!["piscine", "elliptique", "repos"].includes(format) && !validMetcon)
+    format = "repos";
   let minutes, detail, zone;
-  if (pos.deload) {
+  if (validMetcon) {
+    minutes = metconMinutes(format, metconLevel(p));
+    zone = 2;
+    detail = `${format === "metcon-piscine" ? "METCON Piscine" : "METCON Aqua Tabata"} · ${minutes} min, niveau ${metconLevel(p) + 1}.`;
+  } else if (pos.deload) {
     minutes = format === "piscine" ? 30 : 25;
     zone = 0;
     detail =
@@ -131,7 +192,7 @@ export function sourceDay(
       if (cd.includes(jsDay)) {
         cardio = sourceCardioDay(p, date, jsDay, pos);
         type =
-          cardio.format === "piscine"
+          cardio.format === "piscine" || isMetconFormat(cardio.format)
             ? "swim"
             : cardio.format === "repos"
               ? "recovery"
@@ -154,7 +215,9 @@ export function sourceDay(
       (type === "metcon"
         ? "METCON elliptique + piscine"
         : type === "swim"
-          ? "Piscine · programme source"
+          ? isMetconFormat(cardio?.format)
+            ? POOL_NAME[cardio.format]
+            : "Piscine · programme source"
           : type === "cardio"
             ? "Cardio elliptique"
             : pos.deload
@@ -236,6 +299,56 @@ export function sourceExtraSequence(p, date) {
   }
   return n;
 }
+/**
+ * Nom de protocole au sens du fichier source, pour la règle « séances dures ».
+ * L'application range tout dans `activities` ; le HTML séparait
+ * `state.natation`, `state.cardio` et `state.tabata`. On retrouve le nom que le
+ * fichier source écrivait dans `proto`, à partir de l'identifiant de protocole
+ * (séances guidées) ou, à défaut, du mode saisi (cardio libre).
+ */
+export function sourceProtoName(a) {
+  if (a?.protocolId)
+    return (
+      {
+        hiit: "HIIT",
+        inter: "Intervalles",
+        endu: "Endurance",
+        recup: "Récupération",
+        endurance: "Swim Endurance",
+        interval: "Swim Interval",
+        sprint: "Swim Sprint",
+        aquahiit: "Aqua HIIT",
+        aquatabata: "Aqua Tabata",
+        recovery: "Aqua Recovery",
+        "metcon-piscine": "METCON Piscine",
+        "metcon-aquatabata": "METCON Aqua Tabata",
+      }[a.protocolId] || ""
+    );
+  return (
+    {
+      hiit: "HIIT",
+      intervals: "Intervalles",
+      endurance: "Endurance",
+      moderate: "Endurance",
+      recovery: "Récupération",
+    }[a?.mode || ""] || ""
+  );
+}
+/**
+ * Règle du coach source (elite-coachExtra.js) : une séance des 7 derniers jours
+ * compte comme « dure » si c'est un tabata, un elliptique en HIIT ou en
+ * Intervalles, ou une piscine qui n'est ni Recovery ni Endurance.
+ * Trois séances dures basculent le METCON en version modérée.
+ */
+export function sourceHardSession(a) {
+  if (a?.type === "hiit") return true; // tabata : toujours dur dans la source
+  const proto = sourceProtoName(a);
+  if (["cardio", "metcon"].includes(a?.type))
+    return /HIIT|Intervalles/.test(proto);
+  if (["swim", "aqua", "recovery"].includes(a?.type))
+    return !/Recovery|Endurance/.test(proto);
+  return false;
+}
 const POOL_NAME = {
   endurance: "Swim Endurance",
   interval: "Swim Interval",
@@ -243,6 +356,8 @@ const POOL_NAME = {
   aquahiit: "Aqua HIIT",
   recovery: "Aqua Recovery",
   aquatabata: "Aqua Tabata",
+  "metcon-piscine": "METCON Piscine",
+  "metcon-aquatabata": "METCON Aqua Tabata",
 };
 export function sourcePoolProtocol(p, date, { planning = false } = {}) {
   const pos = sourcePosition(p, date),
@@ -279,7 +394,10 @@ export function sourcePoolProtocol(p, date, { planning = false } = {}) {
   };
 }
 export function sourcePool(p, id, level = 0) {
-  const proto = legacy[p.id].POOL_PROTOS.find((x) => x.id === id);
+  const protocols = p.id === "emilie" ? POOL_PROTOCOLS : legacy[p.id].POOL_PROTOS;
+  const proto =
+    protocols.find((x) => x.id === id) ||
+    OPTIONAL_POOL_PROTOCOLS.find((x) => x.id === id);
   const data = proto?.niveaux[level] || proto?.niveaux[0];
   return {
     id,
@@ -307,8 +425,17 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
     reason = "";
   if (p.id === "emilie") {
     if (day.type === "swim") {
-      pool = sourcePoolProtocol(p, date, { planning });
-      reason = pool.reason;
+      if (isMetconFormat(day.cardio?.format)) {
+        pool = {
+          id: day.cardio.format,
+          level: metconLevel(p),
+          reason: day.cardio.detail,
+        };
+        reason = pool.reason;
+      } else {
+        pool = sourcePoolProtocol(p, date, { planning });
+        reason = pool.reason;
+      }
     } else {
       const c =
         day.cardio || sourceCardioDay(p, date, parseDate(date).getDay(), pos);
@@ -342,9 +469,7 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
       const recent = (p.activities || []).filter(
           (a) => a.date >= addDays(date, -6) && a.date <= date,
         ),
-        hard = recent.filter(
-          (a) => ["hiit", "aqua"].includes(a.type) || a.rpe >= 8,
-        ).length;
+        hard = recent.filter(sourceHardSession).length;
       const moderate = (score != null && score < 65) || hard >= 3;
       const options = rotation(
         moderate
@@ -402,7 +527,7 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
     const pp = sourcePool(p, pool.id, pool.level);
     components.push({
       key: "pool",
-      type: ["aquahiit", "aquatabata"].includes(pool.id)
+      type: ["aquahiit", "aquatabata", "metcon-aquatabata"].includes(pool.id)
         ? "aqua"
         : pool.id === "recovery"
           ? "recovery"
@@ -428,6 +553,100 @@ export function sourceExtra(p, day, { planning = false, sequence } = {}) {
     score,
     sourcePrescription: pos.phase.metcon,
   };
+}
+export function sourcePostStrengthPoolSteps(minutes, weekGlobal = 0) {
+  const duration = [20, 25, 30].includes(Number(minutes))
+      ? Number(minutes)
+      : Number(minutes) < 23
+        ? 20
+        : Number(minutes) < 28
+          ? 25
+          : 30,
+    pyramid = Math.abs(Number(weekGlobal) || 0) % 2 === 1;
+  const step = (name, seconds, kind, instruction, pattern = "swim") => ({
+    name,
+    seconds,
+    kind,
+    instruction,
+    pattern,
+  });
+  const steps = [];
+  const warm = pyramid ? 240 : duration === 20 ? 180 : duration === 25 ? 240 : 300;
+  const cool = pyramid ? 300 : duration === 20 ? 300 : 300;
+  steps.push(
+    step(
+      "Nage douce — échauffement",
+      warm,
+      "warmup",
+      "Nage facile et continue. Respirez régulièrement, sans apnée.",
+    ),
+  );
+  if (pyramid) {
+    const ladder = [30, 60, 90, 120, 90, 60, 30];
+    ladder.forEach((seconds, index) => {
+      steps.push(
+        step(
+          `Fractionné pyramidal · effort ${index + 1}/7`,
+          seconds,
+          "work",
+          `Nage soutenue ${seconds} s, effort autour de 7/10; gardez une technique propre.`,
+        ),
+      );
+      if (index < ladder.length - 1)
+        steps.push(
+          step(
+            "Récupération active — marche aquatique",
+            30,
+            "rest",
+            "Marchez ou nagez très lentement; reprenez votre souffle sans apnée.",
+          ),
+        );
+    });
+    const extraIntervals = duration === 25 ? 2 : duration === 30 ? 4 : 0;
+    for (let i = 0; i < extraIntervals; i++) {
+      steps.push(
+        step(
+          `Fractionné pyramidal · palier soutenu ${i + 1}/${extraIntervals}`,
+          120,
+          "work",
+          "Nage soutenue 2 min à effort 7/10, sans sprint maximal.",
+        ),
+        step(
+          "Récupération active — marche aquatique",
+          30,
+          "rest",
+          "Marchez ou nagez très lentement; reprenez votre souffle sans apnée.",
+        ),
+      );
+    }
+  } else {
+    const workSeconds = duration === 20 ? 60 : 90;
+    const count = duration === 30 ? 10 : 8;
+    for (let i = 0; i < count; i++)
+      steps.push(
+        step(
+          `Fractionné — nage soutenue ${i + 1}/${count}`,
+          workSeconds,
+          "work",
+          `Nage soutenue ${workSeconds} s à effort 7/10, sans sprint maximal.`,
+        ),
+        step(
+          "Récupération active — nage facile",
+          30,
+          "rest",
+          "Nagez très doucement 30 s; gardez le contrôle de votre respiration.",
+        ),
+      );
+  }
+  steps.push(
+    step(
+      "Retour au calme — nage douce",
+      cool,
+      "cooldown",
+      "Ralentissez progressivement et nagez très facilement. Arrêtez si vous êtes essoufflé ou en difficulté.",
+    ),
+  );
+  return steps;
 }
 export function sourceCardioSteps(id, minutes) {
   const total = Math.round(minutes * 60),

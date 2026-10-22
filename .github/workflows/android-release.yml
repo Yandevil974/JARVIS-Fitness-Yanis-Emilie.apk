@@ -1,7 +1,7 @@
 name: Build Yanis Fitness Evolution APK (release)
 
-# Construit l'APK signé 1.5.1 (appId app.yanis.fitness.evolution, keystore du
-# dépôt) et l'attache au GitHub Release correspondant au tag poussé.
+# Construit l'APK signé de la version déclarée dans package.json (appId
+# app.yanis.fitness.evolution, keystore du dépôt) et l'attache au tag poussé.
 on:
   push:
     tags:
@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.5.1-evolution"
+        default: "v1.8.8-jarvis-videos-test7"
 
 permissions:
   contents: write
@@ -48,11 +48,40 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Run application tests
+        run: npm test
+
+      - name: Install esbuild (runtime portable)
+        run: npm install --no-save esbuild
+
       - name: Build web (vite) + portable runtime + cap sync
         run: |
-          npm run build
           npm run build:portable
+          npm run build
           npx cap sync android
+
+      # Piège connu (corrigé ici pour le CI) : build:portable écrit media-index.json
+      # NON trié, et vite a déjà recopié public/ dans release/ avant le tri.
+      # On remet donc les deux index identiques, triés, compact, et le runtime à jour.
+      - name: Re-trier media-index + resynchroniser le runtime portable
+        run: |
+          node -e "
+            const fs = require('fs');
+            const p = 'public/media-index.json';
+            const list = JSON.parse(fs.readFileSync(p, 'utf8'));
+            const sorted = list.slice().sort();
+            if (sorted.length !== list.length) throw new Error('index corrompu');
+            for (const witness of ['d53f6f22d159b4ee', '279bb96defb9a0c8']) {
+              if (!sorted.includes('/media/' + witness + '.gif')) throw new Error('media-index absent: ' + witness);
+            }
+            const compact = JSON.stringify(sorted, null, 0);
+            fs.writeFileSync(p, compact);
+            fs.writeFileSync('release/media-index.json', compact);
+            console.log('media-index trie :', sorted.length, 'entrees');
+          "
+          cp public/runtime.js release/runtime.js
+          cp public/runtime.css release/runtime.css
+          git diff --stat -- public/media-index.json release/media-index.json || true
 
       - name: Assemble signed release APK
         working-directory: yanis-fitness-evolution/android
@@ -61,28 +90,81 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.5.1'" 2>/dev/null || echo 1.5.1)
+          VERSION=$(node -p "require('../package.json').version || '1.8.8'" 2>/dev/null || echo 1.8.8)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
+          # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
+          # l'APK livré doit contenir TOUT le travail présent sur la branche.
+          APK=app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          BADGING=$("$BUILD_TOOLS/aapt2" dump badging "$APK")
+          # Version attendue lue dans app/build.gradle (la check suit le bump, plus de version codée en dur).
+          EXP_CODE=$(sed -n 's/.*versionCode \([0-9][0-9]*\).*/\1/p' app/build.gradle | head -1)
+          EXP_NAME=$(sed -n 's/.*versionName "\([^"]*\)".*/\1/p' app/build.gradle | head -1)
+          printf '%s\n' "$BADGING" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='${EXP_CODE}' versionName='${EXP_NAME}'"
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK"
+          sha256sum "$APK"
+          N_DISQUE=$(find ../release/media -maxdepth 1 -type f | wc -l)
+          N_APK=$(unzip -l "$APK" | grep -cE "assets/public/media/[^/]+\.(gif|jpg|jpeg|png|webp)$" || true)
+          echo "medias sur le disque : $N_DISQUE"
+          echo "medias dans l'APK    : $N_APK"
+          if [ "$N_DISQUE" != "$N_APK" ]; then
+            echo "ECHEC : des medias de l'application sont absents de l'APK."
+            exit 1
+          fi
+          # Contrôle nominatif des animations déjà témoins du lot 1 musculation.
+          unzip -l "$APK" | grep -E "acbab53a64c18aab|d36d738b07fe1305|6baa655d39de069e" || exit 1
+          # Les GIFs Étirement et les deux GIFs d'échauffement approuvés doivent être dans l'APK.
+          for witness in 55d7d6060a20be1b 22f0bfbf80a63b77 1eae9eb2d9e5bfea d53f6f22d159b4ee 279bb96defb9a0c8; do
+            unzip -l "$APK" | grep -q "$witness.gif" || { echo "GIF témoin absent de l'APK: $witness.gif"; exit 1; }
+          done
+          # Les MP4 test7 et leurs posters doivent également être embarqués.
+          N_VIDEOS_DISQUE=$(find ../release/videos -maxdepth 1 -type f -name '*.mp4' | wc -l)
+          N_VIDEOS_APK=$(unzip -l "$APK" | grep -cE "assets/public/videos/[^/]+\.mp4$" || true)
+          echo "videos sur le disque : $N_VIDEOS_DISQUE"
+          echo "videos dans l'APK    : $N_VIDEOS_APK"
+          if [ "$N_VIDEOS_DISQUE" != "$N_VIDEOS_APK" ]; then
+            echo "ECHEC : des videos de l'application sont absentes de l'APK."
+            exit 1
+          fi
+          for witness in warmup-apercu-complet warmup-mise-en-route warmup-mobilite-epaules warmup-mobilite-hanches warmup-activation-scapulaire warmup-pont-fessier; do
+            unzip -l "$APK" | grep -q "assets/public/videos/$witness.mp4" || { echo "Video temoin absente de l'APK: $witness.mp4"; exit 1; }
+          done
+          echo "Controle 'rien ne manque' + GIFs et videos witnesses : OK"
 
       - name: Publish GitHub Release with APK
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          prerelease: ${{ contains(github.ref_name, '-pre') }}
           files: |
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.5.1 (versionCode 151)
-            APK signé avec la clé propre à l'application (`app.yanis.fitness.evolution`).
+            ## Yanis Fitness Evolution 1.8.8 — JARVIS Brain + vidéos test7
 
-            **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Vos deux jeux de données restent indépendants (clés de stockage distinctes ; l'ancienne clé n'est lue qu'une fois pour l'import, jamais modifiée).
+            APK signé construit depuis la base 1.8.8, avec JARVIS Brain et les fonctions piscine conservés.
+            Cette livraison réintègre uniquement la couche vidéo/échauffement du point test7 validé :
+            protocole complet de 8 minutes, six étapes, vidéos dans le récapitulatif et le minuteur.
+
+            Les exercices biceps #02 et #09 restent bloqués côté vidéo (`disabled` / `pending`) :
+            aucun geste non validé n'est présenté comme une référence conforme.
+
+            **Mise à jour installable** : même application (`app.yanis.fitness.evolution`),
+            versionName 1.8.8, versionCode 190 (supérieur au 189 de la précédente 1.8.8).
+            L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.5.1.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.8.8.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.5.1.apk.sha256`.
+            3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
 
-            ### Importer vos données
-            Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.
+            ### Contrôles de livraison
+            - Tests unitaires et build web exécutés avant l'assemblage.
+            - Signature et version Android vérifiées.
+            - Le workflow échoue si des médias ou des MP4 sont absents de l'APK.
+            - Les six vidéos témoins de l'échauffement sont contrôlées nominativement.
+
+            ### Bon à savoir
+            - L'application **JARVIS Fitness** (`app.jarvis.fitness`) est un paquet **différent** : elle n'est jamais modifiée ni remplacée par celle-ci.
           generate_release_notes: true

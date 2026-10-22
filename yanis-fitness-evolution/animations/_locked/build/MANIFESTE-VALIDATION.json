@@ -1,0 +1,286 @@
+{
+  "modules": [
+    {
+      "titre": "Module 1 — Échauffement (8 min : elliptique, mobilité, activation, geste technique)",
+      "entrees": [
+        {
+          "num": "1a",
+          "etiquette": "Elliptique — mise en route · CANDIDAT B (foulée complète 4 phases)",
+          "gif": "build/corrections/warmup-elliptique-poses/GIF-elliptique-candidatB-foulee-complete-avec-manche-a-corriger.gif",
+          "recommandations": [
+            "4 min à allure facile : dos droit, épaules relâchées, pieds posés à plat et cadence régulière. Vous devez pouvoir parler.",
+            "Décor E1 unifié par composite (plaque de fond unique), sol_dom 219 = valeur approuvée le 16/10 pour l'elliptique intégré.",
+            "RÉSERVE À VALIDER : la phase avant (pose 3 corrigée mains) montre encore un petit manchon noir près de la console — à faire sauter si vous choisissez ce candidat."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": "1b",
+          "etiquette": "Elliptique — mise en route · CANDIDAT C (demi-foulée, sans aucun défaut)",
+          "gif": "build/corrections/warmup-elliptique-poses/GIF-elliptique-candidatC-demi-foulee-sans-defaut.gif",
+          "recommandations": [
+            "Mêmes recommandations que 1a. Aucun artefact : seulement deux phases (arrière ↔ passage), donc mouvement de balancier, pas de foulée complète.",
+            "Choix de repli si le manchon du candidat B est refusé."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": "1c",
+          "etiquette": "Activation scapulaire · pompes inclinées (GIF fluide v1)",
+          "gif": "build/corrections/warmup-scapulaire-poses/GIF-scapulaire-fluide-v1.gif",
+          "recommandations": [
+            "Mains sur un support stable, bras tendus : 2 × 8 pompes scapulaires, omoplates rapprochées puis écartées sans plier les coudes.",
+            "Mesuré CONFORME : sol_dom 228-229, saturation 37-38, lime ≤ 0,01 %, muscles dorés 7,5-8,4 %."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": "1d",
+          "etiquette": "Mobilité des épaules (GIF intégré du 13/10, inchangé)",
+          "gif": "../../public/media/6d278876a579cbc8.gif",
+          "recommandations": [
+            "Bras devant la poitrine : ouvrez puis croisez 8 fois, puis 8 cercles d'épaules lents.",
+            "Déjà approuvé et intégré le 13/10 — non régénéré (règle : un média conforme ne se régénère pas)."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 1 (pec, dos, lombaires)",
+      "entrees": [
+        {
+          "num": 2,
+          "etiquette": "Étirement dans l'encadrement de porte (pec) — appui = montant de marbre de la terrasse",
+          "gif": "candidats/2026-10-16-etirement-lot1/GIF-01-encadrement-porte-fluide-v3.gif",
+          "recommandations": [
+            "Appui à hauteur d'épaule, coude ~90°, thorax incliné vers l'avant, abdos engagés, 30-45 s.",
+            "Mesuré : sol 227-234, saturation 37-39, mer 2,2-2,7 % (plage acceptable 2,3-2,9 après contrôle visuel : mer présente au fond)."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026",
+          "mesures": "GIF v3 : volume musculaire référence ; poteau conservé = appui main (encadrement) ; sol 228-243 (bande 219-253), mer FAIBLE seule réserve"
+        },
+        {
+          "num": 3,
+          "etiquette": "Bras tendu contre le mur (pec)",
+          "gif": "candidats/2026-10-16-etirement-lot1/GIF-02-bras-mur-fluide-v4.gif",
+          "recommandations": [
+            "Bras tendu à hauteur d'épaule, paume au montant, rotation du tronc opposée à l'appui, épaule basse, 30 s par côté.",
+            "4 clés (face → bras posé → demi-rotation → rotation complète) ; colonne mesurée alignée au pixel près sur les 4 clés."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026",
+          "mesures": "GIF v4 : volume musculaire référence ; 4 clés, poteau conservé = appui du stretch ; sol 227-235 OK, mer FAIBLE seule réserve"
+        },
+        {
+          "num": 4,
+          "etiquette": "Position de l'enfant / Balasana (dos, lombaires)",
+          "gif": "candidats/2026-10-16-etirement-lot1/GIF-03-balasana-fluide-v3.gif",
+          "recommandations": [
+            "Genoux au sol, hanches vers les talons, bras tendus devant, front vers le sol, respiration dans le dos, 30-45 s.",
+            "Mesuré CONFORME : sol 228-235, saturation 42-44, lime ≤ 0,06 %."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026",
+          "mesures": "GIF v3 : volume musculaire référence restauré ; 7/7 frames CONFORME"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 2 (dos, lombaires, épaule avant)",
+      "entrees": [
+        {
+          "num": 5,
+          "etiquette": "Suspension à la barre (dos)",
+          "gif": "candidats/2026-10-16-etirement-lot2/GIF-01-suspension-barre-fluide-v2.gif",
+          "recommandations": [
+            "Prise un peu plus large que les épaules, coudes tendus, corps gainé, 20-30 s.",
+            "Mesuré CONFORME après réétalonnage du sol sablé : sol_dom 235, saturation 42, lime 0 %."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026",
+          "mesures": "GIF v2 : volume musculaire référence restauré (+30 %), 7/7 frames CONFORME (sol 226-236, sat 42) | PROTO REEL v3 (style réf Facebook) : 4:5 800x960, badges cochés, muscle cible vert, zoom maintien, chrono"
+        },
+        {
+          "num": 6,
+          "etiquette": "Torsion allongée genoux (dos, lombaires)",
+          "gif": "candidats/2026-10-16-etirement-lot2/GIF-02-torsion-allongee-fluide-v1.gif",
+          "recommandations": [
+            "Épaules au sol, genoux groupés basculés d'un côté, regard opposé, 30 s par côté.",
+            "Mesuré CONFORME 7/7 images : sol 234, saturation 40,6, lime ≤ 0,06 %."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 7,
+          "etiquette": "Mains croisées derrière le dos (épaule avant)",
+          "gif": "candidats/2026-10-16-etirement-lot2/GIF-03-mains-croisees-dos-fluide-v3.gif",
+          "recommandations": [
+            "Doigts entrelacés derrière le dos, bras tendus et éloignés du dos, poitrine ouverte, épaules basses, 30 s.",
+            "Mer 2,4-2,5 % : dans la plage acceptable 2,3-2,9 après contrôle visuel (mer visible au fond)."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026",
+          "mesures": "GIF v3 : poteau marbre retiré (décoratif) + volume musculaire référence ; sol 226-244 (bande 219-253), mer FAIBLE = seule réserve"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 3 (épaule latérale, épaule postérieure, biceps)",
+      "entrees": [
+        {
+          "num": 8,
+          "etiquette": "Bras tendu contre la poitrine (épaule latérale)",
+          "gif": "candidats/2026-10-16-etirement-lot3/GIF-01-bras-contre-poitrine-fluide-v3.gif",
+          "recommandations": [
+            "Bras horizontal à hauteur de poitrine, avant-bras opposé en crochet, traction vers le corps, épaule basse, 30 s par côté.",
+            "Sol 228-242 (dans la bande 219-253), saturation 39-40, mer 2,6-2,7 % (plage acceptable après contrôle visuel)."
+          ],
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026",
+          "mesures": "GIF v3 : poteau marbre retiré + volume référence ; fond cohérent NCC >=0.998 ; sol 227 OK, mer FAIBLE seule réserve"
+        },
+        {
+          "num": 9,
+          "etiquette": "Bras devant, main tirée (épaule postérieure) — vue de profil — GIF fluide v2",
+          "gif": "candidats/2026-10-16-etirement-lot3/GIF-02-bras-devant-main-tiree-fluide-v2.gif",
+          "mesures": "sol 228-234 OK 7/7 (sol uniformément ensoleillé), mer 3,9-4,4 %, coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 10,
+          "etiquette": "Bras derrière le dos mains jointes (pectoraux, épaule avant) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot3/GIF-03-bras-derriere-fluide-v1.gif",
+          "mesures": "sol 229 OK 7/7, mer 6,9-8,1 % (réajustée), coins BAS (plantes) = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 4 (triceps, taille, hanche)",
+      "entrees": [
+        {
+          "etiquette": "Coude dessus de la tête (triceps) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot4/GIF-01-coude-dessus-tete-fluide-v1.gif",
+          "mesures": "sol 219-227 (bande 219-253), mer 4,9-8,0 % (réajustée), sat 46, lime 0 ; coins BAS = réserve",
+          "num": 11,
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 12,
+          "etiquette": "Main dans le dos, flexion latérale (taille, obliques) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot4/GIF-02-main-dans-le-dos-fluide-v1.gif",
+          "mesures": "sol 229 OK 7/7, mer 5,9-6,6 % (réajustée), coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 13,
+          "etiquette": "Fléchisseurs de hanche à genou (psoas) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot4/GIF-03-flechisseurs-fluide-v2.gif",
+          "mesures": "GIF v2 : ombre portée supprimée ; sol 230 OK 7/7, mer 2,6-3,5 %, coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 5 (poignets, dos, hanches)",
+      "entrees": [
+        {
+          "num": 14,
+          "etiquette": "Extenseurs du poignet (avant-bras) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot5/GIF-01-extenseurs-fluide-v1.gif",
+          "mesures": "sol 226-234 (1 frame 219 = borne basse bande), mer 4-5 %, coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 15,
+          "etiquette": "Cobra (extenseurs du dos) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot5/GIF-02-cobra-fluide-v1.gif",
+          "mesures": "sol 235 OK 7/7, mer 3,4-4,3 %, coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 16,
+          "etiquette": "Pigeon assis (fessiers, hanches) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot5/GIF-03-pigeon-assis-fluide-v1.gif",
+          "mesures": "sol 235 OK 7/7, mer 12,5-16,5 %, coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 6 (quadriceps, chaîne latérale, ischio-jambiers)",
+      "entrees": [
+        {
+          "num": 17,
+          "etiquette": "Talon-fesse debout (quadriceps) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot6/GIF-01-talon-fesse-debout-fluide-v1.gif",
+          "mesures": "sol 235 OK 7/7, mer 7-8 %, coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 18,
+          "etiquette": "Allongé côté (chaîne latérale) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot6/GIF-02-allonge-cote-fluide-v1.gif",
+          "mesures": "sol 233-234 OK 7/7, mer 14-20 %, coins OK",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 19,
+          "etiquette": "Flexion avant debout (ischio-jambiers) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot6/GIF-03-flexion-avant-fluide-v1.gif",
+          "mesures": "sol 234-236 OK 7/7, mer 6,5-8,8 %, coins BAS = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 7 (ischios au sol, adducteurs, mur)",
+      "entrees": [
+        {
+          "num": 20,
+          "etiquette": "Jambe tendue sur marche (ischio-jambiers) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot7/GIF-01-jambe-tendue-pliee-fluide-v1.gif",
+          "mesures": "sol 226-235 OK 7/7, mer 4-5 %, coins BAS (marche ombrée) = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 21,
+          "etiquette": "Grenouille (adducteurs) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot7/GIF-02-grenouille-fluide-v1.gif",
+          "mesures": "sol 235-237 OK 7/7, mer 11-14 %, coin 218-222 = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        },
+        {
+          "num": 22,
+          "etiquette": "Contre le mur (épaules, dorsaux) — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot7/GIF-03-contre-le-mur-fluide-v1.gif",
+          "mesures": "sol 227-235 OK 7/7, mer 3-7 %, clés miroir + lift x1.07, coin 220-222 = réserve",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        }
+      ]
+    },
+    {
+      "titre": "Module 2 — Étirement · lot 8 (mollets)",
+      "entrees": [
+        {
+          "num": 23,
+          "etiquette": "Mollet sur marche d'escalier — GIF fluide v1",
+          "gif": "candidats/2026-10-16-etirement-lot8/GIF-01-mollet-escalier-fluide-v1.gif",
+          "mesures": "sol 228 OK 7/7, coin 224 OK, mer 3-4 %",
+          "etat": "intégré v1.8.5 — validation utilisateur 17/10/2026"
+        }
+      ]
+    },
+    {
+      "titre": "En production (prochains lots, non encore présentés)",
+      "entrees": [
+        {
+          "num": "—",
+          "etiquette": "MODULES 1+2 COMPLETS : 22 visuels étirement + 4 échauffement — validation via cette galerie",
+          "gif": "",
+          "recommandations": [
+            "Placeholder : chaque visuel restant aura sa propre entrée dès ses clés validées en interne (contrôle visuel + verifier-pose).",
+            "Cadence : 10 générations d'images maximum par tour de travail — la production se poursuit tour après tour."
+          ],
+          "etat": "en production"
+        }
+      ]
+    }
+  ]
+}

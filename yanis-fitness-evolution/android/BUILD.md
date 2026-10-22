@@ -3,12 +3,12 @@
 Application autonome, séparée de « JARVIS Fitness » (n’importe pas son
 empreinte de signature) :
 
-| Élément | Valeur |
-| --- | --- |
-| appId / namespace | `app.yanis.fitness.evolution` |
-| versionName / versionCode | `1.5.1` / `151` |
-| Clé de release | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`) |
-| Stockage navigateur | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
+| Élément                   | Valeur                                                                                                                            |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
+| versionName / versionCode | `1.8.8` / `190`                                                                                                                   |
+| Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
+| Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
 ## Prérequis (machine locale)
 
@@ -18,8 +18,8 @@ empreinte de signature) :
 ## Chaîne complète
 
 ```bash
-npm run build          # vite → release/
 npm run build:portable # runtime.js + runtime.css + media-index.json pour l’export « HTML autonome »
+npm run build          # vite → release/
 npx cap sync android   # copie release/ dans android/app/src/main/assets/public
 cd android && ./gradlew assembleRelease
 # APK : android/app/build/outputs/apk/release/app-release.apk
@@ -32,11 +32,14 @@ les changer :
 ./gradlew assembleRelease -PYFE_STORE_PASSWORD='…' -PYFE_KEY_PASSWORD='…'
 ```
 
-## Vérifications locales possibles
+## Vérifications de la reprise 1.8.8 + test7 (22/10/2026)
 
-- `npm test` — 96 tests unitaires (94 verts) (moteur, stockage, import DOC réel, minuteur/voix).
-- `npx playwright test` — parcours complets une fois les navigateurs installés
-  (`npx playwright install chromium`).
+- `npm test` — **187 tests : 185 réussis, 0 échec, 2 ignorés**. Tous les tests JARVIS Brain passent.
+- Contrôle ciblé échauffement/vidéos — **14/14 réussites**.
+- `npm run build` — **1678 modules**, build réussi et `release/` régénéré.
+- Playwright — **18 tests généraux réussis** et **2 tests ciblés réussis** (JARVIS Brain, vidéos du récapitulatif et du minuteur). **11 scénarios de restauration sont ignorés** car leur sauvegarde jointe n'est pas disponible.
+- Le workflow Android vérifie la signature, `versionName 1.8.8`, `versionCode 190`, le nombre de médias et de MP4 embarqués, ainsi que les six vidéos témoins de l'échauffement.
+- La validation sur téléphone reste distincte de ces contrôles automatisés.
 
 ## Cohabitation avec l’ancienne application
 
