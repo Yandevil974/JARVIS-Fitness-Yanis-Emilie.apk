@@ -56,6 +56,11 @@
   charge, bouts vers le haut, paumes vers le visage sur les 2 photos.
   Recopies chromées refaites à l'identique (comparatifs côte à côte OK),
   prompts vidéo adaptés à la nouvelle position de départ.
+- **22/10/2026 — #02 vraie inversée** (ordre Yanis « curl pupitre
+  inversé position haute ») : recopie chromée d'une photo de démo réelle
+  (criticalbody, barre EZ en haut : dos des mains vers l'avant, doigts
+  dessous, paumes vers le bas), vérifiée en comparatif. Sa photo à lui
+  montrait une prise standard — la vraie inversée est l'inverse.
 - **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
