@@ -123,7 +123,9 @@ export default function VoiceCoach() {
             onClick={() => {
               const cue = tempoReminderCue(exercise, row?.tempo);
               speak(
-                cue?.text ||
+                [exercise?.gesture?.audio, cue?.text]
+                  .filter(Boolean)
+                  .join(" ") ||
                   "Gardez la technique. Une ou deux répétitions en réserve.",
                 true,
               );

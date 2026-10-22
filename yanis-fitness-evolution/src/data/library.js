@@ -186,6 +186,44 @@ const extra = [
 ];
 for (const row of extra) rows.set(slug(row[0]), { row, sources: ["jarvis"] });
 const guides = { ...legacy.elite.MUSCU_GUIDES, ...legacy.emilie.MUSCU_GUIDES };
+// Gestes précis par exercice (source UNIQUE : fiche écran + description
+// audio). Règle Yanis 22/10 : l'audio doit expliquer COMMENT faire le
+// geste (position, prise, trajectoire, respiration), pas seulement
+// nom/séries/tempo. Clé = slug de l'exercice. Repli = PATTERN_INFO.
+export const GESTURE_GUIDES = {
+  "curl-scott-barre-ez-pronation": {
+    etapes: [
+      "Asseyez-vous au pupitre, buste droit, bras bien à plat sur le plan, coudes fixes.",
+      "Prenez la barre EZ en pronation : paumes vers le bas, dos des mains face au visage, poings bien fermés.",
+      "Descendez jusqu'aux bras presque tendus, sans verrouiller les coudes ni décoller les bras du plan.",
+      "Remontez la barre jusqu'au menton en contractant, coudes toujours fixes.",
+    ],
+    resp: "Expirez en remontant la barre, inspirez en descendant.",
+    erreurs: [
+      "Décoller les coudes ou les bras du plan.",
+      "Charger trop lourd : la pronation tire fort sur les avant-bras.",
+      "Tendre les bras brutalement en bas.",
+    ],
+    audio:
+      "Asseyez-vous au pupitre, bras bien à plat sur le plan. Prenez la barre en pronation : paumes vers le bas, dos des mains face au visage. Descendez bras presque tendus, puis remontez jusqu'au menton, coudes fixes. Expirez en montant, inspirez en descendant. Restez léger pour protéger vos avant-bras.",
+  },
+  "curl-haltere-supination-banc-scott-90": {
+    etapes: [
+      "Asseyez-vous au banc Scott, buste droit, bras posés sur le plan, un haltère dans chaque main, poings fermés.",
+      "Démarrez bras presque tendus, paumes face à face.",
+      "Remontez les haltères vers les épaules en tournant les paumes vers le visage : c'est la supination. Serrez fort en haut.",
+      "Redescendez lentement jusqu'aux bras presque tendus, en contrôlant.",
+    ],
+    resp: "Expirez en remontant, inspirez en descendant.",
+    erreurs: [
+      "Balancer le buste pour monter les haltères.",
+      "Oublier la rotation des poignets vers le visage.",
+      "Relâcher la descente.",
+    ],
+    audio:
+      "Asseyez-vous au banc Scott, bras posés sur le plan, un haltère dans chaque main. Démarrez bras presque tendus, paumes face à face. Remontez vers les épaules en tournant les paumes vers le visage, serrez fort en haut. Redescendez lentement. Expirez en montant, inspirez en descendant.",
+  },
+};
 // Vérifié à l'audit : « french press barre EZ » → ea226c444f72de0f.gif et
 // « french press poulie basse » → 4c2b19fa924f90a8.gif sont déjà corrects et
 // distincts dans les données sources. Aucune réassociation n'est nécessaire.
@@ -275,6 +313,7 @@ export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
     rest: Number(rest) || 60,
     note: textOnly(note),
     tip: textOnly(guide?.tip),
+    gesture: GESTURE_GUIDES[id] || null,
     gif: guide?.img || null,
     level: /test|inertie|snatch|drop|myo|1,5/.test(n)
       ? "Avancé"

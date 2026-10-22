@@ -499,6 +499,7 @@ function Workout() {
               <p>
                 {target.sourceNote ||
                   ex.tip ||
+                  ex.gesture?.etapes?.[0] ||
                   PATTERN_INFO[ex.pattern]?.etapes?.[0] ||
                   "Gardez une exécution contrôlée, dans une amplitude sans douleur."}
               </p>

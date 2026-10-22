@@ -439,14 +439,17 @@ export function warmup(p, session) {
       img: WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Ponts fessiers au sol, 10 répétitions contrôlées."
-        : "Rétractions des omoplates et rotations externes sans fatigue.",
+        : "Avec l’élastique : bras tendus devant vous, écartez en serrant les omoplates. Mouvement lent, sans fatigue.",
     },
     ...[0.5, 0.7, 0.85].map((pct, i) => ({
       name: `Approche ${i + 1}${w > 0 ? " · " + roundLoad(w * pct, p.user.increment || 2.5, "down") + " kg" : " · charge légère à choisir"}`,
       seconds: 60,
       pattern: ex?.pattern || "squat",
+      // L'approche rejoue le 1er exercice de la séance : sa démo (vidéo 3D
+      // validée sinon GIF exact) remplace l'image générique dupliquée.
+      exerciseId: ex?.id || null,
       img: WARMUP_IMAGES.approche,
-      instruction: `${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
+      instruction: `${ex ? ex.name + " — " : ""}${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
     })),
   ];
 }

@@ -76,6 +76,7 @@ export function exerciseIntroCue(exercise, row, { first = false } = {}) {
         ? `Charge suggérée : ${weight} kilos${exercise.unit === "kg/main" ? " par haltère" : ""}.`
         : null,
       tempo,
+      exercise.gesture?.audio || null,
     ].filter(Boolean);
   return {
     key: `exercise-${row?.exerciseId || exercise.id}-${first ? "first" : "next"}`,

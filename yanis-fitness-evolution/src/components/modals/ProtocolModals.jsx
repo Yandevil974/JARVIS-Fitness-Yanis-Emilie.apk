@@ -9,7 +9,7 @@ import {
   SectionHeading,
   ProgressBar,
 } from "../ui.jsx";
-import Movement from "../Movement.jsx";
+import Movement, { demonstration } from "../Movement.jsx";
 import HumanAnim from "../HumanAnim.jsx";
 import {
   POOL_PROTOCOLS,
@@ -22,6 +22,11 @@ import { warmup, recoveryScore } from "../../engine/fitness.js";
 import { advanceTimer, pauseTimer, skipTimer } from "../../engine/timer.js";
 import { useNow } from "../RestTimer.jsx";
 import { durationLabel, today, norm, assetSrc } from "../../engine/utils.js";
+import {
+  stepVideoFor,
+  WARMUP_OVERVIEW,
+} from "../../data/step-videos.js";
+import { videoFor } from "../../data/exercise-videos.js";
 export function TimerModal() {
   const { p, updateProfile, closeModal, setModal, notify } = useApp();
   const now = useNow();
@@ -37,6 +42,14 @@ export function TimerModal() {
         total) *
       100;
   const guide = stepGuide(step.name, step.segment, POOL_GUIDES);
+  // Vidéo 3D validée de l’étape en cours (chronomètre guidé), sinon image actuelle.
+  const stepVideo = t.done ? null : stepVideoFor(step.name);
+  // Étape adossée à un exercice (approches d'échauffement) : sa démo
+  // (vidéo 3D validée sinon GIF) au lieu de l'image générique dupliquée.
+  const stepExercise =
+    !t.done && !stepVideo && step.exerciseId
+      ? exerciseById(step.exerciseId)
+      : null;
   function complete() {
     if (t.meta.type === "rest") {
       updateProfile((q) => {
@@ -100,7 +113,37 @@ export function TimerModal() {
           {durationLabel(t.done ? 0 : t.remaining)}
         </div>
         {!t.done &&
-          (step.img ? (
+          (stepVideo ? (
+            <button
+              type="button"
+              className="timer-step-visual has-video"
+              title="Agrandir la vidéo"
+              onClick={() =>
+                setModal({
+                  type: "image",
+                  src: stepVideo.src,
+                  poster: stepVideo.poster,
+                  title: stepVideo.label,
+                })
+              }
+            >
+              <video
+                src={assetSrc(stepVideo.src)}
+                poster={
+                  stepVideo.poster ? assetSrc(stepVideo.poster) : undefined
+                }
+                title={stepVideo.label}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <Icon name="Maximize2" size={15} />
+            </button>
+          ) : stepExercise ? (
+            <Movement exercise={stepExercise} small controls={false} />
+          ) : step.img ? (
             <button
               type="button"
               className="timer-step-visual"
@@ -337,10 +380,94 @@ export function WarmupModal({ session }) {
       wide
     >
       <div className="warmup-detail">
-        {steps.map((st, i) => (
+        {steps.map((st, i) => {
+          // Vidéo 3D validée si l’étape en a une, sinon démo de l’exercice
+          // adossé (approches), sinon image actuelle.
+          const v = stepVideoFor(st.name);
+          const stepEx = !v && st.exerciseId ? exerciseById(st.exerciseId) : null;
+          const stepExVideo = stepEx ? videoFor(stepEx) : null;
+          const stepExDemo =
+            !stepExVideo && stepEx ? demonstration(stepEx) : null;
+          return (
           <div key={i}>
             <span className="warmup-step-number">0{i + 1}</span>
-            {st.img && (
+            {v ? (
+              <button
+                type="button"
+                className="warmup-step-thumb has-video"
+                title="Agrandir la vidéo"
+                onClick={() =>
+                  setModal({
+                    type: "image",
+                    src: v.src,
+                    poster: v.poster,
+                    title: v.label,
+                  })
+                }
+              >
+                <video
+                  className="warmup-step-video"
+                  src={assetSrc(v.src)}
+                  poster={v.poster ? assetSrc(v.poster) : undefined}
+                  title={v.label}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
+            ) : stepExVideo ? (
+              <button
+                type="button"
+                className="warmup-step-thumb has-video"
+                title="Agrandir la vidéo"
+                onClick={() =>
+                  setModal({
+                    type: "image",
+                    src: stepExVideo.src,
+                    poster: stepExVideo.poster,
+                    title: stepExVideo.label,
+                  })
+                }
+              >
+                <video
+                  className="warmup-step-video"
+                  src={assetSrc(stepExVideo.src)}
+                  poster={
+                    stepExVideo.poster ? assetSrc(stepExVideo.poster) : undefined
+                  }
+                  title={stepExVideo.label}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
+            ) : stepExDemo ? (
+              <button
+                type="button"
+                className="warmup-step-thumb"
+                title="Agrandir"
+                onClick={() =>
+                  setModal({
+                    type: "image",
+                    src: stepExDemo.path,
+                    title: stepExDemo.name,
+                  })
+                }
+              >
+                <img
+                  className="warmup-step-img"
+                  loading="lazy"
+                  src={assetSrc(stepExDemo.path)}
+                  alt={stepExDemo.name}
+                />
+                <Icon name="Maximize2" size={13} />
+              </button>
+            ) : (
+              st.img && (
               <button
                 type="button"
                 className="warmup-step-thumb"
@@ -357,6 +484,7 @@ export function WarmupModal({ session }) {
                 />
                 <Icon name="Maximize2" size={13} />
               </button>
+              )
             )}
             <div>
               <h3>{st.name}</h3>
@@ -364,10 +492,37 @@ export function WarmupModal({ session }) {
             </div>
             <Badge>{durationLabel(st.seconds)}</Badge>
           </div>
-        ))}
+          );
+        })}
       </div>
       <div className="warmup-visual">
-        <Movement pattern={steps[1].pattern} small />
+        <button
+          type="button"
+          className="warmup-overview"
+          title="Voir tout l’échauffement en vidéo"
+          onClick={() =>
+            setModal({
+              type: "image",
+              src: WARMUP_OVERVIEW.src,
+              poster: WARMUP_OVERVIEW.poster,
+              title: WARMUP_OVERVIEW.label,
+            })
+          }
+        >
+          <video
+            src={assetSrc(WARMUP_OVERVIEW.src)}
+            poster={assetSrc(WARMUP_OVERVIEW.poster)}
+            title={WARMUP_OVERVIEW.label}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
+          <span>
+            <Icon name="Play" size={12} /> Tout l’échauffement ·{" "}
+            {WARMUP_OVERVIEW.duration}
+          </span>
+        </button>
         <div>
           <h3>Préparez, sans vous épuiser.</h3>
           <p>
@@ -392,6 +547,7 @@ export function WarmupModal({ session }) {
                 instruction: x.instruction,
                 img: x.img,
                 pattern: x.pattern,
+                exerciseId: x.exerciseId || null,
               })),
               {
                 type: "warmup",
@@ -527,14 +683,28 @@ export function CooldownModal({ session }) {
     </Modal>
   );
 }
-// Visionneuse : agrandit une image d’étape, ou agrandit l’animation créée.
-export function ImageViewer({ src, title, motion }) {
+// Visionneuse : agrandit une vidéo 3D, une image d’étape,
+// ou agrandit l’animation créée.
+export function ImageViewer({ src, title, motion, poster }) {
   const { closeModal } = useApp();
   if (!src && !motion) return null;
+  const isVideo = typeof src === "string" && /\.(mp4|webm)(\?|#|$)/i.test(src);
   return (
     <Modal title={title || "Mouvement"} onClose={closeModal} wide>
       <div className="image-viewer">
-        {src ? (
+        {isVideo ? (
+          <video
+            src={assetSrc(src)}
+            poster={poster ? assetSrc(poster) : undefined}
+            controls
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            className="movement-video zoomed"
+          />
+        ) : src ? (
           <img src={assetSrc(src)} alt={title || "Mouvement"} />
         ) : (
           <HumanAnim spec={motion} className="zoomed" />
