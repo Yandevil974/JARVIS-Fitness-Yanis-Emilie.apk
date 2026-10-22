@@ -50,6 +50,12 @@
   filigranes brefs, prises vérifiées en zoom). #02/#09 parquées : prise
   pronation impossible à générer (9 rejets) → Yanis fournit une photo de
   référence du web.
+- **22/10/2026 — #02/#09 débloquées par les photos Yanis** : 2 captures
+  web reçues (barre + haltères au pupitre, en haut), archivées dans
+  docs/videos-3d (ref-yanis-*.jpg). Constat zoom : doigts par-dessus la
+  charge, bouts vers le haut, paumes vers le visage sur les 2 photos.
+  Recopies chromées refaites à l'identique (comparatifs côte à côte OK),
+  prompts vidéo adaptés à la nouvelle position de départ.
 - **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
