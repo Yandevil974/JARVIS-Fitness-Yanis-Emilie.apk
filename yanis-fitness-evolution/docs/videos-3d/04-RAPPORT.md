@@ -36,7 +36,11 @@
 - **21/10/2026 — Vague 0 CLOSE (2/2)** : squat validé+intégré
   (PixVerse 4 s, barre sur les trapèzes, filigrane bref comme E1).
   Prochaine étape : vague 1 = biceps complet (20), par lots de 4.
-- **Manquent encore** : triceps chromé, puis vague 1 (biceps),
+- **22/10/2026 — Vague 1 lot 1 intégré (biceps 5/20 avec #01)** : #02 Scott
+  EZ pronation + #03 marteau assis (alterné) + #04 incliné (PixVerse 4 s,
+  filigranes brefs) + #08 barre debout (FLUX 10 s, sans filigrane —
+  montre une barre EZ, exactitude à confirmer).
+- **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
 

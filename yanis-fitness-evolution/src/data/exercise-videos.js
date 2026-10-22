@@ -50,6 +50,44 @@ export const EXERCISE_VIDEOS = {
     label: "Vidéo 3D · Back squat",
     status: "validated",
   },
+  // ---- VAGUE 1 LOT 1 (biceps, validé le 22/10/2026) ----
+  "curl-barre-debout": {
+    // B1 (catalogue bic #08). VALIDÉE : montée/descente complète (10 s,
+    // FLUX, sans filigrane), prise supination, coudes au corps.
+    // NOTE : la vidéo montre une barre EZ alors que le catalogue dit
+    // juste « barre » — à régénérer avec une barre droite si Yanis veut
+    // l'exactitude stricte.
+    src: "/videos/curl-barre-debout.mp4",
+    poster: "/videos/posters/curl-barre-debout.jpg",
+    label: "Vidéo 3D · Curl barre debout",
+    status: "validated",
+  },
+  "curl-scott-barre-ez-pronation": {
+    // B2 (catalogue bic #02). VALIDÉE : curl au pupitre bas→haut (4 s,
+    // PixVerse), bras sur le plan, biceps rouges. Réserves : filigrane
+    // bref + angle de caméra qui dérive (côté→face).
+    src: "/videos/curl-scott-barre-ez-pronation.mp4",
+    poster: "/videos/posters/curl-scott-barre-ez-pronation.jpg",
+    label: "Vidéo 3D · Curl Scott EZ pronation",
+    status: "validated",
+  },
+  "curl-marteau-assis": {
+    // B3 (catalogue bic #03). VALIDÉE : marteau assis ALTERNE (4 s,
+    // PixVerse), prise neutre, coudes fixes. Réserve : filigrane bref.
+    src: "/videos/curl-marteau-assis.mp4",
+    poster: "/videos/posters/curl-marteau-assis.jpg",
+    label: "Vidéo 3D · Curl marteau assis",
+    status: "validated",
+  },
+  "curl-halteres-incline": {
+    // B4 (catalogue bic #04). VALIDÉE : montée/descente complète sur
+    // banc incliné (4 s, PixVerse), dos sur le dossier. Réserve :
+    // filigrane bref.
+    src: "/videos/curl-halteres-incline.mp4",
+    poster: "/videos/posters/curl-halteres-incline.jpg",
+    label: "Vidéo 3D · Curl haltères incliné",
+    status: "validated",
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;
