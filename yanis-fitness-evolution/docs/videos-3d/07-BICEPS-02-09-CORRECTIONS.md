@@ -29,12 +29,16 @@ de production tant que Yanis n'a pas validé le geste corrigé.
 
 ## 2. Biceps #02 — Curl Scott barre EZ, pronation
 
-### Images à ouvrir / télécharger
+### Images à ouvrir / télécharger — nouveau candidat à valider
 
-- [Visuel #02 — position de départ basse](./vague1-biceps-02-scott-ez-pronation.jpg)
-- [Zoom #02 — contrôle de la prise](./vague1-biceps-02-zoom-prise.jpg)
+**Le candidat précédent est rejeté par Yanis : la main était encore orientée
+vers le haut. Ne pas utiliser les anciens fichiers `vague1-biceps-02-*` pour
+produire la vidéo.**
 
-SHA-256 du candidat #02 : `963a3316ea1bef5093fcb1151d3bbf0fd36c0f607ff94d56747735f3a4d0f010`.
+- [Visuel #02 — barre EZ basse, nouvelle prise à contrôler](./biceps-02-ez-mains-au-sol-v3.jpg)
+- [Zoom #02 — contrôle de la nouvelle prise](./biceps-02-ez-mains-au-sol-v3-zoom.jpg)
+
+SHA-256 du nouveau candidat #02 : `2b14d51ccb71e662ff00bcceebbc00a388a4a1fe5e7c1d1e8d2a4da421024ef0`.
 
 ### Description précise du geste
 
