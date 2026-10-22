@@ -119,9 +119,11 @@ export const EXERCISE_VIDEOS = {
     status: "validated",
   },
   "curl-haltere-supination-banc-scott-90": {
-    // B9 (catalogue bic #09). EN ATTENTE : nouveau visuel de départ bas
-    // avec DEUX haltères en supination + prompt dédié (fichier 07). Aucune
-    // vidéo n'est activée avant réception et validation du geste par Yanis.
+    // B9 (catalogue bic #09). EN ATTENTE : visuel de départ bas corrigé avec
+    // DEUX haltères, paumes vers le sol (retour Yanis du 22/10). L'ancien
+    // prompt en supination fixe dès le départ est retiré ; la trajectoire de
+    // rotation reste à confirmer dans le fichier 07. Aucune vidéo n'est
+    // activée avant validation du visuel et du geste par Yanis.
     src: "/videos/curl-haltere-supination-banc-scott-90.mp4",
     poster: "/videos/posters/curl-haltere-supination-banc-scott-90.jpg",
     label: "Vidéo 3D · Curl haltères supination au banc Scott 90°",
