@@ -82,6 +82,17 @@
   inversée correcte vérifiée en zoom. #09 restaurée à l'original.
   MP4 = curl poulie barre supination (rép complète, prise tenue) =
   doublon #07 → affectation demandée à Yanis.
+- **22/10/2026 — #02 v2 VALIDÉE + #09 reçue + audio geste** : 2 MP4
+  Yanis reçus. #02 (1792688200714) : inversé EZ bas→haut→bas, overhand
+  vérifiée par comparatif avec la ref (doigts par-dessus), barre au
+  menton → `validated` (GIF de repli conservé). #09 (1792688446226) :
+  haltères haut→bas→mi-haut, supination en haut MAIS la photo validée
+  impose une pronation → `pending`, Yanis arbitre. NOUVEAU (demande
+  Yanis) : la description audio explique COMMENT faire le geste —
+  `GESTURE_GUIDES` (#02 + #09 : position, prise, trajectoire, respi),
+  lu par le guidage vocal (intro + « Consigne technique ») et affiché
+  sur la fiche exercice. Fichiers : `library.js`, `voice-coach.js`,
+  `VoiceCoach.jsx`, `ExerciseModal.jsx`, `Training.jsx`.
 - **Manquent encore** : triceps chromé, puis vague 1 (biceps 15 restants),
   piscine, elliptique, étirements. Dépose les MP4 sur n’importe quelle
   branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.

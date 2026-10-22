@@ -63,14 +63,16 @@ export const EXERCISE_VIDEOS = {
     status: "validated",
   },
   "curl-scott-barre-ez-pronation": {
-    // B2 (catalogue bic #02). V1 REJETÉE le 22/10 (retour Yanis) : la vidéo
-    // montrait une SUPINATION au lieu de la pronation → disabled = repli
-    // GIF en attendant la v2 (photo refaite paumes vers le bas, prompt B2
-    // renforcé, voir 06-DESCRIPTIONS-PRECISES.md).
+    // B2 (catalogue bic #02). V2 VALIDÉE le 22/10 (vidéo Yanis
+    // 1792688200714.mp4) : curl inversé bas→haut→bas (4 s, PixVerse),
+    // prise OVERHAND vérifiée par comparatif (doigts par-dessus, comme
+    // la ref overhand), barre EZ jusqu'au menton, coudes fixes sur le
+    // plan. V1 rejetée (supination au lieu de pronation). Réserve :
+    // filigrane bref.
     src: "/videos/curl-scott-barre-ez-pronation.mp4",
     poster: "/videos/posters/curl-scott-barre-ez-pronation.jpg",
     label: "Vidéo 3D · Curl Scott EZ pronation",
-    status: "disabled",
+    status: "validated",
   },
   "curl-marteau-assis": {
     // B3 (catalogue bic #03). VALIDÉE : marteau assis ALTERNE (4 s,
@@ -116,6 +118,19 @@ export const EXERCISE_VIDEOS = {
     poster: "/videos/posters/curl-poulie-basse-supination.jpg",
     label: "Vidéo 3D · Curl poulie basse supination",
     status: "validated",
+  },
+  // ---- VAGUE 1 (biceps #09, vidéo reçue le 22/10, décision Yanis) ----
+  "curl-haltere-supination-banc-scott-90": {
+    // B9 (catalogue bic #09). Vidéo Yanis reçue (1792688446226.mp4) :
+    // haltères au Scott haut→bas→mi-haut (4 s, PixVerse), supination en
+    // haut (paumes vers le visage, vérifiée en zoom). EN ATTENTE : la
+    // photo validée montre une PRONATION en haut (choix assumé) →
+    // Yanis arbitre (garder la vidéo supination standard ou régénérer).
+    // En attendant : pending = repli GIF.
+    src: "/videos/curl-haltere-supination-banc-scott-90.mp4",
+    poster: "/videos/posters/curl-haltere-supination-banc-scott-90.jpg",
+    label: "Vidéo 3D · Supination au Scott",
+    status: "pending",
   },
 };
 

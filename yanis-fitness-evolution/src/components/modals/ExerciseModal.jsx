@@ -16,7 +16,8 @@ import { applyCoachAction } from "../../engine/coach.js";
 export default function ExerciseModal({ id }) {
   const { p, closeModal, updateProfile, notify, setModal } = useApp();
   const ex = exerciseById(id),
-    info = PATTERN_INFO[ex.pattern] || PATTERN_INFO.static;
+    info =
+      ex.gesture || PATTERN_INFO[ex.pattern] || PATTERN_INFO.static;
   const variants = EXERCISES.filter(
     (e) => e.id !== id && e.muscle === ex.muscle && e.pattern === ex.pattern,
   ).slice(0, 5);
