@@ -8,7 +8,8 @@ Les essais postérieurs à test7 ne sont **pas** repris.
 > les mains de la position de départ doivent être orientées **paumes vers le
 > sol**. Les anciennes images avec les paumes vers le haut sont rejetées. Les
 > fichiers ci-dessous sont les nouveaux candidats corrigés, encore soumis à la
-> validation de Yanis ; aucune vidéo n'est activée.
+> validation de Yanis ; aucune vidéo n'est activée. Pour #09, la position
+> haute d'origine est conservée : seule l'orientation des mains change.
 
 ## 1. Personnage verrouillé par Yanis
 
@@ -61,39 +62,47 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ---
 
-## 3. Biceps #09 — Curl deux haltères au banc Scott 90°, supination
+## 3. Biceps #09 — Curl deux haltères au banc Scott 90°
 
-### Images à ouvrir / télécharger
+### Photo de référence à utiliser pour la vidéo
 
-- [Visuel #09 — position de départ basse, paumes vers le sol](./vague1-biceps-09-supination-scott-90.jpg)
+- [Visuel #09 — position haute d’origine, paumes vers le sol](./vague1-biceps-09-supination-scott-90.jpg)
 - [Zoom #09 — contrôle de la prise corrigée](./vague1-biceps-09-zoom-prise.jpg)
 
-SHA-256 du candidat #09 : `c1b873782784afc391baeb70066e804079cd5a807f08f594cb35604dfafec7f1`.
+SHA-256 du candidat #09 : `ecf519bfedd4a5bd323242dfb126dd0c3f9081bc6c93a16d5beb6db2c1e04775`.
 
-### Position de départ corrigée
+**La position du corps et des haltères de la photo d’origine est conservée.**
+Il ne faut pas transformer cette référence en position basse.
 
-Assis bien droit sur le siège à 90°, buste contre le support, haut des bras à
-plat sur le pupitre. Tenir **deux haltères séparés**, bas, avec les coudes
-presque tendus mais non verrouillés. Au départ de la photo, les deux mains sont
-en **pronation** : **paumes vers le sol, dos des mains visible vers le haut,
-doigts passant par-dessus les poignées puis refermés dessous**, poignets droits.
+### Description précise de l’exécution
 
-**Non conforme au départ :** paumes vers le haut ou vers le corps, poignées
-soutenues par le dessous, prise neutre/marteau, haltères déjà levés, un seul
-haltère, haltères fusionnés, barre EZ, bras décollés du pupitre ou élan.
+La photo est la **position haute de référence** : assis bien droit sur le siège
+à 90°, buste contre le support, haut des bras à plat sur le pupitre, coudes
+fléchis et **deux haltères séparés à hauteur des épaules**, exactement comme sur
+la photo. Les deux mains sont en **pronation fixe** : **paumes vers le sol, dos
+des mains vers le haut, doigts par-dessus les poignées puis refermés dessous**,
+poignets droits. Les haltères restent horizontaux.
 
-### Verrou avant prompt vidéo
+1. **Départ sur la photo, puis descente (2,5 s)** : sans modifier la posture,
+   étendre lentement et uniquement les coudes pour descendre les deux haltères
+   ensemble jusqu’à ce que les coudes soient presque tendus, sans les verrouiller.
+   Les paumes restent vers le sol, sans aucune rotation des poignets.
+2. **Remontée (2,5 s)** : fléchir uniquement les coudes et remonter les deux
+   haltères ensemble jusqu’à retrouver exactement la position haute de la
+   photo. La pronation reste identique du début à la fin.
+3. **Immobiles** : haut des bras contre le coussin, épaules, buste, hanches,
+   tête, siège et caméra. Les haltères restent séparés, horizontaux, rigides et
+   symétriques. Aucune supination, aucune prise marteau, aucun Zottman.
 
-La correction demandée par Yanis verrouille **la position de départ de l'image**.
-L'ancien prompt qui imposait une supination fixe dès le départ est retiré.
-Avant toute génération MP4, Yanis doit encore confirmer la trajectoire de #09 :
+**Non conforme :** changer la position de référence, paumes vers le haut ou vers
+le corps, rotation des poignets, haltères verticaux, haltères fusionnés, un seul
+haltère, barre EZ, bras décollés du pupitre ou élan du buste.
 
-- soit les paumes restent vers le sol pendant toute la répétition ;
-- soit elles commencent vers le sol puis effectuent une supination pendant la
-  montée, avec la rotation inverse au retour.
+### Prompt Arena Video / PixVerse — à copier avec la photo #09
 
-Tant que ce choix et le nouveau visuel ne sont pas validés, #09 reste `pending`
-et aucune consigne de mouvement n'est présentée comme définitive.
+```text
+Animate the EXACT same massive silver-chrome athletic man from the supplied image, keeping his matte black baseball cap, black shorts, white sneakers, grey gym and stable orange biceps glow unchanged. PRESERVE THE EXACT ORIGINAL HIGH REFERENCE POSITION: seated upright on the 90-degree preacher bench, upper arms flat on the pad, elbows flexed and TWO separate horizontal black hex dumbbells at shoulder level exactly as in the photo. BOTH hands use a fixed OVERHAND PRONATED GRIP: palms face DOWN toward the floor, backs of hands face up, fingers wrap over and down around the handles, wrists straight. START on this exact photo position. PHASE 1 (2.5 seconds): extend ONLY the elbows and lower BOTH dumbbells together slowly until the elbows are nearly extended but not locked; keep the palms facing down and the dumbbells horizontal, with absolutely no wrist rotation. PHASE 2 (2.5 seconds): bend ONLY the elbows and raise BOTH dumbbells together along the same arc back to the exact original shoulder-level photo position; maintain the same fixed pronated grip throughout. LOCKED: upper arms glued to the pad, shoulders, torso, hips, head, seat and camera still; dumbbells separate, horizontal, rigid and symmetrical; no supination and no Zottman rotation. Static front camera, natural continuous movement, end frame identical to the supplied reference photo. AVOID: changing the original reference pose, palms facing up or toward the body, wrist rotation, vertical dumbbells, hammer grip, one dumbbell, merged dumbbells, barbell, EZ bar, arms lifting off the pad, moving shoulders, swinging torso, morphing equipment, extra fingers or limbs, flickering glow, text, logo, watermark.
+```
 
 ---
 
@@ -101,8 +110,8 @@ et aucune consigne de mouvement n'est présentée comme définitive.
 
 - [ ] Même athlète que l'image maître dans toutes les images et les vidéos.
 - [ ] #02 : deux mains en pronation sur une barre EZ, vérifiées en zoom.
-- [ ] #09 : deux haltères, paumes vers le sol au départ, vérifiées en zoom ;
-      trajectoire de rotation confirmée avant le prompt MP4.
+- [ ] #09 : position haute d’origine conservée ; deux haltères horizontaux,
+      paumes vers le sol et aucune rotation des poignets, vérifiés en zoom.
 - [ ] Haut des bras en contact avec le pupitre pendant toute la répétition.
 - [ ] Une montée et une descente contrôlées, sans élan ni coude verrouillé.
 - [ ] Matériel, mains, membres et glow stables ; caméra fixe.

@@ -119,10 +119,10 @@ export const EXERCISE_VIDEOS = {
     status: "validated",
   },
   "curl-haltere-supination-banc-scott-90": {
-    // B9 (catalogue bic #09). EN ATTENTE : visuel de départ bas corrigé avec
-    // DEUX haltères, paumes vers le sol (retour Yanis du 22/10). L'ancien
-    // prompt en supination fixe dès le départ est retiré ; la trajectoire de
-    // rotation reste à confirmer dans le fichier 07. Aucune vidéo n'est
+    // B9 (catalogue bic #09). EN ATTENTE : la position haute d'origine est
+    // conservée, avec DEUX haltères horizontaux et les paumes vers le sol en
+    // pronation fixe (retour Yanis du 22/10). Le descriptif et le prompt sans
+    // rotation des poignets sont dans le fichier 07. Aucune vidéo n'est
     // activée avant validation du visuel et du geste par Yanis.
     src: "/videos/curl-haltere-supination-banc-scott-90.mp4",
     poster: "/videos/posters/curl-haltere-supination-banc-scott-90.jpg",
