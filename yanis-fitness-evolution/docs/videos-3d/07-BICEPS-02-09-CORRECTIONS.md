@@ -34,18 +34,18 @@ de production tant que Yanis n'a pas validé le geste corrigé.
 
 ## 2. Biceps #02 — Curl Scott barre EZ, pronation
 
-### Images à ouvrir / télécharger — candidat issu de la capture de Yanis
+### Images à ouvrir / télécharger — correction main gauche issue de la capture
 
 **Les candidats v3 et v4 sont rejetés par Yanis : les mains étaient encore
-orientées vers le haut. Ne pas les utiliser pour produire la vidéo.** Le candidat
-ci-dessous est une modification de la capture de référence fournie par Yanis :
-la position des mains et des avant-bras est conservée, seuls les haltères sont
-remplacés par une barre EZ.
+orientées vers le haut. Ne pas les utiliser pour produire la vidéo.** Sur v5,
+la main droite a été approuvée mais pas la gauche. Le candidat ci-dessous
+conserve exactement cette main droite et reprend directement la main gauche de
+la capture de référence fournie par Yanis, sans régénérer le reste de l'image.
 
-- [Visuel #02 — barre EZ, prise issue de la capture de Yanis](./biceps-02-ez-reference-utilisateur-v5.jpg)
-- [Zoom #02 — contrôle de la prise](./biceps-02-ez-reference-utilisateur-v5-zoom.jpg)
+- [Visuel #02 — barre EZ, main droite conservée et main gauche corrigée](./biceps-02-ez-reference-utilisateur-v9.jpg)
+- [Zoom #02 — contrôle des deux mains](./biceps-02-ez-reference-utilisateur-v9-zoom.jpg)
 
-SHA-256 du candidat #02 : `f7cb3bc94c258a3ee55bed242b0d7dc4911025ce250a005411f7333c86137ba0`.
+SHA-256 du candidat #02 : `037747e7fbb8c8a2da612895a9177f0851f11f158aca3a5e89c130ce237ddaf4`.
 
 ### Description précise du geste
 

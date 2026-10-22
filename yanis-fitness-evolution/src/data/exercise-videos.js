@@ -66,9 +66,10 @@ export const EXERCISE_VIDEOS = {
     // B2 (catalogue bic #02). V1 REJETÉE le 22/10 (retour Yanis) : la vidéo
     // montrait une SUPINATION au lieu de la pronation → disabled = repli
     // GIF en attendant la v2. Les visuels v3/v4 sont rejetés par Yanis : mains
-    // encore vers le haut. Nouveau candidat `biceps-02-ez-reference-utilisateur-v5.jpg`
-    // créé depuis la capture de prise fournie par Yanis, avec zoom dans le
-    // fichier 07. La vidéo reste désactivée jusqu'à son approbation explicite.
+    // encore vers le haut. Sur v5, main droite approuvée mais pas la gauche.
+    // Le candidat v9 conserve la droite et reprend la gauche de la capture de
+    // Yanis (voir zoom dans le fichier 07). Vidéo désactivée jusqu'à validation
+    // explicite des deux mains.
     src: "/videos/curl-scott-barre-ez-pronation.mp4",
     poster: "/videos/posters/curl-scott-barre-ez-pronation.jpg",
     label: "Vidéo 3D · Curl Scott EZ pronation",
