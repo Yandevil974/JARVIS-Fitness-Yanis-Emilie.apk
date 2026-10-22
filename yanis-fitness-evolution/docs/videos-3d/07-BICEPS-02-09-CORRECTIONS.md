@@ -21,6 +21,11 @@ visuels : homme massif chrome argenté, casquette noire mate, short noir,
 chaussures blanches, salle grise claire, muscles actifs orange. Ne pas changer
 de visage, de morphologie, de matière, de casquette ou de décor entre les exercices.
 
+**Référence de prise fournie par Yanis :**
+[reference-prise-mains-yanis.jpg](./reference-prise-mains-yanis.jpg). Elle verrouille
+uniquement l'orientation des mains pour corriger #02 ; elle ne change pas la
+position du corps validée ou demandée pour #09.
+
 **Verrou de production :** aucune vidéo n'est marquée `validated` sans contrôle
 du geste ET de la prise en zoom. Les visuels ci-dessous restent des propositions
 de production tant que Yanis n'a pas validé le geste corrigé.
@@ -29,16 +34,18 @@ de production tant que Yanis n'a pas validé le geste corrigé.
 
 ## 2. Biceps #02 — Curl Scott barre EZ, pronation
 
-### Images à ouvrir / télécharger — nouveau candidat à valider
+### Images à ouvrir / télécharger — candidat issu de la capture de Yanis
 
-**Le candidat précédent est rejeté par Yanis : la main était encore orientée
-vers le haut. Ne pas utiliser les anciens fichiers `vague1-biceps-02-*` pour
-produire la vidéo.**
+**Les candidats v3 et v4 sont rejetés par Yanis : les mains étaient encore
+orientées vers le haut. Ne pas les utiliser pour produire la vidéo.** Le candidat
+ci-dessous est une modification de la capture de référence fournie par Yanis :
+la position des mains et des avant-bras est conservée, seuls les haltères sont
+remplacés par une barre EZ.
 
-- [Visuel #02 — barre EZ basse, nouvelle prise à contrôler](./biceps-02-ez-mains-au-sol-v3.jpg)
-- [Zoom #02 — contrôle de la nouvelle prise](./biceps-02-ez-mains-au-sol-v3-zoom.jpg)
+- [Visuel #02 — barre EZ, prise issue de la capture de Yanis](./biceps-02-ez-reference-utilisateur-v5.jpg)
+- [Zoom #02 — contrôle de la prise](./biceps-02-ez-reference-utilisateur-v5-zoom.jpg)
 
-SHA-256 du nouveau candidat #02 : `2b14d51ccb71e662ff00bcceebbc00a388a4a1fe5e7c1d1e8d2a4da421024ef0`.
+SHA-256 du candidat #02 : `f7cb3bc94c258a3ee55bed242b0d7dc4911025ce250a005411f7333c86137ba0`.
 
 ### Description précise du geste
 
