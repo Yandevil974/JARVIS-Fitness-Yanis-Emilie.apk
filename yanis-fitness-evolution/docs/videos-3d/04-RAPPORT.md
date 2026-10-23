@@ -67,9 +67,13 @@
   filigranes brefs, prises vérifiées en zoom). #02/#09 parquées : prise
   pronation impossible à générer (9 rejets) → Yanis fournit une photo de
   référence du web.
-- **Manquent encore** : priorité #02/#09, puis biceps #10→#20, triceps
-  chromé, piscine, elliptique et étirements. Dépose les MP4 sur n’importe quelle
-  branche, dis « c’est fait », je contrôle (grille B), j’intègre et je teste.
+- **23/10/2026 — #02/#09 puis #11/#13 intégrés en `coached`** : MP4 jouables
+  avec consignes audio prioritaires ; les défauts IA documentés ne sont pas
+  marqués `validated`. Pour #11/#13, Yanis a explicitement accepté
+  l'intégration malgré les écarts relevés ; #10/#12 restent en attente.
+- **Manquent encore** : biceps #10/#12 puis #14→#20, triceps chromé, piscine,
+  elliptique et étirements. Dépose les MP4 sur la branche, dis « c’est fait »,
+  je contrôle (grille B), j’intègre et je teste.
 
 ## Fichiers modifiés / créés
 

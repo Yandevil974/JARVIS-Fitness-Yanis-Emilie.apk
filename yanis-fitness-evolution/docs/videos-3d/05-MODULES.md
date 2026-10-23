@@ -52,8 +52,9 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    zooms et prompts dans `07-BICEPS-02-09-CORRECTIONS.md`.
    Au 23/10, #02 et #09 sont `coached` : MP4 jouables, mais rotation IA
    signalée et corrigée par le descriptif audio ; aucun n'est `validated`.
-   Lot 3 : #10 → #13 — images, zooms et prompts préparés dans
-   `08-BICEPS-10-13-PRODUCTION.md`, en attente de validation par Yanis.
+   Lot 3 : #11 + #13 `coached` au 23/10, intégration validée par Yanis avec
+   consignes audio prioritaires ; #10 + #12 restent en attente. Images, zooms,
+   prompts et réserves sont consignés dans `08-BICEPS-10-13-PRODUCTION.md`.
    Ensuite seulement : #14 → #20.
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),

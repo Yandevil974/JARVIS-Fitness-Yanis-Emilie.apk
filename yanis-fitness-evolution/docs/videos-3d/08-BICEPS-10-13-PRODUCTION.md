@@ -1,7 +1,7 @@
 # Biceps #10 à #13 — images et production vidéo
 
 Date : 23/10/2026
-Statut : **candidats à valider par Yanis — aucun MP4 produit ou intégré**.
+Statut : **#11/#13 intégrés en `coached` après validation explicite de Yanis ; #10/#12 non intégrés. Aucun des quatre MP4 n'est marqué `validated`.**
 
 - [Planche des 4 images retenues](./vague1-biceps-10-13-candidats.jpg)
 - [Planche des 4 zooms de prise](./vague1-biceps-10-13-zooms.jpg)
@@ -184,7 +184,34 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ---
 
-## Validation de Yanis avant production
+## Intégration des MP4 fournis par Yanis — 23/10/2026
+
+- #11 : `1792766239062.mp4` → `public/videos/curl-zottman-assis.mp4`
+  (4,04 s, 1024×768), avec le poster haut proné validé.
+- #13 : `1792766265487.mp4` →
+  `public/videos/curl-zottman-un-bras-banc-scott.mp4` (4,04 s, 1024×768),
+  avec le poster haut proné validé.
+
+Yanis a explicitement validé l'intégration de ces deux MP4 malgré les écarts
+relevés pendant le contrôle. Ils restent donc en **`coached`**, pas en
+`validated` : la vitesse, l'amplitude ou les prises hautes de l'IA ne doivent
+pas être copiées. Le poster et le descriptif audio imposent le départ haut
+proné, la descente contrôlée et les rotations uniquement à l'arrêt.
+
+Les fichiers #10 (`1792750188286.mp4`) et #12 (`1792763051136.mp4`) restent
+hors de l'application et n'ont pas été renommés ou intégrés.
+
+### Vérifications de l'intégration
+
+- `npm test` : **190 réussites, 0 échec, 2 ignorés** ;
+- Playwright : **22 réussites, 0 échec, 11 ignorés**, dont **4/4 scénarios
+  vidéo** avec ouverture de #11/#13 et dictée des consignes correctives ;
+- `npm run build` : **1678 modules**, MP4 et posters copiés dans `release/`.
+
+## Validation technique avant un éventuel statut `validated`
+
+Les cases ci-dessous restent des critères techniques : l'autorisation
+d'intégrer une vidéo en `coached` ne les valide pas automatiquement.
 
 - [ ] #10 : une haltère, prise neutre, pouce haut, même posture haute au
       pupitre que le #13.
@@ -195,10 +222,10 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
       la main vers le haut**, haut du bras réellement supporté par le pupitre.
 - [ ] Athlète, casquette, matière chrome, décor et glow identiques sur les 4.
 
-Après validation des photos : générer un MP4 par exercice, contrôler une
-planche d'au moins quatre instants et les prises en zoom, puis obtenir
-l'accord de Yanis avant intégration. Une vidéo non conforme n'est jamais
-marquée `validated`.
+Toute future version destinée au statut `validated` devra être contrôlée sur
+une planche d'au moins quatre instants et sur les prises en zoom, puis
+approuvée par Yanis. Une vidéo techniquement non conforme n'est jamais
+marquée `validated`, même lorsque son intégration en `coached` est acceptée.
 
 Références techniques consultées pour les prises et les phases Zottman :
 [Seated Zottman Curl](https://fitnessprogramer.com/exercise/seated-zottman-curl/),

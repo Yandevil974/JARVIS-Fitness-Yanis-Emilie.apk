@@ -55,6 +55,33 @@ test("biceps #02 et #09 sont jouables avec correction audio, sans être validés
   );
 });
 
+test("Zottman #11 et #13 sont jouables avec leur consigne corrective", () => {
+  const cases = [
+    {
+      id: "curl-zottman-assis",
+      equipment: /deux haltères/i,
+      tempo: /trois secondes/i,
+    },
+    {
+      id: "curl-zottman-un-bras-banc-scott",
+      equipment: /une seule haltère/i,
+      tempo: /quatre secondes/i,
+    },
+  ];
+  for (const { id, equipment, tempo } of cases) {
+    const video = EXERCISE_VIDEOS[id];
+    assert.equal(video.status, "coached");
+    assert.equal(videoFor(id), video);
+    assert.match(video.coaching.spoken, equipment);
+    assert.match(video.coaching.spoken, tempo);
+    assert.match(video.coaching.spoken, /paumes? vers le sol/i);
+    assert.match(video.coaching.spoken, /immobiles? en (bas|haut)/i);
+    assert.match(video.coaching.spoken, /seulement (les coudes|le coude)/i);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i);
+    assert.match(video.coaching.notice, /Vidéo IA accélérée/i);
+  }
+});
+
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {
   for (const name of [
     "Mise en route",

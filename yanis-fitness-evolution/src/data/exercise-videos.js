@@ -150,6 +150,44 @@ export const EXERCISE_VIDEOS = {
         "Curl au banc Scott avec deux haltères en prise inversée. Paumes vers le sol, dos des mains vers le haut, poignets verrouillés. Gardez les haltères horizontaux et le haut des bras posé sur le pupitre. Descendez puis remontez ensemble, en pliant seulement les coudes. Aucune rotation des mains : ne reproduisez pas celle visible dans la vidéo.",
     },
   },
+  // ---- VAGUE 1 LOT 3 (#11/#13 fournis et validés pour intégration par Yanis le 23/10) ----
+  "curl-zottman-assis": {
+    // B11. Yanis a validé l'intégration du MP4 malgré sa séquence accélérée
+    // et ses prises hautes imparfaites. Le statut reste donc "coached" :
+    // le poster et le descriptif audio définissent le geste à reproduire.
+    src: "/videos/curl-zottman-assis.mp4",
+    poster: "/videos/posters/curl-zottman-assis.jpg",
+    label: "Vidéo IA · Curl Zottman assis, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      handCue:
+        "Départ haut avec deux haltères : paumes vers le sol, dos des mains vers le haut, doigts retombant autour des poignées.",
+      movementCue:
+        "Pliez et dépliez seulement les coudes. Descendez en pronation, tournez en supination à l’arrêt en bas, remontez en supination, puis revenez en pronation à l’arrêt en haut.",
+      notice:
+        "Vidéo IA accélérée : les rotations et la prise haute ne sont pas fidèles. Suivez le poster et le descriptif audio ; ne reproduisez ni la vitesse ni les doigts redressés visibles dans la vidéo.",
+      spoken:
+        "Curl Zottman assis. Commencez en haut avec deux haltères, paumes vers le sol, dos des mains vers le haut et doigts retombant autour des poignées. Pliez et dépliez seulement les coudes. Descendez en trois secondes en gardant la pronation. Haltères immobiles en bas, tournez les deux avant-bras en supination. Remontez en une seconde, paumes vers le haut. Haltères immobiles en haut, revenez en pronation. Ne reproduisez pas la vitesse ou les doigts redressés de la vidéo IA.",
+    },
+  },
+  "curl-zottman-un-bras-banc-scott": {
+    // B13. Intégration validée par Yanis malgré l'amplitude courte, la
+    // vitesse et la prise haute de la vidéo IA. Consigne corrective obligatoire.
+    src: "/videos/curl-zottman-un-bras-banc-scott.mp4",
+    poster: "/videos/posters/curl-zottman-un-bras-banc-scott.jpg",
+    label: "Vidéo IA · Zottman un bras au banc Scott, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      handCue:
+        "Une seule haltère, départ haut : paume vers le sol, dos de la main vers le haut, doigts retombant autour de la poignée.",
+      movementCue:
+        "Haut du bras posé sur le pupitre. Pliez et dépliez seulement le coude : descente pronée, rotation à l’arrêt en bas, montée supinée, puis rotation à l’arrêt en haut.",
+      notice:
+        "Vidéo IA accélérée et amplitude incomplète : ne copiez ni la vitesse, ni la prise haute redressée, ni le mouvement de caméra. Gardez le haut du bras posé et suivez le descriptif audio.",
+      spoken:
+        "Curl Zottman un bras au banc Scott. Utilisez une seule haltère et gardez le haut du bras posé sur le pupitre. Commencez en haut, paume vers le sol, dos de la main vers le haut et doigts retombant autour de la poignée. Pliez et dépliez seulement le coude. Descendez en quatre secondes en pronation jusqu’à presque tendre le coude. Haltère immobile en bas, tournez l’avant-bras en supination. Remontez en une seconde, paume vers le haut. Haltère immobile en haut, revenez en pronation. Ne reproduisez pas la vitesse, l’amplitude courte ou les doigts redressés de la vidéo IA.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

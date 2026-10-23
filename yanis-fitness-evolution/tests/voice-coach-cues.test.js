@@ -49,6 +49,39 @@ test("le descriptif impose une prise fixe et corrige explicitement la vidéo IA"
   }
 });
 
+test("les Zottman dictent le départ proné et les rotations uniquement à l’arrêt", () => {
+  const zottmanExercises = [
+    {
+      id: "curl-zottman-assis",
+      name: "Curl Zottman assis",
+      defaultSets: 3,
+      repScheme: "8-10",
+      tempo: "3010",
+      descent: /trois secondes/i,
+    },
+    {
+      id: "curl-zottman-un-bras-banc-scott",
+      name: "Curl Zottman un bras, banc Scott",
+      defaultSets: 4,
+      repScheme: "6-8",
+      tempo: "4010",
+      descent: /quatre secondes/i,
+    },
+  ];
+  for (const exercise of zottmanExercises) {
+    const coaching = coachingFor(exercise);
+    assert.ok(coaching, `descriptif absent : ${exercise.id}`);
+    assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
+    assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
+    assert.match(coaching.spoken, /paumes? vers le sol/i);
+    assert.match(coaching.spoken, exercise.descent);
+    assert.match(coaching.spoken, /immobiles? en bas/i);
+    assert.match(coaching.spoken, /immobiles? en haut/i);
+    assert.match(coaching.spoken, /supination/i);
+    assert.match(coaching.spoken, /Ne reproduisez pas/i);
+  }
+});
+
 test("les exercices sans correction spéciale gardent leur consigne tempo", () => {
   const exercise = {
     id: "back-squat",

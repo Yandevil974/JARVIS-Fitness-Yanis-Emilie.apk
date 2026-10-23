@@ -154,3 +154,71 @@ test("biceps #02 et #09 affichent leur vidéo IA et dictent la prise fixe", asyn
   }
   expect(errors).toEqual([]);
 });
+
+test("biceps #11 et #13 affichent leur vidéo et dictent le Zottman corrigé", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.speechSynthesis.cancel = () => {};
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      name: "Curl Zottman assis",
+      src: "/videos/curl-zottman-assis.mp4",
+    },
+    {
+      name: "Curl Zottman un bras, banc Scott",
+      src: "/videos/curl-zottman-un-bras-banc-scott.mp4",
+    },
+  ];
+  for (const item of cases) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      /paumes? vers le sol/i,
+    );
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      /Vidéo IA accélérée/i,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(/immobiles? en bas/i);
+    expect(spoken).toMatch(/immobiles? en haut/i);
+    expect(spoken).toMatch(/supination/i);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+    await dialog
+      .getByRole("button", { name: "Fermer", exact: true })
+      .last()
+      .click();
+  }
+  expect(errors).toEqual([]);
+});
