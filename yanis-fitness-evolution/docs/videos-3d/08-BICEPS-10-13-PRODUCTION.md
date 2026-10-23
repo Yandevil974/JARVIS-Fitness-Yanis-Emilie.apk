@@ -12,6 +12,12 @@ homme massif chrome argenté, casquette noire mate, short noir, chaussures
 blanches, salle grise claire et muscles actifs orange. Ne pas changer son
 apparence entre les exercices.
 
+**Correction demandée par Yanis :** #10 reprend la posture haute au pupitre du
+Zottman #13, mais conserve sa prise neutre. #13 garde cette même posture ;
+seule la main de travail passe en **pronation**, paume vers le bas comme sur
+[`reference-prise-mains-yanis.jpg`](./reference-prise-mains-yanis.jpg). #11 et
+#12 ne sont pas modifiés.
+
 ## Choix verrouillés pour ce lot
 
 | Exercice                               | Position de la photo      | Prise à contrôler                                                  |
@@ -19,7 +25,7 @@ apparence entre les exercices.
 | #10 — Curl Scott haltère neutre        | Haute, un bras au pupitre | Neutre fixe, paume vers l'intérieur, pouce haut                    |
 | #11 — Curl Zottman assis               | Haute, deux haltères      | Supination haute ; rotation Zottman seulement aux extrémités       |
 | #12 — Curl poulie basse                | Basse, barre aux cuisses  | **Pronation fixe**, mains par-dessus la barre, comme le GIF source |
-| #13 — Curl Zottman un bras, banc Scott | Haute, un bras au pupitre | Supination haute ; rotation Zottman seulement aux extrémités       |
+| #13 — Curl Zottman un bras, banc Scott | Haute, un bras au pupitre | **Pronation haute**, posture inchangée ; rotation seulement aux extrémités |
 
 **Distinctions importantes :**
 
@@ -31,8 +37,9 @@ apparence entre les exercices.
   correspond pas au nom de l'exercice et **ne doit pas servir de référence de
   mouvement**. La vidéo #13 sera unilatérale au pupitre.
 - Pour #11 et #13, la rotation des avant-bras est la caractéristique du
-  Zottman. Elle est volontaire et réalisée **à l'arrêt en haut, puis à l'arrêt
-  en bas**. Elle ne doit pas se produire pendant la montée ou la descente.
+  Zottman. Elle est volontaire et réalisée **uniquement lorsque l'haltère est
+  immobile aux deux extrémités**. Elle ne doit pas se produire pendant la
+  montée ou la descente.
 
 ---
 
@@ -48,7 +55,9 @@ apparence entre les exercices.
 Assis au pupitre, le haut du bras de travail repose à plat sur le coussin. Une
 seule haltère est tenue en **prise neutre / marteau** : paume vers l'intérieur,
 pouce vers le haut, poignet droit. L'autre main reste vide sur la cuisse. La
-photo est la position haute de référence, coude fléchi.
+photo est la position haute de référence, coude fléchi. La posture de
+l'athlète est alignée sur celle du #13 ; seule la prise change entre les deux
+exercices.
 
 1. **Descente — 3 s** : étendre seulement le coude et descendre l'haltère
    jusqu'à ce que le coude soit presque tendu, sans le verrouiller. La paume
@@ -135,42 +144,47 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ### Images à contrôler
 
-- [Photo #13 — un bras au pupitre, supination haute](./vague1-biceps-13-zottman-un-bras-scott.jpg)
-- [Zoom #13 — prise haute en supination](./vague1-biceps-13-zoom-prise.jpg)
+- [Photo #13 — posture haute inchangée, main en pronation](./vague1-biceps-13-zottman-un-bras-scott.jpg)
+- [Zoom #13 — paume vers le bas, dos de la main vers le haut](./vague1-biceps-13-zoom-prise.jpg)
 
 ### Exécution précise
 
 Assis au pupitre, le haut du bras de travail reste à plat sur le coussin. Une
-seule haltère est utilisée ; l'autre main reste vide. La photo est la position
-haute en **supination**, paume vers le haut et légèrement vers l'épaule.
+seule haltère est utilisée ; l'autre main reste vide. **La posture haute de la
+photo précédente est conservée. Seule la rotation de la main change** : la
+photo montre maintenant la position haute en **pronation**, paume vers le sol,
+dos de la main vers le haut et poignet droit, comme sur la référence de Yanis.
 
-1. **Rotation haute — 1 s, haltère immobile** : tourner l'avant-bras jusqu'en
-   pronation, paume vers le bas, avant de commencer la descente.
-2. **Descente — 4 s** : étendre seulement le coude et descendre lentement
-   l'haltère, **paume vers le bas et poignet fixe**, jusqu'à presque tendre le
-   coude sans le verrouiller.
-3. **Rotation basse — 1 s, haltère immobile** : revenir en supination.
-4. **Remontée — 1 s** : fléchir seulement le coude et remonter **paume vers le
-   haut** jusqu'à la position exacte de la photo.
+1. **Descente — 4 s** : depuis cette position haute en pronation, étendre
+   seulement le coude et descendre lentement l'haltère, **paume vers le bas et
+   poignet fixe**, jusqu'à presque tendre le coude sans le verrouiller.
+2. **Rotation basse — 1 s, haltère immobile** : tourner l'avant-bras jusqu'en
+   supination, paume vers le haut.
+3. **Remontée — 1 s** : fléchir seulement le coude et remonter **paume vers le
+   haut**, sans rotation pendant la montée.
+4. **Rotation haute — 1 s, haltère immobile** : revenir en pronation, paume
+   vers le bas, pour retrouver exactement la position et la prise de la photo.
 
 La vidéo ne montre qu'un seul bras de travail. L'autre main ne tient aucune
-haltère et le haut du bras ne décolle jamais du pupitre.
+haltère et le haut du bras ne décolle jamais du pupitre. Le buste, les jambes,
+le banc et la caméra restent immobiles pendant toute la séquence.
 
 ### Prompt Arena Video / PixVerse
 
 ```text
-Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable orange biceps and forearm glow. START at the exact HIGH SUPINATED position in the image: seated upright at a preacher bench, back of the working upper arm flat and supported on the pad, elbow flexed, exactly ONE horizontal black hex dumbbell near the shoulder, palm facing UP and slightly toward the athlete, wrist straight; the other hand remains empty on the opposite thigh. PHASE 1 (1 second): with the dumbbell STATIONARY at the top, deliberately rotate the working forearm to a pronated grip, palm facing DOWN; do not lower the weight during this transition. PHASE 2 (4 seconds): extend ONLY the working elbow and lower the dumbbell slowly with the palm staying DOWN and the wrist fixed, until the elbow is nearly extended but not locked. PHASE 3 (1 second): with the dumbbell STATIONARY at the bottom, rotate the forearm back to a supinated palm-up grip. PHASE 4 (1 second): flex ONLY the elbow and curl the dumbbell back to the exact high reference position, palm staying UP. LOCKED during every lifting or lowering phase: upper arm glued to the preacher pad, grip orientation, shoulder, torso, head, empty resting hand and camera. Rotation occurs ONLY while stationary at the top and bottom. Static front three-quarter camera, end frame identical to the supplied image. AVOID: rotating during the curl or descent, second dumbbell, two working arms, unsupported arm, incline bench, standing two-arm curl, barbell, cable, moving shoulder, swinging torso, morphing equipment, extra fingers or limbs, flickering glow, text, logo, watermark.
+Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable orange biceps and forearm glow. START at the exact HIGH PRONATED position in the image and PRESERVE THE SAME BODY POSTURE throughout: seated upright at a preacher bench, back of the working upper arm flat and supported on the pad, elbow flexed, exactly ONE horizontal black hex dumbbell near the shoulder, palm facing DOWN toward the floor, back of hand facing UP, fingers passing over and wrapping down around the handle, wrist straight; the other hand remains empty on the opposite thigh. PHASE 1 (4 seconds): extend ONLY the working elbow and lower the dumbbell slowly with the palm staying DOWN and the wrist fixed, until the elbow is nearly extended but not locked. PHASE 2 (1 second): with the dumbbell STATIONARY at the bottom, deliberately rotate the working forearm to a supinated grip, palm facing UP. PHASE 3 (1 second): flex ONLY the elbow and curl the dumbbell back to the high position with the palm staying UP and no rotation during the ascent. PHASE 4 (1 second): with the dumbbell STATIONARY at the top, rotate the forearm back to the exact pronated palm-down grip shown in the supplied image. LOCKED during every lifting or lowering phase: upper arm glued to the preacher pad, grip orientation, shoulder, torso, hips, legs, head, empty resting hand and camera. Rotation occurs ONLY while stationary at the bottom and top; never change the body posture to create the rotation. Static front three-quarter camera, end frame identical to the supplied image. AVOID: changing the original high posture, palm staying supinated, rotating during the curl or descent, second dumbbell, two working arms, unsupported arm, incline bench, standing two-arm curl, barbell, cable, moving shoulder, swinging torso, morphing equipment, extra fingers or limbs, flickering glow, text, logo, watermark.
 ```
 
 ---
 
 ## Validation de Yanis avant production
 
-- [ ] #10 : une haltère, prise neutre, pouce haut, haut du bras sur le pupitre.
+- [ ] #10 : une haltère, prise neutre, pouce haut, même posture haute au
+      pupitre que le #13.
 - [ ] #11 : deux haltères, supination haute et posture assise conformes.
 - [ ] #12 : barre droite, poulie basse, **mains par-dessus en pronation**.
-- [ ] #13 : une haltère, supination haute et haut du bras réellement supporté
-      par le pupitre.
+- [ ] #13 : posture haute conservée, une haltère, **paume vers le sol et dos de
+      la main vers le haut**, haut du bras réellement supporté par le pupitre.
 - [ ] Athlète, casquette, matière chrome, décor et glow identiques sur les 4.
 
 Après validation des photos : générer un MP4 par exercice, contrôler une
