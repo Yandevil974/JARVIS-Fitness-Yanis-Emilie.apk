@@ -12,18 +12,19 @@ homme massif chrome argenté, casquette noire mate, short noir, chaussures
 blanches, salle grise claire et muscles actifs orange. Ne pas changer son
 apparence entre les exercices.
 
-**Correction demandée par Yanis :** #10 reprend la posture haute au pupitre du
-Zottman #13, mais conserve sa prise neutre. #13 garde cette même posture ;
-seule la main de travail passe en **pronation**, paume vers le bas comme sur
-[`reference-prise-mains-yanis.jpg`](./reference-prise-mains-yanis.jpg). #11 et
-#12 ne sont pas modifiés.
+**Dernière correction demandée par Yanis :** #10 conserve son image en prise
+neutre restaurée. Les deux Zottman #11 et #13 **commencent en position haute,
+avec les paumes face au sol**, le dos des mains vers le haut et les doigts
+par-dessus les poignées, comme sur
+[`reference-prise-mains-zottman.jpg`](./reference-prise-mains-zottman.jpg).
+#12 n'est pas modifié.
 
 ## Choix verrouillés pour ce lot
 
 | Exercice                               | Position de la photo      | Prise à contrôler                                                  |
 | -------------------------------------- | ------------------------- | ------------------------------------------------------------------ |
 | #10 — Curl Scott haltère neutre        | Haute, un bras au pupitre | Neutre fixe, paume vers l'intérieur, pouce haut                    |
-| #11 — Curl Zottman assis               | Haute, deux haltères      | Supination haute ; rotation Zottman seulement aux extrémités       |
+| #11 — Curl Zottman assis               | Haute, deux haltères      | **Pronation haute**, paumes face au sol ; rotation seulement aux extrémités |
 | #12 — Curl poulie basse                | Basse, barre aux cuisses  | **Pronation fixe**, mains par-dessus la barre, comme le GIF source |
 | #13 — Curl Zottman un bras, banc Scott | Haute, un bras au pupitre | **Pronation haute**, posture inchangée ; rotation seulement aux extrémités |
 
@@ -80,32 +81,37 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ### Images à contrôler
 
-- [Photo #11 — position haute en supination](./vague1-biceps-11-zottman-assis.jpg)
-- [Zoom #11 — deux prises en supination haute](./vague1-biceps-11-zoom-prise.jpg)
+- [Photo #11 — départ haut, deux mains en pronation](./vague1-biceps-11-zottman-assis.jpg)
+- [Zoom #11 — paumes face au sol, doigts par-dessus les poignées](./vague1-biceps-11-zoom-prise.jpg)
 
 ### Exécution précise
 
 Assis bien droit sur un banc plat, pieds au sol, deux haltères séparés, coudes
-près des côtes. La photo montre la **position haute en supination** : paumes
-vers le haut et légèrement vers les épaules, poignets droits.
+près des côtes. **Le mouvement commence directement dans la position haute de
+la photo, en pronation** : paumes face au sol, dos des mains vers le haut,
+doigts par-dessus les poignées et poignets droits.
 
-1. **Rotation haute — 1 s, haltères immobiles** : tourner volontairement les
-   deux avant-bras ensemble jusqu'en pronation, paumes vers le bas. Ne pas
-   commencer la descente pendant cette rotation.
-2. **Descente — 3 s** : étendre seulement les coudes et descendre les deux
-   haltères ensemble, **paumes vers le bas et poignets fixes**.
-3. **Rotation basse — 1 s, haltères immobiles** : sans verrouiller les coudes,
-   tourner les deux avant-bras jusqu'en supination.
-4. **Remontée — 1 s** : fléchir seulement les coudes et remonter les deux
-   haltères ensemble, **paumes vers le haut**, jusqu'à la photo de départ.
+1. **Descente — 3 s** : depuis la position haute, étendre seulement les coudes
+   et descendre les deux haltères ensemble, **paumes vers le bas et poignets
+   fixes**.
+2. **Rotation basse — 1 s, haltères immobiles** : sans verrouiller les coudes,
+   tourner les deux avant-bras ensemble jusqu'en supination, paumes vers le
+   haut.
+3. **Remontée — 1 s** : fléchir seulement les coudes et remonter les deux
+   haltères ensemble, **paumes vers le haut**, sans rotation pendant la
+   montée.
+4. **Rotation haute — 1 s, haltères immobiles** : revenir en pronation, paumes
+   face au sol, pour retrouver exactement la position et les prises de la
+   photo.
 
 La montée et la descente se font sans rotation : les rotations sont des phases
-séparées, réalisées à l'arrêt aux deux extrémités.
+séparées, réalisées à l'arrêt aux deux extrémités. Le buste, la tête, les
+jambes, le banc et la caméra restent immobiles.
 
 ### Prompt Arena Video / PixVerse
 
 ```text
-Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable orange biceps and forearm glow. START at the exact HIGH SUPINATED position in the image: seated upright on a flat bench, feet planted, elbows flexed and pinned near the ribs, TWO separate horizontal black hex dumbbells at shoulder level, palms facing UP and slightly toward the shoulders, wrists straight. PHASE 1 (1 second): with both dumbbells STATIONARY at the top, deliberately rotate BOTH forearms together to a pronated grip, palms facing DOWN; do not lower the weights during this transition. PHASE 2 (3 seconds): extend ONLY the elbows and lower BOTH dumbbells together slowly with the palms staying DOWN and wrists fixed. PHASE 3 (1 second): with both dumbbells STATIONARY at the bottom and elbows softly unlocked, rotate BOTH forearms back to supinated palms-up grip. PHASE 4 (1 second): flex ONLY the elbows and curl BOTH dumbbells together back to the exact high reference position, palms staying UP. LOCKED during every lifting or lowering phase: upper arms, grip orientation, torso, hips, head, seat and camera. Rotation occurs ONLY while stationary at the top and bottom. Static front three-quarter camera, end frame identical to the supplied image. AVOID: rotating during the curl or descent, alternating arms, hammer grip, one dumbbell, barbell, preacher bench, leaning back, moving elbows, swinging torso, morphing equipment, extra fingers or limbs, flickering glow, text, logo, watermark.
+Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable orange biceps and forearm glow. START at the exact HIGH PRONATED position in the image: seated upright on a flat bench, feet planted, elbows flexed and pinned near the ribs, TWO separate horizontal black hex dumbbells at shoulder level, palms facing DOWN toward the floor, backs of hands facing UP, fingers passing over and curling DOWN around the handles, thumbs underneath, wrists straight. PHASE 1 (3 seconds): extend ONLY the elbows and lower BOTH dumbbells together slowly with the palms staying DOWN and wrists fixed, until the elbows are nearly extended but not locked. PHASE 2 (1 second): with both dumbbells STATIONARY at the bottom, deliberately rotate BOTH forearms together to a supinated grip, palms facing UP. PHASE 3 (1 second): flex ONLY the elbows and curl BOTH dumbbells together back to the high position with the palms staying UP and no rotation during the ascent. PHASE 4 (1 second): with both dumbbells STATIONARY at the top, rotate BOTH forearms back to the exact pronated palm-down grips shown in the supplied image. LOCKED during every lifting or lowering phase: upper arms, grip orientation, torso, hips, legs, head, seat and camera. Rotation occurs ONLY while stationary at the bottom and top; never change the body posture to create the rotation. Static front three-quarter camera, end frame identical to the supplied image. AVOID: starting supinated, rotating during the curl or descent, alternating arms, hammer grip, one dumbbell, barbell, EZ bar, preacher bench, leaning back, moving elbows, swinging torso, morphing equipment, extra fingers or limbs, flickering glow, text, logo, watermark.
 ```
 
 ---
@@ -153,7 +159,8 @@ Assis au pupitre, le haut du bras de travail reste à plat sur le coussin. Une
 seule haltère est utilisée ; l'autre main reste vide. **La posture haute de la
 photo précédente est conservée. Seule la rotation de la main change** : la
 photo montre maintenant la position haute en **pronation**, paume vers le sol,
-dos de la main vers le haut et poignet droit, comme sur la référence de Yanis.
+dos de la main vers le haut et poignet droit, comme sur
+[`reference-prise-mains-zottman.jpg`](./reference-prise-mains-zottman.jpg).
 
 1. **Descente — 4 s** : depuis cette position haute en pronation, étendre
    seulement le coude et descendre lentement l'haltère, **paume vers le bas et
@@ -181,7 +188,8 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 - [ ] #10 : une haltère, prise neutre, pouce haut, même posture haute au
       pupitre que le #13.
-- [ ] #11 : deux haltères, supination haute et posture assise conformes.
+- [ ] #11 : deux haltères, départ haut, **paumes face au sol et dos des mains
+      vers le haut**, posture assise conforme.
 - [ ] #12 : barre droite, poulie basse, **mains par-dessus en pronation**.
 - [ ] #13 : posture haute conservée, une haltère, **paume vers le sol et dos de
       la main vers le haut**, haut du bras réellement supporté par le pupitre.
