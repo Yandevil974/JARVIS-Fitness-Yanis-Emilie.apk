@@ -1,7 +1,7 @@
 # Biceps #10 à #13 — images et production vidéo
 
 Date : 23/10/2026
-Statut : **#11/#13 intégrés en `coached` après validation explicite de Yanis ; #10/#12 non intégrés. Aucun des quatre MP4 n'est marqué `validated`.**
+Statut : **lot #10→#13 intégré après validation de Yanis : #10/#12 en `validated`, #11/#13 en `coached` avec consignes correctives.**
 
 - [Planche des 4 images retenues](./vague1-biceps-10-13-candidats.jpg)
 - [Planche des 4 zooms de prise](./vague1-biceps-10-13-zooms.jpg)
@@ -186,6 +186,11 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ## Intégration des MP4 fournis par Yanis — 23/10/2026
 
+- #10 : `1792750188286.mp4` →
+  `public/videos/curl-scott-haltere-neutre.mp4` (4,04 s, 1024×1024),
+  **validé par Yanis**, avec le poster neutre restauré.
+- #12 : `1792763051136.mp4` → `public/videos/curl-poulie-basse.mp4`
+  (4,04 s, 1024×768), **validé par Yanis**, avec le poster bas en pronation.
 - #11 : `1792766239062.mp4` → `public/videos/curl-zottman-assis.mp4`
   (4,04 s, 1024×768), avec le poster haut proné validé.
 - #13 : `1792766265487.mp4` →
@@ -198,14 +203,16 @@ relevés pendant le contrôle. Ils restent donc en **`coached`**, pas en
 pas être copiées. Le poster et le descriptif audio imposent le départ haut
 proné, la descente contrôlée et les rotations uniquement à l'arrêt.
 
-Les fichiers #10 (`1792750188286.mp4`) et #12 (`1792763051136.mp4`) restent
-hors de l'application et n'ont pas été renommés ou intégrés.
+Après ce premier contrôle, Yanis a également validé #10 et #12. Leurs MP4
+sont donc intégrés en **`validated`**, sans consigne corrective spéciale :
+la prise neutre de #10 et la prise pronation de #12 sont conservées dans
+leurs posters et les rappels de tempo habituels de l'application.
 
 ### Vérifications de l'intégration
 
-- `npm test` : **190 réussites, 0 échec, 2 ignorés** ;
-- Playwright : **22 réussites, 0 échec, 11 ignorés**, dont **4/4 scénarios
-  vidéo** avec ouverture de #11/#13 et dictée des consignes correctives ;
+- `npm test` : **191 réussites, 0 échec, 2 ignorés** ;
+- Playwright : **23 réussites, 0 échec, 11 ignorés**, dont **5/5 scénarios
+  vidéo** avec ouverture de #10→#13 et dictée des consignes correctives ;
 - `npm run build` : **1678 modules**, MP4 et posters copiés dans `release/`.
 
 ## Validation technique avant un éventuel statut `validated`
@@ -213,11 +220,12 @@ hors de l'application et n'ont pas été renommés ou intégrés.
 Les cases ci-dessous restent des critères techniques : l'autorisation
 d'intégrer une vidéo en `coached` ne les valide pas automatiquement.
 
-- [ ] #10 : une haltère, prise neutre, pouce haut, même posture haute au
-      pupitre que le #13.
+- [x] #10 : une haltère, prise neutre, pouce haut, même posture haute au
+      pupitre que le #13 — validé par Yanis le 23/10.
 - [ ] #11 : deux haltères, départ haut, **paumes face au sol et dos des mains
       vers le haut**, posture assise conforme.
-- [ ] #12 : barre droite, poulie basse, **mains par-dessus en pronation**.
+- [x] #12 : barre droite, poulie basse, **mains par-dessus en pronation** —
+      validé par Yanis le 23/10.
 - [ ] #13 : posture haute conservée, une haltère, **paume vers le sol et dos de
       la main vers le haut**, haut du bras réellement supporté par le pupitre.
 - [ ] Athlète, casquette, matière chrome, décor et glow identiques sur les 4.

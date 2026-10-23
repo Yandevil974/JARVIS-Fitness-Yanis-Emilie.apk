@@ -222,3 +222,54 @@ test("biceps #11 et #13 affichent leur vidéo et dictent le Zottman corrigé", a
   }
   expect(errors).toEqual([]);
 });
+
+test("biceps #10 et #12 affichent leurs vidéos validées", async ({ page }) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+
+  const cases = [
+    {
+      name: "Curl Scott haltère neutre",
+      src: "/videos/curl-scott-haltere-neutre.mp4",
+      poster: "/videos/posters/curl-scott-haltere-neutre.jpg",
+    },
+    {
+      name: "Curl poulie basse",
+      src: "/videos/curl-poulie-basse.mp4",
+      poster: "/videos/posters/curl-poulie-basse.jpg",
+    },
+  ];
+  for (const item of cases) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "poster",
+      item.poster,
+    );
+    await dialog
+      .getByRole("button", { name: "Fermer", exact: true })
+      .last()
+      .click();
+  }
+  expect(errors).toEqual([]);
+});

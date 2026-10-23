@@ -150,7 +150,26 @@ export const EXERCISE_VIDEOS = {
         "Curl au banc Scott avec deux haltères en prise inversée. Paumes vers le sol, dos des mains vers le haut, poignets verrouillés. Gardez les haltères horizontaux et le haut des bras posé sur le pupitre. Descendez puis remontez ensemble, en pliant seulement les coudes. Aucune rotation des mains : ne reproduisez pas celle visible dans la vidéo.",
     },
   },
-  // ---- VAGUE 1 LOT 3 (#11/#13 fournis et validés pour intégration par Yanis le 23/10) ----
+  // ---- VAGUE 1 LOT 3 (#10/#12 validés par Yanis le 23/10) ----
+  "curl-scott-haltere-neutre": {
+    // B10. VALIDÉE par Yanis : une haltère au pupitre, prise neutre,
+    // haut du bras supporté et cycle complet (4,04 s, PixVerse).
+    // Réserve : filigrane PixVerse.ai, remplaçable sans toucher au lecteur.
+    src: "/videos/curl-scott-haltere-neutre.mp4",
+    poster: "/videos/posters/curl-scott-haltere-neutre.jpg",
+    label: "Vidéo 3D · Curl Scott haltère neutre",
+    status: "validated",
+  },
+  "curl-poulie-basse": {
+    // B12. VALIDÉE par Yanis : barre droite reliée à la poulie basse,
+    // prise pronation et cycle bas→haut→bas (4,04 s, PixVerse).
+    // Réserve : filigrane PixVerse.ai, remplaçable sans toucher au lecteur.
+    src: "/videos/curl-poulie-basse.mp4",
+    poster: "/videos/posters/curl-poulie-basse.jpg",
+    label: "Vidéo 3D · Curl poulie basse pronation",
+    status: "validated",
+  },
+  // ---- #11/#13 fournis et validés pour intégration par Yanis le 23/10 ----
   "curl-zottman-assis": {
     // B11. Yanis a validé l'intégration du MP4 malgré sa séquence accélérée
     // et ses prises hautes imparfaites. Le statut reste donc "coached" :

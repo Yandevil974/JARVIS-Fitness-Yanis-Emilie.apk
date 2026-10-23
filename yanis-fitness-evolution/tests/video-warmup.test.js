@@ -55,6 +55,21 @@ test("biceps #02 et #09 sont jouables avec correction audio, sans être validés
   );
 });
 
+test("biceps #10 et #12 sont intégrés comme vidéos validées", () => {
+  for (const id of ["curl-scott-haltere-neutre", "curl-poulie-basse"]) {
+    const video = EXERCISE_VIDEOS[id];
+    assert.equal(video.status, "validated");
+    assert.equal(videoFor(id), video);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${id}`);
+  }
+  assert.match(
+    EXERCISE_VIDEOS["curl-scott-haltere-neutre"].label,
+    /haltère neutre/i,
+  );
+  assert.match(EXERCISE_VIDEOS["curl-poulie-basse"].label, /poulie basse/i);
+});
+
 test("Zottman #11 et #13 sont jouables avec leur consigne corrective", () => {
   const cases = [
     {
