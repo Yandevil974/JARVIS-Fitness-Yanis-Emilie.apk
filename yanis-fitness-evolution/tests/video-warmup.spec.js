@@ -8,7 +8,7 @@ test.beforeEach(async ({ page }) => {
   }, STORAGE_KEY);
 });
 
-test("JARVIS Brain 1.8.9 reste présent avec le module vidéo", async ({
+test("JARVIS Brain 1.9.0 reste présent avec le module vidéo", async ({
   page,
 }) => {
   const errors = [];

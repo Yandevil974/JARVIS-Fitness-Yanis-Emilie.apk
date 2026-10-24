@@ -135,7 +135,10 @@ export function DayScheduleModal({ date }) {
 export function SourceExtraModal({ event }) {
   const { p, closeModal, setModal, setTimer } = useApp();
   const resolved =
-    event.sourceKind === "post-cardio" || event.contentLocked
+    event.sourceKind === "post-cardio" ||
+    event.contentLocked ||
+    event.scheduleModified ||
+    event.copiedFrom
       ? event
       : { ...event, ...sourceExtra(p, sourceDay(p, event.date || today())) };
   const steps = sourceExtraSteps(p, resolved);
@@ -183,6 +186,15 @@ export function SourceExtraModal({ event }) {
             </Button>
             <Button
               variant="secondary small"
+              icon="Copy"
+              onClick={() =>
+                setModal({ type: "copy-scheduled", sessionId: event.id })
+              }
+            >
+              Copier vers un autre jour
+            </Button>
+            <Button
+              variant="secondary small"
               icon="Trash2"
               onClick={() => setModal({ type: "delete-planned", id: event.id })}
             >
@@ -192,6 +204,12 @@ export function SourceExtraModal({ event }) {
             </Button>
           </div>
         )}
+      {event.copiedFrom && (
+        <p className="source-completion-note">
+          Copie de la séance du {dateLabel(event.copiedFromDate)}. Le contenu a
+          été repris à l’identique et la séance d’origine est conservée.
+        </p>
+      )}
       {event.completionReportedOnly && (
         <div className="source-completion-note">
           {event.status === "missed"

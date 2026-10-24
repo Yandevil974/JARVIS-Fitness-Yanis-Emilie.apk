@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { initialState, newProfile, validateState } from "../src/store/model.js";
 import { STORAGE_KEY } from "../src/app-identity.js";
 import {
+  copySession,
   moveSession,
   rescheduleMissed,
   sourceSession,
@@ -44,6 +45,89 @@ test("Moving a source strength session moves its pool block and preserves prescr
   assert.equal(plan.sessions[1].parentId, "parent");
   assert.ok(plan.sessions.every((s) => s.contentLocked));
   assert.deepEqual(p, snapshot);
+});
+test("Moving a selected source session across weeks never regenerates its content", () => {
+  const p = linked();
+  p.plan.sessions[0].sourcePhaseKey = "2";
+  p.plan.sessions[0].sourceSessionKey = "J3";
+  p.plan.sessions[0].exercises[0].sourceRow = [
+    "Développé couché barre",
+    4,
+    8,
+    12,
+  ];
+  p.plan.sessions[1].components[0].customSteps = [
+    { name: "Protocole choisi", seconds: 1200, kind: "work" },
+  ];
+  const before = structuredClone(p.plan.sessions),
+    target = addDays(today(), 7),
+    plan = moveSession(p, "parent", target),
+    root = plan.sessions.find((s) => s.id === "parent"),
+    child = plan.sessions.find((s) => s.id === "pool");
+  assert.equal(root.date, target);
+  assert.equal(root.name, before[0].name);
+  assert.equal(root.sourcePhaseKey, "2");
+  assert.equal(root.sourceSessionKey, "J3");
+  assert.deepEqual(root.exercises, before[0].exercises);
+  assert.deepEqual(child.components, before[1].components);
+  assert.equal(root.contentLocked, true);
+  assert.equal(child.contentLocked, true);
+  assert.equal(root.scheduleModified, true);
+});
+test("Copying by a linked block duplicates the exact family with fresh IDs", () => {
+  const p = linked(),
+    snapshot = structuredClone(p),
+    target = addDays(today(), 7),
+    plan = copySession(p, "pool", target, { time: "20:00" }),
+    copies = plan.sessions.filter((s) => s.copiedFrom),
+    root = copies.find((s) => s.copiedFrom === "parent"),
+    child = copies.find((s) => s.copiedFrom === "pool");
+  assert.deepEqual(p, snapshot);
+  assert.equal(plan.sessions.length, 4);
+  assert.equal(copies.length, 2);
+  assert.ok(plan.sessions.some((s) => s.id === "parent"));
+  assert.ok(plan.sessions.some((s) => s.id === "pool"));
+  assert.notEqual(root.id, "parent");
+  assert.notEqual(child.id, "pool");
+  assert.notEqual(root.id, child.id);
+  assert.equal(child.parentId, root.id);
+  assert.equal(root.date, target);
+  assert.equal(child.date, target);
+  assert.equal(root.time, "20:00");
+  assert.equal(child.time, "21:15");
+  assert.deepEqual(root.exercises, snapshot.plan.sessions[0].exercises);
+  assert.deepEqual(child.components, snapshot.plan.sessions[1].components);
+  assert.equal(root.contentLocked, true);
+  assert.equal(child.contentLocked, true);
+  assert.deepEqual(root.scheduleHistory, []);
+});
+test("A copy keeps prescriptions but never carries validated set history", () => {
+  const p = linked();
+  p.plan.sessions[0].exercises[0].sets = [
+    { id: "original-result", completed: true, reps: 8 },
+  ];
+  const plan = copySession(p, "parent", addDays(today(), 7)),
+    copy = plan.sessions.find((s) => s.copiedFrom === "parent");
+  assert.deepEqual(copy.exercises[0].sets, []);
+  assert.equal(p.plan.sessions[0].exercises[0].sets[0].id, "original-result");
+});
+test("Copying rejects an occupied target without changing the original", () => {
+  const p = linked(),
+    target = addDays(today(), 7),
+    snapshot = structuredClone(p);
+  p.plan.sessions.push({
+    id: "occupied",
+    date: target,
+    time: "18:00",
+    status: "planned",
+    type: "cardio",
+    name: "Autre séance",
+    exercises: [],
+  });
+  const before = structuredClone(p);
+  assert.throws(() => copySession(p, "parent", target), /créneau libre/);
+  assert.deepEqual(p, before);
+  assert.deepEqual(p.plan.sessions.slice(0, 2), snapshot.plan.sessions);
 });
 test("Moving by the child selects the linked planned family, not an orphan block", () => {
   const p = linked();

@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.8.9-jarvis-program-shifts"
+        default: "v1.9.0-schedule-copy-voice"
 
 permissions:
   contents: write
@@ -90,7 +90,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.8.9'" 2>/dev/null || echo 1.8.9)
+          VERSION=$(node -p "require('../package.json').version || '1.9.0'" 2>/dev/null || echo 1.9.0)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
           # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
@@ -141,31 +141,31 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.8.9 — Corrections JARVIS et report de semaine
+            ## Yanis Fitness Evolution 1.9.0 — Planning, copie et voix
 
-            Cette version corrige le routage des demandes de modification : JARVIS ne transforme plus
-            « modifier mon programme », un remplacement d'exercice ou un déplacement de séance en
-            réponse générique de création de programme.
+            Cette version corrige le déplacement inter-semaines dans « Semaine complète » :
+            la séance sélectionnée conserve son identifiant, ses exercices, ses protocoles et son contenu,
+            sans être remplacée par le modèle de la semaine de destination.
 
-            ### Nouveau report simple
-            - « Décale mes séances de cette semaine à la semaine prochaine » propose un report de 7 jours.
-            - Le bouton « Décaler de 7 jours » applique la demande après confirmation.
-            - Les séances encore planifiées et la suite du programme suivent le même délai pour éviter les doublons.
-            - Exercices, prescriptions, contenu, identifiants et historique sont conservés ; aucune régénération.
-            - Une seule séance peut aussi être déplacée à la semaine prochaine.
+            ### Nouveautés
+            - « Copier vers un autre jour » est disponible en cliquant sur une séance planifiée.
+            - Les blocs liés sont copiés ensemble avec de nouveaux identifiants ; l’original et ses historiques restent intacts.
+            - Les conflits de planning sont refusés sans modification partielle et les séries validées ne sont pas transférées.
+            - Le bouton « Effacer l’historique de JARVIS » demande confirmation et ne supprime que les messages du profil actif.
+            - La vitesse d’élocution est réglable dans Profil → Matériel & préférences et persistée sur Android et navigateur.
 
             **Mise à jour installable** : même application (`app.yanis.fitness.evolution`),
-            versionName 1.8.9, versionCode 191 (supérieur au 190 de la version 1.8.8).
+            versionName 1.9.0, versionCode 192 (supérieur au 191 de la version 1.8.9).
             L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.8.9.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.9.0.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
             3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
 
             ### Contrôles de livraison
-            - 200 tests unitaires réussis, 0 échec, 2 ignorés.
-            - 25 tests navigateur réussis, 0 échec, 11 ignorés.
+            - 206 tests unitaires réussis, 0 échec, 2 ignorés.
+            - 28 tests navigateur réussis, 0 échec, 11 ignorés.
             - Signature et version Android vérifiées.
             - Le workflow échoue si des médias ou des MP4 sont absents de l'APK.
             - Les six vidéos témoins de l'échauffement sont contrôlées nominativement.

@@ -61,7 +61,10 @@ export default function ModalRoot() {
   if (!modal) return null;
   const m = modal;
   const map = {
-    "move-scheduled": <MoveScheduleModal sessionId={m.sessionId} />,
+    "move-scheduled": <MoveScheduleModal key="move" sessionId={m.sessionId} />,
+    "copy-scheduled": (
+      <MoveScheduleModal key="copy" mode="copy" sessionId={m.sessionId} />
+    ),
     "edit-photo": <PhotoModal photoId={m.photoId} />,
     "day-schedule": <DayScheduleModal date={m.date} />,
     "source-extra": <SourceExtraModal event={m.event} />,

@@ -36,12 +36,18 @@ import { exerciseById } from "../data/library.js";
 import { today, uid, num } from "../engine/utils.js";
 import { actualSet, numeric } from "../engine/validation.js";
 import { completePlanned } from "../engine/plan-memory.js";
+import { DEFAULT_SPEECH_RATE, normalizeSpeechRate } from "../engine/speech.js";
 const Context = createContext(null);
 export const useApp = () => useContext(Context);
-export function speak(text, enabled = true) {
+let activeSpeechRate = DEFAULT_SPEECH_RATE;
+export function setSpeechRate(rate) {
+  activeSpeechRate = normalizeSpeechRate(rate);
+}
+export function speak(text, enabled = true, rate = activeSpeechRate) {
   if (!enabled) return;
+  const speechRate = normalizeSpeechRate(rate);
   if (isAndroid()) {
-    NativeSpeech.speak({ text }).catch(() => {});
+    NativeSpeech.speak({ text, rate: speechRate }).catch(() => {});
     return;
   }
   if (!globalThis.speechSynthesis) return;
@@ -49,7 +55,7 @@ export function speak(text, enabled = true) {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "fr-FR";
-    u.rate = 0.98;
+    u.rate = speechRate;
     const voice = speechSynthesis
       .getVoices()
       .find((v) => v.lang.startsWith("fr"));
@@ -159,6 +165,9 @@ export function AppProvider({ children }) {
     };
   }, [page, modal]);
   const p = state?.profiles[state.activeProfile];
+  useEffect(() => {
+    setSpeechRate(p?.preferences?.speechRate);
+  }, [p?.preferences?.speechRate]);
   const notify = useCallback((message, type = "success") => {
     clearTimeout(toastTimeout.current);
     setToast({ message, type, id: uid() });

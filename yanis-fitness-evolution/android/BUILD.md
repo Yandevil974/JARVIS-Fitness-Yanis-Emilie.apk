@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément                   | Valeur                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
-| versionName / versionCode | `1.8.9` / `191`                                                                                                                   |
+| versionName / versionCode | `1.9.0` / `192`                                                                                                                   |
 | Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
 | Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
@@ -31,6 +31,17 @@ les changer :
 ```bash
 ./gradlew assembleRelease -PYFE_STORE_PASSWORD='…' -PYFE_KEY_PASSWORD='…'
 ```
+
+## Vérifications de la version 1.9.0 (24/10/2026)
+
+- Déplacement inter-semaines : contenu et identifiant de la séance sélectionnée conservés, avec verrouillage du contenu source.
+- Copie depuis « Semaine complète » : blocs liés repris avec de nouveaux identifiants, sans modifier l’original ni transférer ses séries validées.
+- Effacement de l’historique JARVIS avec confirmation, limité aux messages du profil actif.
+- Vitesse d’élocution persistée et transmise à Android TextToSpeech comme à la synthèse du navigateur.
+- `npm test` — **208 tests : 206 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **28 réussites, 0 échec, 11 ignorés** (sauvegarde externe absente, comme auparavant).
+- `npm run build` — **1679 modules**, build réussi et `release/` régénéré.
+- Version Android : `versionName 1.9.0`, `versionCode 192`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release.
 
 ## Vérifications du correctif JARVIS 1.8.9 (24/10/2026)
 

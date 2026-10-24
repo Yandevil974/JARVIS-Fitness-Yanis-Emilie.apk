@@ -75,6 +75,7 @@ export function newProfile(id) {
       poolDays: em ? [4] : [],
       metconLevel: 0,
       voice: false,
+      speechRate: 1,
       notifications: false,
       reducedMotion: false,
     },

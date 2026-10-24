@@ -1563,6 +1563,47 @@ textarea.input {
   outline: 2px solid var(--mint);
   outline-offset: 4px;
 }
+.speech-rate-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.speech-rate-setting > span:first-child {
+  flex: 1;
+}
+.speech-rate-setting strong,
+.speech-rate-setting small {
+  display: block;
+}
+.speech-rate-setting strong {
+  font-size: 11px;
+}
+.speech-rate-setting small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 5px;
+}
+.speech-rate-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+.speech-rate-control input {
+  width: 112px;
+  accent-color: var(--mint-strong);
+}
+.speech-rate-control output {
+  min-width: 42px;
+  color: var(--text);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
 .dashboard-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 266px;
@@ -3046,6 +3087,14 @@ textarea.input {
 .chat-disclaimer > svg {
   width: 10px;
   margin-right: 3px;
+}
+.chat-history-actions {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 16px;
+}
+.chat-history-actions .btn {
+  max-width: 100%;
 }
 .chat-rail {
   display: flex;

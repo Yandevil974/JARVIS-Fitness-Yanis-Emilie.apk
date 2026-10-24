@@ -24,16 +24,42 @@ public class JarvisSpeechPlugin extends Plugin {
     private TextToSpeech engine;
     private boolean ready=false;
     private String pending=null;
+    private float pendingRate=1.0f;
     @Override public void load(){
         getActivity().runOnUiThread(()->{
             engine=new TextToSpeech(getContext(), status->{
-                if(status==TextToSpeech.SUCCESS){ready=true;engine.setLanguage(Locale.FRANCE);engine.setSpeechRate(0.98f);if(pending!=null){engine.speak(pending,TextToSpeech.QUEUE_FLUSH,null,"jarvis");pending=null;}}
+                if(status==TextToSpeech.SUCCESS){
+                    ready=true;
+                    engine.setLanguage(Locale.FRANCE);
+                    engine.setSpeechRate(1.0f);
+                    if(pending!=null){
+                        engine.setSpeechRate(pendingRate);
+                        engine.speak(pending,TextToSpeech.QUEUE_FLUSH,null,"jarvis");
+                        pending=null;
+                    }
+                }
             });
         });
     }
+    private float requestedRate(PluginCall call){
+        Double value=call.getDouble("rate",1.0);
+        float rate=value==null?1.0f:value.floatValue();
+        if(Float.isNaN(rate)||Float.isInfinite(rate))return 1.0f;
+        return Math.max(0.5f,Math.min(2.0f,rate));
+    }
     @PluginMethod public void speak(PluginCall call){
         final String text=call.getString("text","");
-        getActivity().runOnUiThread(()->{if(ready&&engine!=null)engine.speak(text,TextToSpeech.QUEUE_FLUSH,null,"jarvis");else pending=text;call.resolve();});
+        final float rate=requestedRate(call);
+        getActivity().runOnUiThread(()->{
+            if(ready&&engine!=null){
+                engine.setSpeechRate(rate);
+                engine.speak(text,TextToSpeech.QUEUE_FLUSH,null,"jarvis");
+            }else{
+                pending=text;
+                pendingRate=rate;
+            }
+            call.resolve();
+        });
     }
     @PluginMethod public void listen(PluginCall call){
         if(getPermissionState("microphone")!=PermissionState.GRANTED){requestPermissionForAlias("microphone",call,"microphoneResult");return;}

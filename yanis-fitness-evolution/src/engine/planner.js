@@ -1,4 +1,5 @@
 import {
+  copyScheduledFamily,
   moveScheduledFamily,
   rescheduleScheduledFamily,
 } from "./schedule-group.js";
@@ -660,6 +661,9 @@ export function shortenSession(session, minutes) {
 }
 export function moveSession(p, id, date, options) {
   return moveScheduledFamily(p, id, date, options);
+}
+export function copySession(p, id, date, options) {
+  return copyScheduledFamily(p, id, date, options);
 }
 
 /* Report simple d'une semaine : toutes les séances encore planifiées à

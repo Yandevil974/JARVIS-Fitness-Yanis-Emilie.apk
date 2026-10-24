@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useApp } from "../store/AppContext.jsx";
 import {
   Button,
+  Confirm,
   Icon,
   PageHeading,
   Panel,
@@ -41,7 +42,8 @@ export default function Jarvis() {
   const [input, setInput] = useState(""),
     [listening, setListening] = useState(false),
     [testing, setTesting] = useState(false),
-    [testState, setTestState] = useState(null);
+    [testState, setTestState] = useState(null),
+    [clearHistoryOpen, setClearHistoryOpen] = useState(false);
   const runTest = () => {
     if (testing || !brainReady(arena)) return;
     setTesting(true);
@@ -123,6 +125,17 @@ export default function Jarvis() {
     if (!input.trim()) return;
     sendCoach(input.trim());
     setInput("");
+  };
+  const clearHistory = () => {
+    updateProfile((q) => {
+      // Seule la conversation est effacée : programme, résultats et mémoires
+      // contrôlées appartiennent à des données distinctes.
+      q.messages = [];
+    });
+    setClearHistoryOpen(false);
+    notify(
+      "Historique JARVIS effacé. Vos entraînements, programmes et mémoires sont conservés.",
+    );
   };
   const chips = [
     "Décale mes séances de cette semaine à la semaine prochaine",
@@ -359,6 +372,16 @@ export default function Jarvis() {
             La dictée, si utilisée, peut utiliser le service vocal Android ou
             celui du navigateur, selon vos réglages.
           </div>
+          <div className="chat-history-actions">
+            <Button
+              variant="secondary small"
+              icon="Trash2"
+              disabled={!p.messages.length}
+              onClick={() => setClearHistoryOpen(true)}
+            >
+              Effacer l’historique de JARVIS
+            </Button>
+          </div>
         </Panel>
         <aside className="chat-rail">
           <Panel className="brain-panel">
@@ -536,6 +559,16 @@ export default function Jarvis() {
           </div>
         </aside>
       </div>
+      {clearHistoryOpen && (
+        <Confirm
+          title="Effacer l’historique de JARVIS ?"
+          description="Cette action supprime uniquement les messages de la conversation du profil actif. Vos entraînements, programmes, résultats, photos et mémoires contrôlées ne seront pas effacés."
+          danger
+          label="Effacer la conversation"
+          onClose={() => setClearHistoryOpen(false)}
+          onConfirm={clearHistory}
+        />
+      )}
     </>
   );
 }

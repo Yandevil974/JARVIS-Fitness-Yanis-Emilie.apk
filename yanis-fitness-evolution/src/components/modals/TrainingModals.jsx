@@ -1030,6 +1030,15 @@ export function PlannedModal({ sessionId }) {
                 Modifier
               </Button>
               <Button
+                variant="secondary"
+                icon="Copy"
+                onClick={() =>
+                  setModal({ type: "copy-scheduled", sessionId: s.id })
+                }
+              >
+                Copier vers un autre jour
+              </Button>
+              <Button
                 variant="primary"
                 icon="Play"
                 onClick={() =>

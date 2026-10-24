@@ -1,5 +1,6 @@
 import { addDays, dayDiff, today, uid } from "./utils.js";
 import { validDate } from "./validation.js";
+
 export function scheduledFamily(plan, id, { includeParents = true } = {}) {
   const items = plan?.sessions || [];
   let root = items.find((s) => s.id === id);
@@ -25,35 +26,33 @@ export function scheduledFamily(plan, id, { includeParents = true } = {}) {
   }
   return { root, items: items.filter((s) => ids.has(s.id)), ids };
 }
-function ensureEditable(p, family) {
+
+function ensureEditable(p, family, action = "déplacer") {
   if (family.items.some((s) => s.status !== "planned"))
     throw new Error(
-      "Un bloc lié possède déjà un résultat ou un statut historique. Il ne sera pas déplacé.",
+      `Un bloc lié possède déjà un résultat ou un statut historique. Il ne sera pas ${action === "copier" ? "copié" : "déplacé"}.`,
     );
   if (
     family.ids.has(p.workout?.planId) ||
     family.ids.has(p.timer?.meta?.planId)
   )
     throw new Error(
-      "Terminez la séance ou le protocole en cours avant de déplacer son programme.",
+      `Terminez la séance ou le protocole en cours avant de ${action} son programme.`,
     );
 }
+
 function minutes(time) {
   if (!/^([01]\d|2[0-3]):[0-5]\d$/.test(time || ""))
     throw new Error("Horaire invalide.");
   const [h, m] = time.split(":").map(Number);
   return h * 60 + m;
 }
-export function moveScheduledFamily(p, id, date, { time } = {}) {
-  if (!validDate(date) || date < today())
-    throw new Error("Choisissez une date valide à partir d’aujourd’hui.");
-  const plan = structuredClone(p.plan),
-    family = scheduledFamily(plan, id);
-  ensureEditable(p, family);
+
+function familyChanges(family, date, time) {
   const sourceDate = family.root.date,
     sourceTime = family.root.time || "18:00",
     shift = time == null ? 0 : minutes(time) - minutes(sourceTime);
-  const changes = family.items.map((s) => {
+  return family.items.map((s) => {
     const offset = dayDiff(s.date, sourceDate),
       clock = minutes(s.time || sourceTime) + shift,
       dayOffset = Math.floor(clock / 1440),
@@ -64,19 +63,51 @@ export function moveScheduledFamily(p, id, date, { time } = {}) {
       time: `${String(Math.floor(value / 60)).padStart(2, "0")}:${String(value % 60).padStart(2, "0")}`,
     };
   });
+}
+
+function validateChanges(
+  plan,
+  family,
+  changes,
+  { excludeFamily = true, pastAction = "déplacé" } = {},
+) {
   if (changes.some((c) => c.date < today()))
-    throw new Error("Un bloc lié serait déplacé dans le passé.");
+    throw new Error(`Un bloc lié serait ${pastAction} dans le passé.`);
   for (const c of changes)
     if (
       plan.sessions.some(
         (s) =>
-          !family.ids.has(s.id) && s.status === "planned" && s.date === c.date,
+          (!excludeFamily || !family.ids.has(s.id)) &&
+          s.status === "planned" &&
+          s.date === c.date,
       )
     )
       throw new Error(
         "Un autre entraînement est déjà prévu sur un des jours visés. Choisissez un créneau libre.",
       );
+}
+
+function sortPlan(plan) {
+  plan.sessions.sort(
+    (a, b) =>
+      a.date.localeCompare(b.date) ||
+      (a.time || "").localeCompare(b.time || ""),
+  );
+  return plan;
+}
+
+export function moveScheduledFamily(p, id, date, { time } = {}) {
+  if (!validDate(date) || date < today())
+    throw new Error("Choisissez une date valide à partir d’aujourd’hui.");
+  const plan = structuredClone(p.plan),
+    family = scheduledFamily(plan, id);
+  ensureEditable(p, family);
+  const changes = familyChanges(family, date, time);
+  validateChanges(plan, family, changes);
   for (const c of changes) {
+    // Un déplacement ne régénère jamais la séance depuis la semaine cible.
+    // Le verrou est posé sur chaque bloc, y compris lorsque seul l’horaire change.
+    c.item.contentLocked = true;
     if (c.item.date === c.date && c.item.time === c.time) continue;
     c.item.scheduleHistory = [
       ...(c.item.scheduleHistory || []),
@@ -91,16 +122,64 @@ export function moveScheduledFamily(p, id, date, { time } = {}) {
     c.item.originalDate = c.item.originalDate || c.item.date;
     c.item.date = c.date;
     c.item.time = c.time;
-    c.item.contentLocked = true;
     c.item.scheduleModified = true;
   }
-  plan.sessions.sort(
-    (a, b) =>
-      a.date.localeCompare(b.date) ||
-      (a.time || "").localeCompare(b.time || ""),
-  );
-  return plan;
+  return sortPlan(plan);
 }
+
+/** Duplicate exactly the selected planned family, never the source week template. */
+export function copyScheduledFamily(p, id, date, { time } = {}) {
+  if (!validDate(date) || date < today())
+    throw new Error("Choisissez une date valide à partir d’aujourd’hui.");
+  const plan = structuredClone(p.plan),
+    family = scheduledFamily(plan, id);
+  ensureEditable(p, family, "copier");
+  const changes = familyChanges(family, date, time),
+    changeById = new Map(changes.map((c) => [c.item.id, c]));
+  // Contrairement à un déplacement, l’original reste un éventuel conflit.
+  validateChanges(plan, family, changes, {
+    excludeFamily: false,
+    pastAction: "copié",
+  });
+
+  const remap = new Map(family.items.map((s) => [s.id, uid()])),
+    copiedAt = Date.now();
+  const copies = family.items.map((source) => {
+    const copy = structuredClone(source),
+      change = changeById.get(source.id);
+    copy.id = remap.get(source.id);
+    copy.copiedFrom = source.id;
+    copy.copiedFromDate = source.date;
+    copy.copiedAt = copiedAt;
+    copy.date = change.date;
+    copy.time = change.time;
+    copy.status = "planned";
+    copy.contentLocked = true;
+    // Les séries validées appartiennent à l’historique de l’original, jamais
+    // à une nouvelle séance planifiée.
+    copy.exercises = (copy.exercises || []).map((exercise) => ({
+      ...exercise,
+      sets: [],
+    }));
+    copy.scheduleHistory = [];
+    delete copy.scheduleModified;
+    delete copy.originalDate;
+    delete copy.performedDate;
+    delete copy.completedAt;
+    delete copy.rescheduledFrom;
+    if (copy.parentId) {
+      if (remap.has(copy.parentId)) copy.parentId = remap.get(copy.parentId);
+      else {
+        copy.detachedFrom = copy.parentId;
+        copy.parentId = null;
+      }
+    }
+    return copy;
+  });
+  plan.sessions.push(...copies);
+  return sortPlan(plan);
+}
+
 export function rescheduleScheduledFamily(p, id) {
   const plan = structuredClone(p.plan),
     family = scheduledFamily(plan, id);
@@ -153,6 +232,7 @@ export function rescheduleScheduledFamily(p, id) {
   }
   throw new Error("Aucun créneau libre pour la séance et ses blocs liés.");
 }
+
 export function removeScheduledFamily(p, id) {
   const plan = structuredClone(p.plan),
     family = scheduledFamily(plan, id, { includeParents: false });

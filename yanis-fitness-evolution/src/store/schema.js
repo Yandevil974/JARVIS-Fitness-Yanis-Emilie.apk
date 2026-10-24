@@ -248,6 +248,13 @@ export function validateState(input) {
     if (!object(p.preferences.muscleTargets))
       fail("Repères musculaires invalides.");
     array(p.preferences.poolDays, "Jours piscine", 7);
+    p.preferences.speechRate = numeric(
+      p.preferences.speechRate ?? 1,
+      0.5,
+      2,
+      "Vitesse d’élocution",
+      { optional: false },
+    );
     for (const [key, min, max] of [
       ["age", 10, 110],
       ["height", 100, 250],

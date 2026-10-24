@@ -478,6 +478,34 @@ function Equipment() {
               );
             }}
           />
+          <label className="speech-rate-setting">
+            <span>
+              <strong>Vitesse d’élocution</strong>
+              <small>
+                Ajustez le débit des annonces JARVIS sur Android et dans le
+                navigateur.
+              </small>
+            </span>
+            <span className="speech-rate-control">
+              <input
+                aria-label="Vitesse d’élocution"
+                type="range"
+                min="0.5"
+                max="2"
+                step="0.05"
+                value={p.preferences.speechRate ?? 1}
+                onChange={(e) => {
+                  const rate = Number(e.target.value);
+                  updateProfile((q) => {
+                    q.preferences.speechRate = rate;
+                  });
+                }}
+              />
+              <output aria-live="polite">
+                {Number(p.preferences.speechRate ?? 1).toFixed(2)}×
+              </output>
+            </span>
+          </label>
           <Switch
             checked={p.preferences.notifications}
             label="Notifications système"
