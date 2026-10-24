@@ -413,6 +413,60 @@ export function recommendLoad(p, target, date = today()) {
       "Consolidez la qualité et les répétitions avant la prochaine augmentation.",
   };
 }
+/**
+ * Prépare une adaptation de charge sur la séance demandée, sans créer de
+ * programme parallèle. Les séries déjà saisies et les exercices terminés ne
+ * sont jamais réécrits : seule la prescription de charge reste modifiable.
+ * Le résultat est un aperçu pur ; l'appelant décide quand l'appliquer.
+ */
+export function adaptSessionLoads(p, session, { exerciseId = null } = {}) {
+  const next = structuredClone(session);
+  const changes = [];
+  let matched = 0,
+    unavailable = 0,
+    skippedCompleted = 0;
+  for (const target of next.exercises || []) {
+    if (exerciseId && target.exerciseId !== exerciseId) continue;
+    matched++;
+    if ((target.sets || []).some((set) => set.completed)) {
+      skippedCompleted++;
+      continue;
+    }
+    const recommendation = recommendLoad(p, target);
+    if (recommendation.weight == null) {
+      unavailable++;
+      continue;
+    }
+    const before =
+      num(target.targetLoad) ?? num(target.recommendation?.weight) ?? null;
+    target.targetLoad = recommendation.weight;
+    target.recommendation = recommendation;
+    if (before == null || Math.abs(before - recommendation.weight) > 0.001)
+      changes.push({
+        exerciseId: target.exerciseId,
+        name:
+          exerciseById(target.exerciseId)?.name ||
+          target.sourceName ||
+          target.exerciseId,
+        unit: target.unit,
+        from: before,
+        to: recommendation.weight,
+        decision: recommendation.decision,
+      });
+  }
+  if (changes.length) {
+    next.userAdapted = true;
+    next.loadAdaptedAt = today();
+  }
+  return {
+    session: next,
+    changes,
+    matched,
+    unavailable,
+    skippedCompleted,
+  };
+}
+
 export function warmup(p, session) {
   const first = session?.exercises?.[0];
   const ex = first ? exerciseById(first.exerciseId) : null;

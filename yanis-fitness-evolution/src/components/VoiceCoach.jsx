@@ -14,6 +14,7 @@ import { useNow } from "./RestTimer.jsx";
 import { Icon } from "./ui.jsx";
 import { exerciseById as exerciseLookup } from "../data/library.js";
 import { coachingFor } from "../data/exercise-videos.js";
+import { historyFor } from "../engine/fitness.js";
 // Bandeau de guidage vocal de la séance (port de la 1.5.0). Annonces déduites
 // de l’état réel : exercice suivant, séries validées, compte à rebours de
 // repos, fin de repos, tempo prescrit. Jamais de phrase pendant la pause.
@@ -32,15 +33,26 @@ export default function VoiceCoach() {
   const index = workout?.currentIndex || 0,
     row = workout?.exercises?.[index],
     exercise = row ? exerciseLookup(row.exerciseId) : null,
-    completedSets = row?.sets.filter((s) => s.completed).length ?? 0;
+    completedSets = row?.sets.filter((s) => s.completed).length ?? 0,
+    previous =
+      exercise && row && row.unit !== "source à vérifier"
+        ? historyFor(
+            { ...p, workout: null },
+            exercise.id,
+            row.unit || exercise.unit,
+          ).at(-1)
+        : null;
   useEffect(() => {
     queue.current.reset();
   }, [workout?.id]);
   useEffect(() => {
     if (!enabled || !exercise || !row) return;
-    queue.current.say(exerciseIntroCue(exercise, row, { first: index === 0 }), {
-      enabled,
-    });
+    queue.current.say(
+      exerciseIntroCue(exercise, row, { first: index === 0, previous }),
+      {
+        enabled,
+      },
+    );
   }, [enabled, exercise?.id, index, workout?.id]);
   useEffect(() => {
     if (

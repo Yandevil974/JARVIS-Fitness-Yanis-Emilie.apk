@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément                   | Valeur                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
-| versionName / versionCode | `1.9.0` / `192`                                                                                                                   |
+| versionName / versionCode | `1.10.0` / `193`                                                                                                                   |
 | Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
 | Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
@@ -31,6 +31,16 @@ les changer :
 ```bash
 ./gradlew assembleRelease -PYFE_STORE_PASSWORD='…' -PYFE_KEY_PASSWORD='…'
 ```
+
+## Vérifications de la version 1.10.0 (24/10/2026)
+
+- Overlay de séance sur les démonstrations : série, objectif, récupération et progression issus de l’état réel de l’entraînement.
+- Adaptation de charge JARVIS sur la séance existante, avec aperçu et confirmation ; aucun programme parallèle ni historique réécrit.
+- Repère vocal facultatif citant la performance précédente avec la même unité, sans transformer les agrégats importés en records.
+- `npm test` — **215 tests : 213 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **30 réussites, 0 échec, 11 ignorés** (sauvegarde externe absente, comme auparavant).
+- `npm run build` — **1679 modules**, build réussi et `release/` régénéré.
+- Version Android : `versionName 1.10.0`, `versionCode 193`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release.
 
 ## Vérifications de la version 1.9.0 (24/10/2026)
 

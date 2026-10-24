@@ -4,6 +4,7 @@
 // repos, rappel de tempo — tout est déduit de la séance, jamais inventé.
 
 import { coachingFor } from "../data/exercise-videos.js";
+import { numberLabel } from "./utils.js";
 
 // Tempo "3111" / "3x11" (x = explosif) : [excentrique, bas, concentrique, haut].
 export function parseTempo(value) {
@@ -65,7 +66,38 @@ export function restCountdownCue(secondsRemaining, stepSeconds) {
                 };
   return null;
 }
-export function exerciseIntroCue(exercise, row, { first = false } = {}) {
+/**
+ * Repère vocal factuel : seules les séries réellement enregistrées, avec une
+ * unité déjà filtrée par l'appelant, sont citées. Les agrégats importés ne
+ * sont pas transformés en prétendue série individuelle.
+ */
+export function previousPerformanceCue(previous, unit) {
+  const sets = (previous?.sets || []).filter(
+    (set) => set.completed && !set.legacyAggregate && (set.count || 1) === 1,
+  );
+  const set = sets.at(-1);
+  if (!set) return null;
+  const weight =
+      set.weight == null || set.weight === "" ? null : Number(set.weight),
+    reps = set.reps == null || set.reps === "" ? null : Number(set.reps),
+    hasWeight = weight != null && Number.isFinite(weight) && weight >= 0,
+    hasReps = reps != null && Number.isFinite(reps) && reps > 0;
+  if (!hasWeight && !hasReps) return null;
+  const performance = hasWeight
+    ? `${numberLabel(weight)} ${unit === "kg/main" ? "kilos par haltère" : "kilos"}${hasReps ? ` pour ${numberLabel(reps)} répétitions` : ""}`
+    : `${numberLabel(reps)} répétitions`;
+  return {
+    key: `previous-${previous.sessionId}`,
+    text: `Votre repère précédent : ${performance}. Essayez d’égaler ce repère avec une exécution propre avant d’augmenter.`,
+    priority: 1,
+  };
+}
+
+export function exerciseIntroCue(
+  exercise,
+  row,
+  { first = false, previous = null } = {},
+) {
   if (!exercise) return null;
   const sets = row?.targetSets || exercise.defaultSets,
     scheme = row?.repScheme || exercise.repScheme,
@@ -80,6 +112,7 @@ export function exerciseIntroCue(exercise, row, { first = false } = {}) {
       weight != null
         ? `Charge suggérée : ${weight} kilos${exercise.unit === "kg/main" ? " par haltère" : ""}.`
         : null,
+      previousPerformanceCue(previous, row?.unit || exercise.unit)?.text,
       coaching?.spoken,
       tempo,
     ].filter(Boolean);

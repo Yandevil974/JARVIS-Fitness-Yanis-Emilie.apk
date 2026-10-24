@@ -26,6 +26,7 @@ export const COACH_ACTION_TYPES = Object.freeze([
   "plan",
   "replan",
   "shorten",
+  "adapt-loads",
   "fatigue",
   "move",
   "missed",

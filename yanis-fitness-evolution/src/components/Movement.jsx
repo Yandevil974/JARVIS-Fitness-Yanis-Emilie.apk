@@ -43,12 +43,19 @@ export function demonstration(exercise, movementName) {
   }
   return null;
 }
+function formatLiveCountdown(value) {
+  const seconds = Math.max(0, Math.ceil(Number(value) || 0));
+  return seconds >= 60
+    ? `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`
+    : `${seconds} s`;
+}
 export default function Movement({
   exercise,
   pattern,
   movementName,
   small = false,
   controls = true,
+  live = null,
 }) {
   const media = demonstration(exercise, movementName),
     image = useRef();
@@ -167,6 +174,44 @@ export default function Movement({
               alt="Sportive en posture de récupération et respiration calme"
               loading="lazy"
             />
+          </div>
+        )}
+        {live && (
+          <div className="movement-live" aria-label="Informations de la séance">
+            <div className="movement-live-metrics">
+              <span className="movement-live-metric">
+                <small>SÉRIE</small>
+                <strong>
+                  {live.completed >= live.totalSets
+                    ? "Terminé"
+                    : `${Math.min(live.completed + 1, live.totalSets)} / ${live.totalSets}`}
+                </strong>
+              </span>
+              <span className="movement-live-metric">
+                <small>OBJECTIF</small>
+                <strong>{live.target}</strong>
+              </span>
+            </div>
+            {live.rest != null && (
+              <div className="movement-live-rest">
+                <Icon name="Timer" size={14} />
+                <span>Récupération</span>
+                <strong>{formatLiveCountdown(live.rest)}</strong>
+              </div>
+            )}
+            <div className="movement-live-progress">
+              <div className="movement-live-progress-label">
+                <span>Progression de la séance</span>
+                <strong>{Math.round(live.progress)} %</strong>
+              </div>
+              <div className="movement-live-progress-track">
+                <span
+                  style={{
+                    width: `${Math.max(0, Math.min(100, live.progress))}%`,
+                  }}
+                />
+              </div>
+            </div>
           </div>
         )}
         {zoomable && (

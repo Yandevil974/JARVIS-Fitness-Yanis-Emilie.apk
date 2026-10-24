@@ -39,6 +39,7 @@ import {
   weeklyReport,
   personalRecords,
   stats,
+  adaptSessionLoads,
 } from "./fitness.js";
 import {
   loadForExercise,
@@ -529,6 +530,118 @@ const withoutNegatedSymptoms = (q) =>
     " ",
   );
 
+function loadLabel(value, unit) {
+  return `${numberLabel(value)} ${
+    unit === "kg/main"
+      ? "kg par haltère"
+      : unit === "kg ajouté"
+        ? "kg ajoutés"
+        : "kg"
+  }`;
+}
+
+// Une demande de charge est une adaptation de l'objet existant, jamais une
+// création de cycle. On calcule d'abord un aperçu afin que le texte et l'action
+// de confirmation décrivent exactement la même séance et le même exercice.
+function adaptiveLoadAnswer(
+  p,
+  q,
+  entities,
+  convo,
+  active,
+  upcoming,
+  currentExercise,
+  known,
+) {
+  const explicitExercise = [entities.exercise, known].find(
+      (exercise) => exercise && q.includes(norm(exercise.name)),
+    ),
+    exerciseQuery = q.replace(
+      /\b(?:charges?|poids|kilos?|surcharge|progression|1rm|adaptative|adaptive|progressive|intelligente)\b/g,
+      " ",
+    ),
+    requestedExercise =
+      explicitExercise ||
+      fuzzyExerciseFromWords(exerciseQuery) ||
+      (/cet exercice|celui ci|ce mouvement|exercice en cours/.test(q)
+        ? currentExercise
+        : null) ||
+      (convo.exercise ? exerciseById(convo.exercise) : null);
+  const candidates = [active, upcoming, ...(p.plan?.sessions || [])].filter(
+    (s, i, all) =>
+      s &&
+      all.findIndex((x) => x?.id === s.id) === i &&
+      (s.id === active?.id || (s.status === "planned" && s.date >= today())),
+  );
+  const session = requestedExercise
+    ? candidates.find((s) =>
+        s.exercises?.some((e) => e.exerciseId === requestedExercise.id),
+      ) ||
+      active ||
+      upcoming
+    : active || upcoming;
+  if (!session)
+    return {
+      text: "Je peux recalculer les charges d’une séance existante, mais je ne trouve aucune séance en cours ou à venir. Aucun nouveau programme n’a été créé.",
+      navigate: "program",
+    };
+  const preview = adaptSessionLoads(p, session, {
+    exerciseId: requestedExercise?.id || null,
+  });
+  if (!preview.matched)
+    return {
+      text: `${requestedExercise?.name || "Cet exercice"} n’est pas dans « ${session.name} ». Je ne vais pas créer une autre séance ou un autre programme pour le modifier. Précisez la séance concernée ou choisissez un exercice de cette séance.`,
+      exerciseIds: requestedExercise ? [requestedExercise.id] : undefined,
+      navigate: "program",
+    };
+  const scope = requestedExercise
+    ? `pour ${requestedExercise.name}`
+    : `pour « ${session.name} »`;
+  if (!preview.changes.length) {
+    const detail = preview.skippedCompleted
+      ? "Les séries déjà enregistrées sont conservées et ne sont pas réécrites."
+      : preview.unavailable
+        ? "Il manque encore une référence fiable (séries complètes avec RPE/RIR ou bilan 1RM) pour chiffrer une nouvelle charge."
+        : "Les charges calculées correspondent déjà aux prescriptions actuelles.";
+    return {
+      text: `J’ai vérifié les charges ${scope}. ${detail} Je n’ai rien régénéré et je n’ai pas modifié votre planning.`,
+      navigate: "training",
+    };
+  }
+  const lines = preview.changes
+    .slice(0, 4)
+    .map(
+      (change) =>
+        `• ${change.name} : ${
+          change.from == null
+            ? "à calibrer"
+            : loadLabel(change.from, change.unit)
+        } → ${loadLabel(change.to, change.unit)}`,
+    )
+    .join("\n");
+  const notes = [
+    preview.changes.length > 4
+      ? `… et ${preview.changes.length - 4} autre(s) ajustement(s).`
+      : null,
+    preview.unavailable
+      ? `${preview.unavailable} mouvement(s) sans référence fiable resteront à calibrer, sans valeur inventée.`
+      : null,
+    preview.skippedCompleted
+      ? "Les exercices avec des séries déjà saisies restent inchangés."
+      : null,
+  ]
+    .filter(Boolean)
+    .join(" ");
+  return {
+    text: `Je peux adapter les charges ${scope} à partir de vos séries enregistrées et de la récupération disponible :\n\n${lines}\n\n${notes ? notes + "\n\n" : ""}Je modifie uniquement les propositions de charge de cette séance : mêmes exercices, même ordre, même planning et historique intact. Confirmez pour appliquer.`,
+    action: {
+      type: "adapt-loads",
+      sessionId: session.id,
+      exerciseId: requestedExercise?.id || null,
+    },
+  };
+}
+
 export function interpretCommand(p, text) {
   const q = normalizeUtterance(text),
     entities = extractEntities(q, text),
@@ -549,7 +662,7 @@ export function interpretCommand(p, text) {
     return {
       text: "Je n’ai pas de proposition en attente à confirmer. Reformulez votre demande et je vous répondrai.",
     };
-  if (/bilan 1rm|refaire le test|reevaluation|recalcul(?:e|er) mes charges/.test(q)) {
+  if (/bilan 1rm|refaire le test|reevaluation/.test(q)) {
     const status = forceRevalState(p);
     return { text: `${status.label}. ${status.detail}`, navigate: "force" };
   }
@@ -569,16 +682,40 @@ export function interpretCommand(p, text) {
         (a, b) => b.name.length - a.name.length,
       )[0] || fuzzyExerciseFromWords(q);
   if (!q) return { text: "Dites-moi ce que vous souhaitez adapter." };
+  const safetyText = withoutNegatedSymptoms(q).replace(
+      /mal (?:dormi|recupere)/g,
+      "",
+    ),
+    hasPain =
+      /douleur|j ai mal|mal au|mal a la|mal aux|bless|vertige|oppression|malaise|essoufflement inhabituel/.test(
+        safetyText,
+      ),
+    loadWord = /charges?|poids|kilos?|surcharge|progression|1rm/.test(q),
+    adaptationWord =
+      /adapt|ajust|modifi|chang|recalcul|actualis|met(?:s|tre)? a jour|augmente|diminue|reduis|allege|optimis|personnalise/.test(
+        q,
+      ),
+    directAdaptive =
+      /charge adaptative|surcharge progressive|progression intelligente/.test(
+        q,
+      );
+  if (!hasPain && ((loadWord && adaptationWord) || directAdaptive))
+    return adaptiveLoadAnswer(
+      p,
+      q,
+      entities,
+      convo,
+      active,
+      upcoming,
+      currentExercise,
+      known,
+    );
   const topIntent = scoreIntents(q, entities)[0];
   if (topIntent && topIntent.id !== "pain") {
     const special = specialResponses(p, q, entities, topIntent.id, convo);
     if (special) return special;
   }
-  if (
-    /douleur|j ai mal|mal au|mal a la|mal aux|bless|vertige|oppression|malaise|essoufflement inhabituel/.test(
-      withoutNegatedSymptoms(q).replace(/mal (?:dormi|recupere)/g, ""),
-    )
-  )
+  if (hasPain)
     return {
       text: /poitrine|oppression|essoufflement inhabituel|malaise|vertige/.test(q)
         ? "Arrêtez l’effort. En cas de douleur thoracique, malaise ou difficulté respiratoire inhabituelle, demandez une aide médicale urgente (112 ou 15 en France). Je ne peux pas établir de diagnostic."
@@ -900,6 +1037,32 @@ export function applyCoachAction(p, action, extra = {}) {
           x.id === s.id ? r.session : x,
         );
       detail = `Séance adaptée à ${action.minutes} min : ${r.removedSets} séries en moins.`;
+      break;
+    }
+    case "adapt-loads": {
+      const s =
+        q.workout?.id === action.sessionId
+          ? q.workout
+          : q.plan?.sessions.find((s) => s.id === action.sessionId);
+      if (!s) throw new Error("La séance a changé. Refaites la demande.");
+      const result = adaptSessionLoads(q, s, {
+        exerciseId: action.exerciseId || null,
+      });
+      if (!result.changes.length)
+        throw new Error(
+          "Aucune charge nouvelle ne peut être calculée sur cette séance. Les séries et le programme restent inchangés.",
+        );
+      if (q.workout?.id === s.id) q.workout = result.session;
+      else
+        q.plan.sessions = q.plan.sessions.map((x) =>
+          x.id === s.id ? result.session : x,
+        );
+      detail = `Charges adaptées dans « ${s.name} » : ${result.changes
+        .slice(0, 3)
+        .map((change) => `${change.name} ${loadLabel(change.to, change.unit)}`)
+        .join(
+          " ; ",
+        )}${result.changes.length > 3 ? ` ; +${result.changes.length - 3} autre(s)` : ""}. Exercices, séries, planning et historique conservés.`;
       break;
     }
     case "fatigue":

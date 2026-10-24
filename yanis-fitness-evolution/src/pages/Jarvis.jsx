@@ -278,7 +278,9 @@ export default function Jarvis() {
                         ? "Renseigner la série"
                         : m.action.type === "shift-week"
                           ? "Décaler de 7 jours"
-                          : "Appliquer l’adaptation"}
+                          : m.action.type === "adapt-loads"
+                            ? "Appliquer les charges"
+                            : "Appliquer l’adaptation"}
                     </Button>
                   )}
                   {m.brain?.kind === "memory_confirmation_guard" && (

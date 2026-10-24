@@ -1,6 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { exerciseIntroCue, techniqueCue } from "../src/engine/voice-coach.js";
+import {
+  exerciseIntroCue,
+  techniqueCue,
+  previousPerformanceCue,
+} from "../src/engine/voice-coach.js";
 import { coachingFor } from "../src/data/exercise-videos.js";
 
 const exercises = [

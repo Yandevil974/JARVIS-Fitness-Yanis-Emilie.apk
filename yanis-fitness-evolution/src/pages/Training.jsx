@@ -49,6 +49,7 @@ import {
   today,
 } from "../engine/utils.js";
 import { weeklyCoachState } from "../engine/coach-state.js";
+import { advanceTimer } from "../engine/timer.js";
 export default function Training() {
   const { p, tab, setTab, startWorkout, setModal, openExercise } = useApp();
   const value = tab === "session" ? "overview" : tab || "overview";
@@ -259,6 +260,9 @@ function Workout() {
     [rir, setRir] = useState(""),
     [note, setNote] = useState("");
   const force = forceSummary(p, ex.id, target.unit);
+  const now = useNow(400);
+  const restTimer =
+    p.timer?.meta?.type === "rest" ? advanceTimer(p.timer, now) : null;
   // Charge conseillée par le moteur de référence 1RM (1.5.0) : sert à la fois
   // de pré-remplissage du formulaire et de suggestion affichée dans le rail.
   const schemeReps =
@@ -511,7 +515,19 @@ function Workout() {
                 onClick={() => openExercise(ex.id)}
               />
             </div>
-            <Movement exercise={ex} />
+            <Movement
+              exercise={ex}
+              live={{
+                completed: done,
+                totalSets: target.targetSets,
+                target: ex.timed
+                  ? `${target.seconds || 30} s`
+                  : `${schemeReps ?? target.repsLow} rép.`,
+                progress: total ? (allDone / total) * 100 : 0,
+                rest:
+                  restTimer && !restTimer.done ? restTimer.remaining : null,
+              }}
+            />
             <div className="technique-strip">
               <Icon name="Focus" size={18} />
               <p>

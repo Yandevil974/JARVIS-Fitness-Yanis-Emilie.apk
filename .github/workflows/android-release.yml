@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.9.0-schedule-copy-voice"
+        default: "v1.10.0-adaptive-session-guidance"
 
 permissions:
   contents: write
@@ -90,7 +90,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.9.0'" 2>/dev/null || echo 1.9.0)
+          VERSION=$(node -p "require('../package.json').version || '1.10.0'" 2>/dev/null || echo 1.10.0)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
           # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
@@ -141,31 +141,33 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.9.0 — Planning, copie et voix
+            ## Yanis Fitness Evolution 1.10.0 — Séance guidée et charges adaptatives
 
-            Cette version corrige le déplacement inter-semaines dans « Semaine complète » :
-            la séance sélectionnée conserve son identifiant, ses exercices, ses protocoles et son contenu,
-            sans être remplacée par le modèle de la semaine de destination.
+            Cette version regroupe les améliorations les plus directement utiles pendant l'entraînement,
+            sans régénérer le programme ni simuler de données de caméra, de sommeil ou de HRV.
 
             ### Nouveautés
-            - « Copier vers un autre jour » est disponible en cliquant sur une séance planifiée.
-            - Les blocs liés sont copiés ensemble avec de nouveaux identifiants ; l’original et ses historiques restent intacts.
-            - Les conflits de planning sont refusés sans modification partielle et les séries validées ne sont pas transférées.
-            - Le bouton « Effacer l’historique de JARVIS » demande confirmation et ne supprime que les messages du profil actif.
-            - La vitesse d’élocution est réglable dans Profil → Matériel & préférences et persistée sur Android et navigateur.
+            - Les démonstrations de la séance affichent la série en cours, l'objectif de répétitions ou de durée,
+              le compte à rebours de récupération et la progression globale.
+            - « Modifie mes charges », « Recalcule mes charges » ou une demande de charge adaptative produisent
+              un aperçu chiffré sur la séance existante, puis un bouton « Appliquer les charges ».
+            - L'adaptation utilise les séries réellement enregistrées, le RPE/RIR et la récupération disponible ;
+              elle conserve les exercices, leur ordre, le planning, les identifiants et l'historique.
+            - Les exercices ayant déjà des séries saisies ne sont pas réécrits et les charges inconnues ne sont pas inventées.
+            - Le guidage vocal peut citer le repère de la séance précédente avec la même unité, hors agrégats importés.
 
             **Mise à jour installable** : même application (`app.yanis.fitness.evolution`),
-            versionName 1.9.0, versionCode 192 (supérieur au 191 de la version 1.8.9).
+            versionName 1.10.0, versionCode 193 (supérieur au 192 de la version 1.9.0).
             L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.9.0.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.10.0.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
             3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
 
             ### Contrôles de livraison
-            - 206 tests unitaires réussis, 0 échec, 2 ignorés.
-            - 28 tests navigateur réussis, 0 échec, 11 ignorés.
+            - 213 tests unitaires réussis, 0 échec, 2 ignorés.
+            - 30 tests navigateur réussis, 0 échec, 11 ignorés.
             - Signature et version Android vérifiées.
             - Le workflow échoue si des médias ou des MP4 sont absents de l'APK.
             - Les six vidéos témoins de l'échauffement sont contrôlées nominativement.
