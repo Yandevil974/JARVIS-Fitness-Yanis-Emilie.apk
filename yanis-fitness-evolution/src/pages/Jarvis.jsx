@@ -125,6 +125,7 @@ export default function Jarvis() {
     setInput("");
   };
   const chips = [
+    "Décale mes séances de cette semaine à la semaine prochaine",
     "Je n’ai que 30 minutes",
     "Je suis fatigué",
     "Prépare 4 séances par semaine pendant 12 semaines",
@@ -196,10 +197,10 @@ export default function Jarvis() {
                       <Icon
                         name={
                           [
+                            "CalendarRange",
                             "Clock3",
                             "BatteryMedium",
                             "CalendarRange",
-                            "Repeat2",
                           ][i]
                         }
                         size={18}
@@ -262,7 +263,9 @@ export default function Jarvis() {
                     >
                       {m.action.type === "log"
                         ? "Renseigner la série"
-                        : "Appliquer l’adaptation"}
+                        : m.action.type === "shift-week"
+                          ? "Décaler de 7 jours"
+                          : "Appliquer l’adaptation"}
                     </Button>
                   )}
                   {m.brain?.kind === "memory_confirmation_guard" && (

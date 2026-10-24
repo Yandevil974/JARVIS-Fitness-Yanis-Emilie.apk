@@ -32,6 +32,7 @@ import {
   estimateMinutes,
   makeTarget,
   moveSession,
+  shiftProgramWeek,
 } from "./planner.js";
 import {
   recoveryScore,
@@ -605,14 +606,54 @@ export function interpretCommand(p, text) {
       },
     };
   }
+  // Une semaine non réalisée se reporte sans recréer le programme. Cette
+  // règle passe AVANT la création de cycle, qui ne doit jamais intercepter
+  // une simple demande de modification de dates.
+  const weekShiftCue = /decal|deplac|reprogram|report|repousse/.test(q),
+    nextWeekCue = /semaine (?:prochaine|suivante)/.test(q),
+    wholeWeekCue =
+      /mes seances|les seances|toutes|toute la semaine|cette semaine|ma semaine|semaine complete|programme|planning/.test(
+        q,
+      ),
+    missedWeekCue =
+      /pas pu|pas fait|manque|rate|loupe/.test(q) &&
+      /cette semaine/.test(q) &&
+      /mes seances|les seances|toutes/.test(q);
+  if ((weekShiftCue && nextWeekCue && wholeWeekCue) || missedWeekCue) {
+    const weekStart = monday(today()),
+      weekEnd = addDays(weekStart, 6),
+      planned = (p.plan?.sessions || []).filter(
+        (s) => s.status === "planned" && s.date >= weekStart,
+      ),
+      weekSessions = planned.filter((s) => s.date <= weekEnd),
+      futureCount = planned.length - weekSessions.length;
+    if (!weekSessions.length)
+      return {
+        text: "Je ne trouve aucune séance encore planifiée cette semaine. Aucun programme n’a été régénéré et rien n’a été déplacé.",
+        navigate: "program",
+      };
+    return {
+      text: `Je peux décaler de 7 jours les ${weekSessions.length} séance${weekSessions.length > 1 ? "s" : ""} encore planifiée${weekSessions.length > 1 ? "s" : ""} cette semaine.${futureCount ? ` Les ${futureCount} séance${futureCount > 1 ? "s" : ""} des semaines suivantes seront également décalée${futureCount > 1 ? "s" : ""} de 7 jours pour éviter les doublons.` : ""} Ce sera un simple décalage des dates : mêmes séances, mêmes exercices et mêmes prescriptions. Les séances terminées et l’historique restent intacts.`,
+      action: { type: "shift-week", weekStart, days: 7 },
+    };
+  }
+
   const frequency = q.match(/(\d+)\s*seances?/),
     weeks = q.match(/(\d+)\s*semaines?/),
     months = q.match(/(\d+)\s*mois/);
-  if (
-    (/programme|planifie|prepare|cree|organise/.test(q) &&
-      /semaine|mois|programme/.test(q)) ||
-    (frequency && /par semaine|semaines|mois/.test(q))
-  ) {
+  const planMutation =
+      /modifi|change|remplac|decal|deplac|report|repousse|supprime|enleve/.test(
+        q,
+      ),
+    explicitPlanRequest =
+      (/planifie|prepare|cree|creer|organise|construis|genere/.test(q) &&
+        /programme|planning|plan\b/.test(q)) ||
+      /nouveau programme|nouvelle programmation|nouveau planning/.test(q) ||
+      (frequency && /par semaine|semaines|mois/.test(q)) ||
+      (/je veux|je souhaite/.test(q) &&
+        /programme/.test(q) &&
+        /semaine|mois/.test(q));
+  if (explicitPlanRequest && !planMutation) {
     const f = Number(frequency?.[1] || p.user.frequency),
       w = Number(
         weeks?.[1] ||
@@ -656,7 +697,7 @@ export function interpretCommand(p, text) {
       action: { type: "shorten", minutes, sessionId: session.id },
     };
   }
-  if (/decale|deplace|reprogramme|report(?:e|er).*demain/.test(q)) {
+  if (/decal|deplac|reprogramme|reporte|reporter|repousse/.test(q)) {
     if (!upcoming)
       return {
         text: "Aucune prochaine séance à déplacer. Ouvrez le calendrier pour choisir une séance.",
@@ -664,6 +705,8 @@ export function interpretCommand(p, text) {
     let date = q.match(/\d{4}-\d{2}-\d{2}/)?.[0];
     if (/demain/.test(q)) date = addDays(today(), 1);
     if (/apres demain/.test(q)) date = addDays(today(), 2);
+    if (!date && /semaine (?:prochaine|suivante)/.test(q))
+      date = addDays(upcoming.date, 7);
     const day = WEEKDAYS.findIndex((d) => q.includes(d));
     if (!date && day >= 0) {
       const delta = (day - parseDate(today()).getDay() + 7) % 7;
@@ -724,6 +767,14 @@ export function interpretCommand(p, text) {
         action: { type: "focus", muscle: group[1] },
       };
   }
+  if (
+    /modifi|change|adapte/.test(q) &&
+    /programme|planning|exercice|seance/.test(q)
+  )
+    return {
+      text: "Que souhaitez-vous modifier exactement ? Je ne vais pas recréer votre programme au hasard. Vous pouvez me dire : « Décale mes séances de cette semaine à la semaine prochaine », « Remplace cet exercice » ou « Je n’ai que 30 minutes ».",
+      navigate: /programme|planning/.test(q) ? "program" : "training",
+    };
   if (/exercice|recherche|haut des pec|dos maison/.test(q)) {
     const found = searchExercises(text).slice(0, 6);
     return {
@@ -879,6 +930,16 @@ export function applyCoachAction(p, action, extra = {}) {
       detail =
         "Fatigue enregistrée ; volume adapté au maximum une fois par jour.";
       break;
+    case "shift-week": {
+      const result = shiftProgramWeek(
+        q,
+        action.weekStart || monday(today()),
+        action.days || 7,
+      );
+      q.plan = result.plan;
+      detail = `Semaine décalée de ${result.days} jours : ${result.weekMoved} séance${result.weekMoved > 1 ? "s" : ""} concernée${result.weekMoved > 1 ? "s" : ""} cette semaine, ${result.moved} au total avec la suite du programme. Contenu et historique inchangés.`;
+      break;
+    }
     case "move":
       q.plan = moveSession(q, action.sessionId, action.date);
       detail = `Séance déplacée au ${action.date}.`;

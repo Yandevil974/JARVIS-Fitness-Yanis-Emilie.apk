@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.8.8-jarvis-videos-test7"
+        default: "v1.8.9-jarvis-program-shifts"
 
 permissions:
   contents: write
@@ -90,7 +90,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.8.8'" 2>/dev/null || echo 1.8.8)
+          VERSION=$(node -p "require('../package.json').version || '1.8.9'" 2>/dev/null || echo 1.8.9)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
           # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
@@ -141,26 +141,31 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.8.8 — JARVIS Brain + vidéos test7
+            ## Yanis Fitness Evolution 1.8.9 — Corrections JARVIS et report de semaine
 
-            APK signé construit depuis la base 1.8.8, avec JARVIS Brain et les fonctions piscine conservés.
-            Cette livraison réintègre uniquement la couche vidéo/échauffement du point test7 validé :
-            protocole complet de 8 minutes, six étapes, vidéos dans le récapitulatif et le minuteur.
+            Cette version corrige le routage des demandes de modification : JARVIS ne transforme plus
+            « modifier mon programme », un remplacement d'exercice ou un déplacement de séance en
+            réponse générique de création de programme.
 
-            Les exercices biceps #02 et #09 restent bloqués côté vidéo (`disabled` / `pending`) :
-            aucun geste non validé n'est présenté comme une référence conforme.
+            ### Nouveau report simple
+            - « Décale mes séances de cette semaine à la semaine prochaine » propose un report de 7 jours.
+            - Le bouton « Décaler de 7 jours » applique la demande après confirmation.
+            - Les séances encore planifiées et la suite du programme suivent le même délai pour éviter les doublons.
+            - Exercices, prescriptions, contenu, identifiants et historique sont conservés ; aucune régénération.
+            - Une seule séance peut aussi être déplacée à la semaine prochaine.
 
             **Mise à jour installable** : même application (`app.yanis.fitness.evolution`),
-            versionName 1.8.8, versionCode 190 (supérieur au 189 de la précédente 1.8.8).
+            versionName 1.8.9, versionCode 191 (supérieur au 190 de la version 1.8.8).
             L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.8.8.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.8.9.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
             3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
 
             ### Contrôles de livraison
-            - Tests unitaires et build web exécutés avant l'assemblage.
+            - 200 tests unitaires réussis, 0 échec, 2 ignorés.
+            - 25 tests navigateur réussis, 0 échec, 11 ignorés.
             - Signature et version Android vérifiées.
             - Le workflow échoue si des médias ou des MP4 sont absents de l'APK.
             - Les six vidéos témoins de l'échauffement sont contrôlées nominativement.
