@@ -92,9 +92,15 @@
   nécessite l'accord de Yanis. #19 ne fait pas le retour au bas du 1¼ et #20
   sort du curl pour rejoindre un banc : ces deux sources sont à régénérer.
   Preuves dans `12-BICEPS-18-20-CONTROLE-MP4.md` ; aucune n'est intégrée.
-- **Manquent encore** : décision pour #18, nouvelles vidéos #19/#20, triceps
-  chromé, piscine, elliptique et étirements. Les versions `coached` #14→#17
-  restent utilisables ; les GIF #18→#20 restent les fallbacks.
+- **25/10/2026 — lot biceps #18→#20 intégré en `coached`** : après avoir reçu
+  les trois défauts détaillés, Yanis répond « Je valide les vidéos ». Les trois
+  sources sont donc utilisées avec posters, notices propres et audio prioritaire,
+  sans devenir `validated`. La vague 1 biceps couvre désormais **20/20 exercices**
+  avec leurs vidéos respectives ; les défauts et preuves restent dans
+  `12-BICEPS-18-20-CONTROLE-MP4.md`.
+- **Manquent encore** : triceps chromé, piscine, elliptique et étirements.
+  Les GIF d'origine restent conservés comme fallback et la vague 2 triceps est
+  la suite de production.
 
 ## Fichiers modifiés / créés
 

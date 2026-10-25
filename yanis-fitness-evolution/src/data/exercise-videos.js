@@ -287,6 +287,67 @@ export const EXERCISE_VIDEOS = {
         "Curl Zottman debout à deux haltères. Commencez en bas, paumes en supination. Montez en une seconde sans tourner les poignets. Haltères immobiles en haut, tournez les deux avant-bras en pronation, paumes vers le sol. Descendez en trois secondes en gardant la pronation. Haltères immobiles en bas, revenez en supination. C’est la fin de la répétition : ne reproduisez pas la remontée supplémentaire de la vidéo IA, qui termine dans la mauvaise position.",
     },
   },
+  // ---- #18→#20 intégration acceptée par Yanis le 25/10 ----
+  // L'accord porte sur l'utilisation des trois sources malgré leurs défauts
+  // documentés. Elles restent toutes "coached" : posters, notices et audio
+  // priment sur l'image ; aucune n'est déclarée techniquement "validated".
+  "curl-concentration": {
+    // B18. Réserves acceptées : pauses, descente rapide et rendu fluctuant.
+    src: "/videos/curl-concentration.mp4",
+    poster: "/videos/posters/curl-concentration.jpg",
+    label: "Vidéo IA · Curl concentration, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le bras contre la cuisse et respectez le tempo, sans copier les pauses de la vidéo IA.",
+      handCue:
+        "Un seul haltère en supination : paume vers le haut au départ, poignet droit, autre main sur la cuisse opposée.",
+      movementCue:
+        "Haut du bras contre l’intérieur de la cuisse. Montez en une seconde puis descendez en trois secondes, sans pause et en pliant seulement le coude.",
+      notice:
+        "La vidéo IA marque des pauses, descend trop vite et fait varier l’haltère et le halo. Suivez le poster et le descriptif audio : un seul haltère, supination fixe, montée en une seconde et descente en trois secondes.",
+      spoken:
+        "Curl concentration. Assis, jambes écartées, un seul haltère en supination, paume vers le haut au départ et poignet droit. Gardez le haut du bras appuyé contre l’intérieur de la cuisse et l’autre main sur la cuisse opposée. Montez en une seconde en pliant seulement le coude, puis descendez en trois secondes sans verrouiller ni marquer de pause. Ne reproduisez pas les pauses, la descente rapide ou les changements d’aspect de l’haltère de la vidéo IA.",
+    },
+  },
+  "curl-halteres-incline-prise-neutre": {
+    // B19. Réserve acceptée : le quart ne redescend pas et un cycle est ajouté.
+    src: "/videos/curl-halteres-incline-prise-neutre.mp4",
+    poster: "/videos/posters/curl-halteres-incline-prise-neutre.jpg",
+    label: "Vidéo IA · Curl incliné neutre 1¼, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Après le quart en bas, redescendez avant la remontée complète.",
+      handCue:
+        "Deux haltères sur banc incliné : prise neutre fixe, paumes face à face, pouces vers le haut et poignets droits.",
+      movementCue:
+        "Descendez en trois secondes. En bas, montez d’un quart en une seconde, redescendez en une seconde, puis remontez complètement en une seconde. Une seule répétition.",
+      notice:
+        "La vidéo IA ne redescend pas après le quart et ajoute une répétition. Suivez le poster et le descriptif audio : bas, quart, bas, puis haut ; ne copiez pas l’enchaînement visible.",
+      spoken:
+        "Curl haltères incliné en prise neutre, méthode un et un quart en bas. Sur banc incliné, deux haltères, paumes face à face, pouces vers le haut et poignets droits. Descendez en trois secondes jusqu’à presque tendre les coudes. En bas, remontez seulement d’un quart de la course en une seconde, puis redescendez complètement en une seconde. Remontez ensuite sur toute l’amplitude en une seconde. C’est une seule répétition : haut, bas, quart, bas, haut. Gardez la prise neutre et le haut des bras immobile. Ne reproduisez pas la remontée directe après le quart ni la deuxième répétition de la vidéo IA.",
+    },
+  },
+  "curl-barre": {
+    // B20. Réserves acceptées : cycle rapide, déplacement et fin hors curl.
+    src: "/videos/curl-barre.mp4",
+    poster: "/videos/posters/curl-barre.jpg",
+    label: "Vidéo IA · Curl barre droite, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Restez sur place et terminez en haut, sans suivre le déplacement de la vidéo IA.",
+      handCue:
+        "Une barre droite en supination : paumes sous la barre, mains à la largeur des épaules, poignets droits.",
+      movementCue:
+        "Debout et gainé, descendez en trois secondes puis remontez en une seconde en pliant seulement les coudes. Barre horizontale et buste fixe.",
+      notice:
+        "La vidéo IA est trop rapide puis part vers un banc et ne revient pas en haut. Ne reproduisez pas ce déplacement : restez sur place et suivez le poster et le descriptif audio.",
+      spoken:
+        "Curl barre debout avec une barre droite. Prenez la barre en supination, paumes sous la barre, mains à la largeur des épaules et poignets droits. Restez debout, gainé et sur place, avec les coudes près du corps. Descendez en trois secondes sans verrouiller, puis remontez en une seconde en pliant seulement les coudes, jusqu’en haut. Ne reproduisez pas la vitesse, la marche vers le banc ou la fin penchée de la vidéo IA. Chaque répétition se termine en haut, sans déplacement.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

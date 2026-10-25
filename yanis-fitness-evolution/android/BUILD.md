@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément                   | Valeur                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
-| versionName / versionCode | `1.11.0` / `194`                                                                                                                   |
+| versionName / versionCode | `1.12.0` / `195`                                                                                                                   |
 | Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
 | Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
@@ -31,6 +31,16 @@ les changer :
 ```bash
 ./gradlew assembleRelease -PYFE_STORE_PASSWORD='…' -PYFE_KEY_PASSWORD='…'
 ```
+
+## Vérifications de la version 1.12.0 (25/10/2026)
+
+- Intégration des biceps #18→#20 en `coached` après accord explicite de Yanis (« Je valide les vidéos »), sans transformer les réserves en validation technique.
+- Posters de référence, notices propres et descriptifs audio corrigés : tempo et appui cuisse pour #18, séquence **bas–quart–bas–haut** pour #19, position fixe et retour en haut pour #20.
+- La vague 1 biceps couvre 20/20 exercices ; les GIF d'origine restent conservés comme fallback et le lot #14→#17 est inchangé.
+- `npm test` — **219 tests : 217 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **32 réussites, 0 échec, 11 ignorés** ; le parcours #18→#20 vérifie aussi la notice du #19 dans la visionneuse.
+- `npm run build:portable && npm run build` — **1679 modules**, **935 assets**, index triés et identiques, hashes des MP4 et posters concordants entre sources, `public/` et `release/`.
+- Version Android : `versionName 1.12.0`, `versionCode 195`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release, avec contrôle nominatif des trois nouvelles vidéos et de leurs posters.
 
 ## Vérifications de la version 1.11.0 (25/10/2026)
 

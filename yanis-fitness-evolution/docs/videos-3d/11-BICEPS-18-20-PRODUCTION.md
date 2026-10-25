@@ -1,7 +1,7 @@
 # Biceps #18 à #20 — images et prompts de production
 
 Date : 25/10/2026
-Statut : **trois sources MP4 reçues et contrôlées le 25/10. #18 est seulement candidat à une intégration `coached` avec accord de Yanis ; #19 et #20 sont à régénérer. Aucune des trois n'est intégrée.** Voir `12-BICEPS-18-20-CONTROLE-MP4.md`.
+Statut : **trois sources contrôlées puis acceptées explicitement par Yanis le 25/10 (« Je valide les vidéos »). Elles sont toutes intégrées en `coached`, avec posters, notices et audio correctifs ; aucune n'est `validated`.** Réserves, preuves et conséquences dans `12-BICEPS-18-20-CONTROLE-MP4.md`. Les prompts renforcés restent disponibles pour d'éventuelles meilleures sources.
 
 > Yanis examine directement les photos et les zooms et signale les problèmes
 > éventuels, sans confirmation systématique photo par photo. Après réception

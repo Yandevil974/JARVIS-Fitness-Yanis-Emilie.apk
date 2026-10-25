@@ -44,7 +44,7 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
 3. **Vague 0** ✅ CLOSE le 21/10 : Curl haltères (FLUX, 4,7 s, alterné)
    + Back squat (PixVerse, 4 s, barre sur les trapèzes, filigrane bref).
    Les 2 vidéos sont dans les fiches + les séances.
-4. **Vague 1** : Biceps complet (20 exos, lots de 4 dans l'ordre du catalogue).
+4. **Vague 1 ✅ 20/20 intégrées au 25/10** : Biceps complet (20 exos, lots de 4 dans l'ordre du catalogue).
    Lot 1 : #03 + #04 + #08 ✅ 22/10 (#08 gardée : barre EZ acceptée).
    Lot 2 : #05 + #06 + #07 ✅ 22/10 (PixVerse 4 s, prises vérifiées en zoom).
    #02 + #09 PRIORITAIRES : reprise depuis test7 avec le personnage
@@ -60,11 +60,11 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    Yanis malgré les réserves. Posters de référence, notices propres et audio
    corrigé obligatoires ; aucun n'est `validated`. Défauts et preuves dans
    `10-BICEPS-14-17-CONTROLE-MP4.md`.
-   Lot 5 — préparation et contrôle 25/10 : photos, zooms et prompts #18→#20
-   dans `11-BICEPS-18-20-PRODUCTION.md`. Trois MP4 reçus et audités dans
-   `12-BICEPS-18-20-CONTROLE-MP4.md` : #18 en attente du choix de Yanis pour
-   un éventuel `coached`, #19/#20 à régénérer. Aucun n'est intégré ; les GIF
-   restent actifs comme fallback.
+   Lot 5 ✅ 25/10 : #18→#20 intégrés en `coached` après accord explicite de
+   Yanis (« Je valide les vidéos ») malgré les réserves documentées. Posters,
+   notices propres et audio corrigé obligatoires ; aucun n'est `validated`.
+   Preuves et conséquences dans `12-BICEPS-18-20-CONTROLE-MP4.md`. Les GIF
+   d'origine restent conservés comme fallback.
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
