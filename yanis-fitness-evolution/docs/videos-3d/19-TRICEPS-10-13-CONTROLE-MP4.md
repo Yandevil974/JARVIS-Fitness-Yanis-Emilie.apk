@@ -7,7 +7,7 @@
 | N° | Exercice | MP4 public | État |
 |---|---|---|---|
 | #10 | Développé couché prise serrée | `/videos/developpe-couche-prise-serree.mp4` | **Intégré `coached`** |
-| #11 | Extensions triceps haltères incliné | **Aucun MP4 déposé** | **Non intégré ; GIF conservé** |
+| #11 | Extensions triceps haltères incliné | **Aucun MP4 déposé** | **EN STAND-BY ; GIF conservé** |
 | #12 | Pushdown triceps câble | `/videos/pushdown-triceps-cable.mp4` | **Intégré `coached`** |
 | #13 | California press (barre au cou) | `/videos/california-press-barre-au-cou.mp4` | **Intégré `coached`** |
 
@@ -16,10 +16,12 @@ vaut accord d'intégration. **`coached` ne signifie pas validé techniquement** 
 les réserves #10/#12/#13 restent visibles et les consignes audio corrigées sont
 prioritaires sur les mouvements approximatifs de l'IA.
 
-**#11 reste sans MP4.** Sa photo canonique conserve le banc à 30°, les deux
-haltères en prise neutre, la barre fixe matelassée derrière/légèrement sous les
-coudes et l'orientation latérale de #03 — tête à gauche, pieds à droite — pour
-empêcher une transformation en développé couché. Préparation et prompt :
+**#11 reste sans MP4 et passe en stand-by à la demande de Yanis.** Ce point ne
+bloque plus la suite ; il sera rappelé lors des prochains échanges vidéo. Sa
+photo canonique conserve le banc à 30°, les deux haltères en prise neutre, la
+barre fixe matelassée derrière/légèrement sous les coudes et l'orientation
+latérale de #03 — tête à gauche, pieds à droite — pour empêcher une
+transformation en développé couché. Préparation et prompt :
 [`18-TRICEPS-10-13-PRODUCTION.md`](./18-TRICEPS-10-13-PRODUCTION.md).
 
 ## Correspondances des sources

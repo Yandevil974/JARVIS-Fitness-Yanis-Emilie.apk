@@ -18,9 +18,12 @@ Les quatre photos, leurs zooms et les prompts sont prêts pour inspection.
 > **État après dépôt de Yanis :** les MP4 #10, #12 et #13 ont été déposés dans
 > le commit `72a205d` puis intégrés en `coached` avec leurs réserves ; voir
 > [`19-TRICEPS-10-13-CONTROLE-MP4.md`](./19-TRICEPS-10-13-CONTROLE-MP4.md).
-> **#11 n'a pas encore de MP4** : sa future génération doit utiliser la photo
-> révisée avec appui des coudes et orientation latérale du #03, pour éviter un
-> développé couché. Les prompts ci-dessous restent les références de production.
+> **#11 est EN STAND-BY à la demande de Yanis** : aucun MP4 et aucune entrée
+> applicative. Ce point ne bloque plus la suite des lots. Yanis doit être
+> relancé de temps en temps lors des prochains échanges vidéo ; la reprise se
+> fera lorsqu'il déposera une nouvelle source ou demandera une nouvelle
+> génération. La photo avec appui des coudes et orientation latérale du #03 et
+> le prompt révisé restent conservés pour cette reprise.
 
 Les vidéos triceps #01→#09, tous les GIF d'origine, le catalogue et la version
 applicative **1.12.0/195** restent inchangés. La préparation et l'intégration
@@ -101,7 +104,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ---
 
-## #11 — Extensions avec deux haltères sur banc à 30° et appui des coudes — PRÊT
+## #11 — Extensions avec deux haltères sur banc à 30° et appui des coudes — EN STAND-BY
 
 ### Exécution précise attendue
 
