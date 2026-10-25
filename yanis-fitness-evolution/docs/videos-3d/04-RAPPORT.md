@@ -71,14 +71,20 @@
   après validation de Yanis ; #11/#13 en `coached` avec consignes audio
   prioritaires après acceptation explicite malgré les écarts relevés.
   Les MP4 et posters sont embarqués dans `public/` et `release/`.
-- **23/10/2026 — lot biceps #14→#17 préparé, non généré** : quatre images,
-  quatre zooms et les prompts Arena Video/PixVerse sont consignés dans
+- **23/10/2026 — lot biceps #14→#17 préparé** : quatre images, quatre zooms et
+  les prompts Arena Video/PixVerse sont consignés dans
   `09-BICEPS-14-17-PRODUCTION.md`. Les écarts des GIF #14/#15/#17 sont
-  documentés. Attente de la validation visuelle de Yanis avant toute vidéo.
-- **Manquent encore** : vidéos biceps #14→#20, triceps chromé, piscine,
-  elliptique et étirements. Pour #14→#17, valider d'abord les images ; ensuite
-  dépose les MP4 sur la branche, dis « c’est fait », je contrôle (grille B),
-  j’intègre et je teste.
+  documentés. Yanis examine directement les photos et signale les problèmes,
+  sans confirmation systématique photo par photo.
+- **25/10/2026 — quatre MP4 #14→#17 contrôlés, non intégrés** : les sources
+  reçues sur la branche présentent des défauts de cycle, de prise, de caméra ou
+  d'anatomie. Les six instants et zooms de chaque vidéo sont consignés dans
+  `10-BICEPS-14-17-CONTROLE-MP4.md` ; les prompts ont été renforcés pour la
+  régénération. Aucun statut `coached` ou `validated` n'a été attribué.
+- **Manquent encore** : vidéos conformes biceps #14→#20, triceps chromé,
+  piscine, elliptique et étirements. Pour #14→#17, régénérer avec les prompts
+  renforcés puis déposer les nouveaux MP4 sur la branche pour contrôle avant
+  intégration et tests.
 
 ## Fichiers modifiés / créés
 

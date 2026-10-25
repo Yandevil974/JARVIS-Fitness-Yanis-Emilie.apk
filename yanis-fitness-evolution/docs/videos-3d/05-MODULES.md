@@ -56,10 +56,11 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    consignes audio prioritaires, le tout validé pour intégration par Yanis.
    Images, zooms, prompts et réserves sont consignés dans
    `08-BICEPS-10-13-PRODUCTION.md`.
-   Lot 4 ⏳ 23/10 : #14→#17, images, zooms et prompts préparés dans
-   `09-BICEPS-14-17-PRODUCTION.md`. Les GIF incohérents de #14/#15/#17 sont
-   signalés ; les gestes retenus suivent les noms du catalogue. **Aucun MP4
-   avant validation explicite des visuels par Yanis.** Ensuite : #18 → #20.
+   Lot 4 ⏳ 25/10 : #14→#17, images, zooms et prompts préparés dans
+   `09-BICEPS-14-17-PRODUCTION.md`. Quatre MP4 reçus ont été contrôlés sur six
+   instants avec zooms : aucun n'est intégré en l'état. Défauts et preuves dans
+   `10-BICEPS-14-17-CONTROLE-MP4.md` ; prompts renforcés pour régénération.
+   Ensuite : #18 → #20.
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
