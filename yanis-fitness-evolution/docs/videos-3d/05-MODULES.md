@@ -73,6 +73,11 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    `validated`. Les défauts et preuves sont dans
    `14-TRICEPS-02-04-CONTROLE-MP4.md`. **#03/#05 sont reportés à la fin**, sans
    MP4, statut ou nouvelle génération ; #01 reste le seul triceps `validated`.
+   Lot #06→#09 : préparation partielle dans `15-TRICEPS-06-09-PRODUCTION.md`,
+   avec **#07/#08 prêts pour inspection** (photo, zoom, prompt) et **#06/#09
+   non retenus après zoom** — coudes trop ouverts pour #06, barre trop proche
+   du cou pour #09. Ces deux photos doivent être reprises avant toute vidéo ;
+   aucun MP4 ou statut n'est créé pour ce nouveau lot.
    **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

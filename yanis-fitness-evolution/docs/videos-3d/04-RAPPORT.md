@@ -111,9 +111,17 @@
   notices et audio correctifs sont actifs ; aucun des deux n'est `validated`.
   Preuves et contrôles dans `14-TRICEPS-02-04-CONTROLE-MP4.md`. #03/#05 sont
   reportés à la fin, sans MP4, statut ou nouvelle génération.
+- **25/10/2026 — triceps #06→#09, préparation partielle contrôlée** :
+  #07 pushdown et #08 unilatéral ont une photo, un zoom et un prompt prêts pour
+  inspection dans `15-TRICEPS-06-09-PRODUCTION.md`. Les candidates #06 et #09
+  sont écartées après contrôle : coudes trop ouverts pour #06, barre trop proche
+  du cou pour #09. Aucune n'est retenue dans le dépôt et aucune vidéo ne doit
+  être produite avant correction. Aucun MP4, statut ou changement applicatif ;
+  #03/#05 restent inchangés et reportés.
 - **Manquent encore** : les autres triceps, la piscine, l'elliptique et les
-  étirements. Les GIF d'origine restent conservés comme fallback ; seuls #03
-  et #05 du lot triceps en cours restent à traiter à la fin.
+  étirements. Les GIF d'origine restent conservés comme fallback. Dans le lot
+  #06→#09, #07/#08 attendent les MP4 de Yanis et #06/#09 doivent reprendre
+  leurs photos ; #03/#05 restent reportés à la fin.
 
 ## Fichiers modifiés / créés
 
