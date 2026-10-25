@@ -3,9 +3,13 @@
 Date de préparation : 25/10/2026
 
 Ce lot contient les quatre références de génération suivantes : **développé
-couché prise serrée**, **extensions avec deux haltères sur banc incliné à 30°**,
-**pushdown unilatéral à la poulie haute avec poignée D** et **California press
-du catalogue avec barre droite vers le cou**.
+couché prise serrée**, **extensions avec deux haltères sur banc incliné à 30°
+avec barre d'appui des coudes**, **pushdown unilatéral à la poulie haute avec
+poignée D** et **California press du catalogue avec barre droite vers le cou**.
+
+**Révision #11 demandée par Yanis :** la photo et le prompt reprennent le
+même type de barre fixe matelassée d'appui des coudes que le #03, sans changer
+le banc à 30°, les deux haltères ni la prise neutre.
 
 Les quatre photos, leurs zooms et les prompts sont prêts pour inspection.
 **Aucun MP4 de ce lot n'a encore été déposé ou intégré.** Les vidéos triceps
@@ -17,7 +21,7 @@ Les quatre photos, leurs zooms et les prompts sont prêts pour inspection.
 | # | Exercice et identifiant | Programmation réelle | GIF d'origine conservé | Référence retenue |
 |---|---|---|---|---|
 | #10 | Développé couché prise serrée — `developpe-couche-prise-serree` | 3 × 8-10 · `3010` · repos 60 s | `/media/5e38d08443e26319.gif` | Banc plat, barre droite, prise pronée à largeur d'épaules ou légèrement plus serrée, coudes près du buste et barre vers le bas de la poitrine. |
-| #11 | Extensions triceps haltères incliné — `extensions-triceps-halteres-incline` | 3 × 8-10 · `3010` · repos 60 s · banc à 30° | `/media/2ec2c2c1b7eb18a5.gif` | Deux haltères, prise neutre paumes face à face, hauts des bras fixes et descente à côté de la tête. Ne pas transformer en développé incliné. |
+| #11 | Extensions triceps haltères incliné — `extensions-triceps-halteres-incline` | 3 × 8-10 · `3010` · repos 60 s · banc à 30° | `/media/2ec2c2c1b7eb18a5.gif` | Deux haltères, prise neutre paumes face à face, hauts des bras fixes et descente à côté de la tête. À la demande de Yanis, ajouter **une barre fixe matelassée d'appui des coudes reliée au banc**, comme au #03. Ne pas transformer en développé incliné. |
 | #12 | Pushdown triceps câble — `pushdown-triceps-cable` | 3 × 8-10 · `3010` · repos 120 s | `/media/028724a3c679a470.gif` | Le GIF montre **une seule main et une poignée D**, et non une barre à deux mains : retenir un pushdown unilatéral avec le coude fixe contre les côtes. |
 | #13 | California press barre au cou — `california-press-barre-au-cou` | 4 × 12-15 · `3010` · repos 60 s · **« Ne pas trop charger ! »** | `/media/843d0c24da25ffee.gif` | Banc plat, barre droite en prise pronée rapprochée, coudes fléchis et barre vers le cou avec un espace sans contact. Ne pas substituer une variante au front puis à la poitrine. |
 
@@ -38,9 +42,15 @@ blanches, salle claire et triceps actifs rouge/orange.
 | # | Position de la photo | Photo seule | Zoom de contrôle |
 |---|---|---|---|
 | #10 | **Basse**, barre droite juste au-dessus du bas de la poitrine, coudes rentrés | [Photo #10](./vague2-triceps-10-developpe-serre.jpg) | [Zoom prise et trajectoire #10](./vague2-triceps-10-zoom-prise.jpg) |
-| #11 | **Haute**, dos appuyé sur le banc à 30°, deux haltères au-dessus des épaules en prise neutre | [Photo #11](./vague2-triceps-11-extensions-incline.jpg) | [Zoom bras et prises neutres #11](./vague2-triceps-11-zoom-30-neutre.jpg) |
+| #11 | **Haute**, dos appuyé sur le banc à 30°, deux haltères en prise neutre et **barre matelassée d'appui derrière/sous les coudes** | [Photo #11](./vague2-triceps-11-extensions-incline.jpg) | [Zoom prises et appui des coudes #11](./vague2-triceps-11-zoom-30-neutre.jpg) |
 | #12 | **Basse**, main droite sur une poignée D près de la cuisse, coude droit contre le buste | [Photo #12](./vague2-triceps-12-pushdown-poignee.jpg) | [Zoom poignée et coude #12](./vague2-triceps-12-zoom-poignee.jpg) |
 | #13 | **Basse**, de profil, coudes fléchis et barre droite au niveau du cou sans contact | [Photo #13](./vague2-triceps-13-california-cou.jpg) | [Zoom espace barre/cou #13](./vague2-triceps-13-zoom-cou.jpg) |
+
+Pour #11, la photo révisée reprend le
+[`montage d'appui du #03`](./vague2-triceps-03-appui-coudes.jpg) : une seule
+barre droite matelassée, fixée au châssis du banc par deux supports métalliques,
+placée immédiatement derrière et légèrement sous les deux coudes. Elle n'est
+pas tenue, ne porte aucun disque et ne touche ni les mains ni les avant-bras.
 
 Pour #13, les premières candidates bras tendus n'ont pas été retenues : elles
 ne montraient pas la particularité « barre au cou ». La photo finale reprend le
@@ -78,7 +88,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ---
 
-## #11 — Extensions avec deux haltères sur banc à 30° — PRÊT
+## #11 — Extensions avec deux haltères sur banc à 30° et appui des coudes — PRÊT
 
 ### Exécution précise attendue
 
@@ -86,20 +96,30 @@ Le dossier forme un angle bas d'environ **30° avec le sol**. Le dos, les
 omoplates et la tête restent appuyés ; les pieds restent au sol. Tenir deux
 haltères séparés, un dans chaque main, en prise neutre paumes face à face.
 
+À la demande de Yanis, la photo reprend le montage du #03 : **une seule barre
+droite matelassée d'appui des coudes**, fixée au châssis du banc par deux
+supports métalliques. Elle est placée immédiatement derrière et légèrement
+sous les deux coudes. L'arrière des hauts des bras, près des coudes, reste
+légèrement appuyé contre elle. Cette barre n'est pas une charge : elle ne
+porte aucun disque, n'est jamais tenue et ne touche ni les mains ni les
+avant-bras.
+
 1. La photo commence bras presque tendus au-dessus des épaules, haltères
-   séparés et poignets droits.
+   séparés, poignets droits et appui des coudes lisible.
 2. **Descendre en 3 s** en pliant seulement les coudes. Les haltères se
    dirigent à côté de la tête et légèrement derrière, vers les épaules, sans
-   contact avec la tête ni le dossier.
-3. Les hauts des bras gardent leur angle, sans descendre vers la poitrine et
-   sans s'ouvrir latéralement.
-4. **Remonter en 1 s** en dépliant seulement les coudes jusqu'à la photo. Ne
-   pas effectuer de développé incliné et ne pas réunir les deux haltères.
+   contact avec la tête, le dossier ou la barre d'appui.
+3. Les hauts des bras gardent leur angle et leur appui stable, sans descendre
+   vers la poitrine, sans s'ouvrir latéralement et sans soulever les coudes de
+   la barre pour créer un élan.
+4. **Remonter en 1 s** en dépliant seulement les coudes jusqu'à la photo. La
+   barre et ses deux fixations restent immobiles. Ne pas effectuer de
+   développé incliné et ne pas réunir les deux haltères.
 
 ### Prompt Arena Video / PixVerse — à copier avec la photo #11
 
 ```text
-Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, bright grey gym and stable red-orange glow on both triceps. START at the exact HIGH position in the image: lying back on an ADJUSTABLE BENCH INCLINED ABOUT 30 DEGREES ABOVE THE FLOOR, head, shoulders and back fully supported, feet planted, TWO separate matching dumbbells held above the shoulders with arms nearly extended. Maintain a TRUE NEUTRAL GRIP in both hands, palms facing each other, thumbs wrapped, wrists straight and a small constant gap between the dumbbells. PHASE 1 (3 seconds): bend ONLY the elbows and lower both dumbbells slowly beside the head and slightly behind it toward the shoulders, with a safe gap from the head and bench; the upper arms remain stationary and the elbows do not flare wide. PHASE 2 (1 second): extend ONLY the elbows and raise the same two dumbbells along the same arcs back to the supplied high image. Keep the 30-degree back angle, head, torso, hips, feet and camera fixed. Show one continuous 3-second-down / 1-second-up repetition, about 4 seconds, implementing tempo 3010 without a pause. This is an INCLINE TRICEPS EXTENSION, NOT an incline chest press: do not lower the upper arms or dumbbells toward the chest, do not press from the shoulders and do not change the bench to flat, 45 degrees or upright. Exactly two dumbbells, no barbell, no EZ bar, no cable, no joined dumbbells, no head contact, no extra limbs or fingers, no camera movement, no text, no logo, no watermark.
+Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, bright grey gym and stable red-orange glow on both triceps. START at the exact HIGH position in the image: lying back on an ADJUSTABLE BENCH INCLINED ABOUT 30 DEGREES ABOVE THE FLOOR, head, shoulders and back fully supported, feet planted, TWO separate matching dumbbells held above the shoulders with arms nearly extended. Maintain a TRUE NEUTRAL GRIP in both hands, palms facing each other, thumbs wrapped, wrists straight and a small constant gap between the dumbbells. REQUIRED #03-TYPE BENCH-MOUNTED ELBOW SUPPORT: exactly ONE straight horizontal PADDED SUPPORT BAR is fixed to the inclined bench frame by TWO rigid metal posts and sits transversely immediately BEHIND AND SLIGHTLY UNDER BOTH ELBOWS at distal-upper-arm level. The backs of both upper arms near the elbows rest lightly against it throughout. This is stationary support equipment, NOT a held weight: no plates, no hands gripping it, no contact with the hands or forearms, and no obstruction of either dumbbell's path beside the head. PHASE 1 (3 seconds): bend ONLY both elbows and lower both dumbbells slowly beside the head and slightly behind it toward the shoulders, with a safe gap from the head, bench and support bar; the upper arms and both elbow contact points remain stationary against the padded support, without flaring or lifting off it. PHASE 2 (1 second): extend ONLY both elbows and raise the same two dumbbells along the same arcs back to the supplied high image. Keep the 30-degree back angle, neutral grips, head, torso, hips, feet, padded support bar, both bench attachments and camera fixed. Show one continuous 3-second-down / 1-second-up repetition, about 4 seconds, implementing tempo 3010 without a pause. This is an INCLINE TRICEPS EXTENSION WITH ELBOW SUPPORT, NOT an incline chest press: do not lower the upper arms or dumbbells toward the chest, do not press from the shoulders and do not change the bench to flat, 45 degrees or upright. Exactly two dumbbells and one unweighted padded support bar; no barbell or EZ bar in the hands, no cable, no joined dumbbells, no support disappearing or moving to the head, neck or back, no head contact, no extra limbs or fingers, no camera movement, no text, no logo, no watermark.
 ```
 
 ---
@@ -166,8 +186,9 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied SIDE
   descente en 3 s vers le bas de la poitrine et remontée en 1 s ; aucune
   trajectoire vers le cou ou le front.
 - **#11** : banc bas à 30°, deux haltères et prise neutre dans toutes les
-  frames ; hauts des bras fixes, descente en 3 s à côté de la tête et aucune
-  transformation en développé incliné.
+  frames ; barre matelassée et deux fixations au banc visibles et immobiles,
+  appuis des coudes stables, hauts des bras fixes, descente en 3 s à côté de
+  la tête sans heurter le support et aucune transformation en développé incliné.
 - **#12** : une seule poignée D, un seul bras actif et un câble venant d'en
   haut ; coude fixe contre les côtes, retour contrôlé en 3 s, extension en 1 s,
   aucun changement de bras dans le cycle.
@@ -189,7 +210,8 @@ réserves, mais ne doit pas être déclarée `validated` sans conformité réell
   le bas de la poitrine.
 - [#11 — Incline Dumbbell Tricep Extension, Muscle & Strength](https://www.muscleandstrength.com/exercises/incline-two-arm-dumbbell-extension.html) :
   banc à faible inclinaison, deux haltères, prise neutre et descente vers les
-  épaules par flexion des coudes.
+  épaules par flexion des coudes. La barre d'appui est une adaptation
+  personnalisée demandée par Yanis, reprise du montage #03.
 - [#12 — Single Arm Cable Tricep Extension, Gravitus](https://gravitus.com/guides/exercises/single-arm-cable-tricep-extension/) :
   poignée D à poulie haute, coude fixé contre le corps et extension unilatérale.
 - [#13 — California triceps press, AAFS](https://www.aafs.net/blog/california-press-the-best-exercise-for-triceps/) :
@@ -201,9 +223,10 @@ réserves, mais ne doit pas être déclarée `validated` sans conformité réell
 
 - Les quatre identifiants, GIF, séries, répétitions, tempos, repos et notes ont
   été relus depuis `EXERCISE_MAP` avec Node et correspondent au tableau.
-- Les **11 liens locaux** du document ont été résolus, sans fichier manquant.
+- Les **12 liens locaux** du document ont été résolus, sans fichier manquant.
 - Les quatre photos, quatre zooms et deux planches sont des JPEG lisibles ;
-  les planches et les détails de prise ont été inspectés visuellement.
+  les planches, les détails de prise et l'appui des coudes du #11 ont été
+  inspectés visuellement.
 - Le contrôle whitespace du nouveau Markdown ne signale aucune erreur.
 - Le périmètre Git est limité à ce document et à ces images : aucun changement
   de `src/`, de média public, de build, de MP4 ou d'APK. Les tests applicatifs
