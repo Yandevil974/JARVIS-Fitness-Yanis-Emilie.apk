@@ -2,11 +2,18 @@
 
 Date : 25/10/2026
 Source : commit utilisateur `3b36ada` (« Add files via upload »)
-Décision : **aucun des quatre MP4 n'est intégré ou marqué `validated` en l'état.**
+Décision technique : **aucun des quatre MP4 n'est marqué `validated`.**
+Décision d'exploitation le 25/10 : Yanis valide explicitement leur intégration,
+faute de meilleure version disponible. Ils sont donc intégrés en **`coached`**,
+avec posters de référence, notices propres à chaque défaut et audio prioritaire.
 
-Les fichiers restent disponibles dans `controle-14-17/` pour comparaison et
-reprise. Leur présence dans la documentation ne les rend pas jouables dans
-l'application. Les GIF existants demeurent les visuels utilisés pour #14 à #17.
+> Accord de Yanis : « Je valide les 4 vidéos car je ne peux pas faire mieux ».
+> Cet accord autorise leur utilisation accompagnée ; il ne transforme pas les
+> défauts relevés ci-dessous en validation anatomique ou technique.
+
+Les fichiers restent disponibles dans `controle-14-17/` pour comparaison. Les
+copies embarquées utilisent les identifiants du catalogue et les GIF d'origine
+restent conservés comme solution de repli.
 
 ## Méthode de contrôle
 
@@ -28,12 +35,12 @@ l'application. Les GIF existants demeurent les visuels utilisés pour #14 à #17
 
 ## Résultats
 
-| # | Planche des six instants | Zooms | Verdict |
+| # | Planche des six instants | Zooms | Statut après accord de Yanis |
 |---|---|---|---|
-| #14 | [Contrôle](./controle-14-17/biceps-14-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-14-zooms.jpg) | **Non intégré — cycle incomplet** |
-| #15 | [Contrôle](./controle-14-17/biceps-15-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-15-zooms.jpg) | **Non intégré — athlète et prise non stables** |
-| #16 | [Contrôle](./controle-14-17/biceps-16-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-16-zooms.jpg) | **Non intégré — anatomie et caméra non stables** |
-| #17 | [Contrôle](./controle-14-17/biceps-17-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-17-zooms.jpg) | **Non intégré — séquence et fin non conformes** |
+| #14 | [Contrôle](./controle-14-17/biceps-14-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-14-zooms.jpg) | **`coached` — cycle incomplet signalé** |
+| #15 | [Contrôle](./controle-14-17/biceps-15-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-15-zooms.jpg) | **`coached` — athlète et prise non stables signalés** |
+| #16 | [Contrôle](./controle-14-17/biceps-16-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-16-zooms.jpg) | **`coached` — anatomie et caméra non stables signalées** |
+| #17 | [Contrôle](./controle-14-17/biceps-17-six-instants.jpg) | [Mains et bras](./controle-14-17/biceps-17-zooms.jpg) | **`coached` — séquence et fin non conformes signalées** |
 
 ### #14 — Curl incliné avec supination
 
@@ -87,15 +94,19 @@ seconde montée ; caméra fixe ; dernière position basse identique à la photo.
 Prévoir 6 à 8 secondes pour laisser les rotations et la descente contrôlée
 lisibles.
 
-## Conséquence pour l'application
+## Conséquence pour l'application après accord de Yanis
 
-- Aucun ajout dans `public/videos/` ou `release/videos/`.
-- Aucune entrée ajoutée dans `src/data/exercise-videos.js`.
-- Aucun statut `coached` ou `validated` attribué.
-- Aucun changement de version et aucune nouvelle release.
-- Les quatre sources sont conservées pour audit, mais une nouvelle génération
-  est nécessaire avant une intégration propre.
-
-Si Yanis souhaite malgré tout exploiter une séquence imparfaite comme support
-`coached`, cela nécessitera son accord explicite et une consigne corrective
-adaptée ; ce statut ne sera pas déduit automatiquement de ce contrôle.
+- Les quatre MP4 sont copiés dans `public/videos/` et dans le build `release/`
+  avec leurs identifiants catalogue, sans modifier les sources d'audit.
+- Les quatre posters sont les images de référence déjà préparées, afin de
+  montrer la position et la prise à reproduire avant la lecture.
+- Les entrées de `src/data/exercise-videos.js` sont toutes en `coached`, avec
+  `handCue`, `movementCue`, `notice` et `spoken` propres à chaque exercice.
+- Le titre de la notice est personnalisable dans `Movement.jsx` et dans la
+  visionneuse : #14/#15/#16/#17 ne reçoivent donc pas un avertissement générique
+  inadapté sur la seule rotation des mains.
+- Le guidage vocal reprend automatiquement le descriptif corrigé. Aucun statut
+  `validated` n'est attribué et les GIF d'origine ne sont pas supprimés.
+- Les tests unitaires vérifient les quatre associations, les réserves et la
+  reprise vocale ; le test Playwright vérifie leur affichage dans la
+  bibliothèque et la visionneuse.

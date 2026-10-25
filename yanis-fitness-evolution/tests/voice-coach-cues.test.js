@@ -86,6 +86,47 @@ test("les Zottman dictent le départ proné et les rotations uniquement à l’a
   }
 });
 
+test("les biceps #14 à #17 dictent leur exécution corrigée", () => {
+  const coachedExercises = [
+    {
+      id: "curl-halteres-incline-supination",
+      name: "Curl haltères incliné, supination",
+      defaultSets: 5,
+      repScheme: "8-10",
+      tempo: "3010",
+    },
+    {
+      id: "curl-marteau",
+      name: "Curl marteau",
+      defaultSets: 4,
+      repScheme: "12,10,8,15",
+      tempo: "3010",
+    },
+    {
+      id: "curl-scott-90-haltere-supination",
+      name: "Curl Scott 90° haltère supination",
+      defaultSets: 4,
+      repScheme: "12,10,8,15",
+      tempo: "3010",
+    },
+    {
+      id: "curl-zottman",
+      name: "Curl Zottman",
+      defaultSets: 3,
+      repScheme: "10-12",
+      tempo: "3010",
+    },
+  ];
+  for (const exercise of coachedExercises) {
+    const coaching = coachingFor(exercise);
+    assert.ok(coaching, `descriptif absent : ${exercise.id}`);
+    assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
+    assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
+    assert.match(coaching.spoken, /Ne reproduisez pas/i, exercise.id);
+    assert.ok(coaching.title, `titre de réserve absent : ${exercise.id}`);
+  }
+});
+
 test("les exercices sans correction spéciale gardent leur consigne tempo", () => {
   const exercise = {
     id: "back-squat",

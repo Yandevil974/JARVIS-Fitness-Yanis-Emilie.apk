@@ -11,7 +11,7 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.10.0-adaptive-session-guidance"
+        default: "v1.11.0-biceps-14-17-coached"
 
 permissions:
   contents: write
@@ -90,7 +90,7 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.10.0'" 2>/dev/null || echo 1.10.0)
+          VERSION=$(node -p "require('../package.json').version || '1.11.0'" 2>/dev/null || echo 1.11.0)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
           # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
@@ -130,7 +130,12 @@ jobs:
           for witness in warmup-apercu-complet warmup-mise-en-route warmup-mobilite-epaules warmup-mobilite-hanches warmup-activation-scapulaire warmup-pont-fessier; do
             unzip -l "$APK" | grep -q "assets/public/videos/$witness.mp4" || { echo "Video temoin absente de l'APK: $witness.mp4"; exit 1; }
           done
-          echo "Controle 'rien ne manque' + GIFs et videos witnesses : OK"
+          # Les quatre MP4 biceps #14→#17 et leurs posters de référence sont obligatoires.
+          for witness in curl-halteres-incline-supination curl-marteau curl-scott-90-haltere-supination curl-zottman; do
+            unzip -l "$APK" | grep -q "assets/public/videos/$witness.mp4" || { echo "Video biceps absente de l'APK: $witness.mp4"; exit 1; }
+            unzip -l "$APK" | grep -q "assets/public/videos/posters/$witness.jpg" || { echo "Poster biceps absent de l'APK: $witness.jpg"; exit 1; }
+          done
+          echo "Controle 'rien ne manque' + GIFs, videos et posters witnesses : OK"
 
       - name: Publish GitHub Release with APK
         uses: softprops/action-gh-release@v2
@@ -141,37 +146,45 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.10.0 — Séance guidée et charges adaptatives
+            ## Yanis Fitness Evolution 1.11.0 — Biceps #14 à #17 accompagnés
 
-            Cette version regroupe les améliorations les plus directement utiles pendant l'entraînement,
-            sans régénérer le programme ni simuler de données de caméra, de sommeil ou de HRV.
+            Cette version embarque les quatre meilleures vidéos disponibles, dont Yanis a validé
+            l'utilisation avec des consignes correctives. Elle conserve toutes les fonctions de la 1.10.0,
+            le programme, le planning et les données existantes.
 
             ### Nouveautés
-            - Les démonstrations de la séance affichent la série en cours, l'objectif de répétitions ou de durée,
-              le compte à rebours de récupération et la progression globale.
-            - « Modifie mes charges », « Recalcule mes charges » ou une demande de charge adaptative produisent
-              un aperçu chiffré sur la séance existante, puis un bouton « Appliquer les charges ».
-            - L'adaptation utilise les séries réellement enregistrées, le RPE/RIR et la récupération disponible ;
-              elle conserve les exercices, leur ordre, le planning, les identifiants et l'historique.
-            - Les exercices ayant déjà des séries saisies ne sont pas réécrits et les charges inconnues ne sont pas inventées.
-            - Le guidage vocal peut citer le repère de la séance précédente avec la même unité, hors agrégats importés.
+            - #14 : curl haltères incliné avec supination progressive.
+            - #15 : curl marteau debout, prise neutre fixe.
+            - #16 : curl Scott 90° à un haltère, supination fixe.
+            - #17 : curl Zottman debout à deux haltères.
+            - Chaque vidéo possède son poster de référence, une notice propre à ses défauts et un descriptif
+              vocal corrigé, également disponible dans la visionneuse agrandie.
+            - Les quatre vidéos sont en statut **coached** : elles restent jouables, mais le texte et l'audio
+              priment sur les imperfections visuelles. Aucune n'est déclarée techniquement `validated`.
+
+            ### Réserves visibles et documentées
+            - #14 : la source termine en bas ; l'audio impose le retour en haut.
+            - #15 : le rendu et la prise varient ; la consigne impose le marteau neutre fixe.
+            - #16 : la caméra dérive et la coloration migre sur la cuisse ; le repère reste le biceps du bras posé.
+            - #17 : une remontée supplémentaire termine en haut ; la répétition correcte finit en bas en supination.
 
             **Mise à jour installable** : même application (`app.yanis.fitness.evolution`),
-            versionName 1.10.0, versionCode 193 (supérieur au 192 de la version 1.9.0).
+            versionName 1.11.0, versionCode 194 (supérieur au 193 de la version 1.10.0).
             L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.10.0.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.11.0.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
             3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
 
             ### Contrôles de livraison
-            - 213 tests unitaires réussis, 0 échec, 2 ignorés.
-            - 30 tests navigateur réussis, 0 échec, 11 ignorés.
+            - 215 tests unitaires réussis, 0 échec, 2 ignorés.
+            - 31 tests navigateur réussis, 0 échec, 11 ignorés.
             - Signature et version Android vérifiées.
             - Le workflow échoue si des médias ou des MP4 sont absents de l'APK.
-            - Les six vidéos témoins de l'échauffement sont contrôlées nominativement.
+            - Les six vidéos d'échauffement, les quatre vidéos biceps et leurs posters sont contrôlés nominativement.
 
             ### Bon à savoir
+            - Suivre le poster et le descriptif audio plutôt que les défauts visibles des séquences IA.
             - L'application **JARVIS Fitness** (`app.jarvis.fitness`) est un paquet **différent** : elle n'est jamais modifiée ni remplacée par celle-ci.
           generate_release_notes: true

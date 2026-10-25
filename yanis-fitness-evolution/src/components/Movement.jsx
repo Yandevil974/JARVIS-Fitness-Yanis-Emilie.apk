@@ -226,6 +226,8 @@ export default function Movement({
                 poster: video?.poster || null,
                 title: video?.label || media?.name || exercise?.name,
                 notice: video?.status === "coached" ? coaching?.notice : null,
+                noticeTitle:
+                  video?.status === "coached" ? coaching?.title : null,
                 spoken: video?.status === "coached" ? coaching?.spoken : null,
                 motion: video || media ? null : motion || null,
               })
@@ -267,7 +269,10 @@ export default function Movement({
       )}
       {video?.status === "coached" && coaching && !small && (
         <p className="movement-media-note movement-coaching-note">
-          <strong>Ne copiez pas la rotation des mains de la vidéo IA.</strong>{" "}
+          <strong>
+            {coaching.title ||
+              "Ne copiez pas la rotation des mains de la vidéo IA."}
+          </strong>{" "}
           {coaching.notice}
         </p>
       )}

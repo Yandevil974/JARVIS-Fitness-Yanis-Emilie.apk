@@ -795,7 +795,15 @@ export function CooldownModal({ session }) {
 }
 // Visionneuse : agrandit une vidéo 3D, une image d’étape,
 // ou agrandit l’animation créée.
-export function ImageViewer({ src, title, motion, poster, notice, spoken }) {
+export function ImageViewer({
+  src,
+  title,
+  motion,
+  poster,
+  notice,
+  noticeTitle,
+  spoken,
+}) {
   const { closeModal } = useApp();
   if (!src && !motion) return null;
   const isVideo = typeof src === "string" && /\.(mp4|webm)(\?|#|$)/i.test(src);
@@ -822,7 +830,8 @@ export function ImageViewer({ src, title, motion, poster, notice, spoken }) {
       </div>
       {notice && (
         <p className="movement-media-note movement-coaching-note">
-          <strong>Consigne de prise prioritaire.</strong> {notice}
+          <strong>{noticeTitle || "Consigne de prise prioritaire."}</strong>{" "}
+          {notice}
         </p>
       )}
       <div className="modal-actions">

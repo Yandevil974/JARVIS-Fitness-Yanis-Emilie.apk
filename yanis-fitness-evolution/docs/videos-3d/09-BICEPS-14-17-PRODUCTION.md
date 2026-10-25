@@ -1,7 +1,7 @@
 # Biceps #14 à #17 — images et prompts de production
 
 Date : 23/10/2026 — mises à jour du suivi : 24 et 25/10/2026
-Statut : **quatre MP4 reçus et contrôlés le 25/10 ; défauts documentés dans `10-BICEPS-14-17-CONTROLE-MP4.md`. Aucun MP4 intégré pour ce lot.**
+Statut : **quatre MP4 intégrés en `coached` le 25/10 après accord explicite de Yanis malgré les réserves. Défauts et preuves dans `10-BICEPS-14-17-CONTROLE-MP4.md` ; aucun n'est `validated`.**
 
 > Yanis regarde directement les photos et les zooms : ne pas lui redemander une
 > confirmation systématique pour ce lot. S'il signale un problème, corriger la

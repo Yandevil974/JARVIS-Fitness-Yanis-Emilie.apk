@@ -108,6 +108,7 @@ export default function ModalRoot() {
         motion={m.motion}
         poster={m.poster}
         notice={m.notice}
+        noticeTitle={m.noticeTitle}
         spoken={m.spoken}
       />
     ),

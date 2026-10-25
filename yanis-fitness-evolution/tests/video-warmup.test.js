@@ -97,6 +97,51 @@ test("Zottman #11 et #13 sont jouables avec leur consigne corrective", () => {
   }
 });
 
+test("biceps #14 à #17 sont jouables en coached avec leurs réserves explicites", () => {
+  const cases = [
+    {
+      id: "curl-halteres-incline-supination",
+      title: /retour en haut/i,
+      hand: /prise neutre en bas/i,
+      notice: /termine en bas/i,
+      spoken: /remontez toujours jusqu’en haut/i,
+    },
+    {
+      id: "curl-marteau",
+      title: /prise marteau neutre/i,
+      hand: /pouces vers le haut/i,
+      notice: /change d’athlète/i,
+      spoken: /chiffres affichés ne sont pas le tempo/i,
+    },
+    {
+      id: "curl-scott-90-haltere-supination",
+      title: /coloration sur la cuisse/i,
+      hand: /supination fixe/i,
+      notice: /coloration musculaire migre sur la cuisse/i,
+      spoken: /biceps du bras posé/i,
+    },
+    {
+      id: "curl-zottman",
+      title: /sans la remontée supplémentaire/i,
+      hand: /descente pronée/i,
+      notice: /ajoute une remontée/i,
+      spoken: /remontée supplémentaire/i,
+    },
+  ];
+  for (const item of cases) {
+    const video = EXERCISE_VIDEOS[item.id];
+    assert.equal(video.status, "coached", item.id);
+    assert.equal(videoFor(item.id), video, item.id);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
+    assert.match(video.coaching.title, item.title, item.id);
+    assert.match(video.coaching.handCue, item.hand, item.id);
+    assert.match(video.coaching.notice, item.notice, item.id);
+    assert.match(video.coaching.spoken, item.spoken, item.id);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+});
+
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {
   for (const name of [
     "Mise en route",

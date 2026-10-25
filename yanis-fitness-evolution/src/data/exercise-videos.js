@@ -207,6 +207,86 @@ export const EXERCISE_VIDEOS = {
         "Curl Zottman un bras au banc Scott. Utilisez une seule haltère et gardez le haut du bras posé sur le pupitre. Commencez en haut, paume vers le sol, dos de la main vers le haut et doigts retombant autour de la poignée. Pliez et dépliez seulement le coude. Descendez en quatre secondes en pronation jusqu’à presque tendre le coude. Haltère immobile en bas, tournez l’avant-bras en supination. Remontez en une seconde, paume vers le haut. Haltère immobile en haut, revenez en pronation. Ne reproduisez pas la vitesse, l’amplitude courte ou les doigts redressés de la vidéo IA.",
     },
   },
+  // ---- #14→#17 intégration acceptée par Yanis le 25/10 ----
+  // Yanis valide l'utilisation des meilleures sources disponibles, sans les
+  // déclarer techniquement parfaites. Elles restent donc toutes "coached" :
+  // posters, notices et descriptifs audio priment sur les défauts visuels.
+  "curl-halteres-incline-supination": {
+    // B14. Réserve acceptée : la source termine en bas, sans le retour haut.
+    src: "/videos/curl-halteres-incline-supination.mp4",
+    poster: "/videos/posters/curl-halteres-incline-supination.jpg",
+    label: "Vidéo IA · Curl incliné supination, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Le retour en haut est obligatoire, même si la vidéo IA s’arrête en bas.",
+      handCue:
+        "Deux haltères sur banc incliné : départ haut en supination, paumes vers le haut, puis prise neutre en bas.",
+      movementCue:
+        "Descendez en trois secondes vers la prise neutre, puis remontez en une seconde en supinant progressivement. Gardez le haut des bras immobile et le dos appuyé.",
+      notice:
+        "La vidéo IA termine en bas et ne montre pas le retour complet. Suivez le poster et le descriptif audio : chaque répétition doit se terminer en haut, en supination.",
+      spoken:
+        "Curl haltères incliné avec supination. Sur un banc incliné, commencez en haut avec deux haltères, paumes vers le haut et les épaules. Descendez en trois secondes en tournant progressivement les avant-bras vers une prise neutre, paumes vers les cuisses. Sans verrouiller les coudes, remontez en une seconde en supinant progressivement jusqu’aux paumes vers le haut. Gardez le haut des bras immobile et le dos appuyé. Ne reproduisez pas la fin basse de la vidéo IA : remontez toujours jusqu’en haut pour terminer la répétition.",
+    },
+  },
+  "curl-marteau": {
+    // B15. Réserves acceptées : rendu instable, chiffres et prise parfois perdue.
+    src: "/videos/curl-marteau.mp4",
+    poster: "/videos/posters/curl-marteau.jpg",
+    label: "Vidéo IA · Curl marteau, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez la prise marteau neutre, quels que soient les changements de la vidéo IA.",
+      handCue:
+        "Deux haltères verticaux : paumes face à face, pouces vers le haut et poignets droits.",
+      movementCue:
+        "Descendez en trois secondes puis remontez en une seconde avec les deux bras ensemble, sans rotation des avant-bras et sans élan.",
+      notice:
+        "La vidéo IA change d’athlète, de cadrage et parfois de prise, avec des chiffres incrustés. Suivez le poster : les haltères restent verticaux et les paumes neutres pendant toute la répétition.",
+      spoken:
+        "Curl marteau debout. Tenez deux haltères verticaux, paumes face à face, pouces vers le haut et poignets droits. Descendez en trois secondes le long des cuisses, sans verrouiller les coudes. Remontez en une seconde avec les deux bras ensemble, sans élan. Gardez la même prise neutre du début à la fin. Ne reproduisez pas les rotations de prise ou les changements de posture de la vidéo IA. Les chiffres affichés ne sont pas le tempo à suivre.",
+    },
+  },
+  "curl-scott-90-haltere-supination": {
+    // B16. Réserves acceptées : caméra instable et coloration sur la cuisse.
+    src: "/videos/curl-scott-90-haltere-supination.mp4",
+    poster: "/videos/posters/curl-scott-90-haltere-supination.jpg",
+    label: "Vidéo IA · Curl Scott 90° supination, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Le geste cible le biceps du bras posé ; ignorez la coloration sur la cuisse.",
+      handCue:
+        "Un seul haltère au pupitre : paume vers le haut et l’épaule, poignet droit, supination fixe.",
+      movementCue:
+        "Haut du bras posé sur le coussin. Descendez en trois secondes puis remontez en une seconde en pliant et dépliant seulement le coude, sans rotation.",
+      notice:
+        "La caméra dérive et la coloration musculaire migre sur la cuisse : c’est un défaut de la vidéo IA. Le geste cible le biceps du bras posé ; gardez la supination fixe et suivez le poster.",
+      spoken:
+        "Curl Scott 90 degrés avec un haltère. Posez le haut du bras de travail sur le coussin et commencez en haut, paume vers le haut et l’épaule. Descendez en trois secondes sans verrouiller le coude, puis remontez en une seconde. Le haut du bras reste posé et seul le coude bouge. Ne reproduisez pas de rotation du poignet : la supination reste fixe. Ignorez la coloration sur la cuisse, qui est une erreur de la vidéo IA ; le repère musculaire est le biceps du bras posé.",
+    },
+  },
+  "curl-zottman": {
+    // B17. Réserves acceptées : remontée supplémentaire et cadrage instable.
+    src: "/videos/curl-zottman.mp4",
+    poster: "/videos/posters/curl-zottman.jpg",
+    label: "Vidéo IA · Curl Zottman debout, consigne prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Terminez en bas après le retour en supination, sans la remontée supplémentaire.",
+      handCue:
+        "Deux haltères : départ bas supiné, montée supinée, descente pronée, puis retour en supination à l’arrêt en bas.",
+      movementCue:
+        "Montez en une seconde. Haltères immobiles en haut, tournez en pronation. Descendez en trois secondes. Haltères immobiles en bas, revenez en supination.",
+      notice:
+        "La vidéo IA ajoute une remontée et termine en haut, avec un cadrage instable. Arrêtez la répétition en bas après le retour en supination ; ne copiez pas cette dernière montée.",
+      spoken:
+        "Curl Zottman debout à deux haltères. Commencez en bas, paumes en supination. Montez en une seconde sans tourner les poignets. Haltères immobiles en haut, tournez les deux avant-bras en pronation, paumes vers le sol. Descendez en trois secondes en gardant la pronation. Haltères immobiles en bas, revenez en supination. C’est la fin de la répétition : ne reproduisez pas la remontée supplémentaire de la vidéo IA, qui termine dans la mauvaise position.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

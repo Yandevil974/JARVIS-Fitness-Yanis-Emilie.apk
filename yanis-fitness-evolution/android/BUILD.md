@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément                   | Valeur                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
-| versionName / versionCode | `1.10.0` / `193`                                                                                                                   |
+| versionName / versionCode | `1.11.0` / `194`                                                                                                                   |
 | Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
 | Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
@@ -31,6 +31,16 @@ les changer :
 ```bash
 ./gradlew assembleRelease -PYFE_STORE_PASSWORD='…' -PYFE_KEY_PASSWORD='…'
 ```
+
+## Vérifications de la version 1.11.0 (25/10/2026)
+
+- Intégration des biceps #14→#17 en `coached` après validation explicite de Yanis des meilleures sources disponibles, sans les déclarer techniquement `validated`.
+- Posters de référence, notices propres à chaque réserve et descriptifs audio corrigés, y compris dans la visionneuse agrandie.
+- Les défauts restent documentés : retour haut imposé pour #14, marteau neutre pour #15, biceps du bras posé pour #16 et fin basse sans remontée supplémentaire pour #17.
+- `npm test` — **217 tests : 215 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **31 réussites, 0 échec, 11 ignorés** (sauvegarde externe absente, comme auparavant).
+- `npm run build` — **1679 modules**, build réussi et `release/` régénéré avec les quatre MP4 et leurs posters.
+- Version Android : `versionName 1.11.0`, `versionCode 194`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release, avec contrôle nominatif des quatre nouvelles vidéos et de leurs posters.
 
 ## Vérifications de la version 1.10.0 (24/10/2026)
 

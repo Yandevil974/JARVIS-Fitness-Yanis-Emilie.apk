@@ -76,15 +76,15 @@
   `09-BICEPS-14-17-PRODUCTION.md`. Les écarts des GIF #14/#15/#17 sont
   documentés. Yanis examine directement les photos et signale les problèmes,
   sans confirmation systématique photo par photo.
-- **25/10/2026 — quatre MP4 #14→#17 contrôlés, non intégrés** : les sources
-  reçues sur la branche présentent des défauts de cycle, de prise, de caméra ou
-  d'anatomie. Les six instants et zooms de chaque vidéo sont consignés dans
-  `10-BICEPS-14-17-CONTROLE-MP4.md` ; les prompts ont été renforcés pour la
-  régénération. Aucun statut `coached` ou `validated` n'a été attribué.
-- **Manquent encore** : vidéos conformes biceps #14→#20, triceps chromé,
-  piscine, elliptique et étirements. Pour #14→#17, régénérer avec les prompts
-  renforcés puis déposer les nouveaux MP4 sur la branche pour contrôle avant
-  intégration et tests.
+- **25/10/2026 — quatre MP4 #14→#17 contrôlés puis acceptés en `coached`** :
+  les sources présentent des défauts de cycle, de prise, de caméra ou
+  d'anatomie, consignés avec six instants et zooms dans
+  `10-BICEPS-14-17-CONTROLE-MP4.md`. Yanis valide ensuite explicitement leur
+  intégration faute de meilleure version. Posters de référence, notices propres
+  et descriptifs audio corrigés sont obligatoires ; aucun n'est `validated`.
+- **Manquent encore** : vidéos biceps #18→#20, triceps chromé, piscine,
+  elliptique et étirements. Les versions `coached` #14→#17 restent utilisables
+  jusqu'à d'éventuelles meilleures sources ; la suite de production est #18.
 
 ## Fichiers modifiés / créés
 

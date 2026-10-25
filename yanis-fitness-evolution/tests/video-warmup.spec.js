@@ -223,6 +223,130 @@ test("biceps #11 et #13 affichent leur vidéo et dictent le Zottman corrigé", a
   expect(errors).toEqual([]);
 });
 
+test("biceps #14 à #17 affichent leurs réserves et dictent le geste corrigé", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.speechSynthesis.cancel = () => {};
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      name: "Curl haltères incliné, supination",
+      src: "/videos/curl-halteres-incline-supination.mp4",
+      poster: "/videos/posters/curl-halteres-incline-supination.jpg",
+      title: /retour en haut/i,
+      hand: /prise neutre en bas/i,
+      notice: /termine en bas/i,
+      spoken: /remontez toujours jusqu’en haut/i,
+    },
+    {
+      name: "Curl marteau",
+      src: "/videos/curl-marteau.mp4",
+      poster: "/videos/posters/curl-marteau.jpg",
+      title: /prise marteau neutre/i,
+      hand: /pouces vers le haut/i,
+      notice: /change d’athlète/i,
+      spoken: /chiffres affichés ne sont pas le tempo/i,
+    },
+    {
+      name: "Curl Scott 90° haltère supination",
+      src: "/videos/curl-scott-90-haltere-supination.mp4",
+      poster: "/videos/posters/curl-scott-90-haltere-supination.jpg",
+      title: /coloration sur la cuisse/i,
+      hand: /supination fixe/i,
+      notice: /coloration musculaire migre sur la cuisse/i,
+      spoken: /Ignorez la coloration sur la cuisse/i,
+    },
+    {
+      name: "Curl Zottman",
+      src: "/videos/curl-zottman.mp4",
+      poster: "/videos/posters/curl-zottman.jpg",
+      title: /remontée supplémentaire/i,
+      hand: /descente pronée/i,
+      notice: /ajoute une remontée/i,
+      spoken: /C’est la fin de la répétition/i,
+    },
+  ];
+  for (const [index, item] of cases.entries()) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "poster",
+      item.poster,
+    );
+    await expect(
+      dialog.locator(".movement-coaching-note strong"),
+    ).toContainText(item.title);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      item.notice,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      item.hand,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(item.spoken);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+
+    if (index === 0) {
+      await dialog
+        .getByRole("button", { name: "Agrandir", exact: true })
+        .click();
+      const viewer = page.getByRole("dialog", {
+        name: /Vidéo IA · Curl incliné supination/,
+      });
+      await expect(
+        viewer.locator(".movement-coaching-note strong"),
+      ).toContainText(/retour en haut/i);
+      await expect(
+        viewer.getByRole("button", {
+          name: "Écouter le descriptif",
+          exact: true,
+        }),
+      ).toBeVisible();
+      await viewer
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    } else {
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    }
+  }
+  expect(errors).toEqual([]);
+});
+
 test("biceps #10 et #12 affichent leurs vidéos validées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
