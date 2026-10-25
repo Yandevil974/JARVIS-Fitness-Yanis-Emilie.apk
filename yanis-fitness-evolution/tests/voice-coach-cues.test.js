@@ -190,7 +190,71 @@ test("les triceps #02 et #04 dictent leur exécution corrigée", () => {
     assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
     assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
     assert.match(coaching.spoken, exercise.spoken, exercise.id);
-    assert.match(coaching.spoken, /Descendez .*en trois secondes/i, exercise.id);
+    assert.match(
+      coaching.spoken,
+      /Descendez .*en trois secondes/i,
+      exercise.id,
+    );
+    assert.match(coaching.spoken, /Ne reproduisez pas/i, exercise.id);
+    assert.ok(coaching.title, `titre de réserve absent : ${exercise.id}`);
+  }
+});
+
+test("les triceps #05 à #09 dictent leurs trajectoires et tempos corrigés", () => {
+  const coachedExercises = [
+    {
+      id: "french-press-barre-ez",
+      name: "French press barre EZ",
+      defaultSets: 4,
+      repScheme: "8-10",
+      tempo: "4010",
+      spoken: /vers le front/i,
+      timing: /Descendez en quatre secondes/i,
+    },
+    {
+      id: "extensions-triceps-barre-ez",
+      name: "Extensions triceps barre EZ",
+      defaultSets: 4,
+      repScheme: "8-10",
+      tempo: "4010",
+      spoken: /derrière le sommet de la tête/i,
+      timing: /Descendez en quatre secondes/i,
+    },
+    {
+      id: "barre-au-front-pushdown-triceps",
+      name: "Barre au front (pushdown triceps)",
+      defaultSets: 3,
+      repScheme: "10/8/6",
+      tempo: "3010",
+      spoken: /paumes vers le sol/i,
+      timing: /monter vers le bas de la poitrine en trois secondes/i,
+    },
+    {
+      id: "french-press-haltere-un-bras",
+      name: "French press haltère un bras",
+      defaultSets: 3,
+      repScheme: "8-10",
+      tempo: "3010",
+      spoken: /prise neutre/i,
+      timing: /Descendez l’haltère à côté de la tête en trois secondes/i,
+    },
+    {
+      id: "extensions-triceps-pullover-barre-ez",
+      name: "Extensions triceps + pullover barre EZ",
+      defaultSets: 3,
+      repScheme: "8-10",
+      tempo: "3010",
+      spoken: /mouvement des épaules|pour le pullover/i,
+      timing: /Descendez en trois secondes/i,
+    },
+  ];
+  for (const exercise of coachedExercises) {
+    const coaching = coachingFor(exercise);
+    assert.ok(coaching, `descriptif absent : ${exercise.id}`);
+    assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
+    assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
+    assert.match(coaching.spoken, exercise.spoken, exercise.id);
+    assert.match(coaching.spoken, exercise.timing, exercise.id);
     assert.match(coaching.spoken, /Ne reproduisez pas/i, exercise.id);
     assert.ok(coaching.title, `titre de réserve absent : ${exercise.id}`);
   }

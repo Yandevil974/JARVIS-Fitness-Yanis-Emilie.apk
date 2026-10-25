@@ -38,6 +38,9 @@ vagues, puis piscine, elliptique, étirements.
 DÉCISION Yanis : **1 vidéo exacte par exercice, pas de mutualisation entre
 variantes** (les variantes approximatives obligent à vérifier sur internet —
 chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
+**Exception explicite du 25/10 : une même source est autorisée uniquement pour
+les triceps #05/#06/#09.** Leurs notices restent distinctes et cette dérogation
+ne s'applique pas aux autres exercices.
 
 1. **Échauffement** ✅ TERMINÉ (E1→E5 + aperçu 30 s).
 2. **Triceps poulie** ✅ FAIT v1 (mannequin gris) — version chromée en option.
@@ -65,19 +68,18 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    notices propres et audio corrigé obligatoires ; aucun n'est `validated`.
    Preuves et conséquences dans `12-BICEPS-18-20-CONTROLE-MP4.md`. Les GIF
    d'origine restent conservés comme fallback.
-5. **Vague 2 — Triceps en cours (14 restants)** : lot #02→#05 préparé le
-   25/10 avec quatre photos, quatre zooms et les prompts de
-   `13-TRICEPS-02-05-PRODUCTION.md`. Le dépôt des sources par Yanis sur la
-   branche vaut accord d'intégration : **#02 dips et #04 poulie basse sont
-   désormais `coached`**, avec posters, notices et audio correctifs, jamais
-   `validated`. Les défauts et preuves sont dans
-   `14-TRICEPS-02-04-CONTROLE-MP4.md`. **#03/#05 sont reportés à la fin**, sans
-   MP4, statut ou nouvelle génération ; #01 reste le seul triceps `validated`.
-   Lot #06→#09 : préparation partielle dans `15-TRICEPS-06-09-PRODUCTION.md`,
-   avec **#07/#08 prêts pour inspection** (photo, zoom, prompt) et **#06/#09
-   non retenus après zoom** — coudes trop ouverts pour #06, barre trop proche
-   du cou pour #09. Ces deux photos doivent être reprises avant toute vidéo ;
-   aucun MP4 ou statut n'est créé pour ce nouveau lot.
+5. **Vague 2 — Triceps en cours (9 restants)** : #01 reste `validated` ;
+   #02 dips et #04 poulie basse restent `coached`, avec les preuves de
+   `14-TRICEPS-02-04-CONTROLE-MP4.md`. Au 25/10, **#05/#06/#07/#08/#09 sont
+   également intégrés en `coached`** après dépôt des MP4 par Yanis. Celui-ci
+   autorise explicitement une même source pour #05/#06/#09 ; elle est stockée
+   une seule fois, mais les trois notices imposent respectivement la barre vers
+   le front, l'extension derrière la tête à hauts des bras fixes et le pullover
+   combiné. #07 pushdown et #08 unilatéral ont leurs propres MP4. Tous les GIF
+   sont conservés. Défauts, zooms et intégration :
+   `16-TRICEPS-05-09-CONTROLE-MP4.md` ; préparation et prompts initiaux :
+   `15-TRICEPS-06-09-PRODUCTION.md`. **#03 reste le seul report de ce lot** ;
+   #02 n'est pas retouché sans clarification de la nouvelle consigne de barre.
    **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

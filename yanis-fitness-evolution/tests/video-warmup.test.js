@@ -14,7 +14,9 @@ function publicAssetExists(src) {
 }
 
 function releaseAssetExists(src) {
-  return existsSync(fileURLToPath(new URL(`../release${src}`, import.meta.url)));
+  return existsSync(
+    fileURLToPath(new URL(`../release${src}`, import.meta.url)),
+  );
 }
 
 test("chaque vidéo d'exercice activée et chaque poster sont présents", () => {
@@ -218,7 +220,10 @@ test("triceps #02 et #04 sont jouables en coached après dépôt de Yanis", () =
     assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
     assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
     assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
-    assert.ok(releaseAssetExists(video.src), `vidéo release absente : ${item.id}`);
+    assert.ok(
+      releaseAssetExists(video.src),
+      `vidéo release absente : ${item.id}`,
+    );
     assert.ok(
       releaseAssetExists(video.poster),
       `poster release absent : ${item.id}`,
@@ -230,13 +235,104 @@ test("triceps #02 et #04 sont jouables en coached après dépôt de Yanis", () =
     assert.match(video.coaching.spoken, item.spoken, item.id);
     assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
   }
-  for (const id of [
-    "triceps-extensions-halteres-banc-plat",
-    "french-press-barre-ez",
-  ]) {
+  for (const id of ["triceps-extensions-halteres-banc-plat"]) {
     assert.equal(EXERCISE_VIDEOS[id], undefined, `${id} doit rester reporté`);
     assert.equal(videoFor(id), null, `${id} ne doit pas avoir de statut vidéo`);
   }
+});
+
+test("triceps #05 à #09 utilisent leurs vidéos accompagnées et conservent les GIF", () => {
+  const sharedSrc = "/videos/extensions-triceps-ez-commune-05-06-09.mp4";
+  const sharedPoster =
+    "/videos/posters/extensions-triceps-ez-commune-05-06-09.jpg";
+  const cases = [
+    {
+      id: "french-press-barre-ez",
+      src: sharedSrc,
+      poster: "/videos/posters/french-press-barre-ez.jpg",
+      gif: "/media/a40720f67740d2a0.gif",
+      title: /vers le front/i,
+      hand: /poignées intérieures/i,
+      notice: /partagée avec #06 et #09/i,
+      spoken: /jamais vers le cou ou la gorge/i,
+    },
+    {
+      id: "extensions-triceps-barre-ez",
+      src: sharedSrc,
+      poster: sharedPoster,
+      gif: "/media/3aea2b016706d5d4.gif",
+      title: /hauts des bras fixes/i,
+      hand: /poignées intérieures/i,
+      notice: /sans mouvement de pullover/i,
+      spoken: /derrière le sommet de la tête/i,
+    },
+    {
+      id: "barre-au-front-pushdown-triceps",
+      src: "/videos/barre-au-front-pushdown-triceps.mp4",
+      poster: "/videos/posters/barre-au-front-pushdown-triceps.jpg",
+      gif: "/media/4b9f932f0c18e763.gif",
+      title: /ralentissez la montée/i,
+      hand: /poulie haute/i,
+      notice: /drop set 10\/8\/6/i,
+      spoken: /paumes vers le sol/i,
+    },
+    {
+      id: "french-press-haltere-un-bras",
+      src: "/videos/french-press-haltere-un-bras.mp4",
+      poster: "/videos/posters/french-press-haltere-un-bras.jpg",
+      gif: "/media/a40720f67740d2a0.gif",
+      title: /poignet neutre/i,
+      hand: /Un seul haltère/i,
+      notice: /orientation du poignet/i,
+      spoken: /remontez toujours en haut/i,
+    },
+    {
+      id: "extensions-triceps-pullover-barre-ez",
+      src: sharedSrc,
+      poster: sharedPoster,
+      gif: "/media/e9aa82132494b300.gif",
+      title: /Combinez pullover/i,
+      hand: /poignées intérieures/i,
+      notice: /mouvement volontaire des épaules/i,
+      spoken: /arc derrière la tête/i,
+    },
+  ];
+  for (const item of cases) {
+    const video = EXERCISE_VIDEOS[item.id];
+    assert.equal(video.status, "coached", item.id);
+    assert.notEqual(video.status, "validated", item.id);
+    assert.equal(video.src, item.src, item.id);
+    assert.equal(video.poster, item.poster, item.id);
+    assert.equal(videoFor(item.id), video, item.id);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
+    assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
+    assert.ok(
+      releaseAssetExists(video.src),
+      `vidéo release absente : ${item.id}`,
+    );
+    assert.ok(
+      releaseAssetExists(video.poster),
+      `poster release absent : ${item.id}`,
+    );
+    assert.ok(releaseAssetExists(item.gif), `GIF release absent : ${item.id}`);
+    assert.match(video.coaching.title, item.title, item.id);
+    assert.match(video.coaching.handCue, item.hand, item.id);
+    assert.match(video.coaching.notice, item.notice, item.id);
+    assert.match(video.coaching.spoken, item.spoken, item.id);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+  assert.equal(
+    new Set(
+      [
+        "french-press-barre-ez",
+        "extensions-triceps-barre-ez",
+        "extensions-triceps-pullover-barre-ez",
+      ].map((id) => EXERCISE_VIDEOS[id].src),
+    ).size,
+    1,
+    "la dérogation #05/#06/#09 doit utiliser un seul MP4 canonique",
+  );
 });
 
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {

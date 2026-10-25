@@ -1,17 +1,23 @@
-# Triceps #06 à #09 — préparation contrôlée, étape partielle
+# Triceps #06 à #09 — préparation initiale et objectifs techniques
 
-Date : 25/10/2026
+Date de la préparation : 25/10/2026
 
-Statut : **#07 et #08 ont une photo, un zoom et un prompt prêts pour
-inspection par Yanis**. Les candidates #06 et #09 ne sont pas retenues après
-contrôle : coudes trop ouverts pour #06, barre trop proche du cou pour #09.
-Elles ne doivent pas servir à produire une vidéo avant correction. La limite de
-10 générations d'images du passage a été atteinte avant leur dernière retouche.
+> **Document historique conservé pour les prompts et les objectifs techniques.**
+> Depuis cette préparation, Yanis a déposé trois MP4 et a explicitement autorisé
+> la même source pour #05/#06/#09. Les cinq vidéos #05→#09 sont maintenant
+> intégrées en `coached`, avec des notices distinctes et les défauts détaillés
+> dans [`16-TRICEPS-05-09-CONTROLE-MP4.md`](./16-TRICEPS-05-09-CONTROLE-MP4.md).
+> Les mentions « prêt » ou « à corriger » ci-dessous décrivent donc l'état de la
+> préparation initiale, pas une interdiction actuelle d'utiliser les dépôts.
 
-Aucun MP4 #06→#09 n'a été reçu, contrôlé ou intégré. Aucun statut `coached` ou
-`validated` n'est attribué. **#03/#05 restent reportés à la fin et leurs photos,
-zooms et prompts ne sont pas modifiés.** #02/#04 restent intégrés en `coached`.
-Aucun changement applicatif, de version ou d'APK n'est demandé dans cette étape.
+À cette étape initiale, **#07 et #08 avaient une photo, un zoom et un prompt
+prêts pour inspection**. Les candidates #06 et #09 n'étaient pas retenues après
+contrôle : coudes trop ouverts pour #06, barre trop proche du cou pour #09. La
+limite de 10 générations d'images avait été atteinte avant leur dernière retouche.
+
+Aucun MP4 #06→#09 n'avait encore été reçu à la rédaction de cette préparation.
+#02/#04 restaient intégrés en `coached`. L'état applicatif à jour, y compris
+l'arrivée de #05 et le report limité à #03, figure dans le document 16.
 
 ## Correspondances exactes du catalogue
 

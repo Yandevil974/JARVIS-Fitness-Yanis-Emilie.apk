@@ -568,6 +568,142 @@ test("triceps #02 et #04 affichent leurs réserves et dictent le geste corrigé"
   expect(errors).toEqual([]);
 });
 
+test("triceps #05 à #09 affichent les sources autorisées et leurs consignes propres", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.speechSynthesis.cancel = () => {};
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const sharedSrc = "/videos/extensions-triceps-ez-commune-05-06-09.mp4";
+  const sharedPoster =
+    "/videos/posters/extensions-triceps-ez-commune-05-06-09.jpg";
+  const cases = [
+    {
+      name: "French press barre EZ",
+      src: sharedSrc,
+      poster: "/videos/posters/french-press-barre-ez.jpg",
+      title: /vers le front/i,
+      hand: /poignées intérieures/i,
+      notice: /partagée avec #06 et #09/i,
+      spoken: /jamais vers le cou ou la gorge/i,
+    },
+    {
+      name: "Extensions triceps barre EZ",
+      src: sharedSrc,
+      poster: sharedPoster,
+      title: /hauts des bras fixes/i,
+      hand: /poignées intérieures/i,
+      notice: /sans mouvement de pullover/i,
+      spoken: /derrière le sommet de la tête/i,
+    },
+    {
+      name: "Barre au front (pushdown triceps)",
+      src: "/videos/barre-au-front-pushdown-triceps.mp4",
+      poster: "/videos/posters/barre-au-front-pushdown-triceps.jpg",
+      title: /ralentissez la montée/i,
+      hand: /poulie haute/i,
+      notice: /drop set 10\/8\/6/i,
+      spoken: /paumes vers le sol/i,
+    },
+    {
+      name: "French press haltère un bras",
+      src: "/videos/french-press-haltere-un-bras.mp4",
+      poster: "/videos/posters/french-press-haltere-un-bras.jpg",
+      title: /poignet neutre/i,
+      hand: /Un seul haltère/i,
+      notice: /orientation du poignet/i,
+      spoken: /remontez toujours en haut/i,
+    },
+    {
+      name: "Extensions triceps + pullover barre EZ",
+      src: sharedSrc,
+      poster: sharedPoster,
+      title: /Combinez pullover/i,
+      hand: /poignées intérieures/i,
+      notice: /mouvement volontaire des épaules/i,
+      spoken: /arc derrière la tête/i,
+    },
+  ];
+  for (const [index, item] of cases.entries()) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "poster",
+      item.poster,
+    );
+    await expect(
+      dialog.locator(".movement-coaching-note strong"),
+    ).toContainText(item.title);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      item.notice,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      item.hand,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(item.spoken);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+
+    if (index === 4) {
+      await dialog
+        .getByRole("button", { name: "Agrandir", exact: true })
+        .click();
+      const viewer = page.getByRole("dialog", {
+        name: /Vidéo IA · Extensions triceps et pullover/,
+      });
+      await expect(
+        viewer.locator(".movement-coaching-note strong"),
+      ).toContainText(/Combinez pullover/i);
+      await expect(
+        viewer.getByRole("button", {
+          name: "Écouter le descriptif",
+          exact: true,
+        }),
+      ).toBeVisible();
+      await viewer
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    } else {
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    }
+  }
+  expect(errors).toEqual([]);
+});
+
 test("biceps #10 et #12 affichent leurs vidéos validées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));

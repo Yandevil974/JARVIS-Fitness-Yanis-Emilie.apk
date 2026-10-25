@@ -51,6 +51,22 @@ ffmpeg -i public/videos/<id-exercice>.mp4 -ss 00:00:01 -frames:v 1 -q:v 3 \
 | #04 `french-press-poulie-basse` | `french-press-poulie-basse.mp4` | `posters/french-press-poulie-basse.jpg` | `coached` : coude vers l’avant et corde peu lisible ; coudes hauts et tempo `3010` dictés |
 
 Leur dépôt sur la branche par Yanis vaut accord d'intégration, pas perfection
-technique. Les GIF d'origine restent présents. #03/#05 sont reportés à la fin :
-aucun MP4 ni statut vidéo ne leur est attribué. Contrôle complet :
+technique. Les GIF d'origine restent présents. Contrôle complet :
 `docs/videos-3d/14-TRICEPS-02-04-CONTROLE-MP4.md`.
+
+## Triceps #05→#09 — intégration accompagnée du 25/10/2026
+
+| Exercice | MP4 canonique | Poster | Statut et réserve principale |
+|---|---|---|---|
+| #05 `french-press-barre-ez` | `extensions-triceps-ez-commune-05-06-09.mp4` | `posters/french-press-barre-ez.jpg` | `coached` : source commune trop proche du cou ; barre vers le front et tempo `4010` dictés |
+| #06 `extensions-triceps-barre-ez` | `extensions-triceps-ez-commune-05-06-09.mp4` | `posters/extensions-triceps-ez-commune-05-06-09.jpg` | `coached` : même source ; barre derrière la tête, hauts des bras fixes et tempo `4010` dictés |
+| #07 `barre-au-front-pushdown-triceps` | `barre-au-front-pushdown-triceps.mp4` | `posters/barre-au-front-pushdown-triceps.jpg` | `coached` : cycle accéléré ; coudes fixes, drop set et tempo `3010` dictés |
+| #08 `french-press-haltere-un-bras` | `french-press-haltere-un-bras.mp4` | `posters/french-press-haltere-un-bras.jpg` | `coached` : orientation du poignet et vitesse ; prise neutre et tempo `3010` dictés |
+| #09 `extensions-triceps-pullover-barre-ez` | `extensions-triceps-ez-commune-05-06-09.mp4` | `posters/extensions-triceps-ez-commune-05-06-09.jpg` | `coached` : même source ; arc derrière la tête, épaules + coudes et tempo `3010` dictés |
+
+La source commune #05/#06/#09 est une **exception explicitement autorisée par
+Yanis**, limitée à ces trois identifiants. Elle ne change pas la convention de
+nommage ni la règle d'une vidéo propre aux autres variantes. Les cinq entrées
+restent `coached`, jamais `validated`. #03 reste reporté et #02 n'est pas
+retouché sans clarification. Preuves :
+`docs/videos-3d/16-TRICEPS-05-09-CONTROLE-MP4.md`.

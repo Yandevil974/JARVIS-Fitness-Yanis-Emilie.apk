@@ -118,10 +118,19 @@
   du cou pour #09. Aucune n'est retenue dans le dépôt et aucune vidéo ne doit
   être produite avant correction. Aucun MP4, statut ou changement applicatif ;
   #03/#05 restent inchangés et reportés.
-- **Manquent encore** : les autres triceps, la piscine, l'elliptique et les
-  étirements. Les GIF d'origine restent conservés comme fallback. Dans le lot
-  #06→#09, #07/#08 attendent les MP4 de Yanis et #06/#09 doivent reprendre
-  leurs photos ; #03/#05 restent reportés à la fin.
+- **25/10/2026 — triceps #05→#09 intégrés en `coached`** : Yanis a déposé
+  trois nouvelles sources sur la branche (`2e8bca6`) et autorisé explicitement
+  la même vidéo pour #05/#06/#09. Cette source commune est canonisée une seule
+  fois ; #07 pushdown et #08 unilatéral ont leurs MP4 propres. L'inspection
+  conserve les réserves de barre proche du cou/coudes ouverts pour la source
+  commune, de tempo pour #07 et de poignet/tempo pour #08. Les cinq notices et
+  les cinq descriptifs audio restent spécifiques. Preuves dans
+  `16-TRICEPS-05-09-CONTROLE-MP4.md`. #03 reste reporté ; #02 n'est pas modifié
+  tant que la nouvelle consigne de barre demandée n'est pas clarifiée.
+- **Manquent encore** : #03 et les autres triceps, la piscine, l'elliptique et
+  les étirements. Les GIF d'origine restent conservés comme fallback. La
+  mutualisation #05/#06/#09 est une exception utilisateur limitée à ces trois
+  exercices ; elle ne devient pas la règle pour les variantes suivantes.
 
 ## Fichiers modifiés / créés
 

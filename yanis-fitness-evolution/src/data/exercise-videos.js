@@ -317,8 +317,7 @@ export const EXERCISE_VIDEOS = {
     label: "Vidéo IA · Curl incliné neutre 1¼, consigne prioritaire",
     status: "coached",
     coaching: {
-      title:
-        "Après le quart en bas, redescendez avant la remontée complète.",
+      title: "Après le quart en bas, redescendez avant la remontée complète.",
       handCue:
         "Deux haltères sur banc incliné : prise neutre fixe, paumes face à face, pouces vers le haut et poignets droits.",
       movementCue:
@@ -390,6 +389,108 @@ export const EXERCISE_VIDEOS = {
         "La vidéo IA laisse un coude partir vers l’avant, place parfois l’avant-bras devant le visage et rend la corde peu lisible en bas. Suivez le poster et le descriptif audio : coudes hauts, mains derrière la tête et tempo 3010 du programme.",
       spoken:
         "French press debout à la poulie basse avec une corde. Placez-vous dos à la poulie, une extrémité de corde dans chaque main, poignets neutres. Gardez les deux coudes hauts, près des oreilles, et le buste gainé. Descendez les mains derrière la tête en trois secondes en pliant seulement les coudes, puis remontez en une seconde en dépliant les coudes. Ne laissez pas un coude partir vers l’avant ou sur les côtés. Ne reproduisez pas le coude qui part vers l’avant ni l’avant-bras devant le visage. La corde reste dans les deux mains et le tempo 3010 du programme reste prioritaire.",
+    },
+  },
+
+  // ---- VAGUE 2 TRICEPS (#05→#09), dépôts et accord de Yanis le 25/10 ----
+  // Dérogation explicite et limitée : #05/#06/#09 peuvent utiliser le MÊME MP4.
+  // La source commune reste "coached" : barre près du cou, coudes ouverts et
+  // cycles accélérés. Les trois notices imposent des trajectoires différentes ;
+  // cette mutualisation ne s'étend à aucun autre exercice.
+  "french-press-barre-ez": {
+    // T05. La consigne « barre vers le front » prime sur la source commune.
+    src: "/videos/extensions-triceps-ez-commune-05-06-09.mp4",
+    poster: "/videos/posters/french-press-barre-ez.jpg",
+    label:
+      "Vidéo IA · French press barre EZ, trajectoire et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Amenez la barre vers le front, jamais vers le cou comme dans la vidéo IA.",
+      handCue:
+        "Une barre EZ en pronation rapprochée, mains sur les poignées intérieures et poignets alignés.",
+      movementCue:
+        "Allongé, hauts des bras fixes et coudes à largeur stable. Descendez en quatre secondes vers le front, puis remontez en une seconde en dépliant seulement les coudes.",
+      notice:
+        "La vidéo IA est partagée avec #06 et #09 à votre demande. Elle descend trop près du cou, ouvre les coudes et va trop vite : ne copiez ni cette trajectoire ni ce tempo. Pour #05, la barre vient vers le front.",
+      spoken:
+        "French press allongée avec une barre EZ. Prenez les poignées intérieures en pronation rapprochée, poignets alignés. Gardez les hauts des bras fixes et les coudes à largeur stable, sans les ouvrir. Descendez en quatre secondes en pliant seulement les coudes et amenez la barre vers le front, avec un espace sûr, jamais vers le cou ou la gorge. Remontez en une seconde en dépliant seulement les coudes. Ne reproduisez pas la descente près du cou, les coudes ouverts ou la vitesse de la vidéo IA. Le tempo 4010 du programme reste prioritaire.",
+    },
+  },
+  "extensions-triceps-barre-ez": {
+    // T06. Extension derrière la tête, sans transformer le geste en pullover.
+    src: "/videos/extensions-triceps-ez-commune-05-06-09.mp4",
+    poster: "/videos/posters/extensions-triceps-ez-commune-05-06-09.jpg",
+    label: "Vidéo IA · Extensions triceps barre EZ, coudes prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les hauts des bras fixes et la barre derrière la tête, avec un espace sûr.",
+      handCue:
+        "Une barre EZ en pronation rapprochée, mains sur les poignées intérieures et poignets alignés.",
+      movementCue:
+        "Allongé, coudes à largeur d’épaules. Descendez en quatre secondes derrière le sommet de la tête, puis remontez en une seconde sans pullover.",
+      notice:
+        "La vidéo IA est partagée avec #05 et #09 à votre demande : elle amène la barre près du cou, ouvre les coudes et accélère le cycle. Ne copiez pas ces défauts ; pour #06, la barre passe derrière la tête, sans mouvement de pullover.",
+      spoken:
+        "Extensions triceps allongées avec une barre EZ. Prenez les poignées intérieures en pronation rapprochée, poignets alignés. Gardez les hauts des bras fixes et les coudes à largeur d’épaules, sans les ouvrir. Descendez en quatre secondes en pliant seulement les coudes jusqu’à placer la barre derrière le sommet de la tête, avec un espace sûr, jamais sur le front, le cou ou la gorge. Remontez en une seconde en dépliant seulement les coudes, sans déplacer les épaules et sans pullover. Ne reproduisez pas la descente près du cou, les coudes ouverts ou la vitesse de la vidéo IA. Le tempo 4010 du programme reste prioritaire.",
+    },
+  },
+  "barre-au-front-pushdown-triceps": {
+    // T07. Matériel et trajectoire lisibles ; réserve principale : tempo 3010.
+    src: "/videos/barre-au-front-pushdown-triceps.mp4",
+    poster: "/videos/posters/barre-au-front-pushdown-triceps.jpg",
+    label: "Vidéo IA · Pushdown barre droite, tempo prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les coudes contre le buste et ralentissez la montée à trois secondes.",
+      handCue:
+        "Une barre droite à la poulie haute, prise en pronation, paumes vers le sol et poignets alignés.",
+      movementCue:
+        "Montez la barre vers le bas de la poitrine en trois secondes puis descendez près des cuisses en une seconde, sans bouger les épaules ni le buste.",
+      notice:
+        "La vidéo IA accélère le cycle et marque une pause. La barre, la poulie et les coudes restent lisibles, mais le tempo 3010 et le drop set 10/8/6 du programme priment ; ne copiez pas la vitesse.",
+      spoken:
+        "Pushdown triceps debout à la poulie haute avec une barre droite. Prenez la barre en pronation, paumes vers le sol, mains à largeur d’épaules et poignets alignés. Gardez les coudes contre les côtes et les épaules immobiles. Laissez la barre monter vers le bas de la poitrine en trois secondes en pliant seulement les coudes, puis poussez-la près des cuisses en une seconde en dépliant seulement les coudes, sans pause. Ne reproduisez pas la vitesse ou les pauses de la vidéo IA. Les nombres dix, huit et six et la réduction de charge du drop set appartiennent au programme, pas à la démonstration. Le tempo 3010 reste prioritaire.",
+    },
+  },
+  "french-press-haltere-un-bras": {
+    // T08. Un haltère et main libre au coude ; rotation et tempo corrigés par l'audio.
+    src: "/videos/french-press-haltere-un-bras.mp4",
+    poster: "/videos/posters/french-press-haltere-un-bras.jpg",
+    label: "Vidéo IA · French press haltère un bras, prise prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le poignet neutre et le haut du bras fixe, sans copier la rotation de l’haltère.",
+      handCue:
+        "Un seul haltère dans la main de travail, prise neutre et poignet droit ; l’autre main soutient légèrement le coude.",
+      movementCue:
+        "Allongé, descendez l’haltère à côté de la tête en trois secondes puis remontez en une seconde en pliant et dépliant seulement le coude.",
+      notice:
+        "La vidéo IA change l’orientation du poignet et de l’haltère, accélère le cycle et termine sa deuxième descente en bas sans remontée contrôlée. Ne copiez ni cette rotation, ni cette vitesse, ni ce raccord de boucle ; chaque répétition revient en haut avec le tempo 3010.",
+      spoken:
+        "French press allongée avec un seul haltère, un bras à la fois. Tenez l’haltère en prise neutre, poignet droit, et soutenez légèrement le coude avec la main libre. Gardez le haut du bras vertical et fixe. Descendez l’haltère à côté de la tête en trois secondes en pliant seulement le coude, sans contact avec le visage, puis remontez en une seconde en dépliant seulement le coude. Ne reproduisez pas la rotation du poignet, le changement d’orientation de l’haltère ou la vitesse de la vidéo IA. La vidéo s’arrête en bas après sa deuxième descente : remontez toujours en haut avec contrôle pour terminer chaque répétition, sans copier le raccord de boucle. Terminez la série du même côté avant de changer de bras. Le tempo 3010 reste prioritaire.",
+    },
+  },
+  "extensions-triceps-pullover-barre-ez": {
+    // T09. La combinaison pullover + extension est dictée, pas la descente au cou.
+    src: "/videos/extensions-triceps-ez-commune-05-06-09.mp4",
+    poster: "/videos/posters/extensions-triceps-ez-commune-05-06-09.jpg",
+    label: "Vidéo IA · Extensions triceps et pullover, arc prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Combinez pullover et extension dans un arc derrière la tête, jamais vers le cou.",
+      handCue:
+        "Une barre EZ en pronation rapprochée, mains sur les poignées intérieures et poignets alignés.",
+      movementCue:
+        "Allongé, descendez en trois secondes dans un arc derrière la tête en associant épaules et coudes, puis remontez en une seconde au-dessus de la poitrine.",
+      notice:
+        "La vidéo IA est partagée avec #05 et #06 à votre demande : la descente est trop proche du cou, les coudes s’ouvrent et le cycle est accéléré. Suivez l’audio : arc derrière la tête et mouvement volontaire des épaules.",
+      spoken:
+        "Extensions triceps combinées à un pullover, allongé avec une barre EZ. Prenez les poignées intérieures en pronation rapprochée, poignets alignés. Descendez en trois secondes dans un arc derrière la tête en pliant les coudes et en laissant les hauts des bras reculer pour le pullover, avec un espace sûr, jamais vers le cou ou la gorge. Remontez en une seconde au-dessus de la poitrine en dépliant les coudes et en ramenant les bras. Gardez la barre horizontale, les côtes contrôlées et les hanches appuyées. Ne reproduisez pas la descente près du cou, les coudes ouverts ou la vitesse de la vidéo IA. Le tempo 3010 du programme reste prioritaire.",
     },
   },
 };
