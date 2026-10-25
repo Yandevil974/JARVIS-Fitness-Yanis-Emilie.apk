@@ -1,12 +1,13 @@
 # Biceps #14 à #17 — images et prompts de production
 
-Date : 23/10/2026  
-Statut : **visuels, zooms et prompts préparés — en attente de validation explicite de Yanis. Aucun MP4 généré ou intégré pour ce lot.**
+Date : 23/10/2026 — mise à jour du suivi : 24/10/2026
+Statut : **visuels, zooms et prompts présentés ; Yanis les examine et signalera toute correction. Aucun MP4 généré ou intégré pour ce lot.**
 
-> Ne pas lancer Arena Video ou PixVerse avant que Yanis ait validé les quatre
-> images et les prises en zoom. Après réception des MP4, contrôler au moins
-> quatre instants et les mains avant toute intégration ou attribution d'un
-> statut `validated`.
+> Yanis regarde directement les photos et les zooms : ne pas lui redemander une
+> confirmation systématique pour ce lot. S'il signale un problème, corriger la
+> photo ou le prompt concerné avant de poursuivre. Après réception des MP4,
+> contrôler au moins quatre instants et les mains avant toute intégration ou
+> attribution d'un statut `validated`.
 
 L'athlète reste celui de
 [`reference-personnage-verrouille.jpg`](./reference-personnage-verrouille.jpg) :
@@ -161,15 +162,18 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ---
 
-## Validation demandée à Yanis
+## Revue des photos par Yanis
 
-- [ ] #14 : banc incliné, deux haltères et supination progressive confirmés.
-- [ ] #15 : deux haltères, prise marteau neutre fixe, pouces haut, aucune rotation.
-- [ ] #16 : un seul haltère au pupitre, supination fixe, aucune rotation Zottman.
-- [ ] #17 : Zottman **debout à deux haltères**, départ bas supiné, descente pronée.
-- [ ] Les quatre images et les quatre zooms sont approuvés explicitement.
+Les quatre images et les quatre zooms sont disponibles pour revue directe.
+Yanis signalera les problèmes éventuels ; il n'est pas nécessaire de lui
+redemander une confirmation photo par photo. Les points techniques à respecter
+restent :
 
-**Tant que ces cases ne sont pas validées par Yanis : aucune génération vidéo.**
+- #14 : banc incliné, deux haltères et supination progressive ;
+- #15 : deux haltères, prise marteau neutre fixe, pouces haut, aucune rotation ;
+- #16 : un seul haltère au pupitre, supination fixe, aucune rotation Zottman ;
+- #17 : Zottman **debout à deux haltères**, départ bas supiné, descente pronée.
+
 Après génération, les MP4 seront contrôlés image par image avant intégration ;
 les statuts `coached` ou `validated` ne seront attribués qu'après ce contrôle
 et, lorsqu'une réserve subsiste, avec l'accord explicite de Yanis.
