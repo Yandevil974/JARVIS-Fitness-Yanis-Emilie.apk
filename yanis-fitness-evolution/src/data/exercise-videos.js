@@ -576,6 +576,69 @@ export const EXERCISE_VIDEOS = {
         "California press allongé avec une barre droite légère, variante du programme avec descente vers le cou. Prenez la barre en pronation rapprochée, pouces enroulés et poignets alignés. Sur banc plat, gardez la tête et les hanches appuyées, les coudes proches et la charge légère. Poussez la barre en une seconde au-dessus de la ligne haute de la poitrine et du cou, puis redescendez en trois secondes vers la base du cou en pliant les coudes avec un léger ajustement contrôlé des bras. Conservez toujours un espace visible entre la barre, le cou, le menton et le visage. Ne descendez pas vers le front ou le bas de la poitrine et ne cherchez pas une amplitude douloureuse. Ne reproduisez pas le zoom de caméra, la vitesse de la vidéo IA ni tout rapprochement qui supprimerait l’espace de sécurité. Ne pas trop charger. Le tempo 3010 du programme reste prioritaire.",
     },
   },
+
+  // ---- VAGUE 3 PECTORAUX (#01→#03), dépôts de Yanis le 25/10 ----
+  // #01 utilise uniquement la NOUVELLE source remise par Yanis ; l'ancienne
+  // reste une preuve de comparaison. Les trois vidéos restent "coached" :
+  // pause haute pour #01, bras désynchronisés pour #02 et tête/proximité des
+  // haltères pour #03. Aucun MP4 #04 (barre inclinée) n'a été déposé.
+  "pompes-inclinees-mains-surelevees": {
+    // P01. Support et alignement lisibles ; pause haute corrigée par l'audio.
+    src: "/videos/pompes-inclinees-mains-surelevees.mp4",
+    poster: "/videos/posters/pompes-inclinees-mains-surelevees.jpg",
+    label: "Vidéo IA · Pompes inclinées sur barre, tempo prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Enchaînez une seconde de montée et deux secondes de descente, sans la pause haute de la vidéo IA.",
+      handCue:
+        "Mains sur une barre fixe surélevée, légèrement plus larges que les épaules et poignets alignés.",
+      movementCue:
+        "Corps gainé en ligne tête–hanches–talons et coudes à 45°. Poussez en une seconde puis descendez en deux secondes vers la barre.",
+      notice:
+        "La nouvelle source remise conserve mieux l’appui et le retour que l’ancienne, mais elle marque une pause en haut. Suivez le poster et le descriptif audio : une seconde de montée, deux secondes de descente, sans pause et toujours avec les mains surélevées.",
+      spoken:
+        "Pompes inclinées avec les mains surélevées sur une barre fixe stable. Placez les mains légèrement plus larges que les épaules, poignets alignés, puis reculez les pieds pour former une ligne droite de la tête aux talons. Gardez les abdominaux et les fessiers gainés et les coudes à environ quarante-cinq degrés du buste. Depuis la position basse, poitrine proche de la barre sans contact forcé, poussez en une seconde en dépliant les coudes, puis descendez en deux secondes vers la barre sans casser les hanches. Ne reproduisez pas la pause en haut de la vidéo IA et ne remplacez pas le support par des pompes au sol. Le tempo 2010 du programme reste prioritaire.",
+    },
+  },
+  "developpe-couche-halteres": {
+    // P02. Deux haltères et banc plat confirmés ; synchronisation en réserve.
+    src: "/videos/developpe-couche-halteres.mp4",
+    poster: "/videos/posters/developpe-couche-halteres.jpg",
+    label: "Vidéo IA · Développé couché haltères, synchronisation prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Poussez les deux haltères ensemble et gardez-les synchronisés jusqu’au retour en bas.",
+      handCue:
+        "Deux haltères indépendants en prise pronée, paumes vers les pieds et poignets empilés au-dessus des avant-bras.",
+      movementCue:
+        "Sur banc plat, poussez en une seconde, contractez une seconde en haut puis descendez les deux haltères ensemble en deux secondes.",
+      notice:
+        "Le banc plat et les deux haltères sont lisibles, mais la vidéo IA désynchronise les bras vers la fin. Suivez le poster et le descriptif audio : les deux charges descendent et remontent ensemble, coudes à environ 45°, avec une contraction d’une seconde en haut et le tempo 2011.",
+      spoken:
+        "Développé couché avec deux haltères sur banc plat. Gardez la tête, les omoplates et les hanches appuyées et les pieds au sol. Tenez un haltère dans chaque main en prise pronée, paumes vers les pieds et poignets empilés. Depuis la position basse, haltères à côté de la poitrine et coudes à environ quarante-cinq degrés du buste, poussez les deux charges ensemble en une seconde sans les entrechoquer. Contractez les pectoraux une seconde en haut, puis descendez les deux haltères ensemble en deux secondes jusqu’à côté de la poitrine, sans pause en bas. Ne reproduisez pas la désynchronisation des bras de la vidéo IA et ne rapprochez pas les haltères du visage. Le tempo 2011 du programme reste prioritaire.",
+    },
+  },
+  "developpe-incline-halteres": {
+    // P03. Cycle et banc incliné lisibles ; tête et proximité en réserve.
+    src: "/videos/developpe-incline-halteres.mp4",
+    poster: "/videos/posters/developpe-incline-halteres.jpg",
+    label: "Vidéo IA · Développé incliné haltères, tête appuyée prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez la tête appuyée et descendez les deux haltères à côté du haut de la poitrine.",
+      handCue:
+        "Deux haltères indépendants en prise pronée, paumes vers les pieds et poignets alignés.",
+      movementCue:
+        "Sur le banc incliné à 30°, contractez une seconde en haut, descendez en deux secondes puis poussez en une seconde.",
+      notice:
+        "La vidéo IA redresse légèrement la tête et rapproche les haltères du visage en bas. Suivez le poster et le descriptif audio : tête posée sur le dossier, haltères à côté du haut de la poitrine et tempo 2011, sans devenir un développé épaules.",
+      spoken:
+        "Développé incliné avec deux haltères. Sur le banc incliné à trente degrés de la référence, gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol. Tenez un haltère dans chaque main en prise pronée, paumes vers les pieds et poignets alignés. Depuis la position haute, bras presque tendus au-dessus de la poitrine, contractez les pectoraux une seconde, puis descendez les deux haltères ensemble en deux secondes jusqu’à côté du haut de la poitrine. Poussez en une seconde pour revenir en haut, sans pause en bas. Ne reproduisez pas le soulèvement de la tête ni le rapprochement des haltères vers le visage de la vidéo IA. Ne redressez pas le buste pour faire un développé épaules. Le tempo 2011 du programme reste prioritaire.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

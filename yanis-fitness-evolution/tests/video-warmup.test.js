@@ -405,6 +405,68 @@ test("triceps #10, #12 et #13 sont accompagnés et #11 reste sans MP4", () => {
   assert.ok(releaseAssetExists("/media/2ec2c2c1b7eb18a5.gif"));
 });
 
+test("pectoraux #01 à #03 sont accompagnés avec la nouvelle #01 et #04 reste sans MP4", () => {
+  const cases = [
+    {
+      id: "pompes-inclinees-mains-surelevees",
+      src: "/videos/pompes-inclinees-mains-surelevees.mp4",
+      poster: "/videos/posters/pompes-inclinees-mains-surelevees.jpg",
+      gif: "/media/7e96ab14f783b338.gif",
+      title: /pause haute/i,
+      hand: /barre fixe surélevée/i,
+      notice: /nouvelle source remise/i,
+      spoken: /pompes au sol/i,
+    },
+    {
+      id: "developpe-couche-halteres",
+      src: "/videos/developpe-couche-halteres.mp4",
+      poster: "/videos/posters/developpe-couche-halteres.jpg",
+      gif: "/media/e4d9c22e0a05ea25.gif",
+      title: /synchronisés/i,
+      hand: /Deux haltères indépendants/i,
+      notice: /désynchronise les bras/i,
+      spoken: /désynchronisation des bras/i,
+    },
+    {
+      id: "developpe-incline-halteres",
+      src: "/videos/developpe-incline-halteres.mp4",
+      poster: "/videos/posters/developpe-incline-halteres.jpg",
+      gif: "/media/8de6e89e5395700c.gif",
+      title: /tête appuyée/i,
+      hand: /Deux haltères indépendants/i,
+      notice: /redresse légèrement la tête/i,
+      spoken: /banc incliné à trente degrés/i,
+    },
+  ];
+  for (const item of cases) {
+    const video = EXERCISE_VIDEOS[item.id];
+    assert.equal(video.status, "coached", item.id);
+    assert.notEqual(video.status, "validated", item.id);
+    assert.equal(video.src, item.src, item.id);
+    assert.equal(video.poster, item.poster, item.id);
+    assert.equal(videoFor(item.id), video, item.id);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
+    assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
+    assert.ok(releaseAssetExists(video.src), `vidéo release absente : ${item.id}`);
+    assert.ok(
+      releaseAssetExists(video.poster),
+      `poster release absent : ${item.id}`,
+    );
+    assert.ok(releaseAssetExists(item.gif), `GIF release absent : ${item.id}`);
+    assert.match(video.coaching.title, item.title, item.id);
+    assert.match(video.coaching.handCue, item.hand, item.id);
+    assert.match(video.coaching.notice, item.notice, item.id);
+    assert.match(video.coaching.spoken, item.spoken, item.id);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+  assert.equal(
+    videoFor("developpe-incline-barre"),
+    null,
+    "#04 attend une source avec barre dirigée vers le sternum",
+  );
+});
+
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {
   for (const name of [
     "Mise en route",

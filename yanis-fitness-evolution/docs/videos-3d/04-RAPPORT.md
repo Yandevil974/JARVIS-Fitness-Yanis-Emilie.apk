@@ -154,6 +154,13 @@
   `20-PECTORAUX-01-04-PRODUCTION.md`. Les GIF inexacts ne servent pas de modèle
   de posture. La photo #04 reste à reprendre : les candidates plaçaient la
   barre au cou et ont été écartées. Aucun MP4 ou changement applicatif.
+- **25/10/2026 — pectoraux #01→#03 intégrés en `coached`** : Yanis dépose quatre
+  fichiers dans `bdae589` et `6bd8cb5`, dont deux versions de #01. La nouvelle
+  #01 remise est retenue ; l'ancienne reste seulement une preuve de comparaison.
+  #02 et #03 ont leurs propres MP4. Les notices corrigent respectivement la
+  pause haute, la synchronisation des bras et la tête/proximité des haltères.
+  Preuves dans `21-PECTORAUX-01-04-CONTROLE-MP4.md`. **#04 reste sans MP4** et
+  sa photo reste à reprendre ; aucune substitution haltère n'est faite.
 - **Restent à produire/intégrer hors stand-by #11** : la piscine, l'elliptique
   et les étirements. Les GIF d'origine restent conservés comme fallback. La
   mutualisation #05/#06/#09 est une exception utilisateur limitée à ces trois

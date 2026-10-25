@@ -805,6 +805,98 @@ test("triceps #10, #12 et #13 affichent leurs notices et dictent le geste corrig
   expect(errors).toEqual([]);
 });
 
+test("pectoraux #01 à #03 affichent la nouvelle #01 et leurs consignes corrigées", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.speechSynthesis.cancel = () => {};
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      name: "Pompes inclinées (mains surélevées)",
+      src: "/videos/pompes-inclinees-mains-surelevees.mp4",
+      poster: "/videos/posters/pompes-inclinees-mains-surelevees.jpg",
+      title: /pause haute/i,
+      hand: /barre fixe surélevée/i,
+      notice: /nouvelle source remise/i,
+      spoken: /pompes au sol/i,
+    },
+    {
+      name: "Développé couché haltères",
+      src: "/videos/developpe-couche-halteres.mp4",
+      poster: "/videos/posters/developpe-couche-halteres.jpg",
+      title: /synchronisés/i,
+      hand: /Deux haltères indépendants/i,
+      notice: /désynchronise les bras/i,
+      spoken: /désynchronisation des bras/i,
+    },
+    {
+      name: "Développé incliné haltères",
+      src: "/videos/developpe-incline-halteres.mp4",
+      poster: "/videos/posters/developpe-incline-halteres.jpg",
+      title: /tête appuyée/i,
+      hand: /Deux haltères indépendants/i,
+      notice: /redresse légèrement la tête/i,
+      spoken: /soulèvement de la tête/i,
+    },
+  ];
+  for (const item of cases) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "poster",
+      item.poster,
+    );
+    await expect(
+      dialog.locator(".movement-coaching-note strong"),
+    ).toContainText(item.title);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      item.notice,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      item.hand,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(item.spoken);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+    await dialog
+      .getByRole("button", { name: "Fermer", exact: true })
+      .last()
+      .click();
+  }
+  expect(errors).toEqual([]);
+});
+
 test("biceps #10 et #12 affichent leurs vidéos validées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));

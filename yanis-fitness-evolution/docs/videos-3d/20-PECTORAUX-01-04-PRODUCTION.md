@@ -3,18 +3,23 @@
 **Date : 25/10/2026 · Vague 3, premier kit**
 
 Ce kit poursuit la production sans reprendre le triceps #11, qui reste en
-stand-by. **Aucun MP4 pectoral n'a encore été déposé ou intégré.** Les trois
-premières photos sont prêtes pour Arena Video/PixVerse ; la photo #04 doit
-encore être reprise. Les vidéos existantes, tous les GIF, la version
-**1.12.0/195** et le build applicatif restent inchangés. Aucun APK n'est produit.
+stand-by. La préparation initiale ne modifiait ni les GIF ni la version
+**1.12.0/195** et ne produisait aucun APK.
+
+> **État après dépôt de Yanis :** #01, #02 et #03 sont maintenant intégrés en
+> `coached` avec leurs réserves ; la nouvelle source #01 remise est utilisée et
+> l'ancienne est seulement conservée pour comparaison. Voir
+> [`21-PECTORAUX-01-04-CONTROLE-MP4.md`](./21-PECTORAUX-01-04-CONTROLE-MP4.md).
+> **#04 reste sans MP4 et sa photo est toujours à reprendre.** Les références et
+> prompts ci-dessous restent les sources de production.
 
 ## État du kit
 
 | # | Exercice et identifiant | Programmation réelle | État de préparation |
 |---|---|---|---|
-| #01 | Pompes inclinées (mains surélevées) — `pompes-inclinees-mains-surelevees` | 3 × 8-12 · `2010` · repos 60 s | **Photo basse + prompt prêts** |
-| #02 | Développé couché haltères — `developpe-couche-halteres` | 3 × 10-12 · `2011` · repos 75 s | **Photo basse + prompt prêts** |
-| #03 | Développé incliné haltères — `developpe-incline-halteres` | 3 × 10-12 · `2011` · repos 75 s | **Photo haute + prompt prêts** |
+| #01 | Pompes inclinées (mains surélevées) — `pompes-inclinees-mains-surelevees` | 3 × 8-12 · `2010` · repos 60 s | **Intégré `coached`, nouvelle source remise** |
+| #02 | Développé couché haltères — `developpe-couche-halteres` | 3 × 10-12 · `2011` · repos 75 s | **Intégré `coached`, synchronisation en réserve** |
+| #03 | Développé incliné haltères — `developpe-incline-halteres` | 3 × 10-12 · `2011` · repos 75 s | **Intégré `coached`, tête et proximité en réserve** |
 | #04 | Développé incliné barre — `developpe-incline-barre` | 5 × 8-10 · `3010` · repos 60 s | **Prompt prêt ; PHOTO À REPRENDRE** |
 
 Les tempos suivent le découpage de l'application : excentrique, pause basse,
