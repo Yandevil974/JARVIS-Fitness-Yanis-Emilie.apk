@@ -98,6 +98,12 @@
   sans devenir `validated`. La vague 1 biceps couvre désormais **20/20 exercices**
   avec leurs vidéos respectives ; les défauts et preuves restent dans
   `12-BICEPS-18-20-CONTROLE-MP4.md`.
+- **25/10/2026 — vague 2 triceps #02→#05 préparée** : quatre photos, quatre
+  zooms et les prompts Arena Video/PixVerse sont consignés dans
+  `13-TRICEPS-02-05-PRODUCTION.md`. Le GIF #02 est un mouvement avec haltères,
+  pas des dips ; le GIF #04/#05 montre un haltère unique, pas la poulie basse
+  ou la barre EZ demandée. Les productions retiennent donc les noms, consignes
+  et tempos réels du programme. Aucun MP4, statut ou APK de ce lot n'est créé.
 - **Manquent encore** : triceps chromé, piscine, elliptique et étirements.
   Les GIF d'origine restent conservés comme fallback et la vague 2 triceps est
   la suite de production.

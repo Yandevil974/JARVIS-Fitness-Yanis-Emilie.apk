@@ -65,7 +65,12 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    notices propres et audio corrigé obligatoires ; aucun n'est `validated`.
    Preuves et conséquences dans `12-BICEPS-18-20-CONTROLE-MP4.md`. Les GIF
    d'origine restent conservés comme fallback.
-5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
+5. **Vague 2 — Triceps en cours (16 restants)** : lot #02→#05 préparé le
+   25/10 avec quatre photos, quatre zooms et les prompts de
+   `13-TRICEPS-02-05-PRODUCTION.md`. L'inspection a confirmé que le GIF des
+   dips #02 montre en réalité des extensions avec haltères et que le GIF
+   #04/#05 ne montre ni poulie ni barre EZ. Aucun MP4 de ce lot n'est encore
+   intégré ; #01 reste le seul triceps `validated`. **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.
