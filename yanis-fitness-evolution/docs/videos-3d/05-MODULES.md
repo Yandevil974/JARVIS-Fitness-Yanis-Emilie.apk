@@ -78,8 +78,11 @@ ne s'applique pas aux autres exercices.
    combiné. #07 pushdown et #08 unilatéral ont leurs propres MP4. Tous les GIF
    sont conservés. Défauts, zooms et intégration :
    `16-TRICEPS-05-09-CONTROLE-MP4.md` ; préparation et prompts initiaux :
-   `15-TRICEPS-06-09-PRODUCTION.md`. **#03 reste le seul report de ce lot** ;
-   #02 n'est pas retouché sans clarification de la nouvelle consigne de barre.
+   `15-TRICEPS-06-09-PRODUCTION.md`. **#03 reste le seul exercice de ce lot
+   sans MP4** : après clarification, sa nouvelle photo et son prompt ajoutent
+   une barre fixe matelassée d'appui des coudes, dans l'angle de #08, tout en
+   conservant les deux haltères et la prise neutre ; voir
+   `13-TRICEPS-02-05-PRODUCTION.md`. #02 reste inchangé.
    **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

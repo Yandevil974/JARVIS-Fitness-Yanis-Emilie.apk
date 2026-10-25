@@ -7,7 +7,11 @@ Yanis et leur contrôle, **#02/#04 sont intégrés en `coached`** avec notices
 et audio ;
 leur accord d'exploitation ne les rend pas `validated`. Voir
 [`14-TRICEPS-02-04-CONTROLE-MP4.md`](./14-TRICEPS-02-04-CONTROLE-MP4.md).
-**#03/#05 sont reportés à la fin**, sans MP4, statut ou nouvelle génération.
+**#05 est intégré en `coached`** avec la source commune explicitement autorisée
+pour #05/#06/#09 ; voir
+[`16-TRICEPS-05-09-CONTROLE-MP4.md`](./16-TRICEPS-05-09-CONTROLE-MP4.md).
+**#03 reste sans MP4 ni statut vidéo**, mais sa photo et son prompt sont corrigés
+à la demande de Yanis avec une barre fixe d'appui des coudes et l'angle de #08.
 Le pilote #01 et les 20 vidéos biceps restent inchangés. Aucun APK ou changement
 de version n'est produit dans cette étape.
 
@@ -27,6 +31,15 @@ profil côté tête**, avec la barre au-dessus du visage plutôt qu'au-dessus du
 sternum. Le prompt verrouille aussi cet angle de caméra. Les #02, #03 et #04
 sont inchangés.
 
+Quatrième révision ciblée, après clarification de Yanis : la demande concernant
+une barre d'appui concerne **#03 et non #02**. La nouvelle photo
+[`vague2-triceps-03-appui-coudes.jpg`](./vague2-triceps-03-appui-coudes.jpg) et
+son [`zoom`](./vague2-triceps-03-zoom-appui-coudes.jpg) reprennent l'angle de
+#08, avec une **barre fixe matelassée reliée au banc derrière/sous les coudes**.
+Les deux haltères et la prise neutre paumes face à face sont conservés ; la
+barre n'est ni tenue ni chargée et ne touche pas les avant-bras. #02 reste
+inchangé.
+
 L'athlète reste celui de
 [`reference-personnage-verrouille.jpg`](./reference-personnage-verrouille.jpg) :
 homme massif chrome argenté, casquette noire mate, short noir, chaussures
@@ -42,21 +55,22 @@ Les deux frames de chaque GIF ont donc été inspectées avant les photos.
 | # | Identifiant | Programmation réelle | GIF du catalogue | Constat et décision |
 |---|-------------|----------------------|------------------|---------------------|
 | #02 — Triceps dips | `triceps-dips` | 4 × 8-10 · `3010` · repos 60 s · « Descends à 90°, buste droit. » | `/media/3aea2b016706d5d4.gif` | **GIF non conforme au nom** : il montre des extensions allongées avec deux haltères, pas des dips. Produire des dips sur **deux barres parallèles**, buste droit, descente à environ 90° de flexion des coudes. Charge additionnelle possible dans le programme, mais non indispensable dans la démo. |
-| #03 — Triceps extensions haltères, banc plat | `triceps-extensions-halteres-banc-plat` | 4 × 10-12 · `3010` · repos 60 s | `/media/3aea2b016706d5d4.gif` | Le même GIF convient ici à la famille du mouvement : banc plat et **deux haltères séparés**. Retenir une prise neutre fixe, paumes face à face, et une descente de chaque haltère le long de la tête. Ne pas le transformer en dips malgré le partage du GIF avec #02. |
+| #03 — Triceps extensions haltères, banc plat | `triceps-extensions-halteres-banc-plat` | 4 × 10-12 · `3010` · repos 60 s | `/media/3aea2b016706d5d4.gif` | Le même GIF convient ici à la famille du mouvement : banc plat et **deux haltères séparés**. Retenir une prise neutre fixe, paumes face à face, une descente de chaque haltère le long de la tête et, à la demande de Yanis, **une barre fixe matelassée d'appui des coudes reliée au banc**. Ne pas transformer cette barre en charge ni le mouvement en dips malgré le partage du GIF avec #02. |
 | #04 — French press poulie basse | `french-press-poulie-basse` | 4 × 12-15 · `3010` · repos 120 s · « Coudes fixes, mains derrière la tête. » | `/media/a40720f67740d2a0.gif` | **GIF non conforme à l'équipement** : un seul haltère tenu à deux mains, allongé ; ni poulie ni corde. Retenir la French press verticale **debout, dos à une poulie basse, avec une corde**, mains descendant derrière la tête pendant que les coudes restent hauts. |
 | #05 — French press barre EZ | `french-press-barre-ez` | 4 × 8-10 · `4010` · repos 75 s · « Coudes fixes, barre vers le front. » | `/media/a40720f67740d2a0.gif` | **GIF non conforme à l'équipement** : haltère unique au lieu d'une barre EZ. La consigne « vers le front » impose une version **allongée sur banc plat**, prise pronation rapprochée sur une barre EZ, sans la transformer en French press debout ni en variante derrière la tête. |
 
 Le #03 et le #05 sont donc tous deux allongés, mais ils ne sont pas
-interchangeables : **deux haltères en prise neutre et trajectoire le long de la
-tête** pour #03 ; **une barre EZ en pronation et trajectoire vers le front**
-pour #05. Le #06, qui précise « barre derrière la tête », n'est pas modifié.
+interchangeables : **deux haltères en prise neutre, appui fixe des coudes et
+trajectoire le long de la tête** pour #03 ; **une barre EZ en pronation et
+trajectoire vers le front** pour #05. Le #06, qui précise « barre derrière la
+tête », n'est pas modifié.
 
 ## Images de référence
 
 | # | Position de la photo | Image complète | Zoom de contrôle |
 |---|----------------------|----------------|------------------|
 | #02 | Haute, appui sur barres parallèles, genoux fléchis et pieds suspendus | [Photo #02](./vague2-triceps-02-dips.jpg) | [Zoom appuis #02](./vague2-triceps-02-zoom-appuis.jpg) |
-| #03 | Haute, allongé sur banc plat, deux haltères en prise neutre | [Photo #03](./vague2-triceps-03-halteres-banc-plat.jpg) | [Zoom prises #03](./vague2-triceps-03-zoom-prises.jpg) |
+| #03 | Haute, allongé sur banc plat, deux haltères en prise neutre, **barre fixe d'appui derrière/sous les coudes et angle de #08** | [Photo #03 avec appui des coudes](./vague2-triceps-03-appui-coudes.jpg) | [Zoom prises et appui #03](./vague2-triceps-03-zoom-appui-coudes.jpg) |
 | #04 | Haute, debout dos à la poulie basse, corde au-dessus de la tête | [Photo #04](./vague2-triceps-04-poulie-basse.jpg) | [Zoom corde #04](./vague2-triceps-04-zoom-corde.jpg) |
 | #05 | Haute, **profil côté tête**, barre EZ au-dessus du visage et bras presque tendus | [Photo #05](./vague2-triceps-05-barre-ez.jpg) | [Zoom barre EZ #05](./vague2-triceps-05-zoom-barre-ez.jpg) |
 
@@ -109,14 +123,23 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 ### Exécution précise, articulation par articulation
 
 Allongé sur le dos sur un banc horizontal, tête, omoplates, dos et hanches
-appuyés, pieds au sol. La photo montre la **position haute** avec **deux
-haltères séparés**, bras presque tendus au-dessus de la ligne des épaules.
+appuyés, pieds au sol. Dans le même angle latéral trois-quarts que #08, tête à
+gauche et pieds à droite, la photo montre la **position haute** avec **deux
+haltères séparés**, bras presque tendus au-dessus de la ligne des épaules, et
+**une barre fixe matelassée d'appui des coudes** reliée au châssis du banc.
 
 - **Épaules et haut des bras** : les hauts des bras restent fixes, environ
   perpendiculaires au sol. Ils ne basculent pas vers le ventre ou vers
   l'arrière pour transformer le geste en développé ou en pullover.
 - **Coudes** : seuls les coudes fléchissent et s'étendent, ensemble et de
-  façon symétrique. Ils restent à largeur stable, sans s'écarter fortement.
+  façon symétrique. Leur appui reste stable, sans s'écarter fortement ni se
+  soulever de la barre pour créer un élan.
+- **Barre d'appui** : une seule barre droite matelassée, fixée au banc par ses
+  supports, placée immédiatement derrière et légèrement sous les deux coudes.
+  L'arrière des hauts des bras, près des coudes, reste légèrement appuyé contre
+  elle. Elle ne porte aucun disque, n'est jamais tenue, ne remplace pas les
+  haltères et ne touche ni les mains ni les avant-bras ; elle ne doit pas
+  gêner leur passage à côté de la tête.
 - **Avant-bras et poignets** : **prise neutre fixe**, paumes face à face et
   poignets droits. En position haute, chaque poignée d'haltère est parallèle
   au **grand axe tête–pieds du banc**, avec un disque vers la tête et l'autre
@@ -140,7 +163,7 @@ haltères séparés**, bras presque tendus au-dessus de la ligne des épaules.
 ### Prompt Arena Video / PixVerse
 
 ```text
-Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable red-orange working-triceps glow. The action is a LYING TWO-DUMBBELL TRICEPS EXTENSION WITH A FIXED NEUTRAL HAMMER GRIP, driven exclusively by TWO ELBOW HINGES. START at the exact HIGH position in the image: lying face-up lengthwise on a HORIZONTAL FLAT BENCH with head, shoulder blades, back and hips supported and feet planted; exactly TWO separate matching black HEX dumbbells, ONE in EACH hand, elbows nearly extended above the shoulders and upper arms fixed approximately perpendicular to the floor. CRITICAL NEUTRAL-GRIP GEOMETRY: the PALMS FACE EACH OTHER across the body centreline, never the feet or the floor; wrists are straight; at the start EACH dumbbell handle is PARALLEL TO THE LONG HEAD-TO-FOOT AXIS OF THE BENCH, with ONE plate toward the HEAD and the OTHER toward the FEET. The two dumbbells are parallel to one another, NOT transverse across the shoulder line. THIS NEUTRAL GRIP IS AN INVARIANT FOR EVERY FRAME, not merely a starting detail: the palms keep facing each other at the bottom and throughout the return, with NO pronation, NO supination and NO axial twisting of either wrist or dumbbell. PHASE 1 (3 seconds): bend ONLY both elbows and lower BOTH dumbbells simultaneously along opposite sides of the head toward temple/ear level, to a comfortable elbow bend near 90 degrees. The weights travel BESIDE THE HEAD, NEVER toward the chest, sternum or stomach, without touching the face, cap, head or bench. Keep both upper arms and shoulders stationary. PHASE 2 (1 second): extend ONLY both elbows and LIFT the same two dumbbells together along the same arcs back to the exact high neutral-grip reference position, without clashing them together. LOCKED throughout: palms facing each other, neutral wrists, hand positions on the handles, upper-arm positions, head and back against the bench, hips, feet and camera. Both dumbbells preserve the same neutral orientation relative to their hands and remain parallel to each other; they follow the natural elbow arcs with no independent rotation. Static elevated side three-quarter camera, identical background and framing. Show EXACTLY ONE sequence lasting about 4 seconds: HIGH NEUTRAL GRIP -> BESIDE THE EARS WITH THE SAME NEUTRAL GRIP -> HIGH NEUTRAL GRIP. The descent lasts 3 seconds, the return lasts 1 second, and there is no added pause or second repetition. AVOID: palms turning toward the feet or floor, pronated or supinated grip, dumbbell handles turning across the shoulders at the start, any weight path toward the chest, one shared dumbbell, barbell or EZ bar, cable, alternating arms, upper-arm drift, elbows dropping beside the ribs, dumbbells hitting the head, incline bench, standing posture, morphing equipment, extra fingers or limbs, camera movement, flickering glow, text, logo, watermark.
+Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable red-orange working-triceps glow. The action is a LYING TWO-DUMBBELL TRICEPS EXTENSION WITH A FIXED NEUTRAL HAMMER GRIP, driven exclusively by TWO ELBOW HINGES. START at the exact HIGH position in the image: lying face-up lengthwise on a HORIZONTAL FLAT BENCH with head, shoulder blades, back and hips supported and feet planted; exactly TWO separate matching black HEX dumbbells, ONE in EACH hand, elbows nearly extended above the shoulders and upper arms fixed approximately perpendicular to the floor. REQUIRED BENCH-MOUNTED ELBOW SUPPORT FROM THE CORRECTED #03 IMAGE: exactly ONE straight PADDED SUPPORT BAR is bolted to the bench frame by TWO short metal posts and sits transversely immediately BEHIND AND SLIGHTLY UNDER BOTH ELBOWS at distal-upper-arm level; the backs of both upper arms near the elbows rest lightly against it throughout. This is fixed support equipment, NOT a held weight: no plates, no hands on it, no contact with the forearms, and no obstruction of either dumbbell's path beside the head. CRITICAL NEUTRAL-GRIP GEOMETRY: the PALMS FACE EACH OTHER across the body centreline, never the feet or the floor; wrists are straight; at the start EACH dumbbell handle is PARALLEL TO THE LONG HEAD-TO-FOOT AXIS OF THE BENCH, with ONE plate toward the HEAD and the OTHER toward the FEET. The two dumbbells are parallel to one another, NOT transverse across the shoulder line. THIS NEUTRAL GRIP IS AN INVARIANT FOR EVERY FRAME, not merely a starting detail: the palms keep facing each other at the bottom and throughout the return, with NO pronation, NO supination and NO axial twisting of either wrist or dumbbell. PHASE 1 (3 seconds): bend ONLY both elbows and lower BOTH dumbbells simultaneously along opposite sides of the head toward temple/ear level, to a comfortable elbow bend near 90 degrees. The weights travel BESIDE THE HEAD, NEVER toward the chest, sternum or stomach, without touching the face, cap, head or bench. Keep both upper arms and shoulders stationary. PHASE 2 (1 second): extend ONLY both elbows and LIFT the same two dumbbells together along the same arcs back to the exact high neutral-grip reference position, without clashing them together. LOCKED throughout: palms facing each other, neutral wrists, hand positions on the handles, upper-arm positions, BOTH elbow contact points against the same stationary padded support bar, the bar's two bench attachments, head and back against the bench, hips, feet and camera. Both dumbbells preserve the same neutral orientation relative to their hands and remain parallel to each other; they follow the natural elbow arcs with no independent rotation. Static elevated side three-quarter camera MATCHING THE #08 ANGLE and the corrected #03 image, head left and feet right, with the padded elbow-support bar readable; identical background and framing. Show EXACTLY ONE sequence lasting about 4 seconds: HIGH NEUTRAL GRIP -> BESIDE THE EARS WITH THE SAME NEUTRAL GRIP -> HIGH NEUTRAL GRIP. The descent lasts 3 seconds, the return lasts 1 second, and there is no added pause or second repetition. AVOID: palms turning toward the feet or floor, pronated or supinated grip, dumbbell handles turning across the shoulders at the start, any weight path toward the chest, one shared dumbbell, a HELD barbell or EZ bar, a held or weighted support bar, support-bar contact with the hands or forearms, a support bar crossing the neck or blocking the dumbbell path, cable, alternating arms, upper-arm drift, elbows dropping beside the ribs, dumbbells hitting the head, incline bench, standing posture, morphing equipment, extra fingers or limbs, camera movement, flickering glow, text, logo, watermark.
 ```
 
 ---

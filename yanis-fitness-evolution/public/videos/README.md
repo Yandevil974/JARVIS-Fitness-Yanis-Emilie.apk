@@ -67,6 +67,7 @@ technique. Les GIF d'origine restent présents. Contrôle complet :
 La source commune #05/#06/#09 est une **exception explicitement autorisée par
 Yanis**, limitée à ces trois identifiants. Elle ne change pas la convention de
 nommage ni la règle d'une vidéo propre aux autres variantes. Les cinq entrées
-restent `coached`, jamais `validated`. #03 reste reporté et #02 n'est pas
-retouché sans clarification. Preuves :
+restent `coached`, jamais `validated`. #03 reste sans MP4 ; sa nouvelle photo
+de production ajoute une barre fixe d'appui des coudes dans l'angle de #08 et
+#02 reste inchangé. Preuves :
 `docs/videos-3d/16-TRICEPS-05-09-CONTROLE-MP4.md`.
