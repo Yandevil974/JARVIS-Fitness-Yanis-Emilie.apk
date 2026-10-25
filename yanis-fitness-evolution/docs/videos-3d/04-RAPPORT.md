@@ -148,6 +148,12 @@
   Yanis**, sans MP4, avec sa photo de production corrigée : banc à 30°, deux
   haltères neutres, appui des coudes et orientation latérale de #03. Elle sera
   rappelée lors des prochains échanges vidéo, sans bloquer les autres lots.
+- **25/10/2026 — pectoraux #01→#04, préparation partielle** : les photos et
+  prompts #01 pompes mains surélevées, #02 développé haltères plat et #03
+  développé incliné haltères sont prêts dans
+  `20-PECTORAUX-01-04-PRODUCTION.md`. Les GIF inexacts ne servent pas de modèle
+  de posture. La photo #04 reste à reprendre : les candidates plaçaient la
+  barre au cou et ont été écartées. Aucun MP4 ou changement applicatif.
 - **Restent à produire/intégrer hors stand-by #11** : la piscine, l'elliptique
   et les étirements. Les GIF d'origine restent conservés comme fallback. La
   mutualisation #05/#06/#09 est une exception utilisateur limitée à ces trois

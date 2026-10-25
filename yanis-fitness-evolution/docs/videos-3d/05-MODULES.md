@@ -91,7 +91,10 @@ ne s'applique pas aux autres exercices.
    vidéo sans bloquer la suite. Sa photo de production conserve le banc à 30°,
    les deux haltères neutres, l'appui des coudes et l'orientation latérale de
    #03.
-   **Vague 3** : Pectoraux (22).
+   **Vague 3 — Pectoraux (23 entrées, dont les Pompes ajoutées au catalogue)** :
+   premier kit #01→#04 préparé dans `20-PECTORAUX-01-04-PRODUCTION.md`. Les
+   photos et prompts #01/#02/#03 sont prêts ; la photo #04 est à reprendre car
+   les candidates plaçaient la barre au cou. Aucun MP4 pectoral n'est intégré.
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.
