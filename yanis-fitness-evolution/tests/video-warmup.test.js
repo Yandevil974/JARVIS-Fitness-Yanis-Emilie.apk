@@ -341,6 +341,70 @@ test("triceps #03 et #05 à #09 utilisent leurs vidéos accompagnées et conserv
   );
 });
 
+test("triceps #10, #12 et #13 sont accompagnés et #11 reste sans MP4", () => {
+  const cases = [
+    {
+      id: "developpe-couche-prise-serree",
+      src: "/videos/developpe-couche-prise-serree.mp4",
+      poster: "/videos/posters/developpe-couche-prise-serree.jpg",
+      gif: "/media/5e38d08443e26319.gif",
+      title: /Descendez en trois secondes/i,
+      hand: /prise pronée rapprochée/i,
+      notice: /tempo 3010/i,
+      spoken: /bas du sternum/i,
+    },
+    {
+      id: "pushdown-triceps-cable",
+      src: "/videos/pushdown-triceps-cable.mp4",
+      poster: "/videos/posters/pushdown-triceps-cable.jpg",
+      gif: "/media/028724a3c679a470.gif",
+      title: /ne traversez pas le buste/i,
+      hand: /poignée D/i,
+      notice: /trajectoire croisée/i,
+      spoken: /cent vingt secondes de repos/i,
+    },
+    {
+      id: "california-press-barre-au-cou",
+      src: "/videos/california-press-barre-au-cou.mp4",
+      poster: "/videos/posters/california-press-barre-au-cou.jpg",
+      gif: "/media/843d0c24da25ffee.gif",
+      title: /charge légère/i,
+      hand: /pouces enroulés/i,
+      notice: /caméra zoome/i,
+      spoken: /espace visible/i,
+    },
+  ];
+  for (const item of cases) {
+    const video = EXERCISE_VIDEOS[item.id];
+    assert.equal(video.status, "coached", item.id);
+    assert.notEqual(video.status, "validated", item.id);
+    assert.equal(video.src, item.src, item.id);
+    assert.equal(video.poster, item.poster, item.id);
+    assert.equal(videoFor(item.id), video, item.id);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
+    assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
+    assert.ok(releaseAssetExists(video.src), `vidéo release absente : ${item.id}`);
+    assert.ok(
+      releaseAssetExists(video.poster),
+      `poster release absent : ${item.id}`,
+    );
+    assert.ok(releaseAssetExists(item.gif), `GIF release absent : ${item.id}`);
+    assert.match(video.coaching.title, item.title, item.id);
+    assert.match(video.coaching.handCue, item.hand, item.id);
+    assert.match(video.coaching.notice, item.notice, item.id);
+    assert.match(video.coaching.spoken, item.spoken, item.id);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+  assert.equal(
+    videoFor("extensions-triceps-halteres-incline"),
+    null,
+    "#11 attend sa nouvelle vidéo avec l'orientation #03",
+  );
+  assert.ok(publicAssetExists("/media/2ec2c2c1b7eb18a5.gif"));
+  assert.ok(releaseAssetExists("/media/2ec2c2c1b7eb18a5.gif"));
+});
+
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {
   for (const name of [
     "Mise en route",

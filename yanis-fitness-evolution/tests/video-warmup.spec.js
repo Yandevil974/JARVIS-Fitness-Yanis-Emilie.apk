@@ -713,6 +713,98 @@ test("triceps #03 et #05 à #09 affichent les sources autorisées et leurs consi
   expect(errors).toEqual([]);
 });
 
+test("triceps #10, #12 et #13 affichent leurs notices et dictent le geste corrigé", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.speechSynthesis.cancel = () => {};
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      name: "Développé couché prise serrée",
+      src: "/videos/developpe-couche-prise-serree.mp4",
+      poster: "/videos/posters/developpe-couche-prise-serree.jpg",
+      title: /Descendez en trois secondes/i,
+      hand: /prise pronée rapprochée/i,
+      notice: /marque des arrêts/i,
+      spoken: /bas du sternum/i,
+    },
+    {
+      name: "Pushdown triceps câble",
+      src: "/videos/pushdown-triceps-cable.mp4",
+      poster: "/videos/posters/pushdown-triceps-cable.jpg",
+      title: /ne traversez pas le buste/i,
+      hand: /poignée D/i,
+      notice: /trajectoire croisée/i,
+      spoken: /épaule opposée/i,
+    },
+    {
+      name: "California press (barre au cou)",
+      src: "/videos/california-press-barre-au-cou.mp4",
+      poster: "/videos/posters/california-press-barre-au-cou.jpg",
+      title: /charge légère/i,
+      hand: /pouces enroulés/i,
+      notice: /caméra zoome/i,
+      spoken: /espace visible/i,
+    },
+  ];
+  for (const item of cases) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "poster",
+      item.poster,
+    );
+    await expect(
+      dialog.locator(".movement-coaching-note strong"),
+    ).toContainText(item.title);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      item.notice,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      item.hand,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(item.spoken);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+    await dialog
+      .getByRole("button", { name: "Fermer", exact: true })
+      .last()
+      .click();
+  }
+  expect(errors).toEqual([]);
+});
+
 test("biceps #10 et #12 affichent leurs vidéos validées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));

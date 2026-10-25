@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-25",
+  "sourceCommit": "72a205d",
+  "decoder": "OpenCV headless",
+  "sampleSeconds": [0, 0.79, 1.58, 2.42, 3.21, 4],
+  "videos": [
+    {
+      "exerciseNumber": 10,
+      "exerciseId": "developpe-couche-prise-serree",
+      "status": "coached",
+      "source": "1792939358423.mp4",
+      "public": "public/videos/developpe-couche-prise-serree.mp4",
+      "release": "release/videos/developpe-couche-prise-serree.mp4",
+      "proof": "docs/videos-3d/controle-10-13/triceps-10-source-1792939358423.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": 24,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sha256": "de0cd5fc9ac91d055c8215f0f99fe522e2165de4ff8d39224e798872b975bf28"
+    },
+    {
+      "exerciseNumber": 12,
+      "exerciseId": "pushdown-triceps-cable",
+      "status": "coached",
+      "source": "1792939610909.mp4",
+      "public": "public/videos/pushdown-triceps-cable.mp4",
+      "release": "release/videos/pushdown-triceps-cable.mp4",
+      "proof": "docs/videos-3d/controle-10-13/triceps-12-source-1792939610909.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": 24,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sha256": "3b978e95584f674a7338b3e559544d7aadb5df2075df315624473e81ac3f0648"
+    },
+    {
+      "exerciseNumber": 13,
+      "exerciseId": "california-press-barre-au-cou",
+      "status": "coached",
+      "source": "1792939503953.mp4",
+      "public": "public/videos/california-press-barre-au-cou.mp4",
+      "release": "release/videos/california-press-barre-au-cou.mp4",
+      "proof": "docs/videos-3d/controle-10-13/triceps-13-source-1792939503953.mp4",
+      "width": 896,
+      "height": 1024,
+      "fps": 24,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sha256": "489c970e5df0a28ffbbcf3608dabfc316d1238675de588f237ff162d7b6e94b4"
+    }
+  ],
+  "missing": {
+    "exerciseNumber": 11,
+    "exerciseId": "extensions-triceps-halteres-incline",
+    "reason": "Aucun MP4 correspondant déposé",
+    "fallbackGif": "/media/2ec2c2c1b7eb18a5.gif"
+  }
+}

@@ -68,7 +68,7 @@ ne s'applique pas aux autres exercices.
    notices propres et audio corrigé obligatoires ; aucun n'est `validated`.
    Preuves et conséquences dans `12-BICEPS-18-20-CONTROLE-MP4.md`. Les GIF
    d'origine restent conservés comme fallback.
-5. **Vague 2 — Triceps en cours (8 restants)** : #01 reste `validated` ;
+5. **Vague 2 — Triceps : 12 intégrés, #11 sans MP4** : #01 reste `validated` ;
    #02 dips et #04 poulie basse restent `coached`, avec les preuves de
    `14-TRICEPS-02-04-CONTROLE-MP4.md`. Au 25/10, **#05/#06/#07/#08/#09 sont
    également intégrés en `coached`** après dépôt des MP4 par Yanis. Celui-ci
@@ -83,6 +83,12 @@ ne s'applique pas aux autres exercices.
    neutre confirmés, tempo `3010` prioritaire sur la descente rapide et la pause
    en bas. Preuves dans `17-TRICEPS-03-CONTROLE-MP4.md`. Les triceps #01→#09
    ont donc tous une vidéo ; #02 et les statuts précédents restent inchangés.
+   **#10/#12/#13 sont maintenant intégrés en `coached`** après dépôt par Yanis :
+   tempo prioritaire pour #10, trajectoire croisée interdite pour #12 et espace
+   de sécurité/charge légère pour #13. Contrôles dans
+   `19-TRICEPS-10-13-CONTROLE-MP4.md`. **#11 reste sans MP4** ; sa photo de
+   production conserve le banc à 30°, les deux haltères neutres, l'appui des
+   coudes et l'orientation latérale de #03.
    **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

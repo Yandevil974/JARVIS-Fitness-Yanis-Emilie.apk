@@ -14,9 +14,17 @@ vue précédente laissait le logiciel transformer le geste en développé couch�
 Le banc à 30°, les deux haltères et la prise neutre restent obligatoires.
 
 Les quatre photos, leurs zooms et les prompts sont prêts pour inspection.
-**Aucun MP4 de ce lot n'a encore été déposé ou intégré.** Les vidéos triceps
-#01→#09, tous les GIF d'origine, le catalogue et la version applicative
-**1.12.0/195** restent inchangés. Cette étape ne produit aucun APK.
+
+> **État après dépôt de Yanis :** les MP4 #10, #12 et #13 ont été déposés dans
+> le commit `72a205d` puis intégrés en `coached` avec leurs réserves ; voir
+> [`19-TRICEPS-10-13-CONTROLE-MP4.md`](./19-TRICEPS-10-13-CONTROLE-MP4.md).
+> **#11 n'a pas encore de MP4** : sa future génération doit utiliser la photo
+> révisée avec appui des coudes et orientation latérale du #03, pour éviter un
+> développé couché. Les prompts ci-dessous restent les références de production.
+
+Les vidéos triceps #01→#09, tous les GIF d'origine, le catalogue et la version
+applicative **1.12.0/195** restent inchangés. La préparation et l'intégration
+de ce lot ne produisent aucun APK.
 
 ## Correspondances exactes du catalogue
 
@@ -236,11 +244,11 @@ réserves, mais ne doit pas être déclarée `validated` sans conformité réell
 
 - Les quatre identifiants, GIF, séries, répétitions, tempos, repos et notes ont
   été relus depuis `EXERCISE_MAP` avec Node et correspondent au tableau.
-- Les **12 liens locaux** du document ont été résolus, sans fichier manquant.
+- Les **13 liens locaux** du document ont été résolus, sans fichier manquant.
 - Les quatre photos, quatre zooms et deux planches sont des JPEG lisibles ;
   les planches, les détails de prise, l'appui des coudes et la nouvelle
   orientation latérale du #11 ont été inspectés visuellement.
 - Le contrôle whitespace du nouveau Markdown ne signale aucune erreur.
-- Le périmètre Git est limité à ce document et à ces images : aucun changement
-  de `src/`, de média public, de build, de MP4 ou d'APK. Les tests applicatifs
-  complets ne sont donc pas nécessaires pour cette préparation documentaire.
+- La préparation initiale était limitée à ce document et à ces images. Les
+  changements applicables après dépôt des MP4, les builds et les tests sont
+  consignés séparément dans le document 19. Aucun APK n'est produit.

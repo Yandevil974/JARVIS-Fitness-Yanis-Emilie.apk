@@ -513,6 +513,69 @@ export const EXERCISE_VIDEOS = {
         "Extensions triceps combinées à un pullover, allongé avec une barre EZ. Prenez les poignées intérieures en pronation rapprochée, poignets alignés. Descendez en trois secondes dans un arc derrière la tête en pliant les coudes et en laissant les hauts des bras reculer pour le pullover, avec un espace sûr, jamais vers le cou ou la gorge. Remontez en une seconde au-dessus de la poitrine en dépliant les coudes et en ramenant les bras. Gardez la barre horizontale, les côtes contrôlées et les hanches appuyées. Ne reproduisez pas la descente près du cou, les coudes ouverts ou la vitesse de la vidéo IA. Le tempo 3010 du programme reste prioritaire.",
     },
   },
+
+  // ---- VAGUE 2 TRICEPS (#10/#12/#13), dépôts de Yanis le 25/10 ----
+  // Le dépôt des trois sources sur la branche vaut accord d'exploitation.
+  // Elles restent "coached" : #10 a un tempo approximatif, #12 part en
+  // trajectoire croisée et #13 zoome tout en passant près du cou. Les posters,
+  // notices et descriptifs audio ci-dessous priment sur ces défauts.
+  "developpe-couche-prise-serree": {
+    // T10. Barre et prise lisibles ; arrêts et tempo corrigés par l'audio.
+    src: "/videos/developpe-couche-prise-serree.mp4",
+    poster: "/videos/posters/developpe-couche-prise-serree.jpg",
+    label: "Vidéo IA · Développé couché prise serrée, tempo prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Descendez en trois secondes vers le bas de la poitrine, sans copier la vitesse de la vidéo IA.",
+      handCue:
+        "Une barre droite en prise pronée rapprochée, mains à largeur d’épaules ou légèrement moins et poignets empilés.",
+      movementCue:
+        "Allongé sur banc plat, coudes à 30-45° du buste. Poussez en une seconde puis descendez en trois secondes vers le bas de la poitrine, sans rebond.",
+      notice:
+        "La barre et la prise sont lisibles, mais la vidéo IA marque des arrêts et ne respecte pas strictement le tempo 3010. Suivez le poster et le descriptif audio : trois secondes de descente, une seconde de montée, sans pause, et jamais de barre vers le cou.",
+      spoken:
+        "Développé couché prise serrée avec une barre droite. Allongé sur banc plat, prenez la barre en pronation, mains à largeur d’épaules ou légèrement plus rapprochées, sans les coller, et poignets empilés. Gardez les coudes à environ trente à quarante-cinq degrés du buste, les pieds au sol et les hanches appuyées. Poussez la barre en une seconde jusqu’au-dessus de la poitrine, puis descendez en trois secondes vers le bas du sternum, sans rebond ni pause. Ne dirigez jamais la barre vers le cou, le menton ou le front. Ne reproduisez pas la vitesse ou les arrêts de la vidéo IA. Le tempo 3010 du programme reste prioritaire.",
+    },
+  },
+  "pushdown-triceps-cable": {
+    // T12. Matériel unilatéral lisible ; trajectoire croisée interdite.
+    src: "/videos/pushdown-triceps-cable.mp4",
+    poster: "/videos/posters/pushdown-triceps-cable.jpg",
+    label: "Vidéo IA · Pushdown unilatéral, coude fixe prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le coude contre les côtes et ne traversez pas le buste avec la main.",
+      handCue:
+        "Une seule poignée D dans la main droite à la poulie haute, prise pronée et poignet aligné ; la main gauche reste libre.",
+      movementCue:
+        "Coude droit fixe contre les côtes. Laissez l’avant-bras monter à 90° en trois secondes puis poussez près de la cuisse en une seconde, sans bouger l’épaule ni le buste.",
+      notice:
+        "La vidéo IA fait monter la main vers l’épaule opposée et traverse le buste en déplaçant le coude et l’épaule. Ne reproduisez pas cette trajectoire croisée : le poster et le descriptif audio imposent un coude fixe, le mouvement de l’avant-bras seul et le tempo 3010.",
+      spoken:
+        "Pushdown triceps unilatéral à la poulie haute avec une seule poignée D. Tenez-la dans la main droite, en pronation, poignet aligné, et gardez la main gauche libre sur la hanche. Le coude droit reste fixe contre les côtes et l’épaule immobile. Laissez la poignée remonter lentement en trois secondes en pliant seulement le coude jusqu’à environ quatre-vingt-dix degrés, avant-bras proche de l’horizontale, puis poussez-la près de la cuisse droite en une seconde en dépliant seulement le coude. Ne traversez pas le buste avec la main et ne montez pas vers l’épaule opposée. Ne reproduisez pas la trajectoire croisée, le déplacement de l’épaule ou la vitesse de la vidéo IA. Terminez la série du même côté avant de changer de bras. Le tempo 3010 et les cent vingt secondes de repos du programme restent prioritaires.",
+    },
+  },
+  "california-press-barre-au-cou": {
+    // T13. Trajectoire au cou et espace visibles ; zoom et tempo en réserve.
+    src: "/videos/california-press-barre-au-cou.mp4",
+    poster: "/videos/posters/california-press-barre-au-cou.jpg",
+    label: "Vidéo IA · California press au cou, sécurité prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Utilisez une charge légère et conservez un espace réel entre la barre et le cou.",
+      handCue:
+        "Une barre droite légère en prise pronée rapprochée, pouces enroulés et poignets alignés.",
+      movementCue:
+        "Allongé sur banc plat, poussez en une seconde puis descendez en trois secondes vers la base du cou, coudes proches, sans contact et sans aller au front ou à la poitrine.",
+      notice:
+        "La trajectoire au cou est visible et un espace subsiste aux instants contrôlés, mais la caméra zoome, le cycle est approximatif et la barre reste très proche du visage. Suivez le poster et le descriptif audio : charge légère, espace constant, aucun contact et tempo 3010.",
+      spoken:
+        "California press allongé avec une barre droite légère, variante du programme avec descente vers le cou. Prenez la barre en pronation rapprochée, pouces enroulés et poignets alignés. Sur banc plat, gardez la tête et les hanches appuyées, les coudes proches et la charge légère. Poussez la barre en une seconde au-dessus de la ligne haute de la poitrine et du cou, puis redescendez en trois secondes vers la base du cou en pliant les coudes avec un léger ajustement contrôlé des bras. Conservez toujours un espace visible entre la barre, le cou, le menton et le visage. Ne descendez pas vers le front ou le bas de la poitrine et ne cherchez pas une amplitude douloureuse. Ne reproduisez pas le zoom de caméra, la vitesse de la vidéo IA ni tout rapprochement qui supprimerait l’espace de sécurité. Ne pas trop charger. Le tempo 3010 du programme reste prioritaire.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

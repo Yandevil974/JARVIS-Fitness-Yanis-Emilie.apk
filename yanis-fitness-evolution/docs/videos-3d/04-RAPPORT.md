@@ -140,10 +140,18 @@
   et la pause en bas sont corrigées par la notice et l'audio `3010`. Le GIF est
   conservé ; preuves dans `17-TRICEPS-03-CONTROLE-MP4.md`. Les triceps #01→#09
   ont désormais tous une vidéo intégrée, sans modifier les statuts précédents.
-- **Manquent encore** : les autres triceps, la piscine, l'elliptique et
-  les étirements. Les GIF d'origine restent conservés comme fallback. La
-  mutualisation #05/#06/#09 est une exception utilisateur limitée à ces trois
-  exercices ; elle ne devient pas la règle pour les variantes suivantes.
+- **25/10/2026 — triceps #10/#12/#13 intégrés en `coached`** : Yanis dépose
+  les trois sources dans `72a205d`. #10 conserve une réserve de tempo, #12 de
+  trajectoire croisée et #13 de zoom/proximité avec le visage ; notices et
+  audio corrigés sont obligatoires. Preuves dans
+  `19-TRICEPS-10-13-CONTROLE-MP4.md`. **#11 reste sans MP4**, avec sa photo de
+  production corrigée : banc à 30°, deux haltères neutres, appui des coudes et
+  orientation latérale de #03.
+- **Restent à produire/intégrer** : le MP4 triceps #11, la piscine,
+  l'elliptique et les étirements. Les GIF d'origine restent conservés comme
+  fallback. La mutualisation #05/#06/#09 est une exception utilisateur limitée
+  à ces trois exercices ; elle ne devient pas la règle pour les variantes
+  suivantes.
 
 ## Fichiers modifiés / créés
 

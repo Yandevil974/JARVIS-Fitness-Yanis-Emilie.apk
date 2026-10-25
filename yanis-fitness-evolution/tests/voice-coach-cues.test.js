@@ -270,6 +270,48 @@ test("les triceps #03 et #05 à #09 dictent leurs trajectoires et tempos corrig�
   }
 });
 
+test("les triceps #10, #12 et #13 dictent le tempo et leurs corrections propres", () => {
+  const coachedExercises = [
+    {
+      id: "developpe-couche-prise-serree",
+      name: "Développé couché prise serrée",
+      defaultSets: 3,
+      repScheme: "8-10",
+      tempo: "3010",
+      spoken: /bas du sternum/i,
+      timing: /Poussez la barre en une seconde/i,
+    },
+    {
+      id: "pushdown-triceps-cable",
+      name: "Pushdown triceps câble",
+      defaultSets: 3,
+      repScheme: "8-10",
+      tempo: "3010",
+      spoken: /trajectoire croisée/i,
+      timing: /remonter lentement en trois secondes/i,
+    },
+    {
+      id: "california-press-barre-au-cou",
+      name: "California press (barre au cou)",
+      defaultSets: 4,
+      repScheme: "12-15",
+      tempo: "3010",
+      spoken: /espace visible/i,
+      timing: /redescendez en trois secondes/i,
+    },
+  ];
+  for (const exercise of coachedExercises) {
+    const coaching = coachingFor(exercise);
+    assert.ok(coaching, `descriptif absent : ${exercise.id}`);
+    assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
+    assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
+    assert.match(coaching.spoken, exercise.spoken, exercise.id);
+    assert.match(coaching.spoken, exercise.timing, exercise.id);
+    assert.match(coaching.spoken, /Ne reproduisez pas/i, exercise.id);
+    assert.ok(coaching.title, `titre de réserve absent : ${exercise.id}`);
+  }
+});
+
 test("les exercices sans correction spéciale gardent leur consigne tempo", () => {
   const exercise = {
     id: "back-squat",
