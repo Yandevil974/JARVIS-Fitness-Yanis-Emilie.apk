@@ -42,3 +42,15 @@ ffmpeg -i public/videos/<id-exercice>.mp4 -ss 00:00:01 -frames:v 1 -q:v 3 \
   GitHub Releases) : mettre l’URL https dans `src` de `exercise-videos.js`
   au lieu d’un chemin local. Le lecteur (`Movement.jsx`) accepte les deux.
 - Ne JAMAIS supprimer le GIF d’origine tant que la vidéo n’est pas validée.
+
+## Triceps #02/#04 — intégration accompagnée du 25/10/2026
+
+| Exercice | MP4 canonique | Poster | Statut et réserve principale |
+|---|---|---|---|
+| #02 `triceps-dips` | `triceps-dips.mp4` | `posters/triceps-dips.jpg` | `coached` : buste incliné, texte IA parasite et filigrane ; buste droit et tempo `3010` dictés |
+| #04 `french-press-poulie-basse` | `french-press-poulie-basse.mp4` | `posters/french-press-poulie-basse.jpg` | `coached` : coude vers l’avant et corde peu lisible ; coudes hauts et tempo `3010` dictés |
+
+Leur dépôt sur la branche par Yanis vaut accord d'intégration, pas perfection
+technique. Les GIF d'origine restent présents. #03/#05 sont reportés à la fin :
+aucun MP4 ni statut vidéo ne leur est attribué. Contrôle complet :
+`docs/videos-3d/14-TRICEPS-02-04-CONTROLE-MP4.md`.

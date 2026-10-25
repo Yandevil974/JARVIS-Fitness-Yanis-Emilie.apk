@@ -1,11 +1,15 @@
 # Triceps #02 à #05 — images et prompts de production
 
 Date : 25/10/2026
-Statut : **kit de préparation uniquement**. Quatre photos et quatre zooms sont
-prêts pour Arena Video / PixVerse. Aucun MP4 de ce lot n'a encore été reçu,
-contrôlé ou intégré ; aucun statut `coached` ou `validated` n'est attribué ici.
-Le pilote #01 et les 20 vidéos biceps restent inchangés. Aucun APK n'est à
-produire avant réception et contrôle de nouvelles sources vidéo.
+Statut : **préparation conservée + intégration partielle**. Quatre photos et
+quatre zooms restent documentés ci-dessous. Après le dépôt des sources par
+Yanis et leur contrôle, **#02/#04 sont intégrés en `coached`** avec notices
+et audio ;
+leur accord d'exploitation ne les rend pas `validated`. Voir
+[`14-TRICEPS-02-04-CONTROLE-MP4.md`](./14-TRICEPS-02-04-CONTROLE-MP4.md).
+**#03/#05 sont reportés à la fin**, sans MP4, statut ou nouvelle génération.
+Le pilote #01 et les 20 vidéos biceps restent inchangés. Aucun APK ou changement
+de version n'est produit dans cette étape.
 
 Révision ciblée du 25/10/2026 : après un essai du logiciel qui transformait le
 #05 en développé couché, son descriptif a été renforcé avec une géométrie

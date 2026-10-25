@@ -462,6 +462,112 @@ test("biceps #18 à #20 affichent leurs réserves et dictent le geste corrigé",
   expect(errors).toEqual([]);
 });
 
+test("triceps #02 et #04 affichent leurs réserves et dictent le geste corrigé", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.speechSynthesis.cancel = () => {};
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      name: "Triceps dips",
+      src: "/videos/triceps-dips.mp4",
+      poster: "/videos/posters/triceps-dips.jpg",
+      title: /buste droit/i,
+      hand: /barre parallèle/i,
+      notice: /texte parasite/i,
+      spoken: /Descendez en trois secondes/i,
+    },
+    {
+      name: "French press poulie basse",
+      src: "/videos/french-press-poulie-basse.mp4",
+      poster: "/videos/posters/french-press-poulie-basse.jpg",
+      title: /deux coudes hauts/i,
+      hand: /poulie basse/i,
+      notice: /coude partir vers l’avant/i,
+      spoken: /mains derrière la tête/i,
+    },
+  ];
+  for (const [index, item] of cases.entries()) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "src",
+      item.src,
+    );
+    await expect(dialog.locator(".movement-video")).toHaveAttribute(
+      "poster",
+      item.poster,
+    );
+    await expect(
+      dialog.locator(".movement-coaching-note strong"),
+    ).toContainText(item.title);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      item.notice,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      item.hand,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(item.spoken);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+
+    if (index === 1) {
+      await dialog
+        .getByRole("button", { name: "Agrandir", exact: true })
+        .click();
+      const viewer = page.getByRole("dialog", {
+        name: /Vidéo IA · French press poulie basse/,
+      });
+      await expect(
+        viewer.locator(".movement-coaching-note strong"),
+      ).toContainText(/deux coudes hauts/i);
+      await expect(
+        viewer.getByRole("button", {
+          name: "Écouter le descriptif",
+          exact: true,
+        }),
+      ).toBeVisible();
+      await viewer
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    } else {
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    }
+  }
+  expect(errors).toEqual([]);
+});
+
 test("biceps #10 et #12 affichent leurs vidéos validées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));

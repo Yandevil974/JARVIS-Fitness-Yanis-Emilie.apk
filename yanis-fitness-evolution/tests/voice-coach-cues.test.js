@@ -165,6 +165,37 @@ test("les biceps #18 à #20 dictent leur exécution corrigée", () => {
   }
 });
 
+test("les triceps #02 et #04 dictent leur exécution corrigée", () => {
+  const coachedExercises = [
+    {
+      id: "triceps-dips",
+      name: "Triceps dips",
+      defaultSets: 4,
+      repScheme: "8-10",
+      tempo: "3010",
+      spoken: /Gardez le buste droit/i,
+    },
+    {
+      id: "french-press-poulie-basse",
+      name: "French press poulie basse",
+      defaultSets: 4,
+      repScheme: "12-15",
+      tempo: "3010",
+      spoken: /Gardez les deux coudes hauts/i,
+    },
+  ];
+  for (const exercise of coachedExercises) {
+    const coaching = coachingFor(exercise);
+    assert.ok(coaching, `descriptif absent : ${exercise.id}`);
+    assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
+    assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
+    assert.match(coaching.spoken, exercise.spoken, exercise.id);
+    assert.match(coaching.spoken, /Descendez .*en trois secondes/i, exercise.id);
+    assert.match(coaching.spoken, /Ne reproduisez pas/i, exercise.id);
+    assert.ok(coaching.title, `titre de réserve absent : ${exercise.id}`);
+  }
+});
+
 test("les exercices sans correction spéciale gardent leur consigne tempo", () => {
   const exercise = {
     id: "back-squat",

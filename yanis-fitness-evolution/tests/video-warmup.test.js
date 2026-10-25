@@ -13,6 +13,10 @@ function publicAssetExists(src) {
   return existsSync(fileURLToPath(new URL(`../public${src}`, import.meta.url)));
 }
 
+function releaseAssetExists(src) {
+  return existsSync(fileURLToPath(new URL(`../release${src}`, import.meta.url)));
+}
+
 test("chaque vidéo d'exercice activée et chaque poster sont présents", () => {
   const entries = Object.entries(EXERCISE_VIDEOS);
   assert.ok(entries.length >= 10);
@@ -178,6 +182,60 @@ test("biceps #18 à #20 sont jouables en coached après accord, sans validation 
     assert.match(video.coaching.notice, item.notice, item.id);
     assert.match(video.coaching.spoken, item.spoken, item.id);
     assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+});
+
+test("triceps #02 et #04 sont jouables en coached après dépôt de Yanis", () => {
+  const cases = [
+    {
+      id: "triceps-dips",
+      src: "/videos/triceps-dips.mp4",
+      poster: "/videos/posters/triceps-dips.jpg",
+      gif: "/media/3aea2b016706d5d4.gif",
+      title: /buste droit/i,
+      hand: /barre parallèle/i,
+      notice: /texte parasite/i,
+      spoken: /Descendez en trois secondes/i,
+    },
+    {
+      id: "french-press-poulie-basse",
+      src: "/videos/french-press-poulie-basse.mp4",
+      poster: "/videos/posters/french-press-poulie-basse.jpg",
+      gif: "/media/a40720f67740d2a0.gif",
+      title: /deux coudes hauts/i,
+      hand: /poulie basse/i,
+      notice: /coude partir vers l’avant/i,
+      spoken: /mains derrière la tête/i,
+    },
+  ];
+  for (const item of cases) {
+    const video = EXERCISE_VIDEOS[item.id];
+    assert.equal(video.status, "coached", item.id);
+    assert.notEqual(video.status, "validated", item.id);
+    assert.equal(video.src, item.src, item.id);
+    assert.equal(video.poster, item.poster, item.id);
+    assert.equal(videoFor(item.id), video, item.id);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
+    assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
+    assert.ok(releaseAssetExists(video.src), `vidéo release absente : ${item.id}`);
+    assert.ok(
+      releaseAssetExists(video.poster),
+      `poster release absent : ${item.id}`,
+    );
+    assert.ok(releaseAssetExists(item.gif), `GIF release absent : ${item.id}`);
+    assert.match(video.coaching.title, item.title, item.id);
+    assert.match(video.coaching.handCue, item.hand, item.id);
+    assert.match(video.coaching.notice, item.notice, item.id);
+    assert.match(video.coaching.spoken, item.spoken, item.id);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+  for (const id of [
+    "triceps-extensions-halteres-banc-plat",
+    "french-press-barre-ez",
+  ]) {
+    assert.equal(EXERCISE_VIDEOS[id], undefined, `${id} doit rester reporté`);
+    assert.equal(videoFor(id), null, `${id} ne doit pas avoir de statut vidéo`);
   }
 });
 

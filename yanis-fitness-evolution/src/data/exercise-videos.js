@@ -348,6 +348,50 @@ export const EXERCISE_VIDEOS = {
         "Curl barre debout avec une barre droite. Prenez la barre en supination, paumes sous la barre, mains à la largeur des épaules et poignets droits. Restez debout, gainé et sur place, avec les coudes près du corps. Descendez en trois secondes sans verrouiller, puis remontez en une seconde en pliant seulement les coudes, jusqu’en haut. Ne reproduisez pas la vitesse, la marche vers le banc ou la fin penchée de la vidéo IA. Chaque répétition se termine en haut, sans déplacement.",
     },
   },
+
+  // ---- VAGUE 2 TRICEPS (#02/#04), dépôt et accord de Yanis le 25/10 ----
+  // Le dépôt des sources sur la branche par Yanis vaut accord d'exploitation.
+  // Les défauts visibles restent documentés : ces deux vidéos sont "coached",
+  // avec posters, notices et audio correctifs, et non techniquement "validated".
+  "triceps-dips": {
+    // T02. Réserves acceptées : buste incliné, texte IA parasite et filigrane.
+    src: "/videos/triceps-dips.mp4",
+    poster: "/videos/posters/triceps-dips.jpg",
+    label: "Vidéo IA · Triceps dips, posture et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le buste droit et descendez à 90°, sans copier l’inclinaison de la vidéo IA.",
+      handCue:
+        "Une main sur chaque barre parallèle, poignets alignés, épaules basses et pieds décollés.",
+      movementCue:
+        "Descendez en trois secondes jusqu’à environ 90° de flexion des coudes, buste droit, puis remontez en une seconde sans balancement.",
+      notice:
+        "La vidéo IA incline le buste et ajoute du texte parasite ainsi qu’un filigrane. Suivez le poster et le descriptif audio : buste droit, coudes près du corps, descente contrôlée et tempo 3010 du programme.",
+      spoken:
+        "Triceps dips sur barres parallèles. Prenez une barre dans chaque main, épaules basses, poignets alignés et pieds décollés. Gardez le buste droit et les coudes près du corps. Descendez en trois secondes jusqu’à environ quatre-vingt-dix degrés de flexion des coudes, sans aller plus bas, puis remontez en une seconde en poussant dans les paumes. Ne balancez pas les jambes et ne marquez aucune pause. Ne reproduisez pas l’inclinaison du buste ni le texte affiché par la vidéo IA. Le tempo 3010 du programme reste prioritaire.",
+    },
+  },
+  "french-press-poulie-basse": {
+    // T04. Réserves acceptées : un coude part vers l'avant, l'avant-bras passe
+    // devant le visage et la corde est peu lisible en bas. L'audio prime.
+    src: "/videos/french-press-poulie-basse.mp4",
+    poster: "/videos/posters/french-press-poulie-basse.jpg",
+    label: "Vidéo IA · French press poulie basse, coudes prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les deux coudes hauts près de la tête, sans copier le coude qui part vers l’avant.",
+      handCue:
+        "Une corde reliée à la poulie basse, une extrémité dans chaque main, poignets neutres.",
+      movementCue:
+        "Dos à la poulie, descendez les mains derrière la tête en trois secondes puis remontez en une seconde en pliant et dépliant seulement les coudes.",
+      notice:
+        "La vidéo IA laisse un coude partir vers l’avant, place parfois l’avant-bras devant le visage et rend la corde peu lisible en bas. Suivez le poster et le descriptif audio : coudes hauts, mains derrière la tête et tempo 3010 du programme.",
+      spoken:
+        "French press debout à la poulie basse avec une corde. Placez-vous dos à la poulie, une extrémité de corde dans chaque main, poignets neutres. Gardez les deux coudes hauts, près des oreilles, et le buste gainé. Descendez les mains derrière la tête en trois secondes en pliant seulement les coudes, puis remontez en une seconde en dépliant les coudes. Ne laissez pas un coude partir vers l’avant ou sur les côtés. Ne reproduisez pas le coude qui part vers l’avant ni l’avant-bras devant le visage. La corde reste dans les deux mains et le tempo 3010 du programme reste prioritaire.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

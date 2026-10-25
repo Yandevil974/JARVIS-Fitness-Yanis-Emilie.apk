@@ -104,9 +104,16 @@
   pas des dips ; le GIF #04/#05 montre un haltère unique, pas la poulie basse
   ou la barre EZ demandée. Les productions retiennent donc les noms, consignes
   et tempos réels du programme. Aucun MP4, statut ou APK de ce lot n'est créé.
-- **Manquent encore** : triceps chromé, piscine, elliptique et étirements.
-  Les GIF d'origine restent conservés comme fallback et la vague 2 triceps est
-  la suite de production.
+- **25/10/2026 — triceps #02/#04 intégrés en `coached`** : Yanis a déposé
+  `1792927642615.mp4` (#02 dips) et `1792920234771.mp4` (#04 poulie basse) sur
+  la branche ; ce dépôt vaut son accord d'intégration. L'inspection conserve
+  les réserves de buste/texte IA pour #02 et de coudes/corde pour #04. Posters,
+  notices et audio correctifs sont actifs ; aucun des deux n'est `validated`.
+  Preuves et contrôles dans `14-TRICEPS-02-04-CONTROLE-MP4.md`. #03/#05 sont
+  reportés à la fin, sans MP4, statut ou nouvelle génération.
+- **Manquent encore** : les autres triceps, la piscine, l'elliptique et les
+  étirements. Les GIF d'origine restent conservés comme fallback ; seuls #03
+  et #05 du lot triceps en cours restent à traiter à la fin.
 
 ## Fichiers modifiés / créés
 
