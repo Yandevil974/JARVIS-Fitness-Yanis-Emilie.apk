@@ -17,6 +17,12 @@ du #03 ont été remplacés pour rendre la **prise neutre** visible, et son prom
 verrouille désormais les paumes face à face ainsi que l'orientation initiale
 des haltères dans l'axe tête–pieds du banc. Les #02, #04 et #05 sont inchangés.
 
+Troisième révision ciblée, après une nouvelle interprétation du #05 en
+développé couché : la photo et le zoom du #05 sont remplacés par une **vue de
+profil côté tête**, avec la barre au-dessus du visage plutôt qu'au-dessus du
+sternum. Le prompt verrouille aussi cet angle de caméra. Les #02, #03 et #04
+sont inchangés.
+
 L'athlète reste celui de
 [`reference-personnage-verrouille.jpg`](./reference-personnage-verrouille.jpg) :
 homme massif chrome argenté, casquette noire mate, short noir, chaussures
@@ -48,7 +54,7 @@ pour #05. Le #06, qui précise « barre derrière la tête », n'est pas modifi�
 | #02 | Haute, appui sur barres parallèles, genoux fléchis et pieds suspendus | [Photo #02](./vague2-triceps-02-dips.jpg) | [Zoom appuis #02](./vague2-triceps-02-zoom-appuis.jpg) |
 | #03 | Haute, allongé sur banc plat, deux haltères en prise neutre | [Photo #03](./vague2-triceps-03-halteres-banc-plat.jpg) | [Zoom prises #03](./vague2-triceps-03-zoom-prises.jpg) |
 | #04 | Haute, debout dos à la poulie basse, corde au-dessus de la tête | [Photo #04](./vague2-triceps-04-poulie-basse.jpg) | [Zoom corde #04](./vague2-triceps-04-zoom-corde.jpg) |
-| #05 | Haute, allongé sur banc plat, bras presque tendus et barre EZ | [Photo #05](./vague2-triceps-05-barre-ez.jpg) | [Zoom barre EZ #05](./vague2-triceps-05-zoom-barre-ez.jpg) |
+| #05 | Haute, **profil côté tête**, barre EZ au-dessus du visage et bras presque tendus | [Photo #05](./vague2-triceps-05-barre-ez.jpg) | [Zoom barre EZ #05](./vague2-triceps-05-zoom-barre-ez.jpg) |
 
 Ces images sont des **références de génération**, pas des preuves que les
 futurs MP4 seront exacts. Les zooms servent à examiner les appuis, les prises,
@@ -177,14 +183,17 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 ### Exécution précise, articulation par articulation
 
 Allongé sur un banc plat, tête, dos et hanches appuyés, pieds au sol. La photo
-montre la **position haute** : bras presque tendus, **une barre EZ coudée**
-au-dessus de la ligne des épaules, prise rapprochée en pronation sur les
-parties angulées internes.
+montre la **position haute en vue strictement latérale, côté tête** : bras
+presque tendus et **une barre EZ coudée au-dessus du visage**, dans l'axe du
+front, et non au-dessus du sternum. La prise est rapprochée en pronation sur
+les parties angulées internes. Cet angle doit rester fixe pendant la vidéo ;
+il ne doit pas pivoter vers une vue frontale de la poitrine.
 
 - **Mains et barre** : deux mains sur une seule barre EZ, jamais sur une barre
-  parfaitement droite. La prise reste pronée et les poignets confortables,
-  alignés avec les avant-bras. La barre reste horizontale, avec des disques
-  identiques des deux côtés.
+  parfaitement droite ni sur deux haltères. La prise reste pronée et les
+  poignets confortables, alignés avec les avant-bras. La barre reste un objet
+  unique, rigide et horizontal ; ses extrémités ne se transforment pas en
+  poignées indépendantes.
 - **Épaules et haut des bras** : hauts des bras fixes, environ perpendiculaires
   au sol. Ils ne reculent pas avec la barre pour créer un pullover.
 - **Coudes** : flexion et extension symétriques, sans écartement latéral
@@ -210,7 +219,7 @@ parties angulées internes.
 ### Prompt Arena Video / PixVerse
 
 ```text
-Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable red-orange working-triceps glow. The action is a LYING EZ-BAR TRICEPS EXTENSION, also called a SKULLCRUSHER, with a FOREHEAD BAR PATH and movement produced exclusively by TWO ELBOW HINGES. START at the HIGH ARMS-EXTENDED position: lying face-up on a HORIZONTAL FLAT BENCH with head, back and hips supported and feet planted; BOTH elbows nearly extended but not locked, upper arms vertical above the shoulders, ONE short CAMBERED EZ CURL BAR with visible W-shaped bends and matching plates held horizontally above the shoulders, close OVERHAND grip on the inner angled sections and straight comfortable wrists. CRITICAL GEOMETRY: each elbow remains at ONE FIXED POINT IN SPACE directly above its shoulder; each upper arm is an IMMOBILE VERTICAL PILLAR for the entire repetition. ONLY the two forearms rotate around the fixed elbows. The elbows NEVER drop beside the ribs and NEVER travel toward the feet. PHASE 1 (4 seconds): bend ONLY both elbows and rotate both forearms so the SAME EZ bar travels BACKWARD TOWARD THE HEAD END OF THE BENCH and DOWN TOWARD THE FOREHEAD, stopping 3 to 5 cm above the forehead without touching the face, cap or head. The bar goes to the FOREHEAD, NEVER to the chest, sternum, ribs or stomach. Keep the upper arms completely stationary. PHASE 2 (1 second): extend ONLY both elbows and LIFT the same EZ bar along the same arc back to the exact high position; do not drive the bar forward toward the feet. LOCKED throughout: both elbow locations, both upper arms, shoulders, head and back against the bench, hips, feet, overhand grip, hand spacing, wrist alignment and camera. The chest and shoulders create NO movement. The EZ bar remains one rigid cambered object, horizontal and symmetrical. Static elevated side-front three-quarter camera, identical background and framing. Use a generation setting of AT LEAST 5 seconds and show EXACTLY ONE sequence: HIGH ABOVE SHOULDERS -> 3 TO 5 CM ABOVE FOREHEAD -> HIGH ABOVE SHOULDERS. The FIRST visible movement is TOWARD THE FOREHEAD, the descent lasts 4 seconds, the return lasts 1 second, and there is no added pause or second repetition. AVOID: any bar trajectory toward the chest, sternum, upper abdomen or feet, elbows dropping beside the torso, upper-arm swing, shoulder-driven motion, bar behind the head, bar touching the face, straight barbell, dumbbells, cable, incline bench, morphing equipment, uneven plates, extra fingers or limbs, camera movement, flickering glow, text, logo, watermark.
+Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable red-orange working-triceps glow. The action is a LYING EZ-BAR TRICEPS EXTENSION, also called a SKULLCRUSHER, with a FOREHEAD BAR PATH and movement produced exclusively by TWO ELBOW HINGES. CAMERA LOCK: preserve the supplied TRUE SIDE-PROFILE view from the athlete's left side and slightly from the HEAD END of the bench, with the head on the LEFT and feet on the RIGHT. Do NOT rotate to a frontal or front three-quarter view of the chest. START at the HIGH ARMS-EXTENDED position: lying face-up on a HORIZONTAL FLAT BENCH with head, back and hips supported and feet planted; BOTH elbows nearly extended but not locked, upper arms vertical above the shoulders; ONE short CAMBERED EZ CURL BAR with visible W-shaped bends and the SAME open sleeve ends as in the reference, held in a close OVERHAND grip on the inner angled sections with straight comfortable wrists. CRITICAL BAR LOCATION: the bar is ABOVE THE FACE / FOREHEAD LINE at the HEAD END of the bench, NOT above the middle of the chest or sternum, with clear space between the bar and the torso. CRITICAL GEOMETRY: each elbow remains at ONE FIXED POINT IN SPACE directly above its shoulder; each upper arm is an IMMOBILE VERTICAL PILLAR for the entire repetition. ONLY the two forearms rotate around the fixed elbows. The elbows NEVER drop beside the ribs and NEVER travel toward the feet. PHASE 1 (4 seconds): bend ONLY both elbows and rotate both forearms so the SAME EZ bar travels BACKWARD TOWARD THE HEAD END OF THE BENCH and DOWN TOWARD THE FOREHEAD, stopping 3 to 5 cm above the forehead without touching the face, cap or head. The bar goes to the FOREHEAD, NEVER to the chest, sternum, ribs or stomach. Keep both upper arms completely stationary. PHASE 2 (1 second): extend ONLY both elbows and LIFT the same EZ bar along the same arc back to the exact high position above the face; do not drive the bar forward toward the feet. LOCKED throughout: both elbow locations, both upper arms, shoulders, head and back against the bench, hips, feet, overhand grip, hand spacing, wrist alignment and the SIDE-PROFILE camera. The chest and shoulders create NO movement. The EZ bar remains ONE rigid cambered object, horizontal and symmetrical; its ends never become independent dumbbell handles. Use a generation setting of AT LEAST 5 seconds and show EXACTLY ONE sequence: HIGH ABOVE FACE -> 3 TO 5 CM ABOVE FOREHEAD -> HIGH ABOVE FACE. The FIRST visible movement is TOWARD THE FOREHEAD, the descent lasts 4 seconds, the return lasts 1 second, and there is no added pause or second repetition. AVOID: frontal or front three-quarter camera rotation, bar positioned above the sternum, any bar trajectory toward the chest, upper abdomen or feet, elbows dropping beside the torso, upper-arm swing, shoulder-driven motion, bar behind the head, bar touching the face, straight barbell, two dumbbells, cable, incline bench, morphing equipment, extra fingers or limbs, flickering glow, text, logo, watermark.
 ```
 
 ---
@@ -222,12 +231,12 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
    ainsi que les mains en zoom.
 3. Vérifier spécifiquement : buste droit et 90° des dips #02 ; deux haltères et
    **paumes face à face du début à la fin** #03 ; poulie **basse**, corde
-   connectée et mains derrière la tête #04 ; barre **EZ**, coudes fixes
-   au-dessus des épaules, trajet vers le front et cycle de 5 s #05. Pour #03,
-   **rejeter toute pronation, supination ou trajectoire vers la poitrine**. Pour
-   #05, **rejeter toute source qui amène la barre vers la poitrine ou qui
-   laisse retomber les coudes le long du buste**, même si le reste du rendu
-   est propre.
+   connectée et mains derrière la tête #04 ; **profil côté tête**, barre **EZ**
+   au-dessus du visage, coudes fixes, trajet vers le front et cycle de 5 s #05.
+   Pour #03, **rejeter toute pronation, supination ou trajectoire vers la
+   poitrine**. Pour #05, **rejeter toute source qui pivote vers une vue
+   frontale, amène la barre vers la poitrine ou laisse retomber les coudes le
+   long du buste**, même si le reste du rendu est propre.
 4. Refuser ou documenter toute dérive de matériel, d'anatomie, de trajectoire,
    de tempo ou de caméra avant intégration. Ne pas convertir automatiquement
    une correspondance de catalogue en statut `validated`.
