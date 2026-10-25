@@ -12,6 +12,11 @@ Révision ciblée du 25/10/2026 : après un essai du logiciel qui transformait l
 d'extension des coudes et une trajectoire vers le front explicites. Les photos
 et les prompts #02, #03 et #04 ne sont pas modifiés.
 
+Seconde révision ciblée, après contrôle visuel par Yanis : la photo et le zoom
+du #03 ont été remplacés pour rendre la **prise neutre** visible, et son prompt
+verrouille désormais les paumes face à face ainsi que l'orientation initiale
+des haltères dans l'axe tête–pieds du banc. Les #02, #04 et #05 sont inchangés.
+
 L'athlète reste celui de
 [`reference-personnage-verrouille.jpg`](./reference-personnage-verrouille.jpg) :
 homme massif chrome argenté, casquette noire mate, short noir, chaussures
@@ -102,12 +107,17 @@ haltères séparés**, bras presque tendus au-dessus de la ligne des épaules.
   l'arrière pour transformer le geste en développé ou en pullover.
 - **Coudes** : seuls les coudes fléchissent et s'étendent, ensemble et de
   façon symétrique. Ils restent à largeur stable, sans s'écarter fortement.
-- **Avant-bras et poignets** : **prise neutre fixe**, paumes face à face,
-  haltères parallèles et poignets droits. Aucune rotation en pronation ou
-  supination pendant le trajet.
-- **Mains et charges** : exactement un haltère par main. En bas, les charges
-  passent **de part et d'autre de la tête**, vers les tempes ou les oreilles,
-  sans toucher le visage, la tête ou le banc.
+- **Avant-bras et poignets** : **prise neutre fixe**, paumes face à face et
+  poignets droits. En position haute, chaque poignée d'haltère est parallèle
+  au **grand axe tête–pieds du banc**, avec un disque vers la tête et l'autre
+  vers les pieds ; les haltères ne sont pas transversaux aux épaules. Cette
+  orientation permet de reconnaître la prise neutre sur la photo. Aucune
+  rotation en pronation ou supination pendant le trajet.
+- **Mains et charges** : exactement un haltère par main. Les paumes restent
+  face à face **à chaque instant**, y compris au bas et à la remontée ; elles
+  ne se tournent jamais vers les pieds ou le sol. En bas, les charges passent
+  **de part et d'autre de la tête**, vers les tempes ou les oreilles, sans
+  toucher le visage, la tête ou le banc et sans se diriger vers la poitrine.
 
 1. **Descente — 3 s** : fléchir seulement les coudes et abaisser les deux
    haltères simultanément le long de la tête jusqu'à une flexion confortable,
@@ -120,7 +130,7 @@ haltères séparés**, bras presque tendus au-dessus de la ligne des épaules.
 ### Prompt Arena Video / PixVerse
 
 ```text
-Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable red-orange working-triceps glow. START at the exact HIGH position in the image: lying face-up lengthwise on a HORIZONTAL FLAT BENCH with head, shoulder blades, back and hips supported and feet planted; exactly TWO separate matching black HEX dumbbells, ONE in EACH hand, elbows nearly extended above the shoulder line, upper arms fixed approximately perpendicular to the floor, FIXED NEUTRAL grips with palms facing each other, dumbbells parallel and wrists straight. PHASE 1 (3 seconds): bend ONLY both elbows and lower BOTH dumbbells simultaneously along opposite sides of the head toward temple/ear level, to a comfortable elbow bend near 90 degrees; the dumbbells must pass BESIDE the head without touching the face, cap, head or bench. Keep both upper arms and shoulders stationary. PHASE 2 (1 second): extend ONLY both elbows and raise the same two dumbbells together along the same arcs back to the exact high reference position, without clashing them together. LOCKED throughout: neutral forearm orientation with palms inward, straight wrists, upper-arm position, head and back against the bench, hips, feet and camera. The dumbbells follow the natural elbow arcs with no independent wrist rotation. Static elevated side-front three-quarter camera, identical background and framing, natural continuous movement. Show EXACTLY ONE HIGH-LOW-HIGH repetition lasting about 4 seconds: the FIRST visible movement is DOWNWARD and the FINAL frame returns to the supplied HIGH image, with no added pause and no second rep. Preserve the SAME two separate hex dumbbells in every frame. AVOID: one shared dumbbell, two hands on one weight, barbell or EZ bar, cable, bench press, pullover, alternating arms, neutral grip turning into pronation or supination, upper arms drifting, elbows flaring, dumbbells hitting the head, incline or decline bench, standing posture, morphing equipment, extra fingers or limbs, camera movement, flickering glow, text, logo, watermark.
+Animate the EXACT same massive silver-chrome athletic man from the supplied image, preserving his matte black baseball cap, black shorts, white sneakers, grey gym and stable red-orange working-triceps glow. The action is a LYING TWO-DUMBBELL TRICEPS EXTENSION WITH A FIXED NEUTRAL HAMMER GRIP, driven exclusively by TWO ELBOW HINGES. START at the exact HIGH position in the image: lying face-up lengthwise on a HORIZONTAL FLAT BENCH with head, shoulder blades, back and hips supported and feet planted; exactly TWO separate matching black HEX dumbbells, ONE in EACH hand, elbows nearly extended above the shoulders and upper arms fixed approximately perpendicular to the floor. CRITICAL NEUTRAL-GRIP GEOMETRY: the PALMS FACE EACH OTHER across the body centreline, never the feet or the floor; wrists are straight; at the start EACH dumbbell handle is PARALLEL TO THE LONG HEAD-TO-FOOT AXIS OF THE BENCH, with ONE plate toward the HEAD and the OTHER toward the FEET. The two dumbbells are parallel to one another, NOT transverse across the shoulder line. THIS NEUTRAL GRIP IS AN INVARIANT FOR EVERY FRAME, not merely a starting detail: the palms keep facing each other at the bottom and throughout the return, with NO pronation, NO supination and NO axial twisting of either wrist or dumbbell. PHASE 1 (3 seconds): bend ONLY both elbows and lower BOTH dumbbells simultaneously along opposite sides of the head toward temple/ear level, to a comfortable elbow bend near 90 degrees. The weights travel BESIDE THE HEAD, NEVER toward the chest, sternum or stomach, without touching the face, cap, head or bench. Keep both upper arms and shoulders stationary. PHASE 2 (1 second): extend ONLY both elbows and LIFT the same two dumbbells together along the same arcs back to the exact high neutral-grip reference position, without clashing them together. LOCKED throughout: palms facing each other, neutral wrists, hand positions on the handles, upper-arm positions, head and back against the bench, hips, feet and camera. Both dumbbells preserve the same neutral orientation relative to their hands and remain parallel to each other; they follow the natural elbow arcs with no independent rotation. Static elevated side three-quarter camera, identical background and framing. Show EXACTLY ONE sequence lasting about 4 seconds: HIGH NEUTRAL GRIP -> BESIDE THE EARS WITH THE SAME NEUTRAL GRIP -> HIGH NEUTRAL GRIP. The descent lasts 3 seconds, the return lasts 1 second, and there is no added pause or second repetition. AVOID: palms turning toward the feet or floor, pronated or supinated grip, dumbbell handles turning across the shoulders at the start, any weight path toward the chest, one shared dumbbell, barbell or EZ bar, cable, alternating arms, upper-arm drift, elbows dropping beside the ribs, dumbbells hitting the head, incline bench, standing posture, morphing equipment, extra fingers or limbs, camera movement, flickering glow, text, logo, watermark.
 ```
 
 ---
@@ -211,11 +221,13 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 2. Contrôler le départ, le bas, la remontée et la dernière image de chaque MP4,
    ainsi que les mains en zoom.
 3. Vérifier spécifiquement : buste droit et 90° des dips #02 ; deux haltères et
-   prise neutre #03 ; poulie **basse**, corde connectée et mains derrière la
-   tête #04 ; barre **EZ**, coudes fixes au-dessus des épaules, trajet vers le
-   front et cycle de 5 s #05. Pour #05, **rejeter toute source qui amène la
-   barre vers la poitrine ou qui laisse retomber les coudes le long du buste**,
-   même si le reste du rendu est propre.
+   **paumes face à face du début à la fin** #03 ; poulie **basse**, corde
+   connectée et mains derrière la tête #04 ; barre **EZ**, coudes fixes
+   au-dessus des épaules, trajet vers le front et cycle de 5 s #05. Pour #03,
+   **rejeter toute pronation, supination ou trajectoire vers la poitrine**. Pour
+   #05, **rejeter toute source qui amène la barre vers la poitrine ou qui
+   laisse retomber les coudes le long du buste**, même si le reste du rendu
+   est propre.
 4. Refuser ou documenter toute dérive de matériel, d'anatomie, de trajectoire,
    de tempo ou de caméra avant intégration. Ne pas convertir automatiquement
    une correspondance de catalogue en statut `validated`.
