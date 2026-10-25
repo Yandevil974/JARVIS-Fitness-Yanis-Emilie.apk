@@ -60,9 +60,11 @@ chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
    Yanis malgré les réserves. Posters de référence, notices propres et audio
    corrigé obligatoires ; aucun n'est `validated`. Défauts et preuves dans
    `10-BICEPS-14-17-CONTROLE-MP4.md`.
-   Lot 5 — préparation 25/10 : photos, zooms et prompts #18→#20 prêts dans
-   `11-BICEPS-18-20-PRODUCTION.md`. MP4 encore à générer par Yanis, puis à
-   contrôler avant intégration ; les GIF restent actifs comme fallback.
+   Lot 5 — préparation et contrôle 25/10 : photos, zooms et prompts #18→#20
+   dans `11-BICEPS-18-20-PRODUCTION.md`. Trois MP4 reçus et audités dans
+   `12-BICEPS-18-20-CONTROLE-MP4.md` : #18 en attente du choix de Yanis pour
+   un éventuel `coached`, #19/#20 à régénérer. Aucun n'est intégré ; les GIF
+   restent actifs comme fallback.
 5. **Vague 2** : Triceps (16 restants). **Vague 3** : Pectoraux (22).
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

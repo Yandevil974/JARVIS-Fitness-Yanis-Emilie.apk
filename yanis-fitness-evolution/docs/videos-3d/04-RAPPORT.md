@@ -87,10 +87,14 @@
   `11-BICEPS-18-20-PRODUCTION.md`. Le #19 précise le quart aller-retour en bas
   du tempo `3210` ; le #20 retient une barre droite debout. Aucun MP4 de ce
   lot n'a encore été généré, contrôlé ou intégré.
-- **Manquent encore** : MP4 biceps #18→#20, triceps chromé, piscine,
-  elliptique et étirements. Les versions `coached` #14→#17 restent utilisables
-  jusqu'à d'éventuelles meilleures sources ; les GIF #18→#20 restent le
-  fallback en attendant leurs vidéos.
+- **25/10/2026 — trois MP4 #18→#20 contrôlés** : #18 réalise un cycle complet
+  mais avec des réserves de tempo et de rendu ; son intégration `coached`
+  nécessite l'accord de Yanis. #19 ne fait pas le retour au bas du 1¼ et #20
+  sort du curl pour rejoindre un banc : ces deux sources sont à régénérer.
+  Preuves dans `12-BICEPS-18-20-CONTROLE-MP4.md` ; aucune n'est intégrée.
+- **Manquent encore** : décision pour #18, nouvelles vidéos #19/#20, triceps
+  chromé, piscine, elliptique et étirements. Les versions `coached` #14→#17
+  restent utilisables ; les GIF #18→#20 restent les fallbacks.
 
 ## Fichiers modifiés / créés
 
