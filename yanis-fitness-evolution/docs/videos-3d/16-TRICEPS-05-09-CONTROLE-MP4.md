@@ -5,9 +5,10 @@ Date : 25/10/2026
 Sources déposées par Yanis : commit `2e8bca6`
 
 Statut du lot : **#05, #06, #07, #08 et #09 intégrés en `coached`, jamais
-`validated`**. #03 reste sans MP4 ; après clarification de Yanis, sa nouvelle
-photo de production ajoute une barre fixe d'appui des coudes dans l'angle de #08.
-#02 n'est pas modifié.
+`validated`**. #03 est désormais intégré en `coached` avec sa propre source et
+une notice de tempo ; voir
+[`17-TRICEPS-03-CONTROLE-MP4.md`](./17-TRICEPS-03-CONTROLE-MP4.md). #02 n'est
+pas modifié.
 
 ## Accord d'intégration et exception de mutualisation
 
@@ -161,9 +162,8 @@ Preuves : [six instants](controle-05-09/triceps-08-six-instants.jpg) ·
   - #06 : `/media/3aea2b016706d5d4.gif` ;
   - #07 : `/media/4b9f932f0c18e763.gif` ;
   - #09 : `/media/e9aa82132494b300.gif`.
-- #03 reste sans entrée vidéo ; sa nouvelle référence photo et son prompt avec
-  barre fixe d'appui des coudes sont documentés dans
-  [`13-TRICEPS-02-05-PRODUCTION.md`](./13-TRICEPS-02-05-PRODUCTION.md). #02/#04
+- #03 a depuis reçu sa propre vidéo, intégrée en `coached` avec le contrôle
+  [`17-TRICEPS-03-CONTROLE-MP4.md`](./17-TRICEPS-03-CONTROLE-MP4.md). #02/#04
   conservent leurs entrées précédentes et #02 n'a pas été retouché.
 - Aucun changement de programme, de charge, de version ou d'APK. Version
   publiée inchangée : **1.12.0 / 195**.

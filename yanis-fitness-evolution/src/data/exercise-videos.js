@@ -348,9 +348,9 @@ export const EXERCISE_VIDEOS = {
     },
   },
 
-  // ---- VAGUE 2 TRICEPS (#02/#04), dépôt et accord de Yanis le 25/10 ----
+  // ---- VAGUE 2 TRICEPS (#02→#04), dépôts et accord de Yanis le 25/10 ----
   // Le dépôt des sources sur la branche par Yanis vaut accord d'exploitation.
-  // Les défauts visibles restent documentés : ces deux vidéos sont "coached",
+  // Les défauts visibles restent documentés : ces vidéos sont "coached",
   // avec posters, notices et audio correctifs, et non techniquement "validated".
   "triceps-dips": {
     // T02. Réserves acceptées : buste incliné, texte IA parasite et filigrane.
@@ -369,6 +369,26 @@ export const EXERCISE_VIDEOS = {
         "La vidéo IA incline le buste et ajoute du texte parasite ainsi qu’un filigrane. Suivez le poster et le descriptif audio : buste droit, coudes près du corps, descente contrôlée et tempo 3010 du programme.",
       spoken:
         "Triceps dips sur barres parallèles. Prenez une barre dans chaque main, épaules basses, poignets alignés et pieds décollés. Gardez le buste droit et les coudes près du corps. Descendez en trois secondes jusqu’à environ quatre-vingt-dix degrés de flexion des coudes, sans aller plus bas, puis remontez en une seconde en poussant dans les paumes. Ne balancez pas les jambes et ne marquez aucune pause. Ne reproduisez pas l’inclinaison du buste ni le texte affiché par la vidéo IA. Le tempo 3010 du programme reste prioritaire.",
+    },
+  },
+  "triceps-extensions-halteres-banc-plat": {
+    // T03. Appui des coudes et prise neutre lisibles ; réserve : tempo/pause.
+    src: "/videos/triceps-extensions-halteres-banc-plat.mp4",
+    poster: "/videos/posters/triceps-extensions-halteres-banc-plat.jpg",
+    label:
+      "Vidéo IA · Extensions triceps banc plat, appui et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les coudes appuyés et descendez en trois secondes, sans pause en bas.",
+      handCue:
+        "Deux haltères en prise neutre, paumes face à face et poignets droits ; la barre fixe du banc soutient les coudes, elle n’est pas tenue.",
+      movementCue:
+        "Allongé, coudes appuyés sur la barre fixe. Descendez les haltères à côté de la tête en trois secondes puis remontez en une seconde, sans bouger les hauts des bras.",
+      notice:
+        "La vidéo IA conserve l’appui des coudes et la famille du geste, mais elle descend trop vite et marque une pause en bas. Suivez le tempo 3010 : trois secondes de descente, une seconde de remontée, sans pause, avec un espace sûr autour de la tête.",
+      spoken:
+        "Extensions triceps allongées sur banc plat avec deux haltères. Prenez un haltère dans chaque main en prise neutre, paumes face à face et poignets droits. La barre fixe matelassée du banc reste derrière et légèrement sous les coudes ; elle n’est pas une charge et vous ne la tenez pas. Gardez les hauts des bras immobiles et les coudes légèrement appuyés contre cette barre. Descendez les deux haltères à côté de la tête en trois secondes en pliant seulement les coudes, sans toucher le visage, la casquette ou le banc. Remontez en une seconde en dépliant seulement les coudes, sans pause en bas. Ne reproduisez pas la descente rapide ni la pause de la vidéo IA. Le tempo 3010 du programme reste prioritaire.",
     },
   },
   "french-press-poulie-basse": {

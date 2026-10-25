@@ -235,17 +235,23 @@ test("triceps #02 et #04 sont jouables en coached après dépôt de Yanis", () =
     assert.match(video.coaching.spoken, item.spoken, item.id);
     assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
   }
-  for (const id of ["triceps-extensions-halteres-banc-plat"]) {
-    assert.equal(EXERCISE_VIDEOS[id], undefined, `${id} doit rester reporté`);
-    assert.equal(videoFor(id), null, `${id} ne doit pas avoir de statut vidéo`);
-  }
 });
 
-test("triceps #05 à #09 utilisent leurs vidéos accompagnées et conservent les GIF", () => {
+test("triceps #03 et #05 à #09 utilisent leurs vidéos accompagnées et conservent les GIF", () => {
   const sharedSrc = "/videos/extensions-triceps-ez-commune-05-06-09.mp4";
   const sharedPoster =
     "/videos/posters/extensions-triceps-ez-commune-05-06-09.jpg";
   const cases = [
+    {
+      id: "triceps-extensions-halteres-banc-plat",
+      src: "/videos/triceps-extensions-halteres-banc-plat.mp4",
+      poster: "/videos/posters/triceps-extensions-halteres-banc-plat.jpg",
+      gif: "/media/3aea2b016706d5d4.gif",
+      title: /coudes appuyés/i,
+      hand: /barre fixe du banc/i,
+      notice: /pause en bas/i,
+      spoken: /paumes face à face/i,
+    },
     {
       id: "french-press-barre-ez",
       src: sharedSrc,

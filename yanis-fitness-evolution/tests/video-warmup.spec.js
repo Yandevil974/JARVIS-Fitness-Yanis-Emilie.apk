@@ -568,7 +568,7 @@ test("triceps #02 et #04 affichent leurs réserves et dictent le geste corrigé"
   expect(errors).toEqual([]);
 });
 
-test("triceps #05 à #09 affichent les sources autorisées et leurs consignes propres", async ({
+test("triceps #03 et #05 à #09 affichent les sources autorisées et leurs consignes propres", async ({
   page,
 }) => {
   const errors = [];
@@ -592,6 +592,15 @@ test("triceps #05 à #09 affichent les sources autorisées et leurs consignes pr
   const sharedPoster =
     "/videos/posters/extensions-triceps-ez-commune-05-06-09.jpg";
   const cases = [
+    {
+      name: "Triceps extensions haltères, banc plat",
+      src: "/videos/triceps-extensions-halteres-banc-plat.mp4",
+      poster: "/videos/posters/triceps-extensions-halteres-banc-plat.jpg",
+      title: /coudes appuyés/i,
+      hand: /barre fixe du banc/i,
+      notice: /pause en bas/i,
+      spoken: /paumes face à face/i,
+    },
     {
       name: "French press barre EZ",
       src: sharedSrc,
@@ -674,7 +683,7 @@ test("triceps #05 à #09 affichent les sources autorisées et leurs consignes pr
     expect(spoken).toMatch(item.spoken);
     expect(spoken).toMatch(/Ne reproduisez pas/i);
 
-    if (index === 4) {
+    if (index === cases.length - 1) {
       await dialog
         .getByRole("button", { name: "Agrandir", exact: true })
         .click();

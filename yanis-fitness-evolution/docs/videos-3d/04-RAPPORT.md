@@ -132,9 +132,15 @@
   ajoutent une barre fixe matelassée reliée au banc derrière/sous les coudes,
   dans l'angle de #08. Les deux haltères et la prise neutre paumes face à face
   restent obligatoires ; le prompt est mis à jour dans
-  `13-TRICEPS-02-05-PRODUCTION.md`. Aucun MP4 ou statut n'est ajouté pour #03 ;
-  #02 reste inchangé.
-- **Manquent encore** : #03 et les autres triceps, la piscine, l'elliptique et
+  `13-TRICEPS-02-05-PRODUCTION.md`. À cette étape, aucun MP4 ou statut n'était
+  encore ajouté pour #03 ; #02 reste inchangé.
+- **25/10/2026 — #03 intégré en `coached`** : Yanis dépose
+  `1792934757048.mp4` (`587fed0`). Le contrôle confirme les deux haltères, la
+  prise neutre, la barre fixe d'appui et le retour en haut. La descente rapide
+  et la pause en bas sont corrigées par la notice et l'audio `3010`. Le GIF est
+  conservé ; preuves dans `17-TRICEPS-03-CONTROLE-MP4.md`. Les triceps #01→#09
+  ont désormais tous une vidéo intégrée, sans modifier les statuts précédents.
+- **Manquent encore** : les autres triceps, la piscine, l'elliptique et
   les étirements. Les GIF d'origine restent conservés comme fallback. La
   mutualisation #05/#06/#09 est une exception utilisateur limitée à ces trois
   exercices ; elle ne devient pas la règle pour les variantes suivantes.

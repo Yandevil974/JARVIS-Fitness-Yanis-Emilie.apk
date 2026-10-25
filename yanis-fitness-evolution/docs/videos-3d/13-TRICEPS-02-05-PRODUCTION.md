@@ -10,10 +10,12 @@ leur accord d'exploitation ne les rend pas `validated`. Voir
 **#05 est intégré en `coached`** avec la source commune explicitement autorisée
 pour #05/#06/#09 ; voir
 [`16-TRICEPS-05-09-CONTROLE-MP4.md`](./16-TRICEPS-05-09-CONTROLE-MP4.md).
-**#03 reste sans MP4 ni statut vidéo**, mais sa photo et son prompt sont corrigés
-à la demande de Yanis avec une barre fixe d'appui des coudes et l'angle de #08.
-Le pilote #01 et les 20 vidéos biceps restent inchangés. Aucun APK ou changement
-de version n'est produit dans cette étape.
+**#03 est désormais intégré en `coached`** après dépôt de son MP4 par Yanis :
+l'appui des coudes et la prise neutre sont visibles, tandis que la descente
+rapide et la pause en bas restent corrigées par la notice et l'audio. Voir
+[`17-TRICEPS-03-CONTROLE-MP4.md`](./17-TRICEPS-03-CONTROLE-MP4.md). Le pilote #01
+et les 20 vidéos biceps restent inchangés. Aucun APK ou changement de version
+n'est produit dans cette étape.
 
 Révision ciblée du 25/10/2026 : après un essai du logiciel qui transformait le
 #05 en développé couché, son descriptif a été renforcé avec une géométrie
@@ -39,6 +41,11 @@ son [`zoom`](./vague2-triceps-03-zoom-appui-coudes.jpg) reprennent l'angle de
 Les deux haltères et la prise neutre paumes face à face sont conservés ; la
 barre n'est ni tenue ni chargée et ne touche pas les avant-bras. #02 reste
 inchangé.
+
+Après dépôt de `1792934757048.mp4`, le contrôle image par image confirme le
+matériel, l'appui et le cycle haut–bas–haut. La vidéo est intégrée en `coached`
+car le tempo est accéléré et une pause est ajoutée en bas ; les preuves et le
+descriptif prioritaire sont consignés dans le document 17.
 
 L'athlète reste celui de
 [`reference-personnage-verrouille.jpg`](./reference-personnage-verrouille.jpg) :

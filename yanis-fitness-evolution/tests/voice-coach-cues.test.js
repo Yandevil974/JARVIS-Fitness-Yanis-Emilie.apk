@@ -200,8 +200,18 @@ test("les triceps #02 et #04 dictent leur exécution corrigée", () => {
   }
 });
 
-test("les triceps #05 à #09 dictent leurs trajectoires et tempos corrigés", () => {
+test("les triceps #03 et #05 à #09 dictent leurs trajectoires et tempos corrigés", () => {
   const coachedExercises = [
+    {
+      id: "triceps-extensions-halteres-banc-plat",
+      name: "Triceps extensions haltères, banc plat",
+      defaultSets: 4,
+      repScheme: "10-12",
+      tempo: "3010",
+      spoken: /paumes face à face/i,
+      timing:
+        /Descendez les deux haltères à côté de la tête en trois secondes/i,
+    },
     {
       id: "french-press-barre-ez",
       name: "French press barre EZ",
