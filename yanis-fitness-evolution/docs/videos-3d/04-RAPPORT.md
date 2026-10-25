@@ -82,9 +82,15 @@
   `10-BICEPS-14-17-CONTROLE-MP4.md`. Yanis valide ensuite explicitement leur
   intégration faute de meilleure version. Posters de référence, notices propres
   et descriptifs audio corrigés sont obligatoires ; aucun n'est `validated`.
-- **Manquent encore** : vidéos biceps #18→#20, triceps chromé, piscine,
+- **25/10/2026 — lot biceps #18→#20 préparé** : trois photos, trois zooms et
+  les prompts Arena Video/PixVerse sont consignés dans
+  `11-BICEPS-18-20-PRODUCTION.md`. Le #19 précise le quart aller-retour en bas
+  du tempo `3210` ; le #20 retient une barre droite debout. Aucun MP4 de ce
+  lot n'a encore été généré, contrôlé ou intégré.
+- **Manquent encore** : MP4 biceps #18→#20, triceps chromé, piscine,
   elliptique et étirements. Les versions `coached` #14→#17 restent utilisables
-  jusqu'à d'éventuelles meilleures sources ; la suite de production est #18.
+  jusqu'à d'éventuelles meilleures sources ; les GIF #18→#20 restent le
+  fallback en attendant leurs vidéos.
 
 ## Fichiers modifiés / créés
 
