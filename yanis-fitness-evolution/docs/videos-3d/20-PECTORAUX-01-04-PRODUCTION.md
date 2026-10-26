@@ -10,8 +10,10 @@ stand-by. La préparation initiale ne modifiait ni les GIF ni la version
 > `coached` avec leurs réserves ; la nouvelle source #01 remise est utilisée et
 > l'ancienne est seulement conservée pour comparaison. Voir
 > [`21-PECTORAUX-01-04-CONTROLE-MP4.md`](./21-PECTORAUX-01-04-CONTROLE-MP4.md).
-> **#04 reste sans MP4 et sa photo est toujours à reprendre.** Les références et
-> prompts ci-dessous restent les sources de production.
+> **#04 reste sans MP4.** Sa nouvelle photo en position haute et son prompt final
+> sont désormais dans
+> [`22-PECTORAUX-04-08-PRODUCTION.md`](./22-PECTORAUX-04-08-PRODUCTION.md).
+> Les références #01→#03 ci-dessous restent les sources de production publiées.
 
 ## État du kit
 
@@ -20,7 +22,7 @@ stand-by. La préparation initiale ne modifiait ni les GIF ni la version
 | #01 | Pompes inclinées (mains surélevées) — `pompes-inclinees-mains-surelevees` | 3 × 8-12 · `2010` · repos 60 s | **Intégré `coached`, nouvelle source remise** |
 | #02 | Développé couché haltères — `developpe-couche-halteres` | 3 × 10-12 · `2011` · repos 75 s | **Intégré `coached`, synchronisation en réserve** |
 | #03 | Développé incliné haltères — `developpe-incline-halteres` | 3 × 10-12 · `2011` · repos 75 s | **Intégré `coached`, tête et proximité en réserve** |
-| #04 | Développé incliné barre — `developpe-incline-barre` | 5 × 8-10 · `3010` · repos 60 s | **Prompt prêt ; PHOTO À REPRENDRE** |
+| #04 | Développé incliné barre — `developpe-incline-barre` | 5 × 8-10 · `3010` · repos 60 s | **Nouvelle photo et prompt dans le kit #04→#08 ; MP4 absent** |
 
 Les tempos suivent le découpage de l'application : excentrique, pause basse,
 concentrique, contraction haute. Ainsi `2011` impose **2 s de descente, 1 s de
@@ -142,7 +144,13 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied imag
 
 ---
 
-## #04 — Développé incliné à la barre — PROMPT SEULEMENT
+## #04 — Développé incliné à la barre — ANCIENNE PRÉPARATION REMPLACÉE
+
+> **Mise à jour du 26/10/2026 :** la nouvelle photo en position haute et le
+> prompt final sont dans
+> [`22-PECTORAUX-04-08-PRODUCTION.md`](./22-PECTORAUX-04-08-PRODUCTION.md).
+> Les instructions « photo encore nécessaire » ci-dessous décrivent l'ancien
+> lot et ne constituent plus l'état courant.
 
 ### Photo encore nécessaire
 
@@ -181,7 +189,8 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 - #02 : banc plat et deux haltères séparés, contraction haute de 1 s, `2011`.
 - #03 : tête et dos appuyés sur le banc incliné, deux haltères, `2011`.
 - #04 : une seule barre, banc incliné, barre vers le sternum et jamais vers le
-  cou, `3010` ; **ne pas générer avant validation de sa nouvelle photo**.
+  cou, `3010` ; utiliser désormais la nouvelle photo et le prompt final du kit
+  #04→#08. Aucun MP4 #04 n'est intégré à ce stade.
 
 Le dépôt d'un MP4 par Yanis vaudra accord d'intégration, mais chaque vidéo sera
 inspectée avant intégration et pourra rester `coached` avec réserves. Aucun GIF

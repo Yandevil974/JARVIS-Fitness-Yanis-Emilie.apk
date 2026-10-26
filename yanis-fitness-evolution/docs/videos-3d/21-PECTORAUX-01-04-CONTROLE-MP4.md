@@ -2,6 +2,11 @@
 
 **Date : 25/10/2026 · Sources déposées par Yanis dans `bdae589` et `6bd8cb5`**
 
+> **Mise à jour du 26/10/2026 :** la nouvelle référence #04 et les prompts
+> #04→#08 sont dans
+> [`22-PECTORAUX-04-08-PRODUCTION.md`](./22-PECTORAUX-04-08-PRODUCTION.md).
+> Aucun MP4 #04→#08 n'est intégré à ce stade.
+
 ## Verdict
 
 | N° | Exercice | Source retenue | État |
