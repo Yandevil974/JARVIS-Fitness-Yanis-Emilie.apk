@@ -38,7 +38,7 @@ blanches, salle claire et pectoraux rouge/orange.
 |---|---|---|---|
 | #04 | Barre au-dessus du sternum, grand espace avec la tête | [Photo #04](./vague3-pectoraux-04-developpe-incline-barre.jpg) | [Zoom barre/sternum](./vague3-pectoraux-04-zoom-barre-sternum.jpg) |
 | #05 | Banc plat, deux haltères en prise neutre | [Photo #05](./vague3-pectoraux-05-halteres-plat-neutre.jpg) | [Zoom prise neutre](./vague3-pectoraux-05-zoom-prise-neutre.jpg) |
-| #06 | Banc décliné, bras ouverts en grand arc | [Photo #06](./vague3-pectoraux-06-ecartes-decline.jpg) | [Zoom grand arc](./vague3-pectoraux-06-zoom-grand-arc.jpg) |
+| #06 | Banc décliné, grand arc et paumes vers le plafond | [Photo #06](./vague3-pectoraux-06-ecartes-decline.jpg) | [Zoom paumes/grand arc](./vague3-pectoraux-06-zoom-grand-arc.jpg) |
 | #07 | Banc à 30°, tête appuyée et visible | [Photo #07](./vague3-pectoraux-07-halteres-incline-30.jpg) | [Zoom appui tête](./vague3-pectoraux-07-zoom-appui-tete.jpg) |
 | #08 | Banc décliné et prise neutre en position haute | [Photo #08](./vague3-pectoraux-08-halteres-decline-neutre.jpg) | [Zoom décliné/neutre](./vague3-pectoraux-08-zoom-decline-neutre.jpg) |
 
@@ -49,8 +49,8 @@ blanches, salle claire et pectoraux rouge/orange.
 - **#05** est un développé sur **banc plat**, avec deux haltères et les paumes
   face à face ; ce n'est ni le développé proné #02 ni le décliné #08.
 - **#06** est un **écarté**, pas un développé : l'angle de coude souple reste
-  fixe et les bras décrivent un grand arc. Aucune vidéo de presse ne doit le
-  remplacer.
+  fixe, les bras décrivent un grand arc et **les paumes restent tournées vers le
+  plafond**. Aucune vidéo de presse ou de prise neutre ne doit le remplacer.
 - **#07** impose un dossier à **30°**, la tête et le dos appuyés ; ce n'est pas
   un développé épaules et le banc ne doit pas devenir plat.
 - **#08** combine **décliné + développé + prise neutre**. Il reste distinct de
@@ -105,21 +105,23 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied BOTT
 ### Exécution attendue
 
 Sur banc décliné, tête plus basse que les hanches, jambes fixées et dos appuyé.
-Deux haltères légers, paumes face à face, coudes souples avec un léger angle
-**verrouillé**. Le mouvement vient des épaules et non d'une flexion/extension
-des coudes.
+Deux haltères légers, **paumes tournées vers le plafond en supination**, dos des
+mains vers le sol, coudes souples avec un léger angle **verrouillé**. Cette
+orientation des paumes est la consigne spécifique de Yanis pour cette version.
+Le mouvement vient des épaules et non d'une flexion/extension des coudes.
 
 1. La photo commence **en bas étiré**, bras ouverts en grand arc au niveau de
-   la poitrine.
+   la poitrine et paumes vers le plafond.
 2. **Refermer en 1 s** vers le haut en décrivant le même grand arc, sans
-   entrechoquer les haltères.
-3. **Ouvrir en 3 s** jusqu'à l'étirement confortable de la photo. Tempo `3010`,
-   sans pause et sans transformer le geste en développé.
+   entrechoquer les haltères et sans retourner les paumes.
+3. **Ouvrir en 3 s** jusqu'à l'étirement confortable de la photo, paumes
+   toujours vers le plafond. Tempo `3010`, sans pause et sans transformer le
+   geste en développé.
 
 ### Prompt à copier avec la photo #06
 
 ```text
-Animate the EXACT same massive silver-chrome athletic man from the supplied STRETCHED BOTTOM image, preserving his matte black cap, black shorts, white sneakers, bright grey gym and stable red-orange pectorals. CAMERA AND DECLINE SETUP LOCKED: head LEFT and clearly LOWER than the hips, feet RIGHT and secured under the pads, athlete lying back on the exact DECLINE BENCH in the image with the head, shoulders, back and hips supported. EXACTLY TWO light dumbbells, one in each hand, palms facing each other. This is a TWO-DUMBBELL DECLINE FLY, NOT A PRESS. START at the exact stretched bottom in the image: BOTH ARMS OPEN WIDE TO THE SIDES in a broad hugging arc at chest level, with the SAME SMALL FIXED 15-20 DEGREE ELBOW BEND in both arms. PHASE 1 (1 second): sweep both dumbbells upward and inward along a wide arc until they are above the lower / middle chest, keeping the elbow angles unchanged and the weights separate. PHASE 2 (3 seconds): open both arms slowly along the exact same wide arc back to the supplied stretched position, with no pause at either end. Show ONE continuous 1-second-close / 3-second-open repetition, tempo 3010. Keep the decline bench, supported head and torso, secured legs, fixed soft elbows, neutral palms, dumbbells and camera fixed. No pressing motion, no 90-degree elbow bend, no elbow extension driving the lift, no dumbbells beside the hips, no flat or incline bench, no barbell, no extra limbs, no camera movement, no text, no logo, no watermark.
+Animate the EXACT same massive silver-chrome athletic man from the supplied STRETCHED BOTTOM image, preserving his matte black cap, black shorts, white sneakers, bright grey gym and stable red-orange pectorals. CAMERA AND DECLINE SETUP LOCKED: head LEFT and clearly LOWER than the hips, feet RIGHT and secured under the pads, athlete lying back on the exact DECLINE BENCH in the image with the head, shoulders, back and hips supported. EXACTLY TWO light dumbbells, one in each hand. HAND ORIENTATION LOCKED: BOTH PALMS FACE UP TOWARD THE CEILING IN SUPINATION and the BACKS OF BOTH HANDS FACE THE FLOOR, with natural closed grips and straight wrists; keep this palms-up orientation throughout the repetition. This is a TWO-DUMBBELL DECLINE FLY, NOT A PRESS. START at the exact stretched bottom in the image: BOTH ARMS OPEN WIDE TO THE SIDES in a broad hugging arc at chest level, with the SAME SMALL FIXED 15-20 DEGREE ELBOW BEND in both arms. PHASE 1 (1 second): sweep both dumbbells upward and inward along a wide arc until they are above the lower / middle chest, keeping the elbow angles unchanged, the palms facing the ceiling and the weights separate. PHASE 2 (3 seconds): open both arms slowly along the exact same wide arc back to the supplied stretched position, still palms up, with no pause at either end. Show ONE continuous 1-second-close / 3-second-open repetition, tempo 3010. Keep the decline bench, supported head and torso, secured legs, fixed soft elbows, upward-facing palms, dumbbells and camera fixed. No palms facing each other, no palms-down grip, no forearm rotation into a neutral or pronated grip, no pressing motion, no 90-degree elbow bend, no elbow extension driving the lift, no dumbbells beside the hips, no flat or incline bench, no barbell, no extra limbs, no camera movement, no text, no logo, no watermark.
 ```
 
 ---
@@ -175,7 +177,8 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 - À réception : décoder entièrement le MP4, relever dimensions, fréquence, durée
   et SHA-256, inspecter au moins six instants et comparer le geste à la variante
   exacte. Ne jamais substituer une presse à un écarté ou un banc plat/incliné à
-  un banc décliné.
+  un banc décliné. Pour #06, vérifier explicitement que les deux paumes restent
+  tournées vers le plafond.
 - Le dépôt d'un MP4 par Yanis vaut accord d'intégration : l'intégrer alors sans
   redemander confirmation, en `coached` si des réserves techniques subsistent,
   avec notice et consigne audio corrective. Aucun GIF ne sera supprimé.
