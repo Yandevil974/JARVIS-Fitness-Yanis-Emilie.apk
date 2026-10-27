@@ -171,8 +171,9 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 
 - Une répétition continue, caméra fixe, athlète et matériel stables, sans morphing
   des mains, des haltères, de la barre ou du banc.
-- Durée cible : **4 s pour #04/#05/#06/#08** et **5 s pour #07**, afin de
-  respecter les tempos sans ajouter de pause. Utiliser 24 i/s si disponible.
+- Durée cible : **4 s pour #04/#05/#06** et **5 s pour #07/#08**, afin de
+  respecter les tempos `3010` et `4010` sans ajouter de pause. Utiliser 24 i/s
+  si disponible.
 - La dernière image doit rejoindre proprement la position de départ pour permettre
   la lecture en boucle.
 - À réception : décoder entièrement le MP4, relever dimensions, fréquence, durée

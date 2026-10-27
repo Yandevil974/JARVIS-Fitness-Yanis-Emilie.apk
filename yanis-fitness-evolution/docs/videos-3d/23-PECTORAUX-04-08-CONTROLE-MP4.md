@@ -146,7 +146,11 @@ production restent dans
   leurs posters, notices et descriptifs audio.
 - **Suite Node complète : 227 tests — 225 réussites, 0 échec, 2 ignorés.**
 - **Suite Playwright complète : 47 scénarios — 36 réussites, 0 échec,
-  11 ignorés.**
+  11 ignorés.** Les 11 ignorés ne concernent pas les vidéos : 8 tests de
+  restauration et 3 tests de maintenance exigent la sauvegarde personnelle
+  `transformation_12_mois_sauvegarde.json`. Pour les exécuter plus tard, rendre
+  ce fichier disponible via `JARVIS_TEST_BACKUP` puis relancer Playwright ;
+  ne pas l'ajouter au dépôt public. Les tests vidéo ont bien été exécutés.
 - Un scénario de test du coach dépendant du jour a été isolé sur une seule
   séance hebdomadaire ; **aucune règle du moteur de coach n'a été modifiée**.
 - `npm run build:portable` et `npm run build` réussis : **1679 modules**,

@@ -92,12 +92,14 @@ ne s'applique pas aux autres exercices.
    les deux haltères neutres, l'appui des coudes et l'orientation latérale de
    #03.
    **Vague 3 — Pectoraux (23 entrées, dont les Pompes ajoutées au catalogue)** :
-   #01/#02/#03 sont intégrés en `coached` après dépôt par Yanis. La nouvelle
-   source #01 remise est utilisée ; l'ancienne reste hors application. Réserves :
-   pause haute pour #01, synchronisation des bras pour #02 et tête/proximité des
-   haltères pour #03. Preuves dans `21-PECTORAUX-01-04-CONTROLE-MP4.md` et
-   préparation dans `20-PECTORAUX-01-04-PRODUCTION.md`. **#04 reste sans MP4**,
-   avec sa photo à reprendre car les candidates plaçaient la barre au cou.
+   **#01→#08 sont intégrés en `coached`** après dépôt par Yanis, avec posters,
+   notices et audio correctifs. La nouvelle source #01 remise est utilisée ;
+   l'ancienne reste hors application. Les réserves et preuves sont consignées
+   dans `21-PECTORAUX-01-04-CONTROLE-MP4.md` et
+   `23-PECTORAUX-04-08-CONTROLE-MP4.md`. **#07 réutilise exactement la source
+   #03 avec le tempo 4010 prioritaire.** Les photos #09→#12 et leurs prompts
+   sont préparés dans `24-PECTORAUX-09-13-PRODUCTION.md` ; **#13 reste à
+   reprendre après rejet des candidates**, sans MP4 ni entrée applicative.
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.
