@@ -805,7 +805,7 @@ test("triceps #10, #12 et #13 affichent leurs notices et dictent le geste corrig
   expect(errors).toEqual([]);
 });
 
-test("pectoraux #01 à #03 affichent la nouvelle #01 et leurs consignes corrigées", async ({
+test("pectoraux #01 à #08 affichent leurs vidéos et consignes corrigées", async ({
   page,
 }) => {
   const errors = [];
@@ -852,6 +852,51 @@ test("pectoraux #01 à #03 affichent la nouvelle #01 et leurs consignes corrigé
       hand: /Deux haltères indépendants/i,
       notice: /redresse légèrement la tête/i,
       spoken: /soulèvement de la tête/i,
+    },
+    {
+      name: "Développé incliné barre",
+      src: "/videos/developpe-incline-barre.mp4",
+      poster: "/videos/posters/developpe-incline-barre.jpg",
+      title: /ligne du sternum/i,
+      hand: /barre droite en prise pronée/i,
+      notice: /visage et du cou/i,
+      spoken: /tempo 3010/i,
+    },
+    {
+      name: "Développé haltères plat, prise neutre",
+      src: "/videos/developpe-halteres-plat-prise-neutre.mp4",
+      poster: "/videos/posters/developpe-halteres-plat-prise-neutre.jpg",
+      title: /hanches appuyées/i,
+      hand: /prise neutre/i,
+      notice: /redresse le buste/i,
+      spoken: /soulèvement des hanches/i,
+    },
+    {
+      name: "Écartés haltères décliné",
+      src: "/videos/ecartes-halteres-decline.mp4",
+      poster: "/videos/posters/ecartes-halteres-decline.jpg",
+      title: /paumes vers le plafond/i,
+      hand: /dos des mains vers le sol/i,
+      notice: /désynchronise les bras/i,
+      spoken: /paumes restent tournées vers le plafond/i,
+    },
+    {
+      name: "Développé haltères incliné 30°",
+      src: "/videos/developpe-halteres-incline-30.mp4",
+      poster: "/videos/posters/developpe-halteres-incline-30.jpg",
+      title: /quatre secondes/i,
+      hand: /prise pronée/i,
+      notice: /identique à celle du développé incliné #03/i,
+      spoken: /quatre secondes/i,
+    },
+    {
+      name: "Développé haltères décliné, prise neutre",
+      src: "/videos/developpe-halteres-decline-prise-neutre.mp4",
+      poster: "/videos/posters/developpe-halteres-decline-prise-neutre.jpg",
+      title: /prise neutre/i,
+      hand: /paumes face à face/i,
+      notice: /trop rapide pour le tempo 4010/i,
+      spoken: /bas de la poitrine/i,
     },
   ];
   for (const item of cases) {

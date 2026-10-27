@@ -6,6 +6,7 @@ import {
   previousPerformanceCue,
 } from "../src/engine/voice-coach.js";
 import { coachingFor } from "../src/data/exercise-videos.js";
+import { EXERCISE_MAP } from "../src/data/library.js";
 
 const exercises = [
   {
@@ -312,7 +313,7 @@ test("les triceps #10, #12 et #13 dictent le tempo et leurs corrections propres"
   }
 });
 
-test("les pectoraux #01 à #03 dictent leurs tempos et leurs corrections propres", () => {
+test("les pectoraux #01 à #08 dictent leurs tempos et leurs corrections propres", () => {
   const coachedExercises = [
     {
       id: "pompes-inclinees-mains-surelevees",
@@ -320,6 +321,7 @@ test("les pectoraux #01 à #03 dictent leurs tempos et leurs corrections propres
       defaultSets: 3,
       repScheme: "8-12",
       tempo: "2010",
+      rest: 60,
       spoken: /pompes au sol/i,
       timing: /poussez en une seconde/i,
     },
@@ -329,6 +331,7 @@ test("les pectoraux #01 à #03 dictent leurs tempos et leurs corrections propres
       defaultSets: 3,
       repScheme: "10-12",
       tempo: "2011",
+      rest: 75,
       spoken: /désynchronisation des bras/i,
       timing: /Contractez les pectoraux une seconde en haut/i,
     },
@@ -338,11 +341,69 @@ test("les pectoraux #01 à #03 dictent leurs tempos et leurs corrections propres
       defaultSets: 3,
       repScheme: "10-12",
       tempo: "2011",
+      rest: 75,
       spoken: /soulèvement de la tête/i,
       timing: /descendez les deux haltères ensemble en deux secondes/i,
     },
+    {
+      id: "developpe-incline-barre",
+      name: "Développé incliné barre",
+      defaultSets: 5,
+      repScheme: "8-10",
+      tempo: "3010",
+      rest: 60,
+      spoken: /visage ou le cou/i,
+      timing: /descendez en trois secondes/i,
+    },
+    {
+      id: "developpe-halteres-plat-prise-neutre",
+      name: "Développé haltères plat, prise neutre",
+      defaultSets: 5,
+      repScheme: "10-12",
+      tempo: "3010",
+      rest: 60,
+      spoken: /redressement du buste/i,
+      timing: /descendez les deux haltères ensemble en trois secondes/i,
+    },
+    {
+      id: "ecartes-halteres-decline",
+      name: "Écartés haltères décliné",
+      defaultSets: 5,
+      repScheme: "12-15",
+      tempo: "3010",
+      rest: 120,
+      spoken: /désynchronisation ou la flexion des coudes/i,
+      timing: /Ouvrez ensuite les deux bras ensemble en trois secondes/i,
+    },
+    {
+      id: "developpe-halteres-incline-30",
+      name: "Développé haltères incliné 30°",
+      defaultSets: 4,
+      repScheme: "8-10",
+      tempo: "4010",
+      rest: 90,
+      spoken: /vitesse/i,
+      timing: /descendez les deux haltères ensemble en quatre secondes/i,
+    },
+    {
+      id: "developpe-halteres-decline-prise-neutre",
+      name: "Développé haltères décliné, prise neutre",
+      defaultSets: 4,
+      repScheme: "8-10",
+      tempo: "4010",
+      rest: 90,
+      spoken: /vitesse/i,
+      timing: /descendez les deux haltères ensemble en quatre secondes/i,
+    },
   ];
   for (const exercise of coachedExercises) {
+    const catalog = EXERCISE_MAP[exercise.id];
+    assert.ok(catalog, `exercice catalogue absent : ${exercise.id}`);
+    assert.equal(catalog.name, exercise.name, exercise.id);
+    assert.equal(catalog.defaultSets, exercise.defaultSets, exercise.id);
+    assert.equal(catalog.repScheme, exercise.repScheme, exercise.id);
+    assert.equal(catalog.tempo, exercise.tempo, exercise.id);
+    assert.equal(catalog.rest, exercise.rest, exercise.id);
     const coaching = coachingFor(exercise);
     assert.ok(coaching, `descriptif absent : ${exercise.id}`);
     assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));

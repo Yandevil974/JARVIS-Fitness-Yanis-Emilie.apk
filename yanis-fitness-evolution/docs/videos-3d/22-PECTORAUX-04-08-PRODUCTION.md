@@ -4,20 +4,21 @@
 
 Ce kit poursuit la préparation avec **#04 et les suivants**, sans reprendre les
 lots déjà intégrés ni le triceps #11, qui reste en stand-by. Les cinq références
-sont préparées avec l'athlète validé. **Aucun MP4 #04→#08 n'est présent à ce
-stade : aucune entrée applicative supplémentaire n'est créée.** Les GIF, la
-version **1.12.0/195** et les vidéos existantes restent inchangés ; aucun APK
-n'est produit.
+sont préparées avec l'athlète validé. **Les cinq MP4 déposés par Yanis le
+27/10/2026 sont intégrés en `coached` avec leurs réserves et consignes audio
+correctives.** Voir
+[`23-PECTORAUX-04-08-CONTROLE-MP4.md`](./23-PECTORAUX-04-08-CONTROLE-MP4.md).
+Les GIF et la version **1.12.0/195** restent inchangés ; aucun APK n'est produit.
 
 ## État du kit
 
 | # | Exercice et identifiant | Programmation réelle | Départ de la photo | État |
 |---|---|---|---|---|
-| #04 | Développé incliné barre — `developpe-incline-barre` | 5 × 8-10 · `3010` · repos 60 s | **Haute** | Référence et prompt prêts ; MP4 absent |
-| #05 | Développé haltères plat prise neutre — `developpe-halteres-plat-prise-neutre` | 5 × 10-12 · `3010` · repos 60 s | **Basse** | Référence et prompt prêts ; MP4 absent |
-| #06 | Écartés haltères décliné — `ecartes-halteres-decline` | 5 × 12-15 · `3010` · repos 120 s | **Basse étirée** | Référence et prompt prêts ; MP4 absent |
-| #07 | Développé haltères incliné 30° — `developpe-halteres-incline-30` | 4 × 8-10 · `4010` · repos 90 s | **Basse** | Référence et prompt prêts ; MP4 absent |
-| #08 | Développé haltères décliné prise neutre — `developpe-halteres-decline-prise-neutre` | 4 × 8-10 · `4010` · repos 90 s | **Haute** | Référence et prompt prêts ; MP4 absent |
+| #04 | Développé incliné barre — `developpe-incline-barre` | 5 × 8-10 · `3010` · repos 60 s | **Haute** | **Intégré `coached`** ; trajectoire sternum en réserve |
+| #05 | Développé haltères plat prise neutre — `developpe-halteres-plat-prise-neutre` | 5 × 10-12 · `3010` · repos 60 s | **Basse** | **Intégré `coached`** ; appuis et synchronisation en réserve |
+| #06 | Écartés haltères décliné — `ecartes-halteres-decline` | 5 × 12-15 · `3010` · repos 120 s | **Basse étirée** | **Intégré `coached`** ; coudes, paumes et synchronisation en réserve |
+| #07 | Développé haltères incliné 30° — `developpe-halteres-incline-30` | 4 × 8-10 · `4010` · repos 90 s | **Basse** | **Intégré `coached`** ; source #03 et tempo en réserve |
+| #08 | Développé haltères décliné prise neutre — `developpe-halteres-decline-prise-neutre` | 4 × 8-10 · `4010` · repos 90 s | **Haute** | **Intégré `coached`** ; tempo en réserve |
 
 Les tempos suivent le découpage de l'application : excentrique, pause basse,
 concentrique, contraction haute. Ainsi `3010` impose **3 s de descente ou

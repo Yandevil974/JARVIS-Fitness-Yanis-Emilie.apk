@@ -12,7 +12,11 @@ import {
   RPE_HIGH,
   RPE_LOW,
 } from "../src/engine/coach-state.js";
-import { coachFindings, applyCoachAction, interpretCommand } from "../src/engine/coach.js";
+import {
+  coachFindings,
+  applyCoachAction,
+  interpretCommand,
+} from "../src/engine/coach.js";
 import {
   confirmMemory,
   draftMemory,
@@ -72,7 +76,12 @@ test("douleur signalée au bilan du jour : protéger (haute priorité)", () => {
 test("récupération basse sur 3 jours : décharge forte", () => {
   const p = seeded();
   for (let i = 0; i < 3; i++)
-    p.checkIns[addDays(today(), -i)] = { sleep: 4, quality: 1, energy: 1, fatigue: 5 };
+    p.checkIns[addDays(today(), -i)] = {
+      sleep: 4,
+      quality: 1,
+      energy: 1,
+      fatigue: 5,
+    };
   const st = weeklyCoachState(p);
   assert.equal(st.decision, "deload");
   assert.ok(st.volumeFactor <= 0.6);
@@ -80,11 +89,7 @@ test("récupération basse sur 3 jours : décharge forte", () => {
 
 test("RPE moyen au-dessus du plafond : alléger (proposition C)", () => {
   const p = seeded({
-    sets: [
-      { rpe: 9.2 },
-      { rpe: 9 },
-      { rpe: 9.4 },
-    ],
+    sets: [{ rpe: 9.2 }, { rpe: 9 }, { rpe: 9.4 }],
   });
   const st = weeklyCoachState(p);
   assert.equal(st.decision, "lighten");
@@ -96,6 +101,11 @@ test("tout terminé avec RPE bas : prêt à progresser (proposition C)", () => {
     sets: [{ rpe: 6 }, { rpe: 6.5 }, { rpe: 6 }],
     status: "completed",
   });
+  // Le scénario vise une seule séance hebdomadaire, quel que soit le jour du
+  // test : le profil neuf peut sinon contenir une deuxième séance cette semaine.
+  p.plan.sessions = p.plan.sessions.filter(
+    (session) => session.type === "strength" && session.date === today(),
+  );
   const st = weeklyCoachState(p);
   assert.equal(st.decision, "progress");
   assert.ok(st.detail.includes("2,5"));
@@ -125,7 +135,12 @@ test("bilan frais fatigue 4/5 entre dans la décision, bilan ancien non", () => 
   const st1 = weeklyCoachState(p, today(), { date: today(), fatigue: 4 });
   assert.equal(st1.decision, "deload");
   // Un bilan vieux de 3 semaines ne doit plus peser.
-  p.teamReviews.push({ id: "vieux", date: addDays(today(), -21), fatigue: 5, pain: 1 });
+  p.teamReviews.push({
+    id: "vieux",
+    date: addDays(today(), -21),
+    fatigue: 5,
+    pain: 1,
+  });
   const st2 = weeklyCoachState(p);
   assert.notEqual(st2.decision, "deload");
 });
@@ -144,7 +159,11 @@ test("bilan → action : fatigue 4/5 réduit la prochaine séance, une seule foi
 
 test("bilan sans alerte : la programmation n'est pas modifiée", () => {
   const p = seeded();
-  const review = makeTeamReview(p, { date: today(), fatigue: 2, feelings: "Ça va." });
+  const review = makeTeamReview(p, {
+    date: today(),
+    fatigue: 2,
+    feelings: "Ça va.",
+  });
   const r = applyReviewAdaptation(p, review);
   assert.equal(r.changed, false);
 });
@@ -162,7 +181,10 @@ test("carte « Le coach a noté » : la décision fait finding, l'action l'appli
   const adapted = profile.plan.sessions.find((s) => s.coachAdapted === today());
   assert.ok(adapted);
   // Deuxième application le même jour : refusée, pas de double allégement.
-  assert.throws(() => applyCoachAction(profile, state.action), /déjà été adaptée/);
+  assert.throws(
+    () => applyCoachAction(profile, state.action),
+    /déjà été adaptée/,
+  );
 });
 
 test("séances manquées : le finding propose de réduire la fréquence", () => {

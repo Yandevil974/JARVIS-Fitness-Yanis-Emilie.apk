@@ -577,11 +577,11 @@ export const EXERCISE_VIDEOS = {
     },
   },
 
-  // ---- VAGUE 3 PECTORAUX (#01→#03), dépôts de Yanis le 25/10 ----
+  // ---- VAGUE 3 PECTORAUX (#01→#08), dépôts de Yanis les 25 et 27/10 ----
   // #01 utilise uniquement la NOUVELLE source remise par Yanis ; l'ancienne
-  // reste une preuve de comparaison. Les trois vidéos restent "coached" :
-  // pause haute pour #01, bras désynchronisés pour #02 et tête/proximité des
-  // haltères pour #03. Aucun MP4 #04 (barre inclinée) n'a été déposé.
+  // reste une preuve de comparaison. Toutes les vidéos de cette vague restent
+  // "coached" : les notices et descriptifs audio priment sur les défauts IA.
+  // #07 réutilise exactement la source #03, mais avec le tempo 4010 du catalogue.
   "pompes-inclinees-mains-surelevees": {
     // P01. Support et alignement lisibles ; pause haute corrigée par l'audio.
     src: "/videos/pompes-inclinees-mains-surelevees.mp4",
@@ -637,6 +637,104 @@ export const EXERCISE_VIDEOS = {
         "La vidéo IA redresse légèrement la tête et rapproche les haltères du visage en bas. Suivez le poster et le descriptif audio : tête posée sur le dossier, haltères à côté du haut de la poitrine et tempo 2011, sans devenir un développé épaules.",
       spoken:
         "Développé incliné avec deux haltères. Sur le banc incliné à trente degrés de la référence, gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol. Tenez un haltère dans chaque main en prise pronée, paumes vers les pieds et poignets alignés. Depuis la position haute, bras presque tendus au-dessus de la poitrine, contractez les pectoraux une seconde, puis descendez les deux haltères ensemble en deux secondes jusqu’à côté du haut de la poitrine. Poussez en une seconde pour revenir en haut, sans pause en bas. Ne reproduisez pas le soulèvement de la tête ni le rapprochement des haltères vers le visage de la vidéo IA. Ne redressez pas le buste pour faire un développé épaules. Le tempo 2011 du programme reste prioritaire.",
+    },
+  },
+  "developpe-incline-barre": {
+    // P04. Banc incliné et barre droite confirmés ; trajectoire vers le visage en réserve.
+    src: "/videos/developpe-incline-barre.mp4",
+    poster: "/videos/posters/developpe-incline-barre.jpg",
+    label:
+      "Vidéo IA · Développé incliné barre, trajectoire sternum prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez la barre sur la ligne du sternum, jamais devant le visage ni au cou.",
+      handCue:
+        "Une barre droite en prise pronée, mains légèrement plus larges que les épaules, pouces enroulés et poignets empilés.",
+      movementCue:
+        "Sur banc incliné, descendez la barre en trois secondes vers le haut ou le milieu du sternum, puis poussez en une seconde.",
+      notice:
+        "La vidéo IA rapproche la barre du visage et du cou. Suivez le poster et le descriptif audio : barre au-dessus puis vers le sternum, tête appuyée et tempo 3010.",
+      spoken:
+        "Développé incliné avec une barre droite. Gardez la tête, les omoplates, le dos et les hanches appuyés sur le banc incliné et les pieds au sol. Prenez la barre en pronation, mains légèrement plus larges que les épaules, pouces enroulés et poignets empilés. Depuis la position haute, bras presque tendus et barre au-dessus du sternum, descendez en trois secondes vers le haut ou le milieu du sternum, avec les avant-bras presque verticaux et les coudes modérément rapprochés du buste. Sans pause, poussez en une seconde pour revenir en haut. Ne reproduisez pas la trajectoire de la vidéo IA vers le visage ou le cou : la barre reste sur la ligne de la poitrine. Le tempo 3010 du programme reste prioritaire.",
+    },
+  },
+  "developpe-halteres-plat-prise-neutre": {
+    // P05. Banc plat et prise neutre confirmés ; appuis et synchronisation en réserve.
+    src: "/videos/developpe-halteres-plat-prise-neutre.mp4",
+    poster: "/videos/posters/developpe-halteres-plat-prise-neutre.jpg",
+    label:
+      "Vidéo IA · Développé plat neutre, appuis et synchronisation prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez la tête et les hanches appuyées, et poussez les deux haltères ensemble.",
+      handCue:
+        "Deux haltères en prise neutre, paumes face à face et poignets alignés, sans rotation des avant-bras.",
+      movementCue:
+        "Sur banc plat, descendez les deux haltères ensemble en trois secondes à côté du milieu de la poitrine, puis poussez en une seconde.",
+      notice:
+        "La vidéo IA redresse le buste, soulève les appuis et désynchronise les bras. Ne copiez pas ce redressement : suivez le poster et le descriptif audio, avec les paumes face à face et le tempo 3010.",
+      spoken:
+        "Développé avec deux haltères sur banc plat, en prise neutre. Gardez la tête, les omoplates et les hanches appuyées et les pieds au sol. Tenez un haltère dans chaque main, paumes face à face et poignets alignés, sans tourner les avant-bras. Depuis la position haute, descendez les deux haltères ensemble en trois secondes jusqu’à côté du milieu de la poitrine, coudes modérément rapprochés du buste. Sans pause, poussez les deux charges ensemble en une seconde au-dessus de la poitrine, sans les entrechoquer. Ne reproduisez pas le redressement du buste, le soulèvement des hanches ou la désynchronisation des bras de la vidéo IA. Le tempo 3010 du programme reste prioritaire.",
+    },
+  },
+  "ecartes-halteres-decline": {
+    // P06. Décliné et grand arc confirmés ; coudes, paumes et synchronisation en réserve.
+    src: "/videos/ecartes-halteres-decline.mp4",
+    poster: "/videos/posters/ecartes-halteres-decline.jpg",
+    label:
+      "Vidéo IA · Écartés déclinés, paumes au plafond et grand arc prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Ouvrez et refermez les deux bras ensemble, coudes fixes et paumes vers le plafond.",
+      handCue:
+        "Deux haltères légers, paumes vers le plafond, dos des mains vers le sol et poignets alignés.",
+      movementCue:
+        "Sur banc décliné, refermez le grand arc en une seconde puis ouvrez en trois secondes, sans changer le léger angle des coudes.",
+      notice:
+        "La vidéo IA désynchronise les bras et plie les coudes comme dans une presse. Suivez le poster et le descriptif audio : paumes vers le plafond, grand arc simultané, coudes fixes et tempo 3010.",
+      spoken:
+        "Écartés avec deux haltères légers sur banc décliné. Gardez la tête plus basse que les hanches, le dos appuyé et les jambes fixées. Les paumes restent tournées vers le plafond, le dos des mains vers le sol, et les coudes conservent le même léger angle pendant tout le mouvement. Depuis la position basse étirée, bras ouverts en grand arc au niveau de la poitrine, refermez les deux bras ensemble en une seconde vers le haut, sans entrechoquer les haltères. Ouvrez ensuite les deux bras ensemble en trois secondes pour revenir à l’étirement confortable du départ. Ne reproduisez pas la désynchronisation ou la flexion des coudes de la vidéo IA : ce sont des écartés, pas un développé. Le tempo 3010 du programme reste prioritaire.",
+    },
+  },
+  "developpe-halteres-incline-30": {
+    // P07. Source strictement identique à P03 ; le tempo 4010 prime sur sa vitesse.
+    src: "/videos/developpe-halteres-incline-30.mp4",
+    poster: "/videos/posters/developpe-halteres-incline-30.jpg",
+    label: "Vidéo IA · Développé incliné 30°, tempo 4010 prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Allongez la descente à quatre secondes et gardez la tête appuyée.",
+      handCue:
+        "Deux haltères en prise pronée, paumes vers les pieds et poignets alignés.",
+      movementCue:
+        "Sur banc à 30°, descendez les deux haltères ensemble en quatre secondes à côté du haut de la poitrine, puis poussez en une seconde.",
+      notice:
+        "La source est identique à celle du développé incliné #03 et trop rapide pour le tempo 4010 ; elle rapproche aussi les haltères du visage. Suivez le poster et le descriptif audio : quatre secondes de descente, une seconde de poussée et tête appuyée.",
+      spoken:
+        "Développé avec deux haltères sur un banc réglé à trente degrés. Gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol. Tenez un haltère dans chaque main en prise pronée, paumes vers les pieds et poignets alignés. Depuis la position haute, bras presque tendus au-dessus du haut de la poitrine, descendez les deux haltères ensemble en quatre secondes jusqu’à côté du haut de la poitrine, sans les rapprocher du visage. Sans pause, poussez en une seconde pour revenir en haut. Ne reproduisez pas la vitesse, le soulèvement de la tête ou la proximité des haltères avec le visage de la vidéo IA. Le tempo 4010 du programme reste prioritaire.",
+    },
+  },
+  "developpe-halteres-decline-prise-neutre": {
+    // P08. Décliné, prise neutre et cycle confirmés ; vitesse en réserve.
+    src: "/videos/developpe-halteres-decline-prise-neutre.mp4",
+    poster: "/videos/posters/developpe-halteres-decline-prise-neutre.jpg",
+    label: "Vidéo IA · Développé décliné neutre, tempo 4010 prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez la prise neutre et allongez la descente à quatre secondes.",
+      handCue:
+        "Deux haltères en prise neutre, paumes face à face et poignets alignés, sans rotation des avant-bras.",
+      movementCue:
+        "Sur banc décliné, descendez les deux haltères ensemble en quatre secondes à côté du bas de la poitrine, puis poussez en une seconde.",
+      notice:
+        "Le décliné et la prise neutre sont lisibles, mais la vidéo IA est trop rapide pour le tempo 4010. Suivez le poster et le descriptif audio : quatre secondes de descente, une seconde de poussée et deux haltères synchronisés.",
+      spoken:
+        "Développé avec deux haltères sur banc décliné, en prise neutre. Gardez la tête plus basse que les hanches, le dos appuyé et les jambes fixées. Tenez un haltère dans chaque main, paumes face à face et poignets alignés, sans tourner les avant-bras. Depuis la position haute, bras presque tendus au-dessus du bas de la poitrine, descendez les deux haltères ensemble en quatre secondes jusqu’à côté du bas de la poitrine. Sans pause, poussez les deux charges ensemble en une seconde pour revenir en haut, sans les entrechoquer. Ne reproduisez pas la vitesse de la vidéo IA et conservez la prise neutre du début à la fin. Le tempo 4010 du programme reste prioritaire.",
     },
   },
 };
