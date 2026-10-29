@@ -106,6 +106,15 @@ ne s'applique pas aux autres exercices.
    retour en haut dictés par la voix. Photos et prompts :
    `24-PECTORAUX-09-13-PRODUCTION.md` ; preuves et validation :
    `25-PECTORAUX-09-13-CONTROLE-MP4.md`. Tous les GIF sont conservés.
+   **Le kit photo #14→#18 est prêt au 29/10**, avec zooms et prompts dans
+   `26-PECTORAUX-14-18-PRODUCTION.md` : #14 distingue les dips pectoraux des
+   pompes du GIF ; #15/#17/#18 verrouillent la pronation et les angles de banc ;
+   #16 impose le banc incliné entre deux poulies basses, distinct du crossover
+   debout #10. **Aucune nouvelle source MP4 n'est déposée pour ce lot** : ces
+   cinq entrées restent sans nouvelle vidéo ni statut `coached`, sans poster
+   ajouté et sans modification du registre. Dès dépôt par Yanis, intégration en
+   `coached` avec corrections prioritaires, sans redemander accord. Les GIF et
+   la version **1.12.0/195** restent inchangés ; aucun APK n'est produit.
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.
