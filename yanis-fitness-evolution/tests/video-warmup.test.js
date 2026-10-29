@@ -518,6 +518,80 @@ test("pectoraux #01 à #08 sont accompagnés avec leurs réserves propres", () =
   }
 });
 
+test("pectoraux #09 à #13 sont accompagnés et conservent leurs GIF", () => {
+  const cases = [
+    {
+      id: "developpe-halteres-plat",
+      src: "/videos/developpe-halteres-plat.mp4",
+      poster: "/videos/posters/developpe-halteres-plat.jpg",
+      gif: "/media/8de6e89e5395700c.gif",
+      title: /prise pronée/i,
+      hand: /paumes vers les pieds/i,
+      notice: /identique à celle du #05/i,
+      spoken: /dos des mains vers la tête/i,
+    },
+    {
+      id: "cables-croises",
+      src: "/videos/cables-croises.mp4",
+      poster: "/videos/posters/cables-croises.jpg",
+      gif: "/media/09395898bff010e6.gif",
+      title: /coudes souples fixes/i,
+      hand: /poulies hautes/i,
+      notice: /5,042 secondes/i,
+      spoken: /drop set dix, huit, six/i,
+    },
+    {
+      id: "developpe-couche-barre-plat",
+      src: "/videos/developpe-couche-barre-plat.mp4",
+      poster: "/videos/posters/developpe-couche-barre-plat.jpg",
+      gif: "/media/e4d9c22e0a05ea25.gif",
+      title: /prise pectorale standard/i,
+      hand: /légèrement plus larges que les épaules/i,
+      notice: /triceps #10/i,
+      spoken: /descendez en quatre secondes/i,
+    },
+    {
+      id: "developpe-halteres-incline-45-prise-neutre",
+      src: "/videos/developpe-halteres-incline-45-prise-neutre.mp4",
+      poster: "/videos/posters/developpe-halteres-incline-45-prise-neutre.jpg",
+      gif: "/media/8de6e89e5395700c.gif",
+      title: /banc à 45°/i,
+      hand: /paumes face à face/i,
+      notice: /certifier 45°/i,
+      spoken: /loin du visage/i,
+    },
+    {
+      id: "ecartes-halteres",
+      src: "/videos/ecartes-halteres.mp4",
+      poster: "/videos/posters/ecartes-halteres.jpg",
+      gif: "/media/bb6790d94f7411fc.gif",
+      title: /remontez toujours en haut/i,
+      hand: /coudes légèrement fléchis/i,
+      notice: /conservée telle quelle/i,
+      spoken: /terminez toujours en haut/i,
+    },
+  ];
+  for (const item of cases) {
+    const video = EXERCISE_VIDEOS[item.id];
+    assert.equal(video.status, "coached", item.id);
+    assert.notEqual(video.status, "validated", item.id);
+    assert.equal(video.src, item.src, item.id);
+    assert.equal(video.poster, item.poster, item.id);
+    assert.equal(videoFor(item.id), video, item.id);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
+    assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
+    assert.ok(releaseAssetExists(video.src), `vidéo release absente : ${item.id}`);
+    assert.ok(releaseAssetExists(video.poster), `poster release absent : ${item.id}`);
+    assert.ok(releaseAssetExists(item.gif), `GIF release absent : ${item.id}`);
+    assert.match(video.coaching.title, item.title, item.id);
+    assert.match(video.coaching.handCue, item.hand, item.id);
+    assert.match(video.coaching.notice, item.notice, item.id);
+    assert.match(video.coaching.spoken, item.spoken, item.id);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+});
+
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {
   for (const name of [
     "Mise en route",

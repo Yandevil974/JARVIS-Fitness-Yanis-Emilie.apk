@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-29",
+  "sourceCommits": [
+    "dd2009864190dcc52ff15d90ff29616f02c37196"
+  ],
+  "decoder": "OpenCV headless",
+  "videos": [
+    {
+      "exerciseNumber": 9,
+      "exerciseId": "developpe-halteres-plat",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793267854248.mp4",
+      "public": "public/videos/developpe-halteres-plat.mp4",
+      "release": "release/videos/developpe-halteres-plat.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-09-13/pectoraux-09-source-1793267854248.mp4",
+      "poster": "public/videos/posters/developpe-halteres-plat.jpg",
+      "width": 1024,
+      "height": 1024,
+      "fps": 24.0,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sampleSeconds": [
+        0.0,
+        0.79,
+        1.58,
+        2.42,
+        3.21,
+        4.0
+      ],
+      "sha256": "980a2bedb84f0d49348158d2d184577a30fed41556f986743c7745069a148c55",
+      "note": "Banc plat, pronation et appuis stables prioritaires",
+      "sourceCommit": "dd2009864190dcc52ff15d90ff29616f02c37196",
+      "sourceRoot": "../1793267854248.mp4",
+      "identicalTo": {
+        "exerciseNumber": 5,
+        "exerciseId": "developpe-halteres-plat-prise-neutre",
+        "source": "1793102886886.mp4"
+      }
+    },
+    {
+      "exerciseNumber": 10,
+      "exerciseId": "cables-croises",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793268142078.mp4",
+      "public": "public/videos/cables-croises.mp4",
+      "release": "release/videos/cables-croises.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-09-13/pectoraux-10-source-1793268142078.mp4",
+      "poster": "public/videos/posters/cables-croises.jpg",
+      "width": 640,
+      "height": 360,
+      "fps": 24.0,
+      "frames": 121,
+      "decodedFrames": 121,
+      "durationSeconds": 5.042,
+      "sampleSeconds": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "sha256": "66a5c114c31de56580eb2e9354f515036fbb81796c4a5ea306f2f10138d184f1",
+      "note": "Poulies hautes, grand arc et coudes fixes prioritaires",
+      "sourceCommit": "dd2009864190dcc52ff15d90ff29616f02c37196",
+      "sourceRoot": "../1793268142078.mp4"
+    },
+    {
+      "exerciseNumber": 11,
+      "exerciseId": "developpe-couche-barre-plat",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793268156130.mp4",
+      "public": "public/videos/developpe-couche-barre-plat.mp4",
+      "release": "release/videos/developpe-couche-barre-plat.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-09-13/pectoraux-11-source-1793268156130.mp4",
+      "poster": "public/videos/posters/developpe-couche-barre-plat.jpg",
+      "width": 640,
+      "height": 480,
+      "fps": 24.0,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sampleSeconds": [
+        0.0,
+        0.79,
+        1.58,
+        2.42,
+        3.21,
+        4.0
+      ],
+      "sha256": "de0cd5fc9ac91d055c8215f0f99fe522e2165de4ff8d39224e798872b975bf28",
+      "note": "Prise standard, sternum et tempo 4010 prioritaires",
+      "sourceCommit": "dd2009864190dcc52ff15d90ff29616f02c37196",
+      "sourceRoot": "../1793268156130.mp4",
+      "identicalTo": {
+        "exerciseNumber": 10,
+        "muscle": "triceps",
+        "exerciseId": "developpe-couche-prise-serree",
+        "source": "1792939358423.mp4"
+      }
+    },
+    {
+      "exerciseNumber": 12,
+      "exerciseId": "developpe-halteres-incline-45-prise-neutre",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793268364920.mp4",
+      "public": "public/videos/developpe-halteres-incline-45-prise-neutre.mp4",
+      "release": "release/videos/developpe-halteres-incline-45-prise-neutre.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-09-13/pectoraux-12-source-1793268364920.mp4",
+      "poster": "public/videos/posters/developpe-halteres-incline-45-prise-neutre.jpg",
+      "width": 640,
+      "height": 360,
+      "fps": 24.0,
+      "frames": 121,
+      "decodedFrames": 121,
+      "durationSeconds": 5.042,
+      "sampleSeconds": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "sha256": "5acc5e419349388e7a42fba4a8b61b65c9312f6866d5a969b568df14c4cf8065",
+      "note": "Banc 45°, prise neutre et tempo 3010 prioritaires",
+      "sourceCommit": "dd2009864190dcc52ff15d90ff29616f02c37196",
+      "sourceRoot": "../1793268364920.mp4"
+    },
+    {
+      "exerciseNumber": 13,
+      "exerciseId": "ecartes-halteres",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793268616358.mp4",
+      "public": "public/videos/ecartes-halteres.mp4",
+      "release": "release/videos/ecartes-halteres.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-09-13/pectoraux-13-source-1793268616358.mp4",
+      "poster": "public/videos/posters/ecartes-halteres.jpg",
+      "width": 640,
+      "height": 640,
+      "fps": 24.0,
+      "frames": 121,
+      "decodedFrames": 121,
+      "durationSeconds": 5.042,
+      "sampleSeconds": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "sha256": "d507a27a9f95c883c6c32fdd82df9c3219c57d71d6e301ebfd0428860d07fd29",
+      "note": "Banc plat, grand arc symétrique et coudes fixes prioritaires",
+      "sourceCommit": "dd2009864190dcc52ff15d90ff29616f02c37196",
+      "sourceRoot": "../1793268616358.mp4",
+      "keptAsSuppliedByYanis": true
+    }
+  ],
+  "integrationStatus": "coached",
+  "version": "1.12.0 / 195",
+  "playbackContract": {
+    "videoMuted": true,
+    "loop": true,
+    "playsInline": true,
+    "distinctFrenchVoice": true,
+    "pauseResumeTested": true,
+    "cleanupOnCloseTested": true,
+    "browserSpeechCancel": true,
+    "androidSpeechStopSource": true
+  },
+  "validation": {
+    "targetedNode": "2/2",
+    "targetedPlaywright": "1/1",
+    "nodeSuite": {
+      "tests": 229,
+      "passed": 227,
+      "failed": 0,
+      "skipped": 2
+    },
+    "playwrightSuite": {
+      "scenarios": 48,
+      "passed": 37,
+      "failed": 0,
+      "skipped": 11
+    },
+    "build": {
+      "modules": 1679,
+      "media": 980,
+      "bundle": "release/assets/index-ooB0dR9r.js"
+    },
+    "http200": [
+      "/videos/developpe-halteres-plat.mp4",
+      "/videos/posters/developpe-halteres-plat.jpg",
+      "/videos/cables-croises.mp4",
+      "/videos/posters/cables-croises.jpg",
+      "/videos/developpe-couche-barre-plat.mp4",
+      "/videos/posters/developpe-couche-barre-plat.jpg",
+      "/videos/developpe-halteres-incline-45-prise-neutre.mp4",
+      "/videos/posters/developpe-halteres-incline-45-prise-neutre.jpg",
+      "/videos/ecartes-halteres.mp4",
+      "/videos/posters/ecartes-halteres.jpg"
+    ],
+    "apkBuilt": false
+  }
+}

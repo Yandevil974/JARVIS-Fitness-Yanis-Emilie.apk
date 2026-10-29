@@ -34,6 +34,7 @@ function walk(dir) {
   }
 }
 walk("public");
+files.sort();
 fs.writeFileSync("public/media-index.json", JSON.stringify(files));
 console.log(
   `Portable export runtime ready; ${files.length} local media assets.`,

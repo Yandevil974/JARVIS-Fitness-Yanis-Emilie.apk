@@ -415,6 +415,78 @@ test("les pectoraux #01 à #08 dictent leurs tempos et leurs corrections propres
   }
 });
 
+test("les pectoraux #09 à #13 dictent la programmation et les corrections propres", () => {
+  const coachedExercises = [
+    {
+      id: "developpe-halteres-plat",
+      name: "Développé haltères plat",
+      defaultSets: 4,
+      repScheme: "8-10",
+      tempo: "3010",
+      rest: 75,
+      spoken: /prise neutre/i,
+      timing: /descendez les deux haltères ensemble en trois secondes/i,
+    },
+    {
+      id: "cables-croises",
+      name: "Câbles croisés",
+      defaultSets: 4,
+      repScheme: "10/8/6",
+      tempo: "3010",
+      rest: 75,
+      spoken: /variation des coudes/i,
+      timing: /ouvrez les deux bras ensemble en trois secondes/i,
+    },
+    {
+      id: "developpe-couche-barre-plat",
+      name: "Développé couché barre plat",
+      defaultSets: 5,
+      repScheme: "6,6,6,8,8",
+      tempo: "4010",
+      rest: 90,
+      spoken: /prise rapprochée de triceps/i,
+      timing: /descendez en quatre secondes/i,
+    },
+    {
+      id: "developpe-halteres-incline-45-prise-neutre",
+      name: "Développé haltères incliné 45°, prise neutre",
+      defaultSets: 5,
+      repScheme: "8-10",
+      tempo: "3010",
+      rest: 60,
+      spoken: /rapprochement des haltères vers le visage/i,
+      timing: /descendez les deux haltères ensemble en trois secondes/i,
+    },
+    {
+      id: "ecartes-halteres",
+      name: "Écartés haltères",
+      defaultSets: 5,
+      repScheme: "8-10",
+      tempo: "3010",
+      rest: 120,
+      spoken: /fin basse/i,
+      timing: /ouvrez les deux bras ensemble en trois secondes/i,
+    },
+  ];
+  for (const exercise of coachedExercises) {
+    const catalog = EXERCISE_MAP[exercise.id];
+    assert.ok(catalog, `exercice catalogue absent : ${exercise.id}`);
+    assert.equal(catalog.name, exercise.name, exercise.id);
+    assert.equal(catalog.defaultSets, exercise.defaultSets, exercise.id);
+    assert.equal(catalog.repScheme, exercise.repScheme, exercise.id);
+    assert.equal(catalog.tempo, exercise.tempo, exercise.id);
+    assert.equal(catalog.rest, exercise.rest, exercise.id);
+    const coaching = coachingFor(exercise);
+    assert.ok(coaching, `descriptif absent : ${exercise.id}`);
+    assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
+    assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
+    assert.match(coaching.spoken, exercise.spoken, exercise.id);
+    assert.match(coaching.spoken, exercise.timing, exercise.id);
+    assert.match(coaching.spoken, /Ne reproduisez pas/i, exercise.id);
+    assert.ok(coaching.title, `titre de réserve absent : ${exercise.id}`);
+  }
+});
+
 test("les exercices sans correction spéciale gardent leur consigne tempo", () => {
   const exercise = {
     id: "back-squat",

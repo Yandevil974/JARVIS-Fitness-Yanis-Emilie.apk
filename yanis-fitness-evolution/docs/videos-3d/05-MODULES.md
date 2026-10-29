@@ -97,9 +97,15 @@ ne s'applique pas aux autres exercices.
    l'ancienne reste hors application. Les réserves et preuves sont consignées
    dans `21-PECTORAUX-01-04-CONTROLE-MP4.md` et
    `23-PECTORAUX-04-08-CONTROLE-MP4.md`. **#07 réutilise exactement la source
-   #03 avec le tempo 4010 prioritaire.** Les photos #09→#12 et leurs prompts
-   sont préparés dans `24-PECTORAUX-09-13-PRODUCTION.md` ; **#13 reste à
-   reprendre après rejet des candidates**, sans MP4 ni entrée applicative.
+   #03 avec le tempo 4010 prioritaire.** **#09→#13 sont désormais intégrés en
+   `coached`** après dépôt des cinq MP4 par Yanis le 29/10 : #09 réutilise
+   exactement P05 avec la pronation imposée par la voix ; #11 réutilise T10
+   triceps avec la prise pectorale standard et le tempo 4010 ; #10/#12/#13 ont
+   leurs propres réserves de tempo et de trajectoire. **Le MP4 #13 est conservé
+   tel quel à la demande de Yanis**, avec grand arc symétrique, coudes fixes et
+   retour en haut dictés par la voix. Photos et prompts :
+   `24-PECTORAUX-09-13-PRODUCTION.md` ; preuves et validation :
+   `25-PECTORAUX-09-13-CONTROLE-MP4.md`. Tous les GIF sont conservés.
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.

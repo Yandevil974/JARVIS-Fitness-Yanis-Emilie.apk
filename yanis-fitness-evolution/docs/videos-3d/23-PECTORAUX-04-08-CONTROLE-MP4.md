@@ -162,3 +162,10 @@ production restent dans
   serveur de développement.
 - Reste hors portée : lecture sur le téléphone de Yanis, régénération des
   défauts IA documentés et toute production d'APK.
+
+## Lot suivant intégré
+
+Les cinq MP4 pectoraux **#09→#13** déposés le 29/10/2026 sont intégrés en
+`coached`, sans modifier les statuts de ce lot. Leur contrôle, leurs réserves
+et la conservation du MP4 #13 fourni par Yanis sont documentés dans
+[`25-PECTORAUX-09-13-CONTROLE-MP4.md`](./25-PECTORAUX-09-13-CONTROLE-MP4.md).

@@ -100,6 +100,8 @@ export default function Movement({
     if (!el) return;
     if (paused) el.pause();
     else el.play().catch(() => {});
+    // Arrêter le média lors d'un changement d'exercice ou du démontage.
+    return () => el.pause();
   }, [paused, video?.src]);
   const toggle = () => {
     if (!video && !paused) capture();

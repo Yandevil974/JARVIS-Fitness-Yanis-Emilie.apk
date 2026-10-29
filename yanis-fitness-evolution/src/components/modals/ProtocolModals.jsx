@@ -1,5 +1,5 @@
 import React from "react";
-import { useApp, speak } from "../../store/AppContext.jsx";
+import { useApp, speak, stopSpeech } from "../../store/AppContext.jsx";
 import {
   Modal,
   Button,
@@ -805,6 +805,14 @@ export function ImageViewer({
   spoken,
 }) {
   const { closeModal } = useApp();
+  const videoRef = React.useRef(null);
+  React.useEffect(() => {
+    const element = videoRef.current;
+    return () => {
+      element?.pause();
+      stopSpeech();
+    };
+  }, [src]);
   if (!src && !motion) return null;
   const isVideo = typeof src === "string" && /\.(mp4|webm)(\?|#|$)/i.test(src);
   return (
@@ -812,6 +820,7 @@ export function ImageViewer({
       <div className="image-viewer">
         {isVideo ? (
           <video
+            ref={videoRef}
             src={assetSrc(src)}
             poster={poster ? assetSrc(poster) : undefined}
             controls

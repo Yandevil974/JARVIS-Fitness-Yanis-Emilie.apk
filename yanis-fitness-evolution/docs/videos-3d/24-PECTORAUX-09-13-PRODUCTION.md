@@ -1,12 +1,14 @@
 # Pectoraux #09→#13 — photos et prompts de production
 
-**Date : 27/10/2026 · Vague 3, troisième kit**
+**Date : 27/10/2026 · Mise à jour intégration : 29/10/2026**
 
 Ce kit poursuit les pectoraux dans l'ordre du catalogue, sans reprendre les
 vidéos #01→#08 déjà intégrées ni le **triceps #11**, qui reste en stand-by. Les
-photos utilisent l'athlète chromé déjà validé. **Aucun MP4 n'est intégré sans
-source déposée par Yanis.** Les GIF, la programmation et la version
-**1.12.0/195** restent inchangés ; aucun APK n'est produit.
+photos utilisent l'athlète chromé déjà validé. **Les cinq MP4 déposés par Yanis
+sont maintenant intégrés en `coached`**, avec notices et consignes audio
+correctives. Le MP4 #13 est conservé tel quel à sa demande. Les GIF, la
+programmation et la version **1.12.0/195** restent inchangés ; aucun APK n'est
+produit.
 
 > Yanis examine directement les photos et signale les défauts éventuels, sans
 > confirmation systématique photo par photo. Après dépôt d'un MP4, son accord
@@ -17,16 +19,20 @@ source déposée par Yanis.** Les GIF, la programmation et la version
 
 | # | Exercice et identifiant | Programmation réelle | Départ de la photo | État |
 |---|---|---|---|---|
-| #09 | Développé haltères plat — `developpe-halteres-plat` | 4 × 8-10 · `3010` · repos 75 s | **Haute** | **Photo prête pour inspection** |
-| #10 | Câbles croisés — `cables-croises` | 4 × 10/8/6 · `3010` · repos 75 s | **Ouverte étirée** | **Photo prête pour inspection** |
-| #11 | Développé couché barre plat — `developpe-couche-barre-plat` | 5 × 6,6,6,8,8 · `4010` · repos 90 s | **Haute** | **Photo prête pour inspection** |
-| #12 | Développé haltères incliné 45°, prise neutre — `developpe-halteres-incline-45-prise-neutre` | 5 × 8-10 · `3010` · repos 60 s | **Basse** | **Photo prête pour inspection** |
-| #13 | Écartés haltères — `ecartes-halteres` | 5 × 8-10 · `3010` · repos 120 s | **Haute, à produire** | **Aucune photo retenue ; reprise nécessaire** |
+| #09 | Développé haltères plat — `developpe-halteres-plat` | 4 × 8-10 · `3010` · repos 75 s | **Haute** | **MP4 intégré `coached`** |
+| #10 | Câbles croisés — `cables-croises` | 4 × 10/8/6 · `3010` · repos 75 s | **Ouverte étirée** | **MP4 intégré `coached`** |
+| #11 | Développé couché barre plat — `developpe-couche-barre-plat` | 5 × 6,6,6,8,8 · `4010` · repos 90 s | **Haute** | **MP4 intégré `coached`** |
+| #12 | Développé haltères incliné 45°, prise neutre — `developpe-halteres-incline-45-prise-neutre` | 5 × 8-10 · `3010` · repos 60 s | **Basse** | **MP4 intégré `coached`** |
+| #13 | Écartés haltères — `ecartes-halteres` | 5 × 8-10 · `3010` · repos 120 s | **Haute** | **Photo retenue ; MP4 de Yanis intégré `coached`** |
 
 Les tempos suivent le découpage de l'application : excentrique, pause basse,
 concentrique, contraction haute. Ainsi `3010` impose **3 s de descente ou
 d'ouverture puis 1 s de montée ou de fermeture, sans pause**. `4010` impose
 **4 s de descente puis 1 s de poussée, sans pause**.
+
+Le contrôle image par image, les réserves propres aux cinq sources et la
+validation applicative sont consignés dans
+[`25-PECTORAUX-09-13-CONTROLE-MP4.md`](./25-PECTORAUX-09-13-CONTROLE-MP4.md).
 
 ## Pourquoi les anciens GIF ne suffisent pas
 
@@ -42,9 +48,8 @@ Les deux frames de chaque GIF ont été inspectées avant la production :
   La photo retient la position haute pour verrouiller la ligne du sternum et
   dégager la tête.
 - **#13** — `/media/bb6790d94f7411fc.gif` : écarté sur banc plat visible. La
-  future photo doit conserver un léger angle de coude fixe et un grand arc ;
-  elle ne doit pas reprendre le décliné ni la consigne spécifique « paumes au
-  plafond » du #06.
+  photo retenue conserve un léger angle de coude fixe et un grand arc ; elle ne
+  reprend ni le décliné ni la consigne spécifique « paumes au plafond » du #06.
 
 ## Photos et zooms retenus
 
@@ -62,21 +67,22 @@ blanches, salle claire et pectoraux rouge/orange.
 | #10 | Deux poulies hautes, deux poignées D et bras ouverts | [Photo #10](./vague3-pectoraux-10-cables-croises.jpg) | [Zoom poulies et poignées](./vague3-pectoraux-10-zoom-poulies.jpg) |
 | #11 | Banc plat, barre au-dessus du sternum, tête dégagée | [Photo #11](./vague3-pectoraux-11-developpe-barre-plat.jpg) | [Zoom barre/sternum](./vague3-pectoraux-11-zoom-barre-sternum.jpg) |
 | #12 | Banc à 45°, prise neutre et tête appuyée | [Photo #12](./vague3-pectoraux-12-halteres-incline-45-neutre.jpg) | [Zoom 45°/neutre](./vague3-pectoraux-12-zoom-45-neutre.jpg) |
+| #13 | Banc plat, grand arc symétrique et coudes souples fixes | [Photo #13](./vague3-pectoraux-13-ecartes-halteres.jpg) | [Zoom grand arc](./vague3-pectoraux-13-zoom-grand-arc.jpg) |
 
 Pour #12, la vue latérale rapproche visuellement les deux haltères par
 perspective. Le prompt impose toujours **deux charges indépendantes et
 séparées**, à côté du haut de la poitrine et loin du visage.
 
-### #13 — versions rejetées
+### #13 — photo retenue et MP4 conservé
 
-Deux versions ont été contrôlées puis rejetées : la première ferme les bras
-vers le corps et cambre le buste ; la seconde place les bras de manière
-asymétrique, trop près de la tête et des hanches. **Aucune n'est publiée comme
-référence.** La limite de dix générations d'images du tour a ensuite été
-atteinte. La prochaine reprise partira de la posture stable sur banc plat et
-retiendra une **position haute d'écarté**, plus lisible, avec deux haltères
-séparés et les coudes souples fixes. Ne pas produire de MP4 #13 depuis les
-rejets.
+La référence finale présente l'athlète de face sur banc plat, avec deux
+haltères écartés, des bras symétriques et les coudes visiblement souples. Les
+anciennes versions rejetées et les essais intermédiaires non conformes ne sont
+pas utilisés comme poster ou référence.
+
+Conformément à la demande de Yanis, **son MP4 d'écarté haltères est conservé
+tel quel**. Aucune nouvelle animation #13 n'est générée depuis la photo : la
+voix corrige la synchronisation, l'angle des coudes et le retour en haut.
 
 ## Verrouillage contre les substitutions
 
@@ -96,7 +102,7 @@ rejets.
 
 ---
 
-## #09 — Développé haltères plat — PHOTO PRÊTE
+## #09 — Développé haltères plat — PHOTO RETENUE · MP4 INTÉGRÉ `coached`
 
 ### Exécution attendue
 
@@ -118,7 +124,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 
 ---
 
-## #10 — Câbles croisés — PHOTO PRÊTE
+## #10 — Câbles croisés — PHOTO RETENUE · MP4 INTÉGRÉ `coached`
 
 ### Exécution attendue
 
@@ -142,7 +148,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied OPEN
 
 ---
 
-## #11 — Développé couché barre plat — PHOTO PRÊTE
+## #11 — Développé couché barre plat — PHOTO RETENUE · MP4 INTÉGRÉ `coached`
 
 ### Exécution attendue
 
@@ -165,7 +171,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 
 ---
 
-## #12 — Développé haltères incliné 45° en prise neutre — PHOTO PRÊTE
+## #12 — Développé haltères incliné 45° en prise neutre — PHOTO RETENUE · MP4 INTÉGRÉ `coached`
 
 ### Exécution attendue
 
@@ -188,15 +194,15 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied BOTT
 
 ---
 
-## #13 — Écartés haltères — PHOTO À REPRENDRE
+## #13 — Écartés haltères — PHOTO RETENUE · MP4 DE YANIS CONSERVÉ
 
-### Exécution attendue pour la prochaine photo
+### Exécution imposée par le poster et la voix
 
 Sur banc **plat**, tête, omoplates, dos et hanches appuyés, pieds au sol. Deux
 haltères légers, prise naturelle avec paumes tournées l'une vers l'autre,
 coudes souples avec le même léger angle conservé.
 
-1. La future photo commence **en haut**, haltères séparés au-dessus de la
+1. La photo commence **en haut**, haltères séparés au-dessus de la
    poitrine, bras ouverts dans la partie haute d'un grand arc et coudes non
    verrouillés.
 2. **Ouvrir en 3 s** dans un grand arc jusqu'à l'étirement confortable, sans
@@ -204,28 +210,30 @@ coudes souples avec le même léger angle conservé.
 3. **Refermer en 1 s** pour revenir à la photo. Tempo `3010`, sans pause et
    sans transformer le mouvement en développé.
 
-### Prompt réservé — utiliser uniquement après obtention de la bonne photo #13
+### Prompt d'archive — ne pas régénérer ni remplacer le MP4 #13
+
+Ce texte reste uniquement comme trace de production. Il ne doit pas être utilisé
+pour remplacer la vidéo fournie par Yanis, conservée dans l'application.
 
 ```text
 Animate the EXACT same massive silver-chrome athletic man from the supplied TOP FLY image, preserving his matte black cap, black shorts, white sneakers, bright grey gym and stable red-orange pectorals. Keep the exact completely FLAT BENCH and camera from the approved image, with the entire head, shoulder blades, back, ribcage and hips supported and feet planted; no back arch and no hip lift. EXACTLY TWO light matching dumbbells, ONE in EACH hand, with a natural fly grip, palms facing inward toward each other and straight wrists. START at the exact TOP OF THE FLY in the approved image: both dumbbells separate above the middle chest, arms open in the upper part of a broad hugging arc, with the SAME SMALL FIXED 15-20 DEGREE ELBOW BEND in both arms. This is a FLAT DUMBBELL FLY, NOT A PRESS. PHASE 1 (3 seconds): open both arms slowly and symmetrically out to the sides along a wide arc until a comfortable chest stretch, keeping the elbow angles unchanged and the dumbbells at chest level, never beside the head or hips. PHASE 2 (1 second): sweep both dumbbells upward and inward along the same wide arc back to the supplied top image, without banging them together. Show ONE continuous 3-second-open / 1-second-close repetition, tempo 3010. Keep the flat bench, supported torso and hips, feet, fixed soft elbows, inward-facing palms, separate dumbbells and camera fixed. No decline, no incline, no palms-down press grip, no 90-degree elbow bend, no barbell, no cables, no extra limbs, no camera movement, no text, no logo, no watermark.
 ```
 
-## Export et contrôle des futurs MP4
+## Contrôle et intégration des MP4 — terminés
 
-- Une répétition continue, caméra fixe, athlète et matériel stables, sans morphing
-  des mains, haltères, barre, câbles ou banc.
-- Durée cible : **4 s pour #09/#10/#12/#13** et **5 s pour #11**, afin de
-  respecter les tempos sans ajouter de pause. Utiliser 24 i/s si disponible.
-- La dernière image doit rejoindre proprement la position de départ pour permettre
-  la lecture en boucle.
-- À réception : décoder entièrement le MP4, relever dimensions, fréquence, durée
-  et SHA-256, inspecter au moins six instants et comparer le geste à la variante
-  exacte. Vérifier spécifiquement la pronation #09, les deux poulies hautes #10,
-  la ligne du sternum #11, le banc 45° neutre #12 et le grand arc sur banc plat
-  #13.
-- Le dépôt d'un MP4 par Yanis vaut accord d'intégration : l'intégrer sans
-  redemander confirmation, en `coached` si des réserves techniques subsistent,
-  avec notice et consigne audio corrective. Aucun GIF ne sera supprimé.
+- Les cinq sources déposées par Yanis ont été entièrement décodées et inspectées
+  sur six instants avec zooms ; les preuves et métadonnées sont dans
+  [`controle-pectoraux-09-13/`](./controle-pectoraux-09-13/).
+- #09 réutilise exactement la source P05 et #11 celle du triceps T10 ; ce ne
+  sont pas de nouvelles animations. Les notices imposent respectivement la
+  pronation pectorale et la prise standard avec tempo `4010`.
+- #10, #12 et #13 durent 5,042 s : leur vitesse visible ne remplace pas les
+  tempos du programme. #13 finit en bas et présente des bras/coudes imparfaits ;
+  la voix impose le grand arc symétrique et le retour en haut.
+- Les cinq entrées sont `coached`, jamais `validated`. Les posters, MP4 publics
+  et copies `release/` sont installés ; les GIF sont conservés.
+- Le compte rendu complet et les résultats de tests sont dans
+  [`25-PECTORAUX-09-13-CONTROLE-MP4.md`](./25-PECTORAUX-09-13-CONTROLE-MP4.md).
 
 ## Références techniques et visuelles consultées
 

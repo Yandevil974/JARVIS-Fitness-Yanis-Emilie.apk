@@ -1,5 +1,5 @@
 import React from "react";
-import { speak, useApp } from "../../store/AppContext.jsx";
+import { speak, stopSpeech, useApp } from "../../store/AppContext.jsx";
 import { Modal, Icon, Button, Badge, SectionHeading } from "../ui.jsx";
 import Movement from "../Movement.jsx";
 import Anatomy from "../Anatomy.jsx";
@@ -23,6 +23,9 @@ export default function ExerciseModal({ id }) {
   ).slice(0, 5);
   const alt = alternatives(ex, p);
   const coaching = coachingFor(ex);
+  // Le descriptif appartient à cette fiche : aucun audio résiduel après fermeture
+  // ou remplacement par une autre fiche d'exercice.
+  React.useEffect(() => () => stopSpeech(), [id]);
   const session = p.workout || nextSession(p);
   const inSession = session?.exercises.some((e) => e.exerciseId === id);
   const replace = (to) => {

@@ -942,6 +942,164 @@ test("pectoraux #01 à #08 affichent leurs vidéos et consignes corrigées", asy
   expect(errors).toEqual([]);
 });
 
+test("pectoraux #09 à #13 affichent leurs vidéos et le contrat de lecture guidée", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.__speechCancels = 0;
+    window.speechSynthesis.cancel = () => {
+      window.__speechCancels += 1;
+    };
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      id: "developpe-halteres-plat",
+      name: "Développé haltères plat",
+      src: "/videos/developpe-halteres-plat.mp4",
+      poster: "/videos/posters/developpe-halteres-plat.jpg",
+      title: /prise pronée/i,
+      hand: /paumes vers les pieds/i,
+      notice: /identique à celle du #05/i,
+      spoken: /dos des mains vers la tête/i,
+    },
+    {
+      id: "cables-croises",
+      name: "Câbles croisés",
+      src: "/videos/cables-croises.mp4",
+      poster: "/videos/posters/cables-croises.jpg",
+      title: /coudes souples fixes/i,
+      hand: /poulies hautes/i,
+      notice: /5,042 secondes/i,
+      spoken: /drop set dix, huit, six/i,
+    },
+    {
+      id: "developpe-couche-barre-plat",
+      name: "Développé couché barre plat",
+      src: "/videos/developpe-couche-barre-plat.mp4",
+      poster: "/videos/posters/developpe-couche-barre-plat.jpg",
+      title: /prise pectorale standard/i,
+      hand: /prise pronée standard/i,
+      notice: /triceps #10/i,
+      spoken: /descendez en quatre secondes/i,
+    },
+    {
+      id: "developpe-halteres-incline-45-prise-neutre",
+      name: "Développé haltères incliné 45°, prise neutre",
+      src: "/videos/developpe-halteres-incline-45-prise-neutre.mp4",
+      poster: "/videos/posters/developpe-halteres-incline-45-prise-neutre.jpg",
+      title: /banc à 45°/i,
+      hand: /paumes face à face/i,
+      notice: /certifier 45°/i,
+      spoken: /quarante-cinq degrés/i,
+    },
+    {
+      id: "ecartes-halteres",
+      name: "Écartés haltères",
+      src: "/videos/ecartes-halteres.mp4",
+      poster: "/videos/posters/ecartes-halteres.jpg",
+      title: /remontez toujours en haut/i,
+      hand: /coudes légèrement fléchis/i,
+      notice: /conservée telle quelle/i,
+      spoken: /terminez toujours en haut/i,
+    },
+  ];
+  for (const item of cases) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    const video = dialog.locator(".movement-video");
+    await expect(video).toHaveAttribute("src", item.src);
+    await expect(video).toHaveAttribute("poster", item.poster);
+    expect(await video.evaluate((element) => element.muted)).toBe(true);
+    expect(await video.evaluate((element) => element.loop)).toBe(true);
+    expect(await video.evaluate((element) => element.playsInline)).toBe(true);
+    await expect(
+      dialog.locator(".movement-coaching-note strong"),
+    ).toContainText(item.title);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      item.notice,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(item.hand);
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(item.spoken);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+
+    if (item.id === "ecartes-halteres") {
+      await dialog
+        .getByRole("button", {
+          name: "Mettre l’animation en pause",
+          exact: true,
+        })
+        .click();
+      await expect(
+        dialog.getByRole("button", { name: "Lire l’animation", exact: true }),
+      ).toBeVisible();
+      await expect.poll(() => video.evaluate((element) => element.paused)).toBe(
+        true,
+      );
+      await dialog
+        .getByRole("button", { name: "Lire l’animation", exact: true })
+        .click();
+      await expect(
+        dialog.getByRole("button", {
+          name: "Mettre l’animation en pause",
+          exact: true,
+        }),
+      ).toBeVisible();
+      await expect.poll(() => video.evaluate((element) => element.paused)).toBe(
+        false,
+      );
+      await video.evaluate((element) => {
+        window.__closingVideo = element;
+      });
+      const cancelsBeforeClose = await page.evaluate(
+        () => window.__speechCancels,
+      );
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+      await expect
+        .poll(() => page.evaluate(() => window.__speechCancels))
+        .toBeGreaterThan(cancelsBeforeClose);
+      expect(
+        await page.evaluate(() => window.__closingVideo.paused),
+      ).toBe(true);
+    } else {
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    }
+  }
+  expect(errors).toEqual([]);
+});
+
 test("biceps #10 et #12 affichent leurs vidéos validées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));

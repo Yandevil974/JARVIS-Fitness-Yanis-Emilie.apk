@@ -43,6 +43,18 @@ let activeSpeechRate = DEFAULT_SPEECH_RATE;
 export function setSpeechRate(rate) {
   activeSpeechRate = normalizeSpeechRate(rate);
 }
+export function stopSpeech() {
+  if (isAndroid()) {
+    try {
+      const stopping = NativeSpeech.stop?.();
+      stopping?.catch(() => {});
+    } catch (e) {}
+    return;
+  }
+  try {
+    globalThis.speechSynthesis?.cancel();
+  } catch (e) {}
+}
 export function speak(text, enabled = true, rate = activeSpeechRate) {
   if (!enabled) return;
   const speechRate = normalizeSpeechRate(rate);

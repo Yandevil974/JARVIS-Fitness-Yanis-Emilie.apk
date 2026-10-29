@@ -9,6 +9,9 @@ sont préparées avec l'athlète validé. **Les cinq MP4 déposés par Yanis le
 correctives.** Voir
 [`23-PECTORAUX-04-08-CONTROLE-MP4.md`](./23-PECTORAUX-04-08-CONTROLE-MP4.md).
 Les GIF et la version **1.12.0/195** restent inchangés ; aucun APK n'est produit.
+Le lot suivant **#09→#13 est également intégré en `coached`** depuis le
+29/10/2026 ; voir
+[`25-PECTORAUX-09-13-CONTROLE-MP4.md`](./25-PECTORAUX-09-13-CONTROLE-MP4.md).
 
 ## État du kit
 

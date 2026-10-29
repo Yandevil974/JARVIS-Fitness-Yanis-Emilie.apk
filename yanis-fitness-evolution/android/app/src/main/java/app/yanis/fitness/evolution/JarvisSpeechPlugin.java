@@ -61,6 +61,13 @@ public class JarvisSpeechPlugin extends Plugin {
             call.resolve();
         });
     }
+    @PluginMethod public void stop(PluginCall call){
+        getActivity().runOnUiThread(()->{
+            pending=null;
+            if(engine!=null)engine.stop();
+            call.resolve();
+        });
+    }
     @PluginMethod public void listen(PluginCall call){
         if(getPermissionState("microphone")!=PermissionState.GRANTED){requestPermissionForAlias("microphone",call,"microphoneResult");return;}
         launchRecognition(call);
