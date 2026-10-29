@@ -1041,7 +1041,9 @@ test("pectoraux #09 à #13 affichent leurs vidéos et le contrat de lecture guid
     await expect(dialog.locator(".movement-coaching-note")).toContainText(
       item.notice,
     );
-    await expect(dialog.locator(".exercise-audio-cue")).toContainText(item.hand);
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      item.hand,
+    );
     await dialog
       .getByRole("button", { name: "Écouter le descriptif", exact: true })
       .click();
@@ -1059,9 +1061,9 @@ test("pectoraux #09 à #13 affichent leurs vidéos et le contrat de lecture guid
       await expect(
         dialog.getByRole("button", { name: "Lire l’animation", exact: true }),
       ).toBeVisible();
-      await expect.poll(() => video.evaluate((element) => element.paused)).toBe(
-        true,
-      );
+      await expect
+        .poll(() => video.evaluate((element) => element.paused))
+        .toBe(true);
       await dialog
         .getByRole("button", { name: "Lire l’animation", exact: true })
         .click();
@@ -1071,9 +1073,9 @@ test("pectoraux #09 à #13 affichent leurs vidéos et le contrat de lecture guid
           exact: true,
         }),
       ).toBeVisible();
-      await expect.poll(() => video.evaluate((element) => element.paused)).toBe(
-        false,
-      );
+      await expect
+        .poll(() => video.evaluate((element) => element.paused))
+        .toBe(false);
       await video.evaluate((element) => {
         window.__closingVideo = element;
       });
@@ -1087,9 +1089,165 @@ test("pectoraux #09 à #13 affichent leurs vidéos et le contrat de lecture guid
       await expect
         .poll(() => page.evaluate(() => window.__speechCancels))
         .toBeGreaterThan(cancelsBeforeClose);
-      expect(
-        await page.evaluate(() => window.__closingVideo.paused),
-      ).toBe(true);
+      expect(await page.evaluate(() => window.__closingVideo.paused)).toBe(
+        true,
+      );
+    } else {
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+    }
+  }
+  expect(errors).toEqual([]);
+});
+
+test("pectoraux #14 à #18 expliquent les gestes et les deux inclinaisons de #15/#17", async ({
+  page,
+}) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+  await expect(page.locator(".page")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("button", { name: "Entraînement", exact: true })
+    .click();
+  await page.getByRole("tab", { name: /Bibliothèque/ }).click();
+  await page.evaluate(() => {
+    window.__spoken = [];
+    window.__speechCancels = 0;
+    window.speechSynthesis.cancel = () => {
+      window.__speechCancels += 1;
+    };
+    window.speechSynthesis.getVoices = () => [];
+    window.speechSynthesis.speak = (utterance) =>
+      window.__spoken.push(utterance.text);
+  });
+
+  const cases = [
+    {
+      name: "Dips",
+      src: "/videos/dips.mp4",
+      poster: "/videos/posters/dips.jpg",
+      title: /buste penché/i,
+      hand: /appui parallèle/i,
+      notice: /buste se redresse/i,
+      spoken: /charge croissante/i,
+    },
+    {
+      name: "Développé haltères incliné, pronation",
+      src: "/videos/developpe-halteres-incline-commun-15-17.mp4",
+      poster: "/videos/posters/developpe-halteres-incline-pronation.jpg",
+      title: /environ 30°/i,
+      hand: /paumes vers les pieds/i,
+      notice: /partagée avec #17/i,
+      spoken: /trente degrés, pas quarante-cinq/i,
+    },
+    {
+      name: "Écartés câbles incliné",
+      src: "/videos/ecartes-cables-incline.mp4",
+      poster: "/videos/posters/ecartes-cables-incline.jpg",
+      title: /haut des pectoraux/i,
+      hand: /poulies basses/i,
+      notice: /au-dessus de la tête/i,
+      spoken: /flexion des coudes/i,
+    },
+    {
+      id: "developpe-halteres-incline-45",
+      name: "Développé haltères incliné 45°",
+      src: "/videos/developpe-halteres-incline-commun-15-17.mp4",
+      poster: "/videos/posters/developpe-halteres-incline-45.jpg",
+      title: /banc à 45°/i,
+      hand: /paumes vers les pieds/i,
+      notice: /strictement la même que pour #15/i,
+      spoken: /inclinaison plus faible/i,
+    },
+    {
+      name: "Développé haltères incliné",
+      src: "/videos/developpe-halteres-incline.mp4",
+      poster: "/videos/posters/developpe-halteres-incline.jpg",
+      title: /trois secondes/i,
+      hand: /paumes vers les pieds/i,
+      notice: /temps haut/i,
+      spoken: /back-off/i,
+    },
+  ];
+  for (const item of cases) {
+    await page.getByLabel("Rechercher un exercice").fill(item.name);
+    await page
+      .getByRole("button", {
+        name: `Démonstration ${item.name}`,
+        exact: true,
+      })
+      .click();
+    const dialog = page.getByRole("dialog", {
+      name: item.name,
+      exact: true,
+    });
+    const video = dialog.locator(".movement-video");
+    await expect(video).toHaveAttribute("src", item.src);
+    await expect(video).toHaveAttribute("poster", item.poster);
+    expect(await video.evaluate((element) => element.muted)).toBe(true);
+    expect(await video.evaluate((element) => element.loop)).toBe(true);
+    expect(await video.evaluate((element) => element.playsInline)).toBe(true);
+    await expect(
+      dialog.locator(".movement-coaching-note strong"),
+    ).toContainText(item.title);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(
+      item.notice,
+    );
+    await expect(dialog.locator(".exercise-audio-cue")).toContainText(
+      item.hand,
+    );
+    await dialog
+      .getByRole("button", { name: "Écouter le descriptif", exact: true })
+      .click();
+    const spoken = await page.evaluate(() => window.__spoken.at(-1));
+    expect(spoken).toMatch(item.spoken);
+    expect(spoken).toMatch(/Ne reproduisez pas/i);
+
+    if (item.id === "developpe-halteres-incline-45") {
+      await dialog
+        .getByRole("button", {
+          name: "Mettre l’animation en pause",
+          exact: true,
+        })
+        .click();
+      await expect(
+        dialog.getByRole("button", { name: "Lire l’animation", exact: true }),
+      ).toBeVisible();
+      await expect
+        .poll(() => video.evaluate((element) => element.paused))
+        .toBe(true);
+      await dialog
+        .getByRole("button", { name: "Lire l’animation", exact: true })
+        .click();
+      await expect(
+        dialog.getByRole("button", {
+          name: "Mettre l’animation en pause",
+          exact: true,
+        }),
+      ).toBeVisible();
+      await expect
+        .poll(() => video.evaluate((element) => element.paused))
+        .toBe(false);
+      await video.evaluate((element) => {
+        window.__closingVideo = element;
+      });
+      const cancelsBeforeClose = await page.evaluate(
+        () => window.__speechCancels,
+      );
+      await dialog
+        .getByRole("button", { name: "Fermer", exact: true })
+        .last()
+        .click();
+      await expect
+        .poll(() => page.evaluate(() => window.__speechCancels))
+        .toBeGreaterThan(cancelsBeforeClose);
+      expect(await page.evaluate(() => window.__closingVideo.paused)).toBe(
+        true,
+      );
     } else {
       await dialog
         .getByRole("button", { name: "Fermer", exact: true })

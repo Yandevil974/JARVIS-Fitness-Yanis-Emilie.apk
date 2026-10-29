@@ -1,30 +1,32 @@
 # Pectoraux #14→#18 — photos et prompts de production
 
-**Date : 29/10/2026 · Vague 3, quatrième kit**
+**Date : 29/10/2026 · Mise à jour intégration : 29/10/2026**
 
 Ce kit poursuit les pectoraux dans l'ordre réel du catalogue, sans reprendre les
 vidéos #01→#13 déjà intégrées et sans rouvrir le **triceps #11**, qui reste en
 stand-by. Les cinq photos utilisent l'athlète chromé déjà montré et validé.
 
-**Aucune nouvelle source MP4 n'est disponible pour #14→#18 à la date de ce
-document.** Ce livrable est donc un kit de références et de prompts, pas une
-intégration vidéo : aucun MP4, poster ou statut `coached` nouveau n'est créé.
-Les GIF, la programmation, le registre vidéo et la version **1.12.0/195** restent
-inchangés ; aucun APK n'est produit.
+**Les quatre MP4 déposés par Yanis sont maintenant intégrés en `coached`**, avec
+posters, notices et consignes audio correctives. À sa demande, **#15 et #17
+utilisent le même MP4 canonique**, mais conservent deux posters et deux
+explications distinctes : banc à environ **30° pour #15**, banc à **45° pour
+#17**. Le poster et la voix de #17 imposent ce réglage malgré l'inclinaison plus
+faible visible dans la source commune. Les GIF, la programmation et la version
+**1.12.0/195** restent inchangés ; aucun APK n'est produit.
 
-> Dès que Yanis dépose une vidéo sur la branche, son accord d'intégration est
-> acquis. La source sera contrôlée puis intégrée sans redemander confirmation,
-> en `coached` avec les corrections prioritaires si des réserves subsistent.
+> Le dépôt des sources a valu accord d'intégration. Toutes les entrées restent
+> `coached`, jamais `validated` : les consignes prioritaires corrigent les
+> inclinaisons, trajectoires et tempos visibles.
 
 ## État du kit et programmation réelle
 
 | # | Exercice et identifiant | Programmation réelle | Départ de la photo | État au 29/10 |
 |---|---|---|---|---|
-| #14 | Dips — `dips` | 6 × 8,8,6,6,4,4 · `4010` · repos 120 s · **Charge croissante** | **Haute, buste penché** | **Photo prête · MP4 attendu** |
-| #15 | Développé haltères incliné, pronation — `developpe-halteres-incline-pronation` | 4 × 6-8 · `4010` · repos 90 s | **Haute** | **Photo prête · MP4 attendu** |
-| #16 | Écartés câbles incliné — `ecartes-cables-incline` | 5 × 8-10 · `3010` · repos 120 s | **Ouverte étirée** | **Photo prête · MP4 attendu** |
-| #17 | Développé haltères incliné 45° — `developpe-halteres-incline-45` | 5 × 5-7 · `4010` · repos 120 s | **Haute** | **Photo prête · MP4 attendu** |
-| #18 | Développé haltères incliné — `developpe-halteres-incline` | 4 × 12,10,8,15 · `3010` · repos 90 s · **12→10→8 puis back-off 15** | **Basse contrôlée** | **Photo prête · MP4 attendu** |
+| #14 | Dips — `dips` | 6 × 8,8,6,6,4,4 · `4010` · repos 120 s · **Charge croissante** | **Haute, buste penché** | **MP4 intégré `coached`** |
+| #15 | Développé haltères incliné, pronation — `developpe-halteres-incline-pronation` | 4 × 6-8 · `4010` · repos 90 s | **Haute** | **Source commune #15/#17 intégrée `coached` · 30°** |
+| #16 | Écartés câbles incliné — `ecartes-cables-incline` | 5 × 8-10 · `3010` · repos 120 s | **Ouverte étirée** | **MP4 intégré `coached`** |
+| #17 | Développé haltères incliné 45° — `developpe-halteres-incline-45` | 5 × 5-7 · `4010` · repos 120 s | **Haute** | **Même source que #15 intégrée `coached` · 45° par poster/voix** |
+| #18 | Développé haltères incliné — `developpe-halteres-incline` | 4 × 12,10,8,15 · `3010` · repos 90 s · **12→10→8 puis back-off 15** | **Basse contrôlée** | **MP4 intégré `coached`** |
 
 Les tempos suivent le découpage de l'application : excentrique, pause basse,
 concentrique, contraction haute. Ainsi `4010` impose **4 s de descente puis
@@ -34,14 +36,18 @@ répétitions sont des consignes de séance : une animation ne montre qu'une
 répétition complète et ne doit pas simuler les six séries de dips ou le
 back-off du #18.
 
+Le contrôle image par image, les réserves propres aux quatre sources, la
+mutualisation #15/#17 et la validation applicative sont consignés dans
+[`27-PECTORAUX-14-18-CONTROLE-MP4.md`](./27-PECTORAUX-14-18-CONTROLE-MP4.md).
+
 ## Pourquoi les anciens GIF ne suffisent pas
 
 Deux instants de chaque GIF ont été inspectés avant la préparation. Les fichiers
-d'origine restent conservés ; les constats ci-dessous servent uniquement à
-verrouiller les futures références vidéo.
+d'origine restent conservés ; les constats ci-dessous ont servi à verrouiller
+les références retenues puis le contrôle des MP4 intégrés.
 
 - **#14** — `/media/7e96ab14f783b338.gif` : le GIF montre des **pompes au sol**.
-  Ce n'est pas un dip sur appuis. La future animation doit montrer deux appuis
+  Ce n'est pas un dip sur appuis. L'animation retenue montre deux appuis
   parallèles, le corps suspendu et un buste franchement incliné vers l'avant
   pour cibler les pectoraux.
 - **#15** — `/media/7ae94caf326740df.gif` : la posture est trop verticale pour
@@ -66,6 +72,11 @@ blanches, salle claire et pectoraux rouge/orange.
 
 - [Planche des cinq photos](./vague3-pectoraux-14-18-apercu.jpg)
 - [Planche des cinq zooms techniques](./vague3-pectoraux-14-18-zooms.jpg)
+- [Comparaison #15/#17 : même vidéo, banc à 30° ou 45°](./controle-pectoraux-14-18/pectoraux-15-17-comparaison-inclinaisons.jpg)
+
+Les cinq photos sont maintenant installées comme posters dans l'application.
+Pour #15/#17, le MP4 est commun mais les posters et les consignes restent
+propres à chaque angle de banc.
 
 | # | Point de contrôle principal | Photo à joindre au prompt | Zoom |
 |---|---|---|---|
@@ -101,7 +112,7 @@ MP4 reçu.
 
 ---
 
-## #14 — Dips pectoraux — PHOTO PRÊTE · MP4 ATTENDU
+## #14 — Dips pectoraux — MP4 INTÉGRÉ `coached`
 
 ### Exécution attendue
 
@@ -128,7 +139,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 
 ---
 
-## #15 — Développé haltères incliné en pronation — PHOTO PRÊTE · MP4 ATTENDU
+## #15 — Développé haltères incliné en pronation — SOURCE COMMUNE INTÉGRÉE `coached`
 
 ### Exécution attendue
 
@@ -152,7 +163,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 
 ---
 
-## #16 — Écartés câbles incliné — PHOTO PRÊTE · MP4 ATTENDU
+## #16 — Écartés câbles incliné — MP4 INTÉGRÉ `coached`
 
 ### Exécution attendue
 
@@ -178,7 +189,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied OPEN
 
 ---
 
-## #17 — Développé haltères incliné 45° — PHOTO PRÊTE · MP4 ATTENDU
+## #17 — Développé haltères incliné 45° — MÊME SOURCE QUE #15 INTÉGRÉE `coached`
 
 ### Exécution attendue
 
@@ -202,7 +213,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 
 ---
 
-## #18 — Développé haltères incliné — PHOTO PRÊTE · MP4 ATTENDU
+## #18 — Développé haltères incliné — MP4 INTÉGRÉ `coached`
 
 ### Exécution attendue
 
@@ -226,24 +237,24 @@ back-off change la série et la charge de travail, pas la trajectoire montrée.
 Animate the EXACT same massive silver-chrome athletic man from the supplied CONTROLLED BOTTOM image, preserving his matte black cap, black shorts, white sneakers, bright grey gym and stable red-orange pectorals. CAMERA AND SETUP LOCKED: side three-quarter view, head LEFT and feet RIGHT, athlete reclined on an APPROXIMATELY 30-DEGREE INCLINE BENCH with the back of the head and cap, shoulders, back and hips supported and feet planted. EXACTLY TWO independent matching dumbbells, ONE in EACH hand, in a TRUE PRONATED GRIP with PALMS TOWARD THE FEET and backs of hands toward the head throughout, thumbs wrapped and straight stacked wrists; never rotate into a neutral grip. START at the exact CONTROLLED BOTTOM in the image: both dumbbells separate beside the UPPER CHEST at the same height, elbows bent and moderately tucked, forearms nearly vertical, with a clear gap between the weights and the face. PHASE 1 (1 second): press both dumbbells upward together until the arms are nearly straight above the upper chest, without turning the palms or banging the weights. PHASE 2 (3 seconds): lower the same two dumbbells slowly along the same paths back to the supplied bottom image, with no pause. Show ONE continuous 1-second-up / 3-second-down repetition, tempo 3010. Keep the shallow incline bench, supported head and torso, feet, pronated grips, separate dumbbells and camera fixed. The programmed 12,10,8,15 sequence and final 15-repetition back-off are workout instructions, NOT extra repetitions to animate. No neutral grip, no 45-degree bench, no flat bench, no upright shoulder press, no barbell, no merged weights, no extra limbs, no camera movement, no text, no logo, no watermark.
 ```
 
-## Export et contrôle des futurs MP4
+## Contrôle et intégration des MP4 — terminés
 
-- Joindre **une seule photo de référence par génération**, avec le prompt du même
-  numéro. Ne pas mélanger #15/#17/#18 et ne pas utiliser le #10 comme référence
-  du #16.
-- Durée cible : **5 s pour #14/#15/#17** (`4010`) et **4 s pour #16/#18**
-  (`3010`), une répétition continue, 24 i/s si disponible.
-- Caméra fixe, athlète et matériel stables, deux bras et deux charges ou
-  poignées maximum, sans morphing des mains, des câbles ou du banc.
-- La dernière image doit rejoindre proprement la position de départ. Le rythme
-  visible du MP4 sera comparé au tempo prioritaire du programme.
-- À réception d'une source déposée par Yanis : décoder et inspecter plusieurs
-  instants, vérifier les prises, appuis, angles, trajectoires et tempos, puis
-  intégrer sans nouvelle demande d'accord. Utiliser `coached` avec notice et
-  voix corrective si une réserve subsiste ; ne pas marquer `validated` sans
-  conformité réelle.
-- Conserver les GIF d'origine, ne pas régénérer #01→#13, ne pas rouvrir le
-  triceps #11, conserver **1.12.0/195** et ne pas produire d'APK dans ce flux.
+- Les quatre sources déposées par Yanis ont été entièrement décodées et
+  inspectées sur six instants avec zooms ; les preuves et métadonnées sont dans
+  [`controle-pectoraux-14-18/`](./controle-pectoraux-14-18/).
+- **#15/#17 partagent exactement la même source**, stockée une seule fois sous
+  `/videos/developpe-halteres-incline-commun-15-17.mp4`. Cette dérogation ne
+  supprime pas leurs réglages : le poster et la voix imposent **30° pour #15**
+  et **45° pour #17**, avec deux programmations distinctes et le tempo `4010`.
+- #14 impose le buste penché et le tempo `4010` ; #16 impose l'arrêt des
+  poignées au-dessus du haut des pectoraux plutôt qu'au-dessus de la tête ; #18
+  impose une poussée d'une seconde et une descente de trois secondes sans pause.
+- Les cinq entrées sont `coached`, jamais `validated`. Les posters, MP4 publics
+  et copies `release/` sont installés ; les GIF sont conservés.
+- Le compte rendu complet et les résultats de tests sont dans
+  [`27-PECTORAUX-14-18-CONTROLE-MP4.md`](./27-PECTORAUX-14-18-CONTROLE-MP4.md).
+- Version **1.12.0/195** inchangée, #01→#13 non régénérés, triceps #11 toujours
+  en stand-by et aucun APK produit.
 
 ## Références techniques et visuelles consultées
 

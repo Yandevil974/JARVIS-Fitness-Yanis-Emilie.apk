@@ -581,8 +581,14 @@ test("pectoraux #09 à #13 sont accompagnés et conservent leurs GIF", () => {
     assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
     assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
     assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
-    assert.ok(releaseAssetExists(video.src), `vidéo release absente : ${item.id}`);
-    assert.ok(releaseAssetExists(video.poster), `poster release absent : ${item.id}`);
+    assert.ok(
+      releaseAssetExists(video.src),
+      `vidéo release absente : ${item.id}`,
+    );
+    assert.ok(
+      releaseAssetExists(video.poster),
+      `poster release absent : ${item.id}`,
+    );
     assert.ok(releaseAssetExists(item.gif), `GIF release absent : ${item.id}`);
     assert.match(video.coaching.title, item.title, item.id);
     assert.match(video.coaching.handCue, item.hand, item.id);
@@ -590,6 +596,106 @@ test("pectoraux #09 à #13 sont accompagnés et conservent leurs GIF", () => {
     assert.match(video.coaching.spoken, item.spoken, item.id);
     assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
   }
+});
+
+test("pectoraux #14 à #18 partagent seulement #15/#17 et gardent leurs consignes propres", () => {
+  const cases = [
+    {
+      id: "dips",
+      src: "/videos/dips.mp4",
+      poster: "/videos/posters/dips.jpg",
+      gif: "/media/7e96ab14f783b338.gif",
+      title: /buste penché/i,
+      hand: /appui parallèle/i,
+      notice: /buste se redresse/i,
+      spoken: /charge croissante/i,
+    },
+    {
+      id: "developpe-halteres-incline-pronation",
+      src: "/videos/developpe-halteres-incline-commun-15-17.mp4",
+      poster: "/videos/posters/developpe-halteres-incline-pronation.jpg",
+      gif: "/media/7ae94caf326740df.gif",
+      title: /environ 30°/i,
+      hand: /paumes vers les pieds/i,
+      notice: /partagée avec #17/i,
+      spoken: /trente degrés, pas quarante-cinq/i,
+    },
+    {
+      id: "ecartes-cables-incline",
+      src: "/videos/ecartes-cables-incline.mp4",
+      poster: "/videos/posters/ecartes-cables-incline.jpg",
+      gif: "/media/12340891882ef2ef.gif",
+      title: /haut des pectoraux/i,
+      hand: /poulies basses/i,
+      notice: /au-dessus de la tête/i,
+      spoken: /flexion des coudes/i,
+    },
+    {
+      id: "developpe-halteres-incline-45",
+      src: "/videos/developpe-halteres-incline-commun-15-17.mp4",
+      poster: "/videos/posters/developpe-halteres-incline-45.jpg",
+      gif: "/media/8de6e89e5395700c.gif",
+      title: /banc à 45°/i,
+      hand: /paumes vers les pieds/i,
+      notice: /strictement la même que pour #15/i,
+      spoken: /inclinaison plus faible/i,
+    },
+    {
+      id: "developpe-halteres-incline",
+      src: "/videos/developpe-halteres-incline.mp4",
+      poster: "/videos/posters/developpe-halteres-incline.jpg",
+      gif: "/media/08aa27f428cbd97f.gif",
+      title: /trois secondes/i,
+      hand: /paumes vers les pieds/i,
+      notice: /temps haut/i,
+      spoken: /back-off/i,
+    },
+  ];
+  for (const item of cases) {
+    const video = EXERCISE_VIDEOS[item.id];
+    assert.equal(video.status, "coached", item.id);
+    assert.notEqual(video.status, "validated", item.id);
+    assert.equal(video.src, item.src, item.id);
+    assert.equal(video.poster, item.poster, item.id);
+    assert.equal(videoFor(item.id), video, item.id);
+    assert.ok(publicAssetExists(video.src), `vidéo absente : ${item.id}`);
+    assert.ok(publicAssetExists(video.poster), `poster absent : ${item.id}`);
+    assert.ok(publicAssetExists(item.gif), `GIF public absent : ${item.id}`);
+    assert.ok(
+      releaseAssetExists(video.src),
+      `vidéo release absente : ${item.id}`,
+    );
+    assert.ok(
+      releaseAssetExists(video.poster),
+      `poster release absent : ${item.id}`,
+    );
+    assert.ok(releaseAssetExists(item.gif), `GIF release absent : ${item.id}`);
+    assert.match(video.coaching.title, item.title, item.id);
+    assert.match(video.coaching.handCue, item.hand, item.id);
+    assert.match(video.coaching.notice, item.notice, item.id);
+    assert.match(video.coaching.spoken, item.spoken, item.id);
+    assert.match(video.coaching.spoken, /Ne reproduisez pas/i, item.id);
+  }
+  assert.equal(
+    new Set(
+      [
+        "developpe-halteres-incline-pronation",
+        "developpe-halteres-incline-45",
+      ].map((id) => EXERCISE_VIDEOS[id].src),
+    ).size,
+    1,
+    "#15 et #17 doivent utiliser un seul MP4 canonique",
+  );
+  assert.equal(
+    new Set(
+      [
+        "developpe-halteres-incline-pronation",
+        "developpe-halteres-incline-45",
+      ].map((id) => EXERCISE_VIDEOS[id].poster),
+    ).size,
+    2,
+    "#15 et #17 doivent conserver deux posters d'inclinaison distincts",
+  );
 });
 
 test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", () => {

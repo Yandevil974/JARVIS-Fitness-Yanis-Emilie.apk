@@ -839,6 +839,106 @@ export const EXERCISE_VIDEOS = {
     },
   },
 
+  // ---- VAGUE 3 PECTORAUX (#14→#18), dépôts de Yanis le 29/10 ----
+  // Dérogation explicite : #15 et #17 utilisent le MÊME MP4 canonique.
+  // Leurs posters, angles de banc, notices et descriptifs audio restent distincts.
+  // Toutes les entrées restent "coached" : les consignes prioritaires corrigent
+  // les trajectoires, inclinaisons et tempos visibles sans déclarer les MP4 validés.
+  dips: {
+    // P14. Dips sur appuis confirmés ; inclinaison pectorale et tempo imposés.
+    src: "/videos/dips.mp4",
+    poster: "/videos/posters/dips.jpg",
+    label: "Vidéo IA · Dips pectoraux, inclinaison et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le buste penché vers l’avant et descendez en quatre secondes.",
+      handCue:
+        "Une main sur chaque appui parallèle, pouces enroulés, épaules basses et poignets alignés.",
+      movementCue:
+        "Corps suspendu, jambes fléchies vers l’arrière et buste penché : descendez en quatre secondes puis poussez en une seconde.",
+      notice:
+        "La vidéo montre bien des dips sur appuis, mais le buste se redresse et le cycle visible ne respecte pas exactement le tempo 4010. Suivez le poster et le descriptif audio : buste incliné vers l’avant pour les pectoraux, descente en quatre secondes et poussée en une seconde.",
+      spoken:
+        "Dips pour les pectoraux sur deux appuis parallèles. Placez une main sur chaque appui, pouces enroulés et poignets alignés. Gardez le corps suspendu, les épaules basses, les jambes fléchies vers l’arrière et le buste incliné vers l’avant pendant toute la répétition. Depuis la position haute, bras presque tendus sans verrouillage brutal, descendez en quatre secondes en fléchissant les coudes jusqu’à une amplitude confortable, sans douleur et sans relâcher les épaules. Sans pause, poussez en une seconde pour revenir en haut, sans balancer les jambes ni redresser le buste. Ce ne sont ni des pompes au sol ni des dips triceps au buste vertical. Ne reproduisez pas le redressement du buste, le balancement des jambes ou la vitesse de la vidéo IA. Le tempo 4010, les six séries huit, huit, six, six, quatre, quatre, la charge croissante et les cent vingt secondes de repos du programme restent prioritaires.",
+    },
+  },
+  "developpe-halteres-incline-pronation": {
+    // P15. Source commune avec P17 ; pour cette fiche, banc à environ 30°.
+    src: "/videos/developpe-halteres-incline-commun-15-17.mp4",
+    poster: "/videos/posters/developpe-halteres-incline-pronation.jpg",
+    label: "Vidéo IA · Développé incliné 30° proné, tempo prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Pour #15, réglez le banc à environ 30° et gardez les paumes vers les pieds.",
+      handCue:
+        "Deux haltères en prise pronée, paumes vers les pieds, dos des mains vers la tête et poignets alignés.",
+      movementCue:
+        "Tête et dos appuyés sur un banc à environ 30°, descendez les deux haltères en quatre secondes à côté du haut des pectoraux puis poussez en une seconde.",
+      notice:
+        "Le banc incliné et le développé sont lisibles, mais le cycle visible ne respecte pas exactement le tempo 4010. Cette source est partagée avec #17 à votre demande ; pour #15, suivez le poster et l’audio : banc à environ 30°, prise pronée, descente en quatre secondes et poussée en une seconde.",
+      spoken:
+        "Développé avec deux haltères sur un banc réglé à environ trente degrés, en prise pronée. Cette vidéo est aussi utilisée pour le numéro dix-sept, mais ici l’inclinaison de référence est trente degrés, pas quarante-cinq. Gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol. Tenez un haltère dans chaque main, paumes vers les pieds, dos des mains vers la tête et poignets alignés. Depuis la position haute, bras presque tendus au-dessus du haut des pectoraux, descendez les deux haltères ensemble en quatre secondes jusqu’à côté du haut de la poitrine, coudes modérément rapprochés et charges éloignées du visage. Sans pause, poussez les deux charges ensemble en une seconde pour revenir en haut, sans les entrechoquer. Ne reproduisez pas la vitesse de la vidéo IA, ne redressez pas le buste, ne passez pas en prise neutre et ne réglez pas le banc à quarante-cinq degrés pour cette fiche. Le tempo 4010, les quatre séries de six à huit répétitions et les quatre-vingt-dix secondes de repos du programme restent prioritaires.",
+    },
+  },
+  "ecartes-cables-incline": {
+    // P16. Banc et poulies basses lisibles ; hauteur des poignées et coudes corrigés.
+    src: "/videos/ecartes-cables-incline.mp4",
+    poster: "/videos/posters/ecartes-cables-incline.jpg",
+    label: "Vidéo IA · Écartés câbles incliné, hauteur et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Arrêtez les poignées au-dessus du haut des pectoraux, pas au-dessus de la tête.",
+      handCue:
+        "Une poignée par main entre deux poulies basses, poignets alignés et coudes souples avec un angle constant.",
+      movementCue:
+        "Allongé sur banc incliné, refermez le grand arc en une seconde jusqu’au-dessus du haut des pectoraux puis ouvrez en trois secondes.",
+      notice:
+        "Le banc et les deux poulies basses sont visibles, mais la vidéo IA amène les poignées au-dessus de la tête et plie davantage les coudes. Suivez le poster et le descriptif audio : grand arc jusqu’au-dessus du haut des pectoraux, coudes fixes, une seconde pour fermer et trois pour ouvrir.",
+      spoken:
+        "Écartés avec deux câbles sur banc incliné, entre deux poulies basses. Gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol. Tenez une poignée dans chaque main, câbles tendus, épaules basses, poignets alignés et coudes légèrement fléchis avec exactement le même angle pendant toute la répétition. Depuis la position ouverte, dans un étirement confortable et sans bras derrière le dos, refermez les deux bras ensemble en une seconde dans un grand arc vers le haut et l’intérieur, jusqu’au-dessus du haut des pectoraux, sans monter les poignées au-dessus de la tête et sans croiser les mains. Sans pause, ouvrez les deux bras ensemble en trois secondes sur la même trajectoire pour revenir à l’étirement du départ. Ne reproduisez pas la montée des poignées vers la tête, la flexion des coudes ou la vitesse de la vidéo IA : ce sont des écartés, pas un développé. Le tempo 3010, les cinq séries de huit à dix répétitions et les cent vingt secondes de repos du programme restent prioritaires.",
+    },
+  },
+  "developpe-halteres-incline-45": {
+    // P17. Même source que P15, mais banc à 45° et programmation propres.
+    src: "/videos/developpe-halteres-incline-commun-15-17.mp4",
+    poster: "/videos/posters/developpe-halteres-incline-45.jpg",
+    label: "Vidéo IA · Développé incliné 45° proné, inclinaison prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Pour #17, réglez le banc à 45° : ne copiez pas l’inclinaison plus faible de la vidéo partagée.",
+      handCue:
+        "Deux haltères en prise pronée, paumes vers les pieds, dos des mains vers la tête et poignets alignés.",
+      movementCue:
+        "Sur banc à 45°, tête et dos appuyés, descendez les deux haltères en quatre secondes à côté du haut des pectoraux puis poussez en une seconde.",
+      notice:
+        "La source est strictement la même que pour #15 à votre demande et montre un banc moins incliné. Pour #17, le poster et le descriptif audio priment : réglez le banc à 45°, gardez la prise pronée et le tempo 4010 ; ne reproduisez pas l’angle visible de la source.",
+      spoken:
+        "Développé avec deux haltères sur un banc réglé à quarante-cinq degrés, en prise pronée. La vidéo est la même que pour le numéro quinze, mais elle montre une inclinaison plus faible : pour cette fiche, réglez votre banc à quarante-cinq degrés et ne copiez pas l’angle visible. Gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol, sans vous asseoir verticalement comme dans un développé épaules. Tenez un haltère dans chaque main, paumes vers les pieds, dos des mains vers la tête et poignets alignés. Depuis la position haute, bras presque tendus au-dessus du haut des pectoraux, descendez les deux haltères ensemble en quatre secondes jusqu’à côté du haut de la poitrine, coudes modérément rapprochés et charges éloignées du visage. Sans pause, poussez les deux charges ensemble en une seconde pour revenir en haut, sans les entrechoquer. Ne reproduisez pas l’inclinaison plus faible ni la vitesse de la vidéo IA, et ne passez pas en prise neutre. Le tempo 4010, les cinq séries de cinq à sept répétitions et les cent vingt secondes de repos du programme restent prioritaires.",
+    },
+  },
+  "developpe-halteres-incline": {
+    // P18. Départ bas et banc incliné lisibles ; tempo 3010 et back-off dictés.
+    src: "/videos/developpe-halteres-incline.mp4",
+    poster: "/videos/posters/developpe-halteres-incline.jpg",
+    label: "Vidéo IA · Développé incliné, descente trois secondes prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Depuis le bas, poussez en une seconde puis descendez pendant trois secondes sans pause.",
+      handCue:
+        "Deux haltères en prise pronée, paumes vers les pieds, dos des mains vers la tête et poignets alignés.",
+      movementCue:
+        "Sur banc à environ 30°, poussez les deux haltères en une seconde puis descendez en trois secondes à côté du haut des pectoraux.",
+      notice:
+        "La position basse, le banc incliné et les deux haltères sont lisibles, mais la vidéo IA marque un temps haut et ne respecte pas la descente de trois secondes. Suivez le poster et l’audio : prise pronée, banc à environ 30°, une seconde de poussée et trois secondes de descente.",
+      spoken:
+        "Développé avec deux haltères sur un banc réglé à environ trente degrés, en prise pronée. Gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol. Tenez un haltère dans chaque main, paumes vers les pieds, dos des mains vers la tête et poignets alignés. Depuis la position basse, haltères séparés à côté du haut des pectoraux, coudes fléchis et avant-bras presque verticaux, poussez les deux charges ensemble en une seconde jusqu’au-dessus du haut de la poitrine, sans les entrechoquer. Sans pause, descendez les deux haltères ensemble en trois secondes pour revenir à côté du haut des pectoraux. Ne reproduisez pas le temps d’arrêt en haut ou la descente trop rapide de la vidéo IA, et ne passez pas en prise neutre. Le tempo 3010, la séquence douze, dix, huit puis le back-off de quinze répétitions et les quatre-vingt-dix secondes de repos du programme restent prioritaires. Le back-off concerne la programmation, pas une modification du geste.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

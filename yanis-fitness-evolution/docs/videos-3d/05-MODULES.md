@@ -38,9 +38,11 @@ vagues, puis piscine, elliptique, étirements.
 DÉCISION Yanis : **1 vidéo exacte par exercice, pas de mutualisation entre
 variantes** (les variantes approximatives obligent à vérifier sur internet —
 chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
-**Exception explicite du 25/10 : une même source est autorisée uniquement pour
-les triceps #05/#06/#09.** Leurs notices restent distinctes et cette dérogation
-ne s'applique pas aux autres exercices.
+**Exceptions explicites : une même source est autorisée pour les triceps
+#05/#06/#09 depuis le 25/10 et pour les pectoraux #15/#17 depuis le 29/10.**
+Leurs notices restent distinctes. Pour #15/#17, les posters et la voix imposent
+respectivement un banc à environ 30° et à 45° malgré le MP4 commun. Ces
+dérogations restent limitées aux exercices cités et ne s'étendent pas aux autres.
 
 1. **Échauffement** ✅ TERMINÉ (E1→E5 + aperçu 30 s).
 2. **Triceps poulie** ✅ FAIT v1 (mannequin gris) — version chromée en option.
@@ -106,15 +108,16 @@ ne s'applique pas aux autres exercices.
    retour en haut dictés par la voix. Photos et prompts :
    `24-PECTORAUX-09-13-PRODUCTION.md` ; preuves et validation :
    `25-PECTORAUX-09-13-CONTROLE-MP4.md`. Tous les GIF sont conservés.
-   **Le kit photo #14→#18 est prêt au 29/10**, avec zooms et prompts dans
-   `26-PECTORAUX-14-18-PRODUCTION.md` : #14 distingue les dips pectoraux des
-   pompes du GIF ; #15/#17/#18 verrouillent la pronation et les angles de banc ;
-   #16 impose le banc incliné entre deux poulies basses, distinct du crossover
-   debout #10. **Aucune nouvelle source MP4 n'est déposée pour ce lot** : ces
-   cinq entrées restent sans nouvelle vidéo ni statut `coached`, sans poster
-   ajouté et sans modification du registre. Dès dépôt par Yanis, intégration en
-   `coached` avec corrections prioritaires, sans redemander accord. Les GIF et
-   la version **1.12.0/195** restent inchangés ; aucun APK n'est produit.
+   **#14→#18 sont maintenant intégrés en `coached`** après dépôt de quatre MP4
+   par Yanis le 29/10. **#15/#17 partagent exactement la même source à sa
+   demande**, stockée une seule fois, avec deux posters, notices et descriptifs
+   audio distincts : banc à environ 30° pour #15 et à 45° pour #17, sans copier
+   l'angle plus faible visible pour #17. #14 impose le buste penché ; #16 arrête
+   les poignées au-dessus du haut des pectoraux plutôt qu'au-dessus de la tête ;
+   #18 impose le tempo 3010 et conserve le back-off 15. Photos et prompts :
+   `26-PECTORAUX-14-18-PRODUCTION.md` ; preuves et validation :
+   `27-PECTORAUX-14-18-CONTROLE-MP4.md`. Tous les GIF sont conservés, la version
+   **1.12.0/195** reste inchangée et aucun APK n'est produit.
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.

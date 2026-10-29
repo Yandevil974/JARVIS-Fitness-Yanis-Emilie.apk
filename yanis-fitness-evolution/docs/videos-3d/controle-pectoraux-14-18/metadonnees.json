@@ -1,0 +1,233 @@
+{
+  "date": "2026-10-29",
+  "sourceCommits": [
+    "7a946d8936a5df00d0ccf4e518f85ccc3355228e"
+  ],
+  "decoder": "OpenCV headless",
+  "videos": [
+    {
+      "exerciseNumber": 14,
+      "exerciseId": "dips",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793271389650.mp4",
+      "public": "public/videos/dips.mp4",
+      "release": "release/videos/dips.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-14-18/pectoraux-14-source-1793271389650.mp4",
+      "poster": "public/videos/posters/dips.jpg",
+      "posterRelease": "release/videos/posters/dips.jpg",
+      "width": 640,
+      "height": 360,
+      "fps": 24.0,
+      "frames": 121,
+      "decodedFrames": 121,
+      "durationSeconds": 5.042,
+      "sampleSeconds": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "sha256": "6ed4456f046c27e3d8f144454082b84f3d7870f57b80fde99821e0b05491026d",
+      "note": "Dips pectoraux, buste penché et tempo 4010 prioritaires",
+      "sourceCommit": "7a946d8936a5df00d0ccf4e518f85ccc3355228e",
+      "sourceRoot": "../1793271389650.mp4"
+    },
+    {
+      "exerciseNumber": 15,
+      "exerciseId": "developpe-halteres-incline-pronation",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793271577730.mp4",
+      "public": "public/videos/developpe-halteres-incline-commun-15-17.mp4",
+      "release": "release/videos/developpe-halteres-incline-commun-15-17.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-14-18/pectoraux-15-17-source-1793271577730.mp4",
+      "poster": "public/videos/posters/developpe-halteres-incline-pronation.jpg",
+      "posterRelease": "release/videos/posters/developpe-halteres-incline-pronation.jpg",
+      "width": 640,
+      "height": 360,
+      "fps": 24.0,
+      "frames": 121,
+      "decodedFrames": 121,
+      "durationSeconds": 5.042,
+      "sampleSeconds": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "sha256": "dcaffa1c19618a17698fd26dc3a270540cc8fed699e9215ea90a7bc9bf2d09f2",
+      "note": "Source commune avec #17 ; pour #15, banc à environ 30° et tempo 4010",
+      "sourceCommit": "7a946d8936a5df00d0ccf4e518f85ccc3355228e",
+      "sourceRoot": "../1793271577730.mp4",
+      "sharedWith": {
+        "exerciseNumber": 17,
+        "exerciseId": "developpe-halteres-incline-45",
+        "reason": "Dérogation demandée par Yanis le 29/10/2026"
+      }
+    },
+    {
+      "exerciseNumber": 16,
+      "exerciseId": "ecartes-cables-incline",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793271763315.mp4",
+      "public": "public/videos/ecartes-cables-incline.mp4",
+      "release": "release/videos/ecartes-cables-incline.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-14-18/pectoraux-16-source-1793271763315.mp4",
+      "poster": "public/videos/posters/ecartes-cables-incline.jpg",
+      "posterRelease": "release/videos/posters/ecartes-cables-incline.jpg",
+      "width": 1024,
+      "height": 576,
+      "fps": 24.0,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sampleSeconds": [
+        0.0,
+        0.792,
+        1.583,
+        2.417,
+        3.208,
+        4.0
+      ],
+      "sha256": "4e4f2af6a27030753d3ae9ef93478b7b90087a0f7a00b5c5c06be66eeed58e33",
+      "note": "Poulies basses ; arrêter les poignées au-dessus du haut des pectoraux, coudes fixes",
+      "sourceCommit": "7a946d8936a5df00d0ccf4e518f85ccc3355228e",
+      "sourceRoot": "../1793271763315.mp4"
+    },
+    {
+      "exerciseNumber": 17,
+      "exerciseId": "developpe-halteres-incline-45",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793271577730.mp4",
+      "public": "public/videos/developpe-halteres-incline-commun-15-17.mp4",
+      "release": "release/videos/developpe-halteres-incline-commun-15-17.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-14-18/pectoraux-15-17-source-1793271577730.mp4",
+      "poster": "public/videos/posters/developpe-halteres-incline-45.jpg",
+      "posterRelease": "release/videos/posters/developpe-halteres-incline-45.jpg",
+      "width": 640,
+      "height": 360,
+      "fps": 24.0,
+      "frames": 121,
+      "decodedFrames": 121,
+      "durationSeconds": 5.042,
+      "sampleSeconds": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "sha256": "dcaffa1c19618a17698fd26dc3a270540cc8fed699e9215ea90a7bc9bf2d09f2",
+      "note": "Même MP4 que #15 ; angle visible plus faible, banc à 45° imposé par poster et audio",
+      "sourceCommit": "7a946d8936a5df00d0ccf4e518f85ccc3355228e",
+      "sourceRoot": "../1793271577730.mp4",
+      "identicalTo": {
+        "exerciseNumber": 15,
+        "exerciseId": "developpe-halteres-incline-pronation",
+        "source": "1793271577730.mp4",
+        "byteForByte": true,
+        "sameCanonicalFile": true
+      }
+    },
+    {
+      "exerciseNumber": 18,
+      "exerciseId": "developpe-halteres-incline",
+      "integrated": true,
+      "status": "coached",
+      "source": "1793271872816.mp4",
+      "public": "public/videos/developpe-halteres-incline.mp4",
+      "release": "release/videos/developpe-halteres-incline.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-14-18/pectoraux-18-source-1793271872816.mp4",
+      "poster": "public/videos/posters/developpe-halteres-incline.jpg",
+      "posterRelease": "release/videos/posters/developpe-halteres-incline.jpg",
+      "width": 1024,
+      "height": 576,
+      "fps": 24.0,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sampleSeconds": [
+        0.0,
+        0.792,
+        1.583,
+        2.417,
+        3.208,
+        4.0
+      ],
+      "sha256": "32358837ef39cc75773b8ef22b06781d561956c76dbe9bd1f462dca998aafb77",
+      "note": "Banc à environ 30°, poussée 1 s, descente 3 s et back-off 15",
+      "sourceCommit": "7a946d8936a5df00d0ccf4e518f85ccc3355228e",
+      "sourceRoot": "../1793271872816.mp4"
+    }
+  ],
+  "sharedSource": {
+    "exerciseNumbers": [
+      15,
+      17
+    ],
+    "source": "1793271577730.mp4",
+    "canonical": "/videos/developpe-halteres-incline-commun-15-17.mp4",
+    "authorizedByYanis": true,
+    "singleStoredVideo": true,
+    "distinctPosters": true,
+    "distinctNoticesAndVoice": true,
+    "inclinations": {
+      "15": "environ 30°",
+      "17": "45°"
+    },
+    "priority": "Posters et descriptifs audio prioritaires sur l’angle visible"
+  },
+  "integrationStatus": "coached",
+  "version": "1.12.0 / 195",
+  "playbackContract": {
+    "videoMuted": true,
+    "loop": true,
+    "playsInline": true,
+    "distinctFrenchVoice": true,
+    "pauseResumeTested": true,
+    "cleanupOnCloseTested": true,
+    "browserSpeechCancel": true,
+    "androidSpeechStopSource": true
+  },
+  "validation": {
+    "targetedNode": "25/25 sur les fichiers vidéo et voix, dont les 2 nouveaux tests #14→#18",
+    "targetedPlaywright": "1/1",
+    "nodeSuite": {
+      "tests": 231,
+      "passed": 229,
+      "failed": 0,
+      "skipped": 2
+    },
+    "playwrightSuite": {
+      "scenarios": 49,
+      "passed": 38,
+      "failed": 0,
+      "skipped": 11
+    },
+    "build": {
+      "modules": 1679,
+      "media": 989,
+      "bundle": "release/assets/index-C6ou-c4W.js"
+    },
+    "http200": [
+      "/videos/dips.mp4",
+      "/videos/posters/dips.jpg",
+      "/videos/developpe-halteres-incline-commun-15-17.mp4",
+      "/videos/posters/developpe-halteres-incline-pronation.jpg",
+      "/videos/posters/developpe-halteres-incline-45.jpg",
+      "/videos/ecartes-cables-incline.mp4",
+      "/videos/posters/ecartes-cables-incline.jpg",
+      "/videos/developpe-halteres-incline.mp4",
+      "/videos/posters/developpe-halteres-incline.jpg"
+    ],
+    "apkBuilt": false
+  }
+}

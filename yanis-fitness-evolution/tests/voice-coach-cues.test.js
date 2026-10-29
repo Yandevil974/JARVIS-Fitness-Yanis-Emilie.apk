@@ -487,6 +487,84 @@ test("les pectoraux #09 à #13 dictent la programmation et les corrections propr
   }
 });
 
+test("les pectoraux #14 à #18 dictent le geste, l'inclinaison et la programmation propres", () => {
+  const coachedExercises = [
+    {
+      id: "dips",
+      name: "Dips",
+      defaultSets: 6,
+      repScheme: "8,8,6,6,4,4",
+      tempo: "4010",
+      rest: 120,
+      spoken: /charge croissante/i,
+      timing: /descendez en quatre secondes/i,
+    },
+    {
+      id: "developpe-halteres-incline-pronation",
+      name: "Développé haltères incliné, pronation",
+      defaultSets: 4,
+      repScheme: "6-8",
+      tempo: "4010",
+      rest: 90,
+      spoken: /trente degrés, pas quarante-cinq/i,
+      timing: /descendez les deux haltères ensemble en quatre secondes/i,
+    },
+    {
+      id: "ecartes-cables-incline",
+      name: "Écartés câbles incliné",
+      defaultSets: 5,
+      repScheme: "8-10",
+      tempo: "3010",
+      rest: 120,
+      spoken: /montée des poignées vers la tête/i,
+      timing: /ouvrez les deux bras ensemble en trois secondes/i,
+    },
+    {
+      id: "developpe-halteres-incline-45",
+      name: "Développé haltères incliné 45°",
+      defaultSets: 5,
+      repScheme: "5-7",
+      tempo: "4010",
+      rest: 120,
+      spoken: /inclinaison plus faible/i,
+      timing: /descendez les deux haltères ensemble en quatre secondes/i,
+    },
+    {
+      id: "developpe-halteres-incline",
+      name: "Développé haltères incliné",
+      defaultSets: 4,
+      repScheme: "12,10,8,15",
+      tempo: "3010",
+      rest: 90,
+      spoken: /back-off de quinze répétitions/i,
+      timing: /descendez les deux haltères ensemble en trois secondes/i,
+    },
+  ];
+  for (const exercise of coachedExercises) {
+    const catalog = EXERCISE_MAP[exercise.id];
+    assert.ok(catalog, `exercice catalogue absent : ${exercise.id}`);
+    assert.equal(catalog.name, exercise.name, exercise.id);
+    assert.equal(catalog.defaultSets, exercise.defaultSets, exercise.id);
+    assert.equal(catalog.repScheme, exercise.repScheme, exercise.id);
+    assert.equal(catalog.tempo, exercise.tempo, exercise.id);
+    assert.equal(catalog.rest, exercise.rest, exercise.id);
+    const coaching = coachingFor(exercise);
+    assert.ok(coaching, `descriptif absent : ${exercise.id}`);
+    assert.ok(exerciseIntroCue(exercise).text.includes(coaching.spoken));
+    assert.ok(techniqueCue(exercise).text.startsWith(coaching.spoken));
+    assert.match(coaching.spoken, exercise.spoken, exercise.id);
+    assert.match(coaching.spoken, exercise.timing, exercise.id);
+    assert.match(coaching.spoken, /Ne reproduisez pas/i, exercise.id);
+    assert.ok(coaching.title, `titre de réserve absent : ${exercise.id}`);
+  }
+  const quinze = coachingFor("developpe-halteres-incline-pronation");
+  const dixSept = coachingFor("developpe-halteres-incline-45");
+  assert.notEqual(quinze.spoken, dixSept.spoken);
+  assert.match(quinze.spoken, /environ trente degrés/i);
+  assert.match(dixSept.spoken, /quarante-cinq degrés/i);
+  assert.match(dixSept.spoken, /ne copiez pas l’angle visible/i);
+});
+
 test("les exercices sans correction spéciale gardent leur consigne tempo", () => {
   const exercise = {
     id: "back-squat",
