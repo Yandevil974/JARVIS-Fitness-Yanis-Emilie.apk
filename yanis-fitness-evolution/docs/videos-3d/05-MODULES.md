@@ -118,6 +118,15 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    `26-PECTORAUX-14-18-PRODUCTION.md` ; preuves et validation :
    `27-PECTORAUX-14-18-CONTROLE-MP4.md`. Tous les GIF sont conservés, la version
    **1.12.0/195** reste inchangée et aucun APK n'est produit.
+   **#19→#23 disposent maintenant de leurs photos, zooms, planches et prompts** :
+   `28-PECTORAUX-19-23-PRODUCTION.md`. Aucun nouveau MP4 n'était déposé lors de
+   cette préparation : les cinq entrées restent donc sans vidéo, ni `coached` ni
+   `validated`. Cinq sources distinctes sont attendues, sans nouvelle
+   mutualisation. Le kit impose la rotation externe du #19, la pause complète
+   sur les pins du #20, la technique `3010` du #21, les sécurités et le pareur du
+   test 1RM #22, puis les appuis et le gainage des pompes #23. Tout dépôt
+   ultérieur par Yanis vaudra accord d'intégration après contrôle réel, avec les
+   réserves nécessaires. GIF et version **1.12.0/195** inchangés ; aucun APK.
 6. **Vagues suivantes** : Dos (24), Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.
