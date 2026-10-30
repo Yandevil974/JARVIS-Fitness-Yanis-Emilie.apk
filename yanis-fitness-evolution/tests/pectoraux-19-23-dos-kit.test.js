@@ -145,7 +145,7 @@ test("consignes des pins de travail et de la sécurité 1RM distinctes", () => {
   );
 });
 
-test("dos #01 à #05 : programmation conservée, GIF disponibles et vidéos absentes", () => {
+test("dos #01 à #05 : programmation et GIF conservés, quatre vidéos accompagnées", () => {
   const rows = EXERCISES.filter((e) => e.muscle === "dos").slice(0, 5);
   const expected = [
     ["tirage-vertical-prise-neutre", 3, "12-15", 75],
@@ -158,7 +158,8 @@ test("dos #01 à #05 : programmation conservée, GIF disponibles et vidéos abse
   rows.forEach((e, i) => {
     assert.deepEqual([e.id, e.defaultSets, e.repScheme, e.rest], expected[i]);
     assert.equal(e.tempo, "2011");
-    assert.equal(videoFor(e), null);
+    if (i < 4) assert.equal(videoFor(e)?.status, "coached");
+    else assert.equal(videoFor(e), null);
     for (const folder of ["public", "release"])
       assert.ok(existsSync(asset(`${folder}${e.gif}`)));
   });

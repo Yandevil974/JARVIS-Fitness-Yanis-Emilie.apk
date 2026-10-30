@@ -125,11 +125,13 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    masquer le doublon. Tous les GIF sont conservés. Les pins de travail
    de #20 imposent une pause complète ; les sécurités de #22 restent des secours.
    Version **1.12.0/195** inchangée ; aucun APK.
-6. **Dos #01→#05** : photos, zooms, planches et prompts dans
-   `30-DOS-01-05-PRODUCTION.md`. Cinq sources distinctes attendues, sans vidéo
-   intégrée à ce stade. Les GIF restent les replis ; la prise neutre #01 et la
-   prise large #04 ne sont pas interchangeables. Le dépôt de Yanis vaut accord
-   d'intégration après contrôle, avec les réserves nécessaires.
+6. **Dos #01→#05** : #01 à #04 intégrés `coached` après dépôt et contrôle ;
+   preuves dans `31-DOS-01-04-CONTROLE-MP4.md`. Les GIF restent les replis ;
+   prise neutre #01 et prise large #04 demeurent distinctes. Pour #05, Yanis
+   signale un bras tordu et un redressement du dos : photo et vidéo à refaire,
+   aucun MP4 intégré. Le prompt est corrigé dans `30-DOS-01-05-PRODUCTION.md` ;
+   la génération de la nouvelle photo a échoué et reste à faire. Le dépôt de Yanis
+   vaut accord d'intégration après contrôle, avec les réserves nécessaires.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.

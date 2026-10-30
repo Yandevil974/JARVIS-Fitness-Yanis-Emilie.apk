@@ -1032,6 +1032,82 @@ export const EXERCISE_VIDEOS = {
         "Pompes au sol. Placez les mains sous les épaules et les pointes des pieds au sol. Gainez abdominaux et fessiers, gardez la tête, le bassin et les talons alignés sans creuser le dos ni lever les hanches. Descendez en trois secondes en fléchissant les coudes modérément proches du buste, puis poussez en une seconde pour revenir en planche haute, sans poser les genoux ni marquer de pause. Ne copiez ni la pause basse ni la vitesse de la vidéo. Tempo 3010, trois séries de huit à quinze et quatre-vingt-dix secondes de repos.",
     },
   },
+
+  // ---- Dos #01 à #04 : vidéos déposées par Yanis, avec consignes ----
+  // #05 : vidéo non fournie ; nouvelle image et prompt corrigé en préparation.
+  "tirage-vertical-prise-neutre": {
+    src: "/videos/tirage-vertical-prise-neutre.mp4",
+    poster: "/videos/posters/tirage-vertical-prise-neutre.jpg",
+    label: "Vidéo IA · Tirage vertical neutre, prise et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les paumes face à face, tirez vers le haut de la poitrine et revenez en deux secondes.",
+      handCue:
+        "Deux poignées parallèles, paumes face à face et poignets neutres ; câble relié à la poulie haute.",
+      movementCue:
+        "Tirez en une seconde, maintenez une seconde, puis remontez les bras en deux secondes sans balancer le buste.",
+      notice:
+        "La prise et le tirage sont visibles, mais la continuité exacte des mains et du câble est difficile à certifier et la vidéo marque un arrêt prolongé. Suivez la prise neutre et le tempo 2011, sans copier la pause.",
+      spoken:
+        "Tirage vertical en prise neutre. Asseyez-vous, les cuisses maintenues et les pieds au sol, poitrine ouverte. Tenez les deux poignées parallèles, paumes face à face et poignets neutres. Sans balancer le buste, tirez vers le haut de la poitrine en une seconde, coudes vers le bas et omoplates basses. Maintenez la contraction une seconde, puis laissez remonter les poignées en deux secondes jusqu'aux bras allongés sans pause supplémentaire. La vidéo marque un arrêt prolongé et sa prise n'est pas lisible en permanence : gardez la prise neutre et le tempo 2011. Trois séries de douze à quinze, soixante-quinze secondes de repos.",
+    },
+  },
+  "rowing-haltere-un-bras": {
+    src: "/videos/rowing-haltere-un-bras.mp4",
+    poster: "/videos/posters/rowing-haltere-un-bras.jpg",
+    label: "Vidéo IA · Rowing un bras, bassin et coude prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le bassin immobile et le bras naturel, sans exagérer la hauteur du coude.",
+      handCue:
+        "Un seul haltère dans la main libre, poignet neutre ; l'autre main et le genou du même côté sont appuyés sur le banc.",
+      movementCue:
+        "Tirez l'haltère vers la taille en une seconde, maintenez une seconde puis redescendez en deux secondes, sans rotation du bassin.",
+      notice:
+        "La vidéo déforme le bras et monte le coude très haut ; l'haltère paraît passer près du banc et le tempo est approximatif. Ne reproduisez pas ces défauts : gardez un trajet naturel et une distance libre avec le banc.",
+      spoken:
+        "Rowing avec un haltère, un bras à la fois. Placez une main et le genou du même côté sur le banc, l'autre pied au sol. Tenez un seul haltère dans la main libre, bras naturel et poignet neutre, dos plat et bassin stable. Tirez vers la taille en une seconde avec le coude près du corps, sans forcer le coude au-delà d'une amplitude confortable. Maintenez une seconde puis descendez en deux secondes. Ne tournez pas le bassin, ne copiez pas la déformation du bras ou la hauteur excessive du coude de la vidéo, et gardez l'haltère dégagé du banc. Douze répétitions par côté, trois séries, tempo 2011 et soixante secondes de repos.",
+    },
+  },
+  "tirage-horizontal-a-la-poulie": {
+    src: "/videos/tirage-horizontal-a-la-poulie.mp4",
+    poster: "/videos/posters/tirage-horizontal-a-la-poulie.jpg",
+    label: "Vidéo IA · Tirage horizontal, buste fixe et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le dos neutre et le buste fixe ; tirez la poignée vers le nombril.",
+      handCue:
+        "Deux mains sur la poignée neutre, paumes face à face ; câble relié à la poulie basse et dégagé des pieds.",
+      movementCue:
+        "Tirez vers le nombril en une seconde, maintenez une seconde puis tendez les bras en deux secondes sans arrondir le dos.",
+      notice:
+        "La trajectoire générale est lisible, mais la continuité du câble près des appuis et la durée de la pause ne sont pas parfaitement claires. Gardez le câble libre, le buste fixe et suivez le tempo 2011.",
+      spoken:
+        "Tirage horizontal à la poulie basse. Asseyez-vous, pieds sur les appuis et genoux souples. Gardez le dos neutre et le buste fixe, légèrement penché si confortable. Tenez les deux poignées en prise neutre, câble bien connecté et dégagé des pieds. Tirez vers le nombril en une seconde, coudes vers l'arrière ; maintenez une seconde, puis tendez les bras en deux secondes sans arrondir le dos ni balancer le buste. La vidéo ne garantit pas le passage du câble ou le tempo exact : suivez le descriptif. Trois séries de douze, tempo 2011 et soixante-quinze secondes de repos.",
+    },
+  },
+  "tirage-vertical-prise-large": {
+    src: "/videos/tirage-vertical-prise-large.mp4",
+    poster: "/videos/posters/tirage-vertical-prise-large.jpg",
+    label:
+      "Vidéo IA · Tirage vertical large, trajectoire et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez la prise pronée large et tirez la barre devant vous vers le haut de la poitrine.",
+      handCue:
+        "Une barre longue en pronation, mains plus larges que les épaules et pouces enroulés.",
+      movementCue:
+        "Tirez devant la tête en une seconde, maintenez une seconde puis remontez en deux secondes sans balancer le buste.",
+      notice:
+        "La barre descend bas sur le buste et la pause visible est prolongée. Ne copiez ni cette amplitude ni la vitesse : arrêtez au haut de la poitrine et suivez le tempo 2011.",
+      spoken:
+        "Tirage vertical en prise large. Asseyez-vous, pieds au sol et cuisses maintenues, poitrine ouverte. Tenez la barre en pronation avec les mains plus larges que les épaules et les pouces enroulés. Gardez le buste stable. Tirez la barre devant la tête vers le haut de la poitrine en une seconde, coudes vers le bas et l'arrière. Maintenez une seconde, puis remontez la barre en deux secondes jusqu'aux bras allongés. Ne tirez pas derrière la nuque et ne copiez pas la descente trop basse ni la pause prolongée de la vidéo. Quatre séries de dix à douze, tempo 2011 et quatre-vingt-dix secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

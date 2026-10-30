@@ -1,10 +1,12 @@
 # Dos #01→#05 — kit de production vidéo
 
-**État : 5 photos, 5 zooms, 2 planches et 5 prompts ; 0 MP4 intégré.** Les cinq vidéos devront être distinctes. Le dépôt ultérieur des sources par Yanis vaut accord d'intégration après contrôle ; les réserves réelles seront conservées. Les GIF d'origine restent les replis. Aucun changement de programmation ni d'APK.
+**Mise à jour : #01 à #04 intégrés `coached` après dépôt. #05 en attente : la photo précédente est rejetée (bras déformé) et la vidéo évoquée par Yanis relève le dos ; ne pas les réutiliser. Une nouvelle photo corrigée reste à générer.** Les vidéos du lot sont distinctes. Le dépôt ultérieur des sources par Yanis vaut accord d'intégration après contrôle ; les réserves réelles seront conservées. Les GIF d'origine restent les replis. Aucun changement de programmation ni d'APK.
 
 ## Athlète et revue
 
-[Personnage verrouillé](./reference-personnage-verrouille.jpg) · [Planche des photos](./vague4-dos-01-05-apercu.jpg) · [Planche des zooms](./vague4-dos-01-05-zooms.jpg)
+[Personnage verrouillé](./reference-personnage-verrouille.jpg) · [Ancienne planche des photos](./vague4-dos-01-05-apercu.jpg) · [Ancienne planche des zooms](./vague4-dos-01-05-zooms.jpg)
+
+**Attention : le #05 dans ces deux planches et sa photo initiale sont rejetés ; ne pas les utiliser comme référence de production.**
 
 Les images sont des références IA fixes, pas une preuve de mouvement, de sécurité ou d'exactitude anatomique dynamique. Contrôler particulièrement le dégagement de l'haltère du banc #02, la continuité de l'attache et du câble #03 et le réglage réel des appuis cuisses #01/#04. Les zooms sont des recadrages des photos, pas des variantes générées.
 
@@ -14,7 +16,7 @@ Les images sont des références IA fixes, pas une preuve de mouvement, de sécu
 | 02  | `rowing-haltere-un-bras`        | 3 × 12/côté          | 2011  |  60 s | [Photo](./vague4-dos-02-rowing-haltere-un-bras.jpg)   | [Zoom](./vague4-dos-02-zoom-technique.jpg) |
 | 03  | `tirage-horizontal-a-la-poulie` | 3 × 12               | 2011  |  75 s | [Photo](./vague4-dos-03-tirage-horizontal-poulie.jpg) | [Zoom](./vague4-dos-03-zoom-technique.jpg) |
 | 04  | `tirage-vertical-prise-large`   | 4 × 10-12            | 2011  |  90 s | [Photo](./vague4-dos-04-tirage-vertical-large.jpg)    | [Zoom](./vague4-dos-04-zoom-technique.jpg) |
-| 05  | `rowing-barre-buste-penche`     | 3 × 10-12            | 2011  |  90 s | [Photo](./vague4-dos-05-rowing-barre.jpg)             | [Zoom](./vague4-dos-05-zoom-technique.jpg) |
+| 05  | `rowing-barre-buste-penche`     | 3 × 10-12            | 2011  |  90 s | **Photo rejetée ; à refaire**                         | **Zoom rejeté**                            |
 
 **Tempo `2011`** : retour excentrique 2 s, aucune pause en position étirée, tirage concentrique 1 s, contraction 1 s. Les prompts commencent en position étirée : tirer 1 s, tenir 1 s, revenir 2 s, sans pause supplémentaire. Une animation montre une répétition, pas une série entière.
 
@@ -66,15 +68,27 @@ Barre longue devant la tête, mains en pronation plus larges que les épaules, p
 Animate the supplied WIDE GRIP lat pulldown still, preserving the exact silver chrome athlete, cap, shorts, shoes, bright gym and fixed front three-quarter camera. Seated stable, feet flat and thighs held by pads. Both hands grip ONE long bar widely in an OVERHAND grip, wider than shoulder width, thumbs wrapped; ONE taut cable stays attached at the center to the overhead pulley. START with arms extended and bar above head IN FRONT of body. Pull bar to upper chest in ONE second, elbows down and back; hold ONE second; return bar upward in TWO seconds to extended arms, tempo 2011. Torso stays stable and chest open, no swinging. Never take bar behind neck, never change to parallel neutral handles, no extra arms, no text or camera movement.
 ```
 
-## #05 — Rowing barre buste penché
+## #05 — Rowing barre buste penché : à refaire
 
-Pieds stables, genoux souples, charnière de hanches, dos neutre ; buste à environ **45° par rapport au sol** tout au long de la répétition. Une barre droite en pronation, tirée vers le nombril sans élan avec les reins ni redressement.
+**Remarque de Yanis :** la photo précédente comporte un bras tordu et la vidéo obtenue relève le dos. Cette image et cette animation ne sont pas acceptées comme référence finale. Aucune nouvelle vidéo n'est intégrée pour #05 ; le GIF reste disponible. Les outils de génération d'image ont refusé l'accès lors de cette reprise : il faut donc produire une nouvelle photo à partir du personnage verrouillé, pas prétendre qu'elle existe déjà.
 
-**Prompt — joindre la photo #05 :**
+**Posture impérative :** debout, pieds au sol, hanches en arrière, genoux légèrement fléchis, buste et dos neutres à environ **45° au-dessus du sol**. Les deux bras doivent être anatomiquement normaux, reliés aux épaules, coudes naturels et poignets droits, avec les deux mains tenant une seule barre. Pendant la répétition, **bassin, hanches, dos, torse, cou et tête conservent exactement leur angle** : seuls les épaules et les coudes se déplacent pour tirer la barre. Aucun redressement, aucune oscillation, pas de soulevé de terre.
+
+### Prompt pour recréer la photo #05
 
 ```text
-Animate the exact supplied silver chrome man in a bent-over BARBELL ROW, preserving his cap, shorts, shoes and the bright gym, fixed side three-quarter full-body view. Feet stay planted, knees softly bent, hips hinged, neutral straight back held at approximately 45 DEGREES ABOVE THE FLOOR and head aligned for the whole repetition. Both hands maintain a pronated grip on ONE straight horizontal barbell, plates symmetric. START arms extended with bar hanging below the knees and clear of the legs. Pull the bar toward the navel in ONE second with elbows traveling back, hold the contracted top ONE second, lower in TWO seconds until arms extend. Tempo 2011. No lumbar jerk, no torso rising or twisting, no squat, no deadlift, no dumbbells, no extra hands, no text or camera movement.
+Create ONE still instructional fitness image using the provided locked character reference: the same muscular silver-chrome athlete, black cap, black shorts, white shoes and bright grey gym, with the back muscles highlighted red-orange. Full body visible from a clear side three-quarter angle. BENT-OVER BARBELL ROW START POSITION: feet planted, knees gently bent, hips pushed back, flat neutral spine and torso held at 45 degrees ABOVE THE FLOOR, neck aligned. Exactly TWO anatomically normal arms, each naturally connected from shoulder to upper arm to elbow to forearm to wrist and hand; no twisted, dislocated, reversed or extra limbs. Both arms hang straight beneath the shoulders, with both hands gripping ONE straight barbell in a comfortable overhand grip. Bar hangs below the knees, with equal plates, clear of the legs. No bench, no text, no watermark. This is a single static starting pose, not an upright deadlift.
 ```
+
+**Contrôle avant de lancer la vidéo :** vérifier les deux bras et les deux mains, les coudes, la prise sur la même barre, les pieds et le buste à 45°. Si un bras paraît tordu ou le buste trop droit, ne pas utiliser la photo.
+
+### Prompt vidéo corrigé — à joindre uniquement à la nouvelle photo #05 conforme
+
+```text
+Animate the EXACT same athlete and camera in the supplied CORRECT bent-over barbell-row start image. The athlete is already hinged forward at 45 DEGREES ABOVE THE FLOOR. LOCK THE ENTIRE TORSO AND HIP ANGLE for EVERY FRAME: hips stay back, pelvis does not rotate, chest and shoulders do not rise, neutral straight back remains at the SAME 45-degree angle, head and neck remain aligned, knees and planted feet remain still. The upper body NEVER stands up, never rocks, never performs a deadlift. Start with both naturally shaped arms hanging beneath the shoulders and both hands holding ONE straight barbell in overhand grip. Pull the bar close to the legs toward the navel in ONE second by bending BOTH elbows and drawing them back; hold ONE second; lower the bar in TWO seconds by extending the elbows. Tempo 2011, one complete repetition. Only the arms and shoulder blades move; no torso extension, no hip extension, no lumbar swing. Preserve anatomically normal upper arms, elbows, forearms, wrists and hands throughout: no twisting, dislocation, backward bending, extra limbs or changing grip. No camera movement, no text, no logo.
+```
+
+À réception, vérifier le corps entier pendant toute la vidéo et rejeter un redressement même bref, un bras tordu ou une barre traversant le corps. Le dépôt par Yanis vaut accord d'intégration ; seule une source contrôlée sera ajoutée avec les réserves réelles.
 
 ## Références de geste
 
@@ -85,4 +99,4 @@ Animate the exact supplied silver chrome man in a bent-over BARBELL ROW, preserv
 
 ## À réception
 
-Identifier chaque source par le geste et le hash, décoder toutes les images, examiner au moins huit instants et les zooms mains/câbles/appuis. Vérifier les cinq sources distinctes, le tempo, la prise et la stabilité, puis intégrer après dépôt selon le contrôle réel : `coached` avec notice et descriptif vocal pour toute réserve ; `validated` seulement si réellement vérifié. Conserver GIF, sources et lots antérieurs. Les cinq entrées restent sans vidéo jusqu'à réception.
+Identifier chaque source par le geste et le hash, décoder toutes les images, examiner au moins huit instants et les zooms mains/câbles/appuis. Vérifier les cinq sources distinctes, le tempo, la prise et la stabilité, puis intégrer après dépôt selon le contrôle réel : `coached` avec notice et descriptif vocal pour toute réserve ; `validated` seulement si réellement vérifié. Conserver GIF, sources et lots antérieurs. Les fiches #01 à #04 sont intégrées ; #05 reste sans vidéo jusqu'à réception d'une source corrigée.
