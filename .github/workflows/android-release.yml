@@ -151,7 +151,7 @@ jobs:
           echo "Controle 'rien ne manque' + GIFs, videos et posters witnesses : OK"
 
       - name: Verify dos videos and prepare delivery notes
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04' }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.12.0-dos-01-04-')) }}
         working-directory: yanis-fitness-evolution/android
         shell: bash
         run: |
@@ -193,10 +193,10 @@ jobs:
           EOF
 
       - name: Publish dedicated dos delivery
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04' }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.12.0-dos-01-04-')) }}
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ inputs.tag }}
+          tag_name: ${{ inputs.tag || github.ref_name }}
           target_commitish: ${{ github.sha }}
           name: Yanis Fitness Evolution 1.12.0 — vidéos dos 01 à 04
           prerelease: true
@@ -208,7 +208,7 @@ jobs:
           fail_on_unmatched_files: true
 
       - name: Publish GitHub Release with APK
-        if: ${{ github.event_name != 'workflow_dispatch' || inputs.delivery != 'dos-01-04' }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.12.0-dos-01-04-'))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
