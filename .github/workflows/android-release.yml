@@ -156,19 +156,31 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          PHASE=demarrage
+          trap 'rc=$?; echo "::error title=Contrôle APK::Échec étape $PHASE (ligne $LINENO, code $rc)"; exit "$rc"' ERR
           APK=app/build/outputs/apk/release/app-release.apk
           EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
           BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          PHASE=signature
           "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert.txt
-          grep -Fi "Signer #1 certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert.txt
+          if ! grep -Fi "Signer #1 certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert.txt; then
+            ACTUAL_CERT=$(grep -i 'certificate SHA-256 digest' /tmp/yfe-cert.txt || true)
+            echo "::error title=Signature APK::Attendu $EXPECTED_CERT ; reçu $ACTUAL_CERT"
+            exit 1
+          fi
+          PHASE=liste-apk
           unzip -Z1 "$APK" > /tmp/yfe-apk-files.txt
           for id in tirage-vertical-prise-neutre rowing-haltere-un-bras tirage-horizontal-a-la-poulie tirage-vertical-prise-large; do
+            PHASE="video-$id"
             grep -Fx "assets/public/videos/$id.mp4" /tmp/yfe-apk-files.txt
+            PHASE="poster-$id"
             grep -Fx "assets/public/videos/posters/$id.jpg" /tmp/yfe-apk-files.txt
+            PHASE="hash-$id"
             SRC_HASH=$(sha256sum "../public/videos/$id.mp4" | cut -d ' ' -f1)
             APK_HASH=$(unzip -p "$APK" "assets/public/videos/$id.mp4" | sha256sum | cut -d ' ' -f1)
             test "$SRC_HASH" = "$APK_HASH" || { echo "Video differente dans l'APK : $id"; exit 1; }
           done
+          PHASE=gif-dos-05
           grep -Fx 'assets/public/media/f00bd9ef43286ee0.gif' /tmp/yfe-apk-files.txt
           if grep -Fxq 'assets/public/videos/rowing-barre-buste-penche.mp4' /tmp/yfe-apk-files.txt; then
             echo 'Le dos #05 doit rester sans nouvelle video.'; exit 1
