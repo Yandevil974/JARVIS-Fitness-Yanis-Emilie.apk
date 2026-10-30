@@ -1,6 +1,12 @@
 # Pectoraux #19→#23 — photos et prompts de production
 
-**Date : 29/10/2026 · État : kit prêt, cinq MP4 à produire**
+> **Mise à jour après dépôt :** les cinq sont intégrés `coached` avec réserves.
+> La source déposée pour #21 est identique à P11/T10 ; la prise rapprochée est
+> corrigée par le poster et la voix. Voir le
+> [contrôle du dépôt](./29-PECTORAUX-19-23-CONTROLE-MP4.md). Les indications
+> « à produire » ci-dessous décrivent l'état historique du kit initial.
+
+**Date : 29/10/2026 · État initial : kit prêt, cinq MP4 à produire**
 
 Ce dernier lot termine la préparation des **23 pectoraux** dans l'ordre réel du
 catalogue. Il ne reprend ni ne régénère les lots #01→#18 et ne rouvre pas le
@@ -293,7 +299,7 @@ Animate the EXACT same massive silver-chrome athletic man from the supplied TOP 
 - Prettier validé sur ce document ; `git diff --check` propre. Aucune donnée du
   catalogue, du registre vidéo ou de version n'a été modifiée.
 
-## État final du lot
+## État historique du kit avant dépôt
 
 - **5 photos, 5 zooms, 2 planches et 5 prompts** prêts pour Arena Video/PixVerse.
 - **0 MP4 intégré** à ce stade ; les cinq entrées restent sans vidéo.

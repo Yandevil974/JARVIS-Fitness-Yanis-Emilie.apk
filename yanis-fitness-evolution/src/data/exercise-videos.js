@@ -939,6 +939,99 @@ export const EXERCISE_VIDEOS = {
         "Développé avec deux haltères sur un banc réglé à environ trente degrés, en prise pronée. Gardez l’arrière de la tête, les omoplates, le dos et les hanches appuyés et les pieds au sol. Tenez un haltère dans chaque main, paumes vers les pieds, dos des mains vers la tête et poignets alignés. Depuis la position basse, haltères séparés à côté du haut des pectoraux, coudes fléchis et avant-bras presque verticaux, poussez les deux charges ensemble en une seconde jusqu’au-dessus du haut de la poitrine, sans les entrechoquer. Sans pause, descendez les deux haltères ensemble en trois secondes pour revenir à côté du haut des pectoraux. Ne reproduisez pas le temps d’arrêt en haut ou la descente trop rapide de la vidéo IA, et ne passez pas en prise neutre. Le tempo 3010, la séquence douze, dix, huit puis le back-off de quinze répétitions et les quatre-vingt-dix secondes de repos du programme restent prioritaires. Le back-off concerne la programmation, pas une modification du geste.",
     },
   },
+
+  // ---- Pectoraux #19 à #23 : sources déposées par Yanis ----
+  // #21 : dépôt identique à P11 et T10 ; prise standard et tempo corrigés.
+  "cables-croises-rotation-externe": {
+    src: "/videos/cables-croises-rotation-externe.mp4",
+    poster: "/videos/posters/cables-croises-rotation-externe.jpg",
+    label: "Vidéo IA · Câbles croisés, rotation et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les coudes souples fixes et vérifiez la rotation externe des épaules en ouverture.",
+      handCue:
+        "Une poignée dans chaque main, poignets alignés et deux câbles tendus.",
+      movementCue:
+        "Refermez les bras en une seconde, puis ouvrez en trois secondes avec une rotation externe douce des épaules.",
+      notice:
+        "La rotation externe des épaules n'est pas clairement démontrée et l'angle des coudes change pendant la fermeture. Ne copiez ni ces coudes ni la vitesse de la vidéo : suivez le poster et l'audio.",
+      spoken:
+        "Câbles croisés avec rotation externe. Debout entre deux poulies, tenez une poignée dans chaque main avec les câbles tendus, épaules basses et buste stable. Gardez les coudes souples avec un angle constant. Refermez en une seconde dans un grand arc devant les pectoraux, sans heurter les poignées. Ouvrez sur le même arc en trois secondes et terminez par une rotation externe douce des épaules, sans tordre les poignets ni lâcher les poignées. La rotation n'est pas clairement visible dans la vidéo et ses coudes se plient davantage : ne reproduisez pas ces défauts ni sa vitesse. Tempo 3010, trois séries de douze à quinze et soixante secondes de repos.",
+    },
+  },
+  "developpe-couche-plat-inertie-depuis-les-pins": {
+    src: "/videos/developpe-couche-plat-inertie-depuis-les-pins.mp4",
+    poster: "/videos/posters/developpe-couche-plat-inertie-depuis-les-pins.jpg",
+    label: "Vidéo IA · Développé depuis les pins, pause obligatoire",
+    status: "coached",
+    coaching: {
+      title:
+        "À chaque répétition, posez la barre sur les deux pins et marquez un arrêt complet sans rebond.",
+      handCue:
+        "Barre droite, prise pronée standard et pouces enroulés, poignets alignés.",
+      movementCue:
+        "Barre immobile supportée par les deux pins, poussez en une seconde puis descendez en quatre secondes jusqu'à l'arrêt complet.",
+      notice:
+        "Le contact et le support de la barre par les deux pins ne sont pas démontrés clairement dans la vidéo. Ne copiez pas sa vitesse : réglez des pins de travail solides, posez la barre sur les deux et arrêtez-la complètement à chaque répétition.",
+      spoken:
+        "Développé couché depuis les pins. Réglez deux pins de travail solides à la même hauteur dans un rack stable et vérifiez avant de charger que la barre peut s'y poser en sécurité. Tête, omoplates et hanches appuyées, pieds au sol, prenez la barre en pronation standard, pouces enroulés. Départ bas : barre immobile et réellement supportée par les deux pins, buste gainé. Poussez en une seconde, puis descendez en quatre secondes vers les deux pins et marquez une pause complète, sans rebond, avant chaque nouvelle poussée. La vidéo ne démontre pas clairement le contact avec les pins : ne prenez pas son réglage ou sa vitesse comme modèle. Tempo 4010 et pause complète sur les pins, cinq séries de six à huit et cent vingt secondes de repos.",
+    },
+  },
+  "developpe-couche-barre": {
+    src: "/videos/developpe-couche-barre.mp4",
+    poster: "/videos/posters/developpe-couche-barre.jpg",
+    label: "Vidéo IA · Développé couché, prise standard prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Prenez la barre en prise pectorale standard et descendez en trois secondes.",
+      handCue:
+        "Barre droite en pronation, mains légèrement plus larges que les épaules, pouces enroulés et poignets alignés.",
+      movementCue:
+        "Sur banc plat, descendez la barre en trois secondes vers le milieu des pectoraux puis poussez en une seconde sans rebond.",
+      notice:
+        "La source déposée est identique à celle du pectoral #11 et du triceps #10 : la prise visible est trop rapprochée pour cette fiche. Ne copiez pas cette prise ; suivez le poster et le descriptif audio en prise standard et tempo 3010.",
+      spoken:
+        "Développé couché à la barre sur banc plat. Gardez la tête, les omoplates et les hanches appuyées et les pieds au sol. Prenez la barre en pronation standard, mains légèrement plus larges que les épaules, pouces enroulés et poignets alignés. Depuis le haut au-dessus des pectoraux, descendez la barre en trois secondes vers le milieu de la poitrine, puis poussez en une seconde sans rebond. Ne dirigez pas la barre vers le cou ou le visage. La vidéo déposée est la même que pour le pectoral onze et le triceps dix et montre une prise rapprochée : ne copiez pas cette prise, utilisez la prise standard de cette fiche. Tempo 3010, trois séries de huit à dix, cent vingt secondes de repos ; volume réduit, entretien et technique parfaite.",
+    },
+  },
+  "developpe-couche-test-1rm": {
+    src: "/videos/developpe-couche-test-1rm.mp4",
+    poster: "/videos/posters/developpe-couche-test-1rm.jpg",
+    label: "Vidéo IA · Test 1RM, sécurités et pareur prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Pour un test maximal, vérifiez les sécurités avec un pareur compétent avant de charger.",
+      handCue:
+        "Prise pronée standard, pouces enroulés ; le pareur reste prêt sans toucher la barre si elle progresse.",
+      movementCue:
+        "Descendez en quatre secondes vers la poitrine puis poussez en une seconde, sans poser la barre sur les sécurités pendant une répétition réussie.",
+      notice:
+        "La vidéo montre un pareur et des supports mais ne permet pas de vérifier leur réglage sûr ni l'absence de contact en bas ; le tempo est trop rapide. Ne copiez pas le réglage illustré : faites vérifier les sécurités et le rôle du pareur avant tout test.",
+      spoken:
+        "Test de développé couché, à réaliser uniquement si vous maîtrisez le mouvement et avec un pareur compétent. Avant de charger, réglez et vérifiez les deux sécurités en conditions réelles pour qu'elles arrêtent la barre en cas d'échec sans gêner une répétition réussie ; convenez du signal d'aide avec le pareur. La vidéo ne permet pas de certifier ce réglage : ne le copiez pas. Gardez les appuis stables et la prise pronée standard, pouces enroulés. Descendez en quatre secondes vers la poitrine puis poussez en une seconde sans rebond. Les sécurités servent au secours et ne portent pas la barre pendant une répétition réussie ; le pareur reste prêt sans toucher tant que la barre progresse. En cas de doute ou sans dispositif sûr, ne faites pas de test maximal. Le tempo 4010, cinq séries de une à cinq et cent quatre-vingts secondes de repos restent prioritaires.",
+    },
+  },
+  pompes: {
+    src: "/videos/pompes.mp4",
+    poster: "/videos/posters/pompes.jpg",
+    label: "Vidéo IA · Pompes au sol, alignement et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Mains sous les épaules et corps aligné, descendez en trois secondes.",
+      handCue:
+        "Paumes au sol sous les épaules, doigts vers l'avant et appui sur les pointes des pieds.",
+      movementCue:
+        "Gardez une ligne tête, hanches et talons ; descendez en trois secondes et poussez en une seconde.",
+      notice:
+        "La pompe au sol est lisible, mais la vidéo marque un arrêt en bas et ne reproduit pas exactement le tempo 3010. Ne copiez pas la pause ni la vitesse.",
+      spoken:
+        "Pompes au sol. Placez les mains sous les épaules et les pointes des pieds au sol. Gainez abdominaux et fessiers, gardez la tête, le bassin et les talons alignés sans creuser le dos ni lever les hanches. Descendez en trois secondes en fléchissant les coudes modérément proches du buste, puis poussez en une seconde pour revenir en planche haute, sans poser les genoux ni marquer de pause. Ne copiez ni la pause basse ni la vitesse de la vidéo. Tempo 3010, trois séries de huit à quinze et quatre-vingt-dix secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;
