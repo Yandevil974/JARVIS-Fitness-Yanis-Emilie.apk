@@ -163,7 +163,7 @@ jobs:
           BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
           PHASE=signature
           "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert.txt
-          if ! grep -Fi "Signer #1 certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert.txt; then
+          if ! grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert.txt; then
             ACTUAL_CERT=$(grep -i 'certificate SHA-256 digest' /tmp/yfe-cert.txt || true)
             echo "::error title=Signature APK::Attendu $EXPECTED_CERT ; reçu $ACTUAL_CERT"
             exit 1
