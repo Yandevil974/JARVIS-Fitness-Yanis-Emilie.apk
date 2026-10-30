@@ -12,6 +12,14 @@ on:
         description: "Tag GitHub Release cible"
         required: true
         default: "v1.12.0-biceps-18-20-coached"
+      delivery:
+        description: "Livraison pour la branche de travail"
+        required: false
+        type: choice
+        default: legacy
+        options:
+          - legacy
+          - dos-01-04
 
 permissions:
   contents: write
@@ -142,7 +150,65 @@ jobs:
           done
           echo "Controle 'rien ne manque' + GIFs, videos et posters witnesses : OK"
 
+      - name: Verify dos videos and prepare delivery notes
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04' }}
+        working-directory: yanis-fitness-evolution/android
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=app/build/outputs/apk/release/app-release.apk
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert.txt
+          grep -Fi "Signer #1 certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert.txt
+          unzip -Z1 "$APK" > /tmp/yfe-apk-files.txt
+          for id in tirage-vertical-prise-neutre rowing-haltere-un-bras tirage-horizontal-a-la-poulie tirage-vertical-prise-large; do
+            grep -Fx "assets/public/videos/$id.mp4" /tmp/yfe-apk-files.txt
+            grep -Fx "assets/public/videos/posters/$id.jpg" /tmp/yfe-apk-files.txt
+            SRC_HASH=$(sha256sum "../public/videos/$id.mp4" | cut -d ' ' -f1)
+            APK_HASH=$(unzip -p "$APK" "assets/public/videos/$id.mp4" | sha256sum | cut -d ' ' -f1)
+            test "$SRC_HASH" = "$APK_HASH" || { echo "Video differente dans l'APK : $id"; exit 1; }
+          done
+          grep -Fx 'assets/public/media/f00bd9ef43286ee0.gif' /tmp/yfe-apk-files.txt
+          if grep -Fxq 'assets/public/videos/rowing-barre-buste-penche.mp4' /tmp/yfe-apk-files.txt; then
+            echo 'Le dos #05 doit rester sans nouvelle video.'; exit 1
+          fi
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-notes.md <<EOF
+          ## Yanis Fitness Evolution 1.12.0 — livraison dos #01 à #04
+
+          APK Android signé construit depuis le commit $GITHUB_SHA. Version Android **1.12.0 / 195**, identifiant **app.yanis.fitness.evolution**.
+
+          Les quatre vidéos du dos #01 à #04 sont intégrées en **coached** avec leurs consignes correctives ; les vidéos précédentes et les GIF sont conservés. Dos #05 reste sur son GIF : la photo et la vidéo doivent être refaites.
+
+          ### Vérifications automatiques
+          - Signature vérifiée ; empreinte SHA-256 du certificat : $EXPECTED_CERT.
+          - SHA-256 de l'APK : $APK_SHA.
+          - Les quatre MP4 et posters du dos ont été recherchés dans l'APK ; leurs MP4 sont identiques aux sources de la branche.
+          - Présence du GIF dos #05 et absence d'une nouvelle vidéo #05 vérifiées ; décompte des médias et vidéos contrôlé.
+          - Les tests de l'application ont été exécutés par le workflow.
+
+          ### Installation
+          Sauvegardez vos données dans l'application avant l'installation. Téléchargez l'APK puis ouvrez-le sur Android. Si le système refuse la mise à jour, **ne désinstallez pas** l'application existante : cela pourrait effacer ses données. La version 1.12.0/195 est conservée ; Android et la signature de la version installée déterminent si l'installation par-dessus est acceptée.
+          EOF
+
+      - name: Publish dedicated dos delivery
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04' }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.12.0 — vidéos dos 01 à 04
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-notes.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.delivery != 'dos-01-04' }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
