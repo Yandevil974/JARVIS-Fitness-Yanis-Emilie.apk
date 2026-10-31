@@ -1,6 +1,6 @@
 # Dos #01→#05 — kit de production vidéo
 
-**Mise à jour : #01 à #04 intégrés `coached` après dépôt. #05 en attente : la photo précédente est rejetée (bras déformé) et la vidéo évoquée par Yanis relève le dos ; ne pas les réutiliser. Une nouvelle photo corrigée reste à générer.** Les vidéos du lot sont distinctes. Le dépôt ultérieur des sources par Yanis vaut accord d'intégration après contrôle ; les réserves réelles seront conservées. Les GIF d'origine restent les replis. Aucun changement de programmation ni d'APK.
+**Mise à jour : #01 à #04 intégrés `coached` après dépôt. #05 reste sans vidéo : l'ancienne image est rejetée et une nouvelle photo candidate a été préparée. La vidéo signalée par Yanis relevait le dos ; ne pas la réutiliser.** Le dépôt ultérieur des sources par Yanis vaut accord d'intégration après contrôle ; les réserves réelles seront conservées. Les GIF d'origine restent les replis. Aucun changement de programmation ni d'APK.
 
 ## Athlète et revue
 
@@ -16,7 +16,7 @@ Les images sont des références IA fixes, pas une preuve de mouvement, de sécu
 | 02  | `rowing-haltere-un-bras`        | 3 × 12/côté          | 2011  |  60 s | [Photo](./vague4-dos-02-rowing-haltere-un-bras.jpg)   | [Zoom](./vague4-dos-02-zoom-technique.jpg) |
 | 03  | `tirage-horizontal-a-la-poulie` | 3 × 12               | 2011  |  75 s | [Photo](./vague4-dos-03-tirage-horizontal-poulie.jpg) | [Zoom](./vague4-dos-03-zoom-technique.jpg) |
 | 04  | `tirage-vertical-prise-large`   | 4 × 10-12            | 2011  |  90 s | [Photo](./vague4-dos-04-tirage-vertical-large.jpg)    | [Zoom](./vague4-dos-04-zoom-technique.jpg) |
-| 05  | `rowing-barre-buste-penche`     | 3 × 10-12            | 2011  |  90 s | **Photo rejetée ; à refaire**                         | **Zoom rejeté**                            |
+| 05  | `rowing-barre-buste-penche`     | 3 × 10-12            | 2011  |  90 s | [Nouvelle photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) | [Nouveau zoom](./vague4-dos-05-zoom-technique-v2.jpg)                            |
 
 **Tempo `2011`** : retour excentrique 2 s, aucune pause en position étirée, tirage concentrique 1 s, contraction 1 s. Les prompts commencent en position étirée : tirer 1 s, tenir 1 s, revenir 2 s, sans pause supplémentaire. Une animation montre une répétition, pas une série entière.
 
@@ -68,9 +68,9 @@ Barre longue devant la tête, mains en pronation plus larges que les épaules, p
 Animate the supplied WIDE GRIP lat pulldown still, preserving the exact silver chrome athlete, cap, shorts, shoes, bright gym and fixed front three-quarter camera. Seated stable, feet flat and thighs held by pads. Both hands grip ONE long bar widely in an OVERHAND grip, wider than shoulder width, thumbs wrapped; ONE taut cable stays attached at the center to the overhead pulley. START with arms extended and bar above head IN FRONT of body. Pull bar to upper chest in ONE second, elbows down and back; hold ONE second; return bar upward in TWO seconds to extended arms, tempo 2011. Torso stays stable and chest open, no swinging. Never take bar behind neck, never change to parallel neutral handles, no extra arms, no text or camera movement.
 ```
 
-## #05 — Rowing barre buste penché : à refaire
+## #05 — Rowing barre buste penché : nouvelle photo, vidéo à refaire
 
-**Remarque de Yanis :** la photo précédente comporte un bras tordu et la vidéo obtenue relève le dos. Cette image et cette animation ne sont pas acceptées comme référence finale. Aucune nouvelle vidéo n'est intégrée pour #05 ; le GIF reste disponible. Les outils de génération d'image ont refusé l'accès lors de cette reprise : il faut donc produire une nouvelle photo à partir du personnage verrouillé, pas prétendre qu'elle existe déjà.
+**Remarque de Yanis :** la photo précédente comporte un bras tordu et la vidéo obtenue relève le dos. Cette image et cette animation ne sont pas acceptées comme référence finale. Aucune nouvelle vidéo n'est intégrée pour #05 ; le GIF reste disponible. Une nouvelle [photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [zoom](./vague4-dos-05-zoom-technique-v2.jpg) remplacent la référence rejetée pour la préparation. Les deux bras sont distincts ; la photo fixe ne prouve pas la stabilité du dos dans la future animation.
 
 **Posture impérative :** debout, pieds au sol, hanches en arrière, genoux légèrement fléchis, buste et dos neutres à environ **45° au-dessus du sol**. Les deux bras doivent être anatomiquement normaux, reliés aux épaules, coudes naturels et poignets droits, avec les deux mains tenant une seule barre. Pendant la répétition, **bassin, hanches, dos, torse, cou et tête conservent exactement leur angle** : seuls les épaules et les coudes se déplacent pour tirer la barre. Aucun redressement, aucune oscillation, pas de soulevé de terre.
 

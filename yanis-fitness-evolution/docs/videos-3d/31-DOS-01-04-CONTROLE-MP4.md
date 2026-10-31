@@ -20,7 +20,7 @@ Chaque fichier a été décodé intégralement : **640×480, 24 i/s, 121/121 ima
 
 Les quatre vidéos sont différentes. #01 conserve sa prise neutre et #04 sa prise pronée large. Chaque fiche dispose d'un poster, d'une notice et d'un descriptif audio propre ; les fichiers d'origine et les GIF sont conservés.
 
-**Dos #05 reste en attente.** Yanis a signalé un bras tordu et une vidéo qui redresse le dos : ne pas réutiliser la photo rejetée. La tentative de génération d'une nouvelle image a été refusée par le service ; la [fiche de production mise à jour](./30-DOS-01-05-PRODUCTION.md) contient un nouveau prompt photo et un prompt vidéo imposant un dos stable à 45°. Aucun MP4 #05 n'a été intégré.
+**Dos #05 reste en attente.** Yanis a signalé un bras tordu et une vidéo qui redresse le dos : ne pas réutiliser la photo rejetée. Une première tentative de génération avait été refusée ; une nouvelle photo candidate a depuis été préparée. La [fiche de production mise à jour](./30-DOS-01-05-PRODUCTION.md) contient un nouveau prompt photo et un prompt vidéo imposant un dos stable à 45°. Aucun MP4 #05 n'a été intégré.
 
 ## Vérifications
 
