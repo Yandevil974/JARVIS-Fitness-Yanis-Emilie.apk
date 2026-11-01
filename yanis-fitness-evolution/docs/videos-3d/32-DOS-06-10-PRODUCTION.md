@@ -1,6 +1,6 @@
 # Dos #06→#10 — kit de production partiel
 
-**État :** trois vidéos #06→#08 déposées et intégrées `coached` avec réserves ; photos #09 et #10 **à refaire** avant génération vidéo. Cinq prompts sont conservés. Les GIF d'origine restent les replis. [Contrôle des MP4](./33-DOS-06-08-CONTROLE-MP4.md). L'ancien #05 a également reçu une [nouvelle photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [prompt corrigé](./30-DOS-01-05-PRODUCTION.md).
+**État :** trois vidéos #06→#08 déposées et intégrées `coached` avec réserves ; photo #09 toujours à corriger ; nouvelle photo candidate #10 disponible dans le [lot suivant](./34-DOS-05-09-13-PRODUCTION.md). Cinq prompts sont conservés. Les GIF d'origine restent les replis. [Contrôle des MP4](./33-DOS-06-08-CONTROLE-MP4.md). L'ancien #05 a également reçu une [nouvelle photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [prompt corrigé](./30-DOS-01-05-PRODUCTION.md).
 
 [Planche #05→#08](./vague4-dos-05-08-apercu.jpg) · [Zooms #05→#08](./vague4-dos-05-08-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
@@ -10,9 +10,9 @@
 | 07 | Rowing barre buste penché, pronation | 5 × 8-10 · `3010` · 60 s | [Photo](./vague4-dos-07-rowing-pronation.jpg) · [Zoom](./vague4-dos-07-zoom-technique-v2.jpg) | Photo candidate ; MP4 intégré `coached` |
 | 08 | Rowing assis, prise neutre | 5 × 10-12 · `3010` · 60 s | [Photo](./vague4-dos-08-rowing-assis-neutre.jpg) · [Zoom](./vague4-dos-08-zoom-technique-v2.jpg) | Photo candidate ; MP4 intégré `coached` |
 | 09 | Tirage vertical prise pronation | 5 × 12-15 · `3010` · 120 s | **Photo à refaire** | Ne pas lancer la vidéo avant une référence conforme |
-| 10 | Tractions (pull-up) | 5 × 5-7 · `4210` · 90 s | **Photo à refaire** | Pause 2 s en bas ; alternative : tirage vertical |
+| 10 | Tractions (pull-up) | 5 × 5-7 · `4210` · 90 s | [Nouvelle photo candidate](./vague4-dos-10-tractions-pull-up-v2.jpg) | Pause 2 s en bas ; alternative : tirage vertical |
 
-Les photos sont des références IA fixes, non des preuves de mouvement. #06 et #07 sont des variantes proches du #05 mais possèdent des tempos et programmations différents ; produire des vidéos distinctes, sans prétendre que leurs répétitions ou leurs charges sont identiques. Pour #08, le câble et la poignée doivent rester raccordés et dégagés : la photo ne garantit pas cette continuité sur un MP4. Pour #09 et #10, les premières images ont été écartées car les bras n'étaient pas assez tendus au départ. La limite de génération de ce tour a empêché de les corriger ; elles ne sont pas proposées comme prêtes.
+Les photos sont des références IA fixes, non des preuves de mouvement. #06 et #07 sont des variantes proches du #05 mais possèdent des tempos et programmations différents ; produire des vidéos distinctes, sans prétendre que leurs répétitions ou leurs charges sont identiques. Pour #08, le câble et la poignée doivent rester raccordés et dégagés : la photo ne garantit pas cette continuité sur un MP4. Pour #09 et #10, les premières images ont été écartées car les bras n'étaient pas assez tendus au départ. Une nouvelle candidate #10 bras tendus a depuis été préparée ; #09 reste à corriger.
 
 ## Tempo
 
@@ -60,11 +60,11 @@ Animate the exact supplied SEATED NEUTRAL-GRIP CABLE ROW still: same chrome athl
 Animate the supplied CORRECT start photo of the chrome athlete seated at a lat pulldown. Both arms start extended overhead, both hands hold ONE long bar in fixed overhand PRONATED grip, thumbs wrapped, one cable taut to the top pulley. Feet stay flat, thighs supported, torso upright and stable. Pull the bar IN FRONT of the head to the upper chest in ONE second by drawing the elbows down; immediately return overhead in THREE seconds. Tempo 3010, no pauses. Never pull behind the neck, never switch to a neutral V grip, no swinging, no twisted limbs or changing hand position, no text or camera motion.
 ```
 
-## #10 — Tractions pull-up : photo à refaire
+## #10 — Tractions pull-up : nouvelle photo candidate
 
-**Ne pas lancer l'animation avant d'avoir une photo correcte.** Départ suspendu à une barre fixe, mains en pronation, **bras tendus et pieds décollés**. Pause 2 s en bas, montée jusqu'au menton au-dessus de la barre, retour contrôlé 4 s. Alternative de la fiche : tirage vertical.
+[Nouvelle photo candidate #10](./vague4-dos-10-tractions-pull-up-v2.jpg). Départ suspendu à une barre fixe, mains en pronation, **bras tendus et pieds décollés**. Pause 2 s en bas, montée jusqu'au menton au-dessus de la barre, retour contrôlé 4 s. Alternative de la fiche : tirage vertical.
 
-**Prompt vidéo prêt pour la future photo #10 :**
+**Prompt vidéo pour la nouvelle photo #10 (prévoir au moins 7 s) :**
 
 ```text
 Animate the supplied CORRECT full-extension pull-up start photo. Same chrome athlete, cap, shorts and shoes, camera fixed, full body visible. Hang from ONE fixed overhead bar with both hands in pronated overhand grip, feet off the floor and BOTH ELBOWS STRAIGHT. Pause in this bottom position for TWO seconds. Pull upward in ONE second until the CHIN clears the bar, without kicking or swinging. Immediately lower in FOUR seconds to the same full arm extension and bottom position. Tempo 4210, no top pause, one complete repetition. Bar and grip remain fixed, no cable machine, no standing on floor, no floating or twisted limbs, no text or camera movement.
@@ -72,4 +72,4 @@ Animate the supplied CORRECT full-extension pull-up start photo. Same chrome ath
 
 ## À réception
 
-Les photos #09/#10 restent à corriger. Les sources #06→#08 sont intégrées `coached` avec réserves : voir le contrôle. Les futures sources #09/#10 seront contrôlées avant intégration. Le dépôt par Yanis vaut accord d'intégration, sans nouvelle demande. Aucun statut n'est attribué aux vidéos absentes.
+La photo #09 reste à corriger ; une nouvelle photo candidate #10 est disponible. Les sources #06→#08 sont intégrées `coached` avec réserves : voir le contrôle. Les futures sources #09/#10 seront contrôlées avant intégration. Le dépôt par Yanis vaut accord d'intégration, sans nouvelle demande. Aucun statut n'est attribué aux vidéos absentes.
