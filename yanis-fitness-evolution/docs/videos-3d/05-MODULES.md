@@ -131,7 +131,8 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    signale un bras tordu et un redressement du dos : une nouvelle photo candidate
    et un prompt corrigé sont disponibles dans `30-DOS-01-05-PRODUCTION.md` ;
    aucun MP4 #05 intégré. Le lot #06→#10 est préparé partiellement dans
-   `32-DOS-06-10-PRODUCTION.md` : photos #06→#08 disponibles, #09/#10 à refaire.
+   `32-DOS-06-10-PRODUCTION.md` : #06→#08 intégrés `coached` avec réserves
+   dans `33-DOS-06-08-CONTROLE-MP4.md`, photos #09/#10 à refaire.
    Le dépôt de Yanis vaut accord d'intégration après contrôle, avec les réserves nécessaires.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

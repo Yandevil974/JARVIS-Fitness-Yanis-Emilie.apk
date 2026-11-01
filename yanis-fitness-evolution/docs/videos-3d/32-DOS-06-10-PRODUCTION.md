@@ -1,14 +1,14 @@
 # Dos #06→#10 — kit de production partiel
 
-**État :** trois photos candidates et zooms disponibles pour #06→#08 ; photos #09 et #10 **à refaire** avant génération vidéo. Cinq prompts sont préparés. Aucun MP4 de ce lot n'est intégré ; les GIF d'origine restent les replis. L'ancien #05 a également reçu une [nouvelle photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [prompt corrigé](./30-DOS-01-05-PRODUCTION.md).
+**État :** trois vidéos #06→#08 déposées et intégrées `coached` avec réserves ; photos #09 et #10 **à refaire** avant génération vidéo. Cinq prompts sont conservés. Les GIF d'origine restent les replis. [Contrôle des MP4](./33-DOS-06-08-CONTROLE-MP4.md). L'ancien #05 a également reçu une [nouvelle photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [prompt corrigé](./30-DOS-01-05-PRODUCTION.md).
 
 [Planche #05→#08](./vague4-dos-05-08-apercu.jpg) · [Zooms #05→#08](./vague4-dos-05-08-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
 | # | Exercice | Programmation exacte | Photo et zoom | État |
 |---|---|---|---|---|
-| 06 | Rowing barre buste penché — test | 5 × 3-5 · `3011` · 180 s | [Photo](./vague4-dos-06-rowing-test.jpg) · [Zoom](./vague4-dos-06-zoom-technique-v2.jpg) | Photo candidate ; MP4 à produire |
-| 07 | Rowing barre buste penché, pronation | 5 × 8-10 · `3010` · 60 s | [Photo](./vague4-dos-07-rowing-pronation.jpg) · [Zoom](./vague4-dos-07-zoom-technique-v2.jpg) | Photo candidate ; MP4 à produire |
-| 08 | Rowing assis, prise neutre | 5 × 10-12 · `3010` · 60 s | [Photo](./vague4-dos-08-rowing-assis-neutre.jpg) · [Zoom](./vague4-dos-08-zoom-technique-v2.jpg) | Photo candidate ; MP4 à produire |
+| 06 | Rowing barre buste penché — test | 5 × 3-5 · `3011` · 180 s | [Photo](./vague4-dos-06-rowing-test.jpg) · [Zoom](./vague4-dos-06-zoom-technique-v2.jpg) | Photo candidate ; MP4 intégré `coached` |
+| 07 | Rowing barre buste penché, pronation | 5 × 8-10 · `3010` · 60 s | [Photo](./vague4-dos-07-rowing-pronation.jpg) · [Zoom](./vague4-dos-07-zoom-technique-v2.jpg) | Photo candidate ; MP4 intégré `coached` |
+| 08 | Rowing assis, prise neutre | 5 × 10-12 · `3010` · 60 s | [Photo](./vague4-dos-08-rowing-assis-neutre.jpg) · [Zoom](./vague4-dos-08-zoom-technique-v2.jpg) | Photo candidate ; MP4 intégré `coached` |
 | 09 | Tirage vertical prise pronation | 5 × 12-15 · `3010` · 120 s | **Photo à refaire** | Ne pas lancer la vidéo avant une référence conforme |
 | 10 | Tractions (pull-up) | 5 × 5-7 · `4210` · 90 s | **Photo à refaire** | Pause 2 s en bas ; alternative : tirage vertical |
 
@@ -72,4 +72,4 @@ Animate the supplied CORRECT full-extension pull-up start photo. Same chrome ath
 
 ## À réception
 
-Les photos #09/#10 restent à corriger. Les cinq sources vidéo futures seront contrôlées sur toute la durée avant intégration, avec les réserves réellement constatées. Le dépôt par Yanis vaut accord d'intégration, sans nouvelle demande. Aucun statut `coached` ou `validated` n'est attribué avant réception.
+Les photos #09/#10 restent à corriger. Les sources #06→#08 sont intégrées `coached` avec réserves : voir le contrôle. Les futures sources #09/#10 seront contrôlées avant intégration. Le dépôt par Yanis vaut accord d'intégration, sans nouvelle demande. Aucun statut n'est attribué aux vidéos absentes.

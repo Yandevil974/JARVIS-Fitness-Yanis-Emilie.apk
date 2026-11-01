@@ -1034,7 +1034,7 @@ export const EXERCISE_VIDEOS = {
   },
 
   // ---- Dos #01 à #04 : vidéos déposées par Yanis, avec consignes ----
-  // #05 : vidéo non fournie ; nouvelle image et prompt corrigé en préparation.
+  // #05 : aucune nouvelle vidéo distincte fournie ; GIF conservé.
   "tirage-vertical-prise-neutre": {
     src: "/videos/tirage-vertical-prise-neutre.mp4",
     poster: "/videos/posters/tirage-vertical-prise-neutre.jpg",
@@ -1106,6 +1106,60 @@ export const EXERCISE_VIDEOS = {
         "La barre descend bas sur le buste et la pause visible est prolongée. Ne copiez ni cette amplitude ni la vitesse : arrêtez au haut de la poitrine et suivez le tempo 2011.",
       spoken:
         "Tirage vertical en prise large. Asseyez-vous, pieds au sol et cuisses maintenues, poitrine ouverte. Tenez la barre en pronation avec les mains plus larges que les épaules et les pouces enroulés. Gardez le buste stable. Tirez la barre devant la tête vers le haut de la poitrine en une seconde, coudes vers le bas et l'arrière. Maintenez une seconde, puis remontez la barre en deux secondes jusqu'aux bras allongés. Ne tirez pas derrière la nuque et ne copiez pas la descente trop basse ni la pause prolongée de la vidéo. Quatre séries de dix à douze, tempo 2011 et quatre-vingt-dix secondes de repos.",
+    },
+  },
+  // Dos #06 à #08 : sources déposées et contrôlées, avec réserves.
+  "rowing-barre-buste-penche-test-3-5-reps": {
+    src: "/videos/rowing-barre-buste-penche-test-3-5-reps.mp4",
+    poster: "/videos/posters/rowing-barre-buste-penche-test-3-5-reps.jpg",
+    label: "Vidéo IA · Rowing test, buste fixe et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le buste incliné et fixe, sans vous redresser pendant le tirage.",
+      handCue:
+        "Deux mains en pronation sur une barre, poignets neutres et bras naturels.",
+      movementCue:
+        "Tirez vers le nombril en une seconde, maintenez une seconde puis redescendez en trois secondes.",
+      notice:
+        "Le buste se redresse pendant le tirage et le tempo n'est pas fidèlement démontré. Ne copiez ni le redressement ni la vitesse : gardez le dos neutre et le buste incliné stable.",
+      spoken:
+        "Rowing barre buste penché, test de trois à cinq répétitions. Pieds ancrés, genoux souples, hanches en arrière et dos neutre, gardez le buste incliné stable pendant toute la répétition. Ne reproduisez pas le redressement visible dans la vidéo et n'utilisez pas d'élan. Les deux mains tiennent la barre en pronation. Tirez vers le nombril en une seconde, maintenez une seconde, puis redescendez en trois secondes sans pause en bas. Choisissez une charge maîtrisable, sans compromettre la posture. Cinq séries de trois à cinq, tempo 3011, cent quatre-vingts secondes de repos.",
+    },
+  },
+  "rowing-barre-buste-penche-pronation": {
+    src: "/videos/rowing-barre-buste-penche-pronation.mp4",
+    poster: "/videos/posters/rowing-barre-buste-penche-pronation.jpg",
+    label: "Vidéo IA · Rowing pronation, buste fixe et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Gardez le buste incliné et fixe, les mains en pronation.",
+      handCue:
+        "Deux mains en pronation sur une seule barre, poignets neutres et bras naturels.",
+      movementCue:
+        "Tirez vers le nombril en une seconde puis redescendez en trois secondes sans pause.",
+      notice:
+        "Le buste se redresse pendant le tirage et une pause apparaît en haut. Ne copiez ni le redressement ni la pause : gardez le buste incliné fixe et suivez le tempo 3010.",
+      spoken:
+        "Rowing barre buste penché en pronation. Pieds stables, genoux souples et hanches en arrière, maintenez le dos neutre et le buste incliné fixe, sans vous redresser ni balancer les reins. Ne copiez pas le redressement visible de la vidéo. Avec les deux mains en pronation, tirez vers le nombril en une seconde puis redescendez en trois secondes sans pause en haut ni en bas. Ne copiez pas la pause de la vidéo. Cinq séries de huit à dix, tempo 3010, soixante secondes de repos.",
+    },
+  },
+  "rowing-assis-prise-neutre": {
+    src: "/videos/rowing-assis-prise-neutre.mp4",
+    poster: "/videos/posters/rowing-assis-prise-neutre.jpg",
+    label: "Vidéo IA · Rowing assis neutre, prise et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Buste droit et fixe, tirez la poignée vers le ventre, paumes face à face.",
+      handCue:
+        "Poignée neutre tenue à deux mains, paumes face à face ; câble relié et dégagé des appuis.",
+      movementCue:
+        "Tirez en une seconde puis tendez les bras en trois secondes sans pause.",
+      notice:
+        "La vidéo marque une pause en contraction ; la forme de la poignée et la continuité des mains et du câble ne sont pas toujours faciles à vérifier. Gardez la prise neutre et suivez le tempo 3010 sans pause.",
+      spoken:
+        "Rowing assis en prise neutre. Pieds sur les appuis, genoux souples, dos neutre et buste droit stable. Tenez la poignée à deux mains, paumes face à face, câble relié et dégagé des pieds. Tirez vers le ventre en une seconde, coudes près du corps, puis tendez les bras en trois secondes sans pause en haut ni en bas. Ne copiez pas la pause de la vidéo. Cinq séries de dix à douze, tempo 3010, soixante secondes de repos.",
     },
   },
 };
