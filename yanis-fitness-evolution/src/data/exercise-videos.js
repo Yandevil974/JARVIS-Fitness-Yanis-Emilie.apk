@@ -1034,7 +1034,6 @@ export const EXERCISE_VIDEOS = {
   },
 
   // ---- Dos #01 à #04 : vidéos déposées par Yanis, avec consignes ----
-  // #05 : aucune nouvelle vidéo distincte fournie ; GIF conservé.
   "tirage-vertical-prise-neutre": {
     src: "/videos/tirage-vertical-prise-neutre.mp4",
     poster: "/videos/posters/tirage-vertical-prise-neutre.jpg",
@@ -1160,6 +1159,113 @@ export const EXERCISE_VIDEOS = {
         "La vidéo marque une pause en contraction ; la forme de la poignée et la continuité des mains et du câble ne sont pas toujours faciles à vérifier. Gardez la prise neutre et suivez le tempo 3010 sans pause.",
       spoken:
         "Rowing assis en prise neutre. Pieds sur les appuis, genoux souples, dos neutre et buste droit stable. Tenez la poignée à deux mains, paumes face à face, câble relié et dégagé des pieds. Tirez vers le ventre en une seconde, coudes près du corps, puis tendez les bras en trois secondes sans pause en haut ni en bas. Ne copiez pas la pause de la vidéo. Cinq séries de dix à douze, tempo 3010, soixante secondes de repos.",
+    },
+  },
+  // Dos #05 et #09 à #13 : six sources déposées, avec réserves.
+  "rowing-barre-buste-penche": {
+    src: "/videos/rowing-barre-buste-penche.mp4",
+    poster: "/videos/posters/rowing-barre-buste-penche.jpg",
+    label: "Vidéo IA · Rowing barre, buste fixe prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez le buste incliné à 45 degrés et immobile sans vous redresser.",
+      handCue:
+        "Deux mains en pronation sur une barre, bras naturels et poignets neutres.",
+      movementCue:
+        "Tirez vers le nombril en une seconde, maintenez une seconde, puis descendez en deux secondes.",
+      notice:
+        "La vidéo déposée est identique au rowing pronation numéro 7 et le buste se redresse au tirage. Ce défaut signalé n'est pas corrigé : ne le reproduisez pas ; maintenez le dos neutre et le buste fixe à 45 degrés.",
+      spoken:
+        "Rowing barre buste penché. Pieds ancrés, genoux souples, hanches en arrière et dos neutre, maintenez le buste incliné à quarante-cinq degrés et immobile pendant toute la répétition. La vidéo redresse le buste : ne reproduisez pas ce défaut. Tenez la barre à deux mains, bras naturels et poignets neutres. Tirez vers le nombril en une seconde, maintenez une seconde, puis descendez en deux secondes, sans élan et sans pause en bas. Trois séries de dix à douze, tempo 2011, quatre-vingt-dix secondes de repos.",
+    },
+  },
+  "tirage-vertical-prise-pronation": {
+    src: "/videos/tirage-vertical-prise-pronation.mp4",
+    poster: "/videos/posters/tirage-vertical-prise-pronation.jpg",
+    label: "Vidéo IA · Tirage pronation, amplitude et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Partez bras tendus et tirez la barre devant la tête vers le haut de la poitrine.",
+      handCue:
+        "Une barre en pronation tenue à deux mains, câble relié et cuisses maintenues.",
+      movementCue:
+        "Tirez en une seconde puis remontez en trois secondes sans pause, buste droit.",
+      notice:
+        "Les bras commencent fléchis et la continuité du câble et de la barre est difficile à vérifier pendant le mouvement. Ne copiez pas ce départ : allongez les bras, gardez la barre devant la tête et suivez le tempo 3010.",
+      spoken:
+        "Tirage vertical en pronation. Asseyez-vous, pieds au sol, cuisses maintenues, poitrine ouverte et buste droit stable. Les deux mains tiennent la barre en pronation. Partez bras tendus, contrairement au départ fléchi de la vidéo. Tirez devant la tête vers le haut de la poitrine en une seconde, coudes vers le bas, puis remontez en trois secondes jusqu'aux bras allongés sans pause. Gardez la barre et le câble reliés et ne tirez jamais derrière la nuque. Cinq séries de douze à quinze, tempo 3010, cent vingt secondes de repos.",
+    },
+  },
+  "tractions-pull-up": {
+    src: "/videos/tractions-pull-up.mp4",
+    poster: "/videos/posters/tractions-pull-up.jpg",
+    label: "Vidéo IA · Tractions pronation, pause et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Suspendez-vous bras tendus et marquez deux secondes en bas.",
+      handCue: "Deux mains en pronation sur une barre stable, pieds décollés.",
+      movementCue:
+        "Pause de deux secondes en bas, montez en une seconde puis descendez en quatre secondes.",
+      notice:
+        "La vidéo dure environ cinq secondes : elle ne peut pas démontrer fidèlement le cycle de sept secondes demandé. L'angle ne permet pas de confirmer le passage du menton au-dessus de la barre. Suivez le tempo et ne copiez pas la vitesse.",
+      spoken:
+        "Tractions en pronation. Saisissez une barre stable à deux mains et suspendez-vous, pieds décollés et bras tendus. Marquez une pause de deux secondes en bas, montez en une seconde jusqu'à amener le menton au-dessus de la barre si votre amplitude le permet, puis descendez en quatre secondes sans balancer. La vidéo est trop courte pour montrer fidèlement ce cycle et l'angle ne permet pas de vérifier la hauteur du menton. Tempo 4210, cinq séries de cinq à sept, quatre-vingt-dix secondes de repos. Le tirage vertical est l'alternative prévue.",
+    },
+  },
+  "tractions-prise-neutre-chin-up": {
+    src: "/videos/tractions-prise-neutre-chin-up.mp4",
+    poster: "/videos/posters/tractions-prise-neutre-chin-up.jpg",
+    label: "Vidéo IA · Tractions neutres, prise et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Utilisez deux poignées parallèles, paumes face à face, et une pause en bas.",
+      handCue:
+        "Une poignée parallèle dans chaque main, paumes face à face, prises fixes et stables.",
+      movementCue:
+        "Bras tendus en bas, pause deux secondes, montée une seconde, descente quatre secondes.",
+      notice:
+        "La prise montrée ne démontre pas clairement deux poignées parallèles paumes face à face ; la vidéo est trop courte pour le tempo 4210. Ne copiez ni la prise ambiguë ni la vitesse : utilisez une vraie prise neutre.",
+      spoken:
+        "Tractions prise neutre. Utilisez deux poignées parallèles stables, une dans chaque main, paumes face à face ; la prise de la vidéo n'est pas assez claire, ne la copiez pas. Suspendez-vous bras tendus et pieds décollés. Marquez deux secondes en bas, montez en une seconde en amenant le menton au-dessus des poignées si possible, puis descendez en quatre secondes sans élan. La vidéo est trop courte pour ce tempo 4210. Cinq séries de cinq à sept, quatre-vingt-dix secondes de repos ; le tirage vertical neutre est l'alternative prévue.",
+    },
+  },
+  "rowing-haltere-un-bras-coude-ouvert": {
+    src: "/videos/rowing-haltere-un-bras-coude-ouvert.mp4",
+    poster: "/videos/posters/rowing-haltere-un-bras-coude-ouvert.jpg",
+    label: "Vidéo IA · Rowing un bras, coude ouvert et posture prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Ouvrez le coude sur le côté sans le forcer trop haut, bassin immobile.",
+      handCue:
+        "Un haltère dans la main libre ; l'autre main et le genou du même côté reposent sur le banc.",
+      movementCue:
+        "Tirez en une seconde coude ouvert confortablement, puis redescendez en quatre secondes sans pause.",
+      notice:
+        "La vidéo est identique au rowing un bras numéro 2 : elle déforme le bras, monte le coude excessivement et ne démontre pas clairement cette variante coude ouvert. Ne copiez pas la déformation ; gardez l'haltère dégagé du banc et le bassin stable.",
+      spoken:
+        "Rowing haltère un bras, coude ouvert. Posez une main et le genou du même côté sur le banc, l'autre pied au sol. Dos neutre et bassin immobile, tenez un haltère de la main libre. Tirez en une seconde en ouvrant confortablement le coude sur le côté et en rapprochant l'omoplate, sans forcer le coude trop haut. Redescendez en quatre secondes, sans pause et sans rotation. La vidéo déforme le bras et ne montre pas clairement cette variante : ne copiez pas ces défauts, gardez l'haltère dégagé du banc. Quatre séries de huit à dix, tempo 4010, quatre-vingt-dix secondes de repos.",
+    },
+  },
+  "rowing-barre-ez-supination-buste-penche": {
+    src: "/videos/rowing-barre-ez-supination-buste-penche.mp4",
+    poster: "/videos/posters/rowing-barre-ez-supination-buste-penche.jpg",
+    label: "Vidéo IA · Rowing EZ, supination et buste fixe prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez la prise en supination et le buste incliné sans vous redresser.",
+      handCue:
+        "Une barre EZ tenue à deux mains en supination, paumes vers l'avant au départ et pouces enroulés.",
+      movementCue:
+        "Tirez vers le nombril en une seconde puis descendez en trois secondes sans pause.",
+      notice:
+        "La supination des mains est peu lisible, le buste se relève au tirage et la vidéo marque une pause. Ne copiez pas ces défauts : prenez la barre EZ en supination, restez incliné et suivez le tempo 3010.",
+      spoken:
+        "Rowing barre EZ en supination, buste penché. Pieds stables, genoux souples, hanches en arrière, gardez le dos neutre et le buste incliné immobile. Tenez la barre EZ à deux mains en supination, paumes vers l'avant au départ ; la prise est peu lisible sur la vidéo. Ne copiez pas le redressement visible. Tirez vers le nombril en une seconde puis descendez en trois secondes sans pause. Quatre séries de huit à dix, tempo 3010, soixante-quinze secondes de repos.",
     },
   },
 };

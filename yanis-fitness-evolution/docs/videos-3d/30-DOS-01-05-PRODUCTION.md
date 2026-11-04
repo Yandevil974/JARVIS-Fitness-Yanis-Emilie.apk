@@ -1,6 +1,6 @@
 # Dos #01→#05 — kit de production vidéo
 
-**Mise à jour : #01 à #04 intégrés `coached` après dépôt. #05 reste sans vidéo : l'ancienne image est rejetée et une nouvelle photo candidate a été préparée. La vidéo signalée par Yanis relevait le dos ; ne pas la réutiliser.** Le dépôt ultérieur des sources par Yanis vaut accord d'intégration après contrôle ; les réserves réelles seront conservées. Les GIF d'origine restent les replis. Aucun changement de programmation ni d'APK.
+**Mise à jour : #01 à #05 intégrés `coached` après dépôt. Le nouveau MP4 #05 est identique au #07 et relève encore le buste : le défaut signalé par Yanis n'est pas corrigé. Voir [contrôle](./35-DOS-05-09-13-CONTROLE-MP4.md).** Le dépôt ultérieur des sources par Yanis vaut accord d'intégration après contrôle ; les réserves réelles seront conservées. Les GIF d'origine restent les replis. Aucun changement de programmation ni d'APK.
 
 ## Athlète et revue
 
@@ -68,9 +68,9 @@ Barre longue devant la tête, mains en pronation plus larges que les épaules, p
 Animate the supplied WIDE GRIP lat pulldown still, preserving the exact silver chrome athlete, cap, shorts, shoes, bright gym and fixed front three-quarter camera. Seated stable, feet flat and thighs held by pads. Both hands grip ONE long bar widely in an OVERHAND grip, wider than shoulder width, thumbs wrapped; ONE taut cable stays attached at the center to the overhead pulley. START with arms extended and bar above head IN FRONT of body. Pull bar to upper chest in ONE second, elbows down and back; hold ONE second; return bar upward in TWO seconds to extended arms, tempo 2011. Torso stays stable and chest open, no swinging. Never take bar behind neck, never change to parallel neutral handles, no extra arms, no text or camera movement.
 ```
 
-## #05 — Rowing barre buste penché : nouvelle photo, vidéo à refaire
+## #05 — Rowing barre buste penché : photo et vidéo avec réserve
 
-**Remarque de Yanis :** la photo précédente comporte un bras tordu et la vidéo obtenue relève le dos. Cette image et cette animation ne sont pas acceptées comme référence finale. Aucune nouvelle vidéo n'est intégrée pour #05 ; le GIF reste disponible. Une nouvelle [photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [zoom](./vague4-dos-05-zoom-technique-v2.jpg) remplacent la référence rejetée pour la préparation. Les deux bras sont distincts ; la photo fixe ne prouve pas la stabilité du dos dans la future animation.
+**Remarque de Yanis :** la photo précédente comporte un bras tordu et la vidéo obtenue relève le dos. Cette image et cette animation ne sont pas acceptées comme référence finale. Une vidéo #05 a depuis été déposée et intégrée avec avertissement ; elle redresse toujours le buste et est identique à #07. Le GIF reste disponible. Une nouvelle [photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [zoom](./vague4-dos-05-zoom-technique-v2.jpg) remplacent la référence rejetée pour la préparation. Les deux bras sont distincts ; la photo fixe ne prouve pas la stabilité du dos dans la future animation.
 
 **Posture impérative :** debout, pieds au sol, hanches en arrière, genoux légèrement fléchis, buste et dos neutres à environ **45° au-dessus du sol**. Les deux bras doivent être anatomiquement normaux, reliés aux épaules, coudes naturels et poignets droits, avec les deux mains tenant une seule barre. Pendant la répétition, **bassin, hanches, dos, torse, cou et tête conservent exactement leur angle** : seuls les épaules et les coudes se déplacent pour tirer la barre. Aucun redressement, aucune oscillation, pas de soulevé de terre.
 
@@ -88,7 +88,7 @@ Create ONE still instructional fitness image using the provided locked character
 Animate the EXACT same athlete and camera in the supplied CORRECT bent-over barbell-row start image. The athlete is already hinged forward at 45 DEGREES ABOVE THE FLOOR. LOCK THE ENTIRE TORSO AND HIP ANGLE for EVERY FRAME: hips stay back, pelvis does not rotate, chest and shoulders do not rise, neutral straight back remains at the SAME 45-degree angle, head and neck remain aligned, knees and planted feet remain still. The upper body NEVER stands up, never rocks, never performs a deadlift. Start with both naturally shaped arms hanging beneath the shoulders and both hands holding ONE straight barbell in overhand grip. Pull the bar close to the legs toward the navel in ONE second by bending BOTH elbows and drawing them back; hold ONE second; lower the bar in TWO seconds by extending the elbows. Tempo 2011, one complete repetition. Only the arms and shoulder blades move; no torso extension, no hip extension, no lumbar swing. Preserve anatomically normal upper arms, elbows, forearms, wrists and hands throughout: no twisting, dislocation, backward bending, extra limbs or changing grip. No camera movement, no text, no logo.
 ```
 
-À réception, vérifier le corps entier pendant toute la vidéo et rejeter un redressement même bref, un bras tordu ou une barre traversant le corps. Le dépôt par Yanis vaut accord d'intégration ; seule une source contrôlée sera ajoutée avec les réserves réelles.
+Contrôler le corps entier pour tout redressement, bras tordu ou barre traversant le corps. La source déposée redresse le buste ; elle est intégrée `coached` avec cette réserve, et ne doit pas être présentée comme corrigée.
 
 ## Références de geste
 
@@ -99,4 +99,4 @@ Animate the EXACT same athlete and camera in the supplied CORRECT bent-over barb
 
 ## À réception
 
-Identifier chaque source par le geste et le hash, décoder toutes les images, examiner au moins huit instants et les zooms mains/câbles/appuis. Vérifier les cinq sources distinctes, le tempo, la prise et la stabilité, puis intégrer après dépôt selon le contrôle réel : `coached` avec notice et descriptif vocal pour toute réserve ; `validated` seulement si réellement vérifié. Conserver GIF, sources et lots antérieurs. Les fiches #01 à #04 sont intégrées ; #05 reste sans vidéo jusqu'à réception d'une source corrigée.
+Identifier chaque source par le geste et le hash, décoder toutes les images, examiner au moins huit instants et les zooms mains/câbles/appuis. Vérifier les cinq sources distinctes, le tempo, la prise et la stabilité, puis intégrer après dépôt selon le contrôle réel : `coached` avec notice et descriptif vocal pour toute réserve ; `validated` seulement si réellement vérifié. Conserver GIF, sources et lots antérieurs. Les fiches #01 à #05 sont intégrées `coached` ; la source #05 déposée conserve le redressement signalé et ce défaut reste à corriger.

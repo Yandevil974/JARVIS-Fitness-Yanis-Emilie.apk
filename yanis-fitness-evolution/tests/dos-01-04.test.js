@@ -64,5 +64,5 @@ test("dos #01 à #04 : sources, copies, GIF et consignes accompagnées", () => {
     videoFor("tirage-vertical-prise-large").coaching.spoken,
     /derrière la nuque/i,
   );
-  assert.equal(videoFor("rowing-barre-buste-penche"), null);
+  assert.equal(videoFor("rowing-barre-buste-penche").status, "coached");
 });

@@ -67,10 +67,5 @@ test("dos #06 à #08 : sources distinctes, copies, GIF, programmation et consign
     }
     assert.equal(sha(`public${v.poster}`), sha(`release${v.poster}`));
   }
-  for (const id of [
-    "rowing-barre-buste-penche",
-    "tirage-vertical-prise-pronation",
-    "tractions-pull-up",
-  ])
-    assert.equal(videoFor(id), null);
+  assert.equal(videoFor("rowing-barre-buste-penche").status, "coached");
 });

@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("dos #06 à #08 : vidéos accompagnées et #05 toujours sur son GIF", async ({
+test("dos #06 à #08 : vidéos accompagnées et #05 est accompagné", async ({
   page,
 }) => {
   const errors = [];
@@ -66,10 +66,12 @@ test("dos #06 à #08 : vidéos accompagnées et #05 toujours sur son GIF", async
     .getByRole("button", { name: `Démonstration ${name}`, exact: true })
     .click();
   const dialog = page.getByRole("dialog", { name, exact: true });
-  await expect(dialog.locator(".movement-video")).toHaveCount(0);
-  await expect(dialog.locator(".movement-media")).toHaveAttribute(
+  await expect(dialog.locator(".movement-video")).toHaveAttribute(
     "src",
-    "/media/f00bd9ef43286ee0.gif",
+    "/videos/rowing-barre-buste-penche.mp4",
+  );
+  await expect(dialog.locator(".movement-coaching-note")).toContainText(
+    /buste se redresse/i,
   );
   expect(errors).toEqual([]);
 });

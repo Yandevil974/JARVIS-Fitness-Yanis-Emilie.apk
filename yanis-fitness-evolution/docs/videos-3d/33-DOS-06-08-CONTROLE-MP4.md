@@ -1,6 +1,6 @@
 # Dos #06→#08 — contrôle des vidéos déposées
 
-Dépôt `3271978` : trois fichiers attribués aux photos de départ #06, #07 et #08, respectivement ; le rapprochement visuel de la première image et des références confirme ces attributions. **Aucune source distincte pour #05** n'a été déposée dans ce lot : son GIF reste le repli. Les trois vidéos du lot sont intégrées `coached` avec leurs notices et voix ; ce statut ne valide pas les défauts observés. Les GIF et sources sont conservés.
+Dépôt `3271978` : trois fichiers attribués aux photos de départ #06, #07 et #08, respectivement ; le rapprochement visuel de la première image et des références confirme ces attributions. **Aucune source distincte pour #05** n'a été déposée dans ce lot : son GIF reste le repli. Un dépôt ultérieur a fourni une source #05 identique à #07 ; voir [contrôle](./35-DOS-05-09-13-CONTROLE-MP4.md). Les trois vidéos du lot sont intégrées `coached` avec leurs notices et voix ; ce statut ne valide pas les défauts observés. Les GIF et sources sont conservés.
 
 | # | Source | SHA-256 (identique aux copies public et release) | Réserves | Contrôle visuel |
 |---|---|---|---|---|

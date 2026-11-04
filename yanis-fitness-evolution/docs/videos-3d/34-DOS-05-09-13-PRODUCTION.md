@@ -2,6 +2,8 @@
 
 [Planche du lot](./vague4-dos-05-09-13-lot.jpg) · [Planche des zooms](./vague4-dos-05-09-13-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
+**Mise à jour :** les six vidéos déposées sont intégrées `coached` avec réserves ; [voir le contrôle](./35-DOS-05-09-13-CONTROLE-MP4.md). Les photos ci-dessous restent les références historiques de préparation.
+
 **Le #05 est bien inclus dans ce lot** : c'est la photo corrigée v4 déjà préparée précédemment, pas une nouvelle modification faite après le dernier échange. Le buste reste incliné dans le prompt vidéo, mais une image fixe ne peut prouver la stabilité du buste dans la future vidéo. Le #10 a une nouvelle photo, avec les bras tendus et les pieds décollés.
 
 | # | Exercice | Photo · zoom | État et programmation |
@@ -13,7 +15,7 @@
 | 12 | Rowing haltère un bras, coude ouvert | [Photo](./vague4-dos-12-rowing-un-bras-coude-ouvert.jpg) · [Zoom](./vague4-dos-12-zoom-lot-suivant.jpg) | Candidate ; 4 × 8–10 · 4010 · 90 s. |
 | 13 | Rowing barre EZ supination | [Essai](./vague4-dos-13-rowing-ez-supination-v2.jpg) · [Zoom](./vague4-dos-13-zoom-lot-suivant.jpg) | **À corriger avant animation** : supination des deux mains peu lisible. 4 × 8–10 · 3010 · 75 s. |
 
-Ces images fixes sont des candidates IA, pas des vidéos validées. #09, #11 et #13 sont montrés pour transparence mais ne sont pas des références conformes à animer. Les corrections d'images ont été tentées ; les prises et l'extension ne sont pas assez claires. Les prompts ci-dessous sont conservés pour utilisation avec les images conformes. Aucun MP4 de ces exercices n'est intégré à ce stade ; les GIF restent disponibles.
+Ces images fixes sont des candidates IA, pas des vidéos validées. #09, #11 et #13 sont montrés pour transparence mais ne sont pas des références conformes à animer. Les corrections d'images ont été tentées ; les prises et l'extension ne sont pas assez claires. Les prompts ci-dessous sont conservés pour utilisation avec les images conformes. Les MP4 déposés ont depuis été intégrés `coached` avec leurs défauts décrits au contrôle ; les GIF restent disponibles.
 
 ## #05 — Rowing barre, dos fixe (photo corrigée v4)
 

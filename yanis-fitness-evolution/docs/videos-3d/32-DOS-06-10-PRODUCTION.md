@@ -1,6 +1,6 @@
 # Dos #06→#10 — kit de production partiel
 
-**État :** trois vidéos #06→#08 déposées et intégrées `coached` avec réserves ; photo #09 toujours à corriger ; nouvelle photo candidate #10 disponible dans le [lot suivant](./34-DOS-05-09-13-PRODUCTION.md). Cinq prompts sont conservés. Les GIF d'origine restent les replis. [Contrôle des MP4](./33-DOS-06-08-CONTROLE-MP4.md). L'ancien #05 a également reçu une [nouvelle photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [prompt corrigé](./30-DOS-01-05-PRODUCTION.md).
+**État historique du kit :** trois vidéos #06→#08 déposées et intégrées `coached` avec réserves ; photo #09 toujours à corriger ; nouvelle photo candidate #10 disponible dans le [lot suivant](./34-DOS-05-09-13-PRODUCTION.md). Depuis, #05 et #09→#13 ont aussi été déposés : [contrôle et réserves](./35-DOS-05-09-13-CONTROLE-MP4.md). Cinq prompts sont conservés. Les GIF d'origine restent les replis. [Contrôle des MP4](./33-DOS-06-08-CONTROLE-MP4.md). L'ancien #05 a également reçu une [nouvelle photo candidate](./vague4-dos-05-rowing-barre-v4.jpg) et son [prompt corrigé](./30-DOS-01-05-PRODUCTION.md).
 
 [Planche #05→#08](./vague4-dos-05-08-apercu.jpg) · [Zooms #05→#08](./vague4-dos-05-08-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
@@ -72,4 +72,4 @@ Animate the supplied CORRECT full-extension pull-up start photo. Same chrome ath
 
 ## À réception
 
-La photo #09 reste à corriger ; une nouvelle photo candidate #10 est disponible. Les sources #06→#08 sont intégrées `coached` avec réserves : voir le contrôle. Les futures sources #09/#10 seront contrôlées avant intégration. Le dépôt par Yanis vaut accord d'intégration, sans nouvelle demande. Aucun statut n'est attribué aux vidéos absentes.
+La photo #09 reste à corriger ; une nouvelle photo candidate #10 est disponible. Les sources #06→#08 sont intégrées `coached` avec réserves : voir le contrôle. Les sources #09/#10 sont désormais intégrées `coached` avec réserves. Le dépôt par Yanis vaut accord d'intégration, sans nouvelle demande. Aucun statut n'est attribué aux vidéos absentes.
