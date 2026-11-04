@@ -129,8 +129,10 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    les GIF restent les replis. Le dépôt #05 et #09→#13 est documenté dans
    `35-DOS-05-09-13-CONTROLE-MP4.md`. #05 est identique à #07 et redresse le
    buste malgré la correction demandée ; #12 est identique à #02. Les six
-   notices et voix portent les réserves réelles. Le dépôt vaut accord
-   d'intégration ; aucune modification de programmation ni d'APK.
+   notices et voix portent les réserves réelles. Yanis accepte ces vidéos telles
+   quelles et ne peut pas faire mieux : ne pas lui demander de les refaire.
+   Lot #14→#18 préparé dans `36-DOS-14-18-PRODUCTION.md` ; #18 à préciser.
+   Aucune modification de programmation ni d'APK.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.

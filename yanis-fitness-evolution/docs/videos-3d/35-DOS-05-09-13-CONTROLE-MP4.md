@@ -1,5 +1,7 @@
 # Dos #05 et #09→#13 — contrôle des vidéos déposées
 
+**Décision de Yanis : les vidéos sont acceptées telles quelles, il ne peut pas faire mieux ; ne pas demander de les refaire.** Les notices et voix restent des indications de sécurité.
+
 Dépôt de Yanis `38c21c1` : six sources attribuées au lot demandé par geste et comparaison visuelle avec les photos de départ ; elles sont intégrées `coached` avec leurs réserves, notice et descriptif vocal. L'intégration ne signifie pas que les défauts sont corrigés. Les programmations, GIF, vidéos et sources antérieurs sont conservés. Aucun APK n'a été produit.
 
 | # | Fichier déposé | Réserves constatées | Dix instants |
