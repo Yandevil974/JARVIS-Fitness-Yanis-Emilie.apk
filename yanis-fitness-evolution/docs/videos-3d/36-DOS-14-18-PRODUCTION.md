@@ -2,7 +2,7 @@
 
 Les six MP4 #05 et #09→#13 sont conservés tels que déposés, intégrés `coached` avec leurs consignes. Yanis précise qu'il ne peut pas faire mieux : **ne pas lui demander de refaire ces vidéos**.
 
-[Planche des photos #14→#17](./vague4-dos-14-17-apercu.jpg) · [Planche des zooms](./vague4-dos-14-17-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
+[Planche des photos #14→#18](./vague4-dos-14-18-apercu.jpg) · [Planche des zooms](./vague4-dos-14-18-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
 | # | Exercice | Photo · zoom | Programmation et état |
 |---|---|---|---|
@@ -10,9 +10,9 @@ Les six MP4 #05 et #09→#13 sont conservés tels que déposés, intégrés `coa
 | 15 | Tractions supination | [Photo](./vague4-dos-15-tractions-supination.jpg) · [Zoom](./vague4-dos-15-zoom-technique.jpg) | 5 séries `6,6,6,8,8` · 4010 · 90 s ; **supination des mains peu lisible** sur l'image. |
 | 16 | Rowing haltère buste penché | [Photo](./vague4-dos-16-rowing-deux-halteres-v2.jpg) · [Zoom](./vague4-dos-16-zoom-technique.jpg) | 5 × 8–10 · 3010 · 120 s ; variante à deux haltères retenue, cohérente avec l'unité kg/main et le GIF. |
 | 17 | Tractions prise large | [Photo](./vague4-dos-17-tractions-prise-large-v2.jpg) · [Zoom](./vague4-dos-17-zoom-technique.jpg) | 6 séries `8,8,6,6,4,4` · 4010 · 120 s ; photo candidate. |
-| 18 | Rowing assis au cou | **En attente de précision** | 5 × 6–8 · 3011 · 60 s. Nom et GIF ne décrivent pas clairement le même geste : le GIF représente un tirage vertical derrière la nuque, non un rowing horizontal. |
+| 18 | Rowing assis au cou | [Photo candidate](./vague4-dos-18-tirage-nuque.jpg) · [Zoom](./vague4-dos-18-zoom-technique.jpg) | 5 × 6–8 · 3011 · 60 s. Yanis choisit le tirage vertical derrière la nuque ; bras au départ trop fléchis, photo à corriger. |
 
-Les images sont des références IA statiques, non des preuves de mouvement. Aucun MP4 #14→#18 n'est intégré ; tous les GIF restent disponibles. Pour #15, des corrections de l'image ont été tentées mais la supination n'est pas assez claire pour être garantie : le prompt l'explicite, la prise doit être contrôlée dans la vidéo.
+Les images sont des références IA statiques, non des preuves de mouvement. Aucun MP4 #14→#18 n'est intégré ; tous les GIF restent disponibles. Pour #15, la supination n'est pas assez claire pour être garantie : le prompt l'explicite, la prise doit être contrôlée dans la vidéo. Pour #18, les bras restent trop fléchis sur la photo candidate ; il faut corriger le départ avant de l'animer.
 
 ## #14 — Rowing assis + étirement
 
@@ -56,9 +56,15 @@ Prise pronation plus large que les épaules, sans forcer une largeur inconfortab
 Animate the supplied wide-grip pull-up start photo. Same chrome athlete, fixed camera and full body visible. Hang freely from ONE rigid fixed overhead bar, hands in a WIDE but comfortable overhand PRONATED grip, both arms extended, feet off the floor. Pull upward in ONE second, bringing the chin toward the bar within a comfortable range, then immediately lower in FOUR seconds to extended arms. Tempo 4010, one full five-second repetition without pause or swinging. Do not change hand position, pull behind the neck, kick, add arms, move the camera or add text.
 ```
 
-## #18 — Rowing assis au cou : geste à préciser
+## #18 — Tirage vertical derrière la nuque
 
-Le catalogue ne précise ni direction de câble ni accessoire. Le GIF conservé montre une barre qui descend **verticalement derrière la nuque**, alors que le nom évoque un rowing assis, donc un tirage horizontal. Ne pas attribuer une photo ou une vidéo à l'une de ces variantes sans savoir laquelle est attendue. Le tirage derrière la nuque peut être inconfortable pour les épaules : ne pas forcer l'amplitude, adapter en cas de douleur.
+Yanis a choisi le **tirage vertical derrière la nuque**, comme dans le GIF. La photo candidate montre le matériel et la direction, mais les bras sont encore fléchis au départ ; elle ne démontre pas correctement l'extension complète. Une correction de photo reste nécessaire avant de l'utiliser comme référence de départ. Ne pas forcer les épaules ni avancer ou fléchir excessivement la tête ; limiter l'amplitude à une zone confortable, arrêter en cas de douleur. La barre reste dégagée de la nuque.
+
+**Prompt vidéo préparé pour une photo corrigée #18 :**
+
+```text
+Animate the supplied CORRECT start photo of the seated BEHIND-THE-NECK lat pulldown. The chrome athlete sits upright with neutral spine, thighs supported and both feet planted. Both arms start fully extended overhead. Both hands keep a wide comfortable overhand grip on ONE long bar attached at the center to ONE taut overhead cable. Without tilting the head forward or swinging, pull the bar behind the head toward the upper neck area in ONE second, stopping in a comfortable range without contacting the neck. Hold ONE second, then slowly return the bar overhead in THREE seconds until the arms extend. Tempo 3011; no bottom stretch pause, one repetition. Keep head and spine neutral, avoid excessive shoulder rotation, no forced range, no extra limbs, no text or camera motion.
+```
 
 ## À réception
 

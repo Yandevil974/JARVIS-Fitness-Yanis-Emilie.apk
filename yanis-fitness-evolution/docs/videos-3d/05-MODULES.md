@@ -131,7 +131,8 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    buste malgré la correction demandée ; #12 est identique à #02. Les six
    notices et voix portent les réserves réelles. Yanis accepte ces vidéos telles
    quelles et ne peut pas faire mieux : ne pas lui demander de les refaire.
-   Lot #14→#18 préparé dans `36-DOS-14-18-PRODUCTION.md` ; #18 à préciser.
+   Lot #14→#18 préparé dans `36-DOS-14-18-PRODUCTION.md` ; Yanis choisit
+   #18 tirage vertical derrière la nuque, image de départ à corriger.
    Aucune modification de programmation ni d'APK.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
