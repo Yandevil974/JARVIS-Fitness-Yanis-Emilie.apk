@@ -131,8 +131,10 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    buste malgré la correction demandée ; #12 est identique à #02. Les six
    notices et voix portent les réserves réelles. Yanis accepte ces vidéos telles
    quelles et ne peut pas faire mieux : ne pas lui demander de les refaire.
-   Lot #14→#18 préparé dans `36-DOS-14-18-PRODUCTION.md` ; Yanis choisit
-   #18 tirage vertical derrière la nuque, image de départ à corriger.
+   Lot #14→#18 préparé dans `36-DOS-14-18-PRODUCTION.md` ; #14 et #16→#18
+   intégrés `coached` après dépôt, contrôle `37-DOS-14-16-18-CONTROLE-MP4.md`.
+   Yanis choisit le #18 en tirage vertical derrière la nuque, avec consignes
+   de confort et alternative devant si douleur. #15 reste sans vidéo.
    Yanis signale les coudes ouverts à 90° sur #16 ; prompts #15/#16 corrigés.
    Ne pas proposer de photo #15 tant que les deux mains en supination ne sont
    pas clairement cohérentes ; continuer à travailler cette référence.

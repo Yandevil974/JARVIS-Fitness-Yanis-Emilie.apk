@@ -1268,6 +1268,79 @@ export const EXERCISE_VIDEOS = {
         "Rowing barre EZ en supination, buste penché. Pieds stables, genoux souples, hanches en arrière, gardez le dos neutre et le buste incliné immobile. Tenez la barre EZ à deux mains en supination, paumes vers l'avant au départ ; la prise est peu lisible sur la vidéo. Ne copiez pas le redressement visible. Tirez vers le nombril en une seconde puis descendez en trois secondes sans pause. Quatre séries de huit à dix, tempo 3010, soixante-quinze secondes de repos.",
     },
   },
+  // Dos #14 et #16 à #18 : vidéos déposées, avec les consignes utiles.
+  "rowing-assis-etirement": {
+    src: "/videos/rowing-assis-etirement.mp4",
+    poster: "/videos/posters/rowing-assis-etirement.jpg",
+    label: "Vidéo IA · Rowing assis avec étirement contrôlé",
+    status: "coached",
+    coaching: {
+      title:
+        "Tirez vers le ventre puis revenez bras étendus dans une amplitude confortable.",
+      handCue:
+        "Tenez la poignée neutre à deux mains, paumes face à face ; câble bien relié et dégagé.",
+      movementCue:
+        "Tirez en une seconde puis revenez en trois secondes, sans pause ni arrondir exagérément le dos.",
+      notice:
+        "La vidéo ne montre pas clairement l'étirement complet et sa boucle reprend un tirage avant la fin. Suivez le tempo et l'amplitude confortables plutôt que le rythme de l'image.",
+      spoken:
+        "Rowing assis avec étirement. Pieds sur les appuis, genoux souples, tenez la poignée à deux mains, paumes face à face. Tirez vers le ventre en une seconde, puis revenez en trois secondes jusqu'aux bras étendus. Laissez les épaules avancer naturellement pour un étirement confortable, avec un léger mouvement de hanches si nécessaire, sans arrondir excessivement le dos ni forcer. La vidéo ne montre pas clairement tout l'étirement et sa boucle reprend un tirage ; suivez votre amplitude et le tempo 3010. Quatre séries, répétitions dix, huit, six selon la fiche, avec drop set et soixante-quinze secondes de repos.",
+    },
+  },
+  "rowing-haltere-buste-penche": {
+    src: "/videos/rowing-haltere-buste-penche.mp4",
+    poster: "/videos/posters/rowing-haltere-buste-penche.jpg",
+    label: "Vidéo IA · Rowing deux haltères, coudes vers les hanches",
+    status: "coached",
+    coaching: {
+      title:
+        "Tirez les coudes vers les hanches, près du buste, sans les écarter à 90 degrés.",
+      handCue:
+        "Un haltère dans chaque main, paumes vers les jambes, poignets neutres.",
+      movementCue:
+        "Tirez les deux haltères vers la taille en une seconde puis descendez en trois secondes, buste incliné fixe.",
+      notice:
+        "La vidéo écarte les coudes et ne montre pas un retour complet des deux haltères avant la boucle. Ne copiez pas cet écartement : gardez les coudes proches du buste et redescendez les deux bras.",
+      spoken:
+        "Rowing buste penché avec deux haltères. Pieds ancrés, genoux souples, hanches en arrière, dos neutre et buste incliné fixe. Un haltère dans chaque main, tirez les deux poids vers la taille en une seconde, avec les coudes dirigés vers l'arrière et les hanches, près du buste. Ne les écartez pas à quatre-vingt-dix degrés comme une élévation pour les épaules. Redescendez les deux bras en trois secondes, sans pause ni élan. La vidéo écarte les coudes et sa boucle ne montre pas le retour complet : ne copiez pas ces défauts. Cinq séries de huit à dix, tempo 3010, cent vingt secondes de repos.",
+    },
+  },
+  "tractions-prise-large": {
+    src: "/videos/tractions-prise-large.mp4",
+    poster: "/videos/posters/tractions-prise-large.jpg",
+    label: "Vidéo IA · Tractions larges, amplitude et tempo prioritaires",
+    status: "coached",
+    coaching: {
+      title:
+        "Prise large confortable, partez bras tendus et contrôlez la descente.",
+      handCue:
+        "Mains en pronation plus larges que les épaules, sans forcer l'écartement, sur une barre stable.",
+      movementCue:
+        "Montez en une seconde, menton vers la barre, puis descendez en quatre secondes sans pause.",
+      notice:
+        "L'angle et la trajectoire du haut de la vidéo ne permettent pas de vérifier nettement le passage du menton devant la barre ; la descente est plus rapide que le tempo prescrit. Gardez une amplitude confortable et une descente de quatre secondes.",
+      spoken:
+        "Tractions prise large. Saisissez une barre stable en pronation, mains plus larges que les épaules mais sans forcer l'écartement. Suspendez-vous bras tendus, pieds décollés. Montez en une seconde en amenant le menton vers la barre devant vous, sans tirer derrière la nuque ni balancer. Descendez en quatre secondes jusqu'aux bras tendus, sans pause. La hauteur et le passage du menton ne sont pas clairement visibles et la descente de la vidéo est trop rapide : suivez le tempo 4010 et votre amplitude confortable. Six séries de huit, huit, six, six, quatre, quatre, cent vingt secondes de repos.",
+    },
+  },
+  "rowing-assis-au-cou": {
+    src: "/videos/rowing-assis-au-cou.mp4",
+    poster: "/videos/posters/rowing-assis-au-cou.jpg",
+    label: "Vidéo IA · Tirage vertical derrière la nuque, confort prioritaire",
+    status: "coached",
+    coaching: {
+      title:
+        "Derrière la nuque, gardez la tête neutre et ne forcez jamais l'amplitude.",
+      handCue:
+        "Une barre en pronation, prise confortable ; câble relié et cuisses maintenues.",
+      movementCue:
+        "Tirez en une seconde dans une amplitude confortable, maintenez une seconde puis remontez en trois secondes.",
+      notice:
+        "La vidéo commence bras fléchis, répète le mouvement et ne démontre pas fidèlement le tempo. Le tirage derrière la nuque peut être inconfortable : ne forcez pas, gardez la barre dégagée du cou et arrêtez en cas de douleur.",
+      spoken:
+        "Tirage vertical derrière la nuque, variante choisie pour cette fiche. Asseyez-vous, pieds au sol, cuisses maintenues et dos neutre. Tenez la barre en pronation avec une prise confortable. Partez bras allongés, sans hausser ni forcer les épaules, et gardez la tête neutre. Tirez derrière la tête en une seconde, uniquement dans une amplitude confortable, sans contact avec la nuque ; maintenez une seconde puis remontez en trois secondes. La vidéo commence bras fléchis et ne montre pas fidèlement le tempo. Si la position provoque une douleur ou si votre mobilité ne permet pas ce geste confortablement, arrêtez et choisissez un tirage devant vers le haut de poitrine. Cinq séries de six à huit, tempo 3011, soixante secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;
