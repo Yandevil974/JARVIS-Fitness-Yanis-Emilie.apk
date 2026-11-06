@@ -139,6 +139,9 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    Yanis signale les coudes ouverts à 90° sur #16 ; prompts #15/#16 corrigés.
    Ne pas proposer de photo #15 tant que les deux mains en supination ne sont
    pas clairement cohérentes. La vidéo déposée est conservée telle quelle avec ses réserves.
+   Lot suivant #19→#23 : `39-DOS-19-23-PRODUCTION.md` ; photos de départ
+   #19, #20, #21 et #23 avec prompts, #22 non proposé car sa prise n'est pas
+   suffisamment fiable. Les GIF et la programmation restent inchangés.
    Aucune modification de programmation ni d'APK.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
