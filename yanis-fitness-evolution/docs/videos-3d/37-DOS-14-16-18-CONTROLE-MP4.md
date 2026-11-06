@@ -11,7 +11,7 @@ Dépôt `880da73` : quatre MP4 distincts, attribués par correspondance des imag
 
 Chaque source a été entièrement décodée : 640 × 480, 24 images/s, 121 images sur 121, environ 5,04 s. Les planches de dix instants ne prouvent pas la conformité continue de l'anatomie ou du tempo.
 
-**#15 reste sans MP4 dans ce dépôt** ; son GIF est conservé. La photo de référence en supination reste à travailler : ne pas proposer une prise incorrecte comme conforme.
+**Dans ce dépôt**, #15 était encore sans MP4 ; la vidéo a depuis été déposée et intégrée : voir [contrôle #15](./38-DOS-15-CONTROLE-MP4.md). Son GIF est conservé.
 
 ## Vérifications
 

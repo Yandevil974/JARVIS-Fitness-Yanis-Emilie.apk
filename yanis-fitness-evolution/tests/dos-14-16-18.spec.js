@@ -1,8 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("dos #14 et #16 à #18 lisent les vidéos accompagnées et #15 garde son GIF", async ({
-  page,
-}) => {
+test("dos #14 à #18 lisent les vidéos accompagnées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/");
@@ -19,6 +17,12 @@ test("dos #14 et #16 à #18 lisent les vidéos accompagnées et #15 garde son GI
       window.__spoken.push(utterance.text);
   });
   const cases = [
+    [
+      "Tractions supination (chin-up)",
+      "tractions-supination-chin-up",
+      /supination n'est pas nettement vérifiable/i,
+      /deux bras de façon symétrique/i,
+    ],
     [
       "Rowing assis + étirement",
       "rowing-assis-etirement",
@@ -71,16 +75,5 @@ test("dos #14 et #16 à #18 lisent les vidéos accompagnées et #15 garde son GI
       .last()
       .click();
   }
-  const name = "Tractions supination (chin-up)";
-  await page.getByLabel("Rechercher un exercice").fill(name);
-  await page
-    .getByRole("button", { name: `Démonstration ${name}`, exact: true })
-    .click();
-  const dialog = page.getByRole("dialog", { name, exact: true });
-  await expect(dialog.locator(".movement-video")).toHaveCount(0);
-  await expect(dialog.locator(".movement-media")).toHaveAttribute(
-    "src",
-    "/media/d9bfa9bd06ca082c.gif",
-  );
   expect(errors).toEqual([]);
 });

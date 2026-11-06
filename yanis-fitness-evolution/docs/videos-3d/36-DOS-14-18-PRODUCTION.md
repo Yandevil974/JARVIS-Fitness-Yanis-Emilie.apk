@@ -1,18 +1,18 @@
 # Dos #14→#18 — lot de production
 
-Les six MP4 #05 et #09→#13 sont conservés tels que déposés, intégrés `coached` avec leurs consignes. Les vidéos #14, #16, #17 et #18 ont depuis été déposées et intégrées `coached` ; [contrôle](./37-DOS-14-16-18-CONTROLE-MP4.md). Yanis précise qu'il ne peut pas faire mieux : **ne pas lui demander de refaire ces vidéos**.
+Les six MP4 #05 et #09→#13 sont conservés tels que déposés, intégrés `coached` avec leurs consignes. Les vidéos #14, #16, #17 et #18 ont depuis été déposées et intégrées `coached` ; [contrôle](./37-DOS-14-16-18-CONTROLE-MP4.md). La vidéo #15 reçue ensuite est intégrée `coached` ; [contrôle #15](./38-DOS-15-CONTROLE-MP4.md). Yanis précise qu'il ne peut pas faire mieux : **ne pas lui demander de refaire ces vidéos**.
 
 [Ancienne planche #14→#18](./vague4-dos-14-18-apercu.jpg) · [Anciens zooms](./vague4-dos-14-18-zooms.jpg) — **ne pas utiliser la photo #15 de ces planches** · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
 | # | Exercice | Photo · zoom | Programmation et état |
 |---|---|---|---|
 | 14 | Rowing assis + étirement | [Photo](./vague4-dos-14-rowing-assis-etirement.jpg) · [Zoom](./vague4-dos-14-zoom-technique.jpg) | 4 séries · `10/8/6` · 3010 · 75 s · drop set ; vidéo intégrée `coached`. |
-| 15 | Tractions supination | **Nouvelle photo encore à travailler : aucune référence proposée** | 5 séries `6,6,6,8,8` · 4010 · 90 s ; les deux mains doivent montrer clairement la supination. |
+| 15 | Tractions supination | **Nouvelle photo encore à travailler : aucune référence proposée** | 5 séries `6,6,6,8,8` · 4010 · 90 s ; vidéo intégrée `coached`, prise à rappeler. |
 | 16 | Rowing haltère buste penché | [Photo](./vague4-dos-16-rowing-deux-halteres-v2.jpg) · [Zoom](./vague4-dos-16-zoom-technique.jpg) | 5 × 8–10 · 3010 · 120 s ; variante à deux haltères retenue, cohérente avec l'unité kg/main et le GIF ; vidéo intégrée `coached`. |
 | 17 | Tractions prise large | [Photo](./vague4-dos-17-tractions-prise-large-v2.jpg) · [Zoom](./vague4-dos-17-zoom-technique.jpg) | 6 séries `8,8,6,6,4,4` · 4010 · 120 s ; vidéo intégrée `coached`. |
 | 18 | Rowing assis au cou | [Photo candidate](./vague4-dos-18-tirage-nuque.jpg) · [Zoom](./vague4-dos-18-zoom-technique.jpg) | 5 × 6–8 · 3011 · 60 s. Yanis choisit le tirage vertical derrière la nuque ; vidéo intégrée `coached`, départ bras fléchis. |
 
-Les images sont des références IA statiques, non des preuves de mouvement. Les MP4 #14, #16, #17 et #18 sont intégrés `coached` ; #15 reste sans vidéo. Tous les GIF restent disponibles. Pour #15, Yanis demande de ne pas proposer une photo incorrecte : les nouvelles tentatives n'ont pas rendu les deux prises lisibles et cohérentes. Elles ne sont pas proposées ; il reste à retravailler cette image avant de lancer la vidéo. Pour #18, la vidéo reçue commence bras fléchis ; la notice rappelle le départ bras allongés.
+Les images sont des références IA statiques, non des preuves de mouvement. Les MP4 #14 à #18 sont intégrés `coached`. Tous les GIF restent disponibles. Pour #15, Yanis demande de ne pas proposer une photo incorrecte : les nouvelles tentatives n'ont pas rendu les deux prises lisibles et cohérentes. Elles ne sont pas proposées ; la vidéo #15 reçue entre-temps est conservée telle quelle avec ses réserves. Pour #18, la vidéo reçue commence bras fléchis ; la notice rappelle le départ bras allongés.
 
 ## #14 — Rowing assis + étirement
 
@@ -26,11 +26,11 @@ Animate the supplied seated cable row stretch start image with the exact silver 
 
 Le `10/8/6` et la mention drop set sont conservés tels qu'écrits dans le catalogue, sans supposer un protocole de charges supplémentaire.
 
-## #15 — Tractions supination : prompt corrigé, photo à retravailler
+## #15 — Tractions supination : historique du prompt et contrôle de la vidéo
 
-La prise doit être clairement **supinée aux deux mains, paumes vers le visage**, pendant toute l'animation. L'ancienne photo ne permet pas de vérifier cette prise et n'est pas une référence à proposer. Des essais ont été travaillés, mais une main restait incohérente ; aucune nouvelle photo conforme n'est présentée. Le prompt est prêt **pour une future photo correcte**.
+La prise doit être clairement **supinée aux deux mains, paumes vers le visage**, pendant toute l'animation. L'ancienne photo ne permet pas de vérifier cette prise et n'est pas une référence à proposer. Des essais ont été travaillés, mais une main restait incohérente ; aucune nouvelle photo conforme n'est présentée. Le prompt ci-dessous est historique ; la vidéo déposée depuis est intégrée avec ses réserves.
 
-**Prompt vidéo à copier quand la photo sera prête :**
+**Prompt historique :**
 
 ```text
 Animate ONE controlled SUPINATED CHIN-UP from the supplied correct full-body start image. Lock the camera. The chrome athlete hangs from ONE fixed horizontal bar with both arms fully extended, feet off the floor and both hands shoulder-width apart. BOTH hands keep the SAME UNDERHAND SUPINATED grip, palms facing the athlete's face, thumbs wrapped around the bar throughout. Never rotate to an overhand or neutral grip and never let the hands slide.

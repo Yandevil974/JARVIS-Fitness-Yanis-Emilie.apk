@@ -13,6 +13,17 @@ const sha = (name) =>
     .digest("hex");
 const sources = [
   [
+    "tractions-supination-chin-up",
+    "1793978523009.mp4",
+    "f025311d69ba5e3a197e2f0274811f816dd5c654d986f81cf1a5f674753ac38b",
+    5,
+    "6,6,6,8,8",
+    "4010",
+    90,
+    /deux bras de façon symétrique/i,
+    /supination n'est pas nettement vérifiable/i,
+  ],
+  [
     "rowing-assis-etirement",
     "1793976101827.mp4",
     "61df379deb9fb79ff2a27fca2baf47a10e130a20762ece905ca419d2aa98b1a1",
@@ -58,8 +69,8 @@ const sources = [
   ],
 ];
 
-test("dos #14, #16 à #18 : sources distinctes, copies, GIF, consignes et programmation", () => {
-  assert.equal(new Set(sources.map((s) => s[2])).size, 4);
+test("dos #14 à #18 : sources distinctes, copies, GIF, consignes et programmation", () => {
+  assert.equal(new Set(sources.map((s) => s[2])).size, 5);
   for (const [
     id,
     source,
@@ -90,8 +101,4 @@ test("dos #14, #16 à #18 : sources distinctes, copies, GIF, consignes et progra
     }
     assert.equal(sha(`public${v.poster}`), sha(`release${v.poster}`));
   }
-  assert.equal(videoFor("tractions-supination-chin-up"), null);
-  const e15 = EXERCISES.find((e) => e.id === "tractions-supination-chin-up");
-  for (const base of ["public", "release"])
-    assert.ok(existsSync(file(`${base}${e15.gif}`)));
 });

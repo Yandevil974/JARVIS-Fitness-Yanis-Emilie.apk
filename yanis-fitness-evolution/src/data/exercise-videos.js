@@ -1287,6 +1287,25 @@ export const EXERCISE_VIDEOS = {
         "Rowing assis avec étirement. Pieds sur les appuis, genoux souples, tenez la poignée à deux mains, paumes face à face. Tirez vers le ventre en une seconde, puis revenez en trois secondes jusqu'aux bras étendus. Laissez les épaules avancer naturellement pour un étirement confortable, avec un léger mouvement de hanches si nécessaire, sans arrondir excessivement le dos ni forcer. La vidéo ne montre pas clairement tout l'étirement et sa boucle reprend un tirage ; suivez votre amplitude et le tempo 3010. Quatre séries, répétitions dix, huit, six selon la fiche, avec drop set et soixante-quinze secondes de repos.",
     },
   },
+  // Dos #15 : vidéo déposée par Yanis, conservée avec consignes correctives.
+  "tractions-supination-chin-up": {
+    src: "/videos/tractions-supination-chin-up.mp4",
+    poster: "/videos/posters/tractions-supination-chin-up.jpg",
+    label: "Vidéo IA · Tractions supination",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les deux paumes vers vous et tirez avec les deux bras de façon symétrique.",
+      handCue:
+        "Saisissez la barre à largeur d'épaules, paumes vers le visage, pouces autour de la barre.",
+      movementCue:
+        "Tirez les deux coudes vers le bas près du buste, montez en une seconde et descendez en quatre secondes.",
+      notice:
+        "La prise en supination n'est pas nettement vérifiable sur les deux mains et le mouvement paraît asymétrique, avec un coude plus écarté. La descente est plus rapide que le tempo 4010. Suivez les consignes plutôt que de copier ces détails.",
+      spoken:
+        "Tractions en supination. Saisissez une barre stable à largeur d'épaules, avec les deux paumes vers le visage et les pouces autour de la barre. Suspendez-vous bras allongés, pieds décollés. Tirez avec les deux bras de façon symétrique, coudes vers le bas et près du buste, sans les écarter à quatre-vingt-dix degrés. Montez en une seconde, menton vers la barre devant vous, puis redescendez en quatre secondes, sans élan ni pause, dans une amplitude confortable. La prise n'est pas clairement visible sur les deux mains et la vidéo montre un mouvement asymétrique, avec un coude plus écarté. Sa descente est trop rapide : suivez ces consignes et le tempo 4010 plutôt que l'image. Cinq séries de six, six, six, huit, huit, avec quatre-vingt-dix secondes de repos.",
+    },
+  },
   "rowing-haltere-buste-penche": {
     src: "/videos/rowing-haltere-buste-penche.mp4",
     poster: "/videos/posters/rowing-haltere-buste-penche.jpg",
