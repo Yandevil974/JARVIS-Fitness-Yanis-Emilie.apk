@@ -133,6 +133,9 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    quelles et ne peut pas faire mieux : ne pas lui demander de les refaire.
    Lot #14→#18 préparé dans `36-DOS-14-18-PRODUCTION.md` ; Yanis choisit
    #18 tirage vertical derrière la nuque, image de départ à corriger.
+   Yanis signale les coudes ouverts à 90° sur #16 ; prompts #15/#16 corrigés.
+   Ne pas proposer de photo #15 tant que les deux mains en supination ne sont
+   pas clairement cohérentes ; continuer à travailler cette référence.
    Aucune modification de programmation ni d'APK.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
