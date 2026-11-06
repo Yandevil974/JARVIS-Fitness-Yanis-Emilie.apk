@@ -1318,9 +1318,9 @@ export const EXERCISE_VIDEOS = {
       movementCue:
         "Montez en une seconde, menton vers la barre, puis descendez en quatre secondes sans pause.",
       notice:
-        "L'angle et la trajectoire du haut de la vidéo ne permettent pas de vérifier nettement le passage du menton devant la barre ; la descente est plus rapide que le tempo prescrit. Gardez une amplitude confortable et une descente de quatre secondes.",
+        "En haut de la vidéo, la barre semble passer derrière la tête et le passage du menton devant la barre n'est pas clair ; la descente est plus rapide que le tempo prescrit. Tirez vers l'avant dans une amplitude confortable et descendez en quatre secondes.",
       spoken:
-        "Tractions prise large. Saisissez une barre stable en pronation, mains plus larges que les épaules mais sans forcer l'écartement. Suspendez-vous bras tendus, pieds décollés. Montez en une seconde en amenant le menton vers la barre devant vous, sans tirer derrière la nuque ni balancer. Descendez en quatre secondes jusqu'aux bras tendus, sans pause. La hauteur et le passage du menton ne sont pas clairement visibles et la descente de la vidéo est trop rapide : suivez le tempo 4010 et votre amplitude confortable. Six séries de huit, huit, six, six, quatre, quatre, cent vingt secondes de repos.",
+        "Tractions prise large. Saisissez une barre stable en pronation, mains plus larges que les épaules mais sans forcer l'écartement. Suspendez-vous bras tendus, pieds décollés. Montez en une seconde en amenant le menton vers la barre devant vous, sans tirer derrière la nuque ni balancer. Descendez en quatre secondes jusqu'aux bras tendus, sans pause. En haut la barre semble passer derrière la tête, le passage du menton devant la barre n'est pas clairement visible et la descente est trop rapide. Ne copiez pas ce passage derrière la tête : tirez vers l'avant et suivez le tempo 4010 et votre amplitude confortable. Six séries de huit, huit, six, six, quatre, quatre, cent vingt secondes de repos.",
     },
   },
   "rowing-assis-au-cou": {
