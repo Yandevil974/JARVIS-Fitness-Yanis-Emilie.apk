@@ -1359,6 +1359,78 @@ export const EXERCISE_VIDEOS = {
       spoken:
         "Tirage vertical derrière la nuque, variante choisie pour cette fiche. Asseyez-vous, pieds au sol, cuisses maintenues et dos neutre. Tenez la barre en pronation avec une prise confortable. Partez bras allongés, sans hausser ni forcer les épaules, et gardez la tête neutre. Tirez derrière la tête en une seconde, uniquement dans une amplitude confortable, sans contact avec la nuque ; maintenez une seconde puis remontez en trois secondes. La vidéo commence bras fléchis et ne montre pas fidèlement le tempo. Si la position provoque une douleur ou si votre mobilité ne permet pas ce geste confortablement, arrêtez et choisissez un tirage devant vers le haut de poitrine. Cinq séries de six à huit, tempo 3011, soixante secondes de repos.",
     },
+  }, // Dos #19 à #21 et #23 : dépôts conservés avec réserves et consignes.
+  "lean-away-pull-ups": {
+    src: "/videos/lean-away-pull-ups.mp4",
+    poster: "/videos/posters/lean-away-pull-ups.jpg",
+    label: "Vidéo IA · Lean away pull-ups",
+    status: "coached",
+    coaching: {
+      title:
+        "Montez en traction puis éloignez-vous légèrement et contrôlez la descente.",
+      handCue:
+        "Saisissez une barre stable en pronation, prise confortable et pouces autour de la barre.",
+      movementCue:
+        "Montez en une seconde, inclinez-vous légèrement en arrière puis descendez en trois secondes sans élan.",
+      notice:
+        "Cette vidéo est identique à celle du dos numéro 10 : elle montre une traction mais pas clairement l'inclinaison lean away. La descente ne démontre pas le tempo prescrit ; suivez les consignes plutôt que l'image.",
+      spoken:
+        "Lean away pull-ups. Saisissez une barre stable en pronation, avec une prise confortable et les pouces autour de la barre. Suspendez-vous bras allongés, pieds décollés. Montez en une seconde, menton vers la barre devant vous. Puis éloignez légèrement le corps de la barre en gardant le tronc gainé, et redescendez en trois secondes, sans balancement ni cambrure excessive. Cette vidéo est identique à la traction numéro dix et ne montre pas clairement l'inclinaison, ni le tempo demandé. Suivez les consignes plutôt que l'image, et restez dans une amplitude confortable. Sept séries de trois à cinq, tempo 3010, cent vingt secondes de repos.",
+    },
+  },
+  "rowing-haltere-un-bras-prise-neutre": {
+    src: "/videos/rowing-haltere-un-bras-prise-neutre.mp4",
+    poster: "/videos/posters/rowing-haltere-un-bras-prise-neutre.jpg",
+    label: "Vidéo IA · Rowing un bras, prise neutre",
+    status: "coached",
+    coaching: {
+      title:
+        "Un seul haltère, paume vers le corps, tirez le coude près de la hanche.",
+      handCue:
+        "Un haltère dans la main libre, paume face au buste ; main et genou opposés sur le banc.",
+      movementCue:
+        "Tirez en une seconde puis descendez en quatre secondes, buste fixe et dos neutre.",
+      notice:
+        "La vidéo est identique au dos numéro 2 et numéro 12 : le bras se déforme et le coude monte excessivement. La prise neutre et le tempo ne sont pas clairement démontrés. Ne copiez pas la déformation.",
+      spoken:
+        "Rowing haltère un bras, prise neutre. Posez une main et le genou du même côté sur le banc et stabilisez l'autre pied au sol. Dos neutre, buste incliné et bassin immobile, prenez un seul haltère dans la main libre, paume vers le corps. Tirez vers la hanche en une seconde, coude proche du buste, puis redescendez en quatre secondes. La vidéo est identique aux numéros deux et douze et déforme le bras ; ne copiez pas ce défaut ni le coude trop haut. La prise neutre et le tempo ne sont pas clairement démontrés. Gardez l'haltère dégagé du banc. Cinq séries de cinq à sept par côté, tempo 4010, cent vingt secondes de repos.",
+    },
+  },
+  "pullover-cable-bras-tendus": {
+    src: "/videos/pullover-cable-bras-tendus.mp4",
+    poster: "/videos/posters/pullover-cable-bras-tendus.jpg",
+    label: "Vidéo IA · Pullover câble bras tendus",
+    status: "coached",
+    coaching: {
+      title:
+        "Gardez les coudes souples presque tendus et balayez la barre vers les cuisses.",
+      handCue:
+        "Deux mains sur une barre, reliée à la poulie haute par un câble dégagé.",
+      movementCue:
+        "Descendez la barre en une seconde par les épaules et remontez en trois secondes sans pause.",
+      notice:
+        "La prise et l'attache de la barre deviennent peu visibles en bas ; la pause et le rythme de la vidéo ne correspondent pas clairement au tempo 3010. Suivez les consignes et gardez le câble dégagé.",
+      spoken:
+        "Pullover câble bras tendus. Face à la poulie haute, pieds ancrés, genoux souples et dos neutre, tenez une barre à deux mains. Bras presque tendus, coudes souples, abaissez la barre en arc vers les cuisses en une seconde, en bougeant aux épaules. Revenez en trois secondes, sans pause, dans une amplitude confortable. Évitez de plier et déplier les coudes comme au triceps, ou de balancer le buste. La prise et l'attache deviennent peu visibles en bas et le rythme de la vidéo ne démontre pas le tempo. Gardez le câble dégagé et suivez le tempo 3010. Trois séries de douze à quinze, soixante secondes de repos.",
+    },
+  },
+  "tirage-vertical-lean-away": {
+    src: "/videos/tirage-vertical-lean-away.mp4",
+    poster: "/videos/posters/tirage-vertical-lean-away.jpg",
+    label: "Vidéo IA · Tirage vertical lean away, 1 et 1/4 en bas",
+    status: "coached",
+    coaching: {
+      title:
+        "Tirez devant, ajoutez un quart de répétition en bas puis revenez lentement.",
+      handCue:
+        "Deux mains en pronation sur une barre, cuisses maintenues et pieds au sol.",
+      movementCue:
+        "Tirez en une seconde ; remontez d'un quart, tirez de nouveau, maintenez deux secondes, puis remontez en trois secondes.",
+      notice:
+        "Cette vidéo est identique au tirage numéro 9 : elle ne démontre pas le quart de répétition en bas, le départ bras allongés ni clairement le tempo 3012. Appliquez les consignes de la fiche plutôt que le rythme de l'image.",
+      spoken:
+        "Tirage vertical lean away, un et un quart en bas. Asseyez-vous, pieds au sol et cuisses maintenues ; prenez la barre en pronation. Tronc gainé, inclinez-vous légèrement en arrière sans basculer. Départ bras allongés, tirez devant vers le haut de poitrine en une seconde. Remontez d'environ un quart de l'amplitude, tirez de nouveau en bas et maintenez deux secondes, puis remontez en trois secondes jusqu'aux bras allongés. Le quart supplémentaire ajoute du temps. La vidéo est identique au tirage numéro neuf et ne montre pas le quart en bas ni clairement le tempo et le départ bras allongés. Suivez la fiche, sans élan ni douleur. Quatre séries de huit à dix, tempo 3012, quatre-vingt-dix secondes de repos.",
+    },
   },
 };
 

@@ -1,16 +1,16 @@
 # Dos #19→#23 — photos et prompts vidéo
 
-Lot de production après les vidéos #01→#18. Les images sont des **références IA statiques**, pas la preuve que le mouvement ou le tempo seront respectés. Aucune nouvelle vidéo n'est intégrée ici ; les GIF et les programmations restent inchangés. Les MP4 que Yanis déposera vaudront accord d'intégration et seront conservés avec des consignes adaptées à leurs limites réelles.
+Lot de production après les vidéos #01→#18. Les images sont des **références IA statiques**, pas la preuve que le mouvement ou le tempo seront respectés. Les vidéos #19, #20, #21 et #23 ont depuis été intégrées `coached` : voir [contrôle du dépôt](./40-DOS-19-21-23-CONTROLE-MP4.md). #22 reste sans vidéo ; les GIF et les programmations restent inchangés. Les MP4 que Yanis déposera vaudront accord d'intégration et seront conservés avec des consignes adaptées à leurs limites réelles.
 
 [Planche #19, #20, #21 et #23](./vague4-dos-19-23-apercu.jpg) · [Zooms](./vague4-dos-19-23-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
 | # | Exercice | Programmation | État et photo |
 |---|---|---|---|
-| 19 | Lean away pull-ups | 7 × 3–5 · 3010 · 120 s | [Photo](./vague4-dos-19-lean-away-pull-up-v3.jpg) · [Zoom](./vague4-dos-19-zoom-lot-suivant.jpg) : suspension de départ ; l'inclinaison arrière se produit à la descente et ne se voit donc pas sur cette image. |
-| 20 | Rowing haltère un bras, prise neutre | 5 × 5–7 · 4010 · 120 s | [Photo](./vague4-dos-20-rowing-un-bras-neutre.jpg) · [Zoom](./vague4-dos-20-zoom-lot-suivant.jpg) : variante avec appui sur banc. Le GIF d'origine représente deux haltères malgré le nom « un bras » ; on privilégie ici la fiche et une seule charge. |
-| 21 | Pullover câble bras tendus | 3 × 12–15 · 3010 · 60 s | [Photo](./vague4-dos-21-pullover-cable.jpg) · [Zoom](./vague4-dos-21-zoom-lot-suivant.jpg) : bras presque tendus, barre unique et poulie haute. |
+| 19 | Lean away pull-ups | 7 × 3–5 · 3010 · 120 s | [Photo](./vague4-dos-19-lean-away-pull-up-v3.jpg) · [Zoom](./vague4-dos-19-zoom-lot-suivant.jpg) : suspension de départ ; l'inclinaison arrière se produit à la descente et ne se voit donc pas sur cette image ; vidéo intégrée `coached`. |
+| 20 | Rowing haltère un bras, prise neutre | 5 × 5–7 · 4010 · 120 s | [Photo](./vague4-dos-20-rowing-un-bras-neutre.jpg) · [Zoom](./vague4-dos-20-zoom-lot-suivant.jpg) : variante avec appui sur banc. Le GIF d'origine représente deux haltères malgré le nom « un bras » ; on privilégie ici la fiche et une seule charge ; vidéo intégrée `coached`. |
+| 21 | Pullover câble bras tendus | 3 × 12–15 · 3010 · 60 s | [Photo](./vague4-dos-21-pullover-cable.jpg) · [Zoom](./vague4-dos-21-zoom-lot-suivant.jpg) : bras presque tendus, barre unique et poulie haute ; vidéo intégrée `coached`. |
 | 22 | Rowing assis câble unilatéral | 4 × 7–9 · 3011 · 90 s | **Photo non proposée** : les essais ne rendent pas suffisamment bien la prise sur la poignée ou la position de la main libre. Le prompt ci-dessous est prévu pour une future référence correcte. |
-| 23 | Tirage vertical lean away | 4 × 8–10 · 3012 · 90 s · méthode 1 1/4 en bas | [Photo](./vague4-dos-23-tirage-lean-away-v2.jpg) · [Zoom](./vague4-dos-23-zoom-lot-suivant.jpg) : départ presque bras étendus ; l'inclinaison et le quart de répétition devront être vérifiés en vidéo, ils ne sont pas démontrés par une image fixe. |
+| 23 | Tirage vertical lean away | 4 × 8–10 · 3012 · 90 s · méthode 1 1/4 en bas | [Photo](./vague4-dos-23-tirage-lean-away-v2.jpg) · [Zoom](./vague4-dos-23-zoom-lot-suivant.jpg) : départ presque bras étendus ; l'inclinaison et le quart de répétition devront être vérifiés en vidéo, ils ne sont pas démontrés par une image fixe ; vidéo intégrée `coached` avec ces réserves. |
 
 ## #19 — Lean away pull-ups
 
