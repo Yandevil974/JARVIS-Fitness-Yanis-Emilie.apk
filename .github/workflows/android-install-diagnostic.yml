@@ -1,0 +1,58 @@
+name: Diagnostic installation Android des APK publiés
+
+on:
+  push:
+    branches:
+      - 'arena/71baa94c-jarvis-fitness-yanis-emilie-ap'
+    paths:
+      - '.github/workflows/android-install-diagnostic.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 35]
+    steps:
+      - name: Télécharger les APK publiés et vérifier leurs empreintes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release download v1.12.0-dos-01-04-20261030-3 --repo "$GITHUB_REPOSITORY" --pattern '*.apk' --dir /tmp/yfe-old
+          gh release download v1.13.0-dos-01-25-20261107 --repo "$GITHUB_REPOSITORY" --pattern '*.apk' --dir /tmp/yfe-new
+          echo '4d384c6746a668e593a1925e303e7742e9c87c6dd1468956e6611ea3c3c52e22  /tmp/yfe-old/yanis-fitness-evolution-1.12.0.apk' | sha256sum -c
+          echo '9265658ec8f05888f7c21e98c6c3b15b9c3248151cc6e9a0398913cae8debb17  /tmp/yfe-new/yanis-fitness-evolution-1.13.0.apk' | sha256sum -c
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          for apk in /tmp/yfe-{old,new}/*.apk; do
+            "$BUILD_TOOLS/aapt2" dump badging "$apk" | head -30 || true
+            "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$apk"
+          done
+      - name: Activer l'accélération de l'émulateur
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Tester installation initiale et mise à jour
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api }}
+          target: google_apis
+          arch: x86_64
+          disable-animations: true
+          script: |
+            set -euxo pipefail
+            adb shell getprop ro.build.version.release
+            adb shell df -h /data
+            adb install /tmp/yfe-old/yanis-fitness-evolution-1.12.0.apk
+            adb install -r /tmp/yfe-new/yanis-fitness-evolution-1.13.0.apk
+            adb shell dumpsys package app.yanis.fitness.evolution | grep -E 'versionCode=|versionName='
+            adb uninstall app.yanis.fitness.evolution
+            adb install /tmp/yfe-new/yanis-fitness-evolution-1.13.0.apk
+            adb shell dumpsys package app.yanis.fitness.evolution | grep -E 'versionCode=|versionName='
