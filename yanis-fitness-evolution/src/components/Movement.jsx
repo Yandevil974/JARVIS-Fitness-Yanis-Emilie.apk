@@ -56,6 +56,7 @@ export default function Movement({
   small = false,
   controls = true,
   live = null,
+  belowVisual = null,
 }) {
   const media = demonstration(exercise, movementName),
     image = useRef();
@@ -242,6 +243,7 @@ export default function Movement({
           </button>
         )}
       </div>
+      {belowVisual}
       {controls && (
         <div className="movement-controls">
           {video || media || motion || breathe ? (

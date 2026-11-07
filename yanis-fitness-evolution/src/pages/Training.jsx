@@ -17,6 +17,7 @@ import {
   ProgressBar,
 } from "../components/ui.jsx";
 import Movement from "../components/Movement.jsx";
+import WorkoutLoadControl from "../components/WorkoutLoadControl.jsx";
 import Anatomy from "../components/Anatomy.jsx";
 import RestTimer, { useNow } from "../components/RestTimer.jsx";
 import VoiceCoach from "../components/VoiceCoach.jsx";
@@ -523,6 +524,15 @@ function Workout() {
             </div>
             <Movement
               exercise={ex}
+              belowVisual={
+                <WorkoutLoadControl
+                  target={target}
+                  exercise={ex}
+                  weight={weight}
+                  onChange={setWeight}
+                  disabled={w.safetyStop || done >= target.targetSets}
+                />
+              }
               live={{
                 completed: done,
                 totalSets: target.targetSets,
@@ -595,7 +605,7 @@ function Workout() {
                           inputMode="decimal"
                           min="0"
                           max="1000"
-                          step="0.5"
+                          step="any"
                           placeholder={ex.bodyweight ? "PDC / 0" : "—"}
                           value={weight}
                           onChange={(e) => setWeight(e.target.value)}
