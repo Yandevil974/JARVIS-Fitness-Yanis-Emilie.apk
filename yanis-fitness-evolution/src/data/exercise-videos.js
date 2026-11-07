@@ -1487,6 +1487,60 @@ export const EXERCISE_VIDEOS = {
         "Pullover haltère plat. Allongez-vous dans le sens du banc, tête, dos et bassin soutenus, pieds au sol. Tenez un seul haltère fermement avec les deux mains, en choisissant une prise sûre adaptée au matériel. Si vous ne pouvez pas tenir la charge de façon sûre, ne commencez pas. Au départ, l'haltère est au-dessus de la poitrine, les coudes légèrement fléchis. Abaissez-le lentement vers l'arrière de la tête en trois secondes par les épaules, sans chercher à toucher le sol ni forcer la mobilité. Arrêtez avant toute douleur. Ramenez-le au-dessus de la poitrine en une seconde, sans pause, en gardant un angle de coude à peu près constant et le dos soutenu. La vidéo ne montre pas nettement la descente derrière la tête, les coudes changent d'angle et la prise est peu lisible ; respectez votre amplitude confortable et le tempo 3010 plutôt que d'imiter ces détails. Trois séries de douze à quinze, soixante secondes de repos.",
     },
   },
+  // Épaules #01 à #04 : sources déposées, conservées et accompagnées.
+  "developpe-militaire-halteres-assis": {
+    src: "/videos/developpe-militaire-halteres-assis.mp4",
+    poster: "/videos/posters/developpe-militaire-halteres-assis.jpg",
+    label: "Vidéo IA · Développé militaire haltères assis",
+    status: "coached",
+    coaching: {
+      title: "Gardez le dos soutenu et contrôlez la montée et la descente.",
+      handCue: "Tenez un haltère dans chaque main avec une prise ferme et les poignets alignés.",
+      movementCue: "Poussez en une seconde, maintenez une seconde en haut puis redescendez en deux secondes, sans forcer l'amplitude.",
+      notice: "Les haltères sont partiellement hors cadre en haut de la vidéo ; la prise et la position haute ne sont donc pas entièrement visibles. Le rythme ne montre pas clairement le tempo 2011. Suivez les consignes et arrêtez avant toute douleur.",
+      spoken: "Développé militaire haltères assis. Asseyez-vous, dos soutenu et pieds au sol. Tenez un haltère fermement dans chaque main, poignets alignés. Poussez les deux haltères vers le haut en une seconde sans cambrer. Maintenez une seconde en haut sans bloquer brutalement les coudes, puis redescendez en deux secondes à une hauteur confortable, sans pause en bas. Les haltères sortent partiellement du cadre en haut de la vidéo et son rythme ne montre pas clairement le tempo 2011. Suivez la consigne plutôt que l'image, sans forcer l'amplitude et arrêtez avant toute douleur. Trois séries de dix à douze répétitions, soixante-quinze secondes de repos.",
+    },
+  },
+  "elevations-laterales-halteres": {
+    src: "/videos/elevations-laterales-halteres.mp4",
+    poster: "/videos/posters/elevations-laterales-halteres.jpg",
+    label: "Vidéo IA · Élévations latérales haltères",
+    status: "coached",
+    coaching: {
+      title: "Levez les bras sans élan, au maximum à hauteur des épaules.",
+      handCue: "Tenez un haltère léger dans chaque main, poignets confortables sans rotation forcée.",
+      movementCue: "Montez en une seconde, maintenez une seconde, puis redescendez en deux secondes.",
+      notice: "Les mains et les charges sont peu lisibles pendant le mouvement ; les bras montent légèrement au-dessus de l'horizontale et le rythme de la vidéo ne montre pas clairement le tempo 2011. Limitez la hauteur à celle des épaules et suivez la consigne.",
+      spoken: "Élévations latérales haltères. Debout, pieds stables et buste droit, prenez un haltère léger dans chaque main. Poignets confortables, coudes légèrement souples. Écartez les bras en une seconde sans élan, au maximum jusqu'à la hauteur des épaules. Maintenez une seconde, puis descendez en deux secondes, sans pause en bas. Ne forcez aucune rotation des poignets et arrêtez avant toute douleur. La vidéo monte légèrement au-dessus de l'horizontale et le rythme n'illustre pas clairement le tempo 2011 ; respectez la hauteur et le rythme de la consigne. Trois séries de quinze répétitions, quarante-cinq secondes de repos.",
+    },
+  },
+  "face-pull-a-l-elastique": {
+    src: "/videos/face-pull-a-l-elastique.mp4",
+    poster: "/videos/posters/face-pull-a-l-elastique.jpg",
+    label: "Vidéo IA · Face pull à l'élastique",
+    status: "coached",
+    coaching: {
+      title: "Fixez solidement l'élastique et tirez vers le visage sans élan.",
+      handCue: "Vérifiez l'état et l'ancrage de l'élastique ; tenez une poignée dans chaque main, jamais autour des poignets.",
+      movementCue: "Tirez en une seconde vers le visage, maintenez une seconde et revenez en deux secondes, coudes confortablement hauts.",
+      notice: "La prise, les attaches et la symétrie sont peu lisibles ; la vidéo ne montre pas clairement le tempo 2011. Vérifiez l'ancrage et suivez les consignes plutôt que le rythme de l'image.",
+      spoken: "Face pull à l'élastique. Vérifiez l'état de l'élastique et fixez-le solidement devant vous à hauteur du visage. Tenez une poignée dans chaque main, jamais autour des poignets. Debout, pieds stables et buste droit, tirez vers le visage en une seconde, en écartant les mains et en gardant les coudes confortablement hauts. Maintenez une seconde, puis revenez en deux secondes sous contrôle. La prise, les attaches et la symétrie sont peu lisibles dans la vidéo ; suivez le tempo 2011 plutôt que son rythme. Ne forcez pas l'épaule et arrêtez avant toute douleur. Trois séries de quinze répétitions, quarante-cinq secondes de repos.",
+    },
+  },
+  "face-pull-a-la-poulie": {
+    src: "/videos/face-pull-a-la-poulie.mp4",
+    poster: "/videos/posters/face-pull-a-la-poulie.jpg",
+    label: "Vidéo IA · Face pull à la poulie",
+    status: "coached",
+    avoidSilentPreview: true, // Ce geste erroné ne doit pas tourner sans avertissement.
+    coaching: {
+      title: "Attention : ne reproduisez pas le tirage vers les hanches de cette vidéo.",
+      handCue: "À la poulie haute, tenez une extrémité de corde dans chaque main avec une prise ferme.",
+      movementCue: "Tirez vers le visage, mains écartées et coudes confortablement hauts ; ne tirez pas vers les hanches.",
+      notice: "La vidéo montre un tirage vers les hanches au lieu d'un face pull vers le visage : le geste démontré est incorrect. Ne le reproduisez pas. Le descriptif vocal et les consignes de la fiche priment ; suivez le tempo 2011.",
+      spoken: "Attention, la vidéo de face pull à la poulie montre un tirage vers les hanches qui n'est pas le geste demandé. Ne reproduisez pas cette trajectoire. Placez la poulie haute devant vous et tenez une extrémité de la corde dans chaque main. Pieds stables, buste droit, tirez en une seconde vers le visage en écartant les mains et en gardant les coudes confortablement hauts. Maintenez une seconde, puis revenez en deux secondes sous contrôle. Ne tirez pas vers les hanches, ne basculez pas et arrêtez avant toute douleur. Trois séries de quinze répétitions, quarante-cinq secondes de repos. La consigne est prioritaire sur la vidéo.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

@@ -146,9 +146,11 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    ne pas lui demander de refaire la vidéo ni dépenser ses crédits. Voir
    `44-DOS-24-CONTROLE-MP4.md`. Les 25 exercices dos ont une vidéo. Les GIF et la programmation restent inchangés.
    Aucune modification de programmation ni d'APK.
-7. **Vague 5 — Épaules** : lot #01→#04 sans vidéo préparé dans
-   `45-EPAULES-01-04-PRODUCTION.md` : références et prompts, sans changement du
-   programme ni des GIF. Les 23 entrées musculation sont comptées séparément de
+7. **Vague 5 — Épaules** : lot #01→#04 intégré `coached` après dépôt, contrôle
+   `46-EPAULES-01-04-CONTROLE-MP4.md` ; références et prompts dans
+   `45-EPAULES-01-04-PRODUCTION.md`. Le #04 ne montre pas le bon geste : la
+   notice et la voix corrigent la trajectoire, et le GIF sert aux miniatures
+   silencieuses. Programme et GIF inchangés. Les 23 entrées musculation sont comptées séparément de
    la mobilité auxiliaire ; le triceps #11 reste en stand-by.
 8. **Vagues suivantes** : Épaules restantes, Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

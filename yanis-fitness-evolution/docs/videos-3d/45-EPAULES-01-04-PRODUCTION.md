@@ -1,6 +1,6 @@
 # Épaules #01 à #04 — références et prompts vidéo
 
-Suite du catalogue après les 25 vidéos dos. Ce lot prépare quatre exercices **sans vidéo** ; il ne modifie ni le programme, ni les GIF, ni l'APK. Les photos sont des références statiques IA, non des vidéos ni la preuve du tempo. Le dépôt d'un MP4 par Yanis vaut accord d'intégration ; contrôler ses limites et conserver les consignes correctives nécessaires sans exiger de régénération. Le triceps #11 reste en stand-by.
+Suite du catalogue après les 25 vidéos dos. Ces quatre exercices ont depuis reçu leurs vidéos, intégrées `coached` : voir [contrôle et réserves](./46-EPAULES-01-04-CONTROLE-MP4.md). La programmation et les GIF restent inchangés ; aucun nouvel APK n'est produit pour cette intégration. Les photos sont des références statiques IA, non des vidéos ni la preuve du tempo. Le dépôt d'un MP4 par Yanis vaut accord d'intégration ; contrôler ses limites et conserver les consignes correctives nécessaires sans exiger de régénération. Le triceps #11 reste en stand-by.
 
 Personnage : [référence validée](./reference-personnage-verrouille.jpg). Numérotation du catalogue d'entraînement : les 23 entrées Épaules `epA`, `epL`, `epP` hors mobilité auxiliaire `sources: jarvis` ; cette dernière est distincte de l'échauffement déjà terminé.
 
@@ -45,4 +45,4 @@ Face à une poulie haute, une extrémité de corde dans chaque main, tirer vers 
 Animate one STANDING CABLE FACE PULL from the supplied start image. Keep the SAME chrome athlete, fixed full-body camera, both feet planted and torso upright. ONE continuous cable runs from the high pulley IN FRONT to the middle of ONE rope attachment. EACH hand grips one separate rope end with a secure thumb-wrapped grip. Start with arms extended forward. In ONE second pull the rope toward the face, separating the hands to either side of the face as the elbows travel outward at comfortable shoulder height. Hold ONE second, then return the rope forward in TWO seconds, without a bottom pause. Tempo 2011. Keep the cable attached and taut. No torso swing, no pulling to waist, no band, no extra limbs, text or camera movement.
 ```
 
-À réception, chaque MP4 sera contrôlé puis associé à sa fiche. Aucun MP4 n'a encore été fourni pour ce lot ; ne pas présenter les images comme des vidéos déjà intégrées.
+Les quatre MP4 déposés sont intégrés avec les réserves détaillées dans le contrôle. Le face pull poulie ne montre pas le bon geste ; ne pas reproduire le tirage vers les hanches.

@@ -60,7 +60,10 @@ export default function Movement({
   const media = demonstration(exercise, movementName),
     image = useRef();
   // Vidéo prioritaire si elle est validée ou accompagnée de sa consigne.
-  const video = exercise ? videoFor(exercise) : null,
+  const candidateVideo = exercise ? videoFor(exercise) : null,
+    // Dans les miniatures sans texte, montrer le GIF si la trajectoire de la
+    // vidéo est erronée ; la fiche complète conserve la vidéo et sa notice.
+    video = small && candidateVideo?.avoidSilentPreview && media ? null : candidateVideo,
     coaching = exercise ? coachingFor(exercise) : null;
   const videoRef = useRef(null);
   const { p, setModal } = useApp();

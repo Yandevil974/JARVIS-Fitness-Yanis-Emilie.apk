@@ -489,9 +489,12 @@ export function WarmupModal({ session }) {
           const v = stepVideoFor(st.name);
           const stepEx =
             !v && st.exerciseId ? exerciseById(st.exerciseId) : null;
-          const stepExVideo = stepEx ? videoFor(stepEx) : null;
-          const stepExDemo =
-            !stepExVideo && stepEx ? demonstration(stepEx) : null;
+          const candidateVideo = stepEx ? videoFor(stepEx) : null;
+          const fallbackDemo = stepEx ? demonstration(stepEx) : null;
+          // La miniature ne doit pas présenter sans avertissement un geste erroné.
+          const stepExVideo = candidateVideo?.avoidSilentPreview && fallbackDemo
+            ? null : candidateVideo;
+          const stepExDemo = !stepExVideo ? fallbackDemo : null;
           return (
             <div key={i}>
               <span className="warmup-step-number">0{i + 1}</span>
@@ -532,6 +535,9 @@ export function WarmupModal({ session }) {
                       src: stepExVideo.src,
                       poster: stepExVideo.poster,
                       title: stepExVideo.label,
+                      notice: stepExVideo.status === "coached" ? stepExVideo.coaching?.notice : null,
+                      noticeTitle: stepExVideo.status === "coached" ? stepExVideo.coaching?.title : null,
+                      spoken: stepExVideo.status === "coached" ? stepExVideo.coaching?.spoken : null,
                     })
                   }
                 >
