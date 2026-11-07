@@ -11,7 +11,7 @@ Dépôt `2d02b2c` : attribution par le mouvement visible (traction, rowing un br
 
 Toutes les images ont été décodées : #19 et #20 640 × 480, 121/121 images, 24 i/s, 5,04 s ; #21 496 × 640, 121/121 images, 24 i/s, 5,04 s ; #23 1024 × 768, 97/97 images, 24 i/s, 4,04 s. Les planches ne prouvent pas la conformité continue de l'anatomie, du tempo ou de la fixation des équipements.
 
-**#22 :** aucune vidéo de rowing assis câble unilatéral n'est identifiable dans ce dépôt. Son GIF reste disponible et aucune photo de départ incorrecte n'est proposée. L'absence de correspondance n'empêche pas l'intégration des quatre vidéos reçues.
+**#22 :** aucune vidéo de rowing assis câble unilatéral n'est identifiable dans ce dépôt. Son GIF reste disponible. Une nouvelle photo candidate a ensuite été préparée dans [le lot suivant](./41-DOS-22-24-25-PRODUCTION.md). L'absence de correspondance n'empêche pas l'intégration des quatre vidéos reçues.
 
 ## Vérifications
 
