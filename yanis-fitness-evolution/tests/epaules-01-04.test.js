@@ -13,7 +13,7 @@ const cases = [
   ["developpe-militaire-halteres-assis", "1794029524905.mp4", "36b8de7fcac4de278220161659ec9bcee2967cf23583f06362e49db528769ffe", "10-12", 75, /hors cadre/i, /sortent partiellement du cadre/i],
   ["elevations-laterales-halteres", "1794028540590.mp4", "468b595c00e0f29072990ccc9a44daa538a7e235e56d86986e7359c6fc0d2f55", "15", 45, /au-dessus de l'horizontale/i, /maximum jusqu'à la hauteur des épaules/i],
   ["face-pull-a-l-elastique", "1794028776811.mp4", "a067343915505928313299c6085a58c3d484530d8f60cffb392b5de1e3cd7522", "15", 45, /ancrage/i, /jamais autour des poignets/i],
-  ["face-pull-a-la-poulie", "1794028207138.mp4", "37b72b6627dea4a3d11ae08248e09ce66e3d3e0ea62762ef3c15d311e2c2df82", "15", 45, /au lieu d'un face pull vers le visage/i, /Ne reproduisez pas cette trajectoire/i],
+  ["face-pull-a-la-poulie", "1794042930308.mp4", "bbfd719a5c2097035949aff9f6509ff53c2a4e901fe6df07e975e02452bca997", "15", 45, /redescendent vers le buste au retour/i, /Ne laissez pas les mains descendre/i],
 ];
 
 test("épaules #01 à #04 : dépôts intacts, GIF, notices et consignes vocales", () => {
@@ -37,6 +37,7 @@ test("épaules #01 à #04 : dépôts intacts, GIF, notices et consignes vocales"
     assert.equal(sha(`public${video.poster}`), sha(`release${video.poster}`));
   }
   assert.equal(videoFor("face-pull-a-la-poulie").avoidSilentPreview, true);
+  assert.equal(sha("../1794028207138.mp4"), "37b72b6627dea4a3d11ae08248e09ce66e3d3e0ea62762ef3c15d311e2c2df82");
   // Pas d'association implicite pour la variante myo-reps suivante.
   assert.equal(videoFor("elevations-laterales-halteres-myo-reps"), null);
 });

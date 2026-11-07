@@ -1532,13 +1532,13 @@ export const EXERCISE_VIDEOS = {
     poster: "/videos/posters/face-pull-a-la-poulie.jpg",
     label: "Vidéo IA · Face pull à la poulie",
     status: "coached",
-    avoidSilentPreview: true, // Ce geste erroné ne doit pas tourner sans avertissement.
+    avoidSilentPreview: true, // Le retour imparfait nécessite la notice en vue complète.
     coaching: {
-      title: "Attention : ne reproduisez pas le tirage vers les hanches de cette vidéo.",
+      title: "Tirez vers le visage et gardez le retour à hauteur confortable.",
       handCue: "À la poulie haute, tenez une extrémité de corde dans chaque main avec une prise ferme.",
-      movementCue: "Tirez vers le visage, mains écartées et coudes confortablement hauts ; ne tirez pas vers les hanches.",
-      notice: "La vidéo montre un tirage vers les hanches au lieu d'un face pull vers le visage : le geste démontré est incorrect. Ne le reproduisez pas. Le descriptif vocal et les consignes de la fiche priment ; suivez le tempo 2011.",
-      spoken: "Attention, la vidéo de face pull à la poulie montre un tirage vers les hanches qui n'est pas le geste demandé. Ne reproduisez pas cette trajectoire. Placez la poulie haute devant vous et tenez une extrémité de la corde dans chaque main. Pieds stables, buste droit, tirez en une seconde vers le visage en écartant les mains et en gardant les coudes confortablement hauts. Maintenez une seconde, puis revenez en deux secondes sous contrôle. Ne tirez pas vers les hanches, ne basculez pas et arrêtez avant toute douleur. Trois séries de quinze répétitions, quarante-cinq secondes de repos. La consigne est prioritaire sur la vidéo.",
+      movementCue: "Tirez vers le visage, mains écartées et coudes confortablement hauts ; revenez vers la poulie sans abaisser les mains vers le ventre.",
+      notice: "Cette nouvelle vidéo tire vers le visage, mais les mains redescendent vers le buste au retour et la corde se déforme. Ne copiez pas cette descente : gardez les mains à hauteur confortable et suivez le tempo 2011.",
+      spoken: "Face pull à la poulie. Placez la poulie haute devant vous et tenez une extrémité de la corde dans chaque main. Pieds stables, buste droit, tirez en une seconde vers le visage en écartant les mains et en gardant les coudes confortablement hauts. Maintenez une seconde, puis revenez vers la poulie en deux secondes sous contrôle. La nouvelle vidéo tire vers le visage mais les mains redescendent vers le buste au retour et la corde se déforme. Ne laissez pas les mains descendre vers le ventre ; gardez-les à une hauteur confortable et suivez le tempo plutôt que le rythme de l'image. Ne basculez pas et arrêtez avant toute douleur. Trois séries de quinze répétitions, quarante-cinq secondes de repos.",
     },
   },
 };

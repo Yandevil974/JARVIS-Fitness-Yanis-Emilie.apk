@@ -49,8 +49,8 @@ Start with both arms reaching FORWARD toward the pulley, hands at face height. B
 The hands and rope must stay near FACE HEIGHT throughout the pull: NEVER move them down to the chest, waist, hips or thighs. No straight-arm pulldown, no triceps pushdown, no rowing to the waist, no torso swing, no cable detachment, no extra limbs, no text and NO camera movement.
 ```
 
-Les quatre MP4 déposés sont intégrés avec les réserves détaillées dans le contrôle. Le face pull poulie ne montre pas le bon geste ; ne pas reproduire le tirage vers les hanches.
+Les quatre MP4 déposés sont intégrés avec les réserves détaillées dans le contrôle. Le face pull poulie a depuis été remplacé par une reprise : voir [contrôle](./47-EPAULES-04-REPRISE-CONTROLE.md).
 
 ## Reprise demandée par Yanis — #04
 
-La vidéo reçue tire vers les hanches : la conserver avec son avertissement pendant la reprise, sans la qualifier de face pull correct. Utiliser la photo #04 existante et le prompt corrigé ci-dessus, qui impose le trajet des deux mains à hauteur du visage et interdit le mouvement vers le bas. La photo et le prompt ne garantissent pas le résultat vidéo ; contrôler la source reçue. Dos #16 reste tel quel, avec ses réserves ; aucune reprise du rowing n’a été demandée.
+La première vidéo tirait vers les hanches. Yanis a depuis déposé une reprise : elle tire vers le visage mais les mains s’abaissent au retour et la corde se déforme. Elle est intégrée avec ses réserves : [contrôle](./47-EPAULES-04-REPRISE-CONTROLE.md). Dos #16 reste tel quel, avec ses réserves ; aucune reprise du rowing n’a été demandée.

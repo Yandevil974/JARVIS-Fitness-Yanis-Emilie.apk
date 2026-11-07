@@ -1,5 +1,7 @@
 # Épaules #01 à #04 — contrôle des vidéos déposées
 
+**Mise à jour** : le #04 ci-dessous décrit la première version. Une nouvelle vidéo a depuis été intégrée ; voir [contrôle de reprise #04](./47-EPAULES-04-REPRISE-CONTROLE.md). Les observations sur #01 à #03 restent valables.
+
 Quatre MP4 déposés par Yanis au commit `99e7f96`. Conformément à son accord permanent, les quatre sont conservés tels quels et intégrés `coached` avec notices et descriptifs vocaux ; aucune nouvelle génération n'est demandée. Le statut `coached` ne signifie pas que les vidéos représentent parfaitement les exercices. Les fichiers originaux, les GIF et la programmation sont conservés.
 
 | # | Exercice | Fichier reçu | SHA-256 | Observations |
