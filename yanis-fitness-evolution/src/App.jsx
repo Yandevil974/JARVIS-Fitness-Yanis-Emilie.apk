@@ -1,4 +1,5 @@
 import Team from "./pages/Team.jsx";
+import Apercu from "./pages/Apercu.jsx";
 import React, { useState, useEffect, useRef } from "react";
 import { useApp } from "./store/AppContext.jsx";
 import { Icon, IconButton, Badge, Button, Orb } from "./components/ui.jsx";
@@ -41,6 +42,7 @@ const NAV = [
   ["cardio", "Waves", "Cardio & piscine"],
   ["recovery", "Leaf", "Récupération"],
   ["team", "UsersRound", "Mon équipe"],
+  ["apercu", "Images", "Aperçu visuels"],
 ];
 const PAGE = {
   dashboard: Dashboard,
@@ -54,6 +56,7 @@ const PAGE = {
   profile: Profile,
   nutrition: Nutrition,
   team: Team,
+  apercu: Apercu,
 };
 export default function App() {
   const {

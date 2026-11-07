@@ -56,6 +56,8 @@ export default defineConfig({
   },
   build: {
     outDir: "release",
+    // Keep the documented dead legacy bundle untouched; release is synchronized deliberately by CI.
+    emptyOutDir: false,
     assetsInlineLimit: 10000,
     chunkSizeWarningLimit: 1600
   },

@@ -10,10 +10,10 @@ import {
   newTimerMemo,
   timerStepAnnouncement,
 } from "../engine/voice-coach.js";
-import { durationLabel, assetSrc } from "../engine/utils.js";
-import { demonstrationFor } from "../engine/demo-match.js";
-import { exerciseById } from "../data/library.js";
-import { Ring, Icon, Button } from "./ui.jsx";
+import { durationLabel } from "../engine/utils.js";
+import { nextRestExercise } from "../engine/rest-next.js";
+import RestNext from "./RestNext.jsx";
+import { Ring, Icon } from "./ui.jsx";
 export function useNow(interval = 250) {
   const [now, setNow] = useState(Date.now());
   useEffect(() => {
@@ -75,28 +75,10 @@ export default function RestTimer() {
   const t = base && base.meta.type === "rest" ? advanceTimer(base, now) : null;
   const remaining = t ? Math.max(0, t.remaining || 0) : 0;
   const stepSeconds = t ? t.steps[Math.min(t.index, t.steps.length - 1)].seconds : 1;
-  const workout = p.workout;
-  const next = (() => {
-    if (!workout) return null;
-    const idx = workout.exercises.findIndex(
-      (x) => x.sets.filter((s) => s.completed).length < x.targetSets,
-    );
-    if (idx < 0) return null;
-    const x = workout.exercises[idx];
-    const ex = exerciseById(x.exerciseId);
-    if (!ex) return null;
-    const done = x.sets.filter((s) => s.completed).length;
-    const demo = ex.gif ? { path: ex.gif } : demonstrationFor(ex);
-    return {
-      nom: x.sourceName || ex.name,
-      serie: done + 1,
-      total: x.targetSets,
-      charge: x.targetLoad,
-      unite: x.unit,
-      reps: x.repScheme || `${x.repsLow}–${x.repsHigh}`,
-      img: demo?.path || ex.img || null,
-    };
-  })();
+  const next = nextRestExercise(p.workout);
+  const reducedMotion = !!p.preferences.reducedMotion ||
+    (typeof window !== "undefined" &&
+      !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches);
   return (
     <div className="rest-widget">
       <div className="eyebrow">
@@ -159,33 +141,7 @@ export default function RestTimer() {
             : "Le timer se lance après une série validée."}
         </p>
       )}
-      {next && (
-        <div className="rest-next">
-          <span className="eyebrow">ENSUITE</span>
-          <div className="rest-next-body">
-            {next.img && (
-              <button
-                type="button"
-                className="rest-next-thumb"
-                title="Agrandir"
-                onClick={() =>
-                  setModal({ type: "image", src: next.img, title: next.nom })
-                }
-              >
-                <img loading="lazy" src={assetSrc(next.img)} alt={next.nom} />
-                <Icon name="Maximize2" size={12} />
-              </button>
-            )}
-            <div>
-              <strong>{next.nom}</strong>
-              <small>
-                Série {next.serie} / {next.total} · {next.reps}{" "}
-                {next.charge != null ? `· ${next.charge} ${next.unite}` : ""}
-              </small>
-            </div>
-          </div>
-        </div>
-      )}
+      <RestNext next={next} setModal={setModal} reducedMotion={reducedMotion} />
     </div>
   );
 }

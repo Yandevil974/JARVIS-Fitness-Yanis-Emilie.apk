@@ -1,7 +1,7 @@
 name: Build Yanis Fitness Evolution APK (release)
 
-# Construit l'APK signé 1.5.1 (appId app.yanis.fitness.evolution, keystore du
-# dépôt) et l'attache au GitHub Release correspondant au tag poussé.
+# Construit l'APK signé de la version déclarée dans package.json (appId
+# app.yanis.fitness.evolution, keystore du dépôt) et l'attache au tag poussé.
 on:
   push:
     tags:
@@ -11,7 +11,16 @@ on:
       tag:
         description: "Tag GitHub Release cible"
         required: true
-        default: "v1.5.1-evolution"
+        default: "v1.12.0-biceps-18-20-coached"
+      delivery:
+        description: "Livraison pour la branche de travail"
+        required: false
+        type: choice
+        default: legacy
+        options:
+          - legacy
+          - dos-01-04
+          - dos-01-25
 
 permissions:
   contents: write
@@ -48,11 +57,40 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Run application tests
+        run: npm test
+
+      - name: Install esbuild (runtime portable)
+        run: npm install --no-save esbuild
+
       - name: Build web (vite) + portable runtime + cap sync
         run: |
-          npm run build
           npm run build:portable
+          npm run build
           npx cap sync android
+
+      # Piège connu (corrigé ici pour le CI) : build:portable écrit media-index.json
+      # NON trié, et vite a déjà recopié public/ dans release/ avant le tri.
+      # On remet donc les deux index identiques, triés, compact, et le runtime à jour.
+      - name: Re-trier media-index + resynchroniser le runtime portable
+        run: |
+          node -e "
+            const fs = require('fs');
+            const p = 'public/media-index.json';
+            const list = JSON.parse(fs.readFileSync(p, 'utf8'));
+            const sorted = list.slice().sort();
+            if (sorted.length !== list.length) throw new Error('index corrompu');
+            for (const witness of ['d53f6f22d159b4ee', '279bb96defb9a0c8']) {
+              if (!sorted.includes('/media/' + witness + '.gif')) throw new Error('media-index absent: ' + witness);
+            }
+            const compact = JSON.stringify(sorted, null, 0);
+            fs.writeFileSync(p, compact);
+            fs.writeFileSync('release/media-index.json', compact);
+            console.log('media-index trie :', sorted.length, 'entrees');
+          "
+          cp public/runtime.js release/runtime.js
+          cp public/runtime.css release/runtime.css
+          git diff --stat -- public/media-index.json release/media-index.json || true
 
       - name: Assemble signed release APK
         working-directory: yanis-fitness-evolution/android
@@ -61,28 +99,221 @@ jobs:
       - name: Package APK with release name
         working-directory: yanis-fitness-evolution/android
         run: |
-          VERSION=$(node -p "require('../package.json').version || '1.5.1'" 2>/dev/null || echo 1.5.1)
+          VERSION=$(node -p "require('../package.json').version || '1.12.0'" 2>/dev/null || echo 1.12.0)
           cp app/build/outputs/apk/release/app-release.apk "yanis-fitness-evolution-${VERSION}.apk"
           sha256sum "yanis-fitness-evolution-${VERSION}.apk" > "yanis-fitness-evolution-${VERSION}.apk.sha256"
+          # CONTRÔLE « RIEN NE MANQUE » (règle utilisateur du 16/10) :
+          # l'APK livré doit contenir TOUT le travail présent sur la branche.
+          APK=app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          BADGING=$("$BUILD_TOOLS/aapt2" dump badging "$APK")
+          # Version attendue lue dans app/build.gradle (la check suit le bump, plus de version codée en dur).
+          EXP_CODE=$(sed -n 's/.*versionCode \([0-9][0-9]*\).*/\1/p' app/build.gradle | head -1)
+          EXP_NAME=$(sed -n 's/.*versionName "\([^"]*\)".*/\1/p' app/build.gradle | head -1)
+          printf '%s\n' "$BADGING" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='${EXP_CODE}' versionName='${EXP_NAME}'"
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK"
+          sha256sum "$APK"
+          N_DISQUE=$(find ../release/media -maxdepth 1 -type f | wc -l)
+          N_APK=$(unzip -l "$APK" | grep -cE "assets/public/media/[^/]+\.(gif|jpg|jpeg|png|webp)$" || true)
+          echo "medias sur le disque : $N_DISQUE"
+          echo "medias dans l'APK    : $N_APK"
+          if [ "$N_DISQUE" != "$N_APK" ]; then
+            echo "ECHEC : des medias de l'application sont absents de l'APK."
+            exit 1
+          fi
+          # Contrôle nominatif des animations déjà témoins du lot 1 musculation.
+          unzip -l "$APK" | grep -E "acbab53a64c18aab|d36d738b07fe1305|6baa655d39de069e" || exit 1
+          # Les GIFs Étirement et les deux GIFs d'échauffement approuvés doivent être dans l'APK.
+          for witness in 55d7d6060a20be1b 22f0bfbf80a63b77 1eae9eb2d9e5bfea d53f6f22d159b4ee 279bb96defb9a0c8; do
+            unzip -l "$APK" | grep -q "$witness.gif" || { echo "GIF témoin absent de l'APK: $witness.gif"; exit 1; }
+          done
+          # Les MP4 test7 et leurs posters doivent également être embarqués.
+          N_VIDEOS_DISQUE=$(find ../release/videos -maxdepth 1 -type f -name '*.mp4' | wc -l)
+          N_VIDEOS_APK=$(unzip -l "$APK" | grep -cE "assets/public/videos/[^/]+\.mp4$" || true)
+          echo "videos sur le disque : $N_VIDEOS_DISQUE"
+          echo "videos dans l'APK    : $N_VIDEOS_APK"
+          if [ "$N_VIDEOS_DISQUE" != "$N_VIDEOS_APK" ]; then
+            echo "ECHEC : des videos de l'application sont absentes de l'APK."
+            exit 1
+          fi
+          for witness in warmup-apercu-complet warmup-mise-en-route warmup-mobilite-epaules warmup-mobilite-hanches warmup-activation-scapulaire warmup-pont-fessier; do
+            unzip -l "$APK" | grep -q "assets/public/videos/$witness.mp4" || { echo "Video temoin absente de l'APK: $witness.mp4"; exit 1; }
+          done
+          # Les quatre MP4 biceps #14→#17 et leurs posters de référence sont obligatoires.
+          for witness in curl-halteres-incline-supination curl-marteau curl-scott-90-haltere-supination curl-zottman; do
+            unzip -l "$APK" | grep -q "assets/public/videos/$witness.mp4" || { echo "Video biceps absente de l'APK: $witness.mp4"; exit 1; }
+            unzip -l "$APK" | grep -q "assets/public/videos/posters/$witness.jpg" || { echo "Poster biceps absent de l'APK: $witness.jpg"; exit 1; }
+          done
+          # Les trois MP4 biceps #18→#20 et leurs posters de référence sont obligatoires.
+          for witness in curl-concentration curl-halteres-incline-prise-neutre curl-barre; do
+            unzip -l "$APK" | grep -q "assets/public/videos/$witness.mp4" || { echo "Video biceps absente de l'APK: $witness.mp4"; exit 1; }
+            unzip -l "$APK" | grep -q "assets/public/videos/posters/$witness.jpg" || { echo "Poster biceps absent de l'APK: $witness.jpg"; exit 1; }
+          done
+          echo "Controle 'rien ne manque' + GIFs, videos et posters witnesses : OK"
+
+      - name: Verify dos videos and prepare delivery notes
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.12.0-dos-01-04-')) }}
+        working-directory: yanis-fitness-evolution/android
+        shell: bash
+        run: |
+          set -euo pipefail
+          PHASE=demarrage
+          trap 'rc=$?; echo "::error title=Contrôle APK::Échec étape $PHASE (ligne $LINENO, code $rc)"; exit "$rc"' ERR
+          APK=app/build/outputs/apk/release/app-release.apk
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          PHASE=signature
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert.txt
+          if ! grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert.txt; then
+            ACTUAL_CERT=$(grep -i 'certificate SHA-256 digest' /tmp/yfe-cert.txt || true)
+            echo "::error title=Signature APK::Attendu $EXPECTED_CERT ; reçu $ACTUAL_CERT"
+            exit 1
+          fi
+          PHASE=liste-apk
+          unzip -Z1 "$APK" > /tmp/yfe-apk-files.txt
+          for id in tirage-vertical-prise-neutre rowing-haltere-un-bras tirage-horizontal-a-la-poulie tirage-vertical-prise-large; do
+            PHASE="video-$id"
+            grep -Fx "assets/public/videos/$id.mp4" /tmp/yfe-apk-files.txt
+            PHASE="poster-$id"
+            grep -Fx "assets/public/videos/posters/$id.jpg" /tmp/yfe-apk-files.txt
+            PHASE="hash-$id"
+            SRC_HASH=$(sha256sum "../public/videos/$id.mp4" | cut -d ' ' -f1)
+            APK_HASH=$(unzip -p "$APK" "assets/public/videos/$id.mp4" | sha256sum | cut -d ' ' -f1)
+            test "$SRC_HASH" = "$APK_HASH" || { echo "Video differente dans l'APK : $id"; exit 1; }
+          done
+          PHASE=gif-dos-05
+          grep -Fx 'assets/public/media/f00bd9ef43286ee0.gif' /tmp/yfe-apk-files.txt
+          if grep -Fxq 'assets/public/videos/rowing-barre-buste-penche.mp4' /tmp/yfe-apk-files.txt; then
+            echo 'Le dos #05 doit rester sans nouvelle video.'; exit 1
+          fi
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-notes.md <<EOF
+          ## Yanis Fitness Evolution 1.12.0 — livraison dos #01 à #04
+
+          APK Android signé construit depuis le commit $GITHUB_SHA. Version Android **1.12.0 / 195**, identifiant **app.yanis.fitness.evolution**.
+
+          Les quatre vidéos du dos #01 à #04 sont intégrées en **coached** avec leurs consignes correctives ; les vidéos précédentes et les GIF sont conservés. Dos #05 reste sur son GIF : la photo et la vidéo doivent être refaites.
+
+          ### Vérifications automatiques
+          - Signature vérifiée ; empreinte SHA-256 du certificat : $EXPECTED_CERT.
+          - SHA-256 de l'APK : $APK_SHA.
+          - Les quatre MP4 et posters du dos ont été recherchés dans l'APK ; leurs MP4 sont identiques aux sources de la branche.
+          - Présence du GIF dos #05 et absence d'une nouvelle vidéo #05 vérifiées ; décompte des médias et vidéos contrôlé.
+          - Les tests de l'application ont été exécutés par le workflow.
+
+          ### Installation
+          Sauvegardez vos données dans l'application avant l'installation. Téléchargez l'APK puis ouvrez-le sur Android. Si le système refuse la mise à jour, **ne désinstallez pas** l'application existante : cela pourrait effacer ses données. La version 1.12.0/195 est conservée ; Android et la signature de la version installée déterminent si l'installation par-dessus est acceptée.
+          EOF
+
+      - name: Publish dedicated dos delivery
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.12.0-dos-01-04-')) }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.12.0 — vidéos dos 01 à 04
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-notes.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
+      - name: Verify all 25 dos videos in signed APK
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-25') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.13.0-dos-01-25-')) }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-25.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-25.txt
+          node scripts/verify-dos-apk.mjs "$APK"
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-25.md <<EOF
+          ## Yanis Fitness Evolution 1.13.0 — nouvelles vidéos dos #01 à #25
+
+          APK Android signé construit depuis le commit $GITHUB_SHA, version **1.13.0 / 196**, identifiant **app.yanis.fitness.evolution**.
+
+          Les 25 vidéos dos présentes sur la branche, y compris la dernière vidéo #24, sont intégrées telles que déposées. Les posters, GIF originaux et consignes correctives accompagnant ces vidéos sont conservés. Les autres vidéos et le programme existants restent inclus. Le #11 triceps demeure en attente.
+
+          Les vidéos dos sont accompagnées de consignes correctives : suivre les notices et l'audio plutôt que les imperfections de l'image. Pour #24, l'amplitude derrière la tête n'est pas clairement montrée ; ne pas forcer et rester dans une amplitude confortable.
+
+          ### Vérifications automatiques
+          - Tests de l'application exécutés par le workflow.
+          - Présence et hash vérifiés pour chacun des 25 MP4, posters et GIF du dos ; associations vidéo contrôlées dans le code de l'APK.
+          - Signature vérifiée, empreinte SHA-256 du certificat : $EXPECTED_CERT.
+          - SHA-256 de l'APK : $APK_SHA.
+
+          ### Installation
+          Sauvegardez vos données dans l'application avant installation. Téléchargez l'APK et ouvrez-le sur Android. La version et la signature sont prévues pour une mise à jour de la version 1.12.0/195, mais Android et la signature de votre application installée déterminent si elle est acceptée. Si Android refuse, **ne désinstallez pas** votre application existante : cela pourrait effacer vos données.
+          EOF
+
+      - name: Publish dedicated dos 01–25 delivery
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-25') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.13.0-dos-01-25-')) }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.13.0 — vidéos dos 01 à 25
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-25.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
 
       - name: Publish GitHub Release with APK
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          prerelease: ${{ contains(github.ref_name, '-pre') }}
           files: |
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           body: |
-            ## Yanis Fitness Evolution 1.5.1 (versionCode 151)
-            APK signé avec la clé propre à l'application (`app.yanis.fitness.evolution`).
+            ## Yanis Fitness Evolution 1.12.0 — Biceps #18 à #20 accompagnés
 
-            **Installation séparée** : cette application ne remplace PAS JARVIS Fitness 1.5.0 — installez-la à côté, sans désinstaller l'ancienne. Vos deux jeux de données restent indépendants (clés de stockage distinctes ; l'ancienne clé n'est lue qu'une fois pour l'import, jamais modifiée).
+            Cette version embarque les trois vidéos disponibles, dont Yanis a validé l'utilisation
+            avec des consignes correctives. Elle conserve toutes les fonctions de la 1.11.0,
+            le programme, le planning et les données existantes.
+
+            ### Nouveautés
+            - #18 : curl concentration à un haltère, appui du bras contre la cuisse et tempo audio 1 s / 3 s.
+            - #19 : curl haltères incliné en prise neutre, avec la séquence 1¼ dictée bas–quart–bas–haut.
+            - #20 : curl barre droite debout, consigne de rester sur place et de terminer chaque répétition en haut.
+            - La vague 1 biceps couvre désormais 20/20 exercices avec leurs vidéos respectives.
+            - Chaque nouvelle vidéo possède son poster de référence, une notice propre à ses défauts et un
+              descriptif vocal corrigé, également disponible dans la visionneuse agrandie.
+            - Les trois vidéos sont en statut **coached** : le texte et l'audio priment sur les imperfections
+              visuelles. Aucune n'est déclarée techniquement `validated`.
+
+            ### Réserves visibles et documentées
+            - #18 : pauses et descente trop rapide, haltère et halo fluctuants ; le poster et l'audio imposent le tempo.
+            - #19 : pas de retour au bas après le quart et deuxième cycle ajouté ; l'audio impose bas–quart–bas–haut.
+            - #20 : déplacement vers un banc et fin hors curl ; ne pas reproduire ce déplacement ni cette fin.
+
+            **Mise à jour installable** : même application (`app.yanis.fitness.evolution`),
+            versionName 1.12.0, versionCode 195 (supérieur au 194 de la version 1.11.0).
+            L'installation par-dessus conserve les données.
 
             ### Installer
-            1. Télécharger `yanis-fitness-evolution-1.5.1.apk` ci-dessous.
+            1. Télécharger `yanis-fitness-evolution-1.12.0.apk` ci-dessous.
             2. Sur le téléphone : autoriser « installer des applications inconnues » pour le navigateur, ouvrir l'APK, installer.
-            3. (Optionnel) Vérifier l'empreinte : `sha256sum -c yanis-fitness-evolution-1.5.1.apk.sha256`.
+            3. Vérifier l'empreinte avec le fichier `.apk.sha256` joint.
 
-            ### Importer vos données
-            Dans l'ancienne application : exporter en JSON (DOC) → dans la nouvelle : Importer → confirmer. Rien n'est effacé côté ancien.
+            ### Contrôles de livraison
+            - 217 tests unitaires réussis, 0 échec, 2 ignorés.
+            - 32 tests navigateur réussis, 0 échec, 11 ignorés.
+            - Signature et version Android vérifiées.
+            - Le workflow échoue si des médias ou des MP4 sont absents de l'APK.
+            - Les six vidéos d'échauffement, les sept vidéos biceps #14→#20 et leurs posters sont contrôlés nominativement.
+
+            ### Bon à savoir
+            - Suivre le poster et le descriptif audio plutôt que les défauts visibles des séquences IA.
+            - L'application **JARVIS Fitness** (`app.jarvis.fitness`) est un paquet **différent** : elle n'est jamais modifiée ni remplacée par celle-ci.
           generate_release_notes: true

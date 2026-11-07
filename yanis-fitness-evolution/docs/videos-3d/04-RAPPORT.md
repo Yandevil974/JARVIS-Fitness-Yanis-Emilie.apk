@@ -1,0 +1,198 @@
+# ÉTAPE 9 — Rapport (reprise 1.8.8 + test7, 22/10/2026)
+
+## Reprise en cours — base 1.8.8, état visuel test7
+
+- **Base applicative conservée :** tag `v1.8.8-jarvis-keytest` (`8ce106bf`),
+  avec JARVIS Brain, sa mémoire contrôlée, ses tests et les modules piscine.
+- **Point vidéo repris :** `c88ae9f` (`v1.5.1-videos-vague1-test7`). Aucun
+  commit ou essai postérieur à ce point n'est intégré.
+- **Échauffement test7 intégré comme un module cohérent :** E1→E5, aperçu
+  30 s, minuteur, approches liées au premier exercice et repli GIF.
+- **Personnage unique verrouillé par Yanis :**
+  `reference-personnage-verrouille.jpg`. Les nouvelles productions doivent
+  utiliser cette ancre, pas les anciens personnages des documents historiques.
+- **Priorité #02/#09 :** nouveaux visuels, zooms et prompts dans
+  `07-BICEPS-02-09-CORRECTIONS.md`. Au 23/10, les deux MP4 de Yanis sont
+  intégrés en `coached` avec descriptif audio de prise fixe et avertissement
+  contre la rotation IA. Ils ne sont pas marqués `validated`. Le poster #02
+  est le visuel v9 approuvé par Yanis.
+
+## Terminé ✅
+
+- **Audit complet** : framework React 19 + Vite + Capacitor, catalogue de
+  **203 exercices** (dont 17 triceps), composants GIF (`Movement.jsx`,
+  `demo-match.js`), minuteurs, emplacements, build/tests (`00-AUDIT.md`).
+- **Personnage avec casquette** : `personnage-casquette-squat.jpg`
+  (même personnage que ta photo + casquette noire mate).
+- **3 images de référence pilotes** (même personnage, muscles en rouge) :
+  `ref-curl-halteres.jpg`, `ref-triceps-pushdown.jpg`, `ref-back-squat.jpg`.
+- **3 dossiers pilotes** avec noms exacts + consignes réelles du catalogue
+  (`01-LOT-PILOTE.md`).
+- **3 prompts Arena Video prêts à copier** + gabarit générique
+  (`02-PROMPTS-ARENA.md`). Le prompt triceps est la priorité (n° 2).
+- **Intégration code non destructive** :
+  - nouveau `src/data/exercise-videos.js` (3 pilotes en `pending`, repli GIF) ;
+  - `Movement.jsx` : branche `<video>` prioritaire + Lecture/Pause + zoom ;
+  - `ImageViewer` + `ModalRoot` : lecture plein écran des MP4 ;
+  - styles `.movement-video` appendus à `styles.css` (aucune règle touchée) ;
+  - `public/videos/` + `README.md` (conventions, compression, anti-gonflement) ;
+  - posters pilotes déjà copiés dans `public/videos/posters/`.
+- **Aucune ressource supprimée ou remplacée.** Séquence séance inchangée.
+
+## En attente ⏳ (nécessite ton action : génération vidéo par toi)
+
+- **20/10/2026 — 5 vidéos intégrées** : E1 Mise en route + E2 Épaules +
+  E3 Hanches + E4 Pont fessier (kit échauffement COMPLET ✅) et le pilote
+  muscu **triceps** ⭐ (`extension-triceps-a-la-poulie.mp4`, 8,6 s).
+  Sources : PixVerse (E1-E4, via branche `arena/d5e16737-…`) + rendu local
+  session précédente (triceps, même branche).
+- **21/10/2026 — E5 intégrée, échauffement 100 % terminé** : 5 vidéos
+  + aperçu complet v2 (30 s, E1→E2→E5→E3→E4). Guide des descriptions
+  précises créé (`06-DESCRIPTIONS-PRECISES.md`) : prompts T1 (triceps
+  chromé), M1 (curl), M2 (squat) prêts pour PixVerse/MiniMax.
+- **21/10/2026 — Vague 0 CLOSE (2/2)** : squat validé+intégré
+  (PixVerse 4 s, barre sur les trapèzes, filigrane bref comme E1).
+  Prochaine étape : vague 1 = biceps complet (20), par lots de 4.
+- **22/10/2026 — Vague 1 lot 1 intégré (biceps 5/20 avec #01)** : #02 Scott
+  EZ pronation + #03 marteau assis (alterné) + #04 incliné (PixVerse 4 s,
+  filigranes brefs) + #08 barre debout (FLUX 10 s, sans filigrane —
+  montre une barre EZ, exactitude à confirmer).
+- **22/10/2026 — #02 rejetée post-validation** : la v1 montrait une
+  supination au lieu de la pronation (retour Yanis, validé trop vite sur
+  petites imagettes) → vidéo désactivée (repli GIF), photo refaite
+  (paumes vers le bas, vue face), prompt B2 renforcé. Leçon : contrôler
+  la PRISE en gros plan avant de valider.
+- **22/10/2026 — Vague 1 lot 2 intégré (biceps 7/20)** : #05 Scott EZ
+  supination + #06 Scott haltère neutre + #07 poulie basse (PixVerse 4 s,
+  filigranes brefs, prises vérifiées en zoom). #02/#09 parquées : prise
+  pronation impossible à générer (9 rejets) → Yanis fournit une photo de
+  référence du web.
+- **23/10/2026 — lot biceps #10→#13 intégré** : #10/#12 en `validated`
+  après validation de Yanis ; #11/#13 en `coached` avec consignes audio
+  prioritaires après acceptation explicite malgré les écarts relevés.
+  Les MP4 et posters sont embarqués dans `public/` et `release/`.
+- **23/10/2026 — lot biceps #14→#17 préparé** : quatre images, quatre zooms et
+  les prompts Arena Video/PixVerse sont consignés dans
+  `09-BICEPS-14-17-PRODUCTION.md`. Les écarts des GIF #14/#15/#17 sont
+  documentés. Yanis examine directement les photos et signale les problèmes,
+  sans confirmation systématique photo par photo.
+- **25/10/2026 — quatre MP4 #14→#17 contrôlés puis acceptés en `coached`** :
+  les sources présentent des défauts de cycle, de prise, de caméra ou
+  d'anatomie, consignés avec six instants et zooms dans
+  `10-BICEPS-14-17-CONTROLE-MP4.md`. Yanis valide ensuite explicitement leur
+  intégration faute de meilleure version. Posters de référence, notices propres
+  et descriptifs audio corrigés sont obligatoires ; aucun n'est `validated`.
+- **25/10/2026 — lot biceps #18→#20 préparé** : trois photos, trois zooms et
+  les prompts Arena Video/PixVerse sont consignés dans
+  `11-BICEPS-18-20-PRODUCTION.md`. Le #19 précise le quart aller-retour en bas
+  du tempo `3210` ; le #20 retient une barre droite debout. Aucun MP4 de ce
+  lot n'a encore été généré, contrôlé ou intégré.
+- **25/10/2026 — trois MP4 #18→#20 contrôlés** : #18 réalise un cycle complet
+  mais avec des réserves de tempo et de rendu ; son intégration `coached`
+  nécessite l'accord de Yanis. #19 ne fait pas le retour au bas du 1¼ et #20
+  sort du curl pour rejoindre un banc : ces deux sources sont à régénérer.
+  Preuves dans `12-BICEPS-18-20-CONTROLE-MP4.md` ; aucune n'est intégrée.
+- **25/10/2026 — lot biceps #18→#20 intégré en `coached`** : après avoir reçu
+  les trois défauts détaillés, Yanis répond « Je valide les vidéos ». Les trois
+  sources sont donc utilisées avec posters, notices propres et audio prioritaire,
+  sans devenir `validated`. La vague 1 biceps couvre désormais **20/20 exercices**
+  avec leurs vidéos respectives ; les défauts et preuves restent dans
+  `12-BICEPS-18-20-CONTROLE-MP4.md`.
+- **25/10/2026 — vague 2 triceps #02→#05 préparée** : quatre photos, quatre
+  zooms et les prompts Arena Video/PixVerse sont consignés dans
+  `13-TRICEPS-02-05-PRODUCTION.md`. Le GIF #02 est un mouvement avec haltères,
+  pas des dips ; le GIF #04/#05 montre un haltère unique, pas la poulie basse
+  ou la barre EZ demandée. Les productions retiennent donc les noms, consignes
+  et tempos réels du programme. Aucun MP4, statut ou APK de ce lot n'est créé.
+- **25/10/2026 — triceps #02/#04 intégrés en `coached`** : Yanis a déposé
+  `1792927642615.mp4` (#02 dips) et `1792920234771.mp4` (#04 poulie basse) sur
+  la branche ; ce dépôt vaut son accord d'intégration. L'inspection conserve
+  les réserves de buste/texte IA pour #02 et de coudes/corde pour #04. Posters,
+  notices et audio correctifs sont actifs ; aucun des deux n'est `validated`.
+  Preuves et contrôles dans `14-TRICEPS-02-04-CONTROLE-MP4.md`. #03/#05 étaient
+  alors reportés à la fin, sans MP4, statut ou nouvelle génération.
+- **25/10/2026 — triceps #06→#09, préparation partielle contrôlée** :
+  #07 pushdown et #08 unilatéral ont une photo, un zoom et un prompt prêts pour
+  inspection dans `15-TRICEPS-06-09-PRODUCTION.md`. Les candidates #06 et #09
+  sont écartées après contrôle : coudes trop ouverts pour #06, barre trop proche
+  du cou pour #09. Aucune n'est retenue dans le dépôt et aucune vidéo ne doit
+  être produite avant correction. Aucun MP4, statut ou changement applicatif ;
+  #03/#05 restaient alors inchangés et reportés.
+- **25/10/2026 — triceps #05→#09 intégrés en `coached`** : Yanis a déposé
+  trois nouvelles sources sur la branche (`2e8bca6`) et autorisé explicitement
+  la même vidéo pour #05/#06/#09. Cette source commune est canonisée une seule
+  fois ; #07 pushdown et #08 unilatéral ont leurs MP4 propres. L'inspection
+  conserve les réserves de barre proche du cou/coudes ouverts pour la source
+  commune, de tempo pour #07 et de poignet/tempo pour #08. Les cinq notices et
+  les cinq descriptifs audio restent spécifiques. Preuves dans
+  `16-TRICEPS-05-09-CONTROLE-MP4.md`. #03 restait alors sans MP4 et #02 n'avait
+  pas été retouché.
+- **25/10/2026 — #03 corrigé avec appui des coudes** : Yanis précise que sa
+  demande de barre concernait #03 et non #02. Une nouvelle photo et un zoom
+  ajoutent une barre fixe matelassée reliée au banc derrière/sous les coudes,
+  dans l'angle de #08. Les deux haltères et la prise neutre paumes face à face
+  restent obligatoires ; le prompt est mis à jour dans
+  `13-TRICEPS-02-05-PRODUCTION.md`. À cette étape, aucun MP4 ou statut n'était
+  encore ajouté pour #03 ; #02 reste inchangé.
+- **25/10/2026 — #03 intégré en `coached`** : Yanis dépose
+  `1792934757048.mp4` (`587fed0`). Le contrôle confirme les deux haltères, la
+  prise neutre, la barre fixe d'appui et le retour en haut. La descente rapide
+  et la pause en bas sont corrigées par la notice et l'audio `3010`. Le GIF est
+  conservé ; preuves dans `17-TRICEPS-03-CONTROLE-MP4.md`. Les triceps #01→#09
+  ont désormais tous une vidéo intégrée, sans modifier les statuts précédents.
+- **25/10/2026 — triceps #10/#12/#13 intégrés en `coached`** : Yanis dépose
+  les trois sources dans `72a205d`. #10 conserve une réserve de tempo, #12 de
+  trajectoire croisée et #13 de zoom/proximité avec le visage ; notices et
+  audio corrigés sont obligatoires. Preuves dans
+  `19-TRICEPS-10-13-CONTROLE-MP4.md`. **#11 est en stand-by à la demande de
+  Yanis**, sans MP4, avec sa photo de production corrigée : banc à 30°, deux
+  haltères neutres, appui des coudes et orientation latérale de #03. Elle sera
+  rappelée lors des prochains échanges vidéo, sans bloquer les autres lots.
+- **25/10/2026 — pectoraux #01→#04, préparation partielle** : les photos et
+  prompts #01 pompes mains surélevées, #02 développé haltères plat et #03
+  développé incliné haltères sont prêts dans
+  `20-PECTORAUX-01-04-PRODUCTION.md`. Les GIF inexacts ne servent pas de modèle
+  de posture. La photo #04 reste à reprendre : les candidates plaçaient la
+  barre au cou et ont été écartées. Aucun MP4 ou changement applicatif.
+- **25/10/2026 — pectoraux #01→#03 intégrés en `coached`** : Yanis dépose quatre
+  fichiers dans `bdae589` et `6bd8cb5`, dont deux versions de #01. La nouvelle
+  #01 remise est retenue ; l'ancienne reste seulement une preuve de comparaison.
+  #02 et #03 ont leurs propres MP4. Les notices corrigent respectivement la
+  pause haute, la synchronisation des bras et la tête/proximité des haltères.
+  Preuves dans `21-PECTORAUX-01-04-CONTROLE-MP4.md`. **#04 reste sans MP4** et
+  sa photo reste à reprendre ; aucune substitution haltère n'est faite.
+- **Restent à produire/intégrer hors stand-by #11** : la piscine, l'elliptique
+  et les étirements. Les GIF d'origine restent conservés comme fallback. La
+  mutualisation #05/#06/#09 est une exception utilisateur limitée à ces trois
+  exercices ; elle ne devient pas la règle pour les variantes suivantes.
+
+## Fichiers modifiés / créés
+
+- Modifiés : `src/components/Movement.jsx`,
+  `src/components/modals/ProtocolModals.jsx`, `src/components/ModalRoot.jsx`,
+  `src/styles.css` (ajout seul en fin de fichier).
+- Créés : `src/data/exercise-videos.js`, `public/videos/README.md`,
+  `public/videos/posters/*.jpg` (3), `docs/videos-3d/*.md` (5) + visuels (5).
+
+## Tests — reprise 1.8.8 + test7 (22/10/2026)
+
+- [x] `npm test` : **187 tests, 185 réussites, 0 échec, 2 ignorés** ;
+  tous les tests JARVIS Brain et les tests piscine passent.
+- [x] Contrôle ciblé échauffement/vidéos : **14/14 réussites**.
+- [x] `npm run build` : **1678 modules**, `release/` régénéré avec les
+  vidéos et posters embarqués.
+- [x] Playwright : **18 tests généraux réussis**, puis **2 tests ciblés
+  réussis** pour JARVIS Brain et les vidéos du récapitulatif/minuteur.
+  Les 11 scénarios de restauration restent ignorés faute de sauvegarde
+  jointe ; ce ne sont pas des échecs fonctionnels.
+- [x] Régressions corrigées pendant la fusion : canonicalisation de `&`
+  pour la vidéo hanches/chevilles, garde-fou des profils incomplets dans
+  `warmup()` et suppression d'une déclaration `guide` dupliquée.
+- [ ] Installation et lecture des MP4 sur le téléphone de Yanis.
+
+## Coûts / limites
+
+- Génération vidéo : selon ta formule Arena.ai (aucun coût engagé par moi).
+- Si les muscles colorés sont infidèles sur un essai : régénérer (variante
+  de correction) ou garder la vidéo pour le geste + planche anatomique de
+  la fiche pour l’info musculaire exacte.

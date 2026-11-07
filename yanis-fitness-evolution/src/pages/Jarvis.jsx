@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useApp } from "../store/AppContext.jsx";
 import {
   Button,
+  Confirm,
   Icon,
   PageHeading,
   Panel,
@@ -12,6 +13,15 @@ import {
 } from "../components/ui.jsx";
 import { exerciseById } from "../data/library.js";
 import { dateLabel } from "../engine/utils.js";
+import { brainEnabled } from "../brain/policy.js";
+import { memoryStats } from "../brain/memory.js";
+import {
+  brainConfig,
+  brainReady,
+  brainModels,
+  testArenaKey,
+} from "../engine/remote-brain.js";
+import { assistantLabel } from "./jarvis-label.js";
 export default function Jarvis() {
   const {
     p,
@@ -22,8 +32,32 @@ export default function Jarvis() {
     updateProfile,
     notify,
   } = useApp();
+  const brain = memoryStats(p),
+    brainOn = brainEnabled(p);
+  const arena = brainConfig(p);
+  const setArena = (patch) =>
+    updateProfile((q) => {
+      q.preferences.brain = { ...(q.preferences.brain || {}), ...patch };
+    });
   const [input, setInput] = useState(""),
-    [listening, setListening] = useState(false);
+    [listening, setListening] = useState(false),
+    [testing, setTesting] = useState(false),
+    [testState, setTestState] = useState(null),
+    [clearHistoryOpen, setClearHistoryOpen] = useState(false);
+  const runTest = () => {
+    if (testing || !brainReady(arena)) return;
+    setTesting(true);
+    setTestState(null);
+    testArenaKey(arena)
+      .then((r) => setTestState({ ok: true, model: r.model }))
+      .catch((e) =>
+        setTestState({
+          ok: false,
+          error: e && e.message ? e.message : "erreur inconnue",
+        }),
+      )
+      .finally(() => setTesting(false));
+  };
   const bottom = useRef(),
     recognition = useRef();
   useEffect(() => {
@@ -92,10 +126,24 @@ export default function Jarvis() {
     sendCoach(input.trim());
     setInput("");
   };
+  const clearHistory = () => {
+    updateProfile((q) => {
+      // Seule la conversation est effacée : programme, résultats et mémoires
+      // contrôlées appartiennent à des données distinctes.
+      q.messages = [];
+    });
+    setClearHistoryOpen(false);
+    notify(
+      "Historique JARVIS effacé. Vos entraînements, programmes et mémoires sont conservés.",
+    );
+  };
   const chips = [
+    "Décale mes séances de cette semaine à la semaine prochaine",
     "Je n’ai que 30 minutes",
     "Je suis fatigué",
     "Prépare 4 séances par semaine pendant 12 semaines",
+    "Retiens que je préfère m’entraîner le matin",
+    "Qu’est-ce que tu sais sur moi ?",
     "Remplace cet exercice",
     "Analyse ma semaine",
     "Exercice haut des pectoraux",
@@ -108,7 +156,7 @@ export default function Jarvis() {
         description="Un dialogue, des décisions expliquées, un programme qui évolue."
       >
         <Badge color="mint" dot>
-          MOTEUR LOCAL ACTIF
+          {brainReady(arena) ? "PLATE-FORME ARENA//X ACTIVE" : "MOTEUR LOCAL ACTIF"}
         </Badge>
       </PageHeading>
       <div className="coach-layout">
@@ -162,10 +210,10 @@ export default function Jarvis() {
                       <Icon
                         name={
                           [
+                            "CalendarRange",
                             "Clock3",
                             "BatteryMedium",
                             "CalendarRange",
-                            "Repeat2",
                           ][i]
                         }
                         size={18}
@@ -184,10 +232,13 @@ export default function Jarvis() {
                     <Icon name="Sparkles" size={16} />
                   </div>
                 )}
-                <div className="message-content">
+                <div
+                  className={`message-content${m.streaming ? " streaming" : ""}`}
+                >
                   {m.role === "assistant" && (
                     <div className="message-label">
-                      JARVIS <span>ANALYSE LOCALE</span>
+                      JARVIS{" "}
+                      <span>{assistantLabel(m)}</span>
                     </div>
                   )}
                   <p>{m.text}</p>
@@ -225,8 +276,33 @@ export default function Jarvis() {
                     >
                       {m.action.type === "log"
                         ? "Renseigner la série"
-                        : "Appliquer l’adaptation"}
+                        : m.action.type === "shift-week"
+                          ? "Décaler de 7 jours"
+                          : m.action.type === "adapt-loads"
+                            ? "Appliquer les charges"
+                            : "Appliquer l’adaptation"}
                     </Button>
+                  )}
+                  {m.brain?.kind === "memory_confirmation_guard" && (
+                    <div className="brain-guard-note">
+                      <Icon name="LockKeyhole" size={14} />
+                      Confirmation volontairement manuelle : le chat ne
+                      confirme, ne refuse et n’enregistre aucune mémoire.
+                    </div>
+                  )}
+                  {m.brain?.memoryId && (
+                    <button
+                      className="brain-memory-chip"
+                      onClick={() => navigate("profile", "brain")}
+                    >
+                      <Icon name="Brain" size={15} />
+                      {m.brain.memoryState === "hypothesis"
+                        ? "Hypothèse — à confirmer dans la mémoire contrôlée"
+                        : "Proposition mémoire en attente de confirmation"}
+                      <span>
+                        Ouvrir <Icon name="ArrowUpRight" size={13} />
+                      </span>
+                    </button>
                   )}
                   {m.applied && (
                     <div className="applied-state">
@@ -286,14 +362,147 @@ export default function Jarvis() {
             </button>
           </form>
           <div className="chat-disclaimer">
-            <Icon name="LockKeyhole" size={12} /> Analyse par règles locales,
-            pas de modèle externe connecté. Aucune donnée envoyée par JARVIS.
+            <Icon name="LockKeyhole" size={12} />{" "}
+            {arena.enabled && arena.key
+              ? "Conversation déléguée à votre plate-forme ARENA//X (clé conservée sur l’appareil). Commandes de l’appli et secours hors ligne : cerveau local."
+              : "Analyse par règles locales, pas de modèle externe connecté. Aucune donnée envoyée par JARVIS."}
+            <br />
+            Fitness Brain local : mémoire proposée uniquement sur commande
+            explicite, confirmée à la main dans Profil → Mémoire JARVIS, jamais
+            par un « oui » du chat.
             <br />
             La dictée, si utilisée, peut utiliser le service vocal Android ou
             celui du navigateur, selon vos réglages.
           </div>
+          <div className="chat-history-actions">
+            <Button
+              variant="secondary small"
+              icon="Trash2"
+              disabled={!p.messages.length}
+              onClick={() => setClearHistoryOpen(true)}
+            >
+              Effacer l’historique de JARVIS
+            </Button>
+          </div>
         </Panel>
         <aside className="chat-rail">
+          <Panel className="brain-panel">
+            <div className="eyebrow">PLATE-FORME IA PERSONNELLE</div>
+            <h3>ARENA//X conversationnel</h3>
+            <label className="brain-row">
+              <input
+                type="checkbox"
+                checked={arena.enabled}
+                onChange={(e) => setArena({ enabled: e.target.checked })}
+              />
+              <span>Conversation via ma plate-forme IA</span>
+            </label>
+            <label className="brain-row">
+              <span>Fournisseur</span>
+              <select
+                value={arena.provider}
+                onChange={(e) => setArena({ provider: e.target.value })}
+              >
+                <option value="groq">Groq (clé gsk-…)</option>
+                <option value="openrouter">OpenRouter (clé sk-or-…)</option>
+              </select>
+            </label>
+            <label className="brain-row">
+              <span>Clé API</span>
+              <input
+                type="password"
+                autoComplete="off"
+                placeholder="Collez votre clé ici"
+                value={arena.key}
+                onChange={(e) => setArena({ key: e.target.value })}
+              />
+            </label>
+            <label className="brain-row">
+              <span>Mode</span>
+              <select
+                value={arena.style}
+                onChange={(e) => setArena({ style: e.target.value })}
+              >
+                <option value="solo">Solo — un modèle répond</option>
+                <option value="collab">Collaboration — brouillons + synthèse</option>
+              </select>
+            </label>
+            <div className="brain-row">
+              <button
+                type="button"
+                className="brain-test-btn"
+                disabled={testing || !arena.enabled || !arena.key}
+                onClick={runTest}
+              >
+                {testing
+                  ? "Test en cours…"
+                  : testState && testState.ok
+                    ? "Retester la clé"
+                    : "Tester la clé"}
+              </button>
+            </div>
+            {testing && (
+              <small className="brain-test-info">
+                Appel de validation envoyé à votre plate-forme…
+              </small>
+            )}
+            {testState && testState.ok && (
+              <small className="brain-test-ok">
+                ✓ Clé valide — « {testState.model} » répond. La conversation est
+                active : parlez à JARVIS.
+              </small>
+            )}
+            {testState && !testState.ok && (
+              <small className="brain-test-err">✗ {testState.error}</small>
+            )}
+            <small>
+              Moteur identique à votre arène : appels directs Groq / OpenRouter,
+              streaming, et en collaboration deux brouillons fusionnés par le
+              synthétiseur. La clé reste sur cet appareil. Sans clé, sans
+              réseau ou en cas d’erreur, le cerveau local reprend la main.
+            </small>
+            {brainReady(arena) && (
+              <small className="brain-ready">
+                ● PRÊT — modèle : {brainModels(arena)[0]}
+              </small>
+            )}
+          </Panel>
+          <Panel className={`brain-rail ${brainOn ? "" : "off"}`}>
+            <div className="eyebrow">FITNESS BRAIN · LOCAL</div>
+            <h3>Mémoire contrôlée</h3>
+            <p className="small-subtitle">
+              Le Brain propose, vous confirmez. Aucun apprentissage automatique,
+              aucune donnée envoyée : le coach déterministe reste aux commandes
+              du programme.
+            </p>
+            <div className="brain-counts">
+              <div>
+                <strong>{brain.pending + brain.hypotheses}</strong>
+                <span>à confirmer</span>
+              </div>
+              <div>
+                <strong>{brain.confirmed}</strong>
+                <span>confirmées</span>
+              </div>
+              <div>
+                <strong>{brain.expired}</strong>
+                <span>expirées</span>
+              </div>
+            </div>
+            <Button
+              variant="secondary small"
+              icon="Brain"
+              onClick={() => navigate("profile", "brain")}
+            >
+              Ouvrir la mémoire contrôlée
+            </Button>
+            <p className="brain-status">
+              <Icon name={brainOn ? "CircleCheck" : "Ban"} size={13} />
+              {brainOn
+                ? "Brain actif · rappel en lecture seule des seules mémoires confirmées."
+                : "Brain désactivé · le coach déterministe historique reste utilisable."}
+            </p>
+          </Panel>
           <Panel>
             <div className="eyebrow">MÉMOIRE SPORTIVE</div>
             <h3>Un contexte. Pas des suppositions.</h3>
@@ -352,6 +561,16 @@ export default function Jarvis() {
           </div>
         </aside>
       </div>
+      {clearHistoryOpen && (
+        <Confirm
+          title="Effacer l’historique de JARVIS ?"
+          description="Cette action supprime uniquement les messages de la conversation du profil actif. Vos entraînements, programmes, résultats, photos et mémoires contrôlées ne seront pas effacés."
+          danger
+          label="Effacer la conversation"
+          onClose={() => setClearHistoryOpen(false)}
+          onConfirm={clearHistory}
+        />
+      )}
     </>
   );
 }

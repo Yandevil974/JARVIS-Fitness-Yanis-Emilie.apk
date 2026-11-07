@@ -1563,6 +1563,47 @@ textarea.input {
   outline: 2px solid var(--mint);
   outline-offset: 4px;
 }
+.speech-rate-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.speech-rate-setting > span:first-child {
+  flex: 1;
+}
+.speech-rate-setting strong,
+.speech-rate-setting small {
+  display: block;
+}
+.speech-rate-setting strong {
+  font-size: 11px;
+}
+.speech-rate-setting small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 5px;
+}
+.speech-rate-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+.speech-rate-control input {
+  width: 112px;
+  accent-color: var(--mint-strong);
+}
+.speech-rate-control output {
+  min-width: 42px;
+  color: var(--text);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
 .dashboard-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 266px;
@@ -3047,6 +3088,14 @@ textarea.input {
   width: 10px;
   margin-right: 3px;
 }
+.chat-history-actions {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 16px;
+}
+.chat-history-actions .btn {
+  max-width: 100%;
+}
 .chat-rail {
   display: flex;
   flex-direction: column;
@@ -3147,6 +3196,61 @@ textarea.input {
   font-size: 11px;
   color: var(--muted);
   line-height: 1.8;
+}
+/* Décision unique du coach (chantier 1 — A) : même voix dans l'équipe, la
+   carte « Le coach a noté » et l'en-tête de la prochaine séance. */
+.coach-state {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--mint);
+  background: color-mix(in srgb, var(--mint) 7%, transparent);
+}
+.coach-state > svg {
+  color: var(--mint);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.coach-state strong {
+  display: block;
+  font-size: 13.5px;
+}
+.coach-state p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.coach-state small {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--mint);
+}
+.coach-state-protect,
+.coach-state-deload {
+  border-left-color: var(--red);
+  background: color-mix(in srgb, var(--red) 7%, transparent);
+}
+.coach-state-protect > svg,
+.coach-state-deload > svg {
+  color: var(--red);
+}
+.coach-state-lighten,
+.coach-state-reprise {
+  border-left-color: var(--amber);
+  background: color-mix(in srgb, var(--amber) 8%, transparent);
+}
+.coach-state-lighten > svg,
+.coach-state-reprise > svg {
+  color: var(--amber);
 }
 .preview-focus {
   display: flex;
@@ -7358,6 +7462,24 @@ textarea.input {
   line-height: 1.9;
 }
 .source-technique > svg {
+  margin-top: 3px;
+}
+.exercise-audio-cue {
+  margin-top: 12px;
+}
+.exercise-audio-cue > div {
+  flex: 1;
+  min-width: 0;
+}
+.exercise-audio-cue h3 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 12px;
+}
+.exercise-audio-cue p {
+  margin: 0 0 8px;
+}
+.exercise-audio-cue .btn {
   margin-top: 3px;
 }
 .detail-anatomy {
@@ -12946,6 +13068,13 @@ textarea.input {
   font-size: 10px;
   line-height: 1.8;
 }
+.movement-coaching-note {
+  border-top: 1px solid hsl(var(--h-accent) var(--s-accent) 58% / 0.25);
+  background: hsl(var(--h-accent) var(--s-accent) 58% / 0.06);
+}
+.movement-coaching-note strong {
+  color: var(--text);
+}
 .human-recovery-visual {
   position: relative;
   width: 100%;
@@ -15686,6 +15815,13 @@ button.primary {
   flex: none;
   color: hsl(var(--h-accent) var(--s-accent) 62%);
 }
+.voice-coach-grip {
+  align-items: flex-start;
+  line-height: 1.55;
+}
+.voice-coach-grip svg {
+  margin-top: 2px;
+}
 .voice-coach-actions {
   display: flex;
   gap: 8px;
@@ -17659,6 +17795,18 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
     height: 40px;
   }
 }
+.pool-step-instruction {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .pool-step-instruction {
+    font-size: 11px;
+  }
+}
 .pool-step-tips {
   flex-basis: 100%;
   margin: 4px 0 2px;
@@ -17702,3 +17850,666 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .rest-next-thumb img { width: 56px; height: 56px; object-fit: cover; display: block; }
 .rest-next-thumb svg { position: absolute; right: 4px; bottom: 4px; color: #fff; opacity: 0.85; }
 .rest-next-body { display: flex; gap: 10px; align-items: center; }
+
+/* Formats optionnels — cartes accessibles aux deux profils, sans planning automatique. */
+.optional-pool-protocols {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  margin-bottom: 24px;
+}
+/* METCON Émilie — cartes, choix hebdomadaire et rappel de récupération. */
+.metcon-protocols { margin-bottom: 24px; }
+.protocol-icon.pool-6 {
+  background: #e1f3f0;
+  border-color: #b7ded7;
+  color: #2b7771;
+}
+.protocol-icon.pool-7 {
+  background: #fff0df;
+  border-color: #efd3b0;
+  color: #b46a27;
+}
+.metcon-week-panel { margin-top: 22px; }
+.metcon-week-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.metcon-week-day {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--panel-2);
+  color: var(--text);
+}
+.metcon-week-day.is-cardio {
+  border-color: #8fc9bd;
+  box-shadow: inset 3px 0 #61a99a;
+}
+.metcon-week-date,
+.metcon-week-original,
+.metcon-week-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.metcon-week-date {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.metcon-week-date strong,
+.metcon-week-original strong { font-size: 12px; }
+.metcon-week-date small,
+.metcon-week-choice small,
+.metcon-week-original span {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.metcon-week-choice select { width: 100%; min-width: 0; }
+.metcon-week-original strong { overflow-wrap: anywhere; }
+.metcon-recovery-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #e4c896;
+  border-radius: 12px;
+  background: #fff4dc;
+  color: #563d1d;
+}
+.metcon-recovery-warning > svg { flex: 0 0 auto; color: #a96d24; }
+.metcon-recovery-warning strong { display: block; font-size: 13px; }
+.metcon-recovery-warning p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.metcon-modal-actions { flex-wrap: wrap; justify-content: flex-start; }
+.metcon-modal-actions > .btn { flex: 1 1 210px; }
+[data-theme="dark"] .protocol-icon.pool-6 {
+  background: #173b38;
+  border-color: #2c6760;
+  color: #82d5c8;
+}
+[data-theme="dark"] .protocol-icon.pool-7 {
+  background: #452f23;
+  border-color: #76523a;
+  color: #ffbd75;
+}
+[data-theme="dark"] .metcon-week-day {
+  background: var(--panel-2);
+  border-color: var(--line);
+  color: var(--text);
+}
+[data-theme="dark"] .metcon-week-day.is-cardio {
+  border-color: #3e8278;
+  box-shadow: inset 3px 0 #65b8aa;
+}
+[data-theme="dark"] .metcon-recovery-warning {
+  background: #382d1c;
+  border-color: #685335;
+  color: #f3ddba;
+}
+[data-theme="dark"] .metcon-recovery-warning > svg { color: #ffc475; }
+@media (max-width: 700px) {
+  .metcon-week-grid { grid-template-columns: 1fr; }
+  .metcon-modal-actions { flex-direction: column; }
+  .metcon-modal-actions > .btn { width: 100%; flex-basis: auto; }
+}
+
+/* ————— Fitness Brain : mémoire contrôlée (100 % locale) ————— */
+.brain-rail h3 {
+  margin: 6px 0 8px;
+  font-size: 15px;
+}
+.brain-rail.off {
+  border-style: dashed;
+  border-color: var(--line-strong);
+}
+.brain-counts {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+.brain-counts > div {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 10px 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-2);
+  text-align: center;
+}
+.brain-counts strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.1;
+}
+.brain-counts span {
+  color: var(--muted);
+  font-size: 10px;
+}
+.brain-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.brain-status svg {
+  flex: 0 0 auto;
+  color: var(--mint-strong);
+}
+.brain-rail.off .brain-status svg {
+  color: var(--amber);
+}
+.brain-memory-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1px dashed #d8a94a;
+  border-radius: 12px;
+  background: #fff8e8;
+  color: #6d4a10;
+  font-size: 11.5px;
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+}
+.brain-memory-chip > svg {
+  flex: 0 0 auto;
+}
+.brain-memory-chip span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.brain-guard-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.brain-guard-note svg {
+  flex: 0 0 auto;
+}
+.brain-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.brain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.brain-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0 4px;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.brain-steps strong {
+  color: var(--text);
+}
+.brain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.brain-memory {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel-2);
+}
+.brain-memory.pending,
+.brain-memory.hypothesis {
+  border-color: #e2bd74;
+  background: #fffaee;
+}
+.brain-memory.confirmed {
+  border-color: #a8d8c5;
+  background: #f3fbf7;
+}
+.brain-memory.expired,
+.brain-memory.rejected {
+  opacity: 0.72;
+}
+.brain-memory-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.brain-memory-top small {
+  color: var(--muted);
+  font-size: 10.5px;
+}
+.brain-memory > p {
+  margin: 9px 0 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+.brain-memory-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 11px;
+}
+.brain-memory-actions .input {
+  max-width: 190px;
+}
+.brain-recall {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.brain-recall li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--panel-2);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.brain-recall li svg {
+  flex: 0 0 auto;
+  color: var(--mint-strong);
+}
+.brain-recall small {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 10px;
+  white-space: nowrap;
+}
+.brain-expired {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+}
+.brain-rules ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.brain-rules li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.brain-rules li svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--mint-strong);
+}
+.warning-box.compact {
+  align-items: center;
+  margin: 0;
+}
+[data-theme="dark"] .brain-memory-chip {
+  background: #3a2f16;
+  border-color: #7c6329;
+  color: #f4dca9;
+}
+[data-theme="dark"] .brain-memory.pending,
+[data-theme="dark"] .brain-memory.hypothesis {
+  background: #33280f;
+  border-color: #6d5729;
+}
+[data-theme="dark"] .brain-memory.confirmed {
+  background: #10231d;
+  border-color: #2f5f50;
+}
+@media (max-width: 700px) {
+  .brain-grid {
+    grid-template-columns: 1fr;
+  }
+  .brain-memory-actions .btn {
+    flex: 1 1 140px;
+  }
+}
+
+/* --- Panneau plate-forme IA (ARENA//X) + streaming ---------------------- */
+.brain-panel h3 { margin: 6px 0 12px; font-size: 17px; }
+.brain-row { display: flex; align-items: center; gap: 10px; margin: 9px 0; font-size: 13px; }
+.brain-row > span:first-child { min-width: 74px; color: var(--muted, #8a8f98); }
+.brain-row input[type="checkbox"] { width: 17px; height: 17px; accent-color: #4ade80; }
+.brain-row select, .brain-row input[type="password"] {
+  flex: 1; min-width: 0; background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line-soft, rgba(255, 255, 255, 0.12));
+  border-radius: 9px; color: inherit; padding: 7px 9px; font: inherit; font-size: 13px;
+}
+.brain-panel small { display: block; margin-top: 10px; color: var(--faint, #6b7078); font-size: 11.5px; line-height: 1.55; }
+.message-content.streaming p::after {
+  content: "▍"; margin-left: 2px; color: #4ade80;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+.brain-test-btn {
+  margin: 4px 0 2px; padding: 8px 16px; font-size: 13px; font-weight: 700;
+  color: #0c0f12; background: linear-gradient(135deg, #4ade80, #22c55e);
+  border: none; border-radius: 9px; cursor: pointer;
+}
+.brain-test-btn:disabled { opacity: .45; cursor: default; }
+.brain-test-ok { color: #4ade80 !important; font-weight: 700; }
+.brain-test-err { color: #f87171 !important; }
+.brain-test-info { color: var(--faint, #6b7078); }
+.brain-ready { color: #4ade80 !important; font-weight: 700; letter-spacing: .4px; }
+/* ------------------------------------------------------------------ */
+/* Démonstrations vidéo 3D (projet vidéos anatomiques, lot pilote).    */
+/* Ajout non destructif : ne modifie aucune règle existante.          */
+/* ------------------------------------------------------------------ */
+.movement-visual > video.movement-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #101418;
+  border-radius: inherit;
+}
+.movement-video.zoomed {
+  width: 100%;
+  max-height: 70vh;
+  background: #101418;
+  border-radius: 12px;
+}
+.image-viewer > video.movement-video {
+  width: 100%;
+  max-height: 70vh;
+  background: #101418;
+  border-radius: 12px;
+}
+@media (max-width: 640px) {
+  .movement-visual > video.movement-video {
+    max-height: 300px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Vidéos 3D des étapes de protocoles (échauffement, minuteur guidé).  */
+/* Ajout non destructif : ne modifie aucune règle existante.          */
+/* ------------------------------------------------------------------ */
+.warmup-step-thumb > video.warmup-step-video {
+  width: 104px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 7px;
+  background: #101418;
+  display: block;
+  flex-shrink: 0;
+}
+.timer-step-visual > video {
+  width: 100%;
+  height: clamp(170px, 30dvh, 260px);
+  object-fit: contain;
+  background: #101418;
+  border-radius: 13px;
+  display: block;
+}
+
+/* Aperçu vidéo complet de l'échauffement (bloc récap, colonne 190px). */
+.warmup-overview {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 0;
+  width: 190px;
+}
+.warmup-overview > video {
+  width: 190px;
+  height: 143px;
+  object-fit: cover;
+  display: block;
+  background: #101418;
+}
+.warmup-overview > span {
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #fff;
+  background: #251e18ad;
+  border-radius: 6px;
+  padding: 5px 4px;
+  line-height: 1.2;
+}
+
+/* Guidage de séance sur la démonstration : données déclarées, jamais une
+   prétendue détection de répétitions par la caméra. */
+.movement-live {
+  position: absolute;
+  inset: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  pointer-events: none;
+}
+.movement-live-metrics {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  max-width: calc(100% - 82px);
+}
+.movement-live-metric {
+  display: flex;
+  min-width: 66px;
+  flex-direction: column;
+  gap: 2px;
+  padding: 7px 9px;
+  color: #fff;
+  background: rgba(18, 26, 31, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(5px);
+}
+.movement-live-metric small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+.movement-live-metric strong {
+  font-size: 15px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+.movement-live-rest {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  color: #fff;
+  background: rgba(18, 26, 31, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  font-size: 10px;
+  backdrop-filter: blur(5px);
+}
+.movement-live-rest strong {
+  color: var(--mint);
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.movement-live-progress {
+  padding: 7px 9px;
+  color: #fff;
+  background: rgba(18, 26, 31, 0.82);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+.movement-live-progress-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 5px;
+  font-size: 9px;
+}
+.movement-live-progress-label strong {
+  color: var(--mint);
+  font-variant-numeric: tabular-nums;
+}
+.movement-live-progress-track {
+  height: 4px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 99px;
+}
+.movement-live-progress-track > span {
+  display: block;
+  height: 100%;
+  background: var(--mint);
+  border-radius: inherit;
+  transition: width 0.25s ease;
+}
+@media (max-width: 480px) {
+  .movement-live {
+    inset: 7px;
+  }
+  .movement-live-metric {
+    min-width: 58px;
+    padding: 6px 7px;
+  }
+  .movement-live-metric strong {
+    font-size: 13px;
+  }
+  .movement-live-progress-label {
+    font-size: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .movement-live-progress-track > span {
+    transition: none;
+  }
+}
+
+/* Charge synchronisée, immédiatement sous la vidéo de séance. */
+.exercise-stage .video-workout-load {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(108px, 150px);
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--line-strong);
+  background: var(--panel-2);
+  color: var(--text);
+}
+.video-workout-load-copy {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+.video-workout-load-copy > strong {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.35;
+}
+.video-workout-load-copy > span {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+.video-workout-load-copy > .video-workout-load-auto {
+  color: var(--mint-strong);
+  font-weight: 800;
+}
+.video-workout-load-input {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 4px;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  background: var(--panel);
+}
+.video-workout-load-input:focus-within {
+  outline: 2px solid var(--mint);
+  outline-offset: 2px;
+}
+.video-workout-load-input input {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  text-align: right;
+  font: inherit;
+  font-size: 25px;
+  font-weight: 800;
+}
+.video-workout-load-input span,
+.video-workout-load-timed {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.video-workout-load-timed { text-align: right; }
+.video-workout-load-input input:disabled { opacity: 0.75; }
+
+/* La vignette « Ensuite » montre la même vidéo que la fiche de l'exercice. */
+.rest-next-thumb > video {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  display: block;
+}
+.rest-next-body .rest-next-video-note {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.35;
+}

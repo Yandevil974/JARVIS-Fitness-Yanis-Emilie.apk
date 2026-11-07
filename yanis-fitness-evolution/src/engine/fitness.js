@@ -3,6 +3,7 @@ import {
   round,
   clamp,
   num,
+  norm,
   sum,
   today,
   addDays,
@@ -15,11 +16,8 @@ import {
 import { exerciseById, MUSCLES } from "../data/library.js";
 import { plannedSessions } from "./plan-memory.js";
 import { validDate } from "./validation.js";
-import {
-  loadForExercise,
-  forceSourceLabel,
-  parseTargetReps,
-} from "./force.js";
+import { loadForExercise, forceSourceLabel, parseTargetReps } from "./force.js";
+import { stepGif } from "../data/visuals-gifs.js";
 import { WARMUP_IMAGES } from "../data/visuals.js";
 export function estimate1RM(weight, reps) {
   const w = num(weight),
@@ -253,10 +251,15 @@ export function recommendLoad(p, target, date = today()) {
     // 1.5.0 : la première charge vient du pipeline de référence complet
     // (1RM déclaré ou recalculé, ratio de famille, règle de progression,
     // plafond 68 % en semaine allégée), pas d’un simple pourcentage fixe.
-    const strength = loadForExercise(p, ex, target.repScheme || `${low}-${high}`, {
-      deload: !!target.deload || (rec.score != null && rec.score < 45),
-      unit,
-    });
+    const strength = loadForExercise(
+      p,
+      ex,
+      target.repScheme || `${low}-${high}`,
+      {
+        deload: !!target.deload || (rec.score != null && rec.score < 45),
+        unit,
+      },
+    );
     if (strength?.load != null) {
       const capped =
         rec.score != null && rec.score < 50
@@ -265,7 +268,10 @@ export function recommendLoad(p, target, date = today()) {
       return {
         ...base,
         weight: capped,
-        reps: Math.max(low, Math.min(high, parseTargetReps(target.repScheme) || low)),
+        reps: Math.max(
+          low,
+          Math.min(high, parseTargetReps(target.repScheme) || low),
+        ),
         decision: "keep",
         color: strength.fromJournal ? "blue" : "amber",
         label: strength.fromJournal
@@ -408,11 +414,152 @@ export function recommendLoad(p, target, date = today()) {
       "Consolidez la qualité et les répétitions avant la prochaine augmentation.",
   };
 }
+// Charge initiale réellement utilisée au lancement. Une cible déjà fixée est
+// considérée comme intentionnelle (les anciennes sauvegardes ne portent pas
+// de provenance fiable) ; ne jamais l'écraser silencieusement.
+export function workoutLoad(p, target) {
+  const rec = recommendLoad(p, target);
+  const fixed = num(target.targetLoad);
+  if (fixed != null) {
+    const differs = rec.weight != null && Math.abs(fixed - rec.weight) > 0.001;
+    return {
+      targetLoad: fixed,
+      autoIncrease: null,
+      recommendation:
+        differs || rec.decision === "increase"
+          ? {
+              ...rec,
+              label: "Charge fixée conservée",
+              color: "amber",
+              reason: `La charge déjà fixée est conservée. ${differs ? `La recommandation actuelle est ${rec.weight} kg ; ` : ""}vous pouvez ajuster la charge ou demander un recalcul.`,
+            }
+          : rec,
+    };
+  }
+  if (rec.decision !== "increase")
+    return { targetLoad: rec.weight, recommendation: rec, autoIncrease: null };
+
+  const ex = exerciseById(target.exerciseId);
+  const unit = target.unit || ex.unit;
+  const last = historyFor(p, ex.id, unit).at(-1);
+  const previous = num(
+    last?.sets.filter((set) => num(set.reps) != null).at(-1)?.weight,
+  );
+  const source = allSessions(p).find((s) => s.id === last?.sessionId);
+  const complex =
+    !!target.repTargets?.length ||
+    /drop\s*set|degressif|pyramidal/.test(norm(target.sourceNote));
+  const available =
+    ex.equipment.every((item) => p.equipment.includes(item)) &&
+    !p.preferences.refused.includes(ex.id) &&
+    !target.unavailable &&
+    !target.equipmentMismatch;
+  const safe =
+    ["kg total", "kg/main"].includes(unit) &&
+    last?.complete &&
+    source &&
+    !source.safetyStop &&
+    !p.checkIns[today()]?.painReported &&
+    !(p.checkIns[today()]?.fatigue >= 4) &&
+    !(target.sets || []).some((set) => set.completed) &&
+    !complex &&
+    available &&
+    previous != null &&
+    previous > 0 &&
+    rec.weight > previous &&
+    rec.weight <= 1000;
+  if (!safe) {
+    return {
+      targetLoad: ["kg total", "kg/main"].includes(unit) ? previous : null,
+      autoIncrease: null,
+      autoIncreaseBlocked: true,
+      recommendation: {
+        ...rec,
+        label: "Hausse automatique suspendue",
+        color: "amber",
+        reason:
+          "La hausse automatique est suspendue : vérifiez la récupération, le matériel, la convention de charge et la prescription avant de choisir une charge.",
+      },
+    };
+  }
+  return {
+    targetLoad: rec.weight,
+    autoIncrease: {
+      from: previous,
+      to: rec.weight,
+      unit,
+      reference: last.date,
+    },
+    recommendation: {
+      ...rec,
+      label: "Hausse automatique",
+      reason: `De ${previous} à ${rec.weight} kg${unit === "kg/main" ? " par haltère" : ""} à partir de vos séries. ${rec.reason.replace("À confirmer sur toutes vos séries.", "Vérifiez la technique et le confort à chaque série.")} Vous pouvez ajuster la charge.`,
+    },
+  };
+}
+
+/**
+ * Prépare une adaptation de charge sur la séance demandée, sans créer de
+ * programme parallèle. Les séries déjà saisies et les exercices terminés ne
+ * sont jamais réécrits : seule la prescription de charge reste modifiable.
+ * Le résultat est un aperçu pur ; l'appelant décide quand l'appliquer.
+ */
+export function adaptSessionLoads(p, session, { exerciseId = null } = {}) {
+  const next = structuredClone(session);
+  const changes = [];
+  let matched = 0,
+    unavailable = 0,
+    skippedCompleted = 0;
+  for (const target of next.exercises || []) {
+    if (exerciseId && target.exerciseId !== exerciseId) continue;
+    matched++;
+    if ((target.sets || []).some((set) => set.completed)) {
+      skippedCompleted++;
+      continue;
+    }
+    const recommendation = recommendLoad(p, target);
+    if (recommendation.weight == null) {
+      unavailable++;
+      continue;
+    }
+    const before =
+      num(target.targetLoad) ?? num(target.recommendation?.weight) ?? null;
+    target.targetLoad = recommendation.weight;
+    target.recommendation = recommendation;
+    if (before == null || Math.abs(before - recommendation.weight) > 0.001)
+      changes.push({
+        exerciseId: target.exerciseId,
+        name:
+          exerciseById(target.exerciseId)?.name ||
+          target.sourceName ||
+          target.exerciseId,
+        unit: target.unit,
+        from: before,
+        to: recommendation.weight,
+        decision: recommendation.decision,
+      });
+  }
+  if (changes.length) {
+    next.userAdapted = true;
+    next.loadAdaptedAt = today();
+  }
+  return {
+    session: next,
+    changes,
+    matched,
+    unavailable,
+    skippedCompleted,
+  };
+}
+
 export function warmup(p, session) {
   const first = session?.exercises?.[0];
   const ex = first ? exerciseById(first.exerciseId) : null;
-  const rec = first ? recommendLoad(p, first) : null;
-  const w = first?.targetLoad ?? rec?.weight;
+  const load =
+    first && Array.isArray(p.sessions) && p.checkIns && p.user && p.preferences && p.equipment
+      ? workoutLoad(p, first)
+      : null;
+  const w = first?.targetLoad ?? load?.targetLoad;
   const lower = ex && ["qua", "isc", "fes", "moy"].includes(ex.muscle);
   return [
     {
@@ -439,14 +586,17 @@ export function warmup(p, session) {
       img: WARMUP_IMAGES.mobilite,
       instruction: lower
         ? "Ponts fessiers au sol, 10 répétitions contrôlées."
-        : "Rétractions des omoplates et rotations externes sans fatigue.",
+        : "Avec l’élastique : bras tendus devant vous, écartez en serrant les omoplates. Mouvement lent, sans fatigue.",
     },
     ...[0.5, 0.7, 0.85].map((pct, i) => ({
       name: `Approche ${i + 1}${w > 0 ? " · " + roundLoad(w * pct, p.user.increment || 2.5, "down") + " kg" : " · charge légère à choisir"}`,
       seconds: 60,
       pattern: ex?.pattern || "squat",
+      // L'approche rejoue le 1er exercice de la séance : sa démo (vidéo 3D
+      // validée sinon GIF exact) remplace l'image générique dupliquée.
+      exerciseId: ex?.id || null,
       img: WARMUP_IMAGES.approche,
-      instruction: `${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
+      instruction: `${ex ? ex.name + " — " : ""}${[10, 6, 3][i]} répétitions faciles${w > 0 ? " à environ " + Math.round(pct * 100) + " % de la charge de travail connue" : ". Donnée insuffisante pour une charge chiffrée"}. Repos selon le besoin.`,
     })),
   ];
 }
@@ -858,7 +1008,9 @@ export function photoReading(profile) {
   if (a?.weight != null && b?.weight != null) {
     const d = +(b.weight - a.weight).toFixed(1);
     bits.push(
-      d === 0 ? "poids stable" : `${d > 0 ? "+" : ""}${d} kg (${a.weight} → ${b.weight})`,
+      d === 0
+        ? "poids stable"
+        : `${d > 0 ? "+" : ""}${d} kg (${a.weight} → ${b.weight})`,
     );
   }
   if (a?.bodyFat != null && b?.bodyFat != null) {

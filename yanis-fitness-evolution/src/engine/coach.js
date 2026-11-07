@@ -12,6 +12,7 @@ import {
   numberLabel,
   monday,
   parseDate,
+  dayDiff,
 } from "./utils.js";
 import {
   EXERCISES,
@@ -31,12 +32,15 @@ import {
   estimateMinutes,
   makeTarget,
   moveSession,
+  shiftProgramWeek,
 } from "./planner.js";
 import {
   recoveryScore,
   weeklyReport,
   personalRecords,
   stats,
+  allSets,
+  adaptSessionLoads,
 } from "./fitness.js";
 import {
   loadForExercise,
@@ -49,6 +53,16 @@ import { nutritionTargets } from "./nutrition.js";
 import { archivePlan } from "./plan-memory.js";
 import { validDate } from "./validation.js";
 import { pauseTimer, advanceTimer } from "./timer.js";
+import {
+  weeklyCoachState,
+  applyCoachStateToSession,
+} from "./coach-state.js";
+import { isMetconFormat, metconLevel, metconMinutes } from "./source-schedule.js";
+// Fitness Brain local : le coach déterministe reste l'unique auteur des
+// actions sportives. Il ne lit ici que l'état de la mémoire contrôlée pour
+// répondre honnêtement quand le Brain est désactivé — jamais pour agir.
+import { brainEnabled } from "../brain/policy.js";
+import { memoryStats } from "../brain/memory.js";
 
 // ————— Normalisation —————
 const TYPO_FIXES = [
@@ -275,6 +289,23 @@ export const INTENTS = [
   { id: "weight", cues: [["mon poids", 5], ["je pese", 5], ["pesee", 5], ["balance", 4], ["maigrir", 4], ["perdre du poids", 5], ["prendre du poids", 5]] },
   { id: "recovery", cues: [["recuperation", 5], ["sommeil", 5], ["energie", 4], ["repos", 4], ["etirement", 4], ["mobilite", 4], ["souplesse", 4], ["respiration", 4]] },
   { id: "session", cues: [["ma seance", 5], ["seance du jour", 5], ["aujourd hui", 4], ["au programme", 5], ["je fais quoi", 5], ["on fait quoi", 5], ["prochaine seance", 5], ["planning", 3]] },
+  // Mémoire contrôlée : le coach ne mémorise rien lui-même (le Brain local
+  // s'en charge quand il est actif) ; il répond honnêtement sinon.
+  {
+    id: "memory",
+    cues: [
+      ["retiens", 6],
+      ["retiens bien", 6],
+      ["memorise", 6],
+      ["souviens toi", 6],
+      ["garde en memoire", 6],
+      ["ma memoire", 5],
+      ["memoire jarvis", 5],
+      ["qu est ce que tu sais sur moi", 6],
+      ["qu est ce que tu retiens", 6],
+      ["je veux que tu retiennes", 6],
+    ],
+  },
 ];
 export function scoreIntents(q, entities) {
   const scored = [];
@@ -298,6 +329,27 @@ export function specialResponses(p, q, entities, intentId, convo) {
   const turns = (p.messages || []).length,
     prefix = pick(TONE_PREFIX[toneFor(q)], turns),
     ctx = contextSnapshot(p);
+  // Le Brain local traite les commandes de mémoire quand il est actif (le
+  // routeur passe avant). Ce chemin reste utile quand il est désactivé ou
+  // appelé directement : on explique, on n'enregistre rien, on n'invente rien.
+  if (intentId === "memory") {
+    const stats = memoryStats(p);
+    if (!brainEnabled(p))
+      return {
+        text:
+          "Le Fitness Brain local est désactivé : je n’enregistre aucune mémoire, même sur demande explicite.\n\n" +
+          "Pour l’activer : Profil → Mémoire JARVIS. Le coach déterministe reste entièrement disponible pour votre programme, vos séances et vos charges.",
+        navigate: "profile",
+        tab: "brain",
+      };
+    return {
+      text:
+        `La mémoire contrôlée est active : ${stats.confirmed} mémoire(s) confirmée(s), ${stats.pending} proposition(s) en attente, ${stats.hypotheses} hypothèse(s).\n\n` +
+        "Je n’enregistre rien d’office : une proposition naît non confirmée et ne sert ni au rappel ni au contexte avant votre confirmation dans Profil → Mémoire JARVIS. Un « oui » dans le chat ne confirme jamais une mémoire.",
+      navigate: "profile",
+      tab: "brain",
+    };
+  }
   if (intentId === "smalltalk") {
     if (/merci/.test(q))
       return {
@@ -479,11 +531,192 @@ const withoutNegatedSymptoms = (q) =>
     " ",
   );
 
+function loadLabel(value, unit) {
+  return `${numberLabel(value)} ${
+    unit === "kg/main"
+      ? "kg par haltère"
+      : unit === "kg ajouté"
+        ? "kg ajoutés"
+        : "kg"
+  }`;
+}
+
+// Une question sur le fonctionnement ne doit ni lancer une adaptation ni
+// être confondue avec le bilan de force ou la prochaine séance.
+function isLoadProgressionQuestion(text, q) {
+  const question =
+    /\?/.test(text) ||
+    /^(?:est ce que|est ce qu |comment|pourquoi|quand|de quelle facon|je voudrais savoir|je veux savoir|dis moi si|tu (?:tiens|prends|utilises|te bases|consideres)|vous (?:tenez|prenez|utilisez))\b/.test(q);
+  const load = /\b(?:charges?|poids|kilos?|kg)\b/.test(q);
+  const performance =
+    /\b(?:performances?|resultats?|historique|series?|repetitions?|reps?|rpe|rir|efforts?|progres|progression|precedentes?)\b/.test(q);
+  const explanation =
+    /\b(?:compte|base|bases|fonction|selon|utilise|utilises|utilisez|evolu\w*|progress\w*|augment\w*|adapt\w*|ajust\w*|calcul\w*|recalcul\w*)\b/.test(q);
+  const directRequest =
+    /^(?:(?:peux tu|tu peux|pourrais tu|tu pourrais|merci de|s il te plait|je veux que tu) )?(?:recalcule|recalculer|adapte|adapter|ajuste|ajuster|modifie|modifier|change|changer|augmente|augmenter|baisse|baisser)\b/.test(q);
+  return (
+    question && load && explanation && !directRequest &&
+    (performance || /\b(?:seances?|entrainements?|automatique\w*)\b/.test(q) || /\b(?:calcul\w*|recalcul\w*)\b/.test(q))
+  );
+}
+
+function loadProgressionAnswer(p) {
+  const completed = allSets(p).length;
+  const increases = (p.workout?.exercises || []).filter((e) => e.autoIncrease);
+  const applied = increases.length
+    ? ` Dans la séance en cours, j’ai appliqué au démarrage : ${increases.slice(0, 3).map((e) => `${exerciseById(e.exerciseId).name} ${loadLabel(e.autoIncrease.from, e.autoIncrease.unit)} → ${loadLabel(e.autoIncrease.to, e.autoIncrease.unit)}`).join(" ; ")}${increases.length > 3 ? ` ; et ${increases.length - 3} autre(s)` : ""}. Ce sont les charges initiales, que vous pouvez modifier.`
+    : "";
+  return {
+    text: `Oui, je tiens compte de vos performances et je peux augmenter automatiquement la charge initiale au lancement de la prochaine séance, sans confirmation supplémentaire.${applied}\n\nJe regarde les séries terminées du même exercice et de la même unité : charge, répétitions et RPE ou RIR, ainsi que la récupération disponible. Dans votre profil, ${completed ? `je trouve ${completed} série${completed > 1 ? "s" : ""} terminée${completed > 1 ? "s" : ""} tous exercices confondus` : "je ne trouve pas encore de série terminée enregistrée"} ; seules les séries compatibles servent pour chaque exercice.\n\nLa hausse n’est pas systématique : elle exige notamment les séries cibles terminées en haut de fourchette et un effort maîtrisé renseigné sur chaque série. Je la suspends notamment en cas de douleur ou forte fatigue, de prescription complexe, de matériel indisponible ou d’unité incertaine. Si les données ne suffisent pas, je conserve la charge ou propose de calibrer. Pour le poids du corps, je propose plutôt des répétitions.\n\nJ’annonce les hausses dans l’aperçu, au démarrage et dans « Mes adaptations ». Elles concernent la charge initiale de la séance lancée, pas toutes les séances futures. Une charge déjà fixée reste protégée : demandez « Recalcule mes charges » et confirmez pour la modifier. Les séries déjà enregistrées ne sont pas réécrites, et vous pouvez toujours ajuster votre charge.`,
+
+    // Garantit que l'explication locale vérifiée n'est pas remplacée par une
+    // réponse du fournisseur externe, et permet d'ouvrir la séance.
+    navigate: "training",
+  };
+}
+
+// Une demande de charge est une adaptation de l'objet existant, jamais une
+// création de cycle. On calcule d'abord un aperçu afin que le texte et l'action
+// de confirmation décrivent exactement la même séance et le même exercice.
+function adaptiveLoadAnswer(
+  p,
+  q,
+  entities,
+  convo,
+  active,
+  upcoming,
+  currentExercise,
+  known,
+) {
+  const explicitExercise = [entities.exercise, known].find(
+      (exercise) => exercise && q.includes(norm(exercise.name)),
+    ),
+    exerciseQuery = q.replace(
+      /\b(?:charges?|poids|kilos?|surcharge|progression|1rm|adaptative|adaptive|progressive|intelligente)\b/g,
+      " ",
+    ),
+    requestedExercise =
+      explicitExercise ||
+      fuzzyExerciseFromWords(exerciseQuery) ||
+      (/cet exercice|celui ci|ce mouvement|exercice en cours/.test(q)
+        ? currentExercise
+        : null) ||
+      (convo.exercise ? exerciseById(convo.exercise) : null);
+  const candidates = [active, upcoming, ...(p.plan?.sessions || [])].filter(
+    (s, i, all) =>
+      s &&
+      all.findIndex((x) => x?.id === s.id) === i &&
+      (s.id === active?.id || (s.status === "planned" && s.date >= today())),
+  );
+  const session = requestedExercise
+    ? candidates.find((s) =>
+        s.exercises?.some((e) => e.exerciseId === requestedExercise.id),
+      ) ||
+      active ||
+      upcoming
+    : active || upcoming;
+  if (!session)
+    return {
+      text: "Je peux recalculer les charges d’une séance existante, mais je ne trouve aucune séance en cours ou à venir. Aucun nouveau programme n’a été créé.",
+      navigate: "program",
+    };
+  const preview = adaptSessionLoads(p, session, {
+    exerciseId: requestedExercise?.id || null,
+  });
+  if (!preview.matched)
+    return {
+      text: `${requestedExercise?.name || "Cet exercice"} n’est pas dans « ${session.name} ». Je ne vais pas créer une autre séance ou un autre programme pour le modifier. Précisez la séance concernée ou choisissez un exercice de cette séance.`,
+      exerciseIds: requestedExercise ? [requestedExercise.id] : undefined,
+      navigate: "program",
+    };
+  const scope = requestedExercise
+    ? `pour ${requestedExercise.name}`
+    : `pour « ${session.name} »`;
+  if (!preview.changes.length) {
+    const detail = preview.skippedCompleted
+      ? "Les séries déjà enregistrées sont conservées et ne sont pas réécrites."
+      : preview.unavailable
+        ? "Il manque encore une référence fiable (séries complètes avec RPE/RIR ou bilan 1RM) pour chiffrer une nouvelle charge."
+        : "Les charges calculées correspondent déjà aux prescriptions actuelles.";
+    return {
+      text: `J’ai vérifié les charges ${scope}. ${detail} Je n’ai rien régénéré et je n’ai pas modifié votre planning.`,
+      navigate: "training",
+    };
+  }
+  const lines = preview.changes
+    .slice(0, 4)
+    .map(
+      (change) =>
+        `• ${change.name} : ${
+          change.from == null
+            ? "à calibrer"
+            : loadLabel(change.from, change.unit)
+        } → ${loadLabel(change.to, change.unit)}`,
+    )
+    .join("\n");
+  const notes = [
+    preview.changes.length > 4
+      ? `… et ${preview.changes.length - 4} autre(s) ajustement(s).`
+      : null,
+    preview.unavailable
+      ? `${preview.unavailable} mouvement(s) sans référence fiable resteront à calibrer, sans valeur inventée.`
+      : null,
+    preview.skippedCompleted
+      ? "Les exercices avec des séries déjà saisies restent inchangés."
+      : null,
+  ]
+    .filter(Boolean)
+    .join(" ");
+  return {
+    text: `Je peux adapter les charges ${scope} à partir de vos séries enregistrées et de la récupération disponible :\n\n${lines}\n\n${notes ? notes + "\n\n" : ""}Je modifie uniquement les propositions de charge de cette séance : mêmes exercices, même ordre, même planning et historique intact. Confirmez pour appliquer.`,
+    action: {
+      type: "adapt-loads",
+      sessionId: session.id,
+      exerciseId: requestedExercise?.id || null,
+    },
+  };
+}
+
 export function interpretCommand(p, text) {
   const q = normalizeUtterance(text),
     entities = extractEntities(q, text),
     convo = conversationState(p),
     yesNo = confirmationIntent(q);
+  const active = p.workout,
+    upcoming = nextSession(p),
+    session = active || upcoming,
+    currentRow = session?.exercises?.[active?.currentIndex || 0],
+    currentExercise = currentRow ? exerciseById(currentRow.exerciseId) : null,
+    known =
+      EXERCISES.filter((e) => q.includes(norm(e.name))).sort(
+        (a, b) => b.name.length - a.name.length,
+      )[0] || fuzzyExerciseFromWords(q);
+  if (!q) return { text: "Dites-moi ce que vous souhaitez adapter." };
+  const safetyText = withoutNegatedSymptoms(q).replace(
+      /mal (?:dormi|recupere)/g,
+      "",
+    ),
+    hasPain =
+      /douleur|j ai mal|mal au|mal a la|mal aux|bless|vertige|oppression|malaise|essoufflement inhabituel/.test(
+        safetyText,
+      ),
+    loadWord = /charges?|poids|kilos?|surcharge|progression|1rm/.test(q),
+    adaptationWord =
+      /adapt|ajust|modifi|chang|recalcul|actualis|met(?:s|tre)? a jour|augmente|diminue|reduis|allege|optimis|personnalise/.test(
+        q,
+      ),
+    directAdaptive =
+      /charge adaptative|surcharge progressive|progression intelligente/.test(
+        q,
+      );
+  if (hasPain)
+    return {
+      text: /poitrine|oppression|essoufflement inhabituel|malaise|vertige/.test(q)
+        ? "Arrêtez l’effort. En cas de douleur thoracique, malaise ou difficulté respiratoire inhabituelle, demandez une aide médicale urgente (112 ou 15 en France). Je ne peux pas établir de diagnostic."
+        : "Arrêtez l’exercice douloureux. Ne testez pas une autre charge pour « vérifier ». Reposez la zone et consultez un professionnel compétent si la douleur est importante, persiste ou revient. Une alternative ne sera choisie qu’en l’absence de douleur.",
+      action: { type: "pain", exerciseId: currentExercise?.id },
+      automatic: true,
+    };
   if (yesNo && convo.pending)
     return yesNo === "yes"
       ? {
@@ -499,7 +732,8 @@ export function interpretCommand(p, text) {
     return {
       text: "Je n’ai pas de proposition en attente à confirmer. Reformulez votre demande et je vous répondrai.",
     };
-  if (/bilan 1rm|refaire le test|reevaluation|recalcul(?:e|er) mes charges/.test(q)) {
+  if (isLoadProgressionQuestion(text, q)) return loadProgressionAnswer(p);
+  if (/bilan 1rm|refaire le test|reevaluation/.test(q)) {
     const status = forceRevalState(p);
     return { text: `${status.label}. ${status.detail}`, navigate: "force" };
   }
@@ -509,33 +743,22 @@ export function interpretCommand(p, text) {
       navigate: "team",
       tab: "archive",
     };
-  const active = p.workout,
-    upcoming = nextSession(p),
-    session = active || upcoming,
-    currentRow = session?.exercises?.[active?.currentIndex || 0],
-    currentExercise = currentRow ? exerciseById(currentRow.exerciseId) : null,
-    known =
-      EXERCISES.filter((e) => q.includes(norm(e.name))).sort(
-        (a, b) => b.name.length - a.name.length,
-      )[0] || fuzzyExerciseFromWords(q);
-  if (!q) return { text: "Dites-moi ce que vous souhaitez adapter." };
+  if ((loadWord && adaptationWord) || directAdaptive)
+    return adaptiveLoadAnswer(
+      p,
+      q,
+      entities,
+      convo,
+      active,
+      upcoming,
+      currentExercise,
+      known,
+    );
   const topIntent = scoreIntents(q, entities)[0];
   if (topIntent && topIntent.id !== "pain") {
     const special = specialResponses(p, q, entities, topIntent.id, convo);
     if (special) return special;
   }
-  if (
-    /douleur|j ai mal|mal au|mal a la|mal aux|bless|vertige|oppression|malaise|essoufflement inhabituel/.test(
-      withoutNegatedSymptoms(q).replace(/mal (?:dormi|recupere)/g, ""),
-    )
-  )
-    return {
-      text: /poitrine|oppression|essoufflement inhabituel|malaise|vertige/.test(q)
-        ? "Arrêtez l’effort. En cas de douleur thoracique, malaise ou difficulté respiratoire inhabituelle, demandez une aide médicale urgente (112 ou 15 en France). Je ne peux pas établir de diagnostic."
-        : "Arrêtez l’exercice douloureux. Ne testez pas une autre charge pour « vérifier ». Reposez la zone et consultez un professionnel compétent si la douleur est importante, persiste ou revient. Une alternative ne sera choisie qu’en l’absence de douleur.",
-      action: { type: "pain", exerciseId: currentExercise?.id },
-      automatic: true,
-    };
   const performance =
     entities.weight != null && entities.reps != null
       ? [null, String(entities.weight), String(entities.reps)]
@@ -556,14 +779,54 @@ export function interpretCommand(p, text) {
       },
     };
   }
+  // Une semaine non réalisée se reporte sans recréer le programme. Cette
+  // règle passe AVANT la création de cycle, qui ne doit jamais intercepter
+  // une simple demande de modification de dates.
+  const weekShiftCue = /decal|deplac|reprogram|report|repousse/.test(q),
+    nextWeekCue = /semaine (?:prochaine|suivante)/.test(q),
+    wholeWeekCue =
+      /mes seances|les seances|toutes|toute la semaine|cette semaine|ma semaine|semaine complete|programme|planning/.test(
+        q,
+      ),
+    missedWeekCue =
+      /pas pu|pas fait|manque|rate|loupe/.test(q) &&
+      /cette semaine/.test(q) &&
+      /mes seances|les seances|toutes/.test(q);
+  if ((weekShiftCue && nextWeekCue && wholeWeekCue) || missedWeekCue) {
+    const weekStart = monday(today()),
+      weekEnd = addDays(weekStart, 6),
+      planned = (p.plan?.sessions || []).filter(
+        (s) => s.status === "planned" && s.date >= weekStart,
+      ),
+      weekSessions = planned.filter((s) => s.date <= weekEnd),
+      futureCount = planned.length - weekSessions.length;
+    if (!weekSessions.length)
+      return {
+        text: "Je ne trouve aucune séance encore planifiée cette semaine. Aucun programme n’a été régénéré et rien n’a été déplacé.",
+        navigate: "program",
+      };
+    return {
+      text: `Je peux décaler de 7 jours les ${weekSessions.length} séance${weekSessions.length > 1 ? "s" : ""} encore planifiée${weekSessions.length > 1 ? "s" : ""} cette semaine.${futureCount ? ` Les ${futureCount} séance${futureCount > 1 ? "s" : ""} des semaines suivantes seront également décalée${futureCount > 1 ? "s" : ""} de 7 jours pour éviter les doublons.` : ""} Ce sera un simple décalage des dates : mêmes séances, mêmes exercices et mêmes prescriptions. Les séances terminées et l’historique restent intacts.`,
+      action: { type: "shift-week", weekStart, days: 7 },
+    };
+  }
+
   const frequency = q.match(/(\d+)\s*seances?/),
     weeks = q.match(/(\d+)\s*semaines?/),
     months = q.match(/(\d+)\s*mois/);
-  if (
-    (/programme|planifie|prepare|cree|organise/.test(q) &&
-      /semaine|mois|programme/.test(q)) ||
-    (frequency && /par semaine|semaines|mois/.test(q))
-  ) {
+  const planMutation =
+      /modifi|change|remplac|decal|deplac|report|repousse|supprime|enleve/.test(
+        q,
+      ),
+    explicitPlanRequest =
+      (/planifie|prepare|cree|creer|organise|construis|genere/.test(q) &&
+        /programme|planning|plan\b/.test(q)) ||
+      /nouveau programme|nouvelle programmation|nouveau planning/.test(q) ||
+      (frequency && /par semaine|semaines|mois/.test(q)) ||
+      (/je veux|je souhaite/.test(q) &&
+        /programme/.test(q) &&
+        /semaine|mois/.test(q));
+  if (explicitPlanRequest && !planMutation) {
     const f = Number(frequency?.[1] || p.user.frequency),
       w = Number(
         weeks?.[1] ||
@@ -607,7 +870,7 @@ export function interpretCommand(p, text) {
       action: { type: "shorten", minutes, sessionId: session.id },
     };
   }
-  if (/decale|deplace|reprogramme|report(?:e|er).*demain/.test(q)) {
+  if (/decal|deplac|reprogramme|reporte|reporter|repousse/.test(q)) {
     if (!upcoming)
       return {
         text: "Aucune prochaine séance à déplacer. Ouvrez le calendrier pour choisir une séance.",
@@ -615,6 +878,8 @@ export function interpretCommand(p, text) {
     let date = q.match(/\d{4}-\d{2}-\d{2}/)?.[0];
     if (/demain/.test(q)) date = addDays(today(), 1);
     if (/apres demain/.test(q)) date = addDays(today(), 2);
+    if (!date && /semaine (?:prochaine|suivante)/.test(q))
+      date = addDays(upcoming.date, 7);
     const day = WEEKDAYS.findIndex((d) => q.includes(d));
     if (!date && day >= 0) {
       const delta = (day - parseDate(today()).getDay() + 7) % 7;
@@ -675,6 +940,14 @@ export function interpretCommand(p, text) {
         action: { type: "focus", muscle: group[1] },
       };
   }
+  if (
+    /modifi|change|adapte/.test(q) &&
+    /programme|planning|exercice|seance/.test(q)
+  )
+    return {
+      text: "Que souhaitez-vous modifier exactement ? Je ne vais pas recréer votre programme au hasard. Vous pouvez me dire : « Décale mes séances de cette semaine à la semaine prochaine », « Remplace cet exercice » ou « Je n’ai que 30 minutes ».",
+      navigate: /programme|planning/.test(q) ? "program" : "training",
+    };
   if (/exercice|recherche|haut des pec|dos maison/.test(q)) {
     const found = searchExercises(text).slice(0, 6);
     return {
@@ -802,6 +1075,32 @@ export function applyCoachAction(p, action, extra = {}) {
       detail = `Séance adaptée à ${action.minutes} min : ${r.removedSets} séries en moins.`;
       break;
     }
+    case "adapt-loads": {
+      const s =
+        q.workout?.id === action.sessionId
+          ? q.workout
+          : q.plan?.sessions.find((s) => s.id === action.sessionId);
+      if (!s) throw new Error("La séance a changé. Refaites la demande.");
+      const result = adaptSessionLoads(q, s, {
+        exerciseId: action.exerciseId || null,
+      });
+      if (!result.changes.length)
+        throw new Error(
+          "Aucune charge nouvelle ne peut être calculée sur cette séance. Les séries et le programme restent inchangés.",
+        );
+      if (q.workout?.id === s.id) q.workout = result.session;
+      else
+        q.plan.sessions = q.plan.sessions.map((x) =>
+          x.id === s.id ? result.session : x,
+        );
+      detail = `Charges adaptées dans « ${s.name} » : ${result.changes
+        .slice(0, 3)
+        .map((change) => `${change.name} ${loadLabel(change.to, change.unit)}`)
+        .join(
+          " ; ",
+        )}${result.changes.length > 3 ? ` ; +${result.changes.length - 3} autre(s)` : ""}. Exercices, séries, planning et historique conservés.`;
+      break;
+    }
     case "fatigue":
       q.checkIns[today()] = {
         ...q.checkIns[today()],
@@ -830,6 +1129,16 @@ export function applyCoachAction(p, action, extra = {}) {
       detail =
         "Fatigue enregistrée ; volume adapté au maximum une fois par jour.";
       break;
+    case "shift-week": {
+      const result = shiftProgramWeek(
+        q,
+        action.weekStart || monday(today()),
+        action.days || 7,
+      );
+      q.plan = result.plan;
+      detail = `Semaine décalée de ${result.days} jours : ${result.weekMoved} séance${result.weekMoved > 1 ? "s" : ""} concernée${result.weekMoved > 1 ? "s" : ""} cette semaine, ${result.moved} au total avec la suite du programme. Contenu et historique inchangés.`;
+      break;
+    }
     case "move":
       q.plan = moveSession(q, action.sessionId, action.date);
       detail = `Séance déplacée au ${action.date}.`;
@@ -838,6 +1147,24 @@ export function applyCoachAction(p, action, extra = {}) {
       const r = rescheduleMissed(q, action.sessionId);
       q.plan = r.plan;
       detail = `Séance manquée conservée et reportée au ${r.date}.`;
+      break;
+    }
+    case "coach-state": {
+      const state = weeklyCoachState(q);
+      const target = q.workout || nextSession(q);
+      if (!target) throw new Error("Aucune séance à adapter.");
+      if (target.coachAdapted === today())
+        throw new Error("Cette séance a déjà été adaptée aujourd'hui.");
+      const changed = applyCoachStateToSession(target, state);
+      if (q.workout?.id === target.id) q.workout = target;
+      else
+        q.plan.sessions = q.plan.sessions.map((s) =>
+          s.id === target.id ? target : s,
+        );
+      detail =
+        state.volumeFactor >= 1
+          ? `Décision du coach : ${state.label}. ${state.detail}`
+          : `Décision appliquée (${state.label}) : volume ajusté à partir de vos retours réels, séries déjà réalisées conservées.`;
       break;
     }
     case "replace": {
@@ -961,41 +1288,110 @@ export function followUpSchedule(dates, weeks = PHOTO_WEEKS, on = today()) {
     bientot: left > 0 && left <= FINDING_SOON_DAYS,
   };
 }
+function metconFormatFromItem(item) {
+  if (!item) return null;
+  const direct = [item.protocolId, item.format].find(isMetconFormat);
+  if (direct) return direct;
+  for (const component of item.components || []) {
+    const format = [component.protocolId, component.format].find(isMetconFormat);
+    if (format) return format;
+  }
+  const name = norm(item.name || item.title || "");
+  if (/metcon/.test(name) && /aqua tabata|aquatabata/.test(name))
+    return "metcon-aquatabata";
+  if (/metcon/.test(name) && /piscine|swim/.test(name))
+    return "metcon-piscine";
+  return null;
+}
+function isMetconRecord(item) {
+  return !!(
+    item &&
+    (item.type === "metcon" ||
+      metconFormatFromItem(item) ||
+      /\bmetcon\b/.test(norm(item.name || item.title || "")))
+  );
+}
+export function weeklyMetconSuggestion(p, on = today()) {
+  if (!p || p.id !== "emilie") return null;
+  const weekStart = monday(on),
+    weekEnd = addDays(weekStart, 6),
+    recovery = recoveryScore(p, on).score;
+  if (recovery != null && recovery < 45) return null;
+
+  const activities = [...(p.activities || []), ...(p.sessions || [])];
+  const planned = [...(p.plan?.sessions || []), ...(p.workout ? [p.workout] : [])];
+  const inWeek = (item) =>
+    item?.date >= weekStart && item?.date <= weekEnd && isMetconRecord(item);
+  if ([...activities, ...planned].some(inWeek)) return null;
+  if (
+    Object.entries(p.preferences?.cardioChoices || {}).some(
+      ([date, format]) =>
+        date >= weekStart && date <= weekEnd && isMetconFormat(format),
+    )
+  )
+    return null;
+
+  const history = [];
+  for (const item of [...activities, ...planned])
+    if (item?.date < weekStart && isMetconRecord(item))
+      history.push({ date: item.date, format: metconFormatFromItem(item) });
+  for (const [date, format] of Object.entries(
+    p.preferences?.cardioChoices || {},
+  ))
+    if (date < weekStart && isMetconFormat(format)) history.push({ date, format });
+  history.sort((a, b) => a.date.localeCompare(b.date));
+  const previousFormat = history.at(-1)?.format;
+  const weekIndex = Math.max(
+    0,
+    Math.floor(dayDiff(weekStart, monday(p.user?.startDate || weekStart)) / 7),
+  );
+  const format = previousFormat
+    ? previousFormat === "metcon-piscine"
+      ? "metcon-aquatabata"
+      : "metcon-piscine"
+    : weekIndex % 2 === 0
+      ? "metcon-piscine"
+      : "metcon-aquatabata";
+  return {
+    key: `weekly-metcon-${weekStart}`,
+    weekStart,
+    format,
+    level: metconLevel(p),
+    minutes: metconMinutes(format, metconLevel(p)),
+  };
+}
 export function coachFindings(p, on = today()) {
   if (!p) return [];
   const findings = [];
-  const painDates = Object.entries(p.checkIns || {})
-    .filter(
-      ([date, c]) => c?.painReported && daysBetween(date, on) <= 3,
-    )
-    .map(([date]) => date)
-    .sort();
-  if (painDates.length)
+  // Décision unique de la semaine (chantier 1 — A) : douleur, récupération
+  // basse, fatigue du bilan, RPE élevé et reprise après coupure passent tous
+  // par la même voix, avec les chiffres réels qui la justifient.
+  const state = weeklyCoachState(p, on);
+  const adapted =
+    (p.workout || nextSession(p))?.coachAdapted === today();
+  if (
+    ["protect", "deload", "lighten", "reprise"].includes(state.decision) &&
+    !adapted
+  )
     findings.push({
-      key: `watch-pain-${painDates[painDates.length - 1]}`,
-      severity: "high",
-      title: "Une douleur a été signalée",
+      key: `coach-state-${state.decision}-${on}`,
+      severity: state.severity === "high" ? "high" : "medium",
+      title: `Décision du coach : ${state.label}`,
       detail:
-        "Votre prochaine séance n’en tient pas encore compte. Je peux alléger le volume et éviter les mouvements sur la zone concernée, en gardant vos séries déjà réalisées.",
-      action: { type: "fatigue" },
+        state.detail +
+        (state.reasons.length
+          ? ` Mesuré sur : ${state.reasons.join(" ; ")}.`
+          : ""),
+      action: { type: "coach-state" },
     });
-  const scores = [];
-  for (let i = 0; i < RECOVERY_WATCH_DAYS; i++) {
-    const date = addDays(on, -i);
-    if (!p.checkIns?.[date]) continue;
-    const s = recoveryScore(p, date).score;
-    if (s != null) scores.push(s);
-  }
-  if (scores.length >= RECOVERY_WATCH_DAYS && scores.every((s) => s < LOW_RECOVERY)) {
-    const avg = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+  else if (state.decision === "progress")
     findings.push({
-      key: `watch-recovery-${on}`,
-      severity: "high",
-      title: "Votre récupération reste basse",
-      detail: `Score moyen de ${avg}/100 sur ${scores.length} jours. Ce n’est pas un mauvais jour isolé. Je peux réduire le volume de la prochaine séance sans toucher au programme d’origine.`,
-      action: { type: "fatigue" },
+      key: `coach-state-progress-${on}`,
+      severity: "low",
+      title: `Décision du coach : ${state.label}`,
+      detail: state.detail,
+      action: { type: "navigate", page: "training" },
     });
-  }
   const past = (p.plan?.sessions || [])
     .filter((s) => s.date < on)
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -1009,28 +1405,9 @@ export function coachFindings(p, on = today()) {
       severity: "medium",
       title: `${missedStreak} séances non réalisées`,
       detail:
-        "Un programme qu’on ne suit pas n’est pas le bon programme. Plutôt que de rattraper, je peux le réajuster à votre rythme réel — quitte à réduire la fréquence.",
+        "Un programme qu’on ne suit pas n’est pas le bon programme. Je peux réajuster la fréquence à votre rythme réel (bouton ci-dessous) ; vous pouvez aussi replacer une séance manquée depuis la page Programme.",
       action: { type: "replan" },
     });
-  const lastSessionDate = [...(p.sessions || [])]
-    .filter((s) => s.status === "completed" && s.date <= on)
-    .map((s) => s.date)
-    .sort()
-    .pop();
-  if (lastSessionDate) {
-    const gap = daysBetween(lastSessionDate, on);
-    if (gap >= FINDING_GAP_DAYS)
-      findings.push({
-        key: `watch-gap-${lastSessionDate}`,
-        severity: gap >= 21 ? "high" : "medium",
-        title: `${gap} jours sans séance`,
-        detail:
-          gap >= 21
-            ? "Après une coupure de cette durée, reprendre aux charges d’avant expose à la blessure. Je peux proposer une reprise progressive."
-            : "Une reprise en douceur vaut mieux qu’un rattrapage. Je peux alléger la première séance.",
-        action: { type: "fatigue" },
-      });
-  }
   const force = forceRevalState(p);
   if (!force.due && force.done && force.days != null && force.days <= FINDING_SOON_DAYS)
     findings.push({
@@ -1094,6 +1471,15 @@ export function coachFindings(p, on = today()) {
         ? `Vos charges sont calculées sur un bilan du ${force.last}. Refaites le test pour qu’elles restent justes.`
         : "Vos charges sont estimées d’après votre journal seulement. Un bilan 1RM les rendrait fiables.",
       action: { type: "navigate", page: "force" },
+    });
+  const metcon = weeklyMetconSuggestion(p, on);
+  if (metcon)
+    findings.push({
+      key: metcon.key,
+      severity: "low",
+      title: "METCON de la semaine",
+      detail: `Une proposition : ${metcon.format === "metcon-piscine" ? "METCON Piscine" : "METCON Aqua Tabata"}, ${metcon.minutes} min au niveau ${metcon.level + 1}. Rien n’est choisi à votre place.`,
+      action: { type: "navigate", page: "cardio" },
     });
   const order = { high: 0, medium: 1, low: 2 };
   return findings.sort((a, b) => order[a.severity] - order[b.severity]);

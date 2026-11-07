@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-25",
+  "sourceCommits": ["bdae589", "6bd8cb5"],
+  "decoder": "OpenCV headless",
+  "sampleSeconds": [0, 0.79, 1.58, 2.42, 3.21, 4],
+  "videos": [
+    {
+      "exerciseNumber": 1,
+      "exerciseId": "pompes-inclinees-mains-surelevees",
+      "integrated": true,
+      "status": "coached",
+      "source": "1792945442178.mp4",
+      "public": "public/videos/pompes-inclinees-mains-surelevees.mp4",
+      "release": "release/videos/pompes-inclinees-mains-surelevees.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-01-04/pectoraux-01-source-1792945442178.mp4",
+      "width": 640,
+      "height": 360,
+      "fps": 24,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sha256": "84856c33666a0988df562e86d3350ba414668aa5fa200460a988ef26307476d9",
+      "note": "Nouvelle version remise par Yanis et seule source #01 intégrée"
+    },
+    {
+      "exerciseNumber": 1,
+      "exerciseId": "pompes-inclinees-mains-surelevees",
+      "integrated": false,
+      "source": "1792945053224.mp4",
+      "public": null,
+      "release": null,
+      "proof": "docs/videos-3d/controle-pectoraux-01-04/pectoraux-01-ancienne-source-1792945053224.mp4",
+      "width": 640,
+      "height": 360,
+      "fps": 24,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sha256": "d21abe61d60bfba1fc76e833792e8fccf49f358c840c4d9b3dfd20821655c637",
+      "note": "Ancienne version conservée uniquement pour la comparaison"
+    },
+    {
+      "exerciseNumber": 2,
+      "exerciseId": "developpe-couche-halteres",
+      "integrated": true,
+      "status": "coached",
+      "source": "1792945070437.mp4",
+      "public": "public/videos/developpe-couche-halteres.mp4",
+      "release": "release/videos/developpe-couche-halteres.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-01-04/pectoraux-02-source-1792945070437.mp4",
+      "width": 1024,
+      "height": 576,
+      "fps": 24,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sha256": "57de008b37bb385ea5334073060b0f02825adfb757ae7986833512a74f8546f0"
+    },
+    {
+      "exerciseNumber": 3,
+      "exerciseId": "developpe-incline-halteres",
+      "integrated": true,
+      "status": "coached",
+      "source": "1792945064689.mp4",
+      "public": "public/videos/developpe-incline-halteres.mp4",
+      "release": "release/videos/developpe-incline-halteres.mp4",
+      "proof": "docs/videos-3d/controle-pectoraux-01-04/pectoraux-03-source-1792945064689.mp4",
+      "width": 640,
+      "height": 360,
+      "fps": 24,
+      "frames": 97,
+      "decodedFrames": 97,
+      "durationSeconds": 4.042,
+      "sha256": "7f0a54a9fea81ce5cb9d02eeb0c7b0dfff5fd7bb29cd178884dc8319b0e3d5e7"
+    }
+  ],
+  "missing": {
+    "exerciseNumber": 4,
+    "exerciseId": "developpe-incline-barre",
+    "reason": "Aucun MP4 de développé incliné à la barre déposé ; photo également à reprendre",
+    "fallbackGif": "/media/e4d9c22e0a05ea25.gif"
+  }
+}

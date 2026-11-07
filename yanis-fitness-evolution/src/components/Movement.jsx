@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { assetSrc, norm } from "../engine/utils.js";
 import { demonstrationFor, DEMO_LABELS } from "../engine/demo-match.js";
+import { coachingFor, videoFor, VIDEO_LABEL } from "../data/exercise-videos.js";
 import { motionFor } from "../engine/human-motion.js";
 import { POOL_GUIDES } from "../data/library.js";
 import { useApp } from "../store/AppContext.jsx";
@@ -9,6 +10,7 @@ import Anatomy from "./Anatomy.jsx";
 import HumanAnim from "./HumanAnim.jsx";
 // Démonstration d'un exercice ou d'une étape de séance.
 // Ordre de résolution (aucun écran vide, aucun placeholder générique) :
+// 0. vidéo 3D validée ou vidéo IA avec consigne corrective ("coached") ;
 // 1. GIF source exact de l'exercice ; 2. association explicite / famille
 // (moteur demo-match) ; 3. visuel de guide piscine pour une étape nommée ;
 // 4. animation humaine créée (moteur human-motion, geste propre au pattern)
@@ -20,9 +22,8 @@ import HumanAnim from "./HumanAnim.jsx";
 function poolGuideFor(name) {
   const n = norm(name);
   return (
-    POOL_GUIDES.find(
-      (g) => g.img && g.k.some((k) => n.includes(norm(k))),
-    ) || null
+    POOL_GUIDES.find((g) => g.img && g.k.some((k) => n.includes(norm(k)))) ||
+    null
   );
 }
 export function demonstration(exercise, movementName) {
@@ -33,9 +34,20 @@ export function demonstration(exercise, movementName) {
   if (movementName) {
     const guide = poolGuideFor(movementName);
     if (guide)
-      return { path: guide.img, name: guide.t, exact: false, level: "variante" };
+      return {
+        path: guide.img,
+        name: guide.t,
+        exact: false,
+        level: "variante",
+      };
   }
   return null;
+}
+function formatLiveCountdown(value) {
+  const seconds = Math.max(0, Math.ceil(Number(value) || 0));
+  return seconds >= 60
+    ? `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`
+    : `${seconds} s`;
 }
 export default function Movement({
   exercise,
@@ -43,9 +55,18 @@ export default function Movement({
   movementName,
   small = false,
   controls = true,
+  live = null,
+  belowVisual = null,
 }) {
   const media = demonstration(exercise, movementName),
     image = useRef();
+  // Vidéo prioritaire si elle est validée ou accompagnée de sa consigne.
+  const candidateVideo = exercise ? videoFor(exercise) : null,
+    // Dans les miniatures sans texte, montrer le GIF si la trajectoire de la
+    // vidéo est erronée ; la fiche complète conserve la vidéo et sa notice.
+    video = small && candidateVideo?.avoidSilentPreview && media ? null : candidateVideo,
+    coaching = exercise ? coachingFor(exercise) : null;
+  const videoRef = useRef(null);
   const { p, setModal } = useApp();
   const reduced =
     !!p?.preferences?.reducedMotion ||
@@ -60,7 +81,8 @@ export default function Movement({
   // les étapes nommées d'un protocole (piscine, elliptique, HIIT) suivent le
   // comportement 1.5.0 — visuel humain du guide ou de récupération, jamais de
   // personnage bâton.
-  const motion = !media && exercise && !breathe ? motionFor(exercise) : null;
+  const motion =
+    !video && !media && exercise && !breathe ? motionFor(exercise) : null;
   const capture = useCallback(() => {
     if (!image.current?.naturalWidth) return;
     try {
@@ -74,18 +96,42 @@ export default function Movement({
   useEffect(() => {
     setFrozen(null);
     setPaused(reduced);
-  }, [exercise?.id, media?.path, reduced]);
+  }, [exercise?.id, media?.path, video?.src, reduced]);
+  // Quand une vidéo 3D est disponible, Lecture/Pause pilote la vidéo ;
+  // sinon comportement historique (figer le GIF / animer la figure).
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    if (paused) el.pause();
+    else el.play().catch(() => {});
+    // Arrêter le média lors d'un changement d'exercice ou du démontage.
+    return () => el.pause();
+  }, [paused, video?.src]);
   const toggle = () => {
-    if (!paused) capture();
+    if (!video && !paused) capture();
     setPaused((v) => !v);
   };
-  const zoomable = (media || motion) && !small;
+  const zoomable = (video || media || motion) && !small;
   return (
     <div
-      className={`movement human-movement ${small ? "small" : ""} ${media || motion ? "has-media" : ""} ${breathe ? "breathing-human" : ""}`}
+      className={`movement human-movement ${small ? "small" : ""} ${video || media || motion ? "has-media" : ""} ${breathe ? "breathing-human" : ""}`}
     >
       <div className="movement-visual">
-        {media ? (
+        {video ? (
+          <video
+            ref={videoRef}
+            className="movement-video"
+            src={assetSrc(video.src)}
+            poster={video.poster ? assetSrc(video.poster) : undefined}
+            title={video.label || exercise?.name}
+            aria-label={video.label || exercise?.name}
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            autoPlay={!reduced && !paused}
+          />
+        ) : media ? (
           <img
             ref={image}
             className={`movement-media ${paused ? "paused" : ""}`}
@@ -136,6 +182,44 @@ export default function Movement({
             />
           </div>
         )}
+        {live && (
+          <div className="movement-live" aria-label="Informations de la séance">
+            <div className="movement-live-metrics">
+              <span className="movement-live-metric">
+                <small>SÉRIE</small>
+                <strong>
+                  {live.completed >= live.totalSets
+                    ? "Terminé"
+                    : `${Math.min(live.completed + 1, live.totalSets)} / ${live.totalSets}`}
+                </strong>
+              </span>
+              <span className="movement-live-metric">
+                <small>OBJECTIF</small>
+                <strong>{live.target}</strong>
+              </span>
+            </div>
+            {live.rest != null && (
+              <div className="movement-live-rest">
+                <Icon name="Timer" size={14} />
+                <span>Récupération</span>
+                <strong>{formatLiveCountdown(live.rest)}</strong>
+              </div>
+            )}
+            <div className="movement-live-progress">
+              <div className="movement-live-progress-label">
+                <span>Progression de la séance</span>
+                <strong>{Math.round(live.progress)} %</strong>
+              </div>
+              <div className="movement-live-progress-track">
+                <span
+                  style={{
+                    width: `${Math.max(0, Math.min(100, live.progress))}%`,
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        )}
         {zoomable && (
           <button
             type="button"
@@ -144,10 +228,14 @@ export default function Movement({
             onClick={() =>
               setModal({
                 type: "image",
-                src: media?.path,
-                poster: null,
-                title: media ? media.name : exercise?.name,
-                motion: motion || null,
+                src: video?.src || media?.path,
+                poster: video?.poster || null,
+                title: video?.label || media?.name || exercise?.name,
+                notice: video?.status === "coached" ? coaching?.notice : null,
+                noticeTitle:
+                  video?.status === "coached" ? coaching?.title : null,
+                spoken: video?.status === "coached" ? coaching?.spoken : null,
+                motion: video || media ? null : motion || null,
               })
             }
           >
@@ -155,9 +243,10 @@ export default function Movement({
           </button>
         )}
       </div>
+      {belowVisual}
       {controls && (
         <div className="movement-controls">
-          {media || motion || breathe ? (
+          {video || media || motion || breathe ? (
             <button
               onClick={toggle}
               aria-label={
@@ -171,23 +260,36 @@ export default function Movement({
             <Icon name="ScanLine" size={15} />
           )}
           <span>
-            {media
-              ? DEMO_LABELS[media.level] || DEMO_LABELS.variante
-              : motion
-                ? DEMO_LABELS.creee
-                : breathe
-                  ? "Guide respiratoire"
-                  : "Anatomie humaine · vue détaillée"}
+            {video
+              ? video.status === "coached"
+                ? "Vidéo IA · consigne de prise prioritaire"
+                : VIDEO_LABEL
+              : media
+                ? DEMO_LABELS[media.level] || DEMO_LABELS.variante
+                : motion
+                  ? DEMO_LABELS.creee
+                  : breathe
+                    ? "Guide respiratoire"
+                    : "Anatomie humaine · vue détaillée"}
           </span>
         </div>
       )}
-      {media && !media.exact && exercise && !small && (
+      {video?.status === "coached" && coaching && !small && (
+        <p className="movement-media-note movement-coaching-note">
+          <strong>
+            {coaching.title ||
+              "Ne copiez pas la rotation des mains de la vidéo IA."}
+          </strong>{" "}
+          {coaching.notice}
+        </p>
+      )}
+      {!video && media && !media.exact && exercise && !small && (
         <p className="movement-media-note">
           Démonstration de <strong>{media.name}</strong>, mouvement{" "}
-          {media.level === "famille" ? "de la même famille" : "très proche"}.
-          Le geste de référence est le bon ; suivez les étapes et les consignes
-          de <strong>{exercise.name}</strong> pour la position exacte, la prise
-          et l’amplitude.
+          {media.level === "famille" ? "de la même famille" : "très proche"}. Le
+          geste de référence est le bon ; suivez les étapes et les consignes de{" "}
+          <strong>{exercise.name}</strong> pour la position exacte, la prise et
+          l’amplitude.
         </p>
       )}
     </div>

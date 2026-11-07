@@ -12,6 +12,7 @@ import {
 import { today, dateLabel, uid, num, assetSrc } from "../../engine/utils.js";
 import { POOL_GUIDES } from "../../data/library.js";
 import { stepGuide } from "../../data/visuals.js";
+import { stepGifByPattern } from "../../data/visuals-gifs.js";
 import {
   sourceDay,
   sourceExtra,
@@ -134,7 +135,10 @@ export function DayScheduleModal({ date }) {
 export function SourceExtraModal({ event }) {
   const { p, closeModal, setModal, setTimer } = useApp();
   const resolved =
-    event.sourceKind === "post-cardio" || event.contentLocked
+    event.sourceKind === "post-cardio" ||
+    event.contentLocked ||
+    event.scheduleModified ||
+    event.copiedFrom
       ? event
       : { ...event, ...sourceExtra(p, sourceDay(p, event.date || today())) };
   const steps = sourceExtraSteps(p, resolved);
@@ -182,6 +186,15 @@ export function SourceExtraModal({ event }) {
             </Button>
             <Button
               variant="secondary small"
+              icon="Copy"
+              onClick={() =>
+                setModal({ type: "copy-scheduled", sessionId: event.id })
+              }
+            >
+              Copier vers un autre jour
+            </Button>
+            <Button
+              variant="secondary small"
               icon="Trash2"
               onClick={() => setModal({ type: "delete-planned", id: event.id })}
             >
@@ -191,6 +204,12 @@ export function SourceExtraModal({ event }) {
             </Button>
           </div>
         )}
+      {event.copiedFrom && (
+        <p className="source-completion-note">
+          Copie de la séance du {dateLabel(event.copiedFromDate)}. Le contenu a
+          été repris à l’identique et la séance d’origine est conservée.
+        </p>
+      )}
       {event.completionReportedOnly && (
         <div className="source-completion-note">
           {event.status === "missed"
@@ -235,12 +254,21 @@ export function SourceExtraModal({ event }) {
                     (s) => s.segment === (c.key === "post" ? "post" : c.key),
                   )
                   .map((s, j) => {
-                    // Visuel humain de SON domaine (guide piscine ou cardio
-                    // elliptique), identique à l'affichage 1.5.0.
-                    const guide = stepGuide(s.name, s.segment, POOL_GUIDES);
+                    // Le format de ce bloc prime sur les mots de la prescription :
+                    // « récupération active » en nage ne doit pas sélectionner le vélo.
+                    const isPool = c.format === "pool";
+                    const guide = stepGuide(
+                      s.name,
+                      isPool ? "pool" : s.segment,
+                      POOL_GUIDES,
+                    );
+                    const image =
+                      guide?.img ||
+                      (isPool ? stepGifByPattern(s.pattern, p.id, true) : null);
+                    const imageTitle = guide?.t || s.name;
                     return (
                       <li key={j}>
-                        {guide?.img && (
+                        {image && (
                           <button
                             type="button"
                             className="pool-step-thumb"
@@ -248,22 +276,27 @@ export function SourceExtraModal({ event }) {
                             onClick={() =>
                               setModal({
                                 type: "image",
-                                src: guide.img,
-                                title: guide.t,
+                                src: image,
+                                title: imageTitle,
                               })
                             }
                           >
                             <img
                               className="pool-step-img"
                               loading="lazy"
-                              src={assetSrc(guide.img)}
-                              alt={guide.t}
+                              src={assetSrc(image)}
+                              alt={imageTitle}
                             />
                             <Icon name="Maximize2" size={13} />
                           </button>
                         )}
                         <strong>{s.name}</strong>
                         <span>{s.seconds} s</span>
+                        {s.instruction && (
+                          <p className="pool-step-instruction">
+                            {s.instruction}
+                          </p>
+                        )}
                         {guide?.h?.length > 0 && (
                           <ul className="pool-step-tips">
                             {guide.h.map((tip, k) => (

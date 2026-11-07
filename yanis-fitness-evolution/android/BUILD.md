@@ -3,12 +3,12 @@
 Application autonome, séparée de « JARVIS Fitness » (n’importe pas son
 empreinte de signature) :
 
-| Élément | Valeur |
-| --- | --- |
-| appId / namespace | `app.yanis.fitness.evolution` |
-| versionName / versionCode | `1.5.1` / `151` |
-| Clé de release | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`) |
-| Stockage navigateur | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
+| Élément                   | Valeur                                                                                                                            |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
+| versionName / versionCode | `1.13.0` / `196`                                                                                                                   |
+| Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
+| Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
 ## Prérequis (machine locale)
 
@@ -18,8 +18,8 @@ empreinte de signature) :
 ## Chaîne complète
 
 ```bash
-npm run build          # vite → release/
 npm run build:portable # runtime.js + runtime.css + media-index.json pour l’export « HTML autonome »
+npm run build          # vite → release/
 npx cap sync android   # copie release/ dans android/app/src/main/assets/public
 cd android && ./gradlew assembleRelease
 # APK : android/app/build/outputs/apk/release/app-release.apk
@@ -32,11 +32,75 @@ les changer :
 ./gradlew assembleRelease -PYFE_STORE_PASSWORD='…' -PYFE_KEY_PASSWORD='…'
 ```
 
-## Vérifications locales possibles
+## Livraison 1.13.0 — vidéos dos #01 à #25
 
-- `npm test` — 96 tests unitaires (94 verts) (moteur, stockage, import DOC réel, minuteur/voix).
-- `npx playwright test` — parcours complets une fois les navigateurs installés
-  (`npx playwright install chromium`).
+Version Android `1.13.0` / `196`, même identifiant et même clé de signature.
+La livraison reprend les 25 vidéos du dos telles que déposées, leurs réserves
+et les GIF originaux. Le workflow vérifie individuellement les MP4, posters,
+GIF et leur hash depuis l'APK contre `public/`, ainsi que la signature.
+Le #24 est conservé tel quel à la demande de Yanis : ne pas générer de vidéo
+supplémentaire. Le #11 triceps demeure en stand-by. Les données existantes ne
+sont pas effacées volontairement ; sauvegarder avant l'installation et ne pas
+désinstaller si Android refuse la mise à jour.
+
+## Vérifications de la version 1.12.0 (25/10/2026)
+
+- Intégration des biceps #18→#20 en `coached` après accord explicite de Yanis (« Je valide les vidéos »), sans transformer les réserves en validation technique.
+- Posters de référence, notices propres et descriptifs audio corrigés : tempo et appui cuisse pour #18, séquence **bas–quart–bas–haut** pour #19, position fixe et retour en haut pour #20.
+- La vague 1 biceps couvre 20/20 exercices ; les GIF d'origine restent conservés comme fallback et le lot #14→#17 est inchangé.
+- `npm test` — **219 tests : 217 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **32 réussites, 0 échec, 11 ignorés** ; le parcours #18→#20 vérifie aussi la notice du #19 dans la visionneuse.
+- `npm run build:portable && npm run build` — **1679 modules**, **935 assets**, index triés et identiques, hashes des MP4 et posters concordants entre sources, `public/` et `release/`.
+- Version Android : `versionName 1.12.0`, `versionCode 195`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release, avec contrôle nominatif des trois nouvelles vidéos et de leurs posters.
+
+## Vérifications de la version 1.11.0 (25/10/2026)
+
+- Intégration des biceps #14→#17 en `coached` après validation explicite de Yanis des meilleures sources disponibles, sans les déclarer techniquement `validated`.
+- Posters de référence, notices propres à chaque réserve et descriptifs audio corrigés, y compris dans la visionneuse agrandie.
+- Les défauts restent documentés : retour haut imposé pour #14, marteau neutre pour #15, biceps du bras posé pour #16 et fin basse sans remontée supplémentaire pour #17.
+- `npm test` — **217 tests : 215 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **31 réussites, 0 échec, 11 ignorés** (sauvegarde externe absente, comme auparavant).
+- `npm run build` — **1679 modules**, build réussi et `release/` régénéré avec les quatre MP4 et leurs posters.
+- Version Android : `versionName 1.11.0`, `versionCode 194`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release, avec contrôle nominatif des quatre nouvelles vidéos et de leurs posters.
+
+## Vérifications de la version 1.10.0 (24/10/2026)
+
+- Overlay de séance sur les démonstrations : série, objectif, récupération et progression issus de l’état réel de l’entraînement.
+- Adaptation de charge JARVIS sur la séance existante, avec aperçu et confirmation ; aucun programme parallèle ni historique réécrit.
+- Repère vocal facultatif citant la performance précédente avec la même unité, sans transformer les agrégats importés en records.
+- `npm test` — **215 tests : 213 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **30 réussites, 0 échec, 11 ignorés** (sauvegarde externe absente, comme auparavant).
+- `npm run build` — **1679 modules**, build réussi et `release/` régénéré.
+- Version Android : `versionName 1.10.0`, `versionCode 193`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release.
+
+## Vérifications de la version 1.9.0 (24/10/2026)
+
+- Déplacement inter-semaines : contenu et identifiant de la séance sélectionnée conservés, avec verrouillage du contenu source.
+- Copie depuis « Semaine complète » : blocs liés repris avec de nouveaux identifiants, sans modifier l’original ni transférer ses séries validées.
+- Effacement de l’historique JARVIS avec confirmation, limité aux messages du profil actif.
+- Vitesse d’élocution persistée et transmise à Android TextToSpeech comme à la synthèse du navigateur.
+- `npm test` — **208 tests : 206 réussites, 0 échec, 2 ignorés**.
+- Playwright complet — **28 réussites, 0 échec, 11 ignorés** (sauvegarde externe absente, comme auparavant).
+- `npm run build` — **1679 modules**, build réussi et `release/` régénéré.
+- Version Android : `versionName 1.9.0`, `versionCode 192`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release.
+
+## Vérifications du correctif JARVIS 1.8.9 (24/10/2026)
+
+- Commandes de modification de programme et de report hebdomadaire : **9/9 tests ciblés**.
+- `npm test` — **202 tests : 200 réussites, 0 échec, 2 ignorés**.
+- Parcours JARVIS dans le navigateur, proposition puis application du report : **2/2 tests ciblés**.
+- Playwright complet — **25 réussites, 0 échec, 11 ignorés** (sauvegarde externe absente, comme auparavant).
+- `npm run build` — **1678 modules**, build réussi et `release/` régénéré.
+- Version Android : `versionName 1.8.9`, `versionCode 191`. L'APK signé est assemblé et contrôlé par le workflow GitHub de release.
+
+## Vérifications de la reprise 1.8.8 + test7 (22/10/2026)
+
+- `npm test` — **187 tests : 185 réussis, 0 échec, 2 ignorés**. Tous les tests JARVIS Brain passent.
+- Contrôle ciblé échauffement/vidéos — **14/14 réussites**.
+- `npm run build` — **1678 modules**, build réussi et `release/` régénéré.
+- Playwright — **18 tests généraux réussis** et **2 tests ciblés réussis** (JARVIS Brain, vidéos du récapitulatif et du minuteur). **11 scénarios de restauration sont ignorés** car leur sauvegarde jointe n'est pas disponible.
+- Le workflow Android vérifie la signature, `versionName 1.8.8`, `versionCode 190`, le nombre de médias et de MP4 embarqués, ainsi que les six vidéos témoins de l'échauffement.
+- La validation sur téléphone reste distincte de ces contrôles automatisés.
 
 ## Cohabitation avec l’ancienne application
 

@@ -61,7 +61,10 @@ export default function ModalRoot() {
   if (!modal) return null;
   const m = modal;
   const map = {
-    "move-scheduled": <MoveScheduleModal sessionId={m.sessionId} />,
+    "move-scheduled": <MoveScheduleModal key="move" sessionId={m.sessionId} />,
+    "copy-scheduled": (
+      <MoveScheduleModal key="copy" mode="copy" sessionId={m.sessionId} />
+    ),
     "edit-photo": <PhotoModal photoId={m.photoId} />,
     "day-schedule": <DayScheduleModal date={m.date} />,
     "source-extra": <SourceExtraModal event={m.event} />,
@@ -98,7 +101,17 @@ export default function ModalRoot() {
     protocol: <ProtocolModal protocolId={m.protocolId} level={m.level} />,
     warmup: <WarmupModal session={m.session} />,
     cooldown: <CooldownModal session={m.session} />,
-    image: <ImageViewer src={m.src} title={m.title} motion={m.motion} />,
+    image: (
+      <ImageViewer
+        src={m.src}
+        title={m.title}
+        motion={m.motion}
+        poster={m.poster}
+        notice={m.notice}
+        noticeTitle={m.noticeTitle}
+        spoken={m.spoken}
+      />
+    ),
     stretch: <StretchModal exercise={m.exercise} />,
   };
   if (map[m.type]) return map[m.type];

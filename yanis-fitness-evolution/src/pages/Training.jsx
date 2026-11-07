@@ -17,6 +17,7 @@ import {
   ProgressBar,
 } from "../components/ui.jsx";
 import Movement from "../components/Movement.jsx";
+import WorkoutLoadControl from "../components/WorkoutLoadControl.jsx";
 import Anatomy from "../components/Anatomy.jsx";
 import RestTimer, { useNow } from "../components/RestTimer.jsx";
 import VoiceCoach from "../components/VoiceCoach.jsx";
@@ -36,7 +37,7 @@ import {
   estimateMinutes,
 } from "../engine/planner.js";
 import {
-  recommendLoad,
+  workoutLoad,
   forceSummary,
   warmup,
   allSets,
@@ -46,7 +47,10 @@ import {
   numberLabel,
   dateLabel,
   durationLabel,
+  today,
 } from "../engine/utils.js";
+import { weeklyCoachState } from "../engine/coach-state.js";
+import { advanceTimer } from "../engine/timer.js";
 export default function Training() {
   const { p, tab, setTab, startWorkout, setModal, openExercise } = useApp();
   const value = tab === "session" ? "overview" : tab || "overview";
@@ -94,6 +98,7 @@ export default function Training() {
 function Preview() {
   const { p, startWorkout, openExercise, setModal, navigate } = useApp();
   const next = nextSession(p) || suggestSession(p);
+  const state = weeklyCoachState(p);
   return (
     <div className="training-layout">
       <div>
@@ -101,6 +106,21 @@ function Preview() {
           <Badge color="mint" dot>
             {next.deload ? "SEMAINE ALLÉGÉE" : "VOTRE PROCHAINE SÉANCE"}
           </Badge>
+          {state.decision !== "maintain" && (
+            <div className={`coach-state coach-state-${state.decision}`}>
+              <Icon name="Bot" size={17} />
+              <div>
+                <strong>Décision du coach : {state.label}</strong>
+                <p>{state.detail}</p>
+                {next.coachAdapted === today() && (
+                  <small>
+                    <Icon name="CircleCheck" size={12} /> Appliquée à cette
+                    séance (visible dans « Mes adaptations »).
+                  </small>
+                )}
+              </div>
+            </div>
+          )}
           <h2>{next.name}</h2>
           <p>
             {dateLabel(next.date, {
@@ -126,12 +146,13 @@ function Preview() {
         </Panel>
         <SectionHeading
           title="Le programme de la séance"
-          subtitle="Les charges affichées sont des propositions, pas des performances."
+          subtitle="Charges prévues si les exercices sont maintenus, pas des performances. Une hausse automatique reste ajustable."
         />
         <div className="exercise-list">
           {next.exercises.map((target, i) => {
             const ex = exerciseById(target.exerciseId);
-            const rec = recommendLoad(p, target);
+            const load = workoutLoad(p, target);
+            const rec = load.recommendation;
             return (
               <Panel className="exercise-row" key={target.exerciseId + i}>
                 <span className="exercise-number">
@@ -156,15 +177,20 @@ function Preview() {
                 </button>
                 <div className="exercise-row-load">
                   <strong>
-                    {rec.weight != null
-                      ? `${numberLabel(rec.weight)} kg`
+                    {load.targetLoad != null
+                      ? `${numberLabel(load.targetLoad)} kg${target.unit === "kg/main" ? " / main" : ""}`
                       : ex.timed
                         ? "Chronométré"
                         : ex.bodyweight
                           ? "Poids du corps"
                           : "À calibrer"}
                   </strong>
-                  <Badge color={rec.color}>{rec.label}</Badge>
+                  <Badge color={rec.color}>
+                    {load.autoIncrease ? "Hausse auto au lancement" : rec.label}
+                  </Badge>
+                  {load.autoIncrease && (
+                    <small>De {numberLabel(load.autoIncrease.from)} à {numberLabel(load.autoIncrease.to)} kg{load.autoIncrease.unit === "kg/main" ? " / main" : ""}</small>
+                  )}
                 </div>
                 <IconButton
                   icon="ArrowUpRight"
@@ -241,6 +267,9 @@ function Workout() {
     [rir, setRir] = useState(""),
     [note, setNote] = useState("");
   const force = forceSummary(p, ex.id, target.unit);
+  const now = useNow(400);
+  const restTimer =
+    p.timer?.meta?.type === "rest" ? advanceTimer(p.timer, now) : null;
   // Charge conseillée par le moteur de référence 1RM (1.5.0) : sert à la fois
   // de pré-remplissage du formulaire et de suggestion affichée dans le rail.
   const schemeReps =
@@ -283,7 +312,7 @@ function Workout() {
   }
 
   useEffect(() => {
-    setWeight(target.targetLoad ?? strengthLoad?.load ?? "");
+    setWeight(target.targetLoad ?? (target.autoIncreaseBlocked ? "" : strengthLoad?.load) ?? "");
     setReps(
       ex.timed
         ? target.seconds || 30
@@ -493,7 +522,28 @@ function Workout() {
                 onClick={() => openExercise(ex.id)}
               />
             </div>
-            <Movement exercise={ex} />
+            <Movement
+              exercise={ex}
+              belowVisual={
+                <WorkoutLoadControl
+                  target={target}
+                  exercise={ex}
+                  weight={weight}
+                  onChange={setWeight}
+                  disabled={w.safetyStop || done >= target.targetSets}
+                />
+              }
+              live={{
+                completed: done,
+                totalSets: target.targetSets,
+                target: ex.timed
+                  ? `${target.seconds || 30} s`
+                  : `${schemeReps ?? target.repsLow} rép.`,
+                progress: total ? (allDone / total) * 100 : 0,
+                rest:
+                  restTimer && !restTimer.done ? restTimer.remaining : null,
+              }}
+            />
             <div className="technique-strip">
               <Icon name="Focus" size={18} />
               <p>
@@ -555,7 +605,7 @@ function Workout() {
                           inputMode="decimal"
                           min="0"
                           max="1000"
-                          step="0.5"
+                          step="any"
                           placeholder={ex.bodyweight ? "PDC / 0" : "—"}
                           value={weight}
                           onChange={(e) => setWeight(e.target.value)}

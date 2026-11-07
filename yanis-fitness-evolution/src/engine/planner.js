@@ -1,4 +1,5 @@
 import {
+  copyScheduledFamily,
   moveScheduledFamily,
   rescheduleScheduledFamily,
 } from "./schedule-group.js";
@@ -7,6 +8,7 @@ import {
   sourcePosition,
   sourceExtra,
   sourceTrainingDays,
+  sourcePostStrengthPoolSteps,
   SOURCE_SCHEDULE_REVISION,
 } from "./source-schedule.js";
 import { sourceBlocks } from "./workout-flow.js";
@@ -25,7 +27,7 @@ import {
   clamp,
   dayDiff,
 } from "./utils.js";
-import { recommendLoad, recoveryScore, repRange } from "./fitness.js";
+import { recommendLoad, recoveryScore, repRange, workoutLoad } from "./fitness.js";
 import { validDate, numeric } from "./validation.js";
 export const DAYS = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
 export const SMART_TEMPLATES = [
@@ -427,17 +429,21 @@ export function generateSourcePlan(
               name: c.apres,
               minutes: c.duree,
               seconds: c.duree * 60,
-              customSteps: [
-                {
-                  name: c.detail,
-                  seconds: c.duree * 60,
-                  kind: "work",
-                  pattern: pool ? "swim" : "walk",
-                },
-              ],
+              customSteps: pool
+                ? sourcePostStrengthPoolSteps(c.duree, day.weekGlobal)
+                : [
+                    {
+                      name: c.detail,
+                      seconds: c.duree * 60,
+                      kind: "work",
+                      pattern: "walk",
+                    },
+                  ],
             },
           ],
-          instructions: c.detail,
+          instructions: pool
+            ? "Piscine après musculation : intervalles variés et plus soutenus (effort 7/10), récupérations actives et retour au calme. Pas de sprint maximal ni d’apnée; marchez dans l’eau si nécessaire."
+            : c.detail,
           estimatedMinutes: c.duree,
           sourceScheduleRevision: SOURCE_SCHEDULE_REVISION,
         });
@@ -558,12 +564,14 @@ export function prepareWorkout(p, planned) {
       ];
     })
     .map((e) => {
-      const rec = recommendLoad(p, e);
+      const load = workoutLoad(p, e);
       return {
         ...e,
         sets: [],
-        targetLoad: e.targetLoad ?? rec.weight,
-        recommendation: rec,
+        targetLoad: load.targetLoad,
+        recommendation: load.recommendation,
+        autoIncrease: load.autoIncrease,
+        autoIncreaseBlocked: !!load.autoIncreaseBlocked,
         targetSets:
           !s.preservePrescription &&
           recovery != null &&
@@ -656,6 +664,79 @@ export function shortenSession(session, minutes) {
 export function moveSession(p, id, date, options) {
   return moveScheduledFamily(p, id, date, options);
 }
+export function copySession(p, id, date, options) {
+  return copyScheduledFamily(p, id, date, options);
+}
+
+/* Report simple d'une semaine : toutes les séances encore planifiées à
+   partir de ce lundi suivent le même délai. Ainsi, la semaine manquée ne se
+   superpose pas à la semaine déjà prévue et l'ordre du programme est conservé.
+   Aucun contenu sportif n'est régénéré et les statuts historiques ne bougent
+   pas. */
+export function shiftProgramWeek(p, weekStart, days = 7) {
+  if (!validDate(weekStart))
+    throw new Error("La semaine à décaler est introuvable.");
+  if (!Number.isInteger(days) || days < 1 || days > 28)
+    throw new Error("Le décalage doit être compris entre 1 et 28 jours.");
+  const weekEnd = addDays(weekStart, 6);
+  const planned = (p.plan?.sessions || []).filter(
+    (s) => s.status === "planned" && s.date >= weekStart,
+  );
+  const weekSessions = planned.filter((s) => s.date <= weekEnd);
+  if (!weekSessions.length)
+    throw new Error(
+      "Aucune séance encore planifiée cette semaine. Rien n’a été décalé.",
+    );
+  const ids = new Set(planned.map((s) => s.id));
+  if (ids.has(p.workout?.planId) || ids.has(p.timer?.meta?.planId))
+    throw new Error(
+      "Terminez la séance ou le protocole en cours avant de décaler leur programme.",
+    );
+
+  const plan = structuredClone(p.plan);
+  const at = Date.now();
+  for (const session of plan.sessions) {
+    if (!ids.has(session.id)) continue;
+    const from = session.date;
+    const to = addDays(from, days);
+    session.scheduleHistory = [
+      ...(session.scheduleHistory || []),
+      {
+        from,
+        to,
+        fromTime: session.time || null,
+        toTime: session.time || null,
+        at,
+        reason: "week-shift",
+      },
+    ];
+    session.originalDate = session.originalDate || from;
+    session.date = to;
+    session.contentLocked = true;
+    session.scheduleModified = true;
+  }
+  plan.sessions.sort(
+    (a, b) =>
+      a.date.localeCompare(b.date) ||
+      (a.time || "").localeCompare(b.time || ""),
+  );
+  if (plan.startDate && plan.sessions.length) {
+    const lastDate = plan.sessions.at(-1).date;
+    const requiredWeeks = Math.max(
+      1,
+      Math.ceil((dayDiff(lastDate, plan.startDate) + 1) / 7),
+    );
+    plan.weeks = Math.max(plan.weeks || 0, requiredWeeks);
+  }
+  return {
+    plan,
+    moved: planned.length,
+    weekMoved: weekSessions.length,
+    futureMoved: planned.length - weekSessions.length,
+    days,
+  };
+}
+
 export function rescheduleMissed(p, id) {
   return rescheduleScheduledFamily(p, id);
 }

@@ -3,6 +3,9 @@
 // d'exercice, validation de série, compte à rebours de récupération, fin de
 // repos, rappel de tempo — tout est déduit de la séance, jamais inventé.
 
+import { coachingFor } from "../data/exercise-videos.js";
+import { numberLabel } from "./utils.js";
+
 // Tempo "3111" / "3x11" (x = explosif) : [excentrique, bas, concentrique, haut].
 export function parseTempo(value) {
   const m = String(value ?? "")
@@ -14,20 +17,20 @@ export function parseTempo(value) {
     bottom = v(m[2]),
     concentric = v(m[3]),
     top = v(m[4]);
-  const total = [eccentric, bottom, concentric, top].map((x) =>
-    typeof x === "number" ? x : 0.5,
-  ).reduce((a, b) => a + b, 0);
+  const total = [eccentric, bottom, concentric, top]
+    .map((x) => (typeof x === "number" ? x : 0.5))
+    .reduce((a, b) => a + b, 0);
   return { eccentric, bottom, concentric, top, total };
 }
 export function tempoCueSentence(value) {
   const o = parseTempo(value);
   if (!o) return null;
   const phrase = (c, u) =>
-    c === "explosif"
-      ? `${u} explosif`
-      : c === 0
-        ? null
-        : `${u} ${c} seconde${c > 1 ? "s" : ""}`,
+      c === "explosif"
+        ? `${u} explosif`
+        : c === 0
+          ? null
+          : `${u} ${c} seconde${c > 1 ? "s" : ""}`,
     parts = [
       phrase(o.eccentric, "Descente en"),
       o.bottom && o.bottom !== 0
@@ -63,18 +66,54 @@ export function restCountdownCue(secondsRemaining, stepSeconds) {
                 };
   return null;
 }
-export function exerciseIntroCue(exercise, row, { first = false } = {}) {
+/**
+ * Repère vocal factuel : seules les séries réellement enregistrées, avec une
+ * unité déjà filtrée par l'appelant, sont citées. Les agrégats importés ne
+ * sont pas transformés en prétendue série individuelle.
+ */
+export function previousPerformanceCue(previous, unit) {
+  const sets = (previous?.sets || []).filter(
+    (set) => set.completed && !set.legacyAggregate && (set.count || 1) === 1,
+  );
+  const set = sets.at(-1);
+  if (!set) return null;
+  const weight =
+      set.weight == null || set.weight === "" ? null : Number(set.weight),
+    reps = set.reps == null || set.reps === "" ? null : Number(set.reps),
+    hasWeight = weight != null && Number.isFinite(weight) && weight >= 0,
+    hasReps = reps != null && Number.isFinite(reps) && reps > 0;
+  if (!hasWeight && !hasReps) return null;
+  const performance = hasWeight
+    ? `${numberLabel(weight)} ${unit === "kg/main" ? "kilos par haltère" : "kilos"}${hasReps ? ` pour ${numberLabel(reps)} répétitions` : ""}`
+    : `${numberLabel(reps)} répétitions`;
+  return {
+    key: `previous-${previous.sessionId}`,
+    text: `Votre repère précédent : ${performance}. Essayez d’égaler ce repère avec une exécution propre avant d’augmenter.`,
+    priority: 1,
+  };
+}
+
+export function exerciseIntroCue(
+  exercise,
+  row,
+  { first = false, previous = null } = {},
+) {
   if (!exercise) return null;
   const sets = row?.targetSets || exercise.defaultSets,
     scheme = row?.repScheme || exercise.repScheme,
     tempo = tempoCueSentence(row?.tempo || exercise.tempo),
     weight = row?.recommendation?.weight,
+    coaching = coachingFor(exercise),
     parts = [
-      first ? `On commence par ${exercise.name}.` : `Exercice suivant : ${exercise.name}.`,
+      first
+        ? `On commence par ${exercise.name}.`
+        : `Exercice suivant : ${exercise.name}.`,
       sets && scheme ? `${sets} séries de ${scheme} répétitions.` : null,
       weight != null
         ? `Charge suggérée : ${weight} kilos${exercise.unit === "kg/main" ? " par haltère" : ""}.`
         : null,
+      previousPerformanceCue(previous, row?.unit || exercise.unit)?.text,
+      coaching?.spoken,
       tempo,
     ].filter(Boolean);
   return {
@@ -112,12 +151,20 @@ export function tempoReminderCue(exercise, rowTempo) {
   const lines = [];
   if (typeof t.eccentric === "number" && t.eccentric >= 3)
     lines.push("Contrôlez la descente, ne lâchez pas la charge.");
-  if (typeof t.top === "number" && t.top >= 1) lines.push("Serrez fort en haut.");
+  if (typeof t.top === "number" && t.top >= 1)
+    lines.push("Serrez fort en haut.");
   if (typeof t.bottom === "number" && t.bottom >= 1)
     lines.push("Marquez la pause en bas, sans rebond.");
   return lines.length
     ? { key: `cue-${exercise?.id}`, text: lines.join(" "), priority: 1 }
     : null;
+}
+/** Consigne technique complète, répétable à la demande pendant la séance. */
+export function techniqueCue(exercise, rowTempo) {
+  const coaching = coachingFor(exercise),
+    reminder = tempoReminderCue(exercise, rowTempo),
+    text = [coaching?.spoken, reminder?.text].filter(Boolean).join(" ");
+  return text ? { key: `technique-${exercise?.id}`, text, priority: 3 } : null;
 }
 // Annonce des minuteurs de protocole (repos inclus) : fin par type, passage
 // d'étape, compte à rebours 5-3-2-1. Le mémo rend chaque phrase unique.
