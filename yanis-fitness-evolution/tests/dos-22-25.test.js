@@ -60,7 +60,7 @@ test("dos #22 et #25 : sources, copies, GIF, voix et programmation ; #24 préser
     assert.equal(sha(`public${video.poster}`), sha(`release${video.poster}`));
   }
   const e24 = EXERCISES.find((e) => e.id === "pullover-haltere-plat");
-  assert.equal(videoFor(e24), null);
+  assert.equal(videoFor(e24).status, "coached");
   for (const base of ["public", "release"])
     assert.ok(existsSync(file(`${base}${e24.gif}`)));
   assert.match(

@@ -142,8 +142,9 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    Lot suivant #19→#23 : `39-DOS-19-23-PRODUCTION.md` ; photos de départ
    #19, #20, #21 et #23 intégrés `coached` après dépôt ; contrôle et doublons
    dans `40-DOS-19-21-23-CONTROLE-MP4.md`. #22 et #25 intégrés `coached` après dépôt ; contrôle dans
-   `42-DOS-22-25-CONTROLE-MP4.md`. #24 reste le seul dos sans vidéo ; une nouvelle référence a été préparée
-   dans `43-DOS-24-PULLOVER-PRODUCTION.md`. Les GIF et la programmation restent inchangés.
+   `42-DOS-22-25-CONTROLE-MP4.md`. #24 est maintenant intégré `coached`, tel que déposé sur demande de Yanis ;
+   ne pas lui demander de refaire la vidéo ni dépenser ses crédits. Voir
+   `44-DOS-24-CONTROLE-MP4.md`. Les 25 exercices dos ont une vidéo. Les GIF et la programmation restent inchangés.
    Aucune modification de programmation ni d'APK.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,

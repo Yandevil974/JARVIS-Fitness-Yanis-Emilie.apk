@@ -1,13 +1,13 @@
 # Dos #22, #24 et #25 — suite du lot de production
 
-Reprise du #22, puis derniers exercices du catalogue dos. Ces images sont des **références IA fixes** ; elles ne démontrent ni le mouvement ni le tempo. Les vidéos #22 et #25 sont depuis intégrées `coached` : voir [contrôle du dépôt](./42-DOS-22-25-CONTROLE-MP4.md). #24 reste sans vidéo ; les GIF et la programmation du catalogue restent inchangés. Toute vidéo que Yanis déposera vaut accord d'intégration ; la conserver avec les réserves réellement observées, sans redemander confirmation.
+Reprise du #22, puis derniers exercices du catalogue dos. Ces images sont des **références IA fixes** ; elles ne démontrent ni le mouvement ni le tempo. Les vidéos #22 et #25 sont depuis intégrées `coached` : voir [contrôle du dépôt](./42-DOS-22-25-CONTROLE-MP4.md). #24 est maintenant intégré `coached` : [contrôle](./44-DOS-24-CONTROLE-MP4.md). Les GIF et la programmation du catalogue restent inchangés. Toute vidéo que Yanis déposera vaut accord d'intégration ; la conserver avec les réserves réellement observées, sans redemander confirmation.
 
 [Planche #22 et #25](./vague4-dos-22-25-apercu.jpg) · [Zooms](./vague4-dos-22-25-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 
 | # | Exercice | Photo · zoom | Programmation et réserves |
 |---|---|---|---|
 | 22 | Rowing assis câble unilatéral | [Photo](./vague4-dos-22-rowing-cable-unilateral-v4.jpg) · [Zoom](./vague4-dos-22-zoom-technique.jpg) | 4 × 7–9 · 3011 · 90 s. Nouvelle candidate après les essais non retenus : un bras travaille, l'autre main est sur la cuisse ; vidéo intégrée `coached` avec les réserves du contrôle. |
-| 24 | Pullover haltère plat | [Nouvelle photo](./vague4-dos-24-pullover-haltere-plat-v6.jpg) · [Zoom](./vague4-dos-24-zoom-technique-v6.jpg) | 3 × 12–15 · 3010 · 60 s. Nouvelle variante à prise horizontale sur un seul haltère ; [fiche mise à jour](./43-DOS-24-PULLOVER-PRODUCTION.md). Le GIF reste disponible. |
+| 24 | Pullover haltère plat | [Nouvelle photo](./vague4-dos-24-pullover-haltere-plat-v6.jpg) · [Zoom](./vague4-dos-24-zoom-technique-v6.jpg) | 3 × 12–15 · 3010 · 60 s. Nouvelle variante à prise horizontale sur un seul haltère ; [fiche mise à jour](./43-DOS-24-PULLOVER-PRODUCTION.md). Vidéo déposée intégrée `coached` ; le GIF reste disponible. |
 | 25 | Rowing à l'élastique | [Photo](./vague4-dos-25-rowing-elastique-v3.jpg) · [Zoom](./vague4-dos-25-zoom-technique.jpg) | 3 × 10–15 · 3010 · 90 s. Assis au sol, deux poignées et bandes attachées devant ; vérifier la fixation et les poignées dans la vidéo. La fiche demande explicitement de fixer solidement l'élastique ; vidéo intégrée `coached`. |
 
 ## #22 — Rowing assis câble unilatéral

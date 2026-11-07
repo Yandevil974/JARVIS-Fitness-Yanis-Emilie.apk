@@ -1,8 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("dos #22 et #25 : vidéos accompagnées ; #24 conserve son GIF", async ({
-  page,
-}) => {
+test("dos #22, #24 et #25 : vidéos accompagnées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/");
@@ -19,6 +17,12 @@ test("dos #22 et #25 : vidéos accompagnées ; #24 conserve son GIF", async ({
       window.__spoken.push(utterance.text);
   });
   const cases = [
+    [
+      "Pullover haltère plat",
+      "pullover-haltere-plat",
+      /ne descend pas nettement derrière la tête/i,
+      /ne cherchez pas à toucher le sol|sans chercher à toucher le sol/i,
+    ],
     [
       "Rowing assis câble unilatéral",
       "rowing-assis-cable-unilateral",
@@ -59,16 +63,5 @@ test("dos #22 et #25 : vidéos accompagnées ; #24 conserve son GIF", async ({
       .last()
       .click();
   }
-  const name = "Pullover haltère plat";
-  await page.getByLabel("Rechercher un exercice").fill(name);
-  await page
-    .getByRole("button", { name: `Démonstration ${name}`, exact: true })
-    .click();
-  const dialog = page.getByRole("dialog", { name, exact: true });
-  await expect(dialog.locator(".movement-video")).toHaveCount(0);
-  await expect(dialog.locator(".movement-media")).toHaveAttribute(
-    "src",
-    "/media/f56fbc2e2510c4b2.gif",
-  );
   expect(errors).toEqual([]);
 });

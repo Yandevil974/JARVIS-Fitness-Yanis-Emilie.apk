@@ -1468,6 +1468,25 @@ export const EXERCISE_VIDEOS = {
         "Rowing à l'élastique. Avant de commencer, vérifiez l'état de l'élastique et fixez-le solidement à un ancrage stable. Assis au sol, pieds en appui et genoux souples, tenez une poignée dans chaque main, dos neutre. Tirez les deux poignées vers les côtes en une seconde, coudes vers l'arrière près du corps. Revenez en trois secondes jusqu'aux bras allongés, sans pause et sans basculer. Ne lâchez pas les poignées sous tension et ne fixez pas l'élastique autour des poignets. Une main est masquée en fin de tirage ; la symétrie et le tempo ne sont pas clairement montrés, et la pause est trop longue. Suivez le tempo 3010 plutôt que l'image. Trois séries de dix à quinze, quatre-vingt-dix secondes de repos.",
     },
   },
+  // Dos #24 : vidéo conservée telle que déposée, avec amplitude prudente.
+  "pullover-haltere-plat": {
+    src: "/videos/pullover-haltere-plat.mp4",
+    poster: "/videos/posters/pullover-haltere-plat.jpg",
+    label: "Vidéo IA · Pullover haltère plat",
+    status: "coached",
+    coaching: {
+      title:
+        "Abaissez l'haltère vers l'arrière uniquement dans une amplitude confortable.",
+      handCue:
+        "Tenez un seul haltère fermement à deux mains, avec une prise sûre adaptée à sa forme.",
+      movementCue:
+        "Abaissez vers l'arrière en trois secondes puis ramenez au-dessus de la poitrine en une seconde, coudes souples.",
+      notice:
+        "La vidéo ne descend pas nettement derrière la tête, les coudes changent d'angle et la prise des mains est peu lisible. Ne forcez jamais plus bas pour imiter une amplitude ; suivez les consignes et votre mobilité confortable.",
+      spoken:
+        "Pullover haltère plat. Allongez-vous dans le sens du banc, tête, dos et bassin soutenus, pieds au sol. Tenez un seul haltère fermement avec les deux mains, en choisissant une prise sûre adaptée au matériel. Si vous ne pouvez pas tenir la charge de façon sûre, ne commencez pas. Au départ, l'haltère est au-dessus de la poitrine, les coudes légèrement fléchis. Abaissez-le lentement vers l'arrière de la tête en trois secondes par les épaules, sans chercher à toucher le sol ni forcer la mobilité. Arrêtez avant toute douleur. Ramenez-le au-dessus de la poitrine en une seconde, sans pause, en gardant un angle de coude à peu près constant et le dos soutenu. La vidéo ne montre pas nettement la descente derrière la tête, les coudes changent d'angle et la prise est peu lisible ; respectez votre amplitude confortable et le tempo 3010 plutôt que d'imiter ces détails. Trois séries de douze à quinze, soixante secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;
