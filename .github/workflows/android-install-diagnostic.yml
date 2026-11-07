@@ -47,7 +47,7 @@ jobs:
           arch: x86_64
           disable-animations: true
           script: |
-            set -euxo pipefail
+            set -eux
             adb shell getprop ro.build.version.release
             adb shell df -h /data
             adb install /tmp/yfe-old/yanis-fitness-evolution-1.12.0.apk
