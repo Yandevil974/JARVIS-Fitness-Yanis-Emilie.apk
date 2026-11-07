@@ -556,14 +556,19 @@ function isLoadProgressionQuestion(text, q) {
     /^(?:(?:peux tu|tu peux|pourrais tu|tu pourrais|merci de|s il te plait|je veux que tu) )?(?:recalcule|recalculer|adapte|adapter|ajuste|ajuster|modifie|modifier|change|changer|augmente|augmenter|baisse|baisser)\b/.test(q);
   return (
     question && load && explanation && !directRequest &&
-    (performance || /\b(?:seances?|entrainements?)\b/.test(q) || /\b(?:calcul\w*|recalcul\w*)\b/.test(q))
+    (performance || /\b(?:seances?|entrainements?|automatique\w*)\b/.test(q) || /\b(?:calcul\w*|recalcul\w*)\b/.test(q))
   );
 }
 
 function loadProgressionAnswer(p) {
   const completed = allSets(p).length;
+  const increases = (p.workout?.exercises || []).filter((e) => e.autoIncrease);
+  const applied = increases.length
+    ? ` Dans la séance en cours, j’ai appliqué au démarrage : ${increases.slice(0, 3).map((e) => `${exerciseById(e.exerciseId).name} ${loadLabel(e.autoIncrease.from, e.autoIncrease.unit)} → ${loadLabel(e.autoIncrease.to, e.autoIncrease.unit)}`).join(" ; ")}${increases.length > 3 ? ` ; et ${increases.length - 3} autre(s)` : ""}. Ce sont les charges initiales, que vous pouvez modifier.`
+    : "";
   return {
-    text: `Oui, je tiens compte de vos performances : pour proposer une charge, j’utilise les séries terminées enregistrées pour le même exercice et la même unité : poids, répétitions et RPE ou RIR s’ils sont renseignés. Je regarde aussi la cible de répétitions et la récupération disponible. Dans votre profil, ${completed ? `je trouve ${completed} série${completed > 1 ? "s" : ""} terminée${completed > 1 ? "s" : ""} tous exercices confondus` : "je ne trouve pas encore de série terminée enregistrée"} ; seules les séries compatibles servent pour chaque exercice.\n\nUne hausse n’est pas automatique : selon les résultats et la récupération, je peux proposer de garder ou réduire la charge. Si le RPE/RIR manque sur une série, je ne propose pas de hausse à partir de cet historique ; si l’historique manque, une référence de force peut servir, sinon la charge est à calibrer. Pour un exercice au poids du corps, je propose plutôt une progression en répétitions.\n\nLa recommandation de la prochaine séance est recalculée à l’aperçu et au démarrage. Au démarrage, elle sert de cible si aucune charge n’est déjà fixée ; une charge déjà inscrite peut rester en place, même si la recommandation a changé. Pour modifier une séance existante, demandez « Recalcule mes charges » puis confirmez la proposition : les séries déjà enregistrées ne sont pas réécrites.`,
+    text: `Oui, je tiens compte de vos performances et je peux augmenter automatiquement la charge initiale au lancement de la prochaine séance, sans confirmation supplémentaire.${applied}\n\nJe regarde les séries terminées du même exercice et de la même unité : charge, répétitions et RPE ou RIR, ainsi que la récupération disponible. Dans votre profil, ${completed ? `je trouve ${completed} série${completed > 1 ? "s" : ""} terminée${completed > 1 ? "s" : ""} tous exercices confondus` : "je ne trouve pas encore de série terminée enregistrée"} ; seules les séries compatibles servent pour chaque exercice.\n\nLa hausse n’est pas systématique : elle exige notamment les séries cibles terminées en haut de fourchette et un effort maîtrisé renseigné sur chaque série. Je la suspends notamment en cas de douleur ou forte fatigue, de prescription complexe, de matériel indisponible ou d’unité incertaine. Si les données ne suffisent pas, je conserve la charge ou propose de calibrer. Pour le poids du corps, je propose plutôt des répétitions.\n\nJ’annonce les hausses dans l’aperçu, au démarrage et dans « Mes adaptations ». Elles concernent la charge initiale de la séance lancée, pas toutes les séances futures. Une charge déjà fixée reste protégée : demandez « Recalcule mes charges » et confirmez pour la modifier. Les séries déjà enregistrées ne sont pas réécrites, et vous pouvez toujours ajuster votre charge.`,
+
     // Garantit que l'explication locale vérifiée n'est pas remplacée par une
     // réponse du fournisseur externe, et permet d'ouvrir la séance.
     navigate: "training",

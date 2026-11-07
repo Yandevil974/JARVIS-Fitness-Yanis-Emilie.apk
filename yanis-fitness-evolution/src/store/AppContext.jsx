@@ -33,7 +33,7 @@ import { setBrainEnabled as applyBrainEnabled } from "../brain/policy.js";
 import { createTimer } from "../engine/timer.js";
 import { allSets, estimate1RM } from "../engine/fitness.js";
 import { exerciseById } from "../data/library.js";
-import { today, uid, num } from "../engine/utils.js";
+import { today, uid, num, numberLabel } from "../engine/utils.js";
 import { actualSet, numeric } from "../engine/validation.js";
 import { completePlanned } from "../engine/plan-memory.js";
 import { DEFAULT_SPEECH_RATE, normalizeSpeechRate } from "../engine/speech.js";
@@ -259,15 +259,31 @@ export function AppProvider({ children }) {
       );
       return;
     }
+    const increases = workout.exercises.filter((e) => e.autoIncrease);
+    const detail = increases.map((e) => {
+      const change = e.autoIncrease;
+      return `${exerciseById(e.exerciseId).name} : ${numberLabel(change.from)} → ${numberLabel(change.to)} kg${change.unit === "kg/main" ? " par haltère" : ""}`;
+    });
+    const adaptation = increases.length ? {
+      id: uid(),
+      date: today(),
+      at: Date.now(),
+      label: "Hausses automatiques au démarrage",
+      detail: `${detail.join(" ; ")}. Charges initiales ajustables ; séries et planning conservés.`,
+    } : null;
     updateProfile((q) => {
       q.workout = workout;
+      if (adaptation) q.adaptations.unshift(adaptation);
     });
     setModal(null);
     navigate("training", "session");
-    speak(
-      "Séance prête. Prenez le temps de vous échauffer.",
-      p.preferences.voice,
-    );
+    if (increases.length) {
+      const summary = `${detail.slice(0, 2).join(" ; ")}${detail.length > 2 ? ` ; et ${detail.length - 2} autre(s)` : ""}`;
+      notify(`Hausse automatique appliquée : ${summary}. Charges ajustables.`, "info");
+      speak(`Séance prête. Hausse automatique : ${summary}. Vous pouvez ajuster les charges.`, p.preferences.voice);
+    } else {
+      speak("Séance prête. Prenez le temps de vous échauffer.", p.preferences.voice);
+    }
   };
   const setTimer = (steps, meta) => {
     if (p.checkIns[today()]?.painReported) {

@@ -36,7 +36,7 @@ import {
   estimateMinutes,
 } from "../engine/planner.js";
 import {
-  recommendLoad,
+  workoutLoad,
   forceSummary,
   warmup,
   allSets,
@@ -145,12 +145,13 @@ function Preview() {
         </Panel>
         <SectionHeading
           title="Le programme de la séance"
-          subtitle="Les charges affichées sont des propositions, pas des performances."
+          subtitle="Charges prévues si les exercices sont maintenus, pas des performances. Une hausse automatique reste ajustable."
         />
         <div className="exercise-list">
           {next.exercises.map((target, i) => {
             const ex = exerciseById(target.exerciseId);
-            const rec = recommendLoad(p, target);
+            const load = workoutLoad(p, target);
+            const rec = load.recommendation;
             return (
               <Panel className="exercise-row" key={target.exerciseId + i}>
                 <span className="exercise-number">
@@ -175,15 +176,20 @@ function Preview() {
                 </button>
                 <div className="exercise-row-load">
                   <strong>
-                    {rec.weight != null
-                      ? `${numberLabel(rec.weight)} kg`
+                    {load.targetLoad != null
+                      ? `${numberLabel(load.targetLoad)} kg${target.unit === "kg/main" ? " / main" : ""}`
                       : ex.timed
                         ? "Chronométré"
                         : ex.bodyweight
                           ? "Poids du corps"
                           : "À calibrer"}
                   </strong>
-                  <Badge color={rec.color}>{rec.label}</Badge>
+                  <Badge color={rec.color}>
+                    {load.autoIncrease ? "Hausse auto au lancement" : rec.label}
+                  </Badge>
+                  {load.autoIncrease && (
+                    <small>De {numberLabel(load.autoIncrease.from)} à {numberLabel(load.autoIncrease.to)} kg{load.autoIncrease.unit === "kg/main" ? " / main" : ""}</small>
+                  )}
                 </div>
                 <IconButton
                   icon="ArrowUpRight"
@@ -305,7 +311,7 @@ function Workout() {
   }
 
   useEffect(() => {
-    setWeight(target.targetLoad ?? strengthLoad?.load ?? "");
+    setWeight(target.targetLoad ?? (target.autoIncreaseBlocked ? "" : strengthLoad?.load) ?? "");
     setReps(
       ex.timed
         ? target.seconds || 30

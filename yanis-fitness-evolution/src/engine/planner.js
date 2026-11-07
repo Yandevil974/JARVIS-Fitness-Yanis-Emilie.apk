@@ -27,7 +27,7 @@ import {
   clamp,
   dayDiff,
 } from "./utils.js";
-import { recommendLoad, recoveryScore, repRange } from "./fitness.js";
+import { recommendLoad, recoveryScore, repRange, workoutLoad } from "./fitness.js";
 import { validDate, numeric } from "./validation.js";
 export const DAYS = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
 export const SMART_TEMPLATES = [
@@ -564,12 +564,14 @@ export function prepareWorkout(p, planned) {
       ];
     })
     .map((e) => {
-      const rec = recommendLoad(p, e);
+      const load = workoutLoad(p, e);
       return {
         ...e,
         sets: [],
-        targetLoad: e.targetLoad ?? rec.weight,
-        recommendation: rec,
+        targetLoad: load.targetLoad,
+        recommendation: load.recommendation,
+        autoIncrease: load.autoIncrease,
+        autoIncreaseBlocked: !!load.autoIncreaseBlocked,
         targetSets:
           !s.preservePrescription &&
           recovery != null &&

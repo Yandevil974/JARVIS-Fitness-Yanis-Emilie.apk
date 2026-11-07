@@ -138,11 +138,12 @@ test("Jarvis répond à la question sur la progression sans modifier le profil",
       assert.equal(answer.automatic, undefined, question);
       // AppContext ne remplace pas une réponse avec navigation par le cerveau distant.
       assert.equal(answer.navigate, "training", question);
-      assert.match(answer.text, /même exercice et la même unité/);
+      assert.match(answer.text, /même exercice et de la même unité/);
       assert.match(answer.text, /RPE ou RIR/);
-      assert.match(answer.text, /hausse n’est pas automatique/);
-      assert.match(answer.text, /charge déjà inscrite peut rester/);
-      assert.match(answer.text, /confirmez la proposition/);
+      assert.match(answer.text, /augmenter automatiquement la charge initiale/);
+      assert.match(answer.text, /hausse n’est pas systématique/);
+      assert.match(answer.text, /charge déjà fixée reste protégée/);
+      assert.match(answer.text, /confirmez pour la modifier/);
       assert.match(answer.text, withHistory ? /3 séries terminées/ : /pas encore de série terminée/);
       assert.deepEqual(p, before, question);
     }
@@ -220,4 +221,119 @@ test("la progression exige un effort renseigné et des données de même unité"
   const otherUnit = recommendLoad(p, target);
   assert.notEqual(otherUnit.decision, "increase");
   assert.notEqual(otherUnit.weight, 52.5);
+});
+
+test("la prochaine séance applique et indique une hausse sûre sans toucher au programme", async () => {
+  const { prepareWorkout } = await import("../src/engine/planner.js");
+  const { workoutLoad } = await import("../src/engine/fitness.js");
+  const { brainAnswer } = await import("../src/brain/conversation.js");
+  const { p, session } = profileWithBenchHistory();
+  session.exercises[0].targetLoad = null;
+  const before = structuredClone(p);
+  const preview = workoutLoad(p, session.exercises[0]);
+  assert.equal(preview.targetLoad, 52.5);
+  assert.equal(preview.autoIncrease.from, 50);
+  assert.equal(preview.autoIncrease.to, 52.5);
+  const workout = prepareWorkout(p, session);
+  assert.equal(workout.exercises[0].targetLoad, 52.5);
+  assert.deepEqual(workout.exercises[0].autoIncrease, preview.autoIncrease);
+  assert.match(workout.exercises[0].recommendation.reason, /De 50 à 52.5 kg/);
+  assert.deepEqual(p, before, "aperçu et lancement préparé ne réécrivent ni plan ni historique");
+  p.workout = workout;
+  const answer = brainAnswer(p, "Est-ce que tu augmentes automatiquement mes charges ?");
+  assert.match(answer.text, /j’ai appliqué au démarrage/);
+  assert.match(answer.text, /50 kg → 52,5 kg/);
+  assert.match(answer.text, /charges initiales, que vous pouvez modifier/);
+});
+
+test("les cibles fixées restent protégées et l'aperçu correspond au lancement", async () => {
+  const { prepareWorkout } = await import("../src/engine/planner.js");
+  const { workoutLoad } = await import("../src/engine/fitness.js");
+  const { p, session } = profileWithBenchHistory();
+  for (const fixed of [40, 50, 55]) {
+    session.exercises[0].targetLoad = fixed;
+    const preview = workoutLoad(p, session.exercises[0]);
+    assert.equal(preview.targetLoad, fixed);
+    assert.equal(preview.autoIncrease, null);
+    assert.equal(preview.recommendation.label, "Charge fixée conservée");
+    assert.equal(prepareWorkout(p, session).exercises[0].targetLoad, fixed);
+  }
+});
+
+test("pas de hausse automatique sans historique complet, effort maîtrisé et unités compatibles", async () => {
+  const { prepareWorkout } = await import("../src/engine/planner.js");
+  const cases = [
+    (p) => { p.sessions = []; },
+    (p) => { p.sessions[0].exercises[0].sets.pop(); },
+    (p) => { p.sessions[0].exercises[0].sets[0].rpe = null; },
+    (p) => { p.sessions[0].exercises[0].sets.forEach((s) => { s.rpe = 9; }); },
+    (p) => { p.sessions[0].exercises[0].sets.forEach((s) => { s.reps = 10; }); },
+    (p) => { p.sessions[0].exercises[0].sets.forEach((s) => { s.unit = "kg/main"; }); },
+    (p) => { p.sessions[0].source = "manual-set"; },
+    (p) => { p.user.increment = 10; },
+  ];
+  for (const change of cases) {
+    const { p, session } = profileWithBenchHistory();
+    session.exercises[0].targetLoad = null;
+    change(p);
+    const target = prepareWorkout(p, session).exercises[0];
+    assert.equal(target.autoIncrease, null);
+    assert.ok(target.targetLoad == null || target.targetLoad <= 50);
+  }
+});
+
+test("fatigue, douleur, arrêt de sécurité, prescription complexe ou matériel bloquent la hausse", async () => {
+  const { prepareWorkout } = await import("../src/engine/planner.js");
+  const { workoutLoad } = await import("../src/engine/fitness.js");
+  const cases = [
+    (p) => { p.checkIns[today()] = { painReported: true }; },
+    (p) => { p.checkIns[today()] = { fatigue: 4, sleep: 10, energy: 5 }; },
+    (p) => { p.sessions[0].safetyStop = true; },
+    (p, target) => { target.repTargets = [12, 10, 8]; },
+    (p, target) => { target.sourceNote = "drop set"; },
+    (p, target) => { target.sets = [{ completed: true }]; },
+    (p) => { p.equipment = []; },
+  ];
+  for (const change of cases) {
+    const { p, session } = profileWithBenchHistory();
+    const target = session.exercises[0];
+    target.targetLoad = null;
+    change(p, target);
+    const load = workoutLoad(p, target);
+    assert.equal(load.autoIncrease, null);
+    assert.notEqual(load.targetLoad, 52.5);
+    // A known target with already saved sets is not a valid fresh launch.
+    if (!target.sets.length && p.equipment.length)
+      assert.equal(prepareWorkout(p, session).exercises[0].autoIncrease, null);
+  }
+});
+
+test("une unité source non vérifiée ne déclenche pas de hausse", async () => {
+  const { workoutLoad } = await import("../src/engine/fitness.js");
+  const { p, session } = profileWithBenchHistory();
+  const target = session.exercises[0];
+  target.targetLoad = null;
+  target.unit = "source à vérifier";
+  p.sessions[0].exercises[0].sets.forEach((s) => { s.unit = "source à vérifier"; });
+  const load = workoutLoad(p, target);
+  assert.equal(load.autoIncrease, null);
+  assert.equal(load.autoIncreaseBlocked, true);
+  assert.equal(load.targetLoad, null);
+});
+
+test("RIR renseigné permet aussi la hausse automatique, avec l'unité par main", async () => {
+  const { workoutLoad } = await import("../src/engine/fitness.js");
+  const { p, session } = profileWithBenchHistory();
+  const target = session.exercises[0];
+  target.targetLoad = null;
+  target.unit = "kg/main";
+  for (const set of p.sessions[0].exercises[0].sets) {
+    set.unit = "kg/main";
+    set.rpe = null;
+    set.rir = 2;
+  }
+  const load = workoutLoad(p, target);
+  assert.equal(load.autoIncrease.to, 52.5);
+  assert.equal(load.autoIncrease.unit, "kg/main");
+  assert.match(load.recommendation.reason, /par haltère/);
 });

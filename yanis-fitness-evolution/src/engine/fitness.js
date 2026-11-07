@@ -3,6 +3,7 @@ import {
   round,
   clamp,
   num,
+  norm,
   sum,
   today,
   addDays,
@@ -413,6 +414,90 @@ export function recommendLoad(p, target, date = today()) {
       "Consolidez la qualité et les répétitions avant la prochaine augmentation.",
   };
 }
+// Charge initiale réellement utilisée au lancement. Une cible déjà fixée est
+// considérée comme intentionnelle (les anciennes sauvegardes ne portent pas
+// de provenance fiable) ; ne jamais l'écraser silencieusement.
+export function workoutLoad(p, target) {
+  const rec = recommendLoad(p, target);
+  const fixed = num(target.targetLoad);
+  if (fixed != null) {
+    const differs = rec.weight != null && Math.abs(fixed - rec.weight) > 0.001;
+    return {
+      targetLoad: fixed,
+      autoIncrease: null,
+      recommendation:
+        differs || rec.decision === "increase"
+          ? {
+              ...rec,
+              label: "Charge fixée conservée",
+              color: "amber",
+              reason: `La charge déjà fixée est conservée. ${differs ? `La recommandation actuelle est ${rec.weight} kg ; ` : ""}vous pouvez ajuster la charge ou demander un recalcul.`,
+            }
+          : rec,
+    };
+  }
+  if (rec.decision !== "increase")
+    return { targetLoad: rec.weight, recommendation: rec, autoIncrease: null };
+
+  const ex = exerciseById(target.exerciseId);
+  const unit = target.unit || ex.unit;
+  const last = historyFor(p, ex.id, unit).at(-1);
+  const previous = num(
+    last?.sets.filter((set) => num(set.reps) != null).at(-1)?.weight,
+  );
+  const source = allSessions(p).find((s) => s.id === last?.sessionId);
+  const complex =
+    !!target.repTargets?.length ||
+    /drop\s*set|degressif|pyramidal/.test(norm(target.sourceNote));
+  const available =
+    ex.equipment.every((item) => p.equipment.includes(item)) &&
+    !p.preferences.refused.includes(ex.id) &&
+    !target.unavailable &&
+    !target.equipmentMismatch;
+  const safe =
+    ["kg total", "kg/main"].includes(unit) &&
+    last?.complete &&
+    source &&
+    !source.safetyStop &&
+    !p.checkIns[today()]?.painReported &&
+    !(p.checkIns[today()]?.fatigue >= 4) &&
+    !(target.sets || []).some((set) => set.completed) &&
+    !complex &&
+    available &&
+    previous != null &&
+    previous > 0 &&
+    rec.weight > previous &&
+    rec.weight <= 1000;
+  if (!safe) {
+    return {
+      targetLoad: ["kg total", "kg/main"].includes(unit) ? previous : null,
+      autoIncrease: null,
+      autoIncreaseBlocked: true,
+      recommendation: {
+        ...rec,
+        label: "Hausse automatique suspendue",
+        color: "amber",
+        reason:
+          "La hausse automatique est suspendue : vérifiez la récupération, le matériel, la convention de charge et la prescription avant de choisir une charge.",
+      },
+    };
+  }
+  return {
+    targetLoad: rec.weight,
+    autoIncrease: {
+      from: previous,
+      to: rec.weight,
+      unit,
+      reference: last.date,
+    },
+    recommendation: {
+      ...rec,
+      label: "Hausse automatique",
+      reason: `De ${previous} à ${rec.weight} kg${unit === "kg/main" ? " par haltère" : ""} à partir de vos séries. ${rec.reason.replace("À confirmer sur toutes vos séries.", "Vérifiez la technique et le confort à chaque série.")} Vous pouvez ajuster la charge.`,
+    },
+  };
+}
+
 /**
  * Prépare une adaptation de charge sur la séance demandée, sans créer de
  * programme parallèle. Les séries déjà saisies et les exercices terminés ne
@@ -470,11 +555,11 @@ export function adaptSessionLoads(p, session, { exerciseId = null } = {}) {
 export function warmup(p, session) {
   const first = session?.exercises?.[0];
   const ex = first ? exerciseById(first.exerciseId) : null;
-  const rec =
-    first && Array.isArray(p.sessions) && p.checkIns && p.user
-      ? recommendLoad(p, first)
+  const load =
+    first && Array.isArray(p.sessions) && p.checkIns && p.user && p.preferences && p.equipment
+      ? workoutLoad(p, first)
       : null;
-  const w = first?.targetLoad ?? rec?.weight;
+  const w = first?.targetLoad ?? load?.targetLoad;
   const lower = ex && ["qua", "isc", "fes", "moy"].includes(ex.muscle);
   return [
     {
