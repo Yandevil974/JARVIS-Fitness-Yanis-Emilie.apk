@@ -38,6 +38,6 @@ test("épaules #01 à #04 : dépôts intacts, GIF, notices et consignes vocales"
   }
   assert.equal(videoFor("face-pull-a-la-poulie").avoidSilentPreview, true);
   assert.equal(sha("../1794028207138.mp4"), "37b72b6627dea4a3d11ae08248e09ce66e3d3e0ea62762ef3c15d311e2c2df82");
-  // Pas d'association implicite pour la variante myo-reps suivante.
-  assert.equal(videoFor("elevations-laterales-halteres-myo-reps"), null);
+  // Le lot suivant dispose maintenant de ses propres entrées accompagnées.
+  assert.equal(videoFor("elevations-laterales-halteres-myo-reps").status, "coached");
 });

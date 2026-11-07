@@ -152,8 +152,9 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    le retour reste imparfait : contrôle `47-EPAULES-04-REPRISE-CONTROLE.md`,
    notice et voix correctives ; le GIF sert aux miniatures silencieuses. Programme et GIF inchangés. Les 23 entrées musculation sont comptées séparément de
    la mobilité auxiliaire ; le triceps #11 reste en stand-by.
-   Lot épaules #05→#08 préparé, sans vidéo à ce jour :
-   `48-EPAULES-05-08-PRODUCTION.md` (ambiguïté des haltères #07/#08 documentée).
+   Lot épaules #05→#08 déposé et intégré `coached`, réserves et attribution
+   provisoire #07/#08 : `49-EPAULES-05-08-CONTROLE-MP4.md`. Les photos du kit
+   sont dans `48-EPAULES-05-08-PRODUCTION.md` ; ambiguïté des haltères #07/#08 documentée.
 8. **Vagues suivantes** : Épaules restantes, Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.

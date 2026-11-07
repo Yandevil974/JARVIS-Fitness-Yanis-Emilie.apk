@@ -1541,6 +1541,60 @@ export const EXERCISE_VIDEOS = {
       spoken: "Face pull à la poulie. Placez la poulie haute devant vous et tenez une extrémité de la corde dans chaque main. Pieds stables, buste droit, tirez en une seconde vers le visage en écartant les mains et en gardant les coudes confortablement hauts. Maintenez une seconde, puis revenez vers la poulie en deux secondes sous contrôle. La nouvelle vidéo tire vers le visage mais les mains redescendent vers le buste au retour et la corde se déforme. Ne laissez pas les mains descendre vers le ventre ; gardez-les à une hauteur confortable et suivez le tempo plutôt que le rythme de l'image. Ne basculez pas et arrêtez avant toute douleur. Trois séries de quinze répétitions, quarante-cinq secondes de repos.",
     },
   },
+  // Épaules #05 à #08 : dépôts conservés avec consignes distinctes.
+  "elevations-laterales-halteres-myo-reps": {
+    src: "/videos/elevations-laterales-halteres-myo-reps.mp4",
+    poster: "/videos/posters/elevations-laterales-halteres-myo-reps.jpg",
+    label: "Vidéo IA · Élévations latérales myo-reps",
+    status: "coached",
+    avoidSilentPreview: true,
+    coaching: {
+      title: "Attention : la vidéo montre le buste penché, pas la position debout de la fiche.",
+      handCue: "Debout, tenez un haltère léger dans chaque main, poignets confortables, sans rotation forcée.",
+      movementCue: "Gardez le buste droit et levez les bras sur les côtés jusqu'à hauteur des épaules au maximum.",
+      notice: "La vidéo montre des élévations buste penché au lieu du mouvement debout demandé. Ne copiez pas cette position : restez droit, suivez la fiche et son tempo 2011. La méthode myo-reps n'est pas démontrée par ce clip.",
+      spoken: "Attention, la vidéo montre des élévations avec le buste penché, pas la position debout de cet exercice. Ne reproduisez pas cette inclinaison. Debout, pieds stables, gardez le buste droit et tenez un haltère léger dans chaque main. Levez les bras sur les côtés en une seconde, coudes souples, au maximum à hauteur des épaules. Maintenez une seconde puis redescendez en deux secondes, sans élan ni pause en bas. Gardez les poignets confortables sans rotation forcée, et arrêtez avant toute douleur. La vidéo ne démontre pas la méthode myo-reps : suivez votre fiche. Trois séries de douze à quinze plus myo-reps, quarante-cinq secondes de repos.",
+    },
+  },
+  "developpe-militaire-halteres-assis-test-3-5-reps": {
+    src: "/videos/developpe-militaire-halteres-assis-test-3-5-reps.mp4",
+    poster: "/videos/posters/developpe-militaire-halteres-assis-test-3-5-reps.jpg",
+    label: "Vidéo IA · Développé militaire assis — test 3 à 5",
+    status: "coached",
+    coaching: {
+      title: "Dos soutenu, pieds au sol, mouvement contrôlé sans cambrer.",
+      handCue: "Tenez un haltère dans chaque main avec une prise ferme et les poignets alignés.",
+      movementCue: "Poussez en une seconde, maintenez une seconde en haut puis descendez en deux secondes sans forcer.",
+      notice: "Cette vidéo est identique à celle de l'exercice épaules 01 : les haltères sortent partiellement du cadre en haut et le tempo 2011 n'est pas clairement montré. La programmation du test reste distincte.",
+      spoken: "Développé militaire haltères assis, test de trois à cinq répétitions. Choisissez une charge adaptée et si nécessaire un pareur. Asseyez-vous, dos soutenu et pieds au sol, un haltère fermement dans chaque main. Poussez les deux haltères en une seconde sans cambrer. Maintenez une seconde en haut sans bloquer brutalement les coudes, puis descendez en deux secondes à une hauteur confortable, sans pause en bas. Les haltères sortent partiellement du cadre en haut et le rythme de la vidéo ne montre pas clairement le tempo 2011. Suivez les consignes et arrêtez avant toute douleur. Quatre séries de trois à cinq répétitions, cent cinquante secondes de repos.",
+    },
+  },
+  "elevations-laterales-assises": {
+    src: "/videos/elevations-laterales-assises.mp4",
+    poster: "/videos/posters/elevations-laterales-assises.jpg",
+    label: "Vidéo IA · Élévations latérales assises",
+    status: "coached",
+    coaching: {
+      title: "Assis et stable, montez au maximum à hauteur des épaules.",
+      handCue: "Tenez un haltère léger dans chaque main, sans forcer les poignets.",
+      movementCue: "Levez les bras sur les côtés en une seconde, coudes légèrement souples, puis redescendez en trois secondes sans pause.",
+      notice: "La vidéo fléchit fortement les coudes au sommet, monte les haltères au-dessus des épaules et ne montre pas clairement le tempo 3010. Gardez les coudes légèrement souples et limitez la hauteur.",
+      spoken: "Élévations latérales assises. Asseyez-vous, pieds au sol et buste stable. Prenez un haltère léger dans chaque main, bras le long des cuisses. Levez les deux bras sur les côtés en une seconde, coudes légèrement souples, jusqu'à la hauteur des épaules au maximum. Redescendez en trois secondes sans pause et sans élan. La vidéo plie fortement les coudes et monte les haltères au-dessus des épaules ; ne copiez pas ces détails et suivez le tempo 3010. Arrêtez avant toute douleur. Quatre séries de huit à dix, soixante secondes de repos.",
+    },
+  },
+  "elevations-laterales-assises-variante": {
+    src: "/videos/elevations-laterales-assises-variante.mp4",
+    poster: "/videos/posters/elevations-laterales-assises-variante.jpg",
+    label: "Vidéo IA · Élévations latérales assises — variante",
+    status: "coached",
+    coaching: {
+      title: "Restez assis sans balancer et contrôlez la descente.",
+      handCue: "Tenez un haltère léger dans chaque main, poignets confortables.",
+      movementCue: "Montez les bras latéralement en une seconde, jusqu'à hauteur des épaules au maximum, puis redescendez en trois secondes.",
+      notice: "La vidéo monte légèrement au-dessus de l'horizontale, marque une pause en haut et descend plus vite que le tempo 3010. Limitez la hauteur et suivez le rythme de la fiche.",
+      spoken: "Élévations latérales assises, variante. Asseyez-vous, pieds stables au sol et buste droit, un haltère léger dans chaque main. Levez les deux bras sur les côtés en une seconde, coudes légèrement souples, jusqu'à hauteur des épaules au maximum. Redescendez en trois secondes sans pause ni balancement. La vidéo monte légèrement trop haut, marque une pause et descend trop vite : suivez la hauteur et le tempo 3010 de la fiche plutôt que son rythme. Arrêtez avant toute douleur. Quatre séries de dix à douze, soixante secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

@@ -1,13 +1,13 @@
 # Épaules #05 à #08 — photos et prompts vidéo
 
-Lot suivant les quatre premières vidéos épaules. Chaque fiche ci-dessous est actuellement **sans vidéo** : les photos sont des références de départ IA, pas des vidéos intégrées. Au dépôt de chaque MP4 par Yanis, contrôler la source et l'intégrer sans redemander d'accord ; documenter les réserves réelles et conserver les GIF et la programmation. Aucune vidéo ou photo des exercices déjà équipés n'est refaite ici. Le triceps #11 reste en stand-by.
+Lot suivant les quatre premières vidéos épaules. Les quatre fiches ont depuis reçu des vidéos intégrées `coached` : voir [contrôle des MP4](./49-EPAULES-05-08-CONTROLE-MP4.md). Les photos restent des références de départ IA, pas des preuves du mouvement. Au dépôt de chaque MP4 par Yanis, contrôler la source et l'intégrer sans redemander d'accord ; documenter les réserves réelles et conserver les GIF et la programmation. Aucune vidéo ou photo des exercices déjà équipés n'est refaite ici. Le triceps #11 reste en stand-by.
 
 [Personnage validé](./reference-personnage-verrouille.jpg) · [Lot #01–#04](./45-EPAULES-01-04-PRODUCTION.md)
 
 | # | Fiche | Programmation conservée | Photo / zoom | Points à surveiller |
 |---|---|---|---|---|
-| 05 | Élévations latérales haltères — myo-reps | 3 × 12–15 + myo · 2011 · 45 s | [Photo](./vague5-epaules-05-elevations-myo-v2.jpg) · [Zoom](./vague5-epaules-05-zoom.jpg) | Même type de geste que #02, mais fiche distincte : aucune vidéo réutilisée automatiquement. Les myo-reps concernent la programmation, pas une nouvelle trajectoire inventée. Poignets confortables, montée au maximum à l'horizontale. |
-| 06 | Développé militaire haltères assis — test 3–5 reps | 4 × 3–5 · 2011 · 150 s | [Photo](./vague5-epaules-06-developpe-assis-test.jpg) · [Zoom](./vague5-epaules-06-zoom.jpg) | Même geste de base que #01, mais fiche et programmation distinctes. Cadrage très large avec espace au-dessus : contrôler que les haltères restent visibles, comme demandé par Yanis. |
+| 05 | Élévations latérales haltères — myo-reps | 3 × 12–15 + myo · 2011 · 45 s | [Photo](./vague5-epaules-05-elevations-myo-v2.jpg) · [Zoom](./vague5-epaules-05-zoom.jpg) | Même type de geste que #02, mais fiche et vidéo distinctes. Les myo-reps concernent la programmation, pas une nouvelle trajectoire inventée. Poignets confortables, montée au maximum à l'horizontale. |
+| 06 | Développé militaire haltères assis — test 3–5 reps | 4 × 3–5 · 2011 · 150 s | [Photo](./vague5-epaules-06-developpe-assis-test.jpg) · [Zoom](./vague5-epaules-06-zoom.jpg) | Même geste de base que #01 : la source redéposée est identique, mais les fiches et programmations restent distinctes. Cadrage très large avec espace au-dessus : contrôler que les haltères restent visibles, comme demandé par Yanis. |
 | 07 | Élévations latérales assises | 4 × 8–10 · 3010 · 60 s | [Photo](./vague5-epaules-07-elevations-assises-v3.jpg) · [Zoom](./vague5-epaules-07-zoom.jpg) | Assis sur banc étroit, un haltère dans chaque main, pas posé sur le banc. Contrôler les prises et la symétrie ; l'image ne prouve pas le mouvement. |
 | 08 | Élévations latérales assises — variante | 4 × 10–12 · 3010 · 60 s | [Photo](./vague5-epaules-08-elevations-assises-variante-v3.jpg) · [Zoom](./vague5-epaules-08-zoom.jpg) | Le catalogue ne précise pas de différence de geste et utilise le même GIF que #07 : ne pas inventer de variante technique. Les fiches et programmations restent séparées. |
 
@@ -45,4 +45,4 @@ Le catalogue ne décrivant pas une variante mécanique distincte et montrant le 
 Animate ONE SEATED DUMBBELL LATERAL RAISE from the supplied start image. Keep the same chrome athlete, full body, narrow bench and fixed front camera. Athlete stays seated upright, both feet planted. Exactly two separate dumbbells are gripped firmly, one in each hand, and hang freely outside the thighs, never resting on or passing through the bench. Raise BOTH arms out sideways together in ONE second, elbows slightly bent, no higher than shoulder height. Immediately lower both weights in THREE seconds until arms hang at the sides. Tempo 3010. No swinging, no invented grip rotation, no shrug, no curl, no extra limbs, text or camera movement.
 ```
 
-Aucune vidéo n'est fournie ou intégrée par ce seul kit ; aucune nouvelle version APK n'est créée.
+Les quatre vidéos déposées sont intégrées ; voir le contrôle ci-dessus. Aucun nouvel APK n'est créé pour cette intégration.
