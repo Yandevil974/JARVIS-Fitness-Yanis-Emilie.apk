@@ -26,7 +26,7 @@ Actuellement le registre `step-videos.js` ne référence que l'échauffement, et
 
 ## Épaules #11 : meilleure vidéo approchante disponible
 
-La nouvelle vidéo épaules #13 (`public/videos/developpe-halteres-assis.mp4`) montre un développé assis avec deux haltères et ressemble donc au mouvement général ; contrairement à la vidéo #01, les haltères restent dans le cadre. Mais les mains sont petites à l’écran et elle **ne montre pas clairement un départ neutre paumes face à face ni la rotation vers la pronation**. Elle ne remplit pas exactement la fiche #11. Elle est proposée comme piste de remplacement approximatif, pas intégrée automatiquement comme vidéo exacte ; conserver la fiche et son GIF jusqu'à décision ou nouvelle source. Ne pas utiliser de crédits tant qu'une solution n'est pas choisie.
+La nouvelle vidéo épaules #13 (`public/videos/developpe-halteres-assis.mp4`) montre un développé assis avec deux haltères et ressemble donc au mouvement général ; contrairement à la vidéo #01, les haltères restent dans le cadre. Mais les mains sont petites à l’écran et elle **ne montre pas clairement un départ neutre paumes face à face ni la rotation vers la pronation**. Elle ne remplit pas exactement la fiche #11. Elle n'est donc pas une vidéo exacte de cette variante. Yanis souhaite une vidéo distincte pour les variantes différentes : conserver #11 en attente, avec son GIF, sans la remplacer par #13. Ne pas utiliser de crédits vidéo tant qu'une référence fiable n'est pas prête.
 
 ## Détail des libellés recensés
 

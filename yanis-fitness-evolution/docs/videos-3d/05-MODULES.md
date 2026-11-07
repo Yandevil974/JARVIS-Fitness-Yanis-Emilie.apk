@@ -37,16 +37,15 @@ vagues, puis piscine, elliptique, étirements.
 
 ## Ordre validé (21/10/2026)
 
-DÉCISION Yanis : **1 vidéo exacte par exercice, pas de mutualisation entre
-variantes** (les variantes approximatives obligent à vérifier sur internet —
-chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
+DÉCISION Yanis : **si deux fiches décrivent le même mouvement, reprendre la vidéo existante ; s'il s'agit de variantes différentes, produire une vidéo propre à chaque variante.** Les différences de programmation (séries, répétitions, tempo, repos) restent spécifiques à chaque fiche, avec notice et voix adaptées si nécessaire. Ne pas qualifier deux mouvements de strictement identiques sur la seule ressemblance ; les variantes approximatives nécessitent vérification.
 **Exceptions explicites : une même source est autorisée pour les triceps
 #05/#06/#09, les pectoraux #15/#17 et les épaules #02/#16.** La vidéo déposée
 pour l'épaule #14 était aussi identique à celle du #12 et a été intégrée telle
 que déposée. Les notices restent distinctes. Pour les pectoraux #15/#17, les
 posters et la voix imposent respectivement un banc à environ 30° et à 45° malgré
-le MP4 commun. Ces dérogations restent limitées aux exercices cités et ne
-s'étendent pas automatiquement aux autres.
+le MP4 commun. Ces choix déjà acceptés restent documentés ; pour la suite, une
+variante différente reçoit sa propre vidéo, et les mouvements identiques peuvent
+reprendre la source existante.
 
 1. **Échauffement** ✅ TERMINÉ (E1→E5 + aperçu 30 s).
 2. **Triceps poulie** ✅ FAIT v1 (mannequin gris) — version chromée en option.
