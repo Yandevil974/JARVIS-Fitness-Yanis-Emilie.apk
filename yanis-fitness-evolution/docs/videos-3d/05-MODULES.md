@@ -155,9 +155,11 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    Lot épaules #05→#08 déposé et intégré `coached`, réserves et attribution
    provisoire #07/#08 : `49-EPAULES-05-08-CONTROLE-MP4.md`. Les photos du kit
    sont dans `48-EPAULES-05-08-PRODUCTION.md` ; ambiguïté des haltères #07/#08 documentée.
-   Lot #09→#12 partiellement préparé : photos #09 et #12 dans
-   `50-EPAULES-09-12-PRODUCTION.md` ; #10/#11 à reprendre, prises non fiables.
-   Ne pas les sauter ni proposer les essais incorrects.
+   Lot #09 et #12 intégré `coached` :
+   `51-EPAULES-09-12-CONTROLE-MP4.md`. #09 est conservé tel quel à la demande
+   de Yanis après six essais : ne pas demander de nouvelle génération.
+   Photos #10/#11 toujours à reprendre, prises non fiables : ne pas les sauter
+   ni proposer les essais incorrects ; références : `50-EPAULES-09-12-PRODUCTION.md`.
 8. **Vagues suivantes** : Épaules restantes, Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
    elliptique, étirements.

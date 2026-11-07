@@ -1595,6 +1595,33 @@ export const EXERCISE_VIDEOS = {
       spoken: "Élévations latérales assises, variante. Asseyez-vous, pieds stables au sol et buste droit, un haltère léger dans chaque main. Levez les deux bras sur les côtés en une seconde, coudes légèrement souples, jusqu'à hauteur des épaules au maximum. Redescendez en trois secondes sans pause ni balancement. La vidéo monte légèrement trop haut, marque une pause et descend trop vite : suivez la hauteur et le tempo 3010 de la fiche plutôt que son rythme. Arrêtez avant toute douleur. Quatre séries de dix à douze, soixante secondes de repos.",
     },
   },
+  // Épaules #09 et #12 : vidéos de Yanis conservées telles que déposées.
+  "elevations-laterales-coude-a-90": {
+    src: "/videos/elevations-laterales-coude-a-90.mp4",
+    poster: "/videos/posters/elevations-laterales-coude-a-90.jpg",
+    label: "Vidéo IA · Élévations latérales coudes à 90°",
+    status: "coached",
+    coaching: {
+      title: "Gardez les coudes fléchis environ à 90° pendant l'élévation.",
+      handCue: "Tenez un haltère léger dans chaque main, avec une prise sûre et des poignets confortables.",
+      movementCue: "Montez les coudes latéralement en une seconde, sans dépasser la hauteur des épaules, puis redescendez en trois secondes.",
+      notice: "L'angle des coudes change dans la vidéo : les bras s'allongent et le mouvement devient asymétrique. La hauteur et le rythme ne montrent pas clairement le geste et le tempo 3010 de la fiche. Suivez la consigne plutôt que ces détails.",
+      spoken: "Élévations latérales, coudes à quatre-vingt-dix degrés. Debout, pieds stables et buste droit, tenez un haltère léger dans chaque main, avec une prise sûre. Au départ, gardez les coudes fléchis environ à quatre-vingt-dix degrés, près du buste et les avant-bras vers l'avant. Levez les coudes sur les côtés en une seconde jusqu'à une hauteur confortable, au maximum celle des épaules, en conservant approximativement la flexion des coudes. Redescendez en trois secondes sans pause ni élan. La vidéo allonge les bras et devient asymétrique ; respectez la flexion des coudes et le tempo 3010 plutôt que ces détails. Ne forcez pas les épaules et arrêtez avant toute douleur. Quatre séries de douze à quinze, cent vingt secondes de repos.",
+    },
+  },
+  "elevations-laterales-incline-30-face-au-banc": {
+    src: "/videos/elevations-laterales-incline-30-face-au-banc.mp4",
+    poster: "/videos/posters/elevations-laterales-incline-30-face-au-banc.jpg",
+    label: "Vidéo IA · Élévations latérales face au banc 30°",
+    status: "coached",
+    coaching: {
+      title: "Gardez le torse soutenu sur le banc à environ 30°.",
+      handCue: "Tenez un haltère léger dans chaque main avec une prise sûre, sans contact avec le banc.",
+      movementCue: "Écartez les bras en une seconde dans une amplitude confortable puis redescendez en trois secondes, sans lever le buste.",
+      notice: "L'angle exact du banc et la prise ne sont pas clairement vérifiables ; une main est masquée pendant le mouvement et la vidéo marque une pause en haut. Ne copiez pas sa pause : respectez le banc à 30°, le maintien du torse et le tempo 3010.",
+      spoken: "Élévations latérales face au banc incliné. Réglez le dossier à environ trente degrés par rapport à l'horizontale. Placez le torse face au dossier et soutenu sur le banc, les pieds stables. Tenez un haltère léger dans chaque main avec une prise sûre, les bras pendants de chaque côté. Écartez les bras en une seconde, coudes souples, jusqu'à une hauteur confortable, sans relever le torse. Redescendez en trois secondes sans pause, sans élan ni contact des charges avec le banc. Dans la vidéo, l'angle exact du banc et la prise sont peu lisibles, une main est masquée et une pause apparaît en haut. Suivez le tempo 3010 plutôt que l'image et arrêtez avant toute douleur. Trois séries de dix, huit et six répétitions, en dégressif selon votre fiche, soixante-quinze secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

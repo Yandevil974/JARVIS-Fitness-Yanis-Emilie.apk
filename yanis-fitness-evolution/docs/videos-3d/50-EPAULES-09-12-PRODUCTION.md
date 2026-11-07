@@ -1,6 +1,6 @@
 # Épaules #09 à #12 — préparation partielle
 
-Suite des épaules #01–#08. Les exercices #09 à #12 n'ont pas encore de vidéo. Ce document ne change ni l'application, ni les GIF, ni le programme, ni l'APK. Le dépôt d'un MP4 vaut accord d'intégration ; vérifier les réserves réelles sans exiger de nouvelle génération. Le triceps #11 reste en stand-by.
+Suite des épaules #01–#08. Les vidéos #09 et #12 ont été déposées puis intégrées `coached` : [voir contrôle](./51-EPAULES-09-12-CONTROLE-MP4.md). Les épaules #10 et #11 restent sans vidéo. Ce document ne change ni l'application, ni les GIF, ni le programme, ni l'APK. Le dépôt d'un MP4 vaut accord d'intégration ; vérifier les réserves réelles sans exiger de nouvelle génération. Le triceps #11 reste en stand-by.
 
 | # | Fiche et programmation | État |
 |---|---|---|
@@ -27,4 +27,4 @@ Banc à environ 30° par rapport à l'horizontale, torse soutenu face au dossier
 Animate ONE CHEST-SUPPORTED INCLINE DUMBBELL LATERAL RAISE from the supplied start image. Keep the same chrome athlete and a fixed full-body camera. The bench back pad stays inclined at approximately 30 DEGREES ABOVE HORIZONTAL, not 45 or 90 degrees. Athlete lies FACE DOWN with chest supported on the pad and both feet stable. Each hand firmly holds ONE separate light dumbbell; both arms start hanging down freely at the sides of the bench. Raise both arms OUT TO THE SIDES in ONE second, elbows slightly soft, only to a comfortable shoulder-level range. Immediately lower the weights in THREE seconds to the start, tempo 3010. Keep chest on the pad, back neutral and both weights separate from each other, bench and floor. No row, no torso lift, no extra limbs, no text or camera movement.
 ```
 
-Les photos #09 et #12 sont des propositions statiques uniquement. Les prises et trajectoires doivent être contrôlées dans les vidéos reçues. #10 et #11 ne sont pas validés ni abandonnés : les reprendre avant de passer à de nouveaux exercices.
+Les photos #09 et #12 sont des références statiques. Les vidéos déposées ont été contrôlées et intégrées avec leurs réserves. Pour #09, Yanis ne souhaite pas refaire la vidéo ni dépenser d’autres crédits. #10 et #11 ne sont pas validés ni abandonnés : les reprendre avant de passer à de nouveaux exercices.
