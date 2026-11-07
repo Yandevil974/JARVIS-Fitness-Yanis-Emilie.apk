@@ -18500,3 +18500,16 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 }
 .video-workout-load-timed { text-align: right; }
 .video-workout-load-input input:disabled { opacity: 0.75; }
+
+/* La vignette « Ensuite » montre la même vidéo que la fiche de l'exercice. */
+.rest-next-thumb > video {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  display: block;
+}
+.rest-next-body .rest-next-video-note {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.35;
+}
