@@ -39,6 +39,7 @@ import {
   weeklyReport,
   personalRecords,
   stats,
+  allSets,
   adaptSessionLoads,
 } from "./fitness.js";
 import {
@@ -540,6 +541,35 @@ function loadLabel(value, unit) {
   }`;
 }
 
+// Une question sur le fonctionnement ne doit ni lancer une adaptation ni
+// être confondue avec le bilan de force ou la prochaine séance.
+function isLoadProgressionQuestion(text, q) {
+  const question =
+    /\?/.test(text) ||
+    /^(?:est ce que|est ce qu |comment|pourquoi|quand|de quelle facon|je voudrais savoir|je veux savoir|dis moi si|tu (?:tiens|prends|utilises|te bases|consideres)|vous (?:tenez|prenez|utilisez))\b/.test(q);
+  const load = /\b(?:charges?|poids|kilos?|kg)\b/.test(q);
+  const performance =
+    /\b(?:performances?|resultats?|historique|series?|repetitions?|reps?|rpe|rir|efforts?|progres|progression|precedentes?)\b/.test(q);
+  const explanation =
+    /\b(?:compte|base|bases|fonction|selon|utilise|utilises|utilisez|evolu\w*|progress\w*|augment\w*|adapt\w*|ajust\w*|calcul\w*|recalcul\w*)\b/.test(q);
+  const directRequest =
+    /^(?:(?:peux tu|tu peux|pourrais tu|tu pourrais|merci de|s il te plait|je veux que tu) )?(?:recalcule|recalculer|adapte|adapter|ajuste|ajuster|modifie|modifier|change|changer|augmente|augmenter|baisse|baisser)\b/.test(q);
+  return (
+    question && load && explanation && !directRequest &&
+    (performance || /\b(?:seances?|entrainements?)\b/.test(q) || /\b(?:calcul\w*|recalcul\w*)\b/.test(q))
+  );
+}
+
+function loadProgressionAnswer(p) {
+  const completed = allSets(p).length;
+  return {
+    text: `Oui, je tiens compte de vos performances : pour proposer une charge, j’utilise les séries terminées enregistrées pour le même exercice et la même unité : poids, répétitions et RPE ou RIR s’ils sont renseignés. Je regarde aussi la cible de répétitions et la récupération disponible. Dans votre profil, ${completed ? `je trouve ${completed} série${completed > 1 ? "s" : ""} terminée${completed > 1 ? "s" : ""} tous exercices confondus` : "je ne trouve pas encore de série terminée enregistrée"} ; seules les séries compatibles servent pour chaque exercice.\n\nUne hausse n’est pas automatique : selon les résultats et la récupération, je peux proposer de garder ou réduire la charge. Si le RPE/RIR manque sur une série, je ne propose pas de hausse à partir de cet historique ; si l’historique manque, une référence de force peut servir, sinon la charge est à calibrer. Pour un exercice au poids du corps, je propose plutôt une progression en répétitions.\n\nLa recommandation de la prochaine séance est recalculée à l’aperçu et au démarrage. Au démarrage, elle sert de cible si aucune charge n’est déjà fixée ; une charge déjà inscrite peut rester en place, même si la recommandation a changé. Pour modifier une séance existante, demandez « Recalcule mes charges » puis confirmez la proposition : les séries déjà enregistrées ne sont pas réécrites.`,
+    // Garantit que l'explication locale vérifiée n'est pas remplacée par une
+    // réponse du fournisseur externe, et permet d'ouvrir la séance.
+    navigate: "training",
+  };
+}
+
 // Une demande de charge est une adaptation de l'objet existant, jamais une
 // création de cycle. On calcule d'abord un aperçu afin que le texte et l'action
 // de confirmation décrivent exactement la même séance et le même exercice.
@@ -647,31 +677,6 @@ export function interpretCommand(p, text) {
     entities = extractEntities(q, text),
     convo = conversationState(p),
     yesNo = confirmationIntent(q);
-  if (yesNo && convo.pending)
-    return yesNo === "yes"
-      ? {
-          text: "C’est noté, j’applique la proposition précédente.",
-          action: convo.pending.action,
-          choices: convo.pending.choices,
-          confirms: convo.pending.id,
-        }
-      : {
-          text: "Très bien, je n’applique rien. Dites-moi ce que vous préférez faire à la place.",
-        };
-  if (yesNo === "yes")
-    return {
-      text: "Je n’ai pas de proposition en attente à confirmer. Reformulez votre demande et je vous répondrai.",
-    };
-  if (/bilan 1rm|refaire le test|reevaluation/.test(q)) {
-    const status = forceRevalState(p);
-    return { text: `${status.label}. ${status.detail}`, navigate: "force" };
-  }
-  if (/equipe|mes retours|retours.*bilan|conseils.*experts/.test(q))
-    return {
-      text: `Votre équipe virtuelle et ${(p.teamReviews || []).length} bilan(s) enregistré(s) sont accessibles dans Mon équipe. Les retours du fichier importé restent lisibles tels qu’ils ont été sauvegardés.`,
-      navigate: "team",
-      tab: "archive",
-    };
   const active = p.workout,
     upcoming = nextSession(p),
     session = active || upcoming,
@@ -699,7 +704,41 @@ export function interpretCommand(p, text) {
       /charge adaptative|surcharge progressive|progression intelligente/.test(
         q,
       );
-  if (!hasPain && ((loadWord && adaptationWord) || directAdaptive))
+  if (hasPain)
+    return {
+      text: /poitrine|oppression|essoufflement inhabituel|malaise|vertige/.test(q)
+        ? "Arrêtez l’effort. En cas de douleur thoracique, malaise ou difficulté respiratoire inhabituelle, demandez une aide médicale urgente (112 ou 15 en France). Je ne peux pas établir de diagnostic."
+        : "Arrêtez l’exercice douloureux. Ne testez pas une autre charge pour « vérifier ». Reposez la zone et consultez un professionnel compétent si la douleur est importante, persiste ou revient. Une alternative ne sera choisie qu’en l’absence de douleur.",
+      action: { type: "pain", exerciseId: currentExercise?.id },
+      automatic: true,
+    };
+  if (yesNo && convo.pending)
+    return yesNo === "yes"
+      ? {
+          text: "C’est noté, j’applique la proposition précédente.",
+          action: convo.pending.action,
+          choices: convo.pending.choices,
+          confirms: convo.pending.id,
+        }
+      : {
+          text: "Très bien, je n’applique rien. Dites-moi ce que vous préférez faire à la place.",
+        };
+  if (yesNo === "yes")
+    return {
+      text: "Je n’ai pas de proposition en attente à confirmer. Reformulez votre demande et je vous répondrai.",
+    };
+  if (isLoadProgressionQuestion(text, q)) return loadProgressionAnswer(p);
+  if (/bilan 1rm|refaire le test|reevaluation/.test(q)) {
+    const status = forceRevalState(p);
+    return { text: `${status.label}. ${status.detail}`, navigate: "force" };
+  }
+  if (/equipe|mes retours|retours.*bilan|conseils.*experts/.test(q))
+    return {
+      text: `Votre équipe virtuelle et ${(p.teamReviews || []).length} bilan(s) enregistré(s) sont accessibles dans Mon équipe. Les retours du fichier importé restent lisibles tels qu’ils ont été sauvegardés.`,
+      navigate: "team",
+      tab: "archive",
+    };
+  if ((loadWord && adaptationWord) || directAdaptive)
     return adaptiveLoadAnswer(
       p,
       q,
@@ -715,14 +754,6 @@ export function interpretCommand(p, text) {
     const special = specialResponses(p, q, entities, topIntent.id, convo);
     if (special) return special;
   }
-  if (hasPain)
-    return {
-      text: /poitrine|oppression|essoufflement inhabituel|malaise|vertige/.test(q)
-        ? "Arrêtez l’effort. En cas de douleur thoracique, malaise ou difficulté respiratoire inhabituelle, demandez une aide médicale urgente (112 ou 15 en France). Je ne peux pas établir de diagnostic."
-        : "Arrêtez l’exercice douloureux. Ne testez pas une autre charge pour « vérifier ». Reposez la zone et consultez un professionnel compétent si la douleur est importante, persiste ou revient. Une alternative ne sera choisie qu’en l’absence de douleur.",
-      action: { type: "pain", exerciseId: currentExercise?.id },
-      automatic: true,
-    };
   const performance =
     entities.weight != null && entities.reps != null
       ? [null, String(entities.weight), String(entities.reps)]

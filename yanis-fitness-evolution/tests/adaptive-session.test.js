@@ -119,3 +119,105 @@ test("les séries déjà saisies ne sont jamais réécrites par l'adaptation", (
   assert.deepEqual(result.session.exercises[0].sets, completed.sets);
   assert.equal(result.session.exercises[0].targetLoad, 50);
 });
+
+test("Jarvis répond à la question sur la progression sans modifier le profil", async () => {
+  const { brainAnswer } = await import("../src/brain/conversation.js");
+  for (const question of [
+    "Est-ce que tu tiens compte de mes performances pour faire évoluer mes prochaines charges de séances ?",
+    "Tu prends en compte mes performances pour ajuster les charges de mes prochaines séances ?",
+    "Est-ce que mes charges augmentent selon mes résultats ?",
+    "Comment sont calculées mes charges ?",
+    "Tu tiens compte de mes performances pour mes charges",
+  ]) {
+    for (const withHistory of [false, true]) {
+      const p = withHistory ? profileWithBenchHistory().p : newProfile("elite");
+      const before = structuredClone(p);
+      const answer = brainAnswer(p, question);
+      assert.equal(answer.brain.source, "coach", question);
+      assert.equal(answer.action, undefined, question);
+      assert.equal(answer.automatic, undefined, question);
+      // AppContext ne remplace pas une réponse avec navigation par le cerveau distant.
+      assert.equal(answer.navigate, "training", question);
+      assert.match(answer.text, /même exercice et la même unité/);
+      assert.match(answer.text, /RPE ou RIR/);
+      assert.match(answer.text, /hausse n’est pas automatique/);
+      assert.match(answer.text, /charge déjà inscrite peut rester/);
+      assert.match(answer.text, /confirmez la proposition/);
+      assert.match(answer.text, withHistory ? /3 séries terminées/ : /pas encore de série terminée/);
+      assert.deepEqual(p, before, question);
+    }
+  }
+});
+
+test("question sur les charges et douleur : la sécurité reste prioritaire", async () => {
+  const { brainAnswer } = await import("../src/brain/conversation.js");
+  const { p } = profileWithBenchHistory();
+  for (const question of [
+    "J’ai mal à l’épaule, tiens-tu compte de mes performances pour mes charges ?",
+    "J'ai une douleur, comment calcules-tu mes charges à partir du bilan 1RM ?",
+    "Oui, mais j’ai mal à l’épaule, tu tiens compte de mes charges ?",
+  ]) {
+    const answer = brainAnswer(p, question);
+    assert.equal(answer.action?.type, "pain");
+    assert.equal(answer.automatic, true);
+    assert.match(answer.text, /Arrêtez/);
+  }
+});
+
+test("demander le recalcul reste une proposition à confirmer, pas une explication", async () => {
+  const { brainAnswer } = await import("../src/brain/conversation.js");
+  const { p, session } = profileWithBenchHistory();
+  const before = structuredClone(p);
+  for (const question of [
+    "Recalcule mes charges en fonction de mes performances",
+    "Peux-tu recalculer mes charges en fonction de mes performances ?",
+  ]) {
+    const answer = brainAnswer(p, question);
+    assert.equal(answer.action?.type, "adapt-loads");
+    assert.equal(answer.action.sessionId, session.id);
+    assert.notEqual(answer.automatic, true);
+    assert.match(answer.text, /Confirmez pour appliquer/);
+    assert.deepEqual(p, before);
+  }
+});
+
+test("au démarrage la recommandation change, mais une cible fixée est conservée", async () => {
+  const { prepareWorkout } = await import("../src/engine/planner.js");
+  const { recommendLoad } = await import("../src/engine/fitness.js");
+  const { p, session } = profileWithBenchHistory();
+  const target = session.exercises[0];
+  assert.equal(recommendLoad(p, target).weight, 52.5);
+  const withTarget = prepareWorkout(p, session);
+  assert.equal(withTarget.exercises[0].recommendation.weight, 52.5);
+  assert.equal(withTarget.exercises[0].targetLoad, 50);
+  const withoutTarget = structuredClone(session);
+  withoutTarget.exercises[0].targetLoad = null;
+  assert.equal(prepareWorkout(p, withoutTarget).exercises[0].targetLoad, 52.5);
+  assert.equal(session.exercises[0].targetLoad, 50);
+});
+
+test("l'explication locale fonctionne aussi lorsque la mémoire Brain est désactivée", async () => {
+  const { brainAnswer } = await import("../src/brain/conversation.js");
+  const { setBrainEnabled } = await import("../src/brain/policy.js");
+  const { p } = profileWithBenchHistory();
+  setBrainEnabled(p, false);
+  const before = structuredClone(p);
+  const answer = brainAnswer(p, "Est-ce que tu tiens compte de mes performances pour mes charges ?");
+  assert.match(answer.text, /3 séries terminées/);
+  assert.equal(answer.navigate, "training");
+  assert.equal(answer.action, undefined);
+  assert.deepEqual(p, before);
+});
+
+test("la progression exige un effort renseigné et des données de même unité", async () => {
+  const { recommendLoad } = await import("../src/engine/fitness.js");
+  const { p, session } = profileWithBenchHistory();
+  const target = session.exercises[0];
+  assert.equal(recommendLoad(p, target).weight, 52.5);
+  p.sessions[0].exercises[0].sets[0].rpe = null;
+  assert.equal(recommendLoad(p, target).decision, "keep");
+  p.sessions[0].exercises[0].sets.forEach((set) => { set.unit = "kg/main"; });
+  const otherUnit = recommendLoad(p, target);
+  assert.notEqual(otherUnit.decision, "increase");
+  assert.notEqual(otherUnit.weight, 52.5);
+});
