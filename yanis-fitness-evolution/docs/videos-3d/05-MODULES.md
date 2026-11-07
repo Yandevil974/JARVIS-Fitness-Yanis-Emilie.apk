@@ -1,5 +1,7 @@
 # Plan module par module — vidéos 3D (19/10/2026)
 
+> **Mise à jour :** les nombres et délais du plan ci-dessous sont historiques, pas le bilan actuel. Voir [bilan et lot épaules #10/#11/#13/#14](./52-BILAN-ET-EPAULES-10-11-13-14.md) : 114 fiches de musculation sans vidéo ; échauffement terminé ; autres modules à chiffrer si l'objectif vidéo est confirmé. Une photo #10 est prête, #11 reste en attente.
+
 ## Rappel honnête : qui fait quoi ?
 
 - **Les vidéos MP4 sont générées UNIQUEMENT sur Arena Video**
