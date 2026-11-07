@@ -20,6 +20,7 @@ on:
         options:
           - legacy
           - dos-01-04
+          - dos-01-25
 
 permissions:
   contents: write
@@ -219,8 +220,54 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           fail_on_unmatched_files: true
 
+      - name: Verify all 25 dos videos in signed APK
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-25') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.13.0-dos-01-25-')) }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-25.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-25.txt
+          node scripts/verify-dos-apk.mjs "$APK"
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-25.md <<EOF
+          ## Yanis Fitness Evolution 1.13.0 — nouvelles vidéos dos #01 à #25
+
+          APK Android signé construit depuis le commit $GITHUB_SHA, version **1.13.0 / 196**, identifiant **app.yanis.fitness.evolution**.
+
+          Les 25 vidéos dos présentes sur la branche, y compris la dernière vidéo #24, sont intégrées telles que déposées. Les posters, GIF originaux et consignes correctives accompagnant ces vidéos sont conservés. Les autres vidéos et le programme existants restent inclus. Le #11 triceps demeure en attente.
+
+          Les vidéos dos sont accompagnées de consignes correctives : suivre les notices et l'audio plutôt que les imperfections de l'image. Pour #24, l'amplitude derrière la tête n'est pas clairement montrée ; ne pas forcer et rester dans une amplitude confortable.
+
+          ### Vérifications automatiques
+          - Tests de l'application exécutés par le workflow.
+          - Présence et hash vérifiés pour chacun des 25 MP4, posters et GIF du dos ; associations vidéo contrôlées dans le code de l'APK.
+          - Signature vérifiée, empreinte SHA-256 du certificat : $EXPECTED_CERT.
+          - SHA-256 de l'APK : $APK_SHA.
+
+          ### Installation
+          Sauvegardez vos données dans l'application avant installation. Téléchargez l'APK et ouvrez-le sur Android. La version et la signature sont prévues pour une mise à jour de la version 1.12.0/195, mais Android et la signature de votre application installée déterminent si elle est acceptée. Si Android refuse, **ne désinstallez pas** votre application existante : cela pourrait effacer vos données.
+          EOF
+
+      - name: Publish dedicated dos 01–25 delivery
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-25') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.13.0-dos-01-25-')) }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.13.0 — vidéos dos 01 à 25
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-25.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
-        if: ${{ !((github.event_name == 'workflow_dispatch' && inputs.delivery == 'dos-01-04') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.12.0-dos-01-04-'))) }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}

@@ -6,7 +6,7 @@ empreinte de signature) :
 | Élément                   | Valeur                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | appId / namespace         | `app.yanis.fitness.evolution`                                                                                                     |
-| versionName / versionCode | `1.12.0` / `195`                                                                                                                   |
+| versionName / versionCode | `1.13.0` / `196`                                                                                                                   |
 | Clé de release            | `android/keystore/yanis-fitness-evolution.p12` (PKCS12, alias `yanis-fitness-evolution`)                                          |
 | Stockage navigateur       | clé `yanis-fitness-evolution.v1` — l’ancienne clé `jarvis_fitness_v3` n’est lue qu’une fois, sans jamais être modifiée ni effacée |
 
@@ -31,6 +31,17 @@ les changer :
 ```bash
 ./gradlew assembleRelease -PYFE_STORE_PASSWORD='…' -PYFE_KEY_PASSWORD='…'
 ```
+
+## Livraison 1.13.0 — vidéos dos #01 à #25
+
+Version Android `1.13.0` / `196`, même identifiant et même clé de signature.
+La livraison reprend les 25 vidéos du dos telles que déposées, leurs réserves
+et les GIF originaux. Le workflow vérifie individuellement les MP4, posters,
+GIF et leur hash depuis l'APK contre `public/`, ainsi que la signature.
+Le #24 est conservé tel quel à la demande de Yanis : ne pas générer de vidéo
+supplémentaire. Le #11 triceps demeure en stand-by. Les données existantes ne
+sont pas effacées volontairement ; sauvegarder avant l'installation et ne pas
+désinstaller si Android refuse la mise à jour.
 
 ## Vérifications de la version 1.12.0 (25/10/2026)
 
