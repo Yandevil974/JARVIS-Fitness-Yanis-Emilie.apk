@@ -100,7 +100,7 @@ test("dos #19 à #21 et #23 : sources, doublons, copies, GIF, voix et programmat
   const exercise22 = EXERCISES.find(
     (e) => e.id === "rowing-assis-cable-unilateral",
   );
-  assert.equal(videoFor(exercise22), null);
+  assert.equal(videoFor(exercise22).status, "coached");
   for (const base of ["public", "release"])
     assert.ok(existsSync(file(`${base}${exercise22.gif}`)));
   assert.match(

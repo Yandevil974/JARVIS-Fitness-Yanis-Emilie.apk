@@ -1,8 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("dos #19, #20, #21 et #23 : vidéos accompagnées ; #22 conserve son GIF", async ({
-  page,
-}) => {
+test("dos #19 à #23 : vidéos accompagnées", async ({ page }) => {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/");
@@ -19,6 +17,12 @@ test("dos #19, #20, #21 et #23 : vidéos accompagnées ; #22 conserve son GIF", 
       window.__spoken.push(utterance.text);
   });
   const cases = [
+    [
+      "Rowing assis câble unilatéral",
+      "rowing-assis-cable-unilateral",
+      /pause prolongée/i,
+      /une seule main/i,
+    ],
     [
       "Lean away pull-ups",
       "lean-away-pull-ups",
@@ -71,16 +75,5 @@ test("dos #19, #20, #21 et #23 : vidéos accompagnées ; #22 conserve son GIF", 
       .last()
       .click();
   }
-  const name = "Rowing assis câble unilatéral";
-  await page.getByLabel("Rechercher un exercice").fill(name);
-  await page
-    .getByRole("button", { name: `Démonstration ${name}`, exact: true })
-    .click();
-  const dialog = page.getByRole("dialog", { name, exact: true });
-  await expect(dialog.locator(".movement-video")).toHaveCount(0);
-  await expect(dialog.locator(".movement-media")).toHaveAttribute(
-    "src",
-    "/media/cfa999e3a88716f6.gif",
-  );
   expect(errors).toEqual([]);
 });

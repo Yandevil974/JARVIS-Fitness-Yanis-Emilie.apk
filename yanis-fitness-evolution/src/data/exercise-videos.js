@@ -1432,6 +1432,42 @@ export const EXERCISE_VIDEOS = {
         "Tirage vertical lean away, un et un quart en bas. Asseyez-vous, pieds au sol et cuisses maintenues ; prenez la barre en pronation. Tronc gainé, inclinez-vous légèrement en arrière sans basculer. Départ bras allongés, tirez devant vers le haut de poitrine en une seconde. Remontez d'environ un quart de l'amplitude, tirez de nouveau en bas et maintenez deux secondes, puis remontez en trois secondes jusqu'aux bras allongés. Le quart supplémentaire ajoute du temps. La vidéo est identique au tirage numéro neuf et ne montre pas le quart en bas ni clairement le tempo et le départ bras allongés. Suivez la fiche, sans élan ni douleur. Quatre séries de huit à dix, tempo 3012, quatre-vingt-dix secondes de repos.",
     },
   },
+  // Dos #22 et #25 : vidéos reçues avec consignes de geste et de tempo.
+  "rowing-assis-cable-unilateral": {
+    src: "/videos/rowing-assis-cable-unilateral.mp4",
+    poster: "/videos/posters/rowing-assis-cable-unilateral.jpg",
+    label: "Vidéo IA · Rowing assis câble unilatéral",
+    status: "coached",
+    coaching: {
+      title: "Tirez une poignée vers la taille, avec le buste stable.",
+      handCue:
+        "Une seule main tient la poignée reliée à la poulie basse ; l'autre main reste libre sur la cuisse.",
+      movementCue:
+        "Tirez en une seconde, maintenez une seconde puis revenez en trois secondes.",
+      notice:
+        "La vidéo marque une pause prolongée et revient plus vite que le tempo 3011 ; la main libre est partiellement masquée et le buste tourne légèrement. Gardez le tronc stable et suivez le tempo de la fiche.",
+      spoken:
+        "Rowing assis câble unilatéral. Pieds sur les appuis, genoux souples et dos neutre, tenez une poignée reliée à la poulie basse avec une seule main ; l'autre main reste libre sur la cuisse. Tirez la poignée vers la taille en une seconde, coude près du buste. Maintenez une seconde, puis revenez en trois secondes jusqu'au bras allongé. Gardez le tronc stable, sans rotation ni élan, et travaillez un côté à la fois. La vidéo marque une pause prolongée et revient trop vite ; la main libre est partiellement masquée et le buste tourne légèrement. Suivez le tempo 3011 plutôt que le rythme de l'image. Quatre séries de sept à neuf, quatre-vingt-dix secondes de repos.",
+    },
+  },
+  "rowing-a-l-elastique": {
+    src: "/videos/rowing-a-l-elastique.mp4",
+    poster: "/videos/posters/rowing-a-l-elastique.jpg",
+    label: "Vidéo IA · Rowing à l'élastique",
+    status: "coached",
+    coaching: {
+      title:
+        "Fixez solidement l'élastique et tirez les deux poignées sans basculer.",
+      handCue:
+        "Vérifiez l'état de l'élastique et son ancrage ; tenez une poignée dans chaque main.",
+      movementCue:
+        "Tirez vers les côtes en une seconde puis revenez en trois secondes, sans pause ni lâcher les poignées.",
+      notice:
+        "Une main est masquée en fin de tirage et la symétrie est peu lisible. La pause est prolongée et le retour est plus rapide que le tempo 3010. Suivez les consignes plutôt que le rythme de l'image.",
+      spoken:
+        "Rowing à l'élastique. Avant de commencer, vérifiez l'état de l'élastique et fixez-le solidement à un ancrage stable. Assis au sol, pieds en appui et genoux souples, tenez une poignée dans chaque main, dos neutre. Tirez les deux poignées vers les côtes en une seconde, coudes vers l'arrière près du corps. Revenez en trois secondes jusqu'aux bras allongés, sans pause et sans basculer. Ne lâchez pas les poignées sous tension et ne fixez pas l'élastique autour des poignets. Une main est masquée en fin de tirage ; la symétrie et le tempo ne sont pas clairement montrés, et la pause est trop longue. Suivez le tempo 3010 plutôt que l'image. Trois séries de dix à quinze, quatre-vingt-dix secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

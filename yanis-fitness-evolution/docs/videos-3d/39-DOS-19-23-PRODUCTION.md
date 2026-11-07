@@ -1,6 +1,6 @@
 # Dos #19→#23 — photos et prompts vidéo
 
-Lot de production après les vidéos #01→#18. Les images sont des **références IA statiques**, pas la preuve que le mouvement ou le tempo seront respectés. Les vidéos #19, #20, #21 et #23 ont depuis été intégrées `coached` : voir [contrôle du dépôt](./40-DOS-19-21-23-CONTROLE-MP4.md). #22 reste sans vidéo ; les GIF et les programmations restent inchangés. Les MP4 que Yanis déposera vaudront accord d'intégration et seront conservés avec des consignes adaptées à leurs limites réelles.
+Lot de production après les vidéos #01→#18. Les images sont des **références IA statiques**, pas la preuve que le mouvement ou le tempo seront respectés. Les vidéos #19, #20, #21 et #23 ont depuis été intégrées `coached` : voir [contrôle du dépôt](./40-DOS-19-21-23-CONTROLE-MP4.md). #22 a depuis été intégré `coached` : [contrôle](./42-DOS-22-25-CONTROLE-MP4.md). Les GIF et les programmations restent inchangés. Les MP4 que Yanis déposera vaudront accord d'intégration et seront conservés avec des consignes adaptées à leurs limites réelles.
 
 [Planche #19, #20, #21 et #23](./vague4-dos-19-23-apercu.jpg) · [Zooms](./vague4-dos-19-23-zooms.jpg) · [Personnage verrouillé](./reference-personnage-verrouille.jpg)
 

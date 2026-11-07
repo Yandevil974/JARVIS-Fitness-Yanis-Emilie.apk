@@ -141,9 +141,9 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    pas clairement cohérentes. La vidéo déposée est conservée telle quelle avec ses réserves.
    Lot suivant #19→#23 : `39-DOS-19-23-PRODUCTION.md` ; photos de départ
    #19, #20, #21 et #23 intégrés `coached` après dépôt ; contrôle et doublons
-   dans `40-DOS-19-21-23-CONTROLE-MP4.md`. #22 sans vidéo ; une nouvelle photo candidate est préparée dans
-   `41-DOS-22-24-25-PRODUCTION.md`. #25 dispose aussi d’une photo candidate ;
-   #24 reste sans photo proposée, car la prise des mains est insuffisamment lisible. Les GIF et la programmation restent inchangés.
+   dans `40-DOS-19-21-23-CONTROLE-MP4.md`. #22 et #25 intégrés `coached` après dépôt ; contrôle dans
+   `42-DOS-22-25-CONTROLE-MP4.md`. #24 reste sans vidéo ni photo proposée,
+   car la prise des mains est insuffisamment lisible. Les GIF et la programmation restent inchangés.
    Aucune modification de programmation ni d'APK.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
