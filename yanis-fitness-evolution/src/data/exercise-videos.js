@@ -1622,6 +1622,20 @@ export const EXERCISE_VIDEOS = {
       spoken: "Élévations latérales face au banc incliné. Réglez le dossier à environ trente degrés par rapport à l'horizontale. Placez le torse face au dossier et soutenu sur le banc, les pieds stables. Tenez un haltère léger dans chaque main avec une prise sûre, les bras pendants de chaque côté. Écartez les bras en une seconde, coudes souples, jusqu'à une hauteur confortable, sans relever le torse. Redescendez en trois secondes sans pause, sans élan ni contact des charges avec le banc. Dans la vidéo, l'angle exact du banc et la prise sont peu lisibles, une main est masquée et une pause apparaît en haut. Suivez le tempo 3010 plutôt que l'image et arrêtez avant toute douleur. Trois séries de dix, huit et six répétitions, en dégressif selon votre fiche, soixante-quinze secondes de repos.",
     },
   },
+  // Épaule #16 : même mouvement debout que #02. Yanis demande de réutiliser sa vidéo.
+  "elevations-laterales": {
+    src: "/videos/elevations-laterales-halteres.mp4",
+    poster: "/videos/posters/elevations-laterales-halteres.jpg",
+    label: "Vidéo IA · Élévations latérales debout",
+    status: "coached",
+    coaching: {
+      title: "Montez au maximum à hauteur d'épaules, sans balancer.",
+      handCue: "Tenez un haltère léger dans chaque main, avec des poignets confortables et sans rotation forcée.",
+      movementCue: "Écartez les bras en une seconde, puis redescendez en trois secondes sans pause.",
+      notice: "Cette vidéo est celle de l'épaule 02, réutilisée à la demande de Yanis. Les mains et les charges sont peu lisibles et les bras dépassent légèrement l'horizontale. Suivez la hauteur des épaules et le tempo 3010 de cette fiche, pas le rythme de la vidéo.",
+      spoken: "Élévations latérales debout. Pieds stables, buste droit, prenez un haltère léger dans chaque main et gardez les poignets confortables. Écartez les bras sur les côtés en une seconde, coudes légèrement souples, au maximum jusqu'à la hauteur des épaules. Redescendez en trois secondes sans pause et sans balancer. La vidéo est celle de l'exercice deux : les mains sont peu lisibles et les bras montent légèrement trop haut. Respectez la hauteur des épaules et le tempo 3010 de cette fiche plutôt que le rythme de l'image. Arrêtez avant toute douleur. Trois séries de huit à dix répétitions, soixante secondes de repos.",
+    },
+  },
   // Épaules #10, #13 et #14 : MP4 déposés par Yanis, conservés en l'état.
   "developpe-militaire-debout": {
     src: "/videos/developpe-militaire-debout.mp4",

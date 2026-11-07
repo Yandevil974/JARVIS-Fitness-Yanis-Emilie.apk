@@ -1,24 +1,20 @@
 # Épaules #15 à #19 — lot partiel
 
-Yanis a demandé de mettre **l'épaule #11 de côté** et de poursuivre. Elle reste sans vidéo, sans être traitée dans ce lot. Le triceps #11 reste lui aussi en stand-by. Les fiches #15 à #19 étaient toutes sans vidéo lors du contrôle. Les GIF, les équipements et la programmation ne sont pas modifiés. Au dépôt d'un MP4, l'accord d'intégration est acquis ; contrôler la vidéo et documenter les réserves sans demander de la refaire.
+Yanis a demandé de mettre **l'épaule #11 de côté** et de poursuivre. Elle reste sans vidéo, sans être traitée dans ce lot. Le triceps #11 reste lui aussi en stand-by. Au moment de la préparation, les fiches #15 à #19 étaient toutes sans vidéo. Depuis, Yanis a demandé de réutiliser la vidéo #02 pour #16 : **#16 est intégrée** sans nouvelle génération. Les GIF, les équipements et la programmation ne sont pas modifiés. Au dépôt d'un MP4, l'accord d'intégration est acquis ; contrôler la vidéo et documenter les réserves sans demander de la refaire.
 
 | # | Fiche et programmation | État de la préparation |
 |---|---|---|
 | 15 | Élévations latérales incliné 45° · 3 × 8–10 · 3010 · 60 s | **Pas de photo proposée** : trois essais ont montré un angle de banc insuffisamment fiable ou une main et un haltère masqués. Les essais écartés ne doivent pas servir à générer une vidéo. |
-| 16 | Élévations latérales · 3 × 8–10 · 3010 · 60 s | [Photo de départ](./vague5-epaules-02-elevations-laterales-v2.jpg) · [Zoom](./vague5-epaules-02-zoom.jpg). Réutilisation de la photo existante de l'épaule #02 pour ce même mouvement debout, pas une demande de refaire la vidéo #02. #16 recevra sa propre vidéo et conserve sa programmation. |
+| 16 | Élévations latérales · 3 × 8–10 · 3010 · 60 s | **Intégrée** : réutilise la vidéo #02 à la demande de Yanis, sans régénération. La voix et le programme de #16 restent distincts ; [contrôle](./56-EPAULES-16-VIDEO-PARTAGEE.md). |
 | 17 | Développé derrière la nuque · 5 × 6–8 · 4010 · 60 s | [Photo](./vague5-epaules-17-developpe-nuque-v3.jpg) · [Zoom](./vague5-epaules-17-zoom.jpg). Assis avec barre, vue arrière, départ au-dessus de l'arrière de la tête ; le mouvement ne doit pas forcer la mobilité des épaules ni poser la barre sur la nuque. |
 | 18 | Élévations latérales incliné · 4 × 12–15 · 3010 · 60 s | **Pas de photo proposée** : la fiche ne précise ni l'angle ni la position ; son GIF montre un geste debout et ne démontre pas l'inclinaison. Il faudrait préciser buste penché ou appui sur banc avant de choisir une référence. |
 | 19 | Développé haltère un bras debout · 4 × 7–9 · 4010 · 90 s | [Photo](./vague5-epaules-19-presse-un-bras-v2.jpg) · [Zoom](./vague5-epaules-19-zoom.jpg). Un seul haltère tenu, l'autre main vide, cadrage large pour garder la charge visible en haut. |
 
-**Équipement :** les métadonnées des fiches #15 à #18 indiquent `bodyweight` alors que leurs GIF montrent des haltères (#15/#16/#18) ou une barre (#17). Les références suivent les GIF, sans changer les données. Le GIF #15 ne montre pas l'inclinaison 45° ; une photo doit privilégier l'intitulé de la fiche plutôt que le GIF debout. La photo #16 existante présente les poignées transversalement ; aucune rotation forcée des poignets n'est demandée.
+**Équipement :** les métadonnées des fiches #15 à #18 indiquent `bodyweight` alors que leurs GIF montrent des haltères (#15/#16/#18) ou une barre (#17). Les références suivent les GIF, sans changer les données. Le GIF #15 ne montre pas l'inclinaison 45° ; une photo doit privilégier l'intitulé de la fiche plutôt que le GIF debout. La vidéo #16 conserve les réserves de la source #02, avec les consignes de #16.
 
-## #16 — Élévations latérales debout
+## #16 — Élévations latérales debout : intégrée
 
-Une photo déjà existante du même geste de base est réutilisée comme point de départ ; seule la vidéo de la fiche **#16** est à produire. Deux haltères légers, buste droit, amplitude au maximum à hauteur d'épaules.
-
-```text
-Animate ONE standing DUMBBELL LATERAL RAISE for exercise 16 from the supplied start image. Keep the same chrome athlete, fixed wide front camera, feet planted and torso upright. Exactly two separate light dumbbells are held firmly, one in each hand, arms hanging beside the thighs. Raise BOTH arms out to the sides together in ONE second, elbows softly bent, no higher than shoulder level. Without a pause, lower both weights in THREE seconds to the start. Tempo 3010. Keep wrists comfortable and avoid forced rotation, body swing, shrugging, extra limbs, text or camera movement.
-```
+À la demande de Yanis, la vidéo existante de l'épaule #02 est utilisée directement pour cette fiche : aucune nouvelle vidéo n'est nécessaire. Le mouvement de base est identique, mais le tempo, les répétitions et le repos restent ceux du #16. Les réserves de la source et la voix corrective sont propres à la fiche : voir [contrôle](./56-EPAULES-16-VIDEO-PARTAGEE.md).
 
 ## #17 — Développé derrière la nuque assis
 

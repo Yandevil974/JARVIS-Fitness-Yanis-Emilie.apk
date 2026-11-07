@@ -1,6 +1,6 @@
 # Plan module par module — vidéos 3D (19/10/2026)
 
-> **Mise à jour :** les nombres et délais du plan ci-dessous sont historiques, pas le bilan actuel. Yanis a confirmé que tous les modules et toutes les étapes doivent avoir leur vidéo : voir [inventaire tous modules](./53-INVENTAIRE-TOUS-LES-MODULES.md). Les estimations par familles et l'ancienne formule excluant certains modules ne sont plus l'objectif. [Lot épaules #15–#19](./55-EPAULES-15-19-PRODUCTION.md) : #16, #17 et #19 préparées ; #15 et #18 à reprendre. L'épaule #11 reste de côté.
+> **Mise à jour :** les nombres et délais du plan ci-dessous sont historiques, pas le bilan actuel. Yanis a confirmé que tous les modules et toutes les étapes doivent avoir leur vidéo : voir [inventaire tous modules](./53-INVENTAIRE-TOUS-LES-MODULES.md). Les estimations par familles et l'ancienne formule excluant certains modules ne sont plus l'objectif. [Lot épaules #15–#19](./55-EPAULES-15-19-PRODUCTION.md) : #16 intégrée avec la vidéo #02 ; #17 et #19 préparées ; #15 et #18 à reprendre. L'épaule #11 reste de côté.
 
 ## Rappel honnête : qui fait quoi ?
 
@@ -41,10 +41,12 @@ DÉCISION Yanis : **1 vidéo exacte par exercice, pas de mutualisation entre
 variantes** (les variantes approximatives obligent à vérifier sur internet —
 chaque exercice aura son mouvement propre). Total cible : 203 vidéos.
 **Exceptions explicites : une même source est autorisée pour les triceps
-#05/#06/#09 depuis le 25/10 et pour les pectoraux #15/#17 depuis le 29/10.**
-Leurs notices restent distinctes. Pour #15/#17, les posters et la voix imposent
-respectivement un banc à environ 30° et à 45° malgré le MP4 commun. Ces
-dérogations restent limitées aux exercices cités et ne s'étendent pas aux autres.
+#05/#06/#09, les pectoraux #15/#17 et les épaules #02/#16.** La vidéo déposée
+pour l'épaule #14 était aussi identique à celle du #12 et a été intégrée telle
+que déposée. Les notices restent distinctes. Pour les pectoraux #15/#17, les
+posters et la voix imposent respectivement un banc à environ 30° et à 45° malgré
+le MP4 commun. Ces dérogations restent limitées aux exercices cités et ne
+s'étendent pas automatiquement aux autres.
 
 1. **Échauffement** ✅ TERMINÉ (E1→E5 + aperçu 30 s).
 2. **Triceps poulie** ✅ FAIT v1 (mannequin gris) — version chromée en option.
