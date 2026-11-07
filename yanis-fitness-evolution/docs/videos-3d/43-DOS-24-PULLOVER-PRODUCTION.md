@@ -12,12 +12,20 @@ Pour une exécution réelle, utiliser une prise adaptée au matériel, bien ferm
 
 **Fiche inchangée :** 3 séries de 12–15, tempo `3010`, 60 secondes de repos ; GIF `/media/f56fbc2e2510c4b2.gif` conservé en repli.
 
-## Prompt Arena Video / PixVerse
+## Prompt Arena Video / PixVerse — trajectoire corrigée
+
+Yanis signale que le générateur dirige l'haltère vers l'avant, au lieu de l'abaisser derrière la tête. Dans **cette photo**, les pieds sont à gauche et la tête à droite : à la descente, l'haltère doit aller **vers la droite de l'image, au-delà du sommet de la tête**, jamais vers les jambes à gauche. La photo et la programmation ne changent pas.
 
 ```text
-Animate ONE flat-bench dumbbell pullover from the supplied start photo. Preserve the exact chrome athlete, black cap, shorts, white shoes, camera angle and gym. The athlete lies LENGTHWISE on one flat bench, with head, shoulders, back and hips supported, both knees bent and both feet planted on the floor. Both hands grip the handle of ONE HORIZONTAL dumbbell securely, thumbs wrapped, throughout the entire motion. Keep the weight and two hands connected, with both elbows softly bent at a constant angle.
+Animate ONE lying dumbbell pullover using the supplied photo. CAMERA LOCKED. The athlete's FEET are on the LEFT of the image and his HEAD is on the RIGHT. He lies LENGTHWISE on the flat bench, head, back and hips supported, both feet on the floor. Both hands keep a secure grip on ONE horizontal dumbbell. Arms move together, elbows softly bent at the SAME angle throughout.
 
-Start with the dumbbell above the upper chest. Lower it in a smooth controlled arc behind the head in THREE seconds, moving at the shoulders, stopping within comfortable shoulder mobility. Bring it back above the chest in ONE second. Tempo 3010: no pauses. Keep the head and torso supported and the back neutral, without exaggerated arching. Both arms move together symmetrically; this is a pullover, not a bench press or triceps extension. Do not add another dumbbell, let the hands open or slip, twist wrists, swing, add limbs, move the camera or add text.
+START: dumbbell above the upper chest, arms pointing upward.
+
+LOWERING: in THREE seconds, rotate BOTH ARMS BACKWARD FROM THE SHOULDERS in a smooth arc TOWARD THE HEAD, so the dumbbell travels toward the RIGHT side of the image. It passes safely ABOVE the face and continues BEYOND THE CROWN OF THE HEAD to the space behind the head, still on the RIGHT of the image. Stop at a comfortable shoulder range without touching the head, bench or floor. Do NOT move the weight toward the feet, legs, abdomen, or LEFT side of the image. Do NOT press it straight upward or push it forward over the torso.
+
+RETURN: immediately reverse the SAME arc, lifting the dumbbell from BEHIND THE HEAD toward the LEFT of the image and back above the upper chest in ONE second. Tempo 3010, no pause. Keep the head and back supported, trunk stable, and elbows at the same slight bend; only the shoulder joints produce the large arm arc. Do not turn this into a bench press, sit-up, or triceps extension. No extra dumbbells or limbs, no hands slipping, no distorted arms, no text and no camera movement.
 ```
+
+C'est une instruction de trajectoire pour un générateur vidéo : l'image fixe ne garantit pas que le résultat la respectera. Vérifier que le poids passe derrière la tête en restant dégagé et que les mains, les épaules et le banc restent cohérents.
 
 Toute vidéo déposée par Yanis vaut accord d'intégration ; la conserver telle quelle avec les réserves réellement observées, sans demander de confirmation. Aucun APK ni vidéo ne sont produits par ce kit.
