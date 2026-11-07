@@ -42,7 +42,15 @@ Animate one STANDING RESISTANCE BAND FACE PULL from the supplied start image. Ke
 Face à une poulie haute, une extrémité de corde dans chaque main, tirer vers le visage en écartant les mains, coudes confortablement hauts. Revenir lentement sans décoller les pieds ni basculer le tronc.
 
 ```text
-Animate one STANDING CABLE FACE PULL from the supplied start image. Keep the SAME chrome athlete, fixed full-body camera, both feet planted and torso upright. ONE continuous cable runs from the high pulley IN FRONT to the middle of ONE rope attachment. EACH hand grips one separate rope end with a secure thumb-wrapped grip. Start with arms extended forward. In ONE second pull the rope toward the face, separating the hands to either side of the face as the elbows travel outward at comfortable shoulder height. Hold ONE second, then return the rope forward in TWO seconds, without a bottom pause. Tempo 2011. Keep the cable attached and taut. No torso swing, no pulling to waist, no band, no extra limbs, text or camera movement.
+Animate ONE standing CABLE FACE PULL, not a pushdown. Keep the same athlete, fixed full-body camera and upright torso. The high pulley stays IN FRONT at face height. Both hands firmly hold the two separate ends of ONE rope; the cable remains taut and attached to the pulley.
+
+Start with both arms reaching FORWARD toward the pulley, hands at face height. Bend both elbows and pull the hands BACK toward the face, one hand toward each ear, in ONE second. The elbows move OUTWARD and BACK at a comfortable shoulder height; the rope ends separate beside the face. Hold for ONE second. Extend both arms FORWARD toward the pulley in TWO seconds to return to the start. Complete ONE slow repetition, tempo 2011.
+
+The hands and rope must stay near FACE HEIGHT throughout the pull: NEVER move them down to the chest, waist, hips or thighs. No straight-arm pulldown, no triceps pushdown, no rowing to the waist, no torso swing, no cable detachment, no extra limbs, no text and NO camera movement.
 ```
 
 Les quatre MP4 déposés sont intégrés avec les réserves détaillées dans le contrôle. Le face pull poulie ne montre pas le bon geste ; ne pas reproduire le tirage vers les hanches.
+
+## Reprise demandée par Yanis — #04
+
+La vidéo reçue tire vers les hanches : la conserver avec son avertissement pendant la reprise, sans la qualifier de face pull correct. Utiliser la photo #04 existante et le prompt corrigé ci-dessus, qui impose le trajet des deux mains à hauteur du visage et interdit le mouvement vers le bas. La photo et le prompt ne garantissent pas le résultat vidéo ; contrôler la source reçue. Dos #16 reste tel quel, avec ses réserves ; aucune reprise du rowing n’a été demandée.
