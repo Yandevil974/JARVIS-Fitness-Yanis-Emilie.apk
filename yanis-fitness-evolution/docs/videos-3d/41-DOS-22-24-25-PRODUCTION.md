@@ -7,7 +7,7 @@ Reprise du #22, puis derniers exercices du catalogue dos. Ces images sont des **
 | # | Exercice | Photo · zoom | Programmation et réserves |
 |---|---|---|---|
 | 22 | Rowing assis câble unilatéral | [Photo](./vague4-dos-22-rowing-cable-unilateral-v4.jpg) · [Zoom](./vague4-dos-22-zoom-technique.jpg) | 4 × 7–9 · 3011 · 90 s. Nouvelle candidate après les essais non retenus : un bras travaille, l'autre main est sur la cuisse ; vidéo intégrée `coached` avec les réserves du contrôle. |
-| 24 | Pullover haltère plat | **Photo non proposée** | 3 × 12–15 · 3010 · 60 s. Les essais ne montrent pas assez clairement une prise sûre à deux mains sur un seul haltère ; il faut encore travailler l'image. Le GIF reste disponible. |
+| 24 | Pullover haltère plat | [Nouvelle photo](./vague4-dos-24-pullover-haltere-plat-v6.jpg) · [Zoom](./vague4-dos-24-zoom-technique-v6.jpg) | 3 × 12–15 · 3010 · 60 s. Nouvelle variante à prise horizontale sur un seul haltère ; [fiche mise à jour](./43-DOS-24-PULLOVER-PRODUCTION.md). Le GIF reste disponible. |
 | 25 | Rowing à l'élastique | [Photo](./vague4-dos-25-rowing-elastique-v3.jpg) · [Zoom](./vague4-dos-25-zoom-technique.jpg) | 3 × 10–15 · 3010 · 90 s. Assis au sol, deux poignées et bandes attachées devant ; vérifier la fixation et les poignées dans la vidéo. La fiche demande explicitement de fixer solidement l'élastique ; vidéo intégrée `coached`. |
 
 ## #22 — Rowing assis câble unilatéral
@@ -20,11 +20,11 @@ Animate ONE seated SINGLE-ARM CABLE ROW from the supplied starting photo. Keep t
 Start with the RIGHT arm extended. In ONE second pull the handle toward the right waist, right elbow traveling backward close to the ribs. Hold ONE second at the waist, then return in THREE seconds until the working arm extends. Tempo 3011. Keep torso and hips stable, no rotation, no swinging, no second handle, no disconnected cable, no extra limbs, no text and no camera movement.
 ```
 
-## #24 — Pullover haltère plat : image à retravailler
+## #24 — Pullover haltère plat : historique et nouvelle référence
 
-Le GIF montre un haltère tenu à deux mains et un banc plat. Les essais de photo ne rendent pas une prise des deux mains suffisamment lisible et sûre : ils sont écartés et **aucune photo n'est proposée**. Ne pas présenter l'image comme prête à animer. Une fois une référence correcte obtenue, conserver la tête et le dos appuyés, garder les coudes légèrement fléchis, descendre dans une amplitude confortable et maintenir l'haltère sécurisé à deux mains.
+Le GIF montre un haltère tenu à deux mains et un banc plat. Les essais de photo ne rendent pas une prise des deux mains suffisamment lisible et sûre : ils ont été écartés. Une [nouvelle candidate](./43-DOS-24-PULLOVER-PRODUCTION.md) montre une prise horizontale à deux mains. Pour la vidéo, conserver la tête et le dos appuyés, garder les coudes légèrement fléchis, descendre dans une amplitude confortable et maintenir l'haltère sécurisé à deux mains.
 
-**Prompt préparé pour une future photo correcte :**
+**Ancien prompt (prise verticale), conservé pour historique :**
 
 ```text
 Animate ONE flat-bench dumbbell pullover from a CORRECT reference image showing a secure TWO-HAND grip on ONE dumbbell. Keep the exact athlete and fixed side/three-quarter camera. Head, upper back and hips remain supported lengthwise on the flat bench, feet planted. BOTH hands securely support the same dumbbell throughout; thumbs are wrapped and the weight cannot slip. Start with the dumbbell above the upper chest, elbows slightly bent.

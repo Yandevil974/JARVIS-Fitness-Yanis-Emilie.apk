@@ -7,12 +7,12 @@ Les six MP4 #05 et #09→#13 sont conservés tels que déposés, intégrés `coa
 | # | Exercice | Photo · zoom | Programmation et état |
 |---|---|---|---|
 | 14 | Rowing assis + étirement | [Photo](./vague4-dos-14-rowing-assis-etirement.jpg) · [Zoom](./vague4-dos-14-zoom-technique.jpg) | 4 séries · `10/8/6` · 3010 · 75 s · drop set ; vidéo intégrée `coached`. |
-| 15 | Tractions supination | **Nouvelle photo encore à travailler : aucune référence proposée** | 5 séries `6,6,6,8,8` · 4010 · 90 s ; vidéo intégrée `coached`, prise à rappeler. |
+| 15 | Tractions supination | Vidéo déjà intégrée ; pas de nouvelle photo demandée | 5 séries `6,6,6,8,8` · 4010 · 90 s ; vidéo intégrée `coached`, prise à rappeler. |
 | 16 | Rowing haltère buste penché | [Photo](./vague4-dos-16-rowing-deux-halteres-v2.jpg) · [Zoom](./vague4-dos-16-zoom-technique.jpg) | 5 × 8–10 · 3010 · 120 s ; variante à deux haltères retenue, cohérente avec l'unité kg/main et le GIF ; vidéo intégrée `coached`. |
 | 17 | Tractions prise large | [Photo](./vague4-dos-17-tractions-prise-large-v2.jpg) · [Zoom](./vague4-dos-17-zoom-technique.jpg) | 6 séries `8,8,6,6,4,4` · 4010 · 120 s ; vidéo intégrée `coached`. |
 | 18 | Rowing assis au cou | [Photo candidate](./vague4-dos-18-tirage-nuque.jpg) · [Zoom](./vague4-dos-18-zoom-technique.jpg) | 5 × 6–8 · 3011 · 60 s. Yanis choisit le tirage vertical derrière la nuque ; vidéo intégrée `coached`, départ bras fléchis. |
 
-Les images sont des références IA statiques, non des preuves de mouvement. Les MP4 #14 à #18 sont intégrés `coached`. Tous les GIF restent disponibles. Pour #15, Yanis demande de ne pas proposer une photo incorrecte : les nouvelles tentatives n'ont pas rendu les deux prises lisibles et cohérentes. Elles ne sont pas proposées ; la vidéo #15 reçue entre-temps est conservée telle quelle avec ses réserves. Pour #18, la vidéo reçue commence bras fléchis ; la notice rappelle le départ bras allongés.
+Les images sont des références IA statiques, non des preuves de mouvement. Les MP4 #14 à #18 sont intégrés `coached`. Tous les GIF restent disponibles. Pour #15, la vidéo reçue est conservée telle quelle avec ses réserves ; Yanis demande de ne pas retravailler les photos des exercices qui ont déjà une vidéo. Pour #18, la vidéo reçue commence bras fléchis ; la notice rappelle le départ bras allongés.
 
 ## #14 — Rowing assis + étirement
 

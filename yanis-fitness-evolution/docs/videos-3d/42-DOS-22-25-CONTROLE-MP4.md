@@ -9,7 +9,7 @@ Dépôt `1f97ee4` : les mouvements et images de départ correspondent respective
 
 Tous les plans ont été décodés : #22 528 × 640, 145/145 images, 24 i/s, 6,04 s ; #25 640 × 480, 121/121 images, 24 i/s, 5,04 s. Les fichiers sont distincts l'un de l'autre et ne sont pas identiques octet pour octet aux autres MP4 présents à la racine au moment du contrôle. Les planches ne prouvent pas la conformité continue de l'anatomie ni de la fixation du matériel.
 
-**#24 :** aucune vidéo de pullover haltère plat dans ce dépôt ; son GIF reste disponible. Les essais précédents n'ont pas fourni de photo avec une prise sûre et lisible, donc aucune photo #24 n'est proposée comme conforme.
+**#24 :** aucune vidéo de pullover haltère plat dans ce dépôt ; son GIF reste disponible. Les essais précédents n'avaient pas donné de photo proposée ; une [nouvelle candidate](./43-DOS-24-PULLOVER-PRODUCTION.md) a depuis été préparée.
 
 ## Vérifications
 

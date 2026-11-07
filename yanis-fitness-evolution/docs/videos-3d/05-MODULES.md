@@ -137,13 +137,13 @@ dérogations restent limitées aux exercices cités et ne s'étendent pas aux au
    de confort et alternative devant si douleur. #15 est désormais intégré
    `coached` après dépôt ; voir `38-DOS-15-CONTROLE-MP4.md`.
    Yanis signale les coudes ouverts à 90° sur #16 ; prompts #15/#16 corrigés.
-   Ne pas proposer de photo #15 tant que les deux mains en supination ne sont
-   pas clairement cohérentes. La vidéo déposée est conservée telle quelle avec ses réserves.
+   La vidéo #15 déposée est conservée telle quelle avec ses réserves ;
+   Yanis demande de ne plus retravailler les photos des exercices avec vidéo.
    Lot suivant #19→#23 : `39-DOS-19-23-PRODUCTION.md` ; photos de départ
    #19, #20, #21 et #23 intégrés `coached` après dépôt ; contrôle et doublons
    dans `40-DOS-19-21-23-CONTROLE-MP4.md`. #22 et #25 intégrés `coached` après dépôt ; contrôle dans
-   `42-DOS-22-25-CONTROLE-MP4.md`. #24 reste sans vidéo ni photo proposée,
-   car la prise des mains est insuffisamment lisible. Les GIF et la programmation restent inchangés.
+   `42-DOS-22-25-CONTROLE-MP4.md`. #24 reste le seul dos sans vidéo ; une nouvelle référence a été préparée
+   dans `43-DOS-24-PULLOVER-PRODUCTION.md`. Les GIF et la programmation restent inchangés.
    Aucune modification de programmation ni d'APK.
 7. **Vagues suivantes** : Dos restant, Épaules (23), Quadriceps+mollets (31),
    Ischios (19), Fessiers (23), Abdos+gainage (24), puis piscine,
