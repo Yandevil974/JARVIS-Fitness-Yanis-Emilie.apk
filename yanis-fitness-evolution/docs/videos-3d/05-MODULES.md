@@ -1,6 +1,6 @@
 # Plan module par module — vidéos 3D (19/10/2026)
 
-> **Mise à jour :** les nombres et délais du plan ci-dessous sont historiques, pas le bilan actuel. Yanis a confirmé que tous les modules et toutes les étapes doivent avoir leur vidéo : voir [inventaire tous modules](./53-INVENTAIRE-TOUS-LES-MODULES.md). Les estimations par familles et l'ancienne formule excluant certains modules ne sont plus l'objectif. Voir aussi le [lot épaules #10/#11/#13/#14](./52-BILAN-ET-EPAULES-10-11-13-14.md).
+> **Mise à jour :** les nombres et délais du plan ci-dessous sont historiques, pas le bilan actuel. Yanis a confirmé que tous les modules et toutes les étapes doivent avoir leur vidéo : voir [inventaire tous modules](./53-INVENTAIRE-TOUS-LES-MODULES.md). Les estimations par familles et l'ancienne formule excluant certains modules ne sont plus l'objectif. [Lot épaules #15–#19](./55-EPAULES-15-19-PRODUCTION.md) : #16, #17 et #19 préparées ; #15 et #18 à reprendre. L'épaule #11 reste de côté.
 
 ## Rappel honnête : qui fait quoi ?
 
