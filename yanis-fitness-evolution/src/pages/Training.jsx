@@ -350,9 +350,10 @@ function Workout() {
       q.workout.currentIndex = i;
     });
   return (
-    <>
+    <div className={`training-command ${p.preferences.reducedMotion ? "training-command-reduced" : ""}`}>
       <div className="session-topbar">
         <div>
+          <div className="command-eyebrow">JARVIS <span>//</span> CENTRE D’ENTRAÎNEMENT</div>
           <Badge color="mint" dot>
             MODE SÉANCE
           </Badge>
@@ -546,15 +547,19 @@ function Workout() {
             />
             <div className="technique-strip">
               <Icon name="Focus" size={18} />
-              <p>
-                {target.sourceNote ||
-                  ex.tip ||
-                  PATTERN_INFO[ex.pattern]?.etapes?.[0] ||
-                  "Gardez une exécution contrôlée, dans une amplitude sans douleur."}
-              </p>
+              <div>
+                <span className="command-section-label">COACHING JARVIS <i /> CONSIGNE TECHNIQUE</span>
+                <p>
+                  {target.sourceNote ||
+                    ex.tip ||
+                    PATTERN_INFO[ex.pattern]?.etapes?.[0] ||
+                    "Gardez une exécution contrôlée, dans une amplitude sans douleur."}
+                </p>
+              </div>
             </div>
           </Panel>
           <Panel className="set-entry">
+            <div className="command-section-label">RÉSULTATS DE SÉRIE <i /> SAISIE RÉELLE</div>
             <SectionHeading
               title={
                 done >= target.targetSets
@@ -747,11 +752,15 @@ function Workout() {
           </Panel>
         </div>
         <aside className="session-rail">
+          <div className="jarvis-command-core">
+            <div className="jarvis-command-core-title"><strong>JARVIS</strong><span>ASSISTANT DE SÉANCE</span></div>
+            <div className="session-command-orb" aria-hidden="true"><i /><i /><i /><b /></div>
+          </div>
+          <Panel className="command-recovery">
+            <RestTimer />
+          </Panel>
           <Panel className="voice-coach-panel">
             <VoiceCoach />
-          </Panel>
-          <Panel>
-            <RestTimer />
           </Panel>
           <Panel className="session-recommendation">
             <span className="eyebrow">
@@ -824,7 +833,7 @@ function Workout() {
           </button>
         </aside>
       </div>
-    </>
+    </div>
   );
 }
 function Elapsed({ start }) {
