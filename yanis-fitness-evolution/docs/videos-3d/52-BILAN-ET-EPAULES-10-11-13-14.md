@@ -1,5 +1,7 @@
 # Bilan vidéos et lot épaules #10, #11, #13, #14
 
+> **Mise à jour :** Yanis a confirmé vouloir une vidéo pour tous les modules sans exception. Le périmètre et les anciennes estimations ci-dessous sont remplacés par [l'inventaire tous modules](./53-INVENTAIRE-TOUS-LES-MODULES.md). Le présent document reste la référence des photos et prompts du lot.
+
 État de la branche après intégration des épaules #09 et #12, avant réception de ce lot. Ce document et ses photos ne modifient ni le programme, ni les GIF d'origine, ni l'APK. Les MP4 déposés valent accord d'intégration ; les contrôles et éventuelles réserves restent documentés, sans exiger une nouvelle génération.
 
 ## Bilan — périmètres séparés
