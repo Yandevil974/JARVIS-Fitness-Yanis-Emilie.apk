@@ -1622,6 +1622,46 @@ export const EXERCISE_VIDEOS = {
       spoken: "Élévations latérales face au banc incliné. Réglez le dossier à environ trente degrés par rapport à l'horizontale. Placez le torse face au dossier et soutenu sur le banc, les pieds stables. Tenez un haltère léger dans chaque main avec une prise sûre, les bras pendants de chaque côté. Écartez les bras en une seconde, coudes souples, jusqu'à une hauteur confortable, sans relever le torse. Redescendez en trois secondes sans pause, sans élan ni contact des charges avec le banc. Dans la vidéo, l'angle exact du banc et la prise sont peu lisibles, une main est masquée et une pause apparaît en haut. Suivez le tempo 3010 plutôt que l'image et arrêtez avant toute douleur. Trois séries de dix, huit et six répétitions, en dégressif selon votre fiche, soixante-quinze secondes de repos.",
     },
   },
+  // Épaules #10, #13 et #14 : MP4 déposés par Yanis, conservés en l'état.
+  "developpe-militaire-debout": {
+    src: "/videos/developpe-militaire-debout.mp4",
+    poster: "/videos/posters/developpe-militaire-debout.jpg",
+    label: "Vidéo IA · Développé militaire debout",
+    status: "coached",
+    coaching: {
+      title: "Gainez le buste et marquez deux secondes au menton.",
+      handCue: "Tenez la barre en pronation, légèrement plus large que les épaules, poignets alignés.",
+      movementCue: "Depuis le haut, descendez devant le visage en quatre secondes, marquez deux secondes au menton puis poussez en une seconde.",
+      notice: "La prise et la trajectoire de la barre sont petites à l'écran ; le rythme et la pause en bas ne montrent pas clairement le tempo 4210. Suivez la fiche et ne forcez pas l'amplitude.",
+      spoken: "Développé militaire debout. Pieds stables, abdominaux gainés et buste droit. Tenez la barre avec les paumes vers l'avant, un peu plus large que les épaules. Depuis le haut, descendez la barre devant le visage en quatre secondes jusqu'à une hauteur confortable au menton. Marquez deux secondes de pause sans relâcher, puis poussez vers le haut en une seconde sans cambrer. La vidéo est éloignée et ne montre pas clairement le tempo ou la pause de deux secondes : suivez la consigne. Arrêtez avant toute douleur. Cinq séries de cinq à sept répétitions, quatre-vingt-dix secondes de repos.",
+    },
+  },
+  "developpe-halteres-assis": {
+    src: "/videos/developpe-halteres-assis.mp4",
+    poster: "/videos/posters/developpe-halteres-assis.jpg",
+    label: "Vidéo IA · Développé haltères assis",
+    status: "coached",
+    coaching: {
+      title: "Dos soutenu, poussez sans cambrer puis contrôlez la descente.",
+      handCue: "Tenez un haltère dans chaque main, paumes vers l'avant, poignets alignés.",
+      movementCue: "Poussez en une seconde, puis redescendez en quatre secondes sans pause volontaire.",
+      notice: "Les haltères restent dans le cadre, mais la prise est peu lisible à cette distance ; la vidéo marque une pause en haut et descend plus vite que le tempo 4010. Suivez la consigne plutôt que son rythme.",
+      spoken: "Développé haltères assis. Asseyez-vous, dos soutenu et pieds au sol. Prenez un haltère dans chaque main, paumes vers l'avant et poignets alignés. Poussez les haltères vers le haut en une seconde sans cambrer, puis redescendez en quatre secondes à une hauteur confortable, sans pause volontaire. Les haltères restent dans le cadre, mais les mains sont petites à l'écran et la vidéo marque une pause en haut et descend plus vite que le tempo 4010. Suivez la consigne et arrêtez avant toute douleur. Quatre séries de six à huit répétitions, quatre-vingt-dix secondes de repos.",
+    },
+  },
+  "elevations-laterales-incline-30": {
+    src: "/videos/elevations-laterales-incline-30.mp4",
+    poster: "/videos/posters/elevations-laterales-incline-30.jpg",
+    label: "Vidéo IA · Élévations latérales incliné 30°",
+    status: "coached",
+    coaching: {
+      title: "Gardez le torse soutenu sur le banc à environ 30°.",
+      handCue: "Tenez un haltère léger dans chaque main avec une prise sûre, sans contact avec le banc.",
+      movementCue: "Écartez les bras en une seconde dans une amplitude confortable puis redescendez en trois secondes, sans lever le buste.",
+      notice: "La vidéo déposée est identique à celle de l'épaule 12. L'angle exact du banc et la prise sont peu lisibles ; une main est masquée et une pause apparaît en haut. Suivez le réglage à 30° et le tempo 3010 de cette fiche.",
+      spoken: "Élévations latérales, banc incliné trente degrés. Réglez le dossier à environ trente degrés par rapport à l'horizontale. Placez le torse face au dossier et soutenu sur le banc, les pieds stables. Tenez un haltère léger dans chaque main, bras pendants de chaque côté. Écartez les bras en une seconde, coudes souples, jusqu'à une hauteur confortable, sans relever le torse. Redescendez en trois secondes sans pause ni élan. La vidéo est identique à celle de l'exercice douze : l'angle exact du banc et la prise sont peu lisibles, une main est masquée et une pause apparaît en haut. Suivez le tempo 3010 et arrêtez avant toute douleur. Trois séries de huit à dix répétitions, soixante secondes de repos.",
+    },
+  },
 };
 
 const VIDEO_EXT = /\.(mp4|webm)(\?|#|$)/i;

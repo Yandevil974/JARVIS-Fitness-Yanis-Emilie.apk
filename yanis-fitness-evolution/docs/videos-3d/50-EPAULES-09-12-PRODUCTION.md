@@ -1,6 +1,6 @@
 # Épaules #09 à #12 — préparation partielle
 
-Suite des épaules #01–#08. Les vidéos #09 et #12 ont été déposées puis intégrées `coached` : [voir contrôle](./51-EPAULES-09-12-CONTROLE-MP4.md). Les épaules #10 et #11 restent sans vidéo. Ce document ne change ni l'application, ni les GIF, ni le programme, ni l'APK. Le dépôt d'un MP4 vaut accord d'intégration ; vérifier les réserves réelles sans exiger de nouvelle génération. Le triceps #11 reste en stand-by.
+Suite des épaules #01–#08. Les vidéos #09 et #12 ont été déposées puis intégrées `coached` : [voir contrôle](./51-EPAULES-09-12-CONTROLE-MP4.md). Depuis, la vidéo [#10 a aussi été intégrée](./54-EPAULES-10-13-14-CONTROLE-MP4.md) ; l'épaule #11 reste sans vidéo. Ce document ne change ni les GIF, ni le programme, ni l'APK. Le dépôt d'un MP4 vaut accord d'intégration ; vérifier les réserves réelles sans exiger de nouvelle génération. Le triceps #11 reste en stand-by.
 
 | # | Fiche et programmation | État |
 |---|---|---|
