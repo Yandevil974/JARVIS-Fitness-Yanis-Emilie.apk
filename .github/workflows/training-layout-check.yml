@@ -1,0 +1,34 @@
+name: Vérifier la séance JARVIS
+on:
+  push:
+    branches:
+      - 'arena/71baa94c-jarvis-fitness-yanis-emilie-ap'
+    paths:
+      - 'yanis-fitness-evolution/src/pages/Training.jsx'
+      - 'yanis-fitness-evolution/src/training-jarvis.css'
+      - 'yanis-fitness-evolution/tests/training-jarvis.spec.js'
+      - '.github/workflows/training-layout-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  training-layout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: yanis-fitness-evolution
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: yanis-fitness-evolution/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Tester la séance, la charge et la vidéo suivante
+        run: |
+          npm run dev > /tmp/yfe-vite.log 2>&1 &
+          trap 'kill $! || true' EXIT
+          npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js

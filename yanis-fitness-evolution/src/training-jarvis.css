@@ -42,7 +42,31 @@
   outline: 2px solid #8afaff;
   outline-offset: 3px;
 }
-.training-command .session-topbar { align-items: flex-end; gap: 18px; margin-bottom: 16px; }
+.training-command .session-topbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 18px; margin-bottom: 16px; }
+.training-command .session-topbar > div:first-child { min-width: 0; }
+.training-command .session-top-actions { display: grid; grid-template-columns: auto auto; justify-content: end; gap: 8px; width: auto; }
+.training-command .session-top-actions > .icon-button { margin-right: 0; }
+.training-command .jarvis-command-core {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-height: 62px;
+  padding: 7px 11px;
+  color: #b7f9ff;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid #33899d;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #0a3143, #071a2a);
+  box-shadow: inset 0 1px #8afaff24, 0 0 20px #00d9e51a;
+}
+.training-command .jarvis-command-core:hover { border-color: #72f8ff; background: #0d3a4b; }
+.training-command .jarvis-command-core > svg { margin-left: auto; flex: none; }
+.training-command .jarvis-command-core-title strong { display: block; color: #ecffff; font-size: 16px; line-height: 1; letter-spacing: .12em; text-shadow: 0 0 12px #38e8f6a0; }
+.training-command .jarvis-command-core-title small { display: block; margin-top: 5px; color: #83e9f0; font-size: 9px; font-weight: 800; letter-spacing: .08em; }
 .training-command .command-eyebrow {
   color: #70edf5;
   font-size: 10px;
@@ -73,9 +97,12 @@
 }
 .training-command .session-progress { height: 4px; background: #173648; margin-bottom: 20px; }
 .training-command .session-progress i { background: #50eff5; box-shadow: 0 0 12px #23e8f7; }
-.training-command .immersive-layout { grid-template-columns: 142px minmax(0, 1fr) minmax(235px, 275px); gap: 15px; align-items: start; }
-.training-command .workout-stage { gap: 15px; }
-.training-command .workout-sequence { min-width: 0; }
+.training-command .immersive-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 15px; align-items: start; }
+.training-command .workout-stage { display: contents; }
+.training-command .exercise-stage { grid-column: 1 / -1; min-width: 0; }
+.training-command .set-entry { grid-column: 1; min-width: 0; }
+.training-command .workout-sequence { grid-column: 1 / -1; min-width: 0; display: flex; flex-direction: row; overflow-x: auto; margin: 0; padding: 4px 0 8px; }
+.training-command .sequence-item, .training-command .sequence-warmup { min-width: 135px; max-width: 180px; flex-shrink: 0; }
 .training-command .workout-sequence > .eyebrow { color: #8cdbe5; font-size: 9px; letter-spacing: .12em; }
 .training-command .sequence-item {
   color: #b9d0d8;
@@ -193,19 +220,18 @@
 .training-command .logged-sets > div { border-color: #254959; }
 .training-command .logged-sets > .table-head,
 .training-command .logged-sets > div > span:first-child { color: #a1bfca; }
-.training-command .session-rail { gap: 12px; min-width: 0; }
+.training-command .session-rail { display: grid; grid-column: 2; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 12px; min-width: 0; align-items: start; }
+.training-command .session-rail > .text-link { grid-column: 1 / -1; }
 .training-command .session-rail > .panel { padding: 16px; }
-.training-command .jarvis-command-core { position: relative; text-align: center; padding: 12px 8px 4px; }
-.training-command .jarvis-command-core-title strong { display: block; color: #ecffff; font-size: 26px; line-height: 1; letter-spacing: .13em; text-shadow: 0 0 16px #38e8f6a0; }
-.training-command .jarvis-command-core-title span { display: block; margin-top: 5px; color: #70e7f1; font-size: 9px; font-weight: 700; letter-spacing: .16em; }
 .training-command .session-command-orb {
   position: relative;
-  width: 154px;
-  height: 154px;
-  margin: 12px auto 0;
+  display: block;
+  flex: none;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background: radial-gradient(circle, #e7ffff 0 3%, #30f7ff 4%, #077f9b 10%, #032b42 22%, transparent 46%);
-  box-shadow: 0 0 38px #18daf929;
+  box-shadow: 0 0 20px #18daf950;
 }
 .training-command .session-command-orb i,
 .training-command .session-command-orb b { position: absolute; inset: 12%; border-radius: 50%; border: 2px solid transparent; }
@@ -258,27 +284,28 @@
   .training-command .session-progress i,
   .training-command .movement-live-progress-track > span { transition: none; }
 }
-@media (max-width: 1100px) {
-  .training-command .immersive-layout { grid-template-columns: minmax(0, 1fr) minmax(220px, 255px); }
-  .training-command .workout-sequence { grid-column: 1 / -1; display: flex; flex-direction: row; overflow-x: auto; padding: 4px 0 8px; }
+@media (max-width: 1050px) {
   .training-command .workout-sequence > .eyebrow { display: none; }
-  .training-command .sequence-item { min-width: 125px; flex-shrink: 0; }
-  .training-command .sequence-warmup { min-width: 125px; flex-shrink: 0; }
+  .training-command .session-rail { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 680px) {
   .training-command { padding: 12px; border-radius: 14px; }
-  .training-command .session-topbar { align-items: flex-start; flex-wrap: wrap; }
-  .training-command .session-top-actions { width: 100%; flex-wrap: wrap; }
+  .training-command .session-topbar { grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 8px; }
+  .training-command .session-top-actions { width: auto; grid-template-columns: auto auto; }
+  .training-command .session-top-actions .btn { padding-inline: 10px; }
+  .training-command .jarvis-command-core { gap: 6px; padding: 6px 7px; }
+  .training-command .jarvis-command-core-title strong { font-size: 13px; }
+  .training-command .jarvis-command-core-title small { font-size: 8px; }
+  .training-command .session-command-orb { width: 36px; height: 36px; }
   .training-command .immersive-layout { grid-template-columns: minmax(0, 1fr); }
-  .training-command .workout-sequence { grid-column: auto; }
+  .training-command .workout-sequence, .training-command .exercise-stage,
+  .training-command .set-entry, .training-command .session-rail { grid-column: 1; }
   .training-command .exercise-stage .movement-visual { height: clamp(230px, 70vw, 340px); }
   .training-command .exercise-stage .movement-visual > video.movement-video { max-height: none; }
   .training-command .exercise-stage h2 { font-size: 22px; }
   .training-command .set-inputs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .training-command .set-inputs > .field:last-child { grid-column: 1 / -1; }
-  .training-command .session-rail { display: grid; grid-template-columns: minmax(0, 1fr); }
-  .training-command .jarvis-command-core { padding-top: 16px; }
-  .training-command .session-command-orb { width: 125px; height: 125px; }
+  .training-command .session-rail { grid-template-columns: minmax(0, 1fr); }
   .training-command .rest-widget .ring { width: 176px !important; height: 176px !important; }
   .training-command .video-workout-load { grid-template-columns: minmax(0, 1fr) minmax(100px, 140px); }
 }

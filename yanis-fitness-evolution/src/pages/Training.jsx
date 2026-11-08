@@ -363,6 +363,16 @@ function Workout() {
           </span>
         </div>
         <div className="session-top-actions">
+          <button
+            type="button"
+            className="jarvis-command-core"
+            aria-label="Adapter la séance avec JARVIS"
+            onClick={() => navigate("jarvis")}
+          >
+            <span className="session-command-orb" aria-hidden="true"><i /><i /><i /><b /></span>
+            <span className="jarvis-command-core-title"><strong>JARVIS</strong><small>ADAPTER LA SÉANCE</small></span>
+            <Icon name="ArrowUpRight" size={16} />
+          </button>
           <IconButton
             icon={p.preferences.voice ? "Volume2" : "VolumeX"}
             label="Activer ou désactiver le coach vocal"
@@ -372,13 +382,6 @@ function Workout() {
               })
             }
           />
-          <Button
-            variant="secondary"
-            icon="Sparkles"
-            onClick={() => navigate("jarvis")}
-          >
-            Adapter
-          </Button>
           <Button
             variant="primary"
             icon="Flag"
@@ -752,10 +755,6 @@ function Workout() {
           </Panel>
         </div>
         <aside className="session-rail">
-          <div className="jarvis-command-core">
-            <div className="jarvis-command-core-title"><strong>JARVIS</strong><span>ASSISTANT DE SÉANCE</span></div>
-            <div className="session-command-orb" aria-hidden="true"><i /><i /><i /><b /></div>
-          </div>
           <Panel className="command-recovery">
             <RestTimer />
           </Panel>
