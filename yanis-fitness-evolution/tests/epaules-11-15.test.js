@@ -37,9 +37,3 @@ test("épaules 11 et 15 : sources déposées, programme, GIF et corrections cons
     assert.equal(nextRestModal(next).spoken, v.coaching.spoken);
   }
 });
-
-test("épaules 18 attend une vidéo de la variante demandée", () => {
-  const ex = EXERCISES.find(e => e.id === "elevations-laterales-incline");
-  assert.deepEqual([ex.defaultSets, ex.repScheme, ex.tempo, ex.rest, ex.gif], [4, "12-15", "3010", 60, "/media/e169d622c8002b38.gif"]);
-  assert.equal(videoFor(ex), null);
-});

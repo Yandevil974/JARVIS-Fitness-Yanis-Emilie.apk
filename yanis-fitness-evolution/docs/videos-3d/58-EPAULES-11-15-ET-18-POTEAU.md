@@ -1,5 +1,7 @@
 # Épaules #11/#15 intégrées · #18 au poteau
 
+**Mise à jour :** la vidéo déposée pour #18 est intégrée avec réserves et réutilisée pour #21 ; voir [contrôle et dernier lot](./59-EPAULES-18-ET-DERNIER-LOT.md). Les sections ci-dessous décrivent l'état antérieur au dépôt.
+
 ## Vidéos déposées et intégrées
 
 Yanis a déposé les deux MP4 sur la branche (`41831b8`) après la présentation des références #11 et #15 ; accord d'intégration acquis. Leur attribution repose sur la correspondance visuelle avec ces références. Les fichiers restent strictement identiques, marqués `coached`, avec avertissement et voix ; les GIF et prescriptions ne sont pas modifiés.

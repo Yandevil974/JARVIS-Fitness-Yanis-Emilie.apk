@@ -1676,6 +1676,47 @@ export const EXERCISE_VIDEOS = {
       spoken: "Élévations latérales incliné quarante-cinq degrés. Réglez le banc à environ quarante-cinq degrés, torse soutenu et pieds stables. Tenez un haltère léger dans chaque main, bras libres de chaque côté. Écartez les bras en une seconde, coudes souples et amplitude confortable, sans relever le buste. Redescendez en trois secondes sans pause ni élan. La vidéo montre un appui poitrine, interprétation de la fiche ; l'angle exact et les mains sont peu lisibles et le rythme ne démontre pas clairement le tempo 3010. Arrêtez avant toute douleur. Trois séries de huit à dix répétitions, soixante secondes de repos.",
     },
   },
+  // Épaules #18 et #21 : même élévation unilatérale inclinée au poteau.
+  "elevations-laterales-incline": {
+    src: "/videos/elevations-laterales-incline-au-poteau.mp4",
+    poster: "/videos/posters/elevations-laterales-incline-au-poteau.jpg",
+    label: "Vidéo IA · Élévation latérale inclinée au poteau",
+    status: "coached",
+    coaching: {
+      title: "Gardez les pieds stables et le corps incliné sans balancer.",
+      handCue: "Tenez un poteau fixe d'une main et un haltère léger de l'autre, avec une prise sûre.",
+      movementCue: "Élevez le bras libre sur le côté en une seconde, sans dépasser l'épaule, puis redescendez en trois secondes sans pause.",
+      notice: "La vidéo montre un seul côté ; la prise de l'haltère est peu lisible et la charge arrive près du bord de l'image. Le rythme ne démontre pas clairement 3010. Gardez le poteau bien fixe et respectez la fiche.",
+      spoken: "Élévations latérales inclinées au poteau. Placez les pieds ensemble près d'un poteau bien fixé et tenez-le d'une main avec une prise sûre. Inclinez le corps confortablement, sans vous balancer. Avec un haltère léger dans l'autre main, écartez le bras en une seconde jusqu'à hauteur d'épaule au maximum, puis redescendez en trois secondes sans pause. La vidéo ne montre qu'un côté ; la prise de l'haltère est peu lisible et le rythme ne démontre pas clairement le tempo. Travaillez les deux côtés et arrêtez avant toute douleur. Quatre séries de douze à quinze répétitions, soixante secondes de repos.",
+    },
+  },
+  "elevations-laterales-lean-away": {
+    src: "/videos/elevations-laterales-incline-au-poteau.mp4",
+    poster: "/videos/posters/elevations-laterales-incline-au-poteau.jpg",
+    label: "Vidéo IA · Élévation latérale lean away",
+    status: "coached",
+    coaching: {
+      title: "Gardez le corps stable et marquez une seconde en haut.",
+      handCue: "Tenez un poteau fixe d'une main et un haltère léger de l'autre, avec une prise sûre.",
+      movementCue: "Élevez le bras libre sur le côté en une seconde, marquez une seconde en haut, puis redescendez en trois secondes.",
+      notice: "Même mouvement incliné au poteau que l'épaule 18 : sa vidéo est réutilisée. Elle montre un seul côté, une prise peu lisible et ne démontre pas clairement la pause ni le tempo 3011 de cette fiche.",
+      spoken: "Élévations latérales lean away. Pieds ensemble près d'un poteau bien fixé, tenez-le d'une main et inclinez le corps confortablement. Tenez un haltère léger de l'autre main. Écartez le bras en une seconde jusqu'à hauteur d'épaule au maximum, marquez une seconde en haut, puis redescendez en trois secondes sans élan. La vidéo est celle de l'exercice dix-huit : la prise est peu lisible et la pause en haut n'est pas clairement démontrée. Suivez le tempo 3011 de cette fiche, travaillez les deux côtés et arrêtez avant toute douleur. Trois séries de douze à quinze répétitions, soixante secondes de repos.",
+    },
+  },
+  // Épaule #23 : même développé debout que #10, mais consignes et test propres.
+  "developpe-militaire-test-1rm": {
+    src: "/videos/developpe-militaire-debout.mp4",
+    poster: "/videos/posters/developpe-militaire-debout.jpg",
+    label: "Vidéo IA · Développé militaire debout, test de force",
+    status: "coached",
+    coaching: {
+      title: "Test de force : échauffez-vous et sécurisez la barre.",
+      handCue: "Tenez la barre en pronation, poignets alignés, avec une prise adaptée à votre mobilité.",
+      movementCue: "Gardez les pieds stables et le buste gainé ; poussez sans élan puis descendez de façon contrôlée.",
+      notice: "La vidéo de l'épaule 10 est réutilisée pour le même développé debout : elle ne démontre ni le test maximal ni le tempo 4010. Les mains sont peu lisibles. Suivez la fiche et ne déduisez pas la charge à utiliser de l'image.",
+      spoken: "Développé militaire debout, test de force. Échauffez-vous progressivement, sécurisez la barre avec du matériel adapté et faites-vous assister si nécessaire. Pieds stables et buste gainé, tenez la barre en pronation, poignets alignés. Poussez sans élan ni cambrure, puis descendez de façon contrôlée en quatre secondes. La vidéo est celle de l'exercice dix : elle ne montre ni le test maximal ni le tempo de cette fiche, et les mains sont peu lisibles. Ne forcez pas en cas de douleur. Cinq séries de une à cinq répétitions, trois minutes de repos.",
+    },
+  },
   // Épaule #16 : même mouvement debout que #02. Yanis demande de réutiliser sa vidéo.
   "elevations-laterales": {
     src: "/videos/elevations-laterales-halteres.mp4",
