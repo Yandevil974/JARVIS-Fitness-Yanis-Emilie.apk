@@ -31,4 +31,19 @@ jobs:
         run: |
           npm run dev > /tmp/yfe-vite.log 2>&1 &
           trap 'kill $! || true' EXIT
-          npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js
+          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js; then
+            node -e '
+              const report = require("./tests/e2e-results.json");
+              function visit(suite) {
+                for (const spec of suite.specs || []) for (const test of spec.tests || []) {
+                  for (const result of test.results || []) for (const error of result.errors || []) {
+                    const message = (spec.title + ": " + error.message).replace(/\x1b\[[0-9;]*m/g, "").replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
+                    console.log("::error::" + message.slice(0, 4000));
+                  }
+                }
+                for (const child of suite.suites || []) visit(child);
+              }
+              for (const suite of report.suites || []) visit(suite);
+            '
+            exit 1
+          fi
