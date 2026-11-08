@@ -13,6 +13,8 @@ Les deux vidéos font 121 images à 24 images/s, environ 5,04 secondes, avec fil
 
 ## #18 — élévation latérale inclinée en tenant un poteau
 
+**Reprise de face demandée par Yanis :** [image de face candidate](./vague5-epaules-18-face-v8.jpg) · [zoom](./vague5-epaules-18-face-zoom.jpg). Le corps est incliné, les pieds sont près du poteau et le cadrage laisse de la place au mouvement. Cependant la main qui tient l'haltère est trop peu lisible et se confond avec la charge : ce n'est pas une référence validée et il vaut mieux corriger cette prise avant de dépenser des crédits vidéo. La limite de génération d'images de ce tour a été atteinte. Le prompt ci-dessous est celui de la version de profil, **ne pas l'utiliser tel quel pour la vue de face** : il faudra le réécrire pour lever l'haltère latéralement vers la gauche de l'image.
+
 Yanis précise : profil, main sur un poteau, bras tendu, jambes jointes près du poteau, corps incliné ; élévation latérale à la poulie ou à l'haltère. La référence préparée utilise **un seul haltère**, choix parmi les deux possibilités, en cohérence avec le GIF : elle représente une variante unilatérale inclinée, différente de l'élévation debout #16 ; ne pas réutiliser #16 comme si le mouvement était identique.
 
 - [Nouvelle photo de départ, profil](./vague5-epaules-18-profil-v4.jpg) · [Zoom](./vague5-epaules-18-profil-zoom.jpg). L'ancienne image de trois quarts est conservée mais n'est plus la référence à utiliser.
