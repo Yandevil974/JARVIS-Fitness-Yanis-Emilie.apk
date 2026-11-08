@@ -18,7 +18,6 @@ for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844
     await expect(assistant).toBeVisible();
     await expect(command.getByRole("button", { name: "Adapter", exact: true })).toHaveCount(0);
     await expect(command.locator(".rest-widget .ring")).toBeVisible();
-    await expect(command.getByLabel("Charge sous la vidéo", { exact: true })).toBeVisible();
     await expect(command.getByLabel("Charge réalisée", { exact: true })).toBeVisible();
     await expect(command.getByRole("button", { name: /Valider la série/ })).toBeVisible();
     const [layoutBox, exerciseBox, topbarBox, assistantBox, setBox, railBox] = await Promise.all(
@@ -28,7 +27,9 @@ for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844
     expect(Math.abs(exerciseBox.width - layoutBox.width)).toBeLessThanOrEqual(1);
     expect(Math.abs(assistantBox.x + assistantBox.width - topbarBox.x - topbarBox.width)).toBeLessThanOrEqual(1);
     expect(assistantBox.y - topbarBox.y).toBeLessThanOrEqual(1);
-    expect(setBox.y).toBeGreaterThanOrEqual(exerciseBox.y + exerciseBox.height - 1);
+    const visualBox = await exercise.locator(".movement-visual").boundingBox();
+    expect(setBox.y).toBeGreaterThanOrEqual(visualBox.y + visualBox.height - 1);
+    expect(setBox.y + setBox.height).toBeLessThanOrEqual(exerciseBox.y + exerciseBox.height + 1);
     expect(railBox.y).toBeGreaterThanOrEqual(exerciseBox.y + exerciseBox.height - 1);
     expect(await command.evaluate((el) => el.scrollWidth <= el.clientWidth + 1)).toBe(true);
     await assistant.click();

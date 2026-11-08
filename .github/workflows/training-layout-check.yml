@@ -5,6 +5,8 @@ on:
       - 'arena/71baa94c-jarvis-fitness-yanis-emilie-ap'
     paths:
       - 'yanis-fitness-evolution/src/pages/Training.jsx'
+      - 'yanis-fitness-evolution/src/components/WorkoutLoadControl.jsx'
+      - 'yanis-fitness-evolution/tests/workout-video-load.spec.js'
       - 'yanis-fitness-evolution/src/training-jarvis.css'
       - 'yanis-fitness-evolution/tests/training-jarvis.spec.js'
       - '.github/workflows/training-layout-check.yml'
@@ -31,7 +33,7 @@ jobs:
         run: |
           npm run dev > /tmp/yfe-vite.log 2>&1 &
           trap 'kill $! || true' EXIT
-          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js; then
+          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/session-guidance.spec.js; then
             node -e '
               const report = require("./tests/e2e-results.json");
               function visit(suite) {

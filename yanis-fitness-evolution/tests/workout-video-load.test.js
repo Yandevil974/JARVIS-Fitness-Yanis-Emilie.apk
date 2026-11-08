@@ -29,7 +29,7 @@ test("la charge appliquée et sa hausse sont visibles dans le champ sous la vid�
   const html = render();
   assert.match(html, /Charge pour cette série/);
   assert.match(html, /Hausse automatique : 50 → 52,5 kg/);
-  assert.match(html, /aria-label="Charge sous la vidéo"/);
+  assert.match(html, /aria-label="Charge réalisée"/);
   assert.match(html, /value="52\.5"/);
   assert.match(html, /step="any"/);
 });

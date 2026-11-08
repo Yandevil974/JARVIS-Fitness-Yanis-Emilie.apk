@@ -45,6 +45,7 @@ import {
 import {
   assetSrc,
   numberLabel,
+  num,
   dateLabel,
   durationLabel,
   today,
@@ -529,13 +530,170 @@ function Workout() {
             <Movement
               exercise={ex}
               belowVisual={
-                <WorkoutLoadControl
-                  target={target}
-                  exercise={ex}
-                  weight={weight}
-                  onChange={setWeight}
-                  disabled={w.safetyStop || done >= target.targetSets}
-                />
+                <section className="set-entry workout-set-entry" aria-label="Saisie de la série">
+                  <div className="command-section-label">RÉSULTATS DE SÉRIE <i /> SAISIE RÉELLE</div>
+                  <SectionHeading
+                    title={
+                      done >= target.targetSets
+                        ? "Exercice terminé. Bien joué."
+                        : `Série ${done + 1} sur ${target.targetSets}`
+                    }
+                    subtitle="Confirmez ce que vous avez réellement réalisé."
+                  />
+                  {priorSource && (
+                    <div className="source-load-hint">
+                      <strong>
+                        Dernière charge du fichier : {numberLabel(priorSource.weight)}{" "}
+                        kg
+                      </strong>
+                      <p>
+                        {dateLabel(priorSource.date)} · vérifiez que la convention est
+                        bien{" "}
+                        {ex.bodyweight
+                          ? "la charge ajoutée au poids du corps"
+                          : target.unit}{" "}
+                        avant de la reprendre. Vos anciennes valeurs ne seront pas
+                        changées.
+                      </p>
+                      <Button variant="secondary small" onClick={verifySourceLoad}>
+                        Confirmer cette convention et reprendre la charge
+                      </Button>
+                    </div>
+                  )}
+                  {done < target.targetSets && !w.safetyStop ? (
+                    <form onSubmit={submit}>
+                      <WorkoutLoadControl
+                        target={target}
+                        exercise={ex}
+                        weight={weight}
+                        onChange={setWeight}
+                      />
+                      <div className="set-inputs">
+                        <Field
+                          label={
+                            ex.timed ? "Secondes réalisées" : "Répétitions réalisées"
+                          }
+                        >
+                          <div className="big-input">
+                            <input
+                              aria-label={
+                                ex.timed
+                                  ? "Secondes réalisées"
+                                  : "Répétitions réalisées"
+                              }
+                              type="number"
+                              min="1"
+                              max={ex.timed ? 3600 : 100}
+                              required
+                              value={reps}
+                              onChange={(e) => setReps(e.target.value)}
+                            />
+                            <span>{ex.timed ? "sec" : "reps"}</span>
+                          </div>
+                        </Field>
+                        <Field label="RPE · effort /10">
+                          <Select
+                            aria-label="RPE de la série"
+                            value={rpe}
+                            onChange={(e) => setRpe(e.target.value)}
+                          >
+                            <option value="">À renseigner</option>
+                            {[5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10].map((v) => (
+                              <option key={v}>{v}</option>
+                            ))}
+                          </Select>
+                        </Field>
+                      </div>
+                      <details className="set-details">
+                        <summary>
+                          RIR et note de série <Icon name="ChevronDown" size={13} />
+                        </summary>
+                        <div className="form-grid">
+                          <Field label="Répétitions en réserve">
+                            <Input
+                              type="number"
+                              min="0"
+                              max="10"
+                              step="1"
+                              placeholder="Optionnel"
+                              value={rir}
+                              onChange={(e) => setRir(e.target.value)}
+                            />
+                          </Field>
+                          <Field label="Note">
+                            <Input
+                              value={note}
+                              maxLength={300}
+                              placeholder="Technique, sensation…"
+                              onChange={(e) => setNote(e.target.value)}
+                            />
+                          </Field>
+                        </div>
+                      </details>
+                      <button className="validate-set" type="submit">
+                        <Icon name="Check" size={21} />
+                        Valider la série
+                        <span>
+                          {target.rest > 0
+                            ? "Le repos démarre automatiquement"
+                            : "Enchaînement source · sans repos ici"}
+                        </span>
+                        <Icon name="ArrowRight" size={19} />
+                      </button>
+                    </form>
+                  ) : (
+                    <div className="exercise-finished">
+                      <Icon name="CircleCheck" size={32} />
+                      <p>
+                        {w.safetyStop
+                          ? "Exercice suspendu."
+                          : "Toutes les séries prévues sont sauvegardées."}
+                      </p>
+                      {index < w.exercises.length - 1 && !w.safetyStop && (
+                        <Button
+                          variant="primary"
+                          icon="ArrowRight"
+                          onClick={() => select(index + 1)}
+                        >
+                          Exercice suivant
+                        </Button>
+                      )}
+                    </div>
+                  )}
+                  {target.sets.length > 0 && (
+                    <div className="logged-sets">
+                      <div className="table-head">
+                        <span>SÉRIE</span>
+                        <span>CHARGE</span>
+                        <span>{ex.timed ? "SECONDES" : "REPS"}</span>
+                        <span>RPE</span>
+                        <span />
+                      </div>
+                      {target.sets.map((s, i) => (
+                        <div key={s.id}>
+                          <span>
+                            <Icon name="Check" size={13} />
+                            {i + 1}
+                          </span>
+                          <strong>{s.weight != null ? `${s.weight} kg` : "—"}</strong>
+                          <strong>{s.reps}</strong>
+                          <span>{s.rpe ?? "—"}</span>
+                          <IconButton
+                            icon="Pencil"
+                            label={`Corriger la série ${i + 1}`}
+                            onClick={() =>
+                              setModal({
+                                type: "edit-set",
+                                exerciseIndex: index,
+                                setId: s.id,
+                              })
+                            }
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </section>
               }
               live={{
                 completed: done,
@@ -561,198 +719,6 @@ function Workout() {
               </div>
             </div>
           </Panel>
-          <Panel className="set-entry">
-            <div className="command-section-label">RÉSULTATS DE SÉRIE <i /> SAISIE RÉELLE</div>
-            <SectionHeading
-              title={
-                done >= target.targetSets
-                  ? "Exercice terminé. Bien joué."
-                  : `Série ${done + 1} sur ${target.targetSets}`
-              }
-              subtitle="Confirmez ce que vous avez réellement réalisé."
-            />
-            {priorSource && (
-              <div className="source-load-hint">
-                <strong>
-                  Dernière charge du fichier : {numberLabel(priorSource.weight)}{" "}
-                  kg
-                </strong>
-                <p>
-                  {dateLabel(priorSource.date)} · vérifiez que la convention est
-                  bien{" "}
-                  {ex.bodyweight
-                    ? "la charge ajoutée au poids du corps"
-                    : target.unit}{" "}
-                  avant de la reprendre. Vos anciennes valeurs ne seront pas
-                  changées.
-                </p>
-                <Button variant="secondary small" onClick={verifySourceLoad}>
-                  Confirmer cette convention et reprendre la charge
-                </Button>
-              </div>
-            )}
-            {done < target.targetSets && !w.safetyStop ? (
-              <form onSubmit={submit}>
-                <div className="set-inputs">
-                  <Field
-                    label={
-                      ex.timed
-                        ? "Durée réalisée"
-                        : ex.bodyweight
-                          ? "Charge ajoutée (facultative)"
-                          : "Charge réalisée"
-                    }
-                  >
-                    {ex.timed ? (
-                      <div className="static-value">AU TEMPS</div>
-                    ) : (
-                      <div className="big-input">
-                        <input
-                          aria-label="Charge réalisée"
-                          type="number"
-                          inputMode="decimal"
-                          min="0"
-                          max="1000"
-                          step="any"
-                          placeholder={ex.bodyweight ? "PDC / 0" : "—"}
-                          value={weight}
-                          onChange={(e) => setWeight(e.target.value)}
-                        />
-                        <span>
-                          {ex.bodyweight
-                            ? "kg ajoutés"
-                            : target.unit === "kg/main"
-                              ? "kg/main"
-                              : "kg"}
-                        </span>
-                      </div>
-                    )}
-                  </Field>
-                  <Field
-                    label={
-                      ex.timed ? "Secondes réalisées" : "Répétitions réalisées"
-                    }
-                  >
-                    <div className="big-input">
-                      <input
-                        aria-label={
-                          ex.timed
-                            ? "Secondes réalisées"
-                            : "Répétitions réalisées"
-                        }
-                        type="number"
-                        min="1"
-                        max={ex.timed ? 3600 : 100}
-                        required
-                        value={reps}
-                        onChange={(e) => setReps(e.target.value)}
-                      />
-                      <span>{ex.timed ? "sec" : "reps"}</span>
-                    </div>
-                  </Field>
-                  <Field label="RPE · effort /10">
-                    <Select
-                      aria-label="RPE de la série"
-                      value={rpe}
-                      onChange={(e) => setRpe(e.target.value)}
-                    >
-                      <option value="">À renseigner</option>
-                      {[5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10].map((v) => (
-                        <option key={v}>{v}</option>
-                      ))}
-                    </Select>
-                  </Field>
-                </div>
-                <details className="set-details">
-                  <summary>
-                    RIR et note de série <Icon name="ChevronDown" size={13} />
-                  </summary>
-                  <div className="form-grid">
-                    <Field label="Répétitions en réserve">
-                      <Input
-                        type="number"
-                        min="0"
-                        max="10"
-                        step="1"
-                        placeholder="Optionnel"
-                        value={rir}
-                        onChange={(e) => setRir(e.target.value)}
-                      />
-                    </Field>
-                    <Field label="Note">
-                      <Input
-                        value={note}
-                        maxLength={300}
-                        placeholder="Technique, sensation…"
-                        onChange={(e) => setNote(e.target.value)}
-                      />
-                    </Field>
-                  </div>
-                </details>
-                <button className="validate-set" type="submit">
-                  <Icon name="Check" size={21} />
-                  Valider la série
-                  <span>
-                    {target.rest > 0
-                      ? "Le repos démarre automatiquement"
-                      : "Enchaînement source · sans repos ici"}
-                  </span>
-                  <Icon name="ArrowRight" size={19} />
-                </button>
-              </form>
-            ) : (
-              <div className="exercise-finished">
-                <Icon name="CircleCheck" size={32} />
-                <p>
-                  {w.safetyStop
-                    ? "Exercice suspendu."
-                    : "Toutes les séries prévues sont sauvegardées."}
-                </p>
-                {index < w.exercises.length - 1 && !w.safetyStop && (
-                  <Button
-                    variant="primary"
-                    icon="ArrowRight"
-                    onClick={() => select(index + 1)}
-                  >
-                    Exercice suivant
-                  </Button>
-                )}
-              </div>
-            )}
-            {target.sets.length > 0 && (
-              <div className="logged-sets">
-                <div className="table-head">
-                  <span>SÉRIE</span>
-                  <span>CHARGE</span>
-                  <span>{ex.timed ? "SECONDES" : "REPS"}</span>
-                  <span>RPE</span>
-                  <span />
-                </div>
-                {target.sets.map((s, i) => (
-                  <div key={s.id}>
-                    <span>
-                      <Icon name="Check" size={13} />
-                      {i + 1}
-                    </span>
-                    <strong>{s.weight != null ? `${s.weight} kg` : "—"}</strong>
-                    <strong>{s.reps}</strong>
-                    <span>{s.rpe ?? "—"}</span>
-                    <IconButton
-                      icon="Pencil"
-                      label={`Corriger la série ${i + 1}`}
-                      onClick={() =>
-                        setModal({
-                          type: "edit-set",
-                          exerciseIndex: index,
-                          setId: s.id,
-                        })
-                      }
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
-          </Panel>
         </div>
         <aside className="session-rail">
           <Panel className="command-recovery">
@@ -772,41 +738,20 @@ function Workout() {
               {target.recommendation?.reason ||
                 "Renseignez votre première série pour commencer à construire votre historique."}
             </p>
-            {strengthLoad?.load != null && (
-              <div className="load-suggestion">
-                <div className="load-suggestion-value">
-                  <strong>{strengthLoad.load}</strong>
-                  <span>
-                    {ex.unit === "kg/main" ? "kg par haltère" : "kg"} ·{" "}
-                    {schemeReps} rép.
-                  </span>
-                </div>
-                <p>{forceSourceLabel(strengthLoad)}</p>
-                {strengthLoad.effective != null && (
-                  <small>
-                    Base : {strengthLoad.baseName} {strengthLoad.effective} kg à
-                    1RM
-                    {strengthLoad.percent
-                      ? ` · ${strengthLoad.percent} % du maximum`
-                      : ""}
-                    {strengthLoad.fromJournal
-                      ? " · estimé depuis vos séries"
-                      : strengthLoad.declared
-                        ? " · issu de votre bilan 1RM"
-                        : ""}
-                  </small>
-                )}
-                {Number(weight) !== strengthLoad.load && (
-                  <button
-                    className="text-link"
-                    onClick={() => setWeight(strengthLoad.load)}
-                  >
-                    Appliquer cette charge
-                  </button>
-                )}
-              </div>
+            {target.recommendation?.weight != null && (
+              <p className="recommendation-snapshot">
+                Recommandation enregistrée : <strong>{numberLabel(target.recommendation.weight)} {target.unit === "kg/main" ? "kg/main" : target.unit === "kg ajouté" ? "kg ajoutés" : target.unit === "source à vérifier" ? "unité à vérifier" : "kg"}</strong>.
+                {num(weight) != null && num(weight) !== num(target.recommendation.weight) && " Elle diffère de la charge saisie sous la vidéo."}
+              </p>
             )}
-            <small>Vous pouvez toujours modifier la charge saisie.</small>
+            <small>Cette décision date du lancement de la séance ou du dernier recalcul ; elle ne change pas automatiquement après chaque série. La charge sous la vidéo reste modifiable.</small>
+            {strengthLoad?.load != null && (
+              <details className="force-reference">
+                <summary>Voir l’estimation 1RM indicative</summary>
+                <p>Estimation indépendante : {numberLabel(strengthLoad.load)} {target.unit === "kg/main" ? "kg/main" : "kg"} · {schemeReps} rép. Elle ne tient pas nécessairement compte de la décision ci-dessus et n’est pas appliquée à la série.</p>
+                <p>{forceSourceLabel(strengthLoad)}</p>
+              </details>
+            )}
           </Panel>
           <Panel className="session-muscles">
             <h3>Muscles en action</h3>
