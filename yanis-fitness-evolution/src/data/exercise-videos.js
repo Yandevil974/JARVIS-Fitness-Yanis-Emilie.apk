@@ -1622,6 +1622,33 @@ export const EXERCISE_VIDEOS = {
       spoken: "Élévations latérales face au banc incliné. Réglez le dossier à environ trente degrés par rapport à l'horizontale. Placez le torse face au dossier et soutenu sur le banc, les pieds stables. Tenez un haltère léger dans chaque main avec une prise sûre, les bras pendants de chaque côté. Écartez les bras en une seconde, coudes souples, jusqu'à une hauteur confortable, sans relever le torse. Redescendez en trois secondes sans pause, sans élan ni contact des charges avec le banc. Dans la vidéo, l'angle exact du banc et la prise sont peu lisibles, une main est masquée et une pause apparaît en haut. Suivez le tempo 3010 plutôt que l'image et arrêtez avant toute douleur. Trois séries de dix, huit et six répétitions, en dégressif selon votre fiche, soixante-quinze secondes de repos.",
     },
   },
+  // Épaules #17 et #19 : vidéos déposées par Yanis, avec leurs réserves.
+  "developpe-derriere-la-nuque": {
+    src: "/videos/developpe-derriere-la-nuque.mp4",
+    poster: "/videos/posters/developpe-derriere-la-nuque.jpg",
+    label: "Vidéo IA · Développé derrière la nuque",
+    status: "coached",
+    coaching: {
+      title: "Ne forcez pas la descente derrière la tête.",
+      handCue: "Tenez une barre avec une prise confortable et des poignets alignés.",
+      movementCue: "Poussez en une seconde, puis redescendez en quatre secondes seulement dans une amplitude confortable, sans toucher la tête ni la nuque.",
+      notice: "La barre semble descendre au niveau de la nuque sur la vidéo ; ne copiez pas cette profondeur. La prise est petite à l'écran et le rythme ne démontre pas clairement le tempo 4010. Limitez l'amplitude à votre mobilité et arrêtez avant toute douleur.",
+      spoken: "Développé derrière la nuque. Asseyez-vous de façon stable, pieds au sol et buste gainé. Tenez une barre avec une prise confortable. Poussez en une seconde, puis redescendez derrière la tête en quatre secondes, seulement dans une amplitude confortable et sans toucher la tête ou la nuque. Dans la vidéo, la barre semble descendre au niveau de la nuque et le tempo n'est pas clairement démontré. Ne copiez pas cette profondeur et ne forcez jamais votre mobilité. Arrêtez avant toute douleur. Cinq séries de six à huit répétitions, soixante secondes de repos.",
+    },
+  },
+  "developpe-haltere-un-bras-debout": {
+    src: "/videos/developpe-haltere-un-bras-debout.mp4",
+    poster: "/videos/posters/developpe-haltere-un-bras-debout.jpg",
+    label: "Vidéo IA · Développé haltère un bras debout",
+    status: "coached",
+    coaching: {
+      title: "Gardez le buste stable et contrôlez la descente.",
+      handCue: "Tenez un seul haltère dans la main active, poignet aligné et main libre sans charge.",
+      movementCue: "Poussez en une seconde puis redescendez en quatre secondes vers l'épaule, sans vous pencher.",
+      notice: "La vidéo montre un seul côté ; la main est petite à l'écran et le rythme ne démontre pas clairement le tempo 4010. Gardez le buste stable, contrôlez la descente et travaillez les deux côtés selon la fiche.",
+      spoken: "Développé haltère un bras debout. Pieds stables, buste droit et gainé. Prenez un haltère dans la main active, l'autre main reste libre. Poussez vers le haut en une seconde, puis redescendez en quatre secondes à hauteur d'épaule confortable, sans vous pencher ni cambrer. La vidéo ne montre qu'un côté et ne démontre pas clairement le tempo 4010 : respectez la fiche et travaillez les deux côtés. Arrêtez avant toute douleur. Quatre séries de sept à neuf répétitions, quatre-vingt-dix secondes de repos.",
+    },
+  },
   // Épaule #16 : même mouvement debout que #02. Yanis demande de réutiliser sa vidéo.
   "elevations-laterales": {
     src: "/videos/elevations-laterales-halteres.mp4",

@@ -1,5 +1,7 @@
 # Épaules #15 à #19 — lot partiel
 
+**Mise à jour :** les vidéos #17 et #19 déposées ont été intégrées ; reprise #11/#15 et question sur #18 dans [le nouveau suivi](./57-EPAULES-17-19-ET-REPRISE-11-15-18.md). Le tableau ci-dessous décrit la préparation initiale.
+
 Yanis a demandé de mettre **l'épaule #11 de côté** et de poursuivre. Elle reste sans vidéo, sans être traitée dans ce lot. Le triceps #11 reste lui aussi en stand-by. Au moment de la préparation, les fiches #15 à #19 étaient toutes sans vidéo. Depuis, Yanis a demandé de réutiliser la vidéo #02 pour #16 : **#16 est intégrée** sans nouvelle génération. Les GIF, les équipements et la programmation ne sont pas modifiés. Au dépôt d'un MP4, l'accord d'intégration est acquis ; contrôler la vidéo et documenter les réserves sans demander de la refaire.
 
 | # | Fiche et programmation | État de la préparation |
