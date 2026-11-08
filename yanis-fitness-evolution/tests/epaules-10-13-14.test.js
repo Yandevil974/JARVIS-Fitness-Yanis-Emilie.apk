@@ -33,6 +33,5 @@ test("épaules #10, #13 et #14 : sources déposées, copies, GIF, programme et c
     }
     assert.equal(sha(`public${v.poster}`), sha(`release${v.poster}`));
   }
-  assert.equal(videoFor("developpe-halteres-assis-neutre-pronation"), null);
   assert.equal(sha("public/videos/elevations-laterales-incline-30.mp4"), sha("public/videos/elevations-laterales-incline-30-face-au-banc.mp4"));
 });

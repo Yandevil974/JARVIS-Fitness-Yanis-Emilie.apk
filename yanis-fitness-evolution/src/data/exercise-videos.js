@@ -1649,6 +1649,33 @@ export const EXERCISE_VIDEOS = {
       spoken: "Développé haltère un bras debout. Pieds stables, buste droit et gainé. Prenez un haltère dans la main active, l'autre main reste libre. Poussez vers le haut en une seconde, puis redescendez en quatre secondes à hauteur d'épaule confortable, sans vous pencher ni cambrer. La vidéo ne montre qu'un côté et ne démontre pas clairement le tempo 4010 : respectez la fiche et travaillez les deux côtés. Arrêtez avant toute douleur. Quatre séries de sept à neuf répétitions, quatre-vingt-dix secondes de repos.",
     },
   },
+  // Épaules #11 et #15 : vidéos déposées, avec les réserves de prise et d'angle.
+  "developpe-halteres-assis-neutre-pronation": {
+    src: "/videos/developpe-halteres-assis-neutre-pronation.mp4",
+    poster: "/videos/posters/developpe-halteres-assis-neutre-pronation.jpg",
+    label: "Vidéo IA · Développé haltères assis neutre vers pronation",
+    status: "coached",
+    coaching: {
+      title: "En bas, paumes face à face ; en haut, paumes vers l'avant.",
+      handCue: "Gardez les poignets alignés et utilisez une prise neutre, paumes face à face, au départ en bas.",
+      movementCue: "Poussez en une seconde en tournant progressivement les paumes vers l'avant, puis descendez en trois secondes en revenant à la prise neutre.",
+      notice: "La rotation vers la prise neutre n'est pas clairement visible et la vidéo semble garder les paumes vers l'avant en bas. Ne copiez pas la prise du bas : suivez la consigne et le tempo 3010, non démontré clairement.",
+      spoken: "Développé haltères assis, neutre vers pronation. Dos soutenu, pieds stables, un haltère par main. En bas, paumes face à face et poignets alignés. Poussez en une seconde en tournant progressivement les paumes vers l'avant. Redescendez en trois secondes en revenant à la prise neutre. La rotation n'est pas clairement visible sur la vidéo, qui semble garder les paumes vers l'avant en bas. Suivez la consigne, pas la prise de l'image. Arrêtez avant toute douleur. Quatre séries de huit à dix répétitions, quatre-vingt-dix secondes de repos.",
+    },
+  },
+  "elevations-laterales-incline-45": {
+    src: "/videos/elevations-laterales-incline-45.mp4",
+    poster: "/videos/posters/elevations-laterales-incline-45.jpg",
+    label: "Vidéo IA · Élévations latérales incliné 45°",
+    status: "coached",
+    coaching: {
+      title: "Torse soutenu, écartez les bras sans élan.",
+      handCue: "Tenez un haltère léger dans chaque main, les bras libres de chaque côté du banc.",
+      movementCue: "Écartez les bras en une seconde dans une amplitude confortable puis redescendez en trois secondes sans relever le torse.",
+      notice: "La vidéo utilise un appui poitrine sur banc, interprétation de la fiche ; l'angle exact de 45 degrés et les mains sont peu lisibles, et le tempo n'est pas clairement démontré. Suivez la consigne sans élan.",
+      spoken: "Élévations latérales incliné quarante-cinq degrés. Réglez le banc à environ quarante-cinq degrés, torse soutenu et pieds stables. Tenez un haltère léger dans chaque main, bras libres de chaque côté. Écartez les bras en une seconde, coudes souples et amplitude confortable, sans relever le buste. Redescendez en trois secondes sans pause ni élan. La vidéo montre un appui poitrine, interprétation de la fiche ; l'angle exact et les mains sont peu lisibles et le rythme ne démontre pas clairement le tempo 3010. Arrêtez avant toute douleur. Trois séries de huit à dix répétitions, soixante secondes de repos.",
+    },
+  },
   // Épaule #16 : même mouvement debout que #02. Yanis demande de réutiliser sa vidéo.
   "elevations-laterales": {
     src: "/videos/elevations-laterales-halteres.mp4",

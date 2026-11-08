@@ -1,5 +1,7 @@
 # Épaules : intégration #17/#19 et reprise #11/#15/#18
 
+**Mise à jour :** les vidéos déposées pour #11 et #15 sont intégrées avec réserves ; Yanis a précisé la variante #18 au poteau. Voir [contrôle et nouvelle référence #18](./58-EPAULES-11-15-ET-18-POTEAU.md). Les sections ci-dessous décrivent l'état précédent.
+
 ## Vidéos déposées
 
 Dépôt `c5a0b91` : accord d'intégration acquis. Les deux MP4 sont conservés tels quels et associés à leur fiche avec des consignes `coached`. Les GIF, prescriptions et métadonnées restent inchangés, y compris l'équipement `bodyweight` historique de #17 malgré la barre visible. Les posters proviennent de la première image des vidéos.

@@ -4,15 +4,15 @@ Objectif demandé par Yanis : **tous les mouvements et étapes de tous les modul
 
 ## État constaté sur la branche
 
-- Musculation : 203 fiches Elite + Émilie, 95 avec vidéo, **108 sans**. Triceps #11 est compté parmi les 108 mais reste en stand-by. Sur les fiches couvertes, 84 `coached`, 11 `validated` ; une réserve n'implique pas qu'il faut refaire la vidéo, et les vidéos acceptées en l'état ne sont pas à régénérer.
-- Catalogue Jarvis seul : 6 fiches, 2 avec vidéo, **4 sans vidéo associée à la fiche** : squat au poids du corps, fentes arrière au poids du corps, mobilité des épaules, respiration diaphragmatique. Au total, 209 fiches, 97 couvertes et **112 non couvertes**.
+- Musculation : 203 fiches Elite + Émilie, 97 avec vidéo, **106 sans**. Triceps #11 est compté parmi les 106 mais reste en stand-by. Sur les fiches couvertes, 86 `coached`, 11 `validated` ; une réserve n'implique pas qu'il faut refaire la vidéo, et les vidéos acceptées en l'état ne sont pas à régénérer.
+- Catalogue Jarvis seul : 6 fiches, 2 avec vidéo, **4 sans vidéo associée à la fiche** : squat au poids du corps, fentes arrière au poids du corps, mobilité des épaules, respiration diaphragmatique. Au total, 209 fiches, 99 couvertes et **110 non couvertes**.
 - Échauffement : 5 étapes avec vidéo enregistrée et un montage. Les approches utilisent la vidéo du premier exercice quand elle existe. La vidéo de mobilité des épaules de l'échauffement pourrait être pertinente pour la fiche Jarvis portant le même nom : comparaison technique et intégration nécessaires avant de la compter comme couverte. Ne pas présumer qu'il faut une génération supplémentaire si la même vidéo exacte existe déjà.
 - Étirements : **29 fiches distinctes**, toutes sans vidéo 3D associée ; la bibliothèque contient déjà des GIF mais ne branche pas ces fiches sur `stepVideoFor`. Les noms proches restent distincts dans cet inventaire, sans affirmer qu'il faut deux fichiers pour une posture identique.
 - Tabata/HIIT au sol : 6 modes, 48 occurrences et **38 libellés distincts** ; aucun n'a de vidéo 3D résolue pour l'étape générée avec son suffixe `round`. Les « pompes » ont déjà une vidéo dans le catalogue : il faut vérifier et raccorder la source appropriée plutôt que la recréer d'office. Les noms variant ou les exercices partiellement semblables ne sont pas automatiquement fusionnés.
 - Piscine et aqua (6 protocoles source, 2 METCON et 2 facultatifs) : **960 occurrences** dans les trois niveaux, **217 libellés exacts** ; lorsqu'on retire seulement les numéros de tour, palier et effort variable, **56 libellés** demeurent, tous sans vidéo d'étape associée. Ces 56 couvrent également des phases de repos et de départ et contiennent de nombreux synonymes ou étapes voisines : ce ne sont pas 56 vidéos distinctes obligatoires. Les listes source Elite et Émilie sont identiques actuellement ; les niveaux et tours ne doivent pas être comptés comme de nouveaux mouvements à chaque répétition.
 - Elliptique : **5 guides** sans vidéo d'étape enregistrée : mise en route, fractionné, récupération active, retour au calme et transition. Une même vidéo ne convient que si elle montre réellement la phase concernée.
 
-Les cinq catégories précédentes représentent **240 entrées/libellés à couvrir avant rapprochement** (112 + 29 + 38 + 56 + 5), **pas 240 vidéos à générer** : une même action figure dans plusieurs modules et une vidéo déjà présente peut parfois servir. Ce chiffre n'est pas exhaustif pour tous les écrans ; il ne comprend notamment pas les sélecteurs et routines ci-dessous. Il ne faut pas l'additionner aux 108. Le nombre exact de nouveaux fichiers à générer pour couvrir toute l'application n'est pas encore établi : il dépend d'un rapprochement technique mouvement par mouvement et des vidéos existantes, pas d'une estimation par familles.
+Les cinq catégories précédentes représentent **238 entrées/libellés à couvrir avant rapprochement** (110 + 29 + 38 + 56 + 5), **pas 238 vidéos à générer** : une même action figure dans plusieurs modules et une vidéo déjà présente peut parfois servir. Ce chiffre n'est pas exhaustif pour tous les écrans ; il ne comprend notamment pas les sélecteurs et routines ci-dessous. Il ne faut pas l'additionner aux 106. Le nombre exact de nouveaux fichiers à générer pour couvrir toute l'application n'est pas encore établi : il dépend d'un rapprochement technique mouvement par mouvement et des vidéos existantes, pas d'une estimation par familles.
 
 ## À intégrer aussi dans l'inventaire complet
 
@@ -24,9 +24,9 @@ Les cinq catégories précédentes représentent **240 entrées/libellés à cou
 
 Actuellement le registre `step-videos.js` ne référence que l'échauffement, et sa résolution est par nom exact normalisé. Les libellés dynamiques (rounds, distances, styles) et certains écrans de bibliothèque d'étirements devront être raccordés explicitement : **présence d'un MP4 dans le dépôt ≠ affichage partout où il est nécessaire**.
 
-## Épaules #11 : meilleure vidéo approchante disponible
+## Épaules #11 : vidéo déposée et accompagnée
 
-La nouvelle vidéo épaules #13 (`public/videos/developpe-halteres-assis.mp4`) montre un développé assis avec deux haltères et ressemble donc au mouvement général ; contrairement à la vidéo #01, les haltères restent dans le cadre. Mais les mains sont petites à l’écran et elle **ne montre pas clairement un départ neutre paumes face à face ni la rotation vers la pronation**. Elle ne remplit pas exactement la fiche #11. Elle n'est donc pas une vidéo exacte de cette variante. Yanis souhaite une vidéo distincte pour les variantes différentes : conserver #11 en attente, avec son GIF, sans la remplacer par #13. Ne pas utiliser de crédits vidéo tant qu'une référence fiable n'est pas prête.
+La vidéo propre à #11 a été déposée et intégrée en `coached`. Elle montre le développé assis, mais la rotation et la prise neutre en bas ne sont pas clairement visibles : la notice et la voix rappellent de suivre la consigne, non la prise de l'image. Le GIF reste disponible en repli. Détails dans [le contrôle du lot](./58-EPAULES-11-15-ET-18-POTEAU.md).
 
 ## Détail des libellés recensés
 

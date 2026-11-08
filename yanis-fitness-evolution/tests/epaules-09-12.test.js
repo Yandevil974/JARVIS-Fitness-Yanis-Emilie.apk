@@ -33,5 +33,4 @@ test("épaules #09 et #12 : sources reçues, copies, GIF, notices et voix", () =
     }
     assert.equal(sha(`public${v.poster}`), sha(`release${v.poster}`));
   }
-  assert.equal(videoFor("developpe-halteres-assis-neutre-pronation"), null);
 });
