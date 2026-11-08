@@ -58,9 +58,9 @@ test("le repos montre la même vidéo que la fiche et ouvre sa consigne", async 
     /\/videos\/tractions-supination-chin-up\.mp4$/,
   );
   await expect(
-    page.getByText(/Le mouvement paraît asymétrique/i),
+    page.getByRole("dialog").getByText(/Le mouvement paraît asymétrique/i),
   ).toBeVisible();
   await expect(
-    page.getByRole("button", { name: "Écouter le descriptif" }),
+    page.getByRole("dialog").getByRole("button", { name: "Écouter le descriptif" }),
   ).toBeVisible();
 });

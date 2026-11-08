@@ -273,13 +273,13 @@
 .training-command .warning-box.danger { color: #fff0ed; background: #431a20; border-color: #ff8888; }
 .training-command .warning-box.danger p { color: #ffe1df; }
 .training-command-reduced .session-command-orb i,
-.training-command-reduced .session-command-orb b { animation: none; }
+.training-command-reduced .session-command-orb b { animation: none !important; }
 .training-command-reduced .ring > svg circle,
 .training-command-reduced .session-progress i,
 .training-command-reduced .movement-live-progress-track > span { transition: none; }
 @media (prefers-reduced-motion: reduce) {
   .training-command .session-command-orb i,
-  .training-command .session-command-orb b { animation: none; }
+  .training-command .session-command-orb b { animation: none !important; }
   .training-command .ring > svg circle,
   .training-command .session-progress i,
   .training-command .movement-live-progress-track > span { transition: none; }
