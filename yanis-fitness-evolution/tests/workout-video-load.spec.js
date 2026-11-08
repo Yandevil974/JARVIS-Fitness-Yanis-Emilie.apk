@@ -63,7 +63,7 @@ test("exercice suspendu : aucune validation n’est proposée et les séries res
     const workout = state.profiles.elite.workout;
     workout.currentIndex = 0;
     workout.safetyStop = true;
-    workout.exercises[0].sets = [{ id: "previous", weight: 40, reps: 8, rpe: 7, completed: true }];
+    workout.exercises[0].sets = [{ id: "previous", weight: 40, reps: 8, rpe: 7, unit: workout.exercises[0].unit, completed: true }];
     state.updatedAt = Date.now() + 5000;
     localStorage.setItem(window.__YFE_KEY__, JSON.stringify(state));
   });
