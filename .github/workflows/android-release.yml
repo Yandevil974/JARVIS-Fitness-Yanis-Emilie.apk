@@ -22,6 +22,7 @@ on:
           - dos-01-04
           - dos-01-25
           - epaules-jarvis
+          - entrainement-large
 
 permissions:
   contents: write
@@ -60,6 +61,16 @@ jobs:
 
       - name: Run application tests
         run: npm test
+
+      - name: Browser tests for training layout and video controls
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'entrainement-large') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.15.0-entrainement-large-')) }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx playwright install --with-deps chromium
+          npm run dev > /tmp/yfe-vite.log 2>&1 &
+          trap 'kill $! || true' EXIT
+          npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js
 
       - name: Install esbuild (runtime portable)
         run: npm install --no-save esbuild
@@ -313,8 +324,55 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           fail_on_unmatched_files: true
 
+      - name: Verify 1.15.0 layout, media and signature
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'entrainement-large') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.15.0-entrainement-large-')) }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-115.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-115.txt
+          node scripts/verify-dos-apk.mjs "$APK"
+          node scripts/verify-current-apk.mjs "$APK"
+          node scripts/verify-layout-apk.mjs "$APK"
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-115.md <<EOF
+          ## Yanis Fitness Evolution 1.15.0 — séance plein cadre
+
+          APK Android signé du commit $GITHUB_SHA, version **1.15.0 / 198**, identifiant **app.yanis.fitness.evolution**.
+
+          JARVIS et Adapter sont réunis dans un seul bouton en haut à droite de la séance. Le cadre de l'exercice occupe toute la largeur et les autres cadres sont réorganisés en dessous. La charge modifiable, la vidéo et la vignette « Ensuite » restent disponibles, ainsi que toutes les vidéos déjà présentes. Les GIF d'origine restent conservés. Les épaules #20 et #22 ainsi que d'autres exercices et modules n'ont pas encore de vidéo ; leurs GIF restent disponibles. Les vidéos accompagnées de consignes correctives restent en statut coached.
+
+          ### Vérifications automatiques
+          - Tests unitaires et tests navigateur de la séance, de la charge et de la vidéo suivante exécutés par le workflow.
+          - JS et CSS actifs contrôlés dans l'APK, avec les éléments de la nouvelle disposition.
+          - MP4, posters de public/videos et GIF de public/media vérifiés individuellement par SHA-256 dans l'APK ; les vidéos dos et les épaules #18, #21 et #23 sont également contrôlées.
+          - Signature vérifiée : certificat SHA-256 $EXPECTED_CERT.
+          - SHA-256 de l'APK : $APK_SHA.
+
+          ### Installation
+          Sauvegardez vos données avant installation. La version 1.15.0/198 est supérieure à la 1.14.0/197 et porte la même signature ; Android et l'application installée déterminent si la mise à jour est acceptée. Si Android refuse, **ne désinstallez pas** l'application existante : vous pourriez perdre ses données.
+          EOF
+
+      - name: Publish 1.15.0 training delivery
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'entrainement-large') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.15.0-entrainement-large-')) }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.15.0 — séance plein cadre
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-115.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
-        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-')))) }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
