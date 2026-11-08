@@ -21,6 +21,7 @@ on:
           - legacy
           - dos-01-04
           - dos-01-25
+          - epaules-jarvis
 
 permissions:
   contents: write
@@ -266,8 +267,54 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           fail_on_unmatched_files: true
 
+      - name: Verify current videos, GIFs and signature
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'epaules-jarvis') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-')) }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-current.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-current.txt
+          node scripts/verify-dos-apk.mjs "$APK"
+          node scripts/verify-current-apk.mjs "$APK"
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-current.md <<EOF
+          ## Yanis Fitness Evolution 1.14.0 — épaules et entraînement JARVIS
+
+          APK Android signé issu du commit $GITHUB_SHA, version **1.14.0 / 197**, identifiant **app.yanis.fitness.evolution**.
+
+          L'application comprend la nouvelle présentation de l'entraînement, la vidéo centrale, la vignette vidéo « Ensuite », la progression et la charge modifiable sous la vidéo, ainsi que les vidéos disponibles sur la branche. Les vidéos d'épaules #18 et #21 partagent le même mouvement et la #23 réutilise la vidéo du développé militaire debout ; leurs consignes spécifiques restent distinctes. Les vidéos #20 et #22 des épaules ne sont pas encore prêtes : leurs GIF d'origine restent disponibles. D'autres exercices et modules attendent encore leurs vidéos. Les vidéos accompagnées de consignes correctives restent en statut coached ; suivez les consignes et ne reproduisez pas les défauts visuels.
+
+          ### Contrôles automatiques
+          - Tests de l'application exécutés par le workflow.
+          - MP4 et posters de public/videos et GIF de public/media vérifiés individuellement par SHA-256 dans l'APK ; fiches et vidéos des épaules #18, #21 et #23, et références aux GIF #20 et #22 contrôlées dans le bundle principal.
+          - Les vidéos, posters et GIF dos sont également contrôlés.
+          - Signature vérifiée : certificat SHA-256 $EXPECTED_CERT.
+          - SHA-256 de l'APK : $APK_SHA.
+
+          ### Installation
+          Sauvegardez vos données avant l'installation. Le numéro de version est supérieur à la 1.13.0/196 et la signature correspond à celle de sa livraison, mais l'acceptation dépend d'Android et de l'application déjà installée. Si Android refuse, **ne désinstallez pas** l'application existante : vous pourriez perdre ses données.
+          EOF
+
+      - name: Publish dedicated shoulders and Jarvis delivery
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.delivery == 'epaules-jarvis') || (github.event_name == 'push' && startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-')) }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.14.0 — épaules et entraînement JARVIS
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-current.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
-        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-')))) }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
