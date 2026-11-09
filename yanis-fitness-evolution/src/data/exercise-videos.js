@@ -22,6 +22,46 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Fessiers #07, #09 et #10 : vidéos remises, avec réserves propres.
+  "kickback-a-l-elastique": {
+    src: "/videos/kickback-a-l-elastique.mp4",
+    poster: "/videos/posters/kickback-a-l-elastique.jpg",
+    label: "Vidéo IA · Kickback élastique à quatre pattes",
+    status: "coached",
+    coaching: {
+      title: "Poussez le talon vers l'arrière, bassin stable.",
+      handCue: "Mains au sol, genou d'appui stable ; vérifiez l'élastique autour des deux pieds.",
+      movementCue: "Genou fléchi, poussez le talon vers l'arrière sans cambrer puis revenez lentement.",
+      notice: "Le cadrage large rend les attaches de l'élastique petites et le tempo exact n'est pas garanti. Vérifiez le matériel et suivez les consignes de la fiche.",
+      spoken: "Kickback à l'élastique. À quatre pattes, vérifiez que la boucle est bien fixée autour des deux pieds et qu'elle ne risque pas de glisser. Mains au sol, genou d'appui stable, dos neutre et bassin immobile. Genou de la jambe active fléchi, poussez le talon vers l'arrière sans cambrer, contractez une seconde puis revenez lentement en deux secondes. Trois séries de quinze par côté, quarante-cinq secondes de repos, tempo deux zéro un un. Arrêtez si l'élastique glisse ou si vous ressentez une douleur.",
+    },
+  },
+  "fentes-avant-alternees": {
+    src: "/videos/fentes-avant-alternees.mp4",
+    poster: "/videos/posters/fentes-avant-alternees.jpg",
+    label: "Vidéo IA · Fente avant, consignes d'alternance prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Avancez puis revenez au point de départ.",
+      handCue: "Bras libres ou mains aux hanches ; utilisez un support stable si nécessaire.",
+      movementCue: "Avancez une jambe, descendez sous contrôle puis repoussez le pied avant pour revenir et alterner.",
+      notice: "La vidéo montre le pas vers l'avant mais progresse aussi vers l'avant ; le retour au point de départ et l'alternance ne sont pas clairement démontrés. Suivez la consigne de la fiche et son tempo.",
+      spoken: "Fentes avant alternées. Avancez une jambe, posez le pied à plat et descendez en trois secondes, buste vertical, genou avant aligné avec le pied, genou arrière vers le sol sans le heurter. Repoussez le pied avant pour revenir à votre point de départ en une seconde, puis changez de jambe. La vidéo progresse vers l'avant : revenez au point de départ à chaque répétition. Trois séries de dix par jambe, soixante-quinze secondes de repos, tempo trois zéro un zéro. Tenez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
+  "glute-bridge-en-1-5-reps": {
+    src: "/videos/glute-bridge-en-1-5-reps.mp4",
+    poster: "/videos/posters/glute-bridge-en-1-5-reps.jpg",
+    label: "Vidéo IA · Pont fessier, demi-répétition à suivre en consigne",
+    status: "coached",
+    coaching: {
+      title: "Montée complète, demi-descente et remontée.",
+      handCue: "Tête, épaules et bras au sol ; gardez les deux pieds à plat.",
+      movementCue: "Montez les hanches, redescendez à mi-course puis remontez avant la descente complète.",
+      notice: "La vidéo montre le pont au sol mais ne démontre pas clairement la demi-répétition ; la couleur disparaît et la tête se soulève. Suivez la consigne 1,5, deux pieds et tête au sol.",
+      spoken: "Glute bridge en une répétition et demie. Tête et épaules au sol, pieds à plat, montez les hanches sans cambrer. Redescendez à mi-course puis remontez : cette demi-répétition fait partie du mouvement. Redescendez ensuite complètement avant de recommencer. Gardez les deux pieds au sol, sans lever une jambe. La vidéo ne montre pas clairement la demi-répétition : suivez la consigne. Trois séries de dix à douze, soixante-quinze secondes de repos, tempo deux un un deux. Arrêtez en cas de douleur.",
+    },
+  },
   // Fessiers #05 et #06, et fiche Jarvis du même mouvement que #05.
   "fentes-arriere-alternees": {
     src: "/videos/fentes-arriere-alternees.mp4",

@@ -287,7 +287,11 @@ export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
     tempo,
     rest: Number(rest) || 60,
     note: textOnly(note),
-    tip: textOnly(guide?.tip),
+    // La fiche précise une demi-répétition de pont ; l'ancien conseil décrit
+    // par erreur un lever de jambe et contredit sa prescription.
+    tip: id === "glute-bridge-en-1-5-reps"
+      ? "Monte les hanches, redescends à mi-course puis remonte ; garde les deux pieds au sol."
+      : textOnly(guide?.tip),
     gif: GIF_OVERRIDES[n] || guide?.img || null,
     level: /test|inertie|snatch|drop|myo|1,5/.test(n)
       ? "Avancé"
