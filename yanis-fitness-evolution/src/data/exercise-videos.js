@@ -22,6 +22,46 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Fessiers #05 et #06, et fiche Jarvis du même mouvement que #05.
+  "fentes-arriere-alternees": {
+    src: "/videos/fentes-arriere-alternees.mp4",
+    poster: "/videos/posters/fentes-arriere-alternees.jpg",
+    label: "Vidéo IA · Fente arrière, consignes d'alternance prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Grand pas en arrière et buste légèrement incliné.",
+      handCue: "Bras libres ou mains aux hanches ; utilisez un support si nécessaire pour garder l'équilibre.",
+      movementCue: "Reculez une jambe, descendez sans heurter le sol puis poussez sur le pied avant et alternez.",
+      notice: "La démonstration montre une fente arrière, mais l'alternance des jambes et le tempo exact ne sont pas clairement démontrés. Suivez la fiche et alternez à chaque répétition.",
+      spoken: "Fentes arrière alternées. Debout, reculez une jambe d'un grand pas. Inclinez légèrement le buste en avant en gardant le dos neutre. Descendez en trois secondes, genou arrière vers le sol sans le heurter, genou avant aligné avec le pied. Poussez sur le pied avant pour remonter en une seconde, ramenez le pied arrière et changez de jambe. La vidéo ne montre pas clairement l'alternance ; alternez bien. Trois séries de dix par jambe, soixante-quinze secondes de repos, tempo trois zéro un zéro. Utilisez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
+  "fentes-arriere-au-poids-du-corps": {
+    src: "/videos/fentes-arriere-alternees.mp4",
+    poster: "/videos/posters/fentes-arriere-alternees.jpg",
+    label: "Vidéo IA · Fente arrière au poids du corps",
+    status: "coached",
+    coaching: {
+      title: "Fente arrière sans charge, avec appui si nécessaire.",
+      handCue: "Si l'équilibre est difficile, tenez un support stable.",
+      movementCue: "Reculez une jambe, descendez de façon contrôlée puis repoussez le sol pour revenir debout.",
+      notice: "Vidéo de fente arrière réutilisée : l'alternance et le tempo exact ne sont pas clairement démontrés. Tenez un support stable si nécessaire et suivez cette fiche.",
+      spoken: "Fentes arrière au poids du corps. Tenez un support stable si nécessaire. Reculez une jambe, gardez le pied avant à plat et le genou aligné, puis descendez en trois secondes sans heurter le sol. Repoussez le pied avant pour revenir debout en une seconde et changez de côté. Trois séries de huit à douze répétitions, quatre-vingt-dix secondes de repos, tempo trois zéro un zéro. Choisissez une amplitude confortable et arrêtez en cas de douleur.",
+    },
+  },
+  "glute-bridge-pieds-sur-banc": {
+    src: "/videos/glute-bridge-pieds-sur-banc.mp4",
+    poster: "/videos/posters/glute-bridge-pieds-sur-banc.jpg",
+    label: "Vidéo IA · Pont fessier, pieds sur banc",
+    status: "coached",
+    coaching: {
+      title: "Deux pieds stables sur le banc, deux secondes en haut.",
+      handCue: "Bras au sol, tête et épaules posées, pieds ancrés sur le banc stable.",
+      movementCue: "Poussez par les talons, montez sans cambrer, maintenez deux secondes puis redescendez lentement.",
+      notice: "Les pieds se superposent en partie et bougent sur le banc ; la pause de deux secondes n'est pas clairement démontrée. Gardez les deux pieds stables et suivez le tempo de la fiche.",
+      spoken: "Glute bridge pieds sur banc. Allongez-vous sur le dos, tête, épaules et bras au sol. Posez les deux pieds de façon stable sur un banc immobile. Poussez par les talons, montez les hanches sans cambrer, contractez les fessiers deux secondes puis redescendez en deux secondes. Gardez les deux pieds ancrés ; la pause et la stabilité des pieds ne sont pas clairement montrées dans la vidéo. Trois séries de quinze répétitions, soixante secondes de repos, tempo deux zéro un deux. Arrêtez si vous ressentez une douleur.",
+    },
+  },
   // Fessiers #03 et #11 : même geste, prescriptions distinctes.
   "kickback-a-la-poulie": {
     src: "/videos/kickback-a-la-poulie.mp4",
