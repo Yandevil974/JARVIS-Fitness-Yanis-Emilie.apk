@@ -25,4 +25,4 @@ Intention pour une future génération vidéo : démarrer à hauteur confortable
 
 Intention vidéo : depuis la barre immobile sur les sécurités, pousser vers le haut sans élan, puis descendre en trois secondes jusqu'au contact contrôlé et immobiliser deux secondes avant la répétition suivante, sans forcer l'amplitude ni approcher la barre du visage. Respecter le réglage réel du rack et une charge adaptée ; ne pas reproduire une structure IA incertaine.
 
-Aucun APK n'est construit dans ce lot. L'application installée ne contient pas les modifications récentes.
+La version 1.16.0 contient les vidéos d'épaules intégrées avant cette livraison. Les références #20 et #22 restent à reprendre ; les GIF sont conservés. Les réutilisations préparées après la 1.16.0 sont documentées dans le lot 60 et ne sont pas encore dans cet APK.

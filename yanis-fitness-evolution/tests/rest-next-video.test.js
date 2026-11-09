@@ -57,7 +57,7 @@ test("la traction supination de la photo et l'épaule partagée utilisent leur M
 });
 
 test("sans vidéo raccordée le GIF d'origine reste le repli, sans le modifier", () => {
-  const ex = exerciseById("pont-fessier-au-sol-activation");
+  const ex = exerciseById("hip-thrust-barre");
   assert.equal(videoFor(ex), null);
   const original = ex.gif;
   assert.ok(original);
@@ -136,7 +136,7 @@ test("la vignette affiche le MP4 en boucle avec indication de consigne", () => {
 });
 
 test("la vignette sans vidéo continue à afficher le GIF", () => {
-  const next = preview("pont-fessier-au-sol-activation");
+  const next = preview("hip-thrust-barre");
   const html = htmlFor(next);
   assert.match(html, /<img/);
   assert.ok(html.includes(next.img));

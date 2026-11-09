@@ -22,6 +22,33 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Vidéos d'échauffement réutilisées sans nouvelle génération : mêmes gestes.
+  "pont-fessier-au-sol-activation": {
+    src: "/videos/warmup-pont-fessier.mp4",
+    poster: "/videos/posters/warmup-pont-fessier.jpg",
+    label: "Vidéo IA · Pont fessier, consignes d'activation prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Pont au sol : pieds ancrés et deux secondes de contraction en haut.",
+      handCue: "Bras détendus au sol de chaque côté, pieds à plat à largeur de hanches.",
+      movementCue: "Soulevez le bassin sans cambrer, maintenez deux secondes en haut puis redescendez lentement.",
+      notice: "Vidéo d'échauffement réutilisée : la couleur du muscle disparaît et le rythme, dont la pause de deux secondes, n'est pas clairement démontré. Suivez les consignes de cette fiche et gardez tête et épaules au sol.",
+      spoken: "Pont fessier au sol pour l'activation. Allongez-vous sur le dos, pieds à plat et genoux fléchis. Gardez la tête et les épaules au sol, les côtes basses et le bassin neutre. Poussez par les pieds pour monter les hanches sans cambrer ; contractez les fessiers deux secondes en haut, puis descendez en deux secondes. La pause n'est pas clairement montrée dans la vidéo : suivez la consigne. Deux séries de quinze répétitions, quarante-cinq secondes de repos, tempo 2012. Arrêtez si le mouvement provoque une douleur.",
+    },
+  },
+  "mobilite-des-epaules": {
+    src: "/videos/warmup-mobilite-epaules.mp4",
+    poster: "/videos/posters/warmup-mobilite-epaules.jpg",
+    label: "Vidéo IA · Cercles d'épaules, mouvements lents",
+    status: "coached",
+    coaching: {
+      title: "Faites de petits cercles lents et indolores.",
+      handCue: "Bras ouverts sur les côtés, coudes souples et mains détendues.",
+      movementCue: "Dessinez de petits cercles sans hausser les épaules, en restant dans une amplitude confortable.",
+      notice: "Vidéo courte d'échauffement réutilisée : elle ne mesure pas les trente secondes de cette fiche. Gardez une cadence lente et une amplitude sans douleur.",
+      spoken: "Mobilité des épaules. Debout, pieds stables, ouvrez les bras sur les côtés et gardez les coudes souples. Dessinez de petits cercles lents, sans hausser les épaules ni forcer. Restez dans une amplitude confortable et indolore. La vidéo est une courte démonstration, pas un chronomètre. Cette fiche prévoit deux séries de trente secondes et quinze secondes de repos.",
+    },
+  },
   // ---- LOT PILOTE (3 exercices) ----
   "curl-halteres": {
     // Pilote 1 — haltères.
