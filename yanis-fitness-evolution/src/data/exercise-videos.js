@@ -22,6 +22,33 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Fessiers #03 et #11 : même geste, prescriptions distinctes.
+  "kickback-a-la-poulie": {
+    src: "/videos/kickback-a-la-poulie.mp4",
+    poster: "/videos/posters/kickback-a-la-poulie.jpg",
+    label: "Vidéo IA · Kickback poulie, consignes prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Extension de hanche contrôlée, bassin stable.",
+      handCue: "Tenez le montant, pied d'appui stable et sangle bien fixée à l'autre cheville.",
+      movementCue: "Ramenez la jambe sans élan, puis poussez vers l'arrière sans cambrer, genou légèrement fléchi.",
+      notice: "Le câble est masqué par moments et le genou se fléchit au retour ; le tempo exact n'est pas démontré. Gardez le câble libre de la jambe d'appui et suivez les consignes de la fiche.",
+      spoken: "Kickback à la poulie. Fixez la sangle à la cheville et vérifiez que le câble ne touche pas la jambe d'appui. Tenez le montant, pied d'appui stable, bassin immobile et dos neutre. Gardez le genou légèrement fléchi sans accentuer sa flexion. Poussez la jambe vers l'arrière sans cambrer ni vous balancer ; marquez une seconde, puis revenez lentement en deux secondes sans poser le pied. Trois séries de quinze par côté, quarante-cinq secondes de repos, tempo deux zéro un un. Arrêtez si vous ressentez une douleur.",
+    },
+  },
+  "kickback-a-la-poulie-drop-set-final": {
+    src: "/videos/kickback-a-la-poulie.mp4",
+    poster: "/videos/posters/kickback-a-la-poulie.jpg",
+    label: "Vidéo IA · Kickback poulie, drop set à appliquer séparément",
+    status: "coached",
+    coaching: {
+      title: "Même kickback : réduction de charge sur la dernière série.",
+      handCue: "Tenez le montant, pied d'appui stable et sangle bien fixée à l'autre cheville.",
+      movementCue: "Poussez la jambe vers l'arrière sans cambrer ; revenez lentement, bassin stable.",
+      notice: "La vidéo montre le geste mais pas la réduction de charge. Le câble est masqué par moments et le genou se fléchit au retour ; le tempo exact n'est pas démontré. Gardez le câble libre de la jambe d'appui et suivez la fiche.",
+      spoken: "Kickback à la poulie avec drop set final. Vérifiez que la sangle est bien fixée et que le câble ne touche pas la jambe d'appui. Pied d'appui stable, bassin immobile, dos neutre, genou légèrement fléchi. Poussez vers l'arrière sans cambrer, marquez une seconde, puis revenez en deux secondes sans élan. Trois séries de douze à quinze par côté, quarante-cinq secondes de repos, tempo deux zéro un un. Sur la dernière série, réduisez la charge de trente pour cent et poursuivez jusqu'à ne plus pouvoir conserver une technique correcte. La vidéo ne montre pas cette réduction. Arrêtez en cas de douleur.",
+    },
+  },
   // Vidéos d'échauffement réutilisées sans nouvelle génération : mêmes gestes.
   "pont-fessier-au-sol-activation": {
     src: "/videos/warmup-pont-fessier.mp4",
