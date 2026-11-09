@@ -24,4 +24,4 @@ Vidéo reçue `1794239106607.mp4` : 97 images à 24 i/s, environ 4 s ; SHA-256 `
 
 ## #07 — Kickback à l'élastique
 
-Fiche `kickback-a-l-elastique` : 3 × 15/côté · 2011 · 45 s ; le texte décrit un exercice à quatre pattes, alors que le GIF actuellement associé montre un autre geste. Deux essais visuels ne rendaient pas clairement la fixation et le trajet de l'élastique ; ils sont écartés. Ne pas confondre avec le kickback poulie #03 déjà intégré et ne pas générer de vidéo sur ces essais. Préparer une référence fiable séparément.
+Fiche `kickback-a-l-elastique` : 3 × 15/côté · 2011 · 45 s ; le texte décrit un exercice à quatre pattes, alors que le GIF actuellement associé montre un autre geste. Les essais précédents ne rendaient pas clairement l'élastique et ont été écartés. Une nouvelle référence à bande entre les deux pieds est préparée dans [le lot suivant](./62-FESSIERS-07-09-10.md). Ne pas confondre avec le kickback poulie #03 déjà intégré.
