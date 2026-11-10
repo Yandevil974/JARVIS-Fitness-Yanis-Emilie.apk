@@ -321,14 +321,24 @@ export function saveState(data) {
   return writeChain;
 }
 
+// La clé de service n'est pas nécessaire pour sauvegarder les entraînements.
+// Ne jamais modifier l'état vivant ni les copies brutes de récupération.
+export function withoutServiceKeys(data) {
+  const copy = structuredClone(data);
+  for (const profile of Object.values(copy?.profiles || {})) {
+    if (profile?.preferences?.brain && typeof profile.preferences.brain === "object")
+      delete profile.preferences.brain.key;
+  }
+  return copy;
+}
 export function exportState(data) {
   return download(
     `JARVIS-sauvegarde-${today()}.json`,
-    JSON.stringify({ ...data, exportedAt: new Date().toISOString() }, null, 2),
+    JSON.stringify({ ...withoutServiceKeys(data), exportedAt: new Date().toISOString() }, null, 2),
   );
 }
 export function exportHTMLBackup(data) {
-  const encoded = JSON.stringify(data).replace(/</g, "\\u003c");
+  const encoded = JSON.stringify(withoutServiceKeys(data)).replace(/</g, "\\u003c");
   return download(
     `JARVIS-donnees-${today()}.html`,
     `<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Sauvegarde JARVIS</title><body style="background:#173452;color:#dbe5f5;font-family:system-ui;padding:40px;max-width:720px;margin:auto"><h1>JARVIS · Sauvegarde locale</h1><p>Deux profils indépendants. Export du ${new Date().toLocaleString("fr-FR")}.</p><p>Ce fichier est une sauvegarde de vos données, pas une nouvelle version de l’application. Importez-le dans JARVIS, rubrique Profil → Données.</p><button id="export" style="padding:15px;background:#87d0ff;border:0;border-radius:8px">Télécharger le JSON</button><script id="jarvis-backup" type="application/json">${encoded}</script><script>document.getElementById('export').onclick=function(){var t=document.getElementById('jarvis-backup').textContent;var u=URL.createObjectURL(new Blob([t],{type:'application/json'}));var a=document.createElement('a');a.href=u;a.download='JARVIS-sauvegarde.json';a.click();setTimeout(function(){URL.revokeObjectURL(u)},2000)};<\/script></body></html>`,

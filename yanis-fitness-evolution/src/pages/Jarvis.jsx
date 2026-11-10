@@ -364,7 +364,7 @@ export default function Jarvis() {
           <div className="chat-disclaimer">
             <Icon name="LockKeyhole" size={12} />{" "}
             {arena.enabled && arena.key
-              ? "Conversation déléguée à votre plate-forme ARENA//X (clé conservée sur l’appareil). Commandes de l’appli et secours hors ligne : cerveau local."
+              ? "Pour les échanges en ligne, votre message et jusqu’à 12 messages précédents sont envoyés au fournisseur choisi. Les commandes et les données du profil restent traitées localement ; une réponse IA ne prouve pas qu’une action a été exécutée."
               : "Analyse par règles locales, pas de modèle externe connecté. Aucune donnée envoyée par JARVIS."}
             <br />
             Fitness Brain local : mémoire proposée uniquement sur commande
@@ -448,8 +448,7 @@ export default function Jarvis() {
             )}
             {testState && testState.ok && (
               <small className="brain-test-ok">
-                ✓ Clé valide — « {testState.model} » répond. La conversation est
-                active : parlez à JARVIS.
+                ✓ Le fournisseur a répondu au test avec « {testState.model} ».
               </small>
             )}
             {testState && !testState.ok && (
@@ -463,7 +462,7 @@ export default function Jarvis() {
             </small>
             {brainReady(arena) && (
               <small className="brain-ready">
-                ● PRÊT — modèle : {brainModels(arena)[0]}
+                ● CONFIGURÉ — modèle : {brainModels(arena)[0]} (connexion non garantie)
               </small>
             )}
           </Panel>

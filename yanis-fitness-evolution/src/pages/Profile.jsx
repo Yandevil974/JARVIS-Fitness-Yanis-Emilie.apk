@@ -1150,7 +1150,7 @@ function Data() {
           <p>
             Le JSON contient les deux profils, les séances, les photos, les
             programmes et l’historique. Ce fichier contient des données
-            personnelles : conservez-le dans un endroit sûr.
+            personnelles : conservez-le dans un endroit sûr. Les clés de service IA ne sont pas incluses dans ces exports ; il faudra les reconfigurer après une restauration complète. Les copies originales de récupération peuvent en contenir.
           </p>
           <Button
             variant="primary"

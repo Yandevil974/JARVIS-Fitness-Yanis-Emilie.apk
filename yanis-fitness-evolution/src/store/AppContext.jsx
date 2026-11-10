@@ -1,3 +1,4 @@
+import { useConversationalModel } from "../engine/conversation-routing.js";
 import { isStopWorkoutCommand } from "../engine/stop-workout-command.js";
 import { preserveUncertainSessionDuration } from "./session-duration.js";
 import { bundledProfileBackup } from "../platform/native.js";
@@ -550,14 +551,7 @@ export function AppProvider({ children }) {
     const answer = brainAnswer(p, text);
     const turn = answer.turn || null;
     const arenaCfg = brainConfig(p);
-    const isCommand = !!(
-      answer.action ||
-      answer.automatic ||
-      (answer.choices && answer.choices.length) ||
-      (answer.exerciseIds && answer.exerciseIds.length) ||
-      answer.navigate
-    );
-    if (!isCommand && brainReady(arenaCfg)) {
+    if (brainReady(arenaCfg) && useConversationalModel(text, answer)) {
       const aId = uid();
       const userMsg = { id: uid(), role: "user", text, createdAt: Date.now() };
       updateProfile((q) => {

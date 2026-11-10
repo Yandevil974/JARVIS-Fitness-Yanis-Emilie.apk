@@ -364,7 +364,7 @@ export function specialResponses(p, q, entities, intentId, convo) {
       };
     if (/qui es tu|que sais tu faire|tu peux faire quoi|capacite/.test(q))
       return {
-        text: `Je suis JARVIS, votre coach embarqué. Tout tourne sur votre téléphone : aucune donnée ne part vers un service externe.
+        text: `Je suis JARVIS, votre coach. Les commandes sportives sont traitées localement ; si la conversation en ligne est activée, vos messages sont envoyés au fournisseur choisi.
 
 Concrètement, je sais :
 • construire ou remanier votre programme (fréquence, durée, phases) ;
@@ -1022,7 +1022,7 @@ export function interpretCommand(p, text) {
     };
   if (/aide|qui es|bonjour|salut|merci|capacite/.test(q))
     return {
-      text: "Je suis JARVIS, votre moteur de coaching adaptatif local. Je peux programmer une semaine ou un cycle, réduire une séance, remplacer un mouvement, enregistrer une performance et analyser vos données. Mes règles sont explicables ; je ne suis pas un modèle conversationnel externe connecté.",
+      text: "Je suis JARVIS, votre moteur de coaching adaptatif local. Je peux programmer une semaine ou un cycle, réduire une séance, remplacer un mouvement, enregistrer une performance et analyser vos données. Mes règles locales sont explicables. Une conversation en ligne peut être activée dans mes réglages.",
     };
   const missing = topIntent && topIntent.score >= 4 ? missingSlotQuestion(p, q, entities, topIntent) : null;
   return missing || fallbackAnswer(p, q);
