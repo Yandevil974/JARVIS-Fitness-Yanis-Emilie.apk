@@ -1058,7 +1058,7 @@ function Data() {
       update(() => imported);
       setImporting(null);
       notify(
-        "Import terminé. Une sauvegarde de l’état précédent a été téléchargée.",
+        "Import lancé. Vérifiez l’indicateur de sauvegarde et vos données.",
       );
     } catch (e) {
       notify(e.message, "error");
@@ -1232,8 +1232,7 @@ function Data() {
                     : `L’ancien export sera intégré au profil ${target === "elite" ? "Yanis" : "Émilie"}. L’autre profil restera intact.`}
               </p>
               <p>
-                Une copie de l’état actuel sera téléchargée avant le
-                remplacement.
+                Enregistrez d’abord une sauvegarde séparée de l’état actuel et vérifiez qu’elle est bien accessible. Une fenêtre de téléchargement ou de partage s’ouvrira aussi avant l’import ; le partage ne garantit pas que vous avez enregistré le fichier.
               </p>
               <Button variant="primary" icon="Check" onClick={applyImport}>
                 Sauvegarder puis importer

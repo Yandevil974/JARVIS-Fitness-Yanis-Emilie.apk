@@ -1,0 +1,32 @@
+import { test, expect } from '@playwright/test';
+import { initialState } from '../src/store/model.js';
+import { STORAGE_KEY } from '../src/app-identity.js';
+import { today } from '../src/engine/utils.js';
+
+test('import complet : avertissement, copie précédente, séance et profils après redémarrage', async ({ page }) => {
+ await page.goto('/');
+ await expect(page.locator('.save-status')).toContainText('Enregistré');
+ await page.locator('.sidebar').getByRole('button',{name:'Données & paramètres'}).click();
+ const data=initialState();
+ const s=structuredClone(data.profiles.elite.plan.sessions.find(s=>s.exercises.length));
+ s.id='test-restauration';s.date=today();s.status='completed';s.durationSec=173025;
+ s.exercises[0].sets=[{id:'serie-restauree',weight:70,reps:6,rpe:8,unit:'kg total',completed:true,createdAt:Date.now()}];
+ data.profiles.elite.sessions.push(s);
+ const input=page.locator('input[accept=".json,.html,application/json,text/html"]');
+ await input.setInputFiles({name:'test.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(data))});
+ await expect(page.getByText('La sauvegarde remplacera les deux profils JARVIS.')).toBeVisible();
+ const old=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),STORAGE_KEY);
+ expect(old.profiles.elite.sessions.some(s=>s.id==='test-restauration')).toBe(false);
+ const download=page.waitForEvent('download');
+ await page.getByRole('button',{name:'Sauvegarder puis importer'}).click();
+ const file=await download;
+ expect(file.suggestedFilename()).toMatch(/JARVIS-sauvegarde/);
+ await expect.poll(async()=>page.evaluate(k=>JSON.parse(localStorage.getItem(k)).profiles.elite.sessions.find(s=>s.id==='test-restauration')?.durationReview?.originalSeconds,STORAGE_KEY)).toBe(173025);
+ await expect(page.locator('.save-status')).toContainText('Enregistré');
+ await page.reload();
+ const p=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)).profiles,STORAGE_KEY);
+ const restored=p.elite.sessions.find(s=>s.id==='test-restauration');
+ expect(restored.durationSec).toBeNull();
+ expect(restored.exercises[0].sets[0].id).toBe('serie-restauree');
+ expect(p.emilie.id).toBe('emilie');
+});

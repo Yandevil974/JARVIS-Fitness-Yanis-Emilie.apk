@@ -65,14 +65,14 @@ jobs:
         run: npm test
 
       - name: Browser tests for training layout and video controls
-        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-'))) }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-'))) }}
         shell: bash
         run: |
           set -euo pipefail
           npx playwright install --with-deps chromium
           npm run dev > /tmp/yfe-vite.log 2>&1 &
           trap 'kill $! || true' EXIT
-          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/session-guidance.spec.js tests/check-backup.spec.js; then
+          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/session-guidance.spec.js tests/check-backup.spec.js tests/stop-workout-command.spec.js tests/conversation-online.spec.js tests/full-import.spec.js; then
             node -e '
               const report = require("./tests/e2e-results.json");
               function visit(suite) {
@@ -485,8 +485,60 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           fail_on_unmatched_files: true
 
+      - name: Verify Jarvis conversation, recovery, media and signature
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-118.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-118.txt
+          node scripts/verify-dos-apk.mjs "$APK"
+          node scripts/verify-current-apk.mjs "$APK"
+          node scripts/verify-layout-apk.mjs "$APK"
+          node scripts/verify-fusion-apk.mjs "$APK"
+          node scripts/verify-storage-apk.mjs "$APK"
+          node scripts/verify-jarvis-conversation-apk.mjs "$APK"
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-118.md <<EOF
+          ## Yanis Fitness Evolution 1.18.0 — conversation et récupération
+
+          APK Android signé du commit $GITHUB_SHA, version **1.18.0 / 201**, identifiant **app.yanis.fitness.evolution**.
+
+          Les échanges généraux peuvent passer au modèle en ligne configuré ; les commandes restent traitées localement. Les formulations reconnues pour terminer une séance sont élargies et les séries terminées conservées. Les nouveaux exports JSON et HTML excluent les clés de service. Le service IA réel et le téléphone ne sont pas testés.
+
+          Une durée de séance supérieure à 24 heures ne bloque plus la sauvegarde : la valeur originale est conservée à part et la durée réelle reste à vérifier, sans inventer un temps d'entraînement. Cette version distingue les erreurs de validation, les protections et les échecs d'écriture. Dans Profil → Données, elle peut contrôler localement un export JSON sans importer ni remplacer les données. Le contrôle ne prouve pas l'écriture effective sur le téléphone.
+
+          Elle comprend les vidéos fessiers reçues depuis la 1.16.0 et conserve les GIF. Les réserves et consignes des vidéos restent visibles.
+
+          ### Contrôles automatiques
+          Tests applicatifs et navigateur, contrôle du formulaire de séance et du diagnostic dans le bundle actif, vérification individuelle des MP4/posters et GIF, signature. SHA-256 de l'APK : $APK_SHA ; certificat : $EXPECTED_CERT.
+
+          ### Installation prudente
+          L’APK publié ne contient pas de sauvegarde personnelle. L’import d’un JSON complet remplace les deux profils ; enregistrez d’abord une sauvegarde actuelle séparée et vérifiez-la, avant de confirmer l’import sur le téléphone.
+
+          Confirmez avoir exporté les données en mémoire avant de fermer l'ancienne application. Une mise à jour ferme cette session : une donnée jamais enregistrée peut être perdue si la sauvegarde est absente ou inutilisable. Installez par-dessus sans désinstaller. Si Android refuse, ne désinstallez pas et n'effacez pas les données. L'installation sur le téléphone de Yanis n'est pas vérifiée ici.
+          EOF
+
+      - name: Publish Jarvis conversation delivery
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.18.0 — conversation et récupération
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-118.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
-        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-')))) }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
