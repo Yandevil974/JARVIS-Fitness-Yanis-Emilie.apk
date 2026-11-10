@@ -1,17 +1,20 @@
 import { test, expect } from '@playwright/test';
 import { initialState } from '../src/store/model.js';
 import { STORAGE_KEY } from '../src/app-identity.js';
+import { today } from '../src/engine/utils.js';
+import { validateState } from '../src/store/schema.js';
 
 async function openJarvis(page, withSet) {
   const state = initialState();
   const workout = structuredClone(state.profiles.elite.plan.sessions.find(s => s.exercises.length));
   workout.id = 'workout-stop-test';
-  workout.status = 'in-progress'; workout.startedAt = Date.now() - 50000;
+  workout.status = 'inProgress'; workout.date = today(); workout.startedAt = Date.now() - 50000;
   workout.currentIndex = 0;
   workout.exercises.forEach(e => { e.sets = []; });
   if (withSet) workout.exercises[0].sets = [{ id: 'set-stop-test', completed: true, weight: 10, reps: 8, unit: 'kg total', rpe: 7, createdAt: Date.now() - 10000 }];
   state.profiles.elite.workout = workout;
   state.profiles.elite.messages = [];
+  validateState(state);
   await page.addInitScript(({ key, data }) => localStorage.getItem(key) || localStorage.setItem(key, JSON.stringify(data)), { key: STORAGE_KEY, data: state });
   await page.goto('/');
   await expect(page.locator('.save-status')).toContainText('Enregistré');
