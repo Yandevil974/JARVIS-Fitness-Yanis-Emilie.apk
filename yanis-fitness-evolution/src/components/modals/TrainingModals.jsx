@@ -535,7 +535,7 @@ export function FinishModal() {
   return (
     <Modal
       title="Clôturer votre séance"
-      subtitle={`${count} séries réalisées et déjà sauvegardées.`}
+      subtitle={`${count} séries saisies. Vérifiez l’indicateur de sauvegarde.`}
       onClose={closeModal}
     >
       <form

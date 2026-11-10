@@ -1,3 +1,4 @@
+import { isStopWorkoutCommand } from "../engine/stop-workout-command.js";
 import { preserveUncertainSessionDuration } from "./session-duration.js";
 import { bundledProfileBackup } from "../platform/native.js";
 import { restoreProfile, personalDataPresent } from "./restoration.js";
@@ -505,13 +506,13 @@ export function AppProvider({ children }) {
       discard
         ? "Séance quittée sans résultat ajouté."
         : full
-          ? "Séance terminée. Vos performances guideront la suivante."
-          : "Séance partielle sauvegardée. Chaque série compte.",
+          ? "Séance clôturée. Vérifiez l’indicateur de sauvegarde."
+          : "Séance partielle clôturée. Vérifiez l’indicateur de sauvegarde.",
     );
     speak(
       discard
         ? "Séance quittée sans résultat ajouté."
-        : "Séance sauvegardée. Pensez au retour au calme.",
+        : "Séance clôturée. Vérifiez l’indicateur de sauvegarde.",
       p.preferences.voice,
     );
   };
@@ -521,6 +522,31 @@ export function AppProvider({ children }) {
   const sendCoach = (text) => {
     if (!String(text).trim()) return;
     text = String(text).slice(0, 1500);
+    if (isStopWorkoutCommand(text)) {
+      // Ne jamais supprimer une séance vide automatiquement. Le dialogue
+      // existant laisse le choix à l'utilisateur. Une séance avec des séries
+      // est clôturée par le même chemin que le bouton de la page entraînement.
+      if (p.workout) {
+        const completed = p.workout.exercises.some((e) => e.sets.some((set) => set.completed));
+        if (completed) finishWorkout(null, "");
+        else {
+          setModal({ type: "finish-workout" });
+          notify("Aucune série terminée : choisissez comment quitter, sans suppression automatique.", "info");
+        }
+      } else {
+        const answer = p.timer
+          ? "Aucune séance de musculation en cours. Un minuteur est actif : ouvrez-le pour le terminer ou l’arrêter sans perdre vos données."
+          : "Aucune séance de musculation en cours à clôturer.";
+        updateProfile((q) => {
+          q.messages = [...q.messages,
+            { id: uid(), role: "user", text, createdAt: Date.now() },
+            { id: uid(), role: "assistant", text: answer, createdAt: Date.now() },
+          ].slice(-100);
+        });
+        speak(answer, p.preferences.voice);
+      }
+      return;
+    }
     const answer = brainAnswer(p, text);
     const turn = answer.turn || null;
     const arenaCfg = brainConfig(p);
