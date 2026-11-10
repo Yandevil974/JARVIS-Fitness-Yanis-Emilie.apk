@@ -60,6 +60,7 @@ import {
 } from "../store/storage.js";
 import { exportPortable } from "../store/portable.js";
 import { saveProblem } from "../store/save-status.js";
+import { checkFullBackup } from "../store/check-backup.js";
 import { estimate1RM } from "../engine/fitness.js";
 import { recallPreview } from "../brain/conversation.js";
 import {
@@ -1004,8 +1005,9 @@ function Data() {
     setStorageWarning,
     bundledBackup,
   } = useApp();
-  const input = useRef();
-  const [importing, setImporting] = useState(null),
+  const input = useRef(), backupCheckInput = useRef();
+  const [backupCheck, setBackupCheck] = useState(null),
+    [importing, setImporting] = useState(null),
     [target, setTarget] = useState(p.id),
     [diagnostic, setDiagnostic] = useState(null),
     [busy, setBusy] = useState(false);
@@ -1121,6 +1123,24 @@ function Data() {
           </div>
         </div>
       )}
+      <Panel>
+        <h2>Contrôler une sauvegarde JSON sans l’importer</h2>
+        <p>Le fichier est lu uniquement sur cet appareil. Ce contrôle ne modifie ni ne remplace vos données.</p>
+        <input ref={backupCheckInput} hidden type="file" accept=".json,application/json" onChange={async (event) => {
+          const file = event.target.files?.[0];
+          if (!file) return;
+          try {
+            if (file.size > 40 * 1024 * 1024) throw new Error("Fichier trop volumineux (40 Mo maximum).");
+            setBackupCheck(checkFullBackup(await file.text()));
+          } catch (error) {
+            setBackupCheck({ ok: false, message: `Contrôle impossible : ${error?.message || "erreur de lecture."} Aucun import ni remplacement n’a été effectué.` });
+          } finally {
+            event.target.value = "";
+          }
+        }} />
+        <Button variant="secondary" onClick={() => backupCheckInput.current?.click()}>Choisir le JSON à contrôler</Button>
+        {backupCheck && <p role="status">{backupCheck.message}</p>}
+      </Panel>
       <div className="data-grid">
         <Panel>
           <span className="data-icon">
