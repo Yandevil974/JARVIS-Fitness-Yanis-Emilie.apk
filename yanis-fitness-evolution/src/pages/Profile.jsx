@@ -59,6 +59,7 @@ import {
   exportRecoveryData,
 } from "../store/storage.js";
 import { exportPortable } from "../store/portable.js";
+import { saveProblem } from "../store/save-status.js";
 import { estimate1RM } from "../engine/fitness.js";
 import { recallPreview } from "../brain/conversation.js";
 import {
@@ -1069,12 +1070,12 @@ function Data() {
           <strong>
             {saving.ok
               ? "Votre mémoire sportive est sauvegardée."
-              : "Stockage navigateur indisponible."}
+              : saveProblem(saving)?.title || "Enregistrement non confirmé."}
           </strong>
           <p>
             {saving.ok
               ? `Persistance locale : ${saving.mode}. Pensez à exporter régulièrement.`
-              : "Les changements restent en mémoire pour cette session. Exportez maintenant pour ne rien perdre."}
+              : saveProblem(saving)?.message}
           </p>
         </div>
         <Icon name="Database" size={27} />

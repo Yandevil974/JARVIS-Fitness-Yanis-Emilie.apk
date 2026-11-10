@@ -28,6 +28,7 @@ import { weeklyReport } from "./engine/fitness.js";
 import { forceRevalState } from "./engine/force.js";
 import { sendSystemNotification } from "./engine/notifications.js";
 import { APP_VERSION } from "./app-identity.js";
+import { saveProblem } from "./store/save-status.js";
 const THEME_TOGGLE = {
   light: { id: "dark", icon: "Moon", label: "Passer en sombre" },
   dark: { id: "light", icon: "Sun", label: "Passer en clair" },
@@ -212,7 +213,7 @@ export default function App() {
                   ? "Enregistrement en cours"
                   : saving.ok
                     ? `Sauvegarde ${saving.mode}`
-                    : "Stockage indisponible"
+                    : (saveProblem(saving)?.title || "Enregistrement non confirmé")
               }
             >
               <i />
@@ -300,10 +301,8 @@ export default function App() {
         {(!saving.ok || storageWarning) && (
           <div className="persistent-warning">
             <Icon name="TriangleAlert" size={17} />
-            <span>
-              {storageWarning ||
-                "Stockage indisponible dans cet aperçu : vos changements restent en mémoire. Exportez une sauvegarde avant de fermer."}
-            </span>
+            {storageWarning && <span>{storageWarning}</span>}
+            {!saving.ok && <span>{saveProblem(saving)?.message}</span>}
             <button onClick={() => navigate("profile", "data")}>
               Sauvegarder
             </button>

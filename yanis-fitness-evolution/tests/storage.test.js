@@ -123,3 +123,20 @@ test("When both keys hold data, the app key wins and legacy is untouched", async
   const { data } = await store.loadState();
   assert.equal(data.profiles.elite.user.name, "Natif");
 });
+
+// A real storage failure must not be confused with validation or protection.
+test("Blocked web storage reports memory mode; invalid state reports validation without overwriting", async () => {
+  const { store, map } = await setup();
+  globalThis.indexedDB = undefined;
+  globalThis.localStorage.setItem = () => { throw new Error("blocked"); };
+  const { data } = await store.loadState();
+  const unavailable = await store.saveState(data);
+  assert.deepEqual({ok: unavailable.ok, mode: unavailable.mode}, {ok:false, mode:"mémoire"});
+  assert.equal(map.has(STORAGE_KEY), false);
+  const invalid = structuredClone(data);
+  invalid.profiles.elite.user.age = -1;
+  const rejected = await store.saveState(invalid);
+  assert.equal(rejected.mode, "validation");
+  assert.match(rejected.error, /Enregistrement refusé/);
+  assert.equal(map.has(STORAGE_KEY), false);
+});
