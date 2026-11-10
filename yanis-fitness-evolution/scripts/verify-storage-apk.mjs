@@ -7,7 +7,7 @@ const html=unzip('assets/public/index.html');
 const script=html.match(/<script[^>]+src="\.\/([^\"]+\.js)"/);
 if(!script) throw new Error('Bundle actif absent');
 const js=unzip(`assets/public/${script[1]}`);
-for(const marker of ['Contrôler une sauvegarde JSON sans l’importer','Choisir le JSON à contrôler','Sauvegarde non validée','Aucun import ni remplacement','Enregistrement refusé','Enregistrement local indisponible'])
+for(const marker of ['Contrôler une sauvegarde JSON sans l’importer','Choisir le JSON à contrôler','Sauvegarde non validée','Aucun import ni remplacement','Enregistrement refusé','Enregistrement local indisponible','duration-over-24h','durée à vérifier (plus de 24 h enregistrées)'])
  if(!js.includes(marker)) throw new Error(`Contrôle stockage absent : ${marker}`);
 for(const marker of ['kickback-a-l-elastique','fentes-avant-alternees','glute-bridge-en-1-5-reps'])
  if(!js.includes(marker)) throw new Error(`Fiche vidéo absente : ${marker}`);

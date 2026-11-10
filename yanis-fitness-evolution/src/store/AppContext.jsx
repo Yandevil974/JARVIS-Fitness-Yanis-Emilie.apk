@@ -1,3 +1,4 @@
+import { preserveUncertainSessionDuration } from "./session-duration.js";
 import { bundledProfileBackup } from "../platform/native.js";
 import { restoreProfile, personalDataPresent } from "./restoration.js";
 import { nextWorkoutStep } from "../engine/workout-flow.js";
@@ -486,6 +487,9 @@ export function AppProvider({ children }) {
           1,
           Math.round((Date.now() - w.startedAt) / 1000),
         );
+        // Une séance laissée ouverte plusieurs jours ne doit pas bloquer
+        // toutes les sauvegardes ni compter ce temps comme entraînement réel.
+        preserveUncertainSessionDuration(w);
         w.rpe = num(rpe);
         w.note = note || "";
         q.sessions.push(w);

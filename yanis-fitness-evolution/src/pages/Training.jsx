@@ -992,9 +992,11 @@ function History() {
                       year: "numeric",
                     })}{" "}
                     ·{" "}
-                    {s.durationSec
-                      ? Math.round(s.durationSec / 60) + " min"
-                      : "durée non renseignée"}
+                    {s.durationReview
+                      ? "durée à vérifier (plus de 24 h enregistrées)"
+                      : s.durationSec
+                        ? Math.round(s.durationSec / 60) + " min"
+                        : "durée non renseignée"}
                   </p>
                 </div>
                 <Badge

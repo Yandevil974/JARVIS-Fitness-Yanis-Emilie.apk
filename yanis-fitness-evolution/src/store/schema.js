@@ -1,3 +1,4 @@
+import { preserveUncertainSessionDuration } from "./session-duration.js";
 import { SCHEMA_VERSION, num, today } from "../engine/utils.js";
 import {
   validDate,
@@ -55,6 +56,7 @@ function session(s, planned = false) {
     ].includes(s.status)
   )
     fail("Statut de séance invalide.");
+  preserveUncertainSessionDuration(s);
   numeric(s.durationSec, 0, 86400, "Durée de séance");
   numeric(s.rpe, 1, 10, "RPE de séance");
   const exercises = array(s.exercises, "Exercices", 300);

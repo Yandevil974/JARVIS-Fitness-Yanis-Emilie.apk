@@ -72,7 +72,22 @@ jobs:
           npx playwright install --with-deps chromium
           npm run dev > /tmp/yfe-vite.log 2>&1 &
           trap 'kill $! || true' EXIT
-          npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/session-guidance.spec.js tests/check-backup.spec.js
+          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/session-guidance.spec.js tests/check-backup.spec.js; then
+            node -e '
+              const report = require("./tests/e2e-results.json");
+              function visit(suite) {
+                for (const spec of suite.specs || []) for (const test of spec.tests || []) {
+                  for (const result of test.results || []) for (const error of result.errors || []) {
+                    const message = (spec.title + ": " + error.message).replace(/\x1b\[[0-9;]*m/g, "").replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
+                    console.log("::error::" + message.slice(0, 4000));
+                  }
+                }
+                for (const child of suite.suites || []) visit(child);
+              }
+              for (const suite of report.suites || []) visit(suite);
+            '
+            exit 1
+          fi
 
       - name: Install esbuild (runtime portable)
         run: npm install --no-save esbuild
@@ -444,7 +459,7 @@ jobs:
 
           APK Android signé du commit $GITHUB_SHA, version **1.17.0 / 200**, identifiant **app.yanis.fitness.evolution**.
 
-          Cette version distingue les erreurs de validation, les protections et les échecs d'écriture. Dans Profil → Données, elle peut contrôler localement un export JSON sans importer ni remplacer les données. Le résultat ne prouve pas qu'un enregistrement réel fonctionne : la cause sur le téléphone reste à identifier.
+          Une durée de séance supérieure à 24 heures ne bloque plus la sauvegarde : la valeur originale est conservée à part et la durée réelle reste à vérifier, sans inventer un temps d'entraînement. Cette version distingue les erreurs de validation, les protections et les échecs d'écriture. Dans Profil → Données, elle peut contrôler localement un export JSON sans importer ni remplacer les données. Le contrôle ne prouve pas l'écriture effective sur le téléphone.
 
           Elle comprend les vidéos fessiers reçues depuis la 1.16.0 et conserve les GIF. Les réserves et consignes des vidéos restent visibles.
 
