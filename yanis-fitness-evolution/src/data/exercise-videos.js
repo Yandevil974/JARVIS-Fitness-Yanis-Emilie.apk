@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Même fente marchée observée dans la vidéo existante : pas de nouvelle génération.
+  "fentes-marchees": {
+    src: "/videos/fentes-avant-alternees.mp4",
+    poster: "/videos/posters/fentes-avant-alternees.jpg",
+    label: "Vidéo IA · Fentes marchées au poids du corps",
+    status: "coached",
+    coaching: {
+      title: "Avancez en alternant les jambes.",
+      handCue: "Mains aux hanches ou libres pour l'équilibre ; gardez un espace dégagé devant vous.",
+      movementCue: "Après chaque fente, poussez dans le pied avant puis passez l'autre jambe devant pour continuer à avancer.",
+      notice: "La vidéo montre une fente suivie d'un pas vers l'avant, mais s'arrête pendant la fente suivante ; l'alternance complète et le tempo exact ne sont pas entièrement démontrés. Continuez à avancer et alternez les jambes selon la fiche.",
+      spoken: "Fentes marchées au poids du corps. Dans un espace dégagé, avancez un pied, posez-le à plat et descendez en trois secondes, genou arrière vers le sol sans le heurter, buste stable. Poussez dans le pied avant pour remonter en une seconde, puis passez l'autre jambe devant pour continuer à avancer. Alternez les jambes. La vidéo s'arrête pendant la fente suivante : poursuivez le mouvement. Cinq séries de quinze à vingt, soixante secondes de repos, tempo trois zéro un zéro. Arrêtez en cas de douleur.",
+    },
+  },
   // Vidéos déposées : machine leg extension et fente bulgare avec haltères.
   "leg-extension": {
     src: "/videos/leg-extension.mp4",
