@@ -16,7 +16,7 @@ export default function RestNext({ next, setModal, reducedMotion = false }) {
         {(next.video || next.img) && (
           <button
             type="button"
-            className="rest-next-thumb"
+            className={`rest-next-thumb ${next.video ? "has-video" : ""}`}
             aria-label={`${next.video ? "Agrandir la vidéo" : "Agrandir l’image"} : ${next.nom}`}
             title={next.video ? "Agrandir la vidéo" : "Agrandir l’image"}
             onClick={() => setModal(nextRestModal(next))}

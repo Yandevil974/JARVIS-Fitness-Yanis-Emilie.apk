@@ -45,6 +45,20 @@ test("le repos montre la même vidéo que la fiche et ouvre sa consigne", async 
     /\/videos\/tractions-supination-chin-up\.mp4$/,
   );
   await expect(page.locator(".rest-next-thumb img")).toHaveCount(0);
+  // Tout le cadre du fichier est visible, même dans une vignette non carrée.
+  for (const width of [1440, 390, 320]) {
+    await page.setViewportSize({ width, height: 900 });
+    await expect(largeVideo).toHaveCSS("object-fit", "contain");
+    await expect(nextVideo).toHaveCSS("object-fit", "contain");
+    const visualBox = await page.locator(".exercise-stage .movement-visual").boundingBox();
+    const toolbarBox = await page.locator(".exercise-stage .movement-toolbar").boundingBox();
+    expect(toolbarBox.y + toolbarBox.height).toBeLessThanOrEqual(visualBox.y + 1);
+    const thumb = await nextVideo.boundingBox();
+    expect(thumb.width).toBeGreaterThan(thumb.height);
+    expect(await page.locator(".training-command").evaluate(el => el.scrollWidth <= el.clientWidth + 1)).toBe(true);
+  }
+  await page.setViewportSize({ width: 1440, height: 1000 });
+
   await expect(page.locator(".rest-next-video-note")).toContainText(
     "suivez la consigne",
   );
@@ -53,6 +67,7 @@ test("le repos montre la même vidéo que la fiche et ouvre sa consigne", async 
       name: "Agrandir la vidéo : Tractions supination (chin-up)",
     })
     .click();
+  await expect(page.locator(".image-viewer video")).toHaveCSS("object-fit", "contain");
   await expect(page.locator(".image-viewer video")).toHaveAttribute(
     "src",
     /\/videos\/tractions-supination-chin-up\.mp4$/,

@@ -23,3 +23,9 @@ Le tempo est une instruction au générateur, pas une garantie. Contrôler toute
 ## Hip thrust barre #02/#14
 
 La référence que Yanis a explicitement retenue reste conservée ; le clip reçu coupe le bas des chaussures au début et doit désormais être refait selon le nouveau critère. Les deux fiches partagent le même mouvement et doivent partager le même remplacement, avec leurs propres prescriptions et consignes. Préparer un cadrage assez large pour les deux pieds et toute la montée, sans révoquer la décision concernant l'image déjà retenue.
+
+## Correction demandée : mise à l'échelle dans l'application
+
+Yanis précise que la mise à l'échelle doit être corrigée dans l'application, sans travail précipité. La vidéo principale utilisait déjà `object-fit: contain`, mais la vignette « Ensuite » et les aperçus d'échauffement utilisaient `cover`, qui coupe une partie de l'image selon les proportions du cadre. La correction utilise `contain`, garde les proportions et élargit la vignette vidéo « Ensuite » ; les indicateurs de séance et le bouton Agrandir sont placés au-dessus de la vidéo plutôt que par-dessus l'athlète. Le GIF d'origine reste inchangé. Ces réglages affichent l'intégralité des pixels présents dans chaque fichier et ne nécessitent aucune nouvelle génération.
+
+**Limite à ne pas confondre :** réduire une vidéo ne peut pas recréer la tête ou les chaussures déjà absentes de ses images d'origine. Le goblet squat et le hip thrust cités plus haut ont des coupures dans le fichier lui-même : la mise à l'échelle ne les répare pas. La référence de reprise du goblet reste disponible mais ne signifie pas qu'une nouvelle vidéo est nécessaire pour corriger les simples recadrages d'interface.

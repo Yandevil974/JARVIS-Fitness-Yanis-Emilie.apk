@@ -116,6 +116,70 @@ export default function Movement({
     <div
       className={`movement human-movement ${small ? "small" : ""} ${video || media || motion ? "has-media" : ""} ${breathe ? "breathing-human" : ""}`}
     >
+      {(live || zoomable) && (
+        <div className="movement-toolbar">
+          {live && (
+            <div className="movement-live" aria-label="Informations de la séance">
+              <div className="movement-live-metrics">
+                <span className="movement-live-metric">
+                  <small>SÉRIE</small>
+                  <strong>
+                    {live.completed >= live.totalSets
+                      ? "Terminé"
+                      : `${Math.min(live.completed + 1, live.totalSets)} / ${live.totalSets}`}
+                  </strong>
+                </span>
+                <span className="movement-live-metric">
+                  <small>OBJECTIF</small>
+                  <strong>{live.target}</strong>
+                </span>
+              </div>
+              {live.rest != null && (
+                <div className="movement-live-rest">
+                  <Icon name="Timer" size={14} />
+                  <span>Récupération</span>
+                  <strong>{formatLiveCountdown(live.rest)}</strong>
+                </div>
+              )}
+              <div className="movement-live-progress">
+                <div className="movement-live-progress-label">
+                  <span>Progression de la séance</span>
+                  <strong>{Math.round(live.progress)} %</strong>
+                </div>
+                <div className="movement-live-progress-track">
+                  <span
+                    style={{
+                      width: `${Math.max(0, Math.min(100, live.progress))}%`,
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+          {zoomable && (
+            <button
+              type="button"
+              className="movement-zoom"
+              title="Agrandir"
+              onClick={() =>
+                setModal({
+                  type: "image",
+                  src: video?.src || media?.path,
+                  poster: video?.poster || null,
+                  title: video?.label || media?.name || exercise?.name,
+                  notice: video?.status === "coached" ? coaching?.notice : null,
+                  noticeTitle:
+                    video?.status === "coached" ? coaching?.title : null,
+                  spoken: video?.status === "coached" ? coaching?.spoken : null,
+                  motion: video || media ? null : motion || null,
+                })
+              }
+            >
+              <Icon name="Maximize2" size={13} /> Agrandir
+            </button>
+          )}
+        </div>
+      )}
       <div className="movement-visual">
         {video ? (
           <video
@@ -181,66 +245,6 @@ export default function Movement({
               loading="lazy"
             />
           </div>
-        )}
-        {live && (
-          <div className="movement-live" aria-label="Informations de la séance">
-            <div className="movement-live-metrics">
-              <span className="movement-live-metric">
-                <small>SÉRIE</small>
-                <strong>
-                  {live.completed >= live.totalSets
-                    ? "Terminé"
-                    : `${Math.min(live.completed + 1, live.totalSets)} / ${live.totalSets}`}
-                </strong>
-              </span>
-              <span className="movement-live-metric">
-                <small>OBJECTIF</small>
-                <strong>{live.target}</strong>
-              </span>
-            </div>
-            {live.rest != null && (
-              <div className="movement-live-rest">
-                <Icon name="Timer" size={14} />
-                <span>Récupération</span>
-                <strong>{formatLiveCountdown(live.rest)}</strong>
-              </div>
-            )}
-            <div className="movement-live-progress">
-              <div className="movement-live-progress-label">
-                <span>Progression de la séance</span>
-                <strong>{Math.round(live.progress)} %</strong>
-              </div>
-              <div className="movement-live-progress-track">
-                <span
-                  style={{
-                    width: `${Math.max(0, Math.min(100, live.progress))}%`,
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        )}
-        {zoomable && (
-          <button
-            type="button"
-            className="movement-zoom"
-            title="Agrandir"
-            onClick={() =>
-              setModal({
-                type: "image",
-                src: video?.src || media?.path,
-                poster: video?.poster || null,
-                title: video?.label || media?.name || exercise?.name,
-                notice: video?.status === "coached" ? coaching?.notice : null,
-                noticeTitle:
-                  video?.status === "coached" ? coaching?.title : null,
-                spoken: video?.status === "coached" ? coaching?.spoken : null,
-                motion: video || media ? null : motion || null,
-              })
-            }
-          >
-            <Icon name="Maximize2" size={13} /> Agrandir
-          </button>
         )}
       </div>
       {belowVisual}

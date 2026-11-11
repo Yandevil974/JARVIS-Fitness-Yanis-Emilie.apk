@@ -18271,7 +18271,7 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .warmup-step-thumb > video.warmup-step-video {
   width: 104px;
   height: 62px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 7px;
   background: #101418;
   display: block;
@@ -18301,7 +18301,7 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .warmup-overview > video {
   width: 190px;
   height: 143px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   background: #101418;
 }
@@ -18503,9 +18503,10 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 
 /* La vignette « Ensuite » montre la même vidéo que la fiche de l'exercice. */
 .rest-next-thumb > video {
-  width: 56px;
+  width: 96px;
   height: 56px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #101418;
   display: block;
 }
 .rest-next-body .rest-next-video-note {
@@ -18513,3 +18514,16 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
   font-size: 10px;
   line-height: 1.35;
 }
+
+/* Afficher toute l'image vidéo sans masquer l'athlète par les commandes.
+   Une mise à l'échelle ne peut pas recréer les parties déjà coupées à la source. */
+.movement-toolbar { display: flex; align-items: center; gap: 8px; padding: 8px; background: #081d2b; flex-wrap: wrap; }
+.movement-toolbar .movement-live { position: static; inset: auto; flex: 1 1 220px; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px; pointer-events: auto; min-width: 0; }
+.movement-toolbar .movement-live-metrics { max-width: none; flex-wrap: wrap; }
+.movement-toolbar .movement-live-rest { align-self: auto; }
+.movement-toolbar .movement-live-progress { flex: 1 1 120px; min-width: 100px; }
+.movement-toolbar .movement-zoom { position: static; flex: 0 0 auto; }
+.rest-next-body > div { min-width: 0; }
+.rest-next-thumb.has-video > svg, .warmup-step-thumb.has-video > svg { display: none; }
+.warmup-overview > span { position: static; border-radius: 0; }
+.image-viewer > video.movement-video { object-fit: contain; }

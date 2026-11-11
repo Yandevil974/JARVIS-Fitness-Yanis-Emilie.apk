@@ -51,6 +51,8 @@ test("l'échauffement test7 affiche ses vidéos dans le récap et le minuteur", 
       "/videos/warmup-activation-scapulaire.mp4",
     ]),
   );
+  await expect(dialog.locator(".warmup-step-thumb.has-video video").first()).toHaveCSS("object-fit", "contain");
+  await expect(dialog.locator(".warmup-overview video")).toHaveCSS("object-fit", "contain");
   await expect(dialog.locator(".warmup-overview video")).toHaveAttribute(
     "src",
     "/videos/warmup-apercu-complet.mp4",
@@ -58,6 +60,7 @@ test("l'échauffement test7 affiche ses vidéos dans le récap et le minuteur", 
   await dialog
     .getByRole("button", { name: "Lancer l’échauffement guidé", exact: true })
     .click();
+  await expect(page.locator(".timer-step-visual.has-video video")).toHaveCSS("object-fit", "contain");
   await expect(
     page.locator(".timer-step-visual.has-video video"),
   ).toHaveAttribute("src", "/videos/warmup-mise-en-route.mp4");
