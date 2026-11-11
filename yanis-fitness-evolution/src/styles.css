@@ -3487,6 +3487,22 @@ textarea.input {
 .exercise-card-visual:hover > img {
   transform: scale(1.035);
 }
+.exercise-card-visual > .library-video-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #2f313518;
+  pointer-events: none;
+}
+.library-video-warning {
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--text);
+  background: rgba(239, 178, 67, 0.17);
+}
 .exercise-pattern {
   height: 100%;
   display: flex;

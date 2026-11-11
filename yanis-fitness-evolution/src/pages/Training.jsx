@@ -17,6 +17,8 @@ import {
   ProgressBar,
 } from "../components/ui.jsx";
 import Movement from "../components/Movement.jsx";
+import LibraryExerciseVisual from "../components/LibraryExerciseVisual.jsx";
+import { videoFor } from "../data/exercise-videos.js";
 import WorkoutLoadControl from "../components/WorkoutLoadControl.jsx";
 import Anatomy from "../components/Anatomy.jsx";
 import RestTimer, { useNow } from "../components/RestTimer.jsx";
@@ -43,7 +45,6 @@ import {
   allSets,
 } from "../engine/fitness.js";
 import {
-  assetSrc,
   numberLabel,
   num,
   dateLabel,
@@ -786,6 +787,18 @@ function Elapsed({ start }) {
 }
 function Library() {
   const { p, updateProfile, openExercise } = useApp();
+  const [systemReducedMotion, setSystemReducedMotion] = useState(
+    () => typeof window !== "undefined" && !!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches,
+  );
+  useEffect(() => {
+    const query = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+    if (!query) return;
+    const update = () => setSystemReducedMotion(query.matches);
+    update();
+    query.addEventListener?.("change", update);
+    return () => query.removeEventListener?.("change", update);
+  }, []);
+  const reducedMotion = !!p.preferences.reducedMotion || systemReducedMotion;
   const [query, setQuery] = useState(""),
     [group, setGroup] = useState("all"),
     [equipment, setEquipment] = useState("all"),
@@ -865,38 +878,16 @@ function Library() {
         <div className="exercise-library">
           {list.slice(0, limit).map((ex) => (
             <Panel className="exercise-card" key={ex.id}>
-              <button
-                className="exercise-card-visual"
-                onClick={() => openExercise(ex.id)}
-                aria-label={`Démonstration ${ex.name}`}
-              >
-                {ex.gif ? (
-                  <img
-                    loading="lazy"
-                    src={assetSrc(
-                      ex.gif
-                        .replace("/media/", "/thumbs/")
-                        .replace(/\.gif$/, ".webp"),
-                    )}
-                    alt=""
-                  />
-                ) : (
-                  <img
-                    className="library-anatomy-preview"
-                    loading="lazy"
-                    src={assetSrc(
-                      `/human/${["dos", "fes", "isc", "moy", "tri", "lom", "epP"].includes(ex.muscle) ? "back" : "front"}-card.webp`,
-                    )}
-                    alt="Anatomie humaine réaliste"
-                  />
-                )}
-                <span className="play-circle">
-                  <Icon name="Play" size={16} />
-                </span>
-                <span className="visual-label">
-                  {ex.gif ? "GUIDE HUMAIN" : "ANATOMIE RÉALISTE"}
-                </span>
-              </button>
+              <LibraryExerciseVisual
+                exercise={ex}
+                onOpen={openExercise}
+                reducedMotion={reducedMotion}
+              />
+              {videoFor(ex)?.avoidSilentPreview && (
+                <p className="library-video-warning">
+                  {videoFor(ex).coaching?.notice || "Consultez les consignes avant de reproduire le mouvement."}
+                </p>
+              )}
               <button
                 className={`favorite-button ${p.preferences.favorites.includes(ex.id) ? "active" : ""}`}
                 aria-label={`Favori : ${ex.name}`}
