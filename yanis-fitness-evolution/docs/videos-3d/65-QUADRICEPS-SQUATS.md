@@ -20,8 +20,12 @@ Fiche `goblet-squat`, Émilie : **3 × 12 · 3011 · 90 s**, un haltère tenu à
 
 > Plan large fixe de face légèrement de trois quarts, garder la tête, les mains et les deux pieds entiers dans le cadre. Athlète chromé à casquette noire, quadriceps rouges, un seul haltère vertical maintenu près de la poitrine avec les deux mains autour de son extrémité supérieure ; l'haltère et les mains restent solidaires du buste. Pieds à plat écartés environ de la largeur des épaules. Depuis la position intermédiaire de la photo, remonter en une seconde en poussant dans les pieds, sans verrouiller brutalement les genoux ; marquer une seconde en haut. Descendre ensuite lentement en trois secondes en fléchissant hanches et genoux, dans une amplitude confortable et contrôlée, cuisses proches de la parallèle si la mobilité le permet, talons au sol et genoux dirigés comme les orteils. Sans rebond ni pause en bas, remonter en une seconde et tenir une seconde en haut. Garder poitrine haute et dos neutre, deux jambes et deux bras anatomiques, mains et haltère fixes par rapport à la poitrine. Ne pas avancer les pieds, décoller les talons, lâcher ou déformer l'haltère, ajouter de barre, texte, compteur, membre ou zoom. Montrer au moins une répétition complète.
 
-Le tempo demandé au générateur n'est pas garanti ; contrôler les mains, les appuis, l'amplitude et la continuité de la répétition avant d'intégrer le clip. Aucune vidéo goblet n'a encore été reçue.
+Le tempo demandé au générateur n'est pas garanti ; contrôler les mains, les appuis, l'amplitude et la continuité de la répétition avant d'intégrer le clip. La vidéo reçue est intégrée comme indiqué ci-dessous.
 
 ## Hip thrust unilatéral #04/#08
 
 Deux essais supplémentaires ont été écartés : dans le premier les jambes fusionnaient visuellement au genou ; dans le second, le banc incliné compromettait l'appui demandé. Ne pas utiliser ces images ni dépenser de crédits vidéo sur elles. #04/#08 restent sans vidéo ; #12 avec lest demeure distincte.
+
+## Vidéo goblet reçue et intégrée
+
+`1794376345822.mp4` : 640 × 360, 121 images à 24 i/s, environ 5 secondes ; SHA-256 `ac3eab3406bdbb265efa60fcbef6ea6afb0087267f001a61fa19d9e47fa27a37`. Copiée intacte dans `public/videos/goblet-squat.mp4` et `release/videos/goblet-squat.mp4`, elle montre un squat avec haltère vertical tenu à deux mains à la poitrine, descente et remontée. La tête sort du cadre en haut ; les pieds bougent légèrement et le tempo 3011 n'est pas démontré. Intégrée en **coached** avec rappel des appuis, du tempo et de l'amplitude confortable, sans modifier le GIF ni la prescription. La vignette « Ensuite » utilise la même vidéo. Aucune autre fiche n'est automatiquement raccordée.

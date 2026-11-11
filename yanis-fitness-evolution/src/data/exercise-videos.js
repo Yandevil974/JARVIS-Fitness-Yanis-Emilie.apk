@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Vidéo déposée par Yanis : goblet squat avec haltère tenu à la poitrine.
+  "goblet-squat": {
+    src: "/videos/goblet-squat.mp4",
+    poster: "/videos/posters/goblet-squat.jpg",
+    label: "Vidéo IA · Goblet squat, consignes prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Haltère à la poitrine, squat contrôlé.",
+      handCue: "Tenez un haltère vertical près de la poitrine avec les deux mains.",
+      movementCue: "Gardez les pieds stables, les genoux dans l'axe des orteils et le dos neutre ; descendez puis remontez sous contrôle.",
+      notice: "La tête est coupée en position haute ; le tempo exact n'est pas démontré et les appuis bougent légèrement. Gardez les pieds stables et suivez la fiche.",
+      spoken: "Goblet squat. Tenez un haltère vertical près de la poitrine avec les deux mains. Pieds stables et talons au sol, genoux dans l'axe des orteils. Descendez en trois secondes dans une amplitude confortable, dos neutre et poitrine haute, puis remontez en une seconde et marquez une seconde en haut. Trois séries de douze, quatre-vingt-dix secondes de repos, tempo trois zéro un un. La tête est coupée en haut de la vidéo et le tempo n'est pas démontré. Arrêtez en cas de douleur.",
+    },
+  },
   // Squats arrière : même mouvement, prescriptions et consignes distinctes.
   "back-squat-charge-moderee": {
     src: "/videos/back-squat.mp4", poster: "/videos/posters/back-squat.jpg",
