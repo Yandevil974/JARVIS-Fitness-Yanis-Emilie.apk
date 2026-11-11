@@ -42,7 +42,13 @@ jobs:
           cache: npm
           cache-dependency-path: yanis-fitness-evolution/package-lock.json
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      - name: Préparer le navigateur
+        run: |
+          if command -v google-chrome >/dev/null; then
+            echo "CHROME_BIN=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
       - name: Tester la séance, la charge et la vidéo suivante
         run: |
           npm run dev > /tmp/yfe-vite.log 2>&1 &
