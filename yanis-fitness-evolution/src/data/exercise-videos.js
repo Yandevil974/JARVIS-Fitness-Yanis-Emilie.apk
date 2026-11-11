@@ -22,6 +22,59 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Fessiers 02/14 et 13 : les fichiers déposés servent aux mouvements identiques.
+  "hip-thrust-barre": {
+    src: "/videos/hip-thrust-barre.mp4",
+    poster: "/videos/posters/hip-thrust-barre.jpg",
+    label: "Vidéo IA · Hip thrust barre, consignes prioritaires",
+    status: "coached",
+    coaching: {
+      title: "Haut du dos au banc, barre stabilisée sur les hanches.",
+      handCue: "Stabilisez la barre avec les deux mains et gardez le haut du dos en appui sur un banc stable.",
+      movementCue: "Pieds à plat, descendez sous contrôle puis montez les hanches sans cambrer.",
+      notice: "Le bas des chaussures est coupé au début et les mains sont partiellement masquées par le disque ; la stabilité de la barre et le tempo exact ne sont pas clairement démontrés. Suivez la fiche.",
+      spoken: "Hip thrust barre. Appuyez le haut du dos sur un banc stable, pieds à plat au sol. Maintenez la barre sur le pli des hanches avec les deux mains. Descendez sous contrôle puis poussez dans les pieds pour remonter, menton rentré et côtes basses, sans cambrer. Les mains et les chaussures sont partiellement masquées dans la vidéo : vérifiez bien vos appuis et la barre. Trois séries de douze à quinze, quatre-vingt-dix secondes de repos, tempo trois un un deux. Arrêtez en cas de douleur.",
+    },
+  },
+  "hip-thrust-barre-test-de-charge-max-3-5-reps": {
+    src: "/videos/hip-thrust-barre.mp4",
+    poster: "/videos/posters/hip-thrust-barre.jpg",
+    label: "Vidéo IA · Hip thrust barre, test de charge encadré",
+    status: "coached",
+    coaching: {
+      title: "Même geste : test de trois à cinq répétitions propres.",
+      handCue: "Banc stable, deux pieds au sol, barre stabilisée avec les deux mains ; ne testez pas seule une charge lourde.",
+      movementCue: "Descendez sans perdre l'appui du haut du dos et remontez les hanches sans cambrer.",
+      notice: "Le bas des chaussures est coupé au début et les mains sont partiellement masquées par le disque ; la vidéo ne démontre ni le tempo exact ni les conditions d'un test lourd. Suivez la fiche, jamais à l'échec total et jamais seule si la charge est lourde.",
+      spoken: "Test de charge au hip thrust barre. Appuyez le haut du dos sur un banc stable, posez les deux pieds au sol et stabilisez la barre sur vos hanches avec les deux mains. Descendez en trois secondes et remontez sans cambrer. Faites cinq séries de trois à cinq répétitions propres, trois minutes de repos, tempo trois zéro un deux. La vidéo ne démontre pas un test lourd. Ne cherchez jamais l'échec total et ne faites jamais seule une charge lourde. Arrêtez en cas de douleur.",
+    },
+  },
+  "fentes-bulgares-pied-arriere-sureleve": {
+    src: "/videos/fentes-bulgares-poids-du-corps.mp4",
+    poster: "/videos/posters/fentes-bulgares-poids-du-corps.jpg",
+    label: "Vidéo IA · Fente bulgare au poids du corps",
+    status: "coached",
+    coaching: {
+      title: "Pied arrière au banc, pied avant ancré.",
+      handCue: "Mains aux hanches ou sur un support stable si nécessaire ; pied arrière sur le banc.",
+      movementCue: "Inclinez légèrement le buste, descendez sous contrôle puis poussez sur le pied avant.",
+      notice: "Le pied arrière reste petit dans ce cadre large et le tempo exact n'est pas démontré. Gardez-le en appui sur le banc, le pied avant au sol, et suivez la fiche.",
+      spoken: "Fentes bulgares au poids du corps. Posez le dessus du pied arrière sur un banc stable et gardez le pied avant à plat au sol. Grand pas, buste légèrement incliné, dos neutre. Descendez en trois secondes, genou avant aligné avec le pied, puis poussez pour remonter en une seconde sans verrouiller brutalement. Gardez le pied arrière sur le banc. Quatre séries de huit à dix par jambe, quatre-vingt-dix secondes de repos, tempo trois zéro un zéro. Tenez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
+  "bulgarian-split-squat": {
+    src: "/videos/fentes-bulgares-poids-du-corps.mp4",
+    poster: "/videos/posters/fentes-bulgares-poids-du-corps.jpg",
+    label: "Vidéo IA · Bulgarian split squat au poids du corps",
+    status: "coached",
+    coaching: {
+      title: "Pied arrière sur le banc, talon avant ancré.",
+      handCue: "Mains aux hanches ou sur un support stable ; appuyez le pied arrière sur le banc.",
+      movementCue: "Buste légèrement incliné, descendez puis remontez en poussant sur le pied avant.",
+      notice: "Le pied arrière reste petit dans ce cadre large et le tempo exact n'est pas démontré. Gardez-le en appui sur le banc et suivez la prescription propre à cette fiche.",
+      spoken: "Bulgarian split squat au poids du corps. Placez le dessus du pied arrière sur un banc stable et ancrez le pied avant à plat. Inclinez légèrement le buste, dos neutre. Descendez en trois secondes sans heurter le sol, genou avant aligné avec le pied, puis remontez en une seconde. Gardez le pied arrière sur le banc. Trois séries de dix par jambe, soixante-quinze secondes de repos, tempo trois zéro un zéro. Tenez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
   // Fessiers #07, #09 et #10 : vidéos remises, avec réserves propres.
   "kickback-a-l-elastique": {
     src: "/videos/kickback-a-l-elastique.mp4",
