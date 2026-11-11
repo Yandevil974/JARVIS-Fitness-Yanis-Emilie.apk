@@ -1,6 +1,6 @@
 # Quadriceps — leg extension
 
-Fiche `leg-extension` : **5 × 12–15 · tempo 2011 · repos 120 s**. Machine, très léger, contraction complète et pause d'une seconde en haut ; ne pas verrouiller brutalement le genou. Aucune vidéo associée à cette fiche au moment de la préparation ; le GIF `/media/4a75246261f34b24.gif` reste intact. Ne pas confondre avec le leg curl ou une presse à cuisses.
+Fiche `leg-extension` : **5 × 12–15 · tempo 2011 · repos 120 s**. Machine, très léger, contraction complète et pause d'une seconde en haut ; ne pas verrouiller brutalement le genou. La vidéo déposée est intégrée comme indiqué ci-dessous ; le GIF `/media/4a75246261f34b24.gif` reste intact. Ne pas confondre avec le leg curl ou une presse à cuisses.
 
 ## Référence
 
@@ -12,6 +12,13 @@ Fiche `leg-extension` : **5 × 12–15 · tempo 2011 · repos 120 s**. Machine, 
 
 Le tempo demandé n'est pas garanti par le générateur. Avant intégration, contrôler toute la vidéo : cadre, position et contact du rouleau, continuité du levier, trajectoire symétrique des jambes, absence de collision avec le châssis. Si la machine ou les appuis ne sont pas fidèles, ne pas cacher ce défaut.
 
-## Fente bulgare avec haltères — encore en attente
+## Fente bulgare avec haltères — vidéo déposée intégrée
 
-La fiche `bulgarian-split-squat-halteres` est différente de la fente au poids du corps déjà couverte ; ne pas lui attribuer sa vidéo sans haltères. Les essais d'image ont masqué la deuxième main et sa prise derrière la cuisse ; ils ont été écartés. La variante `fentes-bulgares-halteres-pied-avant-sureleve` est encore distincte, avec pied avant surélevé : ne pas fusionner les deux. Aucun crédit vidéo n'est demandé pour ces images écartées.
+La fiche `bulgarian-split-squat-halteres` est différente de la fente au poids du corps déjà couverte ; ne pas lui attribuer sa vidéo sans haltères. Les essais d'image ont masqué la deuxième main et sa prise derrière la cuisse ; ils ont été écartés. La variante `fentes-bulgares-halteres-pied-avant-sureleve` est encore distincte, avec pied avant surélevé : ne pas fusionner les deux. Yanis a ensuite demandé le prompt et déposé une vidéo, intégrée comme indiqué ci-dessous.
+
+## Vidéos reçues et intégration
+
+- `1794381513673.mp4`, **leg extension**, 640 × 360, 121 images à 24 i/s (~5 s), SHA-256 `a72f04c17863417b6f4ed2271acbbf4402bbcac59453cff034036a0f0f2834bd`. L'extension puis la descente des jambes sont visibles ; l'athlète reste entier sur les images échantillonnées. En position haute, le contact du rouleau et son mécanisme sont partiellement masqués ; les quadriceps rouges disparaissent en fin de clip et le tempo exact n'est pas établi. Intégration `coached`, rappel du réglage de la machine, de la charge légère et du tempo.
+- `1794381881250.mp4`, **fente bulgare avec haltères, pied avant au sol**, 640 × 336, 121 images à 24 i/s (~5 s), SHA-256 `21b7c46fb69f7e1ed7945176a59f1a69fbc18ffddc793ee17280c125d4dab7bc`. Descente et remontée avec pied arrière sur banc ; l'athlète reste entier sur les images échantillonnées. La seconde main et son haltère sont en grande partie masqués de profil, le pied arrière est petit et le tempo n'est pas établi. Intégration `coached` avec rappel de la prise, des appuis et du tempo. La fiche au poids du corps garde sa propre vidéo et la variante pied avant surélevé reste sans cette vidéo.
+
+Les fichiers sont copiés sans modification dans `public/videos/` et `release/videos/`, avec posters, GIF et prescriptions d'origine conservés et même source dans « Ensuite ». L'affichage utilise `contain` ; la lisibilité réelle dans l'APK sur téléphone n'a pas été vérifiée.

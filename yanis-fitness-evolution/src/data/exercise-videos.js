@@ -22,6 +22,33 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Vidéos déposées : machine leg extension et fente bulgare avec haltères.
+  "leg-extension": {
+    src: "/videos/leg-extension.mp4",
+    poster: "/videos/posters/leg-extension.jpg",
+    label: "Vidéo IA · Leg extension avec consignes",
+    status: "coached",
+    coaching: {
+      title: "Dos en appui, extension contrôlée des genoux.",
+      handCue: "Réglez la machine à votre morphologie ; placez le rouleau sur l'avant des tibias au-dessus des chevilles et tenez les poignées.",
+      movementCue: "Tendez les deux jambes sous contrôle, sans verrouiller brutalement, puis redescendez doucement.",
+      notice: "Le contact du rouleau et la liaison du mécanisme sont partiellement masqués en haut, les muscles rouges disparaissent en fin de clip et le tempo exact n'est pas démontré. Réglez la machine et suivez la fiche.",
+      spoken: "Leg extension. Réglez le pivot de la machine à hauteur de vos genoux et le rouleau sur l'avant des tibias, au-dessus des chevilles. Dos et cuisses en appui, tendez les jambes en une seconde sans verrouiller brutalement. Contractez une seconde en haut puis redescendez en deux secondes sans à-coup. Cinq séries de douze à quinze, deux minutes de repos, tempo deux zéro un un. Le contact du rouleau n'est pas toujours visible dans la vidéo. Utilisez une charge légère et arrêtez en cas de douleur.",
+    },
+  },
+  "bulgarian-split-squat-halteres": {
+    src: "/videos/bulgarian-split-squat-halteres.mp4",
+    poster: "/videos/posters/bulgarian-split-squat-halteres.jpg",
+    label: "Vidéo IA · Fente bulgare avec haltères",
+    status: "coached",
+    coaching: {
+      title: "Pied arrière au banc, un haltère dans chaque main.",
+      handCue: "Tenez un haltère dans chaque main, bras le long du corps, avec une charge maîtrisée.",
+      movementCue: "Pied avant à plat au sol, pied arrière au banc ; descendez sous contrôle puis poussez sur le pied avant.",
+      notice: "De profil, la seconde main et son haltère sont en grande partie masqués ; le pied arrière est petit et le tempo exact n'est pas démontré. Vérifiez la prise et les appuis et suivez la fiche.",
+      spoken: "Fente bulgare avec haltères. Posez le dessus du pied arrière sur un banc stable et le pied avant à plat au sol. Tenez un haltère dans chaque main, bras le long du corps. Buste légèrement penché et dos neutre, descendez en trois secondes, genou avant dans l'axe, puis poussez sur le pied avant pour remonter en une seconde. La deuxième main et son haltère sont en grande partie masqués dans la vidéo : vérifiez bien votre prise et vos appuis. Quatre séries de huit à dix par jambe, quatre-vingt-dix secondes de repos, tempo trois zéro un zéro. Choisissez une charge maîtrisée et arrêtez en cas de douleur.",
+    },
+  },
   // Les clips déposés servent aux fiches de même mouvement ; chaque fiche garde ses consignes.
   "step-up-sur-banc-hauteur-du-genou": {
     src: "/videos/step-up-banc-poids-du-corps.mp4",
