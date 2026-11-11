@@ -65,14 +65,18 @@ jobs:
         run: npm test
 
       - name: Browser tests for training layout and video controls
-        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-'))) }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') || startsWith(github.ref_name, 'v1.20.0-bilans-menus-'))) }}
         shell: bash
         run: |
           set -euo pipefail
-          npx playwright install --with-deps chromium
+          if command -v google-chrome >/dev/null; then
+            export CHROME_BIN="$(command -v google-chrome)"
+          else
+            npx playwright install --with-deps chromium
+          fi
           npm run dev > /tmp/yfe-vite.log 2>&1 &
           trap 'kill $! || true' EXIT
-          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/library-video-preview.spec.js tests/session-guidance.spec.js tests/check-backup.spec.js tests/stop-workout-command.spec.js tests/conversation-online.spec.js tests/full-import.spec.js; then
+          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/library-video-preview.spec.js tests/session-guidance.spec.js tests/check-backup.spec.js tests/stop-workout-command.spec.js tests/conversation-online.spec.js tests/full-import.spec.js tests/daily-features.spec.js; then
             node -e '
               const report = require("./tests/e2e-results.json");
               function visit(suite) {
@@ -588,8 +592,62 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           fail_on_unmatched_files: true
 
+      - name: Verify 1.20 daily features and signature
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.20.0-bilans-menus-') }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-120.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-120.txt
+          "$BUILD_TOOLS/aapt2" dump badging "$APK" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='203' versionName='1.20.0'"
+          node scripts/verify-dos-apk.mjs "$APK"
+          node scripts/verify-current-apk.mjs "$APK"
+          node scripts/verify-layout-apk.mjs "$APK"
+          node scripts/verify-fusion-apk.mjs "$APK"
+          node scripts/verify-storage-apk.mjs "$APK"
+          node scripts/verify-jarvis-conversation-apk.mjs "$APK"
+          node scripts/verify-quadriceps-119-apk.mjs "$APK"
+          node scripts/verify-daily-features-apk.mjs "$APK"
+          unzip -Z1 "$APK" > /tmp/yfe-apk-files-120.txt
+          if grep -Fxq 'assets/restoration/yanis-profile.json' /tmp/yfe-apk-files-120.txt; then
+            echo 'Une sauvegarde personnelle ne doit pas être intégrée à cette publication.'; exit 1
+          fi
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-120.md <<EOF
+          ## JARVIS Fitness Evolution 1.20.0 — menus et bilan du jour
+
+          APK Android signé du commit $GITHUB_SHA, version **1.20.0 / 203**, identifiant **app.yanis.fitness.evolution**.
+
+          Accès accueil aux menus alimentaires du jour et de la semaine : ce sont des propositions, elles ne sont pas automatiquement enregistrées comme repas consommés. Synthèse du programme du jour, rappels réglables et reportables, voix selon les réglages et capacités du téléphone. Les rappels sont affichés dans l’application ouverte, sans garantie de notification application fermée.
+
+          Comparaison locale des photos côte à côte et par curseur, sans analyse automatique ou envoi. Un bilan avant éventuelle sèche est proposé pour le programme source de 52 semaines de Yanis, à date adaptable, sans changer l’objectif ou les calories. Les vidéos dans la bibliothèque et les GIF conservés sont inclus.
+
+          ### Contrôles et précautions
+          Tests applicatifs et navigateur, contrôle du bundle actif et des médias, version et signature. SHA-256 APK : $APK_SHA ; certificat : $EXPECTED_CERT. Aucun test ni installation sur téléphone réel.
+
+          L'APK publié ne contient pas de sauvegarde personnelle. Avant toute mise à jour, exportez et vérifiez séparément les sauvegardes des deux profils. Installez par-dessus sans désinstaller. Si Android refuse, ne désinstallez pas et n'effacez pas les données. Un import complet remplace les deux profils ; ne l'effectuez qu'après vérification d'une sauvegarde.
+          EOF
+
+      - name: Publish 1.20 daily features delivery
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.20.0-bilans-menus-') }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: JARVIS Fitness Evolution 1.20.0 — menus et bilan du jour
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-120.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
-        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-')))) }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') || startsWith(github.ref_name, 'v1.20.0-bilans-menus-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
