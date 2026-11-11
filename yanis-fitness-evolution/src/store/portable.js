@@ -1,4 +1,5 @@
 import { download, today } from "../engine/utils.js";
+import { withoutServiceKeys } from "./storage.js";
 export async function exportPortable(state) {
   if (globalThis.__JARVIS_PORTABLE__) {
     const root = document.documentElement.cloneNode(true);
@@ -8,7 +9,7 @@ export async function exportPortable(state) {
     preload.id = "jarvis-preload";
     preload.textContent =
       "globalThis.__JARVIS_PRELOAD__=" +
-      JSON.stringify(state).replace(/</g, "\\u003c") +
+      JSON.stringify(withoutServiceKeys(state)).replace(/</g, "\\u003c") +
       ";";
     root.querySelector("head").appendChild(preload);
     download(
@@ -63,6 +64,6 @@ export async function exportPortable(state) {
       return assets[path] ? `url("${assets[path]}")` : match;
     },
   );
-  const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#173452"><title>JARVIS — Fitness Intelligence</title><style>${inlineCSS}</style><script id="jarvis-preload">globalThis.__JARVIS_PRELOAD__=${JSON.stringify(state).replace(/</g, "\\u003c")};<\/script></head><body><div id="root"></div><script>globalThis.__JARVIS_PORTABLE__=true;globalThis.__JARVIS_ASSETS__=${JSON.stringify(assets).replace(/</g, "\\u003c")};<\/script><script type="module">${runtime.replace(/<\/script/gi, "<\\/script")}<\/script></body></html>`;
+  const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#173452"><title>JARVIS — Fitness Intelligence</title><style>${inlineCSS}</style><script id="jarvis-preload">globalThis.__JARVIS_PRELOAD__=${JSON.stringify(withoutServiceKeys(state)).replace(/</g, "\\u003c")};<\/script></head><body><div id="root"></div><script>globalThis.__JARVIS_PORTABLE__=true;globalThis.__JARVIS_ASSETS__=${JSON.stringify(assets).replace(/</g, "\\u003c")};<\/script><script type="module">${runtime.replace(/<\/script/gi, "<\\/script")}<\/script></body></html>`;
   download(`JARVIS-application-${today()}.html`, html, "text/html");
 }

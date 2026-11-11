@@ -65,7 +65,7 @@ jobs:
         run: npm test
 
       - name: Browser tests for training layout and video controls
-        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-'))) }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-'))) }}
         shell: bash
         run: |
           set -euo pipefail
@@ -537,8 +537,59 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           fail_on_unmatched_files: true
 
+      - name: Verify 1.19 video delivery and signature
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-119.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-119.txt
+          node scripts/verify-dos-apk.mjs "$APK"
+          node scripts/verify-current-apk.mjs "$APK"
+          node scripts/verify-layout-apk.mjs "$APK"
+          node scripts/verify-fusion-apk.mjs "$APK"
+          node scripts/verify-storage-apk.mjs "$APK"
+          node scripts/verify-jarvis-conversation-apk.mjs "$APK"
+          node scripts/verify-quadriceps-119-apk.mjs "$APK"
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-119.md <<EOF
+          ## Yanis Fitness Evolution 1.19.0 — nouvelles vidéos
+
+          APK Android signé du commit $GITHUB_SHA, version **1.19.0 / 202**, identifiant **app.yanis.fitness.evolution**.
+
+          Les vidéos de fessiers et quadriceps ajoutées depuis la 1.18.0 sont présentes, notamment hip thrust barre, fente bulgare, goblet squat, step-up, squat cycliste, leg extension, fente bulgare avec haltères et squat au poids du corps. Fentes marchées réutilise une vidéo existante ; chaque fiche conserve son GIF et ses consignes. La fente avec barre reste sans vidéo : seule une photo est préparée.
+
+          Les vidéos sont accompagnées de leurs réserves. Certaines sources préexistantes coupent une partie du corps ; aucun recadrage ne peut reconstituer une partie absente. Leur reprise reste à faire selon les demandes de Yanis.
+
+          ### Contrôles
+          Tests applicatifs et navigateur, contrôle de version et signature, vérification individuelle des MP4, posters et GIF par SHA-256, associations et contenu du bundle actif. SHA-256 APK : $APK_SHA ; certificat : $EXPECTED_CERT. Pas d'essai sur téléphone réel.
+
+          Les nouveaux exports HTML portables retirent aussi les clés de service des profils. Les anciens exports et copies brutes de récupération peuvent toujours en contenir ; ne les partagez pas.
+
+          ### Installation prudente
+          Avant toute mise à jour, exportez et vérifiez une sauvegarde séparée de vos deux profils. Installez par-dessus sans désinstaller. Si Android refuse, ne désinstallez pas et n'effacez pas les données. L’import complet remplace les deux profils ; ne le confirmez qu’après avoir vérifié une sauvegarde séparée. Aucun import ou installation sur téléphone n'a été effectué ici.
+          EOF
+
+      - name: Publish 1.19 videos delivery
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: Yanis Fitness Evolution 1.19.0 — nouvelles vidéos
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-119.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
-        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-')))) }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
