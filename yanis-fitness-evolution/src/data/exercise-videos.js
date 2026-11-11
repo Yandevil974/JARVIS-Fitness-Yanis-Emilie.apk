@@ -22,6 +22,40 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Squats arrière : même mouvement, prescriptions et consignes distinctes.
+  "back-squat-charge-moderee": {
+    src: "/videos/back-squat.mp4", poster: "/videos/posters/back-squat.jpg",
+    label: "Vidéo 3D · Back squat, charge modérée", status: "coached",
+    coaching: {
+      title: "Squat arrière contrôlé, charge modérée.",
+      handCue: "Barre stable sur les trapèzes, mains fermées ; utilisez une installation sécurisée.",
+      movementCue: "Descendez sous contrôle, genoux dans l'axe des pieds et talons au sol, puis remontez.",
+      notice: "Vidéo de back squat réutilisée : le tempo exact et la charge modérée ne sont pas démontrés ; l'angle arrière masque certains appuis. Suivez la fiche et votre amplitude confortable.",
+      spoken: "Back squat à charge modérée. Placez la barre sur les trapèzes dans une installation sécurisée. Pieds stables, genoux alignés, descendez sous contrôle en trois secondes dans une amplitude confortable puis remontez sans arrondir le dos. Trois séries de dix à douze, deux minutes de repos, tempo trois zéro un un. La vidéo ne montre pas le tempo exact. Arrêtez en cas de douleur.",
+    },
+  },
+  "back-squat-barre-haute": {
+    src: "/videos/back-squat.mp4", poster: "/videos/posters/back-squat.jpg",
+    label: "Vidéo 3D · Back squat barre haute", status: "coached",
+    coaching: {
+      title: "Barre haute sur les trapèzes, descente contrôlée.",
+      handCue: "Barre sur les trapèzes, mains fermées et installation sécurisée.",
+      movementCue: "Descendez sous contrôle, genoux dans l'axe et pieds stables, puis remontez.",
+      notice: "Vidéo de back squat réutilisée : la barre repose haut sur les trapèzes ; l'angle arrière masque certains appuis et le tempo exact n'est pas démontré. Suivez la fiche.",
+      spoken: "Back squat barre haute. Placez la barre sur les trapèzes dans une installation sécurisée. Pieds stables, genoux dans l'axe, descendez en trois secondes dans une amplitude confortable, puis remontez sans arrondir le dos. Quatre séries de huit à dix, deux minutes de repos, tempo trois zéro un zéro. La vidéo ne montre pas le tempo exact. Arrêtez en cas de douleur.",
+    },
+  },
+  "back-squat-test-1rm": {
+    src: "/videos/back-squat.mp4", poster: "/videos/posters/back-squat.jpg",
+    label: "Vidéo 3D · Back squat, test avec précautions", status: "coached",
+    coaching: {
+      title: "Même mouvement : test de force en sécurité.",
+      handCue: "Installez les barres de sécurité à la bonne hauteur ; demandez un pareur compétent pour une charge lourde.",
+      movementCue: "Échauffez-vous progressivement, puis descendez sous contrôle avec la barre stable sur le haut du dos.",
+      notice: "La vidéo montre le geste, pas un test maximal : elle ne démontre ni sécurités correctement réglées ni pareur, et son tempo n'est pas celui de la fiche. Ne testez pas une charge lourde sans installation et aide adaptées.",
+      spoken: "Test de force au back squat. Échauffez-vous progressivement. Réglez des barres de sécurité à la bonne hauteur et demandez un pareur compétent pour une charge lourde. Barre sur les trapèzes, pieds stables, descendez en quatre secondes dans une amplitude maîtrisée, puis remontez sans arrondir le dos. La vidéo ne montre ni les sécurités correctement réglées ni un pareur. Cinq séries de une à cinq répétitions, trois minutes de repos, tempo quatre zéro un zéro. Ne forcez pas en cas de douleur ou de doute.",
+    },
+  },
   // Fessiers 02/14 et 13 : les fichiers déposés servent aux mouvements identiques.
   "hip-thrust-barre": {
     src: "/videos/hip-thrust-barre.mp4",

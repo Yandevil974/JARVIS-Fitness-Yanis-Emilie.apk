@@ -26,3 +26,5 @@ Contrôle visuel : retour vers l'avant puis extension vers l'arrière ; le genou
 - **#04 Hip thrust unilatéral (1 jambe)** : **3 × 12/côté · 2112 · 75 s**, poids du corps selon la fiche. Haut du dos appuyé au banc, un seul pied d'appui. Les essais ne montrent pas assez clairement l'appui ; ne pas les utiliser. La fiche #08 décrit le même geste de base et pourra réutiliser une vidéo appropriée, sans changer son 3 × 10/côté ni son repos. La version lestée #12 est distincte : ne pas supposer qu'une vidéo sans lest la démontre.
 
 La vidéo reçue pour #02 est intégrée en `coached` et partagée avec #14 ; voir [le détail](./64-FESSIERS-02-HIP-THRUST-BARRE.md). Aucune vidéo n'a encore été reçue pour #04. La vidéo #03/#11 et les deux réutilisations d'échauffement ne figurent pas dans l'APK 1.16.0 déjà publié.
+
+Deux nouveaux essais #04 ont été écartés : jambes visuellement fusionnées et banc incliné inadéquat. Aucun clip ne doit être généré à partir de ces références ; voir [le suivi du lot](./65-QUADRICEPS-SQUATS.md).
