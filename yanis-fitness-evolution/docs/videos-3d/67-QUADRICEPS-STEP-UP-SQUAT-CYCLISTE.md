@@ -1,6 +1,6 @@
 # Lot quadriceps : step-up et squat cycliste
 
-Ces deux mouvements sont préparés, **aucune vidéo n'a encore été générée ni reçue**. Le cadre dans la vidéo finale doit être vérifié sur l'ensemble des images, puis dans le lecteur et la vignette de l'application. L'affichage `contain` conserve les pixels du clip ; il ne peut pas récupérer une partie absente du fichier. Garder les GIF d'origine et ne pas supposer que la photo garantit le mouvement ou le tempo.
+Les deux vidéos déposées par Yanis sont intégrées comme indiqué ci-dessous. Le cadre dans la vidéo finale doit être vérifié sur l'ensemble des images, puis dans le lecteur et la vignette de l'application. L'affichage `contain` conserve les pixels du clip ; il ne peut pas récupérer une partie absente du fichier. Garder les GIF d'origine et ne pas supposer que la photo garantit le mouvement ou le tempo.
 
 ## 1 — Step-up au poids du corps sur banc haut
 
@@ -35,3 +35,10 @@ Le GIF commun `/media/fdcc2d01cb5a53d1.gif` montre une barre et des disques sous
 > Plan fixe en 16:9, athlète assez grand pour être lisible tout en laissant une marge pour se redresser, athlète chromé à casquette noire et quadriceps rouges, sans barre ni haltères. Conserver l'athlète et la cale entièrement visibles, de la tête aux chaussures, à la descente et en position debout, avec de l'espace au-dessus de la tête ; ne pas zoomer ni recadrer. Les deux pieds sont proches, parallèles, talons sur la partie haute d'une cale stable et avant-pieds sur sa partie basse ; les semelles restent en contact avec la cale, les mains réunies devant la poitrine. Depuis la position intermédiaire de la photo, remonter en contrôlant les jambes, sans verrouiller brutalement les genoux. Puis descendre lentement en pliant hanches et genoux, qui suivent la direction des orteils, aussi bas que la mobilité le permet sans douleur ni perte d'équilibre. Remonter et répéter. Dos neutre, buste stable, exactement deux bras et deux jambes anatomiques, pas de saut ni de mouvement de la cale. Aucun texte, compteur, poids ou changement de caméra ; montrer une répétition complète.
 
 Le clip ne garantit pas les tempos 3010 et 4010 : les conserver dans chaque fiche et vérifier la profondeur, la stabilité des pieds et le cadre avant intégration.
+
+## Vidéos reçues et intégrées
+
+- **Step-up** : `1794380521826.mp4` (640 × 624, 121 images à 24 i/s, ~5 s ; SHA-256 `037bc9e8f5021a5f1d9fd8da5458a34bc180b84be6390619bece9ecee079b693`). La montée sur le banc puis la redescente sont visibles. Dans les images échantillonnées, la tête et les deux chaussures restent dans le cadre ; les pieds se superposent en haut, rendant le second appui difficile à distinguer. Le rythme exact prescrit n'est pas démontré. Raccordée aux deux fiches step-up, chacune avec sa consigne et son tempo, en `coached`.
+- **Squat cycliste** : `1794380511781.mp4` (1024 × 896, 97 images à 24 i/s, ~4 s ; SHA-256 `9fbe6167687736295f3f2df4aa6e74e0d575c347edf1595eab0ec3a44e8c96b9`). Le squat au poids du corps sur cale et sa remontée sont visibles ; dans les images échantillonnées l'athlète reste entier. Le rythme du clip ne démontre pas les tempos des fiches et la profondeur réelle doit rester adaptée à la mobilité. Raccordée aux deux fiches cycliste, chacune avec sa consigne et son tempo, en `coached`.
+
+Les vidéos ont été copiées sans modification dans `public/videos/` et `release/videos/`, avec posters, GIF et prescriptions conservés et même source dans « Ensuite ». Le lecteur utilise `contain` pour afficher tout le cadre des fichiers, dont les formats reçus sont proches du carré ; contrôler aussi la lisibilité sur l'APK une fois construit. Aucune affirmation de test sur téléphone réel.

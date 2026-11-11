@@ -22,6 +22,55 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Les clips déposés servent aux fiches de même mouvement ; chaque fiche garde ses consignes.
+  "step-up-sur-banc-hauteur-du-genou": {
+    src: "/videos/step-up-banc-poids-du-corps.mp4",
+    poster: "/videos/posters/step-up-banc-poids-du-corps.jpg",
+    label: "Vidéo IA · Step-up sur banc au poids du corps", status: "coached",
+    coaching: {
+      title: "Banc stable, appui sur la jambe haute.",
+      handCue: "Choisissez un banc stable à hauteur adaptée et un support si nécessaire.",
+      movementCue: "Pied entier sur le banc, poussez sur la jambe haute sans élan et redescendez sous contrôle.",
+      notice: "Les pieds se superposent en haut de la vidéo et le tempo exact n'est pas démontré. Gardez un appui stable, suivez la fiche et adaptez la hauteur du banc à votre maîtrise.",
+      spoken: "Step-up sur banc. Posez le pied entier sur un banc stable de hauteur adaptée. Montez sans élan en poussant sur la jambe haute, genou dans l'axe du pied, puis redescendez sous contrôle sans vous laisser tomber. Les pieds se superposent en haut de la vidéo : vérifiez vos appuis. Trois séries de dix par jambe, soixante secondes de repos, tempo deux zéro un un. Prenez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
+  "step-up-haut": {
+    src: "/videos/step-up-banc-poids-du-corps.mp4",
+    poster: "/videos/posters/step-up-banc-poids-du-corps.jpg",
+    label: "Vidéo IA · Step-up haut au poids du corps", status: "coached",
+    coaching: {
+      title: "Même step-up, contrôle de la jambe haute.",
+      handCue: "Choisissez un banc stable à hauteur adaptée et un support si nécessaire.",
+      movementCue: "Poussez sur la jambe haute sans élan et redescendez en contrôlant l'appui.",
+      notice: "Les pieds se superposent en haut de la vidéo et le tempo exact n'est pas démontré. Gardez un appui stable, suivez la fiche et adaptez la hauteur du banc à votre maîtrise.",
+      spoken: "Step-up haut. Posez le pied entier sur un banc stable de hauteur adaptée. Montez sans élan en poussant sur la jambe haute, genou dans l'axe du pied, puis redescendez en quatre secondes sans vous laisser tomber. Les pieds se superposent en haut de la vidéo : vérifiez vos appuis. Quatre séries de huit à dix, soixante secondes de repos, tempo quatre zéro un zéro. Prenez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
+  "squat-cycliste-squat-complet": {
+    src: "/videos/squat-cycliste-poids-du-corps.mp4",
+    poster: "/videos/posters/squat-cycliste-poids-du-corps.jpg",
+    label: "Vidéo IA · Squat cycliste complet au poids du corps", status: "coached",
+    coaching: {
+      title: "Squat cycliste : cale stable et amplitude maîtrisée.",
+      handCue: "Posez les pieds sur une cale stable, talons surélevés ; tenez un support au besoin.",
+      movementCue: "Pieds stables et genoux dans l'axe, descendez dans votre amplitude confortable puis remontez.",
+      notice: "Le clip est accéléré par rapport au tempo de la fiche ; la profondeur dépend de votre mobilité. Ne forcez pas l'amplitude et gardez les pieds en appui.",
+      spoken: "Squat cycliste au poids du corps. Placez les pieds rapprochés sur une cale stable, talons surélevés. Descendez en trois secondes, genoux dans l'axe des pieds et dos neutre, aussi bas que votre mobilité le permet sans douleur. Remontez en une seconde. Cinq séries de huit à dix, soixante secondes de repos, tempo trois zéro un zéro. Le rythme de la vidéo ne montre pas le tempo de la fiche. Tenez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
+  "squat-cycliste": {
+    src: "/videos/squat-cycliste-poids-du-corps.mp4",
+    poster: "/videos/posters/squat-cycliste-poids-du-corps.jpg",
+    label: "Vidéo IA · Squat cycliste au poids du corps", status: "coached",
+    coaching: {
+      title: "Même squat cycliste, descente contrôlée.",
+      handCue: "Posez les pieds sur une cale stable, talons surélevés ; tenez un support au besoin.",
+      movementCue: "Pieds stables et genoux dans l'axe, descendez dans votre amplitude confortable puis remontez.",
+      notice: "Le clip est accéléré par rapport au tempo de la fiche ; la profondeur dépend de votre mobilité. Ne forcez pas l'amplitude et gardez les pieds en appui.",
+      spoken: "Squat cycliste au poids du corps. Placez les pieds rapprochés sur une cale stable, talons surélevés. Descendez en quatre secondes, genoux dans l'axe des pieds et dos neutre, aussi bas que votre mobilité le permet sans douleur. Remontez en une seconde. Cinq séries de sept à neuf, deux minutes de repos, tempo quatre zéro un zéro. Le rythme de la vidéo ne montre pas le tempo de la fiche. Tenez un support si nécessaire et arrêtez en cas de douleur.",
+    },
+  },
   // Vidéo déposée par Yanis : goblet squat avec haltère tenu à la poitrine.
   "goblet-squat": {
     src: "/videos/goblet-squat.mp4",

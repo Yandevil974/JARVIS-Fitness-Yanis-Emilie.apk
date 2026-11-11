@@ -2,7 +2,9 @@
 
 Yanis demande que les vidéos de l'application où l'athlète n'est pas visible en entier soient refaites. Cela modifie la décision précédente de garder un cadrage coupé : inscrire les clips concernés à refaire, vérifier les remplacements en mouvement complet, sans supprimer les GIF ni multiplier les générations pour un même mouvement. Les vidéos actuelles restent provisoirement raccordées, avec leurs réserves, jusqu'à réception d'un remplacement ; elles ne constituent pas une validation du cadrage.
 
-## Comptage à ce stade
+## Comptage historique avant le lot step-up / squat cycliste
+
+Pour le comptage actuel, voir [l’inventaire](./53-INVENTAIRE-TOUS-LES-MODULES.md).
 
 - 203 fiches musculation Elite et Émilie : 116 ont une vidéo raccordée, 87 n'en ont pas.
 - Les 116 fiches utilisent 104 chemins vidéo différents, mais 93 contenus binaires différents par SHA-256 : plusieurs noms de fichiers sont des copies identiques. Ce décompte concerne seulement les vidéos actuellement utilisées par les fiches Elite et Émilie ; il n'est ni un comptage des nouveaux mouvements à produire ni un audit de cadrage.
