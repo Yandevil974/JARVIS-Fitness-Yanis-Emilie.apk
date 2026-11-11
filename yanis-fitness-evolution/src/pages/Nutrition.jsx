@@ -23,11 +23,12 @@ import {
   today,
   dateLabel,
   addDays,
+  monday,
   numberLabel,
   uid,
 } from "../engine/utils.js";
 export default function Nutrition() {
-  const { p, updateProfile, setModal, navigate, notify } = useApp();
+  const { p, updateProfile, setModal, navigate, notify, tab, setTab } = useApp();
   const [date, setDate] = useState(today()),
     [calorieDraft, setCalorieDraft] = useState(
       p.nutrition.manualCalories ?? "",
@@ -74,6 +75,13 @@ export default function Nutrition() {
           Noter un aliment
         </Button>
       </PageHeading>
+      <div className="nutrition-menu-switch" role="group" aria-label="Vue du menu alimentaire">
+        <Button variant={tab === "week" ? "secondary" : "primary"} onClick={() => setTab("today")}>Menu du jour</Button>
+        <Button variant={tab === "week" ? "primary" : "secondary"} onClick={() => setTab("week")}>Menu de la semaine</Button>
+      </div>
+      {tab === "week" ? (
+        <WeeklyMenu p={p} date={date} setDate={setDate} openDay={(day) => { setDate(day); setTab("today"); }} />
+      ) : <>
       <div className="nutrition-day">
         <IconButton
           icon="ChevronLeft"
@@ -359,6 +367,31 @@ export default function Nutrition() {
           </Panel>
         </aside>
       </div>
+      </>}
     </>
   );
+}
+
+function WeeklyMenu({ p, date, setDate, openDay }) {
+  const start = monday(date);
+  const days = Array.from({ length: 7 }, (_, i) => addDays(start, i));
+  return <section className="nutrition-week" aria-label="Menu alimentaire de la semaine">
+    <div className="nutrition-day">
+      <IconButton icon="ChevronLeft" label="Semaine précédente" onClick={() => setDate(addDays(date, -7))} />
+      <h2>Semaine du {dateLabel(start)} au {dateLabel(days[6])}</h2>
+      <IconButton icon="ChevronRight" label="Semaine suivante" onClick={() => setDate(addDays(date, 7))} />
+      <Button variant="secondary small" onClick={() => setDate(today())}>Cette semaine</Button>
+    </div>
+    <p>Menus proposés, pas des repas enregistrés. Les calories sont des estimations ; ouvrez un jour pour voir les portions et confirmer ce que vous avez réellement mangé.</p>
+    <div className="nutrition-week-grid">
+      {days.map(day => {
+        const menu = generateMeals(p, day, p.nutrition.variant || 0);
+        return <Panel className="nutrition-week-day" key={day}>
+          <h3>{dateLabel(day, { weekday: "long", day: "numeric", month: "long" })}</h3>
+          {menu ? <><strong>{numberLabel(menu.total.cal, 0)} kcal estimées</strong><ul>{menu.meals.map((meal,i) => <li key={i}><b>{meal.name}</b> : {meal.rows.map(r => r.food).join(", ")}</li>)}</ul></> : <p>Complétez le profil pour générer des propositions.</p>}
+          <Button variant="secondary small" onClick={() => openDay(day)}>Voir ce jour</Button>
+        </Panel>;
+      })}
+    </div>
+  </section>;
 }

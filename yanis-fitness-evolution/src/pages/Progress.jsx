@@ -95,7 +95,7 @@ export default function Progress() {
       ) : value === "body" ? (
         <Body />
       ) : value === "photos" ? (
-        <Photos />
+        <Photos key={p.id} />
       ) : value === "reports" ? (
         <Reports />
       ) : (
@@ -895,8 +895,7 @@ function Photos() {
         <div>
           <h2>Le progrès se voit aussi.</h2>
           <p>
-            Des photos privées, dans des conditions comparables. Aucune photo
-            envoyée sur un serveur.
+            Comparez vos photos privées localement : même vue, pose, distance et lumière facilitent la comparaison. Aucun résultat n’est calculé automatiquement.
           </p>
         </div>
         <div className="photo-controls">
@@ -974,6 +973,12 @@ function Photos() {
                 </Select>
               </Field>
             </div>
+            <div className="photo-pair" aria-label="Photos côte à côte">
+              {[a, b].map((photo, index) => <figure key={index}>
+                {photo && <img src={assetSrc(photo.data)} alt={index === 0 ? "Photo de départ" : "Nouvelle photo"} />}
+                <figcaption>{index === 0 ? "Départ" : "Nouvelle"} · {photo?.date && !photo.needsDate ? dateLabel(photo.date) : "Date à vérifier"} · {photo?.view || "Vue à préciser"}{photo?.simulated ? " · SIMULATION" : ""}</figcaption>
+              </figure>)}
+            </div>
             <div className="comparison-stage">
               {b && <img src={assetSrc(b.data)} alt="Photo de comparaison" />}
               {a && (
@@ -1003,6 +1008,8 @@ function Photos() {
                 onChange={(e) => setSlider(e.target.value)}
               />
             </div>
+            {a && b && (a.id === b.id || a.view !== b.view || a.simulated || b.simulated || a.needsDate || b.needsDate || (a.date && b.date && a.date > b.date)) && <p role="status">Vérifiez votre sélection : choisissez deux photos réelles de la même vue, dans l’ordre chronologique. Les photos anciennes sans date fiable restent à vérifier.</p>}
+            <p>À vous de juger si une évolution est visible : une différence de lumière, de pose ou de cadrage peut modifier l’apparence.</p>
           </>
         ) : (
           <Empty

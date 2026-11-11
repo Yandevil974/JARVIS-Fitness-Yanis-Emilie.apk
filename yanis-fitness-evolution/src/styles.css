@@ -18543,3 +18543,25 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .rest-next-thumb.has-video > svg, .warmup-step-thumb.has-video > svg { display: none; }
 .warmup-overview > span { position: static; border-radius: 0; }
 .image-viewer > video.movement-video { object-fit: contain; }
+
+/* Accès aux repas et propositions hebdomadaires. */
+.dashboard-food-link { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:16px 0; }
+.dashboard-food-link h2 { margin:0 0 4px; font-size:18px; }
+.dashboard-food-link p, .nutrition-week > p { margin:0; color:var(--muted); font-size:13px; }
+.dashboard-food-actions, .nutrition-menu-switch { display:flex; flex-wrap:wrap; gap:8px; }
+.nutrition-menu-switch { margin-bottom:16px; }
+.nutrition-week-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 260px),1fr)); gap:12px; margin-top:16px; }
+.nutrition-week-day h3 { text-transform:capitalize; margin:0 0 7px; }
+.nutrition-week-day ul { padding-left:18px; line-height:1.6; font-size:13px; }
+@media(max-width:600px) { .dashboard-food-link { align-items:flex-start; flex-direction:column; } }
+.photo-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:16px 0; }
+.photo-pair figure { margin:0; min-width:0; text-align:center; }
+.photo-pair img { width:100%; height:clamp(180px,36vw,450px); object-fit:contain; background:#141e27; border-radius:9px; }
+.photo-pair figcaption { font-size:12px; margin-top:6px; color:var(--muted); }
+.daily-brief { margin:0 0 16px; padding:16px; border:1px solid #3a738f; border-radius:12px; background:rgba(32,87,114,.16); }
+.daily-brief h3 { margin:0 0 8px; } .daily-brief p { line-height:1.5; font-size:13px; }
+.daily-brief-reminder { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:10px 0; border-top:1px solid rgba(130,170,190,.25); }
+.daily-brief-reminder small { display:block; margin-top:3px; }
+.daily-brief-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+.daily-brief-settings { display:grid; gap:10px; margin-top:14px; }
+.daily-brief-settings label { display:grid; grid-template-columns:minmax(150px,1fr) minmax(140px,1fr); gap:8px; align-items:center; font-size:13px; }

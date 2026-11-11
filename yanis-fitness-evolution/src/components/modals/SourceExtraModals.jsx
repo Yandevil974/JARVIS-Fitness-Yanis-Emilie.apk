@@ -1,3 +1,4 @@
+import DailyBrief from "../DailyBrief.jsx";
 import React, { useState, useRef } from "react";
 import { useApp } from "../../store/AppContext.jsx";
 import {
@@ -40,6 +41,7 @@ export function DayScheduleModal({ date }) {
       subtitle="Tout le contenu prévu, et les résultats réellement enregistrés."
       onClose={closeModal}
     >
+      {date === today() && <DailyBrief key={p.id} />}
       {day.deload && (
         <div className="week-deload-note">
           <Icon name="Info" size={18} />

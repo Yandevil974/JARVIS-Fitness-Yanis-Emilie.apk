@@ -194,6 +194,9 @@ export default function Dashboard() {
                 >
                   {p.workout ? "Reprendre ma séance" : "Lancer la séance"}
                 </Button>
+                <Button variant="secondary" icon="CalendarDays" onClick={() => setModal({ type: "day-schedule", date: today() })}>
+                  Programme du jour & rappels
+                </Button>
                 <button
                   className="hero-detail"
                   onClick={() => navigate("program", "source")}
@@ -212,6 +215,13 @@ export default function Dashboard() {
               <span className="hero-code">J / TRAINING SYSTEM</span>
             </div>
           </section>
+          <Panel className="dashboard-food-link">
+            <div><h2>Mes menus alimentaires</h2><p>Retrouvez les propositions du jour ou de la semaine, sans les enregistrer comme consommées.</p></div>
+            <div className="dashboard-food-actions">
+              <Button variant="primary" icon="Utensils" onClick={() => navigate("nutrition", "today")}>Menu du jour</Button>
+              <Button variant="secondary" icon="CalendarDays" onClick={() => navigate("nutrition", "week")}>Menu de la semaine</Button>
+            </div>
+          </Panel>
           <WeekSchedule />
           <div className="dashboard-team-link">
             <Icon name="UsersRound" size={29} />
