@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Vidéo déposée pour la fiche Jarvis ; sans cale ni charge.
+  "squat-au-poids-du-corps": {
+    src: "/videos/squat-au-poids-du-corps.mp4",
+    poster: "/videos/posters/squat-au-poids-du-corps.jpg",
+    label: "Vidéo IA · Squat au poids du corps",
+    status: "coached",
+    coaching: {
+      title: "Pieds à plat, descendez à une profondeur confortable.",
+      handCue: "Gardez les bras devant vous pour l'équilibre, sans charge.",
+      movementCue: "Reculez les hanches et pliez les genoux dans l'axe des pieds, puis poussez dans les deux pieds pour remonter.",
+      notice: "La vidéo repart brusquement en position basse lorsqu'elle boucle et ne démontre pas précisément le tempo de la fiche. Réalisez chaque descente et remontée sous contrôle.",
+      spoken: "Squat au poids du corps. Pieds à plat, écartés environ à la largeur des épaules, bras devant pour l'équilibre. Reculez les hanches et descendez en trois secondes à une profondeur confortable, genoux dans l'axe des pieds et dos neutre. Poussez dans les deux pieds pour remonter en une seconde sans verrouiller brutalement les genoux. La boucle vidéo repart brusquement : ne reproduisez pas ce saut, gardez le mouvement continu. Trois séries de dix à quinze, soixante secondes de repos, tempo trois zéro un zéro. Arrêtez en cas de douleur.",
+    },
+  },
   // Même fente marchée observée dans la vidéo existante : pas de nouvelle génération.
   "fentes-marchees": {
     src: "/videos/fentes-avant-alternees.mp4",
