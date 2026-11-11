@@ -20,9 +20,9 @@ Vidéo déposée `1794208548995.mp4` : 121 images à 24 i/s, environ 5 s, SHA-25
 
 Contrôle visuel : retour vers l'avant puis extension vers l'arrière ; le genou se fléchit au retour, le câble est masqué par la jambe d'appui à certains moments et le tempo exact n'est pas établi. Les consignes demandent de garder le câble libre, le bassin stable et le genou légèrement fléchi. **#11** conserve 3 × 12–15/côté et son drop set final : réduction de charge de 30 % puis poursuite jusqu'à l'échec technique. La vidéo ne montre pas la réduction de charge ; la consigne le précise. Ne pas régénérer ce geste identique.
 
-## #02 et #04 : en attente de références fiables
+## #02 — référence conservée à la demande de Yanis ; #04 toujours en attente
 
-- **#02 Hip thrust barre** : **3 × 12–15 · 3112 · 90 s**. Haut du dos appuyé sur le bord du banc, barre en travers des hanches, pieds stables. Les essais ne montrent pas un appui satisfaisant ; ne pas les utiliser.
+- **#02 Hip thrust barre** : **3 × 12–15 · 3112 · 90 s**. Yanis demande explicitement de conserver [cette image](./fessiers-02-hip-thrust-barre-capture-approuvee.jpg). La capture d’écran reçue est préservée à l’identique ; elle coupe le bas des chaussures et comporte une icône de téléchargement. La barre et les mains ne sont pas entièrement lisibles derrière le disque : tenir compte de ces limites lors de la génération. Haut du dos appuyé sur le banc, barre en travers des hanches, pieds stables. La même vidéo pourra illustrer #14 test de charge, avec ses prescriptions distinctes et sa consigne de sécurité.
 - **#04 Hip thrust unilatéral (1 jambe)** : **3 × 12/côté · 2112 · 75 s**, poids du corps selon la fiche. Haut du dos appuyé au banc, un seul pied d'appui. Les essais ne montrent pas assez clairement l'appui ; ne pas les utiliser. La fiche #08 décrit le même geste de base et pourra réutiliser une vidéo appropriée, sans changer son 3 × 10/côté ni son repos. La version lestée #12 est distincte : ne pas supposer qu'une vidéo sans lest la démontre.
 
 Aucune vidéo n'a encore été reçue pour #02 et #04. La vidéo #03/#11 et les deux réutilisations d'échauffement ne figurent pas dans l'APK 1.16.0 déjà publié.

@@ -18,4 +18,4 @@ Les indications de tempo servent de consigne au générateur ; elles ne garantis
 
 ## Autres fiches fessiers encore en attente
 
-Les nouveaux essais #02 et #04 ne sont pas présentés : l'appui et/ou la tenue de barre restent visuellement ambigus. #02 et #14 pourront partager une vidéo de hip thrust barre fidèle ; #04 et #08 pourront partager une vidéo unilatérale au poids du corps fidèle. #12 est lestée et reste une variante distincte. Ne pas dépenser de crédits sur une référence de ces exercices tant que ses appuis ne sont pas clairement représentés.
+Les nouveaux essais #02 et #04 ne sont pas présentés : l'appui et/ou la tenue de barre restent visuellement ambigus. #02 et #14 pourront partager une vidéo de hip thrust barre fidèle ; #04 et #08 pourront partager une vidéo unilatérale au poids du corps fidèle. #12 est lestée et reste une variante distincte. Pour #04/#08 et #12, ne pas dépenser de crédits tant que les appuis ne sont pas clairement représentés.
