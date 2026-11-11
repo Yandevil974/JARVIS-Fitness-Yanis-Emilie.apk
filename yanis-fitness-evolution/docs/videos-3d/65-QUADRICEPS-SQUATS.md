@@ -29,3 +29,7 @@ Deux essais supplémentaires ont été écartés : dans le premier les jambes fu
 ## Vidéo goblet reçue et intégrée
 
 `1794376345822.mp4` : 640 × 360, 121 images à 24 i/s, environ 5 secondes ; SHA-256 `ac3eab3406bdbb265efa60fcbef6ea6afb0087267f001a61fa19d9e47fa27a37`. Copiée intacte dans `public/videos/goblet-squat.mp4` et `release/videos/goblet-squat.mp4`, elle montre un squat avec haltère vertical tenu à deux mains à la poitrine, descente et remontée. La tête sort du cadre en haut ; les pieds bougent légèrement et le tempo 3011 n'est pas démontré. Intégrée en **coached** avec rappel des appuis, du tempo et de l'amplitude confortable, sans modifier le GIF ni la prescription. La vignette « Ensuite » utilise la même vidéo. Aucune autre fiche n'est automatiquement raccordée.
+
+## Reprise du cadrage demandée par Yanis
+
+La tête sortant du cadre, Yanis demande maintenant de refaire cette vidéo. Le clip reste provisoirement en place en attendant le remplacement, avec la réserve, mais n'est pas considéré conforme au nouveau critère. Une [nouvelle référence large et son prompt](./66-CADRAGE-INTEGRAL-ET-COMPTAGE.md) ont été préparés.
