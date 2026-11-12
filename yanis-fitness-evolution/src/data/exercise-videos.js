@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Quadriceps #24 : vidéo reçue, fente statique avec pied avant surélevé.
+  "split-squat-barbell-pied-avant-sureleve": {
+    src: "/videos/split-squat-barbell-pied-avant-sureleve.mp4",
+    poster: "/videos/posters/split-squat-barbell-pied-avant-sureleve.jpg",
+    label: "Vidéo IA · Split squat barre, pied avant surélevé",
+    status: "coached",
+    coaching: {
+      title: "Pied avant surélevé, barre sur le haut du dos.",
+      handCue: "Tenez la barre à deux mains sur les trapèzes, sous la base du cou ; gardez le cou dégagé.",
+      movementCue: "Gardez le pied avant à plat sur la marche et le pied arrière sur ses orteils au sol ; fléchissez les genoux sans déplacer les pieds, puis remontez sous contrôle.",
+      notice: "Le corps et les appuis sont visibles sur les images contrôlées. La vidéo ne démontre pas fidèlement le tempo 3210 ni une pause complète de deux secondes en bas ; sa boucle repart de la position basse. Suivez la fiche, pas le rythme ou le saut de la boucle.",
+      spoken: "Split squat barre, pied avant surélevé. Posez le pied avant à plat sur une marche basse stable et le pied arrière sur ses orteils au sol, sans banc à l'arrière. Placez la barre sur les trapèzes, sous la base du cou, et tenez-la des deux mains. Buste haut, descendez en trois secondes, genou avant dans l'axe des orteils et genou arrière vers le sol sans le heurter. Marquez deux secondes en bas puis remontez en une seconde sans déplacer les pieds. Travaillez les deux côtés. La vidéo ne montre pas fidèlement ce tempo ni la pause de deux secondes, et la boucle saute : suivez la consigne. Quatre séries de sept à neuf répétitions, quatre-vingt-dix secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
   // Vidéo déposée pour la fiche Jarvis ; sans cale ni charge.
   "squat-au-poids-du-corps": {
     src: "/videos/squat-au-poids-du-corps.mp4",
