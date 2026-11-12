@@ -43,7 +43,6 @@ const NAV = [
   ["cardio", "Waves", "Cardio & piscine"],
   ["recovery", "Leaf", "Récupération"],
   ["team", "UsersRound", "Mon équipe"],
-  ["apercu", "Images", "Aperçu visuels"],
 ];
 const PAGE = {
   dashboard: Dashboard,
@@ -153,7 +152,7 @@ export default function App() {
   const Page = PAGE[page] || Dashboard;
   const label =
     NAV.find((n) => n[0] === page)?.[2] ||
-    { profile: "Profil", nutrition: "Nutrition" }[page];
+    { profile: "Profil", nutrition: "Nutrition", apercu: "Aperçu visuels" }[page];
   return (
     <div className="app-shell">
       <a href="#main" className="skip-link">
