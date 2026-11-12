@@ -1,0 +1,25 @@
+# Lot d'étirements — références à examiner, sans vidéo produite
+
+Les fiches d'étirement ci-dessous ne sont pas raccordées à une vidéo dans l'audit actuel ; leurs GIF d'origine restent en place. Ces images IA sont des références, pas des vidéos ni des garanties d'anatomie ou de technique. Les prompts sont conçus pour des extraits d'environ cinq secondes : la durée de maintien de la fiche reste celle du programme, et l'animation ne remplace pas la consigne. Vérifier les deux côtés quand indiqué, l'absence de douleur et l'intégralité du corps au fil du clip.
+
+## 1. Cobra doux
+
+Image : [cobra doux](./etirements-01-cobra-doux-v2.jpg). En appui sur les mains, coudes fléchis, poitrine légèrement relevée, jambes au sol ; la main et le pied les plus éloignés sont partiellement superposés par la perspective. La coloration rouge ne constitue pas une preuve anatomique. Le mouvement peut éventuellement convenir aux deux fiches **Cobra doux** et **Étirement du cobra**, à vérifier après réception et à accompagner de leurs consignes respectives ; ne pas générer deux clips identiques d'avance. Le GIF commun est `/media/1651c3bb2dc4e3b0.gif`. Durée de fiche 20–30 s.
+
+> Vidéo réaliste de cinq secondes en plan fixe 16:9, vue de profil comme l'image. Un seul athlète chromé, casquette et short noirs, chaussures blanches, abdomen rouge. Garder le corps entier, tête, mains et deux pieds visibles pendant tout le clip. Allongé sur le ventre, bassin et cuisses en contact avec le tapis, les deux mains à plat près des épaules. Lever doucement et légèrement la poitrine sans forcer les lombaires, coudes souples, épaules basses, nuque neutre, puis maintenir cette position avec une respiration calme et un retour de boucle doux. Pas de forte cambrure, pas de bassin qui flotte, ni de membre supplémentaire, texte ou autre personne.
+
+## 2. Position de l'enfant
+
+Image : [position de l'enfant](./etirements-02-position-enfant-v3.jpg). Hanches vers les talons, bras allongés ; la tête est un peu au-dessus du tapis et l'appui des deux pieds se superpose partiellement. Ne pas forcer le front ou les hanches contre le sol : rester dans une position confortable. Si le clip le confirme, une seule vidéo pourrait servir aux deux fiches **Position de l'enfant** et **Position de l'enfant (Balasana)**, avec leurs consignes ; le GIF commun `/media/ca55d85fe63748ff.gif` est conservé. Durée 30–45 s.
+
+> Vidéo réaliste de cinq secondes en plan fixe 16:9, vue de profil comme l'image. Athlète entier, mains, tête, genoux et deux chaussures dans le cadre du début à la fin. À genoux sur le tapis, amener doucement les hanches vers les talons, sans forcer, et replier le buste sur les cuisses. Allonger les deux bras devant, paumes au tapis ; tête relâchée, front près du tapis ou posé si confortable. Maintenir la posture et respirer doucement, sans rebond, sans membre supplémentaire ni changement de caméra. Montrer une position stable plutôt qu'un squat ou une pompe.
+
+## 3. Quadriceps debout, talon vers la fesse
+
+Image : [quadriceps debout](./etirements-03-quadriceps-debout.jpg). Un pied posé au sol, l'autre cheville tenue derrière et une main en appui sur le montant ; certains contours se superposent dans la vue de profil, notamment l'appui au support. Fiche **Talon vers la fesse (debout)**, 20–30 s par côté ; GIF `/media/56815335e3345463.gif` conservé. Aucun poids, pas une fente ou un mouvement de force.
+
+> Vidéo réaliste de cinq secondes, plan fixe large 16:9, même athlète et même vue que l'image. Tête, deux mains, deux jambes et deux chaussures restent entièrement visibles, avec de la marge autour. Debout, un pied à plat au sol, une main tient un support fixe. L'autre main tient doucement sa propre cheville derrière, talon vers la fesse, genou dirigé vers le sol et proche de l'autre genou. Buste droit, bassin stable ; maintenir confortablement et respirer, sans tirer fort, sans rebond ni se pencher. Une seule personne, exactement deux jambes et deux bras. Répéter de l'autre côté pendant la séance, même si le clip ne montre qu'un côté.
+
+## Contrôles et autres quadriceps
+
+Pour chaque vidéo reçue : contrôler tout le cadrage, les appuis, le geste et les éventuelles déformations avant raccordement ; utiliser la même vidéo uniquement si le mouvement est réellement adapté aux deux fiches. Les références quadriceps #05 et #17 ont été présentées auparavant et attendent des vidéos si elles n'ont pas déjà été créées ailleurs. #09 et #19 ont déjà des vidéos provisoires : ne pas les présenter comme manquantes. Nouveaux essais #11 front squat (prise et coudes), #12 bulgare double appui (deux haltères mal visibles) et #16 squat sur sécurités (barre non posée sur les sécurités) écartés : ne pas dépenser de crédits vidéo sur eux. #25 reste ambigu, le libellé n'indiquant pas explicitement le saut : ne pas raccorder sans confirmer l'équivalence avec #20.
