@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>JARVIS — essais de séance</title><link rel="stylesheet" href="/essais.css"></head>
+<body>
+<header class="preview-header">
+  <div class="preview-intro"><span class="preview-badge">AVANT VALIDATION</span><div><strong>Deux essais pour ta page de séance</strong><p>Maquette de démonstration · aucune donnée personnelle ni séance enregistrée</p></div></div>
+  <div class="switcher" role="group" aria-label="Choisir un essai"><button class="active" data-mode="colors" aria-pressed="true"><b>01</b> Les couleurs</button><button data-mode="full" aria-pressed="false"><b>02</b> Le style entier</button></div>
+  <p id="explanation">La disposition actuelle est conservée. Seules les couleurs s’inspirent de ta référence : bleu nuit, cyan, or et rouge.</p>
+</header>
+<main class="app-shell colors" id="app">
+  <div class="hud-top"><span>J.A.R.V.I.S. <i>//</i> CENTRE DE SÉANCE</span><span>◉ ENTRAÎNEMENT ACTIF</span></div>
+  <header class="session-header">
+    <div class="session-title"><span class="eyebrow">SÉANCE EN COURS <i>//</i> SEMAINE 01</span><h1>Bas du corps</h1><p>Exemple de séance · 1 exercice sur 5</p></div>
+    <div class="top-actions"><button class="square" aria-label="Réglages de démonstration">⚙</button><button class="finish" type="button">Terminer</button><button class="jarvis" type="button"><span class="orb">✧</span><span><strong>J.A.R.V.I.S.</strong><small>ADAPTER LA SÉANCE</small></span><span class="arrow">↗</span></button></div>
+  </header>
+  <div class="progress"><span></span></div>
+  <div class="sequence"><div class="seq active"><small>01 / EN COURS</small><b>Squat au poids du corps</b></div><div class="seq"><small>02 / À SUIVRE</small><b>Fentes avant</b></div><div class="seq"><small>03 / ENSUITE</small><b>Leg extension</b></div></div>
+  <section class="panel exercise"><div class="panel-header"><div><span class="eyebrow">EXERCICE EN COURS <i>//</i> 01 / 05</span><h2>Squat au poids du corps</h2><p>Quadriceps · 3 séries · mouvement contrôlé</p></div><button class="square" type="button" aria-label="Détail de démonstration">↗</button></div>
+    <div class="movement"><div class="video-wrap"><video src="/squat.mp4" autoplay muted loop playsinline controls aria-label="Vidéo de démonstration du squat"></video><div class="video-chip"><small>SÉRIE</small><b>1 / 3</b></div><div class="target-chip"><small>OBJECTIF</small><b>12 RÉP.</b></div><div class="scan-lines"></div></div>
+      <div class="video-controls"><span>▶ VIDÉO DE L’EXERCICE</span><span>↔ Corps entier</span></div>
+      <div class="entry"><div class="load"><div><span class="eyebrow">CHARGE DE LA SÉRIE</span><strong>Charge réalisée</strong><small>Modifiable sous la vidéo</small></div><label><input aria-label="Charge réalisée, exemple" type="number" value="0" min="0"><span>kg</span></label></div>
+      <div class="set-heading"><div><span class="eyebrow">SAISIE DE LA SÉRIE <i>//</i> 01</span><h3>Votre série</h3></div><span class="ready">● PRÊT</span></div>
+      <div class="inputs"><label>Répétitions<input aria-label="Répétitions, exemple" type="number" value="12"></label><label>Effort ressenti<select aria-label="Effort ressenti, exemple"><option>À renseigner</option><option>Facile</option><option>Modéré</option><option>Difficile</option></select></label></div>
+      <button class="validate" type="button">✓ &nbsp;Valider la série <span>EXEMPLE · AUCUN ENREGISTREMENT</span> <b>→</b></button></div>
+    </div>
+    <div class="technique"><span class="eyebrow">✧ &nbsp;COACHING JARVIS <i>//</i> CONSIGNE TECHNIQUE</span><p>Garde le mouvement contrôlé et une amplitude confortable.</p></div>
+  </section>
+  <div class="bottom-grid"><section class="panel rest"><span class="eyebrow">TEMPS DE REPOS</span><div class="dial"><div><small>RÉCUPÉRATION</small><strong>01:30</strong><small>REPOS PRÉVU</small></div></div><button type="button" class="outline">▶ Démarrer le repos</button></section><section class="panel coach"><span class="eyebrow">ASSISTANCE VOCALE</span><h3>J.A.R.V.I.S. à vos côtés</h3><p>Conseils, repères et accompagnement pendant ta séance.</p><div class="coach-status">◉ &nbsp; Mode démonstration</div><span class="fine">Le visuel n’active aucune fonctionnalité sur ton téléphone.</span></section><section class="panel next"><span class="eyebrow gold">DÉCISION JARVIS</span><h3>À calibrer</h3><p>Renseigne ta première série pour construire ton historique.</p><div class="meter"><span></span></div><small>DONNÉES D’EXEMPLE</small></section></div>
+  <footer class="shell-footer"><span>J.A.R.V.I.S. FITNESS</span><span>FIN DE L’APERÇU · SÉANCE FICTIVE</span></footer>
+</main><div class="toast" role="status" aria-live="polite"></div>
+<script src="/essais.js"></script></body></html>
