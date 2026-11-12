@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Quadriceps #23 : presse unilatérale, clip reçu.
+  "leg-press-unilateral": {
+    src: "/videos/leg-press-unilateral.mp4",
+    poster: "/videos/posters/leg-press-unilateral.jpg",
+    label: "Vidéo IA · Presse unilatérale",
+    status: "coached",
+    coaching: {
+      title: "Une seule jambe pousse le plateau.",
+      handCue: "Réglez la machine et tenez les poignées ; gardez le pied libre à l'écart du chariot et des rails.",
+      movementCue: "Dos et bassin en appui, un seul pied à plat sur le plateau ; fléchissez puis tendez la jambe sans verrouiller le genou. Travaillez les deux côtés.",
+      notice: "La seconde main est masquée, la coloration rouge s'étend aussi à la jambe libre et au bras et le tempo exact n'est pas démontré. La position du pied libre dépend de la machine ; gardez-le hors de toute pièce mobile.",
+      spoken: "Presse à cuisses unilatérale. Réglez la machine et maintenez dos et bassin en appui. Placez un seul pied à plat sur le plateau, et gardez l'autre jambe à l'écart du chariot et des rails. Descendez en trois secondes dans une amplitude confortable, genou dans l'axe du pied, puis poussez en une seconde sans le verrouiller. Le pied libre ne pousse pas. Travaillez les deux côtés. La coloration rouge s'étend aussi ailleurs dans la vidéo ; suivez la consigne. Quatre séries de dix à douze, quatre-vingt-dix secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
   // Quadriceps #09 : vidéo reçue, provisoire car main au bord du cadre.
   "leg-press": {
     src: "/videos/leg-press.mp4",
