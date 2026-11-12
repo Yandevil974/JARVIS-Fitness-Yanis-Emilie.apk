@@ -5,7 +5,7 @@ buttons.forEach(button => button.addEventListener('click', () => {
   const full = button.dataset.mode === 'full';
   app.className = `app-shell ${full ? 'full' : 'colors'}`;
   buttons.forEach(b => { const active = b === button; b.classList.toggle('active', active); b.setAttribute('aria-pressed', String(active)); });
-  explanation.textContent = full ? 'Habillage complet inspiré de ta référence : panneaux découpés, liserés lumineux, repères HUD, cyan, or et rouge. La vidéo et les commandes restent lisibles.' : 'La disposition actuelle est conservée. Seules les couleurs s’inspirent de ta référence : bleu nuit, cyan, or et rouge.';
+  explanation.textContent = full ? 'Habillage JARVIS complet, avec cadres rectangulaires, liserés lumineux, cyan, or et rouge. La vidéo et les commandes restent lisibles.' : 'La disposition actuelle est conservée. Seules les couleurs s’inspirent de ta référence : bleu nuit, cyan, or et rouge.';
 }));
 let timeout;
 const toast = document.querySelector('.toast');

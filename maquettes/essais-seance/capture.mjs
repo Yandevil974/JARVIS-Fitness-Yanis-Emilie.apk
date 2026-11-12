@@ -15,7 +15,7 @@ try {
     await new Promise(resolve => video.addEventListener('seeked',resolve,{once:true}));
     video.pause();
   });
-  for (const [mode, file] of [['colors','essai-1-couleurs.png'], ['full','essai-2-style-complet.png']]) {
+  for (const [mode, file] of [['full','essai-2-rectangulaire.png']]) {
     await page.locator(`[data-mode="${mode}"]`).click();
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)) throw new Error('Débordement horizontal sur téléphone : '+ mode);
     await page.screenshot({path:resolve('maquettes/essais-seance',file),fullPage:true, animations:'disabled'});
