@@ -1,0 +1,24 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { EXERCISES } from "../src/data/library.js";
+import { videoFor } from "../src/data/exercise-videos.js";
+const hash = p => createHash("sha256").update(readFileSync(p)).digest("hex");
+test("fentes sautées : vidéo reçue, consignes, GIF et prescription conservés", () => {
+  const ex = EXERCISES.find(e => e.id === "drop-lunges-fentes-sautees-controlees");
+  const v = videoFor(ex);
+  assert.deepEqual([ex.defaultSets,ex.repScheme,ex.tempo,ex.rest,ex.gif],[5,"5-7","2010",120,"/media/cb0991bbf1591550.gif"]);
+  assert.equal(v.status,"coached");
+  assert.match(v.coaching.notice,/alternance/);
+  assert.match(v.coaching.spoken,/réception/);
+  assert.equal(v.src,"/videos/drop-lunges-fentes-sautees.mp4");
+  const sha="acb2d6b703bfd8ac848f090cc1569081ffc54c1dd558bc593411589b58bcefde";
+  assert.equal(hash("../1794469077023.mp4"),sha);
+  assert.equal(hash("public"+v.src),sha);
+  assert.equal(hash("release"+v.src),sha);
+  assert.equal(hash("public"+v.poster),hash("release"+v.poster));
+  assert.equal(hash("public"+ex.gif),hash("release"+ex.gif));
+  assert.equal(videoFor("drop-lunges-fentes-controlees"),null);
+  assert.equal(videoFor("split-squat-poulie-basse"),null);
+});

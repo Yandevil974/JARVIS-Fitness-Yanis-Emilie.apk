@@ -567,7 +567,7 @@ test("les pectoraux #14 à #18 dictent le geste, l'inclinaison et la programmati
 
 test("les exercices sans correction spéciale gardent leur consigne tempo", () => {
   const exercise = {
-    id: "back-squat",
+    id: "exercice-sans-correction-test",
     name: "Back squat",
     defaultSets: 4,
     repScheme: "5",

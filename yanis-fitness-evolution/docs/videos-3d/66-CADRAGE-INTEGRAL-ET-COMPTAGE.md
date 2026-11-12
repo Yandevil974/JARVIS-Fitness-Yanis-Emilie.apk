@@ -12,6 +12,10 @@ Pour le comptage actuel, voir [l’inventaire](./53-INVENTAIRE-TOUS-LES-MODULES.
 - Clips dont une coupure de l'athlète est déjà attestée : **au moins deux contenus différents**. `goblet-squat.mp4` : tête coupée à la remontée. `hip-thrust-barre.mp4` : bas des chaussures coupé au début ; ce même clip est utilisé pour les fiches #02 et #14. Le cadrage du reste des vidéos n'a pas encore été vérifié intégralement : le nombre final à refaire n'est pas connu.
 - Pour les épaules #01/#06, les haltères sont partiellement coupés en haut : vérifier séparément le cadrage du corps et du matériel, sans affirmer à ce stade que le corps est coupé.
 
+## Back squat : source coupée découverte ensuite
+
+Sur les images échantillonnées du fichier `back-squat.mp4` (97 images, 24 i/s), la tête et une partie de la barre sortent du cadre en fin de remontée. La source doit être refaite selon le critère corps entier ; une mise à l'échelle ne peut pas la réparer. Elle reste provisoire pour `back-squat`, `back-squat-charge-moderee`, `back-squat-barre-haute` et `back-squat-test-1rm`, désormais toutes en `coached` avec notice sur le cadrage. Un même remplacement pourra être partagé uniquement s'il montre bien ce squat barre classique et reste compatible avec les prescriptions et réserves propres à chaque fiche. Il ne démontre ni la pause sur sécurités de #16 ni une safety bar. Ne pas l'attribuer à #21 tant que le remplacement n'est pas contrôlé ; la fiche accepte néanmoins une barre classique. Le nombre complet de sources coupées reste inconnu.
+
 ## Goblet squat : reprise prioritaire
 
 Nouvelle [référence large](./qua-goblet-squat-reference-cadrage-large.jpg). L'athlète est entier, plus petit dans l'image, avec une grande marge au-dessus de la tête et sous les pieds. Il tient un haltère vertical devant la poitrine ; c'est une position intermédiaire, pas une vidéo. La marge vise à garder la tête dans le cadre au redressement mais seule la vidéo permettra de le vérifier.

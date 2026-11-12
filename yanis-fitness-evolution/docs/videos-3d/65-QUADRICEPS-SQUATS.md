@@ -10,7 +10,7 @@ La vidéo existante `back-squat.mp4` (SHA-256 `221aaaca671baefdc9fd9131dfa0718f9
 | `back-squat-barre-haute` | 4 × 8–10 · 3010 · 120 s | Barre visible sur les trapèzes. |
 | `back-squat-test-1rm` | 5 × 1–5 · 4010 · 180 s | Le geste est montré, **pas les conditions d'un test maximal** : la vidéo ne démontre ni sécurités bien réglées ni pareur. Consigne de réglage des sécurités et d'aide compétente pour une charge lourde. |
 
-Le back squat avec pause complète sur les barres de sécurité n'est **pas** le même geste et n'est pas raccordé. De même, le choix entre safety bar et barre classique ne prouve pas que la safety bar est montrée. Aucun GIF n'a été retiré.
+Le back squat avec pause complète sur les barres de sécurité n'est **pas** le même geste et n'est pas raccordé. La fiche safety bar ou barre classique autorise la barre classique, mais la source actuelle coupe la tête en haut et ne doit pas être attribuée à une fiche supplémentaire avant remplacement contrôlé ; elle ne montre pas une safety bar. Voir [le cadrage du back squat](./66-CADRAGE-INTEGRAL-ET-COMPTAGE.md). Aucun GIF n'a été retiré.
 
 ## Goblet squat — référence pour un futur clip
 

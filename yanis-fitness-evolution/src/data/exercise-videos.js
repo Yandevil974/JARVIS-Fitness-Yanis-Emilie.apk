@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Quadriceps #20 : fentes sautées contrôlées, vidéo déposée.
+  "drop-lunges-fentes-sautees-controlees": {
+    src: "/videos/drop-lunges-fentes-sautees.mp4",
+    poster: "/videos/posters/drop-lunges-fentes-sautees.jpg",
+    label: "Vidéo IA · Fentes sautées contrôlées",
+    status: "coached",
+    coaching: {
+      title: "Petit saut et réception souple en fente.",
+      handCue: "Mains aux hanches ou libres pour l'équilibre ; choisissez un espace stable et dégagé.",
+      movementCue: "Décollez légèrement, placez un pied devant et l'autre derrière, puis amortissez la réception en fléchissant les deux genoux dans une amplitude confortable.",
+      notice: "La vidéo montre un saut et une fente ; l'alternance des côtés et le tempo 2010 ne sont pas clairement démontrés. Suivez la prescription et contrôlez chaque réception.",
+      spoken: "Fentes sautées contrôlées. Dans un espace dégagé, faites un petit saut, placez un pied devant et l'autre derrière, puis amortissez doucement la réception en fléchissant les deux genoux, buste stable et genou avant dans l'axe du pied. Remontez sous contrôle. La vidéo ne montre pas clairement l'alternance ni le tempo : travaillez les deux côtés et suivez votre séance. Cinq séries de cinq à sept répétitions, deux minutes de repos, tempo deux zéro un zéro. Arrêtez en cas de douleur.",
+    },
+  },
   // Quadriceps #15 : hack squat machine, vidéo reçue accompagnée.
   "hack-squat": {
     src: "/videos/hack-squat.mp4",
@@ -176,7 +190,7 @@ export const EXERCISE_VIDEOS = {
       title: "Squat arrière contrôlé, charge modérée.",
       handCue: "Barre stable sur les trapèzes, mains fermées ; utilisez une installation sécurisée.",
       movementCue: "Descendez sous contrôle, genoux dans l'axe des pieds et talons au sol, puis remontez.",
-      notice: "Vidéo de back squat réutilisée : le tempo exact et la charge modérée ne sont pas démontrés ; l'angle arrière masque certains appuis. Suivez la fiche et votre amplitude confortable.",
+      notice: "Vidéo de back squat réutilisée provisoirement : la tête est coupée en haut, le tempo exact et la charge modérée ne sont pas démontrés ; l'angle arrière masque certains appuis. Suivez la fiche et votre amplitude confortable.",
       spoken: "Back squat à charge modérée. Placez la barre sur les trapèzes dans une installation sécurisée. Pieds stables, genoux alignés, descendez sous contrôle en trois secondes dans une amplitude confortable puis remontez sans arrondir le dos. Trois séries de dix à douze, deux minutes de repos, tempo trois zéro un un. La vidéo ne montre pas le tempo exact. Arrêtez en cas de douleur.",
     },
   },
@@ -187,7 +201,7 @@ export const EXERCISE_VIDEOS = {
       title: "Barre haute sur les trapèzes, descente contrôlée.",
       handCue: "Barre sur les trapèzes, mains fermées et installation sécurisée.",
       movementCue: "Descendez sous contrôle, genoux dans l'axe et pieds stables, puis remontez.",
-      notice: "Vidéo de back squat réutilisée : la barre repose haut sur les trapèzes ; l'angle arrière masque certains appuis et le tempo exact n'est pas démontré. Suivez la fiche.",
+      notice: "Vidéo de back squat réutilisée provisoirement : la tête est coupée en haut et la barre repose haut sur les trapèzes ; l'angle arrière masque certains appuis et le tempo exact n'est pas démontré. Suivez la fiche.",
       spoken: "Back squat barre haute. Placez la barre sur les trapèzes dans une installation sécurisée. Pieds stables, genoux dans l'axe, descendez en trois secondes dans une amplitude confortable, puis remontez sans arrondir le dos. Quatre séries de huit à dix, deux minutes de repos, tempo trois zéro un zéro. La vidéo ne montre pas le tempo exact. Arrêtez en cas de douleur.",
     },
   },
@@ -198,7 +212,7 @@ export const EXERCISE_VIDEOS = {
       title: "Même mouvement : test de force en sécurité.",
       handCue: "Installez les barres de sécurité à la bonne hauteur ; demandez un pareur compétent pour une charge lourde.",
       movementCue: "Échauffez-vous progressivement, puis descendez sous contrôle avec la barre stable sur le haut du dos.",
-      notice: "La vidéo montre le geste, pas un test maximal : elle ne démontre ni sécurités correctement réglées ni pareur, et son tempo n'est pas celui de la fiche. Ne testez pas une charge lourde sans installation et aide adaptées.",
+      notice: "La tête est coupée en haut. La vidéo montre le geste, pas un test maximal : elle ne démontre ni sécurités correctement réglées ni pareur, et son tempo n'est pas celui de la fiche. Ne testez pas une charge lourde sans installation et aide adaptées.",
       spoken: "Test de force au back squat. Échauffez-vous progressivement. Réglez des barres de sécurité à la bonne hauteur et demandez un pareur compétent pour une charge lourde. Barre sur les trapèzes, pieds stables, descendez en quatre secondes dans une amplitude maîtrisée, puis remontez sans arrondir le dos. La vidéo ne montre ni les sécurités correctement réglées ni un pareur. Cinq séries de une à cinq répétitions, trois minutes de repos, tempo quatre zéro un zéro. Ne forcez pas en cas de douleur ou de doute.",
     },
   },
@@ -412,14 +426,18 @@ export const EXERCISE_VIDEOS = {
     status: "validated",
   },
   "back-squat": {
-    // Pilote 3 — jambes + barre.
-    // VALIDÉE le 21/10/2026 : montée/descente (4 s, PixVerse), barre posée
-    // sur les trapèzes du début à la fin, quads rouges + fessiers orange,
-    // anatomie OK. Réserve : filigrane PixVerse.ai bref (comme E1).
+    // Source provisoire : la tête sort du cadre en fin de remontée.
     src: "/videos/back-squat.mp4",
     poster: "/videos/posters/back-squat.jpg",
-    label: "Vidéo 3D · Back squat",
-    status: "validated",
+    label: "Vidéo IA · Back squat, cadrage à refaire",
+    status: "coached",
+    coaching: {
+      title: "Squat arrière, barre sur le haut du dos.",
+      handCue: "Placez la barre sur les trapèzes, sous la base du cou, avec les deux mains et des sécurités adaptées.",
+      movementCue: "Pieds stables, descendez avec les genoux dans l'axe puis remontez sous contrôle.",
+      notice: "La tête est coupée en haut dans la vidéo source : ce clip reste provisoire et doit être refait. Suivez le tempo et la prescription de votre séance.",
+      spoken: "Back squat. Placez la barre sur les trapèzes, sous la base du cou. Pieds stables, descendez sous contrôle, genoux dans l'axe des pieds, puis remontez. La tête est coupée dans la vidéo ; suivez votre prescription. Utilisez une installation sécurisée et arrêtez en cas de douleur.",
+    },
   },
   // ---- VAGUE 1 LOT 1 (biceps, validé le 22/10/2026) ----
   "curl-barre-debout": {

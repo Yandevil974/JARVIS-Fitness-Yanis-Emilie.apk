@@ -18,6 +18,7 @@ test('back squats partagés : prescriptions, GIF, voix, vignette et sécurité',
  const original=videoFor('back-squat'); const expected='221aaaca671baefdc9fd9131dfa0718f9a53178df91ee8f74993631578bd522a';
  assert.equal(hash(`public${original.src}`),expected);assert.equal(hash(`release${original.src}`),expected);
  for(const [id,sets,reps,tempo,rest,gif] of cases){const ex=EXERCISES.find(e=>e.id===id),v=videoFor(ex);assert.deepEqual([ex.defaultSets,ex.repScheme,ex.tempo,ex.rest,ex.gif],[sets,reps,tempo,rest,gif]);assert.equal(v.src,original.src);assert.equal(v.poster,original.poster);assert.equal(v.status,'coached');assert.ok(exerciseIntroCue(ex,null).text.includes(v.coaching.spoken));assert.ok(techniqueCue(ex,null).text.includes(v.coaching.spoken));const next=nextRestExercise({currentIndex:0,exercises:[{exerciseId:id,targetSets:sets,sets:[]}]});assert.equal(next.video.src,v.src);assert.equal(nextRestModal(next).notice,v.coaching.notice);assert.equal(hash(`public${gif}`),hash(`release${gif}`));}
+ for(const id of ['back-squat',...cases.map(c=>c[0])]) { assert.equal(videoFor(id).status,'coached'); assert.match(videoFor(id).coaching.notice,/tête est coupée/); }
  assert.match(videoFor('back-squat-test-1rm').coaching.notice,/ni sécurités correctement réglées ni pareur/);
  assert.equal(videoFor('back-squat-inertie-pause-complete'),null);
 });
