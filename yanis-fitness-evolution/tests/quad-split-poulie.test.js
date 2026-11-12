@@ -1,0 +1,21 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {createHash} from "node:crypto";
+import {readFileSync} from "node:fs";
+import {EXERCISES} from "../src/data/library.js";
+import {videoFor} from "../src/data/exercise-videos.js";
+const sha = p => createHash("sha256").update(readFileSync(p)).digest("hex");
+test("split squat poulie : clip provisoire, cadrage signalé et GIF conservé", () => {
+ const ex=EXERCISES.find(e=>e.id==="split-squat-poulie-basse"),v=videoFor(ex);
+ assert.deepEqual([ex.defaultSets,ex.repScheme,ex.tempo,ex.rest,ex.gif],[4,"6-8","4010",90,"/media/0506f08e38e5f283.gif"]);
+ assert.equal(v.status,"coached");
+ assert.match(v.coaching.notice,/chaussures sont coupées/);
+ assert.match(v.coaching.notice,/doit être refaite/);
+ assert.match(v.coaching.spoken,/quatre secondes/);
+ assert.equal(v.src,"/videos/split-squat-poulie-basse.mp4");
+ const expected="f54d19f2f0f1c630801c7d6f5757c3d98da193f2b172cfc4ee5447e6afb36628";
+ assert.equal(sha("../1794470188300.mp4"),expected);
+ assert.equal(sha("public"+v.src),expected); assert.equal(sha("release"+v.src),expected);
+ assert.equal(sha("public"+v.poster),sha("release"+v.poster));
+ assert.equal(sha("public"+ex.gif),sha("release"+ex.gif));
+});

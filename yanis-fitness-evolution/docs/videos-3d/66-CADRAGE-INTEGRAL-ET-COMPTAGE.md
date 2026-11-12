@@ -16,6 +16,10 @@ Pour le comptage actuel, voir [l’inventaire](./53-INVENTAIRE-TOUS-LES-MODULES.
 
 Sur les images échantillonnées du fichier `back-squat.mp4` (97 images, 24 i/s), la tête et une partie de la barre sortent du cadre en fin de remontée. La source doit être refaite selon le critère corps entier ; une mise à l'échelle ne peut pas la réparer. Elle reste provisoire pour `back-squat`, `back-squat-charge-moderee`, `back-squat-barre-haute` et `back-squat-test-1rm`, désormais toutes en `coached` avec notice sur le cadrage. Un même remplacement pourra être partagé uniquement s'il montre bien ce squat barre classique et reste compatible avec les prescriptions et réserves propres à chaque fiche. Il ne démontre ni la pause sur sécurités de #16 ni une safety bar. Ne pas l'attribuer à #21 tant que le remplacement n'est pas contrôlé ; la fiche accepte néanmoins une barre classique. Le nombre complet de sources coupées reste inconnu.
 
+## Split squat poulie basse #19 : cadrage à refaire
+
+La vidéo reçue coupe les chaussures dans le fichier pendant la montée. Elle reste provisoirement raccordée en `coached` avec le GIF conservé. Refaire la vidéo depuis l'image conservée par Yanis, sans remplacer celle-ci : détails dans [la fiche #19](./75-QUADRICEPS-SPLIT-SQUAT-POULIE-CHOIX.md).
+
 ## Goblet squat : reprise prioritaire
 
 Nouvelle [référence large](./qua-goblet-squat-reference-cadrage-large.jpg). L'athlète est entier, plus petit dans l'image, avec une grande marge au-dessus de la tête et sous les pieds. Il tient un haltère vertical devant la poitrine ; c'est une position intermédiaire, pas une vidéo. La marge vise à garder la tête dans le cadre au redressement mais seule la vidéo permettra de le vérifier.

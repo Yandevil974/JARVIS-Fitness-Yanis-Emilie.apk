@@ -22,7 +22,7 @@ Le 3010 décrit la descente, la pause basse, la remontée et la pause haute ; le
 - **#20 `drop-lunges-fentes-sautees-controlees`** : 5 × 5–7, 2010, repos 120 s ; GIF `/media/cb0991bbf1591550.gif` conservé. Ce GIF comporte deux positions au sol et ne prouve pas l'alternance ni un saut. Les images de fente au sol avaient une marge haute insuffisante ; une nouvelle référence debout est décrite dans [le lot #20](./74-QUADRICEPS-FENTES-SAUTEES.md). Contrôler la marge pendant le saut sur la vidéo. Ne pas confondre avec la fiche distincte `drop-lunges-fentes-controlees` ni leur attribuer une vidéo identique sans vérifier le mouvement.
 - **#12** bulgare à haltères, pied avant surélevé : aucune nouvelle référence fiable ; deux mains et deux haltères doivent être visibles en plus des deux appuis.
 
-Les images recherchées en ligne n'ont servi qu'à comprendre le matériel ; leurs licences n'ont pas été établies et elles ne sont pas distribuées. Les clips #15 et #20 reçus ont été intégrés ; pas de clip #19 à ce stade.
+Les images recherchées en ligne n'ont servi qu'à comprendre le matériel ; leurs licences n'ont pas été établies et elles ne sont pas distribuées. Les clips #15, #20 et #19 reçus ont été intégrés ; le #19 est provisoire car les chaussures sont coupées et doit être refait.
 
 ## Vidéo reçue et intégrée
 

@@ -20,5 +20,4 @@ test("fentes sautées : vidéo reçue, consignes, GIF et prescription conservés
   assert.equal(hash("public"+v.poster),hash("release"+v.poster));
   assert.equal(hash("public"+ex.gif),hash("release"+ex.gif));
   assert.equal(videoFor("drop-lunges-fentes-controlees"),null);
-  assert.equal(videoFor("split-squat-poulie-basse"),null);
 });

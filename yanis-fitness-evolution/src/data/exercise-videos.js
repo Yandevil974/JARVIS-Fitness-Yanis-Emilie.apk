@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Quadriceps #19 : vidéo reçue, provisoire car chaussures coupées.
+  "split-squat-poulie-basse": {
+    src: "/videos/split-squat-poulie-basse.mp4",
+    poster: "/videos/posters/split-squat-poulie-basse.jpg",
+    label: "Vidéo IA · Split squat poulie basse, cadrage à refaire",
+    status: "coached",
+    coaching: {
+      title: "Fente statique face à la poulie basse.",
+      handCue: "Tenez une poignée de poulie basse dans une main, bras allongé près du corps, sans tirer avec le bras.",
+      movementCue: "Pied avant à plat, pied arrière sur les orteils, gardez les deux pieds à leur place ; fléchissez les genoux puis remontez sous contrôle.",
+      notice: "Les chaussures sont coupées en haut du mouvement dans la vidéo source : elle est provisoire et doit être refaite. Le câble se confond avec la jambe et le tempo exact n'est pas démontré. Suivez les consignes de la fiche.",
+      spoken: "Split squat à la poulie basse. Face à la poulie, tenez une poignée dans une main, bras allongé près du corps. Pied avant à plat, pied arrière sur les orteils, gardez les pieds fixes. Descendez en quatre secondes, genou avant dans l'axe du pied et genou arrière vers le sol sans le heurter, puis remontez en une seconde. Travaillez les deux côtés. Les chaussures sont coupées pendant une partie de la vidéo et le câble est peu lisible : suivez la consigne. Quatre séries de six à huit répétitions, quatre-vingt-dix secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
   // Quadriceps #20 : fentes sautées contrôlées, vidéo déposée.
   "drop-lunges-fentes-sautees-controlees": {
     src: "/videos/drop-lunges-fentes-sautees.mp4",
