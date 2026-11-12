@@ -16,4 +16,4 @@ La fiche indique 2010 ; une animation de cinq secondes ne garantit pas un tempo 
 
 ## Essais mis de côté
 
-La version debout initiale était au format portrait et comportait un reflet dans le fond ; la version horizontale ci-dessus évite ce reflet. Les essais de #19 split squat poulie montrent toujours une poignée ambiguë, un câble confondu avec la jambe ou une poulie sans charge clairement reliée ; aucune référence #19 n'est retenue pour l'instant.
+La version debout initiale était au format portrait et comportait un reflet dans le fond ; la version horizontale ci-dessus évite ce reflet. Pour #19 split squat poulie, Yanis a choisi de garder une des images malgré la superposition visuelle du câble à la jambe ; voir [son choix et les réserves](./75-QUADRICEPS-SPLIT-SQUAT-POULIE-CHOIX.md).

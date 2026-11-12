@@ -18,7 +18,7 @@ Le 3010 décrit la descente, la pause basse, la remontée et la pause haute ; le
 
 ## Pistes à reprendre sans dépenser de crédits vidéo
 
-- **#19 `split-squat-poulie-basse`** : 4 × 6–8, 4010, repos 90 s ; GIF `/media/0506f08e38e5f283.gif` conservé. Les nouveaux essais de référence montrent un câble qui se confond avec la jambe ou traverse visuellement celle-ci, et une marge de remontée insuffisante. Pas de référence retenue.
+- **#19 `split-squat-poulie-basse`** : 4 × 6–8, 4010, repos 90 s ; GIF `/media/0506f08e38e5f283.gif` conservé. Yanis a choisi de garder une image malgré la superposition visuelle du câble et la marge haute réduite ; voir [son choix et les contrôles à effectuer](./75-QUADRICEPS-SPLIT-SQUAT-POULIE-CHOIX.md).
 - **#20 `drop-lunges-fentes-sautees-controlees`** : 5 × 5–7, 2010, repos 120 s ; GIF `/media/cb0991bbf1591550.gif` conservé. Ce GIF comporte deux positions au sol et ne prouve pas l'alternance ni un saut. Les images de fente au sol avaient une marge haute insuffisante ; une nouvelle référence debout est décrite dans [le lot #20](./74-QUADRICEPS-FENTES-SAUTEES.md). Contrôler la marge pendant le saut sur la vidéo. Ne pas confondre avec la fiche distincte `drop-lunges-fentes-controlees` ni leur attribuer une vidéo identique sans vérifier le mouvement.
 - **#12** bulgare à haltères, pied avant surélevé : aucune nouvelle référence fiable ; deux mains et deux haltères doivent être visibles en plus des deux appuis.
 
