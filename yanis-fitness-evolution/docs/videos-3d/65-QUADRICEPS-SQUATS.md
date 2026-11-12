@@ -2,7 +2,7 @@
 
 ## Trois fiches raccordées sans nouvelle génération
 
-La vidéo existante `back-squat.mp4` (SHA-256 `221aaaca671baefdc9fd9131dfa0718f9a53178df91ee8f74993631578bd522a`) montre le squat arrière avec barre sur les trapèzes. Elle sert aussi aux fiches ci-dessous : même geste, fichier et poster inchangés, **GIF d'origine conservés**. Chaque fiche garde sa prescription et son guidage vocal. La vidéo est réutilisée en `coached` : son tempo n'est pas celui des fiches et la vue arrière masque partiellement certains appuis.
+La source ancienne de `back-squat.mp4` coupait la tête en haut. Une vidéo de remplacement reçue a été raccordée aux mêmes fiches et à #21 pour la variante barre classique ; détails et réserves dans [le contrôle du nouveau clip](./76-QUADRICEPS-REPRISE-BACK-SQUAT.md). Les **GIF d'origine sont conservés**, chaque fiche garde sa prescription et son guidage ; le tempo exact et le contact central de la barre ne sont pas démontrés.
 
 | Fiche | Prescription conservée | Réserve particulière |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ La vidéo existante `back-squat.mp4` (SHA-256 `221aaaca671baefdc9fd9131dfa0718f9
 | `back-squat-barre-haute` | 4 × 8–10 · 3010 · 120 s | Barre visible sur les trapèzes. |
 | `back-squat-test-1rm` | 5 × 1–5 · 4010 · 180 s | Le geste est montré, **pas les conditions d'un test maximal** : la vidéo ne démontre ni sécurités bien réglées ni pareur. Consigne de réglage des sécurités et d'aide compétente pour une charge lourde. |
 
-Le back squat avec pause complète sur les barres de sécurité n'est **pas** le même geste et n'est pas raccordé. La fiche safety bar ou barre classique autorise la barre classique, mais la source actuelle coupe la tête en haut et ne doit pas être attribuée à une fiche supplémentaire avant remplacement contrôlé ; elle ne montre pas une safety bar. Voir [le cadrage du back squat](./66-CADRAGE-INTEGRAL-ET-COMPTAGE.md). Aucun GIF n'a été retiré.
+Le back squat avec pause complète sur les barres de sécurité n'est **pas** le même geste et n'est pas raccordé. La fiche safety bar ou barre classique autorise la barre classique : elle est raccordée au clip de remplacement avec avertissement, sans prétendre montrer une safety bar. Voir [le cadrage du back squat](./66-CADRAGE-INTEGRAL-ET-COMPTAGE.md). Aucun GIF n'a été retiré.
 
 ## Goblet squat — référence pour un futur clip
 

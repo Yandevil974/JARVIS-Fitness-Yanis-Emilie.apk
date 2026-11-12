@@ -14,7 +14,7 @@ Pour le comptage actuel, voir [l’inventaire](./53-INVENTAIRE-TOUS-LES-MODULES.
 
 ## Back squat : source coupée découverte ensuite
 
-Sur les images échantillonnées du fichier `back-squat.mp4` (97 images, 24 i/s), la tête et une partie de la barre sortent du cadre en fin de remontée. La source doit être refaite selon le critère corps entier ; une mise à l'échelle ne peut pas la réparer. Elle reste provisoire pour `back-squat`, `back-squat-charge-moderee`, `back-squat-barre-haute` et `back-squat-test-1rm`, désormais toutes en `coached` avec notice sur le cadrage. Un même remplacement pourra être partagé uniquement s'il montre bien ce squat barre classique et reste compatible avec les prescriptions et réserves propres à chaque fiche. Il ne démontre ni la pause sur sécurités de #16 ni une safety bar. Ne pas l'attribuer à #21 tant que le remplacement n'est pas contrôlé ; la fiche accepte néanmoins une barre classique. Le nombre complet de sources coupées reste inconnu. Une [nouvelle référence de départ et son prompt](./76-QUADRICEPS-REPRISE-BACK-SQUAT.md) sont préparés ; le remplacement ne sera possible qu’après contrôle du clip reçu.
+Sur l'ancienne source `back-squat.mp4` (97 images, 24 i/s), la tête et une partie de la barre sortaient du cadre en fin de remontée. La nouvelle source reçue a été contrôlée sur des images échantillonnées et a remplacé l'ancienne pour quatre fiches ; elle est aussi réutilisée pour #21, qui autorise la barre classique. Elle ne montre pas la pause sur sécurités de #16 ni une safety bar. Réserves et détails dans [le contrôle de la reprise](./76-QUADRICEPS-REPRISE-BACK-SQUAT.md). Le nombre complet de sources coupées reste inconnu.
 
 ## Split squat poulie basse #19 : cadrage à refaire
 
