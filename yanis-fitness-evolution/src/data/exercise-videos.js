@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Quadriceps #09 : vidéo reçue, provisoire car main au bord du cadre.
+  "leg-press": {
+    src: "/videos/leg-press.mp4",
+    poster: "/videos/posters/leg-press.jpg",
+    label: "Vidéo IA · Presse à cuisses, cadrage à vérifier",
+    status: "coached",
+    coaching: {
+      title: "Dos en appui, pieds parallèles sur le plateau.",
+      handCue: "Réglez la machine, gardez le dos et le bassin contre le dossier et tenez les poignées.",
+      movementCue: "Pieds à plat à largeur de hanches, fléchissez les genoux jusqu'à une amplitude confortable proche de 90 degrés, puis poussez sans les verrouiller.",
+      notice: "La main visible touche le bord inférieur et paraît partiellement coupée à la fin du clip ; l'autre est masquée. La vidéo est provisoire et doit être refaite avec l'athlète entier. La flexion semble plus profonde que la consigne de la fiche et le tempo exact n'est pas démontré.",
+      spoken: "Presse à cuisses. Réglez le siège et les sécurités, gardez le dos et le bassin en appui, et tenez les poignées. Placez les deux pieds à plat et parallèles, largeur de hanches. Descendez le plateau en trois secondes jusqu'à une flexion confortable proche de quatre-vingt-dix degrés, puis poussez en une seconde sans verrouiller brutalement les genoux. La vidéo descend plus bas et une main paraît coupée en fin de clip : suivez votre fiche. Cinq séries de dix à douze, soixante secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
   // Quadriceps #19 : vidéo reçue, provisoire car chaussures coupées.
   "split-squat-poulie-basse": {
     src: "/videos/split-squat-poulie-basse.mp4",

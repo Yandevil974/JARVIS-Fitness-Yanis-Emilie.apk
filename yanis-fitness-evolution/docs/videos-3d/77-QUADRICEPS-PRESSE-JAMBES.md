@@ -6,7 +6,7 @@
 
 [Image de départ](./qua-09-presse-jambes-v3.jpg) : presse avec dossier incliné, chariot et grand plateau ; les deux jambes sont séparées, les deux chaussures visibles et posées sur le plateau. Vue en plongée : l'autre main est en partie masquée et le bas de la machine sort du cadre. La tête, les jambes et les chaussures sont visibles sur cette image. La marge supérieure doit être vérifiée pendant l'extension du chariot ; ne pas croire qu'une image fixe garantit les appuis ou un cadrage complet en vidéo.
 
-Fiches distinctes : #05 pieds hauts et écartés vise une autre position des pieds, et #23 presse unilatérale n'utilise qu'une jambe. Ne pas raccorder automatiquement la même vidéo à ces variantes. Aucun clip pour #09 n'est encore reçu.
+Fiches distinctes : #05 pieds hauts et écartés vise une autre position des pieds, et #23 presse unilatérale n'utilise qu'une jambe. Ne pas raccorder automatiquement la même vidéo à ces variantes. Une vidéo a été reçue et raccordée provisoirement : voir le contrôle ci-dessous.
 
 ## Prompt Arena Video / PixVerse
 
@@ -20,4 +20,10 @@ Le tempo demandé n'est pas garanti. Avant intégration, vérifier toute la séq
 
 ## Autres essais mis de côté
 
-Pour #09 les deux premiers essais superposaient les jambes et chaussures. Pour #23, des essais laissaient la jambe libre masquée par un rail ou proche du mécanisme ; pas de référence retenue. L'image source locale du GIF n'est qu'un outil d'inspection et n'est pas redistribuée avec ces essais.
+Pour #09 les deux premiers essais superposaient les jambes et chaussures. Pour #23, les premiers essais laissaient la jambe libre masquée par un rail ou proche du mécanisme ; une référence corrigée avec le pied libre hors de la machine est documentée [ici](./78-QUADRICEPS-PRESSE-UNILATERALE.md). L'image source locale du GIF n'est qu'un outil d'inspection et n'est pas redistribuée avec ces essais.
+
+## Vidéo reçue et raccordée provisoirement
+
+`1794474946777.mp4` : 640 × 360, 121 images à 24 i/s, environ 5,04 s, SHA-256 `df46c05019813a0c841335aafd9f75e34dbd18c1e1e87a1bdd72834d4e9f3839`. Copiée sans transcodage sous `public/videos/leg-press.mp4` et `release/videos/leg-press.mp4`. Échantillonnage toutes les 12 images de 0 à 120 : la tête et les deux chaussures restent visibles, le plateau s'éloigne puis revient ; le côté opposé de la prise est masqué. La main visible arrive au bord inférieur et paraît partiellement coupée à la fin, notamment à l'image 120 ; le clip doit donc être refait selon le critère corps entier, pas simplement réduit à l'affichage. La flexion paraît plus profonde que 90° en bas, le tempo exact n'est pas démontré et le retour de boucle peut être brusque. Filigrane PixVerse. Intégré **provisoirement en `coached`**, notice et voix, sans modifier le GIF ou la prescription. Ce contrôle échantillonné ne garantit pas chaque détail de chaque image.
+
+Pour refaire le clip, une [référence de reprise plus large](./qua-09-presse-reprise-cadree.jpg) garde le mouvement bilatéral, les deux chaussures sur le plateau et une marge sous la main visible. Elle provient d'une nouvelle image large légèrement recadrée pour rester lisible sur téléphone ; la seconde main est toujours masquée par la vue. Imposer un plan fixe avec marge sous les mains, le siège et au-dessus du plateau pendant toute la séquence. Contrôler que le corps, les deux mains, les deux pieds et le plateau restent dans le fichier durant tout le mouvement ; ne pas dépasser une profondeur confortable. La nouvelle image n'est pas une vidéo et ne garantit pas le cadrage du générateur.

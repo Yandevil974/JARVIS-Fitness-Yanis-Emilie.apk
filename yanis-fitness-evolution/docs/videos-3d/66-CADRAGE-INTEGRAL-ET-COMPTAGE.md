@@ -20,6 +20,10 @@ Sur l'ancienne source `back-squat.mp4` (97 images, 24 i/s), la tête et une part
 
 La vidéo reçue coupe les chaussures dans le fichier pendant la montée. Elle reste provisoirement raccordée en `coached` avec le GIF conservé. Refaire la vidéo depuis l'image conservée par Yanis, sans remplacer celle-ci : détails dans [la fiche #19](./75-QUADRICEPS-SPLIT-SQUAT-POULIE-CHOIX.md).
 
+## Leg press #09 : main en limite de cadre
+
+Sur le clip reçu, la main visible paraît partiellement coupée au bord inférieur à la fin. Le clip est provisoirement raccordé en `coached`, avec GIF conservé ; il doit être refait avec l'athlète entier. Voir [le contrôle](./77-QUADRICEPS-PRESSE-JAMBES.md).
+
 ## Goblet squat : reprise prioritaire
 
 Nouvelle [référence large](./qua-goblet-squat-reference-cadrage-large.jpg). L'athlète est entier, plus petit dans l'image, avec une grande marge au-dessus de la tête et sous les pieds. Il tient un haltère vertical devant la poitrine ; c'est une position intermédiaire, pas une vidéo. La marge vise à garder la tête dans le cadre au redressement mais seule la vidéo permettra de le vérifier.
