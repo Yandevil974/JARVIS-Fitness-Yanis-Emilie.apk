@@ -1,3 +1,4 @@
+import { startupVoiceEnabled, startupVoiceMessage, startupVoiceLifecycle } from "../engine/startup-voice.js";
 import { useConversationalModel } from "../engine/conversation-routing.js";
 import { isStopWorkoutCommand } from "../engine/stop-workout-command.js";
 import { preserveUncertainSessionDuration } from "./session-duration.js";
@@ -96,6 +97,31 @@ export function AppProvider({ children }) {
     latest = useRef(),
     lastLog = useRef(0);
   latest.current = state;
+  const startupVoice = useRef(null);
+  if (!startupVoice.current) {
+    startupVoice.current = startupVoiceLifecycle(() => {
+      const current = latest.current;
+      const profile = current?.profiles?.[current.activeProfile];
+      if (startupVoiceEnabled(profile))
+        speak(startupVoiceMessage(profile), true, profile.preferences.speechRate);
+    }, typeof document === "undefined" || !document.hidden);
+  }
+  useEffect(() => {
+    if (state) startupVoice.current.start();
+  }, [state]);
+  useEffect(() => {
+    const lifecycle = startupVoice.current;
+    if (isAndroid()) {
+      let listener, disposed = false;
+      AndroidApp.addListener("appStateChange", ({ isActive }) => lifecycle.setActive(isActive))
+        .then((handle) => { if (disposed) handle.remove(); else listener = handle; })
+        .catch(() => {});
+      return () => { disposed = true; listener?.remove(); };
+    }
+    const change = () => lifecycle.setActive(!document.hidden);
+    document.addEventListener("visibilitychange", change);
+    return () => document.removeEventListener("visibilitychange", change);
+  }, []);
   useEffect(() => {
     loadState().then(async ({ data, warning, blocked }) => {
       const backup =

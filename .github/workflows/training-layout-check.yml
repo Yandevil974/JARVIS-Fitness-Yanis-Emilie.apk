@@ -23,6 +23,9 @@ on:
       - 'yanis-fitness-evolution/src/pages/Jarvis.jsx'
       - 'yanis-fitness-evolution/src/engine/stop-workout-command.js'
       - 'yanis-fitness-evolution/src/store/AppContext.jsx'
+      - 'yanis-fitness-evolution/src/engine/startup-voice.js'
+      - 'yanis-fitness-evolution/src/pages/Profile.jsx'
+      - 'yanis-fitness-evolution/tests/startup-voice.spec.js'
       - '.github/workflows/training-layout-check.yml'
   workflow_dispatch:
 permissions:
@@ -53,7 +56,7 @@ jobs:
         run: |
           npm run dev > /tmp/yfe-vite.log 2>&1 &
           trap 'kill $! || true' EXIT
-          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/library-video-preview.spec.js tests/video-warmup.spec.js tests/session-guidance.spec.js tests/stop-workout-command.spec.js tests/conversation-online.spec.js tests/daily-features.spec.js; then
+          if ! npx playwright test tests/training-jarvis.spec.js tests/workout-video-load.spec.js tests/rest-next-video.spec.js tests/library-video-preview.spec.js tests/video-warmup.spec.js tests/session-guidance.spec.js tests/stop-workout-command.spec.js tests/conversation-online.spec.js tests/daily-features.spec.js tests/startup-voice.spec.js; then
             node -e '
               const report = require("./tests/e2e-results.json");
               function visit(suite) {

@@ -459,6 +459,22 @@ function Equipment() {
             }}
           />
           <Switch
+            checked={p.preferences.voice && (typeof p.preferences.startupVoice === "boolean" ? p.preferences.startupVoice : p.id === "elite")}
+            label="Accueil vocal à l’ouverture"
+            description="Bonjour et résumé du jour à l’ouverture ou au retour dans l’application. Le son dépend du téléphone. Choix distinct pour chaque profil."
+            onChange={(v) => {
+              if (!supportsVoice) {
+                notify("La voix n’est pas disponible ici.", "info");
+                return;
+              }
+              updateProfile((q) => {
+                q.preferences.startupVoice = v;
+                if (v) q.preferences.voice = true;
+              });
+              notify(v ? "Accueil vocal activé." : "Accueil vocal désactivé.");
+            }}
+          />
+          <Switch
             checked={
               p.preferences.voice && p.preferences.sessionVoice !== false
             }
