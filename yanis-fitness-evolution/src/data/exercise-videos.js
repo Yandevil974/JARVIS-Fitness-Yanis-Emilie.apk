@@ -22,6 +22,20 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Quadriceps #15 : hack squat machine, vidéo reçue accompagnée.
+  "hack-squat": {
+    src: "/videos/hack-squat.mp4",
+    poster: "/videos/posters/hack-squat.jpg",
+    label: "Vidéo IA · Hack squat machine",
+    status: "coached",
+    coaching: {
+      title: "Dos en appui, pieds à plat sur la plateforme.",
+      handCue: "Réglez la machine à votre taille, gardez le dos contre le dossier et les épaules sous les coussins ; tenez les poignées.",
+      movementCue: "Pieds stables sur la plateforme, descendez sous contrôle à une profondeur confortable, genoux dans l'axe des pieds, puis remontez sans verrouiller brutalement.",
+      notice: "La vidéo descend plus bas que les 90° indiqués par la fiche ; adaptez la profondeur à votre mobilité et suivez votre prescription. Le tempo exact et le drop set ne sont pas démontrés ; la tête passe près du bord supérieur.",
+      spoken: "Hack squat à la machine. Réglez le dossier et les sécurités à votre morphologie. Gardez le dos plaqué, les épaules sous les coussins et les deux pieds à plat sur la plateforme. Descendez en trois secondes, genoux dans l'axe des pieds, jusqu'à une profondeur confortable autour de quatre-vingt-dix degrés comme indiqué sur la fiche. Poussez sur les deux pieds pour remonter en une seconde sans verrouiller brutalement. La vidéo descend plus bas et ne montre pas le drop set ; suivez la prescription de votre séance. Arrêtez en cas de douleur.",
+    },
+  },
   // Quadriceps #24 : vidéo reçue, fente statique avec pied avant surélevé.
   "split-squat-barbell-pied-avant-sureleve": {
     src: "/videos/split-squat-barbell-pied-avant-sureleve.mp4",

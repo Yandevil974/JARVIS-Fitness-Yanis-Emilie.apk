@@ -1,0 +1,19 @@
+# Quadriceps #20 — Drop lunges, fentes sautées contrôlées
+
+## Fiche et état
+
+`drop-lunges-fentes-sautees-controlees` : **5 × 5–7 · tempo 2010 · repos 120 s**, sauf prescription différente de la séance. Fiche avancée, au poids du corps ; le GIF `/media/cb0991bbf1591550.gif` reste conservé. Ce GIF comporte seulement deux positions au sol, debout et en fente ; il ne démontre ni la phase aérienne ni l'alternance. Ne pas confondre avec `drop-lunges-fentes-controlees`, fiche distincte dont le libellé ne précise pas « sautées ». Ne pas réutiliser une vidéo pour les deux sans confirmer que les gestes correspondent.
+
+[Image de départ debout](./qua-20-saut-depart-v7.jpg) : athlète entier, pieds au sol et mains aux hanches, sans équipement. Les pieds sont proches et les bras se superposent de profil ; c'est une position **avant** le saut, pas une photo qui démontre le saut. La marge haute reste à surveiller pendant l'animation. Pas de vidéo reçue pour cette fiche à ce stade.
+
+## Prompt Arena Video / PixVerse
+
+> Vidéo réaliste de 5 secondes en 16:9, même vue latérale et même athlète que la référence. Caméra fixe, sans zoom ni recadrage. Corps entier, casquette et deux chaussures toujours visibles, y compris pendant le saut. Mains aux hanches, quadriceps rouges, pas de poids ni d'équipement. Prévoir assez de marge au-dessus de la tête : saut de faible hauteur, jamais d'athlète coupé.
+>
+> Départ debout, pieds proches, deux pieds au sol. Faire un petit saut contrôlé : les deux pieds quittent brièvement le sol et se séparent dans l'axe avant-arrière. Réception douce en fente, pied avant à plat, arrière sur les orteils, en fléchissant les deux genoux, buste stable et genou avant dans l'axe du pied. Remonter sous contrôle, puis montrer si possible le côté opposé. Deux jambes, deux chaussures et deux mains anatomiquement cohérentes ; pas de déplacement latéral, pas de genou qui heurte le sol, pas de membre supplémentaire, pas de texte ni d'autre personne.
+
+La fiche indique 2010 ; une animation de cinq secondes ne garantit pas un tempo exact et le saut ne doit pas être artificiellement ralenti au détriment de la réception. Vérifier la vidéo reçue : départ et fin, décollage réel, appuis et réception, intégrité de chaque jambe, tête et pieds visibles pendant toute la séquence, absence de saut de boucle. L'image et le prompt ne sont pas une vidéo et ne modifient pas la prescription de la séance.
+
+## Essais mis de côté
+
+La version debout initiale était au format portrait et comportait un reflet dans le fond ; la version horizontale ci-dessus évite ce reflet. Les essais de #19 split squat poulie montrent toujours une poignée ambiguë, un câble confondu avec la jambe ou une poulie sans charge clairement reliée ; aucune référence #19 n'est retenue pour l'instant.
