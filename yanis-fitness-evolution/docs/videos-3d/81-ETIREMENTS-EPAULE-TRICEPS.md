@@ -1,6 +1,6 @@
 # Lot d'étirements — épaule et triceps
 
-Deux références pour des fiches qui n'ont pas de vidéo associée dans l'audit. Les GIF sont conservés et aucune vidéo n'a été produite ni intégrée ici. Rendu chromé et accent orange-rouge inspirés d'une image de la vidéo de squat `1794388348249.mp4` ; le rendu exact peut varier en vidéo. Les images proposées sont des départs, pas des garanties anatomiques ou d'animation. Vérifier le cadre, le geste et les prises à réception.
+Deux références pour des fiches auparavant sans vidéo associée dans l'audit. Les GIF sont conservés ; les deux vidéos reçues sont raccordées avec réserves, voir le contrôle ci-dessous. Rendu chromé et accent orange-rouge inspirés d'une image de la vidéo de squat `1794388348249.mp4` ; le rendu exact peut varier en vidéo. Les images proposées sont des départs, pas des garanties anatomiques ou d'animation. Vérifier le cadre, le geste et les prises à réception.
 
 ## 1 — Bras tendu contre la poitrine
 
@@ -17,3 +17,12 @@ Fiche « Coude au-dessus de la tête » : 20–30 s par côté. Consigne source 
 ## Vérifications et essais écartés
 
 Ne pas forcer un étirement ni viser la douleur. Le clip de cinq secondes illustre la position : il ne remplace pas la durée de la fiche. Les vidéos du précédent lot (cobra, enfant, quadriceps debout) sont déjà intégrées, ne pas les régénérer. Pour le mur/mollet, les essais générés levaient le talon arrière, contraire à la fiche. Pour l'encadrement de porte, les essais montraient le bras tendu ou les deux bras alors que la fiche demande un avant-bras plié. Pour le fléchisseur de hanche, le marquage coloré apparaissait sur le short. Ces essais ont été écartés, pas de crédits vidéo à dépenser dessus. Sources techniques consultées pour ces vérifications : <https://exrx.net/Stretches/Gastrocnemius/Wall> et <https://www.precisionmovement.coach/doorway-pec-stretch/>. Les photos de recherche ne sont pas redistribuées.
+
+## Vidéos reçues et raccordées
+
+Copies intactes sans transcodage dans `public/videos` et `release/videos` ; fiches détaillées et chronomètres, notice visible et descriptif vocal à la demande lorsque la voix est activée. GIF conservés en repli, miniatures de retour au calme inchangées. Les deux vidéos ne montrent qu'un côté, sans remplacer la durée de la fiche ; ne pas forcer et travailler les deux côtés.
+
+- **Épaule** — `1794556282614.mp4`, 640 × 360, 121 images à 24 i/s, 5,04 s, SHA-256 `23870af7db027520385bd4200c284b0eef8b95cf91177d397f46856cc2e9bff9`. Posture pratiquement statique de bras croisé ; le corps entier reste dans le cadre aux images échantillonnées toutes les 15 images de 0 à 120. Les mains sont petites et la prise est peu lisible. Filigrane PixVerse. Raccordée en `coached` à « Bras tendu contre la poitrine », avec réserve et consignes.
+- **Triceps** — `1794556473678.mp4`, 640 × 352, 121 images à 24 i/s, 5,04 s, SHA-256 `165cf3f104d444195caa49d110e6584dd5c2a2d30d648fd1871a75eb81afa769`. Posture pratiquement statique, corps entier visible aux images échantillonnées ; les mains en haut restent proches du bord et la main derrière la tête est masquée, la prise sur le coude est peu lisible. Filigrane PixVerse. Raccordée en `coached` à « Coude au-dessus de la tête », avec réserve et consignes.
+
+Le contrôle par échantillonnage ne prouve pas chaque détail sur chaque image. Pas d'affirmation de validation technique complète, pas de modification de prescription ni de données personnelles.

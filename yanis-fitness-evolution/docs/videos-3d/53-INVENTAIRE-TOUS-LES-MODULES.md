@@ -7,12 +7,12 @@ Objectif demandé par Yanis : **tous les mouvements et étapes de tous les modul
 - Musculation : 203 fiches Elite + Émilie, 130 avec vidéo, **73 sans**. Triceps #11 est compté parmi les 73 mais reste en stand-by. Sur les fiches couvertes, 120 `coached`, 10 `validated` ; une réserve n'implique pas qu'il faut refaire la vidéo, et les vidéos acceptées en l'état ne sont pas à régénérer.
 - Catalogue Jarvis seul : 6 fiches, 5 avec vidéo, **1 sans vidéo associée à la fiche** : respiration diaphragmatique. Au total, 209 fiches, 135 couvertes et **74 non couvertes**.
 - Échauffement : 5 étapes avec vidéo enregistrée et un montage. Les approches utilisent la vidéo du premier exercice quand elle existe. La vidéo de mobilité des épaules est réutilisée pour la fiche Jarvis du même nom, en `coached` avec consigne propre ; la vidéo du pont fessier est également réutilisée pour la fiche d'activation au sol. Ne pas présumer qu'il faut une génération supplémentaire si la même vidéo exacte existe déjà.
-- Étirements : **29 fiches distinctes**, dont 5 raccordées à trois vidéos reçues (cobra doux/cobra, enfant/Balasana et quadriceps debout), **24 sans vidéo associée**. Les GIF restent en repli ; fiches détaillées et chronomètres utilisent `stepVideoFor`, avec les réserves affichées. Les miniatures de retour au calme conservent les GIF.
+- Étirements : **29 fiches distinctes**, dont 7 raccordées à cinq vidéos reçues (cobra doux/cobra, enfant/Balasana, quadriceps debout, épaule et triceps), **22 sans vidéo associée**. Les GIF restent en repli ; fiches détaillées et chronomètres utilisent `stepVideoFor`, avec les réserves affichées. Les miniatures de retour au calme conservent les GIF.
 - Tabata/HIIT au sol : 6 modes, 48 occurrences et **38 libellés distincts** ; aucun n'a de vidéo 3D résolue pour l'étape générée avec son suffixe `round`. Les « pompes » ont déjà une vidéo dans le catalogue : il faut vérifier et raccorder la source appropriée plutôt que la recréer d'office. Les noms variant ou les exercices partiellement semblables ne sont pas automatiquement fusionnés.
 - Piscine et aqua (6 protocoles source, 2 METCON et 2 facultatifs) : **960 occurrences** dans les trois niveaux, **217 libellés exacts** ; lorsqu'on retire seulement les numéros de tour, palier et effort variable, **56 libellés** demeurent, tous sans vidéo d'étape associée. Ces 56 couvrent également des phases de repos et de départ et contiennent de nombreux synonymes ou étapes voisines : ce ne sont pas 56 vidéos distinctes obligatoires. Les listes source Elite et Émilie sont identiques actuellement ; les niveaux et tours ne doivent pas être comptés comme de nouveaux mouvements à chaque répétition.
 - Elliptique : **5 guides** sans vidéo d'étape enregistrée : mise en route, fractionné, récupération active, retour au calme et transition. Une même vidéo ne convient que si elle montre réellement la phase concernée.
 
-Les cinq catégories précédentes représentent **197 entrées/libellés à couvrir avant rapprochement** (74 + 24 + 38 + 56 + 5), **pas 197 vidéos à générer** : une même action figure dans plusieurs modules et une vidéo déjà présente peut parfois servir. Ce chiffre n'est pas exhaustif pour tous les écrans ; il ne comprend notamment pas les sélecteurs et routines ci-dessous. Il ne faut pas l'additionner aux 73. Le nombre exact de nouveaux fichiers à générer pour couvrir toute l'application n'est pas encore établi : il dépend d'un rapprochement technique mouvement par mouvement et des vidéos existantes, pas d'une estimation par familles.
+Les cinq catégories précédentes représentent **195 entrées/libellés à couvrir avant rapprochement** (74 + 22 + 38 + 56 + 5), **pas 195 vidéos à générer** : une même action figure dans plusieurs modules et une vidéo déjà présente peut parfois servir. Ce chiffre n'est pas exhaustif pour tous les écrans ; il ne comprend notamment pas les sélecteurs et routines ci-dessous. Il ne faut pas l'additionner aux 73. Le nombre exact de nouveaux fichiers à générer pour couvrir toute l'application n'est pas encore établi : il dépend d'un rapprochement technique mouvement par mouvement et des vidéos existantes, pas d'une estimation par familles.
 
 ## À intégrer aussi dans l'inventaire complet
 
@@ -22,7 +22,7 @@ Les cinq catégories précédentes représentent **197 entrées/libellés à cou
 - Étapes de repos, départ de tour, transitions, échauffement et retour au calme : elles sont dans l'objectif de couverture, pas exclues. Une phase composée de plusieurs consignes peut nécessiter plusieurs mouvements ou un montage ; cela reste à définir sans inventer une correspondance.
 - Les circuits composés de plusieurs mouvements et les approches liées aux exercices peuvent demander plusieurs démonstrations, et pas nécessairement un MP4 différent pour chaque répétition numérotée.
 
-Le registre `step-videos.js` référence l'échauffement et trois vidéos d'étirements ; sa résolution est par nom exact normalisé. Les libellés dynamiques (rounds, distances, styles) et les autres écrans devront être raccordés explicitement : **présence d'un MP4 dans le dépôt ≠ affichage partout où il est nécessaire**.
+Le registre `step-videos.js` référence l'échauffement et cinq vidéos d'étirements ; sa résolution est par nom exact normalisé. Les libellés dynamiques (rounds, distances, styles) et les autres écrans devront être raccordés explicitement : **présence d'un MP4 dans le dépôt ≠ affichage partout où il est nécessaire**.
 
 ## Épaules #11 : vidéo déposée et accompagnée
 
@@ -30,17 +30,15 @@ La vidéo propre à #11 a été déposée et intégrée en `coached`. Elle montr
 
 ## Détail des libellés recensés
 
-### 24 fiches d'étirement sans vidéo associée
+### 22 fiches d'étirement sans vidéo associée
 
 - Étirement dans l'encadrement de porte
 - Bras tendu contre le mur
 - Suspension à la barre
 - Torsion allongée
 - Mains croisées derrière le dos
-- Bras tendu contre la poitrine
 - Bras tendu devant, main tirée
 - Bras tendu derrière
-- Coude au-dessus de la tête
 - Main dans le dos
 - Étirement des fléchisseurs
 - Étirement des extenseurs

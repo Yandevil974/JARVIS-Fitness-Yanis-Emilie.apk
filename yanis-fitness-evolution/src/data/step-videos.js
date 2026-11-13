@@ -47,6 +47,28 @@ const STRETCH_QUAD = {
 };
 
 export const STEP_VIDEOS = {
+  "bras tendu contre la poitrine": {
+    src: "/videos/stretch-epaule-bras-croise.mp4",
+    poster: "/videos/posters/stretch-epaule-bras-croise.jpg",
+    label: "Vidéo IA · Étirement de l’épaule",
+    status: "coached",
+    coaching: {
+      title: "Épaule basse, sans tirer fort.",
+      notice: "La vidéo maintient la position d’un seul côté ; les mains sont petites à l’écran. Soutenez doucement le bras près du coude et faites les deux côtés.",
+      spoken: "Étirement de l’épaule. Tendez un bras devant la poitrine et rapprochez-le doucement avec l’autre main, sans tirer fort, épaule basse. La vidéo montre un seul côté : faites les deux côtés. Respirez et arrêtez en cas de douleur.",
+    },
+  },
+  "coude au dessus de la tete": {
+    src: "/videos/stretch-triceps-coude.mp4",
+    poster: "/videos/posters/stretch-triceps-coude.jpg",
+    label: "Vidéo IA · Étirement du triceps",
+    status: "coached",
+    coaching: {
+      title: "Guidez le coude doucement, sans forcer.",
+      notice: "La vidéo montre un seul côté ; la main derrière la tête est masquée et la prise sur le coude est peu lisible. Soutenez doucement le coude et faites les deux côtés.",
+      spoken: "Étirement du triceps. Pliez un bras derrière la tête et posez l’autre main sur le coude pour le guider doucement, sans forcer. La main derrière la tête est masquée dans la vidéo. Faites les deux côtés, respirez et arrêtez en cas de douleur.",
+    },
+  },
   "cobra doux": STRETCH_COBRA,
   "etirement du cobra": STRETCH_COBRA,
   "position de l enfant": STRETCH_ENFANT,
