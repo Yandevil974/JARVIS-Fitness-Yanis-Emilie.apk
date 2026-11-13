@@ -39,6 +39,7 @@ import { videoFor } from "../../data/exercise-videos.js";
 export function TimerModal() {
   const { p, updateProfile, closeModal, setModal, notify } = useApp();
   const now = useNow();
+  const [failedStepVideo, setFailedStepVideo] = React.useState(null);
   if (!p.timer) return null;
   const t = advanceTimer(p.timer, now),
     step = t.steps[t.index],
@@ -66,7 +67,8 @@ export function TimerModal() {
     exerciseGif: findExercise(step.name)?.gif,
   });
   // Vidéo 3D validée de l’étape en cours (chronomètre guidé), sinon image actuelle.
-  const stepVideo = t.done ? null : stepVideoFor(step.name);
+  const stepVideoCandidate = t.done ? null : stepVideoFor(step.name);
+  const stepVideo = stepVideoCandidate?.src === failedStepVideo ? null : stepVideoCandidate;
   // Étape adossée à un exercice (approches d'échauffement) : sa démo
   // (vidéo 3D validée sinon GIF) au lieu de l'image générique dupliquée.
   const stepExercise =
@@ -147,6 +149,9 @@ export function TimerModal() {
                   src: stepVideo.src,
                   poster: stepVideo.poster,
                   title: stepVideo.label,
+                  notice: stepVideo.coaching?.notice,
+                  noticeTitle: stepVideo.coaching?.title,
+                  spoken: p.preferences.voice ? stepVideo.coaching?.spoken : null,
                 })
               }
             >
@@ -156,7 +161,8 @@ export function TimerModal() {
                   stepVideo.poster ? assetSrc(stepVideo.poster) : undefined
                 }
                 title={stepVideo.label}
-                autoPlay
+                onError={() => setFailedStepVideo(stepVideo.src)}
+                autoPlay={!p.preferences.reducedMotion}
                 muted
                 loop
                 playsInline
@@ -192,6 +198,11 @@ export function TimerModal() {
               ? "Le chrono est terminé. Aucun résultat n’est encore ajouté à votre historique."
               : "Adaptez l’intensité à votre ressenti. La technique prime sur le chrono.")}
         </p>
+        {stepVideo?.coaching && (
+          <p className="movement-media-note movement-coaching-note">
+            <strong>{stepVideo.coaching.title}</strong> {stepVideo.coaching.notice}
+          </p>
+        )}
         <ProgressBar value={progress} />
         <div className="timer-progress-meta">
           <span>{Math.round(t.elapsed)} s chronométrées</span>
@@ -868,14 +879,35 @@ export function ImageViewer({
 }
 export function StretchModal({ exercise }) {
   const { p, setModal, closeModal, setTimer } = useApp();
+  const [failedVideo, setFailedVideo] = React.useState(null);
   const visuel = stretchImage(exercise, p.id);
+  const candidate = stepVideoFor(exercise.name);
+  const video = candidate?.src === failedVideo ? null : candidate;
   return (
     <Modal
       title={exercise.name}
       subtitle={`${exercise.duration} · étirement doux, jamais douloureux`}
       onClose={closeModal}
     >
-      {visuel ? (
+      {video ? (
+        <button
+          type="button"
+          className="timer-step-visual has-video"
+          title="Agrandir la vidéo"
+          onClick={() => setModal({
+            type: "image", src: video.src, poster: video.poster, title: video.label,
+            notice: video.coaching?.notice, noticeTitle: video.coaching?.title,
+            spoken: p.preferences.voice ? video.coaching?.spoken : null,
+          })}
+        >
+          <video
+            src={assetSrc(video.src)} poster={assetSrc(video.poster)} title={video.label}
+            autoPlay={!p.preferences.reducedMotion} muted loop playsInline preload="metadata"
+            onError={() => setFailedVideo(video.src)}
+          />
+          <Icon name="Maximize2" size={15} />
+        </button>
+      ) : visuel ? (
         <button
           type="button"
           className="timer-step-visual"
@@ -891,6 +923,11 @@ export function StretchModal({ exercise }) {
         <Movement exercise={exercise} />
       )}
       <p className="stretch-instruction">{exercise.instruction}</p>
+      {video?.coaching && (
+        <p className="movement-media-note movement-coaching-note">
+          <strong>{video.coaching.title}</strong> {video.coaching.notice}
+        </p>
+      )}
       <div className="info-line">
         <Icon name="Wind" />
         <span>

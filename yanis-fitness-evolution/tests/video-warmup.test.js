@@ -711,7 +711,7 @@ test("les cinq vidéos de l'échauffement test7 et l'aperçu sont intégrés", (
     assert.ok(publicAssetExists(video.src), `vidéo absente : ${name}`);
     assert.ok(publicAssetExists(video.poster), `poster absent : ${name}`);
   }
-  assert.equal(Object.keys(STEP_VIDEOS).length, 5);
+  assert.equal(["mise en route", "mobilite des epaules", "mobilite hanches chevilles", "activation fessiers", "activation scapulaire"].filter((key) => STEP_VIDEOS[key]).length, 5);
   assert.ok(publicAssetExists(WARMUP_OVERVIEW.src));
   assert.ok(publicAssetExists(WARMUP_OVERVIEW.poster));
 });

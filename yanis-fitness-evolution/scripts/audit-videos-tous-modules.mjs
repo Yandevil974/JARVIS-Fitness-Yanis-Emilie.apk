@@ -24,7 +24,7 @@ const report = {
   generatedFrom: 'src/data/library.js, exercise-videos.js, step-videos.js, legacy.json, visuals.js, metcon-emilie.js, pool-diversity.js, Cardio.jsx, Recovery.jsx',
   warning: 'Compteurs de fiches et libellés dans des modules différents, non dédoublonnés entre modules : ce ne sont pas des nombres de nouveaux fichiers vidéo.',
   catalogue: {program:cover(eligible), jarvisOnly:cover(jarvis), all:cover(EXERCISES), coachedProgram:eligible.filter(e => videoFor(e)?.status==='coached').length, validatedProgram:eligible.filter(e => videoFor(e)?.status==='validated').length, missingJarvis:jarvis.filter(e=>!videoFor(e)).map(e=>e.name)},
-  warmup: {registeredSteps:Object.keys(STEP_VIDEOS).length, overview:!!WARMUP_OVERVIEW.src, note:'Approches : vidéo du premier exercice si disponible.'},
+  warmup: {registeredSteps:['mise en route','mobilite des epaules','mobilite hanches chevilles','activation fessiers','activation scapulaire'].filter(k => STEP_VIDEOS[k]).length, overview:!!WARMUP_OVERVIEW.src, note:'Approches : vidéo du premier exercice si disponible.'},
   stretch:{total:RECOVERY_EXERCISES.length, unassigned:stretchUnassigned.length,names:stretchUnassigned.map(e=>e.name)},
   hiitLand:{modes:legacy.elite.TABATA_MODES.length, slots:legacy.elite.TABATA_MODES.flatMap(m=>m.exos).length, uniqueLabels:hiitNames.length, unassigned:hiitUnassigned.length,names:hiitUnassigned},
   pool:{protocols:ALL_POOL_PROTOCOLS.map(p=>p.id), occurrenceCount:poolOccurrences.length, exactLabels:new Set(poolOccurrences.map(o=>o.name)).size, labelsWithoutRoundNumbers:poolLabels.length, unassignedLabelsWithoutRoundNumbers:missingPoolLabels.length, names:missingPoolLabels},
