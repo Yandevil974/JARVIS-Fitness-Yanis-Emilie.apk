@@ -22,6 +22,70 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Ischios : les vidéos reçues sont des supports accompagnés, pas des modèles parfaits.
+  "souleve-de-terre-roumain-halteres": {
+    src: "/videos/souleve-terre-roumain-halteres.mp4", poster: "/videos/posters/souleve-terre-roumain-halteres.jpg", label: "Vidéo IA · Roumain avec haltères", status: "coached",
+    coaching: {
+      title: "Hanches en arrière, dos neutre et deux haltères.",
+      handCue: "Tenez un haltère dans chaque main, bras tendus devant les cuisses.",
+      movementCue: "Pieds à plat, genoux souples, reculez les hanches et inclinez le buste en gardant le dos neutre ; les haltères restent près des jambes, puis remontez par les hanches.",
+      notice: "Une main et son haltère sont partiellement masqués, la coloration déborde sur le dos et les fessiers, et le tempo exact n'est pas démontré. Suivez la fiche.",
+      spoken: "Soulevé de terre roumain avec haltères. Pieds à plat largeur de hanches, tenez un haltère dans chaque main, bras tendus. Genoux souples, reculez les hanches et inclinez le buste avec le dos neutre, les haltères près des jambes. Descendez en trois secondes dans une amplitude confortable, puis revenez debout en avançant les hanches. La deuxième main est partiellement masquée dans la vidéo : vérifiez votre prise. Suivez le tempo et les séries de votre fiche et arrêtez en cas de douleur.",
+    },
+  },
+  // La vidéo montre le leg curl couché sur machine, et non la version suisse-ball.
+  "leg-curl-allonge": {
+    src: "/videos/leg-curl-allonge.mp4", poster: "/videos/posters/leg-curl-allonge.jpg", label: "Vidéo IA · Leg curl allongé", status: "coached",
+    coaching: {
+      title: "Bassin sur le banc, pliez les genoux.",
+      handCue: "Réglez la machine, placez le rouleau derrière les chevilles et tenez les poignées.",
+      movementCue: "Face contre le banc, bassin et cuisses en appui, fléchissez les deux genoux jusqu'à environ 90 degrés puis redescendez sous contrôle.",
+      notice: "Les jambes et chaussures se superposent ; le rouleau semble se détacher du mécanisme pendant le mouvement. Le tempo et la position des pieds ne sont pas clairement démontrés. Suivez votre fiche.",
+      spoken: "Leg curl allongé à la machine. Réglez la machine, allongez-vous face contre le banc et placez le rouleau derrière les chevilles. Bassin et cuisses restent en appui. Pliez les deux genoux jusqu'à environ quatre-vingt-dix degrés puis redescendez sous contrôle. Les jambes se superposent et le mécanisme du rouleau est peu clair dans la vidéo. Suivez le tempo, la position des pieds et les séries de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
+  "leg-curl-machine": {
+    src: "/videos/leg-curl-allonge.mp4", poster: "/videos/posters/leg-curl-allonge.jpg", label: "Vidéo IA · Leg curl machine allongé", status: "coached",
+    coaching: {
+      title: "Bassin sur le banc, pliez les genoux.",
+      handCue: "Réglez la machine, placez le rouleau derrière les chevilles et tenez les poignées.",
+      movementCue: "Face contre le banc, bassin et cuisses en appui, fléchissez les deux genoux jusqu'à environ 90 degrés puis redescendez sous contrôle.",
+      notice: "Les jambes et chaussures se superposent ; le rouleau semble se détacher du mécanisme pendant le mouvement. Le tempo et la position des pieds ne sont pas clairement démontrés. Suivez votre fiche.",
+      spoken: "Leg curl allongé à la machine. Réglez la machine, allongez-vous face contre le banc et placez le rouleau derrière les chevilles. Bassin et cuisses restent en appui. Pliez les deux genoux jusqu'à environ quatre-vingt-dix degrés puis redescendez sous contrôle. Les jambes se superposent et le mécanisme du rouleau est peu clair dans la vidéo. Suivez le tempo, la position des pieds et les séries de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
+  "leg-curl-machine-ou-swiss-ball-leg-curl": {
+    src: "/videos/leg-curl-allonge.mp4", poster: "/videos/posters/leg-curl-allonge.jpg", label: "Vidéo IA · Leg curl machine allongé", status: "coached",
+    coaching: {
+      title: "Bassin sur le banc, pliez les genoux.",
+      handCue: "Réglez la machine, placez le rouleau derrière les chevilles et tenez les poignées.",
+      movementCue: "Face contre le banc, bassin et cuisses en appui, fléchissez les deux genoux jusqu'à environ 90 degrés puis redescendez sous contrôle.",
+      notice: "Les jambes et chaussures se superposent ; le rouleau semble se détacher du mécanisme pendant le mouvement. Le tempo et la position des pieds ne sont pas clairement démontrés. Pour la variante swiss-ball, cette vidéo de machine ne la démontre pas. Suivez votre fiche.",
+      spoken: "Leg curl allongé à la machine. Réglez la machine, allongez-vous face contre le banc et placez le rouleau derrière les chevilles. Bassin et cuisses restent en appui. Pliez les deux genoux jusqu'à environ quatre-vingt-dix degrés puis redescendez sous contrôle. Les jambes se superposent et le mécanisme du rouleau est peu clair dans la vidéo. La variante sur ballon est différente et n'est pas montrée ici. Suivez le tempo, la position des pieds et les séries de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
+  // Cadrage coupé : source provisoire à remplacer par une vidéo entière.
+  "souleve-de-terre-roumain-barre": {
+    src: "/videos/souleve-terre-roumain-barre-provisoire.mp4", poster: "/videos/posters/souleve-terre-roumain-barre-provisoire.jpg", label: "Vidéo IA · Roumain barre — cadrage à refaire", status: "coached",
+    coaching: {
+      title: "Barre proche des jambes, hanches en arrière.",
+      handCue: "Saisissez la barre à deux mains à l'extérieur des jambes, bras tendus.",
+      movementCue: "Pieds à plat et genoux souples, reculez les hanches, dos neutre ; gardez la barre près des jambes puis revenez debout sans cambrer.",
+      notice: "La tête est coupée lorsque l'athlète se redresse : vidéo provisoire à refaire, non conforme au cadrage intégral. La coloration concerne l'avant des cuisses, le tempo exact n'est pas démontré et la boucle saute. Suivez la fiche.",
+      spoken: "Soulevé de terre roumain à la barre. Pieds à plat largeur de hanches, saisissez la barre à deux mains, bras tendus. Reculez les hanches en gardant les genoux souples et le dos neutre ; la barre reste près des jambes. Descendez dans une amplitude confortable puis remontez en avançant les hanches sans vous cambrer. La tête est coupée dans la vidéo, qui doit être refaite. Suivez votre fiche et arrêtez en cas de douleur.",
+    },
+  },
+  // Cadrage coupé : source provisoire à remplacer par une vidéo entière.
+  "souleve-de-terre-roumain-barre-test-3-5-reps": {
+    src: "/videos/souleve-terre-roumain-barre-provisoire.mp4", poster: "/videos/posters/souleve-terre-roumain-barre-provisoire.jpg", label: "Vidéo IA · Roumain barre — cadrage à refaire", status: "coached",
+    coaching: {
+      title: "Barre proche des jambes, hanches en arrière.",
+      handCue: "Saisissez la barre à deux mains à l'extérieur des jambes, bras tendus.",
+      movementCue: "Pieds à plat et genoux souples, reculez les hanches, dos neutre ; gardez la barre près des jambes puis revenez debout sans cambrer.",
+      notice: "La tête est coupée lorsque l'athlète se redresse : vidéo provisoire à refaire, non conforme au cadrage intégral. La coloration concerne l'avant des cuisses, le tempo exact n'est pas démontré et la boucle saute. Suivez la fiche.",
+      spoken: "Soulevé de terre roumain à la barre. Pieds à plat largeur de hanches, saisissez la barre à deux mains, bras tendus. Reculez les hanches en gardant les genoux souples et le dos neutre ; la barre reste près des jambes. Descendez dans une amplitude confortable puis remontez en avançant les hanches sans vous cambrer. La tête est coupée dans la vidéo, qui doit être refaite. Suivez votre fiche et arrêtez en cas de douleur.",
+    },
+  },
   // Quadriceps #23 : presse unilatérale, clip reçu.
   "leg-press-unilateral": {
     src: "/videos/leg-press-unilateral.mp4",
