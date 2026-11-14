@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useApp } from "../store/AppContext.jsx";
 import {
   Icon,
@@ -18,6 +18,7 @@ import {
   Ring,
 } from "../components/ui.jsx";
 import { LineChart, BarChart } from "../components/Charts.jsx";
+import { comparePhotos, compatiblePhotos, previousComparable, photoConfig, PHOTO_MODEL, PHOTO_ZONES } from "../engine/photo-comparison-ai.js";
 import Anatomy from "../components/Anatomy.jsx";
 import {
   stats,
@@ -838,7 +839,42 @@ function Photos() {
         ?.id || "",
     ),
     [slider, setSlider] = useState(50),
-    [busy, setBusy] = useState(false);
+    [busy, setBusy] = useState(false),
+    [photoConsent, setPhotoConsent] = useState(false),
+    [analysis, setAnalysis] = useState(null),
+    [analysisBusy, setAnalysisBusy] = useState(false),
+    [analysisMessage, setAnalysisMessage] = useState("");
+  const analysisRequest = useRef(null);
+  const photoContext = useRef({ profile: p.id, consent: false, mounted: true });
+  if (photoContext.current.profile !== p.id) photoContext.current = { profile: p.id, consent: false, mounted: true };
+  const cancelAnalysis = () => {
+    analysisRequest.current?.abort();
+    analysisRequest.current = null;
+    setAnalysisBusy(false);
+    setAnalysis(null);
+    setAnalysisMessage("");
+  };
+  useEffect(() => {
+    photoContext.current.mounted = true;
+    photoContext.current.consent = false;
+    setPhotoConsent(false);
+    cancelAnalysis();
+    return () => { photoContext.current.mounted = false; photoContext.current.consent = false; analysisRequest.current?.abort(); analysisRequest.current = null; };
+  }, [p.id]);
+  async function analyze(before, after) {
+    cancelAnalysis();
+    const controller = new AbortController();
+    analysisRequest.current = controller;
+    setAnalysisBusy(true);
+    try {
+      const result = await comparePhotos({ profile: p, before, after, signal: controller.signal });
+      if (analysisRequest.current === controller && !controller.signal.aborted) setAnalysis({ ...result, beforeId: before.id, afterId: after.id });
+    } catch (error) {
+      if (analysisRequest.current === controller && !controller.signal.aborted) setAnalysisMessage(error.message || "Analyse indisponible. Réessayez.");
+    } finally {
+      if (analysisRequest.current === controller) { analysisRequest.current = null; setAnalysisBusy(false); }
+    }
+  }
   const a = p.photos.find((x) => x.id === left),
     b = p.photos.find((x) => x.id === right);
   async function upload(f) {
@@ -868,6 +904,7 @@ function Photos() {
         .getContext("2d")
         .drawImage(image, 0, 0, canvas.width, canvas.height);
       image.close();
+      if (!photoContext.current.mounted || photoContext.current.profile !== p.id) return;
       const photo = {
         id: uid(),
         date,
@@ -879,14 +916,30 @@ function Photos() {
       updateProfile((q) => {
         q.photos.push(photo);
       });
-      if (!left) setLeft(photo.id);
-      setRight(photo.id);
+      if (photoContext.current.consent) {
+        const previous = previousComparable(p.photos, photo);
+        cancelAnalysis();
+        if (previous) {
+          setLeft(previous.id);
+          setRight(photo.id);
+          if (photoConfig(p)) void analyze(previous, photo);
+          else setAnalysisMessage("Photo enregistrée. Activez Groq dans JARVIS sur ce profil, puis lancez l’analyse.");
+        } else {
+          if (!left) setLeft(photo.id);
+          setRight(photo.id);
+          setAnalysisMessage("Photo enregistrée. Aucune photo réelle plus ancienne de la même vue : ajoutez-en une pour comparer.");
+        }
+      } else {
+        if (!left) setLeft(photo.id);
+        setRight(photo.id);
+        cancelAnalysis();
+      }
       notify("Photo compressée et sauvegardée localement.");
     } catch (e) {
       notify("L’image n’a pas pu être chargée.", "error");
     } finally {
       setBusy(false);
-      file.current.value = "";
+      if (file.current) file.current.value = "";
     }
   }
   return (
@@ -895,7 +948,7 @@ function Photos() {
         <div>
           <h2>Le progrès se voit aussi.</h2>
           <p>
-            Comparez vos photos privées localement : même vue, pose, distance et lumière facilitent la comparaison. Aucun résultat n’est calculé automatiquement.
+            Les photos sont enregistrées localement. La comparaison IA est optionnelle et nécessite votre accord avant l’envoi à Groq.
           </p>
         </div>
         <div className="photo-controls">
@@ -933,6 +986,18 @@ function Photos() {
           </Button>
         </div>
       </div>
+      <Panel className="photo-ai-options">
+        <h3>Comparer avec l’IA Groq</h3>
+        <p>Si vous activez cette option, chaque nouvelle photo réelle sera comparée automatiquement à la photo réelle plus ancienne la plus récente de la même vue. Accord valable jusqu’à la fermeture de cette page ou au changement de profil.</p>
+        <p>Les deux photos seront envoyées directement à Groq avec le modèle {PHOTO_MODEL}. Consultez les <a href="https://console.groq.com/docs/legal/services-agreement" target="_blank" rel="noopener noreferrer">conditions de Groq</a> : le traitement et la conservation dépendent du fournisseur. Votre forfait peut limiter ou facturer les appels. Aucun envoi vers OpenRouter ni autre service en cas d’échec.</p>
+        <label className="photo-ai-consent">
+          <input type="checkbox" checked={photoConsent} onChange={(e) => { photoContext.current.consent = e.target.checked; setPhotoConsent(e.target.checked); if (!e.target.checked) cancelAnalysis(); }} />
+          <span>J’accepte l’envoi de mes deux photos à Groq pour cette comparaison.</span>
+        </label>
+        {!photoConfig(p) && <p role="status">Pour utiliser cette fonction, activez Groq et sa clé dans JARVIS pour ce profil. Une clé configurée dans votre plateforme séparée n’est pas automatiquement partagée avec cette application.</p>}
+        {p.photos.length < 2 && analysisMessage && <p role="status">{analysisMessage}</p>}
+        <p>La pose, la lumière, les vêtements ou le cadrage peuvent créer de fausses différences. L’IA peut se tromper : pas de diagnostic ni de mesure corporelle. Le résultat n’est affiché que pendant cette visite et n’est pas sauvegardé.</p>
+      </Panel>
       <Panel className="photo-comparison">
         <SectionHeading
           title="Avant. Après. Votre parcours."
@@ -942,7 +1007,7 @@ function Photos() {
           <>
             <div className="form-grid">
               <Field label="Photo de départ">
-                <Select value={left} onChange={(e) => setLeft(e.target.value)}>
+                <Select value={left} onChange={(e) => { cancelAnalysis(); setLeft(e.target.value); }}>
                   {p.photos.map((ph) => (
                     <option key={ph.id} value={ph.id}>
                       {ph.label ||
@@ -958,7 +1023,7 @@ function Photos() {
               <Field label="Photo de comparaison">
                 <Select
                   value={right}
-                  onChange={(e) => setRight(e.target.value)}
+                  onChange={(e) => { cancelAnalysis(); setRight(e.target.value); }}
                 >
                   {p.photos.map((ph) => (
                     <option key={ph.id} value={ph.id}>
@@ -1010,6 +1075,19 @@ function Photos() {
             </div>
             {a && b && (a.id === b.id || a.view !== b.view || a.simulated || b.simulated || a.needsDate || b.needsDate || (a.date && b.date && a.date > b.date)) && <p role="status">Vérifiez votre sélection : choisissez deux photos réelles de la même vue, dans l’ordre chronologique. Les photos anciennes sans date fiable restent à vérifier.</p>}
             <p>À vous de juger si une évolution est visible : une différence de lumière, de pose ou de cadrage peut modifier l’apparence.</p>
+            <div className="photo-ai-result" aria-live="polite">
+              <button type="button" className="btn secondary" disabled={!photoConsent || !photoConfig(p) || !compatiblePhotos(a, b) || analysisBusy} onClick={() => analyze(a, b)}>
+                {analysisBusy ? "Analyse Groq en cours…" : "Analyser ces deux photos avec Groq"}
+              </button>
+              {photoConsent && !compatiblePhotos(a, b) && <p>Pour l’analyse IA, choisissez deux photos réelles datées, de la même vue, à des dates différentes et dans l’ordre chronologique.</p>}
+              {analysisMessage && <p role="status">{analysisMessage}</p>}
+              {analysis && analysis.beforeId === a?.id && analysis.afterId === b?.id && <div>
+                <h3>Observations visuelles possibles · IA</h3>
+                <p>Comparabilité estimée : {analysis.comparabilite === "correcte" ? "apparemment correcte" : analysis.comparabilite === "limitee" ? "limitée" : "impossible"}. {analysis.limites}</p>
+                {analysis.zones.length > 0 ? <ul>{analysis.zones.map((item, i) => <li key={`${item.zone}-${i}`}><strong>{PHOTO_ZONES[item.zone]}</strong> : {item.observation}</li>)}</ul> : <p>Aucune différence à présenter avec suffisamment de prudence.</p>}
+                <p>Zones indiquées à titre indicatif, sans localisation précise sur l’image. Vérifiez vous-même : l’IA peut se tromper.</p>
+              </div>}
+            </div>
           </>
         ) : (
           <Empty

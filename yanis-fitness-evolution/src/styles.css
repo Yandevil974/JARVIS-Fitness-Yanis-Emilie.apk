@@ -18565,3 +18565,12 @@ html:not([data-theme="dark"]) .page[class*="page-"] .source-banner {
 .daily-brief-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
 .daily-brief-settings { display:grid; gap:10px; margin-top:14px; }
 .daily-brief-settings label { display:grid; grid-template-columns:minmax(150px,1fr) minmax(140px,1fr); gap:8px; align-items:center; font-size:13px; }
+
+/* Comparaison photo facultative : consentement explicite et résultat prudent. */
+.photo-ai-options { margin: 16px 0; }
+.photo-ai-options p, .photo-ai-result p { line-height: 1.5; }
+.photo-ai-consent { display: flex; align-items: flex-start; gap: 10px; margin: 14px 0; font-weight: 700; }
+.photo-ai-consent input { flex: none; margin-top: 4px; }
+.photo-ai-result { margin-top: 16px; padding: 16px; border: 1px solid var(--line-strong); border-radius: 10px; }
+.photo-ai-result ul { padding-left: 22px; }
+.photo-ai-result li { margin: 8px 0; line-height: 1.5; }
