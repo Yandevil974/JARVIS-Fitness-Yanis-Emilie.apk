@@ -105,3 +105,70 @@ test("exercice chronométré : saisie en secondes puis état terminé", async ({
   await expect(section).toContainText("Toutes les séries prévues sont sauvegardées");
   await expect(section.getByRole("button", { name: /Valider la série/ })).toHaveCount(0);
 });
+
+test("palette jaune et rouge lisible en thèmes clair et sombre, y compris charge automatique et chronométrée", async ({ page }) => {
+  await page.addInitScript((key) => { window.__YFE_KEY__ = key; }, STORAGE_KEY);
+  await page.goto("/");
+  await startSourceWorkout(page);
+  await expect(page.locator(".save-status")).toContainText("Enregistré");
+  await page.evaluate(() => {
+    const state = JSON.parse(localStorage.getItem(window.__YFE_KEY__));
+    const workout = state.profiles.elite.workout;
+    workout.currentIndex = 0;
+    Object.assign(workout.exercises[0], {
+      targetLoad: 52.5, unit: "kg total", autoIncrease: { from: 50, to: 52.5, unit: "kg total" }, sets: [],
+    });
+    state.updatedAt = Date.now() + 5000;
+    localStorage.setItem(window.__YFE_KEY__, JSON.stringify(state));
+  });
+  await page.reload();
+  await page.locator(".mobile-nav").getByRole("button", { name: "Entraînement", exact: true }).click();
+
+  async function checkPalette() {
+    const load = page.locator(".exercise-stage .video-workout-load");
+    await expect(load).toHaveCSS("background-image", /rgb\(245, 201, 59\).*rgb\(255, 229, 118\)/);
+    await expect(load.locator(".video-workout-load-copy > strong")).toHaveCSS("color", "rgb(23, 32, 42)");
+    await expect(load.locator(".video-workout-load-auto")).toHaveCSS("color", "rgb(61, 48, 13)");
+    await expect(load.locator(".video-workout-load-input")).toHaveCSS("background-color", "rgb(6, 23, 36)");
+    await expect(load.locator("input")).toHaveCSS("color", "rgb(255, 255, 255)");
+    await load.locator("input").focus();
+    await expect(load.locator("input")).toHaveCSS("color", "rgb(255, 255, 255)");
+    const validate = page.getByRole("button", { name: /Valider la série/ });
+    await expect(validate).toHaveCSS("background-image", /rgb\(165, 8, 34\).*rgb\(223, 24, 51\)/);
+    await expect(validate).toHaveCSS("color", "rgb(255, 255, 255)");
+    await expect(validate.locator("span")).toHaveCSS("color", "rgb(255, 255, 255)");
+    await validate.hover();
+    await expect(validate).toHaveCSS("color", "rgb(255, 255, 255)");
+    const finish = page.locator(".session-top-actions .btn.primary");
+    await expect(finish).toHaveCSS("background-color", "rgb(140, 16, 35)");
+    await expect(finish).toHaveCSS("color", "rgb(255, 255, 255)");
+    await finish.hover();
+    await expect(finish).toHaveCSS("color", "rgb(255, 255, 255)");
+  }
+  // On passe réellement par le bouton de thème, quel que soit le thème initial.
+  for (const theme of ["light", "dark"]) {
+    const dark = await page.evaluate(() => document.documentElement.dataset.theme === "dark");
+    if (dark !== (theme === "dark")) await page.locator(".theme-toggle").click();
+    await expect(page.locator(".video-workout-load-auto")).toBeVisible();
+    await checkPalette();
+  }
+  await expect(page.locator(".save-status")).toContainText("Enregistré");
+  await page.evaluate(() => {
+    const state = JSON.parse(localStorage.getItem(window.__YFE_KEY__));
+    Object.assign(state.profiles.elite.workout.exercises[0], {
+      exerciseId: "gainage-planche", sourceName: "Gainage planche", unit: "secondes", seconds: 30, targetSets: 1, sets: [],
+    });
+    state.updatedAt = Date.now() + 5000;
+    localStorage.setItem(window.__YFE_KEY__, JSON.stringify(state));
+  });
+  await page.reload();
+  await page.locator(".mobile-nav").getByRole("button", { name: "Entraînement", exact: true }).click();
+  const timed = page.locator(".video-workout-load-timed");
+  await expect(timed).toHaveText("AU TEMPS");
+  for (const theme of ["dark", "light"]) {
+    const dark = await page.evaluate(() => document.documentElement.dataset.theme === "dark");
+    if (dark !== (theme === "dark")) await page.locator(".theme-toggle").click();
+    await expect(timed).toHaveCSS("color", "rgb(23, 32, 42)");
+    await expect(page.locator(".video-workout-load-copy > span")).toHaveCSS("color", "rgb(61, 48, 13)");
+  }
+});

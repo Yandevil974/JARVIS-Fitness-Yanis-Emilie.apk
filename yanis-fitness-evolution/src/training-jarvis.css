@@ -317,3 +317,43 @@
 .training-command .force-reference { margin-top: 12px; color: #b5d2db; font-size: 11px; line-height: 1.5; }
 .training-command .force-reference summary { cursor: pointer; color: #91eef4; font-weight: 700; }
 .training-command .force-reference p { margin: 8px 0 0; }
+
+/* Palette séance choisie : couleurs uniquement, disposition et commandes inchangées. */
+.training-command .session-topbar h2 { color: #f2d77e; }
+.training-command .command-eyebrow span { color: #f2d77e; }
+.training-command .command-section-label i { background-color: #f2d77e; }
+.training-command .session-top-actions .btn.primary,
+.training-command .session-top-actions .btn.primary:hover,
+[data-theme="dark"] .training-command .session-top-actions .btn.primary,
+[data-theme="dark"] .training-command .session-top-actions .btn.primary:hover {
+  color: #ffffff !important;
+  background: #8c1023;
+  border-color: #ff5066;
+}
+.training-command .validate-set,
+.training-command .validate-set:hover,
+[data-theme="dark"] .training-command .validate-set,
+[data-theme="dark"] .training-command .validate-set:hover {
+  color: #ffffff !important;
+  background: linear-gradient(90deg, #a50822, #df1833);
+  border-color: #ff4a5d;
+}
+.training-command .validate-set > span,
+[data-theme="dark"] .training-command .validate-set > span { color: #ffffff !important; }
+.training-command .exercise-stage .video-workout-load {
+  background: linear-gradient(120deg, #f5c93b, #ffe576);
+  border-color: #ffe68b;
+  color: #17202a;
+}
+.training-command .video-workout-load-copy > strong,
+.training-command .video-workout-load-timed { color: #17202a; }
+.training-command .video-workout-load-copy > span,
+.training-command .video-workout-load-copy > .video-workout-load-auto { color: #3d300d; }
+.training-command .video-workout-load-input { background: #061724; border-color: #17202a; }
+.training-command .video-workout-load-input input { color: #ffffff; }
+.training-command .video-workout-load-input span { color: #d8edf1; }
+.training-command .command-recovery { border-color: #e9ca6d; }
+.training-command .rest-next { border-color: #dcbf65; }
+.training-command .rest-widget .ring > svg circle:last-child { stroke: #eacb6e; }
+.training-command .session-command-orb i:nth-child(2) { border-left-color: #f2d77e; border-right-color: #f2d77e; }
+/* Fin palette séance. */
