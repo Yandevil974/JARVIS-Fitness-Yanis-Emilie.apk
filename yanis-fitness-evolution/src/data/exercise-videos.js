@@ -22,6 +22,17 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Good morning reçu : démonstration accompagnée, GIF conservé en repli.
+  "good-morning-debout": {
+    src: "/videos/good-morning-debout.mp4", poster: "/videos/posters/good-morning-debout.jpg", label: "Vidéo IA · Good morning debout", status: "coached",
+    coaching: {
+      title: "Barre sur les trapèzes, hanches en arrière.",
+      handCue: "Tenez la barre à deux mains sur les trapèzes, sous la base du cou, sans la poser sur la nuque ; commencez léger.",
+      movementCue: "Pieds à plat et genoux souples, reculez les hanches en inclinant le buste d'un bloc, dos neutre ; revenez debout sans vous cambrer.",
+      notice: "Le corps et la barre sont entiers sur les images contrôlées ; l'angle arrière masque partiellement le contact précis de la barre avec le haut du dos. L'inclinaison paraît prononcée et le tempo exact n'est pas démontré : utilisez une amplitude confortable et suivez la fiche.",
+      spoken: "Good morning debout. Commencez léger. Placez la barre sur les trapèzes du haut du dos, sous la base du cou, et tenez-la à deux mains. Pieds à plat largeur de hanches, genoux souples et dos neutre. Reculez les hanches et inclinez le buste en trois secondes dans une amplitude confortable, puis revenez debout en une seconde sans cambrer le dos. La vidéo ne montre pas clairement le contact de la barre avec le haut du dos : vérifiez sa position et ne la posez pas sur la nuque. Cinq séries de huit à dix, soixante secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
   // Ischios : les vidéos reçues sont des supports accompagnés, pas des modèles parfaits.
   "souleve-de-terre-roumain-halteres": {
     src: "/videos/souleve-terre-roumain-halteres.mp4", poster: "/videos/posters/souleve-terre-roumain-halteres.jpg", label: "Vidéo IA · Roumain avec haltères", status: "coached",
@@ -64,26 +75,26 @@ export const EXERCISE_VIDEOS = {
       spoken: "Leg curl allongé à la machine. Réglez la machine, allongez-vous face contre le banc et placez le rouleau derrière les chevilles. Bassin et cuisses restent en appui. Pliez les deux genoux jusqu'à environ quatre-vingt-dix degrés puis redescendez sous contrôle. Les jambes se superposent et le mécanisme du rouleau est peu clair dans la vidéo. La variante sur ballon est différente et n'est pas montrée ici. Suivez le tempo, la position des pieds et les séries de votre fiche. Arrêtez en cas de douleur.",
     },
   },
-  // Cadrage coupé : source provisoire à remplacer par une vidéo entière.
+  // Cadrage coupé : vidéo conservée telle quelle à la demande de Yanis, avec réserve.
   "souleve-de-terre-roumain-barre": {
-    src: "/videos/souleve-terre-roumain-barre-provisoire.mp4", poster: "/videos/posters/souleve-terre-roumain-barre-provisoire.jpg", label: "Vidéo IA · Roumain barre — cadrage à refaire", status: "coached",
+    src: "/videos/souleve-terre-roumain-barre-provisoire.mp4", poster: "/videos/posters/souleve-terre-roumain-barre-provisoire.jpg", label: "Vidéo IA · Roumain barre avec consignes", status: "coached",
     coaching: {
       title: "Barre proche des jambes, hanches en arrière.",
       handCue: "Saisissez la barre à deux mains à l'extérieur des jambes, bras tendus.",
       movementCue: "Pieds à plat et genoux souples, reculez les hanches, dos neutre ; gardez la barre près des jambes puis revenez debout sans cambrer.",
-      notice: "La tête est coupée lorsque l'athlète se redresse : vidéo provisoire à refaire, non conforme au cadrage intégral. La coloration concerne l'avant des cuisses, le tempo exact n'est pas démontré et la boucle saute. Suivez la fiche.",
-      spoken: "Soulevé de terre roumain à la barre. Pieds à plat largeur de hanches, saisissez la barre à deux mains, bras tendus. Reculez les hanches en gardant les genoux souples et le dos neutre ; la barre reste près des jambes. Descendez dans une amplitude confortable puis remontez en avançant les hanches sans vous cambrer. La tête est coupée dans la vidéo, qui doit être refaite. Suivez votre fiche et arrêtez en cas de douleur.",
+      notice: "La tête est coupée lorsque l'athlète se redresse ; Yanis conserve cette vidéo en l'état. La coloration concerne l'avant des cuisses, le tempo exact n'est pas démontré et la boucle saute. Suivez la fiche.",
+      spoken: "Soulevé de terre roumain à la barre. Pieds à plat largeur de hanches, saisissez la barre à deux mains, bras tendus. Reculez les hanches en gardant les genoux souples et le dos neutre ; la barre reste près des jambes. Descendez dans une amplitude confortable puis remontez en avançant les hanches sans vous cambrer. La tête est coupée dans la vidéo : suivez la consigne du mouvement. Suivez votre fiche et arrêtez en cas de douleur.",
     },
   },
-  // Cadrage coupé : source provisoire à remplacer par une vidéo entière.
+  // Cadrage coupé : vidéo conservée telle quelle à la demande de Yanis, avec réserve.
   "souleve-de-terre-roumain-barre-test-3-5-reps": {
-    src: "/videos/souleve-terre-roumain-barre-provisoire.mp4", poster: "/videos/posters/souleve-terre-roumain-barre-provisoire.jpg", label: "Vidéo IA · Roumain barre — cadrage à refaire", status: "coached",
+    src: "/videos/souleve-terre-roumain-barre-provisoire.mp4", poster: "/videos/posters/souleve-terre-roumain-barre-provisoire.jpg", label: "Vidéo IA · Roumain barre avec consignes", status: "coached",
     coaching: {
       title: "Barre proche des jambes, hanches en arrière.",
       handCue: "Saisissez la barre à deux mains à l'extérieur des jambes, bras tendus.",
       movementCue: "Pieds à plat et genoux souples, reculez les hanches, dos neutre ; gardez la barre près des jambes puis revenez debout sans cambrer.",
-      notice: "La tête est coupée lorsque l'athlète se redresse : vidéo provisoire à refaire, non conforme au cadrage intégral. La coloration concerne l'avant des cuisses, le tempo exact n'est pas démontré et la boucle saute. Suivez la fiche.",
-      spoken: "Soulevé de terre roumain à la barre. Pieds à plat largeur de hanches, saisissez la barre à deux mains, bras tendus. Reculez les hanches en gardant les genoux souples et le dos neutre ; la barre reste près des jambes. Descendez dans une amplitude confortable puis remontez en avançant les hanches sans vous cambrer. La tête est coupée dans la vidéo, qui doit être refaite. Suivez votre fiche et arrêtez en cas de douleur.",
+      notice: "La tête est coupée lorsque l'athlète se redresse ; Yanis conserve cette vidéo en l'état. La coloration concerne l'avant des cuisses, le tempo exact n'est pas démontré et la boucle saute. Suivez la fiche.",
+      spoken: "Soulevé de terre roumain à la barre. Pieds à plat largeur de hanches, saisissez la barre à deux mains, bras tendus. Reculez les hanches en gardant les genoux souples et le dos neutre ; la barre reste près des jambes. Descendez dans une amplitude confortable puis remontez en avançant les hanches sans vous cambrer. La tête est coupée dans la vidéo : suivez la consigne du mouvement. Suivez votre fiche et arrêtez en cas de douleur.",
     },
   },
   // Quadriceps #23 : presse unilatérale, clip reçu.

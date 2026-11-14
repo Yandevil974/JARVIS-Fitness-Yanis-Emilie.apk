@@ -3,8 +3,8 @@
 // les sauvegardes JARVIS (schemaVersion 3) sans conversion destructive.
 export const APP_ID = "app.yanis.fitness.evolution";
 export const APP_NAME = "Yanis Fitness Evolution";
-export const APP_VERSION = "1.19.0";
-export const BUILD_CODE = 202;
+export const APP_VERSION = "1.21.0";
+export const BUILD_CODE = 204;
 export const STORAGE_KEY = "yanis_evolution_v3";
 // Les anciennes clés JARVIS sont relues à la première ouverture (migration
 // lecture seule, jamais d'écrasement : l'app d'origine reste intacte).

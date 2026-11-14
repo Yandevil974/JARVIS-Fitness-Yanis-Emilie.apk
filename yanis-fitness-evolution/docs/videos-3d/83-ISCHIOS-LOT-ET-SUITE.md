@@ -6,9 +6,9 @@ Contrôle sur 12 images échantillonnées de chaque clip (et non chaque image) ;
 
 - `1794629525692.mp4`, SHA-256 `5729a304d9d795eed439ffec5da88fd65df3cf34119c22fe0c189a1833b809e9` : roumain deux haltères. Le corps est entier sur les images observées ; une prise est en partie cachée, le rouge déborde sur le dos et le fessier, et le tempo exact n'est pas démontré. Fiche haltères bilatérale uniquement.
 - `1794629898835.mp4`, SHA-256 `4821aba4b0ff92958710424bbce57ca1de2a17a1171fae931b870c93ca9261af` : leg curl machine allongé. Corps entier aux images observées, jambes et chaussures superposées, rouleau paraissant se détacher du mécanisme en flexion, tempo et position précise des pieds non démontrés. Trois fiches de machine allongée peuvent utiliser la même vidéo ; elle ne démontre pas la variante swiss-ball. Ne pas la raccorder aux variantes pieds pointés, pieds fléchis ou 1¼.
-- `1794630191344.mp4`, SHA-256 `43f98d0878d05b3ce54770759341da34ec14cac7fb8b24e3c41ec16cba02c48c` : roumain barre et même geste version test 3–5. **La tête est coupée lors du redressement : clip provisoire à refaire**, un recadrage d'application ne restitue pas les pixels absents. Rouge devant les cuisses, non à l'arrière ; boucle et tempo inexacts. Dépôt reçu en attendant une version entière, avec notice et voix ; ne pas le considérer comme terminé.
+- `1794630191344.mp4`, SHA-256 `43f98d0878d05b3ce54770759341da34ec14cac7fb8b24e3c41ec16cba02c48c` : roumain barre et même geste version test 3–5. **La tête est coupée lors du redressement**, un recadrage d'application ne restitue pas les pixels absents. Rouge devant les cuisses, non à l'arrière ; boucle et tempo inexacts. Yanis demande expressément de **garder le clip en l'état**, sans nouvelle génération ni crédits ; intégré avec notice et voix.
 
-## Prompt de reprise : roumain barre
+## Ancien prompt roumain barre — archivé, ne pas relancer
 
 Référence `isc-04-roumain-barre-debout-v1.jpg`, position initiale debout permettant de cadrer dès le départ la hauteur maximale. Réserve : les mollets sont aussi colorés ; le prompt précise de cibler l'arrière des cuisses. Aucune vidéo n'est garantie par le prompt.
 
@@ -20,9 +20,9 @@ Descente : sans bouger les pieds, pousser le bassin et les fesses vers l'arrièr
 
 Remontée : pousser dans les deux pieds, avancer les hanches et redresser le buste en un seul bloc. La barre remonte près des tibias puis des cuisses, toujours tenue par les deux mains, bras tendus. Terminer debout sans se pencher en arrière. Pas de saut de boucle ; une seule barre, aucun changement de prise ni de position des pieds. Ischios à l'arrière des cuisses en rouge-orangé, comme les vidéos existantes ; pas de coloration sur l'avant des cuisses ni les mollets. »
 
-## Prompt suivant : good morning debout barre
+## Prompt utilisé : good morning debout barre
 
-Référence `isc-good-morning-v3.jpg`. Vérifier que la barre reste sur les trapèzes sous la base du cou, et non dans le cou ; l'image seule ne garantit pas le point de contact. À présenter avant toute génération vidéo.
+Référence `isc-good-morning-v3.jpg`. Vérifier que la barre reste sur les trapèzes sous la base du cou, et non dans le cou ; l'image seule ne garantit pas le point de contact. Vidéo déposée et intégrée avec réserves : voir ci-dessous.
 
 « Vidéo anatomique 3D réaliste, une répétition complète de **good morning debout avec barre sur le haut du dos**, pas un squat. Caméra fixe vue de trois quarts arrière-côté, suffisamment large : corps entier, tête, chaussures et barre complète avec ses deux disques visibles du début à la fin. Ne pas zoomer.
 
@@ -35,3 +35,7 @@ Remontée : pousser dans les deux pieds et avancer les hanches, redresser le bus
 ## Autre référence en attente
 
 Le leg curl debout a été essayé mais les images générées ne montrent pas clairement le rouleau relié au levier. Ne pas dépenser de crédits vidéo sur ces essais ; préparer une référence techniquement lisible d'abord.
+
+## Good morning déposé
+
+`1794640022808.mp4`, SHA-256 `89b42e02888cd55e56bba1442097f5d8590ae10e0ed1d7d4e994bf64f295d91a`, 121 images à 24 ips, 640 × 360. Sur 12 images échantillonnées, corps et barre entiers ; inclinaison marquée, contact de la barre sur le haut du dos partiellement masqué, tempo non démontré. Vidéo `coached`, consigne barre sur trapèzes sous la base du cou, amplitude confortable et charge légère au départ ; GIF conservé.
