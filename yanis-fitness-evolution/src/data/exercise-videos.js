@@ -1008,6 +1008,20 @@ export const EXERCISE_VIDEOS = {
         "French press allongée avec un seul haltère, un bras à la fois. Tenez l’haltère en prise neutre, poignet droit, et soutenez légèrement le coude avec la main libre. Gardez le haut du bras vertical et fixe. Descendez l’haltère à côté de la tête en trois secondes en pliant seulement le coude, sans contact avec le visage, puis remontez en une seconde en dépliant seulement le coude. Ne reproduisez pas la rotation du poignet, le changement d’orientation de l’haltère ou la vitesse de la vidéo IA. La vidéo s’arrête en bas après sa deuxième descente : remontez toujours en haut avec contrôle pour terminer chaque répétition, sans copier le raccord de boucle. Terminez la série du même côté avant de changer de bras. Le tempo 3010 reste prioritaire.",
     },
   },
+  // Même geste, même matériel et même GIF que T09 ; chaque fiche garde ses séries.
+  "extensions-triceps-barre-ez-pullover": {
+    src: "/videos/extensions-triceps-ez-commune-05-06-09.mp4",
+    poster: "/videos/posters/extensions-triceps-ez-commune-05-06-09.jpg",
+    label: "Vidéo IA · Extensions triceps et pullover, arc prioritaire",
+    status: "coached",
+    coaching: {
+      title: "Combinez pullover et extension dans un arc derrière la tête, jamais vers le cou.",
+      handCue: "Une barre EZ en pronation rapprochée, mains sur les poignées intérieures et poignets alignés.",
+      movementCue: "Allongé, descendez en trois secondes dans un arc derrière la tête en associant épaules et coudes, puis remontez en une seconde au-dessus de la poitrine.",
+      notice: "Vidéo partagée avec les extensions et le pullover déjà acceptés : la descente est trop proche du cou, les coudes s’ouvrent et le cycle est accéléré. Suivez l'audio et la prescription de cette fiche.",
+      spoken: "Extensions triceps combinées à un pullover, allongé avec une barre EZ. Prenez les poignées intérieures en pronation rapprochée, poignets alignés. Descendez en trois secondes dans un arc derrière la tête en pliant les coudes et en laissant les hauts des bras reculer pour le pullover, avec un espace sûr, jamais vers le cou ou la gorge. Remontez en une seconde au-dessus de la poitrine en dépliant les coudes et en ramenant les bras. Gardez la barre horizontale, les côtes contrôlées et les hanches appuyées. Ne reproduisez pas la descente près du cou, les coudes ouverts ou la vitesse de la vidéo. Trois séries de dix à douze répétitions, soixante-quinze secondes de repos, tempo trois zéro un zéro. Arrêtez en cas de douleur.",
+    },
+  },
   "extensions-triceps-pullover-barre-ez": {
     // T09. La combinaison pullover + extension est dictée, pas la descente au cou.
     src: "/videos/extensions-triceps-ez-commune-05-06-09.mp4",

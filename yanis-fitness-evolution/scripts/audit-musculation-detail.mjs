@@ -5,7 +5,6 @@ import {videoFor} from '../src/data/exercise-videos.js';
 import {stepVideoFor} from '../src/data/step-videos.js';
 import {existsSync, readFileSync, statSync, writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {execFileSync} from 'node:child_process';
 
 const eligible=EXERCISES.filter(e=>e.sources.includes('elite')||e.sources.includes('emilie'));
 const hash=path=>createHash('sha256').update(readFileSync(path)).digest('hex');
@@ -33,10 +32,9 @@ const clips=[...new Set([...checked.values()].map(v=>v.src))];
 const hashes=new Set(clips.map(p=>cache.get(p)?.hash).filter(Boolean));
 const groupEntries=Object.entries(MUSCLES).map(([id,label])=>({id,label,items:eligible.filter(e=>e.muscle===id)})).filter(g=>g.items.length);
 const escaped=s=>String(s||'').replaceAll('|','\\|').replaceAll('\n',' ');
-const version=execFileSync('git',['rev-parse','--short','HEAD'],{encoding:'utf8'}).trim();
 const lines=[
  '# Contrôle détaillé des vidéos — musculation', '',
- `État audité : commit \`${version}\` (APK 1.21.0). Source : les fiches Elite et Émilie et leur résolveur de vidéo. Une fiche partagée par les deux profils n'est comptée qu'une fois.`, '',
+ "État audité : registre de la branche au moment de la génération. Les nouvelles associations depuis l’APK 1.21.0 ne sont pas encore dans cet APK. Une fiche commune aux deux profils n’est comptée qu’une fois.", '',
  `**${eligible.length} fiches : ${checked.size} avec une vidéo raccordée, ${eligible.length-checked.size} sans vidéo raccordée.**`,
  `Les ${checked.size} fiches utilisent ${clips.length} chemins MP4, correspondant à ${hashes.size} contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.`,
  `Sur les fiches raccordées : ${[...checked.values()].filter(v=>v.status==='coached').length} accompagnées de consignes correctives et ${[...checked.values()].filter(v=>v.status==='validated').length} marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.`, '',
@@ -58,7 +56,7 @@ for(const g of groupEntries){
 lines.push('## Fiches sans vidéo actuellement raccordée', '', 'Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par fiche : vérifier d’abord le geste, le matériel, le côté et la méthode.', '');
 for(const g of groupEntries){const missing=g.items.filter(e=>!checked.has(e.id));if(!missing.length)continue;lines.push(`### ${g.label} — ${missing.length}`, '');for(const e of missing)lines.push(`- ${e.name}${e.id==='extensions-triceps-halteres-incline'?' **(triceps #11 en stand-by)**':''}`);lines.push('');}
 lines.push('## Rapprochements à examiner avant toute génération', '',
- '- **Extensions triceps barre EZ + pullover** et **Extensions triceps + pullover barre EZ** : même GIF, même matériel et même tempo ; la seconde fiche utilise déjà une vidéo accompagnée. Vérifier le raccordement et conserver les prescriptions de chaque fiche : pas de nouvelle génération automatique.',
+ '- **Extensions triceps barre EZ + pullover** : raccordée à la vidéo déjà acceptée pour la fiche **Extensions triceps + pullover barre EZ**. Même GIF, même matériel et même geste ; les prescriptions restent distinctes. Voir [contrôle](./86-REUTILISATION-TRICEPS-ET-COULEURS.md).',
  '- **Extensions triceps poulie** et **Extension triceps à la poulie** : des vidéos de poulie existent déjà, mais l’accessoire et la variante doivent être comparés avant de les partager.',
  '- Les relevés de jambes allongés, les abductions et plusieurs variantes de leg curl ont des libellés proches. Vérifier angle, matériel, latéralité et méthode avant une éventuelle réutilisation ; les répétitions 1¼ et les positions de pieds ne sont pas équivalentes à une démonstration standard.',
  '- Presse pieds hauts et fentes barre : Yanis pense avoir déjà réalisé ces vidéos ; ne pas affirmer leur absence définitive ni générer avant vérification.', '',

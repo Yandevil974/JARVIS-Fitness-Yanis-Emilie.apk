@@ -1,10 +1,10 @@
 # Contrôle détaillé des vidéos — musculation
 
-État audité : commit `dd6f64e` (APK 1.21.0). Source : les fiches Elite et Émilie et leur résolveur de vidéo. Une fiche partagée par les deux profils n'est comptée qu'une fois.
+État audité : registre de la branche au moment de la génération. Les nouvelles associations depuis l’APK 1.21.0 ne sont pas encore dans cet APK. Une fiche commune aux deux profils n’est comptée qu’une fois.
 
-**203 fiches : 137 avec une vidéo raccordée, 66 sans vidéo raccordée.**
-Les 137 fiches utilisent 118 chemins MP4, correspondant à 107 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
-Sur les fiches raccordées : 127 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
+**203 fiches : 138 avec une vidéo raccordée, 65 sans vidéo raccordée.**
+Les 138 fiches utilisent 118 chemins MP4, correspondant à 107 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
+Sur les fiches raccordées : 128 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
 
 Contrôle automatisé : existence et taille non nulle, empreinte identique entre public et release pour chaque vidéo, affiche et GIF des 203 fiches ; présence des notices et voix pour les vidéos accompagnées. Résultat : **0 anomalie(s)** de ce type. Tous les GIF de ces fiches sont présents.
 Ce contrôle **ne revoit pas manuellement toutes les images de chaque vidéo** et ne certifie pas chaque geste, cadrage ou lecture sur téléphone. Une vidéo non raccordée ne signifie pas forcément qu’aucune vidéo compatible n’existe déjà ailleurs. Les consignes et les décisions de Yanis restent prioritaires.
@@ -21,7 +21,7 @@ Le roumain barre est conservé tel quel sur décision de Yanis, malgré la tête
 | Épaules latérales | 8 | 0 | 8 |
 | Épaules postérieures | 5 | 0 | 5 |
 | Biceps | 20 | 0 | 20 |
-| Triceps | 12 | 5 | 17 |
+| Triceps | 13 | 4 | 17 |
 | Abdominaux | 0 | 15 | 15 |
 | Gainage profond | 0 | 8 | 8 |
 | Lombaires | 0 | 1 | 1 |
@@ -152,7 +152,7 @@ Chaque nom ci-dessous est une fiche. Le fichier indiqué peut être réutilisé 
 | Curl haltères incliné, prise neutre | Elite | [curl-halteres-incline-prise-neutre.mp4](../../public/videos/curl-halteres-incline-prise-neutre.mp4) | Accompagnée |
 | Curl barre | Elite | [curl-barre.mp4](../../public/videos/curl-barre.mp4) | Accompagnée |
 
-### Triceps — 12/17
+### Triceps — 13/17
 
 | Exercice | Profils | Vidéo | Statut |
 |---|---|---|---|
@@ -168,6 +168,7 @@ Chaque nom ci-dessous est une fiche. Le fichier indiqué peut être réutilisé 
 | Développé couché prise serrée | Elite | [developpe-couche-prise-serree.mp4](../../public/videos/developpe-couche-prise-serree.mp4) | Accompagnée |
 | Pushdown triceps câble | Elite | [pushdown-triceps-cable.mp4](../../public/videos/pushdown-triceps-cable.mp4) | Accompagnée |
 | California press (barre au cou) | Elite | [california-press-barre-au-cou.mp4](../../public/videos/california-press-barre-au-cou.mp4) | Accompagnée |
+| Extensions triceps barre EZ + pullover | Elite | [extensions-triceps-ez-commune-05-06-09.mp4](../../public/videos/extensions-triceps-ez-commune-05-06-09.mp4) | Accompagnée |
 
 ### Fessiers — 11/14
 
@@ -231,10 +232,9 @@ Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par 
 - Développé haltères assis, prise neutre
 - Développé militaire, inertie depuis les pins
 
-### Triceps — 5
+### Triceps — 4
 
 - Extensions triceps haltères incliné **(triceps #11 en stand-by)**
-- Extensions triceps barre EZ + pullover
 - Développé couché décliné prise serrée
 - Extensions triceps haltères plat
 - Extensions triceps poulie
@@ -324,7 +324,7 @@ Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par 
 
 ## Rapprochements à examiner avant toute génération
 
-- **Extensions triceps barre EZ + pullover** et **Extensions triceps + pullover barre EZ** : même GIF, même matériel et même tempo ; la seconde fiche utilise déjà une vidéo accompagnée. Vérifier le raccordement et conserver les prescriptions de chaque fiche : pas de nouvelle génération automatique.
+- **Extensions triceps barre EZ + pullover** : raccordée à la vidéo déjà acceptée pour la fiche **Extensions triceps + pullover barre EZ**. Même GIF, même matériel et même geste ; les prescriptions restent distinctes. Voir [contrôle](./86-REUTILISATION-TRICEPS-ET-COULEURS.md).
 - **Extensions triceps poulie** et **Extension triceps à la poulie** : des vidéos de poulie existent déjà, mais l’accessoire et la variante doivent être comparés avant de les partager.
 - Les relevés de jambes allongés, les abductions et plusieurs variantes de leg curl ont des libellés proches. Vérifier angle, matériel, latéralité et méthode avant une éventuelle réutilisation ; les répétitions 1¼ et les positions de pieds ne sont pas équivalentes à une démonstration standard.
 - Presse pieds hauts et fentes barre : Yanis pense avoir déjà réalisé ces vidéos ; ne pas affirmer leur absence définitive ni générer avant vérification.

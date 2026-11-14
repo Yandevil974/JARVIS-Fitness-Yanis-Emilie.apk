@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readFileSync} from 'node:fs';
+import {EXERCISES} from '../src/data/library.js';
+import {videoFor} from '../src/data/exercise-videos.js';
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+test('extensions EZ + pullover : même geste et vidéo existante, prescription propre et GIF préservé',()=>{
+ const exercise=id=>EXERCISES.find(e=>e.id===id);
+ const a=exercise('extensions-triceps-barre-ez-pullover');
+ const b=exercise('extensions-triceps-pullover-barre-ez');
+ assert.deepEqual([a.gif,a.equipment,a.tempo],[b.gif,b.equipment,b.tempo]);
+ assert.deepEqual([a.defaultSets,a.repScheme,a.tempo,a.rest],[3,'10-12','3010',75]);
+ assert.deepEqual([b.defaultSets,b.repScheme,b.tempo,b.rest],[3,'8-10','3010',75]);
+ const actual=videoFor(a),old=videoFor(b);
+ assert.equal(actual.src,old.src);assert.equal(actual.poster,old.poster);assert.equal(actual.status,'coached');
+ assert.match(actual.coaching.notice,/cou/);assert.match(actual.coaching.spoken,/dix à douze/);assert.match(actual.coaching.spoken,/soixante-quinze/);
+ assert.equal(hash('public'+actual.src),hash('release'+actual.src));
+ assert.equal(hash('public'+actual.poster),hash('release'+actual.poster));
+ assert.equal(hash('public'+a.gif),hash('release'+a.gif));
+ for(const id of ['extensions-triceps-poulie','extensions-triceps-halteres-plat','extensions-triceps-halteres-incline','drop-lunges-fentes-controlees']) assert.equal(videoFor(id),null,id);
+});
