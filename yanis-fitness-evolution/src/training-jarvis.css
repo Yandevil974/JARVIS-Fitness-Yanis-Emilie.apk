@@ -357,3 +357,11 @@
 .training-command .rest-widget .ring > svg circle:last-child { stroke: #eacb6e; }
 .training-command .session-command-orb i:nth-child(2) { border-left-color: #f2d77e; border-right-color: #f2d77e; }
 /* Fin palette séance. */
+/* Priorité aux couleurs de la maquette malgré les règles générales du thème sombre. */
+[data-theme="dark"] .training-command .session-topbar h2 { color: #f2d77e !important; }
+[data-theme="dark"] .training-command .video-workout-load-copy > strong,
+[data-theme="dark"] .training-command .video-workout-load-timed { color: #17202a !important; }
+[data-theme="dark"] .training-command .video-workout-load-copy > span,
+[data-theme="dark"] .training-command .video-workout-load-copy > .video-workout-load-auto { color: #3d300d !important; }
+[data-theme="dark"] .training-command .video-workout-load-input input { background: transparent !important; color: #ffffff !important; }
+[data-theme="dark"] .training-command .video-workout-load-input span { color: #d8edf1 !important; }
