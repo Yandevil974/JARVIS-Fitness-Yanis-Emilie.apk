@@ -59,8 +59,8 @@ for (const width of [320, 390, 1440]) {
     ];
     await page.addInitScript(({ key, data }) => localStorage.setItem(key, JSON.stringify(data)), { key: STORAGE_KEY, data: state });
     await page.goto("/");
-    const nav = width < 600 ? page.locator(".mobile-nav") : page.locator(".sidebar");
-    await nav.getByRole("button", { name: "Progression", exact: true }).click();
+    if (width < 600) await page.locator(".mobile-nav").getByRole("button", { name: "Autres modules" }).click();
+    await page.locator(".sidebar").getByRole("button", { name: "Progression", exact: true }).click();
     await page.getByRole("tab", { name: "Photos", exact: true }).click();
     const wrapper = page.locator(".photo-jarvis");
     const consent = page.getByLabel(/J’accepte l’envoi/);
