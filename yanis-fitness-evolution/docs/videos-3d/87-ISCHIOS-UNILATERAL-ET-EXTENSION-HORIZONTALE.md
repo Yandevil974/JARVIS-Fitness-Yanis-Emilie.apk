@@ -1,6 +1,6 @@
 # Musculation — suite ischios : deux références à contrôler
 
-Aucun MP4 généré, aucune vidéo intégrée et aucun GIF modifié. Le roumain barre existant reste conservé tel quel à la demande de Yanis. Le présent lot concerne deux autres gestes ; les 12 fiches ischios sans vidéo raccordée ne sont pas nécessairement 12 nouveaux clips à produire.
+Depuis la préparation des références ci-dessous, Yanis a demandé d’essayer les deux puis a déposé les deux MP4. Ils sont intégrés avec réserves ; aucun GIF n’a été modifié. Le roumain barre existant reste conservé tel quel à la demande de Yanis. Le présent lot concerne deux autres gestes ; il reste 10 fiches ischios sans vidéo raccordée, pas nécessairement 10 nouveaux clips à produire.
 
 ## Contrôle des fichiers avant une dépense vidéo
 
@@ -17,11 +17,18 @@ Prompt éventuel après accord sur la référence :
 
 > Vidéo anatomique 3D réaliste, plan fixe large de profil trois quarts, corps entier et deux chaussures visibles du début à la fin, avec de la marge autour de la tête et du pied levé. Un seul athlète, un seul haltère. Départ debout sur le pied gauche, pied entièrement au sol, genou gauche légèrement fléchi ; jambe droite libre. La main droite tient fermement un haltère près de la cuisse gauche, bras tendu ; la main gauche est libre. Descente lente en trois secondes : le pied gauche ne bouge pas, les hanches reculent, le buste et la tête s'inclinent ensemble en gardant le dos neutre ; la jambe droite s'étend vers l'arrière comme contrepoids, pied droit hors du sol. Le bassin reste face au sol sans s'ouvrir. L'haltère descend près de la jambe d'appui, sans toucher le sol. Remonter en une seconde en avançant la hanche d'appui, sans s'élancer ; revenir debout, tenir une seconde. Une seule répétition, aucune flexion de bras, aucun deuxième haltère. Les deux mains et la prise restent lisibles, aucune partie du corps coupée. Ischio à l'arrière de la cuisse d'appui en rouge-orangé lumineux comme les vidéos existantes.
 
-## Référence 2 — extension horizontale : en attente, ne pas générer
+## Référence 2 — extension horizontale : réserve initiale avant réception
 
-Image d'étude : `isc-back-extension-horizontal-v3.jpg`. Malgré plusieurs essais, l'appui semble sous le bassin et peut gêner la charnière des hanches ; la fixation des deux chevilles est difficile à vérifier de profil, les mains sont masquées. **Ce n'est pas une référence suffisamment fiable pour dépenser des crédits vidéo.** À clarifier/corriger avant un prompt final : appui sous l'avant des cuisses, hanches libres au bord du coussin, deux chevilles réellement fixées, et buste libre de descendre puis de revenir aligné sans cambrer.
+Image d'étude : `isc-back-extension-horizontal-v3.jpg`. Malgré plusieurs essais, l'appui semble sous le bassin et peut gêner la charnière des hanches ; la fixation des deux chevilles est difficile à vérifier de profil, les mains sont masquées. **Cette référence avait été signalée comme incertaine ; Yanis a demandé de tenter quand même et a déposé la vidéo.** Points à contrôler : appui sous l'avant des cuisses, hanches libres au bord du coussin, deux chevilles réellement fixées, et buste libre de descendre puis de revenir aligné sans cambrer.
 
 ## Sources techniques consultées
 
 - Unilatéral : https://liftrava.com/exercises/single-leg-romanian-deadlift — exemple avec haltère dans la main opposée et jambe libre vers l'arrière ; variante à confirmer pour la fiche.
 - Banc horizontal : https://www.combatfitness.co/post/hyperextension-exercise — distinction chaise horizontale et banc 45°, retour à l'alignement sans hyperextension.
+
+## Vidéos déposées et intégrées
+
+Contrôle sur 11 images échantillonnées par clip, pas sur chaque image. Les deux fichiers font 121 images, 24 images/s, 640 × 360. Les corps et pieds restent entiers sur les images examinées ; cela ne garantit pas un cadrage parfait sur toutes les images. Les MP4 sont copiés à l'identique dans `public` et `release`, en `coached` avec notice et voix ; les GIF et prescriptions d’origine sont conservés.
+
+- `1794722270047.mp4`, SHA-256 `679da3598e57c0542c49402a80c6ec60b3afa5c499e072f308d72e257ee2ec34` : roumain unilatéral avec haltère. Le clip commence déjà incliné puis descend et revient debout ; la boucle saute. La prise est peu visible et l’haltère n’est plus clairement visible en fin de remontée ; la jambe libre se lève haut, la coloration touche les deux cuisses et le tempo exact n’est pas démontré. Ne raccorder qu’à la fiche avec haltère, pas à la variante poids du corps. Notice et voix rappellent de garder l'haltère en main, le dos neutre et une amplitude confortable.
+- `1794722705821.mp4`, SHA-256 `930e7163bff3850c25c7860613a51bc9dee389c83b3e3f8dd15120651ca2e642` : extension sur banc horizontal. Le buste semble dépasser légèrement l’alignement lors du retour ; la position exacte du coussin et la fixation des deux chevilles sont masquées ou incertaines, les mains peu lisibles, le tempo non démontré. Ne raccorder qu’à la fiche horizontale. Notice et voix demandent de vérifier la machine, de garder les hanches libres et de s’arrêter à l’alignement sans cambrer.

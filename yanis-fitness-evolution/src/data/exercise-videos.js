@@ -22,6 +22,27 @@
 // - Les vidéos lourdes (> 8 Mo) ne sont PAS commitées : voir
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
+  // Lot ischios : clips reçus avec réserves, GIF sources inchangés.
+  "souleve-de-terre-roumain-unilateral-haltere": {
+    src: "/videos/roumain-unilateral-un-haltere.mp4", poster: "/videos/posters/roumain-unilateral-un-haltere.jpg", label: "Vidéo IA · Roumain unilatéral avec haltère", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Une jambe d'appui, un haltère et le dos neutre.",
+      handCue: "Tenez un haltère dans la main opposée à la jambe d'appui, bras tendu ; vérifiez votre prise et prenez un appui pour l'équilibre si nécessaire.",
+      movementCue: "Pied d'appui à plat, genou souple : reculez les hanches et inclinez le buste, dos neutre ; l'autre jambe part en arrière. Revenez debout sous contrôle.",
+      notice: "La prise est peu visible et l'haltère n'est plus clairement visible à la fin ; le mouvement commence incliné et la boucle saute. La jambe libre et la coloration ne sont pas des repères de technique. Suivez la consigne et le tempo de la fiche.",
+      spoken: "Soulevé de terre roumain unilatéral avec un haltère. Tenez l'haltère dans la main opposée à la jambe d'appui. Pied à plat et genou souple, reculez la hanche, inclinez le buste avec le dos neutre et laissez l'autre jambe partir en arrière. Descendez en trois secondes dans une amplitude confortable, remontez en une seconde et marquez une seconde en haut. La prise est peu visible dans la vidéo et l'haltère n'est plus clairement visible à la fin : gardez-le bien en main tout au long du mouvement. Trois séries de dix par côté, soixante secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
+  "back-extension-horizontal": {
+    src: "/videos/back-extension-horizontal.mp4", poster: "/videos/posters/back-extension-horizontal.jpg", label: "Vidéo IA · Extension horizontale", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Hanches libres et buste aligné, sans cambrer.",
+      handCue: "Réglez une chaise romaine horizontale stable : avant des cuisses sur le coussin, hanches libres et deux chevilles correctement maintenues ; croisez les bras sur la poitrine.",
+      movementCue: "Abaissez le buste en pivotant aux hanches dans une amplitude confortable, puis remontez seulement jusqu'à l'alignement avec les jambes, sans cambrer.",
+      notice: "Le buste semble dépasser légèrement l'alignement en fin de remontée ; le coussin sous le bassin, les mains et la fixation des deux chevilles restent difficiles à vérifier. Ne copiez pas l'extension en haut : réglez le matériel et suivez la consigne.",
+      spoken: "Extension horizontale. Vérifiez que la chaise romaine est stable, que l'avant des cuisses est en appui, que les hanches sont libres et que les deux chevilles sont bien fixées. Croisez les bras. Descendez le buste en trois secondes en pivotant aux hanches, dans une amplitude confortable, puis remontez en une seconde uniquement jusqu'à l'alignement avec les jambes. Ne vous cambrez pas en haut : la vidéo semble dépasser cet alignement et le réglage des appuis est difficile à vérifier. Cinq séries de douze à quinze, cent vingt secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
   // Good morning reçu : démonstration accompagnée, GIF conservé en repli.
   "good-morning-debout": {
     src: "/videos/good-morning-debout.mp4", poster: "/videos/posters/good-morning-debout.jpg", label: "Vidéo IA · Good morning debout", status: "coached",

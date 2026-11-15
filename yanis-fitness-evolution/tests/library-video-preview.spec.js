@@ -86,3 +86,21 @@ test("les vidéos hors écran libèrent leur source et reprennent quand on revie
   await video.scrollIntoViewIfNeeded();
   await expect(video).toHaveAttribute("src", /\/videos\/.+\.mp4/);
 });
+
+test("ischios reçus : vidéos distinctes et réserves visibles dans la bibliothèque et les fiches", async ({ page }) => {
+  await openLibrary(page);
+  for (const [name, src, warning] of [
+    ["Soulevé de terre roumain unilatéral haltère", "/videos/roumain-unilateral-un-haltere.mp4", /haltère.*plus clairement visible/i],
+    ["Back extension horizontal", "/videos/back-extension-horizontal.mp4", /Ne copiez pas l'extension/i],
+  ]) {
+    const button = await findCard(page, name);
+    await expect(button.locator("video")).toHaveAttribute("src", src);
+    await expect(button.locator("..").locator(".library-video-warning")).toContainText(warning);
+    await button.click();
+    const dialog = page.getByRole("dialog", { name, exact: true });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute("src", src);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(warning);
+    await expect(dialog.getByRole("button", { name: "Écouter le descriptif" })).toBeVisible();
+    await dialog.getByRole("button", { name: "Fermer", exact: true }).last().click();
+  }
+});
