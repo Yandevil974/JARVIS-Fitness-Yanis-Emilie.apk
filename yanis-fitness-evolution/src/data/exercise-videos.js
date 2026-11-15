@@ -23,6 +23,16 @@
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
   // Lot ischios : clips reçus avec réserves, GIF sources inchangés.
+  "leg-curl-allonge-pieds-flechis": {
+    src: "/videos/leg-curl-allonge-pieds-flechis.mp4", poster: "/videos/posters/leg-curl-allonge-pieds-flechis.jpg", label: "Vidéo IA · Leg curl allongé, pieds fléchis", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Bassin stable, pointes des pieds vers les tibias.",
+      handCue: "Réglez la machine, placez le rouleau derrière le bas des jambes, au-dessus des talons, et tenez les poignées.",
+      movementCue: "Face contre le banc, bassin et cuisses en appui, gardez les pieds fléchis vers les tibias ; pliez les genoux puis redescendez sous contrôle, sans verrouiller.",
+      notice: "Les pieds et les jambes se superposent et leur angle change ou devient difficile à vérifier ; le rouleau semble se détacher du levier en mouvement. Ne copiez pas le mécanisme : réglez votre machine et gardez les pointes vers les tibias. Suivez le tempo de la fiche.",
+      spoken: "Leg curl allongé, pieds fléchis. Réglez la machine et placez le rouleau derrière le bas des jambes, au-dessus des talons. Allongez-vous sur le ventre, bassin et cuisses en appui, mains aux poignées. Ramenez les pointes des pieds vers les tibias et gardez cette position. Pliez les genoux puis redescendez sous contrôle, sans verrouiller. Les pieds se superposent et le rouleau semble se détacher du levier dans la vidéo : vérifiez votre réglage et suivez la consigne plutôt que l'image. Respectez le tempo et les séries de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
   "souleve-de-terre-roumain-unilateral-haltere": {
     src: "/videos/roumain-unilateral-un-haltere.mp4", poster: "/videos/posters/roumain-unilateral-un-haltere.jpg", label: "Vidéo IA · Roumain unilatéral avec haltère", status: "coached", avoidSilentPreview: true,
     coaching: {

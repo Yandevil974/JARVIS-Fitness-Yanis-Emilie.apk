@@ -7,6 +7,7 @@ import {videoFor} from '../src/data/exercise-videos.js';
 const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 test('ischios : clips intacts, réutilisations strictes, réserves et GIF conservés',()=>{
  const groups=[
+  ['1794726183867','8d4d33a062dd3a654eabbf284782630dda384d14a29b5f1beed3872f1305f18f',['leg-curl-allonge-pieds-flechis']],
   ['1794722270047','679da3598e57c0542c49402a80c6ec60b3afa5c499e072f308d72e257ee2ec34',['souleve-de-terre-roumain-unilateral-haltere']],
   ['1794722705821','930e7163bff3850c25c7860613a51bc9dee389c83b3e3f8dd15120651ca2e642',['back-extension-horizontal']],
   ['1794640022808','89b42e02888cd55e56bba1442097f5d8590ae10e0ed1d7d4e994bf64f295d91a',['good-morning-debout']],
@@ -37,5 +38,10 @@ test('ischios : clips intacts, réutilisations strictes, réserves et GIF conser
  assert.deepEqual([back.defaultSets,back.repScheme,back.tempo,back.rest,back.gif],[5,'12-15','3010',120,'/media/6cfcff2b2b4dcee5.gif']);
  assert.match(videoFor(back).coaching.notice,/Ne copiez pas/);
  assert.equal(videoFor(back).avoidSilentPreview,true);
- for(const id of ['souleve-de-terre-roumain-unilateral','leg-curl-debout','leg-curl-allonge-pieds-pointes','leg-curl-allonge-pieds-flechis','leg-curl-allonge-1-1-4-en-haut']) assert.equal(videoFor(id),null,id);
+ const flechis=EXERCISES.find(e=>e.id==='leg-curl-allonge-pieds-flechis');
+ assert.deepEqual([flechis.defaultSets,flechis.repScheme,flechis.tempo,flechis.rest,flechis.gif],[5,'6-8','4010',60,'/media/b954305f0f5568b2.gif']);
+ assert.equal(videoFor(flechis).avoidSilentPreview,true);
+ assert.match(videoFor(flechis).coaching.notice,/rouleau semble se détacher/);
+ assert.match(videoFor(flechis).coaching.spoken,/pointes des pieds vers les tibias/);
+ for(const id of ['souleve-de-terre-roumain-unilateral','leg-curl-debout','leg-curl-allonge-pieds-pointes','leg-curl-allonge-1-1-4-en-haut']) assert.equal(videoFor(id),null,id);
 });

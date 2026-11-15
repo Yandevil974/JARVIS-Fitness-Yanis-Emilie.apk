@@ -2,7 +2,7 @@
 
 ## Avant toute dépense vidéo
 
-L'audit du dépôt effectué après réception des deux derniers clips recensait 10 fiches ischios sans vidéo raccordée. Les MP4 présents à la racine avaient été comparés par SHA-256 à ceux de `public/videos` : aucun nouveau clip correspondant à ces variantes n'a été identifié ; cela n'exclut pas un fichier sur le téléphone ou ailleurs. La vidéo standard `1794629898835.mp4` est déjà raccordée, mais ne démontre pas clairement pieds pointés, pieds fléchis ou répétition 1¼. Ne pas la déclarer équivalente automatiquement. Aucun MP4 n'a été généré ou raccordé pour ce lot ; les GIF et prescriptions restent inchangés.
+Avant le dernier dépôt, l'audit recensait 10 fiches ischios sans vidéo raccordée. Les MP4 présents à la racine avaient été comparés par SHA-256 à ceux de `public/videos` ; cela n'exclut pas un fichier sur le téléphone ou ailleurs. La vidéo standard `1794629898835.mp4` ne démontre pas clairement les positions des pieds ni la répétition 1¼ et n'est pas déclarée équivalente automatiquement. Depuis, le clip `1794726183867.mp4`, correspondant à la référence pieds fléchis, a été déposé et raccordé avec réserves : il reste 9 fiches ischios sans vidéo. Les GIF et prescriptions restent inchangés.
 
 ## 1. Pieds pointés — proposition à valider
 
@@ -14,11 +14,13 @@ Image `isc-legcurl-pieds-pointes-v3.jpg` : les pieds sont dans le prolongement d
 
 Fiche Elite : 5 × 6–8, tempo 4010, consigne « Contracter les mollets. » La vidéo peut illustrer le geste mais ne garantit pas le tempo exact ; la prescription de l'application reste la référence.
 
-## 2. Pieds fléchis — proposition à valider
+## 2. Pieds fléchis — vidéo reçue et raccordée
 
-Image `isc-legcurl-pieds-flechis-v1.jpg` : pieds repliés, pointes rapprochées des tibias par rapport à l'image précédente, corps entier. Réserves : pieds en partie superposés et liaison du rouleau au levier peu lisible ; les mains sont également petites. Vérifier sur toute la vidéo les pieds et le mécanisme. La position affichée n'est pas une mesure précise de l'angle des chevilles.
+Yanis a déposé `1794726183867.mp4` après présentation de la référence. SHA-256 : `8d4d33a062dd3a654eabbf284782630dda384d14a29b5f1beed3872f1305f18f`. Le clip 640 × 360, 121 images à 24 images/s correspond visuellement à la référence pieds fléchis et montre une montée puis une descente, pas le 1¼. Sur 11 images échantillonnées, le corps reste dans le cadre ; les jambes et pieds se superposent, leur angle change ou est difficile à vérifier et le rouleau semble se détacher de son levier. Le tempo exact n'est pas démontré. Clip recopié sans modification en public/release, seul le mouvement pieds fléchis est raccordé en `coached` avec notice, voix et `avoidSilentPreview`. GIF et fiche (5 × 6–8, tempo 4010, repos 60 s) conservés. Aucun nouveau rendu demandé.
 
-**Prompt, uniquement si Yanis accepte la référence et ses réserves :**
+Image `isc-legcurl-pieds-flechis-v1.jpg` : pieds repliés, pointes rapprochées des tibias par rapport à l'image précédente, corps entier. Réserves : pieds en partie superposés et liaison du rouleau au levier peu lisible ; les mains sont également petites. La position affichée n'est pas une mesure précise de l'angle des chevilles.
+
+**Prompt préparé avant réception, conservé à titre d'historique :**
 
 > Vidéo anatomique 3D réaliste, plan fixe large de profil, un seul athlète entièrement visible avec marge au-dessus des jambes et autour des pieds. Allongé sur le ventre, tête à gauche, bassin et cuisses stables contre le banc ; deux mains aux poignées. Genoux alignés avec le pivot, rouleau contre l'arrière des deux chevilles et attaché au levier de la machine. Départ jambes presque tendues sans verrouiller. Les DEUX chevilles sont fléchies vers le haut : ramener les pointes des pieds vers l'avant des tibias, en dorsiflexion, et garder cette position pendant toute la répétition ; ne pas pointer les pieds dans le prolongement des jambes. Plier les deux genoux, talons vers les fesses, sans soulever les hanches ni déplacer les cuisses ; le rouleau suit les chevilles sur son levier. Redescendre lentement jusqu'au départ, sans à-coup. Une répétition complète, deux jambes et pieds distincts, corps entier et machine toujours dans le cadre, pas de bascule du buste ni de texte. Ischios arrière en rouge-orangé lumineux comme les vidéos existantes.
 

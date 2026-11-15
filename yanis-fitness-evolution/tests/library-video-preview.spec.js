@@ -92,6 +92,7 @@ test("ischios reçus : vidéos distinctes et réserves visibles dans la biblioth
   for (const [name, src, warning] of [
     ["Soulevé de terre roumain unilatéral haltère", "/videos/roumain-unilateral-un-haltere.mp4", /haltère.*plus clairement visible/i],
     ["Back extension horizontal", "/videos/back-extension-horizontal.mp4", /Ne copiez pas l'extension/i],
+    ["Leg curl allongé, pieds fléchis", "/videos/leg-curl-allonge-pieds-flechis.mp4", /rouleau semble se détacher/i],
   ]) {
     const button = await findCard(page, name);
     await expect(button.locator("video")).toHaveAttribute("src", src);

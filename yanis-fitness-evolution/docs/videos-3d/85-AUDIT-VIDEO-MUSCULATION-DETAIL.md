@@ -2,9 +2,9 @@
 
 État audité : registre de la branche au moment de la génération. Les nouvelles associations depuis l’APK 1.21.0 ne sont pas encore dans cet APK. Une fiche commune aux deux profils n’est comptée qu’une fois.
 
-**203 fiches : 140 avec une vidéo raccordée, 63 sans vidéo raccordée.**
-Les 140 fiches utilisent 120 chemins MP4, correspondant à 109 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
-Sur les fiches raccordées : 130 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
+**203 fiches : 141 avec une vidéo raccordée, 62 sans vidéo raccordée.**
+Les 141 fiches utilisent 121 chemins MP4, correspondant à 110 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
+Sur les fiches raccordées : 131 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
 
 Contrôle automatisé : existence et taille non nulle, empreinte identique entre public et release pour chaque vidéo, affiche et GIF des 203 fiches ; présence des notices et voix pour les vidéos accompagnées. Résultat : **0 anomalie(s)** de ce type. Tous les GIF de ces fiches sont présents.
 Ce contrôle **ne revoit pas manuellement toutes les images de chaque vidéo** et ne certifie pas chaque geste, cadrage ou lecture sur téléphone. Une vidéo non raccordée ne signifie pas forcément qu’aucune vidéo compatible n’existe déjà ailleurs. Les consignes et les décisions de Yanis restent prioritaires.
@@ -28,7 +28,7 @@ Le roumain barre est conservé tel quel sur décision de Yanis, malgré la tête
 | Fessiers | 11 | 3 | 14 |
 | Moyen fessier | 0 | 9 | 9 |
 | Quadriceps | 20 | 6 | 26 |
-| Ischio-jambiers | 9 | 10 | 19 |
+| Ischio-jambiers | 10 | 9 | 19 |
 | Mollets | 0 | 5 | 5 |
 
 ## Fiches déjà raccordées
@@ -211,7 +211,7 @@ Chaque nom ci-dessous est une fiche. Le fichier indiqué peut être réutilisé 
 | Split squat barbell (pied avant surélevé) | Elite | [split-squat-barbell-pied-avant-sureleve.mp4](../../public/videos/split-squat-barbell-pied-avant-sureleve.mp4) | Accompagnée |
 | Back squat — test 1RM | Elite | [back-squat.mp4](../../public/videos/back-squat.mp4) | Accompagnée |
 
-### Ischio-jambiers — 9/19
+### Ischio-jambiers — 10/19
 
 | Exercice | Profils | Vidéo | Statut |
 |---|---|---|---|
@@ -223,6 +223,7 @@ Chaque nom ci-dessous est une fiche. Le fichier indiqué peut être réutilisé 
 | Soulevé de terre roumain barre — test (3-5 reps) | Émilie | [souleve-terre-roumain-barre-provisoire.mp4](../../public/videos/souleve-terre-roumain-barre-provisoire.mp4) | Accompagnée |
 | Leg curl allongé | Elite | [leg-curl-allonge.mp4](../../public/videos/leg-curl-allonge.mp4) | Accompagnée |
 | Back extension horizontal | Elite | [back-extension-horizontal.mp4](../../public/videos/back-extension-horizontal.mp4) | Accompagnée |
+| Leg curl allongé, pieds fléchis | Elite | [leg-curl-allonge-pieds-flechis.mp4](../../public/videos/leg-curl-allonge-pieds-flechis.mp4) | Accompagnée |
 | Good morning debout | Elite | [good-morning-debout.mp4](../../public/videos/good-morning-debout.mp4) | Accompagnée |
 
 ## Fiches sans vidéo actuellement raccordée
@@ -301,13 +302,12 @@ Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par 
 - Fentes barre
 - Drop lunges (fentes contrôlées)
 
-### Ischio-jambiers — 10
+### Ischio-jambiers — 9
 
 - Soulevé de terre roumain unilatéral
 - Leg curl debout
 - Soulevé de terre
 - Leg curl allongé, pieds pointés
-- Leg curl allongé, pieds fléchis
 - Soulevé de terre partiel, prise snatch
 - Leg curl allongé, 1 1/4 en haut
 - Glute ham raise
