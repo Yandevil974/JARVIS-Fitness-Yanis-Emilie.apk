@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import { AppProvider } from "./store/AppContext.jsx";
 import "./styles.css";
 import "./training-jarvis.css";
+import "./photo-jarvis.css";
 createRoot(document.getElementById("root")).render(
   <AppProvider>
     <App />

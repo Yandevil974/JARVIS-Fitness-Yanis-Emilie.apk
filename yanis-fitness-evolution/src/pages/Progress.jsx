@@ -943,7 +943,7 @@ function Photos() {
     }
   }
   return (
-    <>
+    <div className="photo-jarvis">
       <div className="photo-intro">
         <div>
           <h2>Le progrès se voit aussi.</h2>
@@ -1161,7 +1161,7 @@ function Photos() {
           </div>
         </details>
       )}
-    </>
+    </div>
   );
 }
 function Reports() {

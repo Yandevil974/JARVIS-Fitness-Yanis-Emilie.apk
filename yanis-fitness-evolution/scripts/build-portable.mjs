@@ -16,7 +16,13 @@ await build({
   logLevel: "warning",
 });
 await build({
-  entryPoints: ["src/styles.css"],
+  // Inclure les styles ciblés, sinon l’export autonome les perdrait après la compilation JS.
+  stdin: {
+    contents: '@import "./src/styles.css";\n@import "./src/photo-jarvis.css";',
+    resolveDir: process.cwd(),
+    sourcefile: "portable-styles.css",
+    loader: "css",
+  },
   bundle: true,
   minify: true,
   outfile: "public/runtime.css",

@@ -6,6 +6,9 @@ on:
     paths:
       - 'yanis-fitness-evolution/src/pages/Training.jsx'
       - 'yanis-fitness-evolution/src/pages/Progress.jsx'
+      - 'yanis-fitness-evolution/src/photo-jarvis.css'
+      - 'yanis-fitness-evolution/src/main.jsx'
+      - 'yanis-fitness-evolution/scripts/build-portable.mjs'
       - 'yanis-fitness-evolution/src/engine/photo-comparison-ai.js'
       - 'yanis-fitness-evolution/tests/photo-comparison-ai.spec.js'
       - 'yanis-fitness-evolution/src/components/WorkoutLoadControl.jsx'
