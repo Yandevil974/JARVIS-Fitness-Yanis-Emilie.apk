@@ -7,7 +7,7 @@ import {videoFor} from '../src/data/exercise-videos.js';
 const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 test('ischios : clips intacts, réutilisations strictes, réserves et GIF conservés',()=>{
  const groups=[
-  ['1794812002023','3a3f1eeaaba46b4bc28cf1c7a6570bb1eeb306ac29eda7c63033b92fe57b6c94',['glute-ham-raise']],
+  ['1794813317152','78f508fea0d698975a5fa6fdde51434de873f1523b88fc6df97c1670a3aff970',['glute-ham-raise']],
   ['1794812024968','d85f05bab4d347a5fa7def6972e131f5bb99341f15a02d1dd16d311ba11f1eaa',['leg-curl-allonge-pieds-pointes']],
   ['1794812184910','36b99092fac4c58014803fa8cf2ab4c0fecc42be9d941a012ab552239f4134fd',['leg-curl-allonge-1-1-4-en-haut']],
   ['1794726183867','8d4d33a062dd3a654eabbf284782630dda384d14a29b5f1beed3872f1305f18f',['leg-curl-allonge-pieds-flechis']],
@@ -55,7 +55,8 @@ test('ischios : clips intacts, réutilisations strictes, réserves et GIF conser
   assert.deepEqual([e.defaultSets,e.repScheme,e.tempo,e.rest,e.gif],[sets,reps,tempo,rest,gif]);
   assert.equal(videoFor(e).avoidSilentPreview,true);
  }
- assert.match(videoFor('glute-ham-raise').coaching.notice,/Ne copiez pas/);
+ assert.match(videoFor('glute-ham-raise').coaching.notice,/appuis des deux genoux et chevilles/);
+ assert.doesNotMatch(videoFor('glute-ham-raise').coaching.notice,/descend sous l'horizontale/);
  assert.match(videoFor('leg-curl-allonge-pieds-pointes').coaching.spoken,/éloignant les pointes des tibias/);
  assert.match(videoFor('leg-curl-allonge-1-1-4-en-haut').coaching.notice,/deux montées et descentes complètes/);
  assert.match(videoFor('leg-curl-allonge-1-1-4-en-haut').coaching.spoken,/Ne copiez pas ce rythme/);

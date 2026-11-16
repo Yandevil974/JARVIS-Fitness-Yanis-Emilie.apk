@@ -29,8 +29,8 @@ export const EXERCISE_VIDEOS = {
       title: "Genoux et chevilles stabilisés, hanches alignées.",
       handCue: "Réglez une machine glute ham developer stable : genoux soutenus, chevilles bien maintenues ; prenez une assistance si nécessaire.",
       movementCue: "Gardez épaules, hanches et genoux alignés ; ouvrez lentement les genoux pour incliner le corps en bloc, puis repliez-les pour revenir droit. Limitez l'amplitude à ce que vous contrôlez.",
-      notice: "En bas, le buste descend sous l'horizontale et semble se plier aux hanches ; les deux chevilles et genoux sont superposés et leurs appuis difficiles à vérifier. Ne copiez pas cette fin de descente : gardez les hanches alignées et utilisez une amplitude contrôlée, avec assistance si besoin.",
-      spoken: "Glute ham raise. Réglez une machine stable et vérifiez l'appui des genoux et le maintien des deux chevilles. Gardez les épaules, les hanches et les genoux alignés. Ouvrez lentement les genoux pour incliner le corps en bloc, puis repliez-les pour revenir droit. La vidéo descend sous l'horizontale et semble plier aux hanches : ne copiez pas cette fin de mouvement. Réduisez l'amplitude et utilisez une assistance si nécessaire. Suivez le tempo et les séries de votre fiche et arrêtez en cas de douleur.",
+      notice: "En bas, l'alignement des hanches est difficile à apprécier ; les jambes se superposent et les appuis des deux genoux et chevilles sont difficiles à vérifier. Réglez la machine, gardez les hanches alignées et utilisez une amplitude contrôlée, avec assistance si besoin. Le tempo exact n'est pas démontré.",
+      spoken: "Glute ham raise. Réglez une machine stable et vérifiez l'appui des genoux et le maintien des deux chevilles. Gardez les épaules, les hanches et les genoux alignés. Ouvrez lentement les genoux pour incliner le corps en bloc, puis repliez-les pour revenir droit. Les jambes se superposent et leurs appuis sont difficiles à vérifier dans la vidéo. Réduisez l'amplitude et utilisez une assistance si nécessaire. Suivez le tempo et les séries de votre fiche et arrêtez en cas de douleur.",
     },
   },
   "leg-curl-allonge-pieds-pointes": {
