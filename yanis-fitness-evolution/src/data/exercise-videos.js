@@ -23,6 +23,36 @@
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
   // Lot ischios : clips reçus avec réserves, GIF sources inchangés.
+  "glute-ham-raise": {
+    src: "/videos/glute-ham-raise.mp4", poster: "/videos/posters/glute-ham-raise.jpg", label: "Vidéo IA · Glute ham raise", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Genoux et chevilles stabilisés, hanches alignées.",
+      handCue: "Réglez une machine glute ham developer stable : genoux soutenus, chevilles bien maintenues ; prenez une assistance si nécessaire.",
+      movementCue: "Gardez épaules, hanches et genoux alignés ; ouvrez lentement les genoux pour incliner le corps en bloc, puis repliez-les pour revenir droit. Limitez l'amplitude à ce que vous contrôlez.",
+      notice: "En bas, le buste descend sous l'horizontale et semble se plier aux hanches ; les deux chevilles et genoux sont superposés et leurs appuis difficiles à vérifier. Ne copiez pas cette fin de descente : gardez les hanches alignées et utilisez une amplitude contrôlée, avec assistance si besoin.",
+      spoken: "Glute ham raise. Réglez une machine stable et vérifiez l'appui des genoux et le maintien des deux chevilles. Gardez les épaules, les hanches et les genoux alignés. Ouvrez lentement les genoux pour incliner le corps en bloc, puis repliez-les pour revenir droit. La vidéo descend sous l'horizontale et semble plier aux hanches : ne copiez pas cette fin de mouvement. Réduisez l'amplitude et utilisez une assistance si nécessaire. Suivez le tempo et les séries de votre fiche et arrêtez en cas de douleur.",
+    },
+  },
+  "leg-curl-allonge-pieds-pointes": {
+    src: "/videos/leg-curl-allonge-pieds-pointes.mp4", poster: "/videos/posters/leg-curl-allonge-pieds-pointes.jpg", label: "Vidéo IA · Leg curl allongé, pieds pointés", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Bassin stable, pointes éloignées des tibias.",
+      handCue: "Réglez la machine, placez le rouleau derrière le bas des jambes au-dessus des talons et tenez les poignées.",
+      movementCue: "Face contre le banc, bassin et cuisses en appui, gardez les pieds pointés, pointes éloignées des tibias ; pliez les genoux puis redescendez sous contrôle sans verrouiller.",
+      notice: "Les pieds et les jambes se superposent ; leur angle et la liaison du rouleau au levier sont difficiles à vérifier. Ne copiez pas le mécanisme : réglez votre machine et gardez les pieds pointés. Suivez le tempo de la fiche.",
+      spoken: "Leg curl allongé, pieds pointés. Réglez la machine et placez le rouleau derrière le bas des jambes, au-dessus des talons. Allongez-vous sur le ventre, bassin et cuisses en appui, mains aux poignées. Pointez les pieds en éloignant les pointes des tibias et gardez cette position. Pliez les genoux puis redescendez sous contrôle, sans verrouiller. Les pieds se superposent et le mécanisme est peu lisible : vérifiez votre réglage et suivez la consigne. Respectez le tempo et les séries de votre fiche, et arrêtez en cas de douleur.",
+    },
+  },
+  "leg-curl-allonge-1-1-4-en-haut": {
+    src: "/videos/leg-curl-allonge-un-quart-en-haut.mp4", poster: "/videos/posters/leg-curl-allonge-un-quart-en-haut.jpg", label: "Vidéo IA · Leg curl 1¼, démonstration incomplète", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Méthode 1¼ : l'amplitude partielle reste à confirmer.",
+      handCue: "Réglez la machine, placez le rouleau derrière le bas des jambes et tenez les poignées ; bassin et cuisses en appui.",
+      movementCue: "La méthode prévoit une portion partielle supplémentaire en haut. Les indications du programme divergent sur son amplitude : vérifiez la méthode avec votre coach avant de l'exécuter.",
+      notice: "La vidéo montre deux montées et descentes complètes, pas clairement la portion partielle en haut : ne la copiez pas pour la méthode 1¼. La fiche mentionne une demi-répétition et un autre conseil un quart de descente ; confirmez l'amplitude avant de commencer. Les jambes se superposent et le levier reste peu clair.",
+      spoken: "Leg curl allongé, méthode un et un quart en haut. Attention : la vidéo montre deux répétitions complètes et ne démontre pas clairement la portion partielle en haut. Ne copiez pas ce rythme. Une indication du programme parle d'une demi-répétition, une autre d'un quart de descente : vérifiez l'amplitude avec votre coach avant de commencer. Réglez la machine, gardez le bassin sur le banc et suivez les séries et le tempo de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
   "leg-curl-allonge-pieds-flechis": {
     src: "/videos/leg-curl-allonge-pieds-flechis.mp4", poster: "/videos/posters/leg-curl-allonge-pieds-flechis.jpg", label: "Vidéo IA · Leg curl allongé, pieds fléchis", status: "coached", avoidSilentPreview: true,
     coaching: {

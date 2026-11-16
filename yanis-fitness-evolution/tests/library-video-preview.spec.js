@@ -93,6 +93,9 @@ test("ischios reçus : vidéos distinctes et réserves visibles dans la biblioth
     ["Soulevé de terre roumain unilatéral haltère", "/videos/roumain-unilateral-un-haltere.mp4", /haltère.*plus clairement visible/i],
     ["Back extension horizontal", "/videos/back-extension-horizontal.mp4", /Ne copiez pas l'extension/i],
     ["Leg curl allongé, pieds fléchis", "/videos/leg-curl-allonge-pieds-flechis.mp4", /rouleau semble se détacher/i],
+    ["Glute ham raise", "/videos/glute-ham-raise.mp4", /Ne copiez pas cette fin/i],
+    ["Leg curl allongé, pieds pointés", "/videos/leg-curl-allonge-pieds-pointes.mp4", /liaison du rouleau/i],
+    ["Leg curl allongé, 1 1/4 en haut", "/videos/leg-curl-allonge-un-quart-en-haut.mp4", /deux montées et descentes complètes/i],
   ]) {
     const button = await findCard(page, name);
     await expect(button.locator("video")).toHaveAttribute("src", src);

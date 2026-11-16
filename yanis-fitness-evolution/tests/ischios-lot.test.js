@@ -7,6 +7,9 @@ import {videoFor} from '../src/data/exercise-videos.js';
 const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 test('ischios : clips intacts, réutilisations strictes, réserves et GIF conservés',()=>{
  const groups=[
+  ['1794812002023','3a3f1eeaaba46b4bc28cf1c7a6570bb1eeb306ac29eda7c63033b92fe57b6c94',['glute-ham-raise']],
+  ['1794812024968','d85f05bab4d347a5fa7def6972e131f5bb99341f15a02d1dd16d311ba11f1eaa',['leg-curl-allonge-pieds-pointes']],
+  ['1794812184910','36b99092fac4c58014803fa8cf2ab4c0fecc42be9d941a012ab552239f4134fd',['leg-curl-allonge-1-1-4-en-haut']],
   ['1794726183867','8d4d33a062dd3a654eabbf284782630dda384d14a29b5f1beed3872f1305f18f',['leg-curl-allonge-pieds-flechis']],
   ['1794722270047','679da3598e57c0542c49402a80c6ec60b3afa5c499e072f308d72e257ee2ec34',['souleve-de-terre-roumain-unilateral-haltere']],
   ['1794722705821','930e7163bff3850c25c7860613a51bc9dee389c83b3e3f8dd15120651ca2e642',['back-extension-horizontal']],
@@ -43,5 +46,18 @@ test('ischios : clips intacts, réutilisations strictes, réserves et GIF conser
  assert.equal(videoFor(flechis).avoidSilentPreview,true);
  assert.match(videoFor(flechis).coaching.notice,/rouleau semble se détacher/);
  assert.match(videoFor(flechis).coaching.spoken,/pointes des pieds vers les tibias/);
- for(const id of ['souleve-de-terre-roumain-unilateral','leg-curl-debout','leg-curl-allonge-pieds-pointes','leg-curl-allonge-1-1-4-en-haut']) assert.equal(videoFor(id),null,id);
+ for (const [id,sets,reps,tempo,rest,gif] of [
+  ['glute-ham-raise',5,'5-7','4010',120,'/media/72ee533b1621d1e9.gif'],
+  ['leg-curl-allonge-pieds-pointes',5,'6-8','4010',60,'/media/1bdd45afb59cc298.gif'],
+  ['leg-curl-allonge-1-1-4-en-haut',5,'4-6','3210',60,'/media/1bdd45afb59cc298.gif'],
+ ]) {
+  const e=EXERCISES.find(e=>e.id===id);
+  assert.deepEqual([e.defaultSets,e.repScheme,e.tempo,e.rest,e.gif],[sets,reps,tempo,rest,gif]);
+  assert.equal(videoFor(e).avoidSilentPreview,true);
+ }
+ assert.match(videoFor('glute-ham-raise').coaching.notice,/Ne copiez pas/);
+ assert.match(videoFor('leg-curl-allonge-pieds-pointes').coaching.spoken,/éloignant les pointes des tibias/);
+ assert.match(videoFor('leg-curl-allonge-1-1-4-en-haut').coaching.notice,/deux montées et descentes complètes/);
+ assert.match(videoFor('leg-curl-allonge-1-1-4-en-haut').coaching.spoken,/Ne copiez pas ce rythme/);
+ for(const id of ['souleve-de-terre-roumain-unilateral','leg-curl-debout']) assert.equal(videoFor(id),null,id);
 });

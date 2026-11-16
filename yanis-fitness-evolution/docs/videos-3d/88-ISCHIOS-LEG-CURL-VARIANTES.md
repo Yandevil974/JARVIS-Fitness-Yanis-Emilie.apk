@@ -2,9 +2,11 @@
 
 ## Avant toute dépense vidéo
 
-Avant le dernier dépôt, l'audit recensait 10 fiches ischios sans vidéo raccordée. Les MP4 présents à la racine avaient été comparés par SHA-256 à ceux de `public/videos` ; cela n'exclut pas un fichier sur le téléphone ou ailleurs. La vidéo standard `1794629898835.mp4` ne démontre pas clairement les positions des pieds ni la répétition 1¼ et n'est pas déclarée équivalente automatiquement. Depuis, le clip `1794726183867.mp4`, correspondant à la référence pieds fléchis, a été déposé et raccordé avec réserves : il reste 9 fiches ischios sans vidéo. Les GIF et prescriptions restent inchangés.
+Avant les derniers dépôts, l'audit recensait 10 fiches ischios sans vidéo raccordée. Les MP4 présents à la racine avaient été comparés par SHA-256 à ceux de `public/videos` ; cela n'exclut pas un fichier sur le téléphone ou ailleurs. La vidéo standard `1794629898835.mp4` ne démontre pas clairement les positions des pieds ni la répétition 1¼ et n'est pas déclarée équivalente automatiquement. Les clips pieds fléchis, pieds pointés, 1¼ et glute ham raise ont depuis été déposés et raccordés avec réserves : il reste 6 fiches ischios sans vidéo. Le clip 1¼ ne montre pas clairement la portion partielle. Les GIF et prescriptions restent inchangés.
 
-## 1. Pieds pointés — proposition à valider
+## 1. Pieds pointés — vidéo reçue et raccordée avec réserves
+
+`1794812024968.mp4`, SHA-256 `d85f05bab4d347a5fa7def6972e131f5bb99341f15a02d1dd16d311ba11f1eaa` : pieds en prolongement des jambes et une montée suivie d'une descente sur les 11 images échantillonnées. Pieds et jambes superposés ; angle des deux pieds et liaison du rouleau au levier difficiles à vérifier. Corps entier sur les images échantillonnées, tempo non garanti. Clip intact en public/release, `coached`, notice, voix et `avoidSilentPreview`.
 
 Image `isc-legcurl-pieds-pointes-v3.jpg` : les pieds sont dans le prolongement des jambes, pointes éloignées des tibias. Corps entier visible, ischios rouges. Réserves : pieds sans chaussures, partiellement superposés ; les mains et la liaison roller/levier ne sont pas parfaitement lisibles. Ne pas considérer cette machine comme une représentation technique irréprochable ; il faudra vérifier ces points dans une éventuelle vidéo.
 
@@ -26,7 +28,9 @@ Image `isc-legcurl-pieds-flechis-v1.jpg` : pieds repliés, pointes rapprochées 
 
 Fiche Elite : 5 × 6–8, tempo 4010, consigne « Tirer les pieds (tibial antérieur). » La vidéo ne garantit pas le tempo exact ; la prescription de l'application reste la référence.
 
-## 3. 1¼ en haut — même position de départ, définition à clarifier
+## 3. 1¼ en haut — clip reçu mais méthode non démontrée
+
+`1794812184910.mp4`, SHA-256 `36b99092fac4c58014803fa8cf2ab4c0fecc42be9d941a012ab552239f4134fd` : sur 11 images échantillonnées, le clip montre deux montées et descentes complètes, sans portion partielle haute clairement visible ; corps entier sur ces images, jambes superposées et levier peu clair. Il est raccordé à la fiche en `coached` avec `avoidSilentPreview`, notice et voix explicites : **ne pas copier le rythme**, la méthode partielle n'est pas clairement démontrée. La contradiction entre quart et demi reste à clarifier, sans la trancher automatiquement. GIF et prescription conservés.
 
 On peut employer l'image existante `isc-08-leg-curl-allonge-v3.jpg` pour la position de départ, sans fabriquer de nouvelle image. Elle ne montre évidemment pas le quart de répétition ; rouleau/levier et mains sont peu lisibles. La vidéo standard, elle, ne montre pas clairement cette méthode.
 
@@ -38,4 +42,4 @@ Attention, la source du programme contient « **demi-rep en plus en haut** », t
 
 ## En attente
 
-Leg curl debout : plusieurs essais, rouleau/levier encore illisibles. Soulevé de terre : essais avec barre trop haute, mains ou coloration incertaines. Glute ham raise : appui du corps sur le coussin non convaincant. Aucune de ces images d'essai ne doit être considérée validée ou utilisée pour générer une vidéo. Le roumain sans haltère a une indication de jambe devant à vérifier ; ne pas confondre avec la vidéo à l'haltère. Les variantes de soulevé de terre partiel et test 1RM restent à examiner individuellement. Musculation non terminée.
+Leg curl debout : plusieurs essais, rouleau/levier encore illisibles. Soulevé de terre : essais avec barre trop haute, mains ou coloration incertaines. Ne pas utiliser ces images d'essai pour générer une vidéo. Le roumain sans haltère a une indication de jambe devant à vérifier ; ne pas confondre avec la vidéo à l'haltère. Les variantes de soulevé de terre partiel et test 1RM restent à examiner individuellement. Musculation non terminée.
