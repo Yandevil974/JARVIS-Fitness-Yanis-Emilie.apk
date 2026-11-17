@@ -7,6 +7,8 @@ import {videoFor} from '../src/data/exercise-videos.js';
 const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 test('ischios : clips intacts, réutilisations strictes, réserves et GIF conservés',()=>{
  const groups=[
+  ['1794907712213','ccbfe5f69c3b7790cb1d978937205dd41024985bb00ef45515881860c7bfe688',['leg-curl-debout']],
+  ['1794907760189','699ca993773959ad18fdc4beece186a49f82b9b36f232414dbbe3aba97970cf5',['souleve-de-terre','souleve-de-terre-test-1rm']],
   ['1794813317152','78f508fea0d698975a5fa6fdde51434de873f1523b88fc6df97c1670a3aff970',['glute-ham-raise']],
   ['1794812024968','d85f05bab4d347a5fa7def6972e131f5bb99341f15a02d1dd16d311ba11f1eaa',['leg-curl-allonge-pieds-pointes']],
   ['1794812184910','36b99092fac4c58014803fa8cf2ab4c0fecc42be9d941a012ab552239f4134fd',['leg-curl-allonge-1-1-4-en-haut']],
@@ -60,5 +62,18 @@ test('ischios : clips intacts, réutilisations strictes, réserves et GIF conser
  assert.match(videoFor('leg-curl-allonge-pieds-pointes').coaching.spoken,/éloignant les pointes des tibias/);
  assert.match(videoFor('leg-curl-allonge-1-1-4-en-haut').coaching.notice,/deux montées et descentes complètes/);
  assert.match(videoFor('leg-curl-allonge-1-1-4-en-haut').coaching.spoken,/Ne copiez pas ce rythme/);
- for(const id of ['souleve-de-terre-roumain-unilateral','leg-curl-debout']) assert.equal(videoFor(id),null,id);
+ const standing=EXERCISES.find(e=>e.id==='leg-curl-debout');
+ assert.deepEqual([standing.defaultSets,standing.repScheme,standing.tempo,standing.rest,standing.gif],[4,'8-10','4010',90,'/media/9bfb90294c482fc0.gif']);
+ assert.match(videoFor(standing).coaching.notice,/boucle saute/);
+ const dead=EXERCISES.find(e=>e.id==='souleve-de-terre');
+ assert.deepEqual([dead.defaultSets,dead.repScheme,dead.tempo,dead.rest,dead.gif],[5,'5-7','4210',120,'/media/e5532fe8fa9b40e9.gif']);
+ assert.match(dead.note,/Pause de 2 s/);
+ assert.match(videoFor(dead).coaching.notice,/pause de deux secondes.*n'est pas clairement démontrée/);
+ assert.match(videoFor(dead).coaching.spoken,/Si votre séance demande/);
+ const test1rm=EXERCISES.find(e=>e.id==='souleve-de-terre-test-1rm');
+ assert.deepEqual([test1rm.defaultSets,test1rm.repScheme,test1rm.tempo,test1rm.rest,test1rm.gif],[5,'1-5','4010',180,'/media/ff7d82be3903075d.gif']);
+ assert.deepEqual(test1rm.equipment,['barbell']); assert.equal(test1rm.bodyweight,false);
+ assert.match(videoFor(test1rm).coaching.notice,/pas une charge maximale/);
+ for(const id of ['leg-curl-debout','souleve-de-terre','souleve-de-terre-test-1rm']) assert.equal(videoFor(id).avoidSilentPreview,true);
+ for(const id of ['souleve-de-terre-roumain-unilateral','souleve-de-terre-partiel','souleve-de-terre-partiel-prise-snatch']) assert.equal(videoFor(id),null,id);
 });

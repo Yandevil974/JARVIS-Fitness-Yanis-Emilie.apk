@@ -108,3 +108,22 @@ test("ischios reçus : vidéos distinctes et réserves visibles dans la biblioth
     await dialog.getByRole("button", { name: "Fermer", exact: true }).last().click();
   }
 });
+
+test("ischios debout : vidéos et consignes distinctes pour les deux fiches de soulevé de terre", async ({ page }) => {
+  await openLibrary(page);
+  for (const [name, src, warning] of [
+    ["Leg curl debout", "/videos/leg-curl-debout.mp4", /boucle saute/i],
+    ["Soulevé de terre", "/videos/souleve-de-terre-conventionnel.mp4", /pause de deux secondes/i],
+    ["Soulevé de terre — test 1RM", "/videos/souleve-de-terre-conventionnel.mp4", /pas une charge maximale/i],
+  ]) {
+    const button = await findCard(page, name);
+    await expect(button.locator("video")).toHaveAttribute("src", src);
+    await expect(button.locator("..").locator(".library-video-warning")).toContainText(warning);
+    await button.click();
+    const dialog = page.getByRole("dialog", { name, exact: true });
+    await expect(dialog.locator(".movement-video")).toHaveAttribute("src", src);
+    await expect(dialog.locator(".movement-coaching-note")).toContainText(warning);
+    await expect(dialog.getByRole("button", { name: "Écouter le descriptif" })).toBeVisible();
+    await dialog.getByRole("button", { name: "Fermer", exact: true }).last().click();
+  }
+});

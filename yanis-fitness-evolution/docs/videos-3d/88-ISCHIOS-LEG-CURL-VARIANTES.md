@@ -2,7 +2,7 @@
 
 ## Avant toute dépense vidéo
 
-Avant les derniers dépôts, l'audit recensait 10 fiches ischios sans vidéo raccordée. Les MP4 présents à la racine avaient été comparés par SHA-256 à ceux de `public/videos` ; cela n'exclut pas un fichier sur le téléphone ou ailleurs. La vidéo standard `1794629898835.mp4` ne démontre pas clairement les positions des pieds ni la répétition 1¼ et n'est pas déclarée équivalente automatiquement. Les clips pieds fléchis, pieds pointés, 1¼ et glute ham raise ont depuis été déposés et raccordés avec réserves : il reste 6 fiches ischios sans vidéo. Le clip 1¼ ne montre pas clairement la portion partielle. Les GIF et prescriptions restent inchangés.
+Avant les derniers dépôts, l'audit recensait 10 fiches ischios sans vidéo raccordée. Les MP4 présents à la racine avaient été comparés par SHA-256 à ceux de `public/videos` ; cela n'exclut pas un fichier sur le téléphone ou ailleurs. La vidéo standard `1794629898835.mp4` ne démontre pas clairement les positions des pieds ni la répétition 1¼ et n'est pas déclarée équivalente automatiquement. Les clips pieds fléchis, pieds pointés, 1¼ et glute ham raise ont ensuite été déposés et raccordés avec réserves ; à cette étape il restait 6 fiches ischios sans vidéo. Depuis, deux clips supplémentaires ont été raccordés à trois fiches : voir [suite](./90-ISCHIOS-DEBOUT-ET-TERRE.md). Le clip 1¼ ne montre pas clairement la portion partielle. Les GIF et prescriptions restent inchangés.
 
 ## 1. Pieds pointés — vidéo reçue et raccordée avec réserves
 

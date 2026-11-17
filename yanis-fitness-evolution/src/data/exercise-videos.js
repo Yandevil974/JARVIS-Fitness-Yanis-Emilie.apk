@@ -23,6 +23,36 @@
 //   public/videos/README.md (stockage externe + URL).
 export const EXERCISE_VIDEOS = {
   // Lot ischios : clips reçus avec réserves, GIF sources inchangés.
+  "leg-curl-debout": {
+    src: "/videos/leg-curl-debout.mp4", poster: "/videos/posters/leg-curl-debout.jpg", label: "Vidéo IA · Leg curl debout", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Une jambe à la fois, bassin stable.",
+      handCue: "Réglez la machine, tenez les poignées et placez le rouleau derrière le bas de la jambe travaillée, juste au-dessus du talon.",
+      movementCue: "Pied d'appui stable, pliez le genou de la jambe travaillée jusqu'à environ 90 degrés sans balancer le bassin ni la cuisse, puis redescendez sous contrôle.",
+      notice: "Le rouleau, le levier et le pied sont peu lisibles et semblent se déformer ; la vidéo se termine jambe fléchie, puis la boucle saute au départ. Vérifiez votre machine et effectuez une descente complète sous contrôle ; suivez le tempo de la fiche.",
+      spoken: "Leg curl debout, une jambe à la fois. Réglez la machine, tenez les poignées et placez le rouleau derrière le bas de la jambe, au-dessus du talon. Pied d'appui stable, fléchissez le genou jusqu'à environ quatre-vingt-dix degrés sans balancer le bassin ni la cuisse, puis redescendez sous contrôle. Le mécanisme et le pied sont peu lisibles, et la vidéo se termine avant le retour complet : ne copiez pas le saut de la boucle. Suivez le tempo et les séries de votre fiche, et arrêtez en cas de douleur.",
+    },
+  },
+  "souleve-de-terre": {
+    src: "/videos/souleve-de-terre-conventionnel.mp4", poster: "/videos/posters/souleve-de-terre-conventionnel.jpg", label: "Vidéo IA · Soulevé de terre", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Dos neutre, barre près des jambes.",
+      handCue: "Pieds à plat, tenez une barre avec les deux mains juste à l'extérieur des jambes ; gardez les bras tendus.",
+      movementCue: "Genoux et hanches fléchissent pour amener la barre près des tibias, dos neutre. Remontez sous contrôle en poussant dans le sol et en tendant hanches et genoux.",
+      notice: "La prise, l'horizontalité de la barre et le contact des deux disques au sol sont difficiles à vérifier ; la coloration est un halo. La pause de deux secondes à environ cinq centimètres du sol prévue dans certaines séances n'est pas clairement démontrée : suivez la consigne et le tempo de votre séance, pas le rythme de la vidéo.",
+      spoken: "Soulevé de terre à la barre. Pieds à plat et mains juste à l'extérieur des jambes, gardez les bras tendus et le dos neutre. Pliez les genoux et reculez les hanches pour accompagner la barre près des tibias, puis poussez dans le sol pour revenir droit, sans cambrer. La prise et le contact des disques sont difficiles à vérifier dans la vidéo. Si votre séance demande une pause de deux secondes à environ cinq centimètres du sol, respectez-la : elle n'est pas clairement montrée. Suivez la consigne et le tempo de votre séance. Arrêtez en cas de douleur.",
+    },
+  },
+  "souleve-de-terre-test-1rm": {
+    src: "/videos/souleve-de-terre-conventionnel.mp4", poster: "/videos/posters/souleve-de-terre-conventionnel.jpg", label: "Vidéo IA · Soulevé de terre — test 1RM", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Même geste à la barre : ne déduisez pas la charge de la vidéo.",
+      handCue: "Pieds à plat, tenez une barre avec les deux mains juste à l'extérieur des jambes ; gardez les bras tendus.",
+      movementCue: "Pliez genoux et hanches, dos neutre, barre près des tibias ; poussez dans le sol pour revenir droit, sans cambrer.",
+      notice: "Cette vidéo illustre le geste, pas une charge maximale ni le protocole d'un test 1RM. La prise, l'horizontalité de la barre et le contact des deux disques au sol restent difficiles à vérifier ; suivez votre fiche et faites-vous encadrer pour un test maximal.",
+      spoken: "Soulevé de terre, fiche test une répétition maximale. Cette vidéo illustre le geste avec une barre, pas une charge maximale ni un protocole de test. Pieds à plat, dos neutre et bras tendus, gardez la barre près des jambes et poussez dans le sol pour revenir droit, sans cambrer. La prise et le contact des disques sont difficiles à vérifier. Suivez votre fiche et faites-vous encadrer pour un test maximal. Arrêtez en cas de douleur.",
+    },
+  },
   "glute-ham-raise": {
     src: "/videos/glute-ham-raise.mp4", poster: "/videos/posters/glute-ham-raise.jpg", label: "Vidéo IA · Glute ham raise", status: "coached", avoidSilentPreview: true,
     coaching: {

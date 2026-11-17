@@ -2,7 +2,7 @@
 
 ## Vérification avant nouvelles vidéos
 
-Après les dépôts de trois nouveaux clips, 6 fiches ischios sur 19 restent sans vidéo raccordée. Voir [l'audit détaillé](./85-AUDIT-VIDEO-MUSCULATION-DETAIL.md). Les fichiers racine avaient été comparés aux vidéos publiques par SHA-256 ; cela ne prouve pas l'absence d'une vidéo ailleurs, par exemple sur le téléphone.
+Après les dépôts de trois clips de ce lot, 6 fiches ischios sur 19 restaient sans vidéo raccordée. Deux vidéos reçues depuis ont été raccordées à trois fiches : voir [suite](./90-ISCHIOS-DEBOUT-ET-TERRE.md) et [audit détaillé](./85-AUDIT-VIDEO-MUSCULATION-DETAIL.md). Les fichiers racine avaient été comparés aux vidéos publiques par SHA-256 ; cela ne prouve pas l'absence d'une vidéo ailleurs, par exemple sur le téléphone.
 
 Le roumain barre existant reste conservé à la demande de Yanis : ne pas le relancer. Il ne démontre pas nécessairement le départ au sol et la flexion de genoux d'un soulevé de terre conventionnel. Le roumain unilatéral avec haltère n'est pas la version sans haltère. Le leg curl allongé standard et celui pieds fléchis ne montrent pas clairement la méthode 1¼ ni les pieds pointés. Aucun partage supplémentaire n'est fait sur ces seules ressemblances.
 
