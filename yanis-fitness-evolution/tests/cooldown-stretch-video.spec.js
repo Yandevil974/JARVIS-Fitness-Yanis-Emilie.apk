@@ -19,7 +19,11 @@ for (const profile of ["elite", "emilie"]) {
     );
     await page.goto("/");
     await startSourceWorkout(page);
-    await page.locator(".sequence-cooldown").click();
+    // Sur téléphone, le rappel « Étirements de fin de séance » est le bouton
+    // visible ; sur grand écran, c'est l'entrée de la colonne de séance.
+    const opener = page.locator(".cooldown-reminder");
+    if (await opener.isVisible()) await opener.click();
+    else await page.locator(".sequence-cooldown").click();
     const dialog = page.getByRole("dialog");
     await expect(dialog).toContainText("Terminer en douceur");
 
