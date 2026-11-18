@@ -743,32 +743,69 @@ export function CooldownModal({ session }) {
       wide
     >
       <div className="warmup-detail">
-        {chosen.map((ex, i) => (
+        {chosen.map((ex, i) => {
+          // Vidéo 3D validée si l'étirement en a une (comme dans le chrono
+          // et la fiche détaillée), sinon le GIF actuel.
+          const video = stepVideoFor(ex.name);
+          return (
           <div key={ex.id}>
             <span className="warmup-step-number">
               {String(i + 1).padStart(2, "0")}
             </span>
-            {stretchImage(ex, p.id) && (
+            {video ? (
               <button
                 type="button"
-                className="warmup-step-thumb"
-                title="Agrandir"
+                className="warmup-step-thumb has-video"
+                title="Agrandir la vidéo"
                 onClick={() =>
                   setModal({
                     type: "image",
-                    src: stretchImage(ex, p.id),
-                    title: ex.name,
+                    src: video.src,
+                    poster: video.poster,
+                    title: video.label,
+                    notice: video.coaching?.notice,
+                    noticeTitle: video.coaching?.title,
+                    spoken: p.preferences.voice
+                      ? video.coaching?.spoken
+                      : null,
                   })
                 }
               >
-                <img
-                  className="warmup-step-img"
-                  loading="lazy"
-                  src={assetSrc(stretchImage(ex, p.id))}
-                  alt={ex.name}
+                <video
+                  className="warmup-step-video"
+                  src={assetSrc(video.src)}
+                  poster={video.poster ? assetSrc(video.poster) : undefined}
+                  title={video.label}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
                 />
                 <Icon name="Maximize2" size={13} />
               </button>
+            ) : (
+              stretchImage(ex, p.id) && (
+                <button
+                  type="button"
+                  className="warmup-step-thumb"
+                  title="Agrandir"
+                  onClick={() =>
+                    setModal({
+                      type: "image",
+                      src: stretchImage(ex, p.id),
+                      title: ex.name,
+                    })
+                  }
+                >
+                  <img
+                    className="warmup-step-img"
+                    loading="lazy"
+                    src={assetSrc(stretchImage(ex, p.id))}
+                    alt={ex.name}
+                  />
+                  <Icon name="Maximize2" size={13} />
+                </button>
+              )
             )}
             <div>
               <h3>{ex.name}</h3>
@@ -776,7 +813,8 @@ export function CooldownModal({ session }) {
             </div>
             <Badge>{durationLabel(ex.seconds || 30)}</Badge>
           </div>
-        ))}
+          );
+        })}
       </div>
       <div className="modal-actions">
         <Button
