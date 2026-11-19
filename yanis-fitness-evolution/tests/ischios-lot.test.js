@@ -19,6 +19,9 @@ test('ischios : clips intacts, réutilisations strictes, réserves et GIF conser
   ['1794629525692','5729a304d9d795eed439ffec5da88fd65df3cf34119c22fe0c189a1833b809e9',['souleve-de-terre-roumain-halteres']],
   ['1794629898835','4821aba4b0ff92958710424bbce57ca1de2a17a1171fae931b870c93ca9261af',['leg-curl-allonge','leg-curl-machine','leg-curl-machine-ou-swiss-ball-leg-curl']],
   ['1794630191344','43f98d0878d05b3ce54770759341da34ec14cac7fb8b24e3c41ec16cba02c48c',['souleve-de-terre-roumain-barre','souleve-de-terre-roumain-barre-test-3-5-reps']],
+  ['1795068446835','e63d6ed5d11afc7971f4e4ecf5efd6c7dce7aceda16765e50d9feb8566089c0b',['souleve-de-terre-roumain-unilateral']],
+  ['1795067608663','a0459ecc88c12885da0624e0048ff134ee18b81926fb1e10a4e7511e7ef59065',['souleve-de-terre-partiel']],
+  ['1795067763520','97e7af519787f92e45045175a79a3ccc3a6f76a51fee1afb6c51ad42b70ea490',['souleve-de-terre-partiel-prise-snatch']],
  ];
  for(const [source,hash,ids] of groups){
   assert.equal(sha(`../${source}.mp4`),hash);
@@ -75,5 +78,21 @@ test('ischios : clips intacts, réutilisations strictes, réserves et GIF conser
  assert.deepEqual(test1rm.equipment,['barbell']); assert.equal(test1rm.bodyweight,false);
  assert.match(videoFor(test1rm).coaching.notice,/pas une charge maximale/);
  for(const id of ['leg-curl-debout','souleve-de-terre','souleve-de-terre-test-1rm']) assert.equal(videoFor(id).avoidSilentPreview,true);
- for(const id of ['souleve-de-terre-roumain-unilateral','souleve-de-terre-partiel','souleve-de-terre-partiel-prise-snatch']) assert.equal(videoFor(id),null,id);
+ // Dernier lot ischios : trois clips reçus, accompagnés de réserves.
+ const solo=EXERCISES.find(e=>e.id==='souleve-de-terre-roumain-unilateral');
+ assert.deepEqual([solo.defaultSets,solo.repScheme,solo.tempo,solo.rest,solo.gif],[3,'10/côté','3011',75,'/media/e5532fe8fa9b40e9.gif']);
+ assert.match(videoFor(solo).coaching.notice,/jambe libre part bien derrière/);
+ assert.match(videoFor(solo).coaching.spoken,/jambe d'appui/);
+ for(const id of ['souleve-de-terre-partiel','souleve-de-terre-partiel-prise-snatch']){
+  const e=EXERCISES.find(x=>x.id===id);
+  assert.equal(videoFor(e).avoidSilentPreview,true);
+  assert.match(videoFor(e).coaching.notice,/sécurités/);
+  assert.match(e.note,/Pause complète de 2 s/);
+ }
+ assert.match(videoFor('souleve-de-terre-partiel').coaching.notice,/coloration déborde sur l'avant des cuisses/);
+ for(const id of ['souleve-de-terre-partiel','souleve-de-terre-partiel-prise-snatch']){
+  const e=EXERCISES.find(x=>x.id===id);
+  assert.deepEqual(e.equipment,['barbell'],id); assert.equal(e.bodyweight,false,id);
+ }
+ assert.match(videoFor('souleve-de-terre-partiel-prise-snatch').coaching.notice,/écartement de la prise/);
 });

@@ -267,7 +267,15 @@ export const EXERCISES = [...rows.entries()].map(([id, { row, sources }]) => {
   const pattern = patternFor(name, muscle);
   // Le libellé « test 1RM » ne se termine pas par « soulevé de terre » :
   // le repli générique poids du corps masquait à tort la barre de cette fiche.
-  const equipment = id === "souleve-de-terre-test-1rm" ? ["barbell"] : equipmentFor(name);
+  // Même repli erroné pour les deux soulevés de terre partiels : ils se font
+  // dans une cage, avec une barre posée sur les barres de sécurité.
+  const equipment = [
+    "souleve-de-terre-test-1rm",
+    "souleve-de-terre-partiel",
+    "souleve-de-terre-partiel-prise-snatch",
+  ].includes(id)
+    ? ["barbell"]
+    : equipmentFor(name);
   const numbers = String(reps).match(/\d+/g)?.map(Number) || [10];
   const timed =
     /\d+\s*(s\b|sec|min)/.test(norm(reps)) ||

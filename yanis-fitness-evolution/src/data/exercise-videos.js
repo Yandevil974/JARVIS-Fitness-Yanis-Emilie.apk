@@ -103,6 +103,39 @@ export const EXERCISE_VIDEOS = {
       spoken: "Soulevé de terre roumain unilatéral avec un haltère. Tenez l'haltère dans la main opposée à la jambe d'appui. Pied à plat et genou souple, reculez la hanche, inclinez le buste avec le dos neutre et laissez l'autre jambe partir en arrière. Descendez en trois secondes dans une amplitude confortable, remontez en une seconde et marquez une seconde en haut. La prise est peu visible dans la vidéo et l'haltère n'est plus clairement visible à la fin : gardez-le bien en main tout au long du mouvement. Trois séries de dix par côté, soixante secondes de repos. Arrêtez en cas de douleur.",
     },
   },
+  // Derniers ischios sans vidéo : roumain unilatéral au poids du corps et les
+  // deux soulevés de terre partiels. Les clips reçus sont des supports
+  // accompagnés ; leurs réserves sont écrites dans la fiche et dans la voix.
+  "souleve-de-terre-roumain-unilateral": {
+    src: "/videos/roumain-unilateral-sans-charge.mp4", poster: "/videos/posters/roumain-unilateral-sans-charge.jpg", label: "Vidéo IA · Roumain unilatéral sans charge", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Jambe d'appui presque tendue, jambe libre derrière.",
+      handCue: "Aucune charge : laissez les bras pendre vers le sol. Prenez un appui léger à côté de vous si l'équilibre est difficile au début.",
+      movementCue: "Appui sur une jambe, genou souple mais jambe presque tendue, pied entier au sol. Reculez les hanches, inclinez le buste dos neutre et laissez l'autre jambe partir derrière, dans l'axe du buste, bassin tourné vers le sol. Remontez en poussant dans le talon. Faites les deux côtés.",
+      notice: "La vidéo ne montre pas toujours clairement le bassin face au sol et le clip ne démontre pas les deux côtés. La jambe libre part bien derrière, alors que le conseil de la fiche parle de « jambe tendue devant » : c'est la jambe d'appui, celle sur laquelle vous vous tenez. Suivez la consigne et faites les deux jambes.",
+      spoken: "Soulevé de terre roumain unilatéral sans charge. Tenez-vous sur une jambe, genou souple mais jambe presque tendue, pied entier au sol. Reculez les hanches et inclinez le buste en gardant le dos neutre ; l'autre jambe part derrière, dans le prolongement du buste, et le bassin reste tourné vers le sol. Les bras pendent vers le sol, sans charge. Remontez en poussant dans le talon et en serrant le fessier, puis changez de jambe. Le conseil de la fiche dit jambe tendue devant : il désigne la jambe d'appui, pas la jambe libre. Trois séries de dix par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "souleve-de-terre-partiel": {
+    src: "/videos/souleve-de-terre-partiel.mp4", poster: "/videos/posters/souleve-de-terre-partiel.jpg", label: "Vidéo IA · Soulevé de terre partiel", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Barre sur les sécurités, dos neutre, pas de rebond.",
+      handCue: "Barre dans une cage stable, mains juste à l'extérieur des jambes, bras tendus. Réglez les deux barres de sécurité à la hauteur prévue par votre séance.",
+      movementCue: "Barre posée sur les deux sécurités, devant les tibias : poussez le sol, redressez hanches et genoux jusqu'à la station droite sans cambrer, puis redescendez la barre près des jambes jusqu'au contact et reposez-la. Marquez la pause complète prévue avant la répétition suivante.",
+      notice: "La vidéo ne montre pas clairement la barre en appui sur les deux sécurités ni la pause de deux secondes, et la coloration déborde sur l'avant des cuisses. Réglez les sécurités à la bonne hauteur pour vous et suivez la consigne plutôt que l'image. Ne rebondissez pas sur les barres.",
+      spoken: "Soulevé de terre partiel. Installez la barre dans une cage stable et réglez les deux barres de sécurité à la hauteur indiquée par votre séance. Mains juste à l'extérieur des jambes, bras tendus, barre devant les tibias. Poussez le sol et redressez les hanches et les genoux jusqu'à la station droite, sans cambrer. Redescendez la barre près des jambes et reposez-la sur les deux sécurités, puis marquez la pause complète prévue avant de repartir. La vidéo ne montre pas clairement l'appui sur les sécurités ni cette pause : suivez la consigne. Arrêtez en cas de douleur.",
+    },
+  },
+  "souleve-de-terre-partiel-prise-snatch": {
+    src: "/videos/souleve-de-terre-partiel-prise-snatch.mp4", poster: "/videos/posters/souleve-de-terre-partiel-prise-snatch.jpg", label: "Vidéo IA · Soulevé de terre partiel, prise snatch", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Prise large, barre sur les sécurités, pause complète.",
+      handCue: "Saisissez la barre à deux mains, beaucoup plus écartées que les épaules et à l'intérieur des disques. Cage stable et sécurités réglées selon votre séance.",
+      movementCue: "Barre posée sur les sécurités, devant les tibias, bras tendus : redressez en poussant le sol, buste gainé, jusqu'à la station droite. Redescendez près des jambes jusqu'au contact, puis marquez une pause complète de deux secondes avant de repartir.",
+      notice: "L'écartement de la prise et l'appui de la barre sur les deux sécurités restent difficiles à vérifier, et la pause n'est pas démontrée. Placez vos mains largement mais sans serrer au-delà du confortable, réglez les sécurités et suivez la consigne.",
+      spoken: "Soulevé de terre partiel, prise snatch. Placez la barre dans une cage stable, sécurités réglées selon votre séance. Saisissez la barre à deux mains, beaucoup plus écartées que les épaules, à l'intérieur des disques, bras tendus. Barre devant les tibias, redressez en poussant le sol jusqu'à la station droite, buste gainé. Redescendez près des jambes jusqu'au contact, puis marquez une pause complète de deux secondes avant de repartir. La vidéo ne montre pas clairement l'appui ni la pause : suivez la consigne. Cinq séries de six à huit. Arrêtez en cas de douleur.",
+    },
+  },
   "back-extension-horizontal": {
     src: "/videos/back-extension-horizontal.mp4", poster: "/videos/posters/back-extension-horizontal.jpg", label: "Vidéo IA · Extension horizontale", status: "coached", avoidSilentPreview: true,
     coaching: {
