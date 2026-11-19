@@ -18,6 +18,8 @@ on:
       - 'yanis-fitness-evolution/src/components/Movement.jsx'
       - 'yanis-fitness-evolution/src/components/LibraryExerciseVisual.jsx'
       - 'yanis-fitness-evolution/tests/library-video-preview.spec.js'
+      - 'yanis-fitness-evolution/src/data/exercise-videos.js'
+      - 'yanis-fitness-evolution/src/data/step-videos.js'
       - 'yanis-fitness-evolution/src/components/RestNext.jsx'
       - 'yanis-fitness-evolution/tests/rest-next-video.spec.js'
       - 'yanis-fitness-evolution/tests/video-warmup.spec.js'
