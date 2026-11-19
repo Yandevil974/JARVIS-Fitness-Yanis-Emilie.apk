@@ -1,25 +1,64 @@
-# Abdos : crunch à la poulie et relevés suspendus
+# Abdos : références et prompts — crunch à la poulie, relevés suspendus
 
-Thème suivant après la clôture des ischios. Deux références montrées avant génération, réalisées avec le personnage habituel (argenté, casquette noire, short noir, baskets blanches). Aucune vidéo générée, aucun crédit consommé pour l'instant.
+Deux vidéos à générer pour quatre fiches. Les images de référence sont ci-dessous, avec leurs liens de téléchargement et leurs réserves. Les prompts sont prêts à copier tels quels.
 
-## Crunch à la poulie — `abs-crunch-poulie-v1.jpg`
+Personnage demandé dans les deux cas : l'athlète habituel, argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris. Aucune génération vidéo n'a encore été lancée.
 
-Réfère les deux fiches « Crunch à la poulie » et « Crunch à la poulie (ou au sol) ». Position agenouillée face à la colonne, corde tenue derrière la tête, buste enroulé, abdominaux rouge-orangé.
+---
 
-Réserves : la corde arrive très haut près de la casquette et le contact des mains est peu lisible ; on ne voit pas nettement que le bassin reste au-dessus des talons. La vidéo devra clarifier la prise et le retour contrôlé.
+## 1. Crunch à la poulie
 
-Prompt : « Vidéo anatomique 3D réaliste, personnage argenté habituel, casquette noire, short noir, baskets blanches, même salle, caméra fixe trois quarts, sans zoom, corps entier avec tête, mains, genoux et pieds visibles du début à la fin. Agenouillé sur un tapis face à la poulie haute, bassin au-dessus des genoux, pas assis sur les talons ; les deux mains tiennent la corde derrière la tête, coudes vers l'avant. Enrouler le buste vers le bassin en expirant, coudes rapprochés, sans tirer avec les bras ; revenir lentement à la position de départ sans relâcher la tension, sans élan ni balancement du bassin. Abdominaux en rouge-orangé lumineux, pas les bras. Une répétition complète, geste lent et contrôlé. »
+**Fichier** : `abs-crunch-poulie-v1.jpg`
+**Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d5055a9/yanis-fitness-evolution/docs/videos-3d/abs-crunch-poulie-v1.jpg
+**Voir et zoomer** : https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/d5055a9/yanis-fitness-evolution/docs/videos-3d/abs-crunch-poulie-v1.jpg
 
-## Relevés de jambes suspendu — `abs-releves-jambes-suspendu-v2.jpg`
+Couvre les fiches « Crunch à la poulie » et « Crunch à la poulie (ou au sol) ».
 
-Réfère la fiche « Relevés de jambes suspendu ». Suspension à la barre, jambes remontées ensemble devant, abdominaux rouge-orangé.
+**Ce que montre l'image** : agenouillé sur un tapis face à la colonne, corde tenue derrière la tête, buste enroulé, abdominaux rouge-orangé, corps entier.
 
-Version 1 écartée : la barre semblait posée dans le vide, sans montants. La version 2 montre la barre fixée entre deux montants verticaux d'une station, avec leurs pieds au sol.
+**Réserves** : la corde arrive très haut près de la casquette et la prise des mains est peu lisible ; on ne distingue pas nettement que le bassin reste au-dessus des talons.
 
-Réserves : les sommets des montants et la traverse de liaison sortent du cadre, le raccord exact au-dessus de la barre n'est donc pas vérifiable ; le bassin est déjà en position haute et la tête reste proche de la barre. La vidéo devra montrer le départ jambes tendues et l'absence d'élan.
+**Prompt à copier :**
 
-Prompt : « Vidéo anatomique 3D réaliste, personnage argenté habituel, casquette noire, short noir, baskets blanches, même salle, caméra fixe trois quarts, sans zoom. Barre de traction fixée entre deux montants verticaux d'une station, pieds des montants au sol et raccords visibles des deux côtés : la barre ne flotte jamais. Barre, deux mains, tête et deux chaussures visibles à chaque image. Suspendu à la barre, prise en pronation, bras tendus, épaules légèrement engagées, corps allongé sans balancer. Départ jambes tendues vers le sol, puis remonter ensemble les deux jambes devant jusqu'à hauteur de hanche ou plus haut selon une amplitude confortable, genoux légèrement souples, sans élan ; redescendre lentement sans laisser le corps se balancer. Ne pas montrer de balancier, de jambes alternatives ni de saut de boucle. Abdominaux en rouge-orangé lumineux. »
+```
+Vidéo anatomique 3D réaliste, une répétition complète de crunch à la poulie haute.
+Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
+Caméra fixe, trois quarts de face, sans zoom ni changement de plan. Le corps entier reste dans le cadre du début à la fin : tête, casquette, deux mains, deux coudes, genoux et pieds visibles.
+Position : agenouillé sur un tapis devant la colonne à poulie, bassin au-dessus des genoux, pas assis sur les talons. Les deux mains tiennent la corde derrière la tête, coudes vers l'avant, câble tendu vers la poulie haute.
+Mouvement : enrouler le buste vers le bassin en expirant, coudes rapprochés, sans tirer avec les bras ni plier les hanches ; s'arrêter dans une amplitude confortable ; revenir lentement à la position de départ sans relâcher la tension. Aucun élan, aucun balancement du bassin, aucune traction des bras.
+Coloration : abdominaux en rouge-orangé lumineux, comme les autres vidéos de l'application ; pas de rouge sur les bras, les épaules ou les cuisses.
+Aucun texte, aucune flèche, aucun membre supplémentaire, aucun collage, aucun saut de boucle.
+```
 
-## Réutilisation
+---
 
-Aucune : ces deux gestes n'ont pas d'équivalent filmé. Les GIF existants restent affichés en repli tant que les vidéos ne sont pas reçues.
+## 2. Relevés de jambes suspendu
+
+**Fichier** : `abs-releves-jambes-suspendu-v2.jpg`
+**Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d5055a9/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-suspendu-v2.jpg
+**Voir et zoomer** : https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/blob/d5055a9/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-suspendu-v2.jpg
+
+Couvre la fiche « Relevés de jambes suspendu ».
+
+**Ce que montre l'image** : suspendu à une barre de traction fixée entre deux montants verticaux aux pieds au sol, jambes remontées ensemble devant, abdominaux rouge-orangé.
+
+**Réserves** : le haut des montants et la traverse de liaison sortent du cadre, la fixation complète au-dessus de la barre n'est pas vérifiable ; le bassin est déjà en position haute et la tête reste proche de la barre.
+
+**Prompt à copier :**
+
+```
+Vidéo anatomique 3D réaliste, une répétition complète de relevés de jambes suspendu.
+Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
+Caméra fixe, trois quarts de côté, sans zoom ni changement de plan. La barre, les deux mains, la tête et les deux chaussures restent visibles à chaque image.
+Matériel : barre de traction solidement fixée entre deux montants verticaux d'une station, pieds des montants au sol et raccords visibles de chaque côté. La barre ne doit jamais flotter dans le vide ni sembler suspendue sans support.
+Mouvement : suspendu à la barre, prise en pronation, bras tendus, épaules légèrement engagées, corps allongé sans balancer. Départ jambes tendues vers le sol, puis remonter ensemble les deux jambes devant jusqu'à hauteur de hanche ou un peu plus haut selon une amplitude confortable, genoux légèrement souples, sans élan. Redescendre lentement jusqu'à la position jambes tendues, sans laisser le corps se balancer.
+Ne pas montrer de balancier, de jambes alternées, de pause en haut avec rebond, ni de saut de boucle.
+Coloration : abdominaux en rouge-orangé lumineux ; pas de rouge sur les bras, les épaules ou les cuisses.
+Aucun texte, aucune flèche, aucun membre supplémentaire, aucun collage.
+```
+
+---
+
+## Après réception
+
+Les deux clips seront contrôlés image par image, puis intégrés en `coached` avec leurs réserves écrites dans la fiche et dans la voix, comme les lots précédents. Les GIF et les prescriptions restent conservés. La vidéo crunch pourra servir aux deux fiches si le matériel et le geste correspondent.
