@@ -64,13 +64,13 @@ if (bundle.includes('["apercu","'))
 for (const marker of ["Comparer avec l’IA Groq", "J’accepte l’envoi de mes deux photos à Groq"])
   if (!bundle.includes(marker)) throw new Error("Comparaison photo incomplète : " + marker);
 
-// Aucune sauvegarde personnelle embarquée.
-try {
-  unzip("assets/restoration/yanis-profile.json");
+// Aucune sauvegarde personnelle embarquée (lecture de la liste des entrées,
+// sans décompresser : un fichier absent ne doit pas faire échouer le script).
+const listing = execFileSync("unzip", ["-Z1", apk], { maxBuffer: 64 * 1024 * 1024 })
+  .toString()
+  .split("\n");
+if (listing.some((line) => line.trim() === "assets/restoration/yanis-profile.json"))
   throw new Error("Une sauvegarde personnelle ne doit pas être intégrée à la publication.");
-} catch (e) {
-  if (!/cannot find|not found|no such/i.test(String(e))) throw e;
-}
 
 console.log(
   `${videos.length} clips et posters identiques, 6 associations accompagnées, retour au calme vidéo, menu, accueil vocal et comparaison photo vérifiés dans l'APK.`,

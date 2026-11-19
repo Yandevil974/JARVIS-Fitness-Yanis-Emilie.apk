@@ -21,5 +21,8 @@ for (const name of videos) {
 for (const id of ['good-morning-debout','souleve-de-terre-roumain-halteres','souleve-de-terre-roumain-barre','souleve-de-terre-roumain-barre-test-3-5-reps','leg-curl-allonge','leg-curl-machine','leg-curl-machine-ou-swiss-ball-leg-curl']){
  const video=videoFor(id);if(!video || video.status!=='coached' || !bundle.includes(id) || !bundle.includes(video.src)) throw new Error('Correspondance absente : '+id);
 }
-for(const marker of ['JARVIS est prêt.', 'Accueil vocal à l’ouverture', '1.21.0']) if(!bundle.includes(marker)) throw new Error('Accueil vocal absent du bundle actif : '+marker);
+// La version du bundle suit APP_VERSION : ne pas coder en dur une version
+// périmée qui ferait échouer les contrôles des livraisons suivantes.
+const {APP_VERSION} = await import('../src/app-identity.js');
+for(const marker of ['JARVIS est prêt.', 'Accueil vocal à l’ouverture', APP_VERSION]) if(!bundle.includes(marker)) throw new Error('Accueil vocal absent du bundle actif : '+marker);
 console.log(`${videos.length} clips et posters identiques, associations musculation et accueil vocal vérifiés dans l'APK.`);
