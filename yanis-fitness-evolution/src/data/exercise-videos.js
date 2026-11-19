@@ -146,6 +146,38 @@ export const EXERCISE_VIDEOS = {
       spoken: "Extension horizontale. Vérifiez que la chaise romaine est stable, que l'avant des cuisses est en appui, que les hanches sont libres et que les deux chevilles sont bien fixées. Croisez les bras. Descendez le buste en trois secondes en pivotant aux hanches, dans une amplitude confortable, puis remontez en une seconde uniquement jusqu'à l'alignement avec les jambes. Ne vous cambrez pas en haut : la vidéo semble dépasser cet alignement et le réglage des appuis est difficile à vérifier. Cinq séries de douze à quinze, cent vingt secondes de repos. Arrêtez en cas de douleur.",
     },
   },
+  // Abdos : crunch à la poulie (deux fiches) et relevés suspendus. Clips reçus
+  // accompagnés de réserves ; GIF et prescriptions conservés.
+  "crunch-a-la-poulie": {
+    src: "/videos/crunch-poulie-corde.mp4", poster: "/videos/posters/crunch-poulie-corde.jpg", label: "Vidéo IA · Crunch à la poulie", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Buste enroulé, bassin au-dessus des genoux.",
+      handCue: "Agenouillé sur un tapis face à la poulie haute, tenez la corde à deux mains derrière la tête, coudes vers l'avant.",
+      movementCue: "Gardez le bassin au-dessus des genoux, pas assis sur les talons, et enroulez le buste vers le bassin en expirant ; revenez lentement sans relâcher la tension, sans tirer avec les bras.",
+      notice: "La corde est tenue très haut, près de la casquette, et la prise des mains est peu lisible ; le contact avec la tête paraît approximatif. Ne copiez pas cette prise : gardez les mains derrière la tête, coudes vers l'avant, et suivez la consigne écrite.",
+      spoken: "Crunch à la poulie. Agenouillez-vous sur un tapis face à la poulie haute et tenez la corde à deux mains derrière la tête, coudes vers l'avant. Gardez le bassin au-dessus des genoux, sans vous asseoir sur les talons. Enroulez le buste vers le bassin en expirant, sans tirer avec les bras ni plier les hanches, puis revenez lentement sans relâcher la tension. La corde est tenue très haut dans la vidéo : gardez les mains derrière la tête plutôt que de copier cette prise. Respectez les séries et le tempo de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
+  "crunch-a-la-poulie-ou-au-sol": {
+    src: "/videos/crunch-poulie-corde.mp4", poster: "/videos/posters/crunch-poulie-corde.jpg", label: "Vidéo IA · Crunch à la poulie", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Buste enroulé, bassin au-dessus des genoux.",
+      handCue: "À la poulie haute, agenouillé sur un tapis, corde tenue à deux mains derrière la tête, coudes vers l'avant. Au sol, sans poulie, gardez les mêmes mains derrière la tête.",
+      movementCue: "Gardez le bassin au-dessus des genoux, pas assis sur les talons, et enroulez le buste vers le bassin en expirant ; revenez lentement sans relâcher la tension, sans tirer avec les bras.",
+      notice: "La vidéo montre la version à la poulie : la corde est tenue très haut, près de la casquette, et la prise est peu lisible. La variante au sol n'est pas démontrée. Ne copiez pas cette prise et suivez la version choisie dans votre séance.",
+      spoken: "Crunch à la poulie ou au sol. Si votre séance prévoit la poulie, agenouillez-vous sur un tapis face à la colonne et tenez la corde à deux mains derrière la tête, coudes vers l'avant. Si elle prévoit le sol, allongez-vous sur le dos, mains derrière la tête, et enroulez le buste sans tirer la nuque. Dans les deux cas, enroulez le buste en expirant puis revenez lentement sans relâcher la tension. La vidéo montre la version à la poulie avec une prise très haute : ne copiez pas cette prise. Respectez les séries et le tempo de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
+  "releves-de-jambes-suspendu": {
+    src: "/videos/releves-jambes-suspendu.mp4", poster: "/videos/posters/releves-jambes-suspendu.jpg", label: "Vidéo IA · Relevés de jambes suspendu", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Suspendu sans balancer, jambes ensemble.",
+      handCue: "Barre de traction solide, prise en pronation, bras tendus, épaules légèrement engagées.",
+      movementCue: "Corps allongé sans balancer : montez les deux jambes ensemble devant, genoux légèrement souples, dans une amplitude confortable, puis redescendez lentement sans élan.",
+      notice: "La barre se raccorde à des montants hors cadre, la fixation complète n'est pas vérifiable ; le bassin reste haut sur presque tout le clip et les genoux restent fléchis. Ne copiez pas l'amplitude : partez jambes tendues et remontez sans balancier.",
+      spoken: "Relevés de jambes suspendu. Suspendez-vous à une barre solide, prise en pronation, bras tendus, épaules légèrement engagées. Gardez le corps allongé sans balancer : montez les deux jambes ensemble devant, genoux légèrement souples, puis redescendez lentement jusqu'aux jambes tendues. La vidéo garde les genoux fléchis et le bassin haut : ne copiez pas cette amplitude, partez jambes tendues et remontez sans élan. Quatre séries de huit à dix, soixante-quinze secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
   // Good morning reçu : démonstration accompagnée, GIF conservé en repli.
   "good-morning-debout": {
     src: "/videos/good-morning-debout.mp4", poster: "/videos/posters/good-morning-debout.jpg", label: "Vidéo IA · Good morning debout", status: "coached",

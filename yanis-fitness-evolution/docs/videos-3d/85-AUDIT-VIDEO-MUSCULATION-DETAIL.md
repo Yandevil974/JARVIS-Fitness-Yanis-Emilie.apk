@@ -2,9 +2,9 @@
 
 État audité : registre de la branche au moment de la génération. Les nouvelles associations depuis l’APK 1.21.0 ne sont pas encore dans cet APK. Une fiche commune aux deux profils n’est comptée qu’une fois.
 
-**203 fiches : 150 avec une vidéo raccordée, 53 sans vidéo raccordée.**
-Les 150 fiches utilisent 129 chemins MP4, correspondant à 118 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
-Sur les fiches raccordées : 140 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
+**203 fiches : 153 avec une vidéo raccordée, 50 sans vidéo raccordée.**
+Les 153 fiches utilisent 131 chemins MP4, correspondant à 120 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
+Sur les fiches raccordées : 143 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
 
 Contrôle automatisé : existence et taille non nulle, empreinte identique entre public et release pour chaque vidéo, affiche et GIF des 203 fiches ; présence des notices et voix pour les vidéos accompagnées. Résultat : **0 anomalie(s)** de ce type. Tous les GIF de ces fiches sont présents.
 Ce contrôle **ne revoit pas manuellement toutes les images de chaque vidéo** et ne certifie pas chaque geste, cadrage ou lecture sur téléphone. Une vidéo non raccordée ne signifie pas forcément qu’aucune vidéo compatible n’existe déjà ailleurs. Les consignes et les décisions de Yanis restent prioritaires.
@@ -22,7 +22,7 @@ Le roumain barre est conservé tel quel sur décision de Yanis, malgré la tête
 | Épaules postérieures | 5 | 0 | 5 |
 | Biceps | 20 | 0 | 20 |
 | Triceps | 13 | 4 | 17 |
-| Abdominaux | 0 | 15 | 15 |
+| Abdominaux | 3 | 12 | 15 |
 | Gainage profond | 0 | 8 | 8 |
 | Lombaires | 0 | 1 | 1 |
 | Fessiers | 11 | 3 | 14 |
@@ -170,6 +170,14 @@ Chaque nom ci-dessous est une fiche. Le fichier indiqué peut être réutilisé 
 | California press (barre au cou) | Elite | [california-press-barre-au-cou.mp4](../../public/videos/california-press-barre-au-cou.mp4) | Accompagnée |
 | Extensions triceps barre EZ + pullover | Elite | [extensions-triceps-ez-commune-05-06-09.mp4](../../public/videos/extensions-triceps-ez-commune-05-06-09.mp4) | Accompagnée |
 
+### Abdominaux — 3/15
+
+| Exercice | Profils | Vidéo | Statut |
+|---|---|---|---|
+| Crunch à la poulie (ou au sol) | Émilie | [crunch-poulie-corde.mp4](../../public/videos/crunch-poulie-corde.mp4) | Accompagnée |
+| Crunch à la poulie | Émilie + Elite | [crunch-poulie-corde.mp4](../../public/videos/crunch-poulie-corde.mp4) | Accompagnée |
+| Relevés de jambes suspendu | Elite | [releves-jambes-suspendu.mp4](../../public/videos/releves-jambes-suspendu.mp4) | Accompagnée |
+
 ### Fessiers — 11/14
 
 | Exercice | Profils | Vidéo | Statut |
@@ -251,21 +259,18 @@ Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par 
 - Extensions triceps haltères plat
 - Extensions triceps poulie
 
-### Abdominaux — 15
+### Abdominaux — 12
 
 - Gainage planche
-- Crunch à la poulie (ou au sol)
 - Reverse crunch
 - Relevés de jambes allongée
 - Relevés de jambes
 - Circuit gainage (planche + latéral + bird dog)
-- Crunch à la poulie
 - Circuit abdominaux (crunch + relevés + gainage)
 - Relevés de jambes allongé
 - Crunch sur swiss ball
 - Relevés de jambes incliné
 - Jackknife sur swiss ball
-- Relevés de jambes suspendu
 - Ab wheel (roulette)
 - Wood chop poulie haute
 

@@ -1,5 +1,7 @@
 # Abdos : références et prompts — crunch à la poulie, relevés suspendus
 
+**Mise à jour du 22/10/2026 : les deux vidéos ont été déposées et intégrées.** Le crunch sert aux deux fiches, les relevés à la leur : l'audit passe à 153 fiches musculation avec vidéo sur 203. Les prompts restent ci-dessous pour mémoire, et les réserves sont portées par la fiche et par la voix.
+
 Deux vidéos à générer pour quatre fiches. Les images de référence sont ci-dessous, avec leurs liens de téléchargement et leurs réserves. Les prompts sont prêts à copier tels quels.
 
 Personnage demandé dans les deux cas : l'athlète habituel, argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris. Aucune génération vidéo n'a encore été lancée.
@@ -58,6 +60,22 @@ Aucun texte, aucune flèche, aucun membre supplémentaire, aucun collage.
 ```
 
 ---
+
+## Intégration du 22/10/2026
+
+| Fiche(s) | Source | Empreinte SHA-256 |
+| --- | --- | --- |
+| Crunch à la poulie + variante au sol | `1795093830394.mp4` | `f6821d2afe880816da71949ef2161999c16ef97d259e3bb23200b17ca48967af` |
+| Relevés de jambes suspendu | `1795094147317.mp4` | `f739ea0f5ee183e89f04372e4e7e56c42e40c1e4366873a00a359240653b8750` |
+
+640×360, 121 images à 24 images par seconde, 13 images contrôlées par clip. Copies intactes dans `public/videos` et `release/videos`, affiches extraites de la première image, `coached` et `avoidSilentPreview`, GIF et prescriptions conservés.
+
+Réserves constatées à l'inspection :
+
+- **Crunch** : la corde est tenue très haut, contre la casquette, et la prise des mains est peu lisible ; le contact avec la nuque est approximatif. La variante au sol n'est pas démontrée.
+- **Relevés suspendus** : la barre se raccorde à des montants qui sortent du cadre, la fixation complète n'est pas vérifiable. Le bassin reste haut sur presque tout le clip et les genoux restent fléchis ; l'amplitude et l'absence de balancier ne sont pas démontrées.
+
+Aucun crédit de génération consommé : les deux clips viennent du dépôt de Yanis.
 
 ## Après réception
 
