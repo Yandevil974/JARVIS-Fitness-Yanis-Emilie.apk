@@ -44,7 +44,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 3. Reverse crunch
 
-**Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21a9c2a/yanis-fitness-evolution/docs/videos-3d/abs-reverse-crunch-v1.jpg
+**Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d61ef6e/yanis-fitness-evolution/docs/videos-3d/abs-reverse-crunch-v1.jpg
 **Fiche** : « Reverse crunch » (3 × 12).
 
 **Réserve** : l'image montre la position haute ; les bras sont posés au sol et le bassin légèrement décollé, ce qui doit être confirmé en mouvement.
@@ -64,7 +64,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 4. Roue abdominale (ab wheel)
 
-**Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21a9c2a/yanis-fitness-evolution/docs/videos-3d/abs-ab-wheel-v1.jpg
+**Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d61ef6e/yanis-fitness-evolution/docs/videos-3d/abs-ab-wheel-v1.jpg
 **Fiche** : « Ab wheel (roulette) » (4 × 10-12).
 
 **Réserve** : l'image montre le déplacement vers l'avant ; le retour et l'absence de creux lombaire devront être vérifiés dans le clip. Le bassin paraît haut, ce qui peut masquer un défaut d'alignement.
