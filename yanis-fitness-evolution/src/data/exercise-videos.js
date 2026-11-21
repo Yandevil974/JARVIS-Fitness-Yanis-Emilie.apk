@@ -178,6 +178,26 @@ export const EXERCISE_VIDEOS = {
       spoken: "Relevés de jambes suspendu. Suspendez-vous à une barre solide, prise en pronation, bras tendus, épaules légèrement engagées. Gardez le corps allongé sans balancer : montez les deux jambes ensemble devant, genoux légèrement souples, puis redescendez lentement jusqu'aux jambes tendues. La vidéo garde les genoux fléchis et le bassin haut : ne copiez pas cette amplitude, partez jambes tendues et remontez sans élan. Quatre séries de huit à dix, soixante-quinze secondes de repos. Arrêtez en cas de douleur.",
     },
   },
+  "ab-wheel-roulette": {
+    src: "/videos/ab-wheel-roulette.mp4", poster: "/videos/posters/ab-wheel-roulette.jpg", label: "Vidéo IA · Roue abdominale", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Bassin engagé, dos sous contrôle.",
+      handCue: "À genoux sur un tapis, deux mains sur les poignées de la roue posée devant vous, bras tendus.",
+      movementCue: "Faites rouler la roue vers l'avant en gardant le bassin engagé et sans creuser les lombaires ; arrêtez-vous à une amplitude confortable, puis revenez en tirant la roue vers les genoux avec les abdominaux, sans élan.",
+      notice: "Le bassin paraît haut et le dos peu arrondi ; l'amplitude paraît grande et le retour n'est pas clairement contrôlé. Ne poussez pas jusqu'à creuser le bas du dos : réduisez l'amplitude et suivez la consigne écrite.",
+      spoken: "Roue abdominale. Agenouillez-vous sur un tapis, deux mains sur les poignées de la roue devant vous, bras tendus. Faites rouler la roue vers l'avant en gardant le bassin engagé, sans creuser le bas du dos et sans laisser les hanches s'affaisser. Arrêtez-vous à une amplitude que vous contrôlez, puis revenez en tirant la roue vers les genoux avec les abdominaux, sans élan. Le bassin paraît haut dans la vidéo : réduisez l'amplitude plutôt que de copier cette position. Quatre séries de dix à douze, soixante-quinze secondes de repos. Arrêtez en cas de douleur.",
+    },
+  },
+  "reverse-crunch": {
+    src: "/videos/reverse-crunch.mp4", poster: "/videos/posters/reverse-crunch.jpg", label: "Vidéo IA · Reverse crunch", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Bassin enroulé, haut du dos au sol.",
+      handCue: "Allongé sur le dos, bras le long du corps, paumes au sol : ne poussez pas avec les mains.",
+      movementCue: "Genoux fléchis vers la poitrine, pieds décollés : en expirant, enroulez le bassin vers la poitrine en décollant légèrement les fesses, puis redescendez lentement sans poser les pieds.",
+      notice: "Les jambes montent haut et le bassin décolle nettement ; le retour n'est pas clairement montré. Gardez un mouvement court et contrôlé, sans élan, et ne creusez pas les lombaires en redescendant.",
+      spoken: "Reverse crunch. Allongez-vous sur le dos, tête et épaules au sol, bras le long du corps, paumes au sol. Ramenez les genoux fléchis vers la poitrine, pieds décollés. En expirant, enroulez le bassin vers la poitrine en décollant légèrement les fesses du tapis, sans élan, puis redescendez lentement sans poser les pieds. Les jambes montent haut dans la vidéo : gardez un mouvement court et contrôlé. Trois séries de douze. Arrêtez en cas de douleur.",
+    },
+  },
   // Good morning reçu : démonstration accompagnée, GIF conservé en repli.
   "good-morning-debout": {
     src: "/videos/good-morning-debout.mp4", poster: "/videos/posters/good-morning-debout.jpg", label: "Vidéo IA · Good morning debout", status: "coached",

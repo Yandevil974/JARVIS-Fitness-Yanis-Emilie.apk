@@ -1,5 +1,7 @@
 # Abdos — planche, relevés allongés, reverse crunch et roue
 
+**Mise à jour du 21/11/2026 : la roue abdominale et le reverse crunch ont été déposés et intégrés** (`ab-wheel-roulette.mp4` et `reverse-crunch.mp4`), `coached` avec leurs réserves, GIF et prescriptions conservés. L'audit passe à 155 fiches sur 203. Les deux autres vidéos du lot (planche et relevés allongés) restent à recevoir.
+
 Quatre vidéos pour couvrir cinq fiches. Les images sont à montrer avant génération ; aucune vidéo n'est encore lancée. Toutes utilisent le personnage habituel : athlète argenté, casquette noire, short noir, baskets blanches, salle claire au sol gris et tapis noir.
 
 ## 1. Gainage planche sur avant-bras
@@ -42,7 +44,9 @@ Coloration : abdominaux en rouge-orangé lumineux ; pas de rouge sur les cuisses
 Aucun texte, aucune flèche, aucun collage.
 ```
 
-## 3. Reverse crunch
+## 3. Reverse crunch — **reçu et intégré le 21/11/2026**
+
+Source `1795251666008.mp4`, empreinte `8f2541d5ee0fdec93e0ee0f6af7f402b8f462d8a332e9b89c13f44785cb69ce8`. Réserves constatées : les jambes montent haut et le bassin décolle nettement, le retour n'est pas clairement montré.
 
 **Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d61ef6e/yanis-fitness-evolution/docs/videos-3d/abs-reverse-crunch-v1.jpg
 **Fiche** : « Reverse crunch » (3 × 12).
@@ -62,7 +66,9 @@ Coloration : abdominaux en rouge-orangé lumineux sur toute la sangle ; pas de r
 Aucun texte, aucune flèche, aucun collage.
 ```
 
-## 4. Roue abdominale (ab wheel)
+## 4. Roue abdominale (ab wheel) — **reçue et intégrée le 21/11/2026**
+
+Source `1795251606287.mp4`, empreinte `5e0ea73840eb2bc4d17f8d3d8f2108f31b013e8520614b3b536038d0a905e0de`. Réserves constatées : bassin haut, dos peu arrondi, amplitude grande, retour peu contrôlé.
 
 **Télécharger** : https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/d61ef6e/yanis-fitness-evolution/docs/videos-3d/abs-ab-wheel-v1.jpg
 **Fiche** : « Ab wheel (roulette) » (4 × 10-12).
