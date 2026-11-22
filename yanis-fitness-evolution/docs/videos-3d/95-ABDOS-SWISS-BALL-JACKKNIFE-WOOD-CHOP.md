@@ -24,12 +24,12 @@ Objectif : terminer les abdominaux. **Six fiches, quatre nouvelles vidéos.** Le
 - **Relevés inclinés** : les deux jambes sont presque confondues sur la vue de profil, une seule chaussure est bien nette. La consigne écrite doit primer.
 - **Crunch swiss ball** : position conforme, ballon sous le milieu du dos.
 - **Jackknife** : ballon sous les tibias, mains au sol, hanches hautes. La première tentative plaçait le ballon sous le ventre, elle a été supprimée.
-- **Wood chop** : la première tentative faisait passer le câble à travers le corps, elle a été supprimée. La version retenue montre un seul câble, la poulie haute et l'empilement de poids.
+- **Wood chop** : quatre tentatives ont été nécessaires. Les versions 1 et 2 faisaient passer le câble à travers le corps ou repartir derrière, elles sont supprimées. La version retenue (v3) est une **vue de profil pure**, colonne à poulie, poulie haute et empilement de poids dans le même plan que l'athlète, un seul câble tendu en ligne droite jusqu'à la poignée, entièrement visible. C'est ce cadrage qui doit servir de référence : ne pas revenir aux vues de trois quarts, où le générateur casse le câble.
 - Aucune de ces quatre images n'a encore été transformée en vidéo : les réserves seront affichées dans la fiche, comme pour les lots précédents.
 
 ## 1. Relevés de jambes incliné
 
-**Image** : [abs-releves-jambes-incline-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-incline-v2.jpg)
+**Image** : [abs-releves-jambes-incline-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/HEADCOMMIT/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-incline-v2.jpg)
 **Fiche** : « Relevés de jambes incliné » — 4 séries de 10 à 12.
 
 ```
@@ -47,7 +47,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 2. Crunch sur swiss ball
 
-**Image** : [abs-crunch-swiss-ball-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-crunch-swiss-ball-v1.jpg)
+**Image** : [abs-crunch-swiss-ball-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/HEADCOMMIT/yanis-fitness-evolution/docs/videos-3d/abs-crunch-swiss-ball-v1.jpg)
 **Fiche** : « Crunch sur swiss ball » — 3 séries de 15 à 20.
 
 ```
@@ -64,7 +64,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 3. Jackknife sur swiss ball
 
-**Image** : [abs-jackknife-swiss-ball-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-jackknife-swiss-ball-v2.jpg)
+**Image** : [abs-jackknife-swiss-ball-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/HEADCOMMIT/yanis-fitness-evolution/docs/videos-3d/abs-jackknife-swiss-ball-v2.jpg)
 **Fiche** : « Jackknife sur swiss ball » — 3 séries de 10 à 12.
 
 ```
@@ -81,20 +81,24 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 4. Wood chop poulie haute
 
-**Image** : [abs-wood-chop-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v2.jpg)
+**Image** : [abs-wood-chop-v3.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/HEADCOMMIT/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v3.jpg)
 **Fiche** : « Wood chop poulie haute » — 3 séries de 10 à 12.
 
 ```
 Vidéo anatomique 3D réaliste, une répétition complète de wood chop à la poulie haute.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris, tapis noir.
-Caméra fixe, de profil trois quarts, sans zoom. Tête, deux mains, deux pieds, la colonne à poulie et le câble entièrement visibles.
-Matériel : une colonne à poulie verticale avec sa poulie en haut et son empilement de poids en bas, un seul câble visible et tendu en ligne droite de la poulie à la poignée, jamais derrière le corps.
-Position de départ : debout, pieds largeur de hanches, genoux légèrement fléchis, buste tourné vers le côté de la poulie, deux mains jointes sur la poignée à hauteur d'épaule, bras engagés en diagonale vers le haut.
-Mouvement : en expirant, tirer la poignée en diagonale vers le bas et à travers le corps jusqu'à la hanche opposée, en tournant le buste et en gardant les bras tendus ; puis revenir lentement à la position de départ, hanches stables.
-Aucun mouvement de balancier, aucun câble qui traverse le corps, aucun appui sur les jambes pour tirer.
-Une seule répétition complète, aucun saut de boucle.
+
+CADRAGE, très important : vue de PROFIL PUR, caméra parfaitement de côté, athlète tourné vers la droite de l'image. La colonne à poulie est au bord gauche du cadre, dans le MÊME PLAN que l'athlète, ni devant ni derrière lui. Dans toute la vidéo, un SEUL câble est visible : il part de la poulie du haut et rejoint la poignée tenue par les deux mains de l'athlète. Ce câble est une ligne droite continue, tendue, entièrement visible. Il ne traverse JAMAIS le corps, ne passe JAMAIS derrière le dos, ne descend JAMAIS vers le bas de la machine. Aucun second câble, aucune poulie basse, aucun câble dans le vide.
+
+Matériel visible en entier : colonne verticale posée au sol, poulie fixée en haut, empilement de poids en bas, poignée unique tenue à deux mains.
+
+Position de départ : debout, pieds largeur de hanches, genoux légèrement fléchis, dos droit, deux mains jointes sur la poignée devant lui à hauteur de poitrine, bras tendus vers le haut et vers la poulie.
+
+Mouvement : en expirant, tirer la poignée en diagonale vers le bas jusqu'à la hanche opposée en tournant le buste et en gardant les bras tendus ; le câble reste dans le même plan, devant l'athlète, sans jamais passer derrière lui. Puis revenir lentement à la position de départ, hanches stables, sans élan.
+
+Corps entier dans le cadre du début à la fin : tête, deux mains, deux pieds, la colonne, la poulie, les poids et le câble.
 Coloration : abdominaux en rouge-orangé lumineux, surtout du côté sollicité ; pas de rouge sur les bras ou les cuisses.
-Aucun texte, aucune flèche, aucun collage.
+Aucun texte, aucune flèche, aucun collage, aucun personnage supplémentaire.
 ```
 
 ## 5 et 6. Les deux circuits
