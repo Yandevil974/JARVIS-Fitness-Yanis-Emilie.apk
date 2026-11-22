@@ -29,7 +29,7 @@ Objectif : terminer les abdominaux. **Six fiches, quatre nouvelles vidéos.** Le
 
 ## 1. Relevés de jambes incliné
 
-**Image** : [abs-releves-jambes-incline-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-incline-v2.jpg)
+**Image** : [abs-releves-jambes-incline-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-incline-v2.jpg)
 **Fiche** : « Relevés de jambes incliné » — 4 séries de 10 à 12.
 
 ```
@@ -47,7 +47,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 2. Crunch sur swiss ball
 
-**Image** : [abs-crunch-swiss-ball-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/abs-crunch-swiss-ball-v1.jpg)
+**Image** : [abs-crunch-swiss-ball-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-crunch-swiss-ball-v1.jpg)
 **Fiche** : « Crunch sur swiss ball » — 3 séries de 15 à 20.
 
 ```
@@ -64,7 +64,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 3. Jackknife sur swiss ball
 
-**Image** : [abs-jackknife-swiss-ball-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/abs-jackknife-swiss-ball-v2.jpg)
+**Image** : [abs-jackknife-swiss-ball-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-jackknife-swiss-ball-v2.jpg)
 **Fiche** : « Jackknife sur swiss ball » — 3 séries de 10 à 12.
 
 ```
@@ -81,7 +81,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 4. Wood chop poulie haute
 
-**Image** : [abs-wood-chop-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v2.jpg)
+**Image** : [abs-wood-chop-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/750187c/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v2.jpg)
 **Fiche** : « Wood chop poulie haute » — 3 séries de 10 à 12.
 
 ```
