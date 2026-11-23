@@ -1,6 +1,6 @@
 # Abdos — relevés inclinés, swiss ball, jackknife, wood chop, circuits
 
-Objectif : terminer les abdominaux. **Six fiches, quatre nouvelles vidéos.** Les références ci-dessous sont à montrer avant génération. Aucune vidéo de ce lot n'est encore reçue.
+**Mise à jour du 23/11/2026 : les quatre vidéos de ce lot ont été déposées et intégrées**, `coached` avec leurs réserves, GIF et prescriptions conservés. Empreintes : `releves-jambes-incline` `752d1307…`, `crunch-sur-swiss-ball` `8dcdbbee…`, `jackknife-sur-swiss-ball` `c1177701…`, `wood-chop-poulie-haute` `f3c0232b…`.
 
 ## État des abdominaux
 
@@ -12,10 +12,10 @@ Objectif : terminer les abdominaux. **Six fiches, quatre nouvelles vidéos.** Le
 | Ab wheel (roulette) | ✅ `ab-wheel-roulette.mp4` (accompagnée, 21/11/2026) |
 | Gainage planche | ⏳ image + prompt prêts ([lot 94](./94-ABDOS-PLANCHE-RELEVES-AUTRES.md)) |
 | Relevés de jambes allongé / allongée | ⏳ image + prompt prêts ([lot 94](./94-ABDOS-PLANCHE-RELEVES-AUTRES.md)) |
-| **Relevés de jambes incliné** | ⏳ ce document |
-| **Crunch sur swiss ball** | ⏳ ce document |
-| **Jackknife sur swiss ball** | ⏳ ce document |
-| **Wood chop poulie haute** | ⏳ ce document |
+| Relevés de jambes incliné | ✅ `releves-jambes-incline.mp4` (accompagnée, 23/11/2026) |
+| Crunch sur swiss ball | ✅ `crunch-sur-swiss-ball.mp4` (accompagnée, 23/11/2026) |
+| Jackknife sur swiss ball | ✅ `jackknife-sur-swiss-ball.mp4` (accompagnée, 23/11/2026) |
+| Wood chop poulie haute | ✅ `wood-chop-poulie-haute.mp4` (accompagnée, 23/11/2026) |
 | **Circuit gainage** (3 mouvements) | ⏳ montage à assembler |
 | **Circuit abdominaux** (3 mouvements) | ⏳ montage à assembler |
 
@@ -25,7 +25,7 @@ Objectif : terminer les abdominaux. **Six fiches, quatre nouvelles vidéos.** Le
 - **Crunch swiss ball** : position conforme, ballon sous le milieu du dos.
 - **Jackknife** : ballon sous les tibias, mains au sol, hanches hautes. La première tentative plaçait le ballon sous le ventre, elle a été supprimée.
 - **Wood chop** : cinq tentatives ont été nécessaires. Les versions 1 et 2 faisaient passer le câble à travers le corps ; la v3, de profil, était correcte pour le câble mais le générateur transformait le geste en simple abaissement des bras, sans rotation. La version retenue (v5) est **de face**, buste tourné par rapport au bassin, bras tendus, **et la poulie fixée à hauteur de poitrine** et non en haut de la colonne : c'est la correction demandée par Yanis après la v4, où la poulie était trop haute. Trois règles à conserver : vue de face, poulie à hauteur de poitrine, et interdiction explicite de ramener les bras vers le bas.
-- Aucune de ces quatre images n'a encore été transformée en vidéo : les réserves seront affichées dans la fiche, comme pour les lots précédents.
+- Les quatre clips sont arrivés le 23/11/2026 et sont intégrés en accompagné. Réserves constatées sur les clips : relevés inclinés, jambes presque confondues de profil ; jackknife, bassin très haut et forte rondeur du dos ; wood chop, tirage plus horizontal que vertical puisque le câble est à hauteur de poitrine. Le crunch swiss ball est conforme.
 
 ## 1. Relevés de jambes incliné
 
@@ -122,4 +122,4 @@ Le bird dog et le gainage latéral appartiennent aussi au module « gainage prof
 3. Gainage latéral et bird dog (à préparer avec le module gainage profond).
 4. Montage des deux circuits.
 
-Une fois ces clips reçus, les **15 fiches d'abdominaux seront couvertes** et le module pourra être déclaré terminé.
+État au 23/11/2026 : **9 fiches d'abdominaux sur 15** ont leur vidéo. Il reste le gainage planche, les deux fiches de relevés allongés (une seule vidéo, lot 94) et les deux circuits, qui seront assemblés à partir des clips unitaires.

@@ -198,6 +198,46 @@ export const EXERCISE_VIDEOS = {
       spoken: "Reverse crunch. Allongez-vous sur le dos, tête et épaules au sol, bras le long du corps, paumes au sol. Ramenez les genoux fléchis vers la poitrine, pieds décollés. En expirant, enroulez le bassin vers la poitrine en décollant légèrement les fesses du tapis, sans élan, puis redescendez lentement sans poser les pieds. Les jambes montent haut dans la vidéo : gardez un mouvement court et contrôlé. Trois séries de douze. Arrêtez en cas de douleur.",
     },
   },
+  "releves-de-jambes-incline": {
+    src: "/videos/releves-jambes-incline.mp4", poster: "/videos/posters/releves-jambes-incline.jpg", label: "Vidéo IA · Relevés de jambes incliné", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Dos au dossier, jambes ensemble.",
+      handCue: "Assis sur le banc incliné, dos plaqué contre le dossier, deux mains agrippées à l'arête du banc derrière les hanches.",
+      movementCue: "Jambes tendues devant, légèrement au-dessus de l'horizontale : descendez-les ensemble sans décoller le dos ni bouger les mains, puis remontez sans élan.",
+      notice: "Sur la vidéo, les deux jambes se confondent presque de profil et une seule chaussure est bien nette. Gardez les deux pieds séparés d'une largeur de bassin et suivez la consigne écrite plutôt que l'image.",
+      spoken: "Relevés de jambes incliné. Asseyez-vous sur le banc incliné à environ quarante-cinq degrés, dos plaqué contre le dossier, deux mains agrippées à l'arête du banc derrière les hanches. Tendez les deux jambes devant vous, légèrement au-dessus de l'horizontale, pieds séparés d'une largeur de bassin. Descendez-les ensemble sans décoller le dos et sans bouger les mains, sans laisser le bas du dos se creuser, sans poser les pieds. Remontez sans élan. Quatre séries de dix à douze. Arrêtez en cas de douleur.",
+    },
+  },
+  "crunch-sur-swiss-ball": {
+    src: "/videos/crunch-sur-swiss-ball.mp4", poster: "/videos/posters/crunch-sur-swiss-ball.jpg", label: "Vidéo IA · Crunch sur swiss ball", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Ballon sous le milieu du dos.",
+      handCue: "Deux mains de chaque côté de la tête, coudes ouverts : ne tirez pas sur la nuque.",
+      movementCue: "Bassin sur le bord du ballon, pieds à plat écartés d'une largeur de bassin : enroulez le haut du dos vers l'avant en expirant, puis redescendez jusqu'à reposer les omoplates sur le ballon.",
+      notice: "La vidéo montre le ballon sous le milieu du dos et les pieds bien à plat : position conforme. Le ballon ne doit pas rouler ; si vous sentez qu'il se dérobe, avancez les pieds d'un ou deux centimètres.",
+      spoken: "Crunch sur swiss ball. Allongez-vous sur le ballon, placé sous le milieu du dos, le bassin sur le bord du ballon. Deux pieds à plat au sol, écartés d'une largeur de bassin, genoux pliés à quatre-vingt-dix degrés. Deux mains de chaque côté de la tête, coudes ouverts. En expirant, enroulez le haut du dos vers l'avant en décollant les omoplates, sans tirer sur la nuque. Redescendez lentement jusqu'à reposer le haut du dos sur le ballon. Trois séries de quinze à vingt. Arrêtez en cas de douleur.",
+    },
+  },
+  "jackknife-sur-swiss-ball": {
+    src: "/videos/jackknife-sur-swiss-ball.mp4", poster: "/videos/posters/jackknife-sur-swiss-ball.jpg", label: "Vidéo IA · Jackknife sur swiss ball", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Ballon sous les tibias, hanches hautes.",
+      handCue: "Deux mains à plat au sol devant, bras tendus, épaules à l'aplomb des mains ; les tibias et le dessus des pieds reposent sur le ballon.",
+      movementCue: "En expirant, enroulez le bassin vers le haut en pliant les hanches et en tirant le ballon vers les mains jusqu'à former un V inversé, puis revenez lentement en planche sans laisser les hanches s'affaisser.",
+      notice: "Le bassin monte très haut et le dos s'arrondit fortement dans la vidéo. Réduisez l'amplitude si vous sentez le bas du dos travailler ou si les hanches retombent : mieux vaut un V moins marqué et contrôlé.",
+      spoken: "Jackknife sur ballon. En appui sur les deux mains à plat au sol devant, bras tendus, épaules au-dessus des mains. Les deux tibias et le dessus des pieds reposent sur le ballon, derrière vous. Corps allongé en planche, dos droit. En expirant, enroulez le bassin vers le haut en pliant les hanches et en tirant le ballon vers les mains, jusqu'à former un V inversé. Le ventre ne touche pas le ballon. Revenez lentement en planche sans laisser les hanches s'affaisser. Le bassin monte très haut dans la vidéo : réduisez l'amplitude si le bas du dos travaille. Trois séries de dix à douze. Arrêtez en cas de douleur.",
+    },
+  },
+  "wood-chop-poulie-haute": {
+    src: "/videos/wood-chop-poulie-haute.mp4", poster: "/videos/posters/wood-chop-poulie-haute.jpg", label: "Vidéo IA · Wood chop poulie", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "C'est le buste qui tourne, pas les bras qui tombent.",
+      handCue: "Deux mains jointes sur la poignée, bras tendus, à hauteur de poitrine ; le bassin reste face à la machine.",
+      movementCue: "Tirez la poignée en arc de cercle de la gauche vers la droite devant le corps, en tournant le buste d'environ quatre-vingt-dix degrés ; les bras restent tendus et ne descendent pas le long du corps.",
+      notice: "Le câble est arrivé à hauteur de poitrine sur cette version, et non en haut de la colonne : le tirage est donc plus horizontal que vertical. Gardez les bras tendus et la poignée devant vous ; ne transformez pas le geste en simple abaissement de bras.",
+      spoken: "Wood chop à la poulie. Debout, pieds largeur d'épaules, genoux légèrement fléchis. Deux mains jointes sur la poignée, bras tendus, à hauteur de poitrine. Le bassin reste face à la machine. En expirant, tirez la poignée en arc de cercle de la gauche vers la droite devant le corps, en tournant le buste d'environ quatre-vingt-dix degrés. Les bras restent tendus et ne descendent pas le long du corps : c'est le buste qui tourne. Revenez lentement par la même rotation inverse, sans élan. Trois séries de dix à douze. Arrêtez en cas de douleur.",
+    },
+  },
   // Good morning reçu : démonstration accompagnée, GIF conservé en repli.
   "good-morning-debout": {
     src: "/videos/good-morning-debout.mp4", poster: "/videos/posters/good-morning-debout.jpg", label: "Vidéo IA · Good morning debout", status: "coached",

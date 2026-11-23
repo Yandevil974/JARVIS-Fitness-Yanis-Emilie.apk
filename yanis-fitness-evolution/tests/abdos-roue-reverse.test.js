@@ -46,7 +46,7 @@ test("abdos : roue et reverse crunch intacts, accompagnés, GIF et prescriptions
     assert.equal(sha("public" + ex.gif), sha("release" + ex.gif), c.id);
   }
   // Pas de partage abusif : les autres abdos sans clip restent sur leur GIF.
-  for (const id of ["gainage-planche", "releves-de-jambes-allonge", "jackknife-sur-swiss-ball", "wood-chop-poulie-haute"]) {
+  for (const id of ["gainage-planche", "releves-de-jambes-allonge", "circuit-abdominaux-crunch-releves-gainage"]) {
     assert.equal(videoFor(id), null, id);
   }
 });
