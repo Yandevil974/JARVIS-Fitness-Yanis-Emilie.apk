@@ -24,7 +24,7 @@ Objectif : terminer les abdominaux. **Six fiches, quatre nouvelles vidéos.** Le
 - **Relevés inclinés** : les deux jambes sont presque confondues sur la vue de profil, une seule chaussure est bien nette. La consigne écrite doit primer.
 - **Crunch swiss ball** : position conforme, ballon sous le milieu du dos.
 - **Jackknife** : ballon sous les tibias, mains au sol, hanches hautes. La première tentative plaçait le ballon sous le ventre, elle a été supprimée.
-- **Wood chop** : cinq tentatives ont été nécessaires. Les versions 1 et 2 faisaient passer le câble à travers le corps ; la v3, de profil, était correcte pour le câble mais le générateur transformait le geste en simple abaissement des bras, sans rotation. La version retenue (v4) est **de face**, avec le buste nettement tourné par rapport au bassin et les bras tendus qui restent hauts en diagonale. Deux règles à conserver : le personnage doit être vu de face, et le prompt doit interdire explicitement de ramener les bras vers le bas.
+- **Wood chop** : cinq tentatives ont été nécessaires. Les versions 1 et 2 faisaient passer le câble à travers le corps ; la v3, de profil, était correcte pour le câble mais le générateur transformait le geste en simple abaissement des bras, sans rotation. La version retenue (v5) est **de face**, buste tourné par rapport au bassin, bras tendus, **et la poulie fixée à hauteur de poitrine** et non en haut de la colonne : c'est la correction demandée par Yanis après la v4, où la poulie était trop haute. Trois règles à conserver : vue de face, poulie à hauteur de poitrine, et interdiction explicite de ramener les bras vers le bas.
 - Aucune de ces quatre images n'a encore été transformée en vidéo : les réserves seront affichées dans la fiche, comme pour les lots précédents.
 
 ## 1. Relevés de jambes incliné
@@ -81,21 +81,23 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 4. Wood chop poulie haute
 
-**Image** : [abs-wood-chop-v4-face.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/909393b/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v4-face.jpg)
+**Image** : [abs-wood-chop-v5-face-poitrine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/TOK/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v5-face-poitrine.jpg)
 **Fiche** : « Wood chop poulie haute » — 3 séries de 10 à 12.
 
 ```
 Vidéo anatomique 3D réaliste, une répétition complète de wood chop à la poulie haute.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris, tapis noir.
 
+HAUTEUR DE LA POULIE : la poulie est fixée à HAUTEUR DE POITRINE de l'athlète, à mi-hauteur de la colonne, jamais au-dessus de sa tête ni en haut de la machine. Le câble arrive donc presque à l'horizontale, légèrement incliné vers le haut, à hauteur d'épaules ou de sternum.
+
 CADRAGE : vue DE FACE, caméra à hauteur de poitrine face à l'athlète, corps entier dans le cadre du début à la fin (tête, deux mains, deux pieds, la poignée, la colonne à poulie, la poulie, les poids et le câble). La colonne à poulie verticale est au bord gauche du cadre, avec sa poulie en haut et son empilement de poids en bas. Un SEUL câble, fin et tendu, va de la poignée à la poulie en ligne droite, entièrement visible ; il ne traverse jamais le corps et aucun autre câble n'apparaît.
 
 CE QUI EST INTERDIT ET QUI FAIT ÉCHOUER LA VIDÉO : ne PAS ramener les bras vers le bas, ne PAS les laisser tomber à la verticale le long du corps, ne PAS plier les coudes, ne PAS faire un simple abaissement de bras ou un tirage vertical. Les bras restent TENDUS et ALLONGÉS pendant tout le mouvement, et la poignée reste devant l'athlète, jamais contre son corps.
 
 Mouvement attendu : le geste est une ROTATION DU BUSTE, pas une descente de bras.
-Départ : debout, pieds largeur d'épaules, genoux légèrement fléchis, bassin face à la caméra, buste tourné vers la gauche du spectateur, les deux mains jointes sur la poignée devant le visage, bras tendus dirigés en diagonale vers le haut et la gauche.
-Pendant le geste : le bassin reste stable et face à la caméra ; c'est le buste qui pivote d'environ 90 degrés vers la droite du spectateur. Les bras tendus suivent ce pivot en restant en diagonale, la poignée décrit un arc de cercle de la gauche vers la droite devant le corps, à hauteur de poitrine, jamais plus bas que la taille et jamais collée au corps.
-Fin : buste tourné vers la droite du spectateur, bras toujours tendus en diagonale devant lui. Puis retour lent et contrôlé au départ par la même rotation inverse, sans élan.
+Départ : debout, pieds largeur d'épaules, genoux légèrement fléchis, bassin face à la caméra, buste tourné vers la gauche du spectateur, les deux mains jointes sur la poignée à hauteur de poitrine, bras tendus dirigés légèrement vers le haut et la gauche.
+Pendant le geste : le bassin reste stable et face à la caméra ; c'est le buste qui pivote d'environ 90 degrés vers la droite du spectateur. Les bras tendus suivent ce pivot en restant en diagonale, la poignée décrit un arc de cercle de la gauche vers la droite devant le corps, à hauteur de poitrine, jamais plus bas que la taille et jamais collée au corps ; le câble reste à peu près horizontal pendant tout le geste.
+Fin : buste tourné vers la droite du spectateur, bras toujours tendus devant lui à hauteur de poitrine. Puis retour lent et contrôlé au départ par la même rotation inverse, sans élan.
 La rotation du buste doit être nettement visible et le bassin ne doit pas tourner avec lui.
 
 Coloration : abdominaux en rouge-orangé lumineux, en particulier la sangle du côté qui travaille ; pas de rouge sur les bras ou les cuisses.
