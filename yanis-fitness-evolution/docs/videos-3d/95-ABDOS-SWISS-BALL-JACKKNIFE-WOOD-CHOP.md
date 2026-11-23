@@ -81,7 +81,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 4. Wood chop poulie haute
 
-**Image** : [abs-wood-chop-v5-face-poitrine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/TOK/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v5-face-poitrine.jpg)
+**Image** : [abs-wood-chop-v5-face-poitrine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/9a046fb/yanis-fitness-evolution/docs/videos-3d/abs-wood-chop-v5-face-poitrine.jpg)
 **Fiche** : « Wood chop poulie haute » — 3 séries de 10 à 12.
 
 ```
