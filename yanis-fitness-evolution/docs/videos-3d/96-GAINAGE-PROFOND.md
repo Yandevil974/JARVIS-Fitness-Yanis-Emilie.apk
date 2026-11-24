@@ -27,7 +27,7 @@ Soit **6 vidéos pour 8 fiches**, en respectant la règle de réutilisation : un
 
 ## 1. Dead bug
 
-**Image** : [core-dead-bug-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/core-dead-bug-v1.jpg)
+**Image** : [core-dead-bug-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/a234eee/yanis-fitness-evolution/docs/videos-3d/core-dead-bug-v1.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, une répétition complète de dead bug.
@@ -42,7 +42,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 2. Gainage latéral
 
-**Image** : [core-gainage-lateral-v3.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/core-gainage-lateral-v3.jpg)
+**Image** : [core-gainage-lateral-v3.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/a234eee/yanis-fitness-evolution/docs/videos-3d/core-gainage-lateral-v3.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, maintien statique de gainage latéral sur avant-bras.
@@ -56,7 +56,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 3. Bird dog
 
-**Image** : [core-bird-dog-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/core-bird-dog-v1.jpg)
+**Image** : [core-bird-dog-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/a234eee/yanis-fitness-evolution/docs/videos-3d/core-bird-dog-v1.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, une répétition complète de bird dog.
@@ -71,7 +71,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 4. Mountain climbers
 
-**Image** : [core-mountain-climbers-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/core-mountain-climbers-v1.jpg)
+**Image** : [core-mountain-climbers-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/a234eee/yanis-fitness-evolution/docs/videos-3d/core-mountain-climbers-v1.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, quelques répétitions de mountain climbers.
@@ -86,7 +86,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 5. Pallof press (poulie et élastique)
 
-**Image** : [core-pallof-press-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/core-pallof-press-v1.jpg)
+**Image** : [core-pallof-press-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/a234eee/yanis-fitness-evolution/docs/videos-3d/core-pallof-press-v1.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, une répétition complète de pallof press à la poulie.
