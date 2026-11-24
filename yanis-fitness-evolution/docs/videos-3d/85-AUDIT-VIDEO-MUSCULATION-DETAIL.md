@@ -2,9 +2,9 @@
 
 État audité : registre de la branche au moment de la génération. Les nouvelles associations depuis l’APK 1.21.0 ne sont pas encore dans cet APK. Une fiche commune aux deux profils n’est comptée qu’une fois.
 
-**203 fiches : 159 avec une vidéo raccordée, 44 sans vidéo raccordée.**
-Les 159 fiches utilisent 137 chemins MP4, correspondant à 126 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
-Sur les fiches raccordées : 149 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
+**203 fiches : 167 avec une vidéo raccordée, 36 sans vidéo raccordée.**
+Les 167 fiches utilisent 141 chemins MP4, correspondant à 130 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
+Sur les fiches raccordées : 157 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
 
 Contrôle automatisé : existence et taille non nulle, empreinte identique entre public et release pour chaque vidéo, affiche et GIF des 203 fiches ; présence des notices et voix pour les vidéos accompagnées. Résultat : **0 anomalie(s)** de ce type. Tous les GIF de ces fiches sont présents.
 Ce contrôle **ne revoit pas manuellement toutes les images de chaque vidéo** et ne certifie pas chaque geste, cadrage ou lecture sur téléphone. Une vidéo non raccordée ne signifie pas forcément qu’aucune vidéo compatible n’existe déjà ailleurs. Les consignes et les décisions de Yanis restent prioritaires.
@@ -23,7 +23,7 @@ Le roumain barre est conservé tel quel sur décision de Yanis, malgré la tête
 | Biceps | 20 | 0 | 20 |
 | Triceps | 13 | 4 | 17 |
 | Abdominaux | 9 | 6 | 15 |
-| Gainage profond | 0 | 8 | 8 |
+| Gainage profond | 8 | 0 | 8 |
 | Lombaires | 0 | 1 | 1 |
 | Fessiers | 11 | 3 | 14 |
 | Moyen fessier | 0 | 9 | 9 |
@@ -184,6 +184,19 @@ Chaque nom ci-dessous est une fiche. Le fichier indiqué peut être réutilisé 
 | Ab wheel (roulette) | Elite | [ab-wheel-roulette.mp4](../../public/videos/ab-wheel-roulette.mp4) | Accompagnée |
 | Wood chop poulie haute | Elite | [wood-chop-poulie-haute.mp4](../../public/videos/wood-chop-poulie-haute.mp4) | Accompagnée |
 
+### Gainage profond — 8/8
+
+| Exercice | Profils | Vidéo | Statut |
+|---|---|---|---|
+| Dead bug | Émilie | [dead-bug.mp4](../../public/videos/dead-bug.mp4) | Accompagnée |
+| Pallof press à l'élastique | Émilie | [wood-chop-poulie-haute.mp4](../../public/videos/wood-chop-poulie-haute.mp4) | Accompagnée |
+| Bird dog | Émilie | [bird-dog.mp4](../../public/videos/bird-dog.mp4) | Accompagnée |
+| Gainage latéral | Émilie | [gainage-lateral.mp4](../../public/videos/gainage-lateral.mp4) | Accompagnée |
+| Mountain climbers | Émilie | [mountain-climbers.mp4](../../public/videos/mountain-climbers.mp4) | Accompagnée |
+| Dead bug avec rotation | Émilie | [dead-bug.mp4](../../public/videos/dead-bug.mp4) | Accompagnée |
+| Pallof press à la poulie | Émilie | [wood-chop-poulie-haute.mp4](../../public/videos/wood-chop-poulie-haute.mp4) | Accompagnée |
+| Gainage latéral dynamique | Émilie | [gainage-lateral.mp4](../../public/videos/gainage-lateral.mp4) | Accompagnée |
+
 ### Fessiers — 11/14
 
 | Exercice | Profils | Vidéo | Statut |
@@ -273,17 +286,6 @@ Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par 
 - Circuit gainage (planche + latéral + bird dog)
 - Circuit abdominaux (crunch + relevés + gainage)
 - Relevés de jambes allongé
-
-### Gainage profond — 8
-
-- Dead bug
-- Pallof press à l'élastique
-- Bird dog
-- Gainage latéral
-- Mountain climbers
-- Dead bug avec rotation
-- Pallof press à la poulie
-- Gainage latéral dynamique
 
 ### Lombaires — 1
 

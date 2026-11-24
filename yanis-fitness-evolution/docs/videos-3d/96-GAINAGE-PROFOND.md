@@ -1,21 +1,21 @@
 # Gainage profond — huit fiches, six vidéos
 
-Module « Gainage profond » (transverse et sangle profonde) : **8 fiches, 0 vidéo** au départ. Deux des mouvements servent aussi aux circuits d'abdominaux. Les références ci-dessous sont à montrer avant génération ; aucune vidéo de ce lot n'est encore reçue.
+**Mise à jour du 23/11/2026 : module couvert, 8 fiches sur 8.** Quatre clips reçus et intégrés en `coached` — `dead-bug.mp4` (`991bb935…`), `gainage-lateral.mp4` (`fd90ec80…`), `bird-dog.mp4` (`f60b5aba…`), `mountain-climbers.mp4` (`f9744671…`). Yanis a demandé de **ne pas garder de vidéo pallof propre** et de réutiliser le clip poulie déjà accepté (`wood-chop-poulie-haute.mp4`, `f3c0232b…`) : c'est appliqué, avec une réserve écrite sur les deux fiches pallof. Les clips n'ont pas été jugés parfaits : les réserves sont décrites plus bas.
 
 ## Plan de couverture
 
 | Fiche | Prescription | Vidéo prévue |
 |---|---|---|
-| Dead bug | 2 × 10/côté | `core-dead-bug` |
-| Dead bug avec rotation | 3 × 12/côté | réutilise `core-dead-bug`, variante à ajouter ensuite si besoin |
-| Pallof press à l'élastique | 2 × 12/côté | `core-pallof-press`, même geste sans machine |
-| Pallof press à la poulie | 2 × 12/côté | `core-pallof-press` |
-| Bird dog | 3 × 10/côté | `core-bird-dog` |
-| Gainage latéral | 2 × 30 s/côté | `core-gainage-lateral` |
+| Dead bug | 2 × 10/côté | ✅ `dead-bug.mp4` |
+| Dead bug avec rotation | 3 × 12/côté | réutilise `dead-bug.mp4`, réserve : rotation non montrée |
+| Pallof press à l'élastique | 2 × 12/côté | réutilise `wood-chop-poulie-haute.mp4`, réserve : poulie et non élastique |
+| Pallof press à la poulie | 2 × 12/côté | réutilise `wood-chop-poulie-haute.mp4`, réserve : tirage en arc, pas poussée |
+| Bird dog | 3 × 10/côté | ✅ `bird-dog.mp4` |
+| Gainage latéral | 2 × 30 s/côté | ✅ `gainage-lateral.mp4` |
 | Gainage latéral dynamique | 3 × 30 s/côté | réutilise `core-gainage-lateral`, variante à ajouter ensuite |
-| Mountain climbers | 3 × 30 s | `core-mountain-climbers` |
+| Mountain climbers | 3 × 30 s | ✅ `mountain-climbers.mp4` |
 
-Soit **6 vidéos pour 8 fiches**, en respectant la règle de réutilisation : un même geste partage un clip, une variante réelle reçoit le sien.
+**4 clips reçus pour 8 fiches.** Deux variantes (dead bug avec rotation, gainage latéral dynamique) et les deux fiches pallof utilisent un clip voisin avec une réserve écrite explicite : les clips reçus ne montrent pas exactement le geste de la consigne. Yanis a demandé de garder le clip poulie déjà accepté pour le pallof plutôt que d'en générer un nouveau.
 
 ## Réserves de référence
 
@@ -112,6 +112,16 @@ La version **à l'élastique** reprend la même description, en remplaçant la c
 - **Gainage latéral dynamique** (3 × 30 s/côté) : le maintien devient un mouvement de hanches contrôlé. Même remarque.
 
 Ne pas faire passer une variante pour le mouvement de base sans réserve : c'est la règle appliquée aux triceps et aux ischios.
+
+## Réserves constatées sur les quatre clips reçus
+
+Yanis les a jugés « pas top ». Voici ce qui a été relevé et inscrit dans chaque fiche :
+
+- **Dead bug** : rythme rapide, bras et jambes qui descendent très près du sol. Consigne : ralentir et réduire l'amplitude, bas du dos collé.
+- **Gainage latéral** : appui sur la **main, bras tendu**, alors que la consigne demande l'**avant-bras**. On garde le clip, la consigne et la voix corrigent explicitement.
+- **Bird dog** : la jambe monte un peu haut et le dos se creuse en fin de geste. Consigne : jambe à hauteur de hanche.
+- **Mountain climbers** : genou ramené très loin sous la poitrine, hanches qui montent. Consigne : garder les hanches au niveau de la planche.
+- **Pallof press** : réutilise le clip poulie du wood chop. La notice précise que la vidéo montre un tirage en arc de cercle, pas une poussée droit devant, et que le buste ne doit pas tourner.
 
 ## Couverture des circuits d'abdominaux
 

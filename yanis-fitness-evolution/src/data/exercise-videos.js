@@ -238,6 +238,86 @@ export const EXERCISE_VIDEOS = {
       spoken: "Wood chop à la poulie. Debout, pieds largeur d'épaules, genoux légèrement fléchis. Deux mains jointes sur la poignée, bras tendus, à hauteur de poitrine. Le bassin reste face à la machine. En expirant, tirez la poignée en arc de cercle de la gauche vers la droite devant le corps, en tournant le buste d'environ quatre-vingt-dix degrés. Les bras restent tendus et ne descendent pas le long du corps : c'est le buste qui tourne. Revenez lentement par la même rotation inverse, sans élan. Trois séries de dix à douze. Arrêtez en cas de douleur.",
     },
   },
+  "dead-bug": {
+    src: "/videos/dead-bug.mp4", poster: "/videos/posters/dead-bug.jpg", label: "Vidéo IA · Dead bug", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Bas du dos collé au sol.",
+      handCue: "Bras tendus vers le plafond : c'est un bras qui descend, jamais les deux.",
+      movementCue: "Allongé sur le dos, bras verticaux, jambes fléchies à 90 degrés : descendez lentement un bras tendu derrière la tête et la jambe opposée, sans décoller le bas du dos, puis revenez et changez de côté.",
+      notice: "Sur la vidéo, le bras et la jambe descendent près du sol et le rythme est rapide. Ralentissez et réduisez l'amplitude : le bas du dos doit rester collé au tapis pendant tout le mouvement.",
+      spoken: "Dead bug. Allongez-vous sur le dos. Les deux bras tendus vers le plafond, perpendiculaires au sol. Les deux jambes fléchies à quatre-vingt-dix degrés, genoux au-dessus des hanches. Le bas du dos reste collé au sol. En expirant, descendez lentement un bras tendu derrière la tête et la jambe opposée, en les rapprochant du sol sans les toucher. Le bas du dos ne doit jamais se creuser. Revenez, puis refaites de l'autre côté. La vidéo montre un rythme rapide : ralentissez et réduisez l'amplitude. Deux séries de dix par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "dead-bug-avec-rotation": {
+    src: "/videos/dead-bug.mp4", poster: "/videos/posters/dead-bug.jpg", label: "Vidéo IA · Dead bug (base du mouvement)", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "La vidéo montre le dead bug classique.",
+      handCue: "Même position de départ que le dead bug : bras vers le plafond, jambes à 90 degrés.",
+      movementCue: "La différence est la rotation : en tendant le bras, tournez doucement le haut du dos du côté du bras tendu, puis revenez au centre avant de changer de côté.",
+      notice: "La vidéo ne montre pas la rotation : elle illustre la position et le mouvement de base du dead bug. Suivez la consigne écrite pour la rotation, sans élan, et tournez uniquement le haut du dos, jamais le bassin.",
+      spoken: "Dead bug avec rotation. La position de départ est celle du dead bug : sur le dos, bras tendus vers le plafond, jambes fléchies à quatre-vingt-dix degrés, bas du dos collé au sol. La différence est la rotation. En tendant le bras derrière la tête, tournez doucement le haut du dos du côté du bras tendu, sans décoller le bas du dos et sans tourner le bassin. Revenez au centre, puis changez de côté. La vidéo montre seulement le mouvement de base : suivez la consigne écrite pour la rotation. Trois séries de douze par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "gainage-lateral": {
+    src: "/videos/gainage-lateral.mp4", poster: "/videos/posters/gainage-lateral.jpg", label: "Vidéo IA · Gainage latéral", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Avant-bras au sol, hanches hautes.",
+      handCue: "Coude directement sous l'épaule, avant-bras à plat : le bras d'appui est plié, pas tendu.",
+      movementCue: "Hanches décollées, corps aligné de l'épaule à la cheville, bras libre vers le plafond : tenez la position sans laisser les hanches descendre.",
+      notice: "La vidéo montre un appui sur la main, bras tendu, et non sur l'avant-bras comme dans la consigne écrite. Suivez la consigne : posez l'avant-bras au sol, coude sous l'épaule, et gardez les hanches hautes.",
+      spoken: "Gainage latéral. Allongez-vous sur le côté. Appui sur le coude et l'avant-bras, le coude directement sous l'épaule, la main à plat devant. Le bras d'appui est plié, jamais tendu. Décollez les hanches : le corps est aligné de l'épaule à la cheville, les deux pieds l'un sur l'autre. Le bras libre est tendu vers le plafond. Tenez la position sans laisser les hanches descendre. La vidéo montre un appui sur la main tendue : suivez la consigne et posez l'avant-bras. Deux séries de trente secondes par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "gainage-lateral-dynamique": {
+    src: "/videos/gainage-lateral.mp4", poster: "/videos/posters/gainage-lateral.jpg", label: "Vidéo IA · Gainage latéral (base du mouvement)", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "La vidéo montre le maintien, pas la variante.",
+      handCue: "Même appui que le gainage latéral : avant-bras au sol, coude sous l'épaule.",
+      movementCue: "La différence est le mouvement : montez et descendez les hanches lentement et sur une petite amplitude, sans poser le bassin et sans tourner le buste.",
+      notice: "La vidéo illustre le maintien statique, pas la version dynamique. Suivez la consigne écrite : petite amplitude, tempo lent, bassin qui ne touche pas le sol.",
+      spoken: "Gainage latéral dynamique. La position est celle du gainage latéral : appui sur l'avant-bras, coude sous l'épaule, corps aligné, bras libre vers le plafond. La différence est le mouvement : montez et descendez lentement les hanches sur une petite amplitude, sans poser le bassin au sol et sans tourner le buste. La vidéo montre le maintien statique : suivez la consigne écrite pour le mouvement. Trois séries de trente secondes par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "bird-dog": {
+    src: "/videos/bird-dog.mp4", poster: "/videos/posters/bird-dog.jpg", label: "Vidéo IA · Bird dog", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Bras et jambe opposés, dos plat.",
+      handCue: "Deux mains à plat sous les épaules, deux genoux au sol écartés d'une largeur de bassin.",
+      movementCue: "Tendez en même temps la jambe droite en arrière et le bras gauche en avant, à l'horizontale, sans creuser le dos ; puis changez de côté.",
+      notice: "Sur la vidéo, la jambe tendue monte un peu haut et le dos se creuse légèrement à la fin du geste. Arrêtez la jambe à hauteur de hanche et gardez le dos plat.",
+      spoken: "Bird dog. À quatre pattes, deux genoux au sol écartés d'une largeur de bassin, deux mains à plat sous les épaules, dos plat. En expirant, tendez en même temps la jambe droite en arrière et le bras gauche en avant, à l'horizontale, jusqu'à former une ligne longue et droite. Ne creusez pas le dos. Revenez lentement, puis changez de côté. Sur la vidéo la jambe monte un peu haut : arrêtez-la à hauteur de hanche. Trois séries de dix par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "mountain-climbers": {
+    src: "/videos/mountain-climbers.mp4", poster: "/videos/posters/mountain-climbers.jpg", label: "Vidéo IA · Mountain climbers", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Le buste ne bouge pas.",
+      handCue: "Deux mains à plat sous les épaules, bras tendus : les mains ne bougent pas.",
+      movementCue: "Ramenez un genou sous la poitrine, reposez-le, puis l'autre, en alternance et à rythme régulier, sans faire monter les hanches.",
+      notice: "Sur la vidéo, le genou est ramené très loin sous la poitrine et les hanches montent un peu. Gardez le dos plat et les hanches à la même hauteur que dans la planche.",
+      spoken: "Mountain climbers. En planche haute, deux mains à plat au sol sous les épaules, bras tendus, corps aligné, dos plat, hanches ni hautes ni basses. Ramenez un genou sous la poitrine, pied décollé, puis reposez-le en arrière et ramenez l'autre genou, en alternance, à un rythme régulier. Le buste ne bouge pas, les mains ne bougent pas, les hanches ne montent pas. Sur la vidéo le genou vient très loin et les hanches montent : gardez-les au niveau de la planche. Trois séries de trente secondes. Arrêtez en cas de douleur.",
+    },
+  },
+  "pallof-press-a-la-poulie": {
+    src: "/videos/wood-chop-poulie-haute.mp4", poster: "/videos/posters/wood-chop-poulie-haute.jpg", label: "Vidéo IA · Pallof press (poulie)", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Le corps résiste, le buste ne tourne pas.",
+      handCue: "Deux mains sur la poignée devant le sternum, coudes serrés contre les côtes, buste face à la machine.",
+      movementCue: "Poussez la poignée droit devant jusqu'à tendre les bras, sans laisser les épaules ni le bassin tourner, puis ramenez lentement contre le sternum.",
+      notice: "La vidéo est celle de la poulie déjà validée pour le wood chop : on y voit un tirage en arc de cercle, pas une poussée droit devant. Utilisez-la comme repère de matériel et de hauteur de poulie, et suivez la consigne écrite : poussez devant, sans rotation du buste.",
+      spoken: "Pallof press à la poulie. Debout, pieds largeur d'épaules, genoux légèrement fléchis. Deux mains jointes sur la poignée devant le sternum, coudes pliés, serrés contre les côtes. Le buste reste face à la machine. En expirant, poussez la poignée droit devant jusqu'à tendre les bras, sans laisser les épaules ni le bassin tourner. Marquez un temps d'arrêt, puis ramenez lentement la poignée contre le sternum. La vidéo montre un tirage en arc de cercle, pas une poussée : servez-vous en pour le matériel et la hauteur de poulie, et suivez la consigne écrite. Deux séries de douze par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "pallof-press-a-l-elastique": {
+    src: "/videos/wood-chop-poulie-haute.mp4", poster: "/videos/posters/wood-chop-poulie-haute.jpg", label: "Vidéo IA · Pallof press (repère matériel)", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Même geste, avec un élastique.",
+      handCue: "Élastique fixé à hauteur de poitrine sur un montant, deux mains devant le sternum, coudes serrés.",
+      movementCue: "Poussez droit devant jusqu'à tendre les bras, sans rotation du buste, puis revenez lentement contre le sternum.",
+      notice: "La vidéo montre une poulie, pas un élastique : elle sert seulement de repère pour la position de résistance et la tenue du buste. Fixez l'élastique à hauteur de poitrine et gardez les épaules horizontales.",
+      spoken: "Pallof press à l'élastique. Fixez l'élastique à hauteur de poitrine sur un montant, tendu horizontalement. Debout de profil par rapport à l'élastique, pieds largeur d'épaules, deux mains devant le sternum, coudes serrés contre les côtes. Poussez droit devant jusqu'à tendre les bras, sans laisser le buste tourner et sans bouger les épaules. Revenez lentement. La vidéo montre une poulie et non un élastique : elle sert de repère pour la position de la résistance. Deux séries de douze par côté. Arrêtez en cas de douleur.",
+    },
+  },
   // Good morning reçu : démonstration accompagnée, GIF conservé en repli.
   "good-morning-debout": {
     src: "/videos/good-morning-debout.mp4", poster: "/videos/posters/good-morning-debout.jpg", label: "Vidéo IA · Good morning debout", status: "coached",
