@@ -27,7 +27,7 @@ Et pour la presse, il a fallu en plus **placer la caméra derrière et sur le c�
 
 ## 1. Mollets debout
 
-**Image** : [calves-debout-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-debout-v1.jpg)
+**Image** : [calves-debout-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/216aa82/yanis-fitness-evolution/docs/videos-3d/calves-debout-v1.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets debout au poids du corps.
@@ -42,7 +42,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 2. Mollets assis
 
-**Image** : [calves-assis-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-assis-v2.jpg)
+**Image** : [calves-assis-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/216aa82/yanis-fitness-evolution/docs/videos-3d/calves-assis-v2.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets assis.
@@ -57,7 +57,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 3. Mollets à la presse
 
-**Image** : [calves-presse-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-presse-v2.jpg)
+**Image** : [calves-presse-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/216aa82/yanis-fitness-evolution/docs/videos-3d/calves-presse-v2.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets à la presse à cuisses.
@@ -73,7 +73,7 @@ Aucun texte, aucune flèche, aucun collage.
 
 ## 4. Back extension 45°, prise snatch
 
-**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
+**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/216aa82/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
 
 Deux générations ont été nécessaires : la première plaçait mal le corps et allumait le haut du dos.
 
