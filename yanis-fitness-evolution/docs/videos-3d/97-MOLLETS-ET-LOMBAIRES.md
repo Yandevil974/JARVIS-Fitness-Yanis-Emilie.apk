@@ -4,7 +4,7 @@ Deux groupes encore à zéro : **mollets 5 fiches**, **lombaires 1 fiche**. Aucu
 
 **Corrections du 23/11/2026 (demandes de Yanis) :**
 
-1. « Mollets debout » : la première image avait les jambes à l'envers, puis la barre se détachait. Version retenue : **vue de dos**, barre sur les trapèzes, disques symétriques, **bloc bas sous l'avant des pieds**, talons sous le niveau du bloc.
+1. « Mollets debout » : la première image avait les jambes à l'envers, puis la barre se détachait. Version retenue, à la demande de Yanis : **cage à charges guidée** — machine Smith avec **barre sur deux rails verticaux** — vue de dos, barre sur les trapèzes, **bloc bas sous l'avant des pieds**, talons sous le niveau du bloc.
 2. « Mollets assis » : le générateur colorait le **tibia** en vue de profil. Version retenue : **vue de trois quarts arrière**, haltère sur les cuisses, bloc bas sous l'avant des pieds, talons dessous.
 3. « Mollets à la presse » : Yanis **n'a pas de presse**. La fiche est remplacée par une **variante unilatérale à l'haltère avec bloc**, documentée par les sites spécialisés. Version retenue : **vue de dos**, un seul pied sur le bloc, haltère d'un côté, bras libre pour l'équilibre.
 4. Les cinq fiches mollets étaient déclarées `bodyweight` dans la bibliothèque alors que les nouvelles vidéos montrent une barre, un haltère et un bloc. **Ce point reste à trancher avec Yanis**, je ne modifie pas les prescriptions sans accord.
@@ -54,15 +54,15 @@ La formulation qui corrige :
 
 Pour la presse et le mollet assis, il a fallu en plus **placer la caméra derrière et sur le côté**, sinon le relief arrière n'est pas lisible.
 
-## 1. Mollets debout — barre et bloc
+## 1. Mollets debout — cage guidée et bloc
 
-**Image** : [calves-debout-v4.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/9b616fa/yanis-fitness-evolution/docs/videos-3d/calves-debout-v4.jpg)
+**Image** : [calves-debout-v5-cage.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/9b616fa/yanis-fitness-evolution/docs/videos-3d/calves-debout-v5-cage.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets debout à la barre.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
-MATÉRIEL : une barre olympique chargée de deux gros disques noirs, posée sur le haut du dos, sur les trapèzes, derrière la nuque, jamais sur les cervicales. Les deux mains la tiennent de chaque côté, prise large.
+MATÉRIEL : une cage à charges guidée, machine Smith, avec une BARRE GUIDÉE SUR DEUX RAILS VERTICAUX bien visibles de chaque côté, fixés au bâti. La barre est chargée de deux gros disques noirs et coulisse sur les rails : elle ne peut pas se détacher. La barre est posée sur le haut du dos, sur les trapèzes, derrière la nuque, jamais sur les cervicales. Les deux mains la tiennent de chaque côté, prise large.
 SUPPORT : un bloc bas et large en bois, d'environ dix centimètres de haut, posé au sol. Le ballon des deux pieds est sur le bord du bloc, derrière les orteils ; les deux talons sont derrière le bord, dans le vide, et descendent sous le niveau du bloc.
 
 POSITION : VUE DE DOS, légèrement de trois quarts arrière, de sorte que l'arrière des deux jambes est tourné vers l'objectif. Debout, buste droit, jambes tendues, genoux tendus mais non verrouillés. Les jambes sont dans le sens normal, genoux vers l'avant, aucun membre retourné.
