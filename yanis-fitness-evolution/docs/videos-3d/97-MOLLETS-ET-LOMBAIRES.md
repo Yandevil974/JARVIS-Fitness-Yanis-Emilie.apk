@@ -66,7 +66,7 @@ Pour le mollet assis, il a fallu en plus **placer la caméra derrière et sur le
 
 ## 1. Mollets debout — cage guidée, pieds au sol
 
-**Image** : [calves-debout-v6-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/ff97287/yanis-fitness-evolution/docs/videos-3d/calves-debout-v6-sol.jpg)
+**Image** : [calves-debout-v6-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/calves-debout-v6-sol.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets debout à la barre.
@@ -84,7 +84,7 @@ Caméra fixe, vue de dos, athlète, cage, rails, barre et disques entièrement d
 
 ## 2. Mollets assis — haltère sur les cuisses, pieds au sol
 
-**Image** : [calves-assis-v7-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/ff97287/yanis-fitness-evolution/docs/videos-3d/calves-assis-v7-sol.jpg)
+**Image** : [calves-assis-v7-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/calves-assis-v7-sol.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets assis.
@@ -102,7 +102,7 @@ Caméra fixe en vue de trois quarts arrière, athlète, haltère et banc entièr
 
 ## 3. Mollets unilatéraux — haltère, pieds au sol (remplace la presse)
 
-**Image** : [calves-unilateral-v3-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/ff97287/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v3-sol.jpg)
+**Image** : [calves-unilateral-v3-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v3-sol.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets unilatéraux à l'haltère.
@@ -118,7 +118,7 @@ Caméra fixe, vue de dos légèrement de trois quarts arrière, athlète et halt
 
 ## 4. Back extension 45°, prise snatch
 
-**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/ff97287/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
+**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de back extension sur banc à 45 degrés.
