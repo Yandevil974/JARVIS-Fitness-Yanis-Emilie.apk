@@ -4,19 +4,19 @@ Deux groupes encore à zéro : **mollets 5 fiches**, **lombaires 1 fiche**. Aucu
 
 **Corrections du 23/11/2026 (demandes de Yanis) :**
 
-1. « Mollets debout » : la première image avait les jambes à l'envers, puis la barre se détachait. Version retenue : **cage à charges guidée** (machine Smith, barre sur deux rails verticaux) et **pieds à plat sur le sol**, sans bloc ni support surélevé.
-2. « Mollets assis » : le générateur colorait le **tibia** en vue de profil. Version retenue : **vue de trois quarts arrière**, haltère sur les cuisses, pieds à plat sur le sol.
-3. « Mollets à la presse » : Yanis **n'a pas de presse**. La fiche est remplacée par une **variante unilatérale à l'haltère**, documentée par les sites spécialisés. Version retenue : **vue de dos**, un seul pied à plat sur le sol, haltère d'un côté, bras libre pour l'équilibre.
+1. « Mollets debout » : la première image avait les jambes à l'envers, puis la barre se détachait. Version retenue : **machine à mollets debout**, avec **deux bandes d'épaules rembourrées** et une charge guidée sur rails. La cage guidée de la tentative précédente a été écartée : les disques de gauche partaient dans le vide.
+2. « Mollets assis » : le générateur colorait le **tibia** en vue de profil. Version retenue : **machine à mollets assis**, avec un **coussin rembourré posé en travers sur les deux cuisses**, relié au bras et à la charge. L'haltère de la tentative précédente ne servait à rien : il n'appuyait pas sur les genoux.
+3. « Mollets à la presse » : Yanis **n'a pas de presse**. La fiche est remplacée par une **variante unilatérale à l'haltère**, documentée par les sites spécialisés. Version retenue : un seul pied à plat au sol, **une main en appui sur une poignée de la colonne à poulie** pour l'équilibre, haltère dans l'autre main. La pose libre sans appui a été jugée moins bonne.
 4. Les cinq fiches mollets étaient déclarées `bodyweight` dans la bibliothèque alors que les nouvelles vidéos montrent une barre, un haltère. **Ce point reste à trancher avec Yanis**, je ne modifie pas les prescriptions sans accord.
 
 ## Plan de couverture
 
 | Fiche | Prescription | Vidéo prévue |
 |---|---|---|
-| Mollets debout | 4 × 8-10 | `calves-debout` (cage guidée, pieds au sol) |
+| Mollets debout | 4 × 8-10 | `calves-debout` (machine debout) |
 | Mollets debout unilatéraux | 3 × 15 | réutilise `calves-haltere-unilateral` |
-| Mollets unilatéraux | 4 × 10-12 | `calves-haltere-unilateral` (haltère, pieds au sol) |
-| Mollets assis | 3 × 15-20 | `calves-assis` (haltère sur les cuisses, pieds au sol) |
+| Mollets unilatéraux | 4 × 10-12 | `calves-haltere-unilateral` (haltère + appui) |
+| Mollets assis | 3 × 15-20 | `calves-assis` (machine assise) |
 | Mollets à la presse | 5 × 8-10 | **remplacée** par la variante unilatérale à l'haltère, faute de presse |
 | Back extension 45°, prise snatch | 3 × 10-12 | `lom-back-extension-45` |
 
@@ -42,6 +42,14 @@ Technique de référence, commune à toutes les sources consultées
 - Assis = **genoux à 90 degrés**, ce qui cible le soléaire ; debout = gastrocnémien.
 - Sans machine : **haltère dans la main libre, une jambe à la fois**, ou barre sur le dos comme pour un squat.
 
+## Corrections du 25/11/2026 (deuxième passage)
+
+Yanis a écarté les trois images précédentes :
+
+- **Debout** : la cage guidée n'était pas bonne, « le poids à gauche est dans le vide ». Remplacée par une **machine à mollets debout** avec bandes d'épaules et charge guidée.
+- **Assis** : « les haltères ne servent à rien comme ça, il faut quelque chose sur les genoux ». Remplacé par une **machine à mollets assis** avec un coussin sur les cuisses.
+- **Unilatéral** : « la pose est bien mais avec un support ou une machine pour que l'athlète tienne, ce serait mieux ». Ajout d'un **appui de la main sur une poignée de colonne à poulie**.
+
 ## Abandon du bloc surélevé — décision du 25/11/2026
 
 Yanis a jugé les images à bloc « incohérentes, pleines de défauts » : pieds tordus, pieds qui ne reposent pas sur le support. Constat technique : **le générateur d'image ne sait pas placer un talon dans le vide sous un bloc sans déformer la cheville et le pied**. Quatre tentatives ont échoué, y compris en changeant d'angle.
@@ -64,56 +72,65 @@ La formulation qui corrige :
 
 Pour le mollet assis, il a fallu en plus **placer la caméra derrière et sur le côté**, sinon le relief arrière n'est pas lisible.
 
-## 1. Mollets debout — cage guidée, pieds au sol
+## 1. Mollets debout — machine à bandes d'épaules
 
-**Image** : [calves-debout-v6-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/calves-debout-v6-sol.jpg)
+**Image** : [calves-debout-v7-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-debout-v7-machine.jpg)
 
 ```
-Vidéo anatomique 3D réaliste, deux répétitions de mollets debout à la barre.
+Vidéo anatomique 3D réaliste, deux répétitions de mollets debout sur machine.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
-MATÉRIEL : une cage à charges guidée, machine Smith, avec une BARRE GUIDÉE SUR DEUX RAILS VERTICAUX bien visibles de chaque côté, fixés au bâti. La barre est chargée de deux gros disques noirs et coulisse sur les rails : elle ne peut pas se détacher. La barre est posée sur le haut du dos, sur les trapèzes, derrière la nuque, jamais sur les cervicales. Les deux mains la tiennent de chaque côté, prise large.
-SUPPORT : AUCUN support surélevé, aucun bloc, aucune marche. Les deux pieds sont posés À PLAT SUR LE SOL, côte à côte, écartés d'une largeur de bassin, orteils vers l'avant. Les deux chaussures sont entièrement au sol, talons au sol, pieds symétriques et anatomiquement corrects.
+MATÉRIEL : une machine à mollets debout, complète et cohérente, entièrement dans le cadre : bâti métallique posé au sol, colonne verticale, charge guidée sur rails, et surtout DEUX BANDES D'ÉPAULES REMBOURRÉES posées sur le haut du dos, une de chaque côté, symétriques. Les deux mains tiennent les poignées latérales de la machine, devant les bandes. Aucun disque, aucun poids dans le vide : toute la charge est dans le rail de la machine, sous les bandes.
+SUPPORT : AUCUN bloc, aucune marche. Les deux pieds sont posés À PLAT SUR LE SOL, côte à côte, orteils vers l'avant, chaussures entièrement au sol et anatomiquement correctes.
 
-POSITION : VUE DE DOS, légèrement de trois quarts arrière, de sorte que l'arrière des deux jambes est tourné vers l'objectif et que l'on voit les deux rails verticaux. Debout, buste droit, jambes tendues, genoux tendus mais non verrouillés. Les jambes sont dans le sens normal, genoux vers l'avant, aucun membre retourné.
-Mouvement : partir talons au sol ; monter sur la pointe des deux pieds en poussant derrière le gros orteil, chevilles tendues, mollets contractés, le plus haut possible ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'aux talons au sol, une seconde d'arrêt en bas, sans rebond.
-Les genoux restent tendus et ne se plient pas : un genou qui plie déplace le travail sur les cuisses. Le buste ne bouge pas, la barre reste stable, aucun élan, aucun rebond.
-Coloration : les deux mollets, à l'arrière des jambes, en rouge-orangé lumineux ; pas de rouge sur les cuisses, les fessiers ni les bras.
-Caméra fixe, vue de dos, athlète, cage, rails, barre et disques entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
+POSITION : VUE DE TROIS QUARTS ARRIÈRE, de sorte que l'arrière des deux jambes est tourné vers l'objectif. Debout sous les bandes, buste droit, jambes tendues, genoux tendus mais non verrouillés.
+
+Mouvement : partir talons au sol ; monter sur la pointe des deux pieds en poussant derrière le gros orteil, chevilles tendues, mollets contractés, le plus haut possible, en soulevant les bandes avec les épaules ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'aux talons au sol, sans rebond.
+Les genoux restent tendus et ne se plient pas. Le buste ne bouge pas, aucun élan.
+
+Coloration : les deux mollets, à l'arrière des jambes, en rouge-orangé lumineux ; pas de rouge sur le tibia, les cuisses, les fessiers ni les bras.
+Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
 ```
 
-## 2. Mollets assis — haltère sur les cuisses, pieds au sol
 
-**Image** : [calves-assis-v7-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/calves-assis-v7-sol.jpg)
+## 2. Mollets assis — machine à coussin sur les cuisses
+
+**Image** : [calves-assis-v8-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-assis-v8-machine.jpg)
 
 ```
-Vidéo anatomique 3D réaliste, deux répétitions de mollets assis.
+Vidéo anatomique 3D réaliste, deux répétitions de mollets assis sur machine.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
-SCÈNE : l'athlète est ASSIS, cuisses horizontales, sur un banc de musculation noir. Buste vertical.
-MATÉRIEL : un haltère posé en travers sur le bas des cuisses, juste au-dessus des genoux, tenu à deux mains, paumes vers le bas.
-SUPPORT : AUCUN support surélevé. Les deux pieds sont posés À PLAT SUR LE SOL devant le banc, côte à côte, écartés d'une largeur de bassin, orteils vers l'avant, chaussures entièrement au sol et anatomiquement correctes.
+MATÉRIEL : une machine à mollets assis, complète et cohérente, entièrement dans le cadre : bâti métallique au sol, siège avec dossier, charge guidée sur rails verticaux, et surtout UN COUSSIN REMBOURRÉ HORIZONTAL posé en travers sur les deux cuisses, juste au-dessus des genoux, relié au bras de la machine et à la charge. La pression vient du coussin. Les deux mains tiennent les poignées latérales du siège. Aucun haltère, aucun poids dans le vide.
+SUPPORT : AUCUN bloc, aucune marche. Les deux pieds sont posés À PLAT SUR LE SOL devant la machine, côte à côte, orteils vers l'avant, chaussures entièrement au sol et anatomiquement correctes.
 
-Mouvement : partir talons au sol ; monter sur la pointe des deux pieds, chevilles tendues, mollets contractés ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'aux talons au sol, sans rebond.
-Les genoux restent pliés à quatre-vingt-dix degrés et ne bougent pas, les cuisses ne bougent pas, le buste reste droit, aucun rebond.
-Coloration : la SEULE zone allumée est le mollet, à l'arrière de la jambe sous le genou. Les fessiers ne sont PAS colorés, les cuisses, le tibia et les bras non plus.
-Caméra fixe en vue de trois quarts arrière, athlète, haltère et banc entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
+POSITION : VUE DE TROIS QUARTS ARRIÈRE. Assis, dos au dossier, cuisses horizontales, buste droit, genoux pliés à quatre-vingt-dix degrés et immobiles.
+
+Mouvement : partir talons au sol ; monter sur la pointe des deux pieds, chevilles tendues, mollets contractés, en soulevant le coussin avec les cuisses ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'aux talons au sol, sans rebond.
+Les genoux et les cuisses ne bougent pas, le buste reste droit.
+
+Coloration : les deux mollets, à l'arrière des jambes sous le genou, en rouge-orangé lumineux. Rien sur le tibia, rien sur les fessiers, les cuisses ou les bras.
+Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
 ```
 
-## 3. Mollets unilatéraux — haltère, pieds au sol (remplace la presse)
+## 3. Mollets unilatéraux — haltère avec appui (remplace la presse)
 
-**Image** : [calves-unilateral-v3-sol.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v3-sol.jpg)
+**Image** : [calves-unilateral-v4-appui.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v4-appui.jpg)
 
 ```
-Vidéo anatomique 3D réaliste, deux répétitions de mollets unilatéraux à l'haltère.
+Vidéo anatomique 3D réaliste, deux répétitions de mollets unilatéraux à l'haltère, avec appui.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
-MATÉRIEL ET SUPPORT : un haltère lourd tenu dans une main, bras tendu le long du corps. AUCUN support surélevé. L'athlète est debout sur UN SEUL pied, le pied d'appui À PLAT SUR LE SOL, chaussure entièrement au sol, anatomiquement correcte. L'autre jambe est fléchie et décollée derrière, pied en l'air, sans appui. Le bras libre est écarté sur le côté pour l'équilibre.
+MATÉRIEL : une colonne à poulie verticale, complète et posée au sol, avec sa poulie en haut et son empilement de poids en bas ; une poignée fixée à la colonne à hauteur de poitrine. D'une main, l'athlète tient fermement cette poignée, bras tendu, pour s'équilibrer. De l'autre main, il tient un haltère lourd, bras tendu le long du corps.
+SUPPORT : AUCUN bloc, aucune marche. Le pied d'appui est À PLAT SUR LE SOL, chaussure entièrement au sol et anatomiquement correcte, orteils vers l'avant. L'autre jambe est fléchie derrière, pied décollé, sans appui.
 
-Mouvement : partir talon au sol ; monter sur la pointe du pied d'appui, cheville tendue, mollet contracté, sans poser l'autre pied ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'au talon au sol. Deux répétitions sur la jambe gauche, puis deux sur la droite, avec le même haltère.
-Le genou d'appui reste légèrement souple et ne se plie pas, le buste reste droit, aucun élan, aucun appui de la main libre.
-Coloration : les deux mollets, à l'arrière des jambes, en rouge-orangé lumineux ; pas de rouge sur les cuisses, les fessiers ni les bras.
-Caméra fixe, vue de dos légèrement de trois quarts arrière, athlète et haltère entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
+POSITION : VUE DE TROIS QUARTS ARRIÈRE, de sorte que l'arrière des deux jambes est tourné vers l'objectif. Buste droit, jambe d'appui presque tendue, genou légèrement souple.
+
+Mouvement : partir talon au sol ; monter sur la pointe du pied d'appui, cheville tendue, mollet contracté, sans poser l'autre pied et sans tirer avec la main d'appui ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'au talon au sol. Deux répétitions sur la jambe gauche, puis deux sur la droite.
+Le genou d'appui ne se plie pas, la main d'appui ne tire pas, le buste reste droit.
+
+Coloration : les deux mollets, à l'arrière des jambes, en rouge-orangé lumineux ; pas de rouge sur le tibia, les cuisses, les fessiers ni les bras.
+Caméra fixe, athlète, haltère et colonne à poulie entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
 ```
 
 ## 4. Back extension 45°, prise snatch
@@ -138,5 +155,5 @@ Il restera les **quadriceps (6)**, les **triceps (4)**, les **fessiers (3)** et 
 
 ## Décisions en attente
 
-- **Équipement des fiches mollets** : barre guidée et haltère sont maintenant visibles dans les vidéos, alors que les fiches disent « sans matériel ». Faut-il corriger `equipment` en `barbell` / `dumbbell` ?
+- **Équipement des fiches mollets** : les machines, l'haltère et la poulie sont maintenant visibles dans les vidéos, alors que les fiches disent « sans matériel ». Faut-il corriger `equipment` en `barbell` / `dumbbell` ?
 - **Fiche « Mollets à la presse »** : faut-il la renommer « Mollets unilatéraux à l'haltère » pour que le nom corresponde à ce qui est montré, ou garder le nom et accepter la réserve ?
