@@ -135,7 +135,7 @@ Caméra fixe, athlète, haltère et colonne à poulie entièrement dans le cadre
 
 ## 4. Back extension 45°, prise snatch
 
-**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/7494f16/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
+**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de back extension sur banc à 45 degrés.
