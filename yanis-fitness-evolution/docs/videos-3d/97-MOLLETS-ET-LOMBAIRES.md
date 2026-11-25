@@ -74,7 +74,7 @@ Pour le mollet assis, il a fallu en plus **placer la caméra derrière et sur le
 
 ## 1. Mollets debout — machine à bandes d'épaules
 
-**Image** : [calves-debout-v7-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-debout-v7-machine.jpg)
+**Image** : [calves-debout-v7-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/calves-debout-v7-machine.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets debout sur machine.
@@ -95,7 +95,7 @@ Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous l
 
 ## 2. Mollets assis — machine à coussin sur les cuisses
 
-**Image** : [calves-assis-v8-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-assis-v8-machine.jpg)
+**Image** : [calves-assis-v8-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/calves-assis-v8-machine.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets assis sur machine.
@@ -115,7 +115,7 @@ Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous l
 
 ## 3. Mollets unilatéraux — haltère avec appui (remplace la presse)
 
-**Image** : [calves-unilateral-v4-appui.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v4-appui.jpg)
+**Image** : [calves-unilateral-v4-appui.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v4-appui.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets unilatéraux à l'haltère, avec appui.
