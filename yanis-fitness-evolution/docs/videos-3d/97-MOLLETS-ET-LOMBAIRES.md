@@ -4,88 +4,106 @@ Deux groupes encore à zéro : **mollets 5 fiches**, **lombaires 1 fiche**. Aucu
 
 **Corrections du 23/11/2026 (demandes de Yanis) :**
 
-1. « Mollets debout » : la première image avait les jambes à l'envers. Refait à la **barre chargée de disques**, avec un **caisson sous les pieds** pour montrer l'amplitude.
-2. « Mollets assis » : même principe, **barre chargée sur les cuisses**, assis sur un banc, caisson sous l'avant des pieds.
-3. « Mollets à la presse » : Yanis **n'a pas de presse**. La fiche est remplacée par une **variante unilatérale à l'haltère avec caisson**, prise sur les sites spécialisés. Voir les sources plus bas.
-4. Les cinq fiches mollets étaient déclarées `bodyweight` dans la bibliothèque alors que les nouvelles vidéos montrent une barre, un haltère et un caisson. **Ce point reste à trancher avec Yanis**, je ne modifie pas les prescriptions sans accord.
+1. « Mollets debout » : la première image avait les jambes à l'envers, puis la barre se détachait. Version retenue : **vue de dos**, barre sur les trapèzes, disques symétriques, **bloc bas sous l'avant des pieds**, talons sous le niveau du bloc.
+2. « Mollets assis » : le générateur colorait le **tibia** en vue de profil. Version retenue : **vue de trois quarts arrière**, haltère sur les cuisses, bloc bas sous l'avant des pieds, talons dessous.
+3. « Mollets à la presse » : Yanis **n'a pas de presse**. La fiche est remplacée par une **variante unilatérale à l'haltère avec bloc**, documentée par les sites spécialisés. Version retenue : **vue de dos**, un seul pied sur le bloc, haltère d'un côté, bras libre pour l'équilibre.
+4. Les cinq fiches mollets étaient déclarées `bodyweight` dans la bibliothèque alors que les nouvelles vidéos montrent une barre, un haltère et un bloc. **Ce point reste à trancher avec Yanis**, je ne modifie pas les prescriptions sans accord.
 
 ## Plan de couverture
 
 | Fiche | Prescription | Vidéo prévue |
 |---|---|---|
-| Mollets debout | 4 × 8-10 | `calves-debout` (barre + caisson) |
+| Mollets debout | 4 × 8-10 | `calves-debout` (barre + bloc) |
 | Mollets debout unilatéraux | 3 × 15 | réutilise `calves-haltere-unilateral` |
-| Mollets unilatéraux | 4 × 10-12 | `calves-haltere-unilateral` (haltère + caisson) |
-| Mollets assis | 3 × 15-20 | `calves-assis` (barre sur les cuisses + caisson) |
+| Mollets unilatéraux | 4 × 10-12 | `calves-haltere-unilateral` (haltère + bloc) |
+| Mollets assis | 3 × 15-20 | `calves-assis` (haltère sur les cuisses + bloc) |
 | Mollets à la presse | 5 × 8-10 | **remplacée** par la variante unilatérale à l'haltère, faute de presse |
 | Back extension 45°, prise snatch | 3 × 10-12 | `lom-back-extension-45` |
 
 ## Pourquoi remplacer la presse
 
-Yanis n'a pas de presse à cuisses. Les sources consultées convergent : sans machine, le mollet se travaille debout sur un support surélevé, avec un haltère dans une main et une seule jambe à la fois, ce qui augmente la charge par jambe et sollicite l'équilibre. Le caisson permet de descendre le talon sous le niveau de l'avant-pied et donc de trava
-
-iller toute l'amplitude.
+Yanis n'a pas de presse à cuisses. Les sources consultées convergent : sans machine, le mollet se travaille debout sur un support surélevé, avec un haltère dans une main et une seule jambe à la fois, ce qui augmente la charge par jambe et sollicite l'équilibre. Le bloc surélevé permet de descendre le talon sous le niveau de l'avant-pied et donc de travailler toute l'amplitude.
 
 Sources : [Standing Calf Raise Alternatives at Home](https://www.repbro.app/blog/ex-standing-calf-raise-home-alt), [Barbell Standing Leg Calf Raise Alternatives](https://fitnessvolt.com/substitute-exercises/barbell-standing-leg-calf-raise-alternatives/), [Standing Dumbbell One-Leg Calf Raise](https://fitnessvolt.com/23963/standing-dumbbell-one-leg-calf-raise/), [Dumbbell Calf Raises](https://dumbbellsdirect.com/blogs/dumbbell-exercises-specific-movements/dumbbell-calf-raises).
 
-## Point d'attention : la couleur du mollet
+## Ce que disent les sources, et ce qui a été appliqué
 
-Le générateur colorait soit **l'avant du tibia**, soit **les fessiers**. Deux formulations corrigent :
+Technique de référence, commune à toutes les sources consultées
+([HermQ](https://hermq.com/articles/standing-calf-raise-easy-guide-tips-benefits-video-demo/),
+[1RM.fit](https://1rm.fit/exercises/barbell_standing_calf_raise),
+[ExRx](https://exrx.net/WeightExercises/Gastrocnemius/BBStandingCalfRaise),
+[Gravitus](https://gravitus.com/guides/exercises/standing-calf-raise/),
+[Fitness Volt](https://fitnessvolt.com/23963/standing-dumbbell-one-leg-calf-raise/)) :
+
+- **Ballon des pieds sur le bord** d'un support, **talons dans le vide**, et surtout **talons qui descendent SOUS le niveau du support** : c'est là que se trouve l'étirement, donc le travail.
+- **Genoux tendus, jamais pliés ni verrouillés** : genou plié = travail déplacé sur le soléaire et les quadriceps.
+- **Montée verticale**, appui derrière le gros orteil, pas de roulis sur le petit orteil.
+- **Une seconde d'arrêt en haut**, **descente en 2 à 3 secondes**, **pas de rebond** : le rebond fait travailler le tendon d'Achille au lieu du muscle.
+- Assis = **genoux à 90 degrés**, ce qui cible le soléaire ; debout = gastrocnémien.
+- Sans machine : **haltère dans la main libre, une jambe à la fois**, ou barre sur le dos comme pour un squat.
+
+Trois erreurs ont été constatées sur mes images successives et corrigées :
+
+1. **Jambes à l'envers** sur la première version.
+2. **Talons posés sur le bloc** au lieu de pendre dessous : cela supprime tout l'intérêt du support.
+3. **Zone colorée sur le tibia ou sur les fessiers** au lieu du mollet.
+
+La formulation qui corrige :
 
 > Le mollet est le muscle charnu à l'ARRIÈRE de la jambe, entre le genou et le talon, du côté du tendon d'Achille. La zone ne doit jamais être sur le tibia ni sur l'avant de la jambe. **Les fessiers, les cuisses et les bras ne sont pas colorés.**
 
 Pour la presse et le mollet assis, il a fallu en plus **placer la caméra derrière et sur le côté**, sinon le relief arrière n'est pas lisible.
 
-## 1. Mollets debout — barre et caisson
+## 1. Mollets debout — barre et bloc
 
-**Image** : [calves-debout-v2-barre.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21f8b09/yanis-fitness-evolution/docs/videos-3d/calves-debout-v2-barre.jpg)
+**Image** : [calves-debout-v4.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21f8b09/yanis-fitness-evolution/docs/videos-3d/calves-debout-v4.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets debout à la barre.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
 MATÉRIEL : une barre olympique chargée de deux gros disques noirs, posée sur le haut du dos, sur les trapèzes, derrière la nuque, jamais sur les cervicales. Les deux mains la tiennent de chaque côté, prise large.
-SUPPORT : un caisson de musculation bas et stable, d'environ quinze centimètres de haut, posé au sol. Les deux avant-pieds sont sur le bord du caisson, les deux talons dans le vide derrière le bord.
+SUPPORT : un bloc bas et large en bois, d'environ dix centimètres de haut, posé au sol. Le ballon des deux pieds est sur le bord du bloc, derrière les orteils ; les deux talons sont derrière le bord, dans le vide, et descendent sous le niveau du bloc.
 
-POSITION : debout, corps entier face à la caméra en vue de trois quarts arrière-latéral. Les jambes sont dans le sens normal, genoux vers l'avant, pieds vers l'avant, aucun membre retourné. Buste droit, regards devant.
-Mouvement : partir talons bas, sous le niveau du caisson ; monter sur la pointe des deux pieds en décollant les talons le plus haut possible, chevilles tendues, mollets contractés ; marquer un temps d'arrêt ; redescendre lentement en laissant les talons descendre sous le bord du caisson, sans rebond.
-Les genoux restent légèrement souples mais ne se plient pas, le buste ne bouge pas, la barre reste stable, aucun élan.
+POSITION : VUE DE DOS, légèrement de trois quarts arrière, de sorte que l'arrière des deux jambes est tourné vers l'objectif. Debout, buste droit, jambes tendues, genoux tendus mais non verrouillés. Les jambes sont dans le sens normal, genoux vers l'avant, aucun membre retourné.
+Mouvement : partir talons bas, sous le niveau du bloc, chevilles fléchies et mollets étirés, avec une seconde d'arrêt sans rebond ; monter sur la pointe des deux pieds en poussant derrière le gros orteil, chevilles tendues, mollets contractés, le plus haut possible ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'aux talons sous le bord du bloc.
+Les genoux restent tendus et ne se plient pas : un genou qui plie déplace le travail sur les cuisses. Le buste ne bouge pas, la barre reste stable, aucun élan, aucun rebond.
 Coloration : les deux mollets, à l'arrière des jambes, en rouge-orangé lumineux ; pas de rouge sur les cuisses, les fessiers ni les bras.
-Caméra fixe, athlète, barre, disques et caisson entièrement dans le cadre. Aucun texte, aucune flèche, aucun collage.
+Caméra fixe, vue de dos, athlète, barre, disques et bloc entièrement dans le cadre. Aucun texte, aucune flèche, aucun collage.
 ```
 
-## 2. Mollets assis — barre sur les cuisses et caisson
+## 2. Mollets assis — haltère sur les cuisses et bloc
 
-**Image** : [calves-assis-v4-barre.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21f8b09/yanis-fitness-evolution/docs/videos-3d/calves-assis-v4-barre.jpg)
+**Image** : [calves-assis-v6.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21f8b09/yanis-fitness-evolution/docs/videos-3d/calves-assis-v6.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets assis à la barre.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
 SCÈNE : l'athlète est ASSIS, cuisses horizontales, sur un banc de musculation noir. Buste vertical.
-MATÉRIEL : une barre chargée de deux gros disques noirs repose en travers sur le bas des cuisses, juste au-dessus des genoux, tenue à deux mains, paumes vers le bas.
-SUPPORT : les deux avant-pieds sur un caisson bas en bois, devant le banc ; les deux talons dans le vide derrière le bord.
+MATÉRIEL : un haltère posé en travers sur le bas des cuisses, juste au-dessus des genoux, tenu à deux mains, paumes vers le bas.
+SUPPORT : un bloc bas en bois d'environ dix centimètres de haut, devant le banc ; le ballon des deux pieds sur le bord, les deux talons dans le vide derrière, descendus sous le niveau du bloc.
 
-Mouvement : partir talons bas ; monter sur la pointe des deux pieds en décollant les talons, chevilles tendues, mollets contractés ; temps d'arrêt en haut ; redescendre lentement, talons sous le bord du caisson, sans rebond.
-Les genoux restent pliés à quatre-vingt-dix degrés et ne bougent pas, les cuisses ne bougent pas, le buste reste droit.
+Mouvement : partir talons bas, sous le niveau du bloc, chevilles fléchies, une seconde d'arrêt sans rebond ; monter sur la pointe des deux pieds, chevilles tendues, mollets contractés ; tenir une seconde en haut ; redescendre en deux à trois secondes.
+Les genoux restent pliés à quatre-vingt-dix degrés et ne bougent pas, les cuisses ne bougent pas, le buste reste droit, aucun rebond.
 Coloration : la SEULE zone allumée est le mollet, à l'arrière de la jambe sous le genou. Les fessiers ne sont PAS colorés, les cuisses, le tibia et les bras non plus.
-Caméra fixe de profil trois quarts arrière, athlète, barre, disques, banc et caisson entièrement dans le cadre. Aucun texte, aucune flèche, aucun collage.
+Caméra fixe en vue de trois quarts arrière, athlète, haltère, banc et bloc entièrement dans le cadre. Aucun texte, aucune flèche, aucun collage.
 ```
 
-## 3. Mollets unilatéraux — haltère et caisson (remplace la presse)
+## 3. Mollets unilatéraux — haltère et bloc (remplace la presse)
 
-**Image** : [calves-haltere-unilateral-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21f8b09/yanis-fitness-evolution/docs/videos-3d/calves-haltere-unilateral-v1.jpg)
+**Image** : [calves-unilateral-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/21f8b09/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v2.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets unilatéraux à l'haltère.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
-MATÉRIEL ET SUPPORT : un haltère lourd tenu dans une main, bras tendu le long du corps ; un caisson de musculation bas et stable au sol. L'athlète est debout sur UN SEUL pied, l'avant-pied sur le bord du caisson, le talon dans le vide derrière le bord. L'autre jambe est fléchie et décollée derrière, pied en l'air, sans appui. Le bras libre est tendu sur le côté pour l'équilibre.
+MATÉRIEL ET SUPPORT : un haltère lourd tenu dans une main, bras tendu le long du corps ; un bloc bas en bois au sol. L'athlète est debout sur UN SEUL pied, le ballon du pied sur le bord du bloc, le talon dans le vide, descendu sous le niveau du bloc. L'autre jambe est fléchie et décollée derrière, pied en l'air, sans appui. Le bras libre est écarté sur le côté pour l'équilibre.
 
-Mouvement : partir talon bas, sous le niveau du caisson ; monter sur la pointe du pied d'appui, cheville tendue, mollet contracté, sans poser l'autre pied ; temps d'arrêt ; redescendre lentement, talon sous le bord du caisson, sans rebond. Deux répétitions sur la jambe gauche, puis deux sur la droite, avec le même haltère.
+Mouvement : partir talon bas, sous le niveau du bloc, une seconde d'arrêt sans rebond ; monter sur la pointe du pied d'appui, cheville tendue, mollet contracté, sans poser l'autre pied ; tenir une seconde en haut ; redescendre en deux à trois secondes. Deux répétitions sur la jambe gauche, puis deux sur la droite, avec le même haltère.
 Le genou d'appui reste légèrement souple et ne se plie pas, le buste reste droit, aucun élan, aucun appui de la main libre.
 Coloration : les deux mollets, à l'arrière des jambes, en rouge-orangé lumineux ; pas de rouge sur les cuisses, les fessiers ni les bras.
-Caméra fixe, de profil trois quarts arrière, athlète, haltère et caisson entièrement dans le cadre. Aucun texte, aucune flèche, aucun collage.
+Caméra fixe, vue de dos légèrement de trois quarts arrière, athlète, haltère et bloc entièrement dans le cadre. Aucun texte, aucune flèche, aucun collage.
 ```
 
 ## 4. Back extension 45°, prise snatch
@@ -110,5 +128,5 @@ Il restera les **quadriceps (6)**, les **triceps (4)**, les **fessiers (3)** et 
 
 ## Décisions en attente
 
-- **Équipement des fiches mollets** : barre, haltère et caisson sont maintenant visibles dans les vidéos, alors que les fiches disent « sans matériel ». Faut-il corriger `equipment` en `barbell` / `dumbbell` et ajouter le caisson ?
+- **Équipement des fiches mollets** : barre, haltère et bloc sont maintenant visibles dans les vidéos, alors que les fiches disent « sans matériel ». Faut-il corriger `equipment` en `barbell` / `dumbbell` ?
 - **Fiche « Mollets à la presse »** : faut-il la renommer « Mollets unilatéraux à l'haltère » pour que le nom corresponde à ce qui est montré, ou garder le nom et accepter la réserve ?
