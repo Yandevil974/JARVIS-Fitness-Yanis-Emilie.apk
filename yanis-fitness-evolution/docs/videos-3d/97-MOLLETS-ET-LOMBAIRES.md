@@ -171,6 +171,26 @@ Coloration : les lombaires uniquement, muscles du BAS DU DOS de chaque côté de
 Aucun texte, aucune flèche, aucun collage.
 ```
 
+## Intégration des trois vidéos (26/11/2026)
+
+Les trois clips déposés sur la branche sont intégrés à l'application, en `coached` : ils montrent le bon matériel, mais chacun garde un défaut, donc la consigne écrite et la voix passent avant l'image.
+
+| Clip déposé | Fichier intégré | Fiches couvertes | Défaut constaté et réserve |
+| --- | --- | --- | --- |
+| `1795689210250.mp4` | `mollets-debout.mp4` | Mollets debout (machine) | La charge de la machine flotte et les rails sont peu lisibles ; ne pas copier l'à-coup de la boucle. |
+| `1795689231810.mp4` | `mollets-assis.mp4` | Mollets assis | Les mains appuient sur les poignées hautes : la charge doit venir du coussin, pas des bras. |
+| `1795690750978.mp4` | `mollets-unilateraux.mp4` | Mollets unilatéraux, Mollets debout unilatéraux, Mollets à la presse | Le clip se termine sans retour complet et la boucle repart : terminer la descente. |
+
+Réutilisation : un même clip peut couvrir plusieurs fiches quand le mouvement est identique. Le clip unilatéral sert aussi de remplacement de la presse à cuisses, que Yanis n'a pas.
+
+Correction de matériel : les cinq fiches mollets disaient « sans matériel » alors que les vidéos montrent une machine guidée, un banc et un haltère. Elles sont désormais étiquetées :
+
+- mollets debout → machine ;
+- mollets assis → banc et haltère (la machine à coussin reste la version montrée, le banc est la version de repli) ;
+- mollets unilatéraux, mollets debout unilatéraux, mollets à la presse → haltère.
+
+Effet vérifié : Yanis dispose de tout ; Émilie n'a pas de machine, le mollet debout bascule sur une variante haltère, et le mollet assis reste prescriptible sur banc. Les GIF d'origine sont conservés pour toutes les fiches.
+
 ## Après ce lot
 
 Il restera les **quadriceps (6)**, les **triceps (4)**, les **fessiers (3)** et les **épaules antérieures (2)**, puis les deux vidéos d'abdos du lot 94 et les deux circuits. La musculation serait alors couverte à 100 %.

@@ -65,7 +65,7 @@ jobs:
         run: npm test
 
       - name: Browser tests for training layout and video controls
-        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') || startsWith(github.ref_name, 'v1.20.0-bilans-menus-') || startsWith(github.ref_name, 'v1.21.0-musculation-') || startsWith(github.ref_name, 'v1.22.0-videos-'))) }}
+        if: ${{ (github.event_name == 'workflow_dispatch' && (inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') || startsWith(github.ref_name, 'v1.20.0-bilans-menus-') || startsWith(github.ref_name, 'v1.21.0-musculation-') || startsWith(github.ref_name, 'v1.22.0-videos-') || startsWith(github.ref_name, 'v1.23.0-mollets-'))) }}
         shell: bash
         run: |
           set -euo pipefail
@@ -756,8 +756,66 @@ jobs:
             yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
           fail_on_unmatched_files: true
 
+      - name: Verify 1.23 calves videos and equipment
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.23.0-mollets-') }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          BUILD_TOOLS=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          EXPECTED_CERT=168df81abcbcae290a23cced74bbdc10e226f5093fc6a1c419e950125b74af26
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$APK" > /tmp/yfe-cert-123.txt
+          grep -Fi "certificate SHA-256 digest: $EXPECTED_CERT" /tmp/yfe-cert-123.txt
+          "$BUILD_TOOLS/aapt2" dump badging "$APK" | grep -F "package: name='app.yanis.fitness.evolution' versionCode='206' versionName='1.23.0'"
+          node scripts/verify-dos-apk.mjs "$APK"
+          node scripts/verify-current-apk.mjs "$APK"
+          node scripts/verify-layout-apk.mjs "$APK"
+          node scripts/verify-fusion-apk.mjs "$APK"
+          node scripts/verify-storage-apk.mjs "$APK"
+          node scripts/verify-jarvis-conversation-apk.mjs "$APK"
+          node scripts/verify-quadriceps-119-apk.mjs "$APK"
+          node scripts/verify-daily-features-apk.mjs "$APK"
+          node scripts/verify-123-apk.mjs "$APK"
+          unzip -Z1 "$APK" > /tmp/yfe-apk-files-123.txt
+          if grep -Fxq 'assets/restoration/yanis-profile.json' /tmp/yfe-apk-files-123.txt; then
+            echo 'Une sauvegarde personnelle ne doit pas être intégrée à cette publication.'; exit 1
+          fi
+          APK_SHA=$(sha256sum "$APK" | cut -d ' ' -f1)
+          cat > /tmp/yfe-delivery-123.md <<EOF
+          ## JARVIS Fitness Evolution 1.23.0 — vidéos de mollets
+
+          APK signé du commit $GITHUB_SHA, version **1.23.0 / 206**, identifiant **app.yanis.fitness.evolution**.
+
+          Depuis 1.22 : les trois vidéos déposées pour les mollets sont raccordées. Le mollet debout montre la machine à bandes d'épaules, le mollet assis la machine à coussin sur les cuisses, et le mollet unilatéral l'haltère avec appui sur une poignée. Le clip unilatéral couvre aussi les mollets debout unilatéraux et remplace l'exercice « Mollets à la presse », puisque Yanis n'a pas de presse à cuisses.
+
+          Les trois vidéos restent en accompagné, avec leur réserve écrite dans la fiche et lue par la voix : la charge de la machine flotte sur le mollet debout, les mains appuient sur les poignées sur le mollet assis, et le clip unilatéral s'arrête avant la descente complète. Le texte et la voix priment sur l'image.
+
+          Le matériel des cinq fiches mollets est corrigé : elles disaient « sans matériel » alors que les vidéos montrent une machine, un banc et un haltère. Le mollet debout demande désormais la machine guidée, le mollet assis le banc et l'haltère, les variantes unilatérales l'haltère. Yanis dispose de tout ce matériel ; pour Émilie, qui n'a pas de machine, le mollet debout propose une variante haltère dans les alternatives. Les GIF d'origine et les prescriptions de séries sont conservés.
+
+          Tests applicatifs et navigateur, contrôle du bundle actif, des médias, de la version et de la signature. SHA-256 APK : $APK_SHA ; certificat : $EXPECTED_CERT. Aucun test ni installation sur téléphone réel.
+
+          La musculation n'est pas terminée : les lombaires et les autres muscles restent à faire.
+
+          Avant toute mise à jour, exportez et vérifiez séparément les sauvegardes des deux profils. Installez par-dessus sans désinstaller. Si Android refuse, ne désinstallez pas et n'effacez pas les données. Un import complet remplace les deux profils ; ne l'effectuez qu'après vérification d'une sauvegarde.
+          EOF
+
+      - name: Publish 1.23 calves delivery
+        if: ${{ github.event_name == 'push' && startsWith(github.ref_name, 'v1.23.0-mollets-') }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          target_commitish: ${{ github.sha }}
+          name: JARVIS Fitness Evolution 1.23.0 — vidéos de mollets
+          prerelease: true
+          make_latest: false
+          body_path: /tmp/yfe-delivery-123.md
+          files: |
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk
+            yanis-fitness-evolution/android/yanis-fitness-evolution-*.apk.sha256
+          fail_on_unmatched_files: true
+
       - name: Publish GitHub Release with APK
-        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') || startsWith(github.ref_name, 'v1.20.0-bilans-menus-') || startsWith(github.ref_name, 'v1.21.0-musculation-') || startsWith(github.ref_name, 'v1.22.0-videos-')))) }}
+        if: ${{ !((github.event_name == 'workflow_dispatch' && (inputs.delivery == 'dos-01-04' || inputs.delivery == 'dos-01-25' || inputs.delivery == 'epaules-jarvis' || inputs.delivery == 'entrainement-large' || inputs.delivery == 'serie-fusionnee' || inputs.delivery == 'diagnostic-stockage')) || (github.event_name == 'push' && (startsWith(github.ref_name, 'v1.12.0-dos-01-04-') || startsWith(github.ref_name, 'v1.13.0-dos-01-25-') || startsWith(github.ref_name, 'v1.14.0-epaules-jarvis-') || startsWith(github.ref_name, 'v1.15.0-entrainement-large-') || startsWith(github.ref_name, 'v1.16.0-serie-fusionnee-') || startsWith(github.ref_name, 'v1.17.0-diagnostic-stockage-') || startsWith(github.ref_name, 'v1.18.0-jarvis-conversation-') || startsWith(github.ref_name, 'v1.19.0-videos-quadriceps-') || startsWith(github.ref_name, 'v1.20.0-bilans-menus-') || startsWith(github.ref_name, 'v1.21.0-musculation-') || startsWith(github.ref_name, 'v1.22.0-videos-') || startsWith(github.ref_name, 'v1.23.0-mollets-')))) }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}

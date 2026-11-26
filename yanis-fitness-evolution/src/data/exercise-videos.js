@@ -278,6 +278,59 @@ export const EXERCISE_VIDEOS = {
       spoken: "Gainage latéral dynamique. La position est celle du gainage latéral : appui sur l'avant-bras, coude sous l'épaule, corps aligné, bras libre vers le plafond. La différence est le mouvement : montez et descendez lentement les hanches sur une petite amplitude, sans poser le bassin au sol et sans tourner le buste. La vidéo montre le maintien statique : suivez la consigne écrite pour le mouvement. Trois séries de trente secondes par côté. Arrêtez en cas de douleur.",
     },
   },
+  // Lot mollets (vidéos déposées le 26/11/2026). Défauts connus : charge en
+  // « flottement » dans la cage pour le mollet debout, et appui des mains sur les
+  // poignées en position haute pour le mollet assis. Consignes correctives écrites.
+  "mollets-debout": {
+    src: "/videos/mollets-debout.mp4", poster: "/videos/posters/mollets-debout.jpg", label: "Vidéo IA · Mollets debout sur machine", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Machine à mollets debout, genoux tendus.",
+      handCue: "Placez les deux bandes rembourrées sur le haut du dos, une de chaque côté, et posez les deux pieds à plat, écartés d'une largeur de bassin.",
+      movementCue: "Montez sur la pointe des deux pieds en poussant derrière le gros orteil, tenez une seconde en haut, puis redescendez lentement jusqu'aux talons au sol. Les genoux restent tendus et ne se plient pas.",
+      notice: "La charge de la machine flotte et les rails sont peu lisibles ; ne cherchez pas à reproduire l'à-coup de la boucle. Si vous placez l'avant des pieds sur un bloc bas, restez sur la même machine et descendez les talons sous le niveau des orteils.",
+      spoken: "Mollets debout sur machine. Placez les deux bandes rembourrées sur le haut du dos et les deux pieds à plat, écartés d'une largeur de bassin. Montez sur la pointe des deux pieds en poussant derrière le gros orteil, tenez une seconde en haut, puis redescendez lentement jusqu'aux talons au sol. Les genoux restent tendus et ne se plient pas. La charge de la machine est peu lisible sur la vidéo : ne copiez pas l'à-coup de la boucle. Quatre séries de huit à dix répétitions, avec le temps de la fiche. Arrêtez en cas de douleur.",
+    },
+  },
+  "mollets-assis": {
+    src: "/videos/mollets-assis.mp4", poster: "/videos/posters/mollets-assis.jpg", label: "Vidéo IA · Mollets assis sur machine", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Coussin sur les cuisses, genoux à 90 degrés.",
+      handCue: "Asseyez-vous dos au dossier, calez le coussin rembourré juste au-dessus des genoux, puis tenez les poignées latérales. Sans machine : asseyez-vous sur un banc et posez un haltère en travers des cuisses.",
+      movementCue: "Montez sur la pointe des deux pieds avec les cuisses, tenez une seconde en haut, puis redescendez lentement jusqu'aux talons au sol. Les genoux et les cuisses ne bougent pas.",
+      notice: "Sur la vidéo, les mains appuient sur les poignées hautes : ne poussez pas avec les bras et ne soulevez pas les cuisses. La charge vient du coussin, pas des mains.",
+      spoken: "Mollets assis sur machine. Asseyez-vous dos au dossier, calez le coussin rembourré juste au-dessus des genoux et tenez les poignées latérales. Si vous n'avez pas la machine, asseyez-vous sur un banc avec un haltère en travers des cuisses. Montez sur la pointe des deux pieds avec les cuisses, tenez une seconde en haut, puis redescendez lentement jusqu'aux talons au sol. Les genoux restent à quatre-vingt-dix degrés et ne bougent pas. Sur la vidéo les mains appuient sur les poignées : ne poussez pas avec les bras. Trois séries de quinze à vingt répétitions, avec deux secondes en position étirée. Arrêtez en cas de douleur.",
+    },
+  },
+  "mollets-unilateraux": {
+    src: "/videos/mollets-unilateraux.mp4", poster: "/videos/posters/mollets-unilateraux.jpg", label: "Vidéo IA · Mollets unilatéraux à l'haltère", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Un pied au sol, appui de la main, haltère de l'autre côté.",
+      handCue: "Tenez d'une main une poignée fixe à hauteur de poitrine pour l'équilibre, et de l'autre un haltère lourd, bras tendu le long du corps.",
+      movementCue: "Debout sur un seul pied, montez sur la pointe du pied d'appui, tenez une seconde en haut, puis redescendez lentement jusqu'au talon au sol, sans poser l'autre pied.",
+      notice: "La vidéo se termine sans retour complet et la boucle repart : effectuez toujours la descente entière. La main d'appui sert uniquement à l'équilibre, elle ne tire pas.",
+      spoken: "Mollets unilatéraux à l'haltère. Tenez une poignée fixe d'une main pour l'équilibre, un haltère lourd de l'autre. Debout sur un seul pied, montez sur la pointe du pied d'appui, tenez une seconde en haut, puis redescendez lentement jusqu'au talon au sol, sans poser l'autre pied. La main d'appui ne tire pas. La vidéo se termine avant le retour complet : terminez toujours votre descente. Quatre séries de dix à douze répétitions par jambe. Arrêtez en cas de douleur.",
+    },
+  },
+  "mollets-debout-unilateraux": {
+    src: "/videos/mollets-unilateraux.mp4", poster: "/videos/posters/mollets-unilateraux.jpg", label: "Vidéo IA · Mollets unilatéraux (base du mouvement)", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Même mouvement, une jambe à la fois.",
+      handCue: "Une main sur un appui fixe à hauteur de poitrine, un haltère dans l'autre main, bras tendu.",
+      movementCue: "Un seul pied au sol, montez sur la pointe, une seconde en haut, puis descente lente jusqu'au talon. Changez de jambe à la fin de la série.",
+      notice: "La vidéo montre la version avec appui et haltère : elle illustre le mouvement d'une seule jambe. La consigne écrite de votre fiche reste prioritaire.",
+      spoken: "Mollets debout unilatéraux. Une main sur un appui fixe, un haltère dans l'autre main. Debout sur un seul pied, montez sur la pointe, tenez une seconde, puis redescendez lentement jusqu'au talon au sol. La vidéo montre le mouvement d'une seule jambe avec appui. Suivez la série et les répétitions de votre fiche. Arrêtez en cas de douleur.",
+    },
+  },
+  "mollets-a-la-presse": {
+    src: "/videos/mollets-unilateraux.mp4", poster: "/videos/posters/mollets-unilateraux.jpg", label: "Vidéo IA · Mollets unilatéraux (remplace la presse)", status: "coached", avoidSilentPreview: true,
+    coaching: {
+      title: "Pas de presse : la variante unilatérale la remplace.",
+      handCue: "Un appui fixe à hauteur de poitrine d'une main, un haltère lourd dans l'autre.",
+      movementCue: "Un seul pied au sol, montez sur la pointe, tenez une seconde en haut, puis descente lente. Faites toutes les répétitions d'un côté avant de changer.",
+      notice: "Vous n'avez pas de presse à cuisses : cette variante sur une jambe, avec haltère et appui, remplace l'exercice. La vidéo illustre ce mouvement.",
+      spoken: "Mollets unilatéraux à l'haltère, en remplacement de la presse à cuisses. Une main sur un appui fixe à hauteur de poitrine, un haltère lourd dans l'autre main. Debout sur un seul pied, montez sur la pointe, tenez une seconde en haut, puis redescendez lentement jusqu'au talon au sol. Faites toutes les répétitions d'un côté avant de changer de jambe. Vous n'avez pas de presse : cette variante la remplace. Arrêtez en cas de douleur.",
+    },
+  },
   "bird-dog": {
     src: "/videos/bird-dog.mp4", poster: "/videos/posters/bird-dog.jpg", label: "Vidéo IA · Bird dog", status: "coached", avoidSilentPreview: true,
     coaching: {

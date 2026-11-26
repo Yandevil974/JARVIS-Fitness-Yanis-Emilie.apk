@@ -120,6 +120,14 @@ function equipmentFor(name) {
     )
   )
     return /couche|incline/.test(n) ? ["barbell", "bench"] : ["barbell"];
+  // Mollets : les vidéos validées montrent une machine guidée, un coussin de
+  // machine assise et un haltère avec appui. Les fiches disaient « sans matériel ».
+  // Le mollet assis se fait sur machine à coussin, ou assis sur un banc avec un
+  // haltère sur les cuisses : le banc et l'haltère restent donc prescriptibles
+  // pour les deux profils, alors que la machine guidée ne l'est que pour Yanis.
+  if (/^mollets?\b/.test(n) && /presse/.test(n)) return ["dumbbell"];
+  if (/^mollets?\b/.test(n) && /assis/.test(n)) return ["bench", "dumbbell"];
+  if (/^mollets?\b/.test(n)) return /unilat/.test(n) ? ["dumbbell"] : ["machine"];
   return ["bodyweight"];
 }
 const rows = new Map();
