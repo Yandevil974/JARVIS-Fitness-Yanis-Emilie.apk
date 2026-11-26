@@ -191,6 +191,14 @@ Correction de matériel : les cinq fiches mollets disaient « sans matériel » 
 
 Effet vérifié : Yanis dispose de tout ; Émilie n'a pas de machine, le mollet debout bascule sur une variante haltère, et le mollet assis reste prescriptible sur banc. Les GIF d'origine sont conservés pour toutes les fiches.
 
+## Livraison
+
+APK **1.23.0 / 206** publiée : https://github.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/releases/download/v1.23.0-mollets-20261126/yanis-fitness-evolution-1.23.0.apk
+
+SHA-256 : `2cefd8e3cc819fe96c752b527a6460e631990d0523f83720aeb426370c4d0e35` — certificat inchangé `168df81a…5b74af26`, CI `45808781335`.
+
+État de la musculation après ce lot : **172 fiches sur 203 ont une vidéo**, 31 sans.
+
 ## Après ce lot
 
 Il restera les **quadriceps (6)**, les **triceps (4)**, les **fessiers (3)** et les **épaules antérieures (2)**, puis les deux vidéos d'abdos du lot 94 et les deux circuits. La musculation serait alors couverte à 100 %.

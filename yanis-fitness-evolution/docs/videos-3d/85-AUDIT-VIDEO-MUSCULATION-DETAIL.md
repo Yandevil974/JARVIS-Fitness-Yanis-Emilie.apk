@@ -2,9 +2,9 @@
 
 État audité : registre de la branche au moment de la génération. Les nouvelles associations depuis l’APK 1.21.0 ne sont pas encore dans cet APK. Une fiche commune aux deux profils n’est comptée qu’une fois.
 
-**203 fiches : 167 avec une vidéo raccordée, 36 sans vidéo raccordée.**
-Les 167 fiches utilisent 141 chemins MP4, correspondant à 130 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
-Sur les fiches raccordées : 157 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
+**203 fiches : 172 avec une vidéo raccordée, 31 sans vidéo raccordée.**
+Les 172 fiches utilisent 144 chemins MP4, correspondant à 133 contenus distincts par empreinte SHA-256. Ce n'est pas un nombre de mouvements différents : plusieurs noms de fichier ont un contenu identique et certaines fiches partagent une vidéo.
+Sur les fiches raccordées : 162 accompagnées de consignes correctives et 10 marquées validées dans le registre. Cela ne garantit pas qu'une vidéo est parfaite.
 
 Contrôle automatisé : existence et taille non nulle, empreinte identique entre public et release pour chaque vidéo, affiche et GIF des 203 fiches ; présence des notices et voix pour les vidéos accompagnées. Résultat : **0 anomalie(s)** de ce type. Tous les GIF de ces fiches sont présents.
 Ce contrôle **ne revoit pas manuellement toutes les images de chaque vidéo** et ne certifie pas chaque geste, cadrage ou lecture sur téléphone. Une vidéo non raccordée ne signifie pas forcément qu’aucune vidéo compatible n’existe déjà ailleurs. Les consignes et les décisions de Yanis restent prioritaires.
@@ -29,7 +29,7 @@ Le roumain barre est conservé tel quel sur décision de Yanis, malgré la tête
 | Moyen fessier | 0 | 9 | 9 |
 | Quadriceps | 20 | 6 | 26 |
 | Ischio-jambiers | 19 | 0 | 19 |
-| Mollets | 0 | 5 | 5 |
+| Mollets | 5 | 0 | 5 |
 
 ## Fiches déjà raccordées
 
@@ -262,6 +262,16 @@ Chaque nom ci-dessous est une fiche. Le fichier indiqué peut être réutilisé 
 | Soulevé de terre partiel | Elite | [souleve-de-terre-partiel.mp4](../../public/videos/souleve-de-terre-partiel.mp4) | Accompagnée |
 | Soulevé de terre — test 1RM | Elite | [souleve-de-terre-conventionnel.mp4](../../public/videos/souleve-de-terre-conventionnel.mp4) | Accompagnée |
 
+### Mollets — 5/5
+
+| Exercice | Profils | Vidéo | Statut |
+|---|---|---|---|
+| Mollets debout unilatéraux | Émilie | [mollets-unilateraux.mp4](../../public/videos/mollets-unilateraux.mp4) | Accompagnée |
+| Mollets assis | Émilie + Elite | [mollets-assis.mp4](../../public/videos/mollets-assis.mp4) | Accompagnée |
+| Mollets debout | Elite | [mollets-debout.mp4](../../public/videos/mollets-debout.mp4) | Accompagnée |
+| Mollets unilatéraux | Elite | [mollets-unilateraux.mp4](../../public/videos/mollets-unilateraux.mp4) | Accompagnée |
+| Mollets à la presse | Elite | [mollets-unilateraux.mp4](../../public/videos/mollets-unilateraux.mp4) | Accompagnée |
+
 ## Fiches sans vidéo actuellement raccordée
 
 Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par fiche : vérifier d’abord le geste, le matériel, le côté et la méthode.
@@ -317,14 +327,6 @@ Ces fiches conservent leur GIF. Ne pas générer automatiquement une vidéo par 
 - Back squat inertie (pause complète)
 - Fentes barre
 - Drop lunges (fentes contrôlées)
-
-### Mollets — 5
-
-- Mollets debout unilatéraux
-- Mollets assis
-- Mollets debout
-- Mollets unilatéraux
-- Mollets à la presse
 
 ## Rapprochements à examiner avant toute génération
 
