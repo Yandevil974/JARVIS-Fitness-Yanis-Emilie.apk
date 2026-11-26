@@ -15,7 +15,7 @@ Deux groupes encore à zéro : **mollets 5 fiches**, **lombaires 1 fiche**. Aucu
 |---|---|---|
 | Mollets debout | 4 × 8-10 | `calves-debout` (machine debout) |
 | Mollets debout unilatéraux | 3 × 15 | réutilise `calves-haltere-unilateral` |
-| Mollets unilatéraux | 4 × 10-12 | `calves-haltere-unilateral` (haltère + appui) |
+| Mollets unilatéraux | 4 × 10-12 | `calves-haltere-unilateral` (haltère, appui, jambe levée) |
 | Mollets assis | 3 × 15-20 | `calves-assis` (machine assise) |
 | Mollets à la presse | 5 × 8-10 | **remplacée** par la variante unilatérale à l'haltère, faute de presse |
 | Back extension 45°, prise snatch | 3 × 10-12 | `lom-back-extension-45` |
@@ -48,7 +48,7 @@ Yanis a écarté les trois images précédentes :
 
 - **Debout** : la cage guidée n'était pas bonne, « le poids à gauche est dans le vide ». Remplacée par une **machine à mollets debout** avec bandes d'épaules et charge guidée.
 - **Assis** : « les haltères ne servent à rien comme ça, il faut quelque chose sur les genoux ». Remplacé par une **machine à mollets assis** avec un coussin sur les cuisses.
-- **Unilatéral** : « la pose est bien mais avec un support ou une machine pour que l'athlète tienne, ce serait mieux ». Ajout d'un **appui de la main sur une poignée de colonne à poulie**.
+- **Unilatéral** : « la pose est bien mais avec un support ou une machine pour que l'athlète tienne, ce serait mieux ». Ajout d'un **appui de la main sur une poignée de colonne à poulie**. Puis : « recrée l'image avec une jambe dans le vide dès le départ » — la jambe libre est désormais repliée derrière, pied levé, sans appui, et le pied d'appui reste **à plat au sol**.
 
 ## Abandon du bloc surélevé — décision du 25/11/2026
 
@@ -113,24 +113,46 @@ Coloration : les deux mollets, à l'arrière des jambes sous le genou, en rouge-
 Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
 ```
 
-## 3. Mollets unilatéraux — haltère avec appui (remplace la presse)
+## 3. Mollets unilatéraux — haltère et appui, jambe libre dans le vide
 
-**Image** : [calves-unilateral-v4-appui.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v4-appui.jpg)
+**Image** : [calves-unilateral-v9-haltere.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v9-haltere.jpg)
 
 ```
-Vidéo anatomique 3D réaliste, deux répétitions de mollets unilatéraux à l'haltère, avec appui.
-Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
+SUJET
+Athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches.
+Salle de musculation claire, sol gris, fond flou. Rendu anatomique 3D réaliste.
+Caméra fixe en vue de trois quarts arrière. Plan unique, 8 secondes, deux répétitions par jambe.
 
-MATÉRIEL : une colonne à poulie verticale, complète et posée au sol, avec sa poulie en haut et son empilement de poids en bas ; une poignée fixée à la colonne à hauteur de poitrine. D'une main, l'athlète tient fermement cette poignée, bras tendu, pour s'équilibrer. De l'autre main, il tient un haltère lourd, bras tendu le long du corps.
-SUPPORT : AUCUN bloc, aucune marche. Le pied d'appui est À PLAT SUR LE SOL, chaussure entièrement au sol et anatomiquement correcte, orteils vers l'avant. L'autre jambe est fléchie derrière, pied décollé, sans appui.
+DÉCOR
+À gauche du cadre : une colonne à poulie verticale complète, posée au sol, poulie en haut, câble vertical, empilement de poids en bas.
+Une poignée fixée au bout du câble, à hauteur de poitrine. Le câble descend tout droit jusqu'à la poignée.
 
-POSITION : VUE DE TROIS QUARTS ARRIÈRE, de sorte que l'arrière des deux jambes est tourné vers l'objectif. Buste droit, jambe d'appui presque tendue, genou légèrement souple.
+MATÉRIEL
+Main droite : tient la poignée, bras tendu vers la colonne, pour l'équilibre seulement, sans tirer.
+Main gauche : tient un haltère noir lourd, bras tendu le long du corps, à hauteur de la cuisse.
 
-Mouvement : partir talon au sol ; monter sur la pointe du pied d'appui, cheville tendue, mollet contracté, sans poser l'autre pied et sans tirer avec la main d'appui ; tenir une seconde en haut ; redescendre en deux à trois secondes jusqu'au talon au sol. Deux répétitions sur la jambe gauche, puis deux sur la droite.
-Le genou d'appui ne se plie pas, la main d'appui ne tire pas, le buste reste droit.
+POSTURE
+Debout sur la jambe gauche seulement. Pied d'appui À PLAT SUR LE SOL, chaussure entièrement au sol, orteils vers l'avant.
+Jambe droite repliée derrière la jambe d'appui : cuisse proche, genou plié, pied LEVÉ À VINGT CENTIMÈTRES AU-DESSUS DU SOL, dans le vide.
+Ce pied ne touche ni le sol, ni la machine, ni l'autre jambe : le sol nu reste visible sous la chaussure.
+Les deux jambes sont complètes : cuisse, genou, mollet, cheville, chaussure.
+Buste droit, épaules basses.
+AUCUN bloc, aucune marche, aucun support surélevé.
 
-Coloration : les deux mollets, à l'arrière des jambes, en rouge-orangé lumineux ; pas de rouge sur le tibia, les cuisses, les fessiers ni les bras.
-Caméra fixe, athlète, haltère et colonne à poulie entièrement dans le cadre, sol visible sous les pieds. Aucun texte, aucune flèche, aucun collage.
+MOUVEMENT
+Départ talon au sol.
+Montée sur la pointe du pied d'appui, cheville tendue, mollet contracté, le plus haut possible.
+Une seconde d'arrêt en haut.
+Descente lente en trois secondes jusqu'au talon au sol.
+Le pied levé reste levé pendant toute la série ; le genou d'appui ne se plie pas ; la main d'appui ne tire pas ; aucun élan.
+Deux répétitions sur la jambe gauche, puis deux sur la droite, en changeant de main pour l'haltère.
+
+MUSCLES
+Les deux mollets seulement, muscles charnus à l'ARRIÈRE des jambes entre le genou et le talon, en rouge-orangé lumineux.
+Rien sur le tibia, rien sur les cuisses, rien sur les fessiers, rien sur les bras.
+
+INTERDITS
+Pas de texte, pas de flèche, pas de logo, pas de collage, pas de machine en double, pas de membre tordu, pas de pied qui touche le sol ou le bâti.
 ```
 
 ## 4. Back extension 45°, prise snatch
