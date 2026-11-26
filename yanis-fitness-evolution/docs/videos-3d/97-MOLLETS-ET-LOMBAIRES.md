@@ -115,7 +115,7 @@ Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous l
 
 ## 3. Mollets unilatéraux — haltère et appui, jambe libre dans le vide
 
-**Image** : [calves-unilateral-v9-haltere.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v9-haltere.jpg)
+**Image** : [calves-unilateral-v9-haltere.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/a2365ad/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v9-haltere.jpg)
 
 ```
 SUJET
