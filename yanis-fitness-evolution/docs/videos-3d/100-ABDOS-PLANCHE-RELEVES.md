@@ -17,9 +17,9 @@ Les trois fiches « relevés de jambes » désignent le même geste dans le fich
 
 ## Images de référence
 
-**1. Planche** : [abs-planche-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/abs-planche-v2.jpg)
+**1. Planche** : [abs-planche-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/0bce088/yanis-fitness-evolution/docs/videos-3d/abs-planche-v2.jpg)
 
-**2. Relevés de jambes** : [abs-releves-jambes-v3.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-v3.jpg)
+**2. Relevés de jambes** : [abs-releves-jambes-v3.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/0bce088/yanis-fitness-evolution/docs/videos-3d/abs-releves-jambes-v3.jpg)
 
 ## Prompt 1 — planche
 
