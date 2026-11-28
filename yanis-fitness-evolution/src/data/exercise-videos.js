@@ -297,8 +297,8 @@ export const EXERCISE_VIDEOS = {
       title: "Coussin sur les cuisses, genoux à 90 degrés.",
       handCue: "Asseyez-vous dos au dossier, calez le coussin rembourré juste au-dessus des genoux, puis tenez les poignées latérales. Sans machine : asseyez-vous sur un banc et posez un haltère en travers des cuisses.",
       movementCue: "Montez sur la pointe des deux pieds avec les cuisses, tenez une seconde en haut, puis redescendez lentement jusqu'aux talons au sol. Les genoux et les cuisses ne bougent pas.",
-      notice: "Sur la vidéo, les mains appuient sur les poignées hautes : ne poussez pas avec les bras et ne soulevez pas les cuisses. La charge vient du coussin, pas des mains.",
-      spoken: "Mollets assis sur machine. Asseyez-vous dos au dossier, calez le coussin rembourré juste au-dessus des genoux et tenez les poignées latérales. Si vous n'avez pas la machine, asseyez-vous sur un banc avec un haltère en travers des cuisses. Montez sur la pointe des deux pieds avec les cuisses, tenez une seconde en haut, puis redescendez lentement jusqu'aux talons au sol. Les genoux restent à quatre-vingt-dix degrés et ne bougent pas. Sur la vidéo les mains appuient sur les poignées : ne poussez pas avec les bras. Trois séries de quinze à vingt répétitions, avec deux secondes en position étirée. Arrêtez en cas de douleur.",
+      notice: "La machine à levier est celle de votre salle. Ne poussez pas avec les bras et ne soulevez pas les cuisses : la charge vient du coussin posé sur les cuisses.",
+      spoken: "Mollets assis sur machine. Asseyez-vous dos au dossier, calez le coussin rembourré juste au-dessus des genoux et tenez les poignées latérales. Si vous n'avez pas la machine, asseyez-vous sur un banc avec un haltère en travers des cuisses. Montez sur la pointe des deux pieds avec les cuisses, tenez une seconde en haut, puis redescendez lentement jusqu'aux talons au sol. Les genoux restent à quatre-vingt-dix degrés et ne bougent pas. Sur cette machine à levier, ne poussez pas avec les bras. Trois séries de quinze à vingt répétitions, avec deux secondes en position étirée. Arrêtez en cas de douleur.",
     },
   },
   "mollets-unilateraux": {

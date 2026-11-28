@@ -9,7 +9,7 @@ const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 test('mollets : clips intacts, réutilisations strictes, réserves et GIF conservés',()=>{
   const groups=[
     ['1795689210250','38fe322941d315f129dfe64a3a2a4d74dc079da5ef05d5f36914cc5542acee7a',['mollets-debout']],
-    ['1795689231810','d6be5926644fb4d7484631d659eeecc1674ca9adea4af7023aca7473311659e5',['mollets-assis']],
+    ['1795853792715','42a5c30e129e09b2eb436ca6b43bdc12eb55e38f99d27889869760e59dc0c8ce',['mollets-assis']],
     ['1795690750978','bfc9c40dec2adf876bf7ab9b85c455d85d7eb18d463eeaabea7f251a971f8df6',['mollets-unilateraux','mollets-debout-unilateraux','mollets-a-la-presse']],
   ];
   for(const [source,hash,ids] of groups){
@@ -60,7 +60,7 @@ test('mollets : matériel des fiches conforme aux vidéos, sans presse pour pers
 
 test('mollets : réserves écrites conformes aux défauts constatés',()=>{
   assert.match(videoFor('mollets-debout').coaching.notice,/flotte/);
-  assert.match(videoFor('mollets-assis').coaching.notice,/ne poussez pas avec les bras/);
+  assert.match(videoFor('mollets-assis').coaching.notice,/machine à levier/);
   assert.match(videoFor('mollets-unilateraux').coaching.notice,/descente/);
   assert.match(videoFor('mollets-a-la-presse').coaching.spoken,/Vous n'avez pas de presse/);
 });
