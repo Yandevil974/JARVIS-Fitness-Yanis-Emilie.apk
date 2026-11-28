@@ -422,6 +422,39 @@ export const EXERCISE_VIDEOS = {
       spoken: "Abduction assise en répétition et demie. Ouvrez complètement, refermez à moitié, rouvrez complètement, puis refermez : c'est une répétition et demie. La vidéo montre seulement le mouvement de base. Quatre séries de quinze. Arrêtez en cas de douleur.",
     },
   },
+  // Lot fessiers (28/11/2026). Un seul clip prévu pour les trois variantes
+  // unilatérales du hip thrust : même mouvement, seules la charge et la
+  // présentation changent. En attente du fichier déposé : le GIF reste affiché.
+  "hip-thrust-unilateral": {
+    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust unilatéral", status: "pending",
+    coaching: {
+      title: "Une jambe d'appui, bassin aligné.",
+      handCue: "Haut du dos sur un banc, une seule jambe fléchie pied à plat, l'autre jambe tendue en l'air, barre dans le pli des hanches avec un coussin.",
+      movementCue: "Montez le bassin jusqu'à l'alignement des épaules et du genou, serrez la fesse, puis redescendez sans poser complètement.",
+      notice: "Le bassin ne doit pas s'affaisser et le corps reste aligné des épaules au genou d'appui. La barre est posée dans le pli des hanches, jamais sur le ventre.",
+      spoken: "Hip thrust unilatéral. Haut du dos sur un banc, une jambe fléchie pied à plat, l'autre jambe tendue en l'air, barre dans le pli des hanches avec un coussin. Montez le bassin jusqu'à l'alignement des épaules et du genou, serrez la fesse, puis redescendez sans poser complètement. Le bassin ne s'affaisse pas. Trois séries de dix par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "hip-thrust-unilateral-1-jambe": {
+    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust sur une jambe", status: "pending",
+    coaching: {
+      title: "Même mouvement, tout le poids sur une jambe.",
+      handCue: "Une jambe d'appui au sol, l'autre tendue, barre dans le pli des hanches.",
+      movementCue: "Montez le bassin avec la seule jambe d'appui, sans pousser avec la jambe libre, puis redescendez lentement.",
+      notice: "La jambe libre ne doit pas aider : elle reste tendue et immobile. Le bassin monte droit, sans rotation.",
+      spoken: "Hip thrust sur une jambe. Une seule jambe d'appui au sol, l'autre tendue et immobile. Montez le bassin avec la seule jambe d'appui, serrez la fesse, puis redescendez lentement. Le bassin ne tourne pas. Trois séries de dix par côté. Arrêtez en cas de douleur.",
+    },
+  },
+  "hip-thrust-unilateral-leste": {
+    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust unilatéral lesté", status: "pending",
+    coaching: {
+      title: "La charge reste dans le pli des hanches.",
+      handCue: "Barre chargée avec coussin dans le pli des hanches, une jambe d'appui au sol.",
+      movementCue: "Montez le bassin en contrôlant la charge, arrêt d'une seconde en haut, descente lente.",
+      notice: "Avec la charge, la barre glisse si le coussin est mal placé : gardez-la dans le pli des hanches et les mains dessus. Réduisez la charge si le bassin s'affaisse.",
+      spoken: "Hip thrust unilatéral lesté. Barre chargée avec coussin dans le pli des hanches, une jambe d'appui au sol. Montez le bassin en contrôlant la charge, arrêt d'une seconde en haut, descente lente. Si le bassin s'affaisse, réduisez la charge. Trois séries de huit à dix par côté. Arrêtez en cas de douleur.",
+    },
+  },
   "bird-dog": {
     src: "/videos/bird-dog.mp4", poster: "/videos/posters/bird-dog.jpg", label: "Vidéo IA · Bird dog", status: "coached", avoidSilentPreview: true,
     coaching: {
