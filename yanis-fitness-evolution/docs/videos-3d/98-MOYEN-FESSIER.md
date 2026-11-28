@@ -20,7 +20,7 @@ Toutes les images de ce lot partent de `vague1-biceps-01-curl-ez.jpg`, la réfé
 
 ## 1. Clamshell à l'élastique
 
-**Image** : [hip-med-clamshell-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/hip-med-clamshell-v1.jpg)
+**Image** : [hip-med-clamshell-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/faa8d94/yanis-fitness-evolution/docs/videos-3d/hip-med-clamshell-v1.jpg)
 
 Couvre aussi : aucune réutilisation.
 
@@ -36,7 +36,7 @@ Coloration : le moyen fessier seulement, sur le côté de la hanche, en rouge-or
 
 ## 2. Abduction debout à la poulie
 
-**Image** : [hip-med-abduction-poulie-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/hip-med-abduction-poulie-v1.jpg)
+**Image** : [hip-med-abduction-poulie-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/faa8d94/yanis-fitness-evolution/docs/videos-3d/hip-med-abduction-poulie-v1.jpg)
 
 Couvre aussi : abduction hanche à la poulie, abduction poulie myo-reps (même clip, réserves distinctes).
 
@@ -52,7 +52,7 @@ Coloration : le moyen fessier seulement, sur le côté de la hanche de la jambe 
 
 ## 3. Abduction assise sur machine
 
-**Image** : [hip-med-abduction-assise-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/hip-med-abduction-assise-v1.jpg)
+**Image** : [hip-med-abduction-assise-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/faa8d94/yanis-fitness-evolution/docs/videos-3d/hip-med-abduction-assise-v1.jpg)
 
 Couvre aussi : abduction assise (machine ou élastique), abduction assise en 1,5 reps.
 
@@ -68,7 +68,7 @@ Coloration : les deux moyens fessiers seulement, sur les côtés des hanches, en
 
 ## 4. Abduction à l'élastique
 
-**Image** : [hip-med-abduction-elastique-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/hip-med-abduction-elastique-v1.jpg)
+**Image** : [hip-med-abduction-elastique-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/faa8d94/yanis-fitness-evolution/docs/videos-3d/hip-med-abduction-elastique-v1.jpg)
 
 ```
 Même personnage que la référence : argenté très musclé, casquette noire, short noir, baskets blanches. Salle claire, sol gris.
@@ -82,7 +82,7 @@ Coloration : le moyen fessier seulement, sur le côté de la hanche de la jambe 
 
 ## 5. Fire hydrant à l'élastique
 
-**Image** : [hip-med-fire-hydrant-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/hip-med-fire-hydrant-v1.jpg)
+**Image** : [hip-med-fire-hydrant-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/faa8d94/yanis-fitness-evolution/docs/videos-3d/hip-med-fire-hydrant-v1.jpg)
 
 ```
 Même personnage que la référence : argenté très musclé, casquette noire, short noir, baskets blanches. Salle claire, sol gris.
