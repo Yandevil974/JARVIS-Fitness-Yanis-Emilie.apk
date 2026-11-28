@@ -29,6 +29,6 @@ test('fessiers 02/14 et 13 : vidéos originales, réutilisation, consignes, GIF 
  assert.equal(videoFor(cases[2][0]).src,videoFor(cases[3][0]).src);
  assert.notEqual(videoFor(cases[0][0]).coaching.spoken,videoFor(cases[1][0]).coaching.spoken);
  assert.notEqual(videoFor(cases[2][0]).coaching.spoken,videoFor(cases[3][0]).coaching.spoken);
- assert.equal(videoFor('hip-thrust-unilateral-leste'),null);
+ assert.equal(videoFor('hip-thrust-unilateral-leste').status,'coached');
  assert.equal(videoFor('fentes-bulgares-halteres-pied-avant-sureleve'),null);
 });

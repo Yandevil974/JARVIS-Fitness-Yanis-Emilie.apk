@@ -331,128 +331,43 @@ export const EXERCISE_VIDEOS = {
       spoken: "Mollets unilatéraux à l'haltère, en remplacement de la presse à cuisses. Une main sur un appui fixe à hauteur de poitrine, un haltère lourd dans l'autre main. Debout sur un seul pied, montez sur la pointe, tenez une seconde en haut, puis redescendez lentement jusqu'au talon au sol. Faites toutes les répétitions d'un côté avant de changer de jambe. Vous n'avez pas de presse : cette variante la remplace. Arrêtez en cas de douleur.",
     },
   },
-  // Lot moyen fessier (27/11/2026). Personnage recalé sur vague1-biceps-01-curl-ez.
-  "clamshell-a-l-elastique": {
-    src: "/videos/moyen-fessier-clamshell.mp4", poster: "/videos/posters/moyen-fessier-clamshell.jpg", label: "Vidéo IA · Clamshell à l'élastique", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "Genou ouvert, bassin immobile.",
-      handCue: "Allongé sur le côté, genoux pliés à 45°, pieds joints, élastique juste au-dessus des genoux.",
-      movementCue: "Ouvrez le genou du dessus vers le haut contre l'élastique, sans laisser le bassin basculer en arrière, puis refermez lentement.",
-      notice: "La vidéo montre la forme du mouvement ; le bassin ne doit jamais rouler vers l'arrière. Petite amplitude suffit : c'est la hanche qui travaille, pas la taille.",
-      spoken: "Clamshell à l'élastique. Allongé sur le côté, genoux pliés à quarante-cinq degrés, pieds joints, élastique juste au-dessus des genoux. Ouvrez le genou du dessus vers le haut contre l'élastique, sans laisser le bassin basculer en arrière, puis refermez lentement. Trois séries de quinze par côté. Arrêtez en cas de douleur.",
-    },
-  },
-  "abduction-hanche-debout-a-la-poulie": {
-    src: "/videos/moyen-fessier-abduction-poulie.mp4", poster: "/videos/posters/moyen-fessier-abduction-poulie.jpg", label: "Vidéo IA · Abduction debout à la poulie", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "Jambe tendue, buste immobile.",
-      handCue: "Sangle de poulie basse à la cheville extérieure, une main en appui sur la colonne.",
-      movementCue: "Écartez la jambe tendue sur le côté, sans pencher le buste, puis revenez lentement sans laisser la charge tirer.",
-      notice: "La vidéo insiste sur l'amplitude ; gardez-la courte et contrôlée. Le buste reste droit et le pied garde son orientation.",
-      spoken: "Abduction de hanche debout à la poulie. Sangle à la cheville, une main en appui. Écartez la jambe tendue sur le côté, sans pencher le buste, puis revenez lentement. Trois séries de quinze par côté. Arrêtez en cas de douleur.",
-    },
-  },
-  "abduction-hanche-a-la-poulie": {
-    src: "/videos/moyen-fessier-abduction-poulie.mp4", poster: "/videos/posters/moyen-fessier-abduction-poulie.jpg", label: "Vidéo IA · Abduction à la poulie", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "Même mouvement, appui plus stable.",
-      handCue: "Sangle à la cheville, appui des deux mains si besoin pour rester droit.",
-      movementCue: "Écartez la jambe tendue sur le côté, marquez un temps en haut, revenez lentement.",
-      notice: "La vidéo illustre le mouvement à la poulie : l'appui des mains ne doit pas servir à tirer la jambe.",
-      spoken: "Abduction de hanche à la poulie. Sangle à la cheville. Écartez la jambe tendue sur le côté, marquez un temps en haut, revenez lentement. Quatre séries de quinze par côté. Arrêtez en cas de douleur.",
-    },
-  },
-  "abduction-hanche-a-la-poulie-myo-reps": {
-    src: "/videos/moyen-fessier-abduction-poulie.mp4", poster: "/videos/posters/moyen-fessier-abduction-poulie.jpg", label: "Vidéo IA · Abduction poulie (base du mouvement)", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "La vidéo montre la série, pas les myo-reps.",
-      handCue: "Même installation que l'abduction à la poulie.",
-      movementCue: "Faites d'abord la série principale, puis les mini-séries de myo-reps avec quinze secondes de repos, sur la même amplitude.",
-      notice: "La vidéo ne montre pas les myo-reps : elle illustre le mouvement de base. Suivez la consigne écrite pour les mini-séries.",
-      spoken: "Abduction de hanche à la poulie en myo-reps. Même mouvement que l'abduction simple. Faites la série principale, puis les mini-séries de myo-reps avec quinze secondes de repos, sur la même amplitude. La vidéo montre seulement le mouvement de base. Arrêtez en cas de douleur.",
-    },
-  },
-  "abduction-hanche-a-l-elastique": {
-    src: "/videos/moyen-fessier-abduction-elastique.mp4", poster: "/videos/posters/moyen-fessier-abduction-elastique.jpg", label: "Vidéo IA · Abduction à l'élastique", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "Élastique aux chevilles, buste droit.",
-      handCue: "Élastique autour des deux chevilles, une main en appui sur un montant.",
-      movementCue: "Écartez la jambe tendue sur le côté contre l'élastique, puis revenez lentement sans laisser la jambe retomber.",
-      notice: "La vidéo montre une amplitude large ; gardez le buste vertical et le pied d'appui stable.",
-      spoken: "Abduction de hanche à l'élastique. Élastique aux chevilles, une main en appui. Écartez la jambe tendue sur le côté, puis revenez lentement. Trois séries de vingt par côté. Arrêtez en cas de douleur.",
-    },
-  },
-  "fire-hydrant-a-l-elastique": {
-    src: "/videos/moyen-fessier-fire-hydrant.mp4", poster: "/videos/posters/moyen-fessier-fire-hydrant.jpg", label: "Vidéo IA · Fire hydrant à l'élastique", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "Genou levé sur le côté, dos plat.",
-      handCue: "À quatre pattes, mains sous les épaules, élastique au-dessus des genoux.",
-      movementCue: "Levez le genou sur le côté à hauteur de hanche, sans creuser le dos ni tourner le bassin, puis reposez lentement.",
-      notice: "La vidéo lève le genou un peu haut et le dos se creuse à la fin : arrêtez le genou à hauteur de hanche et gardez le dos plat.",
-      spoken: "Fire hydrant à l'élastique. À quatre pattes, élastique au-dessus des genoux. Levez le genou sur le côté à hauteur de hanche, sans creuser le dos ni tourner le bassin, puis reposez lentement. La vidéo lève le genou un peu haut : arrêtez-le à hauteur de hanche. Trois séries de quinze par côté. Arrêtez en cas de douleur.",
-    },
-  },
-  "abduction-assise-machine": {
-    src: "/videos/moyen-fessier-abduction-assise.mp4", poster: "/videos/posters/moyen-fessier-abduction-assise.jpg", label: "Vidéo IA · Abduction assise sur machine", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "Dos au dossier, genoux qui s'écartent.",
-      handCue: "Assis dos au dossier, les genoux contre les deux coussins, mains sur les poignées.",
-      movementCue: "Écartez les genoux contre les coussins, marquez un temps en haut, puis refermez lentement sans laisser la charge claquer.",
-      notice: "La vidéo montre la machine : ne poussez pas avec les mains et gardez le dos collé au dossier.",
-      spoken: "Abduction assise sur machine. Assis dos au dossier, genoux contre les coussins. Écartez les genoux, marquez un temps en haut, puis refermez lentement. Quatre séries de vingt. Arrêtez en cas de douleur.",
-    },
-  },
-  "abduction-assise-machine-ou-elastique": {
-    src: "/videos/moyen-fessier-abduction-assise.mp4", poster: "/videos/posters/moyen-fessier-abduction-assise.jpg", label: "Vidéo IA · Abduction assise (base du mouvement)", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "Même mouvement, à la machine ou à l'élastique.",
-      handCue: "Sur la machine : dos au dossier. À l'élastique : assis, élastique autour des genoux.",
-      movementCue: "Écartez les genoux, tenez une seconde, refermez lentement.",
-      notice: "La vidéo montre la version machine. À l'élastique, le mouvement est identique : le dos reste droit et les genoux s'écartent lentement.",
-      spoken: "Abduction assise, sur machine ou à l'élastique. Écartez les genoux, tenez une seconde, refermez lentement. La vidéo montre la version machine, le mouvement est identique à l'élastique. Trois séries de vingt. Arrêtez en cas de douleur.",
-    },
-  },
-  "abduction-assise-en-1-5-reps": {
-    src: "/videos/moyen-fessier-abduction-assise.mp4", poster: "/videos/posters/moyen-fessier-abduction-assise.jpg", label: "Vidéo IA · Abduction assise (base du mouvement)", status: "coached", avoidSilentPreview: true,
-    coaching: {
-      title: "La vidéo montre la série simple.",
-      handCue: "Planche de cuisses à 90°, mains au sol derrière le bassin ou sur les tibias. Sur machine : dos au dossier.",
-      movementCue: "Ouvrez complètement, refermez à moitié, rouvrez complètement, puis refermez : c'est une répétition et demie.",
-      notice: "La vidéo montre la version assise sur machine ; votre fiche se fait au sol ou sur un banc. La répétition et demie n'est pas montrée : ouvrez complètement, refermez à moitié, rouvrez, puis refermez.",
-      spoken: "Abduction assise en répétition et demie. Ouvrez complètement, refermez à moitié, rouvrez complètement, puis refermez : c'est une répétition et demie. La vidéo montre seulement le mouvement de base. Quatre séries de quinze. Arrêtez en cas de douleur.",
-    },
-  },
-  // Lot fessiers (28/11/2026). Un seul clip prévu pour les trois variantes
+  // Lot moyen fessier (27/11/2026) : les cinq images de référence sont validées
+  // (voir docs/videos-3d/98-MOYEN-FESSIER.md), mais AUCUNE VIDÉO n'a encore été
+  // déposée. Les neuf fiches restent donc sans entrée ici : le GIF d'origine
+  // s'affiche. Ajouter les entrées en « coached » le jour où les clips arrivent.
+  // Lot fessiers (28/11/2026). Un seul clip couvre les trois variantes
   // unilatérales du hip thrust : même mouvement, seules la charge et la
-  // présentation changent. En attente du fichier déposé : le GIF reste affiché.
+  // présentation changent. Défauts constatés sur le clip et écrits en réserve :
+  // en bas du mouvement la fesse s'enroule autour du banc, et la barre appuie
+  // sur le haut du ventre au lieu du pli des hanches.
   "hip-thrust-unilateral": {
-    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust unilatéral", status: "pending",
+    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust unilatéral", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "Une jambe d'appui, bassin aligné.",
-      handCue: "Haut du dos sur un banc, une seule jambe fléchie pied à plat, l'autre jambe tendue en l'air, barre dans le pli des hanches avec un coussin.",
+      handCue: "Haut du dos sur un banc, une seule jambe fléchie pied à plat, l'autre jambe tendue en l'air.",
       movementCue: "Montez le bassin jusqu'à l'alignement des épaules et du genou, serrez la fesse, puis redescendez sans poser complètement.",
-      notice: "Le bassin ne doit pas s'affaisser et le corps reste aligné des épaules au genou d'appui. La barre est posée dans le pli des hanches, jamais sur le ventre.",
-      spoken: "Hip thrust unilatéral. Haut du dos sur un banc, une jambe fléchie pied à plat, l'autre jambe tendue en l'air, barre dans le pli des hanches avec un coussin. Montez le bassin jusqu'à l'alignement des épaules et du genou, serrez la fesse, puis redescendez sans poser complètement. Le bassin ne s'affaisse pas. Trois séries de dix par côté. Arrêtez en cas de douleur.",
+      notice: "En bas du mouvement, la fesse s'enroule légèrement autour du banc et la barre appuie sur le haut du ventre : ne descendez pas si bas, gardez la barre dans le pli des hanches et arrêtez la descente dès que le bassin perd son alignement.",
+      spoken: "Hip thrust unilatéral. Haut du dos sur un banc, une jambe fléchie pied à plat, l'autre tendue en l'air, barre dans le pli des hanches avec un coussin. Montez le bassin jusqu'à l'alignement des épaules et du genou, serrez la fesse, puis redescendez sans poser complètement. En bas du mouvement, la fesse s'enroule un peu et la barre appuie sur le ventre : gardez la barre dans le pli des hanches et arrêtez la descente dès que le bassin perd son alignement. Trois séries de dix par côté. Arrêtez en cas de douleur.",
     },
   },
   "hip-thrust-unilateral-1-jambe": {
-    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust sur une jambe", status: "pending",
+    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust sur une jambe", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "Même mouvement, tout le poids sur une jambe.",
       handCue: "Une jambe d'appui au sol, l'autre tendue, barre dans le pli des hanches.",
       movementCue: "Montez le bassin avec la seule jambe d'appui, sans pousser avec la jambe libre, puis redescendez lentement.",
-      notice: "La jambe libre ne doit pas aider : elle reste tendue et immobile. Le bassin monte droit, sans rotation.",
-      spoken: "Hip thrust sur une jambe. Une seule jambe d'appui au sol, l'autre tendue et immobile. Montez le bassin avec la seule jambe d'appui, serrez la fesse, puis redescendez lentement. Le bassin ne tourne pas. Trois séries de dix par côté. Arrêtez en cas de douleur.",
+      notice: "La jambe libre reste tendue et immobile, le bassin monte droit sans rotation. Comme sur la vidéo, la barre appuie sur le haut du ventre : replacez-la dans le pli des hanches avant de commencer.",
+      spoken: "Hip thrust sur une jambe. Une seule jambe d'appui au sol, l'autre tendue et immobile. Montez le bassin avec la seule jambe d'appui, serrez la fesse, puis redescendez lentement. Le bassin ne tourne pas. La barre appuie sur le haut du ventre sur la vidéo : replacez-la dans le pli des hanches. Trois séries de dix par côté. Arrêtez en cas de douleur.",
     },
   },
   "hip-thrust-unilateral-leste": {
-    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust unilatéral lesté", status: "pending",
+    src: "/videos/fessiers-hip-thrust-unilateral.mp4", poster: "/videos/posters/fessiers-hip-thrust-unilateral.jpg", label: "Vidéo IA · Hip thrust unilatéral lesté", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "La charge reste dans le pli des hanches.",
       handCue: "Barre chargée avec coussin dans le pli des hanches, une jambe d'appui au sol.",
       movementCue: "Montez le bassin en contrôlant la charge, arrêt d'une seconde en haut, descente lente.",
-      notice: "Avec la charge, la barre glisse si le coussin est mal placé : gardez-la dans le pli des hanches et les mains dessus. Réduisez la charge si le bassin s'affaisse.",
-      spoken: "Hip thrust unilatéral lesté. Barre chargée avec coussin dans le pli des hanches, une jambe d'appui au sol. Montez le bassin en contrôlant la charge, arrêt d'une seconde en haut, descente lente. Si le bassin s'affaisse, réduisez la charge. Trois séries de huit à dix par côté. Arrêtez en cas de douleur.",
+      notice: "Avec la charge, la barre glisse si le coussin est mal placé : gardez-la dans le pli des hanches, pas sur le ventre, les mains dessus. Réduisez la charge si le bassin s'affaisse ou s'enroule en bas.",
+      spoken: "Hip thrust unilatéral lesté. Barre chargée avec coussin dans le pli des hanches, une jambe d'appui au sol. Montez le bassin en contrôlant la charge, arrêt d'une seconde en haut, descente lente. Gardez la barre dans le pli des hanches, pas sur le ventre. Si le bassin s'affaisse, réduisez la charge. Trois séries de huit à dix par côté. Arrêtez en cas de douleur.",
     },
   },
   "bird-dog": {

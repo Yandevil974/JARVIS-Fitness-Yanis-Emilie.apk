@@ -54,8 +54,18 @@ Points de vigilance pour la vidéo, à vérifier au zoom avant de la garder :
 - la **jambe libre ne pousse pas** et ne touche pas le sol ;
 - le rouge ne déborde **ni sur le quadriceps, ni sur le mollet, ni sur le bas du dos**.
 
-## Raccordement prévu
+## Vidéo déposée et intégrée — 28/11/2026
 
-Les trois fiches sont déjà déclarées dans `src/data/exercise-videos.js` avec le fichier cible `public/videos/fessiers-hip-thrust-unilateral.mp4`, en statut `pending` : le GIF d'origine reste affiché tant que la vidéo n'est pas déposée. Dès que le fichier arrive, il suffit de changer le statut en `coached` et de poser le poster.
+Fichier `1795854583150.mp4`, intégré sous `public/videos/fessiers-hip-thrust-unilateral.mp4`. Yanis avait « un doute sur la posture » : le contrôle image par image a confirmé deux défauts réels, écrits en réserve dans les trois fiches et lus par la voix.
 
-Après ce clip, les fessiers passent à **14/14**.
+**Défaut 1 — la barre n'est pas dans le pli des hanches.** Elle repose sur le haut du ventre, juste sous les côtes. Sur un hip thrust, cela pousse la charge vers le haut du corps et ne charge pas correctement la hanche. Consigne ajoutée : « replacez la barre dans le pli des hanches avant de commencer ».
+
+**Défaut 2 — la fesse s'enroule en bas du mouvement.** En position basse, la fesse et le bas du dos s'enroulent autour du bord du banc et perdent l'alignement. Consigne ajoutée : « arrêtez la descente dès que le bassin perd son alignement ».
+
+Ce qui est correct : une seule jambe d'appui, pied à plat, l'autre jambe tendue en l'air ; le bassin monte à l'alignement des épaules et du genou ; le rouge reste sur la fesse de la jambe d'appui.
+
+## Raccordement
+
+Les trois fiches sont raccordées en `coached` sur le même clip, avec des consignes distinctes pour chacune (série simple, une jambe, version lestée). Les GIF d'origine sont conservés.
+
+**Fessiers : 14/14.** Total de la musculation : 180 fiches sur 209.
