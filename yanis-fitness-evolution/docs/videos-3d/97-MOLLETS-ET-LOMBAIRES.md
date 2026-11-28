@@ -74,12 +74,13 @@ Pour le mollet assis, il a fallu en plus **placer la caméra derrière et sur le
 
 ## 1. Mollets debout — machine à bandes d'épaules
 
-**Image** : [calves-debout-v7-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/calves-debout-v7-machine.jpg)
+**Image** : [calves-debout-v11-muscle.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-debout-v11-muscle.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets debout sur machine.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
+PERSONNAGE : reprendre exactement la référence biceps `vague1-biceps-01-curl-ez.jpg` — argenté chromé brillant, visage lisse aux traits simples, musculature très développée et très définie, veines apparentes. Cadrage serré : l'athlète occupe les deux tiers de la hauteur, corps large dans le cadre.
 MATÉRIEL : une machine à mollets debout, complète et cohérente, entièrement dans le cadre : bâti métallique posé au sol, colonne verticale, charge guidée sur rails, et surtout DEUX BANDES D'ÉPAULES REMBOURRÉES posées sur le haut du dos, une de chaque côté, symétriques. Les deux mains tiennent les poignées latérales de la machine, devant les bandes. Aucun disque, aucun poids dans le vide : toute la charge est dans le rail de la machine, sous les bandes.
 SUPPORT : AUCUN bloc, aucune marche. Les deux pieds sont posés À PLAT SUR LE SOL, côte à côte, orteils vers l'avant, chaussures entièrement au sol et anatomiquement correctes.
 
@@ -95,13 +96,14 @@ Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous l
 
 ## 2. Mollets assis — machine à coussin sur les cuisses
 
-**Image** : [calves-assis-v8-machine.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/calves-assis-v8-machine.jpg)
+**Image** : [calves-assis-v12-muscle.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-assis-v12-muscle.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de mollets assis sur machine.
 Personnage identique aux autres vidéos : athlète argenté à musculature apparente, casquette noire, short noir, baskets blanches, même salle claire au sol gris.
 
-MATÉRIEL : une machine à mollets assis, complète et cohérente, entièrement dans le cadre : bâti métallique au sol, siège avec dossier, charge guidée sur rails verticaux, et surtout UN COUSSIN REMBOURRÉ HORIZONTAL posé en travers sur les deux cuisses, juste au-dessus des genoux, relié au bras de la machine et à la charge. La pression vient du coussin. Les deux mains tiennent les poignées latérales du siège. Aucun haltère, aucun poids dans le vide.
+PERSONNAGE : reprendre exactement la référence biceps `vague1-biceps-01-curl-ez.jpg` — argenté chromé brillant, visage lisse, musculature très développée. Cadrage serré.
+MATÉRIEL : la machine à mollets assis À LEVIER de la capture fournie par Yanis, à l'identique : banc rembourré noir avec dossier, bras à levier articulé sur un pivot à l'arrière, UN COUSSIN REMBOURRÉ EN TRAVERS DES DEUX CUISSES juste au-dessus des genoux, BARRE DE CHARGE HORIZONTALE à l'arrière portant plusieurs gros disques noirs, deux POIGNÉES VERTICALES à l'avant, plaque d'appui métallique pour les pieds. La pression vient du coussin, pas des mains. Aucun haltère.
 SUPPORT : AUCUN bloc, aucune marche. Les deux pieds sont posés À PLAT SUR LE SOL devant la machine, côte à côte, orteils vers l'avant, chaussures entièrement au sol et anatomiquement correctes.
 
 POSITION : VUE DE TROIS QUARTS ARRIÈRE. Assis, dos au dossier, cuisses horizontales, buste droit, genoux pliés à quatre-vingt-dix degrés et immobiles.
@@ -115,7 +117,7 @@ Caméra fixe, athlète et machine entièrement dans le cadre, sol visible sous l
 
 ## 3. Mollets unilatéraux — haltère et appui, jambe libre dans le vide
 
-**Image** : [calves-unilateral-v9-haltere.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/a2365ad/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v9-haltere.jpg)
+**Image** : [calves-unilateral-v12-muscle.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/calves-unilateral-v12-muscle.jpg)
 
 ```
 SUJET
@@ -157,7 +159,7 @@ Pas de texte, pas de flèche, pas de logo, pas de collage, pas de machine en dou
 
 ## 4. Back extension 45°, prise snatch
 
-**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/999ee80/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
+**Image** : [lom-back-extension-45-v2.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/lom-back-extension-45-v2.jpg)
 
 ```
 Vidéo anatomique 3D réaliste, deux répétitions de back extension sur banc à 45 degrés.
@@ -170,6 +172,21 @@ La tête reste dans le prolongement de la colonne, aucun élan, aucun mouvement 
 Coloration : les lombaires uniquement, muscles du BAS DU DOS de chaque côté de la colonne, au-dessus du bassin ; aucune couleur sur le haut du dos, les trapèzes, les omoplates, les fessiers, les cuisses ou les bras.
 Aucun texte, aucune flèche, aucun collage.
 ```
+
+## Référence du personnage — décision du 27/11/2026
+
+Yanis a constaté que l'athlète des images mollets « ne ressemble plus au personnage de départ et [est] moins musclé », mollet assis compris. La référence retenue est désormais **`vague1-biceps-01-curl-ez.jpg`** (lot biceps) : athlète argenté chromé brillant, visage lisse aux traits simples, épaules larges, dos épais et strié, bras volumineux, veines apparentes, cuisses puissantes.
+
+Deux causes identifiées, corrigées sur les trois images :
+
+1. **Le physique demandé était trop vague** : « athlète argenté à musculature apparente » ne suffit pas. Il faut nommer la référence biceps dans chaque prompt, et exiger explicitement le même rendu chromé et la même définition.
+2. **Le cadrage était trop large** : à 3 000 pixels de distance, un athlète de 300 pixels de haut ne montre aucun muscle. Le cadrage est désormais **serré**, l'athlète occupant les deux tiers de la hauteur, et le corps large dans le cadre.
+
+Règle pour la suite : toute nouvelle image part de `vague1-biceps-01-curl-ez.jpg` comme référence de personnage, avec cadrage serré.
+
+## Mollet assis sur machine à levier — demande du 27/11/2026
+
+Yanis a fourni une capture d'une machine à mollets assis **à levier** (banc, bras articulé sur pivot arrière, coussin sur les cuisses, barre de charge avec disques à l'arrière, poignées verticales, plaque d'appui pour les pieds) et a demandé de refaire le mollet assis avec cette machine, en gardant notre personnage. C'est la version retenue.
 
 ## Intégration des trois vidéos (26/11/2026)
 
