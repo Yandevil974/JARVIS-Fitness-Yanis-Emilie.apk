@@ -374,63 +374,63 @@ export const EXERCISE_VIDEOS = {
   // la planche (et les deux circuits, où elle est l'exercice tenu) et les relevés
   // de jambes allongé (deux fiches au même geste).
   "gainage-planche": {
-    src: "/videos/gainage-planche.mp4", poster: "/videos/posters/gainage-planche.jpg", label: "Vidéo IA · Gainage planche sur avant-bras", status: "pending",
+    src: "/videos/gainage-planche.mp4", poster: "/videos/posters/gainage-planche.jpg", label: "Vidéo IA · Gainage planche sur avant-bras", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "Avant-bras au sol, corps aligné.",
       handCue: "Deux avant-bras au sol, coudes directement sous les épaules, mains à plat devant.",
       movementCue: "Jambes tendues, pointes de pied au sol, corps aligné des épaules aux talons : tenez la position sans laisser les hanches descendre.",
-      notice: "Sur la vidéo, les deux mains se rejoignent en poing devant le visage : gardez plutôt les deux mains à plat, écartées sous les épaules, pour un appui stable.",
-      spoken: "Gainage planche sur avant-bras. Deux avant-bras au sol, coudes sous les épaules, mains à plat. Jambes tendues, pointes de pied au sol, corps aligné des épaules aux talons. Tenez la position sans laisser les hanches descendre et sans creuser le bas du dos. Sur la vidéo les mains se rejoignent devant le visage : gardez-les à plat, écartées. Deux séries de trente à quarante secondes. Arrêtez en cas de douleur.",
+      notice: "Sur la vidéo, les deux mains se rejoignent devant le visage et les talons sont un peu hauts : gardez les deux mains à plat, écartées sous les épaules, et les talons dans l'axe du corps.",
+      spoken: "Gainage planche sur avant-bras. Deux avant-bras au sol, coudes sous les épaules, mains à plat. Jambes tendues, pointes de pied au sol, corps aligné des épaules aux talons. Tenez la position sans laisser les hanches descendre et sans creuser le bas du dos. Sur la vidéo les mains se rejoignent devant le visage et les talons sont un peu hauts : gardez les mains à plat, écartées, et les talons dans l'axe. Deux séries de trente à quarante secondes. Arrêtez en cas de douleur.",
     },
   },
   "circuit-gainage-planche-lateral-bird-dog": {
-    src: "/videos/gainage-planche.mp4", poster: "/videos/posters/gainage-planche.jpg", label: "Vidéo IA · Gainage planche (base du circuit)", status: "pending",
+    src: "/videos/gainage-planche.mp4", poster: "/videos/posters/gainage-planche.jpg", label: "Vidéo IA · Gainage planche (base du circuit)", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "La vidéo montre la planche du circuit.",
       handCue: "Avant-bras au sol, coudes sous les épaules, comme sur la vidéo.",
       movementCue: "Tenez la planche, puis enchaînez le gainage latéral et le bird dog selon votre fiche, sans repos entre les postes.",
-      notice: "La vidéo ne montre que le premier poste du circuit, la planche. Suivez la consigne écrite pour le gainage latéral et le bird dog, qui ont leurs propres vidéos.",
+      notice: "La vidéo ne montre que le premier poste du circuit, la planche, et les deux mains s'y rejoignent devant le visage. Gardez les mains à plat, écartées, puis suivez la consigne écrite pour le gainage latéral et le bird dog, qui ont leurs propres vidéos.",
       spoken: "Circuit de gainage. La vidéo montre le premier poste, la planche sur avant-bras : avant-bras au sol, coudes sous les épaules, corps aligné. Enchaînez ensuite le gainage latéral et le bird dog selon votre fiche, sans repos entre les postes. La vidéo ne montre pas les deux autres postes : suivez la consigne écrite. Arrêtez en cas de douleur.",
     },
   },
   "circuit-abdominaux-crunch-releves-gainage": {
-    src: "/videos/gainage-planche.mp4", poster: "/videos/posters/gainage-planche.jpg", label: "Vidéo IA · Gainage planche (poste du circuit)", status: "pending",
+    src: "/videos/gainage-planche.mp4", poster: "/videos/posters/gainage-planche.jpg", label: "Vidéo IA · Gainage planche (poste du circuit)", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "La vidéo montre le poste de gainage.",
       handCue: "Avant-bras au sol, coudes sous les épaules, comme sur la vidéo.",
       movementCue: "Enchaînez crunch, relevés de jambes puis gainage selon votre fiche, sans repos. Les deux premiers postes ont leurs propres vidéos.",
-      notice: "La vidéo ne montre que le poste de gainage. Pour le crunch et les relevés de jambes, ouvrez leurs fiches : elles ont leur propre vidéo.",
-      spoken: "Circuit abdominaux. La vidéo montre seulement le poste de gainage : avant-bras au sol, coudes sous les épaules, corps aligné. Enchaînez crunch, relevés de jambes puis gainage selon votre fiche, sans repos. Le crunch et les relevés de jambes ont leur propre vidéo. Arrêtez en cas de douleur.",
+      notice: "La vidéo ne montre que le poste de gainage, avec les deux mains rejointes devant le visage : gardez-les à plat, écartées. Pour le crunch et les relevés de jambes, ouvrez leurs fiches : elles ont leur propre vidéo.",
+      spoken: "Circuit abdominaux. La vidéo montre seulement le poste de gainage, avec les mains rejointes devant le visage : gardez-les à plat et écartées. Enchaînez crunch, relevés de jambes puis gainage selon votre fiche, sans repos. Le crunch et les relevés de jambes ont leur propre vidéo. Arrêtez en cas de douleur.",
     },
   },
   "releves-de-jambes-allongee": {
-    src: "/videos/releves-de-jambes-allonge.mp4", poster: "/videos/posters/releves-de-jambes-allonge.jpg", label: "Vidéo IA · Relevés de jambes allongée", status: "pending",
+    src: "/videos/releves-de-jambes-allonge.mp4", poster: "/videos/posters/releves-de-jambes-allonge.jpg", label: "Vidéo IA · Relevés de jambes allongée", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "Bassin au sol, jambes parallèles.",
       handCue: "Allongé sur le dos, bras le long du corps paumes au sol, les deux jambes tendues vers le plafond.",
       movementCue: "Descendez les deux jambes ensemble sans décoller le bassin, puis remontez sans élan. Arrêtez avant que le bas du dos ne se creuse.",
-      notice: "Sur la vidéo, les jambes restent tendues vers le haut : la descente n'est pas montrée. Suivez la consigne écrite et arrêtez la descente dès que le bas du dos se creuse.",
-      spoken: "Relevés de jambes allongée. Allongé sur le dos, bras le long du corps, les deux jambes tendues vers le plafond, bassin au sol. Descendez les deux jambes ensemble sans décoller le bassin, puis remontez sans élan. Arrêtez avant que le bas du dos ne se creuse. La vidéo montre seulement la position haute. Trois séries de douze. Arrêtez en cas de douleur.",
+      notice: "Sur la vidéo, une jambe monte plus haut que l'autre et la descente n'est pas montrée : gardez les deux jambes parallèles et arrêtez la descente dès que le bas du dos se creuse.",
+      spoken: "Relevés de jambes allongée. Allongé sur le dos, bras le long du corps, les deux jambes tendues vers le plafond, bassin au sol. Descendez les deux jambes ensemble sans décoller le bassin, puis remontez sans élan. Arrêtez avant que le bas du dos ne se creuse. La vidéo montre la position haute, avec une jambe un peu plus haute que l'autre : gardez les deux jambes parallèles. Trois séries de douze. Arrêtez en cas de douleur.",
     },
   },
   "releves-de-jambes": {
-    src: "/videos/releves-de-jambes-allonge.mp4", poster: "/videos/posters/releves-de-jambes-allonge.jpg", label: "Vidéo IA · Relevés de jambes", status: "pending",
+    src: "/videos/releves-de-jambes-allonge.mp4", poster: "/videos/posters/releves-de-jambes-allonge.jpg", label: "Vidéo IA · Relevés de jambes", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "Même geste, même contrôle.",
       handCue: "Allongé sur le dos, bras le long du corps, jambes tendues vers le plafond.",
       movementCue: "Descente lente des deux jambes ensemble, remontée sans élan, bas du dos plaqué au sol.",
-      notice: "La vidéo illustre le même geste : la descente n'est pas montrée, suivez la consigne écrite.",
-      spoken: "Relevés de jambes. Allongé sur le dos, bras le long du corps, jambes tendues vers le plafond. Descendez les deux jambes ensemble sans décoller le bassin, puis remontez sans élan. Arrêtez la descente dès que le bas du dos se creuse. La vidéo montre seulement la position haute. Trois séries de douze. Arrêtez en cas de douleur.",
+      notice: "La vidéo illustre le même geste : une jambe monte un peu plus haut que l'autre et la descente n'est pas montrée. Gardez les deux jambes parallèles et suivez la consigne écrite.",
+      spoken: "Relevés de jambes. Allongé sur le dos, bras le long du corps, jambes tendues vers le plafond. Descendez les deux jambes ensemble sans décoller le bassin, puis remontez sans élan. Arrêtez la descente dès que le bas du dos se creuse. La vidéo montre la position haute, avec une jambe un peu plus haute que l'autre : gardez les deux jambes parallèles. Trois séries de douze. Arrêtez en cas de douleur.",
     },
   },
   "releves-de-jambes-allonge": {
-    src: "/videos/releves-de-jambes-allonge.mp4", poster: "/videos/posters/releves-de-jambes-allonge.jpg", label: "Vidéo IA · Relevés de jambes allongé", status: "pending",
+    src: "/videos/releves-de-jambes-allonge.mp4", poster: "/videos/posters/releves-de-jambes-allonge.jpg", label: "Vidéo IA · Relevés de jambes allongé", status: "coached", avoidSilentPreview: true,
     coaching: {
       title: "Bassin au sol, jambes parallèles.",
       handCue: "Allongé sur le dos, bras le long du corps paumes au sol, les deux jambes tendues vers le plafond.",
       movementCue: "Descente lente et contrôlée des deux jambes, remontée sans élan, sans décoller le bassin.",
-      notice: "Sur la vidéo, les jambes restent tendues vers le haut : la descente n'est pas montrée. Suivez la consigne écrite.",
-      spoken: "Relevés de jambes allongé. Allongé sur le dos, bras le long du corps, jambes tendues vers le plafond, bassin au sol. Descendez les deux jambes ensemble sans décoller le bassin, puis remontez sans élan. Arrêtez avant que le bas du dos ne se creuse. La vidéo montre seulement la position haute. Quatre séries de dix à douze. Arrêtez en cas de douleur.",
+      notice: "Sur la vidéo, une jambe monte plus haut que l'autre et la descente n'est pas montrée : gardez les deux jambes parallèles et suivez la consigne écrite.",
+      spoken: "Relevés de jambes allongé. Allongé sur le dos, bras le long du corps, jambes tendues vers le plafond, bassin au sol. Descendez les deux jambes ensemble sans décoller le bassin, puis remontez sans élan. Arrêtez avant que le bas du dos ne se creuse. La vidéo montre la position haute, avec une jambe un peu plus haute que l'autre : gardez les deux jambes parallèles. Quatre séries de dix à douze. Arrêtez en cas de douleur.",
     },
   },
   "bird-dog": {

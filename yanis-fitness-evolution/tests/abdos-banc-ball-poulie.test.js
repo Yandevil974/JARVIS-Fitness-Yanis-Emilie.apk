@@ -32,8 +32,8 @@ test("abdos : banc incliné, swiss ball, jackknife et wood chop intacts, accompa
     assert.equal(sha("public" + ex.gif), sha("release" + ex.gif), c.id);
   }
   // Le wood chop de la vidéo n'est pas une poulie haute classique : ne pas partager
-  // son clip avec d'autres tirages, et laisser les autres abdos sur leur GIF.
+  // son clip avec d'autres tirages. Les autres abdos ont leur propre clip.
   for (const id of ["gainage-planche", "releves-de-jambes-allonge", "circuit-gainage-planche-lateral-bird-dog"]) {
-    assert.equal(videoFor(id), null, id);
+    assert.equal(videoFor(id).status, "coached", id);
   }
 });

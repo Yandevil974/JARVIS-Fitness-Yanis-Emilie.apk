@@ -45,8 +45,8 @@ test("abdos : roue et reverse crunch intacts, accompagnés, GIF et prescriptions
     assert.equal(ex.gif, c.gif, c.id);
     assert.equal(sha("public" + ex.gif), sha("release" + ex.gif), c.id);
   }
-  // Pas de partage abusif : les autres abdos sans clip restent sur leur GIF.
+  // Ces fiches ont désormais leur propre clip, distinct de la roue et du reverse.
   for (const id of ["gainage-planche", "releves-de-jambes-allonge", "circuit-abdominaux-crunch-releves-gainage"]) {
-    assert.equal(videoFor(id), null, id);
+    assert.equal(videoFor(id).status, "coached", id);
   }
 });

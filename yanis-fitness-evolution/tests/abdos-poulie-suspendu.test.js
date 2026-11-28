@@ -51,8 +51,8 @@ test("abdos : clips de poulie et suspendu intacts, accompagnés, GIF conservés"
   const susp = EXERCISES.find((e) => e.id === "releves-de-jambes-suspendu");
   assert.deepEqual([susp.defaultSets, susp.repScheme, susp.rest, susp.gif], [4, "8-10", 75, "/media/73207adea6ee540f.gif"]);
   assert.match(videoFor(susp).coaching.spoken, /genoux légèrement souples/);
-  // La planche et les relevés allongés n'ont pas encore de clip : pas de partage abusif.
+  // La planche et les relevés allongés ont leur clip depuis le 28/11/2026.
   for (const id of ["gainage-planche", "releves-de-jambes-allonge", "releves-de-jambes-allongee"]) {
-    assert.equal(videoFor(id), null, id);
+    assert.equal(videoFor(id).status, "coached", id);
   }
 });
