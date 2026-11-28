@@ -128,6 +128,9 @@ function equipmentFor(name) {
   if (/^mollets?\b/.test(n) && /presse/.test(n)) return ["dumbbell"];
   if (/^mollets?\b/.test(n) && /assis/.test(n)) return ["bench", "dumbbell"];
   if (/^mollets?\b/.test(n)) return /unilat/.test(n) ? ["dumbbell"] : ["machine"];
+  // Abduction assise en 1,5 reps : la fiche héritait du poids du corps alors que
+  // la vidéo et la consigne décrivent la machine ou l'élastique.
+  if (/abduction assise/.test(n)) return /machine/.test(n) ? ["machine"] : ["band", "bench"];
   return ["bodyweight"];
 }
 const rows = new Map();
