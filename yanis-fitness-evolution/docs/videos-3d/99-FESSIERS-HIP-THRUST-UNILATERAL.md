@@ -12,7 +12,7 @@ Les fessiers sont couverts à **11 fiches sur 14**. Les trois restantes sont les
 
 ## Image de référence
 
-**Image** : [fes-hip-thrust-unilateral-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/COMMIT/yanis-fitness-evolution/docs/videos-3d/fes-hip-thrust-unilateral-v1.jpg)
+**Image** : [fes-hip-thrust-unilateral-v1.jpg](https://raw.githubusercontent.com/Yandevil974/JARVIS-Fitness-Yanis-Emilie.apk/5549e4a/yanis-fitness-evolution/docs/videos-3d/fes-hip-thrust-unilateral-v1.jpg)
 
 Méthode courte, validée sur le lot moyen fessier.
 
