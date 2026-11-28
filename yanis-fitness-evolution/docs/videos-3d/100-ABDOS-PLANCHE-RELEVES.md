@@ -80,16 +80,28 @@ Coloration : les abdominaux seulement, en rouge-orangé. Rien sur les cuisses.
 - **Circuit gainage** et **circuit abdominaux** : la vidéo ne montre que le poste de planche → les autres postes gardent leur propre vidéo ou la consigne écrite.
 - **Relevés de jambes** (trois fiches) : la vidéo montre la position haute, pas la descente → suivre la consigne écrite et arrêter la descente dès que le bas du dos se creuse.
 
-## Raccordement
+## Raccordement — fait
 
-Les six fiches sont déclarées dans `src/data/exercise-videos.js` en statut `pending` avec leurs fichiers cibles déjà nommés. Le GIF d'origine s'affiche tant que les clips ne sont pas déposés. Dès réception :
+Les deux clips ont été déposés par Yanis le 22 novembre 2026 et intégrés dans le commit `48f1bda`.
 
-1. copier les fichiers sous `public/videos/gainage-planche.mp4` et `public/videos/releves-de-jambes-allonge.mp4` ;
-2. poser les posters ;
-3. passer les six entrées en `coached` avec `avoidSilentPreview: true`.
+| Clip livré | Source reçue | Format | Empreinte SHA-256 du fichier rangé |
+| --- | --- | --- | --- |
+| `gainage-planche.mp4` | `1795856844662.mp4` | 640×360, 121 images, 5 s | `a8b0024c1769acd67e2ffd1d76dc15aa1bec6c74baa462aa1ce312859f9377f7` |
+| `releves-de-jambes-allonge.mp4` | `1795856818170.mp4` | 640×496, 121 images, 5 s | `16132041ceb70676d06c89eeb245ed0b508f4723136bcc233af56a8f16b43493` |
 
-Après ces deux clips, les abdominaux passent à **15/15** et le total à **186 fiches sur 209**.
+Ce qui est en place :
+
+1. les deux MP4 sont dans `public/videos/` **et** `release/videos/` ;
+2. les posters (image 60 de chaque clip) sont dans `public/videos/posters/` et `release/videos/posters/` ;
+3. les deux fichiers figurent dans `media-index.json` (public et release) ;
+4. les six fiches sont passées en `coached` avec `avoidSilentPreview: true`, consignes réécrites pour chacune ;
+5. les GIF d'origine sont conservés, ils restent le repli si une vidéo manque ;
+6. un test dédié vérifie les empreintes, la présence dans les deux dossiers et la conservation des GIF : `tests/abdos-planche-releves.test.js`.
+
+**Défaut de la vidéo de planche** : le clip porte un filigrane « PixVerse.ai » en bas de l'image. Il n'a pas été retiré ; il est signalé ici pour mémoire. Le geste lui-même est propre, c'est la position des mains qui demande la réserve ci-dessous.
+
+Couverture après ce lot : **abdominaux 15/15**, total **186 fiches sur 209**.
 
 ## Reste ensuite
 
-Moyen fessier 9 (images prêtes, vidéos à déposer), quadriceps 6, triceps 4, épaules antérieures 2, lombaires 1, respiration 1.
+Un seul lot à la fois. Le prochain annoncé est **quadriceps, 6 fiches**. Puis triceps 4, épaules antérieures 2, lombaires 1, transverse 1, respiration 1, et moyen fessier 9 (images déjà prêtes, aucune vidéo déposée).

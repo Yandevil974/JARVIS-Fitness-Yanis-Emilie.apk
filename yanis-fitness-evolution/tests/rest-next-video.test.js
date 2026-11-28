@@ -56,9 +56,24 @@ test("la traction supination de la photo et l'épaule partagée utilisent leur M
   );
 });
 
+// Cas de repli : on choisit la fiche sans clip la plus proche du lot en cours,
+// puis on retombe sur n'importe quelle fiche sans vidéo. Une fiche servant de cas
+// « sans vidéo » reçoit un jour son clip : ce choix dynamique évite de recasser
+// ces deux tests à chaque lot (erreur faite avec gainage-planche).
+function ficheSansVideo() {
+  const preferees = ["front-squat", "fentes-barre", "respiration-diaphragmatique"];
+  for (const id of preferees) {
+    const ex = exerciseById(id);
+    if (ex && !videoFor(ex) && !videoFor(id)) return ex;
+  }
+  const ex = EXERCISES.find((e) => !videoFor(e) && e.gif);
+  assert.ok(ex, "il doit rester au moins une fiche sans vidéo comme cas de repli");
+  return ex;
+}
+
 test("sans vidéo raccordée le GIF d'origine reste le repli, sans le modifier", () => {
-  const ex = exerciseById("presse-a-cuisses-pieds-hauts");
-  assert.equal(videoFor(ex), null);
+  const ex = ficheSansVideo();
+  assert.equal(videoFor(ex.id), null);
   const original = ex.gif;
   assert.ok(original);
   const next = preview(ex.id);
@@ -136,7 +151,7 @@ test("la vignette affiche le MP4 en boucle avec indication de consigne", () => {
 });
 
 test("la vignette sans vidéo continue à afficher le GIF", () => {
-  const next = preview("presse-a-cuisses-pieds-hauts");
+  const next = preview(ficheSansVideo().id);
   const html = htmlFor(next);
   assert.match(html, /<img/);
   assert.ok(html.includes(next.img));
